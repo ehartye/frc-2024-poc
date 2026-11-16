@@ -51,7 +51,7 @@
     "pitchMm": 6.35,
     "pulleyZ": 60,
     "motorFaceZ": 45,
-    "driverClockDegrees": 0,
+    "driverClockDegrees": 90,
     "drivenClockDegrees": 0
   },
   "manufacturerMassKg": {
@@ -68,12 +68,36 @@
   "beltPart": "REV-21-4040",
   "status": "nominal private-native packaging experiment; no key engagement, fastener, tension or operating acceptance",
   "limits": [
-    "Motor mount and load path not yet designed",
-    "Separate key, axial retention and fasteners unresolved",
+    "Motor plate native clearance checked; attachment to cartridge and tension adjustment not designed",
+    "Nominal key modeled; shaft-end retention and selected fastener tolerance stack unresolved",
     "No belt tooth/contact model or tension adjustment",
     "Tread absent; motor-to-tread clearance unresolved",
     "Manufacturer motor mass is not uniform material or rotor inertia",
     "Historical NEO V1.1 is discontinued; no purchase recommendation",
     "No change to A2 simulation parameters"
-  ]
+  ],
+  "motorMount": {
+    "drawingUrl": "https://revrobotics.com/content/docs/REV-21-1650-V1.1-DR.pdf",
+    "drawingDate": "2022-11-09",
+    "plateWidthMm": 72,
+    "plateThicknessMm": 3.175,
+    "pilotBoreMm": 19.3,
+    "holeCircleMm": 50.8,
+    "clearanceHoleMm": 5.2,
+    "frontTappedDepthMm": 5.5,
+    "shaftEndTappedDepthMm": 12.7,
+    "candidateScrewUnderHeadMm": 7.9375,
+    "candidateWasherMm": 1,
+    "depthReserveMm": 1,
+    "status": "nominal 5/16in #10-32 screw plus assumed 1mm washer; SKU/actual tolerances/strength not accepted"
+  },
+  "key": {
+    "widthMm": 2,
+    "radialThicknessMm": 2,
+    "radialInnerMm": 2.8,
+    "startFromMotorFaceMm": 8,
+    "lengthMm": 14,
+    "clockDegrees": 90,
+    "status": "original nominal key envelope; stock, corner radius, fit and shear capacity unverified"
+  }
 }
