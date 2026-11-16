@@ -1,0 +1,131 @@
+{
+  "schema": "frc-a2-real-component-cartridge/1",
+  "inputConfigSha256": "cfb026299f8282b46df511166695b2087f352c9653dd5a8c53a7c5d4529722f1",
+  "sourceRecords": {
+    "wheel": {
+      "sha256": "e5323f8dff336e35b6abcfa970df5be5230fce20badb60c2701b83e9b8bc587d",
+      "bytes": 397617,
+      "part": "am-3608"
+    },
+    "bearing": {
+      "sha256": "3e16cb3f5f215288b8706eb8228d9580fea78c425eee536ef95195b5b98f02e6",
+      "bytes": 70890,
+      "part": "REV-21-1916-PK4"
+    },
+    "collar": {
+      "sha256": "9167c2167b9470f9b33ef368b81d1cc52038c7914f220cc7dd83f142c2022ee9",
+      "bytes": 236513,
+      "part": "REV-21-2900-PK4"
+    }
+  },
+  "clockingTrials": [
+    {
+      "phaseDegrees": 0,
+      "shaftWheelOverlapMm3": 0,
+      "shaftBearingOverlapMm3": 0
+    },
+    {
+      "phaseDegrees": 30,
+      "shaftWheelOverlapMm3": 146.35105600803695,
+      "shaftBearingOverlapMm3": 0
+    }
+  ],
+  "selectedClockingDegrees": 0,
+  "nativePairCommonVolumesMm3": {
+    "shaft-bearing-1": 0,
+    "shaft-collar-1": 0,
+    "plate-bearing-1": 0,
+    "spacer-bearing-1": 0,
+    "spacer-wheel-1": 0,
+    "collar-bearing-1": 0,
+    "shaft-bearing1": 0,
+    "shaft-collar1": 0,
+    "plate-bearing1": 0,
+    "spacer-bearing1": 0,
+    "spacer-wheel1": 0,
+    "collar-bearing1": 0
+  },
+  "originalPartMasses": [
+    {
+      "shaftAxisInertiaKgM2": 1.139014871358993e-06,
+      "rotating": true,
+      "id": "original rounded hex shaft",
+      "massKg": 0.0519126473401081,
+      "centroidMm": [
+        5.3083089043594574e-15,
+        1.0879742003922475e-15,
+        -6.944196742270837e-16
+      ],
+      "basis": "original solid volume times assumed uniform density"
+    },
+    {
+      "shaftAxisInertiaKgM2": 5.7740278663294e-05,
+      "rotating": false,
+      "id": "original bored mount plate -1",
+      "massKg": 0.04902017655706132,
+      "centroidMm": [
+        -1.3024540617502636e-15,
+        1.3069850771956414e-14,
+        -40.79374999999998
+      ],
+      "basis": "original solid volume times assumed uniform density"
+    },
+    {
+      "shaftAxisInertiaKgM2": 2.4098947857309884e-07,
+      "rotating": true,
+      "id": "original inner-race spacer -1",
+      "massKg": 0.003975084182649035,
+      "centroidMm": [
+        2.9343452903844223e-15,
+        -3.5128055473515293e-16,
+        -25.953125000000004
+      ],
+      "basis": "original solid volume times assumed uniform density"
+    },
+    {
+      "shaftAxisInertiaKgM2": 5.7740278663293896e-05,
+      "rotating": false,
+      "id": "original bored mount plate 1",
+      "massKg": 0.04902017655706122,
+      "centroidMm": [
+        -2.0914406568489852e-15,
+        2.589787391196101e-16,
+        40.793749999999996
+      ],
+      "basis": "original solid volume times assumed uniform density"
+    },
+    {
+      "shaftAxisInertiaKgM2": 2.4098947857309895e-07,
+      "rotating": true,
+      "id": "original inner-race spacer 1",
+      "massKg": 0.003975084182649035,
+      "centroidMm": [
+        3.860980645242661e-15,
+        -7.428913368374465e-16,
+        25.953125000000004
+      ],
+      "basis": "original solid volume times assumed uniform density"
+    }
+  ],
+  "bareWheelMassKg": 0.16169253265472172,
+  "bareWheelShaftInertiaKgM2": 0.00019974395294864534,
+  "accountedRotatingInertiaKgM2": 0.00020136494677715054,
+  "accountedMassKg": 0.3195957014742504,
+  "massCompleteness": "partial; bearings/collars/motor/gearbox/tread/fasteners/electrical excluded; not robot CoG",
+  "originalReopenedSolids": 5,
+  "publicStepScope": "five original shaft/plate/spacer solids only; native vendor CAD not redistributed",
+  "service": {
+    "driveEndAllowanceMm": 19.681250000000002,
+    "basis": "nominal axial allocation only; no motor/coupling/tool clearance claim"
+  },
+  "acceptance": "unvalidated original interface candidate; zero common volume is not tolerance/load/fit proof",
+  "limits": [
+    "actual shaft stock SKU, tolerances and end retention",
+    "bearing outer-race retainer and selected fastener stack",
+    "NEO motor shaft to hex shaft transmission ratio/pulley or gearbox",
+    "tread SKU and attachment",
+    "support plate attachment and load path to robot",
+    "SPARK MAX mounting, phase/sensor wiring, fuse/current/thermal settings",
+    "torque, preload, runout, balance, service tooling and operating speed limits"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": "frc-component-cartridge/1",
+  "units": "mm",
+  "assembly": "A2 single-wheel support cartridge candidate",
+  "sourceBaseline": "88d1391",
+  "layout": {
+    "bearingCenters": [
+      -40,
+      40
+    ],
+    "shaftLength": 140,
+    "shaftAcrossFlats": 12.7,
+    "shaftCornerDiameter": 13.75,
+    "wheelWidth": 31.75,
+    "bareWheelRadius": 46.99,
+    "collarCenters": [
+      -47.14375,
+      47.14375
+    ],
+    "plateSize": [
+      80,
+      80,
+      3.175
+    ],
+    "plateBore": 28.6,
+    "mountHoleDiameter": 5,
+    "mountHoleSpacing": 50.8,
+    "spacerOuterDiameter": 17,
+    "spacerInnerDiameter": 14,
+    "spacerLength": 20.15625,
+    "bearingFlangeSeatOffset": 2.38125,
+    "collarHalfWidth": 3.175
+  },
+  "materials": {
+    "originalShaft": "6061-T6 candidate, nominal solid profile; stock and end details unresolved",
+    "originalPlates": "6061-T6 plate candidate; 3.175mm nominal stock; machining tolerances unresolved",
+    "originalSpacers": "6061-T6 candidate; compression and bearing-inner-race contact unresolved",
+    "densityKgM3": 2700,
+    "densityBasis": "assumed uniform aluminum density, not measured"
+  },
+  "sources": {
+    "wheel": {
+      "url": "https://documents.andymark.com/e5323f8dff336e35b6abcfa970df5be5230fce20badb60c2701b83e9b8bc587d/am-3608%204IN%20Extrusion%20Performance%20Wheel%20500%20hex.STEP",
+      "sha256": "e5323f8dff336e35b6abcfa970df5be5230fce20badb60c2701b83e9b8bc587d",
+      "part": "am-3608",
+      "scope": "bare wheel, excludes tread; nominal CAD .500in hex vs drawing .501-.506in"
+    },
+    "bearing": {
+      "url": "https://www.revrobotics.com/content/cad/REV-21-1916.STEP",
+      "sha256": "3e16cb3f5f215288b8706eb8228d9580fea78c425eee536ef95195b5b98f02e6",
+      "part": "REV-21-1916-PK4",
+      "scope": "rounded-hex flanged bearing; load and fit unverified"
+    },
+    "collar": {
+      "url": "https://www.revrobotics.com/content/cad/REV-21-2900.STEP",
+      "sha256": "9167c2167b9470f9b33ef368b81d1cc52038c7914f220cc7dd83f142c2022ee9",
+      "part": "REV-21-2900-PK4",
+      "scope": "narrow rounded-hex collar with modeled screw, torque/holding capacity unverified"
+    }
+  },
+  "simulation": {
+    "oldA2RollerInertiaKgM2": 0.0003,
+    "oldA2RadiusM": 0.0508,
+    "transferAccepted": false,
+    "reason": "bare radius .04699 differs; actual tread, motor transmission, fasteners and contact distribution missing"
+  },
+  "openInterfaces": [
+    "actual shaft stock SKU, tolerances and end retention",
+    "bearing outer-race retainer and selected fastener stack",
+    "NEO motor shaft to hex shaft transmission ratio/pulley or gearbox",
+    "tread SKU and attachment",
+    "support plate attachment and load path to robot",
+    "SPARK MAX mounting, phase/sensor wiring, fuse/current/thermal settings",
+    "torque, preload, runout, balance, service tooling and operating speed limits"
+  ]
+}
