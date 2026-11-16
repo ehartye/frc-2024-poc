@@ -1,0 +1,191 @@
+{
+  "schema": "frc-2024-cycle-contract/1",
+  "revision": "A2",
+  "status": "provisional original design for integration; not selected for fabrication",
+  "units": "m",
+  "narrative": "Speaker cycle specialist with stop-and-shoot fallback",
+  "frames": {
+    "robot": "origin ground at chassis center; +X forward, +Y left, +Z up",
+    "world": "use shared artifact world/target transforms; do not reset exit state"
+  },
+  "geometry": {
+    "frame": [
+      0.71,
+      0.71
+    ],
+    "track": 0.6,
+    "bumper": {
+      "bottom": 0.04,
+      "top": 0.19,
+      "depth": 0.075,
+      "continuous": true
+    },
+    "batteryReserve": {
+      "center": [
+        0,
+        -0.245,
+        0.245
+      ],
+      "size": [
+        0.24,
+        0.16,
+        0.22
+      ]
+    },
+    "electronicsReserve": {
+      "center": [
+        0,
+        0.245,
+        0.245
+      ],
+      "size": [
+        0.24,
+        0.16,
+        0.22
+      ]
+    },
+    "intake": {
+      "type": "original pivoting over-bumper reversible cassette",
+      "pivot": [
+        0.18,
+        0,
+        0.34
+      ],
+      "armLength": 0.34,
+      "rollerRadius": 0.035,
+      "rollerWidth": 0.42,
+      "stowAngleDeg": 115,
+      "floorAngleDeg": -60,
+      "rotationAxis": [
+        0,
+        1,
+        0
+      ],
+      "centerFormula": "pivot + armLength*[cos(angle),0,sin(angle)]",
+      "status": "endpoint volumes only; swept mechanism and piece transition require CAD"
+    },
+    "indexerReserve": {
+      "center": [
+        -0.035,
+        0,
+        0.31
+      ],
+      "size": [
+        0.5,
+        0.42,
+        0.16
+      ]
+    },
+    "shooter": {
+      "pivot": [
+        -0.18,
+        0,
+        0.52
+      ],
+      "guideLength": 0.24,
+      "releasePitchDeg": 50,
+      "wheelRadius": 0.0508,
+      "rollerWidth": 0.38,
+      "nominalGap": 0.0468,
+      "adjustableGapDesignRange": [
+        0.04,
+        0.06
+      ],
+      "rangeBasis": "design travel proposal, NOT measured NOTE tolerance",
+      "exitFormula": "pivot + guideLength*[cos(releasePitch),0,sin(releasePitch)]",
+      "releaseRule": "NOTE body pitch and velocity elevation equal releasePitch at ideal guide departure; no separate favorable body-angle override",
+      "spinRadPerS": null,
+      "spinBasis": "must derive from contact/unequal wheel motion or measured release; not assumed stabilized"
+    }
+  },
+  "states": [
+    {
+      "id": "idle",
+      "guard": "operator enabled and fresh sensors",
+      "action": "no feed; retain piece"
+    },
+    {
+      "id": "acquire",
+      "guard": "empty, permitted deployment, unobstructed approach",
+      "action": "deploy cassette; reverse-capable intake inward; monitor entry detection"
+    },
+    {
+      "id": "index",
+      "guard": "entry seen",
+      "action": "move piece to independent retained sensor; bounded timeout"
+    },
+    {
+      "id": "stow",
+      "guard": "piece retained",
+      "action": "stop capture and retract; confirm stow switch and position plausibility"
+    },
+    {
+      "id": "drive-align",
+      "guard": "stowed and retained",
+      "action": "drive to source-registered shot pose; shooter spinup may run concurrently within power budget"
+    },
+    {
+      "id": "release",
+      "guard": "fresh redundant pose/rpm evidence, retained piece, verified release envelope, no thermal/current/resource conflict",
+      "action": "feed once; confirm clear; inhibit if any guard lost"
+    },
+    {
+      "id": "recover",
+      "guard": "timeout or contradictory sensing",
+      "action": "stop feed; one bounded reverse attempt only if path clear; otherwise driver alert and abort"
+    }
+  ],
+  "concurrency": {
+    "allowedCandidate": [
+      "drive + shooter spinup",
+      "drive + aim when swept envelope clear"
+    ],
+    "notYetValidated": [
+      "moving shot",
+      "intake deployment during traffic interaction"
+    ],
+    "sharedResources": [
+      "battery/current budget",
+      "piece path",
+      "shooter feed"
+    ],
+    "fallback": "stop-and-shoot; no release when envelope unknown"
+  },
+  "alternatives": [
+    {
+      "id": "shared-reverse-intake-shooter",
+      "status": "retained alternative",
+      "tradeoff": "less hardware, common failure point; capture/release operating points and reorientation need proof"
+    },
+    {
+      "id": "dual-acquisition",
+      "status": "deferred",
+      "tradeoff": "recovery redundancy costs mass/space; add only after failure evidence"
+    },
+    {
+      "id": "amp",
+      "status": "alternative",
+      "tradeoff": "placement/lift requires verified Amp geometry; do not repurpose Speaker evidence"
+    }
+  ],
+  "reliability": {
+    "inspectionComponents": [
+      "intake pivot/bearings",
+      "bumper-to-frame brackets",
+      "shooter sideplates/shaft supports",
+      "battery retention",
+      "wire strain relief"
+    ],
+    "triggers": [
+      "unusual impact",
+      "changed commanded-vs-measured speed",
+      "jam recurrence",
+      "looseness or visible damage",
+      "repeatable vibration-baseline change"
+    ],
+    "response": "inhibit affected function; inspect with energy isolated; record component revision, symptom, action and retest",
+    "limits": "no inferred impact capacity, fatigue life or vibration diagnosis; no blanket per-match threadlocker"
+  },
+  "releaseAcceptance": "unresolved: whole-piece sweep, physically derived release/spin, complete target registration and roof/wall checks",
+  "pieceVariation": "measure actual new/worn pieces before tolerance or contact robustness claims"
+}
