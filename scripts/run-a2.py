@@ -19,7 +19,7 @@ def run(out,java,gradle):
  (pending/'results.json').write_text(json.dumps({'season':2024,'scenarios':summaries,'officialScores':None},indent=2,allow_nan=False)+'\n',encoding='utf-8')
  lines=['# 2024 A2 run','', 'Open NORMAL.html for the recorded cycle; NORMAL_9V.html and the fault replays retain comparisons.','', '| Scenario | State | Releases | Seconds |','|---|---|---:|---:|']
  for s in summaries:lines.append(f"| {s['scenario']} | {s['state']} | {s['releases']} | {s['timeS']:.3f} |")
- lines+=['','Pickup, telescope, retention and transfer are prescribed hypotheses; shooter/guide energy is modeled. No official score or physical acceptance. A roughly27second two-shot cycle is not15second autonomous.','', 'Native source/runtime binding: native/receipt.json. Presentation binding: presentation-receipt.json.']
+ lines+=['','Pickup, telescope, retention and transfer are prescribed hypotheses; shooter/guide energy is modeled. No official score or physical acceptance. A roughly 27-second two-shot cycle is not 15-second autonomous.','', 'Native source/runtime binding: native/receipt.json. Presentation binding: presentation-receipt.json.']
  (pending/'SUMMARY.md').write_text('\n'.join(lines)+'\n',encoding='utf-8');files=[p for p in pending.iterdir() if p.is_file()]
  report={'schema':'frc-a2-presentation-receipt/1','nativeReceiptSha256':sha(pending/'native/receipt.json'),'sourceSha256':before,'artifactsSha256':{p.name:sha(p) for p in files}}
  (pending/'presentation-receipt.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8');pending.rename(out);return out
