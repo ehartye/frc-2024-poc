@@ -47,7 +47,23 @@ def shooter(c,tx):
      slot=BRepAlgoAPI_Fuse(slot,h.box(mx+xx-1,y+47,z+zz-2.6,2,7,5.2)).Shape();bridge=cut(bridge,slot)
    # Tool access for four face screws; these are not clamping holes.
    for xx,zz in [(25.4,0),(-25.4,0),(0,25.4),(0,-25.4)]:bridge=cut(bridge,h.cyl((mx+xx,y+47,z+zz),(0,1,0),5,7))
+   # Integral conceptual jack lug, tapped bore represented at tap-drill diameter only.
+   lug=h.box(mx+38,y+42,z-6,6,9.35,12)
+   lug=cut(lug,h.cyl((mx+37,y+46.5,z),(1,0,0),2.05,8))
+   bridge=BRepAlgoAPI_Fuse(bridge,lug).Shape()
    add('slotted carrier bridge proposal',bridge,'support')
+   add('tension jack nominal screw envelope',h.cyl((mx+35,y+46.5,z),(1,0,0),2.413,17),'support')
+   add('tension jack head envelope',h.cyl((mx+52,y+46.5,z),(1,0,0),3.9,4.8),'support')
+   # Bearing plate to bridge: spacers close the actual axial gap; nominal fastener envelopes.
+   gap=48.175-41.5875
+   for xx in [-25.4,25.4]:
+    add('bridge spacer '+str(xx),ring(station+xx,y+41.5875,z,4.5,2.6,gap),'support')
+    add('bridge bolt nominal '+str(xx),h.cyl((station+xx,y+38.4125,z),(0,1,0),2.413,19.05),'support')
+   for xx in [-28,28]:
+    for zz in [-28,28]:
+     add('slider clamp screw nominal '+str((xx,zz)),h.cyl((mx+xx,y+45,z+zz),(0,1,0),2.413,12.7),'support')
+     add('slider clamp head nominal '+str((xx,zz)),h.cyl((mx+xx,y+40.2,z+zz),(0,1,0),3.9,4.8),'support')
+     add('slider clamp nut envelope '+str((xx,zz)),ring(mx+xx,y+51.35,z+zz,4.76,2.413,5),'support')
    for cx in [station,mx]:add('pulley envelope',ring(cx,y+50.6528,z,13.144,7 if cx==station else 4,18.6944),'drive')
    # Smooth pitch-band representation, explicitly NOT teeth or belt engagement geometry.
    pr=12*6.35/(2*math.pi);outer=BRepAlgoAPI_Fuse(h.cyl((station,y+53.65,z),(0,1,0),pr+1.5,12.7),h.cyl((mx,y+53.65,z),(0,1,0),pr+1.5,12.7)).Shape();outer=BRepAlgoAPI_Fuse(outer,h.box(station,y+53.65,z-pr-1.5,88.9,12.7,2*(pr+1.5))).Shape()
@@ -89,6 +105,10 @@ def mass_ledger(parts,dc):
   return {'subtotalKg':total,'partialCentroidMm':[sum(x['massKg']*x['centerMm'][i] for x in rows)/total for i in range(3)],'items':rows}
  return {'sourceKnown':summary(known),'estimatedOriginalHardware':summary(estimates),'wholeRobotCoG':None,'omissions':['drivetrain frame,wheels,gearboxes,belts,shafts and fasteners','shooter COTS,shafts,tread and mounting hardware not yet consolidated','intake,indexer,bumpers,wiring and restraint'],'warning':'Partial centroid is not whole-robot CoG; never density-fill supplier envelope boxes'}
 
+DEPENDENCIES=['cad/assembly/build_robot.py','cad/a2_primitives.py','cad/a2_kinematics.py','cad/build_a2_layout.py','cad/cycle-contract-A2.json','cad/components/a2-transmission.json','cad/drivetrain/candidate.json','cad/drivetrain/build_drivetrain.py','cad/electrical/manifest.json','cad/electrical/build_electrical.py']
+def input_pins(root=ROOT):return {name:hashlib.sha256((root/name).read_bytes()).hexdigest() for name in DEPENDENCIES}
+def receipt_matches(report,root=ROOT):return report.get('inputs')==input_pins(root)
+
 def main():
  out=ROOT/'artifacts/whole-robot';out.mkdir(parents=True,exist_ok=True);parts,dc=build();w=h.STEPControl_Writer()
  for n,s,k in parts:
@@ -97,6 +117,6 @@ def main():
  dest=out/'original-component-assembly.step';assert w.Write(str(dest))==h.IFSelect_RetDone
  reader=h.STEPControl_Reader();assert reader.ReadFile(str(dest))==h.IFSelect_RetDone;reader.TransferRoots()
  render(parts,out,'component integration | unfinished mounts / intake')
- report={'schema':'2024-component-assembly/1','massLedger':mass_ledger(parts,dc),'partCount':len(parts),'reopenedRoots':reader.NbRootsForTransfer(),'chassisMm':dc['frameNativeEnvelopeMm'],'trackMm':dc['centerTrackMm'],'parts':[{'name':n,'role':k,'boundsMm':bounds(s)} for n,s,k in parts],'acceptance':False,'limits':['Original source-sized representations, not redistributed vendor geometry','Green intake/transfer parts are unresolved legacy reserves, not working hardware','Carrier bridge has adjustment holes but clamp screws, jack, spacers and frame anchorage are unfinished','Belt shown as pitch band, not teeth/contact/preload','Tread attachment still fails selected rivet bare-stack grip','No whole robot collision, structure, manufacturing or rules acceptance','No complete mass/CoG; component mass omissions remain']}
+ report={'schema':'2024-component-assembly/1','inputs':input_pins(),'outputStepSha256':hashlib.sha256(dest.read_bytes()).hexdigest(),'massLedger':mass_ledger(parts,dc),'partCount':len(parts),'reopenedRoots':reader.NbRootsForTransfer(),'chassisMm':dc['frameNativeEnvelopeMm'],'trackMm':dc['centerTrackMm'],'parts':[{'name':n,'role':k,'boundsMm':bounds(s)} for n,s,k in parts],'acceptance':False,'limits':['Original source-sized representations, not redistributed vendor geometry','Green intake/transfer parts are unresolved legacy reserves, not working hardware','Carrier bridge now has nominal clamps/jack/spacers; vendor fastener geometry, torque, thread engagement and frame anchorage remain unqualified','Belt shown as pitch band, not teeth/contact/preload','Tread attachment still fails selected rivet bare-stack grip','No whole robot collision, structure, manufacturing or rules acceptance','No complete mass/CoG; component mass omissions remain']}
  (out/'report.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8');print(json.dumps({'parts':len(parts),'roots':reader.NbRootsForTransfer()}))
 if __name__=='__main__':main()

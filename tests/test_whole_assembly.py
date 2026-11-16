@@ -5,6 +5,15 @@ import build_robot as b
 class AssemblyTest(unittest.TestCase):
  @classmethod
  def setUpClass(cls):cls.parts,cls.dc=b.build()
+ def test_dependency_mutation_invalidates_receipt(self):
+  import tempfile
+  with tempfile.TemporaryDirectory() as tmp:
+   r=pathlib.Path(tmp)
+   for name in b.DEPENDENCIES:
+    q=r/name;q.parent.mkdir(parents=True,exist_ok=True);q.write_bytes((ROOT/name).read_bytes())
+   report={'inputs':b.input_pins(r)};self.assertTrue(b.receipt_matches(report,r))
+   p=r/'cad/components/a2-transmission.json';p.write_bytes(p.read_bytes()+b' ')
+   self.assertFalse(b.receipt_matches(report,r))
  def test_real_chassis(self):
   self.assertAlmostEqual(self.dc['centerTrackMm'],579.60768)
   self.assertEqual(self.dc['frameNativeEnvelopeMm'][:2],[719.074,711.2])

@@ -8,7 +8,7 @@ The shooter uses the independently checked 45.72 mm tread seat and nominal 48.26
 
 ## Unfinished interfaces, visible rather than hidden
 
-- Shooter-to-frame anchorage, bridge spacers, slider clamp screws and tension jack remain unfinished. No plate is accepted as load-bearing merely because it is drawn.
+- Shooter-to-frame anchorage remains unfinished. Nominal bridge spacers, slider clamp screw/head/nut envelopes and an integral jack-lug proposal now show an adjustment load path. They are not source-qualified fastener assemblies: nut/head dimensions, tapped engagement, travel, installation and torque remain to be checked. No plate is accepted as load-bearing merely because it is drawn.
 - The old telescoping intake/transfer is green and named UNRESOLVED. It is retained as spatial context, not completed component CAD or a functioning intake.
 - The proposed rear crossmember was excluded because it intersected the electrical deck; source-derived front/middle mounting adapters are a separate ongoing task.
 - Selected tread rivet fails the nominal bare-stack grip range. No attachment or safe rotational-speed acceptance.
