@@ -1,0 +1,363 @@
+{
+  "schema": "frc-current-launcher-run/1",
+  "runId": "6c332638-8cad-4cb9-868a-e48e0dcb7e3e",
+  "inputs": {
+    "config.json": "083f630fffa9d22c0a0cf102a59c4f857193a5a3c3392b3594b59b92f3ff18e9",
+    "current-geometry.json": "efb99ac59cbda59f0c4abdbe16e0271937ac9a95b5288d50721c58a3dc4d690a",
+    "plant.py": "9d0c00b15df475ed43a7f6e5aa551b6b929ad18b1c8f43b5a1ee1dc4e90b55f0",
+    "power_state.py": "2ec586ee55f9475f139ec78a8fef58158b0345a085ae8860ea3706ba3618134e",
+    "stateful_brownout.py": "997bea3a891d4015f0cadc8a8bb8c78a89b62c538d3f1455c9a7ebbcf17424a8",
+    "run_current.py": "9953b425664348561214b684d92ceaee09f825ecaf7651e5d727a30a7cc412ee",
+    "UPSTREAM.json": "4b79b80a8fa762356cb7b8d463a5aeb40bfc7f4da3a99d6b54984c5dfe5511ef",
+    "scripts/a2-exit-screen.py": "b7b999d61451ca2427297ad1b2701bb1de9a5f1c55ebb7a8b20fbca42530be43"
+  },
+  "cadInputs": {
+    "cad/assembly/build_robot.py": "436b9c43c963b8266e9b451ffe510cb888e14c3ec6dae552baf874c86455f57f",
+    "cad/assembly/bumper_candidate.py": "556fba39fda427cb081a2a1d4d806372b67b830606a242bbfc0babf05619fc19",
+    "cad/a2_primitives.py": "bef958c710da792f89def8606d7169a7c385fcff257826619a7b29fe0943952e",
+    "cad/a2_kinematics.py": "4329126a1465f53c8d27618307b2864ff69803e196ff4521aab8a50daf670581",
+    "cad/build_a2_layout.py": "aea31166eabc53113962cc511cfbd190eba54033f7b93476455961dccb1969c9",
+    "cad/cycle-contract-A2.json": "0e08bf88e488539ca8966dcc3cc08727ef2faf98da3740787b308cd54c652f52",
+    "cad/components/a2-transmission.json": "0aae2e2dd0d8c4b16729139380f6d1e2df0efa956dad2ee8b205be1a57f3d8b0",
+    "cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+    "cad/drivetrain/build_fastening.py": "9d82a974d184200e7a6c414bc74b345cd53aa2cf85f36c3cf528fe818997d4ac",
+    "cad/drivetrain/fastening.json": "6cb3d276cd5f59143ef9b52d2240095f02db9f92d6cfef5ae53b145a78862ac9",
+    "cad/drivetrain/build_drivetrain.py": "4748e01902aac32ae8d996e1f7676caa7f794ac6a5971b661855c26487ad29a7",
+    "cad/electrical/manifest.json": "9db917a55b0884db9841f52da3b5cccf8ad684c652e4dde3e01b1efe75e891a3",
+    "cad/electrical/build_electrical.py": "d2fbd40d0b26c8887679b6ed3b49c655b10a27a0cd175e812b35d9fccd6f6317",
+    "cad/electrical/mounts.py": "90254dbc5116a9af72df0ba6442ed94ef8c94e8247326f9b7c6cfd0c0749c7e8",
+    "cad/electrical/breaker_mount.py": "1e27087fa191e8043c6ed8b3c48bca4db50cde379efa171cc49508a1a1c75060",
+    "cad/electrical/breaker-mount-evidence.json": "9e0bb64f30ab3ee58de577fe694ee578135cdf4d74ddf8e0b3065b741266b07d",
+    "cad/electrical/fasteners.py": "788a1cb9bf71a780aed9cbeb5bf48d06532e914fed431edcc0e72a4bd273b799",
+    "cad/assembly/intake_components.py": "1dc0f85a805577f38e535a1e137a1b31c38cd32a33a737b2e5e7f1ab58c54f65",
+    "cad/assembly/intake_components.json": "8fa11a9d4ac9f425a5a08e3d1a60899a3e4e9fd7839bfde1b445f023034511f3",
+    "cad/assembly/build_intake_candidate.py": "77136f213e945a6b895e1156e5af339c263a37f77f824cabf460c421204b7a84",
+    "cad/assembly/check_intake_contact.py": "95d20cfed12331c135b5534d4076f833ae6741b69806a61e677e88098a7301e3",
+    "cad/assembly/verify_receipts.py": "213a00200bc7fc0b84bd4bb82e4a62aaee3c10432f35373fc3097b2141d4e81d",
+    "cad/assembly/audit_intake_motion.py": "5b5754d4a3a744c1c3ddff2650bc99f841418ababbcecdaacaace155be88a192",
+    "sim/component-launcher/extract_geometry.py": "cd4d4f5ba6a915a79906c7d6cbc1d53e59a9388ecb09ecdce612cb2ced53b28f"
+  },
+  "cases": [
+    {
+      "name": "nominal",
+      "overrides": {},
+      "plant": {
+        "case": "nominal",
+        "outcome": "reversed before exit",
+        "elapsedS": 0.2614399999999799,
+        "feedStartS": 0.07216000000000075,
+        "endSpeedMps": -3.968814626759315e-05,
+        "endXFromStationM": -0.08670796654558405,
+        "activeContactTimeS": 0.03673999999999884,
+        "lastPositiveEngagementSample": {
+          "xFromStationM": -0.08670796659631334,
+          "speedMps": 4.476107531999326e-05,
+          "timeS": 0.2614199999999799
+        },
+        "longestPostContactZeroEngagementS": 0.0,
+        "minimumSharedBusV": 9.440095209729407,
+        "peakSharedBusCurrentA": 127.99523951373824,
+        "energyJ": {
+          "batterySource": 221.59919239781647,
+          "prescribedFeedKinetic": 0.26437499999999997,
+          "finalKinetic": 104.3799524949985,
+          "piecePotentialChange": 0.2660255581087381,
+          "windingHeat": 85.86181764428628,
+          "sourceResistanceLoss": 30.867999692196204,
+          "slipLoss": 0.49761704216003844,
+          "otherRobotLoadWork": 0.0,
+          "balanceResidual": -0.009845033933293279
+        },
+        "acceptance": false
+      },
+      "releaseNotRegistered": "No established forward departure; last contact is not a release when the piece reverses",
+      "trace": {
+        "file": "nominal.csv",
+        "sha256": "31ae05fb73112b22410d40e9eb6a38b88b4493700f05f7929bcad26169d76f19"
+      }
+    },
+    {
+      "name": "slower handoff",
+      "overrides": {
+        "feedEntrySpeedMps": 0.5
+      },
+      "plant": {
+        "case": "nominal",
+        "outcome": "reversed before exit",
+        "elapsedS": 0.1310400000000146,
+        "feedStartS": 0.07216000000000075,
+        "endSpeedMps": -5.653657221667551e-05,
+        "endXFromStationM": -0.20528166443668608,
+        "activeContactTimeS": 0.0,
+        "lastPositiveEngagementSample": null,
+        "longestPostContactZeroEngagementS": 0.0,
+        "minimumSharedBusV": 9.440095209729407,
+        "peakSharedBusCurrentA": 127.99523951373824,
+        "energyJ": {
+          "batterySource": 152.27712938029606,
+          "prescribedFeedKinetic": 0.029375,
+          "finalKinetic": 53.5346576419859,
+          "piecePotentialChange": 0.029374999624424712,
+          "windingHeat": 73.44544249072656,
+          "sourceResistanceLoss": 25.305463623401664,
+          "slipLoss": 0.0,
+          "otherRobotLoadWork": 0.0,
+          "balanceResidual": -0.008434375442504916
+        },
+        "acceptance": false
+      },
+      "releaseNotRegistered": "No established forward departure; last contact is not a release when the piece reverses",
+      "trace": {
+        "file": "slower-handoff.csv",
+        "sha256": "d584a3a99e0728eddc0b1429f1b769e745e8eef1960cd1a43358975a1c49731c"
+      }
+    },
+    {
+      "name": "faster handoff",
+      "overrides": {
+        "feedEntrySpeedMps": 2.0
+      },
+      "plant": {
+        "case": "nominal",
+        "outcome": "passed contact-table boundary",
+        "elapsedS": 0.20765999999998488,
+        "feedStartS": 0.07216000000000075,
+        "endSpeedMps": 8.927850856655805,
+        "endXFromStationM": 0.20012842055598914,
+        "activeContactTimeS": 0.04535999999999849,
+        "lastPositiveEngagementSample": {
+          "xFromStationM": 0.0898540611432046,
+          "speedMps": 9.032138752977197,
+          "timeS": 0.19537999999998965
+        },
+        "longestPostContactZeroEngagementS": 0.012259999999999837,
+        "minimumSharedBusV": 9.440095209729407,
+        "peakSharedBusCurrentA": 127.99523951373824,
+        "energyJ": {
+          "batterySource": 209.9977635810466,
+          "prescribedFeedKinetic": 0.47,
+          "finalKinetic": 71.48916847932516,
+          "piecePotentialChange": 0.8384964551836604,
+          "windingHeat": 86.99978426760387,
+          "sourceResistanceLoss": 31.377808739442944,
+          "slipLoss": 19.777719984759905,
+          "otherRobotLoadWork": 0.0,
+          "balanceResidual": -0.015214345268940832
+        },
+        "acceptance": false
+      },
+      "registeredRelease": {
+        "pieceXWorld": 0.6505210353857875,
+        "pieceYWorld": 4.077180223391458e-17,
+        "pieceZWorld": 0.7431748834318378,
+        "exitVx": -4.516069376488599,
+        "exitVy": 5.530589906644146e-16,
+        "exitVz": 7.822061610584153,
+        "bodyPitchRad": 1.0471975511965976
+      },
+      "releaseRobotM": [
+        0.33292703057160233,
+        0,
+        0.7431748834318378
+      ],
+      "thinApertureScreen": {
+        "status": "sampled-pass",
+        "sampledMarginM": 0.1339439479128077,
+        "surfaceSamples": 16384,
+        "firstCrossingS": 0.15923463676828534,
+        "lastCrossingS": 0.2169530654322172,
+        "actualSpeedMps": 9.032138752977197,
+        "fixedBodyPitchHypothesisRad": 1.0471975511965976,
+        "spin": "unknown; fixed attitude is an explicit hypothesis"
+      },
+      "trace": {
+        "file": "faster-handoff.csv",
+        "sha256": "8086d9ec96e15d12929e33e9601aacbf33e3a24df641b925bc8fc46767da196c"
+      }
+    },
+    {
+      "name": "low friction",
+      "overrides": {
+        "friction": 0.3
+      },
+      "plant": {
+        "case": "nominal",
+        "outcome": "reversed before exit",
+        "elapsedS": 0.25153999999997,
+        "feedStartS": 0.07216000000000075,
+        "endSpeedMps": -7.33496603443297e-05,
+        "endXFromStationM": -0.0873312077821508,
+        "activeContactTimeS": 0.026839999999999243,
+        "lastPositiveEngagementSample": {
+          "xFromStationM": -0.08733120775407718,
+          "speedMps": 7.054229943508818e-05,
+          "timeS": 0.25151999999997
+        },
+        "longestPostContactZeroEngagementS": 0.0,
+        "minimumSharedBusV": 9.440095209729407,
+        "peakSharedBusCurrentA": 127.99523951373824,
+        "energyJ": {
+          "batterySource": 218.42760854344644,
+          "prescribedFeedKinetic": 0.26437499999999997,
+          "finalKinetic": 102.05665119674002,
+          "piecePotentialChange": 0.2647816870873635,
+          "windingHeat": 85.54637844431751,
+          "sourceResistanceLoss": 30.72668293061017,
+          "slipLoss": 0.10730968167075576,
+          "otherRobotLoadWork": 0.0,
+          "balanceResidual": -0.009820396979381793
+        },
+        "acceptance": false
+      },
+      "releaseNotRegistered": "No established forward departure; last contact is not a release when the piece reverses",
+      "trace": {
+        "file": "low-friction.csv",
+        "sha256": "a77136da959f99f0aef641a09e9bf3ab5df89fe84b4c173f5484355641a27547"
+      }
+    },
+    {
+      "name": "zero traction",
+      "overrides": {
+        "friction": 0
+      },
+      "plant": {
+        "case": "nominal",
+        "outcome": "reversed before exit",
+        "elapsedS": 0.24879999999996893,
+        "feedStartS": 0.07216000000000075,
+        "endSpeedMps": -0.00016960971632336587,
+        "endXFromStationM": -0.08753497993012645,
+        "activeContactTimeS": 0.024099999999999355,
+        "lastPositiveEngagementSample": {
+          "xFromStationM": -0.08753497823649373,
+          "speedMps": 2.4644419708744853e-07,
+          "timeS": 0.24877999999996894
+        },
+        "longestPostContactZeroEngagementS": 0.0,
+        "minimumSharedBusV": 9.440095209729407,
+        "peakSharedBusCurrentA": 127.99523951373824,
+        "energyJ": {
+          "batterySource": 217.51004362100616,
+          "prescribedFeedKinetic": 0.26437499999999997,
+          "finalKinetic": 101.3848658281394,
+          "piecePotentialChange": 0.2643749966199187,
+          "windingHeat": 85.45102589027648,
+          "sourceResistanceLoss": 30.683964986399747,
+          "slipLoss": 0.0,
+          "otherRobotLoadWork": 0.0,
+          "balanceResidual": -0.009813080429385224
+        },
+        "acceptance": false
+      },
+      "releaseNotRegistered": "No established forward departure; last contact is not a release when the piece reverses",
+      "trace": {
+        "file": "zero-traction.csv",
+        "sha256": "7ad45fa5114e4f0b529b9818d5d8a77c9bcf1d15c3e80c4487b1699ff0937431"
+      }
+    },
+    {
+      "name": "9V plus load",
+      "overrides": {
+        "busOpenCircuitV": 9,
+        "otherRobotCurrentA": 60
+      },
+      "plant": {
+        "case": "nominal",
+        "outcome": "reversed before exit",
+        "elapsedS": 0.3046200000000231,
+        "feedStartS": 0.11534000000001397,
+        "endSpeedMps": -3.968814626759315e-05,
+        "endXFromStationM": -0.08670796654558405,
+        "activeContactTimeS": 0.03673999999999884,
+        "lastPositiveEngagementSample": {
+          "xFromStationM": -0.08670796659631334,
+          "speedMps": 4.476107531999326e-05,
+          "timeS": 0.3046000000000231
+        },
+        "longestPostContactZeroEngagementS": 0.0,
+        "minimumSharedBusV": 5.386740331490273,
+        "peakSharedBusCurrentA": 180.66298342538212,
+        "energyJ": {
+          "batterySource": 289.2460938114167,
+          "prescribedFeedKinetic": 0.26437499999999997,
+          "finalKinetic": 48.902401962943834,
+          "piecePotentialChange": 0.2660255581087381,
+          "windingHeat": 40.65997767239823,
+          "sourceResistanceLoss": 73.41532168027905,
+          "slipLoss": 0.342750069471963,
+          "otherRobotLoadWork": 125.92865415847638,
+          "balanceResidual": -0.004662290261521207
+        },
+        "acceptance": false
+      },
+      "releaseNotRegistered": "No established forward departure; last contact is not a release when the piece reverses",
+      "trace": {
+        "file": "9V-plus-load.csv",
+        "sha256": "3a2b9e8481c29a9489e3e626cc71a704209d2d113e4ef44985757a82032adb72"
+      }
+    },
+    {
+      "name": "half timestep",
+      "overrides": {
+        "stepS": 1e-05
+      },
+      "plant": {
+        "case": "nominal",
+        "outcome": "reversed before exit",
+        "elapsedS": 0.2614300000001207,
+        "feedStartS": 0.07215000000000472,
+        "endSpeedMps": -7.550363622369439e-06,
+        "endXFromStationM": -0.08670732590142514,
+        "activeContactTimeS": 0.03675000000000058,
+        "lastPositiveEngagementSample": {
+          "xFromStationM": -0.08670732603700301,
+          "speedMps": 3.466593798934819e-05,
+          "timeS": 0.26142000000012067
+        },
+        "longestPostContactZeroEngagementS": 0.0,
+        "minimumSharedBusV": 9.440095209729407,
+        "peakSharedBusCurrentA": 127.99523951373108,
+        "energyJ": {
+          "batterySource": 221.59729592478038,
+          "prescribedFeedKinetic": 0.26437499999999997,
+          "finalKinetic": 104.37510591758809,
+          "piecePotentialChange": 0.26602683671268396,
+          "windingHeat": 85.85955503588595,
+          "sourceResistanceLoss": 30.868150412062533,
+          "slipLoss": 0.4977551065772157,
+          "otherRobotLoadWork": 0.0,
+          "balanceResidual": -0.0049223840460821955
+        },
+        "acceptance": false
+      },
+      "releaseNotRegistered": "No established forward departure; last contact is not a release when the piece reverses",
+      "trace": {
+        "file": "half-timestep.csv",
+        "sha256": "e8036da7139396eddb48146ed608b8a24135b90941f83ecd365fc848b762611d"
+      }
+    }
+  ],
+  "traceSha256": "31ae05fb73112b22410d40e9eb6a38b88b4493700f05f7929bcad26169d76f19",
+  "wholeRobotSimulation": false,
+  "scoreAccepted": false,
+  "limits": [
+    "Actual authored annulus geometry with nominal uncompressed tread",
+    "Finite10mm occupancy samples, not stiffness/friction/contact calibration",
+    "Fixed guide-aligned NOTE attitude; no contact torque/spin solution",
+    "Prescribed handoff speed, not simulated cradle drive",
+    "No full field/robot swept release or scoring acceptance",
+    "Kt=1/Kv to preserve passive electromechanical power; differs from empirical NEO stall torque/current curve",
+    "Total inertia .0003 each is hypothetical; source bare wheel .000199744 is only a partial contribution",
+    "Normal25N and mu.8 are hypotheses, not inferred from overlap",
+    "Rigid sampled overlap/max overlap is a prescribed engagement weight, not a stiffness or solved compression law",
+    "Ideal independent PWM current limiting reduces effective duty when saturated; no controller loss/latency",
+    "No-load friction, aerodynamic drag, belt compliance, torsion, piece deformation/spin, and fullrobot electrical load omitted",
+    "Feed entry1.5m/s is prescribed boundary kinetic energy, not achieved acquisition",
+    "No old A2 target or exit-speed acceptance transfers",
+    "Current cradle handoff is guide coordinate -20mm, 220mm before wheel station; feed entry velocity remains prescribed, not produced by transfer belts",
+    "Radius corrected to native seat45.72mm plus nominal tread2.54mm; loaded tread compression/fastener head not modeled",
+    "Previous shot pose remains an explicit provisional dock assumption; shooter translation is current, full field structures are absent",
+    "Base cases exclude stateful brownout: low-bus outcomes are conditional, not hardware operability",
+    "Last positive sampled engagement is not measured release; no fresh scoring success inferred"
+  ]
+}
