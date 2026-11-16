@@ -1,0 +1,67 @@
+{
+  "schema": "original-2024-intake-elevator/1",
+  "units": "mm",
+  "status": "original component layout candidate; not qualified capture/retention/load design",
+  "note": {
+    "majorRadius": 152.4,
+    "tubeRadius": 25.4
+  },
+  "stageCenterX": 178,
+  "floorCenterZ": 25.4,
+  "handoffCenterZ": 575.2923417633061,
+  "pitchDeg": 60,
+  "guide": {
+    "x": 101.6,
+    "yAbs": 228.6,
+    "bottom": 35,
+    "height": 730,
+    "square": 25.4,
+    "wall": 3.175,
+    "slideClearance": 0.3
+  },
+  "pinch": {
+    "teeth": 12,
+    "pitch": 6.35,
+    "beltTeethHypothesis": 104,
+    "beltWidth": 12.7,
+    "beltRadialThicknessHypothesis": 2,
+    "innerFaceYAbs": 175.8,
+    "shaftLower": -20,
+    "shaftLength": 120,
+    "lowerBearingZ": -16,
+    "upperBearingZ": 48,
+    "drivePulleyZ": 70,
+    "motorOffsetY": 88.9,
+    "motorFaceZ": 55,
+    "beltPartCurrent": "REV-21-4104"
+  },
+  "lift": {
+    "driveX": 60,
+    "lowerPulleyZ": 51.5,
+    "upperPulleyZ": 750,
+    "carriageAnchorAboveNote": 75,
+    "gearRatioHypothesis": 12,
+    "chain": "REV-41-1365",
+    "sprocket": "REV-21-2016",
+    "sprocketTeeth": 16,
+    "chainLinksHypothesis": 236,
+    "sprocketPitchRadius": 16.4,
+    "sprocketOuterRadius": 17.95
+  },
+  "sources": {
+    "motor": "https://www.revrobotics.com/rev-21-1650/",
+    "pulley": "https://www.revrobotics.com/rev-21-2201/",
+    "gearbox": "https://www.revrobotics.com/content/docs/REV-21-2100-DR.pdf",
+    "ratios": "https://www.revrobotics.com/content/docs/REV-21-2101-DR.pdf",
+    "chain": "https://www.revrobotics.com/rev-41-1365/",
+    "sprocket": "https://www.revrobotics.com/content/docs/REV-21-2016-DR.pdf"
+  },
+  "limits": [
+    "Side-pinch104T RT25 belt is currently listed but pre2024availability unverified;236link chain layout needs real link/polygon/attachment/adjustment checks",
+    "Side-belt backing traction/normal force and capture are unmeasured; no contact acceptance",
+    "NEO/MAXPlanetary dimension-only representations; exact couplers/mount/retention unresolved",
+    "Rotation drive and elevator actively hold load; no power-off safety or mechanical brake modeled",
+    "Full cradle pulley/bearing/shaft interference and NOTE swept contact still must be checked",
+    "Original aluminum guide and UHMW slide-pad materials assumed, not fabrication specifications"
+  ]
+}
