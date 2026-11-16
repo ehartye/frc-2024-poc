@@ -1,0 +1,284 @@
+{
+  "checks": [],
+  "constraints": [
+    {
+      "id": "unmodeled-field",
+      "sourceIds": [
+        "manual"
+      ],
+      "text": "STAGE, SOURCE, AMP and other structures are omitted, not free space."
+    },
+    {
+      "id": "aperture-datum",
+      "sourceIds": [
+        "speaker-drawing"
+      ],
+      "text": "Speaker dimensions are assembly-local; field registration is unresolved."
+    }
+  ],
+  "design": {
+    "parameters": {
+      "bumperBottomM": 0.04,
+      "bumperDepthM": 0.075,
+      "bumperHeightM": 0.15,
+      "frameLengthM": 0.71,
+      "frameWidthM": 0.71,
+      "height": 0.8,
+      "opening": 0.45,
+      "phase": "start",
+      "reach": 0,
+      "toolHeight": 0.7,
+      "trackM": 0.6
+    },
+    "requirementLinks": {
+      "body-envelope": [
+        "acquire"
+      ],
+      "frame-plate": [
+        "acquire",
+        "reliability-pit"
+      ],
+      "front-bumper": [
+        "acquire"
+      ],
+      "tool": [
+        "acquire",
+        "deliver",
+        "piece-variation"
+      ]
+    }
+  },
+  "disciplinePlans": {
+    "fabrication": {
+      "materials": [],
+      "openQuestions": [
+        "For each component/CAD ID, what failure mode, inspection trigger, alert, repair reference and history/retest entry belong in the pit plan?",
+        "Are accelerometer mounting, range/bandwidth, sampling/filtering and RPM suitable for a repeatable known-condition baseline? No validated diagnostic thresholds yet.",
+        "How will a real chassis bay preserve frame and bumper load paths?",
+        "What measured ranges of game-piece dimensions, stiffness, friction and compression occur in new and worn samples? Record uncertainty; tolerances are TBD.",
+        "Which roller gaps, guides or settings should be adjustable, lockable and repeatable, and how will wear tests expose jams, slip, piece damage and release variation?",
+        "Which attributed component, material or tolerance lessons from prior-team CAD inform an original design without replicating team geometry?"
+      ],
+      "processes": [],
+      "toolCapabilities": []
+    },
+    "programming": {
+      "pseudocode": "PLANNING ONLY, not robot control. Consider parallel DRIVE toward reload and AIM using measured pose. RELEASE only if retention, moving-shot accuracy, envelope, power and shared-resource guards are established; otherwise defer release or choose stop-and-shoot. A reversible intake/shooter must own its actuator exclusively and cannot intake and eject simultaneously. Compare separate paths or purposeful redundancy rather than assume one architecture. The current rehearsal budget is serialized and demonstrates no concurrency savings. OBSERVE commanded versus measured RPM and freshness; disclose fault and requested/active mode. IF persistent underperformance AND operator requests a validated degraded profile THEN consider bounded shorter-range matched-wheel operation, not a proven shot. Release remains inhibited unless sensor, range, thermal/current and resource guards pass. Use tested enter/exit thresholds, dwell and hysteresis; cancel explicitly and acknowledge recovery. Thresholds and fault-injection evidence are TBD; no safety or accuracy claim.",
+      "states": [
+        {
+          "action": "Choose a rehearsal",
+          "entry": "Outputs inhibited",
+          "failure": "Remain idle if required inputs are missing",
+          "id": "idle",
+          "requirementIds": [
+            "acquire"
+          ],
+          "sensor": "operator intent"
+        },
+        {
+          "action": "Display fault reason, requested/active mode and release inhibit; explore matched-wheel shorter-range profile only within validated limits",
+          "entry": "Operator requests a tested degraded profile; otherwise remain nominal or inhibit release",
+          "failure": "Inhibit release for stale or implausible sensors, limit exceedance, unknown shot envelope or resource conflicts; explicit cancel and recovery acknowledgment with hysteresis; fault-injection tests pending",
+          "id": "degraded-shot-candidate",
+          "requirementIds": [
+            "deliver"
+          ],
+          "sensor": "Commanded/measured RPM and freshness; range, current/thermal limits; enter/exit thresholds and dwell times TBD from tests"
+        }
+      ],
+      "status": "pseudocode"
+    }
+  },
+  "frames": {
+    "robot": {
+      "basis": "design assumption",
+      "headingDeg": 180,
+      "x": 2.2,
+      "y": 0,
+      "z": 0
+    },
+    "target": {
+      "basis": "assembly bottom assumed at floor; not installed registration",
+      "headingDeg": 0,
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "world": {
+      "axes": "x downfield, y across field, z up",
+      "basis": "illustrative field rectangle; not surveyed"
+    }
+  },
+  "id": "frc-2024-blockout",
+  "operations": [
+    {
+      "enabled": false,
+      "id": "floor-opening",
+      "requirementIds": [
+        "acquire"
+      ],
+      "targetIds": [
+        "frame-plate",
+        "body-envelope"
+      ],
+      "type": "intake-opening",
+      "unresolvedChecks": [
+        "bumper coverage and provisional 50.8 mm front support strip retained; material and attachment qualification unknown",
+        "over-bumper or legal piece transition",
+        "attachments",
+        "impact load path",
+        "stow sweep"
+      ]
+    }
+  ],
+  "parentRevision": null,
+  "profile": "2024-speaker-blockout-v1",
+  "provenance": {
+    "basis": "2024 spatial blockout case study",
+    "limitations": [
+      "Spatial planning only; not fabricated or structurally qualified CAD.",
+      "Rehearsal uses assumed speeds and waits, not motor/contact simulation.",
+      "Target registration is provisional; geometric proximity is not scoring.",
+      "Chassis intake bay preserves the continuous bumper; it does not establish an acquisition path or rule compliance."
+    ]
+  },
+  "rehearsal": {
+    "actionDurations": {
+      "pickup": 2,
+      "shot": 1
+    },
+    "basis": "assumed",
+    "driveSpeedMps": 1,
+    "opponent": {
+      "enabled": true,
+      "footprintM": 0.86,
+      "periodS": 8,
+      "x": 2.95,
+      "yMax": 1.4,
+      "yMin": -1.4
+    },
+    "route": [
+      {
+        "action": "none",
+        "headingDeg": 180,
+        "id": "pose-1",
+        "x": 4.8,
+        "y": 1.2
+      },
+      {
+        "action": "pickup",
+        "headingDeg": 180,
+        "id": "pose-2",
+        "x": 3.7,
+        "y": 0.75
+      },
+      {
+        "action": "shot",
+        "headingDeg": 180,
+        "id": "pose-3",
+        "x": 2.2,
+        "y": 0
+      }
+    ],
+    "turnSpeedDegps": 60
+  },
+  "revision": 1,
+  "schema": "agent-frc/design-artifact@1",
+  "season": 2024,
+  "sources": [
+    {
+      "id": "manual",
+      "locator": "field dimensions and robot construction rules",
+      "scope": "Nominal field context; current compliance must be checked.",
+      "sha256": null,
+      "url": "https://firstfrc.blob.core.windows.net/frc2024/Manual/2024GameManual.pdf"
+    },
+    {
+      "id": "speaker-drawing",
+      "locator": "PDF p120 GE-24300 Rev A sheet 2 of 6",
+      "scope": "Local aperture side profile only; no roof, wall or scoring sensor.",
+      "sha256": "6bbe47cbbe95001984b18b67e674b639f59c06ff9324e6bfece1980e018aec03",
+      "url": "https://firstfrc.blob.core.windows.net/frc2024/FieldAssets/2024FieldDrawings.pdf"
+    }
+  ],
+  "strategy": {
+    "activeNarrativeId": "speaker",
+    "decisions": [
+      {
+        "basis": "Candidate architectures only; no owner selection or performance evidence.",
+        "id": "architecture-options",
+        "narrativeIds": [
+          "speaker"
+        ],
+        "text": "Unselected comparison: separate acquisition and scoring paths; intentional overhead plus drive-over acquisition redundancy; or one reversible intake/shooter. Compare mass, space, loads, control, common failure modes and recovery."
+      },
+      {
+        "basis": "Planning alternative; the current route timing budget remains serialized and does not evaluate concurrent behavior.",
+        "id": "concurrency-options",
+        "narrativeIds": [
+          "speaker"
+        ],
+        "text": "Explore aiming and shooting while driving toward reload, or aiming while performing a permitted defensive role. Compare against stop-and-shoot with accuracy, power, shared resources and recovery guards explicit."
+      }
+    ],
+    "narratives": [
+      {
+        "id": "speaker",
+        "narrative": "Acquire a NOTE, retain it, move to a scoring pose and attempt a Speaker delivery; recover from failed acquisition.",
+        "status": "exploring",
+        "title": "Speaker cycle specialist"
+      },
+      {
+        "id": "amp",
+        "narrative": "Support alliance scoring through controlled Amp placement; requires separate target geometry.",
+        "status": "alternative",
+        "title": "Amp enabler"
+      },
+      {
+        "id": "feeder",
+        "narrative": "Transfer pieces and remain mobile through traffic; this scene does not establish legal defense.",
+        "status": "alternative",
+        "title": "Feeder and traffic support"
+      }
+    ],
+    "requirements": [
+      {
+        "id": "acquire",
+        "narrativeIds": [
+          "speaker"
+        ],
+        "outcome": "Reserve an acquisition path and a stowed mechanism volume.",
+        "screen": "Compare floor-opening and over-bumper approaches before CAD.",
+        "status": "unknown"
+      },
+      {
+        "id": "reliability-pit",
+        "narrativeIds": [
+          "speaker"
+        ],
+        "outcome": "Link component/CAD failure hypotheses to inspection triggers, pit procedures, operator alerts and repair history.",
+        "screen": "Review load paths and impact exposure; define inspection and post-repair tests. Vibration anomalies prompt inspection, not diagnosis; sensor/RPM/sample suitability and known-condition baseline remain unverified.",
+        "status": "unknown"
+      },
+      {
+        "id": "deliver",
+        "narrativeIds": [
+          "speaker"
+        ],
+        "outcome": "Reach a delivery pose with a physically consistent release state.",
+        "screen": "Check whole-piece geometry, not only its center.",
+        "status": "unknown"
+      },
+      {
+        "id": "piece-variation",
+        "narrativeIds": [
+          "speaker"
+        ],
+        "outcome": "Explore contact robustness and adjustable geometry/settings across measured game-piece condition ranges.",
+        "screen": "Measure new and worn dimensions, stiffness, friction and compression with uncertainty; compare fixed and adjustable candidates using acquisition/retention/release and jam tests. Ranges are TBD, not invented tolerances.",
+        "status": "unknown"
+      }
+    ]
+  },
+  "units": "m"
+}
