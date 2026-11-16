@@ -1,3 +1,7 @@
+# Legacy preloaded fixture notes
+
+These notes describe the earlier fixture, not the current A2 whole-cycle candidate. See README.md, STRATEGY.md and ARCHITECTURE-A2.md for the current scope.
+
 # 2024 design and limits
 
 Fixed-angle SPEAKER approach and launch. 12 V gives about 17.5 mm whole-torus thin-plane margin; 9 V fails.

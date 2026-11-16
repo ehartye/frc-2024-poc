@@ -1,50 +1,47 @@
-# 2024 CRESCENDO proof of concept
+# 2024 CRESCENDO: A2 robot proof of concept
 
-![Interim mechanism layout, not a complete robot](cad/interim-layout.svg)
+![Original A2 deployed spatial CAD, not fabrication-ready](cad/a2/deployed.svg)
 
-**Interim subsystem concept, not a complete assembled robot.** The top image shows a nominal mechanism fixture. It is not a picture of a complete robot. Chassis, motors, rails, supports and transmission are not assembled.
+**A strategy-first, runnable desktop prototype with original editable CAD.** It completes a preload-to-pickup-to-second-release cycle under explicit simulation assumptions. It is not a qualified robot design or an official scoring simulator.
 
 ## Design highlights
 
-- **Fixed-angle SPEAKER approach and launch** with one preloaded NOTE.
-- 50 degree guide, 0.3 m powered travel, 0.0003 kg m2 inertia per roller, refined duty 0.6.
-- Ideal differential-drive approach, 200 ms stopped handoff, virtual pregrip/gate interlocks and powered roller model using WPILib DCMotor/shared supply.
-- 12 V gives about 17.5 mm whole-torus thin-plane margin; 9 V fails.
-- **No official scoring or hardware safety acceptance is claimed.**
+- Close-range Speaker cycle narrative with Amp and feeder alternatives retained: [strategy](STRATEGY.md).
+- 710 mm differential chassis, continuous bumper envelopes, reversible acquisition/indexing and 60-degree opposed-wheel shooter.
+- Original coordinated telescoping cradle, with shared parameter-driven CAD/runtime motion and sampled envelope checks.
+- Continuous two-piece shooter state: rotor, time, work and losses persist; outgoing body energy is accounted, and disabled motors coast rather than magically stop.
+- Observable mission/fault states, editable pre-vis, condition-based [pit plan](reliability/pit-plan.json), and source/runtime-bound execution receipts.
 
-## Run on Windows
+## Run the complete A2 slice
 
-Requires existing Python 3, PowerShell, Git, JDK 17 and populated Gradle/WPILib cache. No installation or robot deployment is performed.
-
-```powershell
-./run.ps1 -JavaHome '<existing JDK17 directory>' -GradleHome '<existing populated Gradle cache>'
-```
-
-Open the printed results directory: `SUMMARY.md`, `season-results.json` and `robot-run/receipt.json`. Each invocation executes the unchanged shared three-season regression, then selects this season's results. The extra regressions are deliberate shared-model checks, not other season projects owned by this repository. Fresh output directories and run IDs prevent reusing old passing XML.
-
-## What lives here
-
-- `cad/`: original fixture STEP, editable OCP generator and dimensions, overview SVG, and earlier sideplate SVG/DXF. No vendor CAD or fabrication-ready assembly.
-- `shared/examples/java-2026-sim/src/`: actual Java controller/plant and integration tests, not a link to unavailable code.
-- `shared/scripts/`: actual execution, finite-body target and evidence checks.
-- `config.json`: season design description checked against pinned runtime duty/inertia. It is not yet a general tuning interface.
-- `DESIGN.md`: design scope, assumptions and remaining work.
-- `PROVENANCE.json`: exact source commit and file hashes; no Git history or private vault included.
-
-The shared source snapshot is derived from agent-frc commit `21d785397cd08ca9dc5bf5f9849996ab508c9a49`. That development commit need not be accessible remotely to run this checkout. Gradle 8.11, GradleRIO/WPILib 2026.2.1 and JUnit 5.10.1 are pinned; 2024/2025 are game models using the 2026 desktop toolchain, not historical toolchain builds. See [dependency notices](shared/examples/java-2026-sim/THIRD_PARTY.md).
-
-## Open and edit CAD
-
-Open `cad/2024-original-fixture.step` in a STEP-capable CAD tool. Eight exported shapes describe the original floor/gate/guides, simplified rollers and nominal piece. The companion JSON records parameters and limitations. Export and STEP reopen were checked, not fit, loads or fabrication readiness. With an existing OCP 8.0.1 Python environment, regenerate using:
+Requires existing Python 3 with NumPy, PowerShell, JDK 17 and a populated Gradle/WPILib cache. Toolchain is pinned to Gradle 8.11, GradleRIO/WPILib 2026.2.1 and JUnit 5.10.1. This models the 2024 game using the 2026 desktop toolchain, not a historical robot deployment.
 
 ```powershell
-python cad/build_original_fixture.py --season 2024 --output artifacts/cad
+./run-a2.ps1 -JavaHome '<JDK 17 directory>' -GradleHome '<Gradle cache directory>'
 ```
 
-The top view is illustrative and omits guide-slot detail; STEP is the geometric artifact. CAD is not yet coupled automatically to the plant.
+Open `NORMAL.html` in the printed results folder. `NORMAL_9V.html` and fault replays preserve comparisons; `SUMMARY.md`, `results.json`, `native/receipt.json` and `presentation-receipt.json` expose what ran and which inputs produced it. Each invocation requires fresh output and executes actual native tests. No robot address, installation or hardware deployment is performed.
 
-Only the documented run entry is supported by this minimal snapshot. Legacy tasks named in the retained upstream build file may have intentionally omitted sources. The configuration is a pinned description: edits are rejected, not silently treated as plant tuning. Shared source and CAD bytes are preserved by .gitattributes; other text uses LF.
+The cache must already contain the pinned public dependencies. On a newly configured development computer, set JAVA_HOME and GRADLE_USER_HOME, then run the included `shared/examples/java-2026-sim/gradlew.bat test` from that project directory with network access to populate its cache before using the offline verified runner. Dependency notices are [here](shared/examples/java-2026-sim/THIRD_PARTY.md).
 
-## Public contribution checks
+## What the current run proves
 
-Run `python -m unittest discover -s tests` and `python scripts/check_public_content.py` after committing changes. The guard checks committed bytes rather than machine-specific working files, rejects private paths/network addresses and unexplained machine aliases, and restricts binary additions to the reviewed Gradle wrapper. Reports identify file/category only, never the matching private value. Manually review images/CAD metadata and novel formats before publishing; pattern checks are not a complete privacy guarantee.
+The nominal 12 V and permissive 9 V cases each record one prescribed acquisition and two powered exits in about 27.3 seconds. Missing piece, jam, stale pose and strict 9 V RPM controls fault without invented completion. Actual exit states feed sampled full-NOTE aperture checks, not a prescribed launch speed. These are sampled thin-plane results, not scores or complete target clearance.
+
+Acquisition, lift, telescope, level retention and transfer are prescribed kinematics with virtual observations. Their actuation, contact, energy and physical capture are not validated. Shooter energy accounting covers rollers/guide only. Body attitude is a fixed 60-degree hypothesis; spin, aerodynamics, roof/walls, tire slip, realistic opponents and impact durability remain unresolved. The full serialized cycle does not fit 15-second autonomous.
+
+## Open and edit the design
+
+- [Stowed STEP](cad/a2/stowed.step), [deployed STEP](cad/a2/deployed.step), [stowed picture](cad/a2/stowed.svg).
+- [Geometry contract](cad/cycle-contract-A2.json), [original generator](cad/build_a2_layout.py), [shared kinematics](cad/a2_kinematics.py).
+- 54 original solids per endpoint are exported and reopened. Green regions reserve linkage, transfer or service space; they are not engineered hardware. Narrow nominal envelope allowances are not tolerance/strength approval.
+- With existing OCP 8 and Matplotlib: `python cad/build_a2_layout.py --output artifacts/my-cad`.
+- The [portable editable pre-vis](tools/blockout/README.md) lives in this project. It saves/loads the plugin design artifact and exports editable OpenSCAD; it is a generic planning tool, separate from the A2 mechanism contract.
+
+## Project ownership and retained dependencies
+
+This repository owns the 2024 narrative, CAD, code, replay and reliability plan. The self-contained `shared/` snapshot retains cross-season regression fixtures, including CORAL/FUEL cases. Their presence does not make them 2024 mechanisms or require private repositories. `PROVENANCE.json` distinguishes the inherited base from A2 modifications and pins this project snapshot.
+
+The old `run.ps1` remains a legacy preloaded all-season regression entry; it is not the new full-cycle runner. Earlier rejected geometry and failed lift experiments are retained as clearly labeled evidence, not silently promoted into the active model.
+
+Before publication: Python tests, native tests, fresh receipts, public-content guard and original CAD metadata review. No private hosting configuration or third-party team/vendor CAD is included.

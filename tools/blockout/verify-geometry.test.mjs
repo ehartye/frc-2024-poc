@@ -1,0 +1,8 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {createDesign,deriveGeometry,canonicalStringify,reviseDesign} from './dist/design-artifact.mjs';
+import {subtractBox,setDesign,getDesign} from './dist/design-state.js';
+const volume=b=>b.size.reduce((a,x)=>a*x,1);
+test('subtraction conserves residual volume and produces disjoint fragments',()=>{const b={id:'box',center:[0,0,0],size:[2,4,6]},c={center:[.5,0,0],size:[2,2,2]};const ps=subtractBox(b,c);assert.ok(Math.abs(ps.reduce((s,p)=>s+volume(p),0)-(48-6))<1e-12);for(let i=0;i<ps.length;i++)for(let j=i+1;j<ps.length;j++)assert.ok(ps[i].center.some((x,k)=>Math.abs(x-ps[j].center[k])>=(ps[i].size[k]+ps[j].size[k])/2-1e-12));});
+test('intake bay never targets bumper and preserves front support strip',()=>{const a=createDesign();a.operations[0].enabled=true;const g=deriveGeometry(a),cut=g.openings[0];assert.deepEqual(cut.targetIds,['frame-plate','body-envelope']);assert.ok(cut.center[0]+cut.size[0]/2<=a.design.parameters.frameLengthM/2-.0508+1e-12);for(const b of g.volumes.filter(v=>v.id.includes('bumper')))assert.ok(!cut.targetIds.includes(b.id));});
+test('state is cloned, revisions invalidate checks, bad input is atomic',()=>{const a=createDesign();setDesign(a);const before=canonicalStringify(getDesign());a.units='mm';assert.throws(()=>setDesign(a));assert.equal(canonicalStringify(getDesign()),before);const x=getDesign();x.design.parameters.height=.9;assert.equal(canonicalStringify(getDesign()),before);const next=reviseDesign(getDesign(),d=>d.design.parameters.height=.9);assert.equal(next.revision,2);assert.equal(next.parentRevision,1);assert.deepEqual(next.checks,[]);});
