@@ -22,7 +22,7 @@
     },
     "batteryReserve": {
       "center": [
-        0,
+        -0.2,
         -0.245,
         0.245
       ],
@@ -34,7 +34,7 @@
     },
     "electronicsReserve": {
       "center": [
-        0,
+        -0.2,
         0.245,
         0.245
       ],
@@ -45,24 +45,33 @@
       ]
     },
     "intake": {
-      "type": "original pivoting over-bumper reversible cassette",
+      "type": "original telescoping pivoting retained-piece cradle",
       "pivot": [
-        0.18,
+        0.1,
         0,
-        0.34
+        0.48
       ],
-      "armLength": 0.34,
+      "armLength": 0.68,
       "rollerRadius": 0.035,
       "rollerWidth": 0.42,
-      "stowAngleDeg": 115,
-      "floorAngleDeg": -60,
+      "stowAngleDeg": 110,
+      "floorAngleDeg": -40,
       "rotationAxis": [
         0,
         1,
         0
       ],
       "centerFormula": "pivot + armLength*[cos(angle),0,sin(angle)]",
-      "status": "endpoint volumes only; swept mechanism and piece transition require CAD"
+      "status": "endpoint volumes only; swept mechanism and piece transition require CAD",
+      "armSection": [
+        0.02,
+        0.02
+      ],
+      "pieceAttitude": "level cradle by parallelogram hypothesis; linkage not yet dimensioned",
+      "lengthLaw": "L(theta)=min(0.680,0.520/cos(theta)) for cos(theta)>0, else0.680",
+      "minimumLength": 0.52,
+      "rejectedFixedLengthReason": "intermediate angle0 extends roller to.815m, beyond.6598m envelope",
+      "actuation": "coordinated pitch plus telescope; additional actuator/control unmodeled"
     },
     "indexerReserve": {
       "center": [
@@ -202,5 +211,223 @@
     "limits": "no inferred impact capacity, fatigue life or vibration diagnosis; no blanket per-match threadlocker"
   },
   "releaseAcceptance": "unresolved: whole-piece sweep, physically derived release/spin, complete target registration and roof/wall checks",
-  "pieceVariation": "measure actual new/worn pieces before tolerance or contact robustness claims"
+  "pieceVariation": "measure actual new/worn pieces before tolerance or contact robustness claims",
+  "transport": {
+    "status": "staged kinematic centerline hypothesis; not demonstrated capture/contact",
+    "floorPieceCenter": [
+      0.64,
+      0,
+      0.0254
+    ],
+    "liftArc": [
+      [
+        0.62,
+        0,
+        0.04366819178781439
+      ],
+      [
+        0.62,
+        0,
+        0.11589208013095093
+      ],
+      [
+        0.62,
+        0,
+        0.17977786002139468
+      ],
+      [
+        0.62,
+        0,
+        0.23752001775940068
+      ],
+      [
+        0.62,
+        0,
+        0.29073547818157475
+      ],
+      [
+        0.62,
+        0,
+        0.3406664199358162
+      ],
+      [
+        0.62,
+        0,
+        0.3883099700315982
+      ],
+      [
+        0.62,
+        0,
+        0.4345058949665195
+      ],
+      [
+        0.62,
+        0,
+        0.48
+      ],
+      [
+        0.62,
+        0,
+        0.5254941050334805
+      ],
+      [
+        0.62,
+        0,
+        0.5716900299684018
+      ],
+      [
+        0.62,
+        0,
+        0.6193335800641837
+      ],
+      [
+        0.62,
+        0,
+        0.6692645218184252
+      ],
+      [
+        0.62,
+        0,
+        0.7224799822405993
+      ],
+      [
+        0.62,
+        0,
+        0.7802221399786053
+      ],
+      [
+        0.62,
+        0,
+        0.8441079198690491
+      ],
+      [
+        0.62,
+        0,
+        0.9163318082121856
+      ],
+      [
+        0.5808326112068524,
+        0,
+        0.9608326112068524
+      ],
+      [
+        0.5370955745868468,
+        0,
+        1.000910221320905
+      ],
+      [
+        0.49003197671871135,
+        0,
+        1.0370233901165145
+      ],
+      [
+        0.44000000000000006,
+        0,
+        1.0688972745734184
+      ],
+      [
+        0.3873804179836756,
+        0,
+        1.096289295184922
+      ],
+      [
+        0.3325736974614548,
+        0,
+        1.1189909821344177
+      ],
+      [
+        0.2759969506697141,
+        0,
+        1.1368295618765665
+      ],
+      [
+        0.2180807608135127,
+        0,
+        1.1496692720483015
+      ],
+      [
+        0.15926590506840754,
+        0,
+        1.157412394702387
+      ],
+      [
+        0.10000000000000005,
+        0,
+        1.1600000000000001
+      ],
+      [
+        0.0407340949315924,
+        0,
+        1.157412394702387
+      ],
+      [
+        -0.018080760813512606,
+        0,
+        1.1496692720483015
+      ],
+      [
+        -0.07599695066971418,
+        0,
+        1.1368295618765665
+      ],
+      [
+        -0.13257369746145473,
+        0,
+        1.1189909821344177
+      ]
+    ],
+    "transferAndFeed": [
+      [
+        -0.13257369746145473,
+        0,
+        1.1189909821344177
+      ],
+      [
+        -0.18,
+        0,
+        0.9
+      ],
+      [
+        -0.18,
+        0,
+        0.6
+      ],
+      [
+        -0.16,
+        0,
+        0.4
+      ],
+      [
+        0.0,
+        0,
+        0.43
+      ],
+      [
+        0.13,
+        0,
+        0.4921539030917347
+      ]
+    ],
+    "phaseGuards": [
+      "capture and retain before lift",
+      "lift through clear arc before transfer",
+      "transfer detection before retract",
+      "index retention before drive/release"
+    ],
+    "lengthsM": {
+      "liftArc": 1.7031368091845986,
+      "transferAndFeed": 1.0319474450981112,
+      "liftArcBasis": "5degree polyline for telescoping path; not fixed-radius arc"
+    },
+    "unresolved": [
+      "cradle roller contact",
+      "four-bar packaging",
+      "piece orientation through transfer",
+      "drop prevention",
+      "sensor locations",
+      "belt/guide support",
+      "loaded lift torque and time",
+      "telescoping actuator/power and retained-piece swept-volume validation"
+    ]
+  }
 }
