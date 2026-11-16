@@ -262,7 +262,7 @@
   "warnings": [
     "Block volumes may overlap; this is a spatial design tool, not assembled CAD",
     "A0 detailed sketch was rejected; this scene corrects its bumper height but does not solve intake path",
-    "Ground pickup route must go over legal bumpers; deployed/stowed envelopes do not prove transition clearance",
+    "Compare an explicit intake opening with an over-bumper route; neither envelope proves coverage, attachment strength or transition clearance.",
     "Do not hide NOTE body-attitude versus velocity mismatch",
     "Source assembly-to-floor transform is adjustable and unverified",
     "No structural, actuator, collision, contact, aerodynamic, scoring or rulebook acceptance"

@@ -25,3 +25,5 @@ node tests/blockout_browser.cjs
 ```
 
 If needed, set PLAYWRIGHT_MODULE to an existing module path and CHROMIUM_EXECUTABLE to an existing browser executable. The harness starts an ephemeral loopback server, blocks non-loopback network requests, exercises desktop/mobile layouts and rehearsal controls, then closes the browser/server. It installs nothing and creates no screenshots or deployment artifacts.
+
+One documented adaptation corrects the configuration warning to compare an explicit intake opening with an over-bumper route. Neither option establishes bumper coverage, attachment strength or transition clearance. Executable application and rehearsal behavior are unchanged from the source revision.
