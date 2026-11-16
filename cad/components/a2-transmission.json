@@ -1,0 +1,79 @@
+{
+  "schema": "frc-cartridge-transmission/1",
+  "units": "mm",
+  "sources": [
+    {
+      "part": "REV-21-2200",
+      "url": "https://www.revrobotics.com/content/cad/REV-21-2200.STEP",
+      "bytes": 318046,
+      "sha256": "d3e42da93b098aab165f8aa35d66ce9d596dad4eec3b04c08cb1b9162f336881",
+      "nativeBoundsMm": [
+        -13.143936171981718,
+        -13.092806822644567,
+        -9.34720015904218,
+        13.041677473307416,
+        13.092806822644567,
+        9.34720015904218
+      ]
+    },
+    {
+      "part": "REV-21-2201",
+      "url": "https://www.revrobotics.com/content/cad/REV-21-2201.STEP",
+      "bytes": 1430273,
+      "sha256": "c2825524b2293af12647d92ad57e9162379ad64105b86f867be2223037059c68",
+      "nativeBoundsMm": [
+        -13.143943126864688,
+        -13.092813777527537,
+        -9.347207113925151,
+        13.041684428190386,
+        13.092813777527537,
+        9.347207113925151
+      ]
+    },
+    {
+      "part": "REV-21-1650-V1.1",
+      "url": "https://www.revrobotics.com/content/cad/REV-21-1650-V1.1.STEP",
+      "bytes": 6496157,
+      "sha256": "50fb9445ae07465fbd10605e48009649316d376e8194451b7fc97959d17003a9",
+      "nativeBoundsMm": [
+        -38.14129798353196,
+        -32.462237056361566,
+        -58.35000010000001,
+        32.462237056361566,
+        38.02054324421769,
+        35.0000001
+      ]
+    }
+  ],
+  "layout": {
+    "pulleyTeeth": 12,
+    "beltTeeth": 40,
+    "pitchMm": 6.35,
+    "pulleyZ": 60,
+    "motorFaceZ": 45,
+    "driverClockDegrees": 0,
+    "drivenClockDegrees": 0
+  },
+  "manufacturerMassKg": {
+    "motor": 0.425,
+    "driverPulley": 0.015,
+    "drivenPulley": 0.011,
+    "belt": 0.011
+  },
+  "massSources": [
+    "https://docs.revrobotics.com/brushless/neo/v1.1",
+    "https://www.revrobotics.com/RT25-Pulleys/",
+    "https://www.revrobotics.com/RT25-Belts-1/2in-Width/"
+  ],
+  "beltPart": "REV-21-4040",
+  "status": "nominal private-native packaging experiment; no key engagement, fastener, tension or operating acceptance",
+  "limits": [
+    "Motor mount and load path not yet designed",
+    "Separate key, axial retention and fasteners unresolved",
+    "No belt tooth/contact model or tension adjustment",
+    "Tread absent; motor-to-tread clearance unresolved",
+    "Manufacturer motor mass is not uniform material or rotor inertia",
+    "Historical NEO V1.1 is discontinued; no purchase recommendation",
+    "No change to A2 simulation parameters"
+  ]
+}

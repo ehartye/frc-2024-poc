@@ -36,3 +36,15 @@ Sources: [AndyMark Performance Wheels](https://andymark.com/products/performance
 ## Tool enhancement findings
 
 A reusable component pipeline needs source-pinned native interfaces, explicit unit/datums, original-only export filtering, positive interference controls, both mirrored supports and partial mass/inertia ledgers. Replacing a rendered box with a catalog name is not integration. Retain separate physical interface, contact, fabrication and electrical gates. Current cache inputs do not include tolerances or license grants; fail rather than silently assume them.
+
+## Motor/transmission packaging experiment
+
+`cad/components/a2-transmission.json` selects a provisional 1:1 belt path: NEO V1.1, REV-21-2200 12T keyed driver, REV-21-2201 12T half-hex driven pulley, and REV-21-4040 40T RT25 belt. Equal pulleys and a 6.35 mm pitch give 88.9 mm ideal shaft spacing. This is a historical motor/model continuity candidate, not a purchase recommendation; the vendor lists V1.1 as discontinued.
+
+The driven pulley is centered at Z60 on the cartridge axis; the motor axis is X88.9 and its native face datum is placed at Z45. Driver pulley center is Z60. This is an editable nominal placement, not a mounted or tensioned assembly. The driven pulley occupies approximately Z50.653..69.347, leaving only 0.334 mm nominal collar gap and 0.653 mm shaft-end margin. These narrow allowances require revision or a tolerance/retention design, not acceptance.
+
+Reproduce with `python cad/components/check_transmission.py --vendor-cache <private-cache> --output artifacts/transmission/report.json`. The checked-in receipt pins both configs and all six vendor inputs. Every one of the 78 pair combinations is tested, including the motor, pulleys and complete prior cartridge. A 30-degree driven-pulley clocking is deliberately rejected. Zero motor/driver interference does **not** establish key engagement: a separate key, screw/washer stack and axial retention are still missing.
+
+Official [NEO mechanical data](https://docs.revrobotics.com/brushless/neo/v1.1), [pulley data](https://www.revrobotics.com/RT25-Pulleys/) and [belt data](https://www.revrobotics.com/RT25-Belts-1/2in-Width/) give masses of 425, 15, 11 and 11 g, respectively. Their 462 g subtotal is not the complete cartridge mass and supplies neither rotor inertia nor installed center of gravity. Do not apply uniform aluminum density to the motor. No A2 simulation parameters change here.
+
+Next gate: source-backed motor mounting pattern and #10-32 stack, explicit key/retention, adjustable belt tension, bearing outer-race retention, guard/service space, actual tread and its attachment. Belt teeth/contact, tension loads, tolerances, balance, shaft bending and operating-speed acceptance remain unverified. Vendor solids stay private; this increment exports none.
