@@ -31,6 +31,7 @@ def main():
  for _,shape,_ in parts:
   assert BRepCheck_Analyzer(shape).IsValid();w.Transfer(shape,STEPControl_AsIs)
  dest=a.output/'electrical-envelopes.step';assert w.Write(str(dest))==IFSelect_RetDone
+ dest.write_bytes(('\n'.join(line.rstrip() for line in dest.read_text().splitlines())+'\n').encode())
  r=STEPControl_Reader();assert r.ReadFile(str(dest))==IFSelect_RetDone;r.TransferRoots();assert r.NbRootsForTransfer()==len(parts)
  q=report(d);q['exportedRoots']=len(parts);q['reopenedRoots']=r.NbRootsForTransfer();q['stepSha256']=hashlib.sha256(dest.read_bytes()).hexdigest();(a.output/'verification.json').write_text(json.dumps(q,indent=2)+'\n');svg(d,a.output/'layout.svg');print(json.dumps(q))
 if __name__=='__main__':main()

@@ -1,6 +1,6 @@
 {
   "schema": "electrical-package-check/1",
-  "manifestSha256": "cbd3dbbe2099a85d4885ec2b0c08a390e90f0e4dc47b585cdd5128721c41e7f6",
+  "manifestSha256": "478e5a3f6676030390c2edefc0993c4246d0ed45ea6c6d5f5a5c403da8a9cb87",
   "solidEnvelopeConflicts": [],
   "knownComponentMassKg": 8.00526319777,
   "knownMassCenterMm": [
@@ -27,5 +27,5 @@
   ],
   "exportedRoots": 25,
   "reopenedRoots": 25,
-  "stepSha256": "84725436a2e23de817a89844a490a188645cd37b669a6d221f838add1ae2509f"
+  "stepSha256": "423e3ec03eb32522a9518f81c17b69be8859dfa57f922774143bb97f148af885"
 }
