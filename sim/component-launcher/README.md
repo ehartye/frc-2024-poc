@@ -21,3 +21,7 @@ python tests/test_current_launcher.py
 ```
 
 The run rejects an existing output directory and stale CAD/contact pins, executes fresh trajectories, and binds trace/runtime/config/source bytes. All friction, normal force, total rotating inertia and entry velocity remain explicit hypotheses. The geometry does not include installed rivet heads or tread compression. Old launch success is not transferred.
+
+## Powered-transfer kernel in preparation
+
+`transfer_plant.py` provides a separate six-drive reciprocal-DC kernel: two upstream pinch drives and four launcher drives share a supply. It supports explicit virtual hold/release, independent duty commands, motor-off momentum and energy bookkeeping. Eight unit tests use synthetic occupancy tables to check shared current limits, invalid inputs, hold/release, free-body energy and timestep refinement. These are algorithm tests, not real robot results. The current source-bound transfer report is rejected because authored structure intersects the advancing NOTE. No successful powered-transfer trace or upstream force calibration is claimed. Pinch normal force, friction, inertia and virtual holding are still hypotheses requiring deliberate selection and sensitivity checks after the geometry is revised.
