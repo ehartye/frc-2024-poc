@@ -41,6 +41,7 @@ def shooter(c,tx):
    # Original carrier bridge, 2 mm total adjustment; fastener/load qualification remains open.
    bridge=h.box(station-40,y+48.175,z-40,170,3.175,80)
    for cx,rr in [(station,20),(mx,10.65)]:bridge=cut(bridge,h.cyl((cx,y+47,z),(0,1,0),rr,7))
+   for xx in [-25.4,25.4]:bridge=cut(bridge,h.cyl((station+xx,y+47,z),(0,1,0),2.6,7))
    for xx in [-28,28]:
     for zz in [-28,28]:
      slot=BRepAlgoAPI_Fuse(h.cyl((mx+xx-1,y+47,z+zz),(0,1,0),2.6,7),h.cyl((mx+xx+1,y+47,z+zz),(0,1,0),2.6,7)).Shape()
@@ -78,9 +79,30 @@ def build():
  # Keep only provisional intake/transfer from A2. Do not present these as completed component mechanisms.
  for n,s,k in legacy_build(c,'stowed'):
   if n.startswith(('intake ','telescoping ','capture ','cradle ','leveling ','inboard transfer','transfer guide')):parts.append(('UNRESOLVED '+n,s,'service'))
- length,width=dc['frameNativeEnvelopeMm'][:2];th=75
- for sy in [-1,1]:parts.append(('bumper envelope side '+str(sy),h.box(-length/2-th,sy*width/2-(th if sy<0 else 0),40,length+2*th,th,150),'bumper'))
- for sx in [-1,1]:parts.append(('bumper envelope end '+str(sx),h.box(sx*length/2-(th if sx<0 else 0),-width/2,40,th,width,150),'bumper'))
+ from bumper_candidate import build as bumper_build
+ length,width=dc['frameNativeEnvelopeMm'][:2]
+ parts+=bumper_build(length,width)
+ # Source-registered adapters and actual through-bolt/crush-sleeve pattern.
+ from build_fastening import build as fastening_build
+ fc=json.loads((ROOT/'cad/drivetrain/fastening.json').read_text())
+ parts += [('frame fastening '+n,shape,'support') for n,shape,role in fastening_build(fc)]
+ sh=c['geometry']['shooter'];ang=math.radians(sh['releasePitchDeg']);pivot=[v*1000 for v in sh['pivot']]
+ # Original welded side trusses remain outside the nominal NOTE width; joint/load design unresolved.
+ for side in [-1,1]:
+  y=side*228.6
+  parts.append((f'original shooter side rail {side}',h.pitch(h.tube(-70,y-12.7,-12.7,400,25.4,25.4,3.175,'x'),ang,pivot),'support'))
+  for x in fc['bridgeCentersXmm']:
+   top=pivot[2]+(x-pivot[0])*math.tan(ang);bottom=fc['railTopZmm']+4+50.8
+   outer=h.box(x-12.7,y-12.7,bottom,25.4,25.4,top-bottom)
+   inner=h.box(x-9.525,y-9.525,bottom-1,19.05,19.05,top-bottom+2)
+   parts.append((f'original shooter upright {side} {x}',cut(outer,inner),'support'))
+  # Connection webs to the outer carrier positions; bolt pattern remains a fabrication gate.
+  for sz in [-1,1]:
+   z=sz*(sh['nominalGap']*500+48.26)
+   near=side*152.4-tx['serviceInterfaces']['tread']['assemblyTreadCenterOffsetMm']+side*40
+   lo=min(near,y);span=abs(near-y)
+   web=h.box(160,lo,min(0,z)-3.175,6.35,span,abs(z)+6.35)
+   parts.append((f'original carrier connection web {side} {sz}',h.pitch(web,ang,pivot),'support'))
  parts+=shooter(c,tx)
  try:
   import build_electrical
@@ -97,7 +119,7 @@ def mass_ledger(parts,dc):
   if p['role']=='motor':known.append({'id':p['id'],'massKg':dc['sources']['motor']['massKg'],'centerMm':p['worldCenterMm'],'basis':'CIM manufacturer mass; envelope centroid assumption'})
  estimates=[]
  for n,s,k in parts:
-  if not any(x in n for x in ['drilled bearing carrier','drilled motor slider','slotted carrier bridge']):continue
+  if not any(x in n for x in ['drilled bearing carrier','drilled motor slider','slotted carrier bridge','original shooter side rail','original shooter upright','original carrier connection web']):continue
   gp=GProp_GProps();BRepGProp.VolumeProperties_s(s,gp);pt=gp.CentreOfMass()
   estimates.append({'id':n,'massKg':gp.Mass()*2.70e-6,'centerMm':[pt.X(),pt.Y(),pt.Z()],'basis':'original cut CAD volume x assumed aluminum density2700kg/m3; alloy unspecified'})
  def summary(rows):
@@ -105,7 +127,7 @@ def mass_ledger(parts,dc):
   return {'subtotalKg':total,'partialCentroidMm':[sum(x['massKg']*x['centerMm'][i] for x in rows)/total for i in range(3)],'items':rows}
  return {'sourceKnown':summary(known),'estimatedOriginalHardware':summary(estimates),'wholeRobotCoG':None,'omissions':['drivetrain frame,wheels,gearboxes,belts,shafts and fasteners','shooter COTS,shafts,tread and mounting hardware not yet consolidated','intake,indexer,bumpers,wiring and restraint'],'warning':'Partial centroid is not whole-robot CoG; never density-fill supplier envelope boxes'}
 
-DEPENDENCIES=['cad/assembly/build_robot.py','cad/a2_primitives.py','cad/a2_kinematics.py','cad/build_a2_layout.py','cad/cycle-contract-A2.json','cad/components/a2-transmission.json','cad/drivetrain/candidate.json','cad/drivetrain/build_drivetrain.py','cad/electrical/manifest.json','cad/electrical/build_electrical.py']
+DEPENDENCIES=['cad/assembly/build_robot.py','cad/assembly/bumper_candidate.py','cad/a2_primitives.py','cad/a2_kinematics.py','cad/build_a2_layout.py','cad/cycle-contract-A2.json','cad/components/a2-transmission.json','cad/drivetrain/candidate.json','cad/drivetrain/build_fastening.py','cad/drivetrain/fastening.json','cad/drivetrain/build_drivetrain.py','cad/electrical/manifest.json','cad/electrical/build_electrical.py','cad/electrical/mounts.py']
 def input_pins(root=ROOT):return {name:hashlib.sha256((root/name).read_bytes()).hexdigest() for name in DEPENDENCIES}
 def receipt_matches(report,root=ROOT):return report.get('inputs')==input_pins(root)
 
@@ -117,6 +139,6 @@ def main():
  dest=out/'original-component-assembly.step';assert w.Write(str(dest))==h.IFSelect_RetDone
  reader=h.STEPControl_Reader();assert reader.ReadFile(str(dest))==h.IFSelect_RetDone;reader.TransferRoots()
  render(parts,out,'component integration | unfinished mounts / intake')
- report={'schema':'2024-component-assembly/1','inputs':input_pins(),'outputStepSha256':hashlib.sha256(dest.read_bytes()).hexdigest(),'massLedger':mass_ledger(parts,dc),'partCount':len(parts),'reopenedRoots':reader.NbRootsForTransfer(),'chassisMm':dc['frameNativeEnvelopeMm'],'trackMm':dc['centerTrackMm'],'parts':[{'name':n,'role':k,'boundsMm':bounds(s)} for n,s,k in parts],'acceptance':False,'limits':['Original source-sized representations, not redistributed vendor geometry','Green intake/transfer parts are unresolved legacy reserves, not working hardware','Carrier bridge now has nominal clamps/jack/spacers; vendor fastener geometry, torque, thread engagement and frame anchorage remain unqualified','Belt shown as pitch band, not teeth/contact/preload','Tread attachment still fails selected rivet bare-stack grip','No whole robot collision, structure, manufacturing or rules acceptance','No complete mass/CoG; component mass omissions remain']}
+ report={'schema':'2024-component-assembly/1','inputs':input_pins(),'outputStepSha256':hashlib.sha256(dest.read_bytes()).hexdigest(),'massLedger':mass_ledger(parts,dc),'partCount':len(parts),'reopenedRoots':reader.NbRootsForTransfer(),'chassisMm':dc['frameNativeEnvelopeMm'],'trackMm':dc['centerTrackMm'],'parts':[{'name':n,'role':k,'boundsMm':bounds(s)} for n,s,k in parts],'acceptance':False,'limits':['Original source-sized representations, not redistributed vendor geometry','Green intake/transfer parts are unresolved legacy reserves, not working hardware','Carrier bridge now has nominal clamps/jack/spacers; vendor fastener geometry, torque, thread engagement and carrier-web joint/load design remain unqualified','Belt shown as pitch band, not teeth/contact/preload','Tread attachment still fails selected rivet bare-stack grip','No whole robot collision, structure, manufacturing or rules acceptance','No complete mass/CoG; component mass omissions remain']}
  (out/'report.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8');print(json.dumps({'parts':len(parts),'roots':reader.NbRootsForTransfer()}))
 if __name__=='__main__':main()
