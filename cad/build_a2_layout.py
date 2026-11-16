@@ -1,6 +1,8 @@
 """Original A2 spatial CAD in mm. Mechanism envelopes, not fabrication drawings."""
 import json,math,pathlib,argparse
 import a2_primitives as h
+import a2_kinematics as kin
+
 from OCP.BRepPrimAPI import BRepPrimAPI_MakeTorus
 from OCP.gp import gp_Ax2,gp_Pnt,gp_Dir
 ROOT=pathlib.Path(__file__).resolve().parent
@@ -20,17 +22,20 @@ def build(c,state):
  for name in ['batteryReserve','electronicsReserve']:
   b=g[name];xyz=[v*1000 for v in b['center']];dims=[v*1000 for v in b['size']];add(name,h.box(*[xyz[j]-dims[j]/2 for j in range(3)],*dims),'battery' if name=='batteryReserve' else 'frame')
   add(name+' service lid',h.box(xyz[0]-dims[0]/2,xyz[1]-dims[1]/2,xyz[2]+dims[2]/2+8,dims[0],dims[1],5),'service')
- i=g['intake'];pivot=[v*1000 for v in i['pivot']];a=math.radians(i['floorAngleDeg'] if state=='deployed' else i['stowAngleDeg']);L=(min(.68,.52/math.cos(a)) if math.cos(a)>0 else .68)*1000
- for y in [-270,250]:
-  add('intake pivot tower '+str(y),h.box(70,y,150,60,20,330),'support')
-  add('intake inner telescoping arm '+str(y),h.pitch(h.box(0,y,-10,L,20,20),a,pivot),'mechanism')
-  add('telescoping sleeve reserve '+str(y),h.pitch(h.box(0,y-3,-13,300,26,26),a,pivot),'support')
- tip=[pivot[0]+L*math.cos(a),0,pivot[2]+L*math.sin(a)]
- add('capture shaft reserve',h.cyl((tip[0],-280,tip[2]),(0,1,0),6.35,560),'support')
- add('capture roller envelope',h.cyl((tip[0],-210,tip[2]),(0,1,0),35,420),'mechanism')
- add('cradle retention roller envelope',h.cyl((tip[0]-70,-210,tip[2]+45),(0,1,0),25,420),'mechanism')
- # Companion linkage is a reserved path only, not fabricated four-bar geometry.
- for y in [-285,275]:add('leveling link reserve '+str(y),h.pitch(h.box(0,y,35,L,10,10),a,pivot),'service')
+ i=g['intake'];degree=i['floorAngleDeg'] if state=='deployed' else i['stowAngleDeg'];pose=kin.pose(i,degree);pivot=[v*1000 for v in i['pivot']];a=pose['angleRad'];L=pose['length']*1000
+ for ym in i['armYOrigins']:
+  y=ym*1000;aw,ah=[v*1000 for v in i['armSection']];sw,sh=[v*1000 for v in i['sleeveSection']]
+  add('intake pivot tower '+str(y),h.box(pivot[0]-30,y,150,60,aw,pivot[2]-150),'support')
+  add('intake inner telescoping arm '+str(y),h.pitch(h.box(0,y,-ah/2,L,aw,ah),a,pivot),'mechanism')
+  add('telescoping sleeve reserve '+str(y),h.pitch(h.box(0,y-(sw-aw)/2,-sh/2,i['sleeveLength']*1000,sw,sh),a,pivot),'support')
+ tip=[v*1000 for v in pose['tip']]
+ add('capture shaft reserve',h.cyl((tip[0],tip[1]-i['shaftWidth']*500,tip[2]),(0,1,0),i['shaftRadius']*1000,i['shaftWidth']*1000),'support')
+ add('capture roller envelope',h.cyl((tip[0],tip[1]-i['rollerWidth']*500,tip[2]),(0,1,0),i['rollerRadius']*1000,i['rollerWidth']*1000),'mechanism')
+ off=[v*1000 for v in i['retentionRollerOffset']]
+ add('cradle retention roller envelope',h.cyl((tip[0]+off[0],tip[1]+off[1]-i['rollerWidth']*500,tip[2]+off[2]),(0,1,0),i['retentionRollerRadius']*1000,i['rollerWidth']*1000),'mechanism')
+ for ym in i['linkYOrigins']:
+  w,z=[v*1000 for v in i['linkSection']]
+  add('leveling link reserve '+str(ym),h.pitch(h.box(0,ym*1000,i['linkNormalOffset']*1000,L,w,z),a,pivot),'service')
  for y in [-155,149]:
   add('inboard transfer tower '+str(y),h.box(-220,y,160,25,6,890),'support')
  path=c['transport']['transferAndFeed']

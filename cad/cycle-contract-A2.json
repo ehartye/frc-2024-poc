@@ -68,10 +68,39 @@
         0.02
       ],
       "pieceAttitude": "level cradle by parallelogram hypothesis; linkage not yet dimensioned",
-      "lengthLaw": "L(theta)=min(0.680,0.520/cos(theta)) for cos(theta)>0, else0.680",
+      "lengthLaw": "minimum of nominal armLength, forward-center cap when cos>0, and height cap minus all moving-component top offsets when sin>0; see a2_kinematics.py",
       "minimumLength": 0.52,
       "rejectedFixedLengthReason": "intermediate angle0 extends roller to.815m, beyond.6598m envelope",
-      "actuation": "coordinated pitch plus telescope; additional actuator/control unmodeled"
+      "actuation": "coordinated pitch plus telescope; additional actuator/control unmodeled",
+      "maximumHeight": 1.2192,
+      "designClearance": 0.005,
+      "maximumForwardCenter": 0.62,
+      "retentionRollerOffset": [
+        -0.07,
+        0,
+        0.045
+      ],
+      "retentionRollerRadius": 0.025,
+      "shaftRadius": 0.00635,
+      "shaftWidth": 0.56,
+      "armYOrigins": [
+        -0.27,
+        0.25
+      ],
+      "sleeveSection": [
+        0.026,
+        0.026
+      ],
+      "sleeveLength": 0.3,
+      "linkYOrigins": [
+        -0.285,
+        0.275
+      ],
+      "linkSection": [
+        0.01,
+        0.01
+      ],
+      "linkNormalOffset": 0.035
     },
     "indexerReserve": {
       "center": [
@@ -120,7 +149,8 @@
         ],
         "worldHeadingDeg": 180
       }
-    }
+    },
+    "extensionLimit": 0.3048
   },
   "states": [
     {
@@ -341,29 +371,29 @@
         1.1368295618765665
       ],
       [
-        0.2180807608135127,
+        0.21711638058656252,
         0,
-        1.1496692720483015
+        1.1442
       ],
       [
-        0.15926590506840754,
+        0.1581099703139187,
         0,
-        1.157412394702387
+        1.1442
       ],
       [
         0.10000000000000005,
         0,
-        1.1600000000000001
+        1.1442
       ],
       [
-        0.0407340949315924,
+        0.04189002968608123,
         0,
-        1.157412394702387
+        1.1442
       ],
       [
-        -0.018080760813512606,
+        -0.017116380586562424,
         0,
-        1.1496692720483015
+        1.1442
       ],
       [
         -0.07599695066971418,
@@ -415,9 +445,9 @@
       "index retention before drive/release"
     ],
     "lengthsM": {
-      "liftArc": 1.7031368091845986,
+      "liftArc": 1.7001155260363285,
       "transferAndFeed": 1.0319474450981112,
-      "liftArcBasis": "5degree polyline for telescoping path; not fixed-radius arc"
+      "liftArcBasis": "5degree polyline from shared height/extension bounded a2_kinematics.py"
     },
     "unresolved": [
       "cradle roller contact",
