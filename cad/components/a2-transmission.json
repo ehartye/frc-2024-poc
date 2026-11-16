@@ -99,5 +99,34 @@
     "lengthMm": 14,
     "clockDegrees": 90,
     "status": "original nominal key envelope; stock, corner radius, fit and shear capacity unverified"
+  },
+  "serviceInterfaces": {
+    "tread": {
+      "part": "am-2611a",
+      "url": "https://andymark.com/products/gray-grippy-tread-1-in-wide-10-ft-long",
+      "thicknessMm": 2.54,
+      "widthMm": 25.4,
+      "durometerA": 60,
+      "massKg": null,
+      "friction": null,
+      "status": "nominal annular packaging only; seam/rivets/compression/adhesive omitted; older linked green HAL-12E datasheet not assumed equivalent"
+    },
+    "motorRetention": {
+      "pilotTopFromFaceMm": 3.5,
+      "shaftEndFromFaceMm": 35,
+      "pulleyHalfWidthMm": 9.3472,
+      "spacerOuterDiameterMm": 12,
+      "spacerInnerDiameterMm": 8.2,
+      "washerOuterDiameterMm": 12,
+      "washerInnerDiameterMm": 5.2,
+      "washerThicknessMm": 1,
+      "candidateScrewLengthMm": 9.525,
+      "status": "REJECTED load path: inner spacer bears on stationary pilot; zero overlap is not valid rotating retention. Keep geometry as negative lesson; replace with shaft-compatible clips or verified rotating shoulder."
+    },
+    "tensionTravelHypothesisMm": [
+      -1,
+      1
+    ],
+    "tensionStatus": "kinematic allocation only; slot/support/jackscrew and belt stiffness not designed"
   }
 }
