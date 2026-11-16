@@ -1,3 +1,5 @@
+> Proposed tread-seat correction: current native face evidence places the tread on radius45.72 mm, not the maximum46.99 mm flange. Current component candidate radius is48.26 mm; earlier49.53 mm calculations below are historical and do not describe the corrected seat. Four-drive simulation branches have NOT been updated pending independent review.
+
 # 2024 real-component increment: wheel support cartridge
 
 This is a bounded, original interface study supporting the A2 launcher architecture. It is not a complete shooter or a drop-in replacement for the abstract roller. The existing A2 mission remains unchanged.
@@ -89,3 +91,12 @@ Run `python cad/components/build_a2_component_context.py` to generate an editabl
 A full longitudinal NOTE passage was sampled every 10 mm from -200 to +200 mm relative to the wheel station. The rejected central narrow wheel overlaps the undeformed torus only near its leading/trailing ring, at samples -160..-140 and +140..+160 mm; it has no contact at the middle. Two lateral lanes have nominal overlap at every sample from -80 through +80 mm. This removes the center-hole failure, but **does not reproduce the old 240 mm powered contact stroke**. A geometry-derived contact schedule, force/compression model and new motor/power integration are required before reuse of launch-speed or target-clearance evidence.
 
 The positive overlap is a prescribed rigid-geometry compression proxy, not solved soft contact. The 10 mm sampling is not continuous proof; lateral error, worn NOTE geometry, tread wear, contact normals/spin and all moving robot/service collisions remain future gates. Motor service volumes are visible, not certified accessible. Tensioning hardware and tread attachment remain unfinished. The current component placement is an explicit architecture candidate, not a mounted assembly or build release.
+
+
+## Native tread seat and fastening correction
+
+`measure_wheel_seat.py` reopens the pinned am-3608 source, inventories concentric cylindrical faces and checks mid-width points at three angular locations. The central seat is radius45.72 mm over native axial Z4.445..30.48 mm; radius46.99 mm belongs to narrow flanges. Seat center is Z17.4625 mm, 1.5875 mm beyond the earlier wheel assembly center. Centering the25.4 mm tread within the26.035 mm seat leaves0.3175 mm nominal room at each end. Nominal finished radius is45.72+2.54=48.26 mm. The corrected original envelope and context position follow these faces, not a whole-part bounding radius.
+
+The native inner shell radius at mid-width is42.2275 mm. Wall plus nominal tread is3.4925+2.54=6.0325 mm. The [am-1471 rivet](https://andymark.com/products/1-8-in-diameter-0-251-0-312-in-grip-steel-rivet) lists grip0.251..0.312 inch, or6.3754..7.9248 mm. The unmodified nominal stack is below that range. A backing washer or shorter-grip fastener is a future candidate, not an accepted fix; tread compression, head protrusion, shell location, backside access, edge distance, balance and pull-through strength must be checked. The2012 slotted-wheel zip-tie guide is not transferred to this different extrusion geometry.
+
+Proposed component correction retains nominal opposed gap46.8 mm by moving the wheel centers inward1.27 mm. Tread lane centers remain at+/-152.4 mm by shifting each wheel body's axial placement by-1.5875 mm. Rebuilt sampled contact windows retain the same10 mm sample indices, but overlap volumes change. Neither radius nor overlap corrections have been propagated into the separate four-drive/target branches; those outputs remain conditional on their pinned earlier geometry until review and deliberate integration.

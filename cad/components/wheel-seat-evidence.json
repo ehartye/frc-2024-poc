@@ -1,0 +1,187 @@
+{
+  "schema": "frc-wheel-seat-evidence/1",
+  "source": {
+    "url": "https://documents.andymark.com/e5323f8dff336e35b6abcfa970df5be5230fce20badb60c2701b83e9b8bc587d/am-3608%204IN%20Extrusion%20Performance%20Wheel%20500%20hex.STEP",
+    "sha256": "e5323f8dff336e35b6abcfa970df5be5230fce20badb60c2701b83e9b8bc587d",
+    "part": "am-3608",
+    "scope": "bare wheel, excludes tread; nominal CAD .500in hex vs drawing .501-.506in"
+  },
+  "sha256": "e5323f8dff336e35b6abcfa970df5be5230fce20badb60c2701b83e9b8bc587d",
+  "concentricFaces": [
+    {
+      "radiusMm": 45.719999999999985,
+      "zMinMm": 4.4449998999999965,
+      "zMaxMm": 30.480000099999998
+    },
+    {
+      "radiusMm": 46.99000000000001,
+      "zMinMm": 30.479999899999996,
+      "zMaxMm": 30.797500100000004
+    },
+    {
+      "radiusMm": 46.99000000000001,
+      "zMinMm": 4.1274998999999974,
+      "zMaxMm": 4.445000099999997
+    },
+    {
+      "radiusMm": 46.99000000000001,
+      "zMinMm": 4.1274998999999974,
+      "zMaxMm": 4.445000099999997
+    },
+    {
+      "radiusMm": 46.99000000000001,
+      "zMinMm": 30.479999899999996,
+      "zMaxMm": 30.797500100000004
+    },
+    {
+      "radiusMm": 42.2275,
+      "zMinMm": 3.174999900000001,
+      "zMaxMm": 31.7500001
+    },
+    {
+      "radiusMm": 42.2275,
+      "zMinMm": 3.174999900000001,
+      "zMaxMm": 31.7500001
+    },
+    {
+      "radiusMm": 42.22750000000001,
+      "zMinMm": 3.174999900000001,
+      "zMaxMm": 31.7500001
+    },
+    {
+      "radiusMm": 42.2275,
+      "zMinMm": 3.174999900000001,
+      "zMaxMm": 31.7500001
+    },
+    {
+      "radiusMm": 42.2275,
+      "zMinMm": 3.174999900000001,
+      "zMaxMm": 31.7500001
+    },
+    {
+      "radiusMm": 42.2275,
+      "zMinMm": 3.174999900000001,
+      "zMaxMm": 31.7500001
+    },
+    {
+      "radiusMm": 45.719999999999985,
+      "zMinMm": 4.4449998999999965,
+      "zMaxMm": 30.480000099999998
+    }
+  ],
+  "midwidthSeatRadiusMm": 45.719999999999985,
+  "midwidthInnerRadiusMm": 42.2275,
+  "seatAxialBoundsMm": [
+    4.4449998999999965,
+    30.480000099999998
+  ],
+  "treadCenterOffsetFromAssemblyMm": 1.5874999999999986,
+  "pointWitnesses": [
+    {
+      "thetaDeg": 15,
+      "radiusMm": 42,
+      "zMm": 15.875,
+      "inside": false
+    },
+    {
+      "thetaDeg": 15,
+      "radiusMm": 42.3,
+      "zMm": 15.875,
+      "inside": true
+    },
+    {
+      "thetaDeg": 15,
+      "radiusMm": 45.5,
+      "zMm": 15.875,
+      "inside": true
+    },
+    {
+      "thetaDeg": 15,
+      "radiusMm": 45.8,
+      "zMm": 15.875,
+      "inside": false
+    },
+    {
+      "thetaDeg": 15,
+      "radiusMm": 46.8,
+      "zMm": 15.875,
+      "inside": false
+    },
+    {
+      "thetaDeg": 30,
+      "radiusMm": 42,
+      "zMm": 15.875,
+      "inside": false
+    },
+    {
+      "thetaDeg": 30,
+      "radiusMm": 42.3,
+      "zMm": 15.875,
+      "inside": true
+    },
+    {
+      "thetaDeg": 30,
+      "radiusMm": 45.5,
+      "zMm": 15.875,
+      "inside": true
+    },
+    {
+      "thetaDeg": 30,
+      "radiusMm": 45.8,
+      "zMm": 15.875,
+      "inside": false
+    },
+    {
+      "thetaDeg": 30,
+      "radiusMm": 46.8,
+      "zMm": 15.875,
+      "inside": false
+    },
+    {
+      "thetaDeg": 45,
+      "radiusMm": 42,
+      "zMm": 15.875,
+      "inside": false
+    },
+    {
+      "thetaDeg": 45,
+      "radiusMm": 42.3,
+      "zMm": 15.875,
+      "inside": true
+    },
+    {
+      "thetaDeg": 45,
+      "radiusMm": 45.5,
+      "zMm": 15.875,
+      "inside": true
+    },
+    {
+      "thetaDeg": 45,
+      "radiusMm": 45.8,
+      "zMm": 15.875,
+      "inside": false
+    },
+    {
+      "thetaDeg": 45,
+      "radiusMm": 46.8,
+      "zMm": 15.875,
+      "inside": false
+    }
+  ],
+  "finishedRadiusMm": 48.259999999999984,
+  "treadNominalThicknessMm": 2.54,
+  "rivetPart": "am-1471",
+  "rivetSource": "https://andymark.com/products/1-8-in-diameter-0-251-0-312-in-grip-steel-rivet",
+  "nominalGripStackMm": 6.0324999999999855,
+  "rivetGripRangeMm": [
+    6.3754,
+    7.9248
+  ],
+  "nominalGripScreenPass": false,
+  "limits": [
+    "Native nominal faces, not manufactured metrology",
+    "Gray tread thickness/compression/wear not measured",
+    "Rivet head shape, upset, backing washer and grip tolerances not modeled",
+    "No fastening or operating acceptance"
+  ]
+}

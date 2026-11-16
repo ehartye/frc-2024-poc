@@ -8,7 +8,7 @@ from OCP.BRepPrimAPI import BRepPrimAPI_MakeTorus
 from OCP.gp import gp_Ax2,gp_Pnt,gp_Dir
 
 def run(out):
- out.mkdir(parents=True,exist_ok=True);contract=json.loads((R/'cad/cycle-contract-A2.json').read_text());tx=json.loads((R/'cad/components/a2-transmission.json').read_text());base=json.loads((R/'cad/components/a2-wheel-cartridge.json').read_text());sh=contract['geometry']['shooter'];radius=base['layout']['bareWheelRadius']+tx['serviceInterfaces']['tread']['thicknessMm'];sep=sh['nominalGap']*500+radius;lane=152.4;width=25.4
+ out.mkdir(parents=True,exist_ok=True);contract=json.loads((R/'cad/cycle-contract-A2.json').read_text());tx=json.loads((R/'cad/components/a2-transmission.json').read_text());base=json.loads((R/'cad/components/a2-wheel-cartridge.json').read_text());sh=contract['geometry']['shooter'];radius=tx['serviceInterfaces']['tread']['nativeSeatRadiusMm']+tx['serviceInterfaces']['tread']['thicknessMm'];sep=sh['nominalGap']*500+radius;lane=152.4;width=25.4
  cases={}
  for name,ys in [('rejected central wheel',[0]),('two lane candidate',[-lane,lane])]:
   wheels=[h.cyl((0,y-width/2,sep),(0,1,0),radius,width) for y in ys]
@@ -22,10 +22,10 @@ def run(out):
  bom=[]
  for side in [-1,1]:
   for y in [-lane,lane]:
-   ident=str((side,y));z=side*sep
+   ident=str((side,y));y-=tx['serviceInterfaces']['tread']['assemblyTreadCenterOffsetMm'];z=side*sep
    def add(n,s,k='mechanism'):parts.append((n+' '+ident,h.pitch(s,angle,pivot),k))
    add('original sourced-size wheel envelope',h.cyl((station,y-15.875,z),(0,1,0),46.99,31.75))
-   add('original nominal tread envelope',h.cyl((station,y-width/2,z),(0,1,0),radius,width))
+   add('original nominal tread envelope',h.cyl((station,y+tx['serviceInterfaces']['tread']['assemblyTreadCenterOffsetMm']-width/2,z),(0,1,0),radius,width))
    add('original shaft envelope',h.cyl((station,y-80,z),(0,1,0),6.875,160),'support')
    for d in [-40,40]:add('original support plate envelope',h.box(station-40,y+d-1.5875,z-40,80,3.175,80),'support')
    add('original motor body reserve',h.cyl((station+88.9,y-13.35,z),(0,1,0),30,58.35),'frame')

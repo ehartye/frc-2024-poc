@@ -1,6 +1,6 @@
 {
   "schema": "frc-native-transmission-evidence/1",
-  "inputSha256": "c9dbb7fc11cd7019af53dc22927757a8cab62c5b3a1a6c5e4f30b46a0b5a8c80",
+  "inputSha256": "a5be758b01468b3973c4993f68bd8875d5e96eb395a79a078fe24958840e47de",
   "baseSha256": "cfb026299f8282b46df511166695b2087f352c9653dd5a8c53a7c5d4529722f1",
   "sources": [
     {
@@ -52,7 +52,7 @@
       "requiredPitchLengthMm": 256.0
     }
   ],
-  "finishedWheelRadiusMm": 49.53,
+  "finishedWheelRadiusMm": 48.26,
   "keyNearestSurfaceDistancesMm": {
     "motor": 0.0,
     "driver pulley": 0.025000000000005684

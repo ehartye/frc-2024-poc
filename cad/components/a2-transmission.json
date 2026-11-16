@@ -123,7 +123,23 @@
       "durometerA": 60,
       "massKg": null,
       "friction": null,
-      "status": "nominal annular packaging only; seam/rivets/compression/adhesive omitted; older linked green HAL-12E datasheet not assumed equivalent"
+      "status": "nominal annular packaging only; seam/rivets/compression/adhesive omitted; older linked green HAL-12E datasheet not assumed equivalent",
+      "nativeSeatRadiusMm": 45.72,
+      "nativeSeatInnerRadiusMm": 42.2275,
+      "nativeSeatAxialBoundsMm": [
+        4.445,
+        30.48
+      ],
+      "assemblyTreadCenterOffsetMm": 1.5875,
+      "seatEvidence": "native cylindrical surfaces and midwidth point classification; maximum46.99 is flange, not seat",
+      "rivetCandidate": "am-1471",
+      "rivetGripRangeMm": [
+        6.3754,
+        7.9248
+      ],
+      "bareStackMm": 6.0325,
+      "bareStackStatus": "below minimum grip; do not use this rivet without revised stack/alternate fastener",
+      "rivetSource": "https://andymark.com/products/1-8-in-diameter-0-251-0-312-in-grip-steel-rivet"
     },
     "motorRetention": {
       "pilotTopFromFaceMm": 3.5,

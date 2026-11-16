@@ -1,9 +1,9 @@
 {
   "schema": "frc-a2-component-context/1",
   "contractSha256": "0e08bf88e488539ca8966dcc3cc08727ef2faf98da3740787b308cd54c652f52",
-  "transmissionSha256": "194b12216792a2984807a803d1ef583efb1f169252053b0624d16d3a9819727c",
-  "wheelRadiusMm": 49.53,
-  "opposedCenterHalfSeparationMm": 72.93,
+  "transmissionSha256": "0aae2e2dd0d8c4b16729139380f6d1e2df0efa956dad2ee8b205be1a57f3d8b0",
+  "wheelRadiusMm": 48.26,
+  "opposedCenterHalfSeparationMm": 71.66,
   "laneCentersMm": [
     -152.4,
     152.4
@@ -28,15 +28,15 @@
       },
       {
         "noteCenterFromWheelStationMm": -160,
-        "summedNominalOverlapMm3": 390.7084897880757
+        "summedNominalOverlapMm3": 386.3262306926963
       },
       {
         "noteCenterFromWheelStationMm": -150,
-        "summedNominalOverlapMm3": 538.2525185419491
+        "summedNominalOverlapMm3": 535.6450746983572
       },
       {
         "noteCenterFromWheelStationMm": -140,
-        "summedNominalOverlapMm3": 191.03747450321734
+        "summedNominalOverlapMm3": 185.08219932432468
       },
       {
         "noteCenterFromWheelStationMm": -130,
@@ -148,15 +148,15 @@
       },
       {
         "noteCenterFromWheelStationMm": 140,
-        "summedNominalOverlapMm3": 191.03747470737846
+        "summedNominalOverlapMm3": 185.0821993519751
       },
       {
         "noteCenterFromWheelStationMm": 150,
-        "summedNominalOverlapMm3": 538.2525187292149
+        "summedNominalOverlapMm3": 535.6450744557153
       },
       {
         "noteCenterFromWheelStationMm": 160,
-        "summedNominalOverlapMm3": 390.7084891131291
+        "summedNominalOverlapMm3": 386.3262302997363
       },
       {
         "noteCenterFromWheelStationMm": 170,
@@ -226,71 +226,71 @@
       },
       {
         "noteCenterFromWheelStationMm": -80,
-        "summedNominalOverlapMm3": 34.87013454350681
+        "summedNominalOverlapMm3": 33.64668828589221
       },
       {
         "noteCenterFromWheelStationMm": -70,
-        "summedNominalOverlapMm3": 224.12060956628883
+        "summedNominalOverlapMm3": 220.52561736221617
       },
       {
         "noteCenterFromWheelStationMm": -60,
-        "summedNominalOverlapMm3": 492.97786873385337
+        "summedNominalOverlapMm3": 486.7824477226372
       },
       {
         "noteCenterFromWheelStationMm": -50,
-        "summedNominalOverlapMm3": 726.7254183602324
+        "summedNominalOverlapMm3": 717.9380788446211
       },
       {
         "noteCenterFromWheelStationMm": -40,
-        "summedNominalOverlapMm3": 860.1818281984033
+        "summedNominalOverlapMm3": 849.413947746727
       },
       {
         "noteCenterFromWheelStationMm": -30,
-        "summedNominalOverlapMm3": 894.6046635199345
+        "summedNominalOverlapMm3": 882.9806991256484
       },
       {
         "noteCenterFromWheelStationMm": -20,
-        "summedNominalOverlapMm3": 886.665576024408
+        "summedNominalOverlapMm3": 874.9199813112093
       },
       {
         "noteCenterFromWheelStationMm": -10,
-        "summedNominalOverlapMm3": 880.6793378697101
+        "summedNominalOverlapMm3": 869.1778251096596
       },
       {
         "noteCenterFromWheelStationMm": 0,
-        "summedNominalOverlapMm3": 878.7540675898929
+        "summedNominalOverlapMm3": 867.2713672819232
       },
       {
         "noteCenterFromWheelStationMm": 10,
-        "summedNominalOverlapMm3": 880.7180916304244
+        "summedNominalOverlapMm3": 869.163728658826
       },
       {
         "noteCenterFromWheelStationMm": 20,
-        "summedNominalOverlapMm3": 886.4763908886721
+        "summedNominalOverlapMm3": 874.9183480776389
       },
       {
         "noteCenterFromWheelStationMm": 30,
-        "summedNominalOverlapMm3": 894.5972932552472
+        "summedNominalOverlapMm3": 882.9825455448116
       },
       {
         "noteCenterFromWheelStationMm": 40,
-        "summedNominalOverlapMm3": 860.1805041665093
+        "summedNominalOverlapMm3": 849.4289060856065
       },
       {
         "noteCenterFromWheelStationMm": 50,
-        "summedNominalOverlapMm3": 726.71352837754
+        "summedNominalOverlapMm3": 717.9420218306343
       },
       {
         "noteCenterFromWheelStationMm": 60,
-        "summedNominalOverlapMm3": 492.9771174768638
+        "summedNominalOverlapMm3": 486.78434334124086
       },
       {
         "noteCenterFromWheelStationMm": 70,
-        "summedNominalOverlapMm3": 224.11988891783193
+        "summedNominalOverlapMm3": 220.52635440329118
       },
       {
         "noteCenterFromWheelStationMm": 80,
-        "summedNominalOverlapMm3": 34.87070709357032
+        "summedNominalOverlapMm3": 33.64694089603856
       },
       {
         "noteCenterFromWheelStationMm": 90,

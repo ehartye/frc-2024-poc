@@ -22,7 +22,7 @@ class TransmissionTests(unittest.TestCase):
   from check_transmission import service_originals,rejected_service_originals
   b=json.loads((R/'cad/components/a2-wheel-cartridge.json').read_text())
   self.assertEqual(len(service_originals(self.c,b)),1)
-  self.assertAlmostEqual(b['layout']['bareWheelRadius']+self.c['serviceInterfaces']['tread']['thicknessMm'],49.53)
+  self.assertAlmostEqual(self.c['serviceInterfaces']['tread']['nativeSeatRadiusMm']+self.c['serviceInterfaces']['tread']['thicknessMm'],48.26)
   self.c['serviceInterfaces']['motorRetention']['shaftEndFromFaceMm']=20
   with self.assertRaises(ValueError):rejected_service_originals(self.c,b)
  def test_invalid_geometry(self):
