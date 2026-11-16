@@ -43,6 +43,20 @@
         38.02054324421769,
         35.0000001
       ]
+    },
+    {
+      "part": "REV-29-2598",
+      "url": "https://www.revrobotics.com/content/cad/REV-29-2598.STEP",
+      "sha256": "187b0c01dfc7c430c4becf50fe94d1ffaa7874a0645b81174566e9fe62201eb0",
+      "bytes": 176723,
+      "bounds": [
+        -8.11794310947002,
+        -8.11794310947002,
+        -1.6072770639568596e-06,
+        8.11794310947002,
+        8.11794310947002,
+        1.600001607277065
+      ]
     }
   ],
   "layout": {
@@ -69,7 +83,7 @@
   "status": "nominal private-native packaging experiment; no key engagement, fastener, tension or operating acceptance",
   "limits": [
     "Motor plate native clearance checked; attachment to cartridge and tension adjustment not designed",
-    "Nominal key modeled; shaft-end retention and selected fastener tolerance stack unresolved",
+    "Motor native push-on rings modeled; holding force, installation, replacement and driven shaft retention unverified",
     "No belt tooth/contact model or tension adjustment",
     "Tread absent; motor-to-tread clearance unresolved",
     "Manufacturer motor mass is not uniform material or rotor inertia",
@@ -127,6 +141,18 @@
       -1,
       1
     ],
-    "tensionStatus": "kinematic allocation only; slot/support/jackscrew and belt stiffness not designed"
+    "tensionStatus": "kinematic allocation only; slot/support/jackscrew and belt stiffness not designed",
+    "activeRetention": "two native REV-29-2598 push-on rings gripping motor shaft, one each side of pulley; load capacity and installation direction require verification",
+    "retainingRing": {
+      "part": "REV-29-2598",
+      "thicknessMm": 1.6,
+      "url": "https://www.revrobotics.com/rev-21-2907/",
+      "drawingUrl": "https://www.revrobotics.com/content/docs/REV-21-2907-DR.pdf",
+      "massEachKg": 0.0003,
+      "nominalIdMm": 7.5,
+      "shaftDiameterMm": 8,
+      "expectedInterference": "press-on grip is intentional, not a collision-free fit",
+      "pilotClearanceMm": 0.5528
+    }
   }
 }

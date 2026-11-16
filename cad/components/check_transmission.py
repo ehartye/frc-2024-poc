@@ -21,10 +21,14 @@ def motor_originals(c):
  key=BRepPrimAPI_MakeBox(gp_Pnt(k['radialInnerMm'],-k['widthMm']/2,k['startFromMotorFaceMm']),k['radialThicknessMm'],k['widthMm'],k['lengthMm']).Shape()
  return {'original motor mount plate':place(plate,x,z),'original key envelope':place(key,x,z,k['clockDegrees'])}
 
-def service_originals(c,base):
+def rejected_service_originals(c,base):
  d=c['serviceInterfaces'];t=d['tread'];r=d['motorRetention'];x=center_distance(c);face=c['layout']['motorFaceZ'];pz=c['layout']['pulleyZ'];lo=pz-r['pulleyHalfWidthMm'];hi=pz+r['pulleyHalfWidthMm'];end=face+r['shaftEndFromFaceMm'];start=face+r['pilotTopFromFaceMm']
  if not (start<lo<hi<end):raise ValueError('retention axial ordering')
  return {'original tread packaging annulus':shifted(ring(base['layout']['bareWheelRadius']+t['thicknessMm'],base['layout']['bareWheelRadius'],t['widthMm']),-t['widthMm']/2),'original motor inner spacer':place(ring(r['spacerOuterDiameterMm']/2,r['spacerInnerDiameterMm']/2,lo-start),x,start),'original motor outer spacer':place(ring(r['spacerOuterDiameterMm']/2,r['spacerInnerDiameterMm']/2,end-hi),x,hi),'original motor end washer':place(ring(r['washerOuterDiameterMm']/2,r['washerInnerDiameterMm']/2,r['washerThicknessMm']),x,end)}
+
+def service_originals(c,base):
+ old=rejected_service_originals(c,base)
+ return {k:v for k,v in old.items() if 'tread' in k}
 
 def screw_stack(c):
  d=c['motorMount'];eng=d['candidateScrewUnderHeadMm']-d['candidateWasherMm']-d['plateThicknessMm']
@@ -47,6 +51,9 @@ def run_drive(c,base,cache):
  o['driver pulley']=place(native['REV-21-2200'],x,z,d['driverClockDegrees'])
  o['driven pulley']=place(native['REV-21-2201'],0,z,d['drivenClockDegrees'])
  o.update(motor_originals(c));o.update(service_originals(c,base))
+ ringThickness=c['serviceInterfaces']['retainingRing']['thicknessMm'];half=c['serviceInterfaces']['motorRetention']['pulleyHalfWidthMm']
+ o['inner native retaining ring']=place(native['REV-29-2598'],x,z-half-ringThickness)
+ o['outer native retaining ring']=place(native['REV-29-2598'],x,z+half)
  pairs={a+' / '+b:overlap(o[a],o[b]) for a,b in itertools.combinations(o,2)}
  travel=[]
  for delta in c['serviceInterfaces']['tensionTravelHypothesisMm']:
@@ -58,7 +65,7 @@ def run_drive(c,base,cache):
   if not dist.IsDone():raise ValueError('key distance failure')
   distances[name]=dist.Value()
  neg=overlap(o['original rounded hex shaft'],place(native['REV-21-2201'],0,z,30))
- return {'schema':'frc-native-transmission-evidence/1','inputSha256':hashlib.sha256(json.dumps(c,sort_keys=True,separators=(',',':')).encode()).hexdigest(),'baseSha256':hashlib.sha256(json.dumps(base,sort_keys=True,separators=(',',':')).encode()).hexdigest(),'sources':records,'equalPulleyCenterDistanceMm':x,'ratio':1,'tensionEndpointScreen':travel,'finishedWheelRadiusMm':base['layout']['bareWheelRadius']+c['serviceInterfaces']['tread']['thicknessMm'],'keyNearestSurfaceDistancesMm':distances,'screwStack':screw_stack(c),'unclockedDriverKeyOverlapMm3':overlap(o['original key envelope'],place(native['REV-21-2200'],x,z,0)),'pairCommonVolumesMm3':pairs,'wrongDrivenClock30OverlapMm3':neg,'manufacturerMassSubtotalKg':sum(c['manufacturerMassKg'].values()),'massScope':'motor + two pulleys + belt only; no CoG or inertia inferred','acceptance':False,'limits':c['limits']}
+ return {'schema':'frc-native-transmission-evidence/1','inputSha256':hashlib.sha256(json.dumps(c,sort_keys=True,separators=(',',':')).encode()).hexdigest(),'baseSha256':hashlib.sha256(json.dumps(base,sort_keys=True,separators=(',',':')).encode()).hexdigest(),'sources':records,'equalPulleyCenterDistanceMm':x,'ratio':1,'tensionEndpointScreen':travel,'finishedWheelRadiusMm':base['layout']['bareWheelRadius']+c['serviceInterfaces']['tread']['thicknessMm'],'keyNearestSurfaceDistancesMm':distances,'screwStack':screw_stack(c),'unclockedDriverKeyOverlapMm3':overlap(o['original key envelope'],place(native['REV-21-2200'],x,z,0)),'pairCommonVolumesMm3':pairs,'intentionalPressFitPairs':['motor / inner native retaining ring','motor / outer native retaining ring'],'wrongDrivenClock30OverlapMm3':neg,'manufacturerMassSubtotalKg':sum(c['manufacturerMassKg'].values()),'massScope':'motor + two pulleys + belt only; no CoG or inertia inferred','acceptance':False,'limits':c['limits']}
 if __name__=='__main__':
  a=argparse.ArgumentParser();a.add_argument('--vendor-cache',type=pathlib.Path,required=True);a.add_argument('--output',type=pathlib.Path,required=True);v=a.parse_args()
  c=json.loads((R/'cad/components/a2-transmission.json').read_text());b=json.loads((R/'cad/components/a2-wheel-cartridge.json').read_text());r=run_drive(c,b,v.vendor_cache);v.output.parent.mkdir(parents=True,exist_ok=True);v.output.write_text(json.dumps(r,indent=2)+'\n');print(json.dumps({'pairCount':len(r['pairCommonVolumesMm3']),'maxOverlap':max(r['pairCommonVolumesMm3'].values()),'negativeControl':r['wrongDrivenClock30OverlapMm3']}))
