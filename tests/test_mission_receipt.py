@@ -7,6 +7,13 @@ class MissionReceipt(unittest.TestCase):
   for name in sorted(r.TESTS):ET.SubElement(t,'testcase',name=name)
   ET.SubElement(t,'system-out').text='MISSION_RUN_ID='+token+'\n'+'\n'.join('A2_RESULT scenario='+s for s in r.SCENARIOS)
   return ET.tostring(t)
+ def test_canonical_geometry_drift_rejected(self):
+  with tempfile.TemporaryDirectory() as d:
+   root=pathlib.Path(d);(root/'cad').mkdir();(root/'mission').mkdir()
+   for name in ['cycle-contract-A2.json','a2_kinematics.py']:
+    (root/'cad'/name).write_bytes(b'one');(root/'mission'/name).write_bytes(b'one')
+   r.check_canonical_geometry(root);(root/'cad'/'cycle-contract-A2.json').write_bytes(b'changed')
+   with self.assertRaisesRegex(ValueError,'differ'):r.check_canonical_geometry(root)
  def test_stale_run_token_rejected(self):
   with self.assertRaises(ValueError):r.validate_xml(self.xml('old'),'new')
  def test_missing_scenario_rejected(self):

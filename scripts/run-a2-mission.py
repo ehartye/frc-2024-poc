@@ -7,7 +7,7 @@ SCENARIOS=['NORMAL','NORMAL_9V','MISSING_NOTE','JAM','STALE_POSE','STRICT_9V','S
 ROOT_CLASSES=['A2MissionSimulation','A2MissionGeometry','CrescendoMissionSupervisor','A2ShooterAdapter','PoweredGuidePlant','SharedSupply','A2MissionSimulationTest']
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def pins():
- files=list((PROJECT/'src').rglob('*.java'))+[PROJECT/n for n in ['build.gradle','settings.gradle','gradle.lockfile','gradle.properties','gradlew.bat','gradle/wrapper/gradle-wrapper.jar','gradle/wrapper/gradle-wrapper.properties']]+[ROOT/n for n in ['scripts/run-a2-mission.py','scripts/run-a2-mission.ps1','scripts/generate-mission-geometry.py','mission/cycle-contract-A2.json','mission/a2_kinematics.py']]
+ files=list((PROJECT/'src').rglob('*.java'))+[PROJECT/n for n in ['build.gradle','settings.gradle','gradle.lockfile','gradle.properties','gradlew.bat','gradle/wrapper/gradle-wrapper.jar','gradle/wrapper/gradle-wrapper.properties']]+[ROOT/n for n in ['scripts/run-a2-mission.py','scripts/run-a2-mission.ps1','scripts/generate-mission-geometry.py','mission/cycle-contract-A2.json','mission/a2_kinematics.py','cad/cycle-contract-A2.json','cad/a2_kinematics.py']]
  return {p.relative_to(ROOT).as_posix():sha(p) for p in sorted(files)}
 def validate_xml(data,token):
  tree=ET.fromstring(data)
@@ -18,10 +18,15 @@ def validate_xml(data,token):
  if len(results)!=7 or {l.split()[1].split('=')[1] for l in results}!=set(SCENARIOS):raise ValueError('scenario inventory')
  return results
 
+def check_canonical_geometry(root=ROOT):
+ for name in ['cycle-contract-A2.json','a2_kinematics.py']:
+  if (root/'cad'/name).read_bytes()!=(root/'mission'/name).read_bytes():raise ValueError('Canonical CAD and mission snapshot differ: '+name)
+
 def run(output,java_home,gradle_home):
  out=pathlib.Path(output).resolve();jdk=pathlib.Path(java_home);cache=pathlib.Path(gradle_home);java=jdk/'bin/java.exe'
  if out.exists():raise ValueError('fresh output required')
  if not java.is_file() or not cache.is_dir():raise ValueError('existing JDK/cache required; no installation')
+ check_canonical_geometry()
  subprocess.run(['python',str(ROOT/'scripts/generate-mission-geometry.py'),'--check'],check=True)
  out.parent.mkdir(parents=True,exist_ok=True);pending=pathlib.Path(tempfile.mkdtemp(prefix=out.name+'-pending-',dir=out.parent));token=str(uuid.uuid4());before=pins()
  env=os.environ.copy();env.update(JAVA_HOME=str(jdk),GRADLE_USER_HOME=str(cache),FRC_MISSION_RUN_ID=token,FRC_MISSION_OUTPUT=str(pending));env['PATH']=str(java.parent)+os.pathsep+env['PATH']
