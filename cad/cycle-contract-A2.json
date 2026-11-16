@@ -428,6 +428,13 @@
       "belt/guide support",
       "loaded lift torque and time",
       "telescoping actuator/power and retained-piece swept-volume validation"
-    ]
+    ],
+    "integrationMode": "prescribed coordinated pitch/telescope with ideal retained NOTE for first complete-cycle rehearsal; actuator dynamics, retention and loads not modeled",
+    "payloadEnvelope": {
+      "outerDiameter": 0.3556,
+      "thickness": 0.0508,
+      "orientation": "horizontal ideal retained cradle",
+      "extentPolicy": "report separately from robot components; no implicit rule approval"
+    }
   }
 }
