@@ -8,12 +8,17 @@ public final class CrescendoMissionSupervisor {
  public enum Fault { NONE, OBSERVATION, UNKNOWN_PIECE, PRELOAD, LOST_PIECE, LOW_RPM, TIMEOUT, ACQUISITION_EXHAUSTED, JAM_EXHAUSTED, RELEASE_CONTRADICTION }
  public record Config(double maxAge, double maxUpdateGap, double driveTimeout, double acquireTimeout,
    double indexTimeout, double stowTimeout, double spinupTimeout, double releaseTimeout,
-   double reverseDuration, double readyDwell, double readyRpm, double intakeDuty, double indexDuty, double releaseDuty) {
+   double reverseDuration, double readyDwell, double readyRpm, double releaseMinRpm, double intakeDuty, double indexDuty, double releaseDuty) {
   public Config {
-   double[] positive={maxAge,maxUpdateGap,driveTimeout,acquireTimeout,indexTimeout,stowTimeout,spinupTimeout,releaseTimeout,reverseDuration,readyDwell,readyRpm};
+   double[] positive={maxAge,maxUpdateGap,driveTimeout,acquireTimeout,indexTimeout,stowTimeout,spinupTimeout,releaseTimeout,reverseDuration,readyDwell,readyRpm,releaseMinRpm};
    for(double v:positive) if(!Double.isFinite(v)||v<=0) throw new IllegalArgumentException("positive finite timing/threshold required");
    for(double v:new double[]{intakeDuty,indexDuty,releaseDuty}) if(!Double.isFinite(v)||v<=0||v>1) throw new IllegalArgumentException("duty in (0,1]");
+   if(releaseMinRpm>readyRpm)throw new IllegalArgumentException("release floor exceeds readiness");
    if(reverseDuration>=acquireTimeout||readyDwell>=spinupTimeout) throw new IllegalArgumentException("timing ordering");
+  }
+  /** Compatibility constructor retains the original strict equal readiness/release floor. */
+  public Config(double maxAge,double maxUpdateGap,double driveTimeout,double acquireTimeout,double indexTimeout,double stowTimeout,double spinupTimeout,double releaseTimeout,double reverseDuration,double readyDwell,double readyRpm,double intakeDuty,double indexDuty,double releaseDuty){
+   this(maxAge,maxUpdateGap,driveTimeout,acquireTimeout,indexTimeout,stowTimeout,spinupTimeout,releaseTimeout,reverseDuration,readyDwell,readyRpm,readyRpm,intakeDuty,indexDuty,releaseDuty);
   }
   public static Config hypothesis(){return new Config(.05,.10,12,2,1,1,2,.7,.20,.10,2500,.35,.15,.20);}
  }
@@ -66,7 +71,7 @@ public final class CrescendoMissionSupervisor {
     if(state==State.SPINUP&&age>=c.spinupTimeout())return fail(Fault.LOW_RPM,now);
    }
    case RELEASE -> {
-    if(!o.aligned()||!o.stopped()||o.shooterRpm()<c.readyRpm())return fail(Fault.RELEASE_CONTRADICTION,now);
+    if(!o.aligned()||!o.stopped()||o.shooterRpm()<c.releaseMinRpm())return fail(Fault.RELEASE_CONTRADICTION,now);
     if(o.piece()==Piece.ABSENT&&o.downstreamExitObserved()){releases++;transition(releases==2?State.DONE:State.SEEK_NOTE,now);}
     else if(age>=c.releaseTimeout())return fail(Fault.TIMEOUT,now);
    }

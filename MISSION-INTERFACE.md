@@ -31,3 +31,7 @@ All Config values are hypothetical, including 2500 RPM readiness, demand fractio
 The Java unit tests inject complete, delayed, unknown, low-RPM, missing-exit, jammed, repeated-sequence and moving-acquisition observations. They cover the two-release mission, serialized commands, one retry, bounded reverse and inhibited planning. Run the standard Gradle test task with `--tests org.agentfrc.lesson.CrescendoMissionSupervisorTest`; no new dependencies are required. Existing original simulation regressions should be rerun separately.
 
 Next: connect this interface to actual acquisition/index/stow plant observations and pose-goal identity, then test feedback-generated mission timing and failure traces. Do not substitute this injected-input success for closed-loop pickup or validate the unchanged shot model by association.
+
+## Separate loaded RPM floor
+
+Config now permits an explicit releaseMinRpm independent of readyRpm. The compatibility constructor preserves the original equal threshold. See A2-SHOOTER-ADAPTER.md for measured same-plant startup/release behavior and the fixed-duty adapter limits; no real sensor data or calibration is implied.

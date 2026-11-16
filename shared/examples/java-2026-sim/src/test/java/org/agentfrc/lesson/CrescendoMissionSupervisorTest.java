@@ -48,6 +48,10 @@ class CrescendoMissionSupervisorTest {
   Rig r=new Rig();r.preload();r.piece=Piece.ABSENT;oCheck(r.step(),Fault.LOST_PIECE);
   Rig q=new Rig();q.acquire();q.stopped=false;oCheck(q.step(),Fault.OBSERVATION);
  }
+ @Test void loadedReleaseFloorIsSeparateAndExplicit(){
+  Rig r=new Rig();r.s=new CrescendoMissionSupervisor(new Config(.05,.1,.4,.2,.2,.2,.3,.2,.1,.05,2500,1000,.35,.15,.2));r.preload();r.readyShot();r.rpm=1500;assertEquals(State.RELEASE,r.step().state());r.rpm=999;oCheck(r.step(),Fault.RELEASE_CONTRADICTION);
+  assertEquals(2500,quick().releaseMinRpm());
+ }
  @Test void repeatedSequenceInvalidNumbersAndInvalidConfigRejected(){
   Rig r=new Rig();r.preload();r.seq--;oCheck(r.step(),Fault.OBSERVATION);
   Rig q=new Rig();q.rpm=Double.NaN;oCheck(q.preload(),Fault.OBSERVATION);
