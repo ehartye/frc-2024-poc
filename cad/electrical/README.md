@@ -13,7 +13,7 @@ python cad/electrical/build_electrical.py
 python cad/electrical/test_electrical.py
 ```
 
-Edit `manifest.json`; `build_electrical.build()` returns `(id, native shape, role)` tuples. Default excludes service reserves; `include_service=True` includes them. Replace the four original reserve parts named in the manifest rather than stacking both representations. Generated STEP contains 25 original box solids and reopens as 25 roots. No internal solid-envelope overlap was found. This does not establish chassis fit, cooling, reachability, fastener engagement or structural capacity.
+Edit `manifest.json`; `build_electrical.build()` returns `(id, native shape, role)` tuples. Default excludes service reserves; `include_service=True` includes them. Replace the four original reserve parts named in the manifest rather than stacking both representations. Generated STEP contains 55 original solids and reopens as 55 roots. No internal solid-envelope overlap was found. This does not establish chassis fit, cooling, reachability, fastener engagement or structural capacity.
 
 ## Selected components and evidence
 
@@ -25,7 +25,7 @@ roboRIO2 overall envelope was measured from the supplier's native STEP: 146.1518
 
 ## Mass and power limits
 
-Known component mass is **8.0053 kg**, including the twelve allocated controllers and single battery. Known-mass-only centroid is approximately (-196.82,-156.82,231.59) mm. It excludes roboRIO, all mounts, wiring, lugs, branch protection, RSL and other omitted items. It is **not complete electrical mass or robot CoG**.
+Known component mass is **8.3403 kg**, including the twelve allocated controllers and single battery. The current known-mass centroid is recorded in generated/verification.json. It excludes all mounts, wiring, lugs, branch protection, RSL and other omitted items. The roboRIO2 mass is now sourced as335g from the NI manufacturer specification linked in the manifest (current document, not a historical2024 revision). It is **not complete electrical mass or robot CoG**.
 
 The PDH has twenty high-current channels; twelve are provisionally allocated. Channel count does not establish simultaneous current capacity. The 120 A breaker, motor branch protection, cable gauges, inrush, CAN termination, radio supply routing and actual load budget require a schematic and checks. The Radio Power Module provides the radio supply candidate; it is not powered directly from a guessed connector.
 
@@ -39,6 +39,16 @@ Dashed volumes are editable connector/hand/lift-out/wire reservations. They are 
 
 No vendor native geometry, personal paths or private deployment links are included. Supplier model remains in ignored artifacts for private measurement. Native import was substantial (approximately 60 MB); the resulting public envelope is intentionally small. Future plugin enhancement: source-pinned native-envelope extraction, component placement/mount interfaces, partial-mass accounting and separate service-volume collision reports should be first-class operations rather than one-off scripts.
 
-### Integration conflict discovered before merge
+### Corrected source-flat support candidate
 
-The drivetrain candidate's aft bridge tube at X=-280 mm and Z160..210.8 mm crosses the controller deck/controllers and can meet the battery-side reservation. The two independently developed layouts are **not simultaneously cleared**. Whole-assembly integration must change the deck elevation/shape or bridge placement, retain actual support load paths and rerun interference checks. The exported electrical package is an editable input, not a fit certificate.
+The retired rear drivetrain bridge is omitted. An initial rail-AABB-top mounting idea was rejected: that bounding box is not the physical top flange. The corrected candidate uses native top flanges at Z132.715 mm and actual holes at X-266.7/-139.7,Y+/-260.35 mm. Original T adapters support two aft25.4mm square tubes, crush sleeves and a common aft baseplate at Z162.115..165.115 mm. Battery elevation increased only6.554mm. No longitudinal front tubes remain.
+
+The package includes removable deck posts, a radio-power tab, and detachable battery strap geometry. Shaft envelopes pass the actual rail holes, but bolt heads/nuts, final lengths, materials, tightening, terminal placement, insulation and strength still need selection. The strap is not approved battery restraint. Device-specific fastening to decks remains unfinished.
+
+Native cross-package regression checks all55 electrical/support solids against84 retained drivetrain parts, replacing the two coarse rail envelopes with hash-pinned private native rails. It reports zero internal or cross-package common-volume intersections. A deliberately1mm-shifted rail bolt intersects native metal, confirming that the check can reject a misplaced fastener. Other drivetrain parts remain envelopes, not native mating geometry. The new front intake/NOTE path and full robot still require the designer's separate check.
+
+```text
+python cad/electrical/check_drivetrain.py --drivetrain <drivetrain-source-directory> --native-cache <private-native-cache> --output cad/electrical/generated/crosscheck.json
+```
+
+The cache is not distributed. Its hashes are recorded; no private filesystem paths are included. Without the native cache, the conservative rail boxes report overlaps and must not be treated as qualified mating surfaces.

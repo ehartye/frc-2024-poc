@@ -67,7 +67,9 @@
         71.58990032375829,
         25.057406339148972
       ],
-      "checkedDate": "2026-11-16"
+      "checkedDate": "2026-11-16",
+      "massUrl": "https://www.ni.com/docs/en-US/bundle/roborio-20-specs/page/specs.html",
+      "massFact": "roboRIO 2.0 physical characteristics:335g; manufacturer page updated2026-11-01, not a historical2024 document"
     }
   },
   "components": [
@@ -83,7 +85,7 @@
       "centerMm": [
         -200,
         -240,
-        245
+        251.554
       ],
       "sizeMm": [
         181.102,
@@ -106,7 +108,7 @@
       "centerMm": [
         -200,
         230,
-        184.85
+        187.965
       ],
       "sizeMm": [
         227.1,
@@ -124,12 +126,12 @@
       "sourceKey": "roborio",
       "sourceUrl": "https://documents.andymark.com/6e19ed3e825c8c521f57ec510eda860556ac422f134dc584b8342ca4d94be791/am-3000a%20National%20Instruments%20roboRIO%202.STEP",
       "sourceSha256": "6e19ed3e825c8c521f57ec510eda860556ac422f134dc584b8342ca4d94be791",
-      "massKg": null,
-      "massBasis": "unknown; excluded from known-mass sum",
+      "massKg": 0.335,
+      "massBasis": "NI roboRIO2.0 specification335g; current manufacturer page",
       "centerMm": [
         -200,
         230,
-        295.35472162418966
+        298.4697216241897
       ],
       "sizeMm": [
         146.1518148290822,
@@ -138,7 +140,8 @@
       ],
       "role": "electrical",
       "geometryFidelity": "native-checked envelope",
-      "note": "Original bounding box only; supplier geometry remains private. Mounting interface unknown."
+      "note": "Original bounding box only; supplier geometry remains private. Mounting interface unknown.",
+      "massSourceUrl": "https://www.ni.com/docs/en-US/bundle/roborio-20-specs/page/specs.html"
     },
     {
       "id": "radio",
@@ -152,7 +155,7 @@
       "centerMm": [
         -200,
         230,
-        372.7
+        375.815
       ],
       "sizeMm": [
         95.25,
@@ -175,7 +178,7 @@
       "centerMm": [
         -30,
         230,
-        178.1125
+        179.2275
       ],
       "sizeMm": [
         85.725,
@@ -197,7 +200,7 @@
       "massBasis": "supplier published mass",
       "centerMm": [
         -280,
-        -100,
+        -175,
         230
       ],
       "sizeMm": [
@@ -221,7 +224,7 @@
       "centerMm": [
         -270,
         -105,
-        179.75
+        177.8649990772874
       ],
       "sizeMm": [
         70,
@@ -244,7 +247,7 @@
       "centerMm": [
         -270,
         -35,
-        179.75
+        177.8649990772874
       ],
       "sizeMm": [
         70,
@@ -267,7 +270,7 @@
       "centerMm": [
         -270,
         35,
-        179.75
+        177.8649990772874
       ],
       "sizeMm": [
         70,
@@ -290,7 +293,7 @@
       "centerMm": [
         -270,
         105,
-        179.75
+        177.8649990772874
       ],
       "sizeMm": [
         70,
@@ -313,7 +316,7 @@
       "centerMm": [
         -180,
         -105,
-        179.75
+        177.8649990772874
       ],
       "sizeMm": [
         70,
@@ -336,7 +339,7 @@
       "centerMm": [
         -180,
         -35,
-        179.75
+        177.8649990772874
       ],
       "sizeMm": [
         70,
@@ -359,7 +362,7 @@
       "centerMm": [
         -180,
         35,
-        179.75
+        177.8649990772874
       ],
       "sizeMm": [
         70,
@@ -382,7 +385,7 @@
       "centerMm": [
         -180,
         105,
-        179.75
+        177.8649990772874
       ],
       "sizeMm": [
         70,
@@ -405,7 +408,7 @@
       "centerMm": [
         -90,
         -105,
-        179.75
+        177.8649990772874
       ],
       "sizeMm": [
         70,
@@ -428,7 +431,7 @@
       "centerMm": [
         -90,
         -35,
-        179.75
+        177.8649990772874
       ],
       "sizeMm": [
         70,
@@ -451,7 +454,7 @@
       "centerMm": [
         -90,
         35,
-        179.75
+        177.8649990772874
       ],
       "sizeMm": [
         70,
@@ -474,7 +477,7 @@
       "centerMm": [
         -90,
         105,
-        179.75
+        177.8649990772874
       ],
       "sizeMm": [
         70,
@@ -495,13 +498,13 @@
       "massKg": null,
       "massBasis": "unknown; excluded from known-mass sum",
       "centerMm": [
-        -180,
+        -160,
         0,
-        165.5
+        163.6149990772874
       ],
       "sizeMm": [
-        280,
-        280,
+        320,
+        620,
         3
       ],
       "role": "mount",
@@ -520,11 +523,11 @@
       "centerMm": [
         -200,
         230,
-        163.5
+        166.615
       ],
       "sizeMm": [
         245,
-        140,
+        160,
         3
       ],
       "role": "mount",
@@ -543,7 +546,7 @@
       "centerMm": [
         -200,
         230,
-        276
+        279.115
       ],
       "sizeMm": [
         180,
@@ -566,11 +569,11 @@
       "centerMm": [
         -200,
         230,
-        358.5
+        361.615
       ],
       "sizeMm": [
-        110,
-        85,
+        180,
+        160,
         3
       ],
       "role": "mount",
@@ -589,7 +592,7 @@
       "centerMm": [
         -200,
         -240,
-        160.061
+        166.615
       ],
       "sizeMm": [
         201,
@@ -612,7 +615,7 @@
       "centerMm": [
         -298,
         -240,
-        179.061
+        185.615
       ],
       "sizeMm": [
         3,
@@ -635,7 +638,7 @@
       "centerMm": [
         -102,
         -240,
-        179.061
+        185.615
       ],
       "sizeMm": [
         3,
@@ -658,7 +661,7 @@
       "centerMm": [
         -200,
         -240,
-        445
+        451.554
       ],
       "sizeMm": [
         205,
@@ -681,7 +684,7 @@
       "centerMm": [
         -200,
         -240,
-        346
+        352.554
       ],
       "sizeMm": [
         190,
@@ -704,7 +707,7 @@
       "centerMm": [
         -200,
         230,
-        234.7
+        237.815
       ],
       "sizeMm": [
         240,
@@ -727,7 +730,7 @@
       "centerMm": [
         -200,
         230,
-        337.5
+        340.615
       ],
       "sizeMm": [
         180,
@@ -749,7 +752,7 @@
       "massBasis": "unknown; excluded from known-mass sum",
       "centerMm": [
         -280,
-        -100,
+        -175,
         279.05
       ],
       "sizeMm": [
@@ -773,7 +776,7 @@
       "centerMm": [
         -120,
         230,
-        375
+        378.115
       ],
       "sizeMm": [
         60,
@@ -861,12 +864,13 @@
     "electronicsReserve service lid"
   ],
   "unknowns": [
-    "roboRIO mass, mount pattern and connector-specific service clearance",
+    "roboRIO mount pattern and connector-specific service clearance",
     "Final auxiliary motor count and controller assignments; four CIM drive channels allocated",
     "Actualcableterminalorientation/bendradiuses/branchprotection",
     "Frameattachment/loadcapacity/batteryrestraint",
     "Cooling andserviceclearance withfullmechanisms",
-    "Completeelectricalmass includingRSL,breakers,cables,lugs,mounts"
+    "Completeelectricalmass includingRSL,breakers,cables,lugs,mounts",
+    "Generated support tubes, posts, bolt candidates and battery strap mass; exact fastener procurement and rail drilling qualification"
   ],
   "powerAllocation": {
     "pdhHighCurrentChannels": 20,
@@ -894,7 +898,45 @@
         "spark-4",
         "battery-tray"
       ],
-      "status": "requires whole-assembly redesign/check; affected list conservative"
+      "status": "retired interface: whole-assembly designer omits original-interface drivetrain bridges; regression separately verifies retained drivetrain"
     }
-  ]
+  ],
+  "mountingPlan": {
+    "schema": "electrical-mount-candidate/1",
+    "railTopMm": 132.7149990772874,
+    "fastener": "M5 proposed shaft and clearance envelopes. Native holes diameter5.334. Exact grade/head/nut/torque not selected.",
+    "holes": "5.5 mm proposed new clearance holes; NOT claims of existing AM14U4 hole alignment",
+    "railDrillingQualified": false,
+    "loadCapacityQualified": false,
+    "retention": "Battery end stops plus proposed removable top strap; terminal locations must be checked before strap adoption",
+    "supportStationsX": [
+      -266.7,
+      -139.7
+    ],
+    "supportRailY": [
+      -260.35,
+      260.35
+    ],
+    "postCentersXY": [
+      [
+        -280,
+        154
+      ],
+      [
+        -120,
+        154
+      ],
+      [
+        -280,
+        306
+      ],
+      [
+        -120,
+        306
+      ]
+    ],
+    "controllerSupport": "Two aft transverse 25.4 mm square tubes, source-flat T adapters, shared aft baseplate at Z162.115..165.115; native rail test required",
+    "railBottomMm": 129.5399988772874,
+    "nativeHoleAlignment": "Verified nominal source rail holes for original M5 shaft proxies; exact heads/nuts and preload remain unspecified"
+  }
 }

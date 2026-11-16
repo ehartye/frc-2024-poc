@@ -1,15 +1,14 @@
 {
   "schema": "electrical-package-check/1",
-  "manifestSha256": "478e5a3f6676030390c2edefc0993c4246d0ed45ea6c6d5f5a5c403da8a9cb87",
+  "manifestSha256": "2e7f38bc1e3b0b30df61fc2f3846eaf0103ffe6144199fdfbea80a967bf02fa6",
   "solidEnvelopeConflicts": [],
-  "knownComponentMassKg": 8.00526319777,
+  "knownComponentMassKg": 8.34026319777,
   "knownMassCenterMm": [
-    -196.8204635041743,
-    -156.82440469135585,
-    231.59245081685262
+    -196.9481746687796,
+    -142.26592973290738,
+    238.81384621780663
   ],
   "unknownMassIds": [
-    "roborio",
     "controller-deck",
     "pdh-deck",
     "rio-removable-deck",
@@ -25,7 +24,39 @@
     "Service volumes may overlap intentionally; no reach or thermal qualification",
     "No full chassis/moving mechanism collision screen"
   ],
-  "exportedRoots": 25,
-  "reopenedRoots": 25,
-  "stepSha256": "423e3ec03eb32522a9518f81c17b69be8859dfa57f922774143bb97f148af885"
+  "generatedUnknownMassIds": [
+    "aft-electrical-beam--266.7",
+    "aft-adapter--266.7--1",
+    "aft-crush-sleeve--266.7--1",
+    "aft-bolt-rail--266.7--1",
+    "aft-bolt-tube--266.7--1",
+    "aft-adapter--266.7-1",
+    "aft-crush-sleeve--266.7-1",
+    "aft-bolt-rail--266.7-1",
+    "aft-bolt-tube--266.7-1",
+    "aft-electrical-beam--139.7",
+    "aft-adapter--139.7--1",
+    "aft-crush-sleeve--139.7--1",
+    "aft-bolt-rail--139.7--1",
+    "aft-bolt-tube--139.7--1",
+    "aft-adapter--139.7-1",
+    "aft-crush-sleeve--139.7-1",
+    "aft-bolt-rail--139.7-1",
+    "aft-bolt-tube--139.7-1",
+    "stack-post-lower--280-154",
+    "stack-post-upper--280-154",
+    "stack-post-lower--120-154",
+    "stack-post-upper--120-154",
+    "stack-post-lower--280-306",
+    "stack-post-upper--280-306",
+    "stack-post-lower--120-306",
+    "stack-post-upper--120-306",
+    "battery-top-strap",
+    "battery-strap-leg--286.5",
+    "battery-strap-leg--193.5",
+    "radio-power-deck-tab"
+  ],
+  "exportedRoots": 55,
+  "reopenedRoots": 55,
+  "stepSha256": "026f827259dfdc1762831b2c4be65eb27f21939ae433999053127d2bd4849037"
 }

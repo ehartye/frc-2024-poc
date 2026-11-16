@@ -1,0 +1,34 @@
+{
+  "schema": "electrical-drivetrain-crosscheck/1",
+  "inputs": {
+    "candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+    "build_drivetrain.py": "4748e01902aac32ae8d996e1f7676caa7f794ac6a5971b661855c26487ad29a7",
+    "manifest.json": "2e7f38bc1e3b0b30df61fc2f3846eaf0103ffe6144199fdfbea80a967bf02fa6",
+    "mounts.py": "a21e030c5ee2450dfac2ca78c95d26d5711b6921210faa0e7143d0bc427b7530",
+    "build_electrical.py": "b3a382c8b5f42c5421b6e7e5c5b56634d84847caac8bc5ab2a2faa4a3c44bef3",
+    "check_drivetrain.py": "0258828ac8da65e40abdc92dab166cc235cb97cfa1a614fb32d067af8f12fd04",
+    "a2_primitives.py": "bef958c710da792f89def8606d7169a7c385fcff257826619a7b29fe0943952e"
+  },
+  "electricalSolids": 55,
+  "retainedDriveSolids": 84,
+  "omittedRole": "original-interface (retired bridge proposal)",
+  "crossOverlaps": [],
+  "internalOverlaps": [],
+  "shiftedOneMmBoltOverlap": [
+    {
+      "electrical": "shifted-bolt",
+      "other": "am-3922-1",
+      "role": "negative-control",
+      "otherRole": "frame-rail",
+      "volumeMm3": 12.232328300243498
+    }
+  ],
+  "nativeRailPins": {
+    "fastening.json": "6cb3d276cd5f59143ef9b52d2240095f02db9f92d6cfef5ae53b145a78862ac9",
+    "innerrail-1.brep": "53be94018e4fb23ee027a7878419dfbdcc122ed3f4bfefefebe4ca29ec839cc4",
+    "innerrail-2.brep": "daf5d428a1396f1db9d34aa3ca809589c23976a622e42c9eebfc29219f84555e"
+  },
+  "nativeRailReplacement": true,
+  "qualification": false,
+  "note": "Native rail replacement verifies nominal bolt clearance only; source native geometry remains private. No preload, tolerance, strength or complete robot qualification."
+}
