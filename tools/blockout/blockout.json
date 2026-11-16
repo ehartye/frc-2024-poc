@@ -1,0 +1,271 @@
+{
+  "schema": "frc-blockout/1",
+  "season": 2024,
+  "units": "mm",
+  "status": "strategy exploration, not chosen architecture",
+  "frame": {
+    "origin": "Speaker local low-edge vertical projection; assembly-bottom assumed at floor for preview only",
+    "axes": {
+      "x": "downfield from blue wall",
+      "y": "across field, positive left when looking downfield",
+      "z": "up"
+    },
+    "installedFieldRegistration": false,
+    "speakerAssemblyBaseZ": 0,
+    "speakerLocalToWorld": {
+      "rotationZDegrees": 180,
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "robotLocalAxes": "x forward, y left, z up; apply heading about world Z"
+  },
+  "field": {
+    "length": 16541.75,
+    "width": 8210.55,
+    "basis": "manual nominal field dimensions; visual context only",
+    "showPatch": {
+      "xMin": -6000,
+      "xMax": 1000,
+      "yMin": -3000,
+      "yMax": 3000
+    },
+    "unmodeled": [
+      "STAGE",
+      "SOURCE",
+      "AMP",
+      "complete Speaker roof and walls",
+      "guardrails",
+      "other robots"
+    ],
+    "source": "https://firstfrc.blob.core.windows.net/frc2024/Manual/2024GameManual.pdf",
+    "nominalDimensionText": "54 ft 3.25 in long by 26 ft 11.25 in wide; nominal field context, not surveyed dimensions"
+  },
+  "speaker": {
+    "width": 1051.052,
+    "lowEdge": [
+      0,
+      0,
+      1984.5019999999997
+    ],
+    "highEdge": [
+      -459.99399999999997,
+      0,
+      2105.66
+    ],
+    "manualAngleDegrees": 14,
+    "derivedAngleDegrees": 14.756020471652636,
+    "dimensionTolerance": 12.7,
+    "source": "https://firstfrc.blob.core.windows.net/frc2024/FieldAssets/2024FieldDrawings.pdf",
+    "sourceSha256": "6bbe47cbbe95001984b18b67e674b639f59c06ff9324e6bfece1980e018aec03",
+    "locator": "PDF p120 GE-24300 RevA sheet2of6, drawn12/19/2023; RevA2/21/2024",
+    "scope": "local rectangular aperture from side-profile dimensions; no complete roof/wall or scoring sensor",
+    "planeConvention": "lowEdge and highEdge are world coordinates; aperture runs toward negative X as Z increases"
+  },
+  "piece": {
+    "type": "NOTE",
+    "outerDiameter": 355.6,
+    "thickness": 50.8,
+    "majorRadius": 152.4,
+    "minorRadius": 25.4,
+    "nominalMassKg": 0.235,
+    "orientationDegrees": 0
+  },
+  "robot": {
+    "position": [
+      2200,
+      0,
+      0
+    ],
+    "headingDegrees": 180,
+    "frameLength": 710,
+    "frameWidth": 710,
+    "track": 600,
+    "bumperBottom": 40,
+    "bumperHeight": 150,
+    "bumperDepth": 75,
+    "maxHeight": 1219.2,
+    "boxVolumes": [
+      {
+        "id": "chassis",
+        "center": [
+          0,
+          0,
+          115
+        ],
+        "size": [
+          710,
+          710,
+          120
+        ],
+        "color": "#738b9b"
+      },
+      {
+        "id": "battery",
+        "center": [
+          190,
+          0,
+          270
+        ],
+        "size": [
+          170,
+          190,
+          210
+        ],
+        "color": "#353d47"
+      },
+      {
+        "id": "indexer",
+        "center": [
+          -60,
+          0,
+          330
+        ],
+        "size": [
+          440,
+          410,
+          180
+        ],
+        "color": "#dcad54"
+      },
+      {
+        "id": "shooter",
+        "center": [
+          155,
+          0,
+          560
+        ],
+        "size": [
+          360,
+          430,
+          280
+        ],
+        "color": "#e58938"
+      },
+      {
+        "id": "intake-stowed",
+        "center": [
+          -210,
+          0,
+          420
+        ],
+        "size": [
+          260,
+          500,
+          100
+        ],
+        "color": "#58a998"
+      },
+      {
+        "id": "intake-deployed",
+        "center": [
+          -470,
+          0,
+          95
+        ],
+        "size": [
+          220,
+          500,
+          130
+        ],
+        "color": "#58a998"
+      }
+    ],
+    "mount": {
+      "exit": [
+        250,
+        0,
+        700
+      ],
+      "velocityAngleDegrees": 50,
+      "noteAttitudeDegrees": 14.756,
+      "status": "independent exploration controls; no mechanism has yet demonstrated this combination"
+    },
+    "intake": {
+      "pivot": [
+        -290,
+        0,
+        300
+      ],
+      "stowed": true,
+      "maxExtension": 304.8,
+      "status": "envelope pair only; transition path/linkage not designed"
+    }
+  },
+  "controls": {
+    "robotX": [
+      500,
+      5000
+    ],
+    "robotY": [
+      -2000,
+      2000
+    ],
+    "headingDegrees": [
+      -180,
+      180
+    ],
+    "exitHeight": [
+      150,
+      1200
+    ],
+    "exitX": [
+      -350,
+      350
+    ],
+    "launchAngleDegrees": [
+      0,
+      80
+    ],
+    "noteAttitudeDegrees": [
+      -90,
+      90
+    ],
+    "intakeReach": [
+      0,
+      304.8
+    ],
+    "speakerAssemblyBaseZ": [
+      -200,
+      200
+    ]
+  },
+  "checks": [
+    {
+      "id": "bumper-zone",
+      "logic": "bumperBottom >= 0 and bumperBottom + bumperHeight <= 190.5",
+      "meaning": "dimension screen only; no compliance approval"
+    },
+    {
+      "id": "frame-perimeter",
+      "logic": "2*(frameLength+frameWidth) <= 3048",
+      "meaning": "frame size only; fixed perimeter and starting overhang must also be checked"
+    },
+    {
+      "id": "stowed-envelope",
+      "logic": "every non-bumper stowed box fits within frame XY and height1219.2",
+      "meaning": "blocks may overlap intentionally; does not validate mechanisms"
+    },
+    {
+      "id": "extension",
+      "logic": "deployed extremity <=304.8 beyond frame edge",
+      "meaning": "does not certify collision freedom"
+    },
+    {
+      "id": "reach",
+      "logic": "draw line/curve to actual target volume, retaining piece extent",
+      "meaning": "a reach line or simple ballistic path is not capture or scoring"
+    }
+  ],
+  "warnings": [
+    "Block volumes may overlap; this is a spatial design tool, not assembled CAD",
+    "A0 detailed sketch was rejected; this scene corrects its bumper height but does not solve intake path",
+    "Ground pickup route must go over legal bumpers; deployed/stowed envelopes do not prove transition clearance",
+    "Do not hide NOTE body-attitude versus velocity mismatch",
+    "Source assembly-to-floor transform is adjustable and unverified",
+    "No structural, actuator, collision, contact, aerodynamic, scoring or rulebook acceptance"
+  ],
+  "strategy": "Compare A Speaker cycle specialist, B Amp enabler, C feeder/defense before committing mechanism detail"
+}

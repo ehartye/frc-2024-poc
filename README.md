@@ -48,3 +48,7 @@ Only the documented run entry is supported by this minimal snapshot. Legacy task
 ## Public contribution checks
 
 Run `python -m unittest discover -s tests` and `python scripts/check_public_content.py` after committing changes. The guard checks committed bytes rather than machine-specific working files, rejects private paths/network addresses and unexplained machine aliases, and restricts binary additions to the reviewed Gradle wrapper. Reports identify file/category only, never the matching private value. Manually review images/CAD metadata and novel formats before publishing; pattern checks are not a complete privacy guarantee.
+
+## Interactive spatial exploration
+
+The [standalone blockout and rehearsal source](tools/blockout/README.md) is backed up here with its local 3D dependencies, source hashes and licenses. Serve it locally to explore candidate space and assumed route timing. This is strategy exploration, not an accepted robot architecture or a complete competition simulation.

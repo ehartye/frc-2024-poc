@@ -1,0 +1,15 @@
+{
+  "schema": "blockout-static-source/v1",
+  "sourceRevision": "7ff77438169098c33ed1d424215c49a8893f98e4",
+  "scope": "Static spatial exploration and assumed-kinematics rehearsal; not selected strategy or complete robot prototype",
+  "filesSha256": {
+    "app.js": "e9d1c5388c832aecf3a2be3ec1996eac292fba002119f3f51278c480fb5ade32",
+    "blockout.json": "78b5968ed90b113426a5be9956b6c23ea3dc2b771197d10f2e1b2171401280b8",
+    "index.html": "b252fb84001d716d2010b7c5cab935d6afaabe445b4049fb651128799adcd407",
+    "rehearsal.js": "53ca410745b5e6d84b96d2ce3dc5d5e352d516620a0381be6d196f442f7c222e",
+    "vendor/LICENSE.txt": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d",
+    "vendor/OrbitControls.js": "7aa4372a5ec60b49988edde81014c7361740a57962d032003ca33301c1f4edd5",
+    "vendor/three.module.js": "76dea8151bc9352aef3528b4262e249b2604f62543828328db978d060d61a495"
+  },
+  "excluded": "Deployment configuration, screenshots, generated outputs and environment-specific inspection scripts are not part of this source backup."
+}
