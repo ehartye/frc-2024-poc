@@ -1,6 +1,6 @@
 """Original A2 spatial CAD in mm. Mechanism envelopes, not fabrication drawings."""
 import json,math,pathlib,argparse
-import build_robot_layout as h
+import a2_primitives as h
 from OCP.BRepPrimAPI import BRepPrimAPI_MakeTorus
 from OCP.gp import gp_Ax2,gp_Pnt,gp_Dir
 ROOT=pathlib.Path(__file__).resolve().parent
