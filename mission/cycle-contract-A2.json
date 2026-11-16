@@ -1,0 +1,470 @@
+{
+  "schema": "frc-2024-cycle-contract/1",
+  "revision": "A2",
+  "status": "provisional original design for integration; not selected for fabrication",
+  "units": "m",
+  "narrative": "Speaker cycle specialist with stop-and-shoot fallback",
+  "frames": {
+    "robot": "origin ground at chassis center; +X forward, +Y left, +Z up",
+    "world": "use shared artifact world/target transforms; do not reset exit state"
+  },
+  "geometry": {
+    "frame": [
+      0.71,
+      0.71
+    ],
+    "track": 0.6,
+    "bumper": {
+      "bottom": 0.04,
+      "top": 0.19,
+      "depth": 0.075,
+      "continuous": true
+    },
+    "batteryReserve": {
+      "center": [
+        -0.2,
+        -0.245,
+        0.245
+      ],
+      "size": [
+        0.24,
+        0.16,
+        0.22
+      ]
+    },
+    "electronicsReserve": {
+      "center": [
+        -0.2,
+        0.245,
+        0.245
+      ],
+      "size": [
+        0.24,
+        0.16,
+        0.22
+      ]
+    },
+    "intake": {
+      "type": "original telescoping pivoting retained-piece cradle",
+      "pivot": [
+        0.1,
+        0,
+        0.48
+      ],
+      "armLength": 0.68,
+      "rollerRadius": 0.035,
+      "rollerWidth": 0.42,
+      "stowAngleDeg": 110,
+      "floorAngleDeg": -40,
+      "rotationAxis": [
+        0,
+        1,
+        0
+      ],
+      "centerFormula": "pivot + armLength*[cos(angle),0,sin(angle)]",
+      "status": "endpoint volumes only; swept mechanism and piece transition require CAD",
+      "armSection": [
+        0.02,
+        0.02
+      ],
+      "pieceAttitude": "level cradle by parallelogram hypothesis; linkage not yet dimensioned",
+      "lengthLaw": "minimum of nominal armLength, forward-center cap when cos>0, and height cap minus all moving-component top offsets when sin>0; see a2_kinematics.py",
+      "minimumLength": 0.52,
+      "rejectedFixedLengthReason": "intermediate angle0 extends roller to.815m, beyond.6598m envelope",
+      "actuation": "coordinated pitch plus telescope; additional actuator/control unmodeled",
+      "maximumHeight": 1.2192,
+      "designClearance": 0.005,
+      "maximumForwardCenter": 0.62,
+      "retentionRollerOffset": [
+        -0.07,
+        0,
+        0.045
+      ],
+      "retentionRollerRadius": 0.025,
+      "shaftRadius": 0.00635,
+      "shaftWidth": 0.56,
+      "armYOrigins": [
+        -0.27,
+        0.25
+      ],
+      "sleeveSection": [
+        0.026,
+        0.026
+      ],
+      "sleeveLength": 0.3,
+      "linkYOrigins": [
+        -0.285,
+        0.275
+      ],
+      "linkSection": [
+        0.01,
+        0.01
+      ],
+      "linkNormalOffset": 0.035
+    },
+    "indexerReserve": {
+      "center": [
+        -0.035,
+        0,
+        0.31
+      ],
+      "size": [
+        0.5,
+        0.42,
+        0.16
+      ]
+    },
+    "shooter": {
+      "pivot": [
+        0.13,
+        0,
+        0.4921539030917347
+      ],
+      "guideLength": 0.24,
+      "releasePitchDeg": 60,
+      "wheelRadius": 0.0508,
+      "rollerWidth": 0.38,
+      "nominalGap": 0.0468,
+      "adjustableGapDesignRange": [
+        0.04,
+        0.06
+      ],
+      "rangeBasis": "design travel proposal, NOT measured NOTE tolerance",
+      "exitFormula": "pivot + guideLength*[cos(releasePitch),0,sin(releasePitch)]",
+      "releaseRule": "NOTE body pitch and velocity elevation equal releasePitch at ideal guide departure; no separate favorable body-angle override",
+      "spinRadPerS": null,
+      "spinBasis": "must derive from contact/unequal wheel motion or measured release; not assumed stabilized",
+      "requiredExitSpeedMps": 7.5,
+      "requiredSpeedBasis": "geometric candidate only; motor/contact achievement unverified",
+      "shotPose": {
+        "targetLocalExit": [
+          -0.7334480659573899,
+          0,
+          0.7
+        ],
+        "worldRobotCenter": [
+          0.9834480659573899,
+          0,
+          0
+        ],
+        "worldHeadingDeg": 180
+      }
+    },
+    "extensionLimit": 0.3048
+  },
+  "states": [
+    {
+      "id": "idle",
+      "guard": "operator enabled and fresh sensors",
+      "action": "no feed; retain piece"
+    },
+    {
+      "id": "acquire",
+      "guard": "empty, permitted deployment, unobstructed approach",
+      "action": "deploy cassette; reverse-capable intake inward; monitor entry detection"
+    },
+    {
+      "id": "index",
+      "guard": "entry seen",
+      "action": "move piece to independent retained sensor; bounded timeout"
+    },
+    {
+      "id": "stow",
+      "guard": "piece retained",
+      "action": "stop capture and retract; confirm stow switch and position plausibility"
+    },
+    {
+      "id": "drive-align",
+      "guard": "stowed and retained",
+      "action": "drive to source-registered shot pose; shooter spinup may run concurrently within power budget"
+    },
+    {
+      "id": "release",
+      "guard": "fresh redundant pose/rpm evidence, retained piece, verified release envelope, no thermal/current/resource conflict",
+      "action": "feed once; confirm clear; inhibit if any guard lost"
+    },
+    {
+      "id": "recover",
+      "guard": "timeout or contradictory sensing",
+      "action": "stop feed; one bounded reverse attempt only if path clear; otherwise driver alert and abort"
+    }
+  ],
+  "concurrency": {
+    "allowedCandidate": [
+      "drive + shooter spinup",
+      "drive + aim when swept envelope clear"
+    ],
+    "notYetValidated": [
+      "moving shot",
+      "intake deployment during traffic interaction"
+    ],
+    "sharedResources": [
+      "battery/current budget",
+      "piece path",
+      "shooter feed"
+    ],
+    "fallback": "stop-and-shoot; no release when envelope unknown"
+  },
+  "alternatives": [
+    {
+      "id": "shared-reverse-intake-shooter",
+      "status": "retained alternative",
+      "tradeoff": "less hardware, common failure point; capture/release operating points and reorientation need proof"
+    },
+    {
+      "id": "dual-acquisition",
+      "status": "deferred",
+      "tradeoff": "recovery redundancy costs mass/space; add only after failure evidence"
+    },
+    {
+      "id": "amp",
+      "status": "alternative",
+      "tradeoff": "placement/lift requires verified Amp geometry; do not repurpose Speaker evidence"
+    }
+  ],
+  "reliability": {
+    "inspectionComponents": [
+      "intake pivot/bearings",
+      "bumper-to-frame brackets",
+      "shooter sideplates/shaft supports",
+      "battery retention",
+      "wire strain relief"
+    ],
+    "triggers": [
+      "unusual impact",
+      "changed commanded-vs-measured speed",
+      "jam recurrence",
+      "looseness or visible damage",
+      "repeatable vibration-baseline change"
+    ],
+    "response": "inhibit affected function; inspect with energy isolated; record component revision, symptom, action and retest",
+    "limits": "no inferred impact capacity, fatigue life or vibration diagnosis; no blanket per-match threadlocker"
+  },
+  "releaseAcceptance": "unresolved: whole-piece sweep, physically derived release/spin, complete target registration and roof/wall checks",
+  "pieceVariation": "measure actual new/worn pieces before tolerance or contact robustness claims",
+  "transport": {
+    "status": "staged kinematic centerline hypothesis; not demonstrated capture/contact",
+    "floorPieceCenter": [
+      0.64,
+      0,
+      0.0254
+    ],
+    "liftArc": [
+      [
+        0.62,
+        0,
+        0.04366819178781439
+      ],
+      [
+        0.62,
+        0,
+        0.11589208013095093
+      ],
+      [
+        0.62,
+        0,
+        0.17977786002139468
+      ],
+      [
+        0.62,
+        0,
+        0.23752001775940068
+      ],
+      [
+        0.62,
+        0,
+        0.29073547818157475
+      ],
+      [
+        0.62,
+        0,
+        0.3406664199358162
+      ],
+      [
+        0.62,
+        0,
+        0.3883099700315982
+      ],
+      [
+        0.62,
+        0,
+        0.4345058949665195
+      ],
+      [
+        0.62,
+        0,
+        0.48
+      ],
+      [
+        0.62,
+        0,
+        0.5254941050334805
+      ],
+      [
+        0.62,
+        0,
+        0.5716900299684018
+      ],
+      [
+        0.62,
+        0,
+        0.6193335800641837
+      ],
+      [
+        0.62,
+        0,
+        0.6692645218184252
+      ],
+      [
+        0.62,
+        0,
+        0.7224799822405993
+      ],
+      [
+        0.62,
+        0,
+        0.7802221399786053
+      ],
+      [
+        0.62,
+        0,
+        0.8441079198690491
+      ],
+      [
+        0.62,
+        0,
+        0.9163318082121856
+      ],
+      [
+        0.5808326112068524,
+        0,
+        0.9608326112068524
+      ],
+      [
+        0.5370955745868468,
+        0,
+        1.000910221320905
+      ],
+      [
+        0.49003197671871135,
+        0,
+        1.0370233901165145
+      ],
+      [
+        0.44000000000000006,
+        0,
+        1.0688972745734184
+      ],
+      [
+        0.3873804179836756,
+        0,
+        1.096289295184922
+      ],
+      [
+        0.3325736974614548,
+        0,
+        1.1189909821344177
+      ],
+      [
+        0.2759969506697141,
+        0,
+        1.1368295618765665
+      ],
+      [
+        0.21711638058656252,
+        0,
+        1.1442
+      ],
+      [
+        0.1581099703139187,
+        0,
+        1.1442
+      ],
+      [
+        0.10000000000000005,
+        0,
+        1.1442
+      ],
+      [
+        0.04189002968608123,
+        0,
+        1.1442
+      ],
+      [
+        -0.017116380586562424,
+        0,
+        1.1442
+      ],
+      [
+        -0.07599695066971418,
+        0,
+        1.1368295618765665
+      ],
+      [
+        -0.13257369746145473,
+        0,
+        1.1189909821344177
+      ]
+    ],
+    "transferAndFeed": [
+      [
+        -0.13257369746145473,
+        0,
+        1.1189909821344177
+      ],
+      [
+        -0.18,
+        0,
+        0.9
+      ],
+      [
+        -0.18,
+        0,
+        0.6
+      ],
+      [
+        -0.16,
+        0,
+        0.4
+      ],
+      [
+        0.0,
+        0,
+        0.43
+      ],
+      [
+        0.13,
+        0,
+        0.4921539030917347
+      ]
+    ],
+    "phaseGuards": [
+      "capture and retain before lift",
+      "lift through clear arc before transfer",
+      "transfer detection before retract",
+      "index retention before drive/release"
+    ],
+    "lengthsM": {
+      "liftArc": 1.7001155260363285,
+      "transferAndFeed": 1.0319474450981112,
+      "liftArcBasis": "5degree polyline from shared height/extension bounded a2_kinematics.py"
+    },
+    "unresolved": [
+      "cradle roller contact",
+      "four-bar packaging",
+      "piece orientation through transfer",
+      "drop prevention",
+      "sensor locations",
+      "belt/guide support",
+      "loaded lift torque and time",
+      "telescoping actuator/power and retained-piece swept-volume validation"
+    ],
+    "integrationMode": "prescribed coordinated pitch/telescope with ideal retained NOTE for first complete-cycle rehearsal; actuator dynamics, retention and loads not modeled",
+    "payloadEnvelope": {
+      "outerDiameter": 0.3556,
+      "thickness": 0.0508,
+      "orientation": "horizontal ideal retained cradle",
+      "extentPolicy": "report separately from robot components; no implicit rule approval"
+    }
+  }
+}

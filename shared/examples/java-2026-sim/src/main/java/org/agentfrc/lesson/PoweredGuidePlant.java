@@ -8,18 +8,29 @@ public final class PoweredGuidePlant {
  }
  public record Sample(double time,double x,double speed,double omega,double motorWork,double frictionLoss,double feedEnergy,double energyResidual,boolean exited){}
  private static final DCMotor MOTOR=DCMotor.getNEO(1);
+ public record Ledger(int departedBodies,double outgoingBodyEnergy,double cumulativeFeedEnergy){}
+ private final boolean reusable;private boolean motorEnabled=true;private int departures;private double outgoingBodyEnergy;
  private final Config c;private double[] q=new double[5];private double time,feedEnergy;private boolean feeding,exited;
- public PoweredGuidePlant(Config c){this.c=java.util.Objects.requireNonNull(c);}
+ public PoweredGuidePlant(Config c){this(c,false);}
+ public PoweredGuidePlant(Config c,boolean reusable){this.c=java.util.Objects.requireNonNull(c);this.reusable=reusable;}
+ public void setMotorEnabled(boolean enabled){if(!reusable)throw new IllegalStateException("Reusable motor API requires opt-in");motorEnabled=enabled;}
+ public Ledger ledger(){return new Ledger(departures,outgoingBodyEnergy,feedEnergy);}
+ /** Account for the departing body's kinetic and guide potential energy; retain rotor and clock. */
+ public Ledger departBody(){
+  if(!reusable||!feeding||!exited)throw new IllegalStateException("Only an exited body may depart in reusable mode");
+  outgoingBodyEnergy+=.5*c.mass*q[1]*q[1]+c.mass*9.80665*q[0]*Math.sin(c.angle);departures++;
+  q[0]=0;q[1]=0;feeding=false;exited=false;return ledger();
+ }
  static boolean valid(double x,double lo,double hi){return Double.isFinite(x)&&x>=lo&&x<=hi;}
- public void feed(double speed){if(feeding||exited||!valid(speed,0,.4))throw new IllegalArgumentException("Single bounded feed");feeding=true;q[1]=speed;feedEnergy=.5*c.mass*speed*speed;}
+ public void feed(double speed){if(feeding||exited||!valid(speed,0,.4))throw new IllegalArgumentException("Single bounded feed");feeding=true;q[1]=speed;feedEnergy+=.5*c.mass*speed*speed;}
  /** Separate transfer API. Preserves wheel state and the already-running clock.
   * Only horizontal guides and matching body mass are supported; no implicit velocity turn. */
  public void acceptHorizontalHandoff(double mass,double speed,double inheritedTime){
   if(feeding||exited||!valid(speed,0,.5)||!valid(inheritedTime,0,10)||Math.abs(time-inheritedTime)>1e-8||!Double.isFinite(mass)||mass!=c.mass||c.angle!=0)throw new IllegalArgumentException("Incompatible continuous handoff");
-  feeding=true;q[1]=speed;feedEnergy=.5*mass*speed*speed;
+  feeding=true;q[1]=speed;feedEnergy+=.5*mass*speed*speed;
  }
  private double[] derivative(double[] a){
-  var s=SharedSupply.solve(c.supplyVolts,.02,new double[]{c.duty,c.duty},new double[]{a[2]/MOTOR.KvRadPerSecPerVolt,a[2]/MOTOR.KvRadPerSecPerVolt},new double[]{MOTOR.rOhms,MOTOR.rOhms});
+  var s=SharedSupply.solve(c.supplyVolts,.02,new double[]{motorEnabled?c.duty:0,motorEnabled?c.duty:0},new double[]{a[2]/MOTOR.KvRadPerSecPerVolt,a[2]/MOTOR.KvRadPerSecPerVolt},new double[]{MOTOR.rOhms,MOTOR.rOhms},new boolean[]{motorEnabled,motorEnabled});
   double torque=2*MOTOR.KtNMPerAmp*s.armatureAmps()[0],slip=c.radius*a[2]-a[1];
   double force=feeding?2*c.mu*c.normalEach*Math.tanh(slip/.05):0;
   return new double[]{feeding?a[1]:0,feeding?force/c.mass-9.80665*Math.sin(c.angle):0,(torque-force*c.radius)/(2*c.inertiaEach),torque*a[2],force*slip};
@@ -34,5 +45,5 @@ public final class PoweredGuidePlant {
   if(Math.abs(next[1])>30||Math.abs(next[2])>1000||next[0]<-.2)throw new IllegalStateException("Fixture state outside bounded domain");
   q=next;time+=h;return sample();
  }
- public Sample sample(){double energy=.5*c.mass*q[1]*q[1]+c.inertiaEach*q[2]*q[2]+c.mass*9.80665*q[0]*Math.sin(c.angle);return new Sample(time,q[0],q[1],q[2],q[3],q[4],feedEnergy,energy+q[4]-q[3]-feedEnergy,exited);}
+ public Sample sample(){double energy=.5*c.mass*q[1]*q[1]+c.inertiaEach*q[2]*q[2]+c.mass*9.80665*q[0]*Math.sin(c.angle);return new Sample(time,q[0],q[1],q[2],q[3],q[4],feedEnergy,energy+q[4]+outgoingBodyEnergy-q[3]-feedEnergy,exited);}
 }

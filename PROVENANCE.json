@@ -65,7 +65,7 @@
     "shared/examples/java-2026-sim/licenses/WPILib-template-BSD.txt": "fb89d94504564dc7c78694c5f4291e23cda05ecfe45a003ca4911d493009115d",
     "shared/examples/java-2026-sim/settings.gradle": "93dc2ef5eb59f63062000624ba6e686c9346c53b752cc4c6dae836ae93402c7e",
     "shared/examples/java-2026-sim/src/main/java/org/agentfrc/lesson/IntegratedPregripPrototype.java": "ddf59535e4991ba7e7ad3699ff22705dd039bb0c7495d9ca6dd4f91338cee2c6",
-    "shared/examples/java-2026-sim/src/main/java/org/agentfrc/lesson/PoweredGuidePlant.java": "e975380a4da17783f9cbb30947dbbda8a21bf907d014c67011abf176e90393e3",
+    "shared/examples/java-2026-sim/src/main/java/org/agentfrc/lesson/PoweredGuidePlant.java": "4cb4392dcfc2a52cabab63ad041b240211b493497552bf315dfa7a0f26076b21",
     "shared/examples/java-2026-sim/src/main/java/org/agentfrc/lesson/PregripSupervisor.java": "026dffdc091b452292eda55b26b2c58d2db1eecef82926abe39fa5e362fa1a9a",
     "shared/examples/java-2026-sim/src/main/java/org/agentfrc/lesson/SeasonRobotPrototype.java": "cf7e61090ec37fe6ae53be2660d39e1b009477828037ebf36fd791704990eeae",
     "shared/examples/java-2026-sim/src/main/java/org/agentfrc/lesson/SharedSupply.java": "b9f3abb46a04d26a630c721266649eef79ee152ded5bec49c5c0c83595055857",
@@ -90,7 +90,8 @@
     "config.json": "c5e0f8d8252be7237169b3386a93bab475e821aa54bcfe3502c691e18f2b59dd"
   },
   "adaptations": {
-    "shared/scripts/powered-target-link.py": "Removed unused legacy receipt from PINS; fresh season execution receipt remains mandatory."
+    "shared/scripts/powered-target-link.py": "Removed unused legacy receipt from PINS; fresh season execution receipt remains mandatory.",
+    "shared/examples/java-2026-sim/src/main/java/org/agentfrc/lesson/PoweredGuidePlant.java": "Added opt-in reusable body departure-energy ledger and open-circuit motor coasting; original default single-shot behavior remains covered by regression tests."
   },
   "newOriginalCad": "Original nominal fixture and overview authored for these POCs; derived parameters from sourceCommit; not vendor CAD or full robot."
 }

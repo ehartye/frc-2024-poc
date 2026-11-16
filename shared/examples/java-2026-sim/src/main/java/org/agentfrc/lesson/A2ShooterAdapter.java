@@ -12,21 +12,37 @@ public final class A2ShooterAdapter {
  }
  public record Result(State state,Fault fault,PoweredGuidePlant.Sample sample,double actualRpm,boolean physicsSuspended,
    PoweredGuidePlant.Sample releaseBoundaryBefore,PoweredGuidePlant.Sample releaseBoundaryAfter){}
- private final Config c;private final PoweredGuidePlant plant;private State state=State.OFF;private Fault fault=Fault.NONE;
- private double readySince=-1,feedTime=-1;private PoweredGuidePlant.Sample before,after;
- public A2ShooterAdapter(Config config){c=java.util.Objects.requireNonNull(config);plant=new PoweredGuidePlant(c.plant());}
+ private final Config c;private final PoweredGuidePlant plant;private final boolean reusable;private State state=State.OFF;private Fault fault=Fault.NONE;
+ private double readySince=-1,feedTime=-1,spinStart;private PoweredGuidePlant.Sample before,after;
+ public A2ShooterAdapter(Config config){this(config,false);}
+ public A2ShooterAdapter(Config config,boolean reusable){c=java.util.Objects.requireNonNull(config);this.reusable=reusable;plant=new PoweredGuidePlant(c.plant(),reusable);}
+ public PoweredGuidePlant.Ledger ledger(){return plant.ledger();}
+ public PoweredGuidePlant.Ledger departBody(){
+  if(!reusable||state!=State.EXITED)throw new IllegalStateException("Exited reusable episode required");
+  var ledger=plant.departBody();state=State.OFF;readySince=-1;feedTime=-1;before=null;after=null;return ledger;
+ }
  private static double rpm(PoweredGuidePlant.Sample s){return s.omega()*60/(2*Math.PI);}
- public Result sample(){var s=plant.sample();return new Result(state,fault,s,rpm(s),state==State.FAULT||state==State.EXITED,before,after);}
+ public Result sample(){var s=plant.sample();return new Result(state,fault,s,rpm(s),(!reusable&&state==State.FAULT)||s.exited(),before,after);}
  private Result fail(Fault f){fault=f;state=State.FAULT;return sample();}
  /** Duty must equal configured plant duty while enabled. Disabling a spinning plant is unsupported,
   * suspends this model and latches FAULT; it does not set RPM to zero or simulate braking/coasting. */
  public Result update(double dt,boolean enabled,double requestedDuty,boolean requestRelease){
   if(!Double.isFinite(dt)||dt<.00001||dt>.0002)throw new IllegalArgumentException("integration timestep");
-  if(state==State.FAULT||state==State.EXITED)return sample();
+  if(state==State.EXITED)return sample();
+  if(state==State.FAULT){if(reusable&&!plant.sample().exited()){plant.setMotorEnabled(false);plant.step(dt);}return sample();}
+  if(reusable&&!enabled){
+   if(requestedDuty!=0||requestRelease)return fail(Fault.COMMAND_UNSUPPORTED);
+   plant.setMotorEnabled(false);
+   var coast=plant.step(dt);
+   if(state==State.FEEDING){if(coast.exited())state=State.EXITED;else if(rpm(coast)<c.releaseFloorRpm())return fail(Fault.LOW_RELEASE_RPM);}
+   else {state=State.OFF;readySince=-1;}
+   return sample();
+  }
   if(!Double.isFinite(requestedDuty)||requestedDuty<0||requestedDuty>.8)return fail(Fault.COMMAND_UNSUPPORTED);
   if(state==State.OFF&&!enabled&&!requestRelease&&requestedDuty==0)return sample();
   if(!enabled||Double.compare(requestedDuty,c.plant().duty())!=0)return fail(Fault.COMMAND_UNSUPPORTED);
-  if(state==State.OFF)state=State.SPINUP;
+  if(reusable)plant.setMotorEnabled(true);
+  if(state==State.OFF){state=State.SPINUP;spinStart=plant.sample().time();}
   if(requestRelease){
    if(state==State.READY){before=plant.sample();plant.feed(0);after=plant.sample();feedTime=after.time();state=State.FEEDING;}
    else if(state!=State.FEEDING)return fail(Fault.PREMATURE_RELEASE);
@@ -37,7 +53,7 @@ public final class A2ShooterAdapter {
     if(readySince<0)readySince=s.time();
     if(s.time()-readySince+1e-12>=c.readyDwell())state=State.READY;
    }else{readySince=-1;state=State.SPINUP;}
-   if(state==State.SPINUP&&s.time()>=c.startupTimeout())return fail(Fault.STARTUP_TIMEOUT);
+   if(state==State.SPINUP&&s.time()-spinStart>=c.startupTimeout())return fail(Fault.STARTUP_TIMEOUT);
   }else{
    if(actual<c.releaseFloorRpm())return fail(Fault.LOW_RELEASE_RPM);
    if(s.exited())state=State.EXITED;

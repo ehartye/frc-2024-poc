@@ -30,3 +30,7 @@ The unchanged from-rest control reproduces 7.257734 m/s and 1371.063 RPM. A stri
 At 10 ms mission updates and 50 microsecond plant steps, the first observed release completes at global test times 0.20 s (9 V) and 0.18 s (12 V). Actual exit speeds are 8.810537791 and 8.810537998 m/s; loaded RPMs 1713.136 and 2560.327. The test injects drive/alignment/possession facts before release; it is not a physical drive or acquisition loop. Plant time begins at motor enable; the global mission clock includes the preceding disabled interval. The single-piece test stops after the first actual exit and does not reset the rotor to fake a second cycle.
 
 New speeds require fresh target/pose analysis. Earlier from-rest launch margins and scoring assessments do not carry over. No official score, physical safety or full robot acceptance is claimed.
+
+## Explicit reusable opt-in
+
+A later additive mode, constructed with reusable=true, supports accounted body departure and open-circuit coasting across shots. The default single-use behavior described above is retained. See A2-MISSION-SIMULATION.md for the reusable energy ledger, power-off persistence controls and full-cycle scope. No physical brake or automatic zero-speed assumption is added.
