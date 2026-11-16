@@ -17,6 +17,11 @@ def build(state):
   result.append((n,s,k))
  return result+intake_components.build(state)
 
+def input_pins():
+ pins=robot.input_pins()
+ for name in ['cad/assembly/intake_components.py','cad/assembly/intake_components.json','cad/assembly/build_intake_candidate.py']:pins[name]=hashlib.sha256((ROOT/name).read_bytes()).hexdigest()
+ return pins
+
 def run():
  root=ROOT/'artifacts/intake-component-candidate';root.mkdir(exist_ok=True);reports=[]
  for state in ['floor','rotated','handoff']:
@@ -28,8 +33,7 @@ def run():
   robot.render(parts,out,'rotating cradle / chain lift candidate: '+state)
   below=[{'part':n,'minZ':robot.bounds(s)[2]} for n,s,k in parts if robot.bounds(s)[2]<-0.01]
   reports.append({'state':state,'parts':len(parts),'reopenedRoots':rd.NbRootsForTransfer(),'belowGround':below,'stepSha256':hashlib.sha256(dest.read_bytes()).hexdigest()})
- pins=robot.input_pins()
- for name in ['cad/assembly/intake_components.py','cad/assembly/intake_components.json','cad/assembly/build_intake_candidate.py']:pins[name]=hashlib.sha256((ROOT/name).read_bytes()).hexdigest()
+ pins=input_pins()
  q={'schema':'2024-intake-component-candidate/1','inputs':pins,'states':reports,'acceptance':False,'limits':['Original source-sized representations, not supplier native geometry','Complete mechanism fasteners/couplings/chainlinks/guarding and brakes unresolved','Whole moving NOTE/component interference not yet screened; no fit acceptance','Modified central chassis removes transverse load paths; outboard-stub structural design unqualified','No capture/retention/friction or power-off holding model','Source-known mass ledger not yet extended to this candidate']}
  (root/'report.json').write_text(json.dumps(q,indent=2)+'\n',encoding='utf-8');print(json.dumps(reports))
 if __name__=='__main__':run()

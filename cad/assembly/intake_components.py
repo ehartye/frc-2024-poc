@@ -11,9 +11,10 @@ def belt_x(cx,cy,z,center,r,width):
  inner=BRepAlgoAPI_Fuse(h.cyl((cx-center/2,cy,z-1),(0,0,1),r-1,width+2),h.cyl((cx+center/2,cy,z-1),(0,0,1),r-1,width+2)).Shape();inner=BRepAlgoAPI_Fuse(inner,h.box(cx-center/2,cy-r+1,z-1,center,2*r-2,width+2)).Shape()
  return cut(out,inner)
 
-def build(state='floor',c=None):
+def build(state='floor',c=None,pose=None):
  c=c or json.loads((HERE/'intake_components.json').read_text());p=c['pinch'];g=c['guide'];lift=c['lift'];r=p['teeth']*p['pitch']/(2*math.pi);center=(p['beltTeethHypothesis']-p['teeth'])*p['pitch']/2;track=p['innerFaceYAbs']+r+1
  deg=0 if state=='floor' else c['pitchDeg'];a=math.radians(deg);zc=c['floorCenterZ'] if state=='floor' else c['handoffCenterZ'] if state=='handoff' else c['note']['tubeRadius']+c['note']['majorRadius']*math.sin(a)
+ if pose is not None:deg,zc=pose;a=math.radians(deg)
  pivot=[c['stageCenterX'],0,zc];parts=[]
  def add(n,s,k='mechanism',moving=True):parts.append(('intake candidate '+n,h.pitch(s,a,pivot) if moving else s,k))
  for side in [-1,1]:
@@ -40,25 +41,32 @@ def build(state='floor',c=None):
     b=h.BRepBuilderAPI_Transform(b,tr,True).Shape();add('pinch transfer belt '+str(side),h.move(b,x,(y+my)/2,0),'drive')
   add('cradle side stock '+str(side),h.tube(-center/2-20,side*220-12.7,-12.7,center+40,25.4,25.4,3.175,'x'),'support')
   # Short side pivot, never a solid shaft through NOTE.
-  add('cradle side pivot '+str(side),h.cyl((0,side*220-15,0),(0,1,0),6.35,30),'support')
+  add('cradle side pivot '+str(side),h.cyl((0,-270 if side<0 else 220,0),(0,1,0),6.875,50),'support')
   gx=g['x'];gy=side*g['yAbs'];sq=g['square'];wall=g['wall']
   outer=h.box(gx-sq/2,gy-sq/2,g['bottom'],sq,sq,g['height']);inner=h.box(gx-sq/2+wall,gy-sq/2+wall,g['bottom']-1,sq-2*wall,sq-2*wall,g['height']+2)
   add('stationary aluminum guide '+str(side),cut(outer,inner),'support',False)
   # Original carriage plate + four sliding pad envelopes; bearing/slide loading not qualified.
-  add('lift carriage plate '+str(side),h.box(gx-30,gy-3.175,zc+45,110,6.35,90),'support',False)
+  plateY=gy+20 if side>0 else gy-26.35
+  plate=h.box(gx-30,plateY,zc+45,150,6.35,90)
+  if side<0:plate=cut(plate,h.cyl((c['stageCenterX'],plateY-1,zc+88.9),(0,1,0),10,8.35))
+  add('lift carriage plate '+str(side),plate,'support',False)
   for zz in [zc+55,zc+115]:
    for xx in [-1,1]:add('UHMW slide pad '+str((side,zz,xx)),h.box(gx+xx*(sq/2+g['slideClearance']/2)-(6 if xx<0 else 0),gy-10,zz,6,20,20),'mechanism',False)
-  add('pivot drop bracket '+str(side),h.box(c['stageCenterX']-15,gy-3.175,zc-12.7,30,6.35,70),'support',False)
+  bracket=h.box(c['stageCenterX']-25,plateY,zc-20,50,6.35,90)
+  bracket=cut(bracket,h.cyl((c['stageCenterX'],plateY-1,zc),(0,1,0),14.3,8.35))
+  add('pivot drop bracket '+str(side),bracket,'support',False)
+  bearing=cut(h.cyl((c['stageCenterX'],plateY,zc),(0,1,0),14.2875,6.35),h.cyl((c['stageCenterX'],plateY-1,zc),(0,1,0),6.875,8.35))
+  add('pivot bearing representation '+str(side),bearing,'drive',False)
   for z in [lift['lowerPulleyZ'],lift['upperPulleyZ']]:add('lift16T sprocket envelope '+str((side,z)),h.cyl((lift['driveX'],gy-4.75,z),(0,1,0),lift['sprocketOuterRadius'],9.5),'drive',False)
   # Two thin straight runs plus end pulley envelopes distinguish belt from a solid vertical bar.
   for xx in [-lift['sprocketPitchRadius'],lift['sprocketPitchRadius']]:add('lift chain straight-run envelope '+str((side,xx)),h.box(lift['driveX']+xx-1,gy-6.35,lift['lowerPulleyZ'],2,12.7,lift['upperPulleyZ']-lift['lowerPulleyZ']),'drive',False)
-  add('chain carriage anchor '+str(side),h.box(lift['driveX']-3,gy-10,zc+lift['carriageAnchorAboveNote'],g['x']-lift['driveX']+3,20,6.35),'support',False)
+  add('chain carriage anchor '+str(side),h.box(lift['driveX']-3,plateY,zc+lift['carriageAnchorAboveNote'],g['x']-lift['driveX']+3,6.35,6.35),'support',False)
  # Separate12:1 rotary cradle drive rides on carriage;40T equal12T belt gives88.9mm centers.
  ry=-235;rx=c['stageCenterX'];rz=zc+88.9
  for zz in [zc,rz]:add('rotation12T pulley '+str(zz),h.cyl((rx,ry-9.3472,zz),(0,1,0),13.144,18.6944),'drive',False)
  for xx in [-r,r]:add('rotation belt run '+str(xx),h.box(rx+xx-1,ry-6.35,zc,2,12.7,88.9),'drive',False)
- add('rotation MAXPlanetary12to1 envelope',h.box(rx-25.4,-313.5,rz-30.95,50.8,63.5,61.9),'frame',False)
- add('rotation NEO envelope',h.cyl((rx,-371.85,rz),(0,1,0),30,58.35),'frame',False)
+ add('rotation MAXPlanetary12to1 envelope',h.box(rx-25.4,-318.45,rz-30.95,50.8,63.5,61.9),'frame',False)
+ add('rotation NEO envelope',h.cyl((rx,-376.8,rz),(0,1,0),30,58.35),'frame',False)
  # Source-sized two-stage geared NEO reservation at top; output retention still incomplete.
  add('lift top shaft',h.cyl((lift['driveX'],-270,lift['upperPulleyZ']),(0,1,0),6.875,540),'support',False)
  add('lift MAXPlanetary12to1 envelope',h.box(lift['driveX']-25.4,-333.5,lift['upperPulleyZ']-30.95,50.8,63.5,61.9),'frame',False)
