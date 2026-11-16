@@ -12,7 +12,7 @@
 - 12 V gives about 17.5 mm whole-torus thin-plane margin; 9 V fails.
 - **No official scoring or hardware safety acceptance is claimed.**
 
-## Run on OG
+## Run on Windows
 
 Requires existing Python 3, PowerShell, Git, JDK 17 and populated Gradle/WPILib cache. No installation or robot deployment is performed.
 
@@ -44,3 +44,7 @@ python cad/build_original_fixture.py --season 2024 --output artifacts/cad
 The top view is illustrative and omits guide-slot detail; STEP is the geometric artifact. CAD is not yet coupled automatically to the plant.
 
 Only the documented run entry is supported by this minimal snapshot. Legacy tasks named in the retained upstream build file may have intentionally omitted sources. The configuration is a pinned description: edits are rejected, not silently treated as plant tuning. Shared source and CAD bytes are preserved by .gitattributes; other text uses LF.
+
+## Public contribution checks
+
+Run `python -m unittest discover -s tests` and `python scripts/check_public_content.py` after committing changes. The guard checks committed bytes rather than machine-specific working files, rejects private paths/network addresses and unexplained machine aliases, and restricts binary additions to the reviewed Gradle wrapper. Reports identify file/category only, never the matching private value. Manually review images/CAD metadata and novel formats before publishing; pattern checks are not a complete privacy guarantee.
