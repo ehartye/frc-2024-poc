@@ -26,3 +26,13 @@ The opened central throat cuts four named front rail/crossplate/bridge shapes. F
 All supplier representations, incomplete interfaces and missing masses are explicit. No old two-motor/240mm launch or competition qualification transfers to this candidate.
 
 Power-off motion and retention behavior, including any brake, are unmodeled. Retention requirements depend on the mission; coasting alone is not treated as a safety defect.
+
+## Revised suspended corridor (supersedes the first layout above)
+
+The first complete mechanism failed all15 sampled moving-vs-fixed poses despite a clean NOTE-only screen. That failed audit is retained in `evidence/rejected-mechanism-motion.json`. The revision suspends the narrow cradle below a carriage200mm above the NOTE, uses shortened rear stub shafts, and places pinch motors high and inboard. A48T equal12T transfer loop drives each remote pinch shaft; exact shaft coupling/support is not complete. A96link16T#25 chain proposal drives cradle rotation from a high inboard gearbox. Side-pinch104T loop remains to preserve acquisition/feed reach.
+
+The whole shooter, including carriers and support members, moves58mm forward to pivotX188mm. Cradle handoff is guidecoordinate−20mm atworldrobotX178,Z474.833mm, avoiding a cradle/shooter carrier overlap. Total vertical travel is449.433mm including rotation rise. No earlier launch/target result transfers: release registration and chassis docking must be recomputed after the design stabilizes.
+
+Fixed shooter side rails move toY±285mm; original transverse tubes extend toY±298 while retaining measured rail bolt positions. The central throat is430mm wide. Attachment holes remain atY±228.6 and rail mount rows±260.35, but longer outboard cantilevers and removed transverse central members require structural design/load checks. The fixed front rigid backing-support plate remains present. The carriage/guide and crank shafts still need completed fasteners, keyed hubs and retention; drawn adjacency is not torque transfer acceptance.
+
+Current finite mechanism audit has explicit stable motion IDs/roles, configured pitch sampling and per-pose whole-robot bounds. It excludes moving-vs-moving interference and is not a continuous sweep. A source/STEP-consistency verifier requires all three exact pose files and actual SHA256 matches, rejects stale/missing/forged artifacts, and guards source changes during export/audit. `verification-bundle.json` hashes the separate build and contact receipts without a circular hash dependency.

@@ -8,12 +8,12 @@
   },
   "stageCenterX": 178,
   "floorCenterZ": 25.4,
-  "handoffCenterZ": 575.2923417633061,
+  "handoffCenterZ": 474.8333949243112,
   "pitchDeg": 60,
   "guide": {
     "x": 101.6,
     "yAbs": 228.6,
-    "bottom": 35,
+    "bottom": 187.515,
     "height": 730,
     "square": 25.4,
     "wall": 3.175,
@@ -25,28 +25,31 @@
     "beltTeethHypothesis": 104,
     "beltWidth": 12.7,
     "beltRadialThicknessHypothesis": 2,
-    "innerFaceYAbs": 175.8,
+    "innerFaceYAbs": 175.1723933363976,
     "shaftLower": -20,
-    "shaftLength": 120,
+    "shaftLength": 80,
     "lowerBearingZ": -16,
-    "upperBearingZ": 48,
-    "drivePulleyZ": 70,
-    "motorOffsetY": 88.9,
-    "motorFaceZ": 55,
-    "beltPartCurrent": "REV-21-4104"
+    "upperBearingZ": 16,
+    "drivePulleyZ": 40,
+    "motorOffsetY": 114.3,
+    "motorFaceZ": 150,
+    "beltPartCurrent": "REV-21-4104",
+    "motorSideYAbs": 160,
+    "transferBeltTeeth": 48
   },
   "lift": {
     "driveX": 60,
-    "lowerPulleyZ": 51.5,
-    "upperPulleyZ": 750,
-    "carriageAnchorAboveNote": 75,
+    "lowerPulleyZ": 200,
+    "upperPulleyZ": 898.5,
+    "carriageAnchorAboveNote": 225,
     "gearRatioHypothesis": 12,
     "chain": "REV-41-1365",
     "sprocket": "REV-21-2016",
     "sprocketTeeth": 16,
     "chainLinksHypothesis": 236,
     "sprocketPitchRadius": 16.4,
-    "sprocketOuterRadius": 17.95
+    "sprocketOuterRadius": 17.95,
+    "chainYAbs": 270
   },
   "sources": {
     "motor": "https://www.revrobotics.com/rev-21-1650/",
@@ -62,6 +65,23 @@
     "NEO/MAXPlanetary dimension-only representations; exact couplers/mount/retention unresolved",
     "Power-off motion/retention behavior and any brake are unmodeled; retention is mission-dependent",
     "Full cradle pulley/bearing/shaft interference and NOTE swept contact still must be checked",
-    "Original aluminum guide and UHMW slide-pad materials assumed, not fabrication specifications"
-  ]
+    "Original aluminum guide and UHMW slide-pad materials assumed, not fabrication specifications",
+    "Shooter moved58mm forward and handoff shifted toguide\u221220; prior target/launch registration must be recomputed"
+  ],
+  "shooterPivotXmm": 188,
+  "handoffGuideCoordinateMm": -20,
+  "throatHalfWidthMm": 215,
+  "carriageOffsetMm": 200,
+  "cradleSideYAbs": 199,
+  "pivotBracketYAbs": 208,
+  "rotation": {
+    "chainLinks": 96,
+    "sprocketTeeth": 16,
+    "pitch": 6.35,
+    "centerDistance": 254,
+    "chainPlaneY": -186,
+    "upperX": 100,
+    "upperZOffset": 241.72711887581005
+  },
+  "shooterSupportYAbs": 285
 }

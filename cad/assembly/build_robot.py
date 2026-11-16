@@ -73,8 +73,9 @@ def shooter(c,tx):
    add('motor withdrawal reserve',h.box(mx-35,y+80,z-35,70,80,70),'service')
  return parts
 
-def build():
+def build(shooter_pivot_x_mm=None,shooter_support_y_mm=228.6):
  c=json.loads((ROOT/'cad/cycle-contract-A2.json').read_text());tx=json.loads((ROOT/'cad/components/a2-transmission.json').read_text());dc=json.loads((ROOT/'cad/drivetrain/candidate.json').read_text())
+ if shooter_pivot_x_mm is not None:c['geometry']['shooter']['pivot'][0]=shooter_pivot_x_mm/1000
  parts=[(n,s,'drive' if k in ['wheel','motor','belt','gearbox','shaft','hub','bearing'] else 'frame') for n,s,k in drivetrain_build(dc) if k!='original-interface']
  # Keep only provisional intake/transfer from A2. Do not present these as completed component mechanisms.
  for n,s,k in legacy_build(c,'stowed'):
@@ -89,7 +90,7 @@ def build():
  sh=c['geometry']['shooter'];ang=math.radians(sh['releasePitchDeg']);pivot=[v*1000 for v in sh['pivot']]
  # Original welded side trusses remain outside the nominal NOTE width; joint/load design unresolved.
  for side in [-1,1]:
-  y=side*228.6
+  y=side*shooter_support_y_mm
   parts.append((f'original shooter side rail {side}',h.pitch(h.tube(-70,y-12.7,-12.7,400,25.4,25.4,3.175,'x'),ang,pivot),'support'))
   for x in fc['bridgeCentersXmm']:
    top=pivot[2]+(x-pivot[0])*math.tan(ang);bottom=fc['railTopZmm']+4+50.8
@@ -127,7 +128,7 @@ def mass_ledger(parts,dc):
   return {'subtotalKg':total,'partialCentroidMm':[sum(x['massKg']*x['centerMm'][i] for x in rows)/total for i in range(3)],'items':rows}
  return {'sourceKnown':summary(known),'estimatedOriginalHardware':summary(estimates),'wholeRobotCoG':None,'omissions':['drivetrain frame,wheels,gearboxes,belts,shafts and fasteners','shooter COTS,shafts,tread and mounting hardware not yet consolidated','intake,indexer,bumpers,wiring and restraint'],'warning':'Partial centroid is not whole-robot CoG; never density-fill supplier envelope boxes'}
 
-DEPENDENCIES=['cad/assembly/build_robot.py','cad/assembly/bumper_candidate.py','cad/a2_primitives.py','cad/a2_kinematics.py','cad/build_a2_layout.py','cad/cycle-contract-A2.json','cad/components/a2-transmission.json','cad/drivetrain/candidate.json','cad/drivetrain/build_fastening.py','cad/drivetrain/fastening.json','cad/drivetrain/build_drivetrain.py','cad/electrical/manifest.json','cad/electrical/build_electrical.py','cad/electrical/mounts.py']
+DEPENDENCIES=['cad/assembly/build_robot.py','cad/assembly/bumper_candidate.py','cad/a2_primitives.py','cad/a2_kinematics.py','cad/build_a2_layout.py','cad/cycle-contract-A2.json','cad/components/a2-transmission.json','cad/drivetrain/candidate.json','cad/drivetrain/build_fastening.py','cad/drivetrain/fastening.json','cad/drivetrain/build_drivetrain.py','cad/electrical/manifest.json','cad/electrical/build_electrical.py','cad/electrical/mounts.py','cad/electrical/breaker_mount.py','cad/electrical/breaker-mount-evidence.json','cad/electrical/fasteners.py']
 def input_pins(root=ROOT):return {name:hashlib.sha256((root/name).read_bytes()).hexdigest() for name in DEPENDENCIES}
 def receipt_matches(report,root=ROOT):return report.get('inputs')==input_pins(root)
 
