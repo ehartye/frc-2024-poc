@@ -3,13 +3,17 @@
   "inputs": {
     "candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
     "build_drivetrain.py": "4748e01902aac32ae8d996e1f7676caa7f794ac6a5971b661855c26487ad29a7",
-    "manifest.json": "2e7f38bc1e3b0b30df61fc2f3846eaf0103ffe6144199fdfbea80a967bf02fa6",
-    "mounts.py": "a21e030c5ee2450dfac2ca78c95d26d5711b6921210faa0e7143d0bc427b7530",
-    "build_electrical.py": "b3a382c8b5f42c5421b6e7e5c5b56634d84847caac8bc5ab2a2faa4a3c44bef3",
-    "check_drivetrain.py": "0258828ac8da65e40abdc92dab166cc235cb97cfa1a614fb32d067af8f12fd04",
+    "manifest.json": "9db917a55b0884db9841f52da3b5cccf8ad684c652e4dde3e01b1efe75e891a3",
+    "mounts.py": "90254dbc5116a9af72df0ba6442ed94ef8c94e8247326f9b7c6cfd0c0749c7e8",
+    "fasteners.py": "788a1cb9bf71a780aed9cbeb5bf48d06532e914fed431edcc0e72a4bd273b799",
+    "fastening-spec.json": "bc5e227c43b8691efdd92ff6af6b0449e3429c04105428b4015d74de00055b25",
+    "breaker_mount.py": "1e27087fa191e8043c6ed8b3c48bca4db50cde379efa171cc49508a1a1c75060",
+    "breaker-mount-evidence.json": "9e0bb64f30ab3ee58de577fe694ee578135cdf4d74ddf8e0b3065b741266b07d",
+    "build_electrical.py": "d2fbd40d0b26c8887679b6ed3b49c655b10a27a0cd175e812b35d9fccd6f6317",
+    "check_drivetrain.py": "fea754b5bb60e4ebd264da3bd0578df910cb60b382dc021e2704b760b7dff8e8",
     "a2_primitives.py": "bef958c710da792f89def8606d7169a7c385fcff257826619a7b29fe0943952e"
   },
-  "electricalSolids": 55,
+  "electricalSolids": 143,
   "retainedDriveSolids": 84,
   "omittedRole": "original-interface (retired bridge proposal)",
   "crossOverlaps": [],
@@ -29,6 +33,7 @@
     "innerrail-2.brep": "daf5d428a1396f1db9d34aa3ca809589c23976a622e42c9eebfc29219f84555e"
   },
   "nativeRailReplacement": true,
+  "commonVolumeReportingThresholdMm3": 0.0001,
   "qualification": false,
   "note": "Native rail replacement verifies nominal bolt clearance only; source native geometry remains private. No preload, tolerance, strength or complete robot qualification."
 }

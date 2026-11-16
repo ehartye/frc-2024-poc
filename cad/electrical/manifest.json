@@ -32,9 +32,10 @@
       "checkedDate": "2026-11-16"
     },
     "breaker": {
-      "url": "https://andymark.com/products/surface-mount-120-amp-breaker-by-eaton-bussmann",
-      "facts": "CB285-120/am-0282a:2.9x1.9x1.5in;0.24lb;M6studs;do not substitute1/4-28am-0282 drawing",
-      "sha256": null,
+      "url": "https://andymark.com/products/120-amp-breaker",
+      "nativeUrl": "https://documents.andymark.com/04a04028b1caeee883fe617c27f6e6646067fbb889c7d48ce72324a0f53653a7/am-0282%20120a%20Circuit%20Breaker.STEP",
+      "sha256": "04a04028b1caeee883fe617c27f6e6646067fbb889c7d48ce72324a0f53653a7",
+      "facts": "CB185-120/am0282;1/4-28studs;.24lb;native bounds and mounting details pinned separately",
       "checkedDate": "2026-11-16"
     },
     "rpm": {
@@ -192,10 +193,10 @@
     {
       "id": "main-breaker",
       "quantity": 1,
-      "partNumber": "Eaton Bussmann CB285-120 / am-0282a",
+      "partNumber": "CB185-120 / am-0282",
       "sourceKey": "breaker",
-      "sourceUrl": "https://andymark.com/products/surface-mount-120-amp-breaker-by-eaton-bussmann",
-      "sourceSha256": null,
+      "sourceUrl": "https://andymark.com/products/120-amp-breaker",
+      "sourceSha256": "04a04028b1caeee883fe617c27f6e6646067fbb889c7d48ce72324a0f53653a7",
       "massKg": 0.1088621688,
       "massBasis": "supplier published mass",
       "centerMm": [
@@ -204,13 +205,13 @@
         230
       ],
       "sizeMm": [
-        73.66,
-        48.26,
-        38.1
+        73.70281161999335,
+        48.26000020000118,
+        42.14903193016646
       ],
       "role": "electrical",
-      "geometryFidelity": "sourced envelope",
-      "note": "M6studversion;buttonaccess reserved upward;visible label needed"
+      "geometryFidelity": "native-checked original envelope with measured bore/seat clearances",
+      "note": "Deliberately selected historical2024 CB185-120;1/4-28 electrical studs. Supplier discontinued. No CB285 equivalence."
     },
     {
       "id": "spark-1",
@@ -904,8 +905,8 @@
   "mountingPlan": {
     "schema": "electrical-mount-candidate/1",
     "railTopMm": 132.7149990772874,
-    "fastener": "M5 proposed shaft and clearance envelopes. Native holes diameter5.334. Exact grade/head/nut/torque not selected.",
-    "holes": "5.5 mm proposed new clearance holes; NOT claims of existing AM14U4 hole alignment",
+    "fastener": "Selected #10-32 socket/button heads and am-1042 nylon locknuts; exact nominal lengths in fastening-spec.json and generators. Torque/preload not qualified.",
+    "holes": "5.5 mm original adapter clearances aligned with source-native 5.334 mm rail holes; new device patterns pinned separately.",
     "railDrillingQualified": false,
     "loadCapacityQualified": false,
     "retention": "Battery end stops plus proposed removable top strap; terminal locations must be checked before strap adoption",
@@ -937,6 +938,6 @@
     ],
     "controllerSupport": "Two aft transverse 25.4 mm square tubes, source-flat T adapters, shared aft baseplate at Z162.115..165.115; native rail test required",
     "railBottomMm": 129.5399988772874,
-    "nativeHoleAlignment": "Verified nominal source rail holes for original M5 shaft proxies; exact heads/nuts and preload remain unspecified"
+    "nativeHoleAlignment": "Verified nominal source rail holes with selected #10-32 shaft/head/nut stack geometry. No tolerance/preload or strength acceptance."
   }
 }

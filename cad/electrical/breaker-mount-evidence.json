@@ -1,0 +1,38 @@
+{
+  "schema": "breaker-native-mount/1",
+  "selectedPart": "am-0282 / CB185-120",
+  "productUrl": "https://andymark.com/products/120-amp-breaker",
+  "ruleUrl": "https://firstfrc.blob.core.windows.net/frc2024/Manual/HTML/2024GameManual.htm",
+  "rule": "R609 explicitly includes CB185-120",
+  "procurement": "Supplier retired/no longer sold; historical prototype choice only",
+  "supersedes": "am-0282a CB285-120; not equivalent mounting assertion",
+  "stepUrl": "https://documents.andymark.com/04a04028b1caeee883fe617c27f6e6646067fbb889c7d48ce72324a0f53653a7/am-0282%20120a%20Circuit%20Breaker.STEP",
+  "stepSha256": "04a04028b1caeee883fe617c27f6e6646067fbb889c7d48ce72324a0f53653a7",
+  "brepSha256": "755a554f40cc4c342ea7c4b3d66f710cf0df463bed2e76e601291aa9ea479ed0",
+  "nativeBoundsMm": [
+    -36.851405809996685,
+    -4.826000000000003,
+    -24.130000100000593,
+    36.85140580999668,
+    37.32303193016646,
+    24.130000100000586
+  ],
+  "zShiftMm": 213.75148403491676,
+  "transform": "X=nativeX-280,Y=-nativeZ-175,Z=nativeY+zShiftMm",
+  "worldHoleCentersXY": [
+    [
+      -308.575,
+      -188.97
+    ],
+    [
+      -251.425,
+      -161.03
+    ]
+  ],
+  "mountBoreDiameterMm": 6.858,
+  "baseZ": 208.92548403491676,
+  "earSeatZ": 218.83148403491677,
+  "electricalStudThread": "1/4-28; not M6",
+  "sourceDifferences": "Native diagonal hole pattern57.15x27.94 differs older general185drawing reference spacing56.64; native supplier revision used explicitly.",
+  "fasteningLimit": "Direct #10 socket head on 6.858 mm bore, nominal head diameter 7.9248 mm: only 0.5334 mm radial bearing overlap. Bearing strength/preload unverified. am-1026 washer rejected: 0.0572857 mm3 native interference; not installed."
+}

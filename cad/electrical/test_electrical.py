@@ -15,7 +15,7 @@ class ElectricalPackageTests(unittest.TestCase):
   d=m.load();c=next(c for c in d['components'] if c['id']=='roborio');self.assertEqual(c['sourceSha256'],'6e19ed3e825c8c521f57ec510eda860556ac422f134dc584b8342ca4d94be791');self.assertAlmostEqual(c['sizeMm'][0],146.1518148290822)
   self.assertEqual(d['powerAllocation']['driveAllocation'],4);self.assertFalse(d['powerAllocation']['simultaneousCurrentBudgetEstablished'])
  def test_native_validity(self):
-  p=m.build();self.assertEqual(len(p),55)
+  p=m.build();self.assertEqual(len(p),143)
   for _,shape,_ in p:self.assertTrue(m.BRepCheck_Analyzer(shape).IsValid())
  def test_native_crosspackage_record(self):
   import hashlib

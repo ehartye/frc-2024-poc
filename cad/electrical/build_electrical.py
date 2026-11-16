@@ -7,14 +7,33 @@ from a2_primitives import box,STEPControl_Writer,STEPControl_Reader,STEPControl_
 def load():return json.loads((HERE/'manifest.json').read_text())
 def build(manifest=None,include_service=False):
  d=manifest or load()
- from mounts import build as mounts,drill,holes_for
+ from mounts import build as mounts,drill,holes_for,pdh_holes
+ from breaker_mount import build as breaker_mount,evidence as breaker_evidence,base_holes
+ from OCP.BRepAlgoAPI import BRepAlgoAPI_Cut
+ from a2_primitives import cyl
  parts=[]
  for c in d['components']:
   if not include_service and c['role']=='service':continue
   shape=box(*[x-s/2 for x,s in zip(c['centerMm'],c['sizeMm'])],*c['sizeMm'])
   shape=drill(shape,holes_for(c,d),c['centerMm'][2]-c['sizeMm'][2]/2,c['sizeMm'][2])
+  if c['id']=='controller-deck':
+   shape=drill(shape,base_holes(),161,5)
+   for x in d['mountingPlan']['supportStationsX']:
+    for y in [-228.6,228.6]:shape=BRepAlgoAPI_Cut(shape,cyl((x,y,161),(0,0,1),4.75,6)).Shape()
+  if c['id']=='battery-tray':
+   for lo in [-308,-195]:shape=BRepAlgoAPI_Cut(shape,box(-215,lo,164,30,23,5)).Shape()
+   for xx in [-320,-253]:shape=BRepAlgoAPI_Cut(shape,box(xx,-201,164,23,52,5)).Shape()
+  if c['id']=='pdh':
+   for x,y in pdh_holes():
+    shape=BRepAlgoAPI_Cut(shape,cyl((x,y,167),(0,0,1),2.5,45)).Shape()
+    shape=BRepAlgoAPI_Cut(shape,cyl((x,y,174.465),(0,0,1),4.1,40)).Shape()
+  if c['id']=='main-breaker':
+   ev=breaker_evidence()
+   for x,y in ev['worldHoleCentersXY']:
+    shape=BRepAlgoAPI_Cut(shape,cyl((x,y,ev['baseZ']-1),(0,0,1),3.429,50)).Shape()
+    shape=BRepAlgoAPI_Cut(shape,cyl((x,y,ev['earSeatZ']),(0,0,1),6.5,45)).Shape()
   parts.append((c['id'],shape,c['role']))
- return parts+mounts(d)
+ return parts+mounts(d)+breaker_mount()
 def overlap(a,b):
  return [min(x+s/2,y+t/2)-max(x-s/2,y-t/2) for x,s,y,t in zip(a['centerMm'],a['sizeMm'],b['centerMm'],b['sizeMm'])]
 def report(d):
