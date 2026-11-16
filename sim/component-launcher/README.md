@@ -12,7 +12,7 @@ A last-positive-contact sample from a reversing piece is not registered as a rel
 
 ## Reproduce
 
-Requires existing Python/OCP8. The four-drive surrogate and optional stateful power-policy files are unchanged from reviewed dd3aada; UPSTREAM.json pins exact bytes. Base-case9V+load does not apply brownout state logic and is not operability evidence.
+Requires existing Python/OCP8. The four-drive surrogate and optional stateful power-policy files preserve reviewed dd3aada logic with UTF-8/LF normalization; UPSTREAM.json pins source and local bytes. Base-case9V+load does not apply brownout state logic and is not operability evidence.
 
 ```text
 python sim/component-launcher/extract_geometry.py

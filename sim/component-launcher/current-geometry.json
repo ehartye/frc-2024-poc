@@ -24,7 +24,7 @@
     "cad/assembly/check_intake_contact.py": "95d20cfed12331c135b5534d4076f833ae6741b69806a61e677e88098a7301e3",
     "cad/assembly/verify_receipts.py": "213a00200bc7fc0b84bd4bb82e4a62aaee3c10432f35373fc3097b2141d4e81d",
     "cad/assembly/audit_intake_motion.py": "5b5754d4a3a744c1c3ddff2650bc99f841418ababbcecdaacaace155be88a192",
-    "sim/component-launcher/extract_geometry.py": "cd4d4f5ba6a915a79906c7d6cbc1d53e59a9388ecb09ecdce612cb2ced53b28f"
+    "sim/component-launcher/extract_geometry.py": "c5c07a86f1a2cf144fedef67ec621d6a25f6fa10bf2abf8c2b65cf49428ca238"
   },
   "wheelRadiusMm": 48.26,
   "contactSampling": {

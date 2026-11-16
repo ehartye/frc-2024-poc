@@ -5,5 +5,10 @@
     "power_state.py": "2ec586ee55f9475f139ec78a8fef58158b0345a085ae8860ea3706ba3618134e",
     "stateful_brownout.py": "997bea3a891d4015f0cadc8a8bb8c78a89b62c538d3f1455c9a7ebbcf17424a8"
   },
-  "scope": "Unmodified reviewed surrogate dynamics and stateful power policy; no old geometry/result transfer"
+  "scope": "Reviewed surrogate dynamics and stateful power policy copied with UTF-8/LF normalization only; no old geometry/result transfer",
+  "normalizedLocalFiles": {
+    "plant.py": "9d0c00b15df475ed43a7f6e5aa551b6b929ad18b1c8f43b5a1ee1dc4e90b55f0",
+    "power_state.py": "8248f96d46e30a8fcf8179433d3a808c799fcb736d096c529e0bfd4b73efae11",
+    "stateful_brownout.py": "997bea3a891d4015f0cadc8a8bb8c78a89b62c538d3f1455c9a7ebbcf17424a8"
+  }
 }
