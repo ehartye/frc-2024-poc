@@ -78,12 +78,12 @@
     },
     "shooter": {
       "pivot": [
-        -0.18,
+        0.13,
         0,
-        0.52
+        0.4921539030917347
       ],
       "guideLength": 0.24,
-      "releasePitchDeg": 50,
+      "releasePitchDeg": 60,
       "wheelRadius": 0.0508,
       "rollerWidth": 0.38,
       "nominalGap": 0.0468,
@@ -95,7 +95,22 @@
       "exitFormula": "pivot + guideLength*[cos(releasePitch),0,sin(releasePitch)]",
       "releaseRule": "NOTE body pitch and velocity elevation equal releasePitch at ideal guide departure; no separate favorable body-angle override",
       "spinRadPerS": null,
-      "spinBasis": "must derive from contact/unequal wheel motion or measured release; not assumed stabilized"
+      "spinBasis": "must derive from contact/unequal wheel motion or measured release; not assumed stabilized",
+      "requiredExitSpeedMps": 7.5,
+      "requiredSpeedBasis": "geometric candidate only; motor/contact achievement unverified",
+      "shotPose": {
+        "targetLocalExit": [
+          -0.7334480659573899,
+          0,
+          0.7
+        ],
+        "worldRobotCenter": [
+          0.9834480659573899,
+          0,
+          0
+        ],
+        "worldHeadingDeg": 180
+      }
     }
   },
   "states": [
