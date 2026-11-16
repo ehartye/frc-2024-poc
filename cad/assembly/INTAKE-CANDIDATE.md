@@ -24,3 +24,5 @@ The proposed guides are original25.4mm square aluminum stock with3.175mm walls a
 The opened central throat cuts four named front rail/crossplate/bridge shapes. Fixed front backing support remains included. Lost transverse load paths and the replacement support plate need actual connection, stiffness and impact assessment. The previous unchanged-chassis25-conflict control remains separate.
 
 All supplier representations, incomplete interfaces and missing masses are explicit. No old two-motor/240mm launch or competition qualification transfers to this candidate.
+
+Power-off motion and retention behavior, including any brake, are unmodeled. Retention requirements depend on the mission; coasting alone is not treated as a safety defect.

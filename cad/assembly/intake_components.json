@@ -60,7 +60,7 @@
     "Side-pinch104T RT25 belt is currently listed but pre2024availability unverified;236link chain layout needs real link/polygon/attachment/adjustment checks",
     "Side-belt backing traction/normal force and capture are unmeasured; no contact acceptance",
     "NEO/MAXPlanetary dimension-only representations; exact couplers/mount/retention unresolved",
-    "Rotation drive and elevator actively hold load; no power-off safety or mechanical brake modeled",
+    "Power-off motion/retention behavior and any brake are unmodeled; retention is mission-dependent",
     "Full cradle pulley/bearing/shaft interference and NOTE swept contact still must be checked",
     "Original aluminum guide and UHMW slide-pad materials assumed, not fabrication specifications"
   ]
