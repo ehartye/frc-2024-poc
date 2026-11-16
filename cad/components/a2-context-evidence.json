@@ -1,0 +1,418 @@
+{
+  "schema": "frc-a2-component-context/1",
+  "contractSha256": "0e08bf88e488539ca8966dcc3cc08727ef2faf98da3740787b308cd54c652f52",
+  "transmissionSha256": "194b12216792a2984807a803d1ef583efb1f169252053b0624d16d3a9819727c",
+  "wheelRadiusMm": 49.53,
+  "opposedCenterHalfSeparationMm": 72.93,
+  "laneCentersMm": [
+    -152.4,
+    152.4
+  ],
+  "contactSampling": {
+    "rejected central wheel": [
+      {
+        "noteCenterFromWheelStationMm": -200,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": -190,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": -180,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": -170,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": -160,
+        "summedNominalOverlapMm3": 390.7084897880757
+      },
+      {
+        "noteCenterFromWheelStationMm": -150,
+        "summedNominalOverlapMm3": 538.2525185419491
+      },
+      {
+        "noteCenterFromWheelStationMm": -140,
+        "summedNominalOverlapMm3": 191.03747450321734
+      },
+      {
+        "noteCenterFromWheelStationMm": -130,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": -120,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": -110,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": -100,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": -90,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": -80,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": -70,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": -60,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": -50,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": -40,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": -30,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": -20,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": -10,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": 0,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": 10,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": 20,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": 30,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": 40,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": 50,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": 60,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": 70,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": 80,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": 90,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": 100,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": 110,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": 120,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": 130,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": 140,
+        "summedNominalOverlapMm3": 191.03747470737846
+      },
+      {
+        "noteCenterFromWheelStationMm": 150,
+        "summedNominalOverlapMm3": 538.2525187292149
+      },
+      {
+        "noteCenterFromWheelStationMm": 160,
+        "summedNominalOverlapMm3": 390.7084891131291
+      },
+      {
+        "noteCenterFromWheelStationMm": 170,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": 180,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": 190,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": 200,
+        "summedNominalOverlapMm3": 0
+      }
+    ],
+    "two lane candidate": [
+      {
+        "noteCenterFromWheelStationMm": -200,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": -190,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": -180,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": -170,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": -160,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": -150,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": -140,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": -130,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": -120,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": -110,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": -100,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": -90,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": -80,
+        "summedNominalOverlapMm3": 34.87013454350681
+      },
+      {
+        "noteCenterFromWheelStationMm": -70,
+        "summedNominalOverlapMm3": 224.12060956628883
+      },
+      {
+        "noteCenterFromWheelStationMm": -60,
+        "summedNominalOverlapMm3": 492.97786873385337
+      },
+      {
+        "noteCenterFromWheelStationMm": -50,
+        "summedNominalOverlapMm3": 726.7254183602324
+      },
+      {
+        "noteCenterFromWheelStationMm": -40,
+        "summedNominalOverlapMm3": 860.1818281984033
+      },
+      {
+        "noteCenterFromWheelStationMm": -30,
+        "summedNominalOverlapMm3": 894.6046635199345
+      },
+      {
+        "noteCenterFromWheelStationMm": -20,
+        "summedNominalOverlapMm3": 886.665576024408
+      },
+      {
+        "noteCenterFromWheelStationMm": -10,
+        "summedNominalOverlapMm3": 880.6793378697101
+      },
+      {
+        "noteCenterFromWheelStationMm": 0,
+        "summedNominalOverlapMm3": 878.7540675898929
+      },
+      {
+        "noteCenterFromWheelStationMm": 10,
+        "summedNominalOverlapMm3": 880.7180916304244
+      },
+      {
+        "noteCenterFromWheelStationMm": 20,
+        "summedNominalOverlapMm3": 886.4763908886721
+      },
+      {
+        "noteCenterFromWheelStationMm": 30,
+        "summedNominalOverlapMm3": 894.5972932552472
+      },
+      {
+        "noteCenterFromWheelStationMm": 40,
+        "summedNominalOverlapMm3": 860.1805041665093
+      },
+      {
+        "noteCenterFromWheelStationMm": 50,
+        "summedNominalOverlapMm3": 726.71352837754
+      },
+      {
+        "noteCenterFromWheelStationMm": 60,
+        "summedNominalOverlapMm3": 492.9771174768638
+      },
+      {
+        "noteCenterFromWheelStationMm": 70,
+        "summedNominalOverlapMm3": 224.11988891783193
+      },
+      {
+        "noteCenterFromWheelStationMm": 80,
+        "summedNominalOverlapMm3": 34.87070709357032
+      },
+      {
+        "noteCenterFromWheelStationMm": 90,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": 100,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": 110,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": 120,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": 130,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": 140,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": 150,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": 160,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": 170,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": 180,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": 190,
+        "summedNominalOverlapMm3": 0
+      },
+      {
+        "noteCenterFromWheelStationMm": 200,
+        "summedNominalOverlapMm3": 0
+      }
+    ]
+  },
+  "bomPerCartridge": [
+    {
+      "id": "(-1, -152.4)",
+      "wheel": "am-3608",
+      "tread": "am-2611a cut section",
+      "motor": "REV-21-1650 V1.1",
+      "pulleys": [
+        "REV-21-2200",
+        "REV-21-2201"
+      ],
+      "belt": "REV-21-4040",
+      "shaftLengthMm": 160,
+      "bearings": 2,
+      "collars": 3,
+      "motorPushRings": 2
+    },
+    {
+      "id": "(-1, 152.4)",
+      "wheel": "am-3608",
+      "tread": "am-2611a cut section",
+      "motor": "REV-21-1650 V1.1",
+      "pulleys": [
+        "REV-21-2200",
+        "REV-21-2201"
+      ],
+      "belt": "REV-21-4040",
+      "shaftLengthMm": 160,
+      "bearings": 2,
+      "collars": 3,
+      "motorPushRings": 2
+    },
+    {
+      "id": "(1, -152.4)",
+      "wheel": "am-3608",
+      "tread": "am-2611a cut section",
+      "motor": "REV-21-1650 V1.1",
+      "pulleys": [
+        "REV-21-2200",
+        "REV-21-2201"
+      ],
+      "belt": "REV-21-4040",
+      "shaftLengthMm": 160,
+      "bearings": 2,
+      "collars": 3,
+      "motorPushRings": 2
+    },
+    {
+      "id": "(1, 152.4)",
+      "wheel": "am-3608",
+      "tread": "am-2611a cut section",
+      "motor": "REV-21-1650 V1.1",
+      "pulleys": [
+        "REV-21-2200",
+        "REV-21-2201"
+      ],
+      "belt": "REV-21-4040",
+      "shaftLengthMm": 160,
+      "bearings": 2,
+      "collars": 3,
+      "motorPushRings": 2
+    }
+  ],
+  "status": "unaccepted spatial/contact hypothesis; four independent cartridge drives",
+  "limits": [
+    "Native overlap measures prescribed undeformed compression geometry, not force/friction or spin",
+    "10mm sampling is not continuous contact proof",
+    "Original envelope rendering only; vendor geometry not exported",
+    "Existing sideplate/support and moving-intake clearance not yet screened",
+    "160mm local shafts do not directly attach to previous sideplates",
+    "Old 240mm powered-contact plant cannot be reused without measured contact interval",
+    "Motor/tension service reserves may conflict; no access acceptance",
+    "Mount bridges, tension adjustment and tread fasteners unfinished"
+  ]
+}
