@@ -154,5 +154,12 @@
       "expectedInterference": "press-on grip is intentional, not a collision-free fit",
       "pilotClearanceMm": 0.5528
     }
+  },
+  "drivenRetention": {
+    "shaftLengthMm": 160,
+    "outerCollarCenterMm": 73,
+    "collarPart": "REV-21-2900-PK4",
+    "status": "longer original shaft plus native outer clamp collar; nominal axial float and holding force unvalidated",
+    "reason": "140mm shaft leaves only0.653mm beyond pulley, insufficient for full collar engagement"
   }
 }

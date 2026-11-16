@@ -31,7 +31,7 @@ class TransmissionTests(unittest.TestCase):
  def test_recorded_native_evidence(self):
   e=json.loads((R/'cad/components/transmission-evidence.json').read_text())
   self.assertEqual(e['inputSha256'],hashlib.sha256(json.dumps(self.c,sort_keys=True,separators=(',',':')).encode()).hexdigest())
-  self.assertEqual(len(e['pairCommonVolumesMm3']),153)
+  self.assertEqual(len(e['pairCommonVolumesMm3']),171)
   self.assertLess(max(v for k,v in e['pairCommonVolumesMm3'].items() if k not in e['intentionalPressFitPairs']),1e-5)
   for k in e['intentionalPressFitPairs']:self.assertGreater(e['pairCommonVolumesMm3'][k],.8)
   self.assertGreater(e['wrongDrivenClock30OverlapMm3'],140)
