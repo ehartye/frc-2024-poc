@@ -11,14 +11,16 @@ from OCP.GProp import GProp_GProps
 def build(state):
  config=json.loads((ROOT/'cad/assembly/intake_components.json').read_text());parts,dc=robot.build(shooter_pivot_x_mm=config.get('shooterPivotXmm'),shooter_support_y_mm=config.get('shooterSupportYAbs',228.6));result=[]
  for n,s,k in parts:
+  if n in config.get('removedSourceMembers',[]):continue
   if n.startswith('UNRESOLVED') or n.startswith('original shooter upright') and '101.6' in n:continue
   if n in ['frame fastening bridge-0','frame fastening bridge-1']:
    fc=json.loads((ROOT/'cad/drivetrain/fastening.json').read_text());index=int(n[-1]);x=fc['bridgeCentersXmm'][index];bottom=fc['railTopZmm']+4
-   s=robot.h.tube(x-12.7,-298,bottom,25.4,596,50.8,3.175,'y')
+   s=robot.h.tube(x-12.7,-313,bottom,25.4,626,50.8,3.175,'y')
    for sy in [-228.6,228.6]:s=robot.cut(s,robot.h.cyl((x,sy,bottom-1),(0,0,1),2.667,52.8))
   if n in ['am-3920-2','am-2974-cut-2','frame fastening bridge-0','frame fastening bridge-1']:
    s=robot.cut(s,robot.h.box(50,-config['throatHalfWidthMm'],-10,400,2*config['throatHalfWidthMm'],410))
   result.append((n,s,k))
+ top=config['replacementPortalTopZ'];gx=config['guide']['x'];result.append(('original replacement upper transverse portal',robot.h.tube(gx-12.7,-313,top,25.4,626,50.8,3.175,'y'),'support'))
  return result+intake_components.build(state)
 
 def input_pins():

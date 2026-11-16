@@ -22,7 +22,7 @@ def build(state='floor',c=None,pose=None,metadata=False):
   records.append({'id':f'intake-{len(parts):03d}','name':'intake candidate '+n,'shape':shape,'role':k,'motion':motion})
   parts.append(('intake candidate '+n,shape,k))
  for side in [-1,1]:
-  y=side*track
+  y=side*track;weldment=[]
   add('side pinch belt '+str(side),belt_x(0,y,-p['beltWidth']/2,center,r,p['beltWidth']),'drive')
   for x in [-center/2,center/2]:
    ident=str((side,x))
@@ -31,9 +31,13 @@ def build(state='floor',c=None,pose=None,metadata=False):
    for zz in [p['lowerBearingZ'],p['upperBearingZ']]:
     add('bearing representation '+ident+str(zz),ring_z(x,y,zz-3.175,14.2875,6.875,6.35),'drive')
     # Small original annular bearing carrier; tie attaches on outboard side.
-    add('bearing carrier '+ident+str(zz),ring_z(x,y,zz-4.7625,17,14.3,3.175),'support')
-    lo=min(y,side*c['cradleSideYAbs']);span=abs(side*c['cradleSideYAbs']-y)
-    add('bearing carrier outboard tie '+ident+str(zz),h.box(x-10,lo,zz-4.7625,20,span,3.175),'support')
+    plate=ring_z(x,y,zz-4.7625,17,14.3,3.175)
+    if x<0:arm=h.box(x-10,min(side*185.3,side*205.3),zz-4.7625,-95-(x-10),20,3.175);webX=-95
+    else:arm=h.box(x-10,min(side*185.3,side*207),zz-4.7625,20,21.7,3.175);webX=x
+    plate=BRepAlgoAPI_Fuse(plate,arm).Shape();plate=cut(plate,h.cyl((x,y,zz-6),(0,0,1),14.3,7))
+    weldment.append(plate)
+    web=h.box(webX-10,side*c['cradleSideYAbs']-3.175,zz-4.7625,20,6.35,abs(zz-4.7625)+12.7 if zz<0 else 3.175)
+    weldment.append(web)
    if x>0:
     my=side*p['motorSideYAbs'];face=p['motorFaceZ'];mx=x-math.sqrt(p['motorOffsetY']**2-(my-y)**2)
     add('pinch NEO body '+str(side),h.cyl((mx,my,face),(0,0,1),30,58.35),'frame')
@@ -44,9 +48,12 @@ def build(state='floor',c=None,pose=None,metadata=False):
     b=belt_x(0,0,p['drivePulleyZ']-6.35,p['motorOffsetY'],r,12.7)
     tr=h.gp_Trsf();tr.SetRotation(h.gp_Ax1(h.gp_Pnt(0,0,0),h.gp_Dir(0,0,1)),math.atan2(my-y,mx-x))
     b=h.BRepBuilderAPI_Transform(b,tr,True).Shape();add('pinch transfer belt '+str(side),h.move(b,(x+mx)/2,(y+my)/2,0),'drive')
-  add('cradle side stock '+str(side),h.tube(-center/2-20,side*c['cradleSideYAbs']-6.35,-12.7,center+40,12.7,25.4,1.5875,'x'),'support')
-  # Short side pivot, never a solid shaft through NOTE.
-  add('cradle side pivot '+str(side),h.cyl((0,-228 if side<0 else 200,0),(0,1,0),6.875,47 if side<0 else 28),'support')
+  stock=h.box(-105,side*c['cradleSideYAbs']-3.175,-12.7,center/2+20+105,6.35,25.4)
+  for shape in weldment:stock=BRepAlgoAPI_Fuse(stock,shape).Shape()
+  stock=cut(stock,h.cyl((0,side*c['cradleSideYAbs']-10,0),(0,1,0),7.1,20))
+  add('original cradle side weldment '+str(side),stock,'support')
+  # Short side pivot starts outside the return-belt run, never through NOTE or belt.
+  add('cradle side pivot '+str(side),h.cyl((0,-228.5 if side<0 else 203,0),(0,1,0),6.875,25.5),'support')
   gx=g['x'];gy=side*g['yAbs'];cy=side*lift.get('chainYAbs',g['yAbs']);sq=g['square'];wall=g['wall']
   outer=h.box(gx-sq/2,gy-sq/2,g['bottom'],sq,sq,g['height']);inner=h.box(gx-sq/2+wall,gy-sq/2+wall,g['bottom']-1,sq-2*wall,sq-2*wall,g['height']+2)
   add('stationary aluminum guide '+str(side),cut(outer,inner),'support',False)
@@ -58,7 +65,7 @@ def build(state='floor',c=None,pose=None,metadata=False):
   for zz in [zc+c['carriageOffsetMm']+5,zc+c['carriageOffsetMm']+65]:
    for xx in [-1,1]:add('UHMW slide pad '+str((side,zz,xx)),h.box(gx+xx*(sq/2+g['slideClearance']/2)-(6 if xx<0 else 0),gy-10,zz,6,20,20),'mechanism',False)
   bracketY=side*c['pivotBracketYAbs'] if side>0 else side*c['pivotBracketYAbs']-6.35
-  bracket=h.box(c['stageCenterX']-25,bracketY,zc-20,50,6.35,c['carriageOffsetMm']+55)
+  bracket=h.box(c['stageCenterX']-17,bracketY,zc-20,34,6.35,c['carriageOffsetMm']+55)
   bracket=cut(bracket,h.cyl((c['stageCenterX'],bracketY-1,zc),(0,1,0),14.3,8.35))
   add('pivot drop bracket '+str(side),bracket,'support',False)
   bearing=cut(h.cyl((c['stageCenterX'],bracketY,zc),(0,1,0),14.2875,6.35),h.cyl((c['stageCenterX'],bracketY-1,zc),(0,1,0),6.875,8.35))
@@ -66,16 +73,16 @@ def build(state='floor',c=None,pose=None,metadata=False):
   for z in [lift['lowerPulleyZ'],lift['upperPulleyZ']]:add('lift16T sprocket envelope '+str((side,z)),h.cyl((lift['driveX'],cy-4.75,z),(0,1,0),lift['sprocketOuterRadius'],9.5),'drive',False)
   # Two thin straight runs plus end pulley envelopes distinguish belt from a solid vertical bar.
   for xx in [-lift['sprocketPitchRadius'],lift['sprocketPitchRadius']]:add('lift chain straight-run envelope '+str((side,xx)),h.box(lift['driveX']+xx-1,cy-6.35,lift['lowerPulleyZ'],2,12.7,lift['upperPulleyZ']-lift['lowerPulleyZ']),'drive',False)
-  add('chain carriage anchor '+str(side),h.box(lift['driveX']-3,plateY,zc+lift['carriageAnchorAboveNote'],g['x']-lift['driveX']+3,6.35,6.35),'support',False)
+  add('chain carriage anchor '+str(side),h.box(lift['driveX']-3,plateY,zc+lift['carriageAnchorAboveNote'],g['x']-30-(lift['driveX']-3),6.35,6.35),'support',False)
  # Separate12:1 rotary cradle drive rides on carriage;40T equal12T belt gives88.9mm centers.
  ry=c['rotation']['chainPlaneY'];rx=c['stageCenterX'];ux=c['rotation']['upperX'];rz=zc+c['rotation']['upperZOffset']
- for xx,zz in [(rx,zc),(ux,rz)]:add('rotation16T sprocket '+str(zz),h.cyl((xx,ry-4.75,zz),(0,1,0),17.95,9.5),'drive',False)
+ for xx,zz in [(rx,zc),(ux,rz)]:add('rotation16T sprocket '+str(zz),cut(h.cyl((xx,ry-4.75,zz),(0,1,0),17.95,9.5),h.cyl((xx,ry-5.75,zz),(0,1,0),6.875,11.5)),'drive',False)
  for off in [-16.4,16.4]:
   line=h.box(0,ry-4.75,off-1,c['rotation']['centerDistance'],9.5,2);line=h.pitch(line,math.atan2(rz-zc,ux-rx),[rx,0,zc]);add('rotation chain run '+str(off),line,'drive',False)
- add('rotation MAXPlanetary12to1 envelope',h.box(ux-25.4,-171,rz-30.95,50.8,63.5,61.9),'frame',False)
- add('rotation NEO envelope',h.cyl((ux,-107.5,rz),(0,1,0),30,58.35),'frame',False)
+ add('rotation MAXPlanetary12to1 envelope',h.box(ux-25.4,-198,rz-30.95,50.8,63.5,61.9),'frame',False)
+ add('rotation NEO envelope',h.cyl((ux,-134.5,rz),(0,1,0),30,58.35),'frame',False)
  # Source-sized two-stage geared NEO reservation at top; output retention still incomplete.
- add('lift top shaft',h.cyl((lift['driveX'],-290,lift['upperPulleyZ']),(0,1,0),6.875,580),'support',False)
- add('lift MAXPlanetary12to1 envelope',h.box(lift['driveX']-25.4,-348.5,lift['upperPulleyZ']-30.95,50.8,63.5,61.9),'frame',False)
- add('lift NEO envelope',h.cyl((lift['driveX'],-406.85,lift['upperPulleyZ']),(0,1,0),30,58.35),'frame',False)
+ add('lift top shaft',h.cyl((lift['driveX'],-310,lift['upperPulleyZ']),(0,1,0),6.875,620),'support',False)
+ add('lift MAXPlanetary12to1 envelope',h.box(lift['driveX']-25.4,-368.5,lift['upperPulleyZ']-30.95,50.8,63.5,61.9),'frame',False)
+ add('lift NEO envelope',h.cyl((lift['driveX'],-426.85,lift['upperPulleyZ']),(0,1,0),30,58.35),'frame',False)
  return records if metadata else parts

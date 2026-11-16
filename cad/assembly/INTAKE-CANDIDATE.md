@@ -1,38 +1,27 @@
 # Original side-pinch cradle and chain elevator candidate
 
-This is the next editable component assembly, not a verified complete robot. `python cad/assembly/build_intake_candidate.py` exports427 original/source-sized roots per floor, rotated and handoff pose to `artifacts/intake-component-candidate/`. Each STEP is reopened; the initial three poses have no geometry below ground. Supplier native CAD is not redistributed.
+This is editable component CAD, not a fabrication-ready or qualified complete robot. Supplier native CAD remains private. Export using `python cad/assembly/build_intake_candidate.py`; verify exact exported files using the contact audit and verification bundle. Root counts alone are not completion evidence.
 
-## Mechanism and route
+## Current route and geometry
 
-Two reversible side-pinch belt tracks capture/hold the NOTE at its outside edges. Stub shafts and bearings stay beside the NOTE, not through its torus. This avoids an under-floor capture roller. Two-stage12:1 geared NEO proposals separately control cradle pitch and vertical lift; the pinch tracks have two additional direct NEO motors. The whole candidate therefore allocates8NEOs (4shooter,2pinch,1rotation,1lift) and4CIM drivetrain motors, matching the12controller allocation but not proving shared-power adequacy.
+A level NOTE enters below the fixed front bumper at robot X178, Z25.4 mm. Two reversible side-pinch tracks hold the outside edges. The cradle rotates to 60 degrees while rising to keep the rigid NOTE floor-tangent, then lifts to handoff at X178, Z474.833 mm. Total vertical travel is 449.433 mm. The carriage is 200 mm above the NOTE, suspending the narrow cradle below high, inboard pinch motors. This is prescribed geometry, not demonstrated acquisition or retention.
 
-The cradle initially holds a level NOTE centered atX178,Z25.4mm. Rotation to60degrees is coordinated with upward motion to remain floor-tangent. Then it lifts to the shooter guide at local coordinate96mm. Total lift is approximately550mm; the418mm post-rotation segment alone was insufficient for lift sizing.
+The entire shooter moved 58 mm forward to pivot X188 mm. Handoff is shooter guide coordinate -20 mm. All previous release/target/docking results are invalid for this layout until explicitly rerun. The candidate allocates eight NEOs and four drivetrain CIMs, not proof of shared-power adequacy.
 
-The proposed guides are original25.4mm square aluminum stock with3.175mm walls and adjustable UHMW sliding-pad envelopes. Carriage/drop brackets, stub-bearing carriers and drivetrain representations are editable. Complete fastening, lift-chain attachments, tensioners, rotation-shaft coupling/retention, brakes and guarding remain open. Geometry at intermediate moving poses still needs screening.
+Side tracks use nominal 104T RT25 loops with 292.1 mm centers. Remote pinch transfer uses 48T equal-12T loops. Exact 104T availability in the 2024 season remains unverified. Two-stage 12:1 MAXPlanetary envelopes are supported by 2021/2022 drawings, not modeled internal couplers. Lift uses two 236-link #25 chain loops with 16T sprockets, nominal centers 698.5 mm. Rotation uses 114 links, 16T sprockets and 311.15 mm centers. Chain is straight-run/sprocket envelope geometry, not articulated links or tooth engagement.
 
-## Sourcing and transmission
+## Joint correction and structural changes
 
-- NEO family and12T RT25 pulleys use previously pinned source evidence. Side tracks use the currently listed104T REV-21-4104 family size (292.1mm equal12T centers); availability during the2024 season is not yet verified.
-- MAXPlanetary uses3:1 and4:1 stages for12:1. Source cartridge drawing dates to2021 and system drawing to2022. The current model is only the documented2-stage envelope, not its internal gears/couplers.
-- Lift uses16T halfhex REV-21-2016 #25 sprockets and REV-41-1365 cut-to-length chain.236links give1498.6mm nominal loop length and698.5mm equal-sprocket center distance. Two loops consume2997.2mm before actual installation decisions, leaving50.8mm of a nominal10ft stock length. Two connecting links are needed; the current stock listing includes only one. No chain working-load/masterlink retention acceptance.
-- Chain is represented by straight-run envelopes and sprocket envelopes, not actual link articulation. Tooth engagement, polygon effects and attachment end clearances need native/physical checking.
+The initial complete mechanism collided despite a clean NOTE-only screen; its failed evidence remains preserved. The suspended revision removed external collisions in finite samples. Internal auditing then found missing bores and overlapping authored stock. The next revision bores the pivot sprocket, shortens stub shafts, and models each original side frame as a fused proposed weldment with drilled bearing seats. Fabrication, welds, tolerances and strength remain unqualified.
 
-## Evidence and exclusions
+Current guides are at Y +/-250 mm, fixed shooter side rails at +/-300 mm, and authored transverse tubes end at +/-313 mm. The central throat is 434 mm wide. Native rail attachment stations remain at Y +/-228.6 and source rail bolt rows +/-260.35. The central front endrail and lower transverse bridge regions are removed; source crossplate `am-2974-cut-2` is removed entirely. A proposed upper transverse portal is added at guide X101.6, bottom Z917.515 mm. This is a replacement-member proposal, NOT an established load path: its attachments, lower guide anchorage, carriage yoke, cradle torque hub, chain attachment and tensioning remain incomplete. Wider cantilevers and the fixed bumper backing/support require structural and impact assessment.
 
-`python cad/assembly/check_intake_contact.py` checks the complete rigid NOTE against all included physical shapes at three key poses. Initial results show only the two intended side-belt compression overlaps (~732mm3 each), with no other NOTE intersections in those three poses. This is not continuous motion, capture, friction or contact-force validation. It is not a whole assembly pairwise collision pass.
+## Evidence boundaries
 
-The opened central throat cuts four named front rail/crossplate/bridge shapes. Fixed front backing support remains included. Lost transverse load paths and the replacement support plate need actual connection, stiffness and impact assessment. The previous unchanged-chassis25-conflict control remains separate.
+The moving/fixed audit retains raw overlaps and explicit motion roles. The dense variant samples at most 1 degree of rotation and 5 mm of lift, not a continuous collision proof. The internal audit checks all moving-part pairs at three key poses. Remaining belt/pulley and chain/sprocket envelope intersections are labeled nominal drive-engagement hypotheses; raw volumes remain in the report and are NOT waived as physical acceptance. Unknown or cross-motion intersections remain explicitly unresolved.
 
-All supplier representations, incomplete interfaces and missing masses are explicit. No old two-motor/240mm launch or competition qualification transfers to this candidate.
+Three-pose full-NOTE contact is separate from mechanism clearance. Intended side-belt penetration does not prove capture, friction or force. The source/STEP verifier requires exactly floor, rotated and handoff, hashes actual files, rejects missing/modified/forged receipts, and guards source changes during export/audit. Export receipts must be regenerated after source changes; old outputs cannot certify a new revision.
 
-Power-off motion and retention behavior, including any brake, are unmodeled. Retention requirements depend on the mission; coasting alone is not treated as a safety defect.
+Per-part fidelity distinguishes original stock proposals from supplier-sized representations. Partial mass ledgers do not imply whole-robot mass or CoG. Complete fasteners, couplings, chain attachments, tensioners, guarding, harness/service access and structural acceptance remain gates.
 
-## Revised suspended corridor (supersedes the first layout above)
-
-The first complete mechanism failed all15 sampled moving-vs-fixed poses despite a clean NOTE-only screen. That failed audit is retained in `evidence/rejected-mechanism-motion.json`. The revision suspends the narrow cradle below a carriage200mm above the NOTE, uses shortened rear stub shafts, and places pinch motors high and inboard. A48T equal12T transfer loop drives each remote pinch shaft; exact shaft coupling/support is not complete. A96link16T#25 chain proposal drives cradle rotation from a high inboard gearbox. Side-pinch104T loop remains to preserve acquisition/feed reach.
-
-The whole shooter, including carriers and support members, moves58mm forward to pivotX188mm. Cradle handoff is guidecoordinate−20mm atworldrobotX178,Z474.833mm, avoiding a cradle/shooter carrier overlap. Total vertical travel is449.433mm including rotation rise. No earlier launch/target result transfers: release registration and chassis docking must be recomputed after the design stabilizes.
-
-Fixed shooter side rails move toY±285mm; original transverse tubes extend toY±298 while retaining measured rail bolt positions. The central throat is430mm wide. Attachment holes remain atY±228.6 and rail mount rows±260.35, but longer outboard cantilevers and removed transverse central members require structural design/load checks. The fixed front rigid backing-support plate remains present. The carriage/guide and crank shafts still need completed fasteners, keyed hubs and retention; drawn adjacency is not torque transfer acceptance.
-
-Current finite mechanism audit has explicit stable motion IDs/roles, configured pitch sampling and per-pose whole-robot bounds. It excludes moving-vs-moving interference and is not a continuous sweep. A source/STEP-consistency verifier requires all three exact pose files and actual SHA256 matches, rejects stale/missing/forged artifacts, and guards source changes during export/audit. `verification-bundle.json` hashes the separate build and contact receipts without a circular hash dependency.
+Power-off motion/retention behavior and any brake are unmodeled; retention is mission-dependent. Coasting alone is not treated as a safety defect.
