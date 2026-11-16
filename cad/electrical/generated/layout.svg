@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="900" viewBox="0 0 1100 900">
+<rect width="1100" height="900" fill="#f7fafc"/>
+<text x="30" y="30" font-size="22">2024 electrical package: original sourced envelopes</text>
+<text x="30" y="55" font-size="15">Top view. +X forward (up), +Y left. Dashed regions are service hypotheses, not parts.</text>
+<rect x="615.0" y="557.5" width="110" height="205" fill="#9ac6dc" stroke="#334155" stroke-dasharray="5 4" fill-opacity=".12"/>
+<rect x="630.0" y="565.0" width="80" height="190" fill="#9ac6dc" stroke="#334155" stroke-dasharray="5 4" fill-opacity=".12"/>
+<rect x="130.0" y="540.0" width="140" height="240" fill="#9ac6dc" stroke="#334155" stroke-dasharray="5 4" fill-opacity=".12"/>
+<rect x="120.0" y="570.0" width="160" height="180" fill="#9ac6dc" stroke="#334155" stroke-dasharray="5 4" fill-opacity=".12"/>
+<rect x="495.0" y="700.0" width="70" height="80" fill="#9ac6dc" stroke="#334155" stroke-dasharray="5 4" fill-opacity=".12"/>
+<rect x="162.5" y="550.0" width="75" height="60" fill="#9ac6dc" stroke="#334155" stroke-dasharray="5 4" fill-opacity=".12"/>
+<rect x="340.0" y="767.5" width="300" height="25" fill="#9ac6dc" stroke="#334155" stroke-dasharray="5 4" fill-opacity=".12"/>
+<rect x="420.0" y="507.5" width="20" height="265" fill="#9ac6dc" stroke="#334155" stroke-dasharray="5 4" fill-opacity=".12"/>
+<rect x="150.0" y="435.0" width="100" height="50" fill="#9ac6dc" stroke="#334155" stroke-dasharray="5 4" fill-opacity=".12"/>
+<rect x="632.027" y="569.449" width="75.946" height="181.102" fill="#e4a349" stroke="#334155" fill-opacity=".65"/>
+<rect x="143.65" y="546.45" width="112.7" height="227.1" fill="#e4a349" stroke="#334155" fill-opacity=".65"/>
+<rect x="128.41009949696326" y="586.9240925854589" width="143.1798010060735" height="146.1518148290822" fill="#e4a349" stroke="#334155" fill-opacity=".65"/>
+<rect x="165.075" y="612.375" width="69.85" height="95.25" fill="#e4a349" stroke="#334155" fill-opacity=".65"/>
+<rect x="184.125" y="447.1375" width="31.75" height="85.725" fill="#e4a349" stroke="#334155" fill-opacity=".65"/>
+<rect x="505.87" y="703.17" width="48.26" height="73.66" fill="#e4a349" stroke="#334155" fill-opacity=".65"/>
+<rect x="517.5" y="695.0" width="35" height="70" fill="#e4a349" stroke="#334155" fill-opacity=".65"/>
+<rect x="447.5" y="695.0" width="35" height="70" fill="#e4a349" stroke="#334155" fill-opacity=".65"/>
+<rect x="377.5" y="695.0" width="35" height="70" fill="#e4a349" stroke="#334155" fill-opacity=".65"/>
+<rect x="307.5" y="695.0" width="35" height="70" fill="#e4a349" stroke="#334155" fill-opacity=".65"/>
+<rect x="517.5" y="605.0" width="35" height="70" fill="#e4a349" stroke="#334155" fill-opacity=".65"/>
+<rect x="447.5" y="605.0" width="35" height="70" fill="#e4a349" stroke="#334155" fill-opacity=".65"/>
+<rect x="377.5" y="605.0" width="35" height="70" fill="#e4a349" stroke="#334155" fill-opacity=".65"/>
+<rect x="307.5" y="605.0" width="35" height="70" fill="#e4a349" stroke="#334155" fill-opacity=".65"/>
+<rect x="517.5" y="515.0" width="35" height="70" fill="#e4a349" stroke="#334155" fill-opacity=".65"/>
+<rect x="447.5" y="515.0" width="35" height="70" fill="#e4a349" stroke="#334155" fill-opacity=".65"/>
+<rect x="377.5" y="515.0" width="35" height="70" fill="#e4a349" stroke="#334155" fill-opacity=".65"/>
+<rect x="307.5" y="515.0" width="35" height="70" fill="#e4a349" stroke="#334155" fill-opacity=".65"/>
+<rect x="290.0" y="500.0" width="280" height="280" fill="#8298a8" stroke="#334155" fill-opacity=".65"/>
+<rect x="130.0" y="537.5" width="140" height="245" fill="#8298a8" stroke="#334155" fill-opacity=".65"/>
+<rect x="120.0" y="570.0" width="160" height="180" fill="#8298a8" stroke="#334155" fill-opacity=".65"/>
+<rect x="157.5" y="605.0" width="85" height="110" fill="#8298a8" stroke="#334155" fill-opacity=".65"/>
+<rect x="622.0" y="559.5" width="96" height="201" fill="#8298a8" stroke="#334155" fill-opacity=".65"/>
+<rect x="622.0" y="756.5" width="96" height="3" fill="#8298a8" stroke="#334155" fill-opacity=".65"/>
+<rect x="622.0" y="560.5" width="96" height="3" fill="#8298a8" stroke="#334155" fill-opacity=".65"/>
+<text x="760" y="95" font-size="12">battery: Z 245.0 mm</text>
+<text x="760" y="117" font-size="12">pdh: Z 184.8 mm</text>
+<text x="760" y="139" font-size="12">roborio: Z 295.4 mm</text>
+<text x="760" y="161" font-size="12">radio: Z 372.7 mm</text>
+<text x="760" y="183" font-size="12">radio-power: Z 178.1 mm</text>
+<text x="760" y="205" font-size="12">main-breaker: Z 230.0 mm</text>
+<text x="760" y="227" font-size="12">spark-1: Z 179.8 mm</text>
+<text x="760" y="249" font-size="12">spark-2: Z 179.8 mm</text>
+<text x="760" y="271" font-size="12">spark-3: Z 179.8 mm</text>
+<text x="760" y="293" font-size="12">spark-4: Z 179.8 mm</text>
+<text x="760" y="315" font-size="12">spark-5: Z 179.8 mm</text>
+<text x="760" y="337" font-size="12">spark-6: Z 179.8 mm</text>
+<text x="760" y="359" font-size="12">spark-7: Z 179.8 mm</text>
+<text x="760" y="381" font-size="12">spark-8: Z 179.8 mm</text>
+<text x="760" y="403" font-size="12">spark-9: Z 179.8 mm</text>
+<text x="760" y="425" font-size="12">spark-10: Z 179.8 mm</text>
+<text x="760" y="447" font-size="12">spark-11: Z 179.8 mm</text>
+<text x="760" y="469" font-size="12">spark-12: Z 179.8 mm</text>
+<text x="760" y="491" font-size="12">controller-deck: Z 165.5 mm</text>
+<text x="760" y="513" font-size="12">pdh-deck: Z 163.5 mm</text>
+<text x="760" y="535" font-size="12">rio-removable-deck: Z 276.0 mm</text>
+<text x="760" y="557" font-size="12">radio-removable-deck: Z 358.5 mm</text>
+<text x="760" y="579" font-size="12">battery-tray: Z 160.1 mm</text>
+<text x="760" y="601" font-size="12">battery-end-stop--298: Z 179.1 mm</text>
+<text x="760" y="623" font-size="12">battery-end-stop--102: Z 179.1 mm</text>
+<text x="760" y="645" font-size="12">battery-liftout: Z 445.0 mm</text>
+<text x="760" y="667" font-size="12">battery-terminal: Z 346.0 mm</text>
+<text x="760" y="689" font-size="12">pdh-wire-access: Z 234.7 mm</text>
+<text x="760" y="711" font-size="12">rio-port-access: Z 337.5 mm</text>
+<text x="760" y="733" font-size="12">breaker-hand: Z 279.1 mm</text>
+<text x="760" y="755" font-size="12">radio-ethernet: Z 375.0 mm</text>
+<text x="760" y="777" font-size="12">main-wire-corridor: Z 200.0 mm</text>
+<text x="760" y="799" font-size="12">can-wire-corridor: Z 210.0 mm</text>
+<text x="760" y="821" font-size="12">sensor-wire-reserve: Z 185.0 mm</text>
+<text x="30" y="875" font-size="14">Not a complete robot or wiring design. Deck attachments, restraint, harness and cooling remain open.</text>
+</svg>

@@ -1,0 +1,900 @@
+{
+  "schema": "frc-electrical-package/1",
+  "season": 2024,
+  "units": "mm",
+  "frame": "+X forward,+Y left,+Z up;origin ground below chassis center",
+  "baseCommit": "ef9a314df2afe2b5a2c4b095a6bed7fb408f78d7",
+  "sources": {
+    "battery": {
+      "url": "https://andymark.com/products/mk-es17-12-12v-sla-battery-set-of-2",
+      "facts": "ES17-12:7.13in long,2.99in wide,6.57in tall,12.89lb each;12V18Ah",
+      "sha256": null,
+      "checkedDate": "2026-11-16"
+    },
+    "pdh": {
+      "url": "https://revrobotics.ca/content/docs/REV-11-1850-DR.pdf",
+      "facts": "2021drawing outerbounds227.1x112.7x39.7mm;body225.4x111.1;mountgrid215.9x101.6mm;5mm holes",
+      "massUrl": "https://www.revrobotics.com/rev-11-1850/",
+      "massFact": "517g",
+      "sha256": null,
+      "checkedDate": "2026-11-16"
+    },
+    "spark": {
+      "url": "https://www.revrobotics.com/rev-11-2158/",
+      "facts": "70x35x25.5mm;113.3g;150mm12AWG motor/power leads",
+      "sha256": null,
+      "checkedDate": "2026-11-16"
+    },
+    "radio": {
+      "url": "https://andymark.com/products/open-mesh-om5p-ac-first-robotics-competition-robot-radio",
+      "facts": "OM5P-AC:3.75x2.75x1in;0.291lb;2024radio,notcurrent2026radio",
+      "sha256": null,
+      "checkedDate": "2026-11-16"
+    },
+    "breaker": {
+      "url": "https://andymark.com/products/surface-mount-120-amp-breaker-by-eaton-bussmann",
+      "facts": "CB285-120/am-0282a:2.9x1.9x1.5in;0.24lb;M6studs;do not substitute1/4-28am-0282 drawing",
+      "sha256": null,
+      "checkedDate": "2026-11-16"
+    },
+    "rpm": {
+      "url": "https://www.revrobotics.com/rev-11-1856/",
+      "facts": "2024revision documented;3.375x1.250x.875in;41g;18V1A output;4.75-18V input",
+      "sha256": null,
+      "checkedDate": "2026-11-16"
+    },
+    "rio": {
+      "url": "https://andymark.com/products/ni-roborio-2-0",
+      "facts": "am-3000a roboRIO2 selected;exact dimensional drawing inaccessible during this bounded pass;160x150x45mm allocation is NOT a verified envelope",
+      "sha256": null,
+      "checkedDate": "2026-11-16"
+    },
+    "season": {
+      "url": "https://frcdocs.wpi.edu/en/2024/docs/controls-overviews/control-system-hardware.html",
+      "facts": "2024overview identifies roboRIO,OM5P radio,PDH,SPARKMAX,120A breaker;compatibility evidence not full rule inspection",
+      "sha256": null,
+      "checkedDate": "2026-11-16"
+    },
+    "roborio": {
+      "url": "https://documents.andymark.com/6e19ed3e825c8c521f57ec510eda860556ac422f134dc584b8342ca4d94be791/am-3000a%20National%20Instruments%20roboRIO%202.STEP",
+      "sha256": "6e19ed3e825c8c521f57ec510eda860556ac422f134dc584b8342ca4d94be791",
+      "facts": "Supplier native STEP overall bounds measured using OCP AddOptimal; mounting holes and mass not qualified.",
+      "nativeBoundsMm": [
+        -73.07580068231519,
+        -71.58990068231522,
+        -9.652036909230302,
+        73.07601414676702,
+        71.58990032375829,
+        25.057406339148972
+      ],
+      "checkedDate": "2026-11-16"
+    }
+  },
+  "components": [
+    {
+      "id": "battery",
+      "quantity": 1,
+      "partNumber": "MK ES17-12 / am-0844 single",
+      "sourceKey": "battery",
+      "sourceUrl": "https://andymark.com/products/mk-es17-12-12v-sla-battery-set-of-2",
+      "sourceSha256": null,
+      "massKg": 5.8468056493,
+      "massBasis": "supplier published mass",
+      "centerMm": [
+        -200,
+        -240,
+        245
+      ],
+      "sizeMm": [
+        181.102,
+        75.946,
+        166.878
+      ],
+      "role": "electrical",
+      "geometryFidelity": "sourced envelope",
+      "note": "Upright; terminal orientation and exact cable lug geometry unverified"
+    },
+    {
+      "id": "pdh",
+      "quantity": 1,
+      "partNumber": "REV-11-1850",
+      "sourceKey": "pdh",
+      "sourceUrl": "https://revrobotics.ca/content/docs/REV-11-1850-DR.pdf",
+      "sourceSha256": null,
+      "massKg": 0.517,
+      "massBasis": "supplier published mass",
+      "centerMm": [
+        -200,
+        230,
+        184.85
+      ],
+      "sizeMm": [
+        227.1,
+        112.7,
+        39.7
+      ],
+      "role": "electrical",
+      "geometryFidelity": "sourced envelope",
+      "note": "Conservative outer drawing dimensions; connector approach is separately reserved"
+    },
+    {
+      "id": "roborio",
+      "quantity": 1,
+      "partNumber": "NI roboRIO 2.0 / am-3000a",
+      "sourceKey": "roborio",
+      "sourceUrl": "https://documents.andymark.com/6e19ed3e825c8c521f57ec510eda860556ac422f134dc584b8342ca4d94be791/am-3000a%20National%20Instruments%20roboRIO%202.STEP",
+      "sourceSha256": "6e19ed3e825c8c521f57ec510eda860556ac422f134dc584b8342ca4d94be791",
+      "massKg": null,
+      "massBasis": "unknown; excluded from known-mass sum",
+      "centerMm": [
+        -200,
+        230,
+        295.35472162418966
+      ],
+      "sizeMm": [
+        146.1518148290822,
+        143.1798010060735,
+        34.70944324837927
+      ],
+      "role": "electrical",
+      "geometryFidelity": "native-checked envelope",
+      "note": "Original bounding box only; supplier geometry remains private. Mounting interface unknown."
+    },
+    {
+      "id": "radio",
+      "quantity": 1,
+      "partNumber": "OpenMesh OM5P-AC / am-3205",
+      "sourceKey": "radio",
+      "sourceUrl": "https://andymark.com/products/open-mesh-om5p-ac-first-robotics-competition-robot-radio",
+      "sourceSha256": null,
+      "massKg": 0.13199537967,
+      "massBasis": "supplier published mass",
+      "centerMm": [
+        -200,
+        230,
+        372.7
+      ],
+      "sizeMm": [
+        95.25,
+        69.85,
+        25.4
+      ],
+      "role": "electrical",
+      "geometryFidelity": "sourced envelope",
+      "note": ""
+    },
+    {
+      "id": "radio-power",
+      "quantity": 1,
+      "partNumber": "REV-11-1856",
+      "sourceKey": "rpm",
+      "sourceUrl": "https://www.revrobotics.com/rev-11-1856/",
+      "sourceSha256": null,
+      "massKg": 0.041,
+      "massBasis": "supplier published mass",
+      "centerMm": [
+        -30,
+        230,
+        178.1125
+      ],
+      "sizeMm": [
+        85.725,
+        31.75,
+        22.225
+      ],
+      "role": "electrical",
+      "geometryFidelity": "sourced envelope",
+      "note": "PassivePOE18V hypothesis matching radio;notdirect battery feed"
+    },
+    {
+      "id": "main-breaker",
+      "quantity": 1,
+      "partNumber": "Eaton Bussmann CB285-120 / am-0282a",
+      "sourceKey": "breaker",
+      "sourceUrl": "https://andymark.com/products/surface-mount-120-amp-breaker-by-eaton-bussmann",
+      "sourceSha256": null,
+      "massKg": 0.1088621688,
+      "massBasis": "supplier published mass",
+      "centerMm": [
+        -280,
+        -100,
+        230
+      ],
+      "sizeMm": [
+        73.66,
+        48.26,
+        38.1
+      ],
+      "role": "electrical",
+      "geometryFidelity": "sourced envelope",
+      "note": "M6studversion;buttonaccess reserved upward;visible label needed"
+    },
+    {
+      "id": "spark-1",
+      "quantity": 1,
+      "partNumber": "REV-11-2158",
+      "sourceKey": "spark",
+      "sourceUrl": "https://www.revrobotics.com/rev-11-2158/",
+      "sourceSha256": null,
+      "massKg": 0.1133,
+      "massBasis": "supplier published mass",
+      "centerMm": [
+        -270,
+        -105,
+        179.75
+      ],
+      "sizeMm": [
+        70,
+        35,
+        25.5
+      ],
+      "role": "electrical",
+      "geometryFidelity": "sourced envelope",
+      "note": "shooter-1;fourdrive/auxcount pending designer;wire leads not included in body shape"
+    },
+    {
+      "id": "spark-2",
+      "quantity": 1,
+      "partNumber": "REV-11-2158",
+      "sourceKey": "spark",
+      "sourceUrl": "https://www.revrobotics.com/rev-11-2158/",
+      "sourceSha256": null,
+      "massKg": 0.1133,
+      "massBasis": "supplier published mass",
+      "centerMm": [
+        -270,
+        -35,
+        179.75
+      ],
+      "sizeMm": [
+        70,
+        35,
+        25.5
+      ],
+      "role": "electrical",
+      "geometryFidelity": "sourced envelope",
+      "note": "shooter-2;fourdrive/auxcount pending designer;wire leads not included in body shape"
+    },
+    {
+      "id": "spark-3",
+      "quantity": 1,
+      "partNumber": "REV-11-2158",
+      "sourceKey": "spark",
+      "sourceUrl": "https://www.revrobotics.com/rev-11-2158/",
+      "sourceSha256": null,
+      "massKg": 0.1133,
+      "massBasis": "supplier published mass",
+      "centerMm": [
+        -270,
+        35,
+        179.75
+      ],
+      "sizeMm": [
+        70,
+        35,
+        25.5
+      ],
+      "role": "electrical",
+      "geometryFidelity": "sourced envelope",
+      "note": "shooter-3;fourdrive/auxcount pending designer;wire leads not included in body shape"
+    },
+    {
+      "id": "spark-4",
+      "quantity": 1,
+      "partNumber": "REV-11-2158",
+      "sourceKey": "spark",
+      "sourceUrl": "https://www.revrobotics.com/rev-11-2158/",
+      "sourceSha256": null,
+      "massKg": 0.1133,
+      "massBasis": "supplier published mass",
+      "centerMm": [
+        -270,
+        105,
+        179.75
+      ],
+      "sizeMm": [
+        70,
+        35,
+        25.5
+      ],
+      "role": "electrical",
+      "geometryFidelity": "sourced envelope",
+      "note": "shooter-4;fourdrive/auxcount pending designer;wire leads not included in body shape"
+    },
+    {
+      "id": "spark-5",
+      "quantity": 1,
+      "partNumber": "REV-11-2158",
+      "sourceKey": "spark",
+      "sourceUrl": "https://www.revrobotics.com/rev-11-2158/",
+      "sourceSha256": null,
+      "massKg": 0.1133,
+      "massBasis": "supplier published mass",
+      "centerMm": [
+        -180,
+        -105,
+        179.75
+      ],
+      "sizeMm": [
+        70,
+        35,
+        25.5
+      ],
+      "role": "electrical",
+      "geometryFidelity": "sourced envelope",
+      "note": "Four CIM drive allocation: SPARK MAX must be configured brushed; not NEO configuration."
+    },
+    {
+      "id": "spark-6",
+      "quantity": 1,
+      "partNumber": "REV-11-2158",
+      "sourceKey": "spark",
+      "sourceUrl": "https://www.revrobotics.com/rev-11-2158/",
+      "sourceSha256": null,
+      "massKg": 0.1133,
+      "massBasis": "supplier published mass",
+      "centerMm": [
+        -180,
+        -35,
+        179.75
+      ],
+      "sizeMm": [
+        70,
+        35,
+        25.5
+      ],
+      "role": "electrical",
+      "geometryFidelity": "sourced envelope",
+      "note": "Four CIM drive allocation: SPARK MAX must be configured brushed; not NEO configuration."
+    },
+    {
+      "id": "spark-7",
+      "quantity": 1,
+      "partNumber": "REV-11-2158",
+      "sourceKey": "spark",
+      "sourceUrl": "https://www.revrobotics.com/rev-11-2158/",
+      "sourceSha256": null,
+      "massKg": 0.1133,
+      "massBasis": "supplier published mass",
+      "centerMm": [
+        -180,
+        35,
+        179.75
+      ],
+      "sizeMm": [
+        70,
+        35,
+        25.5
+      ],
+      "role": "electrical",
+      "geometryFidelity": "sourced envelope",
+      "note": "Four CIM drive allocation: SPARK MAX must be configured brushed; not NEO configuration."
+    },
+    {
+      "id": "spark-8",
+      "quantity": 1,
+      "partNumber": "REV-11-2158",
+      "sourceKey": "spark",
+      "sourceUrl": "https://www.revrobotics.com/rev-11-2158/",
+      "sourceSha256": null,
+      "massKg": 0.1133,
+      "massBasis": "supplier published mass",
+      "centerMm": [
+        -180,
+        105,
+        179.75
+      ],
+      "sizeMm": [
+        70,
+        35,
+        25.5
+      ],
+      "role": "electrical",
+      "geometryFidelity": "sourced envelope",
+      "note": "Four CIM drive allocation: SPARK MAX must be configured brushed; not NEO configuration."
+    },
+    {
+      "id": "spark-9",
+      "quantity": 1,
+      "partNumber": "REV-11-2158",
+      "sourceKey": "spark",
+      "sourceUrl": "https://www.revrobotics.com/rev-11-2158/",
+      "sourceSha256": null,
+      "massKg": 0.1133,
+      "massBasis": "supplier published mass",
+      "centerMm": [
+        -90,
+        -105,
+        179.75
+      ],
+      "sizeMm": [
+        70,
+        35,
+        25.5
+      ],
+      "role": "electrical",
+      "geometryFidelity": "sourced envelope",
+      "note": "aux-allocation-1;fourdrive/auxcount pending designer;wire leads not included in body shape"
+    },
+    {
+      "id": "spark-10",
+      "quantity": 1,
+      "partNumber": "REV-11-2158",
+      "sourceKey": "spark",
+      "sourceUrl": "https://www.revrobotics.com/rev-11-2158/",
+      "sourceSha256": null,
+      "massKg": 0.1133,
+      "massBasis": "supplier published mass",
+      "centerMm": [
+        -90,
+        -35,
+        179.75
+      ],
+      "sizeMm": [
+        70,
+        35,
+        25.5
+      ],
+      "role": "electrical",
+      "geometryFidelity": "sourced envelope",
+      "note": "aux-allocation-2;fourdrive/auxcount pending designer;wire leads not included in body shape"
+    },
+    {
+      "id": "spark-11",
+      "quantity": 1,
+      "partNumber": "REV-11-2158",
+      "sourceKey": "spark",
+      "sourceUrl": "https://www.revrobotics.com/rev-11-2158/",
+      "sourceSha256": null,
+      "massKg": 0.1133,
+      "massBasis": "supplier published mass",
+      "centerMm": [
+        -90,
+        35,
+        179.75
+      ],
+      "sizeMm": [
+        70,
+        35,
+        25.5
+      ],
+      "role": "electrical",
+      "geometryFidelity": "sourced envelope",
+      "note": "aux-allocation-3;fourdrive/auxcount pending designer;wire leads not included in body shape"
+    },
+    {
+      "id": "spark-12",
+      "quantity": 1,
+      "partNumber": "REV-11-2158",
+      "sourceKey": "spark",
+      "sourceUrl": "https://www.revrobotics.com/rev-11-2158/",
+      "sourceSha256": null,
+      "massKg": 0.1133,
+      "massBasis": "supplier published mass",
+      "centerMm": [
+        -90,
+        105,
+        179.75
+      ],
+      "sizeMm": [
+        70,
+        35,
+        25.5
+      ],
+      "role": "electrical",
+      "geometryFidelity": "sourced envelope",
+      "note": "aux-allocation-4;fourdrive/auxcount pending designer;wire leads not included in body shape"
+    },
+    {
+      "id": "controller-deck",
+      "quantity": 1,
+      "partNumber": "ORIGINAL",
+      "sourceKey": null,
+      "sourceUrl": null,
+      "sourceSha256": null,
+      "massKg": null,
+      "massBasis": "unknown; excluded from known-mass sum",
+      "centerMm": [
+        -180,
+        0,
+        165.5
+      ],
+      "sizeMm": [
+        280,
+        280,
+        3
+      ],
+      "role": "mount",
+      "geometryFidelity": "original mount",
+      "note": "Frame attachment and load design pending"
+    },
+    {
+      "id": "pdh-deck",
+      "quantity": 1,
+      "partNumber": "ORIGINAL",
+      "sourceKey": null,
+      "sourceUrl": null,
+      "sourceSha256": null,
+      "massKg": null,
+      "massBasis": "unknown; excluded from known-mass sum",
+      "centerMm": [
+        -200,
+        230,
+        163.5
+      ],
+      "sizeMm": [
+        245,
+        140,
+        3
+      ],
+      "role": "mount",
+      "geometryFidelity": "original mount",
+      "note": "PDH sourced hole pattern optional;deckframeattachment pending"
+    },
+    {
+      "id": "rio-removable-deck",
+      "quantity": 1,
+      "partNumber": "ORIGINAL",
+      "sourceKey": null,
+      "sourceUrl": null,
+      "sourceSha256": null,
+      "massKg": null,
+      "massBasis": "unknown; excluded from known-mass sum",
+      "centerMm": [
+        -200,
+        230,
+        276
+      ],
+      "sizeMm": [
+        180,
+        160,
+        3
+      ],
+      "role": "mount",
+      "geometryFidelity": "original mount",
+      "note": "Remove to access PDH;no invented roboRIOmount holes"
+    },
+    {
+      "id": "radio-removable-deck",
+      "quantity": 1,
+      "partNumber": "ORIGINAL",
+      "sourceKey": null,
+      "sourceUrl": null,
+      "sourceSha256": null,
+      "massKg": null,
+      "massBasis": "unknown; excluded from known-mass sum",
+      "centerMm": [
+        -200,
+        230,
+        358.5
+      ],
+      "sizeMm": [
+        110,
+        85,
+        3
+      ],
+      "role": "mount",
+      "geometryFidelity": "original mount",
+      "note": "Radioantenna/RFperformance untested"
+    },
+    {
+      "id": "battery-tray",
+      "quantity": 1,
+      "partNumber": "ORIGINAL",
+      "sourceKey": null,
+      "sourceUrl": null,
+      "sourceSha256": null,
+      "massKg": null,
+      "massBasis": "unknown; excluded from known-mass sum",
+      "centerMm": [
+        -200,
+        -240,
+        160.061
+      ],
+      "sizeMm": [
+        201,
+        96,
+        3
+      ],
+      "role": "mount",
+      "geometryFidelity": "original mount",
+      "note": "Strap/stoploadcapacity unknown;plate underside above drive placeholder envelope"
+    },
+    {
+      "id": "battery-end-stop--298",
+      "quantity": 1,
+      "partNumber": "ORIGINAL",
+      "sourceKey": null,
+      "sourceUrl": null,
+      "sourceSha256": null,
+      "massKg": null,
+      "massBasis": "unknown; excluded from known-mass sum",
+      "centerMm": [
+        -298,
+        -240,
+        179.061
+      ],
+      "sizeMm": [
+        3,
+        96,
+        35
+      ],
+      "role": "mount",
+      "geometryFidelity": "original mount",
+      "note": ""
+    },
+    {
+      "id": "battery-end-stop--102",
+      "quantity": 1,
+      "partNumber": "ORIGINAL",
+      "sourceKey": null,
+      "sourceUrl": null,
+      "sourceSha256": null,
+      "massKg": null,
+      "massBasis": "unknown; excluded from known-mass sum",
+      "centerMm": [
+        -102,
+        -240,
+        179.061
+      ],
+      "sizeMm": [
+        3,
+        96,
+        35
+      ],
+      "role": "mount",
+      "geometryFidelity": "original mount",
+      "note": ""
+    },
+    {
+      "id": "battery-liftout",
+      "quantity": 1,
+      "partNumber": "RESERVE",
+      "sourceKey": null,
+      "sourceUrl": null,
+      "sourceSha256": null,
+      "massKg": null,
+      "massBasis": "unknown; excluded from known-mass sum",
+      "centerMm": [
+        -200,
+        -240,
+        445
+      ],
+      "sizeMm": [
+        205,
+        110,
+        220
+      ],
+      "role": "service",
+      "geometryFidelity": "reserve",
+      "note": "Vertical liftout after unplug;not proven sweptservice path"
+    },
+    {
+      "id": "battery-terminal",
+      "quantity": 1,
+      "partNumber": "RESERVE",
+      "sourceKey": null,
+      "sourceUrl": null,
+      "sourceSha256": null,
+      "massKg": null,
+      "massBasis": "unknown; excluded from known-mass sum",
+      "centerMm": [
+        -200,
+        -240,
+        346
+      ],
+      "sizeMm": [
+        190,
+        80,
+        35
+      ],
+      "role": "service",
+      "geometryFidelity": "reserve",
+      "note": "Cablelugs/insulationreserve"
+    },
+    {
+      "id": "pdh-wire-access",
+      "quantity": 1,
+      "partNumber": "RESERVE",
+      "sourceKey": null,
+      "sourceUrl": null,
+      "sourceSha256": null,
+      "massKg": null,
+      "massBasis": "unknown; excluded from known-mass sum",
+      "centerMm": [
+        -200,
+        230,
+        234.7
+      ],
+      "sizeMm": [
+        240,
+        140,
+        55
+      ],
+      "role": "service",
+      "geometryFidelity": "reserve",
+      "note": "Remove upperdeck foraccess;50mm bend/access hypothesis"
+    },
+    {
+      "id": "rio-port-access",
+      "quantity": 1,
+      "partNumber": "RESERVE",
+      "sourceKey": null,
+      "sourceUrl": null,
+      "sourceSha256": null,
+      "massKg": null,
+      "massBasis": "unknown; excluded from known-mass sum",
+      "centerMm": [
+        -200,
+        230,
+        337.5
+      ],
+      "sizeMm": [
+        180,
+        160,
+        30
+      ],
+      "role": "service",
+      "geometryFidelity": "reserve",
+      "note": "USB/Ethernet/SDaccess;disconnect upperradio tray"
+    },
+    {
+      "id": "breaker-hand",
+      "quantity": 1,
+      "partNumber": "RESERVE",
+      "sourceKey": null,
+      "sourceUrl": null,
+      "sourceSha256": null,
+      "massKg": null,
+      "massBasis": "unknown; excluded from known-mass sum",
+      "centerMm": [
+        -280,
+        -100,
+        279.05
+      ],
+      "sizeMm": [
+        80,
+        70,
+        60
+      ],
+      "role": "service",
+      "geometryFidelity": "reserve",
+      "note": "Operatorbuttonreach reserve,not reachproof"
+    },
+    {
+      "id": "radio-ethernet",
+      "quantity": 1,
+      "partNumber": "RESERVE",
+      "sourceKey": null,
+      "sourceUrl": null,
+      "sourceSha256": null,
+      "massKg": null,
+      "massBasis": "unknown; excluded from known-mass sum",
+      "centerMm": [
+        -120,
+        230,
+        375
+      ],
+      "sizeMm": [
+        60,
+        75,
+        30
+      ],
+      "role": "service",
+      "geometryFidelity": "reserve",
+      "note": "Plugretention andstrainrelief"
+    },
+    {
+      "id": "main-wire-corridor",
+      "quantity": 1,
+      "partNumber": "RESERVE",
+      "sourceKey": null,
+      "sourceUrl": null,
+      "sourceSha256": null,
+      "massKg": null,
+      "massBasis": "unknown; excluded from known-mass sum",
+      "centerMm": [
+        -320,
+        -60,
+        200
+      ],
+      "sizeMm": [
+        25,
+        300,
+        25
+      ],
+      "role": "service",
+      "geometryFidelity": "reserve",
+      "note": "6AWGroutehypothesis;notbendradiusorcurrentqualification"
+    },
+    {
+      "id": "can-wire-corridor",
+      "quantity": 1,
+      "partNumber": "RESERVE",
+      "sourceKey": null,
+      "sourceUrl": null,
+      "sourceSha256": null,
+      "massKg": null,
+      "massBasis": "unknown; excluded from known-mass sum",
+      "centerMm": [
+        -180,
+        0,
+        210
+      ],
+      "sizeMm": [
+        265,
+        20,
+        20
+      ],
+      "role": "service",
+      "geometryFidelity": "reserve",
+      "note": "TwistedCANroute;notfinalharness"
+    },
+    {
+      "id": "sensor-wire-reserve",
+      "quantity": 1,
+      "partNumber": "RESERVE",
+      "sourceKey": null,
+      "sourceUrl": null,
+      "sourceSha256": null,
+      "massKg": null,
+      "massBasis": "unknown; excluded from known-mass sum",
+      "centerMm": [
+        0,
+        230,
+        185
+      ],
+      "sizeMm": [
+        50,
+        100,
+        30
+      ],
+      "role": "service",
+      "geometryFidelity": "reserve",
+      "note": "Future sensors/RSL wiring;notcompleteelectricalsystem"
+    }
+  ],
+  "replaceOriginalParts": [
+    "batteryReserve",
+    "electronicsReserve",
+    "batteryReserve service lid",
+    "electronicsReserve service lid"
+  ],
+  "unknowns": [
+    "roboRIO mass, mount pattern and connector-specific service clearance",
+    "Final auxiliary motor count and controller assignments; four CIM drive channels allocated",
+    "Actualcableterminalorientation/bendradiuses/branchprotection",
+    "Frameattachment/loadcapacity/batteryrestraint",
+    "Cooling andserviceclearance withfullmechanisms",
+    "Completeelectricalmass includingRSL,breakers,cables,lugs,mounts"
+  ],
+  "powerAllocation": {
+    "pdhHighCurrentChannels": 20,
+    "provisionalMotorChannels": 12,
+    "shooterChannels": 4,
+    "driveAllocation": 4,
+    "auxAllocation": 4,
+    "remainingHighCurrentChannels": 8,
+    "simultaneousCurrentBudgetEstablished": false
+  },
+  "acceptance": false,
+  "integrationFrameCandidateMm": [
+    719.074,
+    711.2
+  ],
+  "integrationConflicts": [
+    {
+      "other": "drivetrain aft bridge candidate",
+      "boundsDescription": "X=-280, Z160..210.8, across Y +/-228.6 mm",
+      "affected": [
+        "controller-deck",
+        "spark-1",
+        "spark-2",
+        "spark-3",
+        "spark-4",
+        "battery-tray"
+      ],
+      "status": "requires whole-assembly redesign/check; affected list conservative"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": "electrical-package-check/1",
+  "manifestSha256": "cbd3dbbe2099a85d4885ec2b0c08a390e90f0e4dc47b585cdd5128721c41e7f6",
+  "solidEnvelopeConflicts": [],
+  "knownComponentMassKg": 8.00526319777,
+  "knownMassCenterMm": [
+    -196.8204635041743,
+    -156.82440469135585,
+    231.59245081685262
+  ],
+  "unknownMassIds": [
+    "roborio",
+    "controller-deck",
+    "pdh-deck",
+    "rio-removable-deck",
+    "radio-removable-deck",
+    "battery-tray",
+    "battery-end-stop--298",
+    "battery-end-stop--102"
+  ],
+  "fullRobotMassOrCoG": false,
+  "mechanicalAcceptance": false,
+  "limits": [
+    "Envelope overlap only, not native mating or fastener verification",
+    "Service volumes may overlap intentionally; no reach or thermal qualification",
+    "No full chassis/moving mechanism collision screen"
+  ],
+  "exportedRoots": 25,
+  "reopenedRoots": 25,
+  "stepSha256": "84725436a2e23de817a89844a490a188645cd37b669a6d221f838add1ae2509f"
+}
