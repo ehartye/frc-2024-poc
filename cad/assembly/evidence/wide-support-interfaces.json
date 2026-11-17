@@ -1,0 +1,80 @@
+{
+  "inputs": {
+    "cad/assembly/build_robot.py": "cca2c9a3ecca7a622fb1283461c393b2288e3c6efd173c60d72a959e3c500e26",
+    "cad/assembly/bumper_candidate.py": "556fba39fda427cb081a2a1d4d806372b67b830606a242bbfc0babf05619fc19",
+    "cad/a2_primitives.py": "bef958c710da792f89def8606d7169a7c385fcff257826619a7b29fe0943952e",
+    "cad/a2_kinematics.py": "4329126a1465f53c8d27618307b2864ff69803e196ff4521aab8a50daf670581",
+    "cad/build_a2_layout.py": "aea31166eabc53113962cc511cfbd190eba54033f7b93476455961dccb1969c9",
+    "cad/cycle-contract-A2.json": "3700da3bf1a271d6b6763060f913435a4a50cda8d456cb1a57a6f1898416b6ad",
+    "cad/components/a2-transmission.json": "0aae2e2dd0d8c4b16729139380f6d1e2df0efa956dad2ee8b205be1a57f3d8b0",
+    "cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+    "cad/drivetrain/build_fastening.py": "9d82a974d184200e7a6c414bc74b345cd53aa2cf85f36c3cf528fe818997d4ac",
+    "cad/drivetrain/fastening.json": "6cb3d276cd5f59143ef9b52d2240095f02db9f92d6cfef5ae53b145a78862ac9",
+    "cad/drivetrain/build_drivetrain.py": "4748e01902aac32ae8d996e1f7676caa7f794ac6a5971b661855c26487ad29a7",
+    "cad/electrical/manifest.json": "9db917a55b0884db9841f52da3b5cccf8ad684c652e4dde3e01b1efe75e891a3",
+    "cad/electrical/build_electrical.py": "d2fbd40d0b26c8887679b6ed3b49c655b10a27a0cd175e812b35d9fccd6f6317",
+    "cad/electrical/mounts.py": "90254dbc5116a9af72df0ba6442ed94ef8c94e8247326f9b7c6cfd0c0749c7e8",
+    "cad/electrical/breaker_mount.py": "1e27087fa191e8043c6ed8b3c48bca4db50cde379efa171cc49508a1a1c75060",
+    "cad/electrical/breaker-mount-evidence.json": "9e0bb64f30ab3ee58de577fe694ee578135cdf4d74ddf8e0b3065b741266b07d",
+    "cad/electrical/fasteners.py": "788a1cb9bf71a780aed9cbeb5bf48d06532e914fed431edcc0e72a4bd273b799",
+    "cad/assembly/intake_components.py": "c6d352be0edba340d340112697d3f2482158b4fb8f3324b0dd3927344f9b43c5",
+    "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+    "cad/assembly/build_intake_candidate.py": "07e9c96ec0f5e4d02660e0d2efda8dd2bddfb0198862c5e228dbc9e07cbf9bc3",
+    "cad/assembly/check_intake_contact.py": "95d20cfed12331c135b5534d4076f833ae6741b69806a61e677e88098a7301e3",
+    "cad/assembly/verify_receipts.py": "213a00200bc7fc0b84bd4bb82e4a62aaee3c10432f35373fc3097b2141d4e81d",
+    "cad/assembly/audit_intake_motion.py": "1d33ef51ba87c170335234004b1fa3cac1aeeac39da6149d15eedf58a26c1509",
+    "cad/components/check_pulley_outer_profile.py": "23325f74745de7ea2d828340c816143346221c44325784d6e8934b08553efde5",
+    "cad/components/pulley-outer-profile.json": "e582635a9b49f9810eee996177af2761edfe7928450dd86ef76d103ce8af53ec",
+    "cad/assembly/lower_support_mounts.py": "1b832dcc91967eab3dcfe40abc585ef1137250fb4e6777b01075a79ebcb1b14d",
+    "cad/assembly/upper_carriage_connections.py": "bbfbdf8b8c5f9356b5f60a3b4ad3d2d94c7f4e8a76db0e64742618173c936032",
+    "cad/assembly/build_connected_candidate.py": "19356d26a59b7b22a9a4eaed106c9cfd5d9f57774d682e0bd100711348a5ea69",
+    "cad/assembly/slide_pad_attachments.py": "526310777f96f0f537844946c611b05f7e7dc80119a75d308f043832aa7ed7ef",
+    "cad/assembly/spring_cassette_candidate.py": "ecacae7a4e9c1912db502aaa16e84b3f433033e480a5efe7e05cc5ebfdf61e78",
+    "cad/assembly/servo_opening_mount.py": "e0c91eba8b80179fc810bbbbca7682aaaa6d4fd728726f7745fdbc6a9f2f2a09",
+    "cad/assembly/servo_opening_relocation.py": "816bd824454803890f2cceafb569fffdc03044142c65ca67a972f5fd905b5036",
+    "cad/assembly/cassette_opening_cam.py": "7a8cdc5a09e29c05e46980999566c292aa7716ce0bd8d46b42a043837674fd43",
+    "cad/assembly/cassette-opening-source-candidate.json": "912c7771733fef95391721f8197668140b9938c056644a3573844759176b1db5",
+    "cad/assembly/audit_cartridge_interfaces.py": "44e8edfcecfd3afd38c8ed91ea153654d4bffe2579096dafd533d318e02af21f",
+    "cad/assembly/check_servo_opening_relocation.py": "b4d5fae351e96e92880221ac20226e33d380e344ea10775413566cb9d681520e",
+    "cad/assembly/servo_opening_fasteners.py": "b33f27682981402ff416738888fc4fd01ec145649cea2c3f39135f0e0309f0e5",
+    "cad/assembly/servo-opening-fastener-source.json": "5edc7b8b7a2af9864bc8df6a6047610ad4a7dd7436b2c89a4a35195241c44f03",
+    "cad/assembly/check_servo_opening_fasteners_screen.py": "a6ef6698f2fa05c2cc3636100e08ebe668d17d11305ff528f59bde498b06d752",
+    "cad/assembly/servo_opening_wide_support.py": "2cb33bd6d0514404dae37fcf8e736ee74d9d740a39f070f430dfb823d277d673",
+    "cad/assembly/check_servo_opening_wide_support.py": "d021e68f20128680d089d7d8d158ebe271abc66ef787d8f79f52902b43a9bd9b",
+    "cad/assembly/check_wide_support_interfaces.py": "dbee99d42a81733abbb431c34144bac43f4b9e06f27bec88e984ebfe05455475"
+  },
+  "contacts": [
+    {
+      "part": "servo frame",
+      "commonMm3": 0,
+      "minimumDistanceMm": 0.0,
+      "booleanContactSurfaceAreaMm2": 0.0,
+      "coplanarFaceIntersectionAreaMm2": 44.799999999999955
+    },
+    {
+      "part": "fixed anchor",
+      "commonMm3": 0,
+      "minimumDistanceMm": 0.0,
+      "booleanContactSurfaceAreaMm2": 0.0,
+      "coplanarFaceIntersectionAreaMm2": 256.0
+    }
+  ],
+  "authoredMutualHits": [],
+  "nativeSupportChecks": [
+    {
+      "source": "REV-41-1097.STEP",
+      "sha256": "2ae8de8a60ea26b95021ca04b3a71c2f0a68ec0f3b7cafd27d5b0353f536afb2",
+      "commonMm3": 0
+    },
+    {
+      "source": "REV-41-1363.STEP",
+      "sha256": "ee4a5cd9bc8cd4f2d926df96f9dd855dd69da0b343d69a2cc7d9a8a6bfee9d2b",
+      "commonMm3": 0
+    }
+  ],
+  "accepted": false,
+  "limits": [
+    "Zero gap/contact face is a proposed weld interface, not weld strength or assembly approval",
+    "Weld size, access, material, anchor-plate flexibility and impact/fatigue remain unresolved"
+  ]
+}

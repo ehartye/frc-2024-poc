@@ -1,0 +1,15 @@
+# Retention geometry and support load-path gate
+
+## Center retention: bounded evidence, not an invented thread depth
+The pinned V1 servo contains48 near-axis cylindrical faces at radius1.25mm spanning registered X122.9999999 to130.0000071mm. This is an observed geometric bore-face band, not a manufacturer specification of M3 thread depth, pitch, class or bottom clearance. With the candidate head seating atX133,4/6/8mm shanks project approximately1/3/5mm into that band. A2mm shank does not reach it;12/14mm shanks extend beyond its back. None of those facts qualifies a screw length or preload.
+
+The8mm major envelope retains6.45620579mm3 of native material overlap, including about0.19998mm3 outside the cylindrical-face band. The previously retained shaft/horn7.35397596mm3 also remains UNKNOWN. Exact manufacturer guidance supports the M3 center retention requirement; it does not supply the missing V1-horn seating and engagement limits. The documented V2-horn8mm example is not transplanted into a V1 depth specification.
+
+The native Boolean screen also gives zero common volume for some longer same-axis shanks despite positive overlap for a contained shorter shank. That containment-monotonicity failure cannot mean clearance. Raw outputs and strict shared-IN witness checks are retained, not silently repaired or treated as fastening acceptance.
+
+## Independent load-path progress
+A first-order linear support screen includes stem bending, stem torsion and arm bending, using the declared cam-midplane force application atX146 rather than only the servo shaft axis atX130. The latter would omit a real transmitted moment. It uses declared illustrative E=69GPa and G=26GPa, rigid joints and an approximate square-section torsion constant. These are hypotheses, not a selected/verified material or FEA.
+
+Under nominal14.6234N spring reaction, the original6mm-square stem/3mm arm hypothesis gives about2.06mm compliance, already comparable to the full1.5mm travel. It therefore cannot support an assumption of rigid positioning under those assumptions. An original16mm-square stem and8mm arm candidate reduces this estimate to0.0443mm. At the explicit seat+1mm/rate+10percent case22.44374N, estimates are3.160mm and0.06795mm respectively. The provisional screen budget0.15mm is a design allocation, not a validated game-piece tolerance. Free-length uncertainty and actual force/impact histories are not bounded by these two cases.
+
+The larger stem seats on the existing upper-anchor footprint; the arm contacts the mounting-frame top edge. All27 sampled full robot cases clear; this is not continuous clearance. Nominal attachment distances are zero. Separate coplanar face checks, rather than volume-only Boolean output, measure the proposed contact faces. Weld size, anchor-plate compliance, local frame deformation, fatigue, impact loads and locking remain open. The fixed backbone and canonical geometry are not cut away or adopted. A stiffer member does not validate its attachment or the unresolved spline/center screw.
