@@ -3,7 +3,7 @@
     "cad/components/gearbox_output_coupling.py": "5d6dfcdfa5897846f800e422ebc1d609a97db4ec8b38df7f4bcf20e9ea6ea8fc",
     "cad/components/build_cartridge.py": "97019faaaf331d315f3307e260f46b665a3b6f178e6957020084c40cd9bf8ea7",
     "cad/a2_primitives.py": "bef958c710da792f89def8606d7169a7c385fcff257826619a7b29fe0943952e",
-    "cad/assembly/build_robot.py": "651b21a2d98ec3a251ca9d8b7170f1d6ad29c08a7479079cec837527f179706b",
+    "cad/assembly/build_robot.py": "cca2c9a3ecca7a622fb1283461c393b2288e3c6efd173c60d72a959e3c500e26",
     "cad/electrical/fasteners.py": "788a1cb9bf71a780aed9cbeb5bf48d06532e914fed431edcc0e72a4bd273b799"
   },
   "inputsStable": true,
@@ -47,7 +47,7 @@
       48.025
     ]
   },
-  "originalStepSha256": "deb34fb4cd024fac161bc3cf886fbe966dfa846ebbd3f298cdc3b66baa989c5b",
+  "originalStepSha256": "198853dfbddb62769f4b2f6c631320fba6d32da816bbe44f9062dac539a01691",
   "originalReopenedRoots": 3,
   "acceptance": false,
   "limits": [

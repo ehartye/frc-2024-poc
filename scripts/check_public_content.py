@@ -13,7 +13,7 @@ PATTERNS={
 WRAPPER='shared/examples/java-2026-sim/gradle/wrapper/gradle-wrapper.jar'
 WRAPPER_SHA='2db75c40782f5e8ba1fc278a5574bab070adccb2d21ca5a6e5ed840888448046'
 # Explicitly reviewed first-party generated render; no general image/binary exemption.
-ORIGINAL_ASSETS={'cad/assembly/connected-floor.png':'e17417934f3fc0ac5ec21908c1349d1555065f7f6aa096b0feb4adc6dd4e6ed4'}
+ORIGINAL_ASSETS={'cad/assembly/connected-floor.png':'d33b182fd6a02b6ed33509fef781b856fea87b01c76c4b9d9a17db64bd8e415f'}
 
 def findings(data):
  text=data.decode('utf-8',errors='replace')
