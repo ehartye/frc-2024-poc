@@ -1,0 +1,28 @@
+{
+  "stepS": 0.0001,
+  "majorM": 0.1524,
+  "minorM": 0.0254,
+  "massKg": 0.235,
+  "pitchRad": 1.0471975511965976,
+  "rotationS": 1.0,
+  "liftS": 1.2,
+  "stageX": 0.178,
+  "liftDistance": 0.31745112338756276,
+  "lockedBelts": true,
+  "shearStiffnessPerSide": 2000.0,
+  "mu": 0.6,
+  "normalSideN": 10.0,
+  "beltRadiusM": 0.012127606663602424,
+  "rotorInertiaKgM2": 3e-05,
+  "groundStiffnessNpm": 20000.0,
+  "groundDampingNspm": 20.0,
+  "assumptions": [
+    "NOTE planar translation and pitch are integrated freely; no prescribed NOTE attachment. Cradle trajectory is prescribed external actuation.",
+    "Thirty fixed spatial footprint witnesses are a nominal compressed-contact hypothesis; stop on first witness leaving the undeformed torus domain, not a physical detachment verdict.",
+    "One10N normal budget per side split among15points; shear stiffness2000N/m per side,mu.6 and contact persistence are unmeasured.",
+    "Elastic-perfectly-plastic shear return mapping caps each point at friction capacity; no calibrated foam constitutive model.",
+    "Locked belts are an ideal active-hold boundary, not proven motor/controller behavior; coast integrates finite rotor backdrive.",
+    "Ground uses a frictionless single lowest-point penalty on a rigid torus, not real distributed carpet contact.",
+    "No lateral/yaw response, actuator plant, compliance calibration, physical retention or scoring acceptance."
+  ]
+}
