@@ -12,6 +12,7 @@ def stack_along(name,seat,axis,total):
  return [(n,h.move(h.BRepBuilderAPI_Transform(s,tr,True).Shape(),*seat),k) for n,s,k in rows]
 
 def apply(parts,zc,c=None):
+ if len({n for n,s,k in parts})!=len(parts):raise ValueError('duplicate part identifiers')
  c=c or json.loads((assembly.ROOT/'cad/assembly/intake_components.json').read_text());shapes={n:s for n,s,k in parts};extra=[];joints=[]
  gx=c['guide']['x'];top=c['replacementPortalTopZ']
  for side in [-1,1]:
@@ -41,9 +42,10 @@ def run():
  import audit_intake_motion
  before=assembly.input_pins();script=hashlib.sha256(pathlib.Path(__file__).read_bytes()).hexdigest();dependency=hashlib.sha256(pathlib.Path(lower.__file__).read_bytes()).hexdigest()
  c=json.loads((assembly.ROOT/'cad/assembly/intake_components.json').read_text());rows=[];last=None
+ fixedbase=[p for p in assembly.build('floor') if not p[0].startswith('intake candidate')]
  for phase,deg,zc in audit_intake_motion.poses(c):
   # Rebuild pose using the explicit kinematic module, not endpoint interpolation.
-  base=assembly.build('floor');base=[p for p in base if not p[0].startswith('intake candidate')]+assembly.intake_components.build(c=c,pose=(deg,zc))
+  base=fixedbase+assembly.intake_components.build(c=c,pose=(deg,zc))
   lowerparts,_=lower.apply(base,c);parts,joints=apply(lowerparts,zc,c);new=parts[len(lowerparts):];bounds={n:assembly.robot.bounds(s) for n,s,k in parts};hits=[]
   for i,(n,s,k) in enumerate(new):
    for fn,fs,fk in parts[:len(lowerparts)+i]:
@@ -55,4 +57,4 @@ def run():
  if before!=assembly.input_pins() or script!=hashlib.sha256(pathlib.Path(__file__).read_bytes()).hexdigest() or dependency!=hashlib.sha256(pathlib.Path(lower.__file__).read_bytes()).hexdigest():raise RuntimeError('sources changed')
  return {'schema':'upper-carriage-connections/1','assemblyInputs':before,'scriptSha256':script,'lowerSupportScriptSha256':dependency,'addedParts':len(last[1]),'joints':last[2],'samples':rows,'acceptance':False,'limits':['Additive candidate, not canonical export','Original plate/weldment and nominal fastener geometry; no load or tool-access qualification','15 finite poses, not continuous collision proof','Existing raw drive-envelope engagement hypotheses unchanged','Chain attachment and shaft torque transfer remain incomplete']}
 if __name__=='__main__':
- q=run();out=assembly.ROOT/'artifacts/intake-component-candidate/upper-carriage-connections.json';out.write_text(json.dumps(q,indent=2)+'\n',encoding='utf-8');print(json.dumps({'poses':len(q['samples']),'added':q['addedParts'],'hits':[(r['phase'],r['pitchDeg'],h) for r in q['samples'] for h in r['hits']]}))
+ q=run();out=assembly.ROOT/'artifacts/intake-component-candidate/upper-carriage-connections.json';out.write_text(json.dumps(q,indent=2)+'\n',encoding='utf-8',newline='\n');print(json.dumps({'poses':len(q['samples']),'added':q['addedParts'],'hits':[(r['phase'],r['pitchDeg'],h) for r in q['samples'] for h in r['hits']]}))

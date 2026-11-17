@@ -65,7 +65,7 @@ def shooter(c,tx):
      add('slider clamp screw nominal '+str((xx,zz)),h.cyl((mx+xx,y+45,z+zz),(0,1,0),2.413,12.7),'support')
      add('slider clamp head nominal '+str((xx,zz)),h.cyl((mx+xx,y+40.2,z+zz),(0,1,0),3.9,4.8),'support')
      add('slider clamp nut envelope '+str((xx,zz)),ring(mx+xx,y+51.35,z+zz,4.76,2.413,5),'support')
-   for cx in [station,mx]:add('pulley envelope',ring(cx,y+50.6528,z,13.144,7 if cx==station else 4,18.6944),'drive')
+   for cx in [station,mx]:add('driven pulley envelope' if cx==station else 'driver pulley envelope',ring(cx,y+50.6528,z,13.144,7 if cx==station else 4,18.6944),'drive')
    # Smooth pitch-band representation, explicitly NOT teeth or belt engagement geometry.
    pr=12*6.35/(2*math.pi);outer=BRepAlgoAPI_Fuse(h.cyl((station,y+53.65,z),(0,1,0),pr+1.5,12.7),h.cyl((mx,y+53.65,z),(0,1,0),pr+1.5,12.7)).Shape();outer=BRepAlgoAPI_Fuse(outer,h.box(station,y+53.65,z-pr-1.5,88.9,12.7,2*(pr+1.5))).Shape()
    inner=BRepAlgoAPI_Fuse(h.cyl((station,y+52,z),(0,1,0),pr-1.5,16),h.cyl((mx,y+52,z),(0,1,0),pr-1.5,16)).Shape();inner=BRepAlgoAPI_Fuse(inner,h.box(station,y+52,z-pr+1.5,88.9,16,2*(pr-1.5))).Shape()

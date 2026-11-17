@@ -1,6 +1,7 @@
 """Integrated original candidate with lower, upper and carriage attachment increments."""
 import pathlib,json,math,hashlib
 import upper_carriage_connections as upper
+import slide_pad_attachments as pads
 import verify_receipts as verification
 from OCP.BRepPrimAPI import BRepPrimAPI_MakeTorus
 from OCP.gp import gp_Ax2,gp_Pnt,gp_Dir
@@ -8,7 +9,7 @@ assembly=upper.assembly;h=upper.h;ROOT=assembly.ROOT
 
 def input_pins():
  pins=assembly.input_pins()
- for name in ['lower_support_mounts.py','upper_carriage_connections.py','build_connected_candidate.py']:
+ for name in ['lower_support_mounts.py','upper_carriage_connections.py','build_connected_candidate.py','slide_pad_attachments.py']:
   relative='cad/assembly/'+name;pins[relative]=hashlib.sha256((ROOT/relative).read_bytes()).hexdigest()
  return pins
 
@@ -20,13 +21,16 @@ def pose(state,c):
 def build(state):
  c=json.loads((ROOT/'cad/assembly/intake_components.json').read_text());a,z=pose(state,c)
  parts,lowerjoints=upper.lower.apply(assembly.build(state),c);parts,upperjoints=upper.apply(parts,z,c)
- return parts,lowerjoints+upperjoints
+ parts,padjoints=pads.apply(parts,z,c)
+ return parts,lowerjoints+upperjoints+padjoints
 
 def run():
  before=input_pins();root=ROOT/'artifacts/connected-intake-candidate';root.mkdir(parents=True,exist_ok=True);states=[];contacts=[]
  c=json.loads((ROOT/'cad/assembly/intake_components.json').read_text())
  for state in verification.STATES:
-  out=root/state;out.mkdir(exist_ok=True);parts,joints=build(state);writer=h.STEPControl_Writer()
+  out=root/state;out.mkdir(exist_ok=True);parts,joints=build(state)
+  if len({n for n,s,k in parts})!=len(parts):raise ValueError('duplicate part identifiers')
+  writer=h.STEPControl_Writer()
   for n,s,k in parts:
    if not h.BRepCheck_Analyzer(s).IsValid():raise RuntimeError(n)
    writer.Transfer(s,h.STEPControl_AsIs)
@@ -42,7 +46,10 @@ def run():
   for n,s,k in parts:
    bounds=assembly.robot.bounds(s)
    if bounds[2]<-.01:below.append({'part':n,'minZ':bounds[2]})
-   manifest.append(dict(name=n,role=k,**assembly.classify_part(n)))
+   fidelity=assembly.classify_part(n)
+   if k.startswith('original-') or 'original cradle side weldment' in n or 'original replacement upper transverse portal' in n:
+    fidelity={'fidelity':'original authored drilled stock/plate or proposed weldment','massModel':{'kind':'density_estimate','densityKgM3':2700,'material':'assumed aluminum; grade only specified in module where sourced'},'notIncluded':'fabrication/joint/tolerance/structural qualification'}
+   manifest.append(dict(name=n,role=k,**fidelity))
    if k=='service' or min(min(b[i+3],bounds[i+3])-max(b[i],bounds[i]) for i in range(3))<=1e-6:continue
    v=upper.lower.volume(note,s)
    if v>1e-4:hits.append({'part':n,'commonMm3':v,'intendedContactHypothesis':'side pinch belt' in n or 'nominal tread annulus' in n})
@@ -50,11 +57,11 @@ def run():
   contacts.append({'state':state,'hits':hits})
  if before!=input_pins():raise RuntimeError('source changed during export')
  report={'schema':'2024-intake-component-candidate/1','inputs':before,'states':states,'acceptance':False,'limits':['Original authored and supplier-sized representations, not fabrication acceptance','Attachment increments integrated; chain/shaft/motor/slide and remaining shooter joints incomplete','Three NOTE key poses only, no continuous capture/contact/force validation','Structural loads, fastener preload, tool access and installation remain unqualified','Electrical source caveat: breaker supplier model is surface-only and PDH has an invalid solid; prior material-volume clearance is not accepted']}
- (root/'report.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
+ (root/'report.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8',newline='\n')
  gate=verification.verify_exports(root,before)
  contact={'schema':'connected-candidate-note-audit/1','inputs':before,'states':contacts,'matchesCurrentExports':gate['valid'],'exportStepHashes':gate['stepHashes'],'acceptance':False}
- (root/'note-contact.json').write_text(json.dumps(contact,indent=2)+'\n',encoding='utf-8')
+ (root/'note-contact.json').write_text(json.dumps(contact,indent=2)+'\n',encoding='utf-8',newline='\n')
  bundle={'schema':'2024-assembly-verification-bundle/1','valid':gate['valid'] and before==input_pins(),'buildReceiptSha256':verification.sha(root/'report.json'),'contactReceiptSha256':verification.sha(root/'note-contact.json'),'assemblyInputs':before,'exportStepHashes':gate['stepHashes']}
- (root/'verification-bundle.json').write_text(json.dumps(bundle,indent=2)+'\n',encoding='utf-8')
+ (root/'verification-bundle.json').write_text(json.dumps(bundle,indent=2)+'\n',encoding='utf-8',newline='\n')
  print(json.dumps({'valid':bundle['valid'],'states':[(x['state'],x['parts'],x['belowGround']) for x in states],'contact':contacts}))
 if __name__=='__main__':run()

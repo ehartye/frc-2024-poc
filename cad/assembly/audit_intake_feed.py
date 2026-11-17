@@ -3,6 +3,7 @@ import pathlib,json,math,hashlib,argparse
 import build_connected_candidate as connected
 from OCP.BRepPrimAPI import BRepPrimAPI_MakeTorus
 from OCP.gp import gp_Ax2,gp_Pnt,gp_Dir
+from OCP.TopAbs import TopAbs_SOLID
 assembly=connected.assembly;h=connected.h
 
 def possible_torus_box(q,advance,major,tube):
@@ -24,10 +25,17 @@ def run(cache=None):
   if r.ReadFile(str(p))!=h.IFSelect_RetDone:raise RuntimeError('pulley import failed')
   r.TransferRoots();pulley=r.OneShape();print('native pulley imported',flush=True)
   if not h.BRepCheck_Analyzer(pulley).IsValid():raise RuntimeError('invalid pulley')
-  source={'part':'REV-21-2201','sha256':expected,'boundsMm':assembly.robot.bounds(pulley),'nativeRedistributed':False}
+  solids=[];ex=h.TopExp_Explorer(pulley,TopAbs_SOLID)
+  while ex.More():
+   solid=ex.Current()
+   if not h.BRepCheck_Analyzer(solid).IsValid():raise RuntimeError('invalid source solid')
+   solids.append(solid);ex.Next()
+  if len(solids)!=3:raise RuntimeError('unexpected pulley topology')
+  source={'solidCount':len(solids),'perSolidAbsoluteVolumes':True,'part':'REV-21-2201','sha256':expected,'boundsMm':assembly.robot.bounds(pulley),'nativeRedistributed':False}
   pitch=c['pinch']['pitch'];teeth=c['pinch']['teeth'];center=(c['pinch']['beltTeethHypothesis']-teeth)*pitch/2;yabs=c['pinch']['innerFaceYAbs']+teeth*pitch/(2*math.pi)+1
   for side in [-1,1]:
-   for x in [-center/2,center/2]:native.append((str((side,x)),h.pitch(h.move(pulley,x,side*yabs,0),a,[c['stageCenterX'],0,c['handoffCenterZ']])))
+   for x in [c['pinch'].get('beltCenterX',0)-center/2,c['pinch'].get('beltCenterX',0)+center/2]:
+    for i,solid in enumerate(solids):native.append((str((side,x,i)),h.pitch(h.move(solid,x,side*yabs,0),a,[c['stageCenterX'],0,c['handoffCenterZ']])))
  def local_bounds(s):return assembly.robot.bounds(h.pitch(h.move(s,-c['stageCenterX'],0,-c['handoffCenterZ']),-a,[0,0,0]))
  prepared=[(n,s,local_bounds(s)) for n,s,k in parts];witness=[(n,s,local_bounds(s)) for n,s in native]
  for advance in range(0,481,10):
@@ -41,4 +49,4 @@ def run(cache=None):
  if before!=connected.input_pins() or script!=hashlib.sha256(pathlib.Path(__file__).read_bytes()).hexdigest():raise RuntimeError('source changed')
  return {'schema':'intake-rigid-feed-screen/1','inputs':before,'scriptSha256':script,'nativePulleySource':source,'samples':rows,'acceptance':False,'limits':['Intake only; launcher and full robot separately screened','49 finite guide-aligned rigid NOTE positions, not continuous dynamics','Raw pulley/bearing/support contacts are not waived','Belt traction and foam compression uncalibrated','Native pulley retained privately; no imported supplier geometry exported']}
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('--vendor-cache',type=pathlib.Path);v=p.parse_args();q=run(v.vendor_cache);out=assembly.ROOT/'artifacts/intake-component-candidate/intake-feed.json';out.write_text(json.dumps(q,indent=2)+'\n',encoding='utf-8')
+ p=argparse.ArgumentParser();p.add_argument('--vendor-cache',type=pathlib.Path);v=p.parse_args();q=run(v.vendor_cache);out=assembly.ROOT/'artifacts/intake-component-candidate/intake-feed.json';out.write_text(json.dumps(q,indent=2)+'\n',encoding='utf-8',newline='\n')

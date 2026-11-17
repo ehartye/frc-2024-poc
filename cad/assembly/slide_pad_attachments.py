@@ -27,6 +27,7 @@ def pad_stack(name,seat,axis):
  return [(name+' '+n,transform(s,seat,axis),'selected-fastener-dimensional-proxy') for n,s in [('head',head),('shaft',shaft),('nut',nut)]]
 
 def apply(parts,zc,c=None):
+ if len({n for n,s,k in parts})!=len(parts):raise ValueError('duplicate part identifiers')
  c=c or json.loads((assembly.ROOT/'cad/assembly/intake_components.json').read_text())
  shapes={n:s for n,s,k in parts}; extra=[]; joints=[]; gx=c['guide']['x']
  for side in [-1,1]:

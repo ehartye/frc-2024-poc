@@ -13,6 +13,7 @@ def axis_stack(name,seat,direction):
  return [(n,h.move(h.BRepBuilderAPI_Transform(s,tr,True).Shape(),*seat),k) for n,s,k in rows]
 
 def apply(parts,c=None):
+ if len({n for n,s,k in parts})!=len(parts):raise ValueError('duplicate part identifiers')
  c=c or json.loads((assembly.ROOT/'cad/assembly/intake_components.json').read_text())
  shapes={n:s for n,s,k in parts};roles={n:k for n,s,k in parts};extra=[];joints=[]
  bottom=c['guide']['bottom']
@@ -79,4 +80,4 @@ def run():
  if before!=assembly.input_pins() or script!=hashlib.sha256(pathlib.Path(__file__).read_bytes()).hexdigest():raise RuntimeError('sources changed')
  return {'schema':'lower-support-bracket-candidate/1','assemblyInputs':before,'scriptSha256':script,'hardwareStepSha256':hashlib.sha256(out.read_bytes()).hexdigest(),'hardwareReopenedRoots':reader.NbRootsForTransfer(),'addedParts':len(new),'joints':joints,'rawIntersections':hits,'movingHardwareSamples':motion,'undrilledPostNegativeMm3':volume(screw,original),'acceptance':False,'limits':['Additive candidate, not canonical STEP export','Nominal proxy screws/nuts without threads or preload','Added hardware checked against floor assembly and moving parts at15poses; not continuous motion','Upper portal, carriage yoke, chain anchors and shaft torque coupling incomplete','Installation reach, edge distances, bracket bending and impact loads unqualified']}
 if __name__=='__main__':
- q=run();out=assembly.ROOT/'artifacts/intake-component-candidate/lower-support-mounts.json';out.write_text(json.dumps(q,indent=2)+'\n',encoding='utf-8');print(json.dumps({'addedParts':q['addedParts'],'hits':q['rawIntersections'],'negativeMm3':q['undrilledPostNegativeMm3'],'movingCollisionSamples':sum(bool(r['hits']) for r in q['movingHardwareSamples'])}))
+ q=run();out=assembly.ROOT/'artifacts/intake-component-candidate/lower-support-mounts.json';out.write_text(json.dumps(q,indent=2)+'\n',encoding='utf-8',newline='\n');print(json.dumps({'addedParts':q['addedParts'],'hits':q['rawIntersections'],'negativeMm3':q['undrilledPostNegativeMm3'],'movingCollisionSamples':sum(bool(r['hits']) for r in q['movingHardwareSamples'])}))

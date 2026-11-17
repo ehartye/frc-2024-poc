@@ -25,3 +25,14 @@ Three-pose full-NOTE contact is separate from mechanism clearance. Intended side
 Per-part fidelity distinguishes original stock proposals from supplier-sized representations. Partial mass ledgers do not imply whole-robot mass or CoG. Complete fasteners, couplings, chain attachments, tensioners, guarding, harness/service access and structural acceptance remain gates.
 
 Power-off motion/retention behavior and any brake are unmodeled; retention is mission-dependent. Coasting alone is not treated as a safety defect.
+
+
+## Feed-path correction and connected candidate
+
+The full guide-aligned feed screen rejected the earlier upper bearing carriers even though the three held-NOTE key poses were clear. Bearing centers are now -18.4/+25.4 mm relative to the NOTE plane, with rear shafts -23..34 mm and connected revised side webs. Moving the tracks outward then revealed a rear carrier/gearbox conflict, also retained in evidence.
+
+The selected new candidate uses a 64T REV-21-4064 loop, 165.1 mm centers, shifted +63.5 mm locally. Front pulley stays at +146.05 mm, preserving forward pickup/feed reach; rear pulley moves to -19.05 mm. This puts the held NOTE near the rear end of the straight contact region, so acquisition, alignment variation and traction remain explicit tests. The current belt drawing is dated April 2025; it does not establish exact part availability during the 2024 season.
+
+Each track moves outward 1.75 mm, leaving about 0.878 mm nominal side-belt indentation. This is a geometric hypothesis, not a measured preload or worn-piece allowance. Original pulley representations now use source-bounded outer axial bands instead of a full-radius barrel. The pinned source has THREE solids; native witnesses sum absolute common volumes per solid. Earlier whole-compound zero results are not accepted as material-clearance proof.
+
+`build_connected_candidate.py` combines the lower brackets, upper portal gussets, carriage yokes and detached slide-pad backing/fasteners into a separate export. It preserves earlier frozen artifacts. Pad screw recess is 0.5 mm nominal, not an approved wear interval; pad replacement requires disassembly. Actual chain attachment, torque/retention couplings, motor mounts and remaining shooter joints are still incomplete. Electrical breaker source is surface-only and PDH includes an invalid solid, so old electrical material-volume clearance claims are downgraded.

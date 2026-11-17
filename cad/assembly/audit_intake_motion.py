@@ -31,4 +31,4 @@ def run():
  for name in ['cad/assembly/intake_components.py','cad/assembly/intake_components.json','cad/assembly/build_intake_candidate.py','cad/assembly/audit_intake_motion.py']:pins[name]=hashlib.sha256((a.ROOT/name).read_bytes()).hexdigest()
  return {'schema':'intake-moving-fixed-audit/1','inputs':pins,'dynamicParts':len(dynamic),'fixedParts':len(fixed),'samples':rows,'acceptance':False,'limits':['Finite15pose screen, not continuous sweep','Moving-vs-moving internal joints not covered','Envelope collisions require exact component review; no intentional-pair exemptions suppress results']}
 if __name__=='__main__':
- q=run();p=a.ROOT/'artifacts/intake-component-candidate/motion-audit.json';p.write_text(json.dumps(q,indent=2)+'\n',encoding='utf-8');print(json.dumps({'poses':len(q['samples']),'hitPairs':sorted({(h['moving'],h['fixed']) for r in q['samples'] for h in r['hits']})}))
+ q=run();p=a.ROOT/'artifacts/intake-component-candidate/motion-audit.json';p.write_text(json.dumps(q,indent=2)+'\n',encoding='utf-8',newline='\n');print(json.dumps({'poses':len(q['samples']),'hitPairs':sorted({(h['moving'],h['fixed']) for r in q['samples'] for h in r['hits']})}))

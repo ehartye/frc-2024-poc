@@ -8,7 +8,7 @@ from OCP.GProp import GProp_GProps
 def contact_kind(p,q):
  names=(p['name'],q['name'])
  if p['motion']!=q['motion']:return 'unresolved-cross-motion-intersection'
- pairs=[('side pinch belt','12T track pulley representation'),('pinch transfer belt','pinch transfer pulley'),('rotation chain run','rotation16T sprocket')]
+ pairs=[('side pinch belt','12T track pulley'),('pinch transfer belt','pinch transfer pulley'),('rotation chain run','rotation16T sprocket')]
  if any(any(a in n for n in names) and any(b in n for n in names) for a,b in pairs):
   return 'nominal-drive-envelope-engagement-unvalidated'
  return 'unresolved-solid-intersection'
@@ -27,4 +27,4 @@ def run():
  before['cad/assembly/audit_internal_motion.py']=hashlib.sha256(pathlib.Path(__file__).read_bytes()).hexdigest()
  return {'schema':'intake-internal-moving-audit/1','inputs':before,'states':rows,'acceptance':False,'classificationDoesNotWaiveRawIntersections':True,'limits':['All overlaps retained; source envelopes may include intentional engagement or omitted bores','Three key poses not continuous sweep','Requires connection/contact classification and physical interface completion']}
 if __name__=='__main__':
- q=run();p=assembly.ROOT/'artifacts/intake-component-candidate/internal-motion.json';p.write_text(json.dumps(q,indent=2)+'\n',encoding='utf-8');print(json.dumps({'states':[(r['state'],len(r['hits'])) for r in q['states']]}))
+ q=run();p=assembly.ROOT/'artifacts/intake-component-candidate/internal-motion.json';p.write_text(json.dumps(q,indent=2)+'\n',encoding='utf-8',newline='\n');print(json.dumps({'states':[(r['state'],len(r['hits'])) for r in q['states']]}))
