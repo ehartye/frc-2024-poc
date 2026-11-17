@@ -3,7 +3,7 @@ import json,math,pathlib,hashlib
 import build_connected_candidate as a
 from OCP.BRepAlgoAPI import BRepAlgoAPI_Cut,BRepAlgoAPI_Fuse
 h=a.h
-CONFIG={'side':1,'inwardTravelMm':[0,1.5],'guideCentersXmm':[40,80],'guideZmm':85,'guideRodDiameterMm':6,'guideBoreDiameterMm':6.2,'movingBlockYmm':[203,211],'outerSpringSeatYmm':218,'springOuterDiameterEnvelopeMm':10,'springInnerDiameterEnvelopeMm':6.4,'springFreeLengthMm':None,'springRateNPerMm':None,'adjustableSeatTravelMm':1,'status':'Original interface candidate, not selected spring/bushing hardware or accepted preload'}
+CONFIG={'side':1,'inwardTravelMm':[0,1.5],'guideCentersXmm':[25,70],'guideZmm':85,'guideRodDiameterMm':6,'guideBoreDiameterMm':6.2,'movingBlockYmm':[203,211],'outerSpringSeatYmm':218,'springOuterDiameterEnvelopeMm':10,'springInnerDiameterEnvelopeMm':6.4,'springFreeLengthMm':None,'springRateNPerMm':None,'adjustableSeatTravelMm':1,'status':'Original interface candidate, not selected spring/bushing hardware or accepted preload'}
 def pins():
  p=a.input_pins();p['cad/assembly/spring_cassette_candidate.py']=hashlib.sha256(pathlib.Path(__file__).read_bytes()).hexdigest();return p
 
@@ -17,7 +17,10 @@ def fuse(s,t):
  return op.Shape()
 
 def build(deg,zPivot,travel=0):
- if not 0<=travel<=1.5:raise ValueError('travel outside stops')
+ expected={'side':1,'inwardTravelMm':[0,1.5],'guideZmm':85,'guideRodDiameterMm':6,'guideBoreDiameterMm':6.2,'movingBlockYmm':[203,211],'outerSpringSeatYmm':218,'springOuterDiameterEnvelopeMm':10,'springInnerDiameterEnvelopeMm':6.4,'springFreeLengthMm':None,'springRateNPerMm':None,'adjustableSeatTravelMm':1}
+ if any(CONFIG.get(k)!=v for k,v in expected.items()):raise ValueError('unsupported fixed interface specification')
+ if len(CONFIG['guideCentersXmm'])!=2 or not all(math.isfinite(x) for x in CONFIG['guideCentersXmm']):raise ValueError('guide stations')
+ if not math.isfinite(travel) or not 0<=travel<=1.5:raise ValueError('travel outside stops')
  c=json.loads((a.ROOT/'cad/assembly/intake_components.json').read_text());local=[];names=[];stockname='intake candidate original cradle side weldment 1'
  for n,s,k in a.assembly.intake_components.build('floor',c):
   selected=(n.endswith(' 1') or '(1,' in n) and any(t in n for t in ['side pinch belt','vertical stub shaft','12T track pulley','bearing representation','pinch NEO body','pinch motor plate','pinch transfer pulley','remote drive shaft','pinch transfer belt','original cradle side weldment'])
@@ -26,14 +29,15 @@ def build(deg,zPivot,travel=0):
   if n==stockname:
    s=cut(s,h.cyl((0,190,0),(0,1,0),13,30));s=cut(s,h.box(-7,190,0,14,30,15))
    s=fuse(s,h.box(-43,195,65,209.05,6.35,12))
-   for x in [-40,125]:s=fuse(s,h.box(x-3,195,0,6,15.175,77))
+   for x in [-40,125]:
+    s=fuse(s,h.box(x-3,203.825,0,6,6.35,77));s=fuse(s,h.box(x-3,195,65,6,15.175,12))
    for x in CONFIG['guideCentersXmm']:s=fuse(s,h.box(x-8,195,71,16,16,6))
   local.append((n,h.move(s,0,-travel,0),k,'cassette'))
  fixed=[];added=[]
  arm=cut(h.box(-6,203.5,0,12,3.175,135),h.cyl((0,202.5,0),(0,1,0),6.9,5.175))
  # Lower open arm and shaft clearance are an unresolved clamp/torque interface, not a weld to a shaft.
  fixed.append(('spring cassette original pivot backbone',arm,'original-stock','fixed-to-cradle-pivot'))
- fixed.append(('spring cassette original upper backbone',h.box(-6,203.5,110,94,3.175,12),'original-stock','fixed-to-cradle-pivot'))
+ fixed.append(('spring cassette original upper backbone',h.box(-6,203.5,110,84,3.175,12),'original-stock','fixed-to-cradle-pivot'))
  for x in CONFIG['guideCentersXmm']:
   upper=h.box(x-8,203.5,110,16,20.5,6)
   outer=cut(h.box(x-8,218,77,16,6,39),h.cyl((x,217,85),(0,1,0),3,8))
