@@ -4,6 +4,21 @@
 
 **Strategy-first editable CAD, with retained simulation experiments.** The current component assembly is a design candidate. The runnable legacy A2 cycle below uses earlier geometry and does not validate this newer robot.
 
+## Experimental checkpoint: choose the entry point
+
+This repository is a **reviewed research checkpoint, not a completed robot simulator or fabrication release**. The implementations below are alternatives and historical experiments, not one coupled mission and not a commitment to maintain three simulators. Synthesis evaluation remains open; no installation or compatibility result is implied.
+
+| Entry point | What it currently demonstrates | Not accepted |
+| --- | --- | --- |
+| [Maple 2024 arena](sim/maple/README.md) | Headless force-driven differential robot, actual upstream wall/stage collisions and a shared ground NOTE | Intake collection, corrected season scoring, airborne obstacle collision, driver UI or full robot controls |
+| [MuJoCo drivetrain](sim/mujoco/README.md) | Six-wheel reduced dynamics with original Fusion-exported visual meshes; portable headless checks | Whole-mechanism dynamics, calibrated tires, capture or field scoring |
+| [Pressure/contact research verification](sim/pressure/VERIFYING.md) | Current and exact-source historical numerical experiments, separately registered | Automatic transfer between contact laws or successful acquisition-to-lift |
+| [Legacy A2 slice](#run-the-retained-legacy-a2-slice) | Earlier geometry and prescribed cycle experiment | Validation of the current component robot |
+
+Actual CAD delivery requires the separately preserved Fusion archive. Public STEP/meshes are source-sized references, not a substitute for that archive. Supplier native CAD is excluded from this public repository.
+
+See [checkpoint qualification and reproducible smoke matrix](MERGE_READINESS.md) for tested scope and remaining limitations. A merge would accept this experimental checkpoint only, not the open physical or mission outcomes.
+
 ## Current design highlights
 
 - Close-range Speaker cycle narrative, with Amp and feeder alternatives retained: [strategy](STRATEGY.md).
@@ -19,9 +34,9 @@
 - With existing OCP8 and Matplotlib: `python cad/assembly/build_connected_candidate.py`. This produces floor, rotated and handoff STEP files, renders and exact-file verification receipts in `artifacts/connected-intake-candidate/`.
 - Vendor native CAD is not distributed. Original authored stock/fasteners and source-sized purchased-component envelopes are distinguished in the part manifest.
 
-## Current modeled simulation integration
+## Retained pre-engine modeled integration
 
-The [integrated plant work](sim/integrated/README.md) now couples a force-driven four-CIM drivetrain with two intake motors and a loose NOTE on one electrical bus. Chassis movement comes from motor/tire forces, and NOTE contact reacts back onto the robot. This is **not yet a complete drivable robot simulator**: lift/launcher phase coupling, physical parameter validation and several mechanical interfaces remain open.
+The earlier [integrated plant work](sim/integrated/README.md) couples a force-driven four-CIM drivetrain with two intake motors and a loose NOTE on one electrical bus. Chassis movement comes from motor/tire forces, and NOTE contact reacts back onto the robot. This is **not yet a complete drivable robot simulator**: lift/launcher phase coupling, physical parameter validation and several mechanical interfaces remain open.
 
 With the existing Python/OCP dependencies, run a fresh bounded experiment:
 
