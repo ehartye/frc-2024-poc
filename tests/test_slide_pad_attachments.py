@@ -50,8 +50,8 @@ class PadTest(unittest.TestCase):
   import json,hashlib
   report=json.loads((ROOT/'cad/assembly/evidence/slide-pad-attachments.json').read_text())
   self.assertEqual(report['sourcePins']['assembly'],q.assembly.input_pins())
+  self.assertEqual(set(report['sourcePins']['dependencies']),{'cad/assembly/slide_pad_attachments.py','cad/assembly/upper_carriage_connections.py','cad/assembly/lower_support_mounts.py','cad/assembly/audit_intake_motion.py','cad/electrical/fasteners.py'})
   for p,digest in report['sourcePins']['dependencies'].items():self.assertEqual(hashlib.sha256((ROOT/p).read_bytes()).hexdigest(),digest)
   self.assertEqual(len(report['samples']),15)
   self.assertFalse(any(r['hits'] for r in report['samples']))
 if __name__=='__main__':unittest.main()
-

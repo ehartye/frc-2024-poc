@@ -91,5 +91,5 @@ def run():
 if __name__=='__main__':
  import sys
  result=run();out=pathlib.Path(sys.argv[1]) if len(sys.argv)>1 else assembly.ROOT/'artifacts/pad-attachments.json'
- out.parent.mkdir(parents=True,exist_ok=True);out.write_text(json.dumps(result,indent=2)+'\n')
+ out.parent.mkdir(parents=True,exist_ok=True);out.write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8',newline='\n')
  print(json.dumps({'poses':len(result['samples']),'added':result['addedPartCount'],'hits':[x for r in result['samples'] for x in r['hits']]}))
