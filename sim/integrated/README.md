@@ -19,3 +19,14 @@ Signed power allows a braking motor to supply another subsystem on the common id
 - Component/contact parameters, incomplete mass/inertia, source-native bearing seating and unresolved hard-contact domains remain visible gates.
 
 Current tests cover parallel loads, shared voltage sag, constant-power collapse, explicit regeneration, internal power exchange and invalid input. The drivetrain plant is being authored separately from the preserved mechanism experiments. These tests do not establish an integrated full cycle.
+## First coupled drive-to-loose-NOTE milestone
+
+Run `python sim/integrated/run_coupled_acquisition.py --output artifacts/fresh-coupled.json`. Optional `--step .0005` gives the half-step control; `--scenario command-off` opens the drivetrain and pinch commands at 0.6 s. A fresh output is required.
+
+The current six-motor experiment combines four CIM drivetrain motors and two pinch motors. Chassis and loose NOTE begin at rest. One shared bus is solved against their simultaneous midpoint electrical demand. Finite contact forces act equally and oppositely on the NOTE and chassis; chassis translation/yaw is integrated from tire and mechanism forces, not prescribed speed. End-state pose and midpoint force records are distinguished by the numerical method. Mechanical reactions are internal transfers, not invented external-base work.
+
+The open-loop nominal case first contacts at about 0.562 s. It continues through the modeled floor corridor and stops at its rear boundary around 0.752 s, with robot speed about 0.859 m/s. This is an unresolved-domain stop, NOT capture: the robot has not yet braked or transitioned into a verified retained state. Peak mechanism reaction is about 1.535 N under the stated compliance hypotheses. Halving timestep reduces maximum global energy residual from 1.066 mJ to 0.256 mJ; finite boundary-crossing times differ by 0.5 ms. Command-off preserves wheel/NOTE momentum and also reaches the domain boundary.
+
+The three bound traces preserve the source geometry, parameters and failed continuation. Five kernel tests cover reaction force/world torque balance, chassis response, atomic domain stops, common bus loading and coast; three evidence tests cover lineage, energy/refinement and off-command momentum. No actual acquisition controller, lift/launcher phase, brownout supervisor, field contact, calibrated mass/traction or full-cycle acceptance is implied. Rotor inertias are reduced generalized drive inertias; 3D gyroscopic coupling and load transfer are not modeled. The conservative bearing/obstacle representation is a gate, not proof of collision.
+
+Next: closed-loop approach/braking using explicit observations, then continuous retained-piece and lift dynamics without resetting this state. This baseline remains available as the open-loop overrun control.
