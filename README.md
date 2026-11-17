@@ -31,6 +31,17 @@ python sim/integrated/run_coupled_acquisition.py --output artifacts/my-coupled-r
 
 The current open-loop experiment intentionally stops at its supported geometry boundary rather than inventing capture. [Observed braking controls](sim/integrated/README.md#threshold-braking-is-a-retained-negative-control) preserve overrun and stale-observation cases. Recorded mechanism experiments, numerical refinement and unresolved conditions are included for reproducibility; they are not scoring or hardware acceptance.
 
+## New bounded checkpoint continuation
+
+The [eight-motor phase pilot](sim/integrated/coupled_lift_README.md) continues the exact recorded indexed state for 10 ms with four drivetrain motors, two intake motors, one lift motor and one pitch motor on one bus. It preserves momentum, time and cumulative energy, and replaces the prior 45 kg robot hypothesis with 38 kg base plus 7 kg moving mechanism rather than adding that mass twice.
+
+```text
+python sim/integrated/run_regulated_acquisition.py --index --output artifacts/my-index.json
+python sim/integrated/coupled_lift_run.py artifacts/my-lift-pilot.json
+```
+
+These are separate reproducible commands: the pilot validates and uses the committed indexed checkpoint, not the output path of the preceding command. A single continuous mission runner is still unfinished. With finite gravity-feedforward commands the cradle sags slightly and the free NOTE drops; it is not attached or successfully lifted. The retained coast control stops on an unsupported tiny-negative-pitch guide-domain boundary, not a confirmed collision. Contact stiffness, mechanism mass/inertia and current normal-force budgets are explicit hypotheses. This pilot does not adopt the new spring-cassette candidate or transfer historical launcher results.
+
 ## Run the retained legacy A2 slice
 
 Requires existing Python 3 with NumPy, PowerShell, JDK 17 and a populated Gradle/WPILib cache. Toolchain is pinned to Gradle 8.11, GradleRIO/WPILib 2026.2.1 and JUnit 5.10.1. This models the 2024 game using the 2026 desktop toolchain, not a historical robot deployment.
