@@ -1,0 +1,1958 @@
+{
+  "schema": "transverse-note-cassette-cam/1",
+  "inputs": {
+    "sim/pressure/cassette_coupling.py": "0f0048becba4bc6b65799e396e492487d0e9ab6b6d70b31a92324f22eb328a36",
+    "sim/pressure/run_cassette_coupling.py": "0301f6ea8a6db572a627e036552680c7247e9f5bf32b9698eacc2e36ba51cc78",
+    "sim/pressure/finite_area.py": "75c7af7cc4446346e611c389d050cb3d1212404c560ad8e4884863e44f1cd5ed",
+    "sim/pressure/finite_transport.py": "6b4170b89e1b327c293e545dfd0d41b58af369f8eb11609dfd6d899ef9fb3f9b",
+    "sim/pressure/fast_geometry.py": "2e433044711d836404c7efb2cac715f105718daa42e9e974239246be723df73e",
+    "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+    "cad/assembly/belt_contact_geometry.py": "2cb19b7fb7648ca8f46a943f8ad4c70d97eef9d6cf56f8cf602bf5000aa30daf",
+    "cad/assembly/cassette_cam_dynamics.py": "607bae3d7d1feba41b5761a80c0f2e723531dc15932886cae14f736539ab3b03",
+    "cad/assembly/powered_cam_contact.py": "2d7bd3d42580ac938fc11873cea45d07810c4951f026dea24dd5d2316ac0fa57",
+    "cad/assembly/cassette_spring_law.py": "4b75a9aad20e99b7dccfdbf0126fc8d9ecaf85da319ef62f2add8c1f7c798ee1",
+    "cad/assembly/powered-cam-interface.json": "c759e836d56173aee49ae890aad7f3710693b9d398dbaf6a2e72a9897df3d4da",
+    "tests/test_cassette_pressure_coupling.py": "5f75f8fa52757aa6ac515eed95bdff9ae59ba1adbfd648b528bdca071fd247ac",
+    "cad/assembly/servo_opening_documented_horn.py": "a902cef0c09ebb51839f878aa6354c3d385058d643bd77be2fc922b7a455afac",
+    "cad/assembly/documented-horn-sources.json": "c56e5726a293764e4d3354a0790029f0f5d5cdb0ef29af41b1af417ec7bc271c",
+    "cad/assembly/cassette_opening_cam.py": "7a8cdc5a09e29c05e46980999566c292aa7716ce0bd8d46b42a043837674fd43",
+    "cad/assembly/cassette-opening-source-candidate.json": "912c7771733fef95391721f8197668140b9938c056644a3573844759176b1db5"
+  },
+  "acceptance": false,
+  "rows": {
+    "holding_input": {
+      "initial": {
+        "y": 0.0,
+        "ydot": 0.0,
+        "u": 2.9403514306377918e-05,
+        "udot": 0.0,
+        "theta": 0.2,
+        "thetadot": 0.0,
+        "time": 0.0,
+        "actuator_work": 0.0,
+        "cam_heat": 0.0
+      },
+      "initialPorts": {
+        "accelerations": [
+          -7.37946231334987,
+          -1.1557467893091455,
+          0.0
+        ],
+        "energyJ": 0.01870106534348599,
+        "kineticJ": 0.0,
+        "pressureJ": 0.0005254940219401751,
+        "springJ": 0.01807112024652092,
+        "camJ": 0.00010445107502489092,
+        "actuatorPowerW": -0.0,
+        "heatW": 0.0,
+        "powerResidualW": 0.0,
+        "noteForceY": -1.7336201839637182,
+        "cassetteContactForce": -1.7336201839637182,
+        "springForce": 14.453447687309136,
+        "stopForce": 0.0,
+        "appliedTorque": -0.0021535925847893486,
+        "activeCells": 2208,
+        "activeArea": 0.00037496802363442714,
+        "noteConstraintForce": [
+          -0.0,
+          0.0,
+          -1.6230506522108001e-16
+        ],
+        "noteConstraintMoment": [
+          -2.2901385304869678e-17,
+          -5.293955920339377e-23,
+          1.9578319542835898e-17
+        ],
+        "constraintPowerW": 0.0,
+        "contactWorkResidualW": 0.0,
+        "electricalCurrentA": null,
+        "acceptance": false
+      },
+      "parameters": {
+        "note_mass": 0.234925,
+        "cassette_mass": 1.5,
+        "cam_inertia": 0.0001,
+        "pressure_density": 10000000.0,
+        "cam_stiffness": 1000000.0,
+        "cam_damping": 10.0,
+        "torque_limit": 0.03,
+        "spring_free_length": 0.00953,
+        "resolution": 1024,
+        "note_x": 0.010567440020061214,
+        "grid_phase_rad": 0.0
+      },
+      "dt": 0.0005,
+      "duration": 0.002,
+      "torque": -0.0021535925847893486,
+      "rows": [
+        {
+          "state": {
+            "y": -9.220799402959802e-07,
+            "ydot": -0.0036869083656928332,
+            "u": 2.9261119322169102e-05,
+            "udot": -0.0005612864790159353,
+            "theta": 0.19999999551540154,
+            "thetadot": -3.58767876875918e-05,
+            "time": 0.0005,
+            "actuator_work": 9.657997991257344e-12,
+            "cam_heat": 0.0
+          },
+          "ports": {
+            "accelerations": [
+              -7.362564082889726,
+              -1.057622005446319,
+              -0.2121708477577106
+            ],
+            "energyJ": 0.01870106525164587,
+            "kineticJ": 1.8329841619024925e-06,
+            "pressureJ": 0.0005236507396109531,
+            "springJ": 0.01807317840357471,
+            "camJ": 0.00010240312429830566,
+            "actuatorPowerW": 7.72639839300595e-08,
+            "heatW": 0.0,
+            "powerResidualW": -5.692881968716551e-18,
+            "noteForceY": -1.729650367172869,
+            "cassetteContactForce": -1.729650367172869,
+            "springForce": 14.454270730317862,
+            "stopForce": 0.0,
+            "appliedTorque": -0.0021535925847893486,
+            "activeCells": 2208,
+            "activeArea": 0.00037496802363442714,
+            "noteConstraintForce": [
+              -0.0,
+              0.0,
+              -1.6230506522108001e-16
+            ],
+            "noteConstraintMoment": [
+              -2.3346744309751904e-17,
+              -5.293955920339377e-23,
+              2.1522260156784517e-17
+            ],
+            "constraintPowerW": 0.0,
+            "contactWorkResidualW": -6.071532165918825e-18,
+            "electricalCurrentA": null,
+            "acceptance": false
+          },
+          "residualJ": -1.0149811683448008e-10
+        },
+        {
+          "state": {
+            "y": -3.684101563474784e-06,
+            "ydot": -0.0073572415164381046,
+            "u": 2.885823522946465e-05,
+            "udot": -0.0010272410848648997,
+            "theta": 0.1999999295284557,
+            "thetadot": -0.0002778313675130271,
+            "time": 0.001,
+            "actuator_work": 1.517669953003023e-10,
+            "cam_heat": 0.0
+          },
+          "ports": {
+            "accelerations": [
+              -7.315285403032408,
+              -0.78008208915241,
+              -0.8124682784487044
+            ],
+            "energyJ": 0.018701065053424216,
+            "kineticJ": 7.149550027652885e-06,
+            "pressureJ": 0.0005181945118919253,
+            "springJ": 0.01807900226841566,
+            "camJ": 9.67187230889761e-05,
+            "actuatorPowerW": 5.983355728979394e-07,
+            "heatW": 0.0,
+            "powerResidualW": -6.3249008962662674e-18,
+            "noteForceY": -1.7185434233073884,
+            "cassetteContactForce": -1.7185434233073884,
+            "springForce": 14.456599400373694,
+            "stopForce": 0.0,
+            "appliedTorque": -0.0021535925847893486,
+            "activeCells": 2200,
+            "activeArea": 0.00037360893636981436,
+            "noteConstraintForce": [
+              -0.0,
+              0.0,
+              -1.0820337681405334e-16
+            ],
+            "noteConstraintMoment": [
+              -1.3479669087715135e-17,
+              -5.293955920339377e-23,
+              1.308072980444816e-17
+            ],
+            "constraintPowerW": 0.0,
+            "contactWorkResidualW": -6.938893903907228e-18,
+            "electricalCurrentA": null,
+            "acceptance": false
+          },
+          "residualJ": -4.4182876851186073e-10
+        },
+        {
+          "state": {
+            "y": -8.274037811649583e-06,
+            "ydot": -0.010995686613318945,
+            "u": 2.8263300237386433e-05,
+            "udot": -0.0013185246163911852,
+            "theta": 0.19999965414058818,
+            "thetadot": -0.0008968470484997796,
+            "time": 0.0015,
+            "actuator_work": 7.448402647128515e-10,
+            "cam_heat": 0.0
+          },
+          "ports": {
+            "accelerations": [
+              -7.233372134730767,
+              -0.3683646507605644,
+              -1.698898804689407
+            ],
+            "energyJ": 0.01870106554495134,
+            "kineticJ": 1.5505738729152646e-05,
+            "pressureJ": 0.0005093339972786354,
+            "springJ": 0.01808760402817409,
+            "camJ": 8.862178076945983e-05,
+            "actuatorPowerW": 1.9314431533393388e-06,
+            "heatW": 0.0,
+            "powerResidualW": 1.510640909780682e-17,
+            "noteForceY": -1.6992999487516254,
+            "cassetteContactForce": -1.6992999487516254,
+            "springForce": 14.460038124627905,
+            "stopForce": 0.0,
+            "appliedTorque": -0.0021535925847893486,
+            "activeCells": 2192,
+            "activeArea": 0.00037225303848790033,
+            "noteConstraintForce": [
+              -0.0,
+              0.0,
+              -1.0820337681405334e-16
+            ],
+            "noteConstraintMoment": [
+              -1.3750833781761043e-17,
+              -5.293955920339377e-23,
+              2.62609859801987e-17
+            ],
+            "constraintPowerW": 0.0,
+            "contactWorkResidualW": 1.3877787807814457e-17,
+            "electricalCurrentA": null,
+            "acceptance": false
+          },
+          "residualJ": -5.433749133668319e-10
+        },
+        {
+          "state": {
+            "y": -1.467169181801659e-05,
+            "ydot": -0.014585641068657586,
+            "u": 2.7577734937537288e-05,
+            "udot": -0.0013844743533184699,
+            "theta": 0.19999895099861173,
+            "thetadot": -0.001999741559523354,
+            "time": 0.002,
+            "actuator_work": 2.2591216112395176e-09,
+            "cam_heat": 0.0
+          },
+          "ports": {
+            "accelerations": [
+              -7.121746117287426,
+              0.10873324272688167,
+              -2.720312215136378
+            ],
+            "energyJ": 0.018701066956205385,
+            "kineticJ": 2.642685782244682e-05,
+            "pressureJ": 0.0004973904342027312,
+            "springJ": 0.018097518686846205,
+            "camJ": 7.973097733400086e-05,
+            "actuatorPowerW": 4.306628594084583e-06,
+            "heatW": 0.0,
+            "powerResidualW": 1.4860346026629445e-17,
+            "noteForceY": -1.6730762066037486,
+            "cassetteContactForce": -1.6730762066037486,
+            "springForce": 14.464000692061036,
+            "stopForce": 0.0,
+            "appliedTorque": -0.0021535925847893486,
+            "activeCells": 2184,
+            "activeArea": 0.0003708965935680744,
+            "noteConstraintForce": [
+              -0.0,
+              0.0,
+              -1.0820337681405334e-16
+            ],
+            "noteConstraintMoment": [
+              -1.3632757058041549e-17,
+              -5.293955920339377e-23,
+              2.193815333388638e-17
+            ],
+            "constraintPowerW": 0.0,
+            "contactWorkResidualW": 1.734723475976807e-17,
+            "electricalCurrentA": null,
+            "acceptance": false
+          },
+          "residualJ": -6.464022157121998e-10
+        }
+      ],
+      "final": {
+        "y": -1.467169181801659e-05,
+        "ydot": -0.014585641068657586,
+        "u": 2.7577734937537288e-05,
+        "udot": -0.0013844743533184699,
+        "theta": 0.19999895099861173,
+        "thetadot": -0.001999741559523354,
+        "time": 0.002,
+        "actuator_work": 2.2591216112395176e-09,
+        "cam_heat": 0.0
+      },
+      "maxResidualJ": 6.464022157121998e-10
+    },
+    "holding_input_half": {
+      "initial": {
+        "y": 0.0,
+        "ydot": 0.0,
+        "u": 2.9403514306377918e-05,
+        "udot": 0.0,
+        "theta": 0.2,
+        "thetadot": 0.0,
+        "time": 0.0,
+        "actuator_work": 0.0,
+        "cam_heat": 0.0
+      },
+      "initialPorts": {
+        "accelerations": [
+          -7.37946231334987,
+          -1.1557467893091455,
+          0.0
+        ],
+        "energyJ": 0.01870106534348599,
+        "kineticJ": 0.0,
+        "pressureJ": 0.0005254940219401751,
+        "springJ": 0.01807112024652092,
+        "camJ": 0.00010445107502489092,
+        "actuatorPowerW": -0.0,
+        "heatW": 0.0,
+        "powerResidualW": 0.0,
+        "noteForceY": -1.7336201839637182,
+        "cassetteContactForce": -1.7336201839637182,
+        "springForce": 14.453447687309136,
+        "stopForce": 0.0,
+        "appliedTorque": -0.0021535925847893486,
+        "activeCells": 2208,
+        "activeArea": 0.00037496802363442714,
+        "noteConstraintForce": [
+          -0.0,
+          0.0,
+          -1.6230506522108001e-16
+        ],
+        "noteConstraintMoment": [
+          -2.2901385304869678e-17,
+          -5.293955920339377e-23,
+          1.9578319542835898e-17
+        ],
+        "constraintPowerW": 0.0,
+        "contactWorkResidualW": 0.0,
+        "electricalCurrentA": null,
+        "acceptance": false
+      },
+      "parameters": {
+        "note_mass": 0.234925,
+        "cassette_mass": 1.5,
+        "cam_inertia": 0.0001,
+        "pressure_density": 10000000.0,
+        "cam_stiffness": 1000000.0,
+        "cam_damping": 10.0,
+        "torque_limit": 0.03,
+        "spring_free_length": 0.00953,
+        "resolution": 1024,
+        "note_x": 0.010567440020061214,
+        "grid_phase_rad": 0.0
+      },
+      "dt": 0.00025,
+      "duration": 0.002,
+      "torque": -0.0021535925847893486,
+      "rows": [
+        {
+          "state": {
+            "y": -2.3058614423763262e-07,
+            "ydot": -0.0018445127294646744,
+            "u": 2.9367526804490434e-05,
+            "udot": -0.000286863332872452,
+            "theta": 0.1999999997197126,
+            "thetadot": -4.4845984609491116e-06,
+            "time": 0.00025,
+            "actuator_work": 6.036248744536082e-13,
+            "cam_heat": 0.0
+          },
+          "ports": {
+            "accelerations": [
+              -7.37523053409125,
+              -1.1309537102242808,
+              -0.05362206435256117
+            ],
+            "energyJ": 0.01870106534247823,
+            "kineticJ": 4.6135204337122986e-07,
+            "pressureJ": 0.000525032016993939,
+            "springJ": 0.018071640393739687,
+            "camJ": 0.00010393157970123183,
+            "actuatorPowerW": 9.657997991257732e-09,
+            "heatW": 0.0,
+            "powerResidualW": -4.8318729778325546e-18,
+            "noteForceY": -1.7326260332213868,
+            "cassetteContactForce": -1.7326260332213868,
+            "springForce": 14.453655695070045,
+            "stopForce": 0.0,
+            "appliedTorque": -0.0021535925847893486,
+            "activeCells": 2208,
+            "activeArea": 0.00037496802363442714,
+            "noteConstraintForce": [
+              -0.0,
+              0.0,
+              -1.6230506522108001e-16
+            ],
+            "noteConstraintMoment": [
+              -2.3120617945698282e-17,
+              -5.293955920339377e-23,
+              2.03520841401527e-17
+            ],
+            "constraintPowerW": 0.0,
+            "contactWorkResidualW": -4.336808689942018e-18,
+            "electricalCurrentA": null,
+            "acceptance": false
+          },
+          "residualJ": -1.6113847222467187e-12
+        },
+        {
+          "state": {
+            "y": -9.220801908157044e-07,
+            "ydot": -0.0036869119690979887,
+            "u": 2.926111023857146e-05,
+            "udot": -0.0005614171144566326,
+            "theta": 0.19999999553549674,
+            "thetadot": -3.5587789257929205e-05,
+            "time": 0.0005,
+            "actuator_work": 9.614721100269295e-12,
+            "cam_heat": 0.0
+          },
+          "ports": {
+            "accelerations": [
+              -7.362563934713141,
+              -1.0576158895093246,
+              -0.21218438484704205
+            ],
+            "energyJ": 0.018701065349877918,
+            "kineticJ": 1.8330972806087663e-06,
+            "pressureJ": 0.0005236507234661754,
+            "springJ": 0.01807317853487149,
+            "camJ": 0.00010240299425964507,
+            "actuatorPowerW": 7.664159905492238e-08,
+            "heatW": 0.0,
+            "powerResidualW": 1.8424422440659126e-18,
+            "noteForceY": -1.7296503323624848,
+            "cassetteContactForce": -1.7296503323624848,
+            "springForce": 14.454270782821055,
+            "stopForce": 0.0,
+            "appliedTorque": -0.0021535925847893486,
+            "activeCells": 2208,
+            "activeArea": 0.00037496802363442714,
+            "noteConstraintForce": [
+              -0.0,
+              0.0,
+              -1.6230506522108001e-16
+            ],
+            "noteConstraintMoment": [
+              -2.2712391078513562e-17,
+              -5.293955920339377e-23,
+              1.1917330051394379e-17
+            ],
+            "constraintPowerW": 0.0,
+            "contactWorkResidualW": 4.336808689942018e-18,
+            "electricalCurrentA": null,
+            "acceptance": false
+          },
+          "residualJ": -3.222792447231458e-12
+        },
+        {
+          "state": {
+            "y": -2.073690922624123e-06,
+            "ydot": -0.005525098502460133,
+            "u": 2.9088832102436654e-05,
+            "udot": -0.0008118685473812203,
+            "theta": 0.19999997757286875,
+            "thetadot": -0.00011878497893905535,
+            "time": 0.00075,
+            "actuator_work": 4.829890354939621e-11,
+            "cam_heat": 0.0
+          },
+          "ports": {
+            "accelerations": [
+              -7.341547583196671,
+              -0.938810227059739,
+              -0.46888012312999716
+            ],
+            "energyJ": 0.01870106538695076,
+            "kineticJ": 4.080092689180657e-06,
+            "pressureJ": 0.0005213641268417594,
+            "springJ": 0.018075668775475645,
+            "camJ": 9.995239194417428e-05,
+            "actuatorPowerW": 2.558144498275086e-07,
+            "heatW": 0.0,
+            "powerResidualW": 1.1012063589016345e-17,
+            "noteForceY": -1.7247130659824779,
+            "cassetteContactForce": -1.7247130659824779,
+            "springForce": 14.455266550447918,
+            "stopForce": 0.0,
+            "appliedTorque": -0.0021535925847893486,
+            "activeCells": 2208,
+            "activeArea": 0.00037496802363442714,
+            "noteConstraintForce": [
+              -0.0,
+              0.0,
+              -1.6230506522108001e-16
+            ],
+            "noteConstraintMoment": [
+              -2.3374415155603028e-17,
+              -5.293955920339377e-23,
+              1.4637152845027937e-17
+            ],
+            "constraintPowerW": 0.0,
+            "contactWorkResidualW": 1.214306433183765e-17,
+            "electricalCurrentA": null,
+            "acceptance": false
+          },
+          "residualJ": -4.8341335717659405e-12
+        },
+        {
+          "state": {
+            "y": -3.684136353075237e-06,
+            "ydot": -0.007357371070202605,
+            "u": 2.8858086759448564e-05,
+            "udot": -0.0010274939958414236,
+            "theta": 0.19999992984622827,
+            "thetadot": -0.0002773145200694931,
+            "time": 0.001,
+            "actuator_work": 1.5108264254125785e-10,
+            "cam_heat": 0.0
+          },
+          "ports": {
+            "accelerations": [
+              -7.315282499158806,
+              -0.7799820506764127,
+              -0.8126895397266324
+            ],
+            "energyJ": 0.01870106543291833,
+            "kineticJ": 7.15016368479173e-06,
+            "pressureJ": 0.0005181941969523642,
+            "springJ": 0.01807900441478728,
+            "camJ": 9.671665749389417e-05,
+            "actuatorPowerW": 5.972224940760773e-07,
+            "heatW": 0.0,
+            "powerResidualW": -3.750884236590696e-17,
+            "noteForceY": -1.7185427411148824,
+            "cassetteContactForce": -1.7185427411148824,
+            "springForce": 14.45660025853039,
+            "stopForce": 0.0,
+            "appliedTorque": -0.0021535925847893486,
+            "activeCells": 2200,
+            "activeArea": 0.00037360893636981436,
+            "noteConstraintForce": [
+              -0.0,
+              0.0,
+              -1.0820337681405334e-16
+            ],
+            "noteConstraintMoment": [
+              -1.3300591102542305e-17,
+              -5.293955920339377e-23,
+              9.592648127654951e-18
+            ],
+            "constraintPowerW": 0.0,
+            "contactWorkResidualW": -3.642919299551295e-17,
+            "electricalCurrentA": null,
+            "acceptance": false
+          },
+          "residualJ": -6.165030253545616e-11
+        },
+        {
+          "state": {
+            "y": -5.751715315073575e-06,
+            "ydot": -0.009181715137402178,
+            "u": 2.857877539532466e-05,
+            "udot": -0.0011989751395455384,
+            "theta": 0.19999983094505222,
+            "thetadot": -0.0005311832988500269,
+            "time": 0.00125,
+            "actuator_work": 3.640754819253575e-10,
+            "cam_heat": 0.0
+          },
+          "ports": {
+            "accelerations": [
+              -7.2781751848734775,
+              -0.5868963952411529,
+              -1.228856859253947
+            ],
+            "energyJ": 0.018701065645009667,
+            "kineticJ": 1.0980716162305652e-05,
+            "pressureJ": 0.0005141712011035336,
+            "springJ": 0.01808304253298896,
+            "camJ": 9.287119475487123e-05,
+            "actuatorPowerW": 1.1439524135673626e-06,
+            "heatW": 0.0,
+            "powerResidualW": -6.654206130335058e-17,
+            "noteForceY": -1.7098253053064016,
+            "cassetteContactForce": -1.7098253053064016,
+            "springForce": 14.458214678215024,
+            "stopForce": 0.0,
+            "appliedTorque": -0.0021535925847893486,
+            "activeCells": 2192,
+            "activeArea": 0.00037225303848790033,
+            "noteConstraintForce": [
+              -0.0,
+              0.0,
+              -1.0820337681405334e-16
+            ],
+            "noteConstraintMoment": [
+              -1.3406023543418314e-17,
+              -5.293955920339377e-23,
+              1.480613591800517e-17
+            ],
+            "constraintPowerW": 0.0,
+            "contactWorkResidualW": -6.591949208711867e-17,
+            "electricalCurrentA": null,
+            "acceptance": false
+          },
+          "residualJ": -6.25518043714854e-11
+        },
+        {
+          "state": {
+            "y": -8.274140066614663e-06,
+            "ydot": -0.010995816556277068,
+            "u": 2.8262918585472357e-05,
+            "udot": -0.0013187915674189924,
+            "theta": 0.19999965495298172,
+            "thetadot": -0.0008962991455539204,
+            "time": 0.0015,
+            "actuator_work": 7.430906999307114e-10,
+            "cam_heat": 0.0
+          },
+          "ports": {
+            "accelerations": [
+              -7.23336449482554,
+              -0.36810746828392277,
+              -1.699467573562682
+            ],
+            "energyJ": 0.01870106602241325,
+            "kineticJ": 1.5506602371381657e-05,
+            "pressureJ": 0.0005093331749761021,
+            "springJ": 0.01808760954687574,
+            "camJ": 8.861669819002653e-05,
+            "actuatorPowerW": 1.9302631936179522e-06,
+            "heatW": 0.0,
+            "powerResidualW": -6.69837889853437e-17,
+            "noteForceY": -1.6992981539468899,
+            "cassetteContactForce": -1.6992981539468899,
+            "springForce": 14.460040330575968,
+            "stopForce": 0.0,
+            "appliedTorque": -0.0021535925847893486,
+            "activeCells": 2192,
+            "activeArea": 0.00037225303848790033,
+            "noteConstraintForce": [
+              -0.0,
+              0.0,
+              -1.0820337681405334e-16
+            ],
+            "noteConstraintMoment": [
+              -1.3399856084771118e-17,
+              -5.293955920339377e-23,
+              2.0949242367966983e-17
+            ],
+            "constraintPowerW": 0.0,
+            "contactWorkResidualW": -6.938893903907228e-17,
+            "electricalCurrentA": null,
+            "acceptance": false
+          },
+          "residualJ": -6.41634382981666e-11
+        },
+        {
+          "state": {
+            "y": -1.1248611004120378e-05,
+            "ydot": -0.01279777332074941,
+            "u": 2.7924142407007965e-05,
+            "udot": -0.001381645211074837,
+            "theta": 0.1999993725636432,
+            "thetadot": -0.0013837754046272365,
+            "time": 0.00175,
+            "actuator_work": 1.3512422854239238e-09,
+            "cam_heat": 0.0
+          },
+          "ports": {
+            "accelerations": [
+              -7.181079773586034,
+              -0.13279065732505066,
+              -2.2042142251603964
+            ],
+            "energyJ": 0.018701066629896047,
+            "kineticJ": 2.0670164227500228e-05,
+            "pressureJ": 0.0005037233356909141,
+            "springJ": 0.01809250859576266,
+            "camJ": 8.416453421497354e-05,
+            "actuatorPowerW": 2.980088450419097e-06,
+            "heatW": 0.0,
+            "powerResidualW": -3.354292822774392e-17,
+            "noteForceY": -1.687015165809699,
+            "cassetteContactForce": -1.687015165809699,
+            "springForce": 14.461998456887498,
+            "stopForce": 0.0,
+            "appliedTorque": -0.0021535925847893486,
+            "activeCells": 2188,
+            "activeArea": 0.00037157401469189636,
+            "noteConstraintForce": [
+              -0.0,
+              0.0,
+              -1.0820337681405334e-16
+            ],
+            "noteConstraintMoment": [
+              -1.3354764815219628e-17,
+              -5.293955920339377e-23,
+              1.7514947283324422e-17
+            ],
+            "constraintPowerW": 0.0,
+            "contactWorkResidualW": -3.469446951953614e-17,
+            "electricalCurrentA": null,
+            "acceptance": false
+          },
+          "residualJ": -6.483222708629567e-11
+        },
+        {
+          "state": {
+            "y": -1.4671862696901968e-05,
+            "ydot": -0.014585768446340495,
+            "u": 2.7577102078186816e-05,
+            "udot": -0.001384630803229413,
+            "theta": 0.19999895234527404,
+            "thetadot": -0.0019994382874955136,
+            "time": 0.002,
+            "actuator_work": 2.2562214492488616e-09,
+            "cam_heat": 0.0
+          },
+          "ports": {
+            "accelerations": [
+              -7.121733474303938,
+              0.10915970145004146,
+              -2.7212553573192975
+            ],
+            "energyJ": 0.018701067532524814,
+            "kineticJ": 2.6427619147073972e-05,
+            "pressureJ": 0.0004973890894886326,
+            "springJ": 0.01809752784052544,
+            "camJ": 7.972298336366794e-05,
+            "actuatorPowerW": 4.305975469694252e-06,
+            "heatW": 0.0,
+            "powerResidualW": 1.0749102210541248e-16,
+            "noteForceY": -1.6730732364508527,
+            "cassetteContactForce": -1.6730732364508527,
+            "springForce": 14.46400434998808,
+            "stopForce": 0.0,
+            "appliedTorque": -0.0021535925847893486,
+            "activeCells": 2184,
+            "activeArea": 0.0003708965935680744,
+            "noteConstraintForce": [
+              -0.0,
+              0.0,
+              -1.0820337681405334e-16
+            ],
+            "noteConstraintMoment": [
+              -1.3646556085020158e-17,
+              -5.293955920339377e-23,
+              1.5976311934636986e-17
+            ],
+            "constraintPowerW": 0.0,
+            "contactWorkResidualW": 1.1102230246251565e-16,
+            "electricalCurrentA": null,
+            "acceptance": false
+          },
+          "residualJ": -6.718262404225987e-11
+        }
+      ],
+      "final": {
+        "y": -1.4671862696901968e-05,
+        "ydot": -0.014585768446340495,
+        "u": 2.7577102078186816e-05,
+        "udot": -0.001384630803229413,
+        "theta": 0.19999895234527404,
+        "thetadot": -0.0019994382874955136,
+        "time": 0.002,
+        "actuator_work": 2.2562214492488616e-09,
+        "cam_heat": 0.0
+      },
+      "maxResidualJ": 6.718262404225987e-11
+    },
+    "torque_removed": {
+      "initial": {
+        "y": 0.0,
+        "ydot": 0.0,
+        "u": 2.9403514306377918e-05,
+        "udot": 0.0,
+        "theta": 0.2,
+        "thetadot": 0.0,
+        "time": 0.0,
+        "actuator_work": 0.0,
+        "cam_heat": 0.0
+      },
+      "initialPorts": {
+        "accelerations": [
+          -7.37946231334987,
+          -1.1557467893091455,
+          21.535925847893484
+        ],
+        "energyJ": 0.01870106534348599,
+        "kineticJ": 0.0,
+        "pressureJ": 0.0005254940219401751,
+        "springJ": 0.01807112024652092,
+        "camJ": 0.00010445107502489092,
+        "actuatorPowerW": 0.0,
+        "heatW": 0.0,
+        "powerResidualW": 0.0,
+        "noteForceY": -1.7336201839637182,
+        "cassetteContactForce": -1.7336201839637182,
+        "springForce": 14.453447687309136,
+        "stopForce": 0.0,
+        "appliedTorque": 0.0,
+        "activeCells": 2208,
+        "activeArea": 0.00037496802363442714,
+        "noteConstraintForce": [
+          -0.0,
+          0.0,
+          -1.6230506522108001e-16
+        ],
+        "noteConstraintMoment": [
+          -2.2901385304869678e-17,
+          -5.293955920339377e-23,
+          1.9578319542835898e-17
+        ],
+        "constraintPowerW": 0.0,
+        "contactWorkResidualW": 0.0,
+        "electricalCurrentA": null,
+        "acceptance": false
+      },
+      "parameters": {
+        "note_mass": 0.234925,
+        "cassette_mass": 1.5,
+        "cam_inertia": 0.0001,
+        "pressure_density": 10000000.0,
+        "cam_stiffness": 1000000.0,
+        "cam_damping": 10.0,
+        "torque_limit": 0.03,
+        "spring_free_length": 0.00953,
+        "resolution": 1024,
+        "note_x": 0.010567440020061214,
+        "grid_phase_rad": 0.0
+      },
+      "dt": 0.0005,
+      "duration": 0.002,
+      "torque": 0.0,
+      "rows": [
+        {
+          "state": {
+            "y": -9.220799402959802e-07,
+            "ydot": -0.0036869083656928332,
+            "u": 2.9261124893187565e-05,
+            "udot": -0.0005612419107942387,
+            "theta": 0.20000268749960956,
+            "thetadot": 0.01073203383282147,
+            "time": 0.0005,
+            "actuator_work": 0.0,
+            "cam_heat": 0.0
+          },
+          "ports": {
+            "accelerations": [
+              -7.362564171328128,
+              -1.0573583456563107,
+              21.32344880471551
+            ],
+            "energyJ": 0.018701065241444197,
+            "kineticJ": 1.8387054032341357e-06,
+            "pressureJ": 0.0005236507492468772,
+            "springJ": 0.0180731783230497,
+            "camJ": 0.0001023974637443877,
+            "actuatorPowerW": 0.0,
+            "heatW": 0.0,
+            "powerResidualW": -6.938893903907228e-18,
+            "noteForceY": -1.7296503879492604,
+            "cassetteContactForce": -1.7296503879492604,
+            "springForce": 14.454270698117375,
+            "stopForce": 0.0,
+            "appliedTorque": 0.0,
+            "activeCells": 2208,
+            "activeArea": 0.00037496802363442714,
+            "noteConstraintForce": [
+              -0.0,
+              0.0,
+              -1.6230506522108001e-16
+            ],
+            "noteConstraintMoment": [
+              -2.3231130929896592e-17,
+              -5.293955920339377e-23,
+              1.3353050896990418e-17
+            ],
+            "constraintPowerW": 0.0,
+            "contactWorkResidualW": -4.336808689942018e-18,
+            "electricalCurrentA": null,
+            "acceptance": false
+          },
+          "residualJ": -1.0204179168304961e-10
+        },
+        {
+          "state": {
+            "y": -3.684101600165462e-06,
+            "ydot": -0.007357241778989691,
+            "u": 2.8858322810501437e-05,
+            "udot": -0.0010268956799104148,
+            "theta": 0.20001069738941754,
+            "thetadot": 0.021257694642999255,
+            "time": 0.001,
+            "actuator_work": 0.0,
+            "cam_heat": 0.0
+          },
+          "ports": {
+            "accelerations": [
+              -7.315286790231831,
+              -0.7790713813450373,
+              20.722298067509158
+            ],
+            "energyJ": 0.018701064900610187,
+            "kineticJ": 7.171608969248549e-06,
+            "pressureJ": 0.0005181946623406558,
+            "springJ": 0.018079001002291727,
+            "camJ": 9.669762700855681e-05,
+            "actuatorPowerW": 0.0,
+            "heatW": 0.0,
+            "powerResidualW": 2.6020852139652106e-17,
+            "noteForceY": -1.7185437491952127,
+            "cassetteContactForce": -1.7185437491952127,
+            "springForce": 14.456598894155304,
+            "stopForce": 0.0,
+            "appliedTorque": 0.0,
+            "activeCells": 2200,
+            "activeArea": 0.00037360893636981436,
+            "noteConstraintForce": [
+              -0.0,
+              0.0,
+              -1.0820337681405334e-16
+            ],
+            "noteConstraintMoment": [
+              -1.3649874733637721e-17,
+              -5.293955920339377e-23,
+              1.1121542597448963e-17
+            ],
+            "constraintPowerW": 0.0,
+            "contactWorkResidualW": 2.7755575615628914e-17,
+            "electricalCurrentA": null,
+            "acceptance": false
+          },
+          "residualJ": -4.428758020036394e-10
+        },
+        {
+          "state": {
+            "y": -8.274038307615464e-06,
+            "ydot": -0.010995688658662132,
+            "u": 2.8263730386511543e-05,
+            "udot": -0.0013174084360129128,
+            "theta": 0.20002388156160414,
+            "thetadot": 0.03140576853797332,
+            "time": 0.0015,
+            "actuator_work": 0.0,
+            "cam_heat": 0.0
+          },
+          "ports": {
+            "accelerations": [
+              -7.2333789180794374,
+              -0.36624737426673715,
+              19.834659102171372
+            ],
+            "energyJ": 0.0187010647985196,
+            "kineticJ": 1.5552813278183238e-05,
+            "pressureJ": 0.0005093347273885288,
+            "springJ": 0.018087597808201884,
+            "camJ": 8.857944965100562e-05,
+            "actuatorPowerW": 0.0,
+            "heatW": 0.0,
+            "powerResidualW": 5.551115123125783e-17,
+            "noteForceY": -1.699301542329812,
+            "cassetteContactForce": -1.699301542329812,
+            "springForce": 14.460035638365964,
+            "stopForce": 0.0,
+            "appliedTorque": 0.0,
+            "activeCells": 2192,
+            "activeArea": 0.00037225303848790033,
+            "noteConstraintForce": [
+              -0.0,
+              0.0,
+              -1.0820337681405334e-16
+            ],
+            "noteConstraintMoment": [
+              -1.3183455710359896e-17,
+              -5.293955920339377e-23,
+              2.1946623663358922e-17
+            ],
+            "constraintPowerW": 0.0,
+            "contactWorkResidualW": 5.551115123125783e-17,
+            "electricalCurrentA": null,
+            "acceptance": false
+          },
+          "residualJ": -5.449663879886213e-10
+        },
+        {
+          "state": {
+            "y": -1.4671694635936659e-05,
+            "ydot": -0.014585649485089084,
+            "u": 2.7579040906020065e-05,
+            "udot": -0.0013819817007808882,
+            "theta": 0.20004202136755492,
+            "thetadot": 0.041069333313351566,
+            "time": 0.002,
+            "actuator_work": 0.0,
+            "cam_heat": 0.0
+          },
+          "ports": {
+            "accelerations": [
+              -7.121766616140259,
+              0.11213316734372514,
+              18.811992507598763
+            ],
+            "energyJ": 0.018701064694949244,
+            "kineticJ": 2.6505849359972103e-05,
+            "pressureJ": 0.0004973926144761272,
+            "springJ": 0.0180974997973221,
+            "camJ": 7.966643379104214e-05,
+            "actuatorPowerW": 0.0,
+            "heatW": 0.0,
+            "powerResidualW": 5.204170427930421e-17,
+            "noteForceY": -1.6730810222967503,
+            "cassetteContactForce": -1.6730810222967503,
+            "springForce": 14.463993143563206,
+            "stopForce": 0.0,
+            "appliedTorque": 0.0,
+            "activeCells": 2184,
+            "activeArea": 0.0003708965935680744,
+            "noteConstraintForce": [
+              -0.0,
+              0.0,
+              -1.0820337681405334e-16
+            ],
+            "noteConstraintMoment": [
+              -1.3371852712313748e-17,
+              -5.293955920339377e-23,
+              1.9426700645277378e-17
+            ],
+            "constraintPowerW": 0.0,
+            "contactWorkResidualW": 4.85722573273506e-17,
+            "electricalCurrentA": null,
+            "acceptance": false
+          },
+          "residualJ": -6.485367451403157e-10
+        }
+      ],
+      "final": {
+        "y": -1.4671694635936659e-05,
+        "ydot": -0.014585649485089084,
+        "u": 2.7579040906020065e-05,
+        "udot": -0.0013819817007808882,
+        "theta": 0.20004202136755492,
+        "thetadot": 0.041069333313351566,
+        "time": 0.002,
+        "actuator_work": 0.0,
+        "cam_heat": 0.0
+      },
+      "maxResidualJ": 6.485367451403157e-10
+    },
+    "zero_spring_preload": {
+      "initial": {
+        "y": 0.0,
+        "ydot": 0.0,
+        "u": 2.9403514306377918e-05,
+        "udot": 0.0,
+        "theta": 0.2,
+        "thetadot": 0.0,
+        "time": 0.0,
+        "actuator_work": 0.0,
+        "cam_heat": 0.0
+      },
+      "initialPorts": {
+        "accelerations": [
+          -7.37946231334987,
+          -10.791378580848571,
+          21.535925847893484
+        ],
+        "energyJ": 0.000629945096965066,
+        "kineticJ": 0.0,
+        "pressureJ": 0.0005254940219401751,
+        "springJ": 0,
+        "camJ": 0.00010445107502489092,
+        "actuatorPowerW": 0.0,
+        "heatW": 0.0,
+        "powerResidualW": 0.0,
+        "noteForceY": -1.7336201839637182,
+        "cassetteContactForce": -1.7336201839637182,
+        "springForce": 0,
+        "stopForce": 0.0,
+        "appliedTorque": 0.0,
+        "activeCells": 2208,
+        "activeArea": 0.00037496802363442714,
+        "noteConstraintForce": [
+          -0.0,
+          0.0,
+          -1.6230506522108001e-16
+        ],
+        "noteConstraintMoment": [
+          -2.2901385304869678e-17,
+          -5.293955920339377e-23,
+          1.9578319542835898e-17
+        ],
+        "constraintPowerW": 0.0,
+        "contactWorkResidualW": 0.0,
+        "electricalCurrentA": null,
+        "acceptance": false
+      },
+      "parameters": {
+        "note_mass": 0.234925,
+        "cassette_mass": 1.5,
+        "cam_inertia": 0.0001,
+        "pressure_density": 10000000.0,
+        "cam_stiffness": 1000000.0,
+        "cam_damping": 10.0,
+        "torque_limit": 0.03,
+        "spring_free_length": 0.007,
+        "resolution": 1024,
+        "note_x": 0.010567440020061214,
+        "grid_phase_rad": 0.0
+      },
+      "dt": 0.0005,
+      "duration": 0.002,
+      "torque": 0.0,
+      "rows": [
+        {
+          "state": {
+            "y": -9.21681599520122e-07,
+            "ydot": -0.003683721639486006,
+            "u": 2.8073450235867527e-05,
+            "udot": -0.005244823273584841,
+            "theta": 0.20000265011060114,
+            "thetadot": 0.010432920772463378,
+            "time": 0.0005,
+            "actuator_work": 0.0,
+            "cam_heat": 0.0
+          },
+          "ports": {
+            "accelerations": [
+              -7.343716504412524,
+              -9.898807561494651,
+              19.553771067169848
+            ],
+            "energyJ": 0.0006299367354802165,
+            "kineticJ": 2.223051390372629e-05,
+            "pressureJ": 0.0005215998048093492,
+            "springJ": 0,
+            "camJ": 8.61064167671411e-05,
+            "actuatorPowerW": 0.0,
+            "heatW": 0.0,
+            "powerResidualW": 0.0,
+            "noteForceY": -1.7252225997991122,
+            "cassetteContactForce": -1.7252225997991122,
+            "springForce": 0,
+            "stopForce": 0.0,
+            "appliedTorque": 0.0,
+            "activeCells": 2208,
+            "activeArea": 0.00037496802363442714,
+            "noteConstraintForce": [
+              -0.0,
+              0.0,
+              -1.6230506522108001e-16
+            ],
+            "noteConstraintMoment": [
+              -2.3046203123431787e-17,
+              -5.293955920339377e-23,
+              1.2372186744069938e-17
+            ],
+            "constraintPowerW": 0.0,
+            "contactWorkResidualW": 6.938893903907228e-18,
+            "electricalCurrentA": null,
+            "acceptance": false
+          },
+          "residualJ": -8.361484849449784e-09
+        },
+        {
+          "state": {
+            "y": -3.6780914061790606e-06,
+            "ydot": -0.007333586497411975,
+            "u": 2.43042794369756e-05,
+            "udot": -0.009622169990459221,
+            "theta": 0.20001010953255274,
+            "thetadot": 0.018939056478473278,
+            "time": 0.001,
+            "actuator_work": 0.0,
+            "cam_heat": 0.0
+          },
+          "ports": {
+            "accelerations": [
+              -7.243427893912424,
+              -7.369579158514687,
+              13.936414471328625
+            ],
+            "energyJ": 0.0006299284953850731,
+            "kineticJ": 7.577485926359117e-05,
+            "pressureJ": 0.0005104170772469937,
+            "springJ": 0,
+            "camJ": 4.3736558874488195e-05,
+            "actuatorPowerW": 0.0,
+            "heatW": 0.0,
+            "powerResidualW": -5.551115123125783e-17,
+            "noteForceY": -1.7016622979773761,
+            "cassetteContactForce": -1.7016622979773761,
+            "springForce": 0,
+            "stopForce": 0.0,
+            "appliedTorque": 0.0,
+            "activeCells": 2192,
+            "activeArea": 0.00037225303848790033,
+            "noteConstraintForce": [
+              -0.0,
+              0.0,
+              -1.0820337681405334e-16
+            ],
+            "noteConstraintMoment": [
+              -1.3469450098427655e-17,
+              -5.293955920339377e-23,
+              2.0348696008363684e-17
+            ],
+            "constraintPowerW": 0.0,
+            "contactWorkResidualW": -5.204170427930421e-17,
+            "electricalCurrentA": null,
+            "acceptance": false
+          },
+          "residualJ": -1.660157999288682e-08
+        },
+        {
+          "state": {
+            "y": -8.244139170037261e-06,
+            "ydot": -0.010917598366994265,
+            "u": 1.8719442453573205e-05,
+            "udot": -0.012407804507977493,
+            "theta": 0.20002099373373428,
+            "thetadot": 0.023910833005480338,
+            "time": 0.0015,
+            "actuator_work": 0.0,
+            "cam_heat": 0.0
+          },
+          "ports": {
+            "accelerations": [
+              -7.086463714152683,
+              -3.6206900348641597,
+              5.612365309077668
+            ],
+            "energyJ": 0.0006299197892069555,
+            "kineticJ": 0.0001294946157617139,
+            "pressureJ": 0.0004933328630876361,
+            "springJ": 0,
+            "camJ": 7.092310357605464e-06,
+            "actuatorPowerW": 0.0,
+            "heatW": 0.0,
+            "powerResidualW": 4.163336342344337e-17,
+            "noteForceY": -1.664787488047319,
+            "cassetteContactForce": -1.664787488047319,
+            "springForce": 0,
+            "stopForce": 0.0,
+            "appliedTorque": 0.0,
+            "activeCells": 2180,
+            "activeArea": 0.00037021680711958957,
+            "noteConstraintForce": [
+              -0.0,
+              0.0,
+              -5.410168840702667e-17
+            ],
+            "noteConstraintMoment": [
+              -3.567388445202343e-18,
+              -0.0,
+              1.4756160974117166e-17
+            ],
+            "constraintPowerW": 0.0,
+            "contactWorkResidualW": 4.163336342344337e-17,
+            "electricalCurrentA": null,
+            "acceptance": false
+          },
+          "residualJ": -2.5307758110514056e-08
+        },
+        {
+          "state": {
+            "y": -1.4580922573836654e-05,
+            "ydot": -0.014413174601073877,
+            "u": 1.224284675297519e-05,
+            "udot": -0.013286779968605038,
+            "theta": 0.20003325132943536,
+            "thetadot": 0.02465185268978431,
+            "time": 0.002,
+            "actuator_work": 0.0,
+            "cam_heat": 0.0
+          },
+          "ports": {
+            "accelerations": [
+              -6.888831889736351,
+              -1.0789058877975415,
+              0.0
+            ],
+            "energyJ": 0.0006291337508303835,
+            "kineticJ": 0.0001568358901520893,
+            "pressureJ": 0.00047229786067829415,
+            "springJ": 0,
+            "camJ": 0.0,
+            "actuatorPowerW": 0.0,
+            "heatW": 0.0,
+            "powerResidualW": -2.42861286636753e-16,
+            "noteForceY": -1.6183588316963122,
+            "cassetteContactForce": -1.6183588316963122,
+            "springForce": 0,
+            "stopForce": 0.0,
+            "appliedTorque": 0.0,
+            "activeCells": 2156,
+            "activeArea": 0.00036614597064582106,
+            "noteConstraintForce": [
+              -0.0,
+              0.0,
+              -0.0
+            ],
+            "noteConstraintMoment": [
+              5.780343083604233e-18,
+              -0.0,
+              1.9207742628412142e-17
+            ],
+            "constraintPowerW": 0.0,
+            "contactWorkResidualW": -2.42861286636753e-16,
+            "electricalCurrentA": null,
+            "acceptance": false
+          },
+          "residualJ": -8.113461346825239e-07
+        }
+      ],
+      "final": {
+        "y": -1.4580922573836654e-05,
+        "ydot": -0.014413174601073877,
+        "u": 1.224284675297519e-05,
+        "udot": -0.013286779968605038,
+        "theta": 0.20003325132943536,
+        "thetadot": 0.02465185268978431,
+        "time": 0.002,
+        "actuator_work": 0.0,
+        "cam_heat": 0.0
+      },
+      "maxResidualJ": 8.113461346825239e-07
+    },
+    "zero_spring_preload_half": {
+      "initial": {
+        "y": 0.0,
+        "ydot": 0.0,
+        "u": 2.9403514306377918e-05,
+        "udot": 0.0,
+        "theta": 0.2,
+        "thetadot": 0.0,
+        "time": 0.0,
+        "actuator_work": 0.0,
+        "cam_heat": 0.0
+      },
+      "initialPorts": {
+        "accelerations": [
+          -7.37946231334987,
+          -10.791378580848571,
+          21.535925847893484
+        ],
+        "energyJ": 0.000629945096965066,
+        "kineticJ": 0.0,
+        "pressureJ": 0.0005254940219401751,
+        "springJ": 0,
+        "camJ": 0.00010445107502489092,
+        "actuatorPowerW": 0.0,
+        "heatW": 0.0,
+        "powerResidualW": 0.0,
+        "noteForceY": -1.7336201839637182,
+        "cassetteContactForce": -1.7336201839637182,
+        "springForce": 0,
+        "stopForce": 0.0,
+        "appliedTorque": 0.0,
+        "activeCells": 2208,
+        "activeArea": 0.00037496802363442714,
+        "noteConstraintForce": [
+          -0.0,
+          0.0,
+          -1.6230506522108001e-16
+        ],
+        "noteConstraintMoment": [
+          -2.2901385304869678e-17,
+          -5.293955920339377e-23,
+          1.9578319542835898e-17
+        ],
+        "constraintPowerW": 0.0,
+        "contactWorkResidualW": 0.0,
+        "electricalCurrentA": null,
+        "acceptance": false
+      },
+      "parameters": {
+        "note_mass": 0.234925,
+        "cassette_mass": 1.5,
+        "cam_inertia": 0.0001,
+        "pressure_density": 10000000.0,
+        "cam_stiffness": 1000000.0,
+        "cam_damping": 10.0,
+        "torque_limit": 0.03,
+        "spring_free_length": 0.007,
+        "resolution": 1024,
+        "note_x": 0.010567440020061214,
+        "grid_phase_rad": 0.0
+      },
+      "dt": 0.00025,
+      "duration": 0.002,
+      "torque": 0.0,
+      "rows": [
+        {
+          "state": {
+            "y": -2.3056124793914147e-07,
+            "ydot": -0.001844114388688835,
+            "u": 2.9067462366481515e-05,
+            "udot": -0.002678986393128016,
+            "theta": 0.20000067038018768,
+            "thetadot": 0.00534210150597245,
+            "time": 0.00025,
+            "actuator_work": 0.0,
+            "cam_heat": 0.0
+          },
+          "ports": {
+            "accelerations": [
+              -7.370467493453711,
+              -10.565868623439842,
+              21.035122472256756
+            ],
+            "energyJ": 0.0006299449642232895,
+            "kineticJ": 5.783614495660233e-06,
+            "pressureJ": 0.0005245123285386873,
+            "springJ": 0,
+            "camJ": 9.964902118894191e-05,
+            "actuatorPowerW": 0.0,
+            "heatW": 0.0,
+            "powerResidualW": 2.0816681711721685e-17,
+            "noteForceY": -1.7315070758996132,
+            "cassetteContactForce": -1.7315070758996132,
+            "springForce": 0,
+            "stopForce": 0.0,
+            "appliedTorque": 0.0,
+            "activeCells": 2208,
+            "activeArea": 0.00037496802363442714,
+            "noteConstraintForce": [
+              -0.0,
+              0.0,
+              -1.6230506522108001e-16
+            ],
+            "noteConstraintMoment": [
+              -2.3200242351462637e-17,
+              -5.293955920339377e-23,
+              1.421448340434804e-17
+            ],
+            "constraintPowerW": 0.0,
+            "contactWorkResidualW": 1.9081958235744878e-17,
+            "electricalCurrentA": null,
+            "acceptance": false
+          },
+          "residualJ": -1.3274177644660018e-10
+        },
+        {
+          "state": {
+            "y": -9.216836240859915e-07,
+            "ydot": -0.003683750756467527,
+            "u": 2.8073368127294185e-05,
+            "udot": -0.005246004123876429,
+            "theta": 0.2000026502934336,
+            "thetadot": 0.01043555008216561,
+            "time": 0.0005,
+            "actuator_work": 0.0,
+            "cam_heat": 0.0
+          },
+          "ports": {
+            "accelerations": [
+              -7.343715168823066,
+              -9.898752595108329,
+              19.553648699198675
+            ],
+            "energyJ": 0.0006299448314816012,
+            "kineticJ": 2.223983291753948e-05,
+            "pressureJ": 0.0005215996596609379,
+            "springJ": 0,
+            "camJ": 8.610533890312379e-05,
+            "actuatorPowerW": 0.0,
+            "heatW": 0.0,
+            "powerResidualW": 4.163336342344337e-17,
+            "noteForceY": -1.725222286035759,
+            "cassetteContactForce": -1.725222286035759,
+            "springForce": 0,
+            "stopForce": 0.0,
+            "appliedTorque": 0.0,
+            "activeCells": 2208,
+            "activeArea": 0.00037496802363442714,
+            "noteConstraintForce": [
+              -0.0,
+              0.0,
+              -1.6230506522108001e-16
+            ],
+            "noteConstraintMoment": [
+              -2.2905388859034435e-17,
+              -5.293955920339377e-23,
+              2.2294330688206812e-17
+            ],
+            "constraintPowerW": 0.0,
+            "contactWorkResidualW": 3.8163916471489756e-17,
+            "electricalCurrentA": null,
+            "acceptance": false
+          },
+          "residualJ": -2.6548346474756374e-10
+        },
+        {
+          "state": {
+            "y": -2.0717602545455793e-06,
+            "ydot": -0.005515163637688584,
+            "u": 2.646277097663571e-05,
+            "udot": -0.0075938521970338796,
+            "theta": 0.20000584747173064,
+            "thetadot": 0.015042081315185817,
+            "time": 0.00075,
+            "actuator_work": 0.0,
+            "cam_heat": 0.0
+          },
+          "ports": {
+            "accelerations": [
+              -7.30289052780089,
+              -8.818309744848069,
+              17.153356076391994
+            ],
+            "energyJ": 0.0006299450889510756,
+            "kineticJ": 4.683411698387038e-05,
+            "pressureJ": 0.0005168498217662229,
+            "springJ": 0,
+            "camJ": 6.626115020098233e-05,
+            "actuatorPowerW": 0.0,
+            "heatW": 0.0,
+            "powerResidualW": 1.1102230246251565e-16,
+            "noteForceY": -1.715631557243624,
+            "cassetteContactForce": -1.715631557243624,
+            "springForce": 0,
+            "stopForce": 0.0,
+            "appliedTorque": 0.0,
+            "activeCells": 2196,
+            "activeArea": 0.0003729308621681228,
+            "noteConstraintForce": [
+              -0.0,
+              0.0,
+              -1.0820337681405334e-16
+            ],
+            "noteConstraintMoment": [
+              -1.319211132828965e-17,
+              -5.293955920339377e-23,
+              2.155021224404391e-17
+            ],
+            "constraintPowerW": 0.0,
+            "contactWorkResidualW": 1.0755285551056204e-16,
+            "electricalCurrentA": null,
+            "acceptance": false
+          },
+          "residualJ": -8.013990404447113e-12
+        },
+        {
+          "state": {
+            "y": -3.678185601810985e-06,
+            "ydot": -0.007333764490044322,
+            "u": 2.4302971512725792e-05,
+            "udot": -0.009624301480656522,
+            "theta": 0.2000101124227359,
+            "thetadot": 0.01894375853753714,
+            "time": 0.001,
+            "actuator_work": 0.0,
+            "cam_heat": 0.0
+          },
+          "ports": {
+            "accelerations": [
+              -7.243405757292696,
+              -7.368703454941497,
+              13.934465097803484
+            ],
+            "energyJ": 0.0006299449569629954,
+            "kineticJ": 7.580594257595569e-05,
+            "pressureJ": 0.0005104146913160886,
+            "springJ": 0,
+            "camJ": 4.372432307095109e-05,
+            "actuatorPowerW": 0.0,
+            "heatW": 0.0,
+            "powerResidualW": 4.163336342344337e-17,
+            "noteForceY": -1.7016570975319867,
+            "cassetteContactForce": -1.7016570975319867,
+            "springForce": 0,
+            "stopForce": 0.0,
+            "appliedTorque": 0.0,
+            "activeCells": 2192,
+            "activeArea": 0.00037225303848790033,
+            "noteConstraintForce": [
+              -0.0,
+              0.0,
+              -1.0820337681405334e-16
+            ],
+            "noteConstraintMoment": [
+              -1.358005572685457e-17,
+              -5.293955920339377e-23,
+              1.6471826208780752e-17
+            ],
+            "constraintPowerW": 0.0,
+            "contactWorkResidualW": 2.7755575615628914e-17,
+            "electricalCurrentA": null,
+            "acceptance": false
+          },
+          "residualJ": -1.400020705919977e-10
+        },
+        {
+          "state": {
+            "y": -5.737248383874383e-06,
+            "ydot": -0.009135667678009544,
+            "u": 2.1684252775137177e-05,
+            "udot": -0.01125241550501981,
+            "theta": 0.2000152446722366,
+            "thetadot": 0.021952083846451947,
+            "time": 0.00125,
+            "actuator_work": 0.0,
+            "cam_heat": 0.0
+          },
+          "ports": {
+            "accelerations": [
+              -7.169598871838757,
+              -5.610821732665873,
+              10.0314415902832
+            ],
+            "energyJ": 0.0006299448247981118,
+            "kineticJ": 0.00010479020576752648,
+            "pressureJ": 0.0005024952820472333,
+            "springJ": 0,
+            "camJ": 2.265933698335198e-05,
+            "actuatorPowerW": 0.0,
+            "heatW": 0.0,
+            "powerResidualW": -1.8041124150158794e-16,
+            "noteForceY": -1.68431801496672,
+            "cassetteContactForce": -1.68431801496672,
+            "springForce": 0,
+            "stopForce": 0.0,
+            "appliedTorque": 0.0,
+            "activeCells": 2188,
+            "activeArea": 0.00037157401469189636,
+            "noteConstraintForce": [
+              -0.0,
+              0.0,
+              -1.0820337681405334e-16
+            ],
+            "noteConstraintMoment": [
+              -1.2988004512142191e-17,
+              -5.293955920339377e-23,
+              1.8918480876924798e-17
+            ],
+            "constraintPowerW": 0.0,
+            "contactWorkResidualW": -1.8041124150158794e-16,
+            "electricalCurrentA": null,
+            "acceptance": false
+          },
+          "residualJ": -2.7216695422990073e-10
+        },
+        {
+          "state": {
+            "y": -8.244346997129423e-06,
+            "ydot": -0.010917661230699678,
+            "u": 1.871609680347133e-05,
+            "udot": -0.012410074018667732,
+            "theta": 0.20002100113857,
+            "thetadot": 0.023915883607447046,
+            "time": 0.0015,
+            "actuator_work": 0.0,
+            "cam_heat": 0.0
+          },
+          "ports": {
+            "accelerations": [
+              -7.08640781755609,
+              -3.6184501114912204,
+              5.6073782677743464
+            ],
+            "energyJ": 0.0006299436909863984,
+            "kineticJ": 0.00012953703240422003,
+            "pressureJ": 0.0004933269473266045,
+            "springJ": 0,
+            "camJ": 7.0797112555738225e-06,
+            "actuatorPowerW": 0.0,
+            "heatW": 0.0,
+            "powerResidualW": 1.457167719820518e-16,
+            "noteForceY": -1.6647743565393645,
+            "cassetteContactForce": -1.6647743565393645,
+            "springForce": 0,
+            "stopForce": 0.0,
+            "appliedTorque": 0.0,
+            "activeCells": 2180,
+            "activeArea": 0.00037021680711958957,
+            "noteConstraintForce": [
+              -0.0,
+              0.0,
+              -5.410168840702667e-17
+            ],
+            "noteConstraintMoment": [
+              -3.86396081894343e-18,
+              -0.0,
+              1.7786421342919426e-17
+            ],
+            "constraintPowerW": 0.0,
+            "contactWorkResidualW": 1.457167719820518e-16,
+            "electricalCurrentA": null,
+            "acceptance": false
+          },
+          "residualJ": -1.4059786675830674e-09
+        },
+        {
+          "state": {
+            "y": -1.1194229548600609e-05,
+            "ydot": -0.01267750914039158,
+            "u": 1.5522599859454086e-05,
+            "udot": -0.01304884924035142,
+            "theta": 0.20002710629009232,
+            "thetadot": 0.02472763630750759,
+            "time": 0.00175,
+            "actuator_work": 0.0,
+            "cam_heat": 0.0
+          },
+          "ports": {
+            "accelerations": [
+              -6.992876266444884,
+              -1.4741970239041924,
+              0.8471808058713522
+            ],
+            "energyJ": 0.0006299429811026972,
+            "kineticJ": 0.0001466134061670612,
+            "pressureJ": 0.00048316798217672873,
+            "springJ": 0,
+            "camJ": 1.6159275890726957e-07,
+            "actuatorPowerW": 0.0,
+            "heatW": 0.0,
+            "powerResidualW": 2.38524477946811e-16,
+            "noteForceY": -1.6428014568945644,
+            "cassetteContactForce": -1.6428014568945644,
+            "springForce": 0,
+            "stopForce": 0.0,
+            "appliedTorque": 0.0,
+            "activeCells": 2164,
+            "activeArea": 0.0003675029395605499,
+            "noteConstraintForce": [
+              -0.0,
+              0.0,
+              -0.0
+            ],
+            "noteConstraintMoment": [
+              6.402326655962456e-18,
+              -0.0,
+              2.0890797094606436e-17
+            ],
+            "constraintPowerW": 0.0,
+            "contactWorkResidualW": 2.3592239273284576e-16,
+            "electricalCurrentA": null,
+            "acceptance": false
+          },
+          "residualJ": -2.1158623687757977e-09
+        },
+        {
+          "state": {
+            "y": -1.4581066056632659e-05,
+            "ydot": -0.01441283731153235,
+            "u": 1.2222381935186014e-05,
+            "udot": -0.013336422056281633,
+            "theta": 0.20003329702396927,
+            "thetadot": 0.02476293550775223,
+            "time": 0.002,
+            "actuator_work": 0.0,
+            "cam_heat": 0.0
+          },
+          "ports": {
+            "accelerations": [
+              -6.888511125067166,
+              -1.0788556507042693,
+              0.0
+            ],
+            "energyJ": 0.0006300907558813244,
+            "kineticJ": 0.00015782624605155027,
+            "pressureJ": 0.0004722645098297741,
+            "springJ": 0,
+            "camJ": 0.0,
+            "actuatorPowerW": 0.0,
+            "heatW": 0.0,
+            "powerResidualW": -6.938893903907228e-18,
+            "noteForceY": -1.618283476056404,
+            "cassetteContactForce": -1.618283476056404,
+            "springForce": 0,
+            "stopForce": 0.0,
+            "appliedTorque": 0.0,
+            "activeCells": 2152,
+            "activeArea": 0.00036546827758609027,
+            "noteConstraintForce": [
+              -0.0,
+              0.0,
+              -0.0
+            ],
+            "noteConstraintMoment": [
+              5.1268191144893626e-18,
+              -0.0,
+              1.7721199805980845e-17
+            ],
+            "constraintPowerW": 0.0,
+            "contactWorkResidualW": -6.938893903907228e-18,
+            "electricalCurrentA": null,
+            "acceptance": false
+          },
+          "residualJ": 1.456589162583677e-07
+        }
+      ],
+      "final": {
+        "y": -1.4581066056632659e-05,
+        "ydot": -0.01441283731153235,
+        "u": 1.2222381935186014e-05,
+        "udot": -0.013336422056281633,
+        "theta": 0.20003329702396927,
+        "thetadot": 0.02476293550775223,
+        "time": 0.002,
+        "actuator_work": 0.0,
+        "cam_heat": 0.0
+      },
+      "maxResidualJ": 1.456589162583677e-07
+    }
+  },
+  "gridControls": [
+    {
+      "resolution": 512,
+      "phase": 0.0,
+      "result": {
+        "accelerations": [
+          -7.382612028174495,
+          -1.1562400871459289,
+          0.0
+        ],
+        "energyJ": 0.018700990489391542,
+        "kineticJ": 0.0,
+        "pressureJ": 0.0005254191678457298,
+        "springJ": 0.01807112024652092,
+        "camJ": 0.00010445107502489092,
+        "actuatorPowerW": -0.0,
+        "heatW": 0.0,
+        "powerResidualW": 0.0,
+        "noteForceY": -1.7343601307188932,
+        "cassetteContactForce": -1.7343601307188932,
+        "springForce": 14.453447687309136,
+        "stopForce": 0.0,
+        "appliedTorque": -0.0021535925847893486,
+        "activeCells": 556,
+        "activeArea": 0.000377673770272179,
+        "noteConstraintForce": [
+          -0.0,
+          0.0,
+          -4.83554168928535e-17
+        ],
+        "noteConstraintMoment": [
+          -6.350100126447083e-18,
+          -0.0,
+          -3.102851092381953e-17
+        ],
+        "constraintPowerW": 0.0,
+        "contactWorkResidualW": 0.0,
+        "electricalCurrentA": null,
+        "acceptance": false
+      }
+    },
+    {
+      "resolution": 1024,
+      "phase": 0.0,
+      "result": {
+        "accelerations": [
+          -7.37946231334987,
+          -1.1557467893091455,
+          0.0
+        ],
+        "energyJ": 0.01870106534348599,
+        "kineticJ": 0.0,
+        "pressureJ": 0.0005254940219401751,
+        "springJ": 0.01807112024652092,
+        "camJ": 0.00010445107502489092,
+        "actuatorPowerW": -0.0,
+        "heatW": 0.0,
+        "powerResidualW": 0.0,
+        "noteForceY": -1.7336201839637182,
+        "cassetteContactForce": -1.7336201839637182,
+        "springForce": 14.453447687309136,
+        "stopForce": 0.0,
+        "appliedTorque": -0.0021535925847893486,
+        "activeCells": 2208,
+        "activeArea": 0.00037496802363442714,
+        "noteConstraintForce": [
+          -0.0,
+          0.0,
+          -1.6230506522108001e-16
+        ],
+        "noteConstraintMoment": [
+          -2.2901385304869678e-17,
+          -5.293955920339377e-23,
+          1.9578319542835898e-17
+        ],
+        "constraintPowerW": 0.0,
+        "contactWorkResidualW": 0.0,
+        "electricalCurrentA": null,
+        "acceptance": false
+      }
+    },
+    {
+      "resolution": 1024,
+      "phase": 0.0015339807878856412,
+      "result": {
+        "accelerations": [
+          -7.381603040783509,
+          -1.156082062904044,
+          0.0
+        ],
+        "energyJ": 0.018701061817433848,
+        "kineticJ": 0.0,
+        "pressureJ": 0.0005254904958880352,
+        "springJ": 0.01807112024652092,
+        "camJ": 0.00010445107502489092,
+        "actuatorPowerW": -0.0,
+        "heatW": 0.0,
+        "powerResidualW": 0.0,
+        "noteForceY": -1.734123094356066,
+        "cassetteContactForce": -1.734123094356066,
+        "springForce": 14.453447687309136,
+        "stopForce": 0.0,
+        "appliedTorque": -0.0021535925847893486,
+        "activeCells": 2220,
+        "activeArea": 0.00037700792583827205,
+        "noteConstraintForce": [
+          -0.0,
+          0.0,
+          -1.3525422101756668e-16
+        ],
+        "noteConstraintMoment": [
+          -1.726596922766841e-17,
+          3.6687114527951883e-20,
+          -3.0995695849120513e-06
+        ],
+        "constraintPowerW": 0.0,
+        "contactWorkResidualW": 0.0,
+        "electricalCurrentA": null,
+        "acceptance": false
+      }
+    }
+  ],
+  "runtimeSeconds": 19.029386700014584,
+  "environment": {
+    "pythonVersion": "3.13.12",
+    "numpyVersion": "2.5.3"
+  },
+  "limits": [
+    "Transverse NOTE y is dynamic; X/Z and orientation are fixed ideal constraints with zero velocity/work, not a free 6DOF body.",
+    "Only positive-side cassette exists in this fixture; negative-side geometry is not queried or adopted.",
+    "Fixed cradle; reaction forces/moments are reported but there is no moving-base dynamics.",
+    "Pressure is recomputed every RK4 stage and endpoint using the area law, never spring force as prescribed NOTE normal.",
+    "One-sided normal-only coupling: mu=0 and fixed belt rotors. No feed, floor, gravity, acquisition, or score simulation.",
+    "Initialized with stored spring/contact energy as a declared isolated fixture, not an actual ground-acquisition handoff.",
+    "Holding_input applies no-NOTE nominal mechanical equilibrium torque, not an ideal cam-angle constraint or guarantee of equilibrium with NOTE.",
+    "Mass/inertia, pressure stiffness, cam compliance/damping and mechanical torque are explicit unmeasured hypotheses; no servo electrical or thermal model.",
+    "Grid/phase controls and RK4 residual retained; finite samples and small time refinement are not a full spatial/time convergence certificate.",
+    "Resting stop reaction can balance force with zero work; moving hard-stop impact remains UNKNOWN and rejects atomically."
+  ]
+}
