@@ -1,17 +1,17 @@
 {
   "schema": "original-connected-visual/1",
   "image": "cad/assembly/connected-floor.png",
-  "imageSha256": "e17417934f3fc0ac5ec21908c1349d1555065f7f6aa096b0feb4adc6dd4e6ed4",
+  "imageSha256": "d33b182fd6a02b6ed33509fef781b856fea87b01c76c4b9d9a17db64bd8e415f",
   "originalStep": "cad/assembly/connected-floor.step",
-  "originalStepSha256": "b8be3c2603a968a14bc1552d8c33024327a4e927c263fdd5c8caf37cc24282ab",
-  "buildReceiptSha256": "b6426dfa333f205b30923402328ceab7a86a8a05508f589a3492a327271c7efe",
+  "originalStepSha256": "b08b08a8e771cb1e811bd9850988b49bdb8ed371df3127caf9e59c7f4a5fe616",
+  "buildReceiptSha256": "42ef63d54f7fb723b8184ef1ab16e672c3a9f399ce74588516af9bf1041d21fb",
   "sourceInputs": {
-    "cad/assembly/build_robot.py": "651b21a2d98ec3a251ca9d8b7170f1d6ad29c08a7479079cec837527f179706b",
+    "cad/assembly/build_robot.py": "cca2c9a3ecca7a622fb1283461c393b2288e3c6efd173c60d72a959e3c500e26",
     "cad/assembly/bumper_candidate.py": "556fba39fda427cb081a2a1d4d806372b67b830606a242bbfc0babf05619fc19",
     "cad/a2_primitives.py": "bef958c710da792f89def8606d7169a7c385fcff257826619a7b29fe0943952e",
     "cad/a2_kinematics.py": "4329126a1465f53c8d27618307b2864ff69803e196ff4521aab8a50daf670581",
     "cad/build_a2_layout.py": "aea31166eabc53113962cc511cfbd190eba54033f7b93476455961dccb1969c9",
-    "cad/cycle-contract-A2.json": "0e08bf88e488539ca8966dcc3cc08727ef2faf98da3740787b308cd54c652f52",
+    "cad/cycle-contract-A2.json": "3700da3bf1a271d6b6763060f913435a4a50cda8d456cb1a57a6f1898416b6ad",
     "cad/components/a2-transmission.json": "0aae2e2dd0d8c4b16729139380f6d1e2df0efa956dad2ee8b205be1a57f3d8b0",
     "cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
     "cad/drivetrain/build_fastening.py": "9d82a974d184200e7a6c414bc74b345cd53aa2cf85f36c3cf528fe818997d4ac",
@@ -37,7 +37,7 @@
     "cad/assembly/slide_pad_attachments.py": "526310777f96f0f537844946c611b05f7e7dc80119a75d308f043832aa7ed7ef"
   },
   "scope": "original authored geometry plus source-sized envelopes; no supplier native geometry redistributed; not fabrication-ready",
-  "sourceExportStepSha256": "fa89042658cc226275982acf9f71e18ba56738b7d0b26cc167cc4b82039cf8ac",
+  "sourceExportStepSha256": "b4272b8b51c5d31ddc8a7742047816426eef9762c09a2c2f5f6cabb98db254f0",
   "publication": {
     "operation": "LF line endings and trailing space/tab removal only; raw source export preserved",
     "script": "scripts/publish_connected_cad.py",

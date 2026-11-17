@@ -40,7 +40,7 @@ def shooter(c,tx):
    add('drilled motor slider',plate,'support')
    # Original carrier bridge, 2 mm total adjustment; fastener/load qualification remains open.
    bridge=h.box(station-40,y+48.175,z-40,170,3.175,80)
-   for cx,rr in [(station,20),(mx,10.65)]:bridge=cut(bridge,h.cyl((cx,y+47,z),(0,1,0),rr,7))
+   for cx,rr in [(station,20),(mx,14.65)]:bridge=cut(bridge,h.cyl((cx,y+47,z),(0,1,0),rr,7))
    for xx in [-25.4,25.4]:bridge=cut(bridge,h.cyl((station+xx,y+47,z),(0,1,0),2.6,7))
    for xx in [-28,28]:
     for zz in [-28,28]:
@@ -53,7 +53,7 @@ def shooter(c,tx):
    lug=cut(lug,h.cyl((mx+37,y+46.5,z),(1,0,0),2.05,8))
    bridge=BRepAlgoAPI_Fuse(bridge,lug).Shape()
    add('slotted carrier bridge proposal',bridge,'support')
-   add('tension jack nominal screw envelope',h.cyl((mx+35,y+46.5,z),(1,0,0),2.413,17),'support')
+   add('tension jack nominal screw envelope',h.cyl((mx+36,y+46.5,z),(1,0,0),2.413,16),'support')
    add('tension jack head envelope',h.cyl((mx+52,y+46.5,z),(1,0,0),3.9,4.8),'support')
    # Bearing plate to bridge: spacers close the actual axial gap; nominal fastener envelopes.
    gap=48.175-41.5875
@@ -97,12 +97,14 @@ def build(shooter_pivot_x_mm=None,shooter_support_y_mm=228.6):
    outer=h.box(x-12.7,y-12.7,bottom,25.4,25.4,top-bottom)
    inner=h.box(x-9.525,y-9.525,bottom-1,19.05,19.05,top-bottom+2)
    parts.append((f'original shooter upright {side} {x}',cut(outer,inner),'support'))
-  # Connection webs to the outer carrier positions; bolt pattern remains a fabrication gate.
+  # Original edge-weld web proposals: butt against carrier rear edges and rail inner faces; weld sizing/load remains open.
   for sz in [-1,1]:
    z=sz*(sh['nominalGap']*500+48.26)
    near=side*152.4-tx['serviceInterfaces']['tread']['assemblyTreadCenterOffsetMm']+side*40
-   lo=min(near,y);span=abs(near-y)
-   web=h.box(160,lo,min(0,z)-3.175,6.35,span,abs(z)+6.35)
+   rail_face=y-side*12.7
+   lo=min(near,rail_face);span=abs(near-rail_face)
+   bottom=z-3.175 if sz<0 else 0
+   web=h.box(153.65,lo,bottom,6.35,span,abs(z)+3.175)
    parts.append((f'original carrier connection web {side} {sz}',h.pitch(web,ang,pivot),'support'))
  parts+=shooter(c,tx)
  try:

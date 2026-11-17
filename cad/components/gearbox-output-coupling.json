@@ -1,0 +1,61 @@
+{
+  "inputs": {
+    "cad/components/gearbox_output_coupling.py": "5d6dfcdfa5897846f800e422ebc1d609a97db4ec8b38df7f4bcf20e9ea6ea8fc",
+    "cad/components/build_cartridge.py": "97019faaaf331d315f3307e260f46b665a3b6f178e6957020084c40cd9bf8ea7",
+    "cad/a2_primitives.py": "bef958c710da792f89def8606d7169a7c385fcff257826619a7b29fe0943952e",
+    "cad/assembly/build_robot.py": "cca2c9a3ecca7a622fb1283461c393b2288e3c6efd173c60d72a959e3c500e26",
+    "cad/electrical/fasteners.py": "788a1cb9bf71a780aed9cbeb5bf48d06532e914fed431edcc0e72a4bd273b799"
+  },
+  "inputsStable": true,
+  "schema": "gearbox-output-coupling-candidate/1",
+  "scriptSha256": "5d6dfcdfa5897846f800e422ebc1d609a97db4ec8b38df7f4bcf20e9ea6ea8fc",
+  "helperSha256": "97019faaaf331d315f3307e260f46b665a3b6f178e6957020084c40cd9bf8ea7",
+  "nativeSubsetSha256": "25fe063c3095015160c63594a90ce4dd69c4d8e464baed9ef4a8ea99b97222c8",
+  "nativeAssemblySha256": "3c7ab9aef641e3cbfd317e794d49d983ae80fe46834c155e0a21f0753173ded4",
+  "nativeSolidCount": 35,
+  "nativeLooseFaceCount": 0,
+  "source": "https://www.revrobotics.com/content/cad/MAXPlanetary%202-Stage.STEP",
+  "checks": [
+    {
+      "part": "original rounded hex short shaft with pilot bore",
+      "nativeIntersections": []
+    },
+    {
+      "part": "nominal #10-32 x3/8 retention screw shank",
+      "nativeIntersections": []
+    },
+    {
+      "part": "nominal socket head with driver recess",
+      "nativeIntersections": []
+    }
+  ],
+  "wrongClock30DegreeNativeOverlapMm3": 73.89177489345242,
+  "nominalThreadZoneOverlapMm3": 41.89670634349939,
+  "threadIntersectionOutsideDeclaredZoneMm3": 0,
+  "geometry": {
+    "socketAcrossFlatsMm": 12.7127,
+    "nominalShaftAcrossFlatsMm": 12.7,
+    "sourceSocketDepthMm": 11.1125,
+    "selectedInsertionMm": 10.5,
+    "floorGapMm": 0.6125,
+    "selectedScrewUnderHeadMm": 9.525,
+    "nominalShaftThreadEngagementMm": 7.6425,
+    "proposedPilotDepthMm": 10,
+    "screwTipToBlindBottomMm": 2.3575,
+    "localShaftBoundsXmm": [
+      -0.975,
+      48.025
+    ]
+  },
+  "originalStepSha256": "198853dfbddb62769f4b2f6c631320fba6d32da816bbe44f9062dac539a01691",
+  "originalReopenedRoots": 3,
+  "acceptance": false,
+  "limits": [
+    "Nominal source geometry only; no tolerance, thread strength, torque or load acceptance",
+    "Screw dimensions are standard proxies; exact purchased screw not selected",
+    "Thread represented by major-diameter shank against pilot bore within declared engagement zone, not helical threads",
+    "Retainer accessed before gearbox stage assembly; whole gearbox/tool access not yet screened",
+    "Shaft-to-sprocket collar and motor/output mounting remain separate gates",
+    "No native supplier geometry exported"
+  ]
+}
