@@ -10,12 +10,12 @@ The installed spring length is7+u mm before seat adjustment. Spring force must b
 ## Actual checks and artifacts
 The first two layouts are preserved as rejected studies. Their bridge/backbone and source-frame/drop-bracket contacts prompted an inboard bridge and revised guide stations. The final3poses x3travel-state audit retains only four inherited belt/pulley proxy-engagement pairs; no new mount or moving-part intersections occur in those samples. This is not a continuous swept-volume or load proof.
 
-Original STEP: `artifacts/spring-cassette/original-one-side-candidate.step`, independently reopened28 roots. Source code and scalar evidence are tracked; no supplier native CAD is distributed.
+Original STEP: `artifacts/spring-cassette/original-one-side-candidate.step`, independently reopened28 roots. Source code and scalar evidence are tracked; no supplier native CAD is distributed. Rebuild the original candidate with `python cad/assembly/spring_cassette_candidate.py` using the existing OCP environment.
 
 ## Full feed is a separate constraint
 Exact private native material at nominal clocking is clear on the centered sampled path at zero travel. At0.75 mm inward stroke, pulley contacts appear at localNOTE X140/150 mm. At1.5 mm, contacts appear atX0 and130..160 mm, including small inherited-bearing contacts. The held10.567440 mm probe is clear at these sampled states, but that does NOT clear feed. These are rigid foam/metal contact witnesses, not safety verdicts.
 
-Therefore the mechanism needs an explicit staged-open/force-handoff architecture, or a deliberately modeled compliant metal-contact path. It cannot remain closed through feed just because retention geometry fits. The opening actuator and support during release are NOT implemented. ExistingÂ±5 mm entry counterexamples and rotor-phase/tolerance uncertainty remain.
+Therefore the mechanism needs an explicit staged-open/force-handoff architecture, or a deliberately modeled compliant metal-contact path. It cannot remain closed through feed just because retention geometry fits. The opening actuator and support during release are NOT implemented. ExistingÃ‚Â±5 mm entry counterexamples and rotor-phase/tolerance uncertainty remain.
 
 `spring-cassette-travel-contract.json` defines the u sign, spring length/energy relation, state/mass ownership, stop limits and unselected opening actuator. The runtime must evolve u/velocity and account for spring/actuator work; no instant gap reset or supplied preload is authorized by this geometry.
 

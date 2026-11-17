@@ -79,3 +79,5 @@ The old `run.ps1` remains a legacy preloaded all-season regression entry; it is 
 Before publication: Python tests, native tests, fresh receipts, public-content guard and original CAD metadata review. No private hosting configuration or third-party team/vendor CAD is included.
 
 Current launcher spacing and original mounting correction: [revision and remaining gates](cad/assembly/launcher-mount-revision.md). The selected49.2mm gap requires fresh force/contact simulation; old launch speeds do not transfer.
+
+An additive [spring-biased cassette study](cad/assembly/spring-cassette-candidate.md) preserves failed layouts and sampled feed conflicts. It is not adopted by the 711-part assembly or current simulation: actual springs, opening actuator, clamps and moving mass remain unresolved.
