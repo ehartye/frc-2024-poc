@@ -16,7 +16,9 @@ def project(config,state,dt=.0005):
 def compare(candidate_path):
  config=json.loads((R/'sim/drivetrain/config.json').read_text());files=[fresh.BASELINE,str(candidate_path.relative_to(R))];rows=[];pins={f:fresh.c.factory.r.sha(R/f) for f in FILES+files}
  for f in files:
-  report=json.loads((R/f).read_text());first=next(row for row in report['trace'] if row['contacts']);r=project(config,first['chassis'])
+  report=json.loads((R/f).read_text())
+  if any(fresh.c.factory.r.sha(R/name)!=h for name,h in report['inputs'].items()):raise ValueError('trajectory source mismatch')
+  pins.update(report['inputs']);first=next(row for row in report['trace'] if row['contacts']);r=project(config,first['chassis'])
   rows.append(dict(source=f,firstAcceptedTimeS=first['timeS'],firstMidpointTimeS=first['contactSampleTimeS'],relativeXM=first['relativeRobotXY'][0],chassisVx=first['chassis']['vx'],noteVx=first['note']['v'][0],stationaryNoteHeadroomToGoalM=first['relativeRobotXY'][0]-.185,driveOnlyProjection=r))
  if any(fresh.c.factory.r.sha(R/f)!=h for f,h in pins.items()):raise ValueError('source drift')
  return dict(schema='drive-only-headroom-comparison/1',inputs=pins,rows=rows,acceptance=False)
