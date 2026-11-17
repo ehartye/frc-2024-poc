@@ -1,0 +1,35 @@
+{
+  "schema": "documented-servo-retention-variant/1",
+  "adopted": false,
+  "servo": "REV-41-1097 V1",
+  "horn": "REV-41-1828 V2",
+  "centerScrew": "REV-41-1359 M3x8",
+  "sources": [
+    {
+      "url": "https://www.revrobotics.com/content/docs/2021-2022_Starter_Bot-BG.pdf",
+      "sha256": "fd027b05b552c6786bdfe2ebee682b29b022553ac398f35c6f3d7543e2eca17a",
+      "pdfPages": [
+        74,
+        76
+      ],
+      "supports": "Exact1097+1828+1359 BOM andM3x8 center-retention assembly. Step prose inconsistently saysT-slot; retain BOM identity, not assumed head shape."
+    },
+    {
+      "url": "https://www.revrobotics.com/content/docs/REV-41-1828-DR.pdf",
+      "sha256": "7d9630779bbf3d05c24ae585b9ddbc9801cb652f01f39d7f39c4b4b50ff40c3b",
+      "drawingDate": "2020-07-31",
+      "supports": "M3x0.5 tappedpattern,M3clearancepattern,40mmOD,8.5mmcounterbore,3.5mmplate/7mmoverall,6061 aluminum;drawingtolerances preserved in source"
+    },
+    {
+      "url": "https://www.revrobotics.com/rev-41-1828/",
+      "sha256": "1e2e298938857c06a2ade6b2e6ebee6b7d0961ad85799d0238ef754880ff1bb7",
+      "supports": "Currentmanufacturer25Tsplinecompatibility andcounterborepurpose;not historicalstockproof"
+    }
+  ],
+  "limits": [
+    "HornV2 is not ServoV2; no V2servo depth/current specification imported",
+    "Manufacturer pair/length instruction resolves sourcing choice, not load rating, tolerance stack, tightening torque or locking",
+    "Source-native fastener replaces guessed head shape; nominal head recess not a tolerance-qualified stack",
+    "Previous1363 receipts preserved; this is a different additive variant"
+  ]
+}
