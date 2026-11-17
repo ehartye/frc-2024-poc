@@ -1,0 +1,5 @@
+# Predeclared earlier braking experiment
+
+Engage unchanged SpeedApproach at the first accepted midpoint-contact sample, 0.562 s, from the genuinely fresh corrected-source trajectory. The actual relative X is 0.3413164773 m, leaving 0.1633164773 m before the inherited 0.178 m lower bound. At late engagement (0.680 s, prior immutable policy study), only 0.063104 m remained; the actual 84 ms braking interval reduced chassis speed from 0.847529 to 0.580736 m/s but exhausted that distance. Its average deceleration is about 3.18 m/s²; extrapolating constant deceleration suggests order 0.11 m stopping distance, not a qualified stopping margin. Earlier entry is therefore selected by available distance and observed brake response, not a desired capture outcome.
+
+Predeclared runs: nominal at 1 and 0.5 ms, stale-at-engagement and pinch-disabled at 1 ms, each 100 ms. Controller updates every 10 ms, goal 0.185 m. No momentum reset, attachment or hold constraint. Report domain stops, inherited versus new-phase energy error and same-time state differences; no capture claim.
