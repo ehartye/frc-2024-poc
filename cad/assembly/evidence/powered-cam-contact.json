@@ -1,0 +1,370 @@
+{
+  "inputs": {
+    "cad/assembly/servo_opening_documented_horn.py": "a902cef0c09ebb51839f878aa6354c3d385058d643bd77be2fc922b7a455afac",
+    "cad/assembly/documented-horn-sources.json": "c56e5726a293764e4d3354a0790029f0f5d5cdb0ef29af41b1af417ec7bc271c",
+    "cad/assembly/cassette_opening_cam.py": "7a8cdc5a09e29c05e46980999566c292aa7716ce0bd8d46b42a043837674fd43",
+    "cad/assembly/cassette_spring_law.py": "4b75a9aad20e99b7dccfdbf0126fc8d9ecaf85da319ef62f2add8c1f7c798ee1",
+    "cad/assembly/cassette-opening-source-candidate.json": "912c7771733fef95391721f8197668140b9938c056644a3573844759176b1db5",
+    "cad/assembly/powered_cam_contact.py": "2d7bd3d42580ac938fc11873cea45d07810c4951f026dea24dd5d2316ac0fa57",
+    "cad/assembly/powered-cam-interface.json": "c759e836d56173aee49ae890aad7f3710693b9d398dbaf6a2e72a9897df3d4da",
+    "cad/assembly/check_powered_cam_contact.py": "133dc084ce27bd0af93be2e8b0b25d5c1f3a5bfc1fd1ba1b23e7f4a5b185dbc4"
+  },
+  "rows": [
+    {
+      "case": "separated",
+      "state_u_udot_theta_thetadot": [
+        0,
+        0.02,
+        1.5707963267948966,
+        0
+      ],
+      "unchangedMechanicalInput": [
+        0,
+        0.02,
+        1.5707963267948966,
+        0
+      ],
+      "stiffnessHypothesisNPerM": 20000,
+      "dampingHypothesisNsPerM": 0.5,
+      "result": {
+        "gap_m": 0.0007499999999999999,
+        "gap_rate_m_s": -0.02,
+        "gap_jacobian": [
+          -1.0,
+          0.00075
+        ],
+        "penetration_m": 0.0,
+        "normal_force_n": 0.0,
+        "cassette_generalized_force_n": -0.0,
+        "cam_generalized_torque_nm": 0.0,
+        "potential_j": 0.0,
+        "potential_rate_w": 0.0,
+        "dissipation_w": 0.0,
+        "cassette_power_w": -0.0,
+        "cam_power_w": 0.0,
+        "power_identity_residual_w": 0.0,
+        "cam_point_local_m": [
+          0.146,
+          0.20225,
+          0.18575
+        ],
+        "follower_point_local_m": [
+          0.146,
+          0.203,
+          0.18575
+        ],
+        "cam_force_local_n": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "follower_force_local_n": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mode": "separated",
+        "positive_latch": false
+      }
+    },
+    {
+      "case": "touching_approach",
+      "state_u_udot_theta_thetadot": [
+        0,
+        0.02,
+        0,
+        0
+      ],
+      "unchangedMechanicalInput": [
+        0,
+        0.02,
+        0,
+        0
+      ],
+      "stiffnessHypothesisNPerM": 20000,
+      "dampingHypothesisNsPerM": 0.5,
+      "result": {
+        "gap_m": 0.0,
+        "gap_rate_m_s": -0.02,
+        "gap_jacobian": [
+          -1.0,
+          0.0
+        ],
+        "penetration_m": 0.0,
+        "normal_force_n": 0.0,
+        "cassette_generalized_force_n": -0.0,
+        "cam_generalized_torque_nm": 0.0,
+        "potential_j": 0.0,
+        "potential_rate_w": 0.0,
+        "dissipation_w": 0.0,
+        "cassette_power_w": -0.0,
+        "cam_power_w": 0.0,
+        "power_identity_residual_w": 0.0,
+        "cam_point_local_m": [
+          0.146,
+          0.203,
+          0.185
+        ],
+        "follower_point_local_m": [
+          0.146,
+          0.203,
+          0.185
+        ],
+        "cam_force_local_n": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "follower_force_local_n": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mode": "touching",
+        "positive_latch": false
+      }
+    },
+    {
+      "case": "compressed_closing",
+      "state_u_udot_theta_thetadot": [
+        0.0009,
+        0.02,
+        0.7,
+        1.3
+      ],
+      "unchangedMechanicalInput": [
+        0.0009,
+        0.02,
+        0.7,
+        1.3
+      ],
+      "stiffnessHypothesisNPerM": 20000,
+      "dampingHypothesisNsPerM": 0.5,
+      "result": {
+        "gap_m": -0.0007236316404633663,
+        "gap_rate_m_s": -0.01937188775494325,
+        "gap_jacobian": [
+          -1.0,
+          0.0004831632654282683
+        ],
+        "penetration_m": 0.0007236316404633663,
+        "normal_force_n": 14.482318753144797,
+        "cassette_generalized_force_n": -14.482318753144797,
+        "cam_generalized_torque_nm": 0.006997324419742487,
+        "potential_j": 0.005236427510797026,
+        "potential_rate_w": 0.28036221829963565,
+        "dissipation_w": 0.00018763501759506014,
+        "cassette_power_w": -0.289646375062896,
+        "cam_power_w": 0.009096521745665234,
+        "power_identity_residual_w": -5.1228552649940085e-17,
+        "cam_point_local_m": [
+          0.146,
+          0.20282363164046338,
+          0.18548316326542827
+        ],
+        "follower_point_local_m": [
+          0.146,
+          0.2021,
+          0.18548316326542827
+        ],
+        "cam_force_local_n": [
+          0.0,
+          -14.482318753144797,
+          0.0
+        ],
+        "follower_force_local_n": [
+          0.0,
+          14.482318753144797,
+          0.0
+        ],
+        "mode": "compressed",
+        "positive_latch": false
+      }
+    },
+    {
+      "case": "compressed_unloading",
+      "state_u_udot_theta_thetadot": [
+        0.0009,
+        -0.02,
+        0.7,
+        1.3
+      ],
+      "unchangedMechanicalInput": [
+        0.0009,
+        -0.02,
+        0.7,
+        1.3
+      ],
+      "stiffnessHypothesisNPerM": 20000,
+      "dampingHypothesisNsPerM": 0.5,
+      "result": {
+        "gap_m": -0.0007236316404633663,
+        "gap_rate_m_s": 0.02062811224505675,
+        "gap_jacobian": [
+          -1.0,
+          0.0004831632654282683
+        ],
+        "penetration_m": 0.0007236316404633663,
+        "normal_force_n": 14.472632809267326,
+        "cassette_generalized_force_n": -14.472632809267326,
+        "cam_generalized_torque_nm": 0.006992644527469893,
+        "potential_j": 0.005236427510797026,
+        "potential_rate_w": -0.2985430940710574,
+        "dissipation_w": 0.0,
+        "cassette_power_w": 0.28945265618534655,
+        "cam_power_w": 0.009090437885710862,
+        "power_identity_residual_w": 0.0,
+        "cam_point_local_m": [
+          0.146,
+          0.20282363164046338,
+          0.18548316326542827
+        ],
+        "follower_point_local_m": [
+          0.146,
+          0.2021,
+          0.18548316326542827
+        ],
+        "cam_force_local_n": [
+          0.0,
+          -14.472632809267326,
+          0.0
+        ],
+        "follower_force_local_n": [
+          0.0,
+          14.472632809267326,
+          0.0
+        ],
+        "mode": "compressed",
+        "positive_latch": false
+      }
+    },
+    {
+      "case": "open_dead_center",
+      "state_u_udot_theta_thetadot": [
+        0.0003,
+        0.05,
+        0,
+        0
+      ],
+      "unchangedMechanicalInput": [
+        0.0003,
+        0.05,
+        0,
+        0
+      ],
+      "stiffnessHypothesisNPerM": 20000,
+      "dampingHypothesisNsPerM": 0.5,
+      "result": {
+        "gap_m": -0.0003,
+        "gap_rate_m_s": -0.05,
+        "gap_jacobian": [
+          -1.0,
+          0.0
+        ],
+        "penetration_m": 0.0003,
+        "normal_force_n": 6.0249999999999995,
+        "cassette_generalized_force_n": -6.0249999999999995,
+        "cam_generalized_torque_nm": 0.0,
+        "potential_j": 0.0008999999999999999,
+        "potential_rate_w": 0.3,
+        "dissipation_w": 0.0012500000000000002,
+        "cassette_power_w": -0.30125,
+        "cam_power_w": 0.0,
+        "power_identity_residual_w": -2.862293735361732e-17,
+        "cam_point_local_m": [
+          0.146,
+          0.203,
+          0.185
+        ],
+        "follower_point_local_m": [
+          0.146,
+          0.20270000000000002,
+          0.185
+        ],
+        "cam_force_local_n": [
+          0.0,
+          -6.0249999999999995,
+          0.0
+        ],
+        "follower_force_local_n": [
+          0.0,
+          6.0249999999999995,
+          0.0
+        ],
+        "mode": "compressed",
+        "positive_latch": false
+      }
+    },
+    {
+      "case": "closed_touching",
+      "state_u_udot_theta_thetadot": [
+        0.0015,
+        0,
+        3.141592653589793,
+        0
+      ],
+      "unchangedMechanicalInput": [
+        0.0015,
+        0,
+        3.141592653589793,
+        0
+      ],
+      "stiffnessHypothesisNPerM": 20000,
+      "dampingHypothesisNsPerM": 0.5,
+      "result": {
+        "gap_m": 0.0,
+        "gap_rate_m_s": 0.0,
+        "gap_jacobian": [
+          -1.0,
+          0.0
+        ],
+        "penetration_m": 0.0,
+        "normal_force_n": 0.0,
+        "cassette_generalized_force_n": -0.0,
+        "cam_generalized_torque_nm": 0.0,
+        "potential_j": 0.0,
+        "potential_rate_w": -0.0,
+        "dissipation_w": 0.0,
+        "cassette_power_w": -0.0,
+        "cam_power_w": 0.0,
+        "power_identity_residual_w": 0.0,
+        "cam_point_local_m": [
+          0.146,
+          0.2015,
+          0.185
+        ],
+        "follower_point_local_m": [
+          0.146,
+          0.2015,
+          0.185
+        ],
+        "cam_force_local_n": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "follower_force_local_n": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mode": "touching",
+        "positive_latch": false
+      }
+    }
+  ],
+  "midpointCommand": {
+    "requested_cam_angle_rad": 1.5707963267948966,
+    "within_studied_cam_domain": true,
+    "actual_angle_known": false,
+    "positive_latch": false
+  },
+  "accepted": false,
+  "limits": [
+    "Standalone contact port only; no state integration, capture or servo calibration",
+    "Stiffness/damping values are explicit example hypotheses",
+    "Mechanical contact remains a separate passive port after electrical faults",
+    "No inferred torque-current-speed curve, holding thermal rating or output inertia",
+    "No generalized force duplicated onto chassis; caller maps the internal pair exactly once"
+  ]
+}
