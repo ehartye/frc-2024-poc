@@ -1,0 +1,2235 @@
+{
+  "schema": "sampled-indexing-corridor/1",
+  "inputs": {
+    "cad/assembly/build_robot.py": "cca2c9a3ecca7a622fb1283461c393b2288e3c6efd173c60d72a959e3c500e26",
+    "cad/assembly/bumper_candidate.py": "556fba39fda427cb081a2a1d4d806372b67b830606a242bbfc0babf05619fc19",
+    "cad/a2_primitives.py": "bef958c710da792f89def8606d7169a7c385fcff257826619a7b29fe0943952e",
+    "cad/a2_kinematics.py": "4329126a1465f53c8d27618307b2864ff69803e196ff4521aab8a50daf670581",
+    "cad/build_a2_layout.py": "aea31166eabc53113962cc511cfbd190eba54033f7b93476455961dccb1969c9",
+    "cad/cycle-contract-A2.json": "3700da3bf1a271d6b6763060f913435a4a50cda8d456cb1a57a6f1898416b6ad",
+    "cad/components/a2-transmission.json": "0aae2e2dd0d8c4b16729139380f6d1e2df0efa956dad2ee8b205be1a57f3d8b0",
+    "cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+    "cad/drivetrain/build_fastening.py": "9d82a974d184200e7a6c414bc74b345cd53aa2cf85f36c3cf528fe818997d4ac",
+    "cad/drivetrain/fastening.json": "6cb3d276cd5f59143ef9b52d2240095f02db9f92d6cfef5ae53b145a78862ac9",
+    "cad/drivetrain/build_drivetrain.py": "4748e01902aac32ae8d996e1f7676caa7f794ac6a5971b661855c26487ad29a7",
+    "cad/electrical/manifest.json": "9db917a55b0884db9841f52da3b5cccf8ad684c652e4dde3e01b1efe75e891a3",
+    "cad/electrical/build_electrical.py": "d2fbd40d0b26c8887679b6ed3b49c655b10a27a0cd175e812b35d9fccd6f6317",
+    "cad/electrical/mounts.py": "90254dbc5116a9af72df0ba6442ed94ef8c94e8247326f9b7c6cfd0c0749c7e8",
+    "cad/electrical/breaker_mount.py": "1e27087fa191e8043c6ed8b3c48bca4db50cde379efa171cc49508a1a1c75060",
+    "cad/electrical/breaker-mount-evidence.json": "9e0bb64f30ab3ee58de577fe694ee578135cdf4d74ddf8e0b3065b741266b07d",
+    "cad/electrical/fasteners.py": "788a1cb9bf71a780aed9cbeb5bf48d06532e914fed431edcc0e72a4bd273b799",
+    "cad/assembly/intake_components.py": "c6d352be0edba340d340112697d3f2482158b4fb8f3324b0dd3927344f9b43c5",
+    "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+    "cad/assembly/build_intake_candidate.py": "07e9c96ec0f5e4d02660e0d2efda8dd2bddfb0198862c5e228dbc9e07cbf9bc3",
+    "cad/assembly/check_intake_contact.py": "95d20cfed12331c135b5534d4076f833ae6741b69806a61e677e88098a7301e3",
+    "cad/assembly/verify_receipts.py": "213a00200bc7fc0b84bd4bb82e4a62aaee3c10432f35373fc3097b2141d4e81d",
+    "cad/assembly/audit_intake_motion.py": "1d33ef51ba87c170335234004b1fa3cac1aeeac39da6149d15eedf58a26c1509",
+    "cad/components/check_pulley_outer_profile.py": "23325f74745de7ea2d828340c816143346221c44325784d6e8934b08553efde5",
+    "cad/components/pulley-outer-profile.json": "e582635a9b49f9810eee996177af2761edfe7928450dd86ef76d103ce8af53ec",
+    "cad/assembly/lower_support_mounts.py": "1b832dcc91967eab3dcfe40abc585ef1137250fb4e6777b01075a79ebcb1b14d",
+    "cad/assembly/upper_carriage_connections.py": "bbfbdf8b8c5f9356b5f60a3b4ad3d2d94c7f4e8a76db0e64742618173c936032",
+    "cad/assembly/build_connected_candidate.py": "19356d26a59b7b22a9a4eaed106c9cfd5d9f57774d682e0bd100711348a5ea69",
+    "cad/assembly/slide_pad_attachments.py": "526310777f96f0f537844946c611b05f7e7dc80119a75d308f043832aa7ed7ef",
+    "cad/assembly/check_indexing_corridor.py": "0cc6844ad1efa51f9f67f26471b240e52ae58a5fe27571376288d1c34b0a40fa",
+    "cad/assembly/extract_retention_patch.py": "fa80f1c89a0aed56b544cbc16218ad52880ac2bc66db986a4841d98b4aee8b50",
+    "cad/assembly/audit_cartridge_interfaces.py": "44e8edfcecfd3afd38c8ed91ea153654d4bffe2579096dafd533d318e02af21f"
+  },
+  "offsetCandidatesMm": [
+    0,
+    5,
+    10,
+    20,
+    30,
+    40
+  ],
+  "samples": [
+    {
+      "offsetMm": 0,
+      "phase": "rotate",
+      "pitchDeg": 0.0,
+      "centerZmm": 25.4,
+      "centerRobotMm": [
+        178.0,
+        0,
+        25.4
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.6231905303632,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62319053036677,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 5,
+      "phase": "rotate",
+      "pitchDeg": 0.0,
+      "centerZmm": 25.4,
+      "centerRobotMm": [
+        183.0,
+        0,
+        25.4
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.6231905303632,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62319053036677,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 10,
+      "phase": "rotate",
+      "pitchDeg": 0.0,
+      "centerZmm": 25.4,
+      "centerRobotMm": [
+        188.0,
+        0,
+        25.4
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036308,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62319053036677,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 20,
+      "phase": "rotate",
+      "pitchDeg": 0.0,
+      "centerZmm": 25.4,
+      "centerRobotMm": [
+        198.0,
+        0,
+        25.4
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036316,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62319053036677,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 30,
+      "phase": "rotate",
+      "pitchDeg": 0.0,
+      "centerZmm": 25.4,
+      "centerRobotMm": [
+        208.0,
+        0,
+        25.4
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036316,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62319053036677,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 40,
+      "phase": "rotate",
+      "pitchDeg": 0.0,
+      "centerZmm": 25.4,
+      "centerRobotMm": [
+        218.0,
+        0,
+        25.4
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036092,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62319053036686,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 0,
+      "phase": "rotate",
+      "pitchDeg": 10.0,
+      "centerZmm": 51.86398227644018,
+      "centerRobotMm": [
+        178.0,
+        0,
+        51.86398227644018
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.61713252954195,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62319053036506,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 5,
+      "phase": "rotate",
+      "pitchDeg": 10.0,
+      "centerZmm": 51.86398227644018,
+      "centerRobotMm": [
+        182.92403876506103,
+        0,
+        52.73222316477484
+      ],
+      "hits": [
+        {
+          "part": "original rigid front backing support proposal",
+          "commonMm3": 879.1857602549483,
+          "intendedContactHypothesis": false
+        },
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.61713252954135,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.6231905303656,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 10,
+      "phase": "rotate",
+      "pitchDeg": 10.0,
+      "centerZmm": 51.86398227644018,
+      "centerRobotMm": [
+        187.84807753012208,
+        0,
+        53.600464053109484
+      ],
+      "hits": [
+        {
+          "part": "fixed bumper end backing 1",
+          "commonMm3": 2990.92676290124,
+          "intendedContactHypothesis": false
+        },
+        {
+          "part": "original rigid front backing support proposal",
+          "commonMm3": 6894.0132422067745,
+          "intendedContactHypothesis": false
+        },
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053035995,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62319053036734,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 20,
+      "phase": "rotate",
+      "pitchDeg": 10.0,
+      "centerZmm": 51.86398227644018,
+      "centerRobotMm": [
+        197.69615506024417,
+        0,
+        55.33694582977879
+      ],
+      "hits": [
+        {
+          "part": "fixed bumper end backing 1",
+          "commonMm3": 36214.15169002871,
+          "intendedContactHypothesis": false
+        },
+        {
+          "part": "original rigid front backing support proposal",
+          "commonMm3": 17581.929539015284,
+          "intendedContactHypothesis": false
+        },
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036504,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62319053036637,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 30,
+      "phase": "rotate",
+      "pitchDeg": 10.0,
+      "centerZmm": 51.86398227644018,
+      "centerRobotMm": [
+        207.54423259036625,
+        0,
+        57.07342760644809
+      ],
+      "hits": [
+        {
+          "part": "fixed bumper end backing 1",
+          "commonMm3": 95763.42138574045,
+          "intendedContactHypothesis": false
+        },
+        {
+          "part": "fixed bumper end noodle 1 0",
+          "commonMm3": 2505.9634053935006,
+          "intendedContactHypothesis": false
+        },
+        {
+          "part": "original rigid front backing support proposal",
+          "commonMm3": 25433.0090398395,
+          "intendedContactHypothesis": false
+        },
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.6171325295431,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62319053036666,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 40,
+      "phase": "rotate",
+      "pitchDeg": 10.0,
+      "centerZmm": 51.86398227644018,
+      "centerRobotMm": [
+        217.39231012048833,
+        0,
+        58.80990938311739
+      ],
+      "hits": [
+        {
+          "part": "fixed bumper end backing 1",
+          "commonMm3": 145706.0362995054,
+          "intendedContactHypothesis": false
+        },
+        {
+          "part": "fixed bumper end noodle 1 0",
+          "commonMm3": 29446.14784806043,
+          "intendedContactHypothesis": false
+        },
+        {
+          "part": "original rigid front backing support proposal",
+          "commonMm3": 30437.834785259543,
+          "intendedContactHypothesis": false
+        },
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036217,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62319053036572,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 0,
+      "phase": "rotate",
+      "pitchDeg": 20.0,
+      "centerZmm": 77.52386984283191,
+      "centerRobotMm": [
+        178.0,
+        0,
+        77.52386984283191
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036023,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62319053036688,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 5,
+      "phase": "rotate",
+      "pitchDeg": 20.0,
+      "centerZmm": 77.52386984283191,
+      "centerRobotMm": [
+        182.69846310392956,
+        0,
+        79.23397055946026
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.6231905303643,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.6231905303662,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 10,
+      "phase": "rotate",
+      "pitchDeg": 20.0,
+      "centerZmm": 77.52386984283191,
+      "centerRobotMm": [
+        187.39692620785908,
+        0,
+        80.94407127608861
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036174,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.6231905303666,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 20,
+      "phase": "rotate",
+      "pitchDeg": 20.0,
+      "centerZmm": 77.52386984283191,
+      "centerRobotMm": [
+        196.79385241571816,
+        0,
+        84.36427270934529
+      ],
+      "hits": [
+        {
+          "part": "fixed bumper end backing 1",
+          "commonMm3": 7196.682389175803,
+          "intendedContactHypothesis": false
+        },
+        {
+          "part": "original rigid front backing support proposal",
+          "commonMm3": 9552.711438792794,
+          "intendedContactHypothesis": false
+        },
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036072,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62319053036666,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 30,
+      "phase": "rotate",
+      "pitchDeg": 20.0,
+      "centerZmm": 77.52386984283191,
+      "centerRobotMm": [
+        206.19077862357724,
+        0,
+        87.78447414260198
+      ],
+      "hits": [
+        {
+          "part": "fixed bumper end backing 1",
+          "commonMm3": 45770.56793917789,
+          "intendedContactHypothesis": false
+        },
+        {
+          "part": "original rigid front backing support proposal",
+          "commonMm3": 19531.392672861075,
+          "intendedContactHypothesis": false
+        },
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.6231905303607,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.6231905303663,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 40,
+      "phase": "rotate",
+      "pitchDeg": 20.0,
+      "centerZmm": 77.52386984283191,
+      "centerRobotMm": [
+        215.58770483143633,
+        0,
+        91.20467557585866
+      ],
+      "hits": [
+        {
+          "part": "fixed bumper end backing 1",
+          "commonMm3": 104870.6945039898,
+          "intendedContactHypothesis": false
+        },
+        {
+          "part": "fixed bumper end noodle 1 1",
+          "commonMm3": 3248.0199230732524,
+          "intendedContactHypothesis": false
+        },
+        {
+          "part": "original rigid front backing support proposal",
+          "commonMm3": 26982.390146129208,
+          "intendedContactHypothesis": false
+        },
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053035935,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62319053036657,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 0,
+      "phase": "rotate",
+      "pitchDeg": 30.0,
+      "centerZmm": 101.6,
+      "centerRobotMm": [
+        178.0,
+        0,
+        101.6
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053035978,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62319053036603,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 5,
+      "phase": "rotate",
+      "pitchDeg": 30.0,
+      "centerZmm": 101.6,
+      "centerRobotMm": [
+        182.33012701892218,
+        0,
+        104.1
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036066,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62319053036745,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 10,
+      "phase": "rotate",
+      "pitchDeg": 30.0,
+      "centerZmm": 101.6,
+      "centerRobotMm": [
+        186.6602540378444,
+        0,
+        106.6
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036305,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62319053036433,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 20,
+      "phase": "rotate",
+      "pitchDeg": 30.0,
+      "centerZmm": 101.6,
+      "centerRobotMm": [
+        195.32050807568876,
+        0,
+        111.6
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.6231905303566,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62319053036467,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 30,
+      "phase": "rotate",
+      "pitchDeg": 30.0,
+      "centerZmm": 101.6,
+      "centerRobotMm": [
+        203.98076211353316,
+        0,
+        116.6
+      ],
+      "hits": [
+        {
+          "part": "fixed bumper end backing 1",
+          "commonMm3": 17.564848360726543,
+          "intendedContactHypothesis": false
+        },
+        {
+          "part": "original rigid front backing support proposal",
+          "commonMm3": 851.3281814587106,
+          "intendedContactHypothesis": false
+        },
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036208,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62319053036697,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 40,
+      "phase": "rotate",
+      "pitchDeg": 30.0,
+      "centerZmm": 101.6,
+      "centerRobotMm": [
+        212.64101615137756,
+        0,
+        121.6
+      ],
+      "hits": [
+        {
+          "part": "fixed bumper end backing 1",
+          "commonMm3": 2564.2404149340655,
+          "intendedContactHypothesis": false
+        },
+        {
+          "part": "original rigid front backing support proposal",
+          "commonMm3": 3272.0151559381,
+          "intendedContactHypothesis": false
+        },
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62508722760577,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.6231905303667,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 0,
+      "phase": "rotate",
+      "pitchDeg": 40.0,
+      "centerZmm": 123.36083171622857,
+      "centerRobotMm": [
+        178.0,
+        0,
+        123.36083171622857
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.61713252954206,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.6231905303664,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 5,
+      "phase": "rotate",
+      "pitchDeg": 40.0,
+      "centerZmm": 123.36083171622857,
+      "centerRobotMm": [
+        181.8302222155949,
+        0,
+        126.57476976466127
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62508722761154,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62319053036472,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 10,
+      "phase": "rotate",
+      "pitchDeg": 40.0,
+      "centerZmm": 123.36083171622857,
+      "centerRobotMm": [
+        185.66044443118977,
+        0,
+        129.78870781309396
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.61713252954368,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62319053036657,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 20,
+      "phase": "rotate",
+      "pitchDeg": 40.0,
+      "centerZmm": 123.36083171622857,
+      "centerRobotMm": [
+        193.32088886237955,
+        0,
+        136.21658390995935
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.61713252954206,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62319053036646,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 30,
+      "phase": "rotate",
+      "pitchDeg": 40.0,
+      "centerZmm": 123.36083171622857,
+      "centerRobotMm": [
+        200.98133329356935,
+        0,
+        142.64446000682474
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.61713252954178,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62319053036484,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 40,
+      "phase": "rotate",
+      "pitchDeg": 40.0,
+      "centerZmm": 123.36083171622857,
+      "centerRobotMm": [
+        208.64177772475912,
+        0,
+        149.07233610369013
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.6171325295433,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62319053036796,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 0,
+      "phase": "rotate",
+      "pitchDeg": 50.0,
+      "centerZmm": 142.14517313133226,
+      "centerRobotMm": [
+        178.0,
+        0,
+        142.14517313133226
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.6231905303661,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.61713252954294,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 5,
+      "phase": "rotate",
+      "pitchDeg": 50.0,
+      "centerZmm": 142.14517313133226,
+      "centerRobotMm": [
+        181.2139380484327,
+        0,
+        145.97539534692714
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.623190530366,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.61713252954232,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 10,
+      "phase": "rotate",
+      "pitchDeg": 50.0,
+      "centerZmm": 142.14517313133226,
+      "centerRobotMm": [
+        184.4278760968654,
+        0,
+        149.80561756252203
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036634,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.61713252954442,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 20,
+      "phase": "rotate",
+      "pitchDeg": 50.0,
+      "centerZmm": 142.14517313133226,
+      "centerRobotMm": [
+        190.85575219373078,
+        0,
+        157.4660619937118
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036526,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.6171325295427,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 30,
+      "phase": "rotate",
+      "pitchDeg": 50.0,
+      "centerZmm": 142.14517313133226,
+      "centerRobotMm": [
+        197.28362829059617,
+        0,
+        165.1265064249016
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036686,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.61713252954465,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 40,
+      "phase": "rotate",
+      "pitchDeg": 50.0,
+      "centerZmm": 142.14517313133226,
+      "centerRobotMm": [
+        203.71150438746156,
+        0,
+        172.78695085609138
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036794,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.6171325295414,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 0,
+      "phase": "rotate",
+      "pitchDeg": 60.0,
+      "centerZmm": 157.38227153674845,
+      "centerRobotMm": [
+        178.0,
+        0,
+        157.38227153674845
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036538,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449638148,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 5,
+      "phase": "rotate",
+      "pitchDeg": 60.0,
+      "centerZmm": 157.38227153674845,
+      "centerRobotMm": [
+        180.5,
+        0,
+        161.71239855567063
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036782,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449637906,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 10,
+      "phase": "rotate",
+      "pitchDeg": 60.0,
+      "centerZmm": 157.38227153674845,
+      "centerRobotMm": [
+        183.0,
+        0,
+        166.04252557459284
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.6231905303658,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449637554,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 20,
+      "phase": "rotate",
+      "pitchDeg": 60.0,
+      "centerZmm": 157.38227153674845,
+      "centerRobotMm": [
+        188.0,
+        0,
+        174.7027796124372
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036632,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.6223144963803,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 30,
+      "phase": "rotate",
+      "pitchDeg": 60.0,
+      "centerZmm": 157.38227153674845,
+      "centerRobotMm": [
+        193.0,
+        0,
+        183.3630336502816
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.6231905303651,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449638062,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 40,
+      "phase": "rotate",
+      "pitchDeg": 60.0,
+      "centerZmm": 157.38227153674845,
+      "centerRobotMm": [
+        198.0,
+        0,
+        192.023287688126
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036651,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449637778,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 0,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 197.0636619601938,
+      "centerRobotMm": [
+        178.0,
+        0,
+        197.0636619601938
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.6231905303643,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449638003,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 5,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 197.0636619601938,
+      "centerRobotMm": [
+        180.5,
+        0,
+        201.39378897911598
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.6231905303671,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.6223144963779,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 10,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 197.0636619601938,
+      "centerRobotMm": [
+        183.0,
+        0,
+        205.7239159980382
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036683,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449637616,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 20,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 197.0636619601938,
+      "centerRobotMm": [
+        188.0,
+        0,
+        214.38417003588256
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036603,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449637895,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 30,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 197.0636619601938,
+      "centerRobotMm": [
+        193.0,
+        0,
+        223.04442407372696
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036438,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.6223144963807,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 40,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 197.0636619601938,
+      "centerRobotMm": [
+        198.0,
+        0,
+        231.70467811157135
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036708,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449637946,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 0,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 236.74505238363915,
+      "centerRobotMm": [
+        178.0,
+        0,
+        236.74505238363915
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.6231905303647,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449638006,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 5,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 236.74505238363915,
+      "centerRobotMm": [
+        180.5,
+        0,
+        241.07517940256133
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.6231905303665,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.6223144963785,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 10,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 236.74505238363915,
+      "centerRobotMm": [
+        183.0,
+        0,
+        245.40530642148354
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036694,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449637576,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 20,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 236.74505238363915,
+      "centerRobotMm": [
+        188.0,
+        0,
+        254.0655604593279
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036552,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449637653,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 30,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 236.74505238363915,
+      "centerRobotMm": [
+        193.0,
+        0,
+        262.7258144971723
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036447,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.622314496379,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 40,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 236.74505238363915,
+      "centerRobotMm": [
+        198.0,
+        0,
+        271.3860685350167
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.6231905303647,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.6223144963784,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 0,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 276.4264428070845,
+      "centerRobotMm": [
+        178.0,
+        0,
+        276.4264428070845
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.6231905303673,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.6223144963789,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 5,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 276.4264428070845,
+      "centerRobotMm": [
+        180.5,
+        0,
+        280.75656982600674
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036686,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449637977,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 10,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 276.4264428070845,
+      "centerRobotMm": [
+        183.0,
+        0,
+        285.0866968449289
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036543,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449637997,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 20,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 276.4264428070845,
+      "centerRobotMm": [
+        188.0,
+        0,
+        293.7469508827733
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036663,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449638006,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 30,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 276.4264428070845,
+      "centerRobotMm": [
+        193.0,
+        0,
+        302.4072049206177
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036714,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449637895,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 40,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 276.4264428070845,
+      "centerRobotMm": [
+        198.0,
+        0,
+        311.06745895846205
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036785,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449637937,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 0,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 316.1078332305299,
+      "centerRobotMm": [
+        178.0,
+        0,
+        316.1078332305299
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036532,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.6223144963785,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 5,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 316.1078332305299,
+      "centerRobotMm": [
+        180.5,
+        0,
+        320.4379602494521
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.6231905303667,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.6223144963794,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 10,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 316.1078332305299,
+      "centerRobotMm": [
+        183.0,
+        0,
+        324.76808726837425
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.6231905303671,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.6223144963778,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 20,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 316.1078332305299,
+      "centerRobotMm": [
+        188.0,
+        0,
+        333.42834130621867
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036643,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.6223144963781,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 30,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 316.1078332305299,
+      "centerRobotMm": [
+        193.0,
+        0,
+        342.08859534406304
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036774,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449637872,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 40,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 316.1078332305299,
+      "centerRobotMm": [
+        198.0,
+        0,
+        350.7488493819074
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036762,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.6223144963794,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 0,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 355.7892236539752,
+      "centerRobotMm": [
+        178.0,
+        0,
+        355.7892236539752
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036686,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449637727,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 5,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 355.7892236539752,
+      "centerRobotMm": [
+        180.5,
+        0,
+        360.11935067289744
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036705,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449637983,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 10,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 355.7892236539752,
+      "centerRobotMm": [
+        183.0,
+        0,
+        364.4494776918196
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036524,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449638344,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 20,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 355.7892236539752,
+      "centerRobotMm": [
+        188.0,
+        0,
+        373.109731729664
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036677,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.6223144963794,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 30,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 355.7892236539752,
+      "centerRobotMm": [
+        193.0,
+        0,
+        381.7699857675084
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036686,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.6223144963787,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 40,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 355.7892236539752,
+      "centerRobotMm": [
+        198.0,
+        0,
+        390.43023980535276
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036646,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.6223144963787,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 0,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 395.4706140774206,
+      "centerRobotMm": [
+        178.0,
+        0,
+        395.4706140774206
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036768,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449637767,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 5,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 395.4706140774206,
+      "centerRobotMm": [
+        180.5,
+        0,
+        399.8007410963428
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036666,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.6223144963789,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 10,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 395.4706140774206,
+      "centerRobotMm": [
+        183.0,
+        0,
+        404.13086811526495
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.6231905303658,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.6223144963836,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 20,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 395.4706140774206,
+      "centerRobotMm": [
+        188.0,
+        0,
+        412.79112215310937
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036617,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.6223144963783,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 30,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 395.4706140774206,
+      "centerRobotMm": [
+        193.0,
+        0,
+        421.45137619095374
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.6231905303672,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449637858,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 40,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 395.4706140774206,
+      "centerRobotMm": [
+        198.0,
+        0,
+        430.1116302287981
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036597,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.6223144963779,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 0,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 435.1520045008659,
+      "centerRobotMm": [
+        178.0,
+        0,
+        435.1520045008659
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.6231905303676,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449637866,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 5,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 435.1520045008659,
+      "centerRobotMm": [
+        180.5,
+        0,
+        439.48213151978814
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036694,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449637932,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 10,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 435.1520045008659,
+      "centerRobotMm": [
+        183.0,
+        0,
+        443.8122585387103
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036606,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449638315,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 20,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 435.1520045008659,
+      "centerRobotMm": [
+        188.0,
+        0,
+        452.4725125765547
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036575,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449637935,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 30,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 435.1520045008659,
+      "centerRobotMm": [
+        193.0,
+        0,
+        461.1327666143991
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.623190530367,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449637918,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 40,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 435.1520045008659,
+      "centerRobotMm": [
+        198.0,
+        0,
+        469.79302065224346
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036762,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.6223144963781,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 0,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 474.8333949243113,
+      "centerRobotMm": [
+        178.0,
+        0,
+        474.8333949243113
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036555,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449637855,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 5,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 474.8333949243113,
+      "centerRobotMm": [
+        180.5,
+        0,
+        479.1635219432335
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036535,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449637588,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 10,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 474.8333949243113,
+      "centerRobotMm": [
+        183.0,
+        0,
+        483.49364896215565
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036674,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449638273,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 20,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 474.8333949243113,
+      "centerRobotMm": [
+        188.0,
+        0,
+        492.15390300000007
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036737,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449637912,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 30,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 474.8333949243113,
+      "centerRobotMm": [
+        193.0,
+        0,
+        500.81415703784444
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036813,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.6223144963781,
+          "intendedContactHypothesis": true
+        }
+      ]
+    },
+    {
+      "offsetMm": 40,
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZmm": 474.8333949243113,
+      "centerRobotMm": [
+        198.0,
+        0,
+        509.4744110756888
+      ],
+      "hits": [
+        {
+          "part": "intake candidate side pinch belt -1",
+          "commonMm3": 161.62319053036657,
+          "intendedContactHypothesis": true
+        },
+        {
+          "part": "intake candidate side pinch belt 1",
+          "commonMm3": 161.62231449637858,
+          "intendedContactHypothesis": true
+        }
+      ]
+    }
+  ],
+  "acceptance": false,
+  "limits": [
+    "Six hypothetical longitudinal offsets at15prescribed poses; not a continuous corridor or actual indexed state",
+    "No runtime state reset, actual indexing control and shared force/power remain separate",
+    "Canonical711part original/source-sized geometry; native bearing correction remains separate",
+    "Intended belt/tread overlaps recorded but not force validation",
+    "Clear geometry does not repair insufficient normal force or prove retention"
+  ]
+}
