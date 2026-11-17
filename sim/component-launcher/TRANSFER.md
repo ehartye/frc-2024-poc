@@ -19,3 +19,7 @@ Private hash-pinned AM-3608 source CAD, validated as one solid, was separately p
 ## Material intersection update
 
 The current checker intersects individual valid material solids and sums absolute intersection volumes. A compound-level empty Boolean is not clearance evidence. The previous archived geometry/transfer receipts retain their prior source hashes and do not validate this revised checker; regenerate against the forthcoming corrected connected assembly before running the six-drive case. Three small native regression tests cover compound aggregation, empty-material rejection and separated solids.
+
+## Connected assembly revision 34c0bab
+
+The full 711-part, 49-position advancing-NOTE screen removes the former cradle/bearing/attachment interference. Only conservative bare-wheel shell envelopes overlap. Exact pinned native AM-3608 witnesses at all 17 affected positions retain real overlaps at advances 150,160,170,270,280,290 mm (maximum about 6.323 mm3 per wheel). Earlier 140/220/300 mm witnesses missed these intermediate contacts. This is not a safety conclusion for a foam NOTE, but it invalidates a claim that the contact is tread-only. Compliance, flange contact or revised geometry must be addressed deliberately before claiming the six-drive force law matches the assembly. No old exit/score evidence transfers. All checks remain finite-sampled and nominal.
