@@ -1,0 +1,91 @@
+{
+  "schema": "candidate-actuator-geometry/1",
+  "inputs": {
+    "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+    "cad/assembly/intake_components.py": "c6d352be0edba340d340112697d3f2482158b4fb8f3324b0dd3927344f9b43c5",
+    "cad/assembly/lower_support_mounts.py": "1b832dcc91967eab3dcfe40abc585ef1137250fb4e6777b01075a79ebcb1b14d",
+    "cad/assembly/upper_carriage_connections.py": "bbfbdf8b8c5f9356b5f60a3b4ad3d2d94c7f4e8a76db0e64742618173c936032",
+    "cad/assembly/slide_pad_attachments.py": "526310777f96f0f537844946c611b05f7e7dc80119a75d308f043832aa7ed7ef"
+  },
+  "coordinates": {
+    "zPivotM": "generalized vertical position of cradle pivot, not NOTE center",
+    "pitchRad": "positive front-up about robot negative Y",
+    "pivotRobotM": [
+      0.178,
+      0,
+      "zPivotM"
+    ],
+    "cradleLocalToRobot": "X=stageX+x*cos(theta)-z*sin(theta);Y=y;Z=zPivot+x*sin(theta)+z*cos(theta)",
+    "carriagePlateOffsetM": 0.2
+  },
+  "lift": {
+    "motor": "NEO REV-21-1650",
+    "gearRatioHypothesis": 12,
+    "nominalPitchRadiusM": 0.016399999999999998,
+    "teeth": 16,
+    "chain": "REV-41-1365",
+    "links": 236,
+    "lowerShaftRobotM": [
+      0.06,
+      0,
+      0.2
+    ],
+    "upperShaftRobotM": [
+      0.06,
+      0,
+      0.8985
+    ],
+    "chainPlanesYmetres": [
+      -0.29,
+      0.29
+    ],
+    "carriageAnchorAbovePivotM": 0.225,
+    "idealConstraint": "omegaMotor=G*zPivotDot/r (chosen positive direction); force=efficiency*G*motorTorque/r"
+  },
+  "pitch": {
+    "motor": "NEO REV-21-1650",
+    "gearRatioHypothesis": 12,
+    "equalChainTeeth": 16,
+    "chainRatio": 1,
+    "links": 114,
+    "upperDriveXmetres": 0.1,
+    "upperDriveZAbovePivotM": 0.3012147448250168,
+    "chainPlaneYmetres": -0.2225,
+    "centerSpacingM": 0.31115,
+    "idealConstraint": "omegaMotor=12*pitchDot (chosen positive direction); pitchTorque=efficiency*12*motorTorque"
+  },
+  "massOwnership": {
+    "rotateAndTranslate": [
+      "cradle weldments/pivots",
+      "pinch belts/pulleys/bearings/shafts",
+      "two pinch motors and their drive/mounts"
+    ],
+    "translateOnly": [
+      "lift carriage plates and slide pads/brackets",
+      "pivot drop brackets and bearings",
+      "pitch motor/gearbox and upper chain-drive supports",
+      "carriage chain attachments"
+    ],
+    "fixed": [
+      "stationary guide posts and upper/lower frame attachments",
+      "lift motor/gearbox/topshaft housings",
+      "fixed guide wear-sheet candidate and front bumper/support"
+    ],
+    "movingMassKg": null,
+    "movingCOM": null,
+    "pitchInertiaKgM2": null,
+    "reflectedRotorInertias": null
+  },
+  "adopted": false,
+  "acceptance": false,
+  "limits": [
+    "Geometry-position ownership does not resolve internal shaft/chain rotational inertia or transmission compliance",
+    "No complete moving mass, COM, pitch inertia or chain mass ledger; do not substitute partial whole-robot mass",
+    "12:1 is the explicit two-stage gearbox candidate, not verified installed coupler/retention or efficiency",
+    "Constant nominal16.4mm lift radius is current config; discrete chain polygon/engagement effects and effective velocity radius remain unmodeled",
+    "Positive motor directions are modeling conventions, not verified wiring",
+    "Shaft couplings, chain attachments, actuator limits, sensor references, friction and end stops require explicit implementation",
+    "Earlier15pose/quintic paths are collision probes, not achieved actuator trajectories",
+    "Bearing94ab67d and rounded guideeb9fbdb remain separate unadopted candidates"
+  ]
+}
