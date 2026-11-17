@@ -1,0 +1,1089 @@
+{
+  "schema": "frc-current-note-transfer-screen/2",
+  "assemblyPartCount": 711,
+  "cadRevision": "f2be99ba27027d4509873b30cb026d8d836617ba",
+  "inputs": {
+    "cad/assembly/build_robot.py": "cca2c9a3ecca7a622fb1283461c393b2288e3c6efd173c60d72a959e3c500e26",
+    "cad/assembly/bumper_candidate.py": "556fba39fda427cb081a2a1d4d806372b67b830606a242bbfc0babf05619fc19",
+    "cad/a2_primitives.py": "bef958c710da792f89def8606d7169a7c385fcff257826619a7b29fe0943952e",
+    "cad/a2_kinematics.py": "4329126a1465f53c8d27618307b2864ff69803e196ff4521aab8a50daf670581",
+    "cad/build_a2_layout.py": "aea31166eabc53113962cc511cfbd190eba54033f7b93476455961dccb1969c9",
+    "cad/cycle-contract-A2.json": "3700da3bf1a271d6b6763060f913435a4a50cda8d456cb1a57a6f1898416b6ad",
+    "cad/components/a2-transmission.json": "0aae2e2dd0d8c4b16729139380f6d1e2df0efa956dad2ee8b205be1a57f3d8b0",
+    "cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+    "cad/drivetrain/build_fastening.py": "9d82a974d184200e7a6c414bc74b345cd53aa2cf85f36c3cf528fe818997d4ac",
+    "cad/drivetrain/fastening.json": "6cb3d276cd5f59143ef9b52d2240095f02db9f92d6cfef5ae53b145a78862ac9",
+    "cad/drivetrain/build_drivetrain.py": "4748e01902aac32ae8d996e1f7676caa7f794ac6a5971b661855c26487ad29a7",
+    "cad/electrical/manifest.json": "9db917a55b0884db9841f52da3b5cccf8ad684c652e4dde3e01b1efe75e891a3",
+    "cad/electrical/build_electrical.py": "d2fbd40d0b26c8887679b6ed3b49c655b10a27a0cd175e812b35d9fccd6f6317",
+    "cad/electrical/mounts.py": "90254dbc5116a9af72df0ba6442ed94ef8c94e8247326f9b7c6cfd0c0749c7e8",
+    "cad/electrical/breaker_mount.py": "1e27087fa191e8043c6ed8b3c48bca4db50cde379efa171cc49508a1a1c75060",
+    "cad/electrical/breaker-mount-evidence.json": "9e0bb64f30ab3ee58de577fe694ee578135cdf4d74ddf8e0b3065b741266b07d",
+    "cad/electrical/fasteners.py": "788a1cb9bf71a780aed9cbeb5bf48d06532e914fed431edcc0e72a4bd273b799",
+    "cad/assembly/intake_components.py": "c6d352be0edba340d340112697d3f2482158b4fb8f3324b0dd3927344f9b43c5",
+    "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+    "cad/assembly/build_intake_candidate.py": "07e9c96ec0f5e4d02660e0d2efda8dd2bddfb0198862c5e228dbc9e07cbf9bc3",
+    "cad/assembly/check_intake_contact.py": "95d20cfed12331c135b5534d4076f833ae6741b69806a61e677e88098a7301e3",
+    "cad/assembly/verify_receipts.py": "213a00200bc7fc0b84bd4bb82e4a62aaee3c10432f35373fc3097b2141d4e81d",
+    "cad/assembly/audit_intake_motion.py": "1d33ef51ba87c170335234004b1fa3cac1aeeac39da6149d15eedf58a26c1509",
+    "cad/components/check_pulley_outer_profile.py": "23325f74745de7ea2d828340c816143346221c44325784d6e8934b08553efde5",
+    "cad/components/pulley-outer-profile.json": "e582635a9b49f9810eee996177af2761edfe7928450dd86ef76d103ce8af53ec",
+    "cad/assembly/lower_support_mounts.py": "1b832dcc91967eab3dcfe40abc585ef1137250fb4e6777b01075a79ebcb1b14d",
+    "cad/assembly/upper_carriage_connections.py": "bbfbdf8b8c5f9356b5f60a3b4ad3d2d94c7f4e8a76db0e64742618173c936032",
+    "cad/assembly/build_connected_candidate.py": "19356d26a59b7b22a9a4eaed106c9cfd5d9f57774d682e0bd100711348a5ea69",
+    "cad/assembly/slide_pad_attachments.py": "526310777f96f0f537844946c611b05f7e7dc80119a75d308f043832aa7ed7ef",
+    "sim/component-launcher/transfer_screen.py": "24f21c9c7f29d55101bddfa709ba4ddd29425d38d03e3a59f797e25d44efb1eb",
+    "sim/component-launcher/extract_geometry.py": "93ddcef128b1bf9824b5e8293b13607c260f9c4bb7f3102b76a70c6818c95067"
+  },
+  "invalidOrNonSolidInputs": [],
+  "rows": [
+    {
+      "advanceMm": 0,
+      "centerRobotMm": [
+        178.0,
+        0,
+        474.8333949243112
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 161.62319053036762,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 161.62231449637804,
+          "contactGroup": "pinch"
+        }
+      ],
+      "pinchOverlapMm3": 323.24550502674566,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 10,
+      "centerRobotMm": [
+        183.0,
+        0,
+        483.4936489621556
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 161.62319053036745,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 161.62231449638367,
+          "contactGroup": "pinch"
+        }
+      ],
+      "pinchOverlapMm3": 323.2455050267511,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 20,
+      "centerRobotMm": [
+        188.0,
+        0,
+        492.153903
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 161.62319053036646,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 161.62231449637852,
+          "contactGroup": "pinch"
+        }
+      ],
+      "pinchOverlapMm3": 323.245505026745,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 30,
+      "centerRobotMm": [
+        193.0,
+        0,
+        500.8141570378444
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 161.62319053036745,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 161.62231449637864,
+          "contactGroup": "pinch"
+        }
+      ],
+      "pinchOverlapMm3": 323.24550502674606,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 40,
+      "centerRobotMm": [
+        198.0,
+        0,
+        509.47441107568875
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 161.62319053036714,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 161.6223144963798,
+          "contactGroup": "pinch"
+        }
+      ],
+      "pinchOverlapMm3": 323.24550502674697,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 50,
+      "centerRobotMm": [
+        203.0,
+        0,
+        518.1346651135332
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 161.6231905303668,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 161.62231449638057,
+          "contactGroup": "pinch"
+        }
+      ],
+      "pinchOverlapMm3": 323.24550502674737,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 60,
+      "centerRobotMm": [
+        208.0,
+        0,
+        526.7949191513775
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 161.62319053036728,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 161.62231449637736,
+          "contactGroup": "pinch"
+        }
+      ],
+      "pinchOverlapMm3": 323.24550502674464,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 70,
+      "centerRobotMm": [
+        213.0,
+        0,
+        535.4551731892219
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 161.62319053036705,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 161.62231449637983,
+          "contactGroup": "pinch"
+        }
+      ],
+      "pinchOverlapMm3": 323.24550502674686,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 80,
+      "centerRobotMm": [
+        218.0,
+        0,
+        544.1154272270663
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 161.623190530365,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 161.62231449637986,
+          "contactGroup": "pinch"
+        }
+      ],
+      "pinchOverlapMm3": 323.24550502674487,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 90,
+      "centerRobotMm": [
+        223.0,
+        0,
+        552.7756812649106
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 161.62319053036728,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 161.6223144963791,
+          "contactGroup": "pinch"
+        }
+      ],
+      "pinchOverlapMm3": 323.2455050267464,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 100,
+      "centerRobotMm": [
+        228.0,
+        0,
+        561.4359353027551
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 161.6231905303669,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 161.6223144963785,
+          "contactGroup": "pinch"
+        }
+      ],
+      "pinchOverlapMm3": 323.2455050267454,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 110,
+      "centerRobotMm": [
+        233.0,
+        0,
+        570.0961893405995
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 161.6231905303663,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 161.62231449637875,
+          "contactGroup": "pinch"
+        }
+      ],
+      "pinchOverlapMm3": 323.24550502674504,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 120,
+      "centerRobotMm": [
+        238.0,
+        0,
+        578.7564433784438
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 161.62319053036705,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 161.6223144963752,
+          "contactGroup": "pinch"
+        }
+      ],
+      "pinchOverlapMm3": 323.24550502674225,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 130,
+      "centerRobotMm": [
+        243.0,
+        0,
+        587.4166974162882
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 161.55561763420542,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 161.54359554779228,
+          "contactGroup": "pinch"
+        }
+      ],
+      "pinchOverlapMm3": 323.0992131819977,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 140,
+      "centerRobotMm": [
+        248.0,
+        0,
+        596.0769514541327
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 139.1546937635746,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 139.1457362043841,
+          "contactGroup": "pinch"
+        }
+      ],
+      "pinchOverlapMm3": 278.30042996795873,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 150,
+      "centerRobotMm": [
+        253.0,
+        0,
+        604.737205491977
+      ],
+      "hits": [
+        {
+          "name": "cartridge -1 -152.4 nominal tread annulus",
+          "overlapMm3": 8.898166745046518,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge -1 152.4 nominal tread annulus",
+          "overlapMm3": 8.898261173086256,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 -152.4 nominal tread annulus",
+          "overlapMm3": 8.898164713456218,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 152.4 nominal tread annulus",
+          "overlapMm3": 8.898216626557284,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 72.00035074829243,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 71.99531341338314,
+          "contactGroup": "pinch"
+        }
+      ],
+      "pinchOverlapMm3": 143.99566416167556,
+      "launcherOverlapMm3": 35.592809258146275
+    },
+    {
+      "advanceMm": 160,
+      "centerRobotMm": [
+        258.0,
+        0,
+        613.3974595298214
+      ],
+      "hits": [
+        {
+          "name": "cartridge -1 -152.4 nominal tread annulus",
+          "overlapMm3": 40.754148378735515,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge -1 152.4 nominal tread annulus",
+          "overlapMm3": 40.75445367293612,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 -152.4 nominal tread annulus",
+          "overlapMm3": 40.75430221707125,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 152.4 nominal tread annulus",
+          "overlapMm3": 40.75410066621305,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 8.379841162365283,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 8.37975026393602,
+          "contactGroup": "pinch"
+        }
+      ],
+      "pinchOverlapMm3": 16.759591426301302,
+      "launcherOverlapMm3": 163.01700493495593
+    },
+    {
+      "advanceMm": 170,
+      "centerRobotMm": [
+        263.0,
+        0,
+        622.0577135676658
+      ],
+      "hits": [
+        {
+          "name": "cartridge -1 -152.4 nominal tread annulus",
+          "overlapMm3": 67.28757874266147,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge -1 152.4 nominal tread annulus",
+          "overlapMm3": 67.28555949403835,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 -152.4 nominal tread annulus",
+          "overlapMm3": 67.286961670708,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 152.4 nominal tread annulus",
+          "overlapMm3": 67.28681202829607,
+          "contactGroup": "launcher"
+        }
+      ],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 269.1469119357039
+    },
+    {
+      "advanceMm": 180,
+      "centerRobotMm": [
+        268.0,
+        0,
+        630.7179676055102
+      ],
+      "hits": [
+        {
+          "name": "cartridge -1 -152.4 nominal tread annulus",
+          "overlapMm3": 72.54179565950655,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge -1 152.4 nominal tread annulus",
+          "overlapMm3": 72.54100293945149,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 -152.4 nominal tread annulus",
+          "overlapMm3": 72.54776400428368,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 152.4 nominal tread annulus",
+          "overlapMm3": 72.50297792244544,
+          "contactGroup": "launcher"
+        }
+      ],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 290.1335405256872
+    },
+    {
+      "advanceMm": 190,
+      "centerRobotMm": [
+        273.0,
+        0,
+        639.3782216433545
+      ],
+      "hits": [
+        {
+          "name": "cartridge -1 -152.4 nominal tread annulus",
+          "overlapMm3": 71.39210754990705,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge -1 152.4 nominal tread annulus",
+          "overlapMm3": 71.39186054388932,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 -152.4 nominal tread annulus",
+          "overlapMm3": 71.39095759147068,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 152.4 nominal tread annulus",
+          "overlapMm3": 71.46131319771999,
+          "contactGroup": "launcher"
+        }
+      ],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 285.6362388829871
+    },
+    {
+      "advanceMm": 200,
+      "centerRobotMm": [
+        278.0,
+        0,
+        648.038475681199
+      ],
+      "hits": [
+        {
+          "name": "cartridge -1 -152.4 nominal tread annulus",
+          "overlapMm3": 70.60319417164948,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge -1 152.4 nominal tread annulus",
+          "overlapMm3": 70.60351654661498,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 -152.4 nominal tread annulus",
+          "overlapMm3": 70.60867821731262,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 152.4 nominal tread annulus",
+          "overlapMm3": 70.60232704550347,
+          "contactGroup": "launcher"
+        }
+      ],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 282.41771598108056
+    },
+    {
+      "advanceMm": 210,
+      "centerRobotMm": [
+        283.0,
+        0,
+        656.6987297190433
+      ],
+      "hits": [
+        {
+          "name": "cartridge -1 -152.4 nominal tread annulus",
+          "overlapMm3": 70.14314169804226,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge -1 152.4 nominal tread annulus",
+          "overlapMm3": 70.14242945431421,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 -152.4 nominal tread annulus",
+          "overlapMm3": 70.14322604444666,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 152.4 nominal tread annulus",
+          "overlapMm3": 70.13103867639583,
+          "contactGroup": "launcher"
+        }
+      ],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 280.55983587319895
+    },
+    {
+      "advanceMm": 220,
+      "centerRobotMm": [
+        288.0,
+        0,
+        665.3589837568877
+      ],
+      "hits": [
+        {
+          "name": "cartridge -1 -152.4 nominal tread annulus",
+          "overlapMm3": 69.99081400264592,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge -1 152.4 nominal tread annulus",
+          "overlapMm3": 69.9907972674512,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 -152.4 nominal tread annulus",
+          "overlapMm3": 69.9904760806849,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 152.4 nominal tread annulus",
+          "overlapMm3": 69.99027866640118,
+          "contactGroup": "launcher"
+        }
+      ],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 279.9623660171832
+    },
+    {
+      "advanceMm": 230,
+      "centerRobotMm": [
+        293.0,
+        0,
+        674.0192377947321
+      ],
+      "hits": [
+        {
+          "name": "cartridge -1 -152.4 nominal tread annulus",
+          "overlapMm3": 70.13245873428355,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge -1 152.4 nominal tread annulus",
+          "overlapMm3": 70.14239228137185,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 -152.4 nominal tread annulus",
+          "overlapMm3": 70.14165556479507,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 152.4 nominal tread annulus",
+          "overlapMm3": 70.14423091802738,
+          "contactGroup": "launcher"
+        }
+      ],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 280.56073749847786
+    },
+    {
+      "advanceMm": 240,
+      "centerRobotMm": [
+        298.0,
+        0,
+        682.6794918325764
+      ],
+      "hits": [
+        {
+          "name": "cartridge -1 -152.4 nominal tread annulus",
+          "overlapMm3": 70.60320361232057,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge -1 152.4 nominal tread annulus",
+          "overlapMm3": 70.60342796057252,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 -152.4 nominal tread annulus",
+          "overlapMm3": 70.60373084993287,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 152.4 nominal tread annulus",
+          "overlapMm3": 70.60280095941933,
+          "contactGroup": "launcher"
+        }
+      ],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 282.4131633822453
+    },
+    {
+      "advanceMm": 250,
+      "centerRobotMm": [
+        303.0,
+        0,
+        691.3397458704209
+      ],
+      "hits": [
+        {
+          "name": "cartridge -1 -152.4 nominal tread annulus",
+          "overlapMm3": 71.3920819960112,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge -1 152.4 nominal tread annulus",
+          "overlapMm3": 71.39189786697088,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 -152.4 nominal tread annulus",
+          "overlapMm3": 71.3617601204264,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 152.4 nominal tread annulus",
+          "overlapMm3": 71.3908952025556,
+          "contactGroup": "launcher"
+        }
+      ],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 285.5366351859641
+    },
+    {
+      "advanceMm": 260,
+      "centerRobotMm": [
+        308.0,
+        0,
+        699.9999999082653
+      ],
+      "hits": [
+        {
+          "name": "cartridge -1 -152.4 nominal tread annulus",
+          "overlapMm3": 72.54208234555264,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge -1 152.4 nominal tread annulus",
+          "overlapMm3": 72.54259069775642,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 -152.4 nominal tread annulus",
+          "overlapMm3": 72.54076251680561,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 152.4 nominal tread annulus",
+          "overlapMm3": 72.53981365334279,
+          "contactGroup": "launcher"
+        }
+      ],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 290.16524921345746
+    },
+    {
+      "advanceMm": 270,
+      "centerRobotMm": [
+        313.0,
+        0,
+        708.6602539461096
+      ],
+      "hits": [
+        {
+          "name": "cartridge -1 -152.4 nominal tread annulus",
+          "overlapMm3": 67.28705858765294,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge -1 152.4 nominal tread annulus",
+          "overlapMm3": 67.28575037286272,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 -152.4 nominal tread annulus",
+          "overlapMm3": 67.28696399998033,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 152.4 nominal tread annulus",
+          "overlapMm3": 67.28637206270585,
+          "contactGroup": "launcher"
+        }
+      ],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 269.1461450232018
+    },
+    {
+      "advanceMm": 280,
+      "centerRobotMm": [
+        318.0,
+        0,
+        717.320507983954
+      ],
+      "hits": [
+        {
+          "name": "cartridge -1 -152.4 nominal tread annulus",
+          "overlapMm3": 40.75458778437545,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge -1 152.4 nominal tread annulus",
+          "overlapMm3": 40.754273893171316,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 -152.4 nominal tread annulus",
+          "overlapMm3": 40.75426333543375,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 152.4 nominal tread annulus",
+          "overlapMm3": 40.75440707694088,
+          "contactGroup": "launcher"
+        }
+      ],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 163.0175320899214
+    },
+    {
+      "advanceMm": 290,
+      "centerRobotMm": [
+        323.0,
+        0,
+        725.9807620217985
+      ],
+      "hits": [
+        {
+          "name": "cartridge -1 -152.4 nominal tread annulus",
+          "overlapMm3": 8.898202294872428,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge -1 152.4 nominal tread annulus",
+          "overlapMm3": 8.898189686003859,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 -152.4 nominal tread annulus",
+          "overlapMm3": 8.898197746706224,
+          "contactGroup": "launcher"
+        },
+        {
+          "name": "cartridge 1 152.4 nominal tread annulus",
+          "overlapMm3": 8.898161790832622,
+          "contactGroup": "launcher"
+        }
+      ],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 35.592751518415135
+    },
+    {
+      "advanceMm": 300,
+      "centerRobotMm": [
+        328.0,
+        0,
+        734.6410160596429
+      ],
+      "hits": [],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 310,
+      "centerRobotMm": [
+        333.0,
+        0,
+        743.3012700974872
+      ],
+      "hits": [],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 320,
+      "centerRobotMm": [
+        338.0,
+        0,
+        751.9615241353315
+      ],
+      "hits": [],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 330,
+      "centerRobotMm": [
+        343.0,
+        0,
+        760.6217781731759
+      ],
+      "hits": [],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 340,
+      "centerRobotMm": [
+        348.0,
+        0,
+        769.2820322110204
+      ],
+      "hits": [],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 350,
+      "centerRobotMm": [
+        353.0,
+        0,
+        777.9422862488648
+      ],
+      "hits": [],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 360,
+      "centerRobotMm": [
+        358.0,
+        0,
+        786.6025402867092
+      ],
+      "hits": [],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 370,
+      "centerRobotMm": [
+        363.0,
+        0,
+        795.2627943245535
+      ],
+      "hits": [],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 380,
+      "centerRobotMm": [
+        368.0,
+        0,
+        803.9230483623978
+      ],
+      "hits": [],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 390,
+      "centerRobotMm": [
+        373.00000000000006,
+        0,
+        812.5833024002422
+      ],
+      "hits": [],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 400,
+      "centerRobotMm": [
+        378.00000000000006,
+        0,
+        821.2435564380867
+      ],
+      "hits": [],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 410,
+      "centerRobotMm": [
+        383.00000000000006,
+        0,
+        829.9038104759311
+      ],
+      "hits": [],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 420,
+      "centerRobotMm": [
+        388.00000000000006,
+        0,
+        838.5640645137754
+      ],
+      "hits": [],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 430,
+      "centerRobotMm": [
+        393.00000000000006,
+        0,
+        847.2243185516198
+      ],
+      "hits": [],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 440,
+      "centerRobotMm": [
+        398.00000000000006,
+        0,
+        855.8845725894641
+      ],
+      "hits": [],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 450,
+      "centerRobotMm": [
+        403.00000000000006,
+        0,
+        864.5448266273086
+      ],
+      "hits": [],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 460,
+      "centerRobotMm": [
+        408.00000000000006,
+        0,
+        873.205080665153
+      ],
+      "hits": [],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 470,
+      "centerRobotMm": [
+        413.00000000000006,
+        0,
+        881.8653347029974
+      ],
+      "hits": [],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 0
+    },
+    {
+      "advanceMm": 480,
+      "centerRobotMm": [
+        418.00000000000006,
+        0,
+        890.5255887408417
+      ],
+      "hits": [],
+      "pinchOverlapMm3": 0,
+      "launcherOverlapMm3": 0
+    }
+  ],
+  "acceptance": false,
+  "limits": [
+    "Fixed cradle handoff pose and guide-aligned NOTE advance only",
+    "10mm finite samples, not continuous clearance or dynamic motion",
+    "Only designated side belts and launcher tread are intended-contact hypotheses",
+    "Original component representations, not exact vendor internals",
+    "Upstream traction, preload, power and NOTE attitude evolution uncalibrated",
+    "No field or scoring acceptance"
+  ]
+}

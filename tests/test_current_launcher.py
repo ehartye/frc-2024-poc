@@ -1,11 +1,14 @@
+import subprocess
 import pathlib,json,hashlib,sys,unittest,math,tempfile
 R=pathlib.Path(__file__).resolve().parents[1];H=R/'sim/component-launcher';sys.path.insert(0,str(H));import run_current as run
+# Historical receipts bind this immutable revision, not the current corrected geometry.
+def historical(path):return subprocess.check_output(['git','show','8b928e9:'+path],cwd=R)
 class CurrentGeometry(unittest.TestCase):
  def setUp(self):self.g=json.loads((H/'current-geometry.json').read_text());self.e=json.loads((H/'evidence.json').read_text())
  def test_all_cad_pins(self):
-  for f,h in self.g['inputs'].items():self.assertEqual(hashlib.sha256((R/f).read_bytes()).hexdigest(),h,f)
+  for f,h in self.g['inputs'].items():self.assertEqual(hashlib.sha256(historical(f)).hexdigest(),h,f)
  def test_run_pins(self):
-  for f,h in self.e['inputs'].items():self.assertEqual(hashlib.sha256((R/f if f.startswith('scripts/') else H/f).read_bytes()).hexdigest(),h,f)
+  for f,h in self.e['inputs'].items():self.assertEqual(hashlib.sha256(historical(f if f.startswith('scripts/') else 'sim/component-launcher/'+f)).hexdigest(),h,f)
  def test_current_radius_and_pose(self):
   self.assertAlmostEqual(self.g['wheelRadiusMm'],48.26);self.assertAlmostEqual(self.g['shooter']['pivot'][0],.188);self.assertAlmostEqual(self.g['handoffFromStationMm'],-220)
  def test_finite_occupancy(self):

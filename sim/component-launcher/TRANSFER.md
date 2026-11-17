@@ -27,3 +27,19 @@ The full 711-part, 49-position advancing-NOTE screen removes the former cradle/b
 ## Six-drive runner preparation
 
 `run_six_drive.py` verifies the complete current CAD/script inventory, full transfer domain, every linked native wheel witness and absence of real bare-wheel contact before executing. The present baseline is deliberately rejected. The runner adds shared-power state, virtual hold/spinup, release from rest, low-friction and omitted-pinch controls, sensor loss, load step and motor-off cases. The three new tests use synthetic contact tables only and do not establish a real transfer. Wider-gap geometry and fresh native/contact evidence are still required. Pinch/launcher preload and friction remain separately configurable hypotheses.
+
+## Corrected f2be99b powered-transfer experiment
+
+The fresh full connected711-part rigid NOTE screen has no unintended intersections at all49 positions. It uses the corrected49.2mm gap and mounting geometry; previous narrow-gap evidence remains historical. Sixteen internal drive/thread proxy engagements are not physical-joint qualification. No solved foam/contact torque, weld/load or full-robot score acceptance follows.
+
+Run the bound experimental model, without a native CAD replay:
+
+```
+python sim/component-launcher/run_six_drive.py --transfer sim/component-launcher/corrected-transfer-evidence.json --native sim/component-launcher/corrected-native-wheel-evidence.json --output artifacts/my-fresh-six-drive-run
+```
+
+The default hypothetical10N/pinch,25N/launcher loads produce powered transfer from rest, with last modeled drive contact about9.098m/s. Removing pinch drive reverses immediately. Low preload(2N/pinch,5N/launcher) reduces that value to3.786m/s; friction.3 gives5.649m/s. These numbers are not measured performance or a release/score prediction. The9V source case repeatedly trips the provisional startup brownout/rearm policy and never releases within2s. Midfeed sensor/power losses preserve rotor and NOTE momentum; continued exit alone is not a safety failure or requirement for a retainer.
+
+Halving the nominal timestep20→10microseconds changes last-contact speed by about.00124m/s and halves maximum energy residual.01633→.00816J (nominal source energy223.16J). This is a limited numerical sensitivity check, not convergence of the contact assumptions. The trajectory keeps fixed60degree attitude and ends at the480mm table boundary, not a field goal. Virtual holding/spinup is a boundary hypothesis, not demonstrated intake capture.
+
+Historical regression receipts are validated against their exact immutable Git revisions; they are not silently rebound to the corrected geometry. Current receipts use current source hashes and separate gate tests reject missing dependencies, incomplete domains and substituted native source identity.

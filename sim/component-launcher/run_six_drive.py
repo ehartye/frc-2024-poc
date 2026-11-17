@@ -40,10 +40,13 @@ def validate_reports(transfer,native):
  return t,n
 
 def simulate(config,rows,scenario='nominal'):
- if scenario not in ['nominal','zero-pinch','low-friction','sensor-loss','load-step','power-off']:raise ValueError('Scenario')
+ if scenario not in ['nominal','zero-pinch','low-friction','sensor-loss','load-step','power-off','low-preload','nine-volt','half-step']:raise ValueError('Scenario')
  c=copy.deepcopy(config)
  if scenario=='low-friction':c['friction']=c['pinchFriction']=.3
- p=SixDrivePlant(c,rows);policy=PowerState();last_bus=c['busOpenCircuitV'];released=None;latched=False;trace=[];events=[];previous=None;outcome='HORIZON';tick=0
+ if scenario=='low-preload':c['normalEachN']=5.;c['pinchNormalEachN']=2.
+ if scenario=='nine-volt':c['busOpenCircuitV']=9.
+ if scenario=='half-step':c['stepS']/=2
+ p=SixDrivePlant(c,rows);policy=PowerState();last_bus=c['busOpenCircuitV'];released=None;latched=False;trace=[];events=[];previous=None;outcome='HORIZON';tick=0;maxres=0.;minbus=c['busOpenCircuitV'];peakcurrent=0.;lastcontact=None
  while p.t<c['maxTimeS']:
   since=None if released is None else p.t-released
   fresh=not(scenario=='sensor-loss' and since is not None and .03<=since<.08)
@@ -57,6 +60,8 @@ def simulate(config,rows,scenario='nominal'):
   pinch=c['pinchDuty'] if enabled and scenario!='zero-pinch' else 0.
   duties=[pinch]*2+[c['duty'] if enabled else 0.]*4
   row=p.step(duties,release=release,other_current=load);last_bus=row['busV'];row['controller']=state;row['duties']=duties
+  maxres=max(maxres,abs(row['energyJ']['residual']));minbus=min(minbus,row['busV']);peakcurrent=max(peakcurrent,row['busCurrentA'])
+  if released is not None and any(abs(f)>1e-10 for f in row['forcesN']):lastcontact=dict(timeS=p.t,advanceM=p.x,speedMps=p.v)
   key=(state['stage'],enabled,p.held)
   if key!=previous:events.append(dict(timeS=p.t,stage=state['stage'],enabled=enabled,held=p.held,advanceM=p.x,speedMps=p.v));previous=key
   if tick%100==0:trace.append(row)
@@ -64,15 +69,19 @@ def simulate(config,rows,scenario='nominal'):
   if p.x>=rows[-1]['advanceMm']/1000:outcome='PASSED_TABLE_BOUNDARY';break
   tick+=1
  if not trace or trace[-1]['timeS']!=row['timeS']:trace.append(row)
- return dict(scenario=scenario,outcome=outcome,releaseTimeS=released,events=events,trace=trace,final=row,acceptance=False)
+ return dict(scenario=scenario,outcome=outcome,releaseTimeS=released,events=events,trace=trace,final=row,maxAbsEnergyResidualJ=maxres,minimumBusV=minbus,peakBusCurrentA=peakcurrent,lastModeledDriveContact=lastcontact,acceptance=False)
 
 def run(transfer,native,output):
+ transfer=transfer.resolve();native=native.resolve();output=output.resolve()
  if output.exists():raise ValueError('Fresh output directory required')
  t,n=validate_reports(transfer,native)
  config=json.loads((H/'six-drive-config.json').read_text())
+ intake=json.loads((R/'cad/assembly/intake_components.json').read_text());tread=json.loads((R/'cad/components/a2-transmission.json').read_text())['serviceInterfaces']['tread']
+ derived={'pitchDegrees':intake['pitchDeg'],'radiusM':(tread['nativeSeatRadiusMm']+tread['thicknessMm'])/1000,'pinchRadiusM':intake['pinch']['pitch']*intake['pinch']['teeth']/(2000*math.pi)}
+ if any(not math.isclose(config[k],v,rel_tol=0,abs_tol=1e-12) for k,v in derived.items()):raise ValueError('Plant/CAD geometry mismatch')
  files=[pathlib.Path(__file__),H/'transfer_plant.py',H/'power_state.py',H/'six-drive-config.json',transfer,native]
  pins={p.relative_to(R).as_posix():sha(p) for p in files}
- cases=[simulate(config,t['rows'],s) for s in ['nominal','zero-pinch','low-friction','sensor-loss','load-step','power-off']]
+ cases=[simulate(config,t['rows'],s) for s in ['nominal','zero-pinch','low-friction','sensor-loss','load-step','power-off','low-preload','nine-volt','half-step']]
  if any(sha(R/f)!=h for f,h in pins.items()):raise ValueError('Inputs changed')
  output.mkdir(parents=True)
  report=dict(schema='frc-six-drive-transfer-experiment/1',inputs=pins,cadInputs=t['inputs'],cases=cases,acceptance=False,limits=config['assumptions'])

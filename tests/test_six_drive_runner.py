@@ -2,7 +2,7 @@ import pathlib,sys,json,unittest,copy
 R=pathlib.Path(__file__).resolve().parents[1];H=R/'sim/component-launcher';sys.path.insert(0,str(H));import run_six_drive as q
 class RunnerTest(unittest.TestCase):
  def test_baseline_native_contacts_rejected(self):
-  with self.assertRaisesRegex(ValueError,'not tread-only'):q.validate_reports(H/'connected-transfer-evidence.json',H/'connected-native-wheel-evidence.json')
+  with self.assertRaisesRegex(ValueError,'Stale'):q.validate_reports(H/'connected-transfer-evidence.json',H/'connected-native-wheel-evidence.json')
  def test_synthetic_power_off_keeps_state(self):
   c=json.loads((H/'six-drive-config.json').read_text());c.update(stepS=.0002,maxTimeS=.4,readyRpm=10,pinchReadySurfaceMps=.01,normalEachN=1.,pinchNormalEachN=1.,pitchDegrees=0)
   rows=[dict(advanceMm=x,pinchOverlapMm3=1.,launcherOverlapMm3=1.) for x in range(0,481,10)]

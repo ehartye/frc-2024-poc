@@ -1,9 +1,12 @@
+import subprocess
 import pathlib,json,hashlib,unittest
 R=pathlib.Path(__file__).resolve().parents[1];H=R/'sim/component-launcher'
+# Historical receipts bind this immutable revision, not the current corrected geometry.
+def historical(path):return subprocess.check_output(['git','show','8b928e9:'+path],cwd=R)
 class TransferTests(unittest.TestCase):
  def setUp(self):self.r=json.loads((H/'transfer-evidence.json').read_text())
  def test_pins(self):
-  for f,h in self.r['inputs'].items():self.assertEqual(hashlib.sha256((R/f).read_bytes()).hexdigest(),h,f)
+  for f,h in self.r['inputs'].items():self.assertEqual(hashlib.sha256(historical(f)).hexdigest(),h,f)
  def test_fixed_sample_scope(self):
   self.assertEqual([r['advanceMm'] for r in self.r['rows']],list(range(0,481,10)));self.assertEqual(self.r['invalidOrNonSolidInputs'],[]);self.assertFalse(self.r['acceptance'])
  def test_preserved_weldment_counterexample(self):
@@ -16,7 +19,7 @@ class TransferTests(unittest.TestCase):
  def test_native_wheel_witnesses(self):
   r=json.loads((H/'native-wheel-witnesses.json').read_text());self.assertEqual([x['advanceMm'] for x in r['rows']],[140,220,300])
   for row in r['rows']:self.assertEqual(len(row['nativeBareWheelOverlapMm3']),4);self.assertTrue(all(v==0 for v in row['nativeBareWheelOverlapMm3'].values()))
-  for f,h in r['inputs'].items():self.assertEqual(hashlib.sha256((R/f).read_bytes()).hexdigest(),h,f)
+  for f,h in r['inputs'].items():self.assertEqual(hashlib.sha256(historical(f)).hexdigest(),h,f)
  def test_separate_contact_groups(self):
   for r in self.r['rows']:
    for group in ['pinch','launcher']:self.assertAlmostEqual(r[group+'OverlapMm3'],sum(h['overlapMm3'] for h in r['hits'] if h['contactGroup']==group))
