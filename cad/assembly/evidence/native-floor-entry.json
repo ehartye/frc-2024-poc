@@ -1,0 +1,2112 @@
+{
+  "schema": "native-floor-entry-witness/1",
+  "inputs": {
+    "cad/assembly/build_robot.py": "cca2c9a3ecca7a622fb1283461c393b2288e3c6efd173c60d72a959e3c500e26",
+    "cad/assembly/bumper_candidate.py": "556fba39fda427cb081a2a1d4d806372b67b830606a242bbfc0babf05619fc19",
+    "cad/a2_primitives.py": "bef958c710da792f89def8606d7169a7c385fcff257826619a7b29fe0943952e",
+    "cad/a2_kinematics.py": "4329126a1465f53c8d27618307b2864ff69803e196ff4521aab8a50daf670581",
+    "cad/build_a2_layout.py": "aea31166eabc53113962cc511cfbd190eba54033f7b93476455961dccb1969c9",
+    "cad/cycle-contract-A2.json": "3700da3bf1a271d6b6763060f913435a4a50cda8d456cb1a57a6f1898416b6ad",
+    "cad/components/a2-transmission.json": "0aae2e2dd0d8c4b16729139380f6d1e2df0efa956dad2ee8b205be1a57f3d8b0",
+    "cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+    "cad/drivetrain/build_fastening.py": "9d82a974d184200e7a6c414bc74b345cd53aa2cf85f36c3cf528fe818997d4ac",
+    "cad/drivetrain/fastening.json": "6cb3d276cd5f59143ef9b52d2240095f02db9f92d6cfef5ae53b145a78862ac9",
+    "cad/drivetrain/build_drivetrain.py": "4748e01902aac32ae8d996e1f7676caa7f794ac6a5971b661855c26487ad29a7",
+    "cad/electrical/manifest.json": "9db917a55b0884db9841f52da3b5cccf8ad684c652e4dde3e01b1efe75e891a3",
+    "cad/electrical/build_electrical.py": "d2fbd40d0b26c8887679b6ed3b49c655b10a27a0cd175e812b35d9fccd6f6317",
+    "cad/electrical/mounts.py": "90254dbc5116a9af72df0ba6442ed94ef8c94e8247326f9b7c6cfd0c0749c7e8",
+    "cad/electrical/breaker_mount.py": "1e27087fa191e8043c6ed8b3c48bca4db50cde379efa171cc49508a1a1c75060",
+    "cad/electrical/breaker-mount-evidence.json": "9e0bb64f30ab3ee58de577fe694ee578135cdf4d74ddf8e0b3065b741266b07d",
+    "cad/electrical/fasteners.py": "788a1cb9bf71a780aed9cbeb5bf48d06532e914fed431edcc0e72a4bd273b799",
+    "cad/assembly/intake_components.py": "c6d352be0edba340d340112697d3f2482158b4fb8f3324b0dd3927344f9b43c5",
+    "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+    "cad/assembly/build_intake_candidate.py": "07e9c96ec0f5e4d02660e0d2efda8dd2bddfb0198862c5e228dbc9e07cbf9bc3",
+    "cad/assembly/check_intake_contact.py": "95d20cfed12331c135b5534d4076f833ae6741b69806a61e677e88098a7301e3",
+    "cad/assembly/verify_receipts.py": "213a00200bc7fc0b84bd4bb82e4a62aaee3c10432f35373fc3097b2141d4e81d",
+    "cad/assembly/audit_intake_motion.py": "1d33ef51ba87c170335234004b1fa3cac1aeeac39da6149d15eedf58a26c1509",
+    "cad/components/check_pulley_outer_profile.py": "23325f74745de7ea2d828340c816143346221c44325784d6e8934b08553efde5",
+    "cad/components/pulley-outer-profile.json": "e582635a9b49f9810eee996177af2761edfe7928450dd86ef76d103ce8af53ec",
+    "cad/assembly/lower_support_mounts.py": "1b832dcc91967eab3dcfe40abc585ef1137250fb4e6777b01075a79ebcb1b14d",
+    "cad/assembly/upper_carriage_connections.py": "bbfbdf8b8c5f9356b5f60a3b4ad3d2d94c7f4e8a76db0e64742618173c936032",
+    "cad/assembly/build_connected_candidate.py": "19356d26a59b7b22a9a4eaed106c9cfd5d9f57774d682e0bd100711348a5ea69",
+    "cad/assembly/slide_pad_attachments.py": "526310777f96f0f537844946c611b05f7e7dc80119a75d308f043832aa7ed7ef",
+    "cad/assembly/check_native_floor_entry.py": "34eea49c3e10408e465352c820dde81685af9c10842c6b1b1e2b97be04c0ac82",
+    "cad/assembly/audit_cartridge_interfaces.py": "44e8edfcecfd3afd38c8ed91ea153654d4bffe2579096dafd533d318e02af21f",
+    "cad/assembly/evidence/floor-entry.json": "9baf2ff061ef5a79a34ef757c1b442579b7d8273efcbf72ffdf1fb95cca0739f",
+    "cad/components/a2-wheel-cartridge.json": "d4a74dc6cbbd7105392083d1401cbd5b31bfc7be416952ab54b11207889db129",
+    "cad/assembly/audit_intake_feed.py": "0f6febf4424e6e4ed1e994b6332177b5d23b1ee5a3b79eade754ecf7a61d4992"
+  },
+  "sources": {
+    "pulley": {
+      "file": "REV-21-2201.step",
+      "sha256": "c2825524b2293af12647d92ad57e9162379ad64105b86f867be2223037059c68",
+      "expectedSolids": 3
+    },
+    "bearing": {
+      "url": "https://www.revrobotics.com/content/cad/REV-21-1916.STEP",
+      "sha256": "3e16cb3f5f215288b8706eb8228d9580fea78c425eee536ef95195b5b98f02e6",
+      "part": "REV-21-1916-PK4",
+      "scope": "rounded-hex flanged bearing; load and fit unverified",
+      "file": "REV-21-1916-PK4.step",
+      "expectedSolids": 1
+    }
+  },
+  "rows": [
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 0,
+      "centerRobotMm": [
+        658,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 480,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 10,
+      "centerRobotMm": [
+        648,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 470,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 20,
+      "centerRobotMm": [
+        638,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 460,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 30,
+      "centerRobotMm": [
+        628,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 450,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 40,
+      "centerRobotMm": [
+        618,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 440,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 50,
+      "centerRobotMm": [
+        608,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 430,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 60,
+      "centerRobotMm": [
+        598,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 420,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 70,
+      "centerRobotMm": [
+        588,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 410,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 80,
+      "centerRobotMm": [
+        578,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 400,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 90,
+      "centerRobotMm": [
+        568,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 390,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 100,
+      "centerRobotMm": [
+        558,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 380,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 110,
+      "centerRobotMm": [
+        548,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 370,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 120,
+      "centerRobotMm": [
+        538,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 360,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 130,
+      "centerRobotMm": [
+        528,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 350,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 140,
+      "centerRobotMm": [
+        518,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 340,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 150,
+      "centerRobotMm": [
+        508,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 330,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 160,
+      "centerRobotMm": [
+        498,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 320,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 170,
+      "centerRobotMm": [
+        488,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 310,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 180,
+      "centerRobotMm": [
+        478,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 300,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 190,
+      "centerRobotMm": [
+        468,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 290,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 200,
+      "centerRobotMm": [
+        458,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 280,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 210,
+      "centerRobotMm": [
+        448,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 270,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 220,
+      "centerRobotMm": [
+        438,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 260,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 230,
+      "centerRobotMm": [
+        428,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 250,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 240,
+      "centerRobotMm": [
+        418,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 240,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 250,
+      "centerRobotMm": [
+        408,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 230,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 260,
+      "centerRobotMm": [
+        398,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 220,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 270,
+      "centerRobotMm": [
+        388,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 210,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 280,
+      "centerRobotMm": [
+        378,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 200,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 290,
+      "centerRobotMm": [
+        368,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 190,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 300,
+      "centerRobotMm": [
+        358,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 180,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 310,
+      "centerRobotMm": [
+        348,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 170,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 320,
+      "centerRobotMm": [
+        338,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 160,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 330,
+      "centerRobotMm": [
+        328,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 150,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 340,
+      "centerRobotMm": [
+        318,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 140,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 350,
+      "centerRobotMm": [
+        308,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 130,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 360,
+      "centerRobotMm": [
+        298,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 120,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 370,
+      "centerRobotMm": [
+        288,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 110,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 380,
+      "centerRobotMm": [
+        278,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 100,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 390,
+      "centerRobotMm": [
+        268,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 90,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 400,
+      "centerRobotMm": [
+        258,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 80,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 410,
+      "centerRobotMm": [
+        248,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 70,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 420,
+      "centerRobotMm": [
+        238,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 60,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 430,
+      "centerRobotMm": [
+        228,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 50,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 440,
+      "centerRobotMm": [
+        218,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 40,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 450,
+      "centerRobotMm": [
+        208,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 30,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 460,
+      "centerRobotMm": [
+        198,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 20,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 470,
+      "centerRobotMm": [
+        188,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 10,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 480,
+      "centerRobotMm": [
+        178,
+        0,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 0,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 0,
+      "centerRobotMm": [
+        658,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 480,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 10,
+      "centerRobotMm": [
+        648,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 470,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 20,
+      "centerRobotMm": [
+        638,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 460,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 30,
+      "centerRobotMm": [
+        628,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 450,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 40,
+      "centerRobotMm": [
+        618,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 440,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 50,
+      "centerRobotMm": [
+        608,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 430,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 60,
+      "centerRobotMm": [
+        598,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 420,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 70,
+      "centerRobotMm": [
+        588,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 410,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 80,
+      "centerRobotMm": [
+        578,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 400,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 90,
+      "centerRobotMm": [
+        568,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 390,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 100,
+      "centerRobotMm": [
+        558,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 380,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 110,
+      "centerRobotMm": [
+        548,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 370,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 120,
+      "centerRobotMm": [
+        538,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 360,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 130,
+      "centerRobotMm": [
+        528,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 350,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 140,
+      "centerRobotMm": [
+        518,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 340,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 150,
+      "centerRobotMm": [
+        508,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 330,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 160,
+      "centerRobotMm": [
+        498,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 320,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 170,
+      "centerRobotMm": [
+        488,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 310,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 180,
+      "centerRobotMm": [
+        478,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 300,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 190,
+      "centerRobotMm": [
+        468,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 290,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 200,
+      "centerRobotMm": [
+        458,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 280,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 210,
+      "centerRobotMm": [
+        448,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 270,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 220,
+      "centerRobotMm": [
+        438,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 260,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 230,
+      "centerRobotMm": [
+        428,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 250,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 240,
+      "centerRobotMm": [
+        418,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 240,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 250,
+      "centerRobotMm": [
+        408,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 230,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 260,
+      "centerRobotMm": [
+        398,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 220,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 270,
+      "centerRobotMm": [
+        388,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 210,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 280,
+      "centerRobotMm": [
+        378,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 200,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 290,
+      "centerRobotMm": [
+        368,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 190,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 300,
+      "centerRobotMm": [
+        358,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 180,
+      "hits": [
+        {
+          "part": "pulley/-1/146.05/0",
+          "commonMm3": 12.759653757792128
+        },
+        {
+          "part": "pulley/-1/146.05/1",
+          "commonMm3": 36.68050244802974
+        },
+        {
+          "part": "pulley/-1/146.05/2",
+          "commonMm3": 12.759655190369653
+        },
+        {
+          "part": "bearing/-1/146.05/-18.4/flipFalse",
+          "commonMm3": 1.4998894385513089
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 310,
+      "centerRobotMm": [
+        348,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 170,
+      "hits": [
+        {
+          "part": "pulley/-1/146.05/0",
+          "commonMm3": 35.589407251768506
+        },
+        {
+          "part": "pulley/-1/146.05/1",
+          "commonMm3": 170.18222631105039
+        },
+        {
+          "part": "pulley/-1/146.05/2",
+          "commonMm3": 35.58785860548983
+        },
+        {
+          "part": "bearing/-1/146.05/-18.4/flipFalse",
+          "commonMm3": 24.204037176942894
+        },
+        {
+          "part": "bearing/-1/146.05/-18.4/flipTrue",
+          "commonMm3": 3.4440891881716174
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 320,
+      "centerRobotMm": [
+        338,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 160,
+      "hits": [
+        {
+          "part": "pulley/-1/146.05/0",
+          "commonMm3": 53.75983419008078
+        },
+        {
+          "part": "pulley/-1/146.05/1",
+          "commonMm3": 322.88661676323494
+        },
+        {
+          "part": "pulley/-1/146.05/2",
+          "commonMm3": 53.75285311764809
+        },
+        {
+          "part": "bearing/-1/146.05/-18.4/flipFalse",
+          "commonMm3": 48.46890566558608
+        },
+        {
+          "part": "bearing/-1/146.05/-18.4/flipTrue",
+          "commonMm3": 19.956353878312562
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 330,
+      "centerRobotMm": [
+        328,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 150,
+      "hits": [
+        {
+          "part": "pulley/-1/146.05/0",
+          "commonMm3": 61.93482114291717
+        },
+        {
+          "part": "pulley/-1/146.05/1",
+          "commonMm3": 420.47656713088827
+        },
+        {
+          "part": "pulley/-1/146.05/2",
+          "commonMm3": 61.925659063975615
+        },
+        {
+          "part": "bearing/-1/146.05/-18.4/flipFalse",
+          "commonMm3": 61.93008360688256
+        },
+        {
+          "part": "bearing/-1/146.05/-18.4/flipTrue",
+          "commonMm3": 32.37126085902937
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 340,
+      "centerRobotMm": [
+        318,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 140,
+      "hits": [
+        {
+          "part": "pulley/-1/146.05/0",
+          "commonMm3": 61.12421543566522
+        },
+        {
+          "part": "pulley/-1/146.05/1",
+          "commonMm3": 406.9811228152206
+        },
+        {
+          "part": "pulley/-1/146.05/2",
+          "commonMm3": 61.11950789862431
+        },
+        {
+          "part": "bearing/-1/146.05/-18.4/flipFalse",
+          "commonMm3": 60.20284863446638
+        },
+        {
+          "part": "bearing/-1/146.05/-18.4/flipTrue",
+          "commonMm3": 30.737987483273244
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 350,
+      "centerRobotMm": [
+        308,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 130,
+      "hits": [
+        {
+          "part": "pulley/-1/146.05/0",
+          "commonMm3": 50.749317533290096
+        },
+        {
+          "part": "pulley/-1/146.05/1",
+          "commonMm3": 294.74755212543215
+        },
+        {
+          "part": "pulley/-1/146.05/2",
+          "commonMm3": 50.749252767408414
+        },
+        {
+          "part": "bearing/-1/146.05/-18.4/flipFalse",
+          "commonMm3": 44.16770977028847
+        },
+        {
+          "part": "bearing/-1/146.05/-18.4/flipTrue",
+          "commonMm3": 16.295320131057924
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 360,
+      "centerRobotMm": [
+        298,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 120,
+      "hits": [
+        {
+          "part": "pulley/-1/146.05/0",
+          "commonMm3": 31.200977160588973
+        },
+        {
+          "part": "pulley/-1/146.05/1",
+          "commonMm3": 135.74426648467795
+        },
+        {
+          "part": "pulley/-1/146.05/2",
+          "commonMm3": 31.200995904111934
+        },
+        {
+          "part": "bearing/-1/146.05/-18.4/flipFalse",
+          "commonMm3": 18.490649718111175
+        },
+        {
+          "part": "bearing/-1/146.05/-18.4/flipTrue",
+          "commonMm3": 1.4080034356148434
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 370,
+      "centerRobotMm": [
+        288,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 110,
+      "hits": [
+        {
+          "part": "pulley/-1/146.05/0",
+          "commonMm3": 8.275986383553757
+        },
+        {
+          "part": "pulley/-1/146.05/1",
+          "commonMm3": 20.91797132741528
+        },
+        {
+          "part": "pulley/-1/146.05/2",
+          "commonMm3": 8.27600175575655
+        },
+        {
+          "part": "bearing/-1/146.05/-18.4/flipFalse",
+          "commonMm3": 0.10827287903042931
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 380,
+      "centerRobotMm": [
+        278,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 100,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 390,
+      "centerRobotMm": [
+        268,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 90,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 400,
+      "centerRobotMm": [
+        258,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 80,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 410,
+      "centerRobotMm": [
+        248,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 70,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 420,
+      "centerRobotMm": [
+        238,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 60,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 430,
+      "centerRobotMm": [
+        228,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 50,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 440,
+      "centerRobotMm": [
+        218,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 40,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 450,
+      "centerRobotMm": [
+        208,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 30,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 460,
+      "centerRobotMm": [
+        198,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 20,
+      "hits": [
+        {
+          "part": "pulley/-1/-19.049999999999997/0",
+          "commonMm3": 2.3240773759976774
+        },
+        {
+          "part": "pulley/-1/-19.049999999999997/1",
+          "commonMm3": 5.677146717517252
+        },
+        {
+          "part": "pulley/-1/-19.049999999999997/2",
+          "commonMm3": 2.3231270924482006
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 470,
+      "centerRobotMm": [
+        188,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 10,
+      "hits": [
+        {
+          "part": "pulley/-1/-19.049999999999997/0",
+          "commonMm3": 24.10996298647193
+        },
+        {
+          "part": "pulley/-1/-19.049999999999997/1",
+          "commonMm3": 91.39764534130636
+        },
+        {
+          "part": "pulley/-1/-19.049999999999997/2",
+          "commonMm3": 24.109981844272024
+        },
+        {
+          "part": "bearing/-1/-19.049999999999997/-18.4/flipFalse",
+          "commonMm3": 10.66355882725177
+        },
+        {
+          "part": "bearing/-1/-19.049999999999997/-18.4/flipTrue",
+          "commonMm3": 0.03635934972509186
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 480,
+      "centerRobotMm": [
+        178,
+        -5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 0,
+      "hits": [
+        {
+          "part": "pulley/-1/-19.049999999999997/0",
+          "commonMm3": 45.41324296249127
+        },
+        {
+          "part": "pulley/-1/-19.049999999999997/1",
+          "commonMm3": 250.53354864363422
+        },
+        {
+          "part": "pulley/-1/-19.049999999999997/2",
+          "commonMm3": 45.40961089292441
+        },
+        {
+          "part": "bearing/-1/-19.049999999999997/-18.4/flipFalse",
+          "commonMm3": 37.14162954953945
+        },
+        {
+          "part": "bearing/-1/-19.049999999999997/-18.4/flipTrue",
+          "commonMm3": 10.853741129197585
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 0,
+      "centerRobotMm": [
+        658,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 480,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 10,
+      "centerRobotMm": [
+        648,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 470,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 20,
+      "centerRobotMm": [
+        638,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 460,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 30,
+      "centerRobotMm": [
+        628,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 450,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 40,
+      "centerRobotMm": [
+        618,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 440,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 50,
+      "centerRobotMm": [
+        608,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 430,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 60,
+      "centerRobotMm": [
+        598,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 420,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 70,
+      "centerRobotMm": [
+        588,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 410,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 80,
+      "centerRobotMm": [
+        578,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 400,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 90,
+      "centerRobotMm": [
+        568,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 390,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 100,
+      "centerRobotMm": [
+        558,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 380,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 110,
+      "centerRobotMm": [
+        548,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 370,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 120,
+      "centerRobotMm": [
+        538,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 360,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 130,
+      "centerRobotMm": [
+        528,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 350,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 140,
+      "centerRobotMm": [
+        518,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 340,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 150,
+      "centerRobotMm": [
+        508,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 330,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 160,
+      "centerRobotMm": [
+        498,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 320,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 170,
+      "centerRobotMm": [
+        488,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 310,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 180,
+      "centerRobotMm": [
+        478,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 300,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 190,
+      "centerRobotMm": [
+        468,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 290,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 200,
+      "centerRobotMm": [
+        458,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 280,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 210,
+      "centerRobotMm": [
+        448,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 270,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 220,
+      "centerRobotMm": [
+        438,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 260,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 230,
+      "centerRobotMm": [
+        428,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 250,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 240,
+      "centerRobotMm": [
+        418,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 240,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 250,
+      "centerRobotMm": [
+        408,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 230,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 260,
+      "centerRobotMm": [
+        398,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 220,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 270,
+      "centerRobotMm": [
+        388,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 210,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 280,
+      "centerRobotMm": [
+        378,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 200,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 290,
+      "centerRobotMm": [
+        368,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 190,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 300,
+      "centerRobotMm": [
+        358,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 180,
+      "hits": [
+        {
+          "part": "pulley/1/146.05/0",
+          "commonMm3": 12.759725101203028
+        },
+        {
+          "part": "pulley/1/146.05/1",
+          "commonMm3": 36.680506424584344
+        },
+        {
+          "part": "pulley/1/146.05/2",
+          "commonMm3": 12.759658917863982
+        },
+        {
+          "part": "bearing/1/146.05/-18.4/flipFalse",
+          "commonMm3": 1.4998895830122667
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 310,
+      "centerRobotMm": [
+        348,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 170,
+      "hits": [
+        {
+          "part": "pulley/1/146.05/0",
+          "commonMm3": 35.588897428823984
+        },
+        {
+          "part": "pulley/1/146.05/1",
+          "commonMm3": 170.18044606077996
+        },
+        {
+          "part": "pulley/1/146.05/2",
+          "commonMm3": 35.58766658432471
+        },
+        {
+          "part": "bearing/1/146.05/-18.4/flipFalse",
+          "commonMm3": 24.204032203901548
+        },
+        {
+          "part": "bearing/1/146.05/-18.4/flipTrue",
+          "commonMm3": 3.4440890798233474
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 320,
+      "centerRobotMm": [
+        338,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 160,
+      "hits": [
+        {
+          "part": "pulley/1/146.05/0",
+          "commonMm3": 53.75987878507402
+        },
+        {
+          "part": "pulley/1/146.05/1",
+          "commonMm3": 322.889858806438
+        },
+        {
+          "part": "pulley/1/146.05/2",
+          "commonMm3": 53.75307497935622
+        },
+        {
+          "part": "bearing/1/146.05/-18.4/flipFalse",
+          "commonMm3": 48.46889475613437
+        },
+        {
+          "part": "bearing/1/146.05/-18.4/flipTrue",
+          "commonMm3": 19.95635394516082
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 330,
+      "centerRobotMm": [
+        328,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 150,
+      "hits": [
+        {
+          "part": "pulley/1/146.05/0",
+          "commonMm3": 61.934868789758994
+        },
+        {
+          "part": "pulley/1/146.05/1",
+          "commonMm3": 420.49775432978646
+        },
+        {
+          "part": "pulley/1/146.05/2",
+          "commonMm3": 61.926724154166976
+        },
+        {
+          "part": "bearing/1/146.05/-18.4/flipFalse",
+          "commonMm3": 61.93008362150294
+        },
+        {
+          "part": "bearing/1/146.05/-18.4/flipTrue",
+          "commonMm3": 32.37126086581908
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 340,
+      "centerRobotMm": [
+        318,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 140,
+      "hits": [
+        {
+          "part": "pulley/1/146.05/0",
+          "commonMm3": 61.12426038003265
+        },
+        {
+          "part": "pulley/1/146.05/1",
+          "commonMm3": 406.9727250057787
+        },
+        {
+          "part": "pulley/1/146.05/2",
+          "commonMm3": 61.11970728529692
+        },
+        {
+          "part": "bearing/1/146.05/-18.4/flipFalse",
+          "commonMm3": 60.202830879926566
+        },
+        {
+          "part": "bearing/1/146.05/-18.4/flipTrue",
+          "commonMm3": 30.737987316578636
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 350,
+      "centerRobotMm": [
+        308,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 130,
+      "hits": [
+        {
+          "part": "pulley/1/146.05/0",
+          "commonMm3": 50.74934522206573
+        },
+        {
+          "part": "pulley/1/146.05/1",
+          "commonMm3": 294.7160055039408
+        },
+        {
+          "part": "pulley/1/146.05/2",
+          "commonMm3": 50.74930867924482
+        },
+        {
+          "part": "bearing/1/146.05/-18.4/flipFalse",
+          "commonMm3": 44.167700122382136
+        },
+        {
+          "part": "bearing/1/146.05/-18.4/flipTrue",
+          "commonMm3": 16.295320218616194
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 360,
+      "centerRobotMm": [
+        298,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 120,
+      "hits": [
+        {
+          "part": "pulley/1/146.05/0",
+          "commonMm3": 31.20100719197019
+        },
+        {
+          "part": "pulley/1/146.05/1",
+          "commonMm3": 135.72366539794513
+        },
+        {
+          "part": "pulley/1/146.05/2",
+          "commonMm3": 31.200974803859772
+        },
+        {
+          "part": "bearing/1/146.05/-18.4/flipFalse",
+          "commonMm3": 18.49064625566141
+        },
+        {
+          "part": "bearing/1/146.05/-18.4/flipTrue",
+          "commonMm3": 1.4080033588462424
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 370,
+      "centerRobotMm": [
+        288,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 110,
+      "hits": [
+        {
+          "part": "pulley/1/146.05/0",
+          "commonMm3": 8.275999110116377
+        },
+        {
+          "part": "pulley/1/146.05/1",
+          "commonMm3": 20.918016352176522
+        },
+        {
+          "part": "pulley/1/146.05/2",
+          "commonMm3": 8.27597705633249
+        },
+        {
+          "part": "bearing/1/146.05/-18.4/flipFalse",
+          "commonMm3": 0.10827270316064264
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 380,
+      "centerRobotMm": [
+        278,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 100,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 390,
+      "centerRobotMm": [
+        268,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 90,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 400,
+      "centerRobotMm": [
+        258,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 80,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 410,
+      "centerRobotMm": [
+        248,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 70,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 420,
+      "centerRobotMm": [
+        238,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 60,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 430,
+      "centerRobotMm": [
+        228,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 50,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 440,
+      "centerRobotMm": [
+        218,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 40,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 450,
+      "centerRobotMm": [
+        208,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 30,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 460,
+      "centerRobotMm": [
+        198,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 20,
+      "hits": [
+        {
+          "part": "pulley/1/-19.049999999999997/0",
+          "commonMm3": 2.323158958065056
+        },
+        {
+          "part": "pulley/1/-19.049999999999997/1",
+          "commonMm3": 5.676940220386946
+        },
+        {
+          "part": "pulley/1/-19.049999999999997/2",
+          "commonMm3": 2.3231293389164835
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 470,
+      "centerRobotMm": [
+        188,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 10,
+      "hits": [
+        {
+          "part": "pulley/1/-19.049999999999997/0",
+          "commonMm3": 24.10999550492033
+        },
+        {
+          "part": "pulley/1/-19.049999999999997/1",
+          "commonMm3": 91.39779057743216
+        },
+        {
+          "part": "pulley/1/-19.049999999999997/2",
+          "commonMm3": 24.1099854400519
+        },
+        {
+          "part": "bearing/1/-19.049999999999997/-18.4/flipFalse",
+          "commonMm3": 10.66355733613036
+        },
+        {
+          "part": "bearing/1/-19.049999999999997/-18.4/flipTrue",
+          "commonMm3": 0.03635992010968189
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 480,
+      "centerRobotMm": [
+        178,
+        5,
+        25.4
+      ],
+      "equivalentCradleLocalGuideAdvanceMm": 0,
+      "hits": [
+        {
+          "part": "pulley/1/-19.049999999999997/0",
+          "commonMm3": 45.413273347755734
+        },
+        {
+          "part": "pulley/1/-19.049999999999997/1",
+          "commonMm3": 250.61959655788252
+        },
+        {
+          "part": "pulley/1/-19.049999999999997/2",
+          "commonMm3": 45.409830336030474
+        },
+        {
+          "part": "bearing/1/-19.049999999999997/-18.4/flipFalse",
+          "commonMm3": 37.14162162284704
+        },
+        {
+          "part": "bearing/1/-19.049999999999997/-18.4/flipTrue",
+          "commonMm3": 10.853741239933337
+        }
+      ]
+    }
+  ],
+  "acceptance": false,
+  "limits": [
+    "Private native source material, scalar results only; supplier geometry not redistributed",
+    "Both bearing flange orientations screened because current intake envelope does not select one",
+    "Native flanged bearing is larger than current28.575mm by6.35mm cylindrical envelope; interface adoption requires separate carrier/mount checks",
+    "Rigid prescribed paths do not model free lateral recentering or foam deformation",
+    "Finite147positions and nominal source clocking; no tolerance, force or pickup acceptance",
+    "Centered local floor480-to0 trajectory also covers reversed local guide0-to480 contacts for these cradle-mounted parts under rigid pitch transform; not whole chassis clearance"
+  ]
+}
