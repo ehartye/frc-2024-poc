@@ -83,3 +83,5 @@ Before publication: Python tests, native tests, fresh receipts, public-content g
 Current launcher spacing and original mounting correction: [revision and remaining gates](cad/assembly/launcher-mount-revision.md). The selected49.2mm gap requires fresh force/contact simulation; old launch speeds do not transfer.
 
 An additive [spring-biased cassette study](cad/assembly/spring-cassette-candidate.md) preserves failed layouts and sampled feed conflicts. It is not adopted by the 711-part assembly or current simulation: actual springs, opening actuator, clamps and moving mass remain unresolved.
+
+The [100 ms extension](sim/integrated/coupled_lift_duration_README.md) records partial fixed-patch domain loss: 28 of 30 nominal witnesses remain at the rejected trials. This is not proof of full physical release or a collision. Exact accepted state and rejected trial diagnostics stay separate.
