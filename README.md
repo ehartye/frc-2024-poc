@@ -40,6 +40,8 @@ python sim/integrated/run_regulated_acquisition.py --index --output artifacts/my
 python sim/integrated/coupled_lift_run.py artifacts/my-lift-pilot.json
 ```
 
+For one fresh, strictly registered chain, run `python sim/integrated/run_current_checkpoint_chain.py artifacts/my-fresh-chain`. It executes acquisition first and refuses continuation unless that complete fresh receipt matches the registered checkpoint bytes; it then executes the pilot and verifies state/energy continuity. A mismatched state requires new registration, not a snap to the old state. The final `chain.json` binds both newly produced outputs and is absent if a stage fails.
+
 These are separate reproducible commands: the pilot validates and uses the committed indexed checkpoint, not the output path of the preceding command. A single continuous mission runner is still unfinished. With finite gravity-feedforward commands the cradle sags slightly and the free NOTE drops; it is not attached or successfully lifted. The retained coast control stops on an unsupported tiny-negative-pitch guide-domain boundary, not a confirmed collision. Contact stiffness, mechanism mass/inertia and current normal-force budgets are explicit hypotheses. This pilot does not adopt the new spring-cassette candidate or transfer historical launcher results.
 
 ## Run the retained legacy A2 slice
