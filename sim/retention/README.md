@@ -27,3 +27,9 @@ Under the explicit locked-belt, 10 N/side, 2000 N/m-side shear hypothesis, the N
 Energy residual decreases from 0.182 mJ to 0.085 mJ to 0.043 mJ at 100/50/25 microsecond steps. This alone does not establish trajectory convergence. Ground support remains a frictionless lowest-point penalty, and contact stiffness, normal preload, friction and locked-belt actuation are uncalibrated hypotheses.
 
 The actual free-body center, attitude and velocity need fresh transfer/contact registration before joining the downstream model. Eight regressions cover objective co-rotation, source closure, free motion, backdrive, domain exits, energy refinement and invalid inputs.
+
+## Finer timestep diagnostics
+
+Run `python sim/retention/refine_slip.py --output artifacts/a-fresh-refinement` and then `python sim/retention/summarize_refinement.py artifacts/a-fresh-refinement/report.json artifacts/a-fresh-summary.json`. The tracked compact summary binds the complete archived trace report by SHA-256 and all current inputs; it does not pretend to contain the complete trace.
+
+At 25/12.5/6.25 microseconds, all three runs remain inside the nominal fixed-patch domain. Across saved, interpolated traces, the last refinement changes center by at most 0.0118 mm, pitch by 0.000192 rad, velocity by 0.00282 m/s and angular velocity by 0.0557 rad/s. These differences decrease relative to the preceding pair; angular-velocity sensitivity is still explicitly visible. Maximum energy residual falls from 0.0434 to 0.0206 to 0.0109 mJ. This is a bounded numerical diagnostic, not a continuous-time convergence proof, calibration, or downstream transfer acceptance. Between-saved-sample extrema are not bounded.
