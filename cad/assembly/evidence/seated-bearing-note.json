@@ -1,0 +1,1059 @@
+{
+  "schema": "seated-bearing-whole-note-delta/1",
+  "inputs": {
+    "cad/assembly/build_robot.py": "cca2c9a3ecca7a622fb1283461c393b2288e3c6efd173c60d72a959e3c500e26",
+    "cad/assembly/bumper_candidate.py": "556fba39fda427cb081a2a1d4d806372b67b830606a242bbfc0babf05619fc19",
+    "cad/a2_primitives.py": "bef958c710da792f89def8606d7169a7c385fcff257826619a7b29fe0943952e",
+    "cad/a2_kinematics.py": "4329126a1465f53c8d27618307b2864ff69803e196ff4521aab8a50daf670581",
+    "cad/build_a2_layout.py": "aea31166eabc53113962cc511cfbd190eba54033f7b93476455961dccb1969c9",
+    "cad/cycle-contract-A2.json": "3700da3bf1a271d6b6763060f913435a4a50cda8d456cb1a57a6f1898416b6ad",
+    "cad/components/a2-transmission.json": "0aae2e2dd0d8c4b16729139380f6d1e2df0efa956dad2ee8b205be1a57f3d8b0",
+    "cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+    "cad/drivetrain/build_fastening.py": "9d82a974d184200e7a6c414bc74b345cd53aa2cf85f36c3cf528fe818997d4ac",
+    "cad/drivetrain/fastening.json": "6cb3d276cd5f59143ef9b52d2240095f02db9f92d6cfef5ae53b145a78862ac9",
+    "cad/drivetrain/build_drivetrain.py": "4748e01902aac32ae8d996e1f7676caa7f794ac6a5971b661855c26487ad29a7",
+    "cad/electrical/manifest.json": "9db917a55b0884db9841f52da3b5cccf8ad684c652e4dde3e01b1efe75e891a3",
+    "cad/electrical/build_electrical.py": "d2fbd40d0b26c8887679b6ed3b49c655b10a27a0cd175e812b35d9fccd6f6317",
+    "cad/electrical/mounts.py": "90254dbc5116a9af72df0ba6442ed94ef8c94e8247326f9b7c6cfd0c0749c7e8",
+    "cad/electrical/breaker_mount.py": "1e27087fa191e8043c6ed8b3c48bca4db50cde379efa171cc49508a1a1c75060",
+    "cad/electrical/breaker-mount-evidence.json": "9e0bb64f30ab3ee58de577fe694ee578135cdf4d74ddf8e0b3065b741266b07d",
+    "cad/electrical/fasteners.py": "788a1cb9bf71a780aed9cbeb5bf48d06532e914fed431edcc0e72a4bd273b799",
+    "cad/assembly/intake_components.py": "c6d352be0edba340d340112697d3f2482158b4fb8f3324b0dd3927344f9b43c5",
+    "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+    "cad/assembly/build_intake_candidate.py": "07e9c96ec0f5e4d02660e0d2efda8dd2bddfb0198862c5e228dbc9e07cbf9bc3",
+    "cad/assembly/check_intake_contact.py": "95d20cfed12331c135b5534d4076f833ae6741b69806a61e677e88098a7301e3",
+    "cad/assembly/verify_receipts.py": "213a00200bc7fc0b84bd4bb82e4a62aaee3c10432f35373fc3097b2141d4e81d",
+    "cad/assembly/audit_intake_motion.py": "1d33ef51ba87c170335234004b1fa3cac1aeeac39da6149d15eedf58a26c1509",
+    "cad/components/check_pulley_outer_profile.py": "23325f74745de7ea2d828340c816143346221c44325784d6e8934b08553efde5",
+    "cad/components/pulley-outer-profile.json": "e582635a9b49f9810eee996177af2761edfe7928450dd86ef76d103ce8af53ec",
+    "cad/assembly/lower_support_mounts.py": "1b832dcc91967eab3dcfe40abc585ef1137250fb4e6777b01075a79ebcb1b14d",
+    "cad/assembly/upper_carriage_connections.py": "bbfbdf8b8c5f9356b5f60a3b4ad3d2d94c7f4e8a76db0e64742618173c936032",
+    "cad/assembly/build_connected_candidate.py": "19356d26a59b7b22a9a4eaed106c9cfd5d9f57774d682e0bd100711348a5ea69",
+    "cad/assembly/slide_pad_attachments.py": "526310777f96f0f537844946c611b05f7e7dc80119a75d308f043832aa7ed7ef",
+    "cad/assembly/seated_bearing_assembly.py": "a1edcef1ebf581c8d29d49250bb9696e45f7d125069ff7158965e32d0b9c2445",
+    "cad/assembly/bearing_seat_candidate.py": "7f6b1a0dbc0569042fff66dc6179528a34b49b27b46144c1e713fa738ce19252",
+    "cad/assembly/evidence/bearing-seat-candidate.json": "9715e3d91d250df09cda6a283e5f498b5922448927b75b0553dfc38addec0fc5",
+    "cad/assembly/check_seated_bearing_note.py": "112814c1a735b1394f9b3cf0b34cabd3f54321998e0c1e397e868b8458f3e052",
+    "cad/assembly/audit_cartridge_interfaces.py": "44e8edfcecfd3afd38c8ed91ea153654d4bffe2579096dafd533d318e02af21f",
+    "cad/assembly/audit_intake_feed.py": "0f6febf4424e6e4ed1e994b6332177b5d23b1ee5a3b79eade754ecf7a61d4992",
+    "cad/components/a2-wheel-cartridge.json": "d4a74dc6cbbd7105392083d1401cbd5b31bfc7be416952ab54b11207889db129"
+  },
+  "nativeSource": {
+    "url": "https://www.revrobotics.com/content/cad/REV-21-1916.STEP",
+    "sha256": "3e16cb3f5f215288b8706eb8228d9580fea78c425eee536ef95195b5b98f02e6",
+    "part": "REV-21-1916-PK4",
+    "scope": "rounded-hex flanged bearing; load and fit unverified"
+  },
+  "nativeMaterialContainment": [
+    {
+      "part": "intake candidate bearing representation (-1, -19.049999999999997)-18.4",
+      "nativeOutsideProxyMm3": 0,
+      "remainingSolids": 0
+    },
+    {
+      "part": "intake candidate bearing representation (-1, -19.049999999999997)25.4",
+      "nativeOutsideProxyMm3": 0,
+      "remainingSolids": 0
+    },
+    {
+      "part": "intake candidate bearing representation (-1, 146.05)-18.4",
+      "nativeOutsideProxyMm3": 0,
+      "remainingSolids": 0
+    },
+    {
+      "part": "intake candidate bearing representation (-1, 146.05)25.4",
+      "nativeOutsideProxyMm3": 0,
+      "remainingSolids": 0
+    },
+    {
+      "part": "intake candidate bearing representation (1, -19.049999999999997)-18.4",
+      "nativeOutsideProxyMm3": 0,
+      "remainingSolids": 0
+    },
+    {
+      "part": "intake candidate bearing representation (1, -19.049999999999997)25.4",
+      "nativeOutsideProxyMm3": 0,
+      "remainingSolids": 0
+    },
+    {
+      "part": "intake candidate bearing representation (1, 146.05)-18.4",
+      "nativeOutsideProxyMm3": 0,
+      "remainingSolids": 0
+    },
+    {
+      "part": "intake candidate bearing representation (1, 146.05)25.4",
+      "nativeOutsideProxyMm3": 0,
+      "remainingSolids": 0
+    }
+  ],
+  "rows": [
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 0,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 10,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 20,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 30,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 40,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 50,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 60,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 70,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 80,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 90,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 100,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 110,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 120,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 130,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 140,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 150,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 160,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 170,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 180,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 190,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 200,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 210,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 220,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 230,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 240,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 250,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 260,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 270,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 280,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 290,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 300,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 310,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 320,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 330,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 340,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 350,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 360,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 370,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 380,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 390,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 400,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 410,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 420,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 430,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 440,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 450,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 460,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 470,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 480,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 0,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 10,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 20,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 30,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 40,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 50,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 60,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 70,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 80,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 90,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 100,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 110,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 120,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 130,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 140,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 150,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 160,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 170,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 180,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 190,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 200,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 210,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 220,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 230,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 240,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 250,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 260,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 270,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 280,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 290,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 300,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 310,
+      "hits": [
+        {
+          "part": "intake candidate bearing representation (-1, 146.05)-18.4",
+          "commonMm3": 1.4149384105677307
+        },
+        {
+          "part": "intake candidate original cradle side weldment -1",
+          "commonMm3": 1.3557089563985278
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 320,
+      "hits": [
+        {
+          "part": "intake candidate bearing representation (-1, 146.05)-18.4",
+          "commonMm3": 13.763017917991988
+        },
+        {
+          "part": "intake candidate original cradle side weldment -1",
+          "commonMm3": 11.375644564799344
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 330,
+      "hits": [
+        {
+          "part": "intake candidate bearing representation (-1, 146.05)-18.4",
+          "commonMm3": 24.141048338789055
+        },
+        {
+          "part": "intake candidate original cradle side weldment -1",
+          "commonMm3": 20.514526115386985
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 340,
+      "hits": [
+        {
+          "part": "intake candidate bearing representation (-1, 146.05)-18.4",
+          "commonMm3": 22.784435391010174
+        },
+        {
+          "part": "intake candidate original cradle side weldment -1",
+          "commonMm3": 19.279423661024694
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 350,
+      "hits": [
+        {
+          "part": "intake candidate bearing representation (-1, 146.05)-18.4",
+          "commonMm3": 10.695899989903696
+        },
+        {
+          "part": "intake candidate original cradle side weldment -1",
+          "commonMm3": 8.880158525853421
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 360,
+      "hits": [
+        {
+          "part": "intake candidate bearing representation (-1, 146.05)-18.4",
+          "commonMm3": 0.3174327845528898
+        },
+        {
+          "part": "intake candidate original cradle side weldment -1",
+          "commonMm3": 0.41473212975970114
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 370,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 380,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 390,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 400,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 410,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 420,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 430,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 440,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 450,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 460,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 470,
+      "hits": [
+        {
+          "part": "intake candidate original cradle side weldment -1",
+          "commonMm3": 0.00011394935363989047
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 480,
+      "hits": [
+        {
+          "part": "intake candidate bearing representation (-1, -19.049999999999997)-18.4",
+          "commonMm3": 6.48938966246652
+        },
+        {
+          "part": "intake candidate original cradle side weldment -1",
+          "commonMm3": 5.490525131529474
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 0,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 10,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 20,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 30,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 40,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 50,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 60,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 70,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 80,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 90,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 100,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 110,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 120,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 130,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 140,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 150,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 160,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 170,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 180,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 190,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 200,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 210,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 220,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 230,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 240,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 250,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 260,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 270,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 280,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 290,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 300,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 310,
+      "hits": [
+        {
+          "part": "intake candidate bearing representation (1, 146.05)-18.4",
+          "commonMm3": 1.4149382954942284
+        },
+        {
+          "part": "intake candidate original cradle side weldment 1",
+          "commonMm3": 1.3557089563985054
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 320,
+      "hits": [
+        {
+          "part": "intake candidate bearing representation (1, 146.05)-18.4",
+          "commonMm3": 13.763018157146277
+        },
+        {
+          "part": "intake candidate original cradle side weldment 1",
+          "commonMm3": 11.375644564799057
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 330,
+      "hits": [
+        {
+          "part": "intake candidate bearing representation (1, 146.05)-18.4",
+          "commonMm3": 24.141048290599805
+        },
+        {
+          "part": "intake candidate original cradle side weldment 1",
+          "commonMm3": 20.5145261153866
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 340,
+      "hits": [
+        {
+          "part": "intake candidate bearing representation (1, 146.05)-18.4",
+          "commonMm3": 22.784435380594793
+        },
+        {
+          "part": "intake candidate original cradle side weldment 1",
+          "commonMm3": 19.27942366102412
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 350,
+      "hits": [
+        {
+          "part": "intake candidate bearing representation (1, 146.05)-18.4",
+          "commonMm3": 10.695899915566722
+        },
+        {
+          "part": "intake candidate original cradle side weldment 1",
+          "commonMm3": 8.880158525853105
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 360,
+      "hits": [
+        {
+          "part": "intake candidate bearing representation (1, 146.05)-18.4",
+          "commonMm3": 0.31743279954946113
+        },
+        {
+          "part": "intake candidate original cradle side weldment 1",
+          "commonMm3": 0.4147321297597469
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 370,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 380,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 390,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 400,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 410,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 420,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 430,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 440,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 450,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 460,
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 470,
+      "hits": [
+        {
+          "part": "intake candidate original cradle side weldment 1",
+          "commonMm3": 0.00011394935364006408
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 480,
+      "hits": [
+        {
+          "part": "intake candidate bearing representation (1, -19.049999999999997)-18.4",
+          "commonMm3": 6.48938974214689
+        },
+        {
+          "part": "intake candidate original cradle side weldment 1",
+          "commonMm3": 5.490525131529714
+        }
+      ]
+    }
+  ],
+  "actualFreeFinal": {
+    "evidenceSha256": "58a2d7535a10e52829eba7db2fad02e70b430cbc64d51e81aaf5ae73b91452de",
+    "inputs": {
+      "cad/assembly/build_robot.py": "cca2c9a3ecca7a622fb1283461c393b2288e3c6efd173c60d72a959e3c500e26",
+      "cad/assembly/bumper_candidate.py": "556fba39fda427cb081a2a1d4d806372b67b830606a242bbfc0babf05619fc19",
+      "cad/a2_primitives.py": "bef958c710da792f89def8606d7169a7c385fcff257826619a7b29fe0943952e",
+      "cad/a2_kinematics.py": "4329126a1465f53c8d27618307b2864ff69803e196ff4521aab8a50daf670581",
+      "cad/build_a2_layout.py": "aea31166eabc53113962cc511cfbd190eba54033f7b93476455961dccb1969c9",
+      "cad/cycle-contract-A2.json": "3700da3bf1a271d6b6763060f913435a4a50cda8d456cb1a57a6f1898416b6ad",
+      "cad/components/a2-transmission.json": "0aae2e2dd0d8c4b16729139380f6d1e2df0efa956dad2ee8b205be1a57f3d8b0",
+      "cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+      "cad/drivetrain/build_fastening.py": "9d82a974d184200e7a6c414bc74b345cd53aa2cf85f36c3cf528fe818997d4ac",
+      "cad/drivetrain/fastening.json": "6cb3d276cd5f59143ef9b52d2240095f02db9f92d6cfef5ae53b145a78862ac9",
+      "cad/drivetrain/build_drivetrain.py": "4748e01902aac32ae8d996e1f7676caa7f794ac6a5971b661855c26487ad29a7",
+      "cad/electrical/manifest.json": "9db917a55b0884db9841f52da3b5cccf8ad684c652e4dde3e01b1efe75e891a3",
+      "cad/electrical/build_electrical.py": "d2fbd40d0b26c8887679b6ed3b49c655b10a27a0cd175e812b35d9fccd6f6317",
+      "cad/electrical/mounts.py": "90254dbc5116a9af72df0ba6442ed94ef8c94e8247326f9b7c6cfd0c0749c7e8",
+      "cad/electrical/breaker_mount.py": "1e27087fa191e8043c6ed8b3c48bca4db50cde379efa171cc49508a1a1c75060",
+      "cad/electrical/breaker-mount-evidence.json": "9e0bb64f30ab3ee58de577fe694ee578135cdf4d74ddf8e0b3065b741266b07d",
+      "cad/electrical/fasteners.py": "788a1cb9bf71a780aed9cbeb5bf48d06532e914fed431edcc0e72a4bd273b799",
+      "cad/assembly/intake_components.py": "c6d352be0edba340d340112697d3f2482158b4fb8f3324b0dd3927344f9b43c5",
+      "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+      "cad/assembly/build_intake_candidate.py": "07e9c96ec0f5e4d02660e0d2efda8dd2bddfb0198862c5e228dbc9e07cbf9bc3",
+      "cad/assembly/check_intake_contact.py": "95d20cfed12331c135b5534d4076f833ae6741b69806a61e677e88098a7301e3",
+      "cad/assembly/verify_receipts.py": "213a00200bc7fc0b84bd4bb82e4a62aaee3c10432f35373fc3097b2141d4e81d",
+      "cad/assembly/audit_intake_motion.py": "1d33ef51ba87c170335234004b1fa3cac1aeeac39da6149d15eedf58a26c1509",
+      "cad/components/check_pulley_outer_profile.py": "23325f74745de7ea2d828340c816143346221c44325784d6e8934b08553efde5",
+      "cad/components/pulley-outer-profile.json": "e582635a9b49f9810eee996177af2761edfe7928450dd86ef76d103ce8af53ec",
+      "cad/assembly/lower_support_mounts.py": "1b832dcc91967eab3dcfe40abc585ef1137250fb4e6777b01075a79ebcb1b14d",
+      "cad/assembly/upper_carriage_connections.py": "bbfbdf8b8c5f9356b5f60a3b4ad3d2d94c7f4e8a76db0e64742618173c936032",
+      "cad/assembly/build_connected_candidate.py": "19356d26a59b7b22a9a4eaed106c9cfd5d9f57774d682e0bd100711348a5ea69",
+      "cad/assembly/slide_pad_attachments.py": "526310777f96f0f537844946c611b05f7e7dc80119a75d308f043832aa7ed7ef",
+      "cad/assembly/extract_retention_patch.py": "fa80f1c89a0aed56b544cbc16218ad52880ac2bc66db986a4841d98b4aee8b50",
+      "cad/assembly/audit_floor_entry.py": "84454ca13c79c4dcd604f0fba64f4a511bf009ffd330b58d895cd1388b7abddd",
+      "cad/assembly/audit_cartridge_interfaces.py": "44e8edfcecfd3afd38c8ed91ea153654d4bffe2579096dafd533d318e02af21f",
+      "sim/acquisition/ground_entry.py": "5c0d2a675fe93c7a074236ef18f0c7d2153458ee186e92abdec597772e916c96",
+      "sim/acquisition/config.json": "ae679be5e7bd4beb559072b18ef6eb80e761a2f702b8bd7562208e7d4dd569e2",
+      "cad/assembly/evidence/floor-entry.json": "9baf2ff061ef5a79a34ef757c1b442579b7d8273efcbf72ffdf1fb95cca0739f",
+      "sim/retention/finite_slip.py": "e9ecd7e1da6f6a38c2e807284ece4e707fd44a63a1edc5142ecad21b6164fefa",
+      "sim/retention/wrench.py": "a1a6dea572c7857ac3b80d279f00cac938ef83f36af37953aee6c576e36d0741",
+      "cad/assembly/evidence/retention-patch.json": "df54e48059106bc481a7c6d2463637cf3dff420927d460b44e58f0fe940e0b85",
+      "sim/retention/finite-slip-config.json": "d70e7dadaff6234f1ac6bb56b6afbe188fb78a4d670749ca1e7e72bc0b569dbd",
+      "sim/acquisition/evidence.json": "3c7587d483a17e4c4624f71d87533fd52bb1ed5e1939512f1a0cf4c89fc8dab5",
+      "sim/retention/refine_slip.py": "1e06b21af44295aceb1f82c6654cf0a153d25ab6b9a0516591364079db0a67e8",
+      "sim/retention/finite-slip-evidence.json": "ea91fdaf99bc6159e6c50ec375a58bae1294b27dc4f622530f160147c35f775d",
+      "sim/retention/summarize_refinement.py": "3198f0def4ce454acc313339870d82980c0118f918087f13a421b557d3e2e565",
+      "sim/retention/check_free_handoff_pose.py": "77aa6b97ada0497b5ddf19d1ee5668f143d4257866ecc0492688347ce2563e47",
+      "sim/retention/refinement-evidence.json": "d8dc287528ca26456bf4ce6dd6f7715030cc913766192d265e081721c6101f8c",
+      "sim/component-launcher/extract_geometry.py": "93ddcef128b1bf9824b5e8293b13607c260f9c4bb7f3102b76a70c6818c95067"
+    },
+    "state": {
+      "timeS": 2.2000000000028117,
+      "noteCenterXZ": [
+        0.18297953622114074,
+        0.4828767576322839
+      ],
+      "notePitchRad": 1.1058224026895513,
+      "cradlePitchRad": 1.0471975511965976,
+      "noteVelocityXZ": [
+        -0.0006729795162374609,
+        -0.041722658634895216
+      ],
+      "noteOmegaRadps": -0.09192477839113807,
+      "rotorOmegaRadps": [
+        0.0,
+        0.0
+      ],
+      "maxShearM": 0.0011398519773913372,
+      "groundPenetrationM": 0.0,
+      "energyJ": {
+        "prescribedCradleWork": 1.0558484175047531,
+        "slipHeat": 0.0,
+        "groundHeat": 0.00029587839977913527,
+        "kinetic": 0.00021652561758458364,
+        "potential": 1.0542838946301396,
+        "shearElastic": 0.001059199754862405,
+        "groundElastic": 0.0,
+        "residual": -7.080897612532066e-06
+      }
+    },
+    "centerRobotMm": [
+      182.97953622114073,
+      0,
+      482.8767576322839
+    ],
+    "hits": []
+  },
+  "adopted": false,
+  "acceptance": false,
+  "limits": [
+    "Full rigid torus tested against ten changed parts only; unchanged assembly still requires combined adoption gate",
+    "Native nominal bearing replaces original stepped proxy for these witnesses; carrier is authored original material",
+    "147 fixed-offset floor poses, not free lateral motion or tolerance evidence",
+    "Centered reverse local trajectory also represents aligned handoff feed against these cradle-attached parts under rigid transform",
+    "Actual final free pose preserved with no attitude/position snap, but no subsequent free transfer trajectory",
+    "No force, retention, shaft end hardware, carpet or fabrication qualification"
+  ]
+}
