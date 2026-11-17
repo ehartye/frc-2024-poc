@@ -1,0 +1,3901 @@
+{
+  "schema": "finite-motor-holding-interface/1",
+  "inputs": {
+    "cad/assembly/build_robot.py": "cca2c9a3ecca7a622fb1283461c393b2288e3c6efd173c60d72a959e3c500e26",
+    "cad/assembly/bumper_candidate.py": "556fba39fda427cb081a2a1d4d806372b67b830606a242bbfc0babf05619fc19",
+    "cad/a2_primitives.py": "bef958c710da792f89def8606d7169a7c385fcff257826619a7b29fe0943952e",
+    "cad/a2_kinematics.py": "4329126a1465f53c8d27618307b2864ff69803e196ff4521aab8a50daf670581",
+    "cad/build_a2_layout.py": "aea31166eabc53113962cc511cfbd190eba54033f7b93476455961dccb1969c9",
+    "cad/cycle-contract-A2.json": "3700da3bf1a271d6b6763060f913435a4a50cda8d456cb1a57a6f1898416b6ad",
+    "cad/components/a2-transmission.json": "0aae2e2dd0d8c4b16729139380f6d1e2df0efa956dad2ee8b205be1a57f3d8b0",
+    "cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+    "cad/drivetrain/build_fastening.py": "9d82a974d184200e7a6c414bc74b345cd53aa2cf85f36c3cf528fe818997d4ac",
+    "cad/drivetrain/fastening.json": "6cb3d276cd5f59143ef9b52d2240095f02db9f92d6cfef5ae53b145a78862ac9",
+    "cad/drivetrain/build_drivetrain.py": "4748e01902aac32ae8d996e1f7676caa7f794ac6a5971b661855c26487ad29a7",
+    "cad/electrical/manifest.json": "9db917a55b0884db9841f52da3b5cccf8ad684c652e4dde3e01b1efe75e891a3",
+    "cad/electrical/build_electrical.py": "d2fbd40d0b26c8887679b6ed3b49c655b10a27a0cd175e812b35d9fccd6f6317",
+    "cad/electrical/mounts.py": "90254dbc5116a9af72df0ba6442ed94ef8c94e8247326f9b7c6cfd0c0749c7e8",
+    "cad/electrical/breaker_mount.py": "1e27087fa191e8043c6ed8b3c48bca4db50cde379efa171cc49508a1a1c75060",
+    "cad/electrical/breaker-mount-evidence.json": "9e0bb64f30ab3ee58de577fe694ee578135cdf4d74ddf8e0b3065b741266b07d",
+    "cad/electrical/fasteners.py": "788a1cb9bf71a780aed9cbeb5bf48d06532e914fed431edcc0e72a4bd273b799",
+    "cad/assembly/intake_components.py": "c6d352be0edba340d340112697d3f2482158b4fb8f3324b0dd3927344f9b43c5",
+    "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+    "cad/assembly/build_intake_candidate.py": "07e9c96ec0f5e4d02660e0d2efda8dd2bddfb0198862c5e228dbc9e07cbf9bc3",
+    "cad/assembly/check_intake_contact.py": "95d20cfed12331c135b5534d4076f833ae6741b69806a61e677e88098a7301e3",
+    "cad/assembly/verify_receipts.py": "213a00200bc7fc0b84bd4bb82e4a62aaee3c10432f35373fc3097b2141d4e81d",
+    "cad/assembly/audit_intake_motion.py": "1d33ef51ba87c170335234004b1fa3cac1aeeac39da6149d15eedf58a26c1509",
+    "cad/components/check_pulley_outer_profile.py": "23325f74745de7ea2d828340c816143346221c44325784d6e8934b08553efde5",
+    "cad/components/pulley-outer-profile.json": "e582635a9b49f9810eee996177af2761edfe7928450dd86ef76d103ce8af53ec",
+    "cad/assembly/lower_support_mounts.py": "1b832dcc91967eab3dcfe40abc585ef1137250fb4e6777b01075a79ebcb1b14d",
+    "cad/assembly/upper_carriage_connections.py": "bbfbdf8b8c5f9356b5f60a3b4ad3d2d94c7f4e8a76db0e64742618173c936032",
+    "cad/assembly/build_connected_candidate.py": "19356d26a59b7b22a9a4eaed106c9cfd5d9f57774d682e0bd100711348a5ea69",
+    "cad/assembly/slide_pad_attachments.py": "526310777f96f0f537844946c611b05f7e7dc80119a75d308f043832aa7ed7ef",
+    "cad/components/a2-wheel-cartridge.json": "d4a74dc6cbbd7105392083d1401cbd5b31bfc7be416952ab54b11207889db129",
+    "cad/assembly/belt_contact_geometry.py": "2cb19b7fb7648ca8f46a943f8ad4c70d97eef9d6cf56f8cf602bf5000aa30daf",
+    "sim/acquisition/export_obstacles.py": "2b25acc641d2a3d155f35d2d4c13d2432195433d89683c938ec4d6ddeb375f0c",
+    "cad/assembly/check_belt_contact_geometry.py": "6e6b394d6d1a27b67217f1cd1507c233137fecbd576b2d43c8355f3f1d990894",
+    "cad/assembly/audit_floor_entry.py": "84454ca13c79c4dcd604f0fba64f4a511bf009ffd330b58d895cd1388b7abddd",
+    "cad/assembly/audit_cartridge_interfaces.py": "44e8edfcecfd3afd38c8ed91ea153654d4bffe2579096dafd533d318e02af21f",
+    "sim/acquisition/free_planar.py": "cf15e99a00ccd47253fbc914f3f4adf97e6fa2afea73c98fe13aae0009ba7851",
+    "sim/acquisition/free_geometry.py": "f22c2efe90487b3e635da33ec60f31102112462a2b804785a7adaed2ba19ccb4",
+    "sim/acquisition/obstacle_gate.py": "769883314d51819b86e76a191a588cae509717c7ebcb8c6997c120b828b9a447",
+    "sim/acquisition/run_free_planar.py": "0597c8b02cdfbb77506bd2be1f6aff308f10d8529e7ae5eb563047f04d54ea2b",
+    "sim/acquisition/free-planar-config.json": "8ecb4ca6594ec456e56a79ceb63d222d9824e4985273d6b16a52b9737d166053",
+    "sim/acquisition/free-obstacles.json": "45651f5bbd4778928df1bc39a2265db06feecfc1da8ab30ff3b413f3bd9c6069",
+    "cad/assembly/evidence/belt-contact-geometry.json": "15d8783d6872236ecbc9d277579e9d2da5fba867e813faee4f753ef3ca1e2ba4",
+    "cad/assembly/evidence/floor-entry.json": "9baf2ff061ef5a79a34ef757c1b442579b7d8273efcbf72ffdf1fb95cca0739f",
+    "sim/integrated/run_coupled_acquisition.py": "f3d6afee71eb7abd018dae67f2f47313c5817407322be144a398db64e4ced2ea",
+    "sim/integrated/coupled_acquisition.py": "55f9778b7cab1cf76c38007f830385bb9c99ed62188a8151d6b50bb55c195df1",
+    "sim/integrated/shared_supply.py": "888855338f8d6d73510767cc9c64bf88f5ea0dbf899bd1bb67e136547f821e99",
+    "sim/drivetrain/plant.py": "3d30f7df18abf6c24cc5c949a308246bb275bea57242128916cee627da561155",
+    "sim/drivetrain/config.json": "334a7d02b4968401a10fb829ae838edfbeb7d9a311c13f3e2cbcc47b54748ff4",
+    "sim/drivetrain/run.py": "312e416f62e7fce32566529bfbb3a78ce68c58a4ef99faa210b44cdc8db18d7f",
+    "sim/component-launcher/power_state.py": "8248f96d46e30a8fcf8179433d3a808c799fcb736d096c529e0bfd4b73efae11",
+    "sim/integrated/evidence/acquisition-nominal.json": "1e41bb6d9bb303b9b7926d6bcb2e6ebd34df616c1aa3ec2736e17df771cc35a0",
+    "sim/integrated/run_regulated_acquisition.py": "ae2b6cf0ff9dd0f657ee960d798c8e47417d7046d22d70288755c86c915c1acd",
+    "sim/integrated/speed_approach.py": "21e15512b0d6dec2af8a81391be5225f2d44ed1df132c441f2649022196b5f50",
+    "sim/integrated/fast_coupled_acquisition.py": "b13d3a4771780f44da7432aa8146be3f7efdf123209003546199955b0f6713e7",
+    "sim/integrated/electrical_port.py": "b9a4be06cffa25d09f2f70169368d6572cd7d6c1bbaab86dd2494488200e0249",
+    "sim/integrated/continuation_state.py": "6690a501e4bd0b3ed922a8f3d07d575d412ce562595d0248627c72f78eaeabae",
+    "sim/integrated/evidence/fast-regulated-index.json": "60b0e42aaf86bc934be1c0844cd7c9ed7fafa35efa910adef01dd4404675eac9",
+    "sim/holding/finite_motor_patch.py": "e853388a7336aca00cc05580a1de0ccf45f42e92e98e3ad6590cfacf26db5398",
+    "sim/holding/config.json": "d5275c60644c374711daf3c71f31dd16dae1f88c124d8ee73a47d30d09030bcc",
+    "sim/holding/run.py": "5bcf9d7fca9d484fbb9ce6492a47713fa384d73f0ad12706de015f228338689d"
+  },
+  "sourceTimeS": 4.436999999999816,
+  "sourceEndContact": [
+    {
+      "motor": 0,
+      "normalN": 1.7552133272048422,
+      "tangentialN": 0.025076006513429047,
+      "forceWorldN": [
+        -0.025076006513428895,
+        1.7552133272048422
+      ],
+      "leverWorldM": [
+        -1.547748541553026e-17,
+        -0.1769223933363976
+      ],
+      "chassisLeverWorldM": [
+        0.1885674400200612,
+        -0.17692239333639762
+      ],
+      "penetrationM": 0.0008776066636024211
+    },
+    {
+      "motor": 1,
+      "normalN": 1.7552133272048422,
+      "tangentialN": 0.025076006501784688,
+      "forceWorldN": [
+        -0.02507600650178484,
+        -1.7552133272048422
+      ],
+      "leverWorldM": [
+        1.547748541553026e-17,
+        0.1769223933363976
+      ],
+      "chassisLeverWorldM": [
+        0.1885674400200612,
+        0.17692239333639756
+      ],
+      "penetrationM": 0.0008776066636024211
+    }
+  ],
+  "archivedMidpointContact": [
+    {
+      "motor": 0,
+      "normalN": 1.7552133272048422,
+      "tangentialN": 0.02531947843508702,
+      "forceWorldN": [
+        -0.02531947843508687,
+        1.7552133272048422
+      ],
+      "leverWorldM": [
+        -1.5491252380658727e-17,
+        -0.1769223933363976
+      ],
+      "chassisLeverWorldM": [
+        0.18856872374562472,
+        -0.17692239333639762
+      ],
+      "penetrationM": 0.0008776066636024211
+    },
+    {
+      "motor": 1,
+      "normalN": 1.7552133272048422,
+      "tangentialN": 0.025319478435143213,
+      "forceWorldN": [
+        -0.025319478435143365,
+        -1.7552133272048422
+      ],
+      "leverWorldM": [
+        1.5491252380658727e-17,
+        0.1769223933363976
+      ],
+      "chassisLeverWorldM": [
+        0.18856872374562472,
+        0.17692239333639756
+      ],
+      "penetrationM": 0.0008776066636024211
+    }
+  ],
+  "mappedRotorState": {
+    "timeS": 4.436999999999816,
+    "frameAngleRad": 0.0,
+    "rotorOmegaRadps": [
+      -0.23142302501293371,
+      -0.23142302501044998
+    ]
+  },
+  "rotorEnergyBeforeJ": 1.6066984951668646e-06,
+  "rotorEnergyAfterJ": 1.6066984951668646e-06,
+  "staticBound": {
+    "capacityN": 2.1062559926458104,
+    "weightN": 2.3045627499999997,
+    "necessaryConditionMet": false
+  },
+  "finitePatchRegistered": false,
+  "elasticHandoffAvailable": false,
+  "cases": [
+    {
+      "law": "memoryless-tanh",
+      "stepS": 0.001,
+      "initial": {
+        "timeS": 0.0,
+        "frameAngleRad": 0.0,
+        "rotorOmegaRadps": [
+          0.0,
+          0.0
+        ]
+      },
+      "final": {
+        "busPowerW": 0.327629148528331,
+        "motors": [
+          {
+            "currentA": 0.6825607261006896,
+            "actualTerminalV": 0.24,
+            "busPowerW": 0.1638145742641655,
+            "windingHeatW": 0.053244473693154354,
+            "brakeHeatW": 0.0,
+            "torqueNm": 0.013543843763447439,
+            "infeasible": false,
+            "midOmegaRadps": 8.163864151284828,
+            "rootResidualRadps": 6.869504964868156e-16
+          },
+          {
+            "currentA": 0.6825607261006896,
+            "actualTerminalV": 0.24,
+            "busPowerW": 0.1638145742641655,
+            "windingHeatW": 0.053244473693154354,
+            "brakeHeatW": 0.0,
+            "torqueNm": 0.013543843763447439,
+            "infeasible": false,
+            "midOmegaRadps": 8.163864151284828,
+            "rootResidualRadps": 6.869504964868156e-16
+          }
+        ],
+        "patches": [
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06500066185051773,
+              -0.02652647938115537
+            ],
+            "plasticHeat": 3.7160906870028372e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04900813328186683,
+              -0.02
+            ]
+          }
+        ],
+        "bodyForceXZ_N": [
+          1.950019855515532,
+          -0.7957943814346611
+        ],
+        "bodyPitchTorqueNm": 0.0,
+        "nextState": {
+          "timeS": 0.02000000000000001,
+          "frameAngleRad": 0.0,
+          "rotorOmegaRadps": [
+            8.192519265726393,
+            8.192519265726393
+          ]
+        },
+        "deltaEnergyJ": {
+          "terminalWork": 0.00032762914852833104,
+          "windingHeat": 0.00010648894738630871,
+          "brakeHeat": 0.0,
+          "cradleWork": 0.0,
+          "bodyWork": 8.158510514708338e-05,
+          "plasticHeat": 0.00011148272061008511,
+          "returnMapNumericalLoss": 0.0
+        },
+        "intervalResidualJ": -1.0842021724855044e-19,
+        "infeasibleCurrentLimitVoltage": false,
+        "acceptance": false,
+        "energyJ": {
+          "terminalWork": 0.009645313222509095,
+          "windingHeat": 0.005163277323008965,
+          "brakeHeat": 0.0,
+          "cradleWork": 0.0,
+          "bodyWork": 0.0008006572533004531,
+          "plasticHeat": 0.001667857488620735,
+          "returnMapNumericalLoss": 0.0,
+          "stored": 0.0020135211575789433,
+          "initialStored": 0.0,
+          "residual": -1.3010426069826053e-18
+        }
+      },
+      "peakResidualJ": 2.168404344971009e-18,
+      "synthetic": true
+    },
+    {
+      "law": "memoryless-tanh",
+      "stepS": 0.0005,
+      "initial": {
+        "timeS": 0.0,
+        "frameAngleRad": 0.0,
+        "rotorOmegaRadps": [
+          0.0,
+          0.0
+        ]
+      },
+      "final": {
+        "busPowerW": 0.326599051045462,
+        "motors": [
+          {
+            "currentA": 0.6804146896780459,
+            "actualTerminalV": 0.24,
+            "busPowerW": 0.163299525522731,
+            "windingHeatW": 0.05291018856339102,
+            "brakeHeatW": 0.0,
+            "torqueNm": 0.013501260618962993,
+            "infeasible": false,
+            "midOmegaRadps": 8.17622443376097,
+            "rootResidualRadps": -8.326672684688674e-16
+          },
+          {
+            "currentA": 0.6804146896780459,
+            "actualTerminalV": 0.24,
+            "busPowerW": 0.163299525522731,
+            "windingHeatW": 0.05291018856339102,
+            "brakeHeatW": 0.0,
+            "torqueNm": 0.013501260618962993,
+            "infeasible": false,
+            "midOmegaRadps": 8.17622443376097,
+            "rootResidualRadps": -8.326672684688674e-16
+          }
+        ],
+        "patches": [
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06502902471898737,
+              -0.026457130005196703
+            ],
+            "plasticHeat": 1.8629208017069296e-06,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.049158033925988484,
+              -0.02
+            ]
+          }
+        ],
+        "bodyForceXZ_N": [
+          1.9508707415696211,
+          -0.793713900155901
+        ],
+        "bodyPitchTorqueNm": 0.0,
+        "nextState": {
+          "timeS": 0.020000000000000014,
+          "frameAngleRad": 0.0,
+          "rotorOmegaRadps": [
+            8.1901541347303,
+            8.1901541347303
+          ]
+        },
+        "deltaEnergyJ": {
+          "terminalWork": 0.00016329952552273101,
+          "windingHeat": 5.2910188563391016e-05,
+          "brakeHeat": 0.0,
+          "cradleWork": 0.0,
+          "bodyWork": 4.083462953768152e-05,
+          "plasticHeat": 5.588762405120789e-05,
+          "returnMapNumericalLoss": 0.0
+        },
+        "intervalResidualJ": 1.0842021724855044e-19,
+        "infeasibleCurrentLimitVoltage": false,
+        "acceptance": false,
+        "energyJ": {
+          "terminalWork": 0.009648110183654655,
+          "windingHeat": 0.0051667380312617915,
+          "brakeHeat": 0.0,
+          "cradleWork": 0.0,
+          "bodyWork": 0.0008017957709483409,
+          "plasticHeat": 0.001667217638925332,
+          "returnMapNumericalLoss": 0.0,
+          "stored": 0.0020123587425191947,
+          "initialStored": 0.0,
+          "residual": -3.903127820947816e-18
+        }
+      },
+      "peakResidualJ": 5.204170427930421e-18,
+      "synthetic": true
+    },
+    {
+      "law": "memoryless-tanh",
+      "stepS": 0.00025,
+      "initial": {
+        "timeS": 0.0,
+        "frameAngleRad": 0.0,
+        "rotorOmegaRadps": [
+          0.0,
+          0.0
+        ]
+      },
+      "final": {
+        "busPowerW": 0.32605903439762896,
+        "motors": [
+          {
+            "currentA": 0.6792896549950603,
+            "actualTerminalV": 0.24,
+            "busPowerW": 0.16302951719881448,
+            "windingHeatW": 0.05273536404380664,
+            "brakeHeatW": 0.0,
+            "torqueNm": 0.013478936899779994,
+            "infeasible": false,
+            "midOmegaRadps": 8.182704168368655,
+            "rootResidualRadps": -2.96637714392034e-16
+          },
+          {
+            "currentA": 0.6792896549950603,
+            "actualTerminalV": 0.24,
+            "busPowerW": 0.16302951719881448,
+            "windingHeatW": 0.05273536404380664,
+            "brakeHeatW": 0.0,
+            "torqueNm": 0.013478936899779994,
+            "infeasible": false,
+            "midOmegaRadps": 8.182704168368655,
+            "rootResidualRadps": -2.96637714392034e-16
+          }
+        ],
+        "patches": [
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          },
+          {
+            "force": [
+              0.06504380422735893,
+              -0.026420906796495693
+            ],
+            "plasticHeat": 9.327387629575663e-07,
+            "numericalLoss": 0.0,
+            "slip": [
+              0.04923661759859503,
+              -0.02
+            ]
+          }
+        ],
+        "bodyForceXZ_N": [
+          1.951314126820768,
+          -0.7926272038948708
+        ],
+        "bodyPitchTorqueNm": 0.0,
+        "nextState": {
+          "timeS": 0.020000000000000014,
+          "frameAngleRad": 0.0,
+          "rotorOmegaRadps": [
+            8.189564800852711,
+            8.189564800852711
+          ]
+        },
+        "deltaEnergyJ": {
+          "terminalWork": 8.151475859940724e-05,
+          "windingHeat": 2.636768202190332e-05,
+          "brakeHeat": 0.0,
+          "cradleWork": 0.0,
+          "bodyWork": 2.0428290565785247e-05,
+          "plasticHeat": 2.798216288872699e-05,
+          "returnMapNumericalLoss": 0.0
+        },
+        "intervalResidualJ": -1.2874900798265365e-19,
+        "infeasibleCurrentLimitVoltage": false,
+        "acceptance": false,
+        "energyJ": {
+          "terminalWork": 0.009648798674152857,
+          "windingHeat": 0.005167592562519393,
+          "brakeHeat": 0.0,
+          "cradleWork": 0.0,
+          "bodyWork": 0.0008020774476697404,
+          "plasticHeat": 0.001667059515142749,
+          "returnMapNumericalLoss": 0.0,
+          "stored": 0.0020120691488209716,
+          "initialStored": 0.0,
+          "residual": 3.0357660829594124e-18
+        }
+      },
+      "peakResidualJ": 4.7704895589362195e-18,
+      "synthetic": true
+    },
+    {
+      "law": "elastic-plastic",
+      "stepS": 0.001,
+      "initial": {
+        "timeS": 0.0,
+        "frameAngleRad": 0.0,
+        "rotorOmegaRadps": [
+          0.0,
+          0.0
+        ],
+        "shearWorldM": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "final": {
+        "busPowerW": 0.2568243546943971,
+        "motors": [
+          {
+            "currentA": 0.5350507389466606,
+            "actualTerminalV": 0.24,
+            "busPowerW": 0.12841217734719854,
+            "windingHeatW": 0.03271763351398486,
+            "brakeHeatW": 0.0,
+            "torqueNm": 0.010616848196363507,
+            "infeasible": false,
+            "midOmegaRadps": 9.013460686570903,
+            "rootResidualRadps": 1.1379786002407855e-15
+          },
+          {
+            "currentA": 0.5350507389466606,
+            "actualTerminalV": 0.24,
+            "busPowerW": 0.12841217734719854,
+            "windingHeatW": 0.03271763351398486,
+            "brakeHeatW": 0.0,
+            "torqueNm": 0.010616848196363507,
+            "infeasible": false,
+            "midOmegaRadps": 9.013460686570903,
+            "rootResidualRadps": 1.1379786002407855e-15
+          }
+        ],
+        "patches": [
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            "force": [
+              0.06129034763733884,
+              -0.03424516615363607
+            ],
+            "plasticHeat": 4.311365748231633e-06,
+            "numericalLoss": 8.772647470331553e-09,
+            "slip": [
+              0.059311705884575766,
+              -0.02
+            ]
+          }
+        ],
+        "bodyForceXZ_N": [
+          1.8387104291201652,
+          -1.0273549846090821
+        ],
+        "bodyPitchTorqueNm": 0.0,
+        "nextState": {
+          "timeS": 0.02000000000000001,
+          "frameAngleRad": 0.0,
+          "rotorOmegaRadps": [
+            9.004581849405021,
+            9.004581849405021
+          ],
+          "shearWorldM": [
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ],
+            [
+              0.0004596776072800413,
+              -0.0002568387461522705
+            ]
+          ]
+        },
+        "deltaEnergyJ": {
+          "terminalWork": 0.00025682435469439707,
+          "windingHeat": 6.543526702796972e-05,
+          "brakeHeat": 0.0,
+          "cradleWork": 0.0,
+          "bodyWork": 7.138842176382662e-05,
+          "plasticHeat": 0.00012934097244694898,
+          "returnMapNumericalLoss": 2.631794241099466e-07
+        },
+        "intervalResidualJ": -8.131516293641283e-20,
+        "infeasibleCurrentLimitVoltage": false,
+        "acceptance": false,
+        "energyJ": {
+          "terminalWork": 0.008532453506392573,
+          "windingHeat": 0.004525290681338398,
+          "brakeHeat": 0.0,
+          "cradleWork": 0.0,
+          "bodyWork": 0.00037737036278281483,
+          "plasticHeat": 0.0005751907837903931,
+          "returnMapNumericalLoss": 6.758756168238686e-05,
+          "stored": 0.0029870141167985787,
+          "initialStored": 0.0,
+          "residual": 1.3010426069826053e-18
+        }
+      },
+      "peakResidualJ": 2.6020852139652106e-18,
+      "synthetic": true
+    },
+    {
+      "law": "elastic-plastic",
+      "stepS": 0.0005,
+      "initial": {
+        "timeS": 0.0,
+        "frameAngleRad": 0.0,
+        "rotorOmegaRadps": [
+          0.0,
+          0.0
+        ],
+        "shearWorldM": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "final": {
+        "busPowerW": 0.25469585265522693,
+        "motors": [
+          {
+            "currentA": 0.5306163596983895,
+            "actualTerminalV": 0.24,
+            "busPowerW": 0.12734792632761346,
+            "windingHeatW": 0.03217756813480808,
+            "brakeHeatW": 0.0,
+            "torqueNm": 0.010528858164956988,
+            "infeasible": false,
+            "midOmegaRadps": 9.039000877565169,
+            "rootResidualRadps": -1.5300261058115439e-15
+          },
+          {
+            "currentA": 0.5306163596983895,
+            "actualTerminalV": 0.24,
+            "busPowerW": 0.12734792632761346,
+            "windingHeatW": 0.03217756813480808,
+            "brakeHeatW": 0.0,
+            "torqueNm": 0.010528858164956988,
+            "infeasible": false,
+            "midOmegaRadps": 9.039000877565169,
+            "rootResidualRadps": -1.5300261058115439e-15
+          }
+        ],
+        "patches": [
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            "force": [
+              0.06149527271513906,
+              -0.033875795962407425
+            ],
+            "plasticHeat": 2.169867251090933e-06,
+            "numericalLoss": 2.109288458923163e-09,
+            "slip": [
+              0.05962144727506749,
+              -0.02
+            ]
+          }
+        ],
+        "bodyForceXZ_N": [
+          1.8448581814541718,
+          -1.0162738788722228
+        ],
+        "bodyPitchTorqueNm": 0.0,
+        "nextState": {
+          "timeS": 0.020000000000000014,
+          "frameAngleRad": 0.0,
+          "rotorOmegaRadps": [
+            9.033517552378122,
+            9.033517552378122
+          ],
+          "shearWorldM": [
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ],
+            [
+              0.00046121454536354295,
+              -0.00025406846971805566
+            ]
+          ]
+        },
+        "deltaEnergyJ": {
+          "terminalWork": 0.00012734792632761348,
+          "windingHeat": 3.217756813480808e-05,
+          "brakeHeat": 0.0,
+          "cradleWork": 0.0,
+          "bodyWork": 3.595871574763208e-05,
+          "plasticHeat": 6.509601753272798e-05,
+          "returnMapNumericalLoss": 6.32786537676949e-08
+        },
+        "intervalResidualJ": 5.014435047745458e-19,
+        "infeasibleCurrentLimitVoltage": false,
+        "acceptance": false,
+        "energyJ": {
+          "terminalWork": 0.00849534108769039,
+          "windingHeat": 0.004509256255706711,
+          "brakeHeat": 0.0,
+          "cradleWork": 0.0,
+          "bodyWork": 0.00036325005791326844,
+          "plasticHeat": 0.000585209044370149,
+          "returnMapNumericalLoss": 3.495326030700474e-05,
+          "stored": 0.003002672469393257,
+          "initialStored": 0.0,
+          "residual": -4.336808689942018e-19
+        }
+      },
+      "peakResidualJ": 3.903127820947816e-18,
+      "synthetic": true
+    },
+    {
+      "law": "elastic-plastic",
+      "stepS": 0.00025,
+      "initial": {
+        "timeS": 0.0,
+        "frameAngleRad": 0.0,
+        "rotorOmegaRadps": [
+          0.0,
+          0.0
+        ],
+        "shearWorldM": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "final": {
+        "busPowerW": 0.2535163997391396,
+        "motors": [
+          {
+            "currentA": 0.5281591661232075,
+            "actualTerminalV": 0.24,
+            "busPowerW": 0.1267581998695698,
+            "windingHeatW": 0.03188024054399564,
+            "brakeHeatW": 0.0,
+            "torqueNm": 0.01048010082424544,
+            "infeasible": false,
+            "midOmegaRadps": 9.053153296586276,
+            "rootResidualRadps": 1.4224732503009818e-16
+          },
+          {
+            "currentA": 0.5281591661232075,
+            "actualTerminalV": 0.24,
+            "busPowerW": 0.1267581998695698,
+            "windingHeatW": 0.03188024054399564,
+            "brakeHeatW": 0.0,
+            "torqueNm": 0.01048010082424544,
+            "infeasible": false,
+            "midOmegaRadps": 9.053153296586276,
+            "rootResidualRadps": 1.4224732503009818e-16
+          }
+        ],
+        "patches": [
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          },
+          {
+            "shear": [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            "force": [
+              0.06160533317518592,
+              -0.033675228919345504
+            ],
+            "plasticHeat": 1.0887531516758976e-06,
+            "numericalLoss": 5.161812593868523e-10,
+            "slip": [
+              0.05979308224629397,
+              -0.02
+            ]
+          }
+        ],
+        "bodyForceXZ_N": [
+          1.8481599952555776,
+          -1.0102568675803651
+        ],
+        "bodyPitchTorqueNm": 0.0,
+        "nextState": {
+          "timeS": 0.020000000000000014,
+          "frameAngleRad": 0.0,
+          "rotorOmegaRadps": [
+            9.050125055283413,
+            9.050125055283413
+          ],
+          "shearWorldM": [
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ],
+            [
+              0.00046203999881389436,
+              -0.0002525642168950913
+            ]
+          ]
+        },
+        "deltaEnergyJ": {
+          "terminalWork": 6.33790999347849e-05,
+          "windingHeat": 1.594012027199782e-05,
+          "brakeHeat": 0.0,
+          "cradleWork": 0.0,
+          "bodyWork": 1.8050715602792895e-05,
+          "plasticHeat": 3.266259455027693e-05,
+          "returnMapNumericalLoss": 1.5485437781605568e-08
+        },
+        "intervalResidualJ": -2.0328790734103208e-20,
+        "infeasibleCurrentLimitVoltage": false,
+        "acceptance": false,
+        "energyJ": {
+          "terminalWork": 0.00847650168902639,
+          "windingHeat": 0.0045012312257881534,
+          "brakeHeat": 0.0,
+          "cradleWork": 0.0,
+          "bodyWork": 0.0003557182992356744,
+          "plasticHeat": 0.0005903384996265427,
+          "returnMapNumericalLoss": 1.7531470568411493e-05,
+          "stored": 0.0030116821938076066,
+          "initialStored": 0.0,
+          "residual": 2.168404344971009e-18
+        }
+      },
+      "peakResidualJ": 3.903127820947816e-18,
+      "synthetic": true
+    }
+  ],
+  "acceptance": false,
+  "limits": [
+    "Mapped motor state is not an advanced lift simulation or a registered finite patch.",
+    "Synthetic interface cases prescribe body/contact velocities and declared initial state; no acquisition history is reset or relabeled.",
+    "The normal budget is the actual end-state value, not the old10N hypothesis.",
+    "Memoryless mode adds no elastic state; elastic mode requires separately supplied history and accounts for numerical return-map loss.",
+    "Two-dimensional friction budget permits creep/slip; actual pitch/lift actuation and contact persistence remain separate gates."
+  ]
+}
