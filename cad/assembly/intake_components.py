@@ -26,7 +26,7 @@ def build(state='floor',c=None,pose=None,metadata=False):
   add('side pinch belt '+str(side),belt_x(0,y,-p['beltWidth']/2,center,r,p['beltWidth']),'drive')
   for x in [-center/2,center/2]:
    ident=str((side,x))
-   add('vertical stub shaft '+ident,h.cyl((x,y,p['shaftLower']),(0,0,1),6.875,46 if x<0 else p['shaftLength']),'support')
+   add('vertical stub shaft '+ident,h.cyl((x,y,p['shaftLower']),(0,0,1),6.875,p['rearShaftLength'] if x<0 else p['shaftLength']),'support')
    add('12T track pulley representation '+ident,ring_z(x,y,-9.3472,13.144,6.875,18.6944),'drive')
    for zz in [p['lowerBearingZ'],p['upperBearingZ']]:
     add('bearing representation '+ident+str(zz),ring_z(x,y,zz-3.175,14.2875,6.875,6.35),'drive')
@@ -36,7 +36,8 @@ def build(state='floor',c=None,pose=None,metadata=False):
     else:arm=h.box(x-10,min(side*185.3,side*207),zz-4.7625,20,21.7,3.175);webX=x
     plate=BRepAlgoAPI_Fuse(plate,arm).Shape();plate=cut(plate,h.cyl((x,y,zz-6),(0,0,1),14.3,7))
     weldment.append(plate)
-    web=h.box(webX-10,side*c['cradleSideYAbs']-3.175,zz-4.7625,20,6.35,abs(zz-4.7625)+12.7 if zz<0 else 3.175)
+    webZ=min(-12.7,zz-4.7625);webTop=max(12.7,zz-1.5875)
+    web=h.box(webX-10,side*c['cradleSideYAbs']-3.175,webZ,20,6.35,webTop-webZ)
     weldment.append(web)
    if x>0:
     my=side*p['motorSideYAbs'];face=p['motorFaceZ'];mx=x-math.sqrt(p['motorOffsetY']**2-(my-y)**2)
