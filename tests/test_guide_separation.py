@@ -21,6 +21,10 @@ class Separation(unittest.TestCase):
     for j in range(24):
      v=2*math.pi*j/24;point=[(.1524+.0254*math.cos(v))*rad[k]+.0254*math.sin(v)*axis[k] for k in range(3)]
      self.assertTrue(all(lo[k]-1e-12<=point[k]<=hi[k]+1e-12 for k in range(3)))
+ def test_near_unit_axis_is_normalized(self):
+  a=[.6,0,.8];b=[x*(1+2e-11) for x in a]
+  q=s.query([0,0,0],a,self.c);r=s.query([0,0,0],b,self.c)
+  for u,v in zip(q["torusBoundsM"][1],r["torusBoundsM"][1]):self.assertAlmostEqual(u,v,places=14)
  def test_bad_inputs_and_touch(self):
   for center,axis in [([True,0,0],[0,0,1]),([0,0,0],[0,0,2]),([float('nan'),0,0],[0,0,1])]:
    with self.assertRaises(ValueError):s.query(center,axis,self.c)

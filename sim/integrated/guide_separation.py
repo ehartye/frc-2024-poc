@@ -12,7 +12,9 @@ def query(center_robot_m,axis_robot,contract,*,margin_m=1e-9):
  """
  if len(center_robot_m)!=3 or len(axis_robot)!=3:raise ValueError('XYZ triples required')
  c=list(map(_number,center_robot_m));n=list(map(_number,axis_robot));margin=_number(margin_m)
- if margin<0 or abs(sum(x*x for x in n)-1)>1e-10:raise ValueError('unit axis and nonnegative margin required')
+ norm2=sum(x*x for x in n)
+ if margin<0 or abs(norm2-1)>1e-10:raise ValueError('unit axis and nonnegative margin required')
+ n=[x/math.sqrt(norm2) for x in n]
  g=contract['guide'];major=_number(contract['majorRadiusMm'])/1000;tube=_number(contract['tubeRadiusMm'])/1000
  if not major>tube>0:raise ValueError('ring torus radii required')
  lo=[_number(g['guideFaceXmm'])/1000,-_number(g['halfWidthMm'])/1000,_number(g['bottomZmm'])/1000]
