@@ -1,0 +1,7721 @@
+{
+  "schema": "finite-sidebelt-footprint-witness/1",
+  "inputs": {
+    "cad/assembly/build_robot.py": "cca2c9a3ecca7a622fb1283461c393b2288e3c6efd173c60d72a959e3c500e26",
+    "cad/assembly/bumper_candidate.py": "556fba39fda427cb081a2a1d4d806372b67b830606a242bbfc0babf05619fc19",
+    "cad/a2_primitives.py": "bef958c710da792f89def8606d7169a7c385fcff257826619a7b29fe0943952e",
+    "cad/a2_kinematics.py": "4329126a1465f53c8d27618307b2864ff69803e196ff4521aab8a50daf670581",
+    "cad/build_a2_layout.py": "aea31166eabc53113962cc511cfbd190eba54033f7b93476455961dccb1969c9",
+    "cad/cycle-contract-A2.json": "3700da3bf1a271d6b6763060f913435a4a50cda8d456cb1a57a6f1898416b6ad",
+    "cad/components/a2-transmission.json": "0aae2e2dd0d8c4b16729139380f6d1e2df0efa956dad2ee8b205be1a57f3d8b0",
+    "cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+    "cad/drivetrain/build_fastening.py": "9d82a974d184200e7a6c414bc74b345cd53aa2cf85f36c3cf528fe818997d4ac",
+    "cad/drivetrain/fastening.json": "6cb3d276cd5f59143ef9b52d2240095f02db9f92d6cfef5ae53b145a78862ac9",
+    "cad/drivetrain/build_drivetrain.py": "4748e01902aac32ae8d996e1f7676caa7f794ac6a5971b661855c26487ad29a7",
+    "cad/electrical/manifest.json": "9db917a55b0884db9841f52da3b5cccf8ad684c652e4dde3e01b1efe75e891a3",
+    "cad/electrical/build_electrical.py": "d2fbd40d0b26c8887679b6ed3b49c655b10a27a0cd175e812b35d9fccd6f6317",
+    "cad/electrical/mounts.py": "90254dbc5116a9af72df0ba6442ed94ef8c94e8247326f9b7c6cfd0c0749c7e8",
+    "cad/electrical/breaker_mount.py": "1e27087fa191e8043c6ed8b3c48bca4db50cde379efa171cc49508a1a1c75060",
+    "cad/electrical/breaker-mount-evidence.json": "9e0bb64f30ab3ee58de577fe694ee578135cdf4d74ddf8e0b3065b741266b07d",
+    "cad/electrical/fasteners.py": "788a1cb9bf71a780aed9cbeb5bf48d06532e914fed431edcc0e72a4bd273b799",
+    "cad/assembly/intake_components.py": "c6d352be0edba340d340112697d3f2482158b4fb8f3324b0dd3927344f9b43c5",
+    "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+    "cad/assembly/build_intake_candidate.py": "07e9c96ec0f5e4d02660e0d2efda8dd2bddfb0198862c5e228dbc9e07cbf9bc3",
+    "cad/assembly/check_intake_contact.py": "95d20cfed12331c135b5534d4076f833ae6741b69806a61e677e88098a7301e3",
+    "cad/assembly/verify_receipts.py": "213a00200bc7fc0b84bd4bb82e4a62aaee3c10432f35373fc3097b2141d4e81d",
+    "cad/assembly/audit_intake_motion.py": "1d33ef51ba87c170335234004b1fa3cac1aeeac39da6149d15eedf58a26c1509",
+    "cad/components/check_pulley_outer_profile.py": "23325f74745de7ea2d828340c816143346221c44325784d6e8934b08553efde5",
+    "cad/components/pulley-outer-profile.json": "e582635a9b49f9810eee996177af2761edfe7928450dd86ef76d103ce8af53ec",
+    "cad/assembly/lower_support_mounts.py": "1b832dcc91967eab3dcfe40abc585ef1137250fb4e6777b01075a79ebcb1b14d",
+    "cad/assembly/upper_carriage_connections.py": "bbfbdf8b8c5f9356b5f60a3b4ad3d2d94c7f4e8a76db0e64742618173c936032",
+    "cad/assembly/build_connected_candidate.py": "19356d26a59b7b22a9a4eaed106c9cfd5d9f57774d682e0bd100711348a5ea69",
+    "cad/assembly/slide_pad_attachments.py": "526310777f96f0f537844946c611b05f7e7dc80119a75d308f043832aa7ed7ef",
+    "cad/assembly/extract_retention_patch.py": "36ffb71d39cc063fffaee2f2fcd9607293e46f10a2fe4e9b9aac0312866fb0cc"
+  },
+  "cases": [
+    {
+      "state": "floor",
+      "noteLongitudinalOffsetMm": 0,
+      "noteCenterWorldMm": [
+        178.0,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0.0,
+      "points": [
+        {
+          "side": -1,
+          "cradlePointMm": [
+            -12,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            166.0,
+            -176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            -12,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -12,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            166.0,
+            -176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            -12,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            166.0,
+            -176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            -6,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            172.0,
+            -176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            -6,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -6,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            172.0,
+            -176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            -6,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            172.0,
+            -176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            0,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            0,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            178.0,
+            -176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            0,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            0,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            178.0,
+            -176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            0,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            0,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            178.0,
+            -176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            6,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            6,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            184.0,
+            -176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            6,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            6,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            184.0,
+            -176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            6,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            6,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            184.0,
+            -176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            12,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            12,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            190.0,
+            -176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            12,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            12,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            190.0,
+            -176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            12,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            12,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            190.0,
+            -176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            -12,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            166.0,
+            176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            -12,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -12,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            166.0,
+            176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            -12,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            166.0,
+            176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            -6,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            172.0,
+            176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            -6,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -6,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            172.0,
+            176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            -6,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            172.0,
+            176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            0,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            0,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            178.0,
+            176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            0,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            0,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            178.0,
+            176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            0,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            0,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            178.0,
+            176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            6,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            6,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            184.0,
+            176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            6,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            6,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            184.0,
+            176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            6,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            6,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            184.0,
+            176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            12,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            12,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            190.0,
+            176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            12,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            12,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            190.0,
+            176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            12,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            12,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            190.0,
+            176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "state": "floor",
+      "noteLongitudinalOffsetMm": 10,
+      "noteCenterWorldMm": [
+        188.0,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0.0,
+      "points": [
+        {
+          "side": -1,
+          "cradlePointMm": [
+            -2,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            176.0,
+            -176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            -2,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -12,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            176.0,
+            -176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            -2,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            176.0,
+            -176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            4,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            182.0,
+            -176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            4,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -6,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            182.0,
+            -176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            4,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            182.0,
+            -176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            10,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            0,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            188.0,
+            -176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            10,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            0,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            188.0,
+            -176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            10,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            0,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            188.0,
+            -176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            16,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            6,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            194.0,
+            -176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            16,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            6,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            194.0,
+            -176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            16,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            6,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            194.0,
+            -176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            22,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            12,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            200.0,
+            -176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            22,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            12,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            200.0,
+            -176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            22,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            12,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            200.0,
+            -176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            -2,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            176.0,
+            176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            -2,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -12,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            176.0,
+            176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            -2,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            176.0,
+            176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            4,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            182.0,
+            176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            4,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -6,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            182.0,
+            176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            4,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            182.0,
+            176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            10,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            0,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            188.0,
+            176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            10,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            0,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            188.0,
+            176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            10,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            0,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            188.0,
+            176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            16,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            6,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            194.0,
+            176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            16,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            6,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            194.0,
+            176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            16,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            6,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            194.0,
+            176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            22,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            12,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            200.0,
+            176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            22,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            12,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            200.0,
+            176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            22,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            12,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            200.0,
+            176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "state": "floor",
+      "noteLongitudinalOffsetMm": 20,
+      "noteCenterWorldMm": [
+        198.0,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0.0,
+      "points": [
+        {
+          "side": -1,
+          "cradlePointMm": [
+            8,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            186.0,
+            -176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            8,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -12,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            186.0,
+            -176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            8,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            186.0,
+            -176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            14,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            192.0,
+            -176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            14,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -6,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            192.0,
+            -176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            14,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            192.0,
+            -176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            20,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            0,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            198.0,
+            -176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            20,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            0,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            198.0,
+            -176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            20,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            0,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            198.0,
+            -176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            26,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            6,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            204.0,
+            -176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            26,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            6,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            204.0,
+            -176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            26,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            6,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            204.0,
+            -176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            32,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            12,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            210.0,
+            -176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            32,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            12,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            210.0,
+            -176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            32,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            12,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            210.0,
+            -176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            8,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            186.0,
+            176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            8,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -12,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            186.0,
+            176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            8,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            186.0,
+            176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            14,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            192.0,
+            176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            14,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -6,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            192.0,
+            176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            14,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            192.0,
+            176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            20,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            0,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            198.0,
+            176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            20,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            0,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            198.0,
+            176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            20,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            0,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            198.0,
+            176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            26,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            6,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            204.0,
+            176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            26,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            6,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            204.0,
+            176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            26,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            6,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            204.0,
+            176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            32,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            12,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            210.0,
+            176.9223933363976,
+            22.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            32,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            12,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            210.0,
+            176.9223933363976,
+            25.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            32,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            12,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            210.0,
+            176.9223933363976,
+            28.4
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "state": "rotated",
+      "noteLongitudinalOffsetMm": 0,
+      "noteCenterWorldMm": [
+        178.0,
+        0,
+        157.38227153674845
+      ],
+      "pitchDeg": 59.99999999999999,
+      "points": [
+        {
+          "side": -1,
+          "cradlePointMm": [
+            -12,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            174.59807621135332,
+            -176.9223933363976,
+            145.48996669133518
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            -12,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -12,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            172.0,
+            -176.9223933363976,
+            146.98996669133518
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            -12,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            169.40192378864668,
+            -176.9223933363976,
+            148.48996669133518
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            -6,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            177.59807621135332,
+            -176.9223933363976,
+            150.68611911404182
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            -6,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -6,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            175.0,
+            -176.9223933363976,
+            152.18611911404182
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            -6,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            172.40192378864668,
+            -176.9223933363976,
+            153.68611911404182
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            0,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            0,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            180.59807621135332,
+            -176.9223933363976,
+            155.88227153674845
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            0,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            0,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            178.0,
+            -176.9223933363976,
+            157.38227153674845
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            0,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            0,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            175.40192378864668,
+            -176.9223933363976,
+            158.88227153674845
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            6,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            6,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            183.59807621135332,
+            -176.9223933363976,
+            161.07842395945508
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            6,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            6,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            181.0,
+            -176.9223933363976,
+            162.57842395945508
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            6,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            6,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            178.40192378864668,
+            -176.9223933363976,
+            164.07842395945508
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            12,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            12,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            186.59807621135332,
+            -176.9223933363976,
+            166.2745763821617
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            12,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            12,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            184.0,
+            -176.9223933363976,
+            167.7745763821617
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            12,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            12,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            181.40192378864668,
+            -176.9223933363976,
+            169.2745763821617
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            -12,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            174.59807621135332,
+            176.9223933363976,
+            145.48996669133518
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            -12,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -12,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            172.0,
+            176.9223933363976,
+            146.98996669133518
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            -12,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            169.40192378864668,
+            176.9223933363976,
+            148.48996669133518
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            -6,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            177.59807621135332,
+            176.9223933363976,
+            150.68611911404182
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            -6,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -6,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            175.0,
+            176.9223933363976,
+            152.18611911404182
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            -6,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            172.40192378864668,
+            176.9223933363976,
+            153.68611911404182
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            0,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            0,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            180.59807621135332,
+            176.9223933363976,
+            155.88227153674845
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            0,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            0,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            178.0,
+            176.9223933363976,
+            157.38227153674845
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            0,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            0,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            175.40192378864668,
+            176.9223933363976,
+            158.88227153674845
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            6,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            6,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            183.59807621135332,
+            176.9223933363976,
+            161.07842395945508
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            6,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            6,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            181.0,
+            176.9223933363976,
+            162.57842395945508
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            6,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            6,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            178.40192378864668,
+            176.9223933363976,
+            164.07842395945508
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            12,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            12,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            186.59807621135332,
+            176.9223933363976,
+            166.2745763821617
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            12,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            12,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            184.0,
+            176.9223933363976,
+            167.7745763821617
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            12,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            12,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            181.40192378864668,
+            176.9223933363976,
+            169.2745763821617
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "state": "rotated",
+      "noteLongitudinalOffsetMm": 10,
+      "noteCenterWorldMm": [
+        183.0,
+        0,
+        166.04252557459284
+      ],
+      "pitchDeg": 59.99999999999999,
+      "points": [
+        {
+          "side": -1,
+          "cradlePointMm": [
+            -2,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            179.59807621135332,
+            -176.9223933363976,
+            154.15022072917958
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            -2,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -12,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            177.0,
+            -176.9223933363976,
+            155.65022072917958
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            -2,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            174.40192378864668,
+            -176.9223933363976,
+            157.15022072917958
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            4,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            182.59807621135332,
+            -176.9223933363976,
+            159.3463731518862
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            4,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -6,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            180.0,
+            -176.9223933363976,
+            160.8463731518862
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            4,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            177.40192378864668,
+            -176.9223933363976,
+            162.3463731518862
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            10,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            0,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            185.59807621135332,
+            -176.9223933363976,
+            164.54252557459284
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            10,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            0,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            183.0,
+            -176.9223933363976,
+            166.04252557459284
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            10,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            0,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            180.40192378864668,
+            -176.9223933363976,
+            167.54252557459284
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            16,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            6,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            188.59807621135332,
+            -176.9223933363976,
+            169.73867799729948
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            16,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            6,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            186.0,
+            -176.9223933363976,
+            171.23867799729948
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            16,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            6,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            183.40192378864668,
+            -176.9223933363976,
+            172.73867799729948
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            22,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            12,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            191.59807621135332,
+            -176.9223933363976,
+            174.9348304200061
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            22,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            12,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            189.0,
+            -176.9223933363976,
+            176.4348304200061
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            22,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            12,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            186.40192378864668,
+            -176.9223933363976,
+            177.9348304200061
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            -2,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            179.59807621135332,
+            176.9223933363976,
+            154.15022072917958
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            -2,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -12,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            177.0,
+            176.9223933363976,
+            155.65022072917958
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            -2,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            174.40192378864668,
+            176.9223933363976,
+            157.15022072917958
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            4,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            182.59807621135332,
+            176.9223933363976,
+            159.3463731518862
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            4,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -6,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            180.0,
+            176.9223933363976,
+            160.8463731518862
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            4,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            177.40192378864668,
+            176.9223933363976,
+            162.3463731518862
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            10,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            0,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            185.59807621135332,
+            176.9223933363976,
+            164.54252557459284
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            10,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            0,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            183.0,
+            176.9223933363976,
+            166.04252557459284
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            10,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            0,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            180.40192378864668,
+            176.9223933363976,
+            167.54252557459284
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            16,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            6,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            188.59807621135332,
+            176.9223933363976,
+            169.73867799729948
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            16,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            6,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            186.0,
+            176.9223933363976,
+            171.23867799729948
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            16,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            6,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            183.40192378864668,
+            176.9223933363976,
+            172.73867799729948
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            22,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            12,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            191.59807621135332,
+            176.9223933363976,
+            174.9348304200061
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            22,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            12,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            189.0,
+            176.9223933363976,
+            176.4348304200061
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            22,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            12,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            186.40192378864668,
+            176.9223933363976,
+            177.9348304200061
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "state": "rotated",
+      "noteLongitudinalOffsetMm": 20,
+      "noteCenterWorldMm": [
+        188.0,
+        0,
+        174.7027796124372
+      ],
+      "pitchDeg": 59.99999999999999,
+      "points": [
+        {
+          "side": -1,
+          "cradlePointMm": [
+            8,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            184.59807621135332,
+            -176.9223933363976,
+            162.81047476702395
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            8,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -12,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            182.0,
+            -176.9223933363976,
+            164.31047476702395
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            8,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            179.40192378864668,
+            -176.9223933363976,
+            165.81047476702395
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            14,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            187.59807621135332,
+            -176.9223933363976,
+            168.00662718973058
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            14,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -6,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            185.0,
+            -176.9223933363976,
+            169.50662718973058
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            14,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            182.40192378864668,
+            -176.9223933363976,
+            171.00662718973058
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            20,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            0,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            190.59807621135332,
+            -176.9223933363976,
+            173.2027796124372
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            20,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            0,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            188.0,
+            -176.9223933363976,
+            174.7027796124372
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            20,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            0,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            185.40192378864668,
+            -176.9223933363976,
+            176.2027796124372
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            26,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            6,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            193.59807621135332,
+            -176.9223933363976,
+            178.39893203514384
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            26,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            6,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            191.0,
+            -176.9223933363976,
+            179.89893203514384
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            26,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            6,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            188.40192378864668,
+            -176.9223933363976,
+            181.39893203514384
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            32,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            12,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            196.59807621135332,
+            -176.9223933363976,
+            183.59508445785048
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            32,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            12,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            194.0,
+            -176.9223933363976,
+            185.09508445785048
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            32,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            12,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            191.40192378864668,
+            -176.9223933363976,
+            186.59508445785048
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            8,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            184.59807621135332,
+            176.9223933363976,
+            162.81047476702395
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            8,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -12,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            182.0,
+            176.9223933363976,
+            164.31047476702395
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            8,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            179.40192378864668,
+            176.9223933363976,
+            165.81047476702395
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            14,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            187.59807621135332,
+            176.9223933363976,
+            168.00662718973058
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            14,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -6,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            185.0,
+            176.9223933363976,
+            169.50662718973058
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            14,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            182.40192378864668,
+            176.9223933363976,
+            171.00662718973058
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            20,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            0,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            190.59807621135332,
+            176.9223933363976,
+            173.2027796124372
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            20,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            0,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            188.0,
+            176.9223933363976,
+            174.7027796124372
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            20,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            0,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            185.40192378864668,
+            176.9223933363976,
+            176.2027796124372
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            26,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            6,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            193.59807621135332,
+            176.9223933363976,
+            178.39893203514384
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            26,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            6,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            191.0,
+            176.9223933363976,
+            179.89893203514384
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            26,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            6,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            188.40192378864668,
+            176.9223933363976,
+            181.39893203514384
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            32,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            12,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            196.59807621135332,
+            176.9223933363976,
+            183.59508445785048
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            32,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            12,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            194.0,
+            176.9223933363976,
+            185.09508445785048
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            32,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            12,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            191.40192378864668,
+            176.9223933363976,
+            186.59508445785048
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "state": "handoff",
+      "noteLongitudinalOffsetMm": 0,
+      "noteCenterWorldMm": [
+        178.0,
+        0,
+        474.8333949243112
+      ],
+      "pitchDeg": 59.99999999999999,
+      "points": [
+        {
+          "side": -1,
+          "cradlePointMm": [
+            -12,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            174.59807621135332,
+            -176.9223933363976,
+            462.94109007889796
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            -12,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -12,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            172.0,
+            -176.9223933363976,
+            464.44109007889796
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            -12,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            169.40192378864668,
+            -176.9223933363976,
+            465.94109007889796
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            -6,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            177.59807621135332,
+            -176.9223933363976,
+            468.1372425016046
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            -6,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -6,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            175.0,
+            -176.9223933363976,
+            469.6372425016046
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            -6,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            172.40192378864668,
+            -176.9223933363976,
+            471.1372425016046
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            0,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            0,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            180.59807621135332,
+            -176.9223933363976,
+            473.3333949243112
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            0,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            0,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            178.0,
+            -176.9223933363976,
+            474.8333949243112
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            0,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            0,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            175.40192378864668,
+            -176.9223933363976,
+            476.3333949243112
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            6,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            6,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            183.59807621135332,
+            -176.9223933363976,
+            478.52954734701785
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            6,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            6,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            181.0,
+            -176.9223933363976,
+            480.02954734701785
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            6,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            6,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            178.40192378864668,
+            -176.9223933363976,
+            481.52954734701785
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            12,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            12,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            186.59807621135332,
+            -176.9223933363976,
+            483.7256997697245
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            12,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            12,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            184.0,
+            -176.9223933363976,
+            485.2256997697245
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            12,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            12,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            181.40192378864668,
+            -176.9223933363976,
+            486.7256997697245
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            -12,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            174.59807621135332,
+            176.9223933363976,
+            462.94109007889796
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            -12,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -12,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            172.0,
+            176.9223933363976,
+            464.44109007889796
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            -12,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            169.40192378864668,
+            176.9223933363976,
+            465.94109007889796
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            -6,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            177.59807621135332,
+            176.9223933363976,
+            468.1372425016046
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            -6,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -6,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            175.0,
+            176.9223933363976,
+            469.6372425016046
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            -6,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            172.40192378864668,
+            176.9223933363976,
+            471.1372425016046
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            0,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            0,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            180.59807621135332,
+            176.9223933363976,
+            473.3333949243112
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            0,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            0,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            178.0,
+            176.9223933363976,
+            474.8333949243112
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            0,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            0,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            175.40192378864668,
+            176.9223933363976,
+            476.3333949243112
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            6,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            6,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            183.59807621135332,
+            176.9223933363976,
+            478.52954734701785
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            6,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            6,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            181.0,
+            176.9223933363976,
+            480.02954734701785
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            6,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            6,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            178.40192378864668,
+            176.9223933363976,
+            481.52954734701785
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            12,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            12,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            186.59807621135332,
+            176.9223933363976,
+            483.7256997697245
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            12,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            12,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            184.0,
+            176.9223933363976,
+            485.2256997697245
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            12,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            12,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            181.40192378864668,
+            176.9223933363976,
+            486.7256997697245
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "state": "handoff",
+      "noteLongitudinalOffsetMm": 10,
+      "noteCenterWorldMm": [
+        183.0,
+        0,
+        483.4936489621556
+      ],
+      "pitchDeg": 59.99999999999999,
+      "points": [
+        {
+          "side": -1,
+          "cradlePointMm": [
+            -2,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            179.59807621135332,
+            -176.9223933363976,
+            471.6013441167423
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            -2,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -12,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            177.0,
+            -176.9223933363976,
+            473.1013441167423
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            -2,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            174.40192378864668,
+            -176.9223933363976,
+            474.6013441167423
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            4,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            182.59807621135332,
+            -176.9223933363976,
+            476.79749653944896
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            4,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -6,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            180.0,
+            -176.9223933363976,
+            478.29749653944896
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            4,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            177.40192378864668,
+            -176.9223933363976,
+            479.79749653944896
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            10,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            0,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            185.59807621135332,
+            -176.9223933363976,
+            481.9936489621556
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            10,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            0,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            183.0,
+            -176.9223933363976,
+            483.4936489621556
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            10,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            0,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            180.40192378864668,
+            -176.9223933363976,
+            484.9936489621556
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            16,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            6,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            188.59807621135332,
+            -176.9223933363976,
+            487.1898013848622
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            16,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            6,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            186.0,
+            -176.9223933363976,
+            488.6898013848622
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            16,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            6,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            183.40192378864668,
+            -176.9223933363976,
+            490.1898013848622
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            22,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            12,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            191.59807621135332,
+            -176.9223933363976,
+            492.38595380756885
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            22,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            12,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            189.0,
+            -176.9223933363976,
+            493.88595380756885
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            22,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            12,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            186.40192378864668,
+            -176.9223933363976,
+            495.38595380756885
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            -2,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            179.59807621135332,
+            176.9223933363976,
+            471.6013441167423
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            -2,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -12,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            177.0,
+            176.9223933363976,
+            473.1013441167423
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            -2,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            174.40192378864668,
+            176.9223933363976,
+            474.6013441167423
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            4,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            182.59807621135332,
+            176.9223933363976,
+            476.79749653944896
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            4,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -6,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            180.0,
+            176.9223933363976,
+            478.29749653944896
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            4,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            177.40192378864668,
+            176.9223933363976,
+            479.79749653944896
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            10,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            0,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            185.59807621135332,
+            176.9223933363976,
+            481.9936489621556
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            10,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            0,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            183.0,
+            176.9223933363976,
+            483.4936489621556
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            10,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            0,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            180.40192378864668,
+            176.9223933363976,
+            484.9936489621556
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            16,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            6,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            188.59807621135332,
+            176.9223933363976,
+            487.1898013848622
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            16,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            6,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            186.0,
+            176.9223933363976,
+            488.6898013848622
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            16,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            6,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            183.40192378864668,
+            176.9223933363976,
+            490.1898013848622
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            22,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            12,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            191.59807621135332,
+            176.9223933363976,
+            492.38595380756885
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            22,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            12,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            189.0,
+            176.9223933363976,
+            493.88595380756885
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            22,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            12,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            186.40192378864668,
+            176.9223933363976,
+            495.38595380756885
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "state": "handoff",
+      "noteLongitudinalOffsetMm": 20,
+      "noteCenterWorldMm": [
+        188.0,
+        0,
+        492.153903
+      ],
+      "pitchDeg": 59.99999999999999,
+      "points": [
+        {
+          "side": -1,
+          "cradlePointMm": [
+            8,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            184.59807621135332,
+            -176.9223933363976,
+            480.26159815458675
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            8,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -12,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            182.0,
+            -176.9223933363976,
+            481.76159815458675
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            8,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            179.40192378864668,
+            -176.9223933363976,
+            483.26159815458675
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            14,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            187.59807621135332,
+            -176.9223933363976,
+            485.4577505772934
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            14,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -6,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            185.0,
+            -176.9223933363976,
+            486.9577505772934
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            14,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            182.40192378864668,
+            -176.9223933363976,
+            488.4577505772934
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            20,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            0,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            190.59807621135332,
+            -176.9223933363976,
+            490.653903
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            20,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            0,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            188.0,
+            -176.9223933363976,
+            492.153903
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            20,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            0,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            185.40192378864668,
+            -176.9223933363976,
+            493.653903
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            26,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            6,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            193.59807621135332,
+            -176.9223933363976,
+            495.85005542270665
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            26,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            6,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            191.0,
+            -176.9223933363976,
+            497.35005542270665
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            26,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            6,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            188.40192378864668,
+            -176.9223933363976,
+            498.85005542270665
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            32,
+            -176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            12,
+            -176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            196.59807621135332,
+            -176.9223933363976,
+            501.0462078454133
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            32,
+            -176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            12,
+            -176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            194.0,
+            -176.9223933363976,
+            502.5462078454133
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": -1,
+          "cradlePointMm": [
+            32,
+            -176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            12,
+            -176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            191.40192378864668,
+            -176.9223933363976,
+            504.0462078454133
+          ],
+          "inwardNormalCradle": [
+            0,
+            1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            8,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            184.59807621135332,
+            176.9223933363976,
+            480.26159815458675
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            8,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -12,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            182.0,
+            176.9223933363976,
+            481.76159815458675
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            8,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -12,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            179.40192378864668,
+            176.9223933363976,
+            483.26159815458675
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            14,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            187.59807621135332,
+            176.9223933363976,
+            485.4577505772934
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            14,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            -6,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            185.0,
+            176.9223933363976,
+            486.9577505772934
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            14,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            -6,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            182.40192378864668,
+            176.9223933363976,
+            488.4577505772934
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            20,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            0,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            190.59807621135332,
+            176.9223933363976,
+            490.653903
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            20,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            0,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            188.0,
+            176.9223933363976,
+            492.153903
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            20,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            0,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            185.40192378864668,
+            176.9223933363976,
+            493.653903
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            26,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            6,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            193.59807621135332,
+            176.9223933363976,
+            495.85005542270665
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            26,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            6,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            191.0,
+            176.9223933363976,
+            497.35005542270665
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            26,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            6,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            188.40192378864668,
+            176.9223933363976,
+            498.85005542270665
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            32,
+            176.9223933363976,
+            -3
+          ],
+          "noteRelativePointMm": [
+            12,
+            176.9223933363976,
+            -3
+          ],
+          "worldPointMm": [
+            196.59807621135332,
+            176.9223933363976,
+            501.0462078454133
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            32,
+            176.9223933363976,
+            0
+          ],
+          "noteRelativePointMm": [
+            12,
+            176.9223933363976,
+            0
+          ],
+          "worldPointMm": [
+            194.0,
+            176.9223933363976,
+            502.5462078454133
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "side": 1,
+          "cradlePointMm": [
+            32,
+            176.9223933363976,
+            3
+          ],
+          "noteRelativePointMm": [
+            12,
+            176.9223933363976,
+            3
+          ],
+          "worldPointMm": [
+            191.40192378864668,
+            176.9223933363976,
+            504.0462078454133
+          ],
+          "inwardNormalCradle": [
+            0,
+            -1,
+            0
+          ],
+          "inwardNormalWorld": [
+            0,
+            -1,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "analyticUnclippedFootprintHalfXAtMidheightMm": 17.643886650084205,
+  "analyticFootprintHalfZAtCenterMm": 6.35,
+  "selectedWitnessHalfSpanMm": {
+    "x": 12,
+    "z": 3
+  },
+  "nominalIndentationPerSideMm": 0.8776066636024211,
+  "acceptance": false,
+  "limits": [
+    "Points lie on native authored belt planar face and inside undeformed nominal NOTE, representing a possible compressed footprint, not measured contact pressures",
+    "Inward normals verified by inside/outside material samples; no lateral recentering model",
+    "15 witnesses per side are not15 independent full-normal-force contacts; allocate one side total preload across them",
+    "Tangential forces need friction limits and finite motor/belt response; no perfect attachment or retention inferred",
+    "Three longitudinal offsets and three prescribed CAD poses only; no dynamic path or contact persistence proof",
+    "Yaw, wear, actual foam stiffness, preload distribution and contact damage unknown"
+  ]
+}
