@@ -13,3 +13,5 @@ sim/mujoco/** -text
 
 # Maple runtime receipts preserve exact executed source bytes.
 sim/maple/** -text
+
+tools/blockout/** -text
