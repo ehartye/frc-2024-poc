@@ -3,7 +3,7 @@
   "image": "cad/assembly/connected-floor.png",
   "imageSha256": "e17417934f3fc0ac5ec21908c1349d1555065f7f6aa096b0feb4adc6dd4e6ed4",
   "originalStep": "cad/assembly/connected-floor.step",
-  "originalStepSha256": "fa89042658cc226275982acf9f71e18ba56738b7d0b26cc167cc4b82039cf8ac",
+  "originalStepSha256": "b8be3c2603a968a14bc1552d8c33024327a4e927c263fdd5c8caf37cc24282ab",
   "buildReceiptSha256": "b6426dfa333f205b30923402328ceab7a86a8a05508f589a3492a327271c7efe",
   "sourceInputs": {
     "cad/assembly/build_robot.py": "651b21a2d98ec3a251ca9d8b7170f1d6ad29c08a7479079cec837527f179706b",
@@ -36,5 +36,12 @@
     "cad/assembly/build_connected_candidate.py": "19356d26a59b7b22a9a4eaed106c9cfd5d9f57774d682e0bd100711348a5ea69",
     "cad/assembly/slide_pad_attachments.py": "526310777f96f0f537844946c611b05f7e7dc80119a75d308f043832aa7ed7ef"
   },
-  "scope": "original authored geometry plus source-sized envelopes; no supplier native geometry redistributed; not fabrication-ready"
+  "scope": "original authored geometry plus source-sized envelopes; no supplier native geometry redistributed; not fabrication-ready",
+  "sourceExportStepSha256": "fa89042658cc226275982acf9f71e18ba56738b7d0b26cc167cc4b82039cf8ac",
+  "publication": {
+    "operation": "LF line endings and trailing space/tab removal only; raw source export preserved",
+    "script": "scripts/publish_connected_cad.py",
+    "scriptSha256": "d4fef34da85bf4ea1c4b253d09a4209d83d62dfd2c2c4f49a1432c41f27b7105",
+    "reopenedRoots": 711
+  }
 }
