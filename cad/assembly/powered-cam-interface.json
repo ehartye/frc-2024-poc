@@ -1,0 +1,74 @@
+{
+  "schema": "powered-cam-interface/1",
+  "adopted": false,
+  "geometrySourcePins": {
+    "cad/assembly/servo_opening_documented_horn.py": "a902cef0c09ebb51839f878aa6354c3d385058d643bd77be2fc922b7a455afac",
+    "cad/assembly/documented-horn-sources.json": "c56e5726a293764e4d3354a0790029f0f5d5cdb0ef29af41b1af417ec7bc271c",
+    "cad/assembly/cassette_opening_cam.py": "7a8cdc5a09e29c05e46980999566c292aa7716ce0bd8d46b42a043837674fd43",
+    "cad/assembly/cassette_spring_law.py": "4b75a9aad20e99b7dccfdbf0126fc8d9ecaf85da319ef62f2add8c1f7c798ee1",
+    "cad/assembly/cassette-opening-source-candidate.json": "912c7771733fef95391721f8197668140b9938c056644a3573844759176b1db5"
+  },
+  "coordinates": {
+    "u": "positive inward cassette travel along negative cradleY, metres",
+    "theta": "independent cam angle about positive cradleX, radians",
+    "gap": "eccentricity*(1-cos(theta))-u; nonnegative when separated",
+    "cadStudyThetaRad": [
+      0,
+      3.141592653589793
+    ],
+    "cassetteStopTravelM": [
+      0,
+      0.0015
+    ]
+  },
+  "contactHypothesis": {
+    "frictionless": true,
+    "normalLaw": "k*max(-gap,0)+c*max(-gap_rate,0) only with positive penetration",
+    "onset": "at gap=0 no spring/dashpot force; integrator resolves later penetration",
+    "calibrated": false
+  },
+  "sourceFacts": [
+    {
+      "url": "https://docs.revrobotics.com/rev-crossover-products/servo/srs.md",
+      "sha256": "fc9bf685b7edeb008643844040ae748fa77ed05082c27b146f5a35f10661d691",
+      "servo": "REV-41-1097 V1",
+      "nominalV": 6,
+      "ratedVoltageRangeV": [
+        4.8,
+        7.4
+      ],
+      "stallTorqueKgCmAt6V": 13.5,
+      "stallCurrentMaxAAt6V": 2,
+      "speedSecondsPer60DegAt6V": 0.13,
+      "defaultRangeDeg": 270,
+      "pulseRangeUs": [
+        500,
+        2500
+      ],
+      "centerPulseUs": 1500,
+      "limits": "Stall/speed data do not identify torque-current-speed law, continuous holding rating or internal controller."
+    },
+    {
+      "url": "https://www.revrobotics.com/content/docs/REV-11-1144-QS.pdf",
+      "sha256": "4df37d2a04661d1b047b3df085860e13a8f5bb8751d5feb3dbac7318c79d7591",
+      "outputV": 6,
+      "aggregateOutputShutdownA": 15,
+      "minimumStartupV": 9,
+      "inputOperatingRangeV": [
+        7,
+        20
+      ],
+      "limits": "No active per-port3A limit, no direct12V servo drive; efficiency/transients unknown."
+    }
+  ],
+  "integrationGates": [
+    "Independent u,udot,theta,thetadot states; no u=commandedAngle assignment",
+    "Cassette mass, servo output/gear inertia and actual torque/current control need named hypotheses or measurement",
+    "Contact forces remain after electrical power loss; never reset positions, momenta or accumulated energy",
+    "LostPWM response/backdrive friction/thermal holding are unknown; do not assume power-off latch or particular coast/brake state",
+    "Add rotor/chassis/cassette reactions once; no duplicate frame wrench",
+    "Spring potential is separate reviewed API, not prescribed NOTE preload",
+    "Account for regulator input power/loss and both servos in shared bus; stall current is not a current clamp",
+    "Custom angular limits/default/continuous mode and physical spline clocking must be verified before command mapping"
+  ]
+}
