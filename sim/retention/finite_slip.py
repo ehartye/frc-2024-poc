@@ -4,6 +4,11 @@ import numpy as np
 from wrench import quintic
 R=pathlib.Path(__file__).resolve().parents[2];sys.path.insert(0,str(R/'cad/assembly'));import extract_retention_patch as src
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+def rotate_shear_history(shear,delta):
+ """Transport tangential spring vectors with the prescribed belt material frame."""
+ co,si=math.cos(delta),math.sin(delta)
+ return shear@np.array([[co,si],[-si,co]])
+
 def simulate(c,geo,scenario):
  c=dict(c)
  if type(c['lockedBelts']) is not bool:raise ValueError('Boolean belt boundary required')
@@ -20,7 +25,7 @@ def simulate(c,geo,scenario):
  elif scenario!='locked-hypothesis':raise ValueError('Scenario')
  dt=c['stepS'];major=c['majorM'];minor=c['minorM'];mass=c['massKg'];inertia=mass*(major**2/2+5*minor**2/8);pitch=c['pitchRad'];tr=c['rotationS'];tl=c['liftS'];stage=c['stageX'];d=geo['noteLongitudinalOffsetMm']/1000
  p=np.array([[v/1000 for v in q['cradlePointMm']] for q in geo['points']]);sides=np.array([q['side'] for q in geo['points']]);shear=np.zeros((len(p),2));K=c['shearStiffnessPerSide']/15;cap=c['mu']*c['normalSideN']/15
- center=np.array([stage+d,minor]);v=np.array([c.get('initialWorldVx',0.),0.]);phi=0.;omega=0.;rotors=np.zeros(2);t=0.;trace=[];tick=0;external=friction=groundheat=0.;maxres=0.;maxpenetration=0.;maxhold=0.;outcome='WITHIN_NOMINAL_PATCH_DOMAIN_HORIZON'
+ center=np.array([stage+d,minor]);v=np.array([c.get('initialWorldVx',0.),0.]);phi=0.;omega=0.;rotors=np.zeros(2);t=0.;trace=[];tick=0;external=friction=groundheat=0.;maxres=0.;maxpenetration=0.;maxhold=0.;outcome='WITHIN_NOMINAL_PATCH_DOMAIN_HORIZON';previous_theta=0.
  while t<tr+tl-1e-10:
   if t<=tr:
    q,dq,ddq=quintic(t,tr);theta=pitch*q;tw=pitch*dq;zc=minor+major*math.sin(theta);vz=major*math.cos(theta)*tw
@@ -33,6 +38,7 @@ def simulate(c,geo,scenario):
   if len(lost):outcome='NOMINAL_FOOTPRINT_DOMAIN_LOST';break
   body_v=v+np.column_stack((-omega*offset[:,1],omega*offset[:,0]));belt_axis=np.array([co,si]);material_v=cradle_v.copy()
   for index,side in enumerate([-1,1]):material_v[sides==side]+=c['beltRadiusM']*rotors[index]*belt_axis
+  shear=rotate_shear_history(shear,theta-previous_theta);previous_theta=theta
   relative=material_v-body_v;trial=shear+dt*relative;mag=np.linalg.norm(trial,axis=1);factor=np.minimum(1.,cap/(K*np.maximum(mag,1e-30)));new_s=trial*factor[:,None];forces=K*new_s;plastic=trial-new_s;friction+=float(np.sum(forces*plastic));shear=new_s
   for index,side in enumerate([-1,1]):
    torque=-c['beltRadiusM']*float(np.sum(forces[sides==side]@belt_axis));maxhold=max(maxhold,abs(torque))

@@ -1,7 +1,14 @@
 import pathlib,json,hashlib,sys,unittest,math
 R=pathlib.Path(__file__).resolve().parents[1];H=R/'sim/retention';sys.path.insert(0,str(H));import finite_slip as f
+import numpy as np
 class FiniteSlip(unittest.TestCase):
  def setUp(self):self.r=json.loads((H/'finite-slip-evidence.json').read_text());self.c={x['scenario']:x for x in self.r['cases']}
+ def test_prestressed_zero_slip_corotation(self):
+  history=np.array([[.001,0.],[0.,-.002]])
+  rotated=f.rotate_shear_history(history,math.pi/2)
+  np.testing.assert_allclose(rotated,[[0.,.001],[.002,0.]],atol=1e-15)
+  self.assertAlmostEqual(float(np.sum(history**2)),float(np.sum(rotated**2)))
+  np.testing.assert_allclose(f.rotate_shear_history(rotated,-math.pi/2),history,atol=1e-15)
  def test_source_closure(self):
   for p,h in self.r['inputs'].items():self.assertEqual(hashlib.sha256((R/p).read_bytes()).hexdigest(),h,p)
  def test_free_note_not_ideal_attachment(self):
