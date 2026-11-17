@@ -1,0 +1,18 @@
+{
+  "jdkRelease": "jdk-17.0.21+9",
+  "artifacts": [
+    {
+      "file": "temurin17.zip",
+      "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_windows_hotspot_17.0.21_9.zip",
+      "sha256": "98518ecf554465057ee5509462631deeee374bc368c12a411d225cd29381f84b",
+      "bytes": 191117380
+    },
+    {
+      "file": "gradle-8.14.3-bin.zip",
+      "url": "https://services.gradle.org/distributions/gradle-8.14.3-bin.zip",
+      "sha256": "bd71102213493060956ec229d946beee57158dbd89d0e62b91bca0fa2c5f3531",
+      "bytes": 137393837
+    }
+  ],
+  "isolation": "module .tools and .gradle-home only; no global settings"
+}

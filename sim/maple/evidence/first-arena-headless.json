@@ -1,0 +1,49 @@
+{
+  "schema" : "maple-2024-arena-harness/1",
+  "mapleCommit" : "1b1e8ea7278de01d40a5ea14dffbaaf13381512a",
+  "cases" : [ {
+    "case" : "free_drive",
+    "xM" : 6.077903778367738,
+    "yM" : 2.0,
+    "yawRad" : 0.0,
+    "speedMps" : 2.2366512130288907,
+    "forceWorkJ" : 150.65190435964527,
+    "bodies" : 21
+  }, {
+    "case" : "left_wall",
+    "xM" : 0.4446754172752742,
+    "yM" : 2.0058530792172458,
+    "yawRad" : -3.1396471401066828,
+    "speedMps" : 7.547124014738417E-18,
+    "forceWorkJ" : 125.42829402355547,
+    "bodies" : 21
+  }, {
+    "case" : "blue_stage_post",
+    "xM" : 2.779168081771554,
+    "yM" : 4.100021786653318,
+    "yawRad" : -1.3836464380318986E-5,
+    "speedMps" : 1.77501488298284E-18,
+    "forceWorkJ" : 108.3716562608141,
+    "bodies" : 21
+  }, {
+    "rightX" : 7.922661417751614,
+    "case" : "shared_note",
+    "noteX" : 7.303967918018813,
+    "leftX" : 6.684132937599651,
+    "noteCount" : 1
+  }, {
+    "bodies" : 31,
+    "handlers" : 5,
+    "notes" : 11,
+    "case" : "fresh_world_reset"
+  }, {
+    "case" : "seeded",
+    "xM" : 1.8371322807786032,
+    "yM" : 2.0,
+    "yawRad" : 0.0,
+    "speedMps" : 0.8407493928431043,
+    "forceWorkJ" : 16.384821734775848,
+    "bodies" : 21
+  } ],
+  "limitations" : [ "Actual upstream Arena2024Crescendo 2D field, not official full CAD geometry.", "Original differential force adapter: fixed12V, ideal rolling-derived motor speed, no wheel rotor/slip state; hypothetical mass/friction/yaw inertia, no mechanism calibration.", "Scoring not accepted: pinned upstream amp/timer/reset defects are documented separately. Fresh-world reset used; upstream reset not qualified.", "Seed covers original scenario generator only; upstream private RNG not seeded, no randomized gyro used.", "No GUI/driver callback/3D mechanism simulation." ]
+}

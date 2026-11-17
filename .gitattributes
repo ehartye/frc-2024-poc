@@ -10,3 +10,6 @@ sim/component-launcher/* -text
 
 # MuJoCo runtime/source receipts and binary meshes retain exact bytes.
 sim/mujoco/** -text
+
+# Maple runtime receipts preserve exact executed source bytes.
+sim/maple/** -text

@@ -1,0 +1,2 @@
+pluginManagement { repositories { gradlePluginPortal(); maven { url 'https://frcmaven.wpi.edu/artifactory/release/' } } }
+rootProject.name='frc-2024-maple-arena'
