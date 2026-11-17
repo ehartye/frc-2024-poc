@@ -23,6 +23,13 @@ class FastGeometryTest(unittest.TestCase):
  def test_deep_and_gradient_tie_parity(self):
   self.compare(dict(note_center=[.01,.0005,0.],resolution=(128,128)))
   args=dict(note_center=[.01,0.,0.],resolution=(128,128));p=ref.prepare(self.c,**args);cell=p['contacts'][0];c=copy.deepcopy(self.c);c['pinch']['beltWidth']=2*(abs(cell['pointWorldM'][2])+cell['penetrationM'])*1000;self.compare(args,c)
+ def test_extreme_separated_scalar_domain_parity(self):
+  for axis in range(3):
+   for sign in [-1,1]:
+    center=[0.,0.,0.];center[axis]=sign*1e308
+    self.compare(dict(note_center=center,resolution=(8,8)))
+  self.compare(dict(note_center=[1e308,0.,0.],cradle_origin=[1e308,0.,0.],resolution=(8,8)))
+  self.compare(dict(note_center=[1e308,0.,0.],cradle_origin=[-1e308,0.,0.],resolution=(8,8)))
  def test_cache_is_immutable(self):
   g=fast.material_grid(.1524,.0254,64,64)
   with self.assertRaises(ValueError):g[0,0]=1.

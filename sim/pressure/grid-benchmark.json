@@ -100,9 +100,9 @@
     "sim/pressure/run_transport.py": "facc4b6b19f08b0298a7efdcfb4649b58650e91e9a0276ccc4f199994d82739e",
     "tests/test_finite_pressure_transport.py": "bc3199c6779bcc428e95ae65ea25db9dac0355530aced37752fe5895d58d54aa",
     "sim/pressure/transport-evidence.json": "2d2d9745a0ff2f2f3b2f8373fd83c0787cf20057a7d2794e5cf8f479e4fdf348",
-    "sim/pressure/fast_geometry.py": "5312a02924a3ebe7cb85e7a61348587d118b5097d3c6cb19ea6d054cfd4b9074",
+    "sim/pressure/fast_geometry.py": "2e433044711d836404c7efb2cac715f105718daa42e9e974239246be723df73e",
     "sim/pressure/benchmark_geometry.py": "7b28aae231143b09c724ebb155f88a9a9cd7d69baf38a1ff6308e8f4e35821c9",
-    "tests/test_pressure_fast_geometry.py": "4b904892ac41bf266524b1ebaabedddc27816488d7295ed23a7638afe29ca230"
+    "tests/test_pressure_fast_geometry.py": "df477559a3aef240eac29ff2e0ab93aacf909ae0973e1bb87b96ed10c069da75"
   },
   "arguments": {
     "note_center": [
@@ -134,9 +134,9 @@
   },
   "python": "3.13.12",
   "numpy": "2.5.3",
-  "scalarSeconds": 13.51186000002781,
-  "coldFastSeconds": 1.3322832999983802,
-  "warmFastSeconds": 0.23112519999267533,
+  "scalarSeconds": 13.491721400001552,
+  "coldFastSeconds": 1.0631356000085361,
+  "warmFastSeconds": 0.21575119998306036,
   "contactBytesSha256": "ecb0b5747c664d884081d7124a0ce219c23fd303853c13b4a6d8dc0f16eb75a9",
   "rateBytesSha256": "75f1b5f79d1985e2ce7e5b13f8f8e2076252a5542cf9a6fad02c8517df0f66f9",
   "contactByteEquality": true,

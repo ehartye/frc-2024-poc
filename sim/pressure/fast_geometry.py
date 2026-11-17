@@ -12,6 +12,10 @@ def prepare(config,*,note_center,note_basis=a.I,cradle_origin=(0.,0.,0.),cradle_
  center=a.vec(note_center);origin=a.vec(cradle_origin);nb=a.basis(note_basis);cb=a.basis(cradle_basis);u=a.scalar(u_positive_m);k=a.scalar(k_area)
  if not 0<=u<=.0015 or k<=0:raise ValueError('source travel and positive penalty density')
  g0=a.belt.geometry(config);major=config['note']['majorRadius']/1000.;tube=config['note']['tubeRadius']/1000.;next(a.material_points(major,tube,*resolution))
+ # Extreme finite inputs must pass scalar transform/mm validation, even if broadphase separates.
+ # Conservative fallback preserves reference exception type/message and cancellation behavior.
+ if max(map(abs,center+origin+[major,tube]))>np.finfo(float).max/1e6:
+  return reference.prepare(config,note_center=center,note_basis=nb,cradle_origin=origin,cradle_basis=cb,u_positive_m=u,k_area=k,resolution=resolution)
  empty=dict(contacts=[],potentialJ=0.,features={},cassetteDirectionWorld=a.mv(cb,[0.,-1.,0.]),resolution=list(resolution),kAreaNpm3=k,acceptance=False)
  boxes=[]
  for side in (-1,1):
