@@ -1,4 +1,5 @@
-import unittest,pathlib,sys,copy
+import unittest,pathlib,sys,copy,tempfile,json
+from unittest.mock import patch
 R=pathlib.Path(__file__).resolve().parents[1];sys.path.insert(0,str(R/'sim/pressure'))
 import run_policy_transition as r
 class PolicyTest(unittest.TestCase):
@@ -11,4 +12,9 @@ class PolicyTest(unittest.TestCase):
  def test_first_finite_brake_step(self):
   p,_=r.load();ctl=r.engage(p,'nominal');cmd,_=r.command(ctl,p,12.,'nominal');v=p.drive.state['vx'];t=p.t;heat=p.energy['driveWinding']+p.energy['driveBrake']
   row=p.step(.001,cmd['driveDemands'],cmd['pinchDemands'],[p.drive.c['massKg']*9.80665/2]*2,modes=cmd['modes']);self.assertGreater(row['chassis']['vx'],0);self.assertLess(row['chassis']['vx'],v);self.assertAlmostEqual(p.t,t+.001);self.assertGreater(row['energyJ']['driveWinding']+row['energyJ']['driveBrake'],heat)
+ def test_domain_exit_records_atomic_prefix(self):
+  with tempfile.TemporaryDirectory() as d:
+   out=pathlib.Path(d)/'receipt.json'
+   with patch.object(r.c.factory.r.PressureAcquisition,'step',side_effect=r.DomainExit('synthetic-boundary')):r.run(out)
+   e=json.loads(out.read_text());self.assertEqual(e['outcome'],'UNKNOWN_DOMAIN');self.assertEqual(e['reason'],'synthetic-boundary');self.assertEqual(e['startCheckpoint'],e['endCheckpoint']);self.assertEqual(e['trace'],[])
 if __name__=='__main__':unittest.main()

@@ -3,6 +3,7 @@ import copy,json,pathlib,sys,time,math
 import checkpoint as c
 import run_continuation as previous
 from speed_approach import SpeedApproach,observe
+from free_planar import DomainExit
 R=c.R
 SOURCE='sim/pressure/continuation-100ms-evidence.json'
 FILES=['sim/pressure/run_policy_transition.py','sim/integrated/speed_approach.py','tests/test_pressure_policy_transition.py']
@@ -31,17 +32,22 @@ def run(output,scenario='nominal',duration=.1,dt=.001):
  p,pins=load();initial=c.export(p);controller=engage(p,scenario);rows=[];events=[];status='HORIZON';reason=None;bus=12.;started=time.perf_counter();inherited=initial['diagnostics']['residualJ']
  # Initial bus observation is the archived last solved bus, not an invented source voltage.
  bus=json.loads((R/SOURCE).read_text())['trace'][-1]['busV']
+ last_query=None;original_geometry=p.geometry
+ def observed_geometry(q):
+  nonlocal last_query
+  result=original_geometry(q);last_query=dict(relativeRobotXY=list(q),status=result['status']);return result
+ p.geometry=observed_geometry
  for i in range(round(duration/dt)):
   if i%round(.01/dt)==0:
    cmd,obs=command(controller,p,bus,scenario);events.append(dict(timeS=p.t,command=copy.deepcopy(cmd),observation=obs))
   before=c.export(p)
   try:row=p.step(dt,cmd['driveDemands'],cmd['pinchDemands'],[p.drive.c['massKg']*9.80665/2]*2,modes=cmd['modes'])
-  except ValueError as error:
+  except (ValueError,DomainExit) as error:
    if c.export(p)!=before:raise AssertionError('non-atomic rejection')
    status='UNKNOWN_DOMAIN';reason=str(error);break
   bus=row['busV'];row['command']=copy.deepcopy(cmd);row['newPhaseResidualJ']=row['energyJ']['residual']-inherited;rows.append(row)
  if any(c.factory.r.sha(R/f)!=h for f,h in pins.items()):raise ValueError('changed source')
- result=dict(schema='pressure-policy-transition/1',inputs=pins,scenario=scenario,startCheckpoint=initial,endCheckpoint=c.export(p),stepS=dt,durationS=duration,controllerPeriodS=.01,events=events,trace=rows,outcome=status,reason=reason,runtimeSeconds=time.perf_counter()-started,acceptance=False,limits=['Controller initializes at.68s; physical state and cumulative energy are not reset.','Unchanged SpeedApproach with virtual exact observations; goal.185m is a controller hypothesis.','Brake is modeled motor dissipation; zero pinch command is coast, not instant stopping.','Same pressure source lineage; correction14b55ca is not silently adopted or historical receipts repinned.','No capture, retention, lift or calibrated hardware claim.'])
+ result=dict(schema='pressure-policy-transition/1',inputs=pins,scenario=scenario,startCheckpoint=initial,endCheckpoint=c.export(p),stepS=dt,durationS=duration,controllerPeriodS=.01,events=events,trace=rows,outcome=status,reason=reason,lastGeometryQuery=last_query,runtimeSeconds=time.perf_counter()-started,acceptance=False,limits=['Controller initializes at.68s; physical state and cumulative energy are not reset.','Unchanged SpeedApproach with virtual exact observations; goal.185m is a controller hypothesis.','Brake is modeled motor dissipation; zero pinch command is coast, not instant stopping.','Same pressure source lineage; correction14b55ca is not silently adopted or historical receipts repinned.','No capture, retention, lift or calibrated hardware claim.'])
  output.parent.mkdir(parents=True,exist_ok=True);tmp=output.with_suffix('.tmp');tmp.write_text(json.dumps(result,indent=2,allow_nan=False)+'\n',encoding='utf-8',newline='\n');tmp.replace(output)
  print(json.dumps(dict(scenario=scenario,outcome=status,reason=reason,timeS=p.t,note=p.note,chassis=p.drive.state,energy=c.diagnostics(p),newPhaseResidualJ=c.diagnostics(p)['residualJ']-inherited,runtime=result['runtimeSeconds'])),flush=True)
 if __name__=='__main__':run(pathlib.Path(sys.argv[1]),sys.argv[2] if len(sys.argv)>2 else 'nominal')
