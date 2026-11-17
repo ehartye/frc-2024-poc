@@ -6,4 +6,7 @@ class Headroom(unittest.TestCase):
   config=json.loads((R/'sim/drivetrain/config.json').read_text());p=m.fresh.c.factory.r.drive_source.DrivePlant(config);p.state['vx']=.25;p.state['wheel']=[.25/config['wheelRadiusM']]*2;s=copy.deepcopy(p.state)
   a=m.project(config,s,.001);b=m.project(config,s,.0005)
   self.assertEqual(s,p.state);self.assertEqual(a['outcome'],'LOW_SPEED_OBSERVATION');self.assertGreater(a['travelXM'],0);self.assertLess(a['travelXM'],.1);self.assertLess(abs(a['travelXM']-b['travelXM']),1e-5);self.assertLess(b['energyJ']['kinetic'],b['initialKineticJ'])
+ def test_portable_report_paths(self):
+  r=m.compare(R/'sim/pressure/fresh-rest-firstcontact-100ms-PARTIAL.json')
+  self.assertTrue(all('\\' not in key for key in r['inputs']))
 if __name__=='__main__':unittest.main()

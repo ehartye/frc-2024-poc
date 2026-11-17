@@ -14,7 +14,7 @@ def project(config,state,dt=.0005):
  if state!=original:raise ValueError('source state mutated')
  return dict(outcome=outcome,thresholdMps=THRESHOLD_MPS,stepS=dt,durationS=p.state['t']-start['t'],travelXM=p.state['x']-start['x'],finalState=p.state,energyJ=last['energyJ'],initialKineticJ=p.initial_kinetic,acceptance=False,limits=['Separate counterfactual starts with actual drive state and local energy reference; not injected into acquisition.','No NOTE force/reaction, no controller latency or uncertain material/load allowance; NOT conservative fullrobot stopping bound.','Same declared drivetrain brake/current/tire/drag/rotor equations; no fit to coast endpoint and no controller retuning.','Threshold is a kinematic observation, not stopped/captured/lift-ready acceptance.'])
 def compare(candidate_path):
- config=json.loads((R/'sim/drivetrain/config.json').read_text());files=[fresh.BASELINE,str(candidate_path.relative_to(R))];rows=[];pins={f:fresh.c.factory.r.sha(R/f) for f in FILES+files}
+ config=json.loads((R/'sim/drivetrain/config.json').read_text());files=[fresh.BASELINE,candidate_path.relative_to(R).as_posix()];rows=[];pins={f:fresh.c.factory.r.sha(R/f) for f in FILES+files}
  for f in files:
   report=json.loads((R/f).read_text())
   if any(fresh.c.factory.r.sha(R/name)!=h for name,h in report['inputs'].items()):raise ValueError('trajectory source mismatch')
