@@ -44,6 +44,8 @@ For one fresh, strictly registered chain, run `python sim/integrated/run_current
 
 These are separate reproducible commands: the pilot validates and uses the committed indexed checkpoint, not the output path of the preceding command. A single continuous mission runner is still unfinished. With finite gravity-feedforward commands the cradle sags slightly and the free NOTE drops; it is not attached or successfully lifted. The retained coast control stops on an unsupported tiny-negative-pitch guide-domain boundary, not a confirmed collision. Contact stiffness, mechanism mass/inertia and current normal-force budgets are explicit hypotheses. This pilot does not adopt the new spring-cassette candidate or transfer historical launcher results.
 
+The separate [finite-command envelope study](sim/integrated/coupled_lift_sweep_README.md) extends seven predeclared cases to 25 ms using a reviewed separation-only guide gate. It preserves unsupported contact boundaries and shows the cradle and NOTE moving independently, not successful retention. The one-command chain above intentionally retains its original 10 ms pilot.
+
 ## Run the retained legacy A2 slice
 
 Requires existing Python 3 with NumPy, PowerShell, JDK 17 and a populated Gradle/WPILib cache. Toolchain is pinned to Gradle 8.11, GradleRIO/WPILib 2026.2.1 and JUnit 5.10.1. This models the 2024 game using the 2026 desktop toolchain, not a historical robot deployment.
