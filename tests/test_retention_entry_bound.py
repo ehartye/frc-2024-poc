@@ -1,10 +1,16 @@
-import pathlib,sys,unittest
+import pathlib,sys,unittest,json,hashlib
 R=pathlib.Path(__file__).resolve().parents[1];sys.path.insert(0,str(R/'sim/integrated'))
 from retention_entry_bound import static_bound
 class Bound(unittest.TestCase):
  def test_current_preload_is_not_old_retention_budget(self):
   r=static_bound([1.7552133272048422]*2,.6,.235)
   self.assertFalse(r['necessaryStaticConditionMet']);self.assertAlmostEqual(r['marginN'],-.1983067573541893)
+ def test_bound_receipt_preserves_actual_state(self):
+  r=json.loads((R/'sim/integrated/evidence/retention-entry-bound.json').read_text())
+  for p,h in r['inputs'].items():self.assertEqual(hashlib.sha256((R/p).read_bytes()).hexdigest(),h,p)
+  a=json.loads((R/'sim/integrated/evidence/speed-approach-nominal.json').read_text())['final']
+  self.assertEqual(r['preservedState'],dict(chassis=a['chassis'],note=a['note']))
+  self.assertFalse(r['bound']['necessaryStaticConditionMet']);self.assertFalse(r['acceptance'])
  def test_positive_sum_is_not_acceptance(self):
   r=static_bound([10.,10.],.6,.235);self.assertTrue(r['necessaryStaticConditionMet']);self.assertFalse(r['retentionAccepted'])
  def test_invalid_and_missing_side(self):
