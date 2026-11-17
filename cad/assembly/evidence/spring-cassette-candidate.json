@@ -31,7 +31,8 @@
     "cad/assembly/build_connected_candidate.py": "19356d26a59b7b22a9a4eaed106c9cfd5d9f57774d682e0bd100711348a5ea69",
     "cad/assembly/slide_pad_attachments.py": "526310777f96f0f537844946c611b05f7e7dc80119a75d308f043832aa7ed7ef",
     "cad/assembly/spring_cassette_candidate.py": "ecacae7a4e9c1912db502aaa16e84b3f433033e480a5efe7e05cc5ebfdf61e78",
-    "cad/assembly/check_spring_cassette.py": "c45a7080bad57d3bca03c3c5bd1bfa3e0c9749888f63f5ea9fb85aab41e583b8"
+    "cad/assembly/check_spring_cassette.py": "d42589a517ffa594f440c0af628d2b8a9c42075cb3bbec5740e885c15fc98a81",
+    "cad/assembly/audit_cartridge_interfaces.py": "44e8edfcecfd3afd38c8ed91ea153654d4bffe2579096dafd533d318e02af21f"
   },
   "config": {
     "side": 1,
@@ -493,7 +494,7 @@
     "Current belt centers/pulleys/motor move as one registered cassette; baseline gap applies only atzero travel",
     "All raw conflicts retained, including inherited drive-envelope engagement",
     "Pivot-shaft torque clamp, guide retention/fastening, spring calibration and assembly access remain unresolved",
-    "No force acceptance, tolerance/load proof or physical capture; baseline \u00c2\u00b15mm witnesses do not transfer to narrowed gap",
+    "No force acceptance, tolerance/load proof or physical capture; baseline \u00c3\u201a\u00c2\u00b15mm witnesses do not transfer to narrowed gap",
     "Threeposes and three travel samples, not continuous combined sweep",
     "Bearing seat94ab67d not adopted; canonical inherited representations remain"
   ]

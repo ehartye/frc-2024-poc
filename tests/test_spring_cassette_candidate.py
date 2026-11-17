@@ -5,6 +5,14 @@ class CassetteCandidate(unittest.TestCase):
  def test_final_source_pins(self):
   for file in ['spring-cassette-candidate.json','spring-cassette-native-feed.json']:
    for name,digest in read(file)['inputs'].items():self.assertEqual(hashlib.sha256((ROOT/name).read_bytes()).hexdigest(),digest,name)
+ def test_decisive_mount_dependencies(self):
+  expected={'cad/assembly/check_spring_cassette.py','cad/assembly/audit_cartridge_interfaces.py','cad/assembly/spring_cassette_candidate.py','cad/assembly/build_connected_candidate.py'}
+  pins=read('spring-cassette-candidate.json')['inputs']
+  self.assertTrue(expected.issubset(pins))
+  missing=dict(pins);missing.pop('cad/assembly/audit_cartridge_interfaces.py')
+  self.assertFalse(expected.issubset(missing))
+  c=json.loads((ROOT/'cad/assembly/spring-cassette-travel-contract.json').read_text())
+  self.assertEqual(c['inputs'],pins)
  def test_only_inherited_proxy_contacts(self):
   r=read('spring-cassette-candidate.json');self.assertEqual(len(r['samples']),9)
   for s in r['samples']:
