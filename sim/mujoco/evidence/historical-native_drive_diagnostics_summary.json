@@ -1,0 +1,235 @@
+{
+  "schema": "native-drive-diagnostic-summary/1",
+  "files": {
+    "native_drive.py": "af1a0e679ac7e4db8d9d8b82b02623f2eb9f352fca87bab3daad37c1311a4343",
+    "native_drive_diagnostics.py": "811b346373ee6924d7cb042bab8927facb50cbeb94dbdee4d2fc535f190a0a1c",
+    "native_drive_diagnostics_result.json": "b55e1e6716142af40b1541cc87487c7ea6fa08b48ec8fb07a28eda3a02c0c470",
+    "native_drive_diagnostics_inertia.py": "c0bb239b91446749a9abbab711fface6e078b668067e01a130bb7097e9d26292",
+    "native_drive_diagnostics_inertia_result.json": "2c6052d4c70b4d3bdad0dd902d410edabb5ec128b8711d8a45437433485d66f8",
+    "native_drive_diagnostics_replay.py": "7068c817f60c4c681b24ed0ca293e1371b1b5f75b5fff56fdf57e6070c0361d9",
+    "native_drive_diagnostics_inertia_replay.py": "260cf6846c5ded8f3e30853cc32b4ecfbc8d6ac6c161bc038952aca0b19663cd",
+    "test_native_drive_diagnostics.py": "bb3c60265c2ccce776f7a4e059dbf41de741df1fa1ef373c00be4585e98e102c"
+  },
+  "cases": [
+    {
+      "inertia": "distributed",
+      "cone": "pyramidal",
+      "dt": 0.00025,
+      "summary": {
+        "normalImpulseNs": 43.93892735566111,
+        "verticalConstraintImpulseNs": 43.93892735566111,
+        "normalTrapezoidImpulseNs": 43.96424184977487,
+        "weightImpulseNs": 44.129925,
+        "verticalMomentumChangeNs": -0.19099764433887093,
+        "impulseBalanceResidualNs": -2.1843638009499955e-14,
+        "normalMeanN": 439.3892735566112,
+        "normalMinN": 0.0,
+        "normalMaxN": 640.8071824796382,
+        "zeroSupportFraction": 0.1175,
+        "zMinM": -0.0010043389346456875,
+        "zMaxM": -0.0009991685875249477,
+        "vzMinMps": -0.0046952983445198385,
+        "vzMaxMps": 0.003443278345534493,
+        "finalYawRad": 0.045094879310136456,
+        "finalNormalN": 644.8280489518504,
+        "finalZ": -0.001001057048378734,
+        "finalVz": -0.004243602585961009
+      }
+    },
+    {
+      "inertia": "distributed",
+      "cone": "pyramidal",
+      "dt": 0.000125,
+      "summary": {
+        "normalImpulseNs": 44.206320093244734,
+        "verticalConstraintImpulseNs": 44.206320093244734,
+        "normalTrapezoidImpulseNs": 44.178668320125034,
+        "weightImpulseNs": 44.129925,
+        "verticalMomentumChangeNs": 0.0763950932447494,
+        "impulseBalanceResidualNs": -1.5029644195863057e-14,
+        "normalMeanN": 442.06320093244744,
+        "normalMinN": 0.0,
+        "normalMaxN": 601.77360618302,
+        "zeroSupportFraction": 0.11,
+        "zMinM": -0.001004341099146922,
+        "zMaxM": -0.0009997580791414266,
+        "vzMinMps": -0.002256083663224643,
+        "vzMaxMps": 0.0018603677321105446,
+        "finalYawRad": 0.04503829298822434,
+        "finalNormalN": 0.0,
+        "finalZ": -0.0009999115197384342,
+        "finalVz": 0.0016984582492305539
+      }
+    },
+    {
+      "inertia": "distributed",
+      "cone": "pyramidal",
+      "dt": 6.25e-05,
+      "summary": {
+        "normalImpulseNs": 44.06264588680837,
+        "verticalConstraintImpulseNs": 44.06264588680837,
+        "normalTrapezoidImpulseNs": 44.06740142101628,
+        "weightImpulseNs": 44.129925,
+        "verticalMomentumChangeNs": -0.06727911319159173,
+        "impulseBalanceResidualNs": -3.953781746446339e-14,
+        "normalMeanN": 440.626458868084,
+        "normalMinN": 0.0,
+        "normalMaxN": 584.3859070201895,
+        "zeroSupportFraction": 0.11125,
+        "zMinM": -0.0010043416649444324,
+        "zMaxM": -0.0009998960251182422,
+        "vzMinMps": -0.001494301893799249,
+        "vzMaxMps": 0.0012500388651852036,
+        "finalYawRad": 0.045008570891872546,
+        "finalNormalN": 594.6347341805105,
+        "finalZ": -0.0010000921390850201,
+        "finalVz": -0.001494301893799249
+      }
+    },
+    {
+      "inertia": "distributed",
+      "cone": "elliptic",
+      "dt": 0.00025,
+      "summary": {
+        "normalImpulseNs": 44.13611889372533,
+        "verticalConstraintImpulseNs": 44.13611889372533,
+        "normalTrapezoidImpulseNs": 44.15360998342955,
+        "weightImpulseNs": 44.129925,
+        "verticalMomentumChangeNs": 0.006193893725354789,
+        "impulseBalanceResidualNs": -2.315508895733842e-14,
+        "normalMeanN": 441.3611889372535,
+        "normalMinN": 0.0,
+        "normalMaxN": 655.3585980458001,
+        "zeroSupportFraction": 0.125,
+        "zMinM": -0.0010050009761640802,
+        "zMaxM": -0.0009992431003962893,
+        "vzMinMps": -0.004574683598164954,
+        "vzMaxMps": 0.003317446609402074,
+        "finalYawRad": 0.04492575255003314,
+        "finalNormalN": 574.2768267047511,
+        "finalZ": -0.0010002515864672747,
+        "finalVz": 0.00013843159324400693
+      }
+    },
+    {
+      "inertia": "distributed",
+      "cone": "elliptic",
+      "dt": 0.000125,
+      "summary": {
+        "normalImpulseNs": 44.0995090349686,
+        "verticalConstraintImpulseNs": 44.0995090349686,
+        "normalTrapezoidImpulseNs": 44.07235118451778,
+        "weightImpulseNs": 44.129925,
+        "verticalMomentumChangeNs": -0.030415965031386945,
+        "impulseBalanceResidualNs": -1.5036583089766964e-14,
+        "normalMeanN": 440.99509034968605,
+        "normalMinN": 0.0,
+        "normalMaxN": 615.8066392858601,
+        "zeroSupportFraction": 0.1225,
+        "zMinM": -0.0010049827745150024,
+        "zMaxM": -0.0009996024887121608,
+        "vzMinMps": -0.002977227601938026,
+        "vzMaxMps": 0.0023579680929303078,
+        "finalYawRad": 0.04486913102966967,
+        "finalNormalN": 0.0,
+        "finalZ": -0.0009998520637665026,
+        "finalVz": -0.000675120823572476
+      }
+    },
+    {
+      "inertia": "distributed",
+      "cone": "elliptic",
+      "dt": 6.25e-05,
+      "summary": {
+        "normalImpulseNs": 44.13160516530033,
+        "verticalConstraintImpulseNs": 44.13160516530033,
+        "normalTrapezoidImpulseNs": 44.13602712982778,
+        "weightImpulseNs": 44.129925,
+        "verticalMomentumChangeNs": 0.0016801653003484483,
+        "impulseBalanceResidualNs": -2.0008300571916493e-14,
+        "normalMeanN": 441.3160516530035,
+        "normalMinN": 0.0,
+        "normalMaxN": 598.858601131704,
+        "zeroSupportFraction": 0.120625,
+        "zMinM": -0.001004973830651091,
+        "zMaxM": -0.0009999041628714698,
+        "vzMinMps": -0.0014446489638827754,
+        "vzMaxMps": 0.001316810681226234,
+        "finalYawRad": 0.044840356592324875,
+        "finalNormalN": 575.9398760311976,
+        "finalZ": -0.0010001854023583563,
+        "finalVz": 3.812651713275492e-05
+      }
+    },
+    {
+      "inertia": "master-motor",
+      "cone": "pyramidal",
+      "dt": 0.00025,
+      "summary": {
+        "normalRmsN": 471.54169746116384,
+        "normalStdN": 163.38636580118114,
+        "maximumEqualityAngleErrorRad": 2.0682638478489862e-05,
+        "maximumEqualityRateErrorRadps": 0.005519081616663701,
+        "contactCounts": [
+          0,
+          4
+        ],
+        "normalImpulseNs": 44.23307223275797,
+        "verticalMomentumChangeNs": 0.1031472327579682,
+        "impulseBalanceResidualNs": 1.0269562977782698e-15,
+        "zeroSupportFraction": 0.1125,
+        "finalYawRad": 0.04512387280401034,
+        "finalNormalN": 0.0,
+        "finalZ": -0.0009997405791721584,
+        "finalVz": 0.002292950238413194
+      }
+    },
+    {
+      "inertia": "master-motor",
+      "cone": "pyramidal",
+      "dt": 0.000125,
+      "summary": {
+        "normalRmsN": 470.18187713651463,
+        "normalStdN": 161.59084183345095,
+        "maximumEqualityAngleErrorRad": 1.9398915817890605e-05,
+        "maximumEqualityRateErrorRadps": 0.0037959753185092815,
+        "contactCounts": [
+          0,
+          4
+        ],
+        "normalImpulseNs": 44.154206755775036,
+        "verticalMomentumChangeNs": 0.02428175577505725,
+        "impulseBalanceResidualNs": -2.1586898935055387e-14,
+        "zeroSupportFraction": 0.11125,
+        "finalYawRad": 0.045063897318730964,
+        "finalNormalN": 560.0038225152294,
+        "finalZ": -0.0010007983098741142,
+        "finalVz": 0.0005403840832373949
+      }
+    },
+    {
+      "inertia": "master-motor",
+      "cone": "pyramidal",
+      "dt": 6.25e-05,
+      "summary": {
+        "normalRmsN": 469.5639319316722,
+        "normalStdN": 160.20304233371698,
+        "maximumEqualityAngleErrorRad": 1.938337082621998e-05,
+        "maximumEqualityRateErrorRadps": 0.003734689438106578,
+        "contactCounts": [
+          0,
+          4
+        ],
+        "normalImpulseNs": 44.13901577948397,
+        "verticalMomentumChangeNs": 0.009090779483958302,
+        "impulseBalanceResidualNs": 1.111090386363145e-14,
+        "zeroSupportFraction": 0.11,
+        "finalYawRad": 0.04503450410462696,
+        "finalNormalN": 0.0,
+        "finalZ": -0.00099998689622452,
+        "finalVz": 0.00020280683232408502
+      }
+    }
+  ],
+  "interpretation": "Endpoint normal differences reflect persistent contact chatter, not absence of average weight support. Vertical impulse balances momentum; yaw and vertical velocity refinement improve, instantaneous load does not converge pointwise. Elliptic cone does not remove chatter. Master-only reflected motor inertia changes the declared physical distribution and reduces equality drift, not contact chatter. No tire or whole-robot validation."
+}

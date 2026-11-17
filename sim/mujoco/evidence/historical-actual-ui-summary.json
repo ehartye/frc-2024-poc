@@ -1,0 +1,158 @@
+{
+  "schema": "fusion-actual-ui-verification/1",
+  "rawTraceSha256": "e208e6184dc1a30e586d15150e552063f35a33a16449a40226c1cea1a2e9c0a9",
+  "rawTraceBytes": 1640384,
+  "producerStartPins": {
+    "audit/fusion_visual_provenance.py": "79841dba44301b102b26f28700b5d7e5eb9ae85ea1471d892c094d10315fdd88",
+    "audit/fusion_visual_display.py": "d3df8d031b5d196a9d3e3c3687410cdf91f5a266523a75687266372b0149059b",
+    "audit/fusion_visual_drive.py": "72d3689531bb6a2d7c93dcef70a4aae175dcb5d018bcd239bee1775a39f087f4",
+    "audit/verify_fusion_visual_display.py": "92c0f13823ecaca39f34befb05e0258ea23236b21e94828648983816f857dac6",
+    "audit/native_drive_interactive_v3.py": "36998f9af946fb1bead8a21a204803c636da25c8cb42292ca2b8c0f085f45124",
+    "audit/native_drive_interactive.py": "9fe9346e7149612b7282727bd14cca0cceefa20dfa069bd314c780e54218e020",
+    "audit/native_drive.py": "af1a0e679ac7e4db8d9d8b82b02623f2eb9f352fca87bab3daad37c1311a4343",
+    "audit/drivetrain_bridge.py": "bc5c47c3881bfd835516b0e31ac3b80e0f7d562a357806c7cba0a0b38f5fee7a",
+    "audit/requirements-lock.txt": "ae8bbe85c745e97c3a393545aa9ef1eda9bbe52d20f987a57ba1e945793f371d",
+    "robot/sim/drivetrain/config.json": "334a7d02b4968401a10fb829ae838edfbeb7d9a311c13f3e2cbcc47b54748ff4",
+    "robot/sim/drivetrain/plant.py": "3d30f7df18abf6c24cc5c949a308246bb275bea57242128916cee627da561155",
+    "robot/cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749"
+  },
+  "currentPins": {
+    "audit/fusion_visual_provenance.py": "79841dba44301b102b26f28700b5d7e5eb9ae85ea1471d892c094d10315fdd88",
+    "audit/fusion_visual_display.py": "d3df8d031b5d196a9d3e3c3687410cdf91f5a266523a75687266372b0149059b",
+    "audit/fusion_visual_drive.py": "72d3689531bb6a2d7c93dcef70a4aae175dcb5d018bcd239bee1775a39f087f4",
+    "audit/verify_fusion_visual_display.py": "92c0f13823ecaca39f34befb05e0258ea23236b21e94828648983816f857dac6",
+    "audit/native_drive_interactive_v3.py": "36998f9af946fb1bead8a21a204803c636da25c8cb42292ca2b8c0f085f45124",
+    "audit/native_drive_interactive.py": "9fe9346e7149612b7282727bd14cca0cceefa20dfa069bd314c780e54218e020",
+    "audit/native_drive.py": "af1a0e679ac7e4db8d9d8b82b02623f2eb9f352fca87bab3daad37c1311a4343",
+    "audit/drivetrain_bridge.py": "bc5c47c3881bfd835516b0e31ac3b80e0f7d562a357806c7cba0a0b38f5fee7a",
+    "audit/requirements-lock.txt": "ae8bbe85c745e97c3a393545aa9ef1eda9bbe52d20f987a57ba1e945793f371d",
+    "robot/sim/drivetrain/config.json": "334a7d02b4968401a10fb829ae838edfbeb7d9a311c13f3e2cbcc47b54748ff4",
+    "robot/sim/drivetrain/plant.py": "3d30f7df18abf6c24cc5c949a308246bb275bea57242128916cee627da561155",
+    "robot/cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749"
+  },
+  "currentEqualsProducerStart": true,
+  "producerCloseCheck": "The pinned launcher calls verify_inventory before emitting closed; closed is present. No independent end-pin map was logged.",
+  "reducerSha256": "f203638b04be541072825eb655cec44aaf2966f3f4e70c748500cf4a16df0004",
+  "manifestSha256": "1e59db6ff62504c0da795591f4238813c6847e030a34815f28bc2b8dee2f517e",
+  "fusionSha256": "b4e235a5e3e473b507140f3ef50674af559c9a8412acfadf537f4185984d2d50",
+  "summary": {
+    "tickCount": 1862,
+    "callbacks": [
+      {
+        "eventCount": 1,
+        "code": 87,
+        "key": "W",
+        "focused": true
+      },
+      {
+        "eventCount": 2,
+        "code": 83,
+        "key": "S",
+        "focused": true
+      },
+      {
+        "eventCount": 3,
+        "code": 65,
+        "key": "A",
+        "focused": true
+      },
+      {
+        "eventCount": 4,
+        "code": 68,
+        "key": "D",
+        "focused": true
+      },
+      {
+        "eventCount": 5,
+        "code": 67,
+        "key": "C",
+        "focused": true
+      },
+      {
+        "eventCount": 6,
+        "code": 66,
+        "key": "B",
+        "focused": true
+      },
+      {
+        "eventCount": 7,
+        "code": 81,
+        "key": "Q",
+        "focused": true
+      }
+    ],
+    "callbackCount": 7,
+    "acceptedCallbackCount": 7,
+    "commandCounts": {
+      "unfocused": 861,
+      "idle-brake": 976,
+      "drive": 14,
+      "coast": 4,
+      "brake": 6,
+      "quit": 1
+    },
+    "dutyModeCounts": {
+      "[[0.0,0.0],[\"brake\",\"brake\"],\"unfocused\"]": 861,
+      "[[0.0,0.0],[\"brake\",\"brake\"],\"idle-brake\"]": 976,
+      "[[0.3,0.3],[\"drive\",\"drive\"],\"drive\"]": 6,
+      "[[-0.3,-0.3],[\"drive\",\"drive\"],\"drive\"]": 4,
+      "[[-0.5,-0.09999999999999998],[\"drive\",\"drive\"],\"drive\"]": 2,
+      "[[-0.2,0.2],[\"drive\",\"drive\"],\"drive\"]": 1,
+      "[[0.2,-0.2],[\"drive\",\"drive\"],\"drive\"]": 1,
+      "[[0.0,0.0],[\"coast\",\"coast\"],\"coast\"]": 4,
+      "[[0.0,0.0],[\"brake\",\"brake\"],\"brake\"]": 6,
+      "[[0.0,0.0],[\"brake\",\"brake\"],\"quit\"]": 1
+    },
+    "movementExtrema": {
+      "xM": {
+        "min": -0.003799055308414639,
+        "max": 0.07975366858519521
+      },
+      "yM": {
+        "min": -0.0010173527068062286,
+        "max": 0.0
+      },
+      "zJointM": {
+        "min": -0.0012441681112171756,
+        "max": -0.000493397078125001
+      },
+      "yawRad": {
+        "min": -1.363744518371107e-13,
+        "max": 0.018897613480044248
+      }
+    },
+    "finalQpos": [
+      -0.003799055308414639,
+      -0.0010173527068062286,
+      -0.0010043363045638372,
+      0.018897613480040844,
+      -0.12172691993672369,
+      -0.12172691993616029,
+      -0.12172691993672369,
+      0.022364359857555565,
+      0.022364359858119628,
+      0.022364359857555565
+    ],
+    "finalQvel": [
+      -1.7359985762005543e-08,
+      -3.2810135900860113e-10,
+      9.513049208660746e-16,
+      -2.2845852044416183e-14,
+      -2.277273501233186e-07,
+      -2.277302131000196e-07,
+      -2.277273501233157e-07,
+      -2.2772715481057531e-07,
+      -2.277300356130547e-07,
+      -2.27727154810573e-07
+    ],
+    "motorAxleWorkJ": 0.09728234567719561,
+    "simulatedElapsedS": 18.619999999991688,
+    "wallElapsedS": 31.044582500006072,
+    "cumulativeRealTimeFactor": 0.5997825868648111,
+    "gracefulClosedEvent": true
+  },
+  "limits": "Fusion geometry: VISUAL ONLY, mechanisms held at floor. Physics: XYZ/yaw six-wheel drive; fixed12V; hypothetical tires/mass; contact chatter.",
+  "scope": "Actual sampled callback/command/state evidence only. No physical calibration, full mechanism physics, independent Fusion-pose validation, or general performance benchmark. Process exit code and screenshot were observed by coordinator, not encoded by this trace.",
+  "privateReductionSha256": "43bcf0ea3ff82cdd1070d3bcd627ae042f71d23ac37a3a72cf62178725268202",
+  "publicationTransform": "Removed callback wallMonotonic machine-uptime values only. Original compact receipt and raw trace remain privately preserved; all other values unchanged."
+}

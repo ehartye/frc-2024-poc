@@ -1,0 +1,19 @@
+{
+  "schema": "native-wheel-diagnostics-independent-review/1",
+  "files": {
+    "native_drive_diagnostics_summary.json": "4cad8c8b71d416567228a02a3cf2d5a01f26c122d0cbfcdc950054b700d6125c",
+    "native_drive_diagnostics_result.json": "b55e1e6716142af40b1541cc87487c7ea6fa08b48ec8fb07a28eda3a02c0c470",
+    "native_drive_diagnostics_inertia_result.json": "2c6052d4c70b4d3bdad0dd902d410edabb5ec128b8711d8a45437433485d66f8",
+    "native-inertia-independent-replay.json": "b1f2e56976cdd7cb08bafa2c7abfbc4dba01a3f1676b3ef661ebf1ae5848b41c",
+    "test_native_drive_diagnostics.py": "bb3c60265c2ccce776f7a4e059dbf41de741df1fa1ef373c00be4585e98e102c"
+  },
+  "testsPassed": 3,
+  "freshReplay": "All three master-motor-inertia variant cases reproduce every physical row and summary exactly. Baseline six-case impulse and continuity recomputed independently; baseline full trajectories not rerun in this review.",
+  "findings": [
+    "Moving reflected motor inertia to actual master hinges preserves per-side total and reduces soft chain equality drift; do not infer physical gearbox calibration.",
+    "Instantaneous contact chatter persists around 11 percent zero-support steps, while integrated vertical impulse balances gravity and momentum.",
+    "Yaw and vertical momentum show refinement, but tire stiffness/contact forces remain uncalibrated.",
+    "Original baseline raw receipt and producer were preserved unchanged."
+  ],
+  "acceptance": false
+}

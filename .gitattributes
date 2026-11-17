@@ -7,3 +7,6 @@ mission/** -text
 
 # Source-bound native/runtime receipts require exact exported bytes.
 sim/component-launcher/* -text
+
+# MuJoCo runtime/source receipts and binary meshes retain exact bytes.
+sim/mujoco/** -text
