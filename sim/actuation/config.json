@@ -1,0 +1,33 @@
+{
+  "geometryContractSha256": "fb0df6e6968c99acf81d5eceac36c32a31b7717c5a29b095937a33b70cb2cbfd",
+  "carriageMassKg": 4.0,
+  "rotatingMassKg": 3.0,
+  "comLocalXZ_M": [
+    0.03,
+    0.04
+  ],
+  "comPitchInertiaKgM2": 0.1,
+  "liftRotorInertiaKgM2": 3e-05,
+  "pitchRotorInertiaKgM2": 3e-05,
+  "liftGearRatio": 12,
+  "liftRadiusM": 0.016399999999999998,
+  "pitchGearRatio": 12,
+  "motorK": 0.01984269420366487,
+  "resistanceOhm": 0.11428571428571428,
+  "currentLimitA": 40.0,
+  "gravityMps2": 9.80665,
+  "assumptions": [
+    "Mass4kg carriage and3kg rotating,COM(.03,.04)m,I=.1kgm2,rotor inertia3e-5 are declared exploratory parameters, not a sourced mass ledger.",
+    "Loose NOTE and base chassis are excluded from these masses. Do not add them onto an unchanged45kg whole-robot hypothesis.",
+    "One reciprocal ideal NEO law per actuator follows existing pinch model; friction, gear efficiency, backlash and chain polygon effects absent.",
+    "Nominal12:1 ratios and16.4mm chain radius are candidate geometry, not verified installed transmission.",
+    "No endstop, collision, sensor, pitch/lift controller or achieved trajectory."
+  ],
+  "motorLawProvenance": {
+    "sourceCommit": "54bac835878ce6946efae706aa92c723f18e57d7",
+    "sourcePath": "sim/acquisition/free-planar-config.json",
+    "snapshot": "sim/actuation/reference-pinch-model.json",
+    "sha256": "8ecb4ca6594ec456e56a79ceb63d222d9824e4985273d6b16a52b9737d166053",
+    "basis": "Existing reciprocal NEO simulation law, not a new motor characterization"
+  }
+}

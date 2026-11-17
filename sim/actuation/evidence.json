@@ -1,0 +1,3515 @@
+{
+  "schema": "finite-actuator-interface/1",
+  "inputs": {
+    "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+    "cad/assembly/intake_components.py": "c6d352be0edba340d340112697d3f2482158b4fb8f3324b0dd3927344f9b43c5",
+    "cad/assembly/lower_support_mounts.py": "1b832dcc91967eab3dcfe40abc585ef1137250fb4e6777b01075a79ebcb1b14d",
+    "cad/assembly/upper_carriage_connections.py": "bbfbdf8b8c5f9356b5f60a3b4ad3d2d94c7f4e8a76db0e64742618173c936032",
+    "cad/assembly/slide_pad_attachments.py": "526310777f96f0f537844946c611b05f7e7dc80119a75d308f043832aa7ed7ef",
+    "sim/actuation/mechanics.py": "c37bc5acc8f8e46b635a8aaa5208334426ff5cb831a9f7d76021ed8b864c359b",
+    "sim/actuation/config.json": "33e9baf58fe653b0a35a36f1eeced112fbfa8d53382567af7a6ad9ebe1110dcf",
+    "sim/actuation/run.py": "53a1191075c232baaf3537b002f3c11ec65c6fd5e1558395e0c0a163f8c20512",
+    "sim/actuation/reference-pinch-model.json": "8ecb4ca6594ec456e56a79ceb63d222d9824e4985273d6b16a52b9737d166053",
+    "cad/assembly/actuator-geometry-contract.json": "fb0df6e6968c99acf81d5eceac36c32a31b7717c5a29b095937a33b70cb2cbfd"
+  },
+  "config": {
+    "geometryContractSha256": "fb0df6e6968c99acf81d5eceac36c32a31b7717c5a29b095937a33b70cb2cbfd",
+    "carriageMassKg": 4.0,
+    "rotatingMassKg": 3.0,
+    "comLocalXZ_M": [
+      0.03,
+      0.04
+    ],
+    "comPitchInertiaKgM2": 0.1,
+    "liftRotorInertiaKgM2": 3e-05,
+    "pitchRotorInertiaKgM2": 3e-05,
+    "liftGearRatio": 12,
+    "liftRadiusM": 0.016399999999999998,
+    "pitchGearRatio": 12,
+    "motorK": 0.01984269420366487,
+    "resistanceOhm": 0.11428571428571428,
+    "currentLimitA": 40.0,
+    "gravityMps2": 9.80665,
+    "assumptions": [
+      "Mass4kg carriage and3kg rotating,COM(.03,.04)m,I=.1kgm2,rotor inertia3e-5 are declared exploratory parameters, not a sourced mass ledger.",
+      "Loose NOTE and base chassis are excluded from these masses. Do not add them onto an unchanged45kg whole-robot hypothesis.",
+      "One reciprocal ideal NEO law per actuator follows existing pinch model; friction, gear efficiency, backlash and chain polygon effects absent.",
+      "Nominal12:1 ratios and16.4mm chain radius are candidate geometry, not verified installed transmission.",
+      "No endstop, collision, sensor, pitch/lift controller or achieved trajectory."
+    ],
+    "motorLawProvenance": {
+      "sourceCommit": "54bac835878ce6946efae706aa92c723f18e57d7",
+      "sourcePath": "sim/acquisition/free-planar-config.json",
+      "snapshot": "sim/actuation/reference-pinch-model.json",
+      "sha256": "8ecb4ca6594ec456e56a79ceb63d222d9824e4985273d6b16a52b9737d166053",
+      "basis": "Existing reciprocal NEO simulation law, not a new motor characterization"
+    }
+  },
+  "cases": [
+    {
+      "name": "powered",
+      "stepS": 0.001,
+      "initial": {
+        "timeS": 0.0,
+        "q": [
+          0.0,
+          0.3,
+          0.2
+        ],
+        "qd": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "externalGeneralizedForce": [
+        0.0,
+        -1.0,
+        0.1
+      ],
+      "trace": [
+        {
+          "state": {
+            "timeS": 0.001,
+            "q": [
+              0.0,
+              0.2999998153144429,
+              0.199998848958803
+            ],
+            "qd": [
+              0.0,
+              -0.00035459018157345327,
+              -0.002305483840202276
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.153549903838812,
+            "motors": [
+              {
+                "omegaRadps": -0.13513577347370054,
+                "currentA": 4.223462756003876,
+                "actualTerminalV": 0.48000000000000004,
+                "busPowerW": 2.0272621228818606,
+                "windingHeatW": 2.038587160154498,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.08380487994795258,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.013812494364192168,
+                "currentA": 1.0523981746412618,
+                "actualTerminalV": 0.11999999999999998,
+                "busPowerW": 0.1262877809569514,
+                "windingHeatW": 0.12657621919865827,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.020882415159901656,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              61.320643864355546,
+              0.25058898191881984
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.31236583747869134,
+          "energyJ": {
+            "terminalWork": 0.002153549903838812,
+            "windingHeat": 0.0021651633793531564,
+            "brakeHeat": 0.0,
+            "externalWork": 6.958143737912265e-08,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.922639037076216,
+            "initial": 21.92265064202614,
+            "residual": 6.105584660076602e-08
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.011000000000000003,
+            "q": [
+              0.0,
+              0.2999829638079722,
+              0.1998599093992833
+            ],
+            "qd": [
+              0.0,
+              -0.002700009141936835,
+              -0.02549191620199785
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.3080702376062785,
+            "motors": [
+              {
+                "omegaRadps": -1.9196969102698236,
+                "currentA": 4.533304639099288,
+                "actualTerminalV": 0.4799999999999999,
+                "busPowerW": 2.175986226767658,
+                "windingHeatW": 2.348668680100472,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.08995297768570251,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.29201155736760687,
+                "currentA": 1.100700090321837,
+                "actualTerminalV": 0.12,
+                "busPowerW": 0.13208401083862042,
+                "windingHeatW": 0.13846179300965714,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.021840855302202512,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              65.81925196514818,
+              0.2620902636264302
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.31379076607380735,
+          "energyJ": {
+            "terminalWork": 0.024635891933872587,
+            "windingHeat": 0.02577166399194951,
+            "brakeHeat": 0.0,
+            "externalWork": 3.027131956151351e-06,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.921517551367373,
+            "initial": 21.92265064202614,
+            "residual": 3.4573264784398816e-07
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.02100000000000001,
+            "q": [
+              0.0,
+              0.2999499769912417,
+              0.19948990160489882
+            ],
+            "qd": [
+              0.0,
+              -0.003755503425494519,
+              -0.04842571120661865
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.3807355839016737,
+            "motors": [
+              {
+                "omegaRadps": -2.7227435541168052,
+                "currentA": 4.672732467719221,
+                "actualTerminalV": 0.48,
+                "busPowerW": 2.242911584505226,
+                "windingHeatW": 2.4953632817002696,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.09271960145248882,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.5675112306100535,
+                "currentA": 1.1485333283037324,
+                "actualTerminalV": 0.12000000000000001,
+                "busPowerW": 0.1378239993964479,
+                "windingHeatW": 0.15075757785422278,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.022789995616248393,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              67.84361081889426,
+              0.2734799473949807
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.3072437848144123,
+          "energyJ": {
+            "terminalWork": 0.04815993618052612,
+            "windingHeat": 0.051609140569869795,
+            "brakeHeat": 0.0,
+            "externalWork": -9.868307517750185e-07,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.91920004224162,
+            "initial": 21.92265064202614,
+            "residual": 4.0856442495851297e-07
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.03100000000000002,
+            "q": [
+              0.0,
+              0.29990972393491505,
+              0.19889344546732815
+            ],
+            "qd": [
+              0.0,
+              -0.004231354865374378,
+              -0.07074588757481669
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.416493372298259,
+            "motors": [
+              {
+                "omegaRadps": -3.0847403682498733,
+                "currentA": 4.735583648467724,
+                "actualTerminalV": 0.4799999999999999,
+                "busPowerW": 2.2730801512645074,
+                "windingHeatW": 2.5629431419011293,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.09396673821242064,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.8357746111453702,
+                "currentA": 1.1951101752812643,
+                "actualTerminalV": 0.11999999999999998,
+                "busPowerW": 0.1434132210337517,
+                "windingHeatW": 0.16323295212123592,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.02371420574779445,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              68.7561499115273,
+              0.2845704689735334
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.2975707219722254,
+          "energyJ": {
+            "terminalWork": 0.07218369177362025,
+            "windingHeat": 0.07855371470180372,
+            "brakeHeat": 0.0,
+            "externalWork": -2.037938818218161e-05,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.91625981350911,
+            "initial": 21.92265064202614,
+            "residual": 4.2620066409426727e-07
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.04100000000000003,
+            "q": [
+              0.0,
+              0.2998661906054993,
+              0.19807743718090903
+            ],
+            "qd": [
+              0.0,
+              -0.004446642785189895,
+              -0.09232598140127428
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.4355442150098354,
+            "motors": [
+              {
+                "omegaRadps": -3.248479380599271,
+                "currentA": 4.764012601041243,
+                "actualTerminalV": 0.48000000000000004,
+                "busPowerW": 2.286726048499797,
+                "windingHeatW": 2.5938075500433997,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.09453084522486747,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -1.095193370888314,
+                "currentA": 1.2401513875836552,
+                "actualTerminalV": 0.12,
+                "busPowerW": 0.14881816651003862,
+                "windingHeatW": 0.1757686244715046,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.024607944750073142,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              69.16891114014693,
+              0.29529533700087773
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.2869235407831476,
+          "energyJ": {
+            "terminalWork": 0.09646237035476375,
+            "windingHeat": 0.10607393101562732,
+            "brakeHeat": 0.0,
+            "externalWork": -5.844688740833649e-05,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.912980200142584,
+            "initial": 21.92265064202614,
+            "residual": 4.34335287735621e-07
+          },
+          "fixedBase": true,
+          "acceptance": false
+        }
+      ],
+      "final": {
+        "state": {
+          "timeS": 0.05000000000000004,
+          "q": [
+            0.0,
+            0.29982571077163045,
+            0.19716157033906126
+          ],
+          "qd": [
+            0.0,
+            -0.0045379770110899114,
+            -0.11109497762965645
+          ]
+        },
+        "electrical": {
+          "busPowerW": 2.4460320587869533,
+          "motors": [
+            {
+              "omegaRadps": -3.3179150463189093,
+              "currentA": 4.7760682695061405,
+              "actualTerminalV": 0.48,
+              "busPowerW": 2.2925127693629475,
+              "windingHeatW": 2.606951784569529,
+              "brakeHeatW": 0.0,
+              "torqueNm": 0.0947700621676372,
+              "infeasible": false
+            },
+            {
+              "omegaRadps": -1.3208310727099297,
+              "currentA": 1.2793274118667155,
+              "actualTerminalV": 0.11999999999999998,
+              "busPowerW": 0.15351928942400583,
+              "windingHeatW": 0.18704898591469585,
+              "brakeHeatW": 0.0,
+              "torqueNm": 0.025385302620037256,
+              "infeasible": false
+            }
+          ],
+          "generalizedMotorForce": [
+            0.0,
+            69.34394792753942,
+            0.3046236314404471
+          ],
+          "infeasibleCurrentLimitVoltage": false
+        },
+        "constraintForceX_N": 0.27730096268290977,
+        "energyJ": {
+          "terminalWork": 0.1184378132479646,
+          "windingHeat": 0.131129024655643,
+          "brakeHeat": 0.0,
+          "externalWork": -0.00010955373772434689,
+          "fixedConstraintWork": 0.0,
+          "mechanical": 21.909849437212422,
+          "initial": 21.92265064202614,
+          "residual": 4.3966831597685996e-07
+        },
+        "fixedBase": true,
+        "acceptance": false
+      },
+      "peakResidualJ": 4.3966831597685996e-07
+    },
+    {
+      "name": "coast",
+      "stepS": 0.001,
+      "initial": {
+        "timeS": 0.0,
+        "q": [
+          0.0,
+          0.3,
+          0.2
+        ],
+        "qd": [
+          0.0,
+          0.05,
+          0.2
+        ]
+      },
+      "externalGeneralizedForce": [
+        0.0,
+        -1.0,
+        0.1
+      ],
+      "trace": [
+        {
+          "state": {
+            "timeS": 0.001,
+            "q": [
+              0.0,
+              0.3000484943343394,
+              0.20019849139127474
+            ],
+            "qd": [
+              0.0,
+              0.046988661075462554,
+              0.19698361030874043
+            ]
+          },
+          "electrical": {
+            "busPowerW": 0.0,
+            "motors": [
+              {
+                "omegaRadps": 35.483659272718796,
+                "currentA": 0.0,
+                "actualTerminalV": null,
+                "busPowerW": 0.0,
+                "windingHeatW": 0.0,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.0,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": 2.381896695296649,
+                "currentA": 0.0,
+                "actualTerminalV": null,
+                "busPowerW": 0.0,
+                "windingHeatW": 0.0,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.0,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.40616931221771846,
+          "energyJ": {
+            "terminalWork": 0.0,
+            "windingHeat": 0.0,
+            "brakeHeat": 0.0,
+            "externalWork": -2.8645195211910274e-05,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.954329388580106,
+            "initial": 21.954358033668935,
+            "residual": -1.063824583980022e-10
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.011000000000000003,
+            "q": [
+              0.0,
+              0.3003678112431376,
+              0.20201780788221255
+            ],
+            "qd": [
+              0.0,
+              0.016874485558425297,
+              0.16690530727432387
+            ]
+          },
+          "electrical": {
+            "busPowerW": 0.0,
+            "motors": [
+              {
+                "omegaRadps": 13.44894729227936,
+                "currentA": 0.0,
+                "actualTerminalV": null,
+                "busPowerW": 0.0,
+                "windingHeatW": 0.0,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.0,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": 2.020866658925443,
+                "currentA": 0.0,
+                "actualTerminalV": null,
+                "busPowerW": 0.0,
+                "windingHeatW": 0.0,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.0,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.40518204891136733,
+          "energyJ": {
+            "terminalWork": 0.0,
+            "windingHeat": 0.0,
+            "brakeHeat": 0.0,
+            "externalWork": -0.0001660304549163612,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.95419200433374,
+            "initial": 21.954358033668935,
+            "residual": -1.119722981002269e-09
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.02100000000000001,
+            "q": [
+              0.0,
+              0.3003859798659903,
+              0.20353705380102238
+            ],
+            "qd": [
+              0.0,
+              -0.013240956723675402,
+              0.13696528697570318
+            ]
+          },
+          "electrical": {
+            "busPowerW": 0.0,
+            "motors": [
+              {
+                "omegaRadps": -8.58670006660555,
+                "currentA": 0.0,
+                "actualTerminalV": null,
+                "busPowerW": 0.0,
+                "windingHeatW": 0.0,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.0,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": 1.6615108703536428,
+                "currentA": 0.0,
+                "actualTerminalV": null,
+                "busPowerW": 0.0,
+                "windingHeatW": 0.0,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.0,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.4043443057420425,
+          "energyJ": {
+            "terminalWork": 0.0,
+            "windingHeat": 0.0,
+            "brakeHeat": 0.0,
+            "externalWork": -3.2274485888096735e-05,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.954325761223934,
+            "initial": 21.954358033668935,
+            "residual": -2.040888347210057e-09
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.03100000000000002,
+            "q": [
+              0.0,
+              0.3001029886887945,
+              0.20475748827772045
+            ],
+            "qd": [
+              0.0,
+              -0.043357435553254914,
+              0.1071388192300816
+            ]
+          },
+          "electrical": {
+            "busPowerW": 0.0,
+            "motors": [
+              {
+                "omegaRadps": -30.62311424620067,
+                "currentA": 0.0,
+                "actualTerminalV": null,
+                "busPowerW": 0.0,
+                "windingHeatW": 0.0,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.0,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": 1.303532534629854,
+                "currentA": 0.0,
+                "actualTerminalV": null,
+                "busPowerW": 0.0,
+                "windingHeatW": 0.0,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.0,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.40366182385543486,
+          "energyJ": {
+            "terminalWork": 0.0,
+            "windingHeat": 0.0,
+            "brakeHeat": 0.0,
+            "externalWork": 0.00037276013897752835,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.954730796677516,
+            "initial": 21.954358033668935,
+            "residual": -2.8696049980680982e-09
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.04100000000000003,
+            "q": [
+              0.0,
+              0.2995188284860895,
+              0.20568012339662672
+            ],
+            "qd": [
+              0.0,
+              -0.07347472332336463,
+              0.07740122333251968
+            ]
+          },
+          "electrical": {
+            "busPowerW": 0.0,
+            "motors": [
+              {
+                "omegaRadps": -52.66012861966382,
+                "currentA": 0.0,
+                "actualTerminalV": null,
+                "busPowerW": 0.0,
+                "windingHeatW": 0.0,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.0,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": 0.9466354567077226,
+                "currentA": 0.0,
+                "actualTerminalV": null,
+                "busPowerW": 0.0,
+                "windingHeatW": 0.0,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.0,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.4031391771055225,
+          "energyJ": {
+            "terminalWork": 0.0,
+            "windingHeat": 0.0,
+            "brakeHeat": 0.0,
+            "externalWork": 0.0010491838535731477,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.95540722112841,
+            "initial": 21.954358033668935,
+            "residual": -3.6059013552858232e-09
+          },
+          "fixedBase": true,
+          "acceptance": false
+        }
+      ],
+      "final": {
+        "state": {
+          "timeS": 0.05000000000000004,
+          "q": [
+            0.0,
+            0.2987355789878163,
+            0.20625651431288408
+          ],
+          "qd": [
+            0.0,
+            -0.10058078750070322,
+            0.05069300549738948
+          ]
+        },
+        "electrical": {
+          "busPowerW": 0.0,
+          "motors": [
+            {
+              "omegaRadps": -72.49381823373946,
+              "currentA": 0.0,
+              "actualTerminalV": null,
+              "busPowerW": 0.0,
+              "windingHeatW": 0.0,
+              "brakeHeatW": 0.0,
+              "torqueNm": 0.0,
+              "infeasible": false
+            },
+            {
+              "omegaRadps": 0.6261081416315565,
+              "currentA": 0.0,
+              "actualTerminalV": null,
+              "busPowerW": 0.0,
+              "windingHeatW": 0.0,
+              "brakeHeatW": 0.0,
+              "torqueNm": 0.0,
+              "infeasible": false
+            }
+          ],
+          "generalizedMotorForce": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "infeasibleCurrentLimitVoltage": false
+        },
+        "constraintForceX_N": 0.4028083218061049,
+        "energyJ": {
+          "terminalWork": 0.0,
+          "windingHeat": 0.0,
+          "brakeHeat": 0.0,
+          "externalWork": 0.001890072443472123,
+          "fixedConstraintWork": 0.0,
+          "mechanical": 21.95624811030223,
+          "initial": 21.954358033668935,
+          "residual": -4.189821822819795e-09
+        },
+        "fixedBase": true,
+        "acceptance": false
+      },
+      "peakResidualJ": 4.189821822819795e-09
+    },
+    {
+      "name": "brake",
+      "stepS": 0.001,
+      "initial": {
+        "timeS": 0.0,
+        "q": [
+          0.0,
+          0.3,
+          0.2
+        ],
+        "qd": [
+          0.0,
+          0.05,
+          0.2
+        ]
+      },
+      "externalGeneralizedForce": [
+        0.0,
+        -1.0,
+        0.1
+      ],
+      "trace": [
+        {
+          "state": {
+            "timeS": 0.001,
+            "q": [
+              0.0,
+              0.3000464928190913,
+              0.20019919983858211
+            ],
+            "qd": [
+              0.0,
+              0.043266585348852374,
+              0.19824188114313648
+            ]
+          },
+          "electrical": {
+            "busPowerW": 0.0,
+            "motors": [
+              {
+                "omegaRadps": 34.01913592046477,
+                "currentA": -5.90652397249857,
+                "actualTerminalV": 0.0,
+                "busPowerW": 0.0,
+                "windingHeatW": 3.9870886214514605,
+                "brakeHeatW": 0.0,
+                "torqueNm": -0.11720134899290498,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": 2.39039806298521,
+                "currentA": -0.41502945565242316,
+                "actualTerminalV": 0.0,
+                "busPowerW": 0.0,
+                "windingHeatW": 0.019685651321045335,
+                "brakeHeatW": 0.0,
+                "torqueNm": -0.008235302574024524,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              -85.75708462895487,
+              -0.0988236308882943
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.2356621962507632,
+          "energyJ": {
+            "terminalWork": 0.0,
+            "windingHeat": 0.004006774272772506,
+            "brakeHeat": 0.0,
+            "externalWork": -2.6572835233091758e-05,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.95030290620208,
+            "initial": 21.954358033668935,
+            "residual": 2.1780358853362713e-05
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.011000000000000003,
+            "q": [
+              0.0,
+              0.30022657140344383,
+              0.20204760151573162
+            ],
+            "qd": [
+              0.0,
+              -0.0012507224262528426,
+              0.1682413814712645
+            ]
+          },
+          "electrical": {
+            "busPowerW": 0.0,
+            "motors": [
+              {
+                "omegaRadps": 0.14548380822186466,
+                "currentA": -0.025259418783647,
+                "actualTerminalV": 0.0,
+                "busPowerW": 0.0,
+                "windingHeatW": 7.291865569001816e-05,
+                "brakeHeatW": 0.0,
+                "torqueNm": -0.0005012149226862159,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": 2.041764913800466,
+                "currentA": -0.3544985221777546,
+                "actualTerminalV": 0.0,
+                "busPowerW": 0.0,
+                "windingHeatW": 0.014362194540138514,
+                "brakeHeatW": 0.0,
+                "torqueNm": -0.0070342057712242945,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              -0.36674262635576776,
+              -0.08441046925469153
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.506415070638586,
+          "energyJ": {
+            "terminalWork": 0.0,
+            "windingHeat": 0.013133492907017017,
+            "brakeHeat": 0.0,
+            "externalWork": -2.1811251870753104e-05,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.94108076471612,
+            "initial": 21.954358033668935,
+            "residual": 0.00012196479393011828
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.02100000000000001,
+            "q": [
+              0.0,
+              0.30010056992270395,
+              0.20352463390538122
+            ],
+            "qd": [
+              0.0,
+              -0.0212542308532069,
+              0.1259662527002967
+            ]
+          },
+          "electrical": {
+            "busPowerW": 0.0,
+            "motors": [
+              {
+                "omegaRadps": -15.075211569983802,
+                "currentA": 2.617412115838968,
+                "actualTerminalV": 0.0,
+                "busPowerW": 0.0,
+                "windingHeatW": 0.7829538496160712,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.0519365082195601,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": 1.5387344234068467,
+                "currentA": -0.26716057046275316,
+                "actualTerminalV": -3.469446951953614e-18,
+                "busPowerW": 0.0,
+                "windingHeatW": 0.00815711661828385,
+                "brakeHeatW": 0.0,
+                "torqueNm": -0.0053011855029690726,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              38.002323087483,
+              -0.06361422603562887
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.6098405430518283,
+          "energyJ": {
+            "terminalWork": 0.0,
+            "windingHeat": 0.016771647939333403,
+            "brakeHeat": 0.0,
+            "externalWork": 0.0002518934678340465,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.93769606746717,
+            "initial": 21.954358033668935,
+            "residual": 0.0001422117302674053
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.03100000000000002,
+            "q": [
+              0.0,
+              0.29983701671532514,
+              0.2045536316925928
+            ],
+            "qd": [
+              0.0,
+              -0.030245546274694734,
+              0.07951196199497243
+            ]
+          },
+          "electrical": {
+            "busPowerW": 0.0,
+            "motors": [
+              {
+                "omegaRadps": -21.91657245788433,
+                "currentA": 3.805233646149798,
+                "actualTerminalV": 0.0,
+                "busPowerW": 0.0,
+                "windingHeatW": 1.654834640204627,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.07550608761404713,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": 0.9824349097650107,
+                "currentA": -0.17057386053288173,
+                "actualTerminalV": 0.0,
+                "busPowerW": 0.0,
+                "windingHeatW": 0.0033251933596675416,
+                "brakeHeatW": 0.0,
+                "torqueNm": -0.0033846449536925525,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              55.248356790766195,
+              -0.04061573944431063
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.6393039707763505,
+          "energyJ": {
+            "terminalWork": 0.0,
+            "windingHeat": 0.029758550955839767,
+            "brakeHeat": 8.94212771717516e-22,
+            "externalWork": 0.0006183464539340727,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.925071505066864,
+            "initial": 21.954358033668935,
+            "residual": 0.0001463241001644633
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.04100000000000003,
+            "q": [
+              0.0,
+              0.2995116213388511,
+              0.205112951163281
+            ],
+            "qd": [
+              0.0,
+              -0.03428949234742244,
+              0.03240829859987231
+            ]
+          },
+          "electrical": {
+            "busPowerW": 0.0,
+            "motors": [
+              {
+                "omegaRadps": -24.99342985005912,
+                "currentA": 4.339448624135385,
+                "actualTerminalV": -5.551115123125783e-17,
+                "busPowerW": 0.0,
+                "windingHeatW": 2.152093069886913,
+                "brakeHeatW": 2.4088778883465307e-16,
+                "torqueNm": 0.08610635206123271,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": 0.41700000228274237,
+                "currentA": -0.07240103087196008,
+                "actualTerminalV": 0.0,
+                "busPowerW": 0.0,
+                "windingHeatW": 0.0005990753452940019,
+                "brakeHeatW": 0.0,
+                "torqueNm": -0.0014366315156224036,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              63.00464784968248,
+              -0.017239578187468844
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.6365548051420197,
+          "energyJ": {
+            "terminalWork": 0.0,
+            "windingHeat": 0.04932974147182558,
+            "brakeHeat": 2.4178200160637056e-19,
+            "externalWork": 0.0009996737774768726,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.905880788215725,
+            "initial": 21.954358033668935,
+            "residual": 0.0001471777588619716
+          },
+          "fixedBase": true,
+          "acceptance": false
+        }
+      ],
+      "final": {
+        "state": {
+          "timeS": 0.05000000000000004,
+          "q": [
+            0.0,
+            0.2991944503291065,
+            0.2052162566707796
+          ],
+          "qd": [
+            0.0,
+            -0.03598645941420932,
+            -0.009282850367104047
+          ]
+        },
+        "electrical": {
+          "busPowerW": 0.0,
+          "motors": [
+            {
+              "omegaRadps": -26.284483535952685,
+              "currentA": 4.563605979670265,
+              "actualTerminalV": 0.0,
+              "busPowerW": 0.0,
+              "windingHeatW": 2.3801713757351086,
+              "brakeHeatW": 0.0,
+              "torqueNm": 0.09055423792061351,
+              "infeasible": false
+            },
+            {
+              "omegaRadps": -0.08394991470555795,
+              "currentA": 0.014575684251853682,
+              "actualTerminalV": 0.0,
+              "busPowerW": 0.0,
+              "windingHeatW": 2.4280065303969763e-05,
+              "brakeHeatW": 0.0,
+              "torqueNm": 0.0002892208454187064,
+              "infeasible": false
+            }
+          ],
+          "generalizedMotorForce": [
+            0.0,
+            66.2591984784977,
+            0.0034706501450244773
+          ],
+          "infeasibleCurrentLimitVoltage": false
+        },
+        "constraintForceX_N": 0.6222029924331972,
+        "energyJ": {
+          "terminalWork": 0.0,
+          "windingHeat": 0.06995200644146574,
+          "brakeHeat": 4.845320583565422e-19,
+          "externalWork": 0.0013271753379713114,
+          "fixedConstraintWork": 0.0,
+          "mechanical": 21.885585840901282,
+          "initial": 21.954358033668935,
+          "residual": 0.00014736166415829643
+        },
+        "fixedBase": true,
+        "acceptance": false
+      },
+      "peakResidualJ": 0.00014736166415829643
+    },
+    {
+      "name": "loaded",
+      "stepS": 0.001,
+      "initial": {
+        "timeS": 0.0,
+        "q": [
+          0.0,
+          0.3,
+          0.2
+        ],
+        "qd": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "externalGeneralizedForce": [
+        3.0,
+        -10.0,
+        0.3
+      ],
+      "trace": [
+        {
+          "state": {
+            "timeS": 0.001,
+            "q": [
+              0.0,
+              0.29999961737316544,
+              0.19999985719188654
+            ],
+            "qd": [
+              0.0,
+              -0.0007346031202652536,
+              -0.0003026256675888923
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.165368284013518,
+            "motors": [
+              {
+                "omegaRadps": -0.27997085455632575,
+                "currentA": 4.2486095404628745,
+                "actualTerminalV": 0.48000000000000004,
+                "busPowerW": 2.03933257942218,
+                "windingHeatW": 2.0629352031213894,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.08430385990217795,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.0017136973615521174,
+                "currentA": 1.0502975382611504,
+                "actualTerminalV": 0.12,
+                "busPowerW": 0.12603570459133803,
+                "windingHeatW": 0.12607141930027801,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.02084073287457801,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              61.68575114793509,
+              0.25008879449493615
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": -2.9589977855270755,
+          "energyJ": {
+            "terminalWork": 0.002165368284013518,
+            "windingHeat": 0.0021890066224216674,
+            "brakeHeat": 0.0,
+            "externalWork": 3.783425911564316e-06,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.922630527874663,
+            "initial": 21.92265064202614,
+            "residual": 2.592389805045059e-07
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.011000000000000003,
+            "q": [
+              0.0,
+              0.2999647145478693,
+              0.19997673255818904
+            ],
+            "qd": [
+              0.0,
+              -0.005591350424888806,
+              -0.004666409756743261
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.474418230001491,
+            "motors": [
+              {
+                "omegaRadps": -3.9755186537064455,
+                "currentA": 4.890243758281547,
+                "actualTerminalV": 0.48,
+                "busPowerW": 2.3473170039751423,
+                "windingHeatW": 2.7330838874756145,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.09703561147696156,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.05285505491320467,
+                "currentA": 1.0591768835529056,
+                "actualTerminalV": 0.12000000000000001,
+                "busPowerW": 0.12710122602634868,
+                "windingHeatW": 0.12821207664603945,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.021016923007931062,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              71.00166693436212,
+              0.25220307609517273
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": -2.929978188057076,
+          "energyJ": {
+            "terminalWork": 0.02571952369254217,
+            "windingHeat": 0.0281374669989875,
+            "brakeHeat": 0.0,
+            "externalWork": 0.00034587428876361515,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.92057712126555,
+            "initial": 21.92265064202614,
+            "residual": 1.4517429107741009e-06
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.02100000000000001,
+            "q": [
+              0.0,
+              0.29989641928273514,
+              0.19990230150456004
+            ],
+            "qd": [
+              0.0,
+              -0.007773638119834599,
+              -0.01034760384002495
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.6142148124616336,
+            "motors": [
+              {
+                "omegaRadps": -5.636027481981519,
+                "currentA": 5.178547236173594,
+                "actualTerminalV": 0.48000000000000004,
+                "busPowerW": 2.485702673363325,
+                "windingHeatW": 3.064840168832133,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.1027563292266265,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.12057402096731362,
+                "currentA": 1.0709344924859059,
+                "actualTerminalV": 0.12,
+                "busPowerW": 0.1285121390983087,
+                "windingHeatW": 0.13107436425097654,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.021250225646554866,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              75.18755797070233,
+              0.2550027077586584
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": -2.919091170009954,
+          "energyJ": {
+            "terminalWork": 0.05132277717623144,
+            "windingHeat": 0.0587917426191413,
+            "brakeHeat": 0.0,
+            "externalWork": 0.001006497624015529,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.91618648135676,
+            "initial": 21.92265064202614,
+            "residual": 1.6928504855684423e-06
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.03100000000000002,
+            "q": [
+              0.0,
+              0.29981311811426115,
+              0.19976838248150633
+            ],
+            "qd": [
+              0.0,
+              -0.008754491856978654,
+              -0.01646872945597415
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.677940557843535,
+            "motors": [
+              {
+                "omegaRadps": -6.382347341821544,
+                "currentA": 5.30812595779671,
+                "actualTerminalV": 0.48,
+                "busPowerW": 2.547900459742421,
+                "windingHeatW": 3.2201372781525985,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.10532752017509582,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.1939107884120212,
+                "currentA": 1.0836674841759488,
+                "actualTerminalV": 0.12,
+                "busPowerW": 0.13004009810111386,
+                "windingHeatW": 0.13420973900116917,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.02150288250695819,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              77.06891720128962,
+              0.25803459008349827
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": -2.9162029162560072,
+          "energyJ": {
+            "terminalWork": 0.0778559635114733,
+            "windingHeat": 0.09172039508847943,
+            "brakeHeat": 0.0,
+            "externalWork": 0.0017993336018395647,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.910583802112583,
+            "initial": 21.92265064202614,
+            "residual": 1.7419383908645614e-06
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.04100000000000003,
+            "q": [
+              0.0,
+              0.2997230708674066,
+              0.19957276441712032
+            ],
+            "qd": [
+              0.0,
+              -0.009195608261651606,
+              -0.022646386089239703
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.707456604390318,
+            "motors": [
+              {
+                "omegaRadps": -6.717974225997633,
+                "currentA": 5.3663986970525155,
+                "actualTerminalV": 0.48,
+                "busPowerW": 2.5758713745852075,
+                "windingHeatW": 3.2912268543687926,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.10648380832055866,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.26807178634416196,
+                "currentA": 1.0965435817092521,
+                "actualTerminalV": 0.11999999999999998,
+                "busPowerW": 0.13158522980511023,
+                "windingHeatW": 0.1374180373243149,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.021758378972848096,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              77.91498169796975,
+              0.2611005476741771
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": -2.9167699486359457,
+          "energyJ": {
+            "terminalWork": 0.10481595148674434,
+            "windingHeat": 0.12571821011075157,
+            "brakeHeat": 0.0,
+            "externalWork": 0.0026411206510694994,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.904387751808088,
+            "initial": 21.92265064202614,
+            "residual": 1.752245118780138e-06
+          },
+          "fixedBase": true,
+          "acceptance": false
+        }
+      ],
+      "final": {
+        "state": {
+          "timeS": 0.05000000000000004,
+          "q": [
+            0.0,
+            0.2996393760937994,
+            0.19934423270477333
+          ],
+          "qd": [
+            0.0,
+            -0.009380707093664743,
+            -0.028118259533616755
+          ]
+        },
+        "electrical": {
+          "busPowerW": 2.7205624172023724,
+          "motors": [
+            {
+              "omegaRadps": -6.85879743998252,
+              "currentA": 5.390848926806461,
+              "actualTerminalV": 0.48000000000000004,
+              "busPowerW": 2.5876074848671013,
+              "windingHeatW": 3.321285960188614,
+              "brakeHeatW": 0.0,
+              "torqueNm": 0.10696896675277555,
+              "infeasible": false
+            },
+            {
+              "omegaRadps": -0.3338127883857115,
+              "currentA": 1.1079577694605907,
+              "actualTerminalV": 0.12,
+              "busPowerW": 0.13295493233527086,
+              "windingHeatW": 0.14029376216092426,
+              "brakeHeatW": 0.0,
+              "torqueNm": 0.02198486720998112,
+              "infeasible": false
+            }
+          ],
+          "generalizedMotorForce": [
+            0.0,
+            78.2699756727626,
+            0.26381840651977345
+          ],
+          "infeasibleCurrentLimitVoltage": false
+        },
+        "constraintForceX_N": -2.918527386116898,
+        "energyJ": {
+          "terminalWork": 0.1292547947282501,
+          "windingHeat": 0.15675644877158418,
+          "brakeHeat": 0.0,
+          "externalWork": 0.003409508873437322,
+          "fixedConstraintWork": 0.0,
+          "mechanical": 21.89855674229268,
+          "initial": 21.92265064202614,
+          "residual": 1.754563566436218e-06
+        },
+        "fixedBase": true,
+        "acceptance": false
+      },
+      "peakResidualJ": 1.754563566436218e-06
+    },
+    {
+      "name": "half-step",
+      "stepS": 0.0005,
+      "initial": {
+        "timeS": 0.0,
+        "q": [
+          0.0,
+          0.3,
+          0.2
+        ],
+        "qd": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "externalGeneralizedForce": [
+        0.0,
+        -1.0,
+        0.1
+      ],
+      "trace": [
+        {
+          "state": {
+            "timeS": 0.0005,
+            "q": [
+              0.0,
+              0.2999999538286107,
+              0.19999971223970076
+            ],
+            "qd": [
+              0.0,
+              -0.0001809903249082601,
+              -0.0011518915579976155
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.1477749519194056,
+            "motors": [
+              {
+                "omegaRadps": -0.06756788673685027,
+                "currentA": 4.211731378001938,
+                "actualTerminalV": 0.4799999999999999,
+                "busPowerW": 2.02163106144093,
+                "windingHeatW": 2.0272778514795546,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.0835720978016725,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.006906247182096084,
+                "currentA": 1.051199087320631,
+                "actualTerminalV": 0.12,
+                "busPowerW": 0.1261438904784757,
+                "windingHeatW": 0.12628794527814027,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.020858622036874885,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              61.15031546463842,
+              0.2503034644424986
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.31213547332602853,
+          "energyJ": {
+            "terminalWork": 0.0010738874759597028,
+            "windingHeat": 0.0010767828983788475,
+            "brakeHeat": 0.0,
+            "externalWork": 1.739535934478066e-08,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.92264775620986,
+            "initial": 21.92265064202614,
+            "residual": 7.789221712073413e-09
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.005500000000000001,
+            "q": [
+              0.0,
+              0.2999951456103545,
+              0.19996504023212358
+            ],
+            "qd": [
+              0.0,
+              -0.0016430838345429404,
+              -0.012730687301139815
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.241609268300206,
+            "motors": [
+              {
+                "omegaRadps": -1.158774701980221,
+                "currentA": 4.401190605545444,
+                "actualTerminalV": 0.48,
+                "busPowerW": 2.112571490661813,
+                "windingHeatW": 2.213768999581882,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.08733147931788086,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.14580285976688817,
+                "currentA": 1.0753148136532742,
+                "actualTerminalV": 0.12,
+                "busPowerW": 0.1290377776383929,
+                "windingHeatW": 0.13214879410996294,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.021337143019992795,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              63.90108242771771,
+              0.25604571623991357
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.31451982772219095,
+          "energyJ": {
+            "terminalWork": 0.012085761187181484,
+            "windingHeat": 0.01240082677345788,
+            "brakeHeat": 0.0,
+            "externalWork": 1.3584128578561726e-06,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.922336875275356,
+            "initial": 21.92265064202614,
+            "residual": 5.9577367039764795e-08
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.010500000000000006,
+            "q": [
+              0.0,
+              0.29998431346726234,
+              0.19987236893851798
+            ],
+            "qd": [
+              0.0,
+              -0.0026232953124098995,
+              -0.0243332580429725
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.3054777595246274,
+            "motors": [
+              {
+                "omegaRadps": -1.89032988771156,
+                "currentA": 4.528205831676701,
+                "actualTerminalV": 0.48,
+                "busPowerW": 2.1735387992048163,
+                "windingHeatW": 2.3433883490321006,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.08985180360921273,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.28504963224649776,
+                "currentA": 1.0994913359984257,
+                "actualTerminalV": 0.12,
+                "busPowerW": 0.1319389603198111,
+                "windingHeatW": 0.13815785119264035,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.021816870359795706,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              65.7452221530825,
+              0.26180244431754846
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.3138826927789639,
+          "energyJ": {
+            "terminalWork": 0.023479474619393627,
+            "windingHeat": 0.024523147431460623,
+            "brakeHeat": 0.0,
+            "externalWork": 2.9234265893987853e-06,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.921609809325254,
+            "initial": 21.92265064202614,
+            "residual": 8.331540968242734e-08
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.01550000000000001,
+            "q": [
+              0.0,
+              0.29996944232772843,
+              0.19972181475879314
+            ],
+            "qd": [
+              0.0,
+              -0.003280614988802499,
+              -0.035872046575793445
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.349247299709278,
+            "motors": [
+              {
+                "omegaRadps": -2.3808958960084965,
+                "currentA": 4.613379655458501,
+                "actualTerminalV": 0.48,
+                "busPowerW": 2.21442223462008,
+                "windingHeatW": 2.432373925188388,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.09154188174867184,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.42357271690059684,
+                "currentA": 1.123542209076648,
+                "actualTerminalV": 0.12,
+                "busPowerW": 0.13482506508919775,
+                "windingHeatW": 0.14426823949449535,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.022294104479618028,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              66.98186469415013,
+              0.26752925375541636
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.311292672920578,
+          "energyJ": {
+            "terminalWork": 0.03513395776272849,
+            "windingHeat": 0.03720630115289226,
+            "brakeHeat": 0.0,
+            "externalWork": 2.7391481507337496e-06,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.920580943343108,
+            "initial": 21.92265064202614,
+            "residual": 9.44410203373991e-08
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.020500000000000015,
+            "q": [
+              0.0,
+              0.2999518622463094,
+              0.19951384700377936
+            ],
+            "qd": [
+              0.0,
+              -0.00372156704245291,
+              -0.047291265651592876
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.3795294580344293,
+            "motors": [
+              {
+                "omegaRadps": -2.7099770875213456,
+                "currentA": 4.670515908157964,
+                "actualTerminalV": 0.48,
+                "busPowerW": 2.2418476359158226,
+                "windingHeatW": 2.492996439812184,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.0926756189389306,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.5606872111554531,
+                "currentA": 1.1473485176550542,
+                "actualTerminalV": 0.12,
+                "busPowerW": 0.1376818221186065,
+                "windingHeatW": 0.15044669953888573,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.022766485780857427,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              67.81142849190044,
+              0.27319782937028914
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.30746361327203214,
+          "energyJ": {
+            "terminalWork": 0.046967986571405745,
+            "windingHeat": 0.05028283764861381,
+            "brakeHeat": 0.0,
+            "externalWork": -4.775459315981191e-07,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.91933521351752,
+            "initial": 21.92265064202614,
+            "residual": 9.988548299588729e-08
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.02550000000000002,
+            "q": [
+              0.0,
+              0.2999324645077937,
+              0.19924915730503998
+            ],
+            "qd": [
+              0.0,
+              -0.00401752363699736,
+              -0.058556315314205694
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.400754739743629,
+            "motors": [
+              {
+                "omegaRadps": -2.9308420833878683,
+                "currentA": 4.708863278174103,
+                "actualTerminalV": 0.48,
+                "busPowerW": 2.2602543735235696,
+                "windingHeatW": 2.534102099718464,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.09343653407567565,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.695967616533753,
+                "currentA": 1.1708363851671617,
+                "actualTerminalV": 0.12,
+                "busPowerW": 0.1405003662200594,
+                "windingHeatW": 0.15666946752357785,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.02323254835339637,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              68.36819566512852,
+              0.2787905802407564
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.30287182994550266,
+          "energyJ": {
+            "terminalWork": 0.05892703759023527,
+            "windingHeat": 0.06363679212005999,
+            "brakeHeat": 0.0,
+            "externalWork": -7.548777289979963e-06,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.917933235957555,
+            "initial": 21.92265064202614,
+            "residual": 1.0276146866772251e-07
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.030500000000000024,
+            "q": [
+              0.0,
+              0.2999118464161069,
+              0.19892857258949673
+            ],
+            "qd": [
+              0.0,
+              -0.004216305188658532,
+              -0.06964670111649217
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.4158923212290153,
+            "motors": [
+              {
+                "omegaRadps": -3.079181638119972,
+                "currentA": 4.7346185218741015,
+                "actualTerminalV": 0.4799999999999999,
+                "busPowerW": 2.2726168904995685,
+                "windingHeatW": 2.5618985768769487,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.09394758750055557,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.8291611513048951,
+                "currentA": 1.1939619227453901,
+                "actualTerminalV": 0.12,
+                "busPowerW": 0.14327543072944682,
+                "windingHeatW": 0.16291943691038502,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.02369142132385652,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              68.74213719552847,
+              0.28429705588627824
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.29783459890609865,
+          "energyJ": {
+            "terminalWork": 0.07097448048700941,
+            "windingHeat": 0.07718875387083829,
+            "brakeHeat": 0.0,
+            "externalWork": -1.8989157157487427e-05,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.916417275017874,
+            "initial": 21.92265064202614,
+            "residual": 1.0446727927160282e-07
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.035500000000000025,
+            "q": [
+              0.0,
+              0.29989040830257313,
+              0.19855299720633346
+            ],
+            "qd": [
+              0.0,
+              -0.004349952469343768,
+              -0.08055129537494941
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.426932269286511,
+            "motors": [
+              {
+                "omegaRadps": -3.1789093569671887,
+                "currentA": 4.751933604875352,
+                "actualTerminalV": 0.4799999999999999,
+                "busPowerW": 2.2809281303401683,
+                "windingHeatW": 2.580671198302132,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.09429116539766046,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.9601297437603191,
+                "currentA": 1.2167011578861924,
+                "actualTerminalV": 0.12,
+                "busPowerW": 0.1460041389463431,
+                "windingHeatW": 0.1691841951544687,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.024142629013180684,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              68.99353565682473,
+              0.28971154815816824
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.29256271005801593,
+          "energyJ": {
+            "terminalWork": 0.08308567695922522,
+            "windingHeat": 0.0908847263269763,
+            "brakeHeat": 0.0,
+            "externalWork": -3.5108581940031594e-05,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.91481637844487,
+            "initial": 21.92265064202614,
+            "residual": 1.0563158170384668e-07
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.04050000000000003,
+            "q": [
+              0.0,
+              0.2998684185214326,
+              0.19812337456002715
+            ],
+            "qd": [
+              0.0,
+              -0.004439933874884456,
+              -0.09126516664994844
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.435208626571492,
+            "motors": [
+              {
+                "omegaRadps": -3.246048145700548,
+                "currentA": 4.763590481348206,
+                "actualTerminalV": 0.4799999999999999,
+                "busPowerW": 2.2865234310471387,
+                "windingHeatW": 2.59334791702757,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.09452246923288121,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -1.088811221736268,
+                "currentA": 1.2390432960362756,
+                "actualTerminalV": 0.11999999999999998,
+                "busPowerW": 0.14868519552435305,
+                "windingHeatW": 0.17545466165170714,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.02458595722834882,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              69.16278236552284,
+              0.29503148674018587
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.28719565907371747,
+          "energyJ": {
+            "terminalWork": 0.09524402690073439,
+            "windingHeat": 0.10468815355889224,
+            "brakeHeat": 0.0,
+            "externalWork": -5.608106543014045e-05,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.913150327765077,
+            "initial": 21.92265064202614,
+            "residual": 1.065374739539493e-07
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.045500000000000033,
+            "q": [
+              0.0,
+              0.2998460569969676,
+              0.19764066179297451
+            ],
+            "qd": [
+              0.0,
+              -0.0045006342741419035,
+              -0.10178745894479693
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.441615878422983,
+            "motors": [
+              {
+                "omegaRadps": -3.2913341163381156,
+                "currentA": 4.771453193435134,
+                "actualTerminalV": 0.4799999999999999,
+                "busPowerW": 2.290297532848864,
+                "windingHeatW": 2.601916065959124,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.09467848662443357,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -1.2151933514218007,
+                "currentA": 1.2609862131176577,
+                "actualTerminalV": 0.12,
+                "busPowerW": 0.1513183455741189,
+                "windingHeatW": 0.18172414053403552,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.025021363821931063,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              69.27694143251237,
+              0.3002563658631727
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.2818252151471078,
+          "energyJ": {
+            "terminalWork": 0.10743831922835392,
+            "windingHeat": 0.11857434947509277,
+            "brakeHeat": 0.0,
+            "externalWork": -8.199081767042244e-05,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.911432513648865,
+            "initial": 21.92265064202614,
+            "residual": 1.0731286792520223e-07
+          },
+          "fixedBase": true,
+          "acceptance": false
+        }
+      ],
+      "final": {
+        "state": {
+          "timeS": 0.05000000000000004,
+          "q": [
+            0.0,
+            0.29982571440709677,
+            0.19716161721565537
+          ],
+          "qd": [
+            0.0,
+            -0.004538267014340795,
+            -0.111095172202612
+          ]
+        },
+        "electrical": {
+          "busPowerW": 2.4462846016023128,
+          "motors": [
+            {
+              "omegaRadps": -3.3194061940050115,
+              "currentA": 4.776327167897184,
+              "actualTerminalV": 0.48,
+              "busPowerW": 2.292637040590648,
+              "windingHeatW": 2.6072344245477415,
+              "brakeHeatW": 0.0,
+              "torqueNm": 0.09477519940924051,
+              "infeasible": false
+            },
+            {
+              "omegaRadps": -1.3269876669487966,
+              "currentA": 1.280396341763872,
+              "actualTerminalV": 0.12,
+              "busPowerW": 0.15364756101166463,
+              "windingHeatW": 0.18736169051454926,
+              "brakeHeatW": 0.0,
+              "torqueNm": 0.025406513069111687,
+              "infeasible": false
+            }
+          ],
+          "generalizedMotorForce": [
+            0.0,
+            69.34770688481014,
+            0.3048781568293403
+          ],
+          "infeasibleCurrentLimitVoltage": false
+        },
+        "constraintForceX_N": 0.2770388401487685,
+        "energyJ": {
+          "terminalWork": 0.11843757983727585,
+          "windingHeat": 0.1311288097812943,
+          "brakeHeat": 0.0,
+          "externalWork": -0.00010955268553142097,
+          "fixedConstraintWork": 0.0,
+          "mechanical": 21.909849751448597,
+          "initial": 21.92265064202614,
+          "residual": 1.0794799365498875e-07
+        },
+        "fixedBase": true,
+        "acceptance": false
+      },
+      "peakResidualJ": 1.0794799365498875e-07
+    },
+    {
+      "name": "quarter-step",
+      "stepS": 0.00025,
+      "initial": {
+        "timeS": 0.0,
+        "q": [
+          0.0,
+          0.3,
+          0.2
+        ],
+        "qd": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "externalGeneralizedForce": [
+        0.0,
+        -1.0,
+        0.1
+      ],
+      "trace": [
+        {
+          "state": {
+            "timeS": 0.00025,
+            "q": [
+              0.0,
+              0.29999998845715264,
+              0.1999999280599252
+            ],
+            "qd": [
+              0.0,
+              -9.141897061906266e-05,
+              -0.0005757331886832873
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.1448874759597034,
+            "motors": [
+              {
+                "omegaRadps": -0.033783943368425134,
+                "currentA": 4.205865689000969,
+                "actualTerminalV": 0.48000000000000004,
+                "busPowerW": 2.0188155307204654,
+                "windingHeatW": 2.021634993590354,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.08345570672853249,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.003453123591048042,
+                "currentA": 1.0505995436603155,
+                "actualTerminalV": 0.12,
+                "busPowerW": 0.12607194523923784,
+                "windingHeatW": 0.12614393155877293,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.0208467254753615,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              61.06515126477987,
+              0.250160705704338
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.31202027537411287,
+          "energyJ": {
+            "terminalWork": 0.0005362218689899258,
+            "windingHeat": 0.0005369447312872818,
+            "brakeHeat": 0.0,
+            "externalWork": 4.348839836195165e-09,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.922649922529203,
+            "initial": 21.92265064202614,
+            "residual": 9.834835168476275e-10
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.0027500000000000007,
+            "q": [
+              0.0,
+              0.2999986996881083,
+              0.19999127488727414
+            ],
+            "qd": [
+              0.0,
+              -0.0009117099259748156,
+              -0.006352006990742219
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.1968528559425593,
+            "motors": [
+              {
+                "omegaRadps": -0.6399995127489083,
+                "currentA": 4.311119002942247,
+                "actualTerminalV": 0.48,
+                "busPowerW": 2.0693371214122784,
+                "windingHeatW": 2.1240853780034006,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.0855442160509916,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.0727500348838313,
+                "currentA": 1.0626311210856758,
+                "actualTerminalV": 0.11999999999999998,
+                "busPowerW": 0.1275157345302811,
+                "windingHeatW": 0.12904970279997716,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.02108546438700064,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              62.59332881779874,
+              0.2530255726440077
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.31372855106440617,
+          "energyJ": {
+            "terminalWork": 0.005971974437108474,
+            "windingHeat": 0.006054949355868294,
+            "brakeHeat": 0.0,
+            "externalWork": 4.2780061913707955e-07,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.92256808595971,
+            "initial": 21.92265064202614,
+            "residual": 8.948290997068398e-09
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.005250000000000003,
+            "q": [
+              0.0,
+              0.2999955524042552,
+              0.1999681501089659
+            ],
+            "qd": [
+              0.0,
+              -0.0015832914254729309,
+              -0.012150135362148375
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.2396648279650213,
+            "motors": [
+              {
+                "omegaRadps": -1.1363139637180093,
+                "currentA": 4.397290891887344,
+                "actualTerminalV": 0.48,
+                "busPowerW": 2.1106996281059254,
+                "windingHeatW": 2.209847678614331,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.08725409849228134,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.14231937643246698,
+                "currentA": 1.0747099988258,
+                "actualTerminalV": 0.12,
+                "busPowerW": 0.128965199859096,
+                "windingHeatW": 0.13200018075156011,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.02132514186432138,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              63.844462311425374,
+              0.25590170237185655
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.31450119559317186,
+          "energyJ": {
+            "terminalWork": 0.011524677375359036,
+            "windingHeat": 0.011812944521839001,
+            "brakeHeat": 0.0,
+            "externalWork": 1.2626066414484856e-06,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.92236362316438,
+            "initial": 21.92265064202614,
+            "residual": 1.4321923202942344e-08
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.007750000000000005,
+            "q": [
+              0.0,
+              0.29999088349824155,
+              0.1999305188655874
+            ],
+            "qd": [
+              0.0,
+              -0.002133149769001656,
+              -0.01795485518359177
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.27498163615672,
+            "motors": [
+              {
+                "omegaRadps": -1.5426710796839214,
+                "currentA": 4.467844066796299,
+                "actualTerminalV": 0.48,
+                "busPowerW": 2.1445651520622233,
+                "windingHeatW": 2.2813292120236444,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.0886540635670974,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.21197601923005227,
+                "currentA": 1.086804034120806,
+                "actualTerminalV": 0.12,
+                "busPowerW": 0.13041648409449672,
+                "windingHeatW": 0.13498777240928664,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.021565120108368516,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              64.86882700031518,
+              0.2587814413004222
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.31451811050785494,
+          "energyJ": {
+            "terminalWork": 0.01717379568988918,
+            "windingHeat": 0.01777266380932665,
+            "brakeHeat": 0.0,
+            "externalWork": 2.1683883172319394e-06,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.92205392433623,
+            "initial": 21.92265064202614,
+            "residual": 1.7958790010652592e-08
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.010250000000000007,
+            "q": [
+              0.0,
+              0.2999849687278068,
+              0.19987838060785695
+            ],
+            "qd": [
+              0.0,
+              -0.002583373292926218,
+              -0.02375387940507752
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.3041606078415513,
+            "motors": [
+              {
+                "omegaRadps": -1.8753948833089777,
+                "currentA": 4.525612762830406,
+                "actualTerminalV": 0.4799999999999999,
+                "busPowerW": 2.172294126158594,
+                "windingHeatW": 2.3407052433249667,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.08980035013704665,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.28157090740772933,
+                "currentA": 1.0988873473579752,
+                "actualTerminalV": 0.12000000000000001,
+                "busPowerW": 0.13186648168295703,
+                "windingHeatW": 0.13800610310667968,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.02180488559790076,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              65.70757327100975,
+              0.26165862717480914
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.313926382752113,
+          "energyJ": {
+            "terminalWork": 0.022902513814647443,
+            "windingHeat": 0.02390153188728791,
+            "brakeHeat": 0.0,
+            "externalWork": 2.8693329789177075e-06,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.92165447285515,
+            "initial": 21.92265064202614,
+            "residual": 2.043132951712323e-08
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.01275000000000001,
+            "q": [
+              0.0,
+              0.2999780338116252,
+              0.19981176235981485
+            ],
+            "qd": [
+              0.0,
+              -0.0029520413636542862,
+              -0.02953735292813507
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.328312769762727,
+            "motors": [
+              {
+                "omegaRadps": -2.147846632909522,
+                "currentA": 4.572916809415456,
+                "actualTerminalV": 0.48000000000000004,
+                "busPowerW": 2.195000068519419,
+                "windingHeatW": 2.389893502381078,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.09073898986802972,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.35098446325361715,
+                "currentA": 1.110939177027566,
+                "actualTerminalV": 0.12,
+                "busPowerW": 0.13331270124330794,
+                "windingHeatW": 0.1410498120062498,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.022044026368629108,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              66.39438283026566,
+              0.2645283164235493
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.31284624992524057,
+          "energyJ": {
+            "terminalWork": 0.02869706067130248,
+            "windingHeat": 0.03017204487513183,
+            "brakeHeat": 0.0,
+            "externalWork": 3.142424356290859e-06,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.92117877812361,
+            "initial": 21.92265064202614,
+            "residual": 2.2123057163980775e-08
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.015250000000000012,
+            "q": [
+              0.0,
+              0.29997026351122646,
+              0.19973071321431152
+            ],
+            "qd": [
+              0.0,
+              -0.0032539520146634485,
+              -0.03529740750623975
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.3483475512687595,
+            "motors": [
+              {
+                "omegaRadps": -2.370962570888792,
+                "currentA": 4.6116549960467115,
+                "actualTerminalV": 0.4799999999999999,
+                "busPowerW": 2.2135943981024213,
+                "windingHeatW": 2.430555634578582,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.09150765985935823,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.4201211923809043,
+                "currentA": 1.1229429430528166,
+                "actualTerminalV": 0.11999999999999998,
+                "busPowerW": 0.13475315316633799,
+                "windingHeatW": 0.14411438324024242,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.022282213427160497,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              66.9568242873353,
+              0.26738656112592596
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.31137598098079383,
+          "energyJ": {
+            "terminalWork": 0.03454615723006954,
+            "windingHeat": 0.03656112671870938,
+            "brakeHeat": 0.0,
+            "externalWork": 2.8078102046854595e-06,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.92063845705676,
+            "initial": 21.92265064202614,
+            "residual": 2.3290944284326542e-08
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.017750000000000012,
+            "q": [
+              0.0,
+              0.2999618090645294,
+              0.19963529983653727
+            ],
+            "qd": [
+              0.0,
+              -0.003501217514243932,
+              -0.04102779764592073
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.3650093737297535,
+            "motors": [
+              {
+                "omegaRadps": -2.553694068480353,
+                "currentA": 4.643381491792474,
+                "actualTerminalV": 0.48,
+                "busPowerW": 2.2288231160603873,
+                "windingHeatW": 2.464113334665246,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.09213719901259526,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.4889052706641494,
+                "currentA": 1.1348854805780513,
+                "actualTerminalV": 0.12,
+                "busPowerW": 0.13618625766936615,
+                "windingHeatW": 0.14719600617449993,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.02251918554728952,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              67.41746269214288,
+              0.27023022656747425
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.3095958695781156,
+          "energyJ": {
+            "terminalWork": 0.0404405643371194,
+            "windingHeat": 0.043049510972777254,
+            "brakeHeat": 0.0,
+            "externalWork": 1.7209191242864018e-06,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.92004339220243,
+            "initial": 21.92265064202614,
+            "residual": 2.41071731466036e-08
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.020250000000000015,
+            "q": [
+              0.0,
+              0.29995279427017807,
+              0.19952560279214582
+            ],
+            "qd": [
+              0.0,
+              -0.00370375183534177,
+              -0.04672360276941698
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.378907598873719,
+            "motors": [
+              {
+                "omegaRadps": -2.703367882472002,
+                "currentA": 4.669368394354134,
+                "actualTerminalV": 0.48000000000000004,
+                "busPowerW": 2.2412968292899844,
+                "windingHeatW": 2.4917715659649486,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.09265284917342671,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.5572769342980947,
+                "currentA": 1.1467564131977883,
+                "actualTerminalV": 0.12000000000000001,
+                "busPowerW": 0.1376107695837346,
+                "windingHeatW": 0.15029145956688644,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.022754736833175273,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              67.7947676878732,
+              0.27305684199810326
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.3075715014486629,
+          "energyJ": {
+            "terminalWork": 0.046372712609889434,
+            "windingHeat": 0.049621173551992595,
+            "brakeHeat": 0.0,
+            "externalWork": -2.3399096342732597e-07,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.919401922405967,
+            "initial": 21.92265064202614,
+            "residual": 2.4687107469389957e-08
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.022750000000000017,
+            "q": [
+              0.0,
+              0.2999433204675638,
+              0.19940171354990266
+            ],
+            "qd": [
+              0.0,
+              -0.0038696696478951816,
+              -0.05238098358199529
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.3905410414298247,
+            "motors": [
+              {
+                "omegaRadps": -2.825981024048336,
+                "currentA": 4.69065692624857,
+                "actualTerminalV": 0.48,
+                "busPowerW": 2.2515153245993136,
+                "windingHeatW": 2.5145442742587067,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.09307527100185298,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.625189526843357,
+                "currentA": 1.1585476402542585,
+                "actualTerminalV": 0.12000000000000001,
+                "busPowerW": 0.13902571683051104,
+                "windingHeatW": 0.1533980153987098,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.02298870654594279,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              68.10385683062414,
+              0.27586447855131346
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.3053564277984761,
+          "energyJ": {
+            "terminalWork": 0.052336399504764534,
+            "windingHeat": 0.056262827414049914,
+            "brakeHeat": 0.0,
+            "externalWork": -3.1491125733985237e-06,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.918721039896212,
+            "initial": 21.92265064202614,
+            "residual": 2.5108072065904707e-08
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.02525000000000002,
+            "q": [
+              0.0,
+              0.2999334706129714,
+              0.1992637320360958
+            ],
+            "qd": [
+              0.0,
+              -0.004005612892808065,
+              -0.057996982781363
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.4003180326801457,
+            "motors": [
+              {
+                "omegaRadps": -2.9264421080058205,
+                "currentA": 4.70809933872152,
+                "actualTerminalV": 0.48000000000000004,
+                "busPowerW": 2.2598876825863297,
+                "windingHeatW": 2.533279929516573,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.09342137545872792,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.6926070837195433,
+                "currentA": 1.1702529174484664,
+                "actualTerminalV": 0.12000000000000001,
+                "busPowerW": 0.14043035009381596,
+                "windingHeatW": 0.15651335894818824,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.02322097078187659,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              68.35710399419116,
+              0.2786516493825191
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.3029943527589858,
+          "energyJ": {
+            "terminalWork": 0.05832654136520098,
+            "windingHeat": 0.0629634814767653,
+            "brakeHeat": 0.0,
+            "externalWork": -7.0974093616965715e-06,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.91800657908334,
+            "initial": 21.92265064202614,
+            "residual": 2.5421876159725798e-08
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.02775000000000002,
+            "q": [
+              0.0,
+              0.2999233126159045,
+              0.19911176464028252
+            ],
+            "qd": [
+              0.0,
+              -0.004117018081854022,
+              -0.06356936204163109
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.408572842447385,
+            "motors": [
+              {
+                "omegaRadps": -3.008768896420304,
+                "currentA": 4.7223932099852055,
+                "actualTerminalV": 0.48000000000000004,
+                "busPowerW": 2.266748740792899,
+                "windingHeatW": 2.5486854433959283,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.09370500437519978,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.7595023563629401,
+                "currentA": 1.1818675137873864,
+                "actualTerminalV": 0.12,
+                "busPowerW": 0.14182410165448636,
+                "windingHeatW": 0.1596355223023975,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.023451435665328785,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              68.56463734770716,
+              0.2814172279839454
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.30052092325353097,
+          "energyJ": {
+            "terminalWork": 0.06433897047125106,
+            "windingHeat": 0.06971406118333186,
+            "brakeHeat": 0.0,
+            "externalWork": -1.2136151876158397e-05,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.91726338949893,
+            "initial": 21.92265064202614,
+            "residual": 2.5663251079777183e-08
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.030250000000000023,
+            "q": [
+              0.0,
+              0.2999129020698694,
+              0.1989459225902163
+            ],
+            "qd": [
+              0.0,
+              -0.004208335082024923,
+              -0.06909646867260262
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.4155791204752908,
+            "motors": [
+              {
+                "omegaRadps": -3.076249987674609,
+                "currentA": 4.734109518245232,
+                "actualTerminalV": 0.4799999999999999,
+                "busPowerW": 2.272372568757711,
+                "windingHeatW": 2.561347763513154,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.09393748749719935,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.825855196062738,
+                "currentA": 1.1933879309798303,
+                "actualTerminalV": 0.12,
+                "busPowerW": 0.14320655171757962,
+                "windingHeatW": 0.16276282900666517,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.023680031780777093,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              68.73474694917026,
+              0.2841603813693251
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.29796519357420204,
+          "energyJ": {
+            "terminalWork": 0.0703702689226792,
+            "windingHeat": 0.07650708560476663,
+            "brakeHeat": 0.0,
+            "externalWork": -1.8309810847832017e-05,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.916495489677708,
+            "initial": 21.92265064202614,
+            "residual": 2.5855499075078114e-08
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.03275000000000002,
+            "q": [
+              0.0,
+              0.2999022844875257,
+              0.19876632062874372
+            ],
+            "qd": [
+              0.0,
+              -0.004283206190098236,
+              -0.07457712655619957
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.42156089819135,
+            "motors": [
+              {
+                "omegaRadps": -3.131577158612566,
+                "currentA": 4.743715619418395,
+                "actualTerminalV": 0.4799999999999999,
+                "busPowerW": 2.276983497320829,
+                "windingHeatW": 2.5717529003330335,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.0941280984252679,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.8916512320469951,
+                "currentA": 1.2048116739210086,
+                "actualTerminalV": 0.12,
+                "busPowerW": 0.14457740087052104,
+                "windingHeatW": 0.16589384795615347,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.023906709618620167,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              68.87421835995212,
+              0.286880515423442
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.29535082381399147,
+          "energyJ": {
+            "terminalWork": 0.07641763267034477,
+            "windingHeat": 0.08333639489004231,
+            "brakeHeat": 0.0,
+            "externalWork": -2.565242465126214e-05,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.91570620136759,
+            "initial": 21.92265064202614,
+            "residual": 2.601420234782381e-08
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.035250000000000024,
+            "q": [
+              0.0,
+              0.29989149713015917,
+              0.19857307593768678
+            ],
+            "qd": [
+              0.0,
+              -0.004344612704896149,
+              -0.08001054694423654
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.4267015936491347,
+            "motors": [
+              {
+                "omegaRadps": -3.176953686386832,
+                "currentA": 4.751594054359073,
+                "actualTerminalV": 0.48,
+                "busPowerW": 2.280765146092355,
+                "windingHeatW": 2.5803024065623417,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.09428442780059923,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -0.9568807902967147,
+                "currentA": 1.2161370629731654,
+                "actualTerminalV": 0.12,
+                "busPowerW": 0.14593644755677984,
+                "windingHeatW": 0.16902735496422822,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.024131435850319648,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              68.98860570775554,
+              0.28957723020383574
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.29269706054150113,
+          "energyJ": {
+            "terminalWork": 0.08247876022393315,
+            "windingHeat": 0.09019692165376546,
+            "brakeHeat": 0.0,
+            "externalWork": -3.41895363905473e-05,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.91489826491004,
+            "initial": 21.92265064202614,
+            "residual": 2.6149880483217203e-08
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.03775000000000003,
+            "q": [
+              0.0,
+              0.29988057050511285,
+              0.19836630726372628
+            ],
+            "qd": [
+              0.0,
+              -0.004394994896512718,
+              -0.08539625550529763
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.4311513820779567,
+            "motors": [
+              {
+                "omegaRadps": -3.214183009765863,
+                "currentA": 4.7580579425522425,
+                "actualTerminalV": 0.4799999999999999,
+                "busPowerW": 2.283867812425076,
+                "windingHeatW": 2.587327472535369,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.09441268875738298,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -1.0215380093058741,
+                "currentA": 1.227363080440674,
+                "actualTerminalV": 0.12000000000000001,
+                "busPowerW": 0.1472835696528809,
+                "windingHeatW": 0.1721623007118652,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.024354190282052424,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              69.08245518832902,
+              0.2922502833846291
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.29001953930469754,
+          "energyJ": {
+            "terminalWork": 0.08855176155728356,
+            "windingHeat": 0.09708450015427038,
+            "brakeHeat": 0.0,
+            "externalWork": -4.393977874024675e-05,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.914073937380874,
+            "initial": 21.92265064202614,
+            "residual": 2.6269539432632882e-08
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.04025000000000003,
+            "q": [
+              0.0,
+              0.29986952959143626,
+              0.19814613420948368
+            ],
+            "qd": [
+              0.0,
+              -0.0044363502010363815,
+              -0.09073403266573442
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.4350332286854406,
+            "motors": [
+              {
+                "omegaRadps": -3.244741298345526,
+                "currentA": 4.7633635818393865,
+                "actualTerminalV": 0.48,
+                "busPowerW": 2.2864145192829053,
+                "windingHeatW": 2.593100870033571,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.09451796693531272,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -1.0856201169716033,
+                "currentA": 1.238489245021126,
+                "actualTerminalV": 0.12,
+                "busPowerW": 0.1486187094025351,
+                "windingHeatW": 0.17529778400377127,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.02457496336348198,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              69.15948800144834,
+              0.2948995603617838
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.28733094135051174,
+          "energyJ": {
+            "terminalWork": 0.0946350835454658,
+            "windingHeat": 0.1039957076274598,
+            "brakeHeat": 0.0,
+            "externalWork": -5.491617048792014e-05,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.913235075395733,
+            "initial": 21.92265064202614,
+            "residual": 2.6377929174259407e-08
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.04275000000000003,
+            "q": [
+              0.0,
+              0.29985839484308646,
+              0.19791267665969106
+            ],
+            "qd": [
+              0.0,
+              -0.0044703135928946085,
+              -0.09602386482741566
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.438447826516307,
+            "motors": [
+              {
+                "omegaRadps": -3.26983685042101,
+                "currentA": 4.767720761289314,
+                "actualTerminalV": 0.4799999999999999,
+                "busPowerW": 2.2885059654188704,
+                "windingHeatW": 2.5978470008719037,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.09460442511472814,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -1.1491268393148746,
+                "currentA": 1.2495155091453036,
+                "actualTerminalV": 0.11999999999999998,
+                "busPowerW": 0.1499418610974364,
+                "windingHeatW": 0.17843302943938827,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.024793754150706875,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              69.22275008394742,
+              0.2975250498084825
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.2846415310572245,
+          "energyJ": {
+            "terminalWork": 0.1007274489331154,
+            "windingHeat": 0.11092773276027053,
+            "brakeHeat": 0.0,
+            "externalWork": -6.71271771173042e-05,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.912383204543644,
+            "initial": 21.92265064202614,
+            "residual": 2.6478222281411945e-08
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.04525000000000003,
+            "q": [
+              0.0,
+              0.29984718301005175,
+              0.19766605431781323
+            ],
+            "qd": [
+              0.0,
+              -0.004498223369619786,
+              -0.10126590448460798
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.4414776381011456,
+            "motors": [
+              {
+                "omegaRadps": -3.2904587101451823,
+                "currentA": 4.771301202282968,
+                "actualTerminalV": 0.48,
+                "busPowerW": 2.2902245770958247,
+                "windingHeatW": 2.6017503043322168,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.09467547071047949,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -1.212059917062064,
+                "currentA": 1.260442175044342,
+                "actualTerminalV": 0.12,
+                "busPowerW": 0.15125306100532104,
+                "windingHeatW": 0.18156736875777277,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.025010568640807106,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              69.27473466620451,
+              0.30012682368968524
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.2819595957582087,
+          "energyJ": {
+            "terminalWork": 0.10682780637813112,
+            "windingHeat": 0.11787826692731103,
+            "brakeHeat": 0.0,
+            "externalWork": -8.057757827049594e-05,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.91151957732611,
+            "initial": 21.92265064202614,
+            "residual": 2.6572582356720886e-08
+          },
+          "fixedBase": true,
+          "acceptance": false
+        },
+        {
+          "state": {
+            "timeS": 0.047750000000000035,
+            "q": [
+              0.0,
+              0.299835907810448,
+              0.19740638633296576
+            ],
+            "qd": [
+              0.0,
+              -0.004521174996707002,
+              -0.10646043762207547
+            ]
+          },
+          "electrical": {
+            "busPowerW": 2.4441902035581458,
+            "motors": [
+              {
+                "omegaRadps": -3.307416460691646,
+                "currentA": 4.774245467544629,
+                "actualTerminalV": 0.48000000000000004,
+                "busPowerW": 2.2916378244214224,
+                "windingHeatW": 2.6049622610709067,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.09473389286572109,
+                "infeasible": false
+              },
+              {
+                "omegaRadps": -1.2744227104775896,
+                "currentA": 1.2712698261393598,
+                "actualTerminalV": 0.12000000000000001,
+                "busPowerW": 0.15255237913672318,
+                "windingHeatW": 0.18470022524027405,
+                "brakeHeatW": 0.0,
+                "torqueNm": 0.025225418410429523,
+                "infeasible": false
+              }
+            ],
+            "generalizedMotorForce": [
+              0.0,
+              69.31748258467397,
+              0.3027050209251543
+            ],
+            "infeasibleCurrentLimitVoltage": false
+          },
+          "constraintForceX_N": 0.2792918056938102,
+          "energyJ": {
+            "terminalWork": 0.1129352895605861,
+            "windingHeat": 0.12484541442714966,
+            "brakeHeat": 0.0,
+            "externalWork": -9.52691771514983e-05,
+            "fixedConstraintWork": 0.0,
+            "mechanical": 21.91064522131998,
+            "initial": 21.92265064202614,
+            "residual": 2.6662444696512466e-08
+          },
+          "fixedBase": true,
+          "acceptance": false
+        }
+      ],
+      "final": {
+        "state": {
+          "timeS": 0.05000000000000004,
+          "q": [
+            0.0,
+            0.2998257152830042,
+            0.19716162891472885
+          ],
+          "qd": [
+            0.0,
+            -0.0045383368752734,
+            -0.11109522220180479
+          ]
+        },
+        "electrical": {
+          "busPowerW": 2.446406208882549,
+          "motors": [
+            {
+              "omegaRadps": -3.320095928867923,
+              "currentA": 4.776446922129391,
+              "actualTerminalV": 0.48,
+              "busPowerW": 2.2926945226221074,
+              "windingHeatW": 2.6073651657050663,
+              "brakeHeatW": 0.0,
+              "torqueNm": 0.09477757565584977,
+              "infeasible": false
+            },
+            {
+              "omegaRadps": -1.3300654579420526,
+              "currentA": 1.2809307188370145,
+              "actualTerminalV": 0.12000000000000001,
+              "busPowerW": 0.15371168626044174,
+              "windingHeatW": 0.1875181150240355,
+              "brakeHeatW": 0.0,
+              "torqueNm": 0.025417116549963502,
+              "infeasible": false
+            }
+          ],
+          "generalizedMotorForce": [
+            0.0,
+            69.3494456018413,
+            0.305005398599562
+          ],
+          "infeasibleCurrentLimitVoltage": false
+        },
+        "constraintForceX_N": 0.2769073320214415,
+        "energyJ": {
+          "terminalWork": 0.11843752349947563,
+          "windingHeat": 0.1311287589391528,
+          "brakeHeat": 0.0,
+          "externalWork": -0.00010955239153145954,
+          "fixedConstraintWork": 0.0,
+          "mechanical": 21.909849827454625,
+          "initial": 21.92265064202614,
+          "residual": 2.6740309522210737e-08
+        },
+        "fixedBase": true,
+        "acceptance": false
+      },
+      "peakResidualJ": 2.6740309522210737e-08
+    }
+  ],
+  "acceptance": false,
+  "limits": [
+    "Mass4kg carriage and3kg rotating,COM(.03,.04)m,I=.1kgm2,rotor inertia3e-5 are declared exploratory parameters, not a sourced mass ledger.",
+    "Loose NOTE and base chassis are excluded from these masses. Do not add them onto an unchanged45kg whole-robot hypothesis.",
+    "One reciprocal ideal NEO law per actuator follows existing pinch model; friction, gear efficiency, backlash and chain polygon effects absent.",
+    "Nominal12:1 ratios and16.4mm chain radius are candidate geometry, not verified installed transmission.",
+    "No endstop, collision, sensor, pitch/lift controller or achieved trajectory.",
+    "Fixed-base fixtures explicitly impose zero base velocity; they are not continuation of the indexed acquisition state.",
+    "Full baseX/z/theta mass and force terms are exposed for caller coupling; no chassis mass is hidden here.",
+    "12V fixture is supplied externally; actual multi-mechanism shared-bus integration remains with the coordinator."
+  ]
+}

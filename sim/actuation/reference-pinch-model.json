@@ -1,0 +1,57 @@
+{
+  "schema": "free-planar-acquisition-hypotheses/1",
+  "model": {
+    "stepS": 0.0001,
+    "horizonS": 2.0,
+    "kvRadpsPerV": 50.39638215133627,
+    "motorResistanceOhm": 0.11428571428571428,
+    "sourceV": 12.0,
+    "sourceResistanceOhm": 0.02,
+    "currentLimitA": 40.0,
+    "radiusM": 0.012127606663602424,
+    "slipRegularizationMps": 0.01,
+    "pieceMassKg": 0.235,
+    "yawInertiaKgM2": 0.00557176305,
+    "rotorInertiaKgM2": 3e-05,
+    "normalStiffnessNpm": 2000.0,
+    "compressionAlphaSpm": 2.0,
+    "beltMu": 0.6,
+    "groundMu": 0.4,
+    "groundRingRadiusM": 0.1524
+  },
+  "initialRobotRelativeX": 0.658,
+  "approachMps": 0.4,
+  "duty": 0.12,
+  "offsetsM": [
+    0.0,
+    -0.005,
+    0.005
+  ],
+  "sensitivity": {
+    "stiffnessNpm": [
+      1000,
+      2000,
+      4000,
+      8000
+    ],
+    "groundMu": [
+      0.1,
+      0.4
+    ],
+    "halfStepS": 5e-05,
+    "extraOffsetsM": [
+      0.001,
+      0.0025
+    ]
+  },
+  "assumptions": [
+    "Flat coplanar torus only; free XY/yaw, fixed ground height.",
+    "Two reciprocal-DC motor surrogates with shared resistive supply; no calibration or regeneration.",
+    "Single resultant contact per finite belt is a pressure-distribution hypothesis.",
+    "Normal k delta times (1+alpha compressionSpeed), regularized Coulomb belt and ground friction.",
+    "Uniform solid-torus yaw inertia and four equal ground load points are hypotheses.",
+    "Prescribed constant robot approach is external boundary work, not a drivetrain simulation.",
+    "Every unsupported geometry candidate stops the trace; native samples do not establish a continuous hard-clear corridor.",
+    "No capture, lift retention, score, hardware safety or manufacturing acceptance."
+  ]
+}
