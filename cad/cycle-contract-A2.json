@@ -124,7 +124,7 @@
       "releasePitchDeg": 60,
       "wheelRadius": 0.0508,
       "rollerWidth": 0.38,
-      "nominalGap": 0.0468,
+      "nominalGap": 0.0492,
       "adjustableGapDesignRange": [
         0.04,
         0.06
@@ -148,7 +148,8 @@
           0
         ],
         "worldHeadingDeg": 180
-      }
+      },
+      "gapBasis": "49.2mm candidate: nominal0.8mm indentation per side and0.47mm bare-flange aligned clearance; contact force and tolerances uncalibrated"
     },
     "extensionLimit": 0.3048
   },
