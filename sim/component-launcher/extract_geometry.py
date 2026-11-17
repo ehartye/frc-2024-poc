@@ -19,13 +19,19 @@ def solids(s):
  return out
 
 def common_volume(x,y):
- op=BRepAlgoAPI_Common(x,y);op.Build()
- if not op.IsDone():raise ValueError('Boolean failed')
- z=op.Shape()
- if not BRepCheck_Analyzer(z).IsValid():raise ValueError('Invalid intersection')
- total=0
- for s in solids(z):
-  g=GProp_GProps();BRepGProp.VolumeProperties_s(s,g);total+=abs(g.Mass())
+ # Never trust a whole-compound Boolean as a material-clearance witness.
+ xs,ys=solids(x),solids(y)
+ if not xs or not ys:raise ValueError('Solid material inputs required')
+ total=0.
+ for left in xs:
+  for right in ys:
+   if not BRepCheck_Analyzer(left).IsValid() or not BRepCheck_Analyzer(right).IsValid():raise ValueError('Invalid material solid')
+   op=BRepAlgoAPI_Common(left,right);op.Build()
+   if not op.IsDone():raise ValueError('Boolean failed')
+   z=op.Shape()
+   if not BRepCheck_Analyzer(z).IsValid():raise ValueError('Invalid intersection')
+   for piece in solids(z):
+    g=GProp_GProps();BRepGProp.VolumeProperties_s(piece,g);total+=abs(g.Mass())
  return total
 
 def run():

@@ -15,3 +15,7 @@ The powered upstream-feeder experiment is blocked by this geometry result. The l
 ## Native wheel witnesses
 
 Private hash-pinned AM-3608 source CAD, validated as one solid, was separately placed with the same wheel-center/tread-offset transform. All four bare wheels have zero intersection at advances140,220,300mm (12 checks). These three witnesses distinguish the conservative cylindrical shell representation from the source profile at those poses; they do not prove continuous wheel clearance or resolve cradle collisions. The source geometry is not redistributed. `native-wheel-witnesses.json` records scalar results and source/script pins.
+
+## Material intersection update
+
+The current checker intersects individual valid material solids and sums absolute intersection volumes. A compound-level empty Boolean is not clearance evidence. The previous archived geometry/transfer receipts retain their prior source hashes and do not validate this revised checker; regenerate against the forthcoming corrected connected assembly before running the six-drive case. Three small native regression tests cover compound aggregation, empty-material rejection and separated solids.
