@@ -8,9 +8,9 @@ class FiniteGuide(unittest.TestCase):
   s=next(s for s in self.rows if s['pitchDeg']==deg);return [s['noteCenterRobotMm'][j]/1000 for j in [0,2]],math.radians(deg)
  def test_lower_round_and_flat_normals(self):
   for deg in [4,6,8,10,12,14,16,18]:
-   x,p=self.pose(deg);q=g.query_round_xz(x,p,self.c);self.assertTrue(q['geometryDomainValid']);self.assertGreater(q['penetrationM'],0);self.assertAlmostEqual(sum(v*v for v in q['normalWorldXZ']),1)
-  x,p=self.pose(4);self.assertLess(g.query_round_xz(x,p,self.c)['normalWorldXZ'][1],0)
-  x,p=self.pose(10);q=g.query_round_xz(x,p,self.c);self.assertEqual(q['normalWorldXZ'],[-1,0]);self.assertGreater(q['positivePitchTorquePerNormalN'],0)
+   x,p=self.pose(deg);q=g.query_round_xz(x,p,self.c);self.assertTrue(q['geometryDomainValid']);self.assertGreater(q['penetrationM'],0);self.assertAlmostEqual(sum(v*v for v in q['normalRobotXZ']),1)
+  x,p=self.pose(4);self.assertLess(g.query_round_xz(x,p,self.c)['normalRobotXZ'][1],0)
+  x,p=self.pose(10);q=g.query_round_xz(x,p,self.c);self.assertEqual(q['normalRobotXZ'],[-1,0]);self.assertGreater(q['positivePitchTorquePerNormalN'],0)
  def test_potential_derivative(self):
   for deg in [4,6,10,16]:
    x,p=self.pose(deg);q=g.query_round_xz(x,p,self.c);eps=1e-7
