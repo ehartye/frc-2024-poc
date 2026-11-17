@@ -33,3 +33,9 @@ The actual free-body center, attitude and velocity need fresh transfer/contact r
 Run `python sim/retention/refine_slip.py --output artifacts/a-fresh-refinement` and then `python sim/retention/summarize_refinement.py artifacts/a-fresh-refinement/report.json artifacts/a-fresh-summary.json`. The tracked compact summary binds the complete archived trace report by SHA-256 and all current inputs; it does not pretend to contain the complete trace.
 
 At 25/12.5/6.25 microseconds, all three runs remain inside the nominal fixed-patch domain. Across saved, interpolated traces, the last refinement changes center by at most 0.0118 mm, pitch by 0.000192 rad, velocity by 0.00282 m/s and angular velocity by 0.0557 rad/s. These differences decrease relative to the preceding pair; angular-velocity sensitivity is still explicitly visible. Maximum energy residual falls from 0.0434 to 0.0206 to 0.0109 mJ. This is a bounded numerical diagnostic, not a continuous-time convergence proof, calibration, or downstream transfer acceptance. Between-saved-sample extrema are not bounded.
+
+## Unsnapped CAD handoff boundary
+
+`python sim/retention/check_free_handoff_pose.py --output artifacts/a-fresh-free-handoff` checks the actual finest-step final NOTE pose against all 711 current CAD parts. Its center is [182.980, 0, 482.877] mm, pitch about 63.36 degrees, downward velocity about 41.7 mm/s, and pitch rate about -0.0919 rad/s. None are reset to match the cradle or old aligned six-drive model.
+
+The single-pose native screen finds only the two designated side-belt overlaps, no other represented-part contacts. This is NOT a transfer trajectory or retention guarantee; the known undersized bearing representation remains a separate source-native gate. The actual final velocity/attitude require continued dynamic contact integration before release or score claims.
