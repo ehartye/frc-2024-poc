@@ -20,7 +20,7 @@ def query(center_robot_m,axis_robot,contract,*,margin_m=1e-9):
  lo=[_number(g['guideFaceXmm'])/1000,-_number(g['halfWidthMm'])/1000,_number(g['bottomZmm'])/1000]
  hi=[_number(g['supportInboardFaceXmm'])/1000,-lo[1],_number(g['topZmm'])/1000]
  if any(a>=b for a,b in zip(lo,hi)):raise ValueError('positive guide extents required')
- extent=[major*math.sqrt(max(0.,1-x*x))+tube for x in n]
+ extent=[major*math.hypot(*(n[j] for j in range(3) if j!=i))+tube for i in range(3)]
  lower=[x-e for x,e in zip(c,extent)];upper=[x+e for x,e in zip(c,extent)]
  gaps=[max(a-v,u-b) for a,b,u,v in zip(lo,hi,lower,upper)]
  separated=max(gaps)>margin
