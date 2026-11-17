@@ -18,6 +18,30 @@ class VisualTests(unittest.TestCase):
    rows.append(dict(group=group,sourceRootIndices=indices,file=p.name,sha256=hashlib.sha256(raw).hexdigest(),triangles=4,boundsMm=[[0,0,0],[20,20,20]]))
   m=dict(schema='fusion-visual-meshes/1',units='mm',frame='robot-floor-XYZ',sourceFormat='F3D',sourceSha256=hashlib.sha256((d/'synthetic.f3d').read_bytes()).hexdigest(),meshes=rows)
   p=d/'manifest.json';p.write_text(json.dumps(m));return p
+ def fixture_v2(self,d):
+  path=self.fixture(d);m=json.loads(path.read_text());m['schema']='fusion-visual-meshes/2';bodies=[]
+  for row in m['meshes']:
+   row['name']=row['group'];row['sourceBodyKeys']=[]
+   for i in row.pop('sourceRootIndices'):
+    key='root-'+str(i);bodies.append(dict(key=key,sourceRootIndex=i,group=row['group']));row['sourceBodyKeys'].append(key)
+  added=dict(m['meshes'][0]);added.update(name='bumper-red',sourceBodyKeys=['native-bumper'],rgba=[.84,.1,.13,1]);m['meshes'].append(added)
+  bodies.append(dict(key='native-bumper',sourceRootIndex=None,group='fixed'));m['bodyInventory']=bodies;m['sourceBodies']=len(bodies)
+  path.write_text(json.dumps(m));return path
+ def test_v2_color_segments(self):
+  with tempfile.TemporaryDirectory() as td:
+   d=pathlib.Path(td);path=self.fixture_v2(d);view=FusionDisplay(path,d/'synthetic.f3d')
+   self.assertEqual(view.model.nmocap,3);self.assertEqual(len(view.meshes),4)
+   np.testing.assert_allclose(view.model.geom('bumper-red').rgba,[.84,.1,.13,1],atol=1e-7)
+ def test_v2_rejects_bad_coverage_and_color(self):
+  for change in ('duplicate','missing','wrong-group','color'):
+   with tempfile.TemporaryDirectory() as td:
+    d=pathlib.Path(td);path=self.fixture_v2(d);m=json.loads(path.read_text())
+    if change=='duplicate':m['meshes'][-1]['sourceBodyKeys']=['root-1']
+    elif change=='missing':m['bodyInventory'][0]['sourceRootIndex']=None
+    elif change=='wrong-group':m['meshes'][-1]['group']='cradle'
+    else:m['meshes'][-1]['rgba']=[float('nan'),0,0,1]
+    path.write_text(json.dumps(m))
+    with self.assertRaises(ValueError):load_manifest(path,d/'synthetic.f3d')
  def test_transform(self):
   pp=poses([1,2,3],[1,0,0,0],.2,np.pi/3)
   point=np.array([.3,.04,.1]);pos,q=pp['cradle']
