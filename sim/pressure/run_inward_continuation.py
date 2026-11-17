@@ -31,9 +31,12 @@ def load(scenario='nominal'):
  p.geometry=new
  if c.export(p)!=before:raise ValueError('domain transition changed physical state/energy')
  pins=dict(pins);pins.update({f:c.factory.r.sha(R/f) for f in FILES+[SOURCE]})
- ancestry=dict(source=SOURCE,sha256=pins[SOURCE],oldCheckpointDigest=before['digest'],transition='state-identical domain-only extension; NOT physical validation',newDomain=DOMAIN)
+ ancestry=dict(source=SOURCE,sha256=pins[SOURCE],oldCheckpointDigest=before['digest'],transition='state-identical domain-only extension; NOT physical validation',newDomain=DOMAIN,lastCommand=copy.deepcopy(report['events'][-1]['command']),nextControllerTimeS=report['events'][-1]['timeS']+.01)
  if raw!=(R/SOURCE).read_bytes():raise ValueError('source changed')
  return p,controller,pins,bus,ancestry
+
+def controller_due(now,next_tick):
+ return now>=next_tick-1e-12
 
 def run(output,scenario='nominal',dt=.001,duration=.05):
  if output.exists() or dt not in [.001,.0005] or duration not in [.002,.02,.05]:raise ValueError('fresh predeclared run required')
@@ -48,11 +51,12 @@ def run(output,scenario='nominal',dt=.001,duration=.05):
    last['status']='UNKNOWN';last['reason']=str(e);raise
   last['status']=result['status'];return result
  p.geometry=query;start=time.perf_counter();inherited=initial['diagnostics']['residualJ']
+ command=copy.deepcopy(ancestry['lastCommand']);next_tick=ancestry['nextControllerTimeS']
  for i in range(round(duration/dt)):
-  if i%round(.01/dt)==0:
+  if controller_due(p.t,next_tick):
    observation=prior.observe(p.t,p.drive.state,p.note,bus)
    if scenario=='stale':observation['timestamp']=p.t-.051
-   command=controller.update(p.t,observation);events.append(dict(timeS=p.t,observation=observation,command=copy.deepcopy(command)))
+   command=controller.update(p.t,observation);next_tick+=.01;events.append(dict(timeS=p.t,observation=observation,command=copy.deepcopy(command)))
   before=export_domain(p)
   try:row=p.step(dt,command['driveDemands'],command['pinchDemands'],[p.drive.c['massKg']*9.80665/2]*2,modes=command['modes'])
   except (ValueError,prior.DomainExit) as e:
