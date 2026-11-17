@@ -1,0 +1,9 @@
+# Analytical side-belt geometry
+
+`belt_contact_geometry.geometry(config)` derives the same smooth capsule-annulus extrusion authored by the CAD generator. Coordinates are cradle-local millimeters. The floor origin is[178,0,25.4]mm. The straight NOTE-facing faces are y=plus/minus176.922393mm, x from-19.05 to146.05mm, and z from-6.35 to6.35mm. Rounded end wraps are finite, not an extrapolated plane.
+
+`query(point,side,g)` returns an exact point signed distance to this authored material and outer-sidewall witness metadata. The sidewall radial gap alone is not full-solid penetration when height is exceeded or the point is inside the loop cavity. Top/bottom/edge contact needs separate handling. `inner_face_at` rejects points beyond the finite wrap or height.
+
+`coplanar_note_contact(center,R,r,side,g)` provides an analytic nearest outer-wall witness only when the NOTE major ring is at belt midheight and the entire major ring remains outside the outer capsule. It fails closed otherwise. Within that domain, the distance from the NOTE center to the finite axis segment, minus major radius and outer capsule radius, is the nearest major-ring-to-belt material distance. Tube radius minus this distance is geometric penetration. The result supplies a selected surface-point lever, normal and acquisition/handoff tangents, but no force law or pressure distribution. Acquisition travels rearward on the straight inner faces; handoff reverses it.
+
+Six tests cover endpoints, finite height, loop cavity, invalid inputs, supported domain and comparison with1,440-point major-ring sampling. The source-bound native parity report verifies material sign at4,000 deterministic points against the actual authored belt solids. This is geometric agreement, not physical tooth, friction or compliance validation.
