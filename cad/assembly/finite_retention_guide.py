@@ -16,7 +16,7 @@ def query(center_mm,pitch_rad,contract,*,yaw_rad=0.,roll_rad=0.):
  """
  if len(center_mm)!=3 or not all(math.isfinite(float(v)) for v in [*center_mm,pitch_rad,yaw_rad,roll_rad]):raise ValueError('finite pose required')
  x,y,z=map(float,center_mm);g=contract['guide'];R=contract['majorRadiusMm'];r=contract['tubeRadiusMm']
- base={'forceLaw':None,'adopted':False,'nativeMaterialStatus':'UNKNOWN_BOOLEAN_WITNESS_DISAGREEMENT' if contract['nativeConsistencyUnknown'] else 'NOT_QUALIFIED','receiptSha256':contract['receiptSha256']}
+ base={'frame':'robot-longitudinal-XZ; not inertial world','forceLaw':None,'adopted':False,'nativeMaterialStatus':'UNKNOWN_BOOLEAN_WITNESS_DISAGREEMENT' if contract['nativeConsistencyUnknown'] else 'NOT_QUALIFIED','receiptSha256':contract['receiptSha256']}
  def unknown(reason,**kw):return dict(base,status='UNKNOWN',reason=reason,**kw)
  if abs(yaw_rad)>1e-12 or abs(roll_rad)>1e-12 or not 0<=pitch_rad<=math.pi/3:return unknown('unsupported attitude')
  cp=math.cos(pitch_rad);sp=math.sin(pitch_rad);face=g['guideFaceXmm'];depth=x+R*cp+r-face
@@ -50,7 +50,7 @@ def query_round_xz(center_m,pitch_rad,contract,*,y_m=0.):
  left-facing vertical capsule. Finite side edges and mount holes are separately gated.
  """
  if len(center_m)!=2 or not all(math.isfinite(float(v)) for v in [*center_m,pitch_rad,y_m]):raise ValueError('finite XZ pose')
- x,z=[float(v)*1000 for v in center_m];y=y_m*1000;g=contract['guide'];R=contract['majorRadiusMm'];r=contract['tubeRadiusMm'];base={'forceLaw':None,'adopted':False,'nativeMaterialStatus':'UNKNOWN_BOOLEAN_WITNESS_DISAGREEMENT' if contract['nativeConsistencyUnknown'] else 'NOT_QUALIFIED','receiptSha256':contract['receiptSha256']}
+ x,z=[float(v)*1000 for v in center_m];y=y_m*1000;g=contract['guide'];R=contract['majorRadiusMm'];r=contract['tubeRadiusMm'];base={'frame':'robot-longitudinal-XZ; not inertial world','forceLaw':None,'adopted':False,'nativeMaterialStatus':'UNKNOWN_BOOLEAN_WITNESS_DISAGREEMENT' if contract['nativeConsistencyUnknown'] else 'NOT_QUALIFIED','receiptSha256':contract['receiptSha256']}
  def unknown(reason,**extra):return dict(base,status='UNKNOWN',geometryDomainValid=False,reason=reason,**extra)
  if not 0<=pitch_rad<=math.pi/3:return unknown('unsupported attitude')
  cp=math.cos(pitch_rad);sp=math.sin(pitch_rad);face=g['guideFaceXmm'];rg=g['longEdgeRadiusMm'];low=g['bottomZmm']+rg;high=g['topZmm']-rg;mx=x+R*cp;mz=z+R*sp
@@ -73,4 +73,4 @@ def query_round_xz(center_m,pitch_rad,contract,*,y_m=0.):
  nx=dx/distance;nz=dz/distance;point=[(axisx+rg*nx)/1000,(axisz+rg*nz)/1000];lever=[point[0]-center_m[0],point[1]-center_m[1]]
  jac=[-nx,-nz,(nx*R*sp-nz*R*cp)/1000]
  known=any(abs(math.degrees(pitch_rad)-v['pitchDeg'])<1e-7 and max(abs(q-v['centerRobotMm'][j]) for q,j in [(x,0),(y,1),(z,2)])<1e-7 for v in contract['knownDisagreements'])
- return dict(base,status='UNKNOWN' if known else 'ANALYTIC_FINITE_GUIDE_CANDIDATE',geometryDomainValid=not known,reason='archived Boolean/witness disagreement' if known else 'shallow nominal torus versus lower/straight guide capsule',penetrationM=depth/1000,guidePointWorldXZm=point,normalWorldXZ=[nx,nz],tangentWorldXZ=[nz,-nx],leverWorldXZm=lever,penetrationJacobianXZPitch=jac,positivePitchTorquePerNormalN=lever[0]*nz-lever[1]*nx,conservativePatchYZm=[v/1000 for v in bounds],surface='lower rounded edge' if mz<low else 'planar wear face',pointIsPressureCentroid=False)
+ return dict(base,status='UNKNOWN' if known else 'ANALYTIC_FINITE_GUIDE_CANDIDATE',geometryDomainValid=not known,reason='archived Boolean/witness disagreement' if known else 'shallow nominal torus versus lower/straight guide capsule',penetrationM=depth/1000,guidePointRobotXZm=point,normalRobotXZ=[nx,nz],tangentRobotXZ=[nz,-nx],leverRobotXZm=lever,penetrationJacobianXZPitch=jac,positivePitchTorquePerNormalN=lever[0]*nz-lever[1]*nx,conservativePatchYZm=[v/1000 for v in bounds],surface='lower rounded edge' if mz<low else 'planar wear face',pointIsPressureCentroid=False)
