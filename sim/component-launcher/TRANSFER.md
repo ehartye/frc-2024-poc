@@ -23,3 +23,7 @@ The current checker intersects individual valid material solids and sums absolut
 ## Connected assembly revision 34c0bab
 
 The full 711-part, 49-position advancing-NOTE screen removes the former cradle/bearing/attachment interference. Only conservative bare-wheel shell envelopes overlap. Exact pinned native AM-3608 witnesses at all 17 affected positions retain real overlaps at advances 150,160,170,270,280,290 mm (maximum about 6.323 mm3 per wheel). Earlier 140/220/300 mm witnesses missed these intermediate contacts. This is not a safety conclusion for a foam NOTE, but it invalidates a claim that the contact is tread-only. Compliance, flange contact or revised geometry must be addressed deliberately before claiming the six-drive force law matches the assembly. No old exit/score evidence transfers. All checks remain finite-sampled and nominal.
+
+## Six-drive runner preparation
+
+`run_six_drive.py` verifies the complete current CAD/script inventory, full transfer domain, every linked native wheel witness and absence of real bare-wheel contact before executing. The present baseline is deliberately rejected. The runner adds shared-power state, virtual hold/spinup, release from rest, low-friction and omitted-pinch controls, sensor loss, load step and motor-off cases. The three new tests use synthetic contact tables only and do not establish a real transfer. Wider-gap geometry and fresh native/contact evidence are still required. Pinch/launcher preload and friction remain separately configurable hypotheses.
