@@ -19,6 +19,12 @@ class Continuity(unittest.TestCase):
    bad=copy.deepcopy(s);mutate(bad)
    with self.assertRaises(ValueError):restore(bad,geometry,ID,D,dict(C,groundMu=0))
   with self.assertRaises(ValueError):restore(s,geometry,{'fixture':'b'*64},D,dict(C,groundMu=0))
+ def test_malformed_shapes_and_missing_fields_rejected(self):
+  s=checkpoint(self.plant(),ID)
+  mutations=[lambda x:x['drive'].update(vx=[]),lambda x:x['note'].update(p=[[.3],.001]),lambda x:x['note'].update(v=[True,0.]),lambda x:x['energy'].update(sourceWork={}),lambda x:x.pop('timeS'),lambda x:x.update(drive=[]),lambda x:x.update(timeS=True),lambda x:x['drive'].update(wheel=[0.])]
+  for mutate in mutations:
+   bad=copy.deepcopy(s);mutate(bad)
+   with self.assertRaises(ValueError):restore(bad,geometry,ID,D,dict(C,groundMu=0))
  def test_checkpoint_is_not_live_alias(self):
   p=self.plant();s=checkpoint(p,ID);s['note']['p'][0]=999;self.assertNotEqual(p.note['p'][0],999)
 if __name__=='__main__':unittest.main()
