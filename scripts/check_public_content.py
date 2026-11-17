@@ -12,6 +12,9 @@ PATTERNS={
 # Only the upstream Apache-licensed Gradle wrapper binary is permitted.
 WRAPPER='shared/examples/java-2026-sim/gradle/wrapper/gradle-wrapper.jar'
 WRAPPER_SHA='2db75c40782f5e8ba1fc278a5574bab070adccb2d21ca5a6e5ed840888448046'
+# Explicitly reviewed first-party generated render; no general image/binary exemption.
+ORIGINAL_ASSETS={'cad/assembly/connected-floor.png':'e17417934f3fc0ac5ec21908c1349d1555065f7f6aa096b0feb4adc6dd4e6ed4'}
+
 def findings(data):
  text=data.decode('utf-8',errors='replace')
  return [name for name,p in PATTERNS.items() if re.search(p,text)]
@@ -21,6 +24,9 @@ def audit(revision='HEAD'):
  for raw in git('ls-tree','-rz','--name-only',revision).split(b'\0'):
   if not raw:continue
   path=raw.decode();data=git('show',revision+':'+path)
+  if path in ORIGINAL_ASSETS:
+   if hashlib.sha256(data).hexdigest()!=ORIGINAL_ASSETS[path]:failures.append((path,['unreviewed-original-asset']))
+   continue
   if path==WRAPPER:
    if hashlib.sha256(data).hexdigest()!=WRAPPER_SHA:failures.append((path,['unreviewed-binary']))
    continue

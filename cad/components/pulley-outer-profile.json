@@ -1,0 +1,87 @@
+{
+  "schema": "pulley-outer-axial-envelope/1",
+  "nativeSourceSha256": "c2825524b2293af12647d92ad57e9162379ad64105b86f867be2223037059c68",
+  "scriptSha256": "23325f74745de7ea2d828340c816143346221c44325784d6e8934b08553efde5",
+  "part": "REV-21-2201",
+  "nativeSolidCount": 3,
+  "bands": [
+    {
+      "zMinMm": -9.3473,
+      "zMaxMm": -7.14375,
+      "proposedOuterRadiusMm": 13.2,
+      "nativeRadialUpperBoundMm": 13.159794675882727,
+      "directionalSupportUpperBoundsMm": [
+        13.143943126864688,
+        13.143696925072557,
+        13.142960690754009,
+        13.141741514247999,
+        13.140051136890749,
+        13.137905837940265,
+        13.13532627779818,
+        13.13233729903879,
+        13.128967687161493,
+        13.132337299038792,
+        13.13532627779818,
+        13.137905837940265,
+        13.14005113689075,
+        13.141741514247999,
+        13.142960690754009,
+        13.143696925072556
+      ]
+    },
+    {
+      "zMinMm": -7.14375,
+      "zMaxMm": 7.14375,
+      "proposedOuterRadiusMm": 12.0,
+      "nativeRadialUpperBoundMm": 11.834522013658692,
+      "directionalSupportUpperBoundsMm": [
+        11.569187500641002,
+        11.748134377098,
+        11.81901191990942,
+        11.82026681360239,
+        11.783823157633039,
+        11.640759058511696,
+        11.700429316132825,
+        11.807457441297808,
+        11.82026681360239,
+        11.807457441297817,
+        11.70042931613285,
+        11.640759058511668,
+        11.783823157633025,
+        11.82026681360239,
+        11.819011919909423,
+        11.748134377098014
+      ]
+    },
+    {
+      "zMinMm": 7.14375,
+      "zMaxMm": 9.3473,
+      "proposedOuterRadiusMm": 13.2,
+      "nativeRadialUpperBoundMm": 13.159787653498812,
+      "directionalSupportUpperBoundsMm": [
+        13.14393611293954,
+        13.14368991114741,
+        13.142953676828862,
+        13.141734500322851,
+        13.140044122965602,
+        13.137898824015119,
+        13.135319263873033,
+        13.132330285113644,
+        13.128960673236346,
+        13.132330285113643,
+        13.135319263873031,
+        13.137898824015119,
+        13.140044122965602,
+        13.141734500322851,
+        13.142953676828862,
+        13.14368991114741
+      ]
+    }
+  ],
+  "acceptance": false,
+  "limits": [
+    "Outer radial containment bound only; bore/teeth/mating geometry omitted from public proxy",
+    "Nominal source CAD, not manufacturing tolerance or contact compliance",
+    "No vendor shape redistributed; original cylindrical bands are authored separately"
+  ]
+}

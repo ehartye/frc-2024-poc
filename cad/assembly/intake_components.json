@@ -22,20 +22,40 @@
   "pinch": {
     "teeth": 12,
     "pitch": 6.35,
-    "beltTeethHypothesis": 104,
+    "beltTeethHypothesis": 64,
     "beltWidth": 12.7,
     "beltRadialThicknessHypothesis": 2,
-    "innerFaceYAbs": 175.1723933363976,
-    "shaftLower": -20,
-    "shaftLength": 80,
-    "lowerBearingZ": -16,
-    "upperBearingZ": 16,
+    "innerFaceYAbs": 176.9223933363976,
+    "shaftLower": -23,
+    "shaftLength": 83,
+    "lowerBearingZ": -18.4,
+    "upperBearingZ": 25.4,
     "drivePulleyZ": 40,
     "motorOffsetY": 114.3,
     "motorFaceZ": 150,
-    "beltPartCurrent": "REV-21-4104",
+    "beltPartCurrent": "REV-21-4064",
     "motorSideYAbs": 160,
-    "transferBeltTeeth": 48
+    "transferBeltTeeth": 48,
+    "rearShaftLength": 57,
+    "beltCenterX": 63.5,
+    "outerProfileBands": [
+      {
+        "zMinMm": -9.3473,
+        "zMaxMm": -7.14375,
+        "proposedOuterRadiusMm": 13.2
+      },
+      {
+        "zMinMm": -7.14375,
+        "zMaxMm": 7.14375,
+        "proposedOuterRadiusMm": 12.0
+      },
+      {
+        "zMinMm": 7.14375,
+        "zMaxMm": 9.3473,
+        "proposedOuterRadiusMm": 13.2
+      }
+    ],
+    "outerProfileEvidence": "cad/components/pulley-outer-profile.json"
   },
   "lift": {
     "driveX": 60,
@@ -57,10 +77,11 @@
     "gearbox": "https://www.revrobotics.com/content/docs/REV-21-2100-DR.pdf",
     "ratios": "https://www.revrobotics.com/content/docs/REV-21-2101-DR.pdf",
     "chain": "https://www.revrobotics.com/rev-41-1365/",
-    "sprocket": "https://www.revrobotics.com/content/docs/REV-21-2016-DR.pdf"
+    "sprocket": "https://www.revrobotics.com/content/docs/REV-21-2016-DR.pdf",
+    "pinchBelt": "https://www.revrobotics.com/content/docs/RT25-Belts-0.5in-Width-DR.pdf"
   },
   "limits": [
-    "Side-pinch104T RT25 belt is currently listed but pre2024availability unverified;236link chain layout needs real link/polygon/attachment/adjustment checks",
+    "Side-pinch64T RT25 belt is currently listed but pre2024availability unverified;236link chain layout needs real link/polygon/attachment/adjustment checks",
     "Side-belt backing traction/normal force and capture are unmeasured; no contact acceptance",
     "NEO/MAXPlanetary dimension-only representations; exact couplers/mount/retention unresolved",
     "Power-off motion/retention behavior and any brake are unmodeled; retention is mission-dependent",
@@ -87,5 +108,6 @@
   "removedSourceMembers": [
     "am-2974-cut-2"
   ],
-  "replacementPortalTopZ": 917.515
+  "replacementPortalTopZ": 917.515,
+  "pivotShaftInnerYAbs": 203.5
 }

@@ -25,7 +25,7 @@ def build(state):
 
 def input_pins():
  pins=robot.input_pins()
- for name in ['cad/assembly/intake_components.py','cad/assembly/intake_components.json','cad/assembly/build_intake_candidate.py','cad/assembly/check_intake_contact.py','cad/assembly/verify_receipts.py','cad/assembly/audit_intake_motion.py']:pins[name]=hashlib.sha256((ROOT/name).read_bytes()).hexdigest()
+ for name in ['cad/assembly/intake_components.py','cad/assembly/intake_components.json','cad/assembly/build_intake_candidate.py','cad/assembly/check_intake_contact.py','cad/assembly/verify_receipts.py','cad/assembly/audit_intake_motion.py','cad/components/check_pulley_outer_profile.py','cad/components/pulley-outer-profile.json']:pins[name]=hashlib.sha256((ROOT/name).read_bytes()).hexdigest()
  return pins
 
 def classify_part(name):

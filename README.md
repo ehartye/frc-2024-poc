@@ -1,18 +1,25 @@
-# 2024 CRESCENDO: A2 robot proof of concept
+# 2024 CRESCENDO: component-based robot proof of concept
 
-![Original A2 deployed spatial CAD, not fabrication-ready](cad/a2/deployed.svg)
+![Current connected component-CAD candidate, not fabrication-ready](cad/assembly/connected-floor.png)
 
-**A strategy-first, runnable desktop prototype with original editable CAD.** It completes a preload-to-pickup-to-second-release cycle under explicit simulation assumptions. It is not a qualified robot design or an official scoring simulator.
+**Strategy-first editable CAD, with retained simulation experiments.** The current component assembly is a design candidate. The runnable legacy A2 cycle below uses earlier geometry and does not validate this newer robot.
 
-## Design highlights
+## Current design highlights
 
-- Close-range Speaker cycle narrative with Amp and feeder alternatives retained: [strategy](STRATEGY.md).
-- 710 mm differential chassis, continuous bumper envelopes, reversible acquisition/indexing and 60-degree opposed-wheel shooter.
-- Original coordinated telescoping cradle, with shared parameter-driven CAD/runtime motion and sampled envelope checks.
-- Continuous two-piece shooter state: rotor, time, work and losses persist; outgoing body energy is accounted, and disabled motors coast rather than magically stop.
-- Observable mission/fault states, editable pre-vis, condition-based [pit plan](reliability/pit-plan.json), and source/runtime-bound execution receipts.
+- Close-range Speaker cycle narrative, with Amp and feeder alternatives retained: [strategy](STRATEGY.md).
+- AM14U4-based six-wheel drivetrain with source-sized components, an original front-throat modification and fixed bumper candidate. Structural and impact qualification remain open.
+- Reversible asymmetric side-pinch intake, coordinated rotation/elevator and four-wheel launcher. Original drilled lower brackets, portal gussets, carriage yokes and recessed slide-pad attachments connect previously reserved interfaces.
+- 711 original/source-sized parts per exported pose. Full-NOTE intake feeding is screened at49 positions; moving mechanism clearance at125 poses. These are finite nominal geometry checks, not capture, tolerance, force or durability acceptance.
+- Actual chain attachments, shaft torque/retention couplings, motor mounts and remaining shooter interfaces are still completion gates. No previous launch result automatically transfers.
 
-## Run the complete A2 slice
+## Open and edit the current candidate
+
+- [Current original floor-pose STEP](cad/assembly/connected-floor.step), [design and limits](cad/assembly/INTAKE-CANDIDATE.md), [parameter contract](cad/assembly/intake_components.json).
+- [Connected generator](cad/assembly/build_connected_candidate.py), [source-bound evidence](cad/assembly/evidence/connected-report.json), [render provenance](cad/assembly/connected-visual.json).
+- With existing OCP8 and Matplotlib: `python cad/assembly/build_connected_candidate.py`. This produces floor, rotated and handoff STEP files, renders and exact-file verification receipts in `artifacts/connected-intake-candidate/`.
+- Vendor native CAD is not distributed. Original authored stock/fasteners and source-sized purchased-component envelopes are distinguished in the part manifest.
+
+## Run the retained legacy A2 slice
 
 Requires existing Python 3 with NumPy, PowerShell, JDK 17 and a populated Gradle/WPILib cache. Toolchain is pinned to Gradle 8.11, GradleRIO/WPILib 2026.2.1 and JUnit 5.10.1. This models the 2024 game using the 2026 desktop toolchain, not a historical robot deployment.
 
@@ -24,13 +31,13 @@ Open `NORMAL.html` in the printed results folder. `NORMAL_9V.html` and fault rep
 
 The cache must already contain the pinned public dependencies. On a newly configured development computer, set JAVA_HOME and GRADLE_USER_HOME, then run the included `shared/examples/java-2026-sim/gradlew.bat test` from that project directory with network access to populate its cache before using the offline verified runner. Dependency notices are [here](shared/examples/java-2026-sim/THIRD_PARTY.md).
 
-## What the current run proves
+## What the legacy run proves
 
 The nominal 12 V and permissive 9 V cases each record one prescribed acquisition and two powered exits in about 27.3 seconds. Missing piece, jam, stale pose and strict 9 V RPM controls fault without invented completion. Actual exit states feed sampled full-NOTE aperture checks, not a prescribed launch speed. These are sampled thin-plane results, not scores or complete target clearance.
 
 Acquisition, lift, telescope, level retention and transfer are prescribed kinematics with virtual observations. Their actuation, contact, energy and physical capture are not validated. Shooter energy accounting covers rollers/guide only. Body attitude is a fixed 60-degree hypothesis; spin, aerodynamics, roof/walls, tire slip, realistic opponents and impact durability remain unresolved. The full serialized cycle does not fit 15-second autonomous.
 
-## Open and edit the design
+## Retained earlier CAD and planning tools
 
 - [Stowed STEP](cad/a2/stowed.step), [deployed STEP](cad/a2/deployed.step), [stowed picture](cad/a2/stowed.svg).
 - [Geometry contract](cad/cycle-contract-A2.json), [original generator](cad/build_a2_layout.py), [shared kinematics](cad/a2_kinematics.py).

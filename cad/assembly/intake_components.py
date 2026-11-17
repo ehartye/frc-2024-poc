@@ -21,22 +21,29 @@ def build(state='floor',c=None,pose=None,metadata=False):
   motion='cradle' if moving else 'carriage' if n.startswith(('lift carriage','UHMW','pivot drop','pivot bearing','chain carriage','rotation')) else 'fixed'
   records.append({'id':f'intake-{len(parts):03d}','name':'intake candidate '+n,'shape':shape,'role':k,'motion':motion})
   parts.append(('intake candidate '+n,shape,k))
+ centerX=p.get('beltCenterX',0);rearX=centerX-center/2;frontX=centerX+center/2
  for side in [-1,1]:
   y=side*track;weldment=[]
-  add('side pinch belt '+str(side),belt_x(0,y,-p['beltWidth']/2,center,r,p['beltWidth']),'drive')
-  for x in [-center/2,center/2]:
+  add('side pinch belt '+str(side),belt_x(centerX,y,-p['beltWidth']/2,center,r,p['beltWidth']),'drive')
+  for x in [rearX,frontX]:
    ident=str((side,x))
-   add('vertical stub shaft '+ident,h.cyl((x,y,p['shaftLower']),(0,0,1),6.875,46 if x<0 else p['shaftLength']),'support')
-   add('12T track pulley representation '+ident,ring_z(x,y,-9.3472,13.144,6.875,18.6944),'drive')
+   add('vertical stub shaft '+ident,h.cyl((x,y,p['shaftLower']),(0,0,1),6.875,p['rearShaftLength'] if x<0 else p['shaftLength']),'support')
+   pulley=None
+   for band in p['outerProfileBands']:
+    shape=ring_z(x,y,band['zMinMm'],band['proposedOuterRadiusMm'],6.875,band['zMaxMm']-band['zMinMm'])
+    pulley=shape if pulley is None else BRepAlgoAPI_Fuse(pulley,shape).Shape()
+   add('12T track pulley outer-profile representation '+ident,pulley,'drive')
    for zz in [p['lowerBearingZ'],p['upperBearingZ']]:
     add('bearing representation '+ident+str(zz),ring_z(x,y,zz-3.175,14.2875,6.875,6.35),'drive')
     # Small original annular bearing carrier; tie attaches on outboard side.
     plate=ring_z(x,y,zz-4.7625,17,14.3,3.175)
-    if x<0:arm=h.box(x-10,min(side*185.3,side*205.3),zz-4.7625,-95-(x-10),20,3.175);webX=-95
+    if x<0:
+     webX=max(x,-95);arm=h.box(x-10,min(side*185.3,side*205.3),zz-4.7625,webX-(x-10),20,3.175)
     else:arm=h.box(x-10,min(side*185.3,side*207),zz-4.7625,20,21.7,3.175);webX=x
     plate=BRepAlgoAPI_Fuse(plate,arm).Shape();plate=cut(plate,h.cyl((x,y,zz-6),(0,0,1),14.3,7))
     weldment.append(plate)
-    web=h.box(webX-10,side*c['cradleSideYAbs']-3.175,zz-4.7625,20,6.35,abs(zz-4.7625)+12.7 if zz<0 else 3.175)
+    webZ=min(-12.7,zz-4.7625);webTop=max(12.7,zz-1.5875)
+    web=h.box(webX-10,side*c['cradleSideYAbs']-3.175,webZ,20,6.35,webTop-webZ)
     weldment.append(web)
    if x>0:
     my=side*p['motorSideYAbs'];face=p['motorFaceZ'];mx=x-math.sqrt(p['motorOffsetY']**2-(my-y)**2)
@@ -48,12 +55,13 @@ def build(state='floor',c=None,pose=None,metadata=False):
     b=belt_x(0,0,p['drivePulleyZ']-6.35,p['motorOffsetY'],r,12.7)
     tr=h.gp_Trsf();tr.SetRotation(h.gp_Ax1(h.gp_Pnt(0,0,0),h.gp_Dir(0,0,1)),math.atan2(my-y,mx-x))
     b=h.BRepBuilderAPI_Transform(b,tr,True).Shape();add('pinch transfer belt '+str(side),h.move(b,(x+mx)/2,(y+my)/2,0),'drive')
-  stock=h.box(-105,side*c['cradleSideYAbs']-3.175,-12.7,center/2+20+105,6.35,25.4)
+  stockStart=min(-40,rearX-20);stock=h.box(stockStart,side*c['cradleSideYAbs']-3.175,-12.7,frontX+20-stockStart,6.35,25.4)
   for shape in weldment:stock=BRepAlgoAPI_Fuse(stock,shape).Shape()
+  for bearingX in [rearX,frontX]:stock=cut(stock,h.cyl((bearingX,y,-30),(0,0,1),14.3,70))
   stock=cut(stock,h.cyl((0,side*c['cradleSideYAbs']-10,0),(0,1,0),7.1,20))
   add('original cradle side weldment '+str(side),stock,'support')
   # Short side pivot starts outside the return-belt run, never through NOTE or belt.
-  add('cradle side pivot '+str(side),h.cyl((0,-228.5 if side<0 else 203,0),(0,1,0),6.875,25.5),'support')
+  add('cradle side pivot '+str(side),h.cyl((0,-228.5 if side<0 else c['pivotShaftInnerYAbs'],0),(0,1,0),6.875,228.5-c['pivotShaftInnerYAbs']),'support')
   gx=g['x'];gy=side*g['yAbs'];cy=side*lift.get('chainYAbs',g['yAbs']);sq=g['square'];wall=g['wall']
   outer=h.box(gx-sq/2,gy-sq/2,g['bottom'],sq,sq,g['height']);inner=h.box(gx-sq/2+wall,gy-sq/2+wall,g['bottom']-1,sq-2*wall,sq-2*wall,g['height']+2)
   add('stationary aluminum guide '+str(side),cut(outer,inner),'support',False)
