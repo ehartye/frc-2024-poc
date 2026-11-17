@@ -28,5 +28,5 @@ class GuideForce(unittest.TestCase):
  def test_unknown_rejected_and_separation_no_force(self):
   center,q=self.query(20)
   with self.assertRaises(GuideDomainError):self.call(q,center)
-  center,q=self.query(0);self.assertEqual(self.call(q,center)['forceWorldN'],[0.,0.,0.])
+  center,q=self.query(0);self.assertEqual(self.call(q,center)['forceWorldN'],[0.,0.,0.]);self.assertEqual(self.call(q,center)['nativeMaterialStatus'],q['nativeMaterialStatus'])
 if __name__=='__main__':unittest.main()

@@ -11,7 +11,7 @@ def wrench(q,*,stiffness,damping,mu,slip_scale,chassis_position,chassis_velocity
  for v in [chassis_position,chassis_velocity,piece_center,piece_point_velocity]:vec(v)
  if not all(num(x) for x in [stiffness,damping,mu,slip_scale,heading,yaw_rate,contact_y_robot]) or min(stiffness,slip_scale)<=0 or min(damping,mu)<0:raise ValueError('explicit finite constitutive parameters')
  if not q.get('geometryDomainValid') or q.get('status')=='UNKNOWN':raise GuideDomainError('UNKNOWN_FINITE_GUIDE_GEOMETRY')
- if q['status']=='SEPARATED_FROM_ENTIRE_GUIDE':return dict(forceWorldN=[0.,0.,0.],pieceMomentWorldNm=[0.,0.,0.],chassisReactionWorldN=[0.,0.,0.],chassisMomentWorldNm=[0.,0.,0.],elasticJ=0.,normalHeatW=0.,frictionHeatW=0.,pieceWorkW=0.,guideWorkW=0.,conditionalMaterialModel=True,acceptance=False)
+ if q['status']=='SEPARATED_FROM_ENTIRE_GUIDE':return dict(forceWorldN=[0.,0.,0.],pieceMomentWorldNm=[0.,0.,0.],chassisReactionWorldN=[0.,0.,0.],chassisMomentWorldNm=[0.,0.,0.],elasticJ=0.,normalHeatW=0.,frictionHeatW=0.,pieceWorkW=0.,guideWorkW=0.,nativeMaterialStatus=q.get('nativeMaterialStatus','UNKNOWN'),conditionalMaterialModel=True,acceptance=False)
  if q['status']!='ANALYTIC_FINITE_GUIDE_CANDIDATE':raise GuideDomainError('unsupported guide query')
  delta=q['penetrationM'];nx,nz=q['normalRobotXZ'];x,z=q['guidePointRobotXZm']
  if not all(num(v) for v in [delta,nx,nz,x,z]) or delta<0 or abs(nx*nx+nz*nz-1)>1e-10:raise ValueError('finite unit-normal guide geometry')
