@@ -1,0 +1,73 @@
+{
+  "schema": "cassette-opening-source-candidate/1",
+  "adopted": false,
+  "spring": {
+    "manufacturer": "Lee Spring",
+    "part": "LC 032EE 01 M",
+    "material": "music wire",
+    "nominalOutsideDiameterMm": 9.53,
+    "nominalWireDiameterMm": 0.81,
+    "nominalFreeLengthMm": 9.53,
+    "nominalRateNPerMm": 2.89,
+    "approximateSolidHeightMm": 3.66,
+    "countPerSide": 2,
+    "source": "https://www.leespring.com/sites/default/files/2021-02/compression-springs-lee-spring-us.pdf",
+    "evidenceStatus": "Manufacturer indexed table and headings read; direct PDF retrieval blocked. Historical dated URL supports lead but original archived PDF bytes not pinned. No lot tolerance or fatigue evidence.",
+    "rateBasis": "Music wire; do not apply unchanged to stainless",
+    "derivedNominalInsideDiameterMm": 7.91
+  },
+  "servo": {
+    "manufacturer": "REV Robotics",
+    "part": "REV-41-1097",
+    "type": "Smart Robot Servo V1",
+    "bodySizeMm": [
+      40.2,
+      20,
+      38
+    ],
+    "splineTeeth": 25,
+    "nominalSupplyV": 6,
+    "stallTorqueKgCm": 13.5,
+    "stallCurrentA": 2,
+    "publishedSpeedSecondsPer60Degrees": 0.13,
+    "source": "https://docs.revrobotics.com/rev-crossover-products/servo/srs",
+    "historicalDrawing": "https://www.revrobotics.com/content/docs/REV-41-1097-DR.pdf",
+    "drawingCopyrightYear": 2017,
+    "limits": "Stall torque is not continuous available torque. Speed is not a loaded response guarantee. Supply module, spline horn, actual mounting and feedback remain unimplemented."
+  },
+  "openingCam": {
+    "status": "Original eccentric-cam geometry candidate, not a latched or installed mechanism",
+    "axis": "cradle local +X",
+    "shaftCenterMm": [
+      47.5,
+      196.25,
+      100
+    ],
+    "eccentricityMm": 0.75,
+    "discRadiusMm": 6,
+    "discWidthMm": 6,
+    "followerInnerFaceYmm": "203-u",
+    "contactConstraint": "u=.75*(1-cos(theta)), only when actual unilateral contact is active",
+    "rangeRad": [
+      0,
+      3.141592653589793
+    ],
+    "openingDirection": "theta decreasing toward zero pushes follower outward against springs",
+    "limits": [
+      "Dead center is not a positive latch and cannot be treated as stable power-off holding",
+      "Spring unload and follower separation must be integrated; position is not commanded directly",
+      "Follower attachment and servo bracket not yet modeled",
+      "Full travel-dependent feed restrictions from reviewed native study remain"
+    ]
+  },
+  "forceAndWork": {
+    "springInstalledLengthMm": "7+u",
+    "springPairForceN": "2*2.89*max(0,9.53-(7+u)); nominal component hypothesis, not NOTE normal",
+    "potentialJ": "2*0.5*2.89*max(0,9.53-(7+u))**2/1000",
+    "camLoadTorqueNm": "springPairForceN*.00075*sin(theta), quasistatic magnitude only",
+    "springPairForceAtOpenN": 14.6234,
+    "springPairForceAtInwardStopN": 5.9534,
+    "minimumIdealOpeningWorkJ": 0.015432599999999998
+  },
+  "gate": "Do not adopt spring rate or cam actuation into whole simulation until sourcing and mounting/contact/drive limits are deliberately reconciled."
+}
