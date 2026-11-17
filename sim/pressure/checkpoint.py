@@ -39,3 +39,20 @@ def restore(record):
  p.drive.state=copy.deepcopy(s['chassis']);p.note=copy.deepcopy(s['note']);p.energy=copy.deepcopy(s['ledger']);p.t=s['timeS'];p.initial_energy=s['initialEnergyJ']
  if record['diagnostics']!=diagnostics(p):raise ValueError('potential/kinetic/ledger inconsistency')
  return p
+
+def from_pressure_report(path):
+ """Import only a same-law, exact-source archived accepted endpoint; no legacy conversion."""
+ path=__import__('pathlib').Path(path);raw=path.read_bytes();report=json.loads(raw);p,pins=factory.setup()
+ if report.get('schema')!='fresh-pressure-acquisition/1' or report.get('inputs')!=pins:raise ValueError('same-law source-bound report required')
+ expected=dict(kAreaNpm3=p.k_area,resolution=list(p.resolution),uPositiveM=0.,normalDamping='none; conservative new pressure potential')
+ if report.get('pressureConfig')!=expected:raise ValueError('pressure configuration mismatch')
+ initial=report['initialState']
+ if initial!=dict(timeS=0.,chassis=p.drive.state,note=p.note,energy=p.energy,pressurePotentialJ=0.):raise ValueError('fresh source lineage required')
+ final=report['final']
+ if not report['trace'] or final!=report['trace'][-1]:raise ValueError('final trace mismatch')
+ if abs(final['timeS']-len(report['trace'])*report['stepS'])>1e-10:raise ValueError('trace clock mismatch')
+ state=dict(chassis=copy.deepcopy(final['chassis']),note=copy.deepcopy(final['note']),ledger={k:final['energyJ'][k] for k in p.energy},timeS=final['timeS'],initialEnergyJ=final['energyJ']['initial'])
+ payload=dict(schema=SCHEMA,identity=identity(p,pins),state=state,diagnostics=dict(potentialJ=final['energyJ']['spring'],kineticJ=final['energyJ']['kinetic'],residualJ=final['energyJ']['residual']))
+ result=restore(dict(payload,digest=digest(payload)))
+ if raw!=path.read_bytes() or any(factory.r.sha(R/f)!=h for f,h in pins.items()):raise ValueError('source changed during import')
+ return result,hashlib.sha256(raw).hexdigest()
