@@ -16,3 +16,9 @@ class SpringLaw(unittest.TestCase):
  def test_invalid(self):
   for u in [-.001,.002,float('nan')]:
    with self.assertRaises(ValueError):spring_state(u)
+
+ def test_reject_nonphysical_or_nonfinite_free_length(self):
+  for value in [-.01,0,False,True,.003,1e153,'0.00953',None]:
+   with self.assertRaises(ValueError):spring_state(0,free_length_m=value)
+  for args in [(False,0,0),(0,True,0),(0,0,False)]:
+   with self.assertRaises(ValueError):spring_state(*args)
