@@ -1,0 +1,38 @@
+{
+  "schema": "frc-note-contact-experiment/v1",
+  "basis": "unvalidated-fixed-exterior-contact-hypothesis",
+  "orientation": "flat-axis-Z-locked-at-Y0-external-zero-angular-work-constraint",
+  "massSelection": "source-interval-midpoint-not-native-volume-or-measured",
+  "floorMu": [
+    0,
+    0.2,
+    0.4,
+    0.8
+  ],
+  "floorStiffnessNpm": 50000,
+  "rollerStiffnessNpm": 5000,
+  "dissipationSpm": 5,
+  "rollerMu": 0.8,
+  "regularizationMps": 0.01,
+  "initial": {
+    "xM": -0.22,
+    "zM": 0.0254,
+    "vxMps": 0.15
+  },
+  "controller": {
+    "periodSeconds": 0.02,
+    "duty": -0.12,
+    "beamXM": 0.0,
+    "requiredCompletePulses": 2
+  },
+  "horizonSeconds": 4.4,
+  "dtSeconds": [
+    0.0001,
+    5e-05
+  ],
+  "contactScope": "full-span-exterior-ring-projection; aggregate-law-no-double-count; tilt/lateral/endcaps unsupported",
+  "constants": "fixed-source-pinned-model-not-general-JSON-parameter-API",
+  "capture": null,
+  "score": null,
+  "engineeringAcceptance": "blocked"
+}

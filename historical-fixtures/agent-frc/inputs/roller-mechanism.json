@@ -1,0 +1,123 @@
+{
+  "schema": "frc-roller-mechanism-input/v1",
+  "season": 2024,
+  "candidateId": "2024-fixed-speaker",
+  "basis": "original-unvalidated-concept",
+  "graphPins": {
+    "strategy-brief": {
+      "id": "2024-fixed-speaker.strategy",
+      "revision": 1,
+      "sha256": "3ece698abcb35a505ec37d29babe402ad43b83258985d96c730e126b060b8b6a"
+    },
+    "robot-envelope": {
+      "id": "2024-fixed-speaker.envelope",
+      "revision": 1,
+      "sha256": "6e63ba90d5125305d33fb7624fed18bee357f3db3bf815c1a1c87f225caa5617"
+    },
+    "capability-contract": {
+      "id": "2024-fixed-speaker.contract",
+      "revision": 1,
+      "sha256": "5e2cda81713a95b838f457075d2c258ef5f38aede793d453bb525e14ad4b30cc"
+    },
+    "subsystem-spec": {
+      "id": "2024-fixed-speaker.subsystem",
+      "revision": 1,
+      "sha256": "175779635082e86201e727091ee3c842e1ee14627a689333afee65e9cc925f31"
+    }
+  },
+  "frame": {
+    "unit": "mm",
+    "origin": "midpoint-between-roller-axes",
+    "axes": "+X transport, +Y shafts, +Z up; right-handed"
+  },
+  "rollers": [
+    {
+      "id": "upper",
+      "axisOriginMm": [
+        0.0,
+        0.0,
+        76.19999999999999
+      ],
+      "axisUnitVector": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "outerRadiusMm": 50.8,
+      "boreRadiusMm": 6.35,
+      "lengthMm": 400.0,
+      "densityKgM3": 1200.0,
+      "densityBasis": "assumed-uniform-not-material-identification",
+      "gearRatio": 1.0,
+      "motorCount": 1,
+      "contactVelocitySign": -1
+    },
+    {
+      "id": "lower",
+      "axisOriginMm": [
+        0.0,
+        0.0,
+        -76.19999999999999
+      ],
+      "axisUnitVector": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "outerRadiusMm": 50.8,
+      "boreRadiusMm": 6.35,
+      "lengthMm": 400.0,
+      "densityKgM3": 1200.0,
+      "densityBasis": "assumed-uniform-not-material-identification",
+      "gearRatio": 1.0,
+      "motorCount": 1,
+      "contactVelocitySign": 1
+    }
+  ],
+  "piece": {
+    "type": "NOTE",
+    "source": {
+      "url": "https://firstfrc.blob.core.windows.net/frc2024/Manual/2024GameManual.pdf",
+      "sha256": "1b7e1dc3fe1b1bd64d97a482d7e78eb419ec77d611a15226a16b0c7011069b94",
+      "revision": "section 5 V8",
+      "locator": "p34 section5.7"
+    },
+    "orientation": "torus-axis-Z-flat",
+    "geometryMm": {
+      "outerDiameter": 355.6,
+      "innerDiameter": 254.0,
+      "thickness": 50.8
+    },
+    "massMinKg": 0.2296311373125,
+    "massMaxKg": 0.2409709465625,
+    "massBasis": "manual-range-not-measured-specimen"
+  },
+  "transport": {
+    "axisUnitVector": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entryPlaneXmm": -500.0,
+    "exitPlaneXmm": 500.0,
+    "sensorPlanesXmm": [
+      -250.0,
+      0.0,
+      250.0
+    ],
+    "planeBasis": "hypothetical-fixture-datums-not-field-targets"
+  },
+  "contact": {
+    "frictionCoefficient": null,
+    "normalForcePerRollerN": null,
+    "basis": "unresolved-not-derived-from-nominal-tangency"
+  },
+  "omissions": [
+    "No shaft, bearings, couplers, motor rotor or gearbox inertia",
+    "No compliant tread or game-piece deformation model",
+    "No supports, guards, mounting, structural or installation validation",
+    "No field target, scoring, mass-budget or team inventory evidence",
+    "NOTE torus center hole and CORAL finite hollow tube contact coverage are not approximated as continuous solid-disk contact"
+  ],
+  "engineeringAcceptance": "blocked"
+}
