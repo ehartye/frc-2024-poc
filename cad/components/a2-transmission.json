@@ -1,0 +1,181 @@
+{
+  "schema": "frc-cartridge-transmission/1",
+  "units": "mm",
+  "sources": [
+    {
+      "part": "REV-21-2200",
+      "url": "https://www.revrobotics.com/content/cad/REV-21-2200.STEP",
+      "bytes": 318046,
+      "sha256": "d3e42da93b098aab165f8aa35d66ce9d596dad4eec3b04c08cb1b9162f336881",
+      "nativeBoundsMm": [
+        -13.143936171981718,
+        -13.092806822644567,
+        -9.34720015904218,
+        13.041677473307416,
+        13.092806822644567,
+        9.34720015904218
+      ]
+    },
+    {
+      "part": "REV-21-2201",
+      "url": "https://www.revrobotics.com/content/cad/REV-21-2201.STEP",
+      "bytes": 1430273,
+      "sha256": "c2825524b2293af12647d92ad57e9162379ad64105b86f867be2223037059c68",
+      "nativeBoundsMm": [
+        -13.143943126864688,
+        -13.092813777527537,
+        -9.347207113925151,
+        13.041684428190386,
+        13.092813777527537,
+        9.347207113925151
+      ]
+    },
+    {
+      "part": "REV-21-1650-V1.1",
+      "url": "https://www.revrobotics.com/content/cad/REV-21-1650-V1.1.STEP",
+      "bytes": 6496157,
+      "sha256": "50fb9445ae07465fbd10605e48009649316d376e8194451b7fc97959d17003a9",
+      "nativeBoundsMm": [
+        -38.14129798353196,
+        -32.462237056361566,
+        -58.35000010000001,
+        32.462237056361566,
+        38.02054324421769,
+        35.0000001
+      ]
+    },
+    {
+      "part": "REV-29-2598",
+      "url": "https://www.revrobotics.com/content/cad/REV-29-2598.STEP",
+      "sha256": "187b0c01dfc7c430c4becf50fe94d1ffaa7874a0645b81174566e9fe62201eb0",
+      "bytes": 176723,
+      "bounds": [
+        -8.11794310947002,
+        -8.11794310947002,
+        -1.6072770639568596e-06,
+        8.11794310947002,
+        8.11794310947002,
+        1.600001607277065
+      ]
+    }
+  ],
+  "layout": {
+    "pulleyTeeth": 12,
+    "beltTeeth": 40,
+    "pitchMm": 6.35,
+    "pulleyZ": 60,
+    "motorFaceZ": 45,
+    "driverClockDegrees": 90,
+    "drivenClockDegrees": 0
+  },
+  "manufacturerMassKg": {
+    "motor": 0.425,
+    "driverPulley": 0.015,
+    "drivenPulley": 0.011,
+    "belt": 0.011
+  },
+  "massSources": [
+    "https://docs.revrobotics.com/brushless/neo/v1.1",
+    "https://www.revrobotics.com/RT25-Pulleys/",
+    "https://www.revrobotics.com/RT25-Belts-1/2in-Width/"
+  ],
+  "beltPart": "REV-21-4040",
+  "status": "nominal private-native packaging experiment; no key engagement, fastener, tension or operating acceptance",
+  "limits": [
+    "Motor plate native clearance checked; attachment to cartridge and tension adjustment not designed",
+    "Motor native push-on rings modeled; holding force, installation, replacement and driven shaft retention unverified",
+    "No belt tooth/contact model or tension adjustment",
+    "Tread absent; motor-to-tread clearance unresolved",
+    "Manufacturer motor mass is not uniform material or rotor inertia",
+    "Historical NEO V1.1 is discontinued; no purchase recommendation",
+    "No change to A2 simulation parameters"
+  ],
+  "motorMount": {
+    "drawingUrl": "https://revrobotics.com/content/docs/REV-21-1650-V1.1-DR.pdf",
+    "drawingDate": "2022-11-09",
+    "plateWidthMm": 72,
+    "plateThicknessMm": 3.175,
+    "pilotBoreMm": 19.3,
+    "holeCircleMm": 50.8,
+    "clearanceHoleMm": 5.2,
+    "frontTappedDepthMm": 5.5,
+    "shaftEndTappedDepthMm": 12.7,
+    "candidateScrewUnderHeadMm": 7.9375,
+    "candidateWasherMm": 1,
+    "depthReserveMm": 1,
+    "status": "nominal 5/16in #10-32 screw plus assumed 1mm washer; SKU/actual tolerances/strength not accepted"
+  },
+  "key": {
+    "widthMm": 2,
+    "radialThicknessMm": 2,
+    "radialInnerMm": 2.8,
+    "startFromMotorFaceMm": 8,
+    "lengthMm": 14,
+    "clockDegrees": 90,
+    "status": "original nominal key envelope; stock, corner radius, fit and shear capacity unverified"
+  },
+  "serviceInterfaces": {
+    "tread": {
+      "part": "am-2611a",
+      "url": "https://andymark.com/products/gray-grippy-tread-1-in-wide-10-ft-long",
+      "thicknessMm": 2.54,
+      "widthMm": 25.4,
+      "durometerA": 60,
+      "massKg": null,
+      "friction": null,
+      "status": "nominal annular packaging only; seam/rivets/compression/adhesive omitted; older linked green HAL-12E datasheet not assumed equivalent",
+      "nativeSeatRadiusMm": 45.72,
+      "nativeSeatInnerRadiusMm": 42.2275,
+      "nativeSeatAxialBoundsMm": [
+        4.445,
+        30.48
+      ],
+      "assemblyTreadCenterOffsetMm": 1.5875,
+      "seatEvidence": "native cylindrical surfaces and midwidth point classification; maximum46.99 is flange, not seat",
+      "rivetCandidate": "am-1471",
+      "rivetGripRangeMm": [
+        6.3754,
+        7.9248
+      ],
+      "bareStackMm": 6.0325,
+      "bareStackStatus": "below minimum grip; do not use this rivet without revised stack/alternate fastener",
+      "rivetSource": "https://andymark.com/products/1-8-in-diameter-0-251-0-312-in-grip-steel-rivet"
+    },
+    "motorRetention": {
+      "pilotTopFromFaceMm": 3.5,
+      "shaftEndFromFaceMm": 35,
+      "pulleyHalfWidthMm": 9.3472,
+      "spacerOuterDiameterMm": 12,
+      "spacerInnerDiameterMm": 8.2,
+      "washerOuterDiameterMm": 12,
+      "washerInnerDiameterMm": 5.2,
+      "washerThicknessMm": 1,
+      "candidateScrewLengthMm": 9.525,
+      "status": "REJECTED load path: inner spacer bears on stationary pilot; zero overlap is not valid rotating retention. Keep geometry as negative lesson; replace with shaft-compatible clips or verified rotating shoulder."
+    },
+    "tensionTravelHypothesisMm": [
+      -1,
+      1
+    ],
+    "tensionStatus": "kinematic allocation only; slot/support/jackscrew and belt stiffness not designed",
+    "activeRetention": "two native REV-29-2598 push-on rings gripping motor shaft, one each side of pulley; load capacity and installation direction require verification",
+    "retainingRing": {
+      "part": "REV-29-2598",
+      "thicknessMm": 1.6,
+      "url": "https://www.revrobotics.com/rev-21-2907/",
+      "drawingUrl": "https://www.revrobotics.com/content/docs/REV-21-2907-DR.pdf",
+      "massEachKg": 0.0003,
+      "nominalIdMm": 7.5,
+      "shaftDiameterMm": 8,
+      "expectedInterference": "press-on grip is intentional, not a collision-free fit",
+      "pilotClearanceMm": 0.5528
+    }
+  },
+  "drivenRetention": {
+    "shaftLengthMm": 160,
+    "outerCollarCenterMm": 73,
+    "collarPart": "REV-21-2900-PK4",
+    "status": "longer original shaft plus native outer clamp collar; nominal axial float and holding force unvalidated",
+    "reason": "140mm shaft leaves only0.653mm beyond pulley, insufficient for full collar engagement"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "schema": "original-2024-intake-elevator/1",
+  "units": "mm",
+  "status": "original component layout candidate; not qualified capture/retention/load design",
+  "note": {
+    "majorRadius": 152.4,
+    "tubeRadius": 25.4
+  },
+  "stageCenterX": 178,
+  "floorCenterZ": 25.4,
+  "handoffCenterZ": 474.8333949243112,
+  "pitchDeg": 60,
+  "guide": {
+    "x": 101.6,
+    "yAbs": 250,
+    "bottom": 187.515,
+    "height": 730,
+    "square": 25.4,
+    "wall": 3.175,
+    "slideClearance": 0.3
+  },
+  "pinch": {
+    "teeth": 12,
+    "pitch": 6.35,
+    "beltTeethHypothesis": 64,
+    "beltWidth": 12.7,
+    "beltRadialThicknessHypothesis": 2,
+    "innerFaceYAbs": 176.9223933363976,
+    "shaftLower": -23,
+    "shaftLength": 83,
+    "lowerBearingZ": -18.4,
+    "upperBearingZ": 25.4,
+    "drivePulleyZ": 40,
+    "motorOffsetY": 114.3,
+    "motorFaceZ": 150,
+    "beltPartCurrent": "REV-21-4064",
+    "motorSideYAbs": 160,
+    "transferBeltTeeth": 48,
+    "rearShaftLength": 57,
+    "beltCenterX": 63.5,
+    "outerProfileBands": [
+      {
+        "zMinMm": -9.3473,
+        "zMaxMm": -7.14375,
+        "proposedOuterRadiusMm": 13.2
+      },
+      {
+        "zMinMm": -7.14375,
+        "zMaxMm": 7.14375,
+        "proposedOuterRadiusMm": 12.0
+      },
+      {
+        "zMinMm": 7.14375,
+        "zMaxMm": 9.3473,
+        "proposedOuterRadiusMm": 13.2
+      }
+    ],
+    "outerProfileEvidence": "cad/components/pulley-outer-profile.json"
+  },
+  "lift": {
+    "driveX": 60,
+    "lowerPulleyZ": 200,
+    "upperPulleyZ": 898.5,
+    "carriageAnchorAboveNote": 225,
+    "gearRatioHypothesis": 12,
+    "chain": "REV-41-1365",
+    "sprocket": "REV-21-2016",
+    "sprocketTeeth": 16,
+    "chainLinksHypothesis": 236,
+    "sprocketPitchRadius": 16.4,
+    "sprocketOuterRadius": 17.95,
+    "chainYAbs": 290
+  },
+  "sources": {
+    "motor": "https://www.revrobotics.com/rev-21-1650/",
+    "pulley": "https://www.revrobotics.com/rev-21-2201/",
+    "gearbox": "https://www.revrobotics.com/content/docs/REV-21-2100-DR.pdf",
+    "ratios": "https://www.revrobotics.com/content/docs/REV-21-2101-DR.pdf",
+    "chain": "https://www.revrobotics.com/rev-41-1365/",
+    "sprocket": "https://www.revrobotics.com/content/docs/REV-21-2016-DR.pdf",
+    "pinchBelt": "https://www.revrobotics.com/content/docs/RT25-Belts-0.5in-Width-DR.pdf"
+  },
+  "limits": [
+    "Side-pinch64T RT25 belt is currently listed but pre2024availability unverified;236link chain layout needs real link/polygon/attachment/adjustment checks",
+    "Side-belt backing traction/normal force and capture are unmeasured; no contact acceptance",
+    "NEO/MAXPlanetary dimension-only representations; exact couplers/mount/retention unresolved",
+    "Power-off motion/retention behavior and any brake are unmodeled; retention is mission-dependent",
+    "Full cradle pulley/bearing/shaft interference and NOTE swept contact still must be checked",
+    "Original aluminum guide and UHMW slide-pad materials assumed, not fabrication specifications",
+    "Shooter moved58mm forward and handoff shifted toguide\u221220; prior target/launch registration must be recomputed"
+  ],
+  "shooterPivotXmm": 188,
+  "handoffGuideCoordinateMm": -20,
+  "throatHalfWidthMm": 215,
+  "carriageOffsetMm": 200,
+  "cradleSideYAbs": 207,
+  "pivotBracketYAbs": 211,
+  "rotation": {
+    "chainLinks": 114,
+    "sprocketTeeth": 16,
+    "pitch": 6.35,
+    "centerDistance": 311.15,
+    "chainPlaneY": -222.5,
+    "upperX": 100,
+    "upperZOffset": 301.2147448250168
+  },
+  "shooterSupportYAbs": 300,
+  "removedSourceMembers": [
+    "am-2974-cut-2"
+  ],
+  "replacementPortalTopZ": 917.515,
+  "pivotShaftInnerYAbs": 203.5
+}

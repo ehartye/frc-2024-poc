@@ -1,0 +1,600 @@
+{
+  "schema": "launcher-gap-candidate/1",
+  "inputs": {
+    "cad/assembly/build_robot.py": "cca2c9a3ecca7a622fb1283461c393b2288e3c6efd173c60d72a959e3c500e26",
+    "cad/assembly/bumper_candidate.py": "556fba39fda427cb081a2a1d4d806372b67b830606a242bbfc0babf05619fc19",
+    "cad/a2_primitives.py": "bef958c710da792f89def8606d7169a7c385fcff257826619a7b29fe0943952e",
+    "cad/a2_kinematics.py": "4329126a1465f53c8d27618307b2864ff69803e196ff4521aab8a50daf670581",
+    "cad/build_a2_layout.py": "aea31166eabc53113962cc511cfbd190eba54033f7b93476455961dccb1969c9",
+    "cad/cycle-contract-A2.json": "3700da3bf1a271d6b6763060f913435a4a50cda8d456cb1a57a6f1898416b6ad",
+    "cad/components/a2-transmission.json": "0aae2e2dd0d8c4b16729139380f6d1e2df0efa956dad2ee8b205be1a57f3d8b0",
+    "cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+    "cad/drivetrain/build_fastening.py": "9d82a974d184200e7a6c414bc74b345cd53aa2cf85f36c3cf528fe818997d4ac",
+    "cad/drivetrain/fastening.json": "6cb3d276cd5f59143ef9b52d2240095f02db9f92d6cfef5ae53b145a78862ac9",
+    "cad/drivetrain/build_drivetrain.py": "4748e01902aac32ae8d996e1f7676caa7f794ac6a5971b661855c26487ad29a7",
+    "cad/electrical/manifest.json": "9db917a55b0884db9841f52da3b5cccf8ad684c652e4dde3e01b1efe75e891a3",
+    "cad/electrical/build_electrical.py": "d2fbd40d0b26c8887679b6ed3b49c655b10a27a0cd175e812b35d9fccd6f6317",
+    "cad/electrical/mounts.py": "90254dbc5116a9af72df0ba6442ed94ef8c94e8247326f9b7c6cfd0c0749c7e8",
+    "cad/electrical/breaker_mount.py": "1e27087fa191e8043c6ed8b3c48bca4db50cde379efa171cc49508a1a1c75060",
+    "cad/electrical/breaker-mount-evidence.json": "9e0bb64f30ab3ee58de577fe694ee578135cdf4d74ddf8e0b3065b741266b07d",
+    "cad/electrical/fasteners.py": "788a1cb9bf71a780aed9cbeb5bf48d06532e914fed431edcc0e72a4bd273b799",
+    "cad/assembly/intake_components.py": "c6d352be0edba340d340112697d3f2482158b4fb8f3324b0dd3927344f9b43c5",
+    "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+    "cad/assembly/build_intake_candidate.py": "07e9c96ec0f5e4d02660e0d2efda8dd2bddfb0198862c5e228dbc9e07cbf9bc3",
+    "cad/assembly/check_intake_contact.py": "95d20cfed12331c135b5534d4076f833ae6741b69806a61e677e88098a7301e3",
+    "cad/assembly/verify_receipts.py": "213a00200bc7fc0b84bd4bb82e4a62aaee3c10432f35373fc3097b2141d4e81d",
+    "cad/assembly/audit_intake_motion.py": "1d33ef51ba87c170335234004b1fa3cac1aeeac39da6149d15eedf58a26c1509",
+    "cad/components/check_pulley_outer_profile.py": "23325f74745de7ea2d828340c816143346221c44325784d6e8934b08553efde5",
+    "cad/components/pulley-outer-profile.json": "e582635a9b49f9810eee996177af2761edfe7928450dd86ef76d103ce8af53ec",
+    "cad/assembly/lower_support_mounts.py": "1b832dcc91967eab3dcfe40abc585ef1137250fb4e6777b01075a79ebcb1b14d",
+    "cad/assembly/upper_carriage_connections.py": "bbfbdf8b8c5f9356b5f60a3b4ad3d2d94c7f4e8a76db0e64742618173c936032",
+    "cad/assembly/build_connected_candidate.py": "19356d26a59b7b22a9a4eaed106c9cfd5d9f57774d682e0bd100711348a5ea69",
+    "cad/assembly/slide_pad_attachments.py": "526310777f96f0f537844946c611b05f7e7dc80119a75d308f043832aa7ed7ef",
+    "cad/components/check_launcher_gap_candidate.py": "8ee8de423a0f6720363b59b2f789adcabff94e74768f9b63e3c8f131b4460a12",
+    "cad/components/a2-wheel-cartridge.json": "d4a74dc6cbbd7105392083d1401cbd5b31bfc7be416952ab54b11207889db129"
+  },
+  "source": {
+    "url": "https://documents.andymark.com/e5323f8dff336e35b6abcfa970df5be5230fce20badb60c2701b83e9b8bc587d/am-3608%204IN%20Extrusion%20Performance%20Wheel%20500%20hex.STEP",
+    "sha256": "e5323f8dff336e35b6abcfa970df5be5230fce20badb60c2701b83e9b8bc587d",
+    "part": "am-3608",
+    "scope": "bare wheel, excludes tread; nominal CAD .500in hex vs drawing .501-.506in"
+  },
+  "nativeSolids": 1,
+  "nativeLocalBoundsMm": [
+    -46.990000100000024,
+    -1.0000000105748742e-07,
+    -46.990000100000024,
+    46.990000100000024,
+    31.750494598518507,
+    46.990000100000024
+  ],
+  "boundMethod": "BRepBndLib.AddOptimal without triangulation, including shape tolerance",
+  "cases": [
+    {
+      "finishedGapMm": 46.8,
+      "nominalIndentationPerSideMm": 2.0,
+      "bareWheelAlignedPlaneClearanceMm": -0.7300001000000265,
+      "samples": [
+        {
+          "advanceMm": 140,
+          "contacts": [
+            {
+              "side": -1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 16.82267310291518
+            },
+            {
+              "side": -1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 16.822305218132556
+            },
+            {
+              "side": 1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 16.82342281154613
+            },
+            {
+              "side": 1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 16.82326547434608
+            }
+          ]
+        },
+        {
+          "advanceMm": 150,
+          "contacts": [
+            {
+              "side": -1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 4.443002786875072,
+              "treadOverlapMm3": 110.26311971641567
+            },
+            {
+              "side": -1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 4.443093286336327,
+              "treadOverlapMm3": 110.26297002260068
+            },
+            {
+              "side": 1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 4.443109833668258,
+              "treadOverlapMm3": 110.2632022983581
+            },
+            {
+              "side": 1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 4.443043513489831,
+              "treadOverlapMm3": 110.26241506385806
+            }
+          ]
+        },
+        {
+          "advanceMm": 160,
+          "contacts": [
+            {
+              "side": -1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 6.322801552420283,
+              "treadOverlapMm3": 243.3925834195073
+            },
+            {
+              "side": -1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 6.322825100758055,
+              "treadOverlapMm3": 243.39250377326147
+            },
+            {
+              "side": 1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 6.322858580495474,
+              "treadOverlapMm3": 243.391396624325
+            },
+            {
+              "side": 1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 6.322781558395687,
+              "treadOverlapMm3": 243.39105109831218
+            }
+          ]
+        },
+        {
+          "advanceMm": 170,
+          "contacts": [
+            {
+              "side": -1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 2.026954292022747,
+              "treadOverlapMm3": 358.9709485898895
+            },
+            {
+              "side": -1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 2.0269770335038255,
+              "treadOverlapMm3": 358.9721414996577
+            },
+            {
+              "side": 1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 2.0269739219459257,
+              "treadOverlapMm3": 358.9711749706497
+            },
+            {
+              "side": 1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 2.026961191029123,
+              "treadOverlapMm3": 358.96690387397143
+            }
+          ]
+        },
+        {
+          "advanceMm": 220,
+          "contacts": [
+            {
+              "side": -1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 433.6367311851469
+            },
+            {
+              "side": -1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 433.6380266151264
+            },
+            {
+              "side": 1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 433.6418102797516
+            },
+            {
+              "side": 1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 433.62955700217157
+            }
+          ]
+        },
+        {
+          "advanceMm": 270,
+          "contacts": [
+            {
+              "side": -1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 2.026977041540201,
+              "treadOverlapMm3": 358.9717212486865
+            },
+            {
+              "side": -1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 2.0269552171841836,
+              "treadOverlapMm3": 358.9712569161054
+            },
+            {
+              "side": 1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 2.026962000968193,
+              "treadOverlapMm3": 358.97098980318503
+            },
+            {
+              "side": 1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 2.026973646309965,
+              "treadOverlapMm3": 358.9710320274492
+            }
+          ]
+        },
+        {
+          "advanceMm": 280,
+          "contacts": [
+            {
+              "side": -1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 6.322823848920688,
+              "treadOverlapMm3": 243.3925207569917
+            },
+            {
+              "side": -1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 6.322802471151902,
+              "treadOverlapMm3": 243.392586586743
+            },
+            {
+              "side": 1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 6.322806544869564,
+              "treadOverlapMm3": 243.3917827978096
+            },
+            {
+              "side": 1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 6.32285404344588,
+              "treadOverlapMm3": 243.39256054343127
+            }
+          ]
+        },
+        {
+          "advanceMm": 290,
+          "contacts": [
+            {
+              "side": -1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 4.443093826231966,
+              "treadOverlapMm3": 110.25880016187767
+            },
+            {
+              "side": -1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 4.443006295520809,
+              "treadOverlapMm3": 110.26377942266654
+            },
+            {
+              "side": 1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 4.443050489882162,
+              "treadOverlapMm3": 110.26306846869801
+            },
+            {
+              "side": 1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 4.443105380977056,
+              "treadOverlapMm3": 110.26328593459317
+            }
+          ]
+        },
+        {
+          "advanceMm": 300,
+          "contacts": [
+            {
+              "side": -1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 16.822387314942926
+            },
+            {
+              "side": -1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 16.82358227388584
+            },
+            {
+              "side": 1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 16.82346003310664
+            },
+            {
+              "side": 1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 16.823480862931916
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "finishedGapMm": 49.2,
+      "nominalIndentationPerSideMm": 0.7999999999999972,
+      "bareWheelAlignedPlaneClearanceMm": 0.4699998999999764,
+      "samples": [
+        {
+          "advanceMm": 140,
+          "contacts": [
+            {
+              "side": -1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 0
+            },
+            {
+              "side": -1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 0
+            },
+            {
+              "side": 1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 0
+            },
+            {
+              "side": 1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 0
+            }
+          ]
+        },
+        {
+          "advanceMm": 150,
+          "contacts": [
+            {
+              "side": -1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 8.898182357612571
+            },
+            {
+              "side": -1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 8.898195963715459
+            },
+            {
+              "side": 1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 8.898252579009968
+            },
+            {
+              "side": 1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 8.898273955827198
+            }
+          ]
+        },
+        {
+          "advanceMm": 160,
+          "contacts": [
+            {
+              "side": -1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 40.75416870114411
+            },
+            {
+              "side": -1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 40.75453121258862
+            },
+            {
+              "side": 1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 40.754656067515135
+            },
+            {
+              "side": 1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 40.75395903252821
+            }
+          ]
+        },
+        {
+          "advanceMm": 170,
+          "contacts": [
+            {
+              "side": -1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 67.2875948030867
+            },
+            {
+              "side": -1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 67.28699076313636
+            },
+            {
+              "side": 1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 67.28701149873956
+            },
+            {
+              "side": 1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 67.2874635228209
+            }
+          ]
+        },
+        {
+          "advanceMm": 220,
+          "contacts": [
+            {
+              "side": -1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 69.99551155386499
+            },
+            {
+              "side": -1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 69.99079340946415
+            },
+            {
+              "side": 1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 69.99012713055535
+            },
+            {
+              "side": 1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 69.99054210038369
+            }
+          ]
+        },
+        {
+          "advanceMm": 270,
+          "contacts": [
+            {
+              "side": -1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 67.28515488295358
+            },
+            {
+              "side": -1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 67.2857906977047
+            },
+            {
+              "side": 1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 67.28685708786423
+            },
+            {
+              "side": 1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 67.28733663824622
+            }
+          ]
+        },
+        {
+          "advanceMm": 280,
+          "contacts": [
+            {
+              "side": -1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 40.754515834784556
+            },
+            {
+              "side": -1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 40.75466753842255
+            },
+            {
+              "side": 1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 40.75417842728942
+            },
+            {
+              "side": 1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 40.754261104541506
+            }
+          ]
+        },
+        {
+          "advanceMm": 290,
+          "contacts": [
+            {
+              "side": -1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 8.898330937852464
+            },
+            {
+              "side": -1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 8.898181330470162
+            },
+            {
+              "side": 1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 8.898199241088664
+            },
+            {
+              "side": 1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 8.898121111547358
+            }
+          ]
+        },
+        {
+          "advanceMm": 300,
+          "contacts": [
+            {
+              "side": -1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 0
+            },
+            {
+              "side": -1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 0
+            },
+            {
+              "side": 1,
+              "laneMm": -152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 0
+            },
+            {
+              "side": 1,
+              "laneMm": 152.4,
+              "bareWheelOverlapMm3": 0,
+              "treadOverlapMm3": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "candidateGapMm": 49.2,
+  "adopted": false,
+  "acceptance": false,
+  "limits": [
+    "Rigid nominal NOTE and single native source clocking; no manufacturing/wear tolerance acceptance",
+    "Plane separation covers aligned translation at this body pitch; yaw/roll/deflection are not covered",
+    "Tread overlap is geometric indentation only, not measured preload, friction or contact force",
+    "Increasing gap moves entire cartridges and requires assembly/mount/service recheck before adoption",
+    "Existing launch-speed and power evidence does not transfer"
+  ]
+}

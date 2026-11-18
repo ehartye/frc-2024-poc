@@ -1,0 +1,570 @@
+{
+  "schema": "frc-current-component-launcher-geometry/1",
+  "inputs": {
+    "cad/assembly/build_robot.py": "436b9c43c963b8266e9b451ffe510cb888e14c3ec6dae552baf874c86455f57f",
+    "cad/assembly/bumper_candidate.py": "556fba39fda427cb081a2a1d4d806372b67b830606a242bbfc0babf05619fc19",
+    "cad/a2_primitives.py": "bef958c710da792f89def8606d7169a7c385fcff257826619a7b29fe0943952e",
+    "cad/a2_kinematics.py": "4329126a1465f53c8d27618307b2864ff69803e196ff4521aab8a50daf670581",
+    "cad/build_a2_layout.py": "aea31166eabc53113962cc511cfbd190eba54033f7b93476455961dccb1969c9",
+    "cad/cycle-contract-A2.json": "0e08bf88e488539ca8966dcc3cc08727ef2faf98da3740787b308cd54c652f52",
+    "cad/components/a2-transmission.json": "0aae2e2dd0d8c4b16729139380f6d1e2df0efa956dad2ee8b205be1a57f3d8b0",
+    "cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+    "cad/drivetrain/build_fastening.py": "9d82a974d184200e7a6c414bc74b345cd53aa2cf85f36c3cf528fe818997d4ac",
+    "cad/drivetrain/fastening.json": "6cb3d276cd5f59143ef9b52d2240095f02db9f92d6cfef5ae53b145a78862ac9",
+    "cad/drivetrain/build_drivetrain.py": "4748e01902aac32ae8d996e1f7676caa7f794ac6a5971b661855c26487ad29a7",
+    "cad/electrical/manifest.json": "9db917a55b0884db9841f52da3b5cccf8ad684c652e4dde3e01b1efe75e891a3",
+    "cad/electrical/build_electrical.py": "d2fbd40d0b26c8887679b6ed3b49c655b10a27a0cd175e812b35d9fccd6f6317",
+    "cad/electrical/mounts.py": "90254dbc5116a9af72df0ba6442ed94ef8c94e8247326f9b7c6cfd0c0749c7e8",
+    "cad/electrical/breaker_mount.py": "1e27087fa191e8043c6ed8b3c48bca4db50cde379efa171cc49508a1a1c75060",
+    "cad/electrical/breaker-mount-evidence.json": "9e0bb64f30ab3ee58de577fe694ee578135cdf4d74ddf8e0b3065b741266b07d",
+    "cad/electrical/fasteners.py": "788a1cb9bf71a780aed9cbeb5bf48d06532e914fed431edcc0e72a4bd273b799",
+    "cad/assembly/intake_components.py": "1dc0f85a805577f38e535a1e137a1b31c38cd32a33a737b2e5e7f1ab58c54f65",
+    "cad/assembly/intake_components.json": "8fa11a9d4ac9f425a5a08e3d1a60899a3e4e9fd7839bfde1b445f023034511f3",
+    "cad/assembly/build_intake_candidate.py": "77136f213e945a6b895e1156e5af339c263a37f77f824cabf460c421204b7a84",
+    "cad/assembly/check_intake_contact.py": "95d20cfed12331c135b5534d4076f833ae6741b69806a61e677e88098a7301e3",
+    "cad/assembly/verify_receipts.py": "213a00200bc7fc0b84bd4bb82e4a62aaee3c10432f35373fc3097b2141d4e81d",
+    "cad/assembly/audit_intake_motion.py": "5b5754d4a3a744c1c3ddff2650bc99f841418ababbcecdaacaace155be88a192",
+    "sim/component-launcher/extract_geometry.py": "c5c07a86f1a2cf144fedef67ec621d6a25f6fa10bf2abf8c2b65cf49428ca238"
+  },
+  "wheelRadiusMm": 48.26,
+  "contactSampling": {
+    "two lane candidate": [
+      {
+        "noteCenterFromWheelStationMm": -240,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": -230,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": -220,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": -210,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": -200,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": -190,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": -180,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": -170,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": -160,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": -150,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": -140,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": -130,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": -120,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": -110,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": -100,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": -90,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": -80,
+        "summedNominalOverlapMm3": 67.29166694879785,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 16.82267335358739,
+          "cartridge -1 152.4 nominal tread annulus": 16.822305309320903,
+          "cartridge 1 -152.4 nominal tread annulus": 16.823422811549147,
+          "cartridge 1 152.4 nominal tread annulus": 16.823265474340417
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": -70,
+        "summedNominalOverlapMm3": 441.05170747583907,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 110.26311953358284,
+          "cartridge -1 152.4 nominal tread annulus": 110.26297057881646,
+          "cartridge 1 -152.4 nominal tread annulus": 110.26320229834953,
+          "cartridge 1 152.4 nominal tread annulus": 110.26241506509027
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": -60,
+        "summedNominalOverlapMm3": 973.5675391225509,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 243.39258675883914,
+          "cartridge -1 152.4 nominal tread annulus": 243.39250464106908,
+          "cartridge 1 -152.4 nominal tread annulus": 243.39139662431717,
+          "cartridge 1 152.4 nominal tread annulus": 243.39105109832548
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": -50,
+        "summedNominalOverlapMm3": 1435.881164762145,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 358.970949648945,
+          "cartridge -1 152.4 nominal tread annulus": 358.9721362685998,
+          "cartridge 1 -152.4 nominal tread annulus": 358.9711749706343,
+          "cartridge 1 152.4 nominal tread annulus": 358.9669038739659
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": -40,
+        "summedNominalOverlapMm3": 1698.8378001252229,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 424.7114647029995,
+          "cartridge -1 152.4 nominal tread annulus": 424.71238767478604,
+          "cartridge 1 -152.4 nominal tread annulus": 424.7036802341661,
+          "cartridge 1 152.4 nominal tread annulus": 424.7102675132713
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": -30,
+        "summedNominalOverlapMm3": 1765.960738384871,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 441.4896200497007,
+          "cartridge -1 152.4 nominal tread annulus": 441.4904192094093,
+          "cartridge 1 -152.4 nominal tread annulus": 441.490222752456,
+          "cartridge 1 152.4 nominal tread annulus": 441.49047637330506
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": -20,
+        "summedNominalOverlapMm3": 1749.7945974888921,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 437.41932756690505,
+          "cartridge -1 152.4 nominal tread annulus": 437.4552886108015,
+          "cartridge 1 -152.4 nominal tread annulus": 437.47408148254107,
+          "cartridge 1 152.4 nominal tread annulus": 437.44589982864443
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": -10,
+        "summedNominalOverlapMm3": 1738.343810479437,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 434.5825019026245,
+          "cartridge -1 152.4 nominal tread annulus": 434.5834834670863,
+          "cartridge 1 -152.4 nominal tread annulus": 434.59243865154735,
+          "cartridge 1 152.4 nominal tread annulus": 434.58538645817896
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": 0,
+        "summedNominalOverlapMm3": 1734.5461250820158,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 433.6367311851549,
+          "cartridge -1 152.4 nominal tread annulus": 433.6380266149683,
+          "cartridge 1 -152.4 nominal tread annulus": 433.6418102797454,
+          "cartridge 1 152.4 nominal tread annulus": 433.62955700214724
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": 10,
+        "summedNominalOverlapMm3": 1738.2997544687219,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 434.5837218613352,
+          "cartridge -1 152.4 nominal tread annulus": 434.5523039485364,
+          "cartridge 1 -152.4 nominal tread annulus": 434.58234187448227,
+          "cartridge 1 152.4 nominal tread annulus": 434.5813867843681
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": 20,
+        "summedNominalOverlapMm3": 1749.9557663333326,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 437.58992651548533,
+          "cartridge -1 152.4 nominal tread annulus": 437.4474917422673,
+          "cartridge 1 -152.4 nominal tread annulus": 437.46658353562674,
+          "cartridge 1 152.4 nominal tread annulus": 437.4517645399531
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": 30,
+        "summedNominalOverlapMm3": 1765.9747260110564,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 441.4900213853213,
+          "cartridge -1 152.4 nominal tread annulus": 441.5021590813142,
+          "cartridge 1 -152.4 nominal tread annulus": 441.4910545771823,
+          "cartridge 1 152.4 nominal tread annulus": 441.49149096723863
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": 40,
+        "summedNominalOverlapMm3": 1698.8521273147112,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 424.7112114876565,
+          "cartridge -1 152.4 nominal tread annulus": 424.7120097414237,
+          "cartridge 1 -152.4 nominal tread annulus": 424.71173075791245,
+          "cartridge 1 152.4 nominal tread annulus": 424.7171753277186
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": 50,
+        "summedNominalOverlapMm3": 1435.8849969462763,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 358.9717168038901,
+          "cartridge -1 152.4 nominal tread annulus": 358.9712583116337,
+          "cartridge 1 -152.4 nominal tread annulus": 358.9709898031908,
+          "cartridge 1 152.4 nominal tread annulus": 358.97103202756165
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": 60,
+        "summedNominalOverlapMm3": 973.5694523500035,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 243.39252156256234,
+          "cartridge -1 152.4 nominal tread annulus": 243.39258744617882,
+          "cartridge 1 -152.4 nominal tread annulus": 243.39178279782152,
+          "cartridge 1 152.4 nominal tread annulus": 243.39256054344085
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": 70,
+        "summedNominalOverlapMm3": 441.0489339341535,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 110.25879981793233,
+          "cartridge -1 152.4 nominal tread annulus": 110.26377971294909,
+          "cartridge 1 -152.4 nominal tread annulus": 110.26306846867956,
+          "cartridge 1 152.4 nominal tread annulus": 110.26328593459252
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": 80,
+        "summedNominalOverlapMm3": 67.29291067361966,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 16.822387579887707,
+          "cartridge -1 152.4 nominal tread annulus": 16.823582197686953,
+          "cartridge 1 -152.4 nominal tread annulus": 16.823460033113342,
+          "cartridge 1 152.4 nominal tread annulus": 16.823480862931657
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": 90,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": 100,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": 110,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": 120,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": 130,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": 140,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": 150,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": 160,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": 170,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": 180,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": 190,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": 200,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": 210,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": 220,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": 230,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      },
+      {
+        "noteCenterFromWheelStationMm": 240,
+        "summedNominalOverlapMm3": 0,
+        "byTreadMm3": {
+          "cartridge -1 -152.4 nominal tread annulus": 0,
+          "cartridge -1 152.4 nominal tread annulus": 0,
+          "cartridge 1 -152.4 nominal tread annulus": 0,
+          "cartridge 1 152.4 nominal tread annulus": 0
+        }
+      }
+    ]
+  },
+  "shooter": {
+    "pivot": [
+      0.188,
+      0,
+      0.4921539030917347
+    ],
+    "guideLength": 0.24,
+    "releasePitchDeg": 60,
+    "wheelRadius": 0.0508,
+    "rollerWidth": 0.38,
+    "nominalGap": 0.0468,
+    "adjustableGapDesignRange": [
+      0.04,
+      0.06
+    ],
+    "rangeBasis": "design travel proposal, NOT measured NOTE tolerance",
+    "exitFormula": "pivot + guideLength*[cos(releasePitch),0,sin(releasePitch)]",
+    "releaseRule": "NOTE body pitch and velocity elevation equal releasePitch at ideal guide departure; no separate favorable body-angle override",
+    "spinRadPerS": null,
+    "spinBasis": "must derive from contact/unequal wheel motion or measured release; not assumed stabilized",
+    "requiredExitSpeedMps": 7.5,
+    "requiredSpeedBasis": "geometric candidate only; motor/contact achievement unverified",
+    "shotPose": {
+      "targetLocalExit": [
+        -0.7334480659573899,
+        0,
+        0.7
+      ],
+      "worldRobotCenter": [
+        0.9834480659573899,
+        0,
+        0
+      ],
+      "worldHeadingDeg": 180
+    }
+  },
+  "wheelStationMm": 200.0,
+  "handoffGuideMm": -20,
+  "handoffFromStationMm": -220.0,
+  "limits": [
+    "Actual authored annulus geometry with nominal uncompressed tread",
+    "Finite10mm occupancy samples, not stiffness/friction/contact calibration",
+    "Fixed guide-aligned NOTE attitude; no contact torque/spin solution",
+    "Prescribed handoff speed, not simulated cradle drive",
+    "No full field/robot swept release or scoring acceptance"
+  ]
+}

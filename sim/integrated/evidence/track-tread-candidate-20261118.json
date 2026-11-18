@@ -1,0 +1,548 @@
+{
+  "schema": "native-track-tread-continuation/1",
+  "acceptance": false,
+  "status": "NATIVE_GEOMETRY_CANDIDATE_WITH_RETENTION_MODEL_BLOCKER",
+  "native": {
+    "originalArchiveSha256": "24de65755a396d1e371112c65eb9a44a32884c122bf1e4387fd172645ea45423",
+    "oneMmArchiveSha256": "ca1025f1bb47de28ca0e987ea77ab3024e48546b785f4af9256648cfd25026f9",
+    "unrelievedOnePointFiveMmArchiveSha256": "f8e713d653ce3e0fb4f3edaa5b123c79252744ae27b3f9fd4310dde40c1132e5",
+    "finalArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+    "finalBodyCount": 734,
+    "originalPartsRevised": 34,
+    "addedTreadBodies": 2,
+    "parameters": {
+      "shaftOutboardOffsetMm": 1.0,
+      "outerTreadThicknessMm": 1.5,
+      "outerTreadDensityKgM3Hypothesis": 1000.0,
+      "nominalContactFaceAbsYmm": 176.4223933363976,
+      "returnRunRelief": true,
+      "pivotInnerYAbsMm": 206.2,
+      "reliefClearanceMm": 0.5
+    },
+    "featureErrors": [],
+    "independentReopenReceiptSha256": "c8bb7ac36ddbd9d66ee610f309b5cec755b27e99d4a15a88f64cc6b5fba3ac0c",
+    "rawNativeRevisionReceiptSha256": "0ea9d24211f7b58a7b6cfd1731a1f91df707dcba98228169f44b9d8d3e0c79cc",
+    "geometryBuilderSha256": "f90abbe471aa898c44357fe5dd1fed5234c978060c2b6b7a72b0356f4324810b"
+  },
+  "route": {
+    "rawReceiptSha256": "3b311a1546d1e24ea92b80d16459174cbc547f2db92bcf3974b81b43f90d132f",
+    "scriptSha256": "cbef97dfde245a9cb24b8f343986f21f45bf914afb802ef9bf1a19804b1aa16d",
+    "manifestSha256": "6815a9e81b8b2ad4cf452f219dc1f6eb4fa7cea8bcafee9a0971fa893d0a2018",
+    "poses": 1443,
+    "booleanPairs": 11948,
+    "unresolvedHitRows": 0,
+    "physicalBodyCount": 712,
+    "excludedServiceBodies": 4,
+    "excludedVisualBodies": 18,
+    "verdict": "FINITE_FLAT_WITNESSES_CLEAR_EXCEPT_INTENDED_BELT",
+    "seconds": 21.431260199999087
+  },
+  "mounting": {
+    "rejectedUnrelievedNewOverlapRows": 8,
+    "finalAffectedBroadphasePairs": 72,
+    "finalNewOrIncreasedOverlapRowsAbovePointZeroOneMm3": 0,
+    "rawReceiptSha256": "3e4a7f15947800b80b816413b613c5be50bf1c02b5eed9d87407cf4c9ad7f732",
+    "scope": "Pairs involving revised parts or added treads, floor pose only; retained baseline fits are not qualified"
+  },
+  "pulley": {
+    "supplierSourceSha256": "c2825524b2293af12647d92ad57e9162379ad64105b86f867be2223037059c68",
+    "containmentScriptSha256": "23325f74745de7ea2d828340c816143346221c44325784d6e8934b08553efde5",
+    "nativeRadialUpperBoundsMm": [
+      13.159794675882727,
+      11.834522013658692,
+      13.159787653498812
+    ],
+    "clearanceBands": [
+      {
+        "zMinMm": -9.3473,
+        "zMaxMm": -7.14375,
+        "proposedOuterRadiusMm": 13.2,
+        "noteExtremeAbsYmm": 177.27471714579474,
+        "minimumYSeparationMm": 0.5752828542052839
+      },
+      {
+        "zMinMm": -7.14375,
+        "zMaxMm": 7.14375,
+        "proposedOuterRadiusMm": 12.0,
+        "noteExtremeAbsYmm": 178.3,
+        "minimumYSeparationMm": 0.75
+      },
+      {
+        "zMinMm": 7.14375,
+        "zMaxMm": 9.3473,
+        "proposedOuterRadiusMm": 13.2,
+        "noteExtremeAbsYmm": 177.27471714579474,
+        "minimumYSeparationMm": 0.5752828542052839
+      }
+    ],
+    "axialCoverage": true,
+    "limits": "All-phase radial containment at configured nominal shaft placement, flat NOTE, lateral offset at most 0.5 mm; not installed-part registration or tolerance acceptance"
+  },
+  "physics": {
+    "schema": "gravity-release-numerical-controls/1",
+    "controlPositionErrorM": 6.106226635438361e-16,
+    "controlVelocityErrorMps": 7.216449660063518e-16,
+    "refinedStepDropTimeDifferenceS": 9.999999998366871e-05,
+    "refinedGridDropTimeDifferenceS": 0.0025999999999997137,
+    "sameInputPins": true,
+    "sameExecutedScript": "e00916e74baa12f70e95f7d56f6924b48674f2a7f373b9429d7769647d331fb6",
+    "verifiedTraceCount": 9,
+    "runs": [
+      {
+        "name": "control",
+        "parameters": {
+          "treadThicknessMm": 1.0,
+          "shaftOutboardMm": 1.0,
+          "dtS": 0.001,
+          "resolution": 512,
+          "mu": 0.6,
+          "kAreaNpm3": 10000000.0,
+          "noContactControl": true
+        },
+        "status": "DROPPED_50MM",
+        "dropTimeS": 0.10100000000000008,
+        "maxAbsEnergyBalanceErrorJ": 0.0011413020347600528,
+        "maxAbsWorkResidualW": 0.0,
+        "traceSha256": "d0b0d585c1a62bc4ad52d99f03f47ebd0be847e97dd1fed90192ff039b6a1a18",
+        "seconds": 0.013647799998580012
+      },
+      {
+        "name": "1mm-final",
+        "parameters": {
+          "treadThicknessMm": 1.0,
+          "shaftOutboardMm": 1.0,
+          "dtS": 0.001,
+          "resolution": 512,
+          "mu": 0.6,
+          "kAreaNpm3": 10000000.0,
+          "noContactControl": false
+        },
+        "status": "DROPPED_50MM",
+        "dropTimeS": 0.1500000000000001,
+        "maxAbsEnergyBalanceErrorJ": 0.001283702805005409,
+        "maxAbsWorkResidualW": 5.273559366969494e-16,
+        "traceSha256": "26145228663f0f16c3e025351759cdadc813ed78c8db892b55c10c490a168590",
+        "seconds": 8.92273969999951
+      },
+      {
+        "name": "1mm-half",
+        "parameters": {
+          "treadThicknessMm": 1.0,
+          "shaftOutboardMm": 1.0,
+          "dtS": 0.0005,
+          "resolution": 512,
+          "mu": 0.6,
+          "kAreaNpm3": 10000000.0,
+          "noContactControl": false
+        },
+        "status": "DROPPED_50MM",
+        "dropTimeS": 0.1505000000000001,
+        "maxAbsEnergyBalanceErrorJ": 0.0006434986813077127,
+        "maxAbsWorkResidualW": 8.326672684688674e-16,
+        "traceSha256": "ddea5651c6ea342658625c5bf3b6e4da73d527ee9470a2d69b14250501f161d2",
+        "seconds": 16.762039000001096
+      },
+      {
+        "name": "1p5",
+        "parameters": {
+          "treadThicknessMm": 1.5,
+          "shaftOutboardMm": 1.0,
+          "dtS": 0.001,
+          "resolution": 512,
+          "mu": 0.6,
+          "kAreaNpm3": 10000000.0,
+          "noContactControl": false
+        },
+        "status": "DROPPED_50MM",
+        "dropTimeS": 0.5700000000000004,
+        "maxAbsEnergyBalanceErrorJ": 0.0024906489469198627,
+        "maxAbsWorkResidualW": 6.38378239159465e-16,
+        "traceSha256": "804ef178dbf9a95f8aba69d493efe1166b982db1c350e5f81bb569ad1d7444ec",
+        "seconds": 43.4368633999984
+      },
+      {
+        "name": "1p5-half",
+        "parameters": {
+          "treadThicknessMm": 1.5,
+          "shaftOutboardMm": 1.0,
+          "dtS": 0.0005,
+          "resolution": 512,
+          "mu": 0.6,
+          "kAreaNpm3": 10000000.0,
+          "noContactControl": false
+        },
+        "status": "DROPPED_50MM",
+        "dropTimeS": 0.6739999999999812,
+        "maxAbsEnergyBalanceErrorJ": 0.0006211157969170482,
+        "maxAbsWorkResidualW": 4.440892098500626e-16,
+        "traceSha256": "337afc2b146f89b8fa3a7fd940e156042536870e214b274fd4fad2209d75fd8c",
+        "seconds": 113.99788040000203
+      },
+      {
+        "name": "1p5-grid",
+        "parameters": {
+          "treadThicknessMm": 1.5,
+          "shaftOutboardMm": 1.0,
+          "dtS": 0.001,
+          "resolution": 1024,
+          "mu": 0.6,
+          "kAreaNpm3": 10000000.0,
+          "noContactControl": false
+        },
+        "status": "DROPPED_50MM",
+        "dropTimeS": 0.5660000000000004,
+        "maxAbsEnergyBalanceErrorJ": 0.0025719032313471692,
+        "maxAbsWorkResidualW": 9.159339953157541e-16,
+        "traceSha256": "083e3eb1e593c7887532af4375b630ec3ba21bbe207ae1c6de189548698c633b",
+        "seconds": 189.809263799998
+      },
+      {
+        "name": "1p5-stable-coarse",
+        "parameters": {
+          "treadThicknessMm": 1.5,
+          "shaftOutboardMm": 1.0,
+          "dtS": 0.0002,
+          "resolution": 256,
+          "mu": 0.6,
+          "kAreaNpm3": 10000000.0,
+          "noContactControl": false
+        },
+        "status": "DROPPED_50MM",
+        "dropTimeS": 0.6769999999999581,
+        "maxAbsEnergyBalanceErrorJ": 0.00024446437701768076,
+        "maxAbsWorkResidualW": 3.3306690738754696e-16,
+        "traceSha256": "871204ec079a71c299b130e92d80bbc0bc259f310bd1cf2cf00ef04d4d2e290e",
+        "seconds": 77.75726020000002
+      },
+      {
+        "name": "1p5-stable-fine",
+        "parameters": {
+          "treadThicknessMm": 1.5,
+          "shaftOutboardMm": 1.0,
+          "dtS": 0.0001,
+          "resolution": 256,
+          "mu": 0.6,
+          "kAreaNpm3": 10000000.0,
+          "noContactControl": false
+        },
+        "status": "DROPPED_50MM",
+        "dropTimeS": 0.6770999999999417,
+        "maxAbsEnergyBalanceErrorJ": 0.0001223263890696366,
+        "maxAbsWorkResidualW": 3.3306690738754696e-16,
+        "traceSha256": "24e1c99c4e3cd051c60b259670f6420d282636d69c41b2b948b61510e60d1d07",
+        "seconds": 144.63942629999656
+      },
+      {
+        "name": "1p5-stable-grid",
+        "parameters": {
+          "treadThicknessMm": 1.5,
+          "shaftOutboardMm": 1.0,
+          "dtS": 0.0002,
+          "resolution": 512,
+          "mu": 0.6,
+          "kAreaNpm3": 10000000.0,
+          "noContactControl": false
+        },
+        "status": "DROPPED_50MM",
+        "dropTimeS": 0.6743999999999584,
+        "maxAbsEnergyBalanceErrorJ": 0.00025027648627231475,
+        "maxAbsWorkResidualW": 6.38378239159465e-16,
+        "traceSha256": "3f6bb325af885c64ce2aff7391b212df281ad25ac6220b4a9b96538c3216a3fd",
+        "seconds": 281.6982003000012
+      }
+    ],
+    "acceptance": false,
+    "limits": [
+      "Convergence of this isolated uncalibrated model only; not validation against hardware",
+      "The 1 ms contact runs are retained as unconverged diagnostics; use stable-coarse/fine/grid for the 1.5 mm conclusion"
+    ]
+  },
+  "staticCapacity": {
+    "oneMm": {
+      "schema": "candidate-pressure-capacity/1",
+      "complete": true,
+      "inputs": {
+        "sim/pressure/fast_geometry.py": "2e433044711d836404c7efb2cac715f105718daa42e9e974239246be723df73e",
+        "sim/pressure/finite_area.py": "75c7af7cc4446346e611c389d050cb3d1212404c560ad8e4884863e44f1cd5ed",
+        "sim/pressure/finite_transport.py": "6b4170b89e1b327c293e545dfd0d41b58af369f8eb11609dfd6d899ef9fb3f9b",
+        "cad/assembly/belt_contact_geometry.py": "2cb19b7fb7648ca8f46a943f8ad4c70d97eef9d6cf56f8cf602bf5000aa30daf",
+        "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+        "sim/acquisition/free-planar-config.json": "8ecb4ca6594ec456e56a79ceb63d222d9824e4985273d6b16a52b9737d166053"
+      },
+      "scriptSha256": "cdc115b72d6b73033687b82f78fe3154a82ec1c5a37ef98d250752e18c212b87",
+      "parameters": {
+        "shaftOutboardOffsetMm": 1,
+        "outerTreadThicknessMm": 1,
+        "kAreaNpm3": 10000000.0,
+        "muHypothesis": 0.6
+      },
+      "rows": [
+        {
+          "resolution": 512,
+          "noteXmm": 185.0,
+          "normalN": [
+            1.6271155875919001,
+            1.6271155875919037
+          ],
+          "potentialJ": 0.0009520567988419669,
+          "contactSamples": 1088,
+          "normalTimesMuN": 1.9525387051102823,
+          "noteWeightN": 2.3045627499999997,
+          "workResidualW": 0.0,
+          "netForceN": [
+            0.0,
+            -3.0254661623208e-15,
+            4.336808689942018e-19
+          ]
+        },
+        {
+          "resolution": 512,
+          "noteXmm": 324.0,
+          "normalN": [
+            1.037870506336181,
+            1.0378705063361826
+          ],
+          "potentialJ": 0.0006059271668801102,
+          "contactSamples": 692,
+          "normalTimesMuN": 1.245444607603418,
+          "noteWeightN": 2.3045627499999997,
+          "workResidualW": 0.0,
+          "netForceN": [
+            0.05539204819552476,
+            -9.662409761190816e-16,
+            3.2526065174565133e-19
+          ]
+        },
+        {
+          "resolution": 1024,
+          "noteXmm": 185.0,
+          "normalN": [
+            1.6269196021050696,
+            1.6269196021050736
+          ],
+          "potentialJ": 0.0009521834283946453,
+          "contactSamples": 4312,
+          "normalTimesMuN": 1.9523035225260859,
+          "noteWeightN": 2.3045627499999997,
+          "workResidualW": 0.0,
+          "netForceN": [
+            0.0,
+            -1.0950984043189838e-15,
+            0.0
+          ]
+        },
+        {
+          "resolution": 1024,
+          "noteXmm": 324.0,
+          "normalN": [
+            1.0342580702324111,
+            1.0342580702324111
+          ],
+          "potentialJ": 0.0006054138852135269,
+          "contactSamples": 2732,
+          "normalTimesMuN": 1.2411096842788933,
+          "noteWeightN": 2.3045627499999997,
+          "workResidualW": 0.0,
+          "netForceN": [
+            0.05152846242231049,
+            -1.855069917122698e-16,
+            0.0
+          ]
+        },
+        {
+          "resolution": 2048,
+          "noteXmm": 185.0,
+          "normalN": [
+            1.6265836130220621,
+            1.6265836130220654
+          ],
+          "potentialJ": 0.0009521570661593406,
+          "contactSamples": 17256,
+          "normalTimesMuN": 1.9519003356264766,
+          "noteWeightN": 2.3045627499999997,
+          "workResidualW": 0.0,
+          "netForceN": [
+            0.0,
+            -3.0617259487268622e-15,
+            -3.015437292225309e-17
+          ]
+        },
+        {
+          "resolution": 2048,
+          "noteXmm": 324.0,
+          "normalN": [
+            1.0339282997965866,
+            1.0339282997965877
+          ],
+          "potentialJ": 0.0006052764845498761,
+          "contactSamples": 10992,
+          "normalTimesMuN": 1.2407139597559045,
+          "noteWeightN": 2.3045627499999997,
+          "workResidualW": 0.0,
+          "netForceN": [
+            0.05103368153089091,
+            -1.6078785980595811e-15,
+            -2.1108061045577164e-17
+          ]
+        }
+      ],
+      "seconds": 7.827146699997684,
+      "acceptance": false,
+      "limits": [
+        "Same uncalibrated finite-area penalty law on revised native-backed outer capsule geometry",
+        "Static hypothetical poses, no trajectory or capture claim",
+        "normalTimesMu is a generous friction-cone magnitude bound, not achieved vertical retention or motor traction",
+        "Tread adhesive and material behavior unmeasured; phase-free pulley-envelope clearance is separate"
+      ]
+    },
+    "onePointFiveMm": {
+      "schema": "candidate-pressure-capacity/1",
+      "complete": true,
+      "inputs": {
+        "sim/pressure/fast_geometry.py": "2e433044711d836404c7efb2cac715f105718daa42e9e974239246be723df73e",
+        "sim/pressure/finite_area.py": "75c7af7cc4446346e611c389d050cb3d1212404c560ad8e4884863e44f1cd5ed",
+        "sim/pressure/finite_transport.py": "6b4170b89e1b327c293e545dfd0d41b58af369f8eb11609dfd6d899ef9fb3f9b",
+        "cad/assembly/belt_contact_geometry.py": "2cb19b7fb7648ca8f46a943f8ad4c70d97eef9d6cf56f8cf602bf5000aa30daf",
+        "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+        "sim/acquisition/free-planar-config.json": "8ecb4ca6594ec456e56a79ceb63d222d9824e4985273d6b16a52b9737d166053"
+      },
+      "scriptSha256": "d91a150ca39d4583e7c98c18c5fe6df6cbf679deb58de7c92b3fe45d21fc4d42",
+      "parameters": {
+        "shaftOutboardOffsetMm": 1,
+        "outerTreadThicknessMm": 1.5,
+        "kAreaNpm3": 10000000.0,
+        "muHypothesis": 0.6
+      },
+      "rows": [
+        {
+          "resolution": 512,
+          "noteXmm": 185.0,
+          "normalN": [
+            3.7640788643162937,
+            3.7640788643162972
+          ],
+          "potentialJ": 0.0035728401772245626,
+          "contactSamples": 1512,
+          "normalTimesMuN": 4.516894637179554,
+          "noteWeightN": 2.3045627499999997,
+          "workResidualW": 0.0,
+          "netForceN": [
+            0.0,
+            -6.084542591988651e-16,
+            1.912586842373054e-15
+          ]
+        },
+        {
+          "resolution": 512,
+          "noteXmm": 324.0,
+          "normalN": [
+            2.391937492060992,
+            2.391937492060992
+          ],
+          "potentialJ": 0.002270351272302276,
+          "contactSamples": 972,
+          "normalTimesMuN": 2.8703249904731902,
+          "noteWeightN": 2.3045627499999997,
+          "workResidualW": 0.0,
+          "netForceN": [
+            0.1522671689801697,
+            3.4297651524406447e-15,
+            1.1467064277292938e-15
+          ]
+        },
+        {
+          "resolution": 1024,
+          "noteXmm": 185.0,
+          "normalN": [
+            3.765461519667122,
+            3.7654615196671237
+          ],
+          "potentialJ": 0.003573315118567717,
+          "contactSamples": 5928,
+          "normalTimesMuN": 4.518553823600548,
+          "noteWeightN": 2.3045627499999997,
+          "workResidualW": 0.0,
+          "netForceN": [
+            0.0,
+            -2.6199745498112215e-16,
+            1.7642137750684128e-15
+          ]
+        },
+        {
+          "resolution": 1024,
+          "noteXmm": 324.0,
+          "normalN": [
+            2.3938521532956,
+            2.3938521532955983
+          ],
+          "potentialJ": 0.002271964308535262,
+          "contactSamples": 3768,
+          "normalTimesMuN": 2.872622583954719,
+          "noteWeightN": 2.3045627499999997,
+          "workResidualW": 0.0,
+          "netForceN": [
+            0.14982017593514604,
+            3.660815411660884e-15,
+            1.1001941545296656e-15
+          ]
+        },
+        {
+          "resolution": 2048,
+          "noteXmm": 185.0,
+          "normalN": [
+            3.7648484524298866,
+            3.7648484524298915
+          ],
+          "potentialJ": 0.0035732885645507295,
+          "contactSamples": 23784,
+          "normalTimesMuN": 4.517818142915867,
+          "noteWeightN": 2.3045627499999997,
+          "workResidualW": 0.0,
+          "netForceN": [
+            0.0,
+            -1.1835841246703779e-15,
+            1.1403265755705744e-15
+          ]
+        },
+        {
+          "resolution": 2048,
+          "noteXmm": 324.0,
+          "normalN": [
+            2.3946013024513326,
+            2.3946013024513353
+          ],
+          "potentialJ": 0.0022718379514914903,
+          "contactSamples": 15148,
+          "normalTimesMuN": 2.8735215629416007,
+          "noteWeightN": 2.3045627499999997,
+          "workResidualW": 0.0,
+          "netForceN": [
+            0.1499013701819957,
+            -1.7273509012039057e-15,
+            7.28197612886311e-16
+          ]
+        }
+      ],
+      "seconds": 7.344312299999729,
+      "acceptance": false,
+      "limits": [
+        "Same uncalibrated finite-area penalty law on revised native-backed outer capsule geometry",
+        "Static hypothetical poses, no trajectory or capture claim",
+        "normalTimesMu is a generous friction-cone magnitude bound, not achieved vertical retention or motor traction",
+        "Tread adhesive and material behavior unmeasured; phase-free pulley-envelope clearance is separate"
+      ]
+    }
+  },
+  "focusedTests": {
+    "fastGeometry": 6,
+    "finitePressureTransport": 8,
+    "result": "PASS",
+    "broadSuite": "Not rerun; 13 inherited failures remain historical baseline"
+  },
+  "limits": [
+    "No integrated floor acquisition, retained driving, lift motion, launcher or shooting demonstration",
+    "Native material mass, structural strength of relieved weldments, pivot engagement, tread adhesion and hardware tolerances unqualified",
+    "Contact law is uncalibrated and lacks static sticking; observed model drop does not prove real hardware failure",
+    "No new GUI operation or verification, no merge, original native archive and worktrees preserved"
+  ]
+}

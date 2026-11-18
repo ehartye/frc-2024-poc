@@ -1,0 +1,91 @@
+{
+  "inputs": {
+    "cad/assembly/opening_support_compliance.py": "cb97b210e60aa35d265487f9604e2684f018f56382ba31b8f794ac255f8e6b8d",
+    "cad/assembly/servo_opening_relocation.py": "816bd824454803890f2cceafb569fffdc03044142c65ca67a972f5fd905b5036",
+    "cad/assembly/servo_opening_fasteners.py": "b33f27682981402ff416738888fc4fd01ec145649cea2c3f39135f0e0309f0e5",
+    "cad/assembly/servo_opening_wide_support.py": "2cb33bd6d0514404dae37fcf8e736ee74d9d740a39f070f430dfb823d277d673",
+    "cad/assembly/cassette_spring_law.py": "4b75a9aad20e99b7dccfdbf0126fc8d9ecaf85da319ef62f2add8c1f7c798ee1",
+    "cad/assembly/check_opening_support_compliance.py": "8a4e787207f26eb51b4463d352e2d461e7c8993640c2732ee2ff99d029753ecf"
+  },
+  "correctsHistoricalSnapshot": "c564644 lower-face datum replaced by arm centroid; prior receipt preserved",
+  "loadApplicationLocalXmm": 146,
+  "rows": [
+    {
+      "case": "nominal",
+      "revision": "slender",
+      "armCentroidZmm": 200.5,
+      "verticalCenterlineLengthMm": 84.5,
+      "loadBelowArmCentroidMm": 15.5,
+      "attachmentFaceCentroidXmm": 117.6,
+      "forceN": 14.6234,
+      "elasticModulusHypothesisMPa": 69000,
+      "shearModulusHypothesisMPa": 26000,
+      "stemBendingMm": 0.21731858222736622,
+      "stemTorsionMm": 1.3899114051002757,
+      "armBendingMm": 0.4789571615572016,
+      "totalEstimatedMm": 2.0861871488848434,
+      "elasticEnergyJ": 0.01525357457650131,
+      "accepted": false
+    },
+    {
+      "case": "nominal",
+      "revision": "wide",
+      "armCentroidZmm": 203.0,
+      "verticalCenterlineLengthMm": 87.0,
+      "loadBelowArmCentroidMm": 18.0,
+      "attachmentFaceCentroidXmm": 117.6,
+      "forceN": 14.6234,
+      "elasticModulusHypothesisMPa": 69000,
+      "shearModulusHypothesisMPa": 26000,
+      "stemBendingMm": 0.004324829260253907,
+      "stemTorsionMm": 0.030672995965842643,
+      "armBendingMm": 0.010764042672395833,
+      "totalEstimatedMm": 0.04576186789849238,
+      "elasticEnergyJ": 0.00033459704951340673,
+      "accepted": false
+    },
+    {
+      "case": "seat_plus1mm_rate_plus10percent",
+      "revision": "slender",
+      "armCentroidZmm": 200.5,
+      "verticalCenterlineLengthMm": 84.5,
+      "loadBelowArmCentroidMm": 15.5,
+      "attachmentFaceCentroidXmm": 117.6,
+      "forceN": 22.443740000000005,
+      "elasticModulusHypothesisMPa": 69000,
+      "shearModulusHypothesisMPa": 26000,
+      "stemBendingMm": 0.3335367805489578,
+      "stemTorsionMm": 2.133211852175641,
+      "armBendingMm": 0.735095121868227,
+      "totalEstimatedMm": 3.2018437545928253,
+      "elasticEnergyJ": 0.0359306743743526,
+      "accepted": false
+    },
+    {
+      "case": "seat_plus1mm_rate_plus10percent",
+      "revision": "wide",
+      "armCentroidZmm": 203.0,
+      "verticalCenterlineLengthMm": 87.0,
+      "loadBelowArmCentroidMm": 18.0,
+      "attachmentFaceCentroidXmm": 117.6,
+      "forceN": 22.443740000000005,
+      "elasticModulusHypothesisMPa": 69000,
+      "shearModulusHypothesisMPa": 26000,
+      "stemBendingMm": 0.006637672734215779,
+      "stemTorsionMm": 0.0470763807649672,
+      "armBendingMm": 0.016520465492850998,
+      "totalEstimatedMm": 0.07023451899203398,
+      "elasticEnergyJ": 0.0007881626416411366,
+      "accepted": false
+    }
+  ],
+  "screeningBudgetMm": 0.15,
+  "adopted": false,
+  "limits": [
+    "Moduli69GPa/26GPa are illustrative hypotheses, not sourced stock selection",
+    "Centerline beam idealization includes finite joint zones as line elements; it omits weld/anchor/frame compliance and dynamic impact",
+    "Square torsion constant0.1406 is an approximation",
+    "Free-length tolerance and actual contact load envelope unknown; selected spring cases not worst-case proof",
+    "0.15mm budget is provisional10percent of1.5mm travel, not validated mechanism tolerance"
+  ]
+}

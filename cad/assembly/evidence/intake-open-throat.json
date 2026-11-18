@@ -1,0 +1,953 @@
+{
+  "schema": "2024-intake-rigid-pose-screen/1",
+  "centralThroatHypothesis": true,
+  "inputs": {
+    "cad/assembly/build_robot.py": "83d63e65aeef282ef72ef00a954c1c44483288eb3ace7f1980e95994eea801c6",
+    "cad/assembly/bumper_candidate.py": "556fba39fda427cb081a2a1d4d806372b67b830606a242bbfc0babf05619fc19",
+    "cad/a2_primitives.py": "bef958c710da792f89def8606d7169a7c385fcff257826619a7b29fe0943952e",
+    "cad/a2_kinematics.py": "4329126a1465f53c8d27618307b2864ff69803e196ff4521aab8a50daf670581",
+    "cad/build_a2_layout.py": "aea31166eabc53113962cc511cfbd190eba54033f7b93476455961dccb1969c9",
+    "cad/cycle-contract-A2.json": "0e08bf88e488539ca8966dcc3cc08727ef2faf98da3740787b308cd54c652f52",
+    "cad/components/a2-transmission.json": "0aae2e2dd0d8c4b16729139380f6d1e2df0efa956dad2ee8b205be1a57f3d8b0",
+    "cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+    "cad/drivetrain/build_fastening.py": "9d82a974d184200e7a6c414bc74b345cd53aa2cf85f36c3cf528fe818997d4ac",
+    "cad/drivetrain/fastening.json": "6cb3d276cd5f59143ef9b52d2240095f02db9f92d6cfef5ae53b145a78862ac9",
+    "cad/drivetrain/build_drivetrain.py": "4748e01902aac32ae8d996e1f7676caa7f794ac6a5971b661855c26487ad29a7",
+    "cad/electrical/manifest.json": "2e7f38bc1e3b0b30df61fc2f3846eaf0103ffe6144199fdfbea80a967bf02fa6",
+    "cad/electrical/build_electrical.py": "b3a382c8b5f42c5421b6e7e5c5b56634d84847caac8bc5ab2a2faa4a3c44bef3",
+    "cad/electrical/mounts.py": "a21e030c5ee2450dfac2ca78c95d26d5711b6921210faa0e7143d0bc427b7530"
+  },
+  "studySha256": "7cc310092faa07558c668555dac775a5a1c9e0882b40f6c36642295386406eca",
+  "sampledPoses": 92,
+  "conflictPoses": [],
+  "poses": [
+    {
+      "phase": "level intake",
+      "centerMm": [
+        650,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        640,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        630,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        620,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        610,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        600,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        590,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        580,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        570,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        560,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        550,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        540,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        530,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        520,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        510,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        500,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        490,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        480,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        470,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        460,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        450,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        440,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        430,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        420,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        410,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        400,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        390,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        380,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        370,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        360,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        350,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        340,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        330,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        320,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        310,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        300,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        290,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        280,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        270,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        260,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        250,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        240,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        230,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        220,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        210,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        200,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        190,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        180,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "level intake",
+      "centerMm": [
+        178,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "rotate behind backing",
+      "centerMm": [
+        178,
+        0,
+        25.4
+      ],
+      "pitchDeg": 0,
+      "hits": []
+    },
+    {
+      "phase": "rotate behind backing",
+      "centerMm": [
+        178,
+        0,
+        38.6825351947431
+      ],
+      "pitchDeg": 5,
+      "hits": []
+    },
+    {
+      "phase": "rotate behind backing",
+      "centerMm": [
+        178,
+        0,
+        51.86398227644018
+      ],
+      "pitchDeg": 10,
+      "hits": []
+    },
+    {
+      "phase": "rotate behind backing",
+      "centerMm": [
+        178,
+        0,
+        64.84402247362416
+      ],
+      "pitchDeg": 15,
+      "hits": []
+    },
+    {
+      "phase": "rotate behind backing",
+      "centerMm": [
+        178,
+        0,
+        77.52386984283191
+      ],
+      "pitchDeg": 20,
+      "hits": []
+    },
+    {
+      "phase": "rotate behind backing",
+      "centerMm": [
+        178,
+        0,
+        89.80702308928261
+      ],
+      "pitchDeg": 25,
+      "hits": []
+    },
+    {
+      "phase": "rotate behind backing",
+      "centerMm": [
+        178,
+        0,
+        101.6
+      ],
+      "pitchDeg": 30,
+      "hits": []
+    },
+    {
+      "phase": "rotate behind backing",
+      "centerMm": [
+        178,
+        0,
+        112.81304889989943
+      ],
+      "pitchDeg": 35,
+      "hits": []
+    },
+    {
+      "phase": "rotate behind backing",
+      "centerMm": [
+        178,
+        0,
+        123.36083171622857
+      ],
+      "pitchDeg": 40,
+      "hits": []
+    },
+    {
+      "phase": "rotate behind backing",
+      "centerMm": [
+        178,
+        0,
+        133.16307345282985
+      ],
+      "pitchDeg": 45,
+      "hits": []
+    },
+    {
+      "phase": "rotate behind backing",
+      "centerMm": [
+        178,
+        0,
+        142.14517313133226
+      ],
+      "pitchDeg": 50,
+      "hits": []
+    },
+    {
+      "phase": "rotate behind backing",
+      "centerMm": [
+        178,
+        0,
+        150.23877154964237
+      ],
+      "pitchDeg": 55,
+      "hits": []
+    },
+    {
+      "phase": "rotate behind backing",
+      "centerMm": [
+        178,
+        0,
+        157.38227153674845
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        171.31260721096703
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        185.2429428851856
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        199.1732785594042
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        213.1036142336228
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        227.0339499078414
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        240.96428558205997
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        254.89462125627858
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        268.82495693049714
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        282.75529260471575
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        296.68562827893436
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        310.6159639531529
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        324.54629962737147
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        338.4766353015901
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        352.4069709758087
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        366.33730665002724
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        380.26764232424586
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        394.19797799846447
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        408.128313672683
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        422.0586493469017
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        435.98898502112024
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        449.9193206953388
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        463.84965636955747
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        477.779992043776
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        491.7103277179946
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        505.6406633922131
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        519.5709990664317
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        533.5013347406503
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        547.4316704148689
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        561.3620060890876
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    },
+    {
+      "phase": "vertical lift",
+      "centerMm": [
+        178,
+        0,
+        575.2923417633061
+      ],
+      "pitchDeg": 60,
+      "hits": []
+    }
+  ],
+  "acceptance": false,
+  "limits": [
+    "Chassis supplier boxes may overestimate collisions; a collision is a review gate not exact native diagnosis",
+    "Excludes launcher cartridges and carrier webs to study acquisition architecture first; launch handoff unresolved",
+    "Finite pose sampling not continuous swept proof",
+    "No physical capture,retention,actuation,torque or friction model",
+    "No chassis FRO cut applied yet; baseline rail interference should reject unmodifiedchassis"
+  ]
+}

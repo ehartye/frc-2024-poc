@@ -1,0 +1,194 @@
+{
+  "schema": "native-signed-local-spatial/1",
+  "trajectorySha256": "56ce4d15a22513cc04d137b5f8d6cab2fc9057be7409cdbdf1295c46d449f800",
+  "bindingSha256": "6d8a1ef819b918d11380a96137f6573ca30441d8ce947efb86a670c7134314d8",
+  "contractSha256": "ee05edbdb9fca1ebf378da8fddf3e7276ce81bae218583efcc8ffa1f49802cd9",
+  "rows": [
+    {
+      "name": "firstContact",
+      "timeS": 1.3824999999999033,
+      "values": [
+        {
+          "resolution": 512,
+          "normalN": [
+            0.0001682002418294968,
+            0.00016820024179533123
+          ],
+          "reactionN": [
+            -0.00024954608806690046,
+            -3.074409758892227e-14
+          ],
+          "potentialJ": 1.1393565611073629e-09
+        },
+        {
+          "resolution": 1024,
+          "normalN": [
+            0.00019543293815871374,
+            0.00019543293813304772
+          ],
+          "reactionN": [
+            -0.0002766298268120858,
+            -2.3791471586874155e-14
+          ],
+          "potentialJ": 2.390662488853317e-09
+        },
+        {
+          "resolution": 2048,
+          "normalN": [
+            0.00014697501890416478,
+            0.00014697501888292927
+          ],
+          "reactionN": [
+            -0.0002093023449016037,
+            -1.9649466075240523e-14
+          ],
+          "potentialJ": 1.5363462862636829e-09
+        }
+      ],
+      "comparisons": [
+        {
+          "levels": [
+            512,
+            1024
+          ],
+          "maximumNormalizedDifference": 0.2671068163850161,
+          "withinLocalBounds": true
+        },
+        {
+          "levels": [
+            1024,
+            2048
+          ],
+          "maximumNormalizedDifference": 0.655151377884823,
+          "withinLocalBounds": true
+        }
+      ]
+    },
+    {
+      "name": "index",
+      "timeS": 4.450000000000253,
+      "values": [
+        {
+          "resolution": 512,
+          "normalN": [
+            3.7640788643162937,
+            3.7640788643162972
+          ],
+          "reactionN": [
+            0.051358765845166236,
+            2.209820867959955e-15
+          ],
+          "potentialJ": 0.00357284017722455
+        },
+        {
+          "resolution": 1024,
+          "normalN": [
+            3.765461519667122,
+            3.7654615196671237
+          ],
+          "reactionN": [
+            0.05137763140961617,
+            2.118043154059057e-15
+          ],
+          "potentialJ": 0.0035733151185677334
+        },
+        {
+          "resolution": 2048,
+          "normalN": [
+            3.764848452429887,
+            3.764848452429892
+          ],
+          "reactionN": [
+            0.051369266447611105,
+            4.454267172254245e-15
+          ],
+          "potentialJ": 0.003573288564550728
+        }
+      ],
+      "comparisons": [
+        {
+          "levels": [
+            512,
+            1024
+          ],
+          "maximumNormalizedDifference": 0.03662215450020459,
+          "withinLocalBounds": true
+        },
+        {
+          "levels": [
+            1024,
+            2048
+          ],
+          "maximumNormalizedDifference": 0.01623820648260557,
+          "withinLocalBounds": true
+        }
+      ]
+    },
+    {
+      "name": "maximumTransportReaction",
+      "timeS": 5.05149999999992,
+      "values": [
+        {
+          "resolution": 512,
+          "normalN": [
+            3.7640788643162937,
+            3.7640788643162972
+          ],
+          "reactionN": [
+            -0.9470798081829457,
+            2.209820867959955e-15
+          ],
+          "potentialJ": 0.00357284017722455
+        },
+        {
+          "resolution": 1024,
+          "normalN": [
+            3.765461519667122,
+            3.7654615196671237
+          ],
+          "reactionN": [
+            -0.9474276980682672,
+            2.118043154059057e-15
+          ],
+          "potentialJ": 0.0035733151185677334
+        },
+        {
+          "resolution": 2048,
+          "normalN": [
+            3.764848452429887,
+            3.764848452429892
+          ],
+          "reactionN": [
+            -0.9472734442328874,
+            4.454267172254245e-15
+          ],
+          "potentialJ": 0.003573288564550728
+        }
+      ],
+      "comparisons": [
+        {
+          "levels": [
+            512,
+            1024
+          ],
+          "maximumNormalizedDifference": 0.03662215450020459,
+          "withinLocalBounds": true
+        },
+        {
+          "levels": [
+            1024,
+            2048
+          ],
+          "maximumNormalizedDifference": 0.01623820648260557,
+          "withinLocalBounds": true
+        }
+      ]
+    }
+  ],
+  "localFineBoundsPassed": true,
+  "acceptance": false,
+  "limits": [
+    "Only prescribed states from the attained trajectory; no full spatial trajectory refinement",
+    "Motor currents set to coast only for this instantaneous contact-law query; no trajectory state is changed"
+  ]
+}

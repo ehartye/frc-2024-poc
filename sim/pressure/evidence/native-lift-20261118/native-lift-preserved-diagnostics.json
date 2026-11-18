@@ -1,0 +1,137 @@
+{
+  "schema": "native-lift-preserved-diagnostics/1",
+  "runs": [
+    {
+      "name": "native-pressure-lift-2ms",
+      "inputs": {
+        "run_native_pressure_lift.py": "d02c9f44356f71a2487ea13cf03967ffe908d8ee13c5b103dae7262d19d0f652",
+        "native_pressure_lift.py": "1c50b962f792b57255177d8fc9da10b131a2234709a6df57e21913d4e9ee29fa",
+        "receipt.json": "d819bdf34a7e04413a32ee57c8a3e31c3eb9b43076a1daed602ccd3e76f479a8",
+        "native-pressure-binding.json": "6d8a1ef819b918d11380a96137f6573ca30441d8ce947efb86a670c7134314d8",
+        "native-pressure-lift-contract.json": "0ad4ec67fee1a9051781e0282db65ac32d1711c27bb8f34608aefbae41061361"
+      },
+      "outcome": "MODEL_DOMAIN_EXIT",
+      "reason": "finite vector",
+      "acceptedSteps": 0,
+      "stepS": 0.0005,
+      "durationS": 0.0,
+      "receiptSha256": "4065388537c11d3711ca1e0b1aac92353fd617e0f4f67737322c539cf4c3dfae",
+      "authority": "Implementation rejection only",
+      "requestedHoldTransitionElapsedS": null
+    },
+    {
+      "name": "native-pressure-lift-2ms-typed",
+      "inputs": {
+        "run_native_pressure_lift.py": "d02c9f44356f71a2487ea13cf03967ffe908d8ee13c5b103dae7262d19d0f652",
+        "native_pressure_lift.py": "27ab17fe8087c46691f0d509df312af19ce54a4ef980369cfcf56ad7636bee98",
+        "receipt.json": "d819bdf34a7e04413a32ee57c8a3e31c3eb9b43076a1daed602ccd3e76f479a8",
+        "native-pressure-binding.json": "6d8a1ef819b918d11380a96137f6573ca30441d8ce947efb86a670c7134314d8",
+        "native-pressure-lift-contract.json": "0ad4ec67fee1a9051781e0282db65ac32d1711c27bb8f34608aefbae41061361"
+      },
+      "outcome": "HORIZON",
+      "reason": null,
+      "acceptedSteps": 4,
+      "stepS": 0.0005,
+      "durationS": 0.0020000000000024443,
+      "receiptSha256": "bd43d0b3feaf112d3b108a945f242372866b640807244baa532f6367caf95c2b",
+      "authority": "Original floating-branch controller; superseded by integer-tick three-level runs for temporal comparison",
+      "requestedHoldTransitionElapsedS": null
+    },
+    {
+      "name": "native-pressure-lift-100ms-half",
+      "inputs": {
+        "run_native_pressure_lift.py": "d02c9f44356f71a2487ea13cf03967ffe908d8ee13c5b103dae7262d19d0f652",
+        "native_pressure_lift.py": "27ab17fe8087c46691f0d509df312af19ce54a4ef980369cfcf56ad7636bee98",
+        "receipt.json": "d819bdf34a7e04413a32ee57c8a3e31c3eb9b43076a1daed602ccd3e76f479a8",
+        "native-pressure-binding.json": "6d8a1ef819b918d11380a96137f6573ca30441d8ce947efb86a670c7134314d8",
+        "native-pressure-lift-contract.json": "0ad4ec67fee1a9051781e0282db65ac32d1711c27bb8f34608aefbae41061361"
+      },
+      "outcome": "HORIZON",
+      "reason": null,
+      "acceptedSteps": 200,
+      "stepS": 0.0005,
+      "durationS": 0.10000000000012221,
+      "receiptSha256": "ebe88b833ebbf4955fed9ca69d2966c1e3e68698cf0c8cb8424949e182fbf6a2",
+      "authority": "Original floating-branch controller; superseded by integer-tick three-level runs for temporal comparison",
+      "requestedHoldTransitionElapsedS": null
+    },
+    {
+      "name": "native-pressure-lift-100ms-quarter",
+      "inputs": {
+        "run_native_pressure_lift.py": "d02c9f44356f71a2487ea13cf03967ffe908d8ee13c5b103dae7262d19d0f652",
+        "native_pressure_lift.py": "27ab17fe8087c46691f0d509df312af19ce54a4ef980369cfcf56ad7636bee98",
+        "receipt.json": "d819bdf34a7e04413a32ee57c8a3e31c3eb9b43076a1daed602ccd3e76f479a8",
+        "native-pressure-binding.json": "6d8a1ef819b918d11380a96137f6573ca30441d8ce947efb86a670c7134314d8",
+        "native-pressure-lift-contract.json": "0ad4ec67fee1a9051781e0282db65ac32d1711c27bb8f34608aefbae41061361"
+      },
+      "outcome": "HORIZON",
+      "reason": null,
+      "acceptedSteps": 400,
+      "stepS": 0.00025,
+      "durationS": 0.09999999999976694,
+      "receiptSha256": "43aa29584716fb47a31c1d11d9109de8087ed616245c3a07c0d81e389e8b3d05",
+      "authority": "Original floating-branch controller; superseded by integer-tick three-level runs for temporal comparison",
+      "requestedHoldTransitionElapsedS": null
+    },
+    {
+      "name": "native-pressure-lift-100ms-eighth",
+      "inputs": {
+        "run_native_pressure_lift.py": "d02c9f44356f71a2487ea13cf03967ffe908d8ee13c5b103dae7262d19d0f652",
+        "native_pressure_lift.py": "27ab17fe8087c46691f0d509df312af19ce54a4ef980369cfcf56ad7636bee98",
+        "receipt.json": "d819bdf34a7e04413a32ee57c8a3e31c3eb9b43076a1daed602ccd3e76f479a8",
+        "native-pressure-binding.json": "6d8a1ef819b918d11380a96137f6573ca30441d8ce947efb86a670c7134314d8",
+        "native-pressure-lift-contract.json": "0ad4ec67fee1a9051781e0282db65ac32d1711c27bb8f34608aefbae41061361"
+      },
+      "outcome": "HORIZON",
+      "reason": null,
+      "acceptedSteps": 800,
+      "stepS": 0.000125,
+      "durationS": 0.10000000000047748,
+      "receiptSha256": "38422ac383e233c564d44720186ad6fcccffc66c5c460ee698c30a61b10caf4d",
+      "authority": "Original floating-branch controller; superseded by integer-tick three-level runs for temporal comparison",
+      "requestedHoldTransitionElapsedS": null
+    },
+    {
+      "name": "native-pressure-lift-800ms-half",
+      "inputs": {
+        "run_native_pressure_lift.py": "d02c9f44356f71a2487ea13cf03967ffe908d8ee13c5b103dae7262d19d0f652",
+        "native_pressure_lift.py": "27ab17fe8087c46691f0d509df312af19ce54a4ef980369cfcf56ad7636bee98",
+        "receipt.json": "d819bdf34a7e04413a32ee57c8a3e31c3eb9b43076a1daed602ccd3e76f479a8",
+        "native-pressure-binding.json": "6d8a1ef819b918d11380a96137f6573ca30441d8ce947efb86a670c7134314d8",
+        "native-pressure-lift-contract.json": "0ad4ec67fee1a9051781e0282db65ac32d1711c27bb8f34608aefbae41061361"
+      },
+      "outcome": "HORIZON",
+      "reason": null,
+      "acceptedSteps": 1600,
+      "stepS": 0.0005,
+      "durationS": 0.8000000000009777,
+      "receiptSha256": "97aa463c557d10a3eb2da5e9bf1336c8de90b8757e92f7bde54e6239ac9816a2",
+      "authority": "Original floating-branch controller; superseded by integer-tick three-level runs for temporal comparison",
+      "requestedHoldTransitionElapsedS": 0.5000000000006111
+    },
+    {
+      "name": "native-pressure-lift-800ms-quarter",
+      "inputs": {
+        "run_native_pressure_lift.py": "d02c9f44356f71a2487ea13cf03967ffe908d8ee13c5b103dae7262d19d0f652",
+        "native_pressure_lift.py": "27ab17fe8087c46691f0d509df312af19ce54a4ef980369cfcf56ad7636bee98",
+        "receipt.json": "d819bdf34a7e04413a32ee57c8a3e31c3eb9b43076a1daed602ccd3e76f479a8",
+        "native-pressure-binding.json": "6d8a1ef819b918d11380a96137f6573ca30441d8ce947efb86a670c7134314d8",
+        "native-pressure-lift-contract.json": "0ad4ec67fee1a9051781e0282db65ac32d1711c27bb8f34608aefbae41061361"
+      },
+      "outcome": "HORIZON",
+      "reason": null,
+      "acceptedSteps": 3200,
+      "stepS": 0.00025,
+      "durationS": 0.7999999999981355,
+      "receiptSha256": "937539e23bc7560a9e4aeb1a80c20b8c6f8c868f5abfd86a2b58ad00177b2c8a",
+      "authority": "Original floating-branch controller; superseded by integer-tick three-level runs for temporal comparison",
+      "requestedHoldTransitionElapsedS": 0.5099999999988114
+    }
+  ],
+  "acceptance": false,
+  "limits": [
+    "Initial NumPy scalar rejection accepted zero steps; casting scalar rate outputs resolved the interface error",
+    "Floating comparisons at 0.2s/0.5s could delay a command phase by one 100Hz tick across timesteps; these are not matched-input refinement",
+    "Executed sources, failed runs and original contracts remain unchanged"
+  ]
+}

@@ -12,6 +12,9 @@ PATTERNS={
 # Only the upstream Apache-licensed Gradle wrapper binary is permitted.
 WRAPPER='shared/examples/java-2026-sim/gradle/wrapper/gradle-wrapper.jar'
 WRAPPER_SHA='2db75c40782f5e8ba1fc278a5574bab070adccb2d21ca5a6e5ed840888448046'
+# Exact reviewed first-party render/visual meshes only; no general binary exemption.
+ORIGINAL_ASSETS={'cad/assembly/connected-floor.png':'d33b182fd6a02b6ed33509fef781b856fea87b01c76c4b9d9a17db64bd8e415f','sim/mujoco/visual/fixed.stl':'60d02bc03df2ade596ee8f12603c07c5a16f0e01e08ef692245b260e4f6a5b25','sim/mujoco/visual/cradle.stl':'8492f434d6ee09e233d939acce1cb26015d2b40778a7236e3104e3e9ef9bcb66','sim/mujoco/visual/carriage.stl':'930c5ca0880fca59bf95ae43c7abd547bdcf7806f182af0bbaa8f1e176d2a3c7'}
+
 def findings(data):
  text=data.decode('utf-8',errors='replace')
  return [name for name,p in PATTERNS.items() if re.search(p,text)]
@@ -21,6 +24,9 @@ def audit(revision='HEAD'):
  for raw in git('ls-tree','-rz','--name-only',revision).split(b'\0'):
   if not raw:continue
   path=raw.decode();data=git('show',revision+':'+path)
+  if path in ORIGINAL_ASSETS:
+   if hashlib.sha256(data).hexdigest()!=ORIGINAL_ASSETS[path]:failures.append((path,['unreviewed-original-asset']))
+   continue
   if path==WRAPPER:
    if hashlib.sha256(data).hexdigest()!=WRAPPER_SHA:failures.append((path,['unreviewed-binary']))
    continue

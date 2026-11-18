@@ -1,0 +1,127 @@
+{
+  "schema": "preserved-native-launcher-binding/1",
+  "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "preservedNativeReceiptSha256": "0ea9d24211f7b58a7b6cfd1731a1f91df707dcba98228169f44b9d8d3e0c79cc",
+  "nativeReceiptBodyCount": 734,
+  "intermediateInventoryBodyCount": 735,
+  "intermediateInventoryUsedAsAssemblyAuthority": false,
+  "inputs": {
+    "cad/cycle-contract-A2.json": "3700da3bf1a271d6b6763060f913435a4a50cda8d456cb1a57a6f1898416b6ad",
+    "cad/components/a2-transmission.json": "0aae2e2dd0d8c4b16729139380f6d1e2df0efa956dad2ee8b205be1a57f3d8b0",
+    "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+    "sim/component-launcher/six-drive-config.json": "54697b9bd1eca98551c44073759441186a722f552cddf2a8604ec8bb3ff5e85d"
+  },
+  "stationM": [
+    0.288,
+    0,
+    0.6653589838486225
+  ],
+  "pitchRad": 1.0471975511965976,
+  "noteMajorRadiusM": 0.1524,
+  "noteTubeRadiusM": 0.0254,
+  "wheels": [
+    {
+      "name": "cartridge -1 -152.4 nominal tread annulus",
+      "sourceRootIndex": "152",
+      "side": -1,
+      "laneMm": -152.4,
+      "centerM": [
+        0.3510986109197342,
+        -0.1524,
+        0.6289289838486225
+      ],
+      "radiusM": 0.04826,
+      "halfWidthM": 0.0127,
+      "nativeBoundsMm": [
+        302.83861091973,
+        -165.10000000000002,
+        580.66898384862,
+        399.35861091973004,
+        -139.7,
+        677.18898384862
+      ],
+      "nativeVolumeMm3": 19048.147554233154,
+      "maxBoundsDifferenceMm": 4.206412995699793e-12,
+      "volumeDifferenceMm3": -3.637978807091713e-11
+    },
+    {
+      "name": "cartridge -1 152.4 nominal tread annulus",
+      "sourceRootIndex": "187",
+      "side": -1,
+      "laneMm": 152.4,
+      "centerM": [
+        0.3510986109197342,
+        0.1524,
+        0.6289289838486225
+      ],
+      "radiusM": 0.04826,
+      "halfWidthM": 0.0127,
+      "nativeBoundsMm": [
+        302.83861091973,
+        139.7,
+        580.66898384862,
+        399.35861091973004,
+        165.10000000000002,
+        677.18898384862
+      ],
+      "nativeVolumeMm3": 19048.147554233154,
+      "maxBoundsDifferenceMm": 4.206412995699793e-12,
+      "volumeDifferenceMm3": -3.637978807091713e-11
+    },
+    {
+      "name": "cartridge 1 -152.4 nominal tread annulus",
+      "sourceRootIndex": "222",
+      "side": 1,
+      "laneMm": -152.4,
+      "centerM": [
+        0.2249013890802658,
+        -0.1524,
+        0.7017889838486223
+      ],
+      "radiusM": 0.04826,
+      "halfWidthM": 0.0127,
+      "nativeBoundsMm": [
+        176.64138908026,
+        -165.10000000000002,
+        653.5289838486199,
+        273.16138908026,
+        -139.7,
+        750.0489838486201
+      ],
+      "nativeVolumeMm3": 19048.147554233183,
+      "maxBoundsDifferenceMm": 5.7980287238024175e-12,
+      "volumeDifferenceMm3": -6.548361852765083e-11
+    },
+    {
+      "name": "cartridge 1 152.4 nominal tread annulus",
+      "sourceRootIndex": "257",
+      "side": 1,
+      "laneMm": 152.4,
+      "centerM": [
+        0.2249013890802658,
+        0.1524,
+        0.7017889838486223
+      ],
+      "radiusM": 0.04826,
+      "halfWidthM": 0.0127,
+      "nativeBoundsMm": [
+        176.64138908026,
+        139.7,
+        653.5289838486199,
+        273.16138908026,
+        165.10000000000002,
+        750.0489838486201
+      ],
+      "nativeVolumeMm3": 19048.147554233183,
+      "maxBoundsDifferenceMm": 5.7980287238024175e-12,
+      "volumeDifferenceMm3": -6.548361852765083e-11
+    }
+  ],
+  "acceptance": false,
+  "limits": [
+    "Offline comparison with the final hash-bound 734-body native export receipt, not a new Fusion session inspection",
+    "Earlier 735-body inventory is not final assembly authority; its four launcher rows agree exactly with the final receipt",
+    "Native treads are nominal annular representations; foam/tread compliance and motor inertia remain hypotheses",
+    "All other native hard parts and actual wheel flange profile need separate dynamic-trajectory checks"
+  ]
+}

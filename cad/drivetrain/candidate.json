@@ -1,0 +1,2691 @@
+{
+  "schema": "original-drivetrain-candidate/1",
+  "status": "historical2024-compatible component candidate; designer registration and competition inspection unresolved",
+  "units": "mm",
+  "frame": "+X forward,+Y left,+Z up, origin ground below chassis center",
+  "sourceTransform": {
+    "robotX": "nativeZ-15.79782764615",
+    "robotY": "nativeX+89.993604498469",
+    "robotZ": "nativeY+26.656576335723",
+    "determinant": 1,
+    "note": "source nominal chassis centered; ground tangent to lower center treads; no load deformation"
+  },
+  "sources": {
+    "guide": {
+      "url": "https://documents.andymark.com/b7cc2bb81123b06807c5eab24e8540b3228891b0000afb91a19e7e8a785deb29/AM-14U4%20UserGuide_2020.pdf",
+      "sha256": "b7cc2bb81123b06807c5eab24e8540b3228891b0000afb91a19e7e8a785deb29",
+      "bytes": 5086919,
+      "revision": "November 2019, pages3-16"
+    },
+    "assembly": {
+      "url": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "bytes": 26804673
+    },
+    "motor": {
+      "url": "https://andymark.com/am-0255",
+      "sha256": "5372a529ca48e29265c9ae90efe6800bf1ae098d66323fe1189ece291f417036",
+      "massKg": 1.270058636,
+      "massBasis": "manufacturer specification2.8lb, not Shopify shipping weight"
+    },
+    "wheel": {
+      "url": "https://andymark.com/am-0940b",
+      "sha256": "e4c99ded9f9da6a47b287a5cd61f143a6c7b9e31d96bc15dc8fb4b887163775a",
+      "massKg": null,
+      "massBasis": "current multi-option page lists0.3/0.5lb; variant correspondence not independently resolved"
+    }
+  },
+  "gearRatio": 10.714285714285715,
+  "motorCount": 4,
+  "motorModel": "CIM; not NEO",
+  "centerTrackMm": 579.60768,
+  "outerAxleXAbsMm": 222.5476976,
+  "centerDropMm": 1.778,
+  "frameDiagramMm": [
+    718.82,
+    711.2
+  ],
+  "frameNativeEnvelopeMm": [
+    719.074,
+    711.2
+  ],
+  "sourceDiscrepancies": [
+    "current kit listing10.75:1 versus guide tooth-derived10.7142857",
+    "guide28.3in length versus native719.074mm",
+    "outer tread lateral stagger and submicrometre nominal asymmetries retained",
+    "current kit discontinued; historical compatibility is not current procurement availability",
+    "guide8 short churros versus current listing12; native8"
+  ],
+  "parts": [
+    {
+      "id": "am-3920-1",
+      "quantity": 1,
+      "partNumber": "am-3920",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO82",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -332.5495000000149,
+        -1.992361831071321e-11,
+        93.85299897727107
+      ],
+      "boundsMm": [
+        -359.5370000000151,
+        -355.6000000000199,
+        51.56199887727098,
+        -305.56200000001473,
+        355.59999999998007,
+        136.14399907727116
+      ],
+      "sizeMm": [
+        53.975000000000364,
+        711.2,
+        84.58200020000018
+      ],
+      "role": "frame-rail",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-3921-1",
+      "quantity": 1,
+      "partNumber": "am-3921",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO83",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -3.629452294262592e-11,
+        -344.4874999500197,
+        93.85299897729965
+      ],
+      "boundsMm": [
+        -355.60000000003635,
+        -355.60000000002003,
+        54.990998877299624,
+        355.59999999996376,
+        -333.3749999000194,
+        132.71499907729967
+      ],
+      "sizeMm": [
+        711.2,
+        22.225000100000614,
+        77.72400020000003
+      ],
+      "role": "frame-rail",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-3922-1",
+      "quantity": 1,
+      "partNumber": "am-3922",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO84",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -1.404032445861958e-11,
+        -247.65000000002013,
+        98.04399897728744
+      ],
+      "boundsMm": [
+        -355.6000000000142,
+        -266.7000000000208,
+        39.87799897728743,
+        355.5999999999861,
+        -228.60000000001946,
+        156.20999897728746
+      ],
+      "sizeMm": [
+        711.2000000000003,
+        38.10000000000133,
+        116.33200000000002
+      ],
+      "role": "frame-rail",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2569-1",
+      "quantity": 1,
+      "partNumber": "am-2569",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO102",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -101.60000000002174,
+        -290.5125000000197,
+        121.15799897732339
+      ],
+      "boundsMm": [
+        -108.93234841873002,
+        -333.37500010001975,
+        114.80799875521697,
+        -94.26765158131344,
+        -247.64999990001968,
+        127.50799919942979
+      ],
+      "sizeMm": [
+        14.664696837416571,
+        85.72500020000007,
+        12.700000444212819
+      ],
+      "role": "standoff",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2569-2",
+      "quantity": 1,
+      "partNumber": "am-2569",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO103",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -107.52546761708165,
+        -293.68750000001967,
+        76.475281384688
+      ],
+      "boundsMm": [
+        -114.85781603578994,
+        -336.5500001000197,
+        70.12528116258159,
+        -100.19311919837335,
+        -250.82499990001963,
+        82.82528160679442
+      ],
+      "sizeMm": [
+        14.664696837416585,
+        85.72500020000007,
+        12.700000444212833
+      ],
+      "role": "standoff",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2569-3",
+      "quantity": 1,
+      "partNumber": "am-2569",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO104",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        101.59999999997717,
+        -290.5125000000197,
+        121.15799897735764
+      ],
+      "boundsMm": [
+        94.2676515812689,
+        -333.37500010001975,
+        114.80799875525123,
+        108.93234841868546,
+        -247.64999990001968,
+        127.50799919946405
+      ],
+      "sizeMm": [
+        14.664696837416571,
+        85.72500020000007,
+        12.700000444212819
+      ],
+      "role": "standoff",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2569-4",
+      "quantity": 1,
+      "partNumber": "am-2569",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO105",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        107.52546761704934,
+        -290.5125000000197,
+        76.47528138472276
+      ],
+      "boundsMm": [
+        100.19311919834107,
+        -333.37500010001975,
+        70.12528116261635,
+        114.85781603575764,
+        -247.64999990001968,
+        82.82528160682918
+      ],
+      "sizeMm": [
+        14.664696837416571,
+        85.72500020000007,
+        12.700000444212833
+      ],
+      "role": "standoff",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2974-cut-1",
+      "quantity": 1,
+      "partNumber": "am-2974-cut",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO109",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -152.4000000000136,
+        -2.006572685786523e-11,
+        121.15799892920089
+      ],
+      "boundsMm": [
+        -159.73234841872224,
+        -244.4750001000201,
+        114.80799888111255,
+        -145.06765158130494,
+        244.47500009997998,
+        127.5079989772892
+      ],
+      "sizeMm": [
+        14.664696837417296,
+        488.9500002000001,
+        12.700000096176652
+      ],
+      "role": "crossbrace",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-0940b-1",
+      "quantity": 1,
+      "partNumber": "am-0940b",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO4/NAUO67/NAUO81",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -222.54769762692726,
+        -289.8775000000197,
+        77.9779989772875
+      ],
+      "boundsMm": [
+        -298.74769772692724,
+        -302.5775001000201,
+        1.7779988772875122,
+        -146.34769752692728,
+        -277.1774999000194,
+        154.1779990772875
+      ],
+      "sizeMm": [
+        152.40000019999997,
+        25.400000200000648,
+        152.4000002
+      ],
+      "role": "wheel",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2234-half-1",
+      "quantity": 1,
+      "partNumber": "am-2234-half",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO4/NAUO68",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -222.54769762692737,
+        -309.42427434281575,
+        77.97799897728748
+      ],
+      "boundsMm": [
+        -259.6607959384726,
+        -315.92520010001965,
+        40.86490066574228,
+        -185.43459931538217,
+        -302.92334858561185,
+        115.09109728883269
+      ],
+      "sizeMm": [
+        74.2261966230904,
+        13.001851514407804,
+        74.2261966230904
+      ],
+      "role": "pulley",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2234-half-2",
+      "quantity": 1,
+      "partNumber": "am-2234-half",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO4/NAUO69",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -222.5476975770802,
+        -319.8861256572236,
+        77.97799890968932
+      ],
+      "boundsMm": [
+        -259.6607958886254,
+        -326.3870514144275,
+        40.86490059814411,
+        -185.434599265535,
+        -313.3851999000197,
+        115.09109722123452
+      ],
+      "sizeMm": [
+        74.22619662309037,
+        13.001851514407804,
+        74.2261966230904
+      ],
+      "role": "pulley",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-0209-1",
+      "quantity": 1,
+      "partNumber": "am-0209",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO4/NAUO70",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -222.54769757708016,
+        -321.3353999997546,
+        77.97799890968935
+      ],
+      "boundsMm": [
+        -236.83519767708015,
+        -326.0979001001622,
+        63.69049880968933,
+        -208.26019747708017,
+        -316.5728998993471,
+        92.26549900968935
+      ],
+      "sizeMm": [
+        28.575000199999977,
+        9.5250002008151,
+        28.57500020000002
+      ],
+      "role": "bearing",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-1306-1",
+      "quantity": 1,
+      "partNumber": "am-1306",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO4/NAUO77",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -222.5476975770802,
+        -329.6539000000197,
+        77.97799890968935
+      ],
+      "boundsMm": [
+        -229.1262976770802,
+        -333.2099001000197,
+        71.39939880968934,
+        -215.96909747708023,
+        -326.0978999000196,
+        84.55659900968936
+      ],
+      "sizeMm": [
+        13.157200199999977,
+        7.112000200000068,
+        13.15720020000002
+      ],
+      "role": "spacer",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-0209-2",
+      "quantity": 1,
+      "partNumber": "am-0209",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO4/NAUO78",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -222.54769762692726,
+        -274.0024999997546,
+        77.97799897728753
+      ],
+      "boundsMm": [
+        -236.83519772692725,
+        -278.7650001001621,
+        63.69049887728751,
+        -208.26019752692727,
+        -269.239999899347,
+        92.26549907728754
+      ],
+      "sizeMm": [
+        28.575000199999977,
+        9.5250002008151,
+        28.575000200000034
+      ],
+      "role": "bearing",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-1307-1",
+      "quantity": 1,
+      "partNumber": "am-1307",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO4/NAUO79",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -222.54769762692717,
+        -258.4450000000197,
+        77.97799897728757
+      ],
+      "boundsMm": [
+        -232.0726977269272,
+        -269.24000010001976,
+        68.45299887728753,
+        -213.02269752692717,
+        -247.64999990001962,
+        87.5029990772876
+      ],
+      "sizeMm": [
+        19.050000200000028,
+        21.590000200000134,
+        19.05000020000007
+      ],
+      "role": "spacer",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-0940b-2",
+      "quantity": 1,
+      "partNumber": "am-0940b",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO5/NAUO67/NAUO81",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        222.5476976688911,
+        -290.98240000002005,
+        77.97799905002856
+      ],
+      "boundsMm": [
+        146.34769756889108,
+        -303.6824001000201,
+        1.7779989500285645,
+        298.7476977688911,
+        -278.28239990002,
+        154.17799915002854
+      ],
+      "sizeMm": [
+        152.40000020000002,
+        25.400000200000136,
+        152.40000019999997
+      ],
+      "role": "wheel",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2234-half-3",
+      "quantity": 1,
+      "partNumber": "am-2234-half",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO5/NAUO68",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        222.5476976688912,
+        -271.43562565722385,
+        77.97799905002861
+      ],
+      "boundsMm": [
+        185.43459935734597,
+        -277.9365514144277,
+        40.864900738483406,
+        259.66079598043643,
+        -264.93469990002,
+        115.09109736157382
+      ],
+      "sizeMm": [
+        74.22619662309046,
+        13.00185151440769,
+        74.2261966230904
+      ],
+      "role": "pulley",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2234-half-4",
+      "quantity": 1,
+      "partNumber": "am-2234-half",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO5/NAUO69",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        222.54769762689943,
+        -260.9737743428163,
+        77.97799897728979
+      ],
+      "boundsMm": [
+        185.4345993153542,
+        -267.47470010002013,
+        40.86490066574458,
+        259.66079593844466,
+        -254.47284858561244,
+        115.09109728883499
+      ],
+      "sizeMm": [
+        74.22619662309046,
+        13.00185151440769,
+        74.2261966230904
+      ],
+      "role": "pulley",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-0209-3",
+      "quantity": 1,
+      "partNumber": "am-0209",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO5/NAUO70",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        222.54769762689935,
+        -259.5245000002851,
+        77.97799897728979
+      ],
+      "boundsMm": [
+        208.26019752689936,
+        -264.28700010069264,
+        63.690498877289784,
+        236.83519772689934,
+        -254.76199989987754,
+        92.26549907728977
+      ],
+      "sizeMm": [
+        28.575000199999977,
+        9.5250002008151,
+        28.57500019999999
+      ],
+      "role": "bearing",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-1306-2",
+      "quantity": 1,
+      "partNumber": "am-1306",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO5/NAUO77",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        222.5476976268994,
+        -251.20600000002005,
+        77.97799897728983
+      ],
+      "boundsMm": [
+        215.96909752689942,
+        -254.7620001000201,
+        71.39939887728983,
+        229.1262977268994,
+        -247.64999990002002,
+        84.55659907728983
+      ],
+      "sizeMm": [
+        13.157200199999977,
+        7.112000200000068,
+        13.157200200000005
+      ],
+      "role": "spacer",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-0209-4",
+      "quantity": 1,
+      "partNumber": "am-0209",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO5/NAUO78",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        222.54769766889112,
+        -306.85740000028517,
+        77.97799905002856
+      ],
+      "boundsMm": [
+        208.26019756889113,
+        -311.6199001006927,
+        63.690498950028555,
+        236.8351977688911,
+        -302.09489989987765,
+        92.26549915002855
+      ],
+      "sizeMm": [
+        28.575000199999977,
+        9.525000200815043,
+        28.57500019999999
+      ],
+      "role": "bearing",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-1307-2",
+      "quantity": 1,
+      "partNumber": "am-1307",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO5/NAUO79",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        222.54769766889106,
+        -322.41490000002,
+        77.97799905002853
+      ],
+      "boundsMm": [
+        213.02269756889106,
+        -333.20990010002004,
+        68.45299895002853,
+        232.07269776889106,
+        -311.61989990002,
+        87.50299915002853
+      ],
+      "sizeMm": [
+        19.0500002,
+        21.59000020000002,
+        19.0500002
+      ],
+      "role": "spacer",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2986-1",
+      "quantity": 1,
+      "partNumber": "am-2986",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO6",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -3.624567312954241e-11,
+        -335.81467000001953,
+        76.19999897729973
+      ],
+      "boundsMm": [
+        -15.557500100036254,
+        -339.77834010001965,
+        60.642498877299715,
+        15.557500099963763,
+        -331.8509999000195,
+        91.75749907729974
+      ],
+      "sizeMm": [
+        31.11500020000002,
+        7.927340200000174,
+        31.115000200000026
+      ],
+      "role": "bearing",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-0028-1",
+      "quantity": 1,
+      "partNumber": "am-0028",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO7/NAUO38",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -1.3920420371960063e-11,
+        -245.99900000002026,
+        116.91619897728742
+      ],
+      "boundsMm": [
+        -12.344400100013935,
+        -249.58040010002037,
+        104.57179887728742,
+        12.344400099986094,
+        -242.41759990002015,
+        129.26059907728742
+      ],
+      "sizeMm": [
+        24.68880020000003,
+        7.16280020000022,
+        24.688800200000003
+      ],
+      "role": "bearing",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-0650-1",
+      "quantity": 1,
+      "partNumber": "am-0650",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO7/NAUO49",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -1.3983481039758772e-11,
+        -226.88550000002024,
+        96.64394366833079
+      ],
+      "boundsMm": [
+        -69.93960313918583,
+        -247.65000010002058,
+        37.37539583811555,
+        69.93960313915787,
+        -206.1209999000199,
+        155.91249149854602
+      ],
+      "sizeMm": [
+        139.8792062783437,
+        41.52900020000067,
+        118.53709566043047
+      ],
+      "role": "gearbox-housing",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-0516-1",
+      "quantity": 1,
+      "partNumber": "am-0516",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO7/NAUO58",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -1.3856471525741654e-11,
+        -213.7410000000203,
+        116.91619897728748
+      ],
+      "boundsMm": [
+        -11.112500100013861,
+        -217.2970001000204,
+        105.80369887728749,
+        11.112500099986148,
+        -210.18499990002022,
+        128.02869907728748
+      ],
+      "sizeMm": [
+        22.22500020000001,
+        7.112000200000182,
+        22.225000199999997
+      ],
+      "role": "bearing",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-0516-2",
+      "quantity": 1,
+      "partNumber": "am-0516",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO7/NAUO59",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -1.3993251002375473e-11,
+        -213.74100000002008,
+        76.19999897728749
+      ],
+      "boundsMm": [
+        -11.112500100014,
+        -217.29700010002017,
+        65.08749887728747,
+        11.112500099986013,
+        -210.18499990002,
+        87.31249907728751
+      ],
+      "sizeMm": [
+        22.22500020000001,
+        7.112000200000182,
+        22.22500020000004
+      ],
+      "role": "bearing",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2986-2",
+      "quantity": 1,
+      "partNumber": "am-2986",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO7/NAUO63",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -1.4018119998127077e-11,
+        -246.38127000002007,
+        76.19999897728735
+      ],
+      "boundsMm": [
+        -15.557500100014028,
+        -250.34494010002015,
+        60.64249887728734,
+        15.557500099985992,
+        -242.41759990001998,
+        91.75749907728736
+      ],
+      "sizeMm": [
+        31.11500020000002,
+        7.927340200000174,
+        31.115000200000026
+      ],
+      "role": "bearing",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2566a_K19-1",
+      "quantity": 1,
+      "partNumber": "am-2566a_K19",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO7/NAUO66",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -1.4082957022765186e-11,
+        -268.6316699500203,
+        76.19999897728721
+      ],
+      "boundsMm": [
+        -7.332342256825809,
+        -339.7783400000206,
+        69.84525135909507,
+        7.332342256797643,
+        -197.48499990002006,
+        82.55474659547936
+      ],
+      "sizeMm": [
+        14.664684513623452,
+        142.29334010000053,
+        12.709495236384285
+      ],
+      "role": "shaft",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-0940b-3",
+      "quantity": 1,
+      "partNumber": "am-0940b",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO8/NAUO17/NAUO81",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        0.0008660194125766907,
+        -289.80384000002,
+        76.2000001000284
+      ],
+      "boundsMm": [
+        -76.19913408058741,
+        -302.50384010002034,
+        2.8425262144082808e-11,
+        76.20086611941257,
+        -277.10383990001964,
+        152.4000002000284
+      ],
+      "sizeMm": [
+        152.40000019999997,
+        25.400000200000704,
+        152.40000019999997
+      ],
+      "role": "wheel",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2234-half-5",
+      "quantity": 1,
+      "partNumber": "am-2234-half",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO8/NAUO18",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        0.0008660194126122178,
+        -309.350614342816,
+        76.20000010002826
+      ],
+      "boundsMm": [
+        -37.112232292132596,
+        -315.85154010002,
+        39.08690178848306,
+        37.11396433095782,
+        -302.849688585612,
+        113.31309841157346
+      ],
+      "sizeMm": [
+        74.22619662309042,
+        13.001851514407974,
+        74.2261966230904
+      ],
+      "role": "pulley",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2234-half-6",
+      "quantity": 1,
+      "partNumber": "am-2234-half",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO8/NAUO19",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        0.000866061315992539,
+        -319.8124656572237,
+        76.20000017281785
+      ],
+      "boundsMm": [
+        -37.11223225022921,
+        -326.31339141442766,
+        39.08690186127264,
+        37.1139643728612,
+        -313.3115399000197,
+        113.31309848436305
+      ],
+      "sizeMm": [
+        74.2261966230904,
+        13.001851514407974,
+        74.2261966230904
+      ],
+      "role": "pulley",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2234-half-7",
+      "quantity": 1,
+      "partNumber": "am-2234-half",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO8/NAUO26",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -1.404032445861958e-11,
+        -259.79521434281594,
+        76.19999897728746
+      ],
+      "boundsMm": [
+        -37.11309831155925,
+        -266.2961401000199,
+        39.08690066574226,
+        37.11309831153117,
+        -253.29428858561198,
+        113.31309728883267
+      ],
+      "sizeMm": [
+        74.22619662309042,
+        13.001851514407917,
+        74.2261966230904
+      ],
+      "role": "pulley",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2234-half-8",
+      "quantity": 1,
+      "partNumber": "am-2234-half",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO8/NAUO27",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -1.4086509736443986e-11,
+        -270.25706565722373,
+        76.19999897728738
+      ],
+      "boundsMm": [
+        -37.1130983115593,
+        -276.7579914144277,
+        39.086900665742164,
+        37.113098311531125,
+        -263.7561399000198,
+        113.31309728883258
+      ],
+      "sizeMm": [
+        74.22619662309043,
+        13.001851514407917,
+        74.22619662309042
+      ],
+      "role": "pulley",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2568-1",
+      "quantity": 1,
+      "partNumber": "am-2568",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO8/NAUO28",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -1.4015455462867976e-11,
+        -263.0449400000198,
+        76.19999897728744
+      ],
+      "boundsMm": [
+        -27.686007047785864,
+        -275.74494010001985,
+        50.5215401052733,
+        27.686007047757833,
+        -250.3449399000197,
+        101.87845784930158
+      ],
+      "sizeMm": [
+        55.3720140955437,
+        25.400000200000136,
+        51.35691774402828
+      ],
+      "role": "hub",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-1305-1",
+      "quantity": 1,
+      "partNumber": "am-1305",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO8/NAUO35",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        0.0008660613160200725,
+        -323.7382400000199,
+        76.20000017281797
+      ],
+      "boundsMm": [
+        -14.273934038683993,
+        -330.97724010001997,
+        61.92520007281793,
+        14.275666161316034,
+        -316.4992399000198,
+        90.47480027281799
+      ],
+      "sizeMm": [
+        28.54960020000003,
+        14.478000200000167,
+        28.549600200000057
+      ],
+      "role": "spacer",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2571-1",
+      "quantity": 1,
+      "partNumber": "am-2571",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO9",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -111.27384881349312,
+        -313.7503400000193,
+        77.08899897729978
+      ],
+      "boundsMm": [
+        -259.0855976269497,
+        -321.2503400000195,
+        39.66209897729978,
+        36.537899999963486,
+        -306.25034000001915,
+        114.5158989772998
+      ],
+      "sizeMm": [
+        295.6234976269132,
+        15.000000000000341,
+        74.85380000000002
+      ],
+      "role": "belt",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2571-2",
+      "quantity": 1,
+      "partNumber": "am-2571",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO10",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        111.27384881342023,
+        -265.85734000001975,
+        77.08899897729997
+      ],
+      "boundsMm": [
+        -36.53790000003639,
+        -273.3573400000199,
+        39.66209897729995,
+        259.08559762687685,
+        -258.3573400000196,
+        114.51589897729998
+      ],
+      "sizeMm": [
+        295.62349762691326,
+        15.000000000000341,
+        74.85380000000004
+      ],
+      "role": "belt",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-1297-1",
+      "quantity": 1,
+      "partNumber": "am-1297",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO11",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -222.54769762695008,
+        -285.6611000000195,
+        77.97799897729902
+      ],
+      "boundsMm": [
+        -229.6850977269501,
+        -342.72220010001945,
+        69.73643925467093,
+        -215.41029752695007,
+        -228.59999990001944,
+        86.2195586999271
+      ],
+      "sizeMm": [
+        14.274800200000016,
+        114.12220020000001,
+        16.48311944525618
+      ],
+      "role": "dead-axle",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-1297-2",
+      "quantity": 1,
+      "partNumber": "am-1297",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO12",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        222.54769762687656,
+        -285.6611000000195,
+        77.97799897730295
+      ],
+      "boundsMm": [
+        215.41029752687655,
+        -342.72220010001945,
+        69.73643925467485,
+        229.68509772687656,
+        -228.59999990001944,
+        86.21955869993103
+      ],
+      "sizeMm": [
+        14.274800200000016,
+        114.12220020000001,
+        16.48311944525618
+      ],
+      "role": "dead-axle",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-0255-1",
+      "quantity": 1,
+      "partNumber": "am-0255",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO15",
+      "massKg": 1.270058636,
+      "massBasis": "manufacturer specification2.8lb, not Shopify shipping weight",
+      "worldCenterMm": [
+        -38.735000000013926,
+        -166.75935000002102,
+        104.36993589061535
+      ],
+      "boundsMm": [
+        -70.7390001000145,
+        -244.22500010002005,
+        72.36593579061466,
+        -6.730999900013362,
+        -89.29369990002199,
+        136.37393599061605
+      ],
+      "sizeMm": [
+        64.00800020000113,
+        154.93130019999808,
+        64.00800020000139
+      ],
+      "role": "motor",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-0255-2",
+      "quantity": 1,
+      "partNumber": "am-0255",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO16",
+      "massKg": 1.270058636,
+      "massBasis": "manufacturer specification2.8lb, not Shopify shipping weight",
+      "worldCenterMm": [
+        38.73499999998782,
+        -166.75935000002116,
+        104.36993589061399
+      ],
+      "boundsMm": [
+        6.730999899987252,
+        -244.22500010002022,
+        72.36593579061329,
+        70.73900009998839,
+        -89.2936999000221,
+        136.37393599061468
+      ],
+      "sizeMm": [
+        64.00800020000113,
+        154.93130019999813,
+        64.00800020000139
+      ],
+      "role": "motor",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-3920-2",
+      "quantity": 1,
+      "partNumber": "am-3920",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO82",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        332.54949999999496,
+        1.801936377887614e-11,
+        93.85299897724242
+      ],
+      "boundsMm": [
+        305.56199999997546,
+        -355.59999999998337,
+        51.56199887724233,
+        359.5370000000145,
+        355.6000000000194,
+        136.1439990772425
+      ],
+      "sizeMm": [
+        53.97500000003902,
+        711.2000000000028,
+        84.58200020000018
+      ],
+      "role": "frame-rail",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-3921-2",
+      "quantity": 1,
+      "partNumber": "am-3921",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO83",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -2.5011104298755527e-12,
+        344.48749995000026,
+        93.852998977271
+      ],
+      "boundsMm": [
+        -355.6000000000031,
+        333.3749998999815,
+        54.990998877270975,
+        355.5999999999981,
+        355.60000000001907,
+        132.71499907727102
+      ],
+      "sizeMm": [
+        711.2000000000012,
+        22.225000100037562,
+        77.72400020000003
+      ],
+      "role": "frame-rail",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-3922-2",
+      "quantity": 1,
+      "partNumber": "am-3922",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO84",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -1.9525714378687553e-11,
+        247.64999999999998,
+        98.0439989772588
+      ],
+      "boundsMm": [
+        -355.6000000000205,
+        228.59999999998104,
+        39.877998977258784,
+        355.59999999998143,
+        266.7000000000189,
+        156.2099989772588
+      ],
+      "sizeMm": [
+        711.2000000000019,
+        38.10000000003788,
+        116.33200000000002
+      ],
+      "role": "frame-rail",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2569-5",
+      "quantity": 1,
+      "partNumber": "am-2569",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO102",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        101.59999999998576,
+        290.51250000000516,
+        121.15799897729474
+      ],
+      "boundsMm": [
+        94.26765158127513,
+        247.649999900005,
+        114.80799875518832,
+        108.93234841869639,
+        333.3750001000053,
+        127.50799919940114
+      ],
+      "sizeMm": [
+        14.66469683742126,
+        85.7250002000003,
+        12.700000444212819
+      ],
+      "role": "standoff",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2569-6",
+      "quantity": 1,
+      "partNumber": "am-2569",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO103",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        107.5254676170455,
+        293.68750000000534,
+        76.47528138465935
+      ],
+      "boundsMm": [
+        100.19311919833487,
+        250.8249999000052,
+        70.12528116255294,
+        114.85781603575616,
+        336.5500001000055,
+        82.82528160676577
+      ],
+      "sizeMm": [
+        14.664696837421289,
+        85.7250002000003,
+        12.700000444212833
+      ],
+      "role": "standoff",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2569-7",
+      "quantity": 1,
+      "partNumber": "am-2569",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO104",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -101.60000000001315,
+        290.512499999994,
+        121.15799897732899
+      ],
+      "boundsMm": [
+        -108.93234841872378,
+        247.64999989999387,
+        114.80799875522258,
+        -94.26765158130252,
+        333.37500009999417,
+        127.5079991994354
+      ],
+      "sizeMm": [
+        14.66469683742126,
+        85.7250002000003,
+        12.700000444212819
+      ],
+      "role": "standoff",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2569-8",
+      "quantity": 1,
+      "partNumber": "am-2569",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO105",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -107.52546761708533,
+        290.5124999999937,
+        76.47528138469411
+      ],
+      "boundsMm": [
+        -114.85781603579595,
+        247.64999989999353,
+        70.1252811625877,
+        -100.19311919837469,
+        333.3750000999938,
+        82.82528160680053
+      ],
+      "sizeMm": [
+        14.66469683742126,
+        85.7250002000003,
+        12.700000444212833
+      ],
+      "role": "standoff",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2974-cut-2",
+      "quantity": 1,
+      "partNumber": "am-2974-cut",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO109",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        152.3999999999935,
+        8.213874025386758e-12,
+        121.15799892917224
+      ],
+      "boundsMm": [
+        145.0676515812722,
+        -244.47500009999197,
+        114.8079988810839,
+        159.73234841871476,
+        244.4750001000084,
+        127.50799897726056
+      ],
+      "sizeMm": [
+        14.664696837442563,
+        488.9500002000004,
+        12.700000096176652
+      ],
+      "role": "crossbrace",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-0940b-4",
+      "quantity": 1,
+      "partNumber": "am-0940b",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO4/NAUO67/NAUO81",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        222.54769762689125,
+        289.87750000001176,
+        77.97799897725885
+      ],
+      "boundsMm": [
+        146.34769752689127,
+        277.1774999000078,
+        1.777998877258863,
+        298.74769772689126,
+        302.5775001000157,
+        154.17799907725885
+      ],
+      "sizeMm": [
+        152.4000002,
+        25.400000200007923,
+        152.4000002
+      ],
+      "role": "wheel",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2234-half-9",
+      "quantity": 1,
+      "partNumber": "am-2234-half",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO4/NAUO68",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        222.54769762689062,
+        309.42427434280665,
+        77.97799897725884
+      ],
+      "boundsMm": [
+        185.4345993153454,
+        302.9233485856022,
+        40.864900665713634,
+        259.66079593843585,
+        315.9252001000111,
+        115.09109728880404
+      ],
+      "sizeMm": [
+        74.22619662309046,
+        13.00185151440894,
+        74.2261966230904
+      ],
+      "role": "pulley",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2234-half-10",
+      "quantity": 1,
+      "partNumber": "am-2234-half",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO4/NAUO69",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        222.54769757704236,
+        319.8861256572168,
+        77.97799890966067
+      ],
+      "boundsMm": [
+        185.4345992654971,
+        313.3851999000123,
+        40.86490059811546,
+        259.6607958885876,
+        326.3870514144213,
+        115.09109722120587
+      ],
+      "sizeMm": [
+        74.22619662309049,
+        13.001851514408997,
+        74.2261966230904
+      ],
+      "role": "pulley",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-0209-5",
+      "quantity": 1,
+      "partNumber": "am-0209",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO4/NAUO70",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        222.54769757704244,
+        321.3353999997471,
+        77.9779989096607
+      ],
+      "boundsMm": [
+        208.26019747704225,
+        316.57289989933975,
+        63.69049880966068,
+        236.83519767704263,
+        326.0979001001545,
+        92.2654990096607
+      ],
+      "sizeMm": [
+        28.575000200000375,
+        9.525000200814759,
+        28.57500020000002
+      ],
+      "role": "bearing",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-1306-3",
+      "quantity": 1,
+      "partNumber": "am-1306",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO4/NAUO77",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        222.54769757704202,
+        329.65390000001173,
+        77.9779989096607
+      ],
+      "boundsMm": [
+        215.96909747704186,
+        326.0978999000114,
+        71.3993988096607,
+        229.1262976770422,
+        333.2099001000121,
+        84.55659900966072
+      ],
+      "sizeMm": [
+        13.157200200000347,
+        7.112000200000693,
+        13.15720020000002
+      ],
+      "role": "spacer",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-0209-6",
+      "quantity": 1,
+      "partNumber": "am-0209",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO4/NAUO78",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        222.54769762689213,
+        274.002499999747,
+        77.97799897725888
+      ],
+      "boundsMm": [
+        208.26019752689194,
+        269.23999989933964,
+        63.69049887725886,
+        236.83519772689232,
+        278.7650001001544,
+        92.2654990772589
+      ],
+      "sizeMm": [
+        28.575000200000375,
+        9.525000200814759,
+        28.575000200000034
+      ],
+      "role": "bearing",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-1307-3",
+      "quantity": 1,
+      "partNumber": "am-1307",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO4/NAUO79",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        222.5476976268929,
+        258.44500000001176,
+        77.97799897725892
+      ],
+      "boundsMm": [
+        213.02269752689233,
+        247.6499999000112,
+        68.45299887725888,
+        232.07269772689347,
+        269.24000010001225,
+        87.50299907725895
+      ],
+      "sizeMm": [
+        19.050000200001136,
+        21.590000200001043,
+        19.05000020000007
+      ],
+      "role": "spacer",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-0940b-5",
+      "quantity": 1,
+      "partNumber": "am-0940b",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO5/NAUO67/NAUO81",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -222.54769766892716,
+        290.9823999999877,
+        77.97799904999991
+      ],
+      "boundsMm": [
+        -298.74769776892714,
+        278.28239989998366,
+        1.7779989499999154,
+        -146.34769756892717,
+        303.6824000999918,
+        154.1779991499999
+      ],
+      "sizeMm": [
+        152.40000019999997,
+        25.40000020000815,
+        152.40000019999997
+      ],
+      "role": "wheel",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2234-half-11",
+      "quantity": 1,
+      "partNumber": "am-2234-half",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO5/NAUO68",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -222.54769766892642,
+        271.43562565719276,
+        77.97799904999997
+      ],
+      "boundsMm": [
+        -259.6607959804716,
+        264.9346998999882,
+        40.86490073845476,
+        -185.43459935738122,
+        277.93655141439734,
+        115.09109736154517
+      ],
+      "sizeMm": [
+        74.2261966230904,
+        13.001851514409168,
+        74.2261966230904
+      ],
+      "role": "pulley",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2234-half-12",
+      "quantity": 1,
+      "partNumber": "am-2234-half",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO5/NAUO69",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -222.54769762693354,
+        260.97377434278275,
+        77.97799897726114
+      ],
+      "boundsMm": [
+        -259.6607959384787,
+        254.47284858557816,
+        40.86490066571593,
+        -185.43459931538834,
+        267.47470009998733,
+        115.09109728880634
+      ],
+      "sizeMm": [
+        74.22619662309037,
+        13.001851514409168,
+        74.2261966230904
+      ],
+      "role": "pulley",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-0209-7",
+      "quantity": 1,
+      "partNumber": "am-0209",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO5/NAUO70",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -222.5476976269337,
+        259.5245000002524,
+        77.97799897726114
+      ],
+      "boundsMm": [
+        -236.83519772693393,
+        254.76199989984502,
+        63.690498877261135,
+        -208.2601975269335,
+        264.2870001006597,
+        92.26549907726113
+      ],
+      "sizeMm": [
+        28.57500020000043,
+        9.525000200814702,
+        28.57500019999999
+      ],
+      "role": "bearing",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-1306-4",
+      "quantity": 1,
+      "partNumber": "am-1306",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO5/NAUO77",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -222.54769762693329,
+        251.20599999998777,
+        77.97799897726118
+      ],
+      "boundsMm": [
+        -229.12629772693347,
+        247.6499998999874,
+        71.39939887726118,
+        -215.9690975269331,
+        254.76200009998814,
+        84.55659907726118
+      ],
+      "sizeMm": [
+        13.157200200000375,
+        7.11200020000075,
+        13.157200200000005
+      ],
+      "role": "spacer",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-0209-8",
+      "quantity": 1,
+      "partNumber": "am-0209",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO5/NAUO78",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -222.54769766892804,
+        306.8574000002524,
+        77.97799904999991
+      ],
+      "boundsMm": [
+        -236.83519776892825,
+        302.0948998998451,
+        63.690498949999906,
+        -208.26019756892782,
+        311.6199001006598,
+        92.2654991499999
+      ],
+      "sizeMm": [
+        28.57500020000043,
+        9.525000200814702,
+        28.57500019999999
+      ],
+      "role": "bearing",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-1307-4",
+      "quantity": 1,
+      "partNumber": "am-1307",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO5/NAUO79",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -222.54769766892883,
+        322.41489999998777,
+        77.97799904999988
+      ],
+      "boundsMm": [
+        -232.07269776892943,
+        311.6198998999873,
+        68.45299894999988,
+        -213.02269756892824,
+        333.20990009998826,
+        87.50299914999988
+      ],
+      "sizeMm": [
+        19.050000200001193,
+        21.590000200000986,
+        19.0500002
+      ],
+      "role": "spacer",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2986-3",
+      "quantity": 1,
+      "partNumber": "am-2986",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO6",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -2.0614621121239907e-12,
+        335.81466999999935,
+        76.19999897727108
+      ],
+      "boundsMm": [
+        -15.557500100002105,
+        331.85099989999856,
+        60.642498877271066,
+        15.557500099997982,
+        339.77834010000015,
+        91.75749907727109
+      ],
+      "sizeMm": [
+        31.11500020000009,
+        7.927340200001595,
+        31.115000200000026
+      ],
+      "role": "bearing",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-0028-2",
+      "quantity": 1,
+      "partNumber": "am-0028",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO7/NAUO38",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -1.9488410885060148e-11,
+        245.99900000000008,
+        116.91619897725877
+      ],
+      "boundsMm": [
+        -12.344400100019529,
+        242.41759989999946,
+        104.57179887725877,
+        12.344400099980552,
+        249.5804001000007,
+        129.26059907725877
+      ],
+      "sizeMm": [
+        24.68880020000008,
+        7.162800200001243,
+        24.688800200000003
+      ],
+      "role": "bearing",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-0650-2",
+      "quantity": 1,
+      "partNumber": "am-0650",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO7/NAUO49",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -1.9483081814541947e-11,
+        226.88550000000066,
+        96.64394366830211
+      ],
+      "boundsMm": [
+        -69.93960313919135,
+        206.12099989999894,
+        37.3753958380869,
+        69.93960313915238,
+        247.6500001000024,
+        155.91249149851734
+      ],
+      "sizeMm": [
+        139.87920627834373,
+        41.52900020000345,
+        118.53709566043044
+      ],
+      "role": "gearbox-housing",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-0516-3",
+      "quantity": 1,
+      "partNumber": "am-0516",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO7/NAUO58",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -1.7959855824756232e-11,
+        213.74100000000018,
+        116.91619897725883
+      ],
+      "boundsMm": [
+        -11.112500100018135,
+        210.1849998999996,
+        105.80369887725884,
+        11.112500099982215,
+        217.29700010000076,
+        128.02869907725884
+      ],
+      "sizeMm": [
+        22.225000200000352,
+        7.112000200001148,
+        22.225000199999997
+      ],
+      "role": "bearing",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-0516-4",
+      "quantity": 1,
+      "partNumber": "am-0516",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO7/NAUO59",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -1.7823076348122413e-11,
+        213.74099999999996,
+        76.19999897725884
+      ],
+      "boundsMm": [
+        -11.112500100018,
+        210.18499989999938,
+        65.08749887725882,
+        11.112500099982354,
+        217.29700010000053,
+        87.31249907725886
+      ],
+      "sizeMm": [
+        22.225000200000352,
+        7.112000200001148,
+        22.22500020000004
+      ],
+      "role": "bearing",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2986-4",
+      "quantity": 1,
+      "partNumber": "am-2986",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO7/NAUO63",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -1.9400481221509835e-11,
+        246.38126999999994,
+        76.1999989772587
+      ],
+      "boundsMm": [
+        -15.557500100019443,
+        242.41759989999917,
+        60.64249887725869,
+        15.557500099980642,
+        250.3449401000007,
+        91.75749907725871
+      ],
+      "sizeMm": [
+        31.115000200000082,
+        7.927340200001538,
+        31.115000200000026
+      ],
+      "role": "bearing",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2566a_K19-2",
+      "quantity": 1,
+      "partNumber": "am-2566a_K19",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO7/NAUO66",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -2.12709849733983e-11,
+        268.6316699500003,
+        76.19999897725856
+      ],
+      "boundsMm": [
+        -7.332342256836149,
+        197.48499989999982,
+        69.84525135906642,
+        7.332342256793607,
+        339.77834000000075,
+        82.55474659545071
+      ],
+      "sizeMm": [
+        14.664684513629757,
+        142.29334010000093,
+        12.709495236384285
+      ],
+      "role": "shaft",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-0940b-6",
+      "quantity": 1,
+      "partNumber": "am-0940b",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO8/NAUO17/NAUO81",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -0.0008660194485585748,
+        289.8038399999998,
+        76.20000009999976
+      ],
+      "boundsMm": [
+        -76.20086611944855,
+        277.1038398999959,
+        -2.2382096176443156e-13,
+        76.19913408055143,
+        302.5038401000038,
+        152.40000019999974
+      ],
+      "sizeMm": [
+        152.40000019999997,
+        25.400000200007923,
+        152.40000019999997
+      ],
+      "role": "wheel",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2234-half-13",
+      "quantity": 1,
+      "partNumber": "am-2234-half",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO8/NAUO18",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -0.0008660194493614881,
+        309.35061434279476,
+        76.20000009999961
+      ],
+      "boundsMm": [
+        -37.11396433099457,
+        302.8496885855901,
+        39.08690178845441,
+        37.11223229209585,
+        315.85154009999934,
+        113.31309841154481
+      ],
+      "sizeMm": [
+        74.22619662309042,
+        13.001851514409225,
+        74.2261966230904
+      ],
+      "role": "pulley",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2234-half-14",
+      "quantity": 1,
+      "partNumber": "am-2234-half",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO8/NAUO19",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -0.0008660613538857831,
+        319.8124656572046,
+        76.2000001727892
+      ],
+      "boundsMm": [
+        -37.11396437289909,
+        313.3115399,
+        39.086901861243994,
+        37.11223225019132,
+        326.31339141440924,
+        113.3130984843344
+      ],
+      "sizeMm": [
+        74.2261966230904,
+        13.001851514409225,
+        74.2261966230904
+      ],
+      "role": "pulley",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2234-half-15",
+      "quantity": 1,
+      "partNumber": "am-2234-half",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO8/NAUO26",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -2.000888343900442e-11,
+        259.79521434279536,
+        76.19999897725882
+      ],
+      "boundsMm": [
+        -37.11309831156522,
+        253.2942885855901,
+        39.086900665713614,
+        37.1130983115252,
+        266.2961401000006,
+        113.31309728880402
+      ],
+      "sizeMm": [
+        74.22619662309042,
+        13.001851514410532,
+        74.2261966230904
+      ],
+      "role": "pulley",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2234-half-16",
+      "quantity": 1,
+      "partNumber": "am-2234-half",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO8/NAUO27",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -2.1103119252074976e-11,
+        270.257065657204,
+        76.19999897725873
+      ],
+      "boundsMm": [
+        -37.11309831156631,
+        263.75613989999874,
+        39.086900665713515,
+        37.113098311524105,
+        276.7579914144093,
+        113.31309728880393
+      ],
+      "sizeMm": [
+        74.22619662309042,
+        13.001851514410532,
+        74.22619662309042
+      ],
+      "role": "pulley",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2568-2",
+      "quantity": 1,
+      "partNumber": "am-2568",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO8/NAUO28",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -2.0083490426259232e-11,
+        263.04493999999977,
+        76.19999897725879
+      ],
+      "boundsMm": [
+        -27.686007047792046,
+        250.3449398999992,
+        50.521540105244654,
+        27.68600704775188,
+        275.7449401000003,
+        101.87845784927293
+      ],
+      "sizeMm": [
+        55.372014095543925,
+        25.400000200001102,
+        51.35691774402828
+      ],
+      "role": "hub",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-1305-2",
+      "quantity": 1,
+      "partNumber": "am-1305",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO8/NAUO35",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -0.0008660613538342687,
+        323.7382399999997,
+        76.20000017278932
+      ],
+      "boundsMm": [
+        -14.275666161354208,
+        316.49923989999894,
+        61.92520007278928,
+        14.273934038646539,
+        330.9772401000005,
+        90.47480027278934
+      ],
+      "sizeMm": [
+        28.549600200000746,
+        14.478000200001532,
+        28.549600200000057
+      ],
+      "role": "spacer",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2571-3",
+      "quantity": 1,
+      "partNumber": "am-2571",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO9",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        111.27384881345586,
+        313.7503400000053,
+        77.08899897727113
+      ],
+      "boundsMm": [
+        -36.53790000000117,
+        306.2503399999971,
+        39.66209897727113,
+        259.0855976269129,
+        321.2503400000134,
+        114.51589897727115
+      ],
+      "sizeMm": [
+        295.62349762691406,
+        15.000000000016314,
+        74.85380000000002
+      ],
+      "role": "belt",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-2571-4",
+      "quantity": 1,
+      "partNumber": "am-2571",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO10",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -111.27384881345489,
+        265.85733999999354,
+        77.08899897727132
+      ],
+      "boundsMm": [
+        -259.0855976269119,
+        258.35733999998536,
+        39.6620989772713,
+        36.53790000000214,
+        273.35734000000167,
+        114.51589897727133
+      ],
+      "sizeMm": [
+        295.62349762691406,
+        15.000000000016314,
+        74.85380000000004
+      ],
+      "role": "belt",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-1297-3",
+      "quantity": 1,
+      "partNumber": "am-1297",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO11",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        222.54769762691137,
+        285.6611000000115,
+        77.97799897727037
+      ],
+      "boundsMm": [
+        215.4102975269112,
+        228.59999990001126,
+        69.73643925464228,
+        229.68509772691155,
+        342.72220010001183,
+        86.21955869989846
+      ],
+      "sizeMm": [
+        14.274800200000357,
+        114.12220020000058,
+        16.48311944525618
+      ],
+      "role": "dead-axle",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-1297-4",
+      "quantity": 1,
+      "partNumber": "am-1297",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO12",
+      "massKg": null,
+      "massBasis": "unknown; not assigned from geometric envelope volume",
+      "worldCenterMm": [
+        -222.54769762691527,
+        285.6610999999872,
+        77.9779989772743
+      ],
+      "boundsMm": [
+        -229.68509772691544,
+        228.59999989998693,
+        69.7364392546462,
+        -215.4102975269151,
+        342.7222000999875,
+        86.21955869990238
+      ],
+      "sizeMm": [
+        14.274800200000357,
+        114.12220020000058,
+        16.48311944525618
+      ],
+      "role": "dead-axle",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-0255-3",
+      "quantity": 1,
+      "partNumber": "am-0255",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO15",
+      "massKg": 1.270058636,
+      "massBasis": "manufacturer specification2.8lb, not Shopify shipping weight",
+      "worldCenterMm": [
+        38.73499999998551,
+        166.75935000000274,
+        104.3699358905867
+      ],
+      "boundsMm": [
+        6.730999899982406,
+        89.29369990000329,
+        72.36593579058601,
+        70.73900009998862,
+        244.2250001000022,
+        136.3739359905874
+      ],
+      "sizeMm": [
+        64.00800020000621,
+        154.93130019999893,
+        64.00800020000139
+      ],
+      "role": "motor",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    },
+    {
+      "id": "am-0255-4",
+      "quantity": 1,
+      "partNumber": "am-0255",
+      "source": "assembly",
+      "sourceUrl": "https://documents.andymark.com/be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f/AM-14U4%20Square.STEP",
+      "sourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO16",
+      "massKg": 1.270058636,
+      "massBasis": "manufacturer specification2.8lb, not Shopify shipping weight",
+      "worldCenterMm": [
+        -38.73500000001623,
+        166.75934999999865,
+        104.36993589058534
+      ],
+      "boundsMm": [
+        -70.73900010001934,
+        89.29369989999917,
+        72.36593579058464,
+        -6.730999900013121,
+        244.2250000999981,
+        136.37393599058603
+      ],
+      "sizeMm": [
+        64.00800020000622,
+        154.93130019999893,
+        64.00800020000139
+      ],
+      "role": "motor",
+      "geometryFidelity": "sourced envelope from native-checked bounds; not native mating geometry"
+    }
+  ],
+  "serviceAssumptions": {
+    "motorRemovalInboardMm": 60,
+    "outerAxleWithdrawalOutboardMm": 120,
+    "note": "original planning reserves, not vendor-certified service clearance"
+  },
+  "interfaceProposal": {
+    "stock": "original rectangular tube crossmembers25.4x50.8x3.175mm, alloy/grade not selected",
+    "xCentersMm": [
+      -280,
+      280
+    ],
+    "ySpanMm": [
+      -228.6,
+      228.6
+    ],
+    "bottomZMm": 160,
+    "mounting": "original4mm adapter plates; hole pattern/fastener grip/edge distance and structural verification unresolved; no attachment accepted"
+  },
+  "limitations": [
+    "Original primitives represent bounding/functional envelopes, not duplicated vendor CAD",
+    "No whole-robot interference, belt preload, tooth engagement, fastener or load acceptance",
+    "Center drop means all6 rigid wheels not simultaneously tangent to flat floor",
+    "Four-CIM current/thermal/battery/control integration not simulated",
+    "Mass subtotal includes only four sourced motors; gearbox,wheels,frame and hardware unknown",
+    "No drivetrain geometry may silently replace current simulation track/motor model"
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "schema": "pressure-tiled-culling-comparison/1",
+  "acceptance": false,
+  "scriptSha256": "1d64a36a6a5dcdea7906ec329963a305aa2b11266cfeb1b07474cc5d169f7b76",
+  "originalSourceSha256": "2e433044711d836404c7efb2cac715f105718daa42e9e974239246be723df73e",
+  "candidateSourceSha256": "ad40145c71fbfaae776540ad3a2f43f954f52b5de53b65035babb0b424868987",
+  "configSha256": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+  "rows": [
+    {
+      "x": 0.658,
+      "y": 0.0,
+      "yaw": 0.0,
+      "z": 0.0254,
+      "exactlyEqual": true,
+      "outcome": "RETURNED",
+      "contacts": 0,
+      "originalSeconds": 0.0001396000006934628,
+      "candidateSeconds": 6.350000330712646e-05
+    },
+    {
+      "x": 0.4,
+      "y": 0.0,
+      "yaw": 0.0,
+      "z": 0.0254,
+      "exactlyEqual": true,
+      "outcome": "RETURNED",
+      "contacts": 0,
+      "originalSeconds": 1.023641799998586,
+      "candidateSeconds": 0.9090064999982133
+    },
+    {
+      "x": 0.324,
+      "y": 0.0,
+      "yaw": 0.0,
+      "z": 0.0254,
+      "exactlyEqual": true,
+      "outcome": "RETURNED",
+      "contacts": 2716,
+      "originalSeconds": 0.28824449999956414,
+      "candidateSeconds": 0.08634049999818671
+    },
+    {
+      "x": 0.20119016209167434,
+      "y": 0.0,
+      "yaw": 0.0,
+      "z": 0.0254,
+      "exactlyEqual": true,
+      "outcome": "RETURNED",
+      "contacts": 4312,
+      "originalSeconds": 0.2854940999968676,
+      "candidateSeconds": 0.10634790000040084
+    },
+    {
+      "x": 0.185,
+      "y": 0.0,
+      "yaw": 0.0,
+      "z": 0.0254,
+      "exactlyEqual": true,
+      "outcome": "RETURNED",
+      "contacts": 4312,
+      "originalSeconds": 0.28622249999898486,
+      "candidateSeconds": 0.1121876000033808
+    },
+    {
+      "x": 0.138,
+      "y": 0.0,
+      "yaw": 0.0,
+      "z": 0.0254,
+      "exactlyEqual": true,
+      "outcome": "RETURNED",
+      "contacts": 0,
+      "originalSeconds": 0.20773020000342513,
+      "candidateSeconds": 0.013953800000308547
+    },
+    {
+      "x": 0.185,
+      "y": 0.0005,
+      "yaw": 0.002,
+      "z": 0.0254,
+      "exactlyEqual": true,
+      "outcome": "REJECTED",
+      "contacts": 0,
+      "originalSeconds": 0.1862020999978995,
+      "candidateSeconds": 0.016659599998092744
+    },
+    {
+      "x": 0.185,
+      "y": -0.0005,
+      "yaw": -0.002,
+      "z": 0.0254,
+      "exactlyEqual": true,
+      "outcome": "REJECTED",
+      "contacts": 0,
+      "originalSeconds": 0.22208949999912875,
+      "candidateSeconds": 0.04377350000140723
+    },
+    {
+      "x": 0.185,
+      "y": 0.0,
+      "yaw": 0.0,
+      "z": 0.03,
+      "exactlyEqual": true,
+      "outcome": "RETURNED",
+      "contacts": 2884,
+      "originalSeconds": 0.25720690000161994,
+      "candidateSeconds": 0.07313000000431202
+    },
+    {
+      "x": 0.185,
+      "y": 0.02,
+      "yaw": 0.0,
+      "z": 0.0254,
+      "exactlyEqual": true,
+      "outcome": "REJECTED",
+      "contacts": 0,
+      "originalSeconds": 0.1781117000064114,
+      "candidateSeconds": 0.005413300001237076
+    }
+  ],
+  "limits": [
+    "Finite exact-output/exception controls; no hardware or capture validation",
+    "No grid, force law, scalar gradient or contact order changes",
+    "Optimization is separate from the running original-law continuation"
+  ]
+}

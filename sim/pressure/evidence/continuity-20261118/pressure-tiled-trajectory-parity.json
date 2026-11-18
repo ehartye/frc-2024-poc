@@ -1,0 +1,16 @@
+{
+  "schema": "pressure-tiled-trajectory-parity/1",
+  "exactlyEqual": true,
+  "acceptedSteps": 20,
+  "startTimeS": 3.0,
+  "endTimeS": 3.02,
+  "sameStartCheckpoint": true,
+  "samePhysicalRowsAndCommands": true,
+  "candidateSourceSha256": "ad40145c71fbfaae776540ad3a2f43f954f52b5de53b65035babb0b424868987",
+  "candidateRunnerSha256": "c18ad7367eaa41329ef1de149deb73e03be265bf69cf4c6992fdb2b760dcdcbe",
+  "referenceRunnerSha256": "feaf94897db147e03f5e28e0c3ddd9ae2a120d9ba6b3d3b0fb52e1a6dca362d3",
+  "candidateReceiptSha256": "681b9fa86479d3325a689a9042ec2c51f1ab56497e4879fdf2b459d6093eed58",
+  "limits": [
+    "Finite exact-prefix parity; no hardware or full-path qualification"
+  ]
+}

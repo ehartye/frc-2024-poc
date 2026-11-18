@@ -1,0 +1,63 @@
+"""Original editable electrical envelope assembly. Millimetres; no vendor geometry."""
+import argparse,hashlib,itertools,json,pathlib,sys
+HERE=pathlib.Path(__file__).resolve().parent
+sys.path.insert(0,str(HERE.parent));sys.path.insert(0,str(HERE))
+from a2_primitives import box,STEPControl_Writer,STEPControl_Reader,STEPControl_AsIs,IFSelect_RetDone,BRepCheck_Analyzer
+
+def load():return json.loads((HERE/'manifest.json').read_text())
+def build(manifest=None,include_service=False):
+ d=manifest or load()
+ from mounts import build as mounts,drill,holes_for,pdh_holes
+ from breaker_mount import build as breaker_mount,evidence as breaker_evidence,base_holes
+ from OCP.BRepAlgoAPI import BRepAlgoAPI_Cut
+ from a2_primitives import cyl
+ parts=[]
+ for c in d['components']:
+  if not include_service and c['role']=='service':continue
+  shape=box(*[x-s/2 for x,s in zip(c['centerMm'],c['sizeMm'])],*c['sizeMm'])
+  shape=drill(shape,holes_for(c,d),c['centerMm'][2]-c['sizeMm'][2]/2,c['sizeMm'][2])
+  if c['id']=='controller-deck':
+   shape=drill(shape,base_holes(),161,5)
+   for x in d['mountingPlan']['supportStationsX']:
+    for y in [-228.6,228.6]:shape=BRepAlgoAPI_Cut(shape,cyl((x,y,161),(0,0,1),4.75,6)).Shape()
+  if c['id']=='battery-tray':
+   for lo in [-308,-195]:shape=BRepAlgoAPI_Cut(shape,box(-215,lo,164,30,23,5)).Shape()
+   for xx in [-320,-253]:shape=BRepAlgoAPI_Cut(shape,box(xx,-201,164,23,52,5)).Shape()
+  if c['id']=='pdh':
+   for x,y in pdh_holes():
+    shape=BRepAlgoAPI_Cut(shape,cyl((x,y,167),(0,0,1),2.5,45)).Shape()
+    shape=BRepAlgoAPI_Cut(shape,cyl((x,y,174.465),(0,0,1),4.1,40)).Shape()
+  if c['id']=='main-breaker':
+   ev=breaker_evidence()
+   for x,y in ev['worldHoleCentersXY']:
+    shape=BRepAlgoAPI_Cut(shape,cyl((x,y,ev['baseZ']-1),(0,0,1),3.429,50)).Shape()
+    shape=BRepAlgoAPI_Cut(shape,cyl((x,y,ev['earSeatZ']),(0,0,1),6.5,45)).Shape()
+  parts.append((c['id'],shape,c['role']))
+ return parts+mounts(d)+breaker_mount()
+def overlap(a,b):
+ return [min(x+s/2,y+t/2)-max(x-s/2,y-t/2) for x,s,y,t in zip(a['centerMm'],a['sizeMm'],b['centerMm'],b['sizeMm'])]
+def report(d):
+ solid=[c for c in d['components'] if c['role']!='service']; conflicts=[]
+ for a,b in itertools.combinations(solid,2):
+  q=overlap(a,b)
+  if min(q)>1e-6:conflicts.append({'a':a['id'],'b':b['id'],'overlapMm':q})
+ known=[c for c in d['components'] if c['massKg'] is not None];m=sum(c['massKg']*c['quantity'] for c in known)
+ return {'schema':'electrical-package-check/1','manifestSha256':hashlib.sha256((HERE/'manifest.json').read_bytes()).hexdigest(),'solidEnvelopeConflicts':conflicts,'knownComponentMassKg':m,'knownMassCenterMm':[sum(c['massKg']*c['quantity']*c['centerMm'][i] for c in known)/m for i in range(3)],'unknownMassIds':[c['id'] for c in solid if c['massKg'] is None],'fullRobotMassOrCoG':False,'mechanicalAcceptance':False,'limits':['Envelope overlap only, not native mating or fastener verification','Service volumes may overlap intentionally; no reach or thermal qualification','No full chassis/moving mechanism collision screen']}
+def svg(d,out):
+ colors={'electrical':'#e4a349','mount':'#8298a8','service':'#9ac6dc'}
+ s=['<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="900" viewBox="0 0 1100 900">','<rect width="1100" height="900" fill="#f7fafc"/>','<text x="30" y="30" font-size="22">2024 electrical package: original sourced envelopes</text>','<text x="30" y="55" font-size="15">Top view. +X forward (up), +Y left. Dashed regions are service hypotheses, not parts.</text>']
+ for c in sorted(d['components'],key=lambda c:c['role']!='service'):
+  x,y,z=c['centerMm'];a,b,h=c['sizeMm'];px=430-y-b/2;py=460-x-a/2
+  dash=' stroke-dasharray="5 4" fill-opacity=".12"' if c['role']=='service' else ' fill-opacity=".65"'
+  s.append(f'<rect x="{px}" y="{py}" width="{b}" height="{a}" fill="{colors[c["role"]]}" stroke="#334155"{dash}/>')
+ for i,c in enumerate(d['components']):s.append(f'<text x="760" y="{95+i*22}" font-size="12">{c["id"]}: Z {c["centerMm"][2]:.1f} mm</text>')
+ s+=['<text x="30" y="875" font-size="14">Not a complete robot or wiring design. Deck attachments, restraint, harness and cooling remain open.</text>','</svg>'];out.write_text('\n'.join(s))
+def main():
+ p=argparse.ArgumentParser();p.add_argument('--output',type=pathlib.Path,default=HERE/'generated');a=p.parse_args();a.output.mkdir(parents=True,exist_ok=True);d=load();parts=build(d);w=STEPControl_Writer()
+ for _,shape,_ in parts:
+  assert BRepCheck_Analyzer(shape).IsValid();w.Transfer(shape,STEPControl_AsIs)
+ dest=a.output/'electrical-envelopes.step';assert w.Write(str(dest))==IFSelect_RetDone
+ dest.write_bytes(('\n'.join(line.rstrip() for line in dest.read_text().splitlines())+'\n').encode())
+ r=STEPControl_Reader();assert r.ReadFile(str(dest))==IFSelect_RetDone;r.TransferRoots();assert r.NbRootsForTransfer()==len(parts)
+ q=report(d);q['generatedUnknownMassIds']=[n for n,_,_ in parts if n not in {c['id'] for c in d['components']}];q['exportedRoots']=len(parts);q['reopenedRoots']=r.NbRootsForTransfer();q['stepSha256']=hashlib.sha256(dest.read_bytes()).hexdigest();(a.output/'verification.json').write_text(json.dumps(q,indent=2)+'\n');svg(d,a.output/'layout.svg');print(json.dumps(q))
+if __name__=='__main__':main()

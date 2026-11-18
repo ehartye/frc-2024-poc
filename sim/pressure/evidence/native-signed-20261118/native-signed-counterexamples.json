@@ -1,0 +1,32 @@
+{
+  "runs": [
+    {
+      "sourceTrajectorySha256": "56ce4d15a22513cc04d137b5f8d6cab2fc9057be7409cdbdf1295c46d449f800",
+      "scriptSha256": "0245f608ac6ba04e184bc9dec68e2701bfb2663e46c4456105bdfafbd14ac36b",
+      "bindingSha256": "6d8a1ef819b918d11380a96137f6573ca30441d8ce947efb86a670c7134314d8",
+      "stepS": 0.0005,
+      "outcome": "COUNTERFACTUAL_CORRIDOR_EXIT",
+      "durationS": 0.18749999999989608,
+      "maximumRelativeSpeedMps": 0.010035875001940933,
+      "acceptance": false,
+      "limits": [
+        "Counterfactual from attained native index; exact recorded commands replayed except negative pinch commands clipped to coast",
+        "Open-loop command replay after divergence; not a universal impossibility result or hardware prediction"
+      ]
+    },
+    {
+      "sourceTrajectorySha256": "56ce4d15a22513cc04d137b5f8d6cab2fc9057be7409cdbdf1295c46d449f800",
+      "scriptSha256": "0245f608ac6ba04e184bc9dec68e2701bfb2663e46c4456105bdfafbd14ac36b",
+      "bindingSha256": "6d8a1ef819b918d11380a96137f6573ca30441d8ce947efb86a670c7134314d8",
+      "stepS": 0.00025,
+      "outcome": "COUNTERFACTUAL_CORRIDOR_EXIT",
+      "durationS": 0.18725000000022884,
+      "maximumRelativeSpeedMps": 0.01001623904572388,
+      "acceptance": false,
+      "limits": [
+        "Counterfactual from attained native index; exact recorded commands replayed except negative pinch commands clipped to coast",
+        "Open-loop command replay after divergence; not a universal impossibility result or hardware prediction"
+      ]
+    }
+  ]
+}

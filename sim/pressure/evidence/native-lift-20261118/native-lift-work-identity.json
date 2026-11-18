@@ -1,0 +1,48 @@
+{
+  "schema": "native-lift-work-identity/1",
+  "passed": true,
+  "scriptSha256": "9b1dc871824cbad4d3eea6a43a49c42c685af4547afa66059ecfc4a374efa7e4",
+  "sourceTrajectorySha256": "ebe88b833ebbf4955fed9ca69d2966c1e3e68698cf0c8cb8424949e182fbf6a2",
+  "cases": [
+    {
+      "name": "entry",
+      "workResidualW": [
+        1.3965450462727347e-09,
+        3.6039806694532217e-09
+      ],
+      "finiteDifferenceStepsS": [
+        1e-07,
+        1e-08
+      ],
+      "massMatrixEigenvalues": [
+        0.11114627759082658,
+        23.062220860670426,
+        45.00032079749128
+      ],
+      "pressureWorkResidualW": -3.3881317890172014e-21
+    },
+    {
+      "name": "floorUnloaded",
+      "workResidualW": [
+        3.7229765936785952e-09,
+        4.047777757421045e-08
+      ],
+      "finiteDifferenceStepsS": [
+        1e-07,
+        1e-08
+      ],
+      "massMatrixEigenvalues": [
+        0.11114630157079446,
+        23.062220811603233,
+        45.0003208225785
+      ],
+      "pressureWorkResidualW": -2.7755575615628914e-17
+    }
+  ],
+  "atomicRejection": "EXPERIMENT_MOTION_ENVELOPE",
+  "physicalMutation": false,
+  "acceptance": false,
+  "limits": [
+    "Directional mechanical work check on declared uncalibrated model, not native mass or hardware calibration"
+  ]
+}

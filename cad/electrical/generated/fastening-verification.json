@@ -1,0 +1,312 @@
+{
+  "schema": "electrical-fastening-check/1",
+  "inputs": {
+    "manifest.json": "9db917a55b0884db9841f52da3b5cccf8ad684c652e4dde3e01b1efe75e891a3",
+    "mounts.py": "90254dbc5116a9af72df0ba6442ed94ef8c94e8247326f9b7c6cfd0c0749c7e8",
+    "fasteners.py": "788a1cb9bf71a780aed9cbeb5bf48d06532e914fed431edcc0e72a4bd273b799",
+    "fastening-spec.json": "bc5e227c43b8691efdd92ff6af6b0449e3429c04105428b4015d74de00055b25",
+    "build_electrical.py": "d2fbd40d0b26c8887679b6ed3b49c655b10a27a0cd175e812b35d9fccd6f6317",
+    "check_drivetrain.py": "fea754b5bb60e4ebd264da3bd0578df910cb60b382dc021e2704b760b7dff8e8",
+    "check_fastening.py": "26a9048bceff453f6c7c24caa2b22f66174d668f65085e11a9a4689e7e052299",
+    "pdh-mount-evidence.json": "1ba07e0d9418ddabb2e5e249964984a783d7c8af579d82d7a5e79b7bd5c9fb4a",
+    "breaker_mount.py": "1e27087fa191e8043c6ed8b3c48bca4db50cde379efa171cc49508a1a1c75060",
+    "breaker-mount-evidence.json": "9e0bb64f30ab3ee58de577fe694ee578135cdf4d74ddf8e0b3065b741266b07d",
+    "../a2_primitives.py": "bef958c710da792f89def8606d7169a7c385fcff257826619a7b29fe0943952e"
+  },
+  "nativePDHFastenerOverlaps": [],
+  "nativeBreakerMountOverlaps": [],
+  "materialEstimate": {
+    "items": [
+      {
+        "id": "controller-deck",
+        "volumeMm3": 593066.4658891305,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 1.6012794579006524
+      },
+      {
+        "id": "pdh-deck",
+        "volumeMm3": 117029.80093337348,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.3159804625201084
+      },
+      {
+        "id": "rio-removable-deck",
+        "volumeMm3": 86114.90046668675,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.23251023126005424
+      },
+      {
+        "id": "radio-removable-deck",
+        "volumeMm3": 86114.90046668675,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.23251023126005424
+      },
+      {
+        "id": "battery-tray",
+        "volumeMm3": 56347.40046668672,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.15213798126005415
+      },
+      {
+        "id": "battery-end-stop--298",
+        "volumeMm3": 10080.0,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.027216
+      },
+      {
+        "id": "battery-end-stop--102",
+        "volumeMm3": 10080.0,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.027216
+      },
+      {
+        "id": "aft-electrical-beam--266.7",
+        "volumeMm3": 137406.3439461538,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.37099712865461526
+      },
+      {
+        "id": "aft-adapter--266.7--1",
+        "volumeMm3": 5529.933644457818,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.01493082084003611
+      },
+      {
+        "id": "aft-crush-sleeve--266.7--1",
+        "volumeMm3": 904.8263235412077,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.002443031073561261
+      },
+      {
+        "id": "aft-adapter--266.7-1",
+        "volumeMm3": 5529.933644457817,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.014930820840036104
+      },
+      {
+        "id": "aft-crush-sleeve--266.7-1",
+        "volumeMm3": 904.826323541208,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.0024430310735612617
+      },
+      {
+        "id": "baseplate-crush-sleeve--266.7--80",
+        "volumeMm3": 904.8263235412084,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.0024430310735612626
+      },
+      {
+        "id": "baseplate-crush-sleeve--266.7-80",
+        "volumeMm3": 904.8263235412084,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.0024430310735612626
+      },
+      {
+        "id": "aft-electrical-beam--139.7",
+        "volumeMm3": 137406.3439461538,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.37099712865461526
+      },
+      {
+        "id": "aft-adapter--139.7--1",
+        "volumeMm3": 5529.933644457817,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.014930820840036104
+      },
+      {
+        "id": "aft-crush-sleeve--139.7--1",
+        "volumeMm3": 904.8263235412085,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.002443031073561263
+      },
+      {
+        "id": "aft-adapter--139.7-1",
+        "volumeMm3": 5529.933644457817,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.014930820840036104
+      },
+      {
+        "id": "aft-crush-sleeve--139.7-1",
+        "volumeMm3": 904.8263235412085,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.002443031073561263
+      },
+      {
+        "id": "baseplate-crush-sleeve--139.7--80",
+        "volumeMm3": 904.8263235412087,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.0024430310735612634
+      },
+      {
+        "id": "baseplate-crush-sleeve--139.7-80",
+        "volumeMm3": 904.8263235412087,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.0024430310735612634
+      },
+      {
+        "id": "stack-post-lower--280-154",
+        "volumeMm3": 1612.5206042253824,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.004353805631408533
+      },
+      {
+        "id": "stack-post-upper--280-154",
+        "volumeMm3": 1170.7341373143186,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.00316098217074866
+      },
+      {
+        "id": "stack-post-lower--120-154",
+        "volumeMm3": 1612.5206042253865,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.004353805631408543
+      },
+      {
+        "id": "stack-post-upper--120-154",
+        "volumeMm3": 1170.7341373143215,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.003160982170748668
+      },
+      {
+        "id": "stack-post-lower--280-306",
+        "volumeMm3": 1612.5206042253844,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.004353805631408538
+      },
+      {
+        "id": "stack-post-upper--280-306",
+        "volumeMm3": 1170.7341373143197,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.003160982170748663
+      },
+      {
+        "id": "stack-post-lower--120-306",
+        "volumeMm3": 1612.520604225389,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.00435380563140855
+      },
+      {
+        "id": "stack-post-upper--120-306",
+        "volumeMm3": 1170.734137314323,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.0031609821707486723
+      },
+      {
+        "id": "battery-top-strap",
+        "volumeMm3": 12097.450233343361,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.03266311563002707
+      },
+      {
+        "id": "battery-strap-leg--286.5",
+        "volumeMm3": 18836.470233343356,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.05085846963002706
+      },
+      {
+        "id": "battery-strap-leg--193.5",
+        "volumeMm3": 18836.47023334336,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.05085846963002707
+      },
+      {
+        "id": "radio-power-deck-tab",
+        "volumeMm3": 17550.0,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.047385
+      },
+      {
+        "id": "breaker-pedestal",
+        "volumeMm3": 32585.22171892412,
+        "material": "6061-T6 selected hypothesis",
+        "densityKgPerMm3": 2.7e-06,
+        "estimatedMassKg": 0.08798009864109513
+      }
+    ],
+    "estimatedOriginalMountMassKg": 3.7099164581985935,
+    "sourceKnownDeviceMassUnchangedKg": 8.34026319777,
+    "estimateIsNotMeasuredMass": true,
+    "hardwareAndPadMassComplete": false
+  },
+  "service": {
+    "batteryLiftSamples": [
+      {
+        "liftMm": 0,
+        "overlaps": []
+      },
+      {
+        "liftMm": 0.5,
+        "overlaps": []
+      },
+      {
+        "liftMm": 1,
+        "overlaps": []
+      },
+      {
+        "liftMm": 5,
+        "overlaps": []
+      },
+      {
+        "liftMm": 10,
+        "overlaps": []
+      },
+      {
+        "liftMm": 25,
+        "overlaps": []
+      },
+      {
+        "liftMm": 50,
+        "overlaps": []
+      },
+      {
+        "liftMm": 100,
+        "overlaps": []
+      },
+      {
+        "liftMm": 170,
+        "overlaps": []
+      },
+      {
+        "liftMm": 220,
+        "overlaps": []
+      }
+    ],
+    "isContinuousSweepProof": false,
+    "requiresDisconnectedLeadsAndRemovedTopBar": true,
+    "wholeRobotNotIncluded": true
+  },
+  "acceptance": false
+}

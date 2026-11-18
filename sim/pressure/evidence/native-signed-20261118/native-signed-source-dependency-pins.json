@@ -1,0 +1,20 @@
+{
+  "baseCommit": "7c4c75293c4fbcebdb0021028e1ad27f83ac605a",
+  "baseWorktreeClean": true,
+  "files": {
+    "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+    "sim/acquisition/free-planar-config.json": "8ecb4ca6594ec456e56a79ceb63d222d9824e4985273d6b16a52b9737d166053",
+    "sim/drivetrain/config.json": "334a7d02b4968401a10fb829ae838edfbeb7d9a311c13f3e2cbcc47b54748ff4",
+    "sim/drivetrain/plant.py": "3d30f7df18abf6c24cc5c949a308246bb275bea57242128916cee627da561155",
+    "sim/integrated/shared_supply.py": "888855338f8d6d73510767cc9c64bf88f5ea0dbf899bd1bb67e136547f821e99",
+    "sim/integrated/speed_approach.py": "21e15512b0d6dec2af8a81391be5225f2d44ed1df132c441f2649022196b5f50",
+    "sim/integrated/coupled_acquisition.py": "55f9778b7cab1cf76c38007f830385bb9c99ed62188a8151d6b50bb55c195df1",
+    "sim/integrated/patch_registration.py": "6cf66b74ba20a4a9b7da8d32f5a6b0a05ac31a10f06d0a7fc641601fba7f0dbc",
+    "sim/pressure/pressure_tiled_geometry.py": "ad40145c71fbfaae776540ad3a2f43f954f52b5de53b65035babb0b424868987",
+    "sim/pressure/finite_area.py": "75c7af7cc4446346e611c389d050cb3d1212404c560ad8e4884863e44f1cd5ed",
+    "sim/pressure/finite_transport.py": "6b4170b89e1b327c293e545dfd0d41b58af369f8eb11609dfd6d899ef9fb3f9b"
+  },
+  "limits": [
+    "Supplemental repository/config dependency snapshot; selected paths, not a full Python import audit"
+  ]
+}

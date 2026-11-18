@@ -1,0 +1,113 @@
+{
+  "schema": "cassette-opening-source-candidate/1",
+  "adopted": false,
+  "spring": {
+    "manufacturer": "Lee Spring",
+    "part": "LC 032EE 01 M",
+    "material": "music wire",
+    "nominalOutsideDiameterMm": 9.53,
+    "nominalWireDiameterMm": 0.81,
+    "nominalFreeLengthMm": 9.53,
+    "nominalRateNPerMm": 2.89,
+    "approximateSolidHeightMm": 3.66,
+    "countPerSide": 2,
+    "source": "https://www.leespring.in/sites/default/files/2019-09/compression-springs-lee-spring-in.pdf",
+    "evidenceStatus": "Exact primary PDF row visually verified and privately pinned; metadata created2019-09-26 supports pre2024 catalog, not actual stock availability",
+    "rateBasis": "Music wire; do not apply unchanged to stainless",
+    "derivedNominalInsideDiameterMm": 7.91,
+    "sourceSha256": "b0f44ec3b35ff62b466e270b55a699a2c0367f28a8b22e884525ef1dc8dc9413",
+    "pdfPage1Based": 91,
+    "printedPage": 98,
+    "tolerances": {
+      "outsideDiameterPlusMinusMm": 0.2,
+      "rateFraction": 0.1,
+      "solidHeightUpperFraction": 0.05,
+      "freeLengthToleranceMm": null,
+      "wireDiameterToleranceMm": null,
+      "source": "https://www.leespring.in/sites/default/files/2019-09/lee-spring-catalog-in.pdf",
+      "sourceSha256": "4002dd163d1b35de73d245b8c27475125a3d53d2170ace5b41c4563d76346fc9",
+      "pdfPage1Based": 7
+    },
+    "workingDeflectionOrFatigueRating": null,
+    "rateRounding": "2.89 N/mm is rounded conversion of16.48 lbf/in; .294 kgf/mm is independently rounded",
+    "endsAndFinish": "squared/ground, zinc plated music wire; exact lot/material certificate absent"
+  },
+  "servo": {
+    "manufacturer": "REV Robotics",
+    "part": "REV-41-1097",
+    "type": "Smart Robot Servo V1",
+    "bodySizeMm": [
+      40.2,
+      20,
+      38
+    ],
+    "splineTeeth": 25,
+    "nominalSupplyV": 6,
+    "stallTorqueKgCm": 13.5,
+    "stallCurrentA": 2,
+    "publishedSpeedSecondsPer60Degrees": 0.13,
+    "source": "https://docs.revrobotics.com/rev-crossover-products/servo/srs",
+    "historicalDrawing": "https://www.revrobotics.com/content/docs/REV-41-1097-DR.pdf",
+    "drawingCopyrightYear": 2017,
+    "limits": "Stall torque is not continuous available torque. Speed is not a loaded response guarantee. Supply module, spline horn, actual mounting and feedback remain unimplemented."
+  },
+  "openingCam": {
+    "status": "Original eccentric-cam geometry candidate, not a latched or installed mechanism",
+    "axis": "cradle local +X",
+    "shaftCenterMm": [
+      47.5,
+      196.25,
+      100
+    ],
+    "eccentricityMm": 0.75,
+    "discRadiusMm": 6,
+    "discWidthMm": 6,
+    "followerInnerFaceYmm": "203-u",
+    "contactConstraint": "u=.75*(1-cos(theta)), only when actual unilateral contact is active",
+    "rangeRad": [
+      0,
+      3.141592653589793
+    ],
+    "openingDirection": "theta decreasing toward zero pushes follower outward against springs",
+    "limits": [
+      "Dead center is not a positive latch and cannot be treated as stable power-off holding",
+      "Spring unload and follower separation must be integrated; position is not commanded directly",
+      "Follower attachment and servo bracket not yet modeled",
+      "Full travel-dependent feed restrictions from reviewed native study remain"
+    ]
+  },
+  "forceAndWork": {
+    "springInstalledLengthMm": "7+u",
+    "springPairForceN": "2*2.89*max(0,9.53-(7+u)); nominal component hypothesis, not NOTE normal",
+    "potentialJ": "2*0.5*2.89*max(0,9.53-(7+u))**2/1000",
+    "camLoadTorqueNm": "springPairForceN*.00075*sin(theta), quasistatic magnitude only",
+    "springPairForceAtOpenN": 14.6234,
+    "springPairForceAtInwardStopN": 5.9534,
+    "minimumIdealOpeningWorkJ": 0.015432599999999998
+  },
+  "gate": "Do not adopt spring rate or cam actuation into whole simulation until sourcing and mounting/contact/drive limits are deliberately reconciled.",
+  "powerModule": {
+    "part": "REV-11-1144",
+    "source": "https://www.revrobotics.com/content/docs/REV-11-1144-QS.pdf",
+    "sourceSha256": "4df37d2a04661d1b047b3df085860e13a8f5bb8751d5feb3dbac7318c79d7591",
+    "copyrightYear": 2017,
+    "nominalInputV": 12,
+    "operatingInputRangeV": [
+      7,
+      20
+    ],
+    "minimumStartupV": 9,
+    "outputV": 6,
+    "maximumTotalOutputA": 15,
+    "channels": 6,
+    "massG": 57,
+    "powerPath": "protected robot12V distribution -> SPM6V regulator -> servo; roboRIO PWM command through module",
+    "limits": [
+      "No direct12V servo connection",
+      "Efficiency/input-current, wiring protection and thermal response unresolved",
+      "Overcurrent disables6V; loss of actuator holding is a modeled state, not automatic positive latch",
+      "Two-side current and losses must enter shared battery ledger",
+      "Module mounting/connector clearance not yet placed"
+    ]
+  }
+}

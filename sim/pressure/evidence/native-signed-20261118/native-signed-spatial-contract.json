@@ -1,0 +1,19 @@
+{
+  "schema": "native-signed-local-spatial-contract/1",
+  "levels": [
+    512,
+    1024,
+    2048
+  ],
+  "relativeTolerance": 0.01,
+  "absoluteForceFloorN": 0.0001,
+  "absolutePotentialFloorJ": 1e-06,
+  "samples": [
+    "firstContact",
+    "index",
+    "maximumTransportReaction"
+  ],
+  "limits": [
+    "Local prescribed-state comparison only; full spatial trajectory convergence remains missing"
+  ]
+}

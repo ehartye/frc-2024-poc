@@ -1,0 +1,55 @@
+{
+  "schema": "native-lift-mass-binding-audit/1",
+  "scriptSha256": "189a9badecb5f8fcb4caf61336774ab9af7bdeede4cc7b614a9f4a560f0921c5",
+  "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "finalNativeReceiptSha256": "0ea9d24211f7b58a7b6cfd1731a1f91df707dcba98228169f44b9d8d3e0c79cc",
+  "nativeBodyCount": 734,
+  "availableBodyFields": [
+    "boundsMm",
+    "materialId",
+    "name",
+    "path",
+    "sourceRootIndex",
+    "visible",
+    "volumeMm3"
+  ],
+  "missingPhysicalFields": {
+    "massKg": 734,
+    "centerOfMass": 734,
+    "inertiaTensor": 734,
+    "densityKgM3": 734
+  },
+  "candidateContractSha256": "fb0df6e6968c99acf81d5eceac36c32a31b7717c5a29b095937a33b70cb2cbfd",
+  "massOwnership": {
+    "rotateAndTranslate": [
+      "cradle weldments/pivots",
+      "pinch belts/pulleys/bearings/shafts",
+      "two pinch motors and their drive/mounts"
+    ],
+    "translateOnly": [
+      "lift carriage plates and slide pads/brackets",
+      "pivot drop brackets and bearings",
+      "pitch motor/gearbox and upper chain-drive supports",
+      "carriage chain attachments"
+    ],
+    "fixed": [
+      "stationary guide posts and upper/lower frame attachments",
+      "lift motor/gearbox/topshaft housings",
+      "fixed guide wear-sheet candidate and front bumper/support"
+    ],
+    "movingMassKg": null,
+    "movingCOM": null,
+    "pitchInertiaKgM2": null,
+    "reflectedRotorInertias": null
+  },
+  "movingMassBindingAccepted": false,
+  "installedTransmissionAccepted": false,
+  "reason": "Final native receipt contains bounds, volume and material IDs but no numeric density, COM or inertia; candidate contract explicitly leaves moving mass/COM/inertia null and installation unverified.",
+  "nextRequiredEvidence": [
+    "Native component membership and installed transforms for translating/rotating bodies",
+    "Numeric material density and vendor mass where solid geometry is only a representation",
+    "Body COM and inertia transformed into the lift/pitch coordinates",
+    "Verified actuator coupling/transmission and full-path clearance"
+  ],
+  "noFusionCall": true
+}

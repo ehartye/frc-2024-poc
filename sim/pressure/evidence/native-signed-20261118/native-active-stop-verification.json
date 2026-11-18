@@ -1,0 +1,44 @@
+{
+  "schema": "native-signed-active-stop-verification/1",
+  "integrityChecksPassed": true,
+  "localStopNumericalBoundsPassed": true,
+  "attainedGroundSequenceMetricsPassed": true,
+  "sourceFreshStepS": 0.0005,
+  "exactTransportJoin": true,
+  "chassisTransportTravelM": 0.2291080882807507,
+  "noteTransportTravelM": 0.22556328132800718,
+  "joinedUniformHalfStepCount": 18900,
+  "runs": [
+    {
+      "stepS": 0.0005,
+      "traceRows": 4000,
+      "outcome": "ACTIVE_STOP_HORIZON",
+      "endTimeS": 9.450000000000058,
+      "finalRelativeXM": 0.1850783135428219,
+      "finalChassisSpeedMps": 0.00015944880517602652,
+      "finalRelativeSpeedMps": -0.0005116749164772834,
+      "maximumResidualJ": 0.00023599930279793232,
+      "receiptSha256": "d819bdf34a7e04413a32ee57c8a3e31c3eb9b43076a1daed602ccd3e76f479a8"
+    },
+    {
+      "stepS": 0.00025,
+      "traceRows": 8000,
+      "outcome": "ACTIVE_STOP_HORIZON",
+      "endTimeS": 9.449999999995883,
+      "finalRelativeXM": 0.18507820014722876,
+      "finalChassisSpeedMps": 0.00015931404513088313,
+      "finalRelativeSpeedMps": -0.0005111267848086595,
+      "maximumResidualJ": 0.0002346452536045214,
+      "receiptSha256": "9d91709e808aa0d73bc048524b76c394093861a7cd7f3889cec9e020e7199a17"
+    }
+  ],
+  "maximumRelativePositionDifferenceM": 4.5100791579155697e-07,
+  "maximumRelativeVelocityDifferenceMps": 1.8606586776409584e-05,
+  "acceptance": false,
+  "hardwareValidated": false,
+  "continuousAcquisitionToLaunch": false,
+  "limits": [
+    "Both stop refinements use the same attained half-millisecond fresh trajectory checkpoint; full independent fine-start active-stop replay is not included",
+    "Ground-supported finite uncalibrated model only; no lift, feed or hardware qualification"
+  ]
+}

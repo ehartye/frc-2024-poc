@@ -1,18 +1,67 @@
-# 2024 CRESCENDO: A2 robot proof of concept
+# 2024 CRESCENDO: component-based robot proof of concept
 
-![Original A2 deployed spatial CAD, not fabrication-ready](cad/a2/deployed.svg)
+![Current connected component-CAD candidate, not fabrication-ready](cad/assembly/connected-floor.png)
 
-**A strategy-first, runnable desktop prototype with original editable CAD.** It completes a preload-to-pickup-to-second-release cycle under explicit simulation assumptions. It is not a qualified robot design or an official scoring simulator.
+**Strategy-first editable CAD, with retained simulation experiments.** The current component assembly is a design candidate. The runnable legacy A2 cycle below uses earlier geometry and does not validate this newer robot.
 
-## Design highlights
+## Experimental checkpoint: choose the entry point
 
-- Close-range Speaker cycle narrative with Amp and feeder alternatives retained: [strategy](STRATEGY.md).
-- 710 mm differential chassis, continuous bumper envelopes, reversible acquisition/indexing and 60-degree opposed-wheel shooter.
-- Original coordinated telescoping cradle, with shared parameter-driven CAD/runtime motion and sampled envelope checks.
-- Continuous two-piece shooter state: rotor, time, work and losses persist; outgoing body energy is accounted, and disabled motors coast rather than magically stop.
-- Observable mission/fault states, editable pre-vis, condition-based [pit plan](reliability/pit-plan.json), and source/runtime-bound execution receipts.
+This repository is a **reviewed research checkpoint, not a completed robot simulator or fabrication release**. The implementations below are alternatives and historical experiments, not one coupled mission and not a commitment to maintain three simulators. Synthesis evaluation remains open; no installation or compatibility result is implied.
 
-## Run the complete A2 slice
+| Entry point | What it currently demonstrates | Not accepted |
+| --- | --- | --- |
+| [Maple 2024 arena](sim/maple/README.md) | Headless force-driven differential robot, actual upstream wall/stage collisions and a shared ground NOTE | Intake collection, corrected season scoring, airborne obstacle collision, driver UI or full robot controls |
+| [MuJoCo drivetrain](sim/mujoco/README.md) | Six-wheel reduced dynamics with original Fusion-exported visual meshes; portable headless checks | Whole-mechanism dynamics, calibrated tires, capture or field scoring |
+| [Pressure/contact research verification](sim/pressure/VERIFYING.md) | Current and exact-source historical numerical experiments, separately registered | Automatic transfer between contact laws or successful acquisition-to-lift |
+| [Legacy A2 slice](#run-the-retained-legacy-a2-slice) | Earlier geometry and prescribed cycle experiment | Validation of the current component robot |
+
+Actual CAD delivery requires the separately preserved Fusion archive. Public STEP/meshes are source-sized references, not a substitute for that archive. Supplier native CAD is excluded from this public repository.
+
+See [checkpoint qualification and reproducible smoke matrix](MERGE_READINESS.md) for tested scope and remaining limitations. A merge would accept this experimental checkpoint only, not the open physical or mission outcomes.
+
+## Current design highlights
+
+- Close-range Speaker cycle narrative, with Amp and feeder alternatives retained: [strategy](STRATEGY.md).
+- AM14U4-based six-wheel drivetrain with source-sized components, an original front-throat modification and fixed bumper candidate. Structural and impact qualification remain open.
+- Reversible asymmetric side-pinch intake, coordinated rotation/elevator and four-wheel launcher. Original drilled lower brackets, portal gussets, carriage yokes and recessed slide-pad attachments connect previously reserved interfaces.
+- 711 original/source-sized parts per exported pose. Full-NOTE intake feeding is screened at49 positions; moving mechanism clearance at125 poses. These are finite nominal geometry checks, not capture, tolerance, force or durability acceptance.
+- Actual chain attachments, shaft torque/retention couplings, motor mounts and remaining shooter interfaces are still completion gates. No previous launch result automatically transfers.
+
+## Open and edit the current candidate
+
+- [Current original floor-pose STEP](cad/assembly/connected-floor.step), [design and limits](cad/assembly/INTAKE-CANDIDATE.md), [parameter contract](cad/assembly/intake_components.json).
+- [Connected generator](cad/assembly/build_connected_candidate.py), [source-bound evidence](cad/assembly/evidence/connected-report.json), [render provenance](cad/assembly/connected-visual.json).
+- With existing OCP8 and Matplotlib: `python cad/assembly/build_connected_candidate.py`. This produces floor, rotated and handoff STEP files, renders and exact-file verification receipts in `artifacts/connected-intake-candidate/`.
+- Vendor native CAD is not distributed. Original authored stock/fasteners and source-sized purchased-component envelopes are distinguished in the part manifest.
+
+## Retained pre-engine modeled integration
+
+The earlier [integrated plant work](sim/integrated/README.md) couples a force-driven four-CIM drivetrain with two intake motors and a loose NOTE on one electrical bus. Chassis movement comes from motor/tire forces, and NOTE contact reacts back onto the robot. This is **not yet a complete drivable robot simulator**: lift/launcher phase coupling, physical parameter validation and several mechanical interfaces remain open.
+
+With the existing Python/OCP dependencies, run a fresh bounded experiment:
+
+```text
+python sim/integrated/run_coupled_acquisition.py --output artifacts/my-coupled-run.json
+```
+
+The current open-loop experiment intentionally stops at its supported geometry boundary rather than inventing capture. [Observed braking controls](sim/integrated/README.md#threshold-braking-is-a-retained-negative-control) preserve overrun and stale-observation cases. Recorded mechanism experiments, numerical refinement and unresolved conditions are included for reproducibility; they are not scoring or hardware acceptance.
+
+## New bounded checkpoint continuation
+
+The [eight-motor phase pilot](sim/integrated/coupled_lift_README.md) continues the exact recorded indexed state for 10 ms with four drivetrain motors, two intake motors, one lift motor and one pitch motor on one bus. It preserves momentum, time and cumulative energy, and replaces the prior 45 kg robot hypothesis with 38 kg base plus 7 kg moving mechanism rather than adding that mass twice.
+
+```text
+python sim/integrated/run_regulated_acquisition.py --index --output artifacts/my-index.json
+python sim/integrated/coupled_lift_run.py artifacts/my-lift-pilot.json
+```
+
+For one fresh, strictly registered chain, run `python sim/integrated/run_current_checkpoint_chain.py artifacts/my-fresh-chain`. It executes acquisition first and refuses continuation unless that complete fresh receipt matches the registered checkpoint bytes; it then executes the pilot and verifies state/energy continuity. A mismatched state requires new registration, not a snap to the old state. The final `chain.json` binds both newly produced outputs and is absent if a stage fails.
+
+These are separate reproducible commands: the pilot validates and uses the committed indexed checkpoint, not the output path of the preceding command. A single continuous mission runner is still unfinished. With finite gravity-feedforward commands the cradle sags slightly and the free NOTE drops; it is not attached or successfully lifted. The retained coast control stops on an unsupported tiny-negative-pitch guide-domain boundary, not a confirmed collision. Contact stiffness, mechanism mass/inertia and current normal-force budgets are explicit hypotheses. This pilot does not adopt the new spring-cassette candidate or transfer historical launcher results.
+
+The separate [finite-command envelope study](sim/integrated/coupled_lift_sweep_README.md) extends seven predeclared cases to 25 ms using a reviewed separation-only guide gate. It preserves unsupported contact boundaries and shows the cradle and NOTE moving independently, not successful retention. The one-command chain above intentionally retains its original 10 ms pilot.
+
+## Run the retained legacy A2 slice
 
 Requires existing Python 3 with NumPy, PowerShell, JDK 17 and a populated Gradle/WPILib cache. Toolchain is pinned to Gradle 8.11, GradleRIO/WPILib 2026.2.1 and JUnit 5.10.1. This models the 2024 game using the 2026 desktop toolchain, not a historical robot deployment.
 
@@ -24,13 +73,13 @@ Open `NORMAL.html` in the printed results folder. `NORMAL_9V.html` and fault rep
 
 The cache must already contain the pinned public dependencies. On a newly configured development computer, set JAVA_HOME and GRADLE_USER_HOME, then run the included `shared/examples/java-2026-sim/gradlew.bat test` from that project directory with network access to populate its cache before using the offline verified runner. Dependency notices are [here](shared/examples/java-2026-sim/THIRD_PARTY.md).
 
-## What the current run proves
+## What the legacy run proves
 
 The nominal 12 V and permissive 9 V cases each record one prescribed acquisition and two powered exits in about 27.3 seconds. Missing piece, jam, stale pose and strict 9 V RPM controls fault without invented completion. Actual exit states feed sampled full-NOTE aperture checks, not a prescribed launch speed. These are sampled thin-plane results, not scores or complete target clearance.
 
 Acquisition, lift, telescope, level retention and transfer are prescribed kinematics with virtual observations. Their actuation, contact, energy and physical capture are not validated. Shooter energy accounting covers rollers/guide only. Body attitude is a fixed 60-degree hypothesis; spin, aerodynamics, roof/walls, tire slip, realistic opponents and impact durability remain unresolved. The full serialized cycle does not fit 15-second autonomous.
 
-## Open and edit the design
+## Retained earlier CAD and planning tools
 
 - [Stowed STEP](cad/a2/stowed.step), [deployed STEP](cad/a2/deployed.step), [stowed picture](cad/a2/stowed.svg).
 - [Geometry contract](cad/cycle-contract-A2.json), [original generator](cad/build_a2_layout.py), [shared kinematics](cad/a2_kinematics.py).
@@ -45,3 +94,9 @@ This repository owns the 2024 narrative, CAD, code, replay and reliability plan.
 The old `run.ps1` remains a legacy preloaded all-season regression entry; it is not the new full-cycle runner. Earlier rejected geometry and failed lift experiments are retained as clearly labeled evidence, not silently promoted into the active model.
 
 Before publication: Python tests, native tests, fresh receipts, public-content guard and original CAD metadata review. No private hosting configuration or third-party team/vendor CAD is included.
+
+Current launcher spacing and original mounting correction: [revision and remaining gates](cad/assembly/launcher-mount-revision.md). The selected49.2mm gap requires fresh force/contact simulation; old launch speeds do not transfer.
+
+An additive [spring-biased cassette study](cad/assembly/spring-cassette-candidate.md) preserves failed layouts and sampled feed conflicts. It is not adopted by the 711-part assembly or current simulation: actual springs, opening actuator, clamps and moving mass remain unresolved.
+
+The [100 ms extension](sim/integrated/coupled_lift_duration_README.md) records partial fixed-patch domain loss: 28 of 30 nominal witnesses remain at the rejected trials. This is not proof of full physical release or a collision. Exact accepted state and rejected trial diagnostics stay separate.

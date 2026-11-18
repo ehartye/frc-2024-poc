@@ -1,0 +1,3648 @@
+{
+  "schema": "intake-moving-fixed-audit/1",
+  "inputs": {
+    "cad/assembly/build_robot.py": "83d63e65aeef282ef72ef00a954c1c44483288eb3ace7f1980e95994eea801c6",
+    "cad/assembly/bumper_candidate.py": "556fba39fda427cb081a2a1d4d806372b67b830606a242bbfc0babf05619fc19",
+    "cad/a2_primitives.py": "bef958c710da792f89def8606d7169a7c385fcff257826619a7b29fe0943952e",
+    "cad/a2_kinematics.py": "4329126a1465f53c8d27618307b2864ff69803e196ff4521aab8a50daf670581",
+    "cad/build_a2_layout.py": "aea31166eabc53113962cc511cfbd190eba54033f7b93476455961dccb1969c9",
+    "cad/cycle-contract-A2.json": "0e08bf88e488539ca8966dcc3cc08727ef2faf98da3740787b308cd54c652f52",
+    "cad/components/a2-transmission.json": "0aae2e2dd0d8c4b16729139380f6d1e2df0efa956dad2ee8b205be1a57f3d8b0",
+    "cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+    "cad/drivetrain/build_fastening.py": "9d82a974d184200e7a6c414bc74b345cd53aa2cf85f36c3cf528fe818997d4ac",
+    "cad/drivetrain/fastening.json": "6cb3d276cd5f59143ef9b52d2240095f02db9f92d6cfef5ae53b145a78862ac9",
+    "cad/drivetrain/build_drivetrain.py": "4748e01902aac32ae8d996e1f7676caa7f794ac6a5971b661855c26487ad29a7",
+    "cad/electrical/manifest.json": "2e7f38bc1e3b0b30df61fc2f3846eaf0103ffe6144199fdfbea80a967bf02fa6",
+    "cad/electrical/build_electrical.py": "b3a382c8b5f42c5421b6e7e5c5b56634d84847caac8bc5ab2a2faa4a3c44bef3",
+    "cad/electrical/mounts.py": "a21e030c5ee2450dfac2ca78c95d26d5711b6921210faa0e7143d0bc427b7530",
+    "cad/assembly/intake_components.py": "6b8a7435769ba388e248c0456556bfe2d34440db683def0f9f180d1af7a1e87c",
+    "cad/assembly/intake_components.json": "5fd11704b5b7b31d06dd583518b29bfac4058797573840bb05c584a92be6cf41",
+    "cad/assembly/build_intake_candidate.py": "4580d95571ddaefad99137c5c5b5597bbb9b15d52d7972ce029ce9c38179b55c",
+    "cad/assembly/audit_intake_motion.py": "17c06cbd278109ae54e2fac8b05e56938cb505b38a70d818a76d3a9710bb7dec"
+  },
+  "dynamicParts": 70,
+  "fixedParts": 355,
+  "samples": [
+    {
+      "phase": "rotate",
+      "pitchDeg": 0,
+      "centerZ": 25.4,
+      "hits": [
+        {
+          "moving": "intake candidate vertical stub shaft (-1, -146.04999999999998)",
+          "fixed": "am-0255-2",
+          "commonMm3": 7874.993206147053
+        },
+        {
+          "moving": "intake candidate bearing representation (-1, -146.04999999999998)48",
+          "fixed": "am-0255-2",
+          "commonMm3": 2074.2786684479147
+        },
+        {
+          "moving": "intake candidate bearing carrier (-1, -146.04999999999998)48",
+          "fixed": "am-0650-1",
+          "commonMm3": 18.276186471613343
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, -146.04999999999998)48",
+          "fixed": "am-0650-1",
+          "commonMm3": 881.3165063487388
+        },
+        {
+          "moving": "intake candidate bearing representation (-1, 146.04999999999998)48",
+          "fixed": "am-3920-2",
+          "commonMm3": 251.9225755946013
+        },
+        {
+          "moving": "intake candidate bearing carrier (-1, 146.04999999999998)48",
+          "fixed": "am-3920-2",
+          "commonMm3": 308.66589041821146
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, 146.04999999999998)48",
+          "fixed": "am-3920-2",
+          "commonMm3": 1270.0000000000043
+        },
+        {
+          "moving": "intake candidate pinch NEO body -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 30865.70774928646
+        },
+        {
+          "moving": "intake candidate pinch NEO body -1",
+          "fixed": "am-0940b-2",
+          "commonMm3": 886.8650750364679
+        },
+        {
+          "moving": "intake candidate pinch NEO body -1",
+          "fixed": "am-3920-2",
+          "commonMm3": 70598.61428669961
+        },
+        {
+          "moving": "intake candidate pinch motor plate -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 5334.413289352198
+        },
+        {
+          "moving": "intake candidate pinch motor plate -1",
+          "fixed": "am-0940b-2",
+          "commonMm3": 853.756594081018
+        },
+        {
+          "moving": "intake candidate pinch motor plate -1",
+          "fixed": "am-3920-2",
+          "commonMm3": 11409.829346027425
+        },
+        {
+          "moving": "intake candidate pinch motor plate -1",
+          "fixed": "fixed bumper end backing 1",
+          "commonMm3": 117.27179999999407
+        },
+        {
+          "moving": "intake candidate pinch motor plate -1",
+          "fixed": "original rigid front backing support proposal",
+          "commonMm3": 725.8049999999987
+        },
+        {
+          "moving": "intake candidate pinch transfer pulley (-1, -188.92760666360243)",
+          "fixed": "am-3920-2",
+          "commonMm3": 371.9175422262864
+        },
+        {
+          "moving": "intake candidate pinch transfer pulley (-1, -277.8276066636024)",
+          "fixed": "am-3922-1",
+          "commonMm3": 357.38558377100344
+        },
+        {
+          "moving": "intake candidate pinch transfer pulley (-1, -277.8276066636024)",
+          "fixed": "am-3920-2",
+          "commonMm3": 9206.822684062896
+        },
+        {
+          "moving": "intake candidate pinch transfer belt -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 1935.480000000105
+        },
+        {
+          "moving": "intake candidate pinch transfer belt -1",
+          "fixed": "am-3920-2",
+          "commonMm3": 4921.382418511071
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "am-0650-1",
+          "commonMm3": 1067.295497628788
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "intake candidate stationary aluminum guide -1",
+          "commonMm3": 518.2076249999997
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "intake candidate lift16T sprocket envelope (-1, 51.5)",
+          "commonMm3": 587.2284873375498
+        },
+        {
+          "moving": "intake candidate lift carriage plate -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 79739.1126908367
+        },
+        {
+          "moving": "intake candidate lift carriage plate -1",
+          "fixed": "am-2569-3",
+          "commonMm3": 1072.5308307563803
+        },
+        {
+          "moving": "intake candidate lift carriage plate -1",
+          "fixed": "am-2569-4",
+          "commonMm3": 1028.0277043928554
+        },
+        {
+          "moving": "intake candidate lift carriage plate -1",
+          "fixed": "am-2234-half-4",
+          "commonMm3": 764.6267583001697
+        },
+        {
+          "moving": "intake candidate lift carriage plate -1",
+          "fixed": "am-0209-3",
+          "commonMm3": 45.602896773316466
+        },
+        {
+          "moving": "intake candidate lift carriage plate -1",
+          "fixed": "am-1306-2",
+          "commonMm3": 342.33057034809303
+        },
+        {
+          "moving": "intake candidate lift carriage plate -1",
+          "fixed": "am-1297-2",
+          "commonMm3": 573.2370429540771
+        },
+        {
+          "moving": "intake candidate lift carriage plate -1",
+          "fixed": "frame fastening adapter-0--1",
+          "commonMm3": 1981.199999999998
+        },
+        {
+          "moving": "intake candidate lift carriage plate -1",
+          "fixed": "frame fastening nut-0--1-rail1",
+          "commonMm3": 2.3631832517496707
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (-1, 80.4, -1)",
+          "fixed": "am-3922-1",
+          "commonMm3": 1199.9999999976635
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (-1, 80.4, 1)",
+          "fixed": "am-3922-1",
+          "commonMm3": 1199.9999999976635
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (-1, 140.4, -1)",
+          "fixed": "am-3922-1",
+          "commonMm3": 948.5999386354001
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (-1, 140.4, 1)",
+          "fixed": "am-3922-1",
+          "commonMm3": 948.5999386354001
+        },
+        {
+          "moving": "intake candidate pivot drop bracket -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 17628.235324711226
+        },
+        {
+          "moving": "intake candidate pivot drop bracket -1",
+          "fixed": "am-2234-half-4",
+          "commonMm3": 457.0780700705404
+        },
+        {
+          "moving": "intake candidate chain carriage anchor -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 1798.3834999999965
+        },
+        {
+          "moving": "intake candidate vertical stub shaft (1, -146.04999999999998)",
+          "fixed": "am-0255-3",
+          "commonMm3": 7874.9932061511045
+        },
+        {
+          "moving": "intake candidate bearing representation (1, -146.04999999999998)48",
+          "fixed": "am-0255-3",
+          "commonMm3": 2074.2786684613616
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, -146.04999999999998)48",
+          "fixed": "am-0650-2",
+          "commonMm3": 18.276186472322927
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, -146.04999999999998)48",
+          "fixed": "am-0650-2",
+          "commonMm3": 881.3165063500708
+        },
+        {
+          "moving": "intake candidate bearing representation (1, 146.04999999999998)48",
+          "fixed": "am-3920-2",
+          "commonMm3": 251.9225755946014
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, 146.04999999999998)48",
+          "fixed": "am-3920-2",
+          "commonMm3": 308.665890418212
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, 146.04999999999998)48",
+          "fixed": "am-3920-2",
+          "commonMm3": 1270.0000000000043
+        },
+        {
+          "moving": "intake candidate pinch NEO body 1",
+          "fixed": "am-3920-2",
+          "commonMm3": 70598.61428669962
+        },
+        {
+          "moving": "intake candidate pinch NEO body 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 30865.70774930373
+        },
+        {
+          "moving": "intake candidate pinch NEO body 1",
+          "fixed": "am-0940b-4",
+          "commonMm3": 991.0689071904619
+        },
+        {
+          "moving": "intake candidate pinch motor plate 1",
+          "fixed": "am-3920-2",
+          "commonMm3": 11409.829346027424
+        },
+        {
+          "moving": "intake candidate pinch motor plate 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 5334.413289351423
+        },
+        {
+          "moving": "intake candidate pinch motor plate 1",
+          "fixed": "am-0940b-4",
+          "commonMm3": 853.756590384918
+        },
+        {
+          "moving": "intake candidate pinch motor plate 1",
+          "fixed": "fixed bumper end backing 1",
+          "commonMm3": 117.27179999999406
+        },
+        {
+          "moving": "intake candidate pinch motor plate 1",
+          "fixed": "original rigid front backing support proposal",
+          "commonMm3": 725.8049999999987
+        },
+        {
+          "moving": "intake candidate pinch transfer pulley (1, 188.92760666360243)",
+          "fixed": "am-3920-2",
+          "commonMm3": 371.9175422262867
+        },
+        {
+          "moving": "intake candidate pinch transfer pulley (1, 277.8276066636024)",
+          "fixed": "am-3920-2",
+          "commonMm3": 9206.822684062898
+        },
+        {
+          "moving": "intake candidate pinch transfer pulley (1, 277.8276066636024)",
+          "fixed": "am-3922-2",
+          "commonMm3": 357.3855837705101
+        },
+        {
+          "moving": "intake candidate pinch transfer belt 1",
+          "fixed": "am-3920-2",
+          "commonMm3": 4921.382418511033
+        },
+        {
+          "moving": "intake candidate pinch transfer belt 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 1935.4800000019623
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "am-0650-2",
+          "commonMm3": 1067.2954976708852
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "intake candidate stationary aluminum guide 1",
+          "commonMm3": 518.2076249999996
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "intake candidate lift16T sprocket envelope (1, 51.5)",
+          "commonMm3": 587.2284873375513
+        },
+        {
+          "moving": "intake candidate lift carriage plate 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 81734.02402583894
+        },
+        {
+          "moving": "intake candidate lift carriage plate 1",
+          "fixed": "am-2569-5",
+          "commonMm3": 1072.5308307570663
+        },
+        {
+          "moving": "intake candidate lift carriage plate 1",
+          "fixed": "am-2569-6",
+          "commonMm3": 667.8132887254521
+        },
+        {
+          "moving": "intake candidate lift carriage plate 1",
+          "fixed": "am-1307-3",
+          "commonMm3": 753.4900393365241
+        },
+        {
+          "moving": "intake candidate lift carriage plate 1",
+          "fixed": "am-1297-3",
+          "commonMm3": 573.2370429501163
+        },
+        {
+          "moving": "intake candidate lift carriage plate 1",
+          "fixed": "frame fastening adapter-0-1",
+          "commonMm3": 1981.199999999998
+        },
+        {
+          "moving": "intake candidate lift carriage plate 1",
+          "fixed": "frame fastening nut-0-1-rail1",
+          "commonMm3": 2.3631832517496685
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (1, 80.4, -1)",
+          "fixed": "am-3922-2",
+          "commonMm3": 1200.0000000022746
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (1, 80.4, 1)",
+          "fixed": "am-3922-2",
+          "commonMm3": 1200.0000000022749
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (1, 140.4, -1)",
+          "fixed": "am-3922-2",
+          "commonMm3": 948.5999386373262
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (1, 140.4, 1)",
+          "fixed": "am-3922-2",
+          "commonMm3": 948.5999386373262
+        },
+        {
+          "moving": "intake candidate pivot drop bracket 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 17628.23532472032
+        },
+        {
+          "moving": "intake candidate chain carriage anchor 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 1798.3834999999965
+        },
+        {
+          "moving": "intake candidate rotation12T pulley 114.30000000000001",
+          "fixed": "am-3922-1",
+          "commonMm3": 8546.893982315698
+        },
+        {
+          "moving": "intake candidate rotation belt run -12.127606663602423",
+          "fixed": "am-3922-1",
+          "commonMm3": 1890.3188259768976
+        },
+        {
+          "moving": "intake candidate rotation belt run 12.127606663602423",
+          "fixed": "am-3922-1",
+          "commonMm3": 1890.3188259768976
+        },
+        {
+          "moving": "intake candidate rotation MAXPlanetary12to1 envelope",
+          "fixed": "am-3922-1",
+          "commonMm3": 36948.1100000654
+        },
+        {
+          "moving": "intake candidate rotation MAXPlanetary12to1 envelope",
+          "fixed": "am-0940b-2",
+          "commonMm3": 67478.81475313513
+        },
+        {
+          "moving": "intake candidate rotation MAXPlanetary12to1 envelope",
+          "fixed": "am-2234-half-3",
+          "commonMm3": 7414.195712606492
+        },
+        {
+          "moving": "intake candidate rotation MAXPlanetary12to1 envelope",
+          "fixed": "am-2234-half-4",
+          "commonMm3": 7142.104159903503
+        },
+        {
+          "moving": "intake candidate rotation MAXPlanetary12to1 envelope",
+          "fixed": "am-2571-2",
+          "commonMm3": 23748.415020703113
+        },
+        {
+          "moving": "intake candidate rotation NEO envelope",
+          "fixed": "am-3921-1",
+          "commonMm3": 54332.50013913539
+        },
+        {
+          "moving": "intake candidate rotation NEO envelope",
+          "fixed": "fixed bumper side backing -1",
+          "commonMm3": 53862.60604579703
+        },
+        {
+          "moving": "intake candidate rotation NEO envelope",
+          "fixed": "fixed bumper side noodle -1 0",
+          "commonMm3": 1032.9507726536588
+        },
+        {
+          "moving": "intake candidate rotation NEO envelope",
+          "fixed": "fixed bumper side noodle -1 1",
+          "commonMm3": 8.859748756930177
+        }
+      ]
+    },
+    {
+      "phase": "rotate",
+      "pitchDeg": 10,
+      "centerZ": 51.86398227644018,
+      "hits": [
+        {
+          "moving": "intake candidate side pinch belt -1",
+          "fixed": "am-3920-2",
+          "commonMm3": 543.871014405106
+        },
+        {
+          "moving": "intake candidate vertical stub shaft (-1, -146.04999999999998)",
+          "fixed": "am-0255-2",
+          "commonMm3": 7933.668926006079
+        },
+        {
+          "moving": "intake candidate bearing representation (-1, -146.04999999999998)48",
+          "fixed": "am-0255-2",
+          "commonMm3": 2249.4350970052806
+        },
+        {
+          "moving": "intake candidate bearing carrier (-1, -146.04999999999998)48",
+          "fixed": "am-0650-1",
+          "commonMm3": 18.276186471613276
+        },
+        {
+          "moving": "intake candidate bearing carrier (-1, -146.04999999999998)48",
+          "fixed": "am-0255-2",
+          "commonMm3": 312.62663411705347
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, -146.04999999999998)48",
+          "fixed": "am-0650-1",
+          "commonMm3": 881.3165063487348
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, -146.04999999999998)48",
+          "fixed": "am-0255-2",
+          "commonMm3": 226.96972874183905
+        },
+        {
+          "moving": "intake candidate 12T track pulley representation (-1, 146.04999999999998)",
+          "fixed": "am-3920-2",
+          "commonMm3": 371.91754222628566
+        },
+        {
+          "moving": "intake candidate bearing representation (-1, 146.04999999999998)-16",
+          "fixed": "am-3920-2",
+          "commonMm3": 251.92257559460006
+        },
+        {
+          "moving": "intake candidate bearing carrier (-1, 146.04999999999998)-16",
+          "fixed": "am-3920-2",
+          "commonMm3": 308.6658904182103
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, 146.04999999999998)-16",
+          "fixed": "am-3920-2",
+          "commonMm3": 1269.9999999999975
+        },
+        {
+          "moving": "intake candidate bearing representation (-1, 146.04999999999998)48",
+          "fixed": "am-3920-2",
+          "commonMm3": 249.38311219079742
+        },
+        {
+          "moving": "intake candidate bearing carrier (-1, 146.04999999999998)48",
+          "fixed": "am-3920-2",
+          "commonMm3": 261.214969036962
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, 146.04999999999998)48",
+          "fixed": "am-3920-2",
+          "commonMm3": 1182.1346451493096
+        },
+        {
+          "moving": "intake candidate pinch NEO body -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 44445.33837708028
+        },
+        {
+          "moving": "intake candidate pinch NEO body -1",
+          "fixed": "am-0940b-2",
+          "commonMm3": 4651.54324673409
+        },
+        {
+          "moving": "intake candidate pinch NEO body -1",
+          "fixed": "am-3920-2",
+          "commonMm3": 123012.64295557255
+        },
+        {
+          "moving": "intake candidate pinch NEO body -1",
+          "fixed": "frame fastening adapter-1--1",
+          "commonMm3": 98.25054827305425
+        },
+        {
+          "moving": "intake candidate pinch NEO body -1",
+          "fixed": "frame fastening bolt-1--1-rail1",
+          "commonMm3": 267.88950164735417
+        },
+        {
+          "moving": "intake candidate pinch NEO body -1",
+          "fixed": "frame fastening nut-1--1-rail1",
+          "commonMm3": 477.6085365884453
+        },
+        {
+          "moving": "intake candidate pinch motor plate -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 5685.829116705274
+        },
+        {
+          "moving": "intake candidate pinch motor plate -1",
+          "fixed": "am-0940b-2",
+          "commonMm3": 326.0847079838146
+        },
+        {
+          "moving": "intake candidate pinch motor plate -1",
+          "fixed": "am-3920-2",
+          "commonMm3": 4864.2771270114135
+        },
+        {
+          "moving": "intake candidate pinch motor plate -1",
+          "fixed": "frame fastening adapter-1--1",
+          "commonMm3": 1052.7086127723132
+        },
+        {
+          "moving": "intake candidate pinch motor plate -1",
+          "fixed": "frame fastening bolt-1--1-rail1",
+          "commonMm3": 58.973484223522846
+        },
+        {
+          "moving": "intake candidate pinch transfer pulley (-1, -188.92760666360243)",
+          "fixed": "am-3920-2",
+          "commonMm3": 0.1002148491803741
+        },
+        {
+          "moving": "intake candidate pinch transfer pulley (-1, -277.8276066636024)",
+          "fixed": "am-3922-1",
+          "commonMm3": 357.22231544950193
+        },
+        {
+          "moving": "intake candidate pinch transfer pulley (-1, -277.8276066636024)",
+          "fixed": "am-3920-2",
+          "commonMm3": 2.6853440946715144
+        },
+        {
+          "moving": "intake candidate pinch transfer pulley (-1, -277.8276066636024)",
+          "fixed": "frame fastening adapter-1--1",
+          "commonMm3": 19.6097161697314
+        },
+        {
+          "moving": "intake candidate pinch transfer belt -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 1935.4800000001067
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 20338.35421854315
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "am-0650-1",
+          "commonMm3": 3589.7532067919747
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "am-1297-2",
+          "commonMm3": 106.72180688841424
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "am-3920-2",
+          "commonMm3": 10308.08638953551
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "intake candidate stationary aluminum guide -1",
+          "commonMm3": 802.3299474824075
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "intake candidate lift16T sprocket envelope (-1, 51.5)",
+          "commonMm3": 1342.6088075515324
+        },
+        {
+          "moving": "intake candidate cradle side pivot -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 5657.443864185473
+        },
+        {
+          "moving": "intake candidate cradle side pivot -1",
+          "fixed": "am-2571-2",
+          "commonMm3": 1728.8109023539268
+        },
+        {
+          "moving": "intake candidate lift carriage plate -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 54532.16957252745
+        },
+        {
+          "moving": "intake candidate lift carriage plate -1",
+          "fixed": "am-2569-3",
+          "commonMm3": 1072.5308307563803
+        },
+        {
+          "moving": "intake candidate lift carriage plate -1",
+          "fixed": "am-2234-half-4",
+          "commonMm3": 314.53387875506644
+        },
+        {
+          "moving": "intake candidate lift carriage plate -1",
+          "fixed": "frame fastening adapter-0--1",
+          "commonMm3": 1981.199999999998
+        },
+        {
+          "moving": "intake candidate lift carriage plate -1",
+          "fixed": "frame fastening nut-0--1-rail1",
+          "commonMm3": 2.3631832517496707
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (-1, 106.86398227644018, -1)",
+          "fixed": "am-3922-1",
+          "commonMm3": 1199.9999999976637
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (-1, 106.86398227644018, 1)",
+          "fixed": "am-3922-1",
+          "commonMm3": 1199.9999999976635
+        },
+        {
+          "moving": "intake candidate pivot drop bracket -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 22106.613240657556
+        },
+        {
+          "moving": "intake candidate pivot drop bracket -1",
+          "fixed": "am-2234-half-4",
+          "commonMm3": 566.0492207592382
+        },
+        {
+          "moving": "intake candidate pivot bearing representation -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 2975.207895681873
+        },
+        {
+          "moving": "intake candidate pivot bearing representation -1",
+          "fixed": "am-2234-half-4",
+          "commonMm3": 55.90480142716163
+        },
+        {
+          "moving": "intake candidate chain carriage anchor -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 1798.3835000000008
+        },
+        {
+          "moving": "intake candidate chain carriage anchor -1",
+          "fixed": "am-2569-3",
+          "commonMm3": 32.481880382770555
+        },
+        {
+          "moving": "intake candidate chain carriage anchor -1",
+          "fixed": "frame fastening adapter-0--1",
+          "commonMm3": 141.31706014948975
+        },
+        {
+          "moving": "intake candidate chain carriage anchor -1",
+          "fixed": "frame fastening nut-0--1-rail0",
+          "commonMm3": 1.062285412932321
+        },
+        {
+          "moving": "intake candidate side pinch belt 1",
+          "fixed": "am-3920-2",
+          "commonMm3": 543.8710144051049
+        },
+        {
+          "moving": "intake candidate vertical stub shaft (1, -146.04999999999998)",
+          "fixed": "am-0255-3",
+          "commonMm3": 7933.668926009917
+        },
+        {
+          "moving": "intake candidate bearing representation (1, -146.04999999999998)48",
+          "fixed": "am-0255-3",
+          "commonMm3": 2249.435097017158
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, -146.04999999999998)48",
+          "fixed": "am-0650-2",
+          "commonMm3": 18.276186472322845
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, -146.04999999999998)48",
+          "fixed": "am-0255-3",
+          "commonMm3": 312.62663412236884
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, -146.04999999999998)48",
+          "fixed": "am-0650-2",
+          "commonMm3": 881.3165063500671
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, -146.04999999999998)48",
+          "fixed": "am-0255-3",
+          "commonMm3": 226.96972874967489
+        },
+        {
+          "moving": "intake candidate 12T track pulley representation (1, 146.04999999999998)",
+          "fixed": "am-3920-2",
+          "commonMm3": 371.91754222628833
+        },
+        {
+          "moving": "intake candidate bearing representation (1, 146.04999999999998)-16",
+          "fixed": "am-3920-2",
+          "commonMm3": 251.9225755945999
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, 146.04999999999998)-16",
+          "fixed": "am-3920-2",
+          "commonMm3": 308.66589041821055
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, 146.04999999999998)-16",
+          "fixed": "am-3920-2",
+          "commonMm3": 1269.9999999999977
+        },
+        {
+          "moving": "intake candidate bearing representation (1, 146.04999999999998)48",
+          "fixed": "am-3920-2",
+          "commonMm3": 249.3831121908004
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, 146.04999999999998)48",
+          "fixed": "am-3920-2",
+          "commonMm3": 261.2149690369646
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, 146.04999999999998)48",
+          "fixed": "am-3920-2",
+          "commonMm3": 1182.1346451493105
+        },
+        {
+          "moving": "intake candidate pinch NEO body 1",
+          "fixed": "am-3920-2",
+          "commonMm3": 123012.64295557255
+        },
+        {
+          "moving": "intake candidate pinch NEO body 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 44445.33837707421
+        },
+        {
+          "moving": "intake candidate pinch NEO body 1",
+          "fixed": "am-0940b-4",
+          "commonMm3": 5053.019731102423
+        },
+        {
+          "moving": "intake candidate pinch NEO body 1",
+          "fixed": "frame fastening adapter-1-1",
+          "commonMm3": 98.25054746443045
+        },
+        {
+          "moving": "intake candidate pinch NEO body 1",
+          "fixed": "frame fastening bolt-1-1-rail1",
+          "commonMm3": 267.88950164735417
+        },
+        {
+          "moving": "intake candidate pinch NEO body 1",
+          "fixed": "frame fastening nut-1-1-rail1",
+          "commonMm3": 477.6085365884453
+        },
+        {
+          "moving": "intake candidate pinch motor plate 1",
+          "fixed": "am-3920-2",
+          "commonMm3": 4864.2771270114135
+        },
+        {
+          "moving": "intake candidate pinch motor plate 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 5685.829116704839
+        },
+        {
+          "moving": "intake candidate pinch motor plate 1",
+          "fixed": "am-0940b-4",
+          "commonMm3": 326.08470057748843
+        },
+        {
+          "moving": "intake candidate pinch motor plate 1",
+          "fixed": "frame fastening adapter-1-1",
+          "commonMm3": 1052.7086120144152
+        },
+        {
+          "moving": "intake candidate pinch motor plate 1",
+          "fixed": "frame fastening bolt-1-1-rail1",
+          "commonMm3": 58.973484223522846
+        },
+        {
+          "moving": "intake candidate pinch transfer pulley (1, 188.92760666360243)",
+          "fixed": "am-3920-2",
+          "commonMm3": 0.1002148499581327
+        },
+        {
+          "moving": "intake candidate pinch transfer pulley (1, 277.8276066636024)",
+          "fixed": "am-3920-2",
+          "commonMm3": 2.6853440946684715
+        },
+        {
+          "moving": "intake candidate pinch transfer pulley (1, 277.8276066636024)",
+          "fixed": "am-3922-2",
+          "commonMm3": 357.22231548979084
+        },
+        {
+          "moving": "intake candidate pinch transfer pulley (1, 277.8276066636024)",
+          "fixed": "frame fastening adapter-1-1",
+          "commonMm3": 19.60971618192373
+        },
+        {
+          "moving": "intake candidate pinch transfer belt 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 1935.480000001964
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "am-3920-2",
+          "commonMm3": 10308.086389535514
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 20338.354218614706
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "am-0650-2",
+          "commonMm3": 3589.753206809919
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "am-1297-3",
+          "commonMm3": 106.72180689060377
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "intake candidate stationary aluminum guide 1",
+          "commonMm3": 802.3299474824054
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "intake candidate lift16T sprocket envelope (1, 51.5)",
+          "commonMm3": 1342.608807551531
+        },
+        {
+          "moving": "intake candidate cradle side pivot 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 5657.443864190901
+        },
+        {
+          "moving": "intake candidate lift carriage plate 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 56527.08090752969
+        },
+        {
+          "moving": "intake candidate lift carriage plate 1",
+          "fixed": "am-2569-5",
+          "commonMm3": 1072.5308307570663
+        },
+        {
+          "moving": "intake candidate lift carriage plate 1",
+          "fixed": "frame fastening adapter-0-1",
+          "commonMm3": 1981.199999999998
+        },
+        {
+          "moving": "intake candidate lift carriage plate 1",
+          "fixed": "frame fastening nut-0-1-rail1",
+          "commonMm3": 2.3631832517496685
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (1, 106.86398227644018, -1)",
+          "fixed": "am-3922-2",
+          "commonMm3": 1200.0000000022749
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (1, 106.86398227644018, 1)",
+          "fixed": "am-3922-2",
+          "commonMm3": 1200.0000000022749
+        },
+        {
+          "moving": "intake candidate pivot drop bracket 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 22106.613240663795
+        },
+        {
+          "moving": "intake candidate pivot bearing representation 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 2975.207895684703
+        },
+        {
+          "moving": "intake candidate chain carriage anchor 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 1798.3835000000008
+        },
+        {
+          "moving": "intake candidate chain carriage anchor 1",
+          "fixed": "am-2569-5",
+          "commonMm3": 32.48188038096613
+        },
+        {
+          "moving": "intake candidate chain carriage anchor 1",
+          "fixed": "frame fastening adapter-0-1",
+          "commonMm3": 141.31706014948978
+        },
+        {
+          "moving": "intake candidate chain carriage anchor 1",
+          "fixed": "frame fastening nut-0-1-rail0",
+          "commonMm3": 1.062285412932322
+        },
+        {
+          "moving": "intake candidate rotation12T pulley 51.86398227644018",
+          "fixed": "am-3922-1",
+          "commonMm3": 8414.53027644541
+        },
+        {
+          "moving": "intake candidate rotation12T pulley 140.76398227644017",
+          "fixed": "am-3922-1",
+          "commonMm3": 8546.893982315698
+        },
+        {
+          "moving": "intake candidate rotation belt run -12.127606663602423",
+          "fixed": "am-3922-1",
+          "commonMm3": 2258.0599999999977
+        },
+        {
+          "moving": "intake candidate rotation belt run 12.127606663602423",
+          "fixed": "am-3922-1",
+          "commonMm3": 2258.0599999999977
+        },
+        {
+          "moving": "intake candidate rotation MAXPlanetary12to1 envelope",
+          "fixed": "am-3922-1",
+          "commonMm3": 27693.78236878476
+        },
+        {
+          "moving": "intake candidate rotation MAXPlanetary12to1 envelope",
+          "fixed": "am-0940b-2",
+          "commonMm3": 34875.438373018704
+        },
+        {
+          "moving": "intake candidate rotation MAXPlanetary12to1 envelope",
+          "fixed": "am-2234-half-3",
+          "commonMm3": 1232.646861368277
+        },
+        {
+          "moving": "intake candidate rotation MAXPlanetary12to1 envelope",
+          "fixed": "am-2234-half-4",
+          "commonMm3": 1187.4102756860796
+        },
+        {
+          "moving": "intake candidate rotation MAXPlanetary12to1 envelope",
+          "fixed": "am-2571-2",
+          "commonMm3": 3582.8605260552567
+        },
+        {
+          "moving": "intake candidate rotation NEO envelope",
+          "fixed": "am-3921-1",
+          "commonMm3": 20816.734280079356
+        },
+        {
+          "moving": "intake candidate rotation NEO envelope",
+          "fixed": "fixed bumper side backing -1",
+          "commonMm3": 53862.60604579703
+        },
+        {
+          "moving": "intake candidate rotation NEO envelope",
+          "fixed": "fixed bumper side noodle -1 1",
+          "commonMm3": 1751.1067378211533
+        }
+      ]
+    },
+    {
+      "phase": "rotate",
+      "pitchDeg": 20,
+      "centerZ": 77.52386984283191,
+      "hits": [
+        {
+          "moving": "intake candidate side pinch belt -1",
+          "fixed": "am-3920-2",
+          "commonMm3": 385.91360750618077
+        },
+        {
+          "moving": "intake candidate vertical stub shaft (-1, -146.04999999999998)",
+          "fixed": "am-0255-2",
+          "commonMm3": 7136.743269409285
+        },
+        {
+          "moving": "intake candidate bearing representation (-1, -146.04999999999998)48",
+          "fixed": "am-0255-2",
+          "commonMm3": 1669.516765868967
+        },
+        {
+          "moving": "intake candidate bearing carrier (-1, -146.04999999999998)48",
+          "fixed": "am-0650-1",
+          "commonMm3": 18.276186471613265
+        },
+        {
+          "moving": "intake candidate bearing carrier (-1, -146.04999999999998)48",
+          "fixed": "am-0255-2",
+          "commonMm3": 400.5528941141632
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, -146.04999999999998)48",
+          "fixed": "am-0650-1",
+          "commonMm3": 881.3165063487359
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, -146.04999999999998)48",
+          "fixed": "am-0255-2",
+          "commonMm3": 242.45956895702895
+        },
+        {
+          "moving": "intake candidate 12T track pulley representation (-1, 146.04999999999998)",
+          "fixed": "am-3920-2",
+          "commonMm3": 360.92502380284014
+        },
+        {
+          "moving": "intake candidate bearing representation (-1, 146.04999999999998)-16",
+          "fixed": "am-3920-2",
+          "commonMm3": 251.92257559460123
+        },
+        {
+          "moving": "intake candidate bearing carrier (-1, 146.04999999999998)-16",
+          "fixed": "am-3920-2",
+          "commonMm3": 308.66589041821163
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, 146.04999999999998)-16",
+          "fixed": "am-3920-2",
+          "commonMm3": 1269.9999999999984
+        },
+        {
+          "moving": "intake candidate bearing representation (-1, 146.04999999999998)48",
+          "fixed": "frame fastening bridge-1",
+          "commonMm3": 8.948388650419401
+        },
+        {
+          "moving": "intake candidate bearing carrier (-1, 146.04999999999998)48",
+          "fixed": "frame fastening bridge-1",
+          "commonMm3": 40.40750263149731
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, 146.04999999999998)48",
+          "fixed": "frame fastening bridge-1",
+          "commonMm3": 107.16574899573735
+        },
+        {
+          "moving": "intake candidate pinch NEO body -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 25843.175722565233
+        },
+        {
+          "moving": "intake candidate pinch NEO body -1",
+          "fixed": "am-0940b-2",
+          "commonMm3": 19.99756628759973
+        },
+        {
+          "moving": "intake candidate pinch NEO body -1",
+          "fixed": "am-3920-2",
+          "commonMm3": 18531.26130528703
+        },
+        {
+          "moving": "intake candidate pinch NEO body -1",
+          "fixed": "frame fastening adapter-1--1",
+          "commonMm3": 3153.26084921659
+        },
+        {
+          "moving": "intake candidate pinch NEO body -1",
+          "fixed": "frame fastening bolt-1--1-rail1",
+          "commonMm3": 219.18148829086292
+        },
+        {
+          "moving": "intake candidate pinch NEO body -1",
+          "fixed": "frame fastening head-1--1-rail1",
+          "commonMm3": 251.3274122871835
+        },
+        {
+          "moving": "intake candidate pinch NEO body -1",
+          "fixed": "frame fastening nut-1--1-rail1",
+          "commonMm3": 379.86054014937355
+        },
+        {
+          "moving": "intake candidate pinch motor plate -1",
+          "fixed": "frame fastening bridge-1",
+          "commonMm3": 56.80023203630766
+        },
+        {
+          "moving": "intake candidate pinch transfer pulley (-1, -188.92760666360243)",
+          "fixed": "frame fastening bridge-1",
+          "commonMm3": 27.154051969359756
+        },
+        {
+          "moving": "intake candidate pinch transfer belt -1",
+          "fixed": "frame fastening bridge-1",
+          "commonMm3": 275.6597425093588
+        },
+        {
+          "moving": "intake candidate pinch transfer belt -1",
+          "fixed": "frame fastening sleeve-1--1",
+          "commonMm3": 15.29231729357505
+        },
+        {
+          "moving": "intake candidate pinch transfer belt -1",
+          "fixed": "frame fastening bolt-1--1-tube",
+          "commonMm3": 23.80077160644974
+        },
+        {
+          "moving": "intake candidate pinch transfer belt -1",
+          "fixed": "frame fastening head-1--1-tube",
+          "commonMm3": 83.26420746387478
+        },
+        {
+          "moving": "intake candidate pinch transfer belt -1",
+          "fixed": "original shooter upright -1 279.4",
+          "commonMm3": 102.1543560377235
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 23889.484823792252
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "am-0650-1",
+          "commonMm3": 4027.8880839346893
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "am-1297-2",
+          "commonMm3": 272.41220743322964
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "am-3920-2",
+          "commonMm3": 6081.464911835472
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "frame fastening adapter-1--1",
+          "commonMm3": 109.90713591766745
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "frame fastening bolt-1--1-tube",
+          "commonMm3": 94.89109836124835
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "frame fastening nut-1--1-tube",
+          "commonMm3": 90.88206287648823
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "intake candidate stationary aluminum guide -1",
+          "commonMm3": 1364.3325036214826
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "intake candidate lift16T sprocket envelope (-1, 51.5)",
+          "commonMm3": 1866.1052381299628
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "intake candidate lift chain straight-run envelope (-1, 16.4)",
+          "commonMm3": 53.4946316132437
+        },
+        {
+          "moving": "intake candidate cradle side pivot -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 5657.443864185473
+        },
+        {
+          "moving": "intake candidate cradle side pivot -1",
+          "fixed": "am-2571-2",
+          "commonMm3": 1728.810902353926
+        },
+        {
+          "moving": "intake candidate lift carriage plate -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 32086.038000568868
+        },
+        {
+          "moving": "intake candidate lift carriage plate -1",
+          "fixed": "am-2569-3",
+          "commonMm3": 409.81386492958353
+        },
+        {
+          "moving": "intake candidate lift carriage plate -1",
+          "fixed": "frame fastening adapter-0--1",
+          "commonMm3": 1981.199999999998
+        },
+        {
+          "moving": "intake candidate lift carriage plate -1",
+          "fixed": "frame fastening nut-0--1-rail1",
+          "commonMm3": 2.3631832517496707
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (-1, 132.5238698428319, -1)",
+          "fixed": "am-3922-1",
+          "commonMm3": 1199.9999999976637
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (-1, 132.5238698428319, -1)",
+          "fixed": "frame fastening adapter-0--1",
+          "commonMm3": 446.39999999999986
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (-1, 132.5238698428319, 1)",
+          "fixed": "am-3922-1",
+          "commonMm3": 1199.9999999976635
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (-1, 132.5238698428319, 1)",
+          "fixed": "frame fastening adapter-0--1",
+          "commonMm3": 446.39999999999986
+        },
+        {
+          "moving": "intake candidate pivot drop bracket -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 24495.605810998113
+        },
+        {
+          "moving": "intake candidate pivot drop bracket -1",
+          "fixed": "am-2234-half-4",
+          "commonMm3": 425.90449653910196
+        },
+        {
+          "moving": "intake candidate pivot bearing representation -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 3129.3581873305466
+        },
+        {
+          "moving": "intake candidate pivot bearing representation -1",
+          "fixed": "am-2234-half-4",
+          "commonMm3": 56.41235390653604
+        },
+        {
+          "moving": "intake candidate chain carriage anchor -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 1043.9486321691525
+        },
+        {
+          "moving": "intake candidate side pinch belt 1",
+          "fixed": "am-3920-2",
+          "commonMm3": 385.9136075061806
+        },
+        {
+          "moving": "intake candidate vertical stub shaft (1, -146.04999999999998)",
+          "fixed": "am-0255-3",
+          "commonMm3": 7136.743269420248
+        },
+        {
+          "moving": "intake candidate bearing representation (1, -146.04999999999998)48",
+          "fixed": "am-0255-3",
+          "commonMm3": 1669.5167658780204
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, -146.04999999999998)48",
+          "fixed": "am-0650-2",
+          "commonMm3": 18.276186472322845
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, -146.04999999999998)48",
+          "fixed": "am-0255-3",
+          "commonMm3": 400.5528941163937
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, -146.04999999999998)48",
+          "fixed": "am-0650-2",
+          "commonMm3": 881.3165063500676
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, -146.04999999999998)48",
+          "fixed": "am-0255-3",
+          "commonMm3": 242.45956896293603
+        },
+        {
+          "moving": "intake candidate 12T track pulley representation (1, 146.04999999999998)",
+          "fixed": "am-3920-2",
+          "commonMm3": 360.9250236393467
+        },
+        {
+          "moving": "intake candidate bearing representation (1, 146.04999999999998)-16",
+          "fixed": "am-3920-2",
+          "commonMm3": 251.92257559460265
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, 146.04999999999998)-16",
+          "fixed": "am-3920-2",
+          "commonMm3": 308.6658904182121
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, 146.04999999999998)-16",
+          "fixed": "am-3920-2",
+          "commonMm3": 1269.9999999999984
+        },
+        {
+          "moving": "intake candidate bearing representation (1, 146.04999999999998)48",
+          "fixed": "frame fastening bridge-1",
+          "commonMm3": 8.948388650419268
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, 146.04999999999998)48",
+          "fixed": "frame fastening bridge-1",
+          "commonMm3": 40.40750263149738
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, 146.04999999999998)48",
+          "fixed": "frame fastening bridge-1",
+          "commonMm3": 107.16574899573735
+        },
+        {
+          "moving": "intake candidate pinch NEO body 1",
+          "fixed": "am-3920-2",
+          "commonMm3": 18531.261305286753
+        },
+        {
+          "moving": "intake candidate pinch NEO body 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 25843.175721861546
+        },
+        {
+          "moving": "intake candidate pinch NEO body 1",
+          "fixed": "am-0940b-4",
+          "commonMm3": 25.0753239953558
+        },
+        {
+          "moving": "intake candidate pinch NEO body 1",
+          "fixed": "frame fastening adapter-1-1",
+          "commonMm3": 3153.2608485737
+        },
+        {
+          "moving": "intake candidate pinch NEO body 1",
+          "fixed": "frame fastening bolt-1-1-rail1",
+          "commonMm3": 219.18148829086292
+        },
+        {
+          "moving": "intake candidate pinch NEO body 1",
+          "fixed": "frame fastening head-1-1-rail1",
+          "commonMm3": 251.3274122871835
+        },
+        {
+          "moving": "intake candidate pinch NEO body 1",
+          "fixed": "frame fastening nut-1-1-rail1",
+          "commonMm3": 379.8605401493802
+        },
+        {
+          "moving": "intake candidate pinch motor plate 1",
+          "fixed": "frame fastening bridge-1",
+          "commonMm3": 56.80023203630726
+        },
+        {
+          "moving": "intake candidate pinch transfer pulley (1, 188.92760666360243)",
+          "fixed": "frame fastening bridge-1",
+          "commonMm3": 27.15405210093008
+        },
+        {
+          "moving": "intake candidate pinch transfer belt 1",
+          "fixed": "frame fastening bridge-1",
+          "commonMm3": 275.6597425093505
+        },
+        {
+          "moving": "intake candidate pinch transfer belt 1",
+          "fixed": "frame fastening sleeve-1-1",
+          "commonMm3": 15.292317293564489
+        },
+        {
+          "moving": "intake candidate pinch transfer belt 1",
+          "fixed": "frame fastening bolt-1-1-tube",
+          "commonMm3": 23.800771606460913
+        },
+        {
+          "moving": "intake candidate pinch transfer belt 1",
+          "fixed": "frame fastening head-1-1-tube",
+          "commonMm3": 83.26420746387356
+        },
+        {
+          "moving": "intake candidate pinch transfer belt 1",
+          "fixed": "original shooter upright 1 279.4",
+          "commonMm3": 102.15435603772283
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "am-3920-2",
+          "commonMm3": 6081.464911835472
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 23889.484823866776
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "am-0650-2",
+          "commonMm3": 4027.8880839460726
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "am-1297-3",
+          "commonMm3": 272.41220743132936
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "frame fastening adapter-1-1",
+          "commonMm3": 109.9071359176677
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "frame fastening bolt-1-1-tube",
+          "commonMm3": 94.8910985524741
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "frame fastening nut-1-1-tube",
+          "commonMm3": 90.8820628666013
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "intake candidate stationary aluminum guide 1",
+          "commonMm3": 1364.3325036214776
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "intake candidate lift16T sprocket envelope (1, 51.5)",
+          "commonMm3": 1866.105238129959
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "intake candidate lift chain straight-run envelope (1, 16.4)",
+          "commonMm3": 53.494631613243854
+        },
+        {
+          "moving": "intake candidate cradle side pivot 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 5657.443864190901
+        },
+        {
+          "moving": "intake candidate lift carriage plate 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 32086.038000541594
+        },
+        {
+          "moving": "intake candidate lift carriage plate 1",
+          "fixed": "am-2569-5",
+          "commonMm3": 409.81386492413105
+        },
+        {
+          "moving": "intake candidate lift carriage plate 1",
+          "fixed": "frame fastening adapter-0-1",
+          "commonMm3": 1981.199999999998
+        },
+        {
+          "moving": "intake candidate lift carriage plate 1",
+          "fixed": "frame fastening nut-0-1-rail1",
+          "commonMm3": 2.3631832517496685
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (1, 132.5238698428319, -1)",
+          "fixed": "am-3922-2",
+          "commonMm3": 1200.0000000022749
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (1, 132.5238698428319, -1)",
+          "fixed": "frame fastening adapter-0-1",
+          "commonMm3": 446.39999999999986
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (1, 132.5238698428319, 1)",
+          "fixed": "am-3922-2",
+          "commonMm3": 1200.0000000022749
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (1, 132.5238698428319, 1)",
+          "fixed": "frame fastening adapter-0-1",
+          "commonMm3": 446.3999999999998
+        },
+        {
+          "moving": "intake candidate pivot drop bracket 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 24495.605810998117
+        },
+        {
+          "moving": "intake candidate pivot bearing representation 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 3129.3581873305466
+        },
+        {
+          "moving": "intake candidate chain carriage anchor 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 1043.948632161039
+        },
+        {
+          "moving": "intake candidate rotation12T pulley 77.52386984283191",
+          "fixed": "am-3922-1",
+          "commonMm3": 8546.893982315698
+        },
+        {
+          "moving": "intake candidate rotation12T pulley 166.42386984283192",
+          "fixed": "am-3922-1",
+          "commonMm3": 521.5157634433535
+        },
+        {
+          "moving": "intake candidate rotation belt run -12.127606663602423",
+          "fixed": "am-3922-1",
+          "commonMm3": 1998.627680015169
+        },
+        {
+          "moving": "intake candidate rotation belt run 12.127606663602423",
+          "fixed": "am-3922-1",
+          "commonMm3": 1998.627680015169
+        },
+        {
+          "moving": "intake candidate rotation MAXPlanetary12to1 envelope",
+          "fixed": "am-3922-1",
+          "commonMm3": 12377.395480378409
+        },
+        {
+          "moving": "intake candidate rotation MAXPlanetary12to1 envelope",
+          "fixed": "am-0940b-2",
+          "commonMm3": 7569.966191669824
+        },
+        {
+          "moving": "intake candidate rotation NEO envelope",
+          "fixed": "fixed bumper side backing -1",
+          "commonMm3": 47160.66840215435
+        },
+        {
+          "moving": "intake candidate rotation NEO envelope",
+          "fixed": "fixed bumper side noodle -1 1",
+          "commonMm3": 1761.6711359075803
+        }
+      ]
+    },
+    {
+      "phase": "rotate",
+      "pitchDeg": 30,
+      "centerZ": 101.6,
+      "hits": [
+        {
+          "moving": "intake candidate side pinch belt -1",
+          "fixed": "frame fastening bridge-1",
+          "commonMm3": 186.2416498351877
+        },
+        {
+          "moving": "intake candidate vertical stub shaft (-1, -146.04999999999998)",
+          "fixed": "am-0255-2",
+          "commonMm3": 5789.778592595903
+        },
+        {
+          "moving": "intake candidate bearing representation (-1, -146.04999999999998)48",
+          "fixed": "am-0255-2",
+          "commonMm3": 1089.8749755575066
+        },
+        {
+          "moving": "intake candidate bearing carrier (-1, -146.04999999999998)48",
+          "fixed": "am-0650-1",
+          "commonMm3": 18.276186471613308
+        },
+        {
+          "moving": "intake candidate bearing carrier (-1, -146.04999999999998)48",
+          "fixed": "am-0255-2",
+          "commonMm3": 341.3964594255796
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, -146.04999999999998)48",
+          "fixed": "am-0650-1",
+          "commonMm3": 881.3165063487309
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, -146.04999999999998)48",
+          "fixed": "am-0255-2",
+          "commonMm3": 70.67230666228876
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, 146.04999999999998)48",
+          "fixed": "original shooter upright -1 279.4",
+          "commonMm3": 207.73622788322652
+        },
+        {
+          "moving": "intake candidate pinch transfer belt -1",
+          "fixed": "original shooter upright -1 279.4",
+          "commonMm3": 161.2900000000002
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 20129.79844997131
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "am-0650-1",
+          "commonMm3": 3271.5756855182753
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "frame fastening bridge-1",
+          "commonMm3": 2069.6103337935588
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "frame fastening adapter-1--1",
+          "commonMm3": 85.20803991252868
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "frame fastening sleeve-1--1",
+          "commonMm3": 746.5894093913009
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "frame fastening bolt-1--1-tube",
+          "commonMm3": 239.57593776175958
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "intake candidate stationary aluminum guide -1",
+          "commonMm3": 1669.1907866478905
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "intake candidate lift16T sprocket envelope (-1, 51.5)",
+          "commonMm3": 1901.710363958439
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "intake candidate lift chain straight-run envelope (-1, 16.4)",
+          "commonMm3": 92.11535999331852
+        },
+        {
+          "moving": "intake candidate cradle side pivot -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 5657.443864185473
+        },
+        {
+          "moving": "intake candidate cradle side pivot -1",
+          "fixed": "am-2571-2",
+          "commonMm3": 1728.8109023539262
+        },
+        {
+          "moving": "intake candidate lift carriage plate -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 9153.524025866296
+        },
+        {
+          "moving": "intake candidate pivot drop bracket -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 19609.280486286898
+        },
+        {
+          "moving": "intake candidate pivot drop bracket -1",
+          "fixed": "am-2234-half-4",
+          "commonMm3": 224.11388386310867
+        },
+        {
+          "moving": "intake candidate pivot bearing representation -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 3129.358187330547
+        },
+        {
+          "moving": "intake candidate pivot bearing representation -1",
+          "fixed": "am-2234-half-4",
+          "commonMm3": 56.412353906536225
+        },
+        {
+          "moving": "intake candidate side pinch belt 1",
+          "fixed": "frame fastening bridge-1",
+          "commonMm3": 186.24164983518727
+        },
+        {
+          "moving": "intake candidate vertical stub shaft (1, -146.04999999999998)",
+          "fixed": "am-0255-3",
+          "commonMm3": 5789.778592601722
+        },
+        {
+          "moving": "intake candidate bearing representation (1, -146.04999999999998)48",
+          "fixed": "am-0255-3",
+          "commonMm3": 1089.874975563851
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, -146.04999999999998)48",
+          "fixed": "am-0650-2",
+          "commonMm3": 18.27618647232282
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, -146.04999999999998)48",
+          "fixed": "am-0255-3",
+          "commonMm3": 341.3964594272649
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, -146.04999999999998)48",
+          "fixed": "am-0650-2",
+          "commonMm3": 881.3165063500627
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, -146.04999999999998)48",
+          "fixed": "am-0255-3",
+          "commonMm3": 70.67230666503647
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, 146.04999999999998)48",
+          "fixed": "original shooter upright 1 279.4",
+          "commonMm3": 207.73622788322473
+        },
+        {
+          "moving": "intake candidate pinch transfer belt 1",
+          "fixed": "original shooter upright 1 279.4",
+          "commonMm3": 161.28999999999982
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 20129.798450027978
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "am-0650-2",
+          "commonMm3": 3271.5756855259833
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "frame fastening bridge-1",
+          "commonMm3": 2069.6103337935588
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "frame fastening adapter-1-1",
+          "commonMm3": 85.20803991252886
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "frame fastening sleeve-1-1",
+          "commonMm3": 746.5894093916598
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "frame fastening bolt-1-1-tube",
+          "commonMm3": 239.57593776161147
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "intake candidate stationary aluminum guide 1",
+          "commonMm3": 1669.190786647886
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "intake candidate lift16T sprocket envelope (1, 51.5)",
+          "commonMm3": 1901.7103639584338
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "intake candidate lift chain straight-run envelope (1, 16.4)",
+          "commonMm3": 92.11535999331858
+        },
+        {
+          "moving": "intake candidate cradle side pivot 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 5657.4438641909
+        },
+        {
+          "moving": "intake candidate lift carriage plate 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 9153.524025839011
+        },
+        {
+          "moving": "intake candidate pivot drop bracket 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 19609.280486277792
+        },
+        {
+          "moving": "intake candidate pivot bearing representation 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 3129.358187330547
+        },
+        {
+          "moving": "intake candidate rotation12T pulley 101.6",
+          "fixed": "am-3922-1",
+          "commonMm3": 8546.893982315698
+        },
+        {
+          "moving": "intake candidate rotation belt run -12.127606663602423",
+          "fixed": "am-3922-1",
+          "commonMm3": 1387.0939740231004
+        },
+        {
+          "moving": "intake candidate rotation belt run 12.127606663602423",
+          "fixed": "am-3922-1",
+          "commonMm3": 1387.0939740231004
+        },
+        {
+          "moving": "intake candidate rotation NEO envelope",
+          "fixed": "fixed bumper side backing -1",
+          "commonMm3": 21242.87270797576
+        },
+        {
+          "moving": "intake candidate rotation NEO envelope",
+          "fixed": "fixed bumper side noodle -1 1",
+          "commonMm3": 66.78372734598028
+        }
+      ]
+    },
+    {
+      "phase": "rotate",
+      "pitchDeg": 40,
+      "centerZ": 123.36083171622857,
+      "hits": [
+        {
+          "moving": "intake candidate side pinch belt -1",
+          "fixed": "am-2974-cut-2",
+          "commonMm3": 2.7309729585450304
+        },
+        {
+          "moving": "intake candidate vertical stub shaft (-1, -146.04999999999998)",
+          "fixed": "am-0255-2",
+          "commonMm3": 5406.140697994461
+        },
+        {
+          "moving": "intake candidate bearing representation (-1, -146.04999999999998)48",
+          "fixed": "am-0255-2",
+          "commonMm3": 473.7138192011732
+        },
+        {
+          "moving": "intake candidate bearing carrier (-1, -146.04999999999998)48",
+          "fixed": "am-0650-1",
+          "commonMm3": 18.2761864716133
+        },
+        {
+          "moving": "intake candidate bearing carrier (-1, -146.04999999999998)48",
+          "fixed": "am-0255-2",
+          "commonMm3": 219.52985501437783
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, -146.04999999999998)48",
+          "fixed": "am-0650-1",
+          "commonMm3": 881.3165063487347
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, 146.04999999999998)48",
+          "fixed": "original shooter upright -1 279.4",
+          "commonMm3": 34.46685741137155
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 15658.203539259048
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "am-0650-1",
+          "commonMm3": 1458.8526529735286
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "am-2974-cut-2",
+          "commonMm3": 1091.0663505236685
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "frame fastening bridge-1",
+          "commonMm3": 545.3724683780845
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "frame fastening head-1--1-tube",
+          "commonMm3": 54.087339745708434
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "original shooter upright -1 279.4",
+          "commonMm3": 1634.6121117614302
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "intake candidate stationary aluminum guide -1",
+          "commonMm3": 1798.8691395773017
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "intake candidate lift16T sprocket envelope (-1, 51.5)",
+          "commonMm3": 1259.1183763838046
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "intake candidate lift chain straight-run envelope (-1, 16.4)",
+          "commonMm3": 66.60791884956053
+        },
+        {
+          "moving": "intake candidate cradle side pivot -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 5657.443864185474
+        },
+        {
+          "moving": "intake candidate pivot drop bracket -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 12700.216416384323
+        },
+        {
+          "moving": "intake candidate pivot drop bracket -1",
+          "fixed": "am-2234-half-4",
+          "commonMm3": 93.78675922729309
+        },
+        {
+          "moving": "intake candidate pivot bearing representation -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 3129.3581873305466
+        },
+        {
+          "moving": "intake candidate pivot bearing representation -1",
+          "fixed": "am-2234-half-4",
+          "commonMm3": 4.494085671972476
+        },
+        {
+          "moving": "intake candidate side pinch belt 1",
+          "fixed": "am-2974-cut-2",
+          "commonMm3": 2.730972958545026
+        },
+        {
+          "moving": "intake candidate vertical stub shaft (1, -146.04999999999998)",
+          "fixed": "am-0255-3",
+          "commonMm3": 5406.140698000476
+        },
+        {
+          "moving": "intake candidate bearing representation (1, -146.04999999999998)48",
+          "fixed": "am-0255-3",
+          "commonMm3": 473.71381920645524
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, -146.04999999999998)48",
+          "fixed": "am-0650-2",
+          "commonMm3": 18.276186472322845
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, -146.04999999999998)48",
+          "fixed": "am-0255-3",
+          "commonMm3": 219.52985501640507
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, -146.04999999999998)48",
+          "fixed": "am-0650-2",
+          "commonMm3": 881.3165063500662
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, 146.04999999999998)48",
+          "fixed": "original shooter upright 1 279.4",
+          "commonMm3": 34.466857411371315
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 15658.203539303146
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "am-2974-cut-2",
+          "commonMm3": 1091.066350523668
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "am-0650-2",
+          "commonMm3": 1458.8526529779544
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "frame fastening bridge-1",
+          "commonMm3": 545.3724683780849
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "frame fastening head-1-1-tube",
+          "commonMm3": 54.087339745708455
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "original shooter upright 1 279.4",
+          "commonMm3": 1634.6121117614234
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "intake candidate stationary aluminum guide 1",
+          "commonMm3": 1798.8691395772971
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "intake candidate lift16T sprocket envelope (1, 51.5)",
+          "commonMm3": 1259.1183763838037
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "intake candidate lift chain straight-run envelope (1, 16.4)",
+          "commonMm3": 66.6079188495607
+        },
+        {
+          "moving": "intake candidate cradle side pivot 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 5657.443864190902
+        },
+        {
+          "moving": "intake candidate pivot drop bracket 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 12700.216416375226
+        },
+        {
+          "moving": "intake candidate pivot bearing representation 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 3129.3581873305466
+        },
+        {
+          "moving": "intake candidate rotation12T pulley 123.36083171622857",
+          "fixed": "am-3922-1",
+          "commonMm3": 8546.893982315698
+        },
+        {
+          "moving": "intake candidate rotation belt run -12.127606663602423",
+          "fixed": "am-3922-1",
+          "commonMm3": 834.3688484308948
+        },
+        {
+          "moving": "intake candidate rotation belt run 12.127606663602423",
+          "fixed": "am-3922-1",
+          "commonMm3": 834.3688484308949
+        },
+        {
+          "moving": "intake candidate rotation NEO envelope",
+          "fixed": "fixed bumper side backing -1",
+          "commonMm3": 1128.2305217928408
+        }
+      ]
+    },
+    {
+      "phase": "rotate",
+      "pitchDeg": 50,
+      "centerZ": 142.14517313133226,
+      "hits": [
+        {
+          "moving": "intake candidate side pinch belt -1",
+          "fixed": "am-2974-cut-2",
+          "commonMm3": 193.85317836494124
+        },
+        {
+          "moving": "intake candidate vertical stub shaft (-1, -146.04999999999998)",
+          "fixed": "am-0255-2",
+          "commonMm3": 5008.876370289065
+        },
+        {
+          "moving": "intake candidate bearing representation (-1, -146.04999999999998)48",
+          "fixed": "am-0255-2",
+          "commonMm3": 25.88849418477203
+        },
+        {
+          "moving": "intake candidate bearing carrier (-1, -146.04999999999998)48",
+          "fixed": "am-0650-1",
+          "commonMm3": 18.276186471613297
+        },
+        {
+          "moving": "intake candidate bearing carrier (-1, -146.04999999999998)48",
+          "fixed": "am-0255-2",
+          "commonMm3": 20.919691059335175
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, -146.04999999999998)48",
+          "fixed": "am-0650-1",
+          "commonMm3": 881.3165063487377
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, 146.04999999999998)-16",
+          "fixed": "original shooter upright -1 279.4",
+          "commonMm3": 201.64191464403933
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 13138.792814691069
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "am-2974-cut-2",
+          "commonMm3": 1698.0281201576477
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "original shooter upright -1 279.4",
+          "commonMm3": 1518.488884431257
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "intake candidate stationary aluminum guide -1",
+          "commonMm3": 1699.7230888472577
+        },
+        {
+          "moving": "intake candidate cradle side pivot -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 5657.443864185473
+        },
+        {
+          "moving": "intake candidate pivot drop bracket -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 6741.339183901236
+        },
+        {
+          "moving": "intake candidate pivot bearing representation -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 3124.6136660242933
+        },
+        {
+          "moving": "intake candidate side pinch belt 1",
+          "fixed": "am-2974-cut-2",
+          "commonMm3": 193.8531783649411
+        },
+        {
+          "moving": "intake candidate vertical stub shaft (1, -146.04999999999998)",
+          "fixed": "am-0255-3",
+          "commonMm3": 5008.876370297836
+        },
+        {
+          "moving": "intake candidate bearing representation (1, -146.04999999999998)48",
+          "fixed": "am-0255-3",
+          "commonMm3": 25.888494185780875
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, -146.04999999999998)48",
+          "fixed": "am-0650-2",
+          "commonMm3": 18.276186472322863
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, -146.04999999999998)48",
+          "fixed": "am-0255-3",
+          "commonMm3": 20.919691060269034
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, -146.04999999999998)48",
+          "fixed": "am-0650-2",
+          "commonMm3": 881.3165063500692
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, 146.04999999999998)-16",
+          "fixed": "original shooter upright 1 279.4",
+          "commonMm3": 201.6419146440376
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 13138.792814728056
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "am-2974-cut-2",
+          "commonMm3": 1698.028120157645
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "original shooter upright 1 279.4",
+          "commonMm3": 1518.4888844312516
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "intake candidate stationary aluminum guide 1",
+          "commonMm3": 1699.7230888472527
+        },
+        {
+          "moving": "intake candidate cradle side pivot 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 5657.4438641909
+        },
+        {
+          "moving": "intake candidate pivot drop bracket 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 6741.33918389308
+        },
+        {
+          "moving": "intake candidate pivot bearing representation 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 3124.6136660233733
+        },
+        {
+          "moving": "intake candidate rotation12T pulley 142.14517313133226",
+          "fixed": "am-3922-1",
+          "commonMm3": 8546.893982315698
+        },
+        {
+          "moving": "intake candidate rotation belt run -12.127606663602423",
+          "fixed": "am-3922-1",
+          "commonMm3": 357.2465764872617
+        },
+        {
+          "moving": "intake candidate rotation belt run 12.127606663602423",
+          "fixed": "am-3922-1",
+          "commonMm3": 357.24657648726173
+        }
+      ]
+    },
+    {
+      "phase": "rotate",
+      "pitchDeg": 60,
+      "centerZ": 157.38227153674845,
+      "hits": [
+        {
+          "moving": "intake candidate side pinch belt -1",
+          "fixed": "am-2974-cut-2",
+          "commonMm3": 253.4612775360343
+        },
+        {
+          "moving": "intake candidate vertical stub shaft (-1, -146.04999999999998)",
+          "fixed": "am-0255-2",
+          "commonMm3": 2534.215755039451
+        },
+        {
+          "moving": "intake candidate bearing carrier (-1, -146.04999999999998)48",
+          "fixed": "am-0650-1",
+          "commonMm3": 18.272351848344577
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, -146.04999999999998)48",
+          "fixed": "am-0650-1",
+          "commonMm3": 773.7601362416037
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, 146.04999999999998)-16",
+          "fixed": "original shooter upright -1 279.4",
+          "commonMm3": 138.2262783365414
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 11621.944553823834
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "am-2974-cut-2",
+          "commonMm3": 1522.0144855750425
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "original shooter upright -1 279.4",
+          "commonMm3": 372.91127236420124
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "intake candidate stationary aluminum guide -1",
+          "commonMm3": 959.4648021818178
+        },
+        {
+          "moving": "intake candidate cradle side pivot -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 2217.5866496701715
+        },
+        {
+          "moving": "intake candidate pivot drop bracket -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 4150.764093753585
+        },
+        {
+          "moving": "intake candidate pivot bearing representation -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 1454.063555708633
+        },
+        {
+          "moving": "intake candidate side pinch belt 1",
+          "fixed": "am-2974-cut-2",
+          "commonMm3": 253.46127753603426
+        },
+        {
+          "moving": "intake candidate vertical stub shaft (1, -146.04999999999998)",
+          "fixed": "am-0255-3",
+          "commonMm3": 2534.215755045442
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, -146.04999999999998)48",
+          "fixed": "am-0650-2",
+          "commonMm3": 18.272351818969717
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, -146.04999999999998)48",
+          "fixed": "am-0650-2",
+          "commonMm3": 773.760136242317
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, 146.04999999999998)-16",
+          "fixed": "original shooter upright 1 279.4",
+          "commonMm3": 138.22627833654033
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 11621.944553856565
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "am-2974-cut-2",
+          "commonMm3": 1522.0144855750398
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "original shooter upright 1 279.4",
+          "commonMm3": 372.9112723642008
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "intake candidate stationary aluminum guide 1",
+          "commonMm3": 959.4648021818149
+        },
+        {
+          "moving": "intake candidate cradle side pivot 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 2217.586649656383
+        },
+        {
+          "moving": "intake candidate pivot drop bracket 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 4150.764093749676
+        },
+        {
+          "moving": "intake candidate pivot bearing representation 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 1454.0635557059181
+        },
+        {
+          "moving": "intake candidate rotation12T pulley 157.38227153674845",
+          "fixed": "am-3922-1",
+          "commonMm3": 3788.8143459548555
+        }
+      ]
+    },
+    {
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZ": 209.62103031506814,
+      "hits": [
+        {
+          "moving": "intake candidate vertical stub shaft (-1, -146.04999999999998)",
+          "fixed": "am-0255-2",
+          "commonMm3": 8922.054738159082
+        },
+        {
+          "moving": "intake candidate bearing representation (-1, -146.04999999999998)48",
+          "fixed": "am-0255-2",
+          "commonMm3": 3035.556324113848
+        },
+        {
+          "moving": "intake candidate bearing carrier (-1, -146.04999999999998)48",
+          "fixed": "am-0650-1",
+          "commonMm3": 18.272351848344577
+        },
+        {
+          "moving": "intake candidate bearing carrier (-1, -146.04999999999998)48",
+          "fixed": "am-0255-2",
+          "commonMm3": 827.3804573297887
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, -146.04999999999998)48",
+          "fixed": "am-0650-1",
+          "commonMm3": 773.7601362416033
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, -146.04999999999998)48",
+          "fixed": "am-0255-2",
+          "commonMm3": 1857.9784860322034
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, 146.04999999999998)-16",
+          "fixed": "original shooter upright -1 279.4",
+          "commonMm3": 138.22627833654147
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 9030.502970280153
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "am-2974-cut-2",
+          "commonMm3": 0.7862929322967811
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "frame fastening adapter-0--1",
+          "commonMm3": 76.79508106553644
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "original shooter upright -1 279.4",
+          "commonMm3": 372.91127236420243
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "intake candidate stationary aluminum guide -1",
+          "commonMm3": 2003.4148245024353
+        },
+        {
+          "moving": "intake candidate vertical stub shaft (1, -146.04999999999998)",
+          "fixed": "am-0255-3",
+          "commonMm3": 8922.054738156445
+        },
+        {
+          "moving": "intake candidate bearing representation (1, -146.04999999999998)48",
+          "fixed": "am-0255-3",
+          "commonMm3": 3035.556324113869
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, -146.04999999999998)48",
+          "fixed": "am-0650-2",
+          "commonMm3": 18.272351818969714
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, -146.04999999999998)48",
+          "fixed": "am-0255-3",
+          "commonMm3": 827.3804573298046
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, -146.04999999999998)48",
+          "fixed": "am-0650-2",
+          "commonMm3": 773.7601362423161
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, -146.04999999999998)48",
+          "fixed": "am-0255-3",
+          "commonMm3": 1857.9784860322327
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, 146.04999999999998)-16",
+          "fixed": "original shooter upright 1 279.4",
+          "commonMm3": 138.22627833654042
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 9030.502970302721
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "am-2974-cut-2",
+          "commonMm3": 0.7862929322967809
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "frame fastening adapter-0-1",
+          "commonMm3": 76.79508106553659
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "original shooter upright 1 279.4",
+          "commonMm3": 372.911272364202
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "intake candidate stationary aluminum guide 1",
+          "commonMm3": 2003.414824502431
+        }
+      ]
+    },
+    {
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZ": 261.85978909338786,
+      "hits": [
+        {
+          "moving": "intake candidate side pinch belt -1",
+          "fixed": "frame fastening bridge-0",
+          "commonMm3": 229.54008159383596
+        },
+        {
+          "moving": "intake candidate 12T track pulley representation (-1, -146.04999999999998)",
+          "fixed": "frame fastening bridge-0",
+          "commonMm3": 88.0323473717374
+        },
+        {
+          "moving": "intake candidate bearing carrier (-1, -146.04999999999998)48",
+          "fixed": "am-0650-1",
+          "commonMm3": 3.9419260841026
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, -146.04999999999998)48",
+          "fixed": "am-0650-1",
+          "commonMm3": 345.1619962093717
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, 146.04999999999998)-16",
+          "fixed": "original shooter upright -1 279.4",
+          "commonMm3": 138.22627833654153
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "am-3922-1",
+          "commonMm3": 3811.6813383799936
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "frame fastening bridge-0",
+          "commonMm3": 1726.5931927063118
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "frame fastening adapter-0--1",
+          "commonMm3": 626.4868321348641
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "frame fastening sleeve-0--1",
+          "commonMm3": 456.36422112043954
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "frame fastening bolt-0--1-tube",
+          "commonMm3": 264.36376293227016
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "frame fastening nut-0--1-tube",
+          "commonMm3": 156.529702015498
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "original shooter upright -1 279.4",
+          "commonMm3": 372.91127236420255
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "intake candidate stationary aluminum guide -1",
+          "commonMm3": 2003.414824502435
+        },
+        {
+          "moving": "intake candidate side pinch belt 1",
+          "fixed": "frame fastening bridge-0",
+          "commonMm3": 229.5400815937821
+        },
+        {
+          "moving": "intake candidate 12T track pulley representation (1, -146.04999999999998)",
+          "fixed": "frame fastening bridge-0",
+          "commonMm3": 88.032346958027
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, -146.04999999999998)48",
+          "fixed": "am-0650-2",
+          "commonMm3": 3.941926084242927
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, -146.04999999999998)48",
+          "fixed": "am-0650-2",
+          "commonMm3": 345.16199620843315
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, 146.04999999999998)-16",
+          "fixed": "original shooter upright 1 279.4",
+          "commonMm3": 138.22627833654042
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "am-3922-2",
+          "commonMm3": 3811.6813383878653
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "frame fastening bridge-0",
+          "commonMm3": 1726.5931927063161
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "frame fastening adapter-0-1",
+          "commonMm3": 626.4868321348634
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "frame fastening sleeve-0-1",
+          "commonMm3": 456.36422246964514
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "frame fastening bolt-0-1-tube",
+          "commonMm3": 264.3637630363079
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "frame fastening nut-0-1-tube",
+          "commonMm3": 156.52970201549707
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "original shooter upright 1 279.4",
+          "commonMm3": 372.91127236420215
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "intake candidate stationary aluminum guide 1",
+          "commonMm3": 2003.4148245024314
+        }
+      ]
+    },
+    {
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZ": 314.0985478717075,
+      "hits": [
+        {
+          "moving": "intake candidate side pinch belt -1",
+          "fixed": "frame fastening bridge-0",
+          "commonMm3": 78.45728698383964
+        },
+        {
+          "moving": "intake candidate 12T track pulley representation (-1, -146.04999999999998)",
+          "fixed": "frame fastening bridge-0",
+          "commonMm3": 114.26998303114462
+        },
+        {
+          "moving": "intake candidate bearing representation (-1, -146.04999999999998)-16",
+          "fixed": "frame fastening bridge-0",
+          "commonMm3": 10.137138167513339
+        },
+        {
+          "moving": "intake candidate bearing carrier (-1, -146.04999999999998)-16",
+          "fixed": "frame fastening bridge-0",
+          "commonMm3": 1.501365910873163
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, 146.04999999999998)-16",
+          "fixed": "original shooter upright -1 279.4",
+          "commonMm3": 138.22627833654084
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "frame fastening bridge-0",
+          "commonMm3": 1658.0943992472803
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "frame fastening sleeve-0--1",
+          "commonMm3": 366.22657623528517
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "frame fastening bolt-0--1-tube",
+          "commonMm3": 102.17892439194021
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "frame fastening head-0--1-tube",
+          "commonMm3": 88.9961754172666
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "original shooter upright -1 279.4",
+          "commonMm3": 372.9112723642019
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "intake candidate stationary aluminum guide -1",
+          "commonMm3": 2003.414824502441
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (-1, 429.0985478717075, -1)",
+          "fixed": "original shooter side rail -1",
+          "commonMm3": 432.8438285578572
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (-1, 429.0985478717075, 1)",
+          "fixed": "original shooter side rail -1",
+          "commonMm3": 449.84695615403007
+        },
+        {
+          "moving": "intake candidate side pinch belt 1",
+          "fixed": "frame fastening bridge-0",
+          "commonMm3": 78.45728705851012
+        },
+        {
+          "moving": "intake candidate 12T track pulley representation (1, -146.04999999999998)",
+          "fixed": "frame fastening bridge-0",
+          "commonMm3": 114.26998294317764
+        },
+        {
+          "moving": "intake candidate bearing representation (1, -146.04999999999998)-16",
+          "fixed": "frame fastening bridge-0",
+          "commonMm3": 10.13713817416468
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, -146.04999999999998)-16",
+          "fixed": "frame fastening bridge-0",
+          "commonMm3": 1.5013659092907716
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, 146.04999999999998)-16",
+          "fixed": "original shooter upright 1 279.4",
+          "commonMm3": 138.22627833653976
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "frame fastening bridge-0",
+          "commonMm3": 1658.0943992472835
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "frame fastening sleeve-0-1",
+          "commonMm3": 366.2265764489018
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "frame fastening bolt-0-1-tube",
+          "commonMm3": 102.17892410086449
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "frame fastening head-0-1-tube",
+          "commonMm3": 88.99617541726435
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "original shooter upright 1 279.4",
+          "commonMm3": 372.9112723642015
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "intake candidate stationary aluminum guide 1",
+          "commonMm3": 2003.4148245024362
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (1, 429.0985478717075, -1)",
+          "fixed": "original shooter side rail 1",
+          "commonMm3": 432.8438285578572
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (1, 429.0985478717075, 1)",
+          "fixed": "original shooter side rail 1",
+          "commonMm3": 449.84695615403007
+        }
+      ]
+    },
+    {
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZ": 366.33730665002724,
+      "hits": [
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, 146.04999999999998)-16",
+          "fixed": "original shooter upright -1 279.4",
+          "commonMm3": 138.22627833654104
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "original shooter upright -1 279.4",
+          "commonMm3": 372.91127236420056
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "intake candidate stationary aluminum guide -1",
+          "commonMm3": 2003.4148245024369
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (-1, 421.33730665002724, -1)",
+          "fixed": "original shooter side rail -1",
+          "commonMm3": 301.5074026556261
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (-1, 421.33730665002724, 1)",
+          "fixed": "original shooter side rail -1",
+          "commonMm3": 13.282883293320461
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (-1, 481.33730665002724, 1)",
+          "fixed": "original shooter side rail -1",
+          "commonMm3": 808.3373451982892
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, 146.04999999999998)-16",
+          "fixed": "original shooter upright 1 279.4",
+          "commonMm3": 138.22627833654
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "original shooter upright 1 279.4",
+          "commonMm3": 372.9112723642001
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "intake candidate stationary aluminum guide 1",
+          "commonMm3": 2003.414824502431
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (1, 421.33730665002724, -1)",
+          "fixed": "original shooter side rail 1",
+          "commonMm3": 301.50740265562615
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (1, 421.33730665002724, 1)",
+          "fixed": "original shooter side rail 1",
+          "commonMm3": 13.282883293320461
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (1, 481.33730665002724, 1)",
+          "fixed": "original shooter side rail 1",
+          "commonMm3": 808.3373451982892
+        }
+      ]
+    },
+    {
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZ": 418.57606542834696,
+      "hits": [
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, 146.04999999999998)-16",
+          "fixed": "original shooter upright -1 279.4",
+          "commonMm3": 138.22627833653956
+        },
+        {
+          "moving": "intake candidate pinch transfer belt -1",
+          "fixed": "original shooter side rail -1",
+          "commonMm3": 513.5082893809902
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "original shooter upright -1 279.4",
+          "commonMm3": 372.9112723642005
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "intake candidate stationary aluminum guide -1",
+          "commonMm3": 2003.4148245024267
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (-1, 473.57606542834696, 1)",
+          "fixed": "original shooter side rail -1",
+          "commonMm3": 539.7659941654406
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, 146.04999999999998)-16",
+          "fixed": "original shooter upright 1 279.4",
+          "commonMm3": 138.22627833653848
+        },
+        {
+          "moving": "intake candidate pinch transfer belt 1",
+          "fixed": "original shooter side rail 1",
+          "commonMm3": 513.5082893809875
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "original shooter upright 1 279.4",
+          "commonMm3": 372.91127236420016
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "intake candidate stationary aluminum guide 1",
+          "commonMm3": 2003.4148245024226
+        },
+        {
+          "moving": "intake candidate UHMW slide pad (1, 473.57606542834696, 1)",
+          "fixed": "original shooter side rail 1",
+          "commonMm3": 539.7659941654409
+        }
+      ]
+    },
+    {
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZ": 470.8148242066667,
+      "hits": [
+        {
+          "moving": "intake candidate side pinch belt -1",
+          "fixed": "original carrier connection web -1 -1",
+          "commonMm3": 114.17889596692916
+        },
+        {
+          "moving": "intake candidate side pinch belt -1",
+          "fixed": "cartridge -1 -152.4 drilled bearing carrier -40",
+          "commonMm3": 89.3390414181485
+        },
+        {
+          "moving": "intake candidate 12T track pulley representation (-1, 146.04999999999998)",
+          "fixed": "original carrier connection web -1 -1",
+          "commonMm3": 203.11946109771148
+        },
+        {
+          "moving": "intake candidate 12T track pulley representation (-1, 146.04999999999998)",
+          "fixed": "cartridge -1 -152.4 drilled bearing carrier -40",
+          "commonMm3": 217.2390693679282
+        },
+        {
+          "moving": "intake candidate bearing representation (-1, 146.04999999999998)-16",
+          "fixed": "original carrier connection web -1 -1",
+          "commonMm3": 121.86636877179728
+        },
+        {
+          "moving": "intake candidate bearing representation (-1, 146.04999999999998)-16",
+          "fixed": "cartridge -1 -152.4 drilled bearing carrier -40",
+          "commonMm3": 98.69449928877526
+        },
+        {
+          "moving": "intake candidate bearing carrier (-1, 146.04999999999998)-16",
+          "fixed": "original carrier connection web -1 -1",
+          "commonMm3": 109.74848948117445
+        },
+        {
+          "moving": "intake candidate bearing carrier (-1, 146.04999999999998)-16",
+          "fixed": "cartridge -1 -152.4 drilled bearing carrier -40",
+          "commonMm3": 39.403989329589606
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, 146.04999999999998)-16",
+          "fixed": "original shooter upright -1 279.4",
+          "commonMm3": 138.22627833654016
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, 146.04999999999998)-16",
+          "fixed": "original carrier connection web -1 -1",
+          "commonMm3": 129.65057919003073
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, 146.04999999999998)-16",
+          "fixed": "cartridge -1 -152.4 drilled bearing carrier -40",
+          "commonMm3": 15.824722303828942
+        },
+        {
+          "moving": "intake candidate bearing representation (-1, 146.04999999999998)48",
+          "fixed": "original carrier connection web -1 -1",
+          "commonMm3": 121.86636877179731
+        },
+        {
+          "moving": "intake candidate bearing representation (-1, 146.04999999999998)48",
+          "fixed": "original carrier connection web -1 1",
+          "commonMm3": 40.517999322491534
+        },
+        {
+          "moving": "intake candidate bearing carrier (-1, 146.04999999999998)48",
+          "fixed": "original carrier connection web -1 -1",
+          "commonMm3": 109.74848948117477
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, 146.04999999999998)48",
+          "fixed": "original shooter side rail -1",
+          "commonMm3": 201.61249999999956
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, 146.04999999999998)48",
+          "fixed": "original carrier connection web -1 -1",
+          "commonMm3": 129.65057919003314
+        },
+        {
+          "moving": "intake candidate pinch transfer pulley (-1, -188.92760666360243)",
+          "fixed": "original carrier connection web -1 1",
+          "commonMm3": 203.11946109771043
+        },
+        {
+          "moving": "intake candidate pinch transfer belt -1",
+          "fixed": "original shooter side rail -1",
+          "commonMm3": 130.9378965373955
+        },
+        {
+          "moving": "intake candidate pinch transfer belt -1",
+          "fixed": "original carrier connection web -1 1",
+          "commonMm3": 879.1575000000053
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "original shooter upright -1 279.4",
+          "commonMm3": 372.9112723641985
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "original carrier connection web -1 -1",
+          "commonMm3": 1242.9410624999803
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "intake candidate stationary aluminum guide -1",
+          "commonMm3": 2003.4148245024228
+        },
+        {
+          "moving": "intake candidate side pinch belt 1",
+          "fixed": "original carrier connection web 1 -1",
+          "commonMm3": 198.71689835611326
+        },
+        {
+          "moving": "intake candidate side pinch belt 1",
+          "fixed": "cartridge -1 152.4 drilled bearing carrier 40",
+          "commonMm3": 81.90547016554979
+        },
+        {
+          "moving": "intake candidate 12T track pulley representation (1, 146.04999999999998)",
+          "fixed": "original carrier connection web 1 -1",
+          "commonMm3": 453.0690600287484
+        },
+        {
+          "moving": "intake candidate 12T track pulley representation (1, 146.04999999999998)",
+          "fixed": "cartridge -1 152.4 drilled bearing carrier 40",
+          "commonMm3": 269.7621115132686
+        },
+        {
+          "moving": "intake candidate 12T track pulley representation (1, 146.04999999999998)",
+          "fixed": "cartridge -1 152.4 slotted carrier bridge proposal",
+          "commonMm3": 0.006745637487369645
+        },
+        {
+          "moving": "intake candidate bearing representation (1, 146.04999999999998)-16",
+          "fixed": "original carrier connection web 1 -1",
+          "commonMm3": 230.66937635193545
+        },
+        {
+          "moving": "intake candidate bearing representation (1, 146.04999999999998)-16",
+          "fixed": "cartridge -1 152.4 drilled bearing carrier 40",
+          "commonMm3": 114.96331159160998
+        },
+        {
+          "moving": "intake candidate bearing representation (1, 146.04999999999998)-16",
+          "fixed": "cartridge -1 152.4 slotted carrier bridge proposal",
+          "commonMm3": 8.465422051755784
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, 146.04999999999998)-16",
+          "fixed": "original carrier connection web 1 -1",
+          "commonMm3": 119.2287152893748
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, 146.04999999999998)-16",
+          "fixed": "cartridge -1 152.4 drilled bearing carrier 40",
+          "commonMm3": 37.62362165075517
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, 146.04999999999998)-16",
+          "fixed": "cartridge -1 152.4 slotted carrier bridge proposal",
+          "commonMm3": 48.50246713658967
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, 146.04999999999998)-16",
+          "fixed": "original shooter upright 1 279.4",
+          "commonMm3": 138.22627833653908
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, 146.04999999999998)-16",
+          "fixed": "original carrier connection web 1 -1",
+          "commonMm3": 145.47530149385963
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, 146.04999999999998)-16",
+          "fixed": "cartridge -1 152.4 drilled bearing carrier 40",
+          "commonMm3": 15.82472230382894
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, 146.04999999999998)-16",
+          "fixed": "cartridge -1 152.4 slotted carrier bridge proposal",
+          "commonMm3": 15.82472230382894
+        },
+        {
+          "moving": "intake candidate bearing representation (1, 146.04999999999998)48",
+          "fixed": "original carrier connection web 1 -1",
+          "commonMm3": 230.6693763519353
+        },
+        {
+          "moving": "intake candidate bearing representation (1, 146.04999999999998)48",
+          "fixed": "original carrier connection web 1 1",
+          "commonMm3": 76.69270635484854
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, 146.04999999999998)48",
+          "fixed": "original carrier connection web 1 -1",
+          "commonMm3": 119.2287152893754
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, 146.04999999999998)48",
+          "fixed": "original shooter side rail 1",
+          "commonMm3": 201.61249999999956
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, 146.04999999999998)48",
+          "fixed": "original carrier connection web 1 -1",
+          "commonMm3": 145.47530149386233
+        },
+        {
+          "moving": "intake candidate pinch transfer pulley (1, 188.92760666360243)",
+          "fixed": "original carrier connection web 1 1",
+          "commonMm3": 453.06906002874695
+        },
+        {
+          "moving": "intake candidate pinch transfer belt 1",
+          "fixed": "original shooter side rail 1",
+          "commonMm3": 130.93789653739583
+        },
+        {
+          "moving": "intake candidate pinch transfer belt 1",
+          "fixed": "original carrier connection web 1 1",
+          "commonMm3": 959.8024999999982
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "original shooter upright 1 279.4",
+          "commonMm3": 372.911272364198
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "original carrier connection web 1 -1",
+          "commonMm3": 1242.9410624999819
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "intake candidate stationary aluminum guide 1",
+          "commonMm3": 2003.414824502417
+        },
+        {
+          "moving": "intake candidate rotation12T pulley 559.7148242066667",
+          "fixed": "original shooter side rail -1",
+          "commonMm3": 2266.1401262600148
+        },
+        {
+          "moving": "intake candidate rotation belt run -12.127606663602423",
+          "fixed": "original shooter side rail -1",
+          "commonMm3": 316.0910192466935
+        }
+      ]
+    },
+    {
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZ": 523.0535829849864,
+      "hits": [
+        {
+          "moving": "intake candidate side pinch belt -1",
+          "fixed": "original carrier connection web -1 -1",
+          "commonMm3": 161.29000000000042
+        },
+        {
+          "moving": "intake candidate side pinch belt -1",
+          "fixed": "cartridge -1 -152.4 drilled bearing carrier -40",
+          "commonMm3": 5.693636446372601
+        },
+        {
+          "moving": "intake candidate vertical stub shaft (-1, 146.04999999999998)",
+          "fixed": "cartridge -1 -152.4 drilled bearing carrier -40",
+          "commonMm3": 383.8342421918387
+        },
+        {
+          "moving": "intake candidate vertical stub shaft (-1, 146.04999999999998)",
+          "fixed": "cartridge 1 -152.4 shaft round envelope (hex omitted)",
+          "commonMm3": 972.3439233194101
+        },
+        {
+          "moving": "intake candidate vertical stub shaft (-1, 146.04999999999998)",
+          "fixed": "cartridge 1 -152.4 drilled bearing carrier -40",
+          "commonMm3": 692.5000358580089
+        },
+        {
+          "moving": "intake candidate vertical stub shaft (-1, 146.04999999999998)",
+          "fixed": "cartridge 1 -152.4 bearing envelope -40",
+          "commonMm3": 438.2218716563701
+        },
+        {
+          "moving": "intake candidate 12T track pulley representation (-1, 146.04999999999998)",
+          "fixed": "cartridge -1 -152.4 drilled bearing carrier -40",
+          "commonMm3": 185.34965249459876
+        },
+        {
+          "moving": "intake candidate bearing representation (-1, 146.04999999999998)-16",
+          "fixed": "cartridge -1 -152.4 drilled bearing carrier -40",
+          "commonMm3": 355.4548795179736
+        },
+        {
+          "moving": "intake candidate bearing carrier (-1, 146.04999999999998)-16",
+          "fixed": "cartridge -1 -152.4 drilled bearing carrier -40",
+          "commonMm3": 78.80797865917808
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, 146.04999999999998)-16",
+          "fixed": "original shooter upright -1 279.4",
+          "commonMm3": 138.22627833653956
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, 146.04999999999998)-16",
+          "fixed": "cartridge -1 -152.4 drilled bearing carrier -40",
+          "commonMm3": 160.6724533666471
+        },
+        {
+          "moving": "intake candidate pinch transfer pulley (-1, -188.92760666360243)",
+          "fixed": "cartridge 1 -152.4 drilled bearing carrier -40",
+          "commonMm3": 895.6371453606499
+        },
+        {
+          "moving": "intake candidate pinch transfer belt -1",
+          "fixed": "cartridge 1 -152.4 drilled bearing carrier -40",
+          "commonMm3": 161.29000000000175
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "original shooter upright -1 279.4",
+          "commonMm3": 372.91127236420084
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "original carrier connection web -1 -1",
+          "commonMm3": 1242.9410625000144
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "intake candidate stationary aluminum guide -1",
+          "commonMm3": 2003.4148245024278
+        },
+        {
+          "moving": "intake candidate side pinch belt 1",
+          "fixed": "original carrier connection web 1 -1",
+          "commonMm3": 161.29000000000013
+        },
+        {
+          "moving": "intake candidate side pinch belt 1",
+          "fixed": "cartridge -1 152.4 drilled bearing carrier 40",
+          "commonMm3": 5.219890013248833
+        },
+        {
+          "moving": "intake candidate side pinch belt 1",
+          "fixed": "cartridge -1 152.4 slotted carrier bridge proposal",
+          "commonMm3": 71.14224276649603
+        },
+        {
+          "moving": "intake candidate vertical stub shaft (1, 146.04999999999998)",
+          "fixed": "cartridge -1 152.4 drilled bearing carrier 40",
+          "commonMm3": 571.7286831633728
+        },
+        {
+          "moving": "intake candidate vertical stub shaft (1, 146.04999999999998)",
+          "fixed": "cartridge 1 152.4 shaft round envelope (hex omitted)",
+          "commonMm3": 972.3439232387595
+        },
+        {
+          "moving": "intake candidate vertical stub shaft (1, 146.04999999999998)",
+          "fixed": "cartridge 1 152.4 drilled bearing carrier 40",
+          "commonMm3": 1043.8181255220798
+        },
+        {
+          "moving": "intake candidate vertical stub shaft (1, 146.04999999999998)",
+          "fixed": "cartridge 1 152.4 bearing envelope 40",
+          "commonMm3": 746.4642084705744
+        },
+        {
+          "moving": "intake candidate vertical stub shaft (1, 146.04999999999998)",
+          "fixed": "cartridge 1 152.4 collar envelope 47.14375",
+          "commonMm3": 31.93396065300599
+        },
+        {
+          "moving": "intake candidate 12T track pulley representation (1, 146.04999999999998)",
+          "fixed": "cartridge -1 152.4 drilled bearing carrier 40",
+          "commonMm3": 155.4992315568034
+        },
+        {
+          "moving": "intake candidate 12T track pulley representation (1, 146.04999999999998)",
+          "fixed": "cartridge -1 152.4 slotted carrier bridge proposal",
+          "commonMm3": 135.87433238245842
+        },
+        {
+          "moving": "intake candidate bearing representation (1, 146.04999999999998)-16",
+          "fixed": "cartridge -1 152.4 drilled bearing carrier 40",
+          "commonMm3": 306.0625892506843
+        },
+        {
+          "moving": "intake candidate bearing representation (1, 146.04999999999998)-16",
+          "fixed": "cartridge -1 152.4 slotted carrier bridge proposal",
+          "commonMm3": 327.1271970053017
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, 146.04999999999998)-16",
+          "fixed": "cartridge -1 152.4 drilled bearing carrier 40",
+          "commonMm3": 75.24724330150923
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, 146.04999999999998)-16",
+          "fixed": "cartridge -1 152.4 slotted carrier bridge proposal",
+          "commonMm3": 111.59359108601258
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, 146.04999999999998)-16",
+          "fixed": "original shooter upright 1 279.4",
+          "commonMm3": 138.22627833653848
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, 146.04999999999998)-16",
+          "fixed": "cartridge -1 152.4 drilled bearing carrier 40",
+          "commonMm3": 160.6724533666471
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, 146.04999999999998)-16",
+          "fixed": "cartridge -1 152.4 slotted carrier bridge proposal",
+          "commonMm3": 201.61249999999887
+        },
+        {
+          "moving": "intake candidate pinch transfer pulley (1, 188.92760666360243)",
+          "fixed": "cartridge 1 152.4 drilled bearing carrier 40",
+          "commonMm3": 763.6685071291585
+        },
+        {
+          "moving": "intake candidate pinch transfer pulley (1, 188.92760666360243)",
+          "fixed": "cartridge 1 152.4 slotted carrier bridge proposal",
+          "commonMm3": 631.1271987761712
+        },
+        {
+          "moving": "intake candidate pinch transfer belt 1",
+          "fixed": "cartridge 1 152.4 drilled bearing carrier 40",
+          "commonMm3": 161.29000000000178
+        },
+        {
+          "moving": "intake candidate pinch transfer belt 1",
+          "fixed": "cartridge 1 152.4 slotted carrier bridge proposal",
+          "commonMm3": 161.29000000000073
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "original shooter upright 1 279.4",
+          "commonMm3": 372.91127236420044
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "original carrier connection web 1 -1",
+          "commonMm3": 1242.941062500016
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "intake candidate stationary aluminum guide 1",
+          "commonMm3": 2003.4148245024237
+        },
+        {
+          "moving": "intake candidate rotation12T pulley 611.9535829849864",
+          "fixed": "original shooter side rail -1",
+          "commonMm3": 1272.058001170195
+        },
+        {
+          "moving": "intake candidate rotation belt run -12.127606663602423",
+          "fixed": "original shooter side rail -1",
+          "commonMm3": 563.2449999999886
+        },
+        {
+          "moving": "intake candidate rotation belt run 12.127606663602423",
+          "fixed": "original shooter side rail -1",
+          "commonMm3": 381.0356248612851
+        }
+      ]
+    },
+    {
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZ": 575.2923417633061,
+      "hits": [
+        {
+          "moving": "intake candidate side pinch belt -1",
+          "fixed": "original carrier connection web -1 -1",
+          "commonMm3": 120.96750058251456
+        },
+        {
+          "moving": "intake candidate side pinch belt -1",
+          "fixed": "original carrier connection web -1 1",
+          "commonMm3": 120.96749941748654
+        },
+        {
+          "moving": "intake candidate vertical stub shaft (-1, 146.04999999999998)",
+          "fixed": "cartridge 1 -152.4 drilled bearing carrier -40",
+          "commonMm3": 515.5502729416486
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, 146.04999999999998)-16",
+          "fixed": "original shooter upright -1 279.4",
+          "commonMm3": 138.22627833654104
+        },
+        {
+          "moving": "intake candidate bearing representation (-1, 146.04999999999998)48",
+          "fixed": "cartridge 1 -152.4 drilled bearing carrier -40",
+          "commonMm3": 179.42321509716865
+        },
+        {
+          "moving": "intake candidate bearing carrier (-1, 146.04999999999998)48",
+          "fixed": "cartridge 1 -152.4 drilled bearing carrier -40",
+          "commonMm3": 39.4039893295898
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (-1, 146.04999999999998)48",
+          "fixed": "cartridge 1 -152.4 drilled bearing carrier -40",
+          "commonMm3": 80.14096955085053
+        },
+        {
+          "moving": "intake candidate pinch transfer pulley (-1, -188.92760666360243)",
+          "fixed": "cartridge 1 -152.4 drilled bearing carrier -40",
+          "commonMm3": 454.9044087078389
+        },
+        {
+          "moving": "intake candidate pinch transfer belt -1",
+          "fixed": "cartridge 1 -152.4 drilled bearing carrier -40",
+          "commonMm3": 80.64500000000139
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "original shooter side rail -1",
+          "commonMm3": 35423.09399152483
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "original shooter upright -1 279.4",
+          "commonMm3": 372.9112723642005
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "original carrier connection web -1 -1",
+          "commonMm3": 685.482500924736
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "original carrier connection web -1 1",
+          "commonMm3": 685.4824990752553
+        },
+        {
+          "moving": "intake candidate cradle side stock -1",
+          "fixed": "intake candidate stationary aluminum guide -1",
+          "commonMm3": 2003.4148245024326
+        },
+        {
+          "moving": "intake candidate cradle side pivot -1",
+          "fixed": "original shooter side rail -1",
+          "commonMm3": 471.4536553487746
+        },
+        {
+          "moving": "intake candidate side pinch belt 1",
+          "fixed": "original carrier connection web 1 -1",
+          "commonMm3": 120.96750058251448
+        },
+        {
+          "moving": "intake candidate side pinch belt 1",
+          "fixed": "original carrier connection web 1 1",
+          "commonMm3": 120.96749941748638
+        },
+        {
+          "moving": "intake candidate vertical stub shaft (1, 146.04999999999998)",
+          "fixed": "cartridge 1 152.4 drilled bearing carrier 40",
+          "commonMm3": 974.6738124478867
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, 146.04999999999998)-16",
+          "fixed": "original shooter upright 1 279.4",
+          "commonMm3": 138.22627833654
+        },
+        {
+          "moving": "intake candidate bearing representation (1, 146.04999999999998)48",
+          "fixed": "cartridge 1 152.4 drilled bearing carrier 40",
+          "commonMm3": 153.03129462534196
+        },
+        {
+          "moving": "intake candidate bearing representation (1, 146.04999999999998)48",
+          "fixed": "cartridge 1 152.4 drilled motor slider",
+          "commonMm3": 13.713543472865819
+        },
+        {
+          "moving": "intake candidate bearing representation (1, 146.04999999999998)48",
+          "fixed": "cartridge 1 152.4 slotted carrier bridge proposal",
+          "commonMm3": 327.1271970053017
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, 146.04999999999998)48",
+          "fixed": "cartridge 1 152.4 drilled bearing carrier 40",
+          "commonMm3": 37.623621650755354
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, 146.04999999999998)48",
+          "fixed": "cartridge 1 152.4 drilled motor slider",
+          "commonMm3": 43.21103251671423
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, 146.04999999999998)48",
+          "fixed": "cartridge 1 152.4 slotted carrier bridge proposal",
+          "commonMm3": 111.59359108601463
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, 146.04999999999998)48",
+          "fixed": "cartridge 1 152.4 slider clamp screw nominal (-28, -28)",
+          "commonMm3": 0.03935075535015811
+        },
+        {
+          "moving": "intake candidate bearing carrier (1, 146.04999999999998)48",
+          "fixed": "cartridge 1 152.4 slider clamp head nominal (-28, -28)",
+          "commonMm3": 32.24305409302866
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, 146.04999999999998)48",
+          "fixed": "cartridge 1 152.4 drilled bearing carrier 40",
+          "commonMm3": 80.14096955085053
+        },
+        {
+          "moving": "intake candidate bearing carrier outboard tie (1, 146.04999999999998)48",
+          "fixed": "cartridge 1 152.4 slotted carrier bridge proposal",
+          "commonMm3": 201.61250000000015
+        },
+        {
+          "moving": "intake candidate pinch transfer pulley (1, 188.92760666360243)",
+          "fixed": "cartridge 1 152.4 drilled bearing carrier 40",
+          "commonMm3": 381.8342535645762
+        },
+        {
+          "moving": "intake candidate pinch transfer pulley (1, 188.92760666360243)",
+          "fixed": "cartridge 1 152.4 drilled motor slider",
+          "commonMm3": 1.760920114779742
+        },
+        {
+          "moving": "intake candidate pinch transfer pulley (1, 188.92760666360243)",
+          "fixed": "cartridge 1 152.4 slotted carrier bridge proposal",
+          "commonMm3": 667.2891404597797
+        },
+        {
+          "moving": "intake candidate pinch transfer pulley (1, 188.92760666360243)",
+          "fixed": "cartridge 1 152.4 bridge spacer 25.4",
+          "commonMm3": 1.0141484587675422
+        },
+        {
+          "moving": "intake candidate pinch transfer belt 1",
+          "fixed": "cartridge 1 152.4 drilled bearing carrier 40",
+          "commonMm3": 80.64500000000169
+        },
+        {
+          "moving": "intake candidate pinch transfer belt 1",
+          "fixed": "cartridge 1 152.4 drilled motor slider",
+          "commonMm3": 80.64500000000031
+        },
+        {
+          "moving": "intake candidate pinch transfer belt 1",
+          "fixed": "cartridge 1 152.4 slotted carrier bridge proposal",
+          "commonMm3": 161.29000000000158
+        },
+        {
+          "moving": "intake candidate pinch transfer belt 1",
+          "fixed": "cartridge 1 152.4 bridge spacer 25.4",
+          "commonMm3": 24.62307635338953
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "original shooter side rail 1",
+          "commonMm3": 35423.09399152482
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "original shooter upright 1 279.4",
+          "commonMm3": 372.91127236420004
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "original carrier connection web 1 -1",
+          "commonMm3": 685.4825009247376
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "original carrier connection web 1 1",
+          "commonMm3": 685.4824990752567
+        },
+        {
+          "moving": "intake candidate cradle side stock 1",
+          "fixed": "intake candidate stationary aluminum guide 1",
+          "commonMm3": 2003.4148245024285
+        },
+        {
+          "moving": "intake candidate cradle side pivot 1",
+          "fixed": "original shooter side rail 1",
+          "commonMm3": 471.45365534877453
+        },
+        {
+          "moving": "intake candidate rotation12T pulley 575.2923417633061",
+          "fixed": "original shooter side rail -1",
+          "commonMm3": 2784.5466283761916
+        },
+        {
+          "moving": "intake candidate rotation12T pulley 664.1923417633061",
+          "fixed": "original carrier connection web -1 1",
+          "commonMm3": 306.9745692102698
+        },
+        {
+          "moving": "intake candidate rotation belt run -12.127606663602423",
+          "fixed": "original shooter side rail -1",
+          "commonMm3": 111.1775401569566
+        },
+        {
+          "moving": "intake candidate rotation belt run 12.127606663602423",
+          "fixed": "original shooter side rail -1",
+          "commonMm3": 452.06746448481476
+        }
+      ]
+    }
+  ],
+  "acceptance": false,
+  "limits": [
+    "Finite15pose screen, not continuous sweep",
+    "Moving-vs-moving internal joints not covered",
+    "Envelope collisions require exact component review; no intentional-pair exemptions suppress results"
+  ]
+}

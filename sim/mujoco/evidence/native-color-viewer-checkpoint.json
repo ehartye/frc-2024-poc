@@ -1,0 +1,319 @@
+{
+  "schema": "native-color-viewer-checkpoint/1",
+  "season": 2024,
+  "date": "2026-11-17",
+  "scope": "Visual export and bounded drivetrain verification only; no validated intake, mechanism dynamics, launch, scoring or complete robot acceptance.",
+  "sourceBodies": 732,
+  "excludedBodies": 13,
+  "renderedMeshes": 8,
+  "nativeVerification": {
+    "runtimeInputPins": {
+      "audit/fusion_visual_provenance.py": "79841dba44301b102b26f28700b5d7e5eb9ae85ea1471d892c094d10315fdd88",
+      "audit/fusion_visual_display.py": "057b824dfbdfb314f0fd54dbc154c0a57887cbbdec7a6f6bce16abf321678768",
+      "audit/fusion_visual_drive.py": "f17ecf3507ab8824c3ba02be1793626202308b264bd2d984c1c61af56673c152",
+      "audit/verify_fusion_visual_display.py": "2b8ad4bc17afee8c539ea2092200a4936000ac7034714652ba0deee802be169c",
+      "audit/native_drive_interactive_v3.py": "4a53874423a932e9a182994c370bdf27ff5ba9a4ac0e83f5d9c20388021e9175",
+      "audit/native_drive_interactive.py": "0fef781f655c5ebb66d6b88bc4fcf3065b48f34b070ca196b1769ccbf25e202b",
+      "audit/native_drive.py": "af1a0e679ac7e4db8d9d8b82b02623f2eb9f352fca87bab3daad37c1311a4343",
+      "audit/drivetrain_bridge.py": "bc5c47c3881bfd835516b0e31ac3b80e0f7d562a357806c7cba0a0b38f5fee7a",
+      "audit/requirements-lock.txt": "ae8bbe85c745e97c3a393545aa9ef1eda9bbe52d20f987a57ba1e945793f371d",
+      "robot/sim/drivetrain/config.json": "334a7d02b4968401a10fb829ae838edfbeb7d9a311c13f3e2cbcc47b54748ff4",
+      "robot/sim/drivetrain/plant.py": "3d30f7df18abf6c24cc5c949a308246bb275bea57242128916cee627da561155",
+      "robot/cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749"
+    },
+    "environment": {
+      "mujoco": "4.0.1",
+      "numpy": "2.5.5"
+    },
+    "registrationScope": "Internal mesh-frame checks using the shared poses() helper; not independent Fusion mechanism-pose agreement",
+    "sourceFusionSha256": "24de65755a396d1e371112c65eb9a44a32884c122bf1e4387fd172645ea45423",
+    "manifestSha256": "05f8faac0fc1e3554c801c5a83d4dc4b3bdd3fb9a356e9a5a9e0c92a8f04d767",
+    "meshHashes": {
+      "fixed-structure": "f3e9471b307474f4ed00d5390ff3c872df45f60538205b7c4bd40a4432789db7",
+      "fixed-mechanism": "006aa8881247bd8c7fb768cddfd94f2695ecf6c0f1a7e9cf8b7eeafc13da26ee",
+      "fixed-reserved-space": "a585c80546a66eabd66024831d1b42ddd57cebed0e7448e65526fda32d2176a3",
+      "fixed-electrical": "cef35a16496e8271cdaf0fe68831a0f10bc666bef52e4f64dd8c24e337eef92c",
+      "cradle-mechanism": "52b226090672004cf35d3369a651e51075ffd5a735b30dc35491cc6932cd81ac",
+      "carriage-mechanism": "52f3bb2909f904855c12697550b8b5bca19f203d4f4395eb1f12cf1ae482d9ac",
+      "fixed-number": "fdf87f10a5b03d06da239ea89aceaa637847498510d375c0a1f6a5faab08111a",
+      "fixed-bumper": "0e6bd9d2dd14781aea2ab98fcb20273f854a07a6bada150f4e9fdcaab7e66c8c"
+    },
+    "triangles": 57988,
+    "displayDofs": 0,
+    "displayCollisionEnabled": false,
+    "physicalThirtyTickRowsExactlyEqual": true,
+    "registrationChecks": [
+      {
+        "pose": "floor",
+        "group": "fixed",
+        "mesh": "fixed-structure",
+        "maxBoundsErrorM": 2.232157791937084e-08
+      },
+      {
+        "pose": "floor",
+        "group": "fixed",
+        "mesh": "fixed-mechanism",
+        "maxBoundsErrorM": 1.8666143075662944e-08
+      },
+      {
+        "pose": "floor",
+        "group": "fixed",
+        "mesh": "fixed-reserved-space",
+        "maxBoundsErrorM": 4.319330094981755e-09
+      },
+      {
+        "pose": "floor",
+        "group": "fixed",
+        "mesh": "fixed-electrical",
+        "maxBoundsErrorM": 3.5503773254674797e-09
+      },
+      {
+        "pose": "floor",
+        "group": "cradle",
+        "mesh": "cradle-mechanism",
+        "maxBoundsErrorM": 6.6864411230049825e-09
+      },
+      {
+        "pose": "floor",
+        "group": "carriage",
+        "mesh": "carriage-mechanism",
+        "maxBoundsErrorM": 9.937253853120609e-09
+      },
+      {
+        "pose": "floor",
+        "group": "fixed",
+        "mesh": "fixed-number",
+        "maxBoundsErrorM": 1.2814538430383493e-08
+      },
+      {
+        "pose": "floor",
+        "group": "fixed",
+        "mesh": "fixed-bumper",
+        "maxBoundsErrorM": 5.156417737239849e-09
+      },
+      {
+        "pose": "rotated",
+        "group": "fixed",
+        "mesh": "fixed-structure",
+        "maxBoundsErrorM": 2.232157791937084e-08
+      },
+      {
+        "pose": "rotated",
+        "group": "fixed",
+        "mesh": "fixed-mechanism",
+        "maxBoundsErrorM": 1.8666143075662944e-08
+      },
+      {
+        "pose": "rotated",
+        "group": "fixed",
+        "mesh": "fixed-reserved-space",
+        "maxBoundsErrorM": 4.319330094981755e-09
+      },
+      {
+        "pose": "rotated",
+        "group": "fixed",
+        "mesh": "fixed-electrical",
+        "maxBoundsErrorM": 3.5503773254674797e-09
+      },
+      {
+        "pose": "rotated",
+        "group": "cradle",
+        "mesh": "cradle-mechanism",
+        "maxBoundsErrorM": 6.2271725276286105e-09
+      },
+      {
+        "pose": "rotated",
+        "group": "carriage",
+        "mesh": "carriage-mechanism",
+        "maxBoundsErrorM": 9.937253853120609e-09
+      },
+      {
+        "pose": "rotated",
+        "group": "fixed",
+        "mesh": "fixed-number",
+        "maxBoundsErrorM": 1.2814538430383493e-08
+      },
+      {
+        "pose": "rotated",
+        "group": "fixed",
+        "mesh": "fixed-bumper",
+        "maxBoundsErrorM": 5.156417737239849e-09
+      },
+      {
+        "pose": "handoff",
+        "group": "fixed",
+        "mesh": "fixed-structure",
+        "maxBoundsErrorM": 2.232157791937084e-08
+      },
+      {
+        "pose": "handoff",
+        "group": "fixed",
+        "mesh": "fixed-mechanism",
+        "maxBoundsErrorM": 1.8666143075662944e-08
+      },
+      {
+        "pose": "handoff",
+        "group": "fixed",
+        "mesh": "fixed-reserved-space",
+        "maxBoundsErrorM": 4.319330094981755e-09
+      },
+      {
+        "pose": "handoff",
+        "group": "fixed",
+        "mesh": "fixed-electrical",
+        "maxBoundsErrorM": 3.5503773254674797e-09
+      },
+      {
+        "pose": "handoff",
+        "group": "cradle",
+        "mesh": "cradle-mechanism",
+        "maxBoundsErrorM": 6.2271725276286105e-09
+      },
+      {
+        "pose": "handoff",
+        "group": "carriage",
+        "mesh": "carriage-mechanism",
+        "maxBoundsErrorM": 9.937253853120609e-09
+      },
+      {
+        "pose": "handoff",
+        "group": "fixed",
+        "mesh": "fixed-number",
+        "maxBoundsErrorM": 1.2814538430383493e-08
+      },
+      {
+        "pose": "handoff",
+        "group": "fixed",
+        "mesh": "fixed-bumper",
+        "maxBoundsErrorM": 5.156417737239849e-09
+      }
+    ]
+  },
+  "legacyVerification": {
+    "manifestSha256": "11e04076963653fd405e51ab205d71116adac40958d47603d9cc85a0936f35aa",
+    "physicalThirtyTickRowsExactlyEqual": true,
+    "registrationCheckCount": 9
+  },
+  "automatedTests": {
+    "focusedTestsPassed": 28,
+    "visualLoaderAndDisplayTestsPassed": 12
+  },
+  "beforeShortcutFix": {
+    "operator": "assistant and user",
+    "traceSha256": "014c71429d96046ca1bfaa7532fa58dbc1a0fe4ad3f5f3ab9403b17515c1dd83",
+    "runtimeInputPins": {
+      "audit/fusion_visual_provenance.py": "79841dba44301b102b26f28700b5d7e5eb9ae85ea1471d892c094d10315fdd88",
+      "audit/fusion_visual_display.py": "057b824dfbdfb314f0fd54dbc154c0a57887cbbdec7a6f6bce16abf321678768",
+      "audit/fusion_visual_drive.py": "eab67b2235cf9d7e4dec3cb1ff523814c3b0686b887c0912ffffeb80c6a9a500",
+      "audit/verify_fusion_visual_display.py": "2b8ad4bc17afee8c539ea2092200a4936000ac7034714652ba0deee802be169c",
+      "audit/native_drive_interactive_v3.py": "4a53874423a932e9a182994c370bdf27ff5ba9a4ac0e83f5d9c20388021e9175",
+      "audit/native_drive_interactive.py": "0fef781f655c5ebb66d6b88bc4fcf3065b48f34b070ca196b1769ccbf25e202b",
+      "audit/native_drive.py": "af1a0e679ac7e4db8d9d8b82b02623f2eb9f352fca87bab3daad37c1311a4343",
+      "audit/drivetrain_bridge.py": "bc5c47c3881bfd835516b0e31ac3b80e0f7d562a357806c7cba0a0b38f5fee7a",
+      "audit/requirements-lock.txt": "ae8bbe85c745e97c3a393545aa9ef1eda9bbe52d20f987a57ba1e945793f371d",
+      "robot/sim/drivetrain/config.json": "334a7d02b4968401a10fb829ae838edfbeb7d9a311c13f3e2cbcc47b54748ff4",
+      "robot/sim/drivetrain/plant.py": "3d30f7df18abf6c24cc5c949a308246bb275bea57242128916cee627da561155",
+      "robot/cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749"
+    },
+    "manifestSha256": "05f8faac0fc1e3554c801c5a83d4dc4b3bdd3fb9a356e9a5a9e0c92a8f04d767",
+    "sourceFusionSha256": "24de65755a396d1e371112c65eb9a44a32884c122bf1e4387fd172645ea45423",
+    "closedCleanly": true,
+    "acceptedKeys": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "Q",
+      "S",
+      "W"
+    ],
+    "observedCommands": [
+      "brake",
+      "coast",
+      "drive",
+      "idle-brake",
+      "quit",
+      "unfocused"
+    ],
+    "focusLossBrakeObserved": true,
+    "simulatedSeconds": 137.1299999992652,
+    "wallSeconds": 202.28551859999993,
+    "realTimeFactor": 0.6779031981544192,
+    "motorAxleWorkJ": 35.98856083793067,
+    "finalChassisPose": [
+      0.00590400363595309,
+      0.17964350728006498,
+      -0.0010043363045637917,
+      2.1526387527586093
+    ]
+  },
+  "afterShortcutFix": {
+    "operator": "user",
+    "traceSha256": "ba737bf9e17eedef54d7fdf36247bbb1b06c8c64aebfa8a178d5436de9b53c7d",
+    "runtimeInputPins": {
+      "audit/fusion_visual_provenance.py": "79841dba44301b102b26f28700b5d7e5eb9ae85ea1471d892c094d10315fdd88",
+      "audit/fusion_visual_display.py": "057b824dfbdfb314f0fd54dbc154c0a57887cbbdec7a6f6bce16abf321678768",
+      "audit/fusion_visual_drive.py": "f17ecf3507ab8824c3ba02be1793626202308b264bd2d984c1c61af56673c152",
+      "audit/verify_fusion_visual_display.py": "2b8ad4bc17afee8c539ea2092200a4936000ac7034714652ba0deee802be169c",
+      "audit/native_drive_interactive_v3.py": "4a53874423a932e9a182994c370bdf27ff5ba9a4ac0e83f5d9c20388021e9175",
+      "audit/native_drive_interactive.py": "0fef781f655c5ebb66d6b88bc4fcf3065b48f34b070ca196b1769ccbf25e202b",
+      "audit/native_drive.py": "af1a0e679ac7e4db8d9d8b82b02623f2eb9f352fca87bab3daad37c1311a4343",
+      "audit/drivetrain_bridge.py": "bc5c47c3881bfd835516b0e31ac3b80e0f7d562a357806c7cba0a0b38f5fee7a",
+      "audit/requirements-lock.txt": "ae8bbe85c745e97c3a393545aa9ef1eda9bbe52d20f987a57ba1e945793f371d",
+      "robot/sim/drivetrain/config.json": "334a7d02b4968401a10fb829ae838edfbeb7d9a311c13f3e2cbcc47b54748ff4",
+      "robot/sim/drivetrain/plant.py": "3d30f7df18abf6c24cc5c949a308246bb275bea57242128916cee627da561155",
+      "robot/cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749"
+    },
+    "manifestSha256": "05f8faac0fc1e3554c801c5a83d4dc4b3bdd3fb9a356e9a5a9e0c92a8f04d767",
+    "sourceFusionSha256": "24de65755a396d1e371112c65eb9a44a32884c122bf1e4387fd172645ea45423",
+    "closedCleanly": true,
+    "acceptedKeys": [
+      "A",
+      "D",
+      "Q",
+      "S",
+      "W"
+    ],
+    "observedCommands": [
+      "drive",
+      "idle-brake",
+      "quit"
+    ],
+    "focusLossBrakeObserved": false,
+    "simulatedSeconds": 19.98999999995929,
+    "wallSeconds": 28.748357199999873,
+    "realTimeFactor": 0.6953440803900746,
+    "motorAxleWorkJ": 118.60299187326284,
+    "finalChassisPose": [
+      1.2114862025225541,
+      -0.6179800766312858,
+      -0.0010000555691653539,
+      13.304550827751958
+    ]
+  },
+  "humanVisualConfirmation": "User reported all requested controls and visuals work after the fix; floor remains visible and robot solid-colored. Post-fix trace independently records WASD and Q; C/B were recorded in the pre-fix trace.",
+  "privacy": "Native archive, exported meshes, images and raw UI traces remain private. Summary omits local paths and absolute/monotonic timestamps; hashes bind the retained private evidence.",
+  "broaderRegression": {
+    "testsRun": 515,
+    "passed": 502,
+    "failures": [
+      "test_component_context.ContextTests.test_input_pins",
+      "test_packaging.ReceiptBoundary.test_snapshot_hashes_match",
+      "test_pressure_continuation_receipt.ContinuationReceiptTest.test_longer_same_law_lineage",
+      "test_pressure_entry_receipt.EntryReceiptTest.test_exact_source_inventory"
+    ],
+    "errors": [
+      "test_pressure_checkpoint.CheckpointTest.test_contact_phase_split_byte_parity",
+      "test_pressure_continuation_receipt.ContinuationReceiptTest.test_exact_lineage_and_state",
+      "test_pressure_entry_comparison.ComparisonTest.test_fresh_endpoint_replay",
+      "test_pressure_policy_boundary.BoundaryTest.test_nominal_rejected_query",
+      "test_pressure_policy_receipts.PolicyReceipts.test_exact_inventory_and_identical_physics_controls",
+      "test_pressure_policy_transition.PolicyTest.test_domain_exit_records_atomic_prefix",
+      "test_pressure_policy_transition.PolicyTest.test_engagement_preserves_physical_state",
+      "test_pressure_policy_transition.PolicyTest.test_fault_and_no_pinch_are_commands_not_resets",
+      "test_pressure_policy_transition.PolicyTest.test_first_finite_brake_step"
+    ],
+    "allThirteenReproducedOnBaseline": "ca7f2e885263f14bd5425aba7f3c05551d975d75",
+    "scope": "Inherited source/receipt mismatches reproduced unchanged on canonical baseline; no full-suite pass claimed. Historical receipts were not rewritten."
+  }
+}

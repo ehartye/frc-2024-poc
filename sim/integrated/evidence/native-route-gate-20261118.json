@@ -1,0 +1,107 @@
+{
+  "schema": "native-route-gate-summary/1",
+  "baselineCommit": "c23ed8447d4cbbbd475103208a66ab1bb314b9cc",
+  "verdict": "PARTIAL_PROXY_CONTACT",
+  "acceptance": false,
+  "nativeArchiveSha256": "24de65755a396d1e371112c65eb9a44a32884c122bf1e4387fd172645ea45423",
+  "visualManifestSha256": "05f8faac0fc1e3554c801c5a83d4dc4b3bdd3fb9a356e9a5a9e0c92a8f04d767",
+  "privateReceiptSha256": "11784e781b0272d9d08b1ec31c9148f9016ea235e8662a66ae5b766bff78f9dd",
+  "nativeScriptSha256": "eb830d95c453753729287b61ec64d475edfb3980b0f8c1d972186ca0f62ab92e",
+  "configurationSha256": "adaa6169597b384c4e90486c1f689aed1a61e091fd1f030059f03ee67058229e",
+  "nativeVersion": "2706.1.17",
+  "bodyCount": 732,
+  "physicalBodyCount": 710,
+  "exclusions": {
+    "service-envelope": 4,
+    "explicit-visual-only": 18
+  },
+  "hiddenPhysicalBodyCount": 12,
+  "witnessCount": 1443,
+  "booleanPairs": 13302,
+  "failedBooleans": 0,
+  "placementAndBooleanControls": 3,
+  "offsets": [
+    {
+      "lateralMm": 0.0,
+      "witnessCount": 481,
+      "unresolvedWitnessCount": 0,
+      "unresolvedXRangeMm": null,
+      "peak": null
+    },
+    {
+      "lateralMm": -0.5,
+      "witnessCount": 481,
+      "unresolvedWitnessCount": 25,
+      "unresolvedXRangeMm": [
+        312.0,
+        336.0
+      ],
+      "peak": {
+        "centerMm": [
+          324.0,
+          -0.5,
+          25.4
+        ],
+        "key": "body-447-1",
+        "name": "intake candidate 12T track pulley outer-profile representation (-1, 146.05)",
+        "overlapMm3": 5.30089338781844,
+        "reverseOverlapMm3": 5.3008933883491824,
+        "classification": "unresolved-material-overlap"
+      }
+    },
+    {
+      "lateralMm": 0.5,
+      "witnessCount": 481,
+      "unresolvedWitnessCount": 25,
+      "unresolvedXRangeMm": [
+        312.0,
+        336.0
+      ],
+      "peak": {
+        "centerMm": [
+          324.0,
+          0.5,
+          25.4
+        ],
+        "key": "body-477-1",
+        "name": "intake candidate 12T track pulley outer-profile representation (1, 146.05)",
+        "overlapMm3": 5.332067430102203,
+        "reverseOverlapMm3": 5.332067431681829,
+        "classification": "unresolved-material-overlap"
+      }
+    }
+  ],
+  "method": {
+    "units": "mm",
+    "volumeUnits": "mm3",
+    "kernel": "Fusion TemporaryBRepManager",
+    "broadphase": "native BRepBody.boundingBox AABB; touching proceeds to Boolean",
+    "construction": "origin torus then explicit translation",
+    "lengthToleranceMm": 0.0001,
+    "volumeToleranceMm3": 0.0001,
+    "majorRadiusMm": 152.4,
+    "tubeRadiusMm": 25.4,
+    "rotation": "flat axis +Z only"
+  },
+  "nativeSeconds": 18.685859600002004,
+  "classification": "Overlaps are with original cylindrical-band pulley outer-profile representations; supplier material/phase contact has not been established. Do not accept clearance or reject the real mechanism from this envelope result.",
+  "nextGate": "Inspect private source pulley at registered phase and source-bound transforms, or retain unsupported contact. Do not omit pulley contact or tune belt preload to bypass it.",
+  "notPerformed": [
+    "powered loading or retained transport",
+    "lift or shooter integration",
+    "new interactive GUI verification",
+    "supplier CAD publication",
+    "robot hardware operation"
+  ],
+  "supplierDiagnostic": {
+    "receiptSha256": "43040943be11a213fe2f6e0e76275225563fdf2a1184acab8e38de71762826a6",
+    "sourceSha256": "c2825524b2293af12647d92ad57e9162379ad64105b86f867be2223037059c68",
+    "kernel": "OCP 8.0.1.0",
+    "witnessCount": 2,
+    "positiveWitnesses": 2,
+    "maxOverlapMm3": 0.3528994466635677,
+    "phaseRegistration": "UNREGISTERED source orientation at configured shaft center; not actual assembly phase",
+    "scope": "Two NOTE centers at X324, Y+/-0.5, Z25.4 mm; one assumed source orientation each. Full phase sweep was cancelled incomplete; this is not its replacement acceptance.",
+    "acceptance": false
+  }
+}

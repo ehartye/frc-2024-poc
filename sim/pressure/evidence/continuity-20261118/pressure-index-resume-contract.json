@@ -1,0 +1,38 @@
+{
+  "schema": "pressure-continuous-index-contract/1",
+  "source": "sim/pressure/fresh-rest-controller-3s-evidence.json",
+  "sourceSha256": "31f03648150aa04a49e66f833d85345c4f4ce37ae18949cdc74efe4ed6b75d97",
+  "startTimeS": 3.4999999999997256,
+  "maximumAbsoluteTimeS": 6.0,
+  "dtS": 0.001,
+  "controllerPeriodS": 0.01,
+  "index": {
+    "relativeXRangeM": [
+      0.18,
+      0.19
+    ],
+    "maximumAbsoluteRelativeYM": 0.001,
+    "maximumRelativePlanarSpeedMps": 0.003,
+    "maximumChassisPlanarSpeedMps": 0.003,
+    "minimumContinuousDwellS": 0.1,
+    "transition": "First existing 100 Hz tick after dwell, with all criteria rechecked"
+  },
+  "unchanged": [
+    "1024 by 1024 material grid",
+    "contact law and material phase",
+    "controller goal, gains and limits",
+    "drive and pinch laws",
+    "geometry gate",
+    "physical state and cumulative ledger",
+    "absolute controller tick phase"
+  ],
+  "acceptance": false,
+  "limits": [
+    "Ground-supported index is not possession or lift",
+    "No registration to the newer relieved native archive",
+    "No model conversion or state reset",
+    "Any local timestep comparison does not refine the inherited startup"
+  ],
+  "resumeSha256": "638b80f1486b5cfb1efa336b39705640d80f90e0a85688f5c3183ff4622f77e8",
+  "implementation": "Exact parity-checked tiled conservative culling; physical law/grid/controller unchanged"
+}

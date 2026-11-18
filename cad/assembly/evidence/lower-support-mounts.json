@@ -1,0 +1,174 @@
+{
+  "schema": "lower-support-bracket-candidate/1",
+  "assemblyInputs": {
+    "cad/assembly/build_robot.py": "cca2c9a3ecca7a622fb1283461c393b2288e3c6efd173c60d72a959e3c500e26",
+    "cad/assembly/bumper_candidate.py": "556fba39fda427cb081a2a1d4d806372b67b830606a242bbfc0babf05619fc19",
+    "cad/a2_primitives.py": "bef958c710da792f89def8606d7169a7c385fcff257826619a7b29fe0943952e",
+    "cad/a2_kinematics.py": "4329126a1465f53c8d27618307b2864ff69803e196ff4521aab8a50daf670581",
+    "cad/build_a2_layout.py": "aea31166eabc53113962cc511cfbd190eba54033f7b93476455961dccb1969c9",
+    "cad/cycle-contract-A2.json": "3700da3bf1a271d6b6763060f913435a4a50cda8d456cb1a57a6f1898416b6ad",
+    "cad/components/a2-transmission.json": "0aae2e2dd0d8c4b16729139380f6d1e2df0efa956dad2ee8b205be1a57f3d8b0",
+    "cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+    "cad/drivetrain/build_fastening.py": "9d82a974d184200e7a6c414bc74b345cd53aa2cf85f36c3cf528fe818997d4ac",
+    "cad/drivetrain/fastening.json": "6cb3d276cd5f59143ef9b52d2240095f02db9f92d6cfef5ae53b145a78862ac9",
+    "cad/drivetrain/build_drivetrain.py": "4748e01902aac32ae8d996e1f7676caa7f794ac6a5971b661855c26487ad29a7",
+    "cad/electrical/manifest.json": "9db917a55b0884db9841f52da3b5cccf8ad684c652e4dde3e01b1efe75e891a3",
+    "cad/electrical/build_electrical.py": "d2fbd40d0b26c8887679b6ed3b49c655b10a27a0cd175e812b35d9fccd6f6317",
+    "cad/electrical/mounts.py": "90254dbc5116a9af72df0ba6442ed94ef8c94e8247326f9b7c6cfd0c0749c7e8",
+    "cad/electrical/breaker_mount.py": "1e27087fa191e8043c6ed8b3c48bca4db50cde379efa171cc49508a1a1c75060",
+    "cad/electrical/breaker-mount-evidence.json": "9e0bb64f30ab3ee58de577fe694ee578135cdf4d74ddf8e0b3065b741266b07d",
+    "cad/electrical/fasteners.py": "788a1cb9bf71a780aed9cbeb5bf48d06532e914fed431edcc0e72a4bd273b799",
+    "cad/assembly/intake_components.py": "c6d352be0edba340d340112697d3f2482158b4fb8f3324b0dd3927344f9b43c5",
+    "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+    "cad/assembly/build_intake_candidate.py": "07e9c96ec0f5e4d02660e0d2efda8dd2bddfb0198862c5e228dbc9e07cbf9bc3",
+    "cad/assembly/check_intake_contact.py": "95d20cfed12331c135b5534d4076f833ae6741b69806a61e677e88098a7301e3",
+    "cad/assembly/verify_receipts.py": "213a00200bc7fc0b84bd4bb82e4a62aaee3c10432f35373fc3097b2141d4e81d",
+    "cad/assembly/audit_intake_motion.py": "1d33ef51ba87c170335234004b1fa3cac1aeeac39da6149d15eedf58a26c1509",
+    "cad/components/check_pulley_outer_profile.py": "23325f74745de7ea2d828340c816143346221c44325784d6e8934b08553efde5",
+    "cad/components/pulley-outer-profile.json": "e582635a9b49f9810eee996177af2761edfe7928450dd86ef76d103ce8af53ec"
+  },
+  "scriptSha256": "1b832dcc91967eab3dcfe40abc585ef1137250fb4e6777b01075a79ebcb1b14d",
+  "hardwareStepSha256": "098e6626928bc3ea31e5898d8e2b0e2ecbbb8474e1898809eecf12168a58b3ab",
+  "hardwareReopenedRoots": 52,
+  "addedParts": 52,
+  "joints": [
+    {
+      "bracket": "original lower guide bracket -1",
+      "post": "intake candidate stationary aluminum guide -1",
+      "bridge": "frame fastening bridge-0",
+      "materialStackMm": 6.35,
+      "screw": "am-1047 #10-32 x 0.75in nominal",
+      "nut": "am-1042 nominal",
+      "installation": "Fit internal nuts through open stock ends before upper portal/rail closure; tool access not qualified"
+    },
+    {
+      "bracket": "original lower shooter bracket -1",
+      "post": "original shooter upright -1 279.4",
+      "bridge": "frame fastening bridge-1",
+      "materialStackMm": 6.35,
+      "screw": "am-1047 #10-32 x 0.75in nominal",
+      "nut": "am-1042 nominal",
+      "installation": "Fit internal nuts through open stock ends before upper portal/rail closure; tool access not qualified"
+    },
+    {
+      "bracket": "original lower guide bracket 1",
+      "post": "intake candidate stationary aluminum guide 1",
+      "bridge": "frame fastening bridge-0",
+      "materialStackMm": 6.35,
+      "screw": "am-1047 #10-32 x 0.75in nominal",
+      "nut": "am-1042 nominal",
+      "installation": "Fit internal nuts through open stock ends before upper portal/rail closure; tool access not qualified"
+    },
+    {
+      "bracket": "original lower shooter bracket 1",
+      "post": "original shooter upright 1 279.4",
+      "bridge": "frame fastening bridge-1",
+      "materialStackMm": 6.35,
+      "screw": "am-1047 #10-32 x 0.75in nominal",
+      "nut": "am-1042 nominal",
+      "installation": "Fit internal nuts through open stock ends before upper portal/rail closure; tool access not qualified"
+    }
+  ],
+  "rawIntersections": [],
+  "movingHardwareSamples": [
+    {
+      "phase": "rotate",
+      "pitchDeg": 0.0,
+      "centerZ": 25.4,
+      "hits": []
+    },
+    {
+      "phase": "rotate",
+      "pitchDeg": 10.0,
+      "centerZ": 51.86398227644018,
+      "hits": []
+    },
+    {
+      "phase": "rotate",
+      "pitchDeg": 20.0,
+      "centerZ": 77.52386984283191,
+      "hits": []
+    },
+    {
+      "phase": "rotate",
+      "pitchDeg": 30.0,
+      "centerZ": 101.6,
+      "hits": []
+    },
+    {
+      "phase": "rotate",
+      "pitchDeg": 40.0,
+      "centerZ": 123.36083171622857,
+      "hits": []
+    },
+    {
+      "phase": "rotate",
+      "pitchDeg": 50.0,
+      "centerZ": 142.14517313133226,
+      "hits": []
+    },
+    {
+      "phase": "rotate",
+      "pitchDeg": 60.0,
+      "centerZ": 157.38227153674845,
+      "hits": []
+    },
+    {
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZ": 197.0636619601938,
+      "hits": []
+    },
+    {
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZ": 236.74505238363915,
+      "hits": []
+    },
+    {
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZ": 276.4264428070845,
+      "hits": []
+    },
+    {
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZ": 316.1078332305299,
+      "hits": []
+    },
+    {
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZ": 355.7892236539752,
+      "hits": []
+    },
+    {
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZ": 395.4706140774206,
+      "hits": []
+    },
+    {
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZ": 435.1520045008659,
+      "hits": []
+    },
+    {
+      "phase": "lift",
+      "pitchDeg": 60,
+      "centerZ": 474.8333949243113,
+      "hits": []
+    }
+  ],
+  "undrilledPostNegativeMm3": 58.07754448545767,
+  "acceptance": false,
+  "limits": [
+    "Additive candidate, not canonical STEP export",
+    "Nominal proxy screws/nuts without threads or preload",
+    "Added hardware checked against floor assembly and moving parts at15poses; not continuous motion",
+    "Upper portal, carriage yoke, chain anchors and shaft torque coupling incomplete",
+    "Installation reach, edge distances, bracket bending and impact loads unqualified"
+  ]
+}

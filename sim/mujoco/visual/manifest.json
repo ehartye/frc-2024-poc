@@ -1,0 +1,7222 @@
+{
+  "schema": "fusion-visual-meshes/1",
+  "units": "mm",
+  "frame": "robot-floor-XYZ",
+  "sourceFormat": "F3D",
+  "sourceSha256": "b4e235a5e3e473b507140f3ef50674af559c9a8412acfadf537f4185984d2d50",
+  "sourceStepSha256": "b08b08a8e771cb1e811bd9850988b49bdb8ed371df3127caf9e59c7f4a5fe616",
+  "sourceCommit": "f2be99ba27027d4509873b30cb026d8d836617ba",
+  "sourceParts": 711,
+  "sourceBodies": 714,
+  "meshes": [
+    {
+      "group": "fixed",
+      "file": "fixed.stl",
+      "sha256": "60d02bc03df2ade596ee8f12603c07c5a16f0e01e08ef692245b260e4f6a5b25",
+      "triangles": 44504,
+      "boundsMm": [
+        [
+          -442.0869827270508,
+          -438.14998626708984,
+          9.99999905104687e-08
+        ],
+        [
+          450.73963165283203,
+          438.14998626708984,
+          968.3149719238281
+        ]
+      ],
+      "sourceRootIndices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327,
+        328,
+        329,
+        330,
+        331,
+        332,
+        333,
+        334,
+        335,
+        336,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        347,
+        348,
+        349,
+        350,
+        351,
+        352,
+        353,
+        354,
+        355,
+        356,
+        357,
+        358,
+        359,
+        360,
+        361,
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397,
+        398,
+        399,
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407,
+        408,
+        409,
+        410,
+        411,
+        412,
+        413,
+        414,
+        415,
+        416,
+        417,
+        418,
+        419,
+        420,
+        421,
+        422,
+        423,
+        424,
+        425,
+        426,
+        427,
+        428,
+        429,
+        430,
+        431,
+        432,
+        433,
+        434,
+        452,
+        460,
+        461,
+        462,
+        463,
+        482,
+        490,
+        491,
+        492,
+        493,
+        501,
+        502,
+        503,
+        504,
+        505,
+        506,
+        507,
+        508,
+        509,
+        510,
+        511,
+        512,
+        513,
+        514,
+        515,
+        516,
+        517,
+        518,
+        519,
+        520,
+        521,
+        522,
+        523,
+        524,
+        525,
+        526,
+        527,
+        528,
+        529,
+        530,
+        531,
+        532,
+        533,
+        534,
+        535,
+        536,
+        537,
+        538,
+        539,
+        540,
+        541,
+        542,
+        543,
+        544,
+        545,
+        546,
+        547,
+        548,
+        549,
+        550,
+        551,
+        552,
+        553,
+        554,
+        555,
+        556,
+        557,
+        558,
+        559,
+        560,
+        561,
+        562,
+        563,
+        564,
+        565,
+        566,
+        567,
+        568,
+        582,
+        583,
+        584,
+        585,
+        586,
+        587,
+        588,
+        589,
+        590,
+        591,
+        592,
+        593,
+        594
+      ],
+      "partCount": 525,
+      "bodyCount": 528,
+      "rgba": [
+        0.286,
+        0.416,
+        0.506,
+        1
+      ],
+      "bytes": 2225284
+    },
+    {
+      "group": "cradle",
+      "file": "cradle.stl",
+      "sha256": "8492f434d6ee09e233d939acce1cb26015d2b40778a7236e3104e3e9ef9bcb66",
+      "triangles": 5544,
+      "boundsMm": [
+        [
+          138.00000190734863,
+          -228.50000381469727,
+          2.237499952316284
+        ],
+        [
+          344.04998779296875,
+          228.50000381469727,
+          233.75
+        ]
+      ],
+      "sourceRootIndices": [
+        435,
+        436,
+        437,
+        438,
+        439,
+        440,
+        441,
+        442,
+        443,
+        444,
+        445,
+        446,
+        447,
+        448,
+        449,
+        450,
+        451,
+        465,
+        466,
+        467,
+        468,
+        469,
+        470,
+        471,
+        472,
+        473,
+        474,
+        475,
+        476,
+        477,
+        478,
+        479,
+        480,
+        481
+      ],
+      "partCount": 34,
+      "bodyCount": 34,
+      "rgba": [
+        0.15,
+        0.6,
+        0.57,
+        1
+      ],
+      "bytes": 277284
+    },
+    {
+      "group": "carriage",
+      "file": "carriage.stl",
+      "sha256": "930c5ca0880fca59bf95ae43c7abd547bdcf7806f182af0bbaa8f1e176d2a3c7",
+      "triangles": 13816,
+      "boundsMm": [
+        [
+          56.99999809265137,
+          -285.87499618530273,
+          5.400000214576721
+        ],
+        [
+          196.5999984741211,
+          285.87499618530273,
+          357.56473541259766
+        ]
+      ],
+      "sourceRootIndices": [
+        453,
+        454,
+        455,
+        456,
+        457,
+        458,
+        459,
+        464,
+        483,
+        484,
+        485,
+        486,
+        487,
+        488,
+        489,
+        494,
+        495,
+        496,
+        497,
+        498,
+        499,
+        500,
+        569,
+        570,
+        571,
+        572,
+        573,
+        574,
+        575,
+        576,
+        577,
+        578,
+        579,
+        580,
+        581,
+        595,
+        596,
+        597,
+        598,
+        599,
+        600,
+        601,
+        602,
+        603,
+        604,
+        605,
+        606,
+        607,
+        608,
+        609,
+        610,
+        611,
+        612,
+        613,
+        614,
+        615,
+        616,
+        617,
+        618,
+        619,
+        620,
+        621,
+        622,
+        623,
+        624,
+        625,
+        626,
+        627,
+        628,
+        629,
+        630,
+        631,
+        632,
+        633,
+        634,
+        635,
+        636,
+        637,
+        638,
+        639,
+        640,
+        641,
+        642,
+        643,
+        644,
+        645,
+        646,
+        647,
+        648,
+        649,
+        650,
+        651,
+        652,
+        653,
+        654,
+        655,
+        656,
+        657,
+        658,
+        659,
+        660,
+        661,
+        662,
+        663,
+        664,
+        665,
+        666,
+        667,
+        668,
+        669,
+        670,
+        671,
+        672,
+        673,
+        674,
+        675,
+        676,
+        677,
+        678,
+        679,
+        680,
+        681,
+        682,
+        683,
+        684,
+        685,
+        686,
+        687,
+        688,
+        689,
+        690,
+        691,
+        692,
+        693,
+        694,
+        695,
+        696,
+        697,
+        698,
+        699,
+        700,
+        701,
+        702,
+        703,
+        704,
+        705,
+        706,
+        707,
+        708,
+        709,
+        710,
+        711
+      ],
+      "partCount": 152,
+      "bodyCount": 152,
+      "rgba": [
+        0,
+        0.498,
+        0.471,
+        1
+      ],
+      "bytes": 690884
+    }
+  ],
+  "notes": [
+    "Visual only: no contact or mass.",
+    "Source711 original/proxy geometry; no native vendor CAD.",
+    "Six drive wheel visual bodies remain fixed; not animated wheel hinges.",
+    "Red cover and1780 overlays excluded; original12 bumper parts included.",
+    "Native BRep tessellation, not viewport screenshot; current viewport appearance refresh is unresolved."
+  ],
+  "parts": [
+    {
+      "index": 1,
+      "name": "am-3920-1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 5.684341886080802e-14,
+      "volumeMm3": 3246850.9333172715
+    },
+    {
+      "index": 2,
+      "name": "am-3921-1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 1.1368683772161603e-13,
+      "volumeMm3": 1228538.1967689483
+    },
+    {
+      "index": 3,
+      "name": "am-3922-1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 3.076992012318528e-14,
+      "volumeMm3": 3152215.631039725
+    },
+    {
+      "index": 4,
+      "name": "am-2569-1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 40,
+      "centroidErrorMm": 1.5335217540268786e-09,
+      "volumeMm3": 14479.166248989899
+    },
+    {
+      "index": 5,
+      "name": "am-2569-2",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 40,
+      "centroidErrorMm": 1.5334649106080178e-09,
+      "volumeMm3": 14479.166248989903
+    },
+    {
+      "index": 6,
+      "name": "am-2569-3",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 40,
+      "centroidErrorMm": 1.5334933323174482e-09,
+      "volumeMm3": 14479.166248989904
+    },
+    {
+      "index": 7,
+      "name": "am-2569-4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 40,
+      "centroidErrorMm": 1.533479121462733e-09,
+      "volumeMm3": 14479.166248989903
+    },
+    {
+      "index": 8,
+      "name": "am-2974-cut-1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 5.684341886080802e-14,
+      "volumeMm3": 91062.85541362628
+    },
+    {
+      "index": 9,
+      "name": "am-0940b-1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 84,
+      "centroidErrorMm": 7.968054660523194e-09,
+      "volumeMm3": 463333.3225350659
+    },
+    {
+      "index": 10,
+      "name": "am-2234-half-1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 5.684341886080802e-14,
+      "volumeMm3": 71634.06841761268
+    },
+    {
+      "index": 11,
+      "name": "am-2234-half-2",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 1.1368683772161603e-13,
+      "volumeMm3": 71634.06841761094
+    },
+    {
+      "index": 12,
+      "name": "am-0209-1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 1.4939871562091867e-09,
+      "volumeMm3": 6108.398461322656
+    },
+    {
+      "index": 13,
+      "name": "am-1306-1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 6.879048441987834e-10,
+      "volumeMm3": 966.96021903263
+    },
+    {
+      "index": 14,
+      "name": "am-0209-2",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 1.4940013670639019e-09,
+      "volumeMm3": 6108.398461322656
+    },
+    {
+      "index": 15,
+      "name": "am-1307-1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 72,
+      "centroidErrorMm": 1.9920349814128713e-09,
+      "volumeMm3": 6153.645827679403
+    },
+    {
+      "index": 16,
+      "name": "am-0940b-2",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 84,
+      "centroidErrorMm": 7.968083082232624e-09,
+      "volumeMm3": 463333.3225350659
+    },
+    {
+      "index": 17,
+      "name": "am-2234-half-3",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 2.842170943040401e-14,
+      "volumeMm3": 71634.06841760228
+    },
+    {
+      "index": 18,
+      "name": "am-2234-half-4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 1.4210854715202004e-14,
+      "volumeMm3": 71634.06841760034
+    },
+    {
+      "index": 19,
+      "name": "am-0209-3",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 1.4939871562091867e-09,
+      "volumeMm3": 6108.398461322633
+    },
+    {
+      "index": 20,
+      "name": "am-1306-2",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 6.879332659082138e-10,
+      "volumeMm3": 966.9602190326249
+    },
+    {
+      "index": 21,
+      "name": "am-0209-4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 1.4940013670639019e-09,
+      "volumeMm3": 6108.398461322657
+    },
+    {
+      "index": 22,
+      "name": "am-1307-2",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 72,
+      "centroidErrorMm": 1.992006559703441e-09,
+      "volumeMm3": 6153.645827679412
+    },
+    {
+      "index": 23,
+      "name": "am-2986-1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 1.6268018043774646e-09,
+      "volumeMm3": 6027.774457131376
+    },
+    {
+      "index": 24,
+      "name": "am-0028-1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 1.2907861446365132e-09,
+      "volumeMm3": 3429.041084385813
+    },
+    {
+      "index": 25,
+      "name": "am-0650-1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 2.842170943040401e-14,
+      "volumeMm3": 688587.1551910456
+    },
+    {
+      "index": 26,
+      "name": "am-0516-1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 1.1620073792073526e-09,
+      "volumeMm3": 2759.085689367797
+    },
+    {
+      "index": 27,
+      "name": "am-0516-2",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 1.1619931683526374e-09,
+      "volumeMm3": 2759.085689367797
+    },
+    {
+      "index": 28,
+      "name": "am-2986-2",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 1.6267875935227494e-09,
+      "volumeMm3": 6027.77445713135
+    },
+    {
+      "index": 29,
+      "name": "am-2566a_K19-1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 32,
+      "centroidErrorMm": 1.533479121462733e-09,
+      "volumeMm3": 24033.65949035697
+    },
+    {
+      "index": 30,
+      "name": "am-0940b-3",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 84,
+      "centroidErrorMm": 7.96809729308734e-09,
+      "volumeMm3": 463333.32253506524
+    },
+    {
+      "index": 31,
+      "name": "am-2234-half-5",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 5.684341886080802e-14,
+      "volumeMm3": 71634.06841760036
+    },
+    {
+      "index": 32,
+      "name": "am-2234-half-6",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 1.4210854715202004e-14,
+      "volumeMm3": 71634.0684175934
+    },
+    {
+      "index": 33,
+      "name": "am-2234-half-7",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 1.9365770686631286e-15,
+      "volumeMm3": 71634.06841759455
+    },
+    {
+      "index": 34,
+      "name": "am-2234-half-8",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 5.684341886080802e-14,
+      "volumeMm3": 71634.06841759455
+    },
+    {
+      "index": 35,
+      "name": "am-2568-1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 2.8950495334356674e-09,
+      "volumeMm3": 61165.17786316566
+    },
+    {
+      "index": 36,
+      "name": "am-1305-1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 1.492679757575388e-09,
+      "volumeMm3": 9268.26668001732
+    },
+    {
+      "index": 37,
+      "name": "am-2571-1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 5.684341886080802e-14,
+      "volumeMm3": 331928.13249992527
+    },
+    {
+      "index": 38,
+      "name": "am-2571-2",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 1.4210854715202004e-14,
+      "volumeMm3": 331928.1324999668
+    },
+    {
+      "index": 39,
+      "name": "am-1297-1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 36,
+      "centroidErrorMm": 1.7235777249879902e-09,
+      "volumeMm3": 24352.23515681226
+    },
+    {
+      "index": 40,
+      "name": "am-1297-2",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 36,
+      "centroidErrorMm": 1.7235919358427054e-09,
+      "volumeMm3": 24352.23515681226
+    },
+    {
+      "index": 41,
+      "name": "am-0255-1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 2.842170943040401e-14,
+      "volumeMm3": 634757.2691527838
+    },
+    {
+      "index": 42,
+      "name": "am-0255-2",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 2.842170943040401e-14,
+      "volumeMm3": 634757.2691528435
+    },
+    {
+      "index": 43,
+      "name": "am-3920-2",
+      "group": "fixed",
+      "bodies": 2,
+      "triangles": 24,
+      "centroidErrorMm": 1.7053025658242404e-13,
+      "volumeMm3": 1283766.1451760633
+    },
+    {
+      "index": 44,
+      "name": "am-3921-2",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 2.938412164671196e-14,
+      "volumeMm3": 1228538.1967706422
+    },
+    {
+      "index": 45,
+      "name": "am-3922-2",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 8.057990141844672e-14,
+      "volumeMm3": 3152215.631042148
+    },
+    {
+      "index": 46,
+      "name": "am-2569-5",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 40,
+      "centroidErrorMm": 1.5334506997533026e-09,
+      "volumeMm3": 14479.166249001757
+    },
+    {
+      "index": 47,
+      "name": "am-2569-6",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 40,
+      "centroidErrorMm": 1.5334649106080178e-09,
+      "volumeMm3": 14479.166249001752
+    },
+    {
+      "index": 48,
+      "name": "am-2569-7",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 40,
+      "centroidErrorMm": 1.5334649106080178e-09,
+      "volumeMm3": 14479.166249001757
+    },
+    {
+      "index": 49,
+      "name": "am-2569-8",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 40,
+      "centroidErrorMm": 1.5334364888985874e-09,
+      "volumeMm3": 14479.166249001757
+    },
+    {
+      "index": 50,
+      "name": "am-0940b-4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 84,
+      "centroidErrorMm": 7.968054660523194e-09,
+      "volumeMm3": 463333.3225352486
+    },
+    {
+      "index": 51,
+      "name": "am-2234-half-9",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 1.4210854715202004e-14,
+      "volumeMm3": 71634.06841765615
+    },
+    {
+      "index": 52,
+      "name": "am-2234-half-10",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 5.684341886080802e-14,
+      "volumeMm3": 71634.06841765558
+    },
+    {
+      "index": 53,
+      "name": "am-0209-5",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 1.4940439996280475e-09,
+      "volumeMm3": 6108.398461329102
+    },
+    {
+      "index": 54,
+      "name": "am-1306-3",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 6.879048441987834e-10,
+      "volumeMm3": 966.96021903262
+    },
+    {
+      "index": 55,
+      "name": "am-0209-6",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 1.494015577918617e-09,
+      "volumeMm3": 6108.398461329102
+    },
+    {
+      "index": 56,
+      "name": "am-1307-3",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 72,
+      "centroidErrorMm": 1.9920634031223017e-09,
+      "volumeMm3": 6153.6458276806925
+    },
+    {
+      "index": 57,
+      "name": "am-0940b-5",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 84,
+      "centroidErrorMm": 7.968083082232624e-09,
+      "volumeMm3": 463333.32253524737
+    },
+    {
+      "index": 58,
+      "name": "am-2234-half-11",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 5.684341886080802e-14,
+      "volumeMm3": 71634.06841766521
+    },
+    {
+      "index": 59,
+      "name": "am-2234-half-12",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 5.684341886080802e-14,
+      "volumeMm3": 71634.068417664
+    },
+    {
+      "index": 60,
+      "name": "am-0209-7",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 1.4940013670639019e-09,
+      "volumeMm3": 6108.398461335505
+    },
+    {
+      "index": 61,
+      "name": "am-1306-4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 6.879048441987834e-10,
+      "volumeMm3": 966.9602190326301
+    },
+    {
+      "index": 62,
+      "name": "am-0209-8",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 1.4940297887733323e-09,
+      "volumeMm3": 6108.398461335484
+    },
+    {
+      "index": 63,
+      "name": "am-1307-4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 72,
+      "centroidErrorMm": 1.992020770558156e-09,
+      "volumeMm3": 6153.645827680714
+    },
+    {
+      "index": 64,
+      "name": "am-2986-3",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 1.6268160152321798e-09,
+      "volumeMm3": 6027.774457138995
+    },
+    {
+      "index": 65,
+      "name": "am-0028-2",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 1.2908003554912284e-09,
+      "volumeMm3": 3429.041084390609
+    },
+    {
+      "index": 66,
+      "name": "am-0650-2",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 2.842170943040401e-14,
+      "volumeMm3": 688587.1551912253
+    },
+    {
+      "index": 67,
+      "name": "am-0516-3",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 1.161964746643207e-09,
+      "volumeMm3": 2759.0856893677956
+    },
+    {
+      "index": 68,
+      "name": "am-0516-4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 1.1619789574979222e-09,
+      "volumeMm3": 2759.0856893716837
+    },
+    {
+      "index": 69,
+      "name": "am-2986-4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 1.6268160152321798e-09,
+      "volumeMm3": 6027.774457138968
+    },
+    {
+      "index": 70,
+      "name": "am-2566a_K19-2",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 32,
+      "centroidErrorMm": 1.5334933323174482e-09,
+      "volumeMm3": 24033.65949037663
+    },
+    {
+      "index": 71,
+      "name": "am-0940b-6",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 84,
+      "centroidErrorMm": 7.968068871377909e-09,
+      "volumeMm3": 463333.322535248
+    },
+    {
+      "index": 72,
+      "name": "am-2234-half-13",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 1.4317973889843572e-15,
+      "volumeMm3": 71634.06841759746
+    },
+    {
+      "index": 73,
+      "name": "am-2234-half-14",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 1.4210854715202004e-14,
+      "volumeMm3": 71634.06841759244
+    },
+    {
+      "index": 74,
+      "name": "am-2234-half-15",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 5.684341886080802e-14,
+      "volumeMm3": 71634.06841765149
+    },
+    {
+      "index": 75,
+      "name": "am-2234-half-16",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 7.156688829955214e-15,
+      "volumeMm3": 71634.06841765073
+    },
+    {
+      "index": 76,
+      "name": "am-2568-2",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 2.8950637442903826e-09,
+      "volumeMm3": 61165.1778631897
+    },
+    {
+      "index": 77,
+      "name": "am-1305-2",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 1.492679757575388e-09,
+      "volumeMm3": 9268.266680023731
+    },
+    {
+      "index": 78,
+      "name": "am-2571-3",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 5.684341886080802e-14,
+      "volumeMm3": 331928.1325004161
+    },
+    {
+      "index": 79,
+      "name": "am-2571-4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 1.4210854715202004e-14,
+      "volumeMm3": 331928.13250040717
+    },
+    {
+      "index": 80,
+      "name": "am-1297-3",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 36,
+      "centroidErrorMm": 1.7235919358427054e-09,
+      "volumeMm3": 24352.23515681226
+    },
+    {
+      "index": 81,
+      "name": "am-1297-4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 36,
+      "centroidErrorMm": 1.7235919358427054e-09,
+      "volumeMm3": 24352.23515681226
+    },
+    {
+      "index": 82,
+      "name": "am-0255-3",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 5.684341886080802e-14,
+      "volumeMm3": 634757.2691529427
+    },
+    {
+      "index": 83,
+      "name": "am-0255-4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 8.526512829121202e-14,
+      "volumeMm3": 634757.2691528291
+    },
+    {
+      "index": 84,
+      "name": "fixed bumper side backing -1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 1.4210854715202004e-14,
+      "volumeMm3": 1831868.916899994
+    },
+    {
+      "index": 85,
+      "name": "fixed bumper side noodle -1 0",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 28,
+      "centroidErrorMm": 6.640007654823421e-09,
+      "volumeMm3": 2397910.804863454
+    },
+    {
+      "index": 86,
+      "name": "fixed bumper side noodle -1 1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 28,
+      "centroidErrorMm": 6.640021865678136e-09,
+      "volumeMm3": 2397910.804863454
+    },
+    {
+      "index": 87,
+      "name": "fixed bumper side backing 1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 5.684341886080802e-14,
+      "volumeMm3": 1831868.916899994
+    },
+    {
+      "index": 88,
+      "name": "fixed bumper side noodle 1 0",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 28,
+      "centroidErrorMm": 6.640021865678136e-09,
+      "volumeMm3": 2397910.804863454
+    },
+    {
+      "index": 89,
+      "name": "fixed bumper side noodle 1 1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 28,
+      "centroidErrorMm": 6.639993443968706e-09,
+      "volumeMm3": 2397910.804863454
+    },
+    {
+      "index": 90,
+      "name": "fixed bumper end backing -1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 1.4210854715202004e-14,
+      "volumeMm3": 1720641.7200000011
+    },
+    {
+      "index": 91,
+      "name": "fixed bumper end noodle -1 0",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 28,
+      "centroidErrorMm": 6.640064498242282e-09,
+      "volumeMm3": 2372974.4630483687
+    },
+    {
+      "index": 92,
+      "name": "fixed bumper end noodle -1 1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 28,
+      "centroidErrorMm": 6.640050287387567e-09,
+      "volumeMm3": 2372974.4630483687
+    },
+    {
+      "index": 93,
+      "name": "fixed bumper end backing 1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 1.4210854715202004e-14,
+      "volumeMm3": 1720641.7200000011
+    },
+    {
+      "index": 94,
+      "name": "fixed bumper end noodle 1 0",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 28,
+      "centroidErrorMm": 6.640064498242282e-09,
+      "volumeMm3": 2372974.4630483687
+    },
+    {
+      "index": 95,
+      "name": "fixed bumper end noodle 1 1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 28,
+      "centroidErrorMm": 6.640050287387567e-09,
+      "volumeMm3": 2372974.4630483687
+    },
+    {
+      "index": 96,
+      "name": "original rigid front backing support proposal",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 1.1368683772161603e-13,
+      "volumeMm3": 286773.6199999959
+    },
+    {
+      "index": 97,
+      "name": "frame fastening bridge-0",
+      "group": "fixed",
+      "bodies": 2,
+      "triangles": 288,
+      "centroidErrorMm": 1.8047785488306545e-12,
+      "volumeMm3": 86367.72668436376
+    },
+    {
+      "index": 98,
+      "name": "frame fastening adapter-0--1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 112,
+      "centroidErrorMm": 6.195932655828074e-12,
+      "volumeMm3": 12547.850402061546
+    },
+    {
+      "index": 99,
+      "name": "frame fastening sleeve-0--1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 84,
+      "centroidErrorMm": 1.196156063087983e-09,
+      "volumeMm3": 2174.046807213833
+    },
+    {
+      "index": 100,
+      "name": "frame fastening bolt-0--1-tube",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 24,
+      "centroidErrorMm": 5.044711315349559e-10,
+      "volumeMm3": 1277.705978680015
+    },
+    {
+      "index": 101,
+      "name": "frame fastening head-0--1-tube",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 4.182680868325406e-10,
+      "volumeMm3": 251.32741228719408
+    },
+    {
+      "index": 102,
+      "name": "frame fastening nut-0--1-tube",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 140,
+      "centroidErrorMm": 6.616573955398053e-10,
+      "volumeMm3": 477.6085365884681
+    },
+    {
+      "index": 103,
+      "name": "frame fastening bolt-0--1-rail0",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.046558726462536e-10,
+      "volumeMm3": 348.46526691272993
+    },
+    {
+      "index": 104,
+      "name": "frame fastening head-0--1-rail0",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 4.182822976872558e-10,
+      "volumeMm3": 251.32741228719425
+    },
+    {
+      "index": 105,
+      "name": "frame fastening nut-0--1-rail0",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 140,
+      "centroidErrorMm": 6.616502901124477e-10,
+      "volumeMm3": 477.6085365884649
+    },
+    {
+      "index": 106,
+      "name": "frame fastening bolt-0--1-rail1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.046558726462536e-10,
+      "volumeMm3": 348.46526691272993
+    },
+    {
+      "index": 107,
+      "name": "frame fastening head-0--1-rail1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 4.182822976872558e-10,
+      "volumeMm3": 251.32741228719408
+    },
+    {
+      "index": 108,
+      "name": "frame fastening nut-0--1-rail1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 140,
+      "centroidErrorMm": 6.616573955398053e-10,
+      "volumeMm3": 477.6085365884651
+    },
+    {
+      "index": 109,
+      "name": "frame fastening adapter-0-1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 112,
+      "centroidErrorMm": 6.224354365258478e-12,
+      "volumeMm3": 12547.850402061546
+    },
+    {
+      "index": 110,
+      "name": "frame fastening sleeve-0-1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 84,
+      "centroidErrorMm": 1.196156063087983e-09,
+      "volumeMm3": 2174.046807213833
+    },
+    {
+      "index": 111,
+      "name": "frame fastening bolt-0-1-tube",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 24,
+      "centroidErrorMm": 5.044711315349559e-10,
+      "volumeMm3": 1277.705978680015
+    },
+    {
+      "index": 112,
+      "name": "frame fastening head-0-1-tube",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 4.182680868325406e-10,
+      "volumeMm3": 251.32741228719408
+    },
+    {
+      "index": 113,
+      "name": "frame fastening nut-0-1-tube",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 140,
+      "centroidErrorMm": 6.616573955398053e-10,
+      "volumeMm3": 477.6085365884681
+    },
+    {
+      "index": 114,
+      "name": "frame fastening bolt-0-1-rail0",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.046558726462536e-10,
+      "volumeMm3": 348.46526691272993
+    },
+    {
+      "index": 115,
+      "name": "frame fastening head-0-1-rail0",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 4.182822976872558e-10,
+      "volumeMm3": 251.32741228719425
+    },
+    {
+      "index": 116,
+      "name": "frame fastening nut-0-1-rail0",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 140,
+      "centroidErrorMm": 6.616502901124477e-10,
+      "volumeMm3": 477.6085365884649
+    },
+    {
+      "index": 117,
+      "name": "frame fastening bolt-0-1-rail1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.046558726462536e-10,
+      "volumeMm3": 348.46526691272993
+    },
+    {
+      "index": 118,
+      "name": "frame fastening head-0-1-rail1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 4.182822976872558e-10,
+      "volumeMm3": 251.32741228719408
+    },
+    {
+      "index": 119,
+      "name": "frame fastening nut-0-1-rail1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 140,
+      "centroidErrorMm": 6.616573955398053e-10,
+      "volumeMm3": 477.6085365884651
+    },
+    {
+      "index": 120,
+      "name": "frame fastening bridge-1",
+      "group": "fixed",
+      "bodies": 2,
+      "triangles": 288,
+      "centroidErrorMm": 2.0463630789890885e-12,
+      "volumeMm3": 86367.72668436395
+    },
+    {
+      "index": 121,
+      "name": "frame fastening adapter-1--1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 112,
+      "centroidErrorMm": 6.252776074688882e-12,
+      "volumeMm3": 12547.850402061546
+    },
+    {
+      "index": 122,
+      "name": "frame fastening sleeve-1--1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 84,
+      "centroidErrorMm": 1.1963834367634263e-09,
+      "volumeMm3": 2174.0468072138306
+    },
+    {
+      "index": 123,
+      "name": "frame fastening bolt-1--1-tube",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 24,
+      "centroidErrorMm": 5.035190042690374e-10,
+      "volumeMm3": 1277.705978680014
+    },
+    {
+      "index": 124,
+      "name": "frame fastening head-1--1-tube",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 4.1825387597782537e-10,
+      "volumeMm3": 251.32741228719425
+    },
+    {
+      "index": 125,
+      "name": "frame fastening nut-1--1-tube",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 140,
+      "centroidErrorMm": 6.616005521209445e-10,
+      "volumeMm3": 477.60853658846816
+    },
+    {
+      "index": 126,
+      "name": "frame fastening bolt-1--1-rail0",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.046558726462536e-10,
+      "volumeMm3": 348.46526691272993
+    },
+    {
+      "index": 127,
+      "name": "frame fastening head-1--1-rail0",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 4.1819703255896457e-10,
+      "volumeMm3": 251.32741228719425
+    },
+    {
+      "index": 128,
+      "name": "frame fastening nut-1--1-rail0",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 140,
+      "centroidErrorMm": 6.617142389586661e-10,
+      "volumeMm3": 477.60853658846526
+    },
+    {
+      "index": 129,
+      "name": "frame fastening bolt-1--1-rail1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.046558726462536e-10,
+      "volumeMm3": 348.46526691272993
+    },
+    {
+      "index": 130,
+      "name": "frame fastening head-1--1-rail1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 4.183107193966862e-10,
+      "volumeMm3": 251.32741228719397
+    },
+    {
+      "index": 131,
+      "name": "frame fastening nut-1--1-rail1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 140,
+      "centroidErrorMm": 6.616573955398053e-10,
+      "volumeMm3": 477.6085365884657
+    },
+    {
+      "index": 132,
+      "name": "frame fastening adapter-1-1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 112,
+      "centroidErrorMm": 6.139089236967266e-12,
+      "volumeMm3": 12547.850402061546
+    },
+    {
+      "index": 133,
+      "name": "frame fastening sleeve-1-1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 84,
+      "centroidErrorMm": 1.1963834367634263e-09,
+      "volumeMm3": 2174.0468072138306
+    },
+    {
+      "index": 134,
+      "name": "frame fastening bolt-1-1-tube",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 24,
+      "centroidErrorMm": 5.035190042690374e-10,
+      "volumeMm3": 1277.705978680014
+    },
+    {
+      "index": 135,
+      "name": "frame fastening head-1-1-tube",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 4.1825387597782537e-10,
+      "volumeMm3": 251.32741228719425
+    },
+    {
+      "index": 136,
+      "name": "frame fastening nut-1-1-tube",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 140,
+      "centroidErrorMm": 6.617142389586661e-10,
+      "volumeMm3": 477.60853658846816
+    },
+    {
+      "index": 137,
+      "name": "frame fastening bolt-1-1-rail0",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.046558726462536e-10,
+      "volumeMm3": 348.46526691272993
+    },
+    {
+      "index": 138,
+      "name": "frame fastening head-1-1-rail0",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 4.1819703255896457e-10,
+      "volumeMm3": 251.32741228719425
+    },
+    {
+      "index": 139,
+      "name": "frame fastening nut-1-1-rail0",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 140,
+      "centroidErrorMm": 6.617142389586661e-10,
+      "volumeMm3": 477.60853658846526
+    },
+    {
+      "index": 140,
+      "name": "frame fastening bolt-1-1-rail1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.046558726462536e-10,
+      "volumeMm3": 348.46526691272993
+    },
+    {
+      "index": 141,
+      "name": "frame fastening head-1-1-rail1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 4.183107193966862e-10,
+      "volumeMm3": 251.32741228719397
+    },
+    {
+      "index": 142,
+      "name": "frame fastening nut-1-1-rail1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 140,
+      "centroidErrorMm": 6.616005521209445e-10,
+      "volumeMm3": 477.6085365884657
+    },
+    {
+      "index": 143,
+      "name": "original shooter side rail -1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 32,
+      "centroidErrorMm": 1.659827830735594e-11,
+      "volumeMm3": 112903.00000007375
+    },
+    {
+      "index": 144,
+      "name": "original shooter upright -1 279.4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 1.0231815394945443e-12,
+      "volumeMm3": 130528.74748587869
+    },
+    {
+      "index": 145,
+      "name": "original carrier connection web -1 -1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 3.865352482534945e-12,
+      "volumeMm3": 45053.35120311643
+    },
+    {
+      "index": 146,
+      "name": "original carrier connection web -1 1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 3.751665644813329e-12,
+      "volumeMm3": 45053.35120311639
+    },
+    {
+      "index": 147,
+      "name": "original shooter side rail 1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 32,
+      "centroidErrorMm": 1.659827830735594e-11,
+      "volumeMm3": 112903.00000007375
+    },
+    {
+      "index": 148,
+      "name": "original shooter upright 1 279.4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 9.094947017729282e-13,
+      "volumeMm3": 130528.74748587869
+    },
+    {
+      "index": 149,
+      "name": "original carrier connection web 1 -1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 3.524291969370097e-12,
+      "volumeMm3": 46586.311846866134
+    },
+    {
+      "index": 150,
+      "name": "original carrier connection web 1 1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 3.751665644813329e-12,
+      "volumeMm3": 46586.31184686607
+    },
+    {
+      "index": 151,
+      "name": "cartridge -1 -152.4 original wheel shell representation",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 164,
+      "centroidErrorMm": 1.6047124518081546e-08,
+      "volumeMm3": 42381.72610909962
+    },
+    {
+      "index": 152,
+      "name": "cartridge -1 -152.4 nominal tread annulus",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 168,
+      "centroidErrorMm": 1.4779288903810084e-12,
+      "volumeMm3": 19048.147554233154
+    },
+    {
+      "index": 153,
+      "name": "cartridge -1 -152.4 shaft round envelope (hex omitted)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 28,
+      "centroidErrorMm": 1.438365870853886e-09,
+      "volumeMm3": 23758.29444277335
+    },
+    {
+      "index": 154,
+      "name": "cartridge -1 -152.4 drilled bearing carrier -40",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 156,
+      "centroidErrorMm": 1.5427303878823295e-10,
+      "volumeMm3": 18030.93898862238
+    },
+    {
+      "index": 155,
+      "name": "cartridge -1 -152.4 bearing envelope -40",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.496403001510771e-09,
+      "volumeMm3": 3129.358187330691
+    },
+    {
+      "index": 156,
+      "name": "cartridge -1 -152.4 drilled bearing carrier 40",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 156,
+      "centroidErrorMm": 1.5438672562595457e-10,
+      "volumeMm3": 18030.93898862238
+    },
+    {
+      "index": 157,
+      "name": "cartridge -1 -152.4 bearing envelope 40",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.496403001510771e-09,
+      "volumeMm3": 3129.3581873306816
+    },
+    {
+      "index": 158,
+      "name": "cartridge -1 -152.4 collar envelope -47.14375",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.3689032130059786e-09,
+      "volumeMm3": 2274.685181571667
+    },
+    {
+      "index": 159,
+      "name": "cartridge -1 -152.4 collar envelope 47.14375",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.3689032130059786e-09,
+      "volumeMm3": 2274.68518157166
+    },
+    {
+      "index": 160,
+      "name": "cartridge -1 -152.4 collar envelope 73",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.3690168998437002e-09,
+      "volumeMm3": 2274.68518157166
+    },
+    {
+      "index": 161,
+      "name": "cartridge -1 -152.4 NEO body envelope",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 76,
+      "centroidErrorMm": 2.7167743610334583e-09,
+      "volumeMm3": 164980.73820327516
+    },
+    {
+      "index": 162,
+      "name": "cartridge -1 -152.4 drilled motor slider",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 248,
+      "centroidErrorMm": 6.656364348600619e-11,
+      "volumeMm3": 14990.92032102665
+    },
+    {
+      "index": 163,
+      "name": "cartridge -1 -152.4 slotted carrier bridge proposal",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 464,
+      "centroidErrorMm": 2.9405100576695986e-10,
+      "volumeMm3": 35993.052402845446
+    },
+    {
+      "index": 164,
+      "name": "cartridge -1 -152.4 tension jack nominal screw envelope",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 4.382627594168298e-10,
+      "volumeMm3": 292.67423992684326
+    },
+    {
+      "index": 165,
+      "name": "cartridge -1 -152.4 tension jack head envelope",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 72,
+      "centroidErrorMm": 7.059952622512355e-10,
+      "volumeMm3": 229.36139645306054
+    },
+    {
+      "index": 166,
+      "name": "cartridge -1 -152.4 bridge spacer -25.4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 144,
+      "centroidErrorMm": 4.939124664815608e-10,
+      "volumeMm3": 279.17880925851557
+    },
+    {
+      "index": 167,
+      "name": "cartridge -1 -152.4 bridge bolt nominal -25.4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.046558726462536e-10,
+      "volumeMm3": 348.46526691275216
+    },
+    {
+      "index": 168,
+      "name": "cartridge -1 -152.4 bridge spacer 25.4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 144,
+      "centroidErrorMm": 4.937987796438392e-10,
+      "volumeMm3": 279.17880925851557
+    },
+    {
+      "index": 169,
+      "name": "cartridge -1 -152.4 bridge bolt nominal 25.4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.047695594839752e-10,
+      "volumeMm3": 348.46526691275204
+    },
+    {
+      "index": 170,
+      "name": "cartridge -1 -152.4 slider clamp screw nominal (-28, -28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 56,
+      "centroidErrorMm": 5.045421858085319e-10,
+      "volumeMm3": 232.3101779418347
+    },
+    {
+      "index": 171,
+      "name": "cartridge -1 -152.4 slider clamp head nominal (-28, -28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.53225004801061e-10,
+      "volumeMm3": 229.36139645329456
+    },
+    {
+      "index": 172,
+      "name": "cartridge -1 -152.4 slider clamp nut envelope (-28, -28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 144,
+      "centroidErrorMm": 5.045990292273927e-10,
+      "volumeMm3": 264.4440485627927
+    },
+    {
+      "index": 173,
+      "name": "cartridge -1 -152.4 slider clamp screw nominal (-28, 28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 56,
+      "centroidErrorMm": 5.047695594839752e-10,
+      "volumeMm3": 232.3101779418347
+    },
+    {
+      "index": 174,
+      "name": "cartridge -1 -152.4 slider clamp head nominal (-28, 28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.53225004801061e-10,
+      "volumeMm3": 229.36139645329456
+    },
+    {
+      "index": 175,
+      "name": "cartridge -1 -152.4 slider clamp nut envelope (-28, 28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 144,
+      "centroidErrorMm": 5.044853423896711e-10,
+      "volumeMm3": 264.4440485627949
+    },
+    {
+      "index": 176,
+      "name": "cartridge -1 -152.4 slider clamp screw nominal (28, -28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 56,
+      "centroidErrorMm": 5.046558726462536e-10,
+      "volumeMm3": 232.3101779418347
+    },
+    {
+      "index": 177,
+      "name": "cartridge -1 -152.4 slider clamp head nominal (28, -28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.53225004801061e-10,
+      "volumeMm3": 229.36139645329456
+    },
+    {
+      "index": 178,
+      "name": "cartridge -1 -152.4 slider clamp nut envelope (28, -28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 144,
+      "centroidErrorMm": 5.047127160651144e-10,
+      "volumeMm3": 264.4440485627927
+    },
+    {
+      "index": 179,
+      "name": "cartridge -1 -152.4 slider clamp screw nominal (28, 28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 56,
+      "centroidErrorMm": 5.047695594839752e-10,
+      "volumeMm3": 232.3101779418347
+    },
+    {
+      "index": 180,
+      "name": "cartridge -1 -152.4 slider clamp head nominal (28, 28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.532818482199218e-10,
+      "volumeMm3": 229.36139645329456
+    },
+    {
+      "index": 181,
+      "name": "cartridge -1 -152.4 slider clamp nut envelope (28, 28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 144,
+      "centroidErrorMm": 5.044853423896711e-10,
+      "volumeMm3": 264.4440485627949
+    },
+    {
+      "index": 182,
+      "name": "cartridge -1 -152.4 driven pulley envelope",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 140,
+      "centroidErrorMm": 1.4106831258686725e-09,
+      "volumeMm3": 7268.726423855331
+    },
+    {
+      "index": 183,
+      "name": "cartridge -1 -152.4 driver pulley envelope",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 128,
+      "centroidErrorMm": 1.2751115718856454e-09,
+      "volumeMm3": 9206.822684063285
+    },
+    {
+      "index": 184,
+      "name": "cartridge -1 -152.4 belt pitch band representation",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 160,
+      "centroidErrorMm": 2.7853275241795927e-12,
+      "volumeMm3": 9677.39999999235
+    },
+    {
+      "index": 185,
+      "name": "cartridge -1 -152.4 motor withdrawal reserve",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 1.1709744285326451e-11,
+      "volumeMm3": 392000.0000000422
+    },
+    {
+      "index": 186,
+      "name": "cartridge -1 152.4 original wheel shell representation",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 164,
+      "centroidErrorMm": 1.604752242201357e-08,
+      "volumeMm3": 42381.72610909956
+    },
+    {
+      "index": 187,
+      "name": "cartridge -1 152.4 nominal tread annulus",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 168,
+      "centroidErrorMm": 1.0800249583553523e-12,
+      "volumeMm3": 19048.147554233154
+    },
+    {
+      "index": 188,
+      "name": "cartridge -1 152.4 shaft round envelope (hex omitted)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 28,
+      "centroidErrorMm": 1.4388206182047725e-09,
+      "volumeMm3": 23758.294442773346
+    },
+    {
+      "index": 189,
+      "name": "cartridge -1 152.4 drilled bearing carrier -40",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 156,
+      "centroidErrorMm": 1.5438672562595457e-10,
+      "volumeMm3": 18030.938988622587
+    },
+    {
+      "index": 190,
+      "name": "cartridge -1 152.4 bearing envelope -40",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.496403001510771e-09,
+      "volumeMm3": 3129.3581873306744
+    },
+    {
+      "index": 191,
+      "name": "cartridge -1 152.4 drilled bearing carrier 40",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 156,
+      "centroidErrorMm": 1.5444356904481538e-10,
+      "volumeMm3": 18030.938988622587
+    },
+    {
+      "index": 192,
+      "name": "cartridge -1 152.4 bearing envelope 40",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.4963461580919102e-09,
+      "volumeMm3": 3129.3581873307085
+    },
+    {
+      "index": 193,
+      "name": "cartridge -1 152.4 collar envelope -47.14375",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.3690168998437002e-09,
+      "volumeMm3": 2274.68518157166
+    },
+    {
+      "index": 194,
+      "name": "cartridge -1 152.4 collar envelope 47.14375",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.3689032130059786e-09,
+      "volumeMm3": 2274.6851815716527
+    },
+    {
+      "index": 195,
+      "name": "cartridge -1 152.4 collar envelope 73",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.3690168998437002e-09,
+      "volumeMm3": 2274.685181571678
+    },
+    {
+      "index": 196,
+      "name": "cartridge -1 152.4 NEO body envelope",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 76,
+      "centroidErrorMm": 2.7167743610334583e-09,
+      "volumeMm3": 164980.73820327513
+    },
+    {
+      "index": 197,
+      "name": "cartridge -1 152.4 drilled motor slider",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 248,
+      "centroidErrorMm": 6.633626981056295e-11,
+      "volumeMm3": 14990.920321026822
+    },
+    {
+      "index": 198,
+      "name": "cartridge -1 152.4 slotted carrier bridge proposal",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 464,
+      "centroidErrorMm": 2.9342572815949097e-10,
+      "volumeMm3": 35993.0524028454
+    },
+    {
+      "index": 199,
+      "name": "cartridge -1 152.4 tension jack nominal screw envelope",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 4.382627594168298e-10,
+      "volumeMm3": 292.67423992684326
+    },
+    {
+      "index": 200,
+      "name": "cartridge -1 152.4 tension jack head envelope",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 72,
+      "centroidErrorMm": 7.059384188323747e-10,
+      "volumeMm3": 229.36139645306054
+    },
+    {
+      "index": 201,
+      "name": "cartridge -1 152.4 bridge spacer -25.4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 144,
+      "centroidErrorMm": 4.939124664815608e-10,
+      "volumeMm3": 279.17880925851557
+    },
+    {
+      "index": 202,
+      "name": "cartridge -1 152.4 bridge bolt nominal -25.4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.047695594839752e-10,
+      "volumeMm3": 348.4652669127525
+    },
+    {
+      "index": 203,
+      "name": "cartridge -1 152.4 bridge spacer 25.4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 144,
+      "centroidErrorMm": 4.937987796438392e-10,
+      "volumeMm3": 279.17880925851557
+    },
+    {
+      "index": 204,
+      "name": "cartridge -1 152.4 bridge bolt nominal 25.4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.047695594839752e-10,
+      "volumeMm3": 348.46526691275244
+    },
+    {
+      "index": 205,
+      "name": "cartridge -1 152.4 slider clamp screw nominal (-28, -28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 56,
+      "centroidErrorMm": 5.047695594839752e-10,
+      "volumeMm3": 232.3101779418347
+    },
+    {
+      "index": 206,
+      "name": "cartridge -1 152.4 slider clamp head nominal (-28, -28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.531681613822002e-10,
+      "volumeMm3": 229.36139645329456
+    },
+    {
+      "index": 207,
+      "name": "cartridge -1 152.4 slider clamp nut envelope (-28, -28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 144,
+      "centroidErrorMm": 5.045990292273927e-10,
+      "volumeMm3": 264.4440485627927
+    },
+    {
+      "index": 208,
+      "name": "cartridge -1 152.4 slider clamp screw nominal (-28, 28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 56,
+      "centroidErrorMm": 5.047695594839752e-10,
+      "volumeMm3": 232.3101779418347
+    },
+    {
+      "index": 209,
+      "name": "cartridge -1 152.4 slider clamp head nominal (-28, 28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.53225004801061e-10,
+      "volumeMm3": 229.36139645329456
+    },
+    {
+      "index": 210,
+      "name": "cartridge -1 152.4 slider clamp nut envelope (-28, 28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 144,
+      "centroidErrorMm": 5.047127160651144e-10,
+      "volumeMm3": 264.4440485627949
+    },
+    {
+      "index": 211,
+      "name": "cartridge -1 152.4 slider clamp screw nominal (28, -28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 56,
+      "centroidErrorMm": 5.046558726462536e-10,
+      "volumeMm3": 232.3101779418347
+    },
+    {
+      "index": 212,
+      "name": "cartridge -1 152.4 slider clamp head nominal (28, -28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.53225004801061e-10,
+      "volumeMm3": 229.36139645329456
+    },
+    {
+      "index": 213,
+      "name": "cartridge -1 152.4 slider clamp nut envelope (28, -28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 144,
+      "centroidErrorMm": 5.047127160651144e-10,
+      "volumeMm3": 264.4440485627927
+    },
+    {
+      "index": 214,
+      "name": "cartridge -1 152.4 slider clamp screw nominal (28, 28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 56,
+      "centroidErrorMm": 5.047695594839752e-10,
+      "volumeMm3": 232.3101779418347
+    },
+    {
+      "index": 215,
+      "name": "cartridge -1 152.4 slider clamp head nominal (28, 28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.532818482199218e-10,
+      "volumeMm3": 229.36139645329456
+    },
+    {
+      "index": 216,
+      "name": "cartridge -1 152.4 slider clamp nut envelope (28, 28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 144,
+      "centroidErrorMm": 5.045990292273927e-10,
+      "volumeMm3": 264.4440485627949
+    },
+    {
+      "index": 217,
+      "name": "cartridge -1 152.4 driven pulley envelope",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 140,
+      "centroidErrorMm": 1.4107968127063941e-09,
+      "volumeMm3": 7268.726423855316
+    },
+    {
+      "index": 218,
+      "name": "cartridge -1 152.4 driver pulley envelope",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 128,
+      "centroidErrorMm": 1.2750547284667846e-09,
+      "volumeMm3": 9206.822684063269
+    },
+    {
+      "index": 219,
+      "name": "cartridge -1 152.4 belt pitch band representation",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 160,
+      "centroidErrorMm": 2.8421709430404007e-12,
+      "volumeMm3": 9677.399999992342
+    },
+    {
+      "index": 220,
+      "name": "cartridge -1 152.4 motor withdrawal reserve",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 1.1709744285326451e-11,
+      "volumeMm3": 392000.0000000422
+    },
+    {
+      "index": 221,
+      "name": "cartridge 1 -152.4 original wheel shell representation",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 164,
+      "centroidErrorMm": 1.6047607687141863e-08,
+      "volumeMm3": 42381.72610909962
+    },
+    {
+      "index": 222,
+      "name": "cartridge 1 -152.4 nominal tread annulus",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 168,
+      "centroidErrorMm": 6.821210263296962e-13,
+      "volumeMm3": 19048.147554233183
+    },
+    {
+      "index": 223,
+      "name": "cartridge 1 -152.4 shaft round envelope (hex omitted)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 28,
+      "centroidErrorMm": 1.4391616787179373e-09,
+      "volumeMm3": 23758.29444277338
+    },
+    {
+      "index": 224,
+      "name": "cartridge 1 -152.4 drilled bearing carrier -40",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 156,
+      "centroidErrorMm": 1.5450041246367618e-10,
+      "volumeMm3": 18030.93898862239
+    },
+    {
+      "index": 225,
+      "name": "cartridge 1 -152.4 bearing envelope -40",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.4963461580919102e-09,
+      "volumeMm3": 3129.3581873306875
+    },
+    {
+      "index": 226,
+      "name": "cartridge 1 -152.4 drilled bearing carrier 40",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 156,
+      "centroidErrorMm": 1.5447199075424578e-10,
+      "volumeMm3": 18030.93898862239
+    },
+    {
+      "index": 227,
+      "name": "cartridge 1 -152.4 bearing envelope 40",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.4963461580919102e-09,
+      "volumeMm3": 3129.358187330679
+    },
+    {
+      "index": 228,
+      "name": "cartridge 1 -152.4 collar envelope -47.14375",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.368931634715409e-09,
+      "volumeMm3": 2274.685181571663
+    },
+    {
+      "index": 229,
+      "name": "cartridge 1 -152.4 collar envelope 47.14375",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.3689884781342698e-09,
+      "volumeMm3": 2274.685181571658
+    },
+    {
+      "index": 230,
+      "name": "cartridge 1 -152.4 collar envelope 73",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.3689032130059786e-09,
+      "volumeMm3": 2274.685181571658
+    },
+    {
+      "index": 231,
+      "name": "cartridge 1 -152.4 NEO body envelope",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 76,
+      "centroidErrorMm": 2.7167175176145975e-09,
+      "volumeMm3": 164980.7382032751
+    },
+    {
+      "index": 232,
+      "name": "cartridge 1 -152.4 drilled motor slider",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 248,
+      "centroidErrorMm": 6.644995664828457e-11,
+      "volumeMm3": 14990.92032102665
+    },
+    {
+      "index": 233,
+      "name": "cartridge 1 -152.4 slotted carrier bridge proposal",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 464,
+      "centroidErrorMm": 2.957563083327841e-10,
+      "volumeMm3": 35993.052402844114
+    },
+    {
+      "index": 234,
+      "name": "cartridge 1 -152.4 tension jack nominal screw envelope",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 4.384332896734122e-10,
+      "volumeMm3": 292.67423992684263
+    },
+    {
+      "index": 235,
+      "name": "cartridge 1 -152.4 tension jack head envelope",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 72,
+      "centroidErrorMm": 7.060521056700964e-10,
+      "volumeMm3": 229.36139645306133
+    },
+    {
+      "index": 236,
+      "name": "cartridge 1 -152.4 bridge spacer -25.4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 144,
+      "centroidErrorMm": 4.938272013532696e-10,
+      "volumeMm3": 279.1788092585133
+    },
+    {
+      "index": 237,
+      "name": "cartridge 1 -152.4 bridge bolt nominal -25.4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.047695594839752e-10,
+      "volumeMm3": 348.4652669127521
+    },
+    {
+      "index": 238,
+      "name": "cartridge 1 -152.4 bridge spacer 25.4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 144,
+      "centroidErrorMm": 4.937987796438392e-10,
+      "volumeMm3": 279.17880925851483
+    },
+    {
+      "index": 239,
+      "name": "cartridge 1 -152.4 bridge bolt nominal 25.4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.047695594839752e-10,
+      "volumeMm3": 348.4652669127522
+    },
+    {
+      "index": 240,
+      "name": "cartridge 1 -152.4 slider clamp screw nominal (-28, -28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 56,
+      "centroidErrorMm": 5.047695594839752e-10,
+      "volumeMm3": 232.3101779418347
+    },
+    {
+      "index": 241,
+      "name": "cartridge 1 -152.4 slider clamp head nominal (-28, -28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.531113179633394e-10,
+      "volumeMm3": 229.36139645329456
+    },
+    {
+      "index": 242,
+      "name": "cartridge 1 -152.4 slider clamp nut envelope (-28, -28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 144,
+      "centroidErrorMm": 5.046558726462536e-10,
+      "volumeMm3": 264.4440485627943
+    },
+    {
+      "index": 243,
+      "name": "cartridge 1 -152.4 slider clamp screw nominal (-28, 28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 56,
+      "centroidErrorMm": 5.046558726462536e-10,
+      "volumeMm3": 232.31017794183478
+    },
+    {
+      "index": 244,
+      "name": "cartridge 1 -152.4 slider clamp head nominal (-28, 28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.531965830916306e-10,
+      "volumeMm3": 229.36139645329456
+    },
+    {
+      "index": 245,
+      "name": "cartridge 1 -152.4 slider clamp nut envelope (-28, 28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 144,
+      "centroidErrorMm": 5.046558726462536e-10,
+      "volumeMm3": 264.44404856279374
+    },
+    {
+      "index": 246,
+      "name": "cartridge 1 -152.4 slider clamp screw nominal (28, -28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 56,
+      "centroidErrorMm": 5.046558726462536e-10,
+      "volumeMm3": 232.3101779418347
+    },
+    {
+      "index": 247,
+      "name": "cartridge 1 -152.4 slider clamp head nominal (28, -28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.531681613822002e-10,
+      "volumeMm3": 229.36139645329456
+    },
+    {
+      "index": 248,
+      "name": "cartridge 1 -152.4 slider clamp nut envelope (28, -28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 144,
+      "centroidErrorMm": 5.045990292273927e-10,
+      "volumeMm3": 264.4440485627941
+    },
+    {
+      "index": 249,
+      "name": "cartridge 1 -152.4 slider clamp screw nominal (28, 28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 56,
+      "centroidErrorMm": 5.047695594839752e-10,
+      "volumeMm3": 232.31017794183478
+    },
+    {
+      "index": 250,
+      "name": "cartridge 1 -152.4 slider clamp head nominal (28, 28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.531681613822002e-10,
+      "volumeMm3": 229.36139645329456
+    },
+    {
+      "index": 251,
+      "name": "cartridge 1 -152.4 slider clamp nut envelope (28, 28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 144,
+      "centroidErrorMm": 5.046558726462536e-10,
+      "volumeMm3": 264.44404856279397
+    },
+    {
+      "index": 252,
+      "name": "cartridge 1 -152.4 driven pulley envelope",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 140,
+      "centroidErrorMm": 1.4107968127063941e-09,
+      "volumeMm3": 7268.726423855323
+    },
+    {
+      "index": 253,
+      "name": "cartridge 1 -152.4 driver pulley envelope",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 128,
+      "centroidErrorMm": 1.2751115718856454e-09,
+      "volumeMm3": 9206.822684063285
+    },
+    {
+      "index": 254,
+      "name": "cartridge 1 -152.4 belt pitch band representation",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 160,
+      "centroidErrorMm": 3.439026841078885e-12,
+      "volumeMm3": 9677.399999992158
+    },
+    {
+      "index": 255,
+      "name": "cartridge 1 -152.4 motor withdrawal reserve",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 8.981260180007666e-12,
+      "volumeMm3": 391999.99999999284
+    },
+    {
+      "index": 256,
+      "name": "cartridge 1 152.4 original wheel shell representation",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 164,
+      "centroidErrorMm": 1.6047664530560724e-08,
+      "volumeMm3": 42381.72610909962
+    },
+    {
+      "index": 257,
+      "name": "cartridge 1 152.4 nominal tread annulus",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 168,
+      "centroidErrorMm": 1.1368683772161603e-12,
+      "volumeMm3": 19048.147554233183
+    },
+    {
+      "index": 258,
+      "name": "cartridge 1 152.4 shaft round envelope (hex omitted)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 28,
+      "centroidErrorMm": 1.4391616787179373e-09,
+      "volumeMm3": 23758.294442773375
+    },
+    {
+      "index": 259,
+      "name": "cartridge 1 152.4 drilled bearing carrier -40",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 156,
+      "centroidErrorMm": 1.545288341731066e-10,
+      "volumeMm3": 18030.938988622587
+    },
+    {
+      "index": 260,
+      "name": "cartridge 1 152.4 bearing envelope -40",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.4963177363824798e-09,
+      "volumeMm3": 3129.35818733067
+    },
+    {
+      "index": 261,
+      "name": "cartridge 1 152.4 drilled bearing carrier 40",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 156,
+      "centroidErrorMm": 1.5447199075424578e-10,
+      "volumeMm3": 18030.938988622587
+    },
+    {
+      "index": 262,
+      "name": "cartridge 1 152.4 bearing envelope 40",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.4963177363824798e-09,
+      "volumeMm3": 3129.3581873307053
+    },
+    {
+      "index": 263,
+      "name": "cartridge 1 152.4 collar envelope -47.14375",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.3689032130059786e-09,
+      "volumeMm3": 2274.685181571658
+    },
+    {
+      "index": 264,
+      "name": "cartridge 1 152.4 collar envelope 47.14375",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.3689032130059786e-09,
+      "volumeMm3": 2274.6851815716514
+    },
+    {
+      "index": 265,
+      "name": "cartridge 1 152.4 collar envelope 73",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.3689032130059786e-09,
+      "volumeMm3": 2274.6851815716764
+    },
+    {
+      "index": 266,
+      "name": "cartridge 1 152.4 NEO body envelope",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 76,
+      "centroidErrorMm": 2.7167175176145975e-09,
+      "volumeMm3": 164980.73820327508
+    },
+    {
+      "index": 267,
+      "name": "cartridge 1 152.4 drilled motor slider",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 248,
+      "centroidErrorMm": 6.644995664828457e-11,
+      "volumeMm3": 14990.92032102682
+    },
+    {
+      "index": 268,
+      "name": "cartridge 1 152.4 slotted carrier bridge proposal",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 464,
+      "centroidErrorMm": 2.9893953978898935e-10,
+      "volumeMm3": 35993.05240284234
+    },
+    {
+      "index": 269,
+      "name": "cartridge 1 152.4 tension jack nominal screw envelope",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 4.384332896734122e-10,
+      "volumeMm3": 292.67423992684263
+    },
+    {
+      "index": 270,
+      "name": "cartridge 1 152.4 tension jack head envelope",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 72,
+      "centroidErrorMm": 7.059952622512355e-10,
+      "volumeMm3": 229.36139645306133
+    },
+    {
+      "index": 271,
+      "name": "cartridge 1 152.4 bridge spacer -25.4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 144,
+      "centroidErrorMm": 4.938272013532696e-10,
+      "volumeMm3": 279.1788092585133
+    },
+    {
+      "index": 272,
+      "name": "cartridge 1 152.4 bridge bolt nominal -25.4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.047695594839752e-10,
+      "volumeMm3": 348.4652669127525
+    },
+    {
+      "index": 273,
+      "name": "cartridge 1 152.4 bridge spacer 25.4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 144,
+      "centroidErrorMm": 4.938272013532696e-10,
+      "volumeMm3": 279.17880925851483
+    },
+    {
+      "index": 274,
+      "name": "cartridge 1 152.4 bridge bolt nominal 25.4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.046558726462536e-10,
+      "volumeMm3": 348.46526691275255
+    },
+    {
+      "index": 275,
+      "name": "cartridge 1 152.4 slider clamp screw nominal (-28, -28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 56,
+      "centroidErrorMm": 5.047695594839752e-10,
+      "volumeMm3": 232.3101779418347
+    },
+    {
+      "index": 276,
+      "name": "cartridge 1 152.4 slider clamp head nominal (-28, -28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.531681613822002e-10,
+      "volumeMm3": 229.36139645329456
+    },
+    {
+      "index": 277,
+      "name": "cartridge 1 152.4 slider clamp nut envelope (-28, -28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 144,
+      "centroidErrorMm": 5.046558726462536e-10,
+      "volumeMm3": 264.4440485627943
+    },
+    {
+      "index": 278,
+      "name": "cartridge 1 152.4 slider clamp screw nominal (-28, 28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 56,
+      "centroidErrorMm": 5.044284989708103e-10,
+      "volumeMm3": 232.31017794183478
+    },
+    {
+      "index": 279,
+      "name": "cartridge 1 152.4 slider clamp head nominal (-28, 28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.531681613822002e-10,
+      "volumeMm3": 229.36139645329456
+    },
+    {
+      "index": 280,
+      "name": "cartridge 1 152.4 slider clamp nut envelope (-28, 28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 144,
+      "centroidErrorMm": 5.04684294355684e-10,
+      "volumeMm3": 264.44404856279374
+    },
+    {
+      "index": 281,
+      "name": "cartridge 1 152.4 slider clamp screw nominal (28, -28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 56,
+      "centroidErrorMm": 5.046558726462536e-10,
+      "volumeMm3": 232.3101779418347
+    },
+    {
+      "index": 282,
+      "name": "cartridge 1 152.4 slider clamp head nominal (28, -28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.531681613822002e-10,
+      "volumeMm3": 229.36139645329456
+    },
+    {
+      "index": 283,
+      "name": "cartridge 1 152.4 slider clamp nut envelope (28, -28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 144,
+      "centroidErrorMm": 5.045421858085319e-10,
+      "volumeMm3": 264.4440485627941
+    },
+    {
+      "index": 284,
+      "name": "cartridge 1 152.4 slider clamp screw nominal (28, 28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 56,
+      "centroidErrorMm": 5.047695594839752e-10,
+      "volumeMm3": 232.31017794183478
+    },
+    {
+      "index": 285,
+      "name": "cartridge 1 152.4 slider clamp head nominal (28, 28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.531113179633394e-10,
+      "volumeMm3": 229.36139645329456
+    },
+    {
+      "index": 286,
+      "name": "cartridge 1 152.4 slider clamp nut envelope (28, 28)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 144,
+      "centroidErrorMm": 5.046558726462536e-10,
+      "volumeMm3": 264.44404856279397
+    },
+    {
+      "index": 287,
+      "name": "cartridge 1 152.4 driven pulley envelope",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 140,
+      "centroidErrorMm": 1.4108252344158245e-09,
+      "volumeMm3": 7268.726423855309
+    },
+    {
+      "index": 288,
+      "name": "cartridge 1 152.4 driver pulley envelope",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 128,
+      "centroidErrorMm": 1.274941041629063e-09,
+      "volumeMm3": 9206.822684063267
+    },
+    {
+      "index": 289,
+      "name": "cartridge 1 152.4 belt pitch band representation",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 160,
+      "centroidErrorMm": 3.524291969370097e-12,
+      "volumeMm3": 9677.399999992145
+    },
+    {
+      "index": 290,
+      "name": "cartridge 1 152.4 motor withdrawal reserve",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 8.86757334228605e-12,
+      "volumeMm3": 391999.99999999284
+    },
+    {
+      "index": 291,
+      "name": "battery",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 8.526512829121202e-14,
+      "volumeMm3": 2295235.421519976
+    },
+    {
+      "index": 292,
+      "name": "pdh",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 188,
+      "centroidErrorMm": 3.865352482534945e-12,
+      "volumeMm3": 1008544.9441538295
+    },
+    {
+      "index": 293,
+      "name": "roborio",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 2.842170943040401e-14,
+      "volumeMm3": 726329.3847073987
+    },
+    {
+      "index": 294,
+      "name": "radio",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 5.684341886080802e-14,
+      "volumeMm3": 168991.59750000003
+    },
+    {
+      "index": 295,
+      "name": "radio-power",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 5.684341886080802e-14,
+      "volumeMm3": 60491.310468750016
+    },
+    {
+      "index": 296,
+      "name": "main-breaker",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 156,
+      "centroidErrorMm": 4.3655745685100555e-11,
+      "volumeMm3": 140628.5769966238
+    },
+    {
+      "index": 297,
+      "name": "spark-1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 5.684341886080802e-14,
+      "volumeMm3": 62475.000000000015
+    },
+    {
+      "index": 298,
+      "name": "spark-2",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 5.684341886080802e-14,
+      "volumeMm3": 62475.000000000015
+    },
+    {
+      "index": 299,
+      "name": "spark-3",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 5.684341886080802e-14,
+      "volumeMm3": 62475.000000000015
+    },
+    {
+      "index": 300,
+      "name": "spark-4",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 5.684341886080802e-14,
+      "volumeMm3": 62475.000000000015
+    },
+    {
+      "index": 301,
+      "name": "spark-5",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 1.4210854715202004e-14,
+      "volumeMm3": 62475.000000000015
+    },
+    {
+      "index": 302,
+      "name": "spark-6",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 7.105427357601002e-15,
+      "volumeMm3": 62475.000000000015
+    },
+    {
+      "index": 303,
+      "name": "spark-7",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 0.0,
+      "volumeMm3": 62475.000000000015
+    },
+    {
+      "index": 304,
+      "name": "spark-8",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 0.0,
+      "volumeMm3": 62475.000000000015
+    },
+    {
+      "index": 305,
+      "name": "spark-9",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 1.4210854715202004e-14,
+      "volumeMm3": 62475.000000000015
+    },
+    {
+      "index": 306,
+      "name": "spark-10",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 1.4210854715202004e-14,
+      "volumeMm3": 62475.000000000015
+    },
+    {
+      "index": 307,
+      "name": "spark-11",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 1.4210854715202004e-14,
+      "volumeMm3": 62475.000000000015
+    },
+    {
+      "index": 308,
+      "name": "spark-12",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 1.4210854715202004e-14,
+      "volumeMm3": 62475.000000000015
+    },
+    {
+      "index": 309,
+      "name": "controller-deck",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 540,
+      "centroidErrorMm": 1.4779288903810084e-12,
+      "volumeMm3": 593066.4658891319
+    },
+    {
+      "index": 310,
+      "name": "pdh-deck",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 204,
+      "centroidErrorMm": 2.0179413695586845e-12,
+      "volumeMm3": 117029.80093337371
+    },
+    {
+      "index": 311,
+      "name": "rio-removable-deck",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 108,
+      "centroidErrorMm": 1.2221335055073723e-12,
+      "volumeMm3": 86114.90046668689
+    },
+    {
+      "index": 312,
+      "name": "radio-removable-deck",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 108,
+      "centroidErrorMm": 1.1084466677857563e-12,
+      "volumeMm3": 86114.90046668593
+    },
+    {
+      "index": 313,
+      "name": "battery-tray",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 164,
+      "centroidErrorMm": 1.4779288903810084e-12,
+      "volumeMm3": 56347.40046668684
+    },
+    {
+      "index": 314,
+      "name": "battery-end-stop--298",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 5.684341886080802e-14,
+      "volumeMm3": 10080.000000000022
+    },
+    {
+      "index": 315,
+      "name": "battery-end-stop--102",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 1.4210854715202004e-14,
+      "volumeMm3": 10080.000000000022
+    },
+    {
+      "index": 316,
+      "name": "aft-electrical-beam--266.7",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 224,
+      "centroidErrorMm": 1.3642420526593924e-12,
+      "volumeMm3": 137406.3439461531
+    },
+    {
+      "index": 317,
+      "name": "aft-adapter--266.7--1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 100,
+      "centroidErrorMm": 9.947598300641403e-12,
+      "volumeMm3": 5529.933644457814
+    },
+    {
+      "index": 318,
+      "name": "aft-crush-sleeve--266.7--1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 120,
+      "centroidErrorMm": 1.2063878784829285e-09,
+      "volumeMm3": 904.8263235411702
+    },
+    {
+      "index": 319,
+      "name": "aft-bolt-rail--266.7--1-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.046558726462536e-10,
+      "volumeMm3": 348.4652669127296
+    },
+    {
+      "index": 320,
+      "name": "aft-bolt-rail--266.7--1-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.782236828759778e-10,
+      "volumeMm3": 206.31375109270783
+    },
+    {
+      "index": 321,
+      "name": "aft-bolt-rail--266.7--1-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.673861546209082e-11,
+      "volumeMm3": 381.2377554637189
+    },
+    {
+      "index": 322,
+      "name": "aft-bolt-tube--266.7--1-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 32,
+      "centroidErrorMm": 5.056222107668873e-10,
+      "volumeMm3": 813.0856227963726
+    },
+    {
+      "index": 323,
+      "name": "aft-bolt-tube--266.7--1-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 5.281322046357673e-10,
+      "volumeMm3": 153.88315045521836
+    },
+    {
+      "index": 324,
+      "name": "aft-bolt-tube--266.7--1-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.668177204323001e-11,
+      "volumeMm3": 381.2377554637202
+    },
+    {
+      "index": 325,
+      "name": "aft-adapter--266.7-1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 100,
+      "centroidErrorMm": 9.947598300641403e-12,
+      "volumeMm3": 5529.933644457814
+    },
+    {
+      "index": 326,
+      "name": "aft-crush-sleeve--266.7-1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 120,
+      "centroidErrorMm": 1.2063878784829285e-09,
+      "volumeMm3": 904.8263235411702
+    },
+    {
+      "index": 327,
+      "name": "aft-bolt-rail--266.7-1-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.046558726462536e-10,
+      "volumeMm3": 348.4652669127296
+    },
+    {
+      "index": 328,
+      "name": "aft-bolt-rail--266.7-1-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.779394657816738e-10,
+      "volumeMm3": 206.31375109314743
+    },
+    {
+      "index": 329,
+      "name": "aft-bolt-rail--266.7-1-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.651124178664759e-11,
+      "volumeMm3": 381.2377554598037
+    },
+    {
+      "index": 330,
+      "name": "aft-bolt-tube--266.7-1-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 32,
+      "centroidErrorMm": 5.056222107668873e-10,
+      "volumeMm3": 813.0856227963726
+    },
+    {
+      "index": 331,
+      "name": "aft-bolt-tube--266.7-1-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 5.27904830960324e-10,
+      "volumeMm3": 153.88315045531078
+    },
+    {
+      "index": 332,
+      "name": "aft-bolt-tube--266.7-1-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.66249286243692e-11,
+      "volumeMm3": 381.23775545980334
+    },
+    {
+      "index": 333,
+      "name": "baseplate-crush-sleeve--266.7--80",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 120,
+      "centroidErrorMm": 1.2064447219017893e-09,
+      "volumeMm3": 904.8263235411702
+    },
+    {
+      "index": 334,
+      "name": "baseplate-bolt--266.7--80-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 32,
+      "centroidErrorMm": 5.045421858085319e-10,
+      "volumeMm3": 813.0856227963685
+    },
+    {
+      "index": 335,
+      "name": "baseplate-bolt--266.7--80-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 5.279616743791848e-10,
+      "volumeMm3": 153.8831504553108
+    },
+    {
+      "index": 336,
+      "name": "baseplate-bolt--266.7--80-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.651124178664759e-11,
+      "volumeMm3": 381.237755459805
+    },
+    {
+      "index": 337,
+      "name": "baseplate-crush-sleeve--266.7-80",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 120,
+      "centroidErrorMm": 1.2064447219017893e-09,
+      "volumeMm3": 904.8263235411702
+    },
+    {
+      "index": 338,
+      "name": "baseplate-bolt--266.7-80-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 32,
+      "centroidErrorMm": 5.042579687142279e-10,
+      "volumeMm3": 813.0856227963678
+    },
+    {
+      "index": 339,
+      "name": "baseplate-bolt--266.7-80-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 5.279616743791848e-10,
+      "volumeMm3": 153.88315045529095
+    },
+    {
+      "index": 340,
+      "name": "baseplate-bolt--266.7-80-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.66249286243692e-11,
+      "volumeMm3": 381.2377554598502
+    },
+    {
+      "index": 341,
+      "name": "aft-electrical-beam--139.7",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 224,
+      "centroidErrorMm": 1.1368683772161603e-12,
+      "volumeMm3": 137406.34394615403
+    },
+    {
+      "index": 342,
+      "name": "aft-adapter--139.7--1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 100,
+      "centroidErrorMm": 9.833911462919787e-12,
+      "volumeMm3": 5529.933644457811
+    },
+    {
+      "index": 343,
+      "name": "aft-crush-sleeve--139.7--1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 120,
+      "centroidErrorMm": 1.206416300192359e-09,
+      "volumeMm3": 904.8263235411702
+    },
+    {
+      "index": 344,
+      "name": "aft-bolt-rail--139.7--1-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.046274509368232e-10,
+      "volumeMm3": 348.4652669127296
+    },
+    {
+      "index": 345,
+      "name": "aft-bolt-rail--139.7--1-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.783373697136994e-10,
+      "volumeMm3": 206.31375109270783
+    },
+    {
+      "index": 346,
+      "name": "aft-bolt-rail--139.7--1-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.671019375266042e-11,
+      "volumeMm3": 381.23775546372093
+    },
+    {
+      "index": 347,
+      "name": "aft-bolt-tube--139.7--1-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 32,
+      "centroidErrorMm": 5.049116680311272e-10,
+      "volumeMm3": 813.0856227963733
+    },
+    {
+      "index": 348,
+      "name": "aft-bolt-tube--139.7--1-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 5.280753612169065e-10,
+      "volumeMm3": 153.88315045521847
+    },
+    {
+      "index": 349,
+      "name": "aft-bolt-tube--139.7--1-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.665335033379961e-11,
+      "volumeMm3": 381.2377554637231
+    },
+    {
+      "index": 350,
+      "name": "aft-adapter--139.7-1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 100,
+      "centroidErrorMm": 9.890754881780595e-12,
+      "volumeMm3": 5529.933644457811
+    },
+    {
+      "index": 351,
+      "name": "aft-crush-sleeve--139.7-1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 120,
+      "centroidErrorMm": 1.2065015653206501e-09,
+      "volumeMm3": 904.8263235411702
+    },
+    {
+      "index": 352,
+      "name": "aft-bolt-rail--139.7-1-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.046274509368232e-10,
+      "volumeMm3": 348.4652669127296
+    },
+    {
+      "index": 353,
+      "name": "aft-bolt-rail--139.7-1-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.781384177476866e-10,
+      "volumeMm3": 206.3137510931473
+    },
+    {
+      "index": 354,
+      "name": "aft-bolt-rail--139.7-1-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65680852055084e-11,
+      "volumeMm3": 381.23775545980595
+    },
+    {
+      "index": 355,
+      "name": "aft-bolt-tube--139.7-1-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 32,
+      "centroidErrorMm": 5.049116680311272e-10,
+      "volumeMm3": 813.0856227963733
+    },
+    {
+      "index": 356,
+      "name": "aft-bolt-tube--139.7-1-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 5.279900960886152e-10,
+      "volumeMm3": 153.88315045531075
+    },
+    {
+      "index": 357,
+      "name": "aft-bolt-tube--139.7-1-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65680852055084e-11,
+      "volumeMm3": 381.2377554598064
+    },
+    {
+      "index": 358,
+      "name": "baseplate-crush-sleeve--139.7--80",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 120,
+      "centroidErrorMm": 1.2064731436112197e-09,
+      "volumeMm3": 904.8263235411723
+    },
+    {
+      "index": 359,
+      "name": "baseplate-bolt--139.7--80-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 32,
+      "centroidErrorMm": 5.047411377745448e-10,
+      "volumeMm3": 813.0856227963694
+    },
+    {
+      "index": 360,
+      "name": "baseplate-bolt--139.7--80-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 5.279616743791848e-10,
+      "volumeMm3": 153.8831504553108
+    },
+    {
+      "index": 361,
+      "name": "baseplate-bolt--139.7--80-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65680852055084e-11,
+      "volumeMm3": 381.23775545980726
+    },
+    {
+      "index": 362,
+      "name": "baseplate-crush-sleeve--139.7-80",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 120,
+      "centroidErrorMm": 1.2065868304489413e-09,
+      "volumeMm3": 904.8263235411711
+    },
+    {
+      "index": 363,
+      "name": "baseplate-bolt--139.7-80-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 32,
+      "centroidErrorMm": 5.046274509368232e-10,
+      "volumeMm3": 813.0856227963687
+    },
+    {
+      "index": 364,
+      "name": "baseplate-bolt--139.7-80-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 5.279900960886152e-10,
+      "volumeMm3": 153.883150455291
+    },
+    {
+      "index": 365,
+      "name": "baseplate-bolt--139.7-80-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65680852055084e-11,
+      "volumeMm3": 381.23775545985245
+    },
+    {
+      "index": 366,
+      "name": "stack-post-lower--280-154",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 52,
+      "centroidErrorMm": 9.849827620200813e-10,
+      "volumeMm3": 1612.520604225316
+    },
+    {
+      "index": 367,
+      "name": "stack-post-upper--280-154",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 60,
+      "centroidErrorMm": 9.848122317634989e-10,
+      "volumeMm3": 1170.7341373142708
+    },
+    {
+      "index": 368,
+      "name": "stack-post-lower--120-154",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 52,
+      "centroidErrorMm": 9.85167503131379e-10,
+      "volumeMm3": 1612.5206042253221
+    },
+    {
+      "index": 369,
+      "name": "stack-post-upper--120-154",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 60,
+      "centroidErrorMm": 9.851532922766637e-10,
+      "volumeMm3": 1170.7341373142756
+    },
+    {
+      "index": 370,
+      "name": "stack-post-lower--280-306",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 52,
+      "centroidErrorMm": 9.849259186012205e-10,
+      "volumeMm3": 1612.5206042253174
+    },
+    {
+      "index": 371,
+      "name": "stack-post-upper--280-306",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 60,
+      "centroidErrorMm": 9.849259186012205e-10,
+      "volumeMm3": 1170.7341373142715
+    },
+    {
+      "index": 372,
+      "name": "stack-post-lower--120-306",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 52,
+      "centroidErrorMm": 9.852243465502397e-10,
+      "volumeMm3": 1612.520604225323
+    },
+    {
+      "index": 373,
+      "name": "stack-post-upper--120-306",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 60,
+      "centroidErrorMm": 9.854375093709677e-10,
+      "volumeMm3": 1170.734137314276
+    },
+    {
+      "index": 374,
+      "name": "battery-top-strap",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 60,
+      "centroidErrorMm": 3.410605131648481e-12,
+      "volumeMm3": 12097.450233343534
+    },
+    {
+      "index": 375,
+      "name": "battery-insulating-pad",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 1.1368683772161603e-13,
+      "volumeMm3": 2220.0000000000323
+    },
+    {
+      "index": 376,
+      "name": "battery-strap-leg--286.5",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 84,
+      "centroidErrorMm": 4.376943252282217e-12,
+      "volumeMm3": 18836.470233343407
+    },
+    {
+      "index": 377,
+      "name": "battery-foot-bolt--298-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 52,
+      "centroidErrorMm": 5.045990292273927e-10,
+      "volumeMm3": 290.38772242727487
+    },
+    {
+      "index": 378,
+      "name": "battery-foot-bolt--298-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.782805262948386e-10,
+      "volumeMm3": 206.313751092707
+    },
+    {
+      "index": 379,
+      "name": "battery-foot-bolt--298-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.671019375266042e-11,
+      "volumeMm3": 381.2377554637232
+    },
+    {
+      "index": 380,
+      "name": "battery-top-bolt--298-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 52,
+      "centroidErrorMm": 5.046274509368232e-10,
+      "volumeMm3": 290.38772242727583
+    },
+    {
+      "index": 381,
+      "name": "battery-top-bolt--298-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.78308948004269e-10,
+      "volumeMm3": 206.313751092707
+    },
+    {
+      "index": 382,
+      "name": "battery-top-bolt--298-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.66249286243692e-11,
+      "volumeMm3": 381.2377554637243
+    },
+    {
+      "index": 383,
+      "name": "battery-strap-leg--193.5",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 84,
+      "centroidErrorMm": 4.376943252282217e-12,
+      "volumeMm3": 18836.47023334322
+    },
+    {
+      "index": 384,
+      "name": "battery-foot-bolt--182-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 52,
+      "centroidErrorMm": 5.045990292273927e-10,
+      "volumeMm3": 290.38772242727487
+    },
+    {
+      "index": 385,
+      "name": "battery-foot-bolt--182-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.78308948004269e-10,
+      "volumeMm3": 206.31375109270743
+    },
+    {
+      "index": 386,
+      "name": "battery-foot-bolt--182-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.671019375266042e-11,
+      "volumeMm3": 381.2377554637211
+    },
+    {
+      "index": 387,
+      "name": "battery-top-bolt--182-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 52,
+      "centroidErrorMm": 5.046274509368232e-10,
+      "volumeMm3": 290.38772242727583
+    },
+    {
+      "index": 388,
+      "name": "battery-top-bolt--182-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.781952611665474e-10,
+      "volumeMm3": 206.31375109270743
+    },
+    {
+      "index": 389,
+      "name": "battery-top-bolt--182-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.665335033379961e-11,
+      "volumeMm3": 381.23775546372207
+    },
+    {
+      "index": 390,
+      "name": "battery-tray-bolt--275--285-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 52,
+      "centroidErrorMm": 5.046558726462536e-10,
+      "volumeMm3": 290.38772242727487
+    },
+    {
+      "index": 391,
+      "name": "battery-tray-bolt--275--285-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.782236828759778e-10,
+      "volumeMm3": 206.31375109270738
+    },
+    {
+      "index": 392,
+      "name": "battery-tray-bolt--275--285-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.668177204323001e-11,
+      "volumeMm3": 381.23775546372076
+    },
+    {
+      "index": 393,
+      "name": "battery-tray-bolt--220--195-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 52,
+      "centroidErrorMm": 5.045990292273927e-10,
+      "volumeMm3": 290.38772242727487
+    },
+    {
+      "index": 394,
+      "name": "battery-tray-bolt--220--195-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.783657914231298e-10,
+      "volumeMm3": 206.31375109270743
+    },
+    {
+      "index": 395,
+      "name": "battery-tray-bolt--220--195-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.671019375266042e-11,
+      "volumeMm3": 381.23775546372053
+    },
+    {
+      "index": 396,
+      "name": "battery-tray-bolt--180--285-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 52,
+      "centroidErrorMm": 5.046274509368232e-10,
+      "volumeMm3": 290.38772242727487
+    },
+    {
+      "index": 397,
+      "name": "battery-tray-bolt--180--285-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.782236828759778e-10,
+      "volumeMm3": 206.31375109270738
+    },
+    {
+      "index": 398,
+      "name": "battery-tray-bolt--180--285-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.66249286243692e-11,
+      "volumeMm3": 381.23775546372076
+    },
+    {
+      "index": 399,
+      "name": "battery-tray-bolt--180--195-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 52,
+      "centroidErrorMm": 5.045990292273927e-10,
+      "volumeMm3": 290.38772242727487
+    },
+    {
+      "index": 400,
+      "name": "battery-tray-bolt--180--195-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.783657914231298e-10,
+      "volumeMm3": 206.31375109270712
+    },
+    {
+      "index": 401,
+      "name": "battery-tray-bolt--180--195-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65965069149388e-11,
+      "volumeMm3": 381.23775546372053
+    },
+    {
+      "index": 402,
+      "name": "pdh-bolt--308.8-179.2-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 40,
+      "centroidErrorMm": 5.046558726462536e-10,
+      "volumeMm3": 464.62035588363943
+    },
+    {
+      "index": 403,
+      "name": "pdh-bolt--308.8-179.2-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.782805262948386e-10,
+      "volumeMm3": 206.31375109312344
+    },
+    {
+      "index": 404,
+      "name": "pdh-bolt--308.8-179.2-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65680852055084e-11,
+      "volumeMm3": 381.2377554598052
+    },
+    {
+      "index": 405,
+      "name": "pdh-bolt--308.8-280.8-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 40,
+      "centroidErrorMm": 5.046558726462536e-10,
+      "volumeMm3": 464.62035588363943
+    },
+    {
+      "index": 406,
+      "name": "pdh-bolt--308.8-280.8-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.782236828759778e-10,
+      "volumeMm3": 206.31375109312344
+    },
+    {
+      "index": 407,
+      "name": "pdh-bolt--308.8-280.8-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.66249286243692e-11,
+      "volumeMm3": 381.2377554598074
+    },
+    {
+      "index": 408,
+      "name": "pdh-bolt--92.9-179.2-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 40,
+      "centroidErrorMm": 5.048121920481208e-10,
+      "volumeMm3": 464.6203558836417
+    },
+    {
+      "index": 409,
+      "name": "pdh-bolt--92.9-179.2-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.781952611665474e-10,
+      "volumeMm3": 206.31375109312353
+    },
+    {
+      "index": 410,
+      "name": "pdh-bolt--92.9-179.2-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65680852055084e-11,
+      "volumeMm3": 381.23775545980436
+    },
+    {
+      "index": 411,
+      "name": "pdh-bolt--92.9-280.8-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 40,
+      "centroidErrorMm": 5.046274509368232e-10,
+      "volumeMm3": 464.62035588363943
+    },
+    {
+      "index": 412,
+      "name": "pdh-bolt--92.9-280.8-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.782236828759778e-10,
+      "volumeMm3": 206.313751093124
+    },
+    {
+      "index": 413,
+      "name": "pdh-bolt--92.9-280.8-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.653966349607799e-11,
+      "volumeMm3": 381.2377554598066
+    },
+    {
+      "index": 414,
+      "name": "radio-power-deck-tab",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 2.842170943040401e-14,
+      "volumeMm3": 17550.00000000004
+    },
+    {
+      "index": 415,
+      "name": "breaker-pedestal",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 228,
+      "centroidErrorMm": 3.751665644813329e-12,
+      "volumeMm3": 32585.22171892205
+    },
+    {
+      "index": 416,
+      "name": "breaker-base-bolt--306--180-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 52,
+      "centroidErrorMm": 5.045990292273927e-10,
+      "volumeMm3": 290.38772242727487
+    },
+    {
+      "index": 417,
+      "name": "breaker-base-bolt--306--180-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.783373697136994e-10,
+      "volumeMm3": 206.31375109270684
+    },
+    {
+      "index": 418,
+      "name": "breaker-base-bolt--306--180-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.668177204323001e-11,
+      "volumeMm3": 381.2377554637251
+    },
+    {
+      "index": 419,
+      "name": "breaker-base-bolt--306--158-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 52,
+      "centroidErrorMm": 5.045990292273927e-10,
+      "volumeMm3": 290.38772242727487
+    },
+    {
+      "index": 420,
+      "name": "breaker-base-bolt--306--158-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.782805262948386e-10,
+      "volumeMm3": 206.31375109270675
+    },
+    {
+      "index": 421,
+      "name": "breaker-base-bolt--306--158-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.66249286243692e-11,
+      "volumeMm3": 381.2377554637235
+    },
+    {
+      "index": 422,
+      "name": "breaker-base-bolt--244--180-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 52,
+      "centroidErrorMm": 5.045706075179623e-10,
+      "volumeMm3": 290.38772242727487
+    },
+    {
+      "index": 423,
+      "name": "breaker-base-bolt--244--180-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.78308948004269e-10,
+      "volumeMm3": 206.31375109270684
+    },
+    {
+      "index": 424,
+      "name": "breaker-base-bolt--244--180-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.668177204323001e-11,
+      "volumeMm3": 381.23775546372264
+    },
+    {
+      "index": 425,
+      "name": "breaker-base-bolt--244--158-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 52,
+      "centroidErrorMm": 5.045706075179623e-10,
+      "volumeMm3": 290.38772242727487
+    },
+    {
+      "index": 426,
+      "name": "breaker-base-bolt--244--158-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.78308948004269e-10,
+      "volumeMm3": 206.31375109270684
+    },
+    {
+      "index": 427,
+      "name": "breaker-base-bolt--244--158-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.668177204323001e-11,
+      "volumeMm3": 381.2377554637209
+    },
+    {
+      "index": 428,
+      "name": "breaker-mount-bolt--308.575--188.97-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 40,
+      "centroidErrorMm": 5.046558726462536e-10,
+      "volumeMm3": 464.62035588364006
+    },
+    {
+      "index": 429,
+      "name": "breaker-mount-bolt--308.575--188.97-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.782236828759778e-10,
+      "volumeMm3": 206.31375109270718
+    },
+    {
+      "index": 430,
+      "name": "breaker-mount-bolt--308.575--188.97-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.668177204323001e-11,
+      "volumeMm3": 381.237755463723
+    },
+    {
+      "index": 431,
+      "name": "breaker-mount-bolt--251.425--161.03-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 40,
+      "centroidErrorMm": 5.046558726462536e-10,
+      "volumeMm3": 464.62035588364006
+    },
+    {
+      "index": 432,
+      "name": "breaker-mount-bolt--251.425--161.03-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.782805262948386e-10,
+      "volumeMm3": 206.3137510927069
+    },
+    {
+      "index": 433,
+      "name": "breaker-mount-bolt--251.425--161.03-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.671019375266042e-11,
+      "volumeMm3": 381.2377554637251
+    },
+    {
+      "index": 434,
+      "name": "original replacement upper transverse portal",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 128,
+      "centroidErrorMm": 5.684341886080801e-13,
+      "volumeMm3": 277376.9433421822
+    },
+    {
+      "index": 435,
+      "name": "intake candidate side pinch belt -1",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 144,
+      "centroidErrorMm": 6.994582690822426e-11,
+      "volumeMm3": 10322.55999995675
+    },
+    {
+      "index": 436,
+      "name": "intake candidate vertical stub shaft (-1, -19.049999999999997)",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 1.437797436665278e-09,
+      "volumeMm3": 8463.892395237459
+    },
+    {
+      "index": 437,
+      "name": "intake candidate 12T track pulley outer-profile representation (-1, -19.049999999999997)",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 300,
+      "centroidErrorMm": 1.5484715731872711e-09,
+      "volumeMm3": 6099.971239202939
+    },
+    {
+      "index": 438,
+      "name": "intake candidate bearing representation (-1, -19.049999999999997)-18.4",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.7278125596931204e-09,
+      "volumeMm3": 3129.358187330682
+    },
+    {
+      "index": 439,
+      "name": "intake candidate bearing representation (-1, -19.049999999999997)25.4",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.7278125596931204e-09,
+      "volumeMm3": 3129.3581873306853
+    },
+    {
+      "index": 440,
+      "name": "intake candidate vertical stub shaft (-1, 146.05)",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 40,
+      "centroidErrorMm": 1.4377405932464171e-09,
+      "volumeMm3": 12324.615242187881
+    },
+    {
+      "index": 441,
+      "name": "intake candidate 12T track pulley outer-profile representation (-1, 146.05)",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 300,
+      "centroidErrorMm": 1.5487557902815752e-09,
+      "volumeMm3": 6099.9712392029405
+    },
+    {
+      "index": 442,
+      "name": "intake candidate bearing representation (-1, 146.05)-18.4",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.7277557162742596e-09,
+      "volumeMm3": 3129.3581873306794
+    },
+    {
+      "index": 443,
+      "name": "intake candidate bearing representation (-1, 146.05)25.4",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.7278125596931204e-09,
+      "volumeMm3": 3129.358187330683
+    },
+    {
+      "index": 444,
+      "name": "intake candidate pinch NEO body -1",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 76,
+      "centroidErrorMm": 3.1369893349619815e-09,
+      "volumeMm3": 164980.73820327502
+    },
+    {
+      "index": 445,
+      "name": "intake candidate pinch motor plate -1",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 60,
+      "centroidErrorMm": 6.039613253960852e-11,
+      "volumeMm3": 15530.344346018659
+    },
+    {
+      "index": 446,
+      "name": "intake candidate pinch transfer pulley (-1, -190.05)",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 140,
+      "centroidErrorMm": 1.6214016795856878e-09,
+      "volumeMm3": 7370.586596621935
+    },
+    {
+      "index": 447,
+      "name": "intake candidate pinch transfer pulley (-1, -160)",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 128,
+      "centroidErrorMm": 1.4721592833666364e-09,
+      "volumeMm3": 9206.822684063292
+    },
+    {
+      "index": 448,
+      "name": "intake candidate remote drive shaft coupling hypothesis -1",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 28,
+      "centroidErrorMm": 8.36593017083942e-10,
+      "volumeMm3": 4272.566008881934
+    },
+    {
+      "index": 449,
+      "name": "intake candidate pinch transfer belt -1",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 152,
+      "centroidErrorMm": 2.4499513529008254e-11,
+      "volumeMm3": 7741.920000016623
+    },
+    {
+      "index": 450,
+      "name": "intake candidate original cradle side weldment -1",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 700,
+      "centroidErrorMm": 1.949729266925715e-11,
+      "volumeMm3": 40305.576235910936
+    },
+    {
+      "index": 451,
+      "name": "intake candidate cradle side pivot -1",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 64,
+      "centroidErrorMm": 1.4378116475199931e-09,
+      "volumeMm3": 3712.2335066830956
+    },
+    {
+      "index": 452,
+      "name": "intake candidate stationary aluminum guide -1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 128,
+      "centroidErrorMm": 5.684341886080801e-13,
+      "volumeMm3": 205764.18334218086
+    },
+    {
+      "index": 453,
+      "name": "intake candidate lift carriage plate -1",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 252,
+      "centroidErrorMm": 3.694822225952521e-12,
+      "volumeMm3": 70018.54171090983
+    },
+    {
+      "index": 454,
+      "name": "intake candidate UHMW slide pad (-1, 230.4, -1)",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 212,
+      "centroidErrorMm": 1.0845724318642169e-10,
+      "volumeMm3": 2153.3756379132456
+    },
+    {
+      "index": 455,
+      "name": "intake candidate UHMW slide pad (-1, 230.4, 1)",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 212,
+      "centroidErrorMm": 1.2562395568238571e-11,
+      "volumeMm3": 2153.375637913356
+    },
+    {
+      "index": 456,
+      "name": "intake candidate UHMW slide pad (-1, 290.4, -1)",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 212,
+      "centroidErrorMm": 1.0840039976756088e-10,
+      "volumeMm3": 2153.3756379132456
+    },
+    {
+      "index": 457,
+      "name": "intake candidate UHMW slide pad (-1, 290.4, 1)",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 212,
+      "centroidErrorMm": 1.2562395568238571e-11,
+      "volumeMm3": 2153.375637913356
+    },
+    {
+      "index": 458,
+      "name": "intake candidate pivot drop bracket -1",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 52,
+      "centroidErrorMm": 1.2158807294326834e-10,
+      "volumeMm3": 50975.10581099778
+    },
+    {
+      "index": 459,
+      "name": "intake candidate pivot bearing representation -1",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.7278232178341568e-09,
+      "volumeMm3": 3129.3581873306716
+    },
+    {
+      "index": 460,
+      "name": "intake candidate lift16T sprocket envelope (-1, 200)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 1.876998112493311e-09,
+      "volumeMm3": 9616.175566198932
+    },
+    {
+      "index": 461,
+      "name": "intake candidate lift16T sprocket envelope (-1, 898.5)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 1.876856003946159e-09,
+      "volumeMm3": 9616.175566198937
+    },
+    {
+      "index": 462,
+      "name": "intake candidate lift chain straight-run envelope (-1, -16.4)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 0.0,
+      "volumeMm3": 17741.900000000034
+    },
+    {
+      "index": 463,
+      "name": "intake candidate lift chain straight-run envelope (-1, 16.4)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 1.1368683772161603e-13,
+      "volumeMm3": 17741.90000000011
+    },
+    {
+      "index": 464,
+      "name": "intake candidate chain carriage anchor -1",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 5.684341886080802e-14,
+      "volumeMm3": 588.7085000000028
+    },
+    {
+      "index": 465,
+      "name": "intake candidate side pinch belt 1",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 144,
+      "centroidErrorMm": 7.105427357601002e-12,
+      "volumeMm3": 10322.560000009917
+    },
+    {
+      "index": 466,
+      "name": "intake candidate vertical stub shaft (1, -19.049999999999997)",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 1.437797436665278e-09,
+      "volumeMm3": 8463.892395237459
+    },
+    {
+      "index": 467,
+      "name": "intake candidate 12T track pulley outer-profile representation (1, -19.049999999999997)",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 300,
+      "centroidErrorMm": 1.5484999948967015e-09,
+      "volumeMm3": 6099.971239202939
+    },
+    {
+      "index": 468,
+      "name": "intake candidate bearing representation (1, -19.049999999999997)-18.4",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.7278125596931204e-09,
+      "volumeMm3": 3129.358187330682
+    },
+    {
+      "index": 469,
+      "name": "intake candidate bearing representation (1, -19.049999999999997)25.4",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.7278125596931204e-09,
+      "volumeMm3": 3129.3581873306853
+    },
+    {
+      "index": 470,
+      "name": "intake candidate vertical stub shaft (1, 146.05)",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 40,
+      "centroidErrorMm": 1.4377405932464171e-09,
+      "volumeMm3": 12324.615242187881
+    },
+    {
+      "index": 471,
+      "name": "intake candidate 12T track pulley outer-profile representation (1, 146.05)",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 300,
+      "centroidErrorMm": 1.5487557902815752e-09,
+      "volumeMm3": 6099.9712392029405
+    },
+    {
+      "index": 472,
+      "name": "intake candidate bearing representation (1, 146.05)-18.4",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.7277557162742596e-09,
+      "volumeMm3": 3129.3581873306794
+    },
+    {
+      "index": 473,
+      "name": "intake candidate bearing representation (1, 146.05)25.4",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.7278125596931204e-09,
+      "volumeMm3": 3129.358187330683
+    },
+    {
+      "index": 474,
+      "name": "intake candidate pinch NEO body 1",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 76,
+      "centroidErrorMm": 3.136960913252551e-09,
+      "volumeMm3": 164980.73820327502
+    },
+    {
+      "index": 475,
+      "name": "intake candidate pinch motor plate 1",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 60,
+      "centroidErrorMm": 6.036771083017811e-11,
+      "volumeMm3": 15530.344346018663
+    },
+    {
+      "index": 476,
+      "name": "intake candidate pinch transfer pulley (1, 190.05)",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 140,
+      "centroidErrorMm": 1.6214016795856878e-09,
+      "volumeMm3": 7370.586596621935
+    },
+    {
+      "index": 477,
+      "name": "intake candidate pinch transfer pulley (1, 160)",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 128,
+      "centroidErrorMm": 1.4722161267854972e-09,
+      "volumeMm3": 9206.822684063292
+    },
+    {
+      "index": 478,
+      "name": "intake candidate remote drive shaft coupling hypothesis 1",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 28,
+      "centroidErrorMm": 8.366498605028028e-10,
+      "volumeMm3": 4272.566008881931
+    },
+    {
+      "index": 479,
+      "name": "intake candidate pinch transfer belt 1",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 152,
+      "centroidErrorMm": 1.0061285138363019e-11,
+      "volumeMm3": 7741.919999998811
+    },
+    {
+      "index": 480,
+      "name": "intake candidate original cradle side weldment 1",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 700,
+      "centroidErrorMm": 1.9404922113608336e-11,
+      "volumeMm3": 40305.57623590578
+    },
+    {
+      "index": 481,
+      "name": "intake candidate cradle side pivot 1",
+      "group": "cradle",
+      "bodies": 1,
+      "triangles": 64,
+      "centroidErrorMm": 1.4378116475199931e-09,
+      "volumeMm3": 3712.2335066830956
+    },
+    {
+      "index": 482,
+      "name": "intake candidate stationary aluminum guide 1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 128,
+      "centroidErrorMm": 1.8189894035458565e-12,
+      "volumeMm3": 205764.18334218086
+    },
+    {
+      "index": 483,
+      "name": "intake candidate lift carriage plate 1",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 252,
+      "centroidErrorMm": 3.581135388230905e-12,
+      "volumeMm3": 70018.54171090983
+    },
+    {
+      "index": 484,
+      "name": "intake candidate UHMW slide pad (1, 230.4, -1)",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 212,
+      "centroidErrorMm": 1.0845724318642169e-10,
+      "volumeMm3": 2153.3756379132456
+    },
+    {
+      "index": 485,
+      "name": "intake candidate UHMW slide pad (1, 230.4, 1)",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 212,
+      "centroidErrorMm": 1.2562395568238571e-11,
+      "volumeMm3": 2153.375637913356
+    },
+    {
+      "index": 486,
+      "name": "intake candidate UHMW slide pad (1, 290.4, -1)",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 212,
+      "centroidErrorMm": 1.0840039976756088e-10,
+      "volumeMm3": 2153.3756379132456
+    },
+    {
+      "index": 487,
+      "name": "intake candidate UHMW slide pad (1, 290.4, 1)",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 212,
+      "centroidErrorMm": 1.2562395568238571e-11,
+      "volumeMm3": 2153.375637913356
+    },
+    {
+      "index": 488,
+      "name": "intake candidate pivot drop bracket 1",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 52,
+      "centroidErrorMm": 1.2158807294326834e-10,
+      "volumeMm3": 50975.10581099778
+    },
+    {
+      "index": 489,
+      "name": "intake candidate pivot bearing representation 1",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 148,
+      "centroidErrorMm": 1.7278161124067992e-09,
+      "volumeMm3": 3129.3581873306716
+    },
+    {
+      "index": 490,
+      "name": "intake candidate lift16T sprocket envelope (1, 200)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 1.876998112493311e-09,
+      "volumeMm3": 9616.175566198932
+    },
+    {
+      "index": 491,
+      "name": "intake candidate lift16T sprocket envelope (1, 898.5)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 1.876856003946159e-09,
+      "volumeMm3": 9616.175566198937
+    },
+    {
+      "index": 492,
+      "name": "intake candidate lift chain straight-run envelope (1, -16.4)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 0.0,
+      "volumeMm3": 17741.900000000034
+    },
+    {
+      "index": 493,
+      "name": "intake candidate lift chain straight-run envelope (1, 16.4)",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 1.1368683772161603e-13,
+      "volumeMm3": 17741.90000000011
+    },
+    {
+      "index": 494,
+      "name": "intake candidate chain carriage anchor 1",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 5.684341886080802e-14,
+      "volumeMm3": 588.7085000000028
+    },
+    {
+      "index": 495,
+      "name": "intake candidate rotation16T sprocket 25.4",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 136,
+      "centroidErrorMm": 2.076397720429668e-09,
+      "volumeMm3": 8205.52683365923
+    },
+    {
+      "index": 496,
+      "name": "intake candidate rotation16T sprocket 326.61474482501677",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 136,
+      "centroidErrorMm": 2.076433247566456e-09,
+      "volumeMm3": 8205.526833659233
+    },
+    {
+      "index": 497,
+      "name": "intake candidate rotation chain run -16.4",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 1.7962520360015333e-11,
+      "volumeMm3": 5911.85000001164
+    },
+    {
+      "index": 498,
+      "name": "intake candidate rotation chain run 16.4",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 4.3513637137948535e-11,
+      "volumeMm3": 5911.850000011679
+    },
+    {
+      "index": 499,
+      "name": "intake candidate rotation MAXPlanetary12to1 envelope",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 5.684341886080802e-14,
+      "volumeMm3": 199677.01999999981
+    },
+    {
+      "index": 500,
+      "name": "intake candidate rotation NEO envelope",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 76,
+      "centroidErrorMm": 3.1370746000902727e-09,
+      "volumeMm3": 164980.73820327508
+    },
+    {
+      "index": 501,
+      "name": "intake candidate lift top shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 16,
+      "centroidErrorMm": 1.438365870853886e-09,
+      "volumeMm3": 92063.39096574062
+    },
+    {
+      "index": 502,
+      "name": "intake candidate lift MAXPlanetary12to1 envelope",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 12,
+      "centroidErrorMm": 1.1368683772161603e-13,
+      "volumeMm3": 199677.02000000043
+    },
+    {
+      "index": 503,
+      "name": "intake candidate lift NEO envelope",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 76,
+      "centroidErrorMm": 3.136733539577108e-09,
+      "volumeMm3": 164980.73820327505
+    },
+    {
+      "index": 504,
+      "name": "original lower guide bracket -1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 172,
+      "centroidErrorMm": 1.6399326341343112e-11,
+      "volumeMm3": 4837.165842181878
+    },
+    {
+      "index": 505,
+      "name": "original lower guide bracket -1 leg 200.21499999999997-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.523279363231268e-10,
+      "volumeMm3": 348.4652669127598
+    },
+    {
+      "index": 506,
+      "name": "original lower guide bracket -1 leg 200.21499999999997-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.782236828759778e-10,
+      "volumeMm3": 206.31375109312367
+    },
+    {
+      "index": 507,
+      "name": "original lower guide bracket -1 leg 200.21499999999997-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65822960602236e-11,
+      "volumeMm3": 381.2377554598039
+    },
+    {
+      "index": 508,
+      "name": "original lower guide bracket -1 leg 212.915-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.523279363231268e-10,
+      "volumeMm3": 348.4652669127598
+    },
+    {
+      "index": 509,
+      "name": "original lower guide bracket -1 leg 212.915-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.782094720212626e-10,
+      "volumeMm3": 206.31375109312367
+    },
+    {
+      "index": 510,
+      "name": "original lower guide bracket -1 leg 212.915-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65822960602236e-11,
+      "volumeMm3": 381.2377554598034
+    },
+    {
+      "index": 511,
+      "name": "original lower guide bracket -1 foot 22.225-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.046274509368232e-10,
+      "volumeMm3": 348.46526691272993
+    },
+    {
+      "index": 512,
+      "name": "original lower guide bracket -1 foot 22.225-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.782663154401234e-10,
+      "volumeMm3": 206.31375109270903
+    },
+    {
+      "index": 513,
+      "name": "original lower guide bracket -1 foot 22.225-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.673861546209082e-11,
+      "volumeMm3": 381.2377554637211
+    },
+    {
+      "index": 514,
+      "name": "original lower guide bracket -1 foot 34.925-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.046274509368232e-10,
+      "volumeMm3": 348.46526691272993
+    },
+    {
+      "index": 515,
+      "name": "original lower guide bracket -1 foot 34.925-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.782663154401234e-10,
+      "volumeMm3": 206.31375109270886
+    },
+    {
+      "index": 516,
+      "name": "original lower guide bracket -1 foot 34.925-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.672440460737562e-11,
+      "volumeMm3": 381.2377554637227
+    },
+    {
+      "index": 517,
+      "name": "original lower shooter bracket -1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 172,
+      "centroidErrorMm": 1.6257217794191092e-11,
+      "volumeMm3": 4837.165842181888
+    },
+    {
+      "index": 518,
+      "name": "original lower shooter bracket -1 leg 200.21499999999997-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.5227109290426597e-10,
+      "volumeMm3": 348.4652669127597
+    },
+    {
+      "index": 519,
+      "name": "original lower shooter bracket -1 leg 200.21499999999997-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.78166839457117e-10,
+      "volumeMm3": 206.31375109312378
+    },
+    {
+      "index": 520,
+      "name": "original lower shooter bracket -1 leg 200.21499999999997-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.651124178664759e-11,
+      "volumeMm3": 381.2377554598073
+    },
+    {
+      "index": 521,
+      "name": "original lower shooter bracket -1 leg 212.915-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.5227109290426597e-10,
+      "volumeMm3": 348.4652669127597
+    },
+    {
+      "index": 522,
+      "name": "original lower shooter bracket -1 leg 212.915-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.78166839457117e-10,
+      "volumeMm3": 206.31375109312415
+    },
+    {
+      "index": 523,
+      "name": "original lower shooter bracket -1 leg 212.915-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65680852055084e-11,
+      "volumeMm3": 381.2377554598071
+    },
+    {
+      "index": 524,
+      "name": "original lower shooter bracket -1 foot 22.225-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.047695594839752e-10,
+      "volumeMm3": 348.46526691272993
+    },
+    {
+      "index": 525,
+      "name": "original lower shooter bracket -1 foot 22.225-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.78166839457117e-10,
+      "volumeMm3": 206.31375109270905
+    },
+    {
+      "index": 526,
+      "name": "original lower shooter bracket -1 foot 22.225-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.668177204323001e-11,
+      "volumeMm3": 381.23775546372684
+    },
+    {
+      "index": 527,
+      "name": "original lower shooter bracket -1 foot 34.925-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.046558726462536e-10,
+      "volumeMm3": 348.46526691272993
+    },
+    {
+      "index": 528,
+      "name": "original lower shooter bracket -1 foot 34.925-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.782805262948386e-10,
+      "volumeMm3": 206.31375109270908
+    },
+    {
+      "index": 529,
+      "name": "original lower shooter bracket -1 foot 34.925-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.673861546209082e-11,
+      "volumeMm3": 381.23775546372684
+    },
+    {
+      "index": 530,
+      "name": "original lower guide bracket 1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 164,
+      "centroidErrorMm": 1.6370904631912708e-11,
+      "volumeMm3": 4837.165842181838
+    },
+    {
+      "index": 531,
+      "name": "original lower guide bracket 1 leg 200.21499999999997-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.523279363231268e-10,
+      "volumeMm3": 348.4652669127597
+    },
+    {
+      "index": 532,
+      "name": "original lower guide bracket 1 leg 200.21499999999997-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.781952611665474e-10,
+      "volumeMm3": 206.3137510931239
+    },
+    {
+      "index": 533,
+      "name": "original lower guide bracket 1 leg 200.21499999999997-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65680852055084e-11,
+      "volumeMm3": 381.23775545980385
+    },
+    {
+      "index": 534,
+      "name": "original lower guide bracket 1 leg 212.915-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.523279363231268e-10,
+      "volumeMm3": 348.4652669127597
+    },
+    {
+      "index": 535,
+      "name": "original lower guide bracket 1 leg 212.915-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.782094720212626e-10,
+      "volumeMm3": 206.31375109312384
+    },
+    {
+      "index": 536,
+      "name": "original lower guide bracket 1 leg 212.915-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65822960602236e-11,
+      "volumeMm3": 381.2377554598034
+    },
+    {
+      "index": 537,
+      "name": "original lower guide bracket 1 foot 22.225-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.046274509368232e-10,
+      "volumeMm3": 348.46526691272993
+    },
+    {
+      "index": 538,
+      "name": "original lower guide bracket 1 foot 22.225-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.780815743288258e-10,
+      "volumeMm3": 206.31375109314817
+    },
+    {
+      "index": 539,
+      "name": "original lower guide bracket 1 foot 22.225-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65965069149388e-11,
+      "volumeMm3": 381.23775545980607
+    },
+    {
+      "index": 540,
+      "name": "original lower guide bracket 1 foot 34.925-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.046274509368232e-10,
+      "volumeMm3": 348.46526691272993
+    },
+    {
+      "index": 541,
+      "name": "original lower guide bracket 1 foot 34.925-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.782236828759778e-10,
+      "volumeMm3": 206.31375109312458
+    },
+    {
+      "index": 542,
+      "name": "original lower guide bracket 1 foot 34.925-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65965069149388e-11,
+      "volumeMm3": 381.2377554598098
+    },
+    {
+      "index": 543,
+      "name": "original lower shooter bracket 1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 172,
+      "centroidErrorMm": 1.6484591469634324e-11,
+      "volumeMm3": 4837.165842181888
+    },
+    {
+      "index": 544,
+      "name": "original lower shooter bracket 1 leg 200.21499999999997-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.5221424948540516e-10,
+      "volumeMm3": 348.4652669127597
+    },
+    {
+      "index": 545,
+      "name": "original lower shooter bracket 1 leg 200.21499999999997-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.782236828759778e-10,
+      "volumeMm3": 206.31375109312384
+    },
+    {
+      "index": 546,
+      "name": "original lower shooter bracket 1 leg 200.21499999999997-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.673861546209082e-11,
+      "volumeMm3": 381.23775545980794
+    },
+    {
+      "index": 547,
+      "name": "original lower shooter bracket 1 leg 212.915-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.5221424948540516e-10,
+      "volumeMm3": 348.4652669127597
+    },
+    {
+      "index": 548,
+      "name": "original lower shooter bracket 1 leg 212.915-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.78166839457117e-10,
+      "volumeMm3": 206.31375109312384
+    },
+    {
+      "index": 549,
+      "name": "original lower shooter bracket 1 leg 212.915-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.668177204323001e-11,
+      "volumeMm3": 381.2377554598071
+    },
+    {
+      "index": 550,
+      "name": "original lower shooter bracket 1 foot 22.225-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.046558726462536e-10,
+      "volumeMm3": 348.46526691272993
+    },
+    {
+      "index": 551,
+      "name": "original lower shooter bracket 1 foot 22.225-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.78166839457117e-10,
+      "volumeMm3": 206.31375109312458
+    },
+    {
+      "index": 552,
+      "name": "original lower shooter bracket 1 foot 22.225-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65680852055084e-11,
+      "volumeMm3": 381.2377554598101
+    },
+    {
+      "index": 553,
+      "name": "original lower shooter bracket 1 foot 34.925-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.047695594839752e-10,
+      "volumeMm3": 348.46526691272993
+    },
+    {
+      "index": 554,
+      "name": "original lower shooter bracket 1 foot 34.925-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.78166839457117e-10,
+      "volumeMm3": 206.31375109312427
+    },
+    {
+      "index": 555,
+      "name": "original lower shooter bracket 1 foot 34.925-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.66249286243692e-11,
+      "volumeMm3": 381.23775545981033
+    },
+    {
+      "index": 556,
+      "name": "original upper portal gusset -1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 124,
+      "centroidErrorMm": 5.9117155615240335e-12,
+      "volumeMm3": 14054.889342181883
+    },
+    {
+      "index": 557,
+      "name": "original upper portal gusset -1(-250, 892.115)-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.045421858085319e-10,
+      "volumeMm3": 348.4652669127296
+    },
+    {
+      "index": 558,
+      "name": "original upper portal gusset -1(-250, 892.115)-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.782805262948386e-10,
+      "volumeMm3": 206.3137510927092
+    },
+    {
+      "index": 559,
+      "name": "original upper portal gusset -1(-250, 892.115)-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.66249286243692e-11,
+      "volumeMm3": 381.237755463725
+    },
+    {
+      "index": 560,
+      "name": "original upper portal gusset -1(-250, 904.8149999999999)-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.045421858085319e-10,
+      "volumeMm3": 348.4652669127296
+    },
+    {
+      "index": 561,
+      "name": "original upper portal gusset -1(-250, 904.8149999999999)-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.786215868080035e-10,
+      "volumeMm3": 206.31375109271104
+    },
+    {
+      "index": 562,
+      "name": "original upper portal gusset -1(-250, 904.8149999999999)-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.673861546209082e-11,
+      "volumeMm3": 381.23775546372497
+    },
+    {
+      "index": 563,
+      "name": "original upper portal gusset -1(-262.7, 942.915)-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.045421858085319e-10,
+      "volumeMm3": 348.4652669127296
+    },
+    {
+      "index": 564,
+      "name": "original upper portal gusset -1(-262.7, 942.915)-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.785078999702819e-10,
+      "volumeMm3": 206.31375109271053
+    },
+    {
+      "index": 565,
+      "name": "original upper portal gusset -1(-262.7, 942.915)-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.66249286243692e-11,
+      "volumeMm3": 381.2377554637277
+    },
+    {
+      "index": 566,
+      "name": "original upper portal gusset -1(-237.3, 942.915)-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.044284989708103e-10,
+      "volumeMm3": 348.4652669127296
+    },
+    {
+      "index": 567,
+      "name": "original upper portal gusset -1(-237.3, 942.915)-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.780531526193954e-10,
+      "volumeMm3": 206.31375109271048
+    },
+    {
+      "index": 568,
+      "name": "original upper portal gusset -1(-237.3, 942.915)-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.651124178664759e-11,
+      "volumeMm3": 381.2377554637234
+    },
+    {
+      "index": 569,
+      "name": "original carriage drop yoke -1",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 188,
+      "centroidErrorMm": 7.787548383930698e-12,
+      "volumeMm3": 10111.793342181785
+    },
+    {
+      "index": 570,
+      "name": "original carriage drop yoke -1(169.5, -211.0)-shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.5229951461369637e-10,
+      "volumeMm3": 348.4652669127597
+    },
+    {
+      "index": 571,
+      "name": "original carriage drop yoke -1(169.5, -211.0)-head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.782236828759778e-10,
+      "volumeMm3": 206.31375109312265
+    },
+    {
+      "index": 572,
+      "name": "original carriage drop yoke -1(169.5, -211.0)-nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.66249286243692e-11,
+      "volumeMm3": 381.23775545980556
+    },
+    {
+      "index": 573,
+      "name": "original carriage drop yoke -1(186.5, -211.0)-shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.5229951461369637e-10,
+      "volumeMm3": 348.4652669127597
+    },
+    {
+      "index": 574,
+      "name": "original carriage drop yoke -1(186.5, -211.0)-head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.78166839457117e-10,
+      "volumeMm3": 206.31375109312256
+    },
+    {
+      "index": 575,
+      "name": "original carriage drop yoke -1(186.5, -211.0)-nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.653966349607799e-11,
+      "volumeMm3": 381.23775545980556
+    },
+    {
+      "index": 576,
+      "name": "original carriage drop yoke -1(169.5, -266.825)-shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.523563580325572e-10,
+      "volumeMm3": 348.4652669127597
+    },
+    {
+      "index": 577,
+      "name": "original carriage drop yoke -1(169.5, -266.825)-head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.78166839457117e-10,
+      "volumeMm3": 206.31375109312265
+    },
+    {
+      "index": 578,
+      "name": "original carriage drop yoke -1(169.5, -266.825)-nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65965069149388e-11,
+      "volumeMm3": 381.2377554598013
+    },
+    {
+      "index": 579,
+      "name": "original carriage drop yoke -1(186.5, -266.825)-shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.523279363231268e-10,
+      "volumeMm3": 348.4652669127597
+    },
+    {
+      "index": 580,
+      "name": "original carriage drop yoke -1(186.5, -266.825)-head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.78166839457117e-10,
+      "volumeMm3": 206.31375109312256
+    },
+    {
+      "index": 581,
+      "name": "original carriage drop yoke -1(186.5, -266.825)-nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65680852055084e-11,
+      "volumeMm3": 381.2377554598012
+    },
+    {
+      "index": 582,
+      "name": "original upper portal gusset 1",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 124,
+      "centroidErrorMm": 5.7980287238024175e-12,
+      "volumeMm3": 14054.889342181883
+    },
+    {
+      "index": 583,
+      "name": "original upper portal gusset 1(250, 892.115)-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.045421858085319e-10,
+      "volumeMm3": 348.4652669127296
+    },
+    {
+      "index": 584,
+      "name": "original upper portal gusset 1(250, 892.115)-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.783942131325603e-10,
+      "volumeMm3": 206.31375109312438
+    },
+    {
+      "index": 585,
+      "name": "original upper portal gusset 1(250, 892.115)-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.651124178664759e-11,
+      "volumeMm3": 381.2377554598084
+    },
+    {
+      "index": 586,
+      "name": "original upper portal gusset 1(250, 904.8149999999999)-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.045421858085319e-10,
+      "volumeMm3": 348.4652669127296
+    },
+    {
+      "index": 587,
+      "name": "original upper portal gusset 1(250, 904.8149999999999)-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.778257789439522e-10,
+      "volumeMm3": 206.31375109312606
+    },
+    {
+      "index": 588,
+      "name": "original upper portal gusset 1(250, 904.8149999999999)-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.628386811120436e-11,
+      "volumeMm3": 381.2377554598084
+    },
+    {
+      "index": 589,
+      "name": "original upper portal gusset 1(237.3, 942.915)-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.044284989708103e-10,
+      "volumeMm3": 348.4652669127296
+    },
+    {
+      "index": 590,
+      "name": "original upper portal gusset 1(237.3, 942.915)-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.780531526193954e-10,
+      "volumeMm3": 206.3137510931255
+    },
+    {
+      "index": 591,
+      "name": "original upper portal gusset 1(237.3, 942.915)-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.628386811120436e-11,
+      "volumeMm3": 381.23775545981005
+    },
+    {
+      "index": 592,
+      "name": "original upper portal gusset 1(262.7, 942.915)-shaft",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 5.045421858085319e-10,
+      "volumeMm3": 348.4652669127296
+    },
+    {
+      "index": 593,
+      "name": "original upper portal gusset 1(262.7, 942.915)-head",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.782805262948386e-10,
+      "volumeMm3": 206.3137510931259
+    },
+    {
+      "index": 594,
+      "name": "original upper portal gusset 1(262.7, 942.915)-nut",
+      "group": "fixed",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.651124178664759e-11,
+      "volumeMm3": 381.2377554598084
+    },
+    {
+      "index": 595,
+      "name": "original carriage drop yoke 1",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 188,
+      "centroidErrorMm": 7.73070496506989e-12,
+      "volumeMm3": 10111.793342181782
+    },
+    {
+      "index": 596,
+      "name": "original carriage drop yoke 1(169.5, 211.0)-shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.5229951461369637e-10,
+      "volumeMm3": 348.4652669127597
+    },
+    {
+      "index": 597,
+      "name": "original carriage drop yoke 1(169.5, 211.0)-head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.781952611665474e-10,
+      "volumeMm3": 206.31375109312256
+    },
+    {
+      "index": 598,
+      "name": "original carriage drop yoke 1(169.5, 211.0)-nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65680852055084e-11,
+      "volumeMm3": 381.23775545980556
+    },
+    {
+      "index": 599,
+      "name": "original carriage drop yoke 1(186.5, 211.0)-shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.523279363231268e-10,
+      "volumeMm3": 348.4652669127597
+    },
+    {
+      "index": 600,
+      "name": "original carriage drop yoke 1(186.5, 211.0)-head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.781384177476866e-10,
+      "volumeMm3": 206.31375109312248
+    },
+    {
+      "index": 601,
+      "name": "original carriage drop yoke 1(186.5, 211.0)-nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.653966349607799e-11,
+      "volumeMm3": 381.23775545980556
+    },
+    {
+      "index": 602,
+      "name": "original carriage drop yoke 1(169.5, 266.825)-shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.5229951461369637e-10,
+      "volumeMm3": 348.4652669127597
+    },
+    {
+      "index": 603,
+      "name": "original carriage drop yoke 1(169.5, 266.825)-head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.782236828759778e-10,
+      "volumeMm3": 206.31375109312256
+    },
+    {
+      "index": 604,
+      "name": "original carriage drop yoke 1(169.5, 266.825)-nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65680852055084e-11,
+      "volumeMm3": 381.23775545980124
+    },
+    {
+      "index": 605,
+      "name": "original carriage drop yoke 1(186.5, 266.825)-shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.523279363231268e-10,
+      "volumeMm3": 348.4652669127597
+    },
+    {
+      "index": 606,
+      "name": "original carriage drop yoke 1(186.5, 266.825)-head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 4.781952611665474e-10,
+      "volumeMm3": 206.31375109312248
+    },
+    {
+      "index": 607,
+      "name": "original carriage drop yoke 1(186.5, 266.825)-nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.653966349607799e-11,
+      "volumeMm3": 381.2377554598013
+    },
+    {
+      "index": 608,
+      "name": "original pad backing (-1, 230.4, -1)",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 172,
+      "centroidErrorMm": 1.1056044968427159e-11,
+      "volumeMm3": 3580.824975255269
+    },
+    {
+      "index": 609,
+      "name": "original pad backing (-1, 230.4, -1) pad 235.4 head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 90,
+      "centroidErrorMm": 8.075744517554995e-10,
+      "volumeMm3": 59.538076906702656
+    },
+    {
+      "index": 610,
+      "name": "original pad backing (-1, 230.4, -1) pad 235.4 shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 3.665547865239205e-10,
+      "volumeMm3": 129.3640327158351
+    },
+    {
+      "index": 611,
+      "name": "original pad backing (-1, 230.4, -1) pad 235.4 nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.9619862945983186e-11,
+      "volumeMm3": 159.71150319629507
+    },
+    {
+      "index": 612,
+      "name": "original pad backing (-1, 230.4, -1) pad 245.4 head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 90,
+      "centroidErrorMm": 8.075744517554995e-10,
+      "volumeMm3": 59.538076906702656
+    },
+    {
+      "index": 613,
+      "name": "original pad backing (-1, 230.4, -1) pad 245.4 shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 3.665263648144901e-10,
+      "volumeMm3": 129.3640327158351
+    },
+    {
+      "index": 614,
+      "name": "original pad backing (-1, 230.4, -1) pad 245.4 nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.964828465541359e-11,
+      "volumeMm3": 159.71150319629507
+    },
+    {
+      "index": 615,
+      "name": "original pad backing (-1, 230.4, -1) carriage 234.4-shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.523279363231268e-10,
+      "volumeMm3": 348.4652669127597
+    },
+    {
+      "index": 616,
+      "name": "original pad backing (-1, 230.4, -1) carriage 234.4-head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 5.278906201056088e-10,
+      "volumeMm3": 153.88315045531266
+    },
+    {
+      "index": 617,
+      "name": "original pad backing (-1, 230.4, -1) carriage 234.4-nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65822960602236e-11,
+      "volumeMm3": 381.2377554598032
+    },
+    {
+      "index": 618,
+      "name": "original pad backing (-1, 230.4, -1) carriage 246.4-shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.523279363231268e-10,
+      "volumeMm3": 348.4652669127597
+    },
+    {
+      "index": 619,
+      "name": "original pad backing (-1, 230.4, -1) carriage 246.4-head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 5.278764092508936e-10,
+      "volumeMm3": 153.88315045531283
+    },
+    {
+      "index": 620,
+      "name": "original pad backing (-1, 230.4, -1) carriage 246.4-nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65680852055084e-11,
+      "volumeMm3": 381.2377554598032
+    },
+    {
+      "index": 621,
+      "name": "original pad backing (-1, 230.4, 1)",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 172,
+      "centroidErrorMm": 1.1041834113711957e-11,
+      "volumeMm3": 3596.064975255266
+    },
+    {
+      "index": 622,
+      "name": "original pad backing (-1, 230.4, 1) pad 235.4 head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 90,
+      "centroidErrorMm": 7.347011887759436e-11,
+      "volumeMm3": 59.53807690633059
+    },
+    {
+      "index": 623,
+      "name": "original pad backing (-1, 230.4, 1) pad 235.4 shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 3.6646952139562927e-10,
+      "volumeMm3": 129.3640327159124
+    },
+    {
+      "index": 624,
+      "name": "original pad backing (-1, 230.4, 1) pad 235.4 nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.9619862945983186e-11,
+      "volumeMm3": 159.71150319629558
+    },
+    {
+      "index": 625,
+      "name": "original pad backing (-1, 230.4, 1) pad 245.4 head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 90,
+      "centroidErrorMm": 7.352696229645517e-11,
+      "volumeMm3": 59.53807690633059
+    },
+    {
+      "index": 626,
+      "name": "original pad backing (-1, 230.4, 1) pad 245.4 shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 3.6644109968619887e-10,
+      "volumeMm3": 129.3640327159124
+    },
+    {
+      "index": 627,
+      "name": "original pad backing (-1, 230.4, 1) pad 245.4 nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.964828465541359e-11,
+      "volumeMm3": 159.71150319629558
+    },
+    {
+      "index": 628,
+      "name": "original pad backing (-1, 230.4, 1) carriage 234.4-shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.523279363231268e-10,
+      "volumeMm3": 348.4652669127597
+    },
+    {
+      "index": 629,
+      "name": "original pad backing (-1, 230.4, 1) carriage 234.4-head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 5.279332526697544e-10,
+      "volumeMm3": 153.88315045531272
+    },
+    {
+      "index": 630,
+      "name": "original pad backing (-1, 230.4, 1) carriage 234.4-nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65680852055084e-11,
+      "volumeMm3": 381.2377554598032
+    },
+    {
+      "index": 631,
+      "name": "original pad backing (-1, 230.4, 1) carriage 246.4-shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.523279363231268e-10,
+      "volumeMm3": 348.4652669127597
+    },
+    {
+      "index": 632,
+      "name": "original pad backing (-1, 230.4, 1) carriage 246.4-head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 5.279332526697544e-10,
+      "volumeMm3": 153.88315045531286
+    },
+    {
+      "index": 633,
+      "name": "original pad backing (-1, 230.4, 1) carriage 246.4-nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65965069149388e-11,
+      "volumeMm3": 381.2377554598032
+    },
+    {
+      "index": 634,
+      "name": "original pad backing (-1, 290.4, -1)",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 172,
+      "centroidErrorMm": 1.1084466677857563e-11,
+      "volumeMm3": 3580.824975255263
+    },
+    {
+      "index": 635,
+      "name": "original pad backing (-1, 290.4, -1) pad 295.4 head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 90,
+      "centroidErrorMm": 8.075744517554995e-10,
+      "volumeMm3": 59.53807690670289
+    },
+    {
+      "index": 636,
+      "name": "original pad backing (-1, 290.4, -1) pad 295.4 shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 3.665263648144901e-10,
+      "volumeMm3": 129.3640327158351
+    },
+    {
+      "index": 637,
+      "name": "original pad backing (-1, 290.4, -1) pad 295.4 nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.97335497837048e-11,
+      "volumeMm3": 159.71150319629578
+    },
+    {
+      "index": 638,
+      "name": "original pad backing (-1, 290.4, -1) pad 305.4 head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 90,
+      "centroidErrorMm": 8.077449820120819e-10,
+      "volumeMm3": 59.53807690670289
+    },
+    {
+      "index": 639,
+      "name": "original pad backing (-1, 290.4, -1) pad 305.4 shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 3.6646952139562927e-10,
+      "volumeMm3": 129.3640327158351
+    },
+    {
+      "index": 640,
+      "name": "original pad backing (-1, 290.4, -1) pad 305.4 nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.9619862945983186e-11,
+      "volumeMm3": 159.71150319629578
+    },
+    {
+      "index": 641,
+      "name": "original pad backing (-1, 290.4, -1) carriage 294.4-shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.523279363231268e-10,
+      "volumeMm3": 348.4652669127597
+    },
+    {
+      "index": 642,
+      "name": "original pad backing (-1, 290.4, -1) carriage 294.4-head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 5.278764092508936e-10,
+      "volumeMm3": 153.88315045531263
+    },
+    {
+      "index": 643,
+      "name": "original pad backing (-1, 290.4, -1) carriage 294.4-nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65965069149388e-11,
+      "volumeMm3": 381.2377554598032
+    },
+    {
+      "index": 644,
+      "name": "original pad backing (-1, 290.4, -1) carriage 306.4-shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.523279363231268e-10,
+      "volumeMm3": 348.4652669127597
+    },
+    {
+      "index": 645,
+      "name": "original pad backing (-1, 290.4, -1) carriage 306.4-head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 5.278764092508936e-10,
+      "volumeMm3": 153.88315045531266
+    },
+    {
+      "index": 646,
+      "name": "original pad backing (-1, 290.4, -1) carriage 306.4-nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65822960602236e-11,
+      "volumeMm3": 381.2377554598032
+    },
+    {
+      "index": 647,
+      "name": "original pad backing (-1, 290.4, 1)",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 172,
+      "centroidErrorMm": 1.1027623258996755e-11,
+      "volumeMm3": 3596.064975255261
+    },
+    {
+      "index": 648,
+      "name": "original pad backing (-1, 290.4, 1) pad 295.4 head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 90,
+      "centroidErrorMm": 7.338485374930315e-11,
+      "volumeMm3": 59.53807690633069
+    },
+    {
+      "index": 649,
+      "name": "original pad backing (-1, 290.4, 1) pad 295.4 shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 3.6646952139562927e-10,
+      "volumeMm3": 129.3640327159124
+    },
+    {
+      "index": 650,
+      "name": "original pad backing (-1, 290.4, 1) pad 295.4 nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.956301952712238e-11,
+      "volumeMm3": 159.7115031962966
+    },
+    {
+      "index": 651,
+      "name": "original pad backing (-1, 290.4, 1) pad 305.4 head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 90,
+      "centroidErrorMm": 7.344169716816396e-11,
+      "volumeMm3": 59.53807690633069
+    },
+    {
+      "index": 652,
+      "name": "original pad backing (-1, 290.4, 1) pad 305.4 shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 3.665263648144901e-10,
+      "volumeMm3": 129.3640327159124
+    },
+    {
+      "index": 653,
+      "name": "original pad backing (-1, 290.4, 1) pad 305.4 nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.97335497837048e-11,
+      "volumeMm3": 159.7115031962966
+    },
+    {
+      "index": 654,
+      "name": "original pad backing (-1, 290.4, 1) carriage 294.4-shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.52342147177842e-10,
+      "volumeMm3": 348.4652669127597
+    },
+    {
+      "index": 655,
+      "name": "original pad backing (-1, 290.4, 1) carriage 294.4-head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 5.27904830960324e-10,
+      "volumeMm3": 153.88315045531274
+    },
+    {
+      "index": 656,
+      "name": "original pad backing (-1, 290.4, 1) carriage 294.4-nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65822960602236e-11,
+      "volumeMm3": 381.2377554598032
+    },
+    {
+      "index": 657,
+      "name": "original pad backing (-1, 290.4, 1) carriage 306.4-shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.52342147177842e-10,
+      "volumeMm3": 348.4652669127597
+    },
+    {
+      "index": 658,
+      "name": "original pad backing (-1, 290.4, 1) carriage 306.4-head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 5.27904830960324e-10,
+      "volumeMm3": 153.88315045531263
+    },
+    {
+      "index": 659,
+      "name": "original pad backing (-1, 290.4, 1) carriage 306.4-nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65822960602236e-11,
+      "volumeMm3": 381.2377554598032
+    },
+    {
+      "index": 660,
+      "name": "original pad backing (1, 230.4, -1)",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 172,
+      "centroidErrorMm": 1.1041834113711957e-11,
+      "volumeMm3": 3580.8249752552692
+    },
+    {
+      "index": 661,
+      "name": "original pad backing (1, 230.4, -1) pad 235.4 head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 90,
+      "centroidErrorMm": 8.075176083366387e-10,
+      "volumeMm3": 59.53807690679745
+    },
+    {
+      "index": 662,
+      "name": "original pad backing (1, 230.4, -1) pad 235.4 shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 3.665547865239205e-10,
+      "volumeMm3": 129.3640327158351
+    },
+    {
+      "index": 663,
+      "name": "original pad backing (1, 230.4, -1) pad 235.4 nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.936406756110955e-11,
+      "volumeMm3": 159.7115031963649
+    },
+    {
+      "index": 664,
+      "name": "original pad backing (1, 230.4, -1) pad 245.4 head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 90,
+      "centroidErrorMm": 8.074323432083474e-10,
+      "volumeMm3": 59.53807690679745
+    },
+    {
+      "index": 665,
+      "name": "original pad backing (1, 230.4, -1) pad 245.4 shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 3.665263648144901e-10,
+      "volumeMm3": 129.3640327158351
+    },
+    {
+      "index": 666,
+      "name": "original pad backing (1, 230.4, -1) pad 245.4 nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.936406756110955e-11,
+      "volumeMm3": 159.7115031963649
+    },
+    {
+      "index": 667,
+      "name": "original pad backing (1, 230.4, -1) carriage 234.4-shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.523279363231268e-10,
+      "volumeMm3": 348.4652669127598
+    },
+    {
+      "index": 668,
+      "name": "original pad backing (1, 230.4, -1) carriage 234.4-head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 5.278479875414632e-10,
+      "volumeMm3": 153.88315045533304
+    },
+    {
+      "index": 669,
+      "name": "original pad backing (1, 230.4, -1) carriage 234.4-nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65538743507932e-11,
+      "volumeMm3": 381.2377554598032
+    },
+    {
+      "index": 670,
+      "name": "original pad backing (1, 230.4, -1) carriage 246.4-shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.523279363231268e-10,
+      "volumeMm3": 348.4652669127598
+    },
+    {
+      "index": 671,
+      "name": "original pad backing (1, 230.4, -1) carriage 246.4-head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 5.278906201056088e-10,
+      "volumeMm3": 153.88315045533324
+    },
+    {
+      "index": 672,
+      "name": "original pad backing (1, 230.4, -1) carriage 246.4-nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65680852055084e-11,
+      "volumeMm3": 381.2377554598033
+    },
+    {
+      "index": 673,
+      "name": "original pad backing (1, 230.4, 1)",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 172,
+      "centroidErrorMm": 1.1027623258996755e-11,
+      "volumeMm3": 3596.064975255266
+    },
+    {
+      "index": 674,
+      "name": "original pad backing (1, 230.4, 1) pad 235.4 head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 90,
+      "centroidErrorMm": 7.344169716816396e-11,
+      "volumeMm3": 59.538076906541804
+    },
+    {
+      "index": 675,
+      "name": "original pad backing (1, 230.4, 1) pad 235.4 shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 3.6646952139562927e-10,
+      "volumeMm3": 129.3640327159124
+    },
+    {
+      "index": 676,
+      "name": "original pad backing (1, 230.4, 1) pad 235.4 nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.936406756110955e-11,
+      "volumeMm3": 159.71150319636567
+    },
+    {
+      "index": 677,
+      "name": "original pad backing (1, 230.4, 1) pad 245.4 head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 90,
+      "centroidErrorMm": 7.347011887759436e-11,
+      "volumeMm3": 59.538076906541804
+    },
+    {
+      "index": 678,
+      "name": "original pad backing (1, 230.4, 1) pad 245.4 shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 3.6644109968619887e-10,
+      "volumeMm3": 129.3640327159124
+    },
+    {
+      "index": 679,
+      "name": "original pad backing (1, 230.4, 1) pad 245.4 nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.930722414224874e-11,
+      "volumeMm3": 159.71150319636567
+    },
+    {
+      "index": 680,
+      "name": "original pad backing (1, 230.4, 1) carriage 234.4-shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.523279363231268e-10,
+      "volumeMm3": 348.4652669127598
+    },
+    {
+      "index": 681,
+      "name": "original pad backing (1, 230.4, 1) carriage 234.4-head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 5.279332526697544e-10,
+      "volumeMm3": 153.88315045533304
+    },
+    {
+      "index": 682,
+      "name": "original pad backing (1, 230.4, 1) carriage 234.4-nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65822960602236e-11,
+      "volumeMm3": 381.2377554598032
+    },
+    {
+      "index": 683,
+      "name": "original pad backing (1, 230.4, 1) carriage 246.4-shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.523279363231268e-10,
+      "volumeMm3": 348.4652669127598
+    },
+    {
+      "index": 684,
+      "name": "original pad backing (1, 230.4, 1) carriage 246.4-head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 5.279474635244696e-10,
+      "volumeMm3": 153.88315045533324
+    },
+    {
+      "index": 685,
+      "name": "original pad backing (1, 230.4, 1) carriage 246.4-nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65822960602236e-11,
+      "volumeMm3": 381.2377554598033
+    },
+    {
+      "index": 686,
+      "name": "original pad backing (1, 290.4, -1)",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 172,
+      "centroidErrorMm": 1.1070255823142361e-11,
+      "volumeMm3": 3580.824975255263
+    },
+    {
+      "index": 687,
+      "name": "original pad backing (1, 290.4, -1) pad 295.4 head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 90,
+      "centroidErrorMm": 8.074607649177779e-10,
+      "volumeMm3": 59.53807690679752
+    },
+    {
+      "index": 688,
+      "name": "original pad backing (1, 290.4, -1) pad 295.4 shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 3.665263648144901e-10,
+      "volumeMm3": 129.3640327158351
+    },
+    {
+      "index": 689,
+      "name": "original pad backing (1, 290.4, -1) pad 295.4 nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.9392489270539954e-11,
+      "volumeMm3": 159.711503196366
+    },
+    {
+      "index": 690,
+      "name": "original pad backing (1, 290.4, -1) pad 305.4 head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 90,
+      "centroidErrorMm": 8.075176083366387e-10,
+      "volumeMm3": 59.53807690679752
+    },
+    {
+      "index": 691,
+      "name": "original pad backing (1, 290.4, -1) pad 305.4 shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 3.6646952139562927e-10,
+      "volumeMm3": 129.3640327158351
+    },
+    {
+      "index": 692,
+      "name": "original pad backing (1, 290.4, -1) pad 305.4 nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.9392489270539954e-11,
+      "volumeMm3": 159.711503196366
+    },
+    {
+      "index": 693,
+      "name": "original pad backing (1, 290.4, -1) carriage 294.4-shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.523279363231268e-10,
+      "volumeMm3": 348.4652669127598
+    },
+    {
+      "index": 694,
+      "name": "original pad backing (1, 290.4, -1) carriage 294.4-head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 5.27904830960324e-10,
+      "volumeMm3": 153.88315045533304
+    },
+    {
+      "index": 695,
+      "name": "original pad backing (1, 290.4, -1) carriage 294.4-nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65822960602236e-11,
+      "volumeMm3": 381.2377554598032
+    },
+    {
+      "index": 696,
+      "name": "original pad backing (1, 290.4, -1) carriage 306.4-shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.523279363231268e-10,
+      "volumeMm3": 348.4652669127598
+    },
+    {
+      "index": 697,
+      "name": "original pad backing (1, 290.4, -1) carriage 306.4-head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 5.27904830960324e-10,
+      "volumeMm3": 153.88315045533304
+    },
+    {
+      "index": 698,
+      "name": "original pad backing (1, 290.4, -1) carriage 306.4-nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.65965069149388e-11,
+      "volumeMm3": 381.2377554598033
+    },
+    {
+      "index": 699,
+      "name": "original pad backing (1, 290.4, 1)",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 172,
+      "centroidErrorMm": 1.1013412404281553e-11,
+      "volumeMm3": 3596.064975255261
+    },
+    {
+      "index": 700,
+      "name": "original pad backing (1, 290.4, 1) pad 295.4 head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 90,
+      "centroidErrorMm": 7.349854058702476e-11,
+      "volumeMm3": 59.53807690654195
+    },
+    {
+      "index": 701,
+      "name": "original pad backing (1, 290.4, 1) pad 295.4 shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 3.6646952139562927e-10,
+      "volumeMm3": 129.3640327159124
+    },
+    {
+      "index": 702,
+      "name": "original pad backing (1, 290.4, 1) pad 295.4 nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.9392489270539954e-11,
+      "volumeMm3": 159.71150319636678
+    },
+    {
+      "index": 703,
+      "name": "original pad backing (1, 290.4, 1) pad 305.4 head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 90,
+      "centroidErrorMm": 7.332801033044234e-11,
+      "volumeMm3": 59.53807690654195
+    },
+    {
+      "index": 704,
+      "name": "original pad backing (1, 290.4, 1) pad 305.4 shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 3.665263648144901e-10,
+      "volumeMm3": 129.3640327159124
+    },
+    {
+      "index": 705,
+      "name": "original pad backing (1, 290.4, 1) pad 305.4 nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 3.927880243281834e-11,
+      "volumeMm3": 159.71150319636678
+    },
+    {
+      "index": 706,
+      "name": "original pad backing (1, 290.4, 1) carriage 294.4-shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.523279363231268e-10,
+      "volumeMm3": 348.4652669127598
+    },
+    {
+      "index": 707,
+      "name": "original pad backing (1, 290.4, 1) carriage 294.4-head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 5.27904830960324e-10,
+      "volumeMm3": 153.88315045533304
+    },
+    {
+      "index": 708,
+      "name": "original pad backing (1, 290.4, 1) carriage 294.4-nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.6610717769654e-11,
+      "volumeMm3": 381.2377554598032
+    },
+    {
+      "index": 709,
+      "name": "original pad backing (1, 290.4, 1) carriage 306.4-shaft",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 48,
+      "centroidErrorMm": 2.523279363231268e-10,
+      "volumeMm3": 348.4652669127598
+    },
+    {
+      "index": 710,
+      "name": "original pad backing (1, 290.4, 1) carriage 306.4-head",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 104,
+      "centroidErrorMm": 5.27904830960324e-10,
+      "volumeMm3": 153.88315045533304
+    },
+    {
+      "index": 711,
+      "name": "original pad backing (1, 290.4, 1) carriage 306.4-nut",
+      "group": "carriage",
+      "bodies": 1,
+      "triangles": 80,
+      "centroidErrorMm": 7.6610717769654e-11,
+      "volumeMm3": 381.2377554598033
+    }
+  ],
+  "seconds": 4.863883899990469,
+  "distribution": "Original/source-sized project geometry only; source F3D archive supplied separately. No vendor native trial geometry.",
+  "sourceExportManifestSha256": "1e59db6ff62504c0da795591f4238813c6847e030a34815f28bc2b8dee2f517e"
+}

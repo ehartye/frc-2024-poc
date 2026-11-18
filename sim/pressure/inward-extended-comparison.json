@@ -1,0 +1,48 @@
+{
+  "schema": "pressure-inward-extended-comparison/1",
+  "inputs": {
+    "sim/pressure/inward-extended-100ms-evidence.json": "e0afc8a9ad10b65bb212836f43d9a2e701c97a70f6c0c145c1d9e4f73678f37d",
+    "sim/pressure/inward-extended-half-evidence.json": "3dc03d5ae70ab762ebcef52b94d53ea801f7e8c28abdfd1fa11caec248614b21",
+    "sim/pressure/compare_inward_extended.py": "0f3782d35d4f560a6396b6be87d21e0e167b5827e71ee820488373ae4b538cb0"
+  },
+  "rows": [
+    {
+      "file": "sim/pressure/inward-extended-100ms-evidence.json",
+      "sha256": "e0afc8a9ad10b65bb212836f43d9a2e701c97a70f6c0c145c1d9e4f73678f37d",
+      "stepS": 0.001,
+      "acceptedSteps": 100,
+      "timeS": 1.059999999999994,
+      "relativeX": 0.16022683389097636,
+      "chassisVx": 0.07956613917779307,
+      "noteVx": -0.002252364283379266,
+      "potentialJ": 0.0006619994047196902,
+      "phaseResidualJ": 1.706591143607562e-06,
+      "runtimeSeconds": 173.58488219999708
+    },
+    {
+      "file": "sim/pressure/inward-extended-half-evidence.json",
+      "sha256": "3dc03d5ae70ab762ebcef52b94d53ea801f7e8c28abdfd1fa11caec248614b21",
+      "stepS": 0.0005,
+      "acceptedSteps": 200,
+      "timeS": 1.0599999999999898,
+      "relativeX": 0.1602268111701064,
+      "chassisVx": 0.07956603326462378,
+      "noteVx": -0.002252344177721954,
+      "potentialJ": 0.0006619982980507779,
+      "phaseResidualJ": 4.2337014302695243e-07,
+      "runtimeSeconds": 380.71133660001215
+    }
+  ],
+  "absoluteEndpointDeltas": {
+    "relativeX": 2.2720869963244184e-08,
+    "chassisVx": 1.0591316929042804e-07,
+    "noteVx": 2.0105657311773883e-08,
+    "potentialJ": 1.1066689123255535e-09
+  },
+  "acceptance": false,
+  "limits": [
+    "Same .960 start; this refines only next100ms, not full previous trajectory.",
+    "No spatial convergence, physical calibration, capture, stopping or lift acceptance.",
+    "Domain extension retains full finite pressure law and obstacle rejection."
+  ]
+}

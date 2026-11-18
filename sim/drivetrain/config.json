@@ -1,0 +1,87 @@
+{
+  "schema": "four-cim-drive-hypothesis/1",
+  "geometrySourceSha256": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+  "trackM": 0.57960768,
+  "outerAxleXM": 0.22254769759999998,
+  "wheelRadiusM": 0.0762000001,
+  "gearRatio": 10.714285714285715,
+  "motorsPerSide": 2,
+  "motorK": 0.018803,
+  "motorResistanceOhm": 0.091,
+  "phaseCurrentLimitA": 40.0,
+  "massKg": 45.0,
+  "yawInertiaKgM2": 6.0,
+  "motorRotorInertiaKgM2": 0.0001,
+  "wheelSideInertiaKgM2": 0.03,
+  "motorViscousDragNmPerRadps": 8.45364518349409e-05,
+  "gearViscousDragNmPerRadps": 0.002,
+  "tireMu": 0.8,
+  "slipRegularizationMps": 0.1,
+  "loadFractions": [
+    0.25,
+    0.5,
+    0.25
+  ],
+  "referenceMassRangeKg": [
+    30,
+    45,
+    60
+  ],
+  "referenceYawInertiaRangeKgM2": [
+    3,
+    6,
+    9
+  ],
+  "source": {
+    "url": "https://files.andymark.com/CIM-motor-curve-am-0255.pdf",
+    "sha256": "9f2c14096cb651c76ea92520dce95d49694b5a25f88381e01f4df24db3c64e1e",
+    "bytes": 92845,
+    "date": "2011-11-10",
+    "printedK": 0.018803,
+    "printedResistanceOhm": 0.091,
+    "reportedFreeRpm": 5310,
+    "reportedFreeCurrentA": 2.5,
+    "reportedStallTorqueNm": 2.420395,
+    "reportedStallCurrentA": 131.227,
+    "note": "Printed reciprocal K/R and endpoint data are not mutually reproduced by this ideal DC law; discrepancy retained, not calibration."
+  },
+  "assumptions": [
+    "Mass, yaw/wheel/rotor inertia, tire friction and load distribution are hypotheses; no complete mass estimate exists.",
+    "Motor viscous drag is a named hypothesis using K times reported no-load current divided by reported free speed, not a measured friction curve.",
+    "Ideal rigid gearing; rotor inertia reflected once into axle inertia, no duplicate energy.",
+    "Each side has three tire contacts with prescribed normal fractions; center-drop contact and dynamic load transfer are not solved.",
+    "Regularized friction circle models longitudinal slip and lateral scrub. No magic wheel-speed-to-chassis-speed assignment.",
+    "Caller supplies bus voltage and normal loads; no hidden battery. Signed regenerative power is preserved.",
+    "Ideal phase current limit and dissipative brake mode are controller hypotheses, not selected-controller behavior."
+  ],
+  "contactStationsM": [
+    [
+      [
+        -0.22254769766892715,
+        0.2909823999999877
+      ],
+      [
+        -8.660194485585748e-07,
+        0.2898038399999998
+      ],
+      [
+        0.22254769762689125,
+        0.2898775000000118
+      ]
+    ],
+    [
+      [
+        -0.22254769762692725,
+        -0.2898775000000197
+      ],
+      [
+        8.660194125766907e-07,
+        -0.28980384000001996
+      ],
+      [
+        0.2225476976688911,
+        -0.29098240000002007
+      ]
+    ]
+  ]
+}

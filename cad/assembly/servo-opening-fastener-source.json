@@ -1,0 +1,30 @@
+{
+  "schema": "servo-opening-fastener-source/1",
+  "adopted": false,
+  "sources": [
+    {
+      "url": "https://www.revrobotics.com/content/docs/ClassBot-Guide.pdf",
+      "sha256": "e00d75c1dc2de7dc5a4a8a6a066034019cc2ab9f224582dcc472cdf90f67e454",
+      "pdfPage": 17,
+      "printedPage": 16,
+      "copyrightYear": 2019,
+      "supports": "REV-41-1363 attachment uses two M3 x8 screws, not M2 clearance probes"
+    },
+    {
+      "url": "https://docs.revrobotics.com/duo-build/edu-kit-class-bot/edu-arm-assemblies",
+      "sha256": "a765910fb69a2b86834ef4ccb401bf8cc10c4134e115f9e4b6e1cd4898b09e73",
+      "supports": "Higher-load horn application requires central M3 retention; compatible REV-41-1097 and REV-41-1363 identified"
+    },
+    {
+      "url": "https://www.revrobotics.com/content/docs/2021-2022_Starter_Bot-BG.pdf",
+      "sha256": "fd027b05b552c6786bdfe2ebee682b29b022553ac398f35c6f3d7543e2eca17a",
+      "pdfPage": 76,
+      "supports": "M3x8 center screw documented for SRS V1 with horn V2 only; does NOT directly establish V1 horn insertion depth"
+    }
+  ],
+  "limits": [
+    "CAD cylinder hole diameter is not a clearance/tap/thread spec",
+    "M3x8 center screw with V1 horn remains candidate: exact insertion/load/retention approval absent",
+    "Manufacturer mating compatibility does not erase native shaft/horn material discrepancy"
+  ]
+}

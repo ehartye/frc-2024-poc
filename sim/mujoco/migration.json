@@ -1,0 +1,102 @@
+{
+  "schema": "mujoco-portable-migration/1",
+  "baseCommit": "a647854a25a06f716ea43aab8890d621f840ecee",
+  "files": [
+    {
+      "file": "drivetrain_bridge.py",
+      "auditSha256": "bc5c47c3881bfd835516b0e31ac3b80e0f7d562a357806c7cba0a0b38f5fee7a",
+      "portableSha256": "bc5c47c3881bfd835516b0e31ac3b80e0f7d562a357806c7cba0a0b38f5fee7a",
+      "change": "none"
+    },
+    {
+      "file": "native_drive.py",
+      "auditSha256": "af1a0e679ac7e4db8d9d8b82b02623f2eb9f352fca87bab3daad37c1311a4343",
+      "portableSha256": "af1a0e679ac7e4db8d9d8b82b02623f2eb9f352fca87bab3daad37c1311a4343",
+      "change": "none"
+    },
+    {
+      "file": "native_drive_run.py",
+      "auditSha256": "8c2071981d57c232ff3a620eaa9bc75ce782408aed97f3810892e6b6e894891d",
+      "portableSha256": "dfa9cff0672ce8cf9b9e83253e8ca7b26f45217ffa37d8ab933f9fe4d1935d26",
+      "change": "repository-relative source root only"
+    },
+    {
+      "file": "native_drive_interactive.py",
+      "auditSha256": "9fe9346e7149612b7282727bd14cca0cceefa20dfa069bd314c780e54218e020",
+      "portableSha256": "0fef781f655c5ebb66d6b88bc4fcf3065b48f34b070ca196b1769ccbf25e202b",
+      "change": "repository-relative source root only"
+    },
+    {
+      "file": "native_drive_interactive_v3.py",
+      "auditSha256": "36998f9af946fb1bead8a21a204803c636da25c8cb42292ca2b8c0f085f45124",
+      "portableSha256": "4a53874423a932e9a182994c370bdf27ff5ba9a4ac0e83f5d9c20388021e9175",
+      "change": "repository-relative source root only"
+    },
+    {
+      "file": "fusion_visual_display.py",
+      "auditSha256": "d3df8d031b5d196a9d3e3c3687410cdf91f5a266523a75687266372b0149059b",
+      "portableSha256": "d3df8d031b5d196a9d3e3c3687410cdf91f5a266523a75687266372b0149059b",
+      "change": "none"
+    },
+    {
+      "file": "fusion_visual_drive.py",
+      "auditSha256": "72d3689531bb6a2d7c93dcef70a4aae175dcb5d018bcd239bee1775a39f087f4",
+      "portableSha256": "eab67b2235cf9d7e4dec3cb1ff523814c3b0686b887c0912ffffeb80c6a9a500",
+      "change": "repository-relative source root only"
+    },
+    {
+      "file": "fusion_visual_provenance.py",
+      "auditSha256": "79841dba44301b102b26f28700b5d7e5eb9ae85ea1471d892c094d10315fdd88",
+      "portableSha256": "79841dba44301b102b26f28700b5d7e5eb9ae85ea1471d892c094d10315fdd88",
+      "change": "none"
+    },
+    {
+      "file": "verify_fusion_visual_display.py",
+      "auditSha256": "92c0f13823ecaca39f34befb05e0258ea23236b21e94828648983816f857dac6",
+      "portableSha256": "0ac5bfaf197172f0c26a766621cfe59499b203ec81dacda637ac75368898692d",
+      "change": "repository-relative source root only"
+    },
+    {
+      "file": "requirements-lock.txt",
+      "auditSha256": "ae8bbe85c745e97c3a393545aa9ef1eda9bbe52d20f987a57ba1e945793f371d",
+      "portableSha256": "ae8bbe85c745e97c3a393545aa9ef1eda9bbe52d20f987a57ba1e945793f371d",
+      "change": "none"
+    },
+    {
+      "file": "test_native_drive.py",
+      "auditSha256": "d40e6ac7c7e1252393740efe4bc4e2bf25d2517f595daa190763a778517061aa",
+      "portableSha256": "cb74d9bfa094e5a5401105f0835d8b7d9f3ab3783b7e5f7a516878dff13bd99a",
+      "change": "repository-relative source root only"
+    },
+    {
+      "file": "test_native_drive_interactive.py",
+      "auditSha256": "4076af1bf892aa26cb29e34197e97365972d8cd937c2c47eda9eaed4d49d0c0c",
+      "portableSha256": "7bd9d16d35cf73911fc346c4a8a07331dfe7f1eea59cff1c8ff2672d17accc01",
+      "change": "repository-relative source root only"
+    },
+    {
+      "file": "test_native_drive_interactive_v3.py",
+      "auditSha256": "7d57e84dcbd949aabe350213872799a9cc24a49fd5bad9b3bc3e500172d56d81",
+      "portableSha256": "7d57e84dcbd949aabe350213872799a9cc24a49fd5bad9b3bc3e500172d56d81",
+      "change": "none"
+    },
+    {
+      "file": "test_fusion_visual_display.py",
+      "auditSha256": "fd148ebbb3dc4763beda5d4eb08255954fe138cb495058b80b006d59fbcb6a02",
+      "portableSha256": "80f5bf1daec567a10d76ffe70d06e11b6de980d399c83ccc82f492e063932d15",
+      "change": "repository-relative source root only"
+    },
+    {
+      "file": "test_fusion_visual_provenance.py",
+      "auditSha256": "e4e7c348d71f342fe24b70be6c20e6e46934a1c34e47724bc3fbc1227bd184cf",
+      "portableSha256": "e4e7c348d71f342fe24b70be6c20e6e46934a1c34e47724bc3fbc1227bd184cf",
+      "change": "none"
+    }
+  ],
+  "limits": [
+    "Historical receipts retain executed audit-source hashes, not relabeled as portable-run evidence.",
+    "Original F3D source and vendor inputs are not included.",
+    "STL sourceFile host path removed; original export manifest hash retained.",
+    "No physics or controller law changed."
+  ]
+}

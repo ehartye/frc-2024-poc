@@ -1,0 +1,43 @@
+{
+  "schema": "finite-holding-checkpoint-map/1",
+  "source": "sim/integrated/evidence/fast-regulated-index.json",
+  "sourceSha256": "60b0e42aaf86bc934be1c0844cd7c9ed7fafa35efa910adef01dd4404675eac9",
+  "sourceTimeS": 4.436999999999816,
+  "sourceRotorOmegaRadps": [
+    0.23142302501293371,
+    0.23142302501044998
+  ],
+  "retentionRotorOmegaRadps": [
+    -0.23142302501293371,
+    -0.23142302501044998
+  ],
+  "retentionDuties": [
+    -0.0005377827814328856,
+    -0.0005377827814328856
+  ],
+  "normalSideN": [
+    1.7552133272048422,
+    1.7552133272048422
+  ],
+  "maximumTangentialForceN": 2.1062559926458104,
+  "weightN": 2.3045627499999997,
+  "supportsStaticWeight": false,
+  "sourceTangentialForceN": [
+    0.02531947843508702,
+    0.025319478435143213
+  ],
+  "sourceLongitudinalNoteVelocity": -0.000569533812555878,
+  "sourceLongitudinalChassisVelocity": 0.001998918822506178,
+  "sourceBusV": 11.99997923608,
+  "finitePatchRegistered": false,
+  "elasticHistoryAvailable": false,
+  "limits": [
+    "Acquisition positive rotor surface velocity is -robotX; retention positive rotor is +belt-axis; rotor and command signs are negated, kinetic energy unchanged.",
+    "Memoryless friction adds no elastic state; finite footprint, transverse motion and pitch-frame registration remain unresolved.",
+    "The source normal budget cannot support the full NOTE weight at mu=.6, independently of motor holding torque.",
+    "No new successful preload, lift actuator, physical capture or contact-persistence claim.",
+    "Final-state continuation must recompute normal geometry; archived contact force belongs to the preceding midpoint."
+  ],
+  "sourceTangentialForceTiming": "Archived preceding interval midpoint, not final-state force",
+  "finalVelocityTractionWithReportedNormalN": 0.02507600650919207
+}

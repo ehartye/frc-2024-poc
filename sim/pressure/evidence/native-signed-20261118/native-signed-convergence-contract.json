@@ -1,0 +1,21 @@
+{
+  "schema": "native-signed-convergence-contract/1",
+  "declaredBeforeFineTransport": true,
+  "levelsS": [
+    0.001,
+    0.0005,
+    0.00025
+  ],
+  "compare": "shared absolute times through earliest phase transition, then phase-relative times; independently compare index eligibility/event times",
+  "finestPairBounds": {
+    "relativePositionM": 0.0005,
+    "relativeVelocityMps": 0.003,
+    "indexEventTimeS": 0.03,
+    "transportEventTimeS": 0.02
+  },
+  "requireSameOutcome": true,
+  "fullStartupRequired": true,
+  "limits": [
+    "Finite numerical comparison only, no calibration or hardware validation"
+  ]
+}

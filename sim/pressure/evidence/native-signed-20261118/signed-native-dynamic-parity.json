@@ -1,0 +1,31 @@
+{
+  "schema": "signed-native-dynamic-parity/1",
+  "passed": true,
+  "acceptance": false,
+  "rows": [
+    {
+      "duty": 0.0034,
+      "steps": 20,
+      "stepS": 0.00025,
+      "maximumStateDifference": 2.220446049250313e-16,
+      "maximumEnergyDifferenceJ": 1.6479873021779667e-17
+    },
+    {
+      "duty": -0.0034,
+      "steps": 20,
+      "stepS": 0.00025,
+      "maximumStateDifference": 2.220446049250313e-16,
+      "maximumEnergyDifferenceJ": 1.6479873021779667e-17
+    },
+    {
+      "duty": 0.0,
+      "steps": 20,
+      "stepS": 0.00025,
+      "maximumStateDifference": 3.3306690738754696e-16,
+      "maximumEnergyDifferenceJ": 1.6479873021779667e-17
+    }
+  ],
+  "limits": [
+    "Prescribed contact state for implementation comparison only; not a capture, phase join, or calibration"
+  ]
+}

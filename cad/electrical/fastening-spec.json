@@ -1,0 +1,73 @@
+{
+  "schema": "electrical-fastening/1",
+  "sources": {
+    "shortScrew": {
+      "part": "am-1007",
+      "url": "https://andymark.com/am-1007",
+      "thread": "10-32",
+      "lengthMm": 15.875,
+      "material": "zinc-plated steel",
+      "massKg": 0.00317514659
+    },
+    "railScrew": {
+      "part": "am-1047",
+      "url": "https://andymark.com/products/10-32-x-0-75-in-socket-head-cap-screw",
+      "thread": "10-32",
+      "lengthMm": 19.05
+    },
+    "tubeScrew": {
+      "part": "am-1584",
+      "url": "https://andymark.com/products/10-32-x-1-75-in-button-head-cap-screw",
+      "lengthMm": 44.45,
+      "thread": "10-32",
+      "head": "button head",
+      "headHeightMaxMm": 2.5654,
+      "headDiameterMaxMm": 9.1694,
+      "dimensionsBasis": "Pencom ScrewBook page59 standard #10button envelope; not measured vendorhead"
+    },
+    "nut": {
+      "part": "am-1042",
+      "url": "https://andymark.com/products/10-32-nylock-nut",
+      "thicknessMm": 6.3246,
+      "acrossFlatsMm": 9.525,
+      "material": "zinc-plated steel, nylon locking insert"
+    },
+    "headDimensions": {
+      "url": "https://www.pencomsf.com/public/product-fliers/screw_book.pdf",
+      "basis": "standard #10 socket-head envelope; not an individually measured am screw"
+    },
+    "mountMaterial": {
+      "grade": "6061-T6 aluminum selected design material",
+      "densityKgPerMm3": 2.7e-06,
+      "url": "https://www.aluminum.org/sites/default/files/2026-01/Teal%20Sheets%20December%202025.pdf",
+      "basis": "typical alloy density; stock/certification and strength not verified"
+    },
+    "pdhScrew": {
+      "part": "am-1056",
+      "url": "https://andymark.com/products/10-32-x-1-in-socket-head-cap-screw-1",
+      "lengthMm": 25.4,
+      "thread": "10-32",
+      "material": "zinc-plated alloy steel",
+      "massKg": 0.00408233133
+    },
+    "washer": {
+      "part": "am-1026",
+      "url": "https://andymark.com/products/10-flat-washer",
+      "outerDiameterMm": 12.7,
+      "innerDiameterMm": 5.5626,
+      "thicknessMm": 1.1684,
+      "material": "zinc steel"
+    }
+  },
+  "threadModel": "nominal plain shank and clearance cylinder in nut; no helical flank contact",
+  "minimumProtrusionMm": 1.5875,
+  "torqueSpecified": false,
+  "completeElectricalFastening": false,
+  "breakerEvidence": "Deliberate selection revision to historical CB185-120/am0282; exact native mounting; CB285 evidence mismatch preserved in breaker-mount-evidence.json",
+  "batteryClamp": {
+    "type": "original bolted6061-T6 split clamp",
+    "pad": "1mm insulating pad design assumption, material and compression not yet selected",
+    "removal": "disconnect battery leads, remove two top screws/nuts and top bar, lift battery vertically; support feet remain",
+    "terminalClearance": "terminal and lead exact envelope still unverified; center strip is a deliberate hypothesis"
+  }
+}

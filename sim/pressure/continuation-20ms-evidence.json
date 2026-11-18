@@ -1,0 +1,2640 @@
+{
+  "schema": "pressure-continuation/1",
+  "inputs": {
+    "cad/assembly/build_robot.py": "cca2c9a3ecca7a622fb1283461c393b2288e3c6efd173c60d72a959e3c500e26",
+    "cad/assembly/bumper_candidate.py": "556fba39fda427cb081a2a1d4d806372b67b830606a242bbfc0babf05619fc19",
+    "cad/a2_primitives.py": "bef958c710da792f89def8606d7169a7c385fcff257826619a7b29fe0943952e",
+    "cad/a2_kinematics.py": "4329126a1465f53c8d27618307b2864ff69803e196ff4521aab8a50daf670581",
+    "cad/build_a2_layout.py": "aea31166eabc53113962cc511cfbd190eba54033f7b93476455961dccb1969c9",
+    "cad/cycle-contract-A2.json": "3700da3bf1a271d6b6763060f913435a4a50cda8d456cb1a57a6f1898416b6ad",
+    "cad/components/a2-transmission.json": "0aae2e2dd0d8c4b16729139380f6d1e2df0efa956dad2ee8b205be1a57f3d8b0",
+    "cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+    "cad/drivetrain/build_fastening.py": "9d82a974d184200e7a6c414bc74b345cd53aa2cf85f36c3cf528fe818997d4ac",
+    "cad/drivetrain/fastening.json": "6cb3d276cd5f59143ef9b52d2240095f02db9f92d6cfef5ae53b145a78862ac9",
+    "cad/drivetrain/build_drivetrain.py": "4748e01902aac32ae8d996e1f7676caa7f794ac6a5971b661855c26487ad29a7",
+    "cad/electrical/manifest.json": "9db917a55b0884db9841f52da3b5cccf8ad684c652e4dde3e01b1efe75e891a3",
+    "cad/electrical/build_electrical.py": "d2fbd40d0b26c8887679b6ed3b49c655b10a27a0cd175e812b35d9fccd6f6317",
+    "cad/electrical/mounts.py": "90254dbc5116a9af72df0ba6442ed94ef8c94e8247326f9b7c6cfd0c0749c7e8",
+    "cad/electrical/breaker_mount.py": "1e27087fa191e8043c6ed8b3c48bca4db50cde379efa171cc49508a1a1c75060",
+    "cad/electrical/breaker-mount-evidence.json": "9e0bb64f30ab3ee58de577fe694ee578135cdf4d74ddf8e0b3065b741266b07d",
+    "cad/electrical/fasteners.py": "788a1cb9bf71a780aed9cbeb5bf48d06532e914fed431edcc0e72a4bd273b799",
+    "cad/assembly/intake_components.py": "c6d352be0edba340d340112697d3f2482158b4fb8f3324b0dd3927344f9b43c5",
+    "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+    "cad/assembly/build_intake_candidate.py": "07e9c96ec0f5e4d02660e0d2efda8dd2bddfb0198862c5e228dbc9e07cbf9bc3",
+    "cad/assembly/check_intake_contact.py": "95d20cfed12331c135b5534d4076f833ae6741b69806a61e677e88098a7301e3",
+    "cad/assembly/verify_receipts.py": "213a00200bc7fc0b84bd4bb82e4a62aaee3c10432f35373fc3097b2141d4e81d",
+    "cad/assembly/audit_intake_motion.py": "1d33ef51ba87c170335234004b1fa3cac1aeeac39da6149d15eedf58a26c1509",
+    "cad/components/check_pulley_outer_profile.py": "23325f74745de7ea2d828340c816143346221c44325784d6e8934b08553efde5",
+    "cad/components/pulley-outer-profile.json": "e582635a9b49f9810eee996177af2761edfe7928450dd86ef76d103ce8af53ec",
+    "cad/assembly/lower_support_mounts.py": "1b832dcc91967eab3dcfe40abc585ef1137250fb4e6777b01075a79ebcb1b14d",
+    "cad/assembly/upper_carriage_connections.py": "bbfbdf8b8c5f9356b5f60a3b4ad3d2d94c7f4e8a76db0e64742618173c936032",
+    "cad/assembly/build_connected_candidate.py": "19356d26a59b7b22a9a4eaed106c9cfd5d9f57774d682e0bd100711348a5ea69",
+    "cad/assembly/slide_pad_attachments.py": "526310777f96f0f537844946c611b05f7e7dc80119a75d308f043832aa7ed7ef",
+    "cad/components/a2-wheel-cartridge.json": "d4a74dc6cbbd7105392083d1401cbd5b31bfc7be416952ab54b11207889db129",
+    "cad/assembly/belt_contact_geometry.py": "2cb19b7fb7648ca8f46a943f8ad4c70d97eef9d6cf56f8cf602bf5000aa30daf",
+    "sim/acquisition/export_obstacles.py": "2b25acc641d2a3d155f35d2d4c13d2432195433d89683c938ec4d6ddeb375f0c",
+    "cad/assembly/check_belt_contact_geometry.py": "6e6b394d6d1a27b67217f1cd1507c233137fecbd576b2d43c8355f3f1d990894",
+    "cad/assembly/audit_floor_entry.py": "84454ca13c79c4dcd604f0fba64f4a511bf009ffd330b58d895cd1388b7abddd",
+    "cad/assembly/audit_cartridge_interfaces.py": "44e8edfcecfd3afd38c8ed91ea153654d4bffe2579096dafd533d318e02af21f",
+    "sim/acquisition/free_planar.py": "cf15e99a00ccd47253fbc914f3f4adf97e6fa2afea73c98fe13aae0009ba7851",
+    "sim/acquisition/free_geometry.py": "f22c2efe90487b3e635da33ec60f31102112462a2b804785a7adaed2ba19ccb4",
+    "sim/acquisition/obstacle_gate.py": "769883314d51819b86e76a191a588cae509717c7ebcb8c6997c120b828b9a447",
+    "sim/acquisition/run_free_planar.py": "0597c8b02cdfbb77506bd2be1f6aff308f10d8529e7ae5eb563047f04d54ea2b",
+    "sim/acquisition/free-planar-config.json": "8ecb4ca6594ec456e56a79ceb63d222d9824e4985273d6b16a52b9737d166053",
+    "sim/acquisition/free-obstacles.json": "45651f5bbd4778928df1bc39a2265db06feecfc1da8ab30ff3b413f3bd9c6069",
+    "cad/assembly/evidence/belt-contact-geometry.json": "15d8783d6872236ecbc9d277579e9d2da5fba867e813faee4f753ef3ca1e2ba4",
+    "cad/assembly/evidence/floor-entry.json": "9baf2ff061ef5a79a34ef757c1b442579b7d8273efcbf72ffdf1fb95cca0739f",
+    "sim/pressure/finite_area.py": "75c7af7cc4446346e611c389d050cb3d1212404c560ad8e4884863e44f1cd5ed",
+    "sim/pressure/finite_transport.py": "6b4170b89e1b327c293e545dfd0d41b58af369f8eb11609dfd6d899ef9fb3f9b",
+    "sim/pressure/fast_geometry.py": "5312a02924a3ebe7cb85e7a61348587d118b5097d3c6cb19ea6d054cfd4b9074",
+    "sim/pressure/pressure_acquisition.py": "3259d85bb9b0742d96c7df18a5ca0b39994cfc87115b2e670d1b4be7bd392d36",
+    "sim/pressure/run_acquisition.py": "1d4b167f4ce654aab02a332663db1896cf52f0b49125abfa607dab06531193b4",
+    "sim/integrated/coupled_acquisition.py": "55f9778b7cab1cf76c38007f830385bb9c99ed62188a8151d6b50bb55c195df1",
+    "sim/integrated/shared_supply.py": "888855338f8d6d73510767cc9c64bf88f5ea0dbf899bd1bb67e136547f821e99",
+    "sim/integrated/patch_registration.py": "6cf66b74ba20a4a9b7da8d32f5a6b0a05ac31a10f06d0a7fc641601fba7f0dbc",
+    "tests/test_pressure_acquisition.py": "db2f083c72dbf58188f3483fe49f3a24a7585b6872f49365ef54f91990f6ee7f",
+    "tests/test_pressure_fast_geometry.py": "4b904892ac41bf266524b1ebaabedddc27816488d7295ed23a7638afe29ca230",
+    "sim/drivetrain/plant.py": "3d30f7df18abf6c24cc5c949a308246bb275bea57242128916cee627da561155",
+    "sim/drivetrain/config.json": "334a7d02b4968401a10fb829ae838edfbeb7d9a311c13f3e2cbcc47b54748ff4",
+    "sim/drivetrain/run.py": "312e416f62e7fce32566529bfbb3a78ce68c58a4ef99faa210b44cdc8db18d7f",
+    "sim/component-launcher/power_state.py": "8248f96d46e30a8fcf8179433d3a808c799fcb736d096c529e0bfd4b73efae11",
+    "sim/pressure/checkpoint.py": "d6d7ea2ea96b21532e94029a0ac73281ca55f9a93ea8566552bd078eae30ff1c",
+    "sim/pressure/compare_entry.py": "7994e822468d790dd95df221e87ab8ee1a2cfd2fb37b5e0ab5b782557a29ebf0",
+    "sim/pressure/run_continuation.py": "05afcdbf15469146b13587af4641ebbedbb692a2f247937f6a79721c0c4d0d91",
+    "tests/test_pressure_checkpoint.py": "14eb2c0d84972ab64f3629fc72598b2f0d5dd84990c3573f7dfc3b796dced5d6",
+    "sim/pressure/acquisition-entry-evidence.json": "bc94a16a12b4e1642f5874492790071454ac3370d450b3eaf6dc0cacd3b44450"
+  },
+  "ancestrySha256": "bc94a16a12b4e1642f5874492790071454ac3370d450b3eaf6dc0cacd3b44450",
+  "startCheckpoint": {
+    "schema": "pressure-acquisition-checkpoint/1",
+    "identity": {
+      "inputs": {
+        "cad/assembly/build_robot.py": "cca2c9a3ecca7a622fb1283461c393b2288e3c6efd173c60d72a959e3c500e26",
+        "cad/assembly/bumper_candidate.py": "556fba39fda427cb081a2a1d4d806372b67b830606a242bbfc0babf05619fc19",
+        "cad/a2_primitives.py": "bef958c710da792f89def8606d7169a7c385fcff257826619a7b29fe0943952e",
+        "cad/a2_kinematics.py": "4329126a1465f53c8d27618307b2864ff69803e196ff4521aab8a50daf670581",
+        "cad/build_a2_layout.py": "aea31166eabc53113962cc511cfbd190eba54033f7b93476455961dccb1969c9",
+        "cad/cycle-contract-A2.json": "3700da3bf1a271d6b6763060f913435a4a50cda8d456cb1a57a6f1898416b6ad",
+        "cad/components/a2-transmission.json": "0aae2e2dd0d8c4b16729139380f6d1e2df0efa956dad2ee8b205be1a57f3d8b0",
+        "cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+        "cad/drivetrain/build_fastening.py": "9d82a974d184200e7a6c414bc74b345cd53aa2cf85f36c3cf528fe818997d4ac",
+        "cad/drivetrain/fastening.json": "6cb3d276cd5f59143ef9b52d2240095f02db9f92d6cfef5ae53b145a78862ac9",
+        "cad/drivetrain/build_drivetrain.py": "4748e01902aac32ae8d996e1f7676caa7f794ac6a5971b661855c26487ad29a7",
+        "cad/electrical/manifest.json": "9db917a55b0884db9841f52da3b5cccf8ad684c652e4dde3e01b1efe75e891a3",
+        "cad/electrical/build_electrical.py": "d2fbd40d0b26c8887679b6ed3b49c655b10a27a0cd175e812b35d9fccd6f6317",
+        "cad/electrical/mounts.py": "90254dbc5116a9af72df0ba6442ed94ef8c94e8247326f9b7c6cfd0c0749c7e8",
+        "cad/electrical/breaker_mount.py": "1e27087fa191e8043c6ed8b3c48bca4db50cde379efa171cc49508a1a1c75060",
+        "cad/electrical/breaker-mount-evidence.json": "9e0bb64f30ab3ee58de577fe694ee578135cdf4d74ddf8e0b3065b741266b07d",
+        "cad/electrical/fasteners.py": "788a1cb9bf71a780aed9cbeb5bf48d06532e914fed431edcc0e72a4bd273b799",
+        "cad/assembly/intake_components.py": "c6d352be0edba340d340112697d3f2482158b4fb8f3324b0dd3927344f9b43c5",
+        "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+        "cad/assembly/build_intake_candidate.py": "07e9c96ec0f5e4d02660e0d2efda8dd2bddfb0198862c5e228dbc9e07cbf9bc3",
+        "cad/assembly/check_intake_contact.py": "95d20cfed12331c135b5534d4076f833ae6741b69806a61e677e88098a7301e3",
+        "cad/assembly/verify_receipts.py": "213a00200bc7fc0b84bd4bb82e4a62aaee3c10432f35373fc3097b2141d4e81d",
+        "cad/assembly/audit_intake_motion.py": "1d33ef51ba87c170335234004b1fa3cac1aeeac39da6149d15eedf58a26c1509",
+        "cad/components/check_pulley_outer_profile.py": "23325f74745de7ea2d828340c816143346221c44325784d6e8934b08553efde5",
+        "cad/components/pulley-outer-profile.json": "e582635a9b49f9810eee996177af2761edfe7928450dd86ef76d103ce8af53ec",
+        "cad/assembly/lower_support_mounts.py": "1b832dcc91967eab3dcfe40abc585ef1137250fb4e6777b01075a79ebcb1b14d",
+        "cad/assembly/upper_carriage_connections.py": "bbfbdf8b8c5f9356b5f60a3b4ad3d2d94c7f4e8a76db0e64742618173c936032",
+        "cad/assembly/build_connected_candidate.py": "19356d26a59b7b22a9a4eaed106c9cfd5d9f57774d682e0bd100711348a5ea69",
+        "cad/assembly/slide_pad_attachments.py": "526310777f96f0f537844946c611b05f7e7dc80119a75d308f043832aa7ed7ef",
+        "cad/components/a2-wheel-cartridge.json": "d4a74dc6cbbd7105392083d1401cbd5b31bfc7be416952ab54b11207889db129",
+        "cad/assembly/belt_contact_geometry.py": "2cb19b7fb7648ca8f46a943f8ad4c70d97eef9d6cf56f8cf602bf5000aa30daf",
+        "sim/acquisition/export_obstacles.py": "2b25acc641d2a3d155f35d2d4c13d2432195433d89683c938ec4d6ddeb375f0c",
+        "cad/assembly/check_belt_contact_geometry.py": "6e6b394d6d1a27b67217f1cd1507c233137fecbd576b2d43c8355f3f1d990894",
+        "cad/assembly/audit_floor_entry.py": "84454ca13c79c4dcd604f0fba64f4a511bf009ffd330b58d895cd1388b7abddd",
+        "cad/assembly/audit_cartridge_interfaces.py": "44e8edfcecfd3afd38c8ed91ea153654d4bffe2579096dafd533d318e02af21f",
+        "sim/acquisition/free_planar.py": "cf15e99a00ccd47253fbc914f3f4adf97e6fa2afea73c98fe13aae0009ba7851",
+        "sim/acquisition/free_geometry.py": "f22c2efe90487b3e635da33ec60f31102112462a2b804785a7adaed2ba19ccb4",
+        "sim/acquisition/obstacle_gate.py": "769883314d51819b86e76a191a588cae509717c7ebcb8c6997c120b828b9a447",
+        "sim/acquisition/run_free_planar.py": "0597c8b02cdfbb77506bd2be1f6aff308f10d8529e7ae5eb563047f04d54ea2b",
+        "sim/acquisition/free-planar-config.json": "8ecb4ca6594ec456e56a79ceb63d222d9824e4985273d6b16a52b9737d166053",
+        "sim/acquisition/free-obstacles.json": "45651f5bbd4778928df1bc39a2265db06feecfc1da8ab30ff3b413f3bd9c6069",
+        "cad/assembly/evidence/belt-contact-geometry.json": "15d8783d6872236ecbc9d277579e9d2da5fba867e813faee4f753ef3ca1e2ba4",
+        "cad/assembly/evidence/floor-entry.json": "9baf2ff061ef5a79a34ef757c1b442579b7d8273efcbf72ffdf1fb95cca0739f",
+        "sim/pressure/finite_area.py": "75c7af7cc4446346e611c389d050cb3d1212404c560ad8e4884863e44f1cd5ed",
+        "sim/pressure/finite_transport.py": "6b4170b89e1b327c293e545dfd0d41b58af369f8eb11609dfd6d899ef9fb3f9b",
+        "sim/pressure/fast_geometry.py": "5312a02924a3ebe7cb85e7a61348587d118b5097d3c6cb19ea6d054cfd4b9074",
+        "sim/pressure/pressure_acquisition.py": "3259d85bb9b0742d96c7df18a5ca0b39994cfc87115b2e670d1b4be7bd392d36",
+        "sim/pressure/run_acquisition.py": "1d4b167f4ce654aab02a332663db1896cf52f0b49125abfa607dab06531193b4",
+        "sim/integrated/coupled_acquisition.py": "55f9778b7cab1cf76c38007f830385bb9c99ed62188a8151d6b50bb55c195df1",
+        "sim/integrated/shared_supply.py": "888855338f8d6d73510767cc9c64bf88f5ea0dbf899bd1bb67e136547f821e99",
+        "sim/integrated/patch_registration.py": "6cf66b74ba20a4a9b7da8d32f5a6b0a05ac31a10f06d0a7fc641601fba7f0dbc",
+        "tests/test_pressure_acquisition.py": "db2f083c72dbf58188f3483fe49f3a24a7585b6872f49365ef54f91990f6ee7f",
+        "tests/test_pressure_fast_geometry.py": "4b904892ac41bf266524b1ebaabedddc27816488d7295ed23a7638afe29ca230",
+        "sim/drivetrain/plant.py": "3d30f7df18abf6c24cc5c949a308246bb275bea57242128916cee627da561155",
+        "sim/drivetrain/config.json": "334a7d02b4968401a10fb829ae838edfbeb7d9a311c13f3e2cbcc47b54748ff4",
+        "sim/drivetrain/run.py": "312e416f62e7fce32566529bfbb3a78ce68c58a4ef99faa210b44cdc8db18d7f",
+        "sim/component-launcher/power_state.py": "8248f96d46e30a8fcf8179433d3a808c799fcb736d096c529e0bfd4b73efae11",
+        "sim/pressure/checkpoint.py": "d6d7ea2ea96b21532e94029a0ac73281ca55f9a93ea8566552bd078eae30ff1c",
+        "sim/pressure/compare_entry.py": "7994e822468d790dd95df221e87ab8ee1a2cfd2fb37b5e0ab5b782557a29ebf0"
+      },
+      "driveConfig": {
+        "schema": "four-cim-drive-hypothesis/1",
+        "geometrySourceSha256": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+        "trackM": 0.57960768,
+        "outerAxleXM": 0.22254769759999998,
+        "wheelRadiusM": 0.0762000001,
+        "gearRatio": 10.714285714285715,
+        "motorsPerSide": 2,
+        "motorK": 0.018803,
+        "motorResistanceOhm": 0.091,
+        "phaseCurrentLimitA": 40.0,
+        "massKg": 45.0,
+        "yawInertiaKgM2": 6.0,
+        "motorRotorInertiaKgM2": 0.0001,
+        "wheelSideInertiaKgM2": 0.03,
+        "motorViscousDragNmPerRadps": 8.45364518349409e-05,
+        "gearViscousDragNmPerRadps": 0.002,
+        "tireMu": 0.8,
+        "slipRegularizationMps": 0.1,
+        "loadFractions": [
+          0.25,
+          0.5,
+          0.25
+        ],
+        "referenceMassRangeKg": [
+          30,
+          45,
+          60
+        ],
+        "referenceYawInertiaRangeKgM2": [
+          3,
+          6,
+          9
+        ],
+        "source": {
+          "url": "https://files.andymark.com/CIM-motor-curve-am-0255.pdf",
+          "sha256": "9f2c14096cb651c76ea92520dce95d49694b5a25f88381e01f4df24db3c64e1e",
+          "bytes": 92845,
+          "date": "2011-11-10",
+          "printedK": 0.018803,
+          "printedResistanceOhm": 0.091,
+          "reportedFreeRpm": 5310,
+          "reportedFreeCurrentA": 2.5,
+          "reportedStallTorqueNm": 2.420395,
+          "reportedStallCurrentA": 131.227,
+          "note": "Printed reciprocal K/R and endpoint data are not mutually reproduced by this ideal DC law; discrepancy retained, not calibration."
+        },
+        "assumptions": [
+          "Mass, yaw/wheel/rotor inertia, tire friction and load distribution are hypotheses; no complete mass estimate exists.",
+          "Motor viscous drag is a named hypothesis using K times reported no-load current divided by reported free speed, not a measured friction curve.",
+          "Ideal rigid gearing; rotor inertia reflected once into axle inertia, no duplicate energy.",
+          "Each side has three tire contacts with prescribed normal fractions; center-drop contact and dynamic load transfer are not solved.",
+          "Regularized friction circle models longitudinal slip and lateral scrub. No magic wheel-speed-to-chassis-speed assignment.",
+          "Caller supplies bus voltage and normal loads; no hidden battery. Signed regenerative power is preserved.",
+          "Ideal phase current limit and dissipative brake mode are controller hypotheses, not selected-controller behavior."
+        ],
+        "contactStationsM": [
+          [
+            [
+              -0.22254769766892715,
+              0.2909823999999877
+            ],
+            [
+              -8.660194485585748e-07,
+              0.2898038399999998
+            ],
+            [
+              0.22254769762689125,
+              0.2898775000000118
+            ]
+          ],
+          [
+            [
+              -0.22254769762692725,
+              -0.2898775000000197
+            ],
+            [
+              8.660194125766907e-07,
+              -0.28980384000001996
+            ],
+            [
+              0.2225476976688911,
+              -0.29098240000002007
+            ]
+          ]
+        ]
+      },
+      "noteConfig": {
+        "stepS": 0.0001,
+        "horizonS": 2.0,
+        "kvRadpsPerV": 50.39638215133627,
+        "motorResistanceOhm": 0.11428571428571428,
+        "sourceV": 12.0,
+        "sourceResistanceOhm": 0.02,
+        "currentLimitA": 40.0,
+        "radiusM": 0.012127606663602424,
+        "slipRegularizationMps": 0.01,
+        "pieceMassKg": 0.235,
+        "yawInertiaKgM2": 0.00557176305,
+        "rotorInertiaKgM2": 3e-05,
+        "normalStiffnessNpm": 2000.0,
+        "compressionAlphaSpm": 2.0,
+        "beltMu": 0.6,
+        "groundMu": 0.4,
+        "groundRingRadiusM": 0.1524
+      },
+      "cad": {
+        "schema": "original-2024-intake-elevator/1",
+        "units": "mm",
+        "status": "original component layout candidate; not qualified capture/retention/load design",
+        "note": {
+          "majorRadius": 152.4,
+          "tubeRadius": 25.4
+        },
+        "stageCenterX": 178,
+        "floorCenterZ": 25.4,
+        "handoffCenterZ": 474.8333949243112,
+        "pitchDeg": 60,
+        "guide": {
+          "x": 101.6,
+          "yAbs": 250,
+          "bottom": 187.515,
+          "height": 730,
+          "square": 25.4,
+          "wall": 3.175,
+          "slideClearance": 0.3
+        },
+        "pinch": {
+          "teeth": 12,
+          "pitch": 6.35,
+          "beltTeethHypothesis": 64,
+          "beltWidth": 12.7,
+          "beltRadialThicknessHypothesis": 2,
+          "innerFaceYAbs": 176.9223933363976,
+          "shaftLower": -23,
+          "shaftLength": 83,
+          "lowerBearingZ": -18.4,
+          "upperBearingZ": 25.4,
+          "drivePulleyZ": 40,
+          "motorOffsetY": 114.3,
+          "motorFaceZ": 150,
+          "beltPartCurrent": "REV-21-4064",
+          "motorSideYAbs": 160,
+          "transferBeltTeeth": 48,
+          "rearShaftLength": 57,
+          "beltCenterX": 63.5,
+          "outerProfileBands": [
+            {
+              "zMinMm": -9.3473,
+              "zMaxMm": -7.14375,
+              "proposedOuterRadiusMm": 13.2
+            },
+            {
+              "zMinMm": -7.14375,
+              "zMaxMm": 7.14375,
+              "proposedOuterRadiusMm": 12.0
+            },
+            {
+              "zMinMm": 7.14375,
+              "zMaxMm": 9.3473,
+              "proposedOuterRadiusMm": 13.2
+            }
+          ],
+          "outerProfileEvidence": "cad/components/pulley-outer-profile.json"
+        },
+        "lift": {
+          "driveX": 60,
+          "lowerPulleyZ": 200,
+          "upperPulleyZ": 898.5,
+          "carriageAnchorAboveNote": 225,
+          "gearRatioHypothesis": 12,
+          "chain": "REV-41-1365",
+          "sprocket": "REV-21-2016",
+          "sprocketTeeth": 16,
+          "chainLinksHypothesis": 236,
+          "sprocketPitchRadius": 16.4,
+          "sprocketOuterRadius": 17.95,
+          "chainYAbs": 290
+        },
+        "sources": {
+          "motor": "https://www.revrobotics.com/rev-21-1650/",
+          "pulley": "https://www.revrobotics.com/rev-21-2201/",
+          "gearbox": "https://www.revrobotics.com/content/docs/REV-21-2100-DR.pdf",
+          "ratios": "https://www.revrobotics.com/content/docs/REV-21-2101-DR.pdf",
+          "chain": "https://www.revrobotics.com/rev-41-1365/",
+          "sprocket": "https://www.revrobotics.com/content/docs/REV-21-2016-DR.pdf",
+          "pinchBelt": "https://www.revrobotics.com/content/docs/RT25-Belts-0.5in-Width-DR.pdf"
+        },
+        "limits": [
+          "Side-pinch64T RT25 belt is currently listed but pre2024availability unverified;236link chain layout needs real link/polygon/attachment/adjustment checks",
+          "Side-belt backing traction/normal force and capture are unmeasured; no contact acceptance",
+          "NEO/MAXPlanetary dimension-only representations; exact couplers/mount/retention unresolved",
+          "Power-off motion/retention behavior and any brake are unmodeled; retention is mission-dependent",
+          "Full cradle pulley/bearing/shaft interference and NOTE swept contact still must be checked",
+          "Original aluminum guide and UHMW slide-pad materials assumed, not fabrication specifications",
+          "Shooter moved58mm forward and handoff shifted toguide\u221220; prior target/launch registration must be recomputed"
+        ],
+        "shooterPivotXmm": 188,
+        "handoffGuideCoordinateMm": -20,
+        "throatHalfWidthMm": 215,
+        "carriageOffsetMm": 200,
+        "cradleSideYAbs": 207,
+        "pivotBracketYAbs": 211,
+        "rotation": {
+          "chainLinks": 114,
+          "sprocketTeeth": 16,
+          "pitch": 6.35,
+          "centerDistance": 311.15,
+          "chainPlaneY": -222.5,
+          "upperX": 100,
+          "upperZOffset": 301.2147448250168
+        },
+        "shooterSupportYAbs": 300,
+        "removedSourceMembers": [
+          "am-2974-cut-2"
+        ],
+        "replacementPortalTopZ": 917.515,
+        "pivotShaftInnerYAbs": 203.5
+      },
+      "pressure": {
+        "resolution": [
+          1024,
+          1024
+        ],
+        "kArea": 10000000.0,
+        "uPositiveM": 0.0,
+        "materialPhase": "uniform-midpoint-fixed-v1"
+      }
+    },
+    "state": {
+      "chassis": {
+        "t": 0.5800000000000004,
+        "x": 0.33145645827124454,
+        "y": 7.782367901751834e-16,
+        "heading": 3.3104293402688617e-15,
+        "vx": 0.823464177015708,
+        "vy": 1.8623721883017717e-15,
+        "yaw_rate": -1.706781253088028e-16,
+        "wheel": [
+          10.853929150498365,
+          10.853929150498367
+        ],
+        "wheel_angle": [
+          4.492221466854255,
+          4.492221466854276
+        ]
+      },
+      "note": {
+        "p": [
+          0.6579464082552928,
+          5.449653673341324e-16
+        ],
+        "v": [
+          -0.009318605530154248,
+          6.276598150394612e-14
+        ],
+        "yaw": -2.4973821752514876e-15,
+        "spin": -3.1090316904085075e-13,
+        "w": [
+          71.45481772161092,
+          71.45481772161851
+        ]
+      },
+      "ledger": {
+        "sourceWork": 49.93666498899245,
+        "sourceHeat": 0.8822155911243889,
+        "driveWinding": 24.508071667249393,
+        "driveBrake": 0.0,
+        "driveDrag": 1.6891813236422926,
+        "tireSlip": 1.0590659686091848,
+        "pinchWinding": 0.14693966848248277,
+        "normalHeat": 0.0,
+        "beltSlip": 0.0003480543217437197,
+        "groundHeat": 2.3591742437634204e-05
+      },
+      "timeS": 0.5800000000000004,
+      "initialEnergyJ": 0.0
+    },
+    "diagnostics": {
+      "potentialJ": 0.0004682298045992222,
+      "kineticJ": 21.64928582965964,
+      "residualJ": 0.0010650643562868784
+    },
+    "digest": "a33dc0bcef249fe300309c9f0810fa9e5a42fbf645bf9d0cd8f8c9be320c82eb"
+  },
+  "endCheckpoint": {
+    "schema": "pressure-acquisition-checkpoint/1",
+    "identity": {
+      "inputs": {
+        "cad/assembly/build_robot.py": "cca2c9a3ecca7a622fb1283461c393b2288e3c6efd173c60d72a959e3c500e26",
+        "cad/assembly/bumper_candidate.py": "556fba39fda427cb081a2a1d4d806372b67b830606a242bbfc0babf05619fc19",
+        "cad/a2_primitives.py": "bef958c710da792f89def8606d7169a7c385fcff257826619a7b29fe0943952e",
+        "cad/a2_kinematics.py": "4329126a1465f53c8d27618307b2864ff69803e196ff4521aab8a50daf670581",
+        "cad/build_a2_layout.py": "aea31166eabc53113962cc511cfbd190eba54033f7b93476455961dccb1969c9",
+        "cad/cycle-contract-A2.json": "3700da3bf1a271d6b6763060f913435a4a50cda8d456cb1a57a6f1898416b6ad",
+        "cad/components/a2-transmission.json": "0aae2e2dd0d8c4b16729139380f6d1e2df0efa956dad2ee8b205be1a57f3d8b0",
+        "cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+        "cad/drivetrain/build_fastening.py": "9d82a974d184200e7a6c414bc74b345cd53aa2cf85f36c3cf528fe818997d4ac",
+        "cad/drivetrain/fastening.json": "6cb3d276cd5f59143ef9b52d2240095f02db9f92d6cfef5ae53b145a78862ac9",
+        "cad/drivetrain/build_drivetrain.py": "4748e01902aac32ae8d996e1f7676caa7f794ac6a5971b661855c26487ad29a7",
+        "cad/electrical/manifest.json": "9db917a55b0884db9841f52da3b5cccf8ad684c652e4dde3e01b1efe75e891a3",
+        "cad/electrical/build_electrical.py": "d2fbd40d0b26c8887679b6ed3b49c655b10a27a0cd175e812b35d9fccd6f6317",
+        "cad/electrical/mounts.py": "90254dbc5116a9af72df0ba6442ed94ef8c94e8247326f9b7c6cfd0c0749c7e8",
+        "cad/electrical/breaker_mount.py": "1e27087fa191e8043c6ed8b3c48bca4db50cde379efa171cc49508a1a1c75060",
+        "cad/electrical/breaker-mount-evidence.json": "9e0bb64f30ab3ee58de577fe694ee578135cdf4d74ddf8e0b3065b741266b07d",
+        "cad/electrical/fasteners.py": "788a1cb9bf71a780aed9cbeb5bf48d06532e914fed431edcc0e72a4bd273b799",
+        "cad/assembly/intake_components.py": "c6d352be0edba340d340112697d3f2482158b4fb8f3324b0dd3927344f9b43c5",
+        "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+        "cad/assembly/build_intake_candidate.py": "07e9c96ec0f5e4d02660e0d2efda8dd2bddfb0198862c5e228dbc9e07cbf9bc3",
+        "cad/assembly/check_intake_contact.py": "95d20cfed12331c135b5534d4076f833ae6741b69806a61e677e88098a7301e3",
+        "cad/assembly/verify_receipts.py": "213a00200bc7fc0b84bd4bb82e4a62aaee3c10432f35373fc3097b2141d4e81d",
+        "cad/assembly/audit_intake_motion.py": "1d33ef51ba87c170335234004b1fa3cac1aeeac39da6149d15eedf58a26c1509",
+        "cad/components/check_pulley_outer_profile.py": "23325f74745de7ea2d828340c816143346221c44325784d6e8934b08553efde5",
+        "cad/components/pulley-outer-profile.json": "e582635a9b49f9810eee996177af2761edfe7928450dd86ef76d103ce8af53ec",
+        "cad/assembly/lower_support_mounts.py": "1b832dcc91967eab3dcfe40abc585ef1137250fb4e6777b01075a79ebcb1b14d",
+        "cad/assembly/upper_carriage_connections.py": "bbfbdf8b8c5f9356b5f60a3b4ad3d2d94c7f4e8a76db0e64742618173c936032",
+        "cad/assembly/build_connected_candidate.py": "19356d26a59b7b22a9a4eaed106c9cfd5d9f57774d682e0bd100711348a5ea69",
+        "cad/assembly/slide_pad_attachments.py": "526310777f96f0f537844946c611b05f7e7dc80119a75d308f043832aa7ed7ef",
+        "cad/components/a2-wheel-cartridge.json": "d4a74dc6cbbd7105392083d1401cbd5b31bfc7be416952ab54b11207889db129",
+        "cad/assembly/belt_contact_geometry.py": "2cb19b7fb7648ca8f46a943f8ad4c70d97eef9d6cf56f8cf602bf5000aa30daf",
+        "sim/acquisition/export_obstacles.py": "2b25acc641d2a3d155f35d2d4c13d2432195433d89683c938ec4d6ddeb375f0c",
+        "cad/assembly/check_belt_contact_geometry.py": "6e6b394d6d1a27b67217f1cd1507c233137fecbd576b2d43c8355f3f1d990894",
+        "cad/assembly/audit_floor_entry.py": "84454ca13c79c4dcd604f0fba64f4a511bf009ffd330b58d895cd1388b7abddd",
+        "cad/assembly/audit_cartridge_interfaces.py": "44e8edfcecfd3afd38c8ed91ea153654d4bffe2579096dafd533d318e02af21f",
+        "sim/acquisition/free_planar.py": "cf15e99a00ccd47253fbc914f3f4adf97e6fa2afea73c98fe13aae0009ba7851",
+        "sim/acquisition/free_geometry.py": "f22c2efe90487b3e635da33ec60f31102112462a2b804785a7adaed2ba19ccb4",
+        "sim/acquisition/obstacle_gate.py": "769883314d51819b86e76a191a588cae509717c7ebcb8c6997c120b828b9a447",
+        "sim/acquisition/run_free_planar.py": "0597c8b02cdfbb77506bd2be1f6aff308f10d8529e7ae5eb563047f04d54ea2b",
+        "sim/acquisition/free-planar-config.json": "8ecb4ca6594ec456e56a79ceb63d222d9824e4985273d6b16a52b9737d166053",
+        "sim/acquisition/free-obstacles.json": "45651f5bbd4778928df1bc39a2265db06feecfc1da8ab30ff3b413f3bd9c6069",
+        "cad/assembly/evidence/belt-contact-geometry.json": "15d8783d6872236ecbc9d277579e9d2da5fba867e813faee4f753ef3ca1e2ba4",
+        "cad/assembly/evidence/floor-entry.json": "9baf2ff061ef5a79a34ef757c1b442579b7d8273efcbf72ffdf1fb95cca0739f",
+        "sim/pressure/finite_area.py": "75c7af7cc4446346e611c389d050cb3d1212404c560ad8e4884863e44f1cd5ed",
+        "sim/pressure/finite_transport.py": "6b4170b89e1b327c293e545dfd0d41b58af369f8eb11609dfd6d899ef9fb3f9b",
+        "sim/pressure/fast_geometry.py": "5312a02924a3ebe7cb85e7a61348587d118b5097d3c6cb19ea6d054cfd4b9074",
+        "sim/pressure/pressure_acquisition.py": "3259d85bb9b0742d96c7df18a5ca0b39994cfc87115b2e670d1b4be7bd392d36",
+        "sim/pressure/run_acquisition.py": "1d4b167f4ce654aab02a332663db1896cf52f0b49125abfa607dab06531193b4",
+        "sim/integrated/coupled_acquisition.py": "55f9778b7cab1cf76c38007f830385bb9c99ed62188a8151d6b50bb55c195df1",
+        "sim/integrated/shared_supply.py": "888855338f8d6d73510767cc9c64bf88f5ea0dbf899bd1bb67e136547f821e99",
+        "sim/integrated/patch_registration.py": "6cf66b74ba20a4a9b7da8d32f5a6b0a05ac31a10f06d0a7fc641601fba7f0dbc",
+        "tests/test_pressure_acquisition.py": "db2f083c72dbf58188f3483fe49f3a24a7585b6872f49365ef54f91990f6ee7f",
+        "tests/test_pressure_fast_geometry.py": "4b904892ac41bf266524b1ebaabedddc27816488d7295ed23a7638afe29ca230",
+        "sim/drivetrain/plant.py": "3d30f7df18abf6c24cc5c949a308246bb275bea57242128916cee627da561155",
+        "sim/drivetrain/config.json": "334a7d02b4968401a10fb829ae838edfbeb7d9a311c13f3e2cbcc47b54748ff4",
+        "sim/drivetrain/run.py": "312e416f62e7fce32566529bfbb3a78ce68c58a4ef99faa210b44cdc8db18d7f",
+        "sim/component-launcher/power_state.py": "8248f96d46e30a8fcf8179433d3a808c799fcb736d096c529e0bfd4b73efae11",
+        "sim/pressure/checkpoint.py": "d6d7ea2ea96b21532e94029a0ac73281ca55f9a93ea8566552bd078eae30ff1c",
+        "sim/pressure/compare_entry.py": "7994e822468d790dd95df221e87ab8ee1a2cfd2fb37b5e0ab5b782557a29ebf0"
+      },
+      "driveConfig": {
+        "schema": "four-cim-drive-hypothesis/1",
+        "geometrySourceSha256": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+        "trackM": 0.57960768,
+        "outerAxleXM": 0.22254769759999998,
+        "wheelRadiusM": 0.0762000001,
+        "gearRatio": 10.714285714285715,
+        "motorsPerSide": 2,
+        "motorK": 0.018803,
+        "motorResistanceOhm": 0.091,
+        "phaseCurrentLimitA": 40.0,
+        "massKg": 45.0,
+        "yawInertiaKgM2": 6.0,
+        "motorRotorInertiaKgM2": 0.0001,
+        "wheelSideInertiaKgM2": 0.03,
+        "motorViscousDragNmPerRadps": 8.45364518349409e-05,
+        "gearViscousDragNmPerRadps": 0.002,
+        "tireMu": 0.8,
+        "slipRegularizationMps": 0.1,
+        "loadFractions": [
+          0.25,
+          0.5,
+          0.25
+        ],
+        "referenceMassRangeKg": [
+          30,
+          45,
+          60
+        ],
+        "referenceYawInertiaRangeKgM2": [
+          3,
+          6,
+          9
+        ],
+        "source": {
+          "url": "https://files.andymark.com/CIM-motor-curve-am-0255.pdf",
+          "sha256": "9f2c14096cb651c76ea92520dce95d49694b5a25f88381e01f4df24db3c64e1e",
+          "bytes": 92845,
+          "date": "2011-11-10",
+          "printedK": 0.018803,
+          "printedResistanceOhm": 0.091,
+          "reportedFreeRpm": 5310,
+          "reportedFreeCurrentA": 2.5,
+          "reportedStallTorqueNm": 2.420395,
+          "reportedStallCurrentA": 131.227,
+          "note": "Printed reciprocal K/R and endpoint data are not mutually reproduced by this ideal DC law; discrepancy retained, not calibration."
+        },
+        "assumptions": [
+          "Mass, yaw/wheel/rotor inertia, tire friction and load distribution are hypotheses; no complete mass estimate exists.",
+          "Motor viscous drag is a named hypothesis using K times reported no-load current divided by reported free speed, not a measured friction curve.",
+          "Ideal rigid gearing; rotor inertia reflected once into axle inertia, no duplicate energy.",
+          "Each side has three tire contacts with prescribed normal fractions; center-drop contact and dynamic load transfer are not solved.",
+          "Regularized friction circle models longitudinal slip and lateral scrub. No magic wheel-speed-to-chassis-speed assignment.",
+          "Caller supplies bus voltage and normal loads; no hidden battery. Signed regenerative power is preserved.",
+          "Ideal phase current limit and dissipative brake mode are controller hypotheses, not selected-controller behavior."
+        ],
+        "contactStationsM": [
+          [
+            [
+              -0.22254769766892715,
+              0.2909823999999877
+            ],
+            [
+              -8.660194485585748e-07,
+              0.2898038399999998
+            ],
+            [
+              0.22254769762689125,
+              0.2898775000000118
+            ]
+          ],
+          [
+            [
+              -0.22254769762692725,
+              -0.2898775000000197
+            ],
+            [
+              8.660194125766907e-07,
+              -0.28980384000001996
+            ],
+            [
+              0.2225476976688911,
+              -0.29098240000002007
+            ]
+          ]
+        ]
+      },
+      "noteConfig": {
+        "stepS": 0.0001,
+        "horizonS": 2.0,
+        "kvRadpsPerV": 50.39638215133627,
+        "motorResistanceOhm": 0.11428571428571428,
+        "sourceV": 12.0,
+        "sourceResistanceOhm": 0.02,
+        "currentLimitA": 40.0,
+        "radiusM": 0.012127606663602424,
+        "slipRegularizationMps": 0.01,
+        "pieceMassKg": 0.235,
+        "yawInertiaKgM2": 0.00557176305,
+        "rotorInertiaKgM2": 3e-05,
+        "normalStiffnessNpm": 2000.0,
+        "compressionAlphaSpm": 2.0,
+        "beltMu": 0.6,
+        "groundMu": 0.4,
+        "groundRingRadiusM": 0.1524
+      },
+      "cad": {
+        "schema": "original-2024-intake-elevator/1",
+        "units": "mm",
+        "status": "original component layout candidate; not qualified capture/retention/load design",
+        "note": {
+          "majorRadius": 152.4,
+          "tubeRadius": 25.4
+        },
+        "stageCenterX": 178,
+        "floorCenterZ": 25.4,
+        "handoffCenterZ": 474.8333949243112,
+        "pitchDeg": 60,
+        "guide": {
+          "x": 101.6,
+          "yAbs": 250,
+          "bottom": 187.515,
+          "height": 730,
+          "square": 25.4,
+          "wall": 3.175,
+          "slideClearance": 0.3
+        },
+        "pinch": {
+          "teeth": 12,
+          "pitch": 6.35,
+          "beltTeethHypothesis": 64,
+          "beltWidth": 12.7,
+          "beltRadialThicknessHypothesis": 2,
+          "innerFaceYAbs": 176.9223933363976,
+          "shaftLower": -23,
+          "shaftLength": 83,
+          "lowerBearingZ": -18.4,
+          "upperBearingZ": 25.4,
+          "drivePulleyZ": 40,
+          "motorOffsetY": 114.3,
+          "motorFaceZ": 150,
+          "beltPartCurrent": "REV-21-4064",
+          "motorSideYAbs": 160,
+          "transferBeltTeeth": 48,
+          "rearShaftLength": 57,
+          "beltCenterX": 63.5,
+          "outerProfileBands": [
+            {
+              "zMinMm": -9.3473,
+              "zMaxMm": -7.14375,
+              "proposedOuterRadiusMm": 13.2
+            },
+            {
+              "zMinMm": -7.14375,
+              "zMaxMm": 7.14375,
+              "proposedOuterRadiusMm": 12.0
+            },
+            {
+              "zMinMm": 7.14375,
+              "zMaxMm": 9.3473,
+              "proposedOuterRadiusMm": 13.2
+            }
+          ],
+          "outerProfileEvidence": "cad/components/pulley-outer-profile.json"
+        },
+        "lift": {
+          "driveX": 60,
+          "lowerPulleyZ": 200,
+          "upperPulleyZ": 898.5,
+          "carriageAnchorAboveNote": 225,
+          "gearRatioHypothesis": 12,
+          "chain": "REV-41-1365",
+          "sprocket": "REV-21-2016",
+          "sprocketTeeth": 16,
+          "chainLinksHypothesis": 236,
+          "sprocketPitchRadius": 16.4,
+          "sprocketOuterRadius": 17.95,
+          "chainYAbs": 290
+        },
+        "sources": {
+          "motor": "https://www.revrobotics.com/rev-21-1650/",
+          "pulley": "https://www.revrobotics.com/rev-21-2201/",
+          "gearbox": "https://www.revrobotics.com/content/docs/REV-21-2100-DR.pdf",
+          "ratios": "https://www.revrobotics.com/content/docs/REV-21-2101-DR.pdf",
+          "chain": "https://www.revrobotics.com/rev-41-1365/",
+          "sprocket": "https://www.revrobotics.com/content/docs/REV-21-2016-DR.pdf",
+          "pinchBelt": "https://www.revrobotics.com/content/docs/RT25-Belts-0.5in-Width-DR.pdf"
+        },
+        "limits": [
+          "Side-pinch64T RT25 belt is currently listed but pre2024availability unverified;236link chain layout needs real link/polygon/attachment/adjustment checks",
+          "Side-belt backing traction/normal force and capture are unmeasured; no contact acceptance",
+          "NEO/MAXPlanetary dimension-only representations; exact couplers/mount/retention unresolved",
+          "Power-off motion/retention behavior and any brake are unmodeled; retention is mission-dependent",
+          "Full cradle pulley/bearing/shaft interference and NOTE swept contact still must be checked",
+          "Original aluminum guide and UHMW slide-pad materials assumed, not fabrication specifications",
+          "Shooter moved58mm forward and handoff shifted toguide\u221220; prior target/launch registration must be recomputed"
+        ],
+        "shooterPivotXmm": 188,
+        "handoffGuideCoordinateMm": -20,
+        "throatHalfWidthMm": 215,
+        "carriageOffsetMm": 200,
+        "cradleSideYAbs": 207,
+        "pivotBracketYAbs": 211,
+        "rotation": {
+          "chainLinks": 114,
+          "sprocketTeeth": 16,
+          "pitch": 6.35,
+          "centerDistance": 311.15,
+          "chainPlaneY": -222.5,
+          "upperX": 100,
+          "upperZOffset": 301.2147448250168
+        },
+        "shooterSupportYAbs": 300,
+        "removedSourceMembers": [
+          "am-2974-cut-2"
+        ],
+        "replacementPortalTopZ": 917.515,
+        "pivotShaftInnerYAbs": 203.5
+      },
+      "pressure": {
+        "resolution": [
+          1024,
+          1024
+        ],
+        "kArea": 10000000.0,
+        "uPositiveM": 0.0,
+        "materialPhase": "uniform-midpoint-fixed-v1"
+      }
+    },
+    "state": {
+      "chassis": {
+        "t": 0.6000000000000004,
+        "x": 0.34798494953711223,
+        "y": 8.137540365151125e-16,
+        "heading": 3.2817315857730627e-15,
+        "vx": 0.8292666565042384,
+        "vy": 2.1430197574051074e-15,
+        "yaw_rate": -1.6769112795107708e-15,
+        "wheel": [
+          10.925345334513372,
+          10.925345334513361
+        ],
+        "wheel_angle": [
+          4.7100248818109,
+          4.710024881810921
+        ]
+      },
+      "note": {
+        "p": [
+          0.6575454386561533,
+          1.942934439860186e-15
+        ],
+        "v": [
+          -0.02332517044791752,
+          2.434244887612818e-14
+        ],
+        "yaw": -5.515279829464569e-15,
+        "spin": 1.7357706860599996e-14,
+        "w": [
+          70.70511573174535,
+          70.7051157317457
+        ]
+      },
+      "ledger": {
+        "sourceWork": 50.37159879098875,
+        "sourceHeat": 0.8835295669427303,
+        "driveWinding": 24.5428335316816,
+        "driveBrake": 0.0,
+        "driveDrag": 1.7907418311307188,
+        "tireSlip": 1.05988569708087,
+        "pinchWinding": 0.1472776409738124,
+        "normalHeat": 0.0,
+        "beltSlip": 0.0006476333185192545,
+        "groundHeat": 0.0003775341258965311
+      },
+      "timeS": 0.6000000000000004,
+      "initialEnergyJ": 0.0
+    },
+    "diagnostics": {
+      "potentialJ": 0.0009512756982653025,
+      "kineticJ": 21.944288129761713,
+      "residualJ": 0.0010659502746199257
+    },
+    "digest": "26d95d9c9c68a47bdfe8fbcfc16a0cff87b7dde1549f31d33f4993b9b8503de7"
+  },
+  "stepS": 0.001,
+  "requestedDurationS": 0.02,
+  "trace": [
+    {
+      "timeS": 0.5810000000000004,
+      "chassis": {
+        "t": 0.5810000000000004,
+        "x": 0.3322800743362005,
+        "y": 7.800746166951244e-16,
+        "heading": 3.310176277946917e-15,
+        "vx": 0.8237678739144182,
+        "vy": 1.8166712666734396e-15,
+        "yaw_rate": -3.1210831918533167e-16,
+        "wheel": [
+          10.857607115362027,
+          10.857607115362027
+        ],
+        "wheel_angle": [
+          4.503077236045887,
+          4.503077236045908
+        ]
+      },
+      "note": {
+        "p": [
+          0.65793650819886,
+          6.093425919915184e-16
+        ],
+        "v": [
+          -0.010539961409001004,
+          6.572109134108405e-14
+        ],
+        "yaw": -2.819494276549807e-15,
+        "spin": -3.3385778704759066e-13,
+        "w": [
+          71.35237325536909,
+          71.352373255377
+        ]
+      },
+      "relativeRobotXY": [
+        0.32565643386265947,
+        -1.2487122268365705e-15
+      ],
+      "busV": 11.96306435207,
+      "busCurrentA": 1.8467823963963415,
+      "contacts": [
+        {
+          "motor": 0,
+          "normalMagnitudeN": 0.8710833427666071,
+          "tangentialN": 0.5212935275137126,
+          "activeSamples": 1204,
+          "activeAreaM2": 0.00020447657775018804
+        },
+        {
+          "motor": 1,
+          "normalMagnitudeN": 0.8710833427614533,
+          "tangentialN": 0.521293527510685,
+          "activeSamples": 1204,
+          "activeAreaM2": 0.00020447657775018804
+        }
+      ],
+      "reactionForceWorldN": [
+        0.9851764499734681,
+        -5.2343706626045705e-12
+      ],
+      "reactionYawNm": -1.1688249947122996e-12,
+      "pressureFeatures": {
+        "outer-wrap": 504,
+        "outer-straight": 1992
+      },
+      "pressureWorkResidualW": 4.85722573273506e-17,
+      "discardedNonplanar": [
+        0.0,
+        -5.66354021802807e-20,
+        3.630983745056645e-18,
+        0.0,
+        -4.29207476241515e-20,
+        -3.608378139686489e-18
+      ],
+      "energyJ": {
+        "sourceWork": 49.958826377749205,
+        "sourceHeat": 0.8822838032287816,
+        "driveWinding": 24.50992978253544,
+        "driveBrake": 0.0,
+        "driveDrag": 1.694227299059556,
+        "tireSlip": 1.0591115390593038,
+        "pinchWinding": 0.14694579540308197,
+        "normalHeat": 0.0,
+        "beltSlip": 0.0003843324192147569,
+        "groundHeat": 3.0503544239271694e-05,
+        "kinetic": 21.664334635645925,
+        "spring": 0.0005134018918952874,
+        "initial": 0.0,
+        "residual": 0.0010652849617669605
+      },
+      "acceptance": false
+    },
+    {
+      "timeS": 0.5820000000000004,
+      "chassis": {
+        "t": 0.5820000000000004,
+        "x": 0.3331039940292575,
+        "y": 7.818681261336752e-16,
+        "heading": 3.309786338616999e-15,
+        "vx": 0.8240713875398634,
+        "vy": 1.7733990519860827e-15,
+        "yaw_rate": -4.646960521147246e-16,
+        "wheel": [
+          10.861281963005625,
+          10.861281963005625
+        ],
+        "wheel_angle": [
+          4.513936681557642,
+          4.513936681557663
+        ]
+      },
+      "note": {
+        "p": [
+          0.6579253259320471,
+          6.768413513208078e-16
+        ],
+        "v": [
+          -0.011884185933271098,
+          6.909834548876669e-14
+        ],
+        "yaw": -3.165243457371126e-15,
+        "spin": -3.57535341021828e-13,
+        "w": [
+          71.24683797495929,
+          71.24683797496748
+        ]
+      },
+      "relativeRobotXY": [
+        0.3248213319027896,
+        -1.1801159816360986e-15
+      ],
+      "busV": 11.96310619308,
+      "busCurrentA": 1.8446903457579544,
+      "contacts": [
+        {
+          "motor": 0,
+          "normalMagnitudeN": 0.9352708956241695,
+          "tangentialN": 0.5585636348782567,
+          "activeSamples": 1272,
+          "activeAreaM2": 0.00021602368178689075
+        },
+        {
+          "motor": 1,
+          "normalMagnitudeN": 0.935270895618972,
+          "tangentialN": 0.5585636348752674,
+          "activeSamples": 1272,
+          "activeAreaM2": 0.00021602368178689075
+        }
+      ],
+      "reactionForceWorldN": [
+        1.05976064752434,
+        -5.2838140221674046e-12
+      ],
+      "reactionYawNm": -1.190306596171084e-12,
+      "pressureFeatures": {
+        "outer-wrap": 604,
+        "outer-straight": 1992
+      },
+      "pressureWorkResidualW": -2.824129818890242e-15,
+      "discardedNonplanar": [
+        0.0,
+        1.0977700024829055e-19,
+        4.008005197783408e-18,
+        0.0,
+        -1.0677743655202013e-19,
+        -3.9629025544984944e-18
+      ],
+      "energyJ": {
+        "sourceWork": 49.9809626618983,
+        "sourceHeat": 0.8823518608782163,
+        "driveWinding": 24.51177468576736,
+        "driveBrake": 0.0,
+        "driveDrag": 1.699276692707573,
+        "tireSlip": 1.0591565158835374,
+        "pinchWinding": 0.14695335240101304,
+        "normalHeat": 0.0,
+        "beltSlip": 0.0004198600131237311,
+        "groundHeat": 3.8821673395281546e-05,
+        "kinetic": 21.679366751109754,
+        "spring": 0.0005582839621788828,
+        "initial": 0.0,
+        "residual": 0.0010658375021526689
+      },
+      "acceptance": false
+    },
+    {
+      "timeS": 0.5830000000000004,
+      "chassis": {
+        "t": 0.5830000000000004,
+        "x": 0.33392821711720383,
+        "y": 7.836210705475012e-16,
+        "heading": 3.309246120470413e-15,
+        "vx": 0.8243746538219618,
+        "vy": 1.7357735416767518e-15,
+        "yaw_rate": -6.148660463656679e-16,
+        "wheel": [
+          10.864953705567853,
+          10.864953705567853
+        ],
+        "wheel_angle": [
+          4.52479980034987,
+          4.524799800349891
+        ]
+      },
+      "note": {
+        "p": [
+          0.6579127376139017,
+          7.476425153383474e-16
+        ],
+        "v": [
+          -0.013361728014960588,
+          7.234929380441518e-14
+        ],
+        "yaw": -3.534623490876792e-15,
+        "spin": -3.779120478266391e-13,
+        "w": [
+          71.13960043182186,
+          71.13960043183022
+        ]
+      },
+      "relativeRobotXY": [
+        0.32398452049669785,
+        -1.1081230727553182e-15
+      ],
+      "busV": 11.96314580625,
+      "busCurrentA": 1.8427096877054112,
+      "contacts": [
+        {
+          "motor": 0,
+          "normalMagnitudeN": 0.9970887062847376,
+          "tangentialN": 0.5931482926139254,
+          "activeSamples": 1338,
+          "activeAreaM2": 0.00022723004849631103
+        },
+        {
+          "motor": 1,
+          "normalMagnitudeN": 0.9970887062796484,
+          "tangentialN": 0.5931482926111346,
+          "activeSamples": 1338,
+          "activeAreaM2": 0.00022723004849631103
+        }
+      ],
+      "reactionForceWorldN": [
+        1.1314574717379826,
+        -5.174788982736933e-12
+      ],
+      "reactionYawNm": -1.1880681285224934e-12,
+      "pressureFeatures": {
+        "outer-wrap": 564,
+        "outer-straight": 2156
+      },
+      "pressureWorkResidualW": 2.983724378680108e-16,
+      "discardedNonplanar": [
+        0.0,
+        -7.361907451721946e-20,
+        4.109211598759277e-18,
+        0.0,
+        2.4325727453959438e-20,
+        -4.01581959887959e-18
+      ],
+      "energyJ": {
+        "sourceWork": 50.003075178150766,
+        "sourceHeat": 0.8824197724580796,
+        "driveWinding": 24.513606427078233,
+        "driveBrake": 0.0,
+        "driveDrag": 1.7043295029160466,
+        "tireSlip": 1.0592009030085974,
+        "pinchWinding": 0.14696253125199799,
+        "normalHeat": 0.0,
+        "beltSlip": 0.0004537659526613497,
+        "groundHeat": 4.8693874115112727e-05,
+        "kinetic": 21.69438593682472,
+        "spring": 0.0006017541029375501,
+        "initial": 0.0,
+        "residual": 0.0010658906833786524
+      },
+      "acceptance": false
+    },
+    {
+      "timeS": 0.5840000000000004,
+      "chassis": {
+        "t": 0.5840000000000004,
+        "x": 0.33475274331187527,
+        "y": 7.853394985702354e-16,
+        "heading": 3.3085663456385753e-15,
+        "vx": 0.8246775345518077,
+        "vy": 1.7029752827660465e-15,
+        "yaw_rate": -7.473501377403667e-16,
+        "wheel": [
+          10.868622246795512,
+          10.86862224679551
+        ],
+        "wheel_angle": [
+          4.535666589321569,
+          4.535666589321591
+        ]
+      },
+      "note": {
+        "p": [
+          0.6578986059150038,
+          8.216042265129732e-16
+        ],
+        "v": [
+          -0.014970324807584826,
+          7.573574320922938e-14
+        ],
+        "yaw": -3.922112105208277e-15,
+        "spin": -3.9388637970448485e-13,
+        "w": [
+          71.0323026644289,
+          71.03230266443728
+        ]
+      },
+      "relativeRobotXY": [
+        0.32314586260312855,
+        -1.0328847977983204e-15
+      ],
+      "busV": 11.96318427371,
+      "busCurrentA": 1.8407863144711902,
+      "contacts": [
+        {
+          "motor": 0,
+          "normalMagnitudeN": 1.05720022762938,
+          "tangentialN": 0.6240378688699024,
+          "activeSamples": 1392,
+          "activeAreaM2": 0.00023639745289138068
+        },
+        {
+          "motor": 1,
+          "normalMagnitudeN": 1.0572002276243617,
+          "tangentialN": 0.6240378688674263,
+          "activeSamples": 1392,
+          "activeAreaM2": 0.00023639745289138068
+        }
+      ],
+      "reactionForceWorldN": [
+        1.196753387889803,
+        -5.080856254387894e-12
+      ],
+      "reactionYawNm": -1.2066307569304319e-12,
+      "pressureFeatures": {
+        "outer-wrap": 532,
+        "outer-straight": 2320
+      },
+      "pressureWorkResidualW": 1.4641066137244252e-15,
+      "discardedNonplanar": [
+        0.0,
+        2.804473148799785e-19,
+        4.5291488618759105e-18,
+        0.0,
+        -3.3725146190522e-19,
+        -4.345156596683903e-18
+      ],
+      "energyJ": {
+        "sourceWork": 50.02516461392442,
+        "sourceHeat": 0.8824875423431905,
+        "driveWinding": 24.515425060660046,
+        "driveBrake": 0.0,
+        "driveDrag": 1.7093857279547153,
+        "tireSlip": 1.0592447056101915,
+        "pinchWinding": 0.14697351195119865,
+        "normalHeat": 0.0,
+        "beltSlip": 0.00048518721589957484,
+        "groundHeat": 6.0263964350247886e-05,
+        "kinetic": 21.709394101190746,
+        "spring": 0.0006435525292596446,
+        "initial": 0.0,
+        "residual": 0.001064960504818507
+      },
+      "acceptance": false
+    },
+    {
+      "timeS": 0.5850000000000004,
+      "chassis": {
+        "t": 0.5850000000000004,
+        "x": 0.33557757213334044,
+        "y": 7.870267047699236e-16,
+        "heading": 3.307744968983327e-15,
+        "vx": 0.824979743818535,
+        "vy": 1.6750477041656767e-15,
+        "yaw_rate": -8.987888700707533e-16,
+        "wheel": [
+          10.872287087698126,
+          10.872287087698124
+        ],
+        "wheel_angle": [
+          4.546537045126353,
+          4.5465370451263745
+        ]
+      },
+      "note": {
+        "p": [
+          0.6578828055726643,
+          8.991708740773605e-16
+        ],
+        "v": [
+          -0.01667924534608868,
+          7.920762241196589e-14
+        ],
+        "yaw": -4.321394040604722e-15,
+        "spin": -3.965153509833601e-13,
+        "w": [
+          70.92696756536384,
+          70.92696756537201
+        ]
+      },
+      "relativeRobotXY": [
+        0.3223052334393239,
+        -9.539593450784833e-16
+      ],
+      "busV": 11.96322351356,
+      "busCurrentA": 1.838824321824112,
+      "contacts": [
+        {
+          "motor": 0,
+          "normalMagnitudeN": 1.1175985352933462,
+          "tangentialN": 0.6496104818375978,
+          "activeSamples": 1446,
+          "activeAreaM2": 0.00024556278173264975
+        },
+        {
+          "motor": 1,
+          "normalMagnitudeN": 1.1175985352884275,
+          "tangentialN": 0.6496104818357437,
+          "activeSamples": 1446,
+          "activeAreaM2": 0.00024556278173264975
+        }
+      ],
+      "reactionForceWorldN": [
+        1.2483915365233325,
+        -4.972957592594418e-12
+      ],
+      "reactionYawNm": -1.2751725255623143e-12,
+      "pressureFeatures": {
+        "outer-wrap": 484,
+        "outer-straight": 2484
+      },
+      "pressureWorkResidualW": 7.563394355258879e-16,
+      "discardedNonplanar": [
+        0.0,
+        -5.233273950602487e-19,
+        4.777716635948095e-18,
+        0.0,
+        4.221632061450134e-19,
+        -4.626718951029603e-18
+      ],
+      "energyJ": {
+        "sourceWork": 50.04723050578631,
+        "sourceHeat": 0.8825551678409211,
+        "driveWinding": 24.517230648344444,
+        "driveBrake": 0.0,
+        "driveDrag": 1.714445365861965,
+        "tireSlip": 1.0592879331117708,
+        "pinchWinding": 0.14698643507073206,
+        "normalHeat": 0.0,
+        "beltSlip": 0.0005134900317269994,
+        "groundHeat": 7.364361855934457e-05,
+        "kinetic": 21.724388673662027,
+        "spring": 0.0006837927982358338,
+        "initial": 0.0,
+        "residual": 0.001065355445926224
+      },
+      "acceptance": false
+    },
+    {
+      "timeS": 0.5860000000000004,
+      "chassis": {
+        "t": 0.5860000000000004,
+        "x": 0.3364027027392469,
+        "y": 7.886881568895751e-16,
+        "heading": 3.306764104172573e-15,
+        "vx": 0.8252808006997616,
+        "vy": 1.6539414318795764e-15,
+        "yaw_rate": -1.0699714395230498e-15,
+        "wheel": [
+          10.875947011478699,
+          10.875947011478695
+        ],
+        "wheel_angle": [
+          4.557411163626181,
+          4.5574111636262025
+        ]
+      },
+      "note": {
+        "p": [
+          0.6578652577952383,
+          9.803067315467428e-16
+        ],
+        "v": [
+          -0.018416473048606385,
+          8.23686895888698e-14
+        ],
+        "yaw": -4.71379843271003e-15,
+        "spin": -3.6992176846839025e-13,
+        "w": [
+          70.82831184510238,
+          70.82831184510992
+        ]
+      },
+      "relativeRobotXY": [
+        0.3214625550559914,
+        -8.713822632375842e-16
+      ],
+      "busV": 11.96326561454,
+      "busCurrentA": 1.8367192731524506,
+      "contacts": [
+        {
+          "motor": 0,
+          "normalMagnitudeN": 1.1746795524396594,
+          "tangentialN": 0.6624558736918459,
+          "activeSamples": 1510,
+          "activeAreaM2": 0.00025643130435504637
+        },
+        {
+          "motor": 1,
+          "normalMagnitudeN": 1.1746795524349498,
+          "tangentialN": 0.6624558736911236,
+          "activeSamples": 1510,
+          "activeAreaM2": 0.00025643130435504637
+        }
+      ],
+      "reactionForceWorldN": [
+        1.276531117975314,
+        -4.757538926616206e-12
+      ],
+      "reactionYawNm": -1.4070137357405079e-12,
+      "pressureFeatures": {
+        "outer-wrap": 576,
+        "outer-straight": 2484
+      },
+      "pressureWorkResidualW": -8.569533971325427e-16,
+      "discardedNonplanar": [
+        0.0,
+        9.030165311118893e-20,
+        4.798403595887434e-18,
+        0.0,
+        -1.666272625926819e-20,
+        -4.652988552923062e-18
+      ],
+      "energyJ": {
+        "sourceWork": 50.06927113706414,
+        "sourceHeat": 0.8826226385946885,
+        "driveWinding": 24.51902326205123,
+        "driveBrake": 0.0,
+        "driveDrag": 1.7195084139358345,
+        "tireSlip": 1.0593306022373545,
+        "pinchWinding": 0.14700138291393883,
+        "normalHeat": 0.0,
+        "beltSlip": 0.0005378023868852663,
+        "groundHeat": 8.888004850537569e-05,
+        "kinetic": 21.73937017580394,
+        "spring": 0.0007221138562777551,
+        "initial": 0.0,
+        "residual": 0.0010658652354847819
+      },
+      "acceptance": false
+    },
+    {
+      "timeS": 0.5870000000000004,
+      "chassis": {
+        "t": 0.5870000000000004,
+        "x": 0.33722813366496146,
+        "y": 7.9033312120155e-16,
+        "heading": 3.3056071007571844e-15,
+        "vx": 0.8255799281957155,
+        "vy": 1.640238530639049e-15,
+        "yaw_rate": -1.2609419385486537e-15,
+        "wheel": [
+          10.879599644927042,
+          10.879599644927037
+        ],
+        "wheel_angle": [
+          4.568288939020387,
+          4.568288939020408
+        ]
+      },
+      "note": {
+        "p": [
+          0.6578459861900334,
+          1.0642107124288752e-15
+        ],
+        "v": [
+          -0.020044254541097598,
+          8.507447951928885e-14
+        ],
+        "yaw": -5.062376466330953e-15,
+        "spin": -3.028973225859719e-13,
+        "w": [
+          70.74350407376974,
+          70.74350407377612
+        ]
+      },
+      "relativeRobotXY": [
+        0.32061785252507197,
+        -7.859590587090724e-16
+      ],
+      "busV": 11.96331489424,
+      "busCurrentA": 1.8342552879833764,
+      "contacts": [
+        {
+          "motor": 0,
+          "normalMagnitudeN": 1.2281177907278347,
+          "tangentialN": 0.6549653356074651,
+          "activeSamples": 1570,
+          "activeAreaM2": 0.0002666182070609764
+        },
+        {
+          "motor": 1,
+          "normalMagnitudeN": 1.2281177907233938,
+          "tangentialN": 0.6549653356083274,
+          "activeSamples": 1570,
+          "activeAreaM2": 0.0002666182070609764
+        }
+      ],
+      "reactionForceWorldN": [
+        1.2661010177286256,
+        -4.482724358812612e-12
+      ],
+      "reactionYawNm": -1.596740075605131e-12,
+      "pressureFeatures": {
+        "outer-wrap": 536,
+        "outer-straight": 2648
+      },
+      "pressureWorkResidualW": -4.125172425872847e-15,
+      "discardedNonplanar": [
+        0.0,
+        3.045149619828214e-19,
+        4.4372780471427085e-18,
+        0.0,
+        -3.275436702362977e-19,
+        -4.291265779776073e-18
+      ],
+      "energyJ": {
+        "sourceWork": 50.09128220051994,
+        "sourceHeat": 0.8826899284439184,
+        "driveWinding": 24.5208029946301,
+        "driveBrake": 0.0,
+        "driveDrag": 1.7245748679216917,
+        "tireSlip": 1.0593727415397882,
+        "pinchWinding": 0.14701830429744614,
+        "normalHeat": 0.0,
+        "beltSlip": 0.0005574823000905136,
+        "groundHeat": 0.00010590790633197304,
+        "kinetic": 21.75433664508488,
+        "spring": 0.0007573744206895689,
+        "initial": 0.0,
+        "residual": 0.0010659539750049766
+      },
+      "acceptance": false
+    },
+    {
+      "timeS": 0.5880000000000004,
+      "chassis": {
+        "t": 0.5880000000000004,
+        "x": 0.33805386253842096,
+        "y": 7.919679312112224e-16,
+        "heading": 3.3042360569582046e-15,
+        "vx": 0.8258762531225756,
+        "vy": 1.6363354284187683e-15,
+        "yaw_rate": -1.4567326651387096e-15,
+        "wheel": [
+          10.883241065833484,
+          10.883241065833477
+        ],
+        "wheel_angle": [
+          4.579170362454389,
+          4.57917036245441
+        ]
+      },
+      "note": {
+        "p": [
+          0.657825182938814,
+          1.1505578343767314e-15
+        ],
+        "v": [
+          -0.021392692832460636,
+          8.664260698124768e-14
+        ],
+        "yaw": -5.325358507789862e-15,
+        "spin": -2.0566399166723143e-13,
+        "w": [
+          70.67968545457961,
+          70.67968545458443
+        ]
+      },
+      "relativeRobotXY": [
+        0.319771320400393,
+        -6.980100236826042e-16
+      ],
+      "busV": 11.96337793809,
+      "busCurrentA": 1.831103095270462,
+      "contacts": [
+        {
+          "motor": 0,
+          "normalMagnitudeN": 1.2804441210828847,
+          "tangentialN": 0.6248460062239676,
+          "activeSamples": 1612,
+          "activeAreaM2": 0.0002737455683049646
+        },
+        {
+          "motor": 1,
+          "normalMagnitudeN": 1.280444121078824,
+          "tangentialN": 0.6248460062261819,
+          "activeSamples": 1612,
+          "activeAreaM2": 0.0002737455683049646
+        }
+      ],
+      "reactionForceWorldN": [
+        1.2103935593422064,
+        -4.077164170515624e-12
+      ],
+      "reactionYawNm": -1.7008235397589653e-12,
+      "pressureFeatures": {
+        "outer-wrap": 488,
+        "outer-straight": 2812
+      },
+      "pressureWorkResidualW": 7.462780393652224e-15,
+      "discardedNonplanar": [
+        0.0,
+        -1.399093288072191e-19,
+        4.551284628658136e-18,
+        0.0,
+        -4.5599158447598204e-20,
+        -4.482285357862025e-18
+      ],
+      "energyJ": {
+        "sourceWork": 50.113255437663184,
+        "sourceHeat": 0.8827569872148285,
+        "driveWinding": 24.522569972490658,
+        "driveBrake": 0.0,
+        "driveDrag": 1.7296447207137058,
+        "tireSlip": 1.059414395456781,
+        "pinchWinding": 0.14703692362944945,
+        "normalHeat": 0.0,
+        "beltSlip": 0.0005727055558678538,
+        "groundHeat": 0.00012449583099700072,
+        "kinetic": 21.769280110708152,
+        "spring": 0.000789757576945275,
+        "initial": 0.0,
+        "residual": 0.0010653684858015731
+      },
+      "acceptance": false
+    },
+    {
+      "timeS": 0.5890000000000004,
+      "chassis": {
+        "t": 0.5890000000000004,
+        "x": 0.3388798861902917,
+        "y": 7.936025880738521e-16,
+        "heading": 3.302673242098211e-15,
+        "vx": 0.8261692467550857,
+        "vy": 1.639320971630279e-15,
+        "yaw_rate": -1.6642448931772045e-15,
+        "wheel": [
+          10.886866376643844,
+          10.886866376643837
+        ],
+        "wheel_angle": [
+          4.590055420498739,
+          4.590055420498761
+        ]
+      },
+      "note": {
+        "p": [
+          0.6578032022836474,
+          1.238084016445299e-15
+        ],
+        "v": [
+          -0.02234566357196565,
+          8.743140454788876e-14
+        ],
+        "yaw": -5.485250253893958e-15,
+        "spin": -1.1649192606737262e-13,
+        "w": [
+          70.64005734280049,
+          70.64005734280389
+        ]
+      },
+      "relativeRobotXY": [
+        0.3189233160933557,
+        -6.088180739713088e-16
+      ],
+      "busV": 11.96345977816,
+      "busCurrentA": 1.8270110919042515,
+      "contacts": [
+        {
+          "motor": 0,
+          "normalMagnitudeN": 1.3299417673940679,
+          "tangentialN": 0.5800130521975835,
+          "activeSamples": 1676,
+          "activeAreaM2": 0.00028461396524913276
+        },
+        {
+          "motor": 1,
+          "normalMagnitudeN": 1.3299417673903124,
+          "tangentialN": 0.5800130521999024,
+          "activeSamples": 1676,
+          "activeAreaM2": 0.00028461396524913276
+        }
+      ],
+      "reactionForceWorldN": [
+        1.1233270075606168,
+        -3.766661949792388e-12
+      ],
+      "reactionYawNm": -1.6164429699680837e-12,
+      "pressureFeatures": {
+        "outer-wrap": 404,
+        "outer-straight": 2976
+      },
+      "pressureWorkResidualW": -2.896988204881268e-15,
+      "discardedNonplanar": [
+        0.0,
+        -2.3109441081261466e-19,
+        4.293431338619737e-18,
+        0.0,
+        2.830479707258452e-19,
+        -4.1891602593237525e-18
+      ],
+      "energyJ": {
+        "sourceWork": 50.135179570766034,
+        "sourceHeat": 0.8828237466054274,
+        "driveWinding": 24.524324355040996,
+        "driveBrake": 0.0,
+        "driveDrag": 1.734717960933296,
+        "tireSlip": 1.0594556185280688,
+        "pinchWinding": 0.1470567589058875,
+        "normalHeat": 0.0,
+        "beltSlip": 0.0005843332442501099,
+        "groundHeat": 0.00014426476810543943,
+        "kinetic": 21.784187593651232,
+        "spring": 0.000819361170071497,
+        "initial": 0.0,
+        "residual": 0.001065577918700134
+      },
+      "acceptance": false
+    },
+    {
+      "timeS": 0.5900000000000004,
+      "chassis": {
+        "t": 0.5900000000000004,
+        "x": 0.33970620125778095,
+        "y": 7.952467606410331e-16,
+        "heading": 3.300924028522826e-15,
+        "vx": 0.8264591747725338,
+        "vy": 1.6498160344016973e-15,
+        "yaw_rate": -1.7982449397752197e-15,
+        "wheel": [
+          10.890471248003559,
+          10.89047124800355
+        ],
+        "wheel_angle": [
+          4.600944094668661,
+          4.600944094668682
+        ]
+      },
+      "note": {
+        "p": [
+          0.6577804544003232,
+          1.3253494313067554e-15
+        ],
+        "v": [
+          -0.022936246410283127,
+          8.713855888460836e-14
+        ],
+        "yaw": -5.564341918965812e-15,
+        "spin": -5.89198212586932e-14,
+        "w": [
+          70.62117096360981,
+          70.62117096361226
+        ]
+      },
+      "relativeRobotXY": [
+        0.31807425314254223,
+        -5.198362743869474e-16
+      ],
+      "busV": 11.96356009988,
+      "busCurrentA": 1.8219950061328523,
+      "contacts": [
+        {
+          "motor": 0,
+          "normalMagnitudeN": 1.3742676252256576,
+          "tangentialN": 0.5369668240064298,
+          "activeSamples": 1730,
+          "activeAreaM2": 0.0002937838833578882
+        },
+        {
+          "motor": 1,
+          "normalMagnitudeN": 1.3742676252222796,
+          "tangentialN": 0.5369668240080002,
+          "activeSamples": 1730,
+          "activeAreaM2": 0.0002937838833578882
+        }
+      ],
+      "reactionForceWorldN": [
+        1.0413254808645458,
+        -3.3934989150316563e-12
+      ],
+      "reactionYawNm": -1.3617208160085385e-12,
+      "pressureFeatures": {
+        "outer-wrap": 520,
+        "outer-straight": 2984
+      },
+      "pressureWorkResidualW": -8.864436962241484e-16,
+      "discardedNonplanar": [
+        0.0,
+        3.918056776643173e-19,
+        3.612706362241673e-18,
+        0.0,
+        -4.419923797891346e-19,
+        -3.486869030015206e-18
+      ],
+      "energyJ": {
+        "sourceWork": 50.15704351083963,
+        "sourceHeat": 0.8828901399214748,
+        "driveWinding": 24.5260663171913,
+        "driveBrake": 0.0,
+        "driveDrag": 1.739794572475462,
+        "tireSlip": 1.0594964598826309,
+        "pinchWinding": 0.1470772800687797,
+        "normalHeat": 0.0,
+        "beltSlip": 0.0005934474023916762,
+        "groundHeat": 0.0001647956089143534,
+        "kinetic": 21.79904895663968,
+        "spring": 0.0008456998061203602,
+        "initial": 0.0,
+        "residual": 0.001065841842873515
+      },
+      "acceptance": false
+    },
+    {
+      "timeS": 0.5910000000000004,
+      "chassis": {
+        "t": 0.5910000000000004,
+        "x": 0.3405328049096303,
+        "y": 7.969051027689021e-16,
+        "heading": 3.2990615133659087e-15,
+        "vx": 0.8267467007748537,
+        "vy": 1.6695972978760942e-15,
+        "yaw_rate": -1.8959636756890758e-15,
+        "wheel": [
+          10.89405337107247,
+          10.89405337107246
+        ],
+        "wheel_angle": [
+          4.6118363629022285,
+          4.61183636290225
+        ]
+      },
+      "note": {
+        "p": [
+          0.6577572638119957,
+          1.4117344901834066e-15
+        ],
+        "v": [
+          -0.023280815225394855,
+          8.524710943557467e-14
+        ],
+        "yaw": -5.599103474306333e-15,
+        "spin": -2.5723299037140533e-14,
+        "w": [
+          70.61576534891027,
+          70.61576534891209
+        ]
+      },
+      "relativeRobotXY": [
+        0.31722445890236545,
+        -4.3171361604861476e-16
+      ],
+      "busV": 11.9636740592,
+      "busCurrentA": 1.8162970400436922,
+      "contacts": [
+        {
+          "motor": 0,
+          "normalMagnitudeN": 1.4161030078637489,
+          "tangentialN": 0.5068035691638015,
+          "activeSamples": 1768,
+          "activeAreaM2": 0.00030023305328973174
+        },
+        {
+          "motor": 1,
+          "normalMagnitudeN": 1.4161030078608325,
+          "tangentialN": 0.506803569164751,
+          "activeSamples": 1768,
+          "activeAreaM2": 0.00030023305328973174
+        }
+      ],
+      "reactionForceWorldN": [
+        0.9851307618604621,
+        -2.9234991164028834e-12
+      ],
+      "reactionYawNm": -1.096737451054553e-12,
+      "pressureFeatures": {
+        "outer-wrap": 472,
+        "outer-straight": 3136
+      },
+      "pressureWorkResidualW": -1.3765030781875964e-15,
+      "discardedNonplanar": [
+        0.0,
+        2.6825136392849666e-19,
+        3.575650738750829e-18,
+        0.0,
+        -8.089826390768611e-20,
+        -3.4693220476811187e-18
+      ],
+      "energyJ": {
+        "sourceWork": 50.178839075320155,
+        "sourceHeat": 0.8829561186202283,
+        "driveWinding": 24.52779602813772,
+        "driveBrake": 0.0,
+        "driveDrag": 1.7448745358813922,
+        "tireSlip": 1.0595369487752724,
+        "pinchWinding": 0.1470980686576762,
+        "normalHeat": 0.0,
+        "beltSlip": 0.000601051135692974,
+        "groundHeat": 0.00018576354377905372,
+        "kinetic": 21.813855728225537,
+        "spring": 0.0008687452730861536,
+        "initial": 0.0,
+        "residual": 0.001066087069771919
+      },
+      "acceptance": false
+    },
+    {
+      "timeS": 0.5920000000000004,
+      "chassis": {
+        "t": 0.5920000000000004,
+        "x": 0.34135969497694346,
+        "y": 7.98587106708826e-16,
+        "heading": 3.2971164786278144e-15,
+        "vx": 0.8270323582473346,
+        "vy": 1.696846664468482e-15,
+        "yaw_rate": -1.966275867245811e-15,
+        "wheel": [
+          10.897612287927053,
+          10.897612287927043
+        ],
+        "wheel_angle": [
+          4.622732201864766,
+          4.622732201864787
+        ]
+      },
+      "note": {
+        "p": [
+          0.6577338346156197,
+          1.4955863181243723e-15
+        ],
+        "v": [
+          -0.02347908076326334,
+          8.210950142042361e-14
+        ],
+        "yaw": -5.6106121460686836e-15,
+        "spin": -8.64557135016005e-15,
+        "w": [
+          70.61805995945373,
+          70.61805995945518
+        ]
+      },
+      "relativeRobotXY": [
+        0.3163741396386763,
+        -3.461231777988305e-16
+      ],
+      "busV": 11.96379583282,
+      "busCurrentA": 1.8102083588476972,
+      "contacts": [
+        {
+          "motor": 0,
+          "normalMagnitudeN": 1.4546469692755446,
+          "tangentialN": 0.4879005612367292,
+          "activeSamples": 1826,
+          "activeAreaM2": 0.000310084988867309
+        },
+        {
+          "motor": 1,
+          "normalMagnitudeN": 1.454646969273053,
+          "tangentialN": 0.48790056123722203,
+          "activeSamples": 1826,
+          "activeAreaM2": 0.000310084988867309
+        }
+      ],
+      "reactionForceWorldN": [
+        0.9515653097612208,
+        -2.5015112594187205e-12
+      ],
+      "reactionYawNm": -8.822826376524631e-13,
+      "pressureFeatures": {
+        "outer-wrap": 388,
+        "outer-straight": 3292
+      },
+      "pressureWorkResidualW": -1.0373646386341306e-15,
+      "discardedNonplanar": [
+        0.0,
+        3.461519252962906e-19,
+        3.621188272242792e-18,
+        0.0,
+        -1.9811968287380076e-19,
+        -3.558967746566553e-18
+      ],
+      "energyJ": {
+        "sourceWork": 50.20056157562633,
+        "sourceHeat": 0.8830216557062771,
+        "driveWinding": 24.52951363996621,
+        "driveBrake": 0.0,
+        "driveDrag": 1.749957830484337,
+        "tireSlip": 1.059577096030917,
+        "pinchWinding": 0.1471188694663157,
+        "normalHeat": 0.0,
+        "beltSlip": 0.0006077533376278497,
+        "groundHeat": 0.00020696633176406254,
+        "kinetic": 21.828603097627884,
+        "spring": 0.0008885556892012645,
+        "initial": 0.0,
+        "residual": 0.0010661109857961761
+      },
+      "acceptance": false
+    },
+    {
+      "timeS": 0.5930000000000004,
+      "chassis": {
+        "t": 0.5930000000000004,
+        "x": 0.34218686979255586,
+        "y": 8.003009706366753e-16,
+        "heading": 3.2951241643030846e-15,
+        "vx": 0.8273163791887355,
+        "vy": 1.732338690543576e-15,
+        "yaw_rate": -2.003553979799518e-15,
+        "wheel": [
+          10.901148693906208,
+          10.901148693906197
+        ],
+        "wheel_angle": [
+          4.633631588453159,
+          4.633631588453181
+        ]
+      },
+      "note": {
+        "p": [
+          0.6577102741207234,
+          1.5755193586580986e-15
+        ],
+        "v": [
+          -0.023578499853037622,
+          7.761488371902056e-14
+        ],
+        "yaw": -5.610279238766522e-15,
+        "spin": 2.7001623177630836e-16,
+        "w": [
+          70.62538145906561,
+          70.6253814590668
+        ]
+      },
+      "relativeRobotXY": [
+        0.3155234043281675,
+        -2.6447040598349386e-16
+      ],
+      "busV": 11.96392118473,
+      "busCurrentA": 1.8039407634831977,
+      "contacts": [
+        {
+          "motor": 0,
+          "normalMagnitudeN": 1.487802817149468,
+          "tangentialN": 0.47406901523140016,
+          "activeSamples": 1874,
+          "activeAreaM2": 0.0003182375446359187
+        },
+        {
+          "motor": 1,
+          "normalMagnitudeN": 1.4878028171474564,
+          "tangentialN": 0.4740690152316816,
+          "activeSamples": 1874,
+          "activeAreaM2": 0.0003182375446359187
+        }
+      ],
+      "reactionForceWorldN": [
+        0.928769278302249,
+        -2.01551007329194e-12
+      ],
+      "reactionYawNm": -6.875753661618651e-13,
+      "pressureFeatures": {
+        "outer-wrap": 348,
+        "outer-straight": 3444
+      },
+      "pressureWorkResidualW": 1.132774429812855e-15,
+      "discardedNonplanar": [
+        0.0,
+        1.293379605787914e-20,
+        3.4373755052437082e-18,
+        0.0,
+        8.485218723568958e-20,
+        -3.3207728173757832e-18
+      ],
+      "energyJ": {
+        "sourceWork": 50.22220886478813,
+        "sourceHeat": 0.8830867397518403,
+        "driveWinding": 24.53121928813529,
+        "driveBrake": 0.0,
+        "driveDrag": 1.7550444358122765,
+        "tireSlip": 1.05961690088473,
+        "pinchWinding": 0.1471395527313688,
+        "normalHeat": 0.0,
+        "beltSlip": 0.0006137553989259828,
+        "groundHeat": 0.00022829814031043107,
+        "kinetic": 21.843289323426244,
+        "spring": 0.0009049148085344605,
+        "initial": 0.0,
+        "residual": 0.0010656556986093158
+      },
+      "acceptance": false
+    },
+    {
+      "timeS": 0.5940000000000004,
+      "chassis": {
+        "t": 0.5940000000000004,
+        "x": 0.3430143278619084,
+        "y": 8.02054098928308e-16,
+        "heading": 3.2931094473552634e-15,
+        "vx": 0.8275989507304132,
+        "vy": 1.776853551094523e-15,
+        "yaw_rate": -2.0188416132940327e-15,
+        "wheel": [
+          10.904663505730808,
+          10.904663505730797
+        ],
+        "wheel_angle": [
+          4.644534500467549,
+          4.644534500467571
+        ]
+      },
+      "note": {
+        "p": [
+          0.65768665266554,
+          1.6503564168178914e-15
+        ],
+        "v": [
+          -0.023618868352774217,
+          7.16533576333724e-14
+        ],
+        "yaw": -5.6037612126313275e-15,
+        "spin": 6.379790317120599e-15,
+        "w": [
+          70.63505117417174,
+          70.63505117417273
+        ]
+      },
+      "relativeRobotXY": [
+        0.31467232480363166,
+        -1.8794808774250006e-16
+      ],
+      "busV": 11.96404854034,
+      "busCurrentA": 1.7975729830046792,
+      "contacts": [
+        {
+          "motor": 0,
+          "normalMagnitudeN": 1.5185531497528633,
+          "tangentialN": 0.4658886359249834,
+          "activeSamples": 1908,
+          "activeAreaM2": 0.0003240096239178807
+        },
+        {
+          "motor": 1,
+          "normalMagnitudeN": 1.5185531497513907,
+          "tangentialN": 0.46588863592519725,
+          "activeSamples": 1908,
+          "activeAreaM2": 0.0003240096239178807
+        }
+      ],
+      "reactionForceWorldN": [
+        0.9150896086818411,
+        -1.4681561088386585e-12
+      ],
+      "reactionYawNm": -5.005654297852998e-13,
+      "pressureFeatures": {
+        "outer-wrap": 284,
+        "outer-straight": 3592
+      },
+      "pressureWorkResidualW": -1.1709383462843448e-15,
+      "discardedNonplanar": [
+        0.0,
+        -1.2878374956838088e-20,
+        3.617954823228322e-18,
+        0.0,
+        -1.193125315546487e-19,
+        -3.476451103790407e-18
+      ],
+      "energyJ": {
+        "sourceWork": 50.24377974058419,
+        "sourceHeat": 0.8831513651244248,
+        "driveWinding": 24.532913098551827,
+        "driveBrake": 0.0,
+        "driveDrag": 1.7601343322154797,
+        "tireSlip": 1.0596563601519253,
+        "pinchWinding": 0.14716003714865597,
+        "normalHeat": 0.0,
+        "beltSlip": 0.0006193192588868262,
+        "groundHeat": 0.00024968980125435544,
+        "kinetic": 21.85791121321323,
+        "spring": 0.0009184576870285978,
+        "initial": 0.0,
+        "residual": 0.0010658674314743964
+      },
+      "acceptance": false
+    },
+    {
+      "timeS": 0.5950000000000004,
+      "chassis": {
+        "t": 0.5950000000000004,
+        "x": 0.3438420677929108,
+        "y": 8.038539229850631e-16,
+        "heading": 3.2910911287212058e-15,
+        "vx": 0.8278801722782708,
+        "vy": 1.829130742698852e-15,
+        "yaw_rate": -2.016046321562788e-15,
+        "wheel": [
+          10.908157657374304,
+          10.908157657374293
+        ],
+        "wheel_angle": [
+          4.655440916754463,
+          4.655440916754484
+        ]
+      },
+      "note": {
+        "p": [
+          0.6576630164389581,
+          1.7189704225514518e-15
+        ],
+        "v": [
+          -0.023623159413648138,
+          6.451384173901846e-14
+        ],
+        "yaw": -5.593840219172813e-15,
+        "spin": 1.184820002130869e-14,
+        "w": [
+          70.6459180062445,
+          70.64591800624531
+        ]
+      },
+      "relativeRobotXY": [
+        0.31382094864604726,
+        -1.1769684052949044e-16
+      ],
+      "busV": 11.96417656066,
+      "busCurrentA": 1.7911719669302617,
+      "contacts": [
+        {
+          "motor": 0,
+          "normalMagnitudeN": 1.5445277001799824,
+          "tangentialN": 0.46006576948718075,
+          "activeSamples": 1958,
+          "activeAreaM2": 0.0003325038945322976
+        },
+        {
+          "motor": 1,
+          "normalMagnitudeN": 1.5445277001790294,
+          "tangentialN": 0.4600657694873748,
+          "activeSamples": 1958,
+          "activeAreaM2": 0.0003325038945322976
+        }
+      ],
+      "reactionForceWorldN": [
+        0.9066588445854036,
+        -9.512419064244826e-13
+      ],
+      "reactionYawNm": -3.346693480576241e-13,
+      "pressureFeatures": {
+        "outer-wrap": 352,
+        "outer-straight": 3592
+      },
+      "pressureWorkResidualW": -1.2741543931049648e-15,
+      "discardedNonplanar": [
+        0.0,
+        -2.7912382589989366e-20,
+        3.3083882692446393e-18,
+        0.0,
+        -1.0052560548234435e-19,
+        -3.2707399708449008e-18
+      ],
+      "energyJ": {
+        "sourceWork": 50.26527380418735,
+        "sourceHeat": 0.8832155310647272,
+        "driveWinding": 24.53459518801183,
+        "driveBrake": 0.0,
+        "driveDrag": 1.7652275010014122,
+        "tireSlip": 1.0596954701746484,
+        "pinchWinding": 0.1471802829165951,
+        "normalHeat": 0.0,
+        "beltSlip": 0.0006245544557373202,
+        "groundHeat": 0.00027109596038301075,
+        "kinetic": 21.872468720611742,
+        "spring": 0.0009293424537392523,
+        "initial": 0.0,
+        "residual": 0.0010661175365368081
+      },
+      "acceptance": false
+    },
+    {
+      "timeS": 0.5960000000000004,
+      "chassis": {
+        "t": 0.5960000000000004,
+        "x": 0.3446700882676979,
+        "y": 8.057103697834133e-16,
+        "heading": 3.289092395038596e-15,
+        "vx": 0.8281600578568982,
+        "vy": 1.8854636058615716e-15,
+        "yaw_rate": -1.981327570849162e-15,
+        "wheel": [
+          10.91163205491873,
+          10.91163205491872
+        ],
+        "wheel_angle": [
+          4.666350817114518,
+          4.666350817114539
+        ]
+      },
+      "note": {
+        "p": [
+          0.6576393934339057,
+          1.779797570409991e-15
+        ],
+        "v": [
+          -0.023597764629891226,
+          5.699991359598966e-14
+        ],
+        "yaw": -5.580462707578573e-15,
+        "spin": 1.4079898994186181e-14,
+        "w": [
+          70.65776889130247,
+          70.65776889130315
+        ]
+      },
+      "relativeRobotXY": [
+        0.31296930516620775,
+        -5.529776087610985e-17
+      ],
+      "busV": 11.96430432973,
+      "busCurrentA": 1.7847835134265766,
+      "contacts": [
+        {
+          "motor": 0,
+          "normalMagnitudeN": 1.5655925160380992,
+          "tangentialN": 0.4546147246172052,
+          "activeSamples": 1992,
+          "activeAreaM2": 0.0003382782345520281
+        },
+        {
+          "motor": 1,
+          "normalMagnitudeN": 1.565592516037531,
+          "tangentialN": 0.4546147246173073,
+          "activeSamples": 1992,
+          "activeAreaM2": 0.0003382782345520281
+        }
+      ],
+      "reactionForceWorldN": [
+        0.8996402204804175,
+        -5.660873449143088e-13
+      ],
+      "reactionYawNm": -1.9747401121873957e-13,
+      "pressureFeatures": {
+        "outer-wrap": 300,
+        "outer-straight": 3732
+      },
+      "pressureWorkResidualW": -8.239936510889834e-16,
+      "discardedNonplanar": [
+        0.0,
+        -1.1759199588053841e-19,
+        3.2972262940588487e-18,
+        0.0,
+        -6.874532634805702e-20,
+        -3.236537706877058e-18
+      ],
+      "energyJ": {
+        "sourceWork": 50.28669120634847,
+        "sourceHeat": 0.8832792401085231,
+        "driveWinding": 24.536265666089115,
+        "driveBrake": 0.0,
+        "driveDrag": 1.7703239243498758,
+        "tireSlip": 1.0597342273283745,
+        "pinchWinding": 0.14720027860313514,
+        "normalHeat": 0.0,
+        "beltSlip": 0.0006294819503805448,
+        "groundHeat": 0.00029248914261643786,
+        "kinetic": 21.88696247567835,
+        "spring": 0.0009373727702730988,
+        "initial": 0.0,
+        "residual": 0.0010660503278294314
+      },
+      "acceptance": false
+    },
+    {
+      "timeS": 0.5970000000000004,
+      "chassis": {
+        "t": 0.5970000000000004,
+        "x": 0.3454983879640147,
+        "y": 8.076248466353039e-16,
+        "heading": 3.287138044129319e-15,
+        "vx": 0.8284386775905508,
+        "vy": 1.946037421882387e-15,
+        "yaw_rate": -1.925790566325568e-15,
+        "wheel": [
+          10.915087421539004,
+          10.915087421538994
+        ],
+        "wheel_angle": [
+          4.677264182178304,
+          4.677264182178325
+        ]
+      },
+      "note": {
+        "p": [
+          0.6576158092352202,
+          1.83296518600222e-15
+        ],
+        "v": [
+          -0.02355877300631336,
+          4.902720490332369e-14
+        ],
+        "yaw": -5.5655235048504106e-15,
+        "spin": 1.549961820684262e-14,
+        "w": [
+          70.66952492193121,
+          70.6695249219318
+        ]
+      },
+      "relativeRobotXY": [
+        0.3121174212712055,
+        -6.327103292010014e-19
+      ],
+      "busV": 11.96443202608,
+      "busCurrentA": 1.7783986962094815,
+      "contacts": [
+        {
+          "motor": 0,
+          "normalMagnitudeN": 1.5849095521945769,
+          "tangentialN": 0.45162436168244924,
+          "activeSamples": 2030,
+          "activeAreaM2": 0.00034473337289495516
+        },
+        {
+          "motor": 1,
+          "normalMagnitudeN": 1.5849095521944052,
+          "tangentialN": 0.45162436168252995,
+          "activeSamples": 2030,
+          "activeAreaM2": 0.00034473337289495516
+        }
+      ],
+      "reactionForceWorldN": [
+        0.896319728057324,
+        -1.6771068041265824e-13
+      ],
+      "reactionYawNm": -6.840115201658603e-14,
+      "pressureFeatures": {
+        "outer-wrap": 212,
+        "outer-straight": 3864
+      },
+      "pressureWorkResidualW": 4.49293380277993e-16,
+      "discardedNonplanar": [
+        0.0,
+        -2.0489594645183517e-19,
+        3.1456901145615843e-18,
+        0.0,
+        1.8040478287536512e-19,
+        -3.096499337894281e-18
+      ],
+      "energyJ": {
+        "sourceWork": 50.308031990702986,
+        "sourceHeat": 0.8833424941469767,
+        "driveWinding": 24.537924639394667,
+        "driveBrake": 0.0,
+        "driveDrag": 1.7754235851982632,
+        "tireSlip": 1.059772629633188,
+        "pinchWinding": 0.14722000866751625,
+        "normalHeat": 0.0,
+        "beltSlip": 0.000634241757618045,
+        "groundHeat": 0.00031384422792502887,
+        "kinetic": 21.90139137329433,
+        "spring": 0.0009433216988456984,
+        "initial": 0.0,
+        "residual": 0.0010658526836548909
+      },
+      "acceptance": false
+    },
+    {
+      "timeS": 0.5980000000000004,
+      "chassis": {
+        "t": 0.5980000000000004,
+        "x": 0.34632696561234794,
+        "y": 8.096024071061743e-16,
+        "heading": 3.285250265413324e-15,
+        "vx": 0.828715958282131,
+        "vy": 2.010446027625889e-15,
+        "yaw_rate": -1.8409160079783162e-15,
+        "wheel": [
+          10.918524449316871,
+          10.918524449316859
+        ],
+        "wheel_angle": [
+          4.688180993306857,
+          4.6881809933068785
+        ]
+      },
+      "note": {
+        "p": [
+          0.6575922766631582,
+          1.8778638475460026e-15
+        ],
+        "v": [
+          -0.02349461540834804,
+          4.069798286852311e-14
+        ],
+        "yaw": -5.5493812768946814e-15,
+        "spin": 1.6329033115289278e-14,
+        "w": [
+          70.68169051960025,
+          70.68169051960075
+        ]
+      },
+      "relativeRobotXY": [
+        0.3112653110508103,
+        4.5676994696193034e-17
+      ],
+      "busV": 11.96455898583,
+      "busCurrentA": 1.7720507083027728,
+      "contacts": [
+        {
+          "motor": 0,
+          "normalMagnitudeN": 1.5986521817245127,
+          "tangentialN": 0.4474210727624373,
+          "activeSamples": 2064,
+          "activeAreaM2": 0.0003505108707438635
+        },
+        {
+          "motor": 1,
+          "normalMagnitudeN": 1.5986521817247354,
+          "tangentialN": 0.44742107276250787,
+          "activeSamples": 2064,
+          "activeAreaM2": 0.0003505108707438635
+        }
+      ],
+      "reactionForceWorldN": [
+        0.8902376288969237,
+        2.300839640340113e-13
+      ],
+      "reactionYawNm": 5.694248985122131e-14,
+      "pressureFeatures": {
+        "outer-wrap": 168,
+        "outer-straight": 3984
+      },
+      "pressureWorkResidualW": -4.185020385794047e-15,
+      "discardedNonplanar": [
+        0.0,
+        1.4296327962876488e-19,
+        3.3165748757670766e-18,
+        0.0,
+        -4.1785855823728746e-20,
+        -3.21933069577473e-18
+      ],
+      "energyJ": {
+        "sourceWork": 50.32929659920262,
+        "sourceHeat": 0.8834052974212326,
+        "driveWinding": 24.53957220908553,
+        "driveBrake": 0.0,
+        "driveDrag": 1.7805264671495948,
+        "tireSlip": 1.059810675226224,
+        "pinchWinding": 0.1472394777282159,
+        "normalHeat": 0.0,
+        "beltSlip": 0.0006388101110161789,
+        "groundHeat": 0.00033514861050426586,
+        "kinetic": 21.915755491118013,
+        "spring": 0.0009472537005574135,
+        "initial": 0.0,
+        "residual": 0.001065769051733125
+      },
+      "acceptance": false
+    },
+    {
+      "timeS": 0.5990000000000004,
+      "chassis": {
+        "t": 0.5990000000000004,
+        "x": 0.34715581990273797,
+        "y": 8.116460748003019e-16,
+        "heading": 3.283446984719324e-15,
+        "vx": 0.828991954264714,
+        "vy": 2.0746635419832096e-15,
+        "yaw_rate": -1.7628822642775463e-15,
+        "wheel": [
+          10.921943619303512,
+          10.9219436193035
+        ],
+        "wheel_angle": [
+          4.699101232388931,
+          4.699101232388952
+        ]
+      },
+      "note": {
+        "p": [
+          0.6575688146973566,
+          1.9142918414938803e-15
+        ],
+        "v": [
+          -0.023417025398149435,
+          3.277273191420414e-14
+        ],
+        "yaw": -5.5320920652592536e-15,
+        "spin": 1.546101180720021e-14,
+        "w": [
+          70.6935151619183,
+          70.69351516191874
+        ]
+      },
+      "relativeRobotXY": [
+        0.31041299479461865,
+        8.342115491749271e-17
+      ],
+      "busV": 11.9646853706,
+      "busCurrentA": 1.7657314700692266,
+      "contacts": [
+        {
+          "motor": 0,
+          "normalMagnitudeN": 1.6103145868049928,
+          "tangentialN": 0.44505855908095715,
+          "activeSamples": 2086,
+          "activeAreaM2": 0.0003542482637522883
+        },
+        {
+          "motor": 1,
+          "normalMagnitudeN": 1.6103145868054478,
+          "tangentialN": 0.44505855908097836,
+          "activeSamples": 2086,
+          "activeAreaM2": 0.0003542482637522883
+        }
+      ],
+      "reactionForceWorldN": [
+        0.8868483424058944,
+        4.571671817152345e-13
+      ],
+      "reactionYawNm": 1.3752253432001582e-13,
+      "pressureFeatures": {
+        "outer-wrap": 88,
+        "outer-straight": 4092
+      },
+      "pressureWorkResidualW": -3.8077180297690916e-16,
+      "discardedNonplanar": [
+        0.0,
+        -2.0828407824085237e-19,
+        3.0844191922285564e-18,
+        0.0,
+        2.7657610961323033e-19,
+        -2.9746192377182675e-18
+      ],
+      "energyJ": {
+        "sourceWork": 50.35048537684345,
+        "sourceHeat": 0.8834676535737205,
+        "driveWinding": 24.54120847442736,
+        "driveBrake": 0.0,
+        "driveDrag": 1.7856325542838896,
+        "tireSlip": 1.0598483641533845,
+        "pinchWinding": 0.147258686244319,
+        "normalHeat": 0.0,
+        "beltSlip": 0.0006432690493581102,
+        "groundHeat": 0.000356383613314016,
+        "kinetic": 21.930054225516834,
+        "spring": 0.000949880866419738,
+        "initial": 0.0,
+        "residual": 0.0010658851148534385
+      },
+      "acceptance": false
+    },
+    {
+      "timeS": 0.6000000000000004,
+      "chassis": {
+        "t": 0.6000000000000004,
+        "x": 0.34798494953711223,
+        "y": 8.137540365151125e-16,
+        "heading": 3.2817315857730627e-15,
+        "vx": 0.8292666565042384,
+        "vy": 2.1430197574051074e-15,
+        "yaw_rate": -1.6769112795107708e-15,
+        "wheel": [
+          10.925345334513372,
+          10.925345334513361
+        ],
+        "wheel_angle": [
+          4.7100248818109,
+          4.710024881810921
+        ]
+      },
+      "note": {
+        "p": [
+          0.6575454386561533,
+          1.942934439860186e-15
+        ],
+        "v": [
+          -0.02332517044791752,
+          2.434244887612818e-14
+        ],
+        "yaw": -5.515279829464569e-15,
+        "spin": 1.7357706860599996e-14,
+        "w": [
+          70.70511573174535,
+          70.7051157317457
+        ]
+      },
+      "relativeRobotXY": [
+        0.3095604891190411,
+        1.1328596849575767e-16
+      ],
+      "busV": 11.96481097642,
+      "busCurrentA": 1.7594511787747258,
+      "contacts": [
+        {
+          "motor": 0,
+          "normalMagnitudeN": 1.6174955140055265,
+          "tangentialN": 0.44246909594662065,
+          "activeSamples": 2114,
+          "activeAreaM2": 0.0003590074279487277
+        },
+        {
+          "motor": 1,
+          "normalMagnitudeN": 1.6174955140063936,
+          "tangentialN": 0.44246909594672806,
+          "activeSamples": 2114,
+          "activeAreaM2": 0.0003590074279487277
+        }
+      ],
+      "reactionForceWorldN": [
+        0.883208546910634,
+        8.724743746479219e-13
+      ],
+      "reactionYawNm": 2.5003851650539095e-13,
+      "pressureFeatures": {
+        "outer-wrap": 156,
+        "outer-straight": 4092
+      },
+      "pressureWorkResidualW": -8.656270145124267e-16,
+      "discardedNonplanar": [
+        0.0,
+        -9.242254420177489e-20,
+        3.2142865483993817e-18,
+        0.0,
+        -1.1908092098313386e-19,
+        -3.1081534855445404e-18
+      ],
+      "energyJ": {
+        "sourceWork": 50.37159879098875,
+        "sourceHeat": 0.8835295669427303,
+        "driveWinding": 24.5428335316816,
+        "driveBrake": 0.0,
+        "driveDrag": 1.7907418311307188,
+        "tireSlip": 1.05988569708087,
+        "pinchWinding": 0.1472776409738124,
+        "normalHeat": 0.0,
+        "beltSlip": 0.0006476333185192545,
+        "groundHeat": 0.0003775341258965311,
+        "kinetic": 21.944288129761713,
+        "spring": 0.0009512756982653025,
+        "initial": 0.0,
+        "residual": 0.0010659502746199257
+      },
+      "acceptance": false
+    }
+  ],
+  "outcome": "HORIZON",
+  "reason": null,
+  "runtimeSeconds": 25.147844600025564,
+  "acceptance": false,
+  "limits": [
+    "Exact same-pressure-law state and cumulative ledger; no old checkpoint swap.",
+    "Fixed drive.2 and pinch.12 commands; no capture controller or lift.",
+    "Contacts are midpoint samples; states are endpoints.",
+    "Known geometry domain gates remain; no physical calibration or capture claim."
+  ]
+}

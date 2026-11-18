@@ -1,0 +1,31 @@
+{
+  "schema": "acquisition-native-registration-boundary/1",
+  "acceptance": false,
+  "status": "REGISTRATION_REQUIRED",
+  "scriptSha256": "8f71245c18fd06e4f6dd4a10c88e0bf19bc62356cdb919beaed2e2bde15065f0",
+  "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "nativeReceiptSha256": "b76ed965b6e744cafbd422761ccadee03c51b45c810feab1d22c895730d7e803",
+  "acquisitionReportSha256": "31f03648150aa04a49e66f833d85345c4f4ce37ae18949cdc74efe4ed6b75d97",
+  "baseConfigSha256": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+  "baseConfigHashMatches": true,
+  "historicalAcquisitionInnerFaceAbsYmm": 176.9223933363976,
+  "nativeCandidateInnerFaceAbsYmm": 176.4223933363976,
+  "perSideFaceDifferenceMm": -0.5,
+  "nominalTotalGapDifferenceMm": -1.0,
+  "nativeOverrides": {
+    "shaftOutboardOffsetMm": 1.0,
+    "outerTreadThicknessMm": 1.5,
+    "outerTreadDensityKgM3Hypothesis": 1000.0,
+    "nominalContactFaceAbsYmm": 176.4223933363976,
+    "returnRunRelief": true,
+    "pivotInnerYAbsMm": 206.2,
+    "reliefClearanceMm": 0.5
+  },
+  "automaticNativeQualificationPermitted": false,
+  "limits": [
+    "A matching base configuration hash does not prove equality after additive native geometry overrides",
+    "Do not relabel or repin the historical pressure trajectory as the relieved native candidate",
+    "A distinct newly bound model must include the native offsets, treads, relief and installed transforms and repeat geometry/contact checks",
+    "This read-only evidence comparison does not access Fusion, validate its current session, or mutate any native file"
+  ]
+}

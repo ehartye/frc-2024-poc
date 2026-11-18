@@ -1,0 +1,9 @@
+"""Read-only audit of what the final native receipt can bind for lift dynamics."""
+import argparse,hashlib,json,pathlib
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+p=argparse.ArgumentParser()
+for name in ['project','native-receipt','binding','output']:p.add_argument('--'+name,type=pathlib.Path,required=True)
+a=p.parse_args();assert not a.output.exists();r=json.loads(a.native_receipt.read_bytes());b=json.loads(a.binding.read_bytes());assert len(r['after'])==734 and r['exportSha256']==b['nativeArchiveSha256'] and sha(a.native_receipt)==b['finalNativeReceiptSha256']
+path=a.project/'cad/assembly/actuator-geometry-contract.json';c=json.loads(path.read_bytes());required=['massKg','centerOfMass','inertiaTensor','densityKgM3']
+out=dict(schema='native-lift-mass-binding-audit/1',scriptSha256=sha(pathlib.Path(__file__)),nativeArchiveSha256=r['exportSha256'],finalNativeReceiptSha256=sha(a.native_receipt),nativeBodyCount=len(r['after']),availableBodyFields=sorted(r['after'][0]),missingPhysicalFields={k:sum(k not in x for x in r['after']) for k in required},candidateContractSha256=sha(path),massOwnership=c['massOwnership'],movingMassBindingAccepted=False,installedTransmissionAccepted=False,reason='Final native receipt contains bounds, volume and material IDs but no numeric density, COM or inertia; candidate contract explicitly leaves moving mass/COM/inertia null and installation unverified.',nextRequiredEvidence=['Native component membership and installed transforms for translating/rotating bodies','Numeric material density and vendor mass where solid geometry is only a representation','Body COM and inertia transformed into the lift/pitch coordinates','Verified actuator coupling/transmission and full-path clearance'],noFusionCall=True)
+a.output.write_text(json.dumps(out,indent=2)+'\n',encoding='utf-8',newline='\n');print(json.dumps(out,indent=2))

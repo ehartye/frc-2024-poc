@@ -1,0 +1,460 @@
+{
+  "schema": "original-drivetrain-fastening/1",
+  "frame": "+Xforward,+Yleft,+Zup;mm; same drivetrain source transform",
+  "assemblySourceSha256": "be83adedebb155e67e0d4978c9cb0a895c56ae99ef9302d68e6bfcd958b7c16f",
+  "extractionSha256": "e2f78b19b2fece64d9353421aa191cf9a4663f15b1a08ba7b7b9287a15d1e01e",
+  "railBrepSha256": [
+    "53be94018e4fb23ee027a7878419dfbdcc122ed3f4bfefefebe4ca29ec839cc4",
+    "daf5d428a1396f1db9d34aa3ca809589c23976a622e42c9eebfc29219f84555e"
+  ],
+  "holes": [
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO84",
+      "xMm": 342.89999999998594,
+      "yMm": -260.35000000002077,
+      "zMinMm": 129.5399988772874,
+      "zMaxMm": 132.7149990772874,
+      "diameterMm": 5.334000000000005
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO84",
+      "xMm": 317.49999999998596,
+      "yMm": -260.3500000000207,
+      "zMinMm": 129.53999887728742,
+      "zMaxMm": 132.7149990772874,
+      "diameterMm": 5.333999999999994
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO84",
+      "xMm": 292.099999999986,
+      "yMm": -260.3500000000207,
+      "zMinMm": 129.53999887728742,
+      "zMaxMm": 132.7149990772874,
+      "diameterMm": 5.333999999999994
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO84",
+      "xMm": 266.69999999998595,
+      "yMm": -260.35000000002066,
+      "zMinMm": 129.53999887728742,
+      "zMaxMm": 132.71499907728742,
+      "diameterMm": 5.333999999999994
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO84",
+      "xMm": 241.29999999998589,
+      "yMm": -260.3500000000206,
+      "zMinMm": 129.53999887728742,
+      "zMaxMm": 132.71499907728742,
+      "diameterMm": 5.333999999999994
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO84",
+      "xMm": 215.89999999998594,
+      "yMm": -260.3500000000206,
+      "zMinMm": 129.53999887728742,
+      "zMaxMm": 132.71499907728742,
+      "diameterMm": 5.333999999999994
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO84",
+      "xMm": 190.49999999998593,
+      "yMm": -260.35000000002054,
+      "zMinMm": 129.53999887728742,
+      "zMaxMm": 132.71499907728742,
+      "diameterMm": 5.333999999999994
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO84",
+      "xMm": 165.09999999998593,
+      "yMm": -260.35000000002054,
+      "zMinMm": 129.53999887728742,
+      "zMaxMm": 132.71499907728742,
+      "diameterMm": 5.333999999999994
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO84",
+      "xMm": 139.69999999998598,
+      "yMm": -260.3500000000205,
+      "zMinMm": 129.53999887728742,
+      "zMaxMm": 132.71499907728742,
+      "diameterMm": 5.333999999999932
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO84",
+      "xMm": 114.29999999998601,
+      "yMm": -260.35000000002043,
+      "zMinMm": 129.53999887728742,
+      "zMaxMm": 132.71499907728742,
+      "diameterMm": 5.333999999999932
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO84",
+      "xMm": 88.89999999998598,
+      "yMm": -260.35000000002043,
+      "zMinMm": 129.53999887728742,
+      "zMaxMm": 132.71499907728742,
+      "diameterMm": 5.333999999999932
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO84",
+      "xMm": 63.499999999986,
+      "yMm": -260.3500000000204,
+      "zMinMm": 129.53999887728745,
+      "zMaxMm": 132.71499907728742,
+      "diameterMm": 5.333999999999932
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO84",
+      "xMm": -63.50000000001394,
+      "yMm": -260.3500000000202,
+      "zMinMm": 129.53999887728745,
+      "zMaxMm": 132.71499907728744,
+      "diameterMm": 5.333999999999932
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO84",
+      "xMm": -88.90000000001397,
+      "yMm": -260.35000000002015,
+      "zMinMm": 129.53999887728745,
+      "zMaxMm": 132.71499907728744,
+      "diameterMm": 5.333999999999932
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO84",
+      "xMm": -114.30000000001401,
+      "yMm": -260.3500000000201,
+      "zMinMm": 129.53999887728745,
+      "zMaxMm": 132.71499907728744,
+      "diameterMm": 5.33400000000004
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO84",
+      "xMm": -139.700000000014,
+      "yMm": -260.3500000000201,
+      "zMinMm": 129.53999887728745,
+      "zMaxMm": 132.71499907728744,
+      "diameterMm": 5.33400000000004
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO84",
+      "xMm": -165.10000000001398,
+      "yMm": -260.35000000002003,
+      "zMinMm": 129.53999887728745,
+      "zMaxMm": 132.71499907728744,
+      "diameterMm": 5.33400000000004
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO84",
+      "xMm": -190.50000000001407,
+      "yMm": -260.35000000002,
+      "zMinMm": 129.53999887728747,
+      "zMaxMm": 132.71499907728744,
+      "diameterMm": 5.33400000000004
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO84",
+      "xMm": -215.90000000001405,
+      "yMm": -260.35000000002,
+      "zMinMm": 129.53999887728747,
+      "zMaxMm": 132.71499907728744,
+      "diameterMm": 5.33400000000004
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO84",
+      "xMm": -241.30000000001402,
+      "yMm": -260.3500000000199,
+      "zMinMm": 129.53999887728747,
+      "zMaxMm": 132.71499907728747,
+      "diameterMm": 5.33400000000004
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO84",
+      "xMm": -266.700000000014,
+      "yMm": -260.35000000001986,
+      "zMinMm": 129.53999887728747,
+      "zMaxMm": 132.71499907728747,
+      "diameterMm": 5.33400000000004
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO84",
+      "xMm": -292.10000000001395,
+      "yMm": -260.35000000001986,
+      "zMinMm": 129.53999887728747,
+      "zMaxMm": 132.71499907728747,
+      "diameterMm": 5.33400000000004
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO84",
+      "xMm": -317.5000000000139,
+      "yMm": -260.3500000000198,
+      "zMinMm": 129.53999887728747,
+      "zMaxMm": 132.71499907728747,
+      "diameterMm": 5.33400000000004
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO1/NAUO3/NAUO84",
+      "xMm": -342.900000000014,
+      "yMm": -260.35000000001975,
+      "zMinMm": 129.53999887728747,
+      "zMaxMm": 132.71499907728747,
+      "diameterMm": 5.33400000000004
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO84",
+      "xMm": -342.9000000000202,
+      "yMm": 260.34999999998183,
+      "zMinMm": 129.53999887725874,
+      "zMaxMm": 132.71499907725874,
+      "diameterMm": 5.334000000000005
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO84",
+      "xMm": -317.50000000002024,
+      "yMm": 260.3499999999832,
+      "zMinMm": 129.53999887725877,
+      "zMaxMm": 132.71499907725874,
+      "diameterMm": 5.333999999999994
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO84",
+      "xMm": -292.10000000002026,
+      "yMm": 260.34999999998456,
+      "zMinMm": 129.53999887725877,
+      "zMaxMm": 132.71499907725874,
+      "diameterMm": 5.333999999999994
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO84",
+      "xMm": -266.7000000000203,
+      "yMm": 260.3499999999859,
+      "zMinMm": 129.53999887725877,
+      "zMaxMm": 132.71499907725877,
+      "diameterMm": 5.333999999999994
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO84",
+      "xMm": -241.30000000002028,
+      "yMm": 260.34999999998723,
+      "zMinMm": 129.53999887725877,
+      "zMaxMm": 132.71499907725877,
+      "diameterMm": 5.333999999999994
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO84",
+      "xMm": -215.9000000000203,
+      "yMm": 260.3499999999886,
+      "zMinMm": 129.53999887725877,
+      "zMaxMm": 132.71499907725877,
+      "diameterMm": 5.333999999999994
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO84",
+      "xMm": -190.5000000000203,
+      "yMm": 260.34999999998996,
+      "zMinMm": 129.53999887725877,
+      "zMaxMm": 132.71499907725877,
+      "diameterMm": 5.333999999999994
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO84",
+      "xMm": -165.1000000000203,
+      "yMm": 260.3499999999913,
+      "zMinMm": 129.53999887725877,
+      "zMaxMm": 132.71499907725877,
+      "diameterMm": 5.333999999999994
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO84",
+      "xMm": -139.7000000000203,
+      "yMm": 260.34999999999263,
+      "zMinMm": 129.53999887725877,
+      "zMaxMm": 132.71499907725877,
+      "diameterMm": 5.333999999999932
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO84",
+      "xMm": -114.30000000002032,
+      "yMm": 260.349999999994,
+      "zMinMm": 129.53999887725877,
+      "zMaxMm": 132.71499907725877,
+      "diameterMm": 5.333999999999932
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO84",
+      "xMm": -88.90000000002028,
+      "yMm": 260.34999999999536,
+      "zMinMm": 129.53999887725877,
+      "zMaxMm": 132.71499907725877,
+      "diameterMm": 5.333999999999932
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO84",
+      "xMm": -63.50000000002031,
+      "yMm": 260.3499999999967,
+      "zMinMm": 129.5399988772588,
+      "zMaxMm": 132.71499907725877,
+      "diameterMm": 5.333999999999932
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO84",
+      "xMm": 63.499999999979636,
+      "yMm": 260.35000000000343,
+      "zMinMm": 129.5399988772588,
+      "zMaxMm": 132.7149990772588,
+      "diameterMm": 5.333999999999932
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO84",
+      "xMm": 88.89999999997967,
+      "yMm": 260.3500000000048,
+      "zMinMm": 129.5399988772588,
+      "zMaxMm": 132.7149990772588,
+      "diameterMm": 5.333999999999932
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO84",
+      "xMm": 114.2999999999797,
+      "yMm": 260.35000000000616,
+      "zMinMm": 129.5399988772588,
+      "zMaxMm": 132.7149990772588,
+      "diameterMm": 5.33400000000004
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO84",
+      "xMm": 139.69999999997967,
+      "yMm": 260.3500000000075,
+      "zMinMm": 129.5399988772588,
+      "zMaxMm": 132.7149990772588,
+      "diameterMm": 5.33400000000004
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO84",
+      "xMm": 165.09999999997964,
+      "yMm": 260.3500000000089,
+      "zMinMm": 129.5399988772588,
+      "zMaxMm": 132.7149990772588,
+      "diameterMm": 5.33400000000004
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO84",
+      "xMm": 190.49999999997974,
+      "yMm": 260.3500000000102,
+      "zMinMm": 129.53999887725882,
+      "zMaxMm": 132.7149990772588,
+      "diameterMm": 5.33400000000004
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO84",
+      "xMm": 215.8999999999797,
+      "yMm": 260.35000000001156,
+      "zMinMm": 129.53999887725882,
+      "zMaxMm": 132.7149990772588,
+      "diameterMm": 5.33400000000004
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO84",
+      "xMm": 241.2999999999797,
+      "yMm": 260.3500000000129,
+      "zMinMm": 129.53999887725882,
+      "zMaxMm": 132.71499907725882,
+      "diameterMm": 5.33400000000004
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO84",
+      "xMm": 266.6999999999797,
+      "yMm": 260.3500000000143,
+      "zMinMm": 129.53999887725882,
+      "zMaxMm": 132.71499907725882,
+      "diameterMm": 5.33400000000004
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO84",
+      "xMm": 292.0999999999797,
+      "yMm": 260.3500000000156,
+      "zMinMm": 129.53999887725882,
+      "zMaxMm": 132.71499907725882,
+      "diameterMm": 5.33400000000004
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO84",
+      "xMm": 317.49999999997965,
+      "yMm": 260.35000000001696,
+      "zMinMm": 129.53999887725882,
+      "zMaxMm": 132.71499907725882,
+      "diameterMm": 5.33400000000004
+    },
+    {
+      "sourceOccurrence": "AM14U4 Square/NAUO2/NAUO3/NAUO84",
+      "xMm": 342.89999999997974,
+      "yMm": 260.3500000000183,
+      "zMinMm": 129.53999887725882,
+      "zMaxMm": 132.71499907725882,
+      "diameterMm": 5.33400000000004
+    }
+  ],
+  "bridgeCentersXmm": [
+    101.6,
+    279.4
+  ],
+  "railBoltXmm": [
+    [
+      63.5,
+      139.7
+    ],
+    [
+      241.3,
+      317.5
+    ]
+  ],
+  "railHoleYabsMm": 260.35,
+  "railTopZmm": 132.7149989773,
+  "railBottomZmm": 129.5399989773,
+  "plateThicknessMm": 4,
+  "plateLengthXmm": 96,
+  "plateYinnerMm": 220,
+  "plateYouterMm": 270,
+  "tubeSizeMm": [
+    25.4,
+    488.95,
+    50.8
+  ],
+  "tubeWallMm": 3.175,
+  "tubeBoltYabsMm": 228.6,
+  "holeDiameterMm": 5.334,
+  "nominalBoltDiameterMm": 4.826,
+  "nutThicknessMm": 5.953125,
+  "nutThicknessBasis": "source native10-32 Nylock Nut1 bounds, axial thickness0.234375in; current product page does not state thickness",
+  "nutOuterRadiusReserveMm": 5.6,
+  "headRadiusReserveMm": 4,
+  "headHeightReserveMm": 5,
+  "sleeveOuterDiameterMm": 9.525,
+  "sleeveLengthMm": 44.45,
+  "boltLengthsMm": {
+    "rail": 19.05,
+    "tube": 69.85
+  },
+  "sources": {
+    "1047": {
+      "url": "https://andymark.com/am-1047",
+      "sha256": "882e87059a163b3a75fb5308577fbfb8cedd16d129f4614c72997001cb91a276"
+    },
+    "1042": {
+      "url": "https://andymark.com/am-1042",
+      "sha256": "f7d4384b1a17d7ec3f45bb85e795f99bf8379774b57da20d42db24c7de2e43b4"
+    },
+    "1397": {
+      "url": "https://andymark.com/am-1397",
+      "sha256": "f645203dd63b64bc5269797e6a805692ea6f48989a83086dc7ef6c297fba7db9"
+    }
+  },
+  "limits": [
+    "Original drilled plates/tubes/sleeves are dimensional proposals, no material grade or load acceptance",
+    "No washers assumed; source guide uses screws and locknuts directly",
+    "Bolt heads and nut exteriors are explicit access reserves, not source-native fastener geometry",
+    "Threads are plain-cylinder proxies; full thread length and nylon engagement not verified",
+    "Current longbolt catalog source is not independent historical2024availability evidence",
+    "Native rail mating only; fullrobot/toolaccess/cabling/bumper paths not assessed",
+    "Prior x\u00b1280z160 interface proposal remains unchanged; designer must exclude it and select this separately"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "pressure-tiled-culling-tests/1",
+  "testsRun": 6,
+  "passed": true,
+  "candidateSha256": "ad40145c71fbfaae776540ad3a2f43f954f52b5de53b65035babb0b424868987",
+  "testSourceSha256": "df477559a3aef240eac29ff2e0ab93aacf909ae0973e1bb87b96ed10c069da75",
+  "scriptSha256": "b9294cf08c945277fb37da707d524afa94a1424ba81844ea5dea274dd53c8ac0",
+  "limits": [
+    "Existing reference parity tests executed against the additive tiled candidate",
+    "No trajectory or hardware qualification from these tests alone"
+  ]
+}

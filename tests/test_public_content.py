@@ -3,6 +3,25 @@ ROOT=pathlib.Path(__file__).resolve().parents[1]
 s=importlib.util.spec_from_file_location('guard',ROOT/'scripts/check_public_content.py');guard=importlib.util.module_from_spec(s);s.loader.exec_module(guard)
 class PublicContent(unittest.TestCase):
  def test_committed_content(self):self.assertEqual(guard.audit(),[])
+ def test_asset_allowlist_is_exact_and_tamper_rejected(self):
+  from unittest.mock import patch
+  import hashlib
+  asset='sim/mujoco/visual/fixed.stl'
+  original=(ROOT/asset).read_bytes()
+  self.assertEqual(hashlib.sha256(original).hexdigest(),guard.ORIGINAL_ASSETS[asset])
+  def fake(*args):
+   if args[0]=='ls-tree':return asset.encode()+b'\0'
+   if args[0]=='show':return original+b'changed'
+   if args[0]=='log':return b''
+   raise AssertionError(args)
+  with patch.object(guard,'git',side_effect=fake):
+   self.assertEqual(guard.audit(),[(asset,['unreviewed-original-asset'])])
+ def test_unlisted_binary_stays_rejected(self):
+  from unittest.mock import patch
+  def fake(*args):
+   return b'unlisted.stl\0' if args[0]=='ls-tree' else (b'\0binary' if args[0]=='show' else b'')
+  with patch.object(guard,'git',side_effect=fake):
+   self.assertEqual(guard.audit(),[('unlisted.stl',['unexpected-binary'])])
  def test_synthetic_private_patterns(self):
   examples=['C:'+chr(92)+'Users'+chr(92)+'example'+chr(92)+'file','/ho'+'me/example/file','192'+'.168.10.2','https://device'+'.l'+'an/path','Run on '+'BUILD_NODE','execution on '+'TEST_BOX']
   for value in examples:

@@ -1,0 +1,36 @@
+{
+  "schema": "2024-assembly-verification-bundle/1",
+  "valid": true,
+  "buildReceiptSha256": "ff2cfa488dfa257077cd045d140ba6420b6debd6568cec40fd0e7aff30f75b0f",
+  "contactReceiptSha256": "8fe8b563405b31c845cc6b0e0fea729e3db68f23e87f1752f2fdac06341c9ca7",
+  "assemblyInputs": {
+    "cad/assembly/build_robot.py": "436b9c43c963b8266e9b451ffe510cb888e14c3ec6dae552baf874c86455f57f",
+    "cad/assembly/bumper_candidate.py": "556fba39fda427cb081a2a1d4d806372b67b830606a242bbfc0babf05619fc19",
+    "cad/a2_primitives.py": "bef958c710da792f89def8606d7169a7c385fcff257826619a7b29fe0943952e",
+    "cad/a2_kinematics.py": "4329126a1465f53c8d27618307b2864ff69803e196ff4521aab8a50daf670581",
+    "cad/build_a2_layout.py": "aea31166eabc53113962cc511cfbd190eba54033f7b93476455961dccb1969c9",
+    "cad/cycle-contract-A2.json": "0e08bf88e488539ca8966dcc3cc08727ef2faf98da3740787b308cd54c652f52",
+    "cad/components/a2-transmission.json": "0aae2e2dd0d8c4b16729139380f6d1e2df0efa956dad2ee8b205be1a57f3d8b0",
+    "cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+    "cad/drivetrain/build_fastening.py": "9d82a974d184200e7a6c414bc74b345cd53aa2cf85f36c3cf528fe818997d4ac",
+    "cad/drivetrain/fastening.json": "6cb3d276cd5f59143ef9b52d2240095f02db9f92d6cfef5ae53b145a78862ac9",
+    "cad/drivetrain/build_drivetrain.py": "4748e01902aac32ae8d996e1f7676caa7f794ac6a5971b661855c26487ad29a7",
+    "cad/electrical/manifest.json": "9db917a55b0884db9841f52da3b5cccf8ad684c652e4dde3e01b1efe75e891a3",
+    "cad/electrical/build_electrical.py": "d2fbd40d0b26c8887679b6ed3b49c655b10a27a0cd175e812b35d9fccd6f6317",
+    "cad/electrical/mounts.py": "90254dbc5116a9af72df0ba6442ed94ef8c94e8247326f9b7c6cfd0c0749c7e8",
+    "cad/electrical/breaker_mount.py": "1e27087fa191e8043c6ed8b3c48bca4db50cde379efa171cc49508a1a1c75060",
+    "cad/electrical/breaker-mount-evidence.json": "9e0bb64f30ab3ee58de577fe694ee578135cdf4d74ddf8e0b3065b741266b07d",
+    "cad/electrical/fasteners.py": "788a1cb9bf71a780aed9cbeb5bf48d06532e914fed431edcc0e72a4bd273b799",
+    "cad/assembly/intake_components.py": "1dc0f85a805577f38e535a1e137a1b31c38cd32a33a737b2e5e7f1ab58c54f65",
+    "cad/assembly/intake_components.json": "8fa11a9d4ac9f425a5a08e3d1a60899a3e4e9fd7839bfde1b445f023034511f3",
+    "cad/assembly/build_intake_candidate.py": "77136f213e945a6b895e1156e5af339c263a37f77f824cabf460c421204b7a84",
+    "cad/assembly/check_intake_contact.py": "95d20cfed12331c135b5534d4076f833ae6741b69806a61e677e88098a7301e3",
+    "cad/assembly/verify_receipts.py": "213a00200bc7fc0b84bd4bb82e4a62aaee3c10432f35373fc3097b2141d4e81d",
+    "cad/assembly/audit_intake_motion.py": "5b5754d4a3a744c1c3ddff2650bc99f841418ababbcecdaacaace155be88a192"
+  },
+  "exportStepHashes": {
+    "floor": "c5b5f6c741b1bff4b35a8bfb0b47f69300859ecf11af038a5fa6af18ff989fd4",
+    "rotated": "05d76be890959a3de437fcaf612b15095d9e4ec518902efc33e0eb1e9cd3b7f3",
+    "handoff": "a914325f90b30a1b608660b13fa1ba2cb4d4c06f82f8bc380bbf13b11d26a338"
+  }
+}

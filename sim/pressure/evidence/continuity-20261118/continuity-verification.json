@@ -1,0 +1,74 @@
+{
+  "schema": "acquisition-continuity-verification/1",
+  "evidenceChecksPassed": true,
+  "acceptance": false,
+  "hardwareValidated": false,
+  "nativeRegistrationAccepted": false,
+  "continuousAcquisitionToLaunch": false,
+  "scriptSha256": "77b6c1684728201d984c95fc89fa3713a7eaccef9fcd7b4f8769749e2a1052e2",
+  "manifestSha256": "ff1a0aa9d53a0c466f29455c64c5fe751b45cb6ea8a3d0c09a6a54aa1a3c19ea",
+  "indexTimeS": 4.439999999999817,
+  "indexDwellStartS": 4.336999999999783,
+  "indexObservation": {
+    "timestamp": 4.439999999999817,
+    "relativeX": 0.18855979015568336,
+    "relativeY": -6.4103398928453095e-18,
+    "relativeVx": -0.002679247248948748,
+    "relativeVy": -9.841163028627554e-18,
+    "forwardSpeed": 0.0021605168524519436,
+    "yawRate": -1.2771967312241599e-17,
+    "wheelLeft": 0.0269245083590986,
+    "wheelRight": 0.026924508359098515,
+    "busV": 11.99999968689
+  },
+  "continuousAcceptedAcquisitionSteps": 4440,
+  "maximumCumulativeEnergyResidualJ": 0.0009509649041532336,
+  "exactResumeParitySteps": 100,
+  "localAcquisitionHalfStep": {
+    "windowS": 0.02,
+    "maxRelativePositionDifferenceM": 4.317753876659225e-09,
+    "maxRelativeVelocityDifferenceMps": 3.917152940270674e-06
+  },
+  "transport": {
+    "nominal": {
+      "stepS": 0.001,
+      "outcome": "TRANSPORT_CORRIDOR_EXIT",
+      "startTimeS": 4.439999999999817,
+      "endTimeS": 4.456999999999823,
+      "chassisTravelM": 0.00011142000686031883,
+      "noteWorldTravelM": 1.6199113586412572e-05,
+      "maximumRelativeSpeedMps": 0.01000740608416681
+    },
+    "half": {
+      "stepS": 0.0005,
+      "outcome": "TRANSPORT_CORRIDOR_EXIT",
+      "startTimeS": 4.439999999999817,
+      "endTimeS": 4.456999999999808,
+      "chassisTravelM": 0.00011141645801582278,
+      "noteWorldTravelM": 1.6184740675773135e-05,
+      "maximumRelativeSpeedMps": 0.010003821556981507
+    },
+    "quarter": {
+      "stepS": 0.00025,
+      "outcome": "TRANSPORT_CORRIDOR_EXIT",
+      "startTimeS": 4.439999999999817,
+      "endTimeS": 4.456999999999838,
+      "chassisTravelM": 0.00011141543761788997,
+      "noteWorldTravelM": 1.6178821232948337e-05,
+      "maximumRelativeSpeedMps": 0.010003096297055713
+    }
+  },
+  "localTransportFineComparison": {
+    "sharedStates": 34,
+    "maxRelativePositionDifferenceM": 6.5284208039528835e-09,
+    "maxRelativeVelocityDifferenceMps": 3.6272872433597107e-06,
+    "exitTimeDifferenceS": 3.019806626980426e-14
+  },
+  "nativeFaceDifferenceMm": -0.5,
+  "limits": [
+    "Full acquisition startup/index not rerun at all required finer timesteps or spatial grids",
+    "Transport refinement starts from one identical attained index; it is local evidence only",
+    "Historical pressure geometry is not the relieved native revision despite matching base configuration hash",
+    "No lift/pitch/feed or shooting was joined; no hardware acceptance or full loading-contract verdict"
+  ]
+}

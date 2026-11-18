@@ -1,0 +1,2124 @@
+{
+  "schema": "connected-floor-entry/1",
+  "inputs": {
+    "cad/assembly/build_robot.py": "cca2c9a3ecca7a622fb1283461c393b2288e3c6efd173c60d72a959e3c500e26",
+    "cad/assembly/bumper_candidate.py": "556fba39fda427cb081a2a1d4d806372b67b830606a242bbfc0babf05619fc19",
+    "cad/a2_primitives.py": "bef958c710da792f89def8606d7169a7c385fcff257826619a7b29fe0943952e",
+    "cad/a2_kinematics.py": "4329126a1465f53c8d27618307b2864ff69803e196ff4521aab8a50daf670581",
+    "cad/build_a2_layout.py": "aea31166eabc53113962cc511cfbd190eba54033f7b93476455961dccb1969c9",
+    "cad/cycle-contract-A2.json": "3700da3bf1a271d6b6763060f913435a4a50cda8d456cb1a57a6f1898416b6ad",
+    "cad/components/a2-transmission.json": "0aae2e2dd0d8c4b16729139380f6d1e2df0efa956dad2ee8b205be1a57f3d8b0",
+    "cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+    "cad/drivetrain/build_fastening.py": "9d82a974d184200e7a6c414bc74b345cd53aa2cf85f36c3cf528fe818997d4ac",
+    "cad/drivetrain/fastening.json": "6cb3d276cd5f59143ef9b52d2240095f02db9f92d6cfef5ae53b145a78862ac9",
+    "cad/drivetrain/build_drivetrain.py": "4748e01902aac32ae8d996e1f7676caa7f794ac6a5971b661855c26487ad29a7",
+    "cad/electrical/manifest.json": "9db917a55b0884db9841f52da3b5cccf8ad684c652e4dde3e01b1efe75e891a3",
+    "cad/electrical/build_electrical.py": "d2fbd40d0b26c8887679b6ed3b49c655b10a27a0cd175e812b35d9fccd6f6317",
+    "cad/electrical/mounts.py": "90254dbc5116a9af72df0ba6442ed94ef8c94e8247326f9b7c6cfd0c0749c7e8",
+    "cad/electrical/breaker_mount.py": "1e27087fa191e8043c6ed8b3c48bca4db50cde379efa171cc49508a1a1c75060",
+    "cad/electrical/breaker-mount-evidence.json": "9e0bb64f30ab3ee58de577fe694ee578135cdf4d74ddf8e0b3065b741266b07d",
+    "cad/electrical/fasteners.py": "788a1cb9bf71a780aed9cbeb5bf48d06532e914fed431edcc0e72a4bd273b799",
+    "cad/assembly/intake_components.py": "c6d352be0edba340d340112697d3f2482158b4fb8f3324b0dd3927344f9b43c5",
+    "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+    "cad/assembly/build_intake_candidate.py": "07e9c96ec0f5e4d02660e0d2efda8dd2bddfb0198862c5e228dbc9e07cbf9bc3",
+    "cad/assembly/check_intake_contact.py": "95d20cfed12331c135b5534d4076f833ae6741b69806a61e677e88098a7301e3",
+    "cad/assembly/verify_receipts.py": "213a00200bc7fc0b84bd4bb82e4a62aaee3c10432f35373fc3097b2141d4e81d",
+    "cad/assembly/audit_intake_motion.py": "1d33ef51ba87c170335234004b1fa3cac1aeeac39da6149d15eedf58a26c1509",
+    "cad/components/check_pulley_outer_profile.py": "23325f74745de7ea2d828340c816143346221c44325784d6e8934b08553efde5",
+    "cad/components/pulley-outer-profile.json": "e582635a9b49f9810eee996177af2761edfe7928450dd86ef76d103ce8af53ec",
+    "cad/assembly/lower_support_mounts.py": "1b832dcc91967eab3dcfe40abc585ef1137250fb4e6777b01075a79ebcb1b14d",
+    "cad/assembly/upper_carriage_connections.py": "bbfbdf8b8c5f9356b5f60a3b4ad3d2d94c7f4e8a76db0e64742618173c936032",
+    "cad/assembly/build_connected_candidate.py": "19356d26a59b7b22a9a4eaed106c9cfd5d9f57774d682e0bd100711348a5ea69",
+    "cad/assembly/slide_pad_attachments.py": "526310777f96f0f537844946c611b05f7e7dc80119a75d308f043832aa7ed7ef",
+    "cad/assembly/audit_floor_entry.py": "84454ca13c79c4dcd604f0fba64f4a511bf009ffd330b58d895cd1388b7abddd",
+    "cad/assembly/audit_cartridge_interfaces.py": "44e8edfcecfd3afd38c8ed91ea153654d4bffe2579096dafd533d318e02af21f"
+  },
+  "assemblyPartCount": 711,
+  "rows": [
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 0,
+      "centerRobotMm": [
+        658,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 10,
+      "centerRobotMm": [
+        648,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 20,
+      "centerRobotMm": [
+        638,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 30,
+      "centerRobotMm": [
+        628,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 40,
+      "centerRobotMm": [
+        618,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 50,
+      "centerRobotMm": [
+        608,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 60,
+      "centerRobotMm": [
+        598,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 70,
+      "centerRobotMm": [
+        588,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 80,
+      "centerRobotMm": [
+        578,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 90,
+      "centerRobotMm": [
+        568,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 100,
+      "centerRobotMm": [
+        558,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 110,
+      "centerRobotMm": [
+        548,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 120,
+      "centerRobotMm": [
+        538,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 130,
+      "centerRobotMm": [
+        528,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 140,
+      "centerRobotMm": [
+        518,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 150,
+      "centerRobotMm": [
+        508,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 160,
+      "centerRobotMm": [
+        498,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 170,
+      "centerRobotMm": [
+        488,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 180,
+      "centerRobotMm": [
+        478,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 190,
+      "centerRobotMm": [
+        468,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 200,
+      "centerRobotMm": [
+        458,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 210,
+      "centerRobotMm": [
+        448,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 220,
+      "centerRobotMm": [
+        438,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 230,
+      "centerRobotMm": [
+        428,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 240,
+      "centerRobotMm": [
+        418,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 250,
+      "centerRobotMm": [
+        408,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 260,
+      "centerRobotMm": [
+        398,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 270,
+      "centerRobotMm": [
+        388,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 280,
+      "centerRobotMm": [
+        378,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 290,
+      "centerRobotMm": [
+        368,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 300,
+      "centerRobotMm": [
+        358,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 310,
+      "centerRobotMm": [
+        348,
+        0,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 320,
+      "centerRobotMm": [
+        338,
+        0,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 8.379831530484452,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 8.379731081432558,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 330,
+      "centerRobotMm": [
+        328,
+        0,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 72.00060535189408,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 71.99566598384206,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 340,
+      "centerRobotMm": [
+        318,
+        0,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 139.15514836095593,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 139.14616209804845,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 350,
+      "centerRobotMm": [
+        308,
+        0,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 161.555617634881,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 161.54368781428522,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 360,
+      "centerRobotMm": [
+        298,
+        0,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 161.62319053036228,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 161.62319053036614,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 370,
+      "centerRobotMm": [
+        288,
+        0,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 161.62319053036225,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 161.62319053036822,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 380,
+      "centerRobotMm": [
+        278,
+        0,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 161.62319053036236,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 161.6231905303669,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 390,
+      "centerRobotMm": [
+        268,
+        0,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 161.62319053036265,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 161.62319053036742,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 400,
+      "centerRobotMm": [
+        258,
+        0,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 161.62319053036157,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 161.6231905303669,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 410,
+      "centerRobotMm": [
+        248,
+        0,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 161.62319053036103,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 161.62319053036714,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 420,
+      "centerRobotMm": [
+        238,
+        0,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 161.62319053036111,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 161.62319053036708,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 430,
+      "centerRobotMm": [
+        228,
+        0,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 161.62319053036106,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 161.62319053036694,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 440,
+      "centerRobotMm": [
+        218,
+        0,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 161.62319053036094,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 161.62319053036686,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 450,
+      "centerRobotMm": [
+        208,
+        0,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 161.6231905303632,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 161.6231905303668,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 460,
+      "centerRobotMm": [
+        198,
+        0,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 161.6231905303632,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 161.6231905303668,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 470,
+      "centerRobotMm": [
+        188,
+        0,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 161.6231905303631,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 161.6231905303668,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 0,
+      "advanceMm": 480,
+      "centerRobotMm": [
+        178,
+        0,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 161.6231905303632,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 161.6231905303668,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 0,
+      "centerRobotMm": [
+        658,
+        -5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 10,
+      "centerRobotMm": [
+        648,
+        -5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 20,
+      "centerRobotMm": [
+        638,
+        -5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 30,
+      "centerRobotMm": [
+        628,
+        -5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 40,
+      "centerRobotMm": [
+        618,
+        -5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 50,
+      "centerRobotMm": [
+        608,
+        -5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 60,
+      "centerRobotMm": [
+        598,
+        -5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 70,
+      "centerRobotMm": [
+        588,
+        -5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 80,
+      "centerRobotMm": [
+        578,
+        -5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 90,
+      "centerRobotMm": [
+        568,
+        -5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 100,
+      "centerRobotMm": [
+        558,
+        -5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 110,
+      "centerRobotMm": [
+        548,
+        -5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 120,
+      "centerRobotMm": [
+        538,
+        -5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 130,
+      "centerRobotMm": [
+        528,
+        -5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 140,
+      "centerRobotMm": [
+        518,
+        -5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 150,
+      "centerRobotMm": [
+        508,
+        -5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 160,
+      "centerRobotMm": [
+        498,
+        -5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 170,
+      "centerRobotMm": [
+        488,
+        -5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 180,
+      "centerRobotMm": [
+        478,
+        -5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 190,
+      "centerRobotMm": [
+        468,
+        -5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 200,
+      "centerRobotMm": [
+        458,
+        -5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 210,
+      "centerRobotMm": [
+        448,
+        -5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 220,
+      "centerRobotMm": [
+        438,
+        -5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 230,
+      "centerRobotMm": [
+        428,
+        -5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 240,
+      "centerRobotMm": [
+        418,
+        -5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 250,
+      "centerRobotMm": [
+        408,
+        -5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 260,
+      "centerRobotMm": [
+        398,
+        -5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 270,
+      "centerRobotMm": [
+        388,
+        -5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 280,
+      "centerRobotMm": [
+        378,
+        -5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 290,
+      "centerRobotMm": [
+        368,
+        -5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 29.325356710040523,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 300,
+      "centerRobotMm": [
+        358,
+        -5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 360.2231147120652,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate 12T track pulley outer-profile representation (-1, 146.05)",
+          "overlapMm3": 189.85973969036394,
+          "contactGroup": "unresolved"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 310,
+      "centerRobotMm": [
+        348,
+        -5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 666.4426137854745,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate 12T track pulley outer-profile representation (-1, 146.05)",
+          "overlapMm3": 574.4976037425646,
+          "contactGroup": "unresolved"
+        },
+        {
+          "name": "intake candidate bearing representation (-1, 146.05)-18.4",
+          "overlapMm3": 0.4234650190402163,
+          "contactGroup": "unresolved"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 320,
+      "centerRobotMm": [
+        338,
+        -5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 939.9790828892976,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate 12T track pulley outer-profile representation (-1, 146.05)",
+          "overlapMm3": 889.3190921062369,
+          "contactGroup": "unresolved"
+        },
+        {
+          "name": "intake candidate bearing representation (-1, 146.05)-18.4",
+          "overlapMm3": 8.601174340956593,
+          "contactGroup": "unresolved"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 330,
+      "centerRobotMm": [
+        328,
+        -5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 1193.1296365361527,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate 12T track pulley outer-profile representation (-1, 146.05)",
+          "overlapMm3": 1051.7982194242954,
+          "contactGroup": "unresolved"
+        },
+        {
+          "name": "intake candidate bearing representation (-1, 146.05)-18.4",
+          "overlapMm3": 17.34179917310809,
+          "contactGroup": "unresolved"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 340,
+      "centerRobotMm": [
+        318,
+        -5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 1428.6736201951649,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate 12T track pulley outer-profile representation (-1, 146.05)",
+          "overlapMm3": 1032.3187843661437,
+          "contactGroup": "unresolved"
+        },
+        {
+          "name": "intake candidate bearing representation (-1, 146.05)-18.4",
+          "overlapMm3": 16.131515557516536,
+          "contactGroup": "unresolved"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 350,
+      "centerRobotMm": [
+        308,
+        -5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 1646.4436026922126,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate 12T track pulley outer-profile representation (-1, 146.05)",
+          "overlapMm3": 834.1240100302671,
+          "contactGroup": "unresolved"
+        },
+        {
+          "name": "intake candidate bearing representation (-1, 146.05)-18.4",
+          "overlapMm3": 6.3378358923044615,
+          "contactGroup": "unresolved"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 360,
+      "centerRobotMm": [
+        298,
+        -5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 1842.8803000080834,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate 12T track pulley outer-profile representation (-1, 146.05)",
+          "overlapMm3": 495.1865384402911,
+          "contactGroup": "unresolved"
+        },
+        {
+          "name": "intake candidate bearing representation (-1, 146.05)-18.4",
+          "overlapMm3": 0.028687707855113494,
+          "contactGroup": "unresolved"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 370,
+      "centerRobotMm": [
+        288,
+        -5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 1999.4107341109982,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate 12T track pulley outer-profile representation (-1, 146.05)",
+          "overlapMm3": 116.82854190967906,
+          "contactGroup": "unresolved"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 380,
+      "centerRobotMm": [
+        278,
+        -5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 2037.1411969105638,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 390,
+      "centerRobotMm": [
+        268,
+        -5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 2037.1411969105684,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 400,
+      "centerRobotMm": [
+        258,
+        -5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 2037.1411969105693,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 410,
+      "centerRobotMm": [
+        248,
+        -5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 2037.1411969105673,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 420,
+      "centerRobotMm": [
+        238,
+        -5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 2037.1411969105704,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 430,
+      "centerRobotMm": [
+        228,
+        -5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 2037.1411969105727,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 440,
+      "centerRobotMm": [
+        218,
+        -5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 2037.1411969105702,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 450,
+      "centerRobotMm": [
+        208,
+        -5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 2037.1411969105698,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 460,
+      "centerRobotMm": [
+        198,
+        -5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 2024.595281313426,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate 12T track pulley outer-profile representation (-1, -19.049999999999997)",
+          "overlapMm3": 34.61392179968686,
+          "contactGroup": "unresolved"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 470,
+      "centerRobotMm": [
+        188,
+        -5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 1896.0511983756087,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate 12T track pulley outer-profile representation (-1, -19.049999999999997)",
+          "overlapMm3": 378.2494836344223,
+          "contactGroup": "unresolved"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": -5,
+      "advanceMm": 480,
+      "centerRobotMm": [
+        178,
+        -5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt -1",
+          "overlapMm3": 1707.923923419728,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate 12T track pulley outer-profile representation (-1, -19.049999999999997)",
+          "overlapMm3": 744.3221411328916,
+          "contactGroup": "unresolved"
+        },
+        {
+          "name": "intake candidate bearing representation (-1, -19.049999999999997)-18.4",
+          "overlapMm3": 3.421468826338395,
+          "contactGroup": "unresolved"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 0,
+      "centerRobotMm": [
+        658,
+        5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 10,
+      "centerRobotMm": [
+        648,
+        5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 20,
+      "centerRobotMm": [
+        638,
+        5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 30,
+      "centerRobotMm": [
+        628,
+        5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 40,
+      "centerRobotMm": [
+        618,
+        5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 50,
+      "centerRobotMm": [
+        608,
+        5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 60,
+      "centerRobotMm": [
+        598,
+        5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 70,
+      "centerRobotMm": [
+        588,
+        5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 80,
+      "centerRobotMm": [
+        578,
+        5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 90,
+      "centerRobotMm": [
+        568,
+        5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 100,
+      "centerRobotMm": [
+        558,
+        5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 110,
+      "centerRobotMm": [
+        548,
+        5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 120,
+      "centerRobotMm": [
+        538,
+        5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 130,
+      "centerRobotMm": [
+        528,
+        5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 140,
+      "centerRobotMm": [
+        518,
+        5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 150,
+      "centerRobotMm": [
+        508,
+        5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 160,
+      "centerRobotMm": [
+        498,
+        5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 170,
+      "centerRobotMm": [
+        488,
+        5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 180,
+      "centerRobotMm": [
+        478,
+        5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 190,
+      "centerRobotMm": [
+        468,
+        5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 200,
+      "centerRobotMm": [
+        458,
+        5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 210,
+      "centerRobotMm": [
+        448,
+        5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 220,
+      "centerRobotMm": [
+        438,
+        5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 230,
+      "centerRobotMm": [
+        428,
+        5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 240,
+      "centerRobotMm": [
+        418,
+        5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 250,
+      "centerRobotMm": [
+        408,
+        5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 260,
+      "centerRobotMm": [
+        398,
+        5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 270,
+      "centerRobotMm": [
+        388,
+        5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 280,
+      "centerRobotMm": [
+        378,
+        5,
+        25.4
+      ],
+      "hits": []
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 290,
+      "centerRobotMm": [
+        368,
+        5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 29.325077635654555,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 300,
+      "centerRobotMm": [
+        358,
+        5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 360.2242802351554,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate 12T track pulley outer-profile representation (1, 146.05)",
+          "overlapMm3": 189.85973969036186,
+          "contactGroup": "unresolved"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 310,
+      "centerRobotMm": [
+        348,
+        5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 666.4412170322314,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate 12T track pulley outer-profile representation (1, 146.05)",
+          "overlapMm3": 574.4976037425579,
+          "contactGroup": "unresolved"
+        },
+        {
+          "name": "intake candidate bearing representation (1, 146.05)-18.4",
+          "overlapMm3": 0.42346501904018347,
+          "contactGroup": "unresolved"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 320,
+      "centerRobotMm": [
+        338,
+        5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 939.9770172604515,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate 12T track pulley outer-profile representation (1, 146.05)",
+          "overlapMm3": 889.3190921062372,
+          "contactGroup": "unresolved"
+        },
+        {
+          "name": "intake candidate bearing representation (1, 146.05)-18.4",
+          "overlapMm3": 8.601174340958048,
+          "contactGroup": "unresolved"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 330,
+      "centerRobotMm": [
+        328,
+        5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 1193.1267032034239,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate 12T track pulley outer-profile representation (1, 146.05)",
+          "overlapMm3": 1051.7982194242907,
+          "contactGroup": "unresolved"
+        },
+        {
+          "name": "intake candidate bearing representation (1, 146.05)-18.4",
+          "overlapMm3": 17.34179917310794,
+          "contactGroup": "unresolved"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 340,
+      "centerRobotMm": [
+        318,
+        5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 1428.6696461220004,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate 12T track pulley outer-profile representation (1, 146.05)",
+          "overlapMm3": 1032.3187843661426,
+          "contactGroup": "unresolved"
+        },
+        {
+          "name": "intake candidate bearing representation (1, 146.05)-18.4",
+          "overlapMm3": 16.13151555751909,
+          "contactGroup": "unresolved"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 350,
+      "centerRobotMm": [
+        308,
+        5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 1646.4384505065786,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate 12T track pulley outer-profile representation (1, 146.05)",
+          "overlapMm3": 834.1240100302731,
+          "contactGroup": "unresolved"
+        },
+        {
+          "name": "intake candidate bearing representation (1, 146.05)-18.4",
+          "overlapMm3": 6.337835892305016,
+          "contactGroup": "unresolved"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 360,
+      "centerRobotMm": [
+        298,
+        5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 1842.8738937192786,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate 12T track pulley outer-profile representation (1, 146.05)",
+          "overlapMm3": 495.1865384402902,
+          "contactGroup": "unresolved"
+        },
+        {
+          "name": "intake candidate bearing representation (1, 146.05)-18.4",
+          "overlapMm3": 0.028687707855118188,
+          "contactGroup": "unresolved"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 370,
+      "centerRobotMm": [
+        288,
+        5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 1999.4024348853857,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate 12T track pulley outer-profile representation (1, 146.05)",
+          "overlapMm3": 116.82854190970573,
+          "contactGroup": "unresolved"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 380,
+      "centerRobotMm": [
+        278,
+        5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 2037.1411969105689,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 390,
+      "centerRobotMm": [
+        268,
+        5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 2037.1411969105684,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 400,
+      "centerRobotMm": [
+        258,
+        5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 2037.141196910567,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 410,
+      "centerRobotMm": [
+        248,
+        5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 2037.1411969105734,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 420,
+      "centerRobotMm": [
+        238,
+        5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 2037.1411969105727,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 430,
+      "centerRobotMm": [
+        228,
+        5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 2037.1411969105707,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 440,
+      "centerRobotMm": [
+        218,
+        5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 2037.141196910561,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 450,
+      "centerRobotMm": [
+        208,
+        5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 2037.1411969105607,
+          "contactGroup": "pinch"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 460,
+      "centerRobotMm": [
+        198,
+        5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 2024.5993243532428,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate 12T track pulley outer-profile representation (1, -19.049999999999997)",
+          "overlapMm3": 34.614104534650835,
+          "contactGroup": "unresolved"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 470,
+      "centerRobotMm": [
+        188,
+        5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 1896.0579649728002,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate 12T track pulley outer-profile representation (1, -19.049999999999997)",
+          "overlapMm3": 378.24948363442365,
+          "contactGroup": "unresolved"
+        }
+      ]
+    },
+    {
+      "lateralOffsetMm": 5,
+      "advanceMm": 480,
+      "centerRobotMm": [
+        178,
+        5,
+        25.4
+      ],
+      "hits": [
+        {
+          "name": "intake candidate side pinch belt 1",
+          "overlapMm3": 1707.9294490157179,
+          "contactGroup": "pinch"
+        },
+        {
+          "name": "intake candidate 12T track pulley outer-profile representation (1, -19.049999999999997)",
+          "overlapMm3": 744.3221411328968,
+          "contactGroup": "unresolved"
+        },
+        {
+          "name": "intake candidate bearing representation (1, -19.049999999999997)-18.4",
+          "overlapMm3": 3.4214688263385975,
+          "contactGroup": "unresolved"
+        }
+      ]
+    }
+  ],
+  "acceptance": false,
+  "limits": [
+    "Fixed floor-pose robot and rigid flat ground-tangent NOTE translated inward; not free-body capture simulation",
+    "10mm steps and three lateral offsets only, not continuous or manufacturing tolerance clearance",
+    "Side-belt occupancy is intended contact hypothesis, not traction, friction, force or retention validation",
+    "Other source-sized envelopes may overbound native material; unresolved hits retained",
+    "No vehicle motion, ground friction, yaw, pitch, impact, retention during rotation/lift or sensor acquisition modeled"
+  ]
+}

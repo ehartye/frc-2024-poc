@@ -1,0 +1,38 @@
+{
+  "schema": "pdh-native-mount/1",
+  "sourceUrl": "https://www.revrobotics.com/content/cad/REV-11-1850.STEP",
+  "stepSha256": "bb14d12b33e8b21bb49f85166f9fb55e358d3044f85580321a291e3a7b9a1fa9",
+  "brepSha256": "26aafeaa415deee5e165a1731a302e288bf86cf0c4cf1202dcea8d10b0a4495b",
+  "nativeBoundsMm": [
+    -56.36249592447267,
+    -1.0000004440892098e-07,
+    -112.71250010000003,
+    56.36266217143879,
+    39.72179010000058,
+    114.41250233573057
+  ],
+  "robotTransform": "X=nativeZ-200.85,Y=nativeX+230,Z=nativeY+168.115",
+  "holeDiameterMm": 5.0,
+  "mountEarThicknessMm": 6.35,
+  "worldHoleCentersXY": [
+    [
+      -308.8,
+      179.2
+    ],
+    [
+      -308.8,
+      280.8
+    ],
+    [
+      -92.9,
+      179.2
+    ],
+    [
+      -92.9,
+      280.8
+    ]
+  ],
+  "worldSeatZ": 174.465,
+  "drawingUrl": "https://revrobotics.ca/content/docs/REV-11-1850-DR.pdf",
+  "limitation": "Native nominal bore/seat evidence; no hardware preload or tolerance qualification"
+}

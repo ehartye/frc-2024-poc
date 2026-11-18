@@ -1,0 +1,35 @@
+{
+  "schema": "native-signed-atomic-rejection/1",
+  "passed": true,
+  "rows": [
+    {
+      "case": "duty-range",
+      "rejected": true,
+      "reason": "pinch duties",
+      "physicalMutation": false
+    },
+    {
+      "case": "nonfinite-duty",
+      "rejected": true,
+      "reason": "pinch duties",
+      "physicalMutation": false
+    },
+    {
+      "case": "floor-corridor",
+      "rejected": true,
+      "reason": "NATIVE_SAMPLED_FLOOR_CORRIDOR_EXIT",
+      "physicalMutation": false
+    },
+    {
+      "case": "nonplanar-yaw",
+      "rejected": true,
+      "reason": "NATIVE_SAMPLED_FLOOR_CORRIDOR_EXIT",
+      "physicalMutation": false
+    }
+  ],
+  "acceptance": false,
+  "scriptSha256": "278179b622910476873f243482145f7710bce3a914cc82189920aba6a15a6b10",
+  "limits": [
+    "Prescribed invalid input/state diagnostics; not attained physical states"
+  ]
+}
