@@ -15,6 +15,8 @@ Baseline: `c23ed8447d4cbbbd475103208a66ab1bb314b9cc`, descended from viewer chec
 
 The sanitized [receipt summary](evidence/native-route-gate-20261118.json) binds the full private receipt and executed script. Private raw native inventories, archive, diagnostic scripts, images and receipts remain outside public source. The prior 13 inherited broad-suite failures have not been repaired or relabeled.
 
+A separate private OCP 8.0.1 source-geometry diagnostic checked the two peak-envelope NOTE centers against the preserved three-solid supplier pulley at one assumed orientation and the configured shaft centers. Both had positive overlap, with maximum approximately 0.353 mm3. Four independent analytic bounds controls checked NOTE placement. Actual installed supplier geometry/phase registration remains unknown; these are hypothetical diagnostic placements, not native assembly acceptance or a calibrated force model. A larger optional phase sweep was cancelled incomplete and supplies no result.
+
 ## Reproduce the native witnesses
 
 `../../cad/native/native_route_scan.py` is a Fusion Python entrypoint, not ordinary CPython simulation. Through an already authorized official Fusion MCP session, reopen the exact archive into a separate owned document and mark its root with an `frcAudit/job` attribute. Do not edit or replace the source archive. Prepare `CONFIG` before dispatch with:

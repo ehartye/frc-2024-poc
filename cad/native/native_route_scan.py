@@ -110,4 +110,3 @@ def run(context):
     assert digest(CONFIG['archive'])==CONFIG['archiveSha256'] and digest(CONFIG['manifest'])==CONFIG['manifestSha256']
     save()
     print(json.dumps({k:result[k] for k in ['complete','verdict','unresolvedHitRows','booleanPairs','seconds']}))
-

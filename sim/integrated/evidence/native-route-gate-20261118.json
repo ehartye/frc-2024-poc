@@ -5,9 +5,9 @@
   "acceptance": false,
   "nativeArchiveSha256": "24de65755a396d1e371112c65eb9a44a32884c122bf1e4387fd172645ea45423",
   "visualManifestSha256": "05f8faac0fc1e3554c801c5a83d4dc4b3bdd3fb9a356e9a5a9e0c92a8f04d767",
-  "privateReceiptSha256": "6c26b30af9467832f2a7bc6c8f21a5e883e8e07958c676ad13755a23b35388f4",
-  "nativeScriptSha256": "7dad1dc08b6da5b858ffd617a7f38e697e7c8607cef155c98675d08a4cefeb6c",
-  "configurationSha256": "d33563415825dd539400c76a09e40e555b775e1ef7171bfc3086f15d443da104",
+  "privateReceiptSha256": "11784e781b0272d9d08b1ec31c9148f9016ea235e8662a66ae5b766bff78f9dd",
+  "nativeScriptSha256": "eb830d95c453753729287b61ec64d475edfb3980b0f8c1d972186ca0f62ab92e",
+  "configurationSha256": "adaa6169597b384c4e90486c1f689aed1a61e091fd1f030059f03ee67058229e",
   "nativeVersion": "2706.1.17",
   "bodyCount": 732,
   "physicalBodyCount": 710,
@@ -83,7 +83,7 @@
     "tubeRadiusMm": 25.4,
     "rotation": "flat axis +Z only"
   },
-  "nativeSeconds": 15.31184370000119,
+  "nativeSeconds": 18.685859600002004,
   "classification": "Overlaps are with original cylindrical-band pulley outer-profile representations; supplier material/phase contact has not been established. Do not accept clearance or reject the real mechanism from this envelope result.",
   "nextGate": "Inspect private source pulley at registered phase and source-bound transforms, or retain unsupported contact. Do not omit pulley contact or tune belt preload to bypass it.",
   "notPerformed": [
@@ -92,5 +92,16 @@
     "new interactive GUI verification",
     "supplier CAD publication",
     "robot hardware operation"
-  ]
+  ],
+  "supplierDiagnostic": {
+    "receiptSha256": "43040943be11a213fe2f6e0e76275225563fdf2a1184acab8e38de71762826a6",
+    "sourceSha256": "c2825524b2293af12647d92ad57e9162379ad64105b86f867be2223037059c68",
+    "kernel": "OCP 8.0.1.0",
+    "witnessCount": 2,
+    "positiveWitnesses": 2,
+    "maxOverlapMm3": 0.3528994466635677,
+    "phaseRegistration": "UNREGISTERED source orientation at configured shaft center; not actual assembly phase",
+    "scope": "Two NOTE centers at X324, Y+/-0.5, Z25.4 mm; one assumed source orientation each. Full phase sweep was cancelled incomplete; this is not its replacement acceptance.",
+    "acceptance": false
+  }
 }
