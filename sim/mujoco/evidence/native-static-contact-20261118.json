@@ -1,0 +1,985 @@
+{
+  "schema": "native-static-contact-controls/1",
+  "allChecksPassed": true,
+  "acceptance": false,
+  "analyticFreefallPositionErrorM": 2.220446049250313e-16,
+  "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "sourceReceiptSha256": "b76ed965b6e744cafbd422761ccadee03c51b45c810feab1d22c895730d7e803",
+  "sourceConfigSha256": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+  "executedScriptSha256": "9eecd25f9564320c8e17b789fa132747b405a3fa4db3ae0cae0af518f07a2d7d",
+  "runs": {
+    "pilot": {
+      "schema": "native-static-contact-comparison/1",
+      "complete": true,
+      "status": "HORIZON",
+      "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+      "sourceReceiptSha256": "b76ed965b6e744cafbd422761ccadee03c51b45c810feab1d22c895730d7e803",
+      "sourceConfigSha256": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+      "scriptSha256": "9eecd25f9564320c8e17b789fa132747b405a3fa4db3ae0cae0af518f07a2d7d",
+      "mujocoVersion": "4.0.1",
+      "parameters": {
+        "segments": 128,
+        "dtS": 0.0002,
+        "mu": 0.6,
+        "noslipIterations": 20,
+        "initialVzMps": 0.0,
+        "noContactControl": false,
+        "fittedStiffness": 158.5198855981308,
+        "impedance": 0.9,
+        "initialNormalForceTargetPerSideN": 3.7648484524298866,
+        "matchedGravityFreeNormalN": [
+          3.764848452429901,
+          3.76484845242987
+        ],
+        "torusApproximationMaxSagittaMm": 0.04590003069847231
+      },
+      "steps": 5001,
+      "final": {
+        "step": 5000,
+        "timeS": 0.9999999999999225,
+        "qpos": [
+          0.185,
+          1.3869331215414162e-17,
+          0.29999999972294983,
+          0.9999999999969648,
+          -2.0828030680487292e-07,
+          2.4550975433379493e-06,
+          6.635825306133324e-14
+        ],
+        "qvel": [
+          -5.180383597051175e-16,
+          -1.2047100905506737e-18,
+          -2.898865648859544e-10,
+          -4.3573405248853724e-07,
+          5.136201389988254e-06,
+          2.8740999117730894e-13
+        ],
+        "normalN": [
+          3.764848452380437,
+          3.7648484523804373
+        ],
+        "forceWorldN": [
+          -1.4161169032483876e-16,
+          -2.220446049250313e-16,
+          2.3045627500000094
+        ],
+        "momentWorldNm": [
+          1.7408297026122455e-13,
+          -2.0518597671631555e-12,
+          1.7373255611907723e-15
+        ],
+        "contacts": 20,
+        "maxFrictionConeExcessN": 0.0
+      },
+      "maxAbsVerticalDisplacementM": 2.7705016059087484e-10,
+      "maxXYDisplacementM": 1.3947155487263722e-17,
+      "maxRotationRad": 4.927667786711479e-06,
+      "maxFrictionConeExcessN": 0.0,
+      "warningCounts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seconds": 3.9243660000029195,
+      "traceSha256": "bebd9fc38f816aaac8a40a3ceba8f29e15be016539da886ce13364779a8ec0e7",
+      "acceptance": false,
+      "limits": [
+        "Built-in MuJoCo contact formulation comparison, not the original finite-area law or hardware calibration",
+        "Normal stiffness fits the prior uncalibrated initial force hypothesis with gravity/friction off; no retention-outcome tuning",
+        "Only two native straight inner belt faces; NOTE torus is a finite capsule-chain approximation with stated sagitta",
+        "Stationary fixture with no floor, initially staged NOTE; no acquisition, drive, lift, launcher or motor simulation",
+        "Free six-DOF NOTE, no equality constraint, actuator, attachment or state overwrite after initialization",
+        "Stop outside 1 mm XY/0.01 rad straight-fixture domain; no claim for curved wrap or other native hard parts"
+      ]
+    },
+    "half-step": {
+      "schema": "native-static-contact-comparison/1",
+      "complete": true,
+      "status": "HORIZON",
+      "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+      "sourceReceiptSha256": "b76ed965b6e744cafbd422761ccadee03c51b45c810feab1d22c895730d7e803",
+      "sourceConfigSha256": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+      "scriptSha256": "9eecd25f9564320c8e17b789fa132747b405a3fa4db3ae0cae0af518f07a2d7d",
+      "mujocoVersion": "4.0.1",
+      "parameters": {
+        "segments": 128,
+        "dtS": 0.0001,
+        "mu": 0.6,
+        "noslipIterations": 20,
+        "initialVzMps": 0.0,
+        "noContactControl": false,
+        "fittedStiffness": 158.5198855981308,
+        "impedance": 0.9,
+        "initialNormalForceTargetPerSideN": 3.7648484524298866,
+        "matchedGravityFreeNormalN": [
+          3.764848452429901,
+          3.76484845242987
+        ],
+        "torusApproximationMaxSagittaMm": 0.04590003069847231
+      },
+      "steps": 10001,
+      "final": {
+        "step": 10000,
+        "timeS": 0.9999999999999062,
+        "qpos": [
+          0.185,
+          1.385750615911349e-17,
+          0.299999999722977,
+          0.9999999999969642,
+          -2.0825852136709772e-07,
+          2.4548407482264523e-06,
+          6.633727543825048e-14
+        ],
+        "qvel": [
+          -5.179555471462843e-16,
+          -2.9645316934140495e-18,
+          -2.898865682610465e-10,
+          -4.357340586047695e-07,
+          5.1362014625635095e-06,
+          2.87376661442579e-13
+        ],
+        "normalN": [
+          3.7648484523791086,
+          3.764848452379108
+        ],
+        "forceWorldN": [
+          -1.2759905487763753e-16,
+          6.106226635438361e-16,
+          2.3045627500000085
+        ],
+        "momentWorldNm": [
+          1.7407256192036868e-13,
+          -2.05188795641964e-12,
+          1.742963412487697e-15
+        ],
+        "contacts": 20,
+        "maxFrictionConeExcessN": 0.0
+      },
+      "maxAbsVerticalDisplacementM": 2.7702301563792275e-10,
+      "maxXYDisplacementM": 1.392309789919071e-17,
+      "maxRotationRad": 4.9281183740138094e-06,
+      "maxFrictionConeExcessN": 0.0,
+      "warningCounts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seconds": 9.124776799999381,
+      "traceSha256": "461bd8a3941776364eb695b71b47fd5906f926da14ed3fb8fd933f8db9362749",
+      "acceptance": false,
+      "limits": [
+        "Built-in MuJoCo contact formulation comparison, not the original finite-area law or hardware calibration",
+        "Normal stiffness fits the prior uncalibrated initial force hypothesis with gravity/friction off; no retention-outcome tuning",
+        "Only two native straight inner belt faces; NOTE torus is a finite capsule-chain approximation with stated sagitta",
+        "Stationary fixture with no floor, initially staged NOTE; no acquisition, drive, lift, launcher or motor simulation",
+        "Free six-DOF NOTE, no equality constraint, actuator, attachment or state overwrite after initialization",
+        "Stop outside 1 mm XY/0.01 rad straight-fixture domain; no claim for curved wrap or other native hard parts"
+      ]
+    },
+    "finer-torus": {
+      "schema": "native-static-contact-comparison/1",
+      "complete": true,
+      "status": "HORIZON",
+      "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+      "sourceReceiptSha256": "b76ed965b6e744cafbd422761ccadee03c51b45c810feab1d22c895730d7e803",
+      "sourceConfigSha256": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+      "scriptSha256": "9eecd25f9564320c8e17b789fa132747b405a3fa4db3ae0cae0af518f07a2d7d",
+      "mujocoVersion": "4.0.1",
+      "parameters": {
+        "segments": 256,
+        "dtS": 0.0002,
+        "mu": 0.6,
+        "noslipIterations": 20,
+        "initialVzMps": 0.0,
+        "noContactControl": false,
+        "fittedStiffness": 79.24002611343197,
+        "impedance": 0.9,
+        "initialNormalForceTargetPerSideN": 3.7648484524298866,
+        "matchedGravityFreeNormalN": [
+          3.7648484524298973,
+          3.7648484524298764
+        ],
+        "torusApproximationMaxSagittaMm": 0.011475439714377745
+      },
+      "steps": 5001,
+      "final": {
+        "step": 5000,
+        "timeS": 0.9999999999999225,
+        "qpos": [
+          0.185,
+          -1.905649208544898e-11,
+          0.2999999922299283,
+          0.999999999998108,
+          -1.8564879752102148e-07,
+          1.9365172449041656e-06,
+          8.09640106365952e-14
+        ],
+        "qvel": [
+          -1.021244732301929e-15,
+          -6.175537003166206e-11,
+          -8.114484954546652e-09,
+          -3.907914101836898e-07,
+          4.0806282701201235e-06,
+          3.5945462225245193e-13
+        ],
+        "normalN": [
+          3.8185661026303808,
+          3.8185661025810265
+        ],
+        "forceWorldN": [
+          -2.6698244978491925e-16,
+          4.9354076381291634e-11,
+          2.3045627500002954
+        ],
+        "momentWorldNm": [
+          1.719015554901837e-13,
+          -1.7942457415653923e-12,
+          2.224566017505758e-15
+        ],
+        "contacts": 44,
+        "maxFrictionConeExcessN": 1.457167719820518e-16
+      },
+      "maxAbsVerticalDisplacementM": 7.770071697166259e-09,
+      "maxXYDisplacementM": 9.024510313661665e-10,
+      "maxRotationRad": 3.890544515685987e-06,
+      "maxFrictionConeExcessN": 1.2420620087993939e-15,
+      "warningCounts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seconds": 9.381201199998031,
+      "traceSha256": "6b84efa5fb8bfdaf95bc5b6b160a3b09e02a9394bd5e907ff62d31856bdbe4e2",
+      "acceptance": false,
+      "limits": [
+        "Built-in MuJoCo contact formulation comparison, not the original finite-area law or hardware calibration",
+        "Normal stiffness fits the prior uncalibrated initial force hypothesis with gravity/friction off; no retention-outcome tuning",
+        "Only two native straight inner belt faces; NOTE torus is a finite capsule-chain approximation with stated sagitta",
+        "Stationary fixture with no floor, initially staged NOTE; no acquisition, drive, lift, launcher or motor simulation",
+        "Free six-DOF NOTE, no equality constraint, actuator, attachment or state overwrite after initialization",
+        "Stop outside 1 mm XY/0.01 rad straight-fixture domain; no claim for curved wrap or other native hard parts"
+      ]
+    },
+    "freefall": {
+      "schema": "native-static-contact-comparison/1",
+      "complete": true,
+      "status": "DROPPED_50MM",
+      "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+      "sourceReceiptSha256": "b76ed965b6e744cafbd422761ccadee03c51b45c810feab1d22c895730d7e803",
+      "sourceConfigSha256": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+      "scriptSha256": "9eecd25f9564320c8e17b789fa132747b405a3fa4db3ae0cae0af518f07a2d7d",
+      "mujocoVersion": "4.0.1",
+      "parameters": {
+        "segments": 128,
+        "dtS": 0.0002,
+        "mu": 0.6,
+        "noslipIterations": 20,
+        "initialVzMps": 0.0,
+        "noContactControl": true,
+        "fittedStiffness": 158.5198855981308,
+        "impedance": 0.9,
+        "initialNormalForceTargetPerSideN": 3.7648484524298866,
+        "matchedGravityFreeNormalN": [
+          3.764848452429901,
+          3.76484845242987
+        ],
+        "torusApproximationMaxSagittaMm": 0.04590003069847231
+      },
+      "steps": 506,
+      "final": {
+        "step": 505,
+        "timeS": 0.10100000000000084,
+        "qpos": [
+          0.185,
+          0.0,
+          0.2498821345100002,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "qvel": [
+          0.0,
+          0.0,
+          -0.9904716499999944,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "normalN": [
+          0.0,
+          0.0
+        ],
+        "forceWorldN": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "momentWorldNm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "contacts": 0,
+        "maxFrictionConeExcessN": 0.0
+      },
+      "maxAbsVerticalDisplacementM": 0.0501178654899998,
+      "maxXYDisplacementM": 0.0,
+      "maxRotationRad": 0.0,
+      "maxFrictionConeExcessN": 0.0,
+      "warningCounts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seconds": 0.026468500000191852,
+      "traceSha256": "548373547420db6f11583de0fd4f842ac3f737088bc524302bd79b63b66aae56",
+      "acceptance": false,
+      "limits": [
+        "Built-in MuJoCo contact formulation comparison, not the original finite-area law or hardware calibration",
+        "Normal stiffness fits the prior uncalibrated initial force hypothesis with gravity/friction off; no retention-outcome tuning",
+        "Only two native straight inner belt faces; NOTE torus is a finite capsule-chain approximation with stated sagitta",
+        "Stationary fixture with no floor, initially staged NOTE; no acquisition, drive, lift, launcher or motor simulation",
+        "Free six-DOF NOTE, no equality constraint, actuator, attachment or state overwrite after initialization",
+        "Stop outside 1 mm XY/0.01 rad straight-fixture domain; no claim for curved wrap or other native hard parts"
+      ]
+    },
+    "low-friction": {
+      "schema": "native-static-contact-comparison/1",
+      "complete": true,
+      "status": "DROPPED_50MM",
+      "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+      "sourceReceiptSha256": "b76ed965b6e744cafbd422761ccadee03c51b45c810feab1d22c895730d7e803",
+      "sourceConfigSha256": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+      "scriptSha256": "9eecd25f9564320c8e17b789fa132747b405a3fa4db3ae0cae0af518f07a2d7d",
+      "mujocoVersion": "4.0.1",
+      "parameters": {
+        "segments": 128,
+        "dtS": 0.0002,
+        "mu": 0.1,
+        "noslipIterations": 20,
+        "initialVzMps": 0.0,
+        "noContactControl": false,
+        "fittedStiffness": 158.5198855981308,
+        "impedance": 0.9,
+        "initialNormalForceTargetPerSideN": 3.7648484524298866,
+        "matchedGravityFreeNormalN": [
+          3.764848452429901,
+          3.76484845242987
+        ],
+        "torusApproximationMaxSagittaMm": 0.04590003069847231
+      },
+      "steps": 929,
+      "final": {
+        "step": 928,
+        "timeS": 0.18560000000000326,
+        "qpos": [
+          0.185,
+          -1.3833847771973743e-17,
+          0.24997520468439705,
+          1.0,
+          1.0516960855253164e-16,
+          1.4776067544429998e-16,
+          5.1968926692024915e-18
+        ],
+        "qvel": [
+          -1.0865510622245876e-18,
+          1.4215218052243016e-16,
+          -0.9179403896037521,
+          1.7153585939904195e-15,
+          2.314884225424159e-15,
+          1.0959548276800016e-16
+        ],
+        "normalN": [
+          0.0,
+          0.0
+        ],
+        "forceWorldN": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "momentWorldNm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "contacts": 0,
+        "maxFrictionConeExcessN": 0.0
+      },
+      "maxAbsVerticalDisplacementM": 0.05002479531560294,
+      "maxXYDisplacementM": 2.802195355188617e-17,
+      "maxRotationRad": 0.0,
+      "maxFrictionConeExcessN": 2.7755575615628914e-17,
+      "warningCounts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seconds": 0.8504187999969872,
+      "traceSha256": "157d526a694331b3d893d9aa2c8a84f8af81a02d27965840b2456c0eae186513",
+      "acceptance": false,
+      "limits": [
+        "Built-in MuJoCo contact formulation comparison, not the original finite-area law or hardware calibration",
+        "Normal stiffness fits the prior uncalibrated initial force hypothesis with gravity/friction off; no retention-outcome tuning",
+        "Only two native straight inner belt faces; NOTE torus is a finite capsule-chain approximation with stated sagitta",
+        "Stationary fixture with no floor, initially staged NOTE; no acquisition, drive, lift, launcher or motor simulation",
+        "Free six-DOF NOTE, no equality constraint, actuator, attachment or state overwrite after initialization",
+        "Stop outside 1 mm XY/0.01 rad straight-fixture domain; no claim for curved wrap or other native hard parts"
+      ]
+    },
+    "zero-friction": {
+      "schema": "native-static-contact-comparison/1",
+      "complete": true,
+      "status": "DROPPED_50MM",
+      "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+      "sourceReceiptSha256": "b76ed965b6e744cafbd422761ccadee03c51b45c810feab1d22c895730d7e803",
+      "sourceConfigSha256": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+      "scriptSha256": "9eecd25f9564320c8e17b789fa132747b405a3fa4db3ae0cae0af518f07a2d7d",
+      "mujocoVersion": "4.0.1",
+      "parameters": {
+        "segments": 128,
+        "dtS": 0.0002,
+        "mu": 0.0,
+        "noslipIterations": 20,
+        "initialVzMps": 0.0,
+        "noContactControl": false,
+        "fittedStiffness": 158.5198855981308,
+        "impedance": 0.9,
+        "initialNormalForceTargetPerSideN": 3.7648484524298866,
+        "matchedGravityFreeNormalN": [
+          3.764848452429901,
+          3.76484845242987
+        ],
+        "torusApproximationMaxSagittaMm": 0.04590003069847231
+      },
+      "steps": 506,
+      "final": {
+        "step": 505,
+        "timeS": 0.10100000000000084,
+        "qpos": [
+          0.185,
+          8.161883601115502e-19,
+          0.24988066907334788,
+          1.0,
+          3.672101725200287e-17,
+          0.0,
+          0.0
+        ],
+        "qvel": [
+          1.7604199342620573e-28,
+          9.422534513891315e-18,
+          -0.9904975511665328,
+          -6.795812759033552e-20,
+          -1.5281776685735443e-19,
+          8.708358564971464e-16
+        ],
+        "normalN": [
+          0.0,
+          0.0
+        ],
+        "forceWorldN": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "momentWorldNm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "contacts": 0,
+        "maxFrictionConeExcessN": 0.0
+      },
+      "maxAbsVerticalDisplacementM": 0.050119330926652106,
+      "maxXYDisplacementM": 8.161883601115502e-19,
+      "maxRotationRad": 0.0,
+      "maxFrictionConeExcessN": 0.0,
+      "warningCounts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seconds": 0.29313050000200747,
+      "traceSha256": "0f7983cd191b3ca8f2909c33d1c642266de980c7b1f16b6b60e95c2dd5f127ed",
+      "acceptance": false,
+      "limits": [
+        "Built-in MuJoCo contact formulation comparison, not the original finite-area law or hardware calibration",
+        "Normal stiffness fits the prior uncalibrated initial force hypothesis with gravity/friction off; no retention-outcome tuning",
+        "Only two native straight inner belt faces; NOTE torus is a finite capsule-chain approximation with stated sagitta",
+        "Stationary fixture with no floor, initially staged NOTE; no acquisition, drive, lift, launcher or motor simulation",
+        "Free six-DOF NOTE, no equality constraint, actuator, attachment or state overwrite after initialization",
+        "Stop outside 1 mm XY/0.01 rad straight-fixture domain; no claim for curved wrap or other native hard parts"
+      ]
+    },
+    "downward-kick": {
+      "schema": "native-static-contact-comparison/1",
+      "complete": true,
+      "status": "HORIZON",
+      "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+      "sourceReceiptSha256": "b76ed965b6e744cafbd422761ccadee03c51b45c810feab1d22c895730d7e803",
+      "sourceConfigSha256": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+      "scriptSha256": "9eecd25f9564320c8e17b789fa132747b405a3fa4db3ae0cae0af518f07a2d7d",
+      "mujocoVersion": "4.0.1",
+      "parameters": {
+        "segments": 128,
+        "dtS": 0.0002,
+        "mu": 0.6,
+        "noslipIterations": 20,
+        "initialVzMps": -0.1,
+        "noContactControl": false,
+        "fittedStiffness": 158.5198855981308,
+        "impedance": 0.9,
+        "initialNormalForceTargetPerSideN": 3.7648484524298866,
+        "matchedGravityFreeNormalN": [
+          3.764848452429901,
+          3.76484845242987
+        ],
+        "torusApproximationMaxSagittaMm": 0.04590003069847231
+      },
+      "steps": 5001,
+      "final": {
+        "step": 5000,
+        "timeS": 0.9999999999999225,
+        "qpos": [
+          0.185,
+          1.0327092198198527e-14,
+          0.2964458672431567,
+          0.999999999996942,
+          -2.0912945854329788e-07,
+          2.4645551757210506e-06,
+          6.67852117608911e-14
+        ],
+        "qvel": [
+          -5.199840200906113e-16,
+          -9.912765643762182e-14,
+          -2.8995170566043456e-10,
+          -4.3573381222936335e-07,
+          5.136198558262237e-06,
+          2.8862437708141855e-13
+        ],
+        "normalN": [
+          3.7648484523809644,
+          3.76484845238074
+        ],
+        "forceWorldN": [
+          -1.2762992918397475e-16,
+          2.2429280654989725e-13,
+          2.3045627500004384
+        ],
+        "momentWorldNm": [
+          1.7410378694293627e-13,
+          -2.051943684411306e-12,
+          1.734723475976807e-15
+        ],
+        "contacts": 20,
+        "maxFrictionConeExcessN": 0.0
+      },
+      "maxAbsVerticalDisplacementM": 0.003554132756843298,
+      "maxXYDisplacementM": 3.495092824156804e-11,
+      "maxRotationRad": 4.946108206684597e-06,
+      "maxFrictionConeExcessN": 3.885780586188048e-16,
+      "warningCounts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seconds": 4.876832400001149,
+      "traceSha256": "6612141cf8156f23029fcbb35f2512f8f2497e6ba117e005cf0432f6717daed3",
+      "acceptance": false,
+      "limits": [
+        "Built-in MuJoCo contact formulation comparison, not the original finite-area law or hardware calibration",
+        "Normal stiffness fits the prior uncalibrated initial force hypothesis with gravity/friction off; no retention-outcome tuning",
+        "Only two native straight inner belt faces; NOTE torus is a finite capsule-chain approximation with stated sagitta",
+        "Stationary fixture with no floor, initially staged NOTE; no acquisition, drive, lift, launcher or motor simulation",
+        "Free six-DOF NOTE, no equality constraint, actuator, attachment or state overwrite after initialization",
+        "Stop outside 1 mm XY/0.01 rad straight-fixture domain; no claim for curved wrap or other native hard parts"
+      ]
+    },
+    "without-noslip": {
+      "schema": "native-static-contact-comparison/1",
+      "complete": true,
+      "status": "HORIZON",
+      "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+      "sourceReceiptSha256": "b76ed965b6e744cafbd422761ccadee03c51b45c810feab1d22c895730d7e803",
+      "sourceConfigSha256": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+      "scriptSha256": "9eecd25f9564320c8e17b789fa132747b405a3fa4db3ae0cae0af518f07a2d7d",
+      "mujocoVersion": "4.0.1",
+      "parameters": {
+        "segments": 128,
+        "dtS": 0.0002,
+        "mu": 0.6,
+        "noslipIterations": 0,
+        "initialVzMps": 0.0,
+        "noContactControl": false,
+        "fittedStiffness": 158.5198855981308,
+        "impedance": 0.9,
+        "initialNormalForceTargetPerSideN": 3.7648484524298866,
+        "matchedGravityFreeNormalN": [
+          3.764848452429901,
+          3.76484845242987
+        ],
+        "torusApproximationMaxSagittaMm": 0.04590003069847231
+      },
+      "steps": 5001,
+      "final": {
+        "step": 5000,
+        "timeS": 0.9999999999999225,
+        "qpos": [
+          0.185,
+          1.3740768691214227e-17,
+          0.29812235704774537,
+          1.0,
+          5.816332957291715e-17,
+          0.0,
+          0.0
+        ],
+        "qvel": [
+          -1.1747723876032552e-34,
+          -2.6941437611765992e-17,
+          -0.0019472369821278855,
+          -6.361936209510493e-19,
+          1.1900727252149928e-16,
+          8.77915164899821e-18
+        ],
+        "normalN": [
+          3.764848452429882,
+          3.764848452429889
+        ],
+        "forceWorldN": [
+          3.944304526105059e-31,
+          -6.8833827526759706e-15,
+          2.3045627500001795
+        ],
+        "momentWorldNm": [
+          2.7755575615628914e-17,
+          0.0,
+          1.734723475976807e-18
+        ],
+        "contacts": 20,
+        "maxFrictionConeExcessN": 0.0
+      },
+      "maxAbsVerticalDisplacementM": 0.0018776429522546212,
+      "maxXYDisplacementM": 1.3990687388426025e-17,
+      "maxRotationRad": 0.0,
+      "maxFrictionConeExcessN": 0.0,
+      "warningCounts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seconds": 4.752481899999111,
+      "traceSha256": "b682afc8c2e41759e21d3ca06d539138749f0322b3b83d0cca926a331f173033",
+      "acceptance": false,
+      "limits": [
+        "Built-in MuJoCo contact formulation comparison, not the original finite-area law or hardware calibration",
+        "Normal stiffness fits the prior uncalibrated initial force hypothesis with gravity/friction off; no retention-outcome tuning",
+        "Only two native straight inner belt faces; NOTE torus is a finite capsule-chain approximation with stated sagitta",
+        "Stationary fixture with no floor, initially staged NOTE; no acquisition, drive, lift, launcher or motor simulation",
+        "Free six-DOF NOTE, no equality constraint, actuator, attachment or state overwrite after initialization",
+        "Stop outside 1 mm XY/0.01 rad straight-fixture domain; no claim for curved wrap or other native hard parts"
+      ]
+    },
+    "long-dwell": {
+      "schema": "native-static-contact-comparison/1",
+      "complete": true,
+      "status": "HORIZON",
+      "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+      "sourceReceiptSha256": "b76ed965b6e744cafbd422761ccadee03c51b45c810feab1d22c895730d7e803",
+      "sourceConfigSha256": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+      "scriptSha256": "9eecd25f9564320c8e17b789fa132747b405a3fa4db3ae0cae0af518f07a2d7d",
+      "mujocoVersion": "4.0.1",
+      "parameters": {
+        "segments": 128,
+        "dtS": 0.0002,
+        "mu": 0.6,
+        "noslipIterations": 20,
+        "initialVzMps": 0.0,
+        "noContactControl": false,
+        "fittedStiffness": 158.5198855981308,
+        "impedance": 0.9,
+        "initialNormalForceTargetPerSideN": 3.7648484524298866,
+        "matchedGravityFreeNormalN": [
+          3.764848452429901,
+          3.76484845242987
+        ],
+        "torusApproximationMaxSagittaMm": 0.04590003069847231
+      },
+      "steps": 25001,
+      "final": {
+        "step": 25000,
+        "timeS": 5.000000000001703,
+        "qpos": [
+          0.185,
+          1.3810513016875347e-17,
+          0.299999998563877,
+          0.9999999999184603,
+          -1.0795018575119146e-06,
+          1.2724594077305274e-05,
+          1.889617825990661e-12
+        ],
+        "qvel": [
+          -2.7676097383180824e-15,
+          -8.196752969041062e-18,
+          -2.897225680700559e-10,
+          -4.354875337346343e-07,
+          5.133295562323695e-06,
+          1.535438151495712e-12
+        ],
+        "normalN": [
+          3.7648484510975124,
+          3.7648484510975124
+        ],
+        "forceWorldN": [
+          -1.3587560457378807e-16,
+          1.942890293094024e-16,
+          2.3045627500000094
+        ],
+        "momentWorldNm": [
+          1.7395460072400226e-13,
+          -2.050817848875397e-12,
+          1.7377592420597665e-15
+        ],
+        "contacts": 20,
+        "maxFrictionConeExcessN": 0.0
+      },
+      "maxAbsVerticalDisplacementM": 1.4361229982995383e-09,
+      "maxXYDisplacementM": 1.3947155487263722e-17,
+      "maxRotationRad": 2.554050334835051e-05,
+      "maxFrictionConeExcessN": 0.0,
+      "warningCounts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seconds": 20.745600700000068,
+      "traceSha256": "d13cc199dd7a3581c8ec4aad7a84ea2ce813043ff478e9fe381fb0cc79395326",
+      "acceptance": false,
+      "limits": [
+        "Built-in MuJoCo contact formulation comparison, not the original finite-area law or hardware calibration",
+        "Normal stiffness fits the prior uncalibrated initial force hypothesis with gravity/friction off; no retention-outcome tuning",
+        "Only two native straight inner belt faces; NOTE torus is a finite capsule-chain approximation with stated sagitta",
+        "Stationary fixture with no floor, initially staged NOTE; no acquisition, drive, lift, launcher or motor simulation",
+        "Free six-DOF NOTE, no equality constraint, actuator, attachment or state overwrite after initialization",
+        "Stop outside 1 mm XY/0.01 rad straight-fixture domain; no claim for curved wrap or other native hard parts"
+      ]
+    },
+    "long-dwell-fine": {
+      "schema": "native-static-contact-comparison/1",
+      "complete": true,
+      "status": "HORIZON",
+      "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+      "sourceReceiptSha256": "b76ed965b6e744cafbd422761ccadee03c51b45c810feab1d22c895730d7e803",
+      "sourceConfigSha256": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+      "scriptSha256": "9eecd25f9564320c8e17b789fa132747b405a3fa4db3ae0cae0af518f07a2d7d",
+      "mujocoVersion": "4.0.1",
+      "parameters": {
+        "segments": 256,
+        "dtS": 0.0002,
+        "mu": 0.6,
+        "noslipIterations": 20,
+        "initialVzMps": 0.0,
+        "noContactControl": false,
+        "fittedStiffness": 79.24002611343197,
+        "impedance": 0.9,
+        "initialNormalForceTargetPerSideN": 3.7648484524298866,
+        "matchedGravityFreeNormalN": [
+          3.7648484524298973,
+          3.7648484524298764
+        ],
+        "torusApproximationMaxSagittaMm": 0.011475439714377745
+      },
+      "steps": 25001,
+      "final": {
+        "step": 25000,
+        "timeS": 5.000000000001703,
+        "qpos": [
+          0.185,
+          -1.4600588701627197e-10,
+          0.2999999597821157,
+          0.9999999999485767,
+          -9.669877028466385e-07,
+          1.0095226610872632e-05,
+          2.396284821971946e-12
+        ],
+        "qvel": [
+          -5.5647432093896686e-15,
+          -3.057555306457183e-11,
+          -8.109424271653829e-09,
+          -3.905475221713204e-07,
+          4.078081372920356e-06,
+          1.9568651750676074e-12
+        ],
+        "normalN": [
+          3.81856610153506,
+          3.818566101535059
+        ],
+        "forceWorldN": [
+          -2.5926834275372357e-16,
+          9.367506770274758e-16,
+          2.3045627500002968
+        ],
+        "momentWorldNm": [
+          1.7218431541676793e-13,
+          -1.797502359630887e-12,
+          2.224782857940255e-15
+        ],
+        "contacts": 44,
+        "maxFrictionConeExcessN": 6.938893903907228e-18
+      },
+      "maxAbsVerticalDisplacementM": 4.021788430064177e-08,
+      "maxXYDisplacementM": 9.024510313661665e-10,
+      "maxRotationRad": 2.028266453009145e-05,
+      "maxFrictionConeExcessN": 1.582067810090848e-15,
+      "warningCounts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seconds": 42.997035599997616,
+      "traceSha256": "ea69d974a2d26ea01407fbb63369b0e2213f9f24b3e037b382332aa4c53ab249",
+      "acceptance": false,
+      "limits": [
+        "Built-in MuJoCo contact formulation comparison, not the original finite-area law or hardware calibration",
+        "Normal stiffness fits the prior uncalibrated initial force hypothesis with gravity/friction off; no retention-outcome tuning",
+        "Only two native straight inner belt faces; NOTE torus is a finite capsule-chain approximation with stated sagitta",
+        "Stationary fixture with no floor, initially staged NOTE; no acquisition, drive, lift, launcher or motor simulation",
+        "Free six-DOF NOTE, no equality constraint, actuator, attachment or state overwrite after initialization",
+        "Stop outside 1 mm XY/0.01 rad straight-fixture domain; no claim for curved wrap or other native hard parts"
+      ]
+    },
+    "long-without-noslip": {
+      "schema": "native-static-contact-comparison/1",
+      "complete": true,
+      "status": "HORIZON",
+      "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+      "sourceReceiptSha256": "b76ed965b6e744cafbd422761ccadee03c51b45c810feab1d22c895730d7e803",
+      "sourceConfigSha256": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+      "scriptSha256": "9eecd25f9564320c8e17b789fa132747b405a3fa4db3ae0cae0af518f07a2d7d",
+      "mujocoVersion": "4.0.1",
+      "parameters": {
+        "segments": 128,
+        "dtS": 0.0002,
+        "mu": 0.6,
+        "noslipIterations": 0,
+        "initialVzMps": 0.0,
+        "noContactControl": false,
+        "fittedStiffness": 158.5198855981308,
+        "impedance": 0.9,
+        "initialNormalForceTargetPerSideN": 3.7648484524298866,
+        "matchedGravityFreeNormalN": [
+          3.764848452429901,
+          3.76484845242987
+        ],
+        "torusApproximationMaxSagittaMm": 0.04590003069847231
+      },
+      "steps": 25001,
+      "final": {
+        "step": 25000,
+        "timeS": 5.000000000001703,
+        "qpos": [
+          0.185,
+          1.7769362719991787e-14,
+          0.28902188879453194,
+          1.0,
+          1.3548802735146565e-13,
+          4.3785978593094124e-15,
+          3.8967448837038326e-18
+        ],
+        "qvel": [
+          -1.286920917167272e-16,
+          7.371623607576187e-13,
+          -0.006308725488617799,
+          1.137666871473954e-11,
+          2.8550418761117976e-14,
+          1.565343485529031e-17
+        ],
+        "normalN": [
+          2.856156303595086,
+          2.856156303591572
+        ],
+        "forceWorldN": [
+          -1.4225633904748804e-16,
+          7.288031289576224e-12,
+          2.298040941675407
+        ],
+        "momentWorldNm": [
+          1.3718713665067384e-12,
+          2.8189256484623115e-16,
+          2.6020852139652106e-18
+        ],
+        "contacts": 20,
+        "maxFrictionConeExcessN": 0.0
+      },
+      "maxAbsVerticalDisplacementM": 0.010978111205468044,
+      "maxXYDisplacementM": 1.7769362719991787e-14,
+      "maxRotationRad": 0.0,
+      "maxFrictionConeExcessN": 0.0,
+      "warningCounts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seconds": 18.313944499997888,
+      "traceSha256": "fe14f434ec665bee2db976b49f20b252c302d0352439c85b30d62276674f393c",
+      "acceptance": false,
+      "limits": [
+        "Built-in MuJoCo contact formulation comparison, not the original finite-area law or hardware calibration",
+        "Normal stiffness fits the prior uncalibrated initial force hypothesis with gravity/friction off; no retention-outcome tuning",
+        "Only two native straight inner belt faces; NOTE torus is a finite capsule-chain approximation with stated sagitta",
+        "Stationary fixture with no floor, initially staged NOTE; no acquisition, drive, lift, launcher or motor simulation",
+        "Free six-DOF NOTE, no equality constraint, actuator, attachment or state overwrite after initialization",
+        "Stop outside 1 mm XY/0.01 rad straight-fixture domain; no claim for curved wrap or other native hard parts"
+      ]
+    }
+  },
+  "limits": [
+    "Checks establish bounded model behavior and numerical controls, not measured hardware validity",
+    "Point-contact normal response and capsule geometry differ from the earlier finite-area model; only initial normal force is matched",
+    "No acquisition, dynamic cradle, motor coupling, drive, launcher or scoring test"
+  ]
+}
