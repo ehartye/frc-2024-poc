@@ -7,12 +7,17 @@ import numpy as np
 
 from launcher_handoff import RaisedFeed
 from run_axial_shear_lift import digest, load
-from second_wing_pickup import ReturnPlant, angle_error, build_seated
-from wing_note_delivery import restore, tail
+from second_wing_pickup import angle_error, build_seated
+from wing_note_delivery import DeliveryPlant, restore, tail
 
 
-class ShotPlant(ReturnPlant):
+class ShotPlant(DeliveryPlant):
     def controls(self, belt, launcher_duty, feed_enabled):
+        if self.align_seconds:
+            phase = min(1., (self.data.time-self.start_time)/self.align_seconds)
+            fraction = phase**2*(3.-2.*phase)
+            self.start_height,self.start_pitch = self.station_pose + fraction*self.trim_pose
+            feed_enabled = feed_enabled and phase>=1. and min(belt["normal"])>.02
         if (self.pitch_trim or self.height_trim) and self.feed_start is None:
             # The adjustment is a finite motor command beginning from the
             # attained station state. Let the mechanism settle before feeding.
@@ -37,6 +42,13 @@ class ShotPlant(ReturnPlant):
             self.ready_ticks=self.ready_ticks+1 if ready else 0
             feed_enabled=feed_enabled and (self.feed_start is not None or self.ready_ticks>=3)
         _, actuator, pinch, duty = RaisedFeed.controls(self,belt,launcher_duty,feed_enabled)
+        if self.align_seconds:
+            if self.feed_start is None:
+                hold=self.retained_command(belt,500)
+                self.brakes=hold["pinchBrakeFraction"]
+                pinch=hold["pinch"]
+            else:
+                self.brakes=[0.,0.]
         _, heading, speed = self.observe()
         direction = np.array([np.cos(heading), np.sin(heading)])
         speed_ref = (self.shoot_position-self.data.qpos[:2])@direction
@@ -51,13 +63,16 @@ def run(args):
         raise ValueError("Invalid launcher duty")
     p, pins = build_seated(args, ShotPlant, args.segments)
     p.target_rpm=args.target_rpm
+    p.align_seconds=args.align_seconds
+    if not np.isfinite(p.align_seconds) or not 0.<=p.align_seconds<=2.:
+        raise ValueError("Invalid loaded alignment duration")
     p.ready_ticks=0
     p.pitch_trim=args.pitch_trim_deg
     p.height_trim=args.height_trim_mm
-    if not np.isfinite(p.height_trim) or abs(p.height_trim)>3.:
+    if not np.isfinite(p.height_trim) or abs(p.height_trim)>6.:
         raise ValueError("Height adjustment outside the simulated handoff window")
     p.pose_ticks=0
-    if not np.isfinite(p.pitch_trim) or abs(p.pitch_trim)>1.:
+    if not np.isfinite(p.pitch_trim) or abs(p.pitch_trim)>1.5:
         raise ValueError("Pitch adjustment outside the simulated handoff window")
     if p.target_rpm is not None and not p.launcher["readyRpm"]<=p.target_rpm<=6000.:
         raise ValueError("Target speed outside the modeled launcher operating range")
@@ -77,6 +92,9 @@ def run(args):
     p.start_pitch+=np.deg2rad(p.pitch_trim)
     p.start_height+=.001*p.height_trim
     p.start_time=p.data.time
+    p.station_pose=np.array(row["q"][3:5])
+    p.trim_pose=np.array([p.height_trim*.001,np.deg2rad(p.pitch_trim)])
+    p.base.initial={"note":{"p":[p.base.cad["stageCenterX"]/1000]},"chassis":{"x":0.}}
     period=round(.01/args.dt)
     first=last_touch=both=None
     outcome="HORIZON"
@@ -84,7 +102,8 @@ def run(args):
     args.output.mkdir(exist_ok=False)
     trace=args.output/"trace.jsonl"
     with trace.open("x") as stream:
-        for i in range(round((.9 if p.target_rpm or p.pitch_trim or p.height_trim else .5)/args.dt)):
+        duration = p.align_seconds + (.9 if p.target_rpm or p.pitch_trim or p.height_trim else .5)
+        for i in range(round(duration/args.dt)):
             t=p.data.time
             try:
                 belt,wheel = p.step(i%period==0,args.duty,True)
@@ -111,7 +130,8 @@ def run(args):
                 lastLauncherContact=last_touch,firstSimultaneousContact=both,minimumBusV=minimum_bus,
                 outcome=outcome,traceSha256=digest(trace),grid=args.grid,dt=args.dt,segments=args.segments,duty=args.duty,
                 firstMark=args.first_mark,fieldYawDeg=args.field_yaw_deg,pinchDuty=p.launcher["pinchDuty"],
-                targetRpm=p.target_rpm,pitchTrimDeg=p.pitch_trim,heightTrimMm=p.height_trim)
+                targetRpm=p.target_rpm,pitchTrimDeg=p.pitch_trim,heightTrimMm=p.height_trim,
+                alignmentDurationS=p.align_seconds)
     result["collectedMarks"]=rc.get("collectedMarks",[args.first_mark] if rc.get("fieldStation") else [args.first_mark,"middle"])
     (args.output/"result.json").write_text(json.dumps(result,indent=2,allow_nan=False)+"\n")
     print(outcome,p.data.time,flush=True)
@@ -129,6 +149,7 @@ if __name__=="__main__":
     parser.add_argument("--target-rpm",type=float,help="Hold all four wheels within 2.5 percent for three control samples before feeding")
     parser.add_argument("--pitch-trim-deg",type=float,default=0.,help="Adjust the cradle with its loaded pitch motor before feed")
     parser.add_argument("--height-trim-mm",type=float,default=0.,help="Register lift height at the launcher using the loaded lift motor")
+    parser.add_argument("--align-seconds",type=float,default=0.,help="Move through the trim with a smooth reference and the loaded travel pinch controller")
     parser.add_argument("--first-mark",choices=("inner","middle","outer"),default="inner")
     parser.add_argument("--field-yaw-deg",type=float,default=90.)
     run(parser.parse_args())

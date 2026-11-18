@@ -48,6 +48,7 @@ class ReturnPlant(RaisedFeed):
         self.approach_waypoint = None
         self.capture_standoff = 0.
         self.waypoints=[]
+        self.reverse_transit=False
         self.transit_speed=1.1
         mujoco.mj_forward(self.model, d)
 
@@ -75,9 +76,12 @@ class ReturnPlant(RaisedFeed):
         if self.waypoints:
             offset=self.waypoints[0]-d.qpos[:2]
             gap=np.linalg.norm(offset)
-            error=angle_error(math.atan2(offset[1],offset[0]),heading)
+            course=math.atan2(offset[1],offset[0])
+            error=angle_error(course+math.pi if self.reverse_transit else course,heading)
             want_turn=np.clip(4*error,-1.65,1.65)
             want_speed=min(self.transit_speed,2*gap)*max(0.,math.cos(error))**6
+            if self.reverse_transit:
+                want_speed=-want_speed
             if gap<.14:
                 self.waypoints.pop(0)
         elif self.approach_waypoint is not None:
@@ -86,7 +90,7 @@ class ReturnPlant(RaisedFeed):
             target_heading=math.atan2(offset[1],offset[0]) if gap>.045 else self.approach_heading
             error=angle_error(target_heading,heading)
             want_turn=np.clip(4*error,-1.65,1.65)
-            want_speed=min(1.1,1.7*gap)*max(0.,math.cos(error))**6 if gap>.045 else 0.
+            want_speed=min(self.transit_speed,1.7*gap)*max(0.,math.cos(error))**6 if gap>.045 else 0.
             if gap<=.045 and abs(error)<.035 and abs(d.qvel[2])<.07:
                 self.approach_waypoint=None
         elif self.capture_standoff:
@@ -239,6 +243,9 @@ def run(args):
     plant.retreat_distance=args.retreat
     frame=WingFrame(args.first_mark,args.field_yaw_deg)
     plant.waypoints=[frame.to_local([x,y,0.])[:2] for x,y in args.via]
+    plant.reverse_transit=args.reverse_transit
+    if plant.reverse_transit and not plant.waypoints:
+        raise ValueError("Reverse transit requires at least one approach waypoint")
     if not 0.<args.transit_speed<=4. or not np.isfinite(args.via).all():
         raise ValueError("Invalid transit command")
     plant.transit_speed=args.transit_speed
@@ -300,7 +307,7 @@ def run(args):
                 minimumBusV=minimum_bus,peakLocalBrakingW=worst_brake,outcome=outcome,dt=args.dt,grid=args.grid,
                 traceStride=args.trace_stride,firstMark=args.first_mark,fieldYawDeg=args.field_yaw_deg,
                 retreatM=args.retreat,approachHeadingDeg=args.approach_heading,captureStandoffM=args.capture_standoff,
-                viaFieldXY=args.via,transitSpeedMps=args.transit_speed,
+                viaFieldXY=args.via,transitSpeedMps=args.transit_speed,reverseTransit=args.reverse_transit,
                 waitingNoteLocalXY=plant.mark_xy.tolist(),pieceId=piece_id(args.next_mark),
                 collectedMarks=[*release.get("collectedMarks",[args.first_mark]),args.next_mark])
     (args.output/"result.json").write_text(json.dumps(result,indent=2,allow_nan=False)+"\n")
@@ -320,6 +327,7 @@ if __name__ == "__main__":
     p.add_argument("--approach-heading",type=float,help="Align before approaching the floor mark at this field heading in degrees")
     p.add_argument("--capture-standoff",type=float,default=0.,help="Stop the chassis this far short of the mark while the intake draws in the NOTE")
     p.add_argument("--via",type=float,nargs=2,action="append",default=[],metavar=("X","Y"),help="Traverse a field waypoint before pickup alignment")
+    p.add_argument("--reverse-transit",action="store_true",help="Drive backward through the approach waypoints, then collect forward")
     p.add_argument("--transit-speed",type=float,default=1.1,help="Empty travel speed limit in m/s")
     p.add_argument("--field-yaw-deg",type=float,default=90.)
     p.add_argument("--horizon",type=float,default=11.)

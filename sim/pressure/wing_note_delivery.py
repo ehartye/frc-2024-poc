@@ -18,9 +18,8 @@ class DeliveryPlant(ReturnPlant):
         self.floor = floor
         return belt, floor, moment
 
-    def controls(self, belt, launcher_duty, feed_enabled):
+    def retained_command(self, belt, tick):
         b, d = self.base, self.data
-        rel, heading, forward = self.observe()
         b.q = np.r_[d.qpos[:5], d.qpos[self.nq:]]
         b.v = np.r_[d.qvel[:5], d.qvel[self.nv:]]
         b.rotors = self.rotors
@@ -31,9 +30,14 @@ class DeliveryPlant(ReturnPlant):
         nr = d.xmat[self.note].reshape(3,3)
         local = body.T @ (d.xpos[self.note]-d.xpos[self.chassis])
         result = dict(belt,centerRobot=local,normalRobot=body.T@nr[:,2],floor=self.floor)
+        return b.command(tick, result, 1, 0, 0., 0.)
+
+    def controls(self, belt, launcher_duty, feed_enabled):
+        b, d = self.base, self.data
+        _, heading, forward = self.observe()
+        body = d.xmat[self.chassis].reshape(3,3)
         elapsed = d.time-self.seated
-        tick = round(elapsed/.01)
-        demand = b.command(tick, result, 1, 0, 0., 0.)
+        demand = self.retained_command(belt,round(elapsed/.01))
         self.brakes = demand["pinchBrakeFraction"]
         target = self.shoot_position if self.approach_position is None else self.approach_position
         if self.waypoints:
@@ -49,11 +53,13 @@ class DeliveryPlant(ReturnPlant):
             distance = np.linalg.norm(delta)
         path_heading = math.atan2(delta[1],delta[0]) if distance > .035 else self.shoot_heading
         error = angle_error(path_heading, heading)
-        stopping_speed = math.sqrt(2*.58*abs(error))
-        desired_turn = math.copysign(min(3*abs(error),.95,stopping_speed),error) if elapsed>.65 else 0.
+        accel_ratio=self.turn_accel/.7
+        stopping_speed = math.sqrt(2*.58*accel_ratio*abs(error))
+        desired_turn = math.copysign(min(3*abs(error),self.turn_rate,stopping_speed),error) if elapsed>.65 else 0.
         # The floor resists sideways motion until the lift supports the ring.
         # Limit angular acceleration to avoid driving it into the tread backing.
-        self.turn_reference += float(np.clip(desired_turn-self.turn_reference,-.007,.007))
+        increment=.007*accel_ratio
+        self.turn_reference += float(np.clip(desired_turn-self.turn_reference,-increment,increment))
         want_turn = self.turn_reference
         want_speed = min(self.transit_speed, 1.7*distance)*max(0.,math.cos(error))**6
         if self.transit_speed>.6:
@@ -105,9 +111,7 @@ def run(args):
         p.shoot_heading = math.radians(heading - frame.yaw_degrees)
         rel, _, _ = p.observe()
         row = dict(q=p.data.qpos.tolist(), v=p.data.qvel.tolist(), t=p.data.time, relative=rel)
-        cad = p.base.cad
-        station = [(cad["handoffCenterZ"]-cad["floorCenterZ"])/1000., math.radians(cad["pitchDeg"])]
-        return deliver(args, p, row, pins["stop"], pins["native"], station, [args.first_mark])
+        return deliver(args, p, row, pins["stop"], pins["native"], [args.first_mark])
     got=load(args.acquisition/"result.json")
     collected=got.get("collectedMarks",[args.first_mark,"middle"])
     args.next_mark=collected[-1]
@@ -125,14 +129,21 @@ def run(args):
         frame = WingFrame(args.first_mark, args.field_yaw_deg)
         p.shoot_position = frame.to_local([x, y, 0.])[:2]
         p.shoot_heading = math.radians(heading - frame.yaw_degrees)
-    return deliver(args, p, row, got["trace"], release["nativeSha256"], last["q"][3:5], collected)
+    return deliver(args, p, row, got["trace"], release["nativeSha256"], collected)
 
 
-def deliver(args, p, row, source, native, target_station, collected):
+def deliver(args, p, row, source, native, collected):
     p.seated=p.data.time
-    if not 0.<args.transit_speed<=4. or not np.isfinite(args.via).all():
+    cad=p.base.cad
+    # The carry controller returns to its registered handoff datum. A previous
+    # shot may have moved away from that datum when aligning its own NOTE.
+    target_station=[(cad["handoffCenterZ"]-cad["floorCenterZ"])/1000.,math.radians(cad["pitchDeg"])]
+    if (not 0.<args.transit_speed<=4. or not np.isfinite(args.via).all()
+            or not 0.<args.turn_rate<=2.5 or not 0.<args.turn_accel<=3.):
         raise ValueError("Invalid loaded transit command")
     p.transit_speed=args.transit_speed
+    p.turn_rate=args.turn_rate
+    p.turn_accel=args.turn_accel
     p.speed_reference=max(0.,p.observe()[2])
     frame=WingFrame(args.first_mark,args.field_yaw_deg)
     p.waypoints=[frame.to_local([x,y,0.])[:2] for x,y in args.via]
@@ -183,6 +194,7 @@ def deliver(args, p, row, source, native, target_station, collected):
                 pieceId=piece_id(collected[-1]),collectedMarks=collected,
                 fieldStation=args.field_station,finalStraightM=args.final_straight,
                 viaFieldXY=args.via,transitSpeedMps=args.transit_speed,
+                turnRateRadPerS=args.turn_rate,turnAccelRadPerS2=args.turn_accel,
                 firstMark=args.first_mark,fieldYawDeg=args.field_yaw_deg)
     (args.output/"result.json").write_text(json.dumps(result,indent=2,allow_nan=False)+"\n")
     print(outcome,p.data.time,flush=True)
@@ -203,6 +215,8 @@ if __name__=="__main__":
     parser.add_argument("--final-straight",type=float,default=0.,help="Align this many metres behind the shooting position")
     parser.add_argument("--via",type=float,nargs=2,action="append",default=[],metavar=("X","Y"),help="Traverse a field waypoint before final alignment")
     parser.add_argument("--transit-speed",type=float,default=.6,help="Loaded travel speed limit in m/s")
+    parser.add_argument("--turn-rate",type=float,default=.95,help="Loaded turning reference limit in rad/s")
+    parser.add_argument("--turn-accel",type=float,default=.7,help="Loaded turning reference slew in rad/s²")
     parser.add_argument("--first-mark",choices=("inner","middle","outer"),default="inner")
     parser.add_argument("--field-yaw-deg",type=float,default=90.)
     args = parser.parse_args()
