@@ -1,0 +1,232 @@
+{
+  "schema": "pressure-continuity-spatial/1",
+  "acceptance": false,
+  "fineChecksPassed": true,
+  "scriptSha256": "367120e1a32888700caac4507d3db8d6723af2b1f708b453c9eeb25a929e15e8",
+  "cullingSha256": "ad40145c71fbfaae776540ad3a2f43f954f52b5de53b65035babb0b424868987",
+  "contractSha256": "7ae8d7959c4e3ccf5bb44cc19f9164c143ae969684298f0979f99184bed127b2",
+  "sourceHashes": {
+    "historical": "31f03648150aa04a49e66f833d85345c4f4ce37ae18949cdc74efe4ed6b75d97",
+    "index": "50e6f144d09854b2d4871bde28ff90ec30adba9173919bc3112cbfeccbd509d6",
+    "transport": "0f38961c50317401788e86a1ed4127bd9ab9583c6f9838b2820e7035a988aee0"
+  },
+  "rows": [
+    {
+      "state": "first-contact",
+      "timeS": 1.4029999999999563,
+      "resolution": 512,
+      "normalPerSideN": [
+        0.0004671708937628008,
+        0.00046717089371136
+      ],
+      "reactionForceWorldN": [
+        -0.0006756153679092935,
+        -4.707023074264349e-14
+      ],
+      "potentialJ": 6.275846405323747e-09,
+      "contacts": 12,
+      "workResidualW": 2.0328790734103208e-20
+    },
+    {
+      "state": "index",
+      "timeS": 4.439999999999817,
+      "resolution": 512,
+      "normalPerSideN": [
+        1.6271155875919001,
+        1.6271155875919037
+      ],
+      "reactionForceWorldN": [
+        0.04863201310244604,
+        3.0254661623208e-15
+      ],
+      "potentialJ": 0.0009520567988419669,
+      "contacts": 1088,
+      "workResidualW": 2.0667603913004928e-19
+    },
+    {
+      "state": "peak-transport",
+      "timeS": 4.456999999999823,
+      "resolution": 512,
+      "normalPerSideN": [
+        1.6271155875919001,
+        1.6271155875919037
+      ],
+      "reactionForceWorldN": [
+        -0.24223554866849584,
+        3.0254661623208e-15
+      ],
+      "potentialJ": 0.0009520567988419669,
+      "contacts": 1088,
+      "workResidualW": -3.2526065174565133e-19
+    },
+    {
+      "state": "first-contact",
+      "timeS": 1.4029999999999563,
+      "resolution": 1024,
+      "normalPerSideN": [
+        0.0004031369590603061,
+        0.0004031369590304604
+      ],
+      "reactionForceWorldN": [
+        -0.0005518344085256024,
+        -2.8186972883797318e-14
+      ],
+      "potentialJ": 7.959192794164149e-09,
+      "contacts": 28,
+      "workResidualW": 4.404571325722362e-20
+    },
+    {
+      "state": "index",
+      "timeS": 4.439999999999817,
+      "resolution": 1024,
+      "normalPerSideN": [
+        1.6269196021050696,
+        1.6269196021050736
+      ],
+      "reactionForceWorldN": [
+        0.04862615539397326,
+        1.0950984043189838e-15
+      ],
+      "potentialJ": 0.0009521834283946453,
+      "contacts": 4312,
+      "workResidualW": -3.6422416731934915e-19
+    },
+    {
+      "state": "peak-transport",
+      "timeS": 4.456999999999823,
+      "resolution": 1024,
+      "normalPerSideN": [
+        1.6269196021050696,
+        1.6269196021050736
+      ],
+      "reactionForceWorldN": [
+        -0.2422063714838547,
+        1.0950984043189838e-15
+      ],
+      "potentialJ": 0.0009521834283946453,
+      "contacts": 4312,
+      "workResidualW": -6.7220534694101275e-18
+    },
+    {
+      "state": "first-contact",
+      "timeS": 1.4029999999999563,
+      "resolution": 2048,
+      "normalPerSideN": [
+        0.0003453624520330011,
+        0.0003453624519981023
+      ],
+      "reactionForceWorldN": [
+        -0.00047622082464963245,
+        -3.264625449109931e-14
+      ],
+      "potentialJ": 5.885614194804061e-09,
+      "contacts": 132,
+      "workResidualW": -5.759824041329242e-20
+    },
+    {
+      "state": "index",
+      "timeS": 4.439999999999817,
+      "resolution": 2048,
+      "normalPerSideN": [
+        1.6265836130220621,
+        1.6265836130220654
+      ],
+      "reactionForceWorldN": [
+        0.048616113190695295,
+        3.0617259487268622e-15
+      ],
+      "potentialJ": 0.0009521570661593406,
+      "contacts": 17256,
+      "workResidualW": -3.1170812458958252e-19
+    },
+    {
+      "state": "peak-transport",
+      "timeS": 4.456999999999823,
+      "resolution": 2048,
+      "normalPerSideN": [
+        1.6265836130220621,
+        1.6265836130220654
+      ],
+      "reactionForceWorldN": [
+        -0.242156351374349,
+        3.0617259487268622e-15
+      ],
+      "potentialJ": 0.0009521570661593406,
+      "contacts": 17256,
+      "workResidualW": -8.944667923005412e-18
+    }
+  ],
+  "comparisons": [
+    {
+      "state": "first-contact",
+      "first": 512,
+      "second": 1024,
+      "maximumToleranceRatios": {
+        "normalPerSideN": 0.6403393470249467,
+        "reactionForceWorldN": 1.2378095938369107,
+        "potentialJ": 0.0016833463888404018
+      },
+      "passed": false
+    },
+    {
+      "state": "first-contact",
+      "first": 1024,
+      "second": 2048,
+      "maximumToleranceRatios": {
+        "normalPerSideN": 0.5777450703235812,
+        "reactionForceWorldN": 0.7561358387596996,
+        "potentialJ": 0.002073578599360088
+      },
+      "passed": true
+    },
+    {
+      "state": "index",
+      "first": 512,
+      "second": 1024,
+      "maximumToleranceRatios": {
+        "normalPerSideN": 0.012044964004099101,
+        "reactionForceWorldN": 0.012044964004345977,
+        "potentialJ": 0.013298861217512717
+      },
+      "passed": true
+    },
+    {
+      "state": "index",
+      "first": 1024,
+      "second": 2048,
+      "maximumToleranceRatios": {
+        "normalPerSideN": 0.020651855357412874,
+        "reactionForceWorldN": 0.020651855357683307,
+        "potentialJ": 0.002768608916992751
+      },
+      "passed": true
+    },
+    {
+      "state": "peak-transport",
+      "first": 512,
+      "second": 1024,
+      "maximumToleranceRatios": {
+        "normalPerSideN": 0.012044964004099101,
+        "reactionForceWorldN": 0.012044964003634586,
+        "potentialJ": 0.013298861217512717
+      },
+      "passed": true
+    },
+    {
+      "state": "peak-transport",
+      "first": 1024,
+      "second": 2048,
+      "maximumToleranceRatios": {
+        "normalPerSideN": 0.020651855357412874,
+        "reactionForceWorldN": 0.020651855357593712,
+        "potentialJ": 0.002768608916992751
+      },
+      "passed": true
+    }
+  ],
+  "limits": [
+    "Prescribed-state grid comparison, not rerun trajectories",
+    "Same material phase and constitutive coefficients",
+    "No per-grid preload or output fitting"
+  ]
+}

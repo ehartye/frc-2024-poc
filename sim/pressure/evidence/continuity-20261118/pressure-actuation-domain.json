@@ -1,0 +1,15 @@
+{
+  "schema": "pressure-actuation-domain-control/1",
+  "acceptance": false,
+  "scriptSha256": "0ae810e91851243dd0a162beaa17c76d1cb46574ad90ddeff65b10ed1fd47337",
+  "kernelSha256": "3259d85bb9b0742d96c7df18a5ca0b39994cfc87115b2e670d1b4be7bd392d36",
+  "rejectedDuties": [
+    -0.0034,
+    -0.0034
+  ],
+  "reason": "pinch duties",
+  "physicalStateUnchanged": true,
+  "limits": [
+    "Invalid-input guard checked before integration; not a transport run or hardware limitation"
+  ]
+}

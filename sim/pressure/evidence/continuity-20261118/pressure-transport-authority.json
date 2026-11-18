@@ -1,0 +1,247 @@
+{
+  "schema": "pressure-transport-control-authority/1",
+  "acceptance": false,
+  "scriptSha256": "f6f1fb33c6ee1436b8f084390881b6477738d55d4ea98702fce6c5a648a19d67",
+  "inputs": {
+    "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+    "sim/acquisition/free-planar-config.json": "8ecb4ca6594ec456e56a79ceb63d222d9824e4985273d6b16a52b9737d166053",
+    "sim/pressure/fast_geometry.py": "2e433044711d836404c7efb2cac715f105718daa42e9e974239246be723df73e",
+    "sim/pressure/finite_transport.py": "6b4170b89e1b327c293e545dfd0d41b58af369f8eb11609dfd6d899ef9fb3f9b",
+    "sim/pressure/finite_area.py": "75c7af7cc4446346e611c389d050cb3d1212404c560ad8e4884863e44f1cd5ed",
+    "cad/assembly/belt_contact_geometry.py": "2cb19b7fb7648ca8f46a943f8ad4c70d97eef9d6cf56f8cf602bf5000aa30daf",
+    "sim/pressure/pressure_acquisition.py": "3259d85bb9b0742d96c7df18a5ca0b39994cfc87115b2e670d1b4be7bd392d36"
+  },
+  "rows": [
+    {
+      "relativeXM": 0.20119016209167434,
+      "translationSpeedMps": 0.0,
+      "groundDragN": 0.0,
+      "normalPerSideN": [
+        1.6269196021050696,
+        1.6269196021050736
+      ],
+      "requiredRotorOmegaRadps": -4.547473508864641e-12,
+      "requiredMotorCurrentA": [
+        -3.290312038421798e-12,
+        -3.2903120384218046e-12
+      ],
+      "requiredTerminalV": [
+        -4.662697877695877e-13,
+        -4.662697877695885e-13
+      ],
+      "requiredTerminalPowerW": [
+        1.5341730958506515e-24,
+        1.5341730958506569e-24
+      ],
+      "forceBalanceResidualN": 1.0766948075416533e-11,
+      "contactWorkResidualW": 7.989688165745235e-39,
+      "zeroRelativeBeltSpeedTractionN": 0.0,
+      "positiveDriveOrCoastCanSupplyRequiredCurrent": true,
+      "withinAssumedCurrentLimit": true,
+      "requiresBatteryRegeneration": false
+    },
+    {
+      "relativeXM": 0.20119016209167434,
+      "translationSpeedMps": 0.01,
+      "groundDragN": 0.7020566089733385,
+      "normalPerSideN": [
+        1.6269196021050696,
+        1.6269196021050736
+      ],
+      "requiredRotorOmegaRadps": -0.31039205788601976,
+      "requiredMotorCurrentA": [
+        -0.21454411184760555,
+        -0.214544111847606
+      ],
+      "requiredTerminalV": [
+        -0.030678341756176314,
+        -0.030678341756176362
+      ],
+      "requiredTerminalPowerW": [
+        0.006581857585036158,
+        0.006581857585036183
+      ],
+      "forceBalanceResidualN": -2.7469138075275623e-12,
+      "contactWorkResidualW": -3.469446951953614e-18,
+      "zeroRelativeBeltSpeedTractionN": 0.0,
+      "positiveDriveOrCoastCanSupplyRequiredCurrent": false,
+      "withinAssumedCurrentLimit": true,
+      "requiresBatteryRegeneration": false
+    },
+    {
+      "relativeXM": 0.20119016209167434,
+      "translationSpeedMps": 0.05,
+      "groundDragN": 0.9217414022102871,
+      "normalPerSideN": [
+        1.6269196021050696,
+        1.6269196021050736
+      ],
+      "requiredRotorOmegaRadps": -0.4228435363029348,
+      "requiredMotorCurrentA": [
+        -0.2816784116302017,
+        -0.2816784116302024
+      ],
+      "requiredTerminalV": [
+        -0.04058217345887845,
+        -0.04058217345887853
+      ],
+      "requiredTerminalPowerW": [
+        0.011431122160398209,
+        0.011431122160398263
+      ],
+      "forceBalanceResidualN": -4.9036330551643914e-12,
+      "contactWorkResidualW": 6.071532165918825e-18,
+      "zeroRelativeBeltSpeedTractionN": 0.0,
+      "positiveDriveOrCoastCanSupplyRequiredCurrent": false,
+      "withinAssumedCurrentLimit": true,
+      "requiresBatteryRegeneration": false
+    },
+    {
+      "relativeXM": 0.20119016209167434,
+      "translationSpeedMps": 0.1,
+      "groundDragN": 0.9218250961999537,
+      "normalPerSideN": [
+        1.6269196021050696,
+        1.6269196021050736
+      ],
+      "requiredRotorOmegaRadps": -0.4228890256899831,
+      "requiredMotorCurrentA": [
+        -0.28170398799004176,
+        -0.28170398799004254
+      ],
+      "requiredTerminalV": [
+        -0.04058599910342831,
+        -0.0405859991034284
+      ],
+      "requiredTerminalPowerW": [
+        0.011433237803996014,
+        0.011433237803996072
+      ],
+      "forceBalanceResidualN": -5.934142066621462e-12,
+      "contactWorkResidualW": -4.336808689942018e-18,
+      "zeroRelativeBeltSpeedTractionN": 0.0,
+      "positiveDriveOrCoastCanSupplyRequiredCurrent": false,
+      "withinAssumedCurrentLimit": true,
+      "requiresBatteryRegeneration": false
+    },
+    {
+      "relativeXM": 0.185,
+      "translationSpeedMps": 0.0,
+      "groundDragN": 0.0,
+      "normalPerSideN": [
+        1.6269196021050696,
+        1.6269196021050736
+      ],
+      "requiredRotorOmegaRadps": -4.547473508864641e-12,
+      "requiredMotorCurrentA": [
+        -3.290312038421798e-12,
+        -3.2903120384218046e-12
+      ],
+      "requiredTerminalV": [
+        -4.662697877695877e-13,
+        -4.662697877695885e-13
+      ],
+      "requiredTerminalPowerW": [
+        1.5341730958506515e-24,
+        1.5341730958506569e-24
+      ],
+      "forceBalanceResidualN": 1.0766948075416533e-11,
+      "contactWorkResidualW": 7.989688165745235e-39,
+      "zeroRelativeBeltSpeedTractionN": 0.0,
+      "positiveDriveOrCoastCanSupplyRequiredCurrent": true,
+      "withinAssumedCurrentLimit": true,
+      "requiresBatteryRegeneration": false
+    },
+    {
+      "relativeXM": 0.185,
+      "translationSpeedMps": 0.01,
+      "groundDragN": 0.7020566089733385,
+      "normalPerSideN": [
+        1.6269196021050696,
+        1.6269196021050736
+      ],
+      "requiredRotorOmegaRadps": -0.31039205788601976,
+      "requiredMotorCurrentA": [
+        -0.21454411184760555,
+        -0.214544111847606
+      ],
+      "requiredTerminalV": [
+        -0.030678341756176314,
+        -0.030678341756176362
+      ],
+      "requiredTerminalPowerW": [
+        0.006581857585036158,
+        0.006581857585036183
+      ],
+      "forceBalanceResidualN": -2.7469138075275623e-12,
+      "contactWorkResidualW": -3.469446951953614e-18,
+      "zeroRelativeBeltSpeedTractionN": 0.0,
+      "positiveDriveOrCoastCanSupplyRequiredCurrent": false,
+      "withinAssumedCurrentLimit": true,
+      "requiresBatteryRegeneration": false
+    },
+    {
+      "relativeXM": 0.185,
+      "translationSpeedMps": 0.05,
+      "groundDragN": 0.9217414022102871,
+      "normalPerSideN": [
+        1.6269196021050696,
+        1.6269196021050736
+      ],
+      "requiredRotorOmegaRadps": -0.4228435363029348,
+      "requiredMotorCurrentA": [
+        -0.2816784116302017,
+        -0.2816784116302024
+      ],
+      "requiredTerminalV": [
+        -0.04058217345887845,
+        -0.04058217345887853
+      ],
+      "requiredTerminalPowerW": [
+        0.011431122160398209,
+        0.011431122160398263
+      ],
+      "forceBalanceResidualN": -4.9036330551643914e-12,
+      "contactWorkResidualW": 6.071532165918825e-18,
+      "zeroRelativeBeltSpeedTractionN": 0.0,
+      "positiveDriveOrCoastCanSupplyRequiredCurrent": false,
+      "withinAssumedCurrentLimit": true,
+      "requiresBatteryRegeneration": false
+    },
+    {
+      "relativeXM": 0.185,
+      "translationSpeedMps": 0.1,
+      "groundDragN": 0.9218250961999537,
+      "normalPerSideN": [
+        1.6269196021050696,
+        1.6269196021050736
+      ],
+      "requiredRotorOmegaRadps": -0.4228890256899831,
+      "requiredMotorCurrentA": [
+        -0.28170398799004176,
+        -0.28170398799004254
+      ],
+      "requiredTerminalV": [
+        -0.04058599910342831,
+        -0.0405859991034284
+      ],
+      "requiredTerminalPowerW": [
+        0.011433237803996014,
+        0.011433237803996072
+      ],
+      "forceBalanceResidualN": -5.934142066621462e-12,
+      "contactWorkResidualW": -4.336808689942018e-18,
+      "zeroRelativeBeltSpeedTractionN": 0.0,
+      "positiveDriveOrCoastCanSupplyRequiredCurrent": false,
+      "withinAssumedCurrentLimit": true,
+      "requiresBatteryRegeneration": false
+    }
+  ],
+  "limits": [
+    "Prescribed symmetric steady-translation states, not actual acquisition or transport trajectories",
+    "Original pressure geometry and material hypotheses, not the later relieved native candidate",
+    "Signed motoring is a proposed model/controller capability; no electrical or hardware change was made",
+    "A passive short brake has zero torque at zero rotor speed and is not an ideal position lock",
+    "Does not rule out finite transient transport or support by end-wrap normal forces outside these straight-contact states"
+  ]
+}

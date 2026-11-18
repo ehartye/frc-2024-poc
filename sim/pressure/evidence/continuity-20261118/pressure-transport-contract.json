@@ -1,0 +1,22 @@
+{
+  "schema": "pressure-continuous-transport-contract/1",
+  "initialState": "Only the actual attained ground-index checkpoint from the unchanged acquisition controller",
+  "requestedChassisSpeedMps": 0.1,
+  "maximumDurationS": 0.1,
+  "controllerPeriodS": 0.01,
+  "drive": "Existing back-EMF feedforward plus 2 V/(m/s) speed correction; duty capped at 0.2; brake on deceleration",
+  "pinch": "Existing positive-only 0.15 duty/m index correction to 0.185 m; duty capped at 0.025; zero duty coasts",
+  "stopAtFirstViolation": {
+    "relativeXRangeM": [0.180, 0.190],
+    "maximumAbsoluteRelativeYM": 0.001,
+    "maximumRelativePlanarSpeedMps": 0.01
+  },
+  "localRefinementStepsS": [0.001, 0.0005, 0.00025],
+  "localFineComparison": {
+    "maximumRelativePositionDifferenceM": 0.001,
+    "maximumRelativeVelocityDifferenceMps": 0.003,
+    "maximumExitTimeDifferenceS": 0.001,
+    "sameOutcomeRequired": true
+  },
+  "limits": ["Predeclared short transport activation test; not the full 3 s transport plus 2 s braking matrix", "State and cumulative energy are never reset", "The inherited acquisition remains 1 ms; local refinement cannot qualify the entire cycle", "No native geometry, material or motor parameter is retuned"]
+}

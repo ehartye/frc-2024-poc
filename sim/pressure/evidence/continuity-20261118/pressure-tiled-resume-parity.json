@@ -1,0 +1,15 @@
+{
+  "schema": "pressure-tiled-resume-parity/1",
+  "exactlyEqual": true,
+  "sharedSteps": 100,
+  "startTimeS": 3.5,
+  "endTimeS": 3.5999999999997145,
+  "samePhysicalRowsAndCommands": true,
+  "resumeCheckpointSha256": "638b80f1486b5cfb1efa336b39705640d80f90e0a85688f5c3183ff4622f77e8",
+  "referenceSnapshotSha256": "37ccaa12db927bf315c12efd44148709ac2d122fa72cb38f946fbc62266f3bdd",
+  "candidateSourceSha256": "ad40145c71fbfaae776540ad3a2f43f954f52b5de53b65035babb0b424868987",
+  "candidateRunnerSha256": "811eca6f68346fc9f4d7d9e258930c350d07306af6fedb63965cb5fa89881d62",
+  "referenceRunnerSha256": "feaf94897db147e03f5e28e0c3ddd9ae2a120d9ba6b3d3b0fb52e1a6dca362d3",
+  "referenceStoppedReason": "Intentional stop after exact dynamic parity; continuation proceeds from the preserved state with the tiled implementation",
+  "referenceLastDurableTimeS": 3.5999999999997145
+}
