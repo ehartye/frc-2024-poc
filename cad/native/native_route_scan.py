@@ -60,6 +60,11 @@ def run(context):
             inventory.append(row)
             if not exclusion:targets.append((row,body))
     assert set(expected)=={r['key'] for r in inventory},'Full inventory differs'
+    if 'intendedContactSourceRoots' in CONFIG:
+        allowed=set(CONFIG['intendedContactSourceRoots'])
+        selected=[r for r in inventory if r['sourceRootIndex'] in allowed]
+        assert {r['sourceRootIndex'] for r in selected}==allowed,'Unknown intended-contact identity'
+        assert all(r['name'].startswith('intake candidate side pinch belt ') or r['role']=='uncalibrated-compliant-tread' for r in selected),'Intended-contact identity is not belt/tread material'
     result={'schema':'native-flat-route/1','sourceSha256':CONFIG['archiveSha256'],'manifestSha256':CONFIG['manifestSha256'],'scriptSha256':CONFIG['scriptSha256'],'configurationSha256':hashlib.sha256(json.dumps(CONFIG,sort_keys=True).encode()).hexdigest(),'version':app.version,'documentId':doc.creationId,'inventory':inventory,'unclassified':unclassified,'method':{'units':'mm','volumeUnits':'mm3','kernel':'Fusion TemporaryBRepManager','broadphase':'native BRepBody.boundingBox AABB; touching proceeds to Boolean','construction':'origin torus then explicit translation','lengthToleranceMm':1e-4,'volumeToleranceMm3':1e-4,'majorRadiusMm':152.4,'tubeRadiusMm':25.4,'rotation':'flat axis +Z only'},'controls':[],'rows':[],'failures':[],'complete':False,'acceptance':False}
     def save():
         result['seconds']=time.perf_counter()-start
@@ -101,7 +106,7 @@ def run(context):
                 if volume>1e-4:
                     reverse=common(note,body)
                     assert abs(volume-reverse)<=max(1e-4,volume*1e-7),('operand disagreement',record['key'])
-                    hits.append({'key':record['key'],'name':record['name'],'overlapMm3':volume,'reverseOverlapMm3':reverse,'classification':'intended-belt-contact-hypothesis' if 'side pinch belt' in record['name'] else 'unresolved-material-overlap'})
+                    hits.append({'key':record['key'],'name':record['name'],'overlapMm3':volume,'reverseOverlapMm3':reverse,'classification':'intended-belt-contact-hypothesis' if (record['sourceRootIndex'] in CONFIG['intendedContactSourceRoots'] if 'intendedContactSourceRoots' in CONFIG else 'side pinch belt' in record['name']) else 'unresolved-material-overlap'})
             result['rows'].append({'centerMm':center,'boundsMm':nb,'hits':hits})
         result['booleanPairs']=pairs;save()
     result['complete']=True
