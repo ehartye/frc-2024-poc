@@ -36,9 +36,13 @@ class DeliveryPlant(ReturnPlant):
         demand = b.command(tick, result, 1, 0, 0., 0.)
         self.brakes = demand["pinchBrakeFraction"]
         target = self.shoot_position if self.approach_position is None else self.approach_position
+        if self.waypoints:
+            target=self.waypoints[0]
         delta = target-d.qpos[:2]
         distance = np.linalg.norm(delta)
-        if (self.approach_position is not None and distance<.035 and
+        if self.waypoints and distance<.14:
+            self.waypoints.pop(0)
+        elif (not self.waypoints and self.approach_position is not None and distance<.035 and
                 abs(angle_error(self.shoot_heading, heading))<.035 and abs(d.qvel[2])<.05):
             self.approach_position = None
             delta = self.shoot_position-d.qpos[:2]
@@ -51,7 +55,11 @@ class DeliveryPlant(ReturnPlant):
         # Limit angular acceleration to avoid driving it into the tread backing.
         self.turn_reference += float(np.clip(desired_turn-self.turn_reference,-.007,.007))
         want_turn = self.turn_reference
-        want_speed = min(.60, 1.7*distance)*max(0.,math.cos(error))**6
+        want_speed = min(self.transit_speed, 1.7*distance)*max(0.,math.cos(error))**6
+        if self.transit_speed>.6:
+            # Bound loaded acceleration while lifting and negotiating corners.
+            want_speed=min(want_speed,self.speed_reference+.012)
+            self.speed_reference=want_speed
         if distance <= .035:
             want_speed = 1.7*delta@body[:2,0]
         common = .8*(want_speed-forward)+want_speed*b.drive.c["motorK"]*b.drive.c["gearRatio"]/b.drive.c["wheelRadiusM"]/12
@@ -122,6 +130,12 @@ def run(args):
 
 def deliver(args, p, row, source, native, target_station, collected):
     p.seated=p.data.time
+    if not 0.<args.transit_speed<=4. or not np.isfinite(args.via).all():
+        raise ValueError("Invalid loaded transit command")
+    p.transit_speed=args.transit_speed
+    p.speed_reference=max(0.,p.observe()[2])
+    frame=WingFrame(args.first_mark,args.field_yaw_deg)
+    p.waypoints=[frame.to_local([x,y,0.])[:2] for x,y in args.via]
     if not math.isfinite(args.final_straight) or args.final_straight<0.:
         raise ValueError("Invalid final straight approach length")
     direction=np.array([math.cos(p.shoot_heading),math.sin(p.shoot_heading)])
@@ -168,6 +182,7 @@ def deliver(args, p, row, source, native, target_station, collected):
                 shootHeading=p.shoot_heading,forwardOffsetM=0. if args.field_station else args.forward_offset,
                 pieceId=piece_id(collected[-1]),collectedMarks=collected,
                 fieldStation=args.field_station,finalStraightM=args.final_straight,
+                viaFieldXY=args.via,transitSpeedMps=args.transit_speed,
                 firstMark=args.first_mark,fieldYawDeg=args.field_yaw_deg)
     (args.output/"result.json").write_text(json.dumps(result,indent=2,allow_nan=False)+"\n")
     print(outcome,p.data.time,flush=True)
@@ -186,6 +201,8 @@ if __name__=="__main__":
     parser.add_argument("--trace-stride",type=int,default=1)
     parser.add_argument("--forward-offset",type=float,default=.11,help="move the shooting reference forward in metres")
     parser.add_argument("--final-straight",type=float,default=0.,help="Align this many metres behind the shooting position")
+    parser.add_argument("--via",type=float,nargs=2,action="append",default=[],metavar=("X","Y"),help="Traverse a field waypoint before final alignment")
+    parser.add_argument("--transit-speed",type=float,default=.6,help="Loaded travel speed limit in m/s")
     parser.add_argument("--first-mark",choices=("inner","middle","outer"),default="inner")
     parser.add_argument("--field-yaw-deg",type=float,default=90.)
     args = parser.parse_args()

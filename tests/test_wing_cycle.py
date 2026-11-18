@@ -14,6 +14,27 @@ def event(source, time):
 
 
 class ScoreLedger(unittest.TestCase):
+    def test_belt_bound_keeps_the_end_caps_and_finite_height(self):
+        from refine_shell_clearance import belt_distances
+        # This ring sample lands at the requested position relative to the belt.
+        normal = np.array([0., 0., 1.])
+        belt = (np.zeros(3), 80., 13., 6.)
+        def gap(x, y, z):
+            center = np.array([x,y-152.4,z])
+            return belt_distances(center, normal, belt, np.array([[1.]]), np.array([[0.]])).item()
+        self.assertAlmostEqual(gap(0., 13., 6.), -25.4)
+        self.assertAlmostEqual(gap(83., 4., 10.), 4.-25.4)
+        self.assertAlmostEqual(gap(104., 7., 11.), 13.-25.4)
+
+    def test_free_flight_screen_uses_the_actual_floor_mark_and_heading(self):
+        from wing_field_frame import WingFrame
+        from wing_speaker_passage import screen
+        frame = WingFrame("middle", 245.)
+        row = dict(q=[.658, 0., 1., 1., 0., 0., 0.], v=[2., -1., 8., 0., 0., 0.])
+        result = screen(row, azimuths=32, dt=.005, frame=frame)
+        np.testing.assert_allclose(result["releaseFieldPositionM"], [2.8956, 5.553075, 1.])
+        np.testing.assert_allclose(result["releaseFieldVelocityMps"], frame.rotation @ row["v"][:3])
+
     def test_annular_shell_uses_bore_and_finite_axial_extent(self):
         from refine_shell_clearance import ring_distances
         # At azimuth zero this ring basis puts the centerline point at +Y.

@@ -1,6 +1,8 @@
 """Regression checks for whole-material target and uncertain optical paths."""
 import sys
 import unittest
+import json
+import tempfile
 from pathlib import Path
 
 import numpy as np
@@ -44,3 +46,56 @@ class OpticalPaths(unittest.TestCase):
 
     def test_center_ray_alone_cannot_score(self):
         self.assertLess(shadow_margin(self.q, self.rectangle(MAJOR, .032)), 0.)
+
+
+class ConsecutiveScores(unittest.TestCase):
+    def setUp(self):
+        from run_axial_shear_lift import digest
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        self.root = Path(self.temp.name)
+        self.sensor = self.root / "sensor.json"
+        self.sensor.write_text(json.dumps({"sensorCaseEnds": [
+            {"caseEndCornersM": [[-.02, -.02, -.01], [.02, .02, .01]]}
+        ]}))
+        self.previous = self.root / "score.json"
+        score = self.segment("prior", "first", 0, [0, 0, 1, 2, 2, 2, 2])
+        self.previous.write_text(json.dumps(dict(shot="first", native="same", scoreS=1.,
+            field=score, sensorObservation={"sensorFile": digest(self.sensor)})))
+
+    def segment(self, name, shot, start, positions, release=None):
+        from run_axial_shear_lift import digest
+        folder = self.root / name
+        folder.mkdir()
+        trace = folder / "trace.jsonl"
+        rows = [dict(t=float(start+i), q=[x, 0, 0, 1, 0, 0, 0], v=[0]*6)
+                for i, x in enumerate(positions)]
+        trace.write_text("".join(json.dumps(row)+"\n" for row in rows))
+        pin = digest(trace)
+        (folder / "result.json").write_text(json.dumps(dict(
+            parameters=dict(trace_every_step=True, dt=1.), sourceTrace=shot, trace=pin,
+            field={"registered": "same"}, nativeSha256="same", segmentStartS=start,
+            releaseTimeS=start if release is None else release, endS=rows[-1]["t"])))
+        return pin
+
+    def check(self, name):
+        from counter_reset import check
+        return check(self.previous, [self.root/"prior"], self.root/name, self.sensor)
+
+    def test_reset_detects_passage_and_piece_separation(self):
+        self.segment("next", "second", 3, [-2, -1, 0])
+        result = self.check("next")
+        self.assertEqual(result["sensorClearByS"], 2.)
+        self.assertGreater(result["minimumPieceSeparationM"], 1.)
+
+    def test_intersecting_paths_between_clear_endpoints_need_contact_solve(self):
+        self.segment("intersect", "second", 3, [0, 4])
+        with self.assertRaisesRegex(ValueError, "coupled contact"):
+            self.check("intersect")
+
+    def test_cannot_start_at_a_later_field_segment_or_reuse_a_piece(self):
+        self.segment("late", "second", 3, [0, 0], release=2)
+        self.segment("duplicate", "first", 3, [0, 0])
+        for name in ("late", "duplicate"):
+            with self.subTest(name=name), self.assertRaisesRegex(ValueError, "Distinct concurrent"):
+                self.check(name)

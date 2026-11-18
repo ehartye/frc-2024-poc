@@ -1,0 +1,58 @@
+{
+  "schema": "continued-full-field-score/1",
+  "precedingScores": [
+    {
+      "piece": "blue-wing-middle",
+      "shot": "2b65cf164a454630ba0afe1b4467113656aee06f5dc1e92b99c5e7b1925bcb79",
+      "scoreS": 19.223500000011462,
+      "receiptSha256": "205bd708130af8c881455a952f9b5d9a760171576ccd0712eb6fa9d1aea644ca"
+    }
+  ],
+  "scoreNumber": 2,
+  "piece": "blue-wing-outer",
+  "scoreS": 38.27090000010864,
+  "openedByS": 35.53360000001777,
+  "releaseS": 35.38740000001292,
+  "native": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "firstMark": "middle",
+  "fieldYawDeg": 245.0,
+  "chassisFieldXY": [
+    1.4845353541321649,
+    5.553015363890844
+  ],
+  "firstPickupStop": "3dc7df0d5fbcb7f9a001a9d56ba6659da2ffef030f56940f4d9e0385d0a9abea",
+  "carry": "2a04ebb0fd8a88997b8375684f52180331434634f89a9cbe7fa101c24e44c8ee",
+  "shot": "3d11228712938b08d86fd88007ccab7df046a06e6387caec29de5aad2ecd7370",
+  "field": "13e2b05b2bca80e3194073c99ddf3c25fc6b8bd0e17c283b9a46ccd398dc78b9",
+  "nextPickup": "3164b46ab50e424380519b527fbe60f22640444ef7d6a9aefb8be1d97e559531",
+  "fieldRoute": "06e4307f380e7c5fa111faf530a7a5b7f70fcc6e1656386e29de757a11ec83ec",
+  "flightClearance": "18a0e956c6670c4bc69a955380ac62d75e417d5695c9421fe86f28efb579a5a1",
+  "shellRefinement": "41d9f4cf45566a67aa40113074d3c33f2efe85903528f90352ecf5b99eed1c82",
+  "sensorObservation": {
+    "opening": {
+      "firstPossibleS": 35.49930000001663,
+      "fullyThroughByS": 35.53360000001777,
+      "minimumMarginM": 0.08266847686033621
+    },
+    "firstFullShadowsS": [
+      38.27090000010864,
+      38.220800000106976
+    ],
+    "firstSimultaneousFullShadowS": 38.27090000010864,
+    "bestMarginPerPairM": [
+      0.008584290351840908,
+      0.009189720346597001
+    ],
+    "bestSimultaneousMarginM": 0.007701699473771861,
+    "countedFloorNotes": 1,
+    "fieldTrace": "13e2b05b2bca80e3194073c99ddf3c25fc6b8bd0e17c283b9a46ccd398dc78b9",
+    "sensorFile": "13d07c04856ee1ca927d8f17fa29570e6ead74cc1c917f1879b94b3b9d8b236f",
+    "sourceTrace": "3d11228712938b08d86fd88007ccab7df046a06e6387caec29de5aad2ecd7370"
+  },
+  "pickupClearance": "d509689120da79a991219f2e0febe6f1f55664f5c023ef5b891e3eae7f6d2f87",
+  "deliveryClearance": "0db1440cf65ff25013c07aff92567fb252a4e59be5d81ed666f68f1450e18ab7",
+  "shotClearance": "0895bb42d9e6d821b946790b47c3d34268f7a93c54bf9954162497ad77a97d56",
+  "counterResets": [
+    "28800645092dfdb85ef8287f68557c3897a888b7ff925a4990c24d802f138dea"
+  ]
+}

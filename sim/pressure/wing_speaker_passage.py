@@ -7,6 +7,7 @@ from pathlib import Path
 import numpy as np
 
 from run_axial_shear_lift import digest
+from wing_field_frame import WingFrame
 
 
 # FE-2024 blue carpet frame; GE-24300 sheet 2 and registered panel faces.
@@ -25,15 +26,12 @@ def rotation(q):
                      [2*(x*z-w*y),2*(y*z+w*x),1-2*(x*x+y*y)]])
 
 
-def screen(row, azimuths=512, dt=.00025, lateral_offset=0.):
-    # Apply one transform to the entire pickup/turn/release history. The
-    # original floor NOTE starts at (.658,0), on the blue inner wing mark.
-    field = np.array([[0.,-1.,0.],[1.,0.,0.],[0.,0.,1.]])
-    floor_mark = np.array([114*.0254,161.625*.0254+lateral_offset,0.])
+def screen(row, azimuths=512, dt=.00025, lateral_offset=0., frame=None):
+    frame = frame or WingFrame()
     q,v = row["q"], row["v"]
-    center = floor_mark + field @ (np.array(q[-7:-4])-[.658,0.,0.])
-    velocity = field @ v[-6:-3]
-    axes = field @ rotation(q[-4:])
+    center = frame.to_field(q[-7:-4]) + [0., lateral_offset, 0.]
+    velocity = frame.rotation @ v[-6:-3]
+    axes = frame.rotation @ rotation(q[-4:])
     transverse = MAJOR**2/2 + 5*TUBE**2/8
     axial = MAJOR**2 + 3*TUBE**2/4
     momentum = axes @ (np.array([transverse,transverse,axial])*v[-3:])
@@ -89,10 +87,14 @@ def assess(folder):
             last = json.loads(line)
     if last["wheelNormalN"] or last["beltNormalN"] or abs(last["time"]-receipt["end"])>1e-8:
         raise ValueError("Final state is inside the mechanism or missing")
-    return dict(schema="blue-inner-wing-speaker-opening/1",sourceTraceSha256=receipt["traceSha256"],
-                releaseS=last["time"],nominal=screen(last),refined=screen(last,1024,.000125),
-                lateralMissControl=screen(last,lateral_offset=.75),verifiedSpeakerScores=0,
-                limits=["Centered wing NOTE and 90 degree initial robot heading; one rigid field transform",
+    frame = WingFrame(receipt.get("firstMark", "inner"), receipt.get("fieldYawDeg", 90.))
+    schema = ("blue-inner-wing-speaker-opening/1" if (frame.first_mark, frame.yaw_degrees)==("inner", 90.)
+              else "blue-wing-speaker-opening/2")
+    return dict(schema=schema,sourceTraceSha256=receipt["traceSha256"],
+                firstMark=frame.first_mark, fieldYawDeg=frame.yaw_degrees,
+                releaseS=last["time"],nominal=screen(last, frame=frame),refined=screen(last,1024,.000125,frame=frame),
+                lateralMissControl=screen(last,lateral_offset=.75,frame=frame),verifiedSpeakerScores=0,
+                limits=["One rigid field registration for the entire run",
                         "Rigid free flight under gravity; field-panel contact and airflow omitted",
                         "Nominal rectangular opening; downstream counter evidence required"])
 

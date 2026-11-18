@@ -44,6 +44,11 @@ class ReturnPlant(RaisedFeed):
         self.departure_xy = d.qpos[:2].copy()
         self.departure_heading = float(d.qpos[2])
         self.retreat_distance = 0.
+        self.approach_heading = None
+        self.approach_waypoint = None
+        self.capture_standoff = 0.
+        self.waypoints=[]
+        self.transit_speed=1.1
         mujoco.mj_forward(self.model, d)
 
     def contact(self):
@@ -62,11 +67,32 @@ class ReturnPlant(RaisedFeed):
         target_heading = bearing if self.turn_heading is None else self.turn_heading
         error = angle_error(target_heading, d.qpos[2])
         want_turn = np.clip(4*error, -1.65, 1.65)
-        approach = min(1.1, max(0., 1.7*(distance-.178)))
+        approach = min(self.transit_speed, max(0., 1.7*(distance-.178)))
         if distance < .65 or self.turn_heading is not None:
             approach = min(.26, max(0., 1.5*(rel[0]-.178)))
         elapsed = d.time-self.release
         want_speed = approach*max(0., math.cos(error))**6
+        if self.waypoints:
+            offset=self.waypoints[0]-d.qpos[:2]
+            gap=np.linalg.norm(offset)
+            error=angle_error(math.atan2(offset[1],offset[0]),heading)
+            want_turn=np.clip(4*error,-1.65,1.65)
+            want_speed=min(self.transit_speed,2*gap)*max(0.,math.cos(error))**6
+            if gap<.14:
+                self.waypoints.pop(0)
+        elif self.approach_waypoint is not None:
+            offset=self.approach_waypoint-d.qpos[:2]
+            gap=np.linalg.norm(offset)
+            target_heading=math.atan2(offset[1],offset[0]) if gap>.045 else self.approach_heading
+            error=angle_error(target_heading,heading)
+            want_turn=np.clip(4*error,-1.65,1.65)
+            want_speed=min(1.1,1.7*gap)*max(0.,math.cos(error))**6 if gap>.045 else 0.
+            if gap<=.045 and abs(error)<.035 and abs(d.qvel[2])<.07:
+                self.approach_waypoint=None
+        elif self.capture_standoff:
+            axis=np.array([math.cos(self.approach_heading),math.sin(self.approach_heading)])
+            distance_left=delta@axis-self.capture_standoff
+            want_speed=min(want_speed,float(np.clip(2.5*distance_left,-.08,1.1)))
         if elapsed < 2.8 and distance < .72:
             want_speed = 0.
         if self.retreat_distance:
@@ -211,6 +237,20 @@ def run(args):
     if not math.isfinite(args.retreat) or args.retreat<0.:
         raise ValueError("Invalid departure distance")
     plant.retreat_distance=args.retreat
+    frame=WingFrame(args.first_mark,args.field_yaw_deg)
+    plant.waypoints=[frame.to_local([x,y,0.])[:2] for x,y in args.via]
+    if not 0.<args.transit_speed<=4. or not np.isfinite(args.via).all():
+        raise ValueError("Invalid transit command")
+    plant.transit_speed=args.transit_speed
+    if args.approach_heading is not None:
+        if not math.isfinite(args.approach_heading) or not 0.<=args.capture_standoff<.35:
+            raise ValueError("Invalid floor approach heading or pickup standoff")
+        plant.approach_heading=math.radians(args.approach_heading-args.field_yaw_deg)
+        direction=np.array([math.cos(plant.approach_heading),math.sin(plant.approach_heading)])
+        plant.approach_waypoint=plant.mark_xy-.95*direction
+        plant.capture_standoff=args.capture_standoff
+    elif args.capture_standoff:
+        raise ValueError("A pickup standoff needs a field approach heading")
     d = plant.data
     args.output.mkdir(exist_ok=False)
     period = round(.01/args.dt)
@@ -259,7 +299,8 @@ def run(args):
                 start=last["time"],end=d.time,firstBilateral=first_touch,seated=plant.capture_at,
                 minimumBusV=minimum_bus,peakLocalBrakingW=worst_brake,outcome=outcome,dt=args.dt,grid=args.grid,
                 traceStride=args.trace_stride,firstMark=args.first_mark,fieldYawDeg=args.field_yaw_deg,
-                retreatM=args.retreat,
+                retreatM=args.retreat,approachHeadingDeg=args.approach_heading,captureStandoffM=args.capture_standoff,
+                viaFieldXY=args.via,transitSpeedMps=args.transit_speed,
                 waitingNoteLocalXY=plant.mark_xy.tolist(),pieceId=piece_id(args.next_mark),
                 collectedMarks=[*release.get("collectedMarks",[args.first_mark]),args.next_mark])
     (args.output/"result.json").write_text(json.dumps(result,indent=2,allow_nan=False)+"\n")
@@ -276,6 +317,10 @@ if __name__ == "__main__":
     p.add_argument("--first-mark",choices=WING_MARKS_INCHES,default="inner")
     p.add_argument("--next-mark",choices=SUPPLY_MARKS,default="middle")
     p.add_argument("--retreat",type=float,default=0.,help="Back away from the Speaker before turning, in metres")
+    p.add_argument("--approach-heading",type=float,help="Align before approaching the floor mark at this field heading in degrees")
+    p.add_argument("--capture-standoff",type=float,default=0.,help="Stop the chassis this far short of the mark while the intake draws in the NOTE")
+    p.add_argument("--via",type=float,nargs=2,action="append",default=[],metavar=("X","Y"),help="Traverse a field waypoint before pickup alignment")
+    p.add_argument("--transit-speed",type=float,default=1.1,help="Empty travel speed limit in m/s")
     p.add_argument("--field-yaw-deg",type=float,default=90.)
     p.add_argument("--horizon",type=float,default=11.)
     run(p.parse_args())

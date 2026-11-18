@@ -7,7 +7,7 @@ from pathlib import Path
 import numpy as np
 
 from run_axial_shear_lift import EVIDENCE, digest, load
-from wing_field_frame import SUPPLY_MARKS, WingFrame
+from wing_field_frame import SUPPLY_MARKS, WingFrame, piece_id
 
 
 SURFACES = {"FE-2024-01","Cache Zone","Starting Line_Mid Line","Starting Line_Launch Line",
@@ -150,12 +150,23 @@ def audit(rows,frame,inventory,field,waiting):
                 minimumReportedAxisGapM=minimum if math.isfinite(minimum) else None)
 
 
+def pickup_entry(acquisition,frame,prior_marks):
+    marks=acquisition["collectedMarks"]
+    if marks[:-1]!=prior_marks or len(set(marks))!=len(marks) or acquisition["pieceId"]!=piece_id(marks[-1]):
+        raise ValueError("Pickup does not add one fresh floor NOTE")
+    mark=frame.to_local(frame.mark(marks[-1]))
+    if not np.allclose(acquisition["waitingNoteLocalXY"],mark[:2],rtol=0.,atol=1e-10):
+        raise ValueError("Waiting NOTE starts at a different field mark")
+    return np.r_[acquisition["start"],acquisition["initialRobotQ"][:5],mark[:2],.0254-.235*9.80665/20000]
+
+
 if __name__=="__main__":
     parser=argparse.ArgumentParser(description=__doc__)
     for name in ("pickup","inventory","field","output"):
         parser.add_argument("--"+name,type=Path,required=True)
     parser.add_argument("--release", type=Path)
     parser.add_argument("--first-delivery", type=Path, help="Continue the first floor pickup from its braked state")
+    parser.add_argument("--entry-acquisition",type=Path,help="Audit a later cycle starting on the prior release clock")
     parser.add_argument("--first-mark",choices=("outer","middle","inner"),required=True)
     parser.add_argument("--field-yaw-deg",type=float,required=True)
     parser.add_argument("--next-phase",type=Path,nargs="*")
@@ -168,12 +179,25 @@ if __name__=="__main__":
             or field["source"]!="42c91b3efb9521d059c13cf25e2d7dda6315bdd6b7eb1202847bfe84ffb43c1a"
             or digest(args.pickup/"stop/receipt.json")!=pins["stop"]):
         raise ValueError("Wrong registered field or robot")
+    collected=[args.first_mark]
+    entry=None
+    if args.entry_acquisition:
+        if not args.first_delivery:
+            parser.error("--entry-acquisition requires a delivery")
+        entry=load(args.entry_acquisition/"result.json")
+        collected=entry["collectedMarks"]
+        if (collected[0]!=args.first_mark or entry["outcome"]!="SEATED" or entry["nativeSha256"]!=pins["native"]
+                or (entry["firstMark"],entry["fieldYawDeg"])!=(args.first_mark,args.field_yaw_deg)):
+            raise ValueError("Invalid acquisition for this field frame")
+        start=pickup_entry(entry,frame,collected[:-1])
+        initial_rows=np.vstack((start,phase(args.entry_acquisition)))
     if args.first_delivery:
         carry=load(args.first_delivery/"result.json")
-        if (carry["acquisitionTrace"]!=pins["stop"] or carry["nativeSha256"]!=pins["native"]
+        expected=entry["trace"] if entry else pins["stop"]
+        if (carry["acquisitionTrace"]!=expected or carry["nativeSha256"]!=pins["native"]
                 or (carry["firstMark"],carry["fieldYawDeg"])!=(args.first_mark,args.field_yaw_deg)):
             raise ValueError("Delivery differs from the acquired state or field registration")
-        rows=np.vstack((ground_prefix(args.pickup), phase(args.first_delivery)))
+        rows=np.vstack((initial_rows if entry else ground_prefix(args.pickup), phase(args.first_delivery)))
         if args.release:
             shot=load(args.release/"result.json")
             if shot["sourceTraceSha256"]!=carry["trace"] or shot["nativeSha256"]!=pins["native"]:
@@ -183,26 +207,27 @@ if __name__=="__main__":
         if not args.release:
             parser.error("Supply --release or --first-delivery")
         rows=prefix(args.pickup,args.release)
-    waiting=[frame.mark(n)[:2] for n in SUPPLY_MARKS if n!=args.first_mark]
+    waiting=[frame.mark(n)[:2] for n in SUPPLY_MARKS if n not in collected]
     result=dict(firstMark=args.first_mark,yaw=args.field_yaw_deg,native=pins["native"],
                 field=field["source"],fieldBounds=digest(args.field),stop=pins["stop"],results=[])
     if args.release:
         result["release"]=digest(args.release/"trace.jsonl")
     if args.first_delivery:
         result["delivery"]=carry["trace"]
+    if entry:
+        result["entryAcquisition"]=entry["trace"]
+        result["entryRelease"]=entry["firstReleaseTrace"]
     result["results"].append(audit(rows,frame,robot["inventory"],field["parts"],waiting))
     if args.next_phase:
         acquisition = load(args.next_phase[0]/"result.json")
         if not args.release or acquisition["firstReleaseTrace"]!=result["release"]:
             raise ValueError("Return does not continue the audited release")
-        collected=acquisition.get("collectedMarks",[args.first_mark,"middle"])
-        if collected[:-1]!=[args.first_mark] or len(set(collected))!=2:
-            raise ValueError("Expected a distinct second floor NOTE")
-        field_mark=frame.mark(collected[-1])
-        mark=frame.to_local(field_mark)
-        if not np.allclose(acquisition["waitingNoteLocalXY"],mark[:2],rtol=0.,atol=1e-10):
-            raise ValueError("Waiting piece was placed at a different mark")
-        start=np.r_[rows[-1,:6],mark[:2],.0254-.235*9.80665/20000]
+        if "collectedMarks" not in acquisition:
+            acquisition=dict(acquisition,collectedMarks=[args.first_mark,"middle"],pieceId=piece_id("middle"))
+        start=pickup_entry(acquisition,frame,collected)
+        if not np.allclose(start[:6],rows[-1,:6],rtol=0,atol=1e-8):
+            raise ValueError("Robot pose changed at release")
+        field_mark=frame.mark(acquisition["collectedMarks"][-1])
         pieces=[xy for xy in waiting if not np.array_equal(xy,field_mark[:2])]
         following=np.vstack([start,*[phase(f) for f in args.next_phase]])
         result["followingTraces"]=[digest(f/"trace.jsonl") for f in args.next_phase]
