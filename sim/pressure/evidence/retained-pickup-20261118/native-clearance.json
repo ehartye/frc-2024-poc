@@ -1,0 +1,79 @@
+{
+  "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "nativeBodyCount": 734,
+  "nativeInventorySha256": "c8157ef35f3e26d5163a6856460920fbd943b321e9a672e7cacecb8ec4a82cdd",
+  "jointCount": 0,
+  "samples": {
+    "attained-8mm": {
+      "poses": 81,
+      "booleans": 1030,
+      "unexpectedIntersections": 0
+    },
+    "nominal-lift": {
+      "poses": 32,
+      "booleans": 384,
+      "unexpectedIntersections": 0
+    },
+    "nominal-pitch": {
+      "poses": 31,
+      "booleans": 424,
+      "unexpectedIntersections": 0
+    }
+  },
+  "crossMotionSamples": [
+    {
+      "label": "floor",
+      "pairs": 23,
+      "newOrIncreasedOverlaps": 0
+    },
+    {
+      "label": "hold",
+      "pairs": 21,
+      "newOrIncreasedOverlaps": 0
+    },
+    {
+      "label": "pitch-15",
+      "pairs": 21,
+      "newOrIncreasedOverlaps": 0
+    },
+    {
+      "label": "pitch-30",
+      "pairs": 21,
+      "newOrIncreasedOverlaps": 0
+    },
+    {
+      "label": "pitch-60",
+      "pairs": 18,
+      "newOrIncreasedOverlaps": 0
+    },
+    {
+      "label": "lift-mid",
+      "pairs": 14,
+      "newOrIncreasedOverlaps": 0
+    },
+    {
+      "label": "handoff",
+      "pairs": 32,
+      "newOrIncreasedOverlaps": 0
+    }
+  ],
+  "bounds": {
+    "noteVolumeToleranceMm3": 0.0001,
+    "crossMotionVolumeToleranceMm3": 0.01
+  },
+  "limits": [
+    "Sampled native Boolean intersections at nominal fitted poses and attained short-lift poses. Full-route dynamics and installed hardware require independent verification.",
+    "Motion group labels and assigned-material mass are CAD evidence. Transmission installation, material calibration and motor mass accounting remain unverified."
+  ],
+  "assignedMassKg": {
+    "cradle": 4.874030245178885,
+    "carriage": 5.775067767699491
+  },
+  "checksums": {
+    "native-motion-witnesses.jsonl": "5e166282bf6baead2511406b1825ff11071ed0256fa1155e2e55e4161ef9835e",
+    "native-note-clearance.jsonl": "7bb21521485d20503246b4763795020871fce334a79ed86e7f3bbea4f56e8fef",
+    "cad-witness-poses.json": "01393c9238bcaae0081350d5bbee19f194c4be8896c0f3101260db6e0d41865f",
+    "fusion-motion-witness.py": "d1f3aaa7bca7b7d7c1e15853360700b34806734262cc4fd37bea9d3161b77a06",
+    "fusion-note-clearance.py": "d857de3baeb0beca2645a25f94a4fc52fa1431d5ea9f2b384269a14b04a7c5b0"
+  }
+}

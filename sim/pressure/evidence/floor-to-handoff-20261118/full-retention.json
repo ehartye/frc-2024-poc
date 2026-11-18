@@ -1,0 +1,184 @@
+{
+  "runs": [
+    {
+      "dt": 0.0005,
+      "grid": 1024,
+      "steps": 11600,
+      "outcome": "HORIZON",
+      "retained": true,
+      "firstAirborneS": 0.149,
+      "returnedOrLostContact": false,
+      "holdMinimumClearanceM": 0.3170124917419564,
+      "holdPivotMaxErrorM": 0.00042324156602990826,
+      "holdMaxAngleErrorDegrees": 0.054077425272817156,
+      "holdMinimumTotalNormalN": 7.49999365522023,
+      "finalPivotHeightM": 0.474833426913675,
+      "finalNoteCenterHeightM": 0.4743861366328582,
+      "finalNotePitchDegrees": 59.9489121150151,
+      "maxRelativeTravelM": 0.007895918336429775,
+      "maxEnergyDriftJ": 3.2892316263753545e-05,
+      "traceSha256": "f60ceacba40cfd4f0a11c9ddefa847297e1d6b01dd50a6e0f0be23a64a505fcc",
+      "inputs": {
+        "archive": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+        "ground": "5b16b8154f129d52f29757b3080d69e748f9e401c759476435174ca9a1814f58",
+        "stop": "4d245df03888282deafaf56f4a93991f0ac0b096fc6bd260a5eb2df8b54d7789",
+        "route": "6d964deb9b368938ac5a14677a76ecbbeeb30137f01c215568ad07da02f921a1",
+        "shear": "6e6b3ad7a3787d4c96a26eceea28c33a4cdf1f5cd04d39bc3ff3a493cbc737bc",
+        "supply": "46c59a60cb9d6403458e2a269c23b8751686b4170cad6336dd9c9ffd4e05d3ad",
+        "runner": "d1822ad9f1febb5f6bcf878abebfb277f830958c0fced9c7790a1e6a4768a3dd"
+      }
+    },
+    {
+      "dt": 0.00025,
+      "grid": 1024,
+      "steps": 23200,
+      "outcome": "HORIZON",
+      "retained": true,
+      "firstAirborneS": 0.14875,
+      "returnedOrLostContact": false,
+      "holdMinimumClearanceM": 0.3170124734988474,
+      "holdPivotMaxErrorM": 0.0004231020607711189,
+      "holdMaxAngleErrorDegrees": 0.05407687446518437,
+      "holdMinimumTotalNormalN": 7.499994101453091,
+      "finalPivotHeightM": 0.47483342686360364,
+      "finalNoteCenterHeightM": 0.47438613396627,
+      "finalNotePitchDegrees": 59.948911761954,
+      "maxRelativeTravelM": 0.007895923518788015,
+      "maxEnergyDriftJ": 8.170015015913478e-06,
+      "traceSha256": "d99c861f1e7162c360ecb000ce3cd74694398937c136529eff87b198ffd35036",
+      "inputs": {
+        "archive": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+        "ground": "5b16b8154f129d52f29757b3080d69e748f9e401c759476435174ca9a1814f58",
+        "stop": "4d245df03888282deafaf56f4a93991f0ac0b096fc6bd260a5eb2df8b54d7789",
+        "route": "6d964deb9b368938ac5a14677a76ecbbeeb30137f01c215568ad07da02f921a1",
+        "shear": "6e6b3ad7a3787d4c96a26eceea28c33a4cdf1f5cd04d39bc3ff3a493cbc737bc",
+        "supply": "46c59a60cb9d6403458e2a269c23b8751686b4170cad6336dd9c9ffd4e05d3ad",
+        "runner": "d1822ad9f1febb5f6bcf878abebfb277f830958c0fced9c7790a1e6a4768a3dd"
+      }
+    },
+    {
+      "dt": 0.000125,
+      "grid": 1024,
+      "steps": 46400,
+      "outcome": "HORIZON",
+      "retained": true,
+      "firstAirborneS": 0.148625,
+      "returnedOrLostContact": false,
+      "holdMinimumClearanceM": 0.3170124634408443,
+      "holdPivotMaxErrorM": 0.0004230689355189665,
+      "holdMaxAngleErrorDegrees": 0.054075901506892426,
+      "holdMinimumTotalNormalN": 7.499994127605165,
+      "finalPivotHeightM": 0.47483342685239166,
+      "finalNoteCenterHeightM": 0.4743861338536766,
+      "finalNotePitchDegrees": 59.94891264275292,
+      "maxRelativeTravelM": 0.007895946217202798,
+      "maxEnergyDriftJ": 2.0468208767237053e-06,
+      "traceSha256": "bffa9b7beee04d9f6878b70c6f84dd0ceb524c6972bf9eb1cb1042f913b17d8b",
+      "inputs": {
+        "archive": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+        "ground": "5b16b8154f129d52f29757b3080d69e748f9e401c759476435174ca9a1814f58",
+        "stop": "4d245df03888282deafaf56f4a93991f0ac0b096fc6bd260a5eb2df8b54d7789",
+        "route": "6d964deb9b368938ac5a14677a76ecbbeeb30137f01c215568ad07da02f921a1",
+        "shear": "6e6b3ad7a3787d4c96a26eceea28c33a4cdf1f5cd04d39bc3ff3a493cbc737bc",
+        "supply": "46c59a60cb9d6403458e2a269c23b8751686b4170cad6336dd9c9ffd4e05d3ad",
+        "runner": "d1822ad9f1febb5f6bcf878abebfb277f830958c0fced9c7790a1e6a4768a3dd"
+      }
+    },
+    {
+      "dt": 0.0005,
+      "grid": 512,
+      "steps": 11600,
+      "outcome": "HORIZON",
+      "retained": true,
+      "firstAirborneS": 0.149,
+      "returnedOrLostContact": false,
+      "holdMinimumClearanceM": 0.3170596481976826,
+      "holdPivotMaxErrorM": 0.0004232451027349482,
+      "holdMaxAngleErrorDegrees": 0.05117820083206535,
+      "holdMinimumTotalNormalN": 7.494491758107855,
+      "finalPivotHeightM": 0.4748334268094362,
+      "finalNoteCenterHeightM": 0.4744309108827478,
+      "finalNotePitchDegrees": 59.951933955791574,
+      "maxRelativeTravelM": 0.007831845172439546,
+      "maxEnergyDriftJ": 3.286251747081515e-05,
+      "traceSha256": "b56996bf5d6767dd440541547534b7b1fbabeb6ab88b0e4d03004feec0858a20",
+      "inputs": {
+        "archive": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+        "ground": "5b16b8154f129d52f29757b3080d69e748f9e401c759476435174ca9a1814f58",
+        "stop": "4d245df03888282deafaf56f4a93991f0ac0b096fc6bd260a5eb2df8b54d7789",
+        "route": "6d964deb9b368938ac5a14677a76ecbbeeb30137f01c215568ad07da02f921a1",
+        "shear": "6e6b3ad7a3787d4c96a26eceea28c33a4cdf1f5cd04d39bc3ff3a493cbc737bc",
+        "supply": "46c59a60cb9d6403458e2a269c23b8751686b4170cad6336dd9c9ffd4e05d3ad",
+        "runner": "d1822ad9f1febb5f6bcf878abebfb277f830958c0fced9c7790a1e6a4768a3dd"
+      }
+    },
+    {
+      "dt": 0.0005,
+      "grid": 2048,
+      "steps": 11600,
+      "outcome": "HORIZON",
+      "retained": true,
+      "firstAirborneS": 0.149,
+      "returnedOrLostContact": false,
+      "holdMinimumClearanceM": 0.3170181580068908,
+      "holdPivotMaxErrorM": 0.0004232405546882867,
+      "holdMaxAngleErrorDegrees": 0.05619799633408076,
+      "holdMinimumTotalNormalN": 7.499454791238406,
+      "finalPivotHeightM": 0.47483342699689834,
+      "finalNoteCenterHeightM": 0.474389311446266,
+      "finalNotePitchDegrees": 59.947280364635525,
+      "maxRelativeTravelM": 0.00789025341940486,
+      "maxEnergyDriftJ": 3.288130165357865e-05,
+      "traceSha256": "371046f08a12c1c8f69f298929ab61d286e6d261ed708b5e7c4b63214dfad120",
+      "inputs": {
+        "archive": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+        "ground": "5b16b8154f129d52f29757b3080d69e748f9e401c759476435174ca9a1814f58",
+        "stop": "4d245df03888282deafaf56f4a93991f0ac0b096fc6bd260a5eb2df8b54d7789",
+        "route": "6d964deb9b368938ac5a14677a76ecbbeeb30137f01c215568ad07da02f921a1",
+        "shear": "6e6b3ad7a3787d4c96a26eceea28c33a4cdf1f5cd04d39bc3ff3a493cbc737bc",
+        "supply": "46c59a60cb9d6403458e2a269c23b8751686b4170cad6336dd9c9ffd4e05d3ad",
+        "runner": "d1822ad9f1febb5f6bcf878abebfb277f830958c0fced9c7790a1e6a4768a3dd"
+      }
+    }
+  ],
+  "timesteps": [
+    {
+      "states": 11600,
+      "positionM": 4.310502341731137e-07,
+      "velocityMps": 0.00040314033338719,
+      "angleRad": 4.0764566144879666e-07,
+      "angularVelocityRadps": 9.031878954198001e-06,
+      "withinTranslationBounds": true
+    },
+    {
+      "states": 23200,
+      "positionM": 1.8052146183444862e-07,
+      "velocityMps": 6.98734506156427e-05,
+      "angleRad": 1.9413133367507385e-07,
+      "angularVelocityRadps": 3.10580293545954e-06,
+      "withinTranslationBounds": true
+    }
+  ],
+  "pressureGrids": [
+    {
+      "states": 11600,
+      "positionM": 8.242097737376497e-05,
+      "velocityMps": 0.0018190980253426693,
+      "angleRad": 0.0003297282965402104,
+      "angularVelocityRadps": 0.0029911737074551636,
+      "withinTranslationBounds": false
+    },
+    {
+      "states": 11600,
+      "positionM": 1.3636388578208702e-05,
+      "velocityMps": 0.00012131679113726312,
+      "angleRad": 0.00016040232976655133,
+      "angularVelocityRadps": 0.0008724869274423508,
+      "withinTranslationBounds": true
+    }
+  ],
+  "retainedAll": true,
+  "temporalBoundPassed": true,
+  "spatialBoundPassed": true,
+  "hardwareValidated": false
+}

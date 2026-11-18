@@ -1,0 +1,28 @@
+{
+  "dt": 0.0005,
+  "grid": 1024,
+  "steps": 11600,
+  "outcome": "HORIZON",
+  "retained": true,
+  "firstAirborneS": 0.149,
+  "returnedOrLostContact": false,
+  "holdMinimumClearanceM": 0.3170124917419564,
+  "holdPivotMaxErrorM": 0.00042324156602990826,
+  "holdMaxAngleErrorDegrees": 0.054077425272817156,
+  "holdMinimumTotalNormalN": 7.49999365522023,
+  "finalPivotHeightM": 0.474833426913675,
+  "finalNoteCenterHeightM": 0.4743861366328582,
+  "finalNotePitchDegrees": 59.9489121150151,
+  "maxRelativeTravelM": 0.007895918336429775,
+  "maxEnergyDriftJ": 3.2892316263753545e-05,
+  "traceSha256": "f60ceacba40cfd4f0a11c9ddefa847297e1d6b01dd50a6e0f0be23a64a505fcc",
+  "inputs": {
+    "archive": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+    "ground": "5b16b8154f129d52f29757b3080d69e748f9e401c759476435174ca9a1814f58",
+    "stop": "4d245df03888282deafaf56f4a93991f0ac0b096fc6bd260a5eb2df8b54d7789",
+    "route": "6d964deb9b368938ac5a14677a76ecbbeeb30137f01c215568ad07da02f921a1",
+    "shear": "6e6b3ad7a3787d4c96a26eceea28c33a4cdf1f5cd04d39bc3ff3a493cbc737bc",
+    "supply": "46c59a60cb9d6403458e2a269c23b8751686b4170cad6336dd9c9ffd4e05d3ad",
+    "runner": "d1822ad9f1febb5f6bcf878abebfb277f830958c0fced9c7790a1e6a4768a3dd"
+  }
+}

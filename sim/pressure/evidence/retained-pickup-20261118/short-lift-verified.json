@@ -1,0 +1,114 @@
+{
+  "runs": [
+    {
+      "outcome": "HORIZON",
+      "retained": true,
+      "dt": 0.0005,
+      "grid": 1024,
+      "steps": 1600,
+      "firstClearanceAbove10umS": 0.0825,
+      "minHoldClearanceM": 0.007383382399543478,
+      "minHoldBeltContact": true,
+      "finalRiseM": 0.007738097579796009,
+      "finalPivotRiseM": 0.00823649544103492,
+      "maxEnergyDriftJ": 1.674489290234317e-06,
+      "initialMechanicalDifferenceJ": 1.249000902703301e-16
+    },
+    {
+      "outcome": "HORIZON",
+      "retained": true,
+      "dt": 0.00025,
+      "grid": 1024,
+      "steps": 3200,
+      "firstClearanceAbove10umS": 0.0825,
+      "minHoldClearanceM": 0.007383457218293414,
+      "minHoldBeltContact": true,
+      "finalRiseM": 0.007738109545111421,
+      "finalPivotRiseM": 0.00823650408846277,
+      "maxEnergyDriftJ": 3.9760468418473943e-07,
+      "initialMechanicalDifferenceJ": 1.249000902703301e-16
+    },
+    {
+      "outcome": "HORIZON",
+      "retained": true,
+      "dt": 0.000125,
+      "grid": 1024,
+      "steps": 6400,
+      "firstClearanceAbove10umS": 0.082375,
+      "minHoldClearanceM": 0.00738346031233152,
+      "minHoldBeltContact": true,
+      "finalRiseM": 0.007738111839237512,
+      "finalPivotRiseM": 0.008236505755537415,
+      "maxEnergyDriftJ": 9.364691356487237e-08,
+      "initialMechanicalDifferenceJ": 1.249000902703301e-16
+    },
+    {
+      "outcome": "HORIZON",
+      "retained": true,
+      "dt": 0.0005,
+      "grid": 512,
+      "steps": 1600,
+      "firstClearanceAbove10umS": 0.0825,
+      "minHoldClearanceM": 0.0073799956027465865,
+      "minHoldBeltContact": true,
+      "finalRiseM": 0.007735922776403996,
+      "finalPivotRiseM": 0.008236395379197278,
+      "maxEnergyDriftJ": 2.1455820014082763e-06,
+      "initialMechanicalDifferenceJ": -4.749413430593652e-07
+    },
+    {
+      "outcome": "HORIZON",
+      "retained": true,
+      "dt": 0.0005,
+      "grid": 2048,
+      "steps": 1600,
+      "firstClearanceAbove10umS": 0.0825,
+      "minHoldClearanceM": 0.007384632554794038,
+      "minHoldBeltContact": true,
+      "finalRiseM": 0.007738980315427052,
+      "finalPivotRiseM": 0.008236504168823065,
+      "maxEnergyDriftJ": 1.672296605866909e-06,
+      "initialMechanicalDifferenceJ": -2.655401687987405e-08
+    }
+  ],
+  "timesteps": [
+    {
+      "states": 1600,
+      "positionM": 2.599813100703785e-07,
+      "velocityMps": 0.0004078790458009983,
+      "angleRad": 5.471058743306174e-07,
+      "angularVelocityRadps": 8.211685168624992e-06,
+      "withinTranslationBounds": true
+    },
+    {
+      "states": 3200,
+      "positionM": 4.69433327800195e-08,
+      "velocityMps": 7.06968429408563e-05,
+      "angleRad": 1.3737352183833956e-07,
+      "angularVelocityRadps": 2.0085949816202856e-06,
+      "withinTranslationBounds": true
+    }
+  ],
+  "pressureGrids": [
+    {
+      "states": 1600,
+      "positionM": 2.395787602700594e-06,
+      "velocityMps": 0.00014507601395820705,
+      "angleRad": 2.3001947207466466e-05,
+      "angularVelocityRadps": 0.00032217294392980836,
+      "withinTranslationBounds": true
+    },
+    {
+      "states": 1600,
+      "positionM": 1.3278142705214213e-06,
+      "velocityMps": 4.5562303241323404e-05,
+      "angleRad": 8.998230573082841e-06,
+      "angularVelocityRadps": 9.792025557397305e-05,
+      "withinTranslationBounds": true
+    }
+  ],
+  "retainedAll": true,
+  "temporalBoundPassed": true,
+  "spatialBoundPassed": true,
+  "hardwareValidated": false
+}

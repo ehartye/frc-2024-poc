@@ -1,0 +1,192 @@
+{
+  "schema": "agent-frc/contact-convergence-receipt@1",
+  "basis": "simulation-observed",
+  "runs": [
+    {
+      "id": "timestep-0.0005",
+      "comparisonPins": {
+        "scenario": "1b97c1be975060159526ad7fcb32cc64d72244ee7bda7c09dd74ee999a214bc2",
+        "constitutiveLaw": "6e6b3ad7a3787d4c96a26eceea28c33a4cdf1f5cd04d39bc3ff3a493cbc737bc",
+        "initialState": "d819bdf34a7e04413a32ee57c8a3e31c3eb9b43076a1daed602ccd3e76f479a8",
+        "inputs": "38cc37e7e771f17a0ad6928a1bb1520446fe4690370bbe5c5e6cc0e177d4090d",
+        "runtime": "014ac946f7f48667222a789a01f8cc1ed8c454a2d99c665857e0f8d4e2039ea2",
+        "outcomeDefinition": "200db01dc521a26060228c7c8a5a60bb199d0d70d36a8ee59eeb4c1ec04529da"
+      },
+      "fixedSettingsSha256": "d9509ee0edcfced2c0fb7a59f2b464cb106e23bf1ed6af5b6da532e981b6a0c9",
+      "modelSha256": "6e6b3ad7a3787d4c96a26eceea28c33a4cdf1f5cd04d39bc3ff3a493cbc737bc",
+      "settingsSha256": "10d22a5df9bf8d83038bd289bdf3eb61792c239cc5b150934f1e5de513f70c6d",
+      "windowEndSeconds": 0.8,
+      "completion": "complete",
+      "termination": "commanded lift-and-hold horizon",
+      "outcome": "contact-at-horizon",
+      "reportedIntegrityPassed": true,
+      "metrics": [
+        {
+          "id": "hold-clearance",
+          "units": "m",
+          "value": 0.007383382399543478
+        },
+        {
+          "id": "final-note-rise",
+          "units": "m",
+          "value": 0.007738097579796009
+        }
+      ]
+    },
+    {
+      "id": "timestep-0.00025",
+      "comparisonPins": {
+        "scenario": "1b97c1be975060159526ad7fcb32cc64d72244ee7bda7c09dd74ee999a214bc2",
+        "constitutiveLaw": "6e6b3ad7a3787d4c96a26eceea28c33a4cdf1f5cd04d39bc3ff3a493cbc737bc",
+        "initialState": "d819bdf34a7e04413a32ee57c8a3e31c3eb9b43076a1daed602ccd3e76f479a8",
+        "inputs": "38cc37e7e771f17a0ad6928a1bb1520446fe4690370bbe5c5e6cc0e177d4090d",
+        "runtime": "014ac946f7f48667222a789a01f8cc1ed8c454a2d99c665857e0f8d4e2039ea2",
+        "outcomeDefinition": "200db01dc521a26060228c7c8a5a60bb199d0d70d36a8ee59eeb4c1ec04529da"
+      },
+      "fixedSettingsSha256": "d9509ee0edcfced2c0fb7a59f2b464cb106e23bf1ed6af5b6da532e981b6a0c9",
+      "modelSha256": "6e6b3ad7a3787d4c96a26eceea28c33a4cdf1f5cd04d39bc3ff3a493cbc737bc",
+      "settingsSha256": "02ba0ff7b3d69afcd25970a4e6b29216185d20722b79f1aa283131b4eae1ff19",
+      "windowEndSeconds": 0.8,
+      "completion": "complete",
+      "termination": "commanded lift-and-hold horizon",
+      "outcome": "contact-at-horizon",
+      "reportedIntegrityPassed": true,
+      "metrics": [
+        {
+          "id": "hold-clearance",
+          "units": "m",
+          "value": 0.007383457218293414
+        },
+        {
+          "id": "final-note-rise",
+          "units": "m",
+          "value": 0.007738109545111421
+        }
+      ]
+    },
+    {
+      "id": "timestep-0.000125",
+      "comparisonPins": {
+        "scenario": "1b97c1be975060159526ad7fcb32cc64d72244ee7bda7c09dd74ee999a214bc2",
+        "constitutiveLaw": "6e6b3ad7a3787d4c96a26eceea28c33a4cdf1f5cd04d39bc3ff3a493cbc737bc",
+        "initialState": "d819bdf34a7e04413a32ee57c8a3e31c3eb9b43076a1daed602ccd3e76f479a8",
+        "inputs": "38cc37e7e771f17a0ad6928a1bb1520446fe4690370bbe5c5e6cc0e177d4090d",
+        "runtime": "014ac946f7f48667222a789a01f8cc1ed8c454a2d99c665857e0f8d4e2039ea2",
+        "outcomeDefinition": "200db01dc521a26060228c7c8a5a60bb199d0d70d36a8ee59eeb4c1ec04529da"
+      },
+      "fixedSettingsSha256": "d9509ee0edcfced2c0fb7a59f2b464cb106e23bf1ed6af5b6da532e981b6a0c9",
+      "modelSha256": "6e6b3ad7a3787d4c96a26eceea28c33a4cdf1f5cd04d39bc3ff3a493cbc737bc",
+      "settingsSha256": "3799eea4b399fbb45f19e08b24c7e2d86b31071f3f76c6ca8eb2b5311d380946",
+      "windowEndSeconds": 0.8,
+      "completion": "complete",
+      "termination": "commanded lift-and-hold horizon",
+      "outcome": "contact-at-horizon",
+      "reportedIntegrityPassed": true,
+      "metrics": [
+        {
+          "id": "hold-clearance",
+          "units": "m",
+          "value": 0.00738346031233152
+        },
+        {
+          "id": "final-note-rise",
+          "units": "m",
+          "value": 0.007738111839237512
+        }
+      ]
+    },
+    {
+      "id": "contact-geometry-512",
+      "comparisonPins": {
+        "scenario": "1b97c1be975060159526ad7fcb32cc64d72244ee7bda7c09dd74ee999a214bc2",
+        "constitutiveLaw": "6e6b3ad7a3787d4c96a26eceea28c33a4cdf1f5cd04d39bc3ff3a493cbc737bc",
+        "initialState": "d819bdf34a7e04413a32ee57c8a3e31c3eb9b43076a1daed602ccd3e76f479a8",
+        "inputs": "38cc37e7e771f17a0ad6928a1bb1520446fe4690370bbe5c5e6cc0e177d4090d",
+        "runtime": "014ac946f7f48667222a789a01f8cc1ed8c454a2d99c665857e0f8d4e2039ea2",
+        "outcomeDefinition": "200db01dc521a26060228c7c8a5a60bb199d0d70d36a8ee59eeb4c1ec04529da"
+      },
+      "fixedSettingsSha256": "216999291ceb0a8c33c28ce065e7a0899b9ee071832bb885ad546edf22fdf74c",
+      "modelSha256": "6e6b3ad7a3787d4c96a26eceea28c33a4cdf1f5cd04d39bc3ff3a493cbc737bc",
+      "settingsSha256": "34099991698f48716adf187b1b6d668afd7da256150254ef3a521029f4754642",
+      "windowEndSeconds": 0.8,
+      "completion": "complete",
+      "termination": "commanded lift-and-hold horizon",
+      "outcome": "contact-at-horizon",
+      "reportedIntegrityPassed": true,
+      "metrics": [
+        {
+          "id": "hold-clearance",
+          "units": "m",
+          "value": 0.0073799956027465865
+        },
+        {
+          "id": "final-note-rise",
+          "units": "m",
+          "value": 0.007735922776403996
+        }
+      ]
+    },
+    {
+      "id": "contact-geometry-1024",
+      "comparisonPins": {
+        "scenario": "1b97c1be975060159526ad7fcb32cc64d72244ee7bda7c09dd74ee999a214bc2",
+        "constitutiveLaw": "6e6b3ad7a3787d4c96a26eceea28c33a4cdf1f5cd04d39bc3ff3a493cbc737bc",
+        "initialState": "d819bdf34a7e04413a32ee57c8a3e31c3eb9b43076a1daed602ccd3e76f479a8",
+        "inputs": "38cc37e7e771f17a0ad6928a1bb1520446fe4690370bbe5c5e6cc0e177d4090d",
+        "runtime": "014ac946f7f48667222a789a01f8cc1ed8c454a2d99c665857e0f8d4e2039ea2",
+        "outcomeDefinition": "200db01dc521a26060228c7c8a5a60bb199d0d70d36a8ee59eeb4c1ec04529da"
+      },
+      "fixedSettingsSha256": "216999291ceb0a8c33c28ce065e7a0899b9ee071832bb885ad546edf22fdf74c",
+      "modelSha256": "6e6b3ad7a3787d4c96a26eceea28c33a4cdf1f5cd04d39bc3ff3a493cbc737bc",
+      "settingsSha256": "10d22a5df9bf8d83038bd289bdf3eb61792c239cc5b150934f1e5de513f70c6d",
+      "windowEndSeconds": 0.8,
+      "completion": "complete",
+      "termination": "commanded lift-and-hold horizon",
+      "outcome": "contact-at-horizon",
+      "reportedIntegrityPassed": true,
+      "metrics": [
+        {
+          "id": "hold-clearance",
+          "units": "m",
+          "value": 0.007383382399543478
+        },
+        {
+          "id": "final-note-rise",
+          "units": "m",
+          "value": 0.007738097579796009
+        }
+      ]
+    },
+    {
+      "id": "contact-geometry-2048",
+      "comparisonPins": {
+        "scenario": "1b97c1be975060159526ad7fcb32cc64d72244ee7bda7c09dd74ee999a214bc2",
+        "constitutiveLaw": "6e6b3ad7a3787d4c96a26eceea28c33a4cdf1f5cd04d39bc3ff3a493cbc737bc",
+        "initialState": "d819bdf34a7e04413a32ee57c8a3e31c3eb9b43076a1daed602ccd3e76f479a8",
+        "inputs": "38cc37e7e771f17a0ad6928a1bb1520446fe4690370bbe5c5e6cc0e177d4090d",
+        "runtime": "014ac946f7f48667222a789a01f8cc1ed8c454a2d99c665857e0f8d4e2039ea2",
+        "outcomeDefinition": "200db01dc521a26060228c7c8a5a60bb199d0d70d36a8ee59eeb4c1ec04529da"
+      },
+      "fixedSettingsSha256": "216999291ceb0a8c33c28ce065e7a0899b9ee071832bb885ad546edf22fdf74c",
+      "modelSha256": "6e6b3ad7a3787d4c96a26eceea28c33a4cdf1f5cd04d39bc3ff3a493cbc737bc",
+      "settingsSha256": "a9cf757993e9b852f7f9fbc2c52a61241f236251e418d14d36f03c6665125cd2",
+      "windowEndSeconds": 0.8,
+      "completion": "complete",
+      "termination": "commanded lift-and-hold horizon",
+      "outcome": "contact-at-horizon",
+      "reportedIntegrityPassed": true,
+      "metrics": [
+        {
+          "id": "hold-clearance",
+          "units": "m",
+          "value": 0.007384632554794038
+        },
+        {
+          "id": "final-note-rise",
+          "units": "m",
+          "value": 0.007738980315427052
+        }
+      ]
+    }
+  ]
+}

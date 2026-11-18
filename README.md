@@ -13,6 +13,7 @@ This repository is a **reviewed research checkpoint, not a completed robot simul
 | [Maple 2024 arena](sim/maple/README.md) | Headless force-driven differential robot, actual upstream wall/stage collisions and a shared ground NOTE | Intake collection, corrected season scoring, airborne obstacle collision, driver UI or full robot controls |
 | [MuJoCo drivetrain](sim/mujoco/README.md) | Six-wheel reduced dynamics with original Fusion-exported visual meshes; portable headless checks | Whole-mechanism dynamics, calibrated tires, capture or field scoring |
 | [Pressure/contact research verification](sim/pressure/VERIFYING.md) | Current and exact-source historical numerical experiments, separately registered | Automatic transfer between contact laws or successful acquisition-to-lift |
+| [Native floor pickup and lift](sim/pressure/RETAINED_FLOOR_PICKUP.md) | Loose NOTE, driven pickup, transport, active stop, 60° pitch and full-height hold in a planar contact simulation | Installed hardware, driving while raising, feeder intake and scoring |
 | [Legacy A2 slice](#run-the-retained-legacy-a2-slice) | Earlier geometry and prescribed cycle experiment | Validation of the current component robot |
 
 Actual CAD delivery requires the separately preserved Fusion archive. Public STEP/meshes are source-sized references, not a substitute for that archive. Supplier native CAD is excluded from this public repository.

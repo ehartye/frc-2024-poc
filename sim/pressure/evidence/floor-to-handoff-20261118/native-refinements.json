@@ -1,0 +1,122 @@
+{
+  "archiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "wholePieceInterpolation": "piecewise linear in measured planar poses",
+  "toleranceMm3": 0.0001,
+  "runs": [
+    {
+      "dt": 0.000125,
+      "grid": 1024,
+      "steps": 46400,
+      "traceSha256": "bffa9b7beee04d9f6878b70c6f84dd0ceb524c6972bf9eb1cb1042f913b17d8b",
+      "booleanChecks": 3880,
+      "levels": [
+        {
+          "intervals": 290,
+          "needsRefinement": 14,
+          "booleanChecks": 3040,
+          "posesSha256": "7038c8372a46c25377905f99a1dad13748961ae8d1d4df7202c34d9759b23367",
+          "receiptsSha256": "cb378fbb04a9b66790264cfc90ebabd3fb64588b2d647943f536437e8a9e639c"
+        },
+        {
+          "intervals": 70,
+          "needsRefinement": 0,
+          "booleanChecks": 840,
+          "posesSha256": "f075ab7a3046cb297e44bcab23b9ea0881bbf0979edc42c9c7dfd83757238a2e",
+          "receiptsSha256": "c9e7d1e7bd64d1ff127887143ba81d96987a17343663df63bb1331ca536f5912"
+        }
+      ]
+    },
+    {
+      "dt": 0.00025,
+      "grid": 1024,
+      "steps": 23200,
+      "traceSha256": "d99c861f1e7162c360ecb000ce3cd74694398937c136529eff87b198ffd35036",
+      "booleanChecks": 3880,
+      "levels": [
+        {
+          "intervals": 290,
+          "needsRefinement": 14,
+          "booleanChecks": 3040,
+          "posesSha256": "0e77a281c787067428a2c2251d01dac3eeefa7994dde8af6554a5b5c3f00d699",
+          "receiptsSha256": "c63d7cc75277afca5f1eea63ea39ef6704358ebce51f646d0b7ae471019504f6"
+        },
+        {
+          "intervals": 70,
+          "needsRefinement": 0,
+          "booleanChecks": 840,
+          "posesSha256": "1ec0bd7e8495c62cfd4147f8631eab9352c728e873e3faef5cb3f7d905dc0549",
+          "receiptsSha256": "0968a7148a9f3a46af2e91451450c2734e4bb9366d81c01e5cdc68cc373f793b"
+        }
+      ]
+    },
+    {
+      "dt": 0.0005,
+      "grid": 1024,
+      "steps": 11600,
+      "traceSha256": "f60ceacba40cfd4f0a11c9ddefa847297e1d6b01dd50a6e0f0be23a64a505fcc",
+      "booleanChecks": 3880,
+      "levels": [
+        {
+          "intervals": 290,
+          "needsRefinement": 14,
+          "booleanChecks": 3040,
+          "posesSha256": "fab44649d918cfd7afb517f60f39279b6e2a0e17c537654012fad8a4e66ecf52",
+          "receiptsSha256": "a192a574d4109041fcd09e7a12f36ad6163813f23a8c07304f989926dede5698"
+        },
+        {
+          "intervals": 70,
+          "needsRefinement": 0,
+          "booleanChecks": 840,
+          "posesSha256": "9d8a9a8bf542490b4cde14bb6f9ce2887963a664713ef5fb1c7b76365429bb99",
+          "receiptsSha256": "e8332e27857376425b8b34fcf26b1f0695fe26f66dbef9307c2eeb8595eefb0c"
+        }
+      ]
+    },
+    {
+      "dt": 0.0005,
+      "grid": 2048,
+      "steps": 11600,
+      "traceSha256": "371046f08a12c1c8f69f298929ab61d286e6d261ed708b5e7c4b63214dfad120",
+      "booleanChecks": 3880,
+      "levels": [
+        {
+          "intervals": 290,
+          "needsRefinement": 14,
+          "booleanChecks": 3040,
+          "posesSha256": "129d4bb45dafe0bf075a8540f2c98efd664684857937c697a3c0fd4916639b16",
+          "receiptsSha256": "b229c0aa5afaedc563f2d7b18602ee2ae27726ee76255cfb0f2cd99e271d93f2"
+        },
+        {
+          "intervals": 70,
+          "needsRefinement": 0,
+          "booleanChecks": 840,
+          "posesSha256": "87bfd0bdab49bce8a608591c45b06a4b8361df86765937f8d91792b0c459bfc7",
+          "receiptsSha256": "b3efbd9196af9c34faa96f1b27880baab9e5d695d5aa9221129c6d43bfc6ee42"
+        }
+      ]
+    },
+    {
+      "dt": 0.0005,
+      "grid": 512,
+      "steps": 11600,
+      "traceSha256": "b56996bf5d6767dd440541547534b7b1fbabeb6ab88b0e4d03004feec0858a20",
+      "booleanChecks": 3880,
+      "levels": [
+        {
+          "intervals": 290,
+          "needsRefinement": 14,
+          "booleanChecks": 3040,
+          "posesSha256": "4d8326cdb23156525dc9a5474af3437e4be844f6ad0baf1e59de9a7d2c2c27f8",
+          "receiptsSha256": "8482ca2d7234f260fd25ca56dc9f38c72459fd9047d1e53bf1989a5123d43e91"
+        },
+        {
+          "intervals": 70,
+          "needsRefinement": 0,
+          "booleanChecks": 840,
+          "posesSha256": "d8ac331616bcd631dc4d4ca70de6344ccb9e9fc406386dbfe12b8e2caef6fedd",
+          "receiptsSha256": "38557222b14b1badfcd7d6c13d310dad22f7c41caa90350cebe426fcd629fd66"
+        }
+      ]
+    }
+  ]
+}
