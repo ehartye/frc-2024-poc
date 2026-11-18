@@ -292,5 +292,28 @@
     ]
   },
   "humanVisualConfirmation": "User reported all requested controls and visuals work after the fix; floor remains visible and robot solid-colored. Post-fix trace independently records WASD and Q; C/B were recorded in the pre-fix trace.",
-  "privacy": "Native archive, exported meshes, images and raw UI traces remain private. Summary omits local paths and absolute/monotonic timestamps; hashes bind the retained private evidence."
+  "privacy": "Native archive, exported meshes, images and raw UI traces remain private. Summary omits local paths and absolute/monotonic timestamps; hashes bind the retained private evidence.",
+  "broaderRegression": {
+    "testsRun": 515,
+    "passed": 502,
+    "failures": [
+      "test_component_context.ContextTests.test_input_pins",
+      "test_packaging.ReceiptBoundary.test_snapshot_hashes_match",
+      "test_pressure_continuation_receipt.ContinuationReceiptTest.test_longer_same_law_lineage",
+      "test_pressure_entry_receipt.EntryReceiptTest.test_exact_source_inventory"
+    ],
+    "errors": [
+      "test_pressure_checkpoint.CheckpointTest.test_contact_phase_split_byte_parity",
+      "test_pressure_continuation_receipt.ContinuationReceiptTest.test_exact_lineage_and_state",
+      "test_pressure_entry_comparison.ComparisonTest.test_fresh_endpoint_replay",
+      "test_pressure_policy_boundary.BoundaryTest.test_nominal_rejected_query",
+      "test_pressure_policy_receipts.PolicyReceipts.test_exact_inventory_and_identical_physics_controls",
+      "test_pressure_policy_transition.PolicyTest.test_domain_exit_records_atomic_prefix",
+      "test_pressure_policy_transition.PolicyTest.test_engagement_preserves_physical_state",
+      "test_pressure_policy_transition.PolicyTest.test_fault_and_no_pinch_are_commands_not_resets",
+      "test_pressure_policy_transition.PolicyTest.test_first_finite_brake_step"
+    ],
+    "allThirteenReproducedOnBaseline": "ca7f2e885263f14bd5425aba7f3c05551d975d75",
+    "scope": "Inherited source/receipt mismatches reproduced unchanged on canonical baseline; no full-suite pass claimed. Historical receipts were not rewritten."
+  }
 }
