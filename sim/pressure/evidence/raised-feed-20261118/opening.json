@@ -1,0 +1,71 @@
+{
+  "schema": "blue-inner-wing-speaker-opening/1",
+  "sourceTraceSha256": "dc6517afe733e5369047f7957fffa382b102433501a16d53e3825466f5afb192",
+  "releaseS": 17.051850000010077,
+  "nominal": {
+    "startBelow": true,
+    "endAbove": true,
+    "firstPossibleContactS": 0.11075,
+    "lastPossibleContactS": 0.14125000000000001,
+    "spaceTimePadM": 0.002628101758230078,
+    "minimumCertifiedMarginM": 0.100924460750771,
+    "wholeRingPassageCertified": true,
+    "releaseFieldPositionM": [
+      0.9923739680055463,
+      5.631571306364927,
+      1.007343458959294
+    ],
+    "releaseFieldVelocityMps": [
+      -5.742722692458839,
+      0.1412340420849923,
+      8.908096561193211
+    ],
+    "sensorEventObserved": false
+  },
+  "refined": {
+    "startBelow": true,
+    "endAbove": true,
+    "firstPossibleContactS": 0.11075,
+    "lastPossibleContactS": 0.141125,
+    "spaceTimePadM": 0.001314051379115039,
+    "minimumCertifiedMarginM": 0.10231467910040992,
+    "wholeRingPassageCertified": true,
+    "releaseFieldPositionM": [
+      0.9923739680055463,
+      5.631571306364927,
+      1.007343458959294
+    ],
+    "releaseFieldVelocityMps": [
+      -5.742722692458839,
+      0.1412340420849923,
+      8.908096561193211
+    ],
+    "sensorEventObserved": false
+  },
+  "lateralMissControl": {
+    "startBelow": true,
+    "endAbove": true,
+    "firstPossibleContactS": 0.11075,
+    "lastPossibleContactS": 0.14125000000000001,
+    "spaceTimePadM": 0.002628101758230078,
+    "minimumCertifiedMarginM": -0.508573147362888,
+    "wholeRingPassageCertified": false,
+    "releaseFieldPositionM": [
+      0.9923739680055463,
+      6.381571306364927,
+      1.007343458959294
+    ],
+    "releaseFieldVelocityMps": [
+      -5.742722692458839,
+      0.1412340420849923,
+      8.908096561193211
+    ],
+    "sensorEventObserved": false
+  },
+  "verifiedSpeakerScores": 0,
+  "limits": [
+    "Centered wing NOTE and 90 degree initial robot heading; one rigid field transform",
+    "Rigid free flight under gravity; field-panel contact and airflow omitted",
+    "Nominal rectangular opening; downstream counter evidence required"
+  ]
+}

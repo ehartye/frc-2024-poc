@@ -1,0 +1,143 @@
+{
+  "schema": "native-raised-feed-comparison/1",
+  "runs": {
+    "spatial": {
+      "case": "nominal",
+      "sourceTraceSha256": "b06928ecfa09a08f3f166e1f99cdd678183c693dfaebd925a3236b1d1b878b69",
+      "runnerSha256": "311c9bb80256e62e6ff04b7cfb68388026669219cce95208217561430d9ce8c2",
+      "plantSha256": "6a5db9447982025c067cdce7d84f94a65a49028ebce9593fc7c8802031049389",
+      "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+      "traceSha256": "1a64494040f795855d59903e7d47133ba669be00a77f532f5272cf1a3974715b",
+      "startS": 16.750000000000057,
+      "endS": 17.051899999999353,
+      "dtS": 0.0001,
+      "ringSegments": 8192,
+      "pressureGrid": 1024,
+      "minBusV": 9.410406325603901,
+      "initialLauncherRadps": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "simultaneousSeconds": 0.006900000000000001,
+      "firstSimultaneousS": 17.000299999999473,
+      "lastLauncherS": 17.021799999999423,
+      "finalVerticalMps": 8.9076885125186,
+      "attainedUpwardRelease": true
+    },
+    "temporal": {
+      "case": "nominal",
+      "sourceTraceSha256": "b06928ecfa09a08f3f166e1f99cdd678183c693dfaebd925a3236b1d1b878b69",
+      "runnerSha256": "311c9bb80256e62e6ff04b7cfb68388026669219cce95208217561430d9ce8c2",
+      "plantSha256": "6a5db9447982025c067cdce7d84f94a65a49028ebce9593fc7c8802031049389",
+      "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+      "traceSha256": "ce1b468747663efc7b31f4f569282a7a8fda3c18b9cd84023fb89051e098172d",
+      "startS": 16.750000000000057,
+      "endS": 17.051999999999353,
+      "dtS": 0.0001,
+      "ringSegments": 16384,
+      "pressureGrid": 1024,
+      "minBusV": 9.410406325603901,
+      "initialLauncherRadps": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "simultaneousSeconds": 0.0068000000000000005,
+      "firstSimultaneousS": 17.000299999999473,
+      "lastLauncherS": 17.021899999999423,
+      "finalVerticalMps": 8.890984228809716,
+      "attainedUpwardRelease": true
+    },
+    "refined": {
+      "case": "nominal",
+      "sourceTraceSha256": "b06928ecfa09a08f3f166e1f99cdd678183c693dfaebd925a3236b1d1b878b69",
+      "runnerSha256": "311c9bb80256e62e6ff04b7cfb68388026669219cce95208217561430d9ce8c2",
+      "plantSha256": "6a5db9447982025c067cdce7d84f94a65a49028ebce9593fc7c8802031049389",
+      "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+      "traceSha256": "dc6517afe733e5369047f7957fffa382b102433501a16d53e3825466f5afb192",
+      "startS": 16.750000000000057,
+      "endS": 17.051850000010077,
+      "dtS": 5e-05,
+      "ringSegments": 16384,
+      "pressureGrid": 1024,
+      "minBusV": 9.41040088657908,
+      "initialLauncherRadps": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "simultaneousSeconds": 0.00655,
+      "firstSimultaneousS": 17.000350000008368,
+      "lastLauncherS": 17.02185000000908,
+      "finalVerticalMps": 8.908096561193211,
+      "attainedUpwardRelease": true
+    },
+    "hold": {
+      "case": "hold",
+      "sourceTraceSha256": "b06928ecfa09a08f3f166e1f99cdd678183c693dfaebd925a3236b1d1b878b69",
+      "runnerSha256": "311c9bb80256e62e6ff04b7cfb68388026669219cce95208217561430d9ce8c2",
+      "plantSha256": "6a5db9447982025c067cdce7d84f94a65a49028ebce9593fc7c8802031049389",
+      "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+      "traceSha256": "1c32ce9443101eb549edc969086b31de6e052d2d1939b86efd563a091f8be59b",
+      "startS": 16.750000000000057,
+      "endS": 17.089999999999264,
+      "dtS": 0.0001,
+      "ringSegments": 8192,
+      "pressureGrid": 1024,
+      "minBusV": 9.410406325603901,
+      "initialLauncherRadps": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "simultaneousSeconds": 0.0,
+      "firstSimultaneousS": null,
+      "lastLauncherS": null,
+      "finalVerticalMps": 0.0027399731285922325,
+      "attainedUpwardRelease": false
+    },
+    "passive": {
+      "case": "unpowered",
+      "sourceTraceSha256": "b06928ecfa09a08f3f166e1f99cdd678183c693dfaebd925a3236b1d1b878b69",
+      "runnerSha256": "311c9bb80256e62e6ff04b7cfb68388026669219cce95208217561430d9ce8c2",
+      "plantSha256": "6a5db9447982025c067cdce7d84f94a65a49028ebce9593fc7c8802031049389",
+      "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+      "traceSha256": "3f8d8f33490a0a3ca9bc968c4941c7ea8a46645151d0ed72a21281e39168308a",
+      "startS": 16.750000000000057,
+      "endS": 17.089999999999264,
+      "dtS": 0.0001,
+      "ringSegments": 8192,
+      "pressureGrid": 1024,
+      "minBusV": 11.894146407492638,
+      "initialLauncherRadps": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "simultaneousSeconds": 0.092,
+      "firstSimultaneousS": 16.99799999999948,
+      "lastLauncherS": 17.089899999999265,
+      "finalVerticalMps": -0.0005083020799989109,
+      "attainedUpwardRelease": false
+    }
+  },
+  "spatial": {
+    "sharedSamples": 3019,
+    "maxPositionDifferenceM": 0.0008461621184133864,
+    "maxVelocityDifferenceMps": 0.04347601046749167,
+    "meetsEarlierStagedBounds": false
+  },
+  "timestep": {
+    "sharedSamples": 3018,
+    "maxPositionDifferenceM": 0.00032076810812128116,
+    "maxVelocityDifferenceMps": 0.12996082717358992,
+    "meetsEarlierStagedBounds": false
+  },
+  "verifiedSpeakerScores": 0
+}

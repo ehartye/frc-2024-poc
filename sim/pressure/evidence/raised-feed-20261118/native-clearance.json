@@ -1,0 +1,51 @@
+{
+  "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "sourceTraceSha256": "dc6517afe733e5369047f7957fffa382b102433501a16d53e3825466f5afb192",
+  "fullSteps": 6037,
+  "intervalLevels": [
+    {
+      "stride": 100,
+      "intervals": 61,
+      "pairChecks": 1522,
+      "ambiguous": 11
+    },
+    {
+      "stride": 20,
+      "intervals": 55,
+      "pairChecks": 894,
+      "ambiguous": 40
+    },
+    {
+      "stride": 4,
+      "intervals": 200,
+      "pairChecks": 545,
+      "ambiguous": 96
+    },
+    {
+      "stride": 1,
+      "intervals": 384,
+      "pairChecks": 1360,
+      "ambiguous": 284
+    }
+  ],
+  "substepLevels": [
+    {
+      "stride": 16,
+      "checks": 1204,
+      "intervals": 568,
+      "unresolved": 66
+    },
+    {
+      "stride": 4,
+      "checks": 500,
+      "intervals": 264,
+      "unresolved": 0
+    }
+  ],
+  "nativeBooleanPairChecks": 6025,
+  "unresolvedIntervals": 0,
+  "volumeReportingThresholdMm3": 0.0001,
+  "registeredLauncherTreads": 4,
+  "scope": "Interpolated nominal motion of the rigid NOTE against modeled native hard parts. Compliant tread contact excepted; source geometry, tolerance and hardware validation remain separate.",
+  "coarsePilotShellOverlapMm3": 0.01
+}
