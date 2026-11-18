@@ -1,0 +1,28 @@
+{
+  "nominal": {
+    "robotMassKg": 45.0,
+    "undeployedYawInertiaKgM2": 6.000000000000001,
+    "noteFreeDofs": 6,
+    "mechanicalConstraints": 0,
+    "mocapBodies": 0,
+    "relativeEnergyReferenceJ": 2.9789562638499993,
+    "incomingKineticJ": 8.54187827255204e-07,
+    "incomingNormalPotentialJ": 0.0035733151185677334,
+    "absolutePhysicalTimeS": 9.450000000000058,
+    "incomingAccumulatedEnergyResidualJ": 0.00023599930279793232
+  },
+  "spatialTransfer": {
+    "512": {
+      "changeInInitialMechanicalEnergyJ": -4.7494134259532667e-07,
+      "initialNormalPotentialJ": 0.003572840177224549
+    },
+    "1024": {
+      "changeInInitialMechanicalEnergyJ": 9.913944665207453e-16,
+      "initialNormalPotentialJ": 0.0035733151185677334
+    },
+    "2048": {
+      "changeInInitialMechanicalEnergyJ": -2.6554016215908638e-08,
+      "initialNormalPotentialJ": 0.0035732885645507286
+    }
+  }
+}

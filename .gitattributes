@@ -130,3 +130,9 @@ sim/pressure/evidence/native-static-cycle-20261118/native-static-cycle-trajector
 sim/pressure/evidence/native-static-cycle-20261118/native-static-cycle-trajectory.json -text
 sim/pressure/evidence/native-static-cycle-20261118/native-static-cycle-timing-diagnosis.json -text
 sim/pressure/NATIVE_STATIC_CYCLE.md -text
+
+# These four files are byte-bound to the recorded turning-lift runs.
+sim/pressure/run_turning_lift.py -text
+sim/pressure/turning_plant.py -text
+sim/pressure/turning_contact.py -text
+sim/pressure/turning_sweep.py -text

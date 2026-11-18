@@ -31,6 +31,27 @@ def torus_at(manager, x, y, z, pitch, padding):
     return ring, measured
 
 
+def tilted_torus(manager,frame):
+    core=adsk.core
+    center=frame["center"]
+    normal=core.Vector3D.create(*frame["normal"])
+    if abs(normal.length-1.)>1e-8:raise ValueError("Nonunit sweep normal")
+    tube=25.4+frame["padMm"]
+    ring=manager.createTorus(core.Point3D.create(0,0,0),core.Vector3D.create(0,0,1),15.24,tube/10)
+    ref=core.Vector3D.create(0,1,0) if abs(normal.y)<.9 else core.Vector3D.create(1,0,0)
+    x=ref.crossProduct(normal);x.normalize();y=normal.crossProduct(x)
+    transform=core.Matrix3D.create()
+    transform.setWithCoordinateSystem(core.Point3D.create(*(v/10 for v in center)),x,y,normal)
+    if not manager.transform(ring,transform):raise ValueError("Native placement failed")
+    bb=ring.preciseBoundingBox
+    measured=[v*10 for v in bb.minPoint.asArray()+bb.maxPoint.asArray()]
+    extent=[tube+152.4*math.sqrt(max(0.,1-n*n)) for n in frame["normal"]]
+    expected=[c+sign*e for sign in (-1,1) for c,e in zip(center,extent)]
+    if max(abs(a-b) for a,b in zip(measured,expected))>.002:
+        raise ValueError("Native three-dimensional torus placement exceeds tolerance")
+    return ring,measured
+
+
 def check(design, registration, poses, output, archive_sha256):
     data = json.loads(Path(registration).read_bytes())
     if data["sourceSha256"] != archive_sha256:
@@ -53,15 +74,18 @@ def check(design, registration, poses, output, archive_sha256):
     packet_digest = hashlib.sha256(pose_bytes).hexdigest()
     with Path(output).open("x",encoding="utf-8") as stream:
         for pose in json.loads(pose_bytes):
-            x,y,z,p,theta,pivot = (pose[k] for k in ("x","y","z","p","theta","pivot"))
-            pad = pose["padMm"]
-            dx,dz = x-178.,z-pivot
-            c,s = math.cos(theta),math.sin(theta)
-            rings = {
-                "fixed": torus_at(manager,x,y,z,p,pad["fixed"]),
-                "carriage": torus_at(manager,x,y,25.4+dz,p,pad["carriage"]),
-                "cradle": torus_at(manager,178+c*dx+s*dz,y,25.4-s*dx+c*dz,p-theta,pad["cradle"])
-            }
+            if "frames" in pose:
+                rings={key:tilted_torus(manager,frame) for key,frame in pose["frames"].items()}
+            else:
+                x,y,z,p,theta,pivot = (pose[k] for k in ("x","y","z","p","theta","pivot"))
+                pad = pose["padMm"]
+                dx,dz = x-178.,z-pivot
+                c,s = math.cos(theta),math.sin(theta)
+                rings = {
+                    "fixed": torus_at(manager,x,y,z,p,pad["fixed"]),
+                    "carriage": torus_at(manager,x,y,25.4+dz,p,pad["carriage"]),
+                    "cradle": torus_at(manager,178+c*dx+s*dz,y,25.4-s*dx+c*dz,p-theta,pad["cradle"])
+                }
             hits = []
             checks = 0
             for item,solid in bodies:

@@ -1,0 +1,17 @@
+{
+  "intact": {
+    "changeInNoteHeightM": 1.9225385387566796e-05,
+    "minimumSideNormalN": 3.744162626254059,
+    "finalHeightM": 0.4746054860088651,
+    "finalVelocityMps": 0.0005847870412206362
+  },
+  "removed": {
+    "changeInNoteHeightM": -0.04896898012807532,
+    "minimumSideNormalN": 0.0,
+    "finalHeightM": 0.4256172804954022,
+    "finalVelocityMps": -0.9800223012807546
+  },
+  "startS": 16.45000000000006,
+  "durationS": 0.1,
+  "sourceTraceSha256": "f6ff79bd5b2241f1f0f91cec87e06954f53f6656f6bb59f40f5ea938579dba45"
+}
