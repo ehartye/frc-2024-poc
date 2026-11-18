@@ -1,0 +1,22 @@
+{
+  "baseCommit": "648d983be62b735032bda508e537beb811d0e802",
+  "cleanSourceWorktree": true,
+  "files": {
+    "sim/actuation/config.json": "33e9baf58fe653b0a35a36f1eeced112fbfa8d53382567af7a6ad9ebe1110dcf",
+    "sim/actuation/mechanics.py": "c37bc5acc8f8e46b635a8aaa5208334426ff5cb831a9f7d76021ed8b864c359b",
+    "sim/drivetrain/config.json": "334a7d02b4968401a10fb829ae838edfbeb7d9a311c13f3e2cbcc47b54748ff4",
+    "sim/drivetrain/plant.py": "3d30f7df18abf6c24cc5c949a308246bb275bea57242128916cee627da561155",
+    "sim/acquisition/free-planar-config.json": "8ecb4ca6594ec456e56a79ceb63d222d9824e4985273d6b16a52b9737d166053",
+    "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+    "cad/assembly/actuator-geometry-contract.json": "fb0df6e6968c99acf81d5eceac36c32a31b7717c5a29b095937a33b70cb2cbfd",
+    "sim/integrated/shared_supply.py": "888855338f8d6d73510767cc9c64bf88f5ea0dbf899bd1bb67e136547f821e99",
+    "sim/integrated/patch_registration.py": "6cf66b74ba20a4a9b7da8d32f5a6b0a05ac31a10f06d0a7fc641601fba7f0dbc",
+    "sim/pressure/native_pressure_arrays.py": "fc7a3f30bfd027033c190ff6a5daa94be1f0969556a473b553bd9ef6c6b3aabf",
+    "sim/pressure/signed_pressure_acquisition.py": "68358ab3cfab9b0a6fc724c90ab8256e9a17e326ee416b0308d861add51f1d83",
+    "sim/pressure/pressure_tiled_geometry.py": "ad40145c71fbfaae776540ad3a2f43f954f52b5de53b65035babb0b424868987",
+    "sim/pressure/finite_area.py": "75c7af7cc4446346e611c389d050cb3d1212404c560ad8e4884863e44f1cd5ed"
+  },
+  "limits": [
+    "Supplemental exact dependency snapshot checked against the clean source checkout; no native mass calibration"
+  ]
+}

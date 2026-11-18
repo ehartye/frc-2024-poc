@@ -1,0 +1,725 @@
+{
+  "schema": "native-lift-local-support/1",
+  "inputs": {
+    "producer": "10d93929060eb313134da67b683784cc94e52382c0dfdeec38df29cd1e7188fe",
+    "model": "27ab17fe8087c46691f0d509df312af19ce54a4ef980369cfcf56ad7636bee98",
+    "sourceReceipt": "d819bdf34a7e04413a32ee57c8a3e31c3eb9b43076a1daed602ccd3e76f479a8",
+    "trajectoryReceipt": "7e3629d78fbe58ab3472ab2d3d074338f624433939a9777e0a81460d463c21c6",
+    "contract": "0ad4ec67fee1a9051781e0282db65ac32d1711c27bb8f34608aefbae41061361",
+    "binding": "6d8a1ef819b918d11380a96137f6573ca30441d8ce947efb86a670c7134314d8"
+  },
+  "samples": [
+    {
+      "label": "entry",
+      "elapsedS": 0.0,
+      "noteRiseM": 0.0,
+      "pivotRiseM": 0.0,
+      "levels": [
+        {
+          "resolution": [
+            512,
+            512
+          ],
+          "normalN": 7.528157728632585,
+          "normalVerticalN": 1.9091716055297248e-15,
+          "actualContactVerticalN": 1.912586842373054e-15,
+          "optimisticContactVerticalUpperBoundN": 4.396247823012554,
+          "weightN": 2.3045627499999997,
+          "upperBoundBelowWeight": false,
+          "contactForceN": [
+            -0.03238631199908218,
+            -1.9049432170570313e-15,
+            1.912586842373054e-15
+          ],
+          "potentialJ": 0.003572840177224549,
+          "features": {
+            "outer-straight": 1400,
+            "finite-height-cap": 112
+          },
+          "workResidualW": 3.8116482626443515e-20
+        },
+        {
+          "resolution": [
+            1024,
+            1024
+          ],
+          "normalN": 7.530923039334295,
+          "normalVerticalN": 1.777657882007233e-15,
+          "actualContactVerticalN": 1.7642137750684128e-15,
+          "optimisticContactVerticalUpperBoundN": 4.407186952348121,
+          "weightN": 2.3045627499999997,
+          "upperBoundBelowWeight": false,
+          "contactForceN": [
+            -0.03239820843090333,
+            -8.114277479098764e-15,
+            1.7642137750684128e-15
+          ],
+          "potentialJ": 0.0035733151185677334,
+          "features": {
+            "outer-straight": 5592,
+            "finite-height-cap": 336
+          },
+          "workResidualW": -3.3881317890172014e-21
+        },
+        {
+          "resolution": [
+            2048,
+            2048
+          ],
+          "normalN": 7.529696904859863,
+          "normalVerticalN": 1.1511652091636404e-15,
+          "actualContactVerticalN": 1.1403265755705744e-15,
+          "optimisticContactVerticalUpperBoundN": 4.410408999536666,
+          "weightN": 2.3045627499999997,
+          "upperBoundBelowWeight": false,
+          "contactForceN": [
+            -0.03239293357149261,
+            -6.295805314528082e-15,
+            1.1403265755705744e-15
+          ],
+          "potentialJ": 0.0035732885645507286,
+          "features": {
+            "outer-straight": 22456,
+            "finite-height-cap": 1328
+          },
+          "workResidualW": 1.6983010592448722e-19
+        }
+      ],
+      "fineMaximumForceDifferenceN": 5.274859410722699e-06,
+      "finePotentialDifferenceJ": 2.655401700477414e-08
+    },
+    {
+      "label": "first-airborne",
+      "elapsedS": 0.09300000000011366,
+      "noteRiseM": 1.0667437855792217e-06,
+      "pivotRiseM": 0.00031921476891316747,
+      "levels": [
+        {
+          "resolution": [
+            512,
+            512
+          ],
+          "normalN": 7.51007144705299,
+          "normalVerticalN": -0.05812902034095784,
+          "actualContactVerticalN": 2.311614479827128,
+          "optimisticContactVerticalUpperBoundN": 4.338398200267547,
+          "weightN": 2.3045627499999997,
+          "upperBoundBelowWeight": false,
+          "contactForceN": [
+            -0.00020099139140258195,
+            2.666306845450217e-13,
+            2.311614479827128
+          ],
+          "potentialJ": 0.0035643086713382046,
+          "features": {
+            "outer-straight": 1396,
+            "finite-height-cap": 112
+          },
+          "workResidualW": -1.734723475976807e-18
+        },
+        {
+          "resolution": [
+            1024,
+            1024
+          ],
+          "normalN": 7.512644261118981,
+          "normalVerticalN": -0.05032941927714687,
+          "actualContactVerticalN": 2.323650519204001,
+          "optimisticContactVerticalUpperBoundN": 4.3540572680479865,
+          "weightN": 2.3045627499999997,
+          "upperBoundBelowWeight": false,
+          "contactForceN": [
+            -0.0002005413072944558,
+            2.575908778813807e-13,
+            2.323650519204001
+          ],
+          "potentialJ": 0.003564354472836989,
+          "features": {
+            "outer-straight": 5600,
+            "finite-height-cap": 320
+          },
+          "workResidualW": 6.938893903907228e-18
+        },
+        {
+          "resolution": [
+            2048,
+            2048
+          ],
+          "normalN": 7.511713922392877,
+          "normalVerticalN": -0.05810958144541955,
+          "actualContactVerticalN": 2.3124061461260776,
+          "optimisticContactVerticalUpperBoundN": 4.339850148814312,
+          "weightN": 2.3045627499999997,
+          "upperBoundBelowWeight": false,
+          "contactForceN": [
+            -0.0001999435942598915,
+            2.6421970478703364e-13,
+            2.3124061461260776
+          ],
+          "potentialJ": 0.003564314129565718,
+          "features": {
+            "outer-straight": 22434,
+            "finite-height-cap": 1418
+          },
+          "workResidualW": 4.85722573273506e-17
+        }
+      ],
+      "fineMaximumForceDifferenceN": 0.011244373077923253,
+      "finePotentialDifferenceJ": 4.0343271270979614e-08
+    },
+    {
+      "label": "peak-rise",
+      "elapsedS": 0.531000000000649,
+      "noteRiseM": 0.004564549640828645,
+      "pivotRiseM": 0.00842482007022069,
+      "levels": [
+        {
+          "resolution": [
+            512,
+            512
+          ],
+          "normalN": 5.5714929852248565,
+          "normalVerticalN": -0.3843252383842587,
+          "actualContactVerticalN": 2.2864485462051625,
+          "optimisticContactVerticalUpperBoundN": 2.7279783442254346,
+          "weightN": 2.3045627499999997,
+          "upperBoundBelowWeight": false,
+          "contactForceN": [
+            0.007484680585132186,
+            4.0152169783480574e-13,
+            2.2864485462051625
+          ],
+          "potentialJ": 0.0025893589542619984,
+          "features": {
+            "outer-straight": 1072,
+            "finite-height-cap": 108
+          },
+          "workResidualW": -4.163336342344337e-17
+        },
+        {
+          "resolution": [
+            1024,
+            1024
+          ],
+          "normalN": 5.566349496019353,
+          "normalVerticalN": -0.42342956569261553,
+          "actualContactVerticalN": 2.22456184453058,
+          "optimisticContactVerticalUpperBoundN": 2.6623256255888306,
+          "weightN": 2.3045627499999997,
+          "upperBoundBelowWeight": false,
+          "contactForceN": [
+            0.007500715698522072,
+            3.9717244792493445e-13,
+            2.22456184453058
+          ],
+          "potentialJ": 0.002589716608471798,
+          "features": {
+            "outer-straight": 4252,
+            "finite-height-cap": 456
+          },
+          "workResidualW": 2.7755575615628914e-17
+        },
+        {
+          "resolution": [
+            2048,
+            2048
+          ],
+          "normalN": 5.565204039420692,
+          "normalVerticalN": -0.4152065438356646,
+          "actualContactVerticalN": 2.236428800008698,
+          "optimisticContactVerticalUpperBoundN": 2.6747951238140812,
+          "weightN": 2.3045627499999997,
+          "upperBoundBelowWeight": false,
+          "contactForceN": [
+            0.00749499100986291,
+            4.015505130486384e-13,
+            2.236428800008698
+          ],
+          "potentialJ": 0.0025895867745237056,
+          "features": {
+            "outer-straight": 17078,
+            "finite-height-cap": 1806
+          },
+          "workResidualW": -1.734723475976807e-16
+        }
+      ],
+      "fineMaximumForceDifferenceN": 0.011866955478117891,
+      "finePotentialDifferenceJ": 1.2983394809219437e-07
+    },
+    {
+      "label": "before-floor-return",
+      "elapsedS": 0.6410000000007834,
+      "noteRiseM": 6.539480989932803e-05,
+      "pivotRiseM": 0.008925121165260175,
+      "levels": [
+        {
+          "resolution": [
+            512,
+            512
+          ],
+          "normalN": 1.74611558191515,
+          "normalVerticalN": -0.31154653643168956,
+          "actualContactVerticalN": 0.5491943112932608,
+          "optimisticContactVerticalUpperBoundN": 0.5492384158875556,
+          "weightN": 2.3045627499999997,
+          "upperBoundBelowWeight": true,
+          "contactForceN": [
+            0.002105246957707678,
+            1.6572894857673492e-13,
+            0.5491943112932608
+          ],
+          "potentialJ": 0.0005814085594753401,
+          "features": {
+            "outer-straight": 440,
+            "finite-height-cap": 100
+          },
+          "workResidualW": -2.7755575615628914e-17
+        },
+        {
+          "resolution": [
+            1024,
+            1024
+          ],
+          "normalN": 1.7427011042288898,
+          "normalVerticalN": -0.28115088865127796,
+          "actualContactVerticalN": 0.5957786937803934,
+          "optimisticContactVerticalUpperBoundN": 0.5958185192594772,
+          "weightN": 2.3045627499999997,
+          "upperBoundBelowWeight": true,
+          "contactForceN": [
+            0.001968935972345764,
+            1.6676604555295772e-13,
+            0.5957786937803934
+          ],
+          "potentialJ": 0.0005802117606125022,
+          "features": {
+            "finite-height-cap": 380,
+            "outer-straight": 1776
+          },
+          "workResidualW": 8.326672684688674e-17
+        },
+        {
+          "resolution": [
+            2048,
+            2048
+          ],
+          "normalN": 1.7421238054226922,
+          "normalVerticalN": -0.28540022965544176,
+          "actualContactVerticalN": 0.5886333644644808,
+          "optimisticContactVerticalUpperBoundN": 0.588673788029018,
+          "weightN": 2.3045627499999997,
+          "upperBoundBelowWeight": true,
+          "contactForceN": [
+            0.001987606254597828,
+            1.6541371679508476e-13,
+            0.5886333644644808
+          ],
+          "potentialJ": 0.000580336862573249,
+          "features": {
+            "outer-straight": 7102,
+            "finite-height-cap": 1534
+          },
+          "workResidualW": -5.551115123125783e-17
+        }
+      ],
+      "fineMaximumForceDifferenceN": 0.0071453293159126074,
+      "finePotentialDifferenceJ": 1.251019607468283e-07
+    },
+    {
+      "label": "floor-return",
+      "elapsedS": 0.641500000000784,
+      "noteRiseM": -2.8997056183595327e-05,
+      "pivotRiseM": 0.008924792968174583,
+      "levels": [
+        {
+          "resolution": [
+            512,
+            512
+          ],
+          "normalN": 1.6802788423700417,
+          "normalVerticalN": -0.2740042753861187,
+          "actualContactVerticalN": 0.5697602496952101,
+          "optimisticContactVerticalUpperBoundN": 0.569798819784398,
+          "weightN": 2.3045627499999997,
+          "upperBoundBelowWeight": true,
+          "contactForceN": [
+            0.0008721168725408159,
+            1.6410871685017259e-13,
+            0.5697602496952101
+          ],
+          "potentialJ": 0.0005531707916539351,
+          "features": {
+            "outer-straight": 436,
+            "finite-height-cap": 104
+          },
+          "workResidualW": -8.326672684688674e-17
+        },
+        {
+          "resolution": [
+            1024,
+            1024
+          ],
+          "normalN": 1.6827487626695818,
+          "normalVerticalN": -0.27709985524481484,
+          "actualContactVerticalN": 0.566289272566611,
+          "optimisticContactVerticalUpperBoundN": 0.5663282775079114,
+          "weightN": 2.3045627499999997,
+          "upperBoundBelowWeight": true,
+          "contactForceN": [
+            0.0008777383227971184,
+            1.635989283768017e-13,
+            0.566289272566611
+          ],
+          "potentialJ": 0.0005538595334941764,
+          "features": {
+            "outer-straight": 1734,
+            "finite-height-cap": 346
+          },
+          "workResidualW": -1.942890293094024e-16
+        },
+        {
+          "resolution": [
+            2048,
+            2048
+          ],
+          "normalN": 1.682359435791449,
+          "normalVerticalN": -0.2786164118290125,
+          "actualContactVerticalN": 0.563629185233661,
+          "optimisticContactVerticalUpperBoundN": 0.5636684031331438,
+          "weightN": 2.3045627499999997,
+          "upperBoundBelowWeight": true,
+          "contactForceN": [
+            0.0008801061009912611,
+            1.6161743116900476e-13,
+            0.563629185233661
+          ],
+          "potentialJ": 0.0005538627502095872,
+          "features": {
+            "outer-straight": 6932,
+            "finite-height-cap": 1528
+          },
+          "workResidualW": 6.938893903907228e-16
+        }
+      ],
+      "fineMaximumForceDifferenceN": 0.0026600873329499786,
+      "finePotentialDifferenceJ": 3.2167154107465984e-09
+    },
+    {
+      "label": "end",
+      "elapsedS": 0.8000000000009777,
+      "noteRiseM": -0.00014460801419984015,
+      "pivotRiseM": 0.00848676298535525,
+      "levels": [
+        {
+          "resolution": [
+            512,
+            512
+          ],
+          "normalN": 1.8880575146572325,
+          "normalVerticalN": -0.311017498442249,
+          "actualContactVerticalN": -0.5923466745477941,
+          "optimisticContactVerticalUpperBoundN": 0.6352416944553172,
+          "weightN": 2.3045627499999997,
+          "upperBoundBelowWeight": true,
+          "contactForceN": [
+            -0.010936907445410215,
+            2.644437674479555e-13,
+            -0.5923466745477941
+          ],
+          "potentialJ": 0.0006462383058040086,
+          "features": {
+            "finite-height-cap": 112,
+            "outer-straight": 468
+          },
+          "workResidualW": 2.8189256484623115e-18
+        },
+        {
+          "resolution": [
+            1024,
+            1024
+          ],
+          "normalN": 1.8890166138651319,
+          "normalVerticalN": -0.3013925711786861,
+          "actualContactVerticalN": -0.5846080348772019,
+          "optimisticContactVerticalUpperBoundN": 0.6512159488030904,
+          "weightN": 2.3045627499999997,
+          "upperBoundBelowWeight": true,
+          "contactForceN": [
+            -0.010939119601861657,
+            2.62773980905847e-13,
+            -0.5846080348772019
+          ],
+          "potentialJ": 0.0006471462322128984,
+          "features": {
+            "outer-straight": 1874,
+            "finite-height-cap": 358
+          },
+          "workResidualW": -1.8431436932253575e-18
+        },
+        {
+          "resolution": [
+            2048,
+            2048
+          ],
+          "normalN": 1.8894386428885044,
+          "normalVerticalN": -0.3018106007620587,
+          "actualContactVerticalN": -0.5850277624253445,
+          "optimisticContactVerticalUpperBoundN": 0.6508003661723951,
+          "weightN": 2.3045627499999997,
+          "upperBoundBelowWeight": true,
+          "contactForceN": [
+            -0.010941614374012653,
+            2.632614106740257e-13,
+            -0.5850277624253445
+          ],
+          "potentialJ": 0.0006471875895428182,
+          "features": {
+            "finite-height-cap": 1594,
+            "outer-straight": 7510
+          },
+          "workResidualW": 6.071532165918825e-18
+        }
+      ],
+      "fineMaximumForceDifferenceN": 0.00041972754814256774,
+      "finePotentialDifferenceJ": 4.1357329919880156e-08
+    }
+  ],
+  "floorSamples": [
+    {
+      "label": "entry",
+      "levels": [
+        {
+          "points": 16,
+          "forceN": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "potentialJ": 0.0,
+          "normalHeatW": 0.0,
+          "frictionHeatW": 0.0
+        },
+        {
+          "points": 32,
+          "forceN": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "potentialJ": 0.0,
+          "normalHeatW": 0.0,
+          "frictionHeatW": 0.0
+        },
+        {
+          "points": 64,
+          "forceN": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "potentialJ": 0.0,
+          "normalHeatW": 0.0,
+          "frictionHeatW": 0.0
+        }
+      ]
+    },
+    {
+      "label": "first-airborne",
+      "levels": [
+        {
+          "points": 16,
+          "forceN": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "potentialJ": 0.0,
+          "normalHeatW": 0.0,
+          "frictionHeatW": 0.0
+        },
+        {
+          "points": 32,
+          "forceN": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "potentialJ": 0.0,
+          "normalHeatW": 0.0,
+          "frictionHeatW": 0.0
+        },
+        {
+          "points": 64,
+          "forceN": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "potentialJ": 0.0,
+          "normalHeatW": 0.0,
+          "frictionHeatW": 0.0
+        }
+      ]
+    },
+    {
+      "label": "peak-rise",
+      "levels": [
+        {
+          "points": 16,
+          "forceN": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "potentialJ": 0.0,
+          "normalHeatW": 0.0,
+          "frictionHeatW": 0.0
+        },
+        {
+          "points": 32,
+          "forceN": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "potentialJ": 0.0,
+          "normalHeatW": 0.0,
+          "frictionHeatW": 0.0
+        },
+        {
+          "points": 64,
+          "forceN": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "potentialJ": 0.0,
+          "normalHeatW": 0.0,
+          "frictionHeatW": 0.0
+        }
+      ]
+    },
+    {
+      "label": "before-floor-return",
+      "levels": [
+        {
+          "points": 16,
+          "forceN": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "potentialJ": 0.0,
+          "normalHeatW": 0.0,
+          "frictionHeatW": 0.0
+        },
+        {
+          "points": 32,
+          "forceN": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "potentialJ": 0.0,
+          "normalHeatW": 0.0,
+          "frictionHeatW": 0.0
+        },
+        {
+          "points": 64,
+          "forceN": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "potentialJ": 0.0,
+          "normalHeatW": 0.0,
+          "frictionHeatW": 0.0
+        }
+      ]
+    },
+    {
+      "label": "floor-return",
+      "levels": [
+        {
+          "points": 16,
+          "forceN": [
+            -0.007932436157645332,
+            1.2863446933064317e-14,
+            4.392933607149617
+          ],
+          "potentialJ": 8.417811283288918e-06,
+          "normalHeatW": 0.7269456255308353,
+          "frictionHeatW": 3.580976658960318e-07
+        },
+        {
+          "points": 32,
+          "forceN": [
+            -0.00793243615764533,
+            1.2863446933064315e-14,
+            4.392933607149618
+          ],
+          "potentialJ": 8.417811283288923e-06,
+          "normalHeatW": 0.7269456255308351,
+          "frictionHeatW": 3.580976658960317e-07
+        },
+        {
+          "points": 64,
+          "forceN": [
+            -0.007932436157645332,
+            1.286344693306432e-14,
+            4.392933607149618
+          ],
+          "potentialJ": 8.417811283288918e-06,
+          "normalHeatW": 0.7269456255308352,
+          "frictionHeatW": 3.580976658960318e-07
+        }
+      ]
+    },
+    {
+      "label": "end",
+      "levels": [
+        {
+          "points": 16,
+          "forceN": [
+            0.010955375378301147,
+            8.469874488701771e-15,
+            2.8922665521221647
+          ],
+          "potentialJ": 0.0002091150267061869,
+          "normalHeatW": 5.685729162192885e-10,
+          "frictionHeatW": 1.0374548403781986e-06
+        },
+        {
+          "points": 32,
+          "forceN": [
+            0.010955375378301147,
+            8.469874488701773e-15,
+            2.892266552122166
+          ],
+          "potentialJ": 0.00020911502670618686,
+          "normalHeatW": 5.685729162192886e-10,
+          "frictionHeatW": 1.0374548403781986e-06
+        },
+        {
+          "points": 64,
+          "forceN": [
+            0.010955375378301147,
+            8.469874488701773e-15,
+            2.8922665521221638
+          ],
+          "potentialJ": 0.00020911502670618688,
+          "normalHeatW": 5.685729162192882e-10,
+          "frictionHeatW": 1.0374548403781988e-06
+        }
+      ]
+    }
+  ],
+  "acceptance": false,
+  "limits": [
+    "Prescribed-state local refinement only; no full spatial trajectory convergence",
+    "Optimistic upper bound allows arbitrary tangential friction within each Coulomb cone independently; attainable force may be smaller",
+    "An upper bound below weight excludes static support only at that fixed model geometry; it is not a hardware or design-wide impossibility proof",
+    "Regularized friction has no static sticking state; material, floor, mass and installed transmission remain uncalibrated",
+    "No Fusion access or lifted native whole-assembly clearance"
+  ]
+}

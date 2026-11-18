@@ -1,0 +1,30 @@
+{
+  "schema": "native-pressure-lift-contract/1",
+  "resolution": [
+    1024,
+    1024
+  ],
+  "floorPoints": 16,
+  "floorStiffnessNpm": 20000.0,
+  "floorDampingNspm": 20.0,
+  "timestepsS": [
+    0.0005,
+    0.00025,
+    0.000125
+  ],
+  "initialization": "Exact attained native ground-stop chassis, NOTE, rotors, ledger, clock and initial energy; released vertical/pitch coordinates equal prior flat constraints; no pressure reservoir replacement",
+  "actuatorHypothesis": "Existing 4kg carriage,3kg cradle, declared COM/inertia and candidate12:1 transmissions; partition 7kg out of45kg chassis once",
+  "control": "100Hz finite inverse-effort controller; target rises at0.1m/s2 to0.02m/s then requests hold at8mm at0.5s; no pose or velocity assignment; pinch inverse current controls longitudinal position",
+  "comparisonBounds": {
+    "positionM": 5e-05,
+    "velocityMps": 0.001,
+    "incrementalEnergyJ": 0.002
+  },
+  "limits": [
+    "Uncalibrated model continuation only; native moving-body mass/COM/inertia and installed transmission are not bound",
+    "Native belt/tread pressure geometry is retained, but lifted full-assembly collision/clearance is unknown",
+    "New floor compliance, support quadrature and vertical/pitch degrees of freedom are explicitly declared hypotheses",
+    "Regularized friction has no static sticking state; hold, loss and return-to-floor outcomes must remain visible",
+    "No Fusion interaction, audit replay, hardware command or continuous launch claim"
+  ]
+}

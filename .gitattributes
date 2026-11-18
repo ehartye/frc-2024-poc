@@ -52,3 +52,24 @@ sim/pressure/evidence/native-signed-20261118/native-signed-counterexamples.json 
 sim/pressure/NATIVE_SIGNED_PRESSURE.md -text
 sim/pressure/evidence/native-signed-20261118/executed/run_native_signed.py -text
 sim/pressure/evidence/native-signed-20261118/executed/continue_native_signed_stop.py -text
+
+sim/pressure/native_pressure_lift.py -text
+sim/pressure/run_native_pressure_lift.py -text
+sim/pressure/run_native_pressure_lift_clocked.py -text
+sim/pressure/audit_native_lift_binding.py -text
+sim/pressure/verify_native_lift_work.py -text
+sim/pressure/verify_native_lift_clocked.py -text
+sim/pressure/probe_native_lift_support.py -text
+sim/pressure/summarize_native_lift_diagnostics.py -text
+sim/pressure/plot_native_lift.py -text
+sim/pressure/evidence/native-lift-20261118/native-pressure-lift-contract.json -text
+sim/pressure/evidence/native-lift-20261118/native-lift-mass-binding-audit-final.json -text
+sim/pressure/evidence/native-lift-20261118/native-lift-work-identity.json -text
+sim/pressure/evidence/native-lift-20261118/native-lift-dependency-pins.json -text
+sim/pressure/evidence/native-lift-20261118/native-lift-clocked-verification.json -text
+sim/pressure/evidence/native-lift-20261118/native-lift-local-support-final.json -text
+sim/pressure/evidence/native-lift-20261118/native-lift-preserved-diagnostics.json -text
+sim/pressure/NATIVE_PRESSURE_LIFT.md -text
+sim/pressure/evidence/native-lift-20261118/native-lift-trajectory.svg -text
+sim/pressure/evidence/native-lift-20261118/initial-type-rejection/native_pressure_lift.py -text
+sim/pressure/evidence/native-lift-20261118/initial-type-rejection/run_native_pressure_lift.py -text
