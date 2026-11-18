@@ -84,9 +84,11 @@ def interval_bound(path,lo,hi,group,distances,shape,angles,subdivisions):
     return lower
 
 
-def refine(shot, inventory_file, native_file, samples=8192, subdivisions=8):
+def refine(shot, inventory_file, native_file, samples=8192, subdivisions=8, refine_below=0.):
     if samples < 3 or subdivisions < 1:
         raise ValueError("Refinement requires at least three ring samples and one time subdivision")
+    if not math.isfinite(refine_below) or refine_below<0:
+        raise ValueError("Expected a finite nonnegative clearance threshold")
     packet=load(shot/"result.json")
     native=load(native_file)
     inventory=load(inventory_file)
@@ -120,15 +122,15 @@ def refine(shot, inventory_file, native_file, samples=8192, subdivisions=8):
                     shapes[key]=(ring_distances,shell_dimension(body))
             distances,shape=shapes[key]
             gap=interval_bound(path,lo,hi,body["motionGroup"],distances,shape,coarse_grid,min(8,subdivisions))
-            if gap<=0. and (samples>8192 or subdivisions>8):
-                gap=interval_bound(path,lo,hi,body["motionGroup"],distances,shape,grid,subdivisions)
+            if gap<=refine_below and (samples>8192 or subdivisions>8):
+                gap=max(gap,interval_bound(path,lo,hi,body["motionGroup"],distances,shape,grid,subdivisions))
             lower=min(lower,gap)
         worst=min(worst,lower)
         if lower<=0.:
             remaining.append([lo,hi,keys,lower])
     return dict(native=packet["nativeSha256"],trace=packet["traceSha256"],nativeSweep=digest(native_file),
                 initialUnresolved=len(native["unresolved"]),unresolved=remaining,samples=samples,
-                substeps=subdivisions,minimumLowerBoundMm=worst if math.isfinite(worst) else None)
+                substeps=subdivisions,refineBelowMm=refine_below,minimumLowerBoundMm=worst if math.isfinite(worst) else None)
 
 
 if __name__=="__main__":
@@ -137,8 +139,10 @@ if __name__=="__main__":
         p.add_argument(key,type=Path)
     p.add_argument("--samples", type=int, default=8192)
     p.add_argument("--subdivisions", type=int, default=8)
+    p.add_argument("--refine-below-mm", type=float, default=0.,
+                   help="Recheck already-clear intervals below this reported clearance")
     args=p.parse_args()
-    result=refine(args.shot,args.inventory,args.native_sweep,args.samples,args.subdivisions)
+    result=refine(args.shot,args.inventory,args.native_sweep,args.samples,args.subdivisions,args.refine_below_mm)
     with args.output.open("x") as stream:
         json.dump(result,stream,indent=2,allow_nan=False)
     print(result["initialUnresolved"],len(result["unresolved"]),result["minimumLowerBoundMm"])

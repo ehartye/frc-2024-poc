@@ -45,12 +45,19 @@ def verify(a):
         resets=[load(path) for path in a.counter_reset]
         if len(resets)!=len(history):
             raise ValueError("Every preceding NOTE needs a verified clear counter and separate flight")
-        for earlier,reset in zip(history,resets):
+        for index,(earlier,reset) in enumerate(zip(history,resets)):
             if (reset["previousScore"]!=earlier["receiptSha256"] or reset["olderShot"]!=earlier["shot"]
                     or reset["laterShot"]!=shot["traceSha256"] or reset["field"]!=field["trace"]
                     or reset["minimumPieceSeparationM"]<=0. or reset["sensorClearByS"]>=shot["end"]
                     or reset["verifiedThroughS"]+1e-8<field["endS"]):
                 raise ValueError("Wrong or incomplete counter reset")
+            links=reset.get("earlierCollectionSeparation",[])
+            if (len(links)!=index or any(link["score"]!=other["previousScore"]
+                    or link["verifiedThroughS"]+1e-8<field["endS"]
+                    or (link["gapM"] is None and not link["coupledManifests"])
+                    or (link["gapM"] is not None and link["gapM"]<=0.)
+                    or link["segments"]!=other["priorSegments"] for link,other in zip(links,resets[:index]))):
+                raise ValueError("Prior NOTES lack mutually consistent collection trajectories")
         target_piece=entry["pieceId"]
         pickup_trace=entry["trace"]
         prior_start=entry["start"]

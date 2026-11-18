@@ -49,6 +49,46 @@ class OpticalPaths(unittest.TestCase):
 
 
 class ConsecutiveScores(unittest.TestCase):
+    def test_collection_contact_requires_the_same_joint_solve(self):
+        from counter_reset import collection_pair
+        low=np.array([[t,0.,0.,0.,1.,0.,0.,0.] for t in (0.,.001,.002)])
+        high=low.copy()
+        high[:,3]=.047
+        joint=[(0.,.002,"shared")]
+        result=collection_pair(low,joint,high,joint,0.,.002)
+        self.assertEqual(result["coupledManifests"],["shared"])
+        with self.assertRaisesRegex(ValueError,"coupled contact"):
+            collection_pair(low,joint,high,[(0.,.002,"different")],0.,.002)
+
+    def test_parallel_rings_clear_even_when_their_bounding_spheres_overlap(self):
+        from counter_reset import separate_paths
+        low=np.array([[t,0.,0.,0.,1.,0.,0.,0.] for t in (0.,.001,.002)])
+        high=low.copy()
+        high[:,3]=.12
+        self.assertGreater(separate_paths(low,high,0.,.002),.06)
+
+    def test_shared_ring_contact_conserves_total_force_and_moment(self):
+        from types import SimpleNamespace
+        from coupled_collection import pair_wrenches
+        angles=np.arange(192)*2*np.pi/192
+        ring=MAJOR*np.column_stack((np.cos(angles),np.sin(angles),np.zeros(len(angles))))
+        def body(z,vy):
+            center=np.array([0.,0.,z])
+            return SimpleNamespace(center=center,rotation=np.eye(3),points=center+ring,
+                                   velocity=np.array([0.,vy,0.]),omega=np.zeros(3))
+        p=SimpleNamespace(stiffness=1200000.,damping=450.,friction=.45)
+        a,b=body(0.,.25),body(.048,0.)
+        wrench,depth=pair_wrenches(a,b,p)
+        self.assertAlmostEqual(depth,.0028)
+        self.assertLess(wrench[0,2],0.)
+        self.assertLess(wrench[0,1],0.)
+        np.testing.assert_allclose(wrench[:,:3].sum(axis=0),0.,atol=1e-9)
+        moment=wrench[:,3:].sum(axis=0)+np.cross(a.center,wrench[0,:3])+np.cross(b.center,wrench[1,:3])
+        np.testing.assert_allclose(moment,0.,atol=1e-9)
+        separate,depth=pair_wrenches(a,body(.12,0.),p)
+        self.assertEqual(depth,0.)
+        np.testing.assert_array_equal(separate,np.zeros((2,6)))
+
     def setUp(self):
         from run_axial_shear_lift import digest
         self.temp = tempfile.TemporaryDirectory()
