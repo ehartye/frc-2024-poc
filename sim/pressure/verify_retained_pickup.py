@@ -78,3 +78,4 @@ if __name__ == "__main__":
     with args.output.open("x",encoding="utf-8") as stream:
         json.dump(result,stream,indent=2,allow_nan=False)
     print(json.dumps(result,indent=2))
+    raise SystemExit(0 if all(result[k] for k in ("retainedAll", "temporalBoundPassed", "spatialBoundPassed")) else 1)

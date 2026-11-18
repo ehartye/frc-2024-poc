@@ -1,0 +1,88 @@
+"""Check attained NOTE envelopes against registered native BReps in Autodesk Fusion.
+
+Call check() from the bridge with a verified Design and private input/output paths.
+The entire check uses temporary solids. Fusion geometry uses centimeters.
+"""
+import hashlib
+import json
+import math
+from pathlib import Path
+
+import adsk.core
+import adsk.fusion
+
+
+def torus_at(manager, x, y, z, pitch, padding):
+    core = adsk.core
+    origin = core.Point3D.create(0., 0., 0.)
+    tube = 25.4 + padding
+    ring = manager.createTorus(origin, core.Vector3D.create(0., 0., 1.), 15.24, tube/10)
+    transform = core.Matrix3D.create()
+    transform.setToRotation(-pitch, core.Vector3D.create(0., 1., 0.), origin)
+    transform.translation = core.Vector3D.create(x/10, y/10, z/10)
+    if not manager.transform(ring, transform):
+        raise ValueError("Failed to place the native NOTE")
+    box = ring.preciseBoundingBox
+    measured = [10*value for value in box.minPoint.asArray()+box.maxPoint.asArray()]
+    extent = [152.4*abs(math.cos(pitch))+tube, 152.4+tube, 152.4*abs(math.sin(pitch))+tube]
+    expected = [v+sign*e for sign in (-1,1) for v,e in zip((x,y,z),extent)]
+    if max(abs(a-b) for a,b in zip(measured,expected)) > .002:
+        raise ValueError("Native torus placement exceeds tolerance")
+    return ring, measured
+
+
+def check(design, registration, poses, output, archive_sha256):
+    data = json.loads(Path(registration).read_bytes())
+    if data["sourceSha256"] != archive_sha256:
+        raise ValueError("Native registration revision mismatch")
+    inventory = data["inventory"]
+    bodies = []
+    index = 0
+    for i, occurrence in enumerate(design.rootComponent.allOccurrences):
+        for j, solid in enumerate(occurrence.bRepBodies):
+            item = inventory[index]
+            index += 1
+            if item["key"] != f"body-{i+1}-{j+1}" or item["name"] != solid.name:
+                raise ValueError("Native body registration mismatch")
+            if not item["exclusion"] and item["role"] != "uncalibrated-compliant-tread":
+                bodies.append((item,solid))
+    if index != len(inventory):
+        raise ValueError("Native body count mismatch")
+    manager = adsk.fusion.TemporaryBRepManager.get()
+    pose_bytes = Path(poses).read_bytes()
+    packet_digest = hashlib.sha256(pose_bytes).hexdigest()
+    with Path(output).open("x",encoding="utf-8") as stream:
+        for pose in json.loads(pose_bytes):
+            x,y,z,p,theta,pivot = (pose[k] for k in ("x","y","z","p","theta","pivot"))
+            pad = pose["padMm"]
+            dx,dz = x-178.,z-pivot
+            c,s = math.cos(theta),math.sin(theta)
+            rings = {
+                "fixed": torus_at(manager,x,y,z,p,pad["fixed"]),
+                "carriage": torus_at(manager,x,y,25.4+dz,p,pad["carriage"]),
+                "cradle": torus_at(manager,178+c*dx+s*dz,y,25.4-s*dx+c*dz,p-theta,pad["cradle"])
+            }
+            hits = []
+            checks = 0
+            for item,solid in bodies:
+                ring,box = rings[item["motionGroup"]]
+                other = item["boundsMm"]
+                if other[1] > pose["yBoundsMm"][1]+.002 or other[4] < pose["yBoundsMm"][0]-.002:
+                    continue
+                if any(box[k+3]+.002 < other[k] or other[k+3]+.002 < box[k] for k in range(3)):
+                    continue
+                common = manager.copy(ring)
+                if not manager.booleanOperation(common,solid,adsk.fusion.BooleanTypes.IntersectionBooleanType):
+                    hits.append(dict(id=item["key"], unresolved="intersection"))
+                    continue
+                checks += 1
+                try:
+                    volume = common.volume*1000 if common.isValid and common.faces.count else 0.
+                except RuntimeError:
+                    hits.append(dict(id=item["key"], unresolved="volume"))
+                    continue
+                if volume > .0001:
+                    hits.append(dict(id=item["key"],volumeMm3=volume))
+            stream.write(json.dumps(dict(**pose, checks=checks, hits=hits, archiveSha256=archive_sha256,
+                                         posePacketSha256=packet_digest))+"\n")
+            stream.flush()
