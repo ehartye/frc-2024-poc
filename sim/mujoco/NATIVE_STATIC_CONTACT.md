@@ -6,7 +6,7 @@ The separately saved [native track/tread candidate](../integrated/TRACK_TREAD_CA
 
 ## What was actually simulated
 
-The final relieved F3D hash is required at launch. The fixture uses its two inner straight belt faces at absolute Y176.422393 mm, their native 12.7 mm height and the 3.5 mm combined belt/tread material thickness. The fixture is translated upward to isolate gravity release from the floor. It omits the curved return loops and every other robot part.
+The final relieved F3D hash is required at launch. The fixture uses its two inner straight belt faces at absolute Y176.422393 mm, their native 12.7 mm height and the 3.5 mm combined belt/tread material thickness. The face dimensions come from the previously verified native candidate and its original source generator; an additional direct Fusion face-surface check has not completed and is not claimed. The fixture is translated upward to isolate gravity release from the floor. It omits the curved return loops and every other robot part.
 
 The NOTE is a free six-DOF body with the inherited 0.235 kg uniform-torus mass/inertia hypothesis. A ring of 128 or 256 capsules approximates its torus; maximum centerline sagitta is 0.045900 or 0.011475 mm. Explicit inertia prevents geometry mass double-counting. There is no floor, actuator, equality constraint, NOTE attachment or state overwrite after initialization. MuJoCo alone advances state.
 
@@ -30,7 +30,7 @@ Eleven source-bound runs pass the saved-trace verifier. All use MuJoCo 4.0.1 and
 
 Steady contact force balances the 2.304563 N weight. The no-contact trace matches analytic semi-implicit Euler free fall below 1e-12 m. The five-second runs took approximately 21 seconds at 128 capsules and 43 seconds at 256 under the observed execution conditions; these are measured offline results, not real-time guarantees.
 
-The no-slip on/off comparison isolates a solver change within the same point-contact model. The comparison with the earlier finite-area model changes both contact formulation and discretization, so it cannot attribute all differing behavior to one parameter. The earlier failed traces remain valid evidence about their original law.
+The no-slip on/off comparison isolates a solver change within the same point-contact model. The comparison with the earlier finite-area model changes both contact formulation and discretization, so it cannot attribute all differing behavior to one parameter. The earlier failed traces remain valid evidence about their original law. Friction-cone and steady force-balance checks are not a complete compliance-energy validation.
 
 ## Decision and integration boundary
 
