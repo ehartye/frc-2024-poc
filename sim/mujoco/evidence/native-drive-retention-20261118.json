@@ -1,0 +1,1919 @@
+{
+  "schema": "native-drive-retention-controls/1",
+  "allChecksPassed": true,
+  "acceptance": false,
+  "freefallPositionErrorM": 2.220446049250313e-16,
+  "motorPowerIdentityMaxErrorW": 4.336808689942018e-18,
+  "halfStepFinalChassisXDifferenceM": 0.00013732730884946642,
+  "runs": {
+    "forward": {
+      "schema": "native-drive-retention-experiment/1",
+      "complete": true,
+      "acceptance": false,
+      "status": "HORIZON",
+      "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+      "inputs": {
+        "sim/drivetrain/config.json": "334a7d02b4968401a10fb829ae838edfbeb7d9a311c13f3e2cbcc47b54748ff4",
+        "sim/drivetrain/plant.py": "3d30f7df18abf6c24cc5c949a308246bb275bea57242128916cee627da561155",
+        "cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+        "sim/mujoco/native_drive.py": "af1a0e679ac7e4db8d9d8b82b02623f2eb9f352fca87bab3daad37c1311a4343",
+        "sim/mujoco/drivetrain_bridge.py": "bc5c47c3881bfd835516b0e31ac3b80e0f7d562a357806c7cba0a0b38f5fee7a",
+        "sim/mujoco/native_static_contact.py": "9eecd25f9564320c8e17b789fa132747b405a3fa4db3ae0cae0af518f07a2d7d",
+        "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+        "sim/integrated/evidence/track-tread-candidate-20261118.json": "b76ed965b6e744cafbd422761ccadee03c51b45c810feab1d22c895730d7e803",
+        "sim/acquisition/free-planar-config.json": "8ecb4ca6594ec456e56a79ceb63d222d9824e4985273d6b16a52b9737d166053"
+      },
+      "scriptSha256": "678d81fa96e44aac9dca6146f4ecd3fdaa260c666409cd52decd15fec6ab2f30",
+      "mujocoVersion": "4.0.1",
+      "parameters": {
+        "stiffness": 158.5198855981308,
+        "normalTargetPerSideN": 3.7648484524298866,
+        "radiusM": 0.012127606663602424,
+        "beltMassEachKg": 0.05,
+        "rotorInertiaEachKgM2": 3e-05,
+        "motorK": 0.01984269420366487,
+        "resistanceOhm": 0.11428571428571428,
+        "currentLimitA": 40.0,
+        "positionGainNpm": 1000.0,
+        "velocityGainNspm": 20.0,
+        "busV": 12.0,
+        "dtS": 0.0002,
+        "segments": 128,
+        "mu": 0.6,
+        "scenario": "forward",
+        "beltMode": "hold",
+        "noContact": false,
+        "maximumPatchTravelM": 0.001,
+        "maximumNoteRelativeXYM": 0.001,
+        "minimumContactEndMarginM": 0.002
+      },
+      "maxima": {
+        "relativeXYM": 0.0005298254123922706,
+        "relativeZM": 0.00013571862556782666,
+        "relativeTiltRad": 3.1668035274464724e-06,
+        "beltStrokeM": 0.0005298275953591919,
+        "currentA": 0.3788729118303623,
+        "forceProjectionErrorN": 2.8919673773817486e-15,
+        "coneExcessN": 8.632114467665986e-11,
+        "comDisplacementM": 0.42570644866816615,
+        "chassisSpeedMps": 0.6383925063717942,
+        "chassisYawRad": 1.6289804597436993e-06,
+        "noteForceN": 15.231302185315007
+      },
+      "minimumNormalN": [
+        2.865036886229368,
+        2.865036667498785
+      ],
+      "initial": {
+        "relativeNoteM": [
+          0.185,
+          0.0,
+          0.3
+        ],
+        "relativeTiltRad": 0.0,
+        "noteWorldM": [
+          0.185,
+          0.0,
+          0.301
+        ],
+        "chassisWorldM": [
+          0.0,
+          0.0,
+          0.001
+        ],
+        "chassisYawRad": 0.0,
+        "noteForceWorldN": [
+          1.6596482812868401e-18,
+          2.353672812205332e-14,
+          -7.764638008930951e-15
+        ],
+        "normalN": [
+          2.865036888154859,
+          2.8650368881548354
+        ],
+        "contacts": 20,
+        "minimumContactEndMarginM": 0.011112187813774974,
+        "frictionConeExcessN": 0.0,
+        "forceProjectionErrorN": 3.469446951953614e-18,
+        "systemComM": [
+          0.0009610920747209021,
+          6.135862853018441e-19,
+          0.17128973136127554
+        ]
+      },
+      "final": {
+        "step": 7500,
+        "timeS": 1.4999999999998674,
+        "relativeNoteM": [
+          0.18502974803923256,
+          2.3585769298805893e-08,
+          0.29986428137443216
+        ],
+        "relativeTiltRad": 3.1668035274464724e-06,
+        "noteWorldM": [
+          0.6107347805935055,
+          5.352416178326851e-07,
+          0.29985596538780407
+        ],
+        "chassisWorldM": [
+          0.42570503255427417,
+          5.036121702661094e-07,
+          -8.315986628084845e-06
+        ],
+        "chassisYawRad": 4.34723516245848e-08,
+        "noteForceWorldN": [
+          -0.03780369746118495,
+          4.692201749645353e-07,
+          2.3045624473770463
+        ],
+        "normalN": [
+          2.877285441904873,
+          2.8772849710412816
+        ],
+        "contacts": 20,
+        "minimumContactEndMarginM": 0.011112187667444387,
+        "frictionConeExcessN": 9.71445146547012e-17,
+        "forceProjectionErrorN": 7.133929195712941e-17,
+        "systemComM": [
+          0.42666634493626815,
+          5.037764910227525e-07,
+          0.17028071030386144
+        ],
+        "beltStrokeM": [
+          2.9747856256632656e-05,
+          2.974834917197462e-05
+        ],
+        "beltSpeedMps": [
+          -0.0001476022291452957,
+          -0.00014760935880020804
+        ],
+        "beltMotors": [
+          {
+            "forceN": -0.026795811673726747,
+            "currentA": -0.016377265147335868,
+            "terminalV": -0.0021131881782377846,
+            "terminalPowerW": 3.4608243101215846e-05,
+            "windingHeatW": 3.065312156641624e-05,
+            "mechanicalPowerW": 3.955121534799604e-06,
+            "powerResidualW": 0.0
+          },
+          {
+            "forceN": -0.02679616199597045,
+            "currentA": -0.016377479259912193,
+            "terminalV": -0.00211322431349639,
+            "terminalPowerW": 3.460928736582931e-05,
+            "windingHeatW": 3.06539230752976e-05,
+            "mechanicalPowerW": 3.955364290531701e-06,
+            "powerResidualW": 4.235164736271502e-21
+          }
+        ],
+        "driveDemand": [
+          0.0,
+          0.0
+        ],
+        "driveMode": [
+          "brake",
+          "brake"
+        ],
+        "driveBusPowerW": 0.0,
+        "qpos": [
+          0.42570503255427417,
+          5.036121702661094e-07,
+          -0.0010083159866280849,
+          4.34723516245848e-08,
+          5.586986575565949,
+          5.586984902801604,
+          5.586986575565949,
+          5.586986912685768,
+          5.586985239814781,
+          5.586986912685768,
+          2.9747856256632656e-05,
+          2.974834917197462e-05,
+          0.6107347805935055,
+          5.352416178326851e-07,
+          0.29985596538780407,
+          0.9999999999987459,
+          1.3586635036437209e-07,
+          -1.5773937727174964e-06,
+          2.1196834425213456e-08
+        ],
+        "qvel": [
+          0.0325998235657765,
+          1.4623869724121977e-09,
+          6.621791002690405e-12,
+          -5.78283789901151e-07,
+          0.4278363925070461,
+          0.4278447911663106,
+          0.4278363925070461,
+          0.4278321594027402,
+          0.4278403879005306,
+          0.4278321594027402,
+          -0.0001476022291452957,
+          -0.00014760935880020804,
+          0.03245221796651012,
+          -2.4802435689523594e-07,
+          -1.0470855067166397e-08,
+          1.4498139521547734e-07,
+          -2.0300389026456025e-06,
+          -5.587179774245547e-07
+        ]
+      },
+      "energyLedgerJ": {
+        "beltTerminalJ": 0.004877995998714299,
+        "beltHeatJ": 0.0054338824371382875,
+        "beltMechanicalJ": -0.0005558864384239796,
+        "driveAxleJ": 0.02103703100233137
+      },
+      "warningCounts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "traceSha256": "5baa1c6ad94b9d7ac9e1e0b2fa59b7449f7c96db479ee0454fdd8a25b553ba85",
+      "modelSha256": "c616d0c9133b4c3895d6a2d26eb69fa83a3d7ff48ac31e7becb05f395a570801",
+      "wallSeconds": 7.825556400002824,
+      "limits": [
+        "Only native straight-face geometry; finite translational patches stop at 1 mm material travel/NOTE XY displacement or 2 mm contact endpoint margin, not full circulating belts",
+        "Cradle fixed at a hypothetical 0.3 m carry height; no moving lift, pitch, hard-part clearance or acquisition verification",
+        "Finite ideal reciprocal pinch motors with current and voltage limits; drive and pinch share ideal 12 V, no battery sag or regenerative-storage qualification",
+        "Mass/inertia/contact stiffness/friction/controller gains remain hypotheses; native archive identity does not calibrate them",
+        "No launcher, shot, field goal, hardware validation or GUI demonstration"
+      ]
+    },
+    "turn": {
+      "schema": "native-drive-retention-experiment/1",
+      "complete": true,
+      "acceptance": false,
+      "status": "HORIZON",
+      "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+      "inputs": {
+        "sim/drivetrain/config.json": "334a7d02b4968401a10fb829ae838edfbeb7d9a311c13f3e2cbcc47b54748ff4",
+        "sim/drivetrain/plant.py": "3d30f7df18abf6c24cc5c949a308246bb275bea57242128916cee627da561155",
+        "cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+        "sim/mujoco/native_drive.py": "af1a0e679ac7e4db8d9d8b82b02623f2eb9f352fca87bab3daad37c1311a4343",
+        "sim/mujoco/drivetrain_bridge.py": "bc5c47c3881bfd835516b0e31ac3b80e0f7d562a357806c7cba0a0b38f5fee7a",
+        "sim/mujoco/native_static_contact.py": "9eecd25f9564320c8e17b789fa132747b405a3fa4db3ae0cae0af518f07a2d7d",
+        "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+        "sim/integrated/evidence/track-tread-candidate-20261118.json": "b76ed965b6e744cafbd422761ccadee03c51b45c810feab1d22c895730d7e803",
+        "sim/acquisition/free-planar-config.json": "8ecb4ca6594ec456e56a79ceb63d222d9824e4985273d6b16a52b9737d166053"
+      },
+      "scriptSha256": "678d81fa96e44aac9dca6146f4ecd3fdaa260c666409cd52decd15fec6ab2f30",
+      "mujocoVersion": "4.0.1",
+      "parameters": {
+        "stiffness": 158.5198855981308,
+        "normalTargetPerSideN": 3.7648484524298866,
+        "radiusM": 0.012127606663602424,
+        "beltMassEachKg": 0.05,
+        "rotorInertiaEachKgM2": 3e-05,
+        "motorK": 0.01984269420366487,
+        "resistanceOhm": 0.11428571428571428,
+        "currentLimitA": 40.0,
+        "positionGainNpm": 1000.0,
+        "velocityGainNspm": 20.0,
+        "busV": 12.0,
+        "dtS": 0.0002,
+        "segments": 128,
+        "mu": 0.6,
+        "scenario": "turn",
+        "beltMode": "hold",
+        "noContact": false,
+        "maximumPatchTravelM": 0.001,
+        "maximumNoteRelativeXYM": 0.001,
+        "minimumContactEndMarginM": 0.002
+      },
+      "maxima": {
+        "relativeXYM": 0.0005298254123922706,
+        "relativeZM": 0.00013575533611198676,
+        "relativeTiltRad": 1.8551796075687583e-06,
+        "beltStrokeM": 0.0005298275953591919,
+        "currentA": 0.3788729118303623,
+        "forceProjectionErrorN": 2.8919673773817486e-15,
+        "coneExcessN": 1.573353253236931e-10,
+        "comDisplacementM": 0.3612300396287921,
+        "chassisSpeedMps": 0.5734742142214966,
+        "chassisYawRad": 0.04151118183537247,
+        "noteForceN": 15.231302185315007
+      },
+      "minimumNormalN": [
+        2.8453159054111117,
+        2.8637467985993896
+      ],
+      "initial": {
+        "relativeNoteM": [
+          0.185,
+          0.0,
+          0.3
+        ],
+        "relativeTiltRad": 0.0,
+        "noteWorldM": [
+          0.185,
+          0.0,
+          0.301
+        ],
+        "chassisWorldM": [
+          0.0,
+          0.0,
+          0.001
+        ],
+        "chassisYawRad": 0.0,
+        "noteForceWorldN": [
+          1.6596482812868401e-18,
+          2.353672812205332e-14,
+          -7.764638008930951e-15
+        ],
+        "normalN": [
+          2.865036888154859,
+          2.8650368881548354
+        ],
+        "contacts": 20,
+        "minimumContactEndMarginM": 0.011112187813774974,
+        "frictionConeExcessN": 0.0,
+        "forceProjectionErrorN": 3.469446951953614e-18,
+        "systemComM": [
+          0.0009610920747209021,
+          6.135862853018441e-19,
+          0.17128973136127554
+        ]
+      },
+      "final": {
+        "step": 7500,
+        "timeS": 1.4999999999998674,
+        "relativeNoteM": [
+          0.18505254058263035,
+          -4.5647763182872185e-06,
+          0.299864244663888
+        ],
+        "relativeTiltRad": 8.934485741807084e-07,
+        "noteWorldM": [
+          0.5460969831261704,
+          -0.011901791849342988,
+          0.29985592867750893
+        ],
+        "chassisWorldM": [
+          0.36120404833801195,
+          -0.00421768732473944,
+          -8.315986379103238e-06
+        ],
+        "chassisYawRad": -0.04151118183537247,
+        "noteForceWorldN": [
+          -0.02662049310073058,
+          0.0010304740110716748,
+          2.3045627490954144
+        ],
+        "normalN": [
+          2.8772283177145908,
+          2.877303462212401
+        ],
+        "contacts": 20,
+        "minimumContactEndMarginM": 0.011143680368696757,
+        "frictionConeExcessN": 1.0269562977782698e-15,
+        "forceProjectionErrorN": 3.389215991189687e-16,
+        "systemComM": [
+          0.36216463050279807,
+          -0.0042576088801822955,
+          0.17028071011339574
+        ],
+        "beltStrokeM": [
+          2.0959795363275492e-05,
+          2.096730098892054e-05
+        ],
+        "beltSpeedMps": [
+          -0.00010393590455060224,
+          -0.00010409723072445083
+        ],
+        "beltMotors": [
+          {
+            "forceN": -0.018881077272263447,
+            "currentA": -0.011539878415341516,
+            "terminalV": -0.0014888989252270493,
+            "terminalPowerW": 1.7181712569852808e-05,
+            "windingHeatW": 1.521929072467029e-05,
+            "mechanicalPowerW": 1.962421845182519e-06,
+            "powerResidualW": -8.470329472543003e-22
+          },
+          {
+            "forceN": -0.018885356374431526,
+            "currentA": -0.01154249374909787,
+            "terminalV": -0.0014894617758035578,
+            "terminalPowerW": 1.719210323673278e-05,
+            "windingHeatW": 1.5226189936910102e-05,
+            "mechanicalPowerW": 1.9659132998226767e-06,
+            "powerResidualW": 0.0
+          }
+        ],
+        "driveDemand": [
+          0.0,
+          0.0
+        ],
+        "driveMode": [
+          "brake",
+          "brake"
+        ],
+        "driveBusPowerW": 0.0,
+        "qpos": [
+          0.36120404833801195,
+          -0.00421768732473944,
+          -0.0010083159863791033,
+          -0.04151118183537247,
+          4.898301701354019,
+          4.898300522081638,
+          4.898301701354019,
+          4.58156576388294,
+          4.58156458610748,
+          4.58156576388294,
+          2.0959795363275492e-05,
+          2.096730098892054e-05,
+          0.5460969831261704,
+          -0.011901791849342988,
+          0.29985592867750893,
+          0.9997846159785978,
+          4.4995591108679595e-08,
+          4.438673125815183e-07,
+          -0.02075383464152681
+        ],
+        "qvel": [
+          0.0229533772515405,
+          -0.000953369078758085,
+          2.7096085744190714e-12,
+          -7.012629297556126e-06,
+          0.30152267708915426,
+          0.3015285955482712,
+          0.30152267708915426,
+          0.3014692644396932,
+          0.30147512474783134,
+          0.3014692644396932,
+          -0.00010393590455060224,
+          -0.00010409723072445083,
+          0.02285109750719378,
+          -0.0009094219013464697,
+          -7.181220890932607e-09,
+          1.1972236534770715e-07,
+          -1.8734576546345878e-06,
+          -6.550995798837155e-06
+        ]
+      },
+      "energyLedgerJ": {
+        "beltTerminalJ": 0.003835305039809308,
+        "beltHeatJ": 0.004258488618675802,
+        "beltMechanicalJ": -0.00042318357886649395,
+        "driveAxleJ": 0.19467946158439894
+      },
+      "warningCounts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "traceSha256": "1aa983c01d2c19c0b8a05c7d41527aa1454a918416f16b7864d0cb8bfebc304e",
+      "modelSha256": "c616d0c9133b4c3895d6a2d26eb69fa83a3d7ff48ac31e7becb05f395a570801",
+      "wallSeconds": 7.600650399999722,
+      "limits": [
+        "Only native straight-face geometry; finite translational patches stop at 1 mm material travel/NOTE XY displacement or 2 mm contact endpoint margin, not full circulating belts",
+        "Cradle fixed at a hypothetical 0.3 m carry height; no moving lift, pitch, hard-part clearance or acquisition verification",
+        "Finite ideal reciprocal pinch motors with current and voltage limits; drive and pinch share ideal 12 V, no battery sag or regenerative-storage qualification",
+        "Mass/inertia/contact stiffness/friction/controller gains remain hypotheses; native archive identity does not calibrate them",
+        "No launcher, shot, field goal, hardware validation or GUI demonstration"
+      ]
+    },
+    "half-step": {
+      "schema": "native-drive-retention-experiment/1",
+      "complete": true,
+      "acceptance": false,
+      "status": "HORIZON",
+      "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+      "inputs": {
+        "sim/drivetrain/config.json": "334a7d02b4968401a10fb829ae838edfbeb7d9a311c13f3e2cbcc47b54748ff4",
+        "sim/drivetrain/plant.py": "3d30f7df18abf6c24cc5c949a308246bb275bea57242128916cee627da561155",
+        "cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+        "sim/mujoco/native_drive.py": "af1a0e679ac7e4db8d9d8b82b02623f2eb9f352fca87bab3daad37c1311a4343",
+        "sim/mujoco/drivetrain_bridge.py": "bc5c47c3881bfd835516b0e31ac3b80e0f7d562a357806c7cba0a0b38f5fee7a",
+        "sim/mujoco/native_static_contact.py": "9eecd25f9564320c8e17b789fa132747b405a3fa4db3ae0cae0af518f07a2d7d",
+        "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+        "sim/integrated/evidence/track-tread-candidate-20261118.json": "b76ed965b6e744cafbd422761ccadee03c51b45c810feab1d22c895730d7e803",
+        "sim/acquisition/free-planar-config.json": "8ecb4ca6594ec456e56a79ceb63d222d9824e4985273d6b16a52b9737d166053"
+      },
+      "scriptSha256": "678d81fa96e44aac9dca6146f4ecd3fdaa260c666409cd52decd15fec6ab2f30",
+      "mujocoVersion": "4.0.1",
+      "parameters": {
+        "stiffness": 158.5198855981308,
+        "normalTargetPerSideN": 3.7648484524298866,
+        "radiusM": 0.012127606663602424,
+        "beltMassEachKg": 0.05,
+        "rotorInertiaEachKgM2": 3e-05,
+        "motorK": 0.01984269420366487,
+        "resistanceOhm": 0.11428571428571428,
+        "currentLimitA": 40.0,
+        "positionGainNpm": 1000.0,
+        "velocityGainNspm": 20.0,
+        "busV": 12.0,
+        "dtS": 0.0001,
+        "segments": 128,
+        "mu": 0.6,
+        "scenario": "forward",
+        "beltMode": "hold",
+        "noContact": false,
+        "maximumPatchTravelM": 0.001,
+        "maximumNoteRelativeXYM": 0.001,
+        "minimumContactEndMarginM": 0.002
+      },
+      "maxima": {
+        "relativeXYM": 0.0005298940747191727,
+        "relativeZM": 0.0001375475111339841,
+        "relativeTiltRad": 3.172512860817157e-06,
+        "beltStrokeM": 0.0005298963164142524,
+        "currentA": 0.37855353572614814,
+        "forceProjectionErrorN": 3.3208755201206378e-15,
+        "coneExcessN": 8.456083055996544e-11,
+        "comDisplacementM": 0.4255691217937409,
+        "chassisSpeedMps": 0.6383450997662532,
+        "chassisYawRad": 1.610532085888311e-06,
+        "noteForceN": 15.3850014085521
+      },
+      "minimumNormalN": [
+        2.865036886191273,
+        2.8650368833504514
+      ],
+      "initial": {
+        "relativeNoteM": [
+          0.185,
+          0.0,
+          0.3
+        ],
+        "relativeTiltRad": 0.0,
+        "noteWorldM": [
+          0.185,
+          0.0,
+          0.301
+        ],
+        "chassisWorldM": [
+          0.0,
+          0.0,
+          0.001
+        ],
+        "chassisYawRad": 0.0,
+        "noteForceWorldN": [
+          1.6596482812868401e-18,
+          2.353672812205332e-14,
+          -7.764638008930951e-15
+        ],
+        "normalN": [
+          2.865036888154859,
+          2.8650368881548354
+        ],
+        "contacts": 20,
+        "minimumContactEndMarginM": 0.011112187813774974,
+        "frictionConeExcessN": 0.0,
+        "forceProjectionErrorN": 3.469446951953614e-18,
+        "systemComM": [
+          0.0009610920747209021,
+          6.135862853018441e-19,
+          0.17128973136127554
+        ]
+      },
+      "final": {
+        "step": 15000,
+        "timeS": 1.4999999999998512,
+        "relativeNoteM": [
+          0.18502975154616674,
+          2.031917403917088e-08,
+          0.299862452488866
+        ],
+        "relativeTiltRad": 3.172512860817157e-06,
+        "noteWorldM": [
+          0.610597456791566,
+          6.13511929897675e-07,
+          0.2998541365022202
+        ],
+        "chassisWorldM": [
+          0.4255677052454247,
+          5.142806616467726e-07,
+          -8.315986645793987e-06
+        ],
+        "chassisYawRad": 4.264832739184998e-07,
+        "noteForceWorldN": [
+          -0.037810149272935564,
+          1.8641892521320536e-07,
+          2.3045627576436067
+        ],
+        "normalN": [
+          2.8772853194457393,
+          2.877285116901419
+        ],
+        "contacts": 20,
+        "minimumContactEndMarginM": 0.011112187688364097,
+        "frictionConeExcessN": 1.3877787807814457e-17,
+        "forceProjectionErrorN": 1.1935424792730099e-16,
+        "systemComM": [
+          0.4265290176534263,
+          5.147962052949034e-07,
+          0.1702807008026144
+        ],
+        "beltStrokeM": [
+          2.975150774557177e-05,
+          2.9751744333911317e-05
+        ],
+        "beltSpeedMps": [
+          -0.0001475503220321003,
+          -0.00014754999518836885
+        ],
+        "beltMotors": [
+          {
+            "forceN": -0.026800501304929763,
+            "currentA": -0.01638013139130676,
+            "terminalV": -0.002113430820680851,
+            "terminalPowerW": 3.4618274529189616e-05,
+            "windingHeatW": 3.06638519310255e-05,
+            "mechanicalPowerW": 3.954422598164111e-06,
+            "powerResidualW": 3.3881317890172014e-21
+          },
+          {
+            "forceN": -0.02680074443014394,
+            "currentA": -0.0163802799863986,
+            "terminalV": -0.00211344726820871,
+            "terminalPowerW": 3.4618857989747927e-05,
+            "windingHeatW": 3.066440827803549e-05,
+            "mechanicalPowerW": 3.954449711712441e-06,
+            "powerResidualW": -2.541098841762901e-21
+          }
+        ],
+        "driveDemand": [
+          0.0,
+          0.0
+        ],
+        "driveMode": [
+          "brake",
+          "brake"
+        ],
+        "driveBusPowerW": 0.0,
+        "qpos": [
+          0.4255677052454247,
+          5.142806616467726e-07,
+          -0.001008315986645794,
+          4.264832739184998e-07,
+          5.585182813137033,
+          5.5851811400656635,
+          5.585182813137033,
+          5.585186054748263,
+          5.585184381648769,
+          5.585186054748263,
+          2.975150774557177e-05,
+          2.9751744333911317e-05,
+          0.610597456791566,
+          6.13511929897675e-07,
+          0.2998541365022202,
+          0.9999999999987192,
+          1.3619620934861576e-07,
+          -1.5804321934798538e-06,
+          2.130018110324153e-07
+        ],
+        "qvel": [
+          0.032605287690693284,
+          1.3954500922801073e-08,
+          8.709854191388428e-12,
+          -5.939733200809261e-07,
+          0.42790827344786714,
+          0.42791654629908327,
+          0.42790827344786714,
+          0.4279036998585647,
+          0.42791201223396996,
+          0.4279036998585647,
+          -0.0001475503220321003,
+          -0.00014754999518836885,
+          0.03245773772245929,
+          -1.987103161797958e-07,
+          -8.842480343718194e-09,
+          1.3462804938901304e-07,
+          -2.0024288306329338e-06,
+          -5.955062446477252e-07
+        ]
+      },
+      "energyLedgerJ": {
+        "beltTerminalJ": 0.004876544905265617,
+        "beltHeatJ": 0.0054307701184782425,
+        "beltMechanicalJ": -0.0005542252132126268,
+        "driveAxleJ": 0.027722618381937437
+      },
+      "warningCounts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "traceSha256": "f9fe7a5e8b303101b26b86c14192559904ac176ced63ef3723f6bd13253878c8",
+      "modelSha256": "18c952dff60b17fe3245ea66bc7ac1c40c3ba53b9c1eccc63366d404b5937043",
+      "wallSeconds": 14.683911699998134,
+      "limits": [
+        "Only native straight-face geometry; finite translational patches stop at 1 mm material travel/NOTE XY displacement or 2 mm contact endpoint margin, not full circulating belts",
+        "Cradle fixed at a hypothetical 0.3 m carry height; no moving lift, pitch, hard-part clearance or acquisition verification",
+        "Finite ideal reciprocal pinch motors with current and voltage limits; drive and pinch share ideal 12 V, no battery sag or regenerative-storage qualification",
+        "Mass/inertia/contact stiffness/friction/controller gains remain hypotheses; native archive identity does not calibrate them",
+        "No launcher, shot, field goal, hardware validation or GUI demonstration"
+      ]
+    },
+    "finer-torus": {
+      "schema": "native-drive-retention-experiment/1",
+      "complete": true,
+      "acceptance": false,
+      "status": "HORIZON",
+      "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+      "inputs": {
+        "sim/drivetrain/config.json": "334a7d02b4968401a10fb829ae838edfbeb7d9a311c13f3e2cbcc47b54748ff4",
+        "sim/drivetrain/plant.py": "3d30f7df18abf6c24cc5c949a308246bb275bea57242128916cee627da561155",
+        "cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+        "sim/mujoco/native_drive.py": "af1a0e679ac7e4db8d9d8b82b02623f2eb9f352fca87bab3daad37c1311a4343",
+        "sim/mujoco/drivetrain_bridge.py": "bc5c47c3881bfd835516b0e31ac3b80e0f7d562a357806c7cba0a0b38f5fee7a",
+        "sim/mujoco/native_static_contact.py": "9eecd25f9564320c8e17b789fa132747b405a3fa4db3ae0cae0af518f07a2d7d",
+        "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+        "sim/integrated/evidence/track-tread-candidate-20261118.json": "b76ed965b6e744cafbd422761ccadee03c51b45c810feab1d22c895730d7e803",
+        "sim/acquisition/free-planar-config.json": "8ecb4ca6594ec456e56a79ceb63d222d9824e4985273d6b16a52b9737d166053"
+      },
+      "scriptSha256": "678d81fa96e44aac9dca6146f4ecd3fdaa260c666409cd52decd15fec6ab2f30",
+      "mujocoVersion": "4.0.1",
+      "parameters": {
+        "stiffness": 79.24002611343197,
+        "normalTargetPerSideN": 3.7648484524298866,
+        "radiusM": 0.012127606663602424,
+        "beltMassEachKg": 0.05,
+        "rotorInertiaEachKgM2": 3e-05,
+        "motorK": 0.01984269420366487,
+        "resistanceOhm": 0.11428571428571428,
+        "currentLimitA": 40.0,
+        "positionGainNpm": 1000.0,
+        "velocityGainNspm": 20.0,
+        "busV": 12.0,
+        "dtS": 0.0002,
+        "segments": 256,
+        "mu": 0.6,
+        "scenario": "forward",
+        "beltMode": "hold",
+        "noContact": false,
+        "maximumPatchTravelM": 0.001,
+        "maximumNoteRelativeXYM": 0.001,
+        "minimumContactEndMarginM": 0.002
+      },
+      "maxima": {
+        "relativeXYM": 0.0005298254206487409,
+        "relativeZM": 8.774659552701625e-05,
+        "relativeTiltRad": 3.779435068213802e-06,
+        "beltStrokeM": 0.0005298303002771979,
+        "currentA": 0.37887590169562885,
+        "forceProjectionErrorN": 5.438351956198423e-15,
+        "coneExcessN": 6.96380487996695e-11,
+        "comDisplacementM": 0.42570646221295333,
+        "chassisSpeedMps": 0.638392522554194,
+        "chassisYawRad": 1.9732828323701714e-06,
+        "noteForceN": 15.420003084850537
+      },
+      "minimumNormalN": [
+        2.8650368860121787,
+        2.8650368855825628
+      ],
+      "initial": {
+        "relativeNoteM": [
+          0.185,
+          0.0,
+          0.3
+        ],
+        "relativeTiltRad": 0.0,
+        "noteWorldM": [
+          0.185,
+          0.0,
+          0.301
+        ],
+        "chassisWorldM": [
+          0.0,
+          0.0,
+          0.001
+        ],
+        "chassisYawRad": 0.0,
+        "noteForceWorldN": [
+          5.249713070441894e-19,
+          1.539740557277014e-14,
+          -1.5853525055068136e-14
+        ],
+        "normalN": [
+          2.8650368881548562,
+          2.865036888154841
+        ],
+        "contacts": 44,
+        "minimumContactEndMarginM": 0.007394613099639444,
+        "frictionConeExcessN": 0.0,
+        "forceProjectionErrorN": 5.204170427930421e-18,
+        "systemComM": [
+          0.0009610920747209021,
+          6.135862853018441e-19,
+          0.17128973136127554
+        ]
+      },
+      "final": {
+        "step": 7500,
+        "timeS": 1.4999999999998674,
+        "relativeNoteM": [
+          0.18502974801571442,
+          4.972712905374693e-08,
+          0.299912253404473
+        ],
+        "relativeTiltRad": 3.779435068213802e-06,
+        "noteWorldM": [
+          0.6107347947165652,
+          8.066316283608977e-07,
+          0.29990394217253696
+        ],
+        "chassisWorldM": [
+          0.4257050467009082,
+          6.526028472180934e-07,
+          -8.311231936009673e-06
+        ],
+        "chassisYawRad": 5.637020706541334e-07,
+        "noteForceWorldN": [
+          -0.037803733539850795,
+          2.757496817898386e-07,
+          2.304562749982414
+        ],
+        "normalN": [
+          2.9372236954050694,
+          2.9372233983453437
+        ],
+        "contacts": 44,
+        "minimumContactEndMarginM": 0.007394612997870073,
+        "frictionConeExcessN": 2.185751579730777e-16,
+        "forceProjectionErrorN": 1.8287849495221802e-15,
+        "systemComM": [
+          0.4266663590827916,
+          6.534030780224058e-07,
+          0.1702809642776772
+        ],
+        "beltStrokeM": [
+          2.9748080873321227e-05,
+          2.974813535960349e-05
+        ],
+        "beltSpeedMps": [
+          -0.0001476054170112573,
+          -0.00014760628759256128
+        ],
+        "beltMotors": [
+          {
+            "forceN": -0.026795972533096086,
+            "currentA": -0.016377363462571664,
+            "terminalV": -0.002113204630120688,
+            "terminalPowerW": 3.460872029827582e-05,
+            "windingHeatW": 3.065348959830598e-05,
+            "mechanicalPowerW": 3.955230699969844e-06,
+            "powerResidualW": -2.541098841762901e-21
+          },
+          {
+            "forceN": -0.02679600960775226,
+            "currentA": -0.016377386122138085,
+            "terminalV": -0.0021132086441949588,
+            "terminalPowerW": 3.4608833922620755e-05,
+            "windingHeatW": 3.065357442212584e-05,
+            "mechanicalPowerW": 3.9552595004949155e-06,
+            "powerResidualW": 8.470329472543003e-22
+          }
+        ],
+        "driveDemand": [
+          0.0,
+          0.0
+        ],
+        "driveMode": [
+          "brake",
+          "brake"
+        ],
+        "driveBusPowerW": 0.0,
+        "qpos": [
+          0.4257050467009082,
+          6.526028472180934e-07,
+          -0.0010083112319360097,
+          5.637020706541334e-07,
+          5.586984574754241,
+          5.586982902037168,
+          5.586984574754241,
+          5.58698887965429,
+          5.586987206613269,
+          5.58698887965429,
+          2.9748080873321227e-05,
+          2.974813535960349e-05,
+          0.6107347947165652,
+          8.066316283608977e-07,
+          0.29990394217253696,
+          0.9999999999981747,
+          2.7221061184067747e-07,
+          -1.8699584743284965e-06,
+          2.817918658976447e-07
+        ],
+        "qvel": [
+          0.03259982922485603,
+          1.8432374969876904e-08,
+          1.6237064796229127e-12,
+          -7.17706395042309e-07,
+          0.42783700931080393,
+          0.42784542145654747,
+          0.42783700931080393,
+          0.4278316904143386,
+          0.4278399138366584,
+          0.4278316904143386,
+          -0.0001476054170112573,
+          -0.00014760628759256128,
+          0.032452223629147764,
+          -2.632419131652738e-07,
+          -9.153983163565586e-09,
+          2.018612603348427e-07,
+          -2.3676679830229167e-06,
+          -7.159776317779795e-07
+        ]
+      },
+      "energyLedgerJ": {
+        "beltTerminalJ": 0.004877996093649032,
+        "beltHeatJ": 0.005433882530126999,
+        "beltMechanicalJ": -0.0005558864364779795,
+        "driveAxleJ": 0.021036942825914572
+      },
+      "warningCounts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "traceSha256": "fa82f75fac4c7e1883c244d215e7a945aca03ddf8e6664e03e0a439089d81fc7",
+      "modelSha256": "a5e3cdaf783bd1975178cb055b067996ac52db5b1112e95616314f7c72b4e1e8",
+      "wallSeconds": 14.293298699998559,
+      "limits": [
+        "Only native straight-face geometry; finite translational patches stop at 1 mm material travel/NOTE XY displacement or 2 mm contact endpoint margin, not full circulating belts",
+        "Cradle fixed at a hypothetical 0.3 m carry height; no moving lift, pitch, hard-part clearance or acquisition verification",
+        "Finite ideal reciprocal pinch motors with current and voltage limits; drive and pinch share ideal 12 V, no battery sag or regenerative-storage qualification",
+        "Mass/inertia/contact stiffness/friction/controller gains remain hypotheses; native archive identity does not calibrate them",
+        "No launcher, shot, field goal, hardware validation or GUI demonstration"
+      ]
+    },
+    "coast": {
+      "schema": "native-drive-retention-experiment/1",
+      "complete": true,
+      "acceptance": false,
+      "status": "OUTSIDE_STRAIGHT_PATCH_DOMAIN",
+      "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+      "inputs": {
+        "sim/drivetrain/config.json": "334a7d02b4968401a10fb829ae838edfbeb7d9a311c13f3e2cbcc47b54748ff4",
+        "sim/drivetrain/plant.py": "3d30f7df18abf6c24cc5c949a308246bb275bea57242128916cee627da561155",
+        "cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+        "sim/mujoco/native_drive.py": "af1a0e679ac7e4db8d9d8b82b02623f2eb9f352fca87bab3daad37c1311a4343",
+        "sim/mujoco/drivetrain_bridge.py": "bc5c47c3881bfd835516b0e31ac3b80e0f7d562a357806c7cba0a0b38f5fee7a",
+        "sim/mujoco/native_static_contact.py": "9eecd25f9564320c8e17b789fa132747b405a3fa4db3ae0cae0af518f07a2d7d",
+        "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+        "sim/integrated/evidence/track-tread-candidate-20261118.json": "b76ed965b6e744cafbd422761ccadee03c51b45c810feab1d22c895730d7e803",
+        "sim/acquisition/free-planar-config.json": "8ecb4ca6594ec456e56a79ceb63d222d9824e4985273d6b16a52b9737d166053"
+      },
+      "scriptSha256": "678d81fa96e44aac9dca6146f4ecd3fdaa260c666409cd52decd15fec6ab2f30",
+      "mujocoVersion": "4.0.1",
+      "parameters": {
+        "stiffness": 158.5198855981308,
+        "normalTargetPerSideN": 3.7648484524298866,
+        "radiusM": 0.012127606663602424,
+        "beltMassEachKg": 0.05,
+        "rotorInertiaEachKgM2": 3e-05,
+        "motorK": 0.01984269420366487,
+        "resistanceOhm": 0.11428571428571428,
+        "currentLimitA": 40.0,
+        "positionGainNpm": 1000.0,
+        "velocityGainNspm": 20.0,
+        "busV": 12.0,
+        "dtS": 0.0002,
+        "segments": 128,
+        "mu": 0.6,
+        "scenario": "forward",
+        "beltMode": "coast",
+        "noContact": false,
+        "maximumPatchTravelM": 0.001,
+        "maximumNoteRelativeXYM": 0.001,
+        "minimumContactEndMarginM": 0.002
+      },
+      "maxima": {
+        "relativeXYM": 0.0010062937619944993,
+        "relativeZM": 0.00013564233270096926,
+        "relativeTiltRad": 8.070048489601238e-07,
+        "beltStrokeM": 0.0010063031947802376,
+        "currentA": 0.0,
+        "forceProjectionErrorN": 1.7811392932995667e-15,
+        "coneExcessN": 8.632111692108424e-11,
+        "comDisplacementM": 0.0024424192466093032,
+        "chassisSpeedMps": 0.11389004460333295,
+        "chassisYawRad": 1.3121976444643885e-07,
+        "noteForceN": 15.23130218531501
+      },
+      "minimumNormalN": [
+        2.865036885636362,
+        2.8650366674998398
+      ],
+      "initial": {
+        "relativeNoteM": [
+          0.185,
+          0.0,
+          0.3
+        ],
+        "relativeTiltRad": 0.0,
+        "noteWorldM": [
+          0.185,
+          0.0,
+          0.301
+        ],
+        "chassisWorldM": [
+          0.0,
+          0.0,
+          0.001
+        ],
+        "chassisYawRad": 0.0,
+        "noteForceWorldN": [
+          1.6596482812868401e-18,
+          2.353672812205332e-14,
+          -7.764638008930951e-15
+        ],
+        "normalN": [
+          2.865036888154859,
+          2.8650368881548354
+        ],
+        "contacts": 20,
+        "minimumContactEndMarginM": 0.011112187813774974,
+        "frictionConeExcessN": 0.0,
+        "forceProjectionErrorN": 3.469446951953614e-18,
+        "systemComM": [
+          0.0009610920747209021,
+          6.135862853018441e-19,
+          0.17128973136127554
+        ]
+      },
+      "final": {
+        "step": 1439,
+        "timeS": 0.28780000000000094,
+        "relativeNoteM": [
+          0.18399370623828967,
+          -2.3914964720700932e-08,
+          0.299864357667299
+        ],
+        "relativeTiltRad": 8.070048489601238e-07,
+        "noteWorldM": [
+          0.18622540882649438,
+          3.7202296564594477e-10,
+          0.29985604163463836
+        ],
+        "chassisWorldM": [
+          0.002231702588203143,
+          1.433768941311036e-10,
+          -8.316032660653444e-06
+        ],
+        "chassisYawRad": 1.3121976444643885e-07,
+        "noteForceWorldN": [
+          0.3532375885771348,
+          2.653604409819099e-06,
+          2.30457513664292
+        ],
+        "normalN": [
+          2.8805686162020834,
+          2.880566008949426
+        ],
+        "contacts": 20,
+        "minimumContactEndMarginM": 0.011112186428925058,
+        "frictionConeExcessN": 6.938893903907228e-17,
+        "forceProjectionErrorN": 1.180018539478911e-16,
+        "systemComM": [
+          0.003185342282960649,
+          1.4427282290814924e-10,
+          0.17028071065417733
+        ],
+        "beltStrokeM": [
+          -0.0010063031947802376,
+          -0.0010062842780740018
+        ],
+        "beltSpeedMps": [
+          -0.05135433975344247,
+          -0.051353645867466345
+        ],
+        "beltMotors": [
+          {
+            "forceN": 0.0,
+            "currentA": 0.0,
+            "terminalV": -0.084023871158102,
+            "terminalPowerW": -0.0,
+            "windingHeatW": 0.0,
+            "mechanicalPowerW": -0.0,
+            "powerResidualW": 0.0
+          },
+          {
+            "forceN": 0.0,
+            "currentA": 0.0,
+            "terminalV": -0.08402273585023637,
+            "terminalPowerW": -0.0,
+            "windingHeatW": 0.0,
+            "mechanicalPowerW": -0.0,
+            "powerResidualW": 0.0
+          }
+        ],
+        "driveDemand": [
+          0.15,
+          0.15
+        ],
+        "driveMode": [
+          "drive",
+          "drive"
+        ],
+        "driveBusPowerW": 118.59241849847321,
+        "qpos": [
+          0.002231702588203143,
+          1.433768941311036e-10,
+          -0.0010083160326606535,
+          1.3121976444643885e-07,
+          0.029260202262652673,
+          0.02928852301293595,
+          0.029260202262652673,
+          0.029261198329064323,
+          0.029289521501847847,
+          0.029261198329064323,
+          -0.0010063031947802376,
+          -0.0010062842780740018,
+          0.18622540882649438,
+          3.7202296564594477e-10,
+          0.29985604163463836,
+          0.9999999999999181,
+          5.704630128676414e-08,
+          -4.0001827722024376e-07,
+          3.89104885929972e-08
+        ],
+        "qvel": [
+          0.11389004460333213,
+          1.3683376270925113e-08,
+          3.8144045363010426e-10,
+          4.863559133588316e-06,
+          1.4948231218311543,
+          1.4946830113238374,
+          1.4948231218311543,
+          1.4948605166687567,
+          1.4947196680107349,
+          1.4948605166687567,
+          -0.05135433975344247,
+          -0.051353645867466345,
+          0.06253605070654943,
+          1.7006309302178373e-07,
+          -1.8925045316364012e-06,
+          2.711588768374701e-07,
+          -2.7864100808635144e-06,
+          2.905176796308176e-06
+        ]
+      },
+      "energyLedgerJ": {
+        "beltTerminalJ": 0.0,
+        "beltHeatJ": 0.0,
+        "beltMechanicalJ": 0.0,
+        "driveAxleJ": 0.4086297835785712
+      },
+      "warningCounts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "traceSha256": "9344235cdce6a301ea102bf7602fafcbe90bb3ac4a0287f45710f250ad81b101",
+      "modelSha256": "c616d0c9133b4c3895d6a2d26eb69fa83a3d7ff48ac31e7becb05f395a570801",
+      "wallSeconds": 1.652882900001714,
+      "limits": [
+        "Only native straight-face geometry; finite translational patches stop at 1 mm material travel/NOTE XY displacement or 2 mm contact endpoint margin, not full circulating belts",
+        "Cradle fixed at a hypothetical 0.3 m carry height; no moving lift, pitch, hard-part clearance or acquisition verification",
+        "Finite ideal reciprocal pinch motors with current and voltage limits; drive and pinch share ideal 12 V, no battery sag or regenerative-storage qualification",
+        "Mass/inertia/contact stiffness/friction/controller gains remain hypotheses; native archive identity does not calibrate them",
+        "No launcher, shot, field goal, hardware validation or GUI demonstration"
+      ]
+    },
+    "reaction": {
+      "schema": "native-drive-retention-experiment/1",
+      "complete": true,
+      "acceptance": false,
+      "status": "HORIZON",
+      "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+      "inputs": {
+        "sim/drivetrain/config.json": "334a7d02b4968401a10fb829ae838edfbeb7d9a311c13f3e2cbcc47b54748ff4",
+        "sim/drivetrain/plant.py": "3d30f7df18abf6c24cc5c949a308246bb275bea57242128916cee627da561155",
+        "cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+        "sim/mujoco/native_drive.py": "af1a0e679ac7e4db8d9d8b82b02623f2eb9f352fca87bab3daad37c1311a4343",
+        "sim/mujoco/drivetrain_bridge.py": "bc5c47c3881bfd835516b0e31ac3b80e0f7d562a357806c7cba0a0b38f5fee7a",
+        "sim/mujoco/native_static_contact.py": "9eecd25f9564320c8e17b789fa132747b405a3fa4db3ae0cae0af518f07a2d7d",
+        "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+        "sim/integrated/evidence/track-tread-candidate-20261118.json": "b76ed965b6e744cafbd422761ccadee03c51b45c810feab1d22c895730d7e803",
+        "sim/acquisition/free-planar-config.json": "8ecb4ca6594ec456e56a79ceb63d222d9824e4985273d6b16a52b9737d166053"
+      },
+      "scriptSha256": "678d81fa96e44aac9dca6146f4ecd3fdaa260c666409cd52decd15fec6ab2f30",
+      "mujocoVersion": "4.0.1",
+      "parameters": {
+        "stiffness": 158.5198855981308,
+        "normalTargetPerSideN": 3.7648484524298866,
+        "radiusM": 0.012127606663602424,
+        "beltMassEachKg": 0.05,
+        "rotorInertiaEachKgM2": 3e-05,
+        "motorK": 0.01984269420366487,
+        "resistanceOhm": 0.11428571428571428,
+        "currentLimitA": 40.0,
+        "positionGainNpm": 1000.0,
+        "velocityGainNspm": 20.0,
+        "busV": 12.0,
+        "dtS": 0.0002,
+        "segments": 128,
+        "mu": 0.6,
+        "scenario": "reaction",
+        "beltMode": "finite-current-pulse",
+        "noContact": false,
+        "maximumPatchTravelM": 0.001,
+        "maximumNoteRelativeXYM": 0.001,
+        "minimumContactEndMarginM": 0.002
+      },
+      "maxima": {
+        "relativeXYM": 0.0006655440778674526,
+        "relativeZM": 0.0,
+        "relativeTiltRad": 0.0,
+        "beltStrokeM": 0.0006655440955705984,
+        "currentA": 0.12,
+        "forceProjectionErrorN": 3.3301863061937994e-15,
+        "coneExcessN": 0.0,
+        "comDisplacementM": 2.360885342800826e-18,
+        "chassisSpeedMps": 0.00019636917605128073,
+        "chassisYawRad": 5.5631773792365254e-14,
+        "noteForceN": 0.123700857544748
+      },
+      "minimumNormalN": [
+        2.8650368881548474,
+        2.86503688815461
+      ],
+      "initial": {
+        "relativeNoteM": [
+          0.185,
+          0.0,
+          0.3
+        ],
+        "relativeTiltRad": 0.0,
+        "noteWorldM": [
+          0.185,
+          0.0,
+          0.301
+        ],
+        "chassisWorldM": [
+          0.0,
+          0.0,
+          0.001
+        ],
+        "chassisYawRad": 0.0,
+        "noteForceWorldN": [
+          1.6596482812868401e-18,
+          2.353672812205332e-14,
+          0.0
+        ],
+        "normalN": [
+          2.865036888154859,
+          2.8650368881548354
+        ],
+        "contacts": 20,
+        "minimumContactEndMarginM": 0.011112187813774974,
+        "frictionConeExcessN": 0.0,
+        "forceProjectionErrorN": 3.469446951953614e-18,
+        "systemComM": [
+          0.0009610920747209021,
+          6.135862853018441e-19,
+          0.17128973136127554
+        ]
+      },
+      "final": {
+        "step": 250,
+        "timeS": 0.04999999999999981,
+        "relativeNoteM": [
+          0.18566554407786745,
+          -9.471601268428995e-15,
+          0.3
+        ],
+        "relativeTiltRad": 0.0,
+        "noteWorldM": [
+          0.18566061521155644,
+          8.527670812547695e-16,
+          0.301
+        ],
+        "chassisWorldM": [
+          -4.928866311019971e-06,
+          -4.535199492578365e-18,
+          0.001
+        ],
+        "chassisYawRad": 5.5631773792365254e-14,
+        "noteForceWorldN": [
+          0.123700857544748,
+          4.815869925067773e-13,
+          -1.1105544478189715e-52
+        ],
+        "normalN": [
+          2.8650368881550885,
+          2.865036888154614
+        ],
+        "contacts": 20,
+        "minimumContactEndMarginM": 0.011112187785633318,
+        "frictionConeExcessN": 0.0,
+        "forceProjectionErrorN": 1.452602976695308e-15,
+        "systemComM": [
+          0.0009610920747209034,
+          1.0554791247686926e-18,
+          0.17128973136127554
+        ],
+        "beltStrokeM": [
+          0.0006655440955705984,
+          0.0006655440900320089
+        ],
+        "beltSpeedMps": [
+          0.026515700956337013,
+          0.026515700791504462
+        ],
+        "beltMotors": [
+          {
+            "forceN": 0.19633909397688923,
+            "currentA": 0.12,
+            "terminalV": 0.05709819156369692,
+            "terminalPowerW": 0.006851782987643631,
+            "windingHeatW": 0.0016457142857142857,
+            "mechanicalPowerW": 0.005206068701929344,
+            "powerResidualW": 8.673617379884035e-19
+          },
+          {
+            "forceN": 0.19633909397688923,
+            "currentA": 0.12,
+            "terminalV": 0.05709819129400464,
+            "terminalPowerW": 0.006851782955280557,
+            "windingHeatW": 0.0016457142857142857,
+            "mechanicalPowerW": 0.005206068669566271,
+            "powerResidualW": 0.0
+          }
+        ],
+        "driveDemand": [
+          0.0,
+          0.0
+        ],
+        "driveMode": [
+          "coast",
+          "coast"
+        ],
+        "driveBusPowerW": 0.0,
+        "qpos": [
+          -4.928866311019971e-06,
+          -4.535199492578365e-18,
+          3.8344937889582163e-57,
+          5.5631773792365254e-14,
+          1.1254519214183403e-33,
+          9.154896893676512e-34,
+          6.463892667883781e-34,
+          4.781760152759907e-34,
+          2.106461044152255e-34,
+          -8.866303060022583e-37,
+          0.0006655440955705984,
+          0.0006655440900320089,
+          0.18566061521155644,
+          8.527670812547695e-16,
+          0.301,
+          1.0,
+          -1.2961958104530896e-56,
+          1.1563465938834647e-54,
+          -3.438497612016576e-11
+        ],
+        "qvel": [
+          -0.00019636917605128073,
+          -2.7516794121528447e-16,
+          6.64212687229015e-55,
+          1.870775660793629e-12,
+          -3.745882552884464e-31,
+          7.841340600951385e-32,
+          5.291913619899167e-31,
+          -4.165445441185959e-31,
+          3.4357035331575247e-32,
+          4.87235071833645e-31,
+          0.026515700956337013,
+          0.026515700791504462,
+          0.026319331212406642,
+          5.154264525746636e-14,
+          6.664401219397817e-55,
+          -1.4764017293570404e-54,
+          9.209476607975822e-53,
+          -2.2785231138886212e-09
+        ]
+      },
+      "energyLedgerJ": {
+        "beltTerminalJ": 0.00042383364946168656,
+        "beltHeatJ": 0.00016457142857142842,
+        "beltMechanicalJ": 0.0002592622208902582,
+        "driveAxleJ": -9.401086258549653e-67
+      },
+      "warningCounts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "traceSha256": "d4430d6e95ffa2c2016cf148df2b845a779f9380dd0df7e4529bfea6f684592d",
+      "modelSha256": "c4030e4b71fbc6ffe198955dc12681c762720b9c5027b1e7453ad8e5bcedb11c",
+      "wallSeconds": 0.1832351999983075,
+      "limits": [
+        "Only native straight-face geometry; finite translational patches stop at 1 mm material travel/NOTE XY displacement or 2 mm contact endpoint margin, not full circulating belts",
+        "Cradle fixed at a hypothetical 0.3 m carry height; no moving lift, pitch, hard-part clearance or acquisition verification",
+        "Finite ideal reciprocal pinch motors with current and voltage limits; drive and pinch share ideal 12 V, no battery sag or regenerative-storage qualification",
+        "Mass/inertia/contact stiffness/friction/controller gains remain hypotheses; native archive identity does not calibrate them",
+        "No launcher, shot, field goal, hardware validation or GUI demonstration"
+      ]
+    },
+    "no-contact": {
+      "schema": "native-drive-retention-experiment/1",
+      "complete": true,
+      "acceptance": false,
+      "status": "DROPPED_50MM",
+      "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+      "inputs": {
+        "sim/drivetrain/config.json": "334a7d02b4968401a10fb829ae838edfbeb7d9a311c13f3e2cbcc47b54748ff4",
+        "sim/drivetrain/plant.py": "3d30f7df18abf6c24cc5c949a308246bb275bea57242128916cee627da561155",
+        "cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+        "sim/mujoco/native_drive.py": "af1a0e679ac7e4db8d9d8b82b02623f2eb9f352fca87bab3daad37c1311a4343",
+        "sim/mujoco/drivetrain_bridge.py": "bc5c47c3881bfd835516b0e31ac3b80e0f7d562a357806c7cba0a0b38f5fee7a",
+        "sim/mujoco/native_static_contact.py": "9eecd25f9564320c8e17b789fa132747b405a3fa4db3ae0cae0af518f07a2d7d",
+        "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+        "sim/integrated/evidence/track-tread-candidate-20261118.json": "b76ed965b6e744cafbd422761ccadee03c51b45c810feab1d22c895730d7e803",
+        "sim/acquisition/free-planar-config.json": "8ecb4ca6594ec456e56a79ceb63d222d9824e4985273d6b16a52b9737d166053"
+      },
+      "scriptSha256": "678d81fa96e44aac9dca6146f4ecd3fdaa260c666409cd52decd15fec6ab2f30",
+      "mujocoVersion": "4.0.1",
+      "parameters": {
+        "stiffness": 158.5198855981308,
+        "normalTargetPerSideN": 3.7648484524298866,
+        "radiusM": 0.012127606663602424,
+        "beltMassEachKg": 0.05,
+        "rotorInertiaEachKgM2": 3e-05,
+        "motorK": 0.01984269420366487,
+        "resistanceOhm": 0.11428571428571428,
+        "currentLimitA": 40.0,
+        "positionGainNpm": 1000.0,
+        "velocityGainNspm": 20.0,
+        "busV": 12.0,
+        "dtS": 0.0002,
+        "segments": 128,
+        "mu": 0.6,
+        "scenario": "forward",
+        "beltMode": "hold",
+        "noContact": true,
+        "maximumPatchTravelM": 0.001,
+        "maximumNoteRelativeXYM": 0.001,
+        "minimumContactEndMarginM": 0.002
+      },
+      "maxima": {
+        "relativeXYM": 0.0,
+        "relativeZM": 0.050105954341559344,
+        "relativeTiltRad": 0.0,
+        "beltStrokeM": 0.0,
+        "currentA": 0.0,
+        "forceProjectionErrorN": 0.0,
+        "coneExcessN": 0.0,
+        "comDisplacementM": 0.0012685718458134154,
+        "chassisSpeedMps": 0.0,
+        "chassisYawRad": 0.0,
+        "noteForceN": 0.0
+      },
+      "minimumNormalN": [
+        0.0,
+        0.0
+      ],
+      "initial": {
+        "relativeNoteM": [
+          0.185,
+          0.0,
+          0.3
+        ],
+        "relativeTiltRad": 0.0,
+        "noteWorldM": [
+          0.185,
+          0.0,
+          0.301
+        ],
+        "chassisWorldM": [
+          0.0,
+          0.0,
+          0.001
+        ],
+        "chassisYawRad": 0.0,
+        "noteForceWorldN": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "normalN": [
+          0.0,
+          0.0
+        ],
+        "contacts": 0,
+        "minimumContactEndMarginM": null,
+        "frictionConeExcessN": 0.0,
+        "forceProjectionErrorN": 0.0,
+        "systemComM": [
+          0.0009610920747209021,
+          6.135862853018441e-19,
+          0.17128973136127554
+        ]
+      },
+      "final": {
+        "step": 510,
+        "timeS": 0.10200000000000087,
+        "relativeNoteM": [
+          0.185,
+          0.0,
+          0.24989404565844064
+        ],
+        "relativeTiltRad": 0.0,
+        "noteWorldM": [
+          0.185,
+          0.0,
+          0.24988577887000016
+        ],
+        "chassisWorldM": [
+          0.0,
+          0.0,
+          -8.26678844048699e-06
+        ],
+        "chassisYawRad": 0.0,
+        "noteForceWorldN": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "normalN": [
+          0.0,
+          0.0
+        ],
+        "contacts": 0,
+        "minimumContactEndMarginM": null,
+        "frictionConeExcessN": 0.0,
+        "forceProjectionErrorN": 0.0,
+        "systemComM": [
+          0.0009610920747209021,
+          6.135862853018441e-19,
+          0.17002115951546212
+        ],
+        "beltStrokeM": [
+          0.0,
+          0.0
+        ],
+        "beltSpeedMps": [
+          0.0,
+          0.0
+        ],
+        "beltMotors": [
+          {
+            "forceN": 0.0,
+            "currentA": 0.0,
+            "terminalV": 0.0,
+            "terminalPowerW": 0.0,
+            "windingHeatW": 0.0,
+            "mechanicalPowerW": 0.0,
+            "powerResidualW": 0.0
+          },
+          {
+            "forceN": 0.0,
+            "currentA": 0.0,
+            "terminalV": 0.0,
+            "terminalPowerW": 0.0,
+            "windingHeatW": 0.0,
+            "mechanicalPowerW": 0.0,
+            "powerResidualW": 0.0
+          }
+        ],
+        "driveDemand": [
+          0.0,
+          0.0
+        ],
+        "driveMode": [
+          "coast",
+          "coast"
+        ],
+        "driveBusPowerW": 0.0,
+        "qpos": [
+          0.0,
+          0.0,
+          -0.001008266788440487,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.185,
+          0.0,
+          0.24988577887000016,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "qvel": [
+          0.0,
+          0.0,
+          4.87291052547218e-07,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0002782999999944,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "energyLedgerJ": {
+        "beltTerminalJ": 0.0,
+        "beltHeatJ": 0.0,
+        "beltMechanicalJ": 0.0,
+        "driveAxleJ": 0.0
+      },
+      "warningCounts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "traceSha256": "44ee08f52f316c87ae3e86510a55d933978f332191cc75504c47390b02db1675",
+      "modelSha256": "4f227b024982cf03a4088f5373d68eb6a84f56c38d95a2e7fbd9d53e6668e1ae",
+      "wallSeconds": 0.16824579999956768,
+      "limits": [
+        "Only native straight-face geometry; finite translational patches stop at 1 mm material travel/NOTE XY displacement or 2 mm contact endpoint margin, not full circulating belts",
+        "Cradle fixed at a hypothetical 0.3 m carry height; no moving lift, pitch, hard-part clearance or acquisition verification",
+        "Finite ideal reciprocal pinch motors with current and voltage limits; drive and pinch share ideal 12 V, no battery sag or regenerative-storage qualification",
+        "Mass/inertia/contact stiffness/friction/controller gains remain hypotheses; native archive identity does not calibrate them",
+        "No launcher, shot, field goal, hardware validation or GUI demonstration"
+      ]
+    },
+    "low-friction": {
+      "schema": "native-drive-retention-experiment/1",
+      "complete": true,
+      "acceptance": false,
+      "status": "DROPPED_50MM",
+      "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+      "inputs": {
+        "sim/drivetrain/config.json": "334a7d02b4968401a10fb829ae838edfbeb7d9a311c13f3e2cbcc47b54748ff4",
+        "sim/drivetrain/plant.py": "3d30f7df18abf6c24cc5c949a308246bb275bea57242128916cee627da561155",
+        "cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+        "sim/mujoco/native_drive.py": "af1a0e679ac7e4db8d9d8b82b02623f2eb9f352fca87bab3daad37c1311a4343",
+        "sim/mujoco/drivetrain_bridge.py": "bc5c47c3881bfd835516b0e31ac3b80e0f7d562a357806c7cba0a0b38f5fee7a",
+        "sim/mujoco/native_static_contact.py": "9eecd25f9564320c8e17b789fa132747b405a3fa4db3ae0cae0af518f07a2d7d",
+        "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+        "sim/integrated/evidence/track-tread-candidate-20261118.json": "b76ed965b6e744cafbd422761ccadee03c51b45c810feab1d22c895730d7e803",
+        "sim/acquisition/free-planar-config.json": "8ecb4ca6594ec456e56a79ceb63d222d9824e4985273d6b16a52b9737d166053"
+      },
+      "scriptSha256": "678d81fa96e44aac9dca6146f4ecd3fdaa260c666409cd52decd15fec6ab2f30",
+      "mujocoVersion": "4.0.1",
+      "parameters": {
+        "stiffness": 158.5198855981308,
+        "normalTargetPerSideN": 3.7648484524298866,
+        "radiusM": 0.012127606663602424,
+        "beltMassEachKg": 0.05,
+        "rotorInertiaEachKgM2": 3e-05,
+        "motorK": 0.01984269420366487,
+        "resistanceOhm": 0.11428571428571428,
+        "currentLimitA": 40.0,
+        "positionGainNpm": 1000.0,
+        "velocityGainNspm": 20.0,
+        "busV": 12.0,
+        "dtS": 0.0002,
+        "segments": 128,
+        "mu": 0.1,
+        "scenario": "forward",
+        "beltMode": "hold",
+        "noContact": false,
+        "maximumPatchTravelM": 0.001,
+        "maximumNoteRelativeXYM": 0.001,
+        "minimumContactEndMarginM": 0.002
+      },
+      "maxima": {
+        "relativeXYM": 2.96167620504879e-14,
+        "relativeZM": 0.050161983811908006,
+        "relativeTiltRad": 0.0,
+        "beltStrokeM": 3.5015620838979563e-15,
+        "currentA": 1.1383766908154596e-11,
+        "forceProjectionErrorN": 8.919622852821097e-15,
+        "coneExcessN": 5.551115123125783e-17,
+        "comDisplacementM": 0.0012688595589452623,
+        "chassisSpeedMps": 2.1258217858676505e-12,
+        "chassisYawRad": 1.361082419067221e-14,
+        "noteForceN": 9.210064960166033
+      },
+      "minimumNormalN": [
+        0.0,
+        0.0
+      ],
+      "initial": {
+        "relativeNoteM": [
+          0.185,
+          0.0,
+          0.3
+        ],
+        "relativeTiltRad": 0.0,
+        "noteWorldM": [
+          0.185,
+          0.0,
+          0.301
+        ],
+        "chassisWorldM": [
+          0.0,
+          0.0,
+          0.001
+        ],
+        "chassisYawRad": 0.0,
+        "noteForceWorldN": [
+          1.6596482812868367e-18,
+          2.353672812205332e-14,
+          -7.764638008930948e-15
+        ],
+        "normalN": [
+          2.865036888154859,
+          2.8650368881548354
+        ],
+        "contacts": 20,
+        "minimumContactEndMarginM": 0.011112187813774974,
+        "frictionConeExcessN": 0.0,
+        "forceProjectionErrorN": 3.469446951953614e-18,
+        "systemComM": [
+          0.0009610920747209021,
+          6.135862853018441e-19,
+          0.17128973136127554
+        ]
+      },
+      "final": {
+        "step": 801,
+        "timeS": 0.16020000000000253,
+        "relativeNoteM": [
+          0.18499999999999706,
+          -2.7501549962045243e-14,
+          0.24983801618809198
+        ],
+        "relativeTiltRad": 0.0,
+        "noteWorldM": [
+          0.18500000000000927,
+          -2.7956159944790316e-14,
+          0.2498297527647894
+        ],
+        "chassisWorldM": [
+          1.2203158239912574e-14,
+          4.752298764001641e-17,
+          -8.26342330260293e-06
+        ],
+        "chassisYawRad": -2.7142322723518743e-15,
+        "noteForceWorldN": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "normalN": [
+          0.0,
+          0.0
+        ],
+        "contacts": 0,
+        "minimumContactEndMarginM": null,
+        "frictionConeExcessN": 0.0,
+        "forceProjectionErrorN": 0.0,
+        "systemComM": [
+          0.0009610920747330906,
+          -9.749014832396595e-17,
+          0.17002087180233028
+        ],
+        "beltStrokeM": [
+          -1.8080607647157094e-17,
+          -3.147540818697102e-17
+        ],
+        "beltSpeedMps": [
+          1.6342709297897375e-15,
+          2.4409632512427107e-15
+        ],
+        "beltMotors": [
+          {
+            "forceN": -1.4604810948637655e-14,
+            "currentA": -8.926277891670478e-15,
+            "terminalV": 1.6537812358017047e-15,
+            "terminalPowerW": -1.4762110882796239e-29,
+            "windingHeatW": 9.10610708563716e-30,
+            "mechanicalPowerW": -2.3868217968433398e-29,
+            "powerResidualW": -2.802596928649634e-45
+          },
+          {
+            "forceN": -1.73438568378832e-14,
+            "currentA": -1.0600348501103739e-14,
+            "terminalV": 2.7823358763728224e-15,
+            "terminalPowerW": -2.9493729936675806e-29,
+            "windingHeatW": 1.284198723941169e-29,
+            "mechanicalPowerW": -4.2335717176087495e-29,
+            "powerResidualW": 0.0
+          }
+        ],
+        "driveDemand": [
+          0.0,
+          0.0
+        ],
+        "driveMode": [
+          "coast",
+          "coast"
+        ],
+        "driveBusPowerW": 0.0,
+        "qpos": [
+          1.2203158239912574e-14,
+          4.752298764001641e-17,
+          -0.001008263423302603,
+          -2.7142322723518743e-15,
+          -6.693190878697672e-13,
+          -6.693257131325863e-13,
+          -6.693190828662566e-13,
+          -9.729351994255806e-14,
+          -9.730351719874905e-14,
+          -9.729351561972943e-14,
+          -1.8080607647157094e-17,
+          -3.147540818697102e-17,
+          0.18500000000000927,
+          -2.7956159944790316e-14,
+          0.2498297527647894,
+          1.0,
+          -2.495877012534673e-13,
+          -1.0931705713208784e-15,
+          2.0287577475847377e-15
+        ],
+        "qvel": [
+          1.9563414218756973e-15,
+          -2.8548433832282277e-20,
+          2.8206273505782674e-10,
+          3.2965119964082455e-14,
+          -1.0532081373473848e-13,
+          -1.0523905221122978e-13,
+          -1.0531964408931457e-13,
+          1.4543812858362123e-13,
+          1.4556042186212728e-13,
+          1.4543956376099015e-13,
+          1.6342709297897375e-15,
+          2.4409632512427107e-15,
+          -4.723639890387368e-15,
+          3.726543447341071e-14,
+          -0.925338751417596,
+          -5.74925605939919e-12,
+          -1.4280289640895444e-14,
+          1.1086785231234461e-13
+        ]
+      },
+      "energyLedgerJ": {
+        "beltTerminalJ": -1.3782725786022479e-27,
+        "beltHeatJ": 9.231236304328836e-26,
+        "beltMechanicalJ": -9.369063562189055e-26,
+        "driveAxleJ": -1.744839219884533e-24
+      },
+      "warningCounts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "traceSha256": "cfe77309226092abf5cdaf9b82ff9a210206839b07939e0385f58b29e826d80e",
+      "modelSha256": "cfdb01d16b1ed9a2fa7df4eadda4ac00ed416e30a4a6cba251f2d8f21b97408c",
+      "wallSeconds": 0.6791945999975724,
+      "limits": [
+        "Only native straight-face geometry; finite translational patches stop at 1 mm material travel/NOTE XY displacement or 2 mm contact endpoint margin, not full circulating belts",
+        "Cradle fixed at a hypothetical 0.3 m carry height; no moving lift, pitch, hard-part clearance or acquisition verification",
+        "Finite ideal reciprocal pinch motors with current and voltage limits; drive and pinch share ideal 12 V, no battery sag or regenerative-storage qualification",
+        "Mass/inertia/contact stiffness/friction/controller gains remain hypotheses; native archive identity does not calibrate them",
+        "No launcher, shot, field goal, hardware validation or GUI demonstration"
+      ]
+    }
+  },
+  "limits": [
+    "Local contact and motor/drivetrain coupling evidence, not complete native hard-part clearance or a whole robot mission",
+    "Preserved initial-pose and mass/inertia hypotheses, fixed carry height and short belt patches; no acquisition/lift/launcher",
+    "Power identity checks do not validate all compliant contact energy or hardware calibration"
+  ]
+}
