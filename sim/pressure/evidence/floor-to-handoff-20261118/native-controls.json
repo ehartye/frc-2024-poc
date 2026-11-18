@@ -12,5 +12,25 @@
   "structureSamplePeriodS": 0.1,
   "newOrIncreasedOverlaps": 0,
   "structurePairChecks": 1285,
-  "structureThresholdMm3": 0.01
+  "structureThresholdMm3": 0.01,
+  "finalStructureSamples": 58,
+  "finalStructurePairs": 1285,
+  "finalStructureNewOrIncreasedOverlaps": 0,
+  "coastControl": {
+    "outcome": "AXIAL_TREAD_YIELD",
+    "elapsedS": 1.4295000000018057
+  },
+  "indexedPluggingPriorStudy": {
+    "retainedAll": true,
+    "temporalBoundPassed": true,
+    "spatialBoundPassed": false,
+    "finestPressurePair": {
+      "states": 11600,
+      "positionM": 1.368242077323667e-05,
+      "velocityMps": 0.0012333031949682632,
+      "angleRad": 0.0001609969962761415,
+      "angularVelocityRadps": 0.0008740022300202099,
+      "withinTranslationBounds": false
+    }
+  }
 }

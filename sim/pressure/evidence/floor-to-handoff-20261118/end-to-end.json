@@ -1,0 +1,18 @@
+{
+  "startS": 0,
+  "finishS": 15.25,
+  "calledFromSingleCommand": true,
+  "groundIndexS": 4.450000000000253,
+  "groundAndStopPhysicalRowsExactlyReproduced": true,
+  "liftTraceIdenticalToNominal": true,
+  "liftTraceSha256": "f60ceacba40cfd4f0a11c9ddefa847297e1d6b01dd50a6e0f0be23a64a505fcc",
+  "independentInputs": {
+    "archive": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+    "ground": "09d8a1dd5e4b1d5e5a5e5900e41119f79769d8d2654b5a43025b8be9f5a48357",
+    "stop": "a360f9229020b06544783b5edfcc042f6d102dd1f1e7d744dc0d708bb80e2e23",
+    "route": "6d964deb9b368938ac5a14677a76ecbbeeb30137f01c215568ad07da02f921a1",
+    "shear": "6e6b3ad7a3787d4c96a26eceea28c33a4cdf1f5cd04d39bc3ff3a493cbc737bc",
+    "supply": "46c59a60cb9d6403458e2a269c23b8751686b4170cad6336dd9c9ffd4e05d3ad",
+    "runner": "d1822ad9f1febb5f6bcf878abebfb277f830958c0fced9c7790a1e6a4768a3dd"
+  }
+}

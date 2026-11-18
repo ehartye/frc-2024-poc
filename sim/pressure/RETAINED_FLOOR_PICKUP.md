@@ -14,9 +14,19 @@ python -B sim/pressure/run_floor_pickup.py --archive $archive --output $run
 
 The command regenerates the acquisition and stop from rest. The active stop inherits the actual transport endpoint. Lift, pitch, chassis, rotors and NOTE all retain free dynamic state. The controller reads simulated position, angle and velocity at 100 Hz. A real robot would need measurements or an estimator for that feedback. The model uses hypothesized moving masses of 4 kg and 3 kg for the carriage and cradle. The archived CAD material assignments give 5.775 kg and 4.874 kg. Installed mass, center of mass, inertia, friction and tread stiffness still require measurements.
 
+During pitch and lift, a pinch motor that needs mild braking alternates between coasting and a shorted winding. The controller computes the shorted fraction from requested current and measured back EMF. The model averages torque and heat over that fraction and draws zero battery power for passive braking. It checks peak short-circuit current and records winding heat. The PWM behavior is a controller hypothesis.
+
 At a 0.5 ms timestep and 1024-square pressure grid, the pivot rose 449.43 mm. The NOTE finished at 474.39 mm center height and 59.95°. Both belts kept contact. The lowest edge stayed at least 317.01 mm above the floor throughout the final 0.8 s. The 5.8 s lift added 0.033 mJ of maximum energy-residual drift. The native model also passed the earlier 8 mm control below.
 
 The first full-height controller kept the NOTE gripped while driving it into the rigid bumper backing. That route used the attained 7 mm indexing offset and an 8 mm requested floor gap. The corrected route regulates centering and lower-edge clearance separately. Its geometric evidence uses the actual trajectory in the fixed, carriage and cradle frames. A conservative torus encloses each interpolated interval. Tight intervals get subdivided and checked again. The native rigid-assembly checks use sampled poses. These checks cover the modeled geometry and trajectory only.
+
+## Full-height verification
+
+Every lift retained the NOTE through the 0.8 s hold across three integration timesteps and three contact grids. The finest timestep pair differed by 0.0002 mm in translational position and 0.070 mm/s in velocity. The 1024- and 2048-square grids differed by 0.0136 mm and 0.121 mm/s. Both satisfy the previously declared 0.05 mm and 1 mm/s limits across all shared time samples. [Full-state refinement](evidence/floor-to-handoff-20261118/full-retention.json)
+
+Agent FRC independently compared minimum whole-ring hold clearance and final NOTE height across the five simulations. The nominal midpoint power calculation also matched the reference battery roots, entire state and heat ledger on 78 independent one-step comparisons. [Agent FRC result](evidence/floor-to-handoff-20261118/agent-frc-result.json) · [Battery comparison](evidence/floor-to-handoff-20261118/battery-crosscheck.json)
+
+A fresh single-command run reproduced the physical ground pickup, brake and lift traces. Fusion cleared all five measured lift paths at the declared solid-intersection tolerance. One earlier controller retained the NOTE but exceeded the pressure-grid velocity bound at the start of pitch. A second controller coasted through the incline and reached the tread shear limit after 1.43 s. [End-to-end reproduction](evidence/floor-to-handoff-20261118/end-to-end.json) · [Native sweep coverage](evidence/floor-to-handoff-20261118/native-refinements.json)
 
 ## What carries the load
 

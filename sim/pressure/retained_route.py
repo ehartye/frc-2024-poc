@@ -10,6 +10,15 @@ from patch_registration import rotation
 
 
 class RouteLift(ShearLift):
+    def electrical(self, state, bus, command):
+        drive, pinch, actuators = super().electrical(state,bus,command)
+        for i, fraction in enumerate(command.get("pinchBrakeFraction", ())):
+            if fraction:
+                if command["pinch"][i] != 0:
+                    raise ValueError("Pinch drive and short-circuit braking overlap")
+                pinch[i] = short_brake(state["note"]["w"][i],fraction,self.nc)
+        return drive,pinch,actuators
+
     def geometry(self, s, cache):
         d, n = s["chassis"], s["note"]
         if max(abs(d[k]) for k in ("heading", "vy", "yaw_rate")) > 1e-8 or max(
@@ -33,6 +42,19 @@ class RouteLift(ShearLift):
                                  cradle_origin=[d["x"]+origin_x,d["y"],z], cradle_basis=rotation(d["heading"],angle),
                                  resolution=tuple(self.c["resolution"]), k_area=1e7)
         return cache[key]
+
+
+def short_brake(omega, fraction, motor):
+    """Average coast/short PWM torque and winding heat, with zero bus power."""
+    emf = omega/motor["kvRadpsPerV"]
+    current = -emf/motor["motorResistanceOhm"]
+    if not 0 < fraction <= 1 or abs(current) > motor["currentLimitA"]:
+        raise LiftDomainError("PINCH_BRAKE_CURRENT_DOMAIN")
+    heat = fraction*current**2*motor["motorResistanceOhm"]
+    shaft = fraction*current*emf
+    return dict(currentA=fraction*current,terminalV=(1-fraction)*emf,terminalPowerW=0.,
+                windingHeatW=heat,shaftPowerW=shaft,torqueNm=fraction*current/motor["kvRadpsPerV"],
+                powerResidualW=-heat-shaft)
 
 
 def ramp(t, duration):
@@ -108,13 +130,22 @@ def controls(m, tick, bus):
     slip = m.nc["slipRegularizationMps"]*math.atanh(float(np.clip(force/traction,-.94,.94)))
     desired_omega = -(relative_v+slip)/m.nc["radiusM"]
     pinch = []
+    brake_fractions = []
     for omega in n["w"]:
         torque = m.nc["rotorInertiaKgM2"]*150*(desired_omega-omega) - m.nc["radiusM"]*force/2
         current = m.nc["kvRadpsPerV"]*torque
         volts = omega/m.nc["kvRadpsPerV"]+current*m.nc["motorResistanceOhm"]
-        if current*volts < 0:
+        fraction = 0.
+        emf = omega/m.nc["kvRadpsPerV"]
+        if tick >= 80 and current*emf < 0 and abs(current*m.nc["motorResistanceOhm"]) <= abs(emf):
+            # A closed winding can provide this braking torque without regeneration.
+            # Use the short for a fraction of the PWM period and coast for the rest.
+            fraction = -current*m.nc["motorResistanceOhm"]/emf
+            volts = 0.
+        elif current*volts < 0:
             volts = -math.copysign(.001,omega)
+        brake_fractions.append(fraction)
         pinch.append(float(np.clip(volts/bus,-.025,.025)))
-    return dict(drive=[0.,0.],driveModes=["brake","brake"],pinch=pinch,
+    return dict(drive=[0.,0.],driveModes=["brake","brake"],pinch=pinch,pinchBrakeFraction=brake_fractions,
                 actuator=actuator,actuatorModes=["drive","drive"],
                 requestedPivotZM=zref[0],requestedPitchRad=aref[0])

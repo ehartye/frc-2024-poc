@@ -25,20 +25,25 @@
     "levels": [
       {
         "intervals": 290,
-        "needsRefinement": 16,
-        "booleanChecks": 3043,
-        "posesSha256": "be2afe185600cbc84eaa37a4dcf87b7d110f23d0ef47c052368300d2d4646a06",
-        "receiptsSha256": "2afc88f07908630fb331930dd4f77b3a1fc5260f3f7de6c44e4280534f640b2c"
+        "needsRefinement": 14,
+        "booleanChecks": 3040,
+        "posesSha256": "fab44649d918cfd7afb517f60f39279b6e2a0e17c537654012fad8a4e66ecf52",
+        "receiptsSha256": "a192a574d4109041fcd09e7a12f36ad6163813f23a8c07304f989926dede5698"
       },
       {
-        "intervals": 80,
+        "intervals": 70,
         "needsRefinement": 0,
-        "booleanChecks": 960,
-        "posesSha256": "845a9579b92a15877e692d7675d375b9794ace19c39478add462c249d76ebe79",
-        "receiptsSha256": "d277b4105799a4b3449001c7c46f6d947576030350092e6cb7c8ef82c9aeb98f"
+        "booleanChecks": 840,
+        "posesSha256": "9d8a9a8bf542490b4cde14bb6f9ce2887963a664713ef5fb1c7b76365429bb99",
+        "receiptsSha256": "e8332e27857376425b8b34fcf26b1f0695fe26f66dbef9307c2eeb8595eefb0c"
       }
     ]
   },
   "toleranceMm3": 0.0001,
-  "scope": "Linearly interpolated planar NOTE against registered rigid bodies, excluding intended outer tread and registered visual exclusions."
+  "scope": "Linearly interpolated planar NOTE against registered rigid bodies, excluding intended outer tread and registered visual exclusions.",
+  "liftTraceSha256": "f60ceacba40cfd4f0a11c9ddefa847297e1d6b01dd50a6e0f0be23a64a505fcc",
+  "groundAndStopReceipts": [
+    "5b16b8154f129d52f29757b3080d69e748f9e401c759476435174ca9a1814f58",
+    "4d245df03888282deafaf56f4a93991f0ac0b096fc6bd260a5eb2df8b54d7789"
+  ]
 }
