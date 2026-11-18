@@ -1,0 +1,211 @@
+{
+  "schema": "speaker-counter-comparison/1",
+  "piece": "blue inner wing floor NOTE",
+  "distinctFloorNotesScored": 1,
+  "nativeArchive": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "fieldInputs": {
+    "panels.json": "179593289b9850e7bc88db0573088657a1143b745040c8b269a5f74ae1594d85",
+    "named-panels.npz": "fcf29b7d726ae323e52f2c76cd4ec47b9d8ad60488f99f7a1fbdc266e8c23bad",
+    "extras.json": "72f92baebb9fc8ed31cc1f6a8a2ebe50cc78eb89bf38ce3c0625336203200e06",
+    "extras.npz": "2cffcdf267edd6c490f87e099f42e706a043382a32294b6d3f52b85857d7d605"
+  },
+  "sensorCaseInput": "13d07c04856ee1ca927d8f17fa29570e6ead74cc1c917f1879b94b3b9d8b236f",
+  "model": "c0de2bb546ef41b7e7bb62ddc33a8dd10b7cd92fd39d88669af76eb39b6f214c",
+  "distanceCode": "9fbf92f7cc2501b5b2ad109f0ab9a1af85ac413c206da7a4c754673a3fd8237e",
+  "runs": {
+    "base": {
+      "releaseTrace": "dc6517afe733e5369047f7957fffa382b102433501a16d53e3825466f5afb192",
+      "fieldTrace": "c6108a4aa5acea0e51025683a7b83ba3bbf9be6c8c864f97e4973bdc740616cf",
+      "endS": 21.051850000000755,
+      "dt": 0.0002,
+      "nodes": 128,
+      "belt_speed": 1.5,
+      "horizon": 4.0,
+      "stiffness": 1200000.0,
+      "damping": 450.0,
+      "friction": 0.45,
+      "maximumIndentM": 0.005709270121499851,
+      "firstFieldContactS": 17.22685000000967,
+      "opening": {
+        "firstPossibleS": 17.16245000000982,
+        "fullyThroughByS": 17.193450000009747,
+        "minimumMarginM": 0.09968645820270106
+      },
+      "beamPairFullShadowS": [
+        19.898850000003442,
+        19.776850000003726
+      ],
+      "simulatedScoreS": 19.898850000003442,
+      "bestSimultaneousMarginM": 0.006315540490636762,
+      "floorNotesScored": 1
+    },
+    "space": {
+      "releaseTrace": "dc6517afe733e5369047f7957fffa382b102433501a16d53e3825466f5afb192",
+      "fieldTrace": "e9f2a24be76b03154bf788f07eb34afa8e0a422152f073e960304d2e7c4198c5",
+      "endS": 21.051850000000755,
+      "dt": 0.0002,
+      "nodes": 192,
+      "belt_speed": 1.5,
+      "horizon": 4.0,
+      "stiffness": 1200000.0,
+      "damping": 450.0,
+      "friction": 0.45,
+      "maximumIndentM": 0.005790693384370431,
+      "firstFieldContactS": 17.22685000000967,
+      "opening": {
+        "firstPossibleS": 17.16245000000982,
+        "fullyThroughByS": 17.193450000009747,
+        "minimumMarginM": 0.09968645820270106
+      },
+      "beamPairFullShadowS": [
+        20.574850000001867,
+        20.467850000002116
+      ],
+      "simulatedScoreS": 20.574850000001867,
+      "bestSimultaneousMarginM": 0.0063391775465326886,
+      "floorNotesScored": 1
+    },
+    "fine": {
+      "releaseTrace": "dc6517afe733e5369047f7957fffa382b102433501a16d53e3825466f5afb192",
+      "fieldTrace": "f226763e83d4042e3f148ef8a49cae3eef65a15b4b81b06fbb177e55d7ce6b92",
+      "endS": 21.051850000000755,
+      "dt": 0.0001,
+      "nodes": 192,
+      "belt_speed": 1.5,
+      "horizon": 4.0,
+      "stiffness": 1200000.0,
+      "damping": 450.0,
+      "friction": 0.45,
+      "maximumIndentM": 0.006076699841130136,
+      "firstFieldContactS": 17.22675000000967,
+      "opening": {
+        "firstPossibleS": 17.16245000000982,
+        "fullyThroughByS": 17.193250000009748,
+        "minimumMarginM": 0.10070426798103145
+      },
+      "beamPairFullShadowS": [
+        19.503850000004363,
+        19.39385000000462
+      ],
+      "simulatedScoreS": 19.503850000004363,
+      "bestSimultaneousMarginM": 0.007113215423115916,
+      "floorNotesScored": 1
+    },
+    "slower": {
+      "releaseTrace": "dc6517afe733e5369047f7957fffa382b102433501a16d53e3825466f5afb192",
+      "fieldTrace": "d89dd7804abeedf3f25f726aae1602887bdfff169c543e6bb3c3ee7cd2183cdf",
+      "endS": 21.811249999998985,
+      "dt": 0.0002,
+      "nodes": 128,
+      "belt_speed": 0.75,
+      "horizon": 5.0,
+      "stiffness": 1200000.0,
+      "damping": 450.0,
+      "friction": 0.45,
+      "maximumIndentM": 0.005709270121499851,
+      "firstFieldContactS": 17.22685000000967,
+      "opening": {
+        "firstPossibleS": 17.16245000000982,
+        "fullyThroughByS": 17.193450000009747,
+        "minimumMarginM": 0.09968645820270106
+      },
+      "beamPairFullShadowS": [
+        20.38085000000232,
+        20.340850000002412
+      ],
+      "simulatedScoreS": 20.38085000000232,
+      "bestSimultaneousMarginM": 0.008370251170703186,
+      "floorNotesScored": 1
+    },
+    "stopped": {
+      "releaseTrace": "dc6517afe733e5369047f7957fffa382b102433501a16d53e3825466f5afb192",
+      "fieldTrace": "c78ef6d795fc2bfcf46046eb54467c927c482f14d1c5faece65e81f9397c9062",
+      "endS": 21.051850000000755,
+      "dt": 0.0002,
+      "nodes": 128,
+      "belt_speed": 0.0,
+      "horizon": 4.0,
+      "stiffness": 1200000.0,
+      "damping": 450.0,
+      "friction": 0.45,
+      "maximumIndentM": 0.005709270121499851,
+      "firstFieldContactS": 17.22685000000967,
+      "opening": {
+        "firstPossibleS": 17.16245000000982,
+        "fullyThroughByS": 17.193450000009747,
+        "minimumMarginM": 0.09968645820270106
+      },
+      "beamPairFullShadowS": [
+        null,
+        null
+      ],
+      "simulatedScoreS": null,
+      "bestSimultaneousMarginM": null,
+      "floorNotesScored": 0
+    },
+    "upstream-spatial": {
+      "releaseTrace": "1a64494040f795855d59903e7d47133ba669be00a77f532f5272cf1a3974715b",
+      "fieldTrace": "e88023a000e6bc5657d89041383ce0f07fd77d21ed9a63e41fd87149b0938e09",
+      "endS": 18.54609999999587,
+      "dt": 0.0002,
+      "nodes": 128,
+      "belt_speed": 1.5,
+      "horizon": 4.0,
+      "stiffness": 1200000.0,
+      "damping": 450.0,
+      "friction": 0.45,
+      "maximumIndentM": 0.007402139093191998,
+      "firstFieldContactS": 17.22549999999895,
+      "opening": {
+        "firstPossibleS": 17.161899999999097,
+        "fullyThroughByS": 17.194099999999022,
+        "minimumMarginM": 0.1044833628448752
+      },
+      "beamPairFullShadowS": [
+        null,
+        null
+      ],
+      "simulatedScoreS": null,
+      "bestSimultaneousMarginM": null,
+      "floorNotesScored": 0
+    },
+    "upstream-temporal": {
+      "releaseTrace": "ce1b468747663efc7b31f4f569282a7a8fda3c18b9cd84023fb89051e098172d",
+      "fieldTrace": "43932c9c4da0af6653b6b897140dc250465bc27a57963c9ed51c79ca966085e6",
+      "endS": 21.05199999999003,
+      "dt": 0.0002,
+      "nodes": 128,
+      "belt_speed": 1.5,
+      "horizon": 4.0,
+      "stiffness": 1200000.0,
+      "damping": 450.0,
+      "friction": 0.45,
+      "maximumIndentM": 0.005934678092357995,
+      "firstFieldContactS": 17.22519999999895,
+      "opening": {
+        "firstPossibleS": 17.161799999999097,
+        "fullyThroughByS": 17.19479999999902,
+        "minimumMarginM": 0.1125533725252639
+      },
+      "beamPairFullShadowS": [
+        20.053999999992357,
+        19.937999999992627
+      ],
+      "simulatedScoreS": 20.053999999992357,
+      "bestSimultaneousMarginM": 0.006481878786087369,
+      "floorNotesScored": 1
+    }
+  },
+  "emptyCounterSightlines": {
+    "samplesPerPair": 81,
+    "unobstructedPerPair": [
+      63,
+      63
+    ],
+    "centralRayUnobstructed": [
+      true,
+      true
+    ]
+  },
+  "observer": "118bc35d22681534a139c5f69de4b6474290223d6f0b429b458077043940ea7f"
+}
