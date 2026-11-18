@@ -1,0 +1,11 @@
+{
+  "schema": "verification-diagnostic/1",
+  "failedProducer": "native-static-cycle-control-sources/verify_native_static_cycle_before_numpy_fix.py",
+  "operation": "Selected cold-solver replay comparison for the completed coarse warm-start trajectory",
+  "outcome": "VERIFIER_TYPE_HANDLING_REJECTION",
+  "reason": "The recursive comparator handled only exact Python int/float types numerically, sending NumPy numerical scalars through an exact-equality fallback.",
+  "correction": "Treat NumPy numerical scalars as numbers under the same declared error bounds.",
+  "physicalModelChanged": false,
+  "tolerancesChanged": false,
+  "trajectoryChanged": false
+}

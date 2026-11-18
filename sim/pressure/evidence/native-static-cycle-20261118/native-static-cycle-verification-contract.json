@@ -1,0 +1,12 @@
+{
+  "schema": "same-law-cycle-independent-gates/1",
+  "declaredBeforeAnyLiftPhaseCompleted": true,
+  "holdWindowS": 0.5,
+  "minimumWholeTorusFloorClearanceM": 0.006,
+  "maximumHoldAbsoluteNoteVerticalSpeedMps": 0.0001,
+  "maximumHoldRelativeVerticalSpeedMps": 0.001,
+  "requiredHoldFloorForceN": 0.0,
+  "indexedPhaseRequiresContinuousFloorClearance": true,
+  "sourceContinuity": "Every phase entry equals the previous accepted physical state and ledger exactly; optimizer cache is separately identified numerical data",
+  "limits": ["Supplemental verification of existing trajectory; no modification of its consumed contract", "Torus clearance is the exact analytic vertical support bound for the modeled torus in XZ motion, not native robot hard-part clearance"]
+}

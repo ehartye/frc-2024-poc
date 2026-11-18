@@ -1,0 +1,125 @@
+{
+  "schema": "native-cycle-input-pins/1",
+  "baseCommit": "e2da0bcfa3cb8fdf6feb2ff5c92598e1408d4833",
+  "actualImportedModules": {
+    "__main__": {
+      "sha256": "465cacdfb4ea05227e188d17cd91484313f168bc664ae8d0649c77594535e919",
+      "candidateFile": "pin_native_cycle_inputs.py"
+    },
+    "plant": {
+      "sha256": "3d30f7df18abf6c24cc5c949a308246bb275bea57242128916cee627da561155",
+      "committedDependency": "sim/drivetrain/plant.py"
+    },
+    "mechanics": {
+      "sha256": "c37bc5acc8f8e46b635a8aaa5208334426ff5cb831a9f7d76021ed8b864c359b",
+      "committedDependency": "sim/actuation/mechanics.py"
+    },
+    "shared_supply": {
+      "sha256": "888855338f8d6d73510767cc9c64bf88f5ea0dbf899bd1bb67e136547f821e99",
+      "committedDependency": "sim/integrated/shared_supply.py"
+    },
+    "patch_registration": {
+      "sha256": "6cf66b74ba20a4a9b7da8d32f5a6b0a05ac31a10f06d0a7fc641601fba7f0dbc",
+      "committedDependency": "sim/integrated/patch_registration.py"
+    },
+    "free_planar": {
+      "sha256": "cf15e99a00ccd47253fbc914f3f4adf97e6fa2afea73c98fe13aae0009ba7851",
+      "committedDependency": "sim/acquisition/free_planar.py"
+    },
+    "coupled_acquisition": {
+      "sha256": "55f9778b7cab1cf76c38007f830385bb9c99ed62188a8151d6b50bb55c195df1",
+      "committedDependency": "sim/integrated/coupled_acquisition.py"
+    },
+    "belt_contact_geometry": {
+      "sha256": "2cb19b7fb7648ca8f46a943f8ad4c70d97eef9d6cf56f8cf602bf5000aa30daf",
+      "committedDependency": "cad/assembly/belt_contact_geometry.py"
+    },
+    "finite_area": {
+      "sha256": "75c7af7cc4446346e611c389d050cb3d1212404c560ad8e4884863e44f1cd5ed",
+      "committedDependency": "sim/pressure/finite_area.py"
+    },
+    "finite_transport": {
+      "sha256": "6b4170b89e1b327c293e545dfd0d41b58af369f8eb11609dfd6d899ef9fb3f9b",
+      "committedDependency": "sim/pressure/finite_transport.py"
+    },
+    "fast_geometry": {
+      "sha256": "2e433044711d836404c7efb2cac715f105718daa42e9e974239246be723df73e",
+      "committedDependency": "sim/pressure/fast_geometry.py"
+    },
+    "signed_pressure_acquisition": {
+      "sha256": "68358ab3cfab9b0a6fc724c90ab8256e9a17e326ee416b0308d861add51f1d83",
+      "committedDependency": "sim/pressure/signed_pressure_acquisition.py"
+    },
+    "pressure_tiled_geometry": {
+      "sha256": "ad40145c71fbfaae776540ad3a2f43f954f52b5de53b65035babb0b424868987",
+      "committedDependency": "sim/pressure/pressure_tiled_geometry.py"
+    },
+    "native_pressure_arrays": {
+      "sha256": "fc7a3f30bfd027033c190ff6a5daa94be1f0969556a473b553bd9ef6c6b3aabf",
+      "committedDependency": "sim/pressure/native_pressure_arrays.py"
+    },
+    "native_pressure_lift": {
+      "sha256": "27ab17fe8087c46691f0d509df312af19ce54a4ef980369cfcf56ad7636bee98",
+      "committedDependency": "sim/pressure/native_pressure_lift.py"
+    },
+    "native_dry_friction": {
+      "sha256": "7e8dfd53d6c92710c0ca3b2e5e8ac75a7dee7c7ed06bad4c4f8ced50cca25b18",
+      "committedDependency": "sim/pressure/native_dry_friction.py"
+    },
+    "native_static_lift": {
+      "sha256": "3c38dfcf83b8eccaeb27eb4c075d5417d37cfcc8a6218a881e3feb5d561d11c4",
+      "committedDependency": "sim/pressure/native_static_lift.py"
+    },
+    "native_static_cycle": {
+      "sha256": "0b70f073df4e70909be59482b6a18814fa6967cd249df7180450688255f475ff",
+      "candidateFile": "native_static_cycle.py"
+    },
+    "native_warm_friction": {
+      "sha256": "31ab8e64e850823ed698827e5e6b3bfac57bfb0523b044e7ce6d6ec8deb9b7a8",
+      "candidateFile": "native_warm_friction.py"
+    },
+    "native_warm_static_cycle": {
+      "sha256": "53c29a535cf389d0245c2c74ce0437ae6b8b4d4470c8b6dcd006f7eeefad2d8a",
+      "candidateFile": "native_warm_static_cycle.py"
+    },
+    "speed_approach": {
+      "sha256": "21e15512b0d6dec2af8a81391be5225f2d44ed1df132c441f2649022196b5f50",
+      "committedDependency": "sim/integrated/speed_approach.py"
+    }
+  },
+  "committedDependencies": {
+    "sim/drivetrain/plant.py": "3d30f7df18abf6c24cc5c949a308246bb275bea57242128916cee627da561155",
+    "sim/actuation/mechanics.py": "c37bc5acc8f8e46b635a8aaa5208334426ff5cb831a9f7d76021ed8b864c359b",
+    "sim/integrated/shared_supply.py": "888855338f8d6d73510767cc9c64bf88f5ea0dbf899bd1bb67e136547f821e99",
+    "sim/integrated/patch_registration.py": "6cf66b74ba20a4a9b7da8d32f5a6b0a05ac31a10f06d0a7fc641601fba7f0dbc",
+    "sim/acquisition/free_planar.py": "cf15e99a00ccd47253fbc914f3f4adf97e6fa2afea73c98fe13aae0009ba7851",
+    "sim/integrated/coupled_acquisition.py": "55f9778b7cab1cf76c38007f830385bb9c99ed62188a8151d6b50bb55c195df1",
+    "cad/assembly/belt_contact_geometry.py": "2cb19b7fb7648ca8f46a943f8ad4c70d97eef9d6cf56f8cf602bf5000aa30daf",
+    "sim/pressure/finite_area.py": "75c7af7cc4446346e611c389d050cb3d1212404c560ad8e4884863e44f1cd5ed",
+    "sim/pressure/finite_transport.py": "6b4170b89e1b327c293e545dfd0d41b58af369f8eb11609dfd6d899ef9fb3f9b",
+    "sim/pressure/fast_geometry.py": "2e433044711d836404c7efb2cac715f105718daa42e9e974239246be723df73e",
+    "sim/pressure/signed_pressure_acquisition.py": "68358ab3cfab9b0a6fc724c90ab8256e9a17e326ee416b0308d861add51f1d83",
+    "sim/pressure/pressure_tiled_geometry.py": "ad40145c71fbfaae776540ad3a2f43f954f52b5de53b65035babb0b424868987",
+    "sim/pressure/native_pressure_arrays.py": "fc7a3f30bfd027033c190ff6a5daa94be1f0969556a473b553bd9ef6c6b3aabf",
+    "sim/pressure/native_pressure_lift.py": "27ab17fe8087c46691f0d509df312af19ce54a4ef980369cfcf56ad7636bee98",
+    "sim/pressure/native_dry_friction.py": "7e8dfd53d6c92710c0ca3b2e5e8ac75a7dee7c7ed06bad4c4f8ced50cca25b18",
+    "sim/pressure/native_static_lift.py": "3c38dfcf83b8eccaeb27eb4c075d5417d37cfcc8a6218a881e3feb5d561d11c4",
+    "sim/integrated/speed_approach.py": "21e15512b0d6dec2af8a81391be5225f2d44ed1df132c441f2649022196b5f50",
+    "sim/actuation/config.json": "33e9baf58fe653b0a35a36f1eeced112fbfa8d53382567af7a6ad9ebe1110dcf",
+    "sim/drivetrain/config.json": "334a7d02b4968401a10fb829ae838edfbeb7d9a311c13f3e2cbcc47b54748ff4",
+    "sim/acquisition/free-planar-config.json": "8ecb4ca6594ec456e56a79ceb63d222d9824e4985273d6b16a52b9737d166053",
+    "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+    "cad/assembly/actuator-geometry-contract.json": "fb0df6e6968c99acf81d5eceac36c32a31b7717c5a29b095937a33b70cb2cbfd"
+  },
+  "numpyVersion": "2.5.3",
+  "pythonVersion": "3.13.12",
+  "threadEnvironmentForWarmRuns": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "nativeGeometryBindingSha256": "6d8a1ef819b918d11380a96137f6573ca30441d8ce947efb86a670c7134314d8",
+  "limits": [
+    "Explicit actual module identities avoid ambient workspace shadowing",
+    "No machine/network identity or vendor CAD included"
+  ]
+}

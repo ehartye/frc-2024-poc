@@ -1,0 +1,288 @@
+{
+  "schema": "native-static-cycle-verification/1",
+  "producerSha256": "1063a7ed196c64ca0cadbdf33ac8690a4ac10941f8962e26629cc91be8a58391",
+  "verificationContractSha256": "d219947d9b267473509bab1b19de968016baa1e4e30c819f2856004455d23699",
+  "sourceClockLedgerConeChecksPassed": true,
+  "sourceContinuityChecked": true,
+  "warmPhysicalStepIdenticalExceptSolverCall": true,
+  "frictionIterationAndAcceptanceBodyUnchanged": true,
+  "independentColdReplayGatePassed": false,
+  "runs": [
+    {
+      "name": "native-static-cycle-interior-half",
+      "receiptSha256": "d7c27b02a96c584eaff7c4cc11cc742ee7c2e161196f60788a4a991f84394453",
+      "stepS": 0.0005,
+      "mu": 0.6,
+      "outcome": "MODEL_DOMAIN_EXIT",
+      "reason": "FRICTION_ITERATION_LIMIT",
+      "acceptedSteps": 3887,
+      "durationS": 1.9434999999998415,
+      "joins": [],
+      "indexGatePassed": false,
+      "sampledAcquisitionDwellPassed": false,
+      "continuousHoldGatePassed": false,
+      "indexClearanceGatePassed": false,
+      "peakMotorCurrentA": {
+        "drive": 12.64375721421644,
+        "pinch": 2.6015337303878128,
+        "liftPitch": 4.737927759703674
+      },
+      "minimumHoldWholeTorusClearanceM": null,
+      "minimumIndexWholeTorusClearanceM": null,
+      "finalRelativeXM": 0.25551260661489666,
+      "finalNoteRiseM": -0.00018406013253438255,
+      "finalRelativeSpeedMps": -0.1015722706602082,
+      "indexErrorM": null,
+      "maximumEnergyResidualJ": 0.008761622216432008,
+      "maxSolverIterations": 990,
+      "maxConeExcessNs": 3.1763735522036263e-22,
+      "floorContactSteps": 3887,
+      "chassisDistanceM": 0.40150109530070915,
+      "runtimeSeconds": 264.46240539999417
+    },
+    {
+      "name": "native-static-warm-cycle-half",
+      "receiptSha256": "137b16cb68ebc9fc130657d644901775e203c73e057142cb235c9ec806b377d7",
+      "stepS": 0.0005,
+      "mu": 0.6,
+      "outcome": "BOUNDED_CYCLE_COMPLETE",
+      "reason": null,
+      "acceptedSteps": 14680,
+      "durationS": 7.339999999998652,
+      "joins": [
+        {
+          "fromPhase": "acquisition",
+          "toPhase": "lift",
+          "timeS": 4.540000000000203
+        },
+        {
+          "fromPhase": "lift",
+          "toPhase": "index",
+          "timeS": 6.539999999999095
+        }
+      ],
+      "indexGatePassed": true,
+      "sampledAcquisitionDwellPassed": true,
+      "continuousHoldGatePassed": true,
+      "indexClearanceGatePassed": true,
+      "peakMotorCurrentA": {
+        "drive": 12.64375721421644,
+        "pinch": 2.6015337303878128,
+        "liftPitch": 5.126708896243772
+      },
+      "minimumHoldWholeTorusClearanceM": 0.00794899244484204,
+      "minimumIndexWholeTorusClearanceM": 0.007951305231209044,
+      "finalRelativeXM": 0.1805900736347995,
+      "finalNoteRiseM": 0.007984959359213846,
+      "finalRelativeSpeedMps": -0.0005655448862061192,
+      "indexErrorM": 0.00032922221094466506,
+      "maximumEnergyResidualJ": 0.010520843444677852,
+      "maxSolverIterations": 800,
+      "maxConeExcessNs": 3.1763735522036263e-22,
+      "floorContactSteps": 9148,
+      "chassisDistanceM": 0.46705301067542904,
+      "runtimeSeconds": 1169.0120102
+    },
+    {
+      "name": "native-static-warm-cycle-quarter",
+      "receiptSha256": "885dfcd85b4b7991d5182390eb834350296f3c76ce55709a3c619d7a2613f2e5",
+      "stepS": 0.00025,
+      "mu": 0.6,
+      "outcome": "BOUNDED_CYCLE_COMPLETE",
+      "reason": null,
+      "acceptedSteps": 29320,
+      "durationS": 7.330000000003213,
+      "joins": [
+        {
+          "fromPhase": "acquisition",
+          "toPhase": "lift",
+          "timeS": 4.529999999999791
+        },
+        {
+          "fromPhase": "lift",
+          "toPhase": "index",
+          "timeS": 6.530000000002235
+        }
+      ],
+      "indexGatePassed": true,
+      "sampledAcquisitionDwellPassed": true,
+      "continuousHoldGatePassed": true,
+      "indexClearanceGatePassed": true,
+      "peakMotorCurrentA": {
+        "drive": 12.64375721421644,
+        "pinch": 2.6015337303878128,
+        "liftPitch": 5.128545706327887
+      },
+      "minimumHoldWholeTorusClearanceM": 0.007948565029977525,
+      "minimumIndexWholeTorusClearanceM": 0.007951087219738626,
+      "finalRelativeXM": 0.18059349206506214,
+      "finalNoteRiseM": 0.007985155939711143,
+      "finalRelativeSpeedMps": -0.0005627668952221383,
+      "indexErrorM": 0.00032824423133786737,
+      "maximumEnergyResidualJ": 0.00519538987305157,
+      "maxSolverIterations": 500,
+      "maxConeExcessNs": 2.117582368135751e-22,
+      "floorContactSteps": 18257,
+      "chassisDistanceM": 0.46698253569990533,
+      "runtimeSeconds": 2003.4730947999997
+    }
+  ],
+  "selectedStepReplays": [
+    {
+      "run": "native-static-cycle-interior-half",
+      "step": 1,
+      "maximumDifference": 0.0
+    },
+    {
+      "run": "native-static-cycle-interior-half",
+      "step": 2756,
+      "maximumDifference": 0.0
+    },
+    {
+      "run": "native-static-cycle-interior-half",
+      "step": 3887,
+      "maximumDifference": 0.0
+    },
+    {
+      "run": "native-static-warm-cycle-half",
+      "step": 1,
+      "coldSolverReplay": true,
+      "maximumStateDifference": 0.0,
+      "maximumEnergyDifferenceJ": 0.0,
+      "originalComponentBoundPassed": true,
+      "originalEnergyBoundPassed": true,
+      "massMetricVelocityDifferenceJ": 0.0,
+      "twiceSumSolverGapsJ": 0.0,
+      "massMetricDiagnosticPassed": true
+    },
+    {
+      "run": "native-static-warm-cycle-half",
+      "step": 2756,
+      "coldSolverReplay": true,
+      "maximumStateDifference": 0.0,
+      "maximumEnergyDifferenceJ": 0.0,
+      "originalComponentBoundPassed": true,
+      "originalEnergyBoundPassed": true,
+      "massMetricVelocityDifferenceJ": 0.0,
+      "twiceSumSolverGapsJ": 0.0,
+      "massMetricDiagnosticPassed": true
+    },
+    {
+      "run": "native-static-warm-cycle-half",
+      "step": 9081,
+      "coldSolverReplay": true,
+      "maximumStateDifference": 1.0937125320903754e-06,
+      "maximumEnergyDifferenceJ": 2.5715951828923778e-11,
+      "originalComponentBoundPassed": false,
+      "originalEnergyBoundPassed": true,
+      "massMetricVelocityDifferenceJ": 1.7400652659257953e-15,
+      "twiceSumSolverGapsJ": 2.9563420785191667e-12,
+      "massMetricDiagnosticPassed": true
+    },
+    {
+      "run": "native-static-warm-cycle-half",
+      "step": 13081,
+      "coldSolverReplay": true,
+      "maximumStateDifference": 1.6845773423237708e-08,
+      "maximumEnergyDifferenceJ": 1.3300471835009375e-13,
+      "originalComponentBoundPassed": true,
+      "originalEnergyBoundPassed": true,
+      "massMetricVelocityDifferenceJ": 4.1084583214536027e-19,
+      "twiceSumSolverGapsJ": 2.0559226819152234e-12,
+      "massMetricDiagnosticPassed": true
+    },
+    {
+      "run": "native-static-warm-cycle-half",
+      "step": 14680,
+      "coldSolverReplay": true,
+      "maximumStateDifference": 1.4973810679370754e-08,
+      "maximumEnergyDifferenceJ": 1.1723955140041653e-13,
+      "originalComponentBoundPassed": true,
+      "originalEnergyBoundPassed": true,
+      "massMetricVelocityDifferenceJ": 3.2460988263116777e-19,
+      "twiceSumSolverGapsJ": 5.899586424765122e-13,
+      "massMetricDiagnosticPassed": true
+    },
+    {
+      "run": "native-static-warm-cycle-quarter",
+      "step": 1,
+      "coldSolverReplay": true,
+      "maximumStateDifference": 0.0,
+      "maximumEnergyDifferenceJ": 0.0,
+      "originalComponentBoundPassed": true,
+      "originalEnergyBoundPassed": true,
+      "massMetricVelocityDifferenceJ": 0.0,
+      "twiceSumSolverGapsJ": 0.0,
+      "massMetricDiagnosticPassed": true
+    },
+    {
+      "run": "native-static-warm-cycle-quarter",
+      "step": 5512,
+      "coldSolverReplay": true,
+      "maximumStateDifference": 0.0,
+      "maximumEnergyDifferenceJ": 0.0,
+      "originalComponentBoundPassed": true,
+      "originalEnergyBoundPassed": true,
+      "massMetricVelocityDifferenceJ": 0.0,
+      "twiceSumSolverGapsJ": 0.0,
+      "massMetricDiagnosticPassed": true
+    },
+    {
+      "run": "native-static-warm-cycle-quarter",
+      "step": 18121,
+      "coldSolverReplay": true,
+      "maximumStateDifference": 9.594395709547517e-07,
+      "maximumEnergyDifferenceJ": 8.825729514892137e-12,
+      "originalComponentBoundPassed": false,
+      "originalEnergyBoundPassed": true,
+      "massMetricVelocityDifferenceJ": 1.3484843812482828e-15,
+      "twiceSumSolverGapsJ": 2.8419234115184953e-12,
+      "massMetricDiagnosticPassed": true
+    },
+    {
+      "run": "native-static-warm-cycle-quarter",
+      "step": 26121,
+      "coldSolverReplay": true,
+      "maximumStateDifference": 4.807175101916161e-08,
+      "maximumEnergyDifferenceJ": 1.8907098109366416e-13,
+      "originalComponentBoundPassed": true,
+      "originalEnergyBoundPassed": true,
+      "massMetricVelocityDifferenceJ": 3.345621899160963e-18,
+      "twiceSumSolverGapsJ": 1.6400236570813022e-12,
+      "massMetricDiagnosticPassed": true
+    },
+    {
+      "run": "native-static-warm-cycle-quarter",
+      "step": 29320,
+      "coldSolverReplay": true,
+      "maximumStateDifference": 5.5372845667323045e-08,
+      "maximumEnergyDifferenceJ": 2.1971313657331848e-13,
+      "originalComponentBoundPassed": true,
+      "originalEnergyBoundPassed": true,
+      "massMetricVelocityDifferenceJ": 4.439070635657216e-18,
+      "twiceSumSolverGapsJ": 1.0784860773641205e-12,
+      "massMetricDiagnosticPassed": true
+    }
+  ],
+  "comparisons": [
+    {
+      "coarseStepS": 0.0005,
+      "fineStepS": 0.00025,
+      "sharedTimeS": 7.33,
+      "maximumPositionDifferenceM": 0.0002047045708513731,
+      "maximumVelocityDifferenceMps": 0.005599798341021496,
+      "sameOutcome": true,
+      "samePhaseSequence": true,
+      "maximumPhaseEventTimeDifferenceS": 0.01000000000041279,
+      "sharedTimeAndEventBoundsPassed": false,
+      "bothBoundedIndexGatesPassed": true
+    }
+  ],
+  "acceptance": false,
+  "hardwareValidated": false,
+  "launcherHandoff": false,
+  "limits": [
+    "Original componentwise cold-replay gate remains binding and is reported failed when exceeded; mass-metric diagnostics do not replace it",
+    "A completed bounded trajectory is not full launcher transfer or hardware validation"
+  ]
+}

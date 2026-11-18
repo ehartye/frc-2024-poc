@@ -1,0 +1,33 @@
+{
+  "schema": "native-static-cycle-rejected-step/1",
+  "producerSha256": "a0c51d523e8f67a0f8d9b071dbf0f98834868c0fe01e35dc12ab7d14c2ae8a06",
+  "sourceSha256": "d7c27b02a96c584eaff7c4cc11cc742ee7c2e161196f60788a4a991f84394453",
+  "sourceTimeS": 1.9434999999998415,
+  "sourceAcceptedSteps": 3887,
+  "samePhysicalLaw": true,
+  "sameTolerance": true,
+  "acceptance": false,
+  "cases": [
+    {
+      "budget": 1000,
+      "accepted": false,
+      "runtimeSeconds": 1.553587599999446,
+      "reason": "FRICTION_ITERATION_LIMIT",
+      "stateUnchanged": true
+    },
+    {
+      "budget": 10000,
+      "accepted": true,
+      "runtimeSeconds": 0.4763225999995484,
+      "friction": {
+        "iterations": 1070,
+        "gapJ": 3.2296609090733304e-13,
+        "heatJ": -1.0488164181767135e-13,
+        "projectionDissipationJ": 1.051469038292995e-06,
+        "projectionIdentityJ": -6.594215021845772e-17,
+        "maximumConeExcessNs": 0.0,
+        "maximumFinalTangentialSpeedMps": 2.422563671198864e-10
+      }
+    }
+  ]
+}

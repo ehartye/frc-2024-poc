@@ -1,0 +1,29 @@
+{
+  "schema": "native-static-cycle-contract/1",
+  "initialNoteXM": 0.657,
+  "resolution": [1024, 1024],
+  "floorPoints": 16,
+  "floorStiffnessNpm": 20000.0,
+  "floorDampingNspm": 20.0,
+  "solverGapToleranceJ": 1e-12,
+  "solverMaxIterations": 1000,
+  "timestepLevelsS": [0.0005, 0.00025, 0.000125],
+  "controllerPeriodS": 0.01,
+  "acquisitionTimeoutS": 6.0,
+  "acquisitionGate": {"relativeXRangeM": [0.180, 0.190], "maxRelativeSpeedMps": 0.003, "maxChassisSpeedMps": 0.003, "dwellS": 0.1},
+  "liftDurationS": 2.0,
+  "liftGate": {"minimumNoteRiseM": 0.006, "maximumRelativeVerticalSpeedMps": 0.001, "maximumRelativeVerticalDriftM": 0.001},
+  "indexDurationS": 0.8,
+  "indexDisplacementM": -0.004,
+  "indexGate": {"maximumPositionErrorM": 0.0005, "maximumRelativeSpeedMps": 0.001, "minimumNoteRiseM": 0.006},
+  "energyGate": {"absoluteJ": 0.01, "fractionSourceWork": 0.01},
+  "comparisonBounds": {"positionM": 0.0005, "velocityMps": 0.003, "eventTimeS": 0.03},
+  "limits": [
+    "Fresh no-contact rest start; no legacy state, law, potential or ledger switch",
+    "Same dry friction, normal pressure and compliant floor throughout; discrete controller phases only",
+    "Native geometry binds four belt/tread solids only, not moving mass/transmission or full lifted-path clearance",
+    "Floor/contact and 4kg/3kg mechanism with 12:1 transmission remain uncalibrated hypotheses",
+    "Small raised indexing is not launcher handoff, launch or hardware validation",
+    "A numerical rejection is not a physical failure prediction; retain exact accepted prefix and rejected command"
+  ]
+}

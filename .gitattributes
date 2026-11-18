@@ -97,3 +97,36 @@ sim/pressure/evidence/native-static-lift-20261118/native-static-lift-verificatio
 sim/pressure/evidence/native-static-lift-20261118/native-raised-index-verification.json -text
 sim/pressure/NATIVE_STATIC_LIFT.md -text
 sim/pressure/evidence/native-static-lift-20261118/native-static-lift-trajectory.svg -text
+
+# Exact bytes for same-law cycle evidence.
+sim/pressure/native_static_cycle.py -text
+sim/pressure/run_native_static_cycle.py -text
+sim/pressure/native_warm_friction.py -text
+sim/pressure/native_warm_static_cycle.py -text
+sim/pressure/run_native_warm_cycle.py -text
+sim/pressure/verify_native_static_cycle.py -text
+sim/pressure/check_native_warm_solver.py -text
+sim/pressure/check_warm_closed_forms.py -text
+sim/pressure/assess_native_launcher_transfer.py -text
+sim/pressure/plot_native_static_cycle.py -text
+sim/pressure/diagnose_static_cycle_rejection.py -text
+sim/pressure/diagnose_native_cycle_replays.py -text
+sim/pressure/diagnose_native_cycle_timing.py -text
+sim/pressure/evidence/native-static-cycle-20261118/native-static-cycle-contract.json -text
+sim/pressure/evidence/native-static-cycle-20261118/native-static-cycle-budget-contract.json -text
+sim/pressure/evidence/native-static-cycle-20261118/native-static-warm-cycle-contract.json -text
+sim/pressure/evidence/native-static-cycle-20261118/native-static-cycle-verification-contract.json -text
+sim/pressure/evidence/native-static-cycle-20261118/native-static-cycle-input-pins.json -text
+sim/pressure/evidence/native-static-cycle-20261118/native-static-cycle-cancelled-controls.json -text
+sim/pressure/evidence/native-static-cycle-20261118/native-static-cycle-start-diagnosis.json -text
+sim/pressure/evidence/native-static-cycle-20261118/native-static-cycle-rejected-step-summary.json -text
+sim/pressure/evidence/native-static-cycle-20261118/native-static-warm-controls.json -text
+sim/pressure/evidence/native-static-cycle-20261118/native-warm-closed-forms.json -text
+sim/pressure/evidence/native-static-cycle-20261118/native-static-cycle-cold-replay-diagnosis.json -text
+sim/pressure/evidence/native-static-cycle-20261118/native-static-cycle-verifier-type-rejection.json -text
+sim/pressure/evidence/native-static-cycle-20261118/native-static-cycle-verification.json -text
+sim/pressure/evidence/native-static-cycle-20261118/native-static-cycle-transfer-gap.json -text
+sim/pressure/evidence/native-static-cycle-20261118/native-static-cycle-trajectory.svg -text
+sim/pressure/evidence/native-static-cycle-20261118/native-static-cycle-trajectory.json -text
+sim/pressure/evidence/native-static-cycle-20261118/native-static-cycle-timing-diagnosis.json -text
+sim/pressure/NATIVE_STATIC_CYCLE.md -text

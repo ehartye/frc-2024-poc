@@ -1,0 +1,42 @@
+{
+  "schema": "same-law-cycle-clock-diagnostic/1",
+  "producerSha256": "2a11f308d105ae61897337b01e56c31c64eddfce9070f519ac9987ce76ef1097",
+  "sources": [
+    "137b16cb68ebc9fc130657d644901775e203c73e057142cb235c9ec806b377d7",
+    "885dfcd85b4b7991d5182390eb834350296f3c76ce55709a3c619d7a2613f2e5"
+  ],
+  "maximumSharedTimeVelocityDifference": {
+    "timeS": 6.939999999998873,
+    "field": "note/v",
+    "differenceMps": 0.005599798341021496,
+    "coarseValue": -0.010166398651660578,
+    "fineValue": -0.004566600310639082,
+    "coarsePhase": "index",
+    "finePhase": "index"
+  },
+  "phaseRelativeDiagnostics": [
+    {
+      "phase": "acquisition",
+      "maximumVelocityDifferenceMps": 0.00417358116442984,
+      "field": "chassis/vx",
+      "phaseElapsedS": 1.8825
+    },
+    {
+      "phase": "lift",
+      "maximumVelocityDifferenceMps": 8.651906925643323e-05,
+      "field": "note/v",
+      "phaseElapsedS": 0.0005
+    },
+    {
+      "phase": "index",
+      "maximumVelocityDifferenceMps": 3.676338091563886e-05,
+      "field": "note/v",
+      "phaseElapsedS": 0.32
+    }
+  ],
+  "originalSharedTimeVelocityGatePassed": false,
+  "limits": [
+    "Phase-relative comparisons are diagnostic and do not replace the originally declared failed absolute-time velocity bound",
+    "No trajectory, controller event or threshold was changed"
+  ]
+}
