@@ -14,6 +14,8 @@ A retrospective field registration places the original floor NOTE on the nominal
 
 The opening uses the low wall, upper hood and inner side-panel dimensions from FIRST's 2024 field assembly. The low-edge longitudinal coordinate is inferred from the drawing's horizontal run. [2024 field drawings, GE-24300 Rev A, sheet 2](https://firstfrc.blob.core.windows.net/frc2024/FieldAssets/2024FieldDrawings.pdf)
 
+The [field-contact continuation](SPEAKER_COUNTER.md) follows the released NOTE through the field panels and counts the first simulated sensor event.
+
 ## Reproduce
 
 Use the MuJoCo 4.0.1 environment and the verified private native archive and pickup packet. Supply a fresh output directory for every run. Raw states and supplier geometry belong in private storage.
