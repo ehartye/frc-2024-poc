@@ -17,7 +17,16 @@ class NativeTurnPath:
                 rows.append(row["q"])
         if result["outcome"]!="HORIZON" or abs(result["end"]-(len(rows)-1)*self.dt)>1e-8:
             raise ValueError("Incomplete native path")
-        q=np.asarray(rows)
+        self._register_poses(np.asarray(rows))
+
+    @classmethod
+    def from_poses(cls, poses, dt):
+        path=cls.__new__(cls)
+        path.dt=dt
+        path._register_poses(np.asarray(poses))
+        return path
+
+    def _register_poses(self,q):
         quat=q[:,8:12]
         if np.max(np.abs(np.linalg.norm(quat,axis=1)-1))>1e-9:raise ValueError("Nonunit NOTE orientation")
         w,x,y,z=quat.T

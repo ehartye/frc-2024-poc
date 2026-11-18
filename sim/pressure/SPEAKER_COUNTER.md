@@ -1,6 +1,8 @@
 # First floor NOTE through the Speaker counter
 
-The inner blue wing NOTE from the [powered release](RAISED_FEED.md) reaches both modeled counter sensor pairs at **19.504 simulated seconds** in the refined field run. The whole NOTE clears the nominal opening by 17.193 s. The other runs repeat that same pickup. The six-piece mission has one distinct scored NOTE.
+The [drive-over wing cycle](WING_CYCLE.md) records the whole-field route check and the subsequent middle-wing experiment.
+
+The inner blue wing NOTE from the [powered release](RAISED_FEED.md) reaches both modeled counter sensor pairs at **19.504 simulated seconds** in the refined field run. The whole NOTE clears the nominal opening by 17.193 s. The other runs repeat that same pickup. A subsequent whole-field check found that the front bumper intersects the blue Stage upright at 1.1345 s on this approach. The first verified full-field score uses the middle-wing route and occurs at 19.2235 s.
 
 | Trial | First simultaneous full shadow on the mission clock |
 | --- | ---: |
