@@ -151,6 +151,16 @@
       "destination": "historical-fixtures/agent-frc/inputs/case-2024.properties",
       "destinationBytes": 139,
       "destinationSha256": "417129ef244919480f0d5a5affb551575c1198d092f3ff19bd8bcff31573bec4"
+    },
+    {
+      "upstreamPath": "examples/design/2024-blockout.json",
+      "sourceBytes": 10699,
+      "sourceSha256": "0ea8104c2dcd739b1ca7de0124388f82e2fbe22ad416bea51573697ac6f0bdea",
+      "disposition": "existing-identical-bytes",
+      "role": "editable robot blockout, reversible bay operation and planning evidence in its original schema",
+      "destination": "tools/blockout/dist/design-default.json",
+      "destinationBytes": 10699,
+      "destinationSha256": "0ea8104c2dcd739b1ca7de0124388f82e2fbe22ad416bea51573697ac6f0bdea"
     }
   ]
 }
