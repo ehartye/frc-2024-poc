@@ -1,0 +1,7 @@
+{
+  "schema":"native-raised-release-counterexample/1",
+  "change":"Set only belt friction coefficient to zero after restoring the attained2s held state; replay the source's last finite hold command without pose or energy reset",
+  "durationS":0.1,
+  "stepsS":[0.0005,0.00025],
+  "limits":["Deliberate constitutive counterexample, not a proposed controller or hardware prediction","Normal pressure, rotor inertia, compliant floor and finite actuator commands remain active","Expected floor return tests that the NOTE is not attached to the cradle"]
+}

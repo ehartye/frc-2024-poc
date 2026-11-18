@@ -1,0 +1,463 @@
+{
+  "schema": "native-static-lift-verification/1",
+  "producerSha256": "a78593bf103ed6213b8ce83441f6e48ec638ed8ca409c6be6cb866ec20ee33de",
+  "integrityChecksPassed": true,
+  "dependencyPinsVerified": true,
+  "sourceReceiptSha256": "d819bdf34a7e04413a32ee57c8a3e31c3eb9b43076a1daed602ccd3e76f479a8",
+  "initialMechanicalDifferenceJ": 1.249000902703301e-16,
+  "runs": [
+    {
+      "name": "native-static-lift-half",
+      "stepS": 0.0005,
+      "mu": 0.6,
+      "outcome": "HORIZON",
+      "reason": null,
+      "acceptedSteps": 1600,
+      "durationS": 0.8000000000009777,
+      "retentionGatePassed": true,
+      "finalNoteRiseM": 0.008467402390489515,
+      "finalPivotRiseM": 0.008468570614539407,
+      "maximumRelativeVerticalDriftM": 1.6846343184051538e-06,
+      "finalRelativeVerticalSpeedMps": 6.757093040475962e-06,
+      "finalNoteVerticalSpeedMps": -0.00297751129927185,
+      "maximumIncrementalEnergyResidualJ": 0.0007573455157416841,
+      "maximumSolverGapJ": 9.995045683590246e-13,
+      "maximumConeExcessNs": 0.0,
+      "maximumIterations": 230,
+      "peakActuatorCurrentA": 5.128201771214147,
+      "peakActuatorDuty": 0.07204702836484458,
+      "minimumBusV": 11.99001696828,
+      "finalPinchRotorOmegaRadps": [
+        0.04332022758742198,
+        0.04332022758742198
+      ],
+      "receiptSha256": "48456781b477341834d177319b9fff6a300b05c8cdf838b509a721b3fd0326b2",
+      "runtimeSeconds": 131.3452804999979
+    },
+    {
+      "name": "native-static-lift-quarter",
+      "stepS": 0.00025,
+      "mu": 0.6,
+      "outcome": "HORIZON",
+      "reason": null,
+      "acceptedSteps": 3200,
+      "durationS": 0.7999999999981355,
+      "retentionGatePassed": true,
+      "finalNoteRiseM": 0.008474232838290623,
+      "finalPivotRiseM": 0.008475434262961934,
+      "maximumRelativeVerticalDriftM": 1.7238547177014785e-06,
+      "finalRelativeVerticalSpeedMps": 6.903091708513123e-06,
+      "finalNoteVerticalSpeedMps": -0.003010041578358639,
+      "maximumIncrementalEnergyResidualJ": 0.0003791179953102552,
+      "maximumSolverGapJ": 9.998812331413772e-13,
+      "maximumConeExcessNs": 0.0,
+      "maximumIterations": 230,
+      "peakActuatorCurrentA": 5.13008262011363,
+      "peakActuatorDuty": 0.07207947414470857,
+      "minimumBusV": 11.99001575504,
+      "finalPinchRotorOmegaRadps": [
+        0.04343230949061536,
+        0.04343230949061536
+      ],
+      "receiptSha256": "27e71ebf17b9a5fe60e395eb3c9e114e9861474f4215a11bab8244e1332bb2a7",
+      "runtimeSeconds": 213.54292410000198
+    },
+    {
+      "name": "native-static-lift-eighth",
+      "stepS": 0.000125,
+      "mu": 0.6,
+      "outcome": "HORIZON",
+      "reason": null,
+      "acceptedSteps": 6400,
+      "durationS": 0.8000000000038199,
+      "retentionGatePassed": true,
+      "finalNoteRiseM": 0.008477658941281982,
+      "finalPivotRiseM": 0.008478876892960382,
+      "maximumRelativeVerticalDriftM": 1.743348392174715e-06,
+      "finalRelativeVerticalSpeedMps": 6.975132333309018e-06,
+      "finalNoteVerticalSpeedMps": -0.003026219124856549,
+      "maximumIncrementalEnergyResidualJ": 0.00018967153741682782,
+      "maximumSolverGapJ": 9.999890202427111e-13,
+      "maximumConeExcessNs": 0.0,
+      "maximumIterations": 140,
+      "peakActuatorCurrentA": 5.131019074236738,
+      "peakActuatorDuty": 0.07209562703495714,
+      "minimumBusV": 11.99001515089,
+      "finalPinchRotorOmegaRadps": [
+        0.043487868254608875,
+        0.043487868254608875
+      ],
+      "receiptSha256": "8bf5385e78b1eff43fc672de6bd6152b788811fb2dafcb6485face76cd431177",
+      "runtimeSeconds": 345.81881099999737
+    },
+    {
+      "name": "native-static-lift-zero",
+      "stepS": 0.0005,
+      "mu": 0.0,
+      "outcome": "HORIZON",
+      "reason": null,
+      "acceptedSteps": 1600,
+      "durationS": 0.8000000000009777,
+      "retentionGatePassed": false,
+      "finalNoteRiseM": -0.00013069216398319677,
+      "finalPivotRiseM": 0.008465942774344003,
+      "maximumRelativeVerticalDriftM": 0.009038228225986253,
+      "finalRelativeVerticalSpeedMps": 0.002847364812890197,
+      "finalNoteVerticalSpeedMps": -0.00012091819278195118,
+      "maximumIncrementalEnergyResidualJ": 0.0007267650414274273,
+      "maximumSolverGapJ": 0.0,
+      "maximumConeExcessNs": 0.0,
+      "maximumIterations": 0,
+      "peakActuatorCurrentA": 4.949105057599372,
+      "peakActuatorDuty": 0.07012378144096328,
+      "minimumBusV": 11.99055907785,
+      "finalPinchRotorOmegaRadps": [
+        0.0481031875661376,
+        0.04810318756613777
+      ],
+      "receiptSha256": "890a72e013b89f95f51e644cfe4386148232c6ad4f0141c294436fce0da81599",
+      "runtimeSeconds": 58.79255420000118
+    },
+    {
+      "name": "native-static-lift-low",
+      "stepS": 0.0005,
+      "mu": 0.1,
+      "outcome": "HORIZON",
+      "reason": null,
+      "acceptedSteps": 1600,
+      "durationS": 0.8000000000009777,
+      "retentionGatePassed": false,
+      "finalNoteRiseM": -0.00013820720295664585,
+      "finalPivotRiseM": 0.008470260787064428,
+      "maximumRelativeVerticalDriftM": 0.009035466717675023,
+      "finalRelativeVerticalSpeedMps": 0.0028611586456185724,
+      "finalNoteVerticalSpeedMps": -0.00012451809709534625,
+      "maximumIncrementalEnergyResidualJ": 0.0007347317966616617,
+      "maximumSolverGapJ": 9.99994035592166e-13,
+      "maximumConeExcessNs": 5.293955920339377e-23,
+      "maximumIterations": 330,
+      "peakActuatorCurrentA": 4.999928838267111,
+      "peakActuatorDuty": 0.07044641657949632,
+      "minimumBusV": 11.99041908545,
+      "finalPinchRotorOmegaRadps": [
+        0.0010681105870212727,
+        0.0010681105870212727
+      ],
+      "receiptSha256": "24b85d9f75d97d0c0fbfd5536f00006a069c3e6e389162b760528a919efa7840",
+      "runtimeSeconds": 108.8337188000005
+    },
+    {
+      "name": "native-static-lift-coast",
+      "stepS": 0.0005,
+      "mu": 0.6,
+      "outcome": "MODEL_DOMAIN_EXIT",
+      "reason": "FRICTION_ITERATION_LIMIT",
+      "acceptedSteps": 2,
+      "durationS": 0.0010000000000012221,
+      "retentionGatePassed": false,
+      "finalNoteRiseM": -2.2964610450933176e-06,
+      "finalPivotRiseM": -2.2676106105658234e-06,
+      "maximumRelativeVerticalDriftM": 2.885043452749425e-08,
+      "finalRelativeVerticalSpeedMps": -3.845483151735914e-05,
+      "finalNoteVerticalSpeedMps": -0.003061613472221374,
+      "maximumIncrementalEnergyResidualJ": 5.482111108828227e-05,
+      "maximumSolverGapJ": 7.841737701383401e-13,
+      "maximumConeExcessNs": 0.0,
+      "maximumIterations": 540,
+      "peakActuatorCurrentA": 0.0,
+      "peakActuatorDuty": 0.046541654210609525,
+      "minimumBusV": 12.0,
+      "finalPinchRotorOmegaRadps": [
+        0.045438940994646654,
+        0.045438940994646654
+      ],
+      "receiptSha256": "52e0da90bea6327c84d52a97345b882120c5865c91ed4d0d05a2f9de0708ccf0",
+      "runtimeSeconds": 0.7577098999972804
+    },
+    {
+      "name": "native-static-lift-coast-resolved",
+      "stepS": 0.0005,
+      "mu": 0.6,
+      "outcome": "ENERGY_GATE_EXIT",
+      "reason": null,
+      "acceptedSteps": 86,
+      "durationS": 0.04300000000005255,
+      "retentionGatePassed": false,
+      "finalNoteRiseM": -0.00035236281159213567,
+      "finalPivotRiseM": -0.0026743347309315067,
+      "maximumRelativeVerticalDriftM": 0.002321971919339371,
+      "finalRelativeVerticalSpeedMps": 0.1313588068932412,
+      "finalNoteVerticalSpeedMps": 0.009853735353089421,
+      "maximumIncrementalEnergyResidualJ": 0.0020165590506510773,
+      "maximumSolverGapJ": 9.961255182256573e-13,
+      "maximumConeExcessNs": 3.1763735522036263e-22,
+      "maximumIterations": 1070,
+      "peakActuatorCurrentA": 0.0,
+      "peakActuatorDuty": 0.06101983912095199,
+      "minimumBusV": 12.0,
+      "finalPinchRotorOmegaRadps": [
+        0.1762564656038879,
+        0.17625646560388805
+      ],
+      "receiptSha256": "5eafcceadd7540c1ea0d31d659267631b487c31a5a5d640b90cf9da8b6c8083e",
+      "runtimeSeconds": 10.437122300005285
+    },
+    {
+      "name": "native-static-lift-hold-half",
+      "stepS": 0.0005,
+      "mu": 0.6,
+      "outcome": "HORIZON",
+      "reason": null,
+      "acceptedSteps": 4000,
+      "durationS": 2.0000000000024443,
+      "retentionGatePassed": true,
+      "finalNoteRiseM": 0.00800004223682809,
+      "finalPivotRiseM": 0.008000039367609901,
+      "maximumRelativeVerticalDriftM": 1.6846343184051538e-06,
+      "finalRelativeVerticalSpeedMps": -6.118904493333799e-11,
+      "finalNoteVerticalSpeedMps": -2.504898742074213e-08,
+      "maximumIncrementalEnergyResidualJ": 0.0007573455157416841,
+      "maximumSolverGapJ": 9.999804816830808e-13,
+      "maximumConeExcessNs": 0.0,
+      "maximumIterations": 230,
+      "peakActuatorCurrentA": 5.128201771214147,
+      "peakActuatorDuty": 0.07204702836484458,
+      "minimumBusV": 11.99001696828,
+      "finalPinchRotorOmegaRadps": [
+        0.038859661472507835,
+        0.038859661472507835
+      ],
+      "receiptSha256": "c6fe3f7d7a653569bcb73522a3f99126c324fdfad464bfbe6cb89da6e2f955f5",
+      "runtimeSeconds": 243.8240814000019
+    }
+  ],
+  "comparisons": [
+    {
+      "coarse": "half",
+      "fine": "quarter",
+      "sharedStates": 1600,
+      "maximumPositionDifferenceM": 9.034922226057451e-06,
+      "maximumVelocityDifferenceMps": 7.079115363842203e-05,
+      "maximumPitchDifferenceRad": 6.197130870401479e-06,
+      "maximumPitchRateDifferenceRadps": 5.9051685828865556e-05,
+      "withinDeclaredTranslationalBounds": true
+    },
+    {
+      "coarse": "quarter",
+      "fine": "eighth",
+      "sharedStates": 3200,
+      "maximumPositionDifferenceM": 4.510410590324865e-06,
+      "maximumVelocityDifferenceMps": 3.514502578978382e-05,
+      "maximumPitchDifferenceRad": 3.089895945352207e-06,
+      "maximumPitchRateDifferenceRadps": 2.9412477472992495e-05,
+      "withinDeclaredTranslationalBounds": true
+    }
+  ],
+  "longHold": {
+    "windowS": 0.5,
+    "minimumNoteRiseM": 0.007997202146346014,
+    "maximumAbsoluteNoteVerticalSpeedMps": 1.8902157843418352e-05,
+    "maximumRelativeVerticalSpeedMps": 1.4327891912371365e-07,
+    "maximumRelativeVerticalDriftM": 2.2825413156790653e-08,
+    "maximumFloorForceN": 0.0,
+    "passed": true
+  },
+  "selectedStepReplays": [
+    {
+      "run": "native-static-lift-half",
+      "step": 1,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-half",
+      "step": 401,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-half",
+      "step": 801,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-half",
+      "step": 1201,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-half",
+      "step": 1600,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-quarter",
+      "step": 1,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-quarter",
+      "step": 801,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-quarter",
+      "step": 1601,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-quarter",
+      "step": 2401,
+      "maximumRecordedDifference": 1.7763568394002505e-15
+    },
+    {
+      "run": "native-static-lift-quarter",
+      "step": 3200,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-eighth",
+      "step": 1,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-eighth",
+      "step": 1601,
+      "maximumRecordedDifference": 1.7763568394002505e-15
+    },
+    {
+      "run": "native-static-lift-eighth",
+      "step": 3201,
+      "maximumRecordedDifference": 1.7763568394002505e-15
+    },
+    {
+      "run": "native-static-lift-eighth",
+      "step": 4801,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-eighth",
+      "step": 6400,
+      "maximumRecordedDifference": 1.7763568394002505e-15
+    },
+    {
+      "run": "native-static-lift-zero",
+      "step": 1,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-zero",
+      "step": 401,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-zero",
+      "step": 801,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-zero",
+      "step": 1201,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-zero",
+      "step": 1600,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-low",
+      "step": 1,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-low",
+      "step": 401,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-low",
+      "step": 801,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-low",
+      "step": 1201,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-low",
+      "step": 1600,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-coast",
+      "step": 1,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-coast",
+      "step": 2,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-coast-resolved",
+      "step": 1,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-coast-resolved",
+      "step": 22,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-coast-resolved",
+      "step": 44,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-coast-resolved",
+      "step": 65,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-coast-resolved",
+      "step": 86,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-hold-half",
+      "step": 1,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-hold-half",
+      "step": 1001,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-hold-half",
+      "step": 2001,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-hold-half",
+      "step": 3001,
+      "maximumRecordedDifference": 0.0
+    },
+    {
+      "run": "native-static-lift-hold-half",
+      "step": 4000,
+      "maximumRecordedDifference": 3.552713678800501e-15
+    }
+  ],
+  "retainedLiftModelEvidence": true,
+  "acceptance": false,
+  "hardwareValidated": false,
+  "continuousFeed": false,
+  "sameLawFreshAcquisition": false,
+  "limits": [
+    "Separate constitutive/integration and pinch-policy switch at attained stop; state/energy continuity is not same-law full-cycle verification",
+    "Coast controls are preserved numerical solver/energy rejections, not validated physical drops",
+    "Timestep comparisons are local from one attained source; no full spatial trajectory refinement",
+    "Native mass/transmission and whole-assembly motion clearance remain unbound; friction/compliance/floor assumptions uncalibrated"
+  ]
+}
