@@ -1,0 +1,164 @@
+{
+  "schema": "native-raised-index-verification/1",
+  "scriptSha256": "3b1bbab8cf1a08714ab21f844527ece137be9dd999aa01e998bb39fffaabfcf6",
+  "integrityChecksPassed": true,
+  "sourceStateAndLedgerExact": true,
+  "mechanicalJoinDifferenceJ": 0.0,
+  "sourceReplayResidualDifferenceJ": -3.552713678800501e-15,
+  "runs": [
+    {
+      "name": "native-raised-index-half",
+      "outcome": "HORIZON",
+      "reason": null,
+      "stepS": 0.0005,
+      "acceptedSteps": 1600,
+      "durationS": 0.8000000000009777,
+      "relativeDisplacementM": -0.0036704519909624977,
+      "finalRelativeSpeedMps": -0.0005661571066438531,
+      "finalNoteRiseM": 0.007999995647504109,
+      "maximumRelativeVerticalDriftM": 2.7190911418284447e-08,
+      "firstFloorContactElapsedS": null,
+      "minimumPinchCurrentA": -0.15447439153934375,
+      "maximumPinchCurrentA": 0.05575229659788998,
+      "peakLiftPitchCurrentA": 4.886766427840212,
+      "maximumIncrementalEnergyResidualJ": 1.980613487106986e-06,
+      "receiptSha256": "5d01ec7f93832870980fb4c0f4cb5dc9b917de62c2b0e49a3cd8da6a791b1433",
+      "finalPositionErrorM": 0.0003295480090375058,
+      "lastWindowMaximumFloorForceN": 0.0,
+      "gatePassed": true
+    },
+    {
+      "name": "native-raised-index-quarter",
+      "outcome": "HORIZON",
+      "reason": null,
+      "stepS": 0.00025,
+      "acceptedSteps": 3200,
+      "durationS": 0.7999999999981355,
+      "relativeDisplacementM": -0.0036712531244371682,
+      "finalRelativeSpeedMps": -0.0005637145999086331,
+      "finalNoteRiseM": 0.007999995698257788,
+      "maximumRelativeVerticalDriftM": 2.6605314111527445e-08,
+      "firstFloorContactElapsedS": null,
+      "minimumPinchCurrentA": -0.154466470200731,
+      "maximumPinchCurrentA": 0.05540868393398354,
+      "peakLiftPitchCurrentA": 4.886766465842703,
+      "maximumIncrementalEnergyResidualJ": 9.766561013258013e-07,
+      "receiptSha256": "ebc0ab946c9cd46d4dc99b841eabb41fdf14db6cb40ab4a389ea244870a6aa22",
+      "finalPositionErrorM": 0.00032874687556283533,
+      "lastWindowMaximumFloorForceN": 0.0,
+      "gatePassed": true
+    },
+    {
+      "name": "native-raised-release-half",
+      "outcome": "HORIZON",
+      "reason": null,
+      "stepS": 0.0005,
+      "acceptedSteps": 200,
+      "durationS": 0.10000000000012221,
+      "relativeDisplacementM": -1.7769743266504712e-05,
+      "finalRelativeSpeedMps": 2.9822757082115535e-05,
+      "finalNoteRiseM": 0.0018475767272931286,
+      "maximumRelativeVerticalDriftM": 0.009304772979212377,
+      "firstFloorContactElapsedS": 0.03900000000004766,
+      "minimumPinchCurrentA": 0.0,
+      "maximumPinchCurrentA": 0.0,
+      "peakLiftPitchCurrentA": 4.886758870488962,
+      "maximumIncrementalEnergyResidualJ": 0.0013238266171872182,
+      "receiptSha256": "49902221e69b75bf929a11297793c423eb893b5110b587d668d47ae4eb3a7530"
+    },
+    {
+      "name": "native-raised-release-quarter",
+      "outcome": "HORIZON",
+      "reason": null,
+      "stepS": 0.00025,
+      "acceptedSteps": 400,
+      "durationS": 0.09999999999976694,
+      "relativeDisplacementM": -1.7917112106302646e-05,
+      "finalRelativeSpeedMps": 2.905774999588982e-05,
+      "finalNoteRiseM": 0.002025791171998366,
+      "maximumRelativeVerticalDriftM": 0.009313365687921089,
+      "firstFloorContactElapsedS": 0.03899999999990911,
+      "minimumPinchCurrentA": 0.0,
+      "maximumPinchCurrentA": 0.0,
+      "peakLiftPitchCurrentA": 4.886758870488962,
+      "maximumIncrementalEnergyResidualJ": 0.0006953380817040777,
+      "receiptSha256": "394ba77ab060eb2ec9c39938c286f25ad6c0e44bc4d3dcda5f923f8c7329d291"
+    }
+  ],
+  "comparison": {
+    "maximumPositionDifferenceM": 2.3792593207838664e-06,
+    "maximumVelocityDifferenceMps": 3.7139392909823e-05,
+    "withinLiftContractBounds": true
+  },
+  "selectedStepReplays": [
+    {
+      "run": "native-raised-index-half",
+      "step": 1,
+      "maximumDifference": 0.0
+    },
+    {
+      "run": "native-raised-index-half",
+      "step": 801,
+      "maximumDifference": 0.0
+    },
+    {
+      "run": "native-raised-index-half",
+      "step": 1600,
+      "maximumDifference": 0.0
+    },
+    {
+      "run": "native-raised-index-quarter",
+      "step": 1,
+      "maximumDifference": 0.0
+    },
+    {
+      "run": "native-raised-index-quarter",
+      "step": 1601,
+      "maximumDifference": 0.0
+    },
+    {
+      "run": "native-raised-index-quarter",
+      "step": 3200,
+      "maximumDifference": 0.0
+    },
+    {
+      "run": "native-raised-release-half",
+      "step": 1,
+      "maximumDifference": 0.0
+    },
+    {
+      "run": "native-raised-release-half",
+      "step": 101,
+      "maximumDifference": 0.0
+    },
+    {
+      "run": "native-raised-release-half",
+      "step": 200,
+      "maximumDifference": 0.0
+    },
+    {
+      "run": "native-raised-release-quarter",
+      "step": 1,
+      "maximumDifference": 0.0
+    },
+    {
+      "run": "native-raised-release-quarter",
+      "step": 201,
+      "maximumDifference": 0.0
+    },
+    {
+      "run": "native-raised-release-quarter",
+      "step": 400,
+      "maximumDifference": 0.0
+    }
+  ],
+  "acceptance": false,
+  "fullLauncherFeed": false,
+  "hardwareValidated": false,
+  "limits": [
+    "A4mm raised indexing request is not a verified launcher handoff or full feed path",
+    "Both local feed steps start from the same attained half-step2s hold",
+    "Zero-friction release deliberately changes only friction after the attained hold; it is a counterexample, not calibration",
+    "Native assembly clearance/mass/transmission and same-law fresh acquisition remain unverified"
+  ]
+}

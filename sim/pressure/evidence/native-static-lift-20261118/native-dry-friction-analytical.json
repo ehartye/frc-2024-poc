@@ -1,0 +1,38 @@
+{
+  "schema": "dry-friction-analytical-check/1",
+  "passed": true,
+  "scriptSha256": "e885428465450b4c4ec9979b8c45cd9b4b20361aaf1c8f58cf5f79b919f36fcd",
+  "solverSha256": "7e8dfd53d6c92710c0ca3b2e5e8ac75a7dee7c7ed06bad4c4f8ced50cca25b18",
+  "cases": [
+    {
+      "label": "sticking",
+      "maximumVelocityErrorMps": 0.0,
+      "heatJ": -0.0,
+      "projectionIdentityJ": 0.0,
+      "coneExcessNs": 0.0,
+      "iterations": 10
+    },
+    {
+      "label": "sliding",
+      "maximumVelocityErrorMps": 0.0,
+      "heatJ": 0.0049499999999999995,
+      "projectionIdentityJ": 2.009500964066102e-17,
+      "coneExcessNs": 0.0,
+      "iterations": 10
+    },
+    {
+      "label": "zero",
+      "maximumVelocityErrorMps": 0.0,
+      "heatJ": 0.0,
+      "projectionIdentityJ": 0.0,
+      "coneExcessNs": 0.0,
+      "iterations": 0
+    }
+  ],
+  "partitionedDuplicateVelocityErrorMps": 1.3877787807814457e-17,
+  "acceptance": false,
+  "limits": [
+    "Analytical impulse tests only; no native or hardware calibration",
+    "Projection dissipation is a discretization diagnostic, not silently booked as physical friction heat"
+  ]
+}

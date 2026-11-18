@@ -1,0 +1,13 @@
+{
+  "schema": "incomplete-numerical-controls/1",
+  "reason": "Stop redundant expensive cold-start optimizer trials to prioritize same-law continuous integration with independently checked numerical warm starts.",
+  "physicalOutcome": "unknown",
+  "rawFullTrajectoriesAvailable": false,
+  "controls": [
+    {"output": "native-static-cycle-interior-quarter", "stepS": 0.00025, "solverMaxIterations": 1000, "lastObservedTimeS": 2.5, "lastObservedRelativeXM": 0.2167511532318353, "lastObservedNoteRiseM": -0.00005669638593950796, "lastObservedResidualJ": -0.004697468635202623},
+    {"output": "native-static-cycle-budget-half", "stepS": 0.0005, "solverMaxIterations": 10000, "lastObservedTimeS": 2.25, "lastObservedRelativeXM": 0.23027231804665227, "lastObservedNoteRiseM": -0.00010181060380862889, "lastObservedResidualJ": -0.009307974429122429}
+  ],
+  "preservedCompletedCounterexample": "native-static-cycle-interior-half/receipt.json",
+  "preservedExactStepDiagnosis": "native-static-cycle-rejected-step.json",
+  "acceptance": false
+}

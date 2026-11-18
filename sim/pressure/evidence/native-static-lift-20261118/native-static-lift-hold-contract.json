@@ -1,0 +1,46 @@
+{
+  "schema": "native-static-lift-contract/1",
+  "law": "Native finite-area normal pressure with independent isotropic dry Coulomb friction disks at every material sample; static and kinetic coefficients equal",
+  "mu": 0.6,
+  "integrator": "Explicit normal/electrical force kick, maximum-dissipation implicit friction impulse, symplectic velocity drift; physical heat uses endpoint slip, projection dissipation remains a numerical diagnostic",
+  "solverGapToleranceJ": 1e-12,
+  "solverMaxIterations": 1000,
+  "stepsS": [
+    0.0005,
+    0.00025,
+    0.000125
+  ],
+  "controller": "100Hz integer ticks, finite lift/pitch inverse effort requests the same8mm rise/hold; pinch rotors coast freely; drive short-brakes; no NOTE pose/velocity assignment",
+  "retentionGate": {
+    "minimumFinalRiseM": 0.006,
+    "maximumRelativeVerticalDriftM": 0.001,
+    "maximumFinalRelativeVerticalSpeedMps": 0.001
+  },
+  "comparisonBounds": {
+    "positionM": 5e-05,
+    "velocityMps": 0.001,
+    "incrementalEnergyJ": 0.002
+  },
+  "controls": [
+    "zero friction",
+    "low friction0.1",
+    "actuators coast",
+    "analytical sticking/sliding",
+    "partitioned duplicated contacts"
+  ],
+  "limits": [
+    "Separately declared constitutive/integration switch at attained stop; no same-law full fresh acquisition claimed",
+    "Native normal geometry retained; moving mass/transmission and floor/compliance/friction remain uncalibrated",
+    "No Fusion access, native modification, lifted whole-assembly clearance or hardware validation",
+    "A bounded8mm lift is not continuous feed or launch"
+  ],
+  "holdCheck": {
+    "windowS": 0.5,
+    "minimumRiseM": 0.006,
+    "maximumAbsoluteNoteVerticalSpeedMps": 0.0001,
+    "maximumRelativeVerticalSpeedMps": 0.001,
+    "maximumRelativeVerticalDriftM": 0.001,
+    "floorForceMustBeZero": true
+  },
+  "requestedDurationS": 2.0
+}

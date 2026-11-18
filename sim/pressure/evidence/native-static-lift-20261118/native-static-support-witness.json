@@ -1,0 +1,102 @@
+{
+  "schema": "native-static-support-witness/1",
+  "inputs": {
+    "producer": "5cf9daf44f2071617c5cd399bda5beb5ff40f841120e7718042dd2990785e1cd",
+    "friction": "7e8dfd53d6c92710c0ca3b2e5e8ac75a7dee7c7ed06bad4c4f8ced50cca25b18",
+    "model": "3c38dfcf83b8eccaeb27eb4c075d5417d37cfcc8a6218a881e3feb5d561d11c4",
+    "sourceReceipt": "d819bdf34a7e04413a32ee57c8a3e31c3eb9b43076a1daed602ccd3e76f479a8",
+    "binding": "6d8a1ef819b918d11380a96137f6573ca30441d8ce947efb86a670c7134314d8",
+    "baseContract": "0ad4ec67fee1a9051781e0282db65ac32d1711c27bb8f34608aefbae41061361"
+  },
+  "solverGapToleranceJ": 1e-12,
+  "solverMaxIterations": 1000,
+  "contactCount": 5928,
+  "kinematicFiniteDifferenceMaximumMps": 3.82906206741751e-11,
+  "staticCases": [
+    {
+      "mu": 0.0,
+      "verticalSupportN": 0.0,
+      "weightN": 2.3045627499999997,
+      "maximumGeneralizedAcceleration": 9.80665,
+      "equilibriumWitness": false,
+      "maximumGeneralizedForceResidual": 2.3045627499999997,
+      "maximumConeExcessNs": 0.0,
+      "gapJ": 0.0,
+      "iterations": 0
+    },
+    {
+      "mu": 0.1,
+      "verticalSupportN": 0.7345311586105748,
+      "weightN": 2.3045627499999997,
+      "maximumGeneralizedAcceleration": 6.680985495274144,
+      "equilibriumWitness": false,
+      "maximumGeneralizedForceResidual": 1.5700315913894238,
+      "maximumConeExcessNs": 3.970466940254533e-23,
+      "gapJ": 9.816080649003618e-13,
+      "iterations": 130
+    },
+    {
+      "mu": 0.2,
+      "verticalSupportN": 1.4690623172705302,
+      "weightN": 2.3045627499999997,
+      "maximumGeneralizedAcceleration": 3.555320990338156,
+      "equilibriumWitness": false,
+      "maximumGeneralizedForceResidual": 0.8355004327294666,
+      "maximumConeExcessNs": 7.940933880509066e-23,
+      "gapJ": 9.792185021586868e-13,
+      "iterations": 190
+    },
+    {
+      "mu": 0.3,
+      "verticalSupportN": 2.2035934757615565,
+      "weightN": 2.3045627499999997,
+      "maximumGeneralizedAcceleration": 0.4296564861210744,
+      "equilibriumWitness": false,
+      "maximumGeneralizedForceResidual": 0.10096927423845248,
+      "maximumConeExcessNs": 1.5881867761018131e-22,
+      "gapJ": 2.3309955013933755e-13,
+      "iterations": 10
+    },
+    {
+      "mu": 0.32,
+      "verticalSupportN": 2.3045627478625703,
+      "weightN": 2.3045627499999997,
+      "maximumGeneralizedAcceleration": 0.00011591847876509465,
+      "equilibriumWitness": false,
+      "maximumGeneralizedForceResidual": 3.2732882388618723e-07,
+      "maximumConeExcessNs": 0.0,
+      "gapJ": 6.089053671246437e-13,
+      "iterations": 40
+    },
+    {
+      "mu": 0.4,
+      "verticalSupportN": 2.3045627478625734,
+      "weightN": 2.3045627499999997,
+      "maximumGeneralizedAcceleration": 0.00011591847876531011,
+      "equilibriumWitness": false,
+      "maximumGeneralizedForceResidual": 3.273288238867956e-07,
+      "maximumConeExcessNs": 0.0,
+      "gapJ": 7.611056513670047e-13,
+      "iterations": 40
+    },
+    {
+      "mu": 0.6,
+      "verticalSupportN": 2.304562749679933,
+      "weightN": 2.3045627499999997,
+      "maximumGeneralizedAcceleration": 1.6900626849954906e-05,
+      "equilibriumWitness": false,
+      "maximumGeneralizedForceResidual": 4.772373109679619e-08,
+      "maximumConeExcessNs": 0.0,
+      "gapJ": 1.6642120679566708e-13,
+      "iterations": 50
+    }
+  ],
+  "nativeMovingMassBound": false,
+  "acceptance": false,
+  "limits": [
+    "Prescribed zero-velocity equilibrium feasibility at the attained geometry; not a new trajectory or calibrated static coefficient",
+    "Cradle gravity is balanced by an ideal test effort plus the explicitly reported NOTE load/moment; actual finite actuation is tested in separate dynamic runs",
+    "All eight generalized velocities include finite free pinch rotor inertia; no rotor lock or NOTE attachment",
+    "Only the existing normal pressure field sets friction capacities"
+  ]
+}

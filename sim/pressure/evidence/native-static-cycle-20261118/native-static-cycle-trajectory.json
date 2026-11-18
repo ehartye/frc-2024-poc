@@ -1,0 +1,16 @@
+{
+  "producerSha256": "9a73ee44af982e55cca6e227650ea8f6fdf186406c6e4ba4f0c347f523c8c268",
+  "sources": [
+    {
+      "receiptSha256": "137b16cb68ebc9fc130657d644901775e203c73e057142cb235c9ec806b377d7",
+      "stepS": 0.0005,
+      "outcome": "BOUNDED_CYCLE_COMPLETE"
+    },
+    {
+      "receiptSha256": "885dfcd85b4b7991d5182390eb834350296f3c76ce55709a3c619d7a2613f2e5",
+      "stepS": 0.00025,
+      "outcome": "BOUNDED_CYCLE_COMPLETE"
+    }
+  ],
+  "scope": "Trace plot only; no animation, GUI or real-time demonstration claim"
+}

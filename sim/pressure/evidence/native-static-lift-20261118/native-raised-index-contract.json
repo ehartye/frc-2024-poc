@@ -1,0 +1,14 @@
+{
+  "schema": "native-raised-index-contract/1",
+  "source": "Exact attained2s native static-lift endpoint, including a replay-reconstructed last contact reaction for controller continuity",
+  "targetRelativeDisplacementM": -0.004,
+  "profile": "100Hz ticks; -0.05m/s2 for0.2s, -0.01m/s for0.2s, +0.05m/s2 for0.2s, then hold for0.2s",
+  "controller": "Finite signed pinch current, rotor/feed position feedback and0.001V plugging when regeneration would be required; actual velocities and positions are never assigned",
+  "pinchDutyLimit": 0.025,
+  "positionGainPerS": 2.0,
+  "rotorGainPerS": 50.0,
+  "stepS": [0.0005,0.00025],
+  "durationS": 0.8,
+  "gate": {"maximumFinalPositionErrorM":0.0005,"minimumFinalNoteRiseM":0.006,"maximumRelativeVerticalDriftM":0.001,"maximumFinalRelativeSpeedMps":0.001,"lastWindowS":0.2,"floorForceMustBeZero":true},
+  "limits": ["Small rearward indexing stroke only; launcher feed direction and full handoff are not verified","Same static-contact law as the attained lift, but not same-law fresh acquisition","Native mass/transmission and actual full-assembly clearance remain unknown; no Fusion interaction or hardware validation"]
+}

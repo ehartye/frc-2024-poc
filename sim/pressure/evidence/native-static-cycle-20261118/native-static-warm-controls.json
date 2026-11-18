@@ -1,0 +1,38 @@
+{
+  "schema": "native-warm-friction-controls/1",
+  "producerSha256": "394d7e141f81ea292ad04d3c2a138a92c687da59ab6f8b2823ce206286b13f26",
+  "warmSolverSha256": "31ab8e64e850823ed698827e5e6b3bfac57bfb0523b044e7ce6d6ec8deb9b7a8",
+  "sourceSha256": "d7c27b02a96c584eaff7c4cc11cc742ee7c2e161196f60788a4a991f84394453",
+  "coldIterations": 1070,
+  "coldRuntimeSeconds": 0.5565274000036879,
+  "cases": [
+    {
+      "seed": "prior-step",
+      "iterations": 230,
+      "maximumVelocityDifference": 1.4861800835125338e-08,
+      "gapJ": 3.874099137312285e-14,
+      "coneExcessNs": 0.0,
+      "runtimeSeconds": 0.13917599999695085
+    },
+    {
+      "seed": "zero",
+      "iterations": 1070,
+      "maximumVelocityDifference": 0.0,
+      "gapJ": 3.2296609090733304e-13,
+      "coneExcessNs": 0.0,
+      "runtimeSeconds": 0.5840428999945289
+    },
+    {
+      "seed": "adversarial",
+      "iterations": 680,
+      "maximumVelocityDifference": 8.317630278541904e-08,
+      "gapJ": 7.371900091696832e-13,
+      "coneExcessNs": 0.0,
+      "runtimeSeconds": 0.39397160000225995
+    }
+  ],
+  "sameLaw": true,
+  "sameGapTolerance": true,
+  "seedIsNumericalNotPhysical": true,
+  "acceptance": false
+}

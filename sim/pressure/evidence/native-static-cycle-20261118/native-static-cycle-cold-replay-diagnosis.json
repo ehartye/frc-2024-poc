@@ -1,0 +1,197 @@
+{
+  "schema": "native-cycle-cold-replay-diagnosis/1",
+  "producerSha256": "c5af5da12082eedd281cfb9dce84d13b2004bc05294f7e610e23147d575a2e23",
+  "sourceSha256": "137b16cb68ebc9fc130657d644901775e203c73e057142cb235c9ec806b377d7",
+  "cases": [
+    {
+      "step": 1,
+      "largestStateDifferences": [
+        [
+          "/timeS",
+          0.0
+        ],
+        [
+          "/chassis/t",
+          0.0
+        ],
+        [
+          "/chassis/x",
+          0.0
+        ],
+        [
+          "/chassis/y",
+          0.0
+        ],
+        [
+          "/chassis/heading",
+          0.0
+        ],
+        [
+          "/chassis/vx",
+          0.0
+        ]
+      ],
+      "maximumEnergyDifferenceJ": 0.0,
+      "originalStateBoundPassed": true,
+      "originalEnergyBoundPassed": true,
+      "massMetricVelocityDifferenceJ": 0.0,
+      "twiceSumSolverGapsJ": 0.0,
+      "massMetricBoundPassed": true,
+      "coldIterations": 0,
+      "warmIterations": 0
+    },
+    {
+      "step": 2756,
+      "largestStateDifferences": [
+        [
+          "/timeS",
+          0.0
+        ],
+        [
+          "/chassis/t",
+          0.0
+        ],
+        [
+          "/chassis/x",
+          0.0
+        ],
+        [
+          "/chassis/y",
+          0.0
+        ],
+        [
+          "/chassis/heading",
+          0.0
+        ],
+        [
+          "/chassis/vx",
+          0.0
+        ]
+      ],
+      "maximumEnergyDifferenceJ": 0.0,
+      "originalStateBoundPassed": true,
+      "originalEnergyBoundPassed": true,
+      "massMetricVelocityDifferenceJ": 0.0,
+      "twiceSumSolverGapsJ": 0.0,
+      "massMetricBoundPassed": true,
+      "coldIterations": 0,
+      "warmIterations": 0
+    },
+    {
+      "step": 9081,
+      "largestStateDifferences": [
+        [
+          "/notePitchRate",
+          1.0937125320903754e-06
+        ],
+        [
+          "/thetaRate",
+          2.7889412501538695e-08
+        ],
+        [
+          "/noteVz",
+          8.167275263211426e-09
+        ],
+        [
+          "/note/w/1",
+          7.93558885270329e-09
+        ],
+        [
+          "/note/w/0",
+          7.935588824947715e-09
+        ],
+        [
+          "/notePitch",
+          5.468562660267563e-10
+        ]
+      ],
+      "maximumEnergyDifferenceJ": 2.5715951828923778e-11,
+      "originalStateBoundPassed": false,
+      "originalEnergyBoundPassed": true,
+      "massMetricVelocityDifferenceJ": 1.7400652659257953e-15,
+      "twiceSumSolverGapsJ": 2.9563420785191667e-12,
+      "massMetricBoundPassed": true,
+      "coldIterations": 670,
+      "warmIterations": 60
+    },
+    {
+      "step": 13081,
+      "largestStateDifferences": [
+        [
+          "/notePitchRate",
+          1.6845773423237708e-08
+        ],
+        [
+          "/thetaRate",
+          4.27965857230947e-10
+        ],
+        [
+          "/note/w/0",
+          3.1079694373659095e-11
+        ],
+        [
+          "/note/w/1",
+          3.1079694373659095e-11
+        ],
+        [
+          "/notePitch",
+          8.422886709933894e-12
+        ],
+        [
+          "/vPivot",
+          1.6801749946307627e-12
+        ]
+      ],
+      "maximumEnergyDifferenceJ": 1.3300471835009375e-13,
+      "originalStateBoundPassed": true,
+      "originalEnergyBoundPassed": true,
+      "massMetricVelocityDifferenceJ": 4.1084583214536027e-19,
+      "twiceSumSolverGapsJ": 2.0559226819152234e-12,
+      "massMetricBoundPassed": true,
+      "coldIterations": 50,
+      "warmIterations": 50
+    },
+    {
+      "step": 14680,
+      "largestStateDifferences": [
+        [
+          "/notePitchRate",
+          1.4973810679370754e-08
+        ],
+        [
+          "/thetaRate",
+          3.8041167286880146e-10
+        ],
+        [
+          "/note/w/0",
+          2.762622769436618e-11
+        ],
+        [
+          "/note/w/1",
+          2.762622769436618e-11
+        ],
+        [
+          "/notePitch",
+          7.48690535566296e-12
+        ],
+        [
+          "/vPivot",
+          1.4792700755734273e-12
+        ]
+      ],
+      "maximumEnergyDifferenceJ": 1.1723955140041653e-13,
+      "originalStateBoundPassed": true,
+      "originalEnergyBoundPassed": true,
+      "massMetricVelocityDifferenceJ": 3.2460988263116777e-19,
+      "twiceSumSolverGapsJ": 5.899586424765122e-13,
+      "massMetricBoundPassed": true,
+      "coldIterations": 50,
+      "warmIterations": 10
+    }
+  ],
+  "limits": [
+    "Original componentwise and energy tolerances are preserved and explicitly classified",
+    "Mass metric is diagnostic: two convex QP gap certificates bound velocity separation by twice their sum; no physical model change",
+    "This diagnostic does not replace a failed originally declared gate"
+  ]
+}

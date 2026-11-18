@@ -1,0 +1,115 @@
+{
+  "producerSha256": "e3d34203a2e7dfb8290ea4c6e70a108ab38718ad5570db3742cc77cdef8d6a59",
+  "solverSha256": "31ab8e64e850823ed698827e5e6b3bfac57bfb0523b044e7ce6d6ec8deb9b7a8",
+  "cases": [
+    {
+      "velocity": [
+        3.0,
+        4.0
+      ],
+      "capacity": 2.0,
+      "seed": [
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "expected": [
+        1.8,
+        2.4
+      ],
+      "maximumDifference": 2.220446049250313e-16
+    },
+    {
+      "velocity": [
+        3.0,
+        4.0
+      ],
+      "capacity": 2.0,
+      "seed": [
+        [
+          100.0,
+          -300.0
+        ]
+      ],
+      "expected": [
+        1.8,
+        2.4
+      ],
+      "maximumDifference": 2.220446049250313e-16
+    },
+    {
+      "velocity": [
+        0.3,
+        -0.4
+      ],
+      "capacity": 2.0,
+      "seed": [
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "expected": [
+        0.0,
+        0.0
+      ],
+      "maximumDifference": 0.0
+    },
+    {
+      "velocity": [
+        0.3,
+        -0.4
+      ],
+      "capacity": 2.0,
+      "seed": [
+        [
+          100.0,
+          -300.0
+        ]
+      ],
+      "expected": [
+        0.0,
+        0.0
+      ],
+      "maximumDifference": 5.551115123125783e-17
+    },
+    {
+      "velocity": [
+        3.0,
+        4.0
+      ],
+      "capacity": 0.0,
+      "seed": [
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "expected": [
+        3.0,
+        4.0
+      ],
+      "maximumDifference": 0.0
+    },
+    {
+      "velocity": [
+        3.0,
+        4.0
+      ],
+      "capacity": 0.0,
+      "seed": [
+        [
+          100.0,
+          -300.0
+        ]
+      ],
+      "expected": [
+        3.0,
+        4.0
+      ],
+      "maximumDifference": 0.0
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,59 @@
+{
+  "schema": "native-transfer-gap/1",
+  "inputs": {
+    "producer": "916ccbd364051234b839079a133602d90c93be1952d9c098f373b79bd5c48724",
+    "intakeCadContract": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+    "sourceReceipt": "137b16cb68ebc9fc130657d644901775e203c73e057142cb235c9ec806b377d7",
+    "launcherBinding": "4f7fb81f5f7759d48692c8de9bdc4307501f07af2e94dd8b075b1e085798c7ce",
+    "historicalLauncherComparison": "539a033f81a3112844182d9f1512d2afa46b92adc66607f3380cca4189875031"
+  },
+  "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "attainedRelativeNoteM": [
+    0.1805900736347995,
+    0.0,
+    0.033384959359213845
+  ],
+  "nominalIntakeHandoffM": [
+    0.178,
+    0.0,
+    0.4748333949243112
+  ],
+  "historicalStagedLauncherInitialM": [
+    0.27299999999999996,
+    0.0,
+    0.6393782217350893
+  ],
+  "attainedToHandoffDeltaM": [
+    -0.002590073634799517,
+    0.0,
+    0.4414484355650974
+  ],
+  "requiredNotePitchChangeRad": 1.0469826647144997,
+  "noteGravityIncreaseToHandoffJ": 1.0173456206490985,
+  "handoffToLauncherAlongGuideM": 0.19000000007944462,
+  "handoffToLauncherOffAxisM": [
+    -3.9722364286731704e-11,
+    0.0,
+    2.293368273065255e-11
+  ],
+  "noteGravityIncreaseAlongGuideJ": 0.37920387857332044,
+  "sourceDeclaredPivotMotionLimitM": 0.02,
+  "sourceDeclaredPitchLimitRad": 0.02,
+  "configuredIntakeHandoffRiseM": 0.4494333949243112,
+  "sameNativeArchiveIdentityDoesNotPermitSplicing": true,
+  "directStateSplicePermitted": false,
+  "acceptance": false,
+  "nextRequiredEvidence": [
+    "Bind moving-body identities and installed lift/pitch transmissions to reconciled native assembly",
+    "Screen the complete lifted and pitched NOTE/cradle swept route with native hard parts",
+    "Integrate the existing finite lift/pitch plant over that qualified range without state reset",
+    "Add launcher contact and four motor states to the same physical state and ledger before contact occurs",
+    "Resolve along-guide feeder support and drive over the additional 190mm, with contact loss and energy controls"
+  ],
+  "limits": [
+    "Nominal native-bound source contracts and archived staged launcher coordinates; no new Fusion inspection",
+    "Geometry and NOTE gravity bookkeeping only, not a simulated transfer or a collision-free path",
+    "NOTE gravity work excludes carriage/cradle elevation and rotation, drivetrain work and all losses",
+    "Historical staged launcher law differs from intake pressure; that experiment is not a valid continuous endpoint"
+  ]
+}

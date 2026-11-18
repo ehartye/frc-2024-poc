@@ -1,0 +1,21 @@
+{
+  "sourceSha256": "7b647013d4a439ce4a7a43a876f968cc558ea0e4a4ec07e74f45d03364f7bb60",
+  "producerSha256": "60680750a2f6bd896b0b6611f1bc3aeede1a58a7486306c321a1ceb83430dfd7",
+  "initialStateReconstructedExactly": true,
+  "rejectionAtomic": true,
+  "proposedRejectedStates": [
+    {
+      "timeS": 0.0005,
+      "relativeXM": 0.6580000000329598,
+      "chassisXM": -3.295972502546113e-11,
+      "pivotZM": 0.02539999339582531,
+      "thetaRad": -1.2359896884547925e-08
+    }
+  ],
+  "interiorStartM": 0.657,
+  "domainBoundaryM": 0.658,
+  "limits": [
+    "Proposed rejected endpoint only; never accepted as a trajectory sample",
+    "The new interior start is a separate declared fresh initial condition, not a state correction"
+  ]
+}
