@@ -8,6 +8,16 @@ from fusion_visual_display import FusionDisplay,sha
 from fusion_visual_provenance import inventory,verify_inventory
 LIMITS='Fusion geometry: VISUAL ONLY, mechanisms held at floor. Physics: XYZ/yaw six-wheel drive; fixed12V; hypothetical tires/mass; contact chatter.'
 
+def restore_drive_display_options(viewer):
+ # MuJoCo processes its own shortcuts as well as the drive callback. Restore only
+ # conflicting display flags; camera controls and unrelated view options remain usable.
+ keys=set('WASDCBQ')
+ for i,(_,default,key) in enumerate(mujoco.mjVISSTRING):
+  if key in keys:viewer.opt.flags[i]=int(default)
+ if viewer.user_scn is not None:
+  for i,(_,default,key) in enumerate(mujoco.mjRNDSTRING):
+   if key in keys:viewer.user_scn.flags[i]=int(default)
+
 def view(root,manifest,source_archive,trace):
  import mujoco.viewer
  pins=inventory(HERE,root)
@@ -23,9 +33,11 @@ def view(root,manifest,source_archive,trace):
      start=time.monotonic();held,focused,_=held_windows();keys,quit_requested,telemetry=latch.poll(held,focused,start);a.tick(keys,focused,quit_requested);row=record(a,telemetry,timing=timing);f.write(json.dumps(row)+'\n')
      with viewer.lock():
       display.update(a.physics)
-      if viewer.user_scn is not None:viewer.user_scn.flags[mujoco.mjtRndFlag.mjRND_WIREFRAME]=0
+      restore_drive_display_options(viewer)
      viewer.set_texts((None,None,'WASD drive | C coast | B brake | Q quit\n'+LIMITS,f'sim={a.physics.d.time:.2f}s wall={row["wallElapsedS"]:.2f}s RTF={row["realTimeFactor"]:.3f}\n{a.last[2]} duty={a.last[0]} events={telemetry["eventCount"]} accepted={telemetry["acceptedEventCount"]}'))
-     viewer.sync(state_only=True);time.sleep(max(0,.01-(time.monotonic()-start)))
+     viewer.sync(state_only=True)
+     with viewer.lock():restore_drive_display_options(viewer)
+     time.sleep(max(0,.01-(time.monotonic()-start)))
    finally:
     if not a.closed:a.tick(quit_requested=True)
     verify_inventory(pins,HERE,root)

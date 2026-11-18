@@ -42,6 +42,53 @@ class VisualTests(unittest.TestCase):
     else:m['meshes'][-1]['rgba']=[float('nan'),0,0,1]
     path.write_text(json.dumps(m))
     with self.assertRaises(ValueError):load_manifest(path,d/'synthetic.f3d')
+ def test_v2_excluded_body_keeps_source_inventory(self):
+  with tempfile.TemporaryDirectory() as td:
+   d=pathlib.Path(td);path=self.fixture_v2(d);m=json.loads(path.read_text())
+   m['meshes'][0]['sourceBodyKeys'].remove('root-1')
+   m['excludedBodyKeys']=['root-1'];m['exclusionReason']='Hidden reference body retained in native archive'
+   path.write_text(json.dumps(m));view=FusionDisplay(path,d/'synthetic.f3d')
+   self.assertEqual(view.manifest['sourceBodies'],712)
+   self.assertEqual(sum(len(r['sourceBodyKeys']) for r in view.meshes),711)
+   self.assertEqual(view.manifest['excludedBodyKeys'],['root-1'])
+ def test_v2_rejects_unaccounted_exclusions(self):
+  for change in ('no-reason','duplicate','unknown','still-rendered'):
+   with self.subTest(change=change),tempfile.TemporaryDirectory() as td:
+    d=pathlib.Path(td);path=self.fixture_v2(d);m=json.loads(path.read_text())
+    if change!='still-rendered':m['meshes'][0]['sourceBodyKeys'].remove('root-1')
+    m['excludedBodyKeys']=['root-1'];m['exclusionReason']='Hidden native reference'
+    if change=='no-reason':m.pop('exclusionReason')
+    elif change=='duplicate':m['excludedBodyKeys'].append('root-1')
+    elif change=='unknown':m['excludedBodyKeys']=['unknown-body']
+    path.write_text(json.dumps(m))
+    with self.assertRaises(ValueError):load_manifest(path,d/'synthetic.f3d')
+ def test_v2_verification_checks_every_mesh(self):
+  import contextlib,io
+  from verify_fusion_visual_display import run
+  with tempfile.TemporaryDirectory() as td:
+   d=pathlib.Path(td);path=self.fixture_v2(d);out=d/'verification.json'
+   with contextlib.redirect_stdout(io.StringIO()):run(path,d/'synthetic.f3d',out)
+   result=json.loads(out.read_text());names={'fixed','carriage','cradle','bumper-red'}
+   self.assertEqual(set(result['meshHashes']),names)
+   for pose in ('floor','rotated','handoff'):
+    self.assertEqual({r['mesh'] for r in result['registrationChecks'] if r['pose']==pose},names)
+   self.assertEqual(len(result['registrationChecks']),12)
+   self.assertTrue(result['physicalThirtyTickRowsExactlyEqual'])
+ def test_drive_shortcuts_preserve_floor_and_solid_rendering(self):
+  import mujoco
+  from types import SimpleNamespace
+  from fusion_visual_drive import restore_drive_display_options
+  viewer=SimpleNamespace(opt=mujoco.MjvOption(),user_scn=mujoco.MjvScene())
+  viewer.opt.flags[mujoco.mjtVisFlag.mjVIS_STATIC]=0
+  viewer.opt.flags[mujoco.mjtVisFlag.mjVIS_TRANSPARENT]=1
+  viewer.user_scn.flags[mujoco.mjtRndFlag.mjRND_WIREFRAME]=1
+  viewer.user_scn.flags[mujoco.mjtRndFlag.mjRND_SHADOW]=0
+  restore_drive_display_options(viewer)
+  self.assertEqual(viewer.opt.flags[mujoco.mjtVisFlag.mjVIS_STATIC],1)
+  self.assertEqual(viewer.opt.flags[mujoco.mjtVisFlag.mjVIS_TRANSPARENT],1)
+  self.assertEqual(viewer.user_scn.flags[mujoco.mjtRndFlag.mjRND_WIREFRAME],0)
+  self.assertEqual(viewer.user_scn.flags[mujoco.mjtRndFlag.mjRND_SHADOW],1)
+  viewer.user_scn=None;restore_drive_display_options(viewer)
  def test_transform(self):
   pp=poses([1,2,3],[1,0,0,0],.2,np.pi/3)
   point=np.array([.3,.04,.1]);pos,q=pp['cradle']
