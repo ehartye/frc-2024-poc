@@ -1,5 +1,7 @@
 # 2024 CRESCENDO: component-based robot proof of concept
 
+The [historical case input manifest](historical-fixtures/agent-frc/manifest.json) identifies source-pinned simulation parameters, original geometry and prior analysis from the earlier plugin case. Inputs labeled as excerpts have a new schema and retain their source hash. The manifest records identical existing files and the original revision of the shared producers.
+
 ![Current connected component-CAD candidate, not fabrication-ready](cad/assembly/connected-floor.png)
 
 **Strategy-first editable CAD, with retained simulation experiments.** The current component assembly is a design candidate. The runnable legacy A2 cycle below uses earlier geometry and does not validate this newer robot.

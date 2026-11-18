@@ -1,0 +1,156 @@
+{
+  "schema": "season-case-migration/v1",
+  "season": 2024,
+  "upstream": "https://github.com/ehartye/agent-frc",
+  "upstreamCommit": "f6ab64ace84f8aca7168375364a9fd36b4eed224",
+  "originalTree": "https://github.com/ehartye/agent-frc/tree/f6ab64ace84f8aca7168375364a9fd36b4eed224",
+  "dependencyBoundary": "Shared legacy producers and mixed-season dependencies remain identifiable in the original tree. Stored inputs and archived observations do not claim reproduction using this POC runtime.",
+  "files": [
+    {
+      "upstreamPath": "case-studies/2024/README.md",
+      "sourceBytes": 4332,
+      "sourceSha256": "d680957638d5cc8977ec707b2268df24c03ababd8d6f44d2665a9cdf1d59e3b5",
+      "disposition": "research-record",
+      "role": "historical teaching sequence and execution context",
+      "researchRecord": "frc-2024-historical-case-archive"
+    },
+    {
+      "upstreamPath": "case-studies/2024/case.json",
+      "sourceBytes": 5336,
+      "sourceSha256": "50764e3832a68070714f2555b6bd6fcc51af6f9a46bff3afc3eb84c1bee24f50",
+      "disposition": "extract-operational-inputs",
+      "role": "CAD dimensions, plant parameters, timing and simulator interface",
+      "fields": [
+        "season",
+        "cad",
+        "model",
+        "autoSeconds",
+        "simulationInterface"
+      ],
+      "researchRecord": "frc-2024-historical-case-archive",
+      "destination": "historical-fixtures/agent-frc/inputs/case-parameters.json",
+      "destinationBytes": 969,
+      "destinationSha256": "120383d731c009bf1746209e9faf5a0eb3122722439003c051716b6e121b51b9"
+    },
+    {
+      "upstreamPath": "case-studies/2024/hardware-rule-catalog.json",
+      "sourceBytes": 8191,
+      "sourceSha256": "bf8cd894859a7492d22b827112eaca6a702e786022d05b6c0c16622fa7fc3f14",
+      "disposition": "research-record",
+      "role": "historical component-rule evidence and applicability qualifications",
+      "researchRecord": "frc-2024-historical-case-archive"
+    },
+    {
+      "upstreamPath": "case-studies/2024/moving-note-experiment.json",
+      "sourceBytes": 15849,
+      "sourceSha256": "35dbef423e92c0bd6dcb5a3e609b38a7ebad1d81ead01bc0329c825ba3a0d98c",
+      "disposition": "preserved-input",
+      "role": "moving intake experiment controls",
+      "destination": "historical-fixtures/agent-frc/inputs/moving-note-experiment.json",
+      "destinationBytes": 15849,
+      "destinationSha256": "35dbef423e92c0bd6dcb5a3e609b38a7ebad1d81ead01bc0329c825ba3a0d98c"
+    },
+    {
+      "upstreamPath": "case-studies/2024/note-contact-experiment.json",
+      "sourceBytes": 985,
+      "sourceSha256": "05a7717be863b3579120f22c08987861b8aa985d9eb136a3308305dcea8c75bf",
+      "disposition": "preserved-input",
+      "role": "contact integration parameters",
+      "destination": "historical-fixtures/agent-frc/inputs/note-contact-experiment.json",
+      "destinationBytes": 985,
+      "destinationSha256": "05a7717be863b3579120f22c08987861b8aa985d9eb136a3308305dcea8c75bf"
+    },
+    {
+      "upstreamPath": "case-studies/2024/note-fixture-compressed.json",
+      "sourceBytes": 5098,
+      "sourceSha256": "f13ca8ead68322d3c31cc2b38a595390428924e1d72f9828de99c47a4ccacca9",
+      "disposition": "preserved-input",
+      "role": "compressed geometry/physics fixture",
+      "destination": "historical-fixtures/agent-frc/inputs/note-fixture-compressed.json",
+      "destinationBytes": 5098,
+      "destinationSha256": "f13ca8ead68322d3c31cc2b38a595390428924e1d72f9828de99c47a4ccacca9"
+    },
+    {
+      "upstreamPath": "case-studies/2024/note-fixture-nominal.json",
+      "sourceBytes": 5093,
+      "sourceSha256": "d0aad462e9bdf99b6fc83cd1db15ca7abe1f7768a3d9afd75ba33663e176e008",
+      "disposition": "existing-identical-bytes",
+      "role": "nominal geometry/physics fixture",
+      "destination": "shared/case-studies/2024/note-fixture-nominal.json",
+      "destinationBytes": 5093,
+      "destinationSha256": "d0aad462e9bdf99b6fc83cd1db15ca7abe1f7768a3d9afd75ba33663e176e008"
+    },
+    {
+      "upstreamPath": "case-studies/2024/prototype-study.json",
+      "sourceBytes": 18101,
+      "sourceSha256": "26241a241a9e080d0ada8df4f1c210d45b6ebafe55501d0eb7d4a7316c380d1e",
+      "disposition": "research-record",
+      "role": "decision graph linking evidence and unresolved prototype gates",
+      "researchRecord": "frc-2024-historical-case-archive"
+    },
+    {
+      "upstreamPath": "case-studies/2024/roller-mechanism.json",
+      "sourceBytes": 3411,
+      "sourceSha256": "f144f3bfddf81175d2ff2d8f7376af79c3a73c6c00238fd92f10bd9a71350fd8",
+      "disposition": "preserved-input",
+      "role": "roller configuration and frames",
+      "destination": "historical-fixtures/agent-frc/inputs/roller-mechanism.json",
+      "destinationBytes": 3411,
+      "destinationSha256": "f144f3bfddf81175d2ff2d8f7376af79c3a73c6c00238fd92f10bd9a71350fd8"
+    },
+    {
+      "upstreamPath": "case-studies/2024/rule-reading-map.json",
+      "sourceBytes": 3836,
+      "sourceSha256": "fa70c5d5a587e62ebf3026c79dacf198341e71bc199fc69cb41e81f2138f7540",
+      "disposition": "research-record",
+      "role": "manual edition, locators, rule interpretations and open questions",
+      "researchRecord": "frc-2024-historical-case-archive"
+    },
+    {
+      "upstreamPath": "case-studies/2024/sideplate.dxf",
+      "sourceBytes": 356,
+      "sourceSha256": "f13ae31dd3cb3cdfc61b5db03c0fae2105dea0e9ba658d730592b6909a508eb6",
+      "disposition": "existing-identical-bytes",
+      "role": "original concept cutting profile",
+      "destination": "cad/sideplate.dxf",
+      "destinationBytes": 356,
+      "destinationSha256": "f13ae31dd3cb3cdfc61b5db03c0fae2105dea0e9ba658d730592b6909a508eb6"
+    },
+    {
+      "upstreamPath": "case-studies/2024/sideplate.svg",
+      "sourceBytes": 689,
+      "sourceSha256": "b132532aeb9820f47fee724822a6cc873efa1ad3a49c3264eabdac3de464bfb9",
+      "disposition": "existing-identical-bytes",
+      "role": "original concept geometry drawing",
+      "destination": "cad/sideplate.svg",
+      "destinationBytes": 689,
+      "destinationSha256": "b132532aeb9820f47fee724822a6cc873efa1ad3a49c3264eabdac3de464bfb9"
+    },
+    {
+      "upstreamPath": "case-studies/2024/strategy-brief.json",
+      "sourceBytes": 8685,
+      "sourceSha256": "a5ce1a1fd70ffdfe55eda853ff294437151d177bdb5a64f273b5777d18a61d55",
+      "disposition": "research-record",
+      "role": "machine-readable opportunity and strategy analysis",
+      "researchRecord": "frc-2024-historical-case-archive"
+    },
+    {
+      "upstreamPath": "case-studies/2024/strategy-brief.md",
+      "sourceBytes": 6799,
+      "sourceSha256": "a3900852fc023585a7c69ba12bed4648bb24893728a58ed7067432f4cb2217dc",
+      "disposition": "research-record",
+      "role": "human-readable season strategy analysis",
+      "researchRecord": "frc-2024-historical-case-archive"
+    },
+    {
+      "upstreamPath": "examples/java-2026-sim/src/main/resources/case-2024.properties",
+      "sourceBytes": 139,
+      "sourceSha256": "417129ef244919480f0d5a5affb551575c1198d092f3ff19bd8bcff31573bec4",
+      "disposition": "preserved-input",
+      "role": "season-specific Java simulation case properties",
+      "destination": "historical-fixtures/agent-frc/inputs/case-2024.properties",
+      "destinationBytes": 139,
+      "destinationSha256": "417129ef244919480f0d5a5affb551575c1198d092f3ff19bd8bcff31573bec4"
+    }
+  ]
+}
