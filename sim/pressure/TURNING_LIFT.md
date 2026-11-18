@@ -2,6 +2,20 @@
 
 The driver can start turning toward the next scoring location while the mechanism raises the NOTE. The simulation covers a drive-over pickup, 225.56 mm of floor transport, an active stop, acceleration into an arc, and the full pitch, lift and hold while following that arc. The NOTE is free to slip, roll or fall. This run uses differential wheel commands with feedback and the native relieved side-pinch mechanism.
 
+## Verified maneuver
+
+The floor NOTE indexed at 4.45 s. The robot transported it 225.56 mm and braked at 9.45 s. It then accelerated into the requested path. The table covers the 5.8 seconds from the first lift command through the end of the 0.8-second hold. In each trial the NOTE had positive pressure on both sides and stayed clear of the floor after lift-off.
+
+| Maneuver | Heading change | Distance driven | Net lift | Minimum forward speed | Minimum gap in hold |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Left | 72.61° | 1.845 m | 449.43 mm | 0.3176 m/s | 317.06 mm |
+| Right | -72.61° | 1.845 m | 449.43 mm | 0.3176 m/s | 317.06 mm |
+| Straight | 0.00° | 1.846 m | 449.43 mm | 0.3177 m/s | 317.01 mm |
+
+The independent one-command run reproduced every recorded floor and stop state and the byte-identical left-turn lift trajectory. The two turning cases cleared the full 60-degree handoff with the robot still translating and steering. [Physical reproduction](evidence/turning-lift-20261118/refined-end-to-end.json) · [Measured maneuvers](evidence/turning-lift-20261118/refined-study.json)
+
+At the selected 0.25 ms timestep, the 1024- and 2048-square contact grids differed by at most 0.0149 mm in translational position and 0.199 mm/s in linear velocity over all shared samples. Both meet the declared path bounds. Agent FRC separately compared final height, minimum hold clearance and heading change. Fusion cleared every interpolated NOTE interval on the tested refinements. The nominal fine left turn had 73 sampled mechanism poses with zero new or increased structural overlaps. [Agent FRC measurements](evidence/turning-lift-20261118/agent-frc-refined-result.json) · [Native coverage](evidence/turning-lift-20261118/refined-native-coverage.json)
+
 ## Run the maneuver
 
 Use Python with NumPy and MuJoCo, the private relieved-tread Fusion archive, and a new output directory. The runner checks the archive digest against the native pressure registration before starting. The reference run used Python 3.13.12, NumPy 2.5.5 and MuJoCo 4.0.1.

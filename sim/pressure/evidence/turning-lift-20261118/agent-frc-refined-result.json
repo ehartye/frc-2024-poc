@@ -1,0 +1,158 @@
+{
+  "schema": "agent-frc/contact-convergence-result@1",
+  "status": "within-declared-bounds",
+  "issues": [],
+  "studies": [
+    {
+      "id": "timestep",
+      "axis": "timestep",
+      "status": "within-declared-bounds",
+      "runIds": [
+        "timestep-0.0005",
+        "timestep-0.00025",
+        "timestep-0.000125"
+      ],
+      "outcomes": [
+        "contact-at-horizon",
+        "contact-at-horizon",
+        "contact-at-horizon"
+      ],
+      "terminations": [
+        "full-height hold horizon",
+        "full-height hold horizon",
+        "full-height hold horizon"
+      ],
+      "comparisons": [
+        {
+          "metricId": "hold-clearance",
+          "units": "m",
+          "values": [
+            0.3172716362796282,
+            0.31705744924669643,
+            0.3170574389328586
+          ],
+          "adjacentDeltas": [
+            0.00021418703293174524,
+            1.031383783933748e-8
+          ],
+          "finestDelta": 1.031383783933748e-8,
+          "absoluteTolerance": 0.00005,
+          "withinBounds": true
+        },
+        {
+          "metricId": "handoff-height",
+          "units": "m",
+          "values": [
+            0.4746230322250426,
+            0.4744099060941262,
+            0.47440990541144423
+          ],
+          "adjacentDeltas": [
+            0.00021312613091639676,
+            6.82681966512888e-10
+          ],
+          "finestDelta": 6.82681966512888e-10,
+          "absoluteTolerance": 0.00005,
+          "withinBounds": true
+        },
+        {
+          "metricId": "heading-change",
+          "units": "deg",
+          "values": [
+            72.60941383849928,
+            72.61232115838959,
+            72.61232115588757
+          ],
+          "adjacentDeltas": [
+            0.00290731989031201,
+            2.5020199245773256e-9
+          ],
+          "finestDelta": 2.5020199245773256e-9,
+          "absoluteTolerance": 0.05,
+          "withinBounds": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "contact-geometry",
+      "axis": "contact-geometry",
+      "status": "within-declared-bounds",
+      "runIds": [
+        "contact-geometry-512",
+        "contact-geometry-1024",
+        "contact-geometry-2048"
+      ],
+      "outcomes": [
+        "contact-at-horizon",
+        "contact-at-horizon",
+        "contact-at-horizon"
+      ],
+      "terminations": [
+        "full-height hold horizon",
+        "full-height hold horizon",
+        "full-height hold horizon"
+      ],
+      "comparisons": [
+        {
+          "metricId": "hold-clearance",
+          "units": "m",
+          "values": [
+            0.317029745259301,
+            0.31705744924669643,
+            0.3170672586313772
+          ],
+          "adjacentDeltas": [
+            0.000027703987395433227,
+            0.000009809384680758981
+          ],
+          "finestDelta": 0.000009809384680758981,
+          "absoluteTolerance": 0.00005,
+          "withinBounds": true
+        },
+        {
+          "metricId": "handoff-height",
+          "units": "m",
+          "values": [
+            0.4743769066336105,
+            0.4744099060941262,
+            0.47441445480186906
+          ],
+          "adjacentDeltas": [
+            0.000032999460515714674,
+            0.000004548707742857427
+          ],
+          "finestDelta": 0.000004548707742857427,
+          "absoluteTolerance": 0.00005,
+          "withinBounds": true
+        },
+        {
+          "metricId": "heading-change",
+          "units": "deg",
+          "values": [
+            72.61234538196696,
+            72.61232115838959,
+            72.61233015828616
+          ],
+          "adjacentDeltas": [
+            0.000024223577369753002,
+            0.000008999896564887422
+          ],
+          "finestDelta": 0.000008999896564887422,
+          "absoluteTolerance": 0.05,
+          "withinBounds": true
+        }
+      ],
+      "issues": []
+    }
+  ],
+  "integrity": "not-independently-verified",
+  "calibration": "not-assessed",
+  "engineeringAcceptance": "blocked",
+  "limitations": [
+    "Compares supplied finite summaries and declared pins only; no solver execution, trace authentication or proof of convergence.",
+    "Matching declarations do not prove the physical law, initial conditions or held settings were actually preserved.",
+    "Numerical refinement, calibrated parameters, physical-model validation and engineering acceptance are separate."
+  ],
+  "evidenceBasis": "simulation-observed"
+}

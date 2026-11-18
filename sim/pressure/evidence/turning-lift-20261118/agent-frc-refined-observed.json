@@ -1,0 +1,222 @@
+{
+  "schema": "agent-frc/contact-convergence-receipt@1",
+  "basis": "simulation-observed",
+  "runs": [
+    {
+      "id": "timestep-0.0005",
+      "comparisonPins": {
+        "scenario": "a545a0043001f060bc3c57beefde373c1e0d05a5ebaed873aa933c3ec329033e",
+        "constitutiveLaw": "af7e883882972c08ef08fdb3db6add814fdfa1ec0e3f4da02734cb8c1b8ddbe3",
+        "initialState": "73c526b87363288714cf8a88bd9a37a7f0eb42ca59f4a7adbbd222ec2a8cfb9d",
+        "inputs": "f6afb09e45ea5ca284ddd00cdcb822021971c4a141606dbfce00b0e97df24d90",
+        "runtime": "91fcc3d5649865b318098e19a9727a5fa84a02d43e0bf3c995590a86e1df81d6",
+        "outcomeDefinition": "0f4152c30a5a845342eebaac6c18cf6e383880008d3f0dd7e803180da6a111f6"
+      },
+      "fixedSettingsSha256": "aea6923075cd0c062a6a2a61b13ea410f9d5d0fef19081ba401d310ee2de9d28",
+      "modelSha256": "af7e883882972c08ef08fdb3db6add814fdfa1ec0e3f4da02734cb8c1b8ddbe3",
+      "settingsSha256": "6649f4e6a5bd28dc536212d3e6fbc300d4a07f03eb9f28467fcf30101aea5663",
+      "windowEndSeconds": 7.3,
+      "completion": "complete",
+      "termination": "full-height hold horizon",
+      "outcome": "contact-at-horizon",
+      "reportedIntegrityPassed": true,
+      "metrics": [
+        {
+          "id": "hold-clearance",
+          "units": "m",
+          "value": 0.3172716362796282
+        },
+        {
+          "id": "handoff-height",
+          "units": "m",
+          "value": 0.4746230322250426
+        },
+        {
+          "id": "heading-change",
+          "units": "deg",
+          "value": 72.60941383849928
+        }
+      ]
+    },
+    {
+      "id": "timestep-0.00025",
+      "comparisonPins": {
+        "scenario": "a545a0043001f060bc3c57beefde373c1e0d05a5ebaed873aa933c3ec329033e",
+        "constitutiveLaw": "af7e883882972c08ef08fdb3db6add814fdfa1ec0e3f4da02734cb8c1b8ddbe3",
+        "initialState": "73c526b87363288714cf8a88bd9a37a7f0eb42ca59f4a7adbbd222ec2a8cfb9d",
+        "inputs": "f6afb09e45ea5ca284ddd00cdcb822021971c4a141606dbfce00b0e97df24d90",
+        "runtime": "91fcc3d5649865b318098e19a9727a5fa84a02d43e0bf3c995590a86e1df81d6",
+        "outcomeDefinition": "0f4152c30a5a845342eebaac6c18cf6e383880008d3f0dd7e803180da6a111f6"
+      },
+      "fixedSettingsSha256": "aea6923075cd0c062a6a2a61b13ea410f9d5d0fef19081ba401d310ee2de9d28",
+      "modelSha256": "af7e883882972c08ef08fdb3db6add814fdfa1ec0e3f4da02734cb8c1b8ddbe3",
+      "settingsSha256": "eea741f2e9150b221b251a4474ddd1d74760f7478adb90c940ec6f8a8403257d",
+      "windowEndSeconds": 7.3,
+      "completion": "complete",
+      "termination": "full-height hold horizon",
+      "outcome": "contact-at-horizon",
+      "reportedIntegrityPassed": true,
+      "metrics": [
+        {
+          "id": "hold-clearance",
+          "units": "m",
+          "value": 0.31705744924669643
+        },
+        {
+          "id": "handoff-height",
+          "units": "m",
+          "value": 0.4744099060941262
+        },
+        {
+          "id": "heading-change",
+          "units": "deg",
+          "value": 72.61232115838959
+        }
+      ]
+    },
+    {
+      "id": "timestep-0.000125",
+      "comparisonPins": {
+        "scenario": "a545a0043001f060bc3c57beefde373c1e0d05a5ebaed873aa933c3ec329033e",
+        "constitutiveLaw": "af7e883882972c08ef08fdb3db6add814fdfa1ec0e3f4da02734cb8c1b8ddbe3",
+        "initialState": "73c526b87363288714cf8a88bd9a37a7f0eb42ca59f4a7adbbd222ec2a8cfb9d",
+        "inputs": "f6afb09e45ea5ca284ddd00cdcb822021971c4a141606dbfce00b0e97df24d90",
+        "runtime": "91fcc3d5649865b318098e19a9727a5fa84a02d43e0bf3c995590a86e1df81d6",
+        "outcomeDefinition": "0f4152c30a5a845342eebaac6c18cf6e383880008d3f0dd7e803180da6a111f6"
+      },
+      "fixedSettingsSha256": "aea6923075cd0c062a6a2a61b13ea410f9d5d0fef19081ba401d310ee2de9d28",
+      "modelSha256": "af7e883882972c08ef08fdb3db6add814fdfa1ec0e3f4da02734cb8c1b8ddbe3",
+      "settingsSha256": "c45e553906301fe51110046dd99fd8fe6e823667825a582d0b47852ba9f95a4c",
+      "windowEndSeconds": 7.3,
+      "completion": "complete",
+      "termination": "full-height hold horizon",
+      "outcome": "contact-at-horizon",
+      "reportedIntegrityPassed": true,
+      "metrics": [
+        {
+          "id": "hold-clearance",
+          "units": "m",
+          "value": 0.3170574389328586
+        },
+        {
+          "id": "handoff-height",
+          "units": "m",
+          "value": 0.47440990541144423
+        },
+        {
+          "id": "heading-change",
+          "units": "deg",
+          "value": 72.61232115588757
+        }
+      ]
+    },
+    {
+      "id": "contact-geometry-512",
+      "comparisonPins": {
+        "scenario": "a545a0043001f060bc3c57beefde373c1e0d05a5ebaed873aa933c3ec329033e",
+        "constitutiveLaw": "af7e883882972c08ef08fdb3db6add814fdfa1ec0e3f4da02734cb8c1b8ddbe3",
+        "initialState": "73c526b87363288714cf8a88bd9a37a7f0eb42ca59f4a7adbbd222ec2a8cfb9d",
+        "inputs": "f6afb09e45ea5ca284ddd00cdcb822021971c4a141606dbfce00b0e97df24d90",
+        "runtime": "91fcc3d5649865b318098e19a9727a5fa84a02d43e0bf3c995590a86e1df81d6",
+        "outcomeDefinition": "0f4152c30a5a845342eebaac6c18cf6e383880008d3f0dd7e803180da6a111f6"
+      },
+      "fixedSettingsSha256": "6e59854b79090eda5e08519e5fa0368eb18f14595c46d7261aef4d0f9a930bc4",
+      "modelSha256": "af7e883882972c08ef08fdb3db6add814fdfa1ec0e3f4da02734cb8c1b8ddbe3",
+      "settingsSha256": "a139c4a46e9ceda3d3bfbad6818406721b521c5f050571c0b3862e016c717993",
+      "windowEndSeconds": 7.3,
+      "completion": "complete",
+      "termination": "full-height hold horizon",
+      "outcome": "contact-at-horizon",
+      "reportedIntegrityPassed": true,
+      "metrics": [
+        {
+          "id": "hold-clearance",
+          "units": "m",
+          "value": 0.317029745259301
+        },
+        {
+          "id": "handoff-height",
+          "units": "m",
+          "value": 0.4743769066336105
+        },
+        {
+          "id": "heading-change",
+          "units": "deg",
+          "value": 72.61234538196696
+        }
+      ]
+    },
+    {
+      "id": "contact-geometry-1024",
+      "comparisonPins": {
+        "scenario": "a545a0043001f060bc3c57beefde373c1e0d05a5ebaed873aa933c3ec329033e",
+        "constitutiveLaw": "af7e883882972c08ef08fdb3db6add814fdfa1ec0e3f4da02734cb8c1b8ddbe3",
+        "initialState": "73c526b87363288714cf8a88bd9a37a7f0eb42ca59f4a7adbbd222ec2a8cfb9d",
+        "inputs": "f6afb09e45ea5ca284ddd00cdcb822021971c4a141606dbfce00b0e97df24d90",
+        "runtime": "91fcc3d5649865b318098e19a9727a5fa84a02d43e0bf3c995590a86e1df81d6",
+        "outcomeDefinition": "0f4152c30a5a845342eebaac6c18cf6e383880008d3f0dd7e803180da6a111f6"
+      },
+      "fixedSettingsSha256": "6e59854b79090eda5e08519e5fa0368eb18f14595c46d7261aef4d0f9a930bc4",
+      "modelSha256": "af7e883882972c08ef08fdb3db6add814fdfa1ec0e3f4da02734cb8c1b8ddbe3",
+      "settingsSha256": "eea741f2e9150b221b251a4474ddd1d74760f7478adb90c940ec6f8a8403257d",
+      "windowEndSeconds": 7.3,
+      "completion": "complete",
+      "termination": "full-height hold horizon",
+      "outcome": "contact-at-horizon",
+      "reportedIntegrityPassed": true,
+      "metrics": [
+        {
+          "id": "hold-clearance",
+          "units": "m",
+          "value": 0.31705744924669643
+        },
+        {
+          "id": "handoff-height",
+          "units": "m",
+          "value": 0.4744099060941262
+        },
+        {
+          "id": "heading-change",
+          "units": "deg",
+          "value": 72.61232115838959
+        }
+      ]
+    },
+    {
+      "id": "contact-geometry-2048",
+      "comparisonPins": {
+        "scenario": "a545a0043001f060bc3c57beefde373c1e0d05a5ebaed873aa933c3ec329033e",
+        "constitutiveLaw": "af7e883882972c08ef08fdb3db6add814fdfa1ec0e3f4da02734cb8c1b8ddbe3",
+        "initialState": "73c526b87363288714cf8a88bd9a37a7f0eb42ca59f4a7adbbd222ec2a8cfb9d",
+        "inputs": "f6afb09e45ea5ca284ddd00cdcb822021971c4a141606dbfce00b0e97df24d90",
+        "runtime": "91fcc3d5649865b318098e19a9727a5fa84a02d43e0bf3c995590a86e1df81d6",
+        "outcomeDefinition": "0f4152c30a5a845342eebaac6c18cf6e383880008d3f0dd7e803180da6a111f6"
+      },
+      "fixedSettingsSha256": "6e59854b79090eda5e08519e5fa0368eb18f14595c46d7261aef4d0f9a930bc4",
+      "modelSha256": "af7e883882972c08ef08fdb3db6add814fdfa1ec0e3f4da02734cb8c1b8ddbe3",
+      "settingsSha256": "3b4e5019cf3eb9c949f64e2b272efc67ccd7093a0b5fd9fcb0b7b67e135753dc",
+      "windowEndSeconds": 7.3,
+      "completion": "complete",
+      "termination": "full-height hold horizon",
+      "outcome": "contact-at-horizon",
+      "reportedIntegrityPassed": true,
+      "metrics": [
+        {
+          "id": "hold-clearance",
+          "units": "m",
+          "value": 0.3170672586313772
+        },
+        {
+          "id": "handoff-height",
+          "units": "m",
+          "value": 0.47441445480186906
+        },
+        {
+          "id": "heading-change",
+          "units": "deg",
+          "value": 72.61233015828616
+        }
+      ]
+    }
+  ]
+}

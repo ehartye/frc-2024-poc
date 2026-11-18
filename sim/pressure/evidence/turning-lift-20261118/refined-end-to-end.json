@@ -1,0 +1,23 @@
+{
+  "floorStartS": 0,
+  "acquiredAtS": 4.450000000000253,
+  "activeStopAtS": 9.450000000000058,
+  "liftBeginsAtS": 10.950000000000058,
+  "holdEndsAtS": 16.750000000000057,
+  "entryPointSha256": "01b9a128db3787c0e292cc0f090bd9fd1bb42b69f307688dfae374acc2c5ce66",
+  "freshInputDigests": {
+    "native": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+    "stop": "3dc7df0d5fbcb7f9a001a9d56ba6659da2ffef030f56940f4d9e0385d0a9abea",
+    "ground": "694ccd691cf735b13217235463dcedeee3e8f71946433cdbae7ba7499fc076c5",
+    "plant": "718add685c4fcf5033c56ac5c9bf0b0575f4c4c01a06b73bb4f09f6cb521dc49",
+    "contact": "af7e883882972c08ef08fdb3db6add814fdfa1ec0e3f4da02734cb8c1b8ddbe3",
+    "runner": "6fa49f153ce92fb1ef453fbfbdae8343112eb0b8dc5ac4c3ff1c71326a746c36"
+  },
+  "groundAndStopAllPhysicalRowsIdentical": true,
+  "liftTraceMatchesIndependentNominalSha256": "b06928ecfa09a08f3f166e1f99cdd678183c693dfaebd925a3236b1d1b878b69",
+  "privateVideo": {
+    "frames": 202,
+    "fps": 12,
+    "sha256": "4579babceafbc13580b5386d9bf7e5032fe098883720e80730f97259e946b0f5"
+  }
+}
