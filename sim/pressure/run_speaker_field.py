@@ -68,6 +68,22 @@ def field_wrench(surfaces, points, center, velocity, omega, args):
     return wrench, contact, maximum_depth
 
 
+def collection_floor(points, center, velocity, omega, args):
+    """Passive flat collection floor at carpet datum on the practice field."""
+    depth=TUBE-points[:,2]
+    mask=depth>0
+    if not mask.any():
+        return np.zeros(6),0.
+    if center[0]+MAJOR+TUBE>=0:
+        raise ValueError("Collection trajectory reached the playing side of the end wall")
+    arm=points[mask]-center-[0.,0.,TUBE]
+    speed=velocity+np.cross(omega,arm)
+    normal=np.maximum(0.,args.stiffness*depth[mask]-args.damping*speed[:,2])/len(points)
+    friction=-args.friction*normal[:,None]*speed[:,:2]/np.maximum(.05,np.linalg.norm(speed[:,:2],axis=1))[:,None]
+    force=np.column_stack((friction,normal))
+    return np.r_[force.sum(axis=0),np.cross(arm,force).sum(axis=0)],float(max(depth[mask]))
+
+
 def run(args):
     controls = [args.dt, args.horizon, args.stiffness, args.damping, args.friction, args.belt_speed]
     if not np.isfinite(controls).all() or min(controls[:3]) <= 0 or min(controls[3:5]) < 0 or args.nodes < 16:
@@ -86,6 +102,33 @@ def run(args):
     frame = WingFrame(args.first_mark,args.field_yaw_deg)
     release = attained_state(args.pickup, model, data, frame)
     surfaces = SpeakerSurfaces(args.field)
+    release_time = data.time
+    resume = getattr(args,"resume_field",None)
+    if resume:
+        old=json.loads((resume/"result.json").read_bytes())
+        trace=resume/"trace.jsonl"
+        params=old["parameters"]
+        keys=("dt","nodes","first_mark","field_yaw_deg","belt_speed","stiffness","damping","friction")
+        if (old["sourceTrace"]!=release["traceSha256"] or old["field"]!=surfaces.pins
+                or old["trace"]!=digest(trace) or old["releaseTimeS"]!=release_time
+                or any(params[k]!=getattr(args,k) for k in keys)):
+            raise ValueError("Cannot continue a different field trajectory or contact model")
+        with trace.open("rb") as stream:
+            for line in stream:
+                last=line
+        terminal=json.loads(last)
+        if params.get("collection_floor",False) and not args.collection_floor:
+            raise ValueError("Cannot remove the floor during collection")
+        if args.collection_floor and not params.get("collection_floor",False):
+            with trace.open("rb") as stream:
+                if any(json.loads(line)["q"][2]<MAJOR+TUBE for line in stream):
+                    raise ValueError("Collection floor could have affected the previous trajectory")
+        if abs(terminal["t"]-old["endS"])>1e-8:
+            raise ValueError("Missing terminal field pose")
+        data.qpos[:]=terminal["q"]
+        data.qvel[:]=terminal["v"]
+        data.time=terminal["t"]
+        mujoco.mj_forward(model,data)
     start = data.time
     angles = 2*math.pi*np.arange(args.nodes)/args.nodes
     local = MAJOR*np.stack((np.cos(angles), np.sin(angles), np.zeros(args.nodes)), axis=1)
@@ -101,12 +144,19 @@ def run(args):
                 mujoco.mj_step1(model, data)
                 axes = data.xmat[1].reshape(3, 3)
                 center = data.qpos[:3]
-                wrench, touch, depth = field_wrench(surfaces, center+local @ axes.T, center,
-                                                    data.qvel[:3], axes @ data.qvel[3:], args)
+                points=center+local @ axes.T
+                omega=axes @ data.qvel[3:]
+                wrench, touch, depth = field_wrench(surfaces, points, center,data.qvel[:3],omega,args)
+                if getattr(args,"collection_floor",False):
+                    floor_wrench,floor_depth=collection_floor(points,center,data.qvel[:3],omega,args)
+                    wrench+=floor_wrench
+                    if floor_depth:
+                        touch["collectionFloor"]=float(floor_wrench[2])
+                        depth=max(depth,floor_depth)
                 for key in touch:
                     first.setdefault(key, float(data.time))
                 worst = max(worst, depth)
-                terminal = tick == steps or center[2] < .2
+                terminal = tick == steps or (center[2] < .2 and not getattr(args,"collection_floor",False))
                 if data.time-start < .35 or tick % stride == 0 or terminal:
                     stream.write(json.dumps(dict(t=data.time, q=data.qpos.tolist(), v=data.qvel.tolist(),
                                                  contacts=touch, indentationM=depth), allow_nan=False)+"\n")
@@ -119,8 +169,10 @@ def run(args):
     result = dict(schema="speaker-field-contact/1", sourceTrace=release["traceSha256"],
                   nativeSha256=release["nativeSha256"], field=surfaces.pins, trace=digest(trace),
                   runner=digest(Path(__file__)), surfaces=digest(Path(__file__).with_name("speaker_surfaces.py")),
-                  firstContactS=first, maximumIndentM=worst, releaseTimeS=start, endS=data.time,
+                  firstContactS=first, maximumIndentM=worst, releaseTimeS=release_time, segmentStartS=start,endS=data.time,
                   parameters={k: v for k, v in vars(args).items() if not isinstance(v, Path)})
+    if resume:
+        result["previousFieldTrace"]=old["trace"]
     (args.output / "result.json").write_text(json.dumps(result, indent=2, allow_nan=False)+"\n")
     print(f"Completed {data.time-start:.3f} seconds with {len(first)} contacted occurrences")
 
@@ -136,6 +188,8 @@ if __name__ == "__main__":
     parser.add_argument("--belt-speed", type=float, default=1.5, help="signed top belt speed in m/s toward the counter")
     parser.add_argument("--trace-every-step", action="store_true", help="save every field pose for comparison with the moving robot")
     parser.add_argument("--horizon", type=float, default=4.)
+    parser.add_argument("--resume-field",type=Path,help="Continue a saved flight from its terminal pose and velocity")
+    parser.add_argument("--collection-floor",action="store_true",help="Keep tracking the discharged NOTE on a passive floor behind the end wall")
     parser.add_argument("--stiffness", type=float, default=1.2e6)
     parser.add_argument("--damping", type=float, default=450.)
     parser.add_argument("--friction", type=float, default=.45)

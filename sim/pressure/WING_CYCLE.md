@@ -2,7 +2,11 @@
 
 The 2024 practice study starts empty, drives over a marked floor NOTE, brakes, and carries that same piece to a declared close-range station. Simulation time, actuator positions, drivetrain motion, rotor speeds, stored tread deformation and electrical state carry across the transitions. Each collected mark has a distinct identity. The return controller can reverse away from the Speaker before turning toward the next mark.
 
-**One of six full-field scores is verified.** At 0.80 launcher duty and 0.22 intake feed duty the middle-wing NOTE passed the opening by 16.6239 s and covered both pairs of sensors at 19.2235 s. The native and field checks cover the same release. The chassis was 1.4774 m from the end wall at release. The robot collected the outer NOTE at 23.0167 s. [Verified score](evidence/middle-wing-score.json) and [rejected comparison](evidence/wing-cycle-study.json)
+**Two of six full-field scores are verified.** The middle-wing NOTE covered both sensor pairs at 19.2235 s. The robot collected the outer NOTE at 23.0167 s and scored it at 38.2709 s, with the chassis 1.4845 m from the end wall at release. It seated the inner NOTE at 45.9859 s. [First score](evidence/middle-wing-score.json) · [Second score and preceding trajectory](evidence/outer-wing-score.json)
+
+For the second shot the controller targets 3,950 rpm, changes the loaded cradle pitch by −0.20° and raises the lift by 1.06 mm relative to the attained station state. It waits for three ready control samples before feeding at 0.22 duty. The whole NOTE cleared the opening at 35.5336 s. At least 25.68 mm separated the released NOTE from the retreating robot. The first NOTE cleared the counter by 22.7340 s and remained at least 1.00 m from the second during its five-second field flight, assuming a passive collection floor behind the end wall.
+
+The native wheel shells and one intake belt needed finer clearance checks. The belt calculation uses the filled exterior of its native extrusion. Fusion found zero belt volume outside this envelope. The conservative minimum across all refined intervals was 0.00092 mm. Nine sampled lift and cradle poses showed no new structural intersections. Actual material properties, field contacts and manufacturing clearances remain unmeasured.
 
 ## What the experiments establish
 
@@ -17,6 +21,8 @@ The 2024 practice study starts empty, drives over a marked floor NOTE, brakes, a
 A lower-resolution handoff hit the modeled tread backing before release. The finer solve produced a free release and exposed the separate rigid-shell interference. The model assumes motor current limits, local dissipation of generating power by the drive electronics, a rigid NOTE, modeled tread compliance, and specified conveyor speed. The figures describe simulation of one declared supply layout.
 
 ## Reproduction
+
+To reproduce the second shot, continue the outer pickup with a 0.65 m final straight at the same shooting station. Use `--target-rpm 3950 --pitch-trim-deg -.20 --height-trim-mm 1.06` on the raised-feed runner. Approach the inner NOTE at field heading 0° with a 0.32 m capture standoff after backing 0.4 m from the Speaker. Refine the native release with `--samples 98304 --subdivisions 32`. Run `counter_reset.py` with the first score, its consecutive field segments, the second flight and the registered sensor geometry. Pass that receipt, the first score and the native outer pickup sweep to `verify_wing_attempt.py` using `--counter-reset`, `--previous`, `--entry-acquisition` and `--pickup-clearance`.
 
 Use the pinned native F3D, the ground and stop packet from the refined turning-lift study, the private native body inventory, and the complete 2024 field STEP. The geometry stays in the private study directory. Run the geometry export with Python and OCCT, and the simulation with Python, NumPy and MuJoCo. The field contact solver also needs libigl. Define the file and output directory variables below before running. Each output path must be new.
 
