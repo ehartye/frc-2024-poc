@@ -1,0 +1,106 @@
+{
+  "schema": "agent-frc/contact-convergence-manifest@1",
+  "comparisonPins": {
+    "scenario": "a545a0043001f060bc3c57beefde373c1e0d05a5ebaed873aa933c3ec329033e",
+    "constitutiveLaw": "af7e883882972c08ef08fdb3db6add814fdfa1ec0e3f4da02734cb8c1b8ddbe3",
+    "initialState": "73c526b87363288714cf8a88bd9a37a7f0eb42ca59f4a7adbbd222ec2a8cfb9d",
+    "inputs": "f6afb09e45ea5ca284ddd00cdcb822021971c4a141606dbfce00b0e97df24d90",
+    "runtime": "91fcc3d5649865b318098e19a9727a5fa84a02d43e0bf3c995590a86e1df81d6",
+    "outcomeDefinition": "0f4152c30a5a845342eebaac6c18cf6e383880008d3f0dd7e803180da6a111f6"
+  },
+  "windowEndSeconds": 7.3,
+  "metrics": [
+    {
+      "id": "hold-clearance",
+      "units": "m",
+      "definition": "Minimum whole-ring floor gap over the 0.8-second hold",
+      "absoluteTolerance": 5e-05
+    },
+    {
+      "id": "handoff-height",
+      "units": "m",
+      "definition": "Final world height of the free NOTE center",
+      "absoluteTolerance": 5e-05
+    },
+    {
+      "id": "heading-change",
+      "units": "deg",
+      "definition": "Signed chassis heading change from first lift command to end of hold",
+      "absoluteTolerance": 0.05
+    }
+  ],
+  "studies": [
+    {
+      "id": "timestep",
+      "axis": "timestep",
+      "resolutionParameters": [
+        "dt"
+      ],
+      "fixedSettingsSha256": "aea6923075cd0c062a6a2a61b13ea410f9d5d0fef19081ba401d310ee2de9d28",
+      "levels": [
+        {
+          "runId": "timestep-0.0005",
+          "resolution": [
+            0.0005
+          ],
+          "modelSha256": "af7e883882972c08ef08fdb3db6add814fdfa1ec0e3f4da02734cb8c1b8ddbe3",
+          "settingsSha256": "6649f4e6a5bd28dc536212d3e6fbc300d4a07f03eb9f28467fcf30101aea5663"
+        },
+        {
+          "runId": "timestep-0.00025",
+          "resolution": [
+            0.00025
+          ],
+          "modelSha256": "af7e883882972c08ef08fdb3db6add814fdfa1ec0e3f4da02734cb8c1b8ddbe3",
+          "settingsSha256": "eea741f2e9150b221b251a4474ddd1d74760f7478adb90c940ec6f8a8403257d"
+        },
+        {
+          "runId": "timestep-0.000125",
+          "resolution": [
+            0.000125
+          ],
+          "modelSha256": "af7e883882972c08ef08fdb3db6add814fdfa1ec0e3f4da02734cb8c1b8ddbe3",
+          "settingsSha256": "c45e553906301fe51110046dd99fd8fe6e823667825a582d0b47852ba9f95a4c"
+        }
+      ]
+    },
+    {
+      "id": "contact-geometry",
+      "axis": "contact-geometry",
+      "resolutionParameters": [
+        "azimuth",
+        "tube"
+      ],
+      "fixedSettingsSha256": "cecea047943f53c0ca33db278b3ad551a8a9da82a29c7c7b052145d3494e441d",
+      "levels": [
+        {
+          "runId": "contact-geometry-512",
+          "resolution": [
+            512,
+            512
+          ],
+          "modelSha256": "af7e883882972c08ef08fdb3db6add814fdfa1ec0e3f4da02734cb8c1b8ddbe3",
+          "settingsSha256": "d22de8fd5484601c3d986832056d547d905a50debdcdefab5b85146bb2ada287"
+        },
+        {
+          "runId": "contact-geometry-1024",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "modelSha256": "af7e883882972c08ef08fdb3db6add814fdfa1ec0e3f4da02734cb8c1b8ddbe3",
+          "settingsSha256": "6649f4e6a5bd28dc536212d3e6fbc300d4a07f03eb9f28467fcf30101aea5663"
+        },
+        {
+          "runId": "contact-geometry-2048",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "modelSha256": "af7e883882972c08ef08fdb3db6add814fdfa1ec0e3f4da02734cb8c1b8ddbe3",
+          "settingsSha256": "d00ef3b5164717d18c79a612878312389b5a48164f1c73dd0c92caa1d7ae0a06"
+        }
+      ]
+    }
+  ]
+}

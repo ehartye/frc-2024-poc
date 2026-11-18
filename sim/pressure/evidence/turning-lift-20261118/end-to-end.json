@@ -1,0 +1,16 @@
+{
+  "floorStartS": 0.0,
+  "indexS": 4.450000000000253,
+  "unmodifiedHandoverS": 9.450000000000058,
+  "endS": 16.750000000000057,
+  "floorAndStopAllRecordedStatesIdentical": true,
+  "liftTraceMatchesNominalSha256": "f6ff79bd5b2241f1f0f91cec87e06954f53f6656f6bb59f40f5ea938579dba45",
+  "freshInputDigests": {
+    "native": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+    "stop": "1edd8baebf6264c72f7a46d333c6c5fd49bf55e080289b053f29bf12003a3f3e",
+    "ground": "5de00cc201b009f369a055545a7a4bc846e2e2f48ff0f376525ae111adbc6882",
+    "plant": "718add685c4fcf5033c56ac5c9bf0b0575f4c4c01a06b73bb4f09f6cb521dc49",
+    "contact": "af7e883882972c08ef08fdb3db6add814fdfa1ec0e3f4da02734cb8c1b8ddbe3",
+    "runner": "6fa49f153ce92fb1ef453fbfbdae8343112eb0b8dc5ac4c3ff1c71326a746c36"
+  }
+}

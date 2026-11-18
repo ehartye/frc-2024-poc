@@ -1,0 +1,9 @@
+{
+  "case": "braked",
+  "dt": 0.0005,
+  "grid": 512,
+  "stopReason": "UNSUPPORTED_SDF_GRADIENT_TIE",
+  "lastCompletedTimeS": 5.877,
+  "traceSha256": "0fc6b12d4238bde5e1373ea873730591effd3ddaafeec5383ad9142f687d7dc5",
+  "interpretation": "The surface query encountered a point with tied signed-distance gradients. The run provides no completed braked-lift observation."
+}

@@ -41,7 +41,7 @@ def main():
     inputs = ("--ground", ground/"receipt.json", "--stop", stop/"receipt.json",
               "--archive", archive, "--output", lift)
     if args.turn:
-        execute("run_turning_lift.py", *inputs, "--case", args.turn, "--grid", "1024")
+        execute("run_turning_lift.py", *inputs, "--case", args.turn, "--grid", "1024", "--dt", ".00025")
         from verify_turning_lift import assess
         measured, _ = assess(lift)
         (output / "retention.json").write_text(json.dumps(measured, indent=2) + "\n", encoding="utf-8")
