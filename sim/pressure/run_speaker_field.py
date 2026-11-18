@@ -8,10 +8,11 @@ import mujoco
 import numpy as np
 
 from speaker_surfaces import SpeakerSurfaces, digest
+from wing_field_frame import WingFrame, WING_MARKS_INCHES
 from wing_speaker_passage import MAJOR, TUBE, rotation
 
 
-def attained_state(pickup, model, data):
+def attained_state(pickup, model, data, frame=None):
     receipt = json.loads((pickup / "result.json").read_bytes())
     trace = pickup / "trace.jsonl"
     if receipt["outcome"] != "UPWARD_FREE_RELEASE" or digest(trace) != receipt["traceSha256"]:
@@ -22,9 +23,11 @@ def attained_state(pickup, model, data):
     row = json.loads(last)
     if row["beltNormalN"] or row["wheelNormalN"] or abs(row["time"]-receipt["end"]) > 1e-8:
         raise ValueError("NOTE is still in contact or the trace is incomplete")
-    base = np.array([[0., -1., 0.], [1., 0., 0.], [0., 0., 1.]])
-    mark = np.array([114*.0254, 161.625*.0254, 0.])
-    data.qpos[:3] = mark + base @ (np.asarray(row["q"][-7:-4]) - [.658, 0., 0.])
+    frame = frame or WingFrame()
+    if "firstMark" in receipt and (receipt["firstMark"],receipt["fieldYawDeg"])!=(frame.first_mark,frame.yaw_degrees):
+        raise ValueError("Release and field trajectory use different registrations")
+    base = frame.rotation
+    data.qpos[:3] = frame.to_field(row["q"][-7:-4])
     mujoco.mju_mat2Quat(data.qpos[3:], (base @ rotation(row["q"][-4:])).ravel())
     data.qvel[:3] = base @ row["v"][-6:-3]
     data.qvel[3:] = row["v"][-3:]
@@ -80,14 +83,15 @@ def run(args):
       <worldbody><body><freejoint/><inertial pos="0 0 0" mass="{mass}"
         diaginertia="{ix} {ix} {iz}"/></body></worldbody></mujoco>""")
     data = mujoco.MjData(model)
-    release = attained_state(args.pickup, model, data)
+    frame = WingFrame(args.first_mark,args.field_yaw_deg)
+    release = attained_state(args.pickup, model, data, frame)
     surfaces = SpeakerSurfaces(args.field)
     start = data.time
     angles = 2*math.pi*np.arange(args.nodes)/args.nodes
     local = MAJOR*np.stack((np.cos(angles), np.sin(angles), np.zeros(args.nodes)), axis=1)
     first = {}
     worst = 0.
-    stride = max(1, round(.001/args.dt))
+    stride = 1 if getattr(args, "trace_every_step", False) else max(1, round(.001/args.dt))
     steps = math.ceil(args.horizon/args.dt)
     args.output.mkdir()
     trace = args.output / "trace.jsonl"
@@ -127,7 +131,10 @@ if __name__ == "__main__":
         parser.add_argument(arg, type=Path)
     parser.add_argument("--dt", type=float, default=.0002)
     parser.add_argument("--nodes", type=int, default=128)
+    parser.add_argument("--first-mark", choices=WING_MARKS_INCHES, default="inner")
+    parser.add_argument("--field-yaw-deg", type=float, default=90.)
     parser.add_argument("--belt-speed", type=float, default=1.5, help="signed top belt speed in m/s toward the counter")
+    parser.add_argument("--trace-every-step", action="store_true", help="save every field pose for comparison with the moving robot")
     parser.add_argument("--horizon", type=float, default=4.)
     parser.add_argument("--stiffness", type=float, default=1.2e6)
     parser.add_argument("--damping", type=float, default=450.)
