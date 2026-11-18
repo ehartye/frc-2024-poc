@@ -1,0 +1,86 @@
+{
+  "schema": "signed-native-pressure-contract/1",
+  "motorLaw": "Mirror the existing positive motoring/coast law for negative duty; no battery regeneration; same 40 A limit and motor constants",
+  "arrayComparison": {
+    "forceAbsoluteN": 1e-09,
+    "momentAbsoluteNm": 1e-10,
+    "potentialAbsoluteJ": 1e-12,
+    "sameContactCountAndDomain": true
+  },
+  "nativeGeometry": {
+    "archiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+    "shaftOffsetMm": 1.0,
+    "treadThicknessMm": 1.5,
+    "rejectSubstrateContact": true
+  },
+  "freshStart": {
+    "relativeXM": 0.658,
+    "zeroVelocity": true,
+    "zeroStoredEnergy": true,
+    "zeroCumulativeLedger": true
+  },
+  "integration": {
+    "nominalDtS": 0.001,
+    "controllerPeriodS": 0.01,
+    "resolution": [
+      1024,
+      1024
+    ],
+    "kAreaNpm3": 10000000,
+    "refinementStepsS": [
+      0.001,
+      0.0005,
+      0.00025
+    ]
+  },
+  "index": {
+    "goalM": 0.185,
+    "relativeXRangeM": [
+      0.18,
+      0.19
+    ],
+    "maximumRelativeSpeedMps": 0.003,
+    "maximumChassisSpeedMps": 0.003,
+    "dwellS": 0.1,
+    "maximumTimeS": 6
+  },
+  "transport": {
+    "requestedSpeedMps": 0.1,
+    "speedRampAccelerationMps2": 0.1,
+    "maximumDurationS": 3,
+    "relativeXRangeM": [
+      0.18,
+      0.19
+    ],
+    "maximumRelativeSpeedMps": 0.01,
+    "requiredChassisTravelM": 0.2,
+    "requiredNoteTravelM": 0.19
+  },
+  "signedController": {
+    "description": "Inverse regularized-friction feedforward plus relative-position/velocity feedback and finite rotor-current effort; no velocity assignment",
+    "relativePositionGainPerS": 2,
+    "noteVelocityGainPerS": 20,
+    "rotorVelocityGainPerS": 100,
+    "pinchDutyLimit": 0.025,
+    "driveSpeedGainVPerMps": 2,
+    "nonregenerativeRule": "If requested terminal power would be negative, apply a 0.001 V plugging command opposite rotor speed; zero duty remains coast",
+    "pluggingVoltageV": 0.001,
+    "relativeVelocityTargetLimitMps": 0.008,
+    "maximumTractionFraction": 0.95
+  },
+  "stop": {
+    "durationS": 2,
+    "driveMode": "brake",
+    "pinchMode": "coast"
+  },
+  "limits": [
+    "New explicitly declared native contact model; never import an old-geometry capture state as fresh",
+    "Bounded planar floor dynamics only; no lift/pitch without a separate justified physical model",
+    "Finite native corridor witnesses are not continuous clearance or hardware validation",
+    "All material, friction, mass/inertia and supply values remain uncalibrated"
+  ],
+  "energyGate": {
+    "maximumResidualJ": 0.01,
+    "sourceWorkFraction": 0.01
+  }
+}

@@ -18,3 +18,37 @@ tools/blockout/** -text
 
 # Source-bound pressure experiment receipts retain exact recorded bytes.
 sim/pressure/evidence/continuity-20261118/** -text
+
+# Preserve the exact executed native signed experiment bytes.
+sim/pressure/bind_native_pressure.py -text
+sim/pressure/check_native_lift_join.py -text
+sim/pressure/evidence/native-signed-20261118/native-pressure-binding.json -text
+sim/pressure/evidence/native-signed-20261118/native-signed-convergence-contract.json -text
+sim/pressure/evidence/native-signed-20261118/signed-native-contract.json -text
+sim/pressure/evidence/native-signed-20261118/signed-native-dynamic-parity.json -text
+sim/pressure/evidence/native-signed-20261118/signed-native-preflight-final.json -text
+sim/pressure/native_pressure_arrays.py -text
+sim/pressure/native_signed_pressure.py -text
+sim/pressure/run_native_signed.py -text
+sim/pressure/signed_pressure_acquisition.py -text
+sim/pressure/verify_native_signed_runs.py -text
+sim/pressure/verify_signed_dynamic.py -text
+sim/pressure/verify_signed_native.py -text
+
+sim/pressure/compare_native_signed_spatial.py -text
+sim/pressure/continue_native_signed_stop.py -text
+sim/pressure/native_signed_control_counterexample.py -text
+sim/pressure/verify_native_active_stop.py -text
+sim/pressure/verify_native_signed_rejection.py -text
+sim/pressure/evidence/native-signed-20261118/native-signed-spatial-contract.json -text
+sim/pressure/evidence/native-signed-20261118/native-signed-spatial-half.json -text
+sim/pressure/evidence/native-signed-20261118/native-lift-join-half.json -text
+sim/pressure/evidence/native-signed-20261118/native-signed-active-stop-contract.json -text
+sim/pressure/evidence/native-signed-20261118/native-signed-verification.json -text
+sim/pressure/evidence/native-signed-20261118/native-active-stop-verification.json -text
+sim/pressure/evidence/native-signed-20261118/native-signed-atomic-rejection.json -text
+sim/pressure/evidence/native-signed-20261118/native-signed-source-dependency-pins.json -text
+sim/pressure/evidence/native-signed-20261118/native-signed-counterexamples.json -text
+sim/pressure/NATIVE_SIGNED_PRESSURE.md -text
+sim/pressure/evidence/native-signed-20261118/executed/run_native_signed.py -text
+sim/pressure/evidence/native-signed-20261118/executed/continue_native_signed_stop.py -text

@@ -1,0 +1,111 @@
+{
+  "schema": "native-pressure-contact-binding/1",
+  "contactGeometryBound": true,
+  "acceptance": false,
+  "scriptSha256": "f4751d675f32695b23bbdbb6717b07759dae5d119f2c4118cccbff466a728d80",
+  "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "finalNativeReceiptSha256": "0ea9d24211f7b58a7b6cfd1731a1f91df707dcba98228169f44b9d8d3e0c79cc",
+  "publicNativeReceiptSha256": "b76ed965b6e744cafbd422761ccadee03c51b45c810feab1d22c895730d7e803",
+  "baseConfigSha256": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+  "bodyCount": 734,
+  "nativeParameters": {
+    "shaftOutboardOffsetMm": 1.0,
+    "outerTreadThicknessMm": 1.5,
+    "outerTreadDensityKgM3Hypothesis": 1000.0,
+    "nominalContactFaceAbsYmm": 176.4223933363976,
+    "returnRunRelief": true,
+    "pivotInnerYAbsMm": 206.2,
+    "reliefClearanceMm": 0.5
+  },
+  "effectiveGeometryMm": {
+    "rearX": -19.049999999999997,
+    "frontX": 146.05,
+    "axisYAbs": 191.05,
+    "outerRadius": 14.627606663602423,
+    "innerRadius": 11.127606663602423,
+    "halfHeight": 6.35,
+    "treadThicknessMm": 1.5
+  },
+  "registeredBodies": [
+    {
+      "kind": "belt",
+      "side": -1,
+      "sourceRootIndex": 435,
+      "boundsMm": [
+        145.82239333639757,
+        -204.17760666360243,
+        19.049999999999997,
+        337.17760666360243,
+        -177.9223933363976,
+        31.75
+      ],
+      "volumeMm3": 10322.56,
+      "maximumBoundsErrorMm": 9.760015018400736e-11,
+      "volumeErrorMm3": 4.3195541366003454e-08
+    },
+    {
+      "kind": "tread",
+      "side": -1,
+      "sourceRootIndex": 712,
+      "boundsMm": [
+        144.32239333639757,
+        -205.67760666360243,
+        19.049999999999997,
+        338.67760666360243,
+        -176.4223933363976,
+        31.75
+      ],
+      "volumeMm3": 7951.385690178098,
+      "maximumBoundsErrorMm": 9.760015018400736e-11,
+      "volumeErrorMm3": 4.18367562815547e-11
+    },
+    {
+      "kind": "belt",
+      "side": 1,
+      "sourceRootIndex": 465,
+      "boundsMm": [
+        145.82239333639757,
+        177.9223933363976,
+        19.049999999999997,
+        337.17760666360243,
+        204.17760666360243,
+        31.75
+      ],
+      "volumeMm3": 10322.56,
+      "maximumBoundsErrorMm": 7.58859641791787e-12,
+      "volumeErrorMm3": 9.915311238728464e-09
+    },
+    {
+      "kind": "tread",
+      "side": 1,
+      "sourceRootIndex": 713,
+      "boundsMm": [
+        144.32239333639757,
+        176.4223933363976,
+        19.049999999999997,
+        338.67760666360243,
+        205.67760666360243,
+        31.75
+      ],
+      "volumeMm3": 7951.385690178098,
+      "maximumBoundsErrorMm": 7.58859641791787e-12,
+      "volumeErrorMm3": 3.2741809263825417e-11
+    }
+  ],
+  "corridor": {
+    "relativeXM": [
+      0.178,
+      0.658
+    ],
+    "relativeYAbsM": 0.0005,
+    "relativeYawAbsRad": 1e-08,
+    "fixedFloorCenterZM": 0.0254
+  },
+  "limits": [
+    "Four native belt/tread solids bound by final export identity, volume and bounds; not a complete rigid-body collision model",
+    "Floor corridor has finite native witnesses, not continuous collision qualification",
+    "Only shallow contact within the 1.5 mm tread is modeled; substrate contact must stop",
+    "Prescribed flat floor and roll/pitch remain; this binding does not authorize lifted or tilted states",
+    "No Fusion access or native mutation"
+  ]
+}

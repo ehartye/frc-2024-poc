@@ -1,0 +1,35 @@
+{
+  "schema": "native-signed-active-stop-contract/1",
+  "source": "Actual transportEnd checkpoint; preserve clock, all physical state, cumulative ledger, initial energy and next 100Hz tick",
+  "durationS": 2.0,
+  "controller": "Drive short brake with signed pinch finite-effort inverse-friction regulation; controller acceleration feedforward estimates rolling brake torque over total mass plus reflected wheel inertia",
+  "gains": {
+    "relativePosition": 2,
+    "noteVelocity": 20,
+    "rotorVelocity": 100,
+    "relativeVelocityLimit": 0.008,
+    "dutyLimit": 0.025,
+    "tractionFractionLimit": 0.95,
+    "pluggingVoltage": 0.001
+  },
+  "corridor": {
+    "relativeXM": [
+      0.18,
+      0.19
+    ],
+    "relativeSpeedMaxMps": 0.01
+  },
+  "settledLast100ms": {
+    "chassisSpeedMaxMps": 0.003,
+    "relativeSpeedMaxMps": 0.003
+  },
+  "refinementsS": [
+    0.0005,
+    0.00025
+  ],
+  "finestPairBounds": {
+    "relativePositionM": 0.0005,
+    "relativeVelocityMps": 0.003
+  },
+  "acceptance": false
+}

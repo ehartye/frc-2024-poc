@@ -1,0 +1,95 @@
+{
+  "schema": "native-signed-fresh-verification/1",
+  "integrityChecksPassed": true,
+  "numericalGatePassed": true,
+  "acceptance": false,
+  "hardwareValidated": false,
+  "continuousCycle": false,
+  "runs": [
+    {
+      "outcome": "INDEX_TIMEOUT",
+      "reason": null,
+      "stepS": 0.001,
+      "endTimeS": 6.000000000000338,
+      "indexTimeS": null,
+      "transportDurationS": null,
+      "chassisTravelM": null,
+      "noteTravelM": null,
+      "stoppedLast100ms": false,
+      "boundedGroundMetricsPassed": false,
+      "maximumResidualJ": 0.013680429548529383,
+      "minimumPinchCurrentA": 0.0,
+      "traceRows": 6000,
+      "receiptSha256": "4475e3a9665e45a6b4cd4186e736c5f0142f311b418f0e1b0cf6ac1b411514ff",
+      "runtimeSeconds": 211.44616540000425
+    },
+    {
+      "outcome": "STOP_CORRIDOR_EXIT",
+      "reason": null,
+      "stepS": 0.0005,
+      "endTimeS": 7.550499999998535,
+      "indexTimeS": 4.450000000000253,
+      "transportDurationS": 2.9999999999983373,
+      "chassisTravelM": 0.2291080882807507,
+      "noteTravelM": 0.22556328132800718,
+      "stoppedLast100ms": false,
+      "boundedGroundMetricsPassed": false,
+      "maximumResidualJ": 0.00023591052836748928,
+      "minimumPinchCurrentA": -0.29198325208368403,
+      "traceRows": 15101,
+      "receiptSha256": "56ce4d15a22513cc04d137b5f8d6cab2fc9057be7409cdbdf1295c46d449f800",
+      "runtimeSeconds": 564.3197384000014
+    },
+    {
+      "outcome": "STOP_CORRIDOR_EXIT",
+      "reason": null,
+      "stepS": 0.00025,
+      "endTimeS": 7.550250000003482,
+      "indexTimeS": 4.449999999999693,
+      "transportDurationS": 3.0000000000036664,
+      "chassisTravelM": 0.22910801639463274,
+      "noteTravelM": 0.2255631853599157,
+      "stoppedLast100ms": false,
+      "boundedGroundMetricsPassed": false,
+      "maximumResidualJ": 5.722414618376413e-05,
+      "minimumPinchCurrentA": -0.29202753565410755,
+      "traceRows": 30201,
+      "receiptSha256": "a27ec24fad1488c2b31324720b210caafad5a34c5a1cb472b128280be0d3087a",
+      "runtimeSeconds": 1112.9436639999985
+    }
+  ],
+  "comparisons": [
+    {
+      "stepsS": [
+        0.001,
+        0.0005
+      ],
+      "sharedAcquisitionStates": 4450,
+      "sharedPostIndexStates": 0,
+      "maximumRelativePositionDifferenceM": 0.0019424807653448117,
+      "maximumRelativeVelocityDifferenceMps": 0.01326163313823374,
+      "indexEventDifferenceS": null,
+      "postIndexDurationDifferenceS": null,
+      "withinDeclaredBounds": false
+    },
+    {
+      "stepsS": [
+        0.0005,
+        0.00025
+      ],
+      "sharedAcquisitionStates": 8900,
+      "sharedPostIndexStates": 6200,
+      "maximumRelativePositionDifferenceM": 4.476813542098057e-07,
+      "maximumRelativeVelocityDifferenceMps": 0.00015553020749355106,
+      "indexEventDifferenceS": 5.60440582830779e-13,
+      "postIndexDurationDifferenceS": 0.00024999999449271115,
+      "withinDeclaredBounds": true
+    }
+  ],
+  "contractSha256": "3f88da6538d382ecbecf5b3193257f11720f77c8a8e91995389d64ed6c5b4821",
+  "limits": [
+    "Fresh ground acquisition only until actual phase gate; no imported capture",
+    "No complete native collision model, lifting, pitch or feed qualification",
+    "Finite refinement and uncalibrated constitutive assumptions; not hardware validation"
+  ]
+}

@@ -1,0 +1,2469 @@
+{
+  "schema": "signed-native-preflight/1",
+  "passed": true,
+  "acceptance": false,
+  "scriptSha256": "731c393381f85e7d26b97a2bb02933453e11aeb78874a3c8ab26b43096389dcb",
+  "contractSha256": "0e19e369d38379700fff0983b896935e037c9cdb2b5a3e569304f0ef1e6d3173",
+  "bindingSha256": "6d8a1ef819b918d11380a96137f6573ca30441d8ce947efb86a670c7134314d8",
+  "sourceHashes": {
+    "signed_pressure_acquisition.py": "68358ab3cfab9b0a6fc724c90ab8256e9a17e326ee416b0308d861add51f1d83",
+    "native_signed_pressure.py": "88dd19f25f5ec976f178123f65598d8bc7f60f201bf8160c7cf8b637c96c8a38",
+    "native_pressure_arrays.py": "fc7a3f30bfd027033c190ff6a5daa94be1f0969556a473b553bd9ef6c6b3aabf",
+    "pressure_tiled_geometry.py": "ad40145c71fbfaae776540ad3a2f43f954f52b5de53b65035babb0b424868987"
+  },
+  "electricalCases": 189,
+  "maximumElectricalPowerResidualW": 5.684341886080802e-14,
+  "electrical": [
+    {
+      "busV": 0.0,
+      "duty": -1.0,
+      "omega": -900.0,
+      "currentA": -0.0,
+      "terminalV": -17.858424783298386,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": -0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": -1.0,
+      "omega": -300.0,
+      "currentA": -0.0,
+      "terminalV": -5.952808261099461,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": -0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": -1.0,
+      "omega": -20.0,
+      "currentA": -0.0,
+      "terminalV": -0.39685388407329747,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": -0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": -1.0,
+      "omega": -1.0,
+      "currentA": -0.0,
+      "terminalV": -0.01984269420366487,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": -0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": -1.0,
+      "omega": 0.0,
+      "currentA": -0.0,
+      "terminalV": 0.0,
+      "terminalPowerW": -0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": -0.0,
+      "torqueNm": -0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": -1.0,
+      "omega": 1.0,
+      "currentA": -0.17362357428206762,
+      "terminalV": 0.0,
+      "terminalPowerW": -0.0,
+      "windingHeatW": 0.0034451594910263604,
+      "shaftPowerW": -0.0034451594910263604,
+      "torqueNm": -0.0034451594910263604,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": -1.0,
+      "omega": 20.0,
+      "currentA": -3.472471485641353,
+      "terminalV": 0.0,
+      "terminalPowerW": -0.0,
+      "windingHeatW": 1.3780637964105444,
+      "shaftPowerW": -1.3780637964105444,
+      "torqueNm": -0.06890318982052722,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": -1.0,
+      "omega": 300.0,
+      "rejected": "Pinch controller voltage domain"
+    },
+    {
+      "busV": 0.0,
+      "duty": -1.0,
+      "omega": 900.0,
+      "rejected": "Pinch controller voltage domain"
+    },
+    {
+      "busV": 0.0,
+      "duty": -0.025,
+      "omega": -900.0,
+      "currentA": -0.0,
+      "terminalV": -17.858424783298386,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": -0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": -0.025,
+      "omega": -300.0,
+      "currentA": -0.0,
+      "terminalV": -5.952808261099461,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": -0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": -0.025,
+      "omega": -20.0,
+      "currentA": -0.0,
+      "terminalV": -0.39685388407329747,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": -0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": -0.025,
+      "omega": -1.0,
+      "currentA": -0.0,
+      "terminalV": -0.01984269420366487,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": -0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": -0.025,
+      "omega": 0.0,
+      "currentA": -0.0,
+      "terminalV": 0.0,
+      "terminalPowerW": -0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": -0.0,
+      "torqueNm": -0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": -0.025,
+      "omega": 1.0,
+      "currentA": -0.17362357428206762,
+      "terminalV": 0.0,
+      "terminalPowerW": -0.0,
+      "windingHeatW": 0.0034451594910263604,
+      "shaftPowerW": -0.0034451594910263604,
+      "torqueNm": -0.0034451594910263604,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": -0.025,
+      "omega": 20.0,
+      "currentA": -3.472471485641353,
+      "terminalV": 0.0,
+      "terminalPowerW": -0.0,
+      "windingHeatW": 1.3780637964105444,
+      "shaftPowerW": -1.3780637964105444,
+      "torqueNm": -0.06890318982052722,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": -0.025,
+      "omega": 300.0,
+      "rejected": "Pinch controller voltage domain"
+    },
+    {
+      "busV": 0.0,
+      "duty": -0.025,
+      "omega": 900.0,
+      "rejected": "Pinch controller voltage domain"
+    },
+    {
+      "busV": 0.0,
+      "duty": -0.0034,
+      "omega": -900.0,
+      "currentA": -0.0,
+      "terminalV": -17.858424783298386,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": -0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": -0.0034,
+      "omega": -300.0,
+      "currentA": -0.0,
+      "terminalV": -5.952808261099461,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": -0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": -0.0034,
+      "omega": -20.0,
+      "currentA": -0.0,
+      "terminalV": -0.39685388407329747,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": -0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": -0.0034,
+      "omega": -1.0,
+      "currentA": -0.0,
+      "terminalV": -0.01984269420366487,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": -0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": -0.0034,
+      "omega": 0.0,
+      "currentA": -0.0,
+      "terminalV": 0.0,
+      "terminalPowerW": -0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": -0.0,
+      "torqueNm": -0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": -0.0034,
+      "omega": 1.0,
+      "currentA": -0.17362357428206762,
+      "terminalV": 0.0,
+      "terminalPowerW": -0.0,
+      "windingHeatW": 0.0034451594910263604,
+      "shaftPowerW": -0.0034451594910263604,
+      "torqueNm": -0.0034451594910263604,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": -0.0034,
+      "omega": 20.0,
+      "currentA": -3.472471485641353,
+      "terminalV": 0.0,
+      "terminalPowerW": -0.0,
+      "windingHeatW": 1.3780637964105444,
+      "shaftPowerW": -1.3780637964105444,
+      "torqueNm": -0.06890318982052722,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": -0.0034,
+      "omega": 300.0,
+      "rejected": "Pinch controller voltage domain"
+    },
+    {
+      "busV": 0.0,
+      "duty": -0.0034,
+      "omega": 900.0,
+      "rejected": "Pinch controller voltage domain"
+    },
+    {
+      "busV": 0.0,
+      "duty": 0.0,
+      "omega": -900.0,
+      "currentA": 0.0,
+      "terminalV": -17.858424783298386,
+      "terminalPowerW": -0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": -0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": 0.0,
+      "omega": -300.0,
+      "currentA": 0.0,
+      "terminalV": -5.952808261099461,
+      "terminalPowerW": -0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": -0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": 0.0,
+      "omega": -20.0,
+      "currentA": 0.0,
+      "terminalV": -0.39685388407329747,
+      "terminalPowerW": -0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": -0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": 0.0,
+      "omega": -1.0,
+      "currentA": 0.0,
+      "terminalV": -0.01984269420366487,
+      "terminalPowerW": -0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": -0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": 0.0,
+      "omega": 0.0,
+      "currentA": 0.0,
+      "terminalV": 0.0,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": 0.0,
+      "omega": 1.0,
+      "currentA": 0.0,
+      "terminalV": 0.01984269420366487,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": 0.0,
+      "omega": 20.0,
+      "currentA": 0.0,
+      "terminalV": 0.39685388407329747,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": 0.0,
+      "omega": 300.0,
+      "currentA": 0.0,
+      "terminalV": 5.952808261099461,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": 0.0,
+      "omega": 900.0,
+      "currentA": 0.0,
+      "terminalV": 17.858424783298386,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": 0.0034,
+      "omega": -900.0,
+      "rejected": "Pinch controller voltage domain"
+    },
+    {
+      "busV": 0.0,
+      "duty": 0.0034,
+      "omega": -300.0,
+      "rejected": "Pinch controller voltage domain"
+    },
+    {
+      "busV": 0.0,
+      "duty": 0.0034,
+      "omega": -20.0,
+      "currentA": 3.472471485641353,
+      "terminalV": 0.0,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 1.3780637964105444,
+      "shaftPowerW": -1.3780637964105444,
+      "torqueNm": 0.06890318982052722,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": 0.0034,
+      "omega": -1.0,
+      "currentA": 0.17362357428206762,
+      "terminalV": 0.0,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0034451594910263604,
+      "shaftPowerW": -0.0034451594910263604,
+      "torqueNm": 0.0034451594910263604,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": 0.0034,
+      "omega": 0.0,
+      "currentA": 0.0,
+      "terminalV": 0.0,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": 0.0034,
+      "omega": 1.0,
+      "currentA": 0.0,
+      "terminalV": 0.01984269420366487,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": 0.0034,
+      "omega": 20.0,
+      "currentA": 0.0,
+      "terminalV": 0.39685388407329747,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": 0.0034,
+      "omega": 300.0,
+      "currentA": 0.0,
+      "terminalV": 5.952808261099461,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": 0.0034,
+      "omega": 900.0,
+      "currentA": 0.0,
+      "terminalV": 17.858424783298386,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": 0.025,
+      "omega": -900.0,
+      "rejected": "Pinch controller voltage domain"
+    },
+    {
+      "busV": 0.0,
+      "duty": 0.025,
+      "omega": -300.0,
+      "rejected": "Pinch controller voltage domain"
+    },
+    {
+      "busV": 0.0,
+      "duty": 0.025,
+      "omega": -20.0,
+      "currentA": 3.472471485641353,
+      "terminalV": 0.0,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 1.3780637964105444,
+      "shaftPowerW": -1.3780637964105444,
+      "torqueNm": 0.06890318982052722,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": 0.025,
+      "omega": -1.0,
+      "currentA": 0.17362357428206762,
+      "terminalV": 0.0,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0034451594910263604,
+      "shaftPowerW": -0.0034451594910263604,
+      "torqueNm": 0.0034451594910263604,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": 0.025,
+      "omega": 0.0,
+      "currentA": 0.0,
+      "terminalV": 0.0,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": 0.025,
+      "omega": 1.0,
+      "currentA": 0.0,
+      "terminalV": 0.01984269420366487,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": 0.025,
+      "omega": 20.0,
+      "currentA": 0.0,
+      "terminalV": 0.39685388407329747,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": 0.025,
+      "omega": 300.0,
+      "currentA": 0.0,
+      "terminalV": 5.952808261099461,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": 0.025,
+      "omega": 900.0,
+      "currentA": 0.0,
+      "terminalV": 17.858424783298386,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": 1.0,
+      "omega": -900.0,
+      "rejected": "Pinch controller voltage domain"
+    },
+    {
+      "busV": 0.0,
+      "duty": 1.0,
+      "omega": -300.0,
+      "rejected": "Pinch controller voltage domain"
+    },
+    {
+      "busV": 0.0,
+      "duty": 1.0,
+      "omega": -20.0,
+      "currentA": 3.472471485641353,
+      "terminalV": 0.0,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 1.3780637964105444,
+      "shaftPowerW": -1.3780637964105444,
+      "torqueNm": 0.06890318982052722,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": 1.0,
+      "omega": -1.0,
+      "currentA": 0.17362357428206762,
+      "terminalV": 0.0,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0034451594910263604,
+      "shaftPowerW": -0.0034451594910263604,
+      "torqueNm": 0.0034451594910263604,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": 1.0,
+      "omega": 0.0,
+      "currentA": 0.0,
+      "terminalV": 0.0,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": 1.0,
+      "omega": 1.0,
+      "currentA": 0.0,
+      "terminalV": 0.01984269420366487,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": 1.0,
+      "omega": 20.0,
+      "currentA": 0.0,
+      "terminalV": 0.39685388407329747,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": 1.0,
+      "omega": 300.0,
+      "currentA": 0.0,
+      "terminalV": 5.952808261099461,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 0.0,
+      "duty": 1.0,
+      "omega": 900.0,
+      "currentA": 0.0,
+      "terminalV": 17.858424783298386,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": -1.0,
+      "omega": -900.0,
+      "currentA": -0.0,
+      "terminalV": -17.858424783298386,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": -0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": -1.0,
+      "omega": -300.0,
+      "currentA": -0.41292771537971396,
+      "terminalV": -6.0,
+      "terminalPowerW": 2.4775662922782837,
+      "windingHeatW": 0.019486776928995433,
+      "shaftPowerW": 2.4580795153492883,
+      "torqueNm": -0.008193598384497628,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": -1.0,
+      "omega": -20.0,
+      "currentA": -40.0,
+      "terminalV": -4.9682824555018685,
+      "terminalPowerW": 198.73129822007473,
+      "windingHeatW": 182.85714285714286,
+      "shaftPowerW": 15.874155362931898,
+      "torqueNm": -0.7937077681465949,
+      "powerResidualW": -2.4868995751603507e-14
+    },
+    {
+      "busV": 6.0,
+      "duty": -1.0,
+      "omega": -1.0,
+      "currentA": -40.0,
+      "terminalV": -4.591271265632236,
+      "terminalPowerW": 183.65085062528945,
+      "windingHeatW": 182.85714285714286,
+      "shaftPowerW": 0.7937077681465949,
+      "torqueNm": -0.7937077681465949,
+      "powerResidualW": -5.551115123125783e-15
+    },
+    {
+      "busV": 6.0,
+      "duty": -1.0,
+      "omega": 0.0,
+      "currentA": -40.0,
+      "terminalV": -4.571428571428571,
+      "terminalPowerW": 182.85714285714283,
+      "windingHeatW": 182.85714285714286,
+      "shaftPowerW": -0.0,
+      "torqueNm": -0.7937077681465949,
+      "powerResidualW": -2.842170943040401e-14
+    },
+    {
+      "busV": 6.0,
+      "duty": -1.0,
+      "omega": 1.0,
+      "currentA": -40.0,
+      "terminalV": -4.551585877224906,
+      "terminalPowerW": 182.06343508899624,
+      "windingHeatW": 182.85714285714286,
+      "shaftPowerW": -0.7937077681465949,
+      "torqueNm": -0.7937077681465949,
+      "powerResidualW": -2.2870594307278225e-14
+    },
+    {
+      "busV": 6.0,
+      "duty": -1.0,
+      "omega": 20.0,
+      "currentA": -40.0,
+      "terminalV": -4.174574687355274,
+      "terminalPowerW": 166.98298749421096,
+      "windingHeatW": 182.85714285714286,
+      "shaftPowerW": -15.874155362931898,
+      "torqueNm": -0.7937077681465949,
+      "powerResidualW": -3.552713678800501e-15
+    },
+    {
+      "busV": 6.0,
+      "duty": -1.0,
+      "omega": 300.0,
+      "rejected": "Unmodeled pinch regeneration"
+    },
+    {
+      "busV": 6.0,
+      "duty": -1.0,
+      "omega": 900.0,
+      "rejected": "Pinch controller voltage domain"
+    },
+    {
+      "busV": 6.0,
+      "duty": -0.025,
+      "omega": -900.0,
+      "currentA": -0.0,
+      "terminalV": -17.858424783298386,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": -0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": -0.025,
+      "omega": -300.0,
+      "currentA": -0.0,
+      "terminalV": -5.952808261099461,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": -0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": -0.025,
+      "omega": -20.0,
+      "currentA": -0.0,
+      "terminalV": -0.39685388407329747,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": -0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": -0.025,
+      "omega": -1.0,
+      "currentA": -1.1388764257179327,
+      "terminalV": -0.15000000000000002,
+      "terminalPowerW": 0.17083146385768994,
+      "windingHeatW": 0.14823308720640616,
+      "shaftPowerW": 0.02259837665128379,
+      "torqueNm": -0.02259837665128379,
+      "powerResidualW": -1.0408340855860843e-17
+    },
+    {
+      "busV": 6.0,
+      "duty": -0.025,
+      "omega": 0.0,
+      "currentA": -1.3125000000000002,
+      "terminalV": -0.15000000000000002,
+      "terminalPowerW": 0.19687500000000005,
+      "windingHeatW": 0.19687500000000008,
+      "shaftPowerW": -0.0,
+      "torqueNm": -0.02604353614231015,
+      "powerResidualW": -2.7755575615628914e-17
+    },
+    {
+      "busV": 6.0,
+      "duty": -0.025,
+      "omega": 1.0,
+      "currentA": -1.4861235742820678,
+      "terminalV": -0.15000000000000002,
+      "terminalPowerW": 0.2229185361423102,
+      "windingHeatW": 0.25240723177564667,
+      "shaftPowerW": -0.029488695633336507,
+      "torqueNm": -0.029488695633336507,
+      "powerResidualW": 3.122502256758253e-17
+    },
+    {
+      "busV": 6.0,
+      "duty": -0.025,
+      "omega": 20.0,
+      "currentA": -4.784971485641353,
+      "terminalV": -0.15000000000000002,
+      "terminalPowerW": 0.7177457228462031,
+      "windingHeatW": 2.6166802421029507,
+      "shaftPowerW": -1.8989345192567475,
+      "torqueNm": -0.09494672596283737,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": -0.025,
+      "omega": 300.0,
+      "rejected": "Unmodeled pinch regeneration"
+    },
+    {
+      "busV": 6.0,
+      "duty": -0.025,
+      "omega": 900.0,
+      "rejected": "Pinch controller voltage domain"
+    },
+    {
+      "busV": 6.0,
+      "duty": -0.0034,
+      "omega": -900.0,
+      "currentA": -0.0,
+      "terminalV": -17.858424783298386,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": -0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": -0.0034,
+      "omega": -300.0,
+      "currentA": -0.0,
+      "terminalV": -5.952808261099461,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": -0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": -0.0034,
+      "omega": -20.0,
+      "currentA": -0.0,
+      "terminalV": -0.39685388407329747,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": -0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": -0.0034,
+      "omega": -1.0,
+      "currentA": -0.004876425717932364,
+      "terminalV": -0.020399999999999998,
+      "terminalPowerW": 9.947908464582022e-05,
+      "windingHeatW": 2.717660318001391e-06,
+      "shaftPowerW": 9.676142432781883e-05,
+      "torqueNm": -9.676142432781883e-05,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": -0.0034,
+      "omega": 0.0,
+      "currentA": -0.1785,
+      "terminalV": -0.020399999999999998,
+      "terminalPowerW": 0.0036413999999999995,
+      "windingHeatW": 0.0036413999999999995,
+      "shaftPowerW": -0.0,
+      "torqueNm": -0.0035419209153541797,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": -0.0034,
+      "omega": 1.0,
+      "currentA": -0.35212357428206764,
+      "terminalV": -0.0204,
+      "terminalPowerW": 0.0071833209153541805,
+      "windingHeatW": 0.01417040132173472,
+      "shaftPowerW": -0.006987080406380541,
+      "torqueNm": -0.006987080406380541,
+      "powerResidualW": 1.734723475976807e-18
+    },
+    {
+      "busV": 6.0,
+      "duty": -0.0034,
+      "omega": 20.0,
+      "currentA": -3.6509714856413527,
+      "terminalV": -0.020399999999999974,
+      "terminalPowerW": 0.0744798183070835,
+      "windingHeatW": 1.5233820330247114,
+      "shaftPowerW": -1.4489022147176278,
+      "torqueNm": -0.07244511073588139,
+      "powerResidualW": -2.220446049250313e-16
+    },
+    {
+      "busV": 6.0,
+      "duty": -0.0034,
+      "omega": 300.0,
+      "rejected": "Unmodeled pinch regeneration"
+    },
+    {
+      "busV": 6.0,
+      "duty": -0.0034,
+      "omega": 900.0,
+      "rejected": "Pinch controller voltage domain"
+    },
+    {
+      "busV": 6.0,
+      "duty": 0.0,
+      "omega": -900.0,
+      "currentA": 0.0,
+      "terminalV": -17.858424783298386,
+      "terminalPowerW": -0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": -0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": 0.0,
+      "omega": -300.0,
+      "currentA": 0.0,
+      "terminalV": -5.952808261099461,
+      "terminalPowerW": -0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": -0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": 0.0,
+      "omega": -20.0,
+      "currentA": 0.0,
+      "terminalV": -0.39685388407329747,
+      "terminalPowerW": -0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": -0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": 0.0,
+      "omega": -1.0,
+      "currentA": 0.0,
+      "terminalV": -0.01984269420366487,
+      "terminalPowerW": -0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": -0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": 0.0,
+      "omega": 0.0,
+      "currentA": 0.0,
+      "terminalV": 0.0,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": 0.0,
+      "omega": 1.0,
+      "currentA": 0.0,
+      "terminalV": 0.01984269420366487,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": 0.0,
+      "omega": 20.0,
+      "currentA": 0.0,
+      "terminalV": 0.39685388407329747,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": 0.0,
+      "omega": 300.0,
+      "currentA": 0.0,
+      "terminalV": 5.952808261099461,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": 0.0,
+      "omega": 900.0,
+      "currentA": 0.0,
+      "terminalV": 17.858424783298386,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": 0.0034,
+      "omega": -900.0,
+      "rejected": "Pinch controller voltage domain"
+    },
+    {
+      "busV": 6.0,
+      "duty": 0.0034,
+      "omega": -300.0,
+      "rejected": "Unmodeled pinch regeneration"
+    },
+    {
+      "busV": 6.0,
+      "duty": 0.0034,
+      "omega": -20.0,
+      "currentA": 3.6509714856413527,
+      "terminalV": 0.020399999999999974,
+      "terminalPowerW": 0.0744798183070835,
+      "windingHeatW": 1.5233820330247114,
+      "shaftPowerW": -1.4489022147176278,
+      "torqueNm": 0.07244511073588139,
+      "powerResidualW": -2.220446049250313e-16
+    },
+    {
+      "busV": 6.0,
+      "duty": 0.0034,
+      "omega": -1.0,
+      "currentA": 0.35212357428206764,
+      "terminalV": 0.0204,
+      "terminalPowerW": 0.0071833209153541805,
+      "windingHeatW": 0.01417040132173472,
+      "shaftPowerW": -0.006987080406380541,
+      "torqueNm": 0.006987080406380541,
+      "powerResidualW": 1.734723475976807e-18
+    },
+    {
+      "busV": 6.0,
+      "duty": 0.0034,
+      "omega": 0.0,
+      "currentA": 0.1785,
+      "terminalV": 0.020399999999999998,
+      "terminalPowerW": 0.0036413999999999995,
+      "windingHeatW": 0.0036413999999999995,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0035419209153541797,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": 0.0034,
+      "omega": 1.0,
+      "currentA": 0.004876425717932364,
+      "terminalV": 0.020399999999999998,
+      "terminalPowerW": 9.947908464582022e-05,
+      "windingHeatW": 2.717660318001391e-06,
+      "shaftPowerW": 9.676142432781883e-05,
+      "torqueNm": 9.676142432781883e-05,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": 0.0034,
+      "omega": 20.0,
+      "currentA": 0.0,
+      "terminalV": 0.39685388407329747,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": 0.0034,
+      "omega": 300.0,
+      "currentA": 0.0,
+      "terminalV": 5.952808261099461,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": 0.0034,
+      "omega": 900.0,
+      "currentA": 0.0,
+      "terminalV": 17.858424783298386,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": 0.025,
+      "omega": -900.0,
+      "rejected": "Pinch controller voltage domain"
+    },
+    {
+      "busV": 6.0,
+      "duty": 0.025,
+      "omega": -300.0,
+      "rejected": "Unmodeled pinch regeneration"
+    },
+    {
+      "busV": 6.0,
+      "duty": 0.025,
+      "omega": -20.0,
+      "currentA": 4.784971485641353,
+      "terminalV": 0.15000000000000002,
+      "terminalPowerW": 0.7177457228462031,
+      "windingHeatW": 2.6166802421029507,
+      "shaftPowerW": -1.8989345192567475,
+      "torqueNm": 0.09494672596283737,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": 0.025,
+      "omega": -1.0,
+      "currentA": 1.4861235742820678,
+      "terminalV": 0.15000000000000002,
+      "terminalPowerW": 0.2229185361423102,
+      "windingHeatW": 0.25240723177564667,
+      "shaftPowerW": -0.029488695633336507,
+      "torqueNm": 0.029488695633336507,
+      "powerResidualW": 3.122502256758253e-17
+    },
+    {
+      "busV": 6.0,
+      "duty": 0.025,
+      "omega": 0.0,
+      "currentA": 1.3125000000000002,
+      "terminalV": 0.15000000000000002,
+      "terminalPowerW": 0.19687500000000005,
+      "windingHeatW": 0.19687500000000008,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.02604353614231015,
+      "powerResidualW": -2.7755575615628914e-17
+    },
+    {
+      "busV": 6.0,
+      "duty": 0.025,
+      "omega": 1.0,
+      "currentA": 1.1388764257179327,
+      "terminalV": 0.15000000000000002,
+      "terminalPowerW": 0.17083146385768994,
+      "windingHeatW": 0.14823308720640616,
+      "shaftPowerW": 0.02259837665128379,
+      "torqueNm": 0.02259837665128379,
+      "powerResidualW": -1.0408340855860843e-17
+    },
+    {
+      "busV": 6.0,
+      "duty": 0.025,
+      "omega": 20.0,
+      "currentA": 0.0,
+      "terminalV": 0.39685388407329747,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": 0.025,
+      "omega": 300.0,
+      "currentA": 0.0,
+      "terminalV": 5.952808261099461,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": 0.025,
+      "omega": 900.0,
+      "currentA": 0.0,
+      "terminalV": 17.858424783298386,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": 1.0,
+      "omega": -900.0,
+      "rejected": "Pinch controller voltage domain"
+    },
+    {
+      "busV": 6.0,
+      "duty": 1.0,
+      "omega": -300.0,
+      "rejected": "Unmodeled pinch regeneration"
+    },
+    {
+      "busV": 6.0,
+      "duty": 1.0,
+      "omega": -20.0,
+      "currentA": 40.0,
+      "terminalV": 4.174574687355274,
+      "terminalPowerW": 166.98298749421096,
+      "windingHeatW": 182.85714285714286,
+      "shaftPowerW": -15.874155362931898,
+      "torqueNm": 0.7937077681465949,
+      "powerResidualW": -3.552713678800501e-15
+    },
+    {
+      "busV": 6.0,
+      "duty": 1.0,
+      "omega": -1.0,
+      "currentA": 40.0,
+      "terminalV": 4.551585877224906,
+      "terminalPowerW": 182.06343508899624,
+      "windingHeatW": 182.85714285714286,
+      "shaftPowerW": -0.7937077681465949,
+      "torqueNm": 0.7937077681465949,
+      "powerResidualW": -2.2870594307278225e-14
+    },
+    {
+      "busV": 6.0,
+      "duty": 1.0,
+      "omega": 0.0,
+      "currentA": 40.0,
+      "terminalV": 4.571428571428571,
+      "terminalPowerW": 182.85714285714283,
+      "windingHeatW": 182.85714285714286,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.7937077681465949,
+      "powerResidualW": -2.842170943040401e-14
+    },
+    {
+      "busV": 6.0,
+      "duty": 1.0,
+      "omega": 1.0,
+      "currentA": 40.0,
+      "terminalV": 4.591271265632236,
+      "terminalPowerW": 183.65085062528945,
+      "windingHeatW": 182.85714285714286,
+      "shaftPowerW": 0.7937077681465949,
+      "torqueNm": 0.7937077681465949,
+      "powerResidualW": -5.551115123125783e-15
+    },
+    {
+      "busV": 6.0,
+      "duty": 1.0,
+      "omega": 20.0,
+      "currentA": 40.0,
+      "terminalV": 4.9682824555018685,
+      "terminalPowerW": 198.73129822007473,
+      "windingHeatW": 182.85714285714286,
+      "shaftPowerW": 15.874155362931898,
+      "torqueNm": 0.7937077681465949,
+      "powerResidualW": -2.4868995751603507e-14
+    },
+    {
+      "busV": 6.0,
+      "duty": 1.0,
+      "omega": 300.0,
+      "currentA": 0.41292771537971396,
+      "terminalV": 6.0,
+      "terminalPowerW": 2.4775662922782837,
+      "windingHeatW": 0.019486776928995433,
+      "shaftPowerW": 2.4580795153492883,
+      "torqueNm": 0.008193598384497628,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 6.0,
+      "duty": 1.0,
+      "omega": 900.0,
+      "currentA": 0.0,
+      "terminalV": 17.858424783298386,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 12.0,
+      "duty": -1.0,
+      "omega": -900.0,
+      "currentA": -0.0,
+      "terminalV": -17.858424783298386,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": -0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 12.0,
+      "duty": -1.0,
+      "omega": -300.0,
+      "currentA": -40.0,
+      "terminalV": -10.524236832528032,
+      "terminalPowerW": 420.9694733011213,
+      "windingHeatW": 182.85714285714286,
+      "shaftPowerW": 238.1123304439785,
+      "torqueNm": -0.7937077681465949,
+      "powerResidualW": -5.684341886080802e-14
+    },
+    {
+      "busV": 12.0,
+      "duty": -1.0,
+      "omega": -20.0,
+      "currentA": -40.0,
+      "terminalV": -4.9682824555018685,
+      "terminalPowerW": 198.73129822007473,
+      "windingHeatW": 182.85714285714286,
+      "shaftPowerW": 15.874155362931898,
+      "torqueNm": -0.7937077681465949,
+      "powerResidualW": -2.4868995751603507e-14
+    },
+    {
+      "busV": 12.0,
+      "duty": -1.0,
+      "omega": -1.0,
+      "currentA": -40.0,
+      "terminalV": -4.591271265632236,
+      "terminalPowerW": 183.65085062528945,
+      "windingHeatW": 182.85714285714286,
+      "shaftPowerW": 0.7937077681465949,
+      "torqueNm": -0.7937077681465949,
+      "powerResidualW": -5.551115123125783e-15
+    },
+    {
+      "busV": 12.0,
+      "duty": -1.0,
+      "omega": 0.0,
+      "currentA": -40.0,
+      "terminalV": -4.571428571428571,
+      "terminalPowerW": 182.85714285714283,
+      "windingHeatW": 182.85714285714286,
+      "shaftPowerW": -0.0,
+      "torqueNm": -0.7937077681465949,
+      "powerResidualW": -2.842170943040401e-14
+    },
+    {
+      "busV": 12.0,
+      "duty": -1.0,
+      "omega": 1.0,
+      "currentA": -40.0,
+      "terminalV": -4.551585877224906,
+      "terminalPowerW": 182.06343508899624,
+      "windingHeatW": 182.85714285714286,
+      "shaftPowerW": -0.7937077681465949,
+      "torqueNm": -0.7937077681465949,
+      "powerResidualW": -2.2870594307278225e-14
+    },
+    {
+      "busV": 12.0,
+      "duty": -1.0,
+      "omega": 20.0,
+      "currentA": -40.0,
+      "terminalV": -4.174574687355274,
+      "terminalPowerW": 166.98298749421096,
+      "windingHeatW": 182.85714285714286,
+      "shaftPowerW": -15.874155362931898,
+      "torqueNm": -0.7937077681465949,
+      "powerResidualW": -3.552713678800501e-15
+    },
+    {
+      "busV": 12.0,
+      "duty": -1.0,
+      "omega": 300.0,
+      "rejected": "Unmodeled pinch regeneration"
+    },
+    {
+      "busV": 12.0,
+      "duty": -1.0,
+      "omega": 900.0,
+      "rejected": "Pinch controller voltage domain"
+    },
+    {
+      "busV": 12.0,
+      "duty": -0.025,
+      "omega": -900.0,
+      "currentA": -0.0,
+      "terminalV": -17.858424783298386,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": -0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 12.0,
+      "duty": -0.025,
+      "omega": -300.0,
+      "currentA": -0.0,
+      "terminalV": -5.952808261099461,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": -0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 12.0,
+      "duty": -0.025,
+      "omega": -20.0,
+      "currentA": -0.0,
+      "terminalV": -0.39685388407329747,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": -0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 12.0,
+      "duty": -0.025,
+      "omega": -1.0,
+      "currentA": -2.451376425717933,
+      "terminalV": -0.30000000000000004,
+      "terminalPowerW": 0.73541292771538,
+      "windingHeatW": 0.6867710149217862,
+      "shaftPowerW": 0.04864191279359394,
+      "torqueNm": -0.04864191279359394,
+      "powerResidualW": -7.632783294297951e-17
+    },
+    {
+      "busV": 12.0,
+      "duty": -0.025,
+      "omega": 0.0,
+      "currentA": -2.6250000000000004,
+      "terminalV": -0.30000000000000004,
+      "terminalPowerW": 0.7875000000000002,
+      "windingHeatW": 0.7875000000000003,
+      "shaftPowerW": -0.0,
+      "torqueNm": -0.0520870722846203,
+      "powerResidualW": -1.1102230246251565e-16
+    },
+    {
+      "busV": 12.0,
+      "duty": -0.025,
+      "omega": 1.0,
+      "currentA": -2.7986235742820678,
+      "terminalV": -0.30000000000000004,
+      "terminalPowerW": 0.8395870722846205,
+      "windingHeatW": 0.895119304060267,
+      "shaftPowerW": -0.05553223177564665,
+      "torqueNm": -0.05553223177564665,
+      "powerResidualW": 1.734723475976807e-16
+    },
+    {
+      "busV": 12.0,
+      "duty": -0.025,
+      "omega": 20.0,
+      "currentA": -6.097471485641353,
+      "terminalV": -0.30000000000000004,
+      "terminalPowerW": 1.8292414456924062,
+      "windingHeatW": 4.249046687795357,
+      "shaftPowerW": -2.4198052421029503,
+      "torqueNm": -0.12099026210514752,
+      "powerResidualW": -8.881784197001252e-16
+    },
+    {
+      "busV": 12.0,
+      "duty": -0.025,
+      "omega": 300.0,
+      "rejected": "Unmodeled pinch regeneration"
+    },
+    {
+      "busV": 12.0,
+      "duty": -0.025,
+      "omega": 900.0,
+      "rejected": "Pinch controller voltage domain"
+    },
+    {
+      "busV": 12.0,
+      "duty": -0.0034,
+      "omega": -900.0,
+      "currentA": -0.0,
+      "terminalV": -17.858424783298386,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": -0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 12.0,
+      "duty": -0.0034,
+      "omega": -300.0,
+      "currentA": -0.0,
+      "terminalV": -5.952808261099461,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": -0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 12.0,
+      "duty": -0.0034,
+      "omega": -20.0,
+      "currentA": -0.0,
+      "terminalV": -0.39685388407329747,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": -0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 12.0,
+      "duty": -0.0034,
+      "omega": -1.0,
+      "currentA": -0.18337642571793236,
+      "terminalV": -0.040799999999999996,
+      "terminalPowerW": 0.0074817581692916395,
+      "windingHeatW": 0.003843075829609642,
+      "shaftPowerW": 0.0036386823396819985,
+      "torqueNm": -0.0036386823396819985,
+      "powerResidualW": -8.673617379884035e-19
+    },
+    {
+      "busV": 12.0,
+      "duty": -0.0034,
+      "omega": 0.0,
+      "currentA": -0.357,
+      "terminalV": -0.040799999999999996,
+      "terminalPowerW": 0.014565599999999998,
+      "windingHeatW": 0.014565599999999998,
+      "shaftPowerW": -0.0,
+      "torqueNm": -0.007083841830708359,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 12.0,
+      "duty": -0.0034,
+      "omega": 1.0,
+      "currentA": -0.5306235742820676,
+      "terminalV": -0.0408,
+      "terminalPowerW": 0.02164944183070836,
+      "windingHeatW": 0.03217844315244308,
+      "shaftPowerW": -0.01052900132173472,
+      "torqueNm": -0.01052900132173472,
+      "powerResidualW": 1.734723475976807e-18
+    },
+    {
+      "busV": 12.0,
+      "duty": -0.0034,
+      "omega": 20.0,
+      "currentA": -3.829471485641353,
+      "terminalV": -0.0408,
+      "terminalPowerW": 0.15624243661416723,
+      "windingHeatW": 1.675983069638879,
+      "shaftPowerW": -1.5197406330247119,
+      "torqueNm": -0.07598703165123559,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 12.0,
+      "duty": -0.0034,
+      "omega": 300.0,
+      "rejected": "Unmodeled pinch regeneration"
+    },
+    {
+      "busV": 12.0,
+      "duty": -0.0034,
+      "omega": 900.0,
+      "rejected": "Pinch controller voltage domain"
+    },
+    {
+      "busV": 12.0,
+      "duty": 0.0,
+      "omega": -900.0,
+      "currentA": 0.0,
+      "terminalV": -17.858424783298386,
+      "terminalPowerW": -0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": -0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 12.0,
+      "duty": 0.0,
+      "omega": -300.0,
+      "currentA": 0.0,
+      "terminalV": -5.952808261099461,
+      "terminalPowerW": -0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": -0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 12.0,
+      "duty": 0.0,
+      "omega": -20.0,
+      "currentA": 0.0,
+      "terminalV": -0.39685388407329747,
+      "terminalPowerW": -0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": -0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 12.0,
+      "duty": 0.0,
+      "omega": -1.0,
+      "currentA": 0.0,
+      "terminalV": -0.01984269420366487,
+      "terminalPowerW": -0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": -0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 12.0,
+      "duty": 0.0,
+      "omega": 0.0,
+      "currentA": 0.0,
+      "terminalV": 0.0,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 12.0,
+      "duty": 0.0,
+      "omega": 1.0,
+      "currentA": 0.0,
+      "terminalV": 0.01984269420366487,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 12.0,
+      "duty": 0.0,
+      "omega": 20.0,
+      "currentA": 0.0,
+      "terminalV": 0.39685388407329747,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 12.0,
+      "duty": 0.0,
+      "omega": 300.0,
+      "currentA": 0.0,
+      "terminalV": 5.952808261099461,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 12.0,
+      "duty": 0.0,
+      "omega": 900.0,
+      "currentA": 0.0,
+      "terminalV": 17.858424783298386,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 12.0,
+      "duty": 0.0034,
+      "omega": -900.0,
+      "rejected": "Pinch controller voltage domain"
+    },
+    {
+      "busV": 12.0,
+      "duty": 0.0034,
+      "omega": -300.0,
+      "rejected": "Unmodeled pinch regeneration"
+    },
+    {
+      "busV": 12.0,
+      "duty": 0.0034,
+      "omega": -20.0,
+      "currentA": 3.829471485641353,
+      "terminalV": 0.0408,
+      "terminalPowerW": 0.15624243661416723,
+      "windingHeatW": 1.675983069638879,
+      "shaftPowerW": -1.5197406330247119,
+      "torqueNm": 0.07598703165123559,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 12.0,
+      "duty": 0.0034,
+      "omega": -1.0,
+      "currentA": 0.5306235742820676,
+      "terminalV": 0.0408,
+      "terminalPowerW": 0.02164944183070836,
+      "windingHeatW": 0.03217844315244308,
+      "shaftPowerW": -0.01052900132173472,
+      "torqueNm": 0.01052900132173472,
+      "powerResidualW": 1.734723475976807e-18
+    },
+    {
+      "busV": 12.0,
+      "duty": 0.0034,
+      "omega": 0.0,
+      "currentA": 0.357,
+      "terminalV": 0.040799999999999996,
+      "terminalPowerW": 0.014565599999999998,
+      "windingHeatW": 0.014565599999999998,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.007083841830708359,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 12.0,
+      "duty": 0.0034,
+      "omega": 1.0,
+      "currentA": 0.18337642571793236,
+      "terminalV": 0.040799999999999996,
+      "terminalPowerW": 0.0074817581692916395,
+      "windingHeatW": 0.003843075829609642,
+      "shaftPowerW": 0.0036386823396819985,
+      "torqueNm": 0.0036386823396819985,
+      "powerResidualW": -8.673617379884035e-19
+    },
+    {
+      "busV": 12.0,
+      "duty": 0.0034,
+      "omega": 20.0,
+      "currentA": 0.0,
+      "terminalV": 0.39685388407329747,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 12.0,
+      "duty": 0.0034,
+      "omega": 300.0,
+      "currentA": 0.0,
+      "terminalV": 5.952808261099461,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 12.0,
+      "duty": 0.0034,
+      "omega": 900.0,
+      "currentA": 0.0,
+      "terminalV": 17.858424783298386,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 12.0,
+      "duty": 0.025,
+      "omega": -900.0,
+      "rejected": "Pinch controller voltage domain"
+    },
+    {
+      "busV": 12.0,
+      "duty": 0.025,
+      "omega": -300.0,
+      "rejected": "Unmodeled pinch regeneration"
+    },
+    {
+      "busV": 12.0,
+      "duty": 0.025,
+      "omega": -20.0,
+      "currentA": 6.097471485641353,
+      "terminalV": 0.30000000000000004,
+      "terminalPowerW": 1.8292414456924062,
+      "windingHeatW": 4.249046687795357,
+      "shaftPowerW": -2.4198052421029503,
+      "torqueNm": 0.12099026210514752,
+      "powerResidualW": -8.881784197001252e-16
+    },
+    {
+      "busV": 12.0,
+      "duty": 0.025,
+      "omega": -1.0,
+      "currentA": 2.7986235742820678,
+      "terminalV": 0.30000000000000004,
+      "terminalPowerW": 0.8395870722846205,
+      "windingHeatW": 0.895119304060267,
+      "shaftPowerW": -0.05553223177564665,
+      "torqueNm": 0.05553223177564665,
+      "powerResidualW": 1.734723475976807e-16
+    },
+    {
+      "busV": 12.0,
+      "duty": 0.025,
+      "omega": 0.0,
+      "currentA": 2.6250000000000004,
+      "terminalV": 0.30000000000000004,
+      "terminalPowerW": 0.7875000000000002,
+      "windingHeatW": 0.7875000000000003,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0520870722846203,
+      "powerResidualW": -1.1102230246251565e-16
+    },
+    {
+      "busV": 12.0,
+      "duty": 0.025,
+      "omega": 1.0,
+      "currentA": 2.451376425717933,
+      "terminalV": 0.30000000000000004,
+      "terminalPowerW": 0.73541292771538,
+      "windingHeatW": 0.6867710149217862,
+      "shaftPowerW": 0.04864191279359394,
+      "torqueNm": 0.04864191279359394,
+      "powerResidualW": -7.632783294297951e-17
+    },
+    {
+      "busV": 12.0,
+      "duty": 0.025,
+      "omega": 20.0,
+      "currentA": 0.0,
+      "terminalV": 0.39685388407329747,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 12.0,
+      "duty": 0.025,
+      "omega": 300.0,
+      "currentA": 0.0,
+      "terminalV": 5.952808261099461,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 12.0,
+      "duty": 0.025,
+      "omega": 900.0,
+      "currentA": 0.0,
+      "terminalV": 17.858424783298386,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    },
+    {
+      "busV": 12.0,
+      "duty": 1.0,
+      "omega": -900.0,
+      "rejected": "Pinch controller voltage domain"
+    },
+    {
+      "busV": 12.0,
+      "duty": 1.0,
+      "omega": -300.0,
+      "rejected": "Unmodeled pinch regeneration"
+    },
+    {
+      "busV": 12.0,
+      "duty": 1.0,
+      "omega": -20.0,
+      "currentA": 40.0,
+      "terminalV": 4.174574687355274,
+      "terminalPowerW": 166.98298749421096,
+      "windingHeatW": 182.85714285714286,
+      "shaftPowerW": -15.874155362931898,
+      "torqueNm": 0.7937077681465949,
+      "powerResidualW": -3.552713678800501e-15
+    },
+    {
+      "busV": 12.0,
+      "duty": 1.0,
+      "omega": -1.0,
+      "currentA": 40.0,
+      "terminalV": 4.551585877224906,
+      "terminalPowerW": 182.06343508899624,
+      "windingHeatW": 182.85714285714286,
+      "shaftPowerW": -0.7937077681465949,
+      "torqueNm": 0.7937077681465949,
+      "powerResidualW": -2.2870594307278225e-14
+    },
+    {
+      "busV": 12.0,
+      "duty": 1.0,
+      "omega": 0.0,
+      "currentA": 40.0,
+      "terminalV": 4.571428571428571,
+      "terminalPowerW": 182.85714285714283,
+      "windingHeatW": 182.85714285714286,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.7937077681465949,
+      "powerResidualW": -2.842170943040401e-14
+    },
+    {
+      "busV": 12.0,
+      "duty": 1.0,
+      "omega": 1.0,
+      "currentA": 40.0,
+      "terminalV": 4.591271265632236,
+      "terminalPowerW": 183.65085062528945,
+      "windingHeatW": 182.85714285714286,
+      "shaftPowerW": 0.7937077681465949,
+      "torqueNm": 0.7937077681465949,
+      "powerResidualW": -5.551115123125783e-15
+    },
+    {
+      "busV": 12.0,
+      "duty": 1.0,
+      "omega": 20.0,
+      "currentA": 40.0,
+      "terminalV": 4.9682824555018685,
+      "terminalPowerW": 198.73129822007473,
+      "windingHeatW": 182.85714285714286,
+      "shaftPowerW": 15.874155362931898,
+      "torqueNm": 0.7937077681465949,
+      "powerResidualW": -2.4868995751603507e-14
+    },
+    {
+      "busV": 12.0,
+      "duty": 1.0,
+      "omega": 300.0,
+      "currentA": 40.0,
+      "terminalV": 10.524236832528032,
+      "terminalPowerW": 420.9694733011213,
+      "windingHeatW": 182.85714285714286,
+      "shaftPowerW": 238.1123304439785,
+      "torqueNm": 0.7937077681465949,
+      "powerResidualW": -5.684341886080802e-14
+    },
+    {
+      "busV": 12.0,
+      "duty": 1.0,
+      "omega": 900.0,
+      "currentA": 0.0,
+      "terminalV": 17.858424783298386,
+      "terminalPowerW": 0.0,
+      "windingHeatW": 0.0,
+      "shaftPowerW": 0.0,
+      "torqueNm": 0.0,
+      "powerResidualW": 0.0
+    }
+  ],
+  "geometryComparisons": [
+    {
+      "resolution": 128,
+      "pose": [
+        0.658,
+        0.0,
+        0.0
+      ],
+      "outcome": "RETURNED",
+      "reason": null,
+      "contacts": 0,
+      "errors": {
+        "potentialJ": 0.0,
+        "noteForceWorldN": 0.0,
+        "noteMomentWorldNm": 0.0,
+        "cradleReactionWorldN": 0.0,
+        "cradleMomentWorldNm": 0.0,
+        "rotorContactTorqueNm": 0.0
+      },
+      "scalarSeconds": 0.00017529999604448676,
+      "arraySeconds": 0.0008853999970597215
+    },
+    {
+      "resolution": 128,
+      "pose": [
+        0.4,
+        0.0,
+        0.0
+      ],
+      "outcome": "RETURNED",
+      "reason": null,
+      "contacts": 0,
+      "errors": {
+        "potentialJ": 0.0,
+        "noteForceWorldN": 0.0,
+        "noteMomentWorldNm": 0.0,
+        "cradleReactionWorldN": 0.0,
+        "cradleMomentWorldNm": 0.0,
+        "rotorContactTorqueNm": 0.0
+      },
+      "scalarSeconds": 0.01420499999949243,
+      "arraySeconds": 0.0013660000040545128
+    },
+    {
+      "resolution": 128,
+      "pose": [
+        0.324,
+        0.0,
+        0.0
+      ],
+      "outcome": "RETURNED",
+      "reason": null,
+      "contacts": 64,
+      "errors": {
+        "potentialJ": 4.336808689942018e-19,
+        "noteForceWorldN": 1.2923689896027213e-15,
+        "noteMomentWorldNm": 2.340792490396204e-16,
+        "cradleReactionWorldN": 1.2923689896027213e-15,
+        "cradleMomentWorldNm": 4.0007060164715114e-16,
+        "rotorContactTorqueNm": 6.938893903907228e-18
+      },
+      "scalarSeconds": 0.00519930000155,
+      "arraySeconds": 0.0017557999963173643
+    },
+    {
+      "resolution": 128,
+      "pose": [
+        0.185,
+        0.0,
+        0.0
+      ],
+      "outcome": "RETURNED",
+      "reason": null,
+      "contacts": 88,
+      "errors": {
+        "potentialJ": 8.673617379884035e-19,
+        "noteForceWorldN": 5.329070518200751e-15,
+        "noteMomentWorldNm": 2.286582381771929e-16,
+        "cradleReactionWorldN": 5.329070518200751e-15,
+        "cradleMomentWorldNm": 2.231288070975168e-16,
+        "rotorContactTorqueNm": 1.734723475976807e-17
+      },
+      "scalarSeconds": 0.005105699994601309,
+      "arraySeconds": 0.0015177000022958964
+    },
+    {
+      "resolution": 128,
+      "pose": [
+        0.178,
+        0.0,
+        0.0
+      ],
+      "outcome": "RETURNED",
+      "reason": null,
+      "contacts": 84,
+      "errors": {
+        "potentialJ": 8.673617379884035e-19,
+        "noteForceWorldN": 5.329070518200751e-15,
+        "noteMomentWorldNm": 3.0726289568239196e-16,
+        "cradleReactionWorldN": 5.329070518200751e-15,
+        "cradleMomentWorldNm": 3.211406834902064e-16,
+        "rotorContactTorqueNm": 2.0816681711721685e-17
+      },
+      "scalarSeconds": 0.005075799999758601,
+      "arraySeconds": 0.0014789000051678158
+    },
+    {
+      "resolution": 128,
+      "pose": [
+        0.185,
+        5e-05,
+        0.0
+      ],
+      "outcome": "RETURNED",
+      "reason": null,
+      "contacts": 88,
+      "errors": {
+        "potentialJ": 8.673617379884035e-19,
+        "noteForceWorldN": 8.881784197001252e-16,
+        "noteMomentWorldNm": 2.5673907444456745e-16,
+        "cradleReactionWorldN": 8.881784197001252e-16,
+        "cradleMomentWorldNm": 2.0816681711721685e-16,
+        "rotorContactTorqueNm": 6.938893903907228e-18
+      },
+      "scalarSeconds": 0.0051412999964668415,
+      "arraySeconds": 0.0016264000005321577
+    },
+    {
+      "resolution": 128,
+      "pose": [
+        0.185,
+        -5e-05,
+        0.0
+      ],
+      "outcome": "RETURNED",
+      "reason": null,
+      "contacts": 88,
+      "errors": {
+        "potentialJ": 4.336808689942018e-19,
+        "noteForceWorldN": 1.7763568394002505e-15,
+        "noteMomentWorldNm": 5.967448757360216e-16,
+        "cradleReactionWorldN": 1.7763568394002505e-15,
+        "cradleMomentWorldNm": 4.3021142204224816e-16,
+        "rotorContactTorqueNm": 1.0408340855860843e-17
+      },
+      "scalarSeconds": 0.00556930000311695,
+      "arraySeconds": 0.0014676000064355321
+    },
+    {
+      "resolution": 128,
+      "pose": [
+        0.185,
+        0.0005,
+        0.0
+      ],
+      "outcome": "REJECTED",
+      "reason": "UNSUPPORTED_DEEP_OR_CAVITY_CONTACT",
+      "contacts": null,
+      "errors": {},
+      "scalarSeconds": 0.001335000000835862,
+      "arraySeconds": 0.0008052999983192421
+    },
+    {
+      "resolution": 128,
+      "pose": [
+        0.185,
+        0.02,
+        0.0
+      ],
+      "outcome": "REJECTED",
+      "reason": "UNSUPPORTED_DEEP_OR_CAVITY_CONTACT",
+      "contacts": null,
+      "errors": {},
+      "scalarSeconds": 0.0005868000007467344,
+      "arraySeconds": 0.000494699997943826
+    },
+    {
+      "resolution": 128,
+      "pose": [
+        0.185,
+        0.0,
+        0.012
+      ],
+      "outcome": "RETURNED",
+      "reason": null,
+      "contacts": 8,
+      "errors": {
+        "potentialJ": 6.776263578034403e-21,
+        "noteForceWorldN": 1.3877787807814457e-17,
+        "noteMomentWorldNm": 8.673617379884035e-19,
+        "cradleReactionWorldN": 1.3877787807814457e-17,
+        "cradleMomentWorldNm": 1.734723475976807e-18,
+        "rotorContactTorqueNm": 1.0842021724855044e-19
+      },
+      "scalarSeconds": 0.0010316999978385866,
+      "arraySeconds": 0.0011144999953103252
+    },
+    {
+      "resolution": 1024,
+      "pose": [
+        0.658,
+        0.0,
+        0.0
+      ],
+      "outcome": "RETURNED",
+      "reason": null,
+      "contacts": 0,
+      "errors": {
+        "potentialJ": 0.0,
+        "noteForceWorldN": 0.0,
+        "noteMomentWorldNm": 0.0,
+        "cradleReactionWorldN": 0.0,
+        "cradleMomentWorldNm": 0.0,
+        "rotorContactTorqueNm": 0.0
+      },
+      "scalarSeconds": 9.829999908106402e-05,
+      "arraySeconds": 0.0005959999980404973
+    },
+    {
+      "resolution": 1024,
+      "pose": [
+        0.4,
+        0.0,
+        0.0
+      ],
+      "outcome": "RETURNED",
+      "reason": null,
+      "contacts": 0,
+      "errors": {
+        "potentialJ": 0.0,
+        "noteForceWorldN": 0.0,
+        "noteMomentWorldNm": 0.0,
+        "cradleReactionWorldN": 0.0,
+        "cradleMomentWorldNm": 0.0,
+        "rotorContactTorqueNm": 0.0
+      },
+      "scalarSeconds": 0.7945510999998078,
+      "arraySeconds": 0.0008223999975598417
+    },
+    {
+      "resolution": 1024,
+      "pose": [
+        0.324,
+        0.0,
+        0.0
+      ],
+      "outcome": "RETURNED",
+      "reason": null,
+      "contacts": 3768,
+      "errors": {
+        "potentialJ": 3.469446951953614e-18,
+        "noteForceWorldN": 1.7763568394002505e-14,
+        "noteMomentWorldNm": 1.4938311174259467e-15,
+        "cradleReactionWorldN": 1.7763568394002505e-14,
+        "cradleMomentWorldNm": 3.8394936237523894e-15,
+        "rotorContactTorqueNm": 3.122502256758253e-17
+      },
+      "scalarSeconds": 0.22454719999950612,
+      "arraySeconds": 0.01024630000028992
+    },
+    {
+      "resolution": 1024,
+      "pose": [
+        0.185,
+        0.0,
+        0.0
+      ],
+      "outcome": "RETURNED",
+      "reason": null,
+      "contacts": 5928,
+      "errors": {
+        "potentialJ": 1.6479873021779667e-17,
+        "noteForceWorldN": 1.9539925233402755e-14,
+        "noteMomentWorldNm": 2.498001805406602e-16,
+        "cradleReactionWorldN": 1.9539925233402755e-14,
+        "cradleMomentWorldNm": 1.683108676302919e-15,
+        "rotorContactTorqueNm": 1.0408340855860843e-16
+      },
+      "scalarSeconds": 0.3123464999953285,
+      "arraySeconds": 0.012601900001754984
+    },
+    {
+      "resolution": 1024,
+      "pose": [
+        0.178,
+        0.0,
+        0.0
+      ],
+      "outcome": "RETURNED",
+      "reason": null,
+      "contacts": 5860,
+      "errors": {
+        "potentialJ": 1.734723475976807e-17,
+        "noteForceWorldN": 1.4210854715202004e-14,
+        "noteMomentWorldNm": 4.539825546739928e-16,
+        "cradleReactionWorldN": 1.4210854715202004e-14,
+        "cradleMomentWorldNm": 4.487783842460624e-16,
+        "rotorContactTorqueNm": 1.0755285551056204e-16
+      },
+      "scalarSeconds": 0.3091500999944401,
+      "arraySeconds": 0.011919700002181344
+    },
+    {
+      "resolution": 1024,
+      "pose": [
+        0.185,
+        5e-05,
+        0.0
+      ],
+      "outcome": "RETURNED",
+      "reason": null,
+      "contacts": 5948,
+      "errors": {
+        "potentialJ": 2.7321894746634712e-17,
+        "noteForceWorldN": 3.6415315207705135e-14,
+        "noteMomentWorldNm": 1.1518563880486e-15,
+        "cradleReactionWorldN": 3.6415315207705135e-14,
+        "cradleMomentWorldNm": 2.2620794126737565e-15,
+        "rotorContactTorqueNm": 5.898059818321144e-17
+      },
+      "scalarSeconds": 0.3101373999961652,
+      "arraySeconds": 0.01266619999660179
+    },
+    {
+      "resolution": 1024,
+      "pose": [
+        0.185,
+        -5e-05,
+        0.0
+      ],
+      "outcome": "RETURNED",
+      "reason": null,
+      "contacts": 5948,
+      "errors": {
+        "potentialJ": 2.0816681711721685e-17,
+        "noteForceWorldN": 1.9984014443252818e-14,
+        "noteMomentWorldNm": 1.1310397063368782e-15,
+        "cradleReactionWorldN": 1.9984014443252818e-14,
+        "cradleMomentWorldNm": 2.6853519408120974e-15,
+        "rotorContactTorqueNm": 7.28583859910259e-17
+      },
+      "scalarSeconds": 0.3134557000012137,
+      "arraySeconds": 0.01215290000254754
+    },
+    {
+      "resolution": 1024,
+      "pose": [
+        0.185,
+        0.0005,
+        0.0
+      ],
+      "outcome": "REJECTED",
+      "reason": "UNSUPPORTED_DEEP_OR_CAVITY_CONTACT",
+      "contacts": null,
+      "errors": {},
+      "scalarSeconds": 0.03248429999803193,
+      "arraySeconds": 0.003083200004766695
+    },
+    {
+      "resolution": 1024,
+      "pose": [
+        0.185,
+        0.02,
+        0.0
+      ],
+      "outcome": "REJECTED",
+      "reason": "UNSUPPORTED_DEEP_OR_CAVITY_CONTACT",
+      "contacts": null,
+      "errors": {},
+      "scalarSeconds": 0.00905330000387039,
+      "arraySeconds": 0.00217759999941336
+    },
+    {
+      "resolution": 1024,
+      "pose": [
+        0.185,
+        0.0,
+        0.012
+      ],
+      "outcome": "RETURNED",
+      "reason": null,
+      "contacts": 692,
+      "errors": {
+        "potentialJ": 5.421010862427522e-20,
+        "noteForceWorldN": 2.7755575615628914e-16,
+        "noteMomentWorldNm": 1.0393517779283892e-17,
+        "cradleReactionWorldN": 2.7755575615628914e-16,
+        "cradleMomentWorldNm": 1.0414058328254809e-17,
+        "rotorContactTorqueNm": 6.505213034913027e-19
+      },
+      "scalarSeconds": 0.03889200000412529,
+      "arraySeconds": 0.002799800000502728
+    }
+  ],
+  "freshZeroState": true,
+  "runtimeSeconds": 2.4732024999975692,
+  "limits": [
+    "Prescribed-state and electrical preflight only; no acquisition, retention or hardware acceptance"
+  ]
+}

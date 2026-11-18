@@ -1,0 +1,24 @@
+{
+  "schema": "native-pressure-lift-join/1",
+  "accepted": false,
+  "hardwareValidated": false,
+  "sourceTrajectorySha256": "56ce4d15a22513cc04d137b5f8d6cab2fc9057be7409cdbdf1295c46d449f800",
+  "nativeBindingSha256": "6d8a1ef819b918d11380a96137f6573ca30441d8ce947efb86a670c7134314d8",
+  "historicalLiftSourceSha256": "86a0dd663effa02d0748bfc95776bf294fd0c5728bf5e37da26242bba893f8f0",
+  "attainedGroundIndex": true,
+  "sourceTimeS": 7.550499999998535,
+  "sourceStateSha256": "0e0dd8ab5f1e4361c9a2847ab747228debb95edf9fc52093f3584c832b956c34",
+  "physicalStateMutated": false,
+  "blockingReasons": [
+    "Current native binding covers a sampled flat-floor corridor; lifted and pitched hard-part clearance is unbound.",
+    "Current pressure state constrains NOTE Z/roll/pitch. Releasing these constraints requires explicit new degrees of freedom, floor support, inertia and energy accounting.",
+    "Historical lift class imports fixed patch witnesses and inheritedNormalSpringJ; this is not the native finite-area pressure state or constitutive law.",
+    "Lift and pitch moving masses, native transmission transforms and collision geometry must be registered before a continuous physical handoff.",
+    "Staged launcher remains a separate configuration; no acquired NOTE state may be replaced by its initial pose."
+  ],
+  "nextSupportedWork": "Bind native moving-body mass/COM/inertia and lift/pitch transforms, then couple the same pressure field to free NOTE and finite actuators on one supply with continuous state and energy. Recheck dynamic support and clearance before feed.",
+  "limits": [
+    "Executable source/contract composition rejection, not a simulated lift or hardware failure",
+    "No Fusion call, audit replay, computer control or native mutation"
+  ]
+}
