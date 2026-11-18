@@ -1,5 +1,7 @@
 # Native-backed launcher and drivetrain experiment
 
+A later [fixed-law quadrature investigation](LAUNCHER_QUADRATURE.md) passes declared numerical checks for staged release and simultaneous driving. It preserves the original rejection below and does not claim calibrated performance or a continuous acquisition-to-launch cycle.
+
 This experiment connects four rotating launcher treads, a free six-degree-of-freedom NOTE, the existing six-wheel drivetrain and a shared finite electrical supply in one MuJoCo solve. Contact forces cause release and react on the robot. **It is not an accepted shooting model or a complete driving/intake/lift/shoot demo:** collision refinement changes both speed and whether the NOTE releases within the experiment. No hardware prediction or scoring claim is supported.
 
 The source of truth remains the preserved, reopened **734-body native Fusion archive**, SHA-256 `5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96`. This work made no CAD changes and did not interact with the uncertain live Fusion session. Native CAD and supplier source geometry remain private. The earlier drive/retention experiment remains separate; its state is not teleported into this launcher.

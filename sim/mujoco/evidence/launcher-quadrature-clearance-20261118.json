@@ -1,0 +1,229 @@
+{
+  "schema": "launcher-quadrature-native-clearance/1",
+  "acceptance": false,
+  "stationary": {
+    "schema": "native-launcher-envelope-witnesses/1",
+    "complete": true,
+    "acceptance": false,
+    "bindingSha256": "4f7fb81f5f7759d48692c8de9bdc4307501f07af2e94dd8b075b1e085798c7ce",
+    "nativeEnvelopeSha256": "da19ef790b29d23d88b482be3c5625e2c678a376d633fe1834fc30e636655463",
+    "sourceReceiptSha256": "c82c8b16b31ee5c54bb8c79cb9eac736f48737acc3f6f0fbdbae966e5bd3d1dc",
+    "sourceTraceSha256": "50a5ff0abd2545e8eeed33cdd58b3c62d462cbb2fa3d2a9a99dd8ef5a9e65003",
+    "scriptSha256": "f2f150b5a87fabf59165af2b98038ecb7fbe0ec95bc1c6eb198930fa6f1a0b6d",
+    "mujocoVersion": "4.0.1",
+    "controls": {
+      "overlapM": -0.04127524734925926,
+      "separatedM": 0.1275533301257356
+    },
+    "torusCenterlineSagittaM": 2.801656169459932e-09,
+    "extraMarginM": 1e-07,
+    "queryCount": 602248,
+    "witnessCount": 282,
+    "unresolvedWitnessCount": 0,
+    "minimumGapM": 0.0003927600806597313,
+    "limits": [
+      "Finite saved states only, not continuous clearance between samples",
+      "Containing cylinder is all-phase but any overlap remains unknown; no favorable source clocking substituted",
+      "Capsules inflated by centerline sagitta plus margin contain the nominal rigid torus, not a measured deformed NOTE",
+      "Only four bare-wheel source envelopes; full robot hard parts, fasteners, installed registration and physical compliance remain unqualified"
+    ]
+  },
+  "driving": {
+    "schema": "native-launcher-envelope-witnesses/1",
+    "complete": true,
+    "acceptance": false,
+    "bindingSha256": "4f7fb81f5f7759d48692c8de9bdc4307501f07af2e94dd8b075b1e085798c7ce",
+    "nativeEnvelopeSha256": "da19ef790b29d23d88b482be3c5625e2c678a376d633fe1834fc30e636655463",
+    "sourceReceiptSha256": "0555d259f2200052e4bfbe04a8da21f86bd2c81faf75cab7c703826b1e589374",
+    "sourceTraceSha256": "0ac731073a5cfbf23025719eedf265c135f791cfef5d78d98d2e9ce197422f1b",
+    "scriptSha256": "f2f150b5a87fabf59165af2b98038ecb7fbe0ec95bc1c6eb198930fa6f1a0b6d",
+    "mujocoVersion": "4.0.1",
+    "controls": {
+      "overlapM": -0.04127524734925926,
+      "separatedM": 0.1275533301257356
+    },
+    "torusCenterlineSagittaM": 2.801656169459932e-09,
+    "extraMarginM": 1e-07,
+    "queryCount": 603857,
+    "witnessCount": 285,
+    "unresolvedWitnessCount": 0,
+    "minimumGapM": 0.00040207104936645227,
+    "limits": [
+      "Finite saved states only, not continuous clearance between samples",
+      "Containing cylinder is all-phase but any overlap remains unknown; no favorable source clocking substituted",
+      "Capsules inflated by centerline sagitta plus margin contain the nominal rigid torus, not a measured deformed NOTE",
+      "Only four bare-wheel source envelopes; full robot hard parts, fasteners, installed registration and physical compliance remain unqualified"
+    ]
+  },
+  "broadphase": {
+    "schema": "preserved-native-launcher-broadphase/1",
+    "complete": true,
+    "acceptance": false,
+    "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+    "preservedNativeScanSha256": "3b311a1546d1e24ea92b80d16459174cbc547f2db92bcf3974b81b43f90d132f",
+    "sourceTraceSha256": "50a5ff0abd2545e8eeed33cdd58b3c62d462cbb2fa3d2a9a99dd8ef5a9e65003",
+    "scriptSha256": "3328bec4a3a474dc93186e5909b3ed3036ea2d57f67edbe8b198b357a396a3f7",
+    "physicalBodies": 712,
+    "finiteWitnesses": 282,
+    "candidateParts": [
+      {
+        "sourceRootIndex": 151,
+        "name": "cartridge -1 -152.4 original wheel shell representation",
+        "classification": "bare-wheel-envelope",
+        "firstTimeS": 0.0,
+        "lastTimeS": 0.09450000000000168,
+        "witnesses": 190
+      },
+      {
+        "sourceRootIndex": 152,
+        "name": "cartridge -1 -152.4 nominal tread annulus",
+        "classification": "intended-tread",
+        "firstTimeS": 0.0,
+        "lastTimeS": 0.09450000000000168,
+        "witnesses": 190
+      },
+      {
+        "sourceRootIndex": 156,
+        "name": "cartridge -1 -152.4 drilled bearing carrier 40",
+        "classification": "UNRESOLVED_HARD_PART_BOUND",
+        "firstTimeS": 0.0,
+        "lastTimeS": 0.10450000000000197,
+        "witnesses": 210
+      },
+      {
+        "sourceRootIndex": 162,
+        "name": "cartridge -1 -152.4 drilled motor slider",
+        "classification": "UNRESOLVED_HARD_PART_BOUND",
+        "firstTimeS": 0.0,
+        "lastTimeS": 0.13750000000000118,
+        "witnesses": 276
+      },
+      {
+        "sourceRootIndex": 163,
+        "name": "cartridge -1 -152.4 slotted carrier bridge proposal",
+        "classification": "UNRESOLVED_HARD_PART_BOUND",
+        "firstTimeS": 0.0,
+        "lastTimeS": 0.14030000000000087,
+        "witnesses": 282
+      },
+      {
+        "sourceRootIndex": 184,
+        "name": "cartridge -1 -152.4 belt pitch band representation",
+        "classification": "UNRESOLVED_HARD_PART_BOUND",
+        "firstTimeS": 0.0,
+        "lastTimeS": 0.12050000000000242,
+        "witnesses": 206
+      },
+      {
+        "sourceRootIndex": 186,
+        "name": "cartridge -1 152.4 original wheel shell representation",
+        "classification": "bare-wheel-envelope",
+        "firstTimeS": 0.0,
+        "lastTimeS": 0.09550000000000171,
+        "witnesses": 192
+      },
+      {
+        "sourceRootIndex": 187,
+        "name": "cartridge -1 152.4 nominal tread annulus",
+        "classification": "intended-tread",
+        "firstTimeS": 0.0,
+        "lastTimeS": 0.09450000000000168,
+        "witnesses": 190
+      },
+      {
+        "sourceRootIndex": 189,
+        "name": "cartridge -1 152.4 drilled bearing carrier -40",
+        "classification": "UNRESOLVED_HARD_PART_BOUND",
+        "firstTimeS": 0.0,
+        "lastTimeS": 0.10450000000000197,
+        "witnesses": 210
+      },
+      {
+        "sourceRootIndex": 221,
+        "name": "cartridge 1 -152.4 original wheel shell representation",
+        "classification": "bare-wheel-envelope",
+        "firstTimeS": 0.0,
+        "lastTimeS": 0.0915000000000016,
+        "witnesses": 184
+      },
+      {
+        "sourceRootIndex": 222,
+        "name": "cartridge 1 -152.4 nominal tread annulus",
+        "classification": "intended-tread",
+        "firstTimeS": 0.0,
+        "lastTimeS": 0.09250000000000162,
+        "witnesses": 186
+      },
+      {
+        "sourceRootIndex": 226,
+        "name": "cartridge 1 -152.4 drilled bearing carrier 40",
+        "classification": "UNRESOLVED_HARD_PART_BOUND",
+        "firstTimeS": 0.0,
+        "lastTimeS": 0.09650000000000174,
+        "witnesses": 194
+      },
+      {
+        "sourceRootIndex": 232,
+        "name": "cartridge 1 -152.4 drilled motor slider",
+        "classification": "UNRESOLVED_HARD_PART_BOUND",
+        "firstTimeS": 0.0,
+        "lastTimeS": 0.12100000000000244,
+        "witnesses": 243
+      },
+      {
+        "sourceRootIndex": 233,
+        "name": "cartridge 1 -152.4 slotted carrier bridge proposal",
+        "classification": "UNRESOLVED_HARD_PART_BOUND",
+        "firstTimeS": 0.0,
+        "lastTimeS": 0.12500000000000255,
+        "witnesses": 251
+      },
+      {
+        "sourceRootIndex": 254,
+        "name": "cartridge 1 -152.4 belt pitch band representation",
+        "classification": "UNRESOLVED_HARD_PART_BOUND",
+        "firstTimeS": 0.0,
+        "lastTimeS": 0.0985000000000018,
+        "witnesses": 162
+      },
+      {
+        "sourceRootIndex": 256,
+        "name": "cartridge 1 152.4 original wheel shell representation",
+        "classification": "bare-wheel-envelope",
+        "firstTimeS": 0.0,
+        "lastTimeS": 0.0915000000000016,
+        "witnesses": 184
+      },
+      {
+        "sourceRootIndex": 257,
+        "name": "cartridge 1 152.4 nominal tread annulus",
+        "classification": "intended-tread",
+        "firstTimeS": 0.0,
+        "lastTimeS": 0.09250000000000162,
+        "witnesses": 186
+      },
+      {
+        "sourceRootIndex": 259,
+        "name": "cartridge 1 152.4 drilled bearing carrier -40",
+        "classification": "UNRESOLVED_HARD_PART_BOUND",
+        "firstTimeS": 0.0,
+        "lastTimeS": 0.09650000000000174,
+        "witnesses": 194
+      },
+      {
+        "sourceRootIndex": 161,
+        "name": "cartridge -1 -152.4 NEO body envelope",
+        "classification": "UNRESOLVED_HARD_PART_BOUND",
+        "firstTimeS": 0.11500000000000227,
+        "lastTimeS": 0.12050000000000242,
+        "witnesses": 12
+      }
+    ],
+    "limits": [
+      "Native floor-pose bounds only; disjoint bounds exclude overlap, overlapping bounds remain UNKNOWN",
+      "Original internal robot pose is held; only the recorded chassis rigid transform is applied",
+      "Combined outer AABB and annular-distance lower bounds preserve the hollow-center exclusion; surviving overlaps are not Boolean witnesses",
+      "Dynamic wheel clocking requires the separately checked containing envelope; no new Fusion access or full material clearance claim"
+    ]
+  }
+}

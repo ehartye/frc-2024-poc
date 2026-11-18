@@ -1,0 +1,81 @@
+{
+  "schema": "launcher-quadrature-proposal/1",
+  "acceptance": false,
+  "declaredBeforeTrajectoryRuns": true,
+  "referenceSegments": 128,
+  "referenceImpedance": 0.9,
+  "referenceNormalTargetNPerWheelHypothesis": 25,
+  "referenceDamping": "2*sqrt(referenceStiffness), preserved from the original baseline",
+  "quadratureWeight": "128 / segments; independent of active contact count",
+  "scaling": "q=segments/128; d=0.9/(0.9+q*0.1); K=Kref*d/0.9; B=Bref*d/0.9",
+  "noslipIterations": 0,
+  "staticFineComparison": {
+    "resolutions": [
+      2048,
+      4096
+    ],
+    "forceRelativeTolerance": 0.01,
+    "forceAbsoluteFloorN": 0.1,
+    "torqueAbsoluteFloorNm": 0.01,
+    "posesAdvanceM": [
+      -0.03,
+      0,
+      0.03,
+      0.06,
+      0.09
+    ],
+    "normalOffsetsM": [
+      -0.0005,
+      0,
+      0.0005
+    ],
+    "velocityPairsNoteRimMps": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "halfCellPhaseAlsoRequired": true
+  },
+  "trajectoryFineComparison": {
+    "resolutions": [
+      2048,
+      4096
+    ],
+    "timestepS": [
+      0.0001,
+      5e-05
+    ],
+    "sameReleaseClassification": true,
+    "maximumSharedTimeNotePositionDifferenceM": 0.001,
+    "maximumSharedTimeNoteVelocityDifferenceMps": 0.01,
+    "lastContactSpeedRelativeTolerance": 0.01,
+    "lastContactTimeToleranceS": 0.0005,
+    "workResidualLimitJ": 0.01
+  },
+  "calibrationBoundary": "An unchanged reference solver law, not measured NOTE/tread compliance. Even passing numerical controls cannot accept a physical shooter or a complete cycle. No active-contact renormalization or exit-speed fitting.",
+  "refinementExtension": {
+    "reason": "2048/4096 and phase fail the unchanged 1 percent/absolute-floor thresholds; test higher resolution without changing material or tolerance",
+    "resolutions": [
+      4096,
+      8192,
+      16384
+    ],
+    "halfCellPhaseAt": [
+      8192,
+      16384
+    ]
+  }
+}

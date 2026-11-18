@@ -1,0 +1,125 @@
+{
+  "schema": "native-cycle-handoff-boundary/1",
+  "acceptance": false,
+  "scriptSha256": "c6ad50d2df115241aaf7cf466e64cce12fb8c6cf036ad14befa25a09d0e0d300",
+  "retention": {
+    "receiptSha256": "105128ca9ef2e22b542ff57a51a75bfec7cfe7be46b5dab5707050a3cd9022a2",
+    "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+    "modelSha256": "c616d0c9133b4c3895d6a2d26eb69fa83a3d7ff48ac31e7becb05f395a570801",
+    "traceSha256": "5baa1c6ad94b9d7ac9e1e0b2fa59b7449f7c96db479ee0454fdd8a25b553ba85",
+    "timeS": 1.4999999999998674,
+    "relativeNoteM": [
+      0.18502974803923256,
+      2.3585769298805893e-08,
+      0.29986428137443216
+    ],
+    "relativeNoteVelocityMps": [
+      -0.0001476055992908665,
+      -1.4248062316455235e-07,
+      -1.0477476858169088e-08
+    ],
+    "relativeNoteAxis": [
+      -3.1547875514840227e-06,
+      -2.717326304538792e-07,
+      0.9999999999949857
+    ],
+    "nv": 18,
+    "noteMassKg": 0.235,
+    "joints": [
+      "x",
+      "y",
+      "z",
+      "yaw",
+      "wheel_0_0",
+      "wheel_0_1",
+      "wheel_0_2",
+      "wheel_1_0",
+      "wheel_1_1",
+      "wheel_1_2",
+      "belt_0",
+      "belt_1",
+      null
+    ]
+  },
+  "launcher": {
+    "receiptSha256": "c82c8b16b31ee5c54bb8c79cb9eac736f48737acc3f6f0fbdbae966e5bd3d1dc",
+    "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+    "modelSha256": "ff396b49933e48d28970fdbb7c44f0ac738e65c04e141b68312c58074b002a47",
+    "traceSha256": "50a5ff0abd2545e8eeed33cdd58b3c62d462cbb2fa3d2a9a99dd8ef5a9e65003",
+    "timeS": 0.0,
+    "relativeNoteM": [
+      0.27299999999999996,
+      0.0,
+      0.6393782217350893
+    ],
+    "relativeNoteVelocityMps": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "relativeNoteAxis": [
+      -0.8660254037844386,
+      0.0,
+      0.5000000000000002
+    ],
+    "nv": 20,
+    "noteMassKg": 0.235,
+    "joints": [
+      "x",
+      "y",
+      "z",
+      "yaw",
+      "wheel_0_0",
+      "wheel_0_1",
+      "wheel_0_2",
+      "wheel_1_0",
+      "wheel_1_1",
+      "wheel_1_2",
+      "launcher_0",
+      "launcher_1",
+      "launcher_2",
+      "launcher_3",
+      "note_free"
+    ]
+  },
+  "identityControl": {
+    "positionJumpM": 0.0,
+    "positionDifferenceM": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "relativeVelocityJumpMps": 0.0,
+    "noteAxisJumpRad": 6.495265578539184e-08,
+    "sameModel": true,
+    "sameNativeArchive": true,
+    "sameJointSet": true,
+    "gravityPotentialDifferenceJ": 0.0,
+    "directSplicePermitted": true
+  },
+  "comparison": {
+    "positionJumpM": 0.3507256490895146,
+    "positionDifferenceM": [
+      0.08797025196076741,
+      -2.3585769298805893e-08,
+      0.33951394036065713
+    ],
+    "relativeVelocityJumpMps": 0.00014760566842950628,
+    "noteAxisJumpRad": 1.047194396409068,
+    "sameModel": false,
+    "sameNativeArchive": true,
+    "sameJointSet": false,
+    "gravityPotentialDifferenceJ": 0.7824311800608919,
+    "directSplicePermitted": false
+  },
+  "missing": [
+    "One continuous physical state including intake, lift/pitch and launcher joints/motor states",
+    "Attained floor acquisition/index and subsequent transport, rather than a staged carry-height fixture",
+    "Native-backed articulated clearance and calibrated contact over the missing lift/transfer"
+  ],
+  "limits": [
+    "A state-composition rejection, not a failed physical transfer experiment",
+    "Chassis-frame comparison allows a rigid world-frame change; it does not teleport the NOTE or supply the missing potential energy",
+    "Potential difference covers NOTE gravity only, not carriage mass, losses or necessary actuator power"
+  ]
+}
