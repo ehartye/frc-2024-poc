@@ -1,0 +1,117 @@
+{
+  "archiveSha256": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+  "parentArchiveSha256": "df4729ee67430b8ac6bf23d76d9e4be6fe0362149878c8d65bb74472343975e9",
+  "frontShiftMm": 34.925,
+  "tubeStockMm": [
+    38.1,
+    50.8,
+    3.175
+  ],
+  "tubeLengthMm": 711.2,
+  "frontTubeVolumeMm3": 372805.70599999995,
+  "integralScrewLandings": 2,
+  "drilledLandingVolumeMm3": 19122.162466845857,
+  "modeledFoamCylinders": 8,
+  "moduleSolids": 1092,
+  "registeredNumerals": 16,
+  "cornerContactMm2": [
+    241.935,
+    241.935,
+    241.935,
+    241.935
+  ],
+  "seats": 8,
+  "toolChecks": 8,
+  "tubeToSideRailContactMethod": "0.01 mm normal intrusion across the nominal weld faces",
+  "staticOverlaps": 0,
+  "socketObstructions": 0,
+  "service": {
+    "chassisRiseMm": 200,
+    "finalGapMm": 14.499999999999996,
+    "obstructions": 0
+  },
+  "mechanismTravel": {
+    "mechanismBodies": 188,
+    "pitchIntervals": 60,
+    "liftRangeMm": [
+      0,
+      450
+    ],
+    "pitchRangeDeg": [
+      0,
+      60
+    ],
+    "minimumAxisSeparationMm": 9.245388627110742
+  },
+  "materialChangesFromR6": {
+    "aluminumVolumeMm3": -193701.47949999943,
+    "aluminumMassKgAt2700KgM3": -0.5229939946499985,
+    "plywoodVolumeMm3": 168991.59750000015,
+    "foamVolumeMm3": 442418.96768698096
+  },
+  "staticCenterLoadStudy": {
+    "loadN": 1000.0,
+    "spanMm": 704.15,
+    "elasticModulusMPa": 69000.0,
+    "fittedPlate": {
+      "centerEffectiveInertiaMm4": 2577.5645840499074,
+      "stressMPa": 396.22002872991703,
+      "deflectionMm": 38.96734753319106
+    },
+    "forwardBoxConcept": {
+      "depthMm": 38.1,
+      "heightMm": 50.8,
+      "wallMm": 3.175,
+      "frontFaceShiftMm": 34.925,
+      "inertiaMm4": 115574.67644427084,
+      "stressMPa": 29.015996221430367,
+      "deflectionMm": 0.9121001695602922
+    }
+  },
+  "startingSizeSurvey": {
+    "inventoriedSolids": 1719,
+    "slabSolids": 1267,
+    "zoneEnclosingRectMm": [
+      -359.537,
+      -355.6,
+      394.462,
+      355.6
+    ],
+    "rectangularPerimeterUpperMm": 2930.398,
+    "maxSurveyedHeightMm": 968.315
+  },
+  "startingPoseProjectionReview": {
+    "visibleSolidsBeyondMinorAllowance": 32,
+    "maximumOverhangMm": 71.25
+  },
+  "sampledPickupAndCarry": [
+    {
+      "nativeMeasurementSha256": "cebff289446b43ca0c11aacf11660056d99cf75bf4635b51ed9d36402e6f08db",
+      "attempt": "D1",
+      "pickupTrace": "2b734e88ae8cd155a2cf198c211dafdf07b88fb0e824228fe3afebdc67f8bf3d",
+      "carryTrace": "ce0193e1175b12af63a564e59acf3d50cda6d9597dc791a49fb49a9d1b7098a3",
+      "samples": 19789,
+      "closestEnvelopeLowerMm": 3.7471150168631175,
+      "closestEnvelopeUpperMm": 3.85685605002568,
+      "angularSamples": 4096,
+      "witness": {
+        "part": "Front bumper frame rail",
+        "timeS": 5.97199999999941
+      }
+    },
+    {
+      "nativeMeasurementSha256": "cebff289446b43ca0c11aacf11660056d99cf75bf4635b51ed9d36402e6f08db",
+      "attempt": "D2",
+      "pickupTrace": "710cd7fa0cc503af25aee38f623b4cabf17a81c20a1f88a713e497ac43029eb3",
+      "carryTrace": "7ef540107771df265e79ea92431162095ce951d162111d3e0dee62bfe67617d2",
+      "samples": 20109,
+      "closestEnvelopeLowerMm": 3.6353235814964484,
+      "closestEnvelopeUpperMm": 3.745872003397256,
+      "angularSamples": 4096,
+      "witness": {
+        "part": "Front bumper frame rail",
+        "timeS": 6.13349999999932
+      }
+    }
+  ]
+}
