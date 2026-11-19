@@ -144,3 +144,5 @@ docs/robot/cad/*.gz binary
 docs/media/*.glb binary
 docs/media/*.png binary
 *.webm binary
+*.f3d binary
+*.f3z binary

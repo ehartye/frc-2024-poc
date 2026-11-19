@@ -1,0 +1,246 @@
+{
+  "schema": "agent-frc/public-fusion-handoff@1",
+  "revision": "R7 nominal D1",
+  "shareable": true,
+  "archive": {
+    "file": "cad/student/r7-maxswerve.f3d",
+    "sha256": "6e2b65f3493dfd0a8c7a27bbf26445dec29213e93806ff9b0c55df5548b00266"
+  },
+  "reopen": {
+    "file": "cad/student/r7-handoff-observations.json",
+    "sha256": "c58fb8d2fe7aa1934e4da7577a2b1b86c904da14e39c6d95d5cc8bda723ded5b"
+  },
+  "components": [
+    {
+      "id": "R7 chassis",
+      "role": "frame",
+      "representation": "project-original",
+      "provenance": "Project-authored R7 bodies selected by tools/showcase/public_parts.py",
+      "editMetric": "baseFeatures"
+    },
+    {
+      "id": "R7 carriage",
+      "role": "mechanism",
+      "representation": "project-original",
+      "provenance": "Project-authored R7 bodies selected by tools/showcase/public_parts.py",
+      "editMetric": "baseFeatures"
+    },
+    {
+      "id": "R7 cradle",
+      "role": "mechanism",
+      "representation": "project-original",
+      "provenance": "Project-authored R7 bodies selected by tools/showcase/public_parts.py",
+      "editMetric": "baseFeatures"
+    },
+    {
+      "id": "Front left housing",
+      "role": "drive",
+      "representation": "project-proxy",
+      "provenance": "Original solid proxy dimensions in tools/showcase/swerve_modules.py and cad/native/student_r7.py",
+      "editMetric": "baseFeatures"
+    },
+    {
+      "id": "Front left carrier",
+      "role": "drive",
+      "representation": "project-proxy",
+      "provenance": "Original solid proxy dimensions in tools/showcase/swerve_modules.py and cad/native/student_r7.py",
+      "editMetric": "baseFeatures"
+    },
+    {
+      "id": "Front left wheel",
+      "role": "drive",
+      "representation": "project-proxy",
+      "provenance": "Original solid proxy dimensions in tools/showcase/swerve_modules.py and cad/native/student_r7.py",
+      "editMetric": "baseFeatures"
+    },
+    {
+      "id": "Front right housing",
+      "role": "drive",
+      "representation": "project-proxy",
+      "provenance": "Original solid proxy dimensions in tools/showcase/swerve_modules.py and cad/native/student_r7.py",
+      "editMetric": "baseFeatures"
+    },
+    {
+      "id": "Front right carrier",
+      "role": "drive",
+      "representation": "project-proxy",
+      "provenance": "Original solid proxy dimensions in tools/showcase/swerve_modules.py and cad/native/student_r7.py",
+      "editMetric": "baseFeatures"
+    },
+    {
+      "id": "Front right wheel",
+      "role": "drive",
+      "representation": "project-proxy",
+      "provenance": "Original solid proxy dimensions in tools/showcase/swerve_modules.py and cad/native/student_r7.py",
+      "editMetric": "baseFeatures"
+    },
+    {
+      "id": "Rear left housing",
+      "role": "drive",
+      "representation": "project-proxy",
+      "provenance": "Original solid proxy dimensions in tools/showcase/swerve_modules.py and cad/native/student_r7.py",
+      "editMetric": "baseFeatures"
+    },
+    {
+      "id": "Rear left carrier",
+      "role": "drive",
+      "representation": "project-proxy",
+      "provenance": "Original solid proxy dimensions in tools/showcase/swerve_modules.py and cad/native/student_r7.py",
+      "editMetric": "baseFeatures"
+    },
+    {
+      "id": "Rear left wheel",
+      "role": "drive",
+      "representation": "project-proxy",
+      "provenance": "Original solid proxy dimensions in tools/showcase/swerve_modules.py and cad/native/student_r7.py",
+      "editMetric": "baseFeatures"
+    },
+    {
+      "id": "Rear right housing",
+      "role": "drive",
+      "representation": "project-proxy",
+      "provenance": "Original solid proxy dimensions in tools/showcase/swerve_modules.py and cad/native/student_r7.py",
+      "editMetric": "baseFeatures"
+    },
+    {
+      "id": "Rear right carrier",
+      "role": "drive",
+      "representation": "project-proxy",
+      "provenance": "Original solid proxy dimensions in tools/showcase/swerve_modules.py and cad/native/student_r7.py",
+      "editMetric": "baseFeatures"
+    },
+    {
+      "id": "Rear right wheel",
+      "role": "drive",
+      "representation": "project-proxy",
+      "provenance": "Original solid proxy dimensions in tools/showcase/swerve_modules.py and cad/native/student_r7.py",
+      "editMetric": "baseFeatures"
+    }
+  ],
+  "joints": [
+    {
+      "id": "Lift",
+      "type": "slider",
+      "occurrenceOne": "R7 carriage",
+      "occurrenceTwo": "R7 chassis",
+      "direction": {
+        "file": "cad/student/r7-joint-directions.json",
+        "sha256": "fb2d8cc3ced7dde855c2c7817fe1a9b176293b5903b9df583101b2676a83b705"
+      }
+    },
+    {
+      "id": "Pitch",
+      "type": "revolute",
+      "occurrenceOne": "R7 carriage",
+      "occurrenceTwo": "R7 cradle",
+      "direction": {
+        "file": "cad/student/r7-joint-directions.json",
+        "sha256": "fb2d8cc3ced7dde855c2c7817fe1a9b176293b5903b9df583101b2676a83b705"
+      }
+    },
+    {
+      "id": "Front left mount",
+      "type": "rigid",
+      "occurrenceOne": "Front left housing",
+      "occurrenceTwo": "R7 chassis"
+    },
+    {
+      "id": "Front left azimuth",
+      "type": "revolute",
+      "occurrenceOne": "Front left housing",
+      "occurrenceTwo": "Front left carrier",
+      "direction": {
+        "file": "cad/student/r7-joint-directions.json",
+        "sha256": "fb2d8cc3ced7dde855c2c7817fe1a9b176293b5903b9df583101b2676a83b705"
+      }
+    },
+    {
+      "id": "Front left roll",
+      "type": "revolute",
+      "occurrenceOne": "Front left carrier",
+      "occurrenceTwo": "Front left wheel",
+      "direction": {
+        "file": "cad/student/r7-joint-directions.json",
+        "sha256": "fb2d8cc3ced7dde855c2c7817fe1a9b176293b5903b9df583101b2676a83b705"
+      }
+    },
+    {
+      "id": "Front right mount",
+      "type": "rigid",
+      "occurrenceOne": "Front right housing",
+      "occurrenceTwo": "R7 chassis"
+    },
+    {
+      "id": "Front right azimuth",
+      "type": "revolute",
+      "occurrenceOne": "Front right housing",
+      "occurrenceTwo": "Front right carrier",
+      "direction": {
+        "file": "cad/student/r7-joint-directions.json",
+        "sha256": "fb2d8cc3ced7dde855c2c7817fe1a9b176293b5903b9df583101b2676a83b705"
+      }
+    },
+    {
+      "id": "Front right roll",
+      "type": "revolute",
+      "occurrenceOne": "Front right carrier",
+      "occurrenceTwo": "Front right wheel",
+      "direction": {
+        "file": "cad/student/r7-joint-directions.json",
+        "sha256": "fb2d8cc3ced7dde855c2c7817fe1a9b176293b5903b9df583101b2676a83b705"
+      }
+    },
+    {
+      "id": "Rear left mount",
+      "type": "rigid",
+      "occurrenceOne": "Rear left housing",
+      "occurrenceTwo": "R7 chassis"
+    },
+    {
+      "id": "Rear left azimuth",
+      "type": "revolute",
+      "occurrenceOne": "Rear left housing",
+      "occurrenceTwo": "Rear left carrier",
+      "direction": {
+        "file": "cad/student/r7-joint-directions.json",
+        "sha256": "fb2d8cc3ced7dde855c2c7817fe1a9b176293b5903b9df583101b2676a83b705"
+      }
+    },
+    {
+      "id": "Rear left roll",
+      "type": "revolute",
+      "occurrenceOne": "Rear left carrier",
+      "occurrenceTwo": "Rear left wheel",
+      "direction": {
+        "file": "cad/student/r7-joint-directions.json",
+        "sha256": "fb2d8cc3ced7dde855c2c7817fe1a9b176293b5903b9df583101b2676a83b705"
+      }
+    },
+    {
+      "id": "Rear right mount",
+      "type": "rigid",
+      "occurrenceOne": "Rear right housing",
+      "occurrenceTwo": "R7 chassis"
+    },
+    {
+      "id": "Rear right azimuth",
+      "type": "revolute",
+      "occurrenceOne": "Rear right housing",
+      "occurrenceTwo": "Rear right carrier",
+      "direction": {
+        "file": "cad/student/r7-joint-directions.json",
+        "sha256": "fb2d8cc3ced7dde855c2c7817fe1a9b176293b5903b9df583101b2676a83b705"
+      }
+    },
+    {
+      "id": "Rear right roll",
+      "type": "revolute",
+      "occurrenceOne": "Rear right carrier",
+      "occurrenceTwo": "Rear right wheel",
+      "direction": {
+        "file": "cad/student/r7-joint-directions.json",
+        "sha256": "fb2d8cc3ced7dde855c2c7817fe1a9b176293b5903b9df583101b2676a83b705"
+      }
+    }
+  ]
+}
