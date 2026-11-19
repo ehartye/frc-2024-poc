@@ -1,0 +1,524 @@
+{
+  "schema": "frc-decision-chain/v1",
+  "season": 2024,
+  "branches": [
+    {
+      "id": "shared",
+      "parent": null
+    },
+    {
+      "id": "fixed-speaker",
+      "parent": "shared"
+    },
+    {
+      "id": "amp-placement",
+      "parent": "shared"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "game-2024",
+      "kind": "game-analysis",
+      "branch": "shared",
+      "season": 2024,
+      "revision": 1,
+      "previous": null,
+      "status": "hypothesis",
+      "inputs": [],
+      "content": {
+        "schema": "frc-season-prototype-game/v1",
+        "manual": {
+          "season": 2024,
+          "url": "https://firstfrc.blob.core.windows.net/frc2024/Manual/2024GameManual.pdf",
+          "retrieved": "2026-11-15",
+          "bytes": 6712480,
+          "sha256": "1b7e1dc3fe1b1bd64d97a482d7e78eb419ec77d611a15226a16b0c7011069b94",
+          "etag": "0x8DC59947AA1DCE1",
+          "last_modified": "Wed, 10 Apr 2024 19:29:02 GMT",
+          "handling": "This case capture retained no PDF body; private reference ingestion is separately cataloged"
+        },
+        "caseFileSha256": "50764e3832a68070714f2555b6bd6fcc51af6f9a46bff3afc3eb84c1bee24f50",
+        "caseContentSha256": "3f136386d6cf4d878265668d03f168ef6bbd627180a52eea7fe42728c21885b6",
+        "eventContext": {
+          "snapshot": "Archived final/Championship update snapshot, not the original regional-season configuration",
+          "requiredBeforeHardwareDecision": "event name/stage/date and applicable update revision",
+          "caution": "Team Update 21 changed weight from 125 to 125.5 lb and OpenMesh to VH-109. Resolve the event and update date before selecting hardware."
+        },
+        "requirements": [
+          {
+            "id": "24-TIME",
+            "ref": "6.4, p45",
+            "fact": "AUTO lasts 15 seconds.",
+            "design": "Bound the autonomous routine and end every active mechanism request."
+          },
+          {
+            "id": "24-COUNT",
+            "ref": "G409, p65",
+            "fact": "TELEOP NOTE control has one-piece limits with SOURCE ZONE and momentary qualifications.",
+            "design": "Choose a stricter one-pocket teaching design; do not model all rule exceptions."
+          }
+        ],
+        "scope": "Selected existing case facts only; not complete game rules or geometry",
+        "fieldGeometry": "unresolved",
+        "scoringModel": "not-implemented"
+      },
+      "sha256": "938e3ab6b44f816931797c88e6046a4cce34c011f3be425abae882cfc02dc386"
+    },
+    {
+      "id": "resources-2024",
+      "kind": "resource-baseline",
+      "branch": "shared",
+      "season": 2024,
+      "revision": 1,
+      "previous": null,
+      "status": "hypothesis",
+      "inputs": [],
+      "content": {
+        "schema": "frc-resource-baseline/v1",
+        "season": 2024,
+        "teamNumber": null,
+        "teamStatus": "unknown",
+        "inventoryCoverage": "unknown",
+        "evidence": [],
+        "physicalInventory": [],
+        "kitExpectations": [],
+        "credits": [],
+        "budget": null,
+        "fabrication": [],
+        "schedule": null
+      },
+      "sha256": "e237e8983dea3d0b7acfa9bf7844acea2dac8452da2b4bc2ca1215a152abeb89"
+    },
+    {
+      "id": "2024-fixed-speaker.strategy",
+      "kind": "strategy-brief",
+      "branch": "fixed-speaker",
+      "season": 2024,
+      "revision": 1,
+      "previous": null,
+      "status": "hypothesis",
+      "inputs": [
+        {
+          "id": "game-2024",
+          "revision": 1,
+          "sha256": "938e3ab6b44f816931797c88e6046a4cce34c011f3be425abae882cfc02dc386"
+        },
+        {
+          "id": "resources-2024",
+          "revision": 1,
+          "sha256": "e237e8983dea3d0b7acfa9bf7844acea2dac8452da2b4bc2ca1215a152abeb89"
+        }
+      ],
+      "content": {
+        "role": "Source-fed NOTE handling and fixed-location SPEAKER launch",
+        "decision": "not-selected",
+        "basis": "hypothetical-prototype-scope",
+        "alternativesPreserved": true,
+        "teamFeasibility": "unknown"
+      },
+      "sha256": "3ece698abcb35a505ec37d29babe402ad43b83258985d96c730e126b060b8b6a"
+    },
+    {
+      "id": "2024-fixed-speaker.envelope",
+      "kind": "robot-envelope",
+      "branch": "fixed-speaker",
+      "season": 2024,
+      "revision": 1,
+      "previous": null,
+      "status": "hypothesis",
+      "inputs": [
+        {
+          "id": "game-2024",
+          "revision": 1,
+          "sha256": "938e3ab6b44f816931797c88e6046a4cce34c011f3be425abae882cfc02dc386"
+        },
+        {
+          "id": "resources-2024",
+          "revision": 1,
+          "sha256": "e237e8983dea3d0b7acfa9bf7844acea2dac8452da2b4bc2ca1215a152abeb89"
+        },
+        {
+          "id": "2024-fixed-speaker.strategy",
+          "revision": 1,
+          "sha256": "3ece698abcb35a505ec37d29babe402ad43b83258985d96c730e126b060b8b6a"
+        }
+      ],
+      "content": {
+        "basis": "unresolved-design-target",
+        "dimensionsMm": {
+          "length": null,
+          "width": null,
+          "height": null
+        },
+        "massKg": null,
+        "centerOfMassMm": null,
+        "inertiaKgM2": null,
+        "footprintReference": "unknown",
+        "legality": "not-established",
+        "reachability": "not-assessed",
+        "unknowns": [
+          "Season-specific chassis/bumper/moving envelope",
+          "Actual team parts and fabrication",
+          "Complete mass, electrical and power budgets"
+        ]
+      },
+      "sha256": "6e63ba90d5125305d33fb7624fed18bee357f3db3bf815c1a1c87f225caa5617"
+    },
+    {
+      "id": "2024-fixed-speaker.contract",
+      "kind": "capability-contract",
+      "branch": "fixed-speaker",
+      "season": 2024,
+      "revision": 1,
+      "previous": null,
+      "status": "hypothesis",
+      "inputs": [
+        {
+          "id": "2024-fixed-speaker.strategy",
+          "revision": 1,
+          "sha256": "3ece698abcb35a505ec37d29babe402ad43b83258985d96c730e126b060b8b6a"
+        },
+        {
+          "id": "2024-fixed-speaker.envelope",
+          "revision": 1,
+          "sha256": "6e63ba90d5125305d33fb7624fed18bee357f3db3bf815c1a1c87f225caa5617"
+        }
+      ],
+      "content": {
+        "basis": "proposed-not-implemented",
+        "mechanisms": [
+          "One-pocket indexer",
+          "Fixed-angle dual-wheel launcher"
+        ],
+        "interfaces": [
+          "intake demand and possession observation",
+          "launcher speed setpoint and encoder feedback",
+          "explicit pose-valid observation, never inferred from inventory rule"
+        ],
+        "sharedSafety": [
+          "Disabled or fault state requests zero output",
+          "Timeout/cancellation tested separately from game timing",
+          "Unknown or stale alignment/possession blocks release",
+          "No deployment or motor hardware access"
+        ],
+        "acceptance": "not-established"
+      },
+      "sha256": "5e2cda81713a95b838f457075d2c258ef5f38aede793d453bb525e14ad4b30cc"
+    },
+    {
+      "id": "2024-fixed-speaker.architecture",
+      "kind": "architecture-trade",
+      "branch": "fixed-speaker",
+      "season": 2024,
+      "revision": 1,
+      "previous": null,
+      "status": "hypothesis",
+      "inputs": [
+        {
+          "id": "2024-fixed-speaker.contract",
+          "revision": 1,
+          "sha256": "5e2cda81713a95b838f457075d2c258ef5f38aede793d453bb525e14ad4b30cc"
+        }
+      ],
+      "content": {
+        "basis": "hypothetical",
+        "candidate": [
+          "One-pocket indexer",
+          "Fixed-angle dual-wheel launcher"
+        ],
+        "tradeQuestions": [
+          "NOTE compression/slip and exit speed/spin",
+          "SPEAKER opening and launch-pose registration",
+          "Flight/contact model and target-entry event"
+        ],
+        "selection": "none",
+        "separation": [
+          "Candidate code consumes declared sensors and commands outputs",
+          "Plant adapter owns physical state and sensor injection",
+          "Game assessor consumes separately justified target events, never PWM/release as score"
+        ]
+      },
+      "sha256": "d82e534d5598cdf5df835acc1a2d49d34e55562345c85ee604533ddd9f1cfd47"
+    },
+    {
+      "id": "2024-fixed-speaker.subsystem",
+      "kind": "subsystem-spec",
+      "branch": "fixed-speaker",
+      "season": 2024,
+      "revision": 1,
+      "previous": null,
+      "status": "hypothesis",
+      "inputs": [
+        {
+          "id": "2024-fixed-speaker.architecture",
+          "revision": 1,
+          "sha256": "d82e534d5598cdf5df835acc1a2d49d34e55562345c85ee604533ddd9f1cfd47"
+        }
+      ],
+      "content": {
+        "schema": "frc-season-prototype-milestones/v1",
+        "implementation": "planned",
+        "milestones": [
+          {
+            "id": "source-and-configuration",
+            "status": "open",
+            "exit": "Pin season/event rules, exact proposed parts, field region and coordinate frames; preserve unverified parameters"
+          },
+          {
+            "id": "cad-and-plant",
+            "status": "open",
+            "exit": "Create/inspect original dimensioned mechanism CAD; extract exact-source component geometry and explicitly assumed physical parameters; record omissions"
+          },
+          {
+            "id": "code-io",
+            "status": "open",
+            "exit": "Execute candidate mechanism code using sensor/actuator IO; inject sensor faults; prove timeout/disable output behavior"
+          },
+          {
+            "id": "coupled-execution",
+            "status": "open",
+            "exit": "Run native CAD-bound mechanism plus chassis/power assumptions with deterministic sensor IO and exact runtime/source/config receipts"
+          },
+          {
+            "id": "season-event",
+            "status": "open",
+            "exit": "Assess justified piece/target interaction events against exact selected rules; unsupported contact or scoring remains null"
+          },
+          {
+            "id": "prototype-review",
+            "status": "open",
+            "exit": "Independent replay and parameter-domain review; executable hypothetical prototype distinguished from calibrated acceptance"
+          }
+        ],
+        "criticalGaps": [
+          "NOTE compression/slip and exit speed/spin",
+          "SPEAKER opening and launch-pose registration",
+          "Flight/contact model and target-entry event"
+        ],
+        "simulationReady": false,
+        "executedEvidence": [],
+        "calibrated": false,
+        "engineeringAcceptance": "blocked",
+        "score": null,
+        "ranking": null
+      },
+      "sha256": "175779635082e86201e727091ee3c842e1ee14627a689333afee65e9cc925f31"
+    },
+    {
+      "id": "2024-amp-placement.strategy",
+      "kind": "strategy-brief",
+      "branch": "amp-placement",
+      "season": 2024,
+      "revision": 1,
+      "previous": null,
+      "status": "hypothesis",
+      "inputs": [
+        {
+          "id": "game-2024",
+          "revision": 1,
+          "sha256": "938e3ab6b44f816931797c88e6046a4cce34c011f3be425abae882cfc02dc386"
+        },
+        {
+          "id": "resources-2024",
+          "revision": 1,
+          "sha256": "e237e8983dea3d0b7acfa9bf7844acea2dac8452da2b4bc2ca1215a152abeb89"
+        }
+      ],
+      "content": {
+        "role": "Low-speed AMP-oriented NOTE placement",
+        "decision": "not-selected",
+        "basis": "hypothetical-prototype-scope",
+        "alternativesPreserved": true,
+        "teamFeasibility": "unknown"
+      },
+      "sha256": "90da7b8a725c0653c2df1969e8c0a0f08cfe19190e5aab433b2542ec633679b6"
+    },
+    {
+      "id": "2024-amp-placement.envelope",
+      "kind": "robot-envelope",
+      "branch": "amp-placement",
+      "season": 2024,
+      "revision": 1,
+      "previous": null,
+      "status": "hypothesis",
+      "inputs": [
+        {
+          "id": "game-2024",
+          "revision": 1,
+          "sha256": "938e3ab6b44f816931797c88e6046a4cce34c011f3be425abae882cfc02dc386"
+        },
+        {
+          "id": "resources-2024",
+          "revision": 1,
+          "sha256": "e237e8983dea3d0b7acfa9bf7844acea2dac8452da2b4bc2ca1215a152abeb89"
+        },
+        {
+          "id": "2024-amp-placement.strategy",
+          "revision": 1,
+          "sha256": "90da7b8a725c0653c2df1969e8c0a0f08cfe19190e5aab433b2542ec633679b6"
+        }
+      ],
+      "content": {
+        "basis": "unresolved-design-target",
+        "dimensionsMm": {
+          "length": null,
+          "width": null,
+          "height": null
+        },
+        "massKg": null,
+        "centerOfMassMm": null,
+        "inertiaKgM2": null,
+        "footprintReference": "unknown",
+        "legality": "not-established",
+        "reachability": "not-assessed",
+        "unknowns": [
+          "Season-specific chassis/bumper/moving envelope",
+          "Actual team parts and fabrication",
+          "Complete mass, electrical and power budgets"
+        ]
+      },
+      "sha256": "42b14014488ffddd362aac5afac2bff0a84f1057dd64e58e6f52bf47d1df8ee5"
+    },
+    {
+      "id": "2024-amp-placement.contract",
+      "kind": "capability-contract",
+      "branch": "amp-placement",
+      "season": 2024,
+      "revision": 1,
+      "previous": null,
+      "status": "hypothesis",
+      "inputs": [
+        {
+          "id": "2024-amp-placement.strategy",
+          "revision": 1,
+          "sha256": "90da7b8a725c0653c2df1969e8c0a0f08cfe19190e5aab433b2542ec633679b6"
+        },
+        {
+          "id": "2024-amp-placement.envelope",
+          "revision": 1,
+          "sha256": "42b14014488ffddd362aac5afac2bff0a84f1057dd64e58e6f52bf47d1df8ee5"
+        }
+      ],
+      "content": {
+        "basis": "proposed-not-implemented",
+        "mechanisms": [
+          "One-pocket indexer",
+          "Low-speed positioning/release mechanism"
+        ],
+        "interfaces": [
+          "intake demand and possession observation",
+          "mechanism position feedback and limits",
+          "explicit alignment-valid observation"
+        ],
+        "sharedSafety": [
+          "Disabled or fault state requests zero output",
+          "Timeout/cancellation tested separately from game timing",
+          "Unknown or stale alignment/possession blocks release",
+          "No deployment or motor hardware access"
+        ],
+        "acceptance": "not-established"
+      },
+      "sha256": "0454fce9103c45d2bd984c548e03a100c66cd5c9025834759237f9f4b298523b"
+    },
+    {
+      "id": "2024-amp-placement.architecture",
+      "kind": "architecture-trade",
+      "branch": "amp-placement",
+      "season": 2024,
+      "revision": 1,
+      "previous": null,
+      "status": "hypothesis",
+      "inputs": [
+        {
+          "id": "2024-amp-placement.contract",
+          "revision": 1,
+          "sha256": "0454fce9103c45d2bd984c548e03a100c66cd5c9025834759237f9f4b298523b"
+        }
+      ],
+      "content": {
+        "basis": "hypothetical",
+        "candidate": [
+          "One-pocket indexer",
+          "Low-speed positioning/release mechanism"
+        ],
+        "tradeQuestions": [
+          "NOTE deformation and aperture contact",
+          "AMP approach/height and bumper envelope",
+          "Release event versus successful scoring"
+        ],
+        "selection": "none",
+        "separation": [
+          "Candidate code consumes declared sensors and commands outputs",
+          "Plant adapter owns physical state and sensor injection",
+          "Game assessor consumes separately justified target events, never PWM/release as score"
+        ]
+      },
+      "sha256": "53b05f2938139e4ed2d5d89bb9aed1fe3f50bc0cb75090466e15a55e5ca573b1"
+    },
+    {
+      "id": "2024-amp-placement.subsystem",
+      "kind": "subsystem-spec",
+      "branch": "amp-placement",
+      "season": 2024,
+      "revision": 1,
+      "previous": null,
+      "status": "hypothesis",
+      "inputs": [
+        {
+          "id": "2024-amp-placement.architecture",
+          "revision": 1,
+          "sha256": "53b05f2938139e4ed2d5d89bb9aed1fe3f50bc0cb75090466e15a55e5ca573b1"
+        }
+      ],
+      "content": {
+        "schema": "frc-season-prototype-milestones/v1",
+        "implementation": "planned",
+        "milestones": [
+          {
+            "id": "source-and-configuration",
+            "status": "open",
+            "exit": "Pin season/event rules, exact proposed parts, field region and coordinate frames; preserve unverified parameters"
+          },
+          {
+            "id": "cad-and-plant",
+            "status": "open",
+            "exit": "Create/inspect original dimensioned mechanism CAD; extract exact-source component geometry and explicitly assumed physical parameters; record omissions"
+          },
+          {
+            "id": "code-io",
+            "status": "open",
+            "exit": "Execute candidate mechanism code using sensor/actuator IO; inject sensor faults; prove timeout/disable output behavior"
+          },
+          {
+            "id": "coupled-execution",
+            "status": "open",
+            "exit": "Run native CAD-bound mechanism plus chassis/power assumptions with deterministic sensor IO and exact runtime/source/config receipts"
+          },
+          {
+            "id": "season-event",
+            "status": "open",
+            "exit": "Assess justified piece/target interaction events against exact selected rules; unsupported contact or scoring remains null"
+          },
+          {
+            "id": "prototype-review",
+            "status": "open",
+            "exit": "Independent replay and parameter-domain review; executable hypothetical prototype distinguished from calibrated acceptance"
+          }
+        ],
+        "criticalGaps": [
+          "NOTE deformation and aperture contact",
+          "AMP approach/height and bumper envelope",
+          "Release event versus successful scoring"
+        ],
+        "simulationReady": false,
+        "executedEvidence": [],
+        "calibrated": false,
+        "engineeringAcceptance": "blocked",
+        "score": null,
+        "ranking": null
+      },
+      "sha256": "8bf1231b19d25067ab8ae1da4983dd7da204f29448ed16f7745ad5eed55e3d81"
+    }
+  ],
+  "decisions": []
+}
