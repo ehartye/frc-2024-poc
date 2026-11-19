@@ -1,9 +1,9 @@
 # Portable 2024 blockout
 
 <!-- cad-still -->
-[![1780 lift and shooter](../../docs/media/robot-native.png)](https://ehartye.github.io/frc-2024-poc/#model)
+[![1780 MAXSwerve · R7](../../docs/media/swerve-r7.png)](https://ehartye.github.io/frc-2024-poc/#model)
 
-**1780 lift and shooter.** Six-wheel Fusion baseline with its continuous red bumper. Play the recorded lift and shot, or drag to rotate the model. [Native model record](../../docs/media/robot-native.json) · [Open 3D replay](https://ehartye.github.io/frc-2024-poc/#model)
+**1780 MAXSwerve · R7.** Reopened Fusion assembly with the boxed front crossmember and red 1780 bumper. The replay shows the lift, four simplified tires and first Speaker shot from development start D1. [Native model record](../../docs/media/swerve-r7.json) · [Open 3D replay](https://ehartye.github.io/frc-2024-poc/#model)
 <!-- /cad-still -->
 
 This season-owned copy is independent of any hosted preview. From this directory, run an existing static server, for example `python -m http.server 8765 --bind 127.0.0.1 --directory dist`, then open the displayed local address. No remote browser service is required.

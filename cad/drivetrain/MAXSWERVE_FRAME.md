@@ -58,3 +58,19 @@ The eight tool approaches and the 200 mm chassis lift for bumper removal cleared
 The starting-size survey clips the installed solids to the first 190.5 mm above the carpet after excluding removable bumper parts, cover graphics and marked study geometry. A rectangle enclosing the resulting material measures 754.00 × 711.20 mm, with perimeter 2930.40 mm. Including moving bodies in this survey makes the rectangle a conservative upper bound on the fixed frame. The surveyed robot height is 968.32 mm.
 
 **Starting configuration needs revision.** The modeled lift motor envelope projects 71.25 mm beyond the enclosing rectangle. The slotted launcher carrier projects 56.28 mm. Both exceed the 6.35 mm minor-protrusion allowance. Check the exact motor installation and repackage the outboard parts or verify a legal stowed pose. [Native size survey](../native/swerve_starting_size.py) · [2024 manual, R101–R104](https://firstfrc.blob.core.windows.net/frc2024/Manual/HTML/2024GameManual.htm#R101)
+
+### Public R7 motion replay
+
+The showcase displays team-authored solids from the reopened R7 archive. The recorded D1 run used the earlier articulated swerve archive. Both use the robot-floor datum and the cradle pivot at (178, 0, 25.4) mm. The replay carries the measured lift, pitch, eight wheel coordinates and NOTE pose through the whole-ring opening event. Chassis and mechanism coordinates hold at release during the last segment of NOTE flight. The count occurs later in the field simulation.
+
+Fusion compares the two archives in world coordinates before the animation is built. Each visible moving article must match by occurrence path, body and motion group. The solid bounds and the volume of their symmetric difference are checked for each pair. The public mesh export selects team-authored parts before tessellation. Four cylindrical tire envelopes use the measured centers, outside diameters, tread widths and roll axes. A light sector makes each tire's rotation visible.
+
+To regenerate, use `export_swerve.extract(display_archive, display_sha, folder)` and `compare_swerve_motion.compare(display_archive, plant_archive, display_sha, plant_sha)` inside Fusion with `tools/showcase` on the module path. Write the comparison result to a private JSON file. Resolve the archive digests from [the R7 build record](maxswerve-front-crossmember.json) and [the articulated plant layout](maxswerve-layout.json). Build the public display and attach the D1 carry, release and field traces using the verified [first-shot record](../../sim/pressure/evidence/maxswerve-development-shot.json).
+
+```text
+python tools/showcase/build_model.py <folder>/manifest.json <folder>/public-floor.glb --public
+python tools/showcase/register_swerve_replay.py <folder> <comparison.json> <registration.json>
+python tools/showcase/build_replay.py <folder>/public-floor.glb docs/media/swerve-r7.glb sim/pressure/evidence/maxswerve-development-shot.json <carry> <shot> <field> --registered-motion <registration.json>
+```
+
+The [public model receipt](../../docs/media/swerve-r7.json) identifies the CAD revisions, trace digests and displayed geometry. R7 shot clearance and mission repeatability require their own checks.

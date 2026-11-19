@@ -49,7 +49,9 @@ def recorded_poses(receipt, delivery, release, flight):
                 orientation = field_rotation.inv() * orientation
             note = TO_GLTF.apply(heading.inv().apply(center - chassis))
             angle = TO_GLTF * heading.inv() * orientation * TO_GLTF.inv()
-            pose = (t, height, pitch, note, angle.as_quat())
+            if key != "field":
+                modules = q[9:17] if len(q) == 24 else None
+            pose = (t, height, pitch, note, angle.as_quat(), modules)
             if poses and abs(poses[-1][0] - t) < 1e-8:
                 if np.linalg.norm(poses[-1][3] - note) > 1e-5:
                     raise ValueError("Discontinuous NOTE position at field handoff")
@@ -77,7 +79,7 @@ def note_mesh():
     return vertices.reshape(-1,3), normals.reshape(-1,3), faces.flatten()
 
 
-def build(model_path, output, receipt_path, delivery, release, flight):
+def build(model_path, output, receipt_path, delivery, release, flight, *, registration=None):
     raw = model_path.read_bytes()
     json_size = struct.unpack_from("<I",raw,12)[0]
     model = json.loads(raw[20:20+json_size])
@@ -85,10 +87,24 @@ def build(model_path, output, receipt_path, delivery, release, flight):
         raise ValueError("Expected a static source model")
     binary = bytearray(raw[28+json_size:])
     receipt = json.loads(receipt_path.read_bytes())
-    if receipt["schema"] != "first-wing-full-field-score/1":
-        raise ValueError("Expected a verified first-wing score")
-    if model["asset"].get("extras", {}).get("nativeSha256") != receipt["native"]:
-        raise ValueError("Robot mesh and scored run use different Fusion revisions")
+    display_native = model["asset"]["extras"]["nativeSha256"]
+    if registration is None:
+        if receipt["schema"] != "first-wing-full-field-score/1" or display_native != receipt["native"]:
+            raise ValueError("Expected a verified first-wing score for this Fusion revision")
+    else:
+        pair = json.loads(registration.read_bytes())
+        record = next(r for r in receipt["pairedDenseObservations"] if r["attempt"] == "D1")
+        carry = json.loads((delivery / "result.json").read_bytes())
+        if (receipt["schema"] != "maxswerve-development-first-shot/1" or
+                pair["displayNative"] != display_native or pair["plantNative"] != record["sourceNativeSha256"] or
+                pair["displayMesh"] != hashlib.sha256(raw).hexdigest() or
+                pair["registeredBodyCount"] != 188 or not 0 <= pair["maximumSymmetricDifferenceMm3"] <= .001 or
+                carry["nativeSha256"] != record["sourceNativeSha256"] or carry["trace"] != record["carryTrace"] or
+                record["countedFloorNotes"] != 1):
+            raise ValueError("Mismatched swerve geometry, registration or score")
+        receipt = dict(firstMark=carry["firstMark"], fieldYawDeg=carry["fieldYawDeg"],
+                       native=record["sourceNativeSha256"], carry=record["carryTrace"], shot=record["sourceTrace"],
+                       field=record["fieldTrace"], releaseS=record["releaseS"], openedByS=record["opening"]["fullyThroughByS"])
     poses = recorded_poses(receipt, delivery, release, flight)
     def accessor(values, kind, component=5126, bounds=False):
         array = np.asarray(values, dtype="<f4" if component==5126 else "<u4")
@@ -117,7 +133,7 @@ def build(model_path, output, receipt_path, delivery, release, flight):
     time_accessor = accessor(times,"SCALAR",bounds=True)
     clip = dict(name=CLIP, samplers=[], channels=[], extras={
         "sourceStartS":poses[0][0],"releaseS":receipt["releaseS"],"openingS":receipt["openedByS"],
-        "carry":receipt["carry"],"shot":receipt["shot"],"field":receipt["field"],"native":receipt["native"]})
+        "carry":receipt["carry"],"shot":receipt["shot"],"field":receipt["field"],"native":receipt["native"],"displayNative":display_native})
     def channel(nodes, path, values):
         idx = accessor(values,"VEC4" if path=="rotation" else "VEC3")
         sampler = len(clip["samplers"])
@@ -133,6 +149,9 @@ def build(model_path, output, receipt_path, delivery, release, flight):
     channel(group("carriage"),"translation",travel)
     channel(group("cradle"),"translation",PIVOT+travel-pitch.apply(PIVOT))
     channel(group("cradle"),"rotation",pitch.as_quat())
+    if registration is not None:
+        from swerve_wheels import animate_wheels
+        animate_wheels(model, pair["wheels"], [p[5] for p in poses], accessor, channel)
     channel([note],"translation",[p[3] for p in poses])
     quats = np.array([p[4] for p in poses])
     for i in range(1,len(quats)):
@@ -151,5 +170,6 @@ if __name__=="__main__":
     parser=argparse.ArgumentParser(description=__doc__)
     for arg in ("model_path","output","receipt","delivery","release","flight"):
         parser.add_argument(arg,type=Path)
+    parser.add_argument("--registered-motion", type=Path, help="Verified moving-mesh registration to the swerve run")
     args=parser.parse_args()
-    build(args.model_path,args.output,args.receipt,args.delivery,args.release,args.flight)
+    build(args.model_path,args.output,args.receipt,args.delivery,args.release,args.flight,registration=args.registered_motion)

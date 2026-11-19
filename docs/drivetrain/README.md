@@ -1,9 +1,9 @@
 # Historical six-wheel drivetrain candidate
 
 <!-- cad-still -->
-[![1780 lift and shooter](../media/robot-native.png)](https://ehartye.github.io/frc-2024-poc/#model)
+[![1780 MAXSwerve · R7](../media/swerve-r7.png)](https://ehartye.github.io/frc-2024-poc/#model)
 
-**1780 lift and shooter.** Six-wheel Fusion baseline with its continuous red bumper. Play the recorded lift and shot, or drag to rotate the model. [Native model record](../media/robot-native.json) · [Open 3D replay](https://ehartye.github.io/frc-2024-poc/#model)
+**1780 MAXSwerve · R7.** Reopened Fusion assembly with the boxed front crossmember and red 1780 bumper. The replay shows the lift, four simplified tires and first Speaker shot from development start D1. [Native model record](../media/swerve-r7.json) · [Open 3D replay](https://ehartye.github.io/frc-2024-poc/#model)
 <!-- /cad-still -->
 
 This original dimension-only assembly is a candidate for the A2 robot, not a fabrication drawing, purchased kit, or accepted drivetrain. No vendor STEP is distributed. Designer owns final placement and complete-robot integration.

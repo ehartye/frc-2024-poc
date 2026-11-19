@@ -143,3 +143,4 @@ docs/robot/cad/*.png binary
 docs/robot/cad/*.gz binary
 docs/media/*.glb binary
 docs/media/*.png binary
+*.webm binary
