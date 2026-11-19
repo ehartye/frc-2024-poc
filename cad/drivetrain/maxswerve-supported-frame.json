@@ -1,0 +1,148 @@
+{
+  "schema": "supported-maxswerve-frame/1",
+  "sourceRobotSha256": "ae6c40659f7a215573b1e172ae7aec3e90d62a94b8c27863234ee7c8cf275ce2",
+  "privateRobotArchiveSha256": "5eb3c6bfda85dac797fad8f1e3ee81d6c037f7b7793f9432358a657712f913c3",
+  "privateOriginalFrameArchiveSha256": "5a0bb141e3a11a5ca576c9665e5f195a21b67c2d667c7f2806d09283ffd2afc4",
+  "previousStandAloneMeasurementSha256": "cea52edb1930c799e652d96fa8434e642eae7486f350a1f88d3a30be7532f243",
+  "frameMeasurementSha256": "b137f689c0a60d2081cf39bd3c4ac4e04bd7cffaf92db04d818f7f06c4aff2a8",
+  "articleCounts": {
+    "Swerve frame - interchangeable drilled rail": 3,
+    "Swerve frame - bolt crush sleeve": 12,
+    "10-32 x 2.75 socket head": 12,
+    "10-32 locknut": 12,
+    "Deck support - transverse member": 1,
+    "Deck support - rear stringer": 2,
+    "Deck support - open socket pedestal": 4
+  },
+  "retiredSixWheelOccurrences": 83,
+  "retiredSixWheelSolids": 84,
+  "estimatedAddedMassKg": 3.5024039022599998,
+  "assumedAluminumDensityKgM3": 2700,
+  "assumedSteelDensityKgM3": 7850,
+  "initialRoundSleeveOverlapMm3PerStack": 342.5437,
+  "initialLegacyIntersectionPairs": 129,
+  "flatToSidewallNominalMm": 0.125,
+  "installed": {
+    "frameArticles": 46,
+    "supplierSolids": 1092,
+    "broadPhaseFramePairs": 48,
+    "broadPhaseRobotPairs": 114,
+    "twoPlateBoltAxes": 12,
+    "fullDepthGaugeChecks": 24,
+    "relievedPlateBores": 8,
+    "maximumClearanceGaugeIntersectionMm3": 0.0,
+    "minimumOversizeProbeIntersectionMm3": 3.8849720152420084,
+    "minimumFastenerSeatAreaMm2": 29.689978760315473,
+    "minimumRailSeatAreaMm2": 43.18904500520529,
+    "deckBearingAreaMm2": [
+      418.21851707862123,
+      418.21851707862123,
+      418.21851707862095,
+      418.21851707862095
+    ],
+    "hits": [],
+    "retiredHardwareHits": []
+  },
+  "joints": {
+    "independentSignedPoses": 16,
+    "combinedSteerAndRollPoses": 4,
+    "witnessToleranceMm": 0.01,
+    "maximumWitnessErrorMm": 3.2997352385173293e-13,
+    "positiveAxes": {
+      "Front left": {
+        "steer": [
+          0,
+          0,
+          -1
+        ],
+        "roll": [
+          0,
+          -1,
+          0
+        ]
+      },
+      "Front right": {
+        "steer": [
+          0,
+          0,
+          -1
+        ],
+        "roll": [
+          -1,
+          0,
+          0
+        ]
+      },
+      "Rear left": {
+        "steer": [
+          0,
+          0,
+          -1
+        ],
+        "roll": [
+          1,
+          0,
+          0
+        ]
+      },
+      "Rear right": {
+        "steer": [
+          0,
+          0,
+          -1
+        ],
+        "roll": [
+          0,
+          1,
+          0
+        ]
+      }
+    },
+    "privateRobotArchiveSha256": "5eb3c6bfda85dac797fad8f1e3ee81d6c037f7b7793f9432358a657712f913c3"
+  },
+  "frameVsMechanism": {
+    "mechanismBodies": 188,
+    "pitchIntervals": 60,
+    "liftRangeMm": [
+      0,
+      450
+    ],
+    "pitchRangeDeg": [
+      0,
+      60
+    ],
+    "minimumAxisSeparationMm": 82.30000000000001
+  },
+  "frameVsSampledNote": [
+    {
+      "frameMeasurementSha256": "b137f689c0a60d2081cf39bd3c4ac4e04bd7cffaf92db04d818f7f06c4aff2a8",
+      "attempt": "D1",
+      "pickupTrace": "2b734e88ae8cd155a2cf198c211dafdf07b88fb0e824228fe3afebdc67f8bf3d",
+      "carryTrace": "ce0193e1175b12af63a564e59acf3d50cda6d9597dc791a49fb49a9d1b7098a3",
+      "samples": 19789,
+      "minimumSampledAxisSeparationMm": 120.97124921524014,
+      "witness": {
+        "timeS": 0.8469999999999621,
+        "article": "Swerve frame - interchangeable drilled rail"
+      }
+    },
+    {
+      "frameMeasurementSha256": "b137f689c0a60d2081cf39bd3c4ac4e04bd7cffaf92db04d818f7f06c4aff2a8",
+      "attempt": "D2",
+      "pickupTrace": "710cd7fa0cc503af25aee38f623b4cabf17a81c20a1f88a713e497ac43029eb3",
+      "carryTrace": "7ef540107771df265e79ea92431162095ce951d162111d3e0dee62bfe67617d2",
+      "samples": 20109,
+      "minimumSampledAxisSeparationMm": 122.00174843674307,
+      "witness": {
+        "timeS": 1.0019999999999452,
+        "article": "Swerve frame - interchangeable drilled rail"
+      }
+    }
+  ],
+  "remaining": [
+    "Front lift and bumper attachment load paths and obsolete adapters",
+    "Harness routing and full service access",
+    "As-built tolerance, clamp, weld, impact and fatigue checks",
+    "Updated physical mass distribution and swerve scoring campaign"
+  ]
+}
