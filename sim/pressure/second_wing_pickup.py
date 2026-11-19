@@ -178,7 +178,7 @@ class ReturnPlant(RaisedFeed):
     def ports(self, voltage, cmd):
         b, d = self.base, self.data
         drive, actuator, pinch, duty = cmd
-        dr = b.drive.electrical(voltage, drive, modes=["drive"]*2, state=dict(wheel=self.rotors[:2], t=d.time))
+        dr = self.drive_ports(voltage, drive)
         act = b.act.electrical(voltage, actuator, ["drive"]*2,
                                [0., float(b.z0+d.qpos[3]), float(d.qpos[4])],
                                [0., float(d.qvel[3]), float(d.qvel[4])])

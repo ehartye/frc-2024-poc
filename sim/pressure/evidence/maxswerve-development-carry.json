@@ -1,0 +1,92 @@
+{
+  "schema": "maxswerve-development-carry/1",
+  "formalAttempts": 0,
+  "scoredNotes": 0,
+  "runs": {
+    "D1": {
+      "attempt": "D1",
+      "dt": 0.0005,
+      "grid": 512,
+      "runtime": {
+        "python": "3.13.12",
+        "mujoco": "4.0.1",
+        "numpy": "2.5.5"
+      },
+      "rosterSha256": "086e11317044cb8a409dd3b53d1f116b71242caa868a11be7900985ebfe84c52",
+      "nativeSha256": "ae6c40659f7a215573b1e172ae7aec3e90d62a94b8c27863234ee7c8cf275ce2",
+      "pickupTrace": "2b734e88ae8cd155a2cf198c211dafdf07b88fb0e824228fe3afebdc67f8bf3d",
+      "carryTrace": "ce0193e1175b12af63a564e59acf3d50cda6d9597dc791a49fb49a9d1b7098a3",
+      "firstBilateralS": 2.28399999999993,
+      "seatedS": 4.494500000000229,
+      "shootingPoseS": 9.894500000000601,
+      "simultaneousStrafeTurnLiftS": 2.653499999998755,
+      "minimumBusV": 11.36469989188293,
+      "minimumCarrySideLoadN": 3.5921744625994725,
+      "peakDriveAndSteerCurrentA": [
+        10.957822517247774,
+        20.0
+      ],
+      "stationPositionErrorM": 0.00013501857152808903,
+      "stationHeadingErrorRad": -0.0006553450614328327
+    },
+    "D2": {
+      "attempt": "D2",
+      "dt": 0.0005,
+      "grid": 512,
+      "runtime": {
+        "python": "3.13.12",
+        "mujoco": "4.0.1",
+        "numpy": "2.5.5"
+      },
+      "rosterSha256": "086e11317044cb8a409dd3b53d1f116b71242caa868a11be7900985ebfe84c52",
+      "nativeSha256": "ae6c40659f7a215573b1e172ae7aec3e90d62a94b8c27863234ee7c8cf275ce2",
+      "pickupTrace": "710cd7fa0cc503af25aee38f623b4cabf17a81c20a1f88a713e497ac43029eb3",
+      "carryTrace": "7ef540107771df265e79ea92431162095ce951d162111d3e0dee62bfe67617d2",
+      "firstBilateralS": 2.448499999999985,
+      "seatedS": 4.65450000000014,
+      "shootingPoseS": 10.054500000000797,
+      "simultaneousStrafeTurnLiftS": 2.635999999999018,
+      "minimumBusV": 11.364388724713763,
+      "minimumCarrySideLoadN": 3.5889933495713016,
+      "peakDriveAndSteerCurrentA": [
+        11.135083974623882,
+        20.0
+      ],
+      "stationPositionErrorM": 0.00020991254682007236,
+      "stationHeadingErrorRad": -0.0007763132056366473
+    },
+    "D1-half": {
+      "attempt": "D1",
+      "dt": 0.00025,
+      "grid": 512,
+      "runtime": {
+        "python": "3.13.12",
+        "mujoco": "4.0.1",
+        "numpy": "2.5.5"
+      },
+      "rosterSha256": "086e11317044cb8a409dd3b53d1f116b71242caa868a11be7900985ebfe84c52",
+      "nativeSha256": "ae6c40659f7a215573b1e172ae7aec3e90d62a94b8c27863234ee7c8cf275ce2",
+      "pickupTrace": "194dd93a4da2231dfd2ae42c454ef58dfa6b5dca91f7f91c4f23443953563623",
+      "carryTrace": "aee4d07f512f60fcc81b6f74912237cae12c5e25fb03a936655129b6475c9a4e",
+      "firstBilateralS": 2.284250000000094,
+      "seatedS": 4.462999999999709,
+      "shootingPoseS": 9.863249999999688,
+      "simultaneousStrafeTurnLiftS": 2.6560000000029325,
+      "minimumBusV": 11.234157165309238,
+      "minimumCarrySideLoadN": 3.6290804364113955,
+      "peakDriveAndSteerCurrentA": [
+        10.957822517247774,
+        20.0
+      ],
+      "stationPositionErrorM": 0.00017696458193168114,
+      "stationHeadingErrorRad": -0.0008630726417147017
+    }
+  },
+  "differentialSeatedS": {
+    "D1": 4.830000000000043,
+    "D2": 4.815000000000051
+  },
+  "unchangedDifferentialD1Trace": "8ed53925c9f3d8b57b54d911b9e24dcc24fb279f171e2f66f697d78860d370f2",
+  "differentialReferenceRevision": "e983057",
+  "nativeLayoutSha256": "0c005124a7a5abe800f302b0225858834a8d7df6fcec9467dcf121efc08e413a"
+}

@@ -78,3 +78,26 @@ Moving the common station 7.5 mm closer to the wall gave a verified first score 
 | Minimum discharged NOTE to moving robot clearance | 21.39 mm | 22.89 mm |
 
 The 2024 robot is converting to four independently steered modules. Compare pickup and score times at the same floor placements with the same sensor, native-clearance and mission-clock checks. The six-score campaign will use the integrated swerve robot. [Verified differential-drive comparison records](evidence/speaker-first-release-runtime.json)
+
+### Four-module pickup and carry
+
+Both mirrored development starts use the same 520 mm square module layout and the same four independently steered wheels as the articulated Fusion revision. Each run starts empty. The simulator integrates the free NOTE and all eight module coordinates alongside the original carriage, pitch, belts and launcher wheels. Once the NOTE loads a belt, the robot can move sideways to balance the two simulated belt loads. The controller uses ideal simulated load and pose observations. The same plant continues from seated pickup to the first close-range station at field XY (1.475, 5.553075) m and heading 180°.
+
+| Simulated measurement | D1 | D2 |
+| --- | ---: | ---: |
+| Six-wheel baseline, NOTE seated (s) | 4.8300 | 4.8150 |
+| Swerve, NOTE seated (s) | 4.4945 | 4.6545 |
+| Swerve, NOTE retained at shooting pose (s) | 9.8945 | 10.0545 |
+| Simultaneous strafe, turn and lift or pitch (s) | 2.6535 | 2.6360 |
+| Minimum bus voltage (V) | 11.365 | 11.364 |
+
+The pickup improvement was 0.336 s on D1 and 0.161 s on D2 against the six-wheel tactile controller. Halving the integration step to 0.25 ms changed D1 station arrival by 0.03125 s. The steering motors reached their 20 A limit. The minimum modeled load on either belt during the two nominal carries exceeded 3.58 N. Scoring still requires a separate launch, field passage and native clearance check. [Development receipts](evidence/maxswerve-development-carry.json)
+
+The drive model uses the 12-tooth pinion and 5.5 drive reduction. Its inferred carrier coupling gives drive shaft rate equal to 5.5 times wheel rate plus steer rate. The same transmission maps torque and reflected inertia. The electrical model uses the published motor endpoints, bounds motoring torque by the back-EMF constant, and dissipates generated terminal power locally. Each tire applies one friction-limited force at the carpet. The planar chassis assumes equal tire normal loads, friction coefficient 0.9 and 0.1 m/s slip regularization. Rotating masses and inertias are estimates within the original robot mass and yaw inertia. Hardware traction, sensor response and the carrier coupling sign need measurement. [WPILib motor data](https://github.com/wpilibsuite/allwpilib/blob/v2024.3.2/wpimath/src/main/java/edu/wpi/first/math/system/plant/DCMotor.java) · [REV gearing and current settings](https://github.com/REVrobotics/MAXSwerve-Java-Template/blob/e87ac7aa00edc12efecf49089a904388aa896a84/src/main/java/frc/robot/Constants.java)
+
+Run with the pinned simulator and the private articulated F3D. Each output argument points to a new directory.
+
+```powershell
+python -B sim/pressure/varied_floor_start.py --archive $ArticulatedRobot --drivetrain maxswerve --roster sim/pressure/evidence/speaker-pickup-development-starts.csv --attempt D1 --output $Pickup --carry-output $Carry
+python -B sim/pressure/verify_swerve_carry.py $Pickup $Carry
+```

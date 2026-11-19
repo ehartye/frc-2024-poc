@@ -232,6 +232,8 @@ def deliver(args, p, row, source, native, collected):
             station=np.linalg.norm(d.qpos[3:5]-target_station)
             ready=(d.time-p.seated>5.25 and pos_error<.035 and abs(heading_error)<.012
                    and abs(forward)<.035 and abs(d.qvel[2])<.035 and station<.005 and min(p.last_loads)>.02)
+            if hasattr(p, "field_velocity"):
+                ready = ready and np.linalg.norm(d.qvel[:2]) < .035
             if ready:
                 if hold is None:hold=d.time
                 if d.time-hold >= .15:outcome="AT_SHOOTING_POSE"
@@ -253,6 +255,9 @@ def deliver(args, p, row, source, native, collected):
                 viaFieldXY=args.via,transitSpeedMps=args.transit_speed,
                 turnRateRadPerS=args.turn_rate,turnAccelRadPerS2=args.turn_accel,
                 firstMark=args.first_mark,fieldYawDeg=args.field_yaw_deg)
+    if hasattr(p, "field_velocity"):
+        result.update(schema="maxswerve-wing-note-delivery/1", drivetrain="maxswerve",
+                      minimumBusV=p.minimum_bus, peakDriveAndSteerCurrentA=p.peak_current.tolist())
     if args.lookahead:
         result["lookaheadM"]=args.lookahead
     if args.lifting_drive_accel!=1.2:

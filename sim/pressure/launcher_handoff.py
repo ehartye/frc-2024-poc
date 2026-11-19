@@ -43,7 +43,7 @@ class RaisedFeed:
             world=tree.find("worldbody")
             world.remove(world.find("body[@name='note']"))
             xml=ET.tostring(tree,encoding="unicode")
-        self.model = mujoco.MjModel.from_xml_string(xml)
+        self.model = mujoco.MjModel.from_xml_string(self.drivetrain_xml(xml))
         self.data = mujoco.MjData(self.model)
         self.dt = dt
         self.chassis = self.model.body("chassis").id
@@ -150,11 +150,27 @@ class RaisedFeed:
             pinch = [-self.launcher["pinchDuty"]*ramp]*2
         return drive, actuator, pinch, launcher_duty
 
+    def drivetrain_xml(self, xml):
+        return xml
+
+    def drive_ports(self, voltage, drive):
+        return self.base.drive.electrical(voltage, drive, modes=["drive"]*2,
+                                          state=dict(wheel=self.rotors[:2], t=self.data.time))
+
+    def apply_drive(self, voltage, cmd, drive):
+        b, d = self.base, self.data
+        state = dict(x=d.qpos[0], y=d.qpos[1], heading=d.qpos[2], vx=d.qvel[0],
+                     vy=d.qvel[1], yaw_rate=d.qvel[2], wheel=self.rotors[:2], t=d.time)
+        rates = b.drive._rates(state, voltage, cmd, ["drive"]*2, b.loads, [0., 0.], 0.)
+        yaw = d.xmat[self.chassis].reshape(3, 3)
+        d.qfrc_applied[:2] = yaw[:2, :2] @ rates["contactForceBodyN"]
+        d.qfrc_applied[2] = rates["contactYawTorqueNm"]
+        return rates["dw"]
+
     def ports(self, voltage, cmd):
         b, d = self.base, self.data
         drive, actuator, pinch, duty = cmd
-        dr = b.drive.electrical(voltage, drive, modes=["drive"]*2,
-                                state=dict(wheel=self.rotors[:2], t=d.time))
+        dr = self.drive_ports(voltage, drive)
         act = b.act.electrical(voltage, actuator, ["drive"]*2,
                                [0., b.z0+float(d.qpos[3]), float(d.qpos[4])], [0., float(d.qvel[3]), float(d.qvel[4])])
         intake = [motor_electrical(u, voltage, w, b.nc) for u,w in zip(pinch,self.rotors[2:])]
@@ -183,14 +199,9 @@ class RaisedFeed:
         if v0 > 12.000001 or v0 <= 0 or drive["infeasibleCurrentLimitVoltage"] or act["infeasibleCurrentLimitVoltage"]:
             raise ValueError("Motor supply outside modeled domain")
         self.bus = v0
-        state = dict(x=d.qpos[0],y=d.qpos[1],heading=d.qpos[2],vx=d.qvel[0],
-                     vy=d.qvel[1],yaw_rate=d.qvel[2],wheel=self.rotors[:2],t=d.time)
-        rates = b.drive._rates(state,v0,cmd[0],["drive"]*2,b.loads,[0.,0.],0.)
-        yaw = d.xmat[self.chassis].reshape(3,3)
         applied = d.qfrc_applied
         applied[:] = 0
-        applied[:2] = yaw[:2,:2] @ rates["contactForceBodyN"]
-        applied[2] = rates["contactYawTorqueNm"]
+        drive_accel = self.apply_drive(v0, cmd[0], drive)
         applied[3:5] = act["generalizedMotorForce"][1:]
         applied[self.wheel_dofs] = [p["torqueNm"] for p in wheels["motors"]]
         if self.carries_note:
@@ -198,7 +209,7 @@ class RaisedFeed:
             mujoco.mj_applyFT(m,d,-belt["force"],belt["cradleMoment"],d.xpos[self.cradle],self.cradle,applied)
         self.source_work += self.dt*12.*power/v0
         accel = (np.array([p["torqueNm"] for p in intake])+belt["rotor"])/b.nc["rotorInertiaKgM2"]
-        self.rotors += self.dt*np.r_[rates["dw"],accel]
+        self.rotors += self.dt*np.r_[drive_accel,accel]
         self.shear += self.dt*belt["shearRate"]
         mujoco.mj_step2(m,d)
         contact = np.zeros(6)

@@ -20,7 +20,17 @@ def run(args):
         verify_runtime_chain([dict(runtime=runtime)])
     binding = load(EVIDENCE / "native-signed-20261118/native-pressure-binding.json")
     native = digest(args.archive)
-    if native != binding["nativeArchiveSha256"]:
+    if args.carry_output and args.drivetrain != "maxswerve":
+        raise ValueError("The continuous holonomic carry requires MAXSwerve")
+    plant_type = ReturnPlant
+    expected_native = binding["nativeArchiveSha256"]
+    if args.drivetrain == "maxswerve":
+        from maxswerve import LAYOUT, SwervePickup
+        expected_native = load(LAYOUT)["privateFusionArchiveSha256"]
+        plant_type = SwervePickup
+        if args.steering != "none":
+            raise ValueError("The load and encoder steering variants are differential-drive controllers")
+    if native != expected_native:
         raise ValueError("Unexpected native Fusion archive")
     xy = local_offset(settings, "robot")
     yaw = math.radians(settings["robot_heading_deg"])
@@ -35,7 +45,7 @@ def run(args):
     state = dict(q=[*xy, yaw, 0., 0., *note_xy, z, 1., 0., 0., 0.],
                  v=[0.]*11, rotor=[0.]*4, shear=[0.]*4, busV=12., clock=0.)
     calibration = load(ROOT / "sim/mujoco/evidence/launcher-quadrature-verification-20261118.json")
-    plant = ReturnPlant(start, state, args.dt, args.grid, 32,
+    plant = plant_type(start, state, args.dt, args.grid, 32,
                         calibration["runs"]["grid-16384"]["parameters"])
     plant.begin_pickup(starts_lowered=True)
     plant.capture_speed = .16
@@ -54,16 +64,40 @@ def run(args):
                   waitingNoteLocalXY=note_xy.tolist(), targetLocalXY=nominal.tolist(),
                   contactSteering=plant.contact_steering, encoderSteering=plant.encoder_steering, captureSpeedMps=plant.capture_speed,
                   traceStride=args.trace_stride)
+    if args.drivetrain == "maxswerve":
+        result.update(schema="maxswerve-first-wing-acquisition/1", layoutSha256=digest(LAYOUT),
+                      collectedMarks=["middle"] if result["outcome"] == "SEATED" else [],
+                      drivetrain=args.drivetrain, contactSteering=True, steeringObservation="ideal belt normal load difference",
+                      moduleOrder=["FL", "FR", "RL", "RR"],
+                      peakDriveAndSteerCurrentA=plant.peak_current.tolist(), peakSlipMps=plant.peak_slip,
+                      azimuthQpos=plant.az_pos.tolist(),
+                      wheelRollQpos=[int(plant.model.joint("roll_"+tag).qposadr[0]) for tag in ("fl","fr","rl","rr")])
     (args.output / "result.json").write_text(json.dumps(result, indent=2, allow_nan=False)+"\n")
     print(json.dumps({k:result[k] for k in ("attempt", "outcome", "end", "firstBilateral", "trace")}))
+
+    if args.carry_output and result["outcome"] == "SEATED":
+        from types import SimpleNamespace
+        from wing_note_delivery import deliver, tail
+        carry = SimpleNamespace(output=args.carry_output, first_mark="middle", field_yaw_deg=245.,
+                                field_station=[1.475, 5.553075, 180.], transit_speed=.85,
+                                turn_rate=.90, turn_accel=.7, lifting_drive_accel=.40,
+                                via=[], final_straight=0., lookahead=0., dt=args.dt,
+                                horizon=18., grid=args.grid, trace_stride=args.trace_stride)
+        plant.shoot_position = FRAME.to_local([*carry.field_station[:2], 0.])[:2]
+        plant.shoot_heading = math.radians(carry.field_station[2]-carry.field_yaw_deg)
+        plant.field_velocity = plant.data.qvel[:2].copy()
+        plant.attempt_setup = (args.attempt, roster_digest)
+        deliver(carry, plant, tail(args.output, result), result["trace"], native, ["middle"])
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--archive", type=Path, required=True)
+    parser.add_argument("--carry-output", type=Path, help="Continue the seated swerve robot to the first Speaker station")
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--roster", type=Path, default=COHORT)
     parser.add_argument("--attempt", required=True)
+    parser.add_argument("--drivetrain", choices=("differential", "maxswerve"), default="differential")
     parser.add_argument("--steering", choices=("none", "load", "encoder"), default="none")
     parser.add_argument("--dt", type=float, choices=(.00025, .0005), default=.0005)
     parser.add_argument("--grid", type=int, choices=(256, 512, 1024), default=512)
