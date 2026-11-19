@@ -10,6 +10,7 @@ import numpy as np
 from second_wing_pickup import ReturnPlant, angle_error, build, build_seated
 from wing_field_frame import WingFrame, piece_id
 from run_axial_shear_lift import digest, load
+from field_transit import TransitPath
 
 
 class DeliveryPlant(ReturnPlant):
@@ -44,7 +45,11 @@ class DeliveryPlant(ReturnPlant):
             target=self.waypoints[0]
         delta = target-d.qpos[:2]
         distance = np.linalg.norm(delta)
-        if self.waypoints and distance<.14:
+        if self.transit_path is not None:
+            target,remaining=self.transit_path.target(d.qpos[:2])
+            delta=target-d.qpos[:2]
+            distance=np.linalg.norm(delta)
+        elif self.waypoints and distance<.14:
             self.waypoints.pop(0)
         elif (not self.waypoints and self.approach_position is not None and distance<.035 and
                 abs(angle_error(self.shoot_heading, heading))<.035 and abs(d.qvel[2])<.05):
@@ -61,10 +66,17 @@ class DeliveryPlant(ReturnPlant):
         increment=.007*accel_ratio
         self.turn_reference += float(np.clip(desired_turn-self.turn_reference,-increment,increment))
         want_turn = self.turn_reference
-        want_speed = min(self.transit_speed, 1.7*distance)*max(0.,math.cos(error))**6
+        speed_distance=distance if self.transit_path is None else remaining
+        want_speed = min(self.transit_speed, 1.7*speed_distance)*max(0.,math.cos(error))**6
+        if self.transit_path is not None:
+            # Decelerate into the station approach. A large lateral deviation
+            # cannot be corrected in place by the differential drivetrain.
+            station_distance=np.linalg.norm(self.shoot_position-d.qpos[:2])
+            want_speed=min(want_speed,.62+.95*max(0.,station_distance-.65))
         if self.transit_speed>.6:
             # Bound loaded acceleration while lifting and negotiating corners.
-            want_speed=min(want_speed,self.speed_reference+.012)
+            accel=self.lifting_drive_accel if d.qpos[4]<math.radians(45.) else 1.2
+            want_speed=min(want_speed,self.speed_reference+.01*accel)
             self.speed_reference=want_speed
         if distance <= .035:
             want_speed = 1.7*delta@body[:2,0]
@@ -145,12 +157,23 @@ def deliver(args, p, row, source, native, collected):
     p.turn_rate=args.turn_rate
     p.turn_accel=args.turn_accel
     p.speed_reference=max(0.,p.observe()[2])
+    if not 0.<args.lifting_drive_accel<=1.2:
+        raise ValueError("Invalid forward acceleration limit while the cradle pitches")
+    p.lifting_drive_accel=args.lifting_drive_accel
     frame=WingFrame(args.first_mark,args.field_yaw_deg)
     p.waypoints=[frame.to_local([x,y,0.])[:2] for x,y in args.via]
     if not math.isfinite(args.final_straight) or args.final_straight<0.:
         raise ValueError("Invalid final straight approach length")
     direction=np.array([math.cos(p.shoot_heading),math.sin(p.shoot_heading)])
     p.approach_position=p.shoot_position-args.final_straight*direction if args.final_straight else None
+    p.transit_path=None
+    if args.lookahead:
+        if not math.isfinite(args.lookahead) or args.lookahead<=0.:
+            raise ValueError("Lookahead must be positive and finite")
+        points=[row["q"][:2],*p.waypoints]
+        if p.approach_position is not None:
+            points.append(p.approach_position)
+        p.transit_path=TransitPath([*points,p.shoot_position],args.lookahead)
     p.turn_reference=float(p.data.qvel[2])
     p.base.initial={"note":{"p":[row["relative"][0]]},"chassis":{"x":0.}}
     period=round(.01/args.dt)
@@ -196,6 +219,10 @@ def deliver(args, p, row, source, native, collected):
                 viaFieldXY=args.via,transitSpeedMps=args.transit_speed,
                 turnRateRadPerS=args.turn_rate,turnAccelRadPerS2=args.turn_accel,
                 firstMark=args.first_mark,fieldYawDeg=args.field_yaw_deg)
+    if args.lookahead:
+        result["lookaheadM"]=args.lookahead
+    if args.lifting_drive_accel!=1.2:
+        result["liftingDriveAccelMps2"]=args.lifting_drive_accel
     (args.output/"result.json").write_text(json.dumps(result,indent=2,allow_nan=False)+"\n")
     print(outcome,p.data.time,flush=True)
 
@@ -215,6 +242,8 @@ if __name__=="__main__":
     parser.add_argument("--final-straight",type=float,default=0.,help="Align this many metres behind the shooting position")
     parser.add_argument("--via",type=float,nargs=2,action="append",default=[],metavar=("X","Y"),help="Traverse a field waypoint before final alignment")
     parser.add_argument("--transit-speed",type=float,default=.6,help="Loaded travel speed limit in m/s")
+    parser.add_argument("--lookahead",type=float,default=0.,help="Follow the connected transit legs with this lookahead distance in metres")
+    parser.add_argument("--lifting-drive-accel",type=float,default=1.2,help="Forward reference acceleration limit in m/s² until the cradle reaches 45 degrees")
     parser.add_argument("--turn-rate",type=float,default=.95,help="Loaded turning reference limit in rad/s")
     parser.add_argument("--turn-accel",type=float,default=.7,help="Loaded turning reference slew in rad/s²")
     parser.add_argument("--first-mark",choices=("inner","middle","outer"),default="inner")

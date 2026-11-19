@@ -68,12 +68,12 @@ def terminal(folder):
     return receipt,row
 
 
-def run(inputs,field,output,duration):
+def run(inputs,field,output,duration=None,until=None):
     from run_speaker_field import collection_floor, field_wrench
     from speaker_surfaces import SpeakerSurfaces
     solver_pin=digest(Path(__file__))
-    if len(inputs)<2 or not math.isfinite(duration) or duration<=0:
-        raise ValueError("Expected multiple NOTES and a positive collection duration")
+    if len(inputs)<2 or (duration is None)==(until is None):
+        raise ValueError("Expected multiple NOTES and exactly one collection endpoint")
     sources,states=zip(*(terminal(folder) for folder in inputs))
     ids=[r["sourceTrace"] for r in sources]
     if len(set(ids))!=len(ids):
@@ -89,6 +89,10 @@ def run(inputs,field,output,duration):
                 raise ValueError("Shared collection must retain all interacting NOTES")
     reference=sources[0]
     params=SimpleNamespace(**reference["parameters"])
+    if until is not None:
+        duration=until-reference["endS"]
+    if not math.isfinite(duration) or duration<=0:
+        raise ValueError("Collection must advance the shared clock")
     keys=("dt","nodes","stiffness","damping","friction","belt_speed","first_mark","field_yaw_deg")
     for rc in sources[1:]:
         if (rc["field"]!=reference["field"] or rc["nativeSha256"]!=reference["nativeSha256"]
@@ -106,12 +110,13 @@ def run(inputs,field,output,duration):
     data.time=reference["endS"]
     angles=np.arange(params.nodes)*2*np.pi/params.nodes
     ring=MAJOR*np.column_stack((np.cos(angles),np.sin(angles),np.zeros(params.nodes)))
-    steps=round(duration/params.dt)
+    steps=round(duration/params.dt) if until is None else math.ceil((duration-1e-9)/params.dt)
     if steps<1:
         raise ValueError("Collection duration is shorter than one timestep")
     folders=[output/str(i) for i in range(len(ids))]
     first_contact={}
     max_depth=0.
+    final_step=None
     with ExitStack() as stack:
         surfaces=SpeakerSurfaces(field)
         stack.callback(surfaces.close)
@@ -123,6 +128,11 @@ def run(inputs,field,output,duration):
             folder.mkdir()
             files.append(stack.enter_context((folder/"trace.jsonl").open("x")))
         for tick in range(steps+1):
+            if until is not None and tick==steps-1:
+                final_step=until-data.time
+                if not 0.<final_step<=params.dt+1e-8:
+                    raise ValueError("Invalid last integration interval")
+                model.opt.timestep=final_step
             mujoco.mj_step1(model,data)
             bodies=[]
             wrenches=[]
@@ -159,6 +169,8 @@ def run(inputs,field,output,duration):
                     previousFieldTrace=rc["trace"],segmentStartS=rc["endS"],releaseTimeS=rc["releaseTimeS"],endS=data.time,
                     parameters={**rc["parameters"],"collection_floor":True,"horizon":duration},
                     coupledManifest=digest(manifest))
+        if final_step is not None:
+            result["finalStepS"]=final_step
         (folder/"result.json").write_text(json.dumps(result,indent=2,allow_nan=False))
     return first_contact,max_depth
 
@@ -168,6 +180,8 @@ if __name__=="__main__":
     parser.add_argument("--inputs",nargs="+",type=Path,required=True)
     parser.add_argument("--field",type=Path,required=True)
     parser.add_argument("--output",type=Path,required=True)
-    parser.add_argument("--duration",type=float,required=True)
+    end=parser.add_mutually_exclusive_group(required=True)
+    end.add_argument("--duration",type=float)
+    end.add_argument("--until",type=float,help="Integrate the last step to another NOTE's recorded clock")
     a=parser.parse_args()
-    print(run(a.inputs,a.field,a.output,a.duration))
+    print(run(a.inputs,a.field,a.output,a.duration,a.until))

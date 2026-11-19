@@ -14,6 +14,35 @@ def event(source, time):
 
 
 class ScoreLedger(unittest.TestCase):
+    def test_final_hold_requires_every_floor_mark_in_the_scored_order(self):
+        from verify_wing_attempt import finish_inventory
+        from wing_field_frame import SUPPLY_MARKS,piece_id
+        marks=list(SUPPLY_MARKS)
+        shot=dict(collectedMarks=marks)
+        hold=dict(shot,schema="post-release-station-hold/1",outcome="HELD")
+        scores=[piece_id(mark) for mark in marks]
+        finish_inventory(hold,shot,scores)
+        for altered in (scores[:-1],scores+[scores[-1]],list(reversed(scores))):
+            with self.assertRaisesRegex(ValueError,"six distinct floor"):
+                finish_inventory(hold,shot,altered)
+        with self.assertRaisesRegex(ValueError,"six distinct floor"):
+            finish_inventory(dict(hold,collectedMarks=marks[:-1]+[marks[0]]),shot,scores)
+
+    def test_transit_lookahead_crosses_a_corner_and_preserves_the_last_station(self):
+        from wing_note_delivery import TransitPath
+        route=TransitPath([[0.,0.],[0.,0.],[1.,0.],[1.,1.]],.5)
+        for xy in ([0.,0.],[.40,0.],[.75,0.]):
+            target,left=route.target(np.array(xy))
+        np.testing.assert_allclose(target,[1.,.25])
+        self.assertAlmostEqual(left,1.25)
+        for xy in ([1.,.1],[1.,.5],[1.,1.]):
+            target,left=route.target(np.array(xy))
+        np.testing.assert_allclose(target,[1.,1.])
+        self.assertEqual(left,0.)
+        # A disturbance behind the last waypoint still calls for station correction.
+        target,left=route.target(np.array([1.,.8]))
+        self.assertAlmostEqual(left,.2)
+
     def test_belt_bound_keeps_the_end_caps_and_finite_height(self):
         from refine_shell_clearance import belt_distances
         # This ring sample lands at the requested position relative to the belt.
@@ -109,6 +138,15 @@ class MovingReturn(unittest.TestCase):
         belt,floor,_=model.contact()
         self.assertAlmostEqual(floor[2],.235*9.80665,places=10)
         self.assertEqual(sum(belt["normal"]),0.)
+        from post_release_hold import StationHold
+        empty=dict(seed,q=seed["q"][:5],v=seed["v"][:5])
+        parked=StationHold(acquired,empty,.0005,128,32,dict(referenceStiffness=4350.,referenceDamping=132.))
+        parked.resume(saved)
+        self.assertEqual(mujoco.mj_name2id(parked.model,mujoco.mjtObj.mjOBJ_BODY,"note"),-1)
+        np.testing.assert_array_equal(parked.data.qpos,saved["q"][:-7])
+        np.testing.assert_array_equal(parked.data.qvel,saved["v"][:-6])
+        self.assertEqual(parked.step(True,0.,False),(0.,0.))
+        self.assertGreater(parked.data.time,saved["time"])
         saved["wheelNormalN"]=1.
         with self.assertRaises(ValueError):
             model.resume(saved)

@@ -53,6 +53,10 @@ def phase(folder):
         raise ValueError("Field audit needs every integration pose of the phase")
     with path.open("rb") as stream:
         data=[json.loads(line) for line in stream]
+    if result.get("schema")=="post-release-station-hold/1":
+        if any(len(r["q"])!=len(result["initialRobotQ"]) for r in data):
+            raise ValueError("Unexpected payload in the parked robot")
+        return np.array([[r["t"],*r["q"][:5]] for r in data])
     return np.array([[r.get("time",r.get("t")),*r["q"][:5],*r["q"][-7:-4]] for r in data])
 
 
@@ -75,13 +79,19 @@ def audit(rows,frame,inventory,field,waiting):
         obs_names += [f"idle-{i}" for i in range(len(idle))]
     xyz=np.column_stack((rows[:,1:3],np.zeros(len(rows))))
     fieldxy=(xyz-[.658,0.,0.])@frame.rotation.T+frame.origin_mark
-    active=(rows[:,6:9]-[.658,0.,0.])@frame.rotation.T+frame.origin_mark
+    active=None
+    piece_steps=np.zeros(len(rows)-1)
+    if rows.shape[1]==9:
+        active=(rows[:,6:9]-[.658,0.,0.])@frame.rotation.T+frame.origin_mark
+        piece_steps=np.linalg.norm(np.diff(active,axis=0),axis=1)
+    elif rows.shape[1]!=6:
+        raise ValueError("Expected chassis coordinates with or without a physical NOTE")
     if np.any(np.diff(rows[:,0])<=0) or np.max(np.diff(rows[:,0]))>.0010001:
         raise ValueError("Robot trajectory is discontinuous or too sparse")
     # Prefix sums bound all intermediate integration steps in a block, including changes of direction.
     increments=np.column_stack([np.linalg.norm(np.diff(fieldxy,axis=0),axis=1),
                                 np.abs(np.diff(rows[:,3:6],axis=0)),
-                                np.linalg.norm(np.diff(active,axis=0),axis=1)])
+                                piece_steps])
     travel=np.vstack([np.zeros(5),np.cumsum(increments,axis=0)])
     unresolved=[]
     minimum=math.inf
@@ -129,15 +139,16 @@ def audit(rows,frame,inventory,field,waiting):
                 clear=np.maximum(ob[index,0]-upper,lower-ob[index,1]).max(axis=1)
                 gap=min(gap,float(clear.min()))
                 pairs.extend((names[i],obs_names[index]) for i in np.flatnonzero(clear<=0))
-        active_extent=.1778+piece_move+.000003
-        static=ob[:len(obstacles)]
-        near_piece=np.flatnonzero(((active[lo]+active_extent>=static[:,0])
-                                    & (active[lo]-active_extent<=static[:,1])).all(axis=1))
-        pairs.extend(("moving NOTE",obs_names[i]) for i in near_piece)
-        if len(idle):
-            gap=min(gap,float(np.linalg.norm(idle-active[lo],axis=1).min()-.3556-piece_move))
-            if np.any(np.linalg.norm(idle-active[lo],axis=1)<=.3556+piece_move):
-                pairs.append(("moving NOTE","idle NOTE envelopes"))
+        if active is not None:
+            active_extent=.1778+piece_move+.000003
+            static=ob[:len(obstacles)]
+            near_piece=np.flatnonzero(((active[lo]+active_extent>=static[:,0])
+                                        & (active[lo]-active_extent<=static[:,1])).all(axis=1))
+            pairs.extend(("moving NOTE",obs_names[i]) for i in near_piece)
+            if len(idle):
+                gap=min(gap,float(np.linalg.norm(idle-active[lo],axis=1).min()-.3556-piece_move))
+                if np.any(np.linalg.norm(idle-active[lo],axis=1)<=.3556+piece_move):
+                    pairs.append(("moving NOTE","idle NOTE envelopes"))
         if pairs and hi-lo>1:
             middle=(lo+hi)//2
             remaining.extend([(lo,middle),(middle,hi)])
@@ -224,11 +235,17 @@ if __name__=="__main__":
             raise ValueError("Return does not continue the audited release")
         if "collectedMarks" not in acquisition:
             acquisition=dict(acquisition,collectedMarks=[args.first_mark,"middle"],pieceId=piece_id("middle"))
-        start=pickup_entry(acquisition,frame,collected)
+        if acquisition.get("schema")=="post-release-station-hold/1":
+            if len(args.next_phase)!=1 or acquisition["collectedMarks"]!=collected or acquisition["outcome"]!="HELD":
+                raise ValueError("A final hold must retain the current inventory")
+            start=np.r_[acquisition["start"],acquisition["initialRobotQ"][:5]]
+            pieces=waiting
+        else:
+            start=pickup_entry(acquisition,frame,collected)
+            field_mark=frame.mark(acquisition["collectedMarks"][-1])
+            pieces=[xy for xy in waiting if not np.array_equal(xy,field_mark[:2])]
         if not np.allclose(start[:6],rows[-1,:6],rtol=0,atol=1e-8):
             raise ValueError("Robot pose changed at release")
-        field_mark=frame.mark(acquisition["collectedMarks"][-1])
-        pieces=[xy for xy in waiting if not np.array_equal(xy,field_mark[:2])]
         following=np.vstack([start,*[phase(f) for f in args.next_phase]])
         result["followingTraces"]=[digest(f/"trace.jsonl") for f in args.next_phase]
         result["results"].append(audit(following,frame,robot["inventory"],field["parts"],pieces))

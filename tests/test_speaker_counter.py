@@ -49,6 +49,50 @@ class OpticalPaths(unittest.TestCase):
 
 
 class ConsecutiveScores(unittest.TestCase):
+    def test_join_at_another_flights_clock_integrates_the_final_fraction(self):
+        from types import SimpleNamespace
+        from unittest.mock import patch
+        from coupled_collection import run
+        from counter_reset import centers
+        from run_axial_shear_lift import digest
+
+        step=.0001
+        inputs=[]
+        for index in range(2):
+            name=f"before-{index}"
+            self.segment(name,name,0,[index,index])
+            folder=self.root/name
+            receipt=json.loads((folder/"result.json").read_bytes())
+            receipt["parameters"].update(dt=step,nodes=32,stiffness=1.2e6,damping=450.,friction=.45,
+                                         belt_speed=1.5,first_mark="middle",field_yaw_deg=245.,collection_floor=True)
+            rows=[dict(t=t,q=[index,0.,2.,1.,0.,0.,0.],v=[0.]*6) for t in (0.,step)]
+            trace=folder/"trace.jsonl"
+            trace.write_text("".join(json.dumps(row)+"\n" for row in rows))
+            receipt.update(trace=digest(trace),endS=step)
+            (folder/"result.json").write_text(json.dumps(receipt))
+            inputs.append(folder)
+
+        # The free-flight case has no surfaces nearby. Gravity gives an
+        # independent check that the last half step advanced physical state.
+        field=SimpleNamespace(pins={"registered":"same"},close=lambda:None)
+        model=SimpleNamespace(SpeakerSurfaces=lambda path:field)
+        law=SimpleNamespace(field_wrench=lambda *args:(np.zeros(6),{},0.),
+                            collection_floor=lambda *args:(np.zeros(6),0.))
+        out=self.root/"joint"
+        with patch.dict(sys.modules,{"speaker_surfaces":model,"run_speaker_field":law}):
+            run(inputs,self.root,out,until=3.5*step)
+        for i in range(2):
+            rc,poses,_,last=centers(out/str(i))
+            self.assertAlmostEqual(rc["finalStepS"],step/2)
+            np.testing.assert_allclose(poses[:,0],step*np.array([1,2,3,3.5]),atol=1e-12,rtol=0)
+            self.assertAlmostEqual(last["v"][2],-9.80665*2.5*step)
+            self.assertAlmostEqual(last["q"][2],2.-9.80665*step**2*(1+2+1.25))
+            self.assertEqual(rc["coupledManifest"],digest(out/"manifest.json"))
+            rc["finalStepS"]=step
+            (out/str(i)/"result.json").write_text(json.dumps(rc))
+            with self.assertRaisesRegex(ValueError,"Incomplete field time history"):
+                centers(out/str(i))
+
     def test_collection_contact_requires_the_same_joint_solve(self):
         from counter_reset import collection_pair
         low=np.array([[t,0.,0.,0.,1.,0.,0.,0.] for t in (0.,.001,.002)])

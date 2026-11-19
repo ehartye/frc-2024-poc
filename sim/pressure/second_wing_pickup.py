@@ -13,6 +13,7 @@ from retained_route import short_brake, target
 from run_axial_shear_lift import ROOT, EVIDENCE, load, digest
 from signed_pressure_acquisition import motor_electrical
 from wing_field_frame import SUPPLY_MARKS, WingFrame, WING_MARKS_INCHES, piece_id
+from field_transit import TransitPath
 from turning_plant import TurningPlant
 
 
@@ -50,6 +51,8 @@ class ReturnPlant(RaisedFeed):
         self.waypoints=[]
         self.reverse_transit=False
         self.transit_speed=1.1
+        self.capture_speed=.26
+        self.transit_path=None
         mujoco.mj_forward(self.model, d)
 
     def contact(self):
@@ -69,13 +72,17 @@ class ReturnPlant(RaisedFeed):
         error = angle_error(target_heading, d.qpos[2])
         want_turn = np.clip(4*error, -1.65, 1.65)
         approach = min(self.transit_speed, max(0., 1.7*(distance-.178)))
+        capture_gain=1.5*(self.capture_speed/.26)
         if distance < .65 or self.turn_heading is not None:
-            approach = min(.26, max(0., 1.5*(rel[0]-.178)))
+            approach = min(self.capture_speed, max(0., capture_gain*(rel[0]-.178)))
         elapsed = d.time-self.release
         want_speed = approach*max(0., math.cos(error))**6
         if self.waypoints:
             offset=self.waypoints[0]-d.qpos[:2]
             gap=np.linalg.norm(offset)
+            if self.transit_path is not None:
+                point,gap=self.transit_path.target(d.qpos[:2])
+                offset=point-d.qpos[:2]
             course=math.atan2(offset[1],offset[0])
             error=angle_error(course+math.pi if self.reverse_transit else course,heading)
             want_turn=np.clip(4*error,-1.65,1.65)
@@ -83,7 +90,10 @@ class ReturnPlant(RaisedFeed):
             if self.reverse_transit:
                 want_speed=-want_speed
             if gap<.14:
-                self.waypoints.pop(0)
+                if self.transit_path is not None:
+                    self.waypoints.clear()
+                else:
+                    self.waypoints.pop(0)
         elif self.approach_waypoint is not None:
             offset=self.approach_waypoint-d.qpos[:2]
             gap=np.linalg.norm(offset)
@@ -116,7 +126,7 @@ class ReturnPlant(RaisedFeed):
         z = zref[0]-b.z0
         pitch = pref[0]
         actuator = self.actuator_command(belt, z, pitch)
-        traction_speed = min(.26, max(-.04, 1.5*(rel[0]-.178))) if self.turn_heading is not None else .22
+        traction_speed = min(self.capture_speed, max(-.04, capture_gain*(rel[0]-.178))) if self.turn_heading is not None else .22
         goal = traction_speed/b.nc["radiusM"]
         pinch = []
         self.brakes = []
@@ -221,16 +231,19 @@ def build(args, plant_type=ReturnPlant, segments=32):
     floor = load(EVIDENCE/"native-lift-20261118/native-pressure-lift-contract.json")
     z = .0254 - config["pieceMassKg"]*9.80665/floor["floorStiffnessNpm"]
     frame = WingFrame(args.first_mark,args.field_yaw_deg)
-    next_mark = args.next_mark
-    if next_mark in receipt.get("collectedMarks",[args.first_mark]):
-        raise ValueError("Target floor NOTE already collected")
-    mark_xy = frame.to_local(frame.mark(next_mark))[:2]
-    state = dict(q=[*last["q"][:5], *mark_xy, z, 1., 0., 0., 0.],
-                 v=[*last["v"][:5], 0.,0.,0.,0.,0.,0.], clock=last["time"],
+    state = dict(q=last["q"][:5],v=last["v"][:5],clock=last["time"],
                  rotor=last["externalRotors"], shear=last["shearM"], busV=last["busV"])
+    if plant_type.carries_note:
+        next_mark = args.next_mark
+        if next_mark in receipt.get("collectedMarks",[args.first_mark]):
+            raise ValueError("Target floor NOTE already collected")
+        mark_xy = frame.to_local(frame.mark(next_mark))[:2]
+        state["q"] += [*mark_xy, z, 1., 0., 0., 0.]
+        state["v"] += [0.]*6
     plant = plant_type(load(stop)["final"], state, args.dt, args.grid, segments, calibration)
     plant.resume(last)
-    plant.mark_xy = mark_xy
+    if plant_type.carries_note:
+        plant.mark_xy = mark_xy
     return plant, last, receipt
 
 
@@ -249,6 +262,13 @@ def run(args):
     if not 0.<args.transit_speed<=4. or not np.isfinite(args.via).all():
         raise ValueError("Invalid transit command")
     plant.transit_speed=args.transit_speed
+    if not 0.<args.capture_speed<=1. or not math.isfinite(args.lookahead) or args.lookahead<0.:
+        raise ValueError("Invalid transit lookahead or capture speed")
+    plant.capture_speed=args.capture_speed
+    if args.lookahead:
+        if not plant.waypoints:
+            raise ValueError("A lookahead transit needs at least one field waypoint")
+        plant.transit_path=TransitPath([plant.data.qpos[:2],*plant.waypoints],args.lookahead)
     if args.approach_heading is not None:
         if not math.isfinite(args.approach_heading) or not 0.<=args.capture_standoff<.35:
             raise ValueError("Invalid floor approach heading or pickup standoff")
@@ -310,6 +330,8 @@ def run(args):
                 viaFieldXY=args.via,transitSpeedMps=args.transit_speed,reverseTransit=args.reverse_transit,
                 waitingNoteLocalXY=plant.mark_xy.tolist(),pieceId=piece_id(args.next_mark),
                 collectedMarks=[*release.get("collectedMarks",[args.first_mark]),args.next_mark])
+    if args.lookahead or args.capture_speed!=.26:
+        result.update(lookaheadM=args.lookahead,captureSpeedMps=args.capture_speed)
     (args.output/"result.json").write_text(json.dumps(result,indent=2,allow_nan=False)+"\n")
     print(json.dumps(result),flush=True)
 
@@ -329,6 +351,8 @@ if __name__ == "__main__":
     p.add_argument("--via",type=float,nargs=2,action="append",default=[],metavar=("X","Y"),help="Traverse a field waypoint before pickup alignment")
     p.add_argument("--reverse-transit",action="store_true",help="Drive backward through the approach waypoints, then collect forward")
     p.add_argument("--transit-speed",type=float,default=1.1,help="Empty travel speed limit in m/s")
+    p.add_argument("--lookahead",type=float,default=0.,help="Lookahead distance on the approach waypoints in metres")
+    p.add_argument("--capture-speed",type=float,default=.26,help="Limit for the closure speed and first bilateral intake in m/s")
     p.add_argument("--field-yaw-deg",type=float,default=90.)
     p.add_argument("--horizon",type=float,default=11.)
     run(p.parse_args())

@@ -18,6 +18,8 @@ from native_launcher_quadrature import model_xml, motor_query
 
 
 class RaisedFeed:
+    carries_note = True
+
     def __init__(self, acquired, row, dt, grid, segments, calibration):
         self.base = TurningPlant(acquired, grid)
         self.launcher = load(ROOT / "sim/component-launcher/six-drive-config.json")
@@ -32,15 +34,24 @@ class RaisedFeed:
         xml = model_xml(SimpleNamespace(xml=ET.tostring(tree, encoding="unicode")),
                         binding, self.launcher, args, calibration["referenceStiffness"] * scale,
                         self.launcher["friction"], damping=calibration["referenceDamping"] * scale)
+        if not self.carries_note:
+            # The released NOTE is integrated by the field solver after handoff.
+            tree=ET.fromstring(xml)
+            world=tree.find("worldbody")
+            world.remove(world.find("body[@name='note']"))
+            xml=ET.tostring(tree,encoding="unicode")
         self.model = mujoco.MjModel.from_xml_string(xml)
         self.data = mujoco.MjData(self.model)
         self.dt = dt
         self.chassis = self.model.body("chassis").id
         self.cradle = self.model.body("cradle").id
-        self.note = self.model.body("note").id
-        joint = self.model.joint("note_free")
-        self.nq = int(joint.qposadr[0])
-        self.nv = int(joint.dofadr[0])
+        self.note = None
+        self.nq,self.nv=self.model.nq,self.model.nv
+        if self.carries_note:
+            self.note = self.model.body("note").id
+            joint = self.model.joint("note_free")
+            self.nq = int(joint.qposadr[0])
+            self.nv = int(joint.dofadr[0])
         self.wheel_dofs = [int(self.model.joint(f"launcher_{i}").dofadr[0]) for i in range(4)]
         self.data.qpos[:5] = row["q"][:5]
         self.data.qpos[self.nq:] = row["q"][5:]
@@ -179,8 +190,9 @@ class RaisedFeed:
         applied[2] = rates["contactYawTorqueNm"]
         applied[3:5] = act["generalizedMotorForce"][1:]
         applied[self.wheel_dofs] = [p["torqueNm"] for p in wheels["motors"]]
-        mujoco.mj_applyFT(m,d,belt["force"]+floor,belt["noteMoment"]+floor_moment,d.xpos[self.note],self.note,applied)
-        mujoco.mj_applyFT(m,d,-belt["force"],belt["cradleMoment"],d.xpos[self.cradle],self.cradle,applied)
+        if self.carries_note:
+            mujoco.mj_applyFT(m,d,belt["force"]+floor,belt["noteMoment"]+floor_moment,d.xpos[self.note],self.note,applied)
+            mujoco.mj_applyFT(m,d,-belt["force"],belt["cradleMoment"],d.xpos[self.cradle],self.cradle,applied)
         self.source_work += self.dt*12.*power/v0
         accel = (np.array([p["torqueNm"] for p in intake])+belt["rotor"])/b.nc["rotorInertiaKgM2"]
         self.rotors += self.dt*np.r_[rates["dw"],accel]
