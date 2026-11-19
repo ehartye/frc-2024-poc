@@ -1,0 +1,80 @@
+{
+  "schema": "maxswerve-second-wing-development/1",
+  "formalAttempts": 0,
+  "rosterSha256": "086e11317044cb8a409dd3b53d1f116b71242caa868a11be7900985ebfe84c52",
+  "nativeSha256": "ae6c40659f7a215573b1e172ae7aec3e90d62a94b8c27863234ee7c8cf275ce2",
+  "cases": [
+    {
+      "attempt": "D1",
+      "firstShotHalfStep": {
+        "dtS": 2.5e-05,
+        "wheelSamples": 16384,
+        "releaseS": 10.565975000022892,
+        "openingS": 10.704675000022569,
+        "pairedSensorS": 14.096875000014663,
+        "changeFrom50usS": 1.1818250000211012,
+        "shotTrace": "67a60dabf8e336ff575cdc98db4ffc0e6b536a9668660a1979cccf4950d923a6",
+        "fieldTrace": "40f98e1ebf3cfec9fc7d7236b32ad72c13e92bfbe61314af51dd7fa79f72b05e"
+      },
+      "outerWingReturn": {
+        "departureS": 10.566049999999036,
+        "previousReleaseTrace": "0995c2499c9344b21fd0a5e42c6dec296723a498782927bcad37369c54ab0dcf",
+        "observedPlacementLocalM": [
+          -0.654152414071662,
+          -0.6118667193481843
+        ],
+        "collectedMarks": [
+          "middle",
+          "outer"
+        ],
+        "seatedS": 17.30305000000264,
+        "stationS": 23.685549999987764,
+        "minimumCarrySideLoadN": 3.606497253966673,
+        "minimumBusV": 9.596113209851415,
+        "stationPositionErrorM": 0.0002398635432515741,
+        "stationHeadingErrorRad": -0.006404283858953086,
+        "pickupTrace": "bc968b3982e24b2b3d0e525e44bda03b707cfbbc5ac58bf1195e8b04c6cab667",
+        "carryTrace": "eca80756235632144025ad1e1d460d341d9e4e123147400a593966dbee3a761a"
+      }
+    },
+    {
+      "attempt": "D2",
+      "firstShotHalfStep": {
+        "dtS": 2.5e-05,
+        "wheelSamples": 16384,
+        "releaseS": 10.725800000023082,
+        "openingS": 10.864700000022758,
+        "pairedSensorS": 13.757000000016017,
+        "changeFrom50usS": -0.4569499999750857,
+        "shotTrace": "7577af5053aeba668d66e60902257e86c67b7b248bd06476aad60d455f7a994b",
+        "fieldTrace": "a35eebdd40a9bf163f02fee01804635168dde9f26355fe5fd60ca2a6d743411f"
+      },
+      "outerWingReturn": {
+        "departureS": 10.725849999999232,
+        "previousReleaseTrace": "1b6350060c6849150e4a56245215218eeff98af3b9a1788adfe0770de47baff1",
+        "observedPlacementLocalM": [
+          -0.654152414071662,
+          -0.6118667193481843
+        ],
+        "collectedMarks": [
+          "middle",
+          "outer"
+        ],
+        "seatedS": 17.472350000002248,
+        "stationS": 23.86434999998735,
+        "minimumCarrySideLoadN": 3.5990847030935154,
+        "minimumBusV": 9.543024717655793,
+        "stationPositionErrorM": 0.00023757505019495997,
+        "stationHeadingErrorRad": -0.006411243834410163,
+        "pickupTrace": "6a77e7e2cd4cc77aa65d3cd53ad5e1b492ab58b577d3452f2473086327fe0cd1",
+        "carryTrace": "e23ef46b2ee90dfc01cdc6c8197ca13794a9a88addcee635022014d3574def99"
+      }
+    }
+  ],
+  "scope": "Two mirrored development starts. The step refinement uses the original first-shooting pose and changes the shot integrator from 50 to 25 microseconds. Both field replays use a 100-microsecond step and 192 contact nodes. The outer-wing continuations start from the recorded 50-microsecond release and run on its original clock.",
+  "limits": [
+    "The two starts use the same nominal outer NOTE placement.",
+    "Outer-wing pickup and return end at the shooting pose. A shot with the second NOTE and a six-NOTE mission are pending.",
+    "The previous wheel sampling sensitivity and rigid shot and route clearance checks remain open."
+  ]
+}

@@ -76,18 +76,22 @@ def run(args):
     print(json.dumps({k:result[k] for k in ("attempt", "outcome", "end", "firstBilateral", "trace")}))
 
     if args.carry_output and result["outcome"] == "SEATED":
-        from types import SimpleNamespace
-        from wing_note_delivery import deliver, tail
-        carry = SimpleNamespace(output=args.carry_output, first_mark="middle", field_yaw_deg=245.,
-                                field_station=[1.475, 5.553075, 180.], transit_speed=.85,
-                                turn_rate=.90, turn_accel=.7, lifting_drive_accel=.40,
-                                via=[], final_straight=0., lookahead=0., dt=args.dt,
-                                horizon=18., grid=args.grid, trace_stride=args.trace_stride)
-        plant.shoot_position = FRAME.to_local([*carry.field_station[:2], 0.])[:2]
-        plant.shoot_heading = math.radians(carry.field_station[2]-carry.field_yaw_deg)
-        plant.field_velocity = plant.data.qvel[:2].copy()
-        plant.attempt_setup = (args.attempt, roster_digest)
-        deliver(carry, plant, tail(args.output, result), result["trace"], native, ["middle"])
+        carry_to_speaker(args, plant, result)
+
+
+def carry_to_speaker(args, plant, result):
+    from types import SimpleNamespace
+    from wing_note_delivery import deliver, tail
+    carry = SimpleNamespace(output=args.carry_output, first_mark="middle", field_yaw_deg=245.,
+                            field_station=[1.475, 5.553075, 180.], transit_speed=.85,
+                            turn_rate=.90, turn_accel=.7, lifting_drive_accel=.40,
+                            via=[], final_straight=0., lookahead=0., dt=args.dt,
+                            horizon=18., grid=args.grid, trace_stride=args.trace_stride)
+    plant.shoot_position = FRAME.to_local([*carry.field_station[:2], 0.])[:2]
+    plant.shoot_heading = math.radians(carry.field_station[2]-carry.field_yaw_deg)
+    plant.field_velocity = plant.data.qvel[:2].copy()
+    plant.attempt_setup = (result["attempt"], result["rosterSha256"])
+    deliver(carry, plant, tail(args.output, result), result["trace"], result["nativeSha256"], result["collectedMarks"])
 
 
 if __name__ == "__main__":
