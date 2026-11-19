@@ -75,7 +75,7 @@ class SwerveShot(ShotPlant,SwervePickup):
 
 def swerve_from_pickup(args):
     from verify_swerve_carry import verify
-    chain = verify(args.pickup,args.delivery)
+    chain = verify(args.pickup,args.delivery,release_dir=getattr(args,"previous_release",None),roster=getattr(args,"roster",None))
     if digest(args.archive)!=chain["nativeSha256"]:
         raise ValueError("Swerve archive differs from the pickup and carry model")
     plant = SwerveShot.from_floor_receipt(load(args.pickup/"result.json"),args.dt,args.grid,args.segments,
@@ -91,6 +91,8 @@ def run(args):
         raise ValueError("Use a ring phase within one sampling interval")
     rc = load(args.delivery/"result.json")
     swerve = rc.get("drivetrain")=="maxswerve"
+    if not swerve and (getattr(args,"previous_release",None) or getattr(args,"roster",None)):
+        raise ValueError("Prior swerve release and roster require a swerve delivery")
     if swerve:
         p,pins = swerve_from_pickup(args)
     else:
@@ -182,6 +184,8 @@ if __name__=="__main__":
     parser=argparse.ArgumentParser(description=__doc__)
     for name in ("pickup","archive","delivery","output"):
         parser.add_argument("--"+name,type=Path,required=True)
+    parser.add_argument("--previous-release",type=Path,help="Preceding swerve release for a later pickup")
+    parser.add_argument("--roster",type=Path,help="Placement roster used by the preceding swerve release")
     parser.add_argument("--dt",type=float,choices=(.0001,.00005,.000025),default=.0001)
     parser.add_argument("--grid",type=int,choices=(256,512,1024,2048),default=512)
     parser.add_argument("--segments",type=int,choices=(4096,8192,16384),default=8192)

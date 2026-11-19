@@ -1,4 +1,4 @@
-"""Drive the released swerve robot to a distinct wing NOTE, then return with it."""
+"""Drive the released swerve robot to a distinct floor NOTE, then return with it."""
 import argparse
 import json
 import math
@@ -6,11 +6,12 @@ from pathlib import Path
 
 import numpy as np
 
+from field_transit import TransitPath
 from maxswerve import LAYOUT, SwervePickup
 from mission_runtime import runtime_versions, verify_runtime_chain
 from run_axial_shear_lift import EVIDENCE, ROOT, digest, load
 from second_wing_pickup import ReturnPlant, advance_pickup, angle_error
-from speaker_trial_inputs import FRAME, local_offset, read_attempt
+from speaker_trial_inputs import FRAME, MARKS, local_offset, read_attempt
 from varied_floor_start import carry_to_speaker
 from wing_field_frame import piece_id
 
@@ -23,7 +24,11 @@ class SwerveReturn(SwervePickup):
         d = self.data
         delta = self.staging_xy - d.qpos[:2]
         gap = np.linalg.norm(delta)
-        target = delta * min(2.3, self.transit_speed/max(gap,1e-9))
+        if self.pickup_path is not None:
+            waypoint, remaining = self.pickup_path.target(d.qpos[:2])
+            delta = waypoint - d.qpos[:2]
+            gap = remaining
+        target = delta * min(2.3, self.transit_speed/max(np.linalg.norm(delta),1e-9))
         rotation = d.xmat[self.chassis].reshape(3,3)
         forward, side = rotation[:2,:2].T @ target
         angle = angle_error(self.pickup_heading,d.qpos[2])
@@ -72,9 +77,15 @@ def run(args):
     plant.resume(last)
     plant.angle_target = plant.mount + d.qpos[plant.az_pos]
     plant.mark_xy = mark
-    direction = mark - d.qpos[:2]
+    route = next((cycle for cycle in load(EVIDENCE/"centerline-route-controls.json")["cycles"]
+                  if cycle["piece"] == args.next_mark), None)
+    via = route["pickup"]["viaFieldXY"] if route else []
+    waypoints = [FRAME.to_local([x,y,0])[:2] for x,y in via]
+    direction = mark - (waypoints[-1] if waypoints else d.qpos[:2])
     plant.pickup_heading = math.atan2(direction[1],direction[0])
     plant.staging_xy = mark - .85*direction/np.linalg.norm(direction)
+    plant.pickup_path = (TransitPath([d.qpos[:2].copy(), *waypoints, plant.staging_xy], .48)
+                         if waypoints else None)
     plant.approach_complete = False
     plant.capture_speed = .26
     plant.transit_speed = 1.1
@@ -85,19 +96,21 @@ def run(args):
                   targetLocalXY=mark.tolist(),waitingNoteLocalXY=physical.tolist(),initialQ=d.qpos.tolist(),
                   initialV=d.qvel.tolist(),initialRotors=plant.rotors.tolist(),initialShearM=plant.shear.tolist(),
                   initialBusV=plant.bus,initialSourceJ=plant.source_work,traceStride=args.trace_stride)
+    if route:
+        result["viaFieldXY"] = via
     result.update(advance_pickup(args,plant))
     result["collectedMarks"] = collected+[args.next_mark] if result["outcome"] == "SEATED" else collected
     (args.output/"result.json").write_text(json.dumps(result,indent=2,allow_nan=False)+"\n")
     print(result["outcome"],result["end"],flush=True)
     if args.carry_output and result["outcome"] == "SEATED":
-        carry_to_speaker(args,plant,result)
+        carry_to_speaker(args,plant,result,route=route)
 
 
 if __name__ == "__main__":
     parser=argparse.ArgumentParser(description=__doc__)
     for name in ("release","pickup","archive","roster","output"):
         parser.add_argument("--"+name,type=Path,required=True)
-    parser.add_argument("--next-mark",choices=("inner","outer"),required=True)
+    parser.add_argument("--next-mark",choices=MARKS,required=True)
     parser.add_argument("--carry-output",type=Path)
     parser.add_argument("--dt",type=float,choices=(.00025,.0005),default=.0005)
     parser.add_argument("--grid",type=int,choices=(256,512,1024),default=512)

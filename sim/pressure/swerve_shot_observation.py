@@ -15,17 +15,17 @@ from wing_note_delivery import tail
 from wing_speaker_passage import rotation
 
 
-def measure(pickup, carry, shot, field, sensor):
-    chain = verify(pickup,carry)
+def measure(pickup, carry, shot, field, sensor, *, previous_release=None, roster=None):
+    chain = verify(pickup,carry,release_dir=previous_release,roster=roster)
     delivered,released,flight = [load(folder/"result.json") for folder in (carry,shot,field)]
-    verify_runtime_chain([delivered,released])
+    verify_runtime_chain([delivered,released,flight])
     start = tail(carry,delivered)
     handoff = {"initialQ":"q","initialV":"v","initialBusV":"busV","initialSourceJ":"sourceJ",
                "initialRotors":"rotor","initialShearM":"shear","start":"t"}
     if (released.get("drivetrain")!="maxswerve" or released["outcome"]!="UPWARD_FREE_RELEASE"
             or released["sourceTraceSha256"]!=delivered["trace"]
             or any(released[k]!=delivered[k] for k in ("nativeSha256","attempt","rosterSha256",
-                                                       "pieceId","fieldYawDeg","firstMark"))
+                                                       "pieceId","collectedMarks","fieldYawDeg","firstMark"))
             or any(released[key]!=start[value] for key,value in handoff.items())):
         raise ValueError("Discontinuous swerve shooting state")
     trace = shot/"trace.jsonl"
@@ -62,5 +62,8 @@ if __name__=="__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     for name in ("pickup","carry","shot","field","sensor"):
         parser.add_argument(name,type=Path)
+    parser.add_argument("--previous-release",type=Path)
+    parser.add_argument("--roster",type=Path)
     args = parser.parse_args()
-    print(json.dumps(measure(args.pickup,args.carry,args.shot,args.field,args.sensor),indent=2,allow_nan=False))
+    print(json.dumps(measure(args.pickup,args.carry,args.shot,args.field,args.sensor,
+                             previous_release=args.previous_release,roster=args.roster),indent=2,allow_nan=False))

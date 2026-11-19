@@ -16,7 +16,7 @@ async function render(docs, browserPath, ffmpeg, output) {
   footer{bottom:14px;display:flex;justify-content:space-between;background:#132a54ec;padding:9px 12px;border-left:4px solid #f7bd54}
   #time{font-variant-numeric:tabular-nums;color:#f7cf80}</style></head><body>
   <model-viewer src="/robot.glb" camera-orbit="42deg 68deg auto" max-camera-orbit="auto auto 7m" shadow-intensity=".75" exposure="1.15" interaction-prompt="none"></model-viewer>
-  <header>1780 &nbsp;/&nbsp; R7 MAXSwerve</header><footer><span id="state"></span><span id="time"></span></footer>
+  <header>1780 &nbsp;/&nbsp; R7 display · D1 simulated pickup and shot</header><footer><span id="state"></span><span id="time"></span></footer>
   <script type="module" src="/viewer.js"></script></body></html>`;
   const server = http.createServer((req,res)=>{
     if (req.url==="/") {res.setHeader("Content-Type","text/html");res.end(html);return;}
@@ -32,27 +32,39 @@ async function render(docs, browserPath, ffmpeg, output) {
     await page.goto("http://127.0.0.1:"+server.address().port);
     await page.waitForFunction(()=>document.querySelector("model-viewer").loaded);
     const fps=20, slowAt=receipt.releaseS-.50, slowRate=.125;
-    const duration=slowAt-receipt.sourceStartS+(receipt.openingS-slowAt)/slowRate;
+    const slowStart=slowAt-receipt.sourceStartS;
+    const openingFrameTime=slowStart+(receipt.openingS-slowAt)/slowRate;
+    const duration=openingFrameTime+receipt.simultaneousSensorS-receipt.openingS+receipt.film.holdS;
     encoder=spawn(ffmpeg,["-hide_banner","-loglevel","error","-f","image2pipe","-framerate",String(fps),"-c:v","mjpeg","-i","pipe:0",
-      "-c:v","libvpx-vp9","-b:v","900k","-pix_fmt","yuv420p","-y",output],{stdio:["pipe","ignore","inherit"]});
+      "-c:v","libvpx-vp9","-threads","1","-b:v","900k","-pix_fmt","yuv420p","-y",output],{stdio:["pipe","ignore","inherit"]});
     const completed=once(encoder,"close");
     const frames=Math.ceil(duration*fps)+1;
     for(let i=0;i<frames;i++){
       const t=i/fps;
-      const slowed=t>=slowAt-receipt.sourceStartS;
-      const match=Math.min(receipt.openingS,slowed?slowAt+(t-(slowAt-receipt.sourceStartS))*slowRate:receipt.sourceStartS+t);
+      const slowed=t>=slowStart && t<openingFrameTime;
+      const match=t<slowStart ? receipt.sourceStartS+t : slowed ? slowAt+(t-slowStart)*slowRate :
+        Math.min(receipt.simultaneousSensorS,receipt.openingS+t-openingFrameTime);
       await page.evaluate(async ({match,slowed,receipt})=>{
         const v=document.querySelector("model-viewer");
         v.animationName=receipt.clip;
-        // Keep the endpoint on the final pose when the animation mixer wraps at duration.
-        v.currentTime=Math.min(v.duration-.0001,Math.max(0,match-receipt.sourceStartS));
-        if(slowed) {
+        v.currentTime=Math.min(v.duration-.00001,Math.max(0,match-receipt.sourceStartS));
+        if (match>=receipt.openingS) {
+          const u=Math.min(1,(match-receipt.openingS)/(receipt.simultaneousSensorS-receipt.openingS));
+          v.cameraTarget=receipt.openingCenter.map((x,i)=>(x+(receipt.counterCenter[i]-x)*u)+"m").join(" ");
+          v.cameraOrbit="12deg 77deg "+(3.8-2.4*u)+"m";
+        } else if(slowed) {
           v.cameraTarget=".61m 1.09m 0m";
           v.cameraOrbit="12deg 84deg 5.85m";
-          v.jumpCameraToGoal();
+        } else {
+          v.cameraTarget="0m .55m 0m";
+          v.cameraOrbit="42deg 68deg 3.45m";
         }
-        document.querySelector("#state").textContent=match>=receipt.releaseS?"NOTE in flight":slowed?"Feeding the launcher":"Lift and turn with retained NOTE";
-        document.querySelector("#time").textContent=(slowed?"1/8 speed":"Real time")+"   |   "+match.toFixed(3)+" s";
+        v.jumpCameraToGoal();
+        const atCounter=match>=receipt.simultaneousSensorS;
+        document.querySelector("#state").textContent=atCounter?"Both modeled Speaker sensor pairs blocked":
+          match>=receipt.openingS?"Opening cleared · NOTE inside Speaker":match>=receipt.releaseS?"NOTE in flight":
+          slowed?"Feeding the launcher":match>=receipt.seatedS?"Lift, turn and carry":match>=receipt.firstBilateralS?"Intake seats the NOTE":"Drive over floor NOTE";
+        document.querySelector("#time").textContent=(atCounter?"Event held":slowed?"1/8 speed":"Real time")+"   |   "+match.toFixed(3)+" s";
         await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
       },{match,slowed,receipt});
       const frame=await page.screenshot({type:"jpeg",quality:87});

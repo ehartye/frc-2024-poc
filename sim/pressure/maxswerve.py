@@ -146,7 +146,10 @@ class SwervePickup(DeliveryPlant):
         elapsed = d.time - self.seated
         demand = self.retained_command(belt, round(elapsed/.01))
         self.brakes = demand["pinchBrakeFraction"]
-        error = self.shoot_position - d.qpos[:2]
+        goal = self.shoot_position
+        if self.transit_path is not None:
+            goal, _ = self.transit_path.target(d.qpos[:2])
+        error = goal - d.qpos[:2]
         target = error * min(2.4, self.transit_speed / max(np.linalg.norm(error), 1e-12))
         # Bound acceleration while the ring initially shares support with the floor.
         if elapsed < .55:

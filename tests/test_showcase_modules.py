@@ -39,3 +39,26 @@ class InstalledModules(unittest.TestCase):
                                       (wheel, ("wheel hub",))):
                     for role in roles:
                         self.assertIn("mesh", nodes[find(role, nodes[parent]["children"])])
+
+    def test_first_floor_note_film_reaches_its_recorded_counter_event(self):
+        receipt = json.loads((ROOT / "docs/media/swerve-r7.json").read_bytes())
+        route = json.loads((ROOT / "sim/pressure/evidence/maxswerve-six-note-D1.json").read_bytes())
+        first = route["records"][0]
+        self.assertEqual(receipt["plantSha256"], route["plantArchiveSha256"])
+        self.assertEqual(receipt["sourceSha256"], route["displayArchiveSha256"])
+        self.assertEqual(receipt["traceSha256"]["pickup"], first["pickupTrace"])
+        self.assertEqual(receipt["traceSha256"]["field"], first["fieldTrace"])
+        data = (ROOT / receipt["assets"]["model"]["path"]).read_bytes()
+        length = struct.unpack_from("<I", data, 12)[0]
+        gltf = json.loads(data[20:20+length])
+        clip, = (a for a in gltf["animations"] if a["name"] == receipt["clip"])
+        extras = clip["extras"]
+        self.assertEqual(extras["sourceStartS"], first["pickupStartS"])
+        self.assertEqual(extras["sensorS"], first["pairedSensorS"])
+        duration = gltf["accessors"][clip["samplers"][0]["input"]]["max"][0]
+        self.assertAlmostEqual(duration, extras["sensorS"] - extras["sourceStartS"], places=5)
+        film = receipt["film"]
+        expected = (film["slowFromMatchS"] - extras["sourceStartS"]
+                    + (extras["openingS"] - film["slowFromMatchS"]) / film["slowRate"]
+                    + extras["sensorS"] - extras["openingS"] + film["holdS"])
+        self.assertAlmostEqual((film["frames"] - 1) / film["framesPerSecond"], expected, delta=.05)

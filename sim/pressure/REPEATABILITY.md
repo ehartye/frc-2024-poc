@@ -140,3 +140,24 @@ Use the first pickup and release from the same attempt, its original archive and
 python -B sim/pressure/swerve_next_note.py --pickup $Pickup --release $Shot --archive $ArticulatedRobot --roster $Roster --next-mark outer --output $OuterPickup --carry-output $OuterCarry
 python -B sim/pressure/verify_swerve_carry.py $OuterPickup $OuterCarry --release $Shot --roster $Roster
 ```
+
+## Six consecutive releases on D1
+
+The simulated robot kept its chassis, mechanism, battery and controller state across all six trips. All six NOTES cleared the Speaker opening. Five blocked both sensor pairs in individual field replays. The outer-wing NOTE passed the opening and missed the counter. The sixth NOTE reached the sensors at 116.625 s. Each field replay starts empty, so successive scores still need a common counter clearance check.
+
+| Floor NOTE | Seated (s) | Release (s) | Both sensor pairs (s) |
+| --- | ---: | ---: | ---: |
+| blue-wing-middle | 4.495 | 10.566 | 12.915 |
+| blue-wing-outer | 17.303 | 24.367 | Miss |
+| blue-wing-inner | 31.085 | 38.149 | 41.138 |
+| center-high | 50.376 | 62.072 | 64.415 |
+| center-mid | 75.183 | 87.049 | 89.678 |
+| center-low | 100.562 | 113.430 | 116.625 |
+
+All six discharges used the earlier articulated chassis with the four-module drivetrain. Its archive and the R7 display archive have separate SHA-256 identifiers in the run record. The 188 moving solids match. At every saved release sample, the NOTE cleared the checked R7 bumper and mast-support bounds by at least 129.4 mm. This screen covers only the listed fixed structures. Fusion assigns steel even to bumper foam in the source assembly. Qualifying R7 dynamics requires role-specific masses and inertia. Wheel-contact convergence and shared-counter occupancy remain open. Formal evaluation starts used: 0 of 20. [Run record and source digests](evidence/maxswerve-six-note-D1.json)
+
+Reproduce with the pinned simulation environment, registered private field directory and the original articulated archive.
+
+```powershell
+python -B sim/pressure/swerve_development_route.py $ArticulatedRobot $Field D1 $NewOutput
+```

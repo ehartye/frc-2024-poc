@@ -102,13 +102,17 @@ const slowShot = document.getElementById("slow-shot");
 const speed = document.getElementById("replay-speed");
 const timeline = document.getElementById("replay-time");
 const clock = document.getElementById("replay-clock");
+const counterButton = document.getElementById("view-counter");
+let events;
 let releaseTime = 0;
 let frameRequest;
 
 function showPlayhead() {
   timeline.value = viewer.currentTime;
-  clock.textContent = viewer.currentTime.toFixed(2) + " s";
-  play.textContent = viewer.paused ? "Play lift and shot" : "Pause replay";
+  const matchTime = viewer.currentTime + (events?.sourceStartS ?? 0);
+  const atCounter = events?.sensorS != null && matchTime >= events.sensorS - .0002;
+  clock.textContent = matchTime.toFixed(3) + " s" + (atCounter ? " · Both sensor pairs blocked" : "");
+  play.textContent = viewer.paused ? (events?.pickup ? "Play pickup and shot" : "Play lift and shot") : "Pause replay";
 }
 
 function tick() {
@@ -128,6 +132,8 @@ viewer.addEventListener("load", () => {
   cancelAnimationFrame(frameRequest);
   const clip = viewer.originalGltfJson?.animations?.find(item => item.name === "Lift and shoot");
   replay.hidden = !clip || localUrl !== undefined;
+  events = clip?.extras;
+  counterButton.hidden = replay.hidden || !events?.counterCenter;
   if (replay.hidden) return;
   viewer.animationName = clip.name;
   releaseTime = clip.extras.releaseS - clip.extras.sourceStartS;
@@ -148,6 +154,14 @@ slowShot.addEventListener("click", () => {
   viewer.cameraOrbit = "28deg 77deg 5.4m";
   viewer.jumpCameraToGoal();
   playClip();
+});
+counterButton.addEventListener("click", () => {
+  viewer.pause();
+  viewer.currentTime = Math.min(events.sensorS - events.sourceStartS, viewer.duration - .00001);
+  viewer.cameraTarget = events.counterCenter.map(value => value + "m").join(" ");
+  viewer.cameraOrbit = "12deg 77deg 1.4m";
+  viewer.jumpCameraToGoal();
+  showPlayhead();
 });
 timeline.addEventListener("input", () => {
   viewer.pause();

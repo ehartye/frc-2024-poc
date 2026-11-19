@@ -79,7 +79,7 @@ def run(args):
         carry_to_speaker(args, plant, result)
 
 
-def carry_to_speaker(args, plant, result):
+def carry_to_speaker(args, plant, result, *, route=None):
     from types import SimpleNamespace
     from wing_note_delivery import deliver, tail
     carry = SimpleNamespace(output=args.carry_output, first_mark="middle", field_yaw_deg=245.,
@@ -87,6 +87,9 @@ def carry_to_speaker(args, plant, result):
                             turn_rate=.90, turn_accel=.7, lifting_drive_accel=.40,
                             via=[], final_straight=0., lookahead=0., dt=args.dt,
                             horizon=18., grid=args.grid, trace_stride=args.trace_stride)
+    if route:
+        carry.via = route["delivery"]["viaFieldXY"]
+        carry.lookahead = .48
     plant.shoot_position = FRAME.to_local([*carry.field_station[:2], 0.])[:2]
     plant.shoot_heading = math.radians(carry.field_station[2]-carry.field_yaw_deg)
     plant.field_velocity = plant.data.qvel[:2].copy()
