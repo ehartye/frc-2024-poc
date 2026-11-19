@@ -8,3 +8,5 @@ jobs:
       - name: Verify CAD views and README coverage
         run: python scripts/cad-readmes.py . --template scripts/cad-orbit.html
 
+      - name: Verify installed swerve display assemblies
+        run: python -m unittest discover -s tests -p 'test_showcase*.py'

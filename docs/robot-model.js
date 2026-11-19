@@ -14,11 +14,12 @@ const models = {
 };
 const homeOrbit = viewer.cameraOrbit;
 const wheelsButton = document.getElementById("view-wheels");
-wheelsButton.addEventListener("click", () => {
+function inspectModules() {
   viewer.cameraTarget = "0m .10m 0m";
-  viewer.cameraOrbit = "32deg 118deg 1.85m";
+  viewer.cameraOrbit = "8deg 162deg 1.95m";
   viewer.jumpCameraToGoal();
-});
+}
+wheelsButton.addEventListener("click", inspectModules);
 let localUrl;
 let selection = 0;
 
@@ -84,7 +85,10 @@ input.addEventListener("change", async () => {
     status.textContent = "Choose a self-contained GLB with embedded geometry.";
   }
 });
-viewer.addEventListener("load", resetCamera);
+viewer.addEventListener("load", () => {
+  if (selection === 0 && new URLSearchParams(location.search).get("view") === "swerve") inspectModules();
+  else resetCamera();
+});
 viewer.addEventListener("error", () => {
   status.textContent = "The interactive model could not be displayed in this browser.";
 });

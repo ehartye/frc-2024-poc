@@ -69,15 +69,19 @@
   "assets": {
     "still": {
       "path": "docs/media/swerve-r7.png",
-      "sha256": "0963c81c31220efc4df13a3d1b4071433afa63f127c72c8db9aa17e797bddfcb"
+      "sha256": "668818d7ddcaa703358d4fd3b291c8ab30b8fa0d4bf96213e1e4829520888f02"
     },
     "model": {
       "path": "docs/media/swerve-r7.glb",
-      "sha256": "378fd806bde68539b6f6bb14d5f652101419344713f7edbc4ba24c39c1be61bc"
+      "sha256": "cb8b3fdbb63869612282243ede6c0464c794fdcb173e309d62138c3e84d1f630"
     },
     "film": {
       "path": "docs/media/swerve-first-shot.webm",
-      "sha256": "174fecfd40661a39b062b18394193cdbfed3210f1c00ac432a4e8ee030a474ed"
+      "sha256": "bf4b0e3a76dbd9ba34477e306c7ead12b2f04d0062f85dedcbf413671d441551"
+    },
+    "underside": {
+      "path": "docs/media/swerve-underside.png",
+      "sha256": "955bab88b5dfd9d0b99f922f7736aa09f1fe6bb402136ef4e67c3ce9c369a330"
     }
   },
   "clip": "Lift and shoot",
@@ -92,11 +96,33 @@
     "shot": "0995c2499c9344b21fd0a5e42c6dec296723a498782927bcad37369c54ab0dcf",
     "field": "1ace77c1349770ebcd68817587caf9528fcfb73756f42932677a62f5867d8e52"
   },
-  "scope": "The animation projects simulated swerve motion onto the reopened R7 geometry. Four dimensional tire envelopes carry visual roll marks. R7 fixed-frame mass, wiring, shot clearance and scoring repeatability remain unevaluated.",
+  "scope": "The animation projects simulated swerve motion onto the reopened R7 geometry. Four dimensioned display modules show independent steering and wheel roll. R7 fixed-frame mass, wiring, shot clearance and scoring repeatability remain unevaluated.",
   "film": {
     "frames": 215,
     "framesPerSecond": 20,
     "slowRate": 0.125,
     "slowFromMatchS": 10.066049999999036
+  },
+  "moduleDisplay": {
+    "stations": 4,
+    "sourcePart": "REV-21-3005",
+    "supplierSourceSha256": "11f8381810846a2e52a23dbbe07f8271b314967624eee53f56e59a3ece05c75e",
+    "geometry": "Original analytic display solids at the registered wheel centers. Housing tiers, mounting ears, motors, carrier, fork and hub simplify the private installed assemblies. Dimensions describe the nominal package.",
+    "fixed": [
+      "housing",
+      "mounting ears",
+      "spacers",
+      "NEO drive motor",
+      "NEO 550 steering motor"
+    ],
+    "steering": [
+      "carrier",
+      "fork plates",
+      "axle bosses"
+    ],
+    "rolling": [
+      "tire",
+      "wheel hub"
+    ]
   }
 }
