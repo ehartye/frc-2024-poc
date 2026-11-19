@@ -19,9 +19,23 @@ For scale, a 1 kN vertical point load centered between the bolt stations of one 
 
 ## Reproduce the geometry and checks
 
+### Lift bridge supports
+
+Two 8 mm aluminum webs carry the intake guide and shooter uprights on the side rails. Each web has a 115 mm landing and a raised forward edge that clears the module plate. Four 12 mm lengths of 25.4 × 50.8 mm rectangular tube extend the original lift bridges out to the webs. Each extension matches the 3.175 mm wall of the bridge. The intended joints are welded. The original bridge tubes and their upright brackets remain installed. The Fusion timeline retires the 44 adapters, sleeves and fastener parts that tied the bridges to the six-wheel frame.
+
+Each web bears on 920 mm² of side rail. All four tube ends bear on 443.55 mm² at each end, measured on the reopened assembly using 0.01 mm intrusion at the weld faces. The six pieces add an estimated 0.667 kg before weld metal. Retiring an estimated 0.290 kg of original hardware makes the net increase 0.377 kg at the assumed material densities. The moving mechanisms maintain at least 36.65 mm separation from these supports throughout independent lift and pitch. The free NOTE maintained at least 122.88 mm sampled separation in two pickup and delivery runs. [Mast evidence](maxswerve-lift-supports.json)
+
+The two swerve carry traces give peak net vertical support forces of 76.79 N and 76.87 N for the modeled moving assembly, including the NOTE. The calculation takes the change in total linear momentum of the carriage subtree and the free NOTE over successive airborne samples and includes their combined weight of 70.95 N. The peaks represent the resultant on the entire moving assembly. Individual joint reactions, actuator and chain preload, local mast moments and bumper loads require separate checks. [Trajectory load calculation](../../sim/pressure/swerve_mast_load.py)
+
+For a separate loading example, treat the 89.4 mm forward projection of one web as a cantilever with a rigid root at the end of the landing. At the front tube center, a 1 kN vertical force gives 17.29 MPa nominal bending stress and 0.021 mm tip deflection. A separate 250 N lateral force gives 33.65 MPa and 0.325 mm. The calculation uses the 8 × 62.265 mm web section and 69 GPa elastic modulus. A load introduced high on an upright also creates a moment. Welds, the rail wall, the step stress concentration and the actual attachment compliance still need qualification.
+
+The Fusion authoring module builds the webs and extensions on the supported chassis. The verifier measures their installed material and checks both ends of each connection. [Authoring module](../native/swerve_mast_support.py) · [Native fit check](../native/verify_swerve_mast.py)
+
+### Lower frame
+
 In the reopened robot, all twelve bolt axes registered through both supplier plates. Of the 24 measured passages, eight included the short relief. A 4.98 mm gauge cleared every passage through its full depth. The 5.20 mm oversize control intersected at least 3.88 mm³ of plate material in every passage. A 0.02 mm intrusion at the fastener and rail faces measured minimum bearing areas of 29.69 and 43.19 mm² respectively. Each of the four pedestal caps seated on approximately 418.22 mm² of the retained beam.
 
-The revised robot retires 83 six-wheel chassis occurrences containing 84 solids. The static check found zero frame intersections above 0.01 mm³. The 188 moving bodies maintained at least 82.30 mm modeled separation from the new frame across independent lift and pitch. Across the two recorded floor-NOTE pickup and carry runs, the smallest sampled NOTE-to-frame bound was 120.97 mm. Front lift and bumper connections, harness routing and loaded structural checks are outstanding. [Native measurements and test bounds](maxswerve-supported-frame.json)
+The revised robot retires 83 six-wheel chassis occurrences containing 84 solids. The static check found zero frame intersections above 0.01 mm³. The 188 moving bodies maintained at least 82.30 mm modeled separation from the new frame across independent lift and pitch. Across the two recorded floor-NOTE pickup and carry runs, the smallest sampled NOTE-to-frame bound was 120.97 mm. Bumper connections, harness routing and structural qualification remain open. [Native measurements and test bounds](maxswerve-supported-frame.json)
 
 Run `cad/native/build_swerve_frame.py` from Fusion's Scripts interface with its three sibling authoring and inspection modules available. Choose a new local F3D filename. The script builds the editable tube, drilling, sleeve, fastener and pedestal features, then reopens the archive and measures the result. The screw and locknut solids use the project’s 10-32 exterior dimensions. Nominal geometry omits helical threads and socket-tool tolerances. [Fastener model basis](../electrical/fasteners.py)
 

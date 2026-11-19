@@ -1,0 +1,204 @@
+{
+  "schema": "2024-maxswerve-lift-supports/1",
+  "baseArchiveSha256": "5eb3c6bfda85dac797fad8f1e3ee81d6c037f7b7793f9432358a657712f913c3",
+  "privateRobotArchiveSha256": "d60f5c4a4f6cc8fbd9001d3a45c41a930e66dc6e9103518ef1d65d16ced27154",
+  "retiredOriginalMountParts": 44,
+  "installedWebs": 2,
+  "installedExtensions": 4,
+  "aluminumDensityKgM3": 2700,
+  "steelFastenerDensityKgM3": 7850,
+  "estimatedAddedKg": 0.6667234199999976,
+  "estimatedRemovedKg": 0.2896658427369332,
+  "estimatedNetKg": 0.37705757726306444,
+  "moduleSolids": 1092,
+  "staticIntersections": [],
+  "railSeatAreasMm2": [
+    919.9999999994867,
+    919.9999999994867
+  ],
+  "webSeatAreasMm2": [
+    443.54749999896484,
+    443.5474999989652,
+    443.5474999989652,
+    443.5474999989656
+  ],
+  "bridgeSeatAreasMm2": [
+    443.54750000211675,
+    443.54750000211675,
+    443.54750000211726,
+    443.5475000021184
+  ],
+  "nativeFrame": {
+    "frameArticles": 46,
+    "supplierSolids": 1092,
+    "broadPhaseFramePairs": 48,
+    "broadPhaseRobotPairs": 114,
+    "twoPlateBoltAxes": 12,
+    "fullDepthGaugeChecks": 24,
+    "relievedPlateBores": 8,
+    "maximumClearanceGaugeIntersectionMm3": 0.0,
+    "minimumOversizeProbeIntersectionMm3": 3.8849720152420084,
+    "minimumFastenerSeatAreaMm2": 29.689978760315473,
+    "minimumRailSeatAreaMm2": 43.18904500520529,
+    "deckBearingAreaMm2": [
+      418.21851707862123,
+      418.21851707862123,
+      418.21851707862095,
+      418.21851707862095
+    ],
+    "hits": [],
+    "retiredHardwareHits": [],
+    "archiveSha256": "d60f5c4a4f6cc8fbd9001d3a45c41a930e66dc6e9103518ef1d65d16ced27154"
+  },
+  "joints": {
+    "independentSignedPoses": 16,
+    "combinedSteerAndRollPoses": 4,
+    "witnessToleranceMm": 0.01,
+    "maximumWitnessErrorMm": 3.2997352385173293e-13,
+    "positiveAxes": {
+      "Front left": {
+        "steer": [
+          0,
+          0,
+          -1
+        ],
+        "roll": [
+          0,
+          -1,
+          0
+        ]
+      },
+      "Front right": {
+        "steer": [
+          0,
+          0,
+          -1
+        ],
+        "roll": [
+          -1,
+          0,
+          0
+        ]
+      },
+      "Rear left": {
+        "steer": [
+          0,
+          0,
+          -1
+        ],
+        "roll": [
+          1,
+          0,
+          0
+        ]
+      },
+      "Rear right": {
+        "steer": [
+          0,
+          0,
+          -1
+        ],
+        "roll": [
+          0,
+          1,
+          0
+        ]
+      }
+    },
+    "archiveSha256": "d60f5c4a4f6cc8fbd9001d3a45c41a930e66dc6e9103518ef1d65d16ced27154"
+  },
+  "fullMechanismTravel": {
+    "mechanismBodies": 188,
+    "pitchIntervals": 60,
+    "liftRangeMm": [
+      0,
+      450
+    ],
+    "pitchRangeDeg": [
+      0,
+      60
+    ],
+    "minimumAxisSeparationMm": 36.64999999999998
+  },
+  "sampledNote": [
+    {
+      "frameMeasurementSha256": "f728c6eb9cc4f4505493d65267d488f1321e962e67d56414675bfe5f8d8b97c6",
+      "attempt": "D1",
+      "pickupTrace": "2b734e88ae8cd155a2cf198c211dafdf07b88fb0e824228fe3afebdc67f8bf3d",
+      "carryTrace": "ce0193e1175b12af63a564e59acf3d50cda6d9597dc791a49fb49a9d1b7098a3",
+      "samples": 19789,
+      "minimumSampledAxisSeparationMm": 122.88376050031695,
+      "witness": {
+        "timeS": 0.7254999999999755,
+        "article": "Mast support - bridge extension"
+      }
+    },
+    {
+      "frameMeasurementSha256": "f728c6eb9cc4f4505493d65267d488f1321e962e67d56414675bfe5f8d8b97c6",
+      "attempt": "D2",
+      "pickupTrace": "710cd7fa0cc503af25aee38f623b4cabf17a81c20a1f88a713e497ac43029eb3",
+      "carryTrace": "7ef540107771df265e79ea92431162095ce951d162111d3e0dee62bfe67617d2",
+      "samples": 20109,
+      "minimumSampledAxisSeparationMm": 123.03985856687649,
+      "witness": {
+        "timeS": 0.7014999999999781,
+        "article": "Mast support - bridge extension"
+      }
+    }
+  ],
+  "airborneLoads": [
+    {
+      "attempt": "D1",
+      "dt": 0.0005,
+      "carryTrace": "ce0193e1175b12af63a564e59acf3d50cda6d9597dc791a49fb49a9d1b7098a3",
+      "airborneIntervals": 4264,
+      "movingMassWithNoteKg": 7.235,
+      "weightN": 70.95111275,
+      "peakAbsoluteVerticalN": 76.78993725908789,
+      "peakHorizontalN": 8.518339615907442
+    },
+    {
+      "attempt": "D2",
+      "dt": 0.0005,
+      "carryTrace": "7ef540107771df265e79ea92431162095ce951d162111d3e0dee62bfe67617d2",
+      "airborneIntervals": 4273,
+      "movingMassWithNoteKg": 7.235,
+      "weightN": 70.95111275,
+      "peakAbsoluteVerticalN": 76.86917653649728,
+      "peakHorizontalN": 8.807630170185817
+    },
+    {
+      "attempt": "D1",
+      "dt": 0.00025,
+      "carryTrace": "aee4d07f512f60fcc81b6f74912237cae12c5e25fb03a936655129b6475c9a4e",
+      "airborneIntervals": 8528,
+      "movingMassWithNoteKg": 7.235,
+      "weightN": 70.95111275,
+      "peakAbsoluteVerticalN": 76.89911335255363,
+      "peakHorizontalN": 8.479434127100642
+    }
+  ],
+  "webCantileverExamples": [
+    {
+      "direction": "vertical",
+      "endForceN": 1000,
+      "spanMm": 89.4,
+      "secondMomentMm4": 160931.37363975,
+      "stressMPa": 17.29461097020388,
+      "deflectionMm": 0.0214487255747417
+    },
+    {
+      "direction": "lateral",
+      "endForceN": 250,
+      "spanMm": 89.4,
+      "secondMomentMm4": 2656.64,
+      "stressMPa": 33.651529751867024,
+      "deflectionMm": 0.3248250487048695
+    }
+  ],
+  "assumptions": [
+    "Moving mass uses the carry model. Each replay estimates the combined net force on its airborne moving assembly.",
+    "Web examples assume a rigid root and 69 GPa modulus. Actual welds, local walls, upright moments, fatigue and impact need qualification.",
+    "Mass estimates assume aluminum for removed plates and sleeves, steel for fastener solids and omit weld metal."
+  ]
+}
