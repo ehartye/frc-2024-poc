@@ -33,6 +33,7 @@ def world(occurrence, vertices):
 
 
 def inspect(design):
+    """Read solved transforms synchronously to avoid nested UI callbacks."""
     root = design.rootComponent
     joints = {joint.name: joint for joint in root.asBuiltJoints}
     components = {o.component.name: o for o in root.occurrences}
@@ -80,7 +81,6 @@ def inspect(design):
             expected_positive = None
             for angle in (ANGLE,-ANGLE):
                 motion.rotationValue = angle
-                adsk.doEvents()
                 if abs(motion.rotationValue-angle)>1e-5:
                     raise ValueError(f"{corner} {axis} command missed")
                 choices = {}
@@ -101,7 +101,6 @@ def inspect(design):
                 if travel < .2:
                     raise ValueError(f"Insufficient {corner} {axis} witness motion")
             motion.rotationValue=0.
-            adsk.doEvents()
             if pose_error(start)>TOLERANCE_CM:
                 raise ValueError(f"{corner} {axis} failed to return to zero")
             signed_axes[corner,axis] = tuple(expected_positive*v for v in basis)
@@ -111,7 +110,6 @@ def inspect(design):
         roll = joints[corner+" roll"].jointMotion
         steer.rotationValue = ANGLE
         roll.rotationValue = -ANGLE
-        adsk.doEvents()
         expected = dict(start)
         for group in ("carrier","wheel"):
             key = corner,group
@@ -125,7 +123,6 @@ def inspect(design):
         worst = max(worst,error)
         roll.rotationValue = 0.
         steer.rotationValue = 0.
-        adsk.doEvents()
         if pose_error(start)>TOLERANCE_CM:
             raise ValueError("Combined pose failed to return to zero")
     return {"independentSignedPoses":16,"combinedSteerAndRollPoses":4,

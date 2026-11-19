@@ -10,12 +10,13 @@ from run_axial_shear_lift import ROOT, digest, load
 from verify_swerve_carry import verify
 
 
-def measure(frame, pickup, carry):
+def measure(frame, pickup, carry, *, support="frame"):
     verified = verify(pickup, carry)
     geometry = load(ROOT/"cad/assembly/intake_components.json")["note"]
     boxes = np.asarray([a["boundsMm"] for a in frame["articles"]])
-    if boxes.shape!=(46,6) or not np.isfinite(boxes).all():
-        raise ValueError("Reopened frame requires all 46 Cartesian body bounds")
+    count_expected = {"frame":46,"mast":6}[support]
+    if boxes.shape!=(count_expected,6) or not np.isfinite(boxes).all() or (boxes[:,3:]<=boxes[:,:3]).any():
+        raise ValueError(f"Expected {count_expected} complete {support} body bounds")
     minimum = math.inf
     witness = None
     count = 0
@@ -50,5 +51,7 @@ if __name__=="__main__":
     parser.add_argument("frame", type=Path)
     parser.add_argument("pickup", type=Path)
     parser.add_argument("carry", type=Path)
+    parser.add_argument("--support", choices=("frame","mast"), default="frame")
     args = parser.parse_args()
-    print(json.dumps(dict(frameMeasurementSha256=digest(args.frame),**measure(load(args.frame),args.pickup,args.carry)),indent=2))
+    result = measure(load(args.frame),args.pickup,args.carry,support=args.support)
+    print(json.dumps(dict(frameMeasurementSha256=digest(args.frame),**result),indent=2))
