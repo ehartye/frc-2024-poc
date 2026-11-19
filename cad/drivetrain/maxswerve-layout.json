@@ -14,7 +14,7 @@
     "supplierSource": "https://www.revrobotics.com/content/cad/REV-21-3005.STEP",
     "sourceSha256": "11f8381810846a2e52a23dbbe07f8271b314967624eee53f56e59a3ece05c75e"
   },
-  "privateFusionArchiveSha256": "3d53ef431ca671b02fd62d3428f7ef4f260ff1da19702664d0c189f445269305",
+  "privateFusionArchiveSha256": "ae6c40659f7a215573b1e172ae7aec3e90d62a94b8c27863234ee7c8cf275ce2",
   "stations": {
     "Front left": {
       "wheelCenterMm": [
@@ -95,9 +95,95 @@
   "minimumReportedOverlapMm3": 0.1,
   "verificationScope": "Native solid intersections at the exported floor pose against retained visible solids, excluding retired drive rails, rail-only attachments, service volumes and team markings. Source deck-height check also compared 111 retained package solids against 1518 stationary solids. The earlier six-wheel assembly remains available as the reference.",
   "pending": [
-    "Complete azimuth and lift sweeps",
     "Load-bearing rails, mounts and relocated deck support",
-    "Eight independent drive and steer actuator states and shared electrical validation",
+    "Harness clearance and service access",
+    "Eight finite drive and steer motor states and shared electrical validation",
     "Paired acquisition and scoring benchmarks"
-  ]
+  ],
+  "previousStaticArchiveSha256": "3d53ef431ca671b02fd62d3428f7ef4f260ff1da19702664d0c189f445269305",
+  "articulation": {
+    "sourceHashes": {
+      "mechanismInventory": "3b311a1546d1e24ea92b80d16459174cbc547f2db92bcf3974b81b43f90d132f",
+      "moduleInventory": "64556689a10a3c40583f385284f443907b8f9fdef548db8081bd938b3aaf9e80"
+    },
+    "deckRiseParameter": "swerveAftDeckRise",
+    "nativeBodiesPerModule": 274,
+    "nativeSolidsPerModule": 273,
+    "retainedSupplierSurfaceBodiesPerModule": 1,
+    "nativeJointTest": {
+      "independentSignedPoses": 16,
+      "combinedSteerAndRollPoses": 4,
+      "witnessToleranceMm": 0.01,
+      "maximumWitnessErrorMm": 3.2997352385173293e-13,
+      "positiveAxes": {
+        "Front left": {
+          "steer": [
+            0,
+            0,
+            -1
+          ],
+          "roll": [
+            0,
+            -1,
+            0
+          ]
+        },
+        "Front right": {
+          "steer": [
+            0,
+            0,
+            -1
+          ],
+          "roll": [
+            -1,
+            0,
+            0
+          ]
+        },
+        "Rear left": {
+          "steer": [
+            0,
+            0,
+            -1
+          ],
+          "roll": [
+            1,
+            0,
+            0
+          ]
+        },
+        "Rear right": {
+          "steer": [
+            0,
+            0,
+            -1
+          ],
+          "roll": [
+            0,
+            1,
+            0
+          ]
+        }
+      }
+    },
+    "clearance": {
+      "steeringRangeDeg": 360,
+      "steeringEnvelopeRadiusMm": 45,
+      "movingPartContainmentRadiusMm": 44,
+      "suppliedPartsInMotionEnvelope": 30,
+      "steeringEnvelopeVsRetainedFloorIntersections": 0,
+      "mechanismBodies": 188,
+      "liftRangeMm": [
+        0,
+        450
+      ],
+      "pitchRangeDeg": [
+        0,
+        60
+      ],
+      "pitchIntervals": 60,
+      "minimumAxisSeparationMm": 4.825
+    },
+    "scope": "Rigid nominal CAD. The clearance bound covers the module and retained moving intake/lift bodies with independent roll, azimuth, lift and pitch. It excludes wiring, service reserves, retired six-wheel hardware, deflection and new load-bearing mounting components."
+  }
 }
