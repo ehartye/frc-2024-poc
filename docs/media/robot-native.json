@@ -1,0 +1,25 @@
+{
+  "schema": "fusion-showcase/1",
+  "sourceFormat": "F3D",
+  "sourceSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "nativeBodyCount": 734,
+  "displayedNativeBodies": 589,
+  "assets": {
+    "still": {
+      "path": "docs/media/robot-native.png",
+      "sha256": "cb63a717dfb9e159222cb68a8b9d12d0b11b2766c8bd70c86d8e2579cd13f898"
+    },
+    "model": {
+      "path": "docs/media/robot-native.glb",
+      "sha256": "dd08c0a26cfdde4c1965f05bd063fd8cc39ec82cf29b52972916bbf2e4a05dea"
+    }
+  },
+  "clip": "Lift and shoot",
+  "case": "D1",
+  "frame": "Robot chassis, with the chassis pose held at separation for the final 0.1429 seconds of field flight.",
+  "startS": 4.84,
+  "releaseS": 11.4924,
+  "openingS": 11.6353,
+  "simultaneousSensorS": 14.9905,
+  "scope": "Visible team-authored bodies from the native six-wheel robot, with recorded carriage, cradle and NOTE poses. The NOTE is a dimensional torus. The clip ends at the opening."
+}

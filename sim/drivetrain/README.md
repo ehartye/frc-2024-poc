@@ -1,9 +1,9 @@
 # Stateful four-CIM drivetrain experiment
 
 <!-- cad-still -->
-[![Connected floor-pose assembly](../../docs/robot/cad/assembly.png)](https://ehartye.github.io/frc-2024-poc/robot/cad/)
+[![1780 lift and shooter](../../docs/media/robot-native.png)](https://ehartye.github.io/frc-2024-poc/#model)
 
-**Project CAD · Connected floor-pose assembly.** Six-wheel baseline with project-authored solids and supplier-sized envelopes. The swerve redesign is in development. [Source STEP · b08b08a8e7](../../cad/assembly/connected-floor.step) · [Rotate the model](https://ehartye.github.io/frc-2024-poc/robot/cad/)
+**1780 lift and shooter.** Six-wheel Fusion baseline with its continuous red bumper. Play the recorded lift and shot, or drag to rotate the model. [Native model record](../../docs/media/robot-native.json) · [Open 3D replay](https://ehartye.github.io/frc-2024-poc/#model)
 <!-- /cad-still -->
 
 This is a force-driven planar plant, not a kinematic driving preview or a complete robot simulation. Source-sized six-wheel contact stations, rigid gearing, wheel/rotor momentum, longitudinal slip, lateral scrub and chassis momentum persist across steps. No field collision, acquisition success, scoring, or physical validation is claimed.
