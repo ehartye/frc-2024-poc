@@ -44,6 +44,11 @@ def run(root, update, template):
                   bounds=json.dumps(receipt["nativeBounds"]), mesh=base64.b64encode(mesh).decode("ascii"))
     viewer = re.sub(r"\{\{(\w+)\}\}", lambda match: fields[match[1]], template.read_text(encoding="utf-8"))
     output(folder / "index.html", viewer.encode(), update)
+    featured = config.get("featured")
+    if featured:
+        native = json.loads((root / featured["receipt"]).read_bytes())
+        for asset in native["assets"].values():
+            checked(root / asset["path"], asset["sha256"])
     paths = subprocess.check_output(["git", "ls-files", "-co", "--exclude-standard", "-z"], cwd=root)
     names = sorted(set(n.decode() for n in paths.split(b"\0") if n and Path(n.decode()).name.lower() in ("readme.md", "readme")))
     for name in names:
@@ -66,6 +71,14 @@ def run(root, update, template):
         block = (f'{START}\n[![{title}]({image})]({target})\n\n'
                  f'**Project CAD · {title}.** {config["scope"]} '
                  f'[Source STEP · {receipt["sourceSha256"][:10]}]({source}) · [Rotate the model]({target})\n{END}')
+        if featured:
+            title = featured["title"]
+            target = featured["viewerUrl"]
+            image = link(root / native["assets"]["still"]["path"])
+            provenance = link(root / featured["receipt"])
+            block = (f'{START}\n[![{title}]({image})]({target})\n\n'
+                     f'**{title}.** {featured["scope"]} '
+                     f'[Native model record]({provenance}) · [Open 3D replay]({target})\n{END}')
         merged = "".join(lines[:heading+1]).rstrip("\n") + "\n\n" + block + "\n\n" + "".join(lines[heading+1:]).lstrip("\n")
         if b"\r\n" in original:
             merged = merged.replace("\n", "\r\n")

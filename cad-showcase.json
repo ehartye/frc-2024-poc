@@ -2,5 +2,11 @@
   "source": "cad/assembly/connected-floor.step",
   "title": "Connected floor-pose assembly",
   "scope": "Six-wheel baseline with project-authored solids and supplier-sized envelopes. The swerve redesign is in development.",
-  "viewerUrl": "https://ehartye.github.io/frc-2024-poc/robot/cad/"
+  "viewerUrl": "https://ehartye.github.io/frc-2024-poc/robot/cad/",
+  "featured": {
+    "title": "1780 lift and shooter",
+    "scope": "Six-wheel Fusion baseline with its continuous red bumper. Play the recorded lift and shot, or drag to rotate the model.",
+    "viewerUrl": "https://ehartye.github.io/frc-2024-poc/#model",
+    "receipt": "docs/media/robot-native.json"
+  }
 }

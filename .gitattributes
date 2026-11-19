@@ -141,3 +141,5 @@ sim/pressure/turning_sweep.py -text
 
 docs/robot/cad/*.png binary
 docs/robot/cad/*.gz binary
+docs/media/*.glb binary
+docs/media/*.png binary

@@ -17,6 +17,8 @@ ORIGINAL_ASSETS={'cad/assembly/connected-floor.png':'d33b182fd6a02b6ed33509fef78
 
 SHOWCASE_ASSETS = {'docs/robot/cad/assembly.png': 'e2bd5548feedb28c19c5c0daaec9f9509cea62bf8e0119ed80b184189cae4898', 'docs/robot/cad/assembly.stl.gz': 'e9f6928eae7f4464a55316e2d30ba139506ac96f94763974ee750c70ea6c7b70'}
 
+SHOWCASE_ASSETS.update({'docs/media/robot-native.png': 'cb63a717dfb9e159222cb68a8b9d12d0b11b2766c8bd70c86d8e2579cd13f898', 'docs/media/robot-native.glb': 'dd08c0a26cfdde4c1965f05bd063fd8cc39ec82cf29b52972916bbf2e4a05dea'})
+
 def findings(data):
  text=data.decode('utf-8',errors='replace')
  return [name for name,p in PATTERNS.items() if re.search(p,text)]
