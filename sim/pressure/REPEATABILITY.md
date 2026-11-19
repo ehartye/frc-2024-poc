@@ -161,3 +161,17 @@ Reproduce with the pinned simulation environment, registered private field direc
 ```powershell
 python -B sim/pressure/swerve_development_route.py $ArticulatedRobot $Field D1 $NewOutput
 ```
+
+## Nominal R7 development run
+
+R7 uses the editable registered-front-crossmember archive, including the battery, foam and wood bumpers, four modules, moving carriage and cradle. The nominal floor-pose mass is 48.015 kg. The first lift calibration reached the substrate below the modeled tread at 1.839 s. The common nominal feedforward seated the first floor NOTE at 4.3625 s. With that calibration, light and heavy cases reached the same material limit at 1.8365 and 1.8505 s. These cases remain outside the demonstrated pickup envelope. [Mass and inertia budget](../../cad/drivetrain/R7_MASS.md) · [Preserved controls](evidence/r7-route-controls-D1.json)
+
+On the earlier articulated plant, reducing outer-wing feed duty from 0.230 to 0.225 produced a paired event at 27.142 s after the first NOTE had cleared. In the nominal R7 turning trial, all six consecutive releases produced paired events in individual field solves, the last at 117.621 s. Its first turn puts a subwoofer panel point 11.93 mm inside a front cushion. Three detector events also have a shared-collection replay, including contact between earlier rings. The collision invalidates the route before the first detector event. [Control runs](evidence/r7-route-controls-D1.json) · [Three-event counter replay](evidence/r7-turning-counter-sequence.json)
+
+On the corrected approach the robot finishes turning away from the wall, then drives straight to the shooting pose. The middle and outer NOTES reached both sensor pairs at 13.63885 and 28.06375 s. The first cleared the counter by 17.05475 s. The minimum separation between the two released NOTES was 0.97584 m through 29.23025 s. The 659 robot envelopes, physical roster placements and remaining field stock passed the swept screen through that departure. Each released NOTE also cleared the moving robot over its five-second field trace, with lower bounds of 35.14 and 56.87 mm. The independent bumper-panel screen found at least 66.28 mm separation through the outer carry. Formal starts used: 0 of 20. [Route, departure, counter and field receipts](evidence/r7-straight-first-two.json)
+
+```powershell
+python -B sim/pressure/swerve_development_route.py $R7Archive $Field D1 $Output --r7-mass-case nominal --outer-feed .225 --wall-approach
+```
+
+The archive and geometry packets are available through the [native handoff](../../cad/native-handoff.md). The model uses estimated masses, an assumed contact law and a passive floor behind the Speaker. Further release tuning requires a new continuous downstream run.

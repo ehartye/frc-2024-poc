@@ -1,0 +1,66 @@
+{
+  "schema": "agent-frc/replay-chapters@1",
+  "revision": "R7 nominal D1",
+  "media": {
+    "file": "docs/media/r7-nominal-d1.glb",
+    "sha256": "5bfe2bbbfe008a4915b23f4d185790aacef62e921498ccd2f6bcd588f4fe8e02"
+  },
+  "trace": {
+    "file": "experiments/speaker-cycles/r7-first-states.json",
+    "sha256": "a4582434b480c6bf5393d6106812f0141e2f37632dc156b09e7d34ecd73ff1b5"
+  },
+  "observations": {
+    "file": "experiments/speaker-cycles/r7-first-events.json",
+    "sha256": "bc9308e908aaccca2ed58273271f8e11375997b93efa580584b296bf57cbda44"
+  },
+  "chapters": [
+    {
+      "id": "r7-middle",
+      "label": "R7 middle-wing pickup and paired detection",
+      "animation": "Lift and shoot",
+      "node": "NOTE",
+      "start": "/rows/0",
+      "end": "/rows/1",
+      "sync": [
+        {
+          "runS": 0.0,
+          "clipS": 0.0
+        },
+        {
+          "runS": 13.638849999991407,
+          "clipS": 13.638849999991407
+        }
+      ],
+      "events": [
+        {
+          "id": "seat",
+          "type": "seat",
+          "timeS": 4.362500000000302,
+          "outcome": "reached",
+          "pointer": "/events/0"
+        },
+        {
+          "id": "release",
+          "type": "release",
+          "timeS": 10.446249999998848,
+          "outcome": "reached",
+          "pointer": "/events/1"
+        },
+        {
+          "id": "opening",
+          "type": "opening",
+          "timeS": 10.592549999998507,
+          "outcome": "reached",
+          "pointer": "/events/2"
+        },
+        {
+          "id": "both-pairs",
+          "type": "both-pairs",
+          "timeS": 13.638849999991407,
+          "outcome": "reached",
+          "pointer": "/events/3"
+        }
+      ]
+    }
+  ]
+}

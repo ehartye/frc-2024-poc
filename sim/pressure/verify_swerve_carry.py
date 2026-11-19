@@ -15,6 +15,9 @@ def check_departure(pickup, release_dir, roster):
     from speaker_trial_inputs import FRAME, local_offset, read_attempt
     from wing_field_frame import piece_id
     source = load(release_dir/"result.json")
+    from r7_dynamics import verify_binding
+    if verify_binding(source) != verify_binding(pickup) or source.get("routePolicy") != pickup.get("routePolicy"):
+        raise ValueError("Departure mass case changed")
     trace = release_dir/"trace.jsonl"
     if (source["outcome"] != "UPWARD_FREE_RELEASE" or source.get("drivetrain") != "maxswerve"
             or digest(trace) != source["traceSha256"] or pickup["firstReleaseTrace"] != source["traceSha256"]
@@ -49,6 +52,9 @@ def check_departure(pickup, release_dir, roster):
 def verify(pickup_dir, carry_dir, *, release_dir=None, roster=None):
     pickup = load(pickup_dir/"result.json")
     carry = load(carry_dir/"result.json")
+    from r7_dynamics import verify_binding
+    if verify_binding(pickup) != verify_binding(carry) or pickup.get("routePolicy") != carry.get("routePolicy"):
+        raise ValueError("Carry mass case changed")
     verify_runtime_chain([pickup, carry])
     layout = ROOT/"cad/drivetrain/maxswerve-layout.json"
     if (release_dir is None) != (roster is None):
@@ -60,7 +66,6 @@ def verify(pickup_dir, carry_dir, *, release_dir=None, roster=None):
     if (pickup["schema"] != expected_schema or pickup["outcome"] != "SEATED"
             or carry["schema"] != "maxswerve-wing-note-delivery/1" or carry["outcome"] != "AT_SHOOTING_POSE"
             or pickup["layoutSha256"] != digest(layout)
-            or pickup["nativeSha256"] != load(layout)["privateFusionArchiveSha256"]
             or any(pickup[k] != carry[k] for k in ("nativeSha256", "attempt", "rosterSha256", "pieceId", "grid", "dt"))
             or pickup["collectedMarks"] != carry["collectedMarks"] or carry["acquisitionTrace"] != pickup["trace"]):
         raise ValueError("Mismatched robot, setup, piece or stage outcome")

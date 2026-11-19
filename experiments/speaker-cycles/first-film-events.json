@@ -1,0 +1,63 @@
+{
+  "sources": [
+    {
+      "file": "sim/pressure/evidence/maxswerve-development-shot.json",
+      "sha256": "5dfc95ce64681bf068c46be3f40654de3ffd8fe844510c57e6eeccc1ac19e4e7"
+    },
+    {
+      "file": "sim/pressure/evidence/maxswerve-six-note-D1.json",
+      "sha256": "0f6781602fd5e32521fd3aafb4ec0f84fbadee569dbe3340fa6990e0a2ab8088"
+    }
+  ],
+  "events": [
+    {
+      "revision": "ae6c40659f7a215573b1e172ae7aec3e90d62a94b8c27863234ee7c8cf275ce2",
+      "attempt": "D1",
+      "piece": "blue-wing-middle",
+      "clock": "match",
+      "type": "seat",
+      "timeS": 4.494500000000229,
+      "kind": "target",
+      "target": "Pickup",
+      "criterion": "The middle-wing NOTE seats between the belts.",
+      "qualified": true
+    },
+    {
+      "revision": "ae6c40659f7a215573b1e172ae7aec3e90d62a94b8c27863234ee7c8cf275ce2",
+      "attempt": "D1",
+      "piece": "blue-wing-middle",
+      "clock": "match",
+      "type": "release",
+      "timeS": 10.566049999999036,
+      "kind": "target",
+      "target": "Release",
+      "criterion": "The NOTE leaves the powered wheels and belts.",
+      "qualified": true
+    },
+    {
+      "revision": "ae6c40659f7a215573b1e172ae7aec3e90d62a94b8c27863234ee7c8cf275ce2",
+      "attempt": "D1",
+      "piece": "blue-wing-middle",
+      "clock": "match",
+      "type": "opening",
+      "timeS": 10.704549999998713,
+      "kind": "target",
+      "target": "Opening",
+      "criterion": "The full ring clears the registered opening.",
+      "qualified": true
+    },
+    {
+      "revision": "ae6c40659f7a215573b1e172ae7aec3e90d62a94b8c27863234ee7c8cf275ce2",
+      "attempt": "D1",
+      "piece": "blue-wing-middle",
+      "clock": "match",
+      "type": "simultaneous-counter",
+      "timeS": 12.915049999993562,
+      "kind": "score",
+      "target": "Counter",
+      "criterion": "The same NOTE shadows both sensor pairs.",
+      "rule": "One simulated paired event after full opening passage.",
+      "qualified": true
+    }
+  ]
+}

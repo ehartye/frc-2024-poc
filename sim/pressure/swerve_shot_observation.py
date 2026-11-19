@@ -18,6 +18,9 @@ from wing_speaker_passage import rotation
 def measure(pickup, carry, shot, field, sensor, *, previous_release=None, roster=None):
     chain = verify(pickup,carry,release_dir=previous_release,roster=roster)
     delivered,released,flight = [load(folder/"result.json") for folder in (carry,shot,field)]
+    from r7_dynamics import verify_binding
+    if verify_binding(released) != verify_binding(delivered) or flight["nativeSha256"] != released["nativeSha256"]:
+        raise ValueError("Field flight differs from the released assembly")
     verify_runtime_chain([delivered,released,flight])
     start = tail(carry,delivered)
     handoff = {"initialQ":"q","initialV":"v","initialBusV":"busV","initialSourceJ":"sourceJ",

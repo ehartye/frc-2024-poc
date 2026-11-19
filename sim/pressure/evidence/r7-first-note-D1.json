@@ -1,0 +1,45 @@
+{
+  "schema": "r7-first-note-development/1",
+  "pickupTrace": "eff94eb2695fc64e43a06cdc19c491536efd57ed30d991f1e8285555d53aa6c8",
+  "carryTrace": "b1e68d6ed7afb11de683cab0ee1177537cd9436291c5c8292aa4e7ff4ec83083",
+  "piece": "blue-wing-middle",
+  "startS": 0.0,
+  "seatedS": 4.362500000000302,
+  "firstBilateralS": 2.2349999999999137,
+  "routePolicy": "straight-wall-approach/1",
+  "massBinding": {
+    "r7MassCase": "nominal",
+    "massBudgetSha256": "9d8c37fa140ba33fdb7fddb056eca9ef24f91f488e9ea8c99c6b448ae788bbe0"
+  },
+  "observation": {
+    "attempt": "D1",
+    "carryTrace": "b1e68d6ed7afb11de683cab0ee1177537cd9436291c5c8292aa4e7ff4ec83083",
+    "sourceNativeSha256": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+    "stationS": 9.76300000000044,
+    "releaseS": 10.446249999998848,
+    "minimumBusV": 9.43280364537294,
+    "peakDriveAndSteerCurrentA": [
+      1.884986237123306,
+      20.0
+    ],
+    "opening": {
+      "firstPossibleS": 10.547549999998612,
+      "fullyThroughByS": 10.592549999998507,
+      "minimumMarginM": 0.03484416105819926
+    },
+    "firstFullShadowsS": [
+      13.638849999991407,
+      13.53034999999166
+    ],
+    "firstSimultaneousFullShadowS": 13.638849999991407,
+    "bestMarginPerPairM": [
+      0.008448906295573187,
+      0.008644347144319125
+    ],
+    "bestSimultaneousMarginM": 0.007003763201336152,
+    "countedFloorNotes": 1,
+    "fieldTrace": "817afabb6301e24b6fb56cd717218e433e545e74a2e39085ed9332520e8d92cd",
+    "sensorFile": "13d07c04856ee1ca927d8f17fa29570e6ead74cc1c917f1879b94b3b9d8b236f",
+    "sourceTrace": "5ab813567918ae00bf79401e9c263097de4ce20bf2a414741b98b4e3d4412c1a"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "source": {
+    "file": "sim/pressure/evidence/r7-first-note-D1.json",
+    "sha256": "483592c15465518cce34ceaf6ac64ea92f880f086b01cd09e9bdff76a7147b74"
+  },
+  "events": [
+    {
+      "revision": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+      "attempt": "D1",
+      "piece": "blue-wing-middle",
+      "clock": "match",
+      "type": "seat",
+      "target": "Pickup",
+      "criterion": "The middle-wing NOTE seats between both belts.",
+      "timeS": 4.362500000000302,
+      "kind": "target",
+      "qualified": true
+    },
+    {
+      "revision": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+      "attempt": "D1",
+      "piece": "blue-wing-middle",
+      "clock": "match",
+      "type": "release",
+      "target": "Release",
+      "criterion": "Wheel and belt contact ends at the attained free release.",
+      "timeS": 10.446249999998848,
+      "kind": "target",
+      "qualified": true
+    },
+    {
+      "revision": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+      "attempt": "D1",
+      "piece": "blue-wing-middle",
+      "clock": "match",
+      "type": "opening",
+      "target": "Opening",
+      "criterion": "The whole NOTE clears the registered opening.",
+      "timeS": 10.592549999998507,
+      "kind": "target",
+      "qualified": true
+    },
+    {
+      "revision": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+      "attempt": "D1",
+      "piece": "blue-wing-middle",
+      "clock": "match",
+      "type": "both-pairs",
+      "target": "Counter",
+      "criterion": "The same NOTE fully shadows both modeled sensor pairs.",
+      "timeS": 13.638849999991407,
+      "kind": "target",
+      "qualified": true
+    }
+  ]
+}

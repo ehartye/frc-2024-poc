@@ -39,3 +39,4 @@ thead { background: #e7eff6; }
 button:focus-visible, select:focus-visible, input:focus-visible { outline: 3px solid #955710; outline-offset: 2px; }
 
 .revision-picker { display:flex; align-items:center; gap:.65rem; margin:.65rem 0; }
+.replay-controls[hidden] { display: none; }

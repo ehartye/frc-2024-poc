@@ -22,11 +22,15 @@ def run(args):
     native = digest(args.archive)
     if args.carry_output and args.drivetrain != "maxswerve":
         raise ValueError("The continuous holonomic carry requires MAXSwerve")
+    mass_case = getattr(args, "r7_mass_case", None)
+    if mass_case and args.drivetrain != "maxswerve":
+        raise ValueError("R7 mass cases require the four-module plant")
     plant_type = ReturnPlant
     expected_native = binding["nativeArchiveSha256"]
     if args.drivetrain == "maxswerve":
         from maxswerve import LAYOUT, SwervePickup
-        expected_native = load(LAYOUT)["privateFusionArchiveSha256"]
+        from r7_dynamics import BUDGET, binding
+        expected_native = load(BUDGET)["archive"] if mass_case else load(LAYOUT)["privateFusionArchiveSha256"]
         plant_type = SwervePickup
         if args.steering != "none":
             raise ValueError("The load and encoder steering variants are differential-drive controllers")
@@ -46,8 +50,9 @@ def run(args):
                  v=[0.]*11, rotor=[0.]*4, shear=[0.]*4, busV=12., clock=0.)
     calibration = load(ROOT / "sim/mujoco/evidence/launcher-quadrature-verification-20261118.json")
     plant = plant_type(start, state, args.dt, args.grid, 32,
-                        calibration["runs"]["grid-16384"]["parameters"])
+                        calibration["runs"]["grid-16384"]["parameters"], **({"mass_case": mass_case} if mass_case else {}))
     plant.begin_pickup(starts_lowered=True)
+    plant.wall_approach = getattr(args, "wall_approach", False)
     plant.capture_speed = .16
     plant.contact_steering = args.steering == "load"
     plant.encoder_steering = args.steering == "encoder"
@@ -65,13 +70,15 @@ def run(args):
                   contactSteering=plant.contact_steering, encoderSteering=plant.encoder_steering, captureSpeedMps=plant.capture_speed,
                   traceStride=args.trace_stride)
     if args.drivetrain == "maxswerve":
-        result.update(schema="maxswerve-first-wing-acquisition/1", layoutSha256=digest(LAYOUT),
+        result.update(**binding(mass_case), schema="maxswerve-first-wing-acquisition/1", layoutSha256=digest(LAYOUT),
                       collectedMarks=["middle"] if result["outcome"] == "SEATED" else [],
                       drivetrain=args.drivetrain, contactSteering=True, steeringObservation="ideal belt normal load difference",
                       moduleOrder=["FL", "FR", "RL", "RR"],
                       peakDriveAndSteerCurrentA=plant.peak_current.tolist(), peakSlipMps=plant.peak_slip,
                       azimuthQpos=plant.az_pos.tolist(),
                       wheelRollQpos=[int(plant.model.joint("roll_"+tag).qposadr[0]) for tag in ("fl","fr","rl","rr")])
+    if plant.wall_approach:
+        result["routePolicy"] = "straight-wall-approach/1"
     (args.output / "result.json").write_text(json.dumps(result, indent=2, allow_nan=False)+"\n")
     print(json.dumps({k:result[k] for k in ("attempt", "outcome", "end", "firstBilateral", "trace")}))
 
@@ -92,6 +99,8 @@ def carry_to_speaker(args, plant, result, *, route=None):
         carry.lookahead = .48
     plant.shoot_position = FRAME.to_local([*carry.field_station[:2], 0.])[:2]
     plant.shoot_heading = math.radians(carry.field_station[2]-carry.field_yaw_deg)
+    if getattr(plant, "wall_approach", False) and result["pieceId"] == "blue-wing-inner":
+        plant.stage_exit = FRAME.to_local([2.40, FRAME.mark("inner")[1], 0.])[:2]
     plant.field_velocity = plant.data.qvel[:2].copy()
     plant.attempt_setup = (result["attempt"], result["rosterSha256"])
     deliver(carry, plant, tail(args.output, result), result["trace"], result["nativeSha256"], result["collectedMarks"])
@@ -105,6 +114,8 @@ if __name__ == "__main__":
     parser.add_argument("--roster", type=Path, default=COHORT)
     parser.add_argument("--attempt", required=True)
     parser.add_argument("--drivetrain", choices=("differential", "maxswerve"), default="differential")
+    parser.add_argument("--wall-approach", action="store_true")
+    parser.add_argument("--r7-mass-case", choices=("light", "nominal", "heavy"))
     parser.add_argument("--steering", choices=("none", "load", "encoder"), default="none")
     parser.add_argument("--dt", type=float, choices=(.00025, .0005), default=.0005)
     parser.add_argument("--grid", type=int, choices=(256, 512, 1024), default=512)

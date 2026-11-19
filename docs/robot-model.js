@@ -9,6 +9,9 @@ const caption = document.getElementById("model-caption");
 const description = document.getElementById("replay-description");
 const models = {
   swerve: { file: "swerve-r7", title: caption.textContent, label: status.textContent, description: description.textContent },
+  "r7-budget": { file: "r7-nominal-d1", poster: "swerve-r7", title: "1780 · R7 nominal mass",
+    label: "R7 Fusion assembly · Nominal floor-pose mass budget",
+    description: "The middle-wing NOTE seats at 4.363 s and reaches both Speaker sensor pairs at 13.639 s on the straight wall approach. The displayed robot and simulated plant use the same R7 Fusion archive. The view follows the chassis until release, then holds the release frame through the detector event." },
   baseline: { file: "robot-native", title: "1780 · Six-wheel baseline", label: "Historical Fusion assembly · Team-authored geometry",
               description: "First wing NOTE from the six-wheel baseline. The orange NOTE follows its measured path through the Speaker opening." }
 };
@@ -36,11 +39,11 @@ function restoreModel() {
   replay.hidden = true;
   const model = models[revision.value];
   viewer.src = "media/" + model.file + ".glb";
-  viewer.poster = "media/" + model.file + ".png";
+  viewer.poster = "media/" + (model.poster ?? model.file) + ".png";
   viewer.querySelector('[slot="poster"]').src = viewer.poster;
   caption.textContent = model.title;
   description.textContent = model.description;
-  wheelsButton.hidden = revision.value !== "swerve";
+  wheelsButton.hidden = revision.value === "baseline";
   if (localUrl) URL.revokeObjectURL(localUrl);
   localUrl = undefined;
   input.value = "";
@@ -94,6 +97,59 @@ viewer.addEventListener("error", () => {
 });
 restore.addEventListener("click", restoreModel);
 revision.addEventListener("change", restoreModel);
+if (new URLSearchParams(location.search).get("view") === "r7-budget") {
+  revision.value = "r7-budget";
+  // Replay controls are initialized further down this module.
+  queueMicrotask(restoreModel);
+}
+
+const markers = document.getElementById("r7-events");
+const r7Index = fetch("media/r7-first-index.json").then(response => {
+  if (!response.ok) throw new Error("R7 markers unavailable");
+  return response.json();
+}).catch(() => null);
+
+async function showR7Markers(clip) {
+  markers.replaceChildren();
+  markers.hidden = true;
+  if (localUrl || revision.value !== "r7-budget" || !clip) return;
+  const token = selection;
+  const index = await r7Index;
+  const chapter = index?.chapters.find(c => c.animation === clip.name && c.revision === clip.extras.native);
+  if (!chapter || token !== selection) return;
+  for (const event of chapter.events) {
+    const button = document.createElement("button");
+    button.textContent = event.target + " · " + event.timeS.toFixed(3) + " s";
+    button.addEventListener("click", () => {
+      viewer.pause();
+      viewer.currentTime = Math.min(viewer.duration - .000001, event.clipS);
+      if (event.id === "both-pairs") counterButton.click();
+      else if (event.id === "opening") {
+        viewer.cameraTarget = clip.extras.openingCenter.map(x => x + "m").join(" ");
+        viewer.cameraOrbit = "12deg 77deg 1.6m";
+        viewer.jumpCameraToGoal();
+      } else resetCamera();
+      showPlayhead();
+    });
+    markers.append(button);
+  }
+  markers.hidden = false;
+}
+
+const film = document.getElementById("first-note-film");
+fetch("media/first-film-index.json").then(response => response.json()).then(index => {
+  const controls = document.getElementById("film-events");
+  for (const event of index.chapters[0].events) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.textContent = event.target + " · " + event.timeS.toFixed(3) + " s";
+    button.addEventListener("click", () => {
+      film.pause();
+      film.currentTime = Math.ceil(event.clipS * 20) / 20;
+    });
+    controls.append(button);
+  }
+}).catch(() => { /* The film's native controls remain available. */ });
 document.getElementById("reset-camera").addEventListener("click", resetCamera);
 
 const replay = document.getElementById("replay");
@@ -133,6 +189,7 @@ viewer.addEventListener("load", () => {
   const clip = viewer.originalGltfJson?.animations?.find(item => item.name === "Lift and shoot");
   replay.hidden = !clip || localUrl !== undefined;
   events = clip?.extras;
+  showR7Markers(clip);
   counterButton.hidden = replay.hidden || !events?.counterCenter;
   if (replay.hidden) return;
   viewer.animationName = clip.name;

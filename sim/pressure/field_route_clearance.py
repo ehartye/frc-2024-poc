@@ -61,7 +61,7 @@ def phase(folder):
     return np.array([[r.get("time",r.get("t")),*r["q"][:5],*r["q"][-7:-4]] for r in data])
 
 
-def audit(rows,frame,inventory,field,waiting):
+def audit(rows,frame,inventory,field,waiting, *, summarize_pairs=False):
     boxes={}
     for group in ("fixed","carriage","cradle"):
         items=[x for x in inventory if x["motionGroup"]==group]
@@ -157,7 +157,13 @@ def audit(rows,frame,inventory,field,waiting):
             unresolved.append(dict(t=rows[lo,0],pairs=pairs))
         else:
             minimum=min(minimum,gap)
-    return dict(begin=rows[0,0],end=rows[-1,0],intervals=len(rows)-1,unresolvedIntervals=len(unresolved),
+    examples = {}
+    if summarize_pairs:
+        for row in sorted(unresolved, key=lambda r:r["t"]):
+            for pair in row["pairs"]:
+                examples.setdefault(tuple(pair), row["t"])
+    return dict(**({"candidatePairs":[dict(robot=k[0], field=k[1], firstS=t) for k,t in examples.items()]}
+                   if summarize_pairs else {}), begin=rows[0,0],end=rows[-1,0],intervals=len(rows)-1,unresolvedIntervals=len(unresolved),
                 firstUnresolved=min(unresolved,key=lambda r:r["t"]) if unresolved else None,
                 minimumReportedAxisGapM=minimum if math.isfinite(minimum) else None)
 

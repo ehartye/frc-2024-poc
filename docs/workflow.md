@@ -15,3 +15,9 @@ Follow the project from the game rules to a simulated score. The table connects 
 | [frc-project-setup](https://github.com/ehartye/agent-frc/blob/515bdae8b881f7c8074abe8043e59a17489330b7/skills/frc-project-setup/SKILL.md) | [Project entry points](../README.md) · [Historical fixture inventory](../historical-fixtures/agent-frc/manifest.json) | [CAD and README verification](../scripts/cad-readmes.py) |
 
 The six historical kickoff records above were recovered from the source revision in the fixture inventory. Their original language and edition are preserved. Relative links in the two Markdown records resolve to the committed copies or the pinned historical source. The strategic narrative and native handoff describe the later integrated design.
+
+## R7 workflow checks
+
+The nominal route binds the displayed Fusion archive, role-based mass budget, raw pickup and field traces and both Speaker sensors. The R7 animation uses a single continuous, chassis-relative clip. The historical WebM uses its own film clock, including the slowed release. The two chapter registers independently verify the media, observations and clock mapping. [R7 animation chapters](../experiments/speaker-cycles/r7-first-chapters.json) · [Original film chapters](../experiments/speaker-cycles/first-film-chapters.json) · [Shared-counter evidence](../sim/pressure/evidence/r7-straight-first-two.json)
+
+Agent FRC's project-layout check reports 19 historical root entries. They include the original A2, component, verification and design records, the configuration, provenance and runner, and the historical-fixtures, mission, reliability, shared and tools directories. Their existing paths support archived scripts and source digests. This project retains those paths. The layout check therefore remains open. The independent CAD/README check covers all 16 project README files.

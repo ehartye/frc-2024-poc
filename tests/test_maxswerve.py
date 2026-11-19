@@ -14,13 +14,13 @@ from second_wing_pickup import ReturnPlant
 from wing_note_release import SwerveShot
 
 
-def at_rest(plant_type):
+def at_rest(plant_type, **options):
     start = dict(chassis=dict(x=0., y=0., heading=0., vx=0., vy=0., yaw_rate=0., wheel=[0., 0.]),
                  note=dict(p=[.658, 0.], v=[0., 0.], yaw=0., spin=0., w=[0., 0.]))
     state = dict(q=[0.]*5 + [.658, 0., .0254, 1., 0., 0., 0.], v=[0.]*11,
                  busV=12., clock=0., rotor=[0.]*4, shear=[0.]*4)
     data = load(ROOT / "sim/mujoco/evidence/launcher-quadrature-verification-20261118.json")
-    return plant_type(start, state, .0005, 256, 32, data["runs"]["grid-16384"]["parameters"])
+    return plant_type(start, state, .0005, 256, 32, data["runs"]["grid-16384"]["parameters"], **options)
 
 
 class SwerveTest(unittest.TestCase):
@@ -50,6 +50,20 @@ class SwerveTest(unittest.TestCase):
             return full[:5, :5]
         np.testing.assert_allclose(matrix(p), matrix(original), atol=1e-12)
         self.assertEqual(p.model.nv-original.model.nv, 8)
+
+    def test_r7_budget_survives_articulated_partition(self):
+        from r7_dynamics import BUDGET
+        for case, groups in load(BUDGET)["cases"].items():
+            with self.subTest(case=case):
+                p = at_rest(SwervePickup, mass_case=case)
+                robot = groups["robot"]
+                self.assertAlmostEqual(p.model.body_subtreemass[p.chassis], robot["massKg"])
+                np.testing.assert_allclose(p.data.subtree_com[p.chassis], robot["centerM"], atol=1e-10)
+                full = np.empty((p.model.nv, p.model.nv))
+                mujoco.mj_fullM(p.model, p.data, full)
+                x,y,_ = robot["centerM"]
+                self.assertAlmostEqual(full[2,2], robot["diagonalAtCenterKgM2"][2]+robot["massKg"]*(x*x+y*y))
+                self.assertAlmostEqual(p.base.act.c["rotatingMassKg"], load(BUDGET)["cases"]["nominal"]["cradle"]["massKg"])
 
     def test_station_contact_and_transmission_power(self):
         p = self.p

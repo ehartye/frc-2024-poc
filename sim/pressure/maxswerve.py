@@ -5,6 +5,7 @@ import xml.etree.ElementTree as ET
 import mujoco
 import numpy as np
 
+from r7_dynamics import BUDGET, install, verify_binding
 from run_axial_shear_lift import ROOT, load
 from second_wing_pickup import ReturnPlant, angle_error
 from wing_note_delivery import DeliveryPlant
@@ -32,13 +33,14 @@ class SwervePickup(DeliveryPlant):
     @classmethod
     def from_floor_receipt(cls, pickup, dt, grid, segments, *, ring_phase_deg=0.):
         """Reconstruct the four-module topology before restoring an attained state."""
+        verify_binding(pickup)
         q = pickup["initialQ"]
         start = dict(timeS=0.,chassis=dict(x=q[0],y=q[1],heading=q[2],vx=0.,vy=0.,yaw_rate=0.,wheel=[0.,0.]),
                      note=dict(p=q[-7:-5],v=[0.,0.],yaw=0.,spin=0.,w=[0.,0.]))
-        state = dict(q=q[:5]+q[-7:],v=[0.]*11,busV=12.,clock=0.,rotor=[0.]*4,shear=[0.]*4)
+        state = dict(q=q[:5]+(q[-7:] if cls.carries_note else []),v=[0.]*(11 if cls.carries_note else 5),busV=12.,clock=0.,rotor=[0.]*4,shear=[0.]*4)
         calibration = load(ROOT/"sim/mujoco/evidence/launcher-quadrature-verification-20261118.json")
         return cls(start,state,dt,grid,segments,calibration["runs"]["grid-16384"]["parameters"],
-                   ring_phase_deg=ring_phase_deg)
+                   ring_phase_deg=ring_phase_deg, mass_case=pickup.get("r7MassCase"))
 
     def drivetrain_xml(self, xml):
         layout = load(LAYOUT)
@@ -85,10 +87,22 @@ class SwervePickup(DeliveryPlant):
             shaft = ET.SubElement(tendons, "fixed", name=f"drive_shaft_{tag}", armature="0.000035")
             ET.SubElement(shaft, "joint", joint=roll, coef=str(self.drive_ratio))
             ET.SubElement(shaft, "joint", joint=azimuth, coef="1")
+        if self.mass_case is not None:
+            install(chassis, self.mass_case)
         return ET.tostring(tree, encoding="unicode")
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self, *args, mass_case=None, **kwargs):
+        self.mass_case = mass_case
         super().__init__(*args, **kwargs)
+        if mass_case is not None:
+            # Use the same nominal controller calibration across all three plants.
+            groups = load(BUDGET)["cases"]["nominal"]
+            cradle = groups["cradle"]
+            controller_mass = dict(carriageMassKg=groups["carriage"]["massKg"], rotatingMassKg=cradle["massKg"],
+                                   comPitchInertiaKgM2=cradle["diagonalAtCenterKgM2"][1],
+                                   comLocalXZ_M=[cradle["centerM"][0]-self.base.x0, cradle["centerM"][2]-self.base.z0])
+            self.base.ac.update(controller_mass)
+            self.base.act.c.update(controller_mass)
         self.az = np.array([self.model.joint("azimuth_"+s).dofadr[0] for s in TAGS])
         self.roll = np.array([self.model.joint("roll_"+s).dofadr[0] for s in TAGS])
         self.az_pos = np.array([self.model.joint("azimuth_"+s).qposadr[0] for s in TAGS])
@@ -149,6 +163,18 @@ class SwervePickup(DeliveryPlant):
         goal = self.shoot_position
         if self.transit_path is not None:
             goal, _ = self.transit_path.target(d.qpos[:2])
+        heading = angle_error(self.shoot_heading, d.qpos[2])
+        if getattr(self, "stage_exit", None) is not None:
+            upfield = -np.array([math.cos(self.shoot_heading), math.sin(self.shoot_heading)])
+            if (d.qpos[:2]-self.stage_exit)@upfield > .05:
+                goal = self.stage_exit
+                heading = angle_error(self.pickup_heading, d.qpos[2])
+            else:
+                self.stage_exit = None
+        if getattr(self, "wall_approach", False) and abs(heading) > .09:
+            # Stay at least 0.20 m upfield of the final station while yawing.
+            away = -np.array([math.cos(self.shoot_heading), math.sin(self.shoot_heading)])
+            goal = goal + away * max(0., .20 - (goal-self.shoot_position)@away)
         error = goal - d.qpos[:2]
         target = error * min(2.4, self.transit_speed / max(np.linalg.norm(error), 1e-12))
         # Bound acceleration while the ring initially shares support with the floor.
@@ -157,8 +183,10 @@ class SwervePickup(DeliveryPlant):
         change = target - self.field_velocity
         accel = self.lifting_drive_accel if elapsed < 3. else 1.2
         self.field_velocity += change * min(1., .01*accel/max(np.linalg.norm(change), 1e-12))
-        heading = angle_error(self.shoot_heading, d.qpos[2])
-        turn = np.clip(2.5*heading, -self.turn_rate, self.turn_rate) if elapsed > .65 else 0.
+        rate = self.turn_rate
+        if getattr(self, "wall_approach", False):
+            rate = min(rate, math.sqrt(1.5*self.turn_accel*abs(heading)))
+        turn = np.clip(2.5*heading, -rate, rate) if elapsed > .65 else 0.
         self.turn_reference += np.clip(turn-self.turn_reference, -.01*self.turn_accel, .01*self.turn_accel)
         body_velocity = d.xmat[self.chassis].reshape(3, 3)[:2, :2].T @ self.field_velocity
         return self.module_duties(*body_velocity, self.turn_reference), demand["actuator"], demand["pinch"], launcher_duty

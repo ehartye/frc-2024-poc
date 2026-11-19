@@ -1,0 +1,361 @@
+{
+  "earlierArticulatedCorrection": {
+    "observation": {
+      "attempt": "D1",
+      "carryTrace": "eca80756235632144025ad1e1d460d341d9e4e123147400a593966dbee3a761a",
+      "sourceNativeSha256": "ae6c40659f7a215573b1e172ae7aec3e90d62a94b8c27863234ee7c8cf275ce2",
+      "stationS": 23.685549999987764,
+      "releaseS": 24.36770000001041,
+      "minimumBusV": 9.933728618462977,
+      "peakDriveAndSteerCurrentA": [
+        0.8648377336621665,
+        20.0
+      ],
+      "opening": {
+        "firstPossibleS": 24.47800000001015,
+        "fullyThroughByS": 24.507300000010083,
+        "minimumMarginM": 0.03276008806019365
+      },
+      "firstFullShadowsS": [
+        27.142100000003943,
+        27.0322000000042
+      ],
+      "firstSimultaneousFullShadowS": 27.142100000003943,
+      "bestMarginPerPairM": [
+        0.009003151523355781,
+        0.009237760625545488
+      ],
+      "bestSimultaneousMarginM": 0.007010451913447024,
+      "countedFloorNotes": 1,
+      "fieldTrace": "7cf461e66afa2dd2bb83231d554023e1a4f109eb005213cc69b34f267d424161",
+      "sensorFile": "13d07c04856ee1ca927d8f17fa29570e6ead74cc1c917f1879b94b3b9d8b236f",
+      "sourceTrace": "50ad1a070d7855f9b66802e563420c4baaa6bbfd2a62e796093a660264be08e6"
+    },
+    "reset": {
+      "previousScore": "dc306a996b388f90e0fd54e5ea4a975642dcdf8556e05c4b123ed050da183c89",
+      "olderShot": "0995c2499c9344b21fd0a5e42c6dec296723a498782927bcad37369c54ab0dcf",
+      "laterShot": "50ad1a070d7855f9b66802e563420c4baaa6bbfd2a62e796093a660264be08e6",
+      "field": "7cf461e66afa2dd2bb83231d554023e1a4f109eb005213cc69b34f267d424161",
+      "priorSegments": [
+        "1ace77c1349770ebcd68817587caf9528fcfb73756f42932677a62f5867d8e52",
+        "76f6fd274e40ca49598a781a42be005f7fa661166f3a17ea4470654d39349503"
+      ],
+      "sensorClearByS": 16.131349999986067,
+      "minimumPieceSeparationM": 0.9748419763788816,
+      "verifiedThroughS": 29.367699999998756
+    }
+  },
+  "r7TurningApproach": {
+    "records": [
+      {
+        "mark": "middle",
+        "acquisition": "SEATED",
+        "pickupEndS": 4.362500000000302,
+        "carry": "AT_SHOOTING_POSE",
+        "carryEndS": 9.76300000000044,
+        "release": "UPWARD_FREE_RELEASE",
+        "shotEndS": 10.446149999998848,
+        "observation": {
+          "attempt": "D1",
+          "carryTrace": "621fad41dfc2255bd2ebb82946bd1cb6d3cb15a7c0dd722f091a8cbb52c6c033",
+          "sourceNativeSha256": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+          "stationS": 9.76300000000044,
+          "releaseS": 10.446149999998848,
+          "minimumBusV": 9.43280020012812,
+          "peakDriveAndSteerCurrentA": [
+            2.1808030794029714,
+            20.0
+          ],
+          "opening": {
+            "firstPossibleS": 10.547449999998612,
+            "fullyThroughByS": 10.59094999999851,
+            "minimumMarginM": 0.033870921605534926
+          },
+          "firstFullShadowsS": [
+            13.617949999991456,
+            13.510249999991707
+          ],
+          "firstSimultaneousFullShadowS": 13.617949999991456,
+          "bestMarginPerPairM": [
+            0.008947229883760094,
+            0.009257720671762847
+          ],
+          "bestSimultaneousMarginM": 0.007350229365232705,
+          "countedFloorNotes": 1,
+          "fieldTrace": "346d85dbddf845ca8600918991366dd39706be907f4ae6e4141b72550931c97c",
+          "sensorFile": "13d07c04856ee1ca927d8f17fa29570e6ead74cc1c917f1879b94b3b9d8b236f",
+          "sourceTrace": "8c1967277d80aab14fd8f35a24f78712c3fc7229e7946f7575c0450b4963ce89"
+        }
+      },
+      {
+        "mark": "outer",
+        "acquisition": "SEATED",
+        "pickupEndS": 17.288150000002634,
+        "carry": "AT_SHOOTING_POSE",
+        "carryEndS": 23.67464999998775,
+        "release": "UPWARD_FREE_RELEASE",
+        "shotEndS": 24.366200000010707,
+        "observation": {
+          "attempt": "D1",
+          "carryTrace": "e8e20e51907255c21b8057754f8309f824694f64bac4fec098d1adc97339b3a7",
+          "sourceNativeSha256": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+          "stationS": 23.67464999998775,
+          "releaseS": 24.366200000010707,
+          "minimumBusV": 10.096219604367652,
+          "peakDriveAndSteerCurrentA": [
+            0.9344939121763955,
+            20.0
+          ],
+          "opening": {
+            "firstPossibleS": 24.46720000001047,
+            "fullyThroughByS": 24.50600000001038,
+            "minimumMarginM": 0.11058150967608005
+          },
+          "firstFullShadowsS": [
+            26.837600000004947,
+            26.81980000000499
+          ],
+          "firstSimultaneousFullShadowS": 26.837600000004947,
+          "bestMarginPerPairM": [
+            0.008803089571677164,
+            0.008373777369240113
+          ],
+          "bestSimultaneousMarginM": 0.007557090945449561,
+          "countedFloorNotes": 1,
+          "fieldTrace": "05417affcb59939ff71413fe8147d94f66128d13222167216db2befa2934fbd4",
+          "sensorFile": "13d07c04856ee1ca927d8f17fa29570e6ead74cc1c917f1879b94b3b9d8b236f",
+          "sourceTrace": "6bb1368e401181ad34b54d977df9e4831bc854423df1e9f694fe47aad18eee55"
+        }
+      },
+      {
+        "mark": "inner",
+        "acquisition": "SEATED",
+        "pickupEndS": 31.07519999999507,
+        "carry": "AT_SHOOTING_POSE",
+        "carryEndS": 37.476700000019065,
+        "release": "UPWARD_FREE_RELEASE",
+        "shotEndS": 38.167650000042,
+        "observation": {
+          "attempt": "D1",
+          "carryTrace": "8c4f1823a69c0922a80f33315de714d6cfa744a91ce5112ab1735b86fc077771",
+          "sourceNativeSha256": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+          "stationS": 37.476700000019065,
+          "releaseS": 38.167650000042,
+          "minimumBusV": 10.089432730928696,
+          "peakDriveAndSteerCurrentA": [
+            0.8432621445264633,
+            20.0
+          ],
+          "opening": {
+            "firstPossibleS": 38.268650000045355,
+            "fullyThroughByS": 38.30745000004664,
+            "minimumMarginM": 0.0986260828045682
+          },
+          "firstFullShadowsS": [
+            40.74155000012745,
+            40.728850000127025
+          ],
+          "firstSimultaneousFullShadowS": 40.74155000012745,
+          "bestMarginPerPairM": [
+            0.008950410760713073,
+            0.009107888217728514
+          ],
+          "bestSimultaneousMarginM": 0.008576758652064524,
+          "countedFloorNotes": 1,
+          "fieldTrace": "351d1367db743f6543a1f6b2bd81393a33ee8d20f1dd8581bbe79b47fb9342dc",
+          "sensorFile": "13d07c04856ee1ca927d8f17fa29570e6ead74cc1c917f1879b94b3b9d8b236f",
+          "sourceTrace": "ebe12d09af2b6e0d3ff78dfcd203ff6dfc00895f006e48a1e01e3e39e7750060"
+        }
+      },
+      {
+        "mark": "center-high",
+        "acquisition": "SEATED",
+        "pickupEndS": 50.3771500001003,
+        "carry": "AT_SHOOTING_POSE",
+        "carryEndS": 61.49215000015337,
+        "release": "UPWARD_FREE_RELEASE",
+        "shotEndS": 62.38425000018299,
+        "observation": {
+          "attempt": "D1",
+          "carryTrace": "b89b953fc55110c08de463877157ddc61a3144b5975712b759588cd8ca553687",
+          "sourceNativeSha256": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+          "stationS": 61.49215000015337,
+          "releaseS": 62.38425000018299,
+          "minimumBusV": 10.13672659329739,
+          "peakDriveAndSteerCurrentA": [
+            2.5301582739328152,
+            20.0
+          ],
+          "opening": {
+            "firstPossibleS": 62.49195000018656,
+            "fullyThroughByS": 62.52385000018762,
+            "minimumMarginM": 0.13029587714493068
+          },
+          "firstFullShadowsS": [
+            65.06505000027198,
+            64.9542500002683
+          ],
+          "firstSimultaneousFullShadowS": 65.06505000027198,
+          "bestMarginPerPairM": [
+            0.008471167587636583,
+            0.008792367972460517
+          ],
+          "bestSimultaneousMarginM": 0.006776306866886784,
+          "countedFloorNotes": 1,
+          "fieldTrace": "a755ac09fc195d4dfc3f35392d16ab3f73e9056a30979688342930e81339e3c1",
+          "sensorFile": "13d07c04856ee1ca927d8f17fa29570e6ead74cc1c917f1879b94b3b9d8b236f",
+          "sourceTrace": "f6c5fb16990b8e7041981727fb3dd3f60dd482ceeedcf9beb138c61ebe017e6e"
+        }
+      },
+      {
+        "mark": "center-mid",
+        "acquisition": "SEATED",
+        "pickupEndS": 75.4767500002455,
+        "carry": "AT_SHOOTING_POSE",
+        "carryEndS": 86.78925000029952,
+        "release": "UPWARD_FREE_RELEASE",
+        "shotEndS": 87.71170000033014,
+        "observation": {
+          "attempt": "D1",
+          "carryTrace": "f2fb24adbfb122f5ea69fd8249620f9c33e4a7c1a5b29c83eb536ce2d00b7e06",
+          "sourceNativeSha256": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+          "stationS": 86.78925000029952,
+          "releaseS": 87.71170000033014,
+          "minimumBusV": 9.94505562902402,
+          "peakDriveAndSteerCurrentA": [
+            2.4676189175971066,
+            20.0
+          ],
+          "opening": {
+            "firstPossibleS": 87.8218000003338,
+            "fullyThroughByS": 87.85890000033503,
+            "minimumMarginM": 0.12907252130142932
+          },
+          "firstFullShadowsS": [
+            90.51340000042315,
+            90.39060000041907
+          ],
+          "firstSimultaneousFullShadowS": 90.51340000042315,
+          "bestMarginPerPairM": [
+            0.008715569990169245,
+            0.008760792273549232
+          ],
+          "bestSimultaneousMarginM": 0.008063466076711785,
+          "countedFloorNotes": 1,
+          "fieldTrace": "d000b4d3b2d734368ec35a2768a8cbb607090c3407e63fe012d2e7a284a9de14",
+          "sensorFile": "13d07c04856ee1ca927d8f17fa29570e6ead74cc1c917f1879b94b3b9d8b236f",
+          "sourceTrace": "511f4ce684550785adda981ebe47c1e715f414b0235bfffa1f3672a9537a151c"
+        }
+      },
+      {
+        "mark": "center-low",
+        "acquisition": "SEATED",
+        "pickupEndS": 101.2102000003946,
+        "carry": "AT_SHOOTING_POSE",
+        "carryEndS": 113.51820000045336,
+        "release": "UPWARD_FREE_RELEASE",
+        "shotEndS": 114.42045000048331,
+        "observation": {
+          "attempt": "D1",
+          "carryTrace": "825b65abb2579043563b67309ae10fa9be124ca1e9152ca115b7331288dcea21",
+          "sourceNativeSha256": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+          "stationS": 113.51820000045336,
+          "releaseS": 114.42045000048331,
+          "minimumBusV": 10.020403237257607,
+          "peakDriveAndSteerCurrentA": [
+            2.712346863430649,
+            20.0
+          ],
+          "opening": {
+            "firstPossibleS": 114.52965000048694,
+            "fullyThroughByS": 114.5645500004881,
+            "minimumMarginM": 0.14386127809191374
+          },
+          "firstFullShadowsS": [
+            117.62075000058955,
+            117.51205000058594
+          ],
+          "firstSimultaneousFullShadowS": 117.62075000058955,
+          "bestMarginPerPairM": [
+            0.008955403910815788,
+            0.008973710663916695
+          ],
+          "bestSimultaneousMarginM": 0.007426447381877192,
+          "countedFloorNotes": 1,
+          "fieldTrace": "53a9e84e2efe3c80e1451a2a3d605c422656b80b25fd60b1822d02f62dc87882",
+          "sensorFile": "13d07c04856ee1ca927d8f17fa29570e6ead74cc1c917f1879b94b3b9d8b236f",
+          "sourceTrace": "2b9f8999dba852ff4b14e8ce1b1114b0b73a0defcde347f4c46ed63c59d4333d"
+        }
+      }
+    ],
+    "wall": {
+      "survey": "33ae65ac867a18ace8f592648c4b182394cafa90dfd81c21fe05a876c11a61c3",
+      "field": {
+        "panels.json": "179593289b9850e7bc88db0573088657a1143b745040c8b269a5f74ae1594d85",
+        "named-panels.npz": "fcf29b7d726ae323e52f2c76cd4ec47b9d8ad60488f99f7a1fbdc266e8c23bad",
+        "extras.json": "72f92baebb9fc8ed31cc1f6a8a2ebe50cc78eb89bf38ce3c0625336203200e06",
+        "extras.npz": "2cffcdf267edd6c490f87e099f42e706a043382a32294b6d3f52b85857d7d605"
+      },
+      "traces": [
+        "eff94eb2695fc64e43a06cdc19c491536efd57ed30d991f1e8285555d53aa6c8",
+        "621fad41dfc2255bd2ebb82946bd1cb6d3cb15a7c0dd722f091a8cbb52c6c033",
+        "8c1967277d80aab14fd8f35a24f78712c3fc7229e7946f7575c0450b4963ce89"
+      ],
+      "beginS": 0.0,
+      "endS": 10.446149999998848,
+      "intervals": 33189,
+      "clear": false,
+      "closestBound": {
+        "axisGapM": -0.017394451556312605,
+        "part": "fixed bumper end noodle 1 0",
+        "panel": "e414",
+        "timeS": 8.211499999998544
+      },
+      "materialWitness": {
+        "part": "fixed bumper end noodle 1 0",
+        "panel": "e414",
+        "timeS": 8.211499999998544,
+        "insideM": 0.011925765544604644,
+        "fieldPointM": [
+          0.9192928580364172,
+          5.342565490145138,
+          0.09025
+        ],
+        "robotPointM": [
+          0.4650862344553954,
+          0.3605804619807445,
+          0.09025
+        ]
+      }
+    }
+  },
+  "acquisitionControls": [
+    {
+      "condition": "nominal with earlier lift calibration",
+      "r7MassCase": "nominal",
+      "massBudgetSha256": "9d8c37fa140ba33fdb7fddb056eca9ef24f91f488e9ea8c99c6b448ae788bbe0",
+      "nativeSha256": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+      "trace": "9dfcc0c02ef2567a2f267c1ae565a31c674af2d22c8b96680c4cc10a9176558b",
+      "end": 1.838999999999853,
+      "outcome": "UNSUPPORTED_SUBSTRATE_CONTACT"
+    },
+    {
+      "condition": "light with nominal calibration",
+      "r7MassCase": "light",
+      "massBudgetSha256": "9d8c37fa140ba33fdb7fddb056eca9ef24f91f488e9ea8c99c6b448ae788bbe0",
+      "nativeSha256": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+      "trace": "aeb8e4d792b349d01e0d5d3b76f364e7f2760082752e1e393c22d90eef1fcd60",
+      "end": 1.8364999999998532,
+      "outcome": "UNSUPPORTED_SUBSTRATE_CONTACT"
+    },
+    {
+      "condition": "heavy with nominal calibration",
+      "r7MassCase": "heavy",
+      "massBudgetSha256": "9d8c37fa140ba33fdb7fddb056eca9ef24f91f488e9ea8c99c6b448ae788bbe0",
+      "nativeSha256": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+      "trace": "8657d9da68853f6ad92ea7a21e5b78c6a8af304fda33c729737fcd6f39327dce",
+      "end": 1.8504999999998517,
+      "outcome": "UNSUPPORTED_SUBSTRATE_CONTACT"
+    }
+  ]
+}

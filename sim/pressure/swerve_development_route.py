@@ -20,7 +20,7 @@ def receipt(folder):
     return json.loads((folder / "result.json").read_bytes())
 
 
-def run(archive, field, attempt, output):
+def run(archive, field, attempt, output, mass_case=None, outer_feed=None, wall_approach=False):
     """Use the nominal first-shot settings on every NOTE, including after a missed score."""
     settings = json.loads((HERE / "evidence/maxswerve-development-shot.json").read_bytes())["controls"]
     command = settings["commonCommand"]
@@ -34,7 +34,8 @@ def run(archive, field, attempt, output):
         pickup, carry, release, flight = (output / (mark + "-" + k) for k in ("pickup", "carry", "shot", "field"))
         if previous_release is None:
             run_stage("varied_floor_start", "--archive", archive, "--output", pickup, "--carry-output", carry,
-                      "--roster", DEVELOPMENT_STARTS, "--attempt", attempt, "--drivetrain", "maxswerve")
+                      "--roster", DEVELOPMENT_STARTS, "--attempt", attempt, "--drivetrain", "maxswerve",
+                      *(("--r7-mass-case", mass_case) if mass_case else ()), *(("--wall-approach",) if wall_approach else ()))
         else:
             run_stage("swerve_next_note", "--archive", archive, "--output", pickup, "--carry-output", carry,
                       "--roster", DEVELOPMENT_STARTS, "--release", previous_release, "--pickup", previous_pickup,
@@ -51,7 +52,7 @@ def run(archive, field, attempt, output):
         prior = ["--previous-release", previous_release, "--roster", DEVELOPMENT_STARTS] if previous_release else []
         run_stage("wing_note_release", "--archive", archive, "--pickup", pickup, "--delivery", carry,
                   "--output", release, "--dt", settings["dt"], "--grid", settings["grid"], "--segments", 16384,
-                  "--duty", command["launcherDutyLimit"], "--pinch-duty", command["pinchDuty"],
+                  "--duty", command["launcherDutyLimit"], "--pinch-duty", outer_feed if mark=="outer" and outer_feed is not None else command["pinchDuty"],
                   "--target-rpm", command["targetRpm"], "--pitch-trim-deg", command["pitchTrimDeg"],
                   "--height-trim-mm", command["heightTrimMm"], "--align-seconds", command["rampS"],
                   "--first-mark", "middle", "--field-yaw-deg", 245, *prior)
@@ -79,5 +80,8 @@ if __name__ == "__main__":
     parser.add_argument("field", type=Path)
     parser.add_argument("attempt", choices=("D1", "D2"))
     parser.add_argument("output", type=Path)
+    parser.add_argument("--r7-mass-case", choices=("light","nominal","heavy"))
+    parser.add_argument("--wall-approach", action="store_true")
+    parser.add_argument("--outer-feed", type=float, help="Outer wing feed duty for a development trial")
     args = parser.parse_args()
-    run(args.archive, args.field, args.attempt, args.output)
+    run(args.archive, args.field, args.attempt, args.output, args.r7_mass_case, args.outer_feed, args.wall_approach)
