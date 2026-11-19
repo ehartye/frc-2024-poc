@@ -120,3 +120,23 @@ python -B sim/pressure/wing_note_release.py --pickup $Pickup --archive $Articula
 python -B sim/pressure/run_speaker_field.py $Shot $Field $Flight --dt .0001 --nodes 192 --first-mark middle --field-yaw-deg 245 --trace-every-step --horizon 5
 python -B sim/pressure/swerve_shot_observation.py $Pickup $Carry $Shot $Flight $Sensor
 ```
+
+## Second floor NOTE and shot timestep check
+
+From the 50 µs first release, the swerve chassis drove to the outer wing while lowering the mechanism. It turned toward the nominal mark, staged 0.85 m short, then used the intake loads to correct its final approach. Both development starts used the same outer NOTE position. The robot returned to the original shooting pose carrying this second, distinct NOTE.
+
+| Simulated time (s) | D1 | D2 |
+| --- | ---: | ---: |
+| First release starting the return | 10.5661 | 10.7259 |
+| Outer NOTE seated | 17.3031 | 17.4724 |
+| Outer NOTE at shooting pose | 23.6855 | 23.8643 |
+| First NOTE paired-sensor event with a 25 µs shot step | 14.0969 | 13.7570 |
+
+The last row is a separate refinement of the **first** shot. The field step stayed at 100 µs. The two sensor times moved by +1.182 s and −0.457 s relative to the 50 µs shot runs. The second NOTE has no release or counter event in these runs. The formal six-NOTE campaign remains at zero starts. [Development measurements and trace digests](evidence/maxswerve-second-wing-development.json)
+
+Use the first pickup and release from the same attempt, its original archive and the development roster. The return verifier checks the robot, rotor, shear, battery and source-energy handoff, the clock, the distinct floor NOTE and its resting placement. Continue the field simulation of the first released NOTE independently on that clock.
+
+```powershell
+python -B sim/pressure/swerve_next_note.py --pickup $Pickup --release $Shot --archive $ArticulatedRobot --roster $Roster --next-mark outer --output $OuterPickup --carry-output $OuterCarry
+python -B sim/pressure/verify_swerve_carry.py $OuterPickup $OuterCarry --release $Shot --roster $Roster
+```

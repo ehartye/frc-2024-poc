@@ -137,7 +137,8 @@ class SwervePickup(DeliveryPlant):
             vy = np.clip(.08*(positive-negative), -.12, .12)
             if min(negative, positive) < .02:
                 vx = min(vx, .07)
-        turn = np.clip(-3.*math.atan2(s, c), -.9, .9)
+        heading_error = angle_error(self.pickup_heading, yaw) if hasattr(self, "pickup_heading") else -math.atan2(s, c)
+        turn = np.clip(3.*heading_error, -.9, .9)
         return self.module_duties(vx, vy, turn), actuator, pinch, launcher
 
     def carry_controls(self, belt, launcher_duty):

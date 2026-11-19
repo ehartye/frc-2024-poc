@@ -10,17 +10,59 @@ from mission_runtime import verify_runtime_chain
 from run_axial_shear_lift import ROOT, digest, load
 
 
-def verify(pickup_dir, carry_dir):
+def check_departure(pickup, release_dir, roster):
+    """Reconcile the released robot and the next resting NOTE on the same field clock."""
+    from speaker_trial_inputs import FRAME, local_offset, read_attempt
+    from wing_field_frame import piece_id
+    source = load(release_dir/"result.json")
+    trace = release_dir/"trace.jsonl"
+    if (source["outcome"] != "UPWARD_FREE_RELEASE" or source.get("drivetrain") != "maxswerve"
+            or digest(trace) != source["traceSha256"] or pickup["firstReleaseTrace"] != source["traceSha256"]
+            or source["rosterSha256"] != digest(roster) or source["firstMark"] != FRAME.first_mark
+            or source["fieldYawDeg"] != FRAME.yaw_degrees
+            or any(source[k] != pickup[k] for k in ("nativeSha256","rosterSha256","attempt","firstMark","fieldYawDeg"))):
+        raise ValueError("Release or field setup differs from the pickup")
+    marks = pickup["collectedMarks"]
+    if (not marks or marks[:-1] != source["collectedMarks"] or len(set(marks)) != len(marks)
+            or pickup["pieceId"] != piece_id(marks[-1])):
+        raise ValueError("The next pickup must add a distinct NOTE")
+    with trace.open("rb") as stream:
+        for line in stream:
+            last_line = line
+    last = json.loads(last_line)
+    if (pickup["initialQ"][:-7] != last["q"][:-7] or pickup["initialV"][:-6] != last["v"][:-6]
+            or pickup["start"] != source["end"] or pickup["start"] != last["time"]
+            or pickup["initialRotors"] != last["externalRotors"] or pickup["initialShearM"] != last["shearM"]
+            or pickup["initialBusV"] != last["busV"] or pickup["initialSourceJ"] != last["sourceJ"]
+            or last["wheelNormalN"] or last["beltNormalN"] or any(last["shearM"])):
+        raise ValueError("Discontinuous swerve robot at the released NOTE")
+    nominal = FRAME.to_local(FRAME.mark(marks[-1]))[:2]
+    waiting = nominal + local_offset(read_attempt(roster,pickup["attempt"]),marks[-1])
+    floor = load(ROOT/"sim/pressure/evidence/native-lift-20261118/native-pressure-lift-contract.json")
+    mass = load(ROOT/"sim/component-launcher/six-drive-config.json")["pieceMassKg"]
+    expected = [*waiting,.0254-mass*9.80665/floor["floorStiffnessNpm"],1.,0.,0.,0.]
+    if (not np.allclose(pickup["initialQ"][-7:],expected,atol=1e-12,rtol=0)
+            or any(pickup["initialV"][-6:]) or not np.allclose(nominal,pickup["targetLocalXY"],atol=1e-12,rtol=0)):
+        raise ValueError("Next NOTE differs from its registered resting placement")
+
+
+def verify(pickup_dir, carry_dir, *, release_dir=None, roster=None):
     pickup = load(pickup_dir/"result.json")
     carry = load(carry_dir/"result.json")
     verify_runtime_chain([pickup, carry])
     layout = ROOT/"cad/drivetrain/maxswerve-layout.json"
-    if (pickup["schema"] != "maxswerve-first-wing-acquisition/1" or pickup["outcome"] != "SEATED"
+    if (release_dir is None) != (roster is None):
+        raise ValueError("Provide both the preceding release and placement roster for a later NOTE")
+    expected_schema = "maxswerve-first-wing-acquisition/1"
+    if release_dir is not None:
+        expected_schema = "maxswerve-next-wing-acquisition/1"
+        check_departure(pickup,release_dir,roster)
+    if (pickup["schema"] != expected_schema or pickup["outcome"] != "SEATED"
             or carry["schema"] != "maxswerve-wing-note-delivery/1" or carry["outcome"] != "AT_SHOOTING_POSE"
             or pickup["layoutSha256"] != digest(layout)
             or pickup["nativeSha256"] != load(layout)["privateFusionArchiveSha256"]
             or any(pickup[k] != carry[k] for k in ("nativeSha256", "attempt", "rosterSha256", "pieceId", "grid", "dt"))
-            or carry["acquisitionTrace"] != pickup["trace"]):
+            or pickup["collectedMarks"] != carry["collectedMarks"] or carry["acquisitionTrace"] != pickup["trace"]):
         raise ValueError("Mismatched robot, setup, piece or stage outcome")
     paths = [p/"trace.jsonl" for p in (pickup_dir, carry_dir)]
     if any(digest(p) != s["trace"] for p, s in zip(paths, (pickup, carry))):
@@ -68,5 +110,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("pickup", type=Path)
     parser.add_argument("carry", type=Path)
+    parser.add_argument("--release",type=Path)
+    parser.add_argument("--roster",type=Path)
     args = parser.parse_args()
-    print(json.dumps(verify(args.pickup, args.carry), indent=2, allow_nan=False))
+    print(json.dumps(verify(args.pickup, args.carry, release_dir=args.release, roster=args.roster), indent=2, allow_nan=False))
