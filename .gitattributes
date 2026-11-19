@@ -136,3 +136,5 @@ sim/pressure/run_turning_lift.py -text
 sim/pressure/turning_plant.py -text
 sim/pressure/turning_contact.py -text
 sim/pressure/turning_sweep.py -text
+*.mp4 binary
+*.jpg binary
