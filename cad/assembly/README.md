@@ -1,5 +1,11 @@
 # 2024 integrated component CAD candidate
 
+<!-- cad-still -->
+[![Connected floor-pose assembly](../../docs/robot/cad/assembly.png)](https://ehartye.github.io/frc-2024-poc/robot/cad/)
+
+**Project CAD · Connected floor-pose assembly.** Six-wheel baseline with project-authored solids and supplier-sized envelopes. The swerve redesign is in development. [Source STEP · b08b08a8e7](connected-floor.step) · [Rotate the model](https://ehartye.github.io/frc-2024-poc/robot/cad/)
+<!-- /cad-still -->
+
 Run `python cad/assembly/build_robot.py`. Output: `artifacts/whole-robot/original-component-assembly.step`, `a2-layout.png`, and `report.json`.
 
 This joins the source-sized AM14U4 six-wheel drivetrain and electrical package with four original shooter cartridge representations. It replaces the old 710 mm frame and 600 mm track with measured 719.074 by 711.2 mm chassis and 579.60768 mm track. Fixed backing/noodle candidates follow the new perimeter: nominal19.05mm backing,127mm height,two63.5mm noodles,top185.5mm plus1.5mm cloth allowance. Flat floor-tangent NOTE underpass has only6.2mm nominal margin;5degree pitched NOTE fails. This is not bumper support/corner construction or rules acceptance. No broad bumper gap is proposed.

@@ -1,5 +1,11 @@
 # Centered floor-entry experiment
 
+<!-- cad-still -->
+[![Connected floor-pose assembly](../../docs/robot/cad/assembly.png)](https://ehartye.github.io/frc-2024-poc/robot/cad/)
+
+**Project CAD · Connected floor-pose assembly.** Six-wheel baseline with project-authored solids and supplier-sized envelopes. The swerve redesign is in development. [Source STEP · b08b08a8e7](../../cad/assembly/connected-floor.step) · [Rotate the model](https://ehartye.github.io/frc-2024-poc/robot/cad/)
+<!-- /cad-still -->
+
 Run `python sim/acquisition/ground_entry.py --output artifacts/a-new-ground-entry-run`.
 
 This model starts a flat NOTE at rest in the world, not already held in the robot. Robot approach/deceleration is prescribed and its contact work is accounted separately. Two pinch rotors, sampled centered belt occupancy, uncalibrated friction/preload and regularized ground friction evolve continuously. The ideal dissipative brake is not a selected controller specification. Lateral/yaw, deformation and lift retention remain absent.

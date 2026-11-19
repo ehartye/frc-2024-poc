@@ -1,5 +1,11 @@
 # Headless 2024 Maple arena integration
 
+<!-- cad-still -->
+[![Connected floor-pose assembly](../../docs/robot/cad/assembly.png)](https://ehartye.github.io/frc-2024-poc/robot/cad/)
+
+**Project CAD · Connected floor-pose assembly.** Six-wheel baseline with project-authored solids and supplier-sized envelopes. The swerve redesign is in development. [Source STEP · b08b08a8e7](../../cad/assembly/connected-floor.step) · [Rotate the model](https://ehartye.github.io/frc-2024-poc/robot/cad/)
+<!-- /cad-still -->
+
 This module runs the actual upstream `Arena2024Crescendo`, pinned to
 `1b1e8ea7278de01d40a5ea14dffbaaf13381512a`, using WPILib 2026.2.1 runtime APIs.
 The game world is 2024; this is not official full-field CAD or a scoring-qualified simulator.

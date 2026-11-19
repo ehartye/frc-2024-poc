@@ -1,5 +1,11 @@
 # Finite lift/pitch actuator mechanics interface
 
+<!-- cad-still -->
+[![Connected floor-pose assembly](../../docs/robot/cad/assembly.png)](https://ehartye.github.io/frc-2024-poc/robot/cad/)
+
+**Project CAD · Connected floor-pose assembly.** Six-wheel baseline with project-authored solids and supplier-sized envelopes. The swerve redesign is in development. [Source STEP · b08b08a8e7](../../cad/assembly/connected-floor.step) · [Rotate the model](https://ehartye.github.io/frc-2024-poc/robot/cad/)
+<!-- /cad-still -->
+
 This standalone model exposes real generalized accelerations from finite motor torque and external loads. It does not prescribe a quintic trajectory as achieved motion, animate a completed lift mission, or prove contact persistence. Existing models and geometry are unchanged.
 
 ## Coordinates and source boundary

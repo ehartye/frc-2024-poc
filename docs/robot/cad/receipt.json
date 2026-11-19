@@ -1,0 +1,28 @@
+{
+  "schema": "agent-frc/cad-still@1",
+  "source": "cad/assembly/connected-floor.step",
+  "sourceSha256": "b08b08a8e771cb1e811bd9850988b49bdb8ed371df3127caf9e59c7f4a5fe616",
+  "imageSha256": "e2bd5548feedb28c19c5c0daaec9f9509cea62bf8e0119ed80b184189cae4898",
+  "meshSha256": "e9f6928eae7f4464a55316e2d30ba139506ac96f94763974ee750c70ea6c7b70",
+  "solids": 714,
+  "triangles": 319396,
+  "units": "mm",
+  "nativeBounds": [
+    -442.087,
+    450.7396270711403,
+    -438.15,
+    438.15,
+    9.999999406318238e-08,
+    968.315
+  ],
+  "meshBounds": [
+    -442.0550231933594,
+    450.7396240234375,
+    -438.1180419921875,
+    438.1180419921875,
+    9.999999406318238e-08,
+    968.3150024414062
+  ],
+  "chordMm": 0.18,
+  "angleRad": 0.18
+}
