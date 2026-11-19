@@ -9,6 +9,7 @@ import numpy as np
 from second_wing_pickup import ReturnPlant, angle_error, build
 from run_axial_shear_lift import digest
 from wing_field_frame import WING_MARKS_INCHES
+from mission_runtime import runtime_versions
 
 
 class StationHold(ReturnPlant):
@@ -81,7 +82,7 @@ def run(args):
             stream.write(json.dumps(row,allow_nan=False)+"\n")
     if max_drift>.035 or max_heading>.012:
         raise ValueError("Unloaded robot left the shooting pose")
-    result=dict(schema="post-release-station-hold/1",firstReleaseTrace=shot["traceSha256"],
+    result=dict(schema="post-release-station-hold/1",firstReleaseTrace=shot["traceSha256"],runtime=runtime_versions(),
                 nativeSha256=shot["nativeSha256"],trace=digest(trace),traceStride=1,
                 start=last["time"],end=d.time,dt=args.dt,grid=args.grid,
                 initialRobotQ=last["q"][:-7],initialRobotV=last["v"][:-6],

@@ -6,6 +6,7 @@ from pathlib import Path
 import numpy as np
 
 from launcher_handoff import RaisedFeed
+from mission_runtime import runtime_versions
 from run_axial_shear_lift import digest, load
 from second_wing_pickup import angle_error, build_seated
 from wing_note_delivery import DeliveryPlant, restore, tail
@@ -61,7 +62,10 @@ class ShotPlant(DeliveryPlant):
 def run(args):
     if not 0.<args.duty<=1.:
         raise ValueError("Invalid launcher duty")
-    p, pins = build_seated(args, ShotPlant, args.segments)
+    phase = args.ring_phase_deg
+    if not 0. <= phase < 360. / args.segments:
+        raise ValueError("Use a ring phase within one sampling interval")
+    p, pins = build_seated(args, ShotPlant, args.segments, ring_phase_deg=phase)
     p.target_rpm=args.target_rpm
     p.align_seconds=args.align_seconds
     if not np.isfinite(p.align_seconds) or not 0.<=p.align_seconds<=2.:
@@ -131,7 +135,8 @@ def run(args):
                 outcome=outcome,traceSha256=digest(trace),grid=args.grid,dt=args.dt,segments=args.segments,duty=args.duty,
                 firstMark=args.first_mark,fieldYawDeg=args.field_yaw_deg,pinchDuty=p.launcher["pinchDuty"],
                 targetRpm=p.target_rpm,pitchTrimDeg=p.pitch_trim,heightTrimMm=p.height_trim,
-                alignmentDurationS=p.align_seconds)
+                alignmentDurationS=p.align_seconds, ringPhaseDeg=phase,
+                runtime=runtime_versions())
     result["collectedMarks"]=rc.get("collectedMarks",[args.first_mark] if rc.get("fieldStation") else [args.first_mark,"middle"])
     if "attempt" in rc:
         result.update(attempt=rc["attempt"], rosterSha256=rc["rosterSha256"])
@@ -143,9 +148,11 @@ if __name__=="__main__":
     parser=argparse.ArgumentParser(description=__doc__)
     for name in ("pickup","archive","delivery","output"):
         parser.add_argument("--"+name,type=Path,required=True)
-    parser.add_argument("--dt",type=float,choices=(.0001,.00005),default=.0001)
+    parser.add_argument("--dt",type=float,choices=(.0001,.00005,.000025),default=.0001)
     parser.add_argument("--grid",type=int,choices=(256,512,1024,2048),default=512)
     parser.add_argument("--segments",type=int,choices=(4096,8192,16384),default=8192)
+    parser.add_argument("--ring-phase-deg",type=float,default=0.,
+                        help="Rotate the contact samples around the same physical NOTE for a numerical check")
     parser.add_argument("--duty",type=float,default=.72)
     parser.add_argument("--pinch-duty",type=float,help="Override the nominal powered intake feed duty")
     parser.add_argument("--target-rpm",type=float,help="Hold all four wheels within 2.5 percent for three control samples before feeding")

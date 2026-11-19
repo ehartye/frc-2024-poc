@@ -1,0 +1,302 @@
+{
+  "schema": "speaker-first-release-runtime-comparison/1",
+  "basis": "modeled development",
+  "formalAttempts": 0,
+  "runtimeLockSha256": "ae8bbe85c745e97c3a393545aa9ef1eda9bbe52d20f987a57ba1e945793f371d",
+  "archivedReleaseTrace": "2b65cf164a454630ba0afe1b4467113656aee06f5dc1e92b99c5e7b1925bcb79",
+  "archivedNativeWheelLowerBoundMm": 0.08675958285513737,
+  "archivedVsLocked": {
+    "sourceDeliveryTrace": "6a61cd02bb4ae8afa324c78131887e98ee999666235a83cf5d2e5dc8e69fe914",
+    "traces": [
+      "2b65cf164a454630ba0afe1b4467113656aee06f5dc1e92b99c5e7b1925bcb79",
+      "2b65cf164a454630ba0afe1b4467113656aee06f5dc1e92b99c5e7b1925bcb79"
+    ],
+    "commonSamples": 6144,
+    "commonPeriodS": 5e-05,
+    "maxCenterDeltaThroughFirstTouchMm": 0.0,
+    "firstCenterDeltaAtLeastPointOneMmS": null,
+    "maxCenterDeltaOverCommonTimeMm": 0.0,
+    "peakWheelLoadN": [
+      1826.2245617355072,
+      1826.2245617355072
+    ]
+  },
+  "archivedVsAlternate": {
+    "sourceDeliveryTrace": "6a61cd02bb4ae8afa324c78131887e98ee999666235a83cf5d2e5dc8e69fe914",
+    "traces": [
+      "2b65cf164a454630ba0afe1b4467113656aee06f5dc1e92b99c5e7b1925bcb79",
+      "016406025e04203d511fddb870d2a34da11ea4788d5a7b98f3582008a993b6c1"
+    ],
+    "commonSamples": 6144,
+    "commonPeriodS": 5e-05,
+    "maxCenterDeltaThroughFirstTouchMm": 3.0282846668030173e-12,
+    "firstCenterDeltaAtLeastPointOneMmS": 16.431750000016265,
+    "maxCenterDeltaOverCommonTimeMm": 213.5016169981688,
+    "peakWheelLoadN": [
+      1826.2245617355072,
+      5443.500058938081
+    ]
+  },
+  "alternateRepeat": {
+    "sourceDeliveryTrace": "6a61cd02bb4ae8afa324c78131887e98ee999666235a83cf5d2e5dc8e69fe914",
+    "traces": [
+      "016406025e04203d511fddb870d2a34da11ea4788d5a7b98f3582008a993b6c1",
+      "016406025e04203d511fddb870d2a34da11ea4788d5a7b98f3582008a993b6c1"
+    ],
+    "commonSamples": 6384,
+    "commonPeriodS": 5e-05,
+    "maxCenterDeltaThroughFirstTouchMm": 0.0,
+    "firstCenterDeltaAtLeastPointOneMmS": null,
+    "maxCenterDeltaOverCommonTimeMm": 0.0,
+    "peakWheelLoadN": [
+      5443.500058938081,
+      5443.500058938081
+    ]
+  },
+  "cases": [
+    {
+      "case": "locked nominal replay",
+      "deliveryTrace": "6a61cd02bb4ae8afa324c78131887e98ee999666235a83cf5d2e5dc8e69fe914",
+      "releaseTrace": "2b65cf164a454630ba0afe1b4467113656aee06f5dc1e92b99c5e7b1925bcb79",
+      "fieldTrace": "f444be8f3a4f34366ac68d78be655371dd84874062641ae1e5fc95c0e7b7042a",
+      "runtime": {
+        "python": "3.13.12",
+        "mujoco": "4.0.1",
+        "numpy": "2.5.5"
+      },
+      "dtS": 5e-05,
+      "ringPhaseDeg": 0.0,
+      "startS": 16.17250000000766,
+      "firstWheelContactS": 16.42830000001615,
+      "endS": 16.479700000017857,
+      "wholeOpeningS": 16.62390000001752,
+      "simultaneousBeamS": 19.223500000011462,
+      "beamCount": 1,
+      "minSampledWheelShellGapMm": 0.17966019695451507
+    },
+    {
+      "case": "alternate nominal replay",
+      "deliveryTrace": "6a61cd02bb4ae8afa324c78131887e98ee999666235a83cf5d2e5dc8e69fe914",
+      "releaseTrace": "016406025e04203d511fddb870d2a34da11ea4788d5a7b98f3582008a993b6c1",
+      "fieldTrace": "1af9bbe05eb9cfe142d9d0df77e690c9967b996422651580063a2bbc33e7da7b",
+      "runtime": {
+        "python": "3.13.12",
+        "mujoco": "3.14.0",
+        "numpy": "2.5.3"
+      },
+      "dtS": 5e-05,
+      "ringPhaseDeg": 0.0,
+      "startS": 16.17250000000766,
+      "firstWheelContactS": 16.42830000001615,
+      "endS": 16.491700000018255,
+      "wholeOpeningS": null,
+      "simultaneousBeamS": null,
+      "beamCount": 0,
+      "minSampledWheelShellGapMm": -0.6296672640333725
+    },
+    {
+      "case": "alternate half timestep",
+      "deliveryTrace": "6a61cd02bb4ae8afa324c78131887e98ee999666235a83cf5d2e5dc8e69fe914",
+      "releaseTrace": "5f98df43ef01fa05251eace605d11ea9794e554ce32866c0ff54fa317316c009",
+      "fieldTrace": "141c73007fbf1371d906abcdd695c100b982a98ee28b31ed95a8232f5969be0b",
+      "runtime": {
+        "python": "3.13.12",
+        "mujoco": "3.14.0",
+        "numpy": "2.5.3"
+      },
+      "dtS": 2.5e-05,
+      "ringPhaseDeg": 0.0,
+      "startS": 16.17250000000766,
+      "firstWheelContactS": 16.42832500001615,
+      "endS": 16.49127500001824,
+      "wholeOpeningS": null,
+      "simultaneousBeamS": null,
+      "beamCount": 0,
+      "minSampledWheelShellGapMm": -0.6977610283657043
+    },
+    {
+      "case": "alternate half sample spacing",
+      "deliveryTrace": "6a61cd02bb4ae8afa324c78131887e98ee999666235a83cf5d2e5dc8e69fe914",
+      "releaseTrace": "d60dcb395c9e6bf6687ef1f2de5bd58a790e0a2a772376e2ad1eb15b59a89635",
+      "fieldTrace": "50bcb868ff791a00fe42a898d8ced75a366bfbbff6410c101aa5c99ab30e64e4",
+      "runtime": {
+        "python": "3.13.12",
+        "mujoco": "3.14.0",
+        "numpy": "2.5.3"
+      },
+      "dtS": 5e-05,
+      "ringPhaseDeg": 0.010986328125,
+      "startS": 16.17250000000766,
+      "firstWheelContactS": 16.42830000001615,
+      "endS": 16.491700000018255,
+      "wholeOpeningS": null,
+      "simultaneousBeamS": null,
+      "beamCount": 0,
+      "minSampledWheelShellGapMm": -0.625444358108382
+    },
+    {
+      "case": "locked half timestep",
+      "deliveryTrace": "6a61cd02bb4ae8afa324c78131887e98ee999666235a83cf5d2e5dc8e69fe914",
+      "releaseTrace": "6c694f7027cc82cbbd1959f248dee8408ddbaa43b3876383f7d8d0946e10014d",
+      "fieldTrace": "bc986ae599bdf3556b9adf0f9fe94fc48dc5ceeb12dd1c830f217c7f94127ef4",
+      "runtime": {
+        "python": "3.13.12",
+        "mujoco": "4.0.1",
+        "numpy": "2.5.5"
+      },
+      "dtS": 2.5e-05,
+      "ringPhaseDeg": 0.0,
+      "startS": 16.17250000000766,
+      "firstWheelContactS": 16.42832500001615,
+      "endS": 16.47977500001786,
+      "wholeOpeningS": 16.624675000017522,
+      "simultaneousBeamS": 18.561675000013008,
+      "beamCount": 1,
+      "minSampledWheelShellGapMm": 0.16364925335179237
+    },
+    {
+      "case": "locked half sample spacing",
+      "deliveryTrace": "6a61cd02bb4ae8afa324c78131887e98ee999666235a83cf5d2e5dc8e69fe914",
+      "releaseTrace": "6fec774a7d7bf5bd4b0c9f671328c225a478373743b305dcb6e36fe80948519f",
+      "fieldTrace": "44da39f442d988aa5ae662f2d1451dd10f4819dacef3e15587a074d03f29d14a",
+      "runtime": {
+        "python": "3.13.12",
+        "mujoco": "4.0.1",
+        "numpy": "2.5.5"
+      },
+      "dtS": 5e-05,
+      "ringPhaseDeg": 0.010986328125,
+      "startS": 16.17250000000766,
+      "firstWheelContactS": 16.42830000001615,
+      "endS": 16.479700000017857,
+      "wholeOpeningS": 16.62390000001752,
+      "simultaneousBeamS": 19.454400000010924,
+      "beamCount": 1,
+      "minSampledWheelShellGapMm": 0.18022851921720928
+    },
+    {
+      "case": "D1 locked encoder pickup through first shot",
+      "deliveryTrace": "56b3f19db3b289b48b517c446d7e4f1767dcf6279f684e8321e97fe7027261a5",
+      "releaseTrace": "1fcf467c6f3a268e25a1e50ba95661af94eb403c29b3fe3972a04b5169fabd6c",
+      "fieldTrace": "c8cf765fc5c725fa8fe2509ede5caa1609dca26520485a8c564636596ad5b2ea",
+      "runtime": {
+        "python": "3.13.12",
+        "mujoco": "4.0.1",
+        "numpy": "2.5.5"
+      },
+      "dtS": 5e-05,
+      "ringPhaseDeg": 0.0,
+      "startS": 10.81850000000173,
+      "firstWheelContactS": 11.074300000001134,
+      "endS": 11.126150000001013,
+      "wholeOpeningS": 11.272950000000671,
+      "simultaneousBeamS": 14.21714999999381,
+      "beamCount": 1,
+      "minSampledWheelShellGapMm": -0.1235088603594221
+    },
+    {
+      "case": "D1 locked pickup and common loaded alignment",
+      "deliveryTrace": "56b3f19db3b289b48b517c446d7e4f1767dcf6279f684e8321e97fe7027261a5",
+      "releaseTrace": "85ce1c85debdd3a14073b6358be83de6c4e64f86d4e4b02a466ad2410c997853",
+      "fieldTrace": "eb23545591c6f7edac685e1e92e7f7a436682526306056cc6f581bf9d6d911c0",
+      "runtime": {
+        "python": "3.13.12",
+        "mujoco": "4.0.1",
+        "numpy": "2.5.5"
+      },
+      "dtS": 5e-05,
+      "ringPhaseDeg": 0.0,
+      "startS": 10.81850000000173,
+      "firstWheelContactS": 11.429000000000308,
+      "endS": 11.480400000000188,
+      "wholeOpeningS": 11.623499999999854,
+      "simultaneousBeamS": 15.175799999991575,
+      "beamCount": 1,
+      "minSampledWheelShellGapMm": 0.08467703934134363
+    },
+    {
+      "case": "D2 locked encoder pickup through first shot",
+      "deliveryTrace": "ac469f703f2e9312cb8bc92c84f7d60338a46b9c1327c0038f58847228e921e4",
+      "releaseTrace": "9ec0a6ed596edfaec18002ec3e4d3500ff73bf2d74d2923bfa2ad57dec5a6d82",
+      "fieldTrace": "b57800d65cd2d5c2a36b9438bdd26c0992ac7550db0fc1e6ee33926a19f80835",
+      "runtime": {
+        "python": "3.13.12",
+        "mujoco": "4.0.1",
+        "numpy": "2.5.5"
+      },
+      "dtS": 5e-05,
+      "ringPhaseDeg": 0.0,
+      "startS": 10.830500000001745,
+      "firstWheelContactS": 11.086250000001149,
+      "endS": 11.138050000001028,
+      "wholeOpeningS": 11.284450000000687,
+      "simultaneousBeamS": 13.324249999995933,
+      "beamCount": 1,
+      "minSampledWheelShellGapMm": -0.08664106763378143
+    },
+    {
+      "case": "D2 locked pickup and common loaded alignment",
+      "deliveryTrace": "ac469f703f2e9312cb8bc92c84f7d60338a46b9c1327c0038f58847228e921e4",
+      "releaseTrace": "00d457d9a54f3a46b219bfc5a1ac893e07ddeb5effe4686b516cd5004149e597",
+      "fieldTrace": "9aa94d2bb1adb23bf2f831a8ba4bbb8c54ee05ebf2974af98d102c507ea39ab0",
+      "runtime": {
+        "python": "3.13.12",
+        "mujoco": "4.0.1",
+        "numpy": "2.5.5"
+      },
+      "dtS": 5e-05,
+      "ringPhaseDeg": 0.0,
+      "startS": 10.830500000001745,
+      "firstWheelContactS": 11.440950000000322,
+      "endS": 11.492300000000203,
+      "wholeOpeningS": 11.63499999999987,
+      "simultaneousBeamS": null,
+      "beamCount": 0,
+      "minSampledWheelShellGapMm": 0.03983775393503208
+    }
+  ],
+  "commonAlignment": {
+    "launcherDutyLimit": 0.8,
+    "pinchDuty": 0.23,
+    "targetRpm": 3950,
+    "pitchTrimDeg": -0.117,
+    "heightTrimMm": 0.84,
+    "rampS": 0.3
+  },
+  "development": {
+    "D1": {
+      "approachIntervals": 47978,
+      "unresolvedFieldRouteIntervals": 0,
+      "pickupNativeBoundMm": 0.015259804032644967,
+      "pickupRefinementSha256": "886e2be482123f952aa177e7dbd7cba1c544d169f4d132dc3daafb3360fa63b1",
+      "carryNativeSweepSha256": "b1bcf79bad5794650a7a8fe858b07787aed9b720bc58b7b8103b6c89df9d9089",
+      "shotNativeBoundMm": 0.06705266707427339,
+      "shotRefinementSha256": "7bee55e98d564dda3035afd61e639a85ede7b17cc358e4619a55c262cdafbbae",
+      "unresolvedFlightRobotIntervals": 0,
+      "minimumCertifiedFlightGapMm": 21.350809956433523,
+      "flightClearanceSha256": "46962e97123dcd2b9557fb84daaa3823ecf237dbc5d08acfd2ef20e240ce5d8b",
+      "routeSha256": "5d4915f459ad48c22c14aef36f633011a0fa3cb119f93dac6633ea56a6f269f2",
+      "nextOuterPickupS": 18.031900000000977,
+      "nextPickupOutcome": "SEATED",
+      "qualifiedFirstScores": 1,
+      "verifiedFirstScoreSha256": "a1cd20b07c278988ffb96b07c49ba13b54f6fe82aab85d0c1c12297e0bf1ad8e",
+      "scoreS": 15.175799999991575
+    },
+    "D2": {
+      "approachIntervals": 48003,
+      "unresolvedFieldRouteIntervals": 0,
+      "pickupNativeBoundMm": 0.010360973040203574,
+      "pickupRefinementSha256": "a4c26eb6ffd0cc958637195ae3625ff5d87dce29d045467a2d56fab3a7d5ea67",
+      "carryNativeSweepSha256": "e55976e12b9411038b22090a581c67f8963627cfbf5ceee6189929c8add24893",
+      "shotNativeBoundMm": 0.022216046989907208,
+      "shotRefinementSha256": "3dee1c7202ebff6a12ada0440fbe474dde99bdc3e3b020517b92fc33b878273a",
+      "unresolvedFlightRobotIntervals": 1823,
+      "minimumCertifiedFlightGapMm": null,
+      "flightClearanceSha256": "1af12a8f43a5f6d2c8f2cc22844c37e0f226b8f750e74c38fd36b9ec800ae9b9",
+      "routeSha256": "01f84e0e3452eaa9e4312b74f9eef3e9e34cce0e792f5353aea7ea631c986434",
+      "nextOuterPickupS": 18.045300000000946,
+      "nextPickupOutcome": "SEATED",
+      "qualifiedFirstScores": 0
+    }
+  }
+}

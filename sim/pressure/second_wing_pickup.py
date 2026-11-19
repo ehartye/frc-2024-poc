@@ -8,6 +8,7 @@ import mujoco
 import numpy as np
 
 from launcher_handoff import RaisedFeed
+from mission_runtime import runtime_versions
 from native_launcher_quadrature import motor_query
 from retained_route import short_brake, target
 from run_axial_shear_lift import ROOT, EVIDENCE, load, digest
@@ -200,7 +201,7 @@ class ReturnPlant(RaisedFeed):
         return [c*dx+s*dy, -s*dx+c*dy], yaw, c*d.qvel[0]+s*d.qvel[1]
 
 
-def build_seated(args, plant_type, segments):
+def build_seated(args, plant_type, segments, *, ring_phase_deg=0.):
     """Lift the first acquired floor NOTE into the combined drive and launcher model."""
     pins = load(EVIDENCE/"turning-lift-20261118/refined-end-to-end.json")["freshInputDigests"]
     stop_path = args.pickup/"stop/receipt.json"
@@ -214,7 +215,7 @@ def build_seated(args, plant_type, segments):
                  clock=acquired["timeS"], busV=packet["trace"][-1]["busV"])
     source = load(ROOT/"sim/mujoco/evidence/launcher-quadrature-verification-20261118.json")
     plant = plant_type(acquired, state, args.dt, args.grid, segments,
-                       source["runs"]["grid-16384"]["parameters"])
+                       source["runs"]["grid-16384"]["parameters"], ring_phase_deg=ring_phase_deg)
     plant.brakes = [0., 0.]
     plant.source_work = acquired["ledger"]["sourceWork"]
     return plant, pins
@@ -358,7 +359,7 @@ def run(args):
     plant.encoder_steering = getattr(args, "encoder_steering", False)
     initial_note_xy = plant.data.qpos[plant.nq:plant.nq+2].tolist()
     stats = advance_pickup(args, plant)
-    result=dict(schema="second-wing-acquisition/1", firstReleaseTrace=release["traceSha256"],
+    result=dict(schema="second-wing-acquisition/1", firstReleaseTrace=release["traceSha256"], runtime=runtime_versions(),
                 nativeSha256=release["nativeSha256"], trace=stats.pop("trace"), initialRobotQ=last["q"][:-7],
                 initialRobotV=last["v"][:-6], initialRotors=last["externalRotors"], initialBusV=last["busV"],
                 start=last["time"], **stats,
