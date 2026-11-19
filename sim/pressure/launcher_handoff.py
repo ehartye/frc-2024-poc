@@ -20,7 +20,7 @@ from native_launcher_quadrature import model_xml, motor_query
 class RaisedFeed:
     carries_note = True
 
-    def __init__(self, acquired, row, dt, grid, segments, calibration):
+    def __init__(self, acquired, row, dt, grid, segments, calibration, *, ring_phase_deg=0.):
         self.base = TurningPlant(acquired, grid)
         self.launcher = load(ROOT / "sim/component-launcher/six-drive-config.json")
         binding = load(ROOT / "sim/mujoco/evidence/native-launcher-binding-20261118.json")
@@ -32,7 +32,7 @@ class RaisedFeed:
             # Dense ring-wheel contact can exhaust MuJoCo's default constraint arena.
             ET.SubElement(tree, "size", memory="128M")
         args = SimpleNamespace(segments=segments, noslip_iterations=0, floating=False,
-                               start=0., surface="capsules", ring_phase_deg=0., no_contact=False)
+                               start=0., surface="capsules", ring_phase_deg=ring_phase_deg, no_contact=False)
         scale = 1 / (.9 + segments / 128 * .1)
         xml = model_xml(SimpleNamespace(xml=ET.tostring(tree, encoding="unicode")),
                         binding, self.launcher, args, calibration["referenceStiffness"] * scale,

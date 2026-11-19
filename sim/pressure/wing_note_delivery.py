@@ -11,6 +11,7 @@ from second_wing_pickup import ReturnPlant, angle_error, build, build_seated
 from wing_field_frame import WingFrame, piece_id
 from run_axial_shear_lift import digest, load
 from field_transit import TransitPath
+from mission_runtime import runtime_versions
 
 
 STATION_BRAKING = dict(distanceM=2.0, accelerationMps2=1.3, maxSpeedMps=1.90, positionGainPerS=3.4)
@@ -242,7 +243,7 @@ def deliver(args, p, row, source, native, collected):
                 stream.write(json.dumps(out,allow_nan=False)+"\n")
             if outcome=="AT_SHOOTING_POSE":break
     if any(w.number for w in p.data.warning):outcome="MUJOCO_WARNING"
-    result=dict(schema="wing-note-delivery/1",nativeSha256=native,acquisitionTrace=source,
+    result=dict(schema="wing-note-delivery/1",nativeSha256=native,acquisitionTrace=source,runtime=runtime_versions(),
                 trace=digest(trace),initialQ=row["q"],initialV=row["v"],start=row["t"],end=p.data.time,
                 outcome=outcome,minimumSideLoadN=min_load if math.isfinite(min_load) else None,
                 dt=args.dt,grid=args.grid,traceStride=args.trace_stride,shootPosition=p.shoot_position.tolist(),

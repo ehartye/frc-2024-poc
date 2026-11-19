@@ -32,3 +32,36 @@ python sim/pressure/varied_floor_start.py --archive $Archive --output $Output --
 Use `--steering none` for the paired comparison. The terminal position, velocity, rotor, tread, bus, energy and clock state can continue to `wing_note_delivery.py --acquisition` with the registered pickup template and field station. A score still requires the field sensor event, clearance evidence and uninterrupted piece identity.
 
 The off-center pickup continued to the station at 10.809 s. A fine release solve at the baseline first-shot duties produced free flight at 11.12775 s. The field observer found no whole-opening passage or beam registration. A sampled NOTE surface intersected a registered rigid wheel shell by 0.7233 mm. This shot fails both checks. The 16,384-segment ring needed a larger solver constraint arena to finish the off-center contact step.
+
+## Reproducing the first score
+
+Use Python 3.13.12 with the [project dynamics lock](../mujoco/requirements-lock.txt) for the baseline comparison. The archived first delivery ends at 16.1725 s. On MuJoCo 4.0.1 and NumPy 2.5.5, the launcher reproduced all 6,144 rows of the archived release trace byte for byte. The field observer again saw the whole NOTE through the opening at 16.6239 s and both beams covered at 19.2235 s. The original native sweep and its interval refinement give a minimum rigid-wheel clearance of 0.08676 mm for this trace.
+
+An alternate environment with MuJoCo 3.14.0 and NumPy 2.5.3 repeated its own trace byte for byte. Starting with the same delivery, controller settings and 50 µs timestep, the two environments agreed on NOTE center position within 0.000001 mm through first wheel contact. Their positions differed by 0.1 mm only 3.45 ms later. Peak wheel load reached 5.44 kN in the alternate environment against 1.83 kN on the locked stack. The alternate shot intersected a shell by 0.63 mm and missed the opening. Both package versions changed between these runs.
+
+To compare two releases, run the following from the checkout with the two private output directories. The comparison verifies the trace digests and common starting state, matches rows at the same simulation time, and reports the first separation and both peak loads.
+
+```powershell
+python sim/pressure/compare_shot_replays.py $ArchivedRelease $ReplayedRelease
+```
+
+Use `wing_note_release.py --dt .000025` to halve the 50 µs integration step. At 16,384 segments, `--ring-phase-deg .010986328125` shifts only the discretization by half a segment. Each check starts with the original physical NOTE pose. The new pickup, delivery, release, field flight and robot return receipts record Python, MuJoCo and NumPy versions. The official roster verifier checks those stages against the dynamics lock and carries the runtime into the next score receipt. The field query used libigl 2.6.3 and SciPy 1.18.1.
+
+## First off-center score
+
+On the locked stack, the untrimmed first shots from both mirrored development starts reached both Speaker sensors. Both paths intersected a rigid wheel shell, by 0.124 mm on D1 and 0.087 mm on D2. Both received zero credit.
+
+The next controller used the same settings on both starts. It moved the loaded cradle by −0.117° and the lift by +0.84 mm over 0.30 s, held a 3,950 rpm wheel reference and fed at 0.23 pinch duty. The robot aimed at the nominal floor marks and the same shooting station. Each flight and robot return began with the actual release of that case.
+
+| Development result | D1 | Mirrored D2 |
+| --- | ---: | ---: |
+| First NOTE seated using encoder steering | 4.8395 s | 4.8250 s |
+| Minimum clearance in refined pickup intervals | 0.0153 mm | 0.0104 mm |
+| Minimum clearance in refined release intervals | 0.0671 mm | 0.0222 mm |
+| Whole NOTE through Speaker opening | 11.6235 s | 11.6350 s |
+| Simultaneous counter beams | 15.1758 s | No event |
+| Unresolved flight intervals against the moving robot | 0 | 1,823 |
+| Next outer NOTE seated | 18.0319 s | 18.0453 s |
+| Verified first scores | **1** | **0** |
+
+Fusion swept the actual trajectories against the registered assembly. The interval refinement bounded the remaining rigid shell and belt candidates. The smallest certified gap between the discharged D1 NOTE and returning robot was 21.35 mm. The D2 NOTE passed the opening, encountered field hardware and returned to the field side. An unresolved robot interval is an open clearance question. D1 earns one development score. All twenty six-score evaluation slots remain pending. [Runtime, scorer and native clearance evidence](evidence/speaker-first-release-runtime.json)

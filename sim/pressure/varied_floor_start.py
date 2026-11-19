@@ -4,6 +4,7 @@ import argparse
 import json
 import math
 from pathlib import Path
+from mission_runtime import runtime_versions, verify_runtime_chain
 
 from run_axial_shear_lift import EVIDENCE, ROOT, digest, load
 from second_wing_pickup import ReturnPlant, advance_pickup
@@ -13,6 +14,10 @@ from wing_field_frame import piece_id
 
 def run(args):
     settings = read_attempt(args.roster, args.attempt)
+    roster_digest = digest(args.roster)
+    runtime = runtime_versions()
+    if roster_digest == digest(COHORT):
+        verify_runtime_chain([dict(runtime=runtime)])
     binding = load(EVIDENCE / "native-signed-20261118/native-pressure-binding.json")
     native = digest(args.archive)
     if native != binding["nativeArchiveSha256"]:
@@ -40,8 +45,8 @@ def run(args):
     initial_q = plant.data.qpos.tolist()
     initial_v = plant.data.qvel.tolist()
     result = advance_pickup(args, plant)
-    result.update(schema="varied-first-wing-acquisition/1", attempt=args.attempt,
-                  rosterSha256=digest(args.roster), nativeSha256=native,
+    result.update(schema="varied-first-wing-acquisition/1", attempt=args.attempt, runtime=runtime,
+                  rosterSha256=roster_digest, nativeSha256=native,
                   pieceId=piece_id("middle"), collectedMarks=["middle"], firstMark="middle",
                   fieldYawDeg=245., start=0., initialQ=initial_q, initialV=initial_v,
                   initialRobotQ=initial_q[:plant.nq], initialRobotV=initial_v[:plant.nv],

@@ -1,4 +1,4 @@
-"""Bound release clearance to registered wheel shells and side-pinch belts."""
+"""Bound NOTE clearance to registered wheel shells and side-pinch belts."""
 import argparse
 import json
 import math
@@ -92,9 +92,11 @@ def refine(shot, inventory_file, native_file, samples=8192, subdivisions=8, refi
     packet=load(shot/"result.json")
     native=load(native_file)
     inventory=load(inventory_file)
-    if (packet["traceStride"]!=1 or digest(shot/"trace.jsonl")!=packet["traceSha256"]
-            or native["source"]!=packet["traceSha256"] or packet["nativeSha256"]!=inventory["sourceSha256"]):
-        raise ValueError("Mismatched release or native sweep")
+    pickup = packet.get("schema") == "varied-first-wing-acquisition/1"
+    trace = packet["trace"] if pickup else packet["traceSha256"]
+    if (packet["traceStride"]!=1 or digest(shot/"trace.jsonl")!=trace
+            or native["source"]!=trace or packet["nativeSha256"]!=inventory["sourceSha256"]):
+        raise ValueError("Mismatched trajectory or native sweep")
     bodies={r["key"]:r for r in inventory["inventory"]}
     with (shot/"trace.jsonl").open("rb") as stream:
         rows=[packet["initialQ"],*[json.loads(line)["q"] for line in stream]]
@@ -128,9 +130,12 @@ def refine(shot, inventory_file, native_file, samples=8192, subdivisions=8, refi
         worst=min(worst,lower)
         if lower<=0.:
             remaining.append([lo,hi,keys,lower])
-    return dict(native=packet["nativeSha256"],trace=packet["traceSha256"],nativeSweep=digest(native_file),
+    result = dict(native=packet["nativeSha256"],trace=trace,nativeSweep=digest(native_file),
                 initialUnresolved=len(native["unresolved"]),unresolved=remaining,samples=samples,
                 substeps=subdivisions,refineBelowMm=refine_below,minimumLowerBoundMm=worst if math.isfinite(worst) else None)
+    if pickup:
+        result["source"] = trace
+    return result
 
 
 if __name__=="__main__":

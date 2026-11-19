@@ -36,7 +36,7 @@ def verify(a):
     if any(setup) or roster:
         if not all(setup) or not roster or digest(roster) != setup[1]:
             raise ValueError("Varied mission requires its physical setup roster")
-        from speaker_trial_inputs import read_attempt, verify_start
+        from speaker_trial_inputs import COHORT, read_attempt, verify_start
         read_attempt(roster, setup[0])
         if any((r.get("attempt"), r.get("rosterSha256")) != setup for r in (shot, route, flight_clear, ret)):
             raise ValueError("Mission receipts describe different physical setups")
@@ -174,6 +174,10 @@ def verify(a):
                 fieldRoute=digest(a.route_clearance),flightClearance=digest(a.flight_clearance),
                 shellRefinement=digest(a.shell_refinement),sensorObservation=observation)
     if any(setup):
+        if setup[1] == digest(COHORT):
+            from mission_runtime import verify_runtime_chain
+            stages = [prev, entry] if history else [first]
+            result["runtime"] = verify_runtime_chain([*stages, carry, shot, field, ret])
         result.update(attempt=setup[0], rosterSha256=setup[1],
                       firstPickupTrace=prev["firstPickupTrace"] if history else pickup_trace)
         result.pop("firstPickupStop")

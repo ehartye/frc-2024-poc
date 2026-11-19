@@ -8,6 +8,7 @@ import mujoco
 import numpy as np
 
 from speaker_surfaces import SpeakerSurfaces, digest
+from mission_runtime import runtime_versions
 from wing_field_frame import WingFrame, WING_MARKS_INCHES
 from wing_speaker_passage import MAJOR, TUBE, rotation
 
@@ -166,7 +167,7 @@ def run(args):
                 mujoco.mj_step2(model, data)
     finally:
         surfaces.close()
-    result = dict(schema="speaker-field-contact/1", sourceTrace=release["traceSha256"],
+    result = dict(schema="speaker-field-contact/1", sourceTrace=release["traceSha256"], runtime=runtime_versions(),
                   nativeSha256=release["nativeSha256"], field=surfaces.pins, trace=digest(trace),
                   runner=digest(Path(__file__)), surfaces=digest(Path(__file__).with_name("speaker_surfaces.py")),
                   firstContactS=first, maximumIndentM=worst, releaseTimeS=release_time, segmentStartS=start,endS=data.time,
