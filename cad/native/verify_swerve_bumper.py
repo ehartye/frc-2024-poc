@@ -11,6 +11,10 @@ def inspect(design):
     spec = runpy.run_path(str(Path(__file__).with_name("swerve_bumper.py")))
     root = design.rootComponent
     parent = next(o for o in root.occurrences if o.component.name==spec["ASSEMBLY"])
+    revision = parent.component.attributes.itemByName("bumper","revision")
+    boxed = revision is not None
+    if boxed and revision.value != "Boxed front support":
+        raise ValueError("Unknown bumper revision")
     removed = {spec["ORIGINAL"],*spec["WOOD_NAMES"].values()}
     if any(o.component.name in removed for o in root.occurrences):
         raise ValueError("Superseded bumper material remains")
@@ -78,6 +82,17 @@ def inspect(design):
                      [350.012,-355.6,58.5,356.362,-210,185.5],
                      [350.012,210,58.5,356.362,355.6,185.5],
                      [350.012,-210,160.1,356.362,210,185.5]]
+    if boxed:
+        # Four non-overlapping tube walls and the two drilled screw landings.
+        front_regions = [[356.362,-355.6,74.6,394.462,355.6,77.775],
+                         [356.362,-355.6,122.225,394.462,355.6,125.4],
+                         [356.362,-355.6,77.775,359.537,355.6,122.225],
+                         [391.287,-355.6,77.775,394.462,355.6,122.225],
+                         *[[384.937,y-15,125.4,394.462,y+15,160.] for y in (-235,235)]]
+        tube_volume = (38.1*50.8-31.75*44.45)*711.2
+        lands_volume = 2*(30*34.6-math.pi*3.3**2)*9.525
+        if abs(rails["Front"].volume*1000-tube_volume-lands_volume)>.05:
+            raise ValueError("Front tube or drilled landing material differs from the build sheet")
     covered = 0.
     for bb in front_regions:
         lo,hi = bb[:3],bb[3:]
@@ -86,10 +101,14 @@ def inspect(design):
             *[(b-a)/10 for a,b in zip(lo,hi)]))
         covered += common(region,rails["Front"])
     if abs(covered-rails["Front"].volume*1000)>.01:
-        raise ValueError("Front reinforcement extends outside the checked NOTE envelopes")
+        measured = bounds(rails["Front"].preciseBoundingBox)
+        raise ValueError(f"Front rail envelopes miss material: boxed={boxed}, bounds={measured}, "
+                         f"covered={covered:.3f}, total={rails['Front'].volume*1000:.3f} mm³")
     tool_gauges = []
     seats = []
     for face,(n,radius,thick,half) in spec["FACES"].items():
+        if boxed and face=="Front":
+            radius = 394.462
         for u in spec["STATIONS"][face]:
             def pos(depth):
                 return [n[0]*(radius+depth)-n[1]*u,n[1]*(radius+depth)+n[0]*u,145.]
@@ -191,12 +210,44 @@ def inspect(design):
     top_after_drop = max(bb[5] for _,_,bb in removal)-200
     if module_count!=1092 or foam_count!=8 or len(removal)!=12 or top_after_drop>=parked_bottom or len(frame_seats)!=3 or min(corners)<240:
         raise ValueError(f"Incomplete frame or corner interfaces: {module_count}, {foam_count}, {frame_seats}, {corners}")
-    return dict(articles=records,seats=seats,railToChassisMm2=frame_seats,cornerSeatsMm2=corners,
+    result = dict(articles=records,seats=seats,railToChassisMm2=frame_seats,cornerSeatsMm2=corners,
                 moduleSolids=module_count,physicalFoamSolids=foam_count,toolChecks=len(tool_gauges),
                 frontRegionsMm=front_regions,intersections=hits,toolIntersections=access_hits,
                 chassisServiceRiseMm=200,endServiceVerticalGapMm=parked_bottom-top_after_drop,
                 removalIntersections=removal_hits,
                 foam=foam_records)
+    if boxed:
+        panels = {r["name"]:r["boundsMm"] for r in [*records,*foam_records]}
+        tests = {"Front drilled bumper wood":(394.462,413.512),
+                 "Left drilled bumper wood":(-378.587,413.512),
+                 "Right drilled bumper wood":(-378.587,413.512),
+                 **{f"fixed bumper end noodle 1 {i}":(413.512,477.012) for i in (0,1)},
+                 **{f"fixed bumper side noodle {s} {i}":(-378.587,413.512)
+                    for s in (-1,1) for i in (0,1)}}
+        for name,(lo,hi) in tests.items():
+            actual = panels[name]
+            if abs(lo-actual[0])>.02 or abs(hi-actual[3])>.02:
+                raise ValueError(f"Incorrect front or rear extent on {name}")
+        cover = root.occurrences.itemByName("Continuous bumper native display v2:1")
+        cover_body = physical(cover,cover.bRepBodies.item(0))
+        bb = bounds(cover_body.preciseBoundingBox)
+        expected = [-443.587,-439.65,57.,478.512,439.65,187.]
+        cover_volume = ((478.512+443.587)*879.3-(394.462+359.537)*711.2)*130
+        if (not cover.isVisible or max(abs(a-b) for a,b in zip(bb,expected))>.02 or
+                abs(cover_body.volume*1000-cover_volume)>.1):
+            raise ValueError("Continuous bumper cover does not match the revised panels")
+        for face,axis,plane in (("x1",0,478.512),("x-1",0,-443.587),
+                                ("y1",1,439.65),("y-1",1,-439.65)):
+            label = root.occurrences.itemByName(f"1780 WHITE team marking {face} - visual only:1")
+            if not label.isVisible or label.bRepBodies.count!=4:
+                raise ValueError(f"Missing team numerals on {face}")
+            for body in label.bRepBodies:
+                extent = bounds(physical(label,body).preciseBoundingBox)
+                if min(abs(extent[axis]-plane),abs(extent[axis+3]-plane))>.15:
+                    raise ValueError(f"Team numeral no longer follows the {face} cover")
+        result.update(frontTubeVolumeMm3=tube_volume,drilledLandingVolumeMm3=lands_volume,
+                      coverBoundsMm=bb,registeredNumerals=16)
+    return result
 
 
 def require_fit(result):
