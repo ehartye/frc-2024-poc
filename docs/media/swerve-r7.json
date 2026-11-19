@@ -69,24 +69,24 @@
   "assets": {
     "still": {
       "path": "docs/media/swerve-r7.png",
-      "sha256": "668818d7ddcaa703358d4fd3b291c8ab30b8fa0d4bf96213e1e4829520888f02"
+      "sha256": "b6e69fe4d649c9372eb5ad6baf8d99f435cfddc8ecfc7db82b219d674abe6bda"
     },
     "model": {
       "path": "docs/media/swerve-r7.glb",
-      "sha256": "cb8b3fdbb63869612282243ede6c0464c794fdcb173e309d62138c3e84d1f630"
+      "sha256": "5c962ab328e3169b27446c44545a9e564ce171b973773770b3455fb14a86853d"
     },
     "film": {
       "path": "docs/media/swerve-first-shot.webm",
-      "sha256": "bf4b0e3a76dbd9ba34477e306c7ead12b2f04d0062f85dedcbf413671d441551"
+      "sha256": "7ec5c5bc5efed309c565d496da1a8c253308602025a5c13dcac6afaa94538b6f"
     },
     "underside": {
       "path": "docs/media/swerve-underside.png",
-      "sha256": "955bab88b5dfd9d0b99f922f7736aa09f1fe6bb402136ef4e67c3ce9c369a330"
+      "sha256": "efdb9da61f6ac6037bee726f94dfc141afa15f5368483b21260701d9dcbf9ac4"
     }
   },
   "clip": "Lift and shoot",
   "case": "D1",
-  "sourceStartS": 4.495000000000228,
+  "sourceStartS": 0.0,
   "releaseS": 10.566049999999036,
   "openingS": 10.704549999998713,
   "simultaneousSensorS": 12.915049999993562,
@@ -94,14 +94,18 @@
   "traceSha256": {
     "carry": "ce0193e1175b12af63a564e59acf3d50cda6d9597dc791a49fb49a9d1b7098a3",
     "shot": "0995c2499c9344b21fd0a5e42c6dec296723a498782927bcad37369c54ab0dcf",
-    "field": "1ace77c1349770ebcd68817587caf9528fcfb73756f42932677a62f5867d8e52"
+    "field": "1ace77c1349770ebcd68817587caf9528fcfb73756f42932677a62f5867d8e52",
+    "pickup": "2b734e88ae8cd155a2cf198c211dafdf07b88fb0e824228fe3afebdc67f8bf3d"
   },
-  "scope": "The animation projects simulated swerve motion onto the reopened R7 geometry. Four dimensioned display modules show independent steering and wheel roll. R7 fixed-frame mass, wiring, shot clearance and scoring repeatability remain unevaluated.",
+  "scope": "Earlier articulated plant, D1 development start. The same simulated NOTE travels from first floor contact to both measured sensor pairs. R7 supplies the display geometry. Fixed-frame mass and counter reset remain open.",
   "film": {
-    "frames": 215,
+    "frames": 374,
     "framesPerSecond": 20,
     "slowRate": 0.125,
-    "slowFromMatchS": 10.066049999999036
+    "slowFromMatchS": 10.066049999999036,
+    "holdS": 1.25,
+    "slowUntilMatchS": 10.704549999998713,
+    "endMatchS": 12.915049999993562
   },
   "moduleDisplay": {
     "stations": 4,
@@ -124,5 +128,18 @@
       "tire",
       "wheel hub"
     ]
-  }
+  },
+  "firstBilateralS": 2.28399999999993,
+  "seatedS": 4.494500000000229,
+  "openingCenter": [
+    1.24661458566676,
+    2.0450985000000004,
+    -0.008257295674936299
+  ],
+  "counterCenter": [
+    2.597436314647592,
+    1.3557250000000398,
+    0.20651988725437748
+  ],
+  "sensorRegistrationSha256": "13d07c04856ee1ca927d8f17fa29570e6ead74cc1c917f1879b94b3b9d8b236f"
 }

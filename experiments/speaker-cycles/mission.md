@@ -14,6 +14,7 @@ A development attempt should continue to six counter events, the 120-second dead
 | Run | Last demonstrated outcome | Evidence |
 | --- | --- | --- |
 | Six-wheel nominal | Sixth counter event at 118.7945 s | [Six-score record](../../sim/pressure/evidence/center-low-sixth-score.json) |
-| Swerve D1 and D2 | First counter events at 12.915 s and 14.214 s. Both returned with a different NOTE at 23.686 s and 23.864 s. | [First shots](../../sim/pressure/evidence/maxswerve-development-shot.json) · [Second-piece carries](../../sim/pressure/evidence/maxswerve-second-wing-development.json) |
+| Swerve D1, six releases | Five of six NOTES blocked both sensor pairs in separate field replays. The outer-wing NOTE missed. Sixth arrival at 116.625 s. | [Six-NOTE record with plant revision](../../sim/pressure/evidence/maxswerve-six-note-D1.json) |
+| Swerve D1 and D2, first two pickups | First counter events at 12.915 s and 14.214 s. Both returned with a different NOTE at 23.686 s and 23.864 s. | [First shots](../../sim/pressure/evidence/maxswerve-development-shot.json) · [Second-piece carries](../../sim/pressure/evidence/maxswerve-second-wing-development.json) |
 
 These are simulation results. Full six-score reliability for the swerve robot remains open.

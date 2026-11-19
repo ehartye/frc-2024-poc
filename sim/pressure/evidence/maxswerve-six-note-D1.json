@@ -1,0 +1,181 @@
+{
+  "schema": "swerve-six-note-development/1",
+  "case": "D1",
+  "formalAttempts": 0,
+  "clockLimitS": 120,
+  "plantArchiveSha256": "ae6c40659f7a215573b1e172ae7aec3e90d62a94b8c27863234ee7c8cf275ce2",
+  "displayArchiveSha256": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+  "rosterSha256": "086e11317044cb8a409dd3b53d1f116b71242caa868a11be7900985ebfe84c52",
+  "sensorRegistrationSha256": "13d07c04856ee1ca927d8f17fa29570e6ead74cc1c917f1879b94b3b9d8b236f",
+  "bumperSurveySha256": "cebff289446b43ca0c11aacf11660056d99cf75bf4635b51ed9d36402e6f08db",
+  "mastSurveySha256": "678170e8f2ba245ea403a59c992f3c4633a0164651ab7d66e30776e4e187eda5",
+  "runtime": {
+    "python": "3.13.12",
+    "mujoco": "4.0.1",
+    "numpy": "2.5.5"
+  },
+  "controls": {
+    "dt": 5e-05,
+    "grid": 512,
+    "commonCommand": {
+      "launcherDutyLimit": 0.8,
+      "pinchDuty": 0.23,
+      "targetRpm": 3950,
+      "pitchTrimDeg": -0.117,
+      "heightTrimMm": 0.84,
+      "rampS": 0.3
+    },
+    "fieldDt": 0.0001,
+    "fieldContactNodes": 192,
+    "segments": 16384
+  },
+  "releases": 6,
+  "independentPairedSensorEvents": 5,
+  "records": [
+    {
+      "piece": "blue-wing-middle",
+      "pickupStartS": 0.0,
+      "seatedS": 4.494500000000229,
+      "stationS": 9.894500000000601,
+      "releaseS": 10.566049999999036,
+      "openingS": 10.704549999998713,
+      "pairedSensorS": 12.915049999993562,
+      "sensorPairTimesS": [
+        12.915049999993562,
+        12.800549999993828
+      ],
+      "minimumShotBusV": 9.433071741499333,
+      "pickupTrace": "2b734e88ae8cd155a2cf198c211dafdf07b88fb0e824228fe3afebdc67f8bf3d",
+      "carryTrace": "ce0193e1175b12af63a564e59acf3d50cda6d9597dc791a49fb49a9d1b7098a3",
+      "releaseTrace": "0995c2499c9344b21fd0a5e42c6dec296723a498782927bcad37369c54ab0dcf",
+      "fieldTrace": "1ace77c1349770ebcd68817587caf9528fcfb73756f42932677a62f5867d8e52",
+      "releaseClearanceR7": {
+        "samples": 13431,
+        "minimumAxisGapMm": 130.71324109318834,
+        "closestArticle": "fixed bumper end noodle 1 1 with cover allowance",
+        "witnessS": 9.986200000000387
+      }
+    },
+    {
+      "piece": "blue-wing-outer",
+      "pickupStartS": 10.566049999999036,
+      "seatedS": 17.30305000000264,
+      "stationS": 23.685549999987764,
+      "releaseS": 24.36715000001039,
+      "openingS": 24.506350000010066,
+      "pairedSensorS": null,
+      "sensorPairTimesS": [
+        null,
+        null
+      ],
+      "minimumShotBusV": 10.004968353708117,
+      "pickupTrace": "bc968b3982e24b2b3d0e525e44bda03b707cfbbc5ac58bf1195e8b04c6cab667",
+      "carryTrace": "eca80756235632144025ad1e1d460d341d9e4e123147400a593966dbee3a761a",
+      "releaseTrace": "e90183f8e62b29e48cb7320317623b6894aa491223f9f7ee78692d46eed3a31e",
+      "fieldTrace": "bfe3b60c22cb3920a20a5694e4a498310452c6a145ff70e26fb08aed0bc856e2",
+      "releaseClearanceR7": {
+        "samples": 13632,
+        "minimumAxisGapMm": 129.4273056452181,
+        "closestArticle": "Front drilled bumper wood with cover allowance",
+        "witnessS": 23.755849999990097
+      }
+    },
+    {
+      "piece": "blue-wing-inner",
+      "pickupStartS": 24.36715000001039,
+      "seatedS": 31.085149999994734,
+      "stationS": 37.467150000018705,
+      "releaseS": 38.14895000004134,
+      "openingS": 38.28735000004593,
+      "pairedSensorS": 41.13795000014056,
+      "sensorPairTimesS": [
+        41.13795000014056,
+        41.02885000013694
+      ],
+      "minimumShotBusV": 9.964411233487562,
+      "pickupTrace": "85da588e3537ab50e3550900ecdd2823979a58cce24241f09c6f4a23a8a86cdc",
+      "carryTrace": "3b02a1a285dc47b32131482aa78211bf7e382817228d2dfe85d78a1ba31576bc",
+      "releaseTrace": "1854d8afb365c774412af482dc43e70e570e611a04b0e455d87dc2ece61b80b9",
+      "fieldTrace": "c140e70aefdcf4ade98536e6970d46d2294e6db2f50a1e2e1f5d451d7e3d3461",
+      "releaseClearanceR7": {
+        "samples": 13636,
+        "minimumAxisGapMm": 129.4106409632413,
+        "closestArticle": "Front drilled bumper wood with cover allowance",
+        "witnessS": 37.538850000021085
+      }
+    },
+    {
+      "piece": "center-high",
+      "pickupStartS": 38.14895000004134,
+      "seatedS": 50.37595000009972,
+      "stationS": 61.329950000152024,
+      "releaseS": 62.072200000176665,
+      "openingS": 62.21120000018128,
+      "pairedSensorS": 64.41500000025444,
+      "sensorPairTimesS": [
+        64.41500000025444,
+        64.2271000002482
+      ],
+      "minimumShotBusV": 9.95807814212581,
+      "pickupTrace": "6d94055ca9406ea8ff4d63428d9ed2c7b05eea7f80504c18789e43bd56e479cc",
+      "carryTrace": "f2bd65396fbf623e55204d0153901262f5aabe3a2b3a0bdfb7173252995473d6",
+      "releaseTrace": "405975d578df6de51b7df7874cdedbdfaf1f0da7b157a3fb8832c3362c1a33c4",
+      "fieldTrace": "5a95184675e2f5ce3bfcd2301b6fde248051ae19d057d5f4d2316f4b2aaafd36",
+      "releaseClearanceR7": {
+        "samples": 14845,
+        "minimumAxisGapMm": 129.84041882643487,
+        "closestArticle": "Front drilled bumper wood with cover allowance",
+        "witnessS": 61.54725000015924
+      }
+    },
+    {
+      "piece": "center-mid",
+      "pickupStartS": 62.072200000176665,
+      "seatedS": 75.18320000023927,
+      "stationS": 86.31670000029243,
+      "releaseS": 87.04890000031673,
+      "openingS": 87.18870000032138,
+      "pairedSensorS": 89.67820000040402,
+      "sensorPairTimesS": [
+        89.67820000040402,
+        89.65900000040338
+      ],
+      "minimumShotBusV": 10.099609184667,
+      "pickupTrace": "be8374f3b0e49af945ad15a360f0ffaf0c3db1f2338efd2f1c962e0345991ea9",
+      "carryTrace": "43bf11f393eb737937c8e57a4a6f2326664f19b4eaf15368042b5c32003c1159",
+      "releaseTrace": "9fb5de4401efa11c0d7514a8e9ac3ddb707d47f2b72d2cc699b45411bcb8065b",
+      "fieldTrace": "3e0050e910c6dd0e9a5788086297cd6d9d592a37ab8230380aa07ecfae48cd02",
+      "releaseClearanceR7": {
+        "samples": 14644,
+        "minimumAxisGapMm": 129.93066410814822,
+        "closestArticle": "Front drilled bumper wood with cover allowance",
+        "witnessS": 86.54100000029987
+      }
+    },
+    {
+      "piece": "center-low",
+      "pickupStartS": 87.04890000031673,
+      "seatedS": 100.56240000038126,
+      "stationS": 112.6974000004392,
+      "releaseS": 113.42970000046351,
+      "openingS": 113.56960000046816,
+      "pairedSensorS": 116.62500000056959,
+      "sensorPairTimesS": [
+        116.62500000056959,
+        116.50830000056571
+      ],
+      "minimumShotBusV": 9.899587982429518,
+      "pickupTrace": "628bf90a3dbb92e1f46f96c4758e4538993a6ed42fa3509a9b4fdf5de36a5f68",
+      "carryTrace": "40241ea15298d227193fd76f56ea188838e6b22d93888b2fa4cd4ec921319865",
+      "releaseTrace": "93e946280627e25ebbdd43712de18224168d3bec21cc672eda2c163c41715800",
+      "fieldTrace": "a35700f5613d4d56ef9d9042a79c4288f24d3aadfe21581a9f23ce81794d7ac0",
+      "releaseClearanceR7": {
+        "samples": 14646,
+        "minimumAxisGapMm": 129.9164259068022,
+        "closestArticle": "Front drilled bumper wood with cover allowance",
+        "witnessS": 112.92175000044665
+      }
+    }
+  ],
+  "scope": "Same robot state and clock through six distinct pickups and discharges. Each released NOTE uses its own field simulation. Shared counter clearance, field traffic, full-shell clearance, material convergence and the R7 mass model remain separate qualifications."
+}
