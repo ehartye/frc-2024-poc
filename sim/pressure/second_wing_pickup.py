@@ -35,6 +35,13 @@ class ReturnPlant(RaisedFeed):
         d.qpos[:self.nq] = last["q"][:-7]
         d.qvel[:self.nv] = last["v"][:-6]
         self.source_work = last["sourceJ"]
+        self.begin_pickup()
+
+    def begin_pickup(self, *, starts_lowered=False):
+        d = self.data
+        self.starts_lowered = starts_lowered
+        self.contact_steering = False
+        self.encoder_steering = False
         self.release = d.time
         self.turn_heading = None
         self.pinched_since = None
@@ -107,7 +114,7 @@ class ReturnPlant(RaisedFeed):
             axis=np.array([math.cos(self.approach_heading),math.sin(self.approach_heading)])
             distance_left=delta@axis-self.capture_standoff
             want_speed=min(want_speed,float(np.clip(2.5*distance_left,-.08,1.1)))
-        if elapsed < 2.8 and distance < .72:
+        if not self.starts_lowered and elapsed < 2.8 and distance < .72:
             want_speed = 0.
         if self.retreat_distance:
             axis=np.array([math.cos(self.departure_heading),math.sin(self.departure_heading)])
@@ -120,9 +127,20 @@ class ReturnPlant(RaisedFeed):
         common = .8*(want_speed-forward) + want_speed*b.drive.c["motorK"]*b.drive.c["gearRatio"]/b.drive.c["wheelRadiusM"]/12
         diff = .65*(want_turn-d.qvel[2]) + .21*want_turn
         drive = np.clip([common-diff, common+diff], -.65, .65).tolist()
+        if self.contact_steering or self.encoder_steering:
+            if self.encoder_steering:
+                # Sample the intake rotor velocities in whole rpm on the controller tick.
+                negative_rpm, positive_rpm = np.rint(self.rotors[2:] * (60 / (2*np.pi)))
+                correction = .008 * (negative_rpm-positive_rpm)
+            else:
+                negative_y, positive_y = self.last_loads
+                correction = .12 * (positive_y-negative_y)
+            differential = np.clip(correction, -.14, .14)
+            drive = np.clip(np.asarray(drive) + [-differential, differential], -.65, .65).tolist()
         # Retrace the established pitch/lift clearance route before pickup.
         # Finite motors track these references while the chassis turns.
-        zref, pref = target(b, max(0., 500*(1-elapsed/2.8)))
+        lowering_target = 0. if self.starts_lowered else max(0., 500*(1-elapsed/2.8))
+        zref, pref = target(b, lowering_target)
         z = zref[0]-b.z0
         pitch = pref[0]
         actuator = self.actuator_command(belt, z, pitch)
@@ -238,7 +256,16 @@ def build(args, plant_type=ReturnPlant, segments=32):
         if next_mark in receipt.get("collectedMarks",[args.first_mark]):
             raise ValueError("Target floor NOTE already collected")
         mark_xy = frame.to_local(frame.mark(next_mark))[:2]
-        state["q"] += [*mark_xy, z, 1., 0., 0., 0.]
+        physical_xy = mark_xy
+        if getattr(args, "placement_roster", None):
+            from speaker_trial_inputs import local_offset, read_attempt
+            setup = read_attempt(args.placement_roster, args.attempt)
+            if (args.first_mark, args.field_yaw_deg) != ("middle", 245.):
+                raise ValueError("The placement roster uses the middle mark and 245 degree registration")
+            if receipt.get("attempt") != args.attempt or receipt.get("rosterSha256") != digest(args.placement_roster):
+                raise ValueError("Cannot mix physical setups within an attempt")
+            physical_xy = mark_xy + local_offset(setup, next_mark)
+        state["q"] += [*physical_xy, z, 1., 0., 0., 0.]
         state["v"] += [0.]*6
     plant = plant_type(load(stop)["final"], state, args.dt, args.grid, segments, calibration)
     plant.resume(last)
@@ -247,37 +274,7 @@ def build(args, plant_type=ReturnPlant, segments=32):
     return plant, last, receipt
 
 
-def run(args):
-    if args.horizon<=0 or not math.isfinite(args.horizon) or args.trace_stride<1:
-        raise ValueError("Positive horizon and trace stride required")
-    plant, last, release = build(args)
-    if not math.isfinite(args.retreat) or args.retreat<0.:
-        raise ValueError("Invalid departure distance")
-    plant.retreat_distance=args.retreat
-    frame=WingFrame(args.first_mark,args.field_yaw_deg)
-    plant.waypoints=[frame.to_local([x,y,0.])[:2] for x,y in args.via]
-    plant.reverse_transit=args.reverse_transit
-    if plant.reverse_transit and not plant.waypoints:
-        raise ValueError("Reverse transit requires at least one approach waypoint")
-    if not 0.<args.transit_speed<=4. or not np.isfinite(args.via).all():
-        raise ValueError("Invalid transit command")
-    plant.transit_speed=args.transit_speed
-    if not 0.<args.capture_speed<=1. or not math.isfinite(args.lookahead) or args.lookahead<0.:
-        raise ValueError("Invalid transit lookahead or capture speed")
-    plant.capture_speed=args.capture_speed
-    if args.lookahead:
-        if not plant.waypoints:
-            raise ValueError("A lookahead transit needs at least one field waypoint")
-        plant.transit_path=TransitPath([plant.data.qpos[:2],*plant.waypoints],args.lookahead)
-    if args.approach_heading is not None:
-        if not math.isfinite(args.approach_heading) or not 0.<=args.capture_standoff<.35:
-            raise ValueError("Invalid floor approach heading or pickup standoff")
-        plant.approach_heading=math.radians(args.approach_heading-args.field_yaw_deg)
-        direction=np.array([math.cos(plant.approach_heading),math.sin(plant.approach_heading)])
-        plant.approach_waypoint=plant.mark_xy-.95*direction
-        plant.capture_standoff=args.capture_standoff
-    elif args.capture_standoff:
-        raise ValueError("A pickup standoff needs a field approach heading")
+def advance_pickup(args, plant):
     d = plant.data
     args.output.mkdir(exist_ok=False)
     period = round(.01/args.dt)
@@ -320,16 +317,63 @@ def run(args):
                 f.write(json.dumps(row,allow_nan=False)+"\n")
             if outcome=="SEATED":break
     if any(w.number for w in d.warning):outcome="MUJOCO_WARNING"
+    return dict(trace=digest(trace),end=d.time,firstBilateral=first_touch,seated=plant.capture_at,
+                minimumBusV=minimum_bus,peakLocalBrakingW=worst_brake,outcome=outcome,dt=args.dt,grid=args.grid)
+
+
+def run(args):
+    if args.horizon<=0 or not math.isfinite(args.horizon) or args.trace_stride<1:
+        raise ValueError("Positive horizon and trace stride required")
+    plant, last, release = build(args)
+    if "attempt" in release and not getattr(args, "placement_roster", None):
+        raise ValueError("Continuation of a varied mission requires its original placement roster")
+    if not math.isfinite(args.retreat) or args.retreat<0.:
+        raise ValueError("Invalid departure distance")
+    plant.retreat_distance=args.retreat
+    frame=WingFrame(args.first_mark,args.field_yaw_deg)
+    plant.waypoints=[frame.to_local([x,y,0.])[:2] for x,y in args.via]
+    plant.reverse_transit=args.reverse_transit
+    if plant.reverse_transit and not plant.waypoints:
+        raise ValueError("Reverse transit requires at least one approach waypoint")
+    if not 0.<args.transit_speed<=4. or not np.isfinite(args.via).all():
+        raise ValueError("Invalid transit command")
+    plant.transit_speed=args.transit_speed
+    if not 0.<args.capture_speed<=1. or not math.isfinite(args.lookahead) or args.lookahead<0.:
+        raise ValueError("Invalid transit lookahead or capture speed")
+    plant.capture_speed=args.capture_speed
+    if args.lookahead:
+        if not plant.waypoints:
+            raise ValueError("A lookahead transit needs at least one field waypoint")
+        plant.transit_path=TransitPath([plant.data.qpos[:2],*plant.waypoints],args.lookahead)
+    if args.approach_heading is not None:
+        if not math.isfinite(args.approach_heading) or not 0.<=args.capture_standoff<.35:
+            raise ValueError("Invalid floor approach heading or pickup standoff")
+        plant.approach_heading=math.radians(args.approach_heading-args.field_yaw_deg)
+        direction=np.array([math.cos(plant.approach_heading),math.sin(plant.approach_heading)])
+        plant.approach_waypoint=plant.mark_xy-.95*direction
+        plant.capture_standoff=args.capture_standoff
+    elif args.capture_standoff:
+        raise ValueError("A pickup standoff needs a field approach heading")
+    plant.contact_steering = getattr(args, "contact_steering", False)
+    plant.encoder_steering = getattr(args, "encoder_steering", False)
+    initial_note_xy = plant.data.qpos[plant.nq:plant.nq+2].tolist()
+    stats = advance_pickup(args, plant)
     result=dict(schema="second-wing-acquisition/1", firstReleaseTrace=release["traceSha256"],
-                nativeSha256=release["nativeSha256"], trace=digest(trace), initialRobotQ=last["q"][:-7],
+                nativeSha256=release["nativeSha256"], trace=stats.pop("trace"), initialRobotQ=last["q"][:-7],
                 initialRobotV=last["v"][:-6], initialRotors=last["externalRotors"], initialBusV=last["busV"],
-                start=last["time"],end=d.time,firstBilateral=first_touch,seated=plant.capture_at,
-                minimumBusV=minimum_bus,peakLocalBrakingW=worst_brake,outcome=outcome,dt=args.dt,grid=args.grid,
+                start=last["time"], **stats,
                 traceStride=args.trace_stride,firstMark=args.first_mark,fieldYawDeg=args.field_yaw_deg,
                 retreatM=args.retreat,approachHeadingDeg=args.approach_heading,captureStandoffM=args.capture_standoff,
                 viaFieldXY=args.via,transitSpeedMps=args.transit_speed,reverseTransit=args.reverse_transit,
                 waitingNoteLocalXY=plant.mark_xy.tolist(),pieceId=piece_id(args.next_mark),
                 collectedMarks=[*release.get("collectedMarks",[args.first_mark]),args.next_mark])
+    if getattr(args, "placement_roster", None):
+        result.update(attempt=args.attempt, rosterSha256=digest(args.placement_roster),
+                      waitingNoteLocalXY=initial_note_xy, targetLocalXY=plant.mark_xy.tolist())
+    if plant.contact_steering:
+        result["contactSteering"] = True
+    if plant.encoder_steering:
+        result["encoderSteering"] = True
     if args.lookahead or args.capture_speed!=.26:
         result.update(lookaheadM=args.lookahead,captureSpeedMps=args.capture_speed)
     (args.output/"result.json").write_text(json.dumps(result,indent=2,allow_nan=False)+"\n")
@@ -344,6 +388,11 @@ if __name__ == "__main__":
     p.add_argument("--grid",type=int,choices=(128,256,512,1024,2048),default=256)
     p.add_argument("--trace-stride",type=int,default=1)
     p.add_argument("--first-mark",choices=WING_MARKS_INCHES,default="inner")
+    p.add_argument("--placement-roster",type=Path,help="Physical NOTE setup in the registered blue field frame")
+    p.add_argument("--attempt",help="Attempt ID in the physical setup roster")
+    steering = p.add_mutually_exclusive_group()
+    steering.add_argument("--encoder-steering",action="store_true",help="Steer from differential measured intake rotor rpm")
+    steering.add_argument("--contact-steering",action="store_true",help="Use modeled differential intake loads during pickup")
     p.add_argument("--next-mark",choices=SUPPLY_MARKS,default="middle")
     p.add_argument("--retreat",type=float,default=0.,help="Back away from the Speaker before turning, in metres")
     p.add_argument("--approach-heading",type=float,help="Align before approaching the floor mark at this field heading in degrees")

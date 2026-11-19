@@ -1,0 +1,4 @@
+attempt,robot_heading_deg,robot_x_mm,robot_y_mm,middle_x_mm,middle_y_mm,outer_x_mm,outer_y_mm,inner_x_mm,inner_y_mm,center-high_x_mm,center-high_y_mm,center-mid_x_mm,center-mid_y_mm,center-low_x_mm,center-low_y_mm
+D1,0.75,2.056900628294308,-9.786171866737396,10.269861392033347,0.7279745795169585,0,0,0,0,0,0,0,0,0,0
+D2,-0.75,-2.056900628294308,9.786171866737396,-10.269861392033347,-0.7279745795169585,0,0,0,0,0,0,0,0,0,0
+D3,0.0,0.0,-0.0,0.0,-0.0,0,0,0,0,0,0,0,0,0,0

@@ -125,12 +125,28 @@ def restore(plant, row):
 def run(args):
     if args.horizon<=0 or not math.isfinite(args.horizon) or args.trace_stride<1 or not math.isfinite(args.forward_offset):
         raise ValueError("Invalid delivery study parameters")
-    if not args.acquisition:
+    varied_first = None
+    if args.acquisition and not args.release:
+        varied_first = load(args.acquisition/"result.json")
+        if (varied_first.get("schema") != "varied-first-wing-acquisition/1"
+                or varied_first["outcome"] != "SEATED"
+                or varied_first["collectedMarks"] != [args.first_mark]
+                or varied_first["firstMark"] != args.first_mark
+                or varied_first["fieldYawDeg"] != args.field_yaw_deg):
+            raise ValueError("Expected a seated first floor NOTE in this field frame")
+    if not args.acquisition or varied_first:
         p, pins = build_seated(args, DeliveryPlant, 32)
         frame = WingFrame(args.first_mark, args.field_yaw_deg)
         x, y, heading = args.field_station
         p.shoot_position = frame.to_local([x, y, 0.])[:2]
         p.shoot_heading = math.radians(heading - frame.yaw_degrees)
+        if varied_first:
+            if varied_first["nativeSha256"] != pins["native"]:
+                raise ValueError("Varied pickup belongs to a different native robot")
+            row = tail(args.acquisition, varied_first)
+            restore(p, row)
+            p.attempt_setup = (varied_first["attempt"], varied_first["rosterSha256"])
+            return deliver(args, p, row, varied_first["trace"], pins["native"], [args.first_mark])
         rel, _, _ = p.observe()
         row = dict(q=p.data.qpos.tolist(), v=p.data.qvel.tolist(), t=p.data.time, relative=rel)
         return deliver(args, p, row, pins["stop"], pins["native"], [args.first_mark])
@@ -141,6 +157,10 @@ def run(args):
     if (got["outcome"]!="SEATED" or got["firstReleaseTrace"]!=release["traceSha256"]
             or (got.get("firstMark","inner"),got.get("fieldYawDeg",90.))!=(args.first_mark,args.field_yaw_deg)):
         raise ValueError("Expected continuous second-wing pickup")
+    if "attempt" in got:
+        if (got["attempt"], got["rosterSha256"]) != (release.get("attempt"), release.get("rosterSha256")):
+            raise ValueError("Delivery and previous release belong to different attempts")
+        p.attempt_setup = (got["attempt"], got["rosterSha256"])
     row=tail(args.acquisition,got)
     restore(p,row)
     p.shoot_position=np.array(last["q"][:2])
@@ -238,6 +258,8 @@ def deliver(args, p, row, source, native, collected):
         result["liftingDriveAccelMps2"]=args.lifting_drive_accel
     if p.brake_into_station:
         result["stationBrakingProfile"] = STATION_BRAKING
+    if hasattr(p, "attempt_setup"):
+        result["attempt"], result["rosterSha256"] = p.attempt_setup
     (args.output/"result.json").write_text(json.dumps(result,indent=2,allow_nan=False)+"\n")
     print(outcome,p.data.time,flush=True)
 
@@ -266,8 +288,6 @@ if __name__=="__main__":
     parser.add_argument("--first-mark",choices=("inner","middle","outer"),default="inner")
     parser.add_argument("--field-yaw-deg",type=float,default=90.)
     args = parser.parse_args()
-    if not args.acquisition and not args.field_station:
+    if not args.release and not args.field_station:
         parser.error("A first floor pickup needs a field shooting station")
-    if args.acquisition and not args.release:
-        parser.error("--acquisition requires its previous --release")
     run(args)

@@ -1,0 +1,254 @@
+{
+  "scope": "Development floor pickup only; load-difference input is an ideal simulation observation. No mission score or hardware qualification.",
+  "grid": 512,
+  "dt": 0.0005,
+  "rosterSha256": "086e11317044cb8a409dd3b53d1f116b71242caa868a11be7900985ebfe84c52",
+  "runs": {
+    "D1-slow-only": {
+      "attempt": "D1",
+      "contactSteering": false,
+      "outcome": "UNSUPPORTED_SUBSTRATE_CONTACT",
+      "firstBilateral": null,
+      "end": 1.6949999999998688,
+      "trace": "7db1eee2e61f7ed2e23765cb9aeab96e4a9210fe90d6912f397cb7d04ed1013b",
+      "initialQ": [
+        0.008000000000000002,
+        0.006000000000000002,
+        0.013089969389957472,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.653,
+        0.009000000000000001,
+        0.0252847718625,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "targetLocalXY": [
+        0.658,
+        0.0
+      ],
+      "waitingNoteLocalXY": [
+        0.653,
+        0.009000000000000001
+      ],
+      "minimumBusV": 10.814867038014414
+    },
+    "D1-tactile": {
+      "attempt": "D1",
+      "contactSteering": true,
+      "outcome": "SEATED",
+      "firstBilateral": 1.929999999999843,
+      "end": 4.830000000000043,
+      "trace": "ef64c88f1669628ec3984f758abf9850d7b318c914eb5f508852359df613795a",
+      "initialQ": [
+        0.008000000000000002,
+        0.006000000000000002,
+        0.013089969389957472,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.653,
+        0.009000000000000001,
+        0.0252847718625,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "targetLocalXY": [
+        0.658,
+        0.0
+      ],
+      "waitingNoteLocalXY": [
+        0.653,
+        0.009000000000000001
+      ],
+      "minimumBusV": 10.814867038014414
+    },
+    "D2-tactile": {
+      "attempt": "D2",
+      "contactSteering": true,
+      "outcome": "SEATED",
+      "firstBilateral": 1.9159999999998445,
+      "end": 4.815000000000051,
+      "trace": "5e723ebf6292bab81e2d90867ec96a46b1c8579a334983a37a6592247aceb431",
+      "initialQ": [
+        -0.008000000000000002,
+        -0.006000000000000002,
+        -0.013089969389957472,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.663,
+        -0.009000000000000001,
+        0.0252847718625,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "targetLocalXY": [
+        0.658,
+        0.0
+      ],
+      "waitingNoteLocalXY": [
+        0.663,
+        -0.009000000000000001
+      ],
+      "minimumBusV": 10.494573823354202
+    },
+    "D3-tactile": {
+      "attempt": "D3",
+      "contactSteering": true,
+      "outcome": "SEATED",
+      "firstBilateral": 1.893999999999847,
+      "end": 4.8160000000000505,
+      "trace": "32def9fb25470843b7a530a471ee3a767b2525f1f262f49dd73885ffd055f133",
+      "initialQ": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.658,
+        0.0,
+        0.0252847718625,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "targetLocalXY": [
+        0.658,
+        0.0
+      ],
+      "waitingNoteLocalXY": [
+        0.658,
+        0.0
+      ],
+      "minimumBusV": 10.494573823354202
+    },
+    "D1-encoder": {
+      "attempt": "D1",
+      "contactSteering": false,
+      "encoderSteering": true,
+      "outcome": "SEATED",
+      "firstBilateral": 1.9244999999998436,
+      "end": 4.839500000000037,
+      "trace": "69109d156685e0986214a4ea57163f58523d136c3eddb620edefd09c8c6082d4",
+      "initialQ": [
+        0.008000000000000002,
+        0.006000000000000002,
+        0.013089969389957472,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.653,
+        0.009000000000000001,
+        0.0252847718625,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "targetLocalXY": [
+        0.658,
+        0.0
+      ],
+      "waitingNoteLocalXY": [
+        0.653,
+        0.009000000000000001
+      ],
+      "minimumBusV": 10.814867038014414
+    },
+    "D2-encoder": {
+      "attempt": "D2",
+      "contactSteering": false,
+      "encoderSteering": true,
+      "outcome": "SEATED",
+      "firstBilateral": 1.910999999999845,
+      "end": 4.8250000000000455,
+      "trace": "32188b5c728e046b19ffb543705d88654777a2a5f66030ae24ce9d9e240b5fda",
+      "initialQ": [
+        -0.008000000000000002,
+        -0.006000000000000002,
+        -0.013089969389957472,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.663,
+        -0.009000000000000001,
+        0.0252847718625,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "targetLocalXY": [
+        0.658,
+        0.0
+      ],
+      "waitingNoteLocalXY": [
+        0.663,
+        -0.009000000000000001
+      ],
+      "minimumBusV": 10.494573823354202
+    }
+  },
+  "offCenterFollowThrough": {
+    "deliveryTrace": "80863b4e19c879c0f1e728303cdc794c81969942a94c1c39ae14af36c44b5754",
+    "stationS": 10.809000000001719,
+    "fieldRouteThroughStation": {
+      "begin": 0.0,
+      "end": 10.809000000001719,
+      "intervals": 21618,
+      "unresolvedIntervals": 0,
+      "firstUnresolved": null,
+      "minimumReportedAxisGapM": 0.002357857954537579
+    },
+    "shotTrace": "57e231774610842588a175f778a1d7089e9b59174d96363cf1cbb8537160578e",
+    "releaseS": 11.127750000000976,
+    "registeredSensorEvents": 0,
+    "fieldTrace": "a4614373c5df1bda9dd41a16c11239880cfe2578c6f7517405ccebdd46ca8722",
+    "opening": null,
+    "sampledWheelShellGapMm": -0.7232938779640108,
+    "sampledGapTimeS": 11.087550000001718
+  },
+  "regulatedDevelopmentShot": {
+    "start": 10.809000000001719,
+    "releaseS": 11.470250000000178,
+    "targetRpm": 3950.0,
+    "pinchDuty": 0.23,
+    "pitchTrimDeg": -0.117,
+    "heightTrimMm": 0.57,
+    "alignmentDurationS": 0.3,
+    "shotTrace": "396cb9bd7a7416bf00841b99c5f9aba5db5895d349988f26509940e70fbe238f",
+    "fieldTrace": "0d857c4f7d407ff58ee6b3bdc5ccb8d9b3f014a88ede894eee2ea8fa3bf419fb",
+    "opening": null,
+    "registeredSensorEvents": 0,
+    "sampledWheelShellGapMm": -1.28927668239983,
+    "sampledGapTimeS": 11.431850000001718
+  }
+}

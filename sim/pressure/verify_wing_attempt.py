@@ -31,6 +31,38 @@ def verify(a):
     prior_start=0.
     pickup_trace=pins["stop"]
     target_piece=piece_id(frame.first_mark)
+    setup = (carry.get("attempt"), carry.get("rosterSha256"))
+    roster = getattr(a, "placement_roster", None)
+    if any(setup) or roster:
+        if not all(setup) or not roster or digest(roster) != setup[1]:
+            raise ValueError("Varied mission requires its physical setup roster")
+        from speaker_trial_inputs import read_attempt, verify_start
+        read_attempt(roster, setup[0])
+        if any((r.get("attempt"), r.get("rosterSha256")) != setup for r in (shot, route, flight_clear, ret)):
+            raise ValueError("Mission receipts describe different physical setups")
+        if previous_path:
+            previous_setup = load(previous_path)
+            if (previous_setup.get("attempt"), previous_setup.get("rosterSha256")) != setup:
+                raise ValueError("Cannot continue another attempt's score history")
+        else:
+            if not a.entry_acquisition or not a.pickup_clearance:
+                raise ValueError("First varied floor pickup needs its measured trajectory and native clearance")
+            first = load(a.entry_acquisition/"result.json")
+            verify_start(first, roster)
+            first_trace = a.entry_acquisition/"trace.jsonl"
+            if ((first["attempt"], first["rosterSha256"]) != setup or digest(first_trace) != first["trace"]
+                    or route.get("entryAcquisition") != first["trace"] or first["nativeSha256"] != pins["native"]):
+                raise ValueError("First varied pickup source mismatch")
+            with first_trace.open("rb") as stream:
+                for line in stream:
+                    last = line
+            end = json.loads(last)
+            clear = load(a.pickup_clearance)
+            if (end["q"] != carry["initialQ"] or end["v"] != carry["initialV"]
+                    or abs(end["t"]-carry["start"]) > 1e-8 or abs(first["end"]-end["t"]) > 1e-8
+                    or clear["source"] != first["trace"] or clear["unresolved"]):
+                raise ValueError("First varied pickup failed its native handoff or clearance")
+            pickup_trace = first["trace"]
     if previous_path:
         prev=load(previous_path)
         entry=load(a.entry_acquisition/"result.json")
@@ -141,6 +173,13 @@ def verify(a):
                 **({"finalHold":ret["trace"]} if hold else {"nextPickup":ret["trace"]}),
                 fieldRoute=digest(a.route_clearance),flightClearance=digest(a.flight_clearance),
                 shellRefinement=digest(a.shell_refinement),sensorObservation=observation)
+    if any(setup):
+        result.update(attempt=setup[0], rosterSha256=setup[1],
+                      firstPickupTrace=prev["firstPickupTrace"] if history else pickup_trace)
+        result.pop("firstPickupStop")
+        if not history:
+            result.update(pickupClearance=digest(a.pickup_clearance), deliveryClearance=digest(a.delivery_clearance),
+                          shotClearance=digest(a.shot_clearance))
     if history:
         result.update(pickupClearance=digest(a.pickup_clearance), deliveryClearance=digest(a.delivery_clearance),
                       shotClearance=digest(a.shot_clearance), counterResets=[digest(path) for path in a.counter_reset])
@@ -158,9 +197,10 @@ if __name__=="__main__":
     after.add_argument("--acquisition",type=Path)
     after.add_argument("--final-hold",type=Path,help="Unloaded physical continuation after the last floor NOTE")
     p.add_argument("--counter-reset",type=Path,action="append",default=[])
+    p.add_argument("--placement-roster",type=Path)
     args=p.parse_args()
     chain=[bool(v) for v in (args.previous,args.entry_acquisition,args.pickup_clearance,args.counter_reset)]
-    if any(chain) and not all(chain):p.error("A continued score needs its preceding score, pickup, native sweep and counter reset")
+    if any(chain) and not all(chain) and not (args.placement_roster and chain == [False,True,True,False]):p.error("A continued score needs its preceding score, pickup, native sweep and counter reset")
     result=verify(args)
     with args.output.open("x") as stream:
         json.dump(result,stream,indent=2,allow_nan=False)
