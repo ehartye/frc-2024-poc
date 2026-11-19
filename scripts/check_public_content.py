@@ -24,6 +24,8 @@ def findings(data):
  return [name for name,p in PATTERNS.items() if re.search(p,text)]
 SHOWCASE_ASSETS["docs/media/r7-nominal-d1.glb"] = "5bfe2bbbfe008a4915b23f4d185790aacef62e921498ccd2f6bcd588f4fe8e02"
 
+SHOWCASE_ASSETS["cad/student/r7-maxswerve.f3d"] = "6e2b65f3493dfd0a8c7a27bbf26445dec29213e93806ff9b0c55df5548b00266"
+
 def git(*args):return subprocess.check_output(['git','-C',str(ROOT),*args])
 def audit(revision='HEAD'):
  failures=[]
