@@ -1,0 +1,130 @@
+{
+  "archiveSha256": "df4729ee67430b8ac6bf23d76d9e4be6fe0362149878c8d65bb74472343975e9",
+  "parentArchiveSha256": "d60f5c4a4f6cc8fbd9001d3a45c41a930e66dc6e9103518ef1d65d16ced27154",
+  "installedArticles": 24,
+  "supersededArticles": 5,
+  "retainedModuleSolids": 1092,
+  "retainedFoamSolids": 8,
+  "mounts": 8,
+  "screwHeadBearingMm2": [
+    44.3279,
+    44.3279
+  ],
+  "nutFlangeBearingMm2": [
+    158.5239,
+    158.5239
+  ],
+  "nominalEngagementMm": [
+    7.313,
+    11.25
+  ],
+  "tipToOutsideMm": [
+    0.75,
+    4.687
+  ],
+  "railSeatMm2": {
+    "Left": 18526.5,
+    "Right": 18526.5,
+    "Rear": 18765.0
+  },
+  "cornerSeatMm2": [
+    241.935,
+    241.935,
+    241.935,
+    241.935
+  ],
+  "materialOverlapThresholdMm3": 0.01,
+  "installedOverlaps": 0,
+  "toolGauge": {
+    "diameterMm": 16,
+    "lengthMm": 48,
+    "stations": 8,
+    "obstructions": 0
+  },
+  "removal": {
+    "direction": "Raise chassis above supported bumper after withdrawing screws",
+    "chassisRiseMm": 200,
+    "checkedWoodAndFoamBodies": 12,
+    "obstructions": 0,
+    "finalVerticalGapMm": 14.5
+  },
+  "mechanismTravel": {
+    "registeredInventorySha256": "3b311a1546d1e24ea92b80d16459174cbc547f2db92bcf3974b81b43f90d132f",
+    "stationaryEnvelopes": 39,
+    "mechanismBodies": 188,
+    "pitchIntervals": 60,
+    "liftRangeMm": [
+      0,
+      450
+    ],
+    "pitchRangeDeg": [
+      0,
+      60
+    ],
+    "minimumAxisSeparationMm": 2.8953886271107194
+  },
+  "sampledNoteClearance": [
+    {
+      "nativeMeasurementSha256": "db50f76d612ffcf7c0330a5c03459eebfb3904ac8be2f80470f528c8ced8d538",
+      "attempt": "D1",
+      "pickupTrace": "2b734e88ae8cd155a2cf198c211dafdf07b88fb0e824228fe3afebdc67f8bf3d",
+      "carryTrace": "ce0193e1175b12af63a564e59acf3d50cda6d9597dc791a49fb49a9d1b7098a3",
+      "samples": 19789,
+      "closestEnvelopeLowerMm": 2.886269318060934,
+      "closestEnvelopeUpperMm": 2.967397929891831,
+      "angularSamples": 4096,
+      "witness": {
+        "part": "Front bumper frame rail",
+        "timeS": 5.885999999999457
+      }
+    },
+    {
+      "nativeMeasurementSha256": "db50f76d612ffcf7c0330a5c03459eebfb3904ac8be2f80470f528c8ced8d538",
+      "attempt": "D2",
+      "pickupTrace": "710cd7fa0cc503af25aee38f623b4cabf17a81c20a1f88a713e497ac43029eb3",
+      "carryTrace": "7ef540107771df265e79ea92431162095ce951d162111d3e0dee62bfe67617d2",
+      "samples": 20109,
+      "closestEnvelopeLowerMm": 2.7024763592486636,
+      "closestEnvelopeUpperMm": 2.792234602031506,
+      "angularSamples": 4096,
+      "witness": {
+        "part": "Front bumper frame rail",
+        "timeS": 6.045999999999369
+      }
+    }
+  ],
+  "simplySupportedBeamStudy": {
+    "loadN": 1000.0,
+    "spanMm": 704.15,
+    "elasticModulusMPa": 69000.0,
+    "fittedPlate": {
+      "centerEffectiveInertiaMm4": 2577.5645840499074,
+      "stressMPa": 396.22002872991703,
+      "deflectionMm": 38.96734753319106
+    },
+    "forwardBoxConcept": {
+      "depthMm": 38.1,
+      "heightMm": 50.8,
+      "wallMm": 3.175,
+      "frontFaceShiftMm": 34.925,
+      "inertiaMm4": 115574.67644427084,
+      "stressMPa": 29.015996221430367,
+      "deflectionMm": 0.9121001695602922
+    }
+  },
+  "designDisposition": "Fit and service prototype. Replace front plate before impact qualification.",
+  "forwardTubeConceptScreen": {
+    "status": "Proposed tube only, before corner attachments or panel changes",
+    "existingSolidsVisited": 1769,
+    "overlappingCurrentPhysicalParts": [
+      "front frame rail",
+      "front plywood panel",
+      "lower front foam cushion"
+    ],
+    "overlappingDisplayCovers": 2,
+    "tubeToNoteSampleLowerMm": {
+      "D1": 3.7471150168631175,
+      "D2": 3.6353235814963916
+    }
+  }
+}
