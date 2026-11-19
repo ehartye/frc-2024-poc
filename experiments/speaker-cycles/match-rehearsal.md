@@ -1,6 +1,6 @@
 # Three six-robot CRESCENDO rehearsals
 
-Open the [field lab](https://ehartye.github.io/frc-2024-poc/field-lab.html#rehearsal) and choose **Play match series at 10×**. For offline use, open the committed [standalone page](../../docs/field-lab.html) in a browser. The three matches run for 45 seconds of playback, with 15 seconds of AUTO and 135 seconds of TELEOP on each game clock. The robot cards stay under their own alliance when the user alternates red and blue additions.
+Open the [field lab](https://ehartye.github.io/frc-2024-poc/field-lab.html#rehearsal) and choose **Published scenarios**, then **Play match series at 10×**. To repeat your own setup three times, select **My roster · 3 matches**. **Reset** restores the robots, period behaviors and obstacle setup you edited before playback. For offline use, open the committed [standalone page](../../docs/field-lab.html) in a browser. The three matches run for 45 seconds of playback, with 15 seconds of AUTO and 135 seconds of TELEOP on each game clock. The robot cards stay under their own alliance when the user alternates red and blue additions.
 
 | Match | Change in the scenario | Blue / red NOTE points |
 | --- | --- | --- |
@@ -14,7 +14,7 @@ Coordinates use inches from the blue end wall and scoring-table border. Wing and
 
 ### Reproduce
 
-With [Agent FRC 0.31.1](https://github.com/ehartye/agent-frc/tree/266805cd793fa5be4dbc68700e7b275bf782a60e), run the following from this project. The HTML builder writes to an unused filename. The JSON contains the SHA-256 of the exact project profile, the 0.05 s simulation step, both period cutoffs and all three final rosters.
+With [Agent FRC 0.35.0](https://github.com/ehartye/agent-frc/tree/0fbf18d8ebb00e34fbd55f06a98e9169509cfca1), run the following from this project. The HTML builder writes to an unused filename. The JSON contains the SHA-256 of the exact project profile, the 0.05 s simulation step, both period cutoffs and all three final rosters.
 
 ```powershell
 node "$AgentFrc/scripts/rehearsal-series.mjs" kickoff/crescendo-field.json $Results

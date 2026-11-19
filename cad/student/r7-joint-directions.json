@@ -1,0 +1,92 @@
+{
+  "Lift": {
+    "frame": "R7 chassis",
+    "sign": 1,
+    "axis": [
+      0,
+      0,
+      1
+    ]
+  },
+  "Pitch": {
+    "frame": "R7 cradle",
+    "sign": -1,
+    "axis": [
+      0,
+      -1,
+      0
+    ]
+  },
+  "Front left azimuth": {
+    "frame": "Front left carrier",
+    "sign": -1,
+    "axis": [
+      0,
+      0,
+      -1
+    ]
+  },
+  "Front left roll": {
+    "frame": "Front left wheel",
+    "sign": -1,
+    "axis": [
+      0.0,
+      -1.0,
+      0
+    ]
+  },
+  "Front right azimuth": {
+    "frame": "Front right carrier",
+    "sign": -1,
+    "axis": [
+      0,
+      0,
+      -1
+    ]
+  },
+  "Front right roll": {
+    "frame": "Front right wheel",
+    "sign": -1,
+    "axis": [
+      -0.0,
+      -1.0,
+      0
+    ]
+  },
+  "Rear left azimuth": {
+    "frame": "Rear left carrier",
+    "sign": -1,
+    "axis": [
+      0,
+      0,
+      -1
+    ]
+  },
+  "Rear left roll": {
+    "frame": "Rear left wheel",
+    "sign": -1,
+    "axis": [
+      0.0,
+      -1.0,
+      0
+    ]
+  },
+  "Rear right azimuth": {
+    "frame": "Rear right carrier",
+    "sign": -1,
+    "axis": [
+      0,
+      0,
+      -1
+    ]
+  },
+  "Rear right roll": {
+    "frame": "Rear right wheel",
+    "sign": -1,
+    "axis": [
+      0.0,
+      -1.0,
+      0
+    ]
+  }
+}
