@@ -11,6 +11,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "sim/pressure"))
 from maxswerve import KE, LIMIT_A, RESISTANCE, SwervePickup
 from run_axial_shear_lift import ROOT, load
 from second_wing_pickup import ReturnPlant
+from wing_note_release import SwerveShot
 
 
 def at_rest(plant_type):
@@ -25,6 +26,15 @@ def at_rest(plant_type):
 class SwerveTest(unittest.TestCase):
     def setUp(self):
         self.p = at_rest(SwervePickup)
+
+    def test_shooting_station_uses_field_error_on_four_modules(self):
+        shot = at_rest(SwerveShot)
+        shot.data.qpos[2] = math.pi/2
+        mujoco.mj_forward(shot.model,shot.data)
+        shot.shoot_position = np.array([.01,0.])
+        shot.shoot_heading = math.pi/2
+        expected = self.p.module_duties(0.,-.024,0.)
+        np.testing.assert_allclose(shot.station_drive(),expected,atol=1e-12)
 
     def test_module_registration_and_conserved_chassis_inertia(self):
         p = self.p
