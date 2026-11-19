@@ -1,0 +1,158 @@
+{
+  "schema": "maxswerve-development-first-shot/1",
+  "purpose": "Compare paired first-NOTE times and detect sensitivity to wheel-contact quadrature before mission evaluation.",
+  "formalAttempts": 0,
+  "controls": {
+    "dt": 5e-05,
+    "grid": 512,
+    "commonCommand": {
+      "launcherDutyLimit": 0.8,
+      "pinchDuty": 0.23,
+      "targetRpm": 3950,
+      "pitchTrimDeg": -0.117,
+      "heightTrimMm": 0.84,
+      "rampS": 0.3
+    },
+    "fieldDt": 0.0001,
+    "fieldContactNodes": 192
+  },
+  "pairedDenseObservations": [
+    {
+      "attempt": "D1",
+      "carryTrace": "ce0193e1175b12af63a564e59acf3d50cda6d9597dc791a49fb49a9d1b7098a3",
+      "sourceNativeSha256": "ae6c40659f7a215573b1e172ae7aec3e90d62a94b8c27863234ee7c8cf275ce2",
+      "stationS": 9.894500000000601,
+      "releaseS": 10.566049999999036,
+      "minimumBusV": 9.433071741499333,
+      "peakDriveAndSteerCurrentA": [
+        2.154190136110481,
+        20.0
+      ],
+      "opening": {
+        "firstPossibleS": 10.665949999998803,
+        "fullyThroughByS": 10.704549999998713,
+        "minimumMarginM": 0.08902438080144344
+      },
+      "firstFullShadowsS": [
+        12.915049999993562,
+        12.800549999993828
+      ],
+      "firstSimultaneousFullShadowS": 12.915049999993562,
+      "bestMarginPerPairM": [
+        0.008442969372913955,
+        0.008678582403731944
+      ],
+      "bestSimultaneousMarginM": 0.006668345675884486,
+      "countedFloorNotes": 1,
+      "fieldTrace": "1ace77c1349770ebcd68817587caf9528fcfb73756f42932677a62f5867d8e52",
+      "sensorFile": "13d07c04856ee1ca927d8f17fa29570e6ead74cc1c917f1879b94b3b9d8b236f",
+      "sourceTrace": "0995c2499c9344b21fd0a5e42c6dec296723a498782927bcad37369c54ab0dcf",
+      "sixWheelBaselineFirstScoreS": 14.99049999999205,
+      "earlierThanBaselineS": 2.0754499999984883
+    },
+    {
+      "attempt": "D2",
+      "carryTrace": "7ef540107771df265e79ea92431162095ce951d162111d3e0dee62bfe67617d2",
+      "sourceNativeSha256": "ae6c40659f7a215573b1e172ae7aec3e90d62a94b8c27863234ee7c8cf275ce2",
+      "stationS": 10.054500000000797,
+      "releaseS": 10.725849999999232,
+      "minimumBusV": 9.433073174761233,
+      "peakDriveAndSteerCurrentA": [
+        2.176506492675872,
+        20.0
+      ],
+      "opening": {
+        "firstPossibleS": 10.825849999998999,
+        "fullyThroughByS": 10.86414999999891,
+        "minimumMarginM": 0.0781533323000752
+      },
+      "firstFullShadowsS": [
+        14.213949999991103,
+        14.102949999991361
+      ],
+      "firstSimultaneousFullShadowS": 14.213949999991103,
+      "bestMarginPerPairM": [
+        0.008448706778801735,
+        0.008778589713283092
+      ],
+      "bestSimultaneousMarginM": 0.006702035748669809,
+      "countedFloorNotes": 1,
+      "fieldTrace": "5f25c15b4fdcc8649bdfeb26d412123873d6705029cf1a8df636e54d8014edb7",
+      "sensorFile": "13d07c04856ee1ca927d8f17fa29570e6ead74cc1c917f1879b94b3b9d8b236f",
+      "sourceTrace": "1b6350060c6849150e4a56245215218eeff98af3b9a1788adfe0770de47baff1",
+      "sixWheelBaselineFirstScoreS": 14.887649999992332,
+      "earlierThanBaselineS": 0.6737000000012294
+    }
+  ],
+  "quadratureChecks": [
+    {
+      "attempt": "D1",
+      "segments": 8192,
+      "ringPhaseDeg": 0.0,
+      "outcome": "UNSUPPORTED_SUBSTRATE_CONTACT",
+      "traceSha256": "edefdb7985769bd7a322bf9908daa3d0f38c82b1b804c19a05adea3f77d57ac7",
+      "end": 10.518349999999147
+    },
+    {
+      "attempt": "D1",
+      "segments": 16384,
+      "ringPhaseDeg": 0.0,
+      "outcome": "UPWARD_FREE_RELEASE",
+      "traceSha256": "0995c2499c9344b21fd0a5e42c6dec296723a498782927bcad37369c54ab0dcf",
+      "end": 10.566049999999036,
+      "fullyThroughByS": 10.704549999998713,
+      "sensorPairCount": 1,
+      "bothSensorsS": 12.915049999993562,
+      "fieldTrace": "1ace77c1349770ebcd68817587caf9528fcfb73756f42932677a62f5867d8e52"
+    },
+    {
+      "attempt": "D1",
+      "segments": 16384,
+      "ringPhaseDeg": 0.010986328125,
+      "outcome": "UNSUPPORTED_SUBSTRATE_CONTACT",
+      "traceSha256": "234c75ffd4c52ed069c8877df3477e848977b64c9f0a8a6a12569be79100aa18",
+      "end": 10.518099999999148
+    },
+    {
+      "attempt": "D2",
+      "segments": 8192,
+      "ringPhaseDeg": 0.0,
+      "outcome": "UPWARD_FREE_RELEASE",
+      "traceSha256": "e8dab2cdafd57fdfa4218545bf73a4eedf0a9ccaa36531ce55107bef36eaa48d",
+      "end": 10.725949999999232,
+      "fullyThroughByS": 10.86414999999891,
+      "sensorPairCount": 0,
+      "bothSensorsS": null,
+      "fieldTrace": "b8856141c5566ffc337794825da97f03b582853a388945501f65474cac046e4d"
+    },
+    {
+      "attempt": "D2",
+      "segments": 16384,
+      "ringPhaseDeg": 0.0,
+      "outcome": "UPWARD_FREE_RELEASE",
+      "traceSha256": "1b6350060c6849150e4a56245215218eeff98af3b9a1788adfe0770de47baff1",
+      "end": 10.725849999999232,
+      "fullyThroughByS": 10.86414999999891,
+      "sensorPairCount": 1,
+      "bothSensorsS": 14.213949999991103,
+      "fieldTrace": "5f25c15b4fdcc8649bdfeb26d412123873d6705029cf1a8df636e54d8014edb7"
+    },
+    {
+      "attempt": "D2",
+      "segments": 16384,
+      "ringPhaseDeg": 0.010986328125,
+      "outcome": "UPWARD_FREE_RELEASE",
+      "traceSha256": "3370b1f162592c80f4373f4f30c01e89fb0327f4f0be25b879a3835e3b25463d",
+      "end": 10.725899999999232,
+      "fullyThroughByS": 10.86419999999891,
+      "sensorPairCount": 1,
+      "bothSensorsS": 14.141199999991272,
+      "fieldTrace": "bda7d96cc06ee81fa37bf88dad22dc0bb359d892a497c9f3df2392083670d363"
+    }
+  ],
+  "limits": [
+    "Upper mechanism and planar chassis dynamics use the articulated-pickup model.",
+    "D1 changes outcome when the sample phase changes. D2 misses both counters on the coarser grid.",
+    "Full native rigid clearance during release and flight, later NOTES and the frozen mission cohort remain open."
+  ]
+}

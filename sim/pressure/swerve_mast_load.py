@@ -15,13 +15,7 @@ from verify_swerve_carry import verify
 def measure(pickup, carry):
     receipt = verify(pickup,carry)
     source = load(pickup/"result.json")
-    q = source["initialQ"]
-    start = dict(chassis=dict(x=q[0],y=q[1],heading=q[2],vx=0.,vy=0.,yaw_rate=0.,wheel=[0.,0.]),
-                 note=dict(p=q[-7:-5],v=[0.,0.],yaw=0.,spin=0.,w=[0.,0.]))
-    state = dict(q=q[:5]+q[-7:],v=[0.]*11,busV=12.,clock=0.,rotor=[0.]*4,shear=[0.]*4)
-    calibration = load(ROOT/"sim/mujoco/evidence/launcher-quadrature-verification-20261118.json")
-    plant = SwervePickup(start,state,receipt["dt"],receipt["grid"],32,
-                         calibration["runs"]["grid-16384"]["parameters"])
+    plant = SwervePickup.from_floor_receipt(source,receipt["dt"],receipt["grid"],32)
     model,data = plant.model,plant.data
     groups = [model.body(name).id for name in ("carriage","note")]
     masses = model.body_subtreemass[groups]

@@ -29,6 +29,17 @@ def numbers(values):
 class SwervePickup(DeliveryPlant):
     """Wheel angles and speeds are attained coordinates; commands request a body twist."""
 
+    @classmethod
+    def from_floor_receipt(cls, pickup, dt, grid, segments, *, ring_phase_deg=0.):
+        """Reconstruct the four-module topology before restoring an attained state."""
+        q = pickup["initialQ"]
+        start = dict(timeS=0.,chassis=dict(x=q[0],y=q[1],heading=q[2],vx=0.,vy=0.,yaw_rate=0.,wheel=[0.,0.]),
+                     note=dict(p=q[-7:-5],v=[0.,0.],yaw=0.,spin=0.,w=[0.,0.]))
+        state = dict(q=q[:5]+q[-7:],v=[0.]*11,busV=12.,clock=0.,rotor=[0.]*4,shear=[0.]*4)
+        calibration = load(ROOT/"sim/mujoco/evidence/launcher-quadrature-verification-20261118.json")
+        return cls(start,state,dt,grid,segments,calibration["runs"]["grid-16384"]["parameters"],
+                   ring_phase_deg=ring_phase_deg)
+
     def drivetrain_xml(self, xml):
         layout = load(LAYOUT)
         module = layout["module"]

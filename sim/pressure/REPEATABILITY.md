@@ -101,3 +101,22 @@ Run with the pinned simulator and the private articulated F3D. Each output argum
 python -B sim/pressure/varied_floor_start.py --archive $ArticulatedRobot --drivetrain maxswerve --roster sim/pressure/evidence/speaker-pickup-development-starts.csv --attempt D1 --output $Pickup --carry-output $Carry
 python -B sim/pressure/verify_swerve_carry.py $Pickup $Carry
 ```
+
+### First Speaker shot with the four-module drivetrain
+
+The release runner restores the carry endpoint on its original clock, including chassis and module positions and velocities, the free NOTE, external rotors, belt shear, bus voltage and accumulated source energy. All eight module motors share the battery while holding the shooting station. The launcher uses the six-wheel control settings for both starts. The same registered field solver follows the free NOTE into the Speaker and checks both opposing counter sensor pairs.
+
+| Mirrored start | Arrival | Free release | Whole NOTE through opening | Both sensors | Six-wheel baseline |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| D1 | 9.895 s | 10.566 s | 10.705 s | 12.915 s | 14.991 s |
+| D2 | 10.055 s | 10.726 s | 10.864 s | 14.214 s | 14.888 s |
+
+These development results use 16,384 launcher contact samples at 50 μs. With 8,192 samples, D1 reached the unsupported tread-depth limit. On D2 the ring passed through the opening and bounced back into the field without triggering either counter. Rotating the 16,384 samples by half a segment also reached the tread-depth limit on D1. The contact calculation needs to converge under refinement, and a native rigid-clearance check is still due on these trajectories. The twenty six-NOTE evaluation slots remain open. [Paired observations and controls](evidence/maxswerve-development-shot.json)
+
+Pass the original swerve floor-pickup run as `--pickup` and the matching loaded carry as `--delivery`. Use the installed articulated robot archive that produced the input trajectories. The field command needs the local field meshes and the registered sensor file.
+
+```powershell
+python -B sim/pressure/wing_note_release.py --pickup $Pickup --archive $ArticulatedRobot --delivery $Carry --output $Shot --dt .00005 --grid 512 --segments 16384 --duty .8 --pinch-duty .23 --target-rpm 3950 --pitch-trim-deg -.117 --height-trim-mm .84 --align-seconds .3 --first-mark middle --field-yaw-deg 245
+python -B sim/pressure/run_speaker_field.py $Shot $Field $Flight --dt .0001 --nodes 192 --first-mark middle --field-yaw-deg 245 --trace-every-step --horizon 5
+python -B sim/pressure/swerve_shot_observation.py $Pickup $Carry $Shot $Flight $Sensor
+```

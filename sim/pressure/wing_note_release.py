@@ -8,6 +8,7 @@ import numpy as np
 from launcher_handoff import RaisedFeed
 from mission_runtime import runtime_versions
 from run_axial_shear_lift import digest, load
+from maxswerve import SwervePickup
 from second_wing_pickup import angle_error, build_seated
 from wing_note_delivery import DeliveryPlant, restore, tail
 
@@ -50,13 +51,36 @@ class ShotPlant(DeliveryPlant):
                 pinch=hold["pinch"]
             else:
                 self.brakes=[0.,0.]
+        return self.station_drive(), actuator, pinch, duty
+
+    def station_drive(self):
         _, heading, speed = self.observe()
         direction = np.array([np.cos(heading), np.sin(heading)])
         speed_ref = (self.shoot_position-self.data.qpos[:2])@direction
         common = .8*(speed_ref-speed)
         turn = 3*angle_error(self.shoot_heading,heading)
         diff = .65*(turn-self.data.qvel[2]) + .21*turn
-        return np.clip([common-diff,common+diff],-.3,.3).tolist(),actuator,pinch,duty
+        return np.clip([common-diff,common+diff],-.3,.3).tolist()
+
+
+class SwerveShot(ShotPlant,SwervePickup):
+    """Use the four installed modules to hold the shooting station during feed."""
+
+    def station_drive(self):
+        error = self.shoot_position - self.data.qpos[:2]
+        body_error = self.data.xmat[self.chassis].reshape(3,3)[:2,:2].T @ error
+        turn = 2.5 * angle_error(self.shoot_heading,self.data.qpos[2])
+        return self.module_duties(*np.clip(2.4*body_error,-.12,.12),np.clip(turn,-.20,.20))
+
+
+def swerve_from_pickup(args):
+    from verify_swerve_carry import verify
+    chain = verify(args.pickup,args.delivery)
+    if digest(args.archive)!=chain["nativeSha256"]:
+        raise ValueError("Swerve archive differs from the pickup and carry model")
+    plant = SwerveShot.from_floor_receipt(load(args.pickup/"result.json"),args.dt,args.grid,args.segments,
+                                          ring_phase_deg=args.ring_phase_deg)
+    return plant,dict(native=chain["nativeSha256"])
 
 
 def run(args):
@@ -65,7 +89,12 @@ def run(args):
     phase = args.ring_phase_deg
     if not 0. <= phase < 360. / args.segments:
         raise ValueError("Use a ring phase within one sampling interval")
-    p, pins = build_seated(args, ShotPlant, args.segments, ring_phase_deg=phase)
+    rc = load(args.delivery/"result.json")
+    swerve = rc.get("drivetrain")=="maxswerve"
+    if swerve:
+        p,pins = swerve_from_pickup(args)
+    else:
+        p,pins = build_seated(args, ShotPlant, args.segments, ring_phase_deg=phase)
     p.target_rpm=args.target_rpm
     p.align_seconds=args.align_seconds
     if not np.isfinite(p.align_seconds) or not 0.<=p.align_seconds<=2.:
@@ -84,12 +113,13 @@ def run(args):
         if not 0.<args.pinch_duty<=1.:
             raise ValueError("Invalid intake feed duty")
         p.launcher["pinchDuty"]=args.pinch_duty
-    rc = load(args.delivery/"result.json")
     if (rc["outcome"]!="AT_SHOOTING_POSE" or rc["nativeSha256"]!=pins["native"]
             or (rc.get("firstMark","inner"),rc.get("fieldYawDeg",90.))!=(args.first_mark,args.field_yaw_deg)):
         raise ValueError("Missing the retained NOTE at the shooting pose")
     row=tail(args.delivery,rc)
     restore(p,row)
+    if swerve:
+        p.angle_target = p.mount + p.data.qpos[p.az_pos]
     p.shoot_position=np.array(rc["shootPosition"])
     p.shoot_heading=rc["shootHeading"]
     p.start_height,p.start_pitch=row["q"][3:5]
@@ -140,6 +170,10 @@ def run(args):
     result["collectedMarks"]=rc.get("collectedMarks",[args.first_mark] if rc.get("fieldStation") else [args.first_mark,"middle"])
     if "attempt" in rc:
         result.update(attempt=rc["attempt"], rosterSha256=rc["rosterSha256"])
+    if swerve:
+        result.update(drivetrain="maxswerve",initialRotors=row["rotor"],initialShearM=row["shear"],
+                      initialBusV=row["busV"],initialSourceJ=row["sourceJ"],
+                      peakDriveAndSteerCurrentA=p.peak_current.tolist())
     (args.output/"result.json").write_text(json.dumps(result,indent=2,allow_nan=False)+"\n")
     print(outcome,p.data.time,flush=True)
 
