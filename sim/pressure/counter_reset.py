@@ -22,9 +22,15 @@ def centers(folder):
             if first is None:first=last
             values.append([last["t"],*last["q"]])
     data=np.array(values)
+    expected=np.full(max(0,len(data)-1),float(rc["parameters"]["dt"]))
+    if "finalStepS" in rc:
+        final=rc["finalStepS"]
+        if not len(expected) or not 0.<final<=expected[-1]+1e-8:
+            raise ValueError("Invalid final integration interval")
+        expected[-1]=final
     if (len(data)<2 or data.shape[1]!=8 or not np.isfinite(data).all()
             or not np.allclose(np.linalg.norm(data[:,4:],axis=1),1.,rtol=0.,atol=1e-8) or
-            not np.allclose(np.diff(data[:,0]),rc["parameters"]["dt"],atol=1e-8,rtol=0)
+            not np.allclose(np.diff(data[:,0]),expected,atol=1e-8,rtol=0)
             or abs(data[0,0]-rc.get("segmentStartS",rc["releaseTimeS"]))>1e-8
             or abs(data[-1,0]-rc["endS"])>1e-8):
         raise ValueError("Incomplete field time history")

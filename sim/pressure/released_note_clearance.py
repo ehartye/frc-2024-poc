@@ -99,13 +99,15 @@ def flight_environment(field,robot,frame,installed):
     run=load(robot/"result.json")
     with (field/"trace.jsonl").open("rb") as stream:
         flight=np.array([[r["t"],*r["q"][:3]] for r in map(json.loads,stream)])
-    with (robot/"trace.jsonl").open("rb") as stream:
-        moving=np.array([[r["t"],*frame.to_field(r["q"][-7:-4])] for r in map(json.loads,stream)])
-    mark=frame.mark(run["collectedMarks"][-1])
-    moving=np.vstack(([run["start"],*mark[:2],.0254-.235*9.80665/20000],moving))
-    times=np.unique(np.r_[flight[:,0],moving[moving[:,0]<=flight[-1,0],0]])
+    moving=None
+    times=flight[:,0]
+    if run.get("schema")!="post-release-station-hold/1":
+        with (robot/"trace.jsonl").open("rb") as stream:
+            moving=np.array([[r["t"],*frame.to_field(r["q"][-7:-4])] for r in map(json.loads,stream)])
+        mark=frame.mark(run["collectedMarks"][-1])
+        moving=np.vstack(([run["start"],*mark[:2],.0254-.235*9.80665/20000],moving))
+        times=np.unique(np.r_[times,moving[moving[:,0]<=flight[-1,0],0]])
     centers=np.column_stack([np.interp(times,flight[:,0],v) for v in flight[:,1:].T])
-    next_note=np.column_stack([np.interp(times,moving[:,0],v) for v in moving[:,1:].T])
     # Both centers interpolate linearly between solver boundaries. Their closest
     # approach on a common interval is the point on that relative-motion segment.
     def pair_gap(other):
@@ -113,7 +115,10 @@ def flight_environment(field,robot,frame,installed):
         delta=np.diff(rel,axis=0)
         alpha=np.clip(-np.sum(rel[:-1]*delta,axis=1)/np.maximum(1e-30,np.sum(delta**2,axis=1)),0.,1.)
         return float(np.min(np.linalg.norm(rel[:-1]+alpha[:,None]*delta,axis=1))-.3556)
-    gaps=[pair_gap(next_note)]
+    gaps=[]
+    if moving is not None:
+        next_note=np.column_stack([np.interp(times,moving[:,0],v) for v in moving[:,1:].T])
+        gaps.append(pair_gap(next_note))
     for name in SUPPLY_MARKS.keys()-set(run["collectedMarks"]):
         gaps.append(pair_gap(frame.mark(name)+[0,0,.0254]))
     exempt=SURFACES|GAME_PIECES|{"GE-24300_Briweld Field Blue"}
@@ -121,7 +126,10 @@ def flight_environment(field,robot,frame,installed):
     lower=centers.min(axis=0)-.177803
     upper=centers.max(axis=0)+.177803
     axis_gap=np.maximum(boxes[:,0]-upper,lower-boxes[:,1]).max(axis=1)
-    return dict(minimumOtherNoteGapM=min(gaps),otherFieldEnvelopeOverlaps=int(np.sum(axis_gap<=0)))
+    result=dict(minimumOtherNoteGapM=min(gaps) if gaps else None,otherFieldEnvelopeOverlaps=int(np.sum(axis_gap<=0)))
+    if moving is None:
+        result["remainingFloorNotes"]=sorted(SUPPLY_MARKS.keys()-set(run["collectedMarks"]))
+    return result
 
 
 if __name__=="__main__":

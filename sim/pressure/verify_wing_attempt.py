@@ -5,11 +5,21 @@ from pathlib import Path
 
 from run_axial_shear_lift import EVIDENCE, digest, load
 from speaker_score_observer import observe
-from wing_field_frame import WingFrame, piece_id
+from wing_field_frame import SUPPLY_MARKS, WingFrame, piece_id
+
+
+def finish_inventory(ret,shot,scored_pieces):
+    marks=ret["collectedMarks"]
+    if (ret.get("schema")!="post-release-station-hold/1" or ret["outcome"]!="HELD"
+            or len(marks)!=len(SUPPLY_MARKS) or set(marks)!=set(SUPPLY_MARKS)
+            or marks!=shot["collectedMarks"] or [piece_id(mark) for mark in marks]!=scored_pieces):
+        raise ValueError("A final hold requires all six distinct floor pieces in score order")
 
 
 def verify(a):
-    carry,shot,field,ret=[load(folder/"result.json") for folder in (a.delivery,a.shot,a.flight,a.acquisition)]
+    hold=getattr(a,"final_hold",None)
+    following=hold or a.acquisition
+    carry,shot,field,ret=[load(folder/"result.json") for folder in (a.delivery,a.shot,a.flight,following)]
     route,flight_clear,carry_clear,native,refined=map(load,(
         a.route_clearance,a.flight_clearance,a.delivery_clearance,a.shot_clearance,a.shell_refinement))
     pins=load(EVIDENCE/"turning-lift-20261118/refined-end-to-end.json")["freshInputDigests"]
@@ -66,7 +76,7 @@ def verify(a):
         if (mark,heading)!=(frame.first_mark,frame.yaw_degrees):
             raise ValueError("Field frames differ across the mission")
     for folder,expected in ((a.delivery,carry["trace"]),(a.shot,shot["traceSha256"]),
-                            (a.acquisition,ret["trace"]),(a.flight,field["trace"])):
+                            (following,ret["trace"]),(a.flight,field["trace"])):
         if digest(folder/"trace.jsonl")!=expected:
             raise ValueError("Trace hash mismatch")
     with (a.delivery/"trace.jsonl").open("rb") as stream:
@@ -84,10 +94,16 @@ def verify(a):
             or carry["pieceId"]!=target_piece or not 0.<x<=1.50
             or carry["minimumSideLoadN"]<=.02):
         raise ValueError("Close-range station or retained physical state mismatch")
+    if hold:
+        from post_release_hold import verify_hold
+        verify_hold(hold,ret)
+        finish_inventory(ret,shot,[i["piece"] for i in history]+[target_piece])
+    elif ret["pieceId"]==shot["pieceId"]:
+        raise ValueError("The next pickup must be a different NOTE")
     if (carry["acquisitionTrace"]!=pickup_trace or carry["outcome"]!="AT_SHOOTING_POSE"
             or shot["outcome"]!="UPWARD_FREE_RELEASE" or shot["pieceId"]!=carry["pieceId"]
             or shot["sourceTraceSha256"]!=carry["trace"] or ret["firstReleaseTrace"]!=shot["traceSha256"]
-            or field["sourceTrace"]!=shot["traceSha256"] or ret["pieceId"]==shot["pieceId"]
+            or field["sourceTrace"]!=shot["traceSha256"]
             or abs(carry["end"]-shot["start"])>1e-8 or abs(shot["end"]-ret["start"])>1e-8):
         raise ValueError("Discontinuous or incomplete attempt")
     if (carry_clear["source"]!=carry["trace"] or carry_clear["unresolved"]
@@ -101,10 +117,14 @@ def verify(a):
             or abs(route["results"][0]["begin"]-prior_start)>1e-8 or abs(route["results"][0]["end"]-shot["end"])>1e-8
             or abs(route["results"][1]["begin"]-ret["start"])>1e-8):
         raise ValueError("Whole-field route has unverified intervals")
+    environment=flight_clear["environment"]
+    other_gap=environment["minimumOtherNoteGapM"]
+    if hold and (environment.get("remainingFloorNotes")!=[] or other_gap is not None):
+        raise ValueError("Unaccounted floor inventory during the terminal flight")
     if (flight_clear["robot"]!=ret["trace"] or flight_clear["field"]!=field["trace"]
             or flight_clear["fieldBounds"]!=route["fieldBounds"] or flight_clear["unresolvedIntervals"]
-            or flight_clear["environment"]["otherFieldEnvelopeOverlaps"]
-            or flight_clear["environment"]["minimumOtherNoteGapM"]<=0.):
+            or environment["otherFieldEnvelopeOverlaps"]
+            or (not hold and (other_gap is None or other_gap<=0.))):
         raise ValueError("Released NOTE conflicts with other field participants")
     observation=observe(a.flight,a.sensor)
     time=observation["firstSimultaneousFullShadowS"]
@@ -118,7 +138,8 @@ def verify(a):
                 openedByS=observation["opening"]["fullyThroughByS"],releaseS=shot["end"],native=pins["native"],
                 firstMark=carry["firstMark"],fieldYawDeg=carry["fieldYawDeg"],chassisFieldXY=[x,y],
                 firstPickupStop=pins["stop"],carry=carry["trace"],shot=shot["traceSha256"],field=field["trace"],
-                nextPickup=ret["trace"],fieldRoute=digest(a.route_clearance),flightClearance=digest(a.flight_clearance),
+                **({"finalHold":ret["trace"]} if hold else {"nextPickup":ret["trace"]}),
+                fieldRoute=digest(a.route_clearance),flightClearance=digest(a.flight_clearance),
                 shellRefinement=digest(a.shell_refinement),sensorObservation=observation)
     if history:
         result.update(pickupClearance=digest(a.pickup_clearance), deliveryClearance=digest(a.delivery_clearance),
@@ -128,11 +149,14 @@ def verify(a):
 
 if __name__=="__main__":
     p=argparse.ArgumentParser(description=__doc__)
-    for key in ("delivery","shot","flight","acquisition","sensor","route-clearance","flight-clearance",
+    for key in ("delivery","shot","flight","sensor","route-clearance","flight-clearance",
                 "delivery-clearance","shot-clearance","shell-refinement","output"):
         p.add_argument("--"+key,type=Path,required=True)
     for key in ("previous","entry-acquisition","pickup-clearance"):
         p.add_argument("--"+key,type=Path)
+    after=p.add_mutually_exclusive_group(required=True)
+    after.add_argument("--acquisition",type=Path)
+    after.add_argument("--final-hold",type=Path,help="Unloaded physical continuation after the last floor NOTE")
     p.add_argument("--counter-reset",type=Path,action="append",default=[])
     args=p.parse_args()
     chain=[bool(v) for v in (args.previous,args.entry_acquisition,args.pickup_clearance,args.counter_reset)]
