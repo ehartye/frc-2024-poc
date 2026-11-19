@@ -2,11 +2,22 @@
 
 The 2024 practice study starts empty, drives over a marked floor NOTE, brakes, and carries that same piece to a declared close-range station. Simulation time, actuator positions, drivetrain motion, rotor speeds, stored tread deformation and electrical state carry across the transitions. Each collected mark has a distinct identity. The return controller can reverse away from the Speaker before turning toward the next mark.
 
-**Five of six floor NOTES scored on one simulated clock.** The [middle](evidence/middle-wing-score.json), [outer](evidence/outer-wing-score.json) and [inner](evidence/inner-wing-third-to-center-high.json) wing NOTES scored at 19.2235, 38.2709 and 60.78015 s. The [high center-line NOTE](evidence/center-high-fourth-to-center-mid.json) scored at 81.1666 s and the [middle center-line NOTE](evidence/center-mid-fifth-score.json) at 101.9423 s. The last floor NOTE was seated at 107.7574 s. That left 12.2426 s to deliver it and register a sixth score.
+**All six floor NOTES scored in 118.7945 simulated seconds**, leaving 1.2055 s on the 120 s clock. The robot started empty and collected a distinct piece from each of the six floor marks.
 
-The fifth NOTE left the launcher at 97.9774 s and cleared the opening at 98.1211 s. The earlier four cleared the counter and remained at least 0.9157 m from it through 101.9774 s. The released NOTE cleared the robot by at least 23.60 mm over 40,000 integration intervals. All 282 flagged launcher intervals cleared with a minimum nominal separation of 0.0542 mm. Five sampled structural poses showed no new intersections. The field and material parameters remain simulation assumptions.
+| Floor mark | Speaker counter (s) | Receipt |
+| --- | ---: | --- |
+| Blue wing, middle | 19.22350 | [First score](evidence/middle-wing-score.json) |
+| Blue wing, outer | 38.27090 | [Second score](evidence/outer-wing-score.json) |
+| Blue wing, inner | 60.78015 | [Third score](evidence/inner-wing-third-to-center-high.json) |
+| Center line, high | 81.16660 | [Fourth score](evidence/center-high-fourth-to-center-mid.json) |
+| Center line, middle | 100.50735 | [Fifth score](evidence/center-mid-fifth-to-center-low.json) |
+| Center line, low | 118.79450 | [Sixth score](evidence/center-low-sixth-score.json) |
 
-The two faster center-line trips reuse the first three scores. The inner-wing receipt above binds the next pickup on this route. The [earlier fourth-score route](evidence/center-high-fourth-score.json) reached 84.1170 s. Receipt hashes identify the private runner outputs, which used CRLF line endings. The repository stores their JSON text with LF line endings.
+The robot seated the sixth NOTE at 106.29905 s, reached the shooting station at 115.64755 s and released at 116.14800 s. The whole NOTE cleared the opening at 116.29820 s. All five earlier NOTES cleared the counter and stayed at least 0.923 m from the final NOTE through 118.808 s. The released NOTE stayed at least 14.824 mm from the unloaded chassis. The native sweep and refinement cleared all 263 flagged launcher intervals with a minimum nominal separation of 0.0142 mm. Eight attained mechanism poses showed no new structural intersections. The model uses assumed field-contact properties and nominal CAD dimensions. Manufacturing and hardware margins remain unmeasured.
+
+An earlier route verified five scores by 101.9423 s. Its last pickup completed at 107.7574 s. [Earlier fifth score](evidence/center-mid-fifth-score.json)
+
+The center-line route carries forward the three wing scores. The inner-wing receipt above binds the next pickup on this route. The [earlier fourth-score route](evidence/center-high-fourth-score.json) reached 84.1170 s. Receipt hashes identify the private runner outputs, which used CRLF line endings. The repository stores their JSON text with LF line endings.
 
 On the fourth shot, a 0.65 s move adjusted pitch by −0.279° and lift height by +1.238 mm. With a 3,950 rpm target and 0.23 feed duty, the ring cleared all 307 flagged native intervals by at least 0.0511 mm. Both counter paths were blocked after the full opening crossing at 81.6889 s. A control run at 0.22 feed duty also triggered the counter but overlapped a rigid wheel shell by 0.106 mm. The full replay at 0.23 duty reproduced the entire trajectory byte for byte.
 
@@ -60,6 +71,10 @@ The named Fusion draft supplies the two native sweep receipts in the last comman
 [Powered transfer](RAISED_FEED.md) · [Speaker counter model](SPEAKER_COUNTER.md)
 
 ## Center-line travel and the final release
+
+The [center-line control settings](evidence/centerline-route-controls.json) give the pickup waypoints, loaded approach, launcher commands and integration settings for each of the three remaining floor NOTES after the wing sequence. Field waypoints are in metres. The shooting station contains field x, field y and heading in degrees. Each field prefix ends on a recorded integration row after the counter event. Continue the earlier pieces in the shared collection solve from their recorded positions and velocities.
+
+For a loaded return, `wing_note_delivery.py --brake-into-station` applies a stopping-distance speed limit over the last 2 m of a lookahead path. The command uses 1.3 m/s² for braking, caps the speed at 1.90 m/s and tapers the speed near the station. The existing heading, speed, mechanism pose, bilateral load and 0.15 s settling checks determine when the robot can hand off to the launcher. On the final center-low return the controller reached the station at 115.64755 s, 0.4155 s earlier than the default controller on the same pickup and waypoints.
 
 The pickup and loaded-delivery runners accept a lookahead distance in metres for following connected field waypoints. Use the recorded robot poses to check bumper and stage clearance through each turn. During pickup, the capture speed controls the chassis closure rate and the intake speed reference after bilateral contact. During delivery, the lifting drive acceleration limits forward acceleration until the cradle reaches 45°. Compare the attained ring position relative to the chassis when checking clearance to the fixed drive motors.
 

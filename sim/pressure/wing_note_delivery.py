@@ -13,6 +13,9 @@ from run_axial_shear_lift import digest, load
 from field_transit import TransitPath
 
 
+STATION_BRAKING = dict(distanceM=2.0, accelerationMps2=1.3, maxSpeedMps=1.90, positionGainPerS=3.4)
+
+
 class DeliveryPlant(ReturnPlant):
     def contact(self):
         belt, floor, moment = super().contact()
@@ -73,6 +76,13 @@ class DeliveryPlant(ReturnPlant):
             # cannot be corrected in place by the differential drivetrain.
             station_distance=np.linalg.norm(self.shoot_position-d.qpos[:2])
             want_speed=min(want_speed,.62+.95*max(0.,station_distance-.65))
+            if self.brake_into_station and station_distance <= STATION_BRAKING["distanceM"]:
+                # Limit the final approach by stopping distance, then taper the
+                # speed near the target while the chassis corrects its heading.
+                braking_speed = math.sqrt(2 * STATION_BRAKING["accelerationMps2"] * station_distance)
+                target_speed = min(self.transit_speed, STATION_BRAKING["maxSpeedMps"], braking_speed,
+                                   STATION_BRAKING["positionGainPerS"] * speed_distance)
+                want_speed = target_speed * max(0., math.cos(error))**6
         if self.transit_speed>.6:
             # Bound loaded acceleration while lifting and negotiating corners.
             accel=self.lifting_drive_accel if d.qpos[4]<math.radians(45.) else 1.2
@@ -160,6 +170,9 @@ def deliver(args, p, row, source, native, collected):
     if not 0.<args.lifting_drive_accel<=1.2:
         raise ValueError("Invalid forward acceleration limit while the cradle pitches")
     p.lifting_drive_accel=args.lifting_drive_accel
+    p.brake_into_station = getattr(args, "brake_into_station", False)
+    if p.brake_into_station and not args.lookahead:
+        raise ValueError("Station braking requires a lookahead path")
     frame=WingFrame(args.first_mark,args.field_yaw_deg)
     p.waypoints=[frame.to_local([x,y,0.])[:2] for x,y in args.via]
     if not math.isfinite(args.final_straight) or args.final_straight<0.:
@@ -223,6 +236,8 @@ def deliver(args, p, row, source, native, collected):
         result["lookaheadM"]=args.lookahead
     if args.lifting_drive_accel!=1.2:
         result["liftingDriveAccelMps2"]=args.lifting_drive_accel
+    if p.brake_into_station:
+        result["stationBrakingProfile"] = STATION_BRAKING
     (args.output/"result.json").write_text(json.dumps(result,indent=2,allow_nan=False)+"\n")
     print(outcome,p.data.time,flush=True)
 
@@ -244,6 +259,8 @@ if __name__=="__main__":
     parser.add_argument("--transit-speed",type=float,default=.6,help="Loaded travel speed limit in m/s")
     parser.add_argument("--lookahead",type=float,default=0.,help="Follow the connected transit legs with this lookahead distance in metres")
     parser.add_argument("--lifting-drive-accel",type=float,default=1.2,help="Forward reference acceleration limit in m/s² until the cradle reaches 45 degrees")
+    parser.add_argument("--brake-into-station", action="store_true",
+                        help="Use a stopping-distance speed limit on the final two metres of a lookahead path")
     parser.add_argument("--turn-rate",type=float,default=.95,help="Loaded turning reference limit in rad/s")
     parser.add_argument("--turn-accel",type=float,default=.7,help="Loaded turning reference slew in rad/s²")
     parser.add_argument("--first-mark",choices=("inner","middle","outer"),default="inner")
