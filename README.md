@@ -1,8 +1,12 @@
 # 2024 CRESCENDO: component-based robot proof of concept
 
-The [historical case input manifest](historical-fixtures/agent-frc/manifest.json) identifies source-pinned simulation parameters, original geometry and prior analysis from the earlier plugin case. Inputs labeled as excerpts have a new schema and retain their source hash. The manifest records identical existing files and the original revision of the shared producers.
+<!-- cad-still -->
+[![Connected floor-pose assembly](docs/robot/cad/assembly.png)](https://ehartye.github.io/frc-2024-poc/robot/cad/)
 
-![Current connected component-CAD candidate, not fabrication-ready](cad/assembly/connected-floor.png)
+**Project CAD · Connected floor-pose assembly.** Six-wheel baseline with project-authored solids and supplier-sized envelopes. The swerve redesign is in development. [Source STEP · b08b08a8e7](cad/assembly/connected-floor.step) · [Rotate the model](https://ehartye.github.io/frc-2024-poc/robot/cad/)
+<!-- /cad-still -->
+
+The [historical case input manifest](historical-fixtures/agent-frc/manifest.json) identifies source-pinned simulation parameters, original geometry and prior analysis from the earlier plugin case. Inputs labeled as excerpts have a new schema and retain their source hash. The manifest records identical existing files and the original revision of the shared producers.
 
 **Strategy-first editable CAD, with retained simulation experiments.** The current component assembly is a design candidate. The runnable legacy A2 cycle below uses earlier geometry and does not validate this newer robot.
 

@@ -1,5 +1,11 @@
 # Portable 2024 blockout
 
+<!-- cad-still -->
+[![Connected floor-pose assembly](../../docs/robot/cad/assembly.png)](https://ehartye.github.io/frc-2024-poc/robot/cad/)
+
+**Project CAD · Connected floor-pose assembly.** Six-wheel baseline with project-authored solids and supplier-sized envelopes. The swerve redesign is in development. [Source STEP · b08b08a8e7](../../cad/assembly/connected-floor.step) · [Rotate the model](https://ehartye.github.io/frc-2024-poc/robot/cad/)
+<!-- /cad-still -->
+
 This season-owned copy is independent of any hosted preview. From this directory, run an existing static server, for example `python -m http.server 8765 --bind 127.0.0.1 --directory dist`, then open the displayed local address. No remote browser service is required.
 
 Source baseline: reviewed blockout integration 64bac59. Shared design-artifact module corresponds to agent-frc 0.7.0. Download/load the versioned JSON to preserve an editable artifact; browser state alone is not a durable project file. See ARTIFACT.md for scope and checks. Third-party Three.js files retain their MIT license and provenance.

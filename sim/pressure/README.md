@@ -1,5 +1,11 @@
 # Standalone finite-area pressure law
 
+<!-- cad-still -->
+[![Connected floor-pose assembly](../../docs/robot/cad/assembly.png)](https://ehartye.github.io/frc-2024-poc/robot/cad/)
+
+**Project CAD · Connected floor-pose assembly.** Six-wheel baseline with project-authored solids and supplier-sized envelopes. The swerve redesign is in development. [Source STEP · b08b08a8e7](../../cad/assembly/connected-floor.step) · [Rotate the model](https://ehartye.github.io/frc-2024-poc/robot/cad/)
+<!-- /cad-still -->
+
 This is an explicitly hypothetical elastic penalty density, not measured NOTE foam, a fitted physical material, a retainer, or a new accepted phase handoff. The original weak-grip simulations and their28/30 witness-loss stops remain unchanged.
 
 ## Constitutive definition and work

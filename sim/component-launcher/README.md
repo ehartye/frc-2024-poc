@@ -1,5 +1,11 @@
 # Current component-launcher integration slice
 
+<!-- cad-still -->
+[![Connected floor-pose assembly](../../docs/robot/cad/assembly.png)](https://ehartye.github.io/frc-2024-poc/robot/cad/)
+
+**Project CAD · Connected floor-pose assembly.** Six-wheel baseline with project-authored solids and supplier-sized envelopes. The swerve redesign is in development. [Source STEP · b08b08a8e7](../../cad/assembly/connected-floor.step) · [Rotate the model](https://ehartye.github.io/frc-2024-poc/robot/cad/)
+<!-- /cad-still -->
+
 This experiment uses the frozen f8a35ed component CAD: nominal tread radius48.26mm, shifted shooter pivotX188mm, and cradle handoff220mm before the wheel station. It replaces neither a complete robot simulation nor the separate CAD/mount validation.
 
 Fresh native intersection samples use all four actual authored tread annuli and the full NOTE torus. They measure rigid occupancy, not force. Valid solid inputs and non-cancelling per-solid intersection volumes are required. Positive10mm samples span station offsets-80..80mm; this is not a continuous clearance/contact certificate.

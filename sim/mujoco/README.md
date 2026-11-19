@@ -1,5 +1,11 @@
 # Bounded MuJoCo drivetrain with Fusion robot visuals
 
+<!-- cad-still -->
+[![Connected floor-pose assembly](../../docs/robot/cad/assembly.png)](https://ehartye.github.io/frc-2024-poc/robot/cad/)
+
+**Project CAD · Connected floor-pose assembly.** Six-wheel baseline with project-authored solids and supplier-sized envelopes. The swerve redesign is in development. [Source STEP · b08b08a8e7](../../cad/assembly/connected-floor.step) · [Rotate the model](https://ehartye.github.io/frc-2024-poc/robot/cad/)
+<!-- /cad-still -->
+
 This is the current **controllable drivetrain slice**, not a complete robot mission. It uses the actual 711-part Fusion-exported robot geometry for display and the separately tested six-wheel native-ground dynamics for movement. The old pressure/acquisition simulator and all its evidence remain unchanged.
 
 ## Scope and current result

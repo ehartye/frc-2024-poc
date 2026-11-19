@@ -1,5 +1,11 @@
 # Integrated current-geometry robot plant
 
+<!-- cad-still -->
+[![Connected floor-pose assembly](../../docs/robot/cad/assembly.png)](https://ehartye.github.io/frc-2024-poc/robot/cad/)
+
+**Project CAD · Connected floor-pose assembly.** Six-wheel baseline with project-authored solids and supplier-sized envelopes. The swerve redesign is in development. [Source STEP · b08b08a8e7](../../cad/assembly/connected-floor.step) · [Rotate the model](https://ehartye.github.io/frc-2024-poc/robot/cad/)
+<!-- /cad-still -->
+
 This directory is the integration layer under construction, not a completed robot simulator. The saved browser rehearsal is not the requested modeled robot.
 
 ## One electrical bus

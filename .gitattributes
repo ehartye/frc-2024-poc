@@ -138,3 +138,6 @@ sim/pressure/turning_contact.py -text
 sim/pressure/turning_sweep.py -text
 *.mp4 binary
 *.jpg binary
+
+docs/robot/cad/*.png binary
+docs/robot/cad/*.gz binary
