@@ -18,12 +18,8 @@ def corners(bounds):
 
 
 def verify(robot, supplier, layout):
-    moving = [r for r in robot["inventory"] if r["visible"] and r["role"]!="reserved-space"
-              and r["motionGroup"] in ("carriage","cradle")]
-    if len(moving)!=188 or len(supplier)!=72:
-        raise ValueError("Unexpected source body or module inventory")
-    boxes = np.array([corners(row["boundsMm"]) for row in moving])
-    pitches = np.array([row["motionGroup"]=="cradle" for row in moving])
+    if len(supplier)!=72:
+        raise ValueError("Unexpected supplier module inventory")
     modules = []
     for name,quarter_turns in MOUNT_TURNS.items():
         origin = np.array(layout["stations"][name]["wheelCenterMm"])
@@ -36,7 +32,21 @@ def verify(robot, supplier, layout):
         # conservative column. All stationary supplier boxes are also retained.
         x,y = origin[:2]
         modules.append([x-45,y-45,-2,x+45,y+45,98])
-    modules = np.array(modules)
+    return mechanism_clearance(robot, modules)
+
+
+def mechanism_clearance(robot, fixed_bounds):
+    moving = [r for r in robot["inventory"] if r["visible"] and r["role"]!="reserved-space"
+              and r["motionGroup"] in ("carriage","cradle")]
+    if len(moving)!=188:
+        raise ValueError("Unexpected source body or module inventory")
+    boxes = np.array([corners(row["boundsMm"]) for row in moving])
+    pitches = np.array([row["motionGroup"]=="cradle" for row in moving])
+    modules = np.asarray(fixed_bounds)
+    if modules.ndim != 2 or modules.shape[1] != 6 or not np.isfinite(modules).all():
+        raise ValueError("Expected finite Cartesian bounds for each stationary part")
+    if not (modules[:,3:] > modules[:,:3]).all():
+        raise ValueError("Empty stationary volume")
     reach = np.linalg.norm((boxes-PIVOT_MM)[:,:,[0,2]],axis=2).max(axis=1)
     pad = 2*math.sin(math.radians(.25))*reach*pitches
     margin = math.inf
