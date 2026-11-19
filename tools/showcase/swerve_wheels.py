@@ -1,6 +1,8 @@
 """Display four measured tire envelopes with the drivetrain's attained joint positions."""
 import math
 
+from swerve_modules import install_module, module_meshes
+
 import numpy as np
 from scipy.spatial.transform import Rotation
 
@@ -33,6 +35,7 @@ def animate_wheels(model, wheels, states, accessor, channel):
     order = ("Front left","Front right","Rear left","Rear right")
     if states.shape[1:] != (8,) or set(wheels) != set(order):
         raise ValueError("Missing attained module coordinates")
+    meshes = module_meshes(model, accessor)
     for i,station in enumerate(order):
         wheel = wheels[station]
         xyz,normal,color,index = tire(wheel["diameterMm"]*.0005,wheel["widthMm"]*.001)
@@ -49,6 +52,11 @@ def animate_wheels(model, wheels, states, accessor, channel):
         # Plant azimuth is +Z (glTF +Y), and roll is +Y (glTF -Z).
         ax,ay,_ = wheel["nativeRollAxis"]
         zero = math.atan2(ax,-ay)
+        fixed = len(model["nodes"])
+        model["nodes"].append(dict(name=station+" module housing", translation=model["nodes"][axle]["translation"],
+                                   rotation=Rotation.from_euler("y",zero).as_quat().tolist()))
+        model["scenes"][0]["nodes"].append(fixed)
+        install_module(model, meshes, station, fixed, axle, axle+1)
         steer = Rotation.from_euler("y",(zero+states[:,2*i])[:,None]).as_quat()
         roll = Rotation.from_euler("z",-states[:,2*i+1,None]).as_quat()
         for node,rotation in ((axle,steer),(axle+1,roll)):

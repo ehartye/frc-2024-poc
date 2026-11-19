@@ -3,7 +3,7 @@
 <!-- cad-still -->
 [![1780 MAXSwerve · R7](docs/media/swerve-r7.png)](https://ehartye.github.io/frc-2024-poc/#model)
 
-**1780 MAXSwerve · R7.** Reopened Fusion assembly with the boxed front crossmember and red 1780 bumper. The replay shows the lift, four simplified tires and first Speaker shot from development start D1. [Native model record](docs/media/swerve-r7.json) · [Open 3D replay](https://ehartye.github.io/frc-2024-poc/#model)
+**1780 MAXSwerve · R7.** Reopened Fusion assembly with the boxed front crossmember and red 1780 bumper. Explore the four installed swerve modules and replay the lift and first Speaker shot from development start D1. Purchased parts use dimensioned display geometry. [Inspect all four corners](https://ehartye.github.io/frc-2024-poc/?view=swerve#model). [Native model record](docs/media/swerve-r7.json) · [Open 3D replay](https://ehartye.github.io/frc-2024-poc/#model)
 <!-- /cad-still -->
 
 The [historical case input manifest](historical-fixtures/agent-frc/manifest.json) identifies source-pinned simulation parameters, original geometry and prior analysis from the earlier plugin case. Inputs labeled as excerpts have a new schema and retain their source hash. The manifest records identical existing files and the original revision of the shared producers.
