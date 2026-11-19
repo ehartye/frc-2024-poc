@@ -77,7 +77,7 @@
     },
     "film": {
       "path": "docs/media/swerve-first-shot.webm",
-      "sha256": "e44208951b150f922fdd9d16791a86e569e86e3c160840c202e1fe9cfe0df382"
+      "sha256": "174fecfd40661a39b062b18394193cdbfed3210f1c00ac432a4e8ee030a474ed"
     }
   },
   "clip": "Lift and shoot",
@@ -92,7 +92,7 @@
     "shot": "0995c2499c9344b21fd0a5e42c6dec296723a498782927bcad37369c54ab0dcf",
     "field": "1ace77c1349770ebcd68817587caf9528fcfb73756f42932677a62f5867d8e52"
   },
-  "scope": "The animation projects measured swerve motion onto the reopened R7 geometry. Four dimensional tire envelopes carry visual roll marks. R7 fixed-frame mass, wiring, shot clearance and scoring repeatability remain unevaluated.",
+  "scope": "The animation projects simulated swerve motion onto the reopened R7 geometry. Four dimensional tire envelopes carry visual roll marks. R7 fixed-frame mass, wiring, shot clearance and scoring repeatability remain unevaluated.",
   "film": {
     "frames": 215,
     "framesPerSecond": 20,

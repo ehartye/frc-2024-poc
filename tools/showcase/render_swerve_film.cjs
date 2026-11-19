@@ -52,7 +52,7 @@ async function render(docs, browserPath, ffmpeg, output) {
           v.jumpCameraToGoal();
         }
         document.querySelector("#state").textContent=match>=receipt.releaseS?"NOTE in flight":slowed?"Feeding the launcher":"Lift and turn with retained NOTE";
-        document.querySelector("#time").textContent=(slowed?"1/8 speed":"Real time")+"   Â·   "+match.toFixed(3)+" s";
+        document.querySelector("#time").textContent=(slowed?"1/8 speed":"Real time")+"   |   "+match.toFixed(3)+" s";
         await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
       },{match,slowed,receipt});
       const frame=await page.screenshot({type:"jpeg",quality:87});
