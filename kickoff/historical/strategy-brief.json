@@ -1,0 +1,197 @@
+{
+  "schema": "frc-strategy-brief/v1",
+  "season": 2024,
+  "game": "CRESCENDO",
+  "reviewed": "2026-11-16",
+  "source": {
+    "manual": "https://firstfrc.blob.core.windows.net/frc2024/Manual/2024GameManual.pdf",
+    "version": "153-page retrieved PDF; section 6 V10, section 7 V13",
+    "fingerprint": {
+      "season": 2024,
+      "url": "https://firstfrc.blob.core.windows.net/frc2024/Manual/2024GameManual.pdf",
+      "retrieved": "2026-11-15",
+      "bytes": 6712480,
+      "sha256": "1b7e1dc3fe1b1bd64d97a482d7e78eb419ec77d611a15226a16b0c7011069b94",
+      "etag": "0x8DC59947AA1DCE1",
+      "last_modified": "Wed, 10 Apr 2024 19:29:02 GMT",
+      "handling": "Transient hash only; PDF body not retained or redistributed"
+    },
+    "eventSnapshot": "Archived final/Championship update snapshot, not the original regional-season configuration",
+    "html": "https://firstfrc.blob.core.windows.net/frc2024/Manual/HTML/2024GameManual.htm",
+    "htmlAccessed": "2026-11-16",
+    "note": "HTML selected sections rechecked; PDF fingerprint belongs to earlier retrieval. Source bodies are not redistributed."
+  },
+  "eventContext": "UNRESOLVED: school, event name/date/stage and applicable update set",
+  "decision": {
+    "status": "proposal-for-review",
+    "selectedByUser": null,
+    "recommendation": "Fixed-location SPEAKER cycle",
+    "reason": "Transparent teaching-scope heuristic: bounded scope favors the narrower task; expanded scope evaluates broader capability. This is not measured optimization."
+  },
+  "opportunities": {
+    "kind": "official-rule synthesis",
+    "text": "AMP, SPEAKER and STAGE offer different task families; amplification changes the value of SPEAKER scoring.",
+    "reference": "6.5.1-6.5.6"
+  },
+  "rules": [
+    {
+      "id": "24-TIME",
+      "ref": "6.4, p45",
+      "fact": "AUTO lasts 15 seconds.",
+      "kind": "official-rule synthesis"
+    },
+    {
+      "id": "24-COUNT",
+      "ref": "G409, p65",
+      "fact": "TELEOP NOTE control has one-piece limits with SOURCE ZONE and momentary qualifications.",
+      "kind": "official-rule synthesis"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A-GATE",
+      "value": "Target pose valid",
+      "kind": "proposed conservative release policy; not an official pose/alignment rule or inventory rule"
+    },
+    {
+      "id": "A-SCOPE",
+      "value": "bounded",
+      "kind": "unverified teaching assumption"
+    },
+    {
+      "id": "A-WINDOW",
+      "value": 60,
+      "unit": "s",
+      "kind": "unverified usable service interval; not the full official phase duration"
+    },
+    {
+      "id": "A-PIECES",
+      "value": 5,
+      "unit": "pieces",
+      "kind": "unverified task target; not a possession-rule limit"
+    },
+    {
+      "id": "A-ROLE",
+      "value": "A repeatable stationary shooting location will remain available.",
+      "kind": "unverified strategic assumption"
+    }
+  ],
+  "alternatives": [
+    {
+      "name": "AMP-oriented scorer",
+      "tradeoff": "Lower-speed handling and simpler aiming; partner dependence and limited task range.",
+      "capabilityBurden": "AMP alignment, gentle transfer and alliance amplification coordination",
+      "decision": "not selected by user"
+    },
+    {
+      "name": "Fixed-location SPEAKER cycle",
+      "tradeoff": "Repeatable alignment and one-piece indexing; requires launch characterization.",
+      "capabilityBurden": "Repeatable stationary pose, one-NOTE indexing and characterized launch",
+      "decision": "not selected by user"
+    },
+    {
+      "name": "Variable-range shooter plus climb",
+      "tradeoff": "Greater task reach; added calibration, packaging and development burden.",
+      "capabilityBurden": "Range/pose uncertainty, variable launch settings and separately engineered climb",
+      "decision": "not selected by user"
+    }
+  ],
+  "criteria": [
+    "Hard constraints and safety first: fail any applicable rule or unresolved hazardous load path and do not advance hardware.",
+    "Compare expected successful contribution, cycle time, consistency, alliance fit and development effort using measurements; weights await school priorities.",
+    "Prefer bounded scope only provisionally when team resources, alliance role and prototype evidence are unknown. No fabricated weighted score."
+  ],
+  "capabilities": [
+    {
+      "id": "2024-CAP-TIME",
+      "kind": "rule-derived policy",
+      "basis": [
+        "24-TIME"
+      ],
+      "subsystem": "Mode coordinator",
+      "requirement": "Cancel autonomous demand at 15 s; physical stopping distance remains unmeasured.",
+      "acceptance": "Desktop test crosses deadline; all modeled voltage/release requests cancel.",
+      "evidence": "SeasonCaseTest.autoDeadlineRespectsSeason; FMS/robot adapter absent"
+    },
+    {
+      "id": "2024-CAP-GATE",
+      "kind": "strategic inference",
+      "basis": [
+        "A-GATE"
+      ],
+      "subsystem": "Release coordinator",
+      "requirement": "Target pose valid; loss of validity prevents release.",
+      "acceptance": "Inject invalid/unknown state while ready and assert no feed.",
+      "evidence": "SeasonCaseTest.misalignmentBlocksRelease; gate is injected, not a validated field sensor"
+    },
+    {
+      "id": "2024-CAP-ROLE",
+      "kind": "assumption-derived requirement",
+      "basis": [
+        "A-SCOPE",
+        "A-ROLE"
+      ],
+      "subsystem": "Scoring/targeting",
+      "requirement": "Reach one characterized stationary launch pose; hold release when pose validity is unknown.",
+      "acceptance": "Measure task success over repeated representative trials and confirm field geometry, loads and guard conditions.",
+      "evidence": "OPEN: teaching plant does not validate this capability"
+    },
+    {
+      "id": "2024-CAP-RATE",
+      "kind": "assumption-derived requirement",
+      "basis": [
+        "A-WINDOW",
+        "A-PIECES"
+      ],
+      "subsystem": "Acquisition/drive/scoring cycle",
+      "requirement": "Average service rate at least 0.083 pieces/s over the assumed usable interval; at most 12.000 s per piece on average.",
+      "acceptance": "Demonstrate 5 successful deliveries in 60 s with acquisition, transit, alignment and recovery included where applicable.",
+      "evidence": "OPEN: arithmetic requirement, no measured throughput or match-score forecast"
+    },
+    {
+      "id": "2024-CAP-SAFE",
+      "kind": "engineering requirement",
+      "basis": [
+        "A-SCOPE"
+      ],
+      "subsystem": "Power/mechanical safety",
+      "requirement": "Resolve electrical protection, physical retention, guarding, load paths and inspection requirements before hardware.",
+      "acceptance": "Document component-specific ratings, rule review, load/energy analysis and supervised physical checks.",
+      "evidence": "OPEN: no hardware or manufacturing approval"
+    }
+  ],
+  "sensitivity": {
+    "example": "If that location is regularly denied, add tested alternate poses, range-dependent launch characterization and uncertainty gating; reconsider the AMP role before adding complexity.",
+    "numericAlternative": {
+      "usableWindowSeconds": 30,
+      "desiredPieces": 5,
+      "requiredPiecesPerSecond": 0.16666666666666666,
+      "meaning": "Half the usable time doubles required average service rate; feasibility is unresolved."
+    }
+  },
+  "handoff": {
+    "nextArtifact": "Capability and Verification Contract v1",
+    "requiredFields": [
+      "capability ID and source/assumption IDs",
+      "owner and interfaces with units",
+      "acceptance criterion and test method",
+      "design envelope and power/mass allocations",
+      "failure response and safety review",
+      "evidence status and open decision"
+    ],
+    "firstExperiment": "Bounded feed/recovery fixture with measured cycle timing; do not infer launch success from flywheel speed.",
+    "decisionGate": "Reviewer records a strategy decision and resolves event/resource assumptions before subsystem requirements are frozen. Draft code/CAD may explore alternatives without implying approval."
+  },
+  "existingEvidence": {
+    "caseManifest": "case.json",
+    "java": "../../examples/java-2026-sim/CASES.md",
+    "cad": "Script and DXF only for this case; native case execution unperformed. Fusion access restored separately.",
+    "limits": [
+      "No ballistics, note deformation or launch accuracy model",
+      "Intake compression, guarding, bearing fit and chassis integration unverified",
+      "No complete legality review or physical system verification.",
+      "Java 17/WPILib 2026.2.1 is the teaching baseline for every season, not historical deployment.",
+      "Direct plant feedback; no vendor sensor adapter or calibrated contact/flight physics."
+    ]
+  }
+}

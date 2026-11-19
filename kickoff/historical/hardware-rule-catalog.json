@@ -1,0 +1,229 @@
+{
+  "schema": "frc-hardware-rule-catalog/v1",
+  "season": 2024,
+  "sources": [
+    {
+      "id": "manual-2024",
+      "season": 2024,
+      "url": "https://firstfrc.blob.core.windows.net/frc2024/Manual/2024GameManual.pdf",
+      "revision": "Construction section V8; 153 pages",
+      "sha256": "1b7e1dc3fe1b1bd64d97a482d7e78eb419ec77d611a15226a16b0c7011069b94",
+      "locator": "Selected construction/control rules; exact rule locators on entries",
+      "verification": {
+        "method": "local-byte-hash-and-text-review",
+        "checkedAt": "2026-11-16"
+      }
+    }
+  ],
+  "coverage": "partial",
+  "eventApplicability": "unresolved",
+  "entries": [
+    {
+      "id": "named-motor-exemplars",
+      "category": "motor-class",
+      "statement": "Named motor exemplars include NEO, NEO 550, NEO Vortex, Falcon 500, Kraken X60 and Nidec.",
+      "conditions": [
+        "Only this pinned season/snapshot; not a complete allowance list",
+        "Exact model numbers and permitted modifications require review",
+        "Do not import later-season motor classes or names; omitted entries remain unresolved"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "manual-2024",
+          "ruleId": "R501",
+          "locator": "R501"
+        }
+      ],
+      "specificationStatus": "rule-constraint-only",
+      "manufacturerPerformance": null
+    },
+    {
+      "id": "linear-actuator-class",
+      "category": "motor-class",
+      "statement": "The generic COTS linear-actuator class is rated 12 V and supplied downstream of a breaker rated 20 A or less.",
+      "conditions": [
+        "Only this pinned season/snapshot; not a complete allowance list",
+        "This snapshot does not provide the later generic brushed-motor class",
+        "Breaker rating is not a stall-current or software current specification"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "manual-2024",
+          "ruleId": "R501",
+          "locator": "R501"
+        }
+      ],
+      "specificationStatus": "rule-constraint-only",
+      "manufacturerPerformance": null
+    },
+    {
+      "id": "servo-class",
+      "category": "motor-class",
+      "statement": "COTS PWM servos are subject to the listed retail price threshold below $75.",
+      "conditions": [
+        "Only this pinned season/snapshot; not a complete allowance list",
+        "Do not backport the later-season current/output-power tests"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "manual-2024",
+          "ruleId": "R501",
+          "locator": "R501"
+        }
+      ],
+      "specificationStatus": "rule-constraint-only",
+      "manufacturerPerformance": null
+    },
+    {
+      "id": "solenoid-class",
+      "category": "motor-class",
+      "statement": "The COTS solenoid/electromagnet category has a 50 W continuous rating limit at 12 V; 24 V operation requires manufacturer approval under its stated conditions.",
+      "conditions": [
+        "Only this pinned season/snapshot; not a complete allowance list",
+        "Exact power and use conditions require source/part review"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "manual-2024",
+          "ruleId": "R501",
+          "locator": "R501"
+        }
+      ],
+      "specificationStatus": "rule-constraint-only",
+      "manufacturerPerformance": null
+    },
+    {
+      "id": "propulsion-count",
+      "category": "propulsion",
+      "statement": "At most four propulsion motors, with stated exclusions including wheel alignment such as swerve steering.",
+      "conditions": [
+        "Only this pinned season/snapshot; not a complete allowance list",
+        "Classify motor role under this snapshot; not every installed motor is a propulsion motor"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "manual-2024",
+          "ruleId": "R502",
+          "locator": "R502"
+        }
+      ],
+      "specificationStatus": "rule-constraint-only",
+      "manufacturerPerformance": null
+    },
+    {
+      "id": "controller-subset",
+      "category": "motor-controller-compatibility",
+      "statement": "Selected permitted controller examples include DMC60, PWM-only Jaguar, Nidec, SD540 and Victor 884/888.",
+      "conditions": [
+        "Only this pinned season/snapshot; not a complete allowance list",
+        "Named allowance is not universal motor pairing",
+        "Read Table 8-2 and all load/wiring conditions"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "manual-2024",
+          "ruleId": "R504",
+          "locator": "R504"
+        },
+        {
+          "sourceId": "manual-2024",
+          "ruleId": "R505",
+          "locator": "R505"
+        }
+      ],
+      "specificationStatus": "rule-constraint-only",
+      "manufacturerPerformance": null
+    },
+    {
+      "id": "control-radio",
+      "category": "control-system",
+      "statement": "One roboRIO or roboRIO 2.0 uses image 2024_v2.1 or later; this archived snapshot specifies VH-109 radio.",
+      "conditions": [
+        "Only this pinned season/snapshot; not a complete allowance list",
+        "This does not establish the radio requirements at every historical 2024 event",
+        "Snapshot applicability and any region exceptions require event review"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "manual-2024",
+          "ruleId": "R701",
+          "locator": "R701"
+        },
+        {
+          "sourceId": "manual-2024",
+          "ruleId": "R702",
+          "locator": "R702"
+        }
+      ],
+      "specificationStatus": "rule-constraint-only",
+      "manufacturerPerformance": null
+    },
+    {
+      "id": "status-lights",
+      "category": "control-system",
+      "statement": "One or two prescribed robot signal lights are required.",
+      "conditions": [
+        "Only this pinned season/snapshot; not a complete allowance list",
+        "Check exact wiring, permitted device and placement"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "manual-2024",
+          "ruleId": "R709",
+          "locator": "R709"
+        }
+      ],
+      "specificationStatus": "rule-constraint-only",
+      "manufacturerPerformance": null
+    },
+    {
+      "id": "main-battery",
+      "category": "power",
+      "statement": "One main non-spillable sealed lead-acid battery is nominally 12 V and rated 17–18.2 Ah at the 20-hour rate.",
+      "conditions": [
+        "Pinned season snapshot only; actual event applicability unresolved",
+        "Voltage/capacity alone are insufficient: shape, dimensions, weight and terminal requirements also apply",
+        "R602 auxiliary-source exceptions are separate; no physical battery model inferred"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "manual-2024",
+          "ruleId": "R601",
+          "locator": "R601"
+        },
+        {
+          "sourceId": "manual-2024",
+          "ruleId": "R602",
+          "locator": "R602"
+        }
+      ],
+      "specificationStatus": "rule-constraint-only",
+      "manufacturerPerformance": null
+    },
+    {
+      "id": "main-distribution",
+      "category": "power",
+      "statement": "R609 specifies PDP or PDH distribution with a single 120 A main breaker, an SB connector pair and 6 AWG copper or larger main wiring.",
+      "conditions": [
+        "Pinned season snapshot only; actual event applicability unresolved",
+        "Exact device, connectors and full wiring requirements still require review",
+        "Do not import later PDP 2.0 or AMPD allowances into this snapshot"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "manual-2024",
+          "ruleId": "R609",
+          "locator": "R609"
+        }
+      ],
+      "specificationStatus": "rule-constraint-only",
+      "manufacturerPerformance": null
+    }
+  ],
+  "unresolved": [
+    "Selected rule subset, not a complete device allowance or prohibition list",
+    "Exact part/revision and complete installation require review against all applicable rules and event updates",
+    "Actual ownership, quantity, condition and team resources are not inferred",
+    "Manufacturer geometry, mounting, connectors, electrical curves, calibration and redistribution rights are separate evidence"
+  ]
+}

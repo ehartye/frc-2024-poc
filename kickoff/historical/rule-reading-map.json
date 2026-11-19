@@ -1,0 +1,96 @@
+{
+  "schema": "frc-rule-reading-map/v1",
+  "season": 2024,
+  "game": "CRESCENDO",
+  "reviewed": "2026-11-15",
+  "reviewDue": "2026-12-15",
+  "manual": "https://firstfrc.blob.core.windows.net/frc2024/Manual/2024GameManual.pdf",
+  "manualSha256": "1b7e1dc3fe1b1bd64d97a482d7e78eb419ec77d611a15226a16b0c7011069b94",
+  "constructionVersion": "V8",
+  "eventScope": "Archived final/Championship update snapshot, not the original regional-season configuration",
+  "eventCaution": "Team Update 21 changed weight from 125 to 125.5 lb and OpenMesh to VH-109. Resolve the event and update date before selecting hardware.",
+  "update": "https://firstfrc.blob.core.windows.net/frc2024/Manual/TeamUpdates/TeamUpdate21.pdf",
+  "selectedFacts": {
+    "R103": {
+      "weightLimitLb": 125.5,
+      "qualifier": "Read exclusions and configuration accounting; not gross transport weight."
+    },
+    "R104": {
+      "perimeterLimitIn": 120,
+      "startingHeightLimitIn": 48,
+      "qualifier": "FRAME PERIMETER definition; not bumper perimeter."
+    },
+    "R105": {
+      "horizontalExtensionLimitIn": 12,
+      "qualifier": "Read geometry, field-location and other rule qualifications."
+    },
+    "R701": {
+      "minimumImage": "2024_v2.1",
+      "qualifier": "Manual image minimum; not a recommendation to install an old image or a WPILib version claim."
+    }
+  },
+  "readingMap": [
+    {
+      "section": "8.1",
+      "topic": "geometry",
+      "rules": "R101-R105",
+      "page": 77,
+      "evidence": "Produce a measured configuration register, mass budget and envelope drawing; resolve exclusions and in-match restrictions.",
+      "status": "review-required"
+    },
+    {
+      "section": "8.4",
+      "topic": "bumpers",
+      "rules": "section 8.4",
+      "page": 84,
+      "evidence": "Create a removable bumper assembly and inspection drawing; do not assume last year's construction or mass treatment.",
+      "status": "review-required"
+    },
+    {
+      "section": "8.5",
+      "topic": "actuators",
+      "rules": "R501, R504-R506",
+      "page": 90,
+      "evidence": "List exact motor/controller/servo part numbers and pairings before selecting a Java vendor library.",
+      "status": "review-required"
+    },
+    {
+      "section": "8.6",
+      "topic": "power",
+      "rules": "R601-R625",
+      "page": 95,
+      "evidence": "Trace battery, protection, conductor, connector, distribution and radio power paths in a schematic; assign a qualified reviewer.",
+      "status": "review-required"
+    },
+    {
+      "section": "8.7",
+      "topic": "control",
+      "rules": "R701-R715",
+      "page": 103,
+      "evidence": "Record roboRIO image, radio revision, signal authority and disable propagation; distinguish simulation from real IO.",
+      "status": "review-required"
+    },
+    {
+      "section": "8.8",
+      "topic": "pneumatics",
+      "rules": "section 8.8",
+      "page": 107,
+      "evidence": "Collect exact component ratings, schematic, regulation and relief evidence; keep stored-energy procedures with qualified mentors.",
+      "status": "review-required"
+    },
+    {
+      "section": "9",
+      "topic": "inspection",
+      "rules": "I103-I104",
+      "page": 113,
+      "evidence": "Maintain the complete configuration inventory and re-inspection decision record; software test output is not inspection approval.",
+      "status": "review-required"
+    }
+  ],
+  "javaBoundary": "Java is the chosen teaching language. WPILib 2026.2.1 desktop tests do not establish historical image/vendor/runtime compatibility or hardware approval.",
+  "limits": [
+    "Selected facts and reading locators only; never an automated legality certificate",
+    "Full rule text, exceptions, updates, Q&A and event context require direct official review",
+    "No hardware operation or installation; no native CAD execution"
+  ]
+}
