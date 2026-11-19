@@ -1,0 +1,72 @@
+{
+  "schema": "agent-frc/replay-chapters@1",
+  "revision": "R7 boxed front crossmember",
+  "media": {
+    "file": "docs/media/swerve-first-shot.webm",
+    "sha256": "7ec5c5bc5efed309c565d496da1a8c253308602025a5c13dcac6afaa94538b6f"
+  },
+  "trace": {
+    "file": "experiments/speaker-cycles/first-film-states.json",
+    "sha256": "a1f2415944cb342cc9e4fd1a7f4818b11dbf8c7b87d08ea74a741835c83a023e"
+  },
+  "observations": {
+    "file": "experiments/speaker-cycles/first-film-events.json",
+    "sha256": "ad03287cb8cdcf6c0f0add91325f99d171c781d4d120e4634677920f5231b102"
+  },
+  "chapters": [
+    {
+      "id": "first-note",
+      "label": "First middle-wing NOTE",
+      "start": "/rows/0",
+      "end": "/rows/1",
+      "sync": [
+        {
+          "runS": 0.0,
+          "clipS": 0
+        },
+        {
+          "runS": 10.066049999999036,
+          "clipS": 10.066049999999036
+        },
+        {
+          "runS": 10.704549999998713,
+          "clipS": 15.174049999996454
+        },
+        {
+          "runS": 12.915049999993562,
+          "clipS": 17.3845499999913
+        }
+      ],
+      "events": [
+        {
+          "id": "seat",
+          "type": "seat",
+          "timeS": 4.494500000000229,
+          "pointer": "/events/0",
+          "outcome": "reached"
+        },
+        {
+          "id": "release",
+          "type": "release",
+          "timeS": 10.566049999999036,
+          "pointer": "/events/1",
+          "outcome": "reached"
+        },
+        {
+          "id": "opening",
+          "type": "opening",
+          "timeS": 10.704549999998713,
+          "pointer": "/events/2",
+          "outcome": "reached"
+        },
+        {
+          "id": "simultaneous-counter",
+          "type": "simultaneous-counter",
+          "timeS": 12.915049999993562,
+          "pointer": "/events/3",
+          "outcome": "scored"
+        }
+      ]
+    }
+  ]
+}

@@ -6,6 +6,8 @@
 **1780 MAXSwerve · R7.** Reopened Fusion assembly with the boxed front crossmember and red 1780 bumper. Explore the four installed swerve modules and follow the first D1 NOTE from the floor through lift and release to both modeled Speaker sensors. Purchased parts use dimensioned display geometry. [Inspect all four corners](https://ehartye.github.io/frc-2024-poc/?view=swerve#model). [Native model record](docs/media/swerve-r7.json) · [Open 3D replay](https://ehartye.github.io/frc-2024-poc/#model)
 <!-- /cad-still -->
 
+[Open the editable R7 in Fusion](cad/native-handoff.md) · [Play the R7 nominal-mass pickup and shot](https://ehartye.github.io/frc-2024-poc/?view=r7-budget#model) · [Six-NOTE mission results](experiments/speaker-cycles/mission.md)
+
 [Follow the 2024 Agent FRC workflow](docs/workflow.md) from the season rules and alliance roles to the native assembly, scoring trials and published replay. [Open the field lab and play three matches at 10×](https://ehartye.github.io/frc-2024-poc/field-lab.html#rehearsal).
 
 The [historical case input manifest](historical-fixtures/agent-frc/manifest.json) identifies source-pinned simulation parameters, original geometry and prior analysis from the earlier plugin case. Inputs labeled as excerpts have a new schema and retain their source hash. The manifest records identical existing files and the original revision of the shared producers.
@@ -21,7 +23,7 @@ This repository is a **reviewed research checkpoint, not a completed robot simul
 | [Maple 2024 arena](sim/maple/README.md) | Headless force-driven differential robot, actual upstream wall/stage collisions and a shared ground NOTE | Intake collection, corrected season scoring, airborne obstacle collision, driver UI or full robot controls |
 | [MuJoCo drivetrain](sim/mujoco/README.md) | Six-wheel reduced dynamics with original Fusion-exported visual meshes; portable headless checks | Whole-mechanism dynamics, calibrated tires, capture or field scoring |
 | [Pressure/contact research verification](sim/pressure/VERIFYING.md) | Current and exact-source historical numerical experiments, separately registered | Automatic transfer between contact laws or successful acquisition-to-lift |
-| [Native floor pickup and lift](sim/pressure/RETAINED_FLOOR_PICKUP.md) | Loose NOTE, driven pickup, transport, active stop, 60� pitch and full-height hold in a planar contact simulation | Installed hardware, driving while raising, feeder intake and scoring |
+| [Native floor pickup and lift](sim/pressure/RETAINED_FLOOR_PICKUP.md) | Loose NOTE, driven pickup, transport, active stop, 60° pitch and full-height hold in a planar contact simulation | Installed hardware, driving while raising, feeder intake and scoring |
 | [Native pickup through a turning lift](sim/pressure/TURNING_LIFT.md) | Floor pickup, active stop, then differential drive through the full pitch, raise and hold with a free NOTE | Higher-speed operating envelope, hardware calibration and scoring |
 | [Legacy A2 slice](#run-the-retained-legacy-a2-slice) | Earlier geometry and prescribed cycle experiment | Validation of the current component robot |
 

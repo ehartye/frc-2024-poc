@@ -1,0 +1,237 @@
+{
+  "schema": "swerve-shared-counter-sequence/1",
+  "sensorSha256": "13d07c04856ee1ca927d8f17fa29570e6ead74cc1c917f1879b94b3b9d8b236f",
+  "formalAttempts": 0,
+  "coupledCollections": [],
+  "records": [
+    {
+      "piece": "blue-wing-middle",
+      "native": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+      "shot": "5ab813567918ae00bf79401e9c263097de4ce20bf2a414741b98b4e3d4412c1a",
+      "field": "817afabb6301e24b6fb56cd717218e433e545e74a2e39085ed9332520e8d92cd",
+      "releaseS": 10.446249999998848,
+      "openingS": 10.592549999998507,
+      "pairTimesS": [
+        13.638849999991407,
+        13.53034999999166
+      ],
+      "scoreS": 13.638849999991407,
+      "priorOccupancy": []
+    },
+    {
+      "piece": "blue-wing-outer",
+      "native": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+      "shot": "cbcac161ee13ca2a89a44deded2ab9ac2c9ebac8e75877682420f2656724349c",
+      "field": "1710e08e0cb0eb3009fb8198e3e23059aaffede1c9f3190ce27f38aa8ce1051c",
+      "releaseS": 24.230250000016333,
+      "openingS": 24.369850000016008,
+      "pairTimesS": [
+        28.0637500000074,
+        27.95605000000765
+      ],
+      "scoreS": 28.0637500000074,
+      "priorOccupancy": [
+        {
+          "piece": "blue-wing-middle",
+          "clearByS": 17.054749999983446,
+          "minimumSeparationM": 0.975839013950323,
+          "collectionSegments": [
+            "817afabb6301e24b6fb56cd717218e433e545e74a2e39085ed9332520e8d92cd",
+            "2ed46aa5ffd94692c5012c959d53b293db889863deedd9d547ee2d1f2d5822a1"
+          ],
+          "checkedThroughS": 29.23025000000468
+        }
+      ]
+    }
+  ],
+  "trips": [
+    {
+      "piece": "blue-wing-middle",
+      "fieldSha256": "4b44f149634e99602ab886ae6e2a5df65a38d35d8b9614133119d30f05331e50",
+      "massBinding": {
+        "r7MassCase": "nominal",
+        "massBudgetSha256": "9d8c37fa140ba33fdb7fddb056eca9ef24f91f488e9ea8c99c6b448ae788bbe0"
+      },
+      "envelopes": 659,
+      "stockOccurrenceIndices": {
+        "middle": [
+          5387
+        ],
+        "outer": [
+          5388
+        ],
+        "inner": [
+          5389
+        ],
+        "center-high": [
+          5384
+        ],
+        "center-mid": [
+          5381,
+          5385
+        ],
+        "center-low": [
+          5373,
+          5382,
+          5386
+        ]
+      },
+      "traces": [
+        "eff94eb2695fc64e43a06cdc19c491536efd57ed30d991f1e8285555d53aa6c8",
+        "b1e68d6ed7afb11de683cab0ee1177537cd9436291c5c8292aa4e7ff4ec83083",
+        "5ab813567918ae00bf79401e9c263097de4ce20bf2a414741b98b4e3d4412c1a"
+      ],
+      "candidatePairs": [],
+      "begin": 0.0,
+      "end": 10.446249999998848,
+      "intervals": 33191,
+      "unresolvedIntervals": 0,
+      "firstUnresolved": null,
+      "minimumReportedAxisGapM": 0.00373081243982476
+    },
+    {
+      "piece": "blue-wing-outer",
+      "fieldSha256": "4b44f149634e99602ab886ae6e2a5df65a38d35d8b9614133119d30f05331e50",
+      "massBinding": {
+        "r7MassCase": "nominal",
+        "massBudgetSha256": "9d8c37fa140ba33fdb7fddb056eca9ef24f91f488e9ea8c99c6b448ae788bbe0"
+      },
+      "envelopes": 659,
+      "stockOccurrenceIndices": {
+        "middle": [
+          5387
+        ],
+        "outer": [
+          5388
+        ],
+        "inner": [
+          5389
+        ],
+        "center-high": [
+          5384
+        ],
+        "center-mid": [
+          5381,
+          5385
+        ],
+        "center-low": [
+          5373,
+          5382,
+          5386
+        ]
+      },
+      "traces": [
+        "edea99591ecda37593257c4e7b6c7c127da921f71bd27769fe7a2f5b370ed30d",
+        "c3060b76d10411ff3bc65e5254f303911aa05a0e2efe03e66e9e335e8c8aecc9",
+        "cbcac161ee13ca2a89a44deded2ab9ac2c9ebac8e75877682420f2656724349c"
+      ],
+      "candidatePairs": [],
+      "begin": 10.446249999998848,
+      "end": 24.230250000016333,
+      "intervals": 42706,
+      "unresolvedIntervals": 0,
+      "firstUnresolved": null,
+      "minimumReportedAxisGapM": 0.05227537142834071
+    }
+  ],
+  "releasedNotes": [
+    {
+      "intervals": 50000,
+      "unresolvedIntervals": 0,
+      "firstUnresolved": null,
+      "minimumCertifiedGapMm": 35.14425526535325,
+      "environment": {
+        "minimumOtherNoteGapM": 2.2361226432099057,
+        "otherFieldEnvelopeOverlaps": 0
+      },
+      "field": "817afabb6301e24b6fb56cd717218e433e545e74a2e39085ed9332520e8d92cd",
+      "robot": "edea99591ecda37593257c4e7b6c7c127da921f71bd27769fe7a2f5b370ed30d",
+      "installedField": "4b44f149634e99602ab886ae6e2a5df65a38d35d8b9614133119d30f05331e50"
+    },
+    {
+      "intervals": 50000,
+      "unresolvedIntervals": 0,
+      "firstUnresolved": null,
+      "minimumCertifiedGapMm": 56.86563942170096,
+      "environment": {
+        "minimumOtherNoteGapM": 2.251009863540984,
+        "otherFieldEnvelopeOverlaps": 0
+      },
+      "field": "1710e08e0cb0eb3009fb8198e3e23059aaffede1c9f3190ce27f38aa8ce1051c",
+      "robot": "a207389cc76af4da69961449267a4fd8d3450974f78d2699533526fbcd47ee28",
+      "installedField": "4b44f149634e99602ab886ae6e2a5df65a38d35d8b9614133119d30f05331e50"
+    }
+  ],
+  "bumper": {
+    "survey": "33ae65ac867a18ace8f592648c4b182394cafa90dfd81c21fe05a876c11a61c3",
+    "field": {
+      "panels.json": "179593289b9850e7bc88db0573088657a1143b745040c8b269a5f74ae1594d85",
+      "named-panels.npz": "fcf29b7d726ae323e52f2c76cd4ec47b9d8ad60488f99f7a1fbdc266e8c23bad",
+      "extras.json": "72f92baebb9fc8ed31cc1f6a8a2ebe50cc78eb89bf38ce3c0625336203200e06",
+      "extras.npz": "2cffcdf267edd6c490f87e099f42e706a043382a32294b6d3f52b85857d7d605"
+    },
+    "traces": [
+      "eff94eb2695fc64e43a06cdc19c491536efd57ed30d991f1e8285555d53aa6c8",
+      "b1e68d6ed7afb11de683cab0ee1177537cd9436291c5c8292aa4e7ff4ec83083",
+      "5ab813567918ae00bf79401e9c263097de4ce20bf2a414741b98b4e3d4412c1a",
+      "edea99591ecda37593257c4e7b6c7c127da921f71bd27769fe7a2f5b370ed30d",
+      "c3060b76d10411ff3bc65e5254f303911aa05a0e2efe03e66e9e335e8c8aecc9"
+    ],
+    "beginS": 0.0,
+    "endS": 23.389249999988415,
+    "intervals": 59077,
+    "clear": true,
+    "closestBound": {
+      "axisGapM": 0.0662835992585612,
+      "part": "fixed bumper end noodle 1 0",
+      "panel": "e414",
+      "timeS": 8.250499999998592
+    },
+    "materialWitness": null
+  },
+  "coverage": "First two paired events on the corrected R7 nominal D1 route. Includes the following robot and discrete field states through both five-second flight segments.",
+  "followingDeparture": {
+    "piece": "blue-wing-inner",
+    "fieldSha256": "4b44f149634e99602ab886ae6e2a5df65a38d35d8b9614133119d30f05331e50",
+    "massBinding": {
+      "r7MassCase": "nominal",
+      "massBudgetSha256": "9d8c37fa140ba33fdb7fddb056eca9ef24f91f488e9ea8c99c6b448ae788bbe0"
+    },
+    "envelopes": 659,
+    "stockOccurrenceIndices": {
+      "middle": [
+        5387
+      ],
+      "outer": [
+        5388
+      ],
+      "inner": [
+        5389
+      ],
+      "center-high": [
+        5384
+      ],
+      "center-mid": [
+        5381,
+        5385
+      ],
+      "center-low": [
+        5373,
+        5382,
+        5386
+      ]
+    },
+    "traces": [
+      "a207389cc76af4da69961449267a4fd8d3450974f78d2699533526fbcd47ee28",
+      "7c2f9e4141f5e8bda915aebbf28d95f2e8299448d3f263fc77c0022b820705bc",
+      "d9e48e77e7a006e970d05a0615ec77b1033de4f03789224ab0c5a9a6f2818c8f"
+    ],
+    "candidatePairs": [],
+    "begin": 24.230250000016333,
+    "end": 29.23075000000468,
+    "intervals": 10001,
+    "unresolvedIntervals": 0,
+    "firstUnresolved": null,
+    "minimumReportedAxisGapM": 0.06262959379517086
+  }
+}

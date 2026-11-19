@@ -256,8 +256,11 @@ def deliver(args, p, row, source, native, collected):
                 turnRateRadPerS=args.turn_rate,turnAccelRadPerS2=args.turn_accel,
                 firstMark=args.first_mark,fieldYawDeg=args.field_yaw_deg)
     if hasattr(p, "field_velocity"):
-        result.update(schema="maxswerve-wing-note-delivery/1", drivetrain="maxswerve",
+        from r7_dynamics import binding
+        result.update(**binding(p.mass_case), schema="maxswerve-wing-note-delivery/1", drivetrain="maxswerve",
                       minimumBusV=p.minimum_bus, peakDriveAndSteerCurrentA=p.peak_current.tolist())
+    if getattr(p, "wall_approach", False):
+        result["routePolicy"] = "straight-wall-approach/1"
     if args.lookahead:
         result["lookaheadM"]=args.lookahead
     if args.lifting_drive_accel!=1.2:

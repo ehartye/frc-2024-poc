@@ -33,7 +33,8 @@ def synchronized_path(field, robot, frame):
         states=np.array([r["q"] for r in rows])
         if folder==robot:
             times=np.r_[0.,times]
-            states=np.vstack((returning["initialRobotQ"][:5],states[:,:5]))
+            initial = returning["initialRobotQ"] if "initialRobotQ" in returning else returning["initialQ"]
+            states=np.vstack((initial[:5],states[:,:5]))
         dt=params["dt"] if folder==field else returning["dt"]
         if not np.allclose(times,np.arange(len(times))*dt,atol=1e-8,rtol=0):
             raise ValueError("Nonuniform or incomplete integration history")

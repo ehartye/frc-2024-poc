@@ -136,12 +136,21 @@ def run(args):
     first = {}
     worst = 0.
     stride = 1 if getattr(args, "trace_every_step", False) else max(1, round(.001/args.dt))
-    steps = math.ceil(args.horizon/args.dt)
+    until = getattr(args, "until", None)
+    if until is not None and (not args.collection_floor or not resume or not np.isfinite(until) or until <= start):
+        raise ValueError("A shared collection endpoint must follow the resumed field clock")
+    steps = math.ceil(args.horizon/args.dt) if until is None else max(1, math.ceil((until-start-1e-9)/args.dt))
+    final_step = None
     args.output.mkdir()
     trace = args.output / "trace.jsonl"
     try:
         with trace.open("x") as stream:
             for tick in range(steps+1):
+                if until is not None and tick == steps-1:
+                    final_step = until-data.time
+                    if not 0 < final_step <= args.dt+1e-8:
+                        raise ValueError("Invalid final collection interval")
+                    model.opt.timestep = final_step
                 mujoco.mj_step1(model, data)
                 axes = data.xmat[1].reshape(3, 3)
                 center = data.qpos[:3]
@@ -172,6 +181,8 @@ def run(args):
                   runner=digest(Path(__file__)), surfaces=digest(Path(__file__).with_name("speaker_surfaces.py")),
                   firstContactS=first, maximumIndentM=worst, releaseTimeS=release_time, segmentStartS=start,endS=data.time,
                   parameters={k: v for k, v in vars(args).items() if not isinstance(v, Path)})
+    if final_step is not None:
+        result["finalStepS"] = final_step
     if resume:
         result["previousFieldTrace"]=old["trace"]
     (args.output / "result.json").write_text(json.dumps(result, indent=2, allow_nan=False)+"\n")
@@ -189,6 +200,7 @@ if __name__ == "__main__":
     parser.add_argument("--belt-speed", type=float, default=1.5, help="signed top belt speed in m/s toward the counter")
     parser.add_argument("--trace-every-step", action="store_true", help="save every field pose for comparison with the moving robot")
     parser.add_argument("--horizon", type=float, default=4.)
+    parser.add_argument("--until",type=float,help="End a resumed collection at a second NOTE's exact clock")
     parser.add_argument("--resume-field",type=Path,help="Continue a saved flight from its terminal pose and velocity")
     parser.add_argument("--collection-floor",action="store_true",help="Keep tracking the discharged NOTE on a passive floor behind the end wall")
     parser.add_argument("--stiffness", type=float, default=1.2e6)

@@ -104,10 +104,17 @@ def build(model_path, output, receipt_path, delivery, release, flight, *, regist
             raise ValueError("Expected a verified first-wing score for this Fusion revision")
     else:
         pair = json.loads(registration.read_bytes())
-        record = next(r for r in receipt["pairedDenseObservations"] if r["attempt"] == "D1")
+        direct_r7 = receipt["schema"] == "r7-first-note-development/1"
+        record = receipt["observation"] if direct_r7 else next(r for r in receipt["pairedDenseObservations"] if r["attempt"] == "D1")
+        archived = receipt if direct_r7 else json.loads((ROOT/"sim/pressure/evidence/maxswerve-development-carry.json").read_bytes())["runs"]["D1"]
         carry = json.loads((delivery / "result.json").read_bytes())
-        if (receipt["schema"] != "maxswerve-development-first-shot/1" or
-                pair["displayNative"] != display_native or pair["plantNative"] != record["sourceNativeSha256"] or
+        if direct_r7:
+            from r7_dynamics import verify_binding
+            if verify_binding(carry) != receipt["massBinding"] or record["sourceNativeSha256"] != display_native:
+                raise ValueError("Expected the display archive and registered R7 mass case")
+        elif receipt["schema"] != "maxswerve-development-first-shot/1" or pair["plantNative"] != record["sourceNativeSha256"]:
+            raise ValueError("Unsupported scoring plant")
+        if (pair["displayNative"] != display_native or
                 pair["displayMesh"] != hashlib.sha256(raw).hexdigest() or
                 pair["registeredBodyCount"] != 188 or not 0 <= pair["maximumSymmetricDifferenceMm3"] <= .001 or
                 carry["nativeSha256"] != record["sourceNativeSha256"] or carry["trace"] != record["carryTrace"] or
@@ -121,7 +128,6 @@ def build(model_path, output, receipt_path, delivery, release, flight, *, regist
                 raise ValueError("Sensor file differs from the scored field registration")
             receipt["sensorS"] = record["firstSimultaneousFullShadowS"]
         if acquisition:
-            archived = json.loads((ROOT/"sim/pressure/evidence/maxswerve-development-carry.json").read_bytes())["runs"]["D1"]
             start = json.loads((acquisition/"result.json").read_bytes())
             if (archived["carryTrace"] != record["carryTrace"] or archived["pickupTrace"] != start["trace"] or
                     start["trace"] != carry["acquisitionTrace"] or start["end"] != carry["start"] or

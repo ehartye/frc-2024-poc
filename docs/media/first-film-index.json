@@ -1,0 +1,67 @@
+{
+  "schema": "agent-frc/verified-chapters@1",
+  "revision": "R7 boxed front crossmember",
+  "mediaSha256": "7ec5c5bc5efed309c565d496da1a8c253308602025a5c13dcac6afaa94538b6f",
+  "traceSha256": "a1f2415944cb342cc9e4fd1a7f4818b11dbf8c7b87d08ea74a741835c83a023e",
+  "observationsSha256": "ad03287cb8cdcf6c0f0add91325f99d171c781d4d120e4634677920f5231b102",
+  "chapters": [
+    {
+      "id": "first-note",
+      "label": "First middle-wing NOTE",
+      "classification": "Start of recording",
+      "revision": "ae6c40659f7a215573b1e172ae7aec3e90d62a94b8c27863234ee7c8cf275ce2",
+      "attempt": "D1",
+      "piece": "blue-wing-middle",
+      "clock": "match",
+      "startS": 0,
+      "endS": 17.3845499999913,
+      "events": [
+        {
+          "id": "seat",
+          "type": "seat",
+          "target": "Pickup",
+          "criterion": "The middle-wing NOTE seats between the belts.",
+          "outcome": "reached",
+          "timeS": 4.494500000000229,
+          "clipS": 4.494500000000229,
+          "pointer": "/events/0",
+          "observationKey": "6446f0bef0389c9165887d059c019660b391e89cb4ea462e2a1f1afc40f4d445"
+        },
+        {
+          "id": "release",
+          "type": "release",
+          "target": "Release",
+          "criterion": "The NOTE leaves the powered wheels and belts.",
+          "outcome": "reached",
+          "timeS": 10.566049999999036,
+          "clipS": 14.066049999999036,
+          "pointer": "/events/1",
+          "observationKey": "c1f740541cde39b9be39dbeed3e0dcf3d6613e9713d53c045aabc600d9484968"
+        },
+        {
+          "id": "opening",
+          "type": "opening",
+          "target": "Opening",
+          "criterion": "The full ring clears the registered opening.",
+          "outcome": "reached",
+          "timeS": 10.704549999998713,
+          "clipS": 15.174049999996454,
+          "pointer": "/events/2",
+          "observationKey": "f87f08c01ce5feb1006c1544408dfe806513f536f4ae7b31fa3f1834b3992eda"
+        },
+        {
+          "id": "simultaneous-counter",
+          "type": "simultaneous-counter",
+          "target": "Counter",
+          "criterion": "The same NOTE shadows both sensor pairs.",
+          "rule": "One simulated paired event after full opening passage.",
+          "outcome": "scored",
+          "timeS": 12.915049999993562,
+          "clipS": 17.3845499999913,
+          "pointer": "/events/3",
+          "observationKey": "b2e66c2c061ff3c48d6e6e2e349e1bdaa61669ac6507f006588916f2ed2e416a"
+        }
+      ]
+    }
+  ]
+}

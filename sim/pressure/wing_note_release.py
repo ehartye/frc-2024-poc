@@ -173,9 +173,12 @@ def run(args):
     if "attempt" in rc:
         result.update(attempt=rc["attempt"], rosterSha256=rc["rosterSha256"])
     if swerve:
-        result.update(drivetrain="maxswerve",initialRotors=row["rotor"],initialShearM=row["shear"],
+        from r7_dynamics import binding
+        result.update(**binding(p.mass_case), drivetrain="maxswerve",initialRotors=row["rotor"],initialShearM=row["shear"],
                       initialBusV=row["busV"],initialSourceJ=row["sourceJ"],
                       peakDriveAndSteerCurrentA=p.peak_current.tolist())
+    if rc.get("routePolicy"):
+        result["routePolicy"] = rc["routePolicy"]
     (args.output/"result.json").write_text(json.dumps(result,indent=2,allow_nan=False)+"\n")
     print(outcome,p.data.time,flush=True)
 

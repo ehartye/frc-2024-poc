@@ -28,10 +28,18 @@ class SwerveReturn(SwervePickup):
             waypoint, remaining = self.pickup_path.target(d.qpos[:2])
             delta = waypoint - d.qpos[:2]
             gap = remaining
+        target_heading = self.pickup_heading
+        if self.wall_approach and not self.wall_departed:
+            local_forward = FRAME.rotation[:2,:2].T[:,0]
+            position = FRAME.to_field([*d.qpos[:2],0])
+            self.wall_departed = position[0] >= 1.65
+            if not self.wall_departed:
+                delta = local_forward*(1.78-position[0])
+                target_heading = np.deg2rad(180.-FRAME.yaw_degrees)
         target = delta * min(2.3, self.transit_speed/max(np.linalg.norm(delta),1e-9))
         rotation = d.xmat[self.chassis].reshape(3,3)
         forward, side = rotation[:2,:2].T @ target
-        angle = angle_error(self.pickup_heading,d.qpos[2])
+        angle = angle_error(target_heading,d.qpos[2])
         if gap < .04 and abs(angle) < .035 and d.qpos[3] < .003 and abs(d.qpos[4]) < .015:
             self.approach_complete = True
         turn = np.clip(2.5*angle,-.95,.95)
@@ -41,10 +49,13 @@ class SwerveReturn(SwervePickup):
 def run(args):
     source = load(args.release/"result.json")
     floor = load(args.pickup/"result.json")
+    from r7_dynamics import verify_binding
+    mass_binding = verify_binding(source)
+    if verify_binding(floor) != mass_binding:
+        raise ValueError("R7 mass case changed during the mission")
     verify_runtime_chain([source, floor])
     if (source["firstMark"] != FRAME.first_mark or source["fieldYawDeg"] != FRAME.yaw_degrees or
             source.get("drivetrain") != "maxswerve" or source["outcome"] != "UPWARD_FREE_RELEASE" or
-            source["nativeSha256"] != load(LAYOUT)["privateFusionArchiveSha256"] or
             digest(args.archive) != source["nativeSha256"] or source["rosterSha256"] != digest(args.roster) or
             source["traceSha256"] != digest(args.release/"trace.jsonl") or
             any(floor[k] != source[k] for k in ("firstMark","fieldYawDeg","attempt","rosterSha256","nativeSha256")) or
@@ -82,20 +93,29 @@ def run(args):
     via = route["pickup"]["viaFieldXY"] if route else []
     waypoints = [FRAME.to_local([x,y,0])[:2] for x,y in via]
     direction = mark - (waypoints[-1] if waypoints else d.qpos[:2])
+    if source.get("routePolicy") == "straight-wall-approach/1" and args.next_mark == "inner":
+        # Face upfield at the wing mark, directly toward the narrow Stage face.
+        # A diagonal pickup swings the outboard corner through the upright.
+        direction = FRAME.rotation[:2,:2].T[:,0]
     plant.pickup_heading = math.atan2(direction[1],direction[0])
     plant.staging_xy = mark - .85*direction/np.linalg.norm(direction)
     plant.pickup_path = (TransitPath([d.qpos[:2].copy(), *waypoints, plant.staging_xy], .48)
                          if waypoints else None)
+    plant.wall_approach = source.get("routePolicy") == "straight-wall-approach/1"
+    plant.wall_departed = False
     plant.approach_complete = False
     plant.capture_speed = .26
-    plant.transit_speed = 1.1
-    result = dict(schema="maxswerve-next-wing-acquisition/1",drivetrain="maxswerve",runtime=runtime_versions(),
+    # Recover time spent backing clear of the Stage and the Speaker before turning.
+    plant.transit_speed = 1.30 if plant.wall_approach and args.next_mark in ("center-mid", "center-low") else 1.1
+    result = dict(**mass_binding, schema="maxswerve-next-wing-acquisition/1",drivetrain="maxswerve",runtime=runtime_versions(),
                   layoutSha256=digest(LAYOUT),nativeSha256=source["nativeSha256"],firstReleaseTrace=source["traceSha256"],
                   pieceId=piece_id(args.next_mark),attempt=source["attempt"],rosterSha256=source["rosterSha256"],
                   firstMark=source["firstMark"],fieldYawDeg=source["fieldYawDeg"],start=d.time,
                   targetLocalXY=mark.tolist(),waitingNoteLocalXY=physical.tolist(),initialQ=d.qpos.tolist(),
                   initialV=d.qvel.tolist(),initialRotors=plant.rotors.tolist(),initialShearM=plant.shear.tolist(),
                   initialBusV=plant.bus,initialSourceJ=plant.source_work,traceStride=args.trace_stride)
+    if plant.wall_approach:
+        result["routePolicy"] = source["routePolicy"]
     if route:
         result["viaFieldXY"] = via
     result.update(advance_pickup(args,plant))

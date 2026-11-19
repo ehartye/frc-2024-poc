@@ -1,0 +1,35 @@
+{
+  "rows": [
+    {
+      "revision": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+      "attempt": "D1",
+      "piece": "blue-wing-middle",
+      "clock": "match",
+      "frame": "glTF scene",
+      "unit": "m",
+      "timeS": 0.0,
+      "position": [
+        0.6449840100719487,
+        0.025284771862500006,
+        0.005443046160795145
+      ]
+    },
+    {
+      "revision": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+      "attempt": "D1",
+      "piece": "blue-wing-middle",
+      "clock": "match",
+      "frame": "glTF scene",
+      "unit": "m",
+      "timeS": 13.638849999991407,
+      "position": [
+        2.558096231271807,
+        1.3513751243418795,
+        0.0584235992774156
+      ]
+    }
+  ],
+  "pickupTrace": "eff94eb2695fc64e43a06cdc19c491536efd57ed30d991f1e8285555d53aa6c8",
+  "releaseTrace": "5ab813567918ae00bf79401e9c263097de4ce20bf2a414741b98b4e3d4412c1a",
+  "fieldTrace": "817afabb6301e24b6fb56cd717218e433e545e74a2e39085ed9332520e8d92cd"
+}

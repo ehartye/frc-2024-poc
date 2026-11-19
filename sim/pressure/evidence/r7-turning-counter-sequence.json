@@ -1,0 +1,107 @@
+{
+  "schema": "swerve-shared-counter-sequence/1",
+  "sensorSha256": "13d07c04856ee1ca927d8f17fa29570e6ead74cc1c917f1879b94b3b9d8b236f",
+  "formalAttempts": 0,
+  "coupledCollections": [
+    {
+      "sha256": "0dd0cd2b04665fff5a73cbf70e0d59fc6a444befea2f3b897d95e5f24b7eca89",
+      "schema": "coupled-note-collection/1",
+      "shots": [
+        "8c1967277d80aab14fd8f35a24f78712c3fc7229e7946f7575c0450b4963ce89",
+        "6bb1368e401181ad34b54d977df9e4831bc854423df1e9f694fe47aad18eee55"
+      ],
+      "traces": [
+        "a50dec1f83b4d7463a0b0251e20c29438b354e4dd73c6c87f11ecaa6621042a4",
+        "8073deed30012e975b125f1548c19a82e0c00e41a28b4a0fc9a9454d51fbf5c1"
+      ],
+      "inputs": [
+        "640d56bae4f311afaa396c971a7523bbeb6c64704bc700a3bc49a8facd69e388",
+        "05417affcb59939ff71413fe8147d94f66128d13222167216db2befa2934fbd4"
+      ],
+      "start": 28.011000000002213,
+      "end": 41.9812500001686,
+      "firstPairContactS": {
+        "0-1": 28.577100000000893
+      },
+      "maximumPairIndentationM": 0.004032270845407623,
+      "solver": "c52e659fbdeaf384f90b53fbb8c73b8600ac91da8e15bcc1b64fe9e87623063e"
+    }
+  ],
+  "records": [
+    {
+      "piece": "blue-wing-middle",
+      "native": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+      "shot": "8c1967277d80aab14fd8f35a24f78712c3fc7229e7946f7575c0450b4963ce89",
+      "field": "346d85dbddf845ca8600918991366dd39706be907f4ae6e4141b72550931c97c",
+      "releaseS": 10.446149999998848,
+      "openingS": 10.59094999999851,
+      "pairTimesS": [
+        13.617949999991456,
+        13.510249999991707
+      ],
+      "scoreS": 13.617949999991456,
+      "priorOccupancy": []
+    },
+    {
+      "piece": "blue-wing-outer",
+      "native": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+      "shot": "6bb1368e401181ad34b54d977df9e4831bc854423df1e9f694fe47aad18eee55",
+      "field": "05417affcb59939ff71413fe8147d94f66128d13222167216db2befa2934fbd4",
+      "releaseS": 24.366200000010707,
+      "openingS": 24.50600000001038,
+      "pairTimesS": [
+        26.837600000004947,
+        26.81980000000499
+      ],
+      "scoreS": 26.837600000004947,
+      "priorOccupancy": [
+        {
+          "piece": "blue-wing-middle",
+          "clearByS": 17.24164999998301,
+          "minimumSeparationM": 0.10077923140422723,
+          "collectionSegments": [
+            "346d85dbddf845ca8600918991366dd39706be907f4ae6e4141b72550931c97c",
+            "640d56bae4f311afaa396c971a7523bbeb6c64704bc700a3bc49a8facd69e388"
+          ],
+          "checkedThroughS": 28.011000000002213
+        }
+      ]
+    },
+    {
+      "piece": "blue-wing-inner",
+      "native": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+      "shot": "ebe12d09af2b6e0d3ff78dfcd203ff6dfc00895f006e48a1e01e3e39e7750060",
+      "field": "351d1367db743f6543a1f6b2bd81393a33ee8d20f1dd8581bbe79b47fb9342dc",
+      "releaseS": 38.167650000042,
+      "openingS": 38.30745000004664,
+      "pairTimesS": [
+        40.74155000012745,
+        40.728850000127025
+      ],
+      "scoreS": 40.74155000012745,
+      "priorOccupancy": [
+        {
+          "piece": "blue-wing-middle",
+          "clearByS": 17.24164999998301,
+          "minimumSeparationM": 0.057676964108588635,
+          "collectionSegments": [
+            "346d85dbddf845ca8600918991366dd39706be907f4ae6e4141b72550931c97c",
+            "640d56bae4f311afaa396c971a7523bbeb6c64704bc700a3bc49a8facd69e388",
+            "a50dec1f83b4d7463a0b0251e20c29438b354e4dd73c6c87f11ecaa6621042a4"
+          ],
+          "checkedThroughS": 41.9812500001686
+        },
+        {
+          "piece": "blue-wing-outer",
+          "clearByS": 27.002400000004563,
+          "minimumSeparationM": 4.367572463465086e-05,
+          "collectionSegments": [
+            "05417affcb59939ff71413fe8147d94f66128d13222167216db2befa2934fbd4",
+            "8073deed30012e975b125f1548c19a82e0c00e41a28b4a0fc9a9454d51fbf5c1"
+          ],
+          "checkedThroughS": 41.9812500001686
+        }
+      ]
+    }
+  ]
+}

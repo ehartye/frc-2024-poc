@@ -22,6 +22,8 @@ SHOWCASE_ASSETS.update({'docs/media/robot-native.png': 'cb63a717dfb9e159222cb68a
 def findings(data):
  text=data.decode('utf-8',errors='replace')
  return [name for name,p in PATTERNS.items() if re.search(p,text)]
+SHOWCASE_ASSETS["docs/media/r7-nominal-d1.glb"] = "5bfe2bbbfe008a4915b23f4d185790aacef62e921498ccd2f6bcd588f4fe8e02"
+
 def git(*args):return subprocess.check_output(['git','-C',str(ROOT),*args])
 def audit(revision='HEAD'):
  failures=[]
