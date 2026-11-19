@@ -1,9 +1,9 @@
 # Bounded MuJoCo drivetrain with Fusion robot visuals
 
 <!-- cad-still -->
-[![1780 lift and shooter](../../docs/media/robot-native.png)](https://ehartye.github.io/frc-2024-poc/#model)
+[![1780 MAXSwerve · R7](../../docs/media/swerve-r7.png)](https://ehartye.github.io/frc-2024-poc/#model)
 
-**1780 lift and shooter.** Six-wheel Fusion baseline with its continuous red bumper. Play the recorded lift and shot, or drag to rotate the model. [Native model record](../../docs/media/robot-native.json) · [Open 3D replay](https://ehartye.github.io/frc-2024-poc/#model)
+**1780 MAXSwerve · R7.** Reopened Fusion assembly with the boxed front crossmember and red 1780 bumper. The replay shows the lift, four simplified tires and first Speaker shot from development start D1. [Native model record](../../docs/media/swerve-r7.json) · [Open 3D replay](https://ehartye.github.io/frc-2024-poc/#model)
 <!-- /cad-still -->
 
 This is the current **controllable drivetrain slice**, not a complete robot mission. It uses the actual 711-part Fusion-exported robot geometry for display and the separately tested six-wheel native-ground dynamics for movement. The old pressure/acquisition simulator and all its evidence remain unchanged.

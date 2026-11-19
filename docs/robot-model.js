@@ -4,9 +4,21 @@ const viewer = document.getElementById("robot-model");
 const input = document.getElementById("local-model");
 const status = document.getElementById("model-status");
 const restore = document.getElementById("show-default");
-const publicSource = viewer.getAttribute("src");
-const publicLabel = status.textContent;
+const revision = document.getElementById("model-revision");
+const caption = document.getElementById("model-caption");
+const description = document.getElementById("replay-description");
+const models = {
+  swerve: { file: "swerve-r7", title: caption.textContent, label: status.textContent, description: description.textContent },
+  baseline: { file: "robot-native", title: "1780 · Six-wheel baseline", label: "Historical Fusion assembly · Team-authored geometry",
+              description: "First wing NOTE from the six-wheel baseline. The orange NOTE follows its measured path through the Speaker opening." }
+};
 const homeOrbit = viewer.cameraOrbit;
+const wheelsButton = document.getElementById("view-wheels");
+wheelsButton.addEventListener("click", () => {
+  viewer.cameraTarget = "0m .10m 0m";
+  viewer.cameraOrbit = "32deg 118deg 1.85m";
+  viewer.jumpCameraToGoal();
+});
 let localUrl;
 let selection = 0;
 
@@ -19,12 +31,20 @@ function resetCamera() {
 
 function restoreModel() {
   selection++;
-  viewer.src = publicSource;
+  viewer.pause();
+  replay.hidden = true;
+  const model = models[revision.value];
+  viewer.src = "media/" + model.file + ".glb";
+  viewer.poster = "media/" + model.file + ".png";
+  viewer.querySelector('[slot="poster"]').src = viewer.poster;
+  caption.textContent = model.title;
+  description.textContent = model.description;
+  wheelsButton.hidden = revision.value !== "swerve";
   if (localUrl) URL.revokeObjectURL(localUrl);
   localUrl = undefined;
   input.value = "";
   restore.hidden = true;
-  status.textContent = publicLabel;
+  status.textContent = model.label;
   resetCamera();
 }
 
@@ -50,6 +70,10 @@ input.addEventListener("change", async () => {
     if (token !== selection) return;
     const previous = localUrl;
     localUrl = URL.createObjectURL(file);
+    viewer.pause();
+    replay.hidden = true;
+    caption.textContent = "Local assembly";
+    wheelsButton.hidden = true;
     viewer.src = localUrl;
     if (previous) URL.revokeObjectURL(previous);
     restore.hidden = false;
@@ -65,6 +89,7 @@ viewer.addEventListener("error", () => {
   status.textContent = "The interactive model could not be displayed in this browser.";
 });
 restore.addEventListener("click", restoreModel);
+revision.addEventListener("change", restoreModel);
 document.getElementById("reset-camera").addEventListener("click", resetCamera);
 
 const replay = document.getElementById("replay");
@@ -122,7 +147,7 @@ slowShot.addEventListener("click", () => {
 });
 timeline.addEventListener("input", () => {
   viewer.pause();
-  viewer.currentTime = Number(timeline.value);
+  viewer.currentTime = Math.min(Number(timeline.value), viewer.duration - .0001);
   showPlayhead();
 });
 speed.addEventListener("change", () => { viewer.timeScale = Number(speed.value); });

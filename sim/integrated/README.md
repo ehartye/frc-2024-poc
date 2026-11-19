@@ -1,9 +1,9 @@
 # Integrated current-geometry robot plant
 
 <!-- cad-still -->
-[![1780 lift and shooter](../../docs/media/robot-native.png)](https://ehartye.github.io/frc-2024-poc/#model)
+[![1780 MAXSwerve · R7](../../docs/media/swerve-r7.png)](https://ehartye.github.io/frc-2024-poc/#model)
 
-**1780 lift and shooter.** Six-wheel Fusion baseline with its continuous red bumper. Play the recorded lift and shot, or drag to rotate the model. [Native model record](../../docs/media/robot-native.json) · [Open 3D replay](https://ehartye.github.io/frc-2024-poc/#model)
+**1780 MAXSwerve · R7.** Reopened Fusion assembly with the boxed front crossmember and red 1780 bumper. The replay shows the lift, four simplified tires and first Speaker shot from development start D1. [Native model record](../../docs/media/swerve-r7.json) · [Open 3D replay](https://ehartye.github.io/frc-2024-poc/#model)
 <!-- /cad-still -->
 
 This directory is the integration layer under construction, not a completed robot simulator. The saved browser rehearsal is not the requested modeled robot.
