@@ -1,0 +1,1564 @@
+{
+  "season": 2024,
+  "game": "CRESCENDO",
+  "edition": "Archived final 2024 manual and Team Update 21",
+  "manual": "https://firstfrc.blob.core.windows.net/frc2024/Manual/HTML/2024GameManual.htm",
+  "units": "in",
+  "field": {
+    "length": 651.25,
+    "width": 323.25,
+    "source": "https://firstfrc.blob.core.windows.net/frc2024/FieldAssets/2024LayoutMarkingDiagram.pdf"
+  },
+  "limits": {
+    "height": 48,
+    "perimeter": 120,
+    "source": "2024 R104, R105 and G413. Envelope and complete bumper support need a separate inspection."
+  },
+  "levels": [
+    {
+      "name": "Speaker low lip",
+      "height": 78
+    },
+    {
+      "name": "AMP sill",
+      "height": 26
+    }
+  ],
+  "landmarks": [],
+  "geometrySource": "FE-2024 installed assembly, field layout sheets 3\u20134 and game-specific field drawings. Project-selected interaction poses are in inches.",
+  "omissions": "Timed tactical rehearsal. Unamplified scoring and NOTE identity are modeled. Live amplification, STAGE tasks, defense contacts and official adjudication are outside these totals.",
+  "rehearsal": {
+    "schema": "field-rehearsal/v1",
+    "basis": "Six independently assigned match roles on the archived final CRESCENDO layout. Service time, release outcome and robot speed are scenario inputs.",
+    "boundsNote": "Stage leg boxes bound the registered native legs. Cables, overhangs, final climb, referee calls and contact forces are omitted.",
+    "sources": [
+      "https://firstfrc.blob.core.windows.net/frc2024/Manual/HTML/2024GameManual.htm",
+      "https://firstfrc.blob.core.windows.net/frc2024/FieldAssets/2024LayoutMarkingDiagram.pdf",
+      "https://firstfrc.blob.core.windows.net/frc2024/FieldAssets/2024FieldDrawings.pdf"
+    ],
+    "resourceLabel": "Speaker lane",
+    "setups": [
+      "Nominal field"
+    ],
+    "planes": [],
+    "obstacles": [
+      {
+        "name": "Blue stage leg 1",
+        "kind": "post",
+        "lower": 0,
+        "poly": [
+          [
+            212.77,
+            102.65
+          ],
+          [
+            229.17,
+            102.65
+          ],
+          [
+            229.17,
+            119.04
+          ],
+          [
+            212.77,
+            119.04
+          ]
+        ]
+      },
+      {
+        "name": "Blue stage leg 2",
+        "kind": "post",
+        "lower": 0,
+        "poly": [
+          [
+            212.77,
+            204.21
+          ],
+          [
+            229.17,
+            204.21
+          ],
+          [
+            229.17,
+            220.6
+          ],
+          [
+            212.77,
+            220.6
+          ]
+        ]
+      },
+      {
+        "name": "Blue stage leg 3",
+        "kind": "post",
+        "lower": 0,
+        "poly": [
+          [
+            127.01,
+            155.63
+          ],
+          [
+            139.01,
+            155.63
+          ],
+          [
+            139.01,
+            167.63
+          ],
+          [
+            127.01,
+            167.63
+          ]
+        ]
+      },
+      {
+        "name": "Red stage leg 1",
+        "kind": "post",
+        "lower": 0,
+        "poly": [
+          [
+            422.08,
+            204.21
+          ],
+          [
+            438.48,
+            204.21
+          ],
+          [
+            438.48,
+            220.6
+          ],
+          [
+            422.08,
+            220.6
+          ]
+        ]
+      },
+      {
+        "name": "Red stage leg 2",
+        "kind": "post",
+        "lower": 0,
+        "poly": [
+          [
+            422.08,
+            102.65
+          ],
+          [
+            438.48,
+            102.65
+          ],
+          [
+            438.48,
+            119.04
+          ],
+          [
+            422.08,
+            119.04
+          ]
+        ]
+      },
+      {
+        "name": "Red stage leg 3",
+        "kind": "post",
+        "lower": 0,
+        "poly": [
+          [
+            512.24,
+            155.62
+          ],
+          [
+            524.24,
+            155.62
+          ],
+          [
+            524.24,
+            167.62
+          ],
+          [
+            512.24,
+            167.62
+          ]
+        ]
+      }
+    ],
+    "bands": [],
+    "starts": [
+      [
+        38,
+        218.4
+      ],
+      [
+        40,
+        276
+      ],
+      [
+        36,
+        107
+      ]
+    ],
+    "mirror": {
+      "redX": true,
+      "redY": false
+    },
+    "periods": [
+      {
+        "name": "AUTO",
+        "seconds": 15
+      },
+      {
+        "name": "TELEOP",
+        "seconds": 135
+      }
+    ],
+    "defaults": {
+      "length": 28,
+      "width": 28,
+      "height": 28,
+      "bumper": 3,
+      "heading": 0,
+      "speed": 85,
+      "capacity": 1,
+      "orders": [
+        "cycler",
+        "amp",
+        "midfield"
+      ]
+    },
+    "programs": {
+      "opening-speaker": {
+        "label": "Preload and middle wing",
+        "steps": [
+          {
+            "at": [
+              57,
+              218.4
+            ],
+            "label": "Attempt speaker",
+            "station": {
+              "blue": "blue-speaker",
+              "red": "red-speaker"
+            },
+            "operation": "attempt",
+            "dwell": 1.6,
+            "outcome": "credited"
+          },
+          {
+            "at": [
+              114,
+              218.625
+            ],
+            "label": "Collect middle",
+            "station": {
+              "blue": "blue-middle",
+              "red": "red-middle"
+            },
+            "operation": "acquire",
+            "dwell": 1.2
+          },
+          {
+            "at": [
+              57,
+              218.4
+            ],
+            "label": "Attempt speaker",
+            "station": {
+              "blue": "blue-speaker",
+              "red": "red-speaker"
+            },
+            "operation": "attempt",
+            "dwell": 1.6,
+            "outcome": "credited"
+          }
+        ],
+        "loop": false
+      },
+      "opening-amp": {
+        "label": "Preload at AMP and outer wing",
+        "steps": [
+          {
+            "at": [
+              72.5,
+              298
+            ],
+            "label": "Attempt amp",
+            "station": {
+              "blue": "blue-amp",
+              "red": "red-amp"
+            },
+            "operation": "attempt",
+            "dwell": 1.6,
+            "outcome": "credited"
+          },
+          {
+            "at": [
+              114,
+              275.625
+            ],
+            "label": "Collect outer",
+            "station": {
+              "blue": "blue-outer",
+              "red": "red-outer"
+            },
+            "operation": "acquire",
+            "dwell": 1.2
+          },
+          {
+            "at": [
+              72.5,
+              298
+            ],
+            "label": "Attempt amp",
+            "station": {
+              "blue": "blue-amp",
+              "red": "red-amp"
+            },
+            "operation": "attempt",
+            "dwell": 1.6,
+            "outcome": "credited"
+          }
+        ],
+        "loop": false
+      },
+      "opening-support": {
+        "label": "Carry preload out to support lane",
+        "steps": [
+          {
+            "at": [
+              145,
+              91
+            ],
+            "label": "Leave and establish lane"
+          }
+        ],
+        "loop": false
+      },
+      "cycler": {
+        "label": "Close Speaker cycles",
+        "steps": [
+          {
+            "at": [
+              103,
+              161.625
+            ],
+            "label": "Collect inner",
+            "station": {
+              "blue": "blue-inner",
+              "red": "red-inner"
+            },
+            "operation": "acquire",
+            "dwell": 1.2
+          },
+          {
+            "at": [
+              57,
+              218.4
+            ],
+            "label": "Attempt speaker",
+            "station": {
+              "blue": "blue-speaker",
+              "red": "red-speaker"
+            },
+            "operation": "attempt",
+            "dwell": 1.6,
+            "outcome": "credited"
+          },
+          {
+            "at": [
+              325.625,
+              227.625
+            ],
+            "label": "Collect center-4",
+            "station": "center-4",
+            "operation": "acquire",
+            "dwell": 1.2
+          },
+          {
+            "at": [
+              57,
+              218.4
+            ],
+            "label": "Attempt speaker",
+            "station": {
+              "blue": "blue-speaker",
+              "red": "red-speaker"
+            },
+            "operation": "attempt",
+            "dwell": 1.6,
+            "outcome": "credited"
+          },
+          {
+            "at": [
+              588,
+              49
+            ],
+            "label": "Collect source",
+            "station": {
+              "blue": "blue-source",
+              "red": "red-source"
+            },
+            "operation": "acquire",
+            "dwell": 1.2
+          },
+          {
+            "at": [
+              57,
+              218.4
+            ],
+            "label": "Attempt speaker",
+            "station": {
+              "blue": "blue-speaker",
+              "red": "red-speaker"
+            },
+            "operation": "attempt",
+            "dwell": 1.6,
+            "outcome": "credited"
+          }
+        ],
+        "loop": true
+      },
+      "amp": {
+        "label": "AMP supply cycles",
+        "steps": [
+          {
+            "at": [
+              325.625,
+              293.625
+            ],
+            "label": "Collect center-5",
+            "station": "center-5",
+            "operation": "acquire",
+            "dwell": 1.2
+          },
+          {
+            "at": [
+              72.5,
+              298
+            ],
+            "label": "Attempt amp",
+            "station": {
+              "blue": "blue-amp",
+              "red": "red-amp"
+            },
+            "operation": "attempt",
+            "dwell": 1.6,
+            "outcome": "credited"
+          },
+          {
+            "at": [
+              588,
+              49
+            ],
+            "label": "Collect source",
+            "station": {
+              "blue": "blue-source",
+              "red": "red-source"
+            },
+            "operation": "acquire",
+            "dwell": 1.2
+          },
+          {
+            "at": [
+              72.5,
+              298
+            ],
+            "label": "Attempt amp",
+            "station": {
+              "blue": "blue-amp",
+              "red": "red-amp"
+            },
+            "operation": "attempt",
+            "dwell": 1.6,
+            "outcome": "credited"
+          }
+        ],
+        "loop": true
+      },
+      "midfield": {
+        "label": "Retrieve a midfield NOTE and deliver to the home lane",
+        "steps": [
+          {
+            "at": [
+              325.625,
+              95.625
+            ],
+            "label": "Collect center-2",
+            "station": "center-2",
+            "operation": "acquire",
+            "dwell": 1.2
+          },
+          {
+            "at": [
+              142,
+              75
+            ],
+            "label": "Offer retained NOTE from home lane"
+          }
+        ],
+        "loop": false
+      },
+      "miss-recover": {
+        "label": "Miss then collect from SOURCE",
+        "steps": [
+          {
+            "at": [
+              103,
+              161.625
+            ],
+            "label": "Collect inner",
+            "station": {
+              "blue": "blue-inner",
+              "red": "red-inner"
+            },
+            "operation": "acquire",
+            "dwell": 1.2
+          },
+          {
+            "at": [
+              57,
+              218.4
+            ],
+            "label": "Attempt speaker",
+            "station": {
+              "blue": "blue-speaker",
+              "red": "red-speaker"
+            },
+            "operation": "attempt",
+            "dwell": 1.6,
+            "outcome": "missed"
+          },
+          {
+            "at": [
+              588,
+              49
+            ],
+            "label": "Collect source",
+            "station": {
+              "blue": "blue-source",
+              "red": "red-source"
+            },
+            "operation": "acquire",
+            "dwell": 1.2
+          },
+          {
+            "at": [
+              57,
+              218.4
+            ],
+            "label": "Attempt speaker",
+            "station": {
+              "blue": "blue-speaker",
+              "red": "red-speaker"
+            },
+            "operation": "attempt",
+            "dwell": 1.6,
+            "outcome": "credited"
+          }
+        ],
+        "loop": true
+      },
+      "trap-approach": {
+        "label": "Carry a NOTE toward a TRAP",
+        "steps": [
+          {
+            "at": [
+              167,
+              204
+            ],
+            "label": "Carry toward upper stage face"
+          },
+          {
+            "at": [
+              167,
+              204
+            ],
+            "label": "Attempt trap-upper",
+            "station": {
+              "blue": "blue-trap-upper",
+              "red": "red-trap-upper"
+            },
+            "operation": "attempt",
+            "dwell": 1.6,
+            "outcome": "unresolved"
+          },
+          {
+            "at": [
+              588,
+              49
+            ],
+            "label": "Collect source",
+            "station": {
+              "blue": "blue-source",
+              "red": "red-source"
+            },
+            "operation": "acquire",
+            "dwell": 1.2
+          },
+          {
+            "at": [
+              160,
+              90
+            ],
+            "label": "Return home"
+          }
+        ],
+        "loop": false
+      },
+      "red-cycler": {
+        "label": "Close Speaker cycles (red lane)",
+        "steps": [
+          {
+            "at": [
+              103,
+              161.625
+            ],
+            "label": "Collect inner",
+            "station": {
+              "blue": "blue-inner",
+              "red": "red-inner"
+            },
+            "operation": "acquire",
+            "dwell": 1.2
+          },
+          {
+            "at": [
+              57,
+              218.4
+            ],
+            "label": "Attempt speaker",
+            "station": {
+              "blue": "blue-speaker",
+              "red": "red-speaker"
+            },
+            "operation": "attempt",
+            "dwell": 1.6,
+            "outcome": "credited"
+          },
+          {
+            "at": [
+              325.625,
+              161.625
+            ],
+            "label": "Collect center-3",
+            "station": "center-3",
+            "operation": "acquire",
+            "dwell": 1.2
+          },
+          {
+            "at": [
+              57,
+              218.4
+            ],
+            "label": "Attempt speaker",
+            "station": {
+              "blue": "blue-speaker",
+              "red": "red-speaker"
+            },
+            "operation": "attempt",
+            "dwell": 1.6,
+            "outcome": "credited"
+          },
+          {
+            "at": [
+              588,
+              49
+            ],
+            "label": "Collect source",
+            "station": {
+              "blue": "blue-source",
+              "red": "red-source"
+            },
+            "operation": "acquire",
+            "dwell": 1.2
+          },
+          {
+            "at": [
+              57,
+              218.4
+            ],
+            "label": "Attempt speaker",
+            "station": {
+              "blue": "blue-speaker",
+              "red": "red-speaker"
+            },
+            "operation": "attempt",
+            "dwell": 1.6,
+            "outcome": "credited"
+          }
+        ],
+        "loop": true
+      },
+      "red-amp": {
+        "label": "AMP supply cycles (red lane)",
+        "steps": [
+          {
+            "at": [
+              325.625,
+              29.625
+            ],
+            "label": "Collect center-1",
+            "station": "center-1",
+            "operation": "acquire",
+            "dwell": 1.2
+          },
+          {
+            "at": [
+              72.5,
+              298
+            ],
+            "label": "Attempt amp",
+            "station": {
+              "blue": "blue-amp",
+              "red": "red-amp"
+            },
+            "operation": "attempt",
+            "dwell": 1.6,
+            "outcome": "credited"
+          },
+          {
+            "at": [
+              588,
+              49
+            ],
+            "label": "Collect source",
+            "station": {
+              "blue": "blue-source",
+              "red": "red-source"
+            },
+            "operation": "acquire",
+            "dwell": 1.2
+          },
+          {
+            "at": [
+              72.5,
+              298
+            ],
+            "label": "Attempt amp",
+            "station": {
+              "blue": "blue-amp",
+              "red": "red-amp"
+            },
+            "operation": "attempt",
+            "dwell": 1.6,
+            "outcome": "credited"
+          }
+        ],
+        "loop": true
+      },
+      "red-midfield": {
+        "label": "Retrieve a midfield NOTE and deliver to the home lane (red lane)",
+        "steps": [
+          {
+            "at": [
+              325.625,
+              227.625
+            ],
+            "label": "Collect center-4",
+            "station": "center-4",
+            "operation": "acquire",
+            "dwell": 1.2
+          },
+          {
+            "at": [
+              142,
+              75
+            ],
+            "label": "Offer retained NOTE from home lane"
+          }
+        ],
+        "loop": false
+      }
+    },
+    "stations": [
+      {
+        "id": "blue-source",
+        "label": "Blue SOURCE",
+        "kind": "retrieval",
+        "side": "blue",
+        "piece": "NOTE",
+        "at": [
+          588,
+          49
+        ],
+        "displayAt": [
+          615.54,
+          22.1
+        ],
+        "radiusIn": 12,
+        "stock": 9
+      },
+      {
+        "id": "blue-inner",
+        "label": "Blue inner wing NOTE",
+        "kind": "retrieval",
+        "side": "blue",
+        "piece": "NOTE",
+        "at": [
+          103,
+          161.625
+        ],
+        "displayAt": [
+          114,
+          161.625
+        ],
+        "radiusIn": 12,
+        "stock": 1
+      },
+      {
+        "id": "blue-middle",
+        "label": "Blue middle wing NOTE",
+        "kind": "retrieval",
+        "side": "blue",
+        "piece": "NOTE",
+        "at": [
+          114,
+          218.625
+        ],
+        "displayAt": [
+          114,
+          218.625
+        ],
+        "radiusIn": 12,
+        "stock": 1
+      },
+      {
+        "id": "blue-outer",
+        "label": "Blue outer wing NOTE",
+        "kind": "retrieval",
+        "side": "blue",
+        "piece": "NOTE",
+        "at": [
+          114,
+          275.625
+        ],
+        "displayAt": [
+          114,
+          275.625
+        ],
+        "radiusIn": 12,
+        "stock": 1
+      },
+      {
+        "id": "blue-speaker",
+        "label": "Blue SPEAKER",
+        "kind": "scoring",
+        "side": "blue",
+        "piece": "NOTE",
+        "at": [
+          57,
+          218.4
+        ],
+        "displayAt": [
+          10,
+          218.4
+        ],
+        "radiusIn": 12,
+        "points": {
+          "AUTO": 5,
+          "TELEOP": 2
+        },
+        "criterion": "Scripted successful near shot after a stop and feed dwell. Ordinary TELEOP points."
+      },
+      {
+        "id": "blue-amp",
+        "label": "Blue AMP",
+        "kind": "scoring",
+        "side": "blue",
+        "piece": "NOTE",
+        "at": [
+          72.5,
+          298
+        ],
+        "displayAt": [
+          72.5,
+          323.12
+        ],
+        "radiusIn": 12,
+        "points": {
+          "AUTO": 2,
+          "TELEOP": 1
+        },
+        "criterion": "Scripted placement through the AMP opening after a dwell."
+      },
+      {
+        "id": "blue-trap-front",
+        "label": "Blue TRAP front",
+        "kind": "scoring",
+        "side": "blue",
+        "piece": "NOTE",
+        "at": [
+          246,
+          162
+        ],
+        "displayAt": [
+          208.62,
+          161.61
+        ],
+        "radiusIn": 12,
+        "points": {
+          "AUTO": 0,
+          "TELEOP": 5
+        },
+        "criterion": "Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved."
+      },
+      {
+        "id": "blue-trap-upper",
+        "label": "Blue TRAP upper",
+        "kind": "scoring",
+        "side": "blue",
+        "piece": "NOTE",
+        "at": [
+          167,
+          204
+        ],
+        "displayAt": [
+          183.19,
+          176.32
+        ],
+        "radiusIn": 12,
+        "points": {
+          "AUTO": 0,
+          "TELEOP": 5
+        },
+        "criterion": "Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved."
+      },
+      {
+        "id": "blue-trap-lower",
+        "label": "Blue TRAP lower",
+        "kind": "scoring",
+        "side": "blue",
+        "piece": "NOTE",
+        "at": [
+          167,
+          119
+        ],
+        "displayAt": [
+          183.16,
+          146.95
+        ],
+        "radiusIn": 12,
+        "points": {
+          "AUTO": 0,
+          "TELEOP": 5
+        },
+        "criterion": "Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved."
+      },
+      {
+        "id": "red-source",
+        "label": "Red SOURCE",
+        "kind": "retrieval",
+        "side": "red",
+        "piece": "NOTE",
+        "at": [
+          63.25,
+          49
+        ],
+        "displayAt": [
+          35.71,
+          22.1
+        ],
+        "radiusIn": 12,
+        "stock": 9
+      },
+      {
+        "id": "red-inner",
+        "label": "Red inner wing NOTE",
+        "kind": "retrieval",
+        "side": "red",
+        "piece": "NOTE",
+        "at": [
+          548.25,
+          161.625
+        ],
+        "displayAt": [
+          537.25,
+          161.625
+        ],
+        "radiusIn": 12,
+        "stock": 1
+      },
+      {
+        "id": "red-middle",
+        "label": "Red middle wing NOTE",
+        "kind": "retrieval",
+        "side": "red",
+        "piece": "NOTE",
+        "at": [
+          537.25,
+          218.625
+        ],
+        "displayAt": [
+          537.25,
+          218.625
+        ],
+        "radiusIn": 12,
+        "stock": 1
+      },
+      {
+        "id": "red-outer",
+        "label": "Red outer wing NOTE",
+        "kind": "retrieval",
+        "side": "red",
+        "piece": "NOTE",
+        "at": [
+          537.25,
+          275.625
+        ],
+        "displayAt": [
+          537.25,
+          275.625
+        ],
+        "radiusIn": 12,
+        "stock": 1
+      },
+      {
+        "id": "red-speaker",
+        "label": "Red SPEAKER",
+        "kind": "scoring",
+        "side": "red",
+        "piece": "NOTE",
+        "at": [
+          594.25,
+          218.4
+        ],
+        "displayAt": [
+          641.25,
+          218.4
+        ],
+        "radiusIn": 12,
+        "points": {
+          "AUTO": 5,
+          "TELEOP": 2
+        },
+        "criterion": "Scripted successful near shot after a stop and feed dwell. Ordinary TELEOP points."
+      },
+      {
+        "id": "red-amp",
+        "label": "Red AMP",
+        "kind": "scoring",
+        "side": "red",
+        "piece": "NOTE",
+        "at": [
+          578.75,
+          298
+        ],
+        "displayAt": [
+          578.75,
+          323.12
+        ],
+        "radiusIn": 12,
+        "points": {
+          "AUTO": 2,
+          "TELEOP": 1
+        },
+        "criterion": "Scripted placement through the AMP opening after a dwell."
+      },
+      {
+        "id": "red-trap-front",
+        "label": "Red TRAP front",
+        "kind": "scoring",
+        "side": "red",
+        "piece": "NOTE",
+        "at": [
+          405.25,
+          162
+        ],
+        "displayAt": [
+          442.63,
+          161.61
+        ],
+        "radiusIn": 12,
+        "points": {
+          "AUTO": 0,
+          "TELEOP": 5
+        },
+        "criterion": "Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved."
+      },
+      {
+        "id": "red-trap-upper",
+        "label": "Red TRAP upper",
+        "kind": "scoring",
+        "side": "red",
+        "piece": "NOTE",
+        "at": [
+          484.25,
+          204
+        ],
+        "displayAt": [
+          468.06,
+          176.32
+        ],
+        "radiusIn": 12,
+        "points": {
+          "AUTO": 0,
+          "TELEOP": 5
+        },
+        "criterion": "Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved."
+      },
+      {
+        "id": "red-trap-lower",
+        "label": "Red TRAP lower",
+        "kind": "scoring",
+        "side": "red",
+        "piece": "NOTE",
+        "at": [
+          484.25,
+          119
+        ],
+        "displayAt": [
+          468.09,
+          146.95
+        ],
+        "radiusIn": 12,
+        "points": {
+          "AUTO": 0,
+          "TELEOP": 5
+        },
+        "criterion": "Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved."
+      },
+      {
+        "id": "center-1",
+        "label": "Center NOTE 1",
+        "kind": "retrieval",
+        "side": "both",
+        "piece": "NOTE",
+        "at": [
+          325.625,
+          29.625
+        ],
+        "displayAt": [
+          325.625,
+          29.625
+        ],
+        "radiusIn": 12,
+        "stock": 1
+      },
+      {
+        "id": "center-2",
+        "label": "Center NOTE 2",
+        "kind": "retrieval",
+        "side": "both",
+        "piece": "NOTE",
+        "at": [
+          325.625,
+          95.625
+        ],
+        "displayAt": [
+          325.625,
+          95.625
+        ],
+        "radiusIn": 12,
+        "stock": 1
+      },
+      {
+        "id": "center-3",
+        "label": "Center NOTE 3",
+        "kind": "retrieval",
+        "side": "both",
+        "piece": "NOTE",
+        "at": [
+          325.625,
+          161.625
+        ],
+        "displayAt": [
+          325.625,
+          161.625
+        ],
+        "radiusIn": 12,
+        "stock": 1
+      },
+      {
+        "id": "center-4",
+        "label": "Center NOTE 4",
+        "kind": "retrieval",
+        "side": "both",
+        "piece": "NOTE",
+        "at": [
+          325.625,
+          227.625
+        ],
+        "displayAt": [
+          325.625,
+          227.625
+        ],
+        "radiusIn": 12,
+        "stock": 1
+      },
+      {
+        "id": "center-5",
+        "label": "Center NOTE 5",
+        "kind": "retrieval",
+        "side": "both",
+        "piece": "NOTE",
+        "at": [
+          325.625,
+          293.625
+        ],
+        "displayAt": [
+          325.625,
+          293.625
+        ],
+        "radiusIn": 12,
+        "stock": 1
+      }
+    ],
+    "series": {
+      "matches": [
+        {
+          "id": "wing-opening",
+          "basis": "Both alliances prioritize their own wing and local goals.",
+          "setup": "Nominal field",
+          "roster": [
+            {
+              "side": "red",
+              "slot": 1,
+              "capacity": 1,
+              "preload": {
+                "station": "red-source",
+                "quantity": 1
+              },
+              "plans": {
+                "AUTO": "opening-speaker",
+                "TELEOP": "red-cycler"
+              }
+            },
+            {
+              "side": "red",
+              "slot": 2,
+              "capacity": 1,
+              "preload": {
+                "station": "red-source",
+                "quantity": 1
+              },
+              "plans": {
+                "AUTO": "opening-amp",
+                "TELEOP": "red-amp"
+              }
+            },
+            {
+              "side": "red",
+              "slot": 3,
+              "capacity": 1,
+              "plans": {
+                "AUTO": "opening-support",
+                "TELEOP": "red-midfield"
+              }
+            },
+            {
+              "side": "blue",
+              "slot": 1,
+              "capacity": 1,
+              "preload": {
+                "station": "blue-source",
+                "quantity": 1
+              },
+              "plans": {
+                "AUTO": "opening-speaker",
+                "TELEOP": "cycler"
+              }
+            },
+            {
+              "side": "blue",
+              "slot": 2,
+              "capacity": 1,
+              "preload": {
+                "station": "blue-source",
+                "quantity": 1
+              },
+              "plans": {
+                "AUTO": "opening-amp",
+                "TELEOP": "amp"
+              }
+            },
+            {
+              "side": "blue",
+              "slot": 3,
+              "capacity": 1,
+              "plans": {
+                "AUTO": "opening-support",
+                "TELEOP": "midfield"
+              }
+            }
+          ]
+        },
+        {
+          "id": "shared-center",
+          "basis": "Supporting robots pursue the same midfield corridor.",
+          "setup": "Nominal field",
+          "roster": [
+            {
+              "side": "blue",
+              "slot": 1,
+              "capacity": 1,
+              "preload": {
+                "station": "blue-source",
+                "quantity": 1
+              },
+              "plans": {
+                "AUTO": "opening-speaker",
+                "TELEOP": "cycler"
+              }
+            },
+            {
+              "side": "blue",
+              "slot": 2,
+              "capacity": 1,
+              "preload": {
+                "station": "blue-source",
+                "quantity": 1
+              },
+              "plans": {
+                "AUTO": "opening-amp",
+                "TELEOP": "midfield"
+              }
+            },
+            {
+              "side": "blue",
+              "slot": 3,
+              "capacity": 1,
+              "plans": {
+                "AUTO": "opening-support",
+                "TELEOP": "midfield"
+              }
+            },
+            {
+              "side": "red",
+              "slot": 1,
+              "capacity": 1,
+              "preload": {
+                "station": "red-source",
+                "quantity": 1
+              },
+              "plans": {
+                "AUTO": "opening-speaker",
+                "TELEOP": "cycler"
+              }
+            },
+            {
+              "side": "red",
+              "slot": 2,
+              "capacity": 1,
+              "preload": {
+                "station": "red-source",
+                "quantity": 1
+              },
+              "plans": {
+                "AUTO": "opening-amp",
+                "TELEOP": "midfield"
+              }
+            },
+            {
+              "side": "red",
+              "slot": 3,
+              "capacity": 1,
+              "plans": {
+                "AUTO": "opening-support",
+                "TELEOP": "midfield"
+              }
+            }
+          ]
+        },
+        {
+          "id": "miss-and-stage",
+          "basis": "One cycler misses its first TELEOP shot. One partner attempts the unqualified TRAP.",
+          "setup": "Nominal field",
+          "roster": [
+            {
+              "side": "red",
+              "slot": 1,
+              "capacity": 1,
+              "preload": {
+                "station": "red-source",
+                "quantity": 1
+              },
+              "plans": {
+                "AUTO": "opening-speaker",
+                "TELEOP": "cycler"
+              }
+            },
+            {
+              "side": "red",
+              "slot": 2,
+              "capacity": 1,
+              "preload": {
+                "station": "red-source",
+                "quantity": 1
+              },
+              "plans": {
+                "AUTO": "opening-amp",
+                "TELEOP": "amp"
+              }
+            },
+            {
+              "side": "red",
+              "slot": 3,
+              "capacity": 1,
+              "preload": {
+                "station": "red-source",
+                "quantity": 1
+              },
+              "plans": {
+                "AUTO": "opening-support",
+                "TELEOP": "trap-approach"
+              }
+            },
+            {
+              "side": "blue",
+              "slot": 1,
+              "capacity": 1,
+              "preload": {
+                "station": "blue-source",
+                "quantity": 1
+              },
+              "plans": {
+                "AUTO": "opening-speaker",
+                "TELEOP": "miss-recover"
+              }
+            },
+            {
+              "side": "blue",
+              "slot": 2,
+              "capacity": 1,
+              "preload": {
+                "station": "blue-source",
+                "quantity": 1
+              },
+              "plans": {
+                "AUTO": "opening-amp",
+                "TELEOP": "amp"
+              }
+            },
+            {
+              "side": "blue",
+              "slot": 3,
+              "capacity": 1,
+              "plans": {
+                "AUTO": "opening-support",
+                "TELEOP": "midfield"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "scoring": {
+    "source": "2024 Game Details sections 6.4 and 6.5. Unamplified NOTE points.",
+    "inventory": [
+      {
+        "piece": "NOTE",
+        "total": 29,
+        "distribution": "Eleven floor marks plus nine available at each SOURCE in this scenario. Declared preloads are drawn once from the authored SOURCE stock before AUTO."
+      }
+    ],
+    "phases": [
+      {
+        "name": "AUTO",
+        "seconds": 15
+      },
+      {
+        "name": "TELEOP",
+        "seconds": 135
+      }
+    ],
+    "targets": [
+      {
+        "name": "SPEAKER",
+        "goal": "speaker",
+        "piece": "NOTE",
+        "points": [
+          5,
+          2
+        ]
+      },
+      {
+        "name": "AMP",
+        "goal": "amp",
+        "piece": "NOTE",
+        "points": [
+          2,
+          1
+        ]
+      },
+      {
+        "name": "TRAP",
+        "goal": "trap",
+        "piece": "NOTE",
+        "points": [
+          0,
+          5
+        ]
+      }
+    ],
+    "fieldMap": {
+      "basis": "Blue-side planning coordinates in inches.",
+      "starts": [
+        [
+          38,
+          218.4
+        ],
+        [
+          40,
+          276
+        ],
+        [
+          36,
+          107
+        ]
+      ],
+      "sources": {
+        "NOTE": [
+          [
+            114,
+            218.625
+          ],
+          [
+            325.625,
+            227.625
+          ],
+          [
+            588,
+            49
+          ]
+        ]
+      },
+      "targets": {
+        "speaker": [
+          [
+            57,
+            218.4
+          ]
+        ],
+        "amp": [
+          [
+            72.5,
+            298
+          ]
+        ],
+        "trap": [
+          [
+            167,
+            204
+          ]
+        ]
+      },
+      "routes": [
+        {
+          "piece": "NOTE",
+          "goal": "speaker"
+        },
+        {
+          "piece": "NOTE",
+          "goal": "amp"
+        },
+        {
+          "piece": "NOTE",
+          "goal": "trap"
+        }
+      ],
+      "mirror": {
+        "redX": true,
+        "redY": false
+      }
+    }
+  }
+}

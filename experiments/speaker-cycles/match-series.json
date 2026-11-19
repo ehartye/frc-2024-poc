@@ -1,0 +1,2471 @@
+{
+  "schema": "agent-frc/rehearsal-series@1",
+  "profileSha256": "4b10d74bd504bc1e33266b0bd2acbd524ae3e720e6a88dd9c0a9c58942fa2a76",
+  "stepS": 0.05,
+  "playbackRate": 10,
+  "modelSeconds": 450,
+  "playbackSeconds": 45,
+  "matches": [
+    {
+      "id": "wing-opening",
+      "basis": "Both alliances prioritize their own wing and local goals.",
+      "setup": "Nominal field",
+      "roster": [
+        {
+          "id": "R1",
+          "side": "red",
+          "slot": 1,
+          "plans": {
+            "AUTO": "opening-speaker",
+            "TELEOP": "red-cycler"
+          },
+          "length": 28,
+          "width": 28,
+          "height": 28,
+          "bumper": 3,
+          "heading": 180,
+          "speed": 85,
+          "capacity": 1,
+          "preload": {
+            "station": "red-source",
+            "quantity": 1
+          }
+        },
+        {
+          "id": "R2",
+          "side": "red",
+          "slot": 2,
+          "plans": {
+            "AUTO": "opening-amp",
+            "TELEOP": "red-amp"
+          },
+          "length": 28,
+          "width": 28,
+          "height": 28,
+          "bumper": 3,
+          "heading": 180,
+          "speed": 85,
+          "capacity": 1,
+          "preload": {
+            "station": "red-source",
+            "quantity": 1
+          }
+        },
+        {
+          "id": "R3",
+          "side": "red",
+          "slot": 3,
+          "plans": {
+            "AUTO": "opening-support",
+            "TELEOP": "red-midfield"
+          },
+          "length": 28,
+          "width": 28,
+          "height": 28,
+          "bumper": 3,
+          "heading": 180,
+          "speed": 85,
+          "capacity": 1
+        },
+        {
+          "id": "B1",
+          "side": "blue",
+          "slot": 1,
+          "plans": {
+            "AUTO": "opening-speaker",
+            "TELEOP": "cycler"
+          },
+          "length": 28,
+          "width": 28,
+          "height": 28,
+          "bumper": 3,
+          "heading": 0,
+          "speed": 85,
+          "capacity": 1,
+          "preload": {
+            "station": "blue-source",
+            "quantity": 1
+          }
+        },
+        {
+          "id": "B2",
+          "side": "blue",
+          "slot": 2,
+          "plans": {
+            "AUTO": "opening-amp",
+            "TELEOP": "amp"
+          },
+          "length": 28,
+          "width": 28,
+          "height": 28,
+          "bumper": 3,
+          "heading": 0,
+          "speed": 85,
+          "capacity": 1,
+          "preload": {
+            "station": "blue-source",
+            "quantity": 1
+          }
+        },
+        {
+          "id": "B3",
+          "side": "blue",
+          "slot": 3,
+          "plans": {
+            "AUTO": "opening-support",
+            "TELEOP": "midfield"
+          },
+          "length": 28,
+          "width": 28,
+          "height": 28,
+          "bumper": 3,
+          "heading": 0,
+          "speed": 85,
+          "capacity": 1
+        }
+      ],
+      "periods": [
+        {
+          "phase": "AUTO",
+          "seconds": 15,
+          "robots": [
+            {
+              "id": "B1",
+              "visits": 1,
+              "waitSeconds": 0,
+              "blocked": "",
+              "position": [
+                57,
+                218.4
+              ]
+            },
+            {
+              "id": "B2",
+              "visits": 1,
+              "waitSeconds": 0,
+              "blocked": "",
+              "position": [
+                72.5,
+                298
+              ]
+            },
+            {
+              "id": "B3",
+              "visits": 1,
+              "waitSeconds": 0,
+              "blocked": "",
+              "position": [
+                145,
+                91
+              ]
+            },
+            {
+              "id": "R1",
+              "visits": 1,
+              "waitSeconds": 0,
+              "blocked": "",
+              "position": [
+                594.25,
+                218.4
+              ]
+            },
+            {
+              "id": "R2",
+              "visits": 1,
+              "waitSeconds": 0,
+              "blocked": "",
+              "position": [
+                578.75,
+                298
+              ]
+            },
+            {
+              "id": "R3",
+              "visits": 1,
+              "waitSeconds": 0,
+              "blocked": "",
+              "position": [
+                506.25,
+                91
+              ]
+            }
+          ]
+        },
+        {
+          "phase": "TELEOP",
+          "seconds": 135,
+          "robots": [
+            {
+              "id": "B1",
+              "visits": 0,
+              "waitSeconds": 124.75,
+              "blocked": "Occupied by B2",
+              "position": [
+                220.7760765401222,
+                237.70605549318964
+              ]
+            },
+            {
+              "id": "B2",
+              "visits": 0,
+              "waitSeconds": 124.80000000000001,
+              "blocked": "Occupied by B1",
+              "position": [
+                184.92517827683113,
+                258.99257391953824
+              ]
+            },
+            {
+              "id": "B3",
+              "visits": 1,
+              "waitSeconds": 0,
+              "blocked": "",
+              "position": [
+                142,
+                75
+              ]
+            },
+            {
+              "id": "R1",
+              "visits": 0,
+              "waitSeconds": 115.75,
+              "blocked": "Occupied by B3",
+              "position": [
+                179.59230108224077,
+                72.22951283727058
+              ]
+            },
+            {
+              "id": "R2",
+              "visits": 0,
+              "waitSeconds": 117.9,
+              "blocked": "Occupied by B3",
+              "position": [
+                156.61245887733625,
+                110.44497353233626
+              ]
+            },
+            {
+              "id": "R3",
+              "visits": 1,
+              "waitSeconds": 0,
+              "blocked": "",
+              "position": [
+                509.25,
+                75
+              ]
+            }
+          ]
+        }
+      ],
+      "game": {
+        "stock": {
+          "blue-source": [
+            {
+              "id": "blue-source/3",
+              "type": "NOTE"
+            },
+            {
+              "id": "blue-source/4",
+              "type": "NOTE"
+            },
+            {
+              "id": "blue-source/5",
+              "type": "NOTE"
+            },
+            {
+              "id": "blue-source/6",
+              "type": "NOTE"
+            },
+            {
+              "id": "blue-source/7",
+              "type": "NOTE"
+            },
+            {
+              "id": "blue-source/8",
+              "type": "NOTE"
+            },
+            {
+              "id": "blue-source/9",
+              "type": "NOTE"
+            }
+          ],
+          "blue-inner": [],
+          "blue-middle": [],
+          "blue-outer": [],
+          "red-source": [
+            {
+              "id": "red-source/3",
+              "type": "NOTE"
+            },
+            {
+              "id": "red-source/4",
+              "type": "NOTE"
+            },
+            {
+              "id": "red-source/5",
+              "type": "NOTE"
+            },
+            {
+              "id": "red-source/6",
+              "type": "NOTE"
+            },
+            {
+              "id": "red-source/7",
+              "type": "NOTE"
+            },
+            {
+              "id": "red-source/8",
+              "type": "NOTE"
+            },
+            {
+              "id": "red-source/9",
+              "type": "NOTE"
+            }
+          ],
+          "red-inner": [],
+          "red-middle": [],
+          "red-outer": [],
+          "center-1": [],
+          "center-2": [],
+          "center-3": [],
+          "center-4": [],
+          "center-5": []
+        },
+        "initial": {
+          "blue-source": 9,
+          "blue-inner": 1,
+          "blue-middle": 1,
+          "blue-outer": 1,
+          "red-source": 9,
+          "red-inner": 1,
+          "red-middle": 1,
+          "red-outer": 1,
+          "center-1": 1,
+          "center-2": 1,
+          "center-3": 1,
+          "center-4": 1,
+          "center-5": 1
+        },
+        "cargo": {
+          "B1": [],
+          "B2": [],
+          "B3": [
+            {
+              "id": "center-2/1",
+              "type": "NOTE"
+            }
+          ],
+          "R1": [],
+          "R2": [],
+          "R3": [
+            {
+              "id": "center-4/1",
+              "type": "NOTE"
+            }
+          ]
+        },
+        "capacity": {
+          "B1": 1,
+          "B2": 1,
+          "B3": 1,
+          "R1": 1,
+          "R2": 1,
+          "R3": 1
+        },
+        "score": {
+          "blue": 17,
+          "red": 19
+        },
+        "attempts": {
+          "blue-speaker": 3,
+          "blue-amp": 3,
+          "blue-trap-front": 0,
+          "blue-trap-upper": 0,
+          "blue-trap-lower": 0,
+          "red-speaker": 4,
+          "red-amp": 3,
+          "red-trap-front": 0,
+          "red-trap-upper": 0,
+          "red-trap-lower": 0
+        },
+        "returning": [],
+        "firstPeriodCount": {
+          "blue": 4,
+          "red": 4
+        },
+        "terminal": [
+          {
+            "id": "blue-source/1",
+            "type": "NOTE",
+            "station": "blue-speaker",
+            "outcome": "credited"
+          },
+          {
+            "id": "red-source/1",
+            "type": "NOTE",
+            "station": "red-speaker",
+            "outcome": "credited"
+          },
+          {
+            "id": "blue-source/2",
+            "type": "NOTE",
+            "station": "blue-amp",
+            "outcome": "credited"
+          },
+          {
+            "id": "red-source/2",
+            "type": "NOTE",
+            "station": "red-amp",
+            "outcome": "credited"
+          },
+          {
+            "id": "blue-middle/1",
+            "type": "NOTE",
+            "station": "blue-speaker",
+            "outcome": "credited"
+          },
+          {
+            "id": "red-middle/1",
+            "type": "NOTE",
+            "station": "red-speaker",
+            "outcome": "credited"
+          },
+          {
+            "id": "blue-outer/1",
+            "type": "NOTE",
+            "station": "blue-amp",
+            "outcome": "credited"
+          },
+          {
+            "id": "red-outer/1",
+            "type": "NOTE",
+            "station": "red-amp",
+            "outcome": "credited"
+          },
+          {
+            "id": "blue-inner/1",
+            "type": "NOTE",
+            "station": "blue-speaker",
+            "outcome": "credited"
+          },
+          {
+            "id": "red-inner/1",
+            "type": "NOTE",
+            "station": "red-speaker",
+            "outcome": "credited"
+          },
+          {
+            "id": "center-5/1",
+            "type": "NOTE",
+            "station": "blue-amp",
+            "outcome": "credited"
+          },
+          {
+            "id": "center-1/1",
+            "type": "NOTE",
+            "station": "red-amp",
+            "outcome": "credited"
+          },
+          {
+            "id": "center-3/1",
+            "type": "NOTE",
+            "station": "red-speaker",
+            "outcome": "credited"
+          }
+        ],
+        "events": [
+          {
+            "phase": "AUTO",
+            "timeS": 1.85,
+            "robot": "B1",
+            "station": "blue-speaker",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "blue-source/1"
+            ],
+            "points": 5,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 1.85,
+            "robot": "R1",
+            "station": "red-speaker",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "red-source/1"
+            ],
+            "points": 5,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 2.1,
+            "robot": "B2",
+            "station": "blue-amp",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "blue-source/2"
+            ],
+            "points": 2,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 2.1,
+            "robot": "R2",
+            "station": "red-amp",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "red-source/2"
+            ],
+            "points": 2,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 3.75,
+            "robot": "B1",
+            "station": "blue-middle",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "blue-middle/1"
+            ]
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 3.75,
+            "robot": "R1",
+            "station": "red-middle",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "red-middle/1"
+            ]
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 3.9000000000000004,
+            "robot": "B2",
+            "station": "blue-outer",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "blue-outer/1"
+            ]
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 3.9000000000000004,
+            "robot": "R2",
+            "station": "red-outer",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "red-outer/1"
+            ]
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 6.050000000000001,
+            "robot": "B1",
+            "station": "blue-speaker",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "blue-middle/1"
+            ],
+            "points": 5,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 6.050000000000001,
+            "robot": "R1",
+            "station": "red-speaker",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "red-middle/1"
+            ],
+            "points": 5,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 6.1000000000000005,
+            "robot": "B2",
+            "station": "blue-amp",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "blue-outer/1"
+            ],
+            "points": 2,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 6.1000000000000005,
+            "robot": "R2",
+            "station": "red-amp",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "red-outer/1"
+            ],
+            "points": 2,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 2.1,
+            "robot": "B1",
+            "station": "blue-inner",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "blue-inner/1"
+            ]
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 2.1,
+            "robot": "R1",
+            "station": "red-inner",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "red-inner/1"
+            ]
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 3.35,
+            "robot": "B3",
+            "station": "center-2",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "center-2/1"
+            ]
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 3.9000000000000004,
+            "robot": "R3",
+            "station": "center-4",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "center-4/1"
+            ]
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 4.2,
+            "robot": "B2",
+            "station": "center-5",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "center-5/1"
+            ]
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 4.6000000000000005,
+            "robot": "B1",
+            "station": "blue-speaker",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "blue-inner/1"
+            ],
+            "points": 2,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 4.6000000000000005,
+            "robot": "R1",
+            "station": "red-speaker",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "red-inner/1"
+            ],
+            "points": 2,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 5.6000000000000005,
+            "robot": "R2",
+            "station": "center-1",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "center-1/1"
+            ]
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 8.8,
+            "robot": "B2",
+            "station": "blue-amp",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "center-5/1"
+            ],
+            "points": 1,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 9,
+            "robot": "B1",
+            "station": "center-4",
+            "operation": "acquire",
+            "outcome": "empty-or-full",
+            "pieces": []
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 9.1,
+            "robot": "R1",
+            "station": "center-3",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "center-3/1"
+            ]
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 11.75,
+            "robot": "R2",
+            "station": "red-amp",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "center-1/1"
+            ],
+            "points": 1,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 14,
+            "robot": "R1",
+            "station": "red-speaker",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "center-3/1"
+            ],
+            "points": 2,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          }
+        ]
+      }
+    },
+    {
+      "id": "shared-center",
+      "basis": "Supporting robots pursue the same midfield corridor.",
+      "setup": "Nominal field",
+      "roster": [
+        {
+          "id": "B1",
+          "side": "blue",
+          "slot": 1,
+          "plans": {
+            "AUTO": "opening-speaker",
+            "TELEOP": "cycler"
+          },
+          "length": 28,
+          "width": 28,
+          "height": 28,
+          "bumper": 3,
+          "heading": 0,
+          "speed": 85,
+          "capacity": 1,
+          "preload": {
+            "station": "blue-source",
+            "quantity": 1
+          }
+        },
+        {
+          "id": "B2",
+          "side": "blue",
+          "slot": 2,
+          "plans": {
+            "AUTO": "opening-amp",
+            "TELEOP": "midfield"
+          },
+          "length": 28,
+          "width": 28,
+          "height": 28,
+          "bumper": 3,
+          "heading": 0,
+          "speed": 85,
+          "capacity": 1,
+          "preload": {
+            "station": "blue-source",
+            "quantity": 1
+          }
+        },
+        {
+          "id": "B3",
+          "side": "blue",
+          "slot": 3,
+          "plans": {
+            "AUTO": "opening-support",
+            "TELEOP": "midfield"
+          },
+          "length": 28,
+          "width": 28,
+          "height": 28,
+          "bumper": 3,
+          "heading": 0,
+          "speed": 85,
+          "capacity": 1
+        },
+        {
+          "id": "R1",
+          "side": "red",
+          "slot": 1,
+          "plans": {
+            "AUTO": "opening-speaker",
+            "TELEOP": "cycler"
+          },
+          "length": 28,
+          "width": 28,
+          "height": 28,
+          "bumper": 3,
+          "heading": 180,
+          "speed": 85,
+          "capacity": 1,
+          "preload": {
+            "station": "red-source",
+            "quantity": 1
+          }
+        },
+        {
+          "id": "R2",
+          "side": "red",
+          "slot": 2,
+          "plans": {
+            "AUTO": "opening-amp",
+            "TELEOP": "midfield"
+          },
+          "length": 28,
+          "width": 28,
+          "height": 28,
+          "bumper": 3,
+          "heading": 180,
+          "speed": 85,
+          "capacity": 1,
+          "preload": {
+            "station": "red-source",
+            "quantity": 1
+          }
+        },
+        {
+          "id": "R3",
+          "side": "red",
+          "slot": 3,
+          "plans": {
+            "AUTO": "opening-support",
+            "TELEOP": "midfield"
+          },
+          "length": 28,
+          "width": 28,
+          "height": 28,
+          "bumper": 3,
+          "heading": 180,
+          "speed": 85,
+          "capacity": 1
+        }
+      ],
+      "periods": [
+        {
+          "phase": "AUTO",
+          "seconds": 15,
+          "robots": [
+            {
+              "id": "B1",
+              "visits": 1,
+              "waitSeconds": 0,
+              "blocked": "",
+              "position": [
+                57,
+                218.4
+              ]
+            },
+            {
+              "id": "B2",
+              "visits": 1,
+              "waitSeconds": 0,
+              "blocked": "",
+              "position": [
+                72.5,
+                298
+              ]
+            },
+            {
+              "id": "B3",
+              "visits": 1,
+              "waitSeconds": 0,
+              "blocked": "",
+              "position": [
+                145,
+                91
+              ]
+            },
+            {
+              "id": "R1",
+              "visits": 1,
+              "waitSeconds": 0,
+              "blocked": "",
+              "position": [
+                594.25,
+                218.4
+              ]
+            },
+            {
+              "id": "R2",
+              "visits": 1,
+              "waitSeconds": 0,
+              "blocked": "",
+              "position": [
+                578.75,
+                298
+              ]
+            },
+            {
+              "id": "R3",
+              "visits": 1,
+              "waitSeconds": 0,
+              "blocked": "",
+              "position": [
+                506.25,
+                91
+              ]
+            }
+          ]
+        },
+        {
+          "phase": "TELEOP",
+          "seconds": 135,
+          "robots": [
+            {
+              "id": "B1",
+              "visits": 0,
+              "waitSeconds": 127.4,
+              "blocked": "Occupied by R1",
+              "position": [
+                309.51772847897126,
+                229.67138312616137
+              ]
+            },
+            {
+              "id": "B2",
+              "visits": 0,
+              "waitSeconds": 131.85,
+              "blocked": "Occupied by B3",
+              "position": [
+                279.07267033557343,
+                128.39294941537835
+              ]
+            },
+            {
+              "id": "B3",
+              "visits": 0,
+              "waitSeconds": 133.05,
+              "blocked": "Occupied by R3",
+              "position": [
+                309.51772847897126,
+                93.57861687383861
+              ]
+            },
+            {
+              "id": "R1",
+              "visits": 0,
+              "waitSeconds": 127.45,
+              "blocked": "Occupied by B1",
+              "position": [
+                345.9483816502853,
+                230.2070279506299
+              ]
+            },
+            {
+              "id": "R2",
+              "visits": 0,
+              "waitSeconds": 131.85,
+              "blocked": "Occupied by R3",
+              "position": [
+                372.17732966442657,
+                128.39294941537835
+              ]
+            },
+            {
+              "id": "R3",
+              "visits": 0,
+              "waitSeconds": 133.1,
+              "blocked": "Occupied by B3",
+              "position": [
+                345.9483816502853,
+                93.04297204937006
+              ]
+            }
+          ]
+        }
+      ],
+      "game": {
+        "stock": {
+          "blue-source": [
+            {
+              "id": "blue-source/3",
+              "type": "NOTE"
+            },
+            {
+              "id": "blue-source/4",
+              "type": "NOTE"
+            },
+            {
+              "id": "blue-source/5",
+              "type": "NOTE"
+            },
+            {
+              "id": "blue-source/6",
+              "type": "NOTE"
+            },
+            {
+              "id": "blue-source/7",
+              "type": "NOTE"
+            },
+            {
+              "id": "blue-source/8",
+              "type": "NOTE"
+            },
+            {
+              "id": "blue-source/9",
+              "type": "NOTE"
+            }
+          ],
+          "blue-inner": [],
+          "blue-middle": [],
+          "blue-outer": [],
+          "red-source": [
+            {
+              "id": "red-source/3",
+              "type": "NOTE"
+            },
+            {
+              "id": "red-source/4",
+              "type": "NOTE"
+            },
+            {
+              "id": "red-source/5",
+              "type": "NOTE"
+            },
+            {
+              "id": "red-source/6",
+              "type": "NOTE"
+            },
+            {
+              "id": "red-source/7",
+              "type": "NOTE"
+            },
+            {
+              "id": "red-source/8",
+              "type": "NOTE"
+            },
+            {
+              "id": "red-source/9",
+              "type": "NOTE"
+            }
+          ],
+          "red-inner": [],
+          "red-middle": [],
+          "red-outer": [],
+          "center-1": [
+            {
+              "id": "center-1/1",
+              "type": "NOTE"
+            }
+          ],
+          "center-2": [
+            {
+              "id": "center-2/1",
+              "type": "NOTE"
+            }
+          ],
+          "center-3": [
+            {
+              "id": "center-3/1",
+              "type": "NOTE"
+            }
+          ],
+          "center-4": [
+            {
+              "id": "center-4/1",
+              "type": "NOTE"
+            }
+          ],
+          "center-5": [
+            {
+              "id": "center-5/1",
+              "type": "NOTE"
+            }
+          ]
+        },
+        "initial": {
+          "blue-source": 9,
+          "blue-inner": 1,
+          "blue-middle": 1,
+          "blue-outer": 1,
+          "red-source": 9,
+          "red-inner": 1,
+          "red-middle": 1,
+          "red-outer": 1,
+          "center-1": 1,
+          "center-2": 1,
+          "center-3": 1,
+          "center-4": 1,
+          "center-5": 1
+        },
+        "cargo": {
+          "B1": [],
+          "B2": [],
+          "B3": [],
+          "R1": [],
+          "R2": [],
+          "R3": []
+        },
+        "capacity": {
+          "B1": 1,
+          "B2": 1,
+          "B3": 1,
+          "R1": 1,
+          "R2": 1,
+          "R3": 1
+        },
+        "score": {
+          "blue": 16,
+          "red": 16
+        },
+        "attempts": {
+          "blue-speaker": 3,
+          "blue-amp": 2,
+          "blue-trap-front": 0,
+          "blue-trap-upper": 0,
+          "blue-trap-lower": 0,
+          "red-speaker": 3,
+          "red-amp": 2,
+          "red-trap-front": 0,
+          "red-trap-upper": 0,
+          "red-trap-lower": 0
+        },
+        "returning": [],
+        "firstPeriodCount": {
+          "blue": 4,
+          "red": 4
+        },
+        "terminal": [
+          {
+            "id": "blue-source/1",
+            "type": "NOTE",
+            "station": "blue-speaker",
+            "outcome": "credited"
+          },
+          {
+            "id": "red-source/1",
+            "type": "NOTE",
+            "station": "red-speaker",
+            "outcome": "credited"
+          },
+          {
+            "id": "blue-source/2",
+            "type": "NOTE",
+            "station": "blue-amp",
+            "outcome": "credited"
+          },
+          {
+            "id": "red-source/2",
+            "type": "NOTE",
+            "station": "red-amp",
+            "outcome": "credited"
+          },
+          {
+            "id": "blue-middle/1",
+            "type": "NOTE",
+            "station": "blue-speaker",
+            "outcome": "credited"
+          },
+          {
+            "id": "red-middle/1",
+            "type": "NOTE",
+            "station": "red-speaker",
+            "outcome": "credited"
+          },
+          {
+            "id": "blue-outer/1",
+            "type": "NOTE",
+            "station": "blue-amp",
+            "outcome": "credited"
+          },
+          {
+            "id": "red-outer/1",
+            "type": "NOTE",
+            "station": "red-amp",
+            "outcome": "credited"
+          },
+          {
+            "id": "blue-inner/1",
+            "type": "NOTE",
+            "station": "blue-speaker",
+            "outcome": "credited"
+          },
+          {
+            "id": "red-inner/1",
+            "type": "NOTE",
+            "station": "red-speaker",
+            "outcome": "credited"
+          }
+        ],
+        "events": [
+          {
+            "phase": "AUTO",
+            "timeS": 1.85,
+            "robot": "B1",
+            "station": "blue-speaker",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "blue-source/1"
+            ],
+            "points": 5,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 1.85,
+            "robot": "R1",
+            "station": "red-speaker",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "red-source/1"
+            ],
+            "points": 5,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 2.1,
+            "robot": "B2",
+            "station": "blue-amp",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "blue-source/2"
+            ],
+            "points": 2,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 2.1,
+            "robot": "R2",
+            "station": "red-amp",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "red-source/2"
+            ],
+            "points": 2,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 3.75,
+            "robot": "B1",
+            "station": "blue-middle",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "blue-middle/1"
+            ]
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 3.75,
+            "robot": "R1",
+            "station": "red-middle",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "red-middle/1"
+            ]
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 3.9000000000000004,
+            "robot": "B2",
+            "station": "blue-outer",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "blue-outer/1"
+            ]
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 3.9000000000000004,
+            "robot": "R2",
+            "station": "red-outer",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "red-outer/1"
+            ]
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 6.050000000000001,
+            "robot": "B1",
+            "station": "blue-speaker",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "blue-middle/1"
+            ],
+            "points": 5,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 6.050000000000001,
+            "robot": "R1",
+            "station": "red-speaker",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "red-middle/1"
+            ],
+            "points": 5,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 6.1000000000000005,
+            "robot": "B2",
+            "station": "blue-amp",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "blue-outer/1"
+            ],
+            "points": 2,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 6.1000000000000005,
+            "robot": "R2",
+            "station": "red-amp",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "red-outer/1"
+            ],
+            "points": 2,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 2.1,
+            "robot": "B1",
+            "station": "blue-inner",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "blue-inner/1"
+            ]
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 2.1,
+            "robot": "R1",
+            "station": "red-inner",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "red-inner/1"
+            ]
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 4.6000000000000005,
+            "robot": "B1",
+            "station": "blue-speaker",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "blue-inner/1"
+            ],
+            "points": 2,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 4.6000000000000005,
+            "robot": "R1",
+            "station": "red-speaker",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "red-inner/1"
+            ],
+            "points": 2,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          }
+        ]
+      }
+    },
+    {
+      "id": "miss-and-stage",
+      "basis": "One cycler misses its first TELEOP shot. One partner attempts the unqualified TRAP.",
+      "setup": "Nominal field",
+      "roster": [
+        {
+          "id": "R1",
+          "side": "red",
+          "slot": 1,
+          "plans": {
+            "AUTO": "opening-speaker",
+            "TELEOP": "cycler"
+          },
+          "length": 28,
+          "width": 28,
+          "height": 28,
+          "bumper": 3,
+          "heading": 180,
+          "speed": 85,
+          "capacity": 1,
+          "preload": {
+            "station": "red-source",
+            "quantity": 1
+          }
+        },
+        {
+          "id": "R2",
+          "side": "red",
+          "slot": 2,
+          "plans": {
+            "AUTO": "opening-amp",
+            "TELEOP": "amp"
+          },
+          "length": 28,
+          "width": 28,
+          "height": 28,
+          "bumper": 3,
+          "heading": 180,
+          "speed": 85,
+          "capacity": 1,
+          "preload": {
+            "station": "red-source",
+            "quantity": 1
+          }
+        },
+        {
+          "id": "R3",
+          "side": "red",
+          "slot": 3,
+          "plans": {
+            "AUTO": "opening-support",
+            "TELEOP": "trap-approach"
+          },
+          "length": 28,
+          "width": 28,
+          "height": 28,
+          "bumper": 3,
+          "heading": 180,
+          "speed": 85,
+          "capacity": 1,
+          "preload": {
+            "station": "red-source",
+            "quantity": 1
+          }
+        },
+        {
+          "id": "B1",
+          "side": "blue",
+          "slot": 1,
+          "plans": {
+            "AUTO": "opening-speaker",
+            "TELEOP": "miss-recover"
+          },
+          "length": 28,
+          "width": 28,
+          "height": 28,
+          "bumper": 3,
+          "heading": 0,
+          "speed": 85,
+          "capacity": 1,
+          "preload": {
+            "station": "blue-source",
+            "quantity": 1
+          }
+        },
+        {
+          "id": "B2",
+          "side": "blue",
+          "slot": 2,
+          "plans": {
+            "AUTO": "opening-amp",
+            "TELEOP": "amp"
+          },
+          "length": 28,
+          "width": 28,
+          "height": 28,
+          "bumper": 3,
+          "heading": 0,
+          "speed": 85,
+          "capacity": 1,
+          "preload": {
+            "station": "blue-source",
+            "quantity": 1
+          }
+        },
+        {
+          "id": "B3",
+          "side": "blue",
+          "slot": 3,
+          "plans": {
+            "AUTO": "opening-support",
+            "TELEOP": "midfield"
+          },
+          "length": 28,
+          "width": 28,
+          "height": 28,
+          "bumper": 3,
+          "heading": 0,
+          "speed": 85,
+          "capacity": 1
+        }
+      ],
+      "periods": [
+        {
+          "phase": "AUTO",
+          "seconds": 15,
+          "robots": [
+            {
+              "id": "B1",
+              "visits": 1,
+              "waitSeconds": 0,
+              "blocked": "",
+              "position": [
+                57,
+                218.4
+              ]
+            },
+            {
+              "id": "B2",
+              "visits": 1,
+              "waitSeconds": 0,
+              "blocked": "",
+              "position": [
+                72.5,
+                298
+              ]
+            },
+            {
+              "id": "B3",
+              "visits": 1,
+              "waitSeconds": 0,
+              "blocked": "",
+              "position": [
+                145,
+                91
+              ]
+            },
+            {
+              "id": "R1",
+              "visits": 1,
+              "waitSeconds": 0,
+              "blocked": "",
+              "position": [
+                594.25,
+                218.4
+              ]
+            },
+            {
+              "id": "R2",
+              "visits": 1,
+              "waitSeconds": 0,
+              "blocked": "",
+              "position": [
+                578.75,
+                298
+              ]
+            },
+            {
+              "id": "R3",
+              "visits": 1,
+              "waitSeconds": 0,
+              "blocked": "",
+              "position": [
+                506.25,
+                91
+              ]
+            }
+          ]
+        },
+        {
+          "phase": "TELEOP",
+          "seconds": 135,
+          "robots": [
+            {
+              "id": "B1",
+              "visits": 6,
+              "waitSeconds": 0,
+              "blocked": "",
+              "position": [
+                550.8446822739938,
+                56.41862522969192
+              ]
+            },
+            {
+              "id": "B2",
+              "visits": 0,
+              "waitSeconds": 132.20000000000002,
+              "blocked": "Occupied by R2",
+              "position": [
+                310.46445850399334,
+                293.8870340505482
+              ]
+            },
+            {
+              "id": "B3",
+              "visits": 1,
+              "waitSeconds": 0,
+              "blocked": "",
+              "position": [
+                142,
+                75
+              ]
+            },
+            {
+              "id": "R1",
+              "visits": 0,
+              "waitSeconds": 116.4,
+              "blocked": "Occupied by R3",
+              "position": [
+                217.10192477729908,
+                79.7188806513867
+              ]
+            },
+            {
+              "id": "R2",
+              "visits": 0,
+              "waitSeconds": 132.25,
+              "blocked": "Occupied by B2",
+              "position": [
+                345.03490682643474,
+                293.9604798710741
+              ]
+            },
+            {
+              "id": "R3",
+              "visits": 0,
+              "waitSeconds": 127.95,
+              "blocked": "Occupied by B3",
+              "position": [
+                179.59230108224077,
+                72.22951283727058
+              ]
+            }
+          ]
+        }
+      ],
+      "game": {
+        "stock": {
+          "blue-source": [
+            {
+              "id": "blue-source/9",
+              "type": "NOTE"
+            }
+          ],
+          "blue-inner": [],
+          "blue-middle": [],
+          "blue-outer": [],
+          "red-source": [
+            {
+              "id": "red-source/4",
+              "type": "NOTE"
+            },
+            {
+              "id": "red-source/5",
+              "type": "NOTE"
+            },
+            {
+              "id": "red-source/6",
+              "type": "NOTE"
+            },
+            {
+              "id": "red-source/7",
+              "type": "NOTE"
+            },
+            {
+              "id": "red-source/8",
+              "type": "NOTE"
+            },
+            {
+              "id": "red-source/9",
+              "type": "NOTE"
+            }
+          ],
+          "red-inner": [],
+          "red-middle": [],
+          "red-outer": [],
+          "center-1": [
+            {
+              "id": "center-1/1",
+              "type": "NOTE"
+            }
+          ],
+          "center-2": [],
+          "center-3": [
+            {
+              "id": "center-3/1",
+              "type": "NOTE"
+            }
+          ],
+          "center-4": [],
+          "center-5": [
+            {
+              "id": "center-5/1",
+              "type": "NOTE"
+            }
+          ]
+        },
+        "initial": {
+          "blue-source": 9,
+          "blue-inner": 1,
+          "blue-middle": 1,
+          "blue-outer": 1,
+          "red-source": 9,
+          "red-inner": 1,
+          "red-middle": 1,
+          "red-outer": 1,
+          "center-1": 1,
+          "center-2": 1,
+          "center-3": 1,
+          "center-4": 1,
+          "center-5": 1
+        },
+        "cargo": {
+          "B1": [],
+          "B2": [],
+          "B3": [
+            {
+              "id": "center-2/1",
+              "type": "NOTE"
+            }
+          ],
+          "R1": [],
+          "R2": [],
+          "R3": []
+        },
+        "capacity": {
+          "B1": 1,
+          "B2": 1,
+          "B3": 1,
+          "R1": 1,
+          "R2": 1,
+          "R3": 1
+        },
+        "score": {
+          "blue": 26,
+          "red": 18
+        },
+        "attempts": {
+          "blue-speaker": 9,
+          "blue-amp": 2,
+          "blue-trap-front": 0,
+          "blue-trap-upper": 0,
+          "blue-trap-lower": 0,
+          "red-speaker": 4,
+          "red-amp": 2,
+          "red-trap-front": 0,
+          "red-trap-upper": 1,
+          "red-trap-lower": 0
+        },
+        "returning": [],
+        "firstPeriodCount": {
+          "blue": 4,
+          "red": 4
+        },
+        "terminal": [
+          {
+            "id": "blue-source/1",
+            "type": "NOTE",
+            "station": "blue-speaker",
+            "outcome": "credited"
+          },
+          {
+            "id": "red-source/1",
+            "type": "NOTE",
+            "station": "red-speaker",
+            "outcome": "credited"
+          },
+          {
+            "id": "blue-source/2",
+            "type": "NOTE",
+            "station": "blue-amp",
+            "outcome": "credited"
+          },
+          {
+            "id": "red-source/2",
+            "type": "NOTE",
+            "station": "red-amp",
+            "outcome": "credited"
+          },
+          {
+            "id": "blue-middle/1",
+            "type": "NOTE",
+            "station": "blue-speaker",
+            "outcome": "credited"
+          },
+          {
+            "id": "red-middle/1",
+            "type": "NOTE",
+            "station": "red-speaker",
+            "outcome": "credited"
+          },
+          {
+            "id": "blue-outer/1",
+            "type": "NOTE",
+            "station": "blue-amp",
+            "outcome": "credited"
+          },
+          {
+            "id": "red-outer/1",
+            "type": "NOTE",
+            "station": "red-amp",
+            "outcome": "credited"
+          },
+          {
+            "id": "red-source/3",
+            "type": "NOTE",
+            "station": "red-trap-upper",
+            "outcome": "unresolved"
+          },
+          {
+            "id": "blue-inner/1",
+            "type": "NOTE",
+            "station": "blue-speaker",
+            "outcome": "missed"
+          },
+          {
+            "id": "red-inner/1",
+            "type": "NOTE",
+            "station": "red-speaker",
+            "outcome": "credited"
+          },
+          {
+            "id": "center-4/1",
+            "type": "NOTE",
+            "station": "red-speaker",
+            "outcome": "credited"
+          },
+          {
+            "id": "blue-source/3",
+            "type": "NOTE",
+            "station": "blue-speaker",
+            "outcome": "credited"
+          },
+          {
+            "id": "blue-source/4",
+            "type": "NOTE",
+            "station": "blue-speaker",
+            "outcome": "credited"
+          },
+          {
+            "id": "blue-source/5",
+            "type": "NOTE",
+            "station": "blue-speaker",
+            "outcome": "credited"
+          },
+          {
+            "id": "blue-source/6",
+            "type": "NOTE",
+            "station": "blue-speaker",
+            "outcome": "credited"
+          },
+          {
+            "id": "blue-source/7",
+            "type": "NOTE",
+            "station": "blue-speaker",
+            "outcome": "credited"
+          },
+          {
+            "id": "blue-source/8",
+            "type": "NOTE",
+            "station": "blue-speaker",
+            "outcome": "credited"
+          }
+        ],
+        "events": [
+          {
+            "phase": "AUTO",
+            "timeS": 1.85,
+            "robot": "B1",
+            "station": "blue-speaker",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "blue-source/1"
+            ],
+            "points": 5,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 1.85,
+            "robot": "R1",
+            "station": "red-speaker",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "red-source/1"
+            ],
+            "points": 5,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 2.1,
+            "robot": "B2",
+            "station": "blue-amp",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "blue-source/2"
+            ],
+            "points": 2,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 2.1,
+            "robot": "R2",
+            "station": "red-amp",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "red-source/2"
+            ],
+            "points": 2,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 3.75,
+            "robot": "B1",
+            "station": "blue-middle",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "blue-middle/1"
+            ]
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 3.75,
+            "robot": "R1",
+            "station": "red-middle",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "red-middle/1"
+            ]
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 3.9000000000000004,
+            "robot": "B2",
+            "station": "blue-outer",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "blue-outer/1"
+            ]
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 3.9000000000000004,
+            "robot": "R2",
+            "station": "red-outer",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "red-outer/1"
+            ]
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 6.050000000000001,
+            "robot": "B1",
+            "station": "blue-speaker",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "blue-middle/1"
+            ],
+            "points": 5,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 6.050000000000001,
+            "robot": "R1",
+            "station": "red-speaker",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "red-middle/1"
+            ],
+            "points": 5,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 6.1000000000000005,
+            "robot": "B2",
+            "station": "blue-amp",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "blue-outer/1"
+            ],
+            "points": 2,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "AUTO",
+            "timeS": 6.1000000000000005,
+            "robot": "R2",
+            "station": "red-amp",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "red-outer/1"
+            ],
+            "points": 2,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 2.1,
+            "robot": "B1",
+            "station": "blue-inner",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "blue-inner/1"
+            ]
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 2.1,
+            "robot": "R1",
+            "station": "red-inner",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "red-inner/1"
+            ]
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 3.1,
+            "robot": "R3",
+            "station": "red-trap-upper",
+            "operation": "attempt",
+            "outcome": "unresolved",
+            "pieces": [
+              "red-source/3"
+            ],
+            "points": 0,
+            "prescribedOutcome": "unresolved",
+            "activity": "active"
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 3.35,
+            "robot": "B3",
+            "station": "center-2",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "center-2/1"
+            ]
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 4.6000000000000005,
+            "robot": "B1",
+            "station": "blue-speaker",
+            "operation": "attempt",
+            "outcome": "missed",
+            "pieces": [
+              "blue-inner/1"
+            ],
+            "points": 0,
+            "prescribedOutcome": "missed",
+            "activity": "active"
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 4.6000000000000005,
+            "robot": "R1",
+            "station": "red-speaker",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "red-inner/1"
+            ],
+            "points": 2,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 9,
+            "robot": "R1",
+            "station": "center-4",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "center-4/1"
+            ]
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 12.450000000000001,
+            "robot": "B1",
+            "station": "blue-source",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "blue-source/3"
+            ]
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 13.8,
+            "robot": "R1",
+            "station": "red-speaker",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "center-4/1"
+            ],
+            "points": 2,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 20.700000000000003,
+            "robot": "B1",
+            "station": "blue-speaker",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "blue-source/3"
+            ],
+            "points": 2,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 22.8,
+            "robot": "B1",
+            "station": "blue-inner",
+            "operation": "acquire",
+            "outcome": "empty-or-full",
+            "pieces": []
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 25.3,
+            "robot": "B1",
+            "station": "blue-speaker",
+            "operation": "attempt",
+            "outcome": "no-compatible-cargo",
+            "pieces": []
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 33.15,
+            "robot": "B1",
+            "station": "blue-source",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "blue-source/4"
+            ]
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 41.400000000000006,
+            "robot": "B1",
+            "station": "blue-speaker",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "blue-source/4"
+            ],
+            "points": 2,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 43.5,
+            "robot": "B1",
+            "station": "blue-inner",
+            "operation": "acquire",
+            "outcome": "empty-or-full",
+            "pieces": []
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 46,
+            "robot": "B1",
+            "station": "blue-speaker",
+            "operation": "attempt",
+            "outcome": "no-compatible-cargo",
+            "pieces": []
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 53.85,
+            "robot": "B1",
+            "station": "blue-source",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "blue-source/5"
+            ]
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 62.1,
+            "robot": "B1",
+            "station": "blue-speaker",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "blue-source/5"
+            ],
+            "points": 2,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 64.2,
+            "robot": "B1",
+            "station": "blue-inner",
+            "operation": "acquire",
+            "outcome": "empty-or-full",
+            "pieces": []
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 66.7,
+            "robot": "B1",
+            "station": "blue-speaker",
+            "operation": "attempt",
+            "outcome": "no-compatible-cargo",
+            "pieces": []
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 74.55,
+            "robot": "B1",
+            "station": "blue-source",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "blue-source/6"
+            ]
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 82.80000000000001,
+            "robot": "B1",
+            "station": "blue-speaker",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "blue-source/6"
+            ],
+            "points": 2,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 84.9,
+            "robot": "B1",
+            "station": "blue-inner",
+            "operation": "acquire",
+            "outcome": "empty-or-full",
+            "pieces": []
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 87.4,
+            "robot": "B1",
+            "station": "blue-speaker",
+            "operation": "attempt",
+            "outcome": "no-compatible-cargo",
+            "pieces": []
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 95.25,
+            "robot": "B1",
+            "station": "blue-source",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "blue-source/7"
+            ]
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 103.5,
+            "robot": "B1",
+            "station": "blue-speaker",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "blue-source/7"
+            ],
+            "points": 2,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 105.60000000000001,
+            "robot": "B1",
+            "station": "blue-inner",
+            "operation": "acquire",
+            "outcome": "empty-or-full",
+            "pieces": []
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 108.10000000000001,
+            "robot": "B1",
+            "station": "blue-speaker",
+            "operation": "attempt",
+            "outcome": "no-compatible-cargo",
+            "pieces": []
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 115.95,
+            "robot": "B1",
+            "station": "blue-source",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "blue-source/8"
+            ]
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 124.2,
+            "robot": "B1",
+            "station": "blue-speaker",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "blue-source/8"
+            ],
+            "points": 2,
+            "prescribedOutcome": "credited",
+            "activity": "active"
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 126.30000000000001,
+            "robot": "B1",
+            "station": "blue-inner",
+            "operation": "acquire",
+            "outcome": "empty-or-full",
+            "pieces": []
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 128.8,
+            "robot": "B1",
+            "station": "blue-speaker",
+            "operation": "attempt",
+            "outcome": "no-compatible-cargo",
+            "pieces": []
+          }
+        ]
+      }
+    }
+  ]
+}
