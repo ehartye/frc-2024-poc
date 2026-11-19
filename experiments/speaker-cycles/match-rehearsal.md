@@ -14,7 +14,7 @@ Coordinates use inches from the blue end wall and scoring-table border. Wing and
 
 ### Reproduce
 
-With [Agent FRC 0.31.0](https://github.com/ehartye/agent-frc/tree/cfc072a6d5c0782eb7fd1e145a124dd2551897df), run the following from this project. The HTML builder writes to an unused filename. The JSON contains the SHA-256 of the exact project profile, the 0.05 s simulation step, both period cutoffs and all three final rosters.
+With [Agent FRC 0.31.1](https://github.com/ehartye/agent-frc/tree/266805cd793fa5be4dbc68700e7b275bf782a60e), run the following from this project. The HTML builder writes to an unused filename. The JSON contains the SHA-256 of the exact project profile, the 0.05 s simulation step, both period cutoffs and all three final rosters.
 
 ```powershell
 node "$AgentFrc/scripts/rehearsal-series.mjs" kickoff/crescendo-field.json $Results

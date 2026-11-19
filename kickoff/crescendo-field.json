@@ -898,7 +898,8 @@
           "AUTO": 0,
           "TELEOP": 5
         },
-        "criterion": "Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved."
+        "criterion": "Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved.",
+        "capacity": 1
       },
       {
         "id": "blue-trap-upper",
@@ -919,7 +920,8 @@
           "AUTO": 0,
           "TELEOP": 5
         },
-        "criterion": "Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved."
+        "criterion": "Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved.",
+        "capacity": 1
       },
       {
         "id": "blue-trap-lower",
@@ -940,7 +942,8 @@
           "AUTO": 0,
           "TELEOP": 5
         },
-        "criterion": "Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved."
+        "criterion": "Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved.",
+        "capacity": 1
       },
       {
         "id": "red-source",
@@ -1071,7 +1074,8 @@
           "AUTO": 0,
           "TELEOP": 5
         },
-        "criterion": "Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved."
+        "criterion": "Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved.",
+        "capacity": 1
       },
       {
         "id": "red-trap-upper",
@@ -1092,7 +1096,8 @@
           "AUTO": 0,
           "TELEOP": 5
         },
-        "criterion": "Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved."
+        "criterion": "Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved.",
+        "capacity": 1
       },
       {
         "id": "red-trap-lower",
@@ -1113,7 +1118,8 @@
           "AUTO": 0,
           "TELEOP": 5
         },
-        "criterion": "Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved."
+        "criterion": "Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved.",
+        "capacity": 1
       },
       {
         "id": "center-1",

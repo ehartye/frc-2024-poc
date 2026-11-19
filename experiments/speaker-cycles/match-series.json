@@ -1,6 +1,6 @@
 {
   "schema": "agent-frc/rehearsal-series@1",
-  "profileSha256": "4b10d74bd504bc1e33266b0bd2acbd524ae3e720e6a88dd9c0a9c58942fa2a76",
+  "profileSha256": "1ccce69e2ede0cb2203aaaac0ecdde0be5a3a35837b32b758d803357731f1387",
   "stepS": 0.05,
   "playbackRate": 10,
   "modelSeconds": 450,
@@ -378,6 +378,18 @@
           "red": 19
         },
         "attempts": {
+          "blue-speaker": 3,
+          "blue-amp": 3,
+          "blue-trap-front": 0,
+          "blue-trap-upper": 0,
+          "blue-trap-lower": 0,
+          "red-speaker": 4,
+          "red-amp": 3,
+          "red-trap-front": 0,
+          "red-trap-upper": 0,
+          "red-trap-lower": 0
+        },
+        "occupied": {
           "blue-speaker": 3,
           "blue-amp": 3,
           "blue-trap-front": 0,
@@ -1188,6 +1200,18 @@
           "red-trap-upper": 0,
           "red-trap-lower": 0
         },
+        "occupied": {
+          "blue-speaker": 3,
+          "blue-amp": 2,
+          "blue-trap-front": 0,
+          "blue-trap-upper": 0,
+          "blue-trap-lower": 0,
+          "red-speaker": 3,
+          "red-amp": 2,
+          "red-trap-front": 0,
+          "red-trap-upper": 0,
+          "red-trap-lower": 0
+        },
         "returning": [],
         "firstPeriodCount": {
           "blue": 4,
@@ -1832,6 +1856,18 @@
           "red-amp": 2,
           "red-trap-front": 0,
           "red-trap-upper": 1,
+          "red-trap-lower": 0
+        },
+        "occupied": {
+          "blue-speaker": 8,
+          "blue-amp": 2,
+          "blue-trap-front": 0,
+          "blue-trap-upper": 0,
+          "blue-trap-lower": 0,
+          "red-speaker": 4,
+          "red-amp": 2,
+          "red-trap-front": 0,
+          "red-trap-upper": 0,
           "red-trap-lower": 0
         },
         "returning": [],
