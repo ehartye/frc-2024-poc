@@ -88,6 +88,8 @@ def run(args):
                 initialRotors=last["externalRotors"],initialBusV=last["busV"],
                 collectedMarks=shot["collectedMarks"],firstMark=args.first_mark,fieldYawDeg=args.field_yaw_deg,
                 maximumDriftM=max_drift,maximumHeadingErrorRad=max_heading,outcome="HELD")
+    if "attempt" in shot:
+        result.update(attempt=shot["attempt"], rosterSha256=shot["rosterSha256"])
     (args.output/"result.json").write_text(json.dumps(result,indent=2,allow_nan=False)+"\n")
     return result
 

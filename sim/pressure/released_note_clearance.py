@@ -94,9 +94,11 @@ def separation(path,inventory):
                 minimumCertifiedGapMm=minimum if math.isfinite(minimum) else None)
 
 
-def flight_environment(field,robot,frame,installed):
+def flight_environment(field,robot,frame,installed,roster=None):
     """Check the bodies outside the Speaker contact solver and the other NOTES."""
+    from speaker_trial_inputs import placed_marks
     run=load(robot/"result.json")
+    marks=placed_marks(frame, run, roster)
     with (field/"trace.jsonl").open("rb") as stream:
         flight=np.array([[r["t"],*r["q"][:3]] for r in map(json.loads,stream)])
     moving=None
@@ -104,7 +106,7 @@ def flight_environment(field,robot,frame,installed):
     if run.get("schema")!="post-release-station-hold/1":
         with (robot/"trace.jsonl").open("rb") as stream:
             moving=np.array([[r["t"],*frame.to_field(r["q"][-7:-4])] for r in map(json.loads,stream)])
-        mark=frame.mark(run["collectedMarks"][-1])
+        mark=marks[run["collectedMarks"][-1]]
         moving=np.vstack(([run["start"],*mark[:2],.0254-.235*9.80665/20000],moving))
         times=np.unique(np.r_[times,moving[moving[:,0]<=flight[-1,0],0]])
     centers=np.column_stack([np.interp(times,flight[:,0],v) for v in flight[:,1:].T])
@@ -120,7 +122,7 @@ def flight_environment(field,robot,frame,installed):
         next_note=np.column_stack([np.interp(times,moving[:,0],v) for v in moving[:,1:].T])
         gaps.append(pair_gap(next_note))
     for name in SUPPLY_MARKS.keys()-set(run["collectedMarks"]):
-        gaps.append(pair_gap(frame.mark(name)+[0,0,.0254]))
+        gaps.append(pair_gap(marks[name]+[0,0,.0254]))
     exempt=SURFACES|GAME_PIECES|{"GE-24300_Briweld Field Blue"}
     boxes=np.array([part["bounds"] for part in installed["parts"] if part["path"][1] not in exempt])
     lower=centers.min(axis=0)-.177803
@@ -136,6 +138,7 @@ if __name__=="__main__":
     parser=argparse.ArgumentParser(description=__doc__)
     for name in ("field","robot","inventory","output"):
         parser.add_argument(name,type=Path)
+    parser.add_argument("--placement-roster",type=Path)
     parser.add_argument("--installed-field",type=Path)
     args=parser.parse_args()
     robot=load(args.robot/"result.json")
@@ -148,8 +151,10 @@ if __name__=="__main__":
     result.update(robot=robot["trace"],field=digest(args.field/"trace.jsonl"),native=robot["nativeSha256"])
     if args.installed_field:
         field=load(args.installed_field)
-        result["environment"]=flight_environment(args.field,args.robot,frame,field)
+        result["environment"]=flight_environment(args.field,args.robot,frame,field,args.placement_roster)
         result["fieldBounds"]=digest(args.installed_field)
+        if "attempt" in robot:
+            result.update(attempt=robot["attempt"], rosterSha256=robot["rosterSha256"])
     with args.output.open("x") as stream:
         json.dump(result,stream,indent=2,allow_nan=False)
     print(json.dumps(result))

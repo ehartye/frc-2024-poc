@@ -133,6 +133,8 @@ def run(args):
                 targetRpm=p.target_rpm,pitchTrimDeg=p.pitch_trim,heightTrimMm=p.height_trim,
                 alignmentDurationS=p.align_seconds)
     result["collectedMarks"]=rc.get("collectedMarks",[args.first_mark] if rc.get("fieldStation") else [args.first_mark,"middle"])
+    if "attempt" in rc:
+        result.update(attempt=rc["attempt"], rosterSha256=rc["rosterSha256"])
     (args.output/"result.json").write_text(json.dumps(result,indent=2,allow_nan=False)+"\n")
     print(outcome,p.data.time,flush=True)
 

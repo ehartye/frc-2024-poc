@@ -28,6 +28,9 @@ class RaisedFeed:
         world = tree.find("worldbody")
         world.remove(world.find("body[@name='note']"))
         tree.find("option").set("timestep", str(dt))
+        if segments >= 8192:
+            # Dense ring-wheel contact can exhaust MuJoCo's default constraint arena.
+            ET.SubElement(tree, "size", memory="128M")
         args = SimpleNamespace(segments=segments, noslip_iterations=0, floating=False,
                                start=0., surface="capsules", ring_phase_deg=0., no_contact=False)
         scale = 1 / (.9 + segments / 128 * .1)
