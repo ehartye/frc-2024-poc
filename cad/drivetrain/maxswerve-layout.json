@@ -1,0 +1,103 @@
+{
+  "schema": "maxswerve-native-layout/1",
+  "coordinateFrame": "Robot floor, +X forward, +Y left, +Z up. Lengths in millimetres.",
+  "module": {
+    "model": "REV-21-3005",
+    "wheelDiameterMm": 76.2,
+    "driveMotor": "REV-21-1650",
+    "steerMotor": "REV-21-1651",
+    "driveReduction": 5.5,
+    "steeringReduction": [
+      9424,
+      203
+    ],
+    "supplierSource": "https://www.revrobotics.com/content/cad/REV-21-3005.STEP",
+    "sourceSha256": "11f8381810846a2e52a23dbbe07f8271b314967624eee53f56e59a3ece05c75e"
+  },
+  "privateFusionArchiveSha256": "3d53ef431ca671b02fd62d3428f7ef4f260ff1da19702664d0c189f445269305",
+  "stations": {
+    "Front left": {
+      "wheelCenterMm": [
+        260,
+        260,
+        38.1
+      ],
+      "installedBoundsMm": [
+        215.55,
+        215.55,
+        0.0,
+        348.646,
+        348.646,
+        171.46
+      ],
+      "nativeSolidCount": 273
+    },
+    "Front right": {
+      "wheelCenterMm": [
+        260,
+        -260,
+        38.1
+      ],
+      "installedBoundsMm": [
+        215.55,
+        -348.646,
+        0.0,
+        348.646,
+        -215.55,
+        171.46
+      ],
+      "nativeSolidCount": 273
+    },
+    "Rear left": {
+      "wheelCenterMm": [
+        -260,
+        260,
+        38.1
+      ],
+      "installedBoundsMm": [
+        -348.646,
+        215.55,
+        0.0,
+        -215.55,
+        348.646,
+        171.46
+      ],
+      "nativeSolidCount": 273
+    },
+    "Rear right": {
+      "wheelCenterMm": [
+        -260,
+        -260,
+        38.1
+      ],
+      "installedBoundsMm": [
+        -348.646,
+        -348.646,
+        0.0,
+        -215.55,
+        -215.55,
+        171.46
+      ],
+      "nativeSolidCount": 273
+    }
+  },
+  "electricalPackageRaiseMm": 40,
+  "movedNativeOccurrences": 143,
+  "batteryUndersideMm": 208.115,
+  "originalIntersectionsByStation": {
+    "Front left": 0,
+    "Front right": 0,
+    "Rear left": 9,
+    "Rear right": 11
+  },
+  "reopenedStaticModuleIntersectionPairs": 0,
+  "failedBooleanOperations": 0,
+  "minimumReportedOverlapMm3": 0.1,
+  "verificationScope": "Native solid intersections at the exported floor pose against retained visible solids, excluding retired drive rails, rail-only attachments, service volumes and team markings. Source deck-height check also compared 111 retained package solids against 1518 stationary solids. The earlier six-wheel assembly remains available as the reference.",
+  "pending": [
+    "Complete azimuth and lift sweeps",
+    "Load-bearing rails, mounts and relocated deck support",
+    "Eight independent drive and steer actuator states and shared electrical validation",
+    "Paired acquisition and scoring benchmarks"
+  ]
+}
