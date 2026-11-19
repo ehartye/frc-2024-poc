@@ -65,3 +65,16 @@ The next controller used the same settings on both starts. It moved the loaded c
 | Verified first scores | **1** | **0** |
 
 Fusion swept the actual trajectories against the registered assembly. The interval refinement bounded the remaining rigid shell and belt candidates. The smallest certified gap between the discharged D1 NOTE and returning robot was 21.35 mm. The D2 NOTE passed the opening, encountered field hardware and returned to the field side. An unresolved robot interval is an open clearance question. D1 earns one development score. All twenty six-score evaluation slots remain pending. [Runtime, scorer and native clearance evidence](evidence/speaker-first-release-runtime.json)
+
+## Differential-drive baseline for the swerve conversion
+
+Moving the common station 7.5 mm closer to the wall gave a verified first score on both mirrored starts. For each trial the robot drove to field position (1.4675, 5.553075) m at 180° and performed the same loaded alignment. Each case carried its own attained pickup, delivery, release, field flight and robot return through verification.
+
+| Six-wheel differential-drive measurement | D1 | Mirrored D2 |
+| --- | ---: | ---: |
+| First counter event | 14.9905 s | 14.88765 s |
+| Second floor NOTE seated | 18.0424 s | 18.05595 s |
+| Minimum clearance in refined release intervals | 0.0692 mm | 0.0805 mm |
+| Minimum discharged NOTE to moving robot clearance | 21.39 mm | 22.89 mm |
+
+The 2024 robot is converting to four independently steered modules. Compare pickup and score times at the same floor placements with the same sensor, native-clearance and mission-clock checks. The six-score campaign will use the integrated swerve robot. [Verified differential-drive comparison records](evidence/speaker-first-release-runtime.json)

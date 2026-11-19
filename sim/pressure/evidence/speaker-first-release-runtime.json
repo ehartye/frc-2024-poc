@@ -298,5 +298,42 @@
       "nextPickupOutcome": "SEATED",
       "qualifiedFirstScores": 0
     }
+  },
+  "differentialBaselineForSwerve": {
+    "stationFieldXYM": [
+      1.4675,
+      5.553075
+    ],
+    "headingDeg": 180,
+    "drive": "six-wheel differential",
+    "formalAttempts": 0,
+    "developmentFirstScores": {
+      "D1": {
+        "scoreS": 14.99049999999205,
+        "releaseS": 11.492400000000202,
+        "openingS": 11.63529999999987,
+        "nextFloorNoteSeatedS": 18.042400000000953,
+        "shotShellLowerBoundMm": 0.06923902583241909,
+        "flightRobotGapMm": 21.387384749039654,
+        "scoreReceiptSha256": "04d6be668326c9268a8065654b18e88f1f08dafe65beae292fbb40c8d4b378f3",
+        "shotTraceSha256": "3b7e7cb6411fcee5a810c378bf29cf4933511a2859fac51db9f8df1a3f763e1d",
+        "fieldTraceSha256": "24c74736a55e89ad395f55408a1b12783c5f052338a7793eeb2d726d4d796a20",
+        "nativeSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+        "returnTraceSha256": "beb79bf91649dc57ef7c59141ee752bb1971846c62674ec1c7b12c1144bc889c"
+      },
+      "D2": {
+        "scoreS": 14.887649999992332,
+        "releaseS": 11.504450000000217,
+        "openingS": 11.648049999999882,
+        "nextFloorNoteSeatedS": 18.05595000000092,
+        "shotShellLowerBoundMm": 0.0804810473008505,
+        "flightRobotGapMm": 22.889560677780594,
+        "scoreReceiptSha256": "c7e39c3a604dde794fede1f48b8ffc769f95ffcc4d21253d4b745530388a2f5d",
+        "shotTraceSha256": "f887d1ad8e21236f867e4ae463e05b8878706fe8b83a355df714cd05303736ae",
+        "fieldTraceSha256": "f3e6242a7ec4cd4cdb08ac14c2731a0bd684316aee412cfd761429255ab6decb",
+        "nativeSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+        "returnTraceSha256": "2e43a3e885650e24841891fda5f813f3f4964c36e8fa4abfc32f26f5a0bf26f9"
+      }
+    }
   }
 }
