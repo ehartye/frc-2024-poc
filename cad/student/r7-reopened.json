@@ -1,0 +1,1160 @@
+{
+  "source": "cad/student/r7-maxswerve.f3d",
+  "sha256": "6e2b65f3493dfd0a8c7a27bbf26445dec29213e93806ff9b0c55df5548b00266",
+  "opened": true,
+  "components": {
+    "R7 chassis": {
+      "bodies": 424,
+      "editableFeatures": 0,
+      "baseFeatures": 1,
+      "representation": "Registered authored BRep solids"
+    },
+    "R7 carriage": {
+      "bodies": 152,
+      "editableFeatures": 0,
+      "baseFeatures": 1,
+      "representation": "Registered authored BRep solids"
+    },
+    "R7 cradle": {
+      "bodies": 36,
+      "editableFeatures": 0,
+      "baseFeatures": 1,
+      "representation": "Registered authored BRep solids"
+    },
+    "Front left housing": {
+      "bodies": 13,
+      "editableFeatures": 0,
+      "baseFeatures": 1,
+      "representation": "Original dimensioned module proxy"
+    },
+    "Front left carrier": {
+      "bodies": 5,
+      "editableFeatures": 0,
+      "baseFeatures": 1,
+      "representation": "Original dimensioned module proxy"
+    },
+    "Front left wheel": {
+      "bodies": 2,
+      "editableFeatures": 0,
+      "baseFeatures": 1,
+      "representation": "Original dimensioned module proxy"
+    },
+    "Front right housing": {
+      "bodies": 13,
+      "editableFeatures": 0,
+      "baseFeatures": 1,
+      "representation": "Original dimensioned module proxy"
+    },
+    "Front right carrier": {
+      "bodies": 5,
+      "editableFeatures": 0,
+      "baseFeatures": 1,
+      "representation": "Original dimensioned module proxy"
+    },
+    "Front right wheel": {
+      "bodies": 2,
+      "editableFeatures": 0,
+      "baseFeatures": 1,
+      "representation": "Original dimensioned module proxy"
+    },
+    "Rear left housing": {
+      "bodies": 13,
+      "editableFeatures": 0,
+      "baseFeatures": 1,
+      "representation": "Original dimensioned module proxy"
+    },
+    "Rear left carrier": {
+      "bodies": 5,
+      "editableFeatures": 0,
+      "baseFeatures": 1,
+      "representation": "Original dimensioned module proxy"
+    },
+    "Rear left wheel": {
+      "bodies": 2,
+      "editableFeatures": 0,
+      "baseFeatures": 1,
+      "representation": "Original dimensioned module proxy"
+    },
+    "Rear right housing": {
+      "bodies": 13,
+      "editableFeatures": 0,
+      "baseFeatures": 1,
+      "representation": "Original dimensioned module proxy"
+    },
+    "Rear right carrier": {
+      "bodies": 5,
+      "editableFeatures": 0,
+      "baseFeatures": 1,
+      "representation": "Original dimensioned module proxy"
+    },
+    "Rear right wheel": {
+      "bodies": 2,
+      "editableFeatures": 0,
+      "baseFeatures": 1,
+      "representation": "Original dimensioned module proxy"
+    }
+  },
+  "joints": {
+    "Lift": {
+      "occurrenceOne": "R7 carriage",
+      "occurrenceTwo": "R7 chassis",
+      "type": "slider",
+      "positionUnit": "mm",
+      "samples": [
+        {
+          "position": 0.0,
+          "relativeTransform": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "position": 120.0,
+          "relativeTransform": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            12.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "position": 0.0,
+          "relativeTransform": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "Pitch": {
+      "occurrenceOne": "R7 carriage",
+      "occurrenceTwo": "R7 cradle",
+      "positiveWorldAxis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "type": "revolute",
+      "positionUnit": "deg",
+      "samples": [
+        {
+          "position": 0.0,
+          "relativeTransform": [
+            1.0,
+            0.0,
+            0.0,
+            -17.8,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            -2.539999999999999,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "position": 25.0,
+          "relativeTransform": [
+            0.9063077870366499,
+            0.0,
+            0.4226182617406995,
+            -17.20572899407375,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            -0.4226182617406995,
+            0.0,
+            0.9063077870366499,
+            5.220583279911361,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "position": 42.0,
+          "relativeTransform": [
+            0.7431448254773942,
+            0.0,
+            0.6691306063588582,
+            -14.927569633649117,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            -0.6691306063588582,
+            0.0,
+            0.7431448254773942,
+            10.022936936475096,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "position": 0.0,
+          "relativeTransform": [
+            1.0,
+            0.0,
+            0.0,
+            -17.8,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            -2.540000000000001,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "Front left mount": {
+      "occurrenceOne": "Front left housing",
+      "occurrenceTwo": "R7 chassis",
+      "type": "rigid"
+    },
+    "Front left azimuth": {
+      "occurrenceOne": "Front left housing",
+      "occurrenceTwo": "Front left carrier",
+      "positiveWorldAxis": [
+        -0.0,
+        -0.0,
+        -1.0000000000000002
+      ],
+      "type": "revolute",
+      "positionUnit": "deg",
+      "samples": [
+        {
+          "position": 0.0,
+          "relativeTransform": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "position": 25.0,
+          "relativeTransform": [
+            0.9063077870366499,
+            -0.4226182617406995,
+            0.0,
+            0.0,
+            0.4226182617406995,
+            0.9063077870366499,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "position": -18.0,
+          "relativeTransform": [
+            0.9510565162951538,
+            0.3090169943749475,
+            0.0,
+            0.0,
+            -0.3090169943749475,
+            0.9510565162951538,
+            0.0,
+            3.552713678800501e-15,
+            0.0,
+            0.0,
+            1.0,
+            -4.440892098500626e-16,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "position": 0.0,
+          "relativeTransform": [
+            0.9999999999999996,
+            0.0,
+            0.0,
+            3.552713678800501e-15,
+            0.0,
+            0.9999999999999996,
+            0.0,
+            1.0658141036401503e-14,
+            0.0,
+            0.0,
+            1.0,
+            -8.881784197001252e-16,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "Front left roll": {
+      "occurrenceOne": "Front left carrier",
+      "occurrenceTwo": "Front left wheel",
+      "positiveWorldAxis": [
+        -0.0,
+        -1.000000000000001,
+        -0.0
+      ],
+      "type": "revolute",
+      "positionUnit": "deg",
+      "samples": [
+        {
+          "position": 0.0,
+          "relativeTransform": [
+            1.0,
+            0.0,
+            0.0,
+            3.552713678800501e-15,
+            0.0,
+            1.0,
+            0.0,
+            3.552713678800501e-15,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "position": 25.0,
+          "relativeTransform": [
+            0.90630778703665,
+            0.0,
+            0.4226182617406993,
+            1.7763568394002505e-15,
+            0.0,
+            1.0,
+            0.0,
+            3.552713678800501e-15,
+            -0.4226182617406996,
+            0.0,
+            0.90630778703665,
+            3.9968028886505635e-15,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "position": -18.0,
+          "relativeTransform": [
+            0.9510565162951534,
+            0.0,
+            -0.30901699437494745,
+            -1.021405182655144e-14,
+            0.0,
+            0.9999999999999998,
+            0.0,
+            -3.552713678800501e-15,
+            0.3090169943749478,
+            0.0,
+            0.9510565162951534,
+            -2.6645352591003757e-15,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "position": 0.0,
+          "relativeTransform": [
+            1.0000000000000002,
+            0.0,
+            0.0,
+            -1.7763568394002505e-14,
+            0.0,
+            1.0,
+            0.0,
+            -1.4210854715202004e-14,
+            5.551115123125785e-17,
+            0.0,
+            1.0000000000000002,
+            -1.2212453270876722e-15,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "Front right mount": {
+      "occurrenceOne": "Front right housing",
+      "occurrenceTwo": "R7 chassis",
+      "type": "rigid"
+    },
+    "Front right azimuth": {
+      "occurrenceOne": "Front right housing",
+      "occurrenceTwo": "Front right carrier",
+      "positiveWorldAxis": [
+        -0.0,
+        -0.0,
+        -1.0000000000000013
+      ],
+      "type": "revolute",
+      "positionUnit": "deg",
+      "samples": [
+        {
+          "position": 0.0,
+          "relativeTransform": [
+            1.0,
+            0.0,
+            0.0,
+            -2.2204460492503107e-15,
+            0.0,
+            1.0,
+            0.0,
+            -4.884981308350691e-15,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "position": 25.0,
+          "relativeTransform": [
+            0.9063077870366499,
+            -0.42261826174069955,
+            0.0,
+            -5.329070518200751e-15,
+            0.42261826174069955,
+            0.9063077870366499,
+            0.0,
+            1.7763568394002505e-15,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "position": -18.0,
+          "relativeTransform": [
+            0.9510565162951531,
+            0.30901699437494745,
+            0.0,
+            -1.7763568394002505e-15,
+            -0.30901699437494745,
+            0.9510565162951531,
+            0.0,
+            -1.7763568394002505e-15,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "position": 0.0,
+          "relativeTransform": [
+            1.0,
+            0.0,
+            0.0,
+            -9.325873406851312e-15,
+            0.0,
+            1.0,
+            0.0,
+            -4.884981308350691e-15,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "Front right roll": {
+      "occurrenceOne": "Front right carrier",
+      "occurrenceTwo": "Front right wheel",
+      "positiveWorldAxis": [
+        -1.0000000000000004,
+        2.220446049250314e-16,
+        7.977523481522541e-32
+      ],
+      "type": "revolute",
+      "positionUnit": "deg",
+      "samples": [
+        {
+          "position": 0.0,
+          "relativeTransform": [
+            1.0,
+            0.0,
+            0.0,
+            -2.2204460492503107e-15,
+            0.0,
+            1.0,
+            0.0,
+            -4.8849813083506896e-15,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "position": 25.0,
+          "relativeTransform": [
+            0.9063077870366499,
+            0.0,
+            0.42261826174069944,
+            -3.2338581730135563e-15,
+            0.0,
+            1.0,
+            0.0,
+            -4.8849813083506896e-15,
+            -0.42261826174069966,
+            0.0,
+            0.9063077870366499,
+            -4.6655846285807575e-15,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "position": -18.0,
+          "relativeTransform": [
+            0.9510565162951538,
+            0.0,
+            -0.30901699437494745,
+            2.2809599934006136e-15,
+            4.930380657631324e-32,
+            1.0,
+            -1.2325951644078307e-32,
+            -1.3322676295501878e-15,
+            0.3090169943749477,
+            0.0,
+            0.9510565162951536,
+            -8.958260475086271e-16,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "position": 0.0,
+          "relativeTransform": [
+            1.0000000000000002,
+            0.0,
+            0.0,
+            1.3322676295501886e-15,
+            2.465190328815662e-32,
+            1.0,
+            0.0,
+            2.220446049250313e-15,
+            1.1102230246251573e-16,
+            0.0,
+            1.0000000000000002,
+            -6.661338147750925e-16,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "Rear left mount": {
+      "occurrenceOne": "Rear left housing",
+      "occurrenceTwo": "R7 chassis",
+      "type": "rigid"
+    },
+    "Rear left azimuth": {
+      "occurrenceOne": "Rear left housing",
+      "occurrenceTwo": "Rear left carrier",
+      "positiveWorldAxis": [
+        -0.0,
+        -0.0,
+        -1.0000000000000009
+      ],
+      "type": "revolute",
+      "positionUnit": "deg",
+      "samples": [
+        {
+          "position": 0.0,
+          "relativeTransform": [
+            1.0,
+            0.0,
+            0.0,
+            -4.884981308350691e-15,
+            0.0,
+            1.0,
+            0.0,
+            -2.2204460492503107e-15,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "position": 25.0,
+          "relativeTransform": [
+            0.9063077870366499,
+            -0.42261826174069955,
+            0.0,
+            -3.552713678800501e-15,
+            0.42261826174069955,
+            0.9063077870366499,
+            0.0,
+            -3.552713678800501e-15,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "position": -18.0,
+          "relativeTransform": [
+            0.9510565162951535,
+            0.30901699437494756,
+            0.0,
+            1.2434497875801753e-14,
+            -0.30901699437494756,
+            0.9510565162951535,
+            0.0,
+            1.7763568394002505e-15,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "position": 0.0,
+          "relativeTransform": [
+            1.0000000000000002,
+            5.551115123125783e-17,
+            0.0,
+            7.216449660063516e-15,
+            -5.551115123125783e-17,
+            1.0000000000000002,
+            0.0,
+            -3.663735981263015e-15,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "Rear left roll": {
+      "occurrenceOne": "Rear left carrier",
+      "occurrenceTwo": "Rear left wheel",
+      "positiveWorldAxis": [
+        1.0000000000000002,
+        2.4980018054066027e-16,
+        -1.7524180758385481e-16
+      ],
+      "type": "revolute",
+      "positionUnit": "deg",
+      "samples": [
+        {
+          "position": 0.0,
+          "relativeTransform": [
+            1.0,
+            0.0,
+            0.0,
+            1.1102230246251565e-16,
+            0.0,
+            1.0,
+            0.0,
+            -1.110223024625125e-16,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "position": 25.0,
+          "relativeTransform": [
+            0.9063077870366499,
+            0.0,
+            0.4226182617406995,
+            -1.897370465477639e-15,
+            4.930380657631324e-32,
+            1.0,
+            2.465190328815662e-32,
+            -1.1102230246251082e-16,
+            -0.4226182617406995,
+            0.0,
+            0.9063077870366499,
+            -3.8526815217493013e-16,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "position": -18.0,
+          "relativeTransform": [
+            0.9510565162951538,
+            -4.930380657631324e-32,
+            -0.3090169943749475,
+            3.754627004768916e-15,
+            -9.860761315262648e-32,
+            1.0,
+            0.0,
+            -3.6637359812630166e-15,
+            0.3090169943749475,
+            3.697785493223493e-32,
+            0.9510565162951538,
+            1.785916374160878e-15,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "position": 0.0,
+          "relativeTransform": [
+            1.0000000000000002,
+            0.0,
+            3.4211388289180116e-48,
+            3.663735981263018e-15,
+            -4.930380657631324e-32,
+            1.0,
+            1.2325951644078312e-32,
+            -7.216449660063516e-15,
+            -2.4308653429145085e-63,
+            3.6817407570490047e-32,
+            1.0000000000000002,
+            8.881784197001262e-16,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "Rear right mount": {
+      "occurrenceOne": "Rear right housing",
+      "occurrenceTwo": "R7 chassis",
+      "type": "rigid"
+    },
+    "Rear right azimuth": {
+      "occurrenceOne": "Rear right housing",
+      "occurrenceTwo": "Rear right carrier",
+      "positiveWorldAxis": [
+        -0.0,
+        -0.0,
+        -1.0000000000000004
+      ],
+      "type": "revolute",
+      "positionUnit": "deg",
+      "samples": [
+        {
+          "position": 0.0,
+          "relativeTransform": [
+            1.0,
+            0.0,
+            0.0,
+            3.6863200101738274e-16,
+            0.0,
+            1.0,
+            0.0,
+            -3.6863200101738274e-16,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "position": 25.0,
+          "relativeTransform": [
+            0.9063077870366499,
+            -0.4226182617406995,
+            0.0,
+            0.0,
+            0.4226182617406995,
+            0.9063077870366499,
+            0.0,
+            -3.552713678800501e-15,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "position": -18.0,
+          "relativeTransform": [
+            0.9510565162951536,
+            0.3090169943749475,
+            0.0,
+            0.0,
+            -0.3090169943749475,
+            0.9510565162951536,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "position": 0.0,
+          "relativeTransform": [
+            0.9999999999999998,
+            1.1442377452219691e-17,
+            0.0,
+            -2.886579864025406e-15,
+            -1.1442377452219691e-17,
+            0.9999999999999998,
+            0.0,
+            -4.2188474935755964e-15,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "Rear right roll": {
+      "occurrenceOne": "Rear right carrier",
+      "occurrenceTwo": "Rear right wheel",
+      "positiveWorldAxis": [
+        1.1674349118862552e-16,
+        1.0000000000000004,
+        -3.6122163985217806e-17
+      ],
+      "type": "revolute",
+      "positionUnit": "deg",
+      "samples": [
+        {
+          "position": 0.0,
+          "relativeTransform": [
+            1.0,
+            0.0,
+            0.0,
+            -2.886579864025406e-15,
+            0.0,
+            1.0,
+            0.0,
+            -4.2188474935755964e-15,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "position": 25.0,
+          "relativeTransform": [
+            0.9063077870366499,
+            0.0,
+            0.42261826174069944,
+            -6.177283643441373e-16,
+            0.0,
+            1.0,
+            0.0,
+            -4.2188474935755964e-15,
+            -0.42261826174069966,
+            0.0,
+            0.9063077870366499,
+            -5.564354748901285e-16,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "position": -18.0,
+          "relativeTransform": [
+            0.9510565162951538,
+            0.0,
+            -0.30901699437494745,
+            5.026260582888355e-15,
+            2.465190328815662e-32,
+            1.0,
+            -6.1629758220391534e-33,
+            -6.661338147750947e-16,
+            0.3090169943749477,
+            0.0,
+            0.9510565162951536,
+            1.7725330254959995e-15,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "position": 0.0,
+          "relativeTransform": [
+            1.0000000000000002,
+            0.0,
+            0.0,
+            -2.8865798640254066e-15,
+            1.232595164407831e-32,
+            1.0,
+            0.0,
+            2.8865798640254062e-15,
+            1.1102230246251573e-16,
+            0.0,
+            1.0000000000000002,
+            -6.66133814775093e-16,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ]
+    }
+  },
+  "privateSourceSha256": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+  "sourceManifestSha256": "5b604df29d69334397f9e327ef720021a957e96d37e553417d39c8bbb73c3a41",
+  "authoredBodies": 612,
+  "combinedSteerAndRoll": {
+    "Front left": {
+      "steerDeg": 31.0,
+      "rollDeg": -24.000000000000004,
+      "wheelRelativeToHousing": [
+        0.7830612939961843,
+        0.5150380749100544,
+        0.3486413504419222,
+        -1.0658141036401503e-14,
+        -0.47051069384706967,
+        0.8571673007021128,
+        -0.2094848576451379,
+        3.552713678800501e-15,
+        -0.40673664307580043,
+        -2.7755575615628914e-17,
+        0.9135454576426006,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "Front right": {
+      "steerDeg": 31.0,
+      "rollDeg": -24.000000000000004,
+      "wheelRelativeToHousing": [
+        0.7830612939961836,
+        0.5150380749100542,
+        0.348641350441922,
+        1.332267629550195e-15,
+        -0.4705106938470693,
+        0.8571673007021124,
+        -0.20948485764513786,
+        -2.6201263381153694e-14,
+        -0.40673664307580026,
+        0.0,
+        0.9135454576426004,
+        -2.6645352591003757e-15,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "Rear left": {
+      "steerDeg": 31.0,
+      "rollDeg": -24.000000000000004,
+      "wheelRelativeToHousing": [
+        0.7830612939961834,
+        0.515038074910054,
+        0.348641350441922,
+        -1.9095836023552696e-14,
+        -0.4705106938470692,
+        0.8571673007021122,
+        -0.20948485764513786,
+        -9.325873406851309e-15,
+        -0.40673664307580004,
+        -2.7755575615628914e-17,
+        0.9135454576426004,
+        1.7763568394002505e-15,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "Rear right": {
+      "steerDeg": 31.0,
+      "rollDeg": -24.000000000000004,
+      "wheelRelativeToHousing": [
+        0.7830612939961838,
+        0.5150380749100543,
+        0.348641350441922,
+        1.4579486716219384e-14,
+        -0.47051069384706923,
+        0.8571673007021124,
+        -0.20948485764513788,
+        3.18408167778312e-15,
+        -0.40673664307580026,
+        -5.6301585677850425e-33,
+        0.9135454576426004,
+        4.440892098500626e-16,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "excludedSupplierSolids": 1092,
+  "maximumBoundsDifferenceMm": 0.0,
+  "maximumAbsoluteVolumeDifferenceMm3": 3.637978807091713e-12,
+  "transformTranslationUnit": "cm"
+}

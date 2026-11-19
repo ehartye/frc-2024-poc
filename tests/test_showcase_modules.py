@@ -1,4 +1,5 @@
 """Check the published whole-robot scene, including each module's moving frames."""
+import hashlib
 import json
 import struct
 import unittest
@@ -9,6 +10,28 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class InstalledModules(unittest.TestCase):
+    def test_downloadable_robot_matches_reopened_joints(self):
+        receipt = json.loads((ROOT / "cad/student/r7-reopened.json").read_bytes())
+        self.assertTrue(receipt["opened"])
+        self.assertEqual(hashlib.sha256((ROOT / receipt["source"]).read_bytes()).hexdigest(), receipt["sha256"])
+        native = json.loads((ROOT / "docs/media/swerve-r7.json").read_bytes())
+        self.assertEqual(receipt["privateSourceSha256"], native["sourceSha256"])
+        groups = receipt["components"]
+        self.assertEqual(len(groups), 15)
+        self.assertEqual(sum(g["bodies"] for n,g in groups.items() if n.startswith("R7 ")), 612)
+        self.assertEqual(sum(g["bodies"] for g in groups.values()), 692)
+        layout = json.loads((ROOT / "cad/drivetrain/maxswerve-layout.json").read_bytes())
+        axes = layout["articulation"]["nativeJointTest"]["positiveAxes"]
+        expected = {"Pitch": [0,-1,0], **{s+" azimuth": v["steer"] for s,v in axes.items()},
+                    **{s+" roll": v["roll"] for s,v in axes.items()}}
+        for name, direction in expected.items():
+            joint = receipt["joints"][name]
+            for actual, reference in zip(joint["positiveWorldAxis"], direction, strict=True):
+                self.assertAlmostEqual(actual, reference)
+            self.assertNotEqual(joint["samples"][0]["relativeTransform"], joint["samples"][1]["relativeTransform"])
+        self.assertEqual(receipt["joints"]["Lift"]["samples"][1]["position"], 120)
+        self.assertEqual(set(receipt["combinedSteerAndRoll"]),set(axes))
+
     def test_all_corners_steer_and_roll_independently(self):
         receipt = json.loads((ROOT / "docs/media/swerve-r7.json").read_bytes())
         with (ROOT / receipt["assets"]["model"]["path"]).open("rb") as stream:
