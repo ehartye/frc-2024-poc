@@ -1,0 +1,116 @@
+{
+  "schema": "agent-frc/design-review@1",
+  "objectives": [
+    {
+      "id": "traffic-wait",
+      "unit": "s",
+      "max": 15
+    },
+    {
+      "id": "service-fit",
+      "unit": "mm3",
+      "max": 0.01
+    },
+    {
+      "id": "demonstrated-pit-turnaround",
+      "unit": "s",
+      "max": 180
+    }
+  ],
+  "cases": [
+    {
+      "id": "separate-lanes",
+      "condition": "Separate partner lane, nominal gauge, straight guide and seated elevated lock if fitted."
+    },
+    {
+      "id": "shared-lane",
+      "condition": "Shared lane, nominal packing gauge, 2 mm displaced guide and missed lock when an elevated terminal role depends on them."
+    }
+  ],
+  "concepts": [
+    {
+      "id": "fixed-retrieval-and-hang",
+      "architecture": "Fixed midfield retrieval with a load-bearing mast, transverse lock and rail-supported crossmember for an elevated terminal role.",
+      "interfaces": [
+        {
+          "from": "floor drive",
+          "to": "midfield",
+          "exchange": "requests the center retrieval lane"
+        },
+        {
+          "from": "mast saddle",
+          "to": "crossmember",
+          "exchange": "transmits suspended weight through the slide and lock"
+        }
+      ],
+      "runs": [
+        {
+          "case": "separate-lanes",
+          "source": {
+            "path": "experiments/alliance-service/season-measurements.json",
+            "sha256": "35a12257c61e38bcf8b2b9558323eb7bd077fb2eff9475e822e814b0bf166e46"
+          },
+          "values": {
+            "traffic-wait": "/concepts/fixed-retrieval-and-hang/separate-lanes/waitSeconds",
+            "service-fit": "/concepts/fixed-retrieval-and-hang/separate-lanes/serviceInterferenceMm3"
+          },
+          "execution": "/concepts/fixed-retrieval-and-hang/separate-lanes"
+        },
+        {
+          "case": "shared-lane",
+          "source": {
+            "path": "experiments/alliance-service/season-measurements.json",
+            "sha256": "35a12257c61e38bcf8b2b9558323eb7bd077fb2eff9475e822e814b0bf166e46"
+          },
+          "values": {
+            "traffic-wait": "/concepts/fixed-retrieval-and-hang/shared-lane/waitSeconds",
+            "service-fit": "/concepts/fixed-retrieval-and-hang/shared-lane/serviceInterferenceMm3"
+          },
+          "execution": "/concepts/fixed-retrieval-and-hang/shared-lane"
+        }
+      ]
+    },
+    {
+      "id": "grounded-flex-support",
+      "architecture": "Choose retrieval or a ground support lane before the match. Retain ground support throughout and inspect the disconnected pack in detached tooling. The concept omits the robot-weight mast.",
+      "interfaces": [
+        {
+          "from": "ground-supported chassis",
+          "to": "alliance partner",
+          "exchange": "yields the occupied retrieval lane"
+        },
+        {
+          "from": "detached packing gauge",
+          "to": "pit operator",
+          "exchange": "accepts or rejects the disconnected pack"
+        }
+      ],
+      "runs": [
+        {
+          "case": "separate-lanes",
+          "source": {
+            "path": "experiments/alliance-service/season-measurements.json",
+            "sha256": "35a12257c61e38bcf8b2b9558323eb7bd077fb2eff9475e822e814b0bf166e46"
+          },
+          "values": {
+            "traffic-wait": "/concepts/grounded-flex-support/separate-lanes/waitSeconds",
+            "service-fit": "/concepts/grounded-flex-support/separate-lanes/serviceInterferenceMm3"
+          },
+          "execution": "/concepts/grounded-flex-support/separate-lanes"
+        },
+        {
+          "case": "shared-lane",
+          "source": {
+            "path": "experiments/alliance-service/season-measurements.json",
+            "sha256": "35a12257c61e38bcf8b2b9558323eb7bd077fb2eff9475e822e814b0bf166e46"
+          },
+          "values": {
+            "traffic-wait": "/concepts/grounded-flex-support/shared-lane/waitSeconds",
+            "service-fit": "/concepts/grounded-flex-support/shared-lane/serviceInterferenceMm3"
+          },
+          "execution": "/concepts/grounded-flex-support/shared-lane"
+        }
+      ]
+    }
+  ]
+}

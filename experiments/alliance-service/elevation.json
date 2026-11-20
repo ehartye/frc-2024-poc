@@ -1,0 +1,18 @@
+{
+  "schema": "agent-frc/elevation-study@1",
+  "inventory": {
+    "path": "experiments/alliance-service/load-inventory.json",
+    "sha256": "3c3cd795398b3b2f500a39f746140717659a1e7c376454774b7c764908ed28d1",
+    "pointer": "/inventory"
+  },
+  "mechanisms": [
+    {
+      "id": "stage-chain-mast",
+      "source": {
+        "path": "experiments/alliance-service/load-inventory.json",
+        "sha256": "3c3cd795398b3b2f500a39f746140717659a1e7c376454774b7c764908ed28d1",
+        "pointer": "/model"
+      }
+    }
+  ]
+}

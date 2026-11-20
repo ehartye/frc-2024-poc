@@ -1,0 +1,128 @@
+{
+  "sourceSha256": {
+    "kickoff/stage-rules.json": "22079a110c4b14045c4d482a64fa84623191f3c603ce9a13df3279e2c26897e2",
+    "kickoff/crescendo-field.json": "8b63e86b5f9240670dc38bceb200a9352da8c3434968ea3d7ad4c02033ec706a",
+    "experiments/alliance-service/roles.json": "3b853bb4f5ddbe887c1ffd8f8f9248a1b13f19df6c79764ab3228c7b3d01bb43",
+    "experiments/alliance-service/role-results.json": "1b95c06612a016b6a19aa138807005854955aa135c4c8acb59a64520730db667",
+    "cad/assembly-readiness/mass/result.json": "bfe7a9b028b92f73722774d78c8a2698c525ae8cf0b6ceb092691b3cd5edd388",
+    "experiments/stage-climb/static-screen.json": "04e56008b154f272d2ad6d3a662510c15d77283807b547ce25c7d910ed943e11",
+    "experiments/stage-climb/solo-trajectory.json": "5180447563bfa411591d67b42216fe9bb1f0d30458ddbb677a292f5504b6e301",
+    "cad/service-readiness/reopen.json": "34a7d0ebdef87d70a63f900aed14494953448d292b580ca3eb0988c051230637",
+    "cad/service-readiness/r11-reopen.json": "7240009aa6420afb0427929f0d249eb575a6aa94fb85fad6add5631107c1aeb7"
+  },
+  "kickoffOnly": {
+    "authority": {
+      "publisher": "FIRST",
+      "edition": "January 6 kickoff, sections 5 and 6 V0",
+      "mirror": "https://bchrobotics.com/wp-content/uploads/2024/01/2024GameManual-unlocked.pdf",
+      "sha256": "04f28dce1b689d8045a42142049da268f403960f90ba547e570ff7c987bb861f",
+      "scope": "STAGE point values, ordinary ENSEMBLE thresholds, assessment time and nominal field dimensions agree. Retain the final wording of contact and interference rules for this study."
+    },
+    "cases": [
+      {
+        "partnerOnSameUnlitChain": false,
+        "parkAlliancePoints": 1,
+        "successfulHangAlliancePoints": 3,
+        "missOutsideZoneAlliancePoints": 0,
+        "breakEvenHangProbability": 0.3333333333333333,
+        "sensitivityAtHypothetical25Percent": 0.75
+      },
+      {
+        "partnerOnSameUnlitChain": true,
+        "parkAlliancePoints": 4,
+        "successfulHangAlliancePoints": 8,
+        "missOutsideZoneAlliancePoints": 3,
+        "breakEvenHangProbability": 0.2,
+        "sensitivityAtHypothetical25Percent": 4.25
+      }
+    ]
+  },
+  "elevation": {
+    "actualInstalledKg": null,
+    "knownInstalledSubtotalKg": [
+      43.71224870086758,
+      47.448835611468
+    ],
+    "unresolvedArticles": 136,
+    "earlierScenarioUpperKg": 60.73475842588824,
+    "scenarioStaticN": 595.6045187172368,
+    "scenarioDynamicMultiplier": 2,
+    "scenarioScreenN": 1191.2090374344737,
+    "candidateCatalogRatings": {
+      "nutMaximumDynamicN": 1334.46648457815,
+      "oneBearingBasicDynamicN": 2160,
+      "oneBearingBasicStaticN": 2440
+    },
+    "nutRatingMinusDemandN": 143.25744714367625,
+    "oneBearingDynamicRatingToDemand": 1.8132837580312748,
+    "oneBearingStaticRatingToStaticDemand": 4.096678119996584,
+    "assumedDoubleSupportStressMPa": {
+      "pinDoubleShearMPa": 7.583472262537403,
+      "innerTubeBearingMPa": 23.82418074868947,
+      "beamBendingMPa": 33.88900349733025,
+      "roofBendingMPa": 29.85278478777658
+    },
+    "singleWallAverageBearingDemandMPa": 47.64836149737894,
+    "adverseSharedSeatTensionDifferenceN": 159.90262832283133,
+    "displacedGuideOverlapMm3": 17485.76653,
+    "floorGapMmAtFiveSeconds": {
+      "engaged": 152.79729386968185,
+      "missed": -4.440892098500626e-15
+    },
+    "actualAssemblyCapacityN": null,
+    "actualAssemblyMarginN": null
+  },
+  "concepts": {
+    "fixed-retrieval-and-hang": {
+      "separate-lanes": {
+        "waitSeconds": 0,
+        "finishedPrescribedVisits": 1,
+        "acquiredPieces": 1,
+        "fullMatchMargin": -5,
+        "concept": "fixed-retrieval-and-hang",
+        "case": "separate-lanes",
+        "runId": "fixed-retrieval-and-hang/separate-lanes",
+        "simulatedRole": "retrieve",
+        "serviceInterferenceMm3": 0.0,
+        "terminalFloorClearanceMm": 152.79729386968185
+      },
+      "shared-lane": {
+        "waitSeconds": 133.05,
+        "finishedPrescribedVisits": 0,
+        "acquiredPieces": 0,
+        "fullMatchMargin": 7,
+        "concept": "fixed-retrieval-and-hang",
+        "case": "shared-lane",
+        "runId": "fixed-retrieval-and-hang/shared-lane",
+        "simulatedRole": "retrieve",
+        "serviceInterferenceMm3": 17485.76653,
+        "terminalFloorClearanceMm": -4.440892098500626e-15
+      }
+    },
+    "grounded-flex-support": {
+      "separate-lanes": {
+        "waitSeconds": 0,
+        "finishedPrescribedVisits": 1,
+        "acquiredPieces": 1,
+        "fullMatchMargin": -5,
+        "concept": "grounded-flex-support",
+        "case": "separate-lanes",
+        "runId": "grounded-flex-support/separate-lanes",
+        "simulatedRole": "retrieve",
+        "serviceInterferenceMm3": 0.0
+      },
+      "shared-lane": {
+        "waitSeconds": 0,
+        "finishedPrescribedVisits": 1,
+        "acquiredPieces": 0,
+        "fullMatchMargin": 7,
+        "concept": "grounded-flex-support",
+        "case": "shared-lane",
+        "runId": "grounded-flex-support/shared-lane",
+        "simulatedRole": "yield",
+        "serviceInterferenceMm3": 0.0
+      }
+    }
+  },
+  "physicalMatchAvailability": null
+}

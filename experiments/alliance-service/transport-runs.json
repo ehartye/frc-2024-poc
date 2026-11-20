@@ -1,0 +1,143 @@
+{
+  "demand": {
+    "criterionId": "retained-note-at-home",
+    "focalRobot": "B3",
+    "windowScope": "whole TELEOP",
+    "criterion": "B3 reaches its home-lane endpoint with the distinct center NOTE in its own cargo.",
+    "requiredPieces": 1,
+    "windowS": 135,
+    "basis": "Blue 3 offers one distinct retained center NOTE at its home lane during TELEOP."
+  },
+  "episodes": [
+    {
+      "id": "clear",
+      "runId": "wing-opening-clear",
+      "revision": "8b63e86b5f9240670dc38bceb200a9352da8c3434968ea3d7ad4c02033ec706a",
+      "condition": "Partner on a separate lane",
+      "criterionId": "retained-note-at-home",
+      "focalRobot": "B3",
+      "windowScope": "whole TELEOP",
+      "criterion": "B3 reaches its home-lane endpoint with the distinct center NOTE in its own cargo.",
+      "variation": {
+        "match": "wing-opening",
+        "stock": 1,
+        "pitCondition": "clear"
+      },
+      "evidence": "field-rehearsal",
+      "windowS": [
+        0,
+        135
+      ],
+      "initialPieces": [
+        "center-2/1"
+      ],
+      "events": [
+        {
+          "timeS": 3.35,
+          "kind": "acquire",
+          "piece": "center-2/1"
+        },
+        {
+          "timeS": 5.6,
+          "kind": "accept",
+          "piece": "center-2/1",
+          "witness": "B3 retains this piece at the registered home-lane endpoint."
+        }
+      ]
+    },
+    {
+      "id": "queue",
+      "runId": "shared-center-queue",
+      "revision": "8b63e86b5f9240670dc38bceb200a9352da8c3434968ea3d7ad4c02033ec706a",
+      "condition": "Competing midfield requests with all six robots",
+      "criterionId": "retained-note-at-home",
+      "focalRobot": "B3",
+      "windowScope": "whole TELEOP",
+      "criterion": "B3 reaches its home-lane endpoint with the distinct center NOTE in its own cargo.",
+      "variation": {
+        "match": "shared-center",
+        "stock": 1,
+        "pitCondition": "queue"
+      },
+      "evidence": "field-rehearsal",
+      "windowS": [
+        0,
+        135
+      ],
+      "initialPieces": [
+        "center-2/1"
+      ],
+      "events": []
+    },
+    {
+      "id": "empty",
+      "runId": "wing-opening-empty",
+      "revision": "8b63e86b5f9240670dc38bceb200a9352da8c3434968ea3d7ad4c02033ec706a",
+      "condition": "Requested station starts empty",
+      "criterionId": "retained-note-at-home",
+      "focalRobot": "B3",
+      "windowScope": "whole TELEOP",
+      "criterion": "B3 reaches its home-lane endpoint with the distinct center NOTE in its own cargo.",
+      "variation": {
+        "match": "wing-opening",
+        "stock": 0,
+        "pitCondition": "empty"
+      },
+      "evidence": "field-rehearsal",
+      "windowS": [
+        0,
+        135
+      ],
+      "initialPieces": [],
+      "events": []
+    },
+    {
+      "id": "jam",
+      "runId": "wing-opening-jam",
+      "revision": "8b63e86b5f9240670dc38bceb200a9352da8c3434968ea3d7ad4c02033ec706a",
+      "condition": "Focal robot stays in the pit with the displaced mast guide jammed",
+      "criterionId": "retained-note-at-home",
+      "focalRobot": "B3",
+      "windowScope": "whole TELEOP",
+      "criterion": "B3 reaches its home-lane endpoint with the distinct center NOTE in its own cargo.",
+      "variation": {
+        "match": "wing-opening",
+        "stock": 1,
+        "pitCondition": "jam"
+      },
+      "evidence": "field-rehearsal",
+      "windowS": [
+        0,
+        135
+      ],
+      "initialPieces": [
+        "center-2/1"
+      ],
+      "events": []
+    },
+    {
+      "id": "service",
+      "runId": "wing-opening-service",
+      "revision": "8b63e86b5f9240670dc38bceb200a9352da8c3434968ea3d7ad4c02033ec706a",
+      "condition": "Focal robot held in the pit by the failed disconnected pack gauge",
+      "criterionId": "retained-note-at-home",
+      "focalRobot": "B3",
+      "windowScope": "whole TELEOP",
+      "criterion": "B3 reaches its home-lane endpoint with the distinct center NOTE in its own cargo.",
+      "variation": {
+        "match": "wing-opening",
+        "stock": 1,
+        "pitCondition": "service"
+      },
+      "evidence": "field-rehearsal",
+      "windowS": [
+        0,
+        135
+      ],
+      "initialPieces": [
+        "center-2/1"
+      ],
+      "events": []
+    }
+  ]
+}

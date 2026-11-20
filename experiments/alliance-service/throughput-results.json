@@ -1,0 +1,130 @@
+{
+  "schema": "agent-frc/throughput-result@1",
+  "demand": {
+    "criterionId": "retained-note-at-home",
+    "focalRobot": "B3",
+    "windowScope": "whole TELEOP",
+    "criterion": "B3 reaches its home-lane endpoint with the distinct center NOTE in its own cargo.",
+    "requiredPieces": 1,
+    "windowS": 135,
+    "basis": "Blue 3 offers one distinct retained center NOTE at its home lane during TELEOP."
+  },
+  "requiredPerSecond": 0.007407407407407408,
+  "episodes": [
+    {
+      "id": "clear",
+      "source": {
+        "path": "experiments/alliance-service/transport-runs.json",
+        "sha256": "36b1b24b1ee766e3224e3dc3d906cf74cfe77e61aeca40dc768fadc0b3f8b124",
+        "pointer": "/episodes/0"
+      },
+      "runId": "wing-opening-clear",
+      "revision": "8b63e86b5f9240670dc38bceb200a9352da8c3434968ea3d7ad4c02033ec706a",
+      "condition": "Partner on a separate lane",
+      "criterion": "B3 reaches its home-lane endpoint with the distinct center NOTE in its own cargo.",
+      "evidence": "field-rehearsal",
+      "supplied": 1,
+      "attempts": 1,
+      "failed": 0,
+      "accepted": 1,
+      "acceptedPerSecond": 0.007407407407407408,
+      "secondsBetweenAccepted": [
+        5.6
+      ],
+      "tailWithoutAcceptanceS": 129.4,
+      "status": "pass"
+    },
+    {
+      "id": "queue",
+      "source": {
+        "path": "experiments/alliance-service/transport-runs.json",
+        "sha256": "36b1b24b1ee766e3224e3dc3d906cf74cfe77e61aeca40dc768fadc0b3f8b124",
+        "pointer": "/episodes/1"
+      },
+      "runId": "shared-center-queue",
+      "revision": "8b63e86b5f9240670dc38bceb200a9352da8c3434968ea3d7ad4c02033ec706a",
+      "condition": "Competing midfield requests with all six robots",
+      "criterion": "B3 reaches its home-lane endpoint with the distinct center NOTE in its own cargo.",
+      "evidence": "field-rehearsal",
+      "supplied": 1,
+      "attempts": 0,
+      "failed": 0,
+      "accepted": 0,
+      "acceptedPerSecond": 0,
+      "secondsBetweenAccepted": [],
+      "tailWithoutAcceptanceS": 135,
+      "status": "fail"
+    },
+    {
+      "id": "empty",
+      "source": {
+        "path": "experiments/alliance-service/transport-runs.json",
+        "sha256": "36b1b24b1ee766e3224e3dc3d906cf74cfe77e61aeca40dc768fadc0b3f8b124",
+        "pointer": "/episodes/2"
+      },
+      "runId": "wing-opening-empty",
+      "revision": "8b63e86b5f9240670dc38bceb200a9352da8c3434968ea3d7ad4c02033ec706a",
+      "condition": "Requested station starts empty",
+      "criterion": "B3 reaches its home-lane endpoint with the distinct center NOTE in its own cargo.",
+      "evidence": "field-rehearsal",
+      "supplied": 0,
+      "attempts": 0,
+      "failed": 0,
+      "accepted": 0,
+      "acceptedPerSecond": 0,
+      "secondsBetweenAccepted": [],
+      "tailWithoutAcceptanceS": 135,
+      "status": "fail"
+    },
+    {
+      "id": "jam",
+      "source": {
+        "path": "experiments/alliance-service/transport-runs.json",
+        "sha256": "36b1b24b1ee766e3224e3dc3d906cf74cfe77e61aeca40dc768fadc0b3f8b124",
+        "pointer": "/episodes/3"
+      },
+      "runId": "wing-opening-jam",
+      "revision": "8b63e86b5f9240670dc38bceb200a9352da8c3434968ea3d7ad4c02033ec706a",
+      "condition": "Focal robot stays in the pit with the displaced mast guide jammed",
+      "criterion": "B3 reaches its home-lane endpoint with the distinct center NOTE in its own cargo.",
+      "evidence": "field-rehearsal",
+      "supplied": 1,
+      "attempts": 0,
+      "failed": 0,
+      "accepted": 0,
+      "acceptedPerSecond": 0,
+      "secondsBetweenAccepted": [],
+      "tailWithoutAcceptanceS": 135,
+      "status": "fail"
+    },
+    {
+      "id": "service",
+      "source": {
+        "path": "experiments/alliance-service/transport-runs.json",
+        "sha256": "36b1b24b1ee766e3224e3dc3d906cf74cfe77e61aeca40dc768fadc0b3f8b124",
+        "pointer": "/episodes/4"
+      },
+      "runId": "wing-opening-service",
+      "revision": "8b63e86b5f9240670dc38bceb200a9352da8c3434968ea3d7ad4c02033ec706a",
+      "condition": "Focal robot held in the pit by the failed disconnected pack gauge",
+      "criterion": "B3 reaches its home-lane endpoint with the distinct center NOTE in its own cargo.",
+      "evidence": "field-rehearsal",
+      "supplied": 1,
+      "attempts": 0,
+      "failed": 0,
+      "accepted": 0,
+      "acceptedPerSecond": 0,
+      "secondsBetweenAccepted": [],
+      "tailWithoutAcceptanceS": 135,
+      "status": "fail"
+    }
+  ],
+  "distinctVariations": 5,
+  "observedRuns": 5,
+  "passingRuns": 1,
+  "worstRate": 0,
+  "p10NearestRank": 0,
+  "status": "fail",
+  "scope": "Observed accepted events divided by the whole declared clock, including travel, queues, misses and recovery. The lower percentile describes these runs; physical reliability requires physical evidence.",
+  "studySha256": "924b8893373641e114864e28760bf0984ecc534003896ac611cdc7704e18e02b"
+}
