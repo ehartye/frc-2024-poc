@@ -1,11 +1,5 @@
 # Standalone finite-area pressure law
 
-<!-- cad-still -->
-[![1780 MAXSwerve · R9 physical assembly](../../docs/media/r9-assembly.png)](https://ehartye.github.io/frc-2024-poc/?view=r9-assembly#model)
-
-**1780 MAXSwerve · R9 physical assembly.** Parked robot with its inboard lift drive, frame, removable bumper and electrical supports. Purchased mechanisms use dimensioned external models. This view records mechanical fit in CAD. [Native model record](../../docs/media/r9-assembly.json) · [Inspect the parked assembly](https://ehartye.github.io/frc-2024-poc/?view=r9-assembly#model)
-<!-- /cad-still -->
-
 This is an explicitly hypothetical elastic penalty density, not measured NOTE foam, a fitted physical material, a retainer, or a new accepted phase handoff. The original weak-grip simulations and their28/30 witness-loss stops remain unchanged.
 
 ## Constitutive definition and work

@@ -1,11 +1,5 @@
 # Current component-launcher integration slice
 
-<!-- cad-still -->
-[![1780 MAXSwerve · R9 physical assembly](../../docs/media/r9-assembly.png)](https://ehartye.github.io/frc-2024-poc/?view=r9-assembly#model)
-
-**1780 MAXSwerve · R9 physical assembly.** Parked robot with its inboard lift drive, frame, removable bumper and electrical supports. Purchased mechanisms use dimensioned external models. This view records mechanical fit in CAD. [Native model record](../../docs/media/r9-assembly.json) · [Inspect the parked assembly](https://ehartye.github.io/frc-2024-poc/?view=r9-assembly#model)
-<!-- /cad-still -->
-
 This experiment uses the frozen f8a35ed component CAD: nominal tread radius48.26mm, shifted shooter pivotX188mm, and cradle handoff220mm before the wheel station. It replaces neither a complete robot simulation nor the separate CAD/mount validation.
 
 Fresh native intersection samples use all four actual authored tread annuli and the full NOTE torus. They measure rigid occupancy, not force. Valid solid inputs and non-cancelling per-solid intersection volumes are required. Positive10mm samples span station offsets-80..80mm; this is not a continuous clearance/contact certificate.

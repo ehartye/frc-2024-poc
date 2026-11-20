@@ -1,16 +1,12 @@
 # 2024 CRESCENDO: component-based robot proof of concept
 
-<!-- cad-still -->
-[![1780 MAXSwerve · R9 physical assembly](docs/media/r9-assembly.png)](https://ehartye.github.io/frc-2024-poc/?view=r9-assembly#model)
+[Open the 2024 field studies](https://ehartye.github.io/frc-2024-poc/). Whole-robot exhibits were withdrawn after the R7 and R9 attachment review.
 
-**1780 MAXSwerve · R9 physical assembly.** Parked robot with its inboard lift drive, frame, removable bumper and electrical supports. Purchased mechanisms use dimensioned external models. This view records mechanical fit in CAD. [Native model record](docs/media/r9-assembly.json) · [Inspect the parked assembly](https://ehartye.github.io/frc-2024-poc/?view=r9-assembly#model)
-<!-- /cad-still -->
-
-[Download the editable R9 robot](cad/student/r9-physical-assembly.f3d) · [Assembly sequence and fit results](cad/assembly-readiness/physical-assembly.md) · [Shop drawings](cad/assembly-readiness/drawings/r9-shop-drawings.pdf)
+[Assembly sequence and fit results](cad/assembly-readiness/physical-assembly.md) · [Shop drawings](cad/assembly-readiness/drawings/r9-shop-drawings.pdf)
 
 [Blue 3 role comparison, service availability and whole-robot support review](experiments/alliance-service/study.md)
 
-[R17 passive entry, service sweep and same-NOTE custody](experiments/passive-entry/study.md) · [Inspect the cassette](https://ehartye.github.io/frc-2024-poc/passive-entry.html) · [What connects in the R7 and R9 showcases?](experiments/passive-entry/showcase-attachments.md)
+[R17 passive entry, service sweep and same-NOTE custody](experiments/passive-entry/study.md) · [Explore off-center handling](https://ehartye.github.io/frc-2024-poc/passive-entry.html) · [What connects in the R7 and R9 showcases?](experiments/passive-entry/showcase-attachments.md)
 
 [R16 registered tread contact and ground custody](experiments/registered-custody/study.md) · [Inspect the floor transfer](https://ehartye.github.io/frc-2024-poc/ground-contact.html)
 
@@ -22,15 +18,15 @@
 
 [R11 four-controller bench plate, disconnected battery gauge and mast spacer](cad/service-readiness/r11-service.md)
 
-[R10 battery and unloaded mast service fixture](cad/service-readiness/passive-service.md) · [Download the editable service fixture](cad/student/r10-passive-service.f3d)
+[R10 battery and unloaded mast service fixture](cad/service-readiness/passive-service.md)
 
-[Explore the R8 Stage climb and missed-lock control](https://ehartye.github.io/frc-2024-poc/?view=r8-stage#model) · [Climber design, load transfer and clearance](experiments/stage-climb/study.md) · [Both-alliance STAGE and qualification results](experiments/speaker-cycles/match-rehearsal.md)
+[Climber design, load transfer and clearance](experiments/stage-climb/study.md) · [Both-alliance STAGE and qualification results](experiments/speaker-cycles/match-rehearsal.md)
 
 The nominal R7 collected six distinct floor NOTES and reached the shared counter six times by **117.756 s** on development start D1. All twenty formal evaluation starts remain available.
 
-[Download the student R7 Fusion assembly](https://raw.githubusercontent.com/ehartye/frc-2024-poc/main/cad/student/r7-maxswerve.f3d) · [Fusion joints and native handoff](cad/native-handoff.md) · [Play the R7 nominal-mass pickup and shot](https://ehartye.github.io/frc-2024-poc/?view=r7-budget#model) · [Six-NOTE mission results](experiments/speaker-cycles/mission.md)
+[Six-NOTE mission results](experiments/speaker-cycles/mission.md)
 
-[Follow the 2024 Agent FRC workflow](docs/workflow.md) from the season rules and alliance roles to the native assembly, scoring trials and published replay. [Open the field lab and play three matches at 10×](https://ehartye.github.io/frc-2024-poc/field-lab.html#rehearsal). [Replay the historical A2 and pressure campaigns](experiments/a2-campaign/CAMPAIGN.md).
+[Follow the 2024 Agent FRC workflow](docs/workflow.md) from the season rules and alliance roles to match strategy and recorded trial results. [Open the field lab and play three matches at 10×](https://ehartye.github.io/frc-2024-poc/field-lab.html#rehearsal). [Replay the historical A2 and pressure campaigns](experiments/a2-campaign/CAMPAIGN.md).
 
 The [historical case input manifest](experiments/a2-campaign/historical-fixtures/agent-frc/manifest.json) identifies source-pinned simulation parameters, original geometry and prior analysis from the earlier plugin case. Inputs labeled as excerpts have a new schema and retain their source hash. The manifest records identical existing files and the original revision of the shared producers.
 
@@ -63,7 +59,7 @@ See [checkpoint qualification and reproducible smoke matrix](experiments/a2-camp
 
 ## Open and edit the current candidate
 
-- [Current original floor-pose STEP](cad/assembly/connected-floor.step), [design and limits](cad/assembly/INTAKE-CANDIDATE.md), [parameter contract](cad/assembly/intake_components.json).
+- [design and limits](cad/assembly/INTAKE-CANDIDATE.md), [parameter contract](cad/assembly/intake_components.json).
 - [Connected generator](cad/assembly/build_connected_candidate.py), [source-bound evidence](cad/assembly/evidence/connected-report.json), [render provenance](cad/assembly/connected-visual.json).
 - With existing OCP8 and Matplotlib: `python cad/assembly/build_connected_candidate.py`. This produces floor, rotated and handoff STEP files, renders and exact-file verification receipts in `artifacts/connected-intake-candidate/`.
 - Vendor native CAD is not distributed. Original authored stock/fasteners and source-sized purchased-component envelopes are distinguished in the part manifest.
@@ -115,7 +111,6 @@ Acquisition, lift, telescope, level retention and transfer are prescribed kinema
 
 ## Retained earlier CAD and planning tools
 
-- [Stowed STEP](cad/a2/stowed.step), [deployed STEP](cad/a2/deployed.step), [stowed picture](cad/a2/stowed.svg).
 - [Geometry contract](cad/cycle-contract-A2.json), [original generator](cad/build_a2_layout.py), [shared kinematics](cad/a2_kinematics.py).
 - 54 original solids per endpoint are exported and reopened. Green regions reserve linkage, transfer or service space; they are not engineered hardware. Narrow nominal envelope allowances are not tolerance/strength approval.
 - With existing OCP 8 and Matplotlib: `python cad/build_a2_layout.py --output artifacts/my-cad`.

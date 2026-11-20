@@ -1,11 +1,5 @@
 # Integrated current-geometry robot plant
 
-<!-- cad-still -->
-[![1780 MAXSwerve · R9 physical assembly](../../docs/media/r9-assembly.png)](https://ehartye.github.io/frc-2024-poc/?view=r9-assembly#model)
-
-**1780 MAXSwerve · R9 physical assembly.** Parked robot with its inboard lift drive, frame, removable bumper and electrical supports. Purchased mechanisms use dimensioned external models. This view records mechanical fit in CAD. [Native model record](../../docs/media/r9-assembly.json) · [Inspect the parked assembly](https://ehartye.github.io/frc-2024-poc/?view=r9-assembly#model)
-<!-- /cad-still -->
-
 This directory is the integration layer under construction, not a completed robot simulator. The saved browser rehearsal is not the requested modeled robot.
 
 ## One electrical bus
