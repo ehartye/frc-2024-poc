@@ -1,0 +1,1014 @@
+{
+  "schema": "r7-six-floor-nominal-development/1",
+  "attempt": "D1",
+  "formalAttempts": 0,
+  "deadlineS": 120,
+  "archiveSha256": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+  "studentArchiveSha256": "6e2b65f3493dfd0a8c7a27bbf26445dec29213e93806ff9b0c55df5548b00266",
+  "budgetSha256": "9d8c37fa140ba33fdb7fddb056eca9ef24f91f488e9ea8c99c6b448ae788bbe0",
+  "sensorSha256": "13d07c04856ee1ca927d8f17fa29570e6ead74cc1c917f1879b94b3b9d8b236f",
+  "rosterSha256": "086e11317044cb8a409dd3b53d1f116b71242caa868a11be7900985ebfe84c52",
+  "firstFiveIndependentClockJoinS": 94.17325000046547,
+  "sharedCounterThroughS": 117.75605000058762,
+  "settings": {
+    "route": "straight-wall-approach/1",
+    "massCase": "nominal",
+    "outerFeed": 0.225,
+    "finalEmptySpeedMps": 1.65,
+    "finalEmptyLookaheadM": 0.72,
+    "finalCarrySpeedMps": 0.85
+  },
+  "codeSha256": {
+    "swerve_development_route": "4acbb87dbc81ea802f2395b064411330a729ceade6a672c8cb5c203829787581",
+    "swerve_next_note": "e90aff0f0a9e7d5e3c79020c46ead0a0c5b4ef2b5da054bf372e9a03cf6f1719",
+    "varied_floor_start": "2a394384c6787733cb8f4986d8a14a5753a43e4ef6ed0fa3b20e2998e3fa711d",
+    "swerve_counter_sequence": "aa224cf705cfd4513961e3f762415b7d8aae5b8cdde76011e795fc1d72afd253",
+    "coupled_collection": "c52e659fbdeaf384f90b53fbb8c73b8600ac91da8e15bcc1b64fe9e87623063e",
+    "r7_route_clearance": "cafca2be34fd1144e4afa8523d74e7444c891f46bc183591c238e544dd060358",
+    "r7_stage_plate": "e82fc05070673c40f92d52533e6ed2d8e4394bd84e49807600d9b24c97cde4f8",
+    "r7_bumper_panel": "7b49f892abe9dbf5376626da2b627493bbbf78c027d3537eee68110c7d57bc41",
+    "r7_released_clearance": "c25f45a74d879c4e15aec16b3a2be1602863cc508426f606725d25e132b308a9",
+    "post_release_hold": "19458fb8d5525c75c523187c731286ffdc534d891f7a27d2a4b221b8c57cb9e8",
+    "run_speaker_field": "b2544a1c14e51d385d15818eadd9852db5fbbb1de1c3c7fee9fa7fd38f3c9ee9",
+    "swerve_shot_observation": "d5589dba3903ce15aa94b26d8bf816e1c4d1578082f31a2cfb5270aec1f58279"
+  },
+  "coverage": "Fresh floor stock; full robot states; independent incoming field solves until certified separation or common solver handoff; late collection checked through the sixth paired sensor event. The final robot hold spans five seconds.",
+  "records": [
+    {
+      "piece": "blue-wing-middle",
+      "native": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+      "shot": "5ab813567918ae00bf79401e9c263097de4ce20bf2a414741b98b4e3d4412c1a",
+      "field": "817afabb6301e24b6fb56cd717218e433e545e74a2e39085ed9332520e8d92cd",
+      "releaseS": 10.446249999998848,
+      "openingS": 10.592549999998507,
+      "pairTimesS": [
+        13.638849999991407,
+        13.53034999999166
+      ],
+      "scoreS": 13.638849999991407,
+      "priorOccupancy": [],
+      "seatS": 4.362500000000302,
+      "stationS": 9.76300000000044,
+      "sweptRobot": {
+        "piece": "blue-wing-middle",
+        "fieldSha256": "4b44f149634e99602ab886ae6e2a5df65a38d35d8b9614133119d30f05331e50",
+        "massBinding": {
+          "r7MassCase": "nominal",
+          "massBudgetSha256": "9d8c37fa140ba33fdb7fddb056eca9ef24f91f488e9ea8c99c6b448ae788bbe0"
+        },
+        "envelopes": 659,
+        "stockOccurrenceIndices": {
+          "middle": [
+            5387
+          ],
+          "outer": [
+            5388
+          ],
+          "inner": [
+            5389
+          ],
+          "center-high": [
+            5384
+          ],
+          "center-mid": [
+            5381,
+            5385
+          ],
+          "center-low": [
+            5373,
+            5382,
+            5386
+          ]
+        },
+        "westernExtentM": 0.814914296502973,
+        "traces": [
+          "eff94eb2695fc64e43a06cdc19c491536efd57ed30d991f1e8285555d53aa6c8",
+          "b1e68d6ed7afb11de683cab0ee1177537cd9436291c5c8292aa4e7ff4ec83083",
+          "5ab813567918ae00bf79401e9c263097de4ce20bf2a414741b98b4e3d4412c1a"
+        ],
+        "candidatePairs": [],
+        "begin": 0.0,
+        "end": 10.446249999998848,
+        "intervals": 33191,
+        "unresolvedIntervals": 0,
+        "firstUnresolved": null,
+        "minimumReportedAxisGapM": 0.00373081243982476
+      },
+      "releasedNote": {
+        "intervals": 50000,
+        "unresolvedIntervals": 0,
+        "firstUnresolved": null,
+        "minimumCertifiedGapMm": 35.14425526535325,
+        "environment": {
+          "minimumOtherNoteGapM": 2.2361226432099057,
+          "otherFieldEnvelopeOverlaps": 0
+        },
+        "field": "817afabb6301e24b6fb56cd717218e433e545e74a2e39085ed9332520e8d92cd",
+        "robot": "edea99591ecda37593257c4e7b6c7c127da921f71bd27769fe7a2f5b370ed30d",
+        "installedField": "4b44f149634e99602ab886ae6e2a5df65a38d35d8b9614133119d30f05331e50"
+      }
+    },
+    {
+      "piece": "blue-wing-outer",
+      "native": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+      "shot": "cbcac161ee13ca2a89a44deded2ab9ac2c9ebac8e75877682420f2656724349c",
+      "field": "1710e08e0cb0eb3009fb8198e3e23059aaffede1c9f3190ce27f38aa8ce1051c",
+      "releaseS": 24.230250000016333,
+      "openingS": 24.369850000016008,
+      "pairTimesS": [
+        28.0637500000074,
+        27.95605000000765
+      ],
+      "scoreS": 28.0637500000074,
+      "priorOccupancy": [
+        {
+          "piece": "blue-wing-middle",
+          "clearByS": 17.054749999983446,
+          "minimumSeparationM": 0.975839013950323,
+          "collectionEasternExtentM": -0.5516282560991306,
+          "collectionSegments": [
+            "817afabb6301e24b6fb56cd717218e433e545e74a2e39085ed9332520e8d92cd",
+            "2ed46aa5ffd94692c5012c959d53b293db889863deedd9d547ee2d1f2d5822a1"
+          ],
+          "checkedThroughS": 29.23025000000468
+        }
+      ],
+      "seatS": 17.780250000001487,
+      "stationS": 23.389249999988415,
+      "sweptRobot": {
+        "piece": "blue-wing-outer",
+        "fieldSha256": "4b44f149634e99602ab886ae6e2a5df65a38d35d8b9614133119d30f05331e50",
+        "massBinding": {
+          "r7MassCase": "nominal",
+          "massBudgetSha256": "9d8c37fa140ba33fdb7fddb056eca9ef24f91f488e9ea8c99c6b448ae788bbe0"
+        },
+        "envelopes": 659,
+        "stockOccurrenceIndices": {
+          "middle": [
+            5387
+          ],
+          "outer": [
+            5388
+          ],
+          "inner": [
+            5389
+          ],
+          "center-high": [
+            5384
+          ],
+          "center-mid": [
+            5381,
+            5385
+          ],
+          "center-low": [
+            5373,
+            5382,
+            5386
+          ]
+        },
+        "westernExtentM": 0.7878482208580206,
+        "traces": [
+          "edea99591ecda37593257c4e7b6c7c127da921f71bd27769fe7a2f5b370ed30d",
+          "c3060b76d10411ff3bc65e5254f303911aa05a0e2efe03e66e9e335e8c8aecc9",
+          "cbcac161ee13ca2a89a44deded2ab9ac2c9ebac8e75877682420f2656724349c"
+        ],
+        "candidatePairs": [],
+        "begin": 10.446249999998848,
+        "end": 24.230250000016333,
+        "intervals": 42706,
+        "unresolvedIntervals": 0,
+        "firstUnresolved": null,
+        "minimumReportedAxisGapM": 0.05227537142834071
+      },
+      "releasedNote": {
+        "intervals": 50000,
+        "unresolvedIntervals": 0,
+        "firstUnresolved": null,
+        "minimumCertifiedGapMm": 56.86563942170096,
+        "environment": {
+          "minimumOtherNoteGapM": 2.251009863540984,
+          "otherFieldEnvelopeOverlaps": 0
+        },
+        "field": "1710e08e0cb0eb3009fb8198e3e23059aaffede1c9f3190ce27f38aa8ce1051c",
+        "robot": "a207389cc76af4da69961449267a4fd8d3450974f78d2699533526fbcd47ee28",
+        "installedField": "4b44f149634e99602ab886ae6e2a5df65a38d35d8b9614133119d30f05331e50"
+      }
+    },
+    {
+      "piece": "blue-wing-inner",
+      "native": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+      "shot": "d9e48e77e7a006e970d05a0615ec77b1033de4f03789224ab0c5a9a6f2818c8f",
+      "field": "811c50f9a689c2f53faad6d97d36f8eb6ceabf1766b1a82e4a2325932c02761f",
+      "releaseS": 40.9792500000647,
+      "openingS": 41.11805000006931,
+      "pairTimesS": [
+        44.668250000187165,
+        44.559250000183546
+      ],
+      "scoreS": 44.668250000187165,
+      "priorOccupancy": [
+        {
+          "piece": "blue-wing-middle",
+          "clearByS": 17.054749999983446,
+          "minimumSeparationM": 0.9770000083586583,
+          "collectionEasternExtentM": -0.5516282560991306,
+          "collectionSegments": [
+            "817afabb6301e24b6fb56cd717218e433e545e74a2e39085ed9332520e8d92cd",
+            "2ed46aa5ffd94692c5012c959d53b293db889863deedd9d547ee2d1f2d5822a1",
+            "39e4d045a8043fdddf326d359a5aee4cdde9fd9018622c9b8e95c7d129ddbf46"
+          ],
+          "checkedThroughS": 45.979250000230685
+        },
+        {
+          "piece": "blue-wing-outer",
+          "clearByS": 31.62025000001073,
+          "minimumSeparationM": 0.9767273932129765,
+          "collectionEasternExtentM": -0.4334279890336523,
+          "collectionSegments": [
+            "1710e08e0cb0eb3009fb8198e3e23059aaffede1c9f3190ce27f38aa8ce1051c",
+            "52a2c36bcbebecf124b813d5fb783ef99e85f5a82f6cac82adb573f067e92242"
+          ],
+          "checkedThroughS": 45.979250000230685
+        }
+      ],
+      "seatS": 32.43225000000029,
+      "stationS": 40.14875000003713,
+      "sweptRobot": {
+        "piece": "blue-wing-inner",
+        "fieldSha256": "4b44f149634e99602ab886ae6e2a5df65a38d35d8b9614133119d30f05331e50",
+        "massBinding": {
+          "r7MassCase": "nominal",
+          "massBudgetSha256": "9d8c37fa140ba33fdb7fddb056eca9ef24f91f488e9ea8c99c6b448ae788bbe0"
+        },
+        "envelopes": 659,
+        "stockOccurrenceIndices": {
+          "middle": [
+            5387
+          ],
+          "outer": [
+            5388
+          ],
+          "inner": [
+            5389
+          ],
+          "center-high": [
+            5384
+          ],
+          "center-mid": [
+            5381,
+            5385
+          ],
+          "center-low": [
+            5373,
+            5382,
+            5386
+          ]
+        },
+        "westernExtentM": 0.7908203381002492,
+        "traces": [
+          "a207389cc76af4da69961449267a4fd8d3450974f78d2699533526fbcd47ee28",
+          "7c2f9e4141f5e8bda915aebbf28d95f2e8299448d3f263fc77c0022b820705bc",
+          "d9e48e77e7a006e970d05a0615ec77b1033de4f03789224ab0c5a9a6f2818c8f"
+        ],
+        "candidatePairs": [
+          {
+            "robot": "moving NOTE",
+            "field": "FE-2024/GE-24200_Blue/GE-24210/FE-01021/FE-01020/FE-01020-01",
+            "firstS": 30.81775000000098
+          },
+          {
+            "robot": "Front right full module azimuth envelope",
+            "field": "FE-2024/GE-24200_Blue/GE-24210/FE-01021/FE-01020/FE-01020-01",
+            "firstS": 31.673249999998987
+          },
+          {
+            "robot": "Front right full module azimuth envelope",
+            "field": "FE-2024/GE-24200_Blue/GE-24210/FE-01021/Hook_4_24",
+            "firstS": 31.673249999998987
+          },
+          {
+            "robot": "Front left full module azimuth envelope",
+            "field": "FE-2024/GE-24200_Blue/GE-24210/FE-01021/FE-01020/FE-01020-01",
+            "firstS": 31.675249999998982
+          },
+          {
+            "robot": "Front left full module azimuth envelope",
+            "field": "FE-2024/GE-24200_Blue/GE-24210/FE-01021/Hook_4_24",
+            "firstS": 31.675249999998982
+          }
+        ],
+        "begin": 24.230250000016333,
+        "end": 40.9792500000647,
+        "intervals": 48447,
+        "unresolvedIntervals": 5170,
+        "firstUnresolved": {
+          "t": 30.81775000000098,
+          "pairs": [
+            [
+              "moving NOTE",
+              "FE-2024/GE-24200_Blue/GE-24210/FE-01021/FE-01020/FE-01020-01"
+            ]
+          ]
+        },
+        "minimumReportedAxisGapM": 5.489451969387105e-05
+      },
+      "releasedNote": {
+        "intervals": 50000,
+        "unresolvedIntervals": 0,
+        "firstUnresolved": null,
+        "minimumCertifiedGapMm": 57.701550054147106,
+        "environment": {
+          "minimumOtherNoteGapM": 7.017071286590222,
+          "otherFieldEnvelopeOverlaps": 0
+        },
+        "field": "811c50f9a689c2f53faad6d97d36f8eb6ceabf1766b1a82e4a2325932c02761f",
+        "robot": "3db50ee32b2092a2815ea6f46e4b31f6e3aacabcb7b984d70d23980b23f36cb5",
+        "installedField": "4b44f149634e99602ab886ae6e2a5df65a38d35d8b9614133119d30f05331e50"
+      }
+    },
+    {
+      "piece": "center-high",
+      "native": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+      "shot": "07c7dca3eea1f3060d45202dd9a35bf516d122b8967d465f9e0e0cd8a412d1ea",
+      "field": "050cfdb30ad9c105bc2435522950fc5484438450d4dda7f8b1e0a9e1e635660d",
+      "releaseS": 65.3268000002063,
+      "openingS": 65.46670000021095,
+      "pairTimesS": [
+        67.73180000028614,
+        67.6220000002825
+      ],
+      "scoreS": 67.73180000028614,
+      "priorOccupancy": [
+        {
+          "piece": "blue-wing-middle",
+          "clearByS": 17.054749999983446,
+          "minimumSeparationM": 0.9755302944981579,
+          "collectionEasternExtentM": -0.5516282560991306,
+          "collectionSegments": [
+            "817afabb6301e24b6fb56cd717218e433e545e74a2e39085ed9332520e8d92cd",
+            "2ed46aa5ffd94692c5012c959d53b293db889863deedd9d547ee2d1f2d5822a1",
+            "39e4d045a8043fdddf326d359a5aee4cdde9fd9018622c9b8e95c7d129ddbf46",
+            "826c45e89c5c45d025cd5a13736d4b7e12cb16e3e672b7344e51656225d8eafc"
+          ],
+          "checkedThroughS": 70.32680000037229
+        },
+        {
+          "piece": "blue-wing-outer",
+          "clearByS": 31.62025000001073,
+          "minimumSeparationM": 0.9865946006743544,
+          "collectionEasternExtentM": -0.4334279890336523,
+          "collectionSegments": [
+            "1710e08e0cb0eb3009fb8198e3e23059aaffede1c9f3190ce27f38aa8ce1051c",
+            "52a2c36bcbebecf124b813d5fb783ef99e85f5a82f6cac82adb573f067e92242",
+            "72697bcb2b068e8925b9d0999ce81d2de035c12341f1448971670394a807f567"
+          ],
+          "checkedThroughS": 70.32680000037229
+        },
+        {
+          "piece": "blue-wing-inner",
+          "clearByS": 48.449750000146715,
+          "minimumSeparationM": 0.9718318529915568,
+          "collectionEasternExtentM": -0.4453474390659624,
+          "collectionSegments": [
+            "811c50f9a689c2f53faad6d97d36f8eb6ceabf1766b1a82e4a2325932c02761f",
+            "e469da534c3cce64d8dd62c1df56d502274d56c293be3ec2c4811b614248dfff"
+          ],
+          "checkedThroughS": 70.32680000037229
+        }
+      ],
+      "seatS": 53.319750000123626,
+      "stationS": 64.43475000017669,
+      "sweptRobot": {
+        "piece": "center-high",
+        "fieldSha256": "4b44f149634e99602ab886ae6e2a5df65a38d35d8b9614133119d30f05331e50",
+        "massBinding": {
+          "r7MassCase": "nominal",
+          "massBudgetSha256": "9d8c37fa140ba33fdb7fddb056eca9ef24f91f488e9ea8c99c6b448ae788bbe0"
+        },
+        "envelopes": 659,
+        "stockOccurrenceIndices": {
+          "middle": [
+            5387
+          ],
+          "outer": [
+            5388
+          ],
+          "inner": [
+            5389
+          ],
+          "center-high": [
+            5384
+          ],
+          "center-mid": [
+            5381,
+            5385
+          ],
+          "center-low": [
+            5373,
+            5382,
+            5386
+          ]
+        },
+        "westernExtentM": 0.7917168852106822,
+        "traces": [
+          "3db50ee32b2092a2815ea6f46e4b31f6e3aacabcb7b984d70d23980b23f36cb5",
+          "3257f2e31c070cc0cf9b3e27b00f3edc93fe63a92988495eba6caf751d1e1ccc",
+          "07c7dca3eea1f3060d45202dd9a35bf516d122b8967d465f9e0e0cd8a412d1ea"
+        ],
+        "candidatePairs": [],
+        "begin": 40.9792500000647,
+        "end": 65.3268000002063,
+        "intervals": 64752,
+        "unresolvedIntervals": 0,
+        "firstUnresolved": null,
+        "minimumReportedAxisGapM": 0.01881451277814916
+      },
+      "releasedNote": {
+        "intervals": 50000,
+        "unresolvedIntervals": 0,
+        "firstUnresolved": null,
+        "minimumCertifiedGapMm": 39.185522040392186,
+        "environment": {
+          "minimumOtherNoteGapM": 7.015809933375883,
+          "otherFieldEnvelopeOverlaps": 0
+        },
+        "field": "050cfdb30ad9c105bc2435522950fc5484438450d4dda7f8b1e0a9e1e635660d",
+        "robot": "725786d4e3887f40fd9f4ebaae9f606bc698e2ec3c4d310446d199572fc079be",
+        "installedField": "4b44f149634e99602ab886ae6e2a5df65a38d35d8b9614133119d30f05331e50"
+      }
+    },
+    {
+      "piece": "center-mid",
+      "native": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+      "shot": "5076f5c52240df544fb46ebbcc0abccdd2b947546baa853f79f89465f3678a76",
+      "field": "3117684cf7567b9d47a8370a87b3dcfb2f73da937665eec4e29b494a18c4e651",
+      "releaseS": 90.82325000035426,
+      "openingS": 90.97075000035916,
+      "pairTimesS": [
+        93.04895000042815,
+        93.02995000042752
+      ],
+      "scoreS": 93.04895000042815,
+      "priorOccupancy": [
+        {
+          "piece": "blue-wing-middle",
+          "clearByS": 17.054749999983446,
+          "minimumSeparationM": 0.4247307679400185,
+          "collectionEasternExtentM": -0.5516282560991306,
+          "collectionSegments": [
+            "817afabb6301e24b6fb56cd717218e433e545e74a2e39085ed9332520e8d92cd",
+            "2ed46aa5ffd94692c5012c959d53b293db889863deedd9d547ee2d1f2d5822a1",
+            "39e4d045a8043fdddf326d359a5aee4cdde9fd9018622c9b8e95c7d129ddbf46",
+            "826c45e89c5c45d025cd5a13736d4b7e12cb16e3e672b7344e51656225d8eafc",
+            "658a14c793a24e9a1fc7b391b841299a1868319f8ccd8a16bc898ee03f9b8254"
+          ],
+          "checkedThroughS": 94.17325000046547
+        },
+        {
+          "piece": "blue-wing-outer",
+          "clearByS": 31.62025000001073,
+          "minimumSeparationM": 0.527781932778563,
+          "collectionEasternExtentM": -0.4334279890336523,
+          "collectionSegments": [
+            "1710e08e0cb0eb3009fb8198e3e23059aaffede1c9f3190ce27f38aa8ce1051c",
+            "52a2c36bcbebecf124b813d5fb783ef99e85f5a82f6cac82adb573f067e92242",
+            "72697bcb2b068e8925b9d0999ce81d2de035c12341f1448971670394a807f567",
+            "82767eaf16766748cc5c2ef63b6492861a98e37a99b6e7f9b1695dc45c5187f1"
+          ],
+          "checkedThroughS": 94.17325000046547
+        },
+        {
+          "piece": "blue-wing-inner",
+          "clearByS": 48.449750000146715,
+          "minimumSeparationM": 0.5709384415749892,
+          "collectionEasternExtentM": -0.4166936535948933,
+          "collectionSegments": [
+            "811c50f9a689c2f53faad6d97d36f8eb6ceabf1766b1a82e4a2325932c02761f",
+            "e469da534c3cce64d8dd62c1df56d502274d56c293be3ec2c4811b614248dfff",
+            "668374a95ca82186a1703fdbe5754b1ce6bd5ab88339a777552577208e1ebfb9"
+          ],
+          "checkedThroughS": 94.17325000046547
+        },
+        {
+          "piece": "center-high",
+          "clearByS": 71.25870000023724,
+          "minimumSeparationM": 0.4432213434252935,
+          "collectionEasternExtentM": -0.5017583278659943,
+          "collectionSegments": [
+            "050cfdb30ad9c105bc2435522950fc5484438450d4dda7f8b1e0a9e1e635660d",
+            "17e2ab2c5d8a5e6ef2f63dd2d8dfa90b619a0f98d58472f6d62b694690a5778a"
+          ],
+          "checkedThroughS": 94.17325000046547
+        }
+      ],
+      "seatS": 78.59780000026967,
+      "stationS": 89.90080000032364,
+      "sweptRobot": {
+        "piece": "center-mid",
+        "fieldSha256": "4b44f149634e99602ab886ae6e2a5df65a38d35d8b9614133119d30f05331e50",
+        "massBinding": {
+          "r7MassCase": "nominal",
+          "massBudgetSha256": "9d8c37fa140ba33fdb7fddb056eca9ef24f91f488e9ea8c99c6b448ae788bbe0"
+        },
+        "envelopes": 659,
+        "stockOccurrenceIndices": {
+          "middle": [
+            5387
+          ],
+          "outer": [
+            5388
+          ],
+          "inner": [
+            5389
+          ],
+          "center-high": [
+            5384
+          ],
+          "center-mid": [
+            5381,
+            5385
+          ],
+          "center-low": [
+            5373,
+            5382,
+            5386
+          ]
+        },
+        "westernExtentM": 0.8039100589299037,
+        "traces": [
+          "725786d4e3887f40fd9f4ebaae9f606bc698e2ec3c4d310446d199572fc079be",
+          "029e38c3e20ea3b9b6bb398f4e93714442549c9b5a7830b74b27a872cd9fb4cc",
+          "5076f5c52240df544fb46ebbcc0abccdd2b947546baa853f79f89465f3678a76"
+        ],
+        "candidatePairs": [],
+        "begin": 65.3268000002063,
+        "end": 90.82325000035426,
+        "intervals": 67597,
+        "unresolvedIntervals": 0,
+        "firstUnresolved": null,
+        "minimumReportedAxisGapM": 0.0043792259823938195
+      },
+      "releasedNote": {
+        "intervals": 33500,
+        "unresolvedIntervals": 0,
+        "firstUnresolved": null,
+        "minimumCertifiedGapMm": 34.8602692241966,
+        "environment": {
+          "minimumOtherNoteGapM": 7.140484111730927,
+          "otherFieldEnvelopeOverlaps": 0
+        },
+        "field": "3117684cf7567b9d47a8370a87b3dcfb2f73da937665eec4e29b494a18c4e651",
+        "robot": "183119df9875aaef7786255a76bb3ef841e30fb55dc21a1232de055190ff3646",
+        "installedField": "4b44f149634e99602ab886ae6e2a5df65a38d35d8b9614133119d30f05331e50"
+      }
+    },
+    {
+      "piece": "center-low",
+      "native": "0db7b7df1ad6ecfae4f7185c6a5c36279711d8db643bfb5ac6a9031034c50517",
+      "shot": "f6dcef8809964d9e2e9f9f7407200850a81d3b59ab9b79e402c66b8671bdefc3",
+      "field": "d06e6ef9cf49c491f8f37038d341834093abf25a081af4442e29ac9875f978cc",
+      "releaseS": 114.97265000049522,
+      "openingS": 115.11725000050002,
+      "pairTimesS": [
+        117.75605000058762,
+        117.64025000058378
+      ],
+      "scoreS": 117.75605000058762,
+      "priorOccupancy": [
+        {
+          "piece": "blue-wing-middle",
+          "clearByS": 17.054749999983446,
+          "minimumSeparationM": 0.9819381923298134,
+          "collectionEasternExtentM": -0.5516282560991306,
+          "collectionSegments": [
+            "817afabb6301e24b6fb56cd717218e433e545e74a2e39085ed9332520e8d92cd",
+            "2ed46aa5ffd94692c5012c959d53b293db889863deedd9d547ee2d1f2d5822a1",
+            "39e4d045a8043fdddf326d359a5aee4cdde9fd9018622c9b8e95c7d129ddbf46",
+            "826c45e89c5c45d025cd5a13736d4b7e12cb16e3e672b7344e51656225d8eafc",
+            "658a14c793a24e9a1fc7b391b841299a1868319f8ccd8a16bc898ee03f9b8254",
+            "bcc126d2021a1f78bba2eec2cf6cdf3543ba09e197b563634dc198a25efdb24c"
+          ],
+          "checkedThroughS": 117.75605000058762
+        },
+        {
+          "piece": "blue-wing-outer",
+          "clearByS": 31.62025000001073,
+          "minimumSeparationM": 0.9877750566495473,
+          "collectionEasternExtentM": -0.40893986080036615,
+          "collectionSegments": [
+            "1710e08e0cb0eb3009fb8198e3e23059aaffede1c9f3190ce27f38aa8ce1051c",
+            "52a2c36bcbebecf124b813d5fb783ef99e85f5a82f6cac82adb573f067e92242",
+            "72697bcb2b068e8925b9d0999ce81d2de035c12341f1448971670394a807f567",
+            "82767eaf16766748cc5c2ef63b6492861a98e37a99b6e7f9b1695dc45c5187f1",
+            "9192db6f312909597cf6a80d5157cdcb175724e78cfd5d62b1489c860455d588"
+          ],
+          "checkedThroughS": 117.75605000058762
+        },
+        {
+          "piece": "blue-wing-inner",
+          "clearByS": 48.449750000146715,
+          "minimumSeparationM": 0.990901546623274,
+          "collectionEasternExtentM": -0.3753856526906373,
+          "collectionSegments": [
+            "811c50f9a689c2f53faad6d97d36f8eb6ceabf1766b1a82e4a2325932c02761f",
+            "e469da534c3cce64d8dd62c1df56d502274d56c293be3ec2c4811b614248dfff",
+            "668374a95ca82186a1703fdbe5754b1ce6bd5ab88339a777552577208e1ebfb9",
+            "6469a0dacc42ec5aabdc6d72ee1f7ed741d876881e5bfd1dd4ff224a70c25858"
+          ],
+          "checkedThroughS": 117.75605000058762
+        },
+        {
+          "piece": "center-high",
+          "clearByS": 71.25870000023724,
+          "minimumSeparationM": 0.9663537927483545,
+          "collectionEasternExtentM": -0.5017583278659943,
+          "collectionSegments": [
+            "050cfdb30ad9c105bc2435522950fc5484438450d4dda7f8b1e0a9e1e635660d",
+            "17e2ab2c5d8a5e6ef2f63dd2d8dfa90b619a0f98d58472f6d62b694690a5778a",
+            "37b1371dfcd8cb2dc8c5ff10949eddc69796252c0be8eeacbdd06c427109b6c7"
+          ],
+          "checkedThroughS": 117.75605000058762
+        },
+        {
+          "piece": "center-mid",
+          "clearByS": 93.2132500004336,
+          "minimumSeparationM": 0.9333045595924594,
+          "collectionEasternExtentM": -0.4959916457826524,
+          "collectionSegments": [
+            "3117684cf7567b9d47a8370a87b3dcfb2f73da937665eec4e29b494a18c4e651",
+            "562152401b7002c02e3eb0486663d133228c2a351c10899c7775cf1cb9798f39"
+          ],
+          "checkedThroughS": 117.75605000058762
+        }
+      ],
+      "seatS": 101.7627500004065,
+      "stationS": 114.07025000046526,
+      "sweptRobot": {
+        "piece": "center-low",
+        "fieldSha256": "4b44f149634e99602ab886ae6e2a5df65a38d35d8b9614133119d30f05331e50",
+        "massBinding": {
+          "r7MassCase": "nominal",
+          "massBudgetSha256": "9d8c37fa140ba33fdb7fddb056eca9ef24f91f488e9ea8c99c6b448ae788bbe0"
+        },
+        "envelopes": 659,
+        "stockOccurrenceIndices": {
+          "middle": [
+            5387
+          ],
+          "outer": [
+            5388
+          ],
+          "inner": [
+            5389
+          ],
+          "center-high": [
+            5384
+          ],
+          "center-mid": [
+            5381,
+            5385
+          ],
+          "center-low": [
+            5373,
+            5382,
+            5386
+          ]
+        },
+        "westernExtentM": 0.7968447538839805,
+        "traces": [
+          "183119df9875aaef7786255a76bb3ef841e30fb55dc21a1232de055190ff3646",
+          "ee05c1aa807e57c08c7247568caf0dfc6a38bf38d928a14b1a92936fd9784197",
+          "f6dcef8809964d9e2e9f9f7407200850a81d3b59ab9b79e402c66b8671bdefc3"
+        ],
+        "candidatePairs": [],
+        "begin": 90.82325000035426,
+        "end": 114.97265000049522,
+        "intervals": 64542,
+        "unresolvedIntervals": 0,
+        "firstUnresolved": null,
+        "minimumReportedAxisGapM": 0.04446700798246361
+      },
+      "releasedNote": {
+        "intervals": 50000,
+        "unresolvedIntervals": 0,
+        "firstUnresolved": null,
+        "minimumCertifiedGapMm": 38.162907679056104,
+        "environment": {
+          "minimumOtherNoteGapM": null,
+          "otherFieldEnvelopeOverlaps": 0,
+          "remainingFloorNotes": []
+        },
+        "field": "d06e6ef9cf49c491f8f37038d341834093abf25a081af4442e29ac9875f978cc",
+        "robot": "32d3610ee98e9be463ae37d27bb593a5e4458ef2d4b0f8e16f656f5d5b945d6b",
+        "installedField": "4b44f149634e99602ab886ae6e2a5df65a38d35d8b9614133119d30f05331e50"
+      }
+    }
+  ],
+  "coupledCollections": [
+    {
+      "sha256": "3d2ebfe1829c1e8949362c94f0d370d030dbcf808776898e5cb77898ffe385bf",
+      "schema": "coupled-note-collection/1",
+      "shots": [
+        "5ab813567918ae00bf79401e9c263097de4ce20bf2a414741b98b4e3d4412c1a",
+        "cbcac161ee13ca2a89a44deded2ab9ac2c9ebac8e75877682420f2656724349c"
+      ],
+      "traces": [
+        "39e4d045a8043fdddf326d359a5aee4cdde9fd9018622c9b8e95c7d129ddbf46",
+        "52a2c36bcbebecf124b813d5fb783ef99e85f5a82f6cac82adb573f067e92242"
+      ],
+      "inputs": [
+        "2ed46aa5ffd94692c5012c959d53b293db889863deedd9d547ee2d1f2d5822a1",
+        "1710e08e0cb0eb3009fb8198e3e23059aaffede1c9f3190ce27f38aa8ce1051c"
+      ],
+      "start": 29.2302500000163,
+      "end": 45.9792500000647,
+      "firstPairContactS": {
+        "0-1": 32.18345000001594
+      },
+      "maximumPairIndentationM": 0.002283990935635992,
+      "solver": "c52e659fbdeaf384f90b53fbb8c73b8600ac91da8e15bcc1b64fe9e87623063e"
+    },
+    {
+      "sha256": "21cf6105918624b4eb03dd3594c600ebe283103dc136511f8b4ab278440e7cab",
+      "schema": "coupled-note-collection/1",
+      "shots": [
+        "5ab813567918ae00bf79401e9c263097de4ce20bf2a414741b98b4e3d4412c1a",
+        "cbcac161ee13ca2a89a44deded2ab9ac2c9ebac8e75877682420f2656724349c",
+        "d9e48e77e7a006e970d05a0615ec77b1033de4f03789224ab0c5a9a6f2818c8f"
+      ],
+      "traces": [
+        "826c45e89c5c45d025cd5a13736d4b7e12cb16e3e672b7344e51656225d8eafc",
+        "72697bcb2b068e8925b9d0999ce81d2de035c12341f1448971670394a807f567",
+        "e469da534c3cce64d8dd62c1df56d502274d56c293be3ec2c4811b614248dfff"
+      ],
+      "inputs": [
+        "39e4d045a8043fdddf326d359a5aee4cdde9fd9018622c9b8e95c7d129ddbf46",
+        "52a2c36bcbebecf124b813d5fb783ef99e85f5a82f6cac82adb573f067e92242",
+        "811c50f9a689c2f53faad6d97d36f8eb6ceabf1766b1a82e4a2325932c02761f"
+      ],
+      "start": 45.9792500000647,
+      "end": 70.3268000002063,
+      "firstPairContactS": {
+        "1-2": 49.0156500001655
+      },
+      "maximumPairIndentationM": 0.004151241626227736,
+      "solver": "c52e659fbdeaf384f90b53fbb8c73b8600ac91da8e15bcc1b64fe9e87623063e"
+    },
+    {
+      "sha256": "fb5fdfcb0be8a1236f37dfb6272297c47f58f3738286590dbefcfaee1c7eef9e",
+      "schema": "coupled-note-collection/1",
+      "shots": [
+        "5ab813567918ae00bf79401e9c263097de4ce20bf2a414741b98b4e3d4412c1a",
+        "cbcac161ee13ca2a89a44deded2ab9ac2c9ebac8e75877682420f2656724349c",
+        "d9e48e77e7a006e970d05a0615ec77b1033de4f03789224ab0c5a9a6f2818c8f",
+        "07c7dca3eea1f3060d45202dd9a35bf516d122b8967d465f9e0e0cd8a412d1ea"
+      ],
+      "traces": [
+        "658a14c793a24e9a1fc7b391b841299a1868319f8ccd8a16bc898ee03f9b8254",
+        "82767eaf16766748cc5c2ef63b6492861a98e37a99b6e7f9b1695dc45c5187f1",
+        "668374a95ca82186a1703fdbe5754b1ce6bd5ab88339a777552577208e1ebfb9",
+        "17e2ab2c5d8a5e6ef2f63dd2d8dfa90b619a0f98d58472f6d62b694690a5778a"
+      ],
+      "inputs": [
+        "826c45e89c5c45d025cd5a13736d4b7e12cb16e3e672b7344e51656225d8eafc",
+        "72697bcb2b068e8925b9d0999ce81d2de035c12341f1448971670394a807f567",
+        "e469da534c3cce64d8dd62c1df56d502274d56c293be3ec2c4811b614248dfff",
+        "050cfdb30ad9c105bc2435522950fc5484438450d4dda7f8b1e0a9e1e635660d"
+      ],
+      "start": 70.3268000002063,
+      "end": 94.173250000465,
+      "firstPairContactS": {
+        "2-3": 71.82000000025587,
+        "1-3": 71.823600000256,
+        "0-3": 79.17120000049991
+      },
+      "maximumPairIndentationM": 0.004530904729374438,
+      "solver": "c52e659fbdeaf384f90b53fbb8c73b8600ac91da8e15bcc1b64fe9e87623063e"
+    },
+    {
+      "sha256": "c47d22b0c59b535ff84577c0b7add4cf8679b949c1184c2c09f86f3378c78779",
+      "schema": "coupled-note-collection/1",
+      "shots": [
+        "5ab813567918ae00bf79401e9c263097de4ce20bf2a414741b98b4e3d4412c1a",
+        "cbcac161ee13ca2a89a44deded2ab9ac2c9ebac8e75877682420f2656724349c",
+        "d9e48e77e7a006e970d05a0615ec77b1033de4f03789224ab0c5a9a6f2818c8f",
+        "07c7dca3eea1f3060d45202dd9a35bf516d122b8967d465f9e0e0cd8a412d1ea",
+        "5076f5c52240df544fb46ebbcc0abccdd2b947546baa853f79f89465f3678a76"
+      ],
+      "traces": [
+        "bcc126d2021a1f78bba2eec2cf6cdf3543ba09e197b563634dc198a25efdb24c",
+        "9192db6f312909597cf6a80d5157cdcb175724e78cfd5d62b1489c860455d588",
+        "6469a0dacc42ec5aabdc6d72ee1f7ed741d876881e5bfd1dd4ff224a70c25858",
+        "37b1371dfcd8cb2dc8c5ff10949eddc69796252c0be8eeacbdd06c427109b6c7",
+        "562152401b7002c02e3eb0486663d133228c2a351c10899c7775cf1cb9798f39"
+      ],
+      "inputs": [
+        "658a14c793a24e9a1fc7b391b841299a1868319f8ccd8a16bc898ee03f9b8254",
+        "82767eaf16766748cc5c2ef63b6492861a98e37a99b6e7f9b1695dc45c5187f1",
+        "668374a95ca82186a1703fdbe5754b1ce6bd5ab88339a777552577208e1ebfb9",
+        "17e2ab2c5d8a5e6ef2f63dd2d8dfa90b619a0f98d58472f6d62b694690a5778a",
+        "3117684cf7567b9d47a8370a87b3dcfb2f73da937665eec4e29b494a18c4e651"
+      ],
+      "start": 94.173250000465,
+      "end": 120.0,
+      "firstPairContactS": {
+        "0-3": 94.173250000465,
+        "2-3": 94.173250000465,
+        "3-4": 94.40425000047267,
+        "1-4": 94.52155000047657,
+        "0-4": 98.99335000062501,
+        "2-4": 106.33575000086876
+      },
+      "maximumPairIndentationM": 0.0051060933093731165,
+      "solver": "c52e659fbdeaf384f90b53fbb8c73b8600ac91da8e15bcc1b64fe9e87623063e"
+    }
+  ],
+  "startingSupply": {
+    "structure": {
+      "middle": {
+        "gapM": 0.6667044996060801,
+        "fieldPath": [
+          "FE-2024",
+          "GE-24200_Blue",
+          "GE-24205",
+          "GE-24205_hanging"
+        ]
+      },
+      "outer": {
+        "gapM": 1.0195155963784632,
+        "fieldPath": [
+          "FE-2024",
+          "GE-24100_Blue Assembled",
+          "GE-24115"
+        ]
+      },
+      "inner": {
+        "gapM": 0.0006032498246026918,
+        "fieldPath": [
+          "FE-2024",
+          "GE-24200_Blue",
+          "GE-24210",
+          "FE-01021",
+          "FE-01020",
+          "FE-01020-01"
+        ]
+      },
+      "center-high": {
+        "gapM": 0.575015596378412,
+        "fieldPath": [
+          "FE-2024",
+          "FE-2024-02",
+          "FE-00010"
+        ]
+      },
+      "center-mid": {
+        "gapM": 2.064008010281027,
+        "fieldPath": [
+          "FE-2024",
+          "GE-24200_Red",
+          "GE-24210",
+          "FE-01021",
+          "FE-01020",
+          "FE-01020-01"
+        ]
+      },
+      "center-low": {
+        "gapM": 1.3207999999999998,
+        "fieldPath": [
+          "retained field stock",
+          "5379",
+          "FE-2024",
+          "GE-24500"
+        ]
+      }
+    },
+    "minimumStockPairGapM": 1.0914720254204822,
+    "clear": true,
+    "sourceStock": {
+      "middle": [
+        5387
+      ],
+      "outer": [
+        5388
+      ],
+      "inner": [
+        5389
+      ],
+      "center-high": [
+        5384
+      ],
+      "center-mid": [
+        5381,
+        5385
+      ],
+      "center-low": [
+        5373,
+        5382,
+        5386
+      ]
+    },
+    "fieldSha256": "4b44f149634e99602ab886ae6e2a5df65a38d35d8b9614133119d30f05331e50",
+    "rosterSha256": "086e11317044cb8a409dd3b53d1f116b71242caa868a11be7900985ebfe84c52"
+  },
+  "innerStagePlate": {
+    "clear": true,
+    "westPlaneM": 3.0740032498246017,
+    "maximumHeightM": 0.0026568401754191308,
+    "noteGapM": 0.009634462421750343,
+    "tireGapsM": {
+      "Front left": 0.044537904274611656,
+      "Front right": 0.044471669718185475
+    },
+    "fixedHousingGapsM": {
+      "Front left": 0.01126728674686903,
+      "Front right": 0.01119542153452888
+    },
+    "intervals": 48447,
+    "traces": [
+      "a207389cc76af4da69961449267a4fd8d3450974f78d2699533526fbcd47ee28",
+      "7c2f9e4141f5e8bda915aebbf28d95f2e8299448d3f263fc77c0022b820705bc",
+      "d9e48e77e7a006e970d05a0615ec77b1033de4f03789224ab0c5a9a6f2818c8f"
+    ],
+    "broadPhaseSha256": "69048c12b30022c678c6c49c05a53c07bd93facd3e57028c382b9888a543ed40",
+    "surveySha256": "33ae65ac867a18ace8f592648c4b182394cafa90dfd81c21fe05a876c11a61c3",
+    "fieldSha256": "4b44f149634e99602ab886ae6e2a5df65a38d35d8b9614133119d30f05331e50"
+  },
+  "bumperWall": {
+    "survey": "33ae65ac867a18ace8f592648c4b182394cafa90dfd81c21fe05a876c11a61c3",
+    "field": {
+      "panels.json": "179593289b9850e7bc88db0573088657a1143b745040c8b269a5f74ae1594d85",
+      "named-panels.npz": "fcf29b7d726ae323e52f2c76cd4ec47b9d8ad60488f99f7a1fbdc266e8c23bad",
+      "extras.json": "72f92baebb9fc8ed31cc1f6a8a2ebe50cc78eb89bf38ce3c0625336203200e06",
+      "extras.npz": "2cffcdf267edd6c490f87e099f42e706a043382a32294b6d3f52b85857d7d605"
+    },
+    "traces": [
+      "eff94eb2695fc64e43a06cdc19c491536efd57ed30d991f1e8285555d53aa6c8",
+      "b1e68d6ed7afb11de683cab0ee1177537cd9436291c5c8292aa4e7ff4ec83083",
+      "5ab813567918ae00bf79401e9c263097de4ce20bf2a414741b98b4e3d4412c1a",
+      "edea99591ecda37593257c4e7b6c7c127da921f71bd27769fe7a2f5b370ed30d",
+      "c3060b76d10411ff3bc65e5254f303911aa05a0e2efe03e66e9e335e8c8aecc9",
+      "cbcac161ee13ca2a89a44deded2ab9ac2c9ebac8e75877682420f2656724349c",
+      "a207389cc76af4da69961449267a4fd8d3450974f78d2699533526fbcd47ee28",
+      "7c2f9e4141f5e8bda915aebbf28d95f2e8299448d3f263fc77c0022b820705bc",
+      "d9e48e77e7a006e970d05a0615ec77b1033de4f03789224ab0c5a9a6f2818c8f",
+      "3db50ee32b2092a2815ea6f46e4b31f6e3aacabcb7b984d70d23980b23f36cb5",
+      "3257f2e31c070cc0cf9b3e27b00f3edc93fe63a92988495eba6caf751d1e1ccc",
+      "07c7dca3eea1f3060d45202dd9a35bf516d122b8967d465f9e0e0cd8a412d1ea",
+      "725786d4e3887f40fd9f4ebaae9f606bc698e2ec3c4d310446d199572fc079be",
+      "029e38c3e20ea3b9b6bb398f4e93714442549c9b5a7830b74b27a872cd9fb4cc",
+      "5076f5c52240df544fb46ebbcc0abccdd2b947546baa853f79f89465f3678a76",
+      "183119df9875aaef7786255a76bb3ef841e30fb55dc21a1232de055190ff3646",
+      "ee05c1aa807e57c08c7247568caf0dfc6a38bf38d928a14b1a92936fd9784197",
+      "f6dcef8809964d9e2e9f9f7407200850a81d3b59ab9b79e402c66b8671bdefc3"
+    ],
+    "beginS": 0.0,
+    "endS": 114.97265000049522,
+    "intervals": 321235,
+    "clear": true,
+    "closestBound": {
+      "axisGapM": 0.06563536622414995,
+      "part": "fixed bumper end noodle 1 0",
+      "panel": "e414",
+      "timeS": 89.58630000032214
+    },
+    "materialWitness": null
+  },
+  "finalRobotHold": {
+    "candidatePairs": [],
+    "begin": 114.97265000049522,
+    "end": 119.9726500005191,
+    "intervals": 10000,
+    "unresolvedIntervals": 0,
+    "firstUnresolved": null,
+    "minimumReportedAxisGapM": 0.07722709250068482,
+    "trace": "32d3610ee98e9be463ae37d27bb593a5e4458ef2d4b0f8e16f656f5d5b945d6b",
+    "release": "f6dcef8809964d9e2e9f9f7407200850a81d3b59ab9b79e402c66b8671bdefc3",
+    "fieldSha256": "4b44f149634e99602ab886ae6e2a5df65a38d35d8b9614133119d30f05331e50",
+    "westernExtentM": 0.8668112022709765,
+    "maximumDriftM": 0.0006317635914095233,
+    "maximumHeadingErrorRad": 0.00018615523508125342,
+    "start": 114.97265000049522
+  },
+  "collectorSeparation": {
+    "maximumPreviouslyCollectedXM": -0.3753856526906373,
+    "minimumRobotAndSupplyXM": 0.7878482208580206,
+    "lowerBoundM": 1.1632338735486578
+  },
+  "otherTrials": {
+    "previousSixth": {
+      "arrivalS": 120.70590000060712,
+      "sourceTrace": "632394448c11a3a38f79036089d4ad847440759b37f46370e4957922cd1164bc"
+    },
+    "fasterLoadedReturn": {
+      "outcome": "UNSUPPORTED_SDF_GRADIENT_TIE",
+      "endS": 116.13955000048091,
+      "trace": "25982581ea05591415452fd539cc588936e2617e3202e8b8b93427c071529a60"
+    },
+    "emptySpeedAlone": {
+      "trace": "e047bae7531d257625eb0fa9779a441ecf2d8d8126fae59783b4aab2e659df72",
+      "seatS": 104.52175000041967,
+      "sameAsPreviousPickup": true
+    }
+  },
+  "limits": "Nominal BOM input and one development start. No as-built mass or hardware acceptance, resolved light/heavy pressure boundary, or formal repeatability measurement."
+}

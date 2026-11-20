@@ -90,7 +90,7 @@ def carry_to_speaker(args, plant, result, *, route=None):
     from types import SimpleNamespace
     from wing_note_delivery import deliver, tail
     carry = SimpleNamespace(output=args.carry_output, first_mark="middle", field_yaw_deg=245.,
-                            field_station=[1.475, 5.553075, 180.], transit_speed=.85,
+                            field_station=[1.475, 5.553075, 180.], transit_speed=getattr(args, "carry_speed", .85),
                             turn_rate=.90, turn_accel=.7, lifting_drive_accel=.40,
                             via=[], final_straight=0., lookahead=0., dt=args.dt,
                             horizon=18., grid=args.grid, trace_stride=args.trace_stride)
