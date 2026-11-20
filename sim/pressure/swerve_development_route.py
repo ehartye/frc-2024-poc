@@ -20,7 +20,7 @@ def receipt(folder):
     return json.loads((folder / "result.json").read_bytes())
 
 
-def run(archive, field, attempt, output, mass_case=None, outer_feed=None, wall_approach=False):
+def run(archive, field, attempt, output, mass_case=None, outer_feed=None, wall_approach=False, final_carry_speed=.85, final_pickup_speed=None, final_lookahead=.48):
     """Use the nominal first-shot settings on every NOTE, including after a missed score."""
     settings = json.loads((HERE / "evidence/maxswerve-development-shot.json").read_bytes())["controls"]
     command = settings["commonCommand"]
@@ -39,7 +39,9 @@ def run(archive, field, attempt, output, mass_case=None, outer_feed=None, wall_a
         else:
             run_stage("swerve_next_note", "--archive", archive, "--output", pickup, "--carry-output", carry,
                       "--roster", DEVELOPMENT_STARTS, "--release", previous_release, "--pickup", previous_pickup,
-                      "--next-mark", mark)
+                      "--next-mark", mark, *(("--carry-speed", final_carry_speed) if mark == "center-low" else ()),
+                      *(("--pickup-speed", final_pickup_speed) if mark == "center-low" and final_pickup_speed is not None else ()),
+                      *(("--pickup-lookahead", final_lookahead) if mark == "center-low" else ()))
         acquisition = receipt(pickup)
         row = dict(mark=mark, acquisition=acquisition["outcome"], pickupEndS=acquisition["end"])
         records.append(row)
@@ -83,5 +85,8 @@ if __name__ == "__main__":
     parser.add_argument("--r7-mass-case", choices=("light","nominal","heavy"))
     parser.add_argument("--wall-approach", action="store_true")
     parser.add_argument("--outer-feed", type=float, help="Outer wing feed duty for a development trial")
+    parser.add_argument("--final-pickup-lookahead", type=float, default=.48, help="Unloaded center-low path lookahead in m")
+    parser.add_argument("--final-pickup-speed", type=float, help="Unloaded center-low transit speed in m/s")
+    parser.add_argument("--final-carry-speed", type=float, default=.85, help="Loaded center-low transit speed in m/s")
     args = parser.parse_args()
-    run(args.archive, args.field, args.attempt, args.output, args.r7_mass_case, args.outer_feed, args.wall_approach)
+    run(args.archive, args.field, args.attempt, args.output, args.r7_mass_case, args.outer_feed, args.wall_approach, args.final_carry_speed, args.final_pickup_speed, args.final_pickup_lookahead)

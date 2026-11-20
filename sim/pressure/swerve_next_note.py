@@ -47,6 +47,12 @@ class SwerveReturn(SwervePickup):
 
 
 def run(args):
+    if not math.isfinite(args.pickup_lookahead) or args.pickup_lookahead <= 0:
+        raise ValueError("Pickup lookahead must be positive and finite")
+    if args.pickup_speed is not None and (not math.isfinite(args.pickup_speed) or args.pickup_speed <= 0):
+        raise ValueError("Pickup transit speed must be positive and finite")
+    if not math.isfinite(args.carry_speed) or args.carry_speed <= 0:
+        raise ValueError("Carry speed must be positive and finite")
     source = load(args.release/"result.json")
     floor = load(args.pickup/"result.json")
     from r7_dynamics import verify_binding
@@ -99,14 +105,14 @@ def run(args):
         direction = FRAME.rotation[:2,:2].T[:,0]
     plant.pickup_heading = math.atan2(direction[1],direction[0])
     plant.staging_xy = mark - .85*direction/np.linalg.norm(direction)
-    plant.pickup_path = (TransitPath([d.qpos[:2].copy(), *waypoints, plant.staging_xy], .48)
+    plant.pickup_path = (TransitPath([d.qpos[:2].copy(), *waypoints, plant.staging_xy], args.pickup_lookahead)
                          if waypoints else None)
     plant.wall_approach = source.get("routePolicy") == "straight-wall-approach/1"
     plant.wall_departed = False
     plant.approach_complete = False
     plant.capture_speed = .26
     # Recover time spent backing clear of the Stage and the Speaker before turning.
-    plant.transit_speed = 1.30 if plant.wall_approach and args.next_mark in ("center-mid", "center-low") else 1.1
+    plant.transit_speed = args.pickup_speed or (1.30 if plant.wall_approach and args.next_mark in ("center-mid", "center-low") else 1.1)
     result = dict(**mass_binding, schema="maxswerve-next-wing-acquisition/1",drivetrain="maxswerve",runtime=runtime_versions(),
                   layoutSha256=digest(LAYOUT),nativeSha256=source["nativeSha256"],firstReleaseTrace=source["traceSha256"],
                   pieceId=piece_id(args.next_mark),attempt=source["attempt"],rosterSha256=source["rosterSha256"],
@@ -114,10 +120,14 @@ def run(args):
                   targetLocalXY=mark.tolist(),waitingNoteLocalXY=physical.tolist(),initialQ=d.qpos.tolist(),
                   initialV=d.qvel.tolist(),initialRotors=plant.rotors.tolist(),initialShearM=plant.shear.tolist(),
                   initialBusV=plant.bus,initialSourceJ=plant.source_work,traceStride=args.trace_stride)
+    if args.pickup_speed is not None:
+        result["transitSpeedMps"] = args.pickup_speed
     if plant.wall_approach:
         result["routePolicy"] = source["routePolicy"]
     if route:
         result["viaFieldXY"] = via
+        if args.pickup_lookahead != .48:
+            result["pickupLookaheadM"] = args.pickup_lookahead
     result.update(advance_pickup(args,plant))
     result["collectedMarks"] = collected+[args.next_mark] if result["outcome"] == "SEATED" else collected
     (args.output/"result.json").write_text(json.dumps(result,indent=2,allow_nan=False)+"\n")
@@ -132,6 +142,9 @@ if __name__ == "__main__":
         parser.add_argument("--"+name,type=Path,required=True)
     parser.add_argument("--next-mark",choices=MARKS,required=True)
     parser.add_argument("--carry-output",type=Path)
+    parser.add_argument("--pickup-lookahead", type=float, default=.48, help="Transit path lookahead in m")
+    parser.add_argument("--pickup-speed", type=float, help="Unloaded transit speed in m/s")
+    parser.add_argument("--carry-speed", type=float, default=.85, help="Loaded transit speed in m/s")
     parser.add_argument("--dt",type=float,choices=(.00025,.0005),default=.0005)
     parser.add_argument("--grid",type=int,choices=(256,512,1024),default=512)
     parser.set_defaults(horizon=18.,trace_stride=1)
