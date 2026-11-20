@@ -107,6 +107,11 @@ def review(bracket_path, controller_path, folder):
         for sign in (-1, 1):
             lo, hi = sorted((x + sign * 40.625, x + sign * 75.625))
             check(f"end withdrawal {i}.{sign}", box(lo, y - 15.0, 2.0, hi, y + 15.0, 18.0))
+            # The accessory sockets sit in the upper end face above the
+            # barrel exits. Reserve the approach to the case, including those
+            # 6 mm omitted by a gauge that starts only at the barrel tips.
+            a, b = sorted((x + sign * 34.625, x + sign * 75.625))
+            check(f"upper end face {i}.{sign}", box(a, y - 17.25, 12.0, b, y + 17.25, 30.0))
         check(f"overhead {i}", box(x - 41, y - 30.3, 30.1, x + 41, y + 30.3, 55.1))
     nearest_bracket = separation(articles["bracket 1"], articles["bracket 2"])
     end_free = separation(articles["controller 1"], articles["controller 3"])
