@@ -10,9 +10,9 @@ The nominal R7 collected six distinct floor NOTES and reached the shared counter
 
 [Download the student R7 Fusion assembly](https://raw.githubusercontent.com/ehartye/frc-2024-poc/main/cad/student/r7-maxswerve.f3d) · [Fusion joints and native handoff](cad/native-handoff.md) · [Play the R7 nominal-mass pickup and shot](https://ehartye.github.io/frc-2024-poc/?view=r7-budget#model) · [Six-NOTE mission results](experiments/speaker-cycles/mission.md)
 
-[Follow the 2024 Agent FRC workflow](docs/workflow.md) from the season rules and alliance roles to the native assembly, scoring trials and published replay. [Open the field lab and play three matches at 10×](https://ehartye.github.io/frc-2024-poc/field-lab.html#rehearsal).
+[Follow the 2024 Agent FRC workflow](docs/workflow.md) from the season rules and alliance roles to the native assembly, scoring trials and published replay. [Open the field lab and play three matches at 10×](https://ehartye.github.io/frc-2024-poc/field-lab.html#rehearsal). [Replay the historical A2 and pressure campaigns](experiments/a2-campaign/CAMPAIGN.md).
 
-The [historical case input manifest](historical-fixtures/agent-frc/manifest.json) identifies source-pinned simulation parameters, original geometry and prior analysis from the earlier plugin case. Inputs labeled as excerpts have a new schema and retain their source hash. The manifest records identical existing files and the original revision of the shared producers.
+The [historical case input manifest](experiments/a2-campaign/historical-fixtures/agent-frc/manifest.json) identifies source-pinned simulation parameters, original geometry and prior analysis from the earlier plugin case. Inputs labeled as excerpts have a new schema and retain their source hash. The manifest records identical existing files and the original revision of the shared producers.
 
 **Strategy-first editable CAD, with retained simulation experiments.** The current component assembly is a design candidate. The runnable legacy A2 cycle below uses earlier geometry and does not validate this newer robot.
 
@@ -31,11 +31,11 @@ This repository is a **reviewed research checkpoint, not a completed robot simul
 
 Actual CAD delivery requires the separately preserved Fusion archive. Public STEP/meshes are source-sized references, not a substitute for that archive. Supplier native CAD is excluded from this public repository.
 
-See [checkpoint qualification and reproducible smoke matrix](MERGE_READINESS.md) for tested scope and remaining limitations. A merge would accept this experimental checkpoint only, not the open physical or mission outcomes.
+See [checkpoint qualification and reproducible smoke matrix](experiments/a2-campaign/MERGE_READINESS.md) for tested scope and remaining limitations. A merge would accept this experimental checkpoint only, not the open physical or mission outcomes.
 
 ## Current design highlights
 
-- Close-range Speaker cycle narrative, with Amp and feeder alternatives retained: [strategy](STRATEGY.md).
+- Close-range Speaker cycle narrative, with Amp and feeder alternatives retained: [strategy](experiments/a2-campaign/STRATEGY.md).
 - AM14U4-based six-wheel drivetrain with source-sized components, an original front-throat modification and fixed bumper candidate. Structural and impact qualification remain open.
 - Reversible asymmetric side-pinch intake, coordinated rotation/elevator and four-wheel launcher. Original drilled lower brackets, portal gussets, carriage yokes and recessed slide-pad attachments connect previously reserved interfaces.
 - 711 original/source-sized parts per exported pose. Full-NOTE intake feeding is screened at49 positions; moving mechanism clearance at125 poses. These are finite nominal geometry checks, not capture, tolerance, force or durability acceptance.
@@ -80,12 +80,12 @@ The separate [finite-command envelope study](sim/integrated/coupled_lift_sweep_R
 Requires existing Python 3 with NumPy, PowerShell, JDK 17 and a populated Gradle/WPILib cache. Toolchain is pinned to Gradle 8.11, GradleRIO/WPILib 2026.2.1 and JUnit 5.10.1. This models the 2024 game using the 2026 desktop toolchain, not a historical robot deployment.
 
 ```powershell
-./run-a2.ps1 -JavaHome '<JDK 17 directory>' -GradleHome '<Gradle cache directory>'
+./experiments/a2-campaign/run-a2.ps1 -JavaHome '<JDK 17 directory>' -GradleHome '<Gradle cache directory>'
 ```
 
 Open `NORMAL.html` in the printed results folder. `NORMAL_9V.html` and fault replays preserve comparisons; `SUMMARY.md`, `results.json`, `native/receipt.json` and `presentation-receipt.json` expose what ran and which inputs produced it. Each invocation requires fresh output and executes actual native tests. No robot address, installation or hardware deployment is performed.
 
-The cache must already contain the pinned public dependencies. On a newly configured development computer, set JAVA_HOME and GRADLE_USER_HOME, then run the included `shared/examples/java-2026-sim/gradlew.bat test` from that project directory with network access to populate its cache before using the offline verified runner. Dependency notices are [here](shared/examples/java-2026-sim/THIRD_PARTY.md).
+The cache must already contain the pinned public dependencies. On a newly configured development computer, set JAVA_HOME and GRADLE_USER_HOME, then run the included `shared/examples/java-2026-sim/gradlew.bat test` from that project directory with network access to populate its cache before using the offline verified runner. Dependency notices are [here](experiments/a2-campaign/shared/examples/java-2026-sim/THIRD_PARTY.md).
 
 ## What the legacy run proves
 
@@ -99,7 +99,7 @@ Acquisition, lift, telescope, level retention and transfer are prescribed kinema
 - [Geometry contract](cad/cycle-contract-A2.json), [original generator](cad/build_a2_layout.py), [shared kinematics](cad/a2_kinematics.py).
 - 54 original solids per endpoint are exported and reopened. Green regions reserve linkage, transfer or service space; they are not engineered hardware. Narrow nominal envelope allowances are not tolerance/strength approval.
 - With existing OCP 8 and Matplotlib: `python cad/build_a2_layout.py --output artifacts/my-cad`.
-- The [portable editable pre-vis](tools/blockout/README.md) lives in this project. It saves/loads the plugin design artifact and exports editable OpenSCAD; it is a generic planning tool, separate from the A2 mechanism contract.
+- The [portable editable pre-vis](kickoff/blockout/README.md) lives in this project. It saves/loads the plugin design artifact and exports editable OpenSCAD; it is a generic planning tool, separate from the A2 mechanism contract.
 
 ## Project ownership and retained dependencies
 

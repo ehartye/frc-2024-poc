@@ -1,5 +1,5 @@
 import unittest,importlib.util,pathlib,tempfile,csv,json
-ROOT=pathlib.Path(__file__).resolve().parents[1]
+ROOT=pathlib.Path(__file__).resolve().parents[1]/'experiments/a2-campaign'
 spec=importlib.util.spec_from_file_location('replay',ROOT/'scripts/build-a2-replay.py');replay=importlib.util.module_from_spec(spec);spec.loader.exec_module(replay)
 class ReplayInput(unittest.TestCase):
  def row(self,t):return dict(timeS=t,state='TEST_FIXTURE',robotX=1,robotY=0,robotHeadingRad=3.14,intakeAngleDeg=-40,intakeLengthM=.68,piecePhase='UNKNOWN',pieceXWorld='',pieceYWorld='',pieceZWorld='',shooterRpm=0,shotCount=0,fault='NONE',event='')

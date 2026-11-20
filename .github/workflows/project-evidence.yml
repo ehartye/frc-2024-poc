@@ -3,8 +3,23 @@ on: [push, pull_request]
 jobs:
   verify:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: project
     steps:
       - uses: actions/checkout@v4
+        with:
+          path: project
+      - name: Check out the layout validator
+        uses: actions/checkout@v4
+        with:
+          repository: ehartye/agent-frc
+          ref: 0fbf18d8ebb00e34fbd55f06a98e9169509cfca1
+          path: .layout-validator
+          persist-credentials: false
+      - name: Verify student project layout and Fusion handoff
+        run: node ../.layout-validator/scripts/project-layout.mjs check .
+
       - name: Verify CAD views and README coverage
         run: python scripts/cad-readmes.py . --template scripts/cad-orbit.html
 

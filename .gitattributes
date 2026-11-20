@@ -1,9 +1,9 @@
 * text eol=lf
 *.jar binary
-shared/** -text
+experiments/a2-campaign/shared/** -text
 cad/** -text
-config.json -text
-mission/** -text
+experiments/a2-campaign/config.json -text
+experiments/a2-campaign/mission/** -text
 
 # Source-bound native/runtime receipts require exact exported bytes.
 sim/component-launcher/* -text
@@ -14,7 +14,7 @@ sim/mujoco/** -text
 # Maple runtime receipts preserve exact executed source bytes.
 sim/maple/** -text
 
-tools/blockout/** -text
+kickoff/blockout/** -text
 
 # Source-bound pressure experiment receipts retain exact recorded bytes.
 sim/pressure/evidence/continuity-20261118/** -text
@@ -146,3 +146,7 @@ docs/media/*.png binary
 *.webm binary
 *.f3d binary
 *.f3z binary
+
+experiments/a2-campaign/cad/** -text
+experiments/pressure-entry/frozen/** -text
+experiments/a2-campaign/frozen/** -text
