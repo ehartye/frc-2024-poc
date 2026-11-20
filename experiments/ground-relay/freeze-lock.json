@@ -1,0 +1,18 @@
+{
+  "solverCommit": "687618cdeedaca33ba8271e1aab4b7ce2697b805",
+  "solverPackage": "0.42.0",
+  "serial": "e4be1b9280559110206257357e55494f38f832ceec2e23860c87bc91f70da13a",
+  "buffer": "f9b90d6b385dd37302e7853c9c40e4f85b2427a0f7d8874b7528647ce31c1361",
+  "controls": {
+    "empty": {
+      "available": 0
+    },
+    "dropOutside": {
+      "padOffsetIn": 10
+    },
+    "zeroRetention": {
+      "effectiveSideLoadN": 0
+    }
+  },
+  "limits": "Five distinct deterministic timings and offsets, no population probability. Changes to the simulator after the freeze require disclosure."
+}

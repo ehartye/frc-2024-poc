@@ -1,0 +1,244 @@
+{
+  "schema": "agent-frc/role-demand@1",
+  "identity": {
+    "profileSha256": "8b63e86b5f9240670dc38bceb200a9352da8c3434968ea3d7ad4c02033ec706a",
+    "studySha256": "04eaae80cfd66b91b135da4e9842c49564043e5b3c4484b02f65d3c0340b652d",
+    "role": "retrieve",
+    "context": "unseen-roster",
+    "phase": "TELEOP",
+    "station": "center-2",
+    "focalRobot": "B3",
+    "windowS": [
+      0,
+      135
+    ],
+    "piece": "NOTE",
+    "outcome": "acquired",
+    "criterion": "Possession acquired at center-2"
+  },
+  "contractKey": "9be77ab0ce38ec7233dc9b614903160b08f864e2f3bc685f3ab8e01f7089111d",
+  "fieldConditions": {
+    "setup": "Nominal field",
+    "peers": [
+      {
+        "side": "red",
+        "slot": 1,
+        "capacity": 1,
+        "preload": {
+          "station": "red-source",
+          "quantity": 1
+        },
+        "plans": {
+          "AUTO": "opening-speaker",
+          "TELEOP": "cycler"
+        }
+      },
+      {
+        "side": "red",
+        "slot": 2,
+        "capacity": 1,
+        "preload": {
+          "station": "red-source",
+          "quantity": 1
+        },
+        "plans": {
+          "AUTO": "opening-amp",
+          "TELEOP": "amp"
+        },
+        "endgame": {
+          "action": "onstage",
+          "target": "red-center",
+          "startS": 110,
+          "witnesses": {
+            "ownChainOnly": "met",
+            "floorClear": "met",
+            "allowedContacts": "met",
+            "supportedThroughAssessment": "failed",
+            "directOrTransitiveChainSupport": "met",
+            "bumpersInOwnStageZoneAtAssessment": "met"
+          },
+          "fallbacks": [
+            {
+              "action": "park",
+              "target": "red-center"
+            }
+          ]
+        }
+      },
+      {
+        "side": "red",
+        "slot": 3,
+        "capacity": 1,
+        "preload": {
+          "station": "red-source",
+          "quantity": 1
+        },
+        "plans": {
+          "AUTO": "opening-support",
+          "TELEOP": "trap-approach"
+        }
+      },
+      {
+        "side": "blue",
+        "slot": 1,
+        "capacity": 1,
+        "preload": {
+          "station": "blue-source",
+          "quantity": 1
+        },
+        "plans": {
+          "AUTO": "opening-speaker",
+          "TELEOP": "miss-recover"
+        },
+        "endgame": {
+          "action": "onstage",
+          "target": "blue-center",
+          "startS": 129,
+          "witnesses": {
+            "ownChainOnly": "met",
+            "floorClear": "met",
+            "allowedContacts": "met",
+            "supportedThroughAssessment": "met",
+            "directOrTransitiveChainSupport": "met"
+          }
+        }
+      },
+      {
+        "side": "blue",
+        "slot": 2,
+        "capacity": 1,
+        "preload": {
+          "station": "blue-source",
+          "quantity": 1
+        },
+        "plans": {
+          "AUTO": "opening-amp",
+          "TELEOP": "amp"
+        }
+      }
+    ],
+    "robotsAtStart": [
+      {
+        "id": "B1",
+        "xyIn": [
+          57,
+          218.4
+        ],
+        "heading": 0,
+        "cargo": []
+      },
+      {
+        "id": "B2",
+        "xyIn": [
+          72.5,
+          298
+        ],
+        "heading": 0,
+        "cargo": []
+      },
+      {
+        "id": "B3",
+        "xyIn": [
+          145,
+          91
+        ],
+        "heading": 0,
+        "cargo": []
+      },
+      {
+        "id": "R1",
+        "xyIn": [
+          594.25,
+          218.4
+        ],
+        "heading": 180,
+        "cargo": []
+      },
+      {
+        "id": "R2",
+        "xyIn": [
+          578.75,
+          298
+        ],
+        "heading": 180,
+        "cargo": []
+      },
+      {
+        "id": "R3",
+        "xyIn": [
+          506.25,
+          91
+        ],
+        "heading": 180,
+        "cargo": [
+          "red-source/3"
+        ]
+      }
+    ],
+    "occupancyAtStart": {
+      "blue-speaker": 2,
+      "blue-amp": 2,
+      "blue-trap-front": 0,
+      "blue-trap-upper": 0,
+      "blue-trap-lower": 0,
+      "red-speaker": 2,
+      "red-amp": 2,
+      "red-trap-front": 0,
+      "red-trap-upper": 0,
+      "red-trap-lower": 0
+    },
+    "queuesAtStart": {
+      "Speaker lane": {
+        "owner": null,
+        "queue": []
+      }
+    }
+  },
+  "openingStock": {
+    "center-2": [
+      "center-2/1"
+    ]
+  },
+  "preloadedPieces": [],
+  "replenishments": [],
+  "source": {
+    "schema": "agent-frc/role-selection@1",
+    "profile": {
+      "path": "kickoff/crescendo-field.json",
+      "sha256": "8b63e86b5f9240670dc38bceb200a9352da8c3434968ea3d7ad4c02033ec706a",
+      "pointer": ""
+    },
+    "study": {
+      "path": "experiments/ground-relay/role-study.json",
+      "sha256": "04eaae80cfd66b91b135da4e9842c49564043e5b3c4484b02f65d3c0340b652d",
+      "pointer": ""
+    },
+    "role": "retrieve",
+    "context": "unseen-roster",
+    "phase": "TELEOP",
+    "station": "center-2",
+    "windowS": [
+      0,
+      135
+    ]
+  },
+  "requiredPieces": 1,
+  "requiredPerSecond": 0.007407407407407408,
+  "distinctPieces": 1,
+  "witnesses": [
+    {
+      "phase": "TELEOP",
+      "timeS": 3.35,
+      "robot": "B3",
+      "station": "center-2",
+      "operation": "acquire",
+      "outcome": "acquired",
+      "pieces": [
+        "center-2/1"
+      ]
+    }
+  ],
+  "margin": 8,
+  "status": "observed-opportunity",
+  "scope": "Reproduce the selected focal role’s observed opportunity in this field setup and half-open period window. A zero count provides no positive hardware target."
+}

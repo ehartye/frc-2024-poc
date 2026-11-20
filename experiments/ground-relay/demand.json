@@ -1,0 +1,21 @@
+{
+  "criterionId": "r15-focal-floor-deposit",
+  "criterion": "An identified NOTE released by B3 comes to rest inside a free blue exchange pad.",
+  "focalRobot": "B3",
+  "station": "blue-exchange",
+  "outcome": "credited",
+  "requiredPieces": 2,
+  "windowS": 135,
+  "anchor": {
+    "basis": "phase-start",
+    "phase": "TELEOP",
+    "offsetS": 0
+  },
+  "basis": "Two distinct ground deposits extend the separately reproduced one-piece held-out retrieval opportunity. Partner pickup and match scoring are independent.",
+  "roleSelection": {
+    "path": "experiments/ground-relay/role-selection.json",
+    "sha256": "5723fb2155061365e14fe0ff8d7e49605408f144eea9907f3822f85866089802",
+    "pointer": ""
+  },
+  "roleDemandSha256": "f941054e7435d0045282c5275dbd65148c0d307b75e51b82426d37306fbf0c09"
+}

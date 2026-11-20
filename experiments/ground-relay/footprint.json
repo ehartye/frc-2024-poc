@@ -1,0 +1,37 @@
+{
+  "sourceParkedArchiveSha256": "4663d9fa55b5f3eb8e23549f3205a2d29248322543beb3e7a7d8076a23f93f6d",
+  "fixtureSha256": "7c8c21498357e903c120bb7a8d0bdadbaae1c9d9e8e26ea8779950167ade1046",
+  "selectedBodies": 909,
+  "boundsMm": [
+    -437.8125,
+    -439.75,
+    0.0,
+    538.612,
+    439.75,
+    968.315
+  ],
+  "extremalBodies": [
+    "R7 491 visual digit 1",
+    "R7 499 visual digit 1",
+    "Front left tire",
+    "R7 487 visual digit 1",
+    "R7 495 visual digit 1",
+    "R7 243 original replacement upper transverse portal"
+  ],
+  "retiredFromR9": [
+    "Chain bearing roof",
+    "Drive gearbox envelope",
+    "Drive motor envelope",
+    "Inner sliding tube with lock bore",
+    "Nut carrier plate",
+    "Outer guide with double shear lock bore",
+    "Retaining lip",
+    "Saddle spine",
+    "Screw envelope",
+    "Spring engaged through pin",
+    "Spring return housing envelope",
+    "Thrust bearing support envelope",
+    "Top bracket",
+    "Travelling nut envelope"
+  ]
+}
