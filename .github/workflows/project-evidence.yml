@@ -30,10 +30,23 @@ jobs:
         run: |
           node ../.layout-validator/scripts/rehearsal-series.mjs kickoff/crescendo-field.json "$RUNNER_TEMP/stage-series.json"
           cmp "$RUNNER_TEMP/stage-series.json" experiments/speaker-cycles/match-series.json
-          node ../.layout-validator/scripts/kickoff.mjs --profile kickoff/crescendo-field.json --output "$RUNNER_TEMP/field-lab.html"
-          python experiments/ground-relay/link_lab.py "$RUNNER_TEMP/field-lab.html"
-          cmp "$RUNNER_TEMP/field-lab.html" docs/field-lab.html
           python tests/test_stage_endgame.py
+
+      - name: Check out the physical match generator
+        uses: actions/checkout@v4
+        with:
+          repository: ehartye/agent-frc
+          ref: 92ddf41933dd6026b26493c1d2c91505e9d15914
+          path: .physical-match
+          persist-credentials: false
+      - name: Reproduce all six roles, finite stock, human service and student controls
+        run: |
+          node ../.physical-match/scripts/rehearsal-series.mjs kickoff/physical-match.json "$RUNNER_TEMP/physical-series.json"
+          cmp "$RUNNER_TEMP/physical-series.json" experiments/physical-match/series.json
+          node ../.physical-match/scripts/strategy-lab.mjs kickoff/physical-match.json experiments/physical-match/roles.json --html "$RUNNER_TEMP/physical-lab.html" > "$RUNNER_TEMP/physical-roles.json"
+          python experiments/physical-match/publish.py "$RUNNER_TEMP/physical-lab.html"
+          cmp "$RUNNER_TEMP/physical-lab.html" docs/field-lab.html
+          python -B tests/test_physical_match.py
 
       - name: Verify the R9 mechanical handoff and native bill
         run: |

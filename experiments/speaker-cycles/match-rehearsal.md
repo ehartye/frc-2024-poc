@@ -1,5 +1,7 @@
 # Three six-robot CRESCENDO rehearsals
 
+These results are from the frozen earlier profile. The [current physical match and score ledger](../physical-match/study.md) uses the full stock, timed human players and moving floor pieces.
+
 Open the [field lab](https://ehartye.github.io/frc-2024-poc/field-lab.html#rehearsal) and choose **Published scenarios**, then **Play match series at 10×**. To repeat your own setup three times, select **My roster · 3 matches**. **Reset** restores the robots, period behaviors and obstacle setup you edited before playback. For offline use, open the committed [standalone page](../../docs/field-lab.html) in a browser. The three matches run for 45 seconds of playback, with 15 seconds of AUTO and 135 seconds of TELEOP on each game clock. The robot cards stay under their own alliance when the user alternates red and blue additions.
 
 All scores below are blue / red. The control run removes every endgame assignment and replays the same stock, programs and starting poses.
