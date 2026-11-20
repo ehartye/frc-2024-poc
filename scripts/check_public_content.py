@@ -37,6 +37,12 @@ SHOWCASE_ASSETS.update({
  "cad/assembly-readiness/drawings/r9-shop-drawings.pdf": "552981ea64eabc89ed47e6e5faa368b65344161f4e5ab539061a5dceef17b565"
 })
 
+SHOWCASE_ASSETS.update({
+ "cad/student/r10-passive-service.f3d": "06d0f92aa7c3ccd4f23f489b8d8041805e07cf6ac70a3272aeeba3397e890a21",
+ "cad/service-readiness/parked-fixture.png": "26ecd50c61056af72c67a63857749afe474f76ced790f66b6ccecc3769e78e99",
+ "cad/service-readiness/mast-cartridge.png": "65b3c1062ae397ba87e83273479c87afdf0dca60244b9da93335e95d28330e8e"
+})
+
 def git(*args):return subprocess.check_output(['git','-C',str(ROOT),*args])
 def audit(revision='HEAD'):
  failures=[]

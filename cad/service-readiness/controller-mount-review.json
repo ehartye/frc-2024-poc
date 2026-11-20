@@ -1,0 +1,170 @@
+{
+  "stepSha256": {
+    "REV-21-2151.STEP": "f257b9d7e5633e153df2f2079f601e9ace6a5607d076107ca2970a2ded00db07",
+    "REV-11-2158.STEP": "b8b374fc3dbb3bfa07ed10c9bdbc2ee407591a35bbe42035ddda87a0dcfa7e4d"
+  },
+  "bracketBoundsMm": [
+    -25.39127379650212,
+    -0.5000000000000142,
+    -30.2895,
+    25.39142219342728,
+    29.500000000000014,
+    30.289500000000004
+  ],
+  "controllerBoundsMm": [
+    -40.62499999999999,
+    -6.7000001000000005,
+    -17.25000010000001,
+    40.625,
+    22.95000000000003,
+    17.2500001
+  ],
+  "controllerSolidCount": 18,
+  "nominalBracketOverlapMm3": 0.0,
+  "controlOverlapMm3": [
+    13.37869,
+    21.90554,
+    18.7293
+  ],
+  "stations": [
+    {
+      "centerMm": [
+        -26.5,
+        -257
+      ],
+      "longAxis": "Y",
+      "holeCentersMm": [
+        [
+          -51.9,
+          -269.7
+        ],
+        [
+          -51.9,
+          -244.3
+        ],
+        [
+          -1.1000000000000014,
+          -257
+        ]
+      ],
+      "materialToDeckOutsideEdgeMm": [
+        37.8,
+        49.4,
+        -1.4
+      ]
+    },
+    {
+      "centerMm": [
+        -26.5,
+        103
+      ],
+      "longAxis": "Y",
+      "holeCentersMm": [
+        [
+          -51.9,
+          90.3
+        ],
+        [
+          -51.9,
+          115.7
+        ],
+        [
+          -1.1000000000000014,
+          103
+        ]
+      ],
+      "materialToDeckOutsideEdgeMm": [
+        49.4,
+        49.4,
+        -1.4
+      ]
+    },
+    {
+      "centerMm": [
+        -57,
+        -160.5
+      ],
+      "longAxis": "X",
+      "holeCentersMm": [
+        [
+          -69.7,
+          -135.1
+        ],
+        [
+          -44.3,
+          -135.1
+        ],
+        [
+          -57,
+          -185.9
+        ]
+      ],
+      "materialToDeckOutsideEdgeMm": [
+        67.2,
+        41.8,
+        54.5
+      ]
+    },
+    {
+      "centerMm": [
+        -74.5,
+        -251
+      ],
+      "longAxis": "Y",
+      "holeCentersMm": [
+        [
+          -99.9,
+          -263.7
+        ],
+        [
+          -99.9,
+          -238.3
+        ],
+        [
+          -49.1,
+          -251
+        ]
+      ],
+      "materialToDeckOutsideEdgeMm": [
+        43.8,
+        69.2,
+        46.6
+      ]
+    },
+    {
+      "centerMm": [
+        -26.5,
+        -59
+      ],
+      "longAxis": "Y",
+      "holeCentersMm": [
+        [
+          -51.9,
+          -71.7
+        ],
+        [
+          -51.9,
+          -46.3
+        ],
+        [
+          -1.1000000000000014,
+          -59
+        ]
+      ],
+      "materialToDeckOutsideEdgeMm": [
+        49.4,
+        49.4,
+        -1.4
+      ]
+    }
+  ],
+  "overlappingBracketBounds": [
+    {
+      "stations": [
+        1,
+        4
+      ],
+      "bracketOverlapMm3": 209.45156
+    }
+  ]
+}
