@@ -2,6 +2,8 @@
 
 Open the [R9 Fusion assembly](student/r9-physical-assembly.f3d) for the current parked mechanical build. The [R9 handoff](assembly-readiness/physical-assembly.md) includes the assembly order, stock and purchased articles, fit measurements, shop drawings and open physical checks. Use the archive hash in the [R9 display receipt](../docs/media/r9-assembly.json) to match the model and its still.
 
+The [R14 chassis study](service-readiness/stiffness/study.md) compares the bare frame, a lower welded alternative and a removable transverse tie under the same wheel loads.
+
 Open the [R13 frame fixture](student/r13-ground-frame.f3d) to inspect the four retained rail sleeves and edit the loose inspection gauge. The [service study](service-readiness/ground-rails/study.md) gives the station coordinates and the approach checks against the selected parked robot.
 
 The [R11 service tooling](service-readiness/r11-service.md) adds a separate four-controller receiving plate, battery dressing gauge and unloaded parking spacer.

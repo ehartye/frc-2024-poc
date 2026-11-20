@@ -1,0 +1,419 @@
+{
+  "R9": {
+    "rigid": {
+      "joint": "rigid",
+      "twistEquilibrium": true,
+      "deckEquilibrium": true,
+      "warpMm": 0.5964475589038564,
+      "twistNmPerDegree": 791.246477069311,
+      "deckMeanDropMm": 0.012044477785041354,
+      "wheelReactionsN": {
+        "Front left": 5.461538472702064,
+        "Front right": 5.461538457407284,
+        "Rear left": 44.538461566748666,
+        "Rear right": 44.53846149277135
+      }
+    },
+    "firm": {
+      "joint": "firm",
+      "twistEquilibrium": true,
+      "deckEquilibrium": true,
+      "warpMm": 1.1042401702605031,
+      "twistNmPerDegree": 427.38621764496327,
+      "deckMeanDropMm": 0.013919222758434243,
+      "wheelReactionsN": {
+        "Front left": 5.461538463038897,
+        "Front right": 5.461538468298187,
+        "Rear left": 44.53846156563265,
+        "Rear right": 44.53846153590706
+      }
+    },
+    "relaxed": {
+      "joint": "relaxed",
+      "twistEquilibrium": true,
+      "deckEquilibrium": true,
+      "warpMm": 2.0715061909843233,
+      "twistNmPerDegree": 227.82313265258213,
+      "deckMeanDropMm": 0.02180506765721431,
+      "wheelReactionsN": {
+        "Front left": 5.4615384824827355,
+        "Front right": 5.461538477422806,
+        "Rear left": 44.538461523803576,
+        "Rear right": 44.53846158953397
+      }
+    },
+    "rocking": {
+      "joint": "rocking",
+      "twistEquilibrium": false,
+      "deckEquilibrium": false
+    },
+    "grossSections": {
+      "joint": "relaxed",
+      "twistEquilibrium": true,
+      "deckEquilibrium": true,
+      "warpMm": 2.067296232604487,
+      "twistNmPerDegree": 228.28708450007474,
+      "deckMeanDropMm": 0.021756185410296103,
+      "wheelReactionsN": {
+        "Front left": 5.461538445486829,
+        "Front right": 5.461538419020258,
+        "Rear left": 44.538461680994445,
+        "Rear right": 44.53846151421954
+      }
+    },
+    "noPerimeterCredit": {
+      "joint": "relaxed",
+      "twistEquilibrium": true,
+      "deckEquilibrium": true,
+      "warpMm": 3.402293838222625,
+      "twistNmPerDegree": 138.71142593192624,
+      "deckMeanDropMm": 0.022399748501167417,
+      "wheelReactionsN": {
+        "Front left": 5.461538453984112,
+        "Front right": 5.461538456958337,
+        "Rear left": 44.53846156504993,
+        "Rear right": 44.538461508518104
+      }
+    },
+    "softWelds": {
+      "joint": "relaxed",
+      "twistEquilibrium": true,
+      "deckEquilibrium": true,
+      "warpMm": 6.503821762698034,
+      "twistNmPerDegree": 72.56303246900315,
+      "deckMeanDropMm": 0.02892131905551093,
+      "wheelReactionsN": {
+        "Front left": 5.461538460569329,
+        "Front right": 5.461538459371781,
+        "Rear left": 44.538461525508495,
+        "Rear right": 44.53846153543191
+      }
+    }
+  },
+  "R13": {
+    "rigid": {
+      "joint": "rigid",
+      "twistEquilibrium": true,
+      "deckEquilibrium": true,
+      "warpMm": 1.0115858498712949,
+      "twistNmPerDegree": 466.53186163024304,
+      "deckMeanDropMm": 0.013055132209639306,
+      "wheelReactionsN": {
+        "Front left": 5.461538487106257,
+        "Front right": 5.461538460291245,
+        "Rear left": 44.53846159159842,
+        "Rear right": 44.53846152173584
+      }
+    },
+    "firm": {
+      "joint": "firm",
+      "twistEquilibrium": true,
+      "deckEquilibrium": true,
+      "warpMm": 1.609450869999713,
+      "twistNmPerDegree": 293.2286027092898,
+      "deckMeanDropMm": 0.014536544756889452,
+      "wheelReactionsN": {
+        "Front left": 5.461538456645604,
+        "Front right": 5.461538472758804,
+        "Rear left": 44.5384615861774,
+        "Rear right": 44.5384615489387
+      }
+    },
+    "relaxed": {
+      "joint": "relaxed",
+      "twistEquilibrium": true,
+      "deckEquilibrium": true,
+      "warpMm": 2.3363014035457774,
+      "twistNmPerDegree": 202.00177469525696,
+      "deckMeanDropMm": 0.021938360372121175,
+      "wheelReactionsN": {
+        "Front left": 5.461538475707135,
+        "Front right": 5.461538480674136,
+        "Rear left": 44.53846153663071,
+        "Rear right": 44.5384615415593
+      }
+    },
+    "rocking": {
+      "joint": "rocking",
+      "twistEquilibrium": false,
+      "deckEquilibrium": false
+    },
+    "grossSections": {
+      "joint": "relaxed",
+      "twistEquilibrium": true,
+      "deckEquilibrium": true,
+      "warpMm": 2.332687450001979,
+      "twistNmPerDegree": 202.31472919308857,
+      "deckMeanDropMm": 0.021892541690727074,
+      "wheelReactionsN": {
+        "Front left": 5.461538454479955,
+        "Front right": 5.461538420454545,
+        "Rear left": 44.53846165396625,
+        "Rear right": 44.538461480406234
+      }
+    },
+    "noPerimeterCredit": {
+      "joint": "relaxed",
+      "twistEquilibrium": true,
+      "deckEquilibrium": true,
+      "warpMm": 4.55824335322084,
+      "twistNmPerDegree": 103.53484734547958,
+      "deckMeanDropMm": 0.022563009354961513,
+      "wheelReactionsN": {
+        "Front left": 5.461538455747387,
+        "Front right": 5.461538465191296,
+        "Rear left": 44.53846155433053,
+        "Rear right": 44.53846150667189
+      }
+    },
+    "softWelds": {
+      "joint": "relaxed",
+      "twistEquilibrium": true,
+      "deckEquilibrium": true,
+      "warpMm": 12.804387784010025,
+      "twistNmPerDegree": 36.85744587715598,
+      "deckMeanDropMm": 0.029217940279974635,
+      "wheelReactionsN": {
+        "Front left": 5.461538457594543,
+        "Front right": 5.461538476497637,
+        "Rear left": 44.53846151329324,
+        "Rear right": 44.53846154207832
+      }
+    }
+  },
+  "lowerTie": {
+    "rigid": {
+      "joint": "rigid",
+      "twistEquilibrium": true,
+      "deckEquilibrium": true,
+      "warpMm": 0.5671113353617967,
+      "twistNmPerDegree": 832.1770352874146,
+      "deckMeanDropMm": 0.011989740975084116,
+      "wheelReactionsN": {
+        "Front left": 5.461538445914266,
+        "Front right": 5.461538470067812,
+        "Rear left": 44.5384615434898,
+        "Rear right": 44.53846155752376
+      }
+    },
+    "firm": {
+      "joint": "firm",
+      "twistEquilibrium": true,
+      "deckEquilibrium": true,
+      "warpMm": 0.8654876087088142,
+      "twistNmPerDegree": 545.2845598140109,
+      "deckMeanDropMm": 0.013023754075990213,
+      "wheelReactionsN": {
+        "Front left": 5.461538467814716,
+        "Front right": 5.461538481610264,
+        "Rear left": 44.5384615494981,
+        "Rear right": 44.53846156907576
+      }
+    },
+    "relaxed": {
+      "joint": "relaxed",
+      "twistEquilibrium": true,
+      "deckEquilibrium": true,
+      "warpMm": 1.4081211899255037,
+      "twistNmPerDegree": 335.15370205048504,
+      "deckMeanDropMm": 0.020189370606055072,
+      "wheelReactionsN": {
+        "Front left": 5.461538456524863,
+        "Front right": 5.461538481306547,
+        "Rear left": 44.53846151911993,
+        "Rear right": 44.538461511511066
+      }
+    },
+    "rocking": {
+      "joint": "rocking",
+      "twistEquilibrium": false,
+      "deckEquilibrium": false
+    },
+    "grossSections": {
+      "joint": "relaxed",
+      "twistEquilibrium": true,
+      "deckEquilibrium": true,
+      "warpMm": 1.4019635718216015,
+      "twistNmPerDegree": 336.62574351063114,
+      "deckMeanDropMm": 0.020058073021708426,
+      "wheelReactionsN": {
+        "Front left": 5.4615384772056075,
+        "Front right": 5.461538417080648,
+        "Rear left": 44.5384616473302,
+        "Rear right": 44.538461576595196
+      }
+    },
+    "noPerimeterCredit": {
+      "joint": "relaxed",
+      "twistEquilibrium": true,
+      "deckEquilibrium": true,
+      "warpMm": 1.7405697140387966,
+      "twistNmPerDegree": 271.1394010436904,
+      "deckMeanDropMm": 0.020555609761365414,
+      "wheelReactionsN": {
+        "Front left": 5.461538490065664,
+        "Front right": 5.461538452482898,
+        "Rear left": 44.53846149521719,
+        "Rear right": 44.538461453674316
+      }
+    },
+    "softWelds": {
+      "joint": "relaxed",
+      "twistEquilibrium": true,
+      "deckEquilibrium": true,
+      "warpMm": 9.956708780274553,
+      "twistNmPerDegree": 47.398898587275255,
+      "deckMeanDropMm": 0.028917679385894384,
+      "wheelReactionsN": {
+        "Front left": 5.461538447817077,
+        "Front right": 5.461538429368247,
+        "Rear left": 44.538461532659625,
+        "Rear right": 44.53846156082844
+      }
+    }
+  },
+  "R14": {
+    "rigid": {
+      "joint": "rigid",
+      "twistEquilibrium": true,
+      "deckEquilibrium": true,
+      "warpMm": 0.5964475589038564,
+      "twistNmPerDegree": 791.246477069311,
+      "deckMeanDropMm": 0.012044477785041354,
+      "wheelReactionsN": {
+        "Front left": 5.461538472702064,
+        "Front right": 5.461538457407284,
+        "Rear left": 44.538461566748666,
+        "Rear right": 44.53846149277135
+      }
+    },
+    "firm": {
+      "joint": "firm",
+      "twistEquilibrium": true,
+      "deckEquilibrium": true,
+      "warpMm": 1.1042401702605031,
+      "twistNmPerDegree": 427.38621764496327,
+      "deckMeanDropMm": 0.013919222758434243,
+      "wheelReactionsN": {
+        "Front left": 5.461538463038897,
+        "Front right": 5.461538468298187,
+        "Rear left": 44.53846156563265,
+        "Rear right": 44.53846153590706
+      }
+    },
+    "relaxed": {
+      "joint": "relaxed",
+      "twistEquilibrium": true,
+      "deckEquilibrium": true,
+      "warpMm": 2.0715061909843233,
+      "twistNmPerDegree": 227.82313265258213,
+      "deckMeanDropMm": 0.02180506765721431,
+      "wheelReactionsN": {
+        "Front left": 5.4615384824827355,
+        "Front right": 5.461538477422806,
+        "Rear left": 44.538461523803576,
+        "Rear right": 44.53846158953397
+      }
+    },
+    "rocking": {
+      "joint": "rocking",
+      "twistEquilibrium": false,
+      "deckEquilibrium": false
+    },
+    "grossSections": {
+      "joint": "relaxed",
+      "twistEquilibrium": true,
+      "deckEquilibrium": true,
+      "warpMm": 2.067296232604487,
+      "twistNmPerDegree": 228.28708450007474,
+      "deckMeanDropMm": 0.021756185410296103,
+      "wheelReactionsN": {
+        "Front left": 5.461538445486829,
+        "Front right": 5.461538419020258,
+        "Rear left": 44.538461680994445,
+        "Rear right": 44.53846151421954
+      }
+    },
+    "noPerimeterCredit": {
+      "joint": "relaxed",
+      "twistEquilibrium": true,
+      "deckEquilibrium": true,
+      "warpMm": 3.402293838222625,
+      "twistNmPerDegree": 138.71142593192624,
+      "deckMeanDropMm": 0.022399748501167417,
+      "wheelReactionsN": {
+        "Front left": 5.461538453984112,
+        "Front right": 5.461538456958337,
+        "Rear left": 44.53846156504993,
+        "Rear right": 44.538461508518104
+      }
+    },
+    "softWelds": {
+      "joint": "relaxed",
+      "twistEquilibrium": true,
+      "deckEquilibrium": true,
+      "warpMm": 6.503821762698034,
+      "twistNmPerDegree": 72.56303246900315,
+      "deckMeanDropMm": 0.02892131905551093,
+      "wheelReactionsN": {
+        "Front left": 5.461538460569329,
+        "Front right": 5.461538459371781,
+        "Rear left": 44.538461525508495,
+        "Rear right": 44.53846153543191
+      }
+    }
+  },
+  "controls": {
+    "cantileverBendMm": 0.19665835859560468,
+    "eccentricTorsionMm": 0.03766230089419595,
+    "oneTieEndUnfastened": {
+      "joint": "relaxed",
+      "twistEquilibrium": true,
+      "deckEquilibrium": true,
+      "warpMm": 2.336296467236148,
+      "twistNmPerDegree": 202.00220150038186,
+      "deckMeanDropMm": 0.02193831111939703,
+      "wheelReactionsN": {
+        "Front left": 5.461521150699751,
+        "Front right": 5.461555809566917,
+        "Rear left": 44.53847878155299,
+        "Rear right": 44.538444205376805
+      }
+    }
+  },
+  "selection": {
+    "retainedParkedBodies": 909,
+    "addedArticles": [
+      "Accu HPN-M8-C8-Z 23 -329",
+      "Accu HPN-M8-C8-Z 23 329",
+      "Accu HPN-M8-C8-Z 53 -329",
+      "Accu HPN-M8-C8-Z 53 329",
+      "Crossmember flush weld sleeve 23 -329",
+      "Crossmember flush weld sleeve 23 329",
+      "Crossmember flush weld sleeve 53 -329",
+      "Crossmember flush weld sleeve 53 329",
+      "Crossmember with four rail mounting holes",
+      "M8 plain washer 23 -329",
+      "M8 plain washer 23 329",
+      "M8 plain washer 53 -329",
+      "M8 plain washer 53 329",
+      "MISUMI CB8-100 23 -329",
+      "MISUMI CB8-100 23 329",
+      "MISUMI CB8-100 53 -329",
+      "MISUMI CB8-100 53 329"
+    ],
+    "nativeMaterialKg": 1.1660375180848088,
+    "addedInstalledRangeKg": [
+      1.1061005545114417,
+      1.1925204049723448
+    ],
+    "knownInstalledSubtotalKg": [
+      42.28212065768272,
+      45.96281700453054
+    ]
+  },
+  "sources": {
+    "r9": "4663d9fa55b5f3eb8e23549f3205a2d29248322543beb3e7a7d8076a23f93f6d",
+    "r13": "9a6ca67136a2279a7280c275b2ca46e754eb70ae8f3d47c4be96bf4868425f7a"
+  }
+}

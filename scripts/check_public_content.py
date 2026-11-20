@@ -55,6 +55,8 @@ SHOWCASE_ASSETS.update({
     "cad/service-readiness/ground-rails/frame.png": "85b2dc40ab95b771133c61388c487dd2b6eef34b5d2191f58781e96dcdad2db7",
 })
 
+SHOWCASE_ASSETS["cad/service-readiness/stiffness/comparison.png"] = "f941a9809bdc640d2e658bd64ec66a0f9098914d5b0019ab6b3f24b329e92fa0"
+
 def git(*args):return subprocess.check_output(['git','-C',str(ROOT),*args])
 def audit(revision='HEAD'):
  failures=[]

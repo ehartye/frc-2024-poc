@@ -34,6 +34,8 @@ The selection retires 31 of the 923 parked bodies. Four welded lower sleeves con
 
 Removing a transverse member changes the frame load path. The original parked hull and nominal rail fit do not establish torsional stiffness with that member absent. Retain the ground-supported configuration as a CAD service study pending a structural check and physical inspection.
 
+The [R14 stiffness study](../stiffness/study.md) compares the bare ground frame with two ways of restoring transverse support. It selects a mast-free bolted tie for follow-up.
+
 ## Rear corner decision
 
 **Retain the existing square rear corners for this revision.** For a proposed 45° cut, measure the same setback along the rear and side coordinate axes. The fixed rear corner is at X = −353.6625 mm, |Y| = 355.25 mm. Each rear wheel axis is at X = −260 mm, |Y| = 260 mm. In the registered parked pose, the largest outward sum of the two horizontal offsets on the exact REV-21-3005 STEP is 96.9161 mm. Subtracting this from the old corner's two offsets (93.6625 + 95.25 mm) leaves **92.00 mm to first contact**, rounded. This is the zero-clearance intercept of an ideal plane. Any diagonal rail placed inside the plane needs additional space for its depth, fabrication tolerances and steering or service clearance. [Module revision and installation](../../drivetrain/maxswerve-layout.json) · [Measured fixed frame polygon](../../assembly-readiness/frame-fit.json)
