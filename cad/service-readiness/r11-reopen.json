@@ -1,0 +1,145 @@
+{
+  "bodyCount": 126,
+  "wholeRobotCenteredPlateTrialOverlapMm3": {
+    "long X": {
+      "R7 150 spark-1": 350.0,
+      "R7 151 spark-2": 4895.7258,
+      "R7 152 spark-3": 4895.7258,
+      "R7 153 spark-4": 350.0,
+      "R7 154 spark-5": 350.0,
+      "R7 155 spark-6": 4900.0,
+      "R7 156 spark-7": 4900.0,
+      "R7 157 spark-8": 350.0,
+      "R7 158 spark-9": 350.0,
+      "R7 159 spark-10": 4891.4516,
+      "R7 160 spark-11": 4895.7258,
+      "R7 161 spark-12": 350.0,
+      "baseplate-bolt--266.7--80-head": 121.48315,
+      "baseplate-bolt--266.7-80-head": 121.48315,
+      "baseplate-bolt--139.7--80-head": 121.48315,
+      "baseplate-bolt--139.7-80-head": 121.48315,
+      "Lead 1 tapped stand-off 2": 45.62756,
+      "Lead 1 lower M4 x 10 deck screw 2": 11.65975
+    },
+    "long Y": {
+      "R7 150 spark-1": 1050.0,
+      "R7 151 spark-2": 1050.0,
+      "R7 152 spark-3": 1050.0,
+      "R7 153 spark-4": 1050.0,
+      "R7 154 spark-5": 4883.45125,
+      "R7 155 spark-6": 4900.0,
+      "R7 156 spark-7": 4900.0,
+      "R7 157 spark-8": 4883.45125,
+      "R7 158 spark-9": 3850.0,
+      "R7 159 spark-10": 3850.0,
+      "R7 160 spark-11": 3850.0,
+      "R7 161 spark-12": 3850.0,
+      "R7 163 pdh-deck": 686.10843,
+      "baseplate-bolt--139.7--80-head": 121.48315,
+      "baseplate-bolt--139.7-80-head": 121.48315,
+      "breaker-pedestal": 485.16975,
+      "breaker-base-bolt--244--158-shaft": 36.58428,
+      "Lead 2 tapped stand-off 1": 22.36476,
+      "Lead 2 tapped stand-off 2": 139.97366,
+      "Lead 2 lower M4 x 10 deck screw 2": 25.13274
+    }
+  },
+  "receivingGaugeParkOverlapMm3": {
+    "Dressing maximum 1": 0.0,
+    "Dressing maximum 2": 0.0,
+    "Dressing crossover maximum": 0.0,
+    "bare housing against pocket": 0.0
+  },
+  "highDressingControlMm3": 5920.0,
+  "lowCrossoverControlMm3": 846.09,
+  "clinchEntryGaugeMm3": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "clinchOffsetControlMm3": 5.31265,
+  "parkAndRemovalHits": {
+    "mast insertion": {},
+    "dress 1 park": {},
+    "dress 1 removal": {},
+    "dress 2 park": {},
+    "dress 2 removal": {},
+    "dress crossover park": {},
+    "dress crossover removal": {}
+  },
+  "r9BroadPhaseCandidates": {
+    "mast insertion": [
+      "Outer guide with double shear lock bore",
+      "Saddle spine"
+    ],
+    "dress 1 park": [],
+    "dress 1 removal": [],
+    "dress 2 park": [],
+    "dress 2 removal": [],
+    "dress crossover park": [],
+    "dress crossover removal": []
+  },
+  "deliberateOverlapMm3": [
+    1200.0,
+    1200.0,
+    333.2
+  ],
+  "spacerBoundsMm": [
+    16.0,
+    -72.0,
+    595.5,
+    27.5,
+    -10.0,
+    619.6
+  ],
+  "spacerStockVolumeMm3": 6781.35,
+  "spacerLowerProjectedSeatMm2": 139.5,
+  "spacerUpperProjectedSeatMm2": 190.0,
+  "nativePlateStockVolumeMm3": 108614.614,
+  "nativePlateBoundsMm": [
+    488.0,
+    -90.0,
+    118.0,
+    792.0,
+    90.0,
+    120.0
+  ],
+  "nativeBenchNutBoundsMm": [
+    545.365,
+    -19.535,
+    116.0,
+    553.235,
+    -11.665,
+    119.38
+  ],
+  "clearanceToTopBracketMm": 0.4,
+  "archiveSha256": "6056d3602f1a075e8631b6d5f47acf07418d2b8b9885b4222908f8304668d944",
+  "fixtureParentSha256": "06d0f92aa7c3ccd4f23f489b8d8041805e07cf6ac70a3272aeeba3397e890a21",
+  "wholeRobotSha256": "4663d9fa55b5f3eb8e23549f3205a2d29248322543beb3e7a7d8076a23f93f6d",
+  "nativeReopens": [
+    {
+      "phase": "ok",
+      "before": 0,
+      "after": 0,
+      "restored": true
+    },
+    {
+      "phase": "ok",
+      "before": 0,
+      "after": 0,
+      "restored": true
+    }
+  ],
+  "renderSha256": {
+    "r11-parked-fixture.png": "7b8bd7e24f3bbf1e65b4f20df45b5d26e3fb2ca301259f96a590b2e3a6920ac2"
+  }
+}
