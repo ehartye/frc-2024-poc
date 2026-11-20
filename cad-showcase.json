@@ -2,12 +2,6 @@
   "source": "cad/assembly/connected-floor.step",
   "title": "Connected floor-pose assembly",
   "scope": "Six-wheel baseline with project-authored solids and supplier-sized envelopes. The swerve redesign is in development.",
-  "viewerUrl": "https://ehartye.github.io/frc-2024-poc/robot/cad/",
-  "featured": {
-    "title": "1780 MAXSwerve \u00b7 R9 physical assembly",
-    "scope": "Parked robot with its inboard lift drive, frame, removable bumper and electrical supports. Purchased mechanisms use dimensioned external models. This view records mechanical fit in CAD.",
-    "viewerUrl": "https://ehartye.github.io/frc-2024-poc/?view=r9-assembly#model",
-    "receipt": "docs/media/r9-assembly.json",
-    "linkLabel": "Inspect the parked assembly"
-  }
+  "publication": "withdrawn",
+  "review": "experiments/passive-entry/showcase-attachments.md"
 }

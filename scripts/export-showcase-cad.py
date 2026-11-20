@@ -121,5 +121,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     project = args.root.resolve()
     manifest = json.loads((project / "cad-showcase.json").read_text(encoding="utf-8-sig"))
+    if manifest.get("publication") == "withdrawn":
+        raise SystemExit("Whole-robot exhibition is withdrawn. See the attachment review.")
     export(project, manifest, project / "docs" / "robot" / "cad")
 

@@ -20,8 +20,10 @@ jobs:
       - name: Verify student project layout and Fusion handoff
         run: node ../.layout-validator/scripts/project-layout.mjs check .
 
-      - name: Verify CAD views and README coverage
-        run: python scripts/cad-readmes.py . --template scripts/cad-orbit.html
+      - name: Verify student publication and README coverage
+        run: |
+          python scripts/cad-readmes.py . --template scripts/cad-orbit.html
+          python -B tests/test_student_publication.py
 
       - name: Verify installed swerve display assemblies
         run: python -m unittest discover -s tests -p 'test_showcase*.py'

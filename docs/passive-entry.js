@@ -4,7 +4,7 @@ async function get(file) {
   if (!response.ok) throw Error(file);
   return response.json();
 }
-const [data,cad] = await Promise.all([get('passive-entry.json'),get('passive-cassette.json')]);
+const [data,cad] = await Promise.all([get('passive-entry.json'),get('passive-carrier.json')]);
 function renderCassette() {
   const canvas=el('cad'), ctx=canvas.getContext('2d'), yaw=Number(el('angle').value)*Math.PI/180;
   const faces=[];
