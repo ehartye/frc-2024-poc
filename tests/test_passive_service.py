@@ -56,6 +56,22 @@ class ServiceFixture(unittest.TestCase):
         self.assertEqual(pair["stations"], [1, 4])
         self.assertGreater(pair["bracketOverlapMm3"], 209)
 
+    def test_r11_receiving_plate(self):
+        bench = READINESS / "bench"
+        fit = json.loads((bench / "bench-fit.json").read_bytes())
+        self.assertEqual(
+            fit["plateStepSha256"],
+            hashlib.sha256((bench / "bench-plate.step").read_bytes()).hexdigest(),
+        )
+        self.assertEqual(len(fit["centersMm"]), 4)
+        self.assertEqual(len(fit["clinchHolesMm"]), 12)
+        self.assertEqual(len(fit["gaugeCollisions"]), 56)
+        self.assertFalse(any(fit["gaugeCollisions"].values()))
+        self.assertFalse(fit["fixturePositiveIntersections"])
+        self.assertGreater(fit["flangeProjectedSeatPerBracketMm2"], 480)
+        self.assertAlmostEqual(fit["openGapBetweenOpposed35mmGaugesMm"], 4.75)
+        self.assertGreater(fit["shiftedShankOverlapMm3"], 10)
+
 
 if __name__ == "__main__":
     unittest.main()

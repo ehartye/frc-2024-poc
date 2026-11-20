@@ -2,6 +2,8 @@
 
 Open the [R9 Fusion assembly](student/r9-physical-assembly.f3d) for the current parked mechanical build. The [R9 handoff](assembly-readiness/physical-assembly.md) includes the assembly order, stock and purchased articles, fit measurements, shop drawings and open physical checks. Use the archive hash in the [R9 display receipt](../docs/media/r9-assembly.json) to match the model and its still.
 
+The [R11 service tooling](service-readiness/r11-service.md) adds a separate four-controller receiving plate, battery dressing gauge and unloaded parking spacer.
+
 The [R10 service fixture](student/r10-passive-service.f3d) isolates the battery tray, unloaded mast and their parked mounting interfaces. The [service handoff](service-readiness/passive-service.md) records the extraction checks, purchased hardware and rejected controller bracket positions.
 
 The archived R7 display assembly is **FRC 2024 - Team 1780 - MAXSwerve Integration - Active Draft**, with the R7 boxed front crossmember. Authorized team members can open the named design in Fusion. Use the SHA-256 in the display receipt to identify its archived F3D. The nominal R7 replay uses that same F3D. The original D1 replay uses the earlier articulated archive identified by the layout record. [Display archive identity](../docs/media/swerve-r7.json) · [Scoring archive identity and component register](drivetrain/maxswerve-layout.json)
