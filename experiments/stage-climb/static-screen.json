@@ -1,0 +1,123 @@
+{
+  "schema": "stage-static-screen/1",
+  "nativeSha256": "26a5335e66c05dec8918b767dd27a4cb62421c1d88450102e6c66d1a4914c612",
+  "r7SurveySha256": "33ae65ac867a18ace8f592648c4b182394cafa90dfd81c21fe05a876c11a61c3",
+  "fieldStepSha256": "42c91b3efb9521d059c13cf25e2d7dda6315bdd6b7eb1202847bfe84ffb43c1a",
+  "nativePose": "R7 intake lowered, R8 slide and pin at zero, single bearing roof",
+  "internalSweepBoxOverlaps": [
+    [
+      "Rail mounting fastener envelope 23 -329",
+      "Swerve frame - interchangeable drilled rail"
+    ],
+    [
+      "Rail crush sleeve 23 -329",
+      "Swerve frame - interchangeable drilled rail"
+    ],
+    [
+      "Rail mounting fastener envelope 53 -329",
+      "Swerve frame - interchangeable drilled rail"
+    ],
+    [
+      "Rail crush sleeve 53 -329",
+      "Swerve frame - interchangeable drilled rail"
+    ],
+    [
+      "Rail mounting fastener envelope 23 329",
+      "Swerve frame - interchangeable drilled rail"
+    ],
+    [
+      "Rail crush sleeve 23 329",
+      "Swerve frame - interchangeable drilled rail"
+    ],
+    [
+      "Rail mounting fastener envelope 53 329",
+      "Swerve frame - interchangeable drilled rail"
+    ],
+    [
+      "Rail crush sleeve 53 329",
+      "Swerve frame - interchangeable drilled rail"
+    ]
+  ],
+  "chainFit": {
+    "halfSpanMm": 1210.569163499109,
+    "halfLengthMm": 1320.9565714177286,
+    "anchorApproxMm": 1179.2636759986485,
+    "catenaryAmm": 1658.5536410506988
+  },
+  "addedNominalKg": 4.7711022933,
+  "addedCenterMm": [
+    39.618651162446255,
+    -7.186124816763417,
+    271.29282799165026
+  ],
+  "newNominalKg": 52.786157186389204,
+  "newNominalCenterMm": [
+    10.60520548099221,
+    -27.79698316361199,
+    281.5230461433498
+  ],
+  "upperMassKg": 60.73475842588824,
+  "stageChecks": [
+    {
+      "seatOffsetMm": 0.0,
+      "unloadedLowMm": 717.5044996060789,
+      "loadedSeatMm": 650.6347286672068,
+      "raisedLipClearanceOverChainAllowanceMm": 88.49550039392113,
+      "nominalTiltDeg": 2.9829624468170923,
+      "nominalFloorClearMm": 152.79729386968188,
+      "adverseFloorClearMm": 80.89498722410531,
+      "adverseTiltDeg": 9.977665899127224,
+      "minFixedFieldBoxGapMm": 143.4655868924678,
+      "possibleFixedFieldPairs": [],
+      "nominalPartnerBoxGapMm": null,
+      "adversePartnerBoxGapMm": null,
+      "outerChainTensionN": 744.158740206424,
+      "innerChainTensionN": null,
+      "linkTensionDifferenceN": null
+    },
+    {
+      "seatOffsetMm": 500.0,
+      "unloadedLowMm": 793.4438986768065,
+      "loadedSeatMm": 768.0932052226837,
+      "raisedLipClearanceOverChainAllowanceMm": 12.556101323193502,
+      "nominalTiltDeg": 2.9829624468170923,
+      "nominalFloorClearMm": 270.25577042515874,
+      "adverseFloorClearMm": 198.35346377958217,
+      "adverseTiltDeg": 9.977665899127224,
+      "minFixedFieldBoxGapMm": 0.0,
+      "possibleFixedFieldPairs": [
+        [
+          "radio",
+          "GE-24251_Clampv2"
+        ]
+      ],
+      "nominalPartnerBoxGapMm": 119.05304105807636,
+      "adversePartnerBoxGapMm": 42.63831424936336,
+      "outerChainTensionN": 1189.2036961803915,
+      "innerChainTensionN": 1029.3010678575602,
+      "linkTensionDifferenceN": 159.90262832283133
+    }
+  ],
+  "loads": {
+    "upperStaticN": 595.6045187172368,
+    "designForceN": 1191.2090374344737,
+    "designFactor": 2,
+    "pinDoubleShearMPa": 7.583472262537403,
+    "innerTubeBearingMPa": 23.82418074868947,
+    "beamBendingMPa": 33.88900349733025,
+    "roofBendingMPa": 29.85278478777658,
+    "screwTorqueNmAt4mmLead30pctEfficiency": 1.263912043756234
+  },
+  "limitations": [
+    "Mast and chain use quasi-static geometry. No dynamic capture, swing, unequal partner loading or sequential load-sharing proof.",
+    "Disabled support requires positive lock engagement, rail attachment, single-link seating and adequate strength. Hardware selection, proof loading and full passive hold are open.",
+    "Installed field screening uses fixed leaf boxes at the nominal terminal poses. Approach transients, yaw drift and separate flexible spans need further testing."
+  ],
+  "soloChainPath": {
+    "sampleCount": 67,
+    "segments": 160,
+    "boxInflationMm": 14,
+    "possibleContacts": [],
+    "scope": "Sampled solo approach and engaged-lock trajectory at nominal CG. Intended saddle roof and cheeks excluded; retained R7 physical bumper constituents replace the cosmetic whole-bumper AABB. No dynamic contact or inter-sample proof."
+  }
+}

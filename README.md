@@ -6,6 +6,8 @@
 **1780 MAXSwerve · R7.** Reopened Fusion assembly with the boxed front crossmember and red 1780 bumper. Explore the four installed swerve modules and follow the first D1 NOTE from the floor through lift and release to both modeled Speaker sensors. Purchased parts use dimensioned display geometry. [Inspect all four corners](https://ehartye.github.io/frc-2024-poc/?view=swerve#model). [Native model record](docs/media/swerve-r7.json) · [Open 3D replay](https://ehartye.github.io/frc-2024-poc/#model)
 <!-- /cad-still -->
 
+[Explore the R8 Stage climb and missed-lock control](https://ehartye.github.io/frc-2024-poc/?view=r8-stage#model) · [Climber design, load transfer and clearance](experiments/stage-climb/study.md) · [Both-alliance STAGE and qualification results](experiments/speaker-cycles/match-rehearsal.md)
+
 The nominal R7 collected six distinct floor NOTES and reached the shared counter six times by **117.756 s** on development start D1. All twenty formal evaluation starts remain available.
 
 [Download the student R7 Fusion assembly](https://raw.githubusercontent.com/ehartye/frc-2024-poc/main/cad/student/r7-maxswerve.f3d) · [Fusion joints and native handoff](cad/native-handoff.md) · [Play the R7 nominal-mass pickup and shot](https://ehartye.github.io/frc-2024-poc/?view=r7-budget#model) · [Six-NOTE mission results](experiments/speaker-cycles/mission.md)

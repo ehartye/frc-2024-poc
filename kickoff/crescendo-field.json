@@ -26,11 +26,11 @@
   ],
   "landmarks": [],
   "geometrySource": "FE-2024 installed assembly, field layout sheets 3\u20134 and game-specific field drawings. Project-selected interaction poses are in inches.",
-  "omissions": "Timed tactical rehearsal. Unamplified scoring and NOTE identity are modeled. Live amplification, STAGE tasks, defense contacts and official adjudication are outside these totals.",
+  "omissions": "Timed tactical rehearsal. NOTE scoring and end-of-match actions have separate ledgers. Amplification, impacts, referee awards and robot construction qualification require external observations.",
   "rehearsal": {
     "schema": "field-rehearsal/v1",
     "basis": "Six independently assigned match roles on the archived final CRESCENDO layout. Service time, release outcome and robot speed are scenario inputs.",
-    "boundsNote": "Stage leg boxes bound the registered native legs. Cables, overhangs, final climb, referee calls and contact forces are omitted.",
+    "boundsNote": "Leg rectangles use installed field geometry. Endgame targets represent chassis centers. The native robot and loaded-chain study checks vertical clearance separately.",
     "sources": [
       "https://firstfrc.blob.core.windows.net/frc2024/Manual/HTML/2024GameManual.htm",
       "https://firstfrc.blob.core.windows.net/frc2024/FieldAssets/2024LayoutMarkingDiagram.pdf",
@@ -1211,7 +1211,7 @@
       "matches": [
         {
           "id": "wing-opening",
-          "basis": "Both alliances prioritize their own wing and local goals.",
+          "basis": "An R7 solo attempt has unresolved passive retention. Red rehearses a qualified solo hang.",
           "setup": "Nominal field",
           "roster": [
             {
@@ -1238,6 +1238,18 @@
               "plans": {
                 "AUTO": "opening-amp",
                 "TELEOP": "red-amp"
+              },
+              "endgame": {
+                "action": "onstage",
+                "target": "red-center",
+                "startS": 110,
+                "witnesses": {
+                  "ownChainOnly": "met",
+                  "floorClear": "met",
+                  "allowedContacts": "met",
+                  "supportedThroughAssessment": "met",
+                  "directOrTransitiveChainSupport": "met"
+                }
               }
             },
             {
@@ -1260,6 +1272,25 @@
               "plans": {
                 "AUTO": "opening-speaker",
                 "TELEOP": "cycler"
+              },
+              "endgame": {
+                "action": "onstage",
+                "target": "blue-center",
+                "startS": 111,
+                "witnesses": {
+                  "ownChainOnly": "met",
+                  "floorClear": "met",
+                  "allowedContacts": "met",
+                  "supportedThroughAssessment": "unknown",
+                  "directOrTransitiveChainSupport": "met",
+                  "bumpersInOwnStageZoneAtAssessment": "unknown"
+                },
+                "fallbacks": [
+                  {
+                    "action": "park",
+                    "target": "blue-center"
+                  }
+                ]
               }
             },
             {
@@ -1284,11 +1315,12 @@
                 "TELEOP": "midfield"
               }
             }
-          ]
+          ],
+          "endgameAtRestAfterS": 5
         },
         {
           "id": "shared-center",
-          "basis": "Supporting robots pursue the same midfield corridor.",
+          "basis": "Two Blue partners share the lit straight chain with an equal-load assumption. Red rehearses one solo hang and one independent park.",
           "setup": "Nominal field",
           "roster": [
             {
@@ -1302,6 +1334,18 @@
               "plans": {
                 "AUTO": "opening-speaker",
                 "TELEOP": "cycler"
+              },
+              "endgame": {
+                "action": "onstage",
+                "target": "blue-upper",
+                "startS": 111,
+                "witnesses": {
+                  "ownChainOnly": "met",
+                  "floorClear": "met",
+                  "allowedContacts": "met",
+                  "supportedThroughAssessment": "met",
+                  "directOrTransitiveChainSupport": "met"
+                }
               }
             },
             {
@@ -1315,6 +1359,18 @@
               "plans": {
                 "AUTO": "opening-amp",
                 "TELEOP": "midfield"
+              },
+              "endgame": {
+                "action": "onstage",
+                "target": "blue-lower",
+                "startS": 111,
+                "witnesses": {
+                  "ownChainOnly": "met",
+                  "floorClear": "met",
+                  "allowedContacts": "met",
+                  "supportedThroughAssessment": "met",
+                  "directOrTransitiveChainSupport": "met"
+                }
               }
             },
             {
@@ -1337,6 +1393,18 @@
               "plans": {
                 "AUTO": "opening-speaker",
                 "TELEOP": "cycler"
+              },
+              "endgame": {
+                "action": "onstage",
+                "target": "red-center",
+                "startS": 107,
+                "witnesses": {
+                  "ownChainOnly": "met",
+                  "floorClear": "met",
+                  "allowedContacts": "met",
+                  "supportedThroughAssessment": "met",
+                  "directOrTransitiveChainSupport": "met"
+                }
               }
             },
             {
@@ -1359,13 +1427,22 @@
               "plans": {
                 "AUTO": "opening-support",
                 "TELEOP": "midfield"
+              },
+              "endgame": {
+                "action": "park",
+                "target": "red-park",
+                "startS": 117,
+                "witnesses": {
+                  "bumpersInOwnStageZoneAtAssessment": "met"
+                }
               }
             }
-          ]
+          ],
+          "endgameAtRestAfterS": 2.5
         },
         {
           "id": "miss-and-stage",
-          "basis": "One cycler misses its first TELEOP shot. One partner attempts the unqualified TRAP.",
+          "basis": "Blue leaves too little time for its solo climb. Red loses support and has an independent PARK observation.",
           "setup": "Nominal field",
           "roster": [
             {
@@ -1392,6 +1469,25 @@
               "plans": {
                 "AUTO": "opening-amp",
                 "TELEOP": "amp"
+              },
+              "endgame": {
+                "action": "onstage",
+                "target": "red-center",
+                "startS": 110,
+                "witnesses": {
+                  "ownChainOnly": "met",
+                  "floorClear": "met",
+                  "allowedContacts": "met",
+                  "supportedThroughAssessment": "failed",
+                  "directOrTransitiveChainSupport": "met",
+                  "bumpersInOwnStageZoneAtAssessment": "met"
+                },
+                "fallbacks": [
+                  {
+                    "action": "park",
+                    "target": "red-center"
+                  }
+                ]
               }
             },
             {
@@ -1418,6 +1514,18 @@
               "plans": {
                 "AUTO": "opening-speaker",
                 "TELEOP": "miss-recover"
+              },
+              "endgame": {
+                "action": "onstage",
+                "target": "blue-center",
+                "startS": 129,
+                "witnesses": {
+                  "ownChainOnly": "met",
+                  "floorClear": "met",
+                  "allowedContacts": "met",
+                  "supportedThroughAssessment": "met",
+                  "directOrTransitiveChainSupport": "met"
+                }
               }
             },
             {
@@ -1440,8 +1548,251 @@
               "plans": {
                 "AUTO": "opening-support",
                 "TELEOP": "midfield"
+              },
+              "endgame": {
+                "action": "park",
+                "target": "blue-park",
+                "startS": 112,
+                "witnesses": {
+                  "bumpersInOwnStageZoneAtAssessment": "met"
+                }
               }
             }
+          ],
+          "endgameAtRestAfterS": 8
+        }
+      ]
+    },
+    "endgame": {
+      "period": "TELEOP",
+      "basis": "Archived final 2024 rules. The clock determines travel and service. Contact, disabled support and microphone states are scenario observations. ENSEMBLE awards one qualification RP for at least 10 STAGE points and two ONSTAGE robots. The match score counts match points only.",
+      "sources": [
+        "https://firstfrc.blob.core.windows.net/frc2024/Manual/HTML/2024GameManual.htm",
+        "https://firstfrc.blob.core.windows.net/frc2024/FieldAssets/2024FieldDrawings.pdf"
+      ],
+      "assessment": {
+        "maxDelayS": 5
+      },
+      "targets": [
+        {
+          "id": "blue-center",
+          "label": "Blue straight chain, center",
+          "side": "blue",
+          "at": [
+            226.735,
+            162.809
+          ],
+          "displayAt": [
+            226.735,
+            161.628
+          ],
+          "radiusIn": 0.4,
+          "resource": "straight-chain",
+          "capacity": 2,
+          "actions": [
+            "onstage",
+            "park"
+          ],
+          "witnesses": {
+            "microphoneHasHighNote": "met"
+          }
+        },
+        {
+          "id": "blue-lower",
+          "label": "Blue straight chain, lower",
+          "side": "blue",
+          "at": [
+            226.735,
+            143.124
+          ],
+          "displayAt": [
+            226.735,
+            141.943
+          ],
+          "radiusIn": 0.4,
+          "resource": "straight-chain",
+          "capacity": 2,
+          "actions": [
+            "onstage",
+            "park"
+          ],
+          "witnesses": {
+            "microphoneHasHighNote": "met"
+          }
+        },
+        {
+          "id": "blue-upper",
+          "label": "Blue straight chain, upper",
+          "side": "blue",
+          "at": [
+            226.735,
+            182.494
+          ],
+          "displayAt": [
+            226.735,
+            181.313
+          ],
+          "radiusIn": 0.4,
+          "resource": "straight-chain",
+          "capacity": 2,
+          "actions": [
+            "onstage",
+            "park"
+          ],
+          "witnesses": {
+            "microphoneHasHighNote": "met"
+          }
+        },
+        {
+          "id": "blue-park",
+          "label": "Blue zone parking pose",
+          "side": "blue",
+          "at": [
+            182,
+            144
+          ],
+          "radiusIn": 1,
+          "resource": "zone-parking-pose",
+          "capacity": 1,
+          "actions": [
+            "park"
+          ]
+        },
+        {
+          "id": "red-center",
+          "label": "Red straight chain, center",
+          "side": "red",
+          "at": [
+            424.515,
+            160.441
+          ],
+          "displayAt": [
+            424.515,
+            161.622
+          ],
+          "radiusIn": 0.4,
+          "resource": "straight-chain",
+          "capacity": 2,
+          "actions": [
+            "onstage",
+            "park"
+          ],
+          "witnesses": {
+            "microphoneHasHighNote": "unknown"
+          }
+        },
+        {
+          "id": "red-lower",
+          "label": "Red straight chain, lower",
+          "side": "red",
+          "at": [
+            424.515,
+            140.756
+          ],
+          "displayAt": [
+            424.515,
+            141.937
+          ],
+          "radiusIn": 0.4,
+          "resource": "straight-chain",
+          "capacity": 2,
+          "actions": [
+            "onstage",
+            "park"
+          ],
+          "witnesses": {
+            "microphoneHasHighNote": "unknown"
+          }
+        },
+        {
+          "id": "red-upper",
+          "label": "Red straight chain, upper",
+          "side": "red",
+          "at": [
+            424.515,
+            180.126
+          ],
+          "displayAt": [
+            424.515,
+            181.307
+          ],
+          "radiusIn": 0.4,
+          "resource": "straight-chain",
+          "capacity": 2,
+          "actions": [
+            "onstage",
+            "park"
+          ],
+          "witnesses": {
+            "microphoneHasHighNote": "unknown"
+          }
+        },
+        {
+          "id": "red-park",
+          "label": "Red zone parking pose",
+          "side": "red",
+          "at": [
+            469.25,
+            144
+          ],
+          "radiusIn": 1,
+          "resource": "zone-parking-pose",
+          "capacity": 1,
+          "actions": [
+            "park"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "id": "onstage",
+          "label": "ONSTAGE",
+          "points": 3,
+          "serviceS": 10,
+          "requires": [
+            "ownChainOnly",
+            "floorClear",
+            "allowedContacts",
+            "supportedThroughAssessment"
+          ]
+        },
+        {
+          "id": "park",
+          "label": "PARK",
+          "points": 1,
+          "serviceS": 0,
+          "requires": [
+            "bumpersInOwnStageZoneAtAssessment"
+          ]
+        }
+      ],
+      "bonuses": [
+        {
+          "id": "spotlight",
+          "label": "SPOTLIGHT",
+          "points": 1,
+          "minRobots": 1,
+          "scope": "resource",
+          "per": "robot",
+          "actions": [
+            "onstage"
+          ],
+          "targetRequires": [
+            "microphoneHasHighNote"
+          ]
+        },
+        {
+          "id": "harmony",
+          "label": "HARMONY",
+          "points": 2,
+          "minRobots": 2,
+          "scope": "resource",
+          "per": "additionalRobot",
+          "actions": [
+            "onstage"
+          ],
+          "requires": [
+            "directOrTransitiveChainSupport"
           ]
         }
       ]

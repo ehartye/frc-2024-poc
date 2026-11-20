@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: ehartye/agent-frc
-          ref: 0fbf18d8ebb00e34fbd55f06a98e9169509cfca1
+          ref: 4154d301e28d36f0168f6df3f568fe57b549791f
           path: .layout-validator
           persist-credentials: false
       - name: Verify student project layout and Fusion handoff
@@ -25,3 +25,11 @@ jobs:
 
       - name: Verify installed swerve display assemblies
         run: python -m unittest discover -s tests -p 'test_showcase*.py'
+
+      - name: Reproduce the Stage rehearsal and check the public climber evidence
+        run: |
+          node ../.layout-validator/scripts/rehearsal-series.mjs kickoff/crescendo-field.json "$RUNNER_TEMP/stage-series.json"
+          cmp "$RUNNER_TEMP/stage-series.json" experiments/speaker-cycles/match-series.json
+          node ../.layout-validator/scripts/kickoff.mjs --profile kickoff/crescendo-field.json --output "$RUNNER_TEMP/field-lab.html"
+          cmp "$RUNNER_TEMP/field-lab.html" docs/field-lab.html
+          python tests/test_stage_endgame.py

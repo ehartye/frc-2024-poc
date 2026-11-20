@@ -61,6 +61,7 @@ header{max-width:none;padding:23px max(clamp(14px,3vw,48px),calc((100vw - 1344px
 <button id="replayFast">Run to period end</button><button id="replayReset">Reset match</button><button id="replaySave">Save rehearsal snapshot</button>
 <label>Obstacle setup<select id="replaySetup"></select></label></div>
 <p id="replayNotice" role="status"></p><div class="actions"><button id="addBlue">Add blue robot</button><button id="addRed">Add red robot</button></div>
+<p id="replayTerminal" hidden></p>
 <details><summary>Station key and live counts</summary><p>Field labels show station number and available or attempted pieces. Select a station to isolate its field marker.</p><ol id="replayStations"></ol></details><p id="replayScore"></p><ol id="replayResults"></ol><div id="replayRoster"></div><p id="replayQueue"></p><details><summary>Field assumptions and phase log</summary><p id="replayBasis"></p><ol id="replayEvents"></ol></details>
 </article>
 <article id="opportunity"><h2>What can we score in this window?</h2>
@@ -84,7 +85,7 @@ header{max-width:none;padding:23px max(clamp(14px,3vw,48px),calc((100vw - 1344px
 <div class="fields"><label>Our role and repeatable match cycle<textarea id="story"></textarea></label><label>Alternative role or fallback<textarea id="alternative"></textarea></label><label>Capability the design would need<textarea id="capability"></textarea></label><label>What should we test first?<textarea id="experiment"></textarea></label></div>
 <div class="actions"><button class="primary" id="download">Download narrative and observations</button><span id="feedback" role="status"></span></div></article>
 </main>
-<script id="profile" type="application/json">{"season":2024,"game":"CRESCENDO","edition":"Archived final 2024 manual and Team Update 21","manual":"https://firstfrc.blob.core.windows.net/frc2024/Manual/HTML/2024GameManual.htm","units":"in","field":{"length":651.25,"width":323.25,"source":"https://firstfrc.blob.core.windows.net/frc2024/FieldAssets/2024LayoutMarkingDiagram.pdf"},"limits":{"height":48,"perimeter":120,"source":"2024 R104, R105 and G413. Envelope and complete bumper support need a separate inspection."},"levels":[{"name":"Speaker low lip","height":78},{"name":"AMP sill","height":26}],"landmarks":[],"geometrySource":"FE-2024 installed assembly, field layout sheets 3–4 and game-specific field drawings. Project-selected interaction poses are in inches.","omissions":"Timed tactical rehearsal. Unamplified scoring and NOTE identity are modeled. Live amplification, STAGE tasks, defense contacts and official adjudication are outside these totals.","rehearsal":{"schema":"field-rehearsal/v1","basis":"Six independently assigned match roles on the archived final CRESCENDO layout. Service time, release outcome and robot speed are scenario inputs.","boundsNote":"Stage leg boxes bound the registered native legs. Cables, overhangs, final climb, referee calls and contact forces are omitted.","sources":["https://firstfrc.blob.core.windows.net/frc2024/Manual/HTML/2024GameManual.htm","https://firstfrc.blob.core.windows.net/frc2024/FieldAssets/2024LayoutMarkingDiagram.pdf","https://firstfrc.blob.core.windows.net/frc2024/FieldAssets/2024FieldDrawings.pdf"],"resourceLabel":"Speaker lane","setups":["Nominal field"],"planes":[],"obstacles":[{"name":"Blue stage leg 1","kind":"post","lower":0,"poly":[[212.77,102.65],[229.17,102.65],[229.17,119.04],[212.77,119.04]]},{"name":"Blue stage leg 2","kind":"post","lower":0,"poly":[[212.77,204.21],[229.17,204.21],[229.17,220.6],[212.77,220.6]]},{"name":"Blue stage leg 3","kind":"post","lower":0,"poly":[[127.01,155.63],[139.01,155.63],[139.01,167.63],[127.01,167.63]]},{"name":"Red stage leg 1","kind":"post","lower":0,"poly":[[422.08,204.21],[438.48,204.21],[438.48,220.6],[422.08,220.6]]},{"name":"Red stage leg 2","kind":"post","lower":0,"poly":[[422.08,102.65],[438.48,102.65],[438.48,119.04],[422.08,119.04]]},{"name":"Red stage leg 3","kind":"post","lower":0,"poly":[[512.24,155.62],[524.24,155.62],[524.24,167.62],[512.24,167.62]]}],"bands":[],"starts":[[38,218.4],[40,276],[36,107]],"mirror":{"redX":true,"redY":false},"periods":[{"name":"AUTO","seconds":15},{"name":"TELEOP","seconds":135}],"defaults":{"length":28,"width":28,"height":28,"bumper":3,"heading":0,"speed":85,"capacity":1,"orders":["cycler","amp","midfield"]},"programs":{"opening-speaker":{"label":"Preload and middle wing","steps":[{"at":[57,218.4],"label":"Attempt speaker","station":{"blue":"blue-speaker","red":"red-speaker"},"operation":"attempt","dwell":1.6,"outcome":"credited"},{"at":[114,218.625],"label":"Collect middle","station":{"blue":"blue-middle","red":"red-middle"},"operation":"acquire","dwell":1.2},{"at":[57,218.4],"label":"Attempt speaker","station":{"blue":"blue-speaker","red":"red-speaker"},"operation":"attempt","dwell":1.6,"outcome":"credited"}],"loop":false},"opening-amp":{"label":"Preload at AMP and outer wing","steps":[{"at":[72.5,298],"label":"Attempt amp","station":{"blue":"blue-amp","red":"red-amp"},"operation":"attempt","dwell":1.6,"outcome":"credited"},{"at":[114,275.625],"label":"Collect outer","station":{"blue":"blue-outer","red":"red-outer"},"operation":"acquire","dwell":1.2},{"at":[72.5,298],"label":"Attempt amp","station":{"blue":"blue-amp","red":"red-amp"},"operation":"attempt","dwell":1.6,"outcome":"credited"}],"loop":false},"opening-support":{"label":"Carry preload out to support lane","steps":[{"at":[145,91],"label":"Leave and establish lane"}],"loop":false},"cycler":{"label":"Close Speaker cycles","steps":[{"at":[103,161.625],"label":"Collect inner","station":{"blue":"blue-inner","red":"red-inner"},"operation":"acquire","dwell":1.2},{"at":[57,218.4],"label":"Attempt speaker","station":{"blue":"blue-speaker","red":"red-speaker"},"operation":"attempt","dwell":1.6,"outcome":"credited"},{"at":[325.625,227.625],"label":"Collect center-4","station":"center-4","operation":"acquire","dwell":1.2},{"at":[57,218.4],"label":"Attempt speaker","station":{"blue":"blue-speaker","red":"red-speaker"},"operation":"attempt","dwell":1.6,"outcome":"credited"},{"at":[588,49],"label":"Collect source","station":{"blue":"blue-source","red":"red-source"},"operation":"acquire","dwell":1.2},{"at":[57,218.4],"label":"Attempt speaker","station":{"blue":"blue-speaker","red":"red-speaker"},"operation":"attempt","dwell":1.6,"outcome":"credited"}],"loop":true},"amp":{"label":"AMP supply cycles","steps":[{"at":[325.625,293.625],"label":"Collect center-5","station":"center-5","operation":"acquire","dwell":1.2},{"at":[72.5,298],"label":"Attempt amp","station":{"blue":"blue-amp","red":"red-amp"},"operation":"attempt","dwell":1.6,"outcome":"credited"},{"at":[588,49],"label":"Collect source","station":{"blue":"blue-source","red":"red-source"},"operation":"acquire","dwell":1.2},{"at":[72.5,298],"label":"Attempt amp","station":{"blue":"blue-amp","red":"red-amp"},"operation":"attempt","dwell":1.6,"outcome":"credited"}],"loop":true},"midfield":{"label":"Retrieve a midfield NOTE and deliver to the home lane","steps":[{"at":[325.625,95.625],"label":"Collect center-2","station":"center-2","operation":"acquire","dwell":1.2},{"at":[142,75],"label":"Offer retained NOTE from home lane"}],"loop":false},"miss-recover":{"label":"Miss then collect from SOURCE","steps":[{"at":[103,161.625],"label":"Collect inner","station":{"blue":"blue-inner","red":"red-inner"},"operation":"acquire","dwell":1.2},{"at":[57,218.4],"label":"Attempt speaker","station":{"blue":"blue-speaker","red":"red-speaker"},"operation":"attempt","dwell":1.6,"outcome":"missed"},{"at":[588,49],"label":"Collect source","station":{"blue":"blue-source","red":"red-source"},"operation":"acquire","dwell":1.2},{"at":[57,218.4],"label":"Attempt speaker","station":{"blue":"blue-speaker","red":"red-speaker"},"operation":"attempt","dwell":1.6,"outcome":"credited"}],"loop":true},"trap-approach":{"label":"Carry a NOTE toward a TRAP","steps":[{"at":[167,204],"label":"Carry toward upper stage face"},{"at":[167,204],"label":"Attempt trap-upper","station":{"blue":"blue-trap-upper","red":"red-trap-upper"},"operation":"attempt","dwell":1.6,"outcome":"unresolved"},{"at":[588,49],"label":"Collect source","station":{"blue":"blue-source","red":"red-source"},"operation":"acquire","dwell":1.2},{"at":[160,90],"label":"Return home"}],"loop":false},"red-cycler":{"label":"Close Speaker cycles (red lane)","steps":[{"at":[103,161.625],"label":"Collect inner","station":{"blue":"blue-inner","red":"red-inner"},"operation":"acquire","dwell":1.2},{"at":[57,218.4],"label":"Attempt speaker","station":{"blue":"blue-speaker","red":"red-speaker"},"operation":"attempt","dwell":1.6,"outcome":"credited"},{"at":[325.625,161.625],"label":"Collect center-3","station":"center-3","operation":"acquire","dwell":1.2},{"at":[57,218.4],"label":"Attempt speaker","station":{"blue":"blue-speaker","red":"red-speaker"},"operation":"attempt","dwell":1.6,"outcome":"credited"},{"at":[588,49],"label":"Collect source","station":{"blue":"blue-source","red":"red-source"},"operation":"acquire","dwell":1.2},{"at":[57,218.4],"label":"Attempt speaker","station":{"blue":"blue-speaker","red":"red-speaker"},"operation":"attempt","dwell":1.6,"outcome":"credited"}],"loop":true},"red-amp":{"label":"AMP supply cycles (red lane)","steps":[{"at":[325.625,29.625],"label":"Collect center-1","station":"center-1","operation":"acquire","dwell":1.2},{"at":[72.5,298],"label":"Attempt amp","station":{"blue":"blue-amp","red":"red-amp"},"operation":"attempt","dwell":1.6,"outcome":"credited"},{"at":[588,49],"label":"Collect source","station":{"blue":"blue-source","red":"red-source"},"operation":"acquire","dwell":1.2},{"at":[72.5,298],"label":"Attempt amp","station":{"blue":"blue-amp","red":"red-amp"},"operation":"attempt","dwell":1.6,"outcome":"credited"}],"loop":true},"red-midfield":{"label":"Retrieve a midfield NOTE and deliver to the home lane (red lane)","steps":[{"at":[325.625,227.625],"label":"Collect center-4","station":"center-4","operation":"acquire","dwell":1.2},{"at":[142,75],"label":"Offer retained NOTE from home lane"}],"loop":false}},"stations":[{"id":"blue-source","label":"Blue SOURCE","kind":"retrieval","side":"blue","piece":"NOTE","at":[588,49],"displayAt":[615.54,22.1],"radiusIn":12,"stock":9},{"id":"blue-inner","label":"Blue inner wing NOTE","kind":"retrieval","side":"blue","piece":"NOTE","at":[103,161.625],"displayAt":[114,161.625],"radiusIn":12,"stock":1},{"id":"blue-middle","label":"Blue middle wing NOTE","kind":"retrieval","side":"blue","piece":"NOTE","at":[114,218.625],"displayAt":[114,218.625],"radiusIn":12,"stock":1},{"id":"blue-outer","label":"Blue outer wing NOTE","kind":"retrieval","side":"blue","piece":"NOTE","at":[114,275.625],"displayAt":[114,275.625],"radiusIn":12,"stock":1},{"id":"blue-speaker","label":"Blue SPEAKER","kind":"scoring","side":"blue","piece":"NOTE","at":[57,218.4],"displayAt":[10,218.4],"radiusIn":12,"points":{"AUTO":5,"TELEOP":2},"criterion":"Scripted successful near shot after a stop and feed dwell. Ordinary TELEOP points."},{"id":"blue-amp","label":"Blue AMP","kind":"scoring","side":"blue","piece":"NOTE","at":[72.5,298],"displayAt":[72.5,323.12],"radiusIn":12,"points":{"AUTO":2,"TELEOP":1},"criterion":"Scripted placement through the AMP opening after a dwell."},{"id":"blue-trap-front","label":"Blue TRAP front","kind":"scoring","side":"blue","piece":"NOTE","at":[246,162],"displayAt":[208.62,161.61],"radiusIn":12,"points":{"AUTO":0,"TELEOP":5},"criterion":"Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved.","capacity":1},{"id":"blue-trap-upper","label":"Blue TRAP upper","kind":"scoring","side":"blue","piece":"NOTE","at":[167,204],"displayAt":[183.19,176.32],"radiusIn":12,"points":{"AUTO":0,"TELEOP":5},"criterion":"Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved.","capacity":1},{"id":"blue-trap-lower","label":"Blue TRAP lower","kind":"scoring","side":"blue","piece":"NOTE","at":[167,119],"displayAt":[183.16,146.95],"radiusIn":12,"points":{"AUTO":0,"TELEOP":5},"criterion":"Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved.","capacity":1},{"id":"red-source","label":"Red SOURCE","kind":"retrieval","side":"red","piece":"NOTE","at":[63.25,49],"displayAt":[35.71,22.1],"radiusIn":12,"stock":9},{"id":"red-inner","label":"Red inner wing NOTE","kind":"retrieval","side":"red","piece":"NOTE","at":[548.25,161.625],"displayAt":[537.25,161.625],"radiusIn":12,"stock":1},{"id":"red-middle","label":"Red middle wing NOTE","kind":"retrieval","side":"red","piece":"NOTE","at":[537.25,218.625],"displayAt":[537.25,218.625],"radiusIn":12,"stock":1},{"id":"red-outer","label":"Red outer wing NOTE","kind":"retrieval","side":"red","piece":"NOTE","at":[537.25,275.625],"displayAt":[537.25,275.625],"radiusIn":12,"stock":1},{"id":"red-speaker","label":"Red SPEAKER","kind":"scoring","side":"red","piece":"NOTE","at":[594.25,218.4],"displayAt":[641.25,218.4],"radiusIn":12,"points":{"AUTO":5,"TELEOP":2},"criterion":"Scripted successful near shot after a stop and feed dwell. Ordinary TELEOP points."},{"id":"red-amp","label":"Red AMP","kind":"scoring","side":"red","piece":"NOTE","at":[578.75,298],"displayAt":[578.75,323.12],"radiusIn":12,"points":{"AUTO":2,"TELEOP":1},"criterion":"Scripted placement through the AMP opening after a dwell."},{"id":"red-trap-front","label":"Red TRAP front","kind":"scoring","side":"red","piece":"NOTE","at":[405.25,162],"displayAt":[442.63,161.61],"radiusIn":12,"points":{"AUTO":0,"TELEOP":5},"criterion":"Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved.","capacity":1},{"id":"red-trap-upper","label":"Red TRAP upper","kind":"scoring","side":"red","piece":"NOTE","at":[484.25,204],"displayAt":[468.06,176.32],"radiusIn":12,"points":{"AUTO":0,"TELEOP":5},"criterion":"Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved.","capacity":1},{"id":"red-trap-lower","label":"Red TRAP lower","kind":"scoring","side":"red","piece":"NOTE","at":[484.25,119],"displayAt":[468.09,146.95],"radiusIn":12,"points":{"AUTO":0,"TELEOP":5},"criterion":"Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved.","capacity":1},{"id":"center-1","label":"Center NOTE 1","kind":"retrieval","side":"both","piece":"NOTE","at":[325.625,29.625],"displayAt":[325.625,29.625],"radiusIn":12,"stock":1},{"id":"center-2","label":"Center NOTE 2","kind":"retrieval","side":"both","piece":"NOTE","at":[325.625,95.625],"displayAt":[325.625,95.625],"radiusIn":12,"stock":1},{"id":"center-3","label":"Center NOTE 3","kind":"retrieval","side":"both","piece":"NOTE","at":[325.625,161.625],"displayAt":[325.625,161.625],"radiusIn":12,"stock":1},{"id":"center-4","label":"Center NOTE 4","kind":"retrieval","side":"both","piece":"NOTE","at":[325.625,227.625],"displayAt":[325.625,227.625],"radiusIn":12,"stock":1},{"id":"center-5","label":"Center NOTE 5","kind":"retrieval","side":"both","piece":"NOTE","at":[325.625,293.625],"displayAt":[325.625,293.625],"radiusIn":12,"stock":1}],"series":{"matches":[{"id":"wing-opening","basis":"Both alliances prioritize their own wing and local goals.","setup":"Nominal field","roster":[{"side":"red","slot":1,"capacity":1,"preload":{"station":"red-source","quantity":1},"plans":{"AUTO":"opening-speaker","TELEOP":"red-cycler"}},{"side":"red","slot":2,"capacity":1,"preload":{"station":"red-source","quantity":1},"plans":{"AUTO":"opening-amp","TELEOP":"red-amp"}},{"side":"red","slot":3,"capacity":1,"plans":{"AUTO":"opening-support","TELEOP":"red-midfield"}},{"side":"blue","slot":1,"capacity":1,"preload":{"station":"blue-source","quantity":1},"plans":{"AUTO":"opening-speaker","TELEOP":"cycler"}},{"side":"blue","slot":2,"capacity":1,"preload":{"station":"blue-source","quantity":1},"plans":{"AUTO":"opening-amp","TELEOP":"amp"}},{"side":"blue","slot":3,"capacity":1,"plans":{"AUTO":"opening-support","TELEOP":"midfield"}}]},{"id":"shared-center","basis":"Supporting robots pursue the same midfield corridor.","setup":"Nominal field","roster":[{"side":"blue","slot":1,"capacity":1,"preload":{"station":"blue-source","quantity":1},"plans":{"AUTO":"opening-speaker","TELEOP":"cycler"}},{"side":"blue","slot":2,"capacity":1,"preload":{"station":"blue-source","quantity":1},"plans":{"AUTO":"opening-amp","TELEOP":"midfield"}},{"side":"blue","slot":3,"capacity":1,"plans":{"AUTO":"opening-support","TELEOP":"midfield"}},{"side":"red","slot":1,"capacity":1,"preload":{"station":"red-source","quantity":1},"plans":{"AUTO":"opening-speaker","TELEOP":"cycler"}},{"side":"red","slot":2,"capacity":1,"preload":{"station":"red-source","quantity":1},"plans":{"AUTO":"opening-amp","TELEOP":"midfield"}},{"side":"red","slot":3,"capacity":1,"plans":{"AUTO":"opening-support","TELEOP":"midfield"}}]},{"id":"miss-and-stage","basis":"One cycler misses its first TELEOP shot. One partner attempts the unqualified TRAP.","setup":"Nominal field","roster":[{"side":"red","slot":1,"capacity":1,"preload":{"station":"red-source","quantity":1},"plans":{"AUTO":"opening-speaker","TELEOP":"cycler"}},{"side":"red","slot":2,"capacity":1,"preload":{"station":"red-source","quantity":1},"plans":{"AUTO":"opening-amp","TELEOP":"amp"}},{"side":"red","slot":3,"capacity":1,"preload":{"station":"red-source","quantity":1},"plans":{"AUTO":"opening-support","TELEOP":"trap-approach"}},{"side":"blue","slot":1,"capacity":1,"preload":{"station":"blue-source","quantity":1},"plans":{"AUTO":"opening-speaker","TELEOP":"miss-recover"}},{"side":"blue","slot":2,"capacity":1,"preload":{"station":"blue-source","quantity":1},"plans":{"AUTO":"opening-amp","TELEOP":"amp"}},{"side":"blue","slot":3,"capacity":1,"plans":{"AUTO":"opening-support","TELEOP":"midfield"}}]}]}},"scoring":{"source":"2024 Game Details sections 6.4 and 6.5. Unamplified NOTE points.","inventory":[{"piece":"NOTE","total":29,"distribution":"Eleven floor marks plus nine available at each SOURCE in this scenario. Declared preloads are drawn once from the authored SOURCE stock before AUTO."}],"phases":[{"name":"AUTO","seconds":15},{"name":"TELEOP","seconds":135}],"targets":[{"name":"SPEAKER","goal":"speaker","piece":"NOTE","points":[5,2]},{"name":"AMP","goal":"amp","piece":"NOTE","points":[2,1]},{"name":"TRAP","goal":"trap","piece":"NOTE","points":[0,5]}],"fieldMap":{"basis":"Blue-side planning coordinates in inches.","starts":[[38,218.4],[40,276],[36,107]],"sources":{"NOTE":[[114,218.625],[325.625,227.625],[588,49]]},"targets":{"speaker":[[57,218.4]],"amp":[[72.5,298]],"trap":[[167,204]]},"routes":[{"piece":"NOTE","goal":"speaker"},{"piece":"NOTE","goal":"amp"},{"piece":"NOTE","goal":"trap"}],"mirror":{"redX":true,"redY":false}}},"routeHypotheses":[{"phase":"AUTO","piece":"NOTE","destination":"speaker","trialBoxWidthIn":28,"routeIn":[[114,218.625],[57,218.4]],"lengthIn":57.000444077217495,"traffic":"High potential overlap · up to 2 other start slot(s) near one point (Blue partner slot 2, Blue partner slot 3)"},{"phase":"AUTO","piece":"NOTE","destination":"amp","trialBoxWidthIn":28,"routeIn":[[114,218.625],[72.5,298]],"lengthIn":89.56919462069534,"traffic":"High potential overlap · up to 2 other start slot(s) near one point (Blue partner slot 2, Blue partner slot 3)"},{"phase":"AUTO","piece":"NOTE","destination":"trap","trialBoxWidthIn":28,"routeIn":[[114,218.625],[167,204]],"lengthIn":54.980820519522986,"traffic":"High potential overlap · up to 2 other start slot(s) near one point (Blue partner slot 2, Blue partner slot 3)"},{"phase":"TELEOP","piece":"NOTE","destination":"speaker","trialBoxWidthIn":28,"routeIn":[[114,218.625],[57,218.4]],"lengthIn":57.000444077217495,"traffic":"High potential overlap · up to 2 other start slot(s) near one point (Blue partner slot 2, Blue partner slot 3)"},{"phase":"TELEOP","piece":"NOTE","destination":"amp","trialBoxWidthIn":28,"routeIn":[[114,218.625],[72.5,298]],"lengthIn":89.56919462069534,"traffic":"High potential overlap · up to 2 other start slot(s) near one point (Blue partner slot 2, Blue partner slot 3)"},{"phase":"TELEOP","piece":"NOTE","destination":"trap","trialBoxWidthIn":28,"routeIn":[[114,218.625],[167,204]],"lengthIn":54.980820519522986,"traffic":"High potential overlap · up to 2 other start slot(s) near one point (Blue partner slot 2, Blue partner slot 3)"}]}</script>
+<script id="profile" type="application/json">{"season":2024,"game":"CRESCENDO","edition":"Archived final 2024 manual and Team Update 21","manual":"https://firstfrc.blob.core.windows.net/frc2024/Manual/HTML/2024GameManual.htm","units":"in","field":{"length":651.25,"width":323.25,"source":"https://firstfrc.blob.core.windows.net/frc2024/FieldAssets/2024LayoutMarkingDiagram.pdf"},"limits":{"height":48,"perimeter":120,"source":"2024 R104, R105 and G413. Envelope and complete bumper support need a separate inspection."},"levels":[{"name":"Speaker low lip","height":78},{"name":"AMP sill","height":26}],"landmarks":[],"geometrySource":"FE-2024 installed assembly, field layout sheets 3–4 and game-specific field drawings. Project-selected interaction poses are in inches.","omissions":"Timed tactical rehearsal. NOTE scoring and end-of-match actions have separate ledgers. Amplification, impacts, referee awards and robot construction qualification require external observations.","rehearsal":{"schema":"field-rehearsal/v1","basis":"Six independently assigned match roles on the archived final CRESCENDO layout. Service time, release outcome and robot speed are scenario inputs.","boundsNote":"Leg rectangles use installed field geometry. Endgame targets represent chassis centers. The native robot and loaded-chain study checks vertical clearance separately.","sources":["https://firstfrc.blob.core.windows.net/frc2024/Manual/HTML/2024GameManual.htm","https://firstfrc.blob.core.windows.net/frc2024/FieldAssets/2024LayoutMarkingDiagram.pdf","https://firstfrc.blob.core.windows.net/frc2024/FieldAssets/2024FieldDrawings.pdf"],"resourceLabel":"Speaker lane","setups":["Nominal field"],"planes":[],"obstacles":[{"name":"Blue stage leg 1","kind":"post","lower":0,"poly":[[212.77,102.65],[229.17,102.65],[229.17,119.04],[212.77,119.04]]},{"name":"Blue stage leg 2","kind":"post","lower":0,"poly":[[212.77,204.21],[229.17,204.21],[229.17,220.6],[212.77,220.6]]},{"name":"Blue stage leg 3","kind":"post","lower":0,"poly":[[127.01,155.63],[139.01,155.63],[139.01,167.63],[127.01,167.63]]},{"name":"Red stage leg 1","kind":"post","lower":0,"poly":[[422.08,204.21],[438.48,204.21],[438.48,220.6],[422.08,220.6]]},{"name":"Red stage leg 2","kind":"post","lower":0,"poly":[[422.08,102.65],[438.48,102.65],[438.48,119.04],[422.08,119.04]]},{"name":"Red stage leg 3","kind":"post","lower":0,"poly":[[512.24,155.62],[524.24,155.62],[524.24,167.62],[512.24,167.62]]}],"bands":[],"starts":[[38,218.4],[40,276],[36,107]],"mirror":{"redX":true,"redY":false},"periods":[{"name":"AUTO","seconds":15},{"name":"TELEOP","seconds":135}],"defaults":{"length":28,"width":28,"height":28,"bumper":3,"heading":0,"speed":85,"capacity":1,"orders":["cycler","amp","midfield"]},"programs":{"opening-speaker":{"label":"Preload and middle wing","steps":[{"at":[57,218.4],"label":"Attempt speaker","station":{"blue":"blue-speaker","red":"red-speaker"},"operation":"attempt","dwell":1.6,"outcome":"credited"},{"at":[114,218.625],"label":"Collect middle","station":{"blue":"blue-middle","red":"red-middle"},"operation":"acquire","dwell":1.2},{"at":[57,218.4],"label":"Attempt speaker","station":{"blue":"blue-speaker","red":"red-speaker"},"operation":"attempt","dwell":1.6,"outcome":"credited"}],"loop":false},"opening-amp":{"label":"Preload at AMP and outer wing","steps":[{"at":[72.5,298],"label":"Attempt amp","station":{"blue":"blue-amp","red":"red-amp"},"operation":"attempt","dwell":1.6,"outcome":"credited"},{"at":[114,275.625],"label":"Collect outer","station":{"blue":"blue-outer","red":"red-outer"},"operation":"acquire","dwell":1.2},{"at":[72.5,298],"label":"Attempt amp","station":{"blue":"blue-amp","red":"red-amp"},"operation":"attempt","dwell":1.6,"outcome":"credited"}],"loop":false},"opening-support":{"label":"Carry preload out to support lane","steps":[{"at":[145,91],"label":"Leave and establish lane"}],"loop":false},"cycler":{"label":"Close Speaker cycles","steps":[{"at":[103,161.625],"label":"Collect inner","station":{"blue":"blue-inner","red":"red-inner"},"operation":"acquire","dwell":1.2},{"at":[57,218.4],"label":"Attempt speaker","station":{"blue":"blue-speaker","red":"red-speaker"},"operation":"attempt","dwell":1.6,"outcome":"credited"},{"at":[325.625,227.625],"label":"Collect center-4","station":"center-4","operation":"acquire","dwell":1.2},{"at":[57,218.4],"label":"Attempt speaker","station":{"blue":"blue-speaker","red":"red-speaker"},"operation":"attempt","dwell":1.6,"outcome":"credited"},{"at":[588,49],"label":"Collect source","station":{"blue":"blue-source","red":"red-source"},"operation":"acquire","dwell":1.2},{"at":[57,218.4],"label":"Attempt speaker","station":{"blue":"blue-speaker","red":"red-speaker"},"operation":"attempt","dwell":1.6,"outcome":"credited"}],"loop":true},"amp":{"label":"AMP supply cycles","steps":[{"at":[325.625,293.625],"label":"Collect center-5","station":"center-5","operation":"acquire","dwell":1.2},{"at":[72.5,298],"label":"Attempt amp","station":{"blue":"blue-amp","red":"red-amp"},"operation":"attempt","dwell":1.6,"outcome":"credited"},{"at":[588,49],"label":"Collect source","station":{"blue":"blue-source","red":"red-source"},"operation":"acquire","dwell":1.2},{"at":[72.5,298],"label":"Attempt amp","station":{"blue":"blue-amp","red":"red-amp"},"operation":"attempt","dwell":1.6,"outcome":"credited"}],"loop":true},"midfield":{"label":"Retrieve a midfield NOTE and deliver to the home lane","steps":[{"at":[325.625,95.625],"label":"Collect center-2","station":"center-2","operation":"acquire","dwell":1.2},{"at":[142,75],"label":"Offer retained NOTE from home lane"}],"loop":false},"miss-recover":{"label":"Miss then collect from SOURCE","steps":[{"at":[103,161.625],"label":"Collect inner","station":{"blue":"blue-inner","red":"red-inner"},"operation":"acquire","dwell":1.2},{"at":[57,218.4],"label":"Attempt speaker","station":{"blue":"blue-speaker","red":"red-speaker"},"operation":"attempt","dwell":1.6,"outcome":"missed"},{"at":[588,49],"label":"Collect source","station":{"blue":"blue-source","red":"red-source"},"operation":"acquire","dwell":1.2},{"at":[57,218.4],"label":"Attempt speaker","station":{"blue":"blue-speaker","red":"red-speaker"},"operation":"attempt","dwell":1.6,"outcome":"credited"}],"loop":true},"trap-approach":{"label":"Carry a NOTE toward a TRAP","steps":[{"at":[167,204],"label":"Carry toward upper stage face"},{"at":[167,204],"label":"Attempt trap-upper","station":{"blue":"blue-trap-upper","red":"red-trap-upper"},"operation":"attempt","dwell":1.6,"outcome":"unresolved"},{"at":[588,49],"label":"Collect source","station":{"blue":"blue-source","red":"red-source"},"operation":"acquire","dwell":1.2},{"at":[160,90],"label":"Return home"}],"loop":false},"red-cycler":{"label":"Close Speaker cycles (red lane)","steps":[{"at":[103,161.625],"label":"Collect inner","station":{"blue":"blue-inner","red":"red-inner"},"operation":"acquire","dwell":1.2},{"at":[57,218.4],"label":"Attempt speaker","station":{"blue":"blue-speaker","red":"red-speaker"},"operation":"attempt","dwell":1.6,"outcome":"credited"},{"at":[325.625,161.625],"label":"Collect center-3","station":"center-3","operation":"acquire","dwell":1.2},{"at":[57,218.4],"label":"Attempt speaker","station":{"blue":"blue-speaker","red":"red-speaker"},"operation":"attempt","dwell":1.6,"outcome":"credited"},{"at":[588,49],"label":"Collect source","station":{"blue":"blue-source","red":"red-source"},"operation":"acquire","dwell":1.2},{"at":[57,218.4],"label":"Attempt speaker","station":{"blue":"blue-speaker","red":"red-speaker"},"operation":"attempt","dwell":1.6,"outcome":"credited"}],"loop":true},"red-amp":{"label":"AMP supply cycles (red lane)","steps":[{"at":[325.625,29.625],"label":"Collect center-1","station":"center-1","operation":"acquire","dwell":1.2},{"at":[72.5,298],"label":"Attempt amp","station":{"blue":"blue-amp","red":"red-amp"},"operation":"attempt","dwell":1.6,"outcome":"credited"},{"at":[588,49],"label":"Collect source","station":{"blue":"blue-source","red":"red-source"},"operation":"acquire","dwell":1.2},{"at":[72.5,298],"label":"Attempt amp","station":{"blue":"blue-amp","red":"red-amp"},"operation":"attempt","dwell":1.6,"outcome":"credited"}],"loop":true},"red-midfield":{"label":"Retrieve a midfield NOTE and deliver to the home lane (red lane)","steps":[{"at":[325.625,227.625],"label":"Collect center-4","station":"center-4","operation":"acquire","dwell":1.2},{"at":[142,75],"label":"Offer retained NOTE from home lane"}],"loop":false}},"stations":[{"id":"blue-source","label":"Blue SOURCE","kind":"retrieval","side":"blue","piece":"NOTE","at":[588,49],"displayAt":[615.54,22.1],"radiusIn":12,"stock":9},{"id":"blue-inner","label":"Blue inner wing NOTE","kind":"retrieval","side":"blue","piece":"NOTE","at":[103,161.625],"displayAt":[114,161.625],"radiusIn":12,"stock":1},{"id":"blue-middle","label":"Blue middle wing NOTE","kind":"retrieval","side":"blue","piece":"NOTE","at":[114,218.625],"displayAt":[114,218.625],"radiusIn":12,"stock":1},{"id":"blue-outer","label":"Blue outer wing NOTE","kind":"retrieval","side":"blue","piece":"NOTE","at":[114,275.625],"displayAt":[114,275.625],"radiusIn":12,"stock":1},{"id":"blue-speaker","label":"Blue SPEAKER","kind":"scoring","side":"blue","piece":"NOTE","at":[57,218.4],"displayAt":[10,218.4],"radiusIn":12,"points":{"AUTO":5,"TELEOP":2},"criterion":"Scripted successful near shot after a stop and feed dwell. Ordinary TELEOP points."},{"id":"blue-amp","label":"Blue AMP","kind":"scoring","side":"blue","piece":"NOTE","at":[72.5,298],"displayAt":[72.5,323.12],"radiusIn":12,"points":{"AUTO":2,"TELEOP":1},"criterion":"Scripted placement through the AMP opening after a dwell."},{"id":"blue-trap-front","label":"Blue TRAP front","kind":"scoring","side":"blue","piece":"NOTE","at":[246,162],"displayAt":[208.62,161.61],"radiusIn":12,"points":{"AUTO":0,"TELEOP":5},"criterion":"Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved.","capacity":1},{"id":"blue-trap-upper","label":"Blue TRAP upper","kind":"scoring","side":"blue","piece":"NOTE","at":[167,204],"displayAt":[183.19,176.32],"radiusIn":12,"points":{"AUTO":0,"TELEOP":5},"criterion":"Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved.","capacity":1},{"id":"blue-trap-lower","label":"Blue TRAP lower","kind":"scoring","side":"blue","piece":"NOTE","at":[167,119],"displayAt":[183.16,146.95],"radiusIn":12,"points":{"AUTO":0,"TELEOP":5},"criterion":"Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved.","capacity":1},{"id":"red-source","label":"Red SOURCE","kind":"retrieval","side":"red","piece":"NOTE","at":[63.25,49],"displayAt":[35.71,22.1],"radiusIn":12,"stock":9},{"id":"red-inner","label":"Red inner wing NOTE","kind":"retrieval","side":"red","piece":"NOTE","at":[548.25,161.625],"displayAt":[537.25,161.625],"radiusIn":12,"stock":1},{"id":"red-middle","label":"Red middle wing NOTE","kind":"retrieval","side":"red","piece":"NOTE","at":[537.25,218.625],"displayAt":[537.25,218.625],"radiusIn":12,"stock":1},{"id":"red-outer","label":"Red outer wing NOTE","kind":"retrieval","side":"red","piece":"NOTE","at":[537.25,275.625],"displayAt":[537.25,275.625],"radiusIn":12,"stock":1},{"id":"red-speaker","label":"Red SPEAKER","kind":"scoring","side":"red","piece":"NOTE","at":[594.25,218.4],"displayAt":[641.25,218.4],"radiusIn":12,"points":{"AUTO":5,"TELEOP":2},"criterion":"Scripted successful near shot after a stop and feed dwell. Ordinary TELEOP points."},{"id":"red-amp","label":"Red AMP","kind":"scoring","side":"red","piece":"NOTE","at":[578.75,298],"displayAt":[578.75,323.12],"radiusIn":12,"points":{"AUTO":2,"TELEOP":1},"criterion":"Scripted placement through the AMP opening after a dwell."},{"id":"red-trap-front","label":"Red TRAP front","kind":"scoring","side":"red","piece":"NOTE","at":[405.25,162],"displayAt":[442.63,161.61],"radiusIn":12,"points":{"AUTO":0,"TELEOP":5},"criterion":"Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved.","capacity":1},{"id":"red-trap-upper","label":"Red TRAP upper","kind":"scoring","side":"red","piece":"NOTE","at":[484.25,204],"displayAt":[468.06,176.32],"radiusIn":12,"points":{"AUTO":0,"TELEOP":5},"criterion":"Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved.","capacity":1},{"id":"red-trap-lower","label":"Red TRAP lower","kind":"scoring","side":"red","piece":"NOTE","at":[484.25,119],"displayAt":[468.09,146.95],"radiusIn":12,"points":{"AUTO":0,"TELEOP":5},"criterion":"Raised entry requires a successful mechanism sequence. Profile leaves TRAP attempts unresolved.","capacity":1},{"id":"center-1","label":"Center NOTE 1","kind":"retrieval","side":"both","piece":"NOTE","at":[325.625,29.625],"displayAt":[325.625,29.625],"radiusIn":12,"stock":1},{"id":"center-2","label":"Center NOTE 2","kind":"retrieval","side":"both","piece":"NOTE","at":[325.625,95.625],"displayAt":[325.625,95.625],"radiusIn":12,"stock":1},{"id":"center-3","label":"Center NOTE 3","kind":"retrieval","side":"both","piece":"NOTE","at":[325.625,161.625],"displayAt":[325.625,161.625],"radiusIn":12,"stock":1},{"id":"center-4","label":"Center NOTE 4","kind":"retrieval","side":"both","piece":"NOTE","at":[325.625,227.625],"displayAt":[325.625,227.625],"radiusIn":12,"stock":1},{"id":"center-5","label":"Center NOTE 5","kind":"retrieval","side":"both","piece":"NOTE","at":[325.625,293.625],"displayAt":[325.625,293.625],"radiusIn":12,"stock":1}],"series":{"matches":[{"id":"wing-opening","basis":"An R7 solo attempt has unresolved passive retention. Red rehearses a qualified solo hang.","setup":"Nominal field","roster":[{"side":"red","slot":1,"capacity":1,"preload":{"station":"red-source","quantity":1},"plans":{"AUTO":"opening-speaker","TELEOP":"red-cycler"}},{"side":"red","slot":2,"capacity":1,"preload":{"station":"red-source","quantity":1},"plans":{"AUTO":"opening-amp","TELEOP":"red-amp"},"endgame":{"action":"onstage","target":"red-center","startS":110,"witnesses":{"ownChainOnly":"met","floorClear":"met","allowedContacts":"met","supportedThroughAssessment":"met","directOrTransitiveChainSupport":"met"}}},{"side":"red","slot":3,"capacity":1,"plans":{"AUTO":"opening-support","TELEOP":"red-midfield"}},{"side":"blue","slot":1,"capacity":1,"preload":{"station":"blue-source","quantity":1},"plans":{"AUTO":"opening-speaker","TELEOP":"cycler"},"endgame":{"action":"onstage","target":"blue-center","startS":111,"witnesses":{"ownChainOnly":"met","floorClear":"met","allowedContacts":"met","supportedThroughAssessment":"unknown","directOrTransitiveChainSupport":"met","bumpersInOwnStageZoneAtAssessment":"unknown"},"fallbacks":[{"action":"park","target":"blue-center"}]}},{"side":"blue","slot":2,"capacity":1,"preload":{"station":"blue-source","quantity":1},"plans":{"AUTO":"opening-amp","TELEOP":"amp"}},{"side":"blue","slot":3,"capacity":1,"plans":{"AUTO":"opening-support","TELEOP":"midfield"}}],"endgameAtRestAfterS":5},{"id":"shared-center","basis":"Two Blue partners share the lit straight chain with an equal-load assumption. Red rehearses one solo hang and one independent park.","setup":"Nominal field","roster":[{"side":"blue","slot":1,"capacity":1,"preload":{"station":"blue-source","quantity":1},"plans":{"AUTO":"opening-speaker","TELEOP":"cycler"},"endgame":{"action":"onstage","target":"blue-upper","startS":111,"witnesses":{"ownChainOnly":"met","floorClear":"met","allowedContacts":"met","supportedThroughAssessment":"met","directOrTransitiveChainSupport":"met"}}},{"side":"blue","slot":2,"capacity":1,"preload":{"station":"blue-source","quantity":1},"plans":{"AUTO":"opening-amp","TELEOP":"midfield"},"endgame":{"action":"onstage","target":"blue-lower","startS":111,"witnesses":{"ownChainOnly":"met","floorClear":"met","allowedContacts":"met","supportedThroughAssessment":"met","directOrTransitiveChainSupport":"met"}}},{"side":"blue","slot":3,"capacity":1,"plans":{"AUTO":"opening-support","TELEOP":"midfield"}},{"side":"red","slot":1,"capacity":1,"preload":{"station":"red-source","quantity":1},"plans":{"AUTO":"opening-speaker","TELEOP":"cycler"},"endgame":{"action":"onstage","target":"red-center","startS":107,"witnesses":{"ownChainOnly":"met","floorClear":"met","allowedContacts":"met","supportedThroughAssessment":"met","directOrTransitiveChainSupport":"met"}}},{"side":"red","slot":2,"capacity":1,"preload":{"station":"red-source","quantity":1},"plans":{"AUTO":"opening-amp","TELEOP":"midfield"}},{"side":"red","slot":3,"capacity":1,"plans":{"AUTO":"opening-support","TELEOP":"midfield"},"endgame":{"action":"park","target":"red-park","startS":117,"witnesses":{"bumpersInOwnStageZoneAtAssessment":"met"}}}],"endgameAtRestAfterS":2.5},{"id":"miss-and-stage","basis":"Blue leaves too little time for its solo climb. Red loses support and has an independent PARK observation.","setup":"Nominal field","roster":[{"side":"red","slot":1,"capacity":1,"preload":{"station":"red-source","quantity":1},"plans":{"AUTO":"opening-speaker","TELEOP":"cycler"}},{"side":"red","slot":2,"capacity":1,"preload":{"station":"red-source","quantity":1},"plans":{"AUTO":"opening-amp","TELEOP":"amp"},"endgame":{"action":"onstage","target":"red-center","startS":110,"witnesses":{"ownChainOnly":"met","floorClear":"met","allowedContacts":"met","supportedThroughAssessment":"failed","directOrTransitiveChainSupport":"met","bumpersInOwnStageZoneAtAssessment":"met"},"fallbacks":[{"action":"park","target":"red-center"}]}},{"side":"red","slot":3,"capacity":1,"preload":{"station":"red-source","quantity":1},"plans":{"AUTO":"opening-support","TELEOP":"trap-approach"}},{"side":"blue","slot":1,"capacity":1,"preload":{"station":"blue-source","quantity":1},"plans":{"AUTO":"opening-speaker","TELEOP":"miss-recover"},"endgame":{"action":"onstage","target":"blue-center","startS":129,"witnesses":{"ownChainOnly":"met","floorClear":"met","allowedContacts":"met","supportedThroughAssessment":"met","directOrTransitiveChainSupport":"met"}}},{"side":"blue","slot":2,"capacity":1,"preload":{"station":"blue-source","quantity":1},"plans":{"AUTO":"opening-amp","TELEOP":"amp"}},{"side":"blue","slot":3,"capacity":1,"plans":{"AUTO":"opening-support","TELEOP":"midfield"},"endgame":{"action":"park","target":"blue-park","startS":112,"witnesses":{"bumpersInOwnStageZoneAtAssessment":"met"}}}],"endgameAtRestAfterS":8}]},"endgame":{"period":"TELEOP","basis":"Archived final 2024 rules. The clock determines travel and service. Contact, disabled support and microphone states are scenario observations. ENSEMBLE awards one qualification RP for at least 10 STAGE points and two ONSTAGE robots. The match score counts match points only.","sources":["https://firstfrc.blob.core.windows.net/frc2024/Manual/HTML/2024GameManual.htm","https://firstfrc.blob.core.windows.net/frc2024/FieldAssets/2024FieldDrawings.pdf"],"assessment":{"maxDelayS":5},"targets":[{"id":"blue-center","label":"Blue straight chain, center","side":"blue","at":[226.735,162.809],"displayAt":[226.735,161.628],"radiusIn":0.4,"resource":"straight-chain","capacity":2,"actions":["onstage","park"],"witnesses":{"microphoneHasHighNote":"met"}},{"id":"blue-lower","label":"Blue straight chain, lower","side":"blue","at":[226.735,143.124],"displayAt":[226.735,141.943],"radiusIn":0.4,"resource":"straight-chain","capacity":2,"actions":["onstage","park"],"witnesses":{"microphoneHasHighNote":"met"}},{"id":"blue-upper","label":"Blue straight chain, upper","side":"blue","at":[226.735,182.494],"displayAt":[226.735,181.313],"radiusIn":0.4,"resource":"straight-chain","capacity":2,"actions":["onstage","park"],"witnesses":{"microphoneHasHighNote":"met"}},{"id":"blue-park","label":"Blue zone parking pose","side":"blue","at":[182,144],"radiusIn":1,"resource":"zone-parking-pose","capacity":1,"actions":["park"]},{"id":"red-center","label":"Red straight chain, center","side":"red","at":[424.515,160.441],"displayAt":[424.515,161.622],"radiusIn":0.4,"resource":"straight-chain","capacity":2,"actions":["onstage","park"],"witnesses":{"microphoneHasHighNote":"unknown"}},{"id":"red-lower","label":"Red straight chain, lower","side":"red","at":[424.515,140.756],"displayAt":[424.515,141.937],"radiusIn":0.4,"resource":"straight-chain","capacity":2,"actions":["onstage","park"],"witnesses":{"microphoneHasHighNote":"unknown"}},{"id":"red-upper","label":"Red straight chain, upper","side":"red","at":[424.515,180.126],"displayAt":[424.515,181.307],"radiusIn":0.4,"resource":"straight-chain","capacity":2,"actions":["onstage","park"],"witnesses":{"microphoneHasHighNote":"unknown"}},{"id":"red-park","label":"Red zone parking pose","side":"red","at":[469.25,144],"radiusIn":1,"resource":"zone-parking-pose","capacity":1,"actions":["park"]}],"actions":[{"id":"onstage","label":"ONSTAGE","points":3,"serviceS":10,"requires":["ownChainOnly","floorClear","allowedContacts","supportedThroughAssessment"]},{"id":"park","label":"PARK","points":1,"serviceS":0,"requires":["bumpersInOwnStageZoneAtAssessment"]}],"bonuses":[{"id":"spotlight","label":"SPOTLIGHT","points":1,"minRobots":1,"scope":"resource","per":"robot","actions":["onstage"],"targetRequires":["microphoneHasHighNote"]},{"id":"harmony","label":"HARMONY","points":2,"minRobots":2,"scope":"resource","per":"additionalRobot","actions":["onstage"],"requires":["directOrTransitiveChainSupport"]}]}},"scoring":{"source":"2024 Game Details sections 6.4 and 6.5. Unamplified NOTE points.","inventory":[{"piece":"NOTE","total":29,"distribution":"Eleven floor marks plus nine available at each SOURCE in this scenario. Declared preloads are drawn once from the authored SOURCE stock before AUTO."}],"phases":[{"name":"AUTO","seconds":15},{"name":"TELEOP","seconds":135}],"targets":[{"name":"SPEAKER","goal":"speaker","piece":"NOTE","points":[5,2]},{"name":"AMP","goal":"amp","piece":"NOTE","points":[2,1]},{"name":"TRAP","goal":"trap","piece":"NOTE","points":[0,5]}],"fieldMap":{"basis":"Blue-side planning coordinates in inches.","starts":[[38,218.4],[40,276],[36,107]],"sources":{"NOTE":[[114,218.625],[325.625,227.625],[588,49]]},"targets":{"speaker":[[57,218.4]],"amp":[[72.5,298]],"trap":[[167,204]]},"routes":[{"piece":"NOTE","goal":"speaker"},{"piece":"NOTE","goal":"amp"},{"piece":"NOTE","goal":"trap"}],"mirror":{"redX":true,"redY":false}}},"routeHypotheses":[{"phase":"AUTO","piece":"NOTE","destination":"speaker","trialBoxWidthIn":28,"routeIn":[[114,218.625],[57,218.4]],"lengthIn":57.000444077217495,"traffic":"High potential overlap · up to 2 other start slot(s) near one point (Blue partner slot 2, Blue partner slot 3)"},{"phase":"AUTO","piece":"NOTE","destination":"amp","trialBoxWidthIn":28,"routeIn":[[114,218.625],[72.5,298]],"lengthIn":89.56919462069534,"traffic":"High potential overlap · up to 2 other start slot(s) near one point (Blue partner slot 2, Blue partner slot 3)"},{"phase":"AUTO","piece":"NOTE","destination":"trap","trialBoxWidthIn":28,"routeIn":[[114,218.625],[167,204]],"lengthIn":54.980820519522986,"traffic":"High potential overlap · up to 2 other start slot(s) near one point (Blue partner slot 2, Blue partner slot 3)"},{"phase":"TELEOP","piece":"NOTE","destination":"speaker","trialBoxWidthIn":28,"routeIn":[[114,218.625],[57,218.4]],"lengthIn":57.000444077217495,"traffic":"High potential overlap · up to 2 other start slot(s) near one point (Blue partner slot 2, Blue partner slot 3)"},{"phase":"TELEOP","piece":"NOTE","destination":"amp","trialBoxWidthIn":28,"routeIn":[[114,218.625],[72.5,298]],"lengthIn":89.56919462069534,"traffic":"High potential overlap · up to 2 other start slot(s) near one point (Blue partner slot 2, Blue partner slot 3)"},{"phase":"TELEOP","piece":"NOTE","destination":"trap","trialBoxWidthIn":28,"routeIn":[[114,218.625],[167,204]],"lengthIn":54.980820519522986,"traffic":"High potential overlap · up to 2 other start slot(s) near one point (Blue partner slot 2, Blue partner slot 3)"}]}</script>
 <script>
 'use strict';
 const profile = JSON.parse(document.querySelector('#profile').textContent);
@@ -408,9 +409,21 @@ function createRehearsalGame(profile) {
   return {start,apply,replenish};
 }
 function rehearsalFindings(id,basis,game,stations) {
-  if (!stations?.length) return [id+' · '+basis+'. The profile has no registered stock or scoring criterion.'];
+  if (!stations?.length && !game.endgame) return [id+' · '+basis+'. The profile has no registered stock or scoring criterion.'];
   const lines=[id+' · '+basis+'. Modeled rehearsal score: Blue '+game.score.blue+', Red '+game.score.red+'.'];
-  for (const station of stations) {
+  const terminal=game.endgame;
+  if(terminal){
+    lines.push(terminal.basis+'. Sources: '+terminal.sources.join(', ')+'. Powered cutoff '+terminal.activeCutoffS+' s; terminal assessment '+terminal.assessmentTimeS+' s. Terminal criteria represent project scenario assumptions, including continued support through assessment.');
+    for(const a of terminal.attempts){
+      lines.push(a.robot+' switched from '+(a.interruptedBehavior ?? 'ordinary work')+' at '+(a.interruptedAtS ?? 'pending')+' s in '+terminal.period+
+        ' for '+a.action+' at '+a.target+'. Primary result '+a.outcome+'. Terminal assumptions '+JSON.stringify(a.witnesses)+
+        '. Award '+(a.awardedAction ?? 'none')+' (+'+a.points+').');
+    }
+    for(const b of terminal.bonusAwards)lines.push(b.id+' · '+b.side+' '+b.group+' · '+b.robots.join(', ')+' · +'+b.points+' bonus points.');
+    if(terminal.assessed)lines.push('Ordinary points Blue '+terminal.ordinaryScore.blue+' / Red '+terminal.ordinaryScore.red+
+      '. Terminal points Blue '+terminal.terminalScore.blue+' / Red '+terminal.terminalScore.red+'.');
+  }
+  for (const station of stations ?? []) {
     if(station.kind==='retrieval') lines.push(station.label+' · '+station.piece+' stock '+game.initial[station.id]+' initially, '+game.stock[station.id].length+' available at snapshot.');
     else lines.push(station.label+' · '+game.attempts[station.id]+' pieces attempted. Criterion: '+station.criterion);
   }
@@ -425,11 +438,225 @@ function rehearsalFindings(id,basis,game,stations) {
     '; '+game.returning.length+' pieces awaiting a configured return.');
   return lines;
 }
+function createTerminalRehearsal(profile) {
+  const model = profile.rehearsal;
+  const spec = model?.endgame;
+  if (spec === undefined) return null;
+  function check(value, message) { if (!value) throw Error('Endgame: ' + message); }
+  const text = value => typeof value === 'string' && value.trim().length > 0;
+  const count = value => Number.isSafeInteger(value) && value >= 0;
+  const seconds = value => Number.isFinite(value) && value >= 0;
+  const tickTime = value => seconds(value) && Number.isSafeInteger(value * 20);
+  const list = value => Array.isArray(value) && value.every(text) && new Set(value).size === value.length;
+  const point = value => Array.isArray(value) && value.length === 2 && value.every(Number.isFinite) &&
+    value[0] >= 0 && value[0] <= profile.field.length && value[1] >= 0 && value[1] <= profile.field.width;
+  const states = ['met', 'failed', 'unknown'];
+  const flags = obj => obj !== null && typeof obj === 'object' && !Array.isArray(obj) &&
+    Object.entries(obj).every(([key, value]) => text(key) && states.includes(value));
+  function catalog(rows, label) {
+    check(Array.isArray(rows) && rows.every(r => text(r?.id) && text(r.label)), 'supply named ' + label);
+    const map = new Map(rows.map(r => [r.id, r]));
+    check(map.size === rows.length, 'duplicate ' + label);
+    return map;
+  }
+  check(spec && spec.period === model.periods.at(-1)?.name, 'choose the final powered period');
+  check((spec.basis === undefined || text(spec.basis)) && (spec.sources === undefined || list(spec.sources)), 'invalid basis or sources');
+  const periodS = model.periods.at(-1).seconds;
+  const activeS = model.periods.reduce((sum, p) => sum + p.seconds, 0);
+  const assessment = spec.assessment ?? {maxDelayS: 0};
+  check(seconds(assessment.maxDelayS) && (assessment.atRestAfterS === undefined || seconds(assessment.atRestAfterS)),
+    'provide a nonnegative passive assessment delay');
+  const actions = catalog(spec.actions, 'actions'), targets = catalog(spec.targets, 'targets');
+  const bonuses = catalog(spec.bonuses ?? [], 'bonuses');
+  check(actions.size && targets.size, 'provide at least one action and approach target');
+  for (const a of actions.values()) {
+    check(count(a.points) && tickTime(a.serviceS) && list(a.requires) && a.requires.length,
+      'each action needs points, 0.05 s service increments and at least one terminal criterion');
+    check(a.eligibleRobots === undefined || list(a.eligibleRobots) && a.eligibleRobots.every(id => /^[BR][123]$/.test(id)),
+      'invalid eligible robot slots');
+  }
+  const resources = new Map();
+  const key = t => JSON.stringify([t.side,t.resource]);
+  for (const t of targets.values()) {
+    check(['blue','red'].includes(t.side) && point(t.at) && (t.displayAt === undefined || point(t.displayAt)) &&
+      Number.isFinite(t.radiusIn) && t.radiusIn > 0 && text(t.resource) && count(t.capacity) && t.capacity > 0,
+      'each target needs an alliance, in-field approach, radius and positive shared capacity');
+    check(t.actions === undefined || list(t.actions) && t.actions.every(id => actions.has(id)), 'unknown target action');
+    check(t.setups === undefined || list(t.setups) && t.setups.length && t.setups.every(s => model.setups.includes(s)), 'unknown target obstacle setup');
+    check(flags(t.witnesses ?? {}), 'invalid shared target observation');
+    for (const setup of t.setups ?? model.setups) {
+      const group = JSON.stringify([t.side,t.resource,setup]), other = resources.get(group);
+      check(!other || other.capacity === t.capacity, 'targets sharing one alliance resource must agree on capacity');
+      resources.set(group,t);
+    }
+  }
+  for (const b of bonuses.values()) {
+    check(list(b.actions) && b.actions.length && b.actions.every(id => actions.has(id)) && count(b.points) &&
+      count(b.minRobots) && b.minRobots > 0 && b.minRobots <= 3 &&
+      ['resource','alliance'].includes(b.scope) && ['robot','alliance','group','additionalRobot'].includes(b.per) &&
+      list(b.requires ?? []) && list(b.targetRequires ?? []), 'invalid conditional bonus');
+    if (b.scope === 'resource') for (const t of targets.values()) for (const setup of t.setups ?? model.setups) {
+      const other = resources.get(JSON.stringify([t.side,t.resource,setup]));
+      for (const criterion of b.targetRequires ?? []) check((t.witnesses?.[criterion] ?? 'unknown') ===
+        (other.witnesses?.[criterion] ?? 'unknown'),'shared resource observations disagree for ' + criterion);
+    }
+  }
+  function eligible(robot, action, target, setup) {
+    return robot.side === target.side && (!action.eligibleRobots || action.eligibleRobots.includes(robot.id)) &&
+      (!target.actions || target.actions.includes(action.id)) && (!target.setups || target.setups.includes(setup));
+  }
+  function criteria(action) {
+    const relevant = [...bonuses.values()].filter(b => b.actions.includes(action.id));
+    return [...new Set([...action.requires,...relevant.flatMap(b => b.requires ?? [])])];
+  }
+  function start(robots, restAfterS, setup) {
+    check(restAfterS === undefined || seconds(restAfterS), 'invalid match rest observation');
+    const rest = restAfterS ?? assessment.atRestAfterS;
+    const delayS = Math.min(rest ?? assessment.maxDelayS, assessment.maxDelayS);
+    const attempts = [];
+    for (const r of robots) {
+      if (r.endgame === undefined) continue;
+      const p = r.endgame;
+      const a = actions.get(p?.action), t = targets.get(p?.target);
+      check(a && t && eligible(r,a,t,setup), 'ineligible action or target for ' + r.id + ' in setup ' + setup);
+      check(tickTime(p.startS) && p.startS <= periodS && flags(p.witnesses ?? {}), 'invalid start or witnesses for ' + r.id);
+      const choices = p.fallbacks ?? [];
+      check(Array.isArray(choices) && choices.length <= actions.size, 'invalid fallback list');
+      const seen = new Set([a.id]);
+      const allowed = new Set(criteria(a));
+      const fallbacks = choices.map(choice => {
+        const fa = actions.get(choice?.action), ft = targets.get(choice?.target);
+        check(fa && ft && !seen.has(fa.id) && eligible(r,fa,ft,setup), 'ineligible or repeated fallback for ' + r.id + ' in setup ' + setup);
+        seen.add(fa.id);for (const c of criteria(fa)) allowed.add(c);
+        return {action:fa.id,target:ft.id,requires:[...fa.requires],serviceS:fa.serviceS,heldFromS:null,outcome:'pending'};
+      });
+      check(Object.keys(p.witnesses ?? {}).every(v => allowed.has(v)), 'undeclared robot witness for ' + r.id);
+      attempts.push({robot:r.id,side:r.side,action:a.id,target:t.id,resource:t.resource,startS:p.startS,
+        serviceS:a.serviceS,requires:[...a.requires],witnesses:{...p.witnesses},targetWitnesses:{...t.witnesses},
+        interruptedAtS:null,arrivedAtS:null,serviceStartS:null,completedAtS:null,fallbacks,
+        awardedAction:null,awardedTarget:null,outcome:'pending',points:0});
+    }
+    return {period:spec.period,basis:spec.basis ?? model.basis,sources:[...(spec.sources ?? model.sources)],activeCutoffS:activeS,
+      periodCutoffS:periodS,maxDelayS:assessment.maxDelayS,atRestAfterS:rest ?? null,assessmentTimeS:activeS+delayS,
+      assessed:false,attempts,bonusAwards:[],ordinaryScore:null,terminalScore:{blue:0,red:0}};
+  }
+  function outcome(required, observations) {
+    if (required.some(k => observations[k] === 'failed')) return 'failed';
+    return required.every(k => Object.hasOwn(observations,k) && observations[k] === 'met') ? 'qualified' : 'unresolved';
+  }
+  function enter(sim, r, now) {
+    if (sim.phase !== spec.period || !r.endgame || now < r.endgame.startS - 1e-8) return null;
+    const row = sim.game.endgame.attempts.find(v => v.robot === r.id);
+    if (row.interruptedAtS === null) {
+      row.interruptedAtS = now;
+      row.interruptedBehavior = r.plans[sim.phase];
+      for (const entry of Object.values(sim.resources)) {
+        if (entry.owner === r.id) entry.owner = null;
+        entry.queue = entry.queue.filter(id => id !== r.id);
+      }
+      Object.assign(r,{leg:0,target:0,waypoints:null,dwell:0});
+    }
+    return targets.get(row.target);
+  }
+  function inside(r,t) { return Math.hypot(r.p[0]-t.at[0],r.p[1]-t.at[1]) <= t.radiusIn+1e-8; }
+  // Service consumes only actual powered time spent in the approach region.
+  function observe(sim, starts, before, after) {
+    if (sim.phase !== spec.period) return;
+    const rows = sim.game.endgame.attempts;
+    for (const [i,r] of sim.robots.entries()) {
+      const row = rows.find(v => v.robot === r.id);
+      if (!row || row.interruptedAtS === null) continue;
+      for (const f of row.fallbacks) {
+        const stationary = r.p.every((v,k) => Math.abs(v-starts[i][k]) < 1e-8);
+        if (!inside(r,targets.get(f.target))) f.heldFromS = null;
+        else if (!stationary) f.heldFromS = after;
+        else f.heldFromS ??= before;
+      }
+      if (row.completedAtS !== null) continue;
+      const t = targets.get(row.target);
+      if (!inside(r,t)) continue;
+      row.arrivedAtS ??= inside({p:starts[i]},t) ? before : after;
+    }
+    // Reserve an occupied resource once. Earlier arrival takes priority; robot ID breaks simultaneous ties.
+    const queue = rows.filter(row => row.arrivedAtS !== null).sort((a,b) => a.arrivedAtS-b.arrivedAtS || a.robot.localeCompare(b.robot));
+    for (const row of queue) {
+      if (row.serviceStartS === null) {
+        const used = rows.filter(other => other.side === row.side && other.resource === row.resource && other.serviceStartS !== null).length;
+        if (used >= targets.get(row.target).capacity) continue;
+        row.serviceStartS = row.arrivedAtS;
+      }
+      if (row.completedAtS === null && after+1e-8 >= row.serviceStartS+row.serviceS)
+        row.completedAtS = row.serviceStartS+row.serviceS;
+    }
+  }
+  function assess(sim) {
+    const g = sim.game.endgame;
+    if (sim.phase !== spec.period || g.assessed) return;
+    g.ordinaryScore = {...sim.game.score};
+    g.assessed = true;
+    for (const row of g.attempts) {
+      if (row.interruptedAtS === null) row.outcome = 'did-not-start';
+      else if (row.arrivedAtS === null) row.outcome = 'did-not-arrive';
+      else if (row.serviceStartS === null) row.outcome = 'resource-full';
+      else if (row.completedAtS === null) row.outcome = 'service-incomplete';
+      else row.outcome = outcome(row.requires,row.witnesses);
+      row.position = [...sim.robots.find(r => r.id === row.robot).p];
+      if (row.outcome === 'qualified') { row.awardedAction=row.action; row.awardedTarget=row.target; }
+    }
+    // Physical reservations last through assessment, including a failed attempt occupying its fixture.
+    const holders = new Map();
+    for (const row of g.attempts.filter(row => row.serviceStartS !== null)) {
+      const group = key(targets.get(row.target));
+      if (!holders.has(group)) holders.set(group,new Set());
+      holders.get(group).add(row.robot);
+    }
+    for (const row of g.attempts) {
+      for (const f of row.fallbacks) {
+        const t = targets.get(f.target), group = key(t);
+        if (!holders.has(group)) holders.set(group,new Set());
+        const occupants = holders.get(group);
+        if (row.awardedAction !== null) f.outcome = 'exclusive-base-already-awarded';
+        else if (f.heldFromS === null) f.outcome = 'outside-final-region';
+        else if (periodS - f.heldFromS + 1e-8 < f.serviceS) f.outcome = 'service-incomplete';
+        else if (!occupants.has(row.robot) && occupants.size >= t.capacity) f.outcome = 'resource-full';
+        else f.outcome = outcome(f.requires,row.witnesses);
+        if (f.outcome === 'qualified') {
+          row.awardedAction = f.action; row.awardedTarget = f.target; occupants.add(row.robot);
+        }
+      }
+      if (row.awardedAction !== null) row.points = actions.get(row.awardedAction).points;
+      g.terminalScore[row.side] += row.points;
+    }
+    for (const b of bonuses.values()) for (const side of ['blue','red']) {
+      const groups = new Map();
+      for (const row of g.attempts.filter(r => r.side === side && b.actions.includes(r.awardedAction))) {
+        const group = b.scope === 'resource' ? targets.get(row.awardedTarget).resource : side;
+        if (!groups.has(group)) groups.set(group,[]);
+        groups.get(group).push(row);
+      }
+      let alliancePaid = false;
+      for (const [group,rows] of groups) {
+        const participants = rows.filter(row => outcome(b.requires ?? [],row.witnesses) === 'qualified' &&
+          outcome(b.targetRequires ?? [],targets.get(row.awardedTarget).witnesses ?? {}) === 'qualified').map(row => row.robot);
+        const n = participants.length;
+        const units = n < b.minRobots ? 0 : b.per === 'robot' ? n : b.per === 'additionalRobot' ? n-1 :
+          b.per === 'alliance' && alliancePaid ? 0 : 1;
+        const points = units*b.points;
+        if (units) alliancePaid = true;
+        g.bonusAwards.push({id:b.id,side,group,robots:participants,requiredRobots:b.minRobots,units,points});
+        g.terminalScore[side] += points;
+      }
+    }
+    for (const side of ['blue','red']) sim.game.score[side] += g.terminalScore[side];
+  }
+  return {start,enter,inside,observe,assess,eligible,criteria};
+}
 function createFieldRehearsal(profile) {
   const geom=fieldGeometry(profile);
   const model=profile.rehearsal, supported=Boolean(model?.schema==='field-rehearsal/v1');
   const L=profile.field.length,W=profile.field.width,dt=0.05;
   const game=supported ? createRehearsalGame(profile) : null;
+  const terminal=supported ? createTerminalRehearsal(profile) : null;
   const behaviors=Object.fromEntries(Object.entries(model?.programs || {}).map(([key,p])=>[key,p.label]));
   const phases=model?.periods || [];
   const duration=name=>Math.round((phases.find(p=>p.name===name)?.seconds || 0)/dt);
@@ -453,7 +680,7 @@ function createFieldRehearsal(profile) {
     }
     return Object.fromEntries([...names].map(key=>[key,{owner:null,queue:[]}]));
   }
-  function create(roster,setup=model?.setups[0],tieWinner) {
+  function create(roster,setup=model?.setups[0],tieWinner,atRestAfterS) {
     if(!supported)throw Error('Supply an external rehearsal geometry and behavior model.');
     if(!model.setups.includes(setup))throw Error('Unknown obstacle setup.');
     if(!Array.isArray(roster) || roster.length>6)throw Error('Use up to three robots per alliance.');
@@ -473,7 +700,10 @@ function createFieldRehearsal(profile) {
       robots.push({...b,p,leg:0,waypoints:null,target:0,dwell:0,wait:0,visits:0,blocked:'',action:''});
     }
     robots.sort((a,b)=>a.id.localeCompare(b.id));
-    return {robots,setup,game:game.start(robots,tieWinner),phase:phases[0].name,phaseIndex:0,ticks:0,paused:true,ended:false,resources:reservations(),hotspots:[],
+    const ledger=game.start(robots,tieWinner);
+    if(terminal)ledger.endgame=terminal.start(robots,atRestAfterS,setup);
+    else if(robots.some(r=>r.endgame!==undefined) || atRestAfterS!==undefined)throw Error('Supply an endgame model before scheduling a terminal action.');
+    return {robots,setup,game:ledger,phase:phases[0].name,phaseIndex:0,ticks:0,paused:true,ended:false,resources:reservations(),hotspots:[],
       log:[], carry:0,phaseHistory:[]};
   }
   function program(r,sim){return model.programs[r.plans[sim.phase]];}
@@ -504,7 +734,11 @@ function createFieldRehearsal(profile) {
   }
   function proposal(sim,r) {
     r.blocked='';
-    const legs=itinerary(r,sim);
+    const goal=terminal?.enter(sim,r,sim.ticks*dt);
+    if(goal && terminal.inside(r,goal)){
+      r.action='Holding at '+goal.label;return r.p;
+    }
+    const legs=goal?[{point:goal.at,action:'Approach '+goal.label}]:itinerary(r,sim);
     if(!legs.length || r.leg>=legs.length){r.action=legs.length?'Holding at destination':'Holding position';return r.p;}
     const leg=legs[r.leg];
     r.action=leg.action;
@@ -567,8 +801,10 @@ function createFieldRehearsal(profile) {
       if(r.waypoints?.[r.target] && norm(b,r.waypoints[r.target])<1e-8)r.target++;
     }
     sim.robots.forEach((r,i)=>{r.p=ends[i];});
+    terminal?.observe(sim,begins,sim.ticks*dt,(sim.ticks+1)*dt);
     sim.ticks++;
     if(sim.ticks>=duration(sim.phase)){
+      terminal?.assess(sim);
       sim.paused=true;sim.ended=true;sim.carry=0;
       sim.phaseHistory.push({phase:sim.phase,seconds:sim.ticks*dt,
         robots:sim.robots.map(r=>({id:r.id,visits:r.visits,waitSeconds:r.wait*dt,blocked:r.blocked,position:[...r.p]}))});
@@ -588,7 +824,7 @@ function createFieldRehearsal(profile) {
     sim.phase=phases[++sim.phaseIndex].name;sim.ticks=0;sim.carry=0;sim.ended=false;sim.paused=true;sim.resources=reservations();
     for(const r of sim.robots)Object.assign(r,{leg:0,waypoints:null,target:0,dwell:0,wait:0,visits:0,blocked:'',action:''});
   }
-  return {supported,behaviors,defaults,create,advance,nextPhase,assessRoute,geom,dt,periods:phases,
+  return {supported,behaviors,defaults,create,advance,nextPhase,assessRoute,geom,dt,periods:phases,terminal,
     phaseSeconds:name=>duration(name)*dt};
 }
 function createMatchSeries(engine, matches, {allowEmptyRoster = false} = {}) {
@@ -610,7 +846,7 @@ function createMatchSeries(engine, matches, {allowEmptyRoster = false} = {}) {
   const results=[];
   function begin() {
     const match=configs[index];
-    sim=engine.create(match.roster,match.setup,match.tieWinner);
+    sim=engine.create(match.roster,match.setup,match.tieWinner,match.endgameAtRestAfterS);
     sim.paused=false;
   }
   begin();
@@ -1304,7 +1540,7 @@ selectOpportunity();
   const student=createRehearsalSetup(rehearsal,roster,setup,config.series?.matches);
   let sim=student.reset(),activeSource='';
   const seriesSource=byId('replaySeriesSource');
-  if(config.series?.matches?.length)seriesSource.add(new Option('Published scenarios','published'));
+  if(config.series?.matches?.length)seriesSource.add(new Option('Published scenarios · '+config.series.matches.length+' matches','published'));
   seriesSource.add(new Option('My roster · 3 matches','student'));
   for(const setup of config.setups)byId('replaySetup').add(new Option(setup,setup));
   byId('replayBasis').textContent=config.basis+' '+config.boundsNote+
@@ -1322,7 +1558,13 @@ selectOpportunity();
     };
     row.append(select,counts);legend.append(row);counters.set(s.id,{button:select,counts});
   }
-  legend.parentElement.hidden=!stations.length;
+  for(const [i,t] of (config.endgame?.targets ?? []).entries()){
+    const row=document.createElement('li');
+    row.textContent='T'+(i+1)+' · '+t.label+' · '+t.side+' · '+t.resource+' · '+t.capacity+' slot(s) shared'+
+      (t.setups?' · '+t.setups.join(', '):'');
+    legend.append(row);
+  }
+  legend.parentElement.hidden=!stations.length && !config.endgame;
   function draw() {
     const box=canvas.getBoundingClientRect();if(!box.width || !box.height)return;
     const dpr=window.devicePixelRatio || 1;
@@ -1377,6 +1619,17 @@ selectOpportunity();
     for(const h of sim.hotspots){
       const xy=at(h.point);context.fillStyle='#ffbd6e91';context.beginPath();
       context.arc(...xy,Math.max(3,Math.min(13,Math.sqrt(h.ticks)*.8))*Math.max(scale,.55),0,Math.PI*2);context.fill();
+    }
+    for(const [i,t] of (config.endgame?.targets ?? []).entries()){
+      if(t.setups && !t.setups.includes(setup))continue;
+      const [x,y]=at(t.at);
+      context.save();context.strokeStyle=t.side==='blue'?'#b6daff':'#ffbec8';
+      context.setLineDash([2,3]);context.beginPath();context.arc(x,y,t.radiusIn*scale,0,Math.PI*2);context.stroke();
+      context.setLineDash([]);const [mx,my]=at(t.displayAt ?? t.at);
+      line([t.at,t.displayAt ?? t.at],context.strokeStyle);
+      context.font='bold 11px system-ui';context.fillStyle='#fff';context.textAlign='center';
+      context.fillText('T'+(i+1),Math.max(x0+10,Math.min(x0+L*scale-10,mx)),Math.max(y0-W*scale+12,Math.min(y0-3,my)));
+      context.restore();
     }
     for(const r of sim.robots) {
       if(r.waypoints?.length && r.target<r.waypoints.length) {
@@ -1435,6 +1688,53 @@ selectOpportunity();
     listRoster();render();
   }
   function edit(id,patch){setRoster(roster.map(r=>r.id===id?{...r,...patch}:r));}
+  function terminalEditor(r,card){
+    const spec=config.endgame;if(!spec)return;
+    const choices=[];
+    for(const t of spec.targets)for(const a of spec.actions)if(rehearsal.terminal.eligible(r,a,t,setup))
+      choices.push({action:a.id,target:t.id,label:a.label+' · '+t.label});
+    const section=document.createElement('fieldset'),heading=document.createElement('legend');
+    heading.textContent='Terminal objective';section.append(heading);card.append(section);
+    function select(label,options,value,change){
+      const wrap=document.createElement('label'),control=document.createElement('select');
+      wrap.append(label);control.setAttribute('aria-label',r.id+' '+label);
+      options.forEach(o=>control.add(new Option(o.label,o.value)));
+      control.value=value;control.onchange=()=>change(control.value);
+      wrap.append(control);section.append(wrap);
+    }
+    const key=c=>JSON.stringify([c.action,c.target]), options=choices.map(c=>({label:c.label,value:key(c)}));
+    const lookup=value=>{const [action,target]=JSON.parse(value);return {action,target};};
+    const plan=r.endgame;
+    select('Final objective',[{label:'Continue ordinary scoring',value:''},...options],plan?key(plan):'',value=>
+      edit(r.id,{endgame:value?{...lookup(value),startS:plan?.startS ?? 0,witnesses:{}}:undefined}));
+    if(!plan)return;
+    const time=document.createElement('input'),wrap=document.createElement('label');
+    wrap.append('Switch at elapsed '+spec.period+' seconds');time.type='number';time.min=0;
+    time.max=config.periods.at(-1).seconds;time.step='.05';time.value=plan.startS;
+    time.setAttribute('aria-label',r.id+' terminal switch seconds');
+    time.onchange=()=>{if(time.value!=='' && time.reportValidity())edit(r.id,{endgame:{...plan,startS:time.valueAsNumber}});};
+    wrap.append(time);section.append(wrap);
+    const fallback=plan.fallbacks ?? [], selected=[plan,...fallback], used=new Set(selected.map(c=>c.action));
+    const remaining=choices.filter(c=>!used.has(c.action));
+    if(remaining.length)select('Add fallback',[{label:'Select an alternative',value:''},...remaining.map(c=>({label:c.label,value:key(c)}))],'',v=>{
+      if(v)edit(r.id,{endgame:{...plan,fallbacks:[...fallback,lookup(v)]}});
+    });
+    const criteria=new Set();
+    for(const c of selected){
+      const a=spec.actions.find(a=>a.id===c.action);
+      rehearsal.terminal.criteria(a).forEach(name=>criteria.add(name));
+    }
+    if(fallback.length){
+      const clear=button('Clear fallbacks: '+fallback.map(f=>spec.actions.find(a=>a.id===f.action).label).join(', '),()=>{
+        const allowed=rehearsal.terminal.criteria(spec.actions.find(a=>a.id===plan.action));
+        const witnesses=Object.fromEntries(Object.entries(plan.witnesses ?? {}).filter(([k])=>allowed.includes(k)));
+        edit(r.id,{endgame:{...plan,fallbacks:[],witnesses}});
+      });section.append(clear);
+    }
+    for(const name of criteria)select('At assessment, assume '+name,[
+      {value:'unknown',label:'Unknown'},{value:'met',label:'Met at assessment'},{value:'failed',label:'Failed at assessment'}
+    ],plan.witnesses?.[name] ?? 'unknown',v=>edit(r.id,{endgame:{...plan,witnesses:{...plan.witnesses,[name]:v}}}));
+  }
   function listRoster(){
     rosterBox.replaceChildren();
     for(const side of ['blue','red']){
@@ -1466,7 +1766,7 @@ selectOpportunity();
       const apply=button('Use trial box',()=>edit(r.id,{length:state.length,width:state.width,height:state.height,heading:state.heading}));
       apply.setAttribute('aria-label','Use trial box for '+r.id);
       const remove=button('Remove',()=>setRoster(roster.filter(other=>other.id!==r.id)));
-      remove.setAttribute('aria-label','Remove '+r.id);configLine.append(apply,remove);card.append(configLine);group.append(card);
+      remove.setAttribute('aria-label','Remove '+r.id);configLine.append(apply,remove);card.append(configLine);terminalEditor(r,card);group.append(card);
       }
     }
   }
@@ -1488,7 +1788,18 @@ selectOpportunity();
     byId('replaySeries').textContent=series && !series.done ? (seriesPaused?'Resume series at 10×':'Pause series') : 'Play match series at 10×';
     byId('replayScore').textContent=(config.stations?.length?'Modeled rehearsal score · Blue '+sim.game.score.blue+' · Red '+sim.game.score.red+
       '. '+config.stations.filter(s=>s.kind==='retrieval').map(s=>s.label+' '+sim.game.stock[s.id].length+' '+s.piece+' available').join(' · '):
-      'This profile has no registered piece or scoring stations.')+(series?' · '+activeSource+' · Match '+series.match.id+' · '+series.match.basis:'');
+      (sim.game.endgame?'Modeled rehearsal score · Blue '+sim.game.score.blue+' · Red '+sim.game.score.red:'This profile has no registered piece or scoring stations.'))+(series?' · '+activeSource+' · Match '+series.match.id+' · '+series.match.basis:'');
+    const terminal=sim.game.endgame, report=byId('replayTerminal');
+    report.hidden=!terminal;
+    if(terminal){
+      const rows=terminal.attempts.map(a=>a.robot+' · '+a.action+' · '+(a.awardedAction?'awarded '+a.awardedAction+' (+'+a.points+')':a.outcome==='pending'?
+        (a.completedAtS!==null?'service complete; awaiting assessment':a.arrivedAtS!==null?'at target':a.interruptedAtS!==null?'approaching':'switch at '+a.startS+' s'):a.outcome));
+      if(terminal.assessed){
+        rows.unshift('Powered time ended at '+terminal.activeCutoffS+' s. Assessed at '+terminal.assessmentTimeS+' s. Terminal points: Blue '+terminal.terminalScore.blue+', Red '+terminal.terminalScore.red+'.');
+        for(const b of terminal.bonusAwards.filter(b=>b.points))rows.push(b.side+' '+b.id+' · '+b.robots.join(', ')+' · +'+b.points);
+      }
+      report.textContent=rows.join(' · ') || 'Choose a terminal objective in a robot’s roster to interrupt its ordinary scoring cycle.';
+    }
     for(const s of stations){
       const count=s.kind==='retrieval'?sim.game.stock[s.id].length+' available':
         sim.game.attempts[s.id]+' attempted'+(s.capacity===undefined?'':' · '+sim.game.occupied[s.id]+'/'+s.capacity+' occupied');

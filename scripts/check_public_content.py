@@ -26,6 +26,10 @@ SHOWCASE_ASSETS["docs/media/r7-nominal-d1.glb"] = "5bfe2bbbfe008a4915b23f4d18579
 
 SHOWCASE_ASSETS["cad/student/r7-maxswerve.f3d"] = "6e2b65f3493dfd0a8c7a27bbf26445dec29213e93806ff9b0c55df5548b00266"
 
+SHOWCASE_ASSETS["cad/student/r8-stage-climber.f3d"] = "26a5335e66c05dec8918b767dd27a4cb62421c1d88450102e6c66d1a4914c612"
+SHOWCASE_ASSETS["docs/media/r8-stage.glb"] = "77a0076da3873d89b3741887262ee825d030712e846702b1432859ce56abdeb3"
+SHOWCASE_ASSETS["docs/media/r8-stage.png"] = "0e18ea715937810883b6e285848efaa76937e8ebd51440a0797baf6e5e0bc865"
+
 def git(*args):return subprocess.check_output(['git','-C',str(ROOT),*args])
 def audit(revision='HEAD'):
  failures=[]

@@ -1,6 +1,6 @@
 {
   "schema": "agent-frc/rehearsal-series@1",
-  "profileSha256": "1ccce69e2ede0cb2203aaaac0ecdde0be5a3a35837b32b758d803357731f1387",
+  "profileSha256": "8b63e86b5f9240670dc38bceb200a9352da8c3434968ea3d7ad4c02033ec706a",
   "stepS": 0.05,
   "playbackRate": 10,
   "modelSeconds": 450,
@@ -8,7 +8,7 @@
   "matches": [
     {
       "id": "wing-opening",
-      "basis": "Both alliances prioritize their own wing and local goals.",
+      "basis": "An R7 solo attempt has unresolved passive retention. Red rehearses a qualified solo hang.",
       "setup": "Nominal field",
       "roster": [
         {
@@ -49,6 +49,18 @@
           "preload": {
             "station": "red-source",
             "quantity": 1
+          },
+          "endgame": {
+            "action": "onstage",
+            "target": "red-center",
+            "startS": 110,
+            "witnesses": {
+              "ownChainOnly": "met",
+              "floorClear": "met",
+              "allowedContacts": "met",
+              "supportedThroughAssessment": "met",
+              "directOrTransitiveChainSupport": "met"
+            }
           }
         },
         {
@@ -85,6 +97,25 @@
           "preload": {
             "station": "blue-source",
             "quantity": 1
+          },
+          "endgame": {
+            "action": "onstage",
+            "target": "blue-center",
+            "startS": 111,
+            "witnesses": {
+              "ownChainOnly": "met",
+              "floorClear": "met",
+              "allowedContacts": "met",
+              "supportedThroughAssessment": "unknown",
+              "directOrTransitiveChainSupport": "met",
+              "bumpersInOwnStageZoneAtAssessment": "unknown"
+            },
+            "fallbacks": [
+              {
+                "action": "park",
+                "target": "blue-center"
+              }
+            ]
           }
         },
         {
@@ -198,21 +229,21 @@
             {
               "id": "B1",
               "visits": 0,
-              "waitSeconds": 124.75,
-              "blocked": "Occupied by B2",
+              "waitSeconds": 100.75,
+              "blocked": "",
               "position": [
-                220.7760765401222,
-                237.70605549318964
+                226.735,
+                162.809
               ]
             },
             {
               "id": "B2",
               "visits": 0,
-              "waitSeconds": 124.80000000000001,
-              "blocked": "Occupied by B1",
+              "waitSeconds": 122.15,
+              "blocked": "Occupied by R2",
               "position": [
-                184.92517827683113,
-                258.99257391953824
+                387.751576389855,
+                169.06025851865996
               ]
             },
             {
@@ -238,11 +269,11 @@
             {
               "id": "R2",
               "visits": 0,
-              "waitSeconds": 117.9,
-              "blocked": "Occupied by B3",
+              "waitSeconds": 92.9,
+              "blocked": "",
               "position": [
-                156.61245887733625,
-                110.44497353233626
+                424.515,
+                160.441
               ]
             },
             {
@@ -375,7 +406,7 @@
         },
         "score": {
           "blue": 17,
-          "red": 19
+          "red": 22
         },
         "attempts": {
           "blue-speaker": 3,
@@ -799,12 +830,148 @@
             "prescribedOutcome": "credited",
             "activity": "active"
           }
-        ]
+        ],
+        "endgame": {
+          "period": "TELEOP",
+          "basis": "Archived final 2024 rules. The clock determines travel and service. Contact, disabled support and microphone states are scenario observations. ENSEMBLE awards one qualification RP for at least 10 STAGE points and two ONSTAGE robots. The match score counts match points only.",
+          "sources": [
+            "https://firstfrc.blob.core.windows.net/frc2024/Manual/HTML/2024GameManual.htm",
+            "https://firstfrc.blob.core.windows.net/frc2024/FieldAssets/2024FieldDrawings.pdf"
+          ],
+          "activeCutoffS": 150,
+          "periodCutoffS": 135,
+          "maxDelayS": 5,
+          "atRestAfterS": 5,
+          "assessmentTimeS": 155,
+          "assessed": true,
+          "attempts": [
+            {
+              "robot": "B1",
+              "side": "blue",
+              "action": "onstage",
+              "target": "blue-center",
+              "resource": "straight-chain",
+              "startS": 111,
+              "serviceS": 10,
+              "requires": [
+                "ownChainOnly",
+                "floorClear",
+                "allowedContacts",
+                "supportedThroughAssessment"
+              ],
+              "witnesses": {
+                "ownChainOnly": "met",
+                "floorClear": "met",
+                "allowedContacts": "met",
+                "supportedThroughAssessment": "unknown",
+                "directOrTransitiveChainSupport": "met",
+                "bumpersInOwnStageZoneAtAssessment": "unknown"
+              },
+              "targetWitnesses": {
+                "microphoneHasHighNote": "met"
+              },
+              "interruptedAtS": 111,
+              "arrivedAtS": 112.30000000000001,
+              "serviceStartS": 112.30000000000001,
+              "completedAtS": 122.30000000000001,
+              "fallbacks": [
+                {
+                  "action": "park",
+                  "target": "blue-center",
+                  "requires": [
+                    "bumpersInOwnStageZoneAtAssessment"
+                  ],
+                  "serviceS": 0,
+                  "heldFromS": 112.30000000000001,
+                  "outcome": "unresolved"
+                }
+              ],
+              "awardedAction": null,
+              "awardedTarget": null,
+              "outcome": "unresolved",
+              "points": 0,
+              "interruptedBehavior": "cycler",
+              "position": [
+                226.735,
+                162.809
+              ]
+            },
+            {
+              "robot": "R2",
+              "side": "red",
+              "action": "onstage",
+              "target": "red-center",
+              "resource": "straight-chain",
+              "startS": 110,
+              "serviceS": 10,
+              "requires": [
+                "ownChainOnly",
+                "floorClear",
+                "allowedContacts",
+                "supportedThroughAssessment"
+              ],
+              "witnesses": {
+                "ownChainOnly": "met",
+                "floorClear": "met",
+                "allowedContacts": "met",
+                "supportedThroughAssessment": "met",
+                "directOrTransitiveChainSupport": "met"
+              },
+              "targetWitnesses": {
+                "microphoneHasHighNote": "unknown"
+              },
+              "interruptedAtS": 110,
+              "arrivedAtS": 113.30000000000001,
+              "serviceStartS": 113.30000000000001,
+              "completedAtS": 123.30000000000001,
+              "fallbacks": [],
+              "awardedAction": "onstage",
+              "awardedTarget": "red-center",
+              "outcome": "qualified",
+              "points": 3,
+              "interruptedBehavior": "red-amp",
+              "position": [
+                424.515,
+                160.441
+              ]
+            }
+          ],
+          "bonusAwards": [
+            {
+              "id": "spotlight",
+              "side": "red",
+              "group": "straight-chain",
+              "robots": [],
+              "requiredRobots": 1,
+              "units": 0,
+              "points": 0
+            },
+            {
+              "id": "harmony",
+              "side": "red",
+              "group": "straight-chain",
+              "robots": [
+                "R2"
+              ],
+              "requiredRobots": 2,
+              "units": 0,
+              "points": 0
+            }
+          ],
+          "ordinaryScore": {
+            "blue": 17,
+            "red": 19
+          },
+          "terminalScore": {
+            "blue": 0,
+            "red": 3
+          }
+        }
       }
     },
     {
       "id": "shared-center",
-      "basis": "Supporting robots pursue the same midfield corridor.",
+      "basis": "Two Blue partners share the lit straight chain with an equal-load assumption. Red rehearses one solo hang and one independent park.",
       "setup": "Nominal field",
       "roster": [
         {
@@ -825,6 +992,18 @@
           "preload": {
             "station": "blue-source",
             "quantity": 1
+          },
+          "endgame": {
+            "action": "onstage",
+            "target": "blue-upper",
+            "startS": 111,
+            "witnesses": {
+              "ownChainOnly": "met",
+              "floorClear": "met",
+              "allowedContacts": "met",
+              "supportedThroughAssessment": "met",
+              "directOrTransitiveChainSupport": "met"
+            }
           }
         },
         {
@@ -845,6 +1024,18 @@
           "preload": {
             "station": "blue-source",
             "quantity": 1
+          },
+          "endgame": {
+            "action": "onstage",
+            "target": "blue-lower",
+            "startS": 111,
+            "witnesses": {
+              "ownChainOnly": "met",
+              "floorClear": "met",
+              "allowedContacts": "met",
+              "supportedThroughAssessment": "met",
+              "directOrTransitiveChainSupport": "met"
+            }
           }
         },
         {
@@ -881,6 +1072,18 @@
           "preload": {
             "station": "red-source",
             "quantity": 1
+          },
+          "endgame": {
+            "action": "onstage",
+            "target": "red-center",
+            "startS": 107,
+            "witnesses": {
+              "ownChainOnly": "met",
+              "floorClear": "met",
+              "allowedContacts": "met",
+              "supportedThroughAssessment": "met",
+              "directOrTransitiveChainSupport": "met"
+            }
           }
         },
         {
@@ -917,7 +1120,15 @@
           "bumper": 3,
           "heading": 180,
           "speed": 85,
-          "capacity": 1
+          "capacity": 1,
+          "endgame": {
+            "action": "park",
+            "target": "red-park",
+            "startS": 117,
+            "witnesses": {
+              "bumpersInOwnStageZoneAtAssessment": "met"
+            }
+          }
         }
       ],
       "periods": [
@@ -994,21 +1205,21 @@
             {
               "id": "B1",
               "visits": 0,
-              "waitSeconds": 127.4,
-              "blocked": "Occupied by R1",
+              "waitSeconds": 99.5,
+              "blocked": "",
               "position": [
-                309.51772847897126,
-                229.67138312616137
+                226.735,
+                182.494
               ]
             },
             {
               "id": "B2",
               "visits": 0,
-              "waitSeconds": 131.85,
-              "blocked": "Occupied by B3",
+              "waitSeconds": 107.85000000000001,
+              "blocked": "",
               "position": [
-                279.07267033557343,
-                128.39294941537835
+                226.735,
+                143.124
               ]
             },
             {
@@ -1024,11 +1235,11 @@
             {
               "id": "R1",
               "visits": 0,
-              "waitSeconds": 127.45,
-              "blocked": "Occupied by B1",
+              "waitSeconds": 99.45,
+              "blocked": "",
               "position": [
-                345.9483816502853,
-                230.2070279506299
+                424.515,
+                160.441
               ]
             },
             {
@@ -1045,7 +1256,7 @@
               "id": "R3",
               "visits": 0,
               "waitSeconds": 133.1,
-              "blocked": "Occupied by B3",
+              "blocked": "Occupied by R2",
               "position": [
                 345.9483816502853,
                 93.04297204937006
@@ -1140,12 +1351,7 @@
               "type": "NOTE"
             }
           ],
-          "center-4": [
-            {
-              "id": "center-4/1",
-              "type": "NOTE"
-            }
-          ],
+          "center-4": [],
           "center-5": [
             {
               "id": "center-5/1",
@@ -1169,7 +1375,12 @@
           "center-5": 1
         },
         "cargo": {
-          "B1": [],
+          "B1": [
+            {
+              "id": "center-4/1",
+              "type": "NOTE"
+            }
+          ],
           "B2": [],
           "B3": [],
           "R1": [],
@@ -1185,8 +1396,8 @@
           "R3": 1
         },
         "score": {
-          "blue": 16,
-          "red": 16
+          "blue": 26,
+          "red": 19
         },
         "attempts": {
           "blue-speaker": 3,
@@ -1485,13 +1696,241 @@
             "points": 2,
             "prescribedOutcome": "credited",
             "activity": "active"
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 108.5,
+            "robot": "B1",
+            "station": "center-4",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "center-4/1"
+            ]
           }
-        ]
+        ],
+        "endgame": {
+          "period": "TELEOP",
+          "basis": "Archived final 2024 rules. The clock determines travel and service. Contact, disabled support and microphone states are scenario observations. ENSEMBLE awards one qualification RP for at least 10 STAGE points and two ONSTAGE robots. The match score counts match points only.",
+          "sources": [
+            "https://firstfrc.blob.core.windows.net/frc2024/Manual/HTML/2024GameManual.htm",
+            "https://firstfrc.blob.core.windows.net/frc2024/FieldAssets/2024FieldDrawings.pdf"
+          ],
+          "activeCutoffS": 150,
+          "periodCutoffS": 135,
+          "maxDelayS": 5,
+          "atRestAfterS": 2.5,
+          "assessmentTimeS": 152.5,
+          "assessed": true,
+          "attempts": [
+            {
+              "robot": "B1",
+              "side": "blue",
+              "action": "onstage",
+              "target": "blue-upper",
+              "resource": "straight-chain",
+              "startS": 111,
+              "serviceS": 10,
+              "requires": [
+                "ownChainOnly",
+                "floorClear",
+                "allowedContacts",
+                "supportedThroughAssessment"
+              ],
+              "witnesses": {
+                "ownChainOnly": "met",
+                "floorClear": "met",
+                "allowedContacts": "met",
+                "supportedThroughAssessment": "met",
+                "directOrTransitiveChainSupport": "met"
+              },
+              "targetWitnesses": {
+                "microphoneHasHighNote": "met"
+              },
+              "interruptedAtS": 111,
+              "arrivedAtS": 112.45,
+              "serviceStartS": 112.45,
+              "completedAtS": 122.45,
+              "fallbacks": [],
+              "awardedAction": "onstage",
+              "awardedTarget": "blue-upper",
+              "outcome": "qualified",
+              "points": 3,
+              "interruptedBehavior": "cycler",
+              "position": [
+                226.735,
+                182.494
+              ]
+            },
+            {
+              "robot": "B2",
+              "side": "blue",
+              "action": "onstage",
+              "target": "blue-lower",
+              "resource": "straight-chain",
+              "startS": 111,
+              "serviceS": 10,
+              "requires": [
+                "ownChainOnly",
+                "floorClear",
+                "allowedContacts",
+                "supportedThroughAssessment"
+              ],
+              "witnesses": {
+                "ownChainOnly": "met",
+                "floorClear": "met",
+                "allowedContacts": "met",
+                "supportedThroughAssessment": "met",
+                "directOrTransitiveChainSupport": "met"
+              },
+              "targetWitnesses": {
+                "microphoneHasHighNote": "met"
+              },
+              "interruptedAtS": 111,
+              "arrivedAtS": 111.65,
+              "serviceStartS": 111.65,
+              "completedAtS": 121.65,
+              "fallbacks": [],
+              "awardedAction": "onstage",
+              "awardedTarget": "blue-lower",
+              "outcome": "qualified",
+              "points": 3,
+              "interruptedBehavior": "midfield",
+              "position": [
+                226.735,
+                143.124
+              ]
+            },
+            {
+              "robot": "R1",
+              "side": "red",
+              "action": "onstage",
+              "target": "red-center",
+              "resource": "straight-chain",
+              "startS": 107,
+              "serviceS": 10,
+              "requires": [
+                "ownChainOnly",
+                "floorClear",
+                "allowedContacts",
+                "supportedThroughAssessment"
+              ],
+              "witnesses": {
+                "ownChainOnly": "met",
+                "floorClear": "met",
+                "allowedContacts": "met",
+                "supportedThroughAssessment": "met",
+                "directOrTransitiveChainSupport": "met"
+              },
+              "targetWitnesses": {
+                "microphoneHasHighNote": "unknown"
+              },
+              "interruptedAtS": 107,
+              "arrivedAtS": 108.25,
+              "serviceStartS": 108.25,
+              "completedAtS": 118.25,
+              "fallbacks": [],
+              "awardedAction": "onstage",
+              "awardedTarget": "red-center",
+              "outcome": "qualified",
+              "points": 3,
+              "interruptedBehavior": "cycler",
+              "position": [
+                424.515,
+                160.441
+              ]
+            },
+            {
+              "robot": "R3",
+              "side": "red",
+              "action": "park",
+              "target": "red-park",
+              "resource": "zone-parking-pose",
+              "startS": 117,
+              "serviceS": 0,
+              "requires": [
+                "bumpersInOwnStageZoneAtAssessment"
+              ],
+              "witnesses": {
+                "bumpersInOwnStageZoneAtAssessment": "met"
+              },
+              "targetWitnesses": {},
+              "interruptedAtS": 117,
+              "arrivedAtS": null,
+              "serviceStartS": null,
+              "completedAtS": null,
+              "fallbacks": [],
+              "awardedAction": null,
+              "awardedTarget": null,
+              "outcome": "did-not-arrive",
+              "points": 0,
+              "interruptedBehavior": "midfield",
+              "position": [
+                345.9483816502853,
+                93.04297204937006
+              ]
+            }
+          ],
+          "bonusAwards": [
+            {
+              "id": "spotlight",
+              "side": "blue",
+              "group": "straight-chain",
+              "robots": [
+                "B1",
+                "B2"
+              ],
+              "requiredRobots": 1,
+              "units": 2,
+              "points": 2
+            },
+            {
+              "id": "spotlight",
+              "side": "red",
+              "group": "straight-chain",
+              "robots": [],
+              "requiredRobots": 1,
+              "units": 0,
+              "points": 0
+            },
+            {
+              "id": "harmony",
+              "side": "blue",
+              "group": "straight-chain",
+              "robots": [
+                "B1",
+                "B2"
+              ],
+              "requiredRobots": 2,
+              "units": 1,
+              "points": 2
+            },
+            {
+              "id": "harmony",
+              "side": "red",
+              "group": "straight-chain",
+              "robots": [
+                "R1"
+              ],
+              "requiredRobots": 2,
+              "units": 0,
+              "points": 0
+            }
+          ],
+          "ordinaryScore": {
+            "blue": 16,
+            "red": 16
+          },
+          "terminalScore": {
+            "blue": 10,
+            "red": 3
+          }
+        }
       }
     },
     {
       "id": "miss-and-stage",
-      "basis": "One cycler misses its first TELEOP shot. One partner attempts the unqualified TRAP.",
+      "basis": "Blue leaves too little time for its solo climb. Red loses support and has an independent PARK observation.",
       "setup": "Nominal field",
       "roster": [
         {
@@ -1532,6 +1971,25 @@
           "preload": {
             "station": "red-source",
             "quantity": 1
+          },
+          "endgame": {
+            "action": "onstage",
+            "target": "red-center",
+            "startS": 110,
+            "witnesses": {
+              "ownChainOnly": "met",
+              "floorClear": "met",
+              "allowedContacts": "met",
+              "supportedThroughAssessment": "failed",
+              "directOrTransitiveChainSupport": "met",
+              "bumpersInOwnStageZoneAtAssessment": "met"
+            },
+            "fallbacks": [
+              {
+                "action": "park",
+                "target": "red-center"
+              }
+            ]
           }
         },
         {
@@ -1572,6 +2030,18 @@
           "preload": {
             "station": "blue-source",
             "quantity": 1
+          },
+          "endgame": {
+            "action": "onstage",
+            "target": "blue-center",
+            "startS": 129,
+            "witnesses": {
+              "ownChainOnly": "met",
+              "floorClear": "met",
+              "allowedContacts": "met",
+              "supportedThroughAssessment": "met",
+              "directOrTransitiveChainSupport": "met"
+            }
           }
         },
         {
@@ -1608,7 +2078,15 @@
           "bumper": 3,
           "heading": 0,
           "speed": 85,
-          "capacity": 1
+          "capacity": 1,
+          "endgame": {
+            "action": "park",
+            "target": "blue-park",
+            "startS": 112,
+            "witnesses": {
+              "bumpersInOwnStageZoneAtAssessment": "met"
+            }
+          }
         }
       ],
       "periods": [
@@ -1688,28 +2166,28 @@
               "waitSeconds": 0,
               "blocked": "",
               "position": [
-                550.8446822739938,
-                56.41862522969192
+                226.63256197651972,
+                162.84242000106718
               ]
             },
             {
               "id": "B2",
               "visits": 0,
-              "waitSeconds": 132.20000000000002,
+              "waitSeconds": 122.15,
               "blocked": "Occupied by R2",
               "position": [
-                310.46445850399334,
-                293.8870340505482
+                387.751576389855,
+                169.06025851865996
               ]
             },
             {
               "id": "B3",
               "visits": 1,
-              "waitSeconds": 0,
-              "blocked": "",
+              "waitSeconds": 22.950000000000003,
+              "blocked": "Occupied by R3",
               "position": [
-                142,
-                75
+                144.13150435143555,
+                78.67684500622632
               ]
             },
             {
@@ -1725,11 +2203,11 @@
             {
               "id": "R2",
               "visits": 0,
-              "waitSeconds": 132.25,
-              "blocked": "Occupied by B2",
+              "waitSeconds": 107.25,
+              "blocked": "",
               "position": [
-                345.03490682643474,
-                293.9604798710741
+                424.515,
+                160.441
               ]
             },
             {
@@ -1799,12 +2277,7 @@
             }
           ],
           "center-4": [],
-          "center-5": [
-            {
-              "id": "center-5/1",
-              "type": "NOTE"
-            }
-          ]
+          "center-5": []
         },
         "initial": {
           "blue-source": 9,
@@ -1843,12 +2316,12 @@
           "R3": 1
         },
         "score": {
-          "blue": 26,
-          "red": 18
+          "blue": 27,
+          "red": 19
         },
         "attempts": {
           "blue-speaker": 9,
-          "blue-amp": 2,
+          "blue-amp": 3,
           "blue-trap-front": 0,
           "blue-trap-upper": 0,
           "blue-trap-lower": 0,
@@ -1860,7 +2333,7 @@
         },
         "occupied": {
           "blue-speaker": 8,
-          "blue-amp": 2,
+          "blue-amp": 3,
           "blue-trap-front": 0,
           "blue-trap-upper": 0,
           "blue-trap-lower": 0,
@@ -1976,6 +2449,12 @@
             "id": "blue-source/7",
             "type": "NOTE",
             "station": "blue-speaker",
+            "outcome": "credited"
+          },
+          {
+            "id": "center-5/1",
+            "type": "NOTE",
+            "station": "blue-amp",
             "outcome": "credited"
           },
           {
@@ -2459,6 +2938,17 @@
           },
           {
             "phase": "TELEOP",
+            "timeS": 111.65,
+            "robot": "B2",
+            "station": "center-5",
+            "operation": "acquire",
+            "outcome": "acquired",
+            "pieces": [
+              "center-5/1"
+            ]
+          },
+          {
+            "phase": "TELEOP",
             "timeS": 115.95,
             "robot": "B1",
             "station": "blue-source",
@@ -2467,6 +2957,20 @@
             "pieces": [
               "blue-source/8"
             ]
+          },
+          {
+            "phase": "TELEOP",
+            "timeS": 116.25,
+            "robot": "B2",
+            "station": "blue-amp",
+            "operation": "attempt",
+            "outcome": "credited",
+            "pieces": [
+              "center-5/1"
+            ],
+            "points": 1,
+            "prescribedOutcome": "credited",
+            "activity": "active"
           },
           {
             "phase": "TELEOP",
@@ -2500,7 +3004,152 @@
             "outcome": "no-compatible-cargo",
             "pieces": []
           }
-        ]
+        ],
+        "endgame": {
+          "period": "TELEOP",
+          "basis": "Archived final 2024 rules. The clock determines travel and service. Contact, disabled support and microphone states are scenario observations. ENSEMBLE awards one qualification RP for at least 10 STAGE points and two ONSTAGE robots. The match score counts match points only.",
+          "sources": [
+            "https://firstfrc.blob.core.windows.net/frc2024/Manual/HTML/2024GameManual.htm",
+            "https://firstfrc.blob.core.windows.net/frc2024/FieldAssets/2024FieldDrawings.pdf"
+          ],
+          "activeCutoffS": 150,
+          "periodCutoffS": 135,
+          "maxDelayS": 5,
+          "atRestAfterS": 8,
+          "assessmentTimeS": 155,
+          "assessed": true,
+          "attempts": [
+            {
+              "robot": "B1",
+              "side": "blue",
+              "action": "onstage",
+              "target": "blue-center",
+              "resource": "straight-chain",
+              "startS": 129,
+              "serviceS": 10,
+              "requires": [
+                "ownChainOnly",
+                "floorClear",
+                "allowedContacts",
+                "supportedThroughAssessment"
+              ],
+              "witnesses": {
+                "ownChainOnly": "met",
+                "floorClear": "met",
+                "allowedContacts": "met",
+                "supportedThroughAssessment": "met",
+                "directOrTransitiveChainSupport": "met"
+              },
+              "targetWitnesses": {
+                "microphoneHasHighNote": "met"
+              },
+              "interruptedAtS": 129,
+              "arrivedAtS": 130.9,
+              "serviceStartS": 130.9,
+              "completedAtS": null,
+              "fallbacks": [],
+              "awardedAction": null,
+              "awardedTarget": null,
+              "outcome": "service-incomplete",
+              "points": 0,
+              "interruptedBehavior": "miss-recover",
+              "position": [
+                226.63256197651972,
+                162.84242000106718
+              ]
+            },
+            {
+              "robot": "B3",
+              "side": "blue",
+              "action": "park",
+              "target": "blue-park",
+              "resource": "zone-parking-pose",
+              "startS": 112,
+              "serviceS": 0,
+              "requires": [
+                "bumpersInOwnStageZoneAtAssessment"
+              ],
+              "witnesses": {
+                "bumpersInOwnStageZoneAtAssessment": "met"
+              },
+              "targetWitnesses": {},
+              "interruptedAtS": 112,
+              "arrivedAtS": null,
+              "serviceStartS": null,
+              "completedAtS": null,
+              "fallbacks": [],
+              "awardedAction": null,
+              "awardedTarget": null,
+              "outcome": "did-not-arrive",
+              "points": 0,
+              "interruptedBehavior": "midfield",
+              "position": [
+                144.13150435143555,
+                78.67684500622632
+              ]
+            },
+            {
+              "robot": "R2",
+              "side": "red",
+              "action": "onstage",
+              "target": "red-center",
+              "resource": "straight-chain",
+              "startS": 110,
+              "serviceS": 10,
+              "requires": [
+                "ownChainOnly",
+                "floorClear",
+                "allowedContacts",
+                "supportedThroughAssessment"
+              ],
+              "witnesses": {
+                "ownChainOnly": "met",
+                "floorClear": "met",
+                "allowedContacts": "met",
+                "supportedThroughAssessment": "failed",
+                "directOrTransitiveChainSupport": "met",
+                "bumpersInOwnStageZoneAtAssessment": "met"
+              },
+              "targetWitnesses": {
+                "microphoneHasHighNote": "unknown"
+              },
+              "interruptedAtS": 110,
+              "arrivedAtS": 111.85000000000001,
+              "serviceStartS": 111.85000000000001,
+              "completedAtS": 121.85000000000001,
+              "fallbacks": [
+                {
+                  "action": "park",
+                  "target": "red-center",
+                  "requires": [
+                    "bumpersInOwnStageZoneAtAssessment"
+                  ],
+                  "serviceS": 0,
+                  "heldFromS": 111.85000000000001,
+                  "outcome": "qualified"
+                }
+              ],
+              "awardedAction": "park",
+              "awardedTarget": "red-center",
+              "outcome": "failed",
+              "points": 1,
+              "interruptedBehavior": "amp",
+              "position": [
+                424.515,
+                160.441
+              ]
+            }
+          ],
+          "bonusAwards": [],
+          "ordinaryScore": {
+            "blue": 27,
+            "red": 18
+          },
+          "terminalScore": {
+            "blue": 0,
+            "red": 1
+          }
+        }
       }
     }
   ]

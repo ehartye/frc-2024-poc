@@ -1,0 +1,20 @@
+{
+  "nativeSha256": "26a5335e66c05dec8918b767dd27a4cb62421c1d88450102e6c66d1a4914c612",
+  "fieldStepSha256": "42c91b3efb9521d059c13cf25e2d7dda6315bdd6b7eb1202847bfe84ffb43c1a",
+  "testedClampOccurrences": 3,
+  "samples": [
+    {
+      "alongChainMm": 0.0,
+      "minRadioToClampMm": 400.4041762384601
+    },
+    {
+      "alongChainMm": -500.0,
+      "minRadioToClampMm": 394.4992986980213
+    },
+    {
+      "alongChainMm": 500.0,
+      "minRadioToClampMm": 134.91246495676413
+    }
+  ],
+  "scope": "Conservative R7 radio box versus every installed Blue GE-24251_Clampv2 at the specified terminal poses."
+}
