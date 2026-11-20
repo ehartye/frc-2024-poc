@@ -1,0 +1,140 @@
+{
+  "fixtureBodies": 17,
+  "parentBodies": 923,
+  "selectedParkedBodies": 892,
+  "verifiedParkedFrameBodies": [
+    "Inner crossmember 711.2 mm",
+    "Nose spacer at -160.0 mm",
+    "Nose spacer at -342.9 mm",
+    "Nose spacer at 160.0 mm",
+    "Nose spacer at 342.9 mm",
+    "R7 540 Tab-mounted rectangular rail",
+    "R7 550 Tab-mounted rectangular rail",
+    "R7 555 Tab-mounted rectangular rail",
+    "R7 592 Box tube with welded screw landings",
+    "R7 595 Body1",
+    "R7 596 Body1",
+    "R7 597 Body1",
+    "Rail flush weld sleeve 23 -329",
+    "Rail flush weld sleeve 23 329",
+    "Rail flush weld sleeve 53 -329",
+    "Rail flush weld sleeve 53 329"
+  ],
+  "gaugeVolumeMm3": 4297.6988,
+  "strokeMm": 60,
+  "stationResults": [
+    {
+      "centerMm": [
+        23,
+        -329
+      ],
+      "beforeHitsMm3": {
+        "R9 mast attachment:1 / Crossmember flush weld sleeve 23 -329": [
+          0.0,
+          2161.1114
+        ],
+        "R9 mast attachment:1 / MISUMI CB8-100 23 -329": [
+          4919.43351,
+          2707.75228
+        ],
+        "R9 mast attachment:1 / Accu HPN-M8-C8-Z 23 -329": [
+          22.31787,
+          0.0
+        ]
+      },
+      "groundHitsMm3": {},
+      "nominalSleeveOverlapMm3": 0.0,
+      "offsetSleeveOverlapMm3": 36.9894,
+      "projectedStopSeatMm2": 56.352500000000006
+    },
+    {
+      "centerMm": [
+        53,
+        -329
+      ],
+      "beforeHitsMm3": {
+        "R9 mast attachment:1 / Crossmember flush weld sleeve 53 -329": [
+          0.0,
+          2161.1114
+        ],
+        "R9 mast attachment:1 / MISUMI CB8-100 53 -329": [
+          4919.43351,
+          2707.75228
+        ],
+        "R9 mast attachment:1 / Accu HPN-M8-C8-Z 53 -329": [
+          22.31787,
+          0.0
+        ]
+      },
+      "groundHitsMm3": {},
+      "nominalSleeveOverlapMm3": 0.0,
+      "offsetSleeveOverlapMm3": 36.9894,
+      "projectedStopSeatMm2": 56.352500000000006
+    },
+    {
+      "centerMm": [
+        23,
+        329
+      ],
+      "beforeHitsMm3": {
+        "R9 mast attachment:1 / Crossmember flush weld sleeve 23 329": [
+          0.0,
+          2161.1114
+        ],
+        "R9 mast attachment:1 / MISUMI CB8-100 23 329": [
+          4919.43351,
+          2707.75228
+        ],
+        "R9 mast attachment:1 / Accu HPN-M8-C8-Z 23 329": [
+          22.31787,
+          0.0
+        ]
+      },
+      "groundHitsMm3": {},
+      "nominalSleeveOverlapMm3": 0.0,
+      "offsetSleeveOverlapMm3": 36.9894,
+      "projectedStopSeatMm2": 56.352500000000006
+    },
+    {
+      "centerMm": [
+        53,
+        329
+      ],
+      "beforeHitsMm3": {
+        "R9 mast attachment:1 / Crossmember flush weld sleeve 53 329": [
+          0.0,
+          2161.1114
+        ],
+        "R9 mast attachment:1 / MISUMI CB8-100 53 329": [
+          4919.43351,
+          2707.75228
+        ],
+        "R9 mast attachment:1 / Accu HPN-M8-C8-Z 53 329": [
+          22.31787,
+          0.0
+        ]
+      },
+      "groundHitsMm3": {},
+      "nominalSleeveOverlapMm3": 0.0,
+      "offsetSleeveOverlapMm3": 36.9894,
+      "projectedStopSeatMm2": 56.352500000000006
+    }
+  ],
+  "archiveSha256": "9a6ca67136a2279a7280c275b2ca46e754eb70ae8f3d47c4be96bf4868425f7a",
+  "parentSha256": "4663d9fa55b5f3eb8e23549f3205a2d29248322543beb3e7a7d8076a23f93f6d",
+  "frameImageSha256": "85b2dc40ab95b771133c61388c487dd2b6eef34b5d2191f58781e96dcdad2db7",
+  "successfulReopens": [
+    {
+      "phase": "ok",
+      "before": 1,
+      "after": 1,
+      "restored": true
+    },
+    {
+      "phase": "ok",
+      "before": 1,
+      "after": 1,
+      "restored": true
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "checkerCommit": "d508f4bcb5d02edfea8766f8839628310564192c",
+  "sourceHashes": {
+    "load-inventory.json": "3c3cd795398b3b2f500a39f746140717659a1e7c376454774b7c764908ed28d1",
+    "../stage-climb/static-screen.json": "04e56008b154f272d2ad6d3a662510c15d77283807b547ce25c7d910ed943e11",
+    "../stage-climb/solo-trajectory.json": "5180447563bfa411591d67b42216fe9bb1f0d30458ddbb677a292f5504b6e301"
+  },
+  "r8ArchiveSha256": "26a5335e66c05dec8918b767dd27a4cb62421c1d88450102e6c66d1a4914c612",
+  "seatMm": [
+    0.5,
+    -30,
+    480
+  ],
+  "nominalMassKg": 52.786157186389204,
+  "initialCgRelativeToSeatM": [
+    0.010105205480992209,
+    0.0022030168363880095,
+    -0.1984769538566502
+  ],
+  "settledOrientationXYZW": [
+    -0.005544163777139859,
+    0.02543099683256561,
+    0,
+    0.9996612059333474
+  ],
+  "settledCgRelativeToSeatM": [
+    -1.734723475976807e-18,
+    4.336808689942018e-19,
+    -0.19874624442542138
+  ],
+  "cases": [
+    {
+      "id": "initial-contact",
+      "totalVerticalN": 517.6553683719037,
+      "residualXYNm": [
+        -1.140403491969941,
+        5.231013865736802
+      ],
+      "equilibrium": "unbalanced",
+      "loadPathStatus": "fail"
+    },
+    {
+      "id": "settled-hold",
+      "totalVerticalN": 517.6553683719037,
+      "residualXYNm": [
+        -2.2449722999504083e-16,
+        -8.979889199801633e-16
+      ],
+      "equilibrium": "balanced",
+      "loadPathStatus": "open"
+    }
+  ],
+  "scope": "Static rotational equilibrium at two modeled R8 poses. The R13 ground-supported selection retires this mast. Actual whole-robot capacity remains unknown."
+}

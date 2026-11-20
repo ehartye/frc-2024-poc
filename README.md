@@ -10,6 +10,8 @@
 
 [Blue 3 role comparison, service availability and whole-robot support review](experiments/alliance-service/study.md)
 
+[R13 ground-supported frame and four rail service checks](cad/service-readiness/ground-rails/study.md)
+
 [R11 four-controller bench plate, disconnected battery gauge and mast spacer](cad/service-readiness/r11-service.md)
 
 [R10 battery and unloaded mast service fixture](cad/service-readiness/passive-service.md) · [Download the editable service fixture](cad/student/r10-passive-service.f3d)

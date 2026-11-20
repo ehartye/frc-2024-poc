@@ -1,0 +1,193 @@
+{
+  "offlineInterface": {
+    "gaugeVolumeMm3": 4297.6988,
+    "nominalRadialClearanceMm": 0.25,
+    "projectionBelowSleeveMm": 3.2,
+    "retainedBoltOverlapMm3": 2553.4865,
+    "clearedSleeveOverlapMm3": 0.0,
+    "offsetSleeveOverlapMm3": 36.9894
+  },
+  "configuration": {
+    "parentSha256": "4663d9fa55b5f3eb8e23549f3205a2d29248322543beb3e7a7d8076a23f93f6d",
+    "parentBodies": 923,
+    "selectedBodies": 892,
+    "retired": [
+      {
+        "occurrence": "R8 fixed climb mast:1",
+        "body": "Crossmember with four rail mounting holes",
+        "instance": "r8-fixed-climb-mast/crossmember-with-four-rail-mounting-holes"
+      },
+      {
+        "occurrence": "R8 fixed climb mast:1",
+        "body": "Outer guide with double shear lock bore",
+        "instance": "r8-fixed-climb-mast/outer-guide-with-double-shear-lock-bore"
+      },
+      {
+        "occurrence": "R8 fixed climb mast:1",
+        "body": "Thrust bearing support envelope",
+        "instance": "r8-fixed-climb-mast/thrust-bearing-support-envelope"
+      },
+      {
+        "occurrence": "R8 fixed climb mast:1",
+        "body": "Screw envelope",
+        "instance": "r8-fixed-climb-mast/screw-envelope"
+      },
+      {
+        "occurrence": "R8 fixed climb mast:1",
+        "body": "Drive gearbox envelope",
+        "instance": "r8-fixed-climb-mast/drive-gearbox-envelope"
+      },
+      {
+        "occurrence": "R8 fixed climb mast:1",
+        "body": "Drive motor envelope",
+        "instance": "r8-fixed-climb-mast/drive-motor-envelope"
+      },
+      {
+        "occurrence": "R8 fixed climb mast:1",
+        "body": "Spring return housing envelope",
+        "instance": "r8-fixed-climb-mast/spring-return-housing-envelope"
+      },
+      {
+        "occurrence": "R8 sliding saddle:1",
+        "body": "Inner sliding tube with lock bore",
+        "instance": "r8-sliding-saddle/inner-sliding-tube-with-lock-bore"
+      },
+      {
+        "occurrence": "R8 sliding saddle:1",
+        "body": "Nut carrier plate",
+        "instance": "r8-sliding-saddle/nut-carrier-plate"
+      },
+      {
+        "occurrence": "R8 sliding saddle:1",
+        "body": "Travelling nut envelope",
+        "instance": "r8-sliding-saddle/travelling-nut-envelope"
+      },
+      {
+        "occurrence": "R8 sliding saddle:1",
+        "body": "Top bracket",
+        "instance": "r8-sliding-saddle/top-bracket"
+      },
+      {
+        "occurrence": "R8 sliding saddle:1",
+        "body": "Saddle spine",
+        "instance": "r8-sliding-saddle/saddle-spine"
+      },
+      {
+        "occurrence": "R8 sliding saddle:1",
+        "body": "Chain bearing roof",
+        "instance": "r8-sliding-saddle/chain-bearing-roof"
+      },
+      {
+        "occurrence": "R8 sliding saddle:1",
+        "body": "Retaining lip",
+        "instance": "r8-sliding-saddle/retaining-lip"
+      },
+      {
+        "occurrence": "R8 transverse lock:1",
+        "body": "Spring engaged through pin",
+        "instance": "r8-transverse-lock/spring-engaged-through-pin"
+      },
+      {
+        "occurrence": "R9 mast attachment:1",
+        "body": "Crossmember flush weld sleeve 23 -329",
+        "instance": "r9-mast-attachment/crossmember-flush-weld-sleeve-23-329"
+      },
+      {
+        "occurrence": "R9 mast attachment:1",
+        "body": "MISUMI CB8-100 23 -329",
+        "instance": "r9-mast-attachment/misumi-cb8-100-23-329"
+      },
+      {
+        "occurrence": "R9 mast attachment:1",
+        "body": "M8 plain washer 23 -329",
+        "instance": "r9-mast-attachment/m8-plain-washer-23-329"
+      },
+      {
+        "occurrence": "R9 mast attachment:1",
+        "body": "Accu HPN-M8-C8-Z 23 -329",
+        "instance": "r9-mast-attachment/accu-hpn-m8-c8-z-23-329"
+      },
+      {
+        "occurrence": "R9 mast attachment:1",
+        "body": "Crossmember flush weld sleeve 53 -329",
+        "instance": "r9-mast-attachment/crossmember-flush-weld-sleeve-53-329"
+      },
+      {
+        "occurrence": "R9 mast attachment:1",
+        "body": "MISUMI CB8-100 53 -329",
+        "instance": "r9-mast-attachment/misumi-cb8-100-53-329"
+      },
+      {
+        "occurrence": "R9 mast attachment:1",
+        "body": "M8 plain washer 53 -329",
+        "instance": "r9-mast-attachment/m8-plain-washer-53-329"
+      },
+      {
+        "occurrence": "R9 mast attachment:1",
+        "body": "Accu HPN-M8-C8-Z 53 -329",
+        "instance": "r9-mast-attachment/accu-hpn-m8-c8-z-53-329"
+      },
+      {
+        "occurrence": "R9 mast attachment:1",
+        "body": "Crossmember flush weld sleeve 23 329",
+        "instance": "r9-mast-attachment/crossmember-flush-weld-sleeve-23-329"
+      },
+      {
+        "occurrence": "R9 mast attachment:1",
+        "body": "MISUMI CB8-100 23 329",
+        "instance": "r9-mast-attachment/misumi-cb8-100-23-329"
+      },
+      {
+        "occurrence": "R9 mast attachment:1",
+        "body": "M8 plain washer 23 329",
+        "instance": "r9-mast-attachment/m8-plain-washer-23-329"
+      },
+      {
+        "occurrence": "R9 mast attachment:1",
+        "body": "Accu HPN-M8-C8-Z 23 329",
+        "instance": "r9-mast-attachment/accu-hpn-m8-c8-z-23-329"
+      },
+      {
+        "occurrence": "R9 mast attachment:1",
+        "body": "Crossmember flush weld sleeve 53 329",
+        "instance": "r9-mast-attachment/crossmember-flush-weld-sleeve-53-329"
+      },
+      {
+        "occurrence": "R9 mast attachment:1",
+        "body": "MISUMI CB8-100 53 329",
+        "instance": "r9-mast-attachment/misumi-cb8-100-53-329"
+      },
+      {
+        "occurrence": "R9 mast attachment:1",
+        "body": "M8 plain washer 53 329",
+        "instance": "r9-mast-attachment/m8-plain-washer-53-329"
+      },
+      {
+        "occurrence": "R9 mast attachment:1",
+        "body": "Accu HPN-M8-C8-Z 53 329",
+        "instance": "r9-mast-attachment/accu-hpn-m8-c8-z-53-329"
+      }
+    ],
+    "oldNativeMaterialTotalKg": 106.59749564595079,
+    "retiredNativeProxyKg": 4.185775079465437,
+    "retainedWeldedSleevesNativeKg": 0.041689657079447814,
+    "knownRetiredMassKg": [
+      2.536228597696307,
+      2.678539011909798
+    ],
+    "retiredUnknownMassRecords": [
+      "r8-fixed-climb-mast/drive-gearbox-envelope",
+      "r8-fixed-climb-mast/drive-motor-envelope",
+      "r8-fixed-climb-mast/screw-envelope",
+      "r8-fixed-climb-mast/spring-return-housing-envelope",
+      "r8-fixed-climb-mast/thrust-bearing-support-envelope",
+      "r8-sliding-saddle/nut-carrier-plate",
+      "r8-sliding-saddle/travelling-nut-envelope"
+    ],
+    "selectedKnownInstalledSubtotalKg": [
+      41.176020103171275,
+      44.7702965995582
+    ],
+    "actualInstalledKg": null
+  }
+}
