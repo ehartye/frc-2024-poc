@@ -60,8 +60,10 @@ def copy_frame(source, target):
                 seen.add(b.name)
         finally:
             base.finishEdit()
-        for original in selected:
-            b = child.bRepBodies.itemByName(original.name)
+        if child.bRepBodies.count != len(selected):
+            raise ValueError("Unexpected frame body count after base feature edit")
+        for b, original in zip(child.bRepBodies, selected):
+            b.name = original.name
             material, color = original.material, original.appearance
             b.material = target.materials.itemByName(material.name) or target.materials.addByCopy(
                 material, material.name
@@ -104,12 +106,16 @@ def gauge(target):
         "Gauge stem",
         component.xYConstructionPlane,
     )
+    plane_input = component.constructionPlanes.createInput()
+    plane_input.setByOffset(stem.endFaces.item(0), core.ValueInput.createByString("0 mm"))
+    shoulder_plane = component.constructionPlanes.add(plane_input)
+    shoulder_plane.name = "Gauge shoulder plane"
     extrude(
         GRIP,
         GRIP_LENGTH,
         fusion.FeatureOperations.JoinFeatureOperation,
         "Grip and stop",
-        stem.endFaces.item(0),
+        shoulder_plane,
     )
     b = component.bRepBodies.item(0)
     b.name = "Removable 8 mm stepped inspection gauge"

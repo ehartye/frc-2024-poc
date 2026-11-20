@@ -50,6 +50,11 @@ SHOWCASE_ASSETS.update({
     "cad/service-readiness/r11-parked-fixture.png": "7b8bd7e24f3bbf1e65b4f20df45b5d26e3fb2ca301259f96a590b2e3a6920ac2",
 })
 
+SHOWCASE_ASSETS.update({
+    "cad/student/r13-ground-frame.f3d": "9a6ca67136a2279a7280c275b2ca46e754eb70ae8f3d47c4be96bf4868425f7a",
+    "cad/service-readiness/ground-rails/frame.png": "85b2dc40ab95b771133c61388c487dd2b6eef34b5d2191f58781e96dcdad2db7",
+})
+
 def git(*args):return subprocess.check_output(['git','-C',str(ROOT),*args])
 def audit(revision='HEAD'):
  failures=[]

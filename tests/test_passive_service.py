@@ -41,6 +41,38 @@ class ServiceFixture(unittest.TestCase):
         )
         self.assertGreater(min(receipt["nominalProjectedSeatMm2"].values()), 1)
 
+    def test_r13_ground_rail_service(self):
+        folder = READINESS / "ground-rails"
+        fit = json.loads((folder / "native-fit.json").read_bytes())
+        for key, file in (
+            ("archiveSha256", ROOT / "cad/student/r13-ground-frame.f3d"),
+            ("parentSha256", ROOT / "cad/student/r9-physical-assembly.f3d"),
+            ("frameImageSha256", folder / "frame.png"),
+        ):
+            self.assertEqual(fit[key], hashlib.sha256(file.read_bytes()).hexdigest())
+        source = json.loads((ROOT / "cad/assembly-readiness/frame-fit.json").read_bytes())
+        members = set(source["measurement"]["frameMemberBodies"])
+        centers = {(x, y) for x in (23, 53) for y in (-329, 329)}
+        members.update(f"Rail flush weld sleeve {x} {y}" for x, y in centers)
+        self.assertEqual(set(fit["verifiedParkedFrameBodies"]), members)
+        self.assertEqual((fit["fixtureBodies"], fit["parentBodies"], fit["selectedParkedBodies"]), (17, 923, 892))
+        self.assertEqual(fit["strokeMm"], 60)
+        self.assertEqual(len(fit["stationResults"]), 4)
+        self.assertEqual({tuple(s["centerMm"]) for s in fit["stationResults"]}, centers)
+        for station in fit["stationResults"]:
+            x, y = station["centerMm"]
+            bolt = f"R9 mast attachment:1 / MISUMI CB8-100 {x} {y}"
+            self.assertGreater(station["beforeHitsMm3"][bolt][0], 4900)
+            self.assertFalse(station["groundHitsMm3"])
+            self.assertEqual(station["nominalSleeveOverlapMm3"], 0)
+            self.assertAlmostEqual(station["offsetSleeveOverlapMm3"], 36.99, places=2)
+            self.assertAlmostEqual(station["projectedStopSeatMm2"], 56.35, places=2)
+        self.assertEqual(len(fit["successfulReopens"]), 2)
+        for reopen in fit["successfulReopens"]:
+            self.assertEqual(reopen["phase"], "ok")
+            self.assertEqual(reopen["before"], reopen["after"])
+            self.assertTrue(reopen["restored"])
+
     def test_supplier_bracket_rejects_candidate(self):
         review = json.loads((READINESS / "controller-mount-review.json").read_bytes())
         self.assertEqual(review["controllerSolidCount"], 18)
