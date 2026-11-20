@@ -9,6 +9,9 @@ const caption = document.getElementById("model-caption");
 const description = document.getElementById("replay-description");
 const models = {
   swerve: { file: "swerve-r7", title: caption.textContent, label: status.textContent, description: description.textContent },
+  "r9-assembly": { file: "r9-assembly", title: "1780 · R9 physical assembly",
+    label: "Parked Fusion assembly · Source-sized purchased parts and fabrication geometry",
+    description: "Inspect the front frame, removable bumper, inboard lift drive, mast attachment and electrical supports." },
   "r7-budget": { file: "r7-nominal-d1", poster: "swerve-r7", title: "1780 · R7 nominal mass",
     label: "R7 Fusion assembly · Nominal floor-pose mass budget",
     description: "The middle-wing NOTE seats at 4.363 s and reaches both Speaker sensor pairs at 13.639 s on the straight wall approach. The displayed robot and simulated plant use the same R7 Fusion archive. The view follows the chassis until release, then holds the release frame through the detector event." },
@@ -102,7 +105,7 @@ viewer.addEventListener("error", () => {
 restore.addEventListener("click", restoreModel);
 revision.addEventListener("change", restoreModel);
 const requestedModel = new URLSearchParams(location.search).get("view");
-if (["r7-budget", "r8-stage"].includes(requestedModel)) {
+if (["r7-budget", "r8-stage", "r9-assembly"].includes(requestedModel)) {
   revision.value = requestedModel;
   // Replay controls are initialized further down this module.
   queueMicrotask(restoreModel);

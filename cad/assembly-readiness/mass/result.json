@@ -1,0 +1,41 @@
+{
+  "archiveSha256": "4663d9fa55b5f3eb8e23549f3205a2d29248322543beb3e7a7d8076a23f93f6d",
+  "observationsSha256": "1215314a3eaf45250f1adbf70b559a2f55dae4a3334daea9495062d0e03fca16",
+  "planSha256": "692a8d7a139246825c7b7616e7aa494abd4003fc9db03e6e22d1e75eb6a6b5a1",
+  "nativeBodies": 923,
+  "rawNativeKg": 106.59749564595121,
+  "rawByRoleKg": {
+    "stock": 24.776761788905322,
+    "article-proxy": 81.80002163204588,
+    "display": 0.02071222500001059,
+    "fixture": 0,
+    "unresolved": 0
+  },
+  "supplierSubtotalKg": [
+    18.94776319777001,
+    18.94776319777001
+  ],
+  "allowanceSubtotalKg": [
+    1.283789992307858,
+    1.6668563609803675
+  ],
+  "knownInstalledRangeKg": [
+    43.71224870086758,
+    47.448835611468
+  ],
+  "knownInspectionRangeKg": [
+    33.897500706528625,
+    34.98414858343451
+  ],
+  "inspectionExclusionsKg": [
+    9.814747994338774,
+    12.46468702803339
+  ],
+  "complete": false,
+  "installedRangeKg": null,
+  "inspectionRangeKg": null,
+  "inspectionMarginKg": null,
+  "unresolvedInstancesCount": 136,
+  "provisionalInstancesCount": 284,
+  "unresolvedBodiesCount": 0
+}

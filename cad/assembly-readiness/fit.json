@@ -1,0 +1,95 @@
+{
+  "archiveSha256": "4663d9fa55b5f3eb8e23549f3205a2d29248322543beb3e7a7d8076a23f93f6d",
+  "measurement": {
+    "checkedBodies": 923,
+    "seats": [
+      {
+        "face": "Front",
+        "stationMm": -235,
+        "headSeatMm2": 44.32787234205109,
+        "washerSeatMm2": null,
+        "nutSeatMm2": 158.52389944966737,
+        "nominalEngagementMm": 8.425000000000011,
+        "tipToOuterFaceMm": 3.5749999999999886,
+        "toolHits": []
+      },
+      {
+        "face": "Front",
+        "stationMm": 235,
+        "headSeatMm2": 44.32787234205109,
+        "washerSeatMm2": null,
+        "nutSeatMm2": 158.52389944966737,
+        "nominalEngagementMm": 8.425000000000011,
+        "tipToOuterFaceMm": 3.5749999999999886,
+        "toolHits": []
+      },
+      {
+        "face": "Rear",
+        "stationMm": -175,
+        "headSeatMm2": 44.32787234205085,
+        "washerSeatMm2": null,
+        "nutSeatMm2": 158.52389944966737,
+        "nominalEngagementMm": 8.1875,
+        "tipToOuterFaceMm": 3.8125,
+        "toolHits": []
+      },
+      {
+        "face": "Rear",
+        "stationMm": 175,
+        "headSeatMm2": 44.327872342051,
+        "washerSeatMm2": null,
+        "nutSeatMm2": 158.52389944966737,
+        "nominalEngagementMm": 8.1875,
+        "tipToOuterFaceMm": 3.8125,
+        "toolHits": []
+      },
+      {
+        "face": "Left",
+        "stationMm": -326,
+        "headSeatMm2": 46.36990756687894,
+        "washerSeatMm2": 78.88539153145975,
+        "nutSeatMm2": 158.52389945126606,
+        "nominalEngagementMm": 9.650000000000034,
+        "tipToOuterFaceMm": 2.349999999999966,
+        "toolHits": []
+      },
+      {
+        "face": "Left",
+        "stationMm": 175,
+        "headSeatMm2": 46.3699075668794,
+        "washerSeatMm2": 78.88539153145966,
+        "nutSeatMm2": 158.5238994512661,
+        "nominalEngagementMm": 9.650000000000034,
+        "tipToOuterFaceMm": 2.349999999999966,
+        "toolHits": []
+      },
+      {
+        "face": "Right",
+        "stationMm": -175,
+        "headSeatMm2": 46.3699075668794,
+        "washerSeatMm2": 78.88539153145993,
+        "nutSeatMm2": 158.5238994512661,
+        "nominalEngagementMm": 9.650000000000034,
+        "tipToOuterFaceMm": 2.349999999999966,
+        "toolHits": []
+      },
+      {
+        "face": "Right",
+        "stationMm": 326,
+        "headSeatMm2": 46.36990756687894,
+        "washerSeatMm2": 78.88539153146088,
+        "nutSeatMm2": 158.52389945126603,
+        "nominalEngagementMm": 9.650000000000034,
+        "tipToOuterFaceMm": 2.349999999999966,
+        "toolHits": []
+      }
+    ],
+    "toolDiameterMm": 16,
+    "toolLengthMm": 48,
+    "downwardStrokeMm": 200,
+    "removalHits": [],
+    "minimumVolumeMm3": 0.01,
+    "method": "Exact BRep seat perturbation and tool gauges; continuous conservative radial boxes for the detached assembly.",
+    "topOfDetachedCoverMm": -14.0
+  }
+}

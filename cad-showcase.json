@@ -4,9 +4,10 @@
   "scope": "Six-wheel baseline with project-authored solids and supplier-sized envelopes. The swerve redesign is in development.",
   "viewerUrl": "https://ehartye.github.io/frc-2024-poc/robot/cad/",
   "featured": {
-    "title": "1780 MAXSwerve · R7",
-    "scope": "Reopened Fusion assembly with the boxed front crossmember and red 1780 bumper. Explore the four installed swerve modules and follow the first D1 NOTE from the floor through lift and release to both modeled Speaker sensors. Purchased parts use dimensioned display geometry. [Inspect all four corners](https://ehartye.github.io/frc-2024-poc/?view=swerve#model).",
-    "viewerUrl": "https://ehartye.github.io/frc-2024-poc/#model",
-    "receipt": "docs/media/swerve-r7.json"
+    "title": "1780 MAXSwerve \u00b7 R9 physical assembly",
+    "scope": "Parked robot with its inboard lift drive, frame, removable bumper and electrical supports. Purchased mechanisms use dimensioned external models. This view records mechanical fit in CAD.",
+    "viewerUrl": "https://ehartye.github.io/frc-2024-poc/?view=r9-assembly#model",
+    "receipt": "docs/media/r9-assembly.json",
+    "linkLabel": "Inspect the parked assembly"
   }
 }

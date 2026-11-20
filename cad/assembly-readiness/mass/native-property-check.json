@@ -1,0 +1,89 @@
+{
+ "archiveSha256": "4663d9fa55b5f3eb8e23549f3205a2d29248322543beb3e7a7d8076a23f93f6d",
+ "cachedAssemblyKg": 107.00727834772434,
+ "registeredBodyKg": 106.59749564595079,
+ "replacedCachedValues": [
+  {
+   "body": "R7 162 controller-deck",
+   "lowVolumeCm3": 593.0664658891319,
+   "veryHighVolumeCm3": 593.0664658891319,
+   "registeredVolumeCm3": 592.5905146021132,
+   "veryHighKg": 1.601279457900656,
+   "registeredKg": 1.5999943894257056,
+   "physicalDensityKgM3": 2700.0
+  },
+  {
+   "body": "R7 540 Tab-mounted rectangular rail",
+   "lowVolumeCm3": 251.09352356176032,
+   "veryHighVolumeCm3": 251.09352356176032,
+   "registeredVolumeCm3": 249.38178989073822,
+   "veryHighKg": 0.6779525136167528,
+   "registeredKg": 0.6733308327049932,
+   "physicalDensityKgM3": 2700.0
+  },
+  {
+   "body": "R7 550 Tab-mounted rectangular rail",
+   "lowVolumeCm3": 251.0935235617602,
+   "veryHighVolumeCm3": 251.0935235617602,
+   "registeredVolumeCm3": 249.38178989073822,
+   "veryHighKg": 0.6779525136167525,
+   "registeredKg": 0.6733308327049932,
+   "physicalDensityKgM3": 2700.0
+  },
+  {
+   "body": "R7 595 Body1",
+   "lowVolumeCm3": 287.3022073533953,
+   "veryHighVolumeCm3": 287.3022073533953,
+   "registeredVolumeCm3": 142.1112193584209,
+   "veryHighKg": 0.7757159598541673,
+   "registeredKg": 0.3837002922677364,
+   "physicalDensityKgM3": 2700.0
+  },
+  {
+   "body": "R7 600 Body1",
+   "lowVolumeCm3": 1.1088152127934694,
+   "veryHighVolumeCm3": 1.1088152127934694,
+   "registeredVolumeCm3": 0.9674435433819226,
+   "veryHighKg": 0.008571141594893519,
+   "registeredKg": 0.007478338590342262,
+   "physicalDensityKgM3": 7730.0
+  },
+  {
+   "body": "R7 602 Body1",
+   "lowVolumeCm3": 1.1088152127934694,
+   "veryHighVolumeCm3": 1.1088152127934694,
+   "registeredVolumeCm3": 0.9674435433819226,
+   "veryHighKg": 0.008571141594893519,
+   "registeredKg": 0.007478338590342262,
+   "physicalDensityKgM3": 7730.0
+  },
+  {
+   "body": "Crossmember with four rail mounting holes",
+   "lowVolumeCm3": 342.92699958466915,
+   "veryHighVolumeCm3": 342.92699958466915,
+   "registeredVolumeCm3": 341.0541077083052,
+   "veryHighKg": 0.9259028988786066,
+   "registeredKg": 0.9208460908124241,
+   "physicalDensityKgM3": 2700.0
+  },
+  {
+   "body": "Lead 1 Pacer TBCA2-R boot envelope",
+   "lowVolumeCm3": 5.94582105331117,
+   "veryHighVolumeCm3": 5.94582105331117,
+   "registeredVolumeCm3": 5.947373828004946,
+   "veryHighKg": 0.006718777790241622,
+   "registeredKg": 0.006720532425645589,
+   "physicalDensityKgM3": 1130.0
+  },
+  {
+   "body": "Lead 2 Pacer TBCA2-R boot envelope",
+   "lowVolumeCm3": 5.945808776859262,
+   "veryHighVolumeCm3": 5.945808776859262,
+   "registeredVolumeCm3": 5.947627849121217,
+   "veryHighKg": 0.006718763917850965,
+   "registeredKg": 0.006720819469506975,
+   "physicalDensityKgM3": 1130.0
+  }
+ ],
+ "method": "Registered solid copy in robot coordinates times applied physical density where the native very-high properties disagree; all volumes checked against pre-export body geometry."
+}

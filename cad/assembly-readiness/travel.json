@@ -1,0 +1,100 @@
+{
+  "archiveSha256": "4663d9fa55b5f3eb8e23549f3205a2d29248322543beb3e7a7d8076a23f93f6d",
+  "configuration": "R9 lowered mechanical assembly",
+  "frontAndBumperSweep": {
+    "mechanismBodies": 188,
+    "pitchIntervals": 60,
+    "liftRangeMm": [
+      0,
+      450
+    ],
+    "pitchRangeDeg": [
+      0,
+      60
+    ],
+    "minimumAxisSeparationMm": 9.245388627110742
+  },
+  "pickupAndCarry": {
+    "D1": {
+      "attempt": "D1",
+      "pickupTrace": "2b734e88ae8cd155a2cf198c211dafdf07b88fb0e824228fe3afebdc67f8bf3d",
+      "carryTrace": "ce0193e1175b12af63a564e59acf3d50cda6d9597dc791a49fb49a9d1b7098a3",
+      "samples": 19789,
+      "closestEnvelopeLowerMm": 3.7471150168631175,
+      "closestEnvelopeUpperMm": 3.85685605002568,
+      "angularSamples": 4096,
+      "witness": {
+        "part": "Inner crossmember 711.2 mm",
+        "timeS": 5.97199999999941
+      }
+    },
+    "D2": {
+      "attempt": "D2",
+      "pickupTrace": "710cd7fa0cc503af25aee38f623b4cabf17a81c20a1f88a713e497ac43029eb3",
+      "carryTrace": "7ef540107771df265e79ea92431162095ce951d162111d3e0dee62bfe67617d2",
+      "samples": 20109,
+      "closestEnvelopeLowerMm": 3.6353235814964484,
+      "closestEnvelopeUpperMm": 3.745872003397256,
+      "angularSamples": 4096,
+      "witness": {
+        "part": "Inner crossmember 711.2 mm",
+        "timeS": 6.13349999999932
+      }
+    }
+  },
+  "scope": "Prescribed R7 traces and independent mechanism range. R9 has no new mission replay.",
+  "assemblySweep": {
+    "R9 upper lift drive": {
+      "mechanismBodies": 188,
+      "pitchIntervals": 60,
+      "liftRangeMm": [
+        0,
+        450
+      ],
+      "pitchRangeDeg": [
+        0,
+        60
+      ],
+      "minimumAxisSeparationMm": 47.38526000000002
+    },
+    "R9 electrical supports": {
+      "mechanismBodies": 188,
+      "pitchIntervals": 60,
+      "liftRangeMm": [
+        0,
+        450
+      ],
+      "pitchRangeDeg": [
+        0,
+        60
+      ],
+      "minimumAxisSeparationMm": 10.0
+    },
+    "R9 mast attachment": {
+      "mechanismBodies": 188,
+      "pitchIntervals": 60,
+      "liftRangeMm": [
+        0,
+        450
+      ],
+      "pitchRangeDeg": [
+        0,
+        60
+      ],
+      "minimumAxisSeparationMm": 53.400000000000006
+    },
+    "R9 local breaker harness": {
+      "mechanismBodies": 188,
+      "pitchIntervals": 60,
+      "liftRangeMm": [
+        0,
+        450
+      ],
+      "pitchRangeDeg": [
+        0,
+        60
+      ],
+      "minimumAxisSeparationMm": 158.9387962497336
+    }
+  }
+}

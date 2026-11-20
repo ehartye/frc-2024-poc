@@ -1,0 +1,73 @@
+{
+  "archiveSha256": "4663d9fa55b5f3eb8e23549f3205a2d29248322543beb3e7a7d8076a23f93f6d",
+  "measurement": {
+    "frameMemberBodies": [
+      "Inner crossmember 711.2 mm",
+      "Nose spacer at -160.0 mm",
+      "Nose spacer at -342.9 mm",
+      "Nose spacer at 160.0 mm",
+      "Nose spacer at 342.9 mm",
+      "R7 540 Tab-mounted rectangular rail",
+      "R7 550 Tab-mounted rectangular rail",
+      "R7 555 Tab-mounted rectangular rail",
+      "R7 592 Box tube with welded screw landings",
+      "R7 595 Body1",
+      "R7 596 Body1",
+      "R7 597 Body1"
+    ],
+    "hullVerticesMm": [
+      [
+        -353.6625,
+        -355.25
+      ],
+      [
+        -190.0,
+        -355.6
+      ],
+      [
+        454.462,
+        -355.6
+      ],
+      [
+        454.462,
+        355.6
+      ],
+      [
+        -190.0,
+        355.6
+      ],
+      [
+        -353.6625,
+        355.25
+      ]
+    ],
+    "hullPerimeterMm": 3037.9497484907047,
+    "enclosingRectanglePerimeterMm": 3038.649,
+    "nominalRectangleMarginMm": 9.351000000000113,
+    "forwardCarrierClearanceMm": 3.722370000000012,
+    "otherBodyBoxFailures": [],
+    "method": "Convex hull of actual fixed straight-edged frame vertices in the bumper zone. All other installed non-bumper body AABB corners tested.",
+    "noseSpacerContacts": [
+      {
+        "spacer": "Nose spacer at -342.9 mm",
+        "innerEndMm2": 443.54750000211754,
+        "outerEndMm2": 443.5475000021137
+      },
+      {
+        "spacer": "Nose spacer at -160.0 mm",
+        "innerEndMm2": 443.54750000211754,
+        "outerEndMm2": 443.5475000021174
+      },
+      {
+        "spacer": "Nose spacer at 160.0 mm",
+        "innerEndMm2": 443.54750000211754,
+        "outerEndMm2": 443.5475000021174
+      },
+      {
+        "spacer": "Nose spacer at 342.9 mm",
+        "innerEndMm2": 443.54750000211754,
+        "outerEndMm2": 443.5475000021137
+      }
+    ]
+  }
+}

@@ -1,10 +1,12 @@
 # 2024 CRESCENDO: component-based robot proof of concept
 
 <!-- cad-still -->
-[![1780 MAXSwerve · R7](docs/media/swerve-r7.png)](https://ehartye.github.io/frc-2024-poc/#model)
+[![1780 MAXSwerve · R9 physical assembly](docs/media/r9-assembly.png)](https://ehartye.github.io/frc-2024-poc/?view=r9-assembly#model)
 
-**1780 MAXSwerve · R7.** Reopened Fusion assembly with the boxed front crossmember and red 1780 bumper. Explore the four installed swerve modules and follow the first D1 NOTE from the floor through lift and release to both modeled Speaker sensors. Purchased parts use dimensioned display geometry. [Inspect all four corners](https://ehartye.github.io/frc-2024-poc/?view=swerve#model). [Native model record](docs/media/swerve-r7.json) · [Open 3D replay](https://ehartye.github.io/frc-2024-poc/#model)
+**1780 MAXSwerve · R9 physical assembly.** Parked robot with its inboard lift drive, frame, removable bumper and electrical supports. Purchased mechanisms use dimensioned external models. This view records mechanical fit in CAD. [Native model record](docs/media/r9-assembly.json) · [Inspect the parked assembly](https://ehartye.github.io/frc-2024-poc/?view=r9-assembly#model)
 <!-- /cad-still -->
+
+[Download the editable R9 robot](cad/student/r9-physical-assembly.f3d) · [Assembly sequence and fit results](cad/assembly-readiness/physical-assembly.md) · [Shop drawings](cad/assembly-readiness/drawings/r9-shop-drawings.pdf)
 
 [Explore the R8 Stage climb and missed-lock control](https://ehartye.github.io/frc-2024-poc/?view=r8-stage#model) · [Climber design, load transfer and clearance](experiments/stage-climb/study.md) · [Both-alliance STAGE and qualification results](experiments/speaker-cycles/match-rehearsal.md)
 

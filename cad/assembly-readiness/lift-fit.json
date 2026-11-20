@@ -1,0 +1,95 @@
+{
+  "archiveSha256": "4663d9fa55b5f3eb8e23549f3205a2d29248322543beb3e7a7d8076a23f93f6d",
+  "measurement": {
+    "nativeBodies": 28,
+    "boundsMm": [
+      -69.82481,
+      -303.576,
+      768.67519,
+      104.90128,
+      303.576,
+      954.0
+    ],
+    "parkedIntersections": [
+      {
+        "first": "REV-21-1135 cut 595.5 mm rounded hex shaft",
+        "second": "Upper shaft tapped end screw -1",
+        "mm3": 48.8122
+      },
+      {
+        "first": "REV-21-1135 cut 595.5 mm rounded hex shaft",
+        "second": "Upper shaft tapped end screw 1",
+        "mm3": 48.8122
+      },
+      {
+        "first": "REV-21-2016 upper lift sprocket reservation -1",
+        "second": "R7 254 intake candidate lift chain straight-run envelope (-1, -16.4)",
+        "mm3": 47.1654
+      },
+      {
+        "first": "REV-21-2016 upper lift sprocket reservation -1",
+        "second": "R7 255 intake candidate lift chain straight-run envelope (-1, 16.4)",
+        "mm3": 47.1654
+      },
+      {
+        "first": "REV-21-2016 upper lift sprocket reservation 1",
+        "second": "R7 267 intake candidate lift chain straight-run envelope (1, -16.4)",
+        "mm3": 47.1654
+      },
+      {
+        "first": "REV-21-2016 upper lift sprocket reservation 1",
+        "second": "R7 268 intake candidate lift chain straight-run envelope (1, 16.4)",
+        "mm3": 47.1654
+      }
+    ],
+    "perimeterScreen": [],
+    "supplier": {
+      "sku": "REV-21-2120",
+      "sha256": "948f553b2a921c76f479abb416424c5fd45ad72a5630798df5c1159ff8e7ad90",
+      "rawBoundsMm": [
+        -31.75,
+        -13.0,
+        -25.4,
+        31.75,
+        50.5,
+        25.4
+      ],
+      "solids": 96,
+      "robotFromSourceCm": [
+        -0.7071067811865476,
+        0.7071067811865476,
+        0.0,
+        4.674174785275223,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0,
+        88.52417478527522,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "intersectionMm3": {
+        "Gearcase mount 10-32 x 7-16 screw 1 1": 26.108349880391774,
+        "Gearcase mount 10-32 x 7-16 screw 1 2": 26.108349880391774,
+        "Gearcase mount 10-32 x 7-16 screw 1 3": 26.108349880391806,
+        "Gearcase mount 10-32 x 7-16 screw 1 4": 26.108349880391813,
+        "Gearcase mount 10-32 x 7-16 screw -1 1": 26.10834988039857,
+        "Gearcase mount 10-32 x 7-16 screw -1 2": 26.108349880398535,
+        "Gearcase mount 10-32 x 7-16 screw -1 3": 26.108349880398542,
+        "Gearcase mount 10-32 x 7-16 screw -1 4": 26.108349880398585
+      }
+    },
+    "frameRectangleMm": [
+      -353.66249999999997,
+      -355.6,
+      454.462,
+      355.6
+    ],
+    "scope": "Parked pose. Thread minor/major overlap is reported. Wire exits, real preload and qualification require separate checks."
+  }
+}

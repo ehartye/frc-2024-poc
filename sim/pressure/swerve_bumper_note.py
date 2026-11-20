@@ -25,9 +25,10 @@ def envelope_rows(native):
     return rows
 
 
-def measure(native,pickup,carry):
+def measure(native,pickup,carry,*,rows=None):
     receipt = verify(pickup,carry)
-    rows = envelope_rows(native)
+    if rows is None:
+        rows = envelope_rows(native)
     boxes = np.asarray([box for _,box in rows])
     geometry = load(ROOT/"cad/assembly/intake_components.json")["note"]
     radius,tube = geometry["majorRadius"],geometry["tubeRadius"]

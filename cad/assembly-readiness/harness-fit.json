@@ -1,0 +1,412 @@
+{
+  "archiveSha256": "4663d9fa55b5f3eb8e23549f3205a2d29248322543beb3e7a7d8076a23f93f6d",
+  "cables": [
+    {
+      "lead": 1,
+      "solid": true,
+      "lumps": 1,
+      "centerLengthMm": 123.12381633974483,
+      "straightBeforeBendMm": 26.584,
+      "bendLengthMm": 78.53981633974483,
+      "straightAfterBendMm": 18.0,
+      "installedVolumeMm3": 5808.116979624698,
+      "analyticVolumeMm3": 5808.116979624702,
+      "arcCenterTestSphereVolumesMm3": [
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391
+      ],
+      "endCondition": "Local jacket section from lug barrel mouth to open routing outlet. Stock cut length requires the downstream connection and supplier strip depth."
+    },
+    {
+      "lead": 2,
+      "solid": true,
+      "lumps": 1,
+      "centerLengthMm": 123.12381633974483,
+      "straightBeforeBendMm": 26.584,
+      "bendLengthMm": 78.53981633974483,
+      "straightAfterBendMm": 18.0,
+      "installedVolumeMm3": 5808.116979624698,
+      "analyticVolumeMm3": 5808.116979624702,
+      "arcCenterTestSphereVolumesMm3": [
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391,
+        4.188790204786391
+      ],
+      "endCondition": "Local jacket section from lug barrel mouth to open routing outlet. Stock cut length requires the downstream connection and supplier strip depth."
+    }
+  ],
+  "predecessorPostLocations": [
+    {
+      "xyMm": [
+        -312.0,
+        -122.5
+      ],
+      "upperDriverOtherBodies": {
+        "Lead 1 Panduit LCAX6-14-L lug envelope": 65.82983,
+        "Lead 1 Pacer TBCA2-R boot envelope": 78.19123,
+        "Lead 1 Southwire 104110604 local cable envelope": 51.58698
+      }
+    },
+    {
+      "xyMm": [
+        -312.0,
+        -88.5
+      ],
+      "upperDriverOtherBodies": {}
+    },
+    {
+      "xyMm": [
+        -222.0,
+        -155.0
+      ],
+      "upperDriverOtherBodies": {}
+    },
+    {
+      "xyMm": [
+        -192.0,
+        -155.0
+      ],
+      "upperDriverOtherBodies": {
+        "Lead 2 Southwire 104110604 local cable envelope": 51.1402
+      }
+    }
+  ],
+  "deckBores": [
+    {
+      "xyMm": [
+        -306.0,
+        -168.0
+      ],
+      "diameterMm": 5.5,
+      "filledMm3": 0.0
+    },
+    {
+      "xyMm": [
+        -306.0,
+        -146.0
+      ],
+      "diameterMm": 5.5,
+      "filledMm3": 0.0
+    },
+    {
+      "xyMm": [
+        -244.0,
+        -168.0
+      ],
+      "diameterMm": 5.5,
+      "filledMm3": 0.0
+    },
+    {
+      "xyMm": [
+        -244.0,
+        -146.0
+      ],
+      "diameterMm": 5.5,
+      "filledMm3": 0.0
+    },
+    {
+      "xyMm": [
+        -290.0,
+        -130.0
+      ],
+      "diameterMm": 4.5,
+      "filledMm3": 0.0
+    },
+    {
+      "xyMm": [
+        -312.0,
+        -88.5
+      ],
+      "diameterMm": 4.5,
+      "filledMm3": 0.0
+    },
+    {
+      "xyMm": [
+        -222.0,
+        -155.0
+      ],
+      "diameterMm": 4.5,
+      "filledMm3": 0.0
+    },
+    {
+      "xyMm": [
+        -199.0,
+        -137.0
+      ],
+      "diameterMm": 4.5,
+      "filledMm3": 0.0
+    }
+  ],
+  "inheritedDeckBores": [
+    {
+      "xyMm": [
+        -306,
+        -180
+      ],
+      "filledMm3": 0.0
+    },
+    {
+      "xyMm": [
+        -306,
+        -158
+      ],
+      "filledMm3": 0.0
+    },
+    {
+      "xyMm": [
+        -244,
+        -180
+      ],
+      "filledMm3": 0.0
+    },
+    {
+      "xyMm": [
+        -244,
+        -158
+      ],
+      "filledMm3": 0.0
+    }
+  ],
+  "posts": [
+    {
+      "xyMm": [
+        -290.0,
+        -130.0
+      ],
+      "deckEdgeMm": 27.75,
+      "postFootLandMm2": 62.629724027632726,
+      "shelfLandMm2": 62.63550353124838,
+      "clearToNeighbor": {}
+    },
+    {
+      "xyMm": [
+        -312.0,
+        -88.5
+      ],
+      "deckEdgeMm": 5.75,
+      "postFootLandMm2": 62.62972402763271,
+      "shelfLandMm2": 61.16735585929786,
+      "clearToNeighbor": {}
+    },
+    {
+      "xyMm": [
+        -222.0,
+        -155.0
+      ],
+      "deckEdgeMm": 95.75,
+      "postFootLandMm2": 62.62972402763279,
+      "shelfLandMm2": 62.63550353124838,
+      "clearToNeighbor": {}
+    },
+    {
+      "xyMm": [
+        -199.0,
+        -137.0
+      ],
+      "deckEdgeMm": 118.75,
+      "postFootLandMm2": 62.629724027632726,
+      "shelfLandMm2": 62.63550353124838,
+      "clearToNeighbor": {}
+    }
+  ],
+  "serviceGauges": [
+    {
+      "location": [
+        -290.0,
+        -130.0,
+        256
+      ],
+      "direction": 1,
+      "diameterMm": 6.35,
+      "lengthMm": 32,
+      "hits": {}
+    },
+    {
+      "location": [
+        -290.0,
+        -130.0,
+        198.115
+      ],
+      "direction": -1,
+      "diameterMm": 6.35,
+      "lengthMm": 32,
+      "hits": {}
+    },
+    {
+      "location": [
+        -312.0,
+        -88.5,
+        256
+      ],
+      "direction": 1,
+      "diameterMm": 6.35,
+      "lengthMm": 32,
+      "hits": {}
+    },
+    {
+      "location": [
+        -312.0,
+        -88.5,
+        198.115
+      ],
+      "direction": -1,
+      "diameterMm": 6.35,
+      "lengthMm": 32,
+      "hits": {}
+    },
+    {
+      "location": [
+        -309.11371002728913,
+        -102.58691879831292,
+        276
+      ],
+      "direction": 1,
+      "diameterMm": 6.35,
+      "lengthMm": 32,
+      "hits": {}
+    },
+    {
+      "location": [
+        -331.33000403193773,
+        -108.53975683567091,
+        276
+      ],
+      "direction": 1,
+      "diameterMm": 6.35,
+      "lengthMm": 32,
+      "hits": {}
+    },
+    {
+      "location": [
+        -222.0,
+        -155.0,
+        256
+      ],
+      "direction": 1,
+      "diameterMm": 6.35,
+      "lengthMm": 32,
+      "hits": {}
+    },
+    {
+      "location": [
+        -222.0,
+        -155.0,
+        198.115
+      ],
+      "direction": -1,
+      "diameterMm": 6.35,
+      "lengthMm": 32,
+      "hits": {}
+    },
+    {
+      "location": [
+        -199.0,
+        -137.0,
+        256
+      ],
+      "direction": 1,
+      "diameterMm": 6.35,
+      "lengthMm": 32,
+      "hits": {}
+    },
+    {
+      "location": [
+        -199.0,
+        -137.0,
+        198.115
+      ],
+      "direction": -1,
+      "diameterMm": 6.35,
+      "lengthMm": 32,
+      "hits": {}
+    },
+    {
+      "location": [
+        -204.98191879831293,
+        -176.43128997271083,
+        276
+      ],
+      "direction": 1,
+      "diameterMm": 6.35,
+      "lengthMm": 32,
+      "hits": {}
+    },
+    {
+      "location": [
+        -210.93475683567092,
+        -154.21499596806228,
+        276
+      ],
+      "direction": 1,
+      "diameterMm": 6.35,
+      "lengthMm": 32,
+      "hits": {}
+    }
+  ],
+  "physicalIntersectionsMm3": {
+    "Lead 1 Panduit LCAX6-14-L lug envelope": {
+      "R7 149 main-breaker": 301.92118
+    },
+    "Lead 1 Pacer TBCA2-R boot envelope": {
+      "R7 149 main-breaker": 3700.99712
+    },
+    "Lead 1 Southwire 104110604 local cable envelope": {},
+    "Lead 1 split clamp cap": {},
+    "Lead 1 one-piece raised clamp saddle": {
+      "Lead 1 M4 x 16 clamp screw -11.5": 23.4783,
+      "Lead 1 M4 x 16 clamp screw 11.5": 23.4783
+    },
+    "Lead 2 Panduit LCAX6-14-L lug envelope": {
+      "R7 149 main-breaker": 255.78347
+    },
+    "Lead 2 Pacer TBCA2-R boot envelope": {
+      "R7 149 main-breaker": 3733.64865
+    },
+    "Lead 2 Southwire 104110604 local cable envelope": {},
+    "Lead 2 split clamp cap": {},
+    "Lead 2 one-piece raised clamp saddle": {
+      "Lead 2 M4 x 16 clamp screw -11.5": 23.4783,
+      "Lead 2 M4 x 16 clamp screw 11.5": 23.4783
+    }
+  },
+  "closestOldToNewPedestalCenterMm": 10.0,
+  "oldToNewLigamentAtBoth5p5Mm": 4.5,
+  "serviceGaugeMeaning": "Tool body diameter and straight reach from screw head; test manual working clearance on a bench.",
+  "limits": [
+    "Thread-major envelopes overlap their matching tap bores.",
+    "The public breaker body is an outer reservation; lug and boot seating use the private registered open-shell source separately."
+  ]
+}

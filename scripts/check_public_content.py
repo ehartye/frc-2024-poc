@@ -30,6 +30,13 @@ SHOWCASE_ASSETS["cad/student/r8-stage-climber.f3d"] = "26a5335e66c05dec8918b767d
 SHOWCASE_ASSETS["docs/media/r8-stage.glb"] = "77a0076da3873d89b3741887262ee825d030712e846702b1432859ce56abdeb3"
 SHOWCASE_ASSETS["docs/media/r8-stage.png"] = "0e18ea715937810883b6e285848efaa76937e8ebd51440a0797baf6e5e0bc865"
 
+SHOWCASE_ASSETS.update({
+ "cad/student/r9-physical-assembly.f3d": "4663d9fa55b5f3eb8e23549f3205a2d29248322543beb3e7a7d8076a23f93f6d",
+ "docs/media/r9-assembly.glb": "e0fa4d0cd90ffb64799bb63061b3b3d75fbd20b7637038a822f677b1322a74e4",
+ "docs/media/r9-assembly.png": "0303f001895c0c8a0a7940896a5671174ebe18b3a28407dc82d4132692755d7f",
+ "cad/assembly-readiness/drawings/r9-shop-drawings.pdf": "552981ea64eabc89ed47e6e5faa368b65344161f4e5ab539061a5dceef17b565"
+})
+
 def git(*args):return subprocess.check_output(['git','-C',str(ROOT),*args])
 def audit(revision='HEAD'):
  failures=[]
