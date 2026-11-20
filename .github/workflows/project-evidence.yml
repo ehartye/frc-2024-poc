@@ -85,3 +85,14 @@ jobs:
           python -B experiments/ground-relay/replay.py ../.ground-cohort/scripts
           python -B tests/test_ground_relay.py
           git diff --exit-code -- experiments/ground-relay docs/ground-relay.json
+
+      - name: Reproduce the registered ground contacts, custody sequence and lab
+        run: |
+          export PYTHONPATH="$RUNNER_TEMP/frame-model"
+          export OPENBLAS_NUM_THREADS=1
+          python -B experiments/registered-custody/contact.py
+          python -B experiments/registered-custody/loads.py
+          python -B experiments/registered-custody/rehearse.py
+          python -B experiments/registered-custody/lab.py
+          python -B tests/test_registered_custody.py
+          git diff --exit-code -- experiments/registered-custody docs/ground-contact.json

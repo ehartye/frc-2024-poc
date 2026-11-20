@@ -1,0 +1,53 @@
+[
+  {
+    "grid": 256,
+    "seatNormalN": 7.53824,
+    "tractionN": 4.39778,
+    "lateralAtPoint1MmN": 0.90284,
+    "weightN": 2.36634,
+    "floorLimitN": 0.82822,
+    "sweepStepMm": 0.25,
+    "withdrawalN": {
+      "free": 0.35876,
+      "braked": 4.52447
+    },
+    "halfStepWithdrawalN": {
+      "free": 0.35908,
+      "braked": 4.52447
+    }
+  },
+  {
+    "grid": 512,
+    "seatNormalN": 7.52819,
+    "tractionN": 4.39627,
+    "lateralAtPoint1MmN": 0.86329,
+    "weightN": 2.36634,
+    "floorLimitN": 0.82822,
+    "sweepStepMm": 0.25,
+    "withdrawalN": {
+      "free": 0.32521,
+      "braked": 4.51709
+    },
+    "halfStepWithdrawalN": {
+      "free": 0.32538,
+      "braked": 4.5171
+    }
+  },
+  {
+    "grid": 1024,
+    "seatNormalN": 7.53095,
+    "tractionN": 4.40721,
+    "lateralAtPoint1MmN": 0.87933,
+    "weightN": 2.36634,
+    "floorLimitN": 0.82822,
+    "sweepStepMm": 0.25,
+    "withdrawalN": {
+      "free": 0.3241,
+      "braked": 4.5186
+    },
+    "halfStepWithdrawalN": {
+      "free": 0.3241,
+      "braked": 4.5186
+    }
+  }
+]

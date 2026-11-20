@@ -10,6 +10,8 @@
 
 [Blue 3 role comparison, service availability and whole-robot support review](experiments/alliance-service/study.md)
 
+[R16 registered tread contact and ground custody](experiments/registered-custody/study.md) · [Inspect the floor transfer](https://ehartye.github.io/frc-2024-poc/ground-contact.html)
+
 [R15 Blue 3 ground relay and held-out transfer results](experiments/ground-relay/study.md) · [Replay the two-NOTE relay](https://ehartye.github.io/frc-2024-poc/ground-relay.html)
 
 [R14 removable frame tie, wheel-twist comparison and service review](cad/service-readiness/stiffness/study.md)
