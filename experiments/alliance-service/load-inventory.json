@@ -1,0 +1,244 @@
+{
+  "inventory": [
+    "stage-chain-mast"
+  ],
+  "scope": "The STAGE mast is the sole mechanism intended to elevate the robot. The internal carrier elevates a subsystem. The disconnected bench spacer and maintenance pin require external support.",
+  "model": {
+    "geometry": "single-support",
+    "independentAnalysis": {
+      "path": "experiments/alliance-service/season-measurements.json",
+      "sha256": "35a12257c61e38bcf8b2b9558323eb7bd077fb2eff9475e822e814b0bf166e46",
+      "pointer": "/elevation"
+    },
+    "loadPath": [
+      "Field chain at single saddle",
+      "Bearing roof and spine",
+      "Top bracket and sliding carrier",
+      "During transfer: nut, screw, one opposed thrust bearing and housing",
+      "During disabled hold: engaged transverse lock and both guide walls",
+      "Fixed guide, crossmember, four rail attachments, crush sleeves and chassis"
+    ],
+    "actualMassKg": null,
+    "reason": "Solo settled hanging coordinates put the seat and CG on one vertical line. No moment restraint is modeled. Shared two-robot chain geometry and missed-lock fall have independent season receipts.",
+    "massEvidence": "earlier-scenario",
+    "massBasis": "R8 scenario upper mass, excluding unresolved R9 mass. Actual complete installed mass is unknown.",
+    "factor": 1,
+    "factorBasis": "Case acceleration represents the selected transient explicitly. No further capacity factor or proof margin is assigned.",
+    "supports": [
+      {
+        "id": "chain-seat",
+        "xM": 0,
+        "path": [
+          {
+            "id": "one-solo-chain-leg",
+            "kind": "anchor",
+            "loading": "tension",
+            "modes": [
+              "raise",
+              "hold",
+              "power-loss"
+            ],
+            "advantage": 0.8003729399886114,
+            "efficiency": 1,
+            "ratings": {}
+          },
+          {
+            "id": "bearing-roof-and-spine",
+            "kind": "member",
+            "loading": "shear",
+            "modes": [
+              "raise",
+              "hold",
+              "power-loss"
+            ],
+            "advantage": 1,
+            "efficiency": 1,
+            "ratings": {}
+          },
+          {
+            "id": "moving-guide-and-bracket",
+            "kind": "member",
+            "loading": "shear",
+            "modes": [
+              "raise",
+              "hold",
+              "power-loss"
+            ],
+            "advantage": 1,
+            "efficiency": 1,
+            "ratings": {}
+          },
+          {
+            "id": "transfer-drive-no-rated-assembly",
+            "kind": "actuator",
+            "loading": "compression",
+            "modes": [
+              "raise"
+            ],
+            "advantage": 1,
+            "efficiency": 1,
+            "ratings": {}
+          },
+          {
+            "id": "candidate-bronze-nut",
+            "kind": "transmission",
+            "loading": "compression",
+            "modes": [
+              "raise"
+            ],
+            "advantage": 1,
+            "efficiency": 1,
+            "ratings": {
+              "raise": {
+                "kind": "working-load",
+                "unit": "N",
+                "value": 1334.46648457815,
+                "loading": "compression",
+                "basis": "Thomson BN3708S maximum dynamic axial load, catalog component screen only. Duty, thread engagement and parent hardware remain open. https://www.thomsonlinear.com/en/product/BN3708S"
+              }
+            }
+          },
+          {
+            "id": "one-active-thrust-bearing",
+            "kind": "transmission",
+            "loading": "compression",
+            "modes": [
+              "raise"
+            ],
+            "advantage": 1,
+            "efficiency": 1,
+            "ratings": {
+              "raise": {
+                "kind": "basic-dynamic",
+                "unit": "N",
+                "value": 2160,
+                "loading": "compression",
+                "basis": "EZO F6-14M basic dynamic contact rating. It is not an allowable housing or assembled drive load. https://www.ezo-brg.co.jp/english/product/spec.php?eid=02419"
+              }
+            }
+          },
+          {
+            "id": "journal-and-bearing-housing",
+            "kind": "member",
+            "loading": "compression",
+            "modes": [
+              "raise"
+            ],
+            "advantage": 1,
+            "efficiency": 1,
+            "ratings": {}
+          },
+          {
+            "id": "transverse-lock",
+            "kind": "lock",
+            "loading": "shear",
+            "modes": [
+              "hold",
+              "power-loss"
+            ],
+            "advantage": 1,
+            "efficiency": 1,
+            "ratings": {}
+          },
+          {
+            "id": "pin-through-guide-walls",
+            "kind": "transmission",
+            "loading": "shear",
+            "modes": [
+              "hold",
+              "power-loss"
+            ],
+            "advantage": 1,
+            "efficiency": 1,
+            "ratings": {}
+          },
+          {
+            "id": "guide-crossmember",
+            "kind": "member",
+            "loading": "shear",
+            "modes": [
+              "raise",
+              "hold",
+              "power-loss"
+            ],
+            "advantage": 1,
+            "efficiency": 1,
+            "ratings": {}
+          },
+          {
+            "id": "paired-rail-attachment-system",
+            "kind": "anchor",
+            "loading": "shear",
+            "modes": [
+              "raise",
+              "hold",
+              "power-loss"
+            ],
+            "advantage": 1,
+            "efficiency": 1,
+            "ratings": {}
+          }
+        ]
+      }
+    ],
+    "cases": [
+      {
+        "id": "settled-solo",
+        "mode": "hold",
+        "basis": "Free solo saddle aligns the nominal CG below the seat after rotation.",
+        "massKg": 52.786157186389204,
+        "cgXM": 0,
+        "accelZMps2": 0,
+        "pitchMomentNm": 0
+      },
+      {
+        "id": "limiting-transfer-screen",
+        "mode": "raise",
+        "basis": "Upper R8 scenario at limiting supported extension. +1 g vertical acceleration reproduces the earlier doubled demand as a sensitivity, not an observed acceleration.",
+        "massKg": 60.73475842588824,
+        "cgXM": 0,
+        "accelZMps2": 9.80665,
+        "pitchMomentNm": 0,
+        "worstExtension": true
+      },
+      {
+        "id": "off-axis-initial-contact",
+        "mode": "raise",
+        "basis": "Before free rotation, horizontal X offset is nominal chassis CG minus the original saddle X coordinate. A free pin cannot statically resist that moment.",
+        "massKg": 52.786157186389204,
+        "cgXM": 0.010105205480992209,
+        "accelZMps2": 0,
+        "pitchMomentNm": 0,
+        "asymmetric": true
+      },
+      {
+        "id": "unpowered-seated",
+        "mode": "power-loss",
+        "basis": "Gravity remains after settling. Lock and guide-wall strength are unqualified.",
+        "massKg": 60.73475842588824,
+        "cgXM": 0,
+        "accelZMps2": 0,
+        "pitchMomentNm": 0
+      },
+      {
+        "id": "no-chain-contact",
+        "mode": "hold",
+        "basis": "Negative control with the one chain reaction absent.",
+        "massKg": 60.73475842588824,
+        "cgXM": 0,
+        "accelZMps2": 0,
+        "pitchMomentNm": 0,
+        "unavailableSupport": "chain-seat"
+      },
+      {
+        "id": "weighed-robot",
+        "mode": "hold",
+        "basis": "Actual installed all-up mass is unavailable.",
+        "massKg": null,
+        "cgXM": 0,
+        "accelZMps2": 0,
+        "pitchMomentNm": 0
+      }
+    ]
+  }
+}

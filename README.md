@@ -8,6 +8,8 @@
 
 [Download the editable R9 robot](cad/student/r9-physical-assembly.f3d) · [Assembly sequence and fit results](cad/assembly-readiness/physical-assembly.md) · [Shop drawings](cad/assembly-readiness/drawings/r9-shop-drawings.pdf)
 
+[Blue 3 role comparison, service availability and whole-robot support review](experiments/alliance-service/study.md)
+
 [R11 four-controller bench plate, disconnected battery gauge and mast spacer](cad/service-readiness/r11-service.md)
 
 [R10 battery and unloaded mast service fixture](cad/service-readiness/passive-service.md) · [Download the editable service fixture](cad/student/r10-passive-service.f3d)

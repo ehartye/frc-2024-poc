@@ -1,0 +1,206 @@
+{
+  "schema": "agent-frc/design-comparison@1",
+  "objectives": [
+    {
+      "id": "traffic-wait",
+      "unit": "s",
+      "max": 15
+    },
+    {
+      "id": "service-fit",
+      "unit": "mm3",
+      "max": 0.01
+    },
+    {
+      "id": "demonstrated-pit-turnaround",
+      "unit": "s",
+      "max": 180
+    }
+  ],
+  "resources": [],
+  "cases": [
+    {
+      "id": "separate-lanes",
+      "condition": "Separate partner lane, nominal gauge, straight guide and seated elevated lock if fitted."
+    },
+    {
+      "id": "shared-lane",
+      "condition": "Shared lane, nominal packing gauge, 2 mm displaced guide and missed lock when an elevated terminal role depends on them."
+    }
+  ],
+  "concepts": [
+    {
+      "id": "fixed-retrieval-and-hang",
+      "architecture": "Fixed midfield retrieval with a load-bearing mast, transverse lock and rail-supported crossmember for an elevated terminal role.",
+      "interfaces": [
+        {
+          "from": "floor drive",
+          "to": "midfield",
+          "exchange": "requests the center retrieval lane"
+        },
+        {
+          "from": "mast saddle",
+          "to": "crossmember",
+          "exchange": "transmits suspended weight through the slide and lock"
+        }
+      ],
+      "cases": [
+        {
+          "id": "separate-lanes",
+          "source": {
+            "path": "experiments/alliance-service/season-measurements.json",
+            "sha256": "35a12257c61e38bcf8b2b9558323eb7bd077fb2eff9475e822e814b0bf166e46"
+          },
+          "execution": "/concepts/fixed-retrieval-and-hang/separate-lanes",
+          "runId": "fixed-retrieval-and-hang/separate-lanes",
+          "checks": [
+            {
+              "id": "traffic-wait",
+              "value": 0,
+              "unit": "s",
+              "pointer": "/concepts/fixed-retrieval-and-hang/separate-lanes/waitSeconds",
+              "margin": 15,
+              "status": "pass"
+            },
+            {
+              "id": "service-fit",
+              "value": 0,
+              "unit": "mm3",
+              "pointer": "/concepts/fixed-retrieval-and-hang/separate-lanes/serviceInterferenceMm3",
+              "margin": 0.01,
+              "status": "pass"
+            },
+            {
+              "id": "demonstrated-pit-turnaround",
+              "status": "open"
+            }
+          ],
+          "resources": [],
+          "status": "open"
+        },
+        {
+          "id": "shared-lane",
+          "source": {
+            "path": "experiments/alliance-service/season-measurements.json",
+            "sha256": "35a12257c61e38bcf8b2b9558323eb7bd077fb2eff9475e822e814b0bf166e46"
+          },
+          "execution": "/concepts/fixed-retrieval-and-hang/shared-lane",
+          "runId": "fixed-retrieval-and-hang/shared-lane",
+          "checks": [
+            {
+              "id": "traffic-wait",
+              "value": 133.05,
+              "unit": "s",
+              "pointer": "/concepts/fixed-retrieval-and-hang/shared-lane/waitSeconds",
+              "margin": -118.05000000000001,
+              "status": "fail"
+            },
+            {
+              "id": "service-fit",
+              "value": 17485.76653,
+              "unit": "mm3",
+              "pointer": "/concepts/fixed-retrieval-and-hang/shared-lane/serviceInterferenceMm3",
+              "margin": -17485.756530000002,
+              "status": "fail"
+            },
+            {
+              "id": "demonstrated-pit-turnaround",
+              "status": "open"
+            }
+          ],
+          "resources": [],
+          "status": "fail"
+        }
+      ],
+      "status": "fail"
+    },
+    {
+      "id": "grounded-flex-support",
+      "architecture": "Choose retrieval or a ground support lane before the match. Retain ground support throughout and inspect the disconnected pack in detached tooling. The concept omits the robot-weight mast.",
+      "interfaces": [
+        {
+          "from": "ground-supported chassis",
+          "to": "alliance partner",
+          "exchange": "yields the occupied retrieval lane"
+        },
+        {
+          "from": "detached packing gauge",
+          "to": "pit operator",
+          "exchange": "accepts or rejects the disconnected pack"
+        }
+      ],
+      "cases": [
+        {
+          "id": "separate-lanes",
+          "source": {
+            "path": "experiments/alliance-service/season-measurements.json",
+            "sha256": "35a12257c61e38bcf8b2b9558323eb7bd077fb2eff9475e822e814b0bf166e46"
+          },
+          "execution": "/concepts/grounded-flex-support/separate-lanes",
+          "runId": "grounded-flex-support/separate-lanes",
+          "checks": [
+            {
+              "id": "traffic-wait",
+              "value": 0,
+              "unit": "s",
+              "pointer": "/concepts/grounded-flex-support/separate-lanes/waitSeconds",
+              "margin": 15,
+              "status": "pass"
+            },
+            {
+              "id": "service-fit",
+              "value": 0,
+              "unit": "mm3",
+              "pointer": "/concepts/grounded-flex-support/separate-lanes/serviceInterferenceMm3",
+              "margin": 0.01,
+              "status": "pass"
+            },
+            {
+              "id": "demonstrated-pit-turnaround",
+              "status": "open"
+            }
+          ],
+          "resources": [],
+          "status": "open"
+        },
+        {
+          "id": "shared-lane",
+          "source": {
+            "path": "experiments/alliance-service/season-measurements.json",
+            "sha256": "35a12257c61e38bcf8b2b9558323eb7bd077fb2eff9475e822e814b0bf166e46"
+          },
+          "execution": "/concepts/grounded-flex-support/shared-lane",
+          "runId": "grounded-flex-support/shared-lane",
+          "checks": [
+            {
+              "id": "traffic-wait",
+              "value": 0,
+              "unit": "s",
+              "pointer": "/concepts/grounded-flex-support/shared-lane/waitSeconds",
+              "margin": 15,
+              "status": "pass"
+            },
+            {
+              "id": "service-fit",
+              "value": 0,
+              "unit": "mm3",
+              "pointer": "/concepts/grounded-flex-support/shared-lane/serviceInterferenceMm3",
+              "margin": 0.01,
+              "status": "pass"
+            },
+            {
+              "id": "demonstrated-pit-turnaround",
+              "status": "open"
+            }
+          ],
+          "resources": [],
+          "status": "open"
+        }
+      ],
+      "status": "open"
+    }
+  ],
+  "qualifiedForTheseCases": [],
+  "scope": "Recorded values compared in declared units. Check native metric definitions, execution identity and failure coverage before promoting a concept.",
+  "studySha256": "ffffc36eb43898201a51a3dbb9d1f083abacb4853aaa32fb2fc6c188bbf7a4a0"
+}

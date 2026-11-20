@@ -1,0 +1,50 @@
+{
+  "schema": "agent-frc/throughput-study@1",
+  "demand": {
+    "path": "experiments/alliance-service/transport-runs.json",
+    "sha256": "36b1b24b1ee766e3224e3dc3d906cf74cfe77e61aeca40dc768fadc0b3f8b124",
+    "pointer": "/demand"
+  },
+  "episodes": [
+    {
+      "id": "clear",
+      "source": {
+        "path": "experiments/alliance-service/transport-runs.json",
+        "sha256": "36b1b24b1ee766e3224e3dc3d906cf74cfe77e61aeca40dc768fadc0b3f8b124",
+        "pointer": "/episodes/0"
+      }
+    },
+    {
+      "id": "queue",
+      "source": {
+        "path": "experiments/alliance-service/transport-runs.json",
+        "sha256": "36b1b24b1ee766e3224e3dc3d906cf74cfe77e61aeca40dc768fadc0b3f8b124",
+        "pointer": "/episodes/1"
+      }
+    },
+    {
+      "id": "empty",
+      "source": {
+        "path": "experiments/alliance-service/transport-runs.json",
+        "sha256": "36b1b24b1ee766e3224e3dc3d906cf74cfe77e61aeca40dc768fadc0b3f8b124",
+        "pointer": "/episodes/2"
+      }
+    },
+    {
+      "id": "jam",
+      "source": {
+        "path": "experiments/alliance-service/transport-runs.json",
+        "sha256": "36b1b24b1ee766e3224e3dc3d906cf74cfe77e61aeca40dc768fadc0b3f8b124",
+        "pointer": "/episodes/3"
+      }
+    },
+    {
+      "id": "service",
+      "source": {
+        "path": "experiments/alliance-service/transport-runs.json",
+        "sha256": "36b1b24b1ee766e3224e3dc3d906cf74cfe77e61aeca40dc768fadc0b3f8b124",
+        "pointer": "/episodes/4"
+      }
+    }
+  ]
+}

@@ -1,0 +1,337 @@
+{
+  "schema": "agent-frc/elevation-result@1",
+  "inventory": {
+    "path": "experiments/alliance-service/load-inventory.json",
+    "sha256": "3c3cd795398b3b2f500a39f746140717659a1e7c376454774b7c764908ed28d1",
+    "pointer": "/inventory"
+  },
+  "mechanisms": [
+    {
+      "id": "stage-chain-mast",
+      "source": {
+        "path": "experiments/alliance-service/load-inventory.json",
+        "sha256": "3c3cd795398b3b2f500a39f746140717659a1e7c376454774b7c764908ed28d1",
+        "pointer": "/model"
+      },
+      "massEvidence": "earlier-scenario",
+      "cases": [
+        {
+          "id": "settled-solo",
+          "mode": "hold",
+          "massKg": 52.786157186389204,
+          "weightN": 517.6553683719037,
+          "totalVerticalN": 517.6553683719037,
+          "unsupportedMomentNm": 0,
+          "restraint": {
+            "momentNm": 0,
+            "demandNm": 0,
+            "status": "pass"
+          },
+          "supports": [
+            {
+              "id": "chain-seat",
+              "loadN": 517.6553683719037,
+              "missing": [],
+              "checks": [
+                {
+                  "id": "one-solo-chain-leg",
+                  "designDemandN": 646.7677035398892,
+                  "status": "open",
+                  "reason": "Missing hold rating."
+                },
+                {
+                  "id": "bearing-roof-and-spine",
+                  "designDemandN": 517.6553683719037,
+                  "status": "open",
+                  "reason": "Missing hold rating."
+                },
+                {
+                  "id": "moving-guide-and-bracket",
+                  "designDemandN": 517.6553683719037,
+                  "status": "open",
+                  "reason": "Missing hold rating."
+                },
+                {
+                  "id": "transverse-lock",
+                  "designDemandN": 517.6553683719037,
+                  "status": "open",
+                  "reason": "Missing hold rating."
+                },
+                {
+                  "id": "pin-through-guide-walls",
+                  "designDemandN": 517.6553683719037,
+                  "status": "open",
+                  "reason": "Missing hold rating."
+                },
+                {
+                  "id": "guide-crossmember",
+                  "designDemandN": 517.6553683719037,
+                  "status": "open",
+                  "reason": "Missing hold rating."
+                },
+                {
+                  "id": "paired-rail-attachment-system",
+                  "designDemandN": 517.6553683719037,
+                  "status": "open",
+                  "reason": "Missing hold rating."
+                }
+              ],
+              "status": "open"
+            }
+          ],
+          "status": "open"
+        },
+        {
+          "id": "limiting-transfer-screen",
+          "mode": "raise",
+          "massKg": 60.73475842588824,
+          "weightN": 595.6045187172368,
+          "totalVerticalN": 1191.2090374344737,
+          "unsupportedMomentNm": 0,
+          "restraint": {
+            "momentNm": 0,
+            "demandNm": 0,
+            "status": "pass"
+          },
+          "supports": [
+            {
+              "id": "chain-seat",
+              "loadN": 1191.2090374344737,
+              "missing": [],
+              "checks": [
+                {
+                  "id": "one-solo-chain-leg",
+                  "designDemandN": 1488.317480412848,
+                  "status": "open",
+                  "reason": "Missing raise rating."
+                },
+                {
+                  "id": "bearing-roof-and-spine",
+                  "designDemandN": 1191.2090374344737,
+                  "status": "open",
+                  "reason": "Missing raise rating."
+                },
+                {
+                  "id": "moving-guide-and-bracket",
+                  "designDemandN": 1191.2090374344737,
+                  "status": "open",
+                  "reason": "Missing raise rating."
+                },
+                {
+                  "id": "transfer-drive-no-rated-assembly",
+                  "designDemandN": 1191.2090374344737,
+                  "status": "open",
+                  "reason": "Missing raise rating."
+                },
+                {
+                  "id": "candidate-bronze-nut",
+                  "unit": "N",
+                  "demand": 1191.2090374344737,
+                  "capacity": 1334.46648457815,
+                  "basis": "Thomson BN3708S maximum dynamic axial load, catalog component screen only. Duty, thread engagement and parent hardware remain open. https://www.thomsonlinear.com/en/product/BN3708S",
+                  "margin": 143.25744714367625,
+                  "status": "pass"
+                },
+                {
+                  "id": "one-active-thrust-bearing",
+                  "designDemandN": 1191.2090374344737,
+                  "status": "open",
+                  "reason": "Working capacity is unqualified for this load direction, duty or power state.",
+                  "basis": "EZO F6-14M basic dynamic contact rating. It is not an allowable housing or assembled drive load. https://www.ezo-brg.co.jp/english/product/spec.php?eid=02419"
+                },
+                {
+                  "id": "journal-and-bearing-housing",
+                  "designDemandN": 1191.2090374344737,
+                  "status": "open",
+                  "reason": "Missing raise rating."
+                },
+                {
+                  "id": "guide-crossmember",
+                  "designDemandN": 1191.2090374344737,
+                  "status": "open",
+                  "reason": "Missing raise rating."
+                },
+                {
+                  "id": "paired-rail-attachment-system",
+                  "designDemandN": 1191.2090374344737,
+                  "status": "open",
+                  "reason": "Missing raise rating."
+                }
+              ],
+              "status": "open"
+            }
+          ],
+          "status": "open"
+        },
+        {
+          "id": "off-axis-initial-contact",
+          "mode": "raise",
+          "massKg": 52.786157186389204,
+          "weightN": 517.6553683719037,
+          "totalVerticalN": 517.6553683719037,
+          "unsupportedMomentNm": 5.231013865736802,
+          "restraint": {
+            "momentNm": 5.231013865736802,
+            "demandNm": 5.231013865736802,
+            "status": "fail",
+            "reason": "Unbalanced applied moment at a simple support."
+          },
+          "supports": [
+            {
+              "id": "chain-seat",
+              "loadN": 517.6553683719037,
+              "missing": [],
+              "checks": [
+                {
+                  "id": "one-solo-chain-leg",
+                  "designDemandN": 646.7677035398892,
+                  "status": "open",
+                  "reason": "Missing raise rating."
+                },
+                {
+                  "id": "bearing-roof-and-spine",
+                  "designDemandN": 517.6553683719037,
+                  "status": "open",
+                  "reason": "Missing raise rating."
+                },
+                {
+                  "id": "moving-guide-and-bracket",
+                  "designDemandN": 517.6553683719037,
+                  "status": "open",
+                  "reason": "Missing raise rating."
+                },
+                {
+                  "id": "transfer-drive-no-rated-assembly",
+                  "designDemandN": 517.6553683719037,
+                  "status": "open",
+                  "reason": "Missing raise rating."
+                },
+                {
+                  "id": "candidate-bronze-nut",
+                  "unit": "N",
+                  "demand": 517.6553683719037,
+                  "capacity": 1334.46648457815,
+                  "basis": "Thomson BN3708S maximum dynamic axial load, catalog component screen only. Duty, thread engagement and parent hardware remain open. https://www.thomsonlinear.com/en/product/BN3708S",
+                  "margin": 816.8111162062462,
+                  "status": "pass"
+                },
+                {
+                  "id": "one-active-thrust-bearing",
+                  "designDemandN": 517.6553683719037,
+                  "status": "open",
+                  "reason": "Working capacity is unqualified for this load direction, duty or power state.",
+                  "basis": "EZO F6-14M basic dynamic contact rating. It is not an allowable housing or assembled drive load. https://www.ezo-brg.co.jp/english/product/spec.php?eid=02419"
+                },
+                {
+                  "id": "journal-and-bearing-housing",
+                  "designDemandN": 517.6553683719037,
+                  "status": "open",
+                  "reason": "Missing raise rating."
+                },
+                {
+                  "id": "guide-crossmember",
+                  "designDemandN": 517.6553683719037,
+                  "status": "open",
+                  "reason": "Missing raise rating."
+                },
+                {
+                  "id": "paired-rail-attachment-system",
+                  "designDemandN": 517.6553683719037,
+                  "status": "open",
+                  "reason": "Missing raise rating."
+                }
+              ],
+              "status": "open"
+            }
+          ],
+          "status": "fail"
+        },
+        {
+          "id": "unpowered-seated",
+          "mode": "power-loss",
+          "massKg": 60.73475842588824,
+          "weightN": 595.6045187172368,
+          "totalVerticalN": 595.6045187172368,
+          "unsupportedMomentNm": 0,
+          "restraint": {
+            "momentNm": 0,
+            "demandNm": 0,
+            "status": "pass"
+          },
+          "supports": [
+            {
+              "id": "chain-seat",
+              "loadN": 595.6045187172368,
+              "missing": [],
+              "checks": [
+                {
+                  "id": "one-solo-chain-leg",
+                  "designDemandN": 744.158740206424,
+                  "status": "open",
+                  "reason": "Missing power-loss rating."
+                },
+                {
+                  "id": "bearing-roof-and-spine",
+                  "designDemandN": 595.6045187172368,
+                  "status": "open",
+                  "reason": "Missing power-loss rating."
+                },
+                {
+                  "id": "moving-guide-and-bracket",
+                  "designDemandN": 595.6045187172368,
+                  "status": "open",
+                  "reason": "Missing power-loss rating."
+                },
+                {
+                  "id": "transverse-lock",
+                  "designDemandN": 595.6045187172368,
+                  "status": "open",
+                  "reason": "Missing power-loss rating."
+                },
+                {
+                  "id": "pin-through-guide-walls",
+                  "designDemandN": 595.6045187172368,
+                  "status": "open",
+                  "reason": "Missing power-loss rating."
+                },
+                {
+                  "id": "guide-crossmember",
+                  "designDemandN": 595.6045187172368,
+                  "status": "open",
+                  "reason": "Missing power-loss rating."
+                },
+                {
+                  "id": "paired-rail-attachment-system",
+                  "designDemandN": 595.6045187172368,
+                  "status": "open",
+                  "reason": "Missing power-loss rating."
+                }
+              ],
+              "status": "open"
+            }
+          ],
+          "status": "open"
+        },
+        {
+          "id": "no-chain-contact",
+          "mode": "hold",
+          "status": "fail",
+          "reason": "All supports unavailable."
+        },
+        {
+          "id": "weighed-robot",
+          "mode": "hold",
+          "status": "open",
+          "reason": "Missing loaded mass for this pose."
+        }
+      ],
+      "missing": [
+        "measured or conservative upper bound for complete supported mass"
+      ],
+      "status": "fail"
+    }
+  ],
+  "status": "fail",
+  "scope": "Vertical-plane one- or two-support rigid body with specified load paths. Coverage depends on the project inventory and supplied inputs. Buckling, impact, fatigue, electrical holding and brake engagement need supporting model or rated evidence.",
+  "studySha256": "a59656c26098a321b657092a827a3f340290c709138e495ab340eb93c9434e6a"
+}
