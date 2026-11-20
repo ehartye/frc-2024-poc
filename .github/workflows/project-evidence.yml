@@ -53,3 +53,14 @@ jobs:
         run: |
           python experiments/alliance-service/replay.py ../.season-review/scripts
           git diff --exit-code -- experiments/alliance-service
+      - name: Check out the spatial equilibrium checker
+        uses: actions/checkout@v4
+        with:
+          repository: ehartye/agent-frc
+          ref: d508f4bcb5d02edfea8766f8839628310564192c
+          path: .spatial-checker
+          persist-credentials: false
+      - name: Reproduce the separate R8 spatial saddle result
+        run: |
+          node experiments/alliance-service/spatial-saddle.mjs ../.spatial-checker/scripts > "$RUNNER_TEMP/spatial-saddle.json"
+          cmp "$RUNNER_TEMP/spatial-saddle.json" experiments/alliance-service/spatial-saddle.json
