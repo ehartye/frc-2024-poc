@@ -31,6 +31,7 @@ jobs:
           node ../.layout-validator/scripts/rehearsal-series.mjs kickoff/crescendo-field.json "$RUNNER_TEMP/stage-series.json"
           cmp "$RUNNER_TEMP/stage-series.json" experiments/speaker-cycles/match-series.json
           node ../.layout-validator/scripts/kickoff.mjs --profile kickoff/crescendo-field.json --output "$RUNNER_TEMP/field-lab.html"
+          python experiments/ground-relay/link_lab.py "$RUNNER_TEMP/field-lab.html"
           cmp "$RUNNER_TEMP/field-lab.html" docs/field-lab.html
           python tests/test_stage_endgame.py
 
@@ -71,3 +72,16 @@ jobs:
         run: |
           node experiments/alliance-service/spatial-saddle.mjs ../.spatial-checker/scripts > "$RUNNER_TEMP/spatial-saddle.json"
           cmp "$RUNNER_TEMP/spatial-saddle.json" experiments/alliance-service/spatial-saddle.json
+
+      - name: Check out the ground relay cohort reader
+        uses: actions/checkout@v4
+        with:
+          repository: ehartye/agent-frc
+          ref: 687618cdeedaca33ba8271e1aab4b7ce2697b805
+          path: .ground-cohort
+          persist-credentials: false
+      - name: Replay custody, peer occupancy, clock, held-out cases and public lab
+        run: |
+          python -B experiments/ground-relay/replay.py ../.ground-cohort/scripts
+          python -B tests/test_ground_relay.py
+          git diff --exit-code -- experiments/ground-relay docs/ground-relay.json

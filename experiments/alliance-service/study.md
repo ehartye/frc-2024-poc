@@ -2,6 +2,8 @@
 
 **Use the ground-supported concept for the next rehearsal.** Assign Blue 3 to retrieve when it has a separate lane. When opponents or partners occupy that lane, leave Blue 3 at the support point. The team can rehearse both roles before committing to a robot-weight mast. The current mass, load-path and service evidence leaves a suspended terminal role open.
 
+The [R15 ground relay](../ground-relay/study.md) takes the retrieval role into a third roster and distinguishes Blue 3 deposits from partner pickups under the match clock.
+
 ## What could students infer at kickoff?
 
 The January 6 release-day manual, sections 5–6 V0, gives one point for PARK, three for an unlit ONSTAGE robot and two for each additional qualifying robot on the same chain. Compare two decisions when parking is certain and missing a hang leaves the robot outside the zone. Hold the rest of the alliance score fixed. [V0 source fingerprint and comparison scope](../../kickoff/stage-rules.json) · [V0 manual, Table 6-2](https://bchrobotics.com/wp-content/uploads/2024/01/2024GameManual-unlocked.pdf)

@@ -130,6 +130,7 @@ def simulate(case,revision,freeze_sha,demand,control=None):
     b=Bot("B3",tuple(PEERS["initial"]["B3"])); partner=Bot("B2",tuple(PEERS["initial"]["B2"]))
     pieces={item:dict(state="source",source=item.split("/")[0],xy=list(SOURCES[item.split("/")[0]])) for item in initial_stock}
     if STOCK[1] in pieces:pieces[STOCK[1]]["xy"][1]+=offset
+    initial_positions={i:list(v["xy"]) for i,v in pieces.items()}
     serial=revision=="serial-confirm"
     events=[];history=[];samples=[];deposits=[];received=[];finished=[];clock=[]
     previous_velocity=(0.,0.); peak_accel=0.; current_accel=0.; contacts=set(); acquisition_seen=set()
@@ -223,18 +224,24 @@ def simulate(case,revision,freeze_sha,demand,control=None):
                         pad=0 if serial else len(deposits)%2
                         home=dock(PADS[pad])
                         b.route([(b.p[0],31.),(home[0],31.),home],"deposit")
-            elif b.action=="deposit" and b.cargo and b.time>=.35+rest_duration(HEIGHT):
-                landing=[b.p[0]+PORT,b.p[1]+control.get("padOffsetIn",0)]
-                occupied=any(v.get("pad")==pad and v["state"]=="pad" for v in pieces.values())
-                if not occupied:
-                    item=b.cargo; b.cargo=None
-                    valid=distance(landing,PADS[pad])+RADIUS<=10.
-                    pieces[item].update(state="pad" if valid else "lost",xy=landing,pad=pad)
+            elif b.action=="deposit":
+                v=pieces[piece]
+                if b.cargo and b.time>=.35:
+                    occupied=any(other.get("pad")==pad and other["state"]=="pad" for other in pieces.values())
+                    if not occupied:
+                        # A stationary release has no horizontal ejection velocity.
+                        landing=[b.p[0]+PORT,b.p[1]+control.get("padOffsetIn",0)]
+                        v.update(state="settling",xy=landing,releasedAt=t,pad=pad)
+                        b.cargo=None
+                        log(t,"ground release","B3",piece,xy=landing,heightMm=round(1000*HEIGHT,3))
+                if v["state"]=="settling" and t-v["releasedAt"]>=rest_duration(HEIGHT):
+                    valid=distance(v["xy"],PADS[pad])+RADIUS<=10.
+                    v["state"]="pad" if valid else "lost"
                     if not valid:
-                        contract(t,"miss",item,"blue-exchange","Settled ring crosses pad edge",release=True)
-                        log(t,"outside pad","B3",item);failure="invalid deposit";return
-                    contract(t,"accept",item,"blue-exchange","At rest on floor; complete ring inside empty pad")
-                    deposits.append(item);log(t,"floor deposit","B3",item,pad=pad)
+                        contract(t,"miss",piece,"blue-exchange","Settled ring crosses pad edge",release=True)
+                        log(t,"outside pad","B3",piece);failure="invalid deposit";return
+                    contract(t,"accept",piece,"blue-exchange","At rest on floor; complete ring inside empty pad")
+                    deposits.append(piece);log(t,"floor deposit","B3",piece,pad=pad,xy=v["xy"])
                     b.route([(b.p[0],49.)],"confirm" if serial else "next")
             elif b.action in ("confirm","next"):
                 if b.action=="next" or deposits[-1] in received:start_source(t)
@@ -244,7 +251,9 @@ def simulate(case,revision,freeze_sha,demand,control=None):
             partner.time+=DT
             if partner.action=="standby" and finished and finished[-1] not in partner_resets:
                 partner_resets.append(finished[-1]);log(t,"reset","B2",finished[-1])
-            if partner.action=="standby" and t-START>=delay:
+            if partner.action=="receive" and t-START<delay:
+                partner.time=0.
+            if partner.action=="standby" and (t-START>=delay or control.get("preposition")):
                 waiting=[i for i in deposits if pieces[i]["state"]=="pad"]
                 if waiting and distance(b.p,dock(pieces[waiting[0]]["xy"]))>40:
                     item=waiting[0]; dest=dock(pieces[item]["xy"])
@@ -256,11 +265,15 @@ def simulate(case,revision,freeze_sha,demand,control=None):
                     partner.cargo=found;pieces[found]["state"]="B2";received.append(found)
                     log(t,"received","B2",found)
                     terminal=(30.,140. if len(received)==1 else 75.)
-                    partner.route([(30.,partner.p[1]),terminal],"store")
+                    if control.get("localStore") and len(received)==1:
+                        downstream = (partner.p[0],133.5) if control["localStore"]=="east" else (30.,133.5)
+                        partner.route([downstream],"store")
+                    else:
+                        partner.route([(30.,partner.p[1]),terminal],"store")
             elif partner.action=="store" and partner.cargo and partner.time>=.35+rest_duration(HEIGHT):
                 item=partner.cargo;partner.cargo=None;pieces[item]["state"]="stored";finished.append(item)
-                log(t,"downstream floor","B2",item)
-                partner.route([(30.,150.)],"standby")
+                log(t,"downstream floor","B2",item,xy=list(pieces[item]["xy"]))
+                partner.route([] if control.get("localStore") and len(received)==1 else [(30.,150.)],"standby")
     b.action="start"
     partner.route([(30.,298.),(30.,150.)],"standby")
     for tick in range(round(END/DT)+1):
@@ -300,12 +313,14 @@ def simulate(case,revision,freeze_sha,demand,control=None):
                 who,room=blockers(bot,dest,b,save_pos,p0,p1)
                 b.p=save_pos
             else:who,room=blockers(bot,dest,other,other.p,p0,p1)
-            if room<=.01:
+            if room<=control.get("clearanceIn",.01):
                 bot.waits[who]+=DT
                 # A moving peer entering a stopped footprint invalidates the route.
                 who,room=blockers(bot,bot.p,other,other.p,p0,p1)
-                if room<=0:
-                    failure="occupied footprint: "+who;log(t,"collision",bot.name,detail=who);break
+                if room<=control.get("clearanceIn",0.):
+                    min_clear=min(min_clear,room)
+                    failure=("occupied footprint: " if room<=0 else "clearance margin: ")+who
+                    log(t,"collision" if room<=0 else "margin breach",bot.name,detail=who,gapIn=round(room,3));break
             else:bot.move(dest)
             min_clear=min(min_clear,room)
         velocity=tuple((x-y)/DT for x,y in zip(b.p,before[0]))
@@ -323,7 +338,7 @@ def simulate(case,revision,freeze_sha,demand,control=None):
         revision=revision,evidence="timing-model",cohortSha256=freeze_sha,criterionId=demand["criterionId"],
         criterion=demand["criterion"],focalRobot="B3",initial=dict(receiverAvailableS=delay,secondOffsetIn=offset),
         clock=clock,windowS=[START,FLOOR],initialPieces=initial_stock,events=events)
-    outcome=dict(deposits=deposits,received=received,stored=finished,reset=b.action=="parked",
+    outcome=dict(initialPositions=initial_positions,deposits=deposits,received=received,stored=finished,reset=b.action=="parked",
         partnerReset=partner.action=="standby" and not partner.path,matchPoints={"B3":0,"B2":0},
         cutoffReason=failure or "clock",minimumGapIn=round(min_clear,3),
         peakLoadedAccelInS2=round(peak_accel,3),pickupEvidenceClass="local pose and dwell, archived simulation calibration",
