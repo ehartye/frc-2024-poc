@@ -1,0 +1,687 @@
+{
+  "source": "cad/student/r8-stage-climber.f3d",
+  "sha256": "26a5335e66c05dec8918b767dd27a4cb62421c1d88450102e6c66d1a4914c612",
+  "parentSha256": "6e2b65f3493dfd0a8c7a27bbf26445dec29213e93806ff9b0c55df5548b00266",
+  "components": {
+    "R7 chassis": 424,
+    "R7 carriage": 152,
+    "R7 cradle": 36,
+    "Front left housing": 13,
+    "Front left carrier": 5,
+    "Front left wheel": 2,
+    "Front right housing": 13,
+    "Front right carrier": 5,
+    "Front right wheel": 2,
+    "Rear left housing": 13,
+    "Rear left carrier": 5,
+    "Rear left wheel": 2,
+    "Rear right housing": 13,
+    "Rear right carrier": 5,
+    "Rear right wheel": 2,
+    "R8 fixed climb mast": 23,
+    "R8 sliding saddle": 7,
+    "R8 transverse lock": 1
+  },
+  "joints": [
+    "Lift",
+    "Pitch",
+    "Front left mount",
+    "Front left azimuth",
+    "Front left roll",
+    "Front right mount",
+    "Front right azimuth",
+    "Front right roll",
+    "Rear left mount",
+    "Rear left azimuth",
+    "Rear left roll",
+    "Rear right mount",
+    "Rear right azimuth",
+    "Rear right roll",
+    "Climb crossmember mount",
+    "Saddle extension",
+    "Lock pin withdrawal"
+  ],
+  "poses": [
+    {
+      "pose": "home locked",
+      "roofUnderMm": 480.0,
+      "pinStartXMm": 22.0,
+      "travelMm": 0,
+      "withdrawalMm": 0
+    },
+    {
+      "pose": "unlocked",
+      "roofUnderMm": 480.0,
+      "pinStartXMm": 74.0,
+      "travelMm": 0,
+      "withdrawalMm": 52
+    },
+    {
+      "pose": "above chain",
+      "roofUnderMm": 860.0,
+      "pinStartXMm": 74.0,
+      "travelMm": 380,
+      "withdrawalMm": 52
+    },
+    {
+      "pose": "pull down",
+      "roofUnderMm": 650.0,
+      "pinStartXMm": 74.0,
+      "travelMm": 170,
+      "withdrawalMm": 52
+    },
+    {
+      "pose": "seated stop",
+      "roofUnderMm": 480.0,
+      "pinStartXMm": 74.0,
+      "travelMm": 0,
+      "withdrawalMm": 52
+    },
+    {
+      "pose": "passive hold",
+      "roofUnderMm": 480.0,
+      "pinStartXMm": 22.0,
+      "travelMm": 0,
+      "withdrawalMm": 0
+    }
+  ],
+  "railWallChecksMm": [
+    [
+      23,
+      329,
+      71.4
+    ],
+    [
+      23,
+      329,
+      119.1
+    ],
+    [
+      53,
+      329,
+      71.4
+    ],
+    [
+      53,
+      329,
+      119.1
+    ],
+    [
+      23,
+      -329,
+      71.4
+    ],
+    [
+      23,
+      -329,
+      119.1
+    ],
+    [
+      53,
+      -329,
+      71.4
+    ],
+    [
+      53,
+      -329,
+      119.1
+    ]
+  ],
+  "climberBodies": [
+    {
+      "component": "R8 fixed climb mast",
+      "body": "Rail mounting fastener envelope 23 -329",
+      "boundsMm": [
+        16.0,
+        -336.0,
+        62.0,
+        30.0,
+        -322.0,
+        165.0
+      ],
+      "volumeMm3": 5820.115
+    },
+    {
+      "component": "R8 fixed climb mast",
+      "body": "Rail crush sleeve 23 -329",
+      "boundsMm": [
+        16.5,
+        -335.5,
+        73.025,
+        29.5,
+        -322.5,
+        117.475
+      ],
+      "volumeMm3": 3377.634
+    },
+    {
+      "component": "R8 fixed climb mast",
+      "body": "Crossmember crush sleeve 23 -329",
+      "boundsMm": [
+        16.5,
+        -335.5,
+        123.65,
+        29.5,
+        -322.5,
+        156.0
+      ],
+      "volumeMm3": 2458.188
+    },
+    {
+      "component": "R8 fixed climb mast",
+      "body": "Captive nut envelope 23 -329",
+      "boundsMm": [
+        16.0,
+        -336.0,
+        62.0,
+        30.0,
+        -322.0,
+        69.85
+      ],
+      "volumeMm3": 762.965
+    },
+    {
+      "component": "R8 fixed climb mast",
+      "body": "Rail mounting fastener envelope 53 -329",
+      "boundsMm": [
+        46.0,
+        -336.0,
+        62.0,
+        60.0,
+        -322.0,
+        165.0
+      ],
+      "volumeMm3": 5820.115
+    },
+    {
+      "component": "R8 fixed climb mast",
+      "body": "Rail crush sleeve 53 -329",
+      "boundsMm": [
+        46.5,
+        -335.5,
+        73.025,
+        59.5,
+        -322.5,
+        117.475
+      ],
+      "volumeMm3": 3377.634
+    },
+    {
+      "component": "R8 fixed climb mast",
+      "body": "Crossmember crush sleeve 53 -329",
+      "boundsMm": [
+        46.5,
+        -335.5,
+        123.65,
+        59.5,
+        -322.5,
+        156.0
+      ],
+      "volumeMm3": 2458.188
+    },
+    {
+      "component": "R8 fixed climb mast",
+      "body": "Captive nut envelope 53 -329",
+      "boundsMm": [
+        46.0,
+        -336.0,
+        62.0,
+        60.0,
+        -322.0,
+        69.85
+      ],
+      "volumeMm3": 762.965
+    },
+    {
+      "component": "R8 fixed climb mast",
+      "body": "Rail mounting fastener envelope 23 329",
+      "boundsMm": [
+        16.0,
+        322.0,
+        62.0,
+        30.0,
+        336.0,
+        165.0
+      ],
+      "volumeMm3": 5820.115
+    },
+    {
+      "component": "R8 fixed climb mast",
+      "body": "Rail crush sleeve 23 329",
+      "boundsMm": [
+        16.5,
+        322.5,
+        73.025,
+        29.5,
+        335.5,
+        117.475
+      ],
+      "volumeMm3": 3377.634
+    },
+    {
+      "component": "R8 fixed climb mast",
+      "body": "Crossmember crush sleeve 23 329",
+      "boundsMm": [
+        16.5,
+        322.5,
+        123.65,
+        29.5,
+        335.5,
+        156.0
+      ],
+      "volumeMm3": 2458.188
+    },
+    {
+      "component": "R8 fixed climb mast",
+      "body": "Captive nut envelope 23 329",
+      "boundsMm": [
+        16.0,
+        322.0,
+        62.0,
+        30.0,
+        336.0,
+        69.85
+      ],
+      "volumeMm3": 762.965
+    },
+    {
+      "component": "R8 fixed climb mast",
+      "body": "Rail mounting fastener envelope 53 329",
+      "boundsMm": [
+        46.0,
+        322.0,
+        62.0,
+        60.0,
+        336.0,
+        165.0
+      ],
+      "volumeMm3": 5820.115
+    },
+    {
+      "component": "R8 fixed climb mast",
+      "body": "Rail crush sleeve 53 329",
+      "boundsMm": [
+        46.5,
+        322.5,
+        73.025,
+        59.5,
+        335.5,
+        117.475
+      ],
+      "volumeMm3": 3377.634
+    },
+    {
+      "component": "R8 fixed climb mast",
+      "body": "Crossmember crush sleeve 53 329",
+      "boundsMm": [
+        46.5,
+        322.5,
+        123.65,
+        59.5,
+        335.5,
+        156.0
+      ],
+      "volumeMm3": 2458.188
+    },
+    {
+      "component": "R8 fixed climb mast",
+      "body": "Captive nut envelope 53 329",
+      "boundsMm": [
+        46.0,
+        322.0,
+        62.0,
+        60.0,
+        336.0,
+        69.85
+      ],
+      "volumeMm3": 762.965
+    },
+    {
+      "component": "R8 fixed climb mast",
+      "body": "Crossmember with four rail mounting holes",
+      "boundsMm": [
+        13.0,
+        -348.4,
+        120.65,
+        63.0,
+        348.4,
+        159.0
+      ],
+      "volumeMm3": 342927.0
+    },
+    {
+      "component": "R8 fixed climb mast",
+      "body": "Outer guide with double shear lock bore",
+      "boundsMm": [
+        24.0,
+        -56.0,
+        159.0,
+        52.0,
+        -4.0,
+        600.0
+      ],
+      "volumeMm3": 195284.459
+    },
+    {
+      "component": "R8 fixed climb mast",
+      "body": "Thrust bearing support envelope",
+      "boundsMm": [
+        27.0,
+        -53.0,
+        159.0,
+        49.0,
+        -7.0,
+        169.0
+      ],
+      "volumeMm3": 9254.099
+    },
+    {
+      "component": "R8 fixed climb mast",
+      "body": "Screw envelope",
+      "boundsMm": [
+        33.0,
+        -44.0,
+        159.0,
+        43.0,
+        -34.0,
+        592.0
+      ],
+      "volumeMm3": 34007.74
+    },
+    {
+      "component": "R8 fixed climb mast",
+      "body": "Drive gearbox envelope",
+      "boundsMm": [
+        25.0,
+        -4.0,
+        160.0,
+        51.0,
+        48.0,
+        210.0
+      ],
+      "volumeMm3": 67600.0
+    },
+    {
+      "component": "R8 fixed climb mast",
+      "body": "Drive motor envelope",
+      "boundsMm": [
+        20.0,
+        48.0,
+        168.0,
+        56.0,
+        110.0,
+        204.0
+      ],
+      "volumeMm3": 63108.313
+    },
+    {
+      "component": "R8 fixed climb mast",
+      "body": "Spring return housing envelope",
+      "boundsMm": [
+        52.0,
+        -28.0,
+        236.0,
+        130.0,
+        -10.0,
+        256.0
+      ],
+      "volumeMm3": 20667.412
+    },
+    {
+      "component": "R8 sliding saddle",
+      "body": "Inner sliding tube with lock bore",
+      "boundsMm": [
+        28.0,
+        -52.0,
+        170.0,
+        48.0,
+        -8.0,
+        620.0
+      ],
+      "volumeMm3": 132317.049
+    },
+    {
+      "component": "R8 sliding saddle",
+      "body": "Nut carrier plate",
+      "boundsMm": [
+        30.5,
+        -49.5,
+        170.0,
+        45.5,
+        -10.5,
+        175.0
+      ],
+      "volumeMm3": 2492.049
+    },
+    {
+      "component": "R8 sliding saddle",
+      "body": "Travelling nut envelope",
+      "boundsMm": [
+        31.0,
+        -49.0,
+        175.0,
+        45.0,
+        -30.0,
+        192.0
+      ],
+      "volumeMm3": 3049.967
+    },
+    {
+      "component": "R8 sliding saddle",
+      "body": "Top bracket",
+      "boundsMm": [
+        16.0,
+        -49.0,
+        620.0,
+        48.0,
+        -11.0,
+        630.0
+      ],
+      "volumeMm3": 12160.0
+    },
+    {
+      "component": "R8 sliding saddle",
+      "body": "Saddle spine",
+      "boundsMm": [
+        16.0,
+        -47.0,
+        480.0,
+        22.0,
+        -13.0,
+        620.0
+      ],
+      "volumeMm3": 28560.0
+    },
+    {
+      "component": "R8 sliding saddle",
+      "body": "Chain bearing roof",
+      "boundsMm": [
+        -28.0,
+        -47.0,
+        480.0,
+        16.0,
+        -13.0,
+        493.0
+      ],
+      "volumeMm3": 19448.0
+    },
+    {
+      "component": "R8 sliding saddle",
+      "body": "Retaining lip",
+      "boundsMm": [
+        -28.0,
+        -47.0,
+        453.0,
+        -19.0,
+        -13.0,
+        480.0
+      ],
+      "volumeMm3": 8262.0
+    },
+    {
+      "component": "R8 transverse lock",
+      "body": "Spring engaged through pin",
+      "boundsMm": [
+        22.0,
+        -24.0,
+        241.0,
+        87.0,
+        -14.0,
+        251.0
+      ],
+      "volumeMm3": 5105.088
+    }
+  ],
+  "displayGroups": [
+    {
+      "name": "R7 robot - R7 structure",
+      "file": "stage-0.stl",
+      "triangles": 28836,
+      "sha256": "4708cdc371a35eef5e688ea07ca78d12af2414ec920cf364f2e853faefadd315",
+      "rgba": [
+        0.28627450980392155,
+        0.41568627450980394,
+        0.5058823529411764,
+        1
+      ],
+      "sourceBodyKeys": [
+        "0"
+      ]
+    },
+    {
+      "name": "R7 robot - R7 mechanism",
+      "file": "stage-1.stl",
+      "triangles": 23688,
+      "sha256": "487833ba17de252556d06bb41c3789943d2b264d2f59e39b5bb61e364872bf0f",
+      "rgba": [
+        0.0,
+        0.4980392156862745,
+        0.47058823529411764,
+        1
+      ],
+      "sourceBodyKeys": [
+        "1"
+      ]
+    },
+    {
+      "name": "R7 robot - R7 electrical",
+      "file": "stage-2.stl",
+      "triangles": 1752,
+      "sha256": "b04e1e8539921e474bd033109082a1c1907bea4fa53090705d6efad64b57f35c",
+      "rgba": [
+        0.5098039215686274,
+        0.38823529411764707,
+        0.6627450980392157,
+        1
+      ],
+      "sourceBodyKeys": [
+        "2"
+      ]
+    },
+    {
+      "name": "R7 robot - R7 number",
+      "file": "stage-3.stl",
+      "triangles": 576,
+      "sha256": "3d9f9ddef7affba3da8ce54d64fc14d05212ca2264244f4dcdd42c89d2d52a50",
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1
+      ],
+      "sourceBodyKeys": [
+        "3"
+      ]
+    },
+    {
+      "name": "R7 robot - R7 bumper",
+      "file": "stage-4.stl",
+      "triangles": 32,
+      "sha256": "db7727148b741d7db2a1f44dfbc0d835466d39f6f8aef93bc3a48a570c05c17e",
+      "rgba": [
+        0.8431372549019608,
+        0.09803921568627451,
+        0.12549019607843137,
+        1
+      ],
+      "sourceBodyKeys": [
+        "4"
+      ]
+    },
+    {
+      "name": "R7 robot - R7 module",
+      "file": "stage-5.stl",
+      "triangles": 6176,
+      "sha256": "24e0a158580a500faa8837015df31cf202e7fc739c63dd8bc9ba8814586565dc",
+      "rgba": [
+        0.4117647058823529,
+        0.4392156862745098,
+        0.4666666666666667,
+        1
+      ],
+      "sourceBodyKeys": [
+        "5"
+      ]
+    },
+    {
+      "name": "R7 robot - R7 tire",
+      "file": "stage-6.stl",
+      "triangles": 864,
+      "sha256": "5a636535a638f7a3c701e1cd29d5db692d90e9fd66c2882151fa6d42119ef1b5",
+      "rgba": [
+        0.17647058823529413,
+        0.1803921568627451,
+        0.1843137254901961,
+        1
+      ],
+      "sourceBodyKeys": [
+        "6"
+      ]
+    },
+    {
+      "name": "R8 fixed climb mast - R7 structure",
+      "file": "stage-7.stl",
+      "triangles": 2356,
+      "sha256": "fc753b43be0ef822046d1dd0b40560789effec0b53fa8c1949a463bf2a2fadf8",
+      "rgba": [
+        0.28627450980392155,
+        0.41568627450980394,
+        0.5058823529411764,
+        1
+      ],
+      "sourceBodyKeys": [
+        "7"
+      ]
+    },
+    {
+      "name": "R8 sliding saddle - R7 mechanism",
+      "file": "stage-8.stl",
+      "triangles": 312,
+      "sha256": "f211f4b3de05b23bf5be7f8c5eebee51435e91239f9b0a086c8fe28ae74d7140",
+      "rgba": [
+        0.0,
+        0.4980392156862745,
+        0.47058823529411764,
+        1
+      ],
+      "sourceBodyKeys": [
+        "8"
+      ]
+    },
+    {
+      "name": "R8 transverse lock - R7 structure",
+      "file": "stage-9.stl",
+      "triangles": 44,
+      "sha256": "96426e2a1e4d734ed68477393d513866ebaef2315fc7116bfd5e884690373279",
+      "rgba": [
+        0.28627450980392155,
+        0.41568627450980394,
+        0.5058823529411764,
+        1
+      ],
+      "sourceBodyKeys": [
+        "9"
+      ]
+    }
+  ]
+}

@@ -12,6 +12,8 @@ const models = {
   "r7-budget": { file: "r7-nominal-d1", poster: "swerve-r7", title: "1780 · R7 nominal mass",
     label: "R7 Fusion assembly · Nominal floor-pose mass budget",
     description: "The middle-wing NOTE seats at 4.363 s and reaches both Speaker sensor pairs at 13.639 s on the straight wall approach. The displayed robot and simulated plant use the same R7 Fusion archive. The view follows the chassis until release, then holds the release frame through the detector event." },
+  "r8-stage": { file: "r8-stage", title: "1780 · R8 Stage study", label: "Reopened R8 Fusion assembly · Solo straight-chain climb",
+    description: "The gold line shows the modeled chain. The saddle extends, travels over the chain and retracts as the wheels lift. Inspect the cross-pin at the raised pose and after power stops at 10 s. The replay uses a prescribed quasi-static load transfer." },
   baseline: { file: "robot-native", title: "1780 · Six-wheel baseline", label: "Historical Fusion assembly · Team-authored geometry",
               description: "First wing NOTE from the six-wheel baseline. The orange NOTE follows its measured path through the Speaker opening." }
 };
@@ -37,6 +39,7 @@ function restoreModel() {
   selection++;
   viewer.pause();
   replay.hidden = true;
+  stageControls.hidden = true;
   const model = models[revision.value];
   viewer.src = "media/" + model.file + ".glb";
   viewer.poster = "media/" + (model.poster ?? model.file) + ".png";
@@ -76,6 +79,7 @@ input.addEventListener("change", async () => {
     localUrl = URL.createObjectURL(file);
     viewer.pause();
     replay.hidden = true;
+    stageControls.hidden = true;
     caption.textContent = "Local assembly";
     wheelsButton.hidden = true;
     viewer.src = localUrl;
@@ -97,11 +101,38 @@ viewer.addEventListener("error", () => {
 });
 restore.addEventListener("click", restoreModel);
 revision.addEventListener("change", restoreModel);
-if (new URLSearchParams(location.search).get("view") === "r7-budget") {
-  revision.value = "r7-budget";
+const requestedModel = new URLSearchParams(location.search).get("view");
+if (["r7-budget", "r8-stage"].includes(requestedModel)) {
+  revision.value = requestedModel;
   // Replay controls are initialized further down this module.
   queueMicrotask(restoreModel);
 }
+
+const stageControls = document.getElementById("stage-controls");
+const stagePose = document.getElementById("stage-pose");
+stagePose.addEventListener("change", () => {
+  viewer.pause();
+  viewer.currentTime = Number(stagePose.value);
+});
+document.getElementById("stage-play").addEventListener("click", () => {
+  viewer.currentTime = 0;
+  viewer.timeScale = 1;
+  viewer.play({ repetitions: 1 });
+});
+viewer.addEventListener("load", () => {
+  const active = !localUrl && revision.value === "r8-stage" && viewer.availableAnimations.includes("Take the Stage");
+  stageControls.hidden = !active;
+  if (!active) return;
+  viewer.animationName = "Take the Stage";
+  viewer.pause();
+  stagePose.value = "7.6";
+  requestAnimationFrame(() => {
+    if (revision.value === "r8-stage" && !localUrl) viewer.currentTime = Number(stagePose.value);
+  });
+  viewer.cameraOrbit = "-42deg 76deg 2.75m";
+  viewer.cameraTarget = "0m .57m 0m";
+  viewer.jumpCameraToGoal();
+});
 
 const markers = document.getElementById("r7-events");
 const r7Index = fetch("media/r7-first-index.json").then(response => {

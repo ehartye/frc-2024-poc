@@ -1,0 +1,62 @@
+{
+  "schema": "crescendo-stage/1",
+  "edition": "Archived final 2024 manual through Team Update 21",
+  "authority": {
+    "manual": "https://firstfrc.blob.core.windows.net/frc2024/Manual/HTML/2024GameManual.htm",
+    "finalPdfSha256": "1b7e1dc3fe1b1bd64d97a482d7e78eb419ec77d611a15226a16b0c7011069b94",
+    "update": "https://firstfrc.blob.core.windows.net/frc2024/Manual/TeamUpdates/TeamUpdate21.pdf",
+    "kickoffComparison": {
+      "publisher": "FIRST",
+      "edition": "January 6 kickoff, sections 5 and 6 V0",
+      "mirror": "https://bchrobotics.com/wp-content/uploads/2024/01/2024GameManual-unlocked.pdf",
+      "sha256": "04f28dce1b689d8045a42142049da268f403960f90ba547e570ff7c987bb861f",
+      "scope": "STAGE point values, ordinary ENSEMBLE thresholds, assessment time and nominal field dimensions agree. Retain the final wording of contact and interference rules for this study."
+    }
+  },
+  "rules": [
+    "5.5",
+    "6.4",
+    "6.5",
+    "6.5.2",
+    "Table 6-2",
+    "G416",
+    "G424",
+    "G430"
+  ],
+  "clock": {
+    "autoS": 15,
+    "teleopS": 135,
+    "protectedFinalS": 20,
+    "assessment": "Earliest of all robots at rest after TELEOP or 5 s after time expires. Actuator commands stop at the buzzer."
+  },
+  "matchPoints": {
+    "park": 1,
+    "onstage": 3,
+    "onstageSpotlit": 4,
+    "harmonyPerAdditionalRobotOnSameChain": 2,
+    "notePerTrap": 5,
+    "maxNotesPerTrap": 1
+  },
+  "eligibility": {
+    "park": "Bumpers intersect the alliance Stage Zone at assessment and robot does not qualify as ONSTAGE.",
+    "onstage": "Use section 6.5.2's allowed-contact list at assessment. Ground contact disqualifies the hang. A reached chain alone is insufficient.",
+    "spotlit": "A HIGH NOTE surrounds the microphone corresponding to the chain supporting the ONSTAGE robot.",
+    "harmony": "Qualifying robots share one chain through direct or transitive support. Apply once per additional robot.",
+    "clock": "The last 20 seconds affect protection and human HIGH NOTE timing. Earlier lawful approaches are possible."
+  },
+  "qualificationRanking": {
+    "ensemble": {
+      "minStageMatchPoints": 10,
+      "minOnstageRobots": 2,
+      "rankingPoints": 1
+    },
+    "officialAwardOverride": "G424 can award an ENSEMBLE RP in qualifications. Track any referee award separately from modeled robot and alliance match points."
+  },
+  "geometry": {
+    "fieldStep": "FE-2024",
+    "eyesAboveCarpetIn": 48,
+    "unloadedLowIn": 28.25,
+    "chain": "1/4-inch Grade 43",
+    "scope": "Nominal geometry, see installed field survey and loaded-chain estimates in the climber study."
+  }
+}

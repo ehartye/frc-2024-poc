@@ -14,3 +14,7 @@ Use a blue and a red alliance of three robots. These are plausible role assignme
 For a series, use the same six role definitions across nominal, shared-midfield and missed-pickup scenarios. Compare each alliance's score events, missed attempts, contested pieces and final possession. Run AUTO through the transition and TELEOP to the final whistle. At 10×, 150 game seconds occupy 15 seconds of playback. Group robots by alliance even if the operator adds all three red robots before adding blue.
 
 The field rehearsal models tactical choices and timing. The independent [paired swerve physics records](../sim/pressure/evidence/maxswerve-development-shot.json) track contact-driven release and individual score sensors. Their scope is narrower than a six-robot match.
+
+## End-of-match decision
+
+At TELEOP 111 s in the shared-chain rehearsal, Blue 1 leaves the Speaker route and Blue 2 leaves its assigned lane. Stage them 1,000 mm apart along one chain, facing away from the core. Leave the second robot a clear approach and confirm the correct microphone. Two unlit hangs plus HARMONY yield 8 STAGE points. Spotlighting that chain makes 10 with both robots ONSTAGE. A third robot parked alone would bring the unlit pair only to 9. [Scoring register](stage-rules.json) · [Control and endgame runs](../experiments/speaker-cycles/match-rehearsal.md)

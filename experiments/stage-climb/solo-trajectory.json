@@ -1,0 +1,3207 @@
+{
+  "schema": "crescendo-solo-quasistatic/1",
+  "nativeSha256": "26a5335e66c05dec8918b767dd27a4cb62421c1d88450102e6c66d1a4914c612",
+  "stepS": 0.05,
+  "startTeleopS": 125,
+  "cutoffS": 10,
+  "assessmentS": 12.5,
+  "holdThroughS": 15,
+  "assumptions": [
+    "Other robots come to rest 2.5 seconds after the buzzer. Also inspect the full five-second bound.",
+    "Seat capture, loaded-chain profile and linear motion are prescribed. No impact, actuator feedback, swing or referee model.",
+    "A fully engaged steel pin transfers guide load after screw unload. A missed pin leaves the drive backdrivable at an assumed 100 mm/s after cutoff."
+  ],
+  "peakLoadedSlideSpeedMmS": 94.79707148178477,
+  "peakMechanicalPowerW": 49.07221295848098,
+  "minimumScrewInputAt30PctW": 163.57404319493662,
+  "outcome": {
+    "engaged": {
+      "atAssessment": {
+        "tS": 12.5,
+        "teleopS": 137.5,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      "atFiveSeconds": {
+        "tS": 15.0,
+        "teleopS": 140.0,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      "floorAndLoadWitnessMet": true,
+      "physicalOnstageCredit": "unqualified"
+    },
+    "missed": {
+      "atAssessment": {
+        "tS": 12.5,
+        "teleopS": 137.5,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 237.50449960607887,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      "atFiveSeconds": {
+        "tS": 15.0,
+        "teleopS": 140.0,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 237.50449960607887,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      "floorAndLoadWitnessMet": false,
+      "physicalOnstageCredit": "unqualified"
+    }
+  },
+  "samples": {
+    "engaged": [
+      {
+        "tS": 0.0,
+        "teleopS": 125.0,
+        "powered": true,
+        "approachOffsetMm": 460.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          460.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 0.25,
+        "teleopS": 125.25,
+        "powered": true,
+        "approachOffsetMm": 460.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 21.666666666666668,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          460.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 0.5,
+        "teleopS": 125.5,
+        "powered": true,
+        "approachOffsetMm": 460.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 43.333333333333336,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          460.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 0.6,
+        "teleopS": 125.6,
+        "powered": true,
+        "approachOffsetMm": 460.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          460.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 0.75,
+        "teleopS": 125.75,
+        "powered": true,
+        "approachOffsetMm": 460.0,
+        "slideMm": 38.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          460.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 1.0,
+        "teleopS": 126.0,
+        "powered": true,
+        "approachOffsetMm": 460.0,
+        "slideMm": 101.33333333333337,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          460.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 1.25,
+        "teleopS": 126.25,
+        "powered": true,
+        "approachOffsetMm": 460.0,
+        "slideMm": 164.66666666666674,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          460.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 1.5,
+        "teleopS": 126.5,
+        "powered": true,
+        "approachOffsetMm": 460.0,
+        "slideMm": 228.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          460.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 1.75,
+        "teleopS": 126.75,
+        "powered": true,
+        "approachOffsetMm": 460.0,
+        "slideMm": 291.33333333333326,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          460.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 2.0,
+        "teleopS": 127.0,
+        "powered": true,
+        "approachOffsetMm": 460.0,
+        "slideMm": 354.66666666666674,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          460.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 2.1,
+        "teleopS": 127.1,
+        "powered": true,
+        "approachOffsetMm": 460.0,
+        "slideMm": 380.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          460.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 2.25,
+        "teleopS": 127.25,
+        "powered": true,
+        "approachOffsetMm": 406.92307692307696,
+        "slideMm": 380.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          406.92307692307696,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 2.5,
+        "teleopS": 127.5,
+        "powered": true,
+        "approachOffsetMm": 318.46153846153845,
+        "slideMm": 380.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          318.46153846153845,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 2.75,
+        "teleopS": 127.75,
+        "powered": true,
+        "approachOffsetMm": 230.00000000000003,
+        "slideMm": 380.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          230.00000000000003,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 3.0,
+        "teleopS": 128.0,
+        "powered": true,
+        "approachOffsetMm": 141.53846153846155,
+        "slideMm": 380.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          141.53846153846155,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 3.25,
+        "teleopS": 128.25,
+        "powered": true,
+        "approachOffsetMm": 53.076923076923094,
+        "slideMm": 380.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          53.076923076923094,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 3.4,
+        "teleopS": 128.4,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 380.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 3.5,
+        "teleopS": 128.5,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 362.18806245075984,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 3.75,
+        "teleopS": 128.75,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 317.65821857765945,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 4.0,
+        "teleopS": 129.0,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 273.1283747045592,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 4.2,
+        "teleopS": 129.2,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 237.50449960607887,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 4.25,
+        "teleopS": 129.25,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 234.16101105913526,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 25.882768418595095,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 714.1610110591353
+      },
+      {
+        "tS": 4.5,
+        "teleopS": 129.5,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 217.44356832441724,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 155.29661051157103,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 697.4435683244172
+      },
+      {
+        "tS": 4.75,
+        "teleopS": 129.75,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 200.72612558969922,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 284.71045260454696,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 680.7261255896992
+      },
+      {
+        "tS": 5.0,
+        "teleopS": 130.0,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 184.0086828549812,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 414.1242946975229,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 664.0086828549812
+      },
+      {
+        "tS": 5.2,
+        "teleopS": 130.2,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 170.6347286672068,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 5.25,
+        "teleopS": 130.25,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 165.89487509311778,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -0.9126504759368785,
+          -0.19896521332577777,
+          4.731994181719074
+        ],
+        "quaternionXYZW": [
+          -0.0001540219302427914,
+          0.0007064963045104609,
+          0.0,
+          0.9999997385700742
+        ],
+        "floorClearanceMm": 4.226746851916272,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 5.5,
+        "teleopS": 130.5,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 142.19560722267238,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -5.27509810489305,
+          -1.1500142140144618,
+          28.411336139075274
+        ],
+        "quaternionXYZW": [
+          -0.0009241287628431833,
+          0.004238964898124241,
+          0.0,
+          0.9999905885370233
+        ],
+        "floorClearanceMm": 25.379889144426027,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 5.75,
+        "teleopS": 130.75,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 118.49633935222698,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -9.302718002823985,
+          -2.028068050960485,
+          52.120237647305544
+        ],
+        "quaternionXYZW": [
+          -0.0016942235157105113,
+          0.007771378082182021,
+          0.0,
+          0.9999683671443725
+        ],
+        "floorClearanceMm": 46.562749489318726,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 6.0,
+        "teleopS": 131.0,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 94.79707148178159,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -12.995329346709783,
+          -2.8330873032774626,
+          75.85498100347354
+        ],
+        "quaternionXYZW": [
+          -0.0024642961225645973,
+          0.011303689682806256,
+          0.0,
+          0.9999330746825885
+        ],
+        "floorClearanceMm": 67.77174225963908,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 6.25,
+        "teleopS": 131.25,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 71.09780361133619,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -16.352786336215832,
+          -3.5650401853087317,
+          99.61184743854096
+        ],
+        "quaternionXYZW": [
+          -0.003234336517414742,
+          0.01483585352744724,
+          0.0,
+          0.9998847116129961
+        ],
+        "floorClearanceMm": 89.0032807471368,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 6.5,
+        "teleopS": 131.5,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 47.39853574089079,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -19.37497819884453,
+          -4.223902547750484,
+          123.38711744135855
+        ],
+        "quaternionXYZW": [
+          -0.004004334634691308,
+          0.018367823445486667,
+          0.0,
+          0.9998232785677721
+        ],
+        "floorClearanceMm": 110.25377747935265,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 6.75,
+        "teleopS": 131.75,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 23.699267870445397,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -22.061829192340277,
+          -4.809657878176061,
+          147.1770710826748
+        ],
+        "quaternionXYZW": [
+          -0.0047742804093772835,
+          0.021899553268841125,
+          0.0,
+          0.9997487763499378
+        ],
+        "floorClearanceMm": 131.51964453672343,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 7.0,
+        "teleopS": 132.0,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 7.25,
+        "teleopS": 132.25,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 30.33333333333332,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 7.5,
+        "teleopS": 132.5,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 8.666666666666643,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 7.6,
+        "teleopS": 132.6,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 7.75,
+        "teleopS": 132.75,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 8.0,
+        "teleopS": 133.0,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 8.25,
+        "teleopS": 133.25,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 8.5,
+        "teleopS": 133.5,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 8.75,
+        "teleopS": 133.75,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 9.0,
+        "teleopS": 134.0,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 9.25,
+        "teleopS": 134.25,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 9.5,
+        "teleopS": 134.5,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 9.75,
+        "teleopS": 134.75,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 10.0,
+        "teleopS": 135.0,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 10.25,
+        "teleopS": 135.25,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 10.5,
+        "teleopS": 135.5,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 10.75,
+        "teleopS": 135.75,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 11.0,
+        "teleopS": 136.0,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 11.25,
+        "teleopS": 136.25,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 11.5,
+        "teleopS": 136.5,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 11.75,
+        "teleopS": 136.75,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 12.0,
+        "teleopS": 137.0,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 12.25,
+        "teleopS": 137.25,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 12.5,
+        "teleopS": 137.5,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 12.75,
+        "teleopS": 137.75,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 13.0,
+        "teleopS": 138.0,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 13.25,
+        "teleopS": 138.25,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 13.5,
+        "teleopS": 138.5,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 13.75,
+        "teleopS": 138.75,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 14.0,
+        "teleopS": 139.0,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 14.25,
+        "teleopS": 139.25,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 14.5,
+        "teleopS": 139.5,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 14.75,
+        "teleopS": 139.75,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 15.0,
+        "teleopS": 140.0,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 517.6553683719037,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      }
+    ],
+    "missed": [
+      {
+        "tS": 0.0,
+        "teleopS": 125.0,
+        "powered": true,
+        "approachOffsetMm": 460.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 0.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          460.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 0.25,
+        "teleopS": 125.25,
+        "powered": true,
+        "approachOffsetMm": 460.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 21.666666666666668,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          460.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 0.5,
+        "teleopS": 125.5,
+        "powered": true,
+        "approachOffsetMm": 460.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 43.333333333333336,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          460.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 0.6,
+        "teleopS": 125.6,
+        "powered": true,
+        "approachOffsetMm": 460.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          460.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 0.75,
+        "teleopS": 125.75,
+        "powered": true,
+        "approachOffsetMm": 460.0,
+        "slideMm": 38.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          460.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 1.0,
+        "teleopS": 126.0,
+        "powered": true,
+        "approachOffsetMm": 460.0,
+        "slideMm": 101.33333333333337,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          460.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 1.25,
+        "teleopS": 126.25,
+        "powered": true,
+        "approachOffsetMm": 460.0,
+        "slideMm": 164.66666666666674,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          460.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 1.5,
+        "teleopS": 126.5,
+        "powered": true,
+        "approachOffsetMm": 460.0,
+        "slideMm": 228.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          460.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 1.75,
+        "teleopS": 126.75,
+        "powered": true,
+        "approachOffsetMm": 460.0,
+        "slideMm": 291.33333333333326,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          460.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 2.0,
+        "teleopS": 127.0,
+        "powered": true,
+        "approachOffsetMm": 460.0,
+        "slideMm": 354.66666666666674,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          460.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 2.1,
+        "teleopS": 127.1,
+        "powered": true,
+        "approachOffsetMm": 460.0,
+        "slideMm": 380.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          460.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 2.25,
+        "teleopS": 127.25,
+        "powered": true,
+        "approachOffsetMm": 406.92307692307696,
+        "slideMm": 380.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          406.92307692307696,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 2.5,
+        "teleopS": 127.5,
+        "powered": true,
+        "approachOffsetMm": 318.46153846153845,
+        "slideMm": 380.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          318.46153846153845,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 2.75,
+        "teleopS": 127.75,
+        "powered": true,
+        "approachOffsetMm": 230.00000000000003,
+        "slideMm": 380.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          230.00000000000003,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 3.0,
+        "teleopS": 128.0,
+        "powered": true,
+        "approachOffsetMm": 141.53846153846155,
+        "slideMm": 380.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          141.53846153846155,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 3.25,
+        "teleopS": 128.25,
+        "powered": true,
+        "approachOffsetMm": 53.076923076923094,
+        "slideMm": 380.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          53.076923076923094,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 3.4,
+        "teleopS": 128.4,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 380.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 3.5,
+        "teleopS": 128.5,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 362.18806245075984,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 3.75,
+        "teleopS": 128.75,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 317.65821857765945,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 4.0,
+        "teleopS": 129.0,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 273.1283747045592,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 4.2,
+        "teleopS": 129.2,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 237.50449960607887,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 4.25,
+        "teleopS": 129.25,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 234.16101105913526,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 25.882768418595095,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 714.1610110591353
+      },
+      {
+        "tS": 4.5,
+        "teleopS": 129.5,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 217.44356832441724,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 155.29661051157103,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 697.4435683244172
+      },
+      {
+        "tS": 4.75,
+        "teleopS": 129.75,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 200.72612558969922,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 284.71045260454696,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 680.7261255896992
+      },
+      {
+        "tS": 5.0,
+        "teleopS": 130.0,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 184.0086828549812,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 414.1242946975229,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 664.0086828549812
+      },
+      {
+        "tS": 5.2,
+        "teleopS": 130.2,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 170.6347286672068,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 5.25,
+        "teleopS": 130.25,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 165.89487509311778,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -0.9126504759368785,
+          -0.19896521332577777,
+          4.731994181719074
+        ],
+        "quaternionXYZW": [
+          -0.0001540219302427914,
+          0.0007064963045104609,
+          0.0,
+          0.9999997385700742
+        ],
+        "floorClearanceMm": 4.226746851916272,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 5.5,
+        "teleopS": 130.5,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 142.19560722267238,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -5.27509810489305,
+          -1.1500142140144618,
+          28.411336139075274
+        ],
+        "quaternionXYZW": [
+          -0.0009241287628431833,
+          0.004238964898124241,
+          0.0,
+          0.9999905885370233
+        ],
+        "floorClearanceMm": 25.379889144426027,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 5.75,
+        "teleopS": 130.75,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 118.49633935222698,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -9.302718002823985,
+          -2.028068050960485,
+          52.120237647305544
+        ],
+        "quaternionXYZW": [
+          -0.0016942235157105113,
+          0.007771378082182021,
+          0.0,
+          0.9999683671443725
+        ],
+        "floorClearanceMm": 46.562749489318726,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 6.0,
+        "teleopS": 131.0,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 94.79707148178159,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -12.995329346709783,
+          -2.8330873032774626,
+          75.85498100347354
+        ],
+        "quaternionXYZW": [
+          -0.0024642961225645973,
+          0.011303689682806256,
+          0.0,
+          0.9999330746825885
+        ],
+        "floorClearanceMm": 67.77174225963908,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 6.25,
+        "teleopS": 131.25,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 71.09780361133619,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -16.352786336215832,
+          -3.5650401853087317,
+          99.61184743854096
+        ],
+        "quaternionXYZW": [
+          -0.003234336517414742,
+          0.01483585352744724,
+          0.0,
+          0.9998847116129961
+        ],
+        "floorClearanceMm": 89.0032807471368,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 6.5,
+        "teleopS": 131.5,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 47.39853574089079,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -19.37497819884453,
+          -4.223902547750484,
+          123.38711744135855
+        ],
+        "quaternionXYZW": [
+          -0.004004334634691308,
+          0.018367823445486667,
+          0.0,
+          0.9998232785677721
+        ],
+        "floorClearanceMm": 110.25377747935265,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 6.75,
+        "teleopS": 131.75,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 23.699267870445397,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -22.061829192340277,
+          -4.809657878176061,
+          147.1770710826748
+        ],
+        "quaternionXYZW": [
+          -0.0047742804093772835,
+          0.021899553268841125,
+          0.0,
+          0.9997487763499378
+        ],
+        "floorClearanceMm": 131.51964453672343,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 7.0,
+        "teleopS": 132.0,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 7.25,
+        "teleopS": 132.25,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 7.5,
+        "teleopS": 132.5,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 7.6,
+        "teleopS": 132.6,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 7.75,
+        "teleopS": 132.75,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 8.0,
+        "teleopS": 133.0,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 8.25,
+        "teleopS": 133.25,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 8.5,
+        "teleopS": 133.5,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 8.75,
+        "teleopS": 133.75,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 9.0,
+        "teleopS": 134.0,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 9.25,
+        "teleopS": 134.25,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 9.5,
+        "teleopS": 134.5,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 9.75,
+        "teleopS": 134.75,
+        "powered": true,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 10.0,
+        "teleopS": 135.0,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 0.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -24.413298604347933,
+          -5.322297300961516,
+          170.97798833913794
+        ],
+        "quaternionXYZW": [
+          -0.005544163777139859,
+          0.02543099683256561,
+          0.0,
+          0.9996612059333474
+        ],
+        "floorClearanceMm": 152.79729386968185,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 10.25,
+        "teleopS": 135.25,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 25.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -21.923059957318458,
+          -4.779405058310026,
+          145.87104339167342
+        ],
+        "quaternionXYZW": [
+          -0.004732023533422637,
+          0.021705721606979374,
+          0.0,
+          0.9997532043473526
+        ],
+        "floorClearanceMm": 130.35213107531112,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 10.5,
+        "teleopS": 135.5,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 50.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -19.05961650863953,
+          -4.155151138946355,
+          120.77652575874538
+        ],
+        "quaternionXYZW": [
+          -0.003919814459058699,
+          0.017980130656239806,
+          0.0,
+          0.9998306606401861
+        ],
+        "floorClearanceMm": 107.92029852664716,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 10.75,
+        "teleopS": 135.75,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 75.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -15.823019434062438,
+          -3.4495466995997717,
+          95.69880221614483
+        ],
+        "quaternionXYZW": [
+          -0.0031075483682065056,
+          0.014254278171716154,
+          0.0,
+          0.999893573685191
+        ],
+        "floorClearanceMm": 85.50600807745356,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 11.0,
+        "teleopS": 136.0,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 100.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -12.213363286457804,
+          -2.6626123535637234,
+          70.64223937909969
+        ],
+        "quaternionXYZW": [
+          -0.0022952370758538604,
+          0.010528218348581843,
+          0.0,
+          0.9999419425672523
+        ],
+        "floorClearanceMm": 63.11347137740969,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 11.25,
+        "teleopS": 136.25,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 125.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -8.23078599576948,
+          -1.7943781706857855,
+          45.61120327904655
+        ],
+        "quaternionXYZW": [
+          -0.0014828923976460565,
+          0.006802005385026195,
+          0.0,
+          0.9999757665828103
+        ],
+        "floorClearanceMm": 40.74689945789875,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 11.5,
+        "teleopS": 136.5,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 150.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 517.6553683719037,
+        "lockLoadN": 0.0,
+        "originMm": [
+          -3.8754688651837936,
+          -0.8448836765325396,
+          20.61005894039772
+        ],
+        "quaternionXYZW": [
+          -0.0006705261497140074,
+          0.003075693481466064,
+          0.0,
+          0.9999950452398705
+        ],
+        "floorClearanceMm": 18.410502317793142,
+        "chainLowMm": 650.6347286672068
+      },
+      {
+        "tS": 11.75,
+        "teleopS": 136.75,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 175.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 483.86272771988087,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 655.0
+      },
+      {
+        "tS": 12.0,
+        "teleopS": 137.0,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 200.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 290.331569655533,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 680.0
+      },
+      {
+        "tS": 12.25,
+        "teleopS": 137.25,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 225.0,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 96.80041159118501,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 705.0
+      },
+      {
+        "tS": 12.5,
+        "teleopS": 137.5,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 237.50449960607887,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 12.75,
+        "teleopS": 137.75,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 237.50449960607887,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 13.0,
+        "teleopS": 138.0,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 237.50449960607887,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 13.25,
+        "teleopS": 138.25,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 237.50449960607887,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 13.5,
+        "teleopS": 138.5,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 237.50449960607887,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 13.75,
+        "teleopS": 138.75,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 237.50449960607887,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 14.0,
+        "teleopS": 139.0,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 237.50449960607887,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 14.25,
+        "teleopS": 139.25,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 237.50449960607887,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 14.5,
+        "teleopS": 139.5,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 237.50449960607887,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 14.75,
+        "teleopS": 139.75,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 237.50449960607887,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      },
+      {
+        "tS": 15.0,
+        "teleopS": 140.0,
+        "powered": false,
+        "approachOffsetMm": 0.0,
+        "slideMm": 237.50449960607887,
+        "pinWithdrawnMm": 52.0,
+        "chainLoadN": 0.0,
+        "lockLoadN": 0.0,
+        "originMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternionXYZW": [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "floorClearanceMm": -4.440892098500626e-15,
+        "chainLowMm": 717.5044996060789
+      }
+    ]
+  }
+}

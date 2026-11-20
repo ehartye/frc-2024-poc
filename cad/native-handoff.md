@@ -24,3 +24,7 @@ The same private directory holds `physical-mass-r7.json` and `display-manifest.j
 2. Check the four wheel centers in robot coordinates (+X forward, +Y left, +Z up) and the signs of all eight joints. Move each independently and return to the recorded pose.
 3. Review the moving lift and cradle against the installed modules. Check the NOTE along the approach and the front crossmember against the bumper. Preserve the results with that revision. [Travel check](native/verify_swerve_travel.py) · [Bumper fit](drivetrain/maxswerve-bumper-fit.json) · [Crossmember](drivetrain/maxswerve-front-crossmember.json)
 4. Use the published underside preset to inspect all four stations, then scrub the D1 replay. Its 188 moving bodies were registered against the earlier scored geometry. Choose **R7 · nominal mass D1 replay** to inspect the same-archive run. Its BOM estimate still needs as-built weighing. Wiring, starting configuration and formal repeatability remain open. [Inspect the robot](https://ehartye.github.io/frc-2024-poc/?view=swerve#model)
+
+## R8 Stage candidate
+
+Open the [R8 Stage candidate](student/r8-stage-climber.f3d) to inspect the four new crossmember bores, independently driven saddle and passive cross-pin. The original R7 handoff above retains its own route and mass basis. [R8 reopen record](student/r8-reopened.json) · [Loaded geometry and study limits](../experiments/stage-climb/study.md)
