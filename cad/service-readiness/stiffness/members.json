@@ -1,0 +1,266 @@
+{
+  "archiveSha256": "4663d9fa55b5f3eb8e23549f3205a2d29248322543beb3e7a7d8076a23f93f6d",
+  "bodyCount": 923,
+  "members": [
+    {
+      "name": "R7 540 Tab-mounted rectangular rail",
+      "boundsMm": [
+        -240.0,
+        310.8,
+        69.85,
+        240.0,
+        348.9,
+        120.65
+      ],
+      "material": "Aluminum 6061",
+      "volumeCm3": 249.38178989073822
+    },
+    {
+      "name": "R7 544 Body1",
+      "boundsMm": [
+        -152.4,
+        -310.8,
+        69.85,
+        -127.0,
+        310.8,
+        120.65
+      ],
+      "material": "Aluminum 6061",
+      "volumeCm3": 275.7091259999996
+    },
+    {
+      "name": "R7 545 Body1",
+      "boundsMm": [
+        -310.8,
+        -92.7,
+        69.85,
+        -152.4,
+        -67.3,
+        120.65
+      ],
+      "material": "Aluminum 6061",
+      "volumeCm3": 70.25792399999995
+    },
+    {
+      "name": "R7 550 Tab-mounted rectangular rail",
+      "boundsMm": [
+        -240.0,
+        -348.9,
+        69.85,
+        240.0,
+        -310.8,
+        120.65
+      ],
+      "material": "Aluminum 6061",
+      "volumeCm3": 249.38178989073822
+    },
+    {
+      "name": "R7 555 Tab-mounted rectangular rail",
+      "boundsMm": [
+        -348.9,
+        -240.0,
+        69.85,
+        -310.8,
+        240.0,
+        120.65
+      ],
+      "material": "Aluminum 6061",
+      "volumeCm3": 251.0935235617602
+    },
+    {
+      "name": "R7 582 Body1",
+      "boundsMm": [
+        -310.8,
+        67.3,
+        69.85,
+        -152.4,
+        92.7,
+        120.65
+      ],
+      "material": "Aluminum 6061",
+      "volumeCm3": 70.25792399999992
+    },
+    {
+      "name": "R7 592 Box tube with welded screw landings",
+      "boundsMm": [
+        416.362,
+        -355.6,
+        74.6,
+        454.462,
+        355.6,
+        160.0
+      ],
+      "material": "Aluminum 6061",
+      "volumeCm3": 391.92786846684794
+    },
+    {
+      "name": "R7 595 Body1",
+      "boundsMm": [
+        -353.6625,
+        -355.25,
+        74.6,
+        -348.9,
+        355.25,
+        160.0
+      ],
+      "material": "Aluminum 6061",
+      "volumeCm3": 142.1112193584209
+    },
+    {
+      "name": "R7 596 Body1",
+      "boundsMm": [
+        -348.9,
+        348.9,
+        74.6,
+        356.362,
+        355.6,
+        160.0
+      ],
+      "material": "Aluminum 6061",
+      "volumeCm3": 189.18372192043176
+    },
+    {
+      "name": "R7 597 Body1",
+      "boundsMm": [
+        -348.9,
+        -355.6,
+        74.6,
+        356.362,
+        -348.9,
+        160.0
+      ],
+      "material": "Aluminum 6061",
+      "volumeCm3": 189.18372192043176
+    },
+    {
+      "name": "Crossmember with four rail mounting holes",
+      "boundsMm": [
+        13.0,
+        -348.4,
+        120.65,
+        63.0,
+        348.4,
+        159.0
+      ],
+      "material": "Aluminum 6061",
+      "volumeCm3": 341.0541077083052
+    },
+    {
+      "name": "Rail flush weld sleeve 23 -329",
+      "boundsMm": [
+        16.5,
+        -335.5,
+        69.85,
+        29.5,
+        -322.5,
+        120.65
+      ],
+      "material": "Aluminum 6061",
+      "volumeCm3": 3.860153433281973
+    },
+    {
+      "name": "Rail flush weld sleeve 53 -329",
+      "boundsMm": [
+        46.5,
+        -335.5,
+        69.85,
+        59.5,
+        -322.5,
+        120.65
+      ],
+      "material": "Aluminum 6061",
+      "volumeCm3": 3.860153433281973
+    },
+    {
+      "name": "Rail flush weld sleeve 23 329",
+      "boundsMm": [
+        16.5,
+        322.5,
+        69.85,
+        29.5,
+        335.5,
+        120.65
+      ],
+      "material": "Aluminum 6061",
+      "volumeCm3": 3.860153433281973
+    },
+    {
+      "name": "Rail flush weld sleeve 53 329",
+      "boundsMm": [
+        46.5,
+        322.5,
+        69.85,
+        59.5,
+        335.5,
+        120.65
+      ],
+      "material": "Aluminum 6061",
+      "volumeCm3": 3.860153433281973
+    },
+    {
+      "name": "Inner crossmember 711.2 mm",
+      "boundsMm": [
+        356.362,
+        -355.6,
+        74.6,
+        394.462,
+        355.6,
+        125.4
+      ],
+      "material": "Aluminum 6061",
+      "volumeCm3": 372.8057060000024
+    },
+    {
+      "name": "Nose spacer at -342.9 mm",
+      "boundsMm": [
+        394.462,
+        -355.6,
+        74.6,
+        416.362,
+        -330.2,
+        125.4
+      ],
+      "material": "Aluminum 6061",
+      "volumeCm3": 9.713690249999903
+    },
+    {
+      "name": "Nose spacer at -160.0 mm",
+      "boundsMm": [
+        394.462,
+        -172.7,
+        74.6,
+        416.362,
+        -147.3,
+        125.4
+      ],
+      "material": "Aluminum 6061",
+      "volumeCm3": 9.713690249999981
+    },
+    {
+      "name": "Nose spacer at 160.0 mm",
+      "boundsMm": [
+        394.462,
+        147.3,
+        74.6,
+        416.362,
+        172.7,
+        125.4
+      ],
+      "material": "Aluminum 6061",
+      "volumeCm3": 9.713690249999981
+    },
+    {
+      "name": "Nose spacer at 342.9 mm",
+      "boundsMm": [
+        394.462,
+        330.2,
+        74.6,
+        416.362,
+        355.6,
+        125.4
+      ],
+      "material": "Aluminum 6061",
+      "volumeCm3": 9.713690249999903
+    }
+  ]
+}

@@ -55,6 +55,14 @@ SHOWCASE_ASSETS.update({
     "cad/service-readiness/ground-rails/frame.png": "85b2dc40ab95b771133c61388c487dd2b6eef34b5d2191f58781e96dcdad2db7",
 })
 
+SHOWCASE_ASSETS["cad/service-readiness/stiffness/comparison.png"] = "f941a9809bdc640d2e658bd64ec66a0f9098914d5b0019ab6b3f24b329e92fa0"
+
+SHOWCASE_ASSETS.update({
+    "cad/student/r14-removable-frame-tie.f3d": "7c8c21498357e903c120bb7a8d0bdadbaae1c9d9e8e26ea8779950167ade1046",
+    "cad/service-readiness/stiffness/frame.png": "4f5bc70e4c5e3f78b20d18340bae4b79e93fe9dafb5c24a458cb66675b9f4d14",
+    "cad/service-readiness/stiffness/parked.png": "a37ae18d6ee3dcd764f9d69351a967fb988983cd1df69a8b4d3c8984851d1777",
+})
+
 def git(*args):return subprocess.check_output(['git','-C',str(ROOT),*args])
 def audit(revision='HEAD'):
  failures=[]
