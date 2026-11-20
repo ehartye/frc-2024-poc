@@ -1,5 +1,7 @@
 # Six-robot CRESCENDO match rehearsal
 
+The [current student match](../experiments/physical-match/study.md) assigns each robot a distinct wing NOTE in AUTO and tracks the full 107-NOTE stock. The table below records the earlier timing scenarios.
+
 Use a blue and a red alliance of three robots. These are plausible role assignments for a strategy discussion. A robot can attempt its assigned task and miss. The physics evidence for the 1780 design is linked separately. [Scoring mission](../experiments/speaker-cycles/mission.md)
 
 | Station | AUTO, 0–15 s | TELEOP, 15–150 s |
