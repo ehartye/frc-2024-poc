@@ -1,5 +1,11 @@
 # Portable 2024 blockout
 
+<!-- cad-still -->
+[![1780 MAXSwerve · R9 physical assembly](../../docs/media/r9-assembly.png)](https://ehartye.github.io/frc-2024-poc/?view=r9-assembly#model)
+
+**1780 MAXSwerve · R9 physical assembly.** Parked robot with its inboard lift drive, frame, removable bumper and electrical supports. Purchased mechanisms use dimensioned external models. This view records mechanical fit in CAD. [Native model record](../../docs/media/r9-assembly.json) · [Inspect the parked assembly](https://ehartye.github.io/frc-2024-poc/?view=r9-assembly#model)
+<!-- /cad-still -->
+
 This season-owned copy is independent of any hosted preview. From this directory, run an existing static server, for example `python -m http.server 8765 --bind 127.0.0.1 --directory dist`, then open the displayed local address. No remote browser service is required.
 
 Source baseline: reviewed blockout integration 64bac59. Shared design-artifact module corresponds to agent-frc 0.7.0. Download/load the versioned JSON to preserve an editable artifact; browser state alone is not a durable project file. See ARTIFACT.md for scope and checks. Third-party Three.js files retain their MIT license and provenance.

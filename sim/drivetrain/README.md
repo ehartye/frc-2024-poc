@@ -1,5 +1,11 @@
 # Stateful four-CIM drivetrain experiment
 
+<!-- cad-still -->
+[![1780 MAXSwerve · R9 physical assembly](../../docs/media/r9-assembly.png)](https://ehartye.github.io/frc-2024-poc/?view=r9-assembly#model)
+
+**1780 MAXSwerve · R9 physical assembly.** Parked robot with its inboard lift drive, frame, removable bumper and electrical supports. Purchased mechanisms use dimensioned external models. This view records mechanical fit in CAD. [Native model record](../../docs/media/r9-assembly.json) · [Inspect the parked assembly](https://ehartye.github.io/frc-2024-poc/?view=r9-assembly#model)
+<!-- /cad-still -->
+
 This is a force-driven planar plant, not a kinematic driving preview or a complete robot simulation. Source-sized six-wheel contact stations, rigid gearing, wheel/rotor momentum, longitudinal slip, lateral scrub and chassis momentum persist across steps. No field collision, acquisition success, scoring, or physical validation is claimed.
 
 ## Run

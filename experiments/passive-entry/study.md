@@ -1,6 +1,6 @@
 # Can the ground relay accept an off-center NOTE?
 
-R17 advances Blue 3's floor seat to X = 410 mm and adds two passive, tapered urethane rails to the existing cradle. A loose NOTE entering 6 mm off center stays supported through the modeled carry. Across five previously evaluated six-robot conditions, Blue 3 sets both named pieces down and resets five times. Blue 2 stores both and completes its last reset twice. This selects a candidate for a passive bench trial. [Inspect the carrier and replay](https://ehartye.github.io/frc-2024-poc/passive-entry.html) · [Public robot attachment audit](showcase-attachments.md)
+R17 advances Blue 3's floor seat to X = 410 mm and adds two passive, tapered urethane rails to the existing cradle. A loose NOTE entering 6 mm off center stays supported through the modeled carry. Across five previously evaluated six-robot conditions, Blue 3 sets both named pieces down and resets five times. Blue 2 stores both and completes its last reset twice. This selects a candidate for a passive bench trial. [Inspect the cassette and replay](https://ehartye.github.io/frc-2024-poc/passive-entry.html) · [Public robot attachment audit](showcase-attachments.md)
 
 | Compared on the original field and receiver clocks | R16 centered pinch | R17 passive pair |
 |---|---|---|
@@ -22,7 +22,7 @@ The design uses the manufacturer's published screw dimensions, polyurethane dens
 
 The largest two-sided contact load was 3.893 N. Assigning it all to one rail gives 0.109 mm idealized wire and 0.197 mm carrier deflection. A 20 N comparison gives 0.56 mm and 1.012 mm respectively, with 119.37 MPa wire stress and 159.23 N incremental tension on the outer screw. The free-piece simulation uses a combined contact stiffness and a rigid carrier. These beam estimates show why the 0.400 mm hard margin needs a loaded measurement. They exclude impacts, joint compliance and preload loss. [Load path calculation](public.py) · [Load cases](load-path.json)
 
-For Fusion handoff, insert the STEP in millimeters at the parked robot origin into a saved derivative of the R14 selection. Preserve all 16 roots. Register the mounting tongues to the two original weldment faces at Z 38.1, mark and model the six tapped holes in that derivative, then reopen it and inspect the complete assembly. The authored dimensions remain editable in the [shape generator](parts.py). Each imported STEP body is a solid. The integrated native edit and reopened assembly check are pending. The [visual audit](showcase-attachments.md) identifies which historical views were withdrawn and why.
+For Fusion handoff, insert the STEP in millimeters at the parked robot origin into a saved derivative of the R14 selection. Preserve all 16 roots. Register the mounting tongues to the two original weldment faces at Z 38.1, mark and model the six tapped holes in that derivative, then reopen it and inspect the complete assembly. The authored dimensions remain editable in the [shape generator](parts.py). Each imported STEP body is a solid. The integrated native edit and reopened assembly check are pending. The [visual audit](showcase-attachments.md) identifies what the student actually sees in each existing robot view.
 
 ## Loose-piece replay
 

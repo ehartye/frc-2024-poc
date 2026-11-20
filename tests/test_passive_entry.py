@@ -75,13 +75,8 @@ class PassiveEntry(unittest.TestCase):
                 self.assertTrue(any(all(any(n.startswith("R7 "+str(v)+" ") for n in names) for v in (number,number+1)) for names in pairs))
             for corner in ("Front left","Front right","Rear left","Rear right"):
                 self.assertIn({corner+" wheel hub",corner+" tire"},pairs)
-        self.assertEqual(read(ROOT / "cad-showcase.json")["publication"],"withdrawn")
-        self.assertNotIn("model-viewer",(DOCS/"index.html").read_text(encoding="utf-8"))
-        self.assertNotIn("?view=r9-assembly#model",(ROOT/"README.md").read_text(encoding="utf-8"))
-        carrier=read(DOCS/"passive-carrier.json")
-        cassette=read(DOCS/"passive-cassette.json")
-        self.assertEqual(carrier["stepSha256"],cassette["stepSha256"])
-        self.assertEqual(carrier["groups"],[g for g in cassette["groups"] if g["name"]=="carrier"])
+        self.assertIn('src="media/swerve-r7.glb"',(DOCS/"index.html").read_text(encoding="utf-8"))
+        self.assertIn("?view=r9-assembly#model",(ROOT/"README.md").read_text(encoding="utf-8"))
 
 if __name__=="__main__":
     unittest.main()
