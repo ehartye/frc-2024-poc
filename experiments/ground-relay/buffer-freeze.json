@@ -1,0 +1,72 @@
+{
+  "schema": "agent-frc/throughput-cohort@1",
+  "demand": {
+    "path": "experiments/ground-relay/demand.json",
+    "sha256": "54e7ee04364326aef85af97a489f22c49e4c8bbae8efc284a366a8ab9771f723",
+    "pointer": ""
+  },
+  "evidence": "timing-model",
+  "axes": [
+    {
+      "id": "delay",
+      "type": "number",
+      "unit": "s",
+      "nativePointer": "/initial/receiverAvailableS"
+    },
+    {
+      "id": "offset",
+      "type": "number",
+      "unit": "in",
+      "nativePointer": "/initial/secondOffsetIn"
+    }
+  ],
+  "revision": "two-pad-buffer",
+  "purpose": "refinement",
+  "baseline": {
+    "path": "experiments/ground-relay/serial-freeze.json",
+    "sha256": "e4be1b9280559110206257357e55494f38f832ceec2e23860c87bc91f70da13a",
+    "pointer": ""
+  },
+  "cases": [
+    {
+      "id": "clear",
+      "partition": "evaluation",
+      "parameters": {
+        "delay": 0,
+        "offset": 0
+      }
+    },
+    {
+      "id": "late",
+      "partition": "evaluation",
+      "parameters": {
+        "delay": 110,
+        "offset": 0
+      }
+    },
+    {
+      "id": "misaligned",
+      "partition": "evaluation",
+      "parameters": {
+        "delay": 20,
+        "offset": 3.5
+      }
+    },
+    {
+      "id": "late-offset",
+      "partition": "held-out",
+      "parameters": {
+        "delay": 112,
+        "offset": 3.0
+      }
+    },
+    {
+      "id": "slow-receiver",
+      "partition": "held-out",
+      "parameters": {
+        "delay": 120,
+        "offset": 0.8
+      }
+    }
+  ]
+}

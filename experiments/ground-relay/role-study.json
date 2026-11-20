@@ -1,0 +1,38 @@
+{
+  "schema": "agent-frc/alliance-study@1",
+  "side": "blue",
+  "roles": [
+    {
+      "id": "retrieve",
+      "basis": "Blue 3 offers a retained NOTE from the home lane after a center retrieval.",
+      "plans": {
+        "AUTO": "opening-support",
+        "TELEOP": "midfield"
+      },
+      "endgame": null
+    },
+    {
+      "id": "yield",
+      "basis": "Blue 3 clears the opening and stays at the home support point.",
+      "plans": {
+        "AUTO": "opening-support",
+        "TELEOP": "opening-support"
+      },
+      "endgame": null
+    }
+  ],
+  "contexts": [
+    {
+      "id": "separate-lanes",
+      "basis": "The Blue 2 AMP partner leaves the center retrieval to Blue 3.",
+      "match": "wing-opening",
+      "slot": 3
+    },
+    {
+      "id": "unseen-roster",
+      "match": "miss-and-stage",
+      "slot": 3,
+      "basis": "The third six-robot roster was outside the R12 two-match comparison. Preserve its blue and red partners for the role screen."
+    }
+  ]
+}

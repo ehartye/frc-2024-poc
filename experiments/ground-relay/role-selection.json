@@ -1,0 +1,21 @@
+{
+  "schema": "agent-frc/role-selection@1",
+  "profile": {
+    "path": "kickoff/crescendo-field.json",
+    "sha256": "8b63e86b5f9240670dc38bceb200a9352da8c3434968ea3d7ad4c02033ec706a",
+    "pointer": ""
+  },
+  "study": {
+    "path": "experiments/ground-relay/role-study.json",
+    "sha256": "04eaae80cfd66b91b135da4e9842c49564043e5b3c4484b02f65d3c0340b652d",
+    "pointer": ""
+  },
+  "role": "retrieve",
+  "context": "unseen-roster",
+  "phase": "TELEOP",
+  "station": "center-2",
+  "windowS": [
+    0,
+    135
+  ]
+}
