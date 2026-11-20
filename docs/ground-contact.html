@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Inside the ground relay · 2024 field lab</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#faf9f6;color:#182b33;font:16px/1.45 "Segoe UI",Arial,sans-serif}
+main,nav{max-width:1040px;margin:auto;padding:16px clamp(16px,4vw,42px)}nav{display:flex;justify-content:space-between;border-bottom:1px solid #becaca}a{color:#18516a}
+h1{font-size:clamp(2rem,6vw,3.7rem);line-height:1.02;letter-spacing:-.045em;margin:.2em 0}h2{margin:1.3em 0 .3em;font-size:1.35rem}p{max-width:76ch}
+label{display:block;font-size:.9rem;font-weight:600;margin:12px 0 6px}select{font:inherit;max-width:100%;padding:6px 10px;border:1px solid #829a9a;border-radius:4px;background:white}
+figure{margin:10px 0}canvas{width:100%;display:block;border-radius:5px;background:#16333c}figcaption{padding:.5em 0;color:#36555e}dl{display:flex;gap:clamp(12px,5vw,50px);border-block:1px solid #bbcaca;padding:12px 0}dt{font-size:.85rem}dd{margin:0;font-size:1.65rem;font-weight:650}
+table{width:100%;border-collapse:collapse;font-size:.9rem}th,td{text-align:left;vertical-align:top;padding:.4em .6em;border-bottom:1px solid #d4dfdb}th:first-child,td:first-child{padding-left:0;white-space:nowrap}
+</style></head><body>
+<nav><a href="ground-relay.html">← Two-pad field replay</a><a href="https://github.com/ehartye/frc-2024-poc/blob/main/experiments/registered-custody/study.md">Study and receipts</a></nav>
+<main><h1>Inside the ground relay</h1>
+<p>The R14 treads sit behind the bumper. Blue 3 drives over a floor NOTE, seats it between the two treads and lifts it 8 mm. At the pad it lowers the NOTE before backing away.</p>
+<label for="pose">Inspect a registered pose</label><select id="pose"><option value="seat">Centered seat</option><option value="external">Original external dock</option><option value="offset">3 mm lateral error</option><option value="raised">Raised withdrawal</option></select>
+<figure><canvas width="1000" height="465" aria-label="Plan section through the left and right pinch treads, backing belts, front pulleys and cradle side plates"></canvas><figcaption id="caption"></figcaption></figure>
+<h2>Who has each NOTE at the horn?</h2><label for="run">Match condition or failure control</label><select id="run"></select>
+<dl><div><dt>Blue 3 deposits</dt><dd id="deposits">–</dd></div><div><dt>Blue 2 pickups</dt><dd id="received">–</dd></div><div><dt>Downstream stores</dt><dd id="stored">–</dd></div></dl><p id="state" aria-live="polite"></p>
+<table><thead><tr><th>Match time</th><th>Actor</th><th>Observed event</th><th>NOTE</th></tr></thead><tbody></tbody></table>
+</main><script type="module" src="ground-contact.js"></script></body></html>

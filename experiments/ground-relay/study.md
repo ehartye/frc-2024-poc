@@ -2,6 +2,8 @@
 
 Blue 3 can deposit two distinct NOTES within the modeled TELEOP window in all five frozen two-pad runs. Blue 2 collects both in four runs and stores both and finishes its reset in two. With a late receiver, adding a second floor pad lets Blue 3 finish its own job while Blue 2 still has work at the horn. Every transfer earns zero match points. [Replay the field lab](https://ehartye.github.io/frc-2024-poc/ground-relay.html)
 
+The [R16 contact study](../registered-custody/study.md) replays these same five conditions against the surveyed R14 tread locations.
+
 ## Who owns each transfer?
 
 The held-out six-robot field replay extends the [alliance role study](../alliance-service/study.md) to the archived `miss-and-stage` match. It records one Blue 3 pickup of `center-2/1` at 3.35 s into TELEOP. The new two-piece trial assigns Blue 3 to retrieval and Blue 2 to receipt. It preserves the six starting poses, four other robot tracks, field, clock and initial availability of the two tracked center NOTES. The relay adds its own second source and delivery criterion. [Role witness](role-demand.json) · [Ground deposit criterion](demand.json) · [Field tracks and opening stock](peer-tracks.json)

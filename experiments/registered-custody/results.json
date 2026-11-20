@@ -1,0 +1,1425 @@
+{
+  "clear": {
+    "case": "clear",
+    "control": "revised",
+    "deposits": [
+      "center-2/1",
+      "center-1/1"
+    ],
+    "received": [
+      "center-2/1",
+      "center-1/1"
+    ],
+    "stored": [
+      "center-2/1",
+      "center-1/1"
+    ],
+    "carrierReset": true,
+    "receiverReady": true,
+    "points": {
+      "B3": 0,
+      "B2": 0
+    },
+    "stop": "horn",
+    "minimumPlanGapIn": 0.239,
+    "minimumCarryMarginN": 0.6322,
+    "peakLoadedAccelerationMps2": 1.024,
+    "custody": {
+      "center-2/1": "stored",
+      "center-1/1": "stored"
+    },
+    "history": [
+      {
+        "timeS": 20.3,
+        "actor": "R3",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 22.9,
+        "actor": "B1",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 32.1,
+        "actor": "R1",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 58.7,
+        "actor": "B3",
+        "action": "bilateral floor seat",
+        "piece": "center-2/1",
+        "treads": [
+          534,
+          535
+        ],
+        "bodyXmm": 241.5
+      },
+      {
+        "timeS": 59.5,
+        "actor": "B3",
+        "action": "seated lift complete",
+        "piece": "center-2/1",
+        "riseMm": 8
+      },
+      {
+        "timeS": 78.7,
+        "actor": "B3",
+        "action": "floor support at pad",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 80.8,
+        "actor": "B3",
+        "action": "clear floor deposit",
+        "piece": "center-2/1",
+        "pad": 0,
+        "dragN": 0.3241
+      },
+      {
+        "timeS": 89.75,
+        "actor": "B2",
+        "action": "fixture receiver pickup",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 94.5,
+        "actor": "B2",
+        "action": "downstream store",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 95.75,
+        "actor": "B2",
+        "action": "reset",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 101.0,
+        "actor": "B3",
+        "action": "bilateral floor seat",
+        "piece": "center-1/1",
+        "treads": [
+          534,
+          535
+        ],
+        "bodyXmm": 241.5
+      },
+      {
+        "timeS": 101.8,
+        "actor": "B3",
+        "action": "seated lift complete",
+        "piece": "center-1/1",
+        "riseMm": 8
+      },
+      {
+        "timeS": 116.6,
+        "actor": "B3",
+        "action": "floor support at pad",
+        "piece": "center-1/1"
+      },
+      {
+        "timeS": 118.7,
+        "actor": "B3",
+        "action": "clear floor deposit",
+        "piece": "center-1/1",
+        "pad": 1,
+        "dragN": 0.3241
+      },
+      {
+        "timeS": 124.05,
+        "actor": "B3",
+        "action": "reset",
+        "piece": null
+      },
+      {
+        "timeS": 128.85,
+        "actor": "B2",
+        "action": "fixture receiver pickup",
+        "piece": "center-1/1"
+      },
+      {
+        "timeS": 134.9,
+        "actor": "B2",
+        "action": "downstream store",
+        "piece": "center-1/1"
+      },
+      {
+        "timeS": 138.25,
+        "actor": "B2",
+        "action": "reset",
+        "piece": "center-1/1"
+      }
+    ]
+  },
+  "late": {
+    "case": "late",
+    "control": "revised",
+    "deposits": [
+      "center-2/1",
+      "center-1/1"
+    ],
+    "received": [
+      "center-2/1",
+      "center-1/1"
+    ],
+    "stored": [
+      "center-2/1"
+    ],
+    "carrierReset": true,
+    "receiverReady": false,
+    "points": {
+      "B3": 0,
+      "B2": 0
+    },
+    "stop": "horn",
+    "minimumPlanGapIn": 0.239,
+    "minimumCarryMarginN": 0.6322,
+    "peakLoadedAccelerationMps2": 1.024,
+    "custody": {
+      "center-2/1": "stored",
+      "center-1/1": "B2"
+    },
+    "history": [
+      {
+        "timeS": 20.3,
+        "actor": "R3",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 22.9,
+        "actor": "B1",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 32.1,
+        "actor": "R1",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 58.7,
+        "actor": "B3",
+        "action": "bilateral floor seat",
+        "piece": "center-2/1",
+        "treads": [
+          534,
+          535
+        ],
+        "bodyXmm": 241.5
+      },
+      {
+        "timeS": 59.5,
+        "actor": "B3",
+        "action": "seated lift complete",
+        "piece": "center-2/1",
+        "riseMm": 8
+      },
+      {
+        "timeS": 78.7,
+        "actor": "B3",
+        "action": "floor support at pad",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 80.8,
+        "actor": "B3",
+        "action": "clear floor deposit",
+        "piece": "center-2/1",
+        "pad": 0,
+        "dragN": 0.3241
+      },
+      {
+        "timeS": 101.0,
+        "actor": "B3",
+        "action": "bilateral floor seat",
+        "piece": "center-1/1",
+        "treads": [
+          534,
+          535
+        ],
+        "bodyXmm": 241.5
+      },
+      {
+        "timeS": 101.8,
+        "actor": "B3",
+        "action": "seated lift complete",
+        "piece": "center-1/1",
+        "riseMm": 8
+      },
+      {
+        "timeS": 116.6,
+        "actor": "B3",
+        "action": "floor support at pad",
+        "piece": "center-1/1"
+      },
+      {
+        "timeS": 118.7,
+        "actor": "B3",
+        "action": "clear floor deposit",
+        "piece": "center-1/1",
+        "pad": 1,
+        "dragN": 0.3241
+      },
+      {
+        "timeS": 124.05,
+        "actor": "B3",
+        "action": "reset",
+        "piece": null
+      },
+      {
+        "timeS": 132.0,
+        "actor": "B2",
+        "action": "fixture receiver pickup",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 136.75,
+        "actor": "B2",
+        "action": "downstream store",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 138.0,
+        "actor": "B2",
+        "action": "reset",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 146.3,
+        "actor": "B2",
+        "action": "fixture receiver pickup",
+        "piece": "center-1/1"
+      }
+    ]
+  },
+  "misaligned": {
+    "case": "misaligned",
+    "control": "revised",
+    "deposits": [
+      "center-2/1",
+      "center-1/1"
+    ],
+    "received": [
+      "center-2/1",
+      "center-1/1"
+    ],
+    "stored": [
+      "center-2/1",
+      "center-1/1"
+    ],
+    "carrierReset": true,
+    "receiverReady": true,
+    "points": {
+      "B3": 0,
+      "B2": 0
+    },
+    "stop": "horn",
+    "minimumPlanGapIn": 0.239,
+    "minimumCarryMarginN": 0.6322,
+    "peakLoadedAccelerationMps2": 1.024,
+    "custody": {
+      "center-2/1": "stored",
+      "center-1/1": "stored"
+    },
+    "history": [
+      {
+        "timeS": 20.3,
+        "actor": "R3",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 22.9,
+        "actor": "B1",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 32.1,
+        "actor": "R1",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 58.7,
+        "actor": "B3",
+        "action": "bilateral floor seat",
+        "piece": "center-2/1",
+        "treads": [
+          534,
+          535
+        ],
+        "bodyXmm": 241.5
+      },
+      {
+        "timeS": 59.5,
+        "actor": "B3",
+        "action": "seated lift complete",
+        "piece": "center-2/1",
+        "riseMm": 8
+      },
+      {
+        "timeS": 78.7,
+        "actor": "B3",
+        "action": "floor support at pad",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 80.8,
+        "actor": "B3",
+        "action": "clear floor deposit",
+        "piece": "center-2/1",
+        "pad": 0,
+        "dragN": 0.3241
+      },
+      {
+        "timeS": 89.75,
+        "actor": "B2",
+        "action": "fixture receiver pickup",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 94.5,
+        "actor": "B3",
+        "action": "lateral correction",
+        "piece": "center-1/1",
+        "initialOffsetIn": 3.5
+      },
+      {
+        "timeS": 94.5,
+        "actor": "B2",
+        "action": "downstream store",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 95.75,
+        "actor": "B2",
+        "action": "reset",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 102.1,
+        "actor": "B3",
+        "action": "bilateral floor seat",
+        "piece": "center-1/1",
+        "treads": [
+          534,
+          535
+        ],
+        "bodyXmm": 241.5
+      },
+      {
+        "timeS": 102.9,
+        "actor": "B3",
+        "action": "seated lift complete",
+        "piece": "center-1/1",
+        "riseMm": 8
+      },
+      {
+        "timeS": 117.85,
+        "actor": "B3",
+        "action": "floor support at pad",
+        "piece": "center-1/1"
+      },
+      {
+        "timeS": 119.95,
+        "actor": "B3",
+        "action": "clear floor deposit",
+        "piece": "center-1/1",
+        "pad": 1,
+        "dragN": 0.3241
+      },
+      {
+        "timeS": 125.3,
+        "actor": "B3",
+        "action": "reset",
+        "piece": null
+      },
+      {
+        "timeS": 130.1,
+        "actor": "B2",
+        "action": "fixture receiver pickup",
+        "piece": "center-1/1"
+      },
+      {
+        "timeS": 136.15,
+        "actor": "B2",
+        "action": "downstream store",
+        "piece": "center-1/1"
+      },
+      {
+        "timeS": 139.5,
+        "actor": "B2",
+        "action": "reset",
+        "piece": "center-1/1"
+      }
+    ]
+  },
+  "late-offset": {
+    "case": "late-offset",
+    "control": "revised",
+    "deposits": [
+      "center-2/1",
+      "center-1/1"
+    ],
+    "received": [
+      "center-2/1",
+      "center-1/1"
+    ],
+    "stored": [
+      "center-2/1"
+    ],
+    "carrierReset": true,
+    "receiverReady": false,
+    "points": {
+      "B3": 0,
+      "B2": 0
+    },
+    "stop": "horn",
+    "minimumPlanGapIn": 0.239,
+    "minimumCarryMarginN": 0.6322,
+    "peakLoadedAccelerationMps2": 1.024,
+    "custody": {
+      "center-2/1": "stored",
+      "center-1/1": "B2"
+    },
+    "history": [
+      {
+        "timeS": 20.3,
+        "actor": "R3",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 22.9,
+        "actor": "B1",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 32.1,
+        "actor": "R1",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 58.7,
+        "actor": "B3",
+        "action": "bilateral floor seat",
+        "piece": "center-2/1",
+        "treads": [
+          534,
+          535
+        ],
+        "bodyXmm": 241.5
+      },
+      {
+        "timeS": 59.5,
+        "actor": "B3",
+        "action": "seated lift complete",
+        "piece": "center-2/1",
+        "riseMm": 8
+      },
+      {
+        "timeS": 78.7,
+        "actor": "B3",
+        "action": "floor support at pad",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 80.8,
+        "actor": "B3",
+        "action": "clear floor deposit",
+        "piece": "center-2/1",
+        "pad": 0,
+        "dragN": 0.3241
+      },
+      {
+        "timeS": 94.5,
+        "actor": "B3",
+        "action": "lateral correction",
+        "piece": "center-1/1",
+        "initialOffsetIn": 3.0
+      },
+      {
+        "timeS": 102.05,
+        "actor": "B3",
+        "action": "bilateral floor seat",
+        "piece": "center-1/1",
+        "treads": [
+          534,
+          535
+        ],
+        "bodyXmm": 241.5
+      },
+      {
+        "timeS": 102.85,
+        "actor": "B3",
+        "action": "seated lift complete",
+        "piece": "center-1/1",
+        "riseMm": 8
+      },
+      {
+        "timeS": 117.7,
+        "actor": "B3",
+        "action": "floor support at pad",
+        "piece": "center-1/1"
+      },
+      {
+        "timeS": 119.8,
+        "actor": "B3",
+        "action": "clear floor deposit",
+        "piece": "center-1/1",
+        "pad": 1,
+        "dragN": 0.3241
+      },
+      {
+        "timeS": 125.15,
+        "actor": "B3",
+        "action": "reset",
+        "piece": null
+      },
+      {
+        "timeS": 134.0,
+        "actor": "B2",
+        "action": "fixture receiver pickup",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 138.75,
+        "actor": "B2",
+        "action": "downstream store",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 140.0,
+        "actor": "B2",
+        "action": "reset",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 148.3,
+        "actor": "B2",
+        "action": "fixture receiver pickup",
+        "piece": "center-1/1"
+      }
+    ]
+  },
+  "slow-receiver": {
+    "case": "slow-receiver",
+    "control": "revised",
+    "deposits": [
+      "center-2/1",
+      "center-1/1"
+    ],
+    "received": [
+      "center-2/1"
+    ],
+    "stored": [
+      "center-2/1"
+    ],
+    "carrierReset": true,
+    "receiverReady": false,
+    "points": {
+      "B3": 0,
+      "B2": 0
+    },
+    "stop": "horn",
+    "minimumPlanGapIn": 0.239,
+    "minimumCarryMarginN": 0.6322,
+    "peakLoadedAccelerationMps2": 1.024,
+    "custody": {
+      "center-2/1": "stored",
+      "center-1/1": "pad"
+    },
+    "history": [
+      {
+        "timeS": 20.3,
+        "actor": "R3",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 22.9,
+        "actor": "B1",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 32.1,
+        "actor": "R1",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 58.7,
+        "actor": "B3",
+        "action": "bilateral floor seat",
+        "piece": "center-2/1",
+        "treads": [
+          534,
+          535
+        ],
+        "bodyXmm": 241.5
+      },
+      {
+        "timeS": 59.5,
+        "actor": "B3",
+        "action": "seated lift complete",
+        "piece": "center-2/1",
+        "riseMm": 8
+      },
+      {
+        "timeS": 78.7,
+        "actor": "B3",
+        "action": "floor support at pad",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 80.8,
+        "actor": "B3",
+        "action": "clear floor deposit",
+        "piece": "center-2/1",
+        "pad": 0,
+        "dragN": 0.3241
+      },
+      {
+        "timeS": 94.5,
+        "actor": "B3",
+        "action": "lateral correction",
+        "piece": "center-1/1",
+        "initialOffsetIn": 0.8
+      },
+      {
+        "timeS": 101.7,
+        "actor": "B3",
+        "action": "bilateral floor seat",
+        "piece": "center-1/1",
+        "treads": [
+          534,
+          535
+        ],
+        "bodyXmm": 241.5
+      },
+      {
+        "timeS": 102.5,
+        "actor": "B3",
+        "action": "seated lift complete",
+        "piece": "center-1/1",
+        "riseMm": 8
+      },
+      {
+        "timeS": 117.15,
+        "actor": "B3",
+        "action": "floor support at pad",
+        "piece": "center-1/1"
+      },
+      {
+        "timeS": 119.25,
+        "actor": "B3",
+        "action": "clear floor deposit",
+        "piece": "center-1/1",
+        "pad": 1,
+        "dragN": 0.3241
+      },
+      {
+        "timeS": 124.6,
+        "actor": "B3",
+        "action": "reset",
+        "piece": null
+      },
+      {
+        "timeS": 142.0,
+        "actor": "B2",
+        "action": "fixture receiver pickup",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 146.75,
+        "actor": "B2",
+        "action": "downstream store",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 148.0,
+        "actor": "B2",
+        "action": "reset",
+        "piece": "center-2/1"
+      }
+    ]
+  },
+  "diagnostic/directDispatch": {
+    "case": "slow-receiver",
+    "control": "directDispatch",
+    "deposits": [
+      "center-2/1",
+      "center-1/1"
+    ],
+    "received": [
+      "center-2/1",
+      "center-1/1"
+    ],
+    "stored": [
+      "center-2/1"
+    ],
+    "carrierReset": true,
+    "receiverReady": false,
+    "points": {
+      "B3": 0,
+      "B2": 0
+    },
+    "stop": "horn",
+    "minimumPlanGapIn": 0.239,
+    "minimumCarryMarginN": 0.6322,
+    "peakLoadedAccelerationMps2": 1.024,
+    "custody": {
+      "center-2/1": "stored",
+      "center-1/1": "B2"
+    },
+    "history": [
+      {
+        "timeS": 20.3,
+        "actor": "R3",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 22.9,
+        "actor": "B1",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 32.1,
+        "actor": "R1",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 58.7,
+        "actor": "B3",
+        "action": "bilateral floor seat",
+        "piece": "center-2/1",
+        "treads": [
+          534,
+          535
+        ],
+        "bodyXmm": 241.5
+      },
+      {
+        "timeS": 59.5,
+        "actor": "B3",
+        "action": "seated lift complete",
+        "piece": "center-2/1",
+        "riseMm": 8
+      },
+      {
+        "timeS": 78.7,
+        "actor": "B3",
+        "action": "floor support at pad",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 80.8,
+        "actor": "B3",
+        "action": "clear floor deposit",
+        "piece": "center-2/1",
+        "pad": 0,
+        "dragN": 0.3241
+      },
+      {
+        "timeS": 94.5,
+        "actor": "B3",
+        "action": "lateral correction",
+        "piece": "center-1/1",
+        "initialOffsetIn": 0.8
+      },
+      {
+        "timeS": 101.7,
+        "actor": "B3",
+        "action": "bilateral floor seat",
+        "piece": "center-1/1",
+        "treads": [
+          534,
+          535
+        ],
+        "bodyXmm": 241.5
+      },
+      {
+        "timeS": 102.5,
+        "actor": "B3",
+        "action": "seated lift complete",
+        "piece": "center-1/1",
+        "riseMm": 8
+      },
+      {
+        "timeS": 117.15,
+        "actor": "B3",
+        "action": "floor support at pad",
+        "piece": "center-1/1"
+      },
+      {
+        "timeS": 119.25,
+        "actor": "B3",
+        "action": "clear floor deposit",
+        "piece": "center-1/1",
+        "pad": 1,
+        "dragN": 0.3241
+      },
+      {
+        "timeS": 124.6,
+        "actor": "B3",
+        "action": "reset",
+        "piece": null
+      },
+      {
+        "timeS": 137.45,
+        "actor": "B2",
+        "action": "fixture receiver pickup",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 140.4,
+        "actor": "B2",
+        "action": "downstream store",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 140.4,
+        "actor": "B2",
+        "action": "reset",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 148.2,
+        "actor": "B2",
+        "action": "fixture receiver pickup",
+        "piece": "center-1/1"
+      }
+    ]
+  },
+  "control/externalDock": {
+    "case": "clear",
+    "control": "externalDock",
+    "deposits": [],
+    "received": [],
+    "stored": [],
+    "carrierReset": false,
+    "receiverReady": true,
+    "points": {
+      "B3": 0,
+      "B2": 0
+    },
+    "stop": "no registered tread contact at external dock",
+    "minimumPlanGapIn": 0.239,
+    "minimumCarryMarginN": null,
+    "peakLoadedAccelerationMps2": 0,
+    "custody": {
+      "center-2/1": "source",
+      "center-1/1": "source"
+    },
+    "history": [
+      {
+        "timeS": 20.3,
+        "actor": "R3",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 22.9,
+        "actor": "B1",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 32.1,
+        "actor": "R1",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 52.45,
+        "actor": "system",
+        "action": "stopped",
+        "piece": "center-2/1",
+        "reason": "no registered tread contact at external dock"
+      }
+    ]
+  },
+  "control/offset3mm": {
+    "case": "clear",
+    "control": "offset3mm",
+    "deposits": [],
+    "received": [],
+    "stored": [],
+    "carrierReset": false,
+    "receiverReady": true,
+    "points": {
+      "B3": 0,
+      "B2": 0
+    },
+    "stop": "offset entry contacts one tread and a pulley",
+    "minimumPlanGapIn": 0.239,
+    "minimumCarryMarginN": null,
+    "peakLoadedAccelerationMps2": 0,
+    "custody": {
+      "center-2/1": "source",
+      "center-1/1": "source"
+    },
+    "history": [
+      {
+        "timeS": 20.3,
+        "actor": "R3",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 22.9,
+        "actor": "B1",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 32.1,
+        "actor": "R1",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 52.6,
+        "actor": "system",
+        "action": "stopped",
+        "piece": "center-2/1",
+        "reason": "offset entry contacts one tread and a pulley"
+      }
+    ]
+  },
+  "control/raisedWithdrawal": {
+    "case": "clear",
+    "control": "raisedWithdrawal",
+    "deposits": [],
+    "received": [],
+    "stored": [],
+    "carrierReset": false,
+    "receiverReady": true,
+    "points": {
+      "B3": 0,
+      "B2": 0
+    },
+    "stop": "raised withdrawal intersects front cover",
+    "minimumPlanGapIn": 0.239,
+    "minimumCarryMarginN": 0.6322,
+    "peakLoadedAccelerationMps2": 1.024,
+    "custody": {
+      "center-2/1": "B3",
+      "center-1/1": "source"
+    },
+    "history": [
+      {
+        "timeS": 20.3,
+        "actor": "R3",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 22.9,
+        "actor": "B1",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 32.1,
+        "actor": "R1",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 58.7,
+        "actor": "B3",
+        "action": "bilateral floor seat",
+        "piece": "center-2/1",
+        "treads": [
+          534,
+          535
+        ],
+        "bodyXmm": 241.5
+      },
+      {
+        "timeS": 59.5,
+        "actor": "B3",
+        "action": "seated lift complete",
+        "piece": "center-2/1",
+        "riseMm": 8
+      },
+      {
+        "timeS": 78.7,
+        "actor": "system",
+        "action": "stopped",
+        "piece": "center-2/1",
+        "reason": "raised withdrawal intersects front cover"
+      }
+    ]
+  },
+  "control/braked": {
+    "case": "clear",
+    "control": "braked",
+    "deposits": [],
+    "received": [],
+    "stored": [],
+    "carrierReset": false,
+    "receiverReady": true,
+    "points": {
+      "B3": 0,
+      "B2": 0
+    },
+    "stop": "withdrawal drag exceeds floor restraint",
+    "minimumPlanGapIn": 0.239,
+    "minimumCarryMarginN": 0.6322,
+    "peakLoadedAccelerationMps2": 1.024,
+    "custody": {
+      "center-2/1": "B3",
+      "center-1/1": "source"
+    },
+    "history": [
+      {
+        "timeS": 20.3,
+        "actor": "R3",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 22.9,
+        "actor": "B1",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 32.1,
+        "actor": "R1",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 58.7,
+        "actor": "B3",
+        "action": "bilateral floor seat",
+        "piece": "center-2/1",
+        "treads": [
+          534,
+          535
+        ],
+        "bodyXmm": 241.5
+      },
+      {
+        "timeS": 59.5,
+        "actor": "B3",
+        "action": "seated lift complete",
+        "piece": "center-2/1",
+        "riseMm": 8
+      },
+      {
+        "timeS": 78.7,
+        "actor": "B3",
+        "action": "floor support at pad",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 78.7,
+        "actor": "system",
+        "action": "stopped",
+        "piece": "center-2/1",
+        "reason": "withdrawal drag exceeds floor restraint"
+      }
+    ]
+  },
+  "control/empty": {
+    "case": "clear",
+    "control": "empty",
+    "deposits": [],
+    "received": [],
+    "stored": [],
+    "carrierReset": true,
+    "receiverReady": true,
+    "points": {
+      "B3": 0,
+      "B2": 0
+    },
+    "stop": "horn",
+    "minimumPlanGapIn": 0.239,
+    "minimumCarryMarginN": null,
+    "peakLoadedAccelerationMps2": 0,
+    "custody": {},
+    "history": [
+      {
+        "timeS": 20.05,
+        "actor": "B3",
+        "action": "reset",
+        "piece": null
+      }
+    ]
+  },
+  "control/noGrip": {
+    "case": "clear",
+    "control": "noGrip",
+    "deposits": [],
+    "received": [],
+    "stored": [],
+    "carrierReset": false,
+    "receiverReady": true,
+    "points": {
+      "B3": 0,
+      "B2": 0
+    },
+    "stop": "zero holding traction",
+    "minimumPlanGapIn": 0.239,
+    "minimumCarryMarginN": null,
+    "peakLoadedAccelerationMps2": 0,
+    "custody": {
+      "center-2/1": "source",
+      "center-1/1": "source"
+    },
+    "history": [
+      {
+        "timeS": 20.3,
+        "actor": "R3",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 22.9,
+        "actor": "B1",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 32.1,
+        "actor": "R1",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 58.7,
+        "actor": "system",
+        "action": "stopped",
+        "piece": "center-2/1",
+        "reason": "zero holding traction"
+      }
+    ]
+  },
+  "control/sweptAway": {
+    "case": "clear",
+    "control": "sweptAway",
+    "deposits": [
+      "center-1/1"
+    ],
+    "received": [
+      "center-1/1"
+    ],
+    "stored": [
+      "center-1/1"
+    ],
+    "carrierReset": true,
+    "receiverReady": true,
+    "points": {
+      "B3": 0,
+      "B2": 0
+    },
+    "stop": "horn",
+    "minimumPlanGapIn": 0.239,
+    "minimumCarryMarginN": 0.6345,
+    "peakLoadedAccelerationMps2": 1.0144,
+    "custody": {
+      "center-2/1": "unlocated",
+      "center-1/1": "stored"
+    },
+    "history": [
+      {
+        "timeS": 20.3,
+        "actor": "R3",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 22.9,
+        "actor": "B1",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 32.1,
+        "actor": "R1",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 52.4,
+        "actor": "B3",
+        "action": "source missing after traffic",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 62.5,
+        "actor": "B3",
+        "action": "bilateral floor seat",
+        "piece": "center-1/1",
+        "treads": [
+          534,
+          535
+        ],
+        "bodyXmm": 241.5
+      },
+      {
+        "timeS": 63.3,
+        "actor": "B3",
+        "action": "seated lift complete",
+        "piece": "center-1/1",
+        "riseMm": 8
+      },
+      {
+        "timeS": 78.1,
+        "actor": "B3",
+        "action": "floor support at pad",
+        "piece": "center-1/1"
+      },
+      {
+        "timeS": 80.2,
+        "actor": "B3",
+        "action": "clear floor deposit",
+        "piece": "center-1/1",
+        "pad": 1,
+        "dragN": 0.3241
+      },
+      {
+        "timeS": 85.55,
+        "actor": "B3",
+        "action": "reset",
+        "piece": null
+      },
+      {
+        "timeS": 90.35,
+        "actor": "B2",
+        "action": "fixture receiver pickup",
+        "piece": "center-1/1"
+      },
+      {
+        "timeS": 96.35,
+        "actor": "B2",
+        "action": "downstream store",
+        "piece": "center-1/1"
+      },
+      {
+        "timeS": 97.6,
+        "actor": "B2",
+        "action": "reset",
+        "piece": "center-1/1"
+      }
+    ]
+  },
+  "control/unreserved": {
+    "case": "clear",
+    "control": "unreserved",
+    "deposits": [],
+    "received": [],
+    "stored": [],
+    "carrierReset": false,
+    "receiverReady": true,
+    "points": {
+      "B3": 0,
+      "B2": 0
+    },
+    "stop": "B3 swept envelope meets B1",
+    "minimumPlanGapIn": -0.672,
+    "minimumCarryMarginN": null,
+    "peakLoadedAccelerationMps2": 0,
+    "custody": {
+      "center-2/1": "source",
+      "center-1/1": "source"
+    },
+    "history": [
+      {
+        "timeS": 20.3,
+        "actor": "R3",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 22.9,
+        "actor": "B1",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 30.25,
+        "actor": "system",
+        "action": "stopped",
+        "piece": "center-2/1",
+        "reason": "B3 swept envelope meets B1"
+      }
+    ]
+  },
+  "control/rectangularReservation": {
+    "case": "clear",
+    "control": "rectangularReservation",
+    "deposits": [],
+    "received": [],
+    "stored": [],
+    "carrierReset": false,
+    "receiverReady": true,
+    "points": {
+      "B3": 0,
+      "B2": 0
+    },
+    "stop": "horn",
+    "minimumPlanGapIn": 0.239,
+    "minimumCarryMarginN": 0.6322,
+    "peakLoadedAccelerationMps2": 1.024,
+    "custody": {
+      "center-2/1": "B3",
+      "center-1/1": "source"
+    },
+    "history": [
+      {
+        "timeS": 20.3,
+        "actor": "R3",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 22.9,
+        "actor": "B1",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 32.1,
+        "actor": "R1",
+        "action": "crossed floor projection",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 144.0,
+        "actor": "B3",
+        "action": "bilateral floor seat",
+        "piece": "center-2/1",
+        "treads": [
+          534,
+          535
+        ],
+        "bodyXmm": 241.5
+      },
+      {
+        "timeS": 144.8,
+        "actor": "B3",
+        "action": "seated lift complete",
+        "piece": "center-2/1",
+        "riseMm": 8
+      }
+    ]
+  }
+}

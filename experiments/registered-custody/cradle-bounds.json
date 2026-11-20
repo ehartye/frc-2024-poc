@@ -1,0 +1,274 @@
+{
+  "R7 504 intake candidate side pinch belt -1": [
+    145.82239,
+    -204.17761,
+    19.05,
+    337.17761,
+    -177.92239,
+    31.75
+  ],
+  "R7 505 intake candidate vertical stub shaft (-1, -19.049999999999997)": [
+    152.075,
+    -197.925,
+    2.4,
+    165.825,
+    -184.175,
+    59.4
+  ],
+  "R7 506 intake candidate 12T track pulley outer-profile representation (-1, -19.049999999999997)": [
+    145.75,
+    -204.25,
+    16.0527,
+    172.15,
+    -177.85,
+    34.7473
+  ],
+  "R7 507 intake candidate bearing representation (-1, -19.049999999999997)-18.4": [
+    144.6625,
+    -205.3375,
+    3.825,
+    173.2375,
+    -176.7625,
+    10.175
+  ],
+  "R7 508 intake candidate bearing representation (-1, -19.049999999999997)25.4": [
+    144.6625,
+    -205.3375,
+    47.625,
+    173.2375,
+    -176.7625,
+    53.975
+  ],
+  "R7 509 intake candidate vertical stub shaft (-1, 146.05)": [
+    317.175,
+    -197.925,
+    2.4,
+    330.925,
+    -184.175,
+    85.4
+  ],
+  "R7 510 intake candidate 12T track pulley outer-profile representation (-1, 146.05)": [
+    310.85,
+    -204.25,
+    16.0527,
+    337.25,
+    -177.85,
+    34.7473
+  ],
+  "R7 511 intake candidate bearing representation (-1, 146.05)-18.4": [
+    309.7625,
+    -205.3375,
+    3.825,
+    338.3375,
+    -176.7625,
+    10.175
+  ],
+  "R7 512 intake candidate bearing representation (-1, 146.05)25.4": [
+    309.7625,
+    -205.3375,
+    47.625,
+    338.3375,
+    -176.7625,
+    53.975
+  ],
+  "R7 513 intake candidate pinch NEO body -1": [
+    184.04824,
+    -190.0,
+    175.4,
+    244.04824,
+    -130.0,
+    233.75
+  ],
+  "R7 514 intake candidate pinch motor plate -1": [
+    178.04824,
+    -196.0,
+    172.225,
+    250.04824,
+    -124.0,
+    175.4
+  ],
+  "R7 515 intake candidate pinch transfer pulley (-1, -191.05)": [
+    310.906,
+    -204.194,
+    56.0528,
+    337.194,
+    -177.906,
+    74.7472
+  ],
+  "R7 516 intake candidate pinch transfer pulley (-1, -160)": [
+    200.90424,
+    -173.144,
+    56.0528,
+    227.19224,
+    -146.856,
+    74.7472
+  ],
+  "R7 517 intake candidate remote drive shaft coupling hypothesis -1": [
+    210.04824,
+    -164.0,
+    65.4,
+    218.04824,
+    -156.0,
+    150.4
+  ],
+  "R7 518 intake candidate pinch transfer belt -1": [
+    200.92063,
+    -204.17761,
+    59.05,
+    337.17761,
+    -146.87239,
+    71.75
+  ],
+  "R7 519 intake candidate side pinch belt 1": [
+    145.82239,
+    177.92239,
+    19.05,
+    337.17761,
+    204.17761,
+    31.75
+  ],
+  "R7 520 intake candidate vertical stub shaft (1, -19.049999999999997)": [
+    152.075,
+    184.175,
+    2.4,
+    165.825,
+    197.925,
+    59.4
+  ],
+  "R7 521 intake candidate 12T track pulley outer-profile representation (1, -19.049999999999997)": [
+    145.75,
+    177.85,
+    16.0527,
+    172.15,
+    204.25,
+    34.7473
+  ],
+  "R7 522 intake candidate bearing representation (1, -19.049999999999997)-18.4": [
+    144.6625,
+    176.7625,
+    3.825,
+    173.2375,
+    205.3375,
+    10.175
+  ],
+  "R7 523 intake candidate bearing representation (1, -19.049999999999997)25.4": [
+    144.6625,
+    176.7625,
+    47.625,
+    173.2375,
+    205.3375,
+    53.975
+  ],
+  "R7 524 intake candidate vertical stub shaft (1, 146.05)": [
+    317.175,
+    184.175,
+    2.4,
+    330.925,
+    197.925,
+    85.4
+  ],
+  "R7 525 intake candidate 12T track pulley outer-profile representation (1, 146.05)": [
+    310.85,
+    177.85,
+    16.0527,
+    337.25,
+    204.25,
+    34.7473
+  ],
+  "R7 526 intake candidate bearing representation (1, 146.05)-18.4": [
+    309.7625,
+    176.7625,
+    3.825,
+    338.3375,
+    205.3375,
+    10.175
+  ],
+  "R7 527 intake candidate bearing representation (1, 146.05)25.4": [
+    309.7625,
+    176.7625,
+    47.625,
+    338.3375,
+    205.3375,
+    53.975
+  ],
+  "R7 528 intake candidate pinch NEO body 1": [
+    184.04824,
+    130.0,
+    175.4,
+    244.04824,
+    190.0,
+    233.75
+  ],
+  "R7 529 intake candidate pinch motor plate 1": [
+    178.04824,
+    124.0,
+    172.225,
+    250.04824,
+    196.0,
+    175.4
+  ],
+  "R7 530 intake candidate pinch transfer pulley (1, 191.05)": [
+    310.906,
+    177.906,
+    56.0528,
+    337.194,
+    204.194,
+    74.7472
+  ],
+  "R7 531 intake candidate pinch transfer pulley (1, 160)": [
+    200.90424,
+    146.856,
+    56.0528,
+    227.19224,
+    173.144,
+    74.7472
+  ],
+  "R7 532 intake candidate remote drive shaft coupling hypothesis 1": [
+    210.04824,
+    156.0,
+    65.4,
+    218.04824,
+    164.0,
+    150.4
+  ],
+  "R7 533 intake candidate pinch transfer belt 1": [
+    200.92063,
+    146.87239,
+    59.05,
+    337.17761,
+    204.17761,
+    71.75
+  ],
+  "R7 536 intake candidate original cradle side weldment -1": [
+    138.0,
+    -210.175,
+    2.2375,
+    344.05,
+    -174.05,
+    49.2125
+  ],
+  "R7 537 intake candidate cradle side pivot -1": [
+    171.125,
+    -228.5,
+    18.525,
+    184.875,
+    -206.2,
+    32.275
+  ],
+  "R7 538 intake candidate original cradle side weldment 1": [
+    138.0,
+    174.05,
+    2.2375,
+    344.05,
+    210.175,
+    49.2125
+  ],
+  "R7 539 intake candidate cradle side pivot 1": [
+    171.125,
+    206.2,
+    18.525,
+    184.875,
+    228.5,
+    32.275
+  ]
+}
