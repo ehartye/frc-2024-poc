@@ -1,5 +1,5 @@
 import pathlib,unittest,tempfile,importlib.util,subprocess,sys,xml.etree.ElementTree as ET
-ROOT=pathlib.Path(__file__).resolve().parents[1]
+ROOT=pathlib.Path(__file__).resolve().parents[1]/'experiments/a2-campaign'
 s=importlib.util.spec_from_file_location('runner',ROOT/'scripts/run-a2-mission.py');r=importlib.util.module_from_spec(s);s.loader.exec_module(r)
 class MissionReceipt(unittest.TestCase):
  def xml(self,token):

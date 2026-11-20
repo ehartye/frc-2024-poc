@@ -1,5 +1,5 @@
 import pathlib,json,hashlib,unittest
-ROOT=pathlib.Path(__file__).resolve().parents[1]/'tools/blockout'
+ROOT=pathlib.Path(__file__).resolve().parents[1]/'kickoff/blockout'
 class BlockoutAssets(unittest.TestCase):
  def test_static_source_hashes(self):
   manifest=json.loads((ROOT/'SOURCE.json').read_text())

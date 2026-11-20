@@ -2,7 +2,7 @@ import sys
 import unittest
 from pathlib import Path
 
-sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"tools/showcase"))
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"scripts/showcase"))
 from public_parts import BUMPER, public_occurrence
 
 

@@ -1,5 +1,5 @@
 import unittest,tempfile,pathlib,shutil,subprocess,json,hashlib,sys
-ROOT=pathlib.Path(__file__).resolve().parents[1]
+ROOT=pathlib.Path(__file__).resolve().parents[1]/'experiments/a2-campaign'
 class ReceiptBoundary(unittest.TestCase):
  def test_changed_snapshot_is_rejected_before_execution(self):
   with tempfile.TemporaryDirectory() as d:

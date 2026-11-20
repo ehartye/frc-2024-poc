@@ -1,0 +1,14 @@
+{
+  "sha256": {
+    "cad/cycle-contract-A2.json": "3700da3bf1a271d6b6763060f913435a4a50cda8d456cb1a57a6f1898416b6ad",
+    "tools/blockout/index.html": "b252fb84001d716d2010b7c5cab935d6afaabe445b4049fb651128799adcd407",
+    "sim/pressure/fast_geometry.py": "5312a02924a3ebe7cb85e7a61348587d118b5097d3c6cb19ea6d054cfd4b9074",
+    "tests/test_pressure_fast_geometry.py": "4b904892ac41bf266524b1ebaabedddc27816488d7295ed23a7638afe29ca230",
+    "experiments/a2-campaign/cad/cycle-contract-A2.json": "0e08bf88e488539ca8966dcc3cc08727ef2faf98da3740787b308cd54c652f52"
+  },
+  "sourceCommits": {
+    "pressure": "159441a2323a",
+    "a2": "88d1391ce6f4"
+  },
+  "blockoutSource": "kickoff/blockout/SOURCE.json"
+}

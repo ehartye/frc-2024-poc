@@ -5,6 +5,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Check out the layout validator
+        uses: actions/checkout@v4
+        with:
+          repository: ehartye/agent-frc
+          ref: 0fbf18d8ebb00e34fbd55f06a98e9169509cfca1
+          path: .layout-validator
+          persist-credentials: false
+      - name: Verify student project layout and Fusion handoff
+        run: node .layout-validator/scripts/project-layout.mjs check .
+
       - name: Verify CAD views and README coverage
         run: python scripts/cad-readmes.py . --template scripts/cad-orbit.html
 

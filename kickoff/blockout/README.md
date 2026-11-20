@@ -14,6 +14,6 @@ This generic parameterized pre-vis is distinct from the A2 telescoping mechanism
 
 ## Historical standalone snapshot
 
-The files at this directory's root preserve an earlier spatial blockout and rehearsal application from the former main branch. Run `python -m http.server 8000 --bind 127.0.0.1 --directory tools/blockout` from the repository root to inspect that historical snapshot. Its `SOURCE.json` and `THIRD_PARTY.json` pin source bytes and licenses. It is not the current editable `dist/` pre-vis above or the MuJoCo robot viewer. No historical bumper or intake configuration establishes legality, capture or structural acceptance.
+The files at this directory's root preserve an earlier spatial blockout and rehearsal application from the former main branch. Run `python -m http.server 8000 --bind 127.0.0.1 --directory kickoff/blockout` from the repository root to inspect that historical snapshot. Its `SOURCE.json` and `THIRD_PARTY.json` pin source bytes and licenses. It is not the current editable `dist/` pre-vis above or the MuJoCo robot viewer. No historical bumper or intake configuration establishes legality, capture or structural acceptance.
 
 Static checks: `python -m unittest discover -s tests -p test_blockout_assets.py`. Optional browser checks: `node tests/blockout_browser.cjs` with existing Playwright and Chromium. The harness serves loopback-only, installs nothing and closes its server/browser.

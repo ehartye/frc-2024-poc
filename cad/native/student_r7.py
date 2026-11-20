@@ -10,7 +10,7 @@ import adsk.fusion as fusion
 
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT/"tools/showcase"))
+sys.path.insert(0, str(ROOT/"scripts/showcase"))
 from export_swerve import PALETTE, attribute, dimensions, registered_solid
 from public_parts import public_occurrence
 from swerve_modules import install_module

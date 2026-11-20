@@ -3,7 +3,7 @@ R=pathlib.Path(__file__).resolve().parents[1]
 class ContextTests(unittest.TestCase):
  def setUp(self):self.r=json.loads((R/'cad/components/a2-context-evidence.json').read_text())
  def test_input_pins(self):
-  for key,path in [('contractSha256','cad/cycle-contract-A2.json'),('transmissionSha256','cad/components/a2-transmission.json')]:self.assertEqual(self.r[key],hashlib.sha256((R/path).read_bytes()).hexdigest())
+  for key,path in [('contractSha256','experiments/a2-campaign/cad/cycle-contract-A2.json'),('transmissionSha256','cad/components/a2-transmission.json')]:self.assertEqual(self.r[key],hashlib.sha256((R/path).read_bytes()).hexdigest())
  def test_centered_negative_control(self):
   rows=self.r['contactSampling']['rejected central wheel'];center=next(x for x in rows if x['noteCenterFromWheelStationMm']==0);self.assertLess(center['summedNominalOverlapMm3'],1e-5)
   self.assertGreater(max(x['summedNominalOverlapMm3'] for x in rows),1)

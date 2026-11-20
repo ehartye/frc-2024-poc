@@ -15,105 +15,105 @@
       "id": "R7 chassis",
       "role": "frame",
       "representation": "project-original",
-      "provenance": "Project-authored R7 bodies selected by tools/showcase/public_parts.py",
+      "provenance": "Project-authored R7 bodies selected by scripts/showcase/public_parts.py",
       "editMetric": "baseFeatures"
     },
     {
       "id": "R7 carriage",
       "role": "mechanism",
       "representation": "project-original",
-      "provenance": "Project-authored R7 bodies selected by tools/showcase/public_parts.py",
+      "provenance": "Project-authored R7 bodies selected by scripts/showcase/public_parts.py",
       "editMetric": "baseFeatures"
     },
     {
       "id": "R7 cradle",
       "role": "mechanism",
       "representation": "project-original",
-      "provenance": "Project-authored R7 bodies selected by tools/showcase/public_parts.py",
+      "provenance": "Project-authored R7 bodies selected by scripts/showcase/public_parts.py",
       "editMetric": "baseFeatures"
     },
     {
       "id": "Front left housing",
       "role": "drive",
       "representation": "project-proxy",
-      "provenance": "Original solid proxy dimensions in tools/showcase/swerve_modules.py and cad/native/student_r7.py",
+      "provenance": "Original solid proxy dimensions in scripts/showcase/swerve_modules.py and cad/native/student_r7.py",
       "editMetric": "baseFeatures"
     },
     {
       "id": "Front left carrier",
       "role": "drive",
       "representation": "project-proxy",
-      "provenance": "Original solid proxy dimensions in tools/showcase/swerve_modules.py and cad/native/student_r7.py",
+      "provenance": "Original solid proxy dimensions in scripts/showcase/swerve_modules.py and cad/native/student_r7.py",
       "editMetric": "baseFeatures"
     },
     {
       "id": "Front left wheel",
       "role": "drive",
       "representation": "project-proxy",
-      "provenance": "Original solid proxy dimensions in tools/showcase/swerve_modules.py and cad/native/student_r7.py",
+      "provenance": "Original solid proxy dimensions in scripts/showcase/swerve_modules.py and cad/native/student_r7.py",
       "editMetric": "baseFeatures"
     },
     {
       "id": "Front right housing",
       "role": "drive",
       "representation": "project-proxy",
-      "provenance": "Original solid proxy dimensions in tools/showcase/swerve_modules.py and cad/native/student_r7.py",
+      "provenance": "Original solid proxy dimensions in scripts/showcase/swerve_modules.py and cad/native/student_r7.py",
       "editMetric": "baseFeatures"
     },
     {
       "id": "Front right carrier",
       "role": "drive",
       "representation": "project-proxy",
-      "provenance": "Original solid proxy dimensions in tools/showcase/swerve_modules.py and cad/native/student_r7.py",
+      "provenance": "Original solid proxy dimensions in scripts/showcase/swerve_modules.py and cad/native/student_r7.py",
       "editMetric": "baseFeatures"
     },
     {
       "id": "Front right wheel",
       "role": "drive",
       "representation": "project-proxy",
-      "provenance": "Original solid proxy dimensions in tools/showcase/swerve_modules.py and cad/native/student_r7.py",
+      "provenance": "Original solid proxy dimensions in scripts/showcase/swerve_modules.py and cad/native/student_r7.py",
       "editMetric": "baseFeatures"
     },
     {
       "id": "Rear left housing",
       "role": "drive",
       "representation": "project-proxy",
-      "provenance": "Original solid proxy dimensions in tools/showcase/swerve_modules.py and cad/native/student_r7.py",
+      "provenance": "Original solid proxy dimensions in scripts/showcase/swerve_modules.py and cad/native/student_r7.py",
       "editMetric": "baseFeatures"
     },
     {
       "id": "Rear left carrier",
       "role": "drive",
       "representation": "project-proxy",
-      "provenance": "Original solid proxy dimensions in tools/showcase/swerve_modules.py and cad/native/student_r7.py",
+      "provenance": "Original solid proxy dimensions in scripts/showcase/swerve_modules.py and cad/native/student_r7.py",
       "editMetric": "baseFeatures"
     },
     {
       "id": "Rear left wheel",
       "role": "drive",
       "representation": "project-proxy",
-      "provenance": "Original solid proxy dimensions in tools/showcase/swerve_modules.py and cad/native/student_r7.py",
+      "provenance": "Original solid proxy dimensions in scripts/showcase/swerve_modules.py and cad/native/student_r7.py",
       "editMetric": "baseFeatures"
     },
     {
       "id": "Rear right housing",
       "role": "drive",
       "representation": "project-proxy",
-      "provenance": "Original solid proxy dimensions in tools/showcase/swerve_modules.py and cad/native/student_r7.py",
+      "provenance": "Original solid proxy dimensions in scripts/showcase/swerve_modules.py and cad/native/student_r7.py",
       "editMetric": "baseFeatures"
     },
     {
       "id": "Rear right carrier",
       "role": "drive",
       "representation": "project-proxy",
-      "provenance": "Original solid proxy dimensions in tools/showcase/swerve_modules.py and cad/native/student_r7.py",
+      "provenance": "Original solid proxy dimensions in scripts/showcase/swerve_modules.py and cad/native/student_r7.py",
       "editMetric": "baseFeatures"
     },
     {
       "id": "Rear right wheel",
       "role": "drive",
       "representation": "project-proxy",
-      "provenance": "Original solid proxy dimensions in tools/showcase/swerve_modules.py and cad/native/student_r7.py",
+      "provenance": "Original solid proxy dimensions in scripts/showcase/swerve_modules.py and cad/native/student_r7.py",
       "editMetric": "baseFeatures"
     }
   ],
