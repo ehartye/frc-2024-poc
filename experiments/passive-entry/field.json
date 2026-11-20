@@ -1,0 +1,639 @@
+{
+  "clear": {
+    "pieces": {
+      "center-2/1": {
+        "qualified": true,
+        "initialResidualMm": -3,
+        "settledOffsetMm": [
+          2.39,
+          -0.051
+        ],
+        "timeS": 84.8,
+        "floorAtRestN": 2.366,
+        "minRelativeXmm": 411.5004,
+        "maxRelativeXmm": 744.2018,
+        "maxRelativeYmm": 3,
+        "peakRailN": 3.8874,
+        "contactStartS": 53.438,
+        "contactEndS": 82.743,
+        "maxTopMm": 56.1688,
+        "maxTiltDeg": 0.7477,
+        "minCarryFloorMm": 1.3805,
+        "minSideLoadN": 1.16,
+        "coreGapMm": 4.2178,
+        "maxDeformationMm": 0.7822,
+        "peakAxialDeviationMm": 2.8567,
+        "maxCarryLateralMm": 0.1798,
+        "maxEntryLateralMm": 3,
+        "minCarryXmm": 411.5004,
+        "endSpeedMmS": 0.0147
+      },
+      "center-1/1": {
+        "qualified": true,
+        "initialResidualMm": 3,
+        "settledOffsetMm": [
+          2.408,
+          0.071
+        ],
+        "timeS": 126.3,
+        "floorAtRestN": 2.366,
+        "minRelativeXmm": 411.5779,
+        "maxRelativeXmm": 744.2204,
+        "maxRelativeYmm": 3,
+        "peakRailN": 3.8511,
+        "contactStartS": 99.538,
+        "contactEndS": 124.246,
+        "maxTopMm": 56.8701,
+        "maxTiltDeg": 1.0107,
+        "minCarryFloorMm": 0.6932,
+        "minSideLoadN": 1.2163,
+        "coreGapMm": 4.223,
+        "maxDeformationMm": 0.777,
+        "peakAxialDeviationMm": 2.9391,
+        "maxCarryLateralMm": 0.2135,
+        "maxEntryLateralMm": 3,
+        "minCarryXmm": 411.5779,
+        "endSpeedMmS": 0.0097
+      }
+    },
+    "accepted": [
+      "center-2/1",
+      "center-1/1"
+    ],
+    "received": [
+      "center-2/1",
+      "center-1/1"
+    ],
+    "stored": [
+      "center-2/1",
+      "center-1/1"
+    ],
+    "plannedFinish": "horn",
+    "carrierReset": true,
+    "receiverReady": true,
+    "minimumPlanGapIn": 0.239,
+    "receiverEvents": [
+      {
+        "timeS": 93.75,
+        "actor": "B2",
+        "action": "fixture receiver pickup",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 98.5,
+        "actor": "B2",
+        "action": "downstream store",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 99.75,
+        "actor": "B2",
+        "action": "reset",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 136.45,
+        "actor": "B2",
+        "action": "fixture receiver pickup",
+        "piece": "center-1/1"
+      },
+      {
+        "timeS": 142.5,
+        "actor": "B2",
+        "action": "downstream store",
+        "piece": "center-1/1"
+      },
+      {
+        "timeS": 145.85,
+        "actor": "B2",
+        "action": "reset",
+        "piece": "center-1/1"
+      }
+    ],
+    "finalCustody": {
+      "center-2/1": "stored",
+      "center-1/1": "stored"
+    }
+  },
+  "late": {
+    "pieces": {
+      "center-2/1": {
+        "qualified": true,
+        "initialResidualMm": 3,
+        "settledOffsetMm": [
+          2.393,
+          0.067
+        ],
+        "timeS": 84.8,
+        "floorAtRestN": 2.366,
+        "minRelativeXmm": 411.5147,
+        "maxRelativeXmm": 744.2048,
+        "maxRelativeYmm": 3,
+        "peakRailN": 3.8837,
+        "contactStartS": 53.438,
+        "contactEndS": 82.745,
+        "maxTopMm": 56.1688,
+        "maxTiltDeg": 0.7105,
+        "minCarryFloorMm": 1.5678,
+        "minSideLoadN": 1.1532,
+        "coreGapMm": 4.2182,
+        "maxDeformationMm": 0.7818,
+        "peakAxialDeviationMm": 2.8723,
+        "maxCarryLateralMm": 0.2003,
+        "maxEntryLateralMm": 3,
+        "minCarryXmm": 411.5147,
+        "endSpeedMmS": 0.0087
+      },
+      "center-1/1": {
+        "qualified": true,
+        "initialResidualMm": -3,
+        "settledOffsetMm": [
+          2.425,
+          -0.078
+        ],
+        "timeS": 126.3,
+        "floorAtRestN": 2.366,
+        "minRelativeXmm": 411.5963,
+        "maxRelativeXmm": 744.2373,
+        "maxRelativeYmm": 3,
+        "peakRailN": 3.8489,
+        "contactStartS": 99.538,
+        "contactEndS": 124.247,
+        "maxTopMm": 56.7979,
+        "maxTiltDeg": 0.9814,
+        "minCarryFloorMm": 0.7657,
+        "minSideLoadN": 1.2163,
+        "coreGapMm": 4.2234,
+        "maxDeformationMm": 0.7766,
+        "peakAxialDeviationMm": 2.9507,
+        "maxCarryLateralMm": 0.1832,
+        "maxEntryLateralMm": 3,
+        "minCarryXmm": 411.5963,
+        "endSpeedMmS": 0.0076
+      }
+    },
+    "accepted": [
+      "center-2/1",
+      "center-1/1"
+    ],
+    "received": [
+      "center-2/1",
+      "center-1/1"
+    ],
+    "stored": [
+      "center-2/1"
+    ],
+    "plannedFinish": "horn",
+    "carrierReset": true,
+    "receiverReady": false,
+    "minimumPlanGapIn": 0.239,
+    "receiverEvents": [
+      {
+        "timeS": 132,
+        "actor": "B2",
+        "action": "fixture receiver pickup",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 136.75,
+        "actor": "B2",
+        "action": "downstream store",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 138,
+        "actor": "B2",
+        "action": "reset",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 146.3,
+        "actor": "B2",
+        "action": "fixture receiver pickup",
+        "piece": "center-1/1"
+      }
+    ],
+    "finalCustody": {
+      "center-2/1": "stored",
+      "center-1/1": "B2"
+    }
+  },
+  "misaligned": {
+    "pieces": {
+      "center-2/1": {
+        "qualified": true,
+        "initialResidualMm": -6,
+        "settledOffsetMm": [
+          6.326,
+          -0.05
+        ],
+        "timeS": 84.8,
+        "floorAtRestN": 2.366,
+        "minRelativeXmm": 415.485,
+        "maxRelativeXmm": 748.1379,
+        "maxRelativeYmm": 6,
+        "peakRailN": 3.8913,
+        "contactStartS": 53.388,
+        "contactEndS": 82.742,
+        "maxTopMm": 56.2828,
+        "maxTiltDeg": 0.7781,
+        "minCarryFloorMm": 1.3091,
+        "minSideLoadN": 1.1567,
+        "coreGapMm": 4.0469,
+        "maxDeformationMm": 0.9531,
+        "peakAxialDeviationMm": 6.8294,
+        "maxCarryLateralMm": 0.1319,
+        "maxEntryLateralMm": 6,
+        "minCarryXmm": 415.485,
+        "endSpeedMmS": 0.0075
+      },
+      "center-1/1": {
+        "qualified": true,
+        "initialResidualMm": 6,
+        "settledOffsetMm": [
+          6.322,
+          0.049
+        ],
+        "timeS": 127.55,
+        "floorAtRestN": 2.366,
+        "minRelativeXmm": 415.5837,
+        "maxRelativeXmm": 748.1338,
+        "maxRelativeYmm": 6,
+        "peakRailN": 3.8747,
+        "contactStartS": 100.588,
+        "contactEndS": 125.492,
+        "maxTopMm": 56.2828,
+        "maxTiltDeg": 0.7497,
+        "minCarryFloorMm": 1.4927,
+        "minSideLoadN": 1.2191,
+        "coreGapMm": 4.0469,
+        "maxDeformationMm": 0.9531,
+        "peakAxialDeviationMm": 6.8498,
+        "maxCarryLateralMm": 0.1439,
+        "maxEntryLateralMm": 6,
+        "minCarryXmm": 415.5837,
+        "endSpeedMmS": 0.0073
+      }
+    },
+    "accepted": [
+      "center-2/1",
+      "center-1/1"
+    ],
+    "received": [
+      "center-2/1",
+      "center-1/1"
+    ],
+    "stored": [
+      "center-2/1",
+      "center-1/1"
+    ],
+    "plannedFinish": "horn",
+    "carrierReset": true,
+    "receiverReady": true,
+    "minimumPlanGapIn": 0.239,
+    "receiverEvents": [
+      {
+        "timeS": 93.75,
+        "actor": "B2",
+        "action": "fixture receiver pickup",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 98.5,
+        "actor": "B2",
+        "action": "downstream store",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 99.75,
+        "actor": "B2",
+        "action": "reset",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 137.7,
+        "actor": "B2",
+        "action": "fixture receiver pickup",
+        "piece": "center-1/1"
+      },
+      {
+        "timeS": 143.75,
+        "actor": "B2",
+        "action": "downstream store",
+        "piece": "center-1/1"
+      },
+      {
+        "timeS": 147.1,
+        "actor": "B2",
+        "action": "reset",
+        "piece": "center-1/1"
+      }
+    ],
+    "finalCustody": {
+      "center-2/1": "stored",
+      "center-1/1": "stored"
+    }
+  },
+  "late-offset": {
+    "pieces": {
+      "center-2/1": {
+        "qualified": true,
+        "initialResidualMm": 6,
+        "settledOffsetMm": [
+          6.28,
+          0.066
+        ],
+        "timeS": 84.8,
+        "floorAtRestN": 2.366,
+        "minRelativeXmm": 415.455,
+        "maxRelativeXmm": 748.0922,
+        "maxRelativeYmm": 6,
+        "peakRailN": 3.8926,
+        "contactStartS": 53.388,
+        "contactEndS": 82.745,
+        "maxTopMm": 56.3952,
+        "maxTiltDeg": 0.8366,
+        "minCarryFloorMm": 1.1435,
+        "minSideLoadN": 1.1728,
+        "coreGapMm": 4.0469,
+        "maxDeformationMm": 0.9531,
+        "peakAxialDeviationMm": 6.8074,
+        "maxCarryLateralMm": 0.1619,
+        "maxEntryLateralMm": 6,
+        "minCarryXmm": 415.455,
+        "endSpeedMmS": 0.0022
+      },
+      "center-1/1": {
+        "qualified": true,
+        "initialResidualMm": -6,
+        "settledOffsetMm": [
+          6.386,
+          -0.034
+        ],
+        "timeS": 127.4,
+        "floorAtRestN": 2.366,
+        "minRelativeXmm": 415.6214,
+        "maxRelativeXmm": 748.1979,
+        "maxRelativeYmm": 6,
+        "peakRailN": 3.8697,
+        "contactStartS": 100.538,
+        "contactEndS": 125.34,
+        "maxTopMm": 56.5899,
+        "maxTiltDeg": 0.9053,
+        "minCarryFloorMm": 0.9741,
+        "minSideLoadN": 1.2186,
+        "coreGapMm": 4.0469,
+        "maxDeformationMm": 0.9531,
+        "peakAxialDeviationMm": 6.9137,
+        "maxCarryLateralMm": 0.0883,
+        "maxEntryLateralMm": 6,
+        "minCarryXmm": 415.6214,
+        "endSpeedMmS": 0.011
+      }
+    },
+    "accepted": [
+      "center-2/1",
+      "center-1/1"
+    ],
+    "received": [
+      "center-2/1",
+      "center-1/1"
+    ],
+    "stored": [
+      "center-2/1"
+    ],
+    "plannedFinish": "horn",
+    "carrierReset": true,
+    "receiverReady": false,
+    "minimumPlanGapIn": 0.239,
+    "receiverEvents": [
+      {
+        "timeS": 134,
+        "actor": "B2",
+        "action": "fixture receiver pickup",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 138.75,
+        "actor": "B2",
+        "action": "downstream store",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 140,
+        "actor": "B2",
+        "action": "reset",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 148.3,
+        "actor": "B2",
+        "action": "fixture receiver pickup",
+        "piece": "center-1/1"
+      }
+    ],
+    "finalCustody": {
+      "center-2/1": "stored",
+      "center-1/1": "B2"
+    }
+  },
+  "slow-receiver": {
+    "pieces": {
+      "center-2/1": {
+        "qualified": true,
+        "initialResidualMm": 3,
+        "settledOffsetMm": [
+          2.393,
+          0.067
+        ],
+        "timeS": 84.8,
+        "floorAtRestN": 2.366,
+        "minRelativeXmm": 411.5147,
+        "maxRelativeXmm": 744.2048,
+        "maxRelativeYmm": 3,
+        "peakRailN": 3.8837,
+        "contactStartS": 53.438,
+        "contactEndS": 82.745,
+        "maxTopMm": 56.1688,
+        "maxTiltDeg": 0.7105,
+        "minCarryFloorMm": 1.5678,
+        "minSideLoadN": 1.1532,
+        "coreGapMm": 4.2182,
+        "maxDeformationMm": 0.7818,
+        "peakAxialDeviationMm": 2.8723,
+        "maxCarryLateralMm": 0.2003,
+        "maxEntryLateralMm": 3,
+        "minCarryXmm": 411.5147,
+        "endSpeedMmS": 0.0087
+      },
+      "center-1/1": {
+        "qualified": true,
+        "initialResidualMm": -6,
+        "settledOffsetMm": [
+          6.261,
+          -0.085
+        ],
+        "timeS": 126.75,
+        "floorAtRestN": 2.366,
+        "minRelativeXmm": 415.5536,
+        "maxRelativeXmm": 748.0726,
+        "maxRelativeYmm": 6,
+        "peakRailN": 3.8661,
+        "contactStartS": 100.188,
+        "contactEndS": 124.698,
+        "maxTopMm": 56.6189,
+        "maxTiltDeg": 0.92,
+        "minCarryFloorMm": 0.9238,
+        "minSideLoadN": 1.2191,
+        "coreGapMm": 4.0469,
+        "maxDeformationMm": 0.9531,
+        "peakAxialDeviationMm": 6.818,
+        "maxCarryLateralMm": 0.1354,
+        "maxEntryLateralMm": 6,
+        "minCarryXmm": 415.5536,
+        "endSpeedMmS": 0.0058
+      }
+    },
+    "accepted": [
+      "center-2/1",
+      "center-1/1"
+    ],
+    "received": [
+      "center-2/1"
+    ],
+    "stored": [
+      "center-2/1"
+    ],
+    "plannedFinish": "horn",
+    "carrierReset": true,
+    "receiverReady": false,
+    "minimumPlanGapIn": 0.239,
+    "receiverEvents": [
+      {
+        "timeS": 142,
+        "actor": "B2",
+        "action": "fixture receiver pickup",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 146.75,
+        "actor": "B2",
+        "action": "downstream store",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 148,
+        "actor": "B2",
+        "action": "reset",
+        "piece": "center-2/1"
+      }
+    ],
+    "finalCustody": {
+      "center-2/1": "stored",
+      "center-1/1": "pad"
+    }
+  },
+  "directDispatch": {
+    "pieces": {
+      "center-2/1": {
+        "qualified": true,
+        "initialResidualMm": 3,
+        "settledOffsetMm": [
+          2.393,
+          0.067
+        ],
+        "timeS": 84.8,
+        "floorAtRestN": 2.366,
+        "minRelativeXmm": 411.5147,
+        "maxRelativeXmm": 744.2048,
+        "maxRelativeYmm": 3,
+        "peakRailN": 3.8837,
+        "contactStartS": 53.438,
+        "contactEndS": 82.745,
+        "maxTopMm": 56.1688,
+        "maxTiltDeg": 0.7105,
+        "minCarryFloorMm": 1.5678,
+        "minSideLoadN": 1.1532,
+        "coreGapMm": 4.2182,
+        "maxDeformationMm": 0.7818,
+        "peakAxialDeviationMm": 2.8723,
+        "maxCarryLateralMm": 0.2003,
+        "maxEntryLateralMm": 3,
+        "minCarryXmm": 411.5147,
+        "endSpeedMmS": 0.0087
+      },
+      "center-1/1": {
+        "qualified": true,
+        "initialResidualMm": -6,
+        "settledOffsetMm": [
+          6.261,
+          -0.085
+        ],
+        "timeS": 126.75,
+        "floorAtRestN": 2.366,
+        "minRelativeXmm": 415.5536,
+        "maxRelativeXmm": 748.0726,
+        "maxRelativeYmm": 6,
+        "peakRailN": 3.8661,
+        "contactStartS": 100.188,
+        "contactEndS": 124.698,
+        "maxTopMm": 56.6189,
+        "maxTiltDeg": 0.92,
+        "minCarryFloorMm": 0.9238,
+        "minSideLoadN": 1.2191,
+        "coreGapMm": 4.0469,
+        "maxDeformationMm": 0.9531,
+        "peakAxialDeviationMm": 6.818,
+        "maxCarryLateralMm": 0.1354,
+        "maxEntryLateralMm": 6,
+        "minCarryXmm": 415.5536,
+        "endSpeedMmS": 0.0058
+      }
+    },
+    "accepted": [
+      "center-2/1",
+      "center-1/1"
+    ],
+    "received": [
+      "center-2/1",
+      "center-1/1"
+    ],
+    "stored": [
+      "center-2/1"
+    ],
+    "plannedFinish": "horn",
+    "carrierReset": true,
+    "receiverReady": false,
+    "minimumPlanGapIn": 0.239,
+    "receiverEvents": [
+      {
+        "timeS": 137.45,
+        "actor": "B2",
+        "action": "fixture receiver pickup",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 140.4,
+        "actor": "B2",
+        "action": "downstream store",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 140.4,
+        "actor": "B2",
+        "action": "reset",
+        "piece": "center-2/1"
+      },
+      {
+        "timeS": 148.2,
+        "actor": "B2",
+        "action": "fixture receiver pickup",
+        "piece": "center-1/1"
+      }
+    ],
+    "finalCustody": {
+      "center-2/1": "stored",
+      "center-1/1": "B2"
+    }
+  }
+}

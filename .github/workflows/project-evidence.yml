@@ -96,3 +96,11 @@ jobs:
           python -B experiments/registered-custody/lab.py
           python -B tests/test_registered_custody.py
           git diff --exit-code -- experiments/registered-custody docs/ground-contact.json
+
+      - name: Replay the passive cassette and audit the displayed robot revisions
+        run: |
+          export PYTHONPATH="$RUNNER_TEMP/frame-model"
+          python -B tests/test_passive_entry.py
+          python -B experiments/passive-entry/replay.py
+          python -B tests/test_passive_entry.py
+          git diff --exit-code -- experiments/passive-entry/showcase-audit.json experiments/passive-entry/service.json

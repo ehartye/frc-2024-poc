@@ -150,3 +150,6 @@ docs/media/*.png binary
 experiments/a2-campaign/cad/** -text
 experiments/pressure-entry/frozen/** -text
 experiments/a2-campaign/frozen/** -text
+
+# Keep the source-bound, reopened cassette STEP byte-identical.
+experiments/passive-entry/paired-entry.step binary

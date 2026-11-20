@@ -10,6 +10,8 @@
 
 [Blue 3 role comparison, service availability and whole-robot support review](experiments/alliance-service/study.md)
 
+[R17 passive entry, service sweep and same-NOTE custody](experiments/passive-entry/study.md) · [Inspect the cassette](https://ehartye.github.io/frc-2024-poc/passive-entry.html) · [What connects in the R7 and R9 showcases?](experiments/passive-entry/showcase-attachments.md)
+
 [R16 registered tread contact and ground custody](experiments/registered-custody/study.md) · [Inspect the floor transfer](https://ehartye.github.io/frc-2024-poc/ground-contact.html)
 
 [R15 Blue 3 ground relay and held-out transfer results](experiments/ground-relay/study.md) · [Replay the two-NOTE relay](https://ehartye.github.io/frc-2024-poc/ground-relay.html)
