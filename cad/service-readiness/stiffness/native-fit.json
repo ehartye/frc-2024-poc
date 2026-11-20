@@ -1,0 +1,111 @@
+{
+  "fixtureBodies": 34,
+  "parkedBodies": 909,
+  "visibleBodies": 34,
+  "stationResults": [
+    {
+      "centerMm": [
+        23,
+        -329
+      ],
+      "sweeps": {
+        "driver": {},
+        "socket": {},
+        "nutAndWasherDown": {},
+        "shaftUp": {},
+        "headUp": {},
+        "inspectionStem": {},
+        "inspectionGrip": {}
+      },
+      "retainedBoltMm3": 4919.43351
+    },
+    {
+      "centerMm": [
+        53,
+        -329
+      ],
+      "sweeps": {
+        "driver": {},
+        "socket": {},
+        "nutAndWasherDown": {},
+        "shaftUp": {},
+        "headUp": {},
+        "inspectionStem": {},
+        "inspectionGrip": {}
+      },
+      "retainedBoltMm3": 4919.43351
+    },
+    {
+      "centerMm": [
+        23,
+        329
+      ],
+      "sweeps": {
+        "driver": {},
+        "socket": {},
+        "nutAndWasherDown": {},
+        "shaftUp": {},
+        "headUp": {},
+        "inspectionStem": {},
+        "inspectionGrip": {}
+      },
+      "retainedBoltMm3": 4919.43351
+    },
+    {
+      "centerMm": [
+        53,
+        329
+      ],
+      "sweeps": {
+        "driver": {},
+        "socket": {},
+        "nutAndWasherDown": {},
+        "shaftUp": {},
+        "headUp": {},
+        "inspectionStem": {},
+        "inspectionGrip": {}
+      },
+      "retainedBoltMm3": 4919.43351
+    }
+  ],
+  "liftMm": 5,
+  "lateralRemovalMm": 800,
+  "riseHits": {},
+  "lateralHits": {},
+  "bumperInstalledControlMm3": {
+    "R7 496 visual digit 7": 1.01971,
+    "R7 497 visual digit 8": 33.9394,
+    "fixed bumper side noodle 1 1": 107502.31965,
+    "Left drilled bumper wood": 36528.375,
+    "Sewn nylon skin, nominal envelope": 958.75
+  },
+  "tubeVolumeCm3": 341.0541077083052,
+  "archiveSha256": "7c8c21498357e903c120bb7a8d0bdadbaae1c9d9e8e26ea8779950167ade1046",
+  "parentSha256": "4663d9fa55b5f3eb8e23549f3205a2d29248322543beb3e7a7d8076a23f93f6d",
+  "fullParkedVisibleBodies": 909,
+  "fixtureParentSha256": "9a6ca67136a2279a7280c275b2ca46e754eb70ae8f3d47c4be96bf4868425f7a",
+  "imageSha256": {
+    "frame.png": "4f5bc70e4c5e3f78b20d18340bae4b79e93fe9dafb5c24a458cb66675b9f4d14",
+    "parked.png": "a37ae18d6ee3dcd764f9d69351a967fb988983cd1df69a8b4d3c8984851d1777"
+  },
+  "reopens": [
+    {
+      "phase": "ok",
+      "before": 1,
+      "after": 1,
+      "restored": true
+    },
+    {
+      "phase": "ok",
+      "before": 1,
+      "after": 1,
+      "restored": true
+    },
+    {
+      "phase": "ok",
+      "before": 1,
+      "after": 1,
+      "restored": true
+    }
+  ]
+}

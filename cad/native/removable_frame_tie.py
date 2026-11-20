@@ -113,3 +113,57 @@ def inspect(fixture, whole):
                 stationResults=stations, liftMm=5, lateralRemovalMm=800,
                 riseHits=lift_hits,lateralHits=slide_hits,bumperInstalledControlMm3=blocked,
                 tubeVolumeCm3=frame[TUBE_NAME].volume)
+
+def capture_views(archive, parent, frame_png, whole_png):
+    """Render the frame and selected parked context using disposable imported documents."""
+    import time
+    import adsk
+    app = core.Application.get()
+    prior = app.activeDocument
+    def settle(seconds):
+        end = time.monotonic() + seconds
+        while time.monotonic() < end:
+            adsk.doEvents()
+            time.sleep(.035)
+    def render(doc, whole, destination):
+        doc.activate()
+        settle(.7)
+        d = design(doc)
+        d.activateRootComponent()
+        for comp in d.allComponents:
+            comp.isBodiesFolderLightBulbOn = True
+        count = 0
+        for occ in d.rootComponent.allOccurrences:
+            occ.isLightBulbOn = True
+            for body in occ.bRepBodies:
+                present = not whole or not retired(occ.component.name,body.name) or body.name in TIE_NAMES
+                body.isLightBulbOn = present
+                count += int(present)
+        if count != (909 if whole else 34) or not d.computeAll():
+            raise ValueError("Unexpected visible selection")
+        settle(.7)
+        view = app.activeViewport
+        cam = view.camera
+        cam.isSmoothTransition = False
+        cam.target = core.Point3D.create(0,0,37 if whole else 10)
+        cam.eye = core.Point3D.create(*( (115,-140,110) if whole else (85,-120,100) ))
+        cam.upVector = core.Vector3D.create(0,0,1)
+        cam.isFitView = True
+        view.camera = cam
+        view.fit()
+        view.refresh()
+        settle(1.5)
+        view.refresh()
+        settle(.4)
+        if not view.saveAsImageFile(str(destination),1400,900):
+            raise ValueError("Viewport capture failed")
+    try:
+        for path,whole,destination in ((archive,False,frame_png),(parent,True,whole_png)):
+            doc = native(path)
+            try:
+                render(doc, whole, destination)
+            finally:
+                doc.close(False)
+    finally:
+        if prior and prior.isValid:
+            prior.activate()

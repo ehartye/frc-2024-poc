@@ -4,6 +4,12 @@
 
 ![Plan of the frame and wheel loads with the removable tube highlighted alongside matched wheel-twist results](comparison.png)
 
+[Download the reopened R14 Fusion frame](../../student/r14-removable-frame-tie.f3d) · [Native service measurements and archive hashes](native-fit.json)
+
+![Reopened R14 passive frame with the removable transverse tube attached at both side rails and the loose inspection gauge parked alongside](frame.png)
+
+The student archive has 34 visible bodies, including the 17 tie and fastener articles and the loose gauge. The structural analysis also includes the aft deck cross tube and two runners from the registered whole robot. The [whole parked context](parked.png) shows all 909 selected robot bodies in Fusion's native material view. Three archive inspections reproduced the service measurements.
+
 ## What changed under the same load
 
 The four wheel-center forces alternate +100, −100, −100, +100 N on opposite corners. Each axle sees a 52 N·m couple across its 520 mm track. The front and rear couples oppose each other. Three wheel heights fix the reference plane. Their additional reactions are zero to numerical tolerance. The fourth wheel displacement gives the diagonal warp. The angle between the axles in radians is warp divided by 520 mm. These incremental forces normalize the result and assume ongoing wheel contact.
@@ -39,7 +45,11 @@ A rigid joint enforces matching vertical motion and rotations at its attachment.
 
 ## Service and bench correlation
 
-Use the four original M8 stacks with a separately removable bare cross-tube. A digital review should trace the top driver, bottom socket, nut, washer and screw withdrawal before moving the tube. In the R9 receipt, each station clears a Ø12 × 50 mm driver approach above the head and a Ø19 mm socket from Z = 19 to 68.25 mm below. The nominal nut engagement is 6.5 mm, with 2.75 mm of tip beyond the nut. Once the tie and all four sets are out, the selected chassis returns to R13's 892-body state, whose four 60 mm inspection paths were independently reopened. The stationary geometry envelopes exclude the operator's hand, handle sweep, actual torque and tool brand. [R9 fastening receipt](../../assembly-readiness/mast-fit.json) · [R13 four-station gauge evidence](../ground-rails/native-fit.json)
+In the parked digital check, the top driver (Ø12 mm, 50 mm approach) and bottom socket (Ø19 mm, Z = 19–68.25 mm) clear at all four stations. The nut and washer clear downwards, and the cap screw clears a 108 mm upward withdrawal. Nominal nut engagement is 6.5 mm with 2.75 mm of tip beyond the nut. The tool envelopes cover axial access. Hand clearance, handle swing, torque, anti-loosening and actual extraction effort need a shop check. [R9 seat measurements](../../assembly-readiness/mast-fit.json) · [R14 tool and screw sweeps](native-fit.json)
+
+Support the removable bumper and detach it using the [parked bumper procedure](../../assembly-readiness/physical-assembly.md#removable-bumper). With the four complete tie fastener sets out, support the separate tube, lift it **5 mm**, then move it **800 mm toward robot left (+Y)**. The enclosing prism for the tube and its four welded upper sleeves cleared the entire staged parked configuration on reopen. Leaving the bumper installed puts the left board, foam and cover in that same path. The left board alone occupies 36,528 mm³ of the swept prism. This is a deliberate failed control for the service order. Allow external space and continuous support for the tube during withdrawal.
+
+With the tie removed, the four 60 mm gauge strokes clear the remaining 892 parked bodies. A retained cap screw intersects the swept stem by 4,919 mm³ at its station. The gauge checks the sleeve with the chassis stationary. Account for the loose gauge and the four fastener sets before the tie returns to service. [R14 service recipe and interference checks](../../native/removable_frame_tie.py) · [R13 seating and offset controls](../ground-rails/native-fit.json)
 
 For physical correlation, reference the same four module axes on a stationary frame fixture and record the vertical displacement at all four. Use a known small reversible couple within a shop-approved fixture rating, measure frame displacement separately from stand and tire compliance, and reverse the load to expose slip or hysteresis. Record support reactions or preload to confirm contact throughout. Compare the same frame with the tie in and out, then repeat after reseating it. Use the measured diagonal displacement difference per applied couple to select or revise the model's joint range. A persistent offset after unloading, a moving witness line at a joint, or loss of support contact invalidates the linear comparison. The R14 disposition preserves the R9 load path pending that measurement.
 
