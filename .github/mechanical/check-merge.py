@@ -35,7 +35,7 @@ def audit(project, commit, verifier, field_generator):
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_bytes(git(project, "cat-file", "blob", oid.decode()))
         policy_path = temp / "served-docs.json"
-        policy_path.write_bytes(approved_file(project, commit, "policy/served-docs.json"))
+        policy_path.write_bytes(approved_file(project, commit, ".github/mechanical/served-docs.json"))
         env = os.environ.copy()
         env.pop("FRC_VERIFIED_FIELD_ROOT", None)
         served_policy = json.loads(policy_path.read_bytes())
@@ -56,7 +56,7 @@ def audit(project, commit, verifier, field_generator):
             publisher.write_bytes(approved_file(project, commit, "experiments/physical-match/publish.py"))
             subprocess.run([sys.executable, "-I", str(publisher), str(output)], cwd=temp, check=True)
             env["FRC_VERIFIED_FIELD_ROOT"] = str(generated)
-        packets = [project / "policy/receipts" / name for name in ("branch.json", "docs.json")]
+        packets = [project / ".github/mechanical/receipts" / name for name in ("branch.json", "docs.json")]
         signed = any(os.path.lexists(packet) for packet in packets)
         key = temp / "reviewer.pem"
         if signed:
@@ -70,7 +70,7 @@ def audit(project, commit, verifier, field_generator):
                 args.extend([str(packet), str(key)])
             return json.loads(subprocess.check_output(command + args, env=env, text=True))
 
-        branch = run(["audit", str(project), commit, "policy/public-model.json"], packets[0])
+        branch = run(["audit", str(project), commit, ".github/mechanical/public-model.json"], packets[0])
         final = run(["audit-staged", str(baseline), str(project / "docs"), str(policy_path)], packets[1])
         if signed:
             subprocess.run(
