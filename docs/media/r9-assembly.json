@@ -1,0 +1,24 @@
+{
+  "schema": "r9-registered-display/1",
+  "sourceSha256": "4663d9fa55b5f3eb8e23549f3205a2d29248322543beb3e7a7d8076a23f93f6d",
+  "sourceFormat": "F3D",
+  "configuration": "Parked, red cover, installed battery",
+  "solids": 923,
+  "displayGroups": 35,
+  "triangles": 79344,
+  "tessellationMm": 0.2,
+  "assets": {
+    "archive": {
+      "path": "cad/student/r9-physical-assembly.f3d",
+      "sha256": "4663d9fa55b5f3eb8e23549f3205a2d29248322543beb3e7a7d8076a23f93f6d"
+    },
+    "glb": {
+      "path": "docs/media/r9-assembly.glb",
+      "sha256": "e0fa4d0cd90ffb64799bb63061b3b3d75fbd20b7637038a822f677b1322a74e4"
+    },
+    "still": {
+      "path": "docs/media/r9-assembly.png",
+      "sha256": "0303f001895c0c8a0a7940896a5671174ebe18b3a28407dc82d4132692755d7f"
+    }
+  }
+}

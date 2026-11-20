@@ -1,0 +1,85 @@
+{
+  "archiveSha256": "4663d9fa55b5f3eb8e23549f3205a2d29248322543beb3e7a7d8076a23f93f6d",
+  "measurement": [
+    {
+      "capToUpperSleeveMm2": 75.98727230866426,
+      "nutToWasherMm2": 90.94059883035527,
+      "washerToRailMm2": 66.27975100907666,
+      "washerToLowerSleeveMm2": 75.98727230873175,
+      "stationMm": [
+        23,
+        -329
+      ],
+      "negativeControlMm3": 19.438604544085536,
+      "headOverlapMm3": 0.0,
+      "looseTubeSleeveInsertionMm3": [
+        0.0,
+        0.0
+      ],
+      "threadEngagementMm": 6.5,
+      "tipPastNutMm": 2.75,
+      "topHexToolHits": {},
+      "bottomSocketHits": {}
+    },
+    {
+      "capToUpperSleeveMm2": 75.98727230866429,
+      "nutToWasherMm2": 90.94059883035514,
+      "washerToRailMm2": 66.27975100907666,
+      "washerToLowerSleeveMm2": 75.98727230873176,
+      "stationMm": [
+        53,
+        -329
+      ],
+      "negativeControlMm3": 19.438604544085543,
+      "headOverlapMm3": 0.0,
+      "looseTubeSleeveInsertionMm3": [
+        0.0,
+        0.0
+      ],
+      "threadEngagementMm": 6.5,
+      "tipPastNutMm": 2.75,
+      "topHexToolHits": {},
+      "bottomSocketHits": {}
+    },
+    {
+      "capToUpperSleeveMm2": 75.98727230866426,
+      "nutToWasherMm2": 90.94059883035527,
+      "washerToRailMm2": 66.27975100907666,
+      "washerToLowerSleeveMm2": 75.98727230873175,
+      "stationMm": [
+        23,
+        329
+      ],
+      "negativeControlMm3": 19.438604544085536,
+      "headOverlapMm3": 0.0,
+      "looseTubeSleeveInsertionMm3": [
+        0.0,
+        0.0
+      ],
+      "threadEngagementMm": 6.5,
+      "tipPastNutMm": 2.75,
+      "topHexToolHits": {},
+      "bottomSocketHits": {}
+    },
+    {
+      "capToUpperSleeveMm2": 75.98727230866429,
+      "nutToWasherMm2": 90.94059883035514,
+      "washerToRailMm2": 66.27975100907666,
+      "washerToLowerSleeveMm2": 75.98727230873176,
+      "stationMm": [
+        53,
+        329
+      ],
+      "negativeControlMm3": 19.438604544085543,
+      "headOverlapMm3": 0.0,
+      "looseTubeSleeveInsertionMm3": [
+        0.0,
+        0.0
+      ],
+      "threadEngagementMm": 6.5,
+      "tipPastNutMm": 2.75,
+      "topHexToolHits": {},
+      "bottomSocketHits": {}
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 # Historical six-wheel drivetrain candidate
 
 <!-- cad-still -->
-[![1780 MAXSwerve · R7](../media/swerve-r7.png)](https://ehartye.github.io/frc-2024-poc/#model)
+[![1780 MAXSwerve · R9 physical assembly](../media/r9-assembly.png)](https://ehartye.github.io/frc-2024-poc/?view=r9-assembly#model)
 
-**1780 MAXSwerve · R7.** Reopened Fusion assembly with the boxed front crossmember and red 1780 bumper. Explore the four installed swerve modules and follow the first D1 NOTE from the floor through lift and release to both modeled Speaker sensors. Purchased parts use dimensioned display geometry. [Inspect all four corners](https://ehartye.github.io/frc-2024-poc/?view=swerve#model). [Native model record](../media/swerve-r7.json) · [Open 3D replay](https://ehartye.github.io/frc-2024-poc/#model)
+**1780 MAXSwerve · R9 physical assembly.** Parked robot with its inboard lift drive, frame, removable bumper and electrical supports. Purchased mechanisms use dimensioned external models. This view records mechanical fit in CAD. [Native model record](../media/r9-assembly.json) · [Inspect the parked assembly](https://ehartye.github.io/frc-2024-poc/?view=r9-assembly#model)
 <!-- /cad-still -->
 
 This original dimension-only assembly is a candidate for the A2 robot, not a fabrication drawing, purchased kit, or accepted drivetrain. No vendor STEP is distributed. Designer owns final placement and complete-robot integration.

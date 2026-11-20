@@ -78,7 +78,7 @@ def run(root, update, template):
             provenance = link(root / featured["receipt"])
             block = (f'{START}\n[![{title}]({image})]({target})\n\n'
                      f'**{title}.** {featured["scope"]} '
-                     f'[Native model record]({provenance}) · [Open 3D replay]({target})\n{END}')
+                     f'[Native model record]({provenance}) · [{featured.get("linkLabel", "Open 3D replay")}]({target})\n{END}')
         merged = "".join(lines[:heading+1]).rstrip("\n") + "\n\n" + block + "\n\n" + "".join(lines[heading+1:]).lstrip("\n")
         if b"\r\n" in original:
             merged = merged.replace("\n", "\r\n")

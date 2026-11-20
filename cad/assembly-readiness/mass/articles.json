@@ -1,0 +1,4237 @@
+[
+ {
+  "id": "additional-controllers",
+  "description": "Four independent controllers for existing motor gaps, plus climber control pending selection",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 0
+ },
+ {
+  "id": "aft-bolt-rail-139-7-1-screw",
+  "description": "aft-bolt-rail--139.7--1-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 4
+ },
+ {
+  "id": "aft-bolt-rail-266-7-1-screw",
+  "description": "aft-bolt-rail--266.7--1-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 4
+ },
+ {
+  "id": "aft-bolt-tube-139-7-1-screw",
+  "description": "aft-bolt-tube--139.7--1-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 4
+ },
+ {
+  "id": "aft-bolt-tube-266-7-1-screw",
+  "description": "aft-bolt-tube--266.7--1-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 4
+ },
+ {
+  "id": "baseplate-bolt-139-7-80-screw",
+  "description": "baseplate-bolt--139.7--80-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 4
+ },
+ {
+  "id": "baseplate-bolt-266-7-80-screw",
+  "description": "baseplate-bolt--266.7--80-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 4
+ },
+ {
+  "id": "battery-foot-bolt-182-screw",
+  "description": "battery-foot-bolt--182-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "battery-foot-bolt-298-screw",
+  "description": "battery-foot-bolt--298-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "battery-top-bolt-182-screw",
+  "description": "battery-top-bolt--182-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "battery-top-bolt-298-screw",
+  "description": "battery-top-bolt--298-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "battery-tray-bolt-180-195-screw",
+  "description": "battery-tray-bolt--180--195-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "battery-tray-bolt-180-285-screw",
+  "description": "battery-tray-bolt--180--285-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "battery-tray-bolt-220-195-screw",
+  "description": "battery-tray-bolt--220--195-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "battery-tray-bolt-275-285-screw",
+  "description": "battery-tray-bolt--275--285-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "breaker-base-bolt-244-158-screw",
+  "description": "breaker-base-bolt--244--158-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "breaker-base-bolt-244-180-screw",
+  "description": "breaker-base-bolt--244--180-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "breaker-base-bolt-306-158-screw",
+  "description": "breaker-base-bolt--306--158-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "breaker-base-bolt-306-180-screw",
+  "description": "breaker-base-bolt--306--180-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "breaker-mount-bolt-251-425-161-03-screw",
+  "description": "breaker-mount-bolt--251.425--161.03-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "breaker-mount-bolt-308-575-188-97-screw",
+  "description": "breaker-mount-bolt--308.575--188.97-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "cartridge-1-152-4-slider-clamp-nut-envelope-28-28",
+  "description": "cartridge -1 -152.4 slider clamp nut envelope (-28, -28)",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 16
+ },
+ {
+  "id": "cartridge-1-152-4-slider-clamp-screw-28-28",
+  "description": "cartridge -1 -152.4 slider clamp screw nominal (-28, -28)",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 32
+ },
+ {
+  "id": "cartridge-1-152-4-tension-jack-screw",
+  "description": "cartridge -1 -152.4 tension jack nominal screw envelope",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 8
+ },
+ {
+  "id": "climber-load-hardware",
+  "description": "Transmission, lock spring, purchased bearings, loaded fasteners and retention",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 0
+ },
+ {
+  "id": "electrical-battery",
+  "description": "battery",
+  "basis": "supplier",
+  "sku": "MK ES17-12 / am-0844 single",
+  "bodyCount": 1
+ },
+ {
+  "id": "electrical-main-breaker",
+  "description": "main-breaker",
+  "basis": "supplier",
+  "sku": "CB185-120",
+  "bodyCount": 1
+ },
+ {
+  "id": "electrical-pdh",
+  "description": "pdh",
+  "basis": "supplier",
+  "sku": "REV-11-1850",
+  "bodyCount": 1
+ },
+ {
+  "id": "electrical-radio",
+  "description": "radio",
+  "basis": "supplier",
+  "sku": "OpenMesh OM5P-AC / am-3205",
+  "bodyCount": 1
+ },
+ {
+  "id": "electrical-radio-power",
+  "description": "radio-power",
+  "basis": "supplier",
+  "sku": "REV-11-1856",
+  "bodyCount": 1
+ },
+ {
+  "id": "electrical-roborio",
+  "description": "roborio",
+  "basis": "supplier",
+  "sku": "NI roboRIO 2.0 / am-3000a",
+  "bodyCount": 1
+ },
+ {
+  "id": "electrical-spark-1",
+  "description": "spark-1",
+  "basis": "supplier",
+  "sku": "REV-11-2158",
+  "bodyCount": 1
+ },
+ {
+  "id": "electrical-spark-10",
+  "description": "spark-10",
+  "basis": "supplier",
+  "sku": "REV-11-2158",
+  "bodyCount": 1
+ },
+ {
+  "id": "electrical-spark-11",
+  "description": "spark-11",
+  "basis": "supplier",
+  "sku": "REV-11-2158",
+  "bodyCount": 1
+ },
+ {
+  "id": "electrical-spark-12",
+  "description": "spark-12",
+  "basis": "supplier",
+  "sku": "REV-11-2158",
+  "bodyCount": 1
+ },
+ {
+  "id": "electrical-spark-2",
+  "description": "spark-2",
+  "basis": "supplier",
+  "sku": "REV-11-2158",
+  "bodyCount": 1
+ },
+ {
+  "id": "electrical-spark-3",
+  "description": "spark-3",
+  "basis": "supplier",
+  "sku": "REV-11-2158",
+  "bodyCount": 1
+ },
+ {
+  "id": "electrical-spark-4",
+  "description": "spark-4",
+  "basis": "supplier",
+  "sku": "REV-11-2158",
+  "bodyCount": 1
+ },
+ {
+  "id": "electrical-spark-5",
+  "description": "spark-5",
+  "basis": "supplier",
+  "sku": "REV-11-2158",
+  "bodyCount": 1
+ },
+ {
+  "id": "electrical-spark-6",
+  "description": "spark-6",
+  "basis": "supplier",
+  "sku": "REV-11-2158",
+  "bodyCount": 1
+ },
+ {
+  "id": "electrical-spark-7",
+  "description": "spark-7",
+  "basis": "supplier",
+  "sku": "REV-11-2158",
+  "bodyCount": 1
+ },
+ {
+  "id": "electrical-spark-8",
+  "description": "spark-8",
+  "basis": "supplier",
+  "sku": "REV-11-2158",
+  "bodyCount": 1
+ },
+ {
+  "id": "electrical-spark-9",
+  "description": "spark-9",
+  "basis": "supplier",
+  "sku": "REV-11-2158",
+  "bodyCount": 1
+ },
+ {
+  "id": "lift-input-interface",
+  "description": "MAXPlanetary input hardware, adapter mounting and final spacers",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 0
+ },
+ {
+  "id": "maxswerve-front-left",
+  "description": "Front left lower housing",
+  "basis": "supplier",
+  "sku": "REV-21-3005 with REV-21-1650 and REV-21-1651",
+  "bodyCount": 20
+ },
+ {
+  "id": "maxswerve-front-right",
+  "description": "Front right lower housing",
+  "basis": "supplier",
+  "sku": "REV-21-3005 with REV-21-1650 and REV-21-1651",
+  "bodyCount": 20
+ },
+ {
+  "id": "maxswerve-rear-left",
+  "description": "Rear left lower housing",
+  "basis": "supplier",
+  "sku": "REV-21-3005 with REV-21-1650 and REV-21-1651",
+  "bodyCount": 20
+ },
+ {
+  "id": "maxswerve-rear-right",
+  "description": "Rear right lower housing",
+  "basis": "supplier",
+  "sku": "REV-21-3005 with REV-21-1650 and REV-21-1651",
+  "bodyCount": 20
+ },
+ {
+  "id": "original-carriage-drop-yoke-1-169-5-211-0-screw",
+  "description": "original carriage drop yoke -1(169.5, -211.0)-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 4
+ },
+ {
+  "id": "original-carriage-drop-yoke-1-169-5-266-825-screw",
+  "description": "original carriage drop yoke -1(169.5, -266.825)-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 4
+ },
+ {
+  "id": "original-carriage-drop-yoke-1-186-5-211-0-screw",
+  "description": "original carriage drop yoke -1(186.5, -211.0)-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 4
+ },
+ {
+  "id": "original-carriage-drop-yoke-1-186-5-266-825-screw",
+  "description": "original carriage drop yoke -1(186.5, -266.825)-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 4
+ },
+ {
+  "id": "original-lower-guide-bracket-1-foot-22-225-screw",
+  "description": "original lower guide bracket -1 foot 22.225-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 4
+ },
+ {
+  "id": "original-lower-guide-bracket-1-foot-34-925-screw",
+  "description": "original lower guide bracket -1 foot 34.925-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 4
+ },
+ {
+  "id": "original-lower-guide-bracket-1-leg-200-21499999999997-screw",
+  "description": "original lower guide bracket -1 leg 200.21499999999997-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 4
+ },
+ {
+  "id": "original-lower-guide-bracket-1-leg-212-915-screw",
+  "description": "original lower guide bracket -1 leg 212.915-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 4
+ },
+ {
+  "id": "original-lower-shooter-bracket-1-foot-22-225-screw",
+  "description": "original lower shooter bracket -1 foot 22.225-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 4
+ },
+ {
+  "id": "original-lower-shooter-bracket-1-foot-34-925-screw",
+  "description": "original lower shooter bracket -1 foot 34.925-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 4
+ },
+ {
+  "id": "original-lower-shooter-bracket-1-leg-200-21499999999997-screw",
+  "description": "original lower shooter bracket -1 leg 200.21499999999997-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 4
+ },
+ {
+  "id": "original-lower-shooter-bracket-1-leg-212-915-screw",
+  "description": "original lower shooter bracket -1 leg 212.915-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 4
+ },
+ {
+  "id": "original-pad-backing-1-230-4-1-carriage-234-4-screw",
+  "description": "original pad backing (-1, 230.4, -1) carriage 234.4-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 8
+ },
+ {
+  "id": "original-pad-backing-1-230-4-1-carriage-246-4-screw",
+  "description": "original pad backing (-1, 230.4, -1) carriage 246.4-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 8
+ },
+ {
+  "id": "original-pad-backing-1-230-4-1-pad-235-4-screw",
+  "description": "original pad backing (-1, 230.4, -1) pad 235.4 head",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 8
+ },
+ {
+  "id": "original-pad-backing-1-230-4-1-pad-245-4-screw",
+  "description": "original pad backing (-1, 230.4, -1) pad 245.4 head",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 8
+ },
+ {
+  "id": "original-pad-backing-1-290-4-1-carriage-294-4-screw",
+  "description": "original pad backing (-1, 290.4, -1) carriage 294.4-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 8
+ },
+ {
+  "id": "original-pad-backing-1-290-4-1-carriage-306-4-screw",
+  "description": "original pad backing (-1, 290.4, -1) carriage 306.4-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 8
+ },
+ {
+  "id": "original-pad-backing-1-290-4-1-pad-295-4-screw",
+  "description": "original pad backing (-1, 290.4, -1) pad 295.4 head",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 8
+ },
+ {
+  "id": "original-pad-backing-1-290-4-1-pad-305-4-screw",
+  "description": "original pad backing (-1, 290.4, -1) pad 305.4 head",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 8
+ },
+ {
+  "id": "original-upper-portal-gusset-1-237-3-942-915-screw",
+  "description": "original upper portal gusset -1(-237.3, 942.915)-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 4
+ },
+ {
+  "id": "original-upper-portal-gusset-1-250-892-115-screw",
+  "description": "original upper portal gusset -1(-250, 892.115)-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 4
+ },
+ {
+  "id": "original-upper-portal-gusset-1-250-904-8149999999999-screw",
+  "description": "original upper portal gusset -1(-250, 904.8149999999999)-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 4
+ },
+ {
+  "id": "original-upper-portal-gusset-1-262-7-942-915-screw",
+  "description": "original upper portal gusset -1(-262.7, 942.915)-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 4
+ },
+ {
+  "id": "pdh-bolt-308-8-179-2-screw",
+  "description": "pdh-bolt--308.8-179.2-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "pdh-bolt-308-8-280-8-screw",
+  "description": "pdh-bolt--308.8-280.8-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "pdh-bolt-92-9-179-2-screw",
+  "description": "pdh-bolt--92.9-179.2-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "pdh-bolt-92-9-280-8-screw",
+  "description": "pdh-bolt--92.9-280.8-shaft",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r7-body-0",
+  "description": "original shooter side rail -1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-1",
+  "description": "original shooter upright -1 279.4",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-10",
+  "description": "cartridge -1 -152.4 shaft round envelope (hex omitted)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-107",
+  "description": "cartridge 1 -152.4 driven pulley envelope",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-108",
+  "description": "cartridge 1 -152.4 driver pulley envelope",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-109",
+  "description": "cartridge 1 -152.4 belt pitch band representation",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-11",
+  "description": "cartridge -1 -152.4 drilled bearing carrier -40",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-110",
+  "description": "cartridge 1 152.4 original wheel shell representation",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-111",
+  "description": "cartridge 1 152.4 nominal tread annulus",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-112",
+  "description": "cartridge 1 152.4 shaft round envelope (hex omitted)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-113",
+  "description": "cartridge 1 152.4 drilled bearing carrier -40",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-114",
+  "description": "cartridge 1 152.4 bearing envelope -40",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-115",
+  "description": "cartridge 1 152.4 drilled bearing carrier 40",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-116",
+  "description": "cartridge 1 152.4 bearing envelope 40",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-117",
+  "description": "cartridge 1 152.4 collar envelope -47.14375",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-118",
+  "description": "cartridge 1 152.4 collar envelope 47.14375",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-119",
+  "description": "cartridge 1 152.4 collar envelope 73",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-12",
+  "description": "cartridge -1 -152.4 bearing envelope -40",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-120",
+  "description": "cartridge 1 152.4 NEO body envelope",
+  "basis": "supplier",
+  "sku": "REV-21-1650 V1.1",
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-121",
+  "description": "cartridge 1 152.4 drilled motor slider",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-122",
+  "description": "cartridge 1 152.4 slotted carrier bridge proposal",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-125",
+  "description": "cartridge 1 152.4 bridge spacer -25.4",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-126",
+  "description": "cartridge 1 152.4 bridge bolt nominal -25.4",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-127",
+  "description": "cartridge 1 152.4 bridge spacer 25.4",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-128",
+  "description": "cartridge 1 152.4 bridge bolt nominal 25.4",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-13",
+  "description": "cartridge -1 -152.4 drilled bearing carrier 40",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-14",
+  "description": "cartridge -1 -152.4 bearing envelope 40",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-141",
+  "description": "cartridge 1 152.4 driven pulley envelope",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-142",
+  "description": "cartridge 1 152.4 driver pulley envelope",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-143",
+  "description": "cartridge 1 152.4 belt pitch band representation",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-15",
+  "description": "cartridge -1 -152.4 collar envelope -47.14375",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-16",
+  "description": "cartridge -1 -152.4 collar envelope 47.14375",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-162",
+  "description": "controller-deck",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-163",
+  "description": "pdh-deck",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-164",
+  "description": "rio-removable-deck",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-165",
+  "description": "radio-removable-deck",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-166",
+  "description": "battery-tray",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-167",
+  "description": "battery-end-stop--298",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-168",
+  "description": "battery-end-stop--102",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-169",
+  "description": "aft-electrical-beam--266.7",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-17",
+  "description": "cartridge -1 -152.4 collar envelope 73",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-170",
+  "description": "aft-adapter--266.7--1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-171",
+  "description": "aft-crush-sleeve--266.7--1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-174",
+  "description": "aft-bolt-rail--266.7--1-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-177",
+  "description": "aft-bolt-tube--266.7--1-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-178",
+  "description": "aft-adapter--266.7-1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-179",
+  "description": "aft-crush-sleeve--266.7-1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-18",
+  "description": "cartridge -1 -152.4 NEO body envelope",
+  "basis": "supplier",
+  "sku": "REV-21-1650 V1.1",
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-182",
+  "description": "aft-bolt-rail--266.7-1-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-185",
+  "description": "aft-bolt-tube--266.7-1-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-186",
+  "description": "aft-electrical-beam--139.7",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-187",
+  "description": "aft-adapter--139.7--1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-188",
+  "description": "aft-crush-sleeve--139.7--1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-19",
+  "description": "cartridge -1 -152.4 drilled motor slider",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-191",
+  "description": "aft-bolt-rail--139.7--1-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-194",
+  "description": "aft-bolt-tube--139.7--1-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-195",
+  "description": "aft-adapter--139.7-1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-196",
+  "description": "aft-crush-sleeve--139.7-1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-199",
+  "description": "aft-bolt-rail--139.7-1-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-2",
+  "description": "original carrier connection web -1 -1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-20",
+  "description": "cartridge -1 -152.4 slotted carrier bridge proposal",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-202",
+  "description": "aft-bolt-tube--139.7-1-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-203",
+  "description": "battery-top-strap",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-204",
+  "description": "battery-insulating-pad",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-205",
+  "description": "battery-strap-leg--286.5",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-208",
+  "description": "battery-foot-bolt--298-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-211",
+  "description": "battery-top-bolt--298-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-212",
+  "description": "battery-strap-leg--193.5",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-215",
+  "description": "battery-foot-bolt--182-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-218",
+  "description": "battery-top-bolt--182-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-221",
+  "description": "battery-tray-bolt--275--285-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-224",
+  "description": "battery-tray-bolt--220--195-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-227",
+  "description": "battery-tray-bolt--180--285-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-23",
+  "description": "cartridge -1 -152.4 bridge spacer -25.4",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-230",
+  "description": "battery-tray-bolt--180--195-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-233",
+  "description": "pdh-bolt--308.8-179.2-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-236",
+  "description": "pdh-bolt--308.8-280.8-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-239",
+  "description": "pdh-bolt--92.9-179.2-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-24",
+  "description": "cartridge -1 -152.4 bridge bolt nominal -25.4",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-242",
+  "description": "pdh-bolt--92.9-280.8-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-243",
+  "description": "original replacement upper transverse portal",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-244",
+  "description": "intake candidate stationary aluminum guide -1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-245",
+  "description": "intake candidate lift carriage plate -1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-246",
+  "description": "intake candidate UHMW slide pad (-1, 230.4, -1)",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-247",
+  "description": "intake candidate UHMW slide pad (-1, 230.4, 1)",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-248",
+  "description": "intake candidate UHMW slide pad (-1, 290.4, -1)",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-249",
+  "description": "intake candidate UHMW slide pad (-1, 290.4, 1)",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-25",
+  "description": "cartridge -1 -152.4 bridge spacer 25.4",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-250",
+  "description": "intake candidate pivot drop bracket -1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-251",
+  "description": "intake candidate pivot bearing representation -1",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-252",
+  "description": "intake candidate lift16T sprocket envelope (-1, 200)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-254",
+  "description": "intake candidate lift chain straight-run envelope (-1, -16.4)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-255",
+  "description": "intake candidate lift chain straight-run envelope (-1, 16.4)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-256",
+  "description": "intake candidate chain carriage anchor -1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-257",
+  "description": "intake candidate stationary aluminum guide 1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-258",
+  "description": "intake candidate lift carriage plate 1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-259",
+  "description": "intake candidate UHMW slide pad (1, 230.4, -1)",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-26",
+  "description": "cartridge -1 -152.4 bridge bolt nominal 25.4",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-260",
+  "description": "intake candidate UHMW slide pad (1, 230.4, 1)",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-261",
+  "description": "intake candidate UHMW slide pad (1, 290.4, -1)",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-262",
+  "description": "intake candidate UHMW slide pad (1, 290.4, 1)",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-263",
+  "description": "intake candidate pivot drop bracket 1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-264",
+  "description": "intake candidate pivot bearing representation 1",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-265",
+  "description": "intake candidate lift16T sprocket envelope (1, 200)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-267",
+  "description": "intake candidate lift chain straight-run envelope (1, -16.4)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-268",
+  "description": "intake candidate lift chain straight-run envelope (1, 16.4)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-269",
+  "description": "intake candidate chain carriage anchor 1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-270",
+  "description": "intake candidate rotation16T sprocket 25.4",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-271",
+  "description": "intake candidate rotation16T sprocket 326.61474482501677",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-272",
+  "description": "intake candidate rotation chain run -16.4",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-273",
+  "description": "intake candidate rotation chain run 16.4",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-274",
+  "description": "intake candidate rotation MAXPlanetary12to1 envelope",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-275",
+  "description": "intake candidate rotation NEO envelope",
+  "basis": "supplier",
+  "sku": "REV-21-1650 V1.1",
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-279",
+  "description": "original lower guide bracket -1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-282",
+  "description": "original lower guide bracket -1 leg 200.21499999999997-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-285",
+  "description": "original lower guide bracket -1 leg 212.915-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-288",
+  "description": "original lower guide bracket -1 foot 22.225-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-291",
+  "description": "original lower guide bracket -1 foot 34.925-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-292",
+  "description": "original lower shooter bracket -1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-295",
+  "description": "original lower shooter bracket -1 leg 200.21499999999997-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-298",
+  "description": "original lower shooter bracket -1 leg 212.915-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-3",
+  "description": "original carrier connection web -1 1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-301",
+  "description": "original lower shooter bracket -1 foot 22.225-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-304",
+  "description": "original lower shooter bracket -1 foot 34.925-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-305",
+  "description": "original lower guide bracket 1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-308",
+  "description": "original lower guide bracket 1 leg 200.21499999999997-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-311",
+  "description": "original lower guide bracket 1 leg 212.915-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-314",
+  "description": "original lower guide bracket 1 foot 22.225-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-317",
+  "description": "original lower guide bracket 1 foot 34.925-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-318",
+  "description": "original lower shooter bracket 1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-321",
+  "description": "original lower shooter bracket 1 leg 200.21499999999997-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-324",
+  "description": "original lower shooter bracket 1 leg 212.915-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-327",
+  "description": "original lower shooter bracket 1 foot 22.225-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-330",
+  "description": "original lower shooter bracket 1 foot 34.925-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-331",
+  "description": "original upper portal gusset -1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-334",
+  "description": "original upper portal gusset -1(-250, 892.115)-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-337",
+  "description": "original upper portal gusset -1(-250, 904.8149999999999)-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-340",
+  "description": "original upper portal gusset -1(-262.7, 942.915)-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-343",
+  "description": "original upper portal gusset -1(-237.3, 942.915)-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-344",
+  "description": "original carriage drop yoke -1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-347",
+  "description": "original carriage drop yoke -1(169.5, -211.0)-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-350",
+  "description": "original carriage drop yoke -1(186.5, -211.0)-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-353",
+  "description": "original carriage drop yoke -1(169.5, -266.825)-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-356",
+  "description": "original carriage drop yoke -1(186.5, -266.825)-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-357",
+  "description": "original upper portal gusset 1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-360",
+  "description": "original upper portal gusset 1(250, 892.115)-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-363",
+  "description": "original upper portal gusset 1(250, 904.8149999999999)-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-366",
+  "description": "original upper portal gusset 1(237.3, 942.915)-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-369",
+  "description": "original upper portal gusset 1(262.7, 942.915)-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-370",
+  "description": "original carriage drop yoke 1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-373",
+  "description": "original carriage drop yoke 1(169.5, 211.0)-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-376",
+  "description": "original carriage drop yoke 1(186.5, 211.0)-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-379",
+  "description": "original carriage drop yoke 1(169.5, 266.825)-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-382",
+  "description": "original carriage drop yoke 1(186.5, 266.825)-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-383",
+  "description": "original pad backing (-1, 230.4, -1)",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-386",
+  "description": "original pad backing (-1, 230.4, -1) pad 235.4 nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-389",
+  "description": "original pad backing (-1, 230.4, -1) pad 245.4 nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-39",
+  "description": "cartridge -1 -152.4 driven pulley envelope",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-392",
+  "description": "original pad backing (-1, 230.4, -1) carriage 234.4-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-395",
+  "description": "original pad backing (-1, 230.4, -1) carriage 246.4-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-396",
+  "description": "original pad backing (-1, 230.4, 1)",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-399",
+  "description": "original pad backing (-1, 230.4, 1) pad 235.4 nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-4",
+  "description": "original shooter side rail 1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-40",
+  "description": "cartridge -1 -152.4 driver pulley envelope",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-402",
+  "description": "original pad backing (-1, 230.4, 1) pad 245.4 nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-405",
+  "description": "original pad backing (-1, 230.4, 1) carriage 234.4-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-408",
+  "description": "original pad backing (-1, 230.4, 1) carriage 246.4-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-409",
+  "description": "original pad backing (-1, 290.4, -1)",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-41",
+  "description": "cartridge -1 -152.4 belt pitch band representation",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-412",
+  "description": "original pad backing (-1, 290.4, -1) pad 295.4 nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-415",
+  "description": "original pad backing (-1, 290.4, -1) pad 305.4 nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-418",
+  "description": "original pad backing (-1, 290.4, -1) carriage 294.4-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-42",
+  "description": "cartridge -1 152.4 original wheel shell representation",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-421",
+  "description": "original pad backing (-1, 290.4, -1) carriage 306.4-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-422",
+  "description": "original pad backing (-1, 290.4, 1)",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-425",
+  "description": "original pad backing (-1, 290.4, 1) pad 295.4 nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-428",
+  "description": "original pad backing (-1, 290.4, 1) pad 305.4 nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-43",
+  "description": "cartridge -1 152.4 nominal tread annulus",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-431",
+  "description": "original pad backing (-1, 290.4, 1) carriage 294.4-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-434",
+  "description": "original pad backing (-1, 290.4, 1) carriage 306.4-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-435",
+  "description": "original pad backing (1, 230.4, -1)",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-438",
+  "description": "original pad backing (1, 230.4, -1) pad 235.4 nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-44",
+  "description": "cartridge -1 152.4 shaft round envelope (hex omitted)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-441",
+  "description": "original pad backing (1, 230.4, -1) pad 245.4 nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-444",
+  "description": "original pad backing (1, 230.4, -1) carriage 234.4-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-447",
+  "description": "original pad backing (1, 230.4, -1) carriage 246.4-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-448",
+  "description": "original pad backing (1, 230.4, 1)",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-45",
+  "description": "cartridge -1 152.4 drilled bearing carrier -40",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-451",
+  "description": "original pad backing (1, 230.4, 1) pad 235.4 nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-454",
+  "description": "original pad backing (1, 230.4, 1) pad 245.4 nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-457",
+  "description": "original pad backing (1, 230.4, 1) carriage 234.4-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-46",
+  "description": "cartridge -1 152.4 bearing envelope -40",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-460",
+  "description": "original pad backing (1, 230.4, 1) carriage 246.4-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-461",
+  "description": "original pad backing (1, 290.4, -1)",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-464",
+  "description": "original pad backing (1, 290.4, -1) pad 295.4 nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-467",
+  "description": "original pad backing (1, 290.4, -1) pad 305.4 nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-47",
+  "description": "cartridge -1 152.4 drilled bearing carrier 40",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-470",
+  "description": "original pad backing (1, 290.4, -1) carriage 294.4-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-473",
+  "description": "original pad backing (1, 290.4, -1) carriage 306.4-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-474",
+  "description": "original pad backing (1, 290.4, 1)",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-477",
+  "description": "original pad backing (1, 290.4, 1) pad 295.4 nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-48",
+  "description": "cartridge -1 152.4 bearing envelope 40",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-480",
+  "description": "original pad backing (1, 290.4, 1) pad 305.4 nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-483",
+  "description": "original pad backing (1, 290.4, 1) carriage 294.4-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-486",
+  "description": "original pad backing (1, 290.4, 1) carriage 306.4-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-49",
+  "description": "cartridge -1 152.4 collar envelope -47.14375",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-5",
+  "description": "original shooter upright 1 279.4",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-50",
+  "description": "cartridge -1 152.4 collar envelope 47.14375",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-504",
+  "description": "intake candidate side pinch belt -1 (1)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-505",
+  "description": "intake candidate vertical stub shaft (-1, -19.049999999999997) (1)",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-506",
+  "description": "intake candidate 12T track pulley outer-profile representation (-1, -19.049999999999997) (1)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-507",
+  "description": "intake candidate bearing representation (-1, -19.049999999999997)-18.4 (1)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-508",
+  "description": "intake candidate bearing representation (-1, -19.049999999999997)25.4 (1)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-509",
+  "description": "intake candidate vertical stub shaft (-1, 146.05) (1)",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-51",
+  "description": "cartridge -1 152.4 collar envelope 73",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-510",
+  "description": "intake candidate 12T track pulley outer-profile representation (-1, 146.05) (1)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-511",
+  "description": "intake candidate bearing representation (-1, 146.05)-18.4 (1)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-512",
+  "description": "intake candidate bearing representation (-1, 146.05)25.4 (1)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-513",
+  "description": "intake candidate pinch NEO body -1 (1)",
+  "basis": "supplier",
+  "sku": "REV-21-1650 V1.1",
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-514",
+  "description": "intake candidate pinch motor plate -1 (1)",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-515",
+  "description": "intake candidate pinch transfer pulley (-1, -191.05)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-516",
+  "description": "intake candidate pinch transfer pulley (-1, -160) (1)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-517",
+  "description": "intake candidate remote drive shaft coupling hypothesis -1 (1)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-518",
+  "description": "intake candidate pinch transfer belt -1 (1)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-519",
+  "description": "intake candidate side pinch belt 1 (1)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-52",
+  "description": "cartridge -1 152.4 NEO body envelope",
+  "basis": "supplier",
+  "sku": "REV-21-1650 V1.1",
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-520",
+  "description": "intake candidate vertical stub shaft (1, -19.049999999999997) (1)",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-521",
+  "description": "intake candidate 12T track pulley outer-profile representation (1, -19.049999999999997) (1)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-522",
+  "description": "intake candidate bearing representation (1, -19.049999999999997)-18.4 (1)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-523",
+  "description": "intake candidate bearing representation (1, -19.049999999999997)25.4 (1)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-524",
+  "description": "intake candidate vertical stub shaft (1, 146.05) (1)",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-525",
+  "description": "intake candidate 12T track pulley outer-profile representation (1, 146.05) (1)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-526",
+  "description": "intake candidate bearing representation (1, 146.05)-18.4 (1)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-527",
+  "description": "intake candidate bearing representation (1, 146.05)25.4 (1)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-528",
+  "description": "intake candidate pinch NEO body 1 (1)",
+  "basis": "supplier",
+  "sku": "REV-21-1650 V1.1",
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-529",
+  "description": "intake candidate pinch motor plate 1 (1)",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-53",
+  "description": "cartridge -1 152.4 drilled motor slider",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-530",
+  "description": "intake candidate pinch transfer pulley (1, 191.05)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-531",
+  "description": "intake candidate pinch transfer pulley (1, 160) (1)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-532",
+  "description": "intake candidate remote drive shaft coupling hypothesis 1 (1)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-533",
+  "description": "intake candidate pinch transfer belt 1 (1)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-534",
+  "description": "candidate 1p5mm outer belt tread -1",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-535",
+  "description": "candidate 1p5mm outer belt tread 1",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-536",
+  "description": "intake candidate original cradle side weldment -1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-537",
+  "description": "intake candidate cradle side pivot -1 (1)",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-538",
+  "description": "intake candidate original cradle side weldment 1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-539",
+  "description": "intake candidate cradle side pivot 1 (1)",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-54",
+  "description": "cartridge -1 152.4 slotted carrier bridge proposal",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-540",
+  "description": "Swerve frame - interchangeable drilled rail",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-541",
+  "description": "Swerve frame - bolt crush sleeve",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-542",
+  "description": "10-32 x 2.75 socket head",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-543",
+  "description": "10-32 locknut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-544",
+  "description": "Deck support - transverse member",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-545",
+  "description": "Deck support - rear stringer",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-546",
+  "description": "Deck support - open socket pedestal",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-547",
+  "description": "Swerve frame - bolt crush sleeve",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-548",
+  "description": "Swerve frame - bolt crush sleeve",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-549",
+  "description": "Swerve frame - bolt crush sleeve",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-550",
+  "description": "Swerve frame - interchangeable drilled rail",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-551",
+  "description": "Swerve frame - bolt crush sleeve",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-552",
+  "description": "Swerve frame - bolt crush sleeve",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-553",
+  "description": "Swerve frame - bolt crush sleeve",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-554",
+  "description": "Swerve frame - bolt crush sleeve",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-555",
+  "description": "Swerve frame - interchangeable drilled rail",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-556",
+  "description": "Swerve frame - bolt crush sleeve",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-557",
+  "description": "Swerve frame - bolt crush sleeve",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-558",
+  "description": "Swerve frame - bolt crush sleeve",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-559",
+  "description": "Swerve frame - bolt crush sleeve",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-560",
+  "description": "10-32 x 2.75 socket head",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-561",
+  "description": "10-32 locknut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-562",
+  "description": "10-32 x 2.75 socket head",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-563",
+  "description": "10-32 locknut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-564",
+  "description": "10-32 x 2.75 socket head",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-565",
+  "description": "10-32 locknut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-566",
+  "description": "10-32 x 2.75 socket head",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-567",
+  "description": "10-32 locknut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-568",
+  "description": "10-32 x 2.75 socket head",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-569",
+  "description": "10-32 locknut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-57",
+  "description": "cartridge -1 152.4 bridge spacer -25.4",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-570",
+  "description": "10-32 x 2.75 socket head",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-571",
+  "description": "10-32 locknut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-572",
+  "description": "10-32 x 2.75 socket head",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-573",
+  "description": "10-32 locknut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-574",
+  "description": "10-32 x 2.75 socket head",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-575",
+  "description": "10-32 locknut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-576",
+  "description": "10-32 x 2.75 socket head",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-577",
+  "description": "10-32 locknut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-578",
+  "description": "10-32 x 2.75 socket head",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-579",
+  "description": "10-32 locknut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-58",
+  "description": "cartridge -1 152.4 bridge bolt nominal -25.4",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-580",
+  "description": "10-32 x 2.75 socket head",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-581",
+  "description": "10-32 locknut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-582",
+  "description": "Deck support - rear stringer",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-583",
+  "description": "Deck support - open socket pedestal",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-584",
+  "description": "Deck support - open socket pedestal",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-585",
+  "description": "Deck support - open socket pedestal",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-586",
+  "description": "Mast support - stepped web",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-587",
+  "description": "Mast support - bridge extension",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-588",
+  "description": "Mast support - stepped web",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-589",
+  "description": "Mast support - bridge extension",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-59",
+  "description": "cartridge -1 152.4 bridge spacer 25.4",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-590",
+  "description": "Mast support - bridge extension",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-591",
+  "description": "Mast support - bridge extension",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-592",
+  "description": "Front bumper frame rail",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-593",
+  "description": "M6 x 25 bumper socket screw",
+  "basis": "allowance",
+  "sku": "MISUMI CB6-25",
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-594",
+  "description": "M6 captive square flange barrel nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-595",
+  "description": "Rear bumper frame rail",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-596",
+  "description": "Left bumper frame rail",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-597",
+  "description": "Right bumper frame rail",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-598",
+  "description": "M6 x 25 bumper socket screw",
+  "basis": "allowance",
+  "sku": "MISUMI CB6-25",
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-599",
+  "description": "M6 captive square flange barrel nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-6",
+  "description": "original carrier connection web 1 -1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-60",
+  "description": "cartridge -1 152.4 bridge bolt nominal 25.4",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-600",
+  "description": "M6 x 25 bumper socket screw",
+  "basis": "allowance",
+  "sku": "MISUMI CB6-20",
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-601",
+  "description": "M6 captive square flange barrel nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-602",
+  "description": "M6 x 25 bumper socket screw",
+  "basis": "allowance",
+  "sku": "MISUMI CB6-20",
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-603",
+  "description": "M6 captive square flange barrel nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-604",
+  "description": "M6 x 25 bumper socket screw",
+  "basis": "allowance",
+  "sku": "MISUMI CB6-25",
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-605",
+  "description": "M6 captive square flange barrel nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-606",
+  "description": "M6 x 25 bumper socket screw",
+  "basis": "allowance",
+  "sku": "MISUMI CB6-25",
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-607",
+  "description": "M6 captive square flange barrel nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-608",
+  "description": "M6 x 25 bumper socket screw",
+  "basis": "allowance",
+  "sku": "MISUMI CB6-25",
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-609",
+  "description": "M6 captive square flange barrel nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-610",
+  "description": "M6 x 25 bumper socket screw",
+  "basis": "allowance",
+  "sku": "MISUMI CB6-25",
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-611",
+  "description": "M6 captive square flange barrel nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-7",
+  "description": "original carrier connection web 1 1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-73",
+  "description": "cartridge -1 152.4 driven pulley envelope",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-74",
+  "description": "cartridge -1 152.4 driver pulley envelope",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-75",
+  "description": "cartridge -1 152.4 belt pitch band representation",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-76",
+  "description": "cartridge 1 -152.4 original wheel shell representation",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-77",
+  "description": "cartridge 1 -152.4 nominal tread annulus",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-78",
+  "description": "cartridge 1 -152.4 shaft round envelope (hex omitted)",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-79",
+  "description": "cartridge 1 -152.4 drilled bearing carrier -40",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-8",
+  "description": "cartridge -1 -152.4 original wheel shell representation",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-80",
+  "description": "cartridge 1 -152.4 bearing envelope -40",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-81",
+  "description": "cartridge 1 -152.4 drilled bearing carrier 40",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-82",
+  "description": "cartridge 1 -152.4 bearing envelope 40",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-83",
+  "description": "cartridge 1 -152.4 collar envelope -47.14375",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-84",
+  "description": "cartridge 1 -152.4 collar envelope 47.14375",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-85",
+  "description": "cartridge 1 -152.4 collar envelope 73",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-86",
+  "description": "cartridge 1 -152.4 NEO body envelope",
+  "basis": "supplier",
+  "sku": "REV-21-1650 V1.1",
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-87",
+  "description": "cartridge 1 -152.4 drilled motor slider",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-88",
+  "description": "cartridge 1 -152.4 slotted carrier bridge proposal",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-9",
+  "description": "cartridge -1 -152.4 nominal tread annulus",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-91",
+  "description": "cartridge 1 -152.4 bridge spacer -25.4",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-92",
+  "description": "cartridge 1 -152.4 bridge bolt nominal -25.4",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-93",
+  "description": "cartridge 1 -152.4 bridge spacer 25.4",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r7-body-94",
+  "description": "cartridge 1 -152.4 bridge bolt nominal 25.4",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r8-fixed-climb-mast/crossmember-with-four-rail-mounting-holes",
+  "description": "Crossmember with four rail mounting holes",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r8-fixed-climb-mast/drive-gearbox-envelope",
+  "description": "Drive gearbox envelope",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r8-fixed-climb-mast/drive-motor-envelope",
+  "description": "Drive motor envelope",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r8-fixed-climb-mast/outer-guide-with-double-shear-lock-bore",
+  "description": "Outer guide with double shear lock bore",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r8-fixed-climb-mast/screw-envelope",
+  "description": "Screw envelope",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r8-fixed-climb-mast/spring-return-housing-envelope",
+  "description": "Spring return housing envelope",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r8-fixed-climb-mast/thrust-bearing-support-envelope",
+  "description": "Thrust bearing support envelope",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r8-sliding-saddle/chain-bearing-roof",
+  "description": "Chain bearing roof",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r8-sliding-saddle/inner-sliding-tube-with-lock-bore",
+  "description": "Inner sliding tube with lock bore",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r8-sliding-saddle/nut-carrier-plate",
+  "description": "Nut carrier plate",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r8-sliding-saddle/retaining-lip",
+  "description": "Retaining lip",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r8-sliding-saddle/saddle-spine",
+  "description": "Saddle spine",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r8-sliding-saddle/top-bracket",
+  "description": "Top bracket",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r8-sliding-saddle/travelling-nut-envelope",
+  "description": "Travelling nut envelope",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r8-transverse-lock/spring-engaged-through-pin",
+  "description": "Spring engaged through pin",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/front-lower-cover-staple-1",
+  "description": "Front lower cover staple 1",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/front-lower-cover-staple-2",
+  "description": "Front lower cover staple 2",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/front-lower-cover-staple-3",
+  "description": "Front lower cover staple 3",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/front-lower-cover-staple-4",
+  "description": "Front lower cover staple 4",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/front-lower-cover-staple-5",
+  "description": "Front lower cover staple 5",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/front-lower-cover-staple-6",
+  "description": "Front lower cover staple 6",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/front-lower-cover-staple-7",
+  "description": "Front lower cover staple 7",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/front-lower-cover-staple-8",
+  "description": "Front lower cover staple 8",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/front-lower-cover-staple-9",
+  "description": "Front lower cover staple 9",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/front-upper-cover-staple-1",
+  "description": "Front upper cover staple 1",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/front-upper-cover-staple-2",
+  "description": "Front upper cover staple 2",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/front-upper-cover-staple-3",
+  "description": "Front upper cover staple 3",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/front-upper-cover-staple-4",
+  "description": "Front upper cover staple 4",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/front-upper-cover-staple-5",
+  "description": "Front upper cover staple 5",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/front-upper-cover-staple-6",
+  "description": "Front upper cover staple 6",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/front-upper-cover-staple-7",
+  "description": "Front upper cover staple 7",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/front-upper-cover-staple-8",
+  "description": "Front upper cover staple 8",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/front-upper-cover-staple-9",
+  "description": "Front upper cover staple 9",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/left-lower-cover-staple-1",
+  "description": "Left lower cover staple 1",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/left-lower-cover-staple-2",
+  "description": "Left lower cover staple 2",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/left-lower-cover-staple-3",
+  "description": "Left lower cover staple 3",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/left-lower-cover-staple-4",
+  "description": "Left lower cover staple 4",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/left-lower-cover-staple-5",
+  "description": "Left lower cover staple 5",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/left-lower-cover-staple-6",
+  "description": "Left lower cover staple 6",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/left-lower-cover-staple-7",
+  "description": "Left lower cover staple 7",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/left-lower-cover-staple-8",
+  "description": "Left lower cover staple 8",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/left-lower-cover-staple-9",
+  "description": "Left lower cover staple 9",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/left-upper-cover-staple-1",
+  "description": "Left upper cover staple 1",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/left-upper-cover-staple-2",
+  "description": "Left upper cover staple 2",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/left-upper-cover-staple-3",
+  "description": "Left upper cover staple 3",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/left-upper-cover-staple-4",
+  "description": "Left upper cover staple 4",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/left-upper-cover-staple-5",
+  "description": "Left upper cover staple 5",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/left-upper-cover-staple-6",
+  "description": "Left upper cover staple 6",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/left-upper-cover-staple-7",
+  "description": "Left upper cover staple 7",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/left-upper-cover-staple-8",
+  "description": "Left upper cover staple 8",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/left-upper-cover-staple-9",
+  "description": "Left upper cover staple 9",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/rear-lower-cover-staple-1",
+  "description": "Rear lower cover staple 1",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/rear-lower-cover-staple-2",
+  "description": "Rear lower cover staple 2",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/rear-lower-cover-staple-3",
+  "description": "Rear lower cover staple 3",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/rear-lower-cover-staple-4",
+  "description": "Rear lower cover staple 4",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/rear-lower-cover-staple-5",
+  "description": "Rear lower cover staple 5",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/rear-lower-cover-staple-6",
+  "description": "Rear lower cover staple 6",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/rear-lower-cover-staple-7",
+  "description": "Rear lower cover staple 7",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/rear-lower-cover-staple-8",
+  "description": "Rear lower cover staple 8",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/rear-lower-cover-staple-9",
+  "description": "Rear lower cover staple 9",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/rear-upper-cover-staple-1",
+  "description": "Rear upper cover staple 1",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/rear-upper-cover-staple-2",
+  "description": "Rear upper cover staple 2",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/rear-upper-cover-staple-3",
+  "description": "Rear upper cover staple 3",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/rear-upper-cover-staple-4",
+  "description": "Rear upper cover staple 4",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/rear-upper-cover-staple-5",
+  "description": "Rear upper cover staple 5",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/rear-upper-cover-staple-6",
+  "description": "Rear upper cover staple 6",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/rear-upper-cover-staple-7",
+  "description": "Rear upper cover staple 7",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/rear-upper-cover-staple-8",
+  "description": "Rear upper cover staple 8",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/rear-upper-cover-staple-9",
+  "description": "Rear upper cover staple 9",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/right-lower-cover-staple-1",
+  "description": "Right lower cover staple 1",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/right-lower-cover-staple-2",
+  "description": "Right lower cover staple 2",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/right-lower-cover-staple-3",
+  "description": "Right lower cover staple 3",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/right-lower-cover-staple-4",
+  "description": "Right lower cover staple 4",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/right-lower-cover-staple-5",
+  "description": "Right lower cover staple 5",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/right-lower-cover-staple-6",
+  "description": "Right lower cover staple 6",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/right-lower-cover-staple-7",
+  "description": "Right lower cover staple 7",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/right-lower-cover-staple-8",
+  "description": "Right lower cover staple 8",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/right-lower-cover-staple-9",
+  "description": "Right lower cover staple 9",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/right-upper-cover-staple-1",
+  "description": "Right upper cover staple 1",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/right-upper-cover-staple-2",
+  "description": "Right upper cover staple 2",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/right-upper-cover-staple-3",
+  "description": "Right upper cover staple 3",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/right-upper-cover-staple-4",
+  "description": "Right upper cover staple 4",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/right-upper-cover-staple-5",
+  "description": "Right upper cover staple 5",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/right-upper-cover-staple-6",
+  "description": "Right upper cover staple 6",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/right-upper-cover-staple-7",
+  "description": "Right upper cover staple 7",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/right-upper-cover-staple-8",
+  "description": "Right upper cover staple 8",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/right-upper-cover-staple-9",
+  "description": "Right upper cover staple 9",
+  "basis": "allowance",
+  "sku": "Arrow T50 506",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-cover-envelope/sewn-nylon-skin-nominal-envelope",
+  "description": "Sewn nylon skin, nominal envelope",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-bumper-washers/side-m6-washer-175-1",
+  "description": "Side M6 washer -175 -1",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-bumper-washers/side-m6-washer-326-1",
+  "description": "Side M6 washer 326 -1",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-electrical-supports/baseplate-bolt-139-7-80-nut",
+  "description": "baseplate-bolt--139.7--80-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-electrical-supports/baseplate-bolt-266-7-80-nut",
+  "description": "baseplate-bolt--266.7--80-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-electrical-supports/baseplate-crush-sleeve-139-7-80",
+  "description": "baseplate-crush-sleeve--139.7--80",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-electrical-supports/baseplate-crush-sleeve-266-7-80",
+  "description": "baseplate-crush-sleeve--266.7--80",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-electrical-supports/breaker-base-bolt-244-158-nut",
+  "description": "breaker-base-bolt--244--158-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-electrical-supports/breaker-base-bolt-244-180-nut",
+  "description": "breaker-base-bolt--244--180-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-electrical-supports/breaker-base-bolt-306-158-nut",
+  "description": "breaker-base-bolt--306--158-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-electrical-supports/breaker-base-bolt-306-180-nut",
+  "description": "breaker-base-bolt--306--180-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-electrical-supports/breaker-mount-bolt-251-425-161-03-nut",
+  "description": "breaker-mount-bolt--251.425--161.03-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-electrical-supports/breaker-mount-bolt-308-575-188-97-nut",
+  "description": "breaker-mount-bolt--308.575--188.97-nut",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-electrical-supports/breaker-pedestal",
+  "description": "breaker-pedestal",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-electrical-supports/jtd-fw0010-375031-ss-at-251-425",
+  "description": "JTD FW0010-375031-SS at -251.425",
+  "basis": "allowance",
+  "sku": "JTD FW0010-375031-SS",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-electrical-supports/jtd-fw0010-375031-ss-at-308-575",
+  "description": "JTD FW0010-375031-SS at -308.575",
+  "basis": "allowance",
+  "sku": "JTD FW0010-375031-SS",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-electrical-supports/radio-power-deck-tab",
+  "description": "radio-power-deck-tab",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-electrical-supports/stack-post-lower-120-154",
+  "description": "stack-post-lower--120-154",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-electrical-supports/stack-post-lower-120-306",
+  "description": "stack-post-lower--120-306",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-electrical-supports/stack-post-lower-280-154",
+  "description": "stack-post-lower--280-154",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-electrical-supports/stack-post-lower-280-306",
+  "description": "stack-post-lower--280-306",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-electrical-supports/stack-post-upper-120-154",
+  "description": "stack-post-upper--120-154",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-electrical-supports/stack-post-upper-120-306",
+  "description": "stack-post-upper--120-306",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-electrical-supports/stack-post-upper-280-154",
+  "description": "stack-post-upper--280-154",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-electrical-supports/stack-post-upper-280-306",
+  "description": "stack-post-upper--280-306",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-front-frame/inner-crossmember-711-2-mm",
+  "description": "Inner crossmember 711.2 mm",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-front-frame/nose-spacer-at-160-0-mm",
+  "description": "Nose spacer at -160.0 mm",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-front-frame/nose-spacer-at-342-9-mm",
+  "description": "Nose spacer at -342.9 mm",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-1-0-30-gap-shim-11-5",
+  "description": "Lead 1 0.30 gap shim -11.5",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-1-lower-epdm-liner-envelope",
+  "description": "Lead 1 lower EPDM liner envelope",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-1-lower-m4-x-10-deck-screw-1",
+  "description": "Lead 1 lower M4 x 10 deck screw 1",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-1-lower-m4-x-10-deck-screw-2",
+  "description": "Lead 1 lower M4 x 10 deck screw 2",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-1-m4-x-16-clamp-screw-11-5",
+  "description": "Lead 1 M4 x 16 clamp screw -11.5",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-1-one-piece-raised-clamp-saddle",
+  "description": "Lead 1 one-piece raised clamp saddle",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-1-pacer-tbca2-r-boot-envelope",
+  "description": "Lead 1 Pacer TBCA2-R boot envelope",
+  "basis": "unknown",
+  "sku": "Pacer TBCA2-R",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-1-panduit-lcax6-14-l-lug-envelope",
+  "description": "Lead 1 Panduit LCAX6-14-L lug envelope",
+  "basis": "unknown",
+  "sku": "Panduit LCAX6-14-L",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-1-southwire-104110604-local-cable-envelope",
+  "description": "Lead 1 Southwire 104110604 local cable envelope",
+  "basis": "unknown",
+  "sku": "Southwire 104110604 by cut length",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-1-split-clamp-cap",
+  "description": "Lead 1 split clamp cap",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-1-tapped-stand-off-1",
+  "description": "Lead 1 tapped stand-off 1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-1-tapped-stand-off-2",
+  "description": "Lead 1 tapped stand-off 2",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-1-upper-epdm-liner-envelope",
+  "description": "Lead 1 upper EPDM liner envelope",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-1-upper-m4-x-10-shelf-screw-1",
+  "description": "Lead 1 upper M4 x 10 shelf screw 1",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-1-upper-m4-x-10-shelf-screw-2",
+  "description": "Lead 1 upper M4 x 10 shelf screw 2",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-2-0-30-gap-shim-11-5",
+  "description": "Lead 2 0.30 gap shim -11.5",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-2-lower-epdm-liner-envelope",
+  "description": "Lead 2 lower EPDM liner envelope",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-2-lower-m4-x-10-deck-screw-1",
+  "description": "Lead 2 lower M4 x 10 deck screw 1",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-2-lower-m4-x-10-deck-screw-2",
+  "description": "Lead 2 lower M4 x 10 deck screw 2",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-2-m4-x-16-clamp-screw-11-5",
+  "description": "Lead 2 M4 x 16 clamp screw -11.5",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-2-one-piece-raised-clamp-saddle",
+  "description": "Lead 2 one-piece raised clamp saddle",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-2-pacer-tbca2-r-boot-envelope",
+  "description": "Lead 2 Pacer TBCA2-R boot envelope",
+  "basis": "unknown",
+  "sku": "Pacer TBCA2-R",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-2-panduit-lcax6-14-l-lug-envelope",
+  "description": "Lead 2 Panduit LCAX6-14-L lug envelope",
+  "basis": "unknown",
+  "sku": "Panduit LCAX6-14-L",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-2-southwire-104110604-local-cable-envelope",
+  "description": "Lead 2 Southwire 104110604 local cable envelope",
+  "basis": "unknown",
+  "sku": "Southwire 104110604 by cut length",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-2-split-clamp-cap",
+  "description": "Lead 2 split clamp cap",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-2-tapped-stand-off-1",
+  "description": "Lead 2 tapped stand-off 1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-2-tapped-stand-off-2",
+  "description": "Lead 2 tapped stand-off 2",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-2-upper-epdm-liner-envelope",
+  "description": "Lead 2 upper EPDM liner envelope",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-2-upper-m4-x-10-shelf-screw-1",
+  "description": "Lead 2 upper M4 x 10 shelf screw 1",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-local-breaker-harness/lead-2-upper-m4-x-10-shelf-screw-2",
+  "description": "Lead 2 upper M4 x 10 shelf screw 2",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-mast-attachment/accu-hpn-m8-c8-z-23-329",
+  "description": "Accu HPN-M8-C8-Z 23 -329",
+  "basis": "allowance",
+  "sku": "Accu HPN-M8-C8-Z",
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-mast-attachment/accu-hpn-m8-c8-z-53-329",
+  "description": "Accu HPN-M8-C8-Z 53 -329",
+  "basis": "allowance",
+  "sku": "Accu HPN-M8-C8-Z",
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-mast-attachment/crossmember-flush-weld-sleeve-23-329",
+  "description": "Crossmember flush weld sleeve 23 -329",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-mast-attachment/crossmember-flush-weld-sleeve-53-329",
+  "description": "Crossmember flush weld sleeve 53 -329",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-mast-attachment/m8-plain-washer-23-329",
+  "description": "M8 plain washer 23 -329",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-mast-attachment/m8-plain-washer-53-329",
+  "description": "M8 plain washer 53 -329",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-mast-attachment/misumi-cb8-100-23-329",
+  "description": "MISUMI CB8-100 23 -329",
+  "basis": "allowance",
+  "sku": "MISUMI CB8-100",
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-mast-attachment/misumi-cb8-100-53-329",
+  "description": "MISUMI CB8-100 53 -329",
+  "basis": "allowance",
+  "sku": "MISUMI CB8-100",
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-mast-attachment/rail-flush-weld-sleeve-23-329",
+  "description": "Rail flush weld sleeve 23 -329",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-mast-attachment/rail-flush-weld-sleeve-53-329",
+  "description": "Rail flush weld sleeve 53 -329",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-removable-bumper-cores/fixed-bumper-end-noodle-1-0",
+  "description": "fixed bumper end noodle -1 0",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-removable-bumper-cores/fixed-bumper-end-noodle-1-1",
+  "description": "fixed bumper end noodle -1 1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-removable-bumper-cores/fixed-bumper-side-noodle-1-0",
+  "description": "fixed bumper side noodle -1 0",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-removable-bumper-cores/fixed-bumper-side-noodle-1-1",
+  "description": "fixed bumper side noodle -1 1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-removable-bumper-cores/front-drilled-bumper-wood",
+  "description": "Front drilled bumper wood",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-removable-bumper-cores/left-drilled-bumper-wood",
+  "description": "Left drilled bumper wood",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-removable-bumper-cores/rear-drilled-bumper-wood",
+  "description": "Rear drilled bumper wood",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-removable-bumper-cores/right-drilled-bumper-wood",
+  "description": "Right drilled bumper wood",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-upper-lift-drive/central-gearbox-weld-tab-1",
+  "description": "Central gearbox weld tab -1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-upper-lift-drive/gearcase-mount-10-32-x-7-16-screw-1-1",
+  "description": "Gearcase mount 10-32 x 7-16 screw -1 1",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-upper-lift-drive/gearcase-mount-10-32-x-7-16-screw-1-2",
+  "description": "Gearcase mount 10-32 x 7-16 screw -1 2",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-upper-lift-drive/gearcase-mount-10-32-x-7-16-screw-1-3",
+  "description": "Gearcase mount 10-32 x 7-16 screw -1 3",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-upper-lift-drive/gearcase-mount-10-32-x-7-16-screw-1-4",
+  "description": "Gearcase mount 10-32 x 7-16 screw -1 4",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-upper-lift-drive/lift-maxplanetary-stack-reservation",
+  "description": "Lift MAXPlanetary stack reservation",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-upper-lift-drive/lift-neo-motor-reservation",
+  "description": "Lift NEO motor reservation",
+  "basis": "supplier",
+  "sku": "REV-21-1650 V1.1",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-upper-lift-drive/outer-bearing-weld-tab-1",
+  "description": "Outer bearing weld tab -1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-upper-lift-drive/rev-21-1135-cut-595-5-mm-rounded-hex-shaft",
+  "description": "REV-21-1135 cut 595.5 mm rounded hex shaft",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-upper-lift-drive/rev-21-1916-flanged-bearing-reservation-1",
+  "description": "REV-21-1916 flanged bearing reservation -1",
+  "basis": "unknown",
+  "sku": "REV-21-1916-PK4",
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-upper-lift-drive/rev-21-2016-upper-lift-sprocket-reservation-1",
+  "description": "REV-21-2016 upper lift sprocket reservation -1",
+  "basis": "unknown",
+  "sku": "REV-21-2016",
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-upper-lift-drive/rev-21-2120-through-bore-gearbox-clearance-model",
+  "description": "REV-21-2120 through-bore gearbox clearance model",
+  "basis": "supplier",
+  "sku": "REV-21-2120 assembly and installed REV-21-2122 adapter",
+  "bodyCount": 1
+ },
+ {
+  "id": "r9-upper-lift-drive/upper-shaft-end-washer-1",
+  "description": "Upper shaft end washer -1",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-upper-lift-drive/upper-shaft-tapped-end-screw-1",
+  "description": "Upper shaft tapped end screw -1",
+  "basis": "allowance",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-upper-lift-drive/upper-shaft-turned-inner-spacer-1",
+  "description": "Upper shaft turned inner spacer -1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "r9-upper-lift-drive/upper-shaft-turned-outer-spacer-1",
+  "description": "Upper shaft turned outer spacer -1",
+  "basis": "stock",
+  "sku": null,
+  "bodyCount": 2
+ },
+ {
+  "id": "welds-and-finishes",
+  "description": "Added weld metal, coating and shop substitutions",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 0
+ },
+ {
+  "id": "wiring-and-connectors",
+  "description": "Harnesses, lugs, retainers and battery disconnect",
+  "basis": "unknown",
+  "sku": null,
+  "bodyCount": 0
+ }
+]

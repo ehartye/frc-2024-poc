@@ -1,0 +1,118 @@
+{
+  "sourceSha256": "04a04028b1caeee883fe617c27f6e6646067fbb889c7d48ce72324a0f53653a7",
+  "archiveSha256": "4663d9fa55b5f3eb8e23549f3205a2d29248322543beb3e7a7d8076a23f93f6d",
+  "rawBoundsMm": [
+    -36.851405809996685,
+    -4.826000000000003,
+    -24.130000100000593,
+    36.85140580999668,
+    37.32303193016646,
+    24.130000100000586
+  ],
+  "installedBoundsMm": [
+    -316.8514058099967,
+    -187.1300001000006,
+    248.92548403491674,
+    -243.14859419000334,
+    -138.8699998999994,
+    291.0745159650832
+  ],
+  "sourceShells": 16,
+  "sourceSolids": 0,
+  "sourceFaces": 530,
+  "pedestalLandMm2": 400.4906886206811,
+  "washers": [
+    {
+      "xyMm": [
+        -308.575,
+        -176.97
+      ],
+      "landMm2": 34.31676402187825,
+      "supplierFaceAreaInsideWasherMm2": 0,
+      "driverGaugeMm": [
+        6.35,
+        48
+      ],
+      "driverSupplierCrossingMm2": 0,
+      "driverOtherBoxes": []
+    },
+    {
+      "xyMm": [
+        -251.425,
+        -149.03
+      ],
+      "landMm2": 34.31676402187763,
+      "supplierFaceAreaInsideWasherMm2": 0,
+      "driverGaugeMm": [
+        6.35,
+        48
+      ],
+      "driverSupplierCrossingMm2": 0,
+      "driverOtherBoxes": []
+    }
+  ],
+  "terminalAccess": [
+    {
+      "xyMm": [
+        -308.575,
+        -149.03
+      ],
+      "gaugeMm": [
+        12,
+        42
+      ],
+      "supplierCrossingMm2": 0,
+      "installedOtherBoxes": [
+        "Lead 1 Pacer TBCA2-R boot envelope"
+      ],
+      "removeBeforeAccess": [
+        "Lead 1 Pacer TBCA2-R boot envelope"
+      ],
+      "otherBoxesAfterRemovingBoot": []
+    },
+    {
+      "xyMm": [
+        -251.425,
+        -176.97
+      ],
+      "gaugeMm": [
+        12,
+        42
+      ],
+      "supplierCrossingMm2": 0,
+      "installedOtherBoxes": [
+        "Lead 2 Pacer TBCA2-R boot envelope"
+      ],
+      "removeBeforeAccess": [
+        "Lead 2 Pacer TBCA2-R boot envelope"
+      ],
+      "otherBoxesAfterRemovingBoot": []
+    }
+  ],
+  "nominalLugSeats": [
+    {
+      "studXYmm": [
+        -308.575,
+        -149.03
+      ],
+      "factoryPadZmm": 259.2124840349167,
+      "lugThicknessMm": 2.032,
+      "padToLugMm2": 93.13731419883595,
+      "washerBottomZmm": 261.2444840349167,
+      "distanceBeyondNutMm": 4.013199899468759,
+      "housingOrStudSurfaceInsideTongueMm2": 0.0
+    },
+    {
+      "studXYmm": [
+        -251.425,
+        -176.97
+      ],
+      "factoryPadZmm": 259.21248403491677,
+      "lugThicknessMm": 2.032,
+      "padToLugMm2": 90.1391244151648,
+      "washerBottomZmm": 261.24448403491675,
+      "distanceBeyondNutMm": 4.0131998994526725,
+      "housingOrStudSurfaceInsideTongueMm2": 0.0
+    }
+  ]
+}

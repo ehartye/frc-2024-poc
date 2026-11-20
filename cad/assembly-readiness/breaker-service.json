@@ -1,0 +1,231 @@
+{
+  "allNeighborBootReceiving": [
+    {
+      "lead": 1,
+      "capGaugeDiameterMm": 30,
+      "capZlimitsMm": [
+        258.7,
+        286.5
+      ],
+      "neckGaugeDiameterMm": 17,
+      "neckStartAndStopMm": [
+        5,
+        27
+      ],
+      "measurements": [
+        {
+          "gauge": "upright cap",
+          "distanceToNeighborBoxMm": 6.699999999999989,
+          "nearest": "Lead 1 one-piece raised clamp saddle"
+        },
+        {
+          "gauge": "outlet",
+          "distanceToNeighborBoxMm": 1.5,
+          "nearest": "Lead 1 one-piece raised clamp saddle"
+        }
+      ]
+    },
+    {
+      "lead": 2,
+      "capGaugeDiameterMm": 30,
+      "capZlimitsMm": [
+        258.7,
+        286.5
+      ],
+      "neckGaugeDiameterMm": 17,
+      "neckStartAndStopMm": [
+        5,
+        27
+      ],
+      "measurements": [
+        {
+          "gauge": "upright cap",
+          "distanceToNeighborBoxMm": 8.177500000000009,
+          "nearest": "JTD FW0010-375031-SS at -251.425"
+        },
+        {
+          "gauge": "outlet",
+          "distanceToNeighborBoxMm": 1.5,
+          "nearest": "Lead 2 one-piece raised clamp saddle"
+        }
+      ]
+    }
+  ],
+  "archiveSha256": "4663d9fa55b5f3eb8e23549f3205a2d29248322543beb3e7a7d8076a23f93f6d",
+  "localRoutes": [
+    {
+      "studXYmm": [
+        -308.575,
+        -149.03
+      ],
+      "azimuthDeg": 105,
+      "bendSign": -1,
+      "screenClearanceMm": 6.574520000000007,
+      "bootGaugeToOtherBodyMm": 6.574520000000007,
+      "nearestBootObstacle": "breaker-pedestal",
+      "cableToOtherBodyMm": 17.029909332159015,
+      "nearestCableObstacle": "breaker-pedestal",
+      "clampCenterMm": [
+        -320.22185702961343,
+        -105.56333781699192,
+        262.0
+      ],
+      "routeOutletMm": [
+        -269.55040545790297,
+        -31.93994482525456,
+        262.0
+      ]
+    },
+    {
+      "studXYmm": [
+        -251.425,
+        -176.97
+      ],
+      "azimuthDeg": 15,
+      "bendSign": 1,
+      "screenClearanceMm": 6.574520000000007,
+      "bootGaugeToOtherBodyMm": 6.574520000000007,
+      "nearestBootObstacle": "breaker-pedestal",
+      "cableToOtherBodyMm": 10.72425429412989,
+      "nearestCableObstacle": "breaker-pedestal",
+      "clampCenterMm": [
+        -207.95833781699193,
+        -165.32314297038656,
+        262.0
+      ],
+      "routeOutletMm": [
+        -169.5343349591974,
+        -84.62868216678372,
+        262.0
+      ]
+    }
+  ],
+  "cablePairClearanceMm": 97.23023434576317,
+  "receivingGauge": {
+    "bootOuterDiameterMm": 30.0,
+    "bootCenterHeightMm": 271,
+    "bootAxisLengthMm": 27,
+    "cableDiameterMm": 7.75,
+    "centerlineBendRadiusMm": 50,
+    "samplePadMm": 0.5
+  },
+  "resetApproach": {
+    "diameterMm": 20,
+    "lengthMm": 60,
+    "otherBodyClearanceMm": 6.666039487728785,
+    "nearest": "Lead 2 Pacer TBCA2-R boot envelope",
+    "palmWidthMm": 85,
+    "palmThicknessMm": 35,
+    "palmSweepBoundsMm": [
+      -322.5,
+      -196.63,
+      341.15,
+      -237.5,
+      -161.63,
+      1068.315
+    ],
+    "palmClearanceMm": 5.396999999999991,
+    "nearestPalm": "R7 144 battery"
+  },
+  "selected": {
+    "lug": "Panduit LCAX6-14-L",
+    "boot": "Pacer TBCA2-R",
+    "wire": "Southwire 104110604, 6 AWG red"
+  },
+  "limits": [
+    "Checks conservative installed neighboring-body boxes. Device itself is excluded from the boot and wire boxes.",
+    "Receiving gauge is an exterior acceptance limit; supplier boot data rates terminal OD, cable entry and post height.",
+    "The clamp centers use a 45 mm straight station. See the native saddle and deck checks. Verify jacket grip and allowable bend radius on the received lot.",
+    "Full disconnect/pull path, actual SB50 bracket and mating end, positive insulation and switch travel need physical assembly."
+  ],
+  "priorLocationControl": {
+    "allNeighborBootReceiving": null,
+    "archiveSha256": "34340ec5ce940f37b550f83f5aa91dde5d74cd164721ae2a5f7b89298641d772",
+    "localRoutes": [
+      {
+        "studXYmm": [
+          -308.575,
+          -161.03
+        ],
+        "azimuthDeg": 105,
+        "bendSign": -1,
+        "screenClearanceMm": 6.574520000000007,
+        "bootGaugeToOtherBodyMm": 6.574520000000007,
+        "nearestBootObstacle": "breaker-pedestal",
+        "cableToOtherBodyMm": 17.02990933215903,
+        "nearestCableObstacle": "breaker-pedestal",
+        "clampCenterMm": [
+          -320.22185702961343,
+          -117.56333781699192,
+          262.0
+        ],
+        "routeOutletMm": [
+          -269.55040545790297,
+          -43.93994482525456,
+          262.0
+        ]
+      },
+      {
+        "studXYmm": [
+          -251.425,
+          -188.97
+        ],
+        "azimuthDeg": 15,
+        "bendSign": 1,
+        "screenClearanceMm": -2.443000000000012,
+        "bootGaugeToOtherBodyMm": -2.443000000000012,
+        "nearestBootObstacle": "R7 144 battery",
+        "cableToOtherBodyMm": 7.985700704957242,
+        "nearestCableObstacle": "R7 212 battery-strap-leg--193.5",
+        "clampCenterMm": [
+          -207.95833781699193,
+          -177.32314297038656,
+          262.0
+        ],
+        "routeOutletMm": [
+          -169.5343349591974,
+          -96.62868216678372,
+          262.0
+        ]
+      }
+    ],
+    "cablePairClearanceMm": 97.23023434576317,
+    "receivingGauge": {
+      "bootOuterDiameterMm": 30.0,
+      "bootCenterHeightMm": 271,
+      "bootAxisLengthMm": 27,
+      "cableDiameterMm": 7.75,
+      "centerlineBendRadiusMm": 50,
+      "samplePadMm": 0.5
+    },
+    "resetApproach": {
+      "diameterMm": 20,
+      "lengthMm": 60,
+      "otherBodyClearanceMm": 0.6469999999999914,
+      "nearest": "R7 144 battery",
+      "palmWidthMm": 85,
+      "palmThicknessMm": 35,
+      "palmSweepBoundsMm": [
+        -322.5,
+        -208.63,
+        341.15,
+        -237.5,
+        -173.63,
+        1068.315
+      ],
+      "palmClearanceMm": 0.0,
+      "nearestPalm": "R7 144 battery"
+    },
+    "selected": {
+      "lug": "Panduit LCAX6-14-L",
+      "boot": "Pacer TBCA2-R",
+      "wire": "Southwire 104110604, 6 AWG red"
+    },
+    "limits": [
+      "Checks conservative installed neighboring-body boxes. Device itself is excluded from the boot and wire boxes.",
+      "Receiving gauge is an exterior acceptance limit; supplier boot data rates terminal OD, cable entry and post height.",
+      "The clamp centers use a 45 mm straight station. See the native saddle and deck checks. Verify jacket grip and allowable bend radius on the received lot.",
+      "Full disconnect/pull path, actual SB50 bracket and mating end, positive insulation and switch travel need physical assembly."
+    ]
+  }
+}
