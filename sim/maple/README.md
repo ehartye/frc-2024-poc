@@ -1,5 +1,11 @@
 # Headless 2024 Maple arena integration
 
+<!-- cad-still -->
+[![1780 MAXSwerve · R9 physical assembly](../../docs/media/r9-assembly.png)](https://ehartye.github.io/frc-2024-poc/?view=r9-assembly#model)
+
+**1780 MAXSwerve · R9 physical assembly.** Parked robot with its inboard lift drive, frame, removable bumper and electrical supports. Purchased mechanisms use dimensioned external models. This view records mechanical fit in CAD. [Native model record](../../docs/media/r9-assembly.json) · [Inspect the parked assembly](https://ehartye.github.io/frc-2024-poc/?view=r9-assembly#model)
+<!-- /cad-still -->
+
 This module runs the actual upstream `Arena2024Crescendo`, pinned to
 `1b1e8ea7278de01d40a5ea14dffbaaf13381512a`, using WPILib 2026.2.1 runtime APIs.
 The game world is 2024; this is not official full-field CAD or a scoring-qualified simulator.

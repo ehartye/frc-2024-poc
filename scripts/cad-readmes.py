@@ -32,16 +32,6 @@ def output(file, data, update):
 
 def run(root, update, template):
     config = json.loads((root / "cad-showcase.json").read_text(encoding="utf-8-sig"))
-    if config.get("publication") == "withdrawn":
-        names = subprocess.check_output(["git","ls-files","-z"],cwd=root).decode().split("\0")
-        for name in names:
-            if Path(name).name.lower() not in ("readme","readme.md"):
-                continue
-            file = root / name
-            original = file.read_bytes()
-            cleaned = re.sub(rb"<!-- cad-still -->.*?<!-- /cad-still -->\r?\n(?:\r?\n)?",b"",original,flags=re.S)
-            output(file,cleaned,update)
-        return
     folder = root / "docs/robot/cad"
     receipt = json.loads((folder / "receipt.json").read_text(encoding="utf-8"))
     if receipt["source"] != config["source"]:
@@ -50,7 +40,7 @@ def run(root, update, template):
     checked(folder / "assembly.png", receipt["imageSha256"])
     mesh = checked(folder / "assembly.stl.gz", receipt["meshSha256"])
     fields = dict(title=html.escape(config["title"]), scope=html.escape(config["scope"]),
-                  facts=f'{receipt["solids"]:,} solids Â· {receipt["triangles"]:,} triangles Â· {receipt["chordMm"]} mm chord setting',
+                  facts=f'{receipt["solids"]:,} solids · {receipt["triangles"]:,} triangles · {receipt["chordMm"]} mm chord setting',
                   bounds=json.dumps(receipt["nativeBounds"]), mesh=base64.b64encode(mesh).decode("ascii"))
     viewer = re.sub(r"\{\{(\w+)\}\}", lambda match: fields[match[1]], template.read_text(encoding="utf-8"))
     output(folder / "index.html", viewer.encode(), update)
@@ -79,8 +69,8 @@ def run(root, update, template):
         target = config.get("viewerUrl") or link(folder / "index.html")
         source = link(root / config["source"])
         block = (f'{START}\n[![{title}]({image})]({target})\n\n'
-                 f'**Project CAD Â· {title}.** {config["scope"]} '
-                 f'[Source STEP Â· {receipt["sourceSha256"][:10]}]({source}) Â· [Rotate the model]({target})\n{END}')
+                 f'**Project CAD · {title}.** {config["scope"]} '
+                 f'[Source STEP · {receipt["sourceSha256"][:10]}]({source}) · [Rotate the model]({target})\n{END}')
         if featured:
             title = featured["title"]
             target = featured["viewerUrl"]
@@ -88,7 +78,7 @@ def run(root, update, template):
             provenance = link(root / featured["receipt"])
             block = (f'{START}\n[![{title}]({image})]({target})\n\n'
                      f'**{title}.** {featured["scope"]} '
-                     f'[Native model record]({provenance}) Â· [{featured.get("linkLabel", "Open 3D replay")}]({target})\n{END}')
+                     f'[Native model record]({provenance}) · [{featured.get("linkLabel", "Open 3D replay")}]({target})\n{END}')
         merged = "".join(lines[:heading+1]).rstrip("\n") + "\n\n" + block + "\n\n" + "".join(lines[heading+1:]).lstrip("\n")
         if b"\r\n" in original:
             merged = merged.replace("\n", "\r\n")

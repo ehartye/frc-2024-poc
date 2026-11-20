@@ -1,12 +1,12 @@
 # What holds the displayed robot together?
 
-The November 20 audit examined the exact R9 parked assembly then selected by the README and the R7 first frame then selected by the homepage. Both contained two separate intake motor/plate pairs and four separate tire/hub pairs. The project withdrew the whole-robot exhibits, orbit, posters and assembly download links from the student site and READMEs. These historical receipts preserve what the audit measured. The current R17 lab illustrates a single reopened carrier solid and animates loose-piece handling. [Student field studies](https://ehartye.github.io/frc-2024-poc/)
+The project README opens the parked **R9 physical assembly**. Opening the student showcase directly loads **R7 boxed front crossmember** at the first replay frame. Both views contain two visibly separate intake motor and plate pairs and four separate drive tire and hub pairs. The R17 viewer shows one proposed eight-solid cassette in isolation. The complete new pair exists in a separate 16-solid STEP. [R9 view](https://ehartye.github.io/frc-2024-poc/?view=r9-assembly#model) · [R7 default](https://ehartye.github.io/frc-2024-poc/#model) · [R17 cassette](https://ehartye.github.io/frc-2024-poc/passive-entry.html)
 
 | Entry and pose | Source and visual identity | Physical surface groups |
 |---|---|---|
 | Student homepage, R7, clip time 0 | Source assembly SHA-256 starts with `0db7b7df`. Public GLB `5c962ab3`, poster `b6e69fe4`. Supplier geometry is represented by original nominal shapes. | 606 welded-vertex shells, 878 near-surface edges, 27 connected groups. Excludes the NOTE and field measurement guides. |
 | README still and assembly link, R9, parked with red cover and battery | Public 923-solid F3D `4663d9fa`, 35 visual material groups in GLB `e0fa4d0c`, still `0303f001`. | 802 welded-vertex shells, 1,250 edges, 24 connected groups. |
-| R17 study, proposed pair on an R14 register | STEP `3cc1cc80`, 16 solids. The archived cassette mesh tessellates the eight positive-Y solids. The student part detail uses only the machined carrier. | R17 has six proposed tapped mount holes. The R9/R7 visuals predate these parts. The R14 stiffness archive contains a subsystem fixture. |
+| R17 study, proposed pair on an R14 register | STEP `3cc1cc80`, 16 solids. The cassette canvas tessellates the eight reopened positive-Y solids. | R17 has six proposed tapped mount holes. The R9/R7 visuals predate these parts. The R14 stiffness archive contains a subsystem fixture. |
 
 [Exact R7 file identities](../../docs/media/swerve-r7.json) · [Exact R9 file identities](../../docs/media/r9-assembly.json) · [R14 configuration](../../cad/service-readiness/stiffness/native-fit.json) · [R17 solids](part-receipt.json)
 

@@ -42,10 +42,5 @@ def build():
         groups.append({"name":row["name"],"v":verts,"f":faces})
     path=HERE.parents[1]/"docs/passive-cassette.json"
     path.write_bytes((json.dumps({"stepSha256":receipt["stepSha256"],"groups":groups},separators=(",",":"))+"\n").encode())
-    # Only this individually validated solid is eligible for student display.
-    carrier = [g for g in groups if g["name"] == "carrier"]
-    assert len(carrier) == 1
-    path.with_name("passive-carrier.json").write_bytes((json.dumps({"stepSha256":receipt["stepSha256"],"groups":carrier},separators=(",",":"))+"\n").encode())
-
 
 if __name__=="__main__":build()
