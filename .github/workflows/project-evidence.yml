@@ -42,5 +42,14 @@ jobs:
       - name: Verify the isolated passive service fixture and rejected bracket layout
         run: python tests/test_passive_service.py
 
-      - name: Check source-bound field roles, service limits and load evidence
-        run: python experiments/alliance-service/evaluate.py --check
+      - name: Check out the season review tools
+        uses: actions/checkout@v4
+        with:
+          repository: ehartye/agent-frc
+          ref: 344fac71aa4aecbec66cf4015c7646b1149a542b
+          path: .season-review
+          persist-credentials: false
+      - name: Replay field roles, service limits and single-saddle evidence
+        run: |
+          python experiments/alliance-service/replay.py ../.season-review/scripts
+          git diff --exit-code -- experiments/alliance-service

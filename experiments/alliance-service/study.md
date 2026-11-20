@@ -60,4 +60,4 @@ The shared elevation study uses one free saddle. In the settled pose the vertica
 
 ## Reproduce
 
-From the season repository, run `python experiments/alliance-service/replay.py PATH_TO_AGENT_FRC_SCRIPTS` with an Agent FRC version that includes `strategy-lab.mjs`, `design-review.mjs` and `hardening.mjs`. The replay regenerates the field events, recomputes the season measurements, binds the generated receipts by SHA-256 and runs all four reports.
+From the season repository, run `python experiments/alliance-service/replay.py PATH_TO_AGENT_FRC_SCRIPTS` with [Agent FRC 0.38.0](https://github.com/ehartye/agent-frc/tree/344fac71aa4aecbec66cf4015c7646b1149a542b), which includes `strategy-lab.mjs`, `design-review.mjs` and `hardening.mjs`. The replay regenerates the field events, recomputes the season measurements, binds the generated receipts by SHA-256 and runs all four reports.
