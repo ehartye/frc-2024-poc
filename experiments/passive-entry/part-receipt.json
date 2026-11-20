@@ -1,0 +1,103 @@
+{
+  "articles": [
+    {
+      "side": -1,
+      "name": "M3 cap 280",
+      "volumeMm3": 127.82,
+      "estimatedG": 1.01
+    },
+    {
+      "side": -1,
+      "name": "M3 cap 293",
+      "volumeMm3": 127.82,
+      "estimatedG": 1.01
+    },
+    {
+      "side": -1,
+      "name": "M3 cap 306",
+      "volumeMm3": 127.82,
+      "estimatedG": 1.01
+    },
+    {
+      "side": -1,
+      "name": "M3 set 350",
+      "volumeMm3": 42.41,
+      "estimatedG": 0.34
+    },
+    {
+      "side": -1,
+      "name": "M3 set 500",
+      "volumeMm3": 42.41,
+      "estimatedG": 0.34
+    },
+    {
+      "side": -1,
+      "name": "carrier",
+      "volumeMm3": 22638.98,
+      "estimatedG": 61.13
+    },
+    {
+      "side": -1,
+      "name": "welded spine",
+      "volumeMm3": 2226.48,
+      "estimatedG": 17.59
+    },
+    {
+      "side": -1,
+      "name": "molded tread",
+      "volumeMm3": 22753.7,
+      "estimatedG": 23.66
+    },
+    {
+      "side": 1,
+      "name": "M3 cap 280",
+      "volumeMm3": 127.82,
+      "estimatedG": 1.01
+    },
+    {
+      "side": 1,
+      "name": "M3 cap 293",
+      "volumeMm3": 127.82,
+      "estimatedG": 1.01
+    },
+    {
+      "side": 1,
+      "name": "M3 cap 306",
+      "volumeMm3": 127.82,
+      "estimatedG": 1.01
+    },
+    {
+      "side": 1,
+      "name": "M3 set 350",
+      "volumeMm3": 42.41,
+      "estimatedG": 0.34
+    },
+    {
+      "side": 1,
+      "name": "M3 set 500",
+      "volumeMm3": 42.41,
+      "estimatedG": 0.34
+    },
+    {
+      "side": 1,
+      "name": "carrier",
+      "volumeMm3": 22638.96,
+      "estimatedG": 61.13
+    },
+    {
+      "side": 1,
+      "name": "welded spine",
+      "volumeMm3": 2665.3,
+      "estimatedG": 21.06
+    },
+    {
+      "side": 1,
+      "name": "molded tread",
+      "volumeMm3": 22686.16,
+      "estimatedG": 23.59
+    }
+  ],
+  "totalG": 215.58,
+  "roots": 16,
+  "stepSha256": "3cc1cc80172987da5d2b0c690be1348561a031feb969053d7e86cd5d737dfc5f"
+}

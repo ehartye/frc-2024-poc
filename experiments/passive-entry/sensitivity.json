@@ -1,0 +1,222 @@
+{
+  "clear": {
+    "nominal": {
+      "minFloorMm": 0.6932,
+      "maxTopMm": 56.8701,
+      "minSideN": 1.2163,
+      "coreGapMm": 4.223,
+      "maxSidePairN": 3.8511,
+      "readyS": 124.246,
+      "padErrorMm": 2.409,
+      "endSpeedMmS": 0.0097,
+      "peakLateralMm": 0.2135,
+      "peakAxialErrorMm": 2.9391
+    },
+    "halfStep": {
+      "minFloorMm": 0.6789,
+      "maxTopMm": 56.885,
+      "minSideN": 1.2096,
+      "coreGapMm": 4.2148,
+      "maxSidePairN": 3.8607,
+      "readyS": 124.2455,
+      "padErrorMm": 2.387,
+      "endSpeedMmS": 0.0026,
+      "peakLateralMm": 0.1797,
+      "peakAxialErrorMm": 2.9296
+    },
+    "fine": {
+      "minFloorMm": 1.1716,
+      "maxTopMm": 56.4653,
+      "minSideN": 1.2075,
+      "coreGapMm": 4.224,
+      "maxSidePairN": 3.5991,
+      "readyS": 124.251,
+      "padErrorMm": 2.197,
+      "endSpeedMmS": 0.0045,
+      "peakLateralMm": 0.1826,
+      "peakAxialErrorMm": 2.8081
+    },
+    "finer": {
+      "minFloorMm": 1.6484,
+      "maxTopMm": 55.9397,
+      "minSideN": 1.2039,
+      "coreGapMm": 4.2122,
+      "maxSidePairN": 3.7538,
+      "readyS": 124.2545,
+      "padErrorMm": 2.209,
+      "endSpeedMmS": 0.0034,
+      "peakLateralMm": 0.1695,
+      "peakAxialErrorMm": 2.7984
+    },
+    "wideSoft": {
+      "minFloorMm": -0.0608,
+      "maxTopMm": 54.4778,
+      "minSideN": 1.2127,
+      "coreGapMm": 3.9804,
+      "maxSidePairN": 3.6219,
+      "readyS": 124.167,
+      "padErrorMm": 1.523,
+      "endSpeedMmS": 0.0061,
+      "peakLateralMm": 0.2098,
+      "peakAxialErrorMm": 1.9703
+    },
+    "narrowStiff": {
+      "minFloorMm": 2.3546,
+      "maxTopMm": 57.8805,
+      "minSideN": 1.1811,
+      "coreGapMm": 4.4042,
+      "maxSidePairN": 3.6267,
+      "readyS": 124.368,
+      "padErrorMm": 3.121,
+      "endSpeedMmS": 0.0029,
+      "peakLateralMm": 0.3143,
+      "peakAxialErrorMm": 3.4611
+    },
+    "slick": {
+      "minFloorMm": -0.2664,
+      "maxTopMm": 56.7765,
+      "minSideN": 0,
+      "coreGapMm": 3.4967,
+      "maxSidePairN": 5.8433,
+      "readyS": 106.889,
+      "padErrorMm": 5005.689,
+      "endSpeedMmS": 0,
+      "peakLateralMm": 1990.7092,
+      "peakAxialErrorMm": 4924.6322
+    },
+    "carpetHigh": {
+      "minFloorMm": -0.0525,
+      "maxTopMm": 57.0788,
+      "minSideN": 1.269,
+      "coreGapMm": 4.2027,
+      "maxSidePairN": 4.0086,
+      "readyS": 124.833,
+      "padErrorMm": 3.075,
+      "endSpeedMmS": 0.0017,
+      "peakLateralMm": 1.3259,
+      "peakAxialErrorMm": 3.2924
+    },
+    "heightLow": {
+      "minFloorMm": 0.8486,
+      "maxTopMm": 55.72,
+      "minSideN": 1.2145,
+      "coreGapMm": 4.2318,
+      "maxSidePairN": 3.7899,
+      "readyS": 124.205,
+      "padErrorMm": 2.163,
+      "endSpeedMmS": 0.0049,
+      "peakLateralMm": 0.2334,
+      "peakAxialErrorMm": 2.6615
+    }
+  },
+  "slow-receiver": {
+    "nominal": {
+      "minFloorMm": 0.9238,
+      "maxTopMm": 56.6189,
+      "minSideN": 1.2191,
+      "coreGapMm": 4.0469,
+      "maxSidePairN": 3.8661,
+      "readyS": 124.698,
+      "padErrorMm": 6.261,
+      "endSpeedMmS": 0.0058,
+      "peakLateralMm": 0.1354,
+      "peakAxialErrorMm": 6.818
+    },
+    "halfStep": {
+      "minFloorMm": 0.9006,
+      "maxTopMm": 56.6416,
+      "minSideN": 1.2122,
+      "coreGapMm": 4.0445,
+      "maxSidePairN": 3.8561,
+      "readyS": 124.699,
+      "padErrorMm": 6.244,
+      "endSpeedMmS": 0.0097,
+      "peakLateralMm": 0.1478,
+      "peakAxialErrorMm": 6.8894
+    },
+    "fine": {
+      "minFloorMm": 1.2051,
+      "maxTopMm": 56.3585,
+      "minSideN": 1.2091,
+      "coreGapMm": 4.1212,
+      "maxSidePairN": 3.6826,
+      "readyS": 124.693,
+      "padErrorMm": 6.27,
+      "endSpeedMmS": 0.0109,
+      "peakLateralMm": 0.14,
+      "peakAxialErrorMm": 6.886
+    },
+    "finer": {
+      "minFloorMm": 1.3998,
+      "maxTopMm": 56.0683,
+      "minSideN": 1.2049,
+      "coreGapMm": 4.124,
+      "maxSidePairN": 3.7571,
+      "readyS": 124.702,
+      "padErrorMm": 6.279,
+      "endSpeedMmS": 0.0041,
+      "peakLateralMm": 0.159,
+      "peakAxialErrorMm": 6.8813
+    },
+    "wideSoft": {
+      "minFloorMm": 0.457,
+      "maxTopMm": 54.0562,
+      "minSideN": 1.1654,
+      "coreGapMm": 3.9957,
+      "maxSidePairN": 3.3211,
+      "readyS": 124.595,
+      "padErrorMm": 5.445,
+      "endSpeedMmS": 0.0056,
+      "peakLateralMm": 0.0994,
+      "peakAxialErrorMm": 5.8138
+    },
+    "narrowStiff": {
+      "minFloorMm": 3.2148,
+      "maxTopMm": 57.2982,
+      "minSideN": 0.983,
+      "coreGapMm": 4.3558,
+      "maxSidePairN": 3.0849,
+      "readyS": 124.805,
+      "padErrorMm": 7.251,
+      "endSpeedMmS": 0.0019,
+      "peakLateralMm": 0.162,
+      "peakAxialErrorMm": 7.5213
+    },
+    "slick": {
+      "minFloorMm": -0.2642,
+      "maxTopMm": 56.7389,
+      "minSideN": 0,
+      "coreGapMm": 3.4953,
+      "maxSidePairN": 5.8452,
+      "readyS": 107.542,
+      "padErrorMm": 5009.165,
+      "endSpeedMmS": 0,
+      "peakLateralMm": 1970.4199,
+      "peakAxialErrorMm": 4937.1547
+    },
+    "carpetHigh": {
+      "minFloorMm": -0.0606,
+      "maxTopMm": 57.1336,
+      "minSideN": 1.2798,
+      "coreGapMm": 3.973,
+      "maxSidePairN": 4.1942,
+      "readyS": 125.254,
+      "padErrorMm": 7.192,
+      "endSpeedMmS": 0.042,
+      "peakLateralMm": 1.2972,
+      "peakAxialErrorMm": 7.7025
+    },
+    "heightLow": {
+      "minFloorMm": 0.5044,
+      "maxTopMm": 56.0885,
+      "minSideN": 1.2299,
+      "coreGapMm": 4.1019,
+      "maxSidePairN": 3.7742,
+      "readyS": 124.648,
+      "padErrorMm": 5.644,
+      "endSpeedMmS": 0.0058,
+      "peakLateralMm": 0.1161,
+      "peakAxialErrorMm": 6.2114
+    }
+  }
+}

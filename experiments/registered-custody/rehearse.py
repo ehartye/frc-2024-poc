@@ -58,11 +58,18 @@ class Task:
                 self.ready = t+value
 
 
-def run(case, control="revised"):
-    if not nominal_permitted(CONTACT):
+def run(case, control="revised", *, planning=None):
+    # A later candidate can reuse the season clock and dispatcher. Its scheduled
+    # pickups and deposits require a separate free-piece contact witness.
+    seat = SEAT if planning is None else planning["seatMm"]/25.4
+    extra = 0 if planning is None else planning["cargoAllowanceMm"]/25.4
+    offsets = {} if planning is None else planning.get("settledOffsetsMm", {})
+    if planning is None and not nominal_permitted(CONTACT):
         raise ValueError("Nominal registered contact path is unavailable")
     t = START
     b3, b2 = (relay.Bot(name, tuple(relay.PEERS["initial"][name])) for name in ("B3", "B2"))
+    if planning is not None:
+        b3=planning["carrierClass"]("B3",b3.p)
     agents = [Task(b3), Task(b2)]
     pieces = {item: {"xy": list(relay.SOURCES[item.split("/")[0]]), "state": "source"} for item in relay.STOCK}
     pieces[relay.STOCK[1]]["xy"][1] += case["parameters"]["offset"]
@@ -99,19 +106,23 @@ def run(case, control="revised"):
     def lane_free(outer, piece_xy):
         if control != "rectangularReservation":
             if not reservation:
-                probe = relay.Bot("reservation", b3.p)
+                probe = type(b3)("reservation", b3.p)
+                forecast=relay.B3 if planning is None else (relay.B3[0],relay.B3[1],max(relay.B3[2],seat+relay.RADIUS+extra),relay.B3[3])
                 def leg(point):
                     probe.route([point], "forecast")
                     while probe.path:
                         dest = probe.propose()
-                        reservation.append(relay.extent(probe.p, dest, relay.B3))
+                        reservation.append(relay.extent(probe.p, dest, forecast))
                         probe.move(dest)
                 leg(outer)
-                leg(dock(piece_xy, SEAT))
+                leg(dock(piece_xy, seat))
                 dwell = math.ceil((relay.CARRY["D1"]["seatedS"]+.8+.15)/DT)
-                reservation.extend([relay.extent(probe.p,probe.p,relay.B3)]*dwell)
-                leg(outer)
-                leg((outer[0],31.))
+                reservation.extend([relay.extent(probe.p,probe.p,forecast)]*dwell)
+                exit_point=(outer[0]-(planning.get("exitSetbackIn",0) if planning else 0),outer[1])
+                if planning:
+                    probe.cargo="forecast"
+                leg(exit_point)
+                leg((exit_point[0],31.))
             start = round((t-START)/DT)
             for i,area in enumerate(reservation):
                 k = start+i
@@ -122,10 +133,10 @@ def run(case, control="revised"):
             return True
         # Reserve the entire exposed source path, including insertion, lift and
         # return to the southern lane. The same four peer paths remain on their clock.
-        envelope = relay.extent(b3.p, dock(piece_xy, SEAT), relay.B3)
+        envelope = relay.extent(b3.p, dock(piece_xy, seat), relay.B3)
         length = abs(b3.p[1]-outer[1])
         crossings = 2*max(1.5*length/42, math.sqrt(6*length/42))
-        horizon = crossings+2*max(1.5*(relay.PORT-SEAT)/42, math.sqrt(6*(relay.PORT-SEAT)/42))+6
+        horizon = crossings+2*max(1.5*(relay.PORT-seat)/42, math.sqrt(6*(relay.PORT-seat)/42))+6
         lo = round((t-START)/DT)
         for k in range(lo, min(2699,lo+math.ceil(horizon/DT))+1):
             for other in PEER_BOXES[k].values():
@@ -163,28 +174,35 @@ def run(case, control="revised"):
             if control=="offset3mm":
                 gate(CONTACT["offset3mm"]["535"][1]<0 and "534" in CONTACT["offset3mm"]
                      and CONTACT["offset3mm"]["534"][1]<0, "offset entry contacts one tread and a pulley")
-            gate(LOADS["withdrawalN"]["free"] < LOADS["floorLimitN"],"ring moves before seating")
-            yield move(dock(source,SEAT))
+            if planning is None:
+                gate(LOADS["withdrawalN"]["free"] < LOADS["floorLimitN"],"ring moves before seating")
+            yield move(dock(source,seat))
             yield wait(relay.CARRY["D1" if index==0 else "D2"]["seatedS"])
-            gate(all(CONTACT["floorSeat"][x][1]<0 for x in ("534","535")),"missing bilateral seat")
-            gate(relay.near((b3.p[0]+SEAT,b3.p[1]),ring["xy"]),"incorrect source identity or pose")
-            gate(LOADS["tractionN"]>LOADS["weightN"],"insufficient lift traction")
+            if planning is None:
+                gate(all(CONTACT["floorSeat"][x][1]<0 for x in ("534","535")),"missing bilateral seat")
+            gate(relay.near((b3.p[0]+seat,b3.p[1]),ring["xy"]),"incorrect source identity or pose")
+            if planning is None:
+                gate(LOADS["tractionN"]>LOADS["weightN"],"insufficient lift traction")
             if control=="noGrip":
                 raise Stop("zero holding traction")
             b3.cargo=item
             ring["state"]="B3"
-            log("B3","bilateral floor seat",item,treads=[534,535],bodyXmm=241.5)
+            seat_details = ({"treads":[534,535],"bodyXmm":241.5} if planning is None else
+                           {"support":"scheduled passive pair","bodyXmm":planning["seatMm"]})
+            log("B3","bilateral floor seat",item,**seat_details)
             lift_peak = 6*.008/.8**2
-            gate(LOADS["tractionN"] > LOADS["weightN"]+.2413*lift_peak,
+            if planning is None:
+                gate(LOADS["tractionN"] > LOADS["weightN"]+.2413*lift_peak,
                  "insufficient force during short lift")
             yield wait(.8)
             phase="transport"
-            log("B3","seated lift complete",item,riseMm=8)
+            log("B3","seated lift complete",item,riseMm=8 if planning is None else planning["liftMm"])
             pad=PADS[index]
             approach=dock(pad,relay.PORT)
-            yield move(outer,(outer[0],31.),(approach[0],31.),approach,dock(pad,SEAT))
+            exit_point=(outer[0]-(planning.get("exitSetbackIn",0) if planning else 0),outer[1])
+            yield move(exit_point,(exit_point[0],31.),(approach[0],31.),approach,dock(pad,seat))
             yield wait(.8)
-            gate(relay.near((b3.p[0]+SEAT,b3.p[1]),pad),"pad position mismatch")
+            gate(relay.near((b3.p[0]+seat,b3.p[1]),pad),"pad position mismatch")
             gate(all(pieces[i]["state"]!="pad" or pieces[i]["xy"]!=list(pad) for i in deposits),
                  "exchange pad occupied")
             if control=="raisedWithdrawal":
@@ -193,12 +211,14 @@ def run(case, control="revised"):
             phase="peel"
             log("B3","floor support at pad",item)
             drag=LOADS["withdrawalN"]["braked" if control=="braked" else "free"]
-            gate(drag < LOADS["floorLimitN"], "withdrawal drag exceeds floor restraint")
+            if planning is None:
+                gate(drag < LOADS["floorLimitN"], "withdrawal drag exceeds floor restraint")
             b3.cargo=None
-            ring.update(state="withdrawing",xy=list(pad))
+            dx,dy=offsets.get(item,(0,0))
+            ring.update(state="withdrawing",xy=[pad[0]+dx/25.4,pad[1]+dy/25.4])
             yield move(approach)
             yield wait(.35)
-            gate(relay.near(ring["xy"],pad),"ring left exchange pad")
+            gate(relay.distance(ring["xy"],pad)+relay.RADIUS<=10,"ring left exchange pad")
             ring["state"]="pad"
             deposits.append(item)
             log("B3","clear floor deposit",item,pad=index,dragN=drag)
@@ -248,14 +268,14 @@ def run(case, control="revised"):
 
     def bounds(bot):
         body=relay.B3 if bot is b3 else relay.PEER
-        port=SEAT if bot is b3 else relay.PORT
-        return (body[0],body[1],max(body[2],port+relay.RADIUS) if bot.cargo else body[2],body[3])
+        port=seat if bot is b3 else relay.PORT
+        return (body[0],body[1],max(body[2],port+relay.RADIUS+extra) if bot.cargo else body[2],body[3])
 
     def floor_pass(item, bot, end):
         if bot is not b3 or target!=item or phase not in ("entry","peel"):
             return False
-        xy=pieces[item]["xy"]
-        return all(abs(p[1]-xy[1])<.00001 and SEAT-.00001<=xy[0]-p[0]<=relay.PORT+.00001
+        xy=PADS[relay.STOCK.index(item)] if phase=="peel" else pieces[item]["xy"]
+        return all(abs(p[1]-xy[1])<.00001 and seat-.00001<=xy[0]-p[0]<=relay.PORT+.00001
                    for p in (bot.p,end))
 
     try:
@@ -263,6 +283,8 @@ def run(case, control="revised"):
             t=round(START+tick*DT, 3)
             for task in agents:
                 task.advance(t)
+            if planning is not None:
+                planning["frames"].append([t,*b3.p,*b2.p,target,phase,b3.cargo,b2.cargo])
             ends=[bot.propose() for bot in (b3,b2)]
             positions=[b3.p,b2.p]
             boxes=[relay.extent(bot.p,end,bounds(bot)) for bot,end in zip((b3,b2),ends)]
@@ -295,6 +317,8 @@ def run(case, control="revised"):
             for i,bot in enumerate((b3,b2)):
                 who,room=closest(i,bot,ends[i],boxes[i])
                 if room<=.01:
+                    if planning is not None and bot.cargo:
+                        log(bot.name,"occupied lane wait",bot.cargo,blockedBy=who)
                     ends[i]=bot.p
                     boxes[i]=relay.extent(bot.p,bot.p,bounds(bot))
                     paused.add(i)
@@ -306,7 +330,7 @@ def run(case, control="revised"):
                 if i not in paused:
                     bot.move(end)
                 if bot.cargo:
-                    pieces[bot.cargo]["xy"]=[bot.p[0]+(SEAT if bot is b3 else relay.PORT),bot.p[1]]
+                    pieces[bot.cargo]["xy"]=[bot.p[0]+(seat if bot is b3 else relay.PORT),bot.p[1]]
             velocity=tuple((p-q)/DT for p,q in zip(b3.p,positions[0]))
             ax,ay=((p-q)/DT*.0254 for p,q in zip(velocity,previous_velocity))
             previous_velocity=velocity
@@ -315,7 +339,10 @@ def run(case, control="revised"):
                 margin=min(LOADS["tractionN"]-math.hypot(LOADS["weightN"],.2413*ax),
                            LOADS["lateralAtPoint1MmN"]-.2413*abs(ay))
                 minimum_hold=min(margin,minimum_hold)
-                gate(margin>0,"insufficient carry force")
+                if planning is None:
+                    gate(margin>0,"insufficient carry force")
+                else:
+                    gate(math.hypot(ax,ay)<=planning["accelerationLimitMps2"],"loaded lane interruption")
     except Stop as e:
         reason=str(e)
         log("system","stopped",target,reason=reason)

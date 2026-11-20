@@ -1,0 +1,225 @@
+{
+  "-1": {
+    "installed": [],
+    "driver": [],
+    "pilotAgainstOtherBodies": [],
+    "riseRaw": [
+      [
+        "tongue",
+        "R7 536 intake candidate original cradle side weldment -1"
+      ]
+    ],
+    "frontExtraction": {
+      "removeOut": [],
+      "removeNose": [],
+      "removeDrop": [],
+      "removeExit": []
+    },
+    "shortRiseHostControl": true,
+    "verticalControl": [
+      [
+        "low beam",
+        "R7 chassis / R7 structure"
+      ],
+      [
+        "low beam",
+        "R9 bumper cover envelope / R7 bumper"
+      ],
+      [
+        "low beam",
+        "R9 front frame / R7 structure"
+      ],
+      [
+        "low beam",
+        "R9 removable bumper cores / R7 structure"
+      ],
+      [
+        "return leg",
+        "R9 bumper cover envelope / R7 bumper"
+      ],
+      [
+        "return leg",
+        "R9 removable bumper cores / R7 structure"
+      ],
+      [
+        "set screw",
+        "R9 bumper cover envelope / R7 bumper"
+      ],
+      [
+        "set screw",
+        "R9 removable bumper cores / R7 structure"
+      ],
+      [
+        "sleeve",
+        "R7 chassis / R7 structure"
+      ],
+      [
+        "sleeve",
+        "R9 bumper cover envelope / R7 bumper"
+      ],
+      [
+        "sleeve",
+        "R9 front frame / R7 structure"
+      ],
+      [
+        "sleeve",
+        "R9 removable bumper cores / R7 structure"
+      ]
+    ],
+    "wheel360": [
+      4.641,
+      "mount web",
+      "Front right wheel / R7 tire"
+    ],
+    "serviceWheel360": [
+      2.761,
+      "low beam",
+      "Front right wheel / R7 tire"
+    ],
+    "outboardWheelControl": {
+      "angleDeg": 75,
+      "article": "Front right wheel / R7 tire",
+      "pointMm": [
+        277.158,
+        -251.346,
+        22.752
+      ]
+    },
+    "hostRayZmm": [
+      [
+        280,
+        12.7,
+        38.1
+      ],
+      [
+        293,
+        12.7,
+        38.1
+      ],
+      [
+        306,
+        12.7,
+        38.1
+      ]
+    ]
+  },
+  "1": {
+    "installed": [],
+    "driver": [],
+    "pilotAgainstOtherBodies": [],
+    "riseRaw": [
+      [
+        "tongue",
+        "R7 538 intake candidate original cradle side weldment 1"
+      ]
+    ],
+    "frontExtraction": {
+      "removeOut": [],
+      "removeNose": [],
+      "removeDrop": [],
+      "removeExit": []
+    },
+    "shortRiseHostControl": true,
+    "verticalControl": [
+      [
+        "low beam",
+        "R7 chassis / R7 structure"
+      ],
+      [
+        "low beam",
+        "R9 bumper cover envelope / R7 bumper"
+      ],
+      [
+        "low beam",
+        "R9 front frame / R7 structure"
+      ],
+      [
+        "low beam",
+        "R9 removable bumper cores / R7 structure"
+      ],
+      [
+        "return leg",
+        "R9 bumper cover envelope / R7 bumper"
+      ],
+      [
+        "return leg",
+        "R9 removable bumper cores / R7 structure"
+      ],
+      [
+        "set screw",
+        "R9 bumper cover envelope / R7 bumper"
+      ],
+      [
+        "set screw",
+        "R9 removable bumper cores / R7 structure"
+      ],
+      [
+        "sleeve",
+        "R7 chassis / R7 structure"
+      ],
+      [
+        "sleeve",
+        "R9 bumper cover envelope / R7 bumper"
+      ],
+      [
+        "sleeve",
+        "R9 front frame / R7 structure"
+      ],
+      [
+        "sleeve",
+        "R9 removable bumper cores / R7 structure"
+      ]
+    ],
+    "wheel360": [
+      4.641,
+      "mount web",
+      "Front left wheel / R7 tire"
+    ],
+    "serviceWheel360": [
+      2.761,
+      "low beam",
+      "Front left wheel / R7 tire"
+    ],
+    "outboardWheelControl": {
+      "angleDeg": 0,
+      "article": "Front left wheel / R7 tire",
+      "pointMm": [
+        280.221,
+        247.2,
+        32.434
+      ]
+    },
+    "hostRayZmm": [
+      [
+        280,
+        12.7,
+        38.1
+      ],
+      [
+        293,
+        12.7,
+        38.1
+      ],
+      [
+        306,
+        12.7,
+        38.1
+      ]
+    ]
+  },
+  "carriedNote": {
+    "centerXmm": [
+      405.0,
+      752.0
+    ],
+    "maxAbsYmm": 6.5,
+    "topMm": 57.0,
+    "minParentMm": 0.4,
+    "limitingParent": "R9 bumper cover envelope / R7 structure",
+    "backingMm": 9.057,
+    "treadsMm": 7.544,
+    "wheelParkedMm": 75.1,
+    "rearReturnMm": 3.162,
+    "frontReturnMm": 6.7
+  }
+}

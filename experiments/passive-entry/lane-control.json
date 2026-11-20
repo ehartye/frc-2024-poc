@@ -1,0 +1,1 @@
+{"stop":"loaded lane interruption","history":[{"timeS":64.05,"actor":"B3","action":"occupied lane wait","piece":"center-2/1","blockedBy":"center-1/1"},{"timeS":64.05,"actor":"system","action":"stopped","piece":"center-2/1","reason":"loaded lane interruption"}],"peakLoadedAccelerationMps2":10.2763}

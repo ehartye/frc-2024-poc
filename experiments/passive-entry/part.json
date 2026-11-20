@@ -1,0 +1,19 @@
+{
+  "seatXmm": 410,
+  "liftMm": 6.6,
+  "loadedAccelerationInS2": 18,
+  "railRadiusMm": 7,
+  "coreRadiusMm": 2,
+  "railZmm": 8.5,
+  "railPathMm": [[350,181],[453,181],[500,193]],
+  "mountXmm": [280,293,306],
+  "mountYmm": 207.6,
+  "mountFaceZmm": 38.1,
+  "mountThicknessMm": 3.175,
+  "massKg": 0.2413,
+  "majorMm": 152.4,
+  "tubeMm": 25.4,
+  "railStiffnessNPerMm2": 0.12,
+  "railFriction": 0.60,
+  "floorFriction": 0.35
+}
