@@ -38,3 +38,6 @@ jobs:
         run: |
           node ../.layout-validator/scripts/assembly-accounting.mjs cad/assembly-readiness/mass/mapping.json > "$RUNNER_TEMP/r9-mass.json"
           R9_CHECKED_MASS="$RUNNER_TEMP/r9-mass.json" python tests/test_r9_physical_assembly.py
+
+      - name: Verify the isolated passive service fixture and rejected bracket layout
+        run: python tests/test_passive_service.py

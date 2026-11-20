@@ -1,0 +1,175 @@
+{
+  "bodyCount": 82,
+  "componentCount": 10,
+  "maximumCaseRemovalFixture": {},
+  "retainedStrapControlMm3": 7020.0,
+  "locatorContactControlsMm3": [
+    270.0,
+    270.0,
+    360.0,
+    360.0
+  ],
+  "maximumCaseRemovalR9": {},
+  "r9NarrowPhaseBodies": [],
+  "strapToolCollisions": {
+    "top key -298": {},
+    "below flange deep socket -298": {},
+    "side entry -298": {},
+    "top key -182": {},
+    "below flange deep socket -182": {},
+    "side entry -182": {}
+  },
+  "pinRetractedExtraction": [
+    {},
+    {}
+  ],
+  "pinEngagedWithdrawalControlMm3": 6.8011,
+  "undrilledStationControlsMm3": [
+    467.47653,
+    389.56377
+  ],
+  "carrierGuideAndShaftChecks": {
+    "0.0": {},
+    "190.0": {},
+    "380.0": {}
+  },
+  "carrierGuideSweepMm3": 0.0,
+  "offsetCarrierGuideControlMm3": 17485.76653,
+  "nominalProjectedSeatMm2": {
+    "battery pad to nominal case": 2220.0,
+    "battery pad to strap": 2220.0,
+    "nut flange to carrier": 119.42,
+    "lower thrust race to housing": 103.672,
+    "upper thrust race to housing": 117.621,
+    "shaft to upper abutment": 42.508,
+    "retaining nut to lower abutment": 57.855,
+    "housing flange to beam": 195.085,
+    "lockring to beam": 105.746
+  },
+  "registeredBoundsMm": {
+    "Thomson BN3708S": [
+      28.475,
+      -48.525,
+      174.0,
+      47.525,
+      -29.475,
+      193.05
+    ],
+    "Thomson SRA3708S": [
+      33.2375,
+      -43.7625,
+      106.5,
+      42.7625,
+      -34.2375,
+      595.0
+    ],
+    "Accu HNN-M6": [
+      33.0,
+      -44.7735,
+      109.0,
+      43.0,
+      -33.2265,
+      115.0
+    ],
+    "igus GSM": [
+      34.0,
+      -43.0,
+      132.0,
+      42.0,
+      -35.0,
+      140.0
+    ],
+    "Split tapped": [
+      28.05,
+      -51.9,
+      180.35,
+      47.95,
+      -8.1,
+      218.0
+    ],
+    "Insulating top pad": [
+      -215.0,
+      -277.0,
+      374.993,
+      -185.0,
+      -203.0,
+      378.118
+    ]
+  },
+  "parentSha256": "4663d9fa55b5f3eb8e23549f3205a2d29248322543beb3e7a7d8076a23f93f6d",
+  "archiveSha256": "06d0f92aa7c3ccd4f23f489b8d8041805e07cf6ac70a3272aeeba3397e890a21",
+  "renderSha256": {
+    "parked-fixture.png": "26ecd50c61056af72c67a63857749afe474f76ced790f66b6ccecc3769e78e99",
+    "mast-cartridge.png": "65b3c1062ae397ba87e83273479c87afdf0dca60244b9da93335e95d28330e8e"
+  },
+  "parkedPositiveIntersectionsMm3": [
+    [
+      "MISUMI CB8-100 23 -329",
+      "Accu HPN-M8-C8-Z 23 -329",
+      90.66636
+    ],
+    [
+      "MISUMI CB8-100 53 -329",
+      "Accu HPN-M8-C8-Z 53 -329",
+      90.66636
+    ],
+    [
+      "MISUMI CB8-100 23 329",
+      "Accu HPN-M8-C8-Z 23 329",
+      90.66636
+    ],
+    [
+      "MISUMI CB8-100 53 329",
+      "Accu HPN-M8-C8-Z 53 329",
+      90.66636
+    ],
+    [
+      "Aspen SO007-1032X34 strap screw -298",
+      "Airfasco MS21044N3 strap locknut envelope -298",
+      32.31894
+    ],
+    [
+      "Aspen SO007-1032X34 strap screw -182",
+      "Airfasco MS21044N3 strap locknut envelope -182",
+      32.31894
+    ],
+    [
+      "Thomson SRA3708S machined screw envelope",
+      "Accu HNN-M6-1-C8-Z retaining nut envelope",
+      47.07677
+    ],
+    [
+      "Machined flanged M18 x 1 thrust housing",
+      "Cartridge round slotted lockring M18 x 1",
+      132.93915
+    ],
+    [
+      "Split tapped nut carrier with guide tenon",
+      "Thomson BN3708S SAE 660 nut envelope",
+      424.69538
+    ],
+    [
+      "Split tapped nut carrier with guide tenon",
+      "Accu SSCF-M4-14-A4 clamp screw envelope",
+      30.30105
+    ],
+    [
+      "Split tapped nut carrier with guide tenon",
+      "Accu SSK-M4-16-A2 carrier screw envelope -17.0",
+      50.56865
+    ],
+    [
+      "Split tapped nut carrier with guide tenon",
+      "Accu SSK-M4-16-A2 carrier screw envelope -26.0",
+      50.56865
+    ]
+  ],
+  "positiveIntersectionBasis": "Twelve mating fastener or external thread major/minor envelopes. All other tested body pairs have zero intersection above 0.02 cubic millimetres.",
+  "nativeVerification": {
+    "independentArchiveReopen": true,
+    "identicalPrePortabilityOverview": true,
+    "initialDocuments": 0,
+    "finalDocuments": 0,
+    "priorDocumentRestored": true
+  }
+}

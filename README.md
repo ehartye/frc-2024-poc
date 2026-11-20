@@ -8,6 +8,8 @@
 
 [Download the editable R9 robot](cad/student/r9-physical-assembly.f3d) · [Assembly sequence and fit results](cad/assembly-readiness/physical-assembly.md) · [Shop drawings](cad/assembly-readiness/drawings/r9-shop-drawings.pdf)
 
+[R10 battery and unloaded mast service fixture](cad/service-readiness/passive-service.md) · [Download the editable service fixture](cad/student/r10-passive-service.f3d)
+
 [Explore the R8 Stage climb and missed-lock control](https://ehartye.github.io/frc-2024-poc/?view=r8-stage#model) · [Climber design, load transfer and clearance](experiments/stage-climb/study.md) · [Both-alliance STAGE and qualification results](experiments/speaker-cycles/match-rehearsal.md)
 
 The nominal R7 collected six distinct floor NOTES and reached the shared counter six times by **117.756 s** on development start D1. All twenty formal evaluation starts remain available.
