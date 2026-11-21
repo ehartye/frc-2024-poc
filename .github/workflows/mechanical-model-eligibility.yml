@@ -11,6 +11,8 @@ jobs:
     name: Mechanical model eligibility
     runs-on: ubuntu-latest
     env:
+      FRC_REQUIRE_ACTIVE_MODEL_SELECTION: "true"
+      FRC_ACTIVE_MODEL_SELECTION: ${{ vars.FRC_ACTIVE_MODEL_SELECTION }}
       APPROVED_COMMIT: ${{ vars.FRC_APPROVED_MODEL_COMMIT }}
       VERIFIER_COMMIT: ${{ vars.FRC_MODEL_VERIFIER_COMMIT }}
       REVIEWER_KEY: ${{ vars.FRC_MODEL_REVIEWER_PUBLIC_KEY }}
@@ -49,4 +51,5 @@ jobs:
           test "$(git -C field-generator rev-parse HEAD)" = 92ddf41933dd6026b26493c1d2c91505e9d15914
           git -C project merge-base --is-ancestor "$APPROVED_COMMIT" HEAD
           git -C project show "$APPROVED_COMMIT:.github/mechanical/check-merge.py" > "$RUNNER_TEMP/check-merge.py"
+          node --input-type=module -e "import {selectActive, verifyCurrent} from './verifier/scripts/public-model-release.mjs'"
           python3 -I "$RUNNER_TEMP/check-merge.py" project "$APPROVED_COMMIT" verifier field-generator
