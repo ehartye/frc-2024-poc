@@ -1,0 +1,43 @@
+{
+  "schema": "agent-frc/staged-model-policy@1",
+  "project": "frc-2024-poc",
+  "mutableFieldPages": [
+    "field-lab.html"
+  ],
+  "modelFiles": [
+    "index.html",
+    "media/final-release.jpg",
+    "media/final-release.mp4",
+    "media/first-film-index.json",
+    "media/r7-first-index.json",
+    "media/r7-nominal-d1.glb",
+    "media/r8-stage.glb",
+    "media/r8-stage.png",
+    "media/r9-assembly.glb",
+    "media/r9-assembly.json",
+    "media/r9-assembly.png",
+    "media/robot-native.glb",
+    "media/robot-native.json",
+    "media/robot-native.png",
+    "media/six-score-route.jpg",
+    "media/six-score-route.mp4",
+    "media/swerve-first-shot.webm",
+    "media/swerve-r7.glb",
+    "media/swerve-r7.json",
+    "media/swerve-r7.png",
+    "media/swerve-underside.png",
+    "media/wing-acquisition.jpg",
+    "media/wing-acquisition.mp4",
+    "passive-cassette.json",
+    "passive-entry.html",
+    "passive-entry.js",
+    "passive-entry.json",
+    "robot-model.js",
+    "robot.css",
+    "robot/cad/assembly.png",
+    "robot/cad/assembly.stl.gz",
+    "robot/cad/index.html",
+    "robot/cad/receipt.json",
+    "vendor/model-viewer-4.1.0.min.js"
+  ]
+}
