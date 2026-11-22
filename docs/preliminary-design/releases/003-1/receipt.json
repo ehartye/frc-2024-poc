@@ -1,7 +1,7 @@
 {
   "schema": "agent-frc/preliminary-layout-result@1",
   "issue": "2024-002-cassette",
-  "planSha256": "01a8439c6a02d0b21558078fd1dc646375cc457bf545a38f560489eb870c5915",
+  "planSha256": "d4623ef7088be3f121ba03934bdcf9143a10ffb9c68161e822a7fad3adf02404",
   "design": {
     "file": "cad/preliminary-design/releases/003-1/design.json",
     "sha256": "c09b9c28bebcb3601183995e468d587ba22a0d59e324c07dcad82ebdfb349abf"
@@ -389,9 +389,9 @@
     "verified": true,
     "scene": {
       "file": "cad/preliminary-design/releases/003-1/review-scene.json.gz",
-      "sha256": "b7eed377a78b2fda42222c1bb6f38d8c5b80f894272334d822c1727e3b87a064",
-      "contentSha256": "0a49e901d87fec918dc03ae1c9fe34ba4d83d89f8133be0b12639314ed4f9304",
-      "bytes": 61215731
+      "sha256": "f79a2f2ad3f4a18a73d27a0ae2fa018ca44fb22ee6fdc2f89e0681518fa8ba8a",
+      "contentSha256": "3dc6d9a490afd093bbc38729262d9b805225a09d54004ce86ba63686227b302c",
+      "bytes": 61215726
     }
   },
   "groups": {

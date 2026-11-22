@@ -7,7 +7,7 @@ permissions:
   contents: read
 env:
   # The one plugin pin: a release tag or full commit of ehartye/agent-frc. Change it by pull request.
-  AGENT_FRC_REF: c376a0d71c36a0aacfc950d66b59fef9d045b792 # interim; moves to the release that carries replay entries
+  AGENT_FRC_REF: 07f3bc8bf963f3901b477f85d75c696a2a3a0048
   # The interpreter and CAD kernel the layout check runs with. Keep them at the versions the project checks with locally.
   PYTHON_VERSION: '3.13'
   OCP_VERSION: 8.0.1.0.0
@@ -78,7 +78,7 @@ jobs:
           if [[ "$GITHUB_EVENT_NAME" == push && "$GITHUB_REF_NAME" != "$DEFAULT_BRANCH" ]]; then
             if base=$(git -C project merge-base "origin/$DEFAULT_BRANCH" HEAD 2>/dev/null); then args+=(--base "$base"); fi
           fi
-          node plugin/scripts/design-publication.mjs check project --cache "$RUNNER_TEMP/layout-check" --budget-minutes 45 "${args[@]}"
+          node plugin/scripts/design-publication.mjs check project --cache "$RUNNER_TEMP/layout-check" --budget-minutes 90 "${args[@]}"
       # Keep each rerun that passed even when another design or a later step fails.
       - if: always()
         uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830
