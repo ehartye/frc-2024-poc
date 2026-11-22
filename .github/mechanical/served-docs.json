@@ -5,6 +5,7 @@
     "field-lab.html"
   ],
   "modelFiles": [
+    "drivetrain/README.md",
     "index.html",
     "media/final-release.jpg",
     "media/final-release.mp4",
@@ -38,17 +39,18 @@
     "robot/cad/assembly.stl.gz",
     "robot/cad/index.html",
     "robot/cad/receipt.json",
-    "vendor/model-viewer-4.1.0.min.js"
+    "vendor/model-viewer-4.1.0.min.js",
+    "vendor/model-viewer-LICENSE.txt"
   ],
   "preliminaryReleases": {
     "root": "preliminary-design",
     "primaryEntryPoints": [
       "index.html",
-      "media/r9-assembly.png",
-      "robot-model.js"
+      "passive-entry.html",
+      "workflow.md"
     ],
     "catalogFiles": {
-      "index.html": "9ff182519f3cb00718b895f03bcaf06274905d65ef675c6949f44df8bed5066a",
+      "index.html": "054c58d0a1405ab2e6134aa616bd8b50ed6d7a908b0f5d4c63c32d524f74b082",
       "releases.js": "c4bacd4698859db9263c5ea84c2d267cb7e297c329aef38ed011ad4a51e1b331"
     },
     "presentations": {
@@ -65,5 +67,56 @@
         }
       }
     }
+  },
+  "detailedDesigns": {
+    "root": "detailed-design",
+    "legacy": {
+      "design": "draft-001"
+    },
+    "withdrawn": [
+      {
+        "design": "draft-001",
+        "reason": "Rough draft published before the design-status process. It never passed a mechanical-readiness review.",
+        "files": [
+          "drivetrain/README.md",
+          "index.html",
+          "media/final-release.jpg",
+          "media/final-release.mp4",
+          "media/first-film-index.json",
+          "media/r7-first-index.json",
+          "media/r7-nominal-d1.glb",
+          "media/r8-stage.glb",
+          "media/r8-stage.png",
+          "media/r9-assembly.glb",
+          "media/r9-assembly.json",
+          "media/r9-assembly.png",
+          "media/robot-native.glb",
+          "media/robot-native.json",
+          "media/robot-native.png",
+          "media/six-score-route.jpg",
+          "media/six-score-route.mp4",
+          "media/swerve-first-shot.webm",
+          "media/swerve-r7.glb",
+          "media/swerve-r7.json",
+          "media/swerve-r7.png",
+          "media/swerve-underside.png",
+          "media/wing-acquisition.jpg",
+          "media/wing-acquisition.mp4",
+          "passive-cassette.json",
+          "passive-entry.html",
+          "passive-entry.js",
+          "passive-entry.json",
+          "robot-model.js",
+          "robot.css",
+          "robot/cad/assembly.png",
+          "robot/cad/assembly.stl.gz",
+          "robot/cad/index.html",
+          "robot/cad/receipt.json",
+          "vendor/model-viewer-4.1.0.min.js",
+          "vendor/model-viewer-LICENSE.txt",
+          "workflow.md"
+        ]
+      }
+    ]
   }
 }
