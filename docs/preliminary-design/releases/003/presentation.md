@@ -59,6 +59,8 @@ Use the motion selector for the reverse-belt shot and the disabled climb. Fit fi
 
 ## Speaker view in presentation 003
 
-The blue structure is a dimensioned display blockout of the 2024 speaker. The frame and wall envelopes use measurements from GE-24300 in the blue field coordinate system, rounded to millimeters. The hood uses a simplified side profile. The gold band marks the original four scoring-opening corners. Select **Speaker cutaway** to see the ramp and sensors. **Fit field interaction** frames the robot and speaker together as the robot drives. **Fit robot** gives a closer view of the mechanism.
+The scoring replay displays the grey GE-24300 speaker from the April 9, 2024 FIRST field STEP. On the first visit a background worker downloads the official field archive, verifies its fingerprint and builds the speaker display in the browser. Subsequent visits reuse that browser’s local mesh cache. The frame, ramp and sensor housings use their installed field positions. **Speaker cutaway** hides the outer structure. **Fit field interaction** keeps the moving robot and the full speaker in frame.
 
-Revision 003 uses the same robot, aperture, detector traces and scoring results as revision 002. The display skins and gold band have no collision or scoring role.
+The display uses the same field source and selected parts as the LAN review. Browser tessellation can differ at curved surfaces. The robot, scoring aperture, physical trajectories and detector results are inherited from revision 002. While field CAD is loading, or if its source is unavailable, the viewer identifies the reference geometry and keeps the replay usable.
+
+[Official FIRST field STEP archive](https://firstfrc.blob.core.windows.net/frc2024/FieldAssets/CRESCENDO2024Field-STEP.zip) · [Open Cascade browser reader and licenses](https://github.com/kovacsv/occt-import-js)

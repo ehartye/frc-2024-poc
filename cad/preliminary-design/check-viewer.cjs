@@ -100,6 +100,11 @@ async function check(page, query, release, motion) {
         assert.ok(edge < 1,'Speaker opening is clipped at width '+width+' and fraction '+fraction);
       }
     }
+    await scene.locator('#speakerStatus[data-ready="true"]').waitFor({timeout:180000});
+    const counts = await scene.locator('#canvas').evaluate(() =>
+      Object.fromEntries(['speakerPanel','speakerRamp','sensors'].map(k => [k,sceneGPU.fixtures[k].count/3])));
+    assert.ok(counts.speakerPanel>100000 && counts.speakerRamp>5000 && counts.sensors>100,
+      'Detailed CAD shell, ramp and sensor meshes must be installed');
     const shellImage = sha(await scene.locator('#canvas').screenshot());
     await scene.locator('#cutaway').check();
     assert.notEqual(sha(await scene.locator('#canvas').screenshot()),shellImage,'Speaker cutaway must reveal the interior');
