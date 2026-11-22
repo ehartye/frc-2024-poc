@@ -2,7 +2,9 @@
 const { chromium } = require('playwright');
 const assert = require('node:assert/strict');
 const { createHash } = require('node:crypto');
+const { readFileSync } = require('node:fs');
 const root = new URL(process.argv[2]);
+const baseline = process.argv[3] && readFileSync(process.argv[3],'utf8').trim().split(/\r?\n/).map(JSON.parse);
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 
 async function check(page, query, release, motion) {
@@ -61,15 +63,23 @@ async function check(page, query, release, motion) {
     const failures = [];
     page.on('pageerror', e => failures.push(e.message));
     page.on('response', response => { if (response.status() >= 400) failures.push(response.url()); });
+    const observations = [];
     for (const [query, release, motion] of [
       ['', '002','continuous-cycle-96'], ['?release=001','001','loaded-cycle-48'],
       ['?release=001&case=observed-reset-96','001','observed-reset-96'],
       ...['continuous-cycle-48','score-to-climb-front','score-to-climb-rear'].map(m => ['?release=002&case='+m,'002',m])
-    ]) console.log(JSON.stringify(await check(page,query,release,motion)));
+    ]) {
+      const row = await check(page,query,release,motion);
+      const expectedEnd = motion.includes('climb') ? 'Power cut' : release === '002' ? '6/6 individual events' : '6/6 scored';
+      assert.ok(row.end.includes(expectedEnd), 'Unexpected final readout for '+motion+': '+row.end);
+      observations.push(row);
+      console.log(JSON.stringify(row));
+    }
     await page.goto(new URL('?release=missing',root).href);
     await page.locator('[role=alert]').waitFor({state:'visible'});
     await page.selectOption('#release','001');
     await page.waitForURL(url => url.searchParams.get('release')==='001');
     assert.deepEqual(failures,[]);
+    if (baseline) assert.deepEqual(observations, baseline, 'Viewer differs from the reference run');
   } finally {await browser.close();}
 })().catch(e => {console.error(e);process.exitCode=1;});
