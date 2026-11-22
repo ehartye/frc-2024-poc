@@ -1,15 +1,4 @@
 {
-  "latest": "002",
-  "releases": [
-    {
-      "id": "002",
-      "title": "Continuous six-NOTE cycle and climb",
-      "defaultCase": "continuous-cycle-96"
-    },
-    {
-      "id": "001",
-      "title": "Bounded lift and empty-cassette reset",
-      "defaultCase": "loaded-cycle-48"
-    }
-  ]
+  "current": "002",
+  "releases": ["001", "002"]
 }

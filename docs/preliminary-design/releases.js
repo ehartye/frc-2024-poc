@@ -7,10 +7,22 @@
   try {
     const response = await fetch('./releases.json');
     if (!response.ok) throw new Error('The release index could not be loaded.');
-    const {latest, releases} = await response.json();
-    const catalog = new Map(releases.map(r => [r.id, r]));
-    if (!catalog.has(latest)) throw new Error('The latest release is missing from the index.');
-    for (const r of releases) select.add(new Option(r.id + ' · ' + r.title + (r.id === latest ? ' (latest)' : ''), r.id));
+    const {current: latest, releases} = await response.json();
+    if (!Array.isArray(releases) || !releases.includes(latest) ||
+        releases.some(id => typeof id !== 'string' || !/^[a-z0-9][a-z0-9-]{0,63}$/.test(id)) ||
+        new Set(releases).size !== releases.length) throw new Error('The release index is invalid.');
+    const catalog = new Map();
+    for (const id of [...releases].reverse()) {
+      const option = new Option(id + (id === latest ? ' (latest)' : ''), id);
+      select.add(option);
+      catalog.set(id, option);
+      // An older record can be unavailable without delaying the selected replay.
+      fetch('./releases/' + id + '/release.json').then(async response => {
+        if (!response.ok) return;
+        const record = await response.json();
+        if (typeof record.title === 'string') option.textContent = id + ' · ' + record.title + (id === latest ? ' (latest)' : '');
+      }).catch(() => {});
+    }
     function load() {
       error.hidden = true;
       const query = new URLSearchParams(location.search);
@@ -24,7 +36,7 @@
       select.value = id;
       const url = new URL('releases/' + encodeURIComponent(id) + '/', location.href);
       url.searchParams.set('concept','guided');
-      url.searchParams.set('case',query.get('case') || catalog.get(id).defaultCase);
+      if (query.has('case')) url.searchParams.set('case', query.get('case'));
       direct.href = url; direct.hidden = false; frame.src = url;
     }
     select.onchange = () => {
