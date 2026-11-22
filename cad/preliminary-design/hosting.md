@@ -1,6 +1,6 @@
 # 2024 preliminary design releases
 
-The season's GitHub Pages source is `main:/docs`. Open [the release index](./) for the latest review, or pin a specific revision with [release 001](./?release=001) or [release 002](./?release=002). The optional `case` parameter opens a named motion.
+The season's GitHub Pages source is `main:/docs`. Open [the release index](https://ehartye.github.io/frc-2024-poc/preliminary-design/) for the latest review, or pin a specific revision with [release 001](https://ehartye.github.io/frc-2024-poc/preliminary-design/?release=001) or [release 002](https://ehartye.github.io/frc-2024-poc/preliminary-design/?release=002). The optional `case` parameter opens a named motion.
 
 From the season checkout, run `python -m http.server 8000 --directory docs` and open `http://localhost:8000/preliminary-design/`. For a LAN review, use the host's LAN address in the browser. The static files also run under the repository subpath on GitHub Pages.
 
