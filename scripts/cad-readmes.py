@@ -83,7 +83,9 @@ def run(root, update, template):
             # The top-level README features the season's current preliminary design.
             photo = root / "cad/preliminary-design/media/002-preliminary-robot.json"
             record = json.loads(photo.read_bytes())
-            scene = root / "docs/preliminary-design/releases" / record["release"]
+            catalog = root / "docs/preliminary-design"
+            current = json.loads((catalog / "releases.json").read_bytes())["current"]
+            scene = catalog / "releases" / current
             checked(scene / "scene.json.gz", record["sceneSha256"])
             checked(photo.with_suffix(".png"), record["pngSha256"])
             if json.loads((scene / "release.json").read_bytes())["geometry"] != record["stepSha256"]:

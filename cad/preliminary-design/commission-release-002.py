@@ -39,7 +39,8 @@ def main():
 
     root = opt.output.resolve()
     root.mkdir(exist_ok=True, parents=True)
-    release = PROJECT / "docs/preliminary-design/releases/002"
+    catalog = PROJECT / "docs/preliminary-design"
+    release = catalog / "releases" / json.loads((catalog / "releases.json").read_bytes())["current"]
     published = read(release / "release.json")
     assert sha(opt.step) == published["geometry"] and sha(release / "scene.json.gz") == published["sceneSha256"]
     scene = json.loads(gzip.decompress((release / "scene.json.gz").read_bytes()))

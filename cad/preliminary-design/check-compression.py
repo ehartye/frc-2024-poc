@@ -25,7 +25,8 @@ def main():
     from OCP.gp import gp_Trsf
 
     here = Path(__file__).resolve().parent
-    release = here.parents[1] / "docs/preliminary-design/releases/002"
+    catalog = here.parents[1] / "docs/preliminary-design"
+    release = catalog / "releases" / json.loads((catalog / "releases.json").read_bytes())["current"]
     commissioning = json.loads((here / "compression-limits-002.json").read_bytes())
     original = json.loads((here / "contact-depth-002.json").read_bytes())
     data = (release / "scene.json.gz").read_bytes()

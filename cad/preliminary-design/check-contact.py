@@ -37,7 +37,8 @@ def main():
     from showcase_contacts import load_solids
     from mechanical_motion import common, distance
 
-    release = Path(__file__).resolve().parents[2] / "docs/preliminary-design/releases/002"
+    catalog = Path(__file__).resolve().parents[2] / "docs/preliminary-design"
+    release = catalog / "releases" / json.loads((catalog / "releases.json").read_bytes())["current"]
     record = json.loads((release / "release.json").read_bytes())
     scene_file = release / "scene.json.gz"
     assert sha(scene_file) == record["sceneSha256"] and sha(args.layout_step) == record["geometry"]

@@ -1,16 +1,13 @@
-# 2024 preliminary design releases
+# 2024 guided-cassette preliminary design
 
-The season's GitHub Pages source is `main:/docs`. Open [the release index](https://ehartye.github.io/frc-2024-poc/preliminary-design/) for the latest review, or pin a specific revision with [release 001](https://ehartye.github.io/frc-2024-poc/preliminary-design/?release=001) or [release 002](https://ehartye.github.io/frc-2024-poc/preliminary-design/?release=002). The optional `case` parameter opens a named motion.
+The [preliminary viewer](https://ehartye.github.io/frc-2024-poc/preliminary-design/) opens the current six-NOTE run. Select the other scoring clock or either climb approach from the motion menu. Copy the page URL to share the selected motion. The robot, four replays, weight and power ledgers, mechanical companion, and FIRST field fixtures ship together in `docs/preliminary-design/releases/003/`.
 
-From the season checkout, run `python -m http.server 8000 --directory docs` and open `http://localhost:8000/preliminary-design/`. For a LAN review, use the host's LAN address in the browser. The static files also run under the repository subpath on GitHub Pages.
+Git preserves the earlier presentation iterations. Earlier catalog links using `?release=001`, `002` or `003` open this same design. Both current scoring runs use the official blue speaker. Both climbs use the official blue stage, anchors and chains. FIRST supplies the field archive directly to the browser. The NOTE follows the measured free-piece trajectory using the project’s simulation geometry.
 
-Each numbered directory contains its launch page, scripts, styling, compressed scene, budgets, motion traces and release record. The viewer loads the compressed JSON in the browser. A new release gets a new directory and an entry in `releases.json`; append the new ID in chronological order and update `current` after verifying the release. The selector reads descriptive titles from each revision and shows the newest first. Keep previously published directories intact.
+### What the mechanical replay checks
 
-The geometry is a preliminary robot blockout. Revision 003 loads the grey scoring speaker from the official field CAD. The robot, scoring evidence and earlier releases remain available in the same viewer. Inspect the evidence and open qualifications within each replay before using a simulation result for a design decision.
 
-### What revision 002 checks
-
-The season viewer plays the continuous six-NOTE trials and both climb approaches. Its [companion mechanical review](../../docs/preliminary-design/releases/002/package-motion.html) follows one discharge from the fine-clock trial on all 232 robot and piece solids. It also shows straight withdrawal of the service index pin. Those operations have their own collision, mass and loaded-voltage records. The field trial and mechanical review answer different questions.
+The season viewer plays the continuous six-NOTE trials and both climb approaches. Its [companion mechanical review](../../docs/preliminary-design/releases/003/package-motion.html) follows one discharge from the fine-clock trial on all 232 robot and piece solids. It also shows straight withdrawal of the service index pin. Those operations have their own collision, mass and loaded-voltage records. The field trial and mechanical review answer different questions.
 
 At discharge the unloaded NOTE passes the right entry bearing bracket with a smallest sampled clearance of 0.035 mm. An independent interval calculation bounds the nominal clearance above 0.015 mm throughout that segment. Assembly error or variation in the NOTE could consume that margin. Check it on the prototype. [Bracket clearance calculation](motion-evidence-002/exit-bracket-clearance.json)
 
@@ -25,4 +22,4 @@ node cad/preliminary-design/check-viewer.cjs http://localhost:8000/preliminary-d
 node cad/preliminary-design/check-viewer.cjs http://localhost:8001/preliminary-design/ reference.jsonl
 ```
 
-The comparison opens all six featured links across both revisions and exercises the camera, inventory, part focus, playback, labels, floor and load drill-down. It compares opening canvas pixels, end-of-motion readouts, inventory counts and the rendered ledger text. Keep both browser runs on the same rendering backend for a meaningful pixel comparison.
+The comparison exercises all four current replays and checks that older catalog links resolve. It compares the final readouts, inventory counts and weight and power ledgers with the reference. It also checks camera controls, selection, speaker cutaway, phone framing, and which of the three stage chains moves during each climb.
