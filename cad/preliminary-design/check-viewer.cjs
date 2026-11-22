@@ -18,7 +18,8 @@ async function check(page, query, release, motion) {
       performance.now() - start > 30000 ? reject(Error('Replay initialization timed out')) : setTimeout(poll, 50);
     poll();
   }));
-  assert.equal(await page.locator('#release').inputValue(), release);
+  assert.equal(await page.locator('#release').count(), 0);
+  assert.equal(new URL(await page.locator('#viewer').getAttribute('src'),root).pathname, new URL('releases/'+release+'/',root).pathname);
   assert.equal(new URL(await page.locator('#direct').getAttribute('href'), root).searchParams.get('case'), motion);
   const canvas = frame.locator('#canvas');
   const image = async () => sha(await canvas.screenshot());
@@ -63,23 +64,19 @@ async function check(page, query, release, motion) {
     const failures = [];
     page.on('pageerror', e => failures.push(e.message));
     page.on('response', response => { if (response.status() >= 400) failures.push(response.url()); });
-    const observations = [];
-    for (const [query, release, motion] of [
-      ['?release=002', '002','continuous-cycle-96'], ['?release=001','001','loaded-cycle-48'],
-      ['?release=001&case=observed-reset-96','001','observed-reset-96'],
-      ...['continuous-cycle-48','score-to-climb-front','score-to-climb-rear'].map(m => ['?release=002&case='+m,'002',m])
-    ]) {
-      const row = await check(page,query,release,motion);
-      const expectedEnd = motion.includes('climb') ? 'Power cut' : release === '002' ? '6/6 individual events' : '6/6 scored';
-      assert.ok(row.end.includes(expectedEnd), 'Unexpected final readout for '+motion+': '+row.end);
-      observations.push(row);
-      console.log(JSON.stringify(row));
-    }
     for (const motion of ['continuous-cycle-96','continuous-cycle-48','score-to-climb-front','score-to-climb-rear']) {
-      const query = motion === 'continuous-cycle-96' ? '' : '?case='+motion;
-      const live = await check(page,query,'003',motion);
-      const prior = observations.find(r => r.release === '002' && r.motion === motion);
-      for (const key of ['end','inventory','weight','power']) assert.equal(live[key],prior[key],motion+' '+key);
+      const live = await check(page,motion==='continuous-cycle-96'?'':'?case='+motion,'003',motion);
+      assert.ok(live.end.includes(motion.includes('climb')?'Power cut':'6/6 individual events'));
+      if (baseline) {
+        const prior = baseline.find(r=>r.release==='002' && r.motion===motion);
+        for (const k of ['end','inventory','weight','power']) assert.equal(live[k],prior[k],motion+' '+k);
+      }
+      console.log(JSON.stringify(live));
+    }
+    for (const [old,motion] of [['001','loaded-cycle-48'],['002','continuous-cycle-48'],['003','continuous-cycle-48']]) {
+      await page.goto(new URL('?release='+old+'&case='+motion,root).href);
+      await page.waitForURL(u=>!u.searchParams.has('release') && u.searchParams.get('case')==='continuous-cycle-48');
+      assert.match(await page.locator('#viewer').getAttribute('src'), /releases\/003\//);
     }
     await page.goto(root.href);
     const scene = page.frameLocator('#viewer');
@@ -100,7 +97,7 @@ async function check(page, query, release, motion) {
         assert.ok(edge < 1,'Speaker opening is clipped at width '+width+' and fraction '+fraction);
       }
     }
-    await scene.locator('#speakerStatus[data-ready="true"]').waitFor({timeout:180000});
+    await scene.locator('#fieldStatus[data-fixture="speaker"][data-ready="true"]').waitFor({timeout:180000});
     const counts = await scene.locator('#canvas').evaluate(() =>
       Object.fromEntries(['speakerPanel','speakerRamp','sensors'].map(k => [k,sceneGPU.fixtures[k].count/3])));
     assert.ok(counts.speakerPanel>100000 && counts.speakerRamp>5000 && counts.sensors>100,
@@ -108,11 +105,47 @@ async function check(page, query, release, motion) {
     const shellImage = sha(await scene.locator('#canvas').screenshot());
     await scene.locator('#cutaway').check();
     assert.notEqual(sha(await scene.locator('#canvas').screenshot()),shellImage,'Speaker cutaway must reveal the interior');
+    for (const approach of ['front','rear']) {
+      const motion='score-to-climb-'+approach;
+      await scene.locator('#motion').evaluate((select,key)=>{
+        select.selectedIndex=data.cases.findIndex(c=>c.key===key);
+        select.dispatchEvent(new Event('change'));
+      },motion);
+      await scene.locator('#fieldStatus[data-fixture="stage"][data-ready="true"]').waitFor({timeout:180000});
+      const poses=await scene.locator('#time').evaluate(el=>{
+        const names=['stageSteel','anchors','workingChain','otherChain'];
+        const fixture=sceneGPU.fixtures,c=current(),poses=[];
+        const originalDraw=gl.drawArrays;
+        try{
+          for(const t of [0,Math.round(Number(el.max)/2),Number(el.max)]){
+            el.value=t;
+            const draws={};
+            gl.drawArrays=function(...args){
+              const buffer=this.getParameter(this.ARRAY_BUFFER_BINDING);
+              const name=names.find(n=>fixture[n].buffer===buffer);
+              if(name)draws[name]={triangles:args[2]/3,bent:!!this.getUniform(program,locationMap.bend)};
+              return originalDraw.apply(this,args);
+            };
+            render();
+            const offset=gl.getUniform(program,gl.getUniformLocation(program,'offsets[12]'));
+            const expected=c.chain[t][12][2]-c.chain[0][12][2];
+            poses.push({draws,dz:offset[2],expected});
+          }
+        }finally{gl.drawArrays=originalDraw}
+        return poses;
+      });
+      for(const {draws,dz,expected} of poses){
+        assert.deepEqual(Object.keys(draws).sort(),['anchors','otherChain','stageSteel','workingChain']);
+        assert.ok(draws.stageSteel.triangles>100000 && draws.anchors.triangles>1000 && draws.workingChain.triangles>50000);
+        assert.equal(draws.otherChain.triangles,2*draws.workingChain.triangles);
+        assert.deepEqual(Object.keys(draws).filter(k=>draws[k].bent),['workingChain']);
+        assert.ok(Math.abs(dz-expected)<.001,'CAD chain follows the recorded midpoint displacement');
+      }
+      assert.equal(poses[0].dz,0);
+      assert.ok(poses.at(-1).dz < -45,'Loaded chain sags at power cut');
+    }
     await page.goto(new URL('?release=missing',root).href);
     await page.locator('[role=alert]').waitFor({state:'visible'});
-    await page.selectOption('#release','001');
-    await page.waitForURL(url => url.searchParams.get('release')==='001');
     assert.deepEqual(failures,[]);
-    if (baseline) assert.deepEqual(observations, baseline, 'Viewer differs from the reference run');
   } finally {await browser.close();}
 })().catch(e => {console.error(e);process.exitCode=1;});

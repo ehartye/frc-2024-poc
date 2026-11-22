@@ -1,6 +1,6 @@
-// Select the blue speaker subtree from FIRST's AP203 assembly before tessellation.
+// Select a blue field fixture subtree from FIRST's AP203 assembly before tessellation.
 // Assembly relations point from parent representation to child representation.
-function speakerStep(source) {
+function fieldSubtree(source, fixture) {
   const records = [], names = new Map(), children = new Map(), products = new Map();
   const breps = new Map(), context = new Map();
   const ids = line => Array.from(line.matchAll(/#(\d+)/g), m => Number(m[1]));
@@ -23,38 +23,47 @@ function speakerStep(source) {
       products.set(ids(value)[1], id);
     }
   }
-  const target = [...names].find(([,n]) => n === 'GE-24300_Briweld Field Blue')?.[0];
+  const wanted = fixture==='speaker' ? 'GE-24300_Briweld Field Blue' : 'GE-24200_Blue';
+  const target = [...names].find(([,n]) => n === wanted)?.[0];
   const roots = [...children.keys()].filter(id => children.get(id).some(e => e.child === target));
-  if (!target || roots.length !== 1) throw Error('Blue speaker assembly registration changed');
-  const seeds = new Set();
-  const include = id => {
-    if (seeds.has(id)) return;
-    seeds.add(id);
-    const product = products.get(id);
-    if (product) seeds.add(product);
-    for (const rep of breps.get(id) || []) seeds.add(rep);
-    for (const edge of children.get(id) || []) {
-      if (id === roots[0] && edge.child !== target) continue;
-      const n = names.get(edge.child) || '';
-      if (!children.has(edge.child) && !/^(GE-|FE-|42SMR$)|Truss|Grip_Wheel/.test(n)) continue;
-      seeds.add(context.get(edge.id));
-      include(edge.child);
+  if (!target || roots.length !== 1) throw Error('Blue field assembly registration changed');
+  // Reuse the entity index for the steel, anchors and chain parts. Reading them
+  // separately preserves their identity even when the CAD importer emits unnamed solids.
+  return group => {
+    const seeds = new Set();
+    const include = (id,group) => {
+      if (seeds.has(id)) return;
+      seeds.add(id);
+      const product = products.get(id);
+      if (product) seeds.add(product);
+      for (const rep of breps.get(id) || []) seeds.add(rep);
+      for (const edge of children.get(id) || []) {
+        if (id === roots[0] && edge.child !== target) continue;
+        const n = names.get(edge.child) || '';
+        if (!children.has(edge.child)) {
+          if (!/^(GE-|FE-|Connection Plate|Hook_4|42SMR$)|Truss|Grip_Wheel/.test(n)) continue;
+          const role=n==='GE-24205_hanging'?'chains': n.includes('Clamp')||n.includes('Hook_4')?'anchors':'stageSteel';
+          if (fixture!=='speaker' && role!==group) continue;
+        }
+        seeds.add(context.get(edge.id));
+        include(edge.child,group);
+      }
+    };
+    include(roots[0],group);
+    const seen = new Set(), stack = [...seeds], lines = [source.slice(0, source.indexOf('DATA;')+5)];
+    while (stack.length) {
+      const id = stack.pop();
+      if (seen.has(id)) continue;
+      seen.add(id);
+      const record = records[id];
+      if (!record) throw Error('Missing referenced STEP entity '+id);
+      const line = source.slice(record[0], record[0]+record[1]);
+      lines.push(line);
+      for (const ref of ids(line)) if (!seen.has(ref)) stack.push(ref);
     }
+    lines.push('ENDSEC;', 'END-ISO-10303-21;');
+    return lines.join('\n');
   };
-  include(roots[0]);
-  const seen = new Set(), stack = [...seeds], lines = [source.slice(0, source.indexOf('DATA;')+5)];
-  while (stack.length) {
-    const id = stack.pop();
-    if (seen.has(id)) continue;
-    seen.add(id);
-    const record = records[id];
-    if (!record) throw Error('Missing referenced STEP entity '+id);
-    const line = source.slice(record[0], record[0]+record[1]);
-    lines.push(line);
-    for (const ref of ids(line)) if (!seen.has(ref)) stack.push(ref);
-  }
-  lines.push('ENDSEC;', 'END-ISO-10303-21;');
-  return lines.join('\n');
 }
 
 const archiveUrl = 'https://firstfrc.blob.core.windows.net/frc2024/FieldAssets/CRESCENDO2024Field-STEP.zip';
@@ -74,18 +83,27 @@ async function fieldMember(zip) {
   const stream = new Blob([zip.slice(start,start+header.getUint32(18,true))]).stream();
   return new Response(stream.pipeThrough(new DecompressionStream('deflate-raw'))).text();
 }
-function displayGroups(meshes) {
-  const groups = {speakerPanel:[],speakerRamp:[],sensors:[]};
+function displayGroups(meshes,role) {
+  const groups = role==='speaker' ? {speakerPanel:[],speakerRamp:[],sensors:[]} : role==='chains' ? {workingChain:[],otherChain:[]} : {[role]:[]};
   for (const mesh of meshes) {
     const pos=mesh.attributes.position.array, idx=mesh.index.array;
     // XCAF can return unnamed sensor sub-solids. Classify them by their actual
     // placed bounds in the sensor housing envelope measured from the STEP.
-    let sensor=true;
-    for (let j=0;j<pos.length && sensor;j+=3) {
-      const x=8270.875-pos[j], y=4105.275+pos[j+2], z=pos[j+1]-4.7752;
-      sensor=x>=-1180 && x<=-1063 && y>=5735 && y<=5788 && z>=1277 && z<=1435;
+    let group=role;
+    if(role==='chains'){
+      let minX=Infinity,maxX=-Infinity;
+      for(let j=0;j<pos.length;j+=3){const x=8270.875-pos[j];minX=Math.min(minX,x);maxX=Math.max(maxX,x)}
+      if(minX>=5743 && maxX<=5778)group='workingChain';
+      else if(minX>=3371 && maxX<=5472)group='otherChain';
+      else throw Error('Unexpected field location for a chain link');
+    }else if(role==='speaker'){
+      let sensor=true;
+      for(let j=0;j<pos.length && sensor;j+=3){
+        const x=8270.875-pos[j],y=4105.275+pos[j+2],z=pos[j+1]-4.7752;
+        sensor=x>=-1180 && x<=-1063 && y>=5735 && y<=5788 && z>=1277 && z<=1435;
+      }
+      group=sensor?'sensors':/^GE-(24307|24308|24309|24355|24391|24392)/.test(mesh.name)?'speakerRamp':'speakerPanel';
     }
-    const group=sensor?'sensors':/^GE-(24307|24308|24309|24355|24391|24392)/.test(mesh.name)?'speakerRamp':'speakerPanel';
     groups[group].push({pos,idx});
   }
   const buffers={};
@@ -109,10 +127,11 @@ function displayGroups(meshes) {
   }
   return buffers;
 }
-async function loadFieldSpeaker() {
-  const cacheName='frc-2024-speaker-003-v1-'+archiveDigest;
+async function loadFieldFixture(fixture) {
+  if(!['speaker','stage'].includes(fixture))throw Error('Unknown field fixture');
+  const cacheName='frc-2024-field-'+fixture+'-v1-'+archiveDigest;
   const cache=self.caches ? await self.caches.open(cacheName).catch(()=>null) : null;
-  const groups=['speakerPanel','speakerRamp','sensors'];
+  const groups=fixture==='speaker'?['speakerPanel','speakerRamp','sensors']:['stageSteel','anchors','workingChain','otherChain'];
   const key=name=>new URL('./cad-preview-cache/'+name,self.location.href).href;
   const hits=cache ? await Promise.all(groups.map(group=>cache.match(key(group)))) : [];
   if(hits.length && hits.every(Boolean)){
@@ -127,18 +146,25 @@ async function loadFieldSpeaker() {
   ]);
   const readerUrl=URL.createObjectURL(new Blob([js],{type:'text/javascript'}));
   try {importScripts(readerUrl)} finally {URL.revokeObjectURL(readerUrl)}
-  postMessage({status:'Preparing the grey speaker from field CAD…'});
+  postMessage({status:'Preparing the '+fixture+' from field CAD…'});
   const api=await occtimportjs({wasmBinary:wasm});
-  const subset=speakerStep(await fieldMember(zip));
-  const model=api.ReadStepFile(new TextEncoder().encode(subset),{linearUnit:'millimeter',linearDeflectionType:'absolute_value',linearDeflection:1,angularDeflection:.27});
-  if(!model.success || model.meshes.length!==207) throw Error('Speaker geometry failed its assembly check');
-  const buffers=displayGroups(model.meshes);
+  const select=fieldSubtree(await fieldMember(zip),fixture);
+  const buffers={};
+  const roles=fixture==='speaker'?['speaker']:['stageSteel','anchors','chains'];
+  for(const role of roles){
+    const subset=select(role);
+    const model=api.ReadStepFile(new TextEncoder().encode(subset),{
+      linearUnit:'millimeter',linearDeflectionType:'absolute_value',linearDeflection:1,angularDeflection:fixture==='speaker'?.27:.48
+    });
+    if(!model.success || !model.meshes.length || (role==='speaker' && model.meshes.length!==207))throw Error('Field assembly failed its geometry check');
+    Object.assign(buffers,displayGroups(model.meshes,role));
+  }
   if(cache) await Promise.all(groups.map(g=>cache.put(key(g),new Response(buffers[g])))).catch(()=>{});
   return buffers;
 }
 if(typeof WorkerGlobalScope!=='undefined' && self instanceof WorkerGlobalScope) {
-  self.onmessage=async()=>{
-    try {const buffers=await loadFieldSpeaker();postMessage({buffers},Object.values(buffers))}
+  self.onmessage=async({data:fixture})=>{
+    try {const buffers=await loadFieldFixture(fixture);postMessage({buffers},Object.values(buffers))}
     catch(error){postMessage({error:error.message})}
   };
 }

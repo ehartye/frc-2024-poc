@@ -1,6 +1,6 @@
 {
   "id": "003",
-  "title": "Six-NOTE cycle and climb \u00b7 speaker view",
+  "title": "2024 guided cassette · scoring and climbing",
   "defaultCase": "continuous-cycle-96",
   "sceneSha256": "5a1a5861cc9df6e3fc43ec7038701a64322de008b01f0e557416839b7943e0b5",
   "geometry": "a29a146d8897f64e8f056fcb46a431ba234c7aecccbc3233b6834c43c703bc88",
@@ -11,7 +11,7 @@
     "score-to-climb-rear"
   ],
   "scope": "Four of the first five starts produced six individual shot events within 120 s when the field observer kept running. One sixth NOTE reached both beams at 118.264 s. In the remaining start, the third NOTE returned to the carpet. Fifteen starts and the complete shared-counter check remain open.",
-  "fixtureRepresentation": "Grey speaker from the original GE-24300 assembly in the official FIRST 2024 field STEP, loaded directly from FIRST by the browser. Registered opening and scoring trials are inherited from robot revision 002.",
+  "fixtureRepresentation": "The browser loads the GE-24300 speaker and GE-24200 blue stage with all three chains from FIRST’s official field archive. The working chain follows the recorded centerline. The cassette model and trial trajectories are the measured preliminary package.",
   "schema": "agent-frc/preliminary-release@1",
   "release": "003",
   "status": "layout-checked",

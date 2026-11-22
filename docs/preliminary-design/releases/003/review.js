@@ -72,20 +72,17 @@ function interactionFit(){
  if(k==='shot'){
    cam={az:-.76,el:.12,x:0,y:0,center:[0,0,0],zoom:1,trackSpeaker:true};isolated=null;draw();return
  }
- const h=$('canvas').clientHeight||500,w=$('canvas').clientWidth||800;
- const width=k==='shot'?3300:3800,height=k==='shot'?2850:2500;
- const sc=.9*Math.min(w/width,h/height);
- cam={az:k==='shot'?-1.12:-.83,el:k==='shot'?.18:.30,x:0,y:0,center:k==='shot'?[-950,0,1190]:[-800,0,1080],zoom:480*sc/Math.min(w,h)};isolated=null;draw()
+ cam={az:-.83,el:.30,x:0,y:0,center:[0,0,0],zoom:1,trackStage:true};isolated=null;draw();return
 }
 
 // Orthographically fit both the station and the moving robot. Only the shot's
 // interaction view tracks this box; orbit, user zoom and pan remain available.
-function speakerFraming(xy,az,el,width,height){
+function fieldFraming(xy,az,el,width,height,stage){
  const u=[-Math.sin(az),Math.cos(az),0];
  const up=[-Math.sin(el)*Math.cos(az),-Math.sin(el)*Math.sin(az),Math.cos(el)];
  let left=Infinity,right=-Infinity,bottom=Infinity,top=-Infinity;
  for(const [lo,hi] of [
-   [[-1519-xy[0],3928-xy[1],0],[920-xy[0],7164-xy[1],2505]],
+   stage?[[3073-xy[0],2398-xy[1],-2],[6030-xy[0],5812-xy[1],2243]]:[[-1519-xy[0],3928-xy[1],0],[920-xy[0],7164-xy[1],2505]],
    [[-780,-780,0],[780,780,1400]]
  ]){
    for(const x of [lo[0],hi[0]])for(const y of [lo[1],hi[1]])for(const z of [lo[2],hi[2]]){
@@ -110,6 +107,7 @@ function reset(){
  const scale=.88*Math.min((w-rail-24)/(bounds[1]-bounds[0]),h/(bounds[3]-bounds[2]));
  cam={az,el,x:0,y:0,center,zoom:480*scale/Math.min(w,h)};draw()
 }
+let updateFieldFixture;
 let sceneGPU,paintPending=false,locationMap={},lastProjection;
 function initGL(){
  const c=$('canvas');gl=c.getContext('webgl',{antialias:true,alpha:false});
@@ -135,24 +133,37 @@ function initGL(){
    fixtures[name]=upload(out,gl.TRIANGLES)
  }
  sceneGPU={fixtures,mesh,grid,aperture:upload(lineData,gl.LINES),ground:triangles({v:[[0,0,-.1],[size[0],0,-.1],[size[0],size[1],-.1],[0,size[1],-.1]],f:[[0,1,2],[0,2,3]]})};
- const state=$('speakerStatus'), retry=$('speakerRetry');
- function loadSpeaker(){
-   retry.hidden=true;state.dataset.ready='loading';state.textContent='Loading grey speaker from FIRST field CAD…';
-   const worker=new Worker('./speaker-cad-worker.js');
-   function failed(message){state.dataset.ready='error';state.textContent='Field CAD unavailable · showing scoring reference geometry. '+message;retry.hidden=false;worker.terminate()}
+ const state=$('fieldStatus'),retry=$('fieldRetry'),loaded=new Set();
+ let activeWorker=null, requested=null;
+ function update(force=false){
+   const kind=current().fixture||current().key;
+   const fixture=kind==='shot'?'speaker':kind==='climb'||kind==='park'?'stage':null;
+   $('fieldSource').hidden=!fixture;
+   if(fixture===requested&&!force)return;
+   if(activeWorker){activeWorker.terminate();activeWorker=null}
+   requested=fixture;retry.hidden=true;
+   if(!fixture)return;
+   state.dataset.fixture=fixture;
+   const ready=()=>{state.dataset.ready='true';state.textContent=fixture==='stage'?'Stage, anchors and chains · FIRST 2024 field CAD':'Grey speaker · FIRST 2024 field CAD'};
+   if(loaded.has(fixture)){ready();return}
+   state.dataset.ready='loading';state.textContent='Loading '+fixture+' from FIRST field CAD…';
+   const worker=new Worker('./field-cad-worker.js');activeWorker=worker;
+   const finish=()=>{worker.terminate();activeWorker=null};
+   function failed(message){if(activeWorker!==worker)return;state.dataset.ready='error';state.textContent='Field CAD unavailable · showing reference geometry. '+message;retry.hidden=false;finish()}
    worker.onerror=event=>failed(event.message||'Reader failed to start.');
    worker.onmessage=({data:result})=>{
+     if(activeWorker!==worker)return;
      if(result.status){state.textContent=result.status;return}
      if(result.error){failed(result.error);return}
      for(const [name,buffer] of Object.entries(result.buffers)){
        const previous=fixtures[name];fixtures[name]=upload(new Float32Array(buffer),gl.TRIANGLES);
        gl.deleteBuffer(previous.buffer);
      }
-     state.dataset.ready='true';state.textContent='Grey speaker · FIRST 2024 field CAD';worker.terminate();draw()
+     loaded.add(fixture);ready();finish();draw()
    };
-   worker.postMessage('load');
+   worker.postMessage(fixture);
  }
- retry.onclick=loadSpeaker;loadSpeaker();
+ updateFieldFixture=update;retry.onclick=()=>update(true);
 }
 function modelMatrix(m){return [m[0],m[4],m[8],0,m[1],m[5],m[9],0,m[2],m[6],m[10],0,m[3],m[7],m[11],1]}
 function draw(){if(!cam||paintPending)return;paintPending=true;requestAnimationFrame(render)}
@@ -214,7 +225,7 @@ function render(){
  if(canvas.width!==pw||canvas.height!==ph){canvas.width=pw;canvas.height=ph;gl.viewport(0,0,pw,ph)}
  gl.clearColor(.058,.114,.207,1);gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);
  const rail=$('labels').checked?labelRail(width):0;
- const tracking=cam.trackSpeaker&&!isolated?speakerFraming(cs.positions[t],cam.az,cam.el,width-rail,height):null;
+ const tracking=(cam.trackSpeaker||cam.trackStage)&&!isolated?fieldFraming(cs.positions[t],cam.az,cam.el,width-rail,height,cam.trackStage):null;
  const center=tracking?tracking.center:cam.center;
  const ca=Math.cos(cam.az),sa=Math.sin(cam.az),ce=Math.cos(cam.el),se=Math.sin(cam.el),sc=cam.zoom*(tracking?tracking.scale:Math.min(width-rail,height)/480);
  const u=[-sa,ca,0].map(v=>v*2*sc/width),v=[-se*ca,-se*sa,ce].map(v=>v*2*sc/height),z=[ce*ca,ce*sa,se].map(v=>-v/45000);
@@ -370,7 +381,7 @@ async function init(){
    stop();const c=current();$('time').max=c.positions.length-1;$('time').value=0;marked=[];selected=null;
    const link=new URL(location.href);if(variant)link.searchParams.set('concept',conceptKey);else link.searchParams.delete('concept');link.searchParams.set('case',c.key);history.replaceState({},'',link);if(parent!==window)parent.postMessage({type:'review-case',case:c.key},location.origin);
    const match=data.power.find(e=>e.stage===c.id&&e.batteryCondition==='weak');if(match){$('duty').value=match.case;budget()}
-   $('cutaway').disabled=(c.fixture||c.key)!=='shot';$('basis').textContent=c.basis;$('witness').textContent='';evidence();interactionFit();
+   $('cutaway').disabled=(c.fixture||c.key)!=='shot';$('basis').textContent=c.basis;$('witness').textContent='';evidence();interactionFit();updateFieldFixture();
  }
  $('motion').onchange=()=>{const next=current().key;if(slideService && sceneGroup(activeCase)!==sceneGroup(next)){const u=new URL(location.href);u.searchParams.set('concept','guided');u.searchParams.set('case',next);location.assign(u.href);return;}activate();};$('time').oninput=()=>{stop();draw()};
  $('play').onclick=()=>{if(timer)return stop();const c=current(),times=c.time||c.positions.map((_,i)=>i*.1);if(+$('time').value===times.length-1)$('time').value=0;const start=performance.now(),offset=times[+$('time').value],rate=+$('speed').value;$('play').textContent='Pause';timer=setInterval(()=>{const elapsed=offset+(performance.now()-start)*rate/1000;let t=+$('time').value;while(t<times.length-1&&times[t+1]<=elapsed)t++;$('time').value=t;draw();if(t===times.length-1)stop()},16)};

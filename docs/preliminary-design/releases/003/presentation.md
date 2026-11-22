@@ -57,10 +57,16 @@ Keep names outside the assembly in one callout margin. Sort the labels and mater
 
 Use the motion selector for the reverse-belt shot and the disabled climb. Fit field interaction includes the registered field fixture. Use Target cutaway to inspect the NOTE inside the speaker. The shot includes a one-second kinematic cam rise before the motor and free-piece simulation clock starts. The climb shows the loaded chain shape, ground reaction and drive torque through shutdown. See the clearance evidence below each replay for matched controls. The CAD field source is FE-2024.STEP. Physical test data for drivetrain inertia, grip, gate entry and brake strength remain outstanding.
 
-## Speaker view in presentation 003
+## Speaker in the scoring replay
 
 The scoring replay displays the grey GE-24300 speaker from the April 9, 2024 FIRST field STEP. On the first visit a background worker downloads the official field archive, verifies its fingerprint and builds the speaker display in the browser. Subsequent visits reuse that browser’s local mesh cache. The frame, ramp and sensor housings use their installed field positions. **Speaker cutaway** hides the outer structure. **Fit field interaction** keeps the moving robot and the full speaker in frame.
 
 The display uses the same field source and selected parts as the LAN review. Browser tessellation can differ at curved surfaces. The robot, scoring aperture, physical trajectories and detector results are inherited from revision 002. While field CAD is loading, or if its source is unavailable, the viewer identifies the reference geometry and keeps the replay usable.
 
 [Official FIRST field STEP archive](https://firstfrc.blob.core.windows.net/frc2024/FieldAssets/CRESCENDO2024Field-STEP.zip) · [Open Cascade browser reader and licenses](https://github.com/kovacsv/occt-import-js)
+
+## Stage and chains in the climb replays
+
+Both climb replays show the blue GE-24200 stage from the same official 2024 field archive as the speaker. The grey trusses, anchors and two unloaded chains stay fixed in field coordinates. The gold chain uses the purchased field link shapes. Its motion interpolates the 25 recorded centerline displacements for each frame. That deforms the display of the links and does not calculate new link contact or loads. The front and rear approaches retain their independent recorded robot and shutdown states.
+
+Select either climb from the motion menu. **Fit field interaction** frames the stage and robot during approach and elevation. On the first visit the worker prepares the CAD. The status above the canvas identifies the active fixture and reports when it is ready.
