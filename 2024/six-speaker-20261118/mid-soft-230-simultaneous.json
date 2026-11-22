@@ -1,0 +1,14 @@
+{
+  "intervals": 35400,
+  "unresolvedIntervals": 0,
+  "firstUnresolved": null,
+  "minimumCertifiedGapMm": 19.722065472592874,
+  "robot": "2595bb0f754cbbfe39605e410f962ec0fd8bd4fb749ed921d481e0d55e448ba0",
+  "field": "e0ec75d68f389537a675c92f835a7ac6ba20a5f2af2ca9fae91647a369d7d369",
+  "native": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "environment": {
+    "minimumOtherNoteGapM": 7.138546135762217,
+    "otherFieldEnvelopeOverlaps": 0
+  },
+  "fieldBounds": "a43889e63d4f793b884e2094d682c887bc7b3c5044ce5033224b306f4ada3096"
+}

@@ -1,0 +1,61 @@
+{
+  "previousScore": "1cfc9613df089f151cf9cad59cb7202422e320e6adc42c9abbad502831a03009",
+  "olderShot": "bfd9ca75ddf65abeeb7011d6c04f07cd14e182f1755ac2b65de9dc85de329956",
+  "laterShot": "a9ba1e6409e09b42abf4f8558dbc0b2fd1bb97612f2b4312a43ff6308f7f9380",
+  "field": "614842835df1ac81caabfb794c998efc49471aa83b042318b2e770a7e5ebb01a",
+  "priorSegments": [
+    "43ff16646dbd849fd1e6e4784494970af71468bb67790255809432bd4b6a65ba",
+    "27f51a4a776dcf5ef615b05f727b79a073c68dc15f243c4fdeff153d7dd85e9b"
+  ],
+  "sensorClearByS": 81.65390000040713,
+  "minimumPieceSeparationM": 0.9157154780534769,
+  "verifiedThroughS": 101.97740000050776,
+  "earlierCollectionSeparation": [
+    {
+      "score": "205bd708130af8c881455a952f9b5d9a760171576ccd0712eb6fa9d1aea644ca",
+      "segments": [
+        "f444be8f3a4f34366ac68d78be655371dd84874062641ae1e5fc95c0e7b7042a",
+        "dafef3d790f4e9c659ed460b25d1ebec6d02969ae33b5d3fd81826d57b35d367",
+        "1be84c3c20a48ab7bb033917ec0da23ca8a55488d3ddb4e58d0baeb8dfe8ba69",
+        "2f48443ecb886c86cfb839a0c059276ef7ed3a37226ef8bc4fad34001620cbb4",
+        "086fd976651af945628ac2b6327cd9378b0bf5071bfb6245575f47ea2324e4a4",
+        "bc10505fc39ddccb988189a7a310f6a8b166b64ee32affb1157b6dbda7519e75",
+        "2b0a3013f91985ff73c9ae7f993420ab235fe655d9ed88201887f06804c5effe"
+      ],
+      "gapM": 0.4460516071755769,
+      "coupledManifests": [
+        "fb05c97b1a11b694c51993e877966b3dcbf7ae7cf4c9fe98242b3cd9c0a3734f"
+      ],
+      "verifiedThroughS": 101.97740000050776
+    },
+    {
+      "score": "47c570ad2322c085ed221323b1761901c6aa4c6778b8e93da1ed81196e6d5300",
+      "segments": [
+        "13e2b05b2bca80e3194073c99ddf3c25fc6b8bd0e17c283b9a46ccd398dc78b9",
+        "acde08736f905c94004367521af18f86cf2415e679216b4960726818b257aee0",
+        "603edaa9e1eb9ffc46fafeea0b22cbbe9342719717a74c11475061412bd76002",
+        "921f3ccb876e6baa88902ab1ade91a52062060aed90074f4ab7c4203ffe90f37",
+        "9eba388f1ca0bd1ebc03818d9c4398c3fd04bd8f7ccaa63d7b2e63d8156b1544"
+      ],
+      "gapM": 0.46901525779299047,
+      "coupledManifests": [
+        "fb05c97b1a11b694c51993e877966b3dcbf7ae7cf4c9fe98242b3cd9c0a3734f"
+      ],
+      "verifiedThroughS": 101.97740000050776
+    },
+    {
+      "score": "14c565ee5995e19576758654117d8773d8fe73451934e025149d01da120d9a17",
+      "segments": [
+        "725e742e96e03d77092c5afcdf9f17b67245e1967a13d5c99b2370732ea1e885",
+        "d7b69b377118adc359c89e5ebd02a0dda35c6330dc3d7c3b8c309593929743c3",
+        "af3894e7630b7745fc09694bb5467d643b2f2dd7b3073c5a359118309d3d4229",
+        "acb24318c206cea66a4d8d64486eef829370e1ea7ef34bf353254473412441ef"
+      ],
+      "gapM": 0.46871775324922627,
+      "coupledManifests": [
+        "fb05c97b1a11b694c51993e877966b3dcbf7ae7cf4c9fe98242b3cd9c0a3734f"
+      ],
+      "verifiedThroughS": 101.97740000050776
+    }
+  ]
+}

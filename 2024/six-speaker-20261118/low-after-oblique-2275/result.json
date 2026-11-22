@@ -1,0 +1,97 @@
+{
+  "schema": "second-wing-acquisition/1",
+  "firstReleaseTrace": "8db8eb4784a7cb4e28772f39cb3beab02f712cb3ee24a5b31c9ce3e8ccf9309a",
+  "nativeSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "trace": "970fd7ef25bc747356492a607078363d60ffe1db260c84ddd2744f88980ca51a",
+  "initialRobotQ": [
+    1.0061775220111187,
+    -1.389232895817433,
+    -0.9254261511204441,
+    0.4482657830789568,
+    1.0520501761393564,
+    24485.59175896124,
+    24507.516676368614,
+    24589.917652409833,
+    24612.90572225176
+  ],
+  "initialRobotV": [
+    -0.0029114478099363586,
+    0.0038688606603291278,
+    0.0011178140979455362,
+    -5.800966020772339e-05,
+    0.006824241221261713,
+    298.8384613466511,
+    297.1341039305537,
+    299.91973306660617,
+    298.1563490775292
+  ],
+  "initialRotors": [
+    -0.03893324336824726,
+    -0.028367658930179257,
+    -135.80780102548079,
+    -136.35710617527513
+  ],
+  "initialBusV": 10.572733157544736,
+  "start": 97.49105000038507,
+  "end": 106.73805000042923,
+  "firstBilateral": 105.06355000042123,
+  "seated": 106.73805000042923,
+  "minimumBusV": 9.91686661882398,
+  "peakLocalBrakingW": 295.0894223306091,
+  "outcome": "SEATED",
+  "dt": 0.0005,
+  "grid": 512,
+  "traceStride": 1,
+  "firstMark": "middle",
+  "fieldYawDeg": 245.0,
+  "retreatM": 0.0,
+  "approachHeadingDeg": null,
+  "captureStandoffM": 0.0,
+  "viaFieldXY": [
+    [
+      2.18,
+      5.98
+    ],
+    [
+      2.98,
+      6.37
+    ],
+    [
+      3.7,
+      6.82
+    ],
+    [
+      6.65,
+      6.85
+    ],
+    [
+      8.45,
+      6.5
+    ],
+    [
+      9.11,
+      5.55
+    ],
+    [
+      9.3,
+      3.49
+    ]
+  ],
+  "transitSpeedMps": 3.0,
+  "reverseTransit": true,
+  "waitingNoteLocalXY": [
+    -0.3015369628065748,
+    5.483520309311615
+  ],
+  "pieceId": "center-low",
+  "collectedMarks": [
+    "middle",
+    "outer",
+    "inner",
+    "center-high",
+    "center-mid",
+    "center-low"
+  ],
+  "lookaheadM": 0.54,
+  "captureSpeedMps": 0.28
+}
