@@ -86,7 +86,7 @@ jobs:
           path: ${{ runner.temp }}/layout-check
           key: layout-check-${{ env.AGENT_FRC_REF }}-py${{ env.PYTHON_VERSION }}-ocp${{ env.OCP_VERSION }}-np${{ env.NUMPY_VERSION }}-${{ github.run_id }}-${{ github.run_attempt }}
       # The archived season evidence was issued with the numpy version in tests/requirements-ci.txt.
-      - run: python -m pip install --only-binary=:all: -r project/tests/requirements-ci.txt
+      - run: 'python -m pip install --only-binary=:all: -r project/tests/requirements-ci.txt'
       # The project's own evidence regressions, registered in tests/ci.json.
       - name: Run the project's registered checks
         env:

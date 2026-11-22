@@ -49,10 +49,11 @@ FIELD_BODIES = {
 }
 RATIONALE = ("Tessellated from FIRST's FE-2024.STEP in its registered field coordinates, for display. "
              "The trials use their own contact surfaces; no clearance is checked against this mesh.")
-LABELS = {"continuous-cycle-96": "Six NOTES, continuous state, 96 segments (match replay)",
-          "continuous-cycle-48": "Six NOTES, continuous state, 48 segments (match replay)",
-          "score-to-climb-front": "Sixth shot to climb, forward CG (match replay)",
-          "score-to-climb-rear": "Sixth shot to climb, rearward CG (match replay)"}
+# In match order: the scoring cycle on both clocks, then the climb from both approaches.
+LABELS = {"continuous-cycle-96": "Six NOTES · continuous state · 96 segments",
+          "continuous-cycle-48": "Six NOTES · continuous state · 48 segments",
+          "score-to-climb-front": "Sixth shot to climb · forward CG",
+          "score-to-climb-rear": "Sixth shot to climb · rearward CG"}
 
 
 def sha(data):
@@ -170,7 +171,8 @@ def main(field_file, ref="origin/private/2024-guided-cassette"):
                               material="Official field assembly") for key, (group, name, colour, purpose) in FIELD_BODIES.items()}
     rest = chain_rest(field["meshes"]["workingChain"])
     replays, skipped = [], set()
-    for case in scene["concepts"]["guided"]["cases"]:
+    order = list(LABELS)
+    for case in sorted(scene["concepts"]["guided"]["cases"], key=lambda case: order.index(case["key"])):
         key, bind = case["key"], bound[case["key"]]
         frames = len(case["time"])
         assert frames == bind["frames"]
