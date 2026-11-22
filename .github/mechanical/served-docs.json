@@ -39,5 +39,13 @@
     "robot/cad/index.html",
     "robot/cad/receipt.json",
     "vendor/model-viewer-4.1.0.min.js"
-  ]
+  ],
+  "preliminaryReleases": {
+    "root": "preliminary-design",
+    "primaryEntryPoints": [
+      "index.html",
+      "media/r9-assembly.png",
+      "robot-model.js"
+    ]
+  }
 }
