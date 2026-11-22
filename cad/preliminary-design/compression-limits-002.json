@@ -1,0 +1,17 @@
+{
+  "basis": "Preliminary geometric assumptions authorized for this review. The belt limit is a rounded 8 mm one-sided indentation, roughly 16% of the 50.8 mm unloaded NOTE section diameter. Separate planning limits apply to the named treads, soft pad and guiding surfaces. No measured allowable or contact force is claimed.",
+  "limitsMm": {
+    "Center intake belt": 8,
+    "Feed tread \u00b7 left": 7,
+    "Feed tread \u00b7 right": 7,
+    "Launch tread \u00b7 left": 7,
+    "Launch tread \u00b7 right": 7,
+    "Rear stop pad": 3,
+    "Windowed keeper panel": 1,
+    "NOTE runner \u00b7 right": 2,
+    "NOTE runner \u00b7 left": 2,
+    "Replaceable pickup lip": 1
+  },
+  "control": "Retain a strict 7 mm intake sensitivity. All unlisted pairs keep their ordinary clearance criterion.",
+  "qualification": "Measure one-sided force versus indentation and tangential slip on representative NOTE, belt and runner samples; replay the same starts if the measured envelope is narrower."
+}

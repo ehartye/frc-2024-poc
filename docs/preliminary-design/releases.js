@@ -34,6 +34,9 @@
         return;
       }
       select.value = id;
+      document.querySelector('#wip').textContent = id === '001'
+        ? 'Historical preliminary review · earlier carry animation'
+        : 'Work-in-progress preliminary design';
       const url = new URL('releases/' + encodeURIComponent(id) + '/', location.href);
       url.searchParams.set('concept','guided');
       if (query.has('case')) url.searchParams.set('case', query.get('case'));
