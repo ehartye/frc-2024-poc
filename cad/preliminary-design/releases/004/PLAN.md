@@ -31,10 +31,37 @@ Target: the whole mission cycle checked for clearance, mass and voltage; every m
 4. **View location.** Plugin 0.111.1 refuses a view in a sub-folder when the repository is the project root. Until that changes the release folder is the check's project, as in release 003.
 5. **Evidence gaps for the trial qualifications** (control, brackets, timestep): no timestep repeat for the guided climb; no single-input failing bracket for floor pickup or for retention during the lift; the field-counter bracket has no failing magnitude.
 
+## Builder
+
+`python cad/preliminary-design/build-004/build.py PLUGIN` writes every check input into this folder. `--count` prints the case count per phase and writes nothing. `--only reset,acquire,...` builds some phases for a trial run. `--tolerance MM` sets the largest departure of a case path from its trace (default 1.0). `--battery` adds the battery lift at the service index (not yet passing; see below).
+
+| File | Role |
+| --- | --- |
+| `step_names.py` | Repairs the STEP names |
+| `kin.py` | Poses and motion-study operations |
+| `timeline.py` | Scoring-cycle joint timeline from the traces |
+| `segments.py` | Rigid-class poses, case segmentation by path deviation |
+| `roster.py` | Rigid class, plan group, review text and mount per solid |
+| `ledgers.py` | Mass lines and battery duties from the evidence |
+| `evidence.py` | Trial qualifications, narrative coverage, presentation, missions |
+| `risks.py` | Risk register with bench tests |
+| `build.py` | Orchestrator; also writes the joint qualifications |
+
+Check: `python -B PLUGIN/scripts/preliminary_design.py cad/preliminary-design/releases/004 layout.json --write-view --output receipt.json --require-checked`. Readiness: `node PLUGIN/scripts/design.mjs effective-readiness cad/preliminary-design/releases/004`.
+
+At 1.0 mm the cycle is 139 cases: reset 25, acquire 49, lift 32, feed 4, flight 10, stow 1, approach 3, capture 5, hoist 7, hold 3. A NOTE-only case checks in about 10 s, a cassette-moving case in 100 to 150 s.
+
+## Partial runs so far
+
+- Feed, flight and stow (22 cases): all pass, the displaced control is rejected, mass and voltage pass.
+- Endgame (approach, capture, hoist, hold): running, to find the joint pairs of the hoist.
+
 ## Next steps
 
-1. `build-004/build.py`: regroup the 232 solids into rigid, functional groups; generate the cycle cases (reset, acquire, lift, feed, flight, stow, climb, hold) and the service cases from the traces; write `design.json`, `motion.json`, `budgets.json`, `limits.json`, `missions.json`, trial records and `layout.json`.
-2. Joint interface qualifications for the five joint pairs in every case that moves them.
-3. Fixtures: project-drawn speaker opening, stage and chain as STEP fixtures (no official field CAD is in the repository).
-4. Run the check; fix what it finds; write the view once the scene-size decision is made.
-5. Risk register with bench tests; readiness report; independent review; handoff document.
+1. Add the hoist joint pairs the endgame run reports to `JOINTS` in `build.py`.
+2. Full build and full check (about 2.5 hours). Commit the generated inputs and the receipt.
+3. Write the view once the plugin stores one mesh per body (plugin branch `feature/scene-size`), or cut to coarse cases if told to.
+4. Battery lift at the service index: decide how the disconnected pack lead is represented.
+5. Fixtures: a project-drawn speaker opening and stage need a drive case that moves the field in the robot frame, because every case must carry the same fixtures and the cycle must be continuous. The working chain deforms and needs the plugin's deforming fixture.
+6. Trials still needed for criterion 2 (need MuJoCo 4.0.1; shots also need the missing field folder): a single-input failing bracket for pickup and for retention on the lift, and a timestep repeat of the guided climb.
+7. Readiness report, independent review, handoff document, report to the team lead.
