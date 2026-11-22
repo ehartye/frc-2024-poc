@@ -5,7 +5,7 @@
   "valueField": "inspectionHighKg",
   "value": 56.2700168104744,
   "source": {
-    "file": "issued-budget.json",
+    "file": "cad/preliminary-design/releases/003-1/issued-budget.json",
     "sha256": "6f668a975f055cecb8e034310a02f558bc6a6505f6252c1c56c17c59cd374ad9"
   },
   "issue": "2024-002-cassette",

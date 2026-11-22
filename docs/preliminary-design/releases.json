@@ -1,9 +1,11 @@
 {
-  "current": "003",
+  "current": "003-1",
   "releases": [
-    "003"
+    "003",
+    "003-1"
   ],
   "designStatus": {
-    "003": "in-progress"
+    "003": "superseded",
+    "003-1": "in-progress"
   }
 }

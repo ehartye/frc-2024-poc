@@ -23,16 +23,16 @@
   ]
  },
  "step": {
-  "file": "robot.step",
+  "file": "cad/preliminary-design/releases/003-1/robot.step",
   "sha256": "a29a146d8897f64e8f056fcb46a431ba234c7aecccbc3233b6834c43c703bc88"
  },
  "design": {
-  "file": "design.json",
+  "file": "cad/preliminary-design/releases/003-1/design.json",
   "sha256": "c09b9c28bebcb3601183995e468d587ba22a0d59e324c07dcad82ebdfb349abf"
  },
  "motion": {
-  "file": "motion.json",
-  "sha256": "830602fcea855d68403c8c11734a1a1a403c2b8c1c204d6240b1bd19772f1a3c"
+  "file": "cad/preliminary-design/releases/003-1/motion.json",
+  "sha256": "55c3a99eab2a77448792b709b50312a16f330996c13354ffedc71935a98e9aa1"
  },
  "groups": {
   "Chassis": {
@@ -552,8 +552,8 @@
      },
      "basis": "Published free-body transport, same centers and section orientation.",
      "evidence": {
-      "file": "feed-284-transport.json",
-      "sha256": "c4da9fafefe33f01b01e40f448adfa8bf5a368e689441f1368dd82a97535ec29"
+      "file": "cad/preliminary-design/releases/003-1/feed-284-transport.json",
+      "sha256": "1f2f4afd7a5474ae258602b7c1f050fc04e011fab9f1b84420d6f6d8193e2756"
      }
     }
    }
@@ -574,8 +574,8 @@
      },
      "basis": "Published free-body transport, same centers and section orientation.",
      "evidence": {
-      "file": "feed-285-transport.json",
-      "sha256": "7bdbef6d74a4aebf7e9b3d11a097c6180b9616a8f8b7daef8e7f7e2ce2f3b42b"
+      "file": "cad/preliminary-design/releases/003-1/feed-285-transport.json",
+      "sha256": "d1cbba7496546b8760204b7e04999b034fca03bd0551b7e4f507b5e1f626e77d"
      }
     }
    }
@@ -596,8 +596,8 @@
      },
      "basis": "Published free-body transport, same centers and section orientation.",
      "evidence": {
-      "file": "feed-286-transport.json",
-      "sha256": "9e2f544336a39ba79d6b4bd7ad4fb8254e6e3feeb53d2d4249922b3ccdc1661d"
+      "file": "cad/preliminary-design/releases/003-1/feed-286-transport.json",
+      "sha256": "4af91999a93d216d6c1caec22bd71996d214d74588860d027af1577a3706c62a"
      }
     }
    }
@@ -618,8 +618,8 @@
      },
      "basis": "Published free-body transport, same centers and section orientation.",
      "evidence": {
-      "file": "feed-287-transport.json",
-      "sha256": "d92fd884ae5ddb8fed6e2389f6342d633063cd3673acb36684cb969db2c63e77"
+      "file": "cad/preliminary-design/releases/003-1/feed-287-transport.json",
+      "sha256": "3673da759f05047348e024cc72eac3b4b055e3907e0c42acba4366df4a562344"
      }
     }
    }
@@ -640,8 +640,8 @@
      },
      "basis": "Published free-body transport, same centers and section orientation.",
      "evidence": {
-      "file": "feed-288-transport.json",
-      "sha256": "d5e4e9c71109859406b30735dd786ab0934f0c5a64778a02fc531a192b1e8bc2"
+      "file": "cad/preliminary-design/releases/003-1/feed-288-transport.json",
+      "sha256": "7dbc471d0217b91c8e6160f265864a397723edb4fa96e71a5e2975290a6b86be"
      }
     }
    }
@@ -678,23 +678,23 @@
   "empty-launch-dwell"
  ],
  "budgets": {
-  "file": "budgets.json",
-  "sha256": "a6394d7eb0245db1c4d79f563b6f5ee7fae309470b835fc91566cda3e4ed0354"
+  "file": "cad/preliminary-design/releases/003-1/budgets.json",
+  "sha256": "3ad71ef73730066d6a71d0372adf34a5a6ada4b1e5aa3653c6f1e49c002536aa"
  },
  "missingInputs": [],
  "premises": [
   {
    "accepted": {
-    "file": "accepted.json",
-    "sha256": "eca61184658d8a1797890b7425e37e891ab7804c4db6d22d9dbedafbe57af49e"
+    "file": "cad/preliminary-design/releases/003-1/accepted.json",
+    "sha256": "cee0b8b85bea52f44b76388999a6fa3abf6ae905a1fbce33e8e834d044a4bd64"
    },
    "current": {
-    "file": "observed.json",
-    "sha256": "3abc3a84c37a78a31a73418218f7139b145e55d9cffd08d5231ee7f757e0c517"
+    "file": "cad/preliminary-design/releases/003-1/observed.json",
+    "sha256": "b1151be0cce5cf83089435cea6c38657568ebfebcecfe2db4d2367568e5f5421"
    }
   }
  ],
- "view": "package-motion.html",
+ "view": "cad/preliminary-design/releases/003-1/package-motion.html",
  "presentation": {
   "architecture": "Single pivot cassette and translating support with guided climb",
   "components": {
@@ -2846,14 +2846,14 @@
   ],
   "replays": [
    {
-    "file": "replays.json.gz",
-    "sha256": "4d8bb6e8d3aa182fed25e08a129c6d4605e882f57ac30853286be3427df8f041"
+    "file": "cad/preliminary-design/releases/003-1/replays.json.gz",
+    "sha256": "b835b41233a12b61a43abb1b99a6eb22005f57f466ee956788eaa63836f638db"
    }
   ]
  },
  "narrativeReview": {
   "source": {
-   "file": "strategic-narrative.md",
+   "file": "cad/preliminary-design/releases/003-1/strategic-narrative.md",
    "sha256": "8f1226e987e21803cc5418bfdce05f581ac5f42cb11411ee6890f978349cf279"
   },
   "objectives": [

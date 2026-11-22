@@ -1,15 +1,15 @@
 {
   "issue": "2024-002-cassette",
   "step": {
-    "file": "robot.step",
+    "file": "cad/preliminary-design/releases/003-1/robot.step",
     "sha256": "a29a146d8897f64e8f056fcb46a431ba234c7aecccbc3233b6834c43c703bc88"
   },
   "motion": {
-    "file": "motion.json",
-    "sha256": "830602fcea855d68403c8c11734a1a1a403c2b8c1c204d6240b1bd19772f1a3c"
+    "file": "cad/preliminary-design/releases/003-1/motion.json",
+    "sha256": "55c3a99eab2a77448792b709b50312a16f330996c13354ffedc71935a98e9aa1"
   },
   "design": {
-    "file": "design.json",
+    "file": "cad/preliminary-design/releases/003-1/design.json",
     "sha256": "c09b9c28bebcb3601183995e468d587ba22a0d59e324c07dcad82ebdfb349abf"
   },
   "masses": [
@@ -475,7 +475,7 @@
     15.604980332326138
   ],
   "requirements": {
-    "file": "limits.json",
+    "file": "cad/preliminary-design/releases/003-1/limits.json",
     "sha256": "77b3830925a2659a29f1505167b5e2ca986b554f6b0c578c950abf0adbc5f768"
   },
   "electricalCases": {

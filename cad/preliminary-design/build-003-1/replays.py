@@ -8,8 +8,11 @@ Release 003-1 is release 003's design, presented in one view. This script:
    grouped transforms, clocks and readouts of the published release 003 replay scene, placed in the field
    frame, with the official speaker and stage as field bodies and the working chain carried on its
    recorded centreline;
-3. writes `releases/003-1/layout.json` from release 003's layout: the same groups, mounts, stages, limits
-   and budgets, with the presentation fields this release adds.
+3. copies release 003's check inputs and writes `releases/003-1/layout.json` from its layout: the same
+   groups, mounts, stages, limits and budgets, with the presentation fields this release adds. Release
+   003 was checked in its own folder. This release is checked from the repository root, so every pin is
+   rewritten from there and the digest of each record that holds a pin is refreshed. Nothing else in a
+   record changes. `robot.step` is the layout STEP release 003 pinned; it is committed here unchanged.
 
 Usage: python cad/preliminary-design/build-003-1/replays.py FIELD_MESHES.json [GIT_REF_WITH_TRIALS]
 
@@ -30,6 +33,7 @@ SCENE = REPO / "docs/preliminary-design/releases/003/scene.json.gz"
 SCENE_SHA256 = "5a1a5861cc9df6e3fc43ec7038701a64322de008b01f0e557416839b7943e0b5"
 SOURCE = REPO / "cad/preliminary-design/releases/003"
 OUT = REPO / "cad/preliminary-design/releases/003-1"
+PREFIX = OUT.relative_to(REPO).as_posix() + "/"
 OBJECTIVE = "Recover six floor pieces, score, then climb"
 CHAIN_START_MM, CHAIN_PITCH_MM = 2893.751, 100.88075
 
@@ -66,13 +70,50 @@ def trials(bindings, ref):
     (OUT / "trials").mkdir(parents=True, exist_ok=True)
     for replay in bindings["replays"]:
         for trial in replay["trials"]:
-            name = "trials/" + Path(trial["file"]).name
-            target = OUT / name
+            name = PREFIX + "trials/" + Path(trial["file"]).name
+            target = REPO / name
             if not target.exists():
                 target.write_bytes(subprocess.check_output(["git", "-C", str(REPO), "cat-file", "blob", ref + ":" + trial["file"]]))
             assert sha(target.read_bytes()) == trial["sha256"], "Trial file differs from its binding: " + trial["file"]
             assert pins.setdefault(trial["file"], dict(file=name, sha256=trial["sha256"]))["file"] == name
     return pins
+
+
+def repath(text, done):
+    """A record's text with each {file, sha256} pin written from the repository root. Returns the text."""
+    def pins(node):
+        if isinstance(node, dict):
+            if isinstance(node.get("file"), str) and isinstance(node.get("sha256"), str):
+                yield node
+            for value in node.values():
+                yield from pins(value)
+        elif isinstance(node, list):
+            for value in node:
+                yield from pins(value)
+    for pin in list(pins(json.loads(text))):
+        name, old = pin["file"], pin["sha256"]
+        if name.startswith(PREFIX):
+            continue
+        new = carry(name, done)
+        assert old == done[name][0], "Release 003 pins a different " + name
+        text, count = re.subn(r'("file"\s*:\s*")' + re.escape(name) + '"', lambda m: m.group(1) + PREFIX + name + '"', text)
+        assert count, name
+        text = text.replace(old, new)
+    return text
+
+
+def carry(name, done):
+    """Copy one release 003 input into this release, repathing its pins. Returns its new SHA-256."""
+    if name not in done:
+        source = OUT / name if name == "robot.step" else SOURCE / name
+        raw = source.read_bytes()
+        out = raw
+        if name.endswith(".json"):
+            done[name] = (sha(raw), None)  # a record never pins itself
+            out = repath(raw.decode("utf-8"), done).encode("utf-8")
+        (OUT / name).write_bytes(out)
+        done[name] = (sha(raw), sha(out))
+    return done[name][1]
 
 
 def in_field(matrix, position):
@@ -118,7 +159,11 @@ def main(field_file, ref="origin/private/2024-guided-cassette"):
     assert bindings["scene"]["sha256"] == SCENE_SHA256
     bound = {r["key"]: r for r in bindings["replays"]}
     pins = trials(bindings, ref)
-    layout = json.loads((SOURCE / "layout.json").read_text(encoding="utf-8"))
+    done = {}
+    for name in ("missions.json", "replay-source.json"):
+        carry(name, done)
+    layout = json.loads(repath((SOURCE / "layout.json").read_text(encoding="utf-8"), done))
+    layout["view"] = PREFIX + layout["view"]
     roster = {m for g in layout["groups"].values() for m in g["members"]}
 
     field_bodies = {key: dict(name=name, category="field element", color=colour, mesh=field["meshes"][group], purpose=purpose, rationale=RATIONALE,
@@ -172,8 +217,9 @@ def main(field_file, ref="origin/private/2024-guided-cassette"):
                "The 003 replay scene's three service-only slide parts are not in the 232-solid layout and are not shown."],
         cutaway=dict(label="Speaker cutaway", hides=["field-speaker-structure"], outline=scene["corners"]),
         links=[dict(label="2024 robot study", href="../../../")],
-        replays=[dict(file="replays.json.gz", sha256=sha(packed))])
+        replays=[dict(file=PREFIX + "replays.json.gz", sha256=sha(packed))])
     (OUT / "layout.json").write_bytes((json.dumps(layout, ensure_ascii=False, indent=1) + "\n").encode("utf-8"))
+    print("carried", sorted(k for k, v in done.items() if v[0] != v[1]), "repathed;", sorted(k for k, v in done.items() if v[0] == v[1]), "unchanged")
     print("replays.json.gz", len(packed), "bytes,", len(content), "raw;", len(pins), "trial files;", [(r["id"], len(r["time"]), len(r["events"])) for r in replays])
 
 
