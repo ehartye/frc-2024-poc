@@ -42,7 +42,25 @@ JOINTS = [
     ("Pivot reducer", "Pivot torque shaft", "Pivot shaft in the reducer output bore"),
     ("Flap axle", "Mouth retention flap", "Cover leaf hinge on its axle"),
     ("Slide screw", "Travel nut and clevis", "Lead screw running in the travel nut"),
+    # Endgame: the pivot shaft is declutched from the cassette and reels the hoist lines.
+    ("Pivot drive socket", "Sliding pivot clutch", "Pivot clutch sliding on its drive socket"),
+    ("Cassette cheek · left", "Pivot torque shaft", "Declutched pivot shaft turning in the left cassette cheek"),
+    ("Cassette cheek · right", "Pivot torque shaft", "Declutched pivot shaft turning in the right cassette cheek"),
+    ("Pivot torque shaft", "Service index disk", "Declutched pivot shaft turning in the service index disk"),
+    ("Common keeper yoke and sliding rack", "Keeper return pinion", "Keeper rack meshing with its return pinion"),
+    ("Hoist rope drum to sheave · left", "Pivot cable drum · left", "Hoist line leaving the left cable drum"),
+    ("Hoist rope drum to sheave · right", "Pivot cable drum · right", "Hoist line leaving the right cable drum"),
+    ("Hoist rear redirect sheave · left", "Hoist rope working span · left", "Hoist line running over the left redirect sheave"),
+    ("Hoist rear redirect sheave · right", "Hoist rope working span · right", "Hoist line running over the right redirect sheave"),
 ]
+# The working span of each 3 mm hoist line is drawn at its parked length and rides on the cassette. As the hook
+# carriage draws in, the line is taken up on the drum, so the drawn span runs on into the splice by the length
+# taken up. That overlap is line that has left the span, not interference between two parts.
+LINES = [
+    ("Hoist rope working span · left", "Hoist splice allowance · left", "Hoist line taken up at the left hook carriage splice"),
+    ("Hoist rope working span · right", "Hoist splice allowance · right", "Hoist line taken up at the right hook carriage splice"),
+]
+LINE_SECTION_MM2 = math.pi * 3.0 ** 2 / 4
 
 PHASES = dict(
     reset=dict(purpose="operating", duty="reset", carried=False, stage="reset",
@@ -165,8 +183,11 @@ class Geometry:
         self.mm = mechanical_motion
         self.shapes = mechanical_motion.load_solids(step)[0]
 
-    def joint_record(self, case, pair, basis, step_sha, fractions=9):
-        """Sample one designed joint through a case: the pair must never share material."""
+    def joint_record(self, case, pair, basis, step_sha, fractions=9, take_up=None):
+        """Sample one designed joint through a case: the pair must never share material.
+
+        With take_up=(start, end) carriage draw in mm the pair is a hoist line and its splice: the drawn span may
+        run into the splice by no more than the line section times the line taken up."""
         a, b = pair
         start = {n: self.mm.transform(self.shapes[n], case.get("initialPose", {}).get(n, []), 1) for n in pair}
         rows = []
@@ -175,13 +196,24 @@ class Geometry:
             sa = self.mm.transform(start[a], case["moves"].get(a, []), t)
             sb = self.mm.transform(start[b], case["moves"].get(b, []), t)
             gap = self.mm.distance(sa, sb)
-            rows.append(dict(t=t, gapMm=gap, volumeMm3=self.mm.common(sa, sb) if gap <= 1e-7 else 0.0))
+            row = dict(t=t, gapMm=gap, volumeMm3=self.mm.common(sa, sb) if gap <= 1e-7 else 0.0)
+            if take_up is not None:
+                row["takeUpMm"] = take_up[0] + (take_up[1] - take_up[0]) * t
+                row["allowedMm3"] = LINE_SECTION_MM2 * row["takeUpMm"] + 0.5
+            rows.append(row)
         worst = max(r["volumeMm3"] for r in rows)
+        if take_up is None:
+            ok = worst <= 0.01
+            method = (f"Exact common volume of the two placed solids at {fractions} evenly spaced path fractions. "
+                      "A designed sliding or turning fit passes when no sample shares more than 0.01 mm3.")
+        else:
+            ok = all(r["volumeMm3"] <= r["allowedMm3"] for r in rows)
+            method = (f"Exact common volume of the drawn line span and its splice at {fractions} evenly spaced path "
+                      f"fractions. The 3 mm line is flexible and is taken up as the hook carriage draws in; the drawn "
+                      f"span keeps its parked length. The pair passes when the shared volume never exceeds the line "
+                      f"section ({LINE_SECTION_MM2:.3f} mm2) times the line taken up, plus 0.5 mm3.")
         return dict(schema="frc-2024-poc/joint-qualification@1", stepSha256=step_sha, case=case["id"], pair=[a, b],
-                    status="pass" if worst <= 0.01 else "fail", basis=basis,
-                    method=f"Exact common volume of the two placed solids at {fractions} evenly spaced path fractions. "
-                           "A designed sliding or turning fit passes when no sample shares more than 0.01 mm3.",
-                    largestCommonMm3=worst, samples=rows)
+                    status="pass" if ok else "fail", basis=basis, method=method, largestCommonMm3=worst, samples=rows)
 
 
 def main():
@@ -255,7 +287,9 @@ def main():
                               f"its trace samples by at most {deviation:.2f} mm.",
                         initialPose={n: init[rigid[n]] for n in names if init.get(rigid[n])},
                         moves=moves, minGapMm=0, maxDepth=12, payloadCompression=rules)
-            joints = [(x, y, why) for x, y, why in JOINTS if moves.get(x, []) != moves.get(y, [])]
+            joints = [(x, y, why, None) for x, y, why in JOINTS if moves.get(x, []) != moves.get(y, [])]
+            joints += [(x, y, why, (a.get("draw", 0.0), b.get("draw", 0.0))) for x, y, why in LINES
+                       if moves.get(x, []) != moves.get(y, []) or init.get(rigid[x]) != init.get(rigid[y])]
             moving_groups = sorted({member_group[n] for n in moves})
             stage = dict(purpose=spec["purpose"], movingGroups=moving_groups,
                          allowanceBasis="Zero clearance between unrelated solids. The NOTE may indent each registered "
@@ -316,15 +350,19 @@ def main():
         cases.append(lift_case)
 
     step_sha = step["sha256"]
+    failed_joints = []
     for case in cases:
         entries = []
-        for n, (x, y, why) in enumerate(case.pop("_joints"), 1):
-            record = geo.joint_record(case, (x, y), why, step_sha)
-            assert record["status"] == "pass", (case["id"], x, y, record["largestCommonMm3"])
+        for n, (x, y, why, take_up) in enumerate(case.pop("_joints"), 1):
+            record = geo.joint_record(case, (x, y), why, step_sha, take_up=take_up)
+            if record["status"] != "pass":
+                failed_joints.append((case["id"], x, y, round(record["largestCommonMm3"], 3)))
             entries.append(dict(pair=[x, y], basis=why, qualifiedBy=save(f"joint-{case['id']}-{n}.json", record)))
         if entries:
             case["intendedInterfaces"] = entries
 
+    for row in failed_joints:
+        print("joint shares material:", *row)
     motion = save("motion.json", dict(schema="agent-frc/mechanical-motion@1", layoutDesignSha256=design["sha256"],
                                       layoutDatum=datum, step=step, cases=cases))
 

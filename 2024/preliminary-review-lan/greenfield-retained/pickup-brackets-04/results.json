@@ -1,0 +1,972 @@
+{
+ "nominal": {
+  "n": 48,
+  "height": 5.0,
+  "y": 0.0,
+  "mu": 0.45,
+  "amp": 8.0
+ },
+ "cases": [
+  {
+   "n": 48,
+   "height": 5.0,
+   "y": 0.0,
+   "mu": 0.45,
+   "amp": 8.0,
+   "label": "n48-h5-y0-mu0.45-a8",
+   "ran": true,
+   "seated": true,
+   "passScreen": true,
+   "seatResidenceS": 1.0414999999999408,
+   "maxRiseMm": 347.1154053192527,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    1.3829108651991504,
+    13.6709107668885,
+    2.4302360695886733
+   ]
+  },
+  {
+   "n": 48,
+   "height": 1.5,
+   "y": 0.0,
+   "mu": 0.45,
+   "amp": 8.0,
+   "label": "n48-h1.5-y0-mu0.45-a8",
+   "ran": true,
+   "seated": true,
+   "passScreen": true,
+   "seatResidenceS": 1.0264999999999425,
+   "maxRiseMm": 345.1598893829734,
+   "skip": null,
+   "minimumBladeHeightMm": 1.5000000000000302,
+   "flapClearanceMm": [
+    2.100238263859641,
+    14.122964814319996,
+    2.5741043045808816
+   ]
+  },
+  {
+   "n": 48,
+   "height": 2,
+   "y": 0.0,
+   "mu": 0.45,
+   "amp": 8.0,
+   "label": "n48-h2-y0-mu0.45-a8",
+   "ran": true,
+   "seated": true,
+   "passScreen": true,
+   "seatResidenceS": 1.0084999999999444,
+   "maxRiseMm": 346.7723813476376,
+   "skip": null,
+   "minimumBladeHeightMm": 2.0000000000001474,
+   "flapClearanceMm": [
+    1.3322951485864465,
+    13.419839745560221,
+    2.493573480986047
+   ]
+  },
+  {
+   "n": 48,
+   "height": 3.5,
+   "y": 0.0,
+   "mu": 0.45,
+   "amp": 8.0,
+   "label": "n48-h3.5-y0-mu0.45-a8",
+   "ran": true,
+   "seated": true,
+   "passScreen": true,
+   "seatResidenceS": 0.9854999999999469,
+   "maxRiseMm": 346.57644934014985,
+   "skip": null,
+   "minimumBladeHeightMm": 3.500000000000057,
+   "flapClearanceMm": [
+    1.41069999395134,
+    12.970395711402087,
+    2.4802479731033102
+   ]
+  },
+  {
+   "n": 48,
+   "height": 5,
+   "y": 0.0,
+   "mu": 0.45,
+   "amp": 8.0,
+   "label": "n48-h5-y0-mu0.45-a8",
+   "ran": true,
+   "seated": true,
+   "passScreen": true,
+   "seatResidenceS": 1.0414999999999408,
+   "maxRiseMm": 347.1154053192527,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    1.3829108651991504,
+    13.6709107668885,
+    2.4302360695886733
+   ]
+  },
+  {
+   "n": 48,
+   "height": 6.5,
+   "y": 0.0,
+   "mu": 0.45,
+   "amp": 8.0,
+   "label": "n48-h6.5-y0-mu0.45-a8",
+   "ran": true,
+   "seated": true,
+   "passScreen": true,
+   "seatResidenceS": 1.0169999999999435,
+   "maxRiseMm": 346.9122540712679,
+   "skip": null,
+   "minimumBladeHeightMm": 6.5000000000001315,
+   "flapClearanceMm": [
+    1.4563272085269432,
+    13.293483183588183,
+    2.466007834089975
+   ]
+  },
+  {
+   "n": 48,
+   "height": 8,
+   "y": 0.0,
+   "mu": 0.45,
+   "amp": 8.0,
+   "label": "n48-h8-y0-mu0.45-a8",
+   "ran": true,
+   "seated": true,
+   "passScreen": true,
+   "seatResidenceS": 1.002999999999945,
+   "maxRiseMm": 347.71481319928074,
+   "skip": null,
+   "minimumBladeHeightMm": 8.000000000000076,
+   "flapClearanceMm": [
+    1.860337864901286,
+    15.470528836076372,
+    2.5012786042851225
+   ]
+  },
+  {
+   "n": 48,
+   "height": 10,
+   "y": 0.0,
+   "mu": 0.45,
+   "amp": 8.0,
+   "label": "n48-h10-y0-mu0.45-a8",
+   "ran": true,
+   "seated": true,
+   "passScreen": true,
+   "seatResidenceS": 1.0424999999999407,
+   "maxRiseMm": 348.1735648508469,
+   "skip": null,
+   "minimumBladeHeightMm": 10.000000000000023,
+   "flapClearanceMm": [
+    1.7221773351289897,
+    14.344562190248855,
+    2.4127029465190155
+   ]
+  },
+  {
+   "n": 48,
+   "height": 12,
+   "y": 0.0,
+   "mu": 0.45,
+   "amp": 8.0,
+   "label": "n48-h12-y0-mu0.45-a8",
+   "ran": true,
+   "seated": false,
+   "passScreen": false,
+   "seatResidenceS": 0,
+   "maxRiseMm": 1.563015383600555,
+   "skip": null,
+   "minimumBladeHeightMm": 12.000000000000025,
+   "flapClearanceMm": [
+    186.4194564191132,
+    189.9568847974954,
+    190.9568847974954
+   ]
+  },
+  {
+   "n": 48,
+   "height": 14,
+   "y": 0.0,
+   "mu": 0.45,
+   "amp": 8.0,
+   "label": "n48-h14-y0-mu0.45-a8",
+   "ran": true,
+   "seated": false,
+   "passScreen": false,
+   "seatResidenceS": 0,
+   "maxRiseMm": 1.9246966602578555,
+   "skip": null,
+   "minimumBladeHeightMm": 14.000000000000005,
+   "flapClearanceMm": [
+    188.11694664445338,
+    191.65744322715074,
+    192.65744322715074
+   ]
+  },
+  {
+   "n": 48,
+   "height": 16,
+   "y": 0.0,
+   "mu": 0.45,
+   "amp": 8.0,
+   "label": "n48-h16-y0-mu0.45-a8",
+   "ran": true,
+   "seated": false,
+   "passScreen": false,
+   "seatResidenceS": 0,
+   "maxRiseMm": 1.7927150648496677,
+   "skip": null,
+   "minimumBladeHeightMm": 16.000000000000014,
+   "flapClearanceMm": [
+    190.87821024118904,
+    194.46938148440128,
+    195.46938148440128
+   ]
+  },
+  {
+   "n": 48,
+   "height": 18,
+   "y": 0.0,
+   "mu": 0.45,
+   "amp": 8.0,
+   "label": "n48-h18-y0-mu0.45-a8",
+   "ran": true,
+   "seated": false,
+   "passScreen": false,
+   "seatResidenceS": 0,
+   "maxRiseMm": 2.1253585136166846,
+   "skip": null,
+   "minimumBladeHeightMm": 18.00000000000003,
+   "flapClearanceMm": [
+    192.40880817657668,
+    196.06810399300193,
+    197.06810399300193
+   ]
+  },
+  {
+   "n": 48,
+   "height": 20,
+   "y": 0.0,
+   "mu": 0.45,
+   "amp": 8.0,
+   "label": "n48-h20-y0-mu0.45-a8",
+   "ran": true,
+   "seated": false,
+   "passScreen": false,
+   "seatResidenceS": 0,
+   "maxRiseMm": 2.1468574250867594,
+   "skip": null,
+   "minimumBladeHeightMm": 20.00000000000007,
+   "flapClearanceMm": [
+    194.4769515586492,
+    198.24007953279204,
+    199.24007953279204
+   ]
+  },
+  {
+   "n": 48,
+   "height": 24,
+   "y": 0.0,
+   "mu": 0.45,
+   "amp": 8.0,
+   "label": "n48-h24-y0-mu0.45-a8",
+   "ran": true,
+   "seated": false,
+   "passScreen": false,
+   "seatResidenceS": 0,
+   "maxRiseMm": 1.6236048883708047,
+   "skip": null,
+   "minimumBladeHeightMm": 24.00000000000002,
+   "flapClearanceMm": [
+    199.0321001864309,
+    203.37100716076378,
+    204.37100716076378
+   ]
+  },
+  {
+   "n": 48,
+   "height": 5.0,
+   "y": -0.2,
+   "mu": 0.45,
+   "amp": 8.0,
+   "label": "n48-h5-y-0.2-mu0.45-a8",
+   "ran": true,
+   "seated": false,
+   "passScreen": false,
+   "seatResidenceS": 0,
+   "maxRiseMm": 22.603332892437912,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    153.25214581251277,
+    154.8738589362366,
+    118.75455668096306
+   ]
+  },
+  {
+   "n": 48,
+   "height": 5.0,
+   "y": -0.15,
+   "mu": 0.45,
+   "amp": 8.0,
+   "label": "n48-h5-y-0.15-mu0.45-a8",
+   "ran": true,
+   "seated": false,
+   "passScreen": false,
+   "seatResidenceS": 0,
+   "maxRiseMm": 19.17060747249326,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    147.4489989320641,
+    150.12569170827587,
+    136.50888281280683
+   ]
+  },
+  {
+   "n": 48,
+   "height": 5.0,
+   "y": -0.1,
+   "mu": 0.45,
+   "amp": 8.0,
+   "label": "n48-h5-y-0.1-mu0.45-a8",
+   "ran": true,
+   "seated": false,
+   "passScreen": false,
+   "seatResidenceS": 0,
+   "maxRiseMm": 19.134478550388177,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    135.85326319246525,
+    140.21625044188653,
+    136.8026964199208
+   ]
+  },
+  {
+   "n": 48,
+   "height": 5.0,
+   "y": -0.05,
+   "mu": 0.45,
+   "amp": 8.0,
+   "label": "n48-h5-y-0.05-mu0.45-a8",
+   "ran": true,
+   "seated": true,
+   "passScreen": true,
+   "seatResidenceS": 0.8684999999999597,
+   "maxRiseMm": 346.693006467663,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    1.6160791210574317,
+    13.19747448873316,
+    1.9372516978317087
+   ]
+  },
+  {
+   "n": 48,
+   "height": 5.0,
+   "y": 0.05,
+   "mu": 0.45,
+   "amp": 8.0,
+   "label": "n48-h5-y0.05-mu0.45-a8",
+   "ran": true,
+   "seated": true,
+   "passScreen": true,
+   "seatResidenceS": 0.8674999999999599,
+   "maxRiseMm": 346.9603309044859,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    1.708900560097927,
+    13.659970036257665,
+    1.9099729866161788
+   ]
+  },
+  {
+   "n": 48,
+   "height": 5.0,
+   "y": 0.1,
+   "mu": 0.45,
+   "amp": 8.0,
+   "label": "n48-h5-y0.1-mu0.45-a8",
+   "ran": true,
+   "seated": false,
+   "passScreen": false,
+   "seatResidenceS": 0,
+   "maxRiseMm": 19.134474212746255,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    135.8532395047924,
+    140.21623311663544,
+    136.80270821900692
+   ]
+  },
+  {
+   "n": 48,
+   "height": 5.0,
+   "y": 0.15,
+   "mu": 0.45,
+   "amp": 8.0,
+   "label": "n48-h5-y0.15-mu0.45-a8",
+   "ran": true,
+   "seated": false,
+   "passScreen": false,
+   "seatResidenceS": 0,
+   "maxRiseMm": 19.170610517509534,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    147.4489395777037,
+    150.12563836433765,
+    136.5088827158847
+   ]
+  },
+  {
+   "n": 48,
+   "height": 5.0,
+   "y": 0.2,
+   "mu": 0.45,
+   "amp": 8.0,
+   "label": "n48-h5-y0.2-mu0.45-a8",
+   "ran": true,
+   "seated": false,
+   "passScreen": false,
+   "seatResidenceS": 0,
+   "maxRiseMm": 22.603343189024372,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    153.25210958094058,
+    154.87382786858515,
+    119.81529415034113
+   ]
+  },
+  {
+   "n": 48,
+   "height": 5.0,
+   "y": 0.0,
+   "mu": 0.02,
+   "amp": 8.0,
+   "label": "n48-h5-y0-mu0.02-a8",
+   "ran": true,
+   "seated": false,
+   "passScreen": false,
+   "seatResidenceS": 0,
+   "maxRiseMm": 6.007404022078555,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    163.30760370756033,
+    167.9470648349108,
+    168.9470648349108
+   ]
+  },
+  {
+   "n": 48,
+   "height": 5.0,
+   "y": 0.0,
+   "mu": 0.05,
+   "amp": 8.0,
+   "label": "n48-h5-y0-mu0.05-a8",
+   "ran": true,
+   "seated": false,
+   "passScreen": false,
+   "seatResidenceS": 0,
+   "maxRiseMm": 6.432036046014083,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    162.73536144843388,
+    167.23559835291425,
+    168.23559835291425
+   ]
+  },
+  {
+   "n": 48,
+   "height": 5.0,
+   "y": 0.0,
+   "mu": 0.1,
+   "amp": 8.0,
+   "label": "n48-h5-y0-mu0.1-a8",
+   "ran": true,
+   "seated": false,
+   "passScreen": false,
+   "seatResidenceS": 0,
+   "maxRiseMm": 7.202781058102812,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    161.6829261662908,
+    165.98621790248168,
+    166.98621790248168
+   ]
+  },
+  {
+   "n": 48,
+   "height": 5.0,
+   "y": 0.0,
+   "mu": 0.15,
+   "amp": 8.0,
+   "label": "n48-h5-y0-mu0.15-a8",
+   "ran": true,
+   "seated": false,
+   "passScreen": false,
+   "seatResidenceS": 0,
+   "maxRiseMm": 8.36849104123355,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    159.989084332088,
+    163.91317017202658,
+    164.91317017202658
+   ]
+  },
+  {
+   "n": 48,
+   "height": 5.0,
+   "y": 0.0,
+   "mu": 0.2,
+   "amp": 8.0,
+   "label": "n48-h5-y0-mu0.2-a8",
+   "ran": true,
+   "seated": false,
+   "passScreen": false,
+   "seatResidenceS": 0,
+   "maxRiseMm": 9.51744900041692,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    158.03524796081564,
+    161.7141607432749,
+    162.7141607432749
+   ]
+  },
+  {
+   "n": 48,
+   "height": 5.0,
+   "y": 0.0,
+   "mu": 0.3,
+   "amp": 8.0,
+   "label": "n48-h5-y0-mu0.3-a8",
+   "ran": true,
+   "seated": true,
+   "passScreen": true,
+   "seatResidenceS": 0.8984999999999564,
+   "maxRiseMm": 347.1039899636819,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    1.592096875132306,
+    13.145832591066725,
+    2.4318633948323622
+   ]
+  },
+  {
+   "n": 48,
+   "height": 5.0,
+   "y": 0.0,
+   "mu": 0.6,
+   "amp": 8.0,
+   "label": "n48-h5-y0-mu0.6-a8",
+   "ran": true,
+   "seated": true,
+   "passScreen": true,
+   "seatResidenceS": 1.0379999999999412,
+   "maxRiseMm": 346.89406240916105,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    1.872019969607834,
+    15.369326706781965,
+    2.4808609614743418
+   ]
+  },
+  {
+   "n": 48,
+   "height": 5.0,
+   "y": 0.0,
+   "mu": 0.75,
+   "amp": 8.0,
+   "label": "n48-h5-y0-mu0.75-a8",
+   "ran": true,
+   "seated": true,
+   "passScreen": true,
+   "seatResidenceS": 1.0429999999999406,
+   "maxRiseMm": 347.3889710365301,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    1.7989996333418539,
+    12.411660754348151,
+    2.4529028071983383
+   ]
+  },
+  {
+   "n": 48,
+   "height": 5.0,
+   "y": 0.0,
+   "mu": 0.45,
+   "amp": 0.0,
+   "label": "n48-h5-y0-mu0.45-a0",
+   "ran": true,
+   "seated": false,
+   "passScreen": false,
+   "seatResidenceS": 0,
+   "maxRiseMm": 3.9307887438192366,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    165.71705922540838,
+    171.20497708453146,
+    172.20497708453146
+   ]
+  },
+  {
+   "n": 48,
+   "height": 5.0,
+   "y": 0.0,
+   "mu": 0.45,
+   "amp": 0.5,
+   "label": "n48-h5-y0-mu0.45-a0.5",
+   "ran": true,
+   "seated": false,
+   "passScreen": false,
+   "seatResidenceS": 0,
+   "maxRiseMm": 241.7245562388645,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    2.4892460175741924,
+    15.375095205821058,
+    2.476431617864609
+   ]
+  },
+  {
+   "n": 48,
+   "height": 5.0,
+   "y": 0.0,
+   "mu": 0.45,
+   "amp": 1.0,
+   "label": "n48-h5-y0-mu0.45-a1",
+   "ran": true,
+   "seated": true,
+   "passScreen": true,
+   "seatResidenceS": 0.9704999999999485,
+   "maxRiseMm": 347.92275942098144,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    1.4984456664188848,
+    13.464096150683044,
+    2.4125083445342526
+   ]
+  },
+  {
+   "n": 48,
+   "height": 5.0,
+   "y": 0.0,
+   "mu": 0.45,
+   "amp": 2.0,
+   "label": "n48-h5-y0-mu0.45-a2",
+   "ran": true,
+   "seated": true,
+   "passScreen": true,
+   "seatResidenceS": 1.0249999999999426,
+   "maxRiseMm": 346.998276002925,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    1.6868020416645741,
+    15.37772350167133,
+    2.4292906447817018
+   ]
+  },
+  {
+   "n": 48,
+   "height": 5.0,
+   "y": 0.0,
+   "mu": 0.45,
+   "amp": 3.0,
+   "label": "n48-h5-y0-mu0.45-a3",
+   "ran": true,
+   "seated": true,
+   "passScreen": true,
+   "seatResidenceS": 1.0324999999999418,
+   "maxRiseMm": 347.3139618132275,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    1.5972242186007968,
+    14.866127535763791,
+    2.5005933822833413
+   ]
+  },
+  {
+   "n": 48,
+   "height": 5.0,
+   "y": 0.0,
+   "mu": 0.45,
+   "amp": 4.0,
+   "label": "n48-h5-y0-mu0.45-a4",
+   "ran": true,
+   "seated": true,
+   "passScreen": true,
+   "seatResidenceS": 1.0089999999999444,
+   "maxRiseMm": 346.9317548074373,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    1.53996685030776,
+    13.30583381475812,
+    2.4914698984942376
+   ]
+  },
+  {
+   "n": 48,
+   "height": 5.0,
+   "y": 0.0,
+   "mu": 0.45,
+   "amp": 6.0,
+   "label": "n48-h5-y0-mu0.45-a6",
+   "ran": true,
+   "seated": true,
+   "passScreen": true,
+   "seatResidenceS": 1.031499999999942,
+   "maxRiseMm": 346.8175950612204,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    1.493300185452469,
+    13.296839369890744,
+    2.4556309346385987
+   ]
+  },
+  {
+   "n": 96,
+   "height": 5.0,
+   "y": 0.0,
+   "mu": 0.45,
+   "amp": 8.0,
+   "label": "n96-h5-y0-mu0.45-a8",
+   "ran": true,
+   "seated": true,
+   "passScreen": true,
+   "seatResidenceS": 1.0362499999999297,
+   "maxRiseMm": 346.8763464370982,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    1.389106055699454,
+    15.39737322645588,
+    2.4688558801658758
+   ]
+  },
+  {
+   "n": 96,
+   "height": 14,
+   "y": 0.0,
+   "mu": 0.45,
+   "amp": 8.0,
+   "label": "n96-h14-y0-mu0.45-a8",
+   "ran": true,
+   "seated": false,
+   "passScreen": false,
+   "seatResidenceS": 0,
+   "maxRiseMm": 1.2278285102670545,
+   "skip": null,
+   "minimumBladeHeightMm": 14.000000000000005,
+   "flapClearanceMm": [
+    189.6841850994164,
+    193.24370529078726,
+    194.24370529078726
+   ]
+  },
+  {
+   "n": 96,
+   "height": 16,
+   "y": 0.0,
+   "mu": 0.45,
+   "amp": 8.0,
+   "label": "n96-h16-y0-mu0.45-a8",
+   "ran": true,
+   "seated": false,
+   "passScreen": false,
+   "seatResidenceS": 0,
+   "maxRiseMm": 0.9091001934420501,
+   "skip": null,
+   "minimumBladeHeightMm": 16.000000000000014,
+   "flapClearanceMm": [
+    192.71101360093195,
+    196.37266533638297,
+    197.37266533638297
+   ]
+  },
+  {
+   "n": 96,
+   "height": 5.0,
+   "y": 0.0,
+   "mu": 0.05,
+   "amp": 8.0,
+   "label": "n96-h5-y0-mu0.05-a8",
+   "ran": true,
+   "seated": false,
+   "passScreen": false,
+   "seatResidenceS": 0,
+   "maxRiseMm": 6.584097968288683,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    162.43679284124147,
+    166.91417502812638,
+    167.91417502812638
+   ]
+  },
+  {
+   "n": 96,
+   "height": 5.0,
+   "y": 0.0,
+   "mu": 0.1,
+   "amp": 8.0,
+   "label": "n96-h5-y0-mu0.1-a8",
+   "ran": true,
+   "seated": false,
+   "passScreen": false,
+   "seatResidenceS": 0,
+   "maxRiseMm": 7.304880863351147,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    161.37968061830446,
+    165.66786808533936,
+    166.66786808533936
+   ]
+  },
+  {
+   "n": 96,
+   "height": 5.0,
+   "y": 0.0,
+   "mu": 0.45,
+   "amp": 1.0,
+   "label": "n96-h5-y0-mu0.45-a1",
+   "ran": true,
+   "seated": true,
+   "passScreen": true,
+   "seatResidenceS": 1.0277499999999269,
+   "maxRiseMm": 347.0213781448898,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    1.178035430531967,
+    12.77565844467718,
+    2.4736162902239194
+   ]
+  },
+  {
+   "n": 96,
+   "height": 5.0,
+   "y": 0.0,
+   "mu": 0.45,
+   "amp": 2.0,
+   "label": "n96-h5-y0-mu0.45-a2",
+   "ran": true,
+   "seated": true,
+   "passScreen": true,
+   "seatResidenceS": 1.0302499999999277,
+   "maxRiseMm": 347.6561882546308,
+   "skip": null,
+   "minimumBladeHeightMm": 5.00000000000006,
+   "flapClearanceMm": [
+    1.2879718701928056,
+    14.6829189672799,
+    2.504726858588306
+   ]
+  }
+ ],
+ "brackets": [
+  {
+   "input": "rigid blade tip height above the carpet",
+   "unit": "mm",
+   "nominal": 5.0,
+   "passingValues": [
+    1.5,
+    2,
+    3.5,
+    5.0,
+    5,
+    6.5,
+    8,
+    10
+   ],
+   "failingValues": [
+    12,
+    14,
+    16,
+    18,
+    20,
+    24
+   ]
+  },
+  {
+   "input": "lateral NOTE offset from the cassette centre",
+   "unit": "m",
+   "nominal": 0.0,
+   "passingValues": [
+    -0.05,
+    0.0,
+    0.0,
+    0.05
+   ],
+   "failingValues": [
+    -0.2,
+    -0.15,
+    -0.1,
+    0.1,
+    0.15,
+    0.2
+   ]
+  },
+  {
+   "input": "nose roller and pad grip coefficient",
+   "unit": "",
+   "nominal": 0.45,
+   "passingValues": [
+    0.3,
+    0.45,
+    0.45,
+    0.6,
+    0.75
+   ],
+   "failingValues": [
+    0.02,
+    0.05,
+    0.1,
+    0.15,
+    0.2
+   ]
+  },
+  {
+   "input": "nose motor phase current limit",
+   "unit": "A",
+   "nominal": 8.0,
+   "passingValues": [
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    6.0,
+    8.0,
+    8.0
+   ],
+   "failingValues": [
+    0.0,
+    0.5
+   ]
+  }
+ ]
+}

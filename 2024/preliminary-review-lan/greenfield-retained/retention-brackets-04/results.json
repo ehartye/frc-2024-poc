@@ -1,0 +1,542 @@
+{
+ "inputs": [
+  {
+   "input": "lift duration",
+   "unit": "s",
+   "released": 4.8
+  },
+  {
+   "input": "peak chassis acceleration on the loaded drive",
+   "unit": "m/s2",
+   "released": 2.6
+  }
+ ],
+ "heldBand": "Seated NOTE centre 0.12 to 0.35 m along the cassette, 0.018 to 0.09 m above its deck, within 0.05 m of centre",
+ "cases": [
+  {
+   "n": 48,
+   "liftS": 4.8,
+   "peakChassisAccelMps2": 2.6,
+   "ran": true,
+   "held": true,
+   "seated": true,
+   "failedGate": false,
+   "stopOvertravelDeg": 0.12740083928825094,
+   "seatAxialRangeM": [
+    0.214754,
+    0.275541
+   ],
+   "seatHeightRangeM": [
+    0.050109,
+    0.05484
+   ],
+   "lateralPeakM": 4.24e-05,
+   "sha256": "611399859733ad8d4f7099874b1d03e433fc6555cdb3aa3d4203716cb703c2c6",
+   "sameAsReleased": true
+  },
+  {
+   "n": 48,
+   "liftS": 3.4,
+   "peakChassisAccelMps2": 2.6,
+   "ran": true,
+   "held": true,
+   "seated": true,
+   "failedGate": false,
+   "stopOvertravelDeg": 0.22142537507299292,
+   "seatAxialRangeM": [
+    0.214754,
+    0.275775
+   ],
+   "seatHeightRangeM": [
+    0.050109,
+    0.05484
+   ],
+   "lateralPeakM": 4.24e-05,
+   "sha256": "31fd2743cc478e67952006535445f165be0e86c21acbff6db4f76a68822b4503",
+   "sameAsReleased": null
+  },
+  {
+   "n": 48,
+   "liftS": 2.4,
+   "peakChassisAccelMps2": 2.6,
+   "ran": true,
+   "held": true,
+   "seated": true,
+   "failedGate": false,
+   "stopOvertravelDeg": 0.4323060562895236,
+   "seatAxialRangeM": [
+    0.214754,
+    0.276203
+   ],
+   "seatHeightRangeM": [
+    0.050106,
+    0.054947
+   ],
+   "lateralPeakM": 4.24e-05,
+   "sha256": "63f842948433d62b3367f81bca51b2947042a23e118f0c90493ed67bee1e6542",
+   "sameAsReleased": null
+  },
+  {
+   "n": 48,
+   "liftS": 1.8,
+   "peakChassisAccelMps2": 2.6,
+   "ran": true,
+   "held": true,
+   "seated": true,
+   "failedGate": false,
+   "stopOvertravelDeg": 0.7487457284523087,
+   "seatAxialRangeM": [
+    0.214754,
+    0.276697
+   ],
+   "seatHeightRangeM": [
+    0.049918,
+    0.055014
+   ],
+   "lateralPeakM": 5.02e-05,
+   "sha256": "eb16de0f27eb6f271a4427f1f503a1cdaab265b7708d8c23dcef8d4f6463834c",
+   "sameAsReleased": null
+  },
+  {
+   "n": 48,
+   "liftS": 1.4,
+   "peakChassisAccelMps2": 2.6,
+   "ran": true,
+   "held": true,
+   "seated": true,
+   "failedGate": false,
+   "stopOvertravelDeg": 1.1997490079913768,
+   "seatAxialRangeM": [
+    0.214754,
+    0.277185
+   ],
+   "seatHeightRangeM": [
+    0.049684,
+    0.055018
+   ],
+   "lateralPeakM": 4.25e-05,
+   "sha256": "d071593728a800a5f142be844bf8ea0494908ef5d6bc3172ed47b6f3981ca0ca",
+   "sameAsReleased": null
+  },
+  {
+   "n": 48,
+   "liftS": 1.2,
+   "peakChassisAccelMps2": 2.6,
+   "ran": true,
+   "held": true,
+   "seated": true,
+   "failedGate": false,
+   "stopOvertravelDeg": 1.6003972607034982,
+   "seatAxialRangeM": [
+    0.214754,
+    0.277634
+   ],
+   "seatHeightRangeM": [
+    0.049504,
+    0.055216
+   ],
+   "lateralPeakM": 4.66e-05,
+   "sha256": "22079b98d0e54dff27e2b0d562d188699647dcafb62830f93a883b70e6a9e121",
+   "sameAsReleased": null
+  },
+  {
+   "n": 48,
+   "liftS": 1.0,
+   "peakChassisAccelMps2": 2.6,
+   "ran": true,
+   "held": true,
+   "seated": true,
+   "failedGate": false,
+   "stopOvertravelDeg": 2.234951486908019,
+   "seatAxialRangeM": [
+    0.214754,
+    0.278341
+   ],
+   "seatHeightRangeM": [
+    0.049214,
+    0.055133
+   ],
+   "lateralPeakM": 6.66e-05,
+   "sha256": "063b52929952d40e9ddf6ad88e54b5784c69099f2a1e2c8f8dba582bccbb4902",
+   "sameAsReleased": null
+  },
+  {
+   "n": 48,
+   "liftS": 0.8,
+   "peakChassisAccelMps2": 2.6,
+   "ran": true,
+   "held": true,
+   "seated": true,
+   "failedGate": false,
+   "stopOvertravelDeg": 3.2322516886574064,
+   "seatAxialRangeM": [
+    0.214754,
+    0.27946
+   ],
+   "seatHeightRangeM": [
+    0.048318,
+    0.055262
+   ],
+   "lateralPeakM": 0.0001653,
+   "sha256": "374d039aa1395c41d19dcf5935df97e22e74c892c54c7fccf85e8275c169520e",
+   "sameAsReleased": null
+  },
+  {
+   "n": 48,
+   "liftS": 0.6,
+   "peakChassisAccelMps2": 2.6,
+   "ran": true,
+   "held": true,
+   "seated": true,
+   "failedGate": false,
+   "stopOvertravelDeg": 4.721296655132249,
+   "seatAxialRangeM": [
+    0.214754,
+    0.28122
+   ],
+   "seatHeightRangeM": [
+    0.04702,
+    0.05559
+   ],
+   "lateralPeakM": 7.98e-05,
+   "sha256": "36e06d64f27dc16dfb9710ca05fdb7934fd6c148c1651752be26bad56e25daa0",
+   "sameAsReleased": null
+  },
+  {
+   "n": 48,
+   "liftS": 0.5,
+   "peakChassisAccelMps2": 2.6,
+   "ran": true,
+   "held": true,
+   "seated": true,
+   "failedGate": false,
+   "stopOvertravelDeg": 5.900118713166676,
+   "seatAxialRangeM": [
+    0.214754,
+    0.282331
+   ],
+   "seatHeightRangeM": [
+    0.045949,
+    0.055873
+   ],
+   "lateralPeakM": 7.41e-05,
+   "sha256": "bbef43e5678b395b3c70d26f0e2faaee9df35416a594ddd425ac1cdfcf6e2835",
+   "sameAsReleased": null
+  },
+  {
+   "n": 48,
+   "liftS": 0.4,
+   "peakChassisAccelMps2": 2.6,
+   "ran": true,
+   "held": true,
+   "seated": true,
+   "failedGate": false,
+   "stopOvertravelDeg": 8.567601335086797,
+   "seatAxialRangeM": [
+    0.214754,
+    0.284559
+   ],
+   "seatHeightRangeM": [
+    0.046481,
+    0.056685
+   ],
+   "lateralPeakM": 6.95e-05,
+   "sha256": "8d8eebcd732466d0e8f862d7de1350fe570d2d9e6c041fd2ce18fdca20d434cb",
+   "sameAsReleased": null
+  },
+  {
+   "n": 48,
+   "liftS": 0.3,
+   "peakChassisAccelMps2": 2.6,
+   "ran": true,
+   "held": true,
+   "seated": true,
+   "failedGate": false,
+   "stopOvertravelDeg": 20.345600390160293,
+   "seatAxialRangeM": [
+    0.214754,
+    0.293389
+   ],
+   "seatHeightRangeM": [
+    0.040123,
+    0.057836
+   ],
+   "lateralPeakM": 0.0002081,
+   "sha256": "ae0d02fb87ae083447709a97d5e8b35116503a5f5994b8362709d53fae8bc9e9",
+   "sameAsReleased": null
+  },
+  {
+   "n": 96,
+   "liftS": 4.8,
+   "peakChassisAccelMps2": 2.6,
+   "ran": true,
+   "held": true,
+   "seated": true,
+   "failedGate": false,
+   "stopOvertravelDeg": 0.12662047088099246,
+   "seatAxialRangeM": [
+    0.21474,
+    0.275533
+   ],
+   "seatHeightRangeM": [
+    0.050078,
+    0.054655
+   ],
+   "lateralPeakM": 5.33e-05,
+   "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1",
+   "sameAsReleased": true
+  },
+  {
+   "n": 96,
+   "liftS": 0.8,
+   "peakChassisAccelMps2": 2.6,
+   "ran": true,
+   "held": true,
+   "seated": true,
+   "failedGate": false,
+   "stopOvertravelDeg": 3.5298319615634437,
+   "seatAxialRangeM": [
+    0.21474,
+    0.279532
+   ],
+   "seatHeightRangeM": [
+    0.047396,
+    0.055169
+   ],
+   "lateralPeakM": 7.97e-05,
+   "sha256": "1ce8ac82ecee26b8fff776acae265171996909fdf28b68d68b59822efad42698",
+   "sameAsReleased": null
+  },
+  {
+   "n": 96,
+   "liftS": 0.6,
+   "peakChassisAccelMps2": 2.6,
+   "ran": true,
+   "held": true,
+   "seated": true,
+   "failedGate": false,
+   "stopOvertravelDeg": 5.230111150411813,
+   "seatAxialRangeM": [
+    0.21474,
+    0.281449
+   ],
+   "seatHeightRangeM": [
+    0.046265,
+    0.055506
+   ],
+   "lateralPeakM": 0.0001184,
+   "sha256": "185aac6720b008fa4a2b1ebcaab6c9bb89a6c12870068937d539d5125fe93b9b",
+   "sameAsReleased": null
+  },
+  {
+   "n": 96,
+   "liftS": 0.5,
+   "peakChassisAccelMps2": 2.6,
+   "ran": true,
+   "held": true,
+   "seated": true,
+   "failedGate": false,
+   "stopOvertravelDeg": 7.053301819222727,
+   "seatAxialRangeM": [
+    0.21474,
+    0.282711
+   ],
+   "seatHeightRangeM": [
+    0.045001,
+    0.055841
+   ],
+   "lateralPeakM": 5.92e-05,
+   "sha256": "a291c047839d8b5b5a0efbd1bcfc6ee99f72c18ade492c6894062b40acbe5ad7",
+   "sameAsReleased": null
+  },
+  {
+   "n": 96,
+   "liftS": 0.4,
+   "peakChassisAccelMps2": 2.6,
+   "ran": true,
+   "held": true,
+   "seated": true,
+   "failedGate": false,
+   "stopOvertravelDeg": 10.173110919156535,
+   "seatAxialRangeM": [
+    0.21474,
+    0.285272
+   ],
+   "seatHeightRangeM": [
+    0.045939,
+    0.056475
+   ],
+   "lateralPeakM": 0.000125,
+   "sha256": "1e0e015146985052ef57ee5dec075789e51c609a75b4d0f00bfe324e36a1f581",
+   "sameAsReleased": null
+  },
+  {
+   "n": 48,
+   "liftS": 4.8,
+   "peakChassisAccelMps2": 5.0,
+   "ran": true,
+   "held": true,
+   "seated": true,
+   "failedGate": false,
+   "stopOvertravelDeg": 0.13834280953150208,
+   "seatAxialRangeM": [
+    0.21475,
+    0.275436
+   ],
+   "seatHeightRangeM": [
+    0.050131,
+    0.054867
+   ],
+   "lateralPeakM": 7.88e-05,
+   "sha256": "e0b4d5a54c107bb3058907e77565044eeefe5212b58b5ee10de06b97ec3adecf",
+   "sameAsReleased": null
+  },
+  {
+   "n": 48,
+   "liftS": 4.8,
+   "peakChassisAccelMps2": 8.0,
+   "ran": true,
+   "held": true,
+   "seated": true,
+   "failedGate": false,
+   "stopOvertravelDeg": 0.1544887167077241,
+   "seatAxialRangeM": [
+    0.214745,
+    0.275527
+   ],
+   "seatHeightRangeM": [
+    0.050091,
+    0.054805
+   ],
+   "lateralPeakM": 0.0001212,
+   "sha256": "522a6b49e082c4fefa6e65a6cb6a5117789fe113ebcded2fdd548ca9fc1e699d",
+   "sameAsReleased": null
+  },
+  {
+   "n": 48,
+   "liftS": 4.8,
+   "peakChassisAccelMps2": 12.0,
+   "ran": true,
+   "held": true,
+   "seated": true,
+   "failedGate": false,
+   "stopOvertravelDeg": 0.1588261417084271,
+   "seatAxialRangeM": [
+    0.21474,
+    0.275528
+   ],
+   "seatHeightRangeM": [
+    0.050036,
+    0.054827
+   ],
+   "lateralPeakM": 0.0001705,
+   "sha256": "72852cc15ad9747713f765faf6b45f79d8d3d1da0ba600afb8b16ac6b8803af6",
+   "sameAsReleased": null
+  },
+  {
+   "n": 48,
+   "liftS": 4.8,
+   "peakChassisAccelMps2": 20.0,
+   "ran": true,
+   "held": true,
+   "seated": true,
+   "failedGate": false,
+   "stopOvertravelDeg": 0.19073366441528403,
+   "seatAxialRangeM": [
+    0.214737,
+    0.275528
+   ],
+   "seatHeightRangeM": [
+    0.050002,
+    0.054845
+   ],
+   "lateralPeakM": 0.0002652,
+   "sha256": "ac8a3fe558509e9d8902015434bfa2c79d95ea1a7b92282ea959fa576bd17ec7",
+   "sameAsReleased": null
+  },
+  {
+   "n": 48,
+   "liftS": 4.8,
+   "peakChassisAccelMps2": 30.0,
+   "ran": true,
+   "held": true,
+   "seated": true,
+   "failedGate": false,
+   "stopOvertravelDeg": 0.26002717297535966,
+   "seatAxialRangeM": [
+    0.214744,
+    0.275627
+   ],
+   "seatHeightRangeM": [
+    0.050007,
+    0.054838
+   ],
+   "lateralPeakM": 0.0003879,
+   "sha256": "5e30a7de0deafdf1cd0ce15b717c2ee4a4f7b15d44bd2cc8d529f291b31c05a7",
+   "sameAsReleased": null
+  },
+  {
+   "n": 48,
+   "liftS": 4.8,
+   "peakChassisAccelMps2": 45.0,
+   "ran": true,
+   "held": true,
+   "seated": true,
+   "failedGate": false,
+   "stopOvertravelDeg": 0.30245930811355176,
+   "seatAxialRangeM": [
+    0.214762,
+    0.275699
+   ],
+   "seatHeightRangeM": [
+    0.049999,
+    0.054989
+   ],
+   "lateralPeakM": 0.0006167,
+   "sha256": "0ae93c171ce0cfc0dab65ce0c0ec78e72eee4158417f4b5e847e70b51b285e68",
+   "sameAsReleased": null
+  },
+  {
+   "n": 48,
+   "liftS": 4.8,
+   "peakChassisAccelMps2": 60.0,
+   "ran": true,
+   "held": true,
+   "seated": true,
+   "failedGate": false,
+   "stopOvertravelDeg": 0.42629964771971246,
+   "seatAxialRangeM": [
+    0.214786,
+    0.275948
+   ],
+   "seatHeightRangeM": [
+    0.04985,
+    0.055046
+   ],
+   "lateralPeakM": 0.0007818,
+   "sha256": "6b6f8e5f6c66519d66caf7db83cd1bdf298e2f38b49de36d50c4bc88c1cc2566",
+   "sameAsReleased": null
+  },
+  {
+   "n": 48,
+   "liftS": 4.8,
+   "peakChassisAccelMps2": 90.0,
+   "ran": true,
+   "held": true,
+   "seated": true,
+   "failedGate": false,
+   "stopOvertravelDeg": 0.32274211236620465,
+   "seatAxialRangeM": [
+    0.21485,
+    0.275797
+   ],
+   "seatHeightRangeM": [
+    0.049737,
+    0.055395
+   ],
+   "lateralPeakM": 0.0011723,
+   "sha256": "6f2c41966c8fc0b2a32a14d23aa0f48ebf7b9d1789ccb3af396c8120d2399bb4",
+   "sameAsReleased": null
+  }
+ ]
+}
