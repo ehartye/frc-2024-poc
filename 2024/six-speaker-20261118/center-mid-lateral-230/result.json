@@ -1,0 +1,96 @@
+{
+  "schema": "second-wing-acquisition/1",
+  "firstReleaseTrace": "e06fb35283d5c4a3a229b3b8bf2bad25ac9f34e780b65b1bb3a2a679c30c1c7f",
+  "nativeSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "trace": "8fa17e2204126ed1415fba7ab5257c8c0118dcf97b887f473ae2a826e15b1114",
+  "initialRobotQ": [
+    1.2807103289436494,
+    -1.3358011588474845,
+    -7.417512868394831,
+    0.4506266761595425,
+    1.041773332828696,
+    19697.37983048797,
+    19724.680535819294,
+    19771.832481341746,
+    19800.08034734538
+  ],
+  "initialRobotV": [
+    -0.0012302702816104115,
+    0.002637892982235792,
+    -0.00038658919942855793,
+    -0.00027217842596683514,
+    0.0057325725858012044,
+    297.40159980685434,
+    298.148362406866,
+    298.8781006146915,
+    299.6873598651315
+  ],
+  "initialRotors": [
+    -0.00570121481874753,
+    -0.009302622056084295,
+    -137.4255751472756,
+    -137.0460559146036
+  ],
+  "initialBusV": 10.572958447347993,
+  "start": 81.54620000029408,
+  "end": 91.18970000034012,
+  "firstBilateral": 89.51520000033213,
+  "seated": 91.18970000034012,
+  "minimumBusV": 9.918775142568403,
+  "peakLocalBrakingW": 308.02214044954263,
+  "outcome": "SEATED",
+  "dt": 0.0005,
+  "grid": 512,
+  "traceStride": 1,
+  "firstMark": "middle",
+  "fieldYawDeg": 245.0,
+  "retreatM": 0.0,
+  "approachHeadingDeg": null,
+  "captureStandoffM": 0.0,
+  "viaFieldXY": [
+    [
+      2.17,
+      5.55
+    ],
+    [
+      2.9,
+      6.19
+    ],
+    [
+      3.6,
+      6.8
+    ],
+    [
+      6.6,
+      6.85
+    ],
+    [
+      7.89,
+      6.82
+    ],
+    [
+      9.17,
+      6.38
+    ],
+    [
+      9.26,
+      5.18
+    ]
+  ],
+  "transitSpeedMps": 3.0,
+  "reverseTransit": true,
+  "waitingNoteLocalXY": [
+    -1.8208713369948155,
+    4.7750430553295065
+  ],
+  "pieceId": "center-mid",
+  "collectedMarks": [
+    "middle",
+    "outer",
+    "inner",
+    "center-high",
+    "center-mid"
+  ],
+  "lookaheadM": 0.54,
+  "captureSpeedMps": 0.28
+}

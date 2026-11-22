@@ -1,0 +1,184 @@
+{"scenario": "nominal", "stepS": 0.001, "outcome": "UNKNOWN_DOMAIN", "reason": "bounded-domain-test", "timeS": 0.8620000000000007, "note": {"p": [0.6374301078690232, 1.2337833785843458e-15], "v": [-0.015116394314950383, -8.615629905632573e-16], "yaw": 4.9165545524820736e-14, "spin": 4.356634669657442e-14, "w": [18.24792508870551, 18.24792508870707]}, "chassis": {"t": 0.8620000000000007, "x": 0.4503928031776408, "y": 1.0439666725001222e-15, "heading": 9.16503996293053e-16, "vx": 0.20256061767795602, "vy": 2.0701037379019613e-16, "yaw_rate": -5.653733330408291e-15, "wheel": [2.4956191095020137, 2.4956191095019737], "wheel_angle": [5.944352794404018, 5.944352794404023]}, "energy": {"potentialJ": 0.0009521834283946434, "kineticJ": 1.2630454111896123, "residualJ": 0.0016228491586051158}, "newPhaseResidualJ": 0.0, "runtime": 1.8004419000062626}
+{"scenario": "nominal", "stepS": 0.001, "outcome": "UNKNOWN_DOMAIN", "reason": "test-domain-rejection", "timeS": 0.6620000000000005, "note": {"p": [0.6518359056228641, 1.5554110446390054e-15], "v": [-0.09846028815763533, 6.292313572043969e-15], "yaw": 1.1482260550766887e-14, "spin": 3.380721529493881e-13, "w": [51.4323099826874, 51.43230998269788]}, "chassis": {"t": 0.6620000000000005, "x": 0.3830848937973981, "y": 9.144438817453372e-16, "heading": 2.5730243294155315e-15, "vx": 0.5199546713066946, "vy": 1.3609877470821813e-15, "yaw_rate": -1.0450841996388762e-14, "wheel": [6.394389345163932, 6.394389345163861], "wheel_angle": [5.115703891470041, 5.115703891470053]}, "energy": {"potentialJ": 0.0009521834283946451, "kineticJ": 8.32884341887353, "residualJ": 0.0015836347564034438}, "newPhaseResidualJ": 0.0, "runtime": 2.222919299994828}
+{"scenario": "nominal", "stepS": 0.001, "outcome": "UNKNOWN_DOMAIN", "reason": "test-domain", "timeS": 0.5620000000000004, "note": {"p": [0.6579999994127846, 1.6888500458391848e-19], "v": [-8.178132052101428e-06, 1.0139101955798354e-15], "yaw": -7.277587650097717e-19, "spin": -4.265425750710529e-15, "w": [72.3299024689647, 72.32990246896476]}, "chassis": {"t": 0.5620000000000004, "x": 0.31668352208069395, "y": 7.361536217425153e-16, "heading": 3.291931250165468e-15, "vx": 0.8179495106962309, "vy": 2.6671702028020133e-15, "yaw_rate": 1.814211803204435e-15, "wheel": [10.786514813695405, 10.786514813695419], "wheel_angle": [4.297452689053966, 4.297452689053987]}, "energy": {"potentialJ": 3.144032276927309e-07, "kineticJ": 21.372122851840867, "residualJ": 0.0010647863803783062}, "newPhaseResidualJ": 0.0, "runtime": 1.4187377999915043}
+{"scenario": "nominal", "stepS": 0.001, "outcome": "HORIZON", "reason": null, "timeS": 0.002, "note": {"p": [0.658, 0.0], "v": [0.0, 0.0], "yaw": 0.0, "spin": 0.0, "w": [3.070468947862082, 3.070468947862082]}, "chassis": {"t": 0.002, "x": 5.333998582115723e-07, "y": 1.5317049243041315e-35, "heading": 3.964421383765664e-20, "vx": 0.0009943936104937633, "vy": 8.12687766289032e-24, "yaw_rate": 7.289539342518008e-17, "wheel": [0.15734083513083208, 0.15734083513083214], "wheel_angle": [0.00017368147359854796, 0.00017368147359854799]}, "energy": {"potentialJ": 0.0, "kineticJ": 0.0016161466870306819, "residualJ": 7.84507602080702e-05}, "newPhaseResidualJ": 7.84507602080702e-05, "runtime": 0.5942047999997158}
+{"scenario": "nominal", "stepS": 0.001, "outcome": "HORIZON", "reason": null, "timeS": 0.002, "note": {"p": [0.658, 0.0], "v": [0.0, 0.0], "yaw": 0.0, "spin": 0.0, "w": [3.070468947862082, 3.070468947862082]}, "chassis": {"t": 0.002, "x": 5.333998582115723e-07, "y": 1.5317049243041315e-35, "heading": 3.964421383765664e-20, "vx": 0.0009943936104937633, "vy": 8.12687766289032e-24, "yaw_rate": 7.289539342518008e-17, "wheel": [0.15734083513083208, 0.15734083513083214], "wheel_angle": [0.00017368147359854796, 0.00017368147359854799]}, "energy": {"potentialJ": 0.0, "kineticJ": 0.0016161466870306819, "residualJ": 7.84507602080702e-05}, "newPhaseResidualJ": 7.84507602080702e-05, "runtime": 0.5337828000047011}
+{"scenario": "nominal", "stepS": 0.001, "outcome": "HORIZON", "reason": null, "timeS": 0.002, "note": {"p": [0.658, 0.0], "v": [0.0, 0.0], "yaw": 0.0, "spin": 0.0, "w": [3.070468947862082, 3.070468947862082]}, "chassis": {"t": 0.002, "x": 5.333998582115723e-07, "y": 1.5317049243041315e-35, "heading": 3.964421383765664e-20, "vx": 0.0009943936104937633, "vy": 8.12687766289032e-24, "yaw_rate": 7.289539342518008e-17, "wheel": [0.15734083513083208, 0.15734083513083214], "wheel_angle": [0.00017368147359854796, 0.00017368147359854799]}, "energy": {"potentialJ": 0.0, "kineticJ": 0.0016161466870306819, "residualJ": 7.84507602080702e-05}, "newPhaseResidualJ": 7.84507602080702e-05, "runtime": 0.5782661000121152}
+======================================================================
+ERROR: test_contact_phase_split_byte_parity (test_pressure_checkpoint.CheckpointTest.test_contact_phase_split_byte_parity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\tests\test_pressure_checkpoint.py", line 13, in test_contact_phase_split_byte_parity
+    p,origin=c.from_pressure_report(R/'sim/pressure/acquisition-entry-evidence.json')
+             ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\sim\pressure\checkpoint.py", line 46, in from_pressure_report
+    if report.get('schema')!='fresh-pressure-acquisition/1' or report.get('inputs')!=pins:raise ValueError('same-law source-bound report required')
+                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: same-law source-bound report required
+
+======================================================================
+ERROR: test_exact_lineage_and_state (test_pressure_continuation_receipt.ContinuationReceiptTest.test_exact_lineage_and_state)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\tests\test_pressure_continuation_receipt.py", line 6, in test_exact_lineage_and_state
+    e=json.loads((R/'sim/pressure/continuation-20ms-evidence.json').read_text());p,origin=r.c.from_pressure_report(R/'sim/pressure/acquisition-entry-evidence.json');start=r.c.export(p)
+                                                                                          ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\sim\pressure\checkpoint.py", line 46, in from_pressure_report
+    if report.get('schema')!='fresh-pressure-acquisition/1' or report.get('inputs')!=pins:raise ValueError('same-law source-bound report required')
+                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: same-law source-bound report required
+
+======================================================================
+ERROR: test_fresh_endpoint_replay (test_pressure_entry_comparison.ComparisonTest.test_fresh_endpoint_replay)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\tests\test_pressure_entry_comparison.py", line 6, in test_fresh_endpoint_replay
+    a=c.compare();b=json.loads((R/'sim/pressure/entry-comparison.json').read_text());self.assertEqual(a,b)
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\sim\pressure\compare_entry.py", line 19, in compare
+    if data['inputs']!=pins or data['schema']!='fresh-pressure-acquisition/1':raise ValueError('source inventory mismatch')
+                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: source inventory mismatch
+
+======================================================================
+ERROR: test_nominal_rejected_query (test_pressure_policy_boundary.BoundaryTest.test_nominal_rejected_query)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\tests\test_pressure_policy_boundary.py", line 6, in test_nominal_rejected_query
+    p=R/'sim/pressure/policy-evidence/nominal.json';r=b.reconstruct(p);self.assertTrue(r['atomicStateUnchanged']);self.assertEqual(r['reason'],'OUTSIDE_BOUNDED_PLANAR_EXPERIMENT');self.assertLess(r['rejectedGeometryQuery']['relativeRobotXY'][0],.178);self.assertEqual(r['rejectedGeometryQuery']['status'],r['reason'])
+                                                      ~~~~~~~~~~~~~^^^
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\sim\pressure\reconstruct_policy_boundary.py", line 7, in reconstruct
+    raw=path.read_bytes();report=json.loads(raw);base,pins=r.load()
+                                                           ~~~~~~^^
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\sim\pressure\run_policy_transition.py", line 11, in load
+    report=json.loads((R/SOURCE).read_text());p,origin=c.from_pressure_report(R/'sim/pressure/acquisition-entry-evidence.json');start=c.export(p)
+                                                       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\sim\pressure\checkpoint.py", line 46, in from_pressure_report
+    if report.get('schema')!='fresh-pressure-acquisition/1' or report.get('inputs')!=pins:raise ValueError('same-law source-bound report required')
+                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: same-law source-bound report required
+
+======================================================================
+ERROR: test_exact_inventory_and_identical_physics_controls (test_pressure_policy_receipts.PolicyReceipts.test_exact_inventory_and_identical_physics_controls)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\tests\test_pressure_policy_receipts.py", line 6, in test_exact_inventory_and_identical_physics_controls
+    p,pins=r.load();base=R/'sim/pressure/policy-evidence';reports=[json.loads((base/(s+'.json')).read_text()) for s in ['nominal','stale','no-pinch']]
+           ~~~~~~^^
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\sim\pressure\run_policy_transition.py", line 11, in load
+    report=json.loads((R/SOURCE).read_text());p,origin=c.from_pressure_report(R/'sim/pressure/acquisition-entry-evidence.json');start=c.export(p)
+                                                       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\sim\pressure\checkpoint.py", line 46, in from_pressure_report
+    if report.get('schema')!='fresh-pressure-acquisition/1' or report.get('inputs')!=pins:raise ValueError('same-law source-bound report required')
+                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: same-law source-bound report required
+
+======================================================================
+ERROR: test_domain_exit_records_atomic_prefix (test_pressure_policy_transition.PolicyTest.test_domain_exit_records_atomic_prefix)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\tests\test_pressure_policy_transition.py", line 18, in test_domain_exit_records_atomic_prefix
+    with patch.object(r.c.factory.r.PressureAcquisition,'step',side_effect=r.DomainExit('synthetic-boundary')):r.run(out)
+                                                                                                               ~~~~~^^^^^
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\sim\pressure\run_policy_transition.py", line 32, in run
+    p,pins=load();initial=c.export(p);controller=engage(p,scenario);rows=[];events=[];status='HORIZON';reason=None;bus=12.;started=time.perf_counter();inherited=initial['diagnostics']['residualJ']
+           ~~~~^^
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\sim\pressure\run_policy_transition.py", line 11, in load
+    report=json.loads((R/SOURCE).read_text());p,origin=c.from_pressure_report(R/'sim/pressure/acquisition-entry-evidence.json');start=c.export(p)
+                                                       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\sim\pressure\checkpoint.py", line 46, in from_pressure_report
+    if report.get('schema')!='fresh-pressure-acquisition/1' or report.get('inputs')!=pins:raise ValueError('same-law source-bound report required')
+                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: same-law source-bound report required
+
+======================================================================
+ERROR: test_engagement_preserves_physical_state (test_pressure_policy_transition.PolicyTest.test_engagement_preserves_physical_state)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\tests\test_pressure_policy_transition.py", line 7, in test_engagement_preserves_physical_state
+    p,pins=r.load();before=r.c.export(p);ctl=r.engage(p,'nominal');cmd,obs=r.command(ctl,p,11.96,'nominal');self.assertEqual(before,r.c.export(p));self.assertEqual(cmd['modes'],['brake','brake']);self.assertEqual(cmd['driveDemands'],[0.,0.]);self.assertGreater(p.drive.state['vx'],.8);self.assertGreater(p.note['w'][0],70);self.assertTrue(all(r.c.factory.r.sha(R/f)==h for f,h in pins.items()))
+           ~~~~~~^^
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\sim\pressure\run_policy_transition.py", line 11, in load
+    report=json.loads((R/SOURCE).read_text());p,origin=c.from_pressure_report(R/'sim/pressure/acquisition-entry-evidence.json');start=c.export(p)
+                                                       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\sim\pressure\checkpoint.py", line 46, in from_pressure_report
+    if report.get('schema')!='fresh-pressure-acquisition/1' or report.get('inputs')!=pins:raise ValueError('same-law source-bound report required')
+                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: same-law source-bound report required
+
+======================================================================
+ERROR: test_fault_and_no_pinch_are_commands_not_resets (test_pressure_policy_transition.PolicyTest.test_fault_and_no_pinch_are_commands_not_resets)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\tests\test_pressure_policy_transition.py", line 10, in test_fault_and_no_pinch_are_commands_not_resets
+    p,_=r.load();before=r.c.export(p);ctl=r.engage(p,scenario);cmd,_=r.command(ctl,p,12.,scenario);self.assertEqual(before,r.c.export(p));self.assertEqual(cmd['pinchDemands'],[0.,0.])
+        ~~~~~~^^
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\sim\pressure\run_policy_transition.py", line 11, in load
+    report=json.loads((R/SOURCE).read_text());p,origin=c.from_pressure_report(R/'sim/pressure/acquisition-entry-evidence.json');start=c.export(p)
+                                                       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\sim\pressure\checkpoint.py", line 46, in from_pressure_report
+    if report.get('schema')!='fresh-pressure-acquisition/1' or report.get('inputs')!=pins:raise ValueError('same-law source-bound report required')
+                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: same-law source-bound report required
+
+======================================================================
+ERROR: test_first_finite_brake_step (test_pressure_policy_transition.PolicyTest.test_first_finite_brake_step)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\tests\test_pressure_policy_transition.py", line 13, in test_first_finite_brake_step
+    p,_=r.load();ctl=r.engage(p,'nominal');cmd,_=r.command(ctl,p,12.,'nominal');v=p.drive.state['vx'];t=p.t;heat=p.energy['driveWinding']+p.energy['driveBrake']
+        ~~~~~~^^
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\sim\pressure\run_policy_transition.py", line 11, in load
+    report=json.loads((R/SOURCE).read_text());p,origin=c.from_pressure_report(R/'sim/pressure/acquisition-entry-evidence.json');start=c.export(p)
+                                                       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\sim\pressure\checkpoint.py", line 46, in from_pressure_report
+    if report.get('schema')!='fresh-pressure-acquisition/1' or report.get('inputs')!=pins:raise ValueError('same-law source-bound report required')
+                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: same-law source-bound report required
+
+======================================================================
+FAIL: test_input_pins (test_component_context.ContextTests.test_input_pins)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\tests\test_component_context.py", line 6, in test_input_pins
+    for key,path in [('contractSha256','cad/cycle-contract-A2.json'),('transmissionSha256','cad/components/a2-transmission.json')]:self.assertEqual(self.r[key],hashlib.sha256((R/path).read_bytes()).hexdigest())
+                                                                                                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '0e08bf88e488539ca8966dcc3cc08727ef2faf98da3740787b308cd54c652f52' != '3700da3bf1a271d6b6763060f913435a4a50cda8d456cb1a57a6f1898416b6ad'
+- 0e08bf88e488539ca8966dcc3cc08727ef2faf98da3740787b308cd54c652f52
++ 3700da3bf1a271d6b6763060f913435a4a50cda8d456cb1a57a6f1898416b6ad
+
+
+======================================================================
+FAIL: test_snapshot_hashes_match (test_packaging.ReceiptBoundary.test_snapshot_hashes_match)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\tests\test_packaging.py", line 11, in test_snapshot_hashes_match
+    for p,h in json.loads((ROOT/'PROVENANCE.json').read_text())['snapshotSha256'].items():self.assertEqual(hashlib.sha256((ROOT/p).read_bytes()).hexdigest(),h,p)
+                                                                                          ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '3700da3bf1a271d6b6763060f913435a4a50cda8d456cb1a57a6f1898416b6ad' != '0e08bf88e488539ca8966dcc3cc08727ef2faf98da3740787b308cd54c652f52'
+- 3700da3bf1a271d6b6763060f913435a4a50cda8d456cb1a57a6f1898416b6ad
++ 0e08bf88e488539ca8966dcc3cc08727ef2faf98da3740787b308cd54c652f52
+ : cad/cycle-contract-A2.json
+
+======================================================================
+FAIL: test_longer_same_law_lineage (test_pressure_continuation_receipt.ContinuationReceiptTest.test_longer_same_law_lineage)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\tests\test_pressure_continuation_receipt.py", line 13, in test_longer_same_law_lineage
+    self.assertTrue(all(r.c.factory.r.sha(R/f)==h for f,h in e['inputs'].items()));q=r.c.restore(e['endCheckpoint']);self.assertAlmostEqual(q.t,.68,places=12);self.assertEqual(e['outcome'],'HORIZON');self.assertFalse(e['acceptance'])
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_exact_source_inventory (test_pressure_entry_receipt.EntryReceiptTest.test_exact_source_inventory)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ehart\repos\frc-2024-poc-worktrees\centerline-speaker-scores\tests\test_pressure_entry_receipt.py", line 7, in test_exact_source_inventory
+    r=json.loads((R/'sim/pressure/acquisition-entry-evidence.json').read_text());_,_,pins=runner.run_free_planar.load(R/'sim/acquisition/free-obstacles.json');pins.update({f:sha(R/f) for f in runner.FILES+runner.drive_source.FILES});self.assertEqual(r['inputs'],pins);self.assertFalse(r['acceptance']);self.assertEqual(r['pressureConfig']['resolution'],[1024,1024])
+                                                                                                                                                                                                                                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: {'cad[4781 chars]y': '5312a02924a3ebe7cb85e7a61348587d118b5097d[1160 chars]e11'} != {'cad[4781 chars]y': '2e433044711d836404c7efb2cac715f105718daa4[1160 chars]e11'}
+Diff is 6383 characters long. Set self.maxDiff to None to see it.
+
+----------------------------------------------------------------------
+Ran 565 tests in 528.058s
+
+FAILED (failures=4, errors=9)

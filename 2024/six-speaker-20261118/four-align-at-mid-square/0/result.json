@@ -1,0 +1,30 @@
+{
+  "sourceTrace": "2b65cf164a454630ba0afe1b4467113656aee06f5dc1e92b99c5e7b1925bcb79",
+  "nativeSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "field": {
+    "panels.json": "179593289b9850e7bc88db0573088657a1143b745040c8b269a5f74ae1594d85",
+    "named-panels.npz": "fcf29b7d726ae323e52f2c76cd4ec47b9d8ad60488f99f7a1fbdc266e8c23bad",
+    "extras.json": "72f92baebb9fc8ed31cc1f6a8a2ebe50cc78eb89bf38ce3c0625336203200e06",
+    "extras.npz": "2cffcdf267edd6c490f87e099f42e706a043382a32294b6d3f52b85857d7d605"
+  },
+  "trace": "6412869e1f3d5bd9f94388ded280b94ef5738a5694e523cb64f1c3bb838cb1b7",
+  "previousFieldTrace": "7d7f2478b422e83d451c0682ff579f4f1b56c768aeba62c6efa234d4cfa41cb1",
+  "segmentStartS": 101.9773000010818,
+  "releaseTimeS": 16.479700000017857,
+  "endS": 101.977400000508,
+  "parameters": {
+    "dt": 0.0001,
+    "nodes": 192,
+    "first_mark": "middle",
+    "field_yaw_deg": 245.0,
+    "belt_speed": 1.5,
+    "trace_every_step": true,
+    "horizon": 9.999942619742797e-05,
+    "collection_floor": true,
+    "stiffness": 1200000.0,
+    "damping": 450.0,
+    "friction": 0.45
+  },
+  "coupledManifest": "0dc35a92e173c9a652484dad31c5b86f3ca858bcfae2255548eeba9f9022199c",
+  "finalStepS": 9.999942619742797e-05
+}
