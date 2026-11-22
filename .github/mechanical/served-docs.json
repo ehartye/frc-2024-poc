@@ -46,6 +46,33 @@
       "index.html",
       "media/r9-assembly.png",
       "robot-model.js"
-    ]
+    ],
+    "catalogFiles": {
+      "index.html": "8719f95583ae96cd54decfb5e2851e12add50f0b62b9036fdd6f97c22c4df2a6",
+      "releases.js": "666c7f8f9aff06755cdf23b3e11166a8509de25c37ff7329f938463da254a321"
+    },
+    "presentations": {
+      "001": {
+        "files": {
+          "index.html": "72d9adaf107c6dfbef29c4f7b19590d467a0fc1afdfaf778d90604fad859fbbb",
+          "review.js": "c70a52fc366f295aa163f3525b7664113c1f2fb54b17e01d9a8945e90d1be2f0",
+          "resources.js": "ddcba2d59c466f0f0ae1f32e92a166e193e4ccee44fcfc7bd535948c7e474a44",
+          "review.css": "ce1b4db109f8b4c78da48662cec4df817e54df918199a8a5da36536866b96b7c",
+          "presentation.md": "b17c919fa403fda6d7e68ca183158f762947272dc53d68614a638ba6e147d8d5",
+          "scene.json.gz": "62765eb754f607fb4c0e7347be796beb80bf1fb9971b85f02919736b3ddee258"
+        },
+        "historicalRecord": "9b4c3ac895d2a18e38f4185e58f581ccca584c47b792065602138284dd2ecfec"
+      },
+      "002": {
+        "files": {
+          "index.html": "601683b8b5163a6fae0ac681f34854c48b46eb6cae41f926e8485eaa5379340a",
+          "review.js": "c70a52fc366f295aa163f3525b7664113c1f2fb54b17e01d9a8945e90d1be2f0",
+          "resources.js": "ddcba2d59c466f0f0ae1f32e92a166e193e4ccee44fcfc7bd535948c7e474a44",
+          "review.css": "ce1b4db109f8b4c78da48662cec4df817e54df918199a8a5da36536866b96b7c",
+          "presentation.md": "b17c919fa403fda6d7e68ca183158f762947272dc53d68614a638ba6e147d8d5",
+          "scene.json.gz": "5a1a5861cc9df6e3fc43ec7038701a64322de008b01f0e557416839b7943e0b5"
+        }
+      }
+    }
   }
 }
