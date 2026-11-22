@@ -68,7 +68,9 @@ async function check(page, query, release, motion) {
       const live = await check(page,motion==='continuous-cycle-96'?'':'?case='+motion,'003',motion);
       assert.ok(live.end.includes(motion.includes('climb')?'Power cut':'6/6 individual events'));
       if (baseline) {
-        const prior = baseline.find(r=>r.release==='002' && r.motion===motion);
+        const prior = baseline.find(r=>r.release==='003' && r.motion===motion) ||
+          baseline.find(r=>r.release==='002' && r.motion===motion);
+        assert.ok(prior, 'Missing reference readout for '+motion);
         for (const k of ['end','inventory','weight','power']) assert.equal(live[k],prior[k],motion+' '+k);
       }
       console.log(JSON.stringify(live));

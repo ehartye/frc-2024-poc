@@ -22,4 +22,4 @@ node cad/preliminary-design/check-viewer.cjs http://localhost:8000/preliminary-d
 node cad/preliminary-design/check-viewer.cjs http://localhost:8001/preliminary-design/ reference.jsonl
 ```
 
-The comparison opens all six featured links across both revisions and exercises the camera, inventory, part focus, playback, labels, floor and load drill-down. It compares opening canvas pixels, end-of-motion readouts, inventory counts and the rendered ledger text. Keep both browser runs on the same rendering backend for a meaningful pixel comparison.
+The comparison exercises all four current replays and checks that older catalog links resolve. It compares the final readouts, inventory counts and weight and power ledgers with the reference. It also checks camera controls, selection, speaker cutaway, phone framing, and which of the three stage chains moves during each climb.
