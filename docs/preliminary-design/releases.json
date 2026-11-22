@@ -2,5 +2,8 @@
   "current": "003",
   "releases": [
     "003"
-  ]
+  ],
+  "designStatus": {
+    "003": "in-progress"
+  }
 }

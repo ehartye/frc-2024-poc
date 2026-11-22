@@ -19,11 +19,11 @@
   "issue": "2024-002-cassette",
   "receipt": {
     "file": "receipt.json",
-    "sha256": "efecb3fed213357608ded1ba4438b734dbbfe275e4c712d62974585dbb120270"
+    "sha256": "51ffddd2bfbd30400c3f9e2ddaeed998a4134a464e7a9e1470a720cc69eed96c"
   },
   "view": {
     "file": "package-motion.html",
-    "sha256": "e3f23bf4ddb94f4dd09800584c62b64495b62ca44e76ceadb2315a50426a7db1"
+    "sha256": "1b1c4bd34c9934ab2cdcb477782fc3074a8b5a2da5e067c1103abb63e206d7b1"
   },
   "scene": {
     "file": "motion.json",
@@ -37,5 +37,6 @@
       "accomplishes": "delivered",
       "objective": "Discharge the retained NOTE from the cassette"
     }
-  ]
+  ],
+  "phase": "preliminary-design"
 }

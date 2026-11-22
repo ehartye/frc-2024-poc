@@ -19,7 +19,7 @@ async function check(page, query, release, motion) {
     poll();
   }));
   assert.equal(await page.locator('#release').count(), 0);
-  assert.equal(new URL(await page.locator('#viewer').getAttribute('src'),root).pathname, new URL('releases/'+release+'/',root).pathname);
+  assert.equal(new URL(await page.locator('#viewer').getAttribute('src'),root).pathname, new URL('releases/'+release+'/match-replay.html',root).pathname);
   assert.equal(new URL(await page.locator('#direct').getAttribute('href'), root).searchParams.get('case'), motion);
   const canvas = frame.locator('#canvas');
   const image = async () => sha(await canvas.screenshot());
@@ -65,7 +65,7 @@ async function check(page, query, release, motion) {
     page.on('pageerror', e => failures.push(e.message));
     page.on('response', response => { if (response.status() >= 400) failures.push(response.url()); });
     for (const motion of ['continuous-cycle-96','continuous-cycle-48','score-to-climb-front','score-to-climb-rear']) {
-      const live = await check(page,motion==='continuous-cycle-96'?'':'?case='+motion,'003',motion);
+      const live = await check(page,'?case='+motion,'003',motion);
       assert.ok(live.end.includes(motion.includes('climb')?'Power cut':'6/6 individual events'));
       if (baseline) {
         const prior = baseline.find(r=>r.release==='003' && r.motion===motion) ||
@@ -81,6 +81,15 @@ async function check(page, query, release, motion) {
       assert.match(await page.locator('#viewer').getAttribute('src'), /releases\/003\//);
     }
     await page.goto(root.href);
+    const assembly = page.frameLocator('#viewer');
+    await assembly.getByText('Scene digest verified',{exact:true}).waitFor({timeout:120000});
+    assert.equal(await page.locator('#assembly').getAttribute('aria-current'),'page');
+    assert.ok(await assembly.locator('#inventory tr').count()>50);
+    assert.ok(await assembly.locator('#motion option').count()>=2);
+    await assembly.locator('#labels').check();
+    await assembly.locator('#labels').uncheck();
+    await assembly.locator('#canvas').press('ArrowRight');
+    await page.locator('#replay').click();
     const scene = page.frameLocator('#viewer');
     await scene.locator('#time').evaluate(el => new Promise(resolve => {
       function ready() { if (el.oninput) resolve(); else setTimeout(ready,50); } ready();

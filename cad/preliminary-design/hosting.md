@@ -1,8 +1,22 @@
 # 2024 guided-cassette preliminary design
 
-The [preliminary viewer](https://ehartye.github.io/frc-2024-poc/preliminary-design/) opens the current six-NOTE run. Select the other scoring clock or either climb approach from the motion menu. Copy the page URL to share the selected motion. The robot, four replays, weight and power ledgers, mechanical companion, and FIRST field fixtures ship together in `docs/preliminary-design/releases/003/`.
+The [preliminary viewer](https://ehartye.github.io/frc-2024-poc/preliminary-design/) opens the stock Agent FRC assembly review. Select **Match replays** for both six-NOTE scoring clocks and the front and rear climbs. A case URL opens that replay directly. Copy the page URL to share the selected motion. The robot, four replays, weight and power ledgers, mechanical companion, and FIRST field fixtures ship together in `docs/preliminary-design/releases/003/`.
 
 Git preserves the earlier presentation iterations. Earlier catalog links using `?release=001`, `002` or `003` open this same design. Both current scoring runs use the official blue speaker. Both climbs use the official blue stage, anchors and chains. FIRST supplies the field archive directly to the browser. The NOTE follows the measured free-piece trajectory using the project’s simulation geometry.
+
+Run `python cad/preliminary-design/serve.py` from the season checkout to serve the page locally. The checked assembly page is the Agent FRC 0.102.0 template. The season replay loads the official field CAD independently.
+
+### Reproduce the assembly review
+
+The issue inputs are in `cad/preliminary-design/releases/003/`. Copy them into a clean working directory and supply the season’s original layout STEP as `robot.step`. Its SHA-256 is `a29a146d8897f64e8f056fcb46a431ba234c7aecccbc3233b6834c43c703bc88`. The source register is `layout.json`. With the Agent FRC geometry environment active, generate the receipt, stock page and compressed review scene:
+
+```sh
+python "$PLUGIN/scripts/preliminary_design.py" "$ISSUE" layout.json --write-view --require-checked > "$ISSUE/receipt.json"
+node "$PLUGIN/scripts/preliminary-release.mjs" verify-catalog docs/preliminary-design --policy .github/mechanical/served-docs.json
+node "$PLUGIN/scripts/preliminary-release.mjs" compare-template docs/preliminary-design/releases/003
+```
+
+The season release holds the stock assembly review and the source-linked match replay. The match replay renders FIRST field CAD in the visitor’s browser. Its nominal NOTE and the original simulated scoring, elevation and power-cut traces remain in the season data.
 
 ### What the mechanical replay checks
 
