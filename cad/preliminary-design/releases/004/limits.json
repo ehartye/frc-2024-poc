@@ -1,0 +1,486 @@
+{
+ "basis": "Kickoff inspection limit and the selected 8 V minimum loaded bus. A duty with a motor terminal demand above 8 V requires that higher voltage.",
+ "inspectionLimitKg": 56.69904625,
+ "operatingMinV": 8.0,
+ "massLines": [
+  "Chassis",
+  "Pivot support",
+  "Pivoting cassette",
+  "Piece support",
+  "Cassette drive",
+  "Electrical bay",
+  "Swerve · Front left",
+  "Swerve · Rear left",
+  "Swerve · Front right",
+  "Swerve · Rear right",
+  "Unplaced fasteners, harness and sensors",
+  "Unallocated design reserve",
+  "Passive cover",
+  "Replacement traction tread and hardware allowance",
+  "Pickup lip, extended rail tips and attachments",
+  "Climb catch, actuator and sensing allowance",
+  "Carpet followers, axles and added cheek material",
+  "Split transmission, net added stock and electrical allowance",
+  "Forward drive bridges and shafts",
+  "Guided climb, keeper and take-up",
+  "battery",
+  "finished bumper scenario",
+  "Slide motor service package, gross allowance"
+ ],
+ "electricalCases": {
+  "feed-01-weak": {
+   "stage": "feed-01",
+   "duty": "Feed and launch with concurrent accessories",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed plus two launch drives"
+   ]
+  },
+  "feed-01-nominal": {
+   "stage": "feed-01",
+   "duty": "Feed and launch with concurrent accessories",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed plus two launch drives"
+   ]
+  },
+  "feed-02-weak": {
+   "stage": "feed-02",
+   "duty": "Feed and launch with concurrent accessories",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed plus two launch drives"
+   ]
+  },
+  "feed-02-nominal": {
+   "stage": "feed-02",
+   "duty": "Feed and launch with concurrent accessories",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed plus two launch drives"
+   ]
+  },
+  "feed-03-weak": {
+   "stage": "feed-03",
+   "duty": "Feed and launch with concurrent accessories",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed plus two launch drives"
+   ]
+  },
+  "feed-03-nominal": {
+   "stage": "feed-03",
+   "duty": "Feed and launch with concurrent accessories",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed plus two launch drives"
+   ]
+  },
+  "feed-04-weak": {
+   "stage": "feed-04",
+   "duty": "Feed and launch with concurrent accessories",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed plus two launch drives"
+   ]
+  },
+  "feed-04-nominal": {
+   "stage": "feed-04",
+   "duty": "Feed and launch with concurrent accessories",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed plus two launch drives"
+   ]
+  },
+  "stow-weak": {
+   "stage": "stow",
+   "duty": "Empty cassette pivot move",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Pivot motor"
+   ]
+  },
+  "stow-nominal": {
+   "stage": "stow",
+   "duty": "Empty cassette pivot move",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Pivot motor"
+   ]
+  },
+  "approach-01-weak": {
+   "stage": "approach-01",
+   "duty": "Empty cassette pivot move",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Pivot motor"
+   ]
+  },
+  "approach-01-nominal": {
+   "stage": "approach-01",
+   "duty": "Empty cassette pivot move",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Pivot motor"
+   ]
+  },
+  "approach-02-weak": {
+   "stage": "approach-02",
+   "duty": "Empty cassette pivot move",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Pivot motor"
+   ]
+  },
+  "approach-02-nominal": {
+   "stage": "approach-02",
+   "duty": "Empty cassette pivot move",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Pivot motor"
+   ]
+  },
+  "approach-03-weak": {
+   "stage": "approach-03",
+   "duty": "Empty cassette pivot move",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Pivot motor"
+   ]
+  },
+  "approach-03-nominal": {
+   "stage": "approach-03",
+   "duty": "Empty cassette pivot move",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Pivot motor"
+   ]
+  },
+  "capture-01-weak": {
+   "stage": "capture-01",
+   "duty": "Chain capture and guided hoist",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads",
+    "Shared pivot motor reeling both lines"
+   ]
+  },
+  "capture-01-nominal": {
+   "stage": "capture-01",
+   "duty": "Chain capture and guided hoist",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads",
+    "Shared pivot motor reeling both lines"
+   ]
+  },
+  "capture-02-weak": {
+   "stage": "capture-02",
+   "duty": "Chain capture and guided hoist",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads",
+    "Shared pivot motor reeling both lines"
+   ]
+  },
+  "capture-02-nominal": {
+   "stage": "capture-02",
+   "duty": "Chain capture and guided hoist",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads",
+    "Shared pivot motor reeling both lines"
+   ]
+  },
+  "capture-03-weak": {
+   "stage": "capture-03",
+   "duty": "Chain capture and guided hoist",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads",
+    "Shared pivot motor reeling both lines"
+   ]
+  },
+  "capture-03-nominal": {
+   "stage": "capture-03",
+   "duty": "Chain capture and guided hoist",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads",
+    "Shared pivot motor reeling both lines"
+   ]
+  },
+  "capture-04-weak": {
+   "stage": "capture-04",
+   "duty": "Chain capture and guided hoist",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads",
+    "Shared pivot motor reeling both lines"
+   ]
+  },
+  "capture-04-nominal": {
+   "stage": "capture-04",
+   "duty": "Chain capture and guided hoist",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads",
+    "Shared pivot motor reeling both lines"
+   ]
+  },
+  "capture-05-weak": {
+   "stage": "capture-05",
+   "duty": "Chain capture and guided hoist",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads",
+    "Shared pivot motor reeling both lines"
+   ]
+  },
+  "capture-05-nominal": {
+   "stage": "capture-05",
+   "duty": "Chain capture and guided hoist",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads",
+    "Shared pivot motor reeling both lines"
+   ]
+  },
+  "hoist-01-weak": {
+   "stage": "hoist-01",
+   "duty": "Chain capture and guided hoist",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads",
+    "Shared pivot motor reeling both lines"
+   ]
+  },
+  "hoist-01-nominal": {
+   "stage": "hoist-01",
+   "duty": "Chain capture and guided hoist",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads",
+    "Shared pivot motor reeling both lines"
+   ]
+  },
+  "hoist-02-weak": {
+   "stage": "hoist-02",
+   "duty": "Chain capture and guided hoist",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads",
+    "Shared pivot motor reeling both lines"
+   ]
+  },
+  "hoist-02-nominal": {
+   "stage": "hoist-02",
+   "duty": "Chain capture and guided hoist",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads",
+    "Shared pivot motor reeling both lines"
+   ]
+  },
+  "hoist-03-weak": {
+   "stage": "hoist-03",
+   "duty": "Chain capture and guided hoist",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads",
+    "Shared pivot motor reeling both lines"
+   ]
+  },
+  "hoist-03-nominal": {
+   "stage": "hoist-03",
+   "duty": "Chain capture and guided hoist",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads",
+    "Shared pivot motor reeling both lines"
+   ]
+  },
+  "hoist-04-weak": {
+   "stage": "hoist-04",
+   "duty": "Chain capture and guided hoist",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads",
+    "Shared pivot motor reeling both lines"
+   ]
+  },
+  "hoist-04-nominal": {
+   "stage": "hoist-04",
+   "duty": "Chain capture and guided hoist",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads",
+    "Shared pivot motor reeling both lines"
+   ]
+  },
+  "hoist-05-weak": {
+   "stage": "hoist-05",
+   "duty": "Chain capture and guided hoist",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads",
+    "Shared pivot motor reeling both lines"
+   ]
+  },
+  "hoist-05-nominal": {
+   "stage": "hoist-05",
+   "duty": "Chain capture and guided hoist",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads",
+    "Shared pivot motor reeling both lines"
+   ]
+  },
+  "hoist-06-weak": {
+   "stage": "hoist-06",
+   "duty": "Chain capture and guided hoist",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads",
+    "Shared pivot motor reeling both lines"
+   ]
+  },
+  "hoist-06-nominal": {
+   "stage": "hoist-06",
+   "duty": "Chain capture and guided hoist",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads",
+    "Shared pivot motor reeling both lines"
+   ]
+  },
+  "hoist-07-weak": {
+   "stage": "hoist-07",
+   "duty": "Chain capture and guided hoist",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads",
+    "Shared pivot motor reeling both lines"
+   ]
+  },
+  "hoist-07-nominal": {
+   "stage": "hoist-07",
+   "duty": "Chain capture and guided hoist",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads",
+    "Shared pivot motor reeling both lines"
+   ]
+  },
+  "hold-01-weak": {
+   "stage": "hold-01",
+   "duty": "Disabled hold on the mechanical stops",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads"
+   ]
+  },
+  "hold-01-nominal": {
+   "stage": "hold-01",
+   "duty": "Disabled hold on the mechanical stops",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads"
+   ]
+  },
+  "hold-02-weak": {
+   "stage": "hold-02",
+   "duty": "Disabled hold on the mechanical stops",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads"
+   ]
+  },
+  "hold-02-nominal": {
+   "stage": "hold-02",
+   "duty": "Disabled hold on the mechanical stops",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads"
+   ]
+  },
+  "hold-03-weak": {
+   "stage": "hold-03",
+   "duty": "Disabled hold on the mechanical stops",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads"
+   ]
+  },
+  "hold-03-nominal": {
+   "stage": "hold-03",
+   "duty": "Disabled hold on the mechanical stops",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls and concurrent loads"
+   ]
+  }
+ }
+}

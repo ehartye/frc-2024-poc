@@ -1,0 +1,68 @@
+{
+ "missionCases": [
+  {
+   "case": "feed-04",
+   "kind": "operating-case",
+   "accomplishes": "fed",
+   "objective": "Feed and deliver the NOTE through the speaker opening",
+   "trial": {
+    "file": "trial-feed-04.json",
+    "sha256": "5e48c0c1eb070ef808f871b8021fc26a9b959343df46254732ba5ac2a0cf0c1e"
+   }
+  }
+ ],
+ "cycle": {
+  "transfer": {
+   "cases": [
+    "feed-01",
+    "feed-02",
+    "feed-03",
+    "feed-04"
+   ]
+  },
+  "park": {
+   "cases": [
+    "stow"
+   ]
+  },
+  "endgame": {
+   "cases": [
+    "approach-01",
+    "approach-02",
+    "approach-03",
+    "capture-01",
+    "capture-02",
+    "capture-03",
+    "capture-04",
+    "capture-05",
+    "hoist-01",
+    "hoist-02",
+    "hoist-03",
+    "hoist-04",
+    "hoist-05",
+    "hoist-06",
+    "hoist-07",
+    "hold-01",
+    "hold-02",
+    "hold-03"
+   ]
+  },
+  "service": {
+   "cases": [
+    "withdraw-service-pin"
+   ]
+  }
+ },
+ "risks": [
+  {
+   "id": "scoring-repeatability",
+   "risk": "Six scores in 120 s on 19 of 20 starts. In the frozen simulation campaign at the 6.88 m/s command three of seven perturbed starts failed (R02, R03 and R06) and thirteen were not run.",
+   "benchTest": {
+    "measure": "Starts out of 20 on a full field speaker that score six floor NOTES within 120 s",
+    "pass": 19,
+    "fail": 18,
+    "unit": "starts"
+   }
+  }
+ ]
+}
