@@ -23,6 +23,42 @@ def audit(project, commit, verifier, field_generator):
         baseline = temp / "approved-docs"
         generated = temp / "independent-field"
         generated.mkdir()
+        # A one-time owner-reviewed consolidation can reissue the same preliminary
+        # design. Both complete Git trees are named by the trusted predecessor.
+        # All other transitions retain the ordinary append-only comparison.
+        root = "docs/preliminary-design"
+        plan = json.loads(approved_file(project, commit, ".github/mechanical/preliminary-consolidation.json"))
+        before = git(project, "rev-parse", f"{commit}:{root}").decode().strip()
+        after = git(project, "rev-parse", f"HEAD:{root}").decode().strip()
+        consolidate = (before, after) == (plan["beforeTree"], plan["afterTree"])
+        if consolidate:
+            # Verify the actual candidate bytes and inventory against the reviewed tree.
+            release_dir = project / root
+            expected = {}
+            for entry in git(project, "ls-tree", "-rz", after).split(b"\0"):
+                if entry:
+                    meta, name = entry.split(b"\t", 1)
+                    mode, kind, oid = meta.split()
+                    if mode != b"100644" or kind != b"blob":
+                        raise ValueError("Unsupported preliminary artifact")
+                    expected[name.decode("utf-8")] = oid.decode()
+            paths = list(release_dir.rglob("*"))
+            if any(path.is_symlink() for path in paths):
+                raise ValueError("Redirected preliminary artifact")
+            actual = {path.relative_to(release_dir).as_posix(): path for path in paths if path.is_file()}
+            if actual.keys() != expected.keys():
+                raise ValueError("Unexpected consolidation inventory")
+            for name, path in actual.items():
+                if path.read_bytes() != git(project, "cat-file", "blob", expected[name]):
+                    raise ValueError(f"Unapproved consolidation bytes: {name}")
+            # Compare the robot, all trials and every generated mechanical artifact
+            # to the deployed issue, even though the presentation is changing.
+            preserved = ("scene.json.gz", "budgets.json", "limits.json", "motion.json",
+                         "package-motion.geometry.json.gz", "package-motion.html", "receipt.json")
+            for name in preserved:
+                path = f"{root}/releases/003/{name}"
+                if (project / path).read_bytes() != approved_file(project, commit, path):
+                    raise ValueError(f"Consolidation changed engineering evidence: {name}")
         for entry in git(project, "ls-tree", "-rz", commit, "--", "docs").split(b"\0"):
             if not entry:
                 continue
@@ -31,6 +67,10 @@ def audit(project, commit, verifier, field_generator):
             if mode not in (b"100644", b"100755") or kind != b"blob":
                 raise ValueError(f"Unsupported item in approved Pages tree {raw!r}")
             path = Path(raw.decode("utf-8"))
+            if consolidate and path.is_relative_to(root):
+                # The unmodified first-party verifier performs a full initial-site
+                # validation of every release, catalog file and commissioned hash.
+                continue
             target = baseline / path.relative_to("docs")
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_bytes(git(project, "cat-file", "blob", oid.decode()))
@@ -39,6 +79,12 @@ def audit(project, commit, verifier, field_generator):
         env = os.environ.copy()
         env.pop("FRC_VERIFIED_FIELD_ROOT", None)
         served_policy = json.loads(policy_path.read_bytes())
+        if consolidate:
+            served_policy["preliminaryReleases"] = plan["preliminaryReleases"]
+            # Use the reviewed presentation policy for future checks as well.
+            if served_policy != json.loads((project / ".github/mechanical/served-docs.json").read_bytes()):
+                raise ValueError("Consolidated site policy differs from approved policy")
+            policy_path.write_text(json.dumps(served_policy), encoding="utf-8")
         for page in served_policy["mutableFieldPages"]:
             if page != "field-lab.html":
                 raise ValueError(f"No trusted regeneration rule for {page}")
