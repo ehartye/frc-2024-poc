@@ -1,0 +1,27 @@
+Stationary rail receiver
+Removable cap and ears
+Spindle
+M3 on cap 0
+M3 on cap 1
+M4 cap retention 0
+M4 cap retention 1
+M4 receiver attachment 0
+M4 receiver attachment 1
+Slide drive motor
+Slide bearing mount 220
+Double pinch hub
+M2.5 pinch spindle
+M2.5 pinch motor
+lead 0
+lead 1
+lead 2
+lead 3
+plug 0
+plug 1
+plug 2
+plug 3
+socket 0
+socket 1
+socket 2
+socket 3
+{'Stationary rail receiver': {'faces': 1644, 'closed': True, 'volume': 12463.552067030347, 'error': np.float64(0.41664831864545704)}, 'Removable cap and ears': {'faces': 1744, 'closed': True, 'volume': 5617.946396264615, 'error': np.float64(0.5128061156583499)}, 'Spindle': {'faces': 332, 'closed': True, 'volume': 643.3981754551905, 'error': np.float64(0.5998319424573992)}, 'M3 on cap 0': {'faces': 668, 'closed': True, 'volume': 117.22067588706894, 'error': np.float64(0.10927385887136154)}, 'M3 on cap 1': {'faces': 668, 'closed': True, 'volume': 117.22067588706894, 'error': np.float64(0.10927385887136154)}, 'M4 cap retention 0': {'faces': 668, 'closed': True, 'volume': 267.0353755551322, 'error': np.float64(0.2489207697935285)}, 'M4 cap retention 1': {'faces': 668, 'closed': True, 'volume': 267.0353755551319, 'error': np.float64(0.24892076979369904)}, 'M4 receiver attachment 0': {'faces': 668, 'closed': True, 'volume': 267.0353755551322, 'error': np.float64(0.248920769794438)}, 'M4 receiver attachment 1': {'faces': 668, 'closed': True, 'volume': 267.0353755551323, 'error': np.float64(0.2489207697945517)}, 'Slide drive motor': {'faces': 2514, 'closed': True, 'volume': 43843.108372082046, 'error': np.float64(37.49479527572839)}, 'Slide bearing mount 220': {'faces': 1024, 'closed': True, 'volume': 7397.754060612159, 'error': np.float64(0.8597473178051587)}, 'Double pinch hub': {'faces': 3248, 'closed': True, 'volume': 3710.0970979506365, 'error': np.float64(2.925182518872589)}, 'M2.5 pinch spindle': {'faces': 668, 'closed': True, 'volume': 79.03069019186788, 'error': np.float64(0.07367358964786774)}, 'M2.5 pinch motor': {'faces': 668, 'closed': True, 'volume': 79.03069019186789, 'error': np.float64(0.07367358964785353)}, 'lead 0': {'faces': 11528, 'closed': True, 'volume': 603.193936855565, 'error': np.float64(3.762919637201094)}, 'lead 1': {'faces': 11910, 'closed': True, 'volume': 509.2533935713933, 'error': np.float64(3.3313132625529533)}, 'lead 2': {'faces': 12300, 'closed': True, 'volume': 508.9057623736637, 'error': np.float64(3.281607213290272)}, 'lead 3': {'faces': 12658, 'closed': True, 'volume': 520.0951680263657, 'error': np.float64(3.137957701027517)}, 'plug 0': {'faces': 332, 'closed': True, 'volume': 3386.636880570006, 'error': np.float64(3.157141343332569)}, 'plug 1': {'faces': 332, 'closed': True, 'volume': 1399.5795271743439, 'error': np.float64(1.3047552763132444)}, 'plug 2': {'faces': 332, 'closed': True, 'volume': 1399.5795271743439, 'error': np.float64(1.3047528623283142)}, 'plug 3': {'faces': 332, 'closed': True, 'volume': 1399.5795271743439, 'error': np.float64(1.3047320302734988)}, 'socket 0': {'faces': 332, 'closed': True, 'volume': 3232.698840543359, 'error': np.float64(3.0136395124868613)}, 'socket 1': {'faces': 332, 'closed': True, 'volume': 1335.962275939289, 'error': np.float64(1.2454394345281798)}, 'socket 2': {'faces': 332, 'closed': True, 'volume': 1335.962275939289, 'error': np.float64(1.2454435380477662)}, 'socket 3': {'faces': 332, 'closed': True, 'volume': 1335.9622759388433, 'error': np.float64(1.245434434500794)}}

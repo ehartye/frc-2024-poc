@@ -1,0 +1,102 @@
+{
+  "parent": "a29a146d8897f64e8f056fcb46a431ba234c7aecccbc3233b6834c43c703bc88",
+  "motor": "4fdcdd973fecf09fc8d1851ebcc51220c34c7def9f30e82c21a57c5b72a7625c",
+  "fixture": "9998f82ac45f45c2f3072172a10ab39edb75b682073949ecb0f20b246c641d29",
+  "checks": {
+    "installed support": {
+      "subjects": 6,
+      "obstacles": 231,
+      "narrow": 6,
+      "positive": []
+    },
+    "75 mm attachment drivers before motor installation": {
+      "subjects": 2,
+      "obstacles": 232,
+      "narrow": 3,
+      "positive": [
+        [
+          "0",
+          "receiver",
+          79.267342513094
+        ]
+      ]
+    },
+    "75 mm cartridge drivers with motor seated": {
+      "subjects": 2,
+      "obstacles": 241,
+      "narrow": 0,
+      "positive": []
+    },
+    "axial cartridge withdrawal, clamp loosened and retainer screws removed": {
+      "subjects": 9,
+      "obstacles": 236,
+      "narrow": 13,
+      "positive": []
+    },
+    "withdrawal with retainers still installed": {
+      "subjects": 1,
+      "obstacles": 2,
+      "narrow": 2,
+      "positive": [
+        [
+          "tab0",
+          "0",
+          29.814772635621026
+        ],
+        [
+          "tab0",
+          "1",
+          29.81477263562107
+        ]
+      ]
+    },
+    "bench screws attempted in mounted position": {
+      "subjects": 2,
+      "obstacles": 236,
+      "narrow": 5,
+      "positive": [
+        [
+          "0",
+          "Slide bearing mount 220",
+          159.043128087983
+        ],
+        [
+          "0",
+          "Travel nut and clevis",
+          198.2677079422961
+        ],
+        [
+          "0",
+          "receiver",
+          47.71293842639491
+        ],
+        [
+          "1",
+          "Slide bearing mount 220",
+          17.42333670062886
+        ],
+        [
+          "1",
+          "receiver",
+          47.71293842639491
+        ]
+      ]
+    }
+  },
+  "fullPilotCutVolumesMm3": [
+    68.42388799519449,
+    68.42388799517539
+  ],
+  "capAndReceiverMassKg": 0.04882004585089669,
+  "extraHardwareKg": 0.010225275403858161,
+  "sequence": [
+    "On the bench install motor on cap using its two M3 screws",
+    "Attach receiver to prepared block before inserting hub",
+    "Place spindle and coupling, insert motor cartridge axially; tighten hub",
+    "Install two top M4 retainers; reverse sequence for service"
+  ],
+  "open": [
+    "Coupling clamp and its driver, purchased threaded engagement, wiring bend and withdrawal beyond first 45 mm",
+    "Remaining operational poses and load under bearing/rail deflection"
+  ]
+}

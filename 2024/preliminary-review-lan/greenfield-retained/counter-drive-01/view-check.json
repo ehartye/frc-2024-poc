@@ -1,0 +1,12 @@
+[
+  {
+    "key": "counter-driven",
+    "url": "http://192.168.1.129:8764/?concept=guided&case=counter-driven",
+    "message": "Inside the speaker · 2/2 modeled counter pairs crossed · 6.25 s"
+  },
+  {
+    "key": "counter-reversed",
+    "url": "http://192.168.1.129:8764/?concept=guided&case=counter-reversed",
+    "message": "Inside the speaker · 0/2 modeled counter pairs crossed · 7.00 s"
+  }
+]

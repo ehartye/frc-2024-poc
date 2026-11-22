@@ -1,0 +1,60 @@
+{
+  "start": "dev",
+  "n": 96,
+  "rows": [
+    {
+      "id": "middle",
+      "passShot": true,
+      "opening": {
+        "firstPossibleS": 1.0137499999999222,
+        "fullyThroughByS": 1.102749999999952,
+        "minimumMarginM": 0.12610513582237579
+      },
+      "both": 3.0114999999996908,
+      "arrival": 13.220023852377162,
+      "fieldSha": "b9cd33c30247f46f48f0b385ae74e5fbedf164c9b4278ef5e6013be4f7b09cd7",
+      "minBusV": 8.349207782463186
+    },
+    {
+      "id": "outer",
+      "passShot": true,
+      "opening": {
+        "firstPossibleS": 1.012999999999922,
+        "fullyThroughByS": 1.0989999999999507,
+        "minimumMarginM": 0.10084658999339281
+      },
+      "both": 3.803499999999252,
+      "arrival": 29.303205625932698,
+      "fieldSha": "a4467e26643cc132f5c5dd5d9f093cee93cacff2c617b6d109f275bb0bfbc049",
+      "minBusV": 8.34920792714873
+    },
+    {
+      "id": "inner",
+      "passShot": true,
+      "opening": {
+        "firstPossibleS": 1.0142499999999224,
+        "fullyThroughByS": 1.1024999999999519,
+        "minimumMarginM": 0.11724360116237537
+      },
+      "both": 4.503499999999758,
+      "arrival": 46.082807280462966,
+      "fieldSha": "92db980c144e10bb0e5284c4fcac8ed30b0432c2d36569e4726ce9216ceef0c4",
+      "minBusV": 8.349241769644594
+    },
+    {
+      "id": "center-high",
+      "passShot": false,
+      "opening": {
+        "firstPossibleS": 1.0124999999999218,
+        "fullyThroughByS": 1.1022499999999518,
+        "minimumMarginM": 0.11703700188849077
+      },
+      "both": null,
+      "arrival": 67.75395349841298,
+      "fieldSha": "71c4167608e75c32655b569d257fe1f2e84b6b2e6039953a4861000908104272",
+      "minBusV": 8.349207811781206
+    }
+  ],
+  "score": 3,
+  "passMission": false
+}

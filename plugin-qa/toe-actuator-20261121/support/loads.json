@@ -1,0 +1,188 @@
+{
+  "rosterSha256": "a8a1a5fea36741dfafa7686b91c0f5d5a0eac20def54ccf1ce5379f978a0a952",
+  "massKg": 1.8733020598675871,
+  "loadedWithNoteKg": 2.114602059867587,
+  "minIncludedUsingAluminumForFourBlockHousings": true,
+  "legacyMassSubstitution": "0.800 kg replaced by metal backbone, finger mass 0.08 kg x3 retained. No blanket additive allowance. Four bearing blocks assumed aluminum except insert and races; vendor net mass absent. Catalog masses for purchased motor/reducer subdivided by geometry volume as proxy only. Harness, guards, hardware, guide corrections and shoulders not included.",
+  "poses": {
+    "neutral": {
+      "cgMm": [
+        -56.128583370619864,
+        -11.628534850606203,
+        119.17626391179641
+      ],
+      "maxGravityNmPitchAboutXneg70Z195": 1.4160618002254661,
+      "gravityNmAtZeroPitch": 0.25482926538171813
+    },
+    "capture": {
+      "cgMm": [
+        -58.37817047352163,
+        -11.565466217665954,
+        119.17626391179641
+      ],
+      "maxGravityNmPitchAboutXneg70Z195": 1.4092112651193036,
+      "gravityNmAtZeroPitch": 0.2135025109368651
+    },
+    "home": {
+      "cgMm": [
+        -52.621874063155374,
+        -11.671198925830486,
+        119.17626391179641
+      ],
+      "maxGravityNmPitchAboutXneg70Z195": 1.4290604865980903,
+      "gravityNmAtZeroPitch": 0.3192503826045769
+    }
+  },
+  "cases": {
+    "96/0": {
+      "condition": "Entire recorded generalized axial demand applied at 4 mm toe center; unknown contact/guide friction and force split. Excludes grip preload, seals, wires and acceleration of revised carriage.",
+      "peakToeN": [
+        5.929417817821799,
+        5.9294161408636885,
+        6.281355349131987
+      ],
+      "peakSinglePadCoupleN": [
+        40.27961331243035,
+        28.717240445864817,
+        44.06066840866937
+      ],
+      "peakDriveN": [
+        11.858833958685487,
+        6.281355349131987
+      ],
+      "peakMotorA": [
+        7.246758050710476,
+        4.4968951150557865
+      ],
+      "toeSpeedAtMaxDemandMps": [
+        0.1091752456900674,
+        0.15468231300366367
+      ]
+    },
+    "96/0.1": {
+      "condition": "Entire recorded generalized axial demand applied at 4 mm toe center; unknown contact/guide friction and force split. Excludes grip preload, seals, wires and acceleration of revised carriage.",
+      "peakToeN": [
+        5.929417817821799,
+        5.9294161408636885,
+        6.281355349131987
+      ],
+      "peakSinglePadCoupleN": [
+        40.27961331243035,
+        28.717240445864817,
+        44.06066840866937
+      ],
+      "peakDriveN": [
+        25.65820471034452,
+        15.093489030865863
+      ],
+      "peakMotorA": [
+        14.050258489124948,
+        8.841539261951791
+      ],
+      "toeSpeedAtMaxDemandMps": [
+        0.1091752456900674,
+        0.15468231300366367
+      ]
+    },
+    "96/0.25": {
+      "condition": "Entire recorded generalized axial demand applied at 4 mm toe center; unknown contact/guide friction and force split. Excludes grip preload, seals, wires and acceleration of revised carriage.",
+      "peakToeN": [
+        5.929417817821799,
+        5.9294161408636885,
+        6.281355349131987
+      ],
+      "peakSinglePadCoupleN": [
+        40.27961331243035,
+        28.717240445864817,
+        44.06066840866937
+      ],
+      "peakDriveN": [
+        46.35726083783307,
+        28.31168955346667
+      ],
+      "peakMotorA": [
+        24.255509146746647,
+        15.358505482295797
+      ],
+      "toeSpeedAtMaxDemandMps": [
+        0.1091752456900674,
+        0.15468231300366367
+      ]
+    },
+    "192/0": {
+      "condition": "Entire recorded generalized axial demand applied at 4 mm toe center; unknown contact/guide friction and force split. Excludes grip preload, seals, wires and acceleration of revised carriage.",
+      "peakToeN": [
+        5.9941784346594575,
+        5.994178434072453,
+        6.237581892381531
+      ],
+      "peakSinglePadCoupleN": [
+        40.719543957266175,
+        29.030896006837267,
+        43.753618790269805
+      ],
+      "peakDriveN": [
+        11.98835686873191,
+        6.237581892381531
+      ],
+      "peakMotorA": [
+        7.31061669985791,
+        4.475313498215987
+      ],
+      "toeSpeedAtMaxDemandMps": [
+        0.03879152370876882,
+        0.17769168084389184
+      ]
+    },
+    "192/0.1": {
+      "condition": "Entire recorded generalized axial demand applied at 4 mm toe center; unknown contact/guide friction and force split. Excludes grip preload, seals, wires and acceleration of revised carriage.",
+      "peakToeN": [
+        5.9941784346594575,
+        5.994178434072453,
+        6.237581892381531
+      ],
+      "peakSinglePadCoupleN": [
+        40.719543957266175,
+        29.030896006837267,
+        43.753618790269805
+      ],
+      "peakDriveN": [
+        25.938444861552597,
+        14.98830565043549
+      ],
+      "peakMotorA": [
+        14.188425223385366,
+        8.789680725229317
+      ],
+      "toeSpeedAtMaxDemandMps": [
+        0.03879152370876882,
+        0.17769168084389184
+      ]
+    },
+    "192/0.25": {
+      "condition": "Entire recorded generalized axial demand applied at 4 mm toe center; unknown contact/guide friction and force split. Excludes grip preload, seals, wires and acceleration of revised carriage.",
+      "peakToeN": [
+        5.9941784346594575,
+        5.994178434072453,
+        6.237581892381531
+      ],
+      "peakSinglePadCoupleN": [
+        40.719543957266175,
+        29.030896006837267,
+        43.753618790269805
+      ],
+      "peakDriveN": [
+        46.86357685078363,
+        28.114391287516433
+      ],
+      "peakMotorA": [
+        24.50513800867655,
+        15.261231565749314
+      ],
+      "toeSpeedAtMaxDemandMps": [
+        0.03879152370876882,
+        0.17769168084389184
+      ]
+    }
+  }
+}

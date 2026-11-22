@@ -1,0 +1,17 @@
+{
+  "attempt": "dev",
+  "id": "center-mid",
+  "segments": 48,
+  "seated": true,
+  "held": true,
+  "carrySHA": "8c2003ba0e02cdb3bb80e428758b84f70c030a2771882aa85bde472b95d0b53d",
+  "scored": true,
+  "both": 3.5605000000003564,
+  "volts": 8.344287482176691,
+  "opening": {
+    "firstPossibleS": 1.011999999999944,
+    "fullyThroughByS": 1.0984999999999345,
+    "minimumMarginM": 0.06968587257769772
+  },
+  "shotSHA": "4e24b69acf00af8ebe69fb0fbf6a886eb587e80f4dd9d4db4f097dd3b236eeab"
+}

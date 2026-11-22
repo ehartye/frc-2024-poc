@@ -1,0 +1,59 @@
+{
+  "parent": "d65c56f5b2ac5693712ba63579321ceebe649bc13d90f40f9a7fd4651821ff7c",
+  "wrongPoseControl": {
+    "-2": 30.896907792447358,
+    "2": 30.896907792447365
+  },
+  "contacts": [],
+  "seats": {
+    "frame": {
+      "component": "Pivot A-frame · right",
+      "centerXZ": [
+        178.0,
+        418.0
+      ],
+      "hostThicknessMm": 12,
+      "clearShoulderDepthMm": 3,
+      "underheadSeatMm2": 46.36990756698534,
+      "tappedMajorOverlapMm": 6.5,
+      "threadCommonMm3": 37.5734481369339,
+      "outsideThreadMm3": 0.0,
+      "exitReserveMm": 2
+    },
+    "truck": {
+      "component": "Translating bearing block · right",
+      "centerXZ": [
+        108.36665322549902,
+        461.0
+      ],
+      "hostThicknessMm": 14,
+      "clearShoulderDepthMm": 3,
+      "underheadSeatMm2": 46.36990756698534,
+      "tappedMajorOverlapMm": 6.5,
+      "threadCommonMm3": 37.573448136933955,
+      "outsideThreadMm3": 0.0,
+      "exitReserveMm": 4
+    }
+  },
+  "pullMm": 75,
+  "batteryToolGapMm": {
+    "Service slide shoulder screw · frame": 148.56059369832903,
+    "Service slide shoulder screw · truck": 81.95577509631717,
+    "Service slide link": 81.43995264093437
+  },
+  "statics": {
+    "test": "Assumed isolated 2 g horizontal inertia bound using entire upper robot mass at the service pose; external impacts excluded.",
+    "horizontalN": 1097.6191079,
+    "linkN": 1290.032269307184,
+    "linkNetStressMPa": 16.797295173270626,
+    "eyeEdgeShearMPa": 28.795363154178215,
+    "shoulderSingleShearMPa": 45.625558312954105,
+    "blockBearingMPa": 71.66845940595466,
+    "worstEstimatedHorizontalBacklashMm": 0.9402403875969798
+  },
+  "toolMetalKg": 0.04416044080457014,
+  "issues": "Thread engagement, actual fastener geometry, lower-bound material strength, restraint install sequence, de-energized handling and proof load need shop verification.",
+  "assembly": "a29a146d8897f64e8f056fcb46a431ba234c7aecccbc3233b6834c43c703bc88",
+  "fixture": "6871d1d5c6ef81d7318b94477662119e6190a2a96492db7d244a1e1a06dbee1a",
+  "stockRemovalKg": 0.0013187432067518613
+}

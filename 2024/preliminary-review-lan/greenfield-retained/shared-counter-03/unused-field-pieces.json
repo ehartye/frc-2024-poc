@@ -1,0 +1,197 @@
+{
+  "route": "42db7ff99be1054cf3e5dedd77e9b59cf605df1f536fda6119b4b3eea2f11bc6",
+  "webPayload": "a7811604f921787c6f6e6f21344172c36b9f383c4d434cfadf77f34bbde58e7d",
+  "scope": "Before each future NOTE begins its approach. Circumsphere around each stationary free NOTE against each part-local bounding box. Between-frame enclosure assumes linear translation and shortest rigid rotation per displayed part. No physical calibration implied.",
+  "proof": [
+    {
+      "meshResolution": 48,
+      "id": "outer",
+      "beforeOwnLegS": 17.78887024945368,
+      "parts": 255,
+      "poses": 417,
+      "minimumSampleBoundMm": [
+        25.1963809234895,
+        "Blue bumper set",
+        0.72
+      ],
+      "minimumBetweenSampleBoundMm": [
+        18.760945455598925,
+        "Blue bumper set",
+        0.54
+      ],
+      "unresolved": [],
+      "sourceRun": "8d7fb0d613a87ad27139e9d8e1a84bbf02b8399499bc4ea6e480dc2b3938df28"
+    },
+    {
+      "meshResolution": 48,
+      "id": "inner",
+      "beforeOwnLegS": 34.30011260090073,
+      "parts": 255,
+      "poses": 800,
+      "minimumSampleBoundMm": [
+        963.4240356922478,
+        "Launch Belt motor \u00b7 left",
+        5.12387
+      ],
+      "minimumBetweenSampleBoundMm": [
+        584.4229685334507,
+        "Mouth retention flap",
+        3.68387
+      ],
+      "unresolved": [],
+      "sourceRun": "8d7fb0d613a87ad27139e9d8e1a84bbf02b8399499bc4ea6e480dc2b3938df28"
+    },
+    {
+      "meshResolution": 48,
+      "id": "center-high",
+      "beforeOwnLegS": 51.16228109520704,
+      "parts": 255,
+      "poses": 1189,
+      "minimumSampleBoundMm": [
+        4371.744609064908,
+        "Blue bumper set",
+        0.72
+      ],
+      "minimumBetweenSampleBoundMm": [
+        4366.742661809936,
+        "Blue bumper set",
+        1.84387
+      ],
+      "unresolved": [],
+      "sourceRun": "8d7fb0d613a87ad27139e9d8e1a84bbf02b8399499bc4ea6e480dc2b3938df28"
+    },
+    {
+      "meshResolution": 48,
+      "id": "center-mid",
+      "beforeOwnLegS": 69.73146578415644,
+      "parts": 255,
+      "poses": 1607,
+      "minimumSampleBoundMm": [
+        1051.4183567558898,
+        "Blue bumper set",
+        58.270966
+      ],
+      "minimumBetweenSampleBoundMm": [
+        1027.3485020929181,
+        "Blue bumper set",
+        58.310966
+      ],
+      "unresolved": [],
+      "sourceRun": "8d7fb0d613a87ad27139e9d8e1a84bbf02b8399499bc4ea6e480dc2b3938df28"
+    },
+    {
+      "meshResolution": 48,
+      "id": "center-low",
+      "beforeOwnLegS": 92.54774839101884,
+      "parts": 255,
+      "poses": 2111,
+      "minimumSampleBoundMm": [
+        1086.8882482393878,
+        "Blue bumper set",
+        77.836248
+      ],
+      "minimumBetweenSampleBoundMm": [
+        967.8478537864146,
+        "Mouth retention flap",
+        77.876248
+      ],
+      "unresolved": [],
+      "sourceRun": "8d7fb0d613a87ad27139e9d8e1a84bbf02b8399499bc4ea6e480dc2b3938df28"
+    },
+    {
+      "meshResolution": 96,
+      "id": "outer",
+      "beforeOwnLegS": 17.789370249453654,
+      "parts": 255,
+      "poses": 417,
+      "minimumSampleBoundMm": [
+        25.1963809234895,
+        "Blue bumper set",
+        0.72
+      ],
+      "minimumBetweenSampleBoundMm": [
+        18.760945455598925,
+        "Blue bumper set",
+        0.54
+      ],
+      "unresolved": [],
+      "sourceRun": "50badf79dcca711a849c99c2c546b47b92ebb7d8e77afad9e0bfefa6e80db0d1"
+    },
+    {
+      "meshResolution": 96,
+      "id": "inner",
+      "beforeOwnLegS": 34.30086260090068,
+      "parts": 255,
+      "poses": 800,
+      "minimumSampleBoundMm": [
+        963.4250602136594,
+        "Launch Belt motor \u00b7 left",
+        5.12387
+      ],
+      "minimumBetweenSampleBoundMm": [
+        719.9256119160495,
+        "Mouth retention flap",
+        3.64387
+      ],
+      "unresolved": [],
+      "sourceRun": "50badf79dcca711a849c99c2c546b47b92ebb7d8e77afad9e0bfefa6e80db0d1"
+    },
+    {
+      "meshResolution": 96,
+      "id": "center-high",
+      "beforeOwnLegS": 51.16328109520696,
+      "parts": 255,
+      "poses": 1189,
+      "minimumSampleBoundMm": [
+        4371.744609064908,
+        "Blue bumper set",
+        0.72
+      ],
+      "minimumBetweenSampleBoundMm": [
+        4366.742661809936,
+        "Blue bumper set",
+        1.84387
+      ],
+      "unresolved": [],
+      "sourceRun": "50badf79dcca711a849c99c2c546b47b92ebb7d8e77afad9e0bfefa6e80db0d1"
+    },
+    {
+      "meshResolution": 96,
+      "id": "center-mid",
+      "beforeOwnLegS": 69.73271578415633,
+      "parts": 255,
+      "poses": 1607,
+      "minimumSampleBoundMm": [
+        1051.418211327932,
+        "Blue bumper set",
+        58.271966
+      ],
+      "minimumBetweenSampleBoundMm": [
+        980.7843679695421,
+        "Mouth retention flap",
+        56.751966
+      ],
+      "unresolved": [],
+      "sourceRun": "50badf79dcca711a849c99c2c546b47b92ebb7d8e77afad9e0bfefa6e80db0d1"
+    },
+    {
+      "meshResolution": 96,
+      "id": "center-low",
+      "beforeOwnLegS": 92.5492483910187,
+      "parts": 255,
+      "poses": 2111,
+      "minimumSampleBoundMm": [
+        1086.8882482393878,
+        "Blue bumper set",
+        77.837498
+      ],
+      "minimumBetweenSampleBoundMm": [
+        950.0320877569338,
+        "Mouth retention flap",
+        77.877498
+      ],
+      "unresolved": [],
+      "sourceRun": "50badf79dcca711a849c99c2c546b47b92ebb7d8e77afad9e0bfefa6e80db0d1"
+    }
+  ]
+}

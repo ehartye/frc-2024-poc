@@ -1,0 +1,171 @@
+{
+  "decision": "Reject low direct rear rack; keep full rack and raise rear pinion and guides 55 mm for integration trial.",
+  "sourceCAD": {
+    "REV-21-1651": "4fdcdd973fecf09fc8d1851ebcc51220c34c7def9f30e82c21a57c5b72a7625c",
+    "REV-41-1607": "2f2e2bdd811c36e295569f0606c4f5ab0e148179555918a18a7fec7b2b04fa58",
+    "REV-41-1608": "aa66c3fd5609b8051a07a51917ca9a69764320d65b81ad9f44baa8b73c497ed9",
+    "REV-41-1602": "0ac50d28c2a05a73eea86e2ab1f358ae2648c8fac6c97f3eec7725ecf7433dac",
+    "REV-41-1615": "c1b096b2a4d98ea4fd85f0e47757088d53716315649934924803742ca7ae7690",
+    "REV-41-1332": "f2d6208787f0b5101fbab06251bbf127fc9d6813c9a4d71bb656e6c543dfd1ae",
+    "REV-41-1503": "2d84dec1090cf680ac69eda4ee8593b0187a42587675d07db0921834514a8495"
+  },
+  "measurements": {
+    "tail-brep.json": "55d81daec0a8839085381161e3adeac4b0cd0da7aff8aff5da25e66db0729082",
+    "gear-phase.json": "f3e4d64f092e6b1b6e4832e6c3947996688d2c2343394f3f23a020f110bcf723",
+    "rear-gear-phase.json": "113b3bc0628d3bf66bf1cd17044af3d61db10050eb9b248aa0c291a9f33b4a73",
+    "rear-fine-phase.json": "cbfa000efc5cc9d35a77ccce31436e0210c6b27da435f1844492a3301ff54c35",
+    "obb-96-130.json": "01dbe6edbb679453bc70549c995b27095d68765228ff770538b1958d99e23c90",
+    "obb-96-185.json": "c76897a04eb2a5a289b0a799beb4a474194f2ce6f8e94ee86888b22ae6a2a2e6",
+    "obb-192-130.json": "ac52151a29989eecd4d9734488e7ae53b8020fc8d07d62d7585529fe0b4a9e1c",
+    "obb-192-185.json": "2a51f1fd6ed7ee4abbc1c5fabb88803b4e2092649540f02d815d5a07076b2605",
+    "fit-untrimmed-96.json": "6c2567872074a8cc3c014c9ffd41aa73e3caeea80c8a523eb1d163299f14eea3",
+    "fit-untrimmed-192.json": "f6bc4026425f678cd663d0f7b3c79aa07d55f773733299d23859f9e11475c103",
+    "phase-demand.json": "9abd0f81ecdfd76062f334eef59ecd764820bfd90d8663bdcae6089bee67fb9f"
+  },
+  "fixture": "Over-bumper head from 2024 Blue 1 head-clear 96/192, 600 returned poses each.",
+  "layoutMm": {
+    "headCoordinates": "x ahead, y left, z up",
+    "sidePinionXYZ": [
+      -4,
+      0,
+      132
+    ],
+    "sideAxle": "+X, drive behind pinion",
+    "sidePitchLinesZ": [
+      120.75,
+      143.25
+    ],
+    "rearOriginal": [
+      -92,
+      -25,
+      130
+    ],
+    "rearSuccessor": [
+      -92,
+      -25,
+      185
+    ],
+    "rearAxle": "+Y, drive to negative side",
+    "rearPitchLineZ": 196.25,
+    "sideSegmentsEach": 2,
+    "rearSegments": 3,
+    "backboneX": [
+      -110,
+      16
+    ],
+    "postLocalHome": [
+      [
+        10,
+        78,
+        0
+      ],
+      [
+        10,
+        -78,
+        0
+      ],
+      [
+        -75,
+        0,
+        0
+      ]
+    ],
+    "jointStatesMm": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        34,
+        34,
+        34
+      ],
+      [
+        -23,
+        -23,
+        -53
+      ]
+    ],
+    "sideAxialBearingCentersFromPinionMm": [
+      -12,
+      12
+    ],
+    "sideYokeOutreachAtLeastMm": 25.75,
+    "meshGuardAssumed": false
+  },
+  "worstContactMm3": {
+    "96": {
+      "t": 7.825,
+      "pose": -0.0048170747233266,
+      "rearMm": 34.0067210929698,
+      "cases": {
+        "130": {
+          "volumeMm3": 2557.19280849375,
+          "distanceMm": 0.0
+        },
+        "185": {
+          "volumeMm3": 0.0,
+          "distanceMm": 16.257289315752672
+        }
+      }
+    },
+    "192": {
+      "t": 7.775,
+      "pose": -0.00485783717749203,
+      "rearMm": 33.999406050485725,
+      "cases": {
+        "130": {
+          "volumeMm3": 2557.184472490627,
+          "distanceMm": 0.0
+        },
+        "185": {
+          "volumeMm3": 0.0,
+          "distanceMm": 19.490914926806823
+        }
+      }
+    }
+  },
+  "limits": [
+    "Open supports, guide attachment, lead-in and segment mating, housing screw access, harness and guarded free ring sweep.",
+    "Motor/cartridge/shaft placement is a shaft-axis packaging hypothesis with source bodies. Purchased case fasteners and rotor inertias remain open.",
+    "Positive values in separated sampled OBB receipts bound clearance at sampled poses only. First-party OCC Common volumes at worst rack poses confirm true penetration.",
+    "Endpoint static spur/rack solids show no penetration at calibrated phases; continuity, load, root/tip clearance and the segment-joint crossing are open.",
+    "Head pose sampled at 25 ms. Finger telemetry interpolated in recorded phase, neutral before dock and end target after settling.",
+    "Free pieces checked against purchased articles on unchanged archived dynamics. New supports, wires, guards, sensing, coupled carriage and changed moving masses/inertias have not yet been modeled or qualified."
+  ],
+  "freePieceObserver": {
+    "96": {
+      "receipt": "free-ring-96.json",
+      "sha256": "fcc7c7825594f05f26382e79b78d18ca616077af27ce41f215c69dbc9f612776",
+      "samplesPerPiece": 7500,
+      "pieceIDs": [
+        "blue-source/1",
+        "blue-middle/1"
+      ],
+      "equipmentArticleEnvelopesPerPose": 19,
+      "globalSampledLowerBoundMm": 46.433939275613064,
+      "worstTimeS": 10.904,
+      "worstPiece": "floor",
+      "worstArticle": "side motor",
+      "exactBRepDistanceAtThisPoseMm": 57.46258976256161,
+      "exactCommonMm3": 0.0
+    },
+    "192": {
+      "receipt": "free-ring-192.json",
+      "sha256": "2a1b47b4de499fdfe69ae205506b3b75b6a3de5254ba7a0ae6f449daaf5e7d26",
+      "samplesPerPiece": 7500,
+      "pieceIDs": [
+        "blue-source/1",
+        "blue-middle/1"
+      ],
+      "equipmentArticleEnvelopesPerPose": 19,
+      "globalSampledLowerBoundMm": 46.485681457550115,
+      "worstTimeS": 10.844,
+      "worstPiece": "floor",
+      "worstArticle": "side motor",
+      "exactBRepDistanceAtThisPoseMm": 57.46960258527929,
+      "exactCommonMm3": 0.0
+    }
+  }
+}

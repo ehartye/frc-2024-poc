@@ -1,0 +1,12 @@
+{
+  "freeze": "1a47d135e865a2b7c619488bceed5d0b17422898b4870097ff63771a6df757af",
+  "attempts": [
+    "R01",
+    "R02"
+  ],
+  "passed": 0,
+  "failed": 2,
+  "untested": 18,
+  "upperBound": 18,
+  "terminal": true
+}

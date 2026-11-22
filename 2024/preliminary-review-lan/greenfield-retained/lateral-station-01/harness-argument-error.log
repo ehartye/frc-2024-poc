@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\ehart\Documents\FRC Native\2024\preliminary-review-lan\greenfield-retained\lateral-station-01\carry.py", line 20, in <module>
+    exec(compile(text,'lifted cassette at revised approach','exec'))
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "lifted cassette at revised approach", line 51, in <module>
+  File "seat confirmed carry", line 8, in <module>
+    assert text.count(old)==1,old
+  File "continuous split pickup and carry", line 7, in <module>
+    global text
+    
+StopIteration

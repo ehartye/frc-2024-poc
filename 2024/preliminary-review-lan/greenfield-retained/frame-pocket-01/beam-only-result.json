@@ -1,0 +1,202 @@
+{
+  "parent": "21bf62ea2435c865a10fd660584050c17b464dfd45f008d81abbb231065ab5ff",
+  "step": "03711b839b6ab990adec34c665c00b19c39e71f02f270d017573a7a444cb6850",
+  "cuts": [
+    [
+      "Bay crossmember \u00b7 rear",
+      -220.0,
+      -137.0
+    ],
+    [
+      "Bay crossmember \u00b7 rear",
+      -128.0,
+      -45.0
+    ],
+    [
+      "Bay crossmember \u00b7 rear",
+      -27.0,
+      27.0
+    ],
+    [
+      "Bay crossmember \u00b7 rear",
+      45.0,
+      128.0
+    ],
+    [
+      "Bay crossmember \u00b7 rear",
+      137.0,
+      220.0
+    ],
+    [
+      "Bay crossmember \u00b7 front",
+      -220.0,
+      -137.0
+    ],
+    [
+      "Bay crossmember \u00b7 front",
+      -128.0,
+      -45.0
+    ],
+    [
+      "Bay crossmember \u00b7 front",
+      -27.0,
+      27.0
+    ],
+    [
+      "Bay crossmember \u00b7 front",
+      45.0,
+      128.0
+    ],
+    [
+      "Bay crossmember \u00b7 front",
+      137.0,
+      220.0
+    ],
+    [
+      "Chassis sill \u00b7 left",
+      -302.0,
+      -238.0
+    ],
+    [
+      "Chassis sill \u00b7 left",
+      -229.0,
+      -165.0
+    ],
+    [
+      "Chassis sill \u00b7 left",
+      -102.0,
+      -26.33333333333333
+    ],
+    [
+      "Chassis sill \u00b7 left",
+      -17.33333333333333,
+      58.33333333333334
+    ],
+    [
+      "Chassis sill \u00b7 left",
+      67.33333333333334,
+      143.0
+    ],
+    [
+      "Chassis sill \u00b7 left",
+      177.0,
+      244.0
+    ],
+    [
+      "Chassis sill \u00b7 right",
+      -302.0,
+      -238.0
+    ],
+    [
+      "Chassis sill \u00b7 right",
+      -229.0,
+      -165.0
+    ],
+    [
+      "Chassis sill \u00b7 right",
+      -102.0,
+      -26.33333333333333
+    ],
+    [
+      "Chassis sill \u00b7 right",
+      -17.33333333333333,
+      58.33333333333334
+    ],
+    [
+      "Chassis sill \u00b7 right",
+      67.33333333333334,
+      143.0
+    ],
+    [
+      "Chassis sill \u00b7 right",
+      177.0,
+      244.0
+    ]
+  ],
+  "measure": {
+    "Bay crossmember \u00b7 rear": {
+      "volumeMm3": 138241.43399111895,
+      "machinedFromMm3": 288000.0,
+      "remainingWallMm": 3,
+      "flangeMm": 3.5,
+      "cornerRadiusMm": 4,
+      "interfaceGapsMm": {
+        "Chassis perimeter": 72.0,
+        "Bay crossmember \u00b7 front": 290.0,
+        "Pivot A-frame \u00b7 left": 8.0,
+        "Pivot A-frame \u00b7 right": 8.0
+      }
+    },
+    "Bay crossmember \u00b7 front": {
+      "volumeMm3": 138241.43399111895,
+      "machinedFromMm3": 288000.0,
+      "remainingWallMm": 3,
+      "flangeMm": 3.5,
+      "cornerRadiusMm": 4,
+      "interfaceGapsMm": {
+        "Chassis perimeter": 72.0,
+        "Bay crossmember \u00b7 rear": 290.0,
+        "Pivot A-frame \u00b7 left": 79.53350398762774,
+        "Pivot A-frame \u00b7 right": 79.53350398762774
+      }
+    },
+    "Chassis sill \u00b7 left": {
+      "volumeMm3": 261584.54921036243,
+      "machinedFromMm3": 462240.0,
+      "remainingWallMm": 3,
+      "flangeMm": 3.5,
+      "cornerRadiusMm": 4,
+      "interfaceGapsMm": {
+        "Chassis perimeter": 0.0,
+        "Bay crossmember \u00b7 rear": 0.0,
+        "Bay crossmember \u00b7 front": 0.0,
+        "Pivot A-frame \u00b7 left": 0.0,
+        "Pivot A-frame \u00b7 right": 488.0
+      }
+    },
+    "Chassis sill \u00b7 right": {
+      "volumeMm3": 261584.54921036243,
+      "machinedFromMm3": 462240.0,
+      "remainingWallMm": 3,
+      "flangeMm": 3.5,
+      "cornerRadiusMm": 4,
+      "interfaceGapsMm": {
+        "Chassis perimeter": 0.0,
+        "Bay crossmember \u00b7 rear": 0.0,
+        "Bay crossmember \u00b7 front": 0.0,
+        "Pivot A-frame \u00b7 left": 488.0,
+        "Pivot A-frame \u00b7 right": 0.0
+      }
+    }
+  },
+  "minOuterWebMm": 3.0,
+  "changedStockScreenCount": 8,
+  "positive": [],
+  "ringVolumeMm3": 1376859.6623001378,
+  "oldFrameSolidKg": 7.768817088210372,
+  "newFrameSolidKg": 5.876581397498372,
+  "allowancesKg": {
+    "eight perimeter and crossmember joint pairs incl screws and attachment plates": [
+      0.16,
+      0.35
+    ],
+    "four A-frame foot stacks and positive shear registration": [
+      0.12,
+      0.25
+    ],
+    "finish and machining variance": [
+      0.03,
+      0.1
+    ]
+  },
+  "newChassisKg": [
+    6.127815583523388,
+    6.635347211473356
+  ],
+  "combinedInspectionKg": [
+    35.498755342264545,
+    56.63931344984255
+  ],
+  "upperReserveKg": 0.0597328001574553,
+  "method": "Side-milled pockets leave full mounting lands and a continuous web. Mass includes the machined five members and allowances. Signed beam and frame torsion, fasteners and proof loading are separate."
+}

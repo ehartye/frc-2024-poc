@@ -1,0 +1,27 @@
+{
+  "fixedAndMovingSupportMatched": 32,
+  "unmatched": [],
+  "checks": [
+    [
+      "side gearmotor",
+      0,
+      "rear moving rack backer and finger link",
+      0.0,
+      34.0
+    ],
+    [
+      "side gearmotor",
+      0,
+      "integrated slotted backbone and six guide pedestals",
+      0.0,
+      19.926427175989176
+    ],
+    [
+      "side gearmotor",
+      1,
+      "integrated slotted backbone and six guide pedestals",
+      0.0,
+      26.0
+    ]
+  ]
+}

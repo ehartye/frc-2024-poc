@@ -1,0 +1,114 @@
+{
+  "layout": "093ca2ff6f5d2d53aa46c66651baa65f2d93bc59611a5e6e183006b9c7349415",
+  "goal": [
+    4622.8,
+    3657.6
+  ],
+  "path": [],
+  "times": [],
+  "destination": [
+    [
+      "Common keeper yoke and sliding rack",
+      "FE-2024/GE-24200_Blue/GE-24205/GE-24205_hanging"
+    ],
+    [
+      "Common keeper yoke and sliding rack",
+      "FE-2024/GE-24200_Blue/GE-24220_GE-24220 Tag16/GE-24221/GE-24221-01"
+    ],
+    [
+      "Common keeper yoke and sliding rack",
+      "FE-2024/GE-24200_Blue/GE-24220_GE-24220 Tag16/GE-24222"
+    ],
+    [
+      "Common keeper yoke and sliding rack",
+      "FE-2024/GE-24200_Blue/GE-24220_GE-24220 Tag16/hex_.25_20_2.5_partial_91247A552"
+    ],
+    [
+      "Keeper drive mast",
+      "FE-2024/GE-24200_Blue/GE-24205/GE-24205_hanging"
+    ],
+    [
+      "Keeper drive mast",
+      "FE-2024/GE-24200_Blue/GE-24220_GE-24220 Tag16/GE-24221/GE-24221-01"
+    ],
+    [
+      "Keeper drive mast",
+      "FE-2024/GE-24200_Blue/GE-24220_GE-24220 Tag16/GE-24222"
+    ],
+    [
+      "Keeper drive mast",
+      "FE-2024/GE-24200_Blue/GE-24220_GE-24220 Tag16/GE-24240/GE-24241"
+    ],
+    [
+      "Keeper drive mast",
+      "FE-2024/GE-24200_Blue/GE-24220_GE-24220 Tag16/GE-24240/GE-24243"
+    ],
+    [
+      "Keeper motor and return spring",
+      "FE-2024/GE-24200_Blue/GE-24205/GE-24205_hanging"
+    ],
+    [
+      "Keeper motor and return spring",
+      "FE-2024/GE-24200_Blue/GE-24220_GE-24220 Tag16/GE-24221/GE-24221-01"
+    ],
+    [
+      "Keeper motor and return spring",
+      "FE-2024/GE-24200_Blue/GE-24220_GE-24220 Tag16/GE-24222"
+    ],
+    [
+      "Keeper motor and return spring",
+      "FE-2024/GE-24200_Blue/GE-24220_GE-24220 Tag16/GE-24240/GE-24241"
+    ],
+    [
+      "Keeper motor and return spring",
+      "FE-2024/GE-24200_Blue/GE-24220_GE-24220 Tag16/GE-24240/GE-24243"
+    ],
+    [
+      "Keeper pinion output",
+      "FE-2024/GE-24200_Blue/GE-24205/GE-24205_hanging"
+    ],
+    [
+      "Keeper pinion output",
+      "FE-2024/GE-24200_Blue/GE-24220_GE-24220 Tag16/GE-24221/GE-24221-01"
+    ],
+    [
+      "Keeper pinion output",
+      "FE-2024/GE-24200_Blue/GE-24220_GE-24220 Tag16/GE-24222"
+    ],
+    [
+      "Keeper return pinion",
+      "FE-2024/GE-24200_Blue/GE-24205/GE-24205_hanging"
+    ],
+    [
+      "Keeper return pinion",
+      "FE-2024/GE-24200_Blue/GE-24220_GE-24220 Tag16/GE-24221/GE-24221-01"
+    ],
+    [
+      "Keeper return pinion",
+      "FE-2024/GE-24200_Blue/GE-24220_GE-24220 Tag16/GE-24222"
+    ]
+  ],
+  "directNegative": [
+    [
+      "Battery and terminal case",
+      "B2"
+    ],
+    [
+      "Battery service pin",
+      "B2"
+    ],
+    [
+      "Bay crossmember \u00b7 front",
+      "B2"
+    ],
+    [
+      "Bay crossmember \u00b7 rear",
+      "B2"
+    ],
+    [
+      "Blade retaining screw 1",
+      "B2"
+    ]
+  ],
+  "segments": []
+}

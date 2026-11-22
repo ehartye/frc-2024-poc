@@ -1,0 +1,26 @@
+{
+  "tag": "dev-center-high",
+  "n": 96,
+  "mu": ".25",
+  "floorHeightM": "0",
+  "original": "2483438bd284098ea24eb9d785772ba800feb1df9ec5c6bd2e52bab69825a07f",
+  "extended": "ce5996197bab1e2f37eb6f98c7bbe07ec61b5532b19f81a5cedff3e5dd7eb4bd",
+  "same": {
+    "sourceCarry": true,
+    "initialState": true,
+    "initialVelocity": true,
+    "rotorsAtFeed": true,
+    "release": true,
+    "exit": true,
+    "opening": true,
+    "beams": true,
+    "both": true,
+    "minBusV": true
+  },
+  "endS": 7.000000000002809,
+  "minGapM": 0.8456027519198532,
+  "afterShotA": 27.11745218656642,
+  "resetStart": 1.580249999999964,
+  "resetEnd": 6.380249999999964,
+  "passScreen": true
+}

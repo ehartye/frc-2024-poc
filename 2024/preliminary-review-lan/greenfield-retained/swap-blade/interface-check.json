@@ -1,0 +1,81 @@
+{
+  "stationYmm": [
+    -165,
+    -55,
+    55,
+    165
+  ],
+  "widthMm": 434,
+  "normalPickupFrame": [
+    0.748588180173163,
+    0.0,
+    0.66303524529623
+  ],
+  "headSetdownMm": 0.2,
+  "headToTipMm": 8,
+  "nominalInReceivingStockMm": 5.879376641463195,
+  "faceToolLengthMm": 75,
+  "withdrawalMm": 80,
+  "serviceCase": "supported-service final pose, empty",
+  "A": {
+    "toRollerMm": 2.335150964589979,
+    "toMountMm": 3.552713678800501e-15,
+    "overlapWithMountMm3": 0.0,
+    "screwIntersectionsMm3": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "retainedRemovalNegativeMm3": [
+      8.533103449677379,
+      8.53310344967738,
+      8.53310344967738,
+      8.533103449677379
+    ]
+  },
+  "B": {
+    "toRollerMm": 2.335150964589979,
+    "toMountMm": 3.552713678800501e-15,
+    "overlapWithMountMm3": 0.0,
+    "screwIntersectionsMm3": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "retainedRemovalNegativeMm3": [
+      8.533103449677379,
+      8.53310344967738,
+      8.53310344967738,
+      8.533103449677379
+    ]
+  },
+  "withdrawalHitsA": {},
+  "withdrawalHitsB": {},
+  "driverHits": {
+    "Blade retaining screw 1": {},
+    "Blade retaining screw 2": {},
+    "Blade retaining screw 3": {},
+    "Blade retaining screw 4": {}
+  },
+  "screwWithdrawalHits": {
+    "Blade retaining screw 1": {},
+    "Blade retaining screw 2": {},
+    "Blade retaining screw 3": {},
+    "Blade retaining screw 4": {}
+  },
+  "nominalAssemblyHits": {
+    "Replaceable pickup lip": {},
+    "Pickup lip crossbar": {},
+    "Blade retaining screw 1": {},
+    "Blade retaining screw 2": {},
+    "Blade retaining screw 3": {},
+    "Blade retaining screw 4": {}
+  },
+  "parent": "a8538852a62d749c6057d5e7fb004b7bcc0a6d1db7e5575e308993ea7830d45c",
+  "step": "83517673b62c1917534e6a09be04eace6189b97dc0986cb3ffc8fd6832e1bf63",
+  "bodies": 135,
+  "estimatedMassChangeKg": 0.0035547334464343817,
+  "contourBMinZmm": 5.9
+}

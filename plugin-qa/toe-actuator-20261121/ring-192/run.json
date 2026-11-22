@@ -1,0 +1,55 @@
+{
+  "baseRecipe": "bb8af67375d1e5d2d1bf1b408a4f54f39fcabf5a1c8ec01255559923ff8a6489",
+  "postFeedToolContacts": [],
+  "interlock": "measured final withdrawal",
+  "fixture": "11d290ba4ceb1cd32f3f7cf18255d3e949792e5d37400c6700ce9d0b01b0fb5a",
+  "parentFixture": "7aba1478396940cb319468d79ca666ceb031f5fbc867092e2b33740450d050fc",
+  "recipe": "148f1f08845b2f30cbd9d0c3246362777281a3ee269b1070f661b91c17632af4",
+  "rosterClock": "4169a41e272ecae780d990d8c9a5d530a10158c876d22c4441ef7ce0889354ac",
+  "floorStock": "3dd0b8ff2fbdcc24309410e3cfdbae69612c6577d28d77e950f375aeb4b98e69",
+  "robot": "1780 B1",
+  "control": "enabled",
+  "depart": 5.288250000001005,
+  "driveStoppedAt": 10.320712451677789,
+  "forces": {
+    "reach": 10.523344670012534,
+    "lift": 20.971132019673824,
+    "pitch": 0.8913266304613492,
+    "slide": 18.0,
+    "L": 5.9941784346594575,
+    "R": 5.994178434072453,
+    "back": 6.237581892381531
+  },
+  "minBusV": 8.883999815320106,
+  "strokeMm": [
+    0.26172630223489535,
+    5.711396113416663
+  ],
+  "fixedContacts": {},
+  "disable": {
+    "lastStepStartS": 14.999875000000001,
+    "disableS": 15.0,
+    "lastWheelDriveS": 11.888875,
+    "commandedEffortAfterDisable": 0.0,
+    "prescribedChassisVelocity": [
+      -0.0,
+      -0.0
+    ],
+    "coastingWheelRadS": [
+      388.9513735103693,
+      382.7297756947229,
+      391.200666082972,
+      386.6943076373888
+    ],
+    "jointRates": {
+      "reach": -4.711461817613776e-13,
+      "lift": 2.4916804430948072e-15,
+      "pitch": -1.2886615810013044e-13,
+      "slide": -1.9769592391316546e-12,
+      "L": 6.2068087672564765e-15,
+      "R": -6.2068087672564765e-15,
+      "back": 7.801999563185485e-15
+    }
+  },
+  "physics": "Prescribed chassis translation, finite force guides, nominal tread friction, field-only continuation at confirmed release. Rotary inertia can coast after disable."
+}

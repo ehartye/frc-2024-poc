@@ -1,0 +1,112 @@
+{
+  "attempt": "dev",
+  "n": 48,
+  "score": 6,
+  "passAttempt": true,
+  "elapsed": 116.680792927123,
+  "parts": [
+    {
+      "id": "middle",
+      "carry": "b01f978ddc0953418477790e833151232eecb09a9ac687e1a98dda29637ba9f3",
+      "held": true,
+      "seat": true,
+      "endCarryClock": 10.208523852377471,
+      "shot": "38aabd8278af24a5af65ad0bfb658de2dfcaafe01bfdbc136210c61fb81975c6",
+      "wholeOpening": {
+        "firstPossibleS": 1.0054999999999448,
+        "fullyThroughByS": 1.1009999999999343,
+        "minimumMarginM": 0.07100979891364062
+      },
+      "both": 3.449000000000319,
+      "bus": 8.344286851719724,
+      "credited": true,
+      "clock": 13.65752385237779
+    },
+    {
+      "id": "outer",
+      "carry": "d8dbec4158889313f8abe5a4d23f7901973d829593e32b34cac29e3ac8ee6277",
+      "held": true,
+      "seat": true,
+      "endCarryClock": 25.937205625934077,
+      "shot": "d8f11f9672ced9c8adcd14ebd8b2961f4099842466f45a07fac127ec903b63d8",
+      "wholeOpening": {
+        "firstPossibleS": 1.0064999999999447,
+        "fullyThroughByS": 1.0899999999999355,
+        "minimumMarginM": 0.10832339327126071
+      },
+      "both": 4.555500000000195,
+      "bus": 8.344287465475334,
+      "credited": true,
+      "clock": 30.49270562593427
+    },
+    {
+      "id": "inner",
+      "carry": "0dd61461984191c16be75168991fb5ef844b7422eb1424f55381fcd7b5300d72",
+      "held": true,
+      "seat": true,
+      "endCarryClock": 42.76880728046478,
+      "shot": "bbcaf74870d2d290d550f776d849358f07fa7ba0d10c8d09eff3a294e55bf796",
+      "wholeOpening": {
+        "firstPossibleS": 1.0044999999999449,
+        "fullyThroughByS": 1.0984999999999345,
+        "minimumMarginM": 0.05756583209356825
+      },
+      "both": 4.728000000000099,
+      "bus": 8.344286841979393,
+      "credited": true,
+      "clock": 47.49680728046488
+    },
+    {
+      "id": "center-high",
+      "carry": "96fa76048f2e708a8d278323877c8308a9aee92b349f467b12d0809513189895",
+      "held": true,
+      "seat": true,
+      "endCarryClock": 62.16795349841209,
+      "shot": "82eb3cc598ced2cf59bcaa3518e90f12b511d24a4498f23e51c3f1673d962cc4",
+      "wholeOpening": {
+        "firstPossibleS": 1.0084999999999444,
+        "fullyThroughByS": 1.1069999999999336,
+        "minimumMarginM": 0.06285540464875812
+      },
+      "both": 4.465000000000245,
+      "bus": 8.344286681770603,
+      "credited": true,
+      "clock": 66.63295349841233
+    },
+    {
+      "id": "center-mid",
+      "carry": "dc819cec15a61fb34f4118c192aeec232843604be7c69c49739d0937794f405c",
+      "held": true,
+      "seat": true,
+      "endCarryClock": 86.40224170928389,
+      "shot": "6884990c0e3e2c4d106215fba5315787bb3cd8efcf8f5762df47be4be0ab7e48",
+      "wholeOpening": {
+        "firstPossibleS": 1.0064999999999447,
+        "fullyThroughByS": 1.102999999999934,
+        "minimumMarginM": 0.05653241591030786
+      },
+      "both": 4.648500000000143,
+      "bus": 8.344287529173414,
+      "credited": true,
+      "clock": 91.05074170928403
+    },
+    {
+      "id": "center-low",
+      "carry": "0c17e057b53b544636df8e46aa7161f0051058f214f1ffed428004643b319eb8",
+      "held": true,
+      "seat": true,
+      "endCarryClock": 113.06179292712262,
+      "shot": "7cd5d3ef47dd1291b427f4ad33a6643b7886d59ae498b82f6b3254437b072971",
+      "wholeOpening": {
+        "firstPossibleS": 1.0069999999999446,
+        "fullyThroughByS": 1.0894999999999355,
+        "minimumMarginM": 0.0883040271454006
+      },
+      "both": 3.619000000000376,
+      "bus": 8.344287585834383,
+      "credited": true,
+      "clock": 116.680792927123
+    }
+  ],
+  "config": "db9eda32dcc43e6439735fe9671c37b6cfe590840fd7937935977efb1b01d19d"
+}

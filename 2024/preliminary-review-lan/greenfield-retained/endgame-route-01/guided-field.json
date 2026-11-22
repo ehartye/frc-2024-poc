@@ -1,0 +1,20 @@
+{
+  "input": "4b44f149634e99602ab886ae6e2a5df65a38d35d8b9614133119d30f05331e50",
+  "robot": "093ca2ff6f5d2d53aa46c66651baa65f2d93bc59611a5e6e183006b9c7349415",
+  "stroke": 100.0,
+  "travel": [
+    0.2522986954977359,
+    0.0,
+    0.9676494035807292
+  ],
+  "bodies": 180,
+  "fieldPeerBounds": 3894,
+  "candidates": {
+    "working chain": [
+      "Chain hook \u00b7 left",
+      "Chain hook \u00b7 right",
+      "Keeper drive mast"
+    ]
+  },
+  "scope": "Full fixed-height-band field and archived peers, conservative translated swept bounds, constant pitch only. Working chain uses its initial slices. A candidate needs geometry or dynamic closure."
+}

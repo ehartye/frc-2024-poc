@@ -1,0 +1,306 @@
+{
+  "dev": [
+    {
+      "name": "dev",
+      "n": 48,
+      "parts": [
+        {
+          "id": "middle",
+          "depart": 0,
+          "shotStart": 11.409370249453689,
+          "carry": "2a9c08b1b2b5406e73e383dfc8552936c42db504e66adeae0825e476aa1c497f",
+          "gateTime": 2.82,
+          "held": true,
+          "scored": true,
+          "shot": "2fa408441442d9626cf7166cf137a7557fa35f1909e09a2339b756f3554f22c0",
+          "both": 4.212500000000385,
+          "opening": {
+            "firstPossibleS": 0.9894999999999464,
+            "fullyThroughByS": 1.0784999999999367,
+            "minimumMarginM": 0.017664895230835857
+          },
+          "minBus": 8.344287165171105,
+          "serialEnd": 15.621870249454073,
+          "counterClock": 15.621870249454073,
+          "fieldClearanceDuringResetM": 0.732106046402832,
+          "afterFeedResidualBatteryA": 27.11745218656642,
+          "resetParallelEligible": true,
+          "resetEnd": 17.78887024945368
+        },
+        {
+          "id": "outer",
+          "depart": 17.78887024945368,
+          "shotStart": 27.920612600900743,
+          "carry": "a862cd09e76a240ad910125ef88c40de2d5353b02297f6400b1c357e1ae9f62a",
+          "gateTime": 2.82,
+          "held": true,
+          "scored": true,
+          "shot": "de83df8ca4a9e28b2d26611464da33fb867c337072a3eff58624472883e0cc66",
+          "both": 4.4100000000002755,
+          "opening": {
+            "firstPossibleS": 0.9869999999999467,
+            "fullyThroughByS": 1.0744999999999372,
+            "minimumMarginM": 0.019231125836727123
+          },
+          "minBus": 8.344290732952736,
+          "serialEnd": 34.963612600901406,
+          "counterClock": 32.33061260090102,
+          "fieldClearanceDuringResetM": 0.8567749827343536,
+          "afterFeedResidualBatteryA": 27.11745218656642,
+          "resetParallelEligible": false,
+          "resetEnd": 34.30011260090073
+        },
+        {
+          "id": "inner",
+          "depart": 37.13061260090102,
+          "shotStart": 47.61328109520734,
+          "carry": "e7e107fadb5b3a980893bed1df19b1616ff31c749ef1f2b8515800b73b2e8d09",
+          "gateTime": 2.82,
+          "held": true,
+          "scored": true,
+          "shot": "1c2470fee52143f0683f2c4150bc24369a9f65bdc5cdc123965c5fb7bb00cf88",
+          "both": 4.064000000000467,
+          "opening": {
+            "firstPossibleS": 0.9869999999999467,
+            "fullyThroughByS": 1.0689999999999378,
+            "minimumMarginM": 0.022609086112021615
+          },
+          "minBus": 8.34429079932107,
+          "serialEnd": 54.3102810952082,
+          "counterClock": 51.67728109520781,
+          "fieldClearanceDuringResetM": 0.8448577700363402,
+          "afterFeedResidualBatteryA": 27.11745218656642,
+          "resetParallelEligible": true,
+          "resetEnd": 53.99278109520733
+        },
+        {
+          "id": "center-high",
+          "depart": 53.99278109520733,
+          "shotStart": 66.18246578415673,
+          "carry": "c2ca57431274638baa92e0d4a11a3afdc5f16194653d35fa664ab054db5dcb06",
+          "gateTime": 2.82,
+          "held": true,
+          "scored": true,
+          "shot": "b8529abd64d745063b6755086d43ccead704f382e6e22a11c0d6acad7bd5ebe4",
+          "both": 4.457500000000249,
+          "opening": {
+            "firstPossibleS": 0.9879999999999466,
+            "fullyThroughByS": 1.0684999999999378,
+            "minimumMarginM": 0.021313122471961505
+          },
+          "minBus": 8.344287541917335,
+          "serialEnd": 75.75746578415784,
+          "counterClock": 70.63996578415698,
+          "fieldClearanceDuringResetM": 0.8511854628184128,
+          "afterFeedResidualBatteryA": 27.11745218656642,
+          "resetParallelEligible": true,
+          "resetEnd": 72.56196578415673
+        },
+        {
+          "id": "center-mid",
+          "depart": 72.56196578415673,
+          "shotStart": 88.99874839101913,
+          "carry": "03a7fd88fb6f3db6a1927b3ccef83daf83fa85301fb39465ace0e02983f5a566",
+          "gateTime": 2.82,
+          "held": true,
+          "scored": true,
+          "shot": "2e1e0be6ce15f1290629b04ccac0f866601b5222575f024e43b0aec60796752b",
+          "both": 5.131499999999876,
+          "opening": {
+            "firstPossibleS": 0.9879999999999466,
+            "fullyThroughByS": 1.066999999999938,
+            "minimumMarginM": 0.020162133500899623
+          },
+          "minBus": 8.344337760753099,
+          "serialEnd": 102.12574839102012,
+          "counterClock": 94.13024839101901,
+          "fieldClearanceDuringResetM": 0.8721707689278309,
+          "afterFeedResidualBatteryA": 27.11745218656642,
+          "resetParallelEligible": true,
+          "resetEnd": 95.37824839101913
+        },
+        {
+          "id": "center-low",
+          "depart": 95.37824839101913,
+          "shotStart": 114.06009769423336,
+          "carry": "69c9791db92d45b18520543927df61cef513b91a27548830817385de4d8a596b",
+          "gateTime": 2.82,
+          "held": true,
+          "scored": true,
+          "shot": "e1c31b88c8d530d48a3a3353f780812fe9767ebcefa7911daa97e10866143f13",
+          "both": 4.399500000000281,
+          "opening": {
+            "firstPossibleS": 0.9979999999999455,
+            "fullyThroughByS": 1.0924999999999352,
+            "minimumMarginM": 0.014808916566638058
+          },
+          "minBus": 8.344288511553463,
+          "serialEnd": 130.00709769423463,
+          "counterClock": 118.45959769423365,
+          "fieldClearanceDuringResetM": 0.7536223483935305,
+          "afterFeedResidualBatteryA": 27.11745218656642,
+          "resetParallelEligible": true,
+          "resetEnd": 120.43959769423336
+        }
+      ],
+      "count": 6,
+      "passMission": true,
+      "terminal": true,
+      "elapsedS": 118.45959769423365,
+      "serialElapsedS": 130.00709769423463,
+      "freeze": "7d7d11d9e26bc9660edfd053556c2c81feff2801b888a98d1fe1350d404b36af"
+    },
+    {
+      "name": "dev",
+      "n": 96,
+      "parts": [
+        {
+          "id": "middle",
+          "depart": 0,
+          "shotStart": 11.40912024945369,
+          "carry": "8046c1fad9a8f715f240b8ac1620a3b7da92d4e82a468c91c9ca8203798cce20",
+          "gateTime": 2.82,
+          "held": true,
+          "scored": true,
+          "shot": "0cbf75f2f440347b81eae5e2eada2bafe2cfa205aae6abcf54417a2a888e6eca",
+          "both": 4.418999999999655,
+          "opening": {
+            "firstPossibleS": 0.9897499999999188,
+            "fullyThroughByS": 1.0679999999999403,
+            "minimumMarginM": 0.023604587003012416
+          },
+          "minBus": 8.349210218376193,
+          "serialEnd": 15.828120249453345,
+          "counterClock": 15.828120249453345,
+          "fieldClearanceDuringResetM": 0.8526326204675887,
+          "afterFeedResidualBatteryA": 27.11745218656642,
+          "resetParallelEligible": false,
+          "resetEnd": 17.789370249453654
+        },
+        {
+          "id": "outer",
+          "depart": 20.628120249453346,
+          "shotStart": 30.75936260090041,
+          "carry": "691c121b1e6f83f9f419978e55a38eaa75a998dc7a5590202735344f4bcfe116",
+          "gateTime": 2.82,
+          "held": true,
+          "scored": true,
+          "shot": "c4d2eca50bc7de5238ea78c66403c60f114b7591ae398ffd299b0d4a1556910a",
+          "both": 4.232249999999427,
+          "opening": {
+            "firstPossibleS": 0.9894999999999188,
+            "fullyThroughByS": 1.0734999999999422,
+            "minimumMarginM": 0.019939438038186288
+          },
+          "minBus": 8.349559134861984,
+          "serialEnd": 34.991612600899835,
+          "counterClock": 34.991612600899835,
+          "fieldClearanceDuringResetM": 0.8188630151881464,
+          "afterFeedResidualBatteryA": 27.11745218656642,
+          "resetParallelEligible": false,
+          "resetEnd": 37.13961260090037
+        },
+        {
+          "id": "inner",
+          "depart": 39.79161260089983,
+          "shotStart": 50.273781095206154,
+          "carry": "7a0748d6888dac80ccbb7c1ef1356ea04948a110997050d377f3ba9c99406da1",
+          "gateTime": 2.82,
+          "held": true,
+          "scored": true,
+          "shot": "631311ff1dd894cce5b4309ebbd1016d3efab90622ca3530a96db62dcc36571f",
+          "both": 4.2197499999994115,
+          "opening": {
+            "firstPossibleS": 0.9899999999999187,
+            "fullyThroughByS": 1.06724999999994,
+            "minimumMarginM": 0.018411301049404062
+          },
+          "minBus": 8.349554063254653,
+          "serialEnd": 54.49353109520557,
+          "counterClock": 54.49353109520557,
+          "fieldClearanceDuringResetM": 0.8170494907090506,
+          "afterFeedResidualBatteryA": 27.11745218656642,
+          "resetParallelEligible": false,
+          "resetEnd": 56.654031095206115
+        },
+        {
+          "id": "center-high",
+          "depart": 59.293531095205566,
+          "shotStart": 71.48271578415498,
+          "carry": "133e9e97df8690f5fe6347259926ec8110d64498585ea9ba69dfe1fcc9b3c195",
+          "gateTime": 2.82,
+          "held": true,
+          "scored": true,
+          "shot": "2483438bd284098ea24eb9d785772ba800feb1df9ec5c6bd2e52bab69825a07f",
+          "both": 4.678249999999972,
+          "opening": {
+            "firstPossibleS": 0.9909999999999186,
+            "fullyThroughByS": 1.064249999999939,
+            "minimumMarginM": 0.020154385648194953
+          },
+          "minBus": 8.34922681155228,
+          "serialEnd": 76.16096578415495,
+          "counterClock": 76.16096578415495,
+          "fieldClearanceDuringResetM": 0.8456027519198532,
+          "afterFeedResidualBatteryA": 27.11745218656642,
+          "resetParallelEligible": false,
+          "resetEnd": 77.86296578415494
+        },
+        {
+          "id": "center-mid",
+          "depart": 80.96096578415495,
+          "shotStart": 97.39724839101736,
+          "carry": "feeb1da03517b7e619ba5ae72aec9e43de5ef0362c0947885fac3e29af9d05bd",
+          "gateTime": 2.82,
+          "held": true,
+          "scored": true,
+          "shot": "15d87db9aedebd5b19581165b8658dcfdd737554a5bcc0d3f7ee7983c97f3437",
+          "both": 4.731250000000037,
+          "opening": {
+            "firstPossibleS": 0.9899999999999187,
+            "fullyThroughByS": 1.0687499999999406,
+            "minimumMarginM": 0.020945702058354252
+          },
+          "minBus": 8.349524848582757,
+          "serialEnd": 102.12849839101739,
+          "counterClock": 102.12849839101739,
+          "fieldClearanceDuringResetM": 0.8074753627691587,
+          "afterFeedResidualBatteryA": 27.11745218656642,
+          "resetParallelEligible": false,
+          "resetEnd": 103.77749839101732
+        },
+        {
+          "id": "center-low",
+          "depart": 106.92849839101738,
+          "shotStart": 125.61009769423161,
+          "carry": "ed6207dc7618b4afb4e0a1d8f2a272e0012c55e922bcd824b73c15a72fed1e6c",
+          "gateTime": 2.82,
+          "held": true,
+          "scored": true,
+          "shot": "c55c0f43095adbf3928374e5494734243689c1848dda5f76332d69f598109476",
+          "both": 4.232499999999427,
+          "opening": {
+            "firstPossibleS": 0.9894999999999188,
+            "fullyThroughByS": 1.0684999999999405,
+            "minimumMarginM": 0.02518333491752584
+          },
+          "minBus": 8.349209304481008,
+          "serialEnd": 129.84259769423105,
+          "counterClock": 129.84259769423105,
+          "fieldClearanceDuringResetM": 0.8388485507257548,
+          "afterFeedResidualBatteryA": 27.11745218656642,
+          "resetParallelEligible": false,
+          "resetEnd": 131.9903476942316
+        }
+      ],
+      "count": 6,
+      "passMission": false,
+      "terminal": true,
+      "elapsedS": 129.84259769423105,
+      "serialElapsedS": 129.84259769423105,
+      "freeze": "7d7d11d9e26bc9660edfd053556c2c81feff2801b888a98d1fe1350d404b36af"
+    }
+  ],
+  "roster": [],
+  "unrun": 20
+}

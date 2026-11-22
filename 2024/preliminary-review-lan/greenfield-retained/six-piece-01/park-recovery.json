@@ -1,0 +1,199 @@
+{
+  "stage": "TELEOP 111..135 s",
+  "projectedStartIn": [
+    503.3752582119401,
+    57.77612564077896
+  ],
+  "goalIn": [
+    182,
+    144
+  ],
+  "waypointsIn": [
+    [
+      503.3752582119401,
+      57.77612564077896
+    ],
+    [
+      503.3752582119401,
+      97.77612564077896
+    ],
+    [
+      455.3752582119401,
+      145.77612564077896
+    ],
+    [
+      182.0,
+      144.0
+    ]
+  ],
+  "timesS": [
+    1.7037773161000656,
+    2.2939838365139216,
+    6.64370794804422
+  ],
+  "routeS": 10.641469100658206,
+  "remainingS": 13.358530899341794,
+  "fieldClear": true,
+  "straightControl": [
+    "B2",
+    "Blue stage leg 1",
+    "Red stage leg 2",
+    "registered field",
+    "registered field",
+    "registered field",
+    "registered field",
+    "registered field",
+    "registered field",
+    "registered field",
+    "registered field",
+    "registered field",
+    "registered field",
+    "registered field",
+    "registered field",
+    "registered field",
+    "registered field",
+    "registered field",
+    "registered field",
+    "registered field",
+    "registered field",
+    "registered field",
+    "registered field",
+    "registered field",
+    "registered field",
+    "registered field",
+    "registered field"
+  ],
+  "maximumRobotHeightMm": 691.0181134594225,
+  "lowestUnloadedChainEdgeMm": 704.2149999999999,
+  "lowerBoundMm": [
+    -422.0,
+    -412.0,
+    0.0
+  ],
+  "upperBoundMm": [
+    639.9999999999999,
+    412.0,
+    691.0181134594225
+  ],
+  "bumperInsideUprightTriangleIn": [
+    182.0,
+    158.56692913385828
+  ],
+  "peerFrames": 481,
+  "otherActors": [
+    "B2",
+    "B3",
+    "R1",
+    "R2",
+    "R3"
+  ],
+  "speedCapMps": 1.2,
+  "accelMps2": 1.4,
+  "viewPositionsMm": [
+    [
+      12785.731558583278,
+      1467.5135912757855
+    ],
+    [
+      12785.731558583278,
+      2136.801833815877
+    ],
+    [
+      12742.298574659162,
+      2526.9465751999005
+    ],
+    [
+      12049.50505496591,
+      3219.7400948931536
+    ],
+    [
+      11566.528049950995,
+      3702.713568480117
+    ],
+    [
+      10878.145184701954,
+      3698.2411284149894
+    ],
+    [
+      9678.170510693462,
+      3690.4448640393025
+    ],
+    [
+      8478.195836684972,
+      3682.648599663616
+    ],
+    [
+      7278.221162676481,
+      3674.8523352879297
+    ],
+    [
+      6078.246488667991,
+      3667.056070912243
+    ],
+    [
+      4910.8317459332175,
+      3659.471349194716
+    ],
+    [
+      4622.8,
+      3657.6
+    ],
+    [
+      4622.8,
+      3657.6
+    ],
+    [
+      4622.8,
+      3657.6
+    ],
+    [
+      4622.8,
+      3657.6
+    ],
+    [
+      4622.8,
+      3657.6
+    ],
+    [
+      4622.8,
+      3657.6
+    ],
+    [
+      4622.8,
+      3657.6
+    ],
+    [
+      4622.8,
+      3657.6
+    ],
+    [
+      4622.8,
+      3657.6
+    ],
+    [
+      4622.8,
+      3657.6
+    ],
+    [
+      4622.8,
+      3657.6
+    ],
+    [
+      4622.8,
+      3657.6
+    ],
+    [
+      4622.8,
+      3657.6
+    ],
+    [
+      4622.8,
+      3657.6
+    ]
+  ],
+  "scope": "Continuous travel of 153 fixed-heading stock bounds at selected posture, registered field leaf boxes, and the conservative five-peer sweeps on the terminal 24 s. Verify transition into posture at the decision point.",
+  "parent": "fd49a9cdde14aa4d5acd1aac602580e456e19776512099517a9e51cba992510f",
+  "postureDeg": -18.0,
+  "placedBodies": 153,
+  "configRectangles": 2682
+}

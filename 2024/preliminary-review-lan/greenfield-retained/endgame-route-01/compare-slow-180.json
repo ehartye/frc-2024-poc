@@ -1,0 +1,12 @@
+{
+  "input": "3f90c842021b6180c50fca6a3baa802e4005a3de2bcb431de7157a96f9d07a9d",
+  "direction": 180,
+  "nominalCatchDeg": "slow",
+  "count": 0,
+  "testedPoses": 69,
+  "possible": 69,
+  "stageOnly": true,
+  "close": [],
+  "positives": [],
+  "scope": "Stops on first occupied intersection. A clear result covers five named high-risk source leaves sampled at 0.2 s plus peak observations. Other load/field checks are independent."
+}

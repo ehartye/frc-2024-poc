@@ -1,0 +1,71 @@
+{
+  "assembly": "093ca2ff6f5d2d53aa46c66651baa65f2d93bc59611a5e6e183006b9c7349415",
+  "radiusMm": 13.335,
+  "scope": "Minimum over saved chain and chassis poses. The bridge check includes yoke material above local Z272 mm. No intersample or deformation allowance.",
+  "runs": {
+    "front48": {
+      "checks": 1991,
+      "minimum": {
+        "Common keeper yoke and sliding rack": [
+          22.249631903223083,
+          3.0499999999996694,
+          21
+        ],
+        "Keeper drive mast": [
+          13.591160035423691,
+          9.99999999999937,
+          24
+        ],
+        "Keeper pinion output": [
+          68.48377775114355,
+          2.599999999999919,
+          24
+        ],
+        "Keeper return pinion": [
+          63.4837777511436,
+          2.599999999999919,
+          24
+        ],
+        "Keeper motor and return spring": [
+          57.561095319951185,
+          2.599999999999919,
+          24
+        ]
+      },
+      "source": "d341fb98c0802b6135e53684bcba0fb258ec9250d562d220f9da18c87cbfea06",
+      "samples": 521
+    },
+    "rear24": {
+      "checks": 1278,
+      "minimum": {
+        "Common keeper yoke and sliding rack": [
+          23.199526105087934,
+          3.400000000000303,
+          11
+        ],
+        "Keeper drive mast": [
+          13.957772568251848,
+          0.7999999999999673,
+          12
+        ],
+        "Keeper pinion output": [
+          69.7354601024746,
+          3.400000000000303,
+          12
+        ],
+        "Keeper return pinion": [
+          64.73546010247463,
+          3.400000000000303,
+          12
+        ],
+        "Keeper motor and return spring": [
+          58.77336148033974,
+          3.400000000000303,
+          12
+        ]
+      },
+      "source": "0c202fbe18b97c749dd36ca7a75aa47a4706d0c00f1a4d19df11f9f4b37c8929",
+      "samples": 521
+    }
+  }
+}

@@ -1,0 +1,16 @@
+
+=========================== clip-pdf toolchain ===========================
+DEGRADED: pdftoppm (poppler) is not installed -- OCR cannot rasterize pages.
+          Scanned/image PDFs cannot be read at all, and a broken symbol font
+          cannot be recovered. Install poppler:
+            winget install oschwartz10612.Poppler
+DEGRADED: tesseract is not installed -- the OCR fallback is unavailable.
+          Scanned/image PDFs cannot be read at all, and a PDF whose math font
+          decodes to garbage cannot be escalated to OCR. Install it:
+            winget install UB-Mannheim.TesseractOCR
+            https://github.com/UB-Mannheim/tesseract/wiki
+  (run `clip-pdf.mjs --doctor` to re-check)
+=========================================================================
+
+WARNING: no usable title in the PDF; the clipping is titled "helix-screw-catalog" from the file name. Pass --title=<text> to name it
+clipped: raw/clippings/helix-precision-lead-screw-assemblies-october-2024.md (quality=medium, text)

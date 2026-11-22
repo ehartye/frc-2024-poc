@@ -1,0 +1,28 @@
+{
+  "input": "e6a8b2f095bd0f09ac5aa95fcc0031e99f20cb51d6bb627488017c7022d9ddf4",
+  "direction": 0,
+  "nominalCatchDeg": "stop142",
+  "count": 1,
+  "testedPoses": 1,
+  "possible": 74,
+  "stageOnly": true,
+  "close": [
+    [
+      4.0,
+      "Blue bumper set",
+      "FE-2024/GE-24200_Blue/GE-24220_GE-24220 Tag14/GE-24221/GE-24221-01",
+      0.0,
+      192329.70227546062
+    ]
+  ],
+  "positives": [
+    [
+      4.0,
+      "Blue bumper set",
+      "FE-2024/GE-24200_Blue/GE-24220_GE-24220 Tag14/GE-24221/GE-24221-01",
+      0.0,
+      192329.70227546062
+    ]
+  ],
+  "scope": "Stops on first occupied intersection. A clear result covers five named high-risk source leaves sampled at 0.2 s plus peak observations. Other load/field checks are independent."
+}

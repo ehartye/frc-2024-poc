@@ -1,0 +1,48 @@
+{
+  "name": "R06",
+  "n": 96,
+  "parts": [
+    {
+      "id": "middle",
+      "depart": 0,
+      "shotStart": 11.391414301878925,
+      "carry": "631f6f28ac1e96ba4d6dec6d194e7f2378b558925dde826ff197079c9c0ae263",
+      "initial": "da2dbabd5627ad4ce087213182993c4b2f3f27d26938b6bfe280c699bd68e70f",
+      "emptyMotion": "b11e3316af3b76efac7a89d9096efddd99a369fac5769680a51e90ab30b9e150",
+      "priorShot": null,
+      "stopOvertravelDeg": 0.1265832555896195,
+      "gateTime": 2.82,
+      "held": true,
+      "scored": false,
+      "shot": "282709aa88c739869c5bb9bcf77efd88cc513c0964a713402c4a1750d25c262c",
+      "both": null,
+      "opening": {
+        "firstPossibleS": 0.9899999999999187,
+        "fullyThroughByS": 1.069999999999941,
+        "minimumMarginM": 0.019690612783405642
+      },
+      "minBus": 8.349213779014494,
+      "serialEnd": 18.391414301881735,
+      "counterClock": 18.391414301881735,
+      "fieldClearanceDuringResetM": 0.8547512006719542,
+      "afterFeedResidualBatteryA": 31.252063503486998,
+      "resetPower": {
+        "actualResidualPeakA": 31.252063503486998,
+        "minBusOnTraceV": 10.063576311393046,
+        "minTerminalReserveOnTraceV": 2.3292313355012295,
+        "upperA": 35,
+        "minBusUnderFullBoundV": 9.822892028226702,
+        "minTerminalReserveUnderFullBoundV": 2.0885760081421365,
+        "passPower": true
+      },
+      "resetParallelEligible": false,
+      "resetEnd": 17.77166430187889
+    }
+  ],
+  "count": 0,
+  "passMission": false,
+  "terminal": true,
+  "elapsedS": 18.391414301881735,
+  "serialElapsedS": 18.391414301881735,
+  "freeze": "ff007748cc720f076311ec2d35f20987a3eb954b77af3bd90371f62a4c3a05f9"
+}

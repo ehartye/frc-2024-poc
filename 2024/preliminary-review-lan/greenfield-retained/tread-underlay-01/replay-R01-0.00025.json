@@ -1,0 +1,29 @@
+{
+  "key": "R01",
+  "dt": 0.00025,
+  "source": "a9e6fa218af3231386465af3fd236b0a65a3bed99b0012ddf766bc5c7be65c59",
+  "release": 0.7949999999999402,
+  "precontactChecks": 32,
+  "maxPrecontactErrorMm": 0.0,
+  "opening": {
+    "firstPossibleS": 1.0079999999999203,
+    "fullyThroughByS": 1.0904999999999478,
+    "minimumMarginM": 0.10630570375760204
+  },
+  "both": null,
+  "originalBoth": null,
+  "firstContact": 1.180499999999978,
+  "bestPairedMargin": null,
+  "last": {
+    "t": 7.000000000002809,
+    "q": [
+      -0.22646964599715377,
+      5.496069032622106,
+      1.5621294032019932,
+      -0.20765940623989593,
+      -0.9572974059258028,
+      -0.18975039524509643,
+      0.06673855791183791
+    ]
+  }
+}

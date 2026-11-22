@@ -1,0 +1,162 @@
+{
+  "cartridge": "9998f82ac45f45c2f3072172a10ab39edb75b682073949ecb0f20b246c641d29",
+  "drive": "587441e076a41b1c27afd4a50c538c5ad1413f7de64db7ee05620495a1642e14",
+  "parts": {
+    "Stationary rail receiver": {
+      "faces": 1644,
+      "closed": true,
+      "volume": 12463.552067030347,
+      "error": 0.41664831864545704
+    },
+    "Removable cap and ears": {
+      "faces": 1744,
+      "closed": true,
+      "volume": 5617.946396264615,
+      "error": 0.5128061156583499
+    },
+    "Spindle": {
+      "faces": 332,
+      "closed": true,
+      "volume": 643.3981754551905,
+      "error": 0.5998319424573992
+    },
+    "M3 on cap 0": {
+      "faces": 668,
+      "closed": true,
+      "volume": 117.22067588706894,
+      "error": 0.10927385887136154
+    },
+    "M3 on cap 1": {
+      "faces": 668,
+      "closed": true,
+      "volume": 117.22067588706894,
+      "error": 0.10927385887136154
+    },
+    "M4 cap retention 0": {
+      "faces": 668,
+      "closed": true,
+      "volume": 267.0353755551322,
+      "error": 0.2489207697935285
+    },
+    "M4 cap retention 1": {
+      "faces": 668,
+      "closed": true,
+      "volume": 267.0353755551319,
+      "error": 0.24892076979369904
+    },
+    "M4 receiver attachment 0": {
+      "faces": 668,
+      "closed": true,
+      "volume": 267.0353755551322,
+      "error": 0.248920769794438
+    },
+    "M4 receiver attachment 1": {
+      "faces": 668,
+      "closed": true,
+      "volume": 267.0353755551323,
+      "error": 0.2489207697945517
+    },
+    "Slide drive motor": {
+      "faces": 2514,
+      "closed": true,
+      "volume": 43843.108372082046,
+      "error": 37.49479527572839
+    },
+    "Slide bearing mount 220": {
+      "faces": 1024,
+      "closed": true,
+      "volume": 7397.754060612159,
+      "error": 0.8597473178051587
+    },
+    "Double pinch hub": {
+      "faces": 3248,
+      "closed": true,
+      "volume": 3710.0970979506365,
+      "error": 2.925182518872589
+    },
+    "M2.5 pinch spindle": {
+      "faces": 668,
+      "closed": true,
+      "volume": 79.03069019186788,
+      "error": 0.07367358964786774
+    },
+    "M2.5 pinch motor": {
+      "faces": 668,
+      "closed": true,
+      "volume": 79.03069019186789,
+      "error": 0.07367358964785353
+    },
+    "lead 0": {
+      "faces": 11528,
+      "closed": true,
+      "volume": 603.193936855565,
+      "error": 3.762919637201094
+    },
+    "lead 1": {
+      "faces": 11910,
+      "closed": true,
+      "volume": 509.2533935713933,
+      "error": 3.3313132625529533
+    },
+    "lead 2": {
+      "faces": 12300,
+      "closed": true,
+      "volume": 508.9057623736637,
+      "error": 3.281607213290272
+    },
+    "lead 3": {
+      "faces": 12658,
+      "closed": true,
+      "volume": 520.0951680263657,
+      "error": 3.137957701027517
+    },
+    "plug 0": {
+      "faces": 332,
+      "closed": true,
+      "volume": 3386.636880570006,
+      "error": 3.157141343332569
+    },
+    "plug 1": {
+      "faces": 332,
+      "closed": true,
+      "volume": 1399.5795271743439,
+      "error": 1.3047552763132444
+    },
+    "plug 2": {
+      "faces": 332,
+      "closed": true,
+      "volume": 1399.5795271743439,
+      "error": 1.3047528623283142
+    },
+    "plug 3": {
+      "faces": 332,
+      "closed": true,
+      "volume": 1399.5795271743439,
+      "error": 1.3047320302734988
+    },
+    "socket 0": {
+      "faces": 332,
+      "closed": true,
+      "volume": 3232.698840543359,
+      "error": 3.0136395124868613
+    },
+    "socket 1": {
+      "faces": 332,
+      "closed": true,
+      "volume": 1335.962275939289,
+      "error": 1.2454394345281798
+    },
+    "socket 2": {
+      "faces": 332,
+      "closed": true,
+      "volume": 1335.962275939289,
+      "error": 1.2454435380477662
+    },
+    "socket 3": {
+      "faces": 332,
+      "closed": true,
+      "volume": 1335.9622759388433,
+      "error": 1.245434434500794
+    }
+  }
+}

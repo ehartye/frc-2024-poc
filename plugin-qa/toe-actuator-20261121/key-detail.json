@@ -1,0 +1,52 @@
+{
+  "turned and keyed shaft": {
+    "triangles": 2316,
+    "bounds": [
+      -293.8430199712004,
+      124.0,
+      619.5189838490002,
+      -281.15301997119974,
+      204.0000001,
+      633.2589838490002
+    ],
+    "identity": {
+      "definition": "turned and keyed shaft",
+      "instance": "1.10.1.5.1",
+      "occurrencePath": [
+        "Untitled",
+        "Supported uphill wheel station:1",
+        "Supported uphill wheel station",
+        "Left scoring wheel rotor:1",
+        "Left scoring wheel rotor",
+        "turned and keyed shaft:1",
+        "turned and keyed shaft"
+      ]
+    }
+  },
+  "Output shaft supplier key": {
+    "triangles": 364,
+    "bounds": [
+      -288.49801997120005,
+      194.25,
+      629.1889838490001,
+      -286.4980199712,
+      202.75,
+      631.1889838490001
+    ],
+    "identity": {
+      "definition": "Output shaft supplier key",
+      "instance": "1.10.1.6.1",
+      "occurrencePath": [
+        "Untitled",
+        "Supported uphill wheel station:1",
+        "Supported uphill wheel station",
+        "Left scoring wheel rotor:1",
+        "Left scoring wheel rotor",
+        "Output shaft supplier key:1",
+        "Output shaft supplier key"
+      ]
+    }
+  },
+  "imageSha256": "e8cae6d9da259b25223fe4bff7d08ee926faf9f56ab09424db58def1fadc41fb",
+  "stepSha256": "869021c24d80f57dea7320450657ca91b871ccc44b850c0354ac4d94e977b918"
+}

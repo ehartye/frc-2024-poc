@@ -1,0 +1,314 @@
+[
+  {
+    "case": "split-96",
+    "seconds": 115.41588429418178,
+    "scored": 6,
+    "total": 6,
+    "trace": [
+      {
+        "id": "middle",
+        "floorStartS": 1.8438702494536878,
+        "scoreRequestS": 10.165286645718979,
+        "endS": 13.994286645718216,
+        "seat": true,
+        "held": true,
+        "opening": {
+          "firstPossibleS": 1.0044999999999191,
+          "fullyThroughByS": 1.0767499999999433,
+          "minimumMarginM": 0.09295960988845527
+        },
+        "counterS": 13.994286645718216,
+        "release": 0.8117499999999384,
+        "busV": 8.349218801491093,
+        "files": {
+          "dev-middle-96.json": "395ed9c4083d303bc804d6dcbcf05f85556ce2bd1f432be99657be6db29da39f",
+          "split-ready-dev-middle-96-8.05.json": "55947f36f59fd587b782b90058a4eaac0096a86aa0c82e5df8fe2ef7dfcc3795"
+        }
+      },
+      {
+        "id": "outer",
+        "floorStartS": 19.27594578665014,
+        "scoreRequestS": 26.27594578665014,
+        "endS": 30.440195786649483,
+        "seat": true,
+        "held": true,
+        "opening": {
+          "firstPossibleS": 1.004249999999919,
+          "fullyThroughByS": 1.075999999999943,
+          "minimumMarginM": 0.08598290498835266
+        },
+        "counterS": 30.440195786649483,
+        "release": 0.8117499999999384,
+        "busV": 8.349207924400972,
+        "files": {
+          "dev-outer-96.json": "e750daf4ee171374c7ea887832a84810f401278052b671e8b04b1933f76ba2f3",
+          "split-ready-dev-outer-96-8.05.json": "9ace145d14b9ad53b5b119193f404fb47efe98aea1203874565df12957893760"
+        }
+      },
+      {
+        "id": "inner",
+        "floorStartS": 35.718286126277484,
+        "scoreRequestS": 42.718286126277484,
+        "endS": 46.74028612627665,
+        "seat": true,
+        "held": true,
+        "opening": {
+          "firstPossibleS": 1.0044999999999191,
+          "fullyThroughByS": 1.0767499999999433,
+          "minimumMarginM": 0.08981433667072819
+        },
+        "counterS": 46.74028612627665,
+        "release": 0.8117499999999384,
+        "busV": 8.349207724698362,
+        "files": {
+          "dev-inner-96.json": "dc4940436e9548d3618ac8a96601c8e66e91691bfe786af17a29936f8411ad05",
+          "split-ready-dev-inner-96-8.05.json": "7094cbbff6fcbb5d70eaff9b1f31183e6daa6e106b31cc79e29e9b9a96f33b5e"
+        }
+      },
+      {
+        "id": "center-high",
+        "floorStartS": 53.91562077960712,
+        "scoreRequestS": 61.417171812607606,
+        "endS": 65.03392181260696,
+        "seat": true,
+        "held": true,
+        "opening": {
+          "firstPossibleS": 1.0044999999999191,
+          "fullyThroughByS": 1.0752499999999428,
+          "minimumMarginM": 0.07800692684442392
+        },
+        "counterS": 65.03392181260696,
+        "release": 0.8119999999999383,
+        "busV": 8.349208155684842,
+        "files": {
+          "dev-center-high-96.json": "25d8c5000362a5ff99a312dcb01b96819bdf01cb510ec9163129a82f62032ecc",
+          "split-ready-dev-center-high-96-8.05.json": "df9db24e1fc66d07adc0485b786e80fdd9eee3d63c3e0202313fabae22bf728e"
+        }
+      },
+      {
+        "id": "center-mid",
+        "floorStartS": 74.75122967213294,
+        "scoreRequestS": 84.8128353651798,
+        "endS": 88.17433536517929,
+        "seat": true,
+        "held": true,
+        "opening": {
+          "firstPossibleS": 1.0044999999999191,
+          "fullyThroughByS": 1.0767499999999433,
+          "minimumMarginM": 0.08979135872504766
+        },
+        "counterS": 88.17433536517929,
+        "release": 0.8117499999999384,
+        "busV": 8.349209841859548,
+        "files": {
+          "dev-center-mid-96.json": "a42d0a00898f9510f56163638174bf62178eba7f9110baea6f1b19df67af33c5",
+          "split-ready-dev-center-mid-96-8.05.json": "85ff1b8a226f98812cfd9c5b8e9e57e5be967dec70993235aa62c12946e44639"
+        }
+      },
+      {
+        "id": "center-low",
+        "floorStartS": 99.34269805855499,
+        "scoreRequestS": 110.19138429418113,
+        "endS": 115.41588429418178,
+        "seat": true,
+        "held": true,
+        "opening": {
+          "firstPossibleS": 1.0054999999999195,
+          "fullyThroughByS": 1.0734999999999422,
+          "minimumMarginM": 0.09438311223130977
+        },
+        "counterS": 115.41588429418178,
+        "release": 0.8119999999999383,
+        "busV": 8.349266658704423,
+        "files": {
+          "dev-center-low-96.json": "8e0f2220f3ea5ff5fa4d018ffafe2f17c898f6d4b7a4fca1f3c278f6c472ff99",
+          "split-ready-dev-center-low-96-8.05.json": "7274cd9a836e4f835cbc5b1c1007357cf024f689c638dff60a789fb399e21cc3"
+        }
+      }
+    ]
+  },
+  {
+    "case": "split-48",
+    "seconds": 113.9433842941863,
+    "scored": 6,
+    "total": 6,
+    "trace": [
+      {
+        "id": "middle",
+        "floorStartS": 1.8438702494536878,
+        "scoreRequestS": 10.165286645718979,
+        "endS": 15.112286645718957,
+        "seat": true,
+        "held": true,
+        "opening": {
+          "firstPossibleS": 1.0099999999999443,
+          "fullyThroughByS": 1.0889999999999356,
+          "minimumMarginM": 0.015298468616535867
+        },
+        "counterS": 15.112286645718957,
+        "release": 0.811999999999966,
+        "busV": 8.344286661719154,
+        "files": {
+          "dev-middle-48.json": "992244f11f0586e9d8d4d48c0238bd5f9b212151de81fd3f185a19128417912e",
+          "split-ready-dev-middle-48-8.05.json": "fc9582606d3aeec2c797934d161d0a4bfb7a72f57f696a1731de5acc5aa612c7"
+        }
+      },
+      {
+        "id": "outer",
+        "floorStartS": 20.39394578665088,
+        "scoreRequestS": 27.39394578665088,
+        "endS": 31.04944578665127,
+        "seat": true,
+        "held": true,
+        "opening": {
+          "firstPossibleS": 1.0099999999999443,
+          "fullyThroughByS": 1.0959999999999348,
+          "minimumMarginM": 0.039682258585613236
+        },
+        "counterS": 31.04944578665127,
+        "release": 0.811999999999966,
+        "busV": 8.344287305703913,
+        "files": {
+          "dev-outer-48.json": "711cd9dd4b00565a99605cd95be493f4c9dffd97726b92360f78de7e0f9c5d5a",
+          "split-ready-dev-outer-48-8.05.json": "0ec98941d5bdfb6c9fc70278fe6bbcbf84a869186e1bdf733696f6f92bf035b9"
+        }
+      },
+      {
+        "id": "inner",
+        "floorStartS": 36.32753612627927,
+        "scoreRequestS": 43.32753612627927,
+        "endS": 46.68953612627956,
+        "seat": true,
+        "held": true,
+        "opening": {
+          "firstPossibleS": 1.003499999999945,
+          "fullyThroughByS": 1.0774999999999368,
+          "minimumMarginM": 0.0747670156928329
+        },
+        "counterS": 46.68953612627956,
+        "release": 0.811499999999966,
+        "busV": 8.3442868252208,
+        "files": {
+          "dev-inner-48.json": "1c42df533e638d5d83253ed570b7d651c8f029a4d827b73cc41619d4757d283c",
+          "split-ready-dev-inner-48-8.05.json": "8d14f53f7305189ba1cb0675218d13d96f4b5b962e25dd9c5ed7311950fba770"
+        }
+      },
+      {
+        "id": "center-high",
+        "floorStartS": 53.86487077961003,
+        "scoreRequestS": 61.36642181261052,
+        "endS": 64.66142181261078,
+        "seat": true,
+        "held": true,
+        "opening": {
+          "firstPossibleS": 1.0044999999999449,
+          "fullyThroughByS": 1.0869999999999358,
+          "minimumMarginM": 0.06032980324196784
+        },
+        "counterS": 64.66142181261078,
+        "release": 0.8109999999999661,
+        "busV": 8.344287247175624,
+        "files": {
+          "dev-center-high-48.json": "bde521ffe2f42fe817bb5f256c10049de1448f835a070ac81ed320971f7c2d7b",
+          "split-ready-dev-center-high-48-8.05.json": "e2c6d1eb88b0eb072b64887fb4942b114715eb3e4b353900b0ece75020e68293"
+        }
+      },
+      {
+        "id": "center-mid",
+        "floorStartS": 74.37872967213676,
+        "scoreRequestS": 84.44033536518361,
+        "endS": 88.00083536518397,
+        "seat": true,
+        "held": true,
+        "opening": {
+          "firstPossibleS": 1.011999999999944,
+          "fullyThroughByS": 1.0984999999999345,
+          "minimumMarginM": 0.06968587257769772
+        },
+        "counterS": 88.00083536518397,
+        "release": 0.811999999999966,
+        "busV": 8.344287482176691,
+        "files": {
+          "dev-center-mid-48.json": "8c2003ba0e02cdb3bb80e428758b84f70c030a2771882aa85bde472b95d0b53d",
+          "split-ready-dev-center-mid-48-8.05.json": "4e24b69acf00af8ebe69fb0fbf6a886eb587e80f4dd9d4db4f097dd3b236eeab"
+        }
+      },
+      {
+        "id": "center-low",
+        "floorStartS": 99.16919805855967,
+        "scoreRequestS": 110.01788429418582,
+        "endS": 113.9433842941863,
+        "seat": true,
+        "held": true,
+        "opening": {
+          "firstPossibleS": 1.0054999999999448,
+          "fullyThroughByS": 1.0874999999999357,
+          "minimumMarginM": 0.06649766685236828
+        },
+        "counterS": 113.9433842941863,
+        "release": 0.8109999999999661,
+        "busV": 8.344287572912473,
+        "files": {
+          "dev-center-low-48.json": "7bc302ea1a10c40b3604b29ad58a72e86331e8263b827bd01fe23c009f9e4933",
+          "split-ready-dev-center-low-48-8.05.json": "e4d5779467e61d37baac0446a8fc34f5543c2e37429826611a04465d1ff0be48"
+        }
+      }
+    ]
+  },
+  {
+    "case": "split-r02",
+    "seconds": 17.39163568633081,
+    "scored": 0,
+    "total": 1,
+    "trace": [
+      {
+        "id": "center-high",
+        "floorStartS": 7.1753346533304665,
+        "scoreRequestS": 14.676885686330955,
+        "endS": 17.39163568633081,
+        "seat": true,
+        "held": true,
+        "opening": {
+          "firstPossibleS": 1.0047499999999192,
+          "fullyThroughByS": 1.0739999999999423,
+          "minimumMarginM": 0.07605792419175625
+        },
+        "counterS": null,
+        "release": 0.8119999999999383,
+        "busV": 8.34921477550083,
+        "files": {
+          "R02-center-high-96.json": "a26a4586acf02a8369967c774177edf76ea315227ed3847650981ddf0705de34",
+          "split-ready-R02-center-high-96-8.05.json": "7f0b452a727e40b6437f48f64440c1292340bdd25f69023496e7c7721f8c75ba"
+        }
+      }
+    ]
+  },
+  {
+    "case": "split-r01",
+    "seconds": 16.072090339627263,
+    "scored": 1,
+    "total": 1,
+    "trace": [
+      {
+        "id": "inner",
+        "floorStartS": 5.278090339628004,
+        "scoreRequestS": 12.278090339628005,
+        "endS": 16.072090339627263,
+        "seat": true,
+        "held": true,
+        "opening": {
+          "firstPossibleS": 1.0049999999999193,
+          "fullyThroughByS": 1.0747499999999426,
+          "minimumMarginM": 0.05541244814954589
+        },
+        "counterS": 16.072090339627263,
+        "release": 0.8119999999999383,
+        "busV": 8.349211927928359,
+        "files": {
+          "R01-inner-96.json": "13e2ce2ffc0722350d1ff4da177e374b36d860d894aed764960e8c8eb283262c",
+          "split-ready-R01-inner-96-8.05.json": "4ff6e823e09a0ef12a288d946d7dd5d4c2714afca8e54e8709f0bd112fab75e9"
+        }
+      }
+    ]
+  }
+]

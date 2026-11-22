@@ -1,0 +1,34 @@
+[
+  {
+    "n": 48,
+    "scoreClockS": 116.49809769423288,
+    "scoredThenCutS": 138.50811463913203,
+    "marginIfWaitingForCountS": -3.5081146391320317,
+    "robotDepartureAfterFeedS": 1.0,
+    "robotDepartureS": 112.80909769423307,
+    "cutClockOnRobotTimerS": 134.81911463913224,
+    "matchMarginOnTimerS": 0.18088536086778007,
+    "outboundPieceSphereGapM": 0.8024246879865378,
+    "weakBusBoundDuringFirstLeg": 10.272237487284002,
+    "driveMotorReserveV": 6.212060854931527,
+    "completeOriginalFieldTraceThroughS": 6.99999999999884,
+    "untilNextLegS": 4.812459690217041,
+    "comparison": "practice scoring and 24 s terminal branch are separate narrative objectives; combined 135 s case assumes scoring starts at TELEOP zero, same original traffic and prompt controller transitions. No time allocation for hesitation or field disturbances."
+  },
+  {
+    "n": 96,
+    "scoreClockS": 115.08184769423215,
+    "scoredThenCutS": 137.0918646391313,
+    "marginIfWaitingForCountS": -2.091864639131302,
+    "robotDepartureAfterFeedS": 1.0,
+    "robotDepartureS": 112.81109769423288,
+    "cutClockOnRobotTimerS": 134.82111463913202,
+    "matchMarginOnTimerS": 0.17888536086796591,
+    "outboundPieceSphereGapM": 0.9412618587724845,
+    "weakBusBoundDuringFirstLeg": 10.272237487284002,
+    "driveMotorReserveV": 6.212060854931527,
+    "completeOriginalFieldTraceThroughS": 7.000000000002809,
+    "untilNextLegS": 4.812459690217041,
+    "comparison": "practice scoring and 24 s terminal branch are separate narrative objectives; combined 135 s case assumes scoring starts at TELEOP zero, same original traffic and prompt controller transitions. No time allocation for hesitation or field disturbances."
+  }
+]

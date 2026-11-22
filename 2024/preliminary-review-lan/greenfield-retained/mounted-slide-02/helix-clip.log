@@ -1,0 +1,18 @@
+
+=========================== clip-pdf toolchain ===========================
+FATAL: pdftotext is not installed -- no PDF can be clipped at all.
+       Install the Xpdf command-line tools (preferred, provides -table):
+         https://www.xpdfreader.com/download.html
+       or poppler: https://poppler.freedesktop.org/
+DEGRADED: pdftoppm (poppler) is not installed -- OCR cannot rasterize pages.
+          Scanned/image PDFs cannot be read at all, and a broken symbol font
+          cannot be recovered. Install poppler:
+            winget install oschwartz10612.Poppler
+DEGRADED: tesseract is not installed -- the OCR fallback is unavailable.
+          Scanned/image PDFs cannot be read at all, and a PDF whose math font
+          decodes to garbage cannot be escalated to OCR. Install it:
+            winget install UB-Mannheim.TesseractOCR
+            https://github.com/UB-Mannheim/tesseract/wiki
+  (run `clip-pdf.mjs --doctor` to re-check)
+=========================================================================
+

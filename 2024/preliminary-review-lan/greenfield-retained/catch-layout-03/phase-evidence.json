@@ -1,0 +1,165 @@
+{
+  "assembly": "005b1d394aeccb5a25a81b2cd13af0682e9cfac16784a011564af4b73a17162e",
+  "requirements": {
+    "narrative": "8f1226e987e21803cc5418bfdce05f581ac5f42cb11411ee6890f978349cf279",
+    "rosterFile": "speaker-repeatability-starts.csv",
+    "rosterHash": "5e21fa7a017cf6653fe54e7b6be1db51b598fb9f940c4364e0a23d0fa8913d49",
+    "count": 20,
+    "campaignCredit": 0
+  },
+  "boundaries": "Phase layout. No supplier, thread, impact, fatigue or fabrication signoff.",
+  "CAD": {
+    "count": 146,
+    "rotationPairs": 1540,
+    "servicePaths": 66,
+    "rejected": [
+      "layout 01 sector overlaps service disk",
+      "layout 02 receiver rubs rotating service disk",
+      "rapid unload overloads rigid catch"
+    ]
+  },
+  "load": {
+    "torqueNm": 191.75756746886327,
+    "armMm": 54.671747731346585,
+    "dogTangentialN": 3507.4343774621493,
+    "pinAvgShearMPa": 31.012528819085876,
+    "cantileverBeamMPa": 140.59013064652262,
+    "sectorProjectedBearingMPa": 30.446478971025606
+  },
+  "overloadScreen": {
+    "torqueNm": 350,
+    "armMm": 54.671747731346585,
+    "dogTangentialN": 6401.843996644799,
+    "pinAvgShearMPa": 56.60472872051082,
+    "cantileverBeamMPa": 256.60810353298234,
+    "sectorProjectedBearingMPa": 55.571562470874994
+  },
+  "catch": {
+    "controlled-front": {
+      "sha256": "1c8332ad1a7b69de04daed1b1ec7c2b7d6be0761de6cec29f931f63b95440dfa",
+      "passed": true,
+      "proofTime": 5.895999999999452,
+      "cut": 8.0,
+      "reserveSec": 2.104000000000548,
+      "floorN": 0.0,
+      "driftDeg": 1.504054335316779e-06,
+      "compressionMm": 9.391735882546826e-05
+    },
+    "controlled-center": {
+      "sha256": "b3a631b5344e034953893c5f8120b4e8bf13e872f3968615a58197ba5defb2f7",
+      "passed": true,
+      "proofTime": 4.945499999999979,
+      "cut": 8.0,
+      "reserveSec": 3.0545000000000213,
+      "floorN": 0.0,
+      "driftDeg": 9.031081204710853e-07,
+      "compressionMm": 0.00033970886322176597
+    },
+    "controlled-rear": {
+      "sha256": "f5cee8a9eab04c9742466b970b4f14c5081f92213a4e2fe592814aaf7fac2e6a",
+      "passed": true,
+      "proofTime": 6.207499999999279,
+      "cut": 8.0,
+      "reserveSec": 1.7925000000007207,
+      "floorN": 0.0,
+      "driftDeg": 2.6164929775921936e-07,
+      "compressionMm": 0.00014442890999610825
+    },
+    "controlled-short": {
+      "sha256": "fb730dc28d9a965808ffdb5fb8ffdca23b6363b202a858c6dd80124fceaddcca",
+      "passed": true,
+      "proofTime": 6.011250000001601,
+      "cut": 7.65,
+      "reserveSec": 1.6387499999983994,
+      "floorN": 0.0,
+      "driftDeg": 1.391674702645818e-06,
+      "compressionMm": 0.0002945238039542275
+    },
+    "controlled-open": {
+      "sha256": "2ff3a6656043c1607c03851a83d71f694caf8533badd3afece616703bed686c1",
+      "passed": false,
+      "proofTime": null,
+      "cut": 8.0,
+      "reserveSec": null,
+      "floorN": 25631.098707054065,
+      "driftDeg": 193.27850548612545,
+      "compressionMm": 0.0
+    },
+    "stiff-front": {
+      "sha256": "22532e3e228e8afbba232cb987c67b37bae2322b0c15cc124f7858a31dfb99f1",
+      "passed": false,
+      "proofTime": null,
+      "cut": 5.0,
+      "reserveSec": null,
+      "floorN": 603.9193925109255,
+      "driftDeg": 1.5542933985788707,
+      "compressionMm": 0.05794987063452384
+    },
+    "early": {
+      "sha256": "b3a94969079025134eb8fa576f917cc868559b3eeff1555225ceb5689a93aafc",
+      "passed": false,
+      "proofTime": null,
+      "cut": 2.78,
+      "reserveSec": null,
+      "floorN": 19515.175141333224,
+      "driftDeg": 174.16414754374597,
+      "compressionMm": null
+    }
+  },
+  "pickup": {
+    "nom": {
+      "sha256": "b6825dbafe217b8be811a7e2f4b03225db1ade1b99d335efebb3c18c4cd3e51d",
+      "tipMm": 5.00000000000006,
+      "motorLimitA": 8.0,
+      "seated": true,
+      "seatResidence": 1.0429999999999406
+    },
+    "lowL": {
+      "sha256": "a7449bac193d2ec643e965858219937b541925086d0c67363ff01dd5e6af755a",
+      "tipMm": 3.5000000000000053,
+      "motorLimitA": 8.0,
+      "seated": true,
+      "seatResidence": 0.7154999999999766
+    },
+    "lowR": {
+      "sha256": "90c237293f7bd1a203126edbcd4f7dfb5c54a0db4e6ca8bf33181f4e8081d00e",
+      "tipMm": 3.5000000000000053,
+      "motorLimitA": 8.0,
+      "seated": true,
+      "seatResidence": 0.7189999999999762
+    },
+    "highL": {
+      "sha256": "3149e46edb6a4dd2df9e94607bafd4d254be3d0be1a83bb7de58736b9b2f278f",
+      "tipMm": 6.500000000000057,
+      "motorLimitA": 8.0,
+      "seated": true,
+      "seatResidence": 0.5809999999999914
+    },
+    "highR": {
+      "sha256": "e98efae80fdb6541f2c3ea4dfd42dda44265d965c7f294779375aece2fc7afc8",
+      "tipMm": 6.500000000000057,
+      "motorLimitA": 8.0,
+      "seated": true,
+      "seatResidence": 0.70649999999995
+    },
+    "weak": {
+      "sha256": "46ccb4dffccee75638e0738c1a324a6f9c3c059eb6054d6c0c25d892faba47d9",
+      "tipMm": 6.500000000000057,
+      "motorLimitA": 2.0,
+      "seated": true,
+      "seatResidence": 0.6579999999999829
+    },
+    "dead": {
+      "sha256": "34e30f276ee69fef36a9e1f7c9ef368965409c3eb2a009416bd441a81af110f9",
+      "tipMm": 5.00000000000006,
+      "motorLimitA": 0.0,
+      "seated": false,
+      "seatResidence": 0
+    }
+  },
+  "next": [
+    "Locate carpet reference, sensor or follower, its available travel, power, service and response; the existing 5 mm model assumes the setting is attained.",
+    "Bind floor approach, driven free-piece carry, power arbitration, physical score and return to one field clock with independent floor positions. Evaluate six distinct IDs in 120 s at 19/20 frozen starts.",
+    "Rehearse acquisition of the chain on approach, full truss clearance, catch sensing and PARK fallback on the selected layout. Run complete preliminary phase checks before handoff."
+  ]
+}

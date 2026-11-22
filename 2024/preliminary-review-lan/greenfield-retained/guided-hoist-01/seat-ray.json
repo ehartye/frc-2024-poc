@@ -1,0 +1,32 @@
+{
+  "[55, 50.4]": {
+    "old ray": {},
+    "transverse ray": {},
+    "left sensor": {
+      "Catch sector": 0.928800674434078
+    },
+    "right sensor": {}
+  },
+  "[55, 66]": {
+    "old ray": {},
+    "transverse ray": {},
+    "left sensor": {},
+    "right sensor": {}
+  },
+  "[55, 75]": {
+    "old ray": {},
+    "transverse ray": {},
+    "left sensor": {
+      "Lid edge rail · left": 17.999999999945857
+    },
+    "right sensor": {
+      "Lid edge rail · right": 17.999999999945857
+    }
+  },
+  "[60, 50.4]": {
+    "old ray": {},
+    "transverse ray": {},
+    "left sensor": {},
+    "right sensor": {}
+  }
+}

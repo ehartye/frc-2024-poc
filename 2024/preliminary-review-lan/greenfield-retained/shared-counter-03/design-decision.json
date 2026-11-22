@@ -1,0 +1,84 @@
+{
+  "freeze": "ff007748cc720f076311ec2d35f20987a3eb954b77af3bd90371f62a4c3a05f9",
+  "completed": [
+    {
+      "start": "R01",
+      "count": 6,
+      "passed": true,
+      "elapsedS": 116.36522391632592
+    },
+    {
+      "start": "R02",
+      "count": 2,
+      "passed": false,
+      "elapsedS": 51.790734121320256
+    },
+    {
+      "start": "R03",
+      "count": 5,
+      "passed": false,
+      "elapsedS": 118.23037736817264
+    },
+    {
+      "start": "R04",
+      "count": 6,
+      "passed": true,
+      "elapsedS": 115.17367279200874
+    },
+    {
+      "start": "R05",
+      "count": 6,
+      "passed": true,
+      "elapsedS": 115.91269231876862
+    }
+  ],
+  "unrun": 15,
+  "maxPossiblePass": 18,
+  "liveDefault": "continuous-cycle-96",
+  "missionClockAssessment": {
+    "firstFiveIndividualPasses": 4,
+    "ejectedNote": {
+      "tag": "R02-inner",
+      "originalShotSha": "28d2269ee8421391ecb5016a2e63f65835c8d5795d00206b8ad3039842b4ed9d",
+      "minimumOpeningMm": 23.425725802842113,
+      "identicalSampledPoseError": 0.0,
+      "elapsedAtStart": 44.79073412131745,
+      "observedTo": 15.0,
+      "counterS": null,
+      "counterMissionClock": null,
+      "finalQ": [
+        1.311645999928249,
+        6.012773638827644,
+        0.02539978244692632,
+        -1.0247201076480681e-16,
+        -0.6946100170591563,
+        0.7193864915336381,
+        2.328692847633268e-16
+      ],
+      "scope": "Original release with extended field observation only. Any late credit requires the remaining robot route, deadline and prior counter occupancy to be reconciled."
+    },
+    "lateSixth": {
+      "tag": "R03-center-low",
+      "originalShotSha": "505aea4c52de7eb00eef98f46a885bf5f482cfba4d07d0cee27f325c7222b1f8",
+      "minimumOpeningMm": 20.001215034164478,
+      "identicalSampledPoseError": 0.0,
+      "elapsedAtStart": 111.23037736816983,
+      "observedTo": 8.769622631830174,
+      "counterS": 7.03350000000285,
+      "counterMissionClock": 118.26387736817267,
+      "finalQ": [
+        -0.3554281507855366,
+        5.707489439426789,
+        0.4160142452201916,
+        0.7018761036624436,
+        -0.1013799779413942,
+        -0.6884220625815806,
+        0.15220742074929172
+      ],
+      "scope": "Original release with extended field observation only. Any late credit requires the remaining robot route, deadline and prior counter occupancy to be reconciled."
+    },
+    "unrun": 15,
+    "maxPossibleIndividualPasses": 19,
+    "sharedCounterSixQualified": false
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "drawing": "FIRST GE-24370 and GE-24385, PDF pages 206 and 222",
+  "pdfSha256": "c391486d70060556556205522f27db21b787e25c17358f3ab88197d79167cbb6",
+  "source": "https://firstfrc.blob.core.windows.net/frc2024/FieldAssets/2024FieldDrawings-CRESCENDOSpecific.pdf",
+  "measuredGripShaftXZmm": [
+    -404.48,
+    1509.61
+  ],
+  "equalPulleyXZmm": [
+    [
+      -767.66,
+      1473.25
+    ],
+    [
+      -404.48,
+      1509.61
+    ]
+  ],
+  "wheelSpeedBasis": "\u00b10.60 m/s sensitivity. Field operating voltage, speed, slip and command are unverified.",
+  "tests": [
+    {
+      "case": "R01-center-low-96",
+      "launcherMps": 6.88,
+      "fieldWheelTrialMps": 0.6,
+      "baselineBeamS": null,
+      "trialBeamS": null,
+      "sameReleaseAndOpening": true
+    },
+    {
+      "case": "R01-center-low-96",
+      "launcherMps": 6.88,
+      "fieldWheelTrialMps": -0.6,
+      "baselineBeamS": null,
+      "trialBeamS": 5.24950000000067,
+      "sameReleaseAndOpening": true
+    },
+    {
+      "case": "dev-center-high-96",
+      "launcherMps": 6.74,
+      "fieldWheelTrialMps": 0.6,
+      "baselineBeamS": null,
+      "trialBeamS": 4.532749999999794,
+      "sameReleaseAndOpening": true
+    },
+    {
+      "case": "dev-center-high-96",
+      "launcherMps": 6.88,
+      "fieldWheelTrialMps": 0.6,
+      "baselineBeamS": 5.256250000000678,
+      "trialBeamS": 4.014749999999161,
+      "sameReleaseAndOpening": true
+    }
+  ],
+  "decision": "The stationary wheel approximation can change post-opening credit. Keep the robot command unchanged while completing and validating the field transport model. The reversed test supplies sensitivity only. No retrospective score awarded."
+}

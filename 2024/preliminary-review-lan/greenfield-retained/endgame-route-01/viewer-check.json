@@ -1,0 +1,44 @@
+[
+  {
+    "url": "http://192.168.1.129:8764/?concept=field&case=field-96",
+    "title": "Shared cassette · field review",
+    "end": "Center line low · registered · 6/6 scored",
+    "metrics": "Inspection estimate35.108–56.500 kgRunning estimate45.44–69.55 kgPackage envelope sum45.5 LMovement cases10 modeled"
+  },
+  {
+    "url": "http://192.168.1.129:8764/?case=field-r01&concept=field",
+    "title": "Shared cassette · field review",
+    "end": "Center line low · miss · 5/6 scored",
+    "metrics": "Inspection estimate35.108–56.500 kgRunning estimate45.44–69.55 kgPackage envelope sum45.5 LMovement cases10 modeled"
+  },
+  {
+    "url": "http://192.168.1.129:8764/?case=field-r08&concept=field",
+    "title": "Shared cassette · field review",
+    "end": "Blue wing inner · failed to seat · lift started on timer · 2/6 scored",
+    "metrics": "Inspection estimate35.108–56.500 kgRunning estimate45.44–69.55 kgPackage envelope sum45.5 LMovement cases10 modeled"
+  },
+  {
+    "url": "http://192.168.1.129:8764/?case=field-seat-recovery&concept=field",
+    "title": "Shared cassette · field review",
+    "end": "Blue wing inner · registered · 3/6 scored",
+    "metrics": "Inspection estimate35.108–56.500 kgRunning estimate45.44–69.55 kgPackage envelope sum45.5 LMovement cases10 modeled"
+  },
+  {
+    "url": "http://192.168.1.129:8764/?case=field-guide&concept=field",
+    "title": "Shared cassette · field review",
+    "end": "Power cut · 217 mm stroke · 0.0 N floor load · 6.7 mm tire / bumper clearance · minimum hold clearance 4.8 mm",
+    "metrics": "Inspection estimate35.108–56.500 kgRunning estimate45.44–69.55 kgPackage envelope sum45.5 LMovement cases10 modeled"
+  },
+  {
+    "url": "http://192.168.1.129:8764/?concept=field&case=field-climb",
+    "title": "Shared cassette · field review",
+    "end": "Disabled · 115 mm tire / bumper clearance · 0.0 N floor load · rejected inward climb · fixed stage rail and chain interference",
+    "metrics": "Inspection estimate35.108–56.500 kgRunning estimate45.44–69.55 kgPackage envelope sum45.5 LMovement cases10 modeled"
+  },
+  {
+    "url": "http://192.168.1.129:8764/?concept=field&case=field-park",
+    "title": "Shared cassette · field review",
+    "end": "PARK at cutoff · bumper 43.3 mm inside",
+    "metrics": "Inspection estimate35.108–56.500 kgRunning estimate45.44–69.55 kgPackage envelope sum45.5 LMovement cases10 modeled"
+  }
+]

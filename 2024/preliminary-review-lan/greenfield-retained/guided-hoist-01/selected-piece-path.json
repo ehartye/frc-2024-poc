@@ -1,0 +1,52 @@
+{
+  "field-96": {
+    "sampledPoses": 2151,
+    "minLowerBoundMm": 39.08139413519472,
+    "at": [
+      "Pivot torque shaft",
+      734,
+      38.161807
+    ],
+    "nonseparatedBounds": []
+  },
+  "field-48": {
+    "sampledPoses": 2240,
+    "minLowerBoundMm": 39.039158280847566,
+    "at": [
+      "Pivot torque shaft",
+      410,
+      21.737206
+    ],
+    "nonseparatedBounds": []
+  },
+  "field-r01": {
+    "sampledPoses": 2290,
+    "minLowerBoundMm": 39.07531645250845,
+    "at": [
+      "Pivot torque shaft",
+      425,
+      22.272332
+    ],
+    "nonseparatedBounds": []
+  },
+  "field-r08": {
+    "sampledPoses": 855,
+    "minLowerBoundMm": 39.07831784218424,
+    "at": [
+      "Pivot torque shaft",
+      438,
+      22.74975
+    ],
+    "nonseparatedBounds": []
+  },
+  "field-seat-recovery": {
+    "sampledPoses": 943,
+    "minLowerBoundMm": 39.07831784218424,
+    "at": [
+      "Pivot torque shaft",
+      438,
+      22.74975
+    ],
+    "nonseparatedBounds": []
+  }
+}

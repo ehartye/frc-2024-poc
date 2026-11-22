@@ -1,0 +1,12 @@
+{
+  "source": "093ca2ff6f5d2d53aa46c66651baa65f2d93bc59611a5e6e183006b9c7349415",
+  "route": [],
+  "sampledGrid": [
+    185,
+    221
+  ],
+  "blocked": 18265,
+  "reachable": 21447,
+  "goalBlocked": false,
+  "note": "This is a reachability screen with fixed Y and fully open gate. Grid connectivity alone does not verify continuous motion or chain mating in the reverse orientation."
+}

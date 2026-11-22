@@ -1,0 +1,17 @@
+{
+  "schema": "agent-frc/native-job@1",
+  "jobId": "poc24-guided-profile-a02",
+  "pluginCommit": "eda17621fb372544d40d4c9ad6cae6828904209d",
+  "pluginInventorySha256": "0d561f2824569f187c5a660db6337453729a76d0d8d8a6405c936c1921b3068e",
+  "recipe": "inputs/author_blade.py",
+  "inputs": [
+    {
+      "path": "author_blade.py",
+      "sha256": "c29218645d1ed1af5126f1e4f22e5ce54276349e84296f23f780bd00468308ef"
+    },
+    {
+      "path": "profile.json",
+      "sha256": "3e8ddb7ebbd1e04f87ac088beb7fa15bfd2e610350f977ec44544777f1e25d63"
+    }
+  ]
+}

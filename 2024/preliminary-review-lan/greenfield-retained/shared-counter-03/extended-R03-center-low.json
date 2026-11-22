@@ -1,0 +1,20 @@
+{
+  "tag": "R03-center-low",
+  "originalShotSha": "505aea4c52de7eb00eef98f46a885bf5f482cfba4d07d0cee27f325c7222b1f8",
+  "minimumOpeningMm": 20.001215034164478,
+  "identicalSampledPoseError": 0.0,
+  "elapsedAtStart": 111.23037736816983,
+  "observedTo": 8.769622631830174,
+  "counterS": 7.03350000000285,
+  "counterMissionClock": 118.26387736817267,
+  "finalQ": [
+    -0.3554281507855366,
+    5.707489439426789,
+    0.4160142452201916,
+    0.7018761036624436,
+    -0.1013799779413942,
+    -0.6884220625815806,
+    0.15220742074929172
+  ],
+  "scope": "Original release with extended field observation only. Any late credit requires the remaining robot route, deadline and prior counter occupancy to be reconciled."
+}

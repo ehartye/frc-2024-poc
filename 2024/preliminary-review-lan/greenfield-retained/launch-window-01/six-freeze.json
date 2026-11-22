@@ -1,0 +1,21 @@
+{
+  "rows": [
+    [
+      "dev",
+      96
+    ],
+    [
+      "dev",
+      48
+    ],
+    [
+      "R01",
+      96
+    ]
+  ],
+  "settingMps": 6.74,
+  "windowInput": "0c43d8e2f0647fb1057eb36a798e0836917c89ce4b4a17e6a317246fdcc63d7c",
+  "missionInput": "db9eda32dcc43e6439735fe9671c37b6cfe590840fd7937935977efb1b01d19d",
+  "why": "Both candidate commands recovered the known miss. Select the lower-speed setting for its larger opening margin on that miss and shorter nominal counter dwell. Apply it to all six pieces.",
+  "criterion": "Six unique scored pieces by 120 seconds on both nominal discretizations and R01. Stop at first failed leg within each trial; retain each failure. This is a development replay."
+}

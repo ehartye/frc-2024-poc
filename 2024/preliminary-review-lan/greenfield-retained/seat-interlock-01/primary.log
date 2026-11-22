@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\Users\ehart\Documents\FRC Native\2024\preliminary-review-lan\greenfield-retained\seat-interlock-01\recovery.py", line 45, in <module>
+    exec(compile(driver,'delayed departure on physical rear beam','exec'))
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "delayed departure on physical rear beam", line 9, in <module>
+    def edit(a,b):
+  File "revised route full intake and carry", line 36, in <module>
+    prefix='blind-'
+    
+TypeError: unsupported operand type(s) for -: 'str' and 'str'

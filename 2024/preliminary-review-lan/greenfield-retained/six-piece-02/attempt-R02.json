@@ -1,0 +1,80 @@
+{
+  "id": "R02",
+  "freeze": "1a47d135e865a2b7c619488bceed5d0b17422898b4870097ff63771a6df757af",
+  "pieces": [
+    {
+      "id": "middle",
+      "carry": "c4917a5e77bc064225477e8a1cdf54e165200d36f85edde7d1127f360dfa90a7",
+      "seat": true,
+      "held": true,
+      "reachedStation": 10.172989671829429,
+      "sourceClock": "commanded route with finite mark offsets",
+      "shot": "7be31931094a0fe95ee9f9ebc2ebdf8c249105771618d37c4c82d684d7cb60dd",
+      "opening": {
+        "firstPossibleS": 0.7809999999999417,
+        "fullyThroughByS": 0.8479999999999344,
+        "minimumMarginM": 0.06085375900874712
+      },
+      "both": 3.665749999999328,
+      "minBusV": 8.380051885864987,
+      "clock": 13.838739671828757,
+      "credited": true
+    },
+    {
+      "id": "outer",
+      "carry": "a529578f50c279dcf7e5e55aa3d315b3e067e99d88b1616ec70e792bd1cca058",
+      "seat": true,
+      "held": true,
+      "reachedStation": 26.12039881276068,
+      "sourceClock": "commanded route with finite mark offsets",
+      "shot": "db5afc4b939df20dfdaa9dd7ac4e4a90d24e155e1661c9774c1ea59837e01be5",
+      "opening": {
+        "firstPossibleS": 0.7819999999999416,
+        "fullyThroughByS": 0.8582499999999332,
+        "minimumMarginM": 0.05063883373471249
+      },
+      "both": 2.9272499999997375,
+      "minBusV": 8.38184002833185,
+      "clock": 29.047648812760418,
+      "credited": true
+    },
+    {
+      "id": "inner",
+      "carry": "6fd7bc41251c748b7b142e4e7471c511522c7594f3836dbd7a626093a19fbd5f",
+      "seat": true,
+      "held": true,
+      "reachedStation": 41.32573915238842,
+      "sourceClock": "commanded route with finite mark offsets",
+      "shot": "94775d7dc5ddf3e646c256acf09f0cb5f6cd1b4371a3e2b4f4e1db13ceefb08f",
+      "opening": {
+        "firstPossibleS": 0.7797499999999419,
+        "fullyThroughByS": 0.8552499999999336,
+        "minimumMarginM": 0.049213272871853765
+      },
+      "both": 3.169499999999603,
+      "minBusV": 8.381755883748198,
+      "clock": 44.495239152388024,
+      "credited": true
+    },
+    {
+      "id": "center-high",
+      "carry": "9b94bd39732bd58704800c1ab130d4531af9bfec6c8bcb79a7b7f999a4fc1d1a",
+      "seat": true,
+      "held": true,
+      "reachedStation": 59.17212483871898,
+      "sourceClock": "commanded route with finite mark offsets",
+      "shot": "ab1ea1ff4200748304e5b0378eb43deb9b82ca2736dfdadb02b5c20e63443748",
+      "opening": {
+        "firstPossibleS": 0.7827499999999415,
+        "fullyThroughByS": 0.8549999999999336,
+        "minimumMarginM": 0.04777123742809922
+      },
+      "both": null,
+      "minBusV": 8.381267376040032,
+      "clock": 61.46787483871907,
+      "credited": false
+    }
+  ],
+  "passAttempt": false,
+  "endS": 61.46787483871907
+}

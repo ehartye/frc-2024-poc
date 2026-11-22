@@ -1,0 +1,22 @@
+{
+  "fieldStep": "42c91b3efb9521d059c13cf25e2d7dda6315bdd6b7eb1202847bfe84ffb43c1a",
+  "occurrences": {
+    "speakerPanel": 180,
+    "speakerRamp": 10,
+    "sensors": 4,
+    "stageSteel": 190,
+    "anchors": 15,
+    "workingChain": 1,
+    "otherChain": 2
+  },
+  "triangles": {
+    "speakerPanel": 707222,
+    "speakerRamp": 21260,
+    "sensors": 2528,
+    "stageSteel": 495402,
+    "anchors": 7884,
+    "workingChain": 402336,
+    "otherChain": 804672
+  },
+  "scope": "Named blue field structure and target hardware; selected minor fixtures and hardware omitted from display. Field contact uses the original separate physics surfaces."
+}

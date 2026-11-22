@@ -1,0 +1,18 @@
+{
+  "front": {
+    "receipt": "db2174fe91cd0cef984f930fb7e1102cb360ffedf06bcf4acd3b11d8d5488911",
+    "knots": 553,
+    "stationaryCandidates": {},
+    "nonHookChainClose": {},
+    "exactChainComparisons": 10348,
+    "minimumDisabledLowerBoundMm": 18.959788100788455
+  },
+  "rear": {
+    "receipt": "f48919d73048dd20c935d1900e50455fa7f4b40077a67febe6d9b9ca5b877657",
+    "knots": 553,
+    "stationaryCandidates": {},
+    "nonHookChainClose": {},
+    "exactChainComparisons": 12362,
+    "minimumDisabledLowerBoundMm": 76.69868736200876
+  }
+}

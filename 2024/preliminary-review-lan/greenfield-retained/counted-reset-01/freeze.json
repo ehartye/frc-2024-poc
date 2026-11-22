@@ -1,0 +1,30 @@
+{
+  "step": "a29a146d8897f64e8f056fcb46a431ba234c7aecccbc3233b6834c43c703bc88",
+  "roster": "5e21fa7a017cf6653fe54e7b6be1db51b598fb9f940c4364e0a23d0fa8913d49",
+  "sources": {
+    "counted-reset-01\\carry.py": "19dae7186fbe23ef7678ee18b7ed0ea3c0837f8ef0187464c51bdcaddf2fcb88",
+    "counted-reset-01\\empty_return.py": "847ee69a61596cf8aa7179368906eb129e6b30ef129672a3761fabe9e887aa0d",
+    "counted-reset-01\\counter_tail.py": "dacd1cde7677ac3647ab68942e5ca7e4e76dd246bb29bc9f81136e5da6008ef4",
+    "counted-reset-01\\shot.py": "0a4895245ee7ae1e3da840d411b072e460c7ac1f113fc129e26920e8dd5ffc05",
+    "counted-reset-01\\lane.py": "526f407a0634be0546c6677ceff10dba5b8aa7735ba65ea3a9cb1eb343a917b4",
+    "counted-reset-01\\mission.py": "7577eac5115895cefd9994d1c370769725c6913d1ec23de9e0ade196347f08e4",
+    "counted-reset-01\\plan.json": "42db7ff99be1054cf3e5dedd77e9b59cf605df1f536fda6119b4b3eea2f11bc6",
+    "counted-reset-01\\clearance.json": "0e413320ea8eb609e0b9e31deda1853bea54f5636bb539f9a34fc1b828a33e30",
+    "loaded-actuation-01\\smooth.py": "691534ab8e9cefbc94e0e230aed3e208d03013e4812df433cef38ba010992991",
+    "counter-drive-01\\transmission.json": "08371bb4b618f1202c5061fd1eff24983b7e98fc1e92a45cae8e930b0d10a22c",
+    "counter-drive-01\\counter.py": "e8bfcc15a5ed6c4379edb5f75cef33b305394af05630ecf695fdedf306b4f09e",
+    "seat-interlock-01\\recovery.py": "8cb73521f39bba48ba00cc2658ff65a7218e66124d011f8965ecbda4170586ce"
+  },
+  "firingPose": [
+    1.39,
+    5.871,
+    122
+  ],
+  "fieldDriveFraction": 0.75,
+  "targetSpeedMps": 6.88,
+  "liftS": 4.8,
+  "resetS": 4.8,
+  "resetTrigger": "1.0 s after robot feed command; require swept X separation and <=30 A residual stationary shot load throughout reset before overlapping elapsed time",
+  "passCriterion": "six unique NOTES, full opening passage, both field counters by 120 s, firing bus >=8 V, 19 of 20 starts",
+  "scope": "Unloaded approach and reset still use prescribed tracking. Empty flap and belt state carried between pieces; loading and field counter are contact simulated. Measured friction, chassis tracking and target counter speed remain uncalibrated."
+}

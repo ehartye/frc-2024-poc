@@ -1,0 +1,606 @@
+{
+  "parent": "093ca2ff6f5d2d53aa46c66651baa65f2d93bc59611a5e6e183006b9c7349415",
+  "netReplacedKg": 1.501588408722584,
+  "netStockKg": 0.8474982041010894,
+  "rows": {
+    "Shared lift crosspiece": {
+      "volumeMm3": 80678.14519471805,
+      "kg": 0.21783099202573872,
+      "role": "carriage",
+      "densityKgM3": 2700
+    },
+    "Hook guide channel · left": {
+      "volumeMm3": 51557.572134289585,
+      "kg": 0.1392054447625819,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Captive hook wear block · left": {
+      "volumeMm3": 22394.080166673157,
+      "kg": 0.06046401645001753,
+      "role": "carriage",
+      "densityKgM3": 2700
+    },
+    "Guide rear anchor web · left": {
+      "volumeMm3": 19990.73867647059,
+      "kg": 0.0539749944264706,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Guide rear anchor cleat · left": {
+      "volumeMm3": 3456.0,
+      "kg": 0.009331200000000001,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Pivot cable drum · left": {
+      "volumeMm3": 19985.373596278765,
+      "kg": 0.05396050870995267,
+      "role": "drum",
+      "densityKgM3": 2700
+    },
+    "Hoist redirect ear 194 · left": {
+      "volumeMm3": 1103.2854624794022,
+      "kg": 0.0029788707486943862,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Hoist redirect ear 211 · left": {
+      "volumeMm3": 1103.2854624794022,
+      "kg": 0.0029788707486943862,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Hoist rear redirect sheave · left": {
+      "volumeMm3": 5007.384530556769,
+      "kg": 0.013519938232503277,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Hoist rear redirect axle · left": {
+      "volumeMm3": 678.5840131753954,
+      "kg": 0.005326884503426854,
+      "role": "cassette",
+      "densityKgM3": 7850
+    },
+    "Hook guide channel · right": {
+      "volumeMm3": 51557.572134289585,
+      "kg": 0.1392054447625819,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Captive hook wear block · right": {
+      "volumeMm3": 22394.080139482634,
+      "kg": 0.06046401637660311,
+      "role": "carriage",
+      "densityKgM3": 2700
+    },
+    "Guide rear anchor web · right": {
+      "volumeMm3": 19990.73867647059,
+      "kg": 0.0539749944264706,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Guide rear anchor cleat · right": {
+      "volumeMm3": 3456.0,
+      "kg": 0.009331200000000001,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Pivot cable drum · right": {
+      "volumeMm3": 19985.373596278754,
+      "kg": 0.05396050870995264,
+      "role": "drum",
+      "densityKgM3": 2700
+    },
+    "Hoist redirect ear 194 · right": {
+      "volumeMm3": 1103.2854624794022,
+      "kg": 0.0029788707486943862,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Hoist redirect ear 211 · right": {
+      "volumeMm3": 1103.2854624794022,
+      "kg": 0.0029788707486943862,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Hoist rear redirect sheave · right": {
+      "volumeMm3": 5007.384530556769,
+      "kg": 0.013519938232503277,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Hoist rear redirect axle · right": {
+      "volumeMm3": 678.5840131753954,
+      "kg": 0.005326884503426854,
+      "role": "cassette",
+      "densityKgM3": 7850
+    },
+    "Catch sector": {
+      "volumeMm3": 22777.943209620356,
+      "kg": 0.06150044666597496,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Capture-angle dog bushing": {
+      "volumeMm3": 617.2444166140549,
+      "kg": 0.004845368670420331,
+      "role": "cassette",
+      "densityKgM3": 7850
+    },
+    "Hook slider liner 196.2 · left": {
+      "volumeMm3": 683.0474356792113,
+      "kg": 0.00096992735866448,
+      "role": "carriage",
+      "densityKgM3": 1420
+    },
+    "Hook slider liner 215.0 · left": {
+      "volumeMm3": 683.0474356792113,
+      "kg": 0.00096992735866448,
+      "role": "carriage",
+      "densityKgM3": 1420
+    },
+    "Slide stop guide · left": {
+      "volumeMm3": 1359.1158137960165,
+      "kg": 0.01066905913829873,
+      "role": "cassette",
+      "densityKgM3": 7850
+    },
+    "Slide stop pin · left": {
+      "volumeMm3": 395.84067435231384,
+      "kg": 0.003107349293665664,
+      "role": "stop",
+      "densityKgM3": 7850
+    },
+    "Slide stop actuator · left": {
+      "volumeMm3": 5805.663223833938,
+      "kg": 0.015675290704351634,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Hoist rope drum to sheave · left": {
+      "volumeMm3": 1409.0614357829904,
+      "kg": 0.0013667895927095008,
+      "role": "cassette",
+      "densityKgM3": 970
+    },
+    "Hoist rope working span · left": {
+      "volumeMm3": 2007.4777056438777,
+      "kg": 0.0019472533744745615,
+      "role": "cord",
+      "densityKgM3": 970
+    },
+    "Hoist rope anchor · left": {
+      "volumeMm3": 436.0462602621963,
+      "kg": 0.00117732490270793,
+      "role": "carriage",
+      "densityKgM3": 2700
+    },
+    "Hoist anchor cross pin · left": {
+      "volumeMm3": 238.93621687918903,
+      "kg": 0.001875649302501634,
+      "role": "carriage",
+      "densityKgM3": 7850
+    },
+    "Hook slider liner 196.2 · right": {
+      "volumeMm3": 683.0474356792115,
+      "kg": 0.0009699273586644805,
+      "role": "carriage",
+      "densityKgM3": 1420
+    },
+    "Hook slider liner 215.0 · right": {
+      "volumeMm3": 683.0474356792113,
+      "kg": 0.00096992735866448,
+      "role": "carriage",
+      "densityKgM3": 1420
+    },
+    "Slide stop guide · right": {
+      "volumeMm3": 1359.1158137960165,
+      "kg": 0.01066905913829873,
+      "role": "cassette",
+      "densityKgM3": 7850
+    },
+    "Slide stop pin · right": {
+      "volumeMm3": 395.84067435231384,
+      "kg": 0.003107349293665664,
+      "role": "stop",
+      "densityKgM3": 7850
+    },
+    "Slide stop actuator · right": {
+      "volumeMm3": 5805.663223833938,
+      "kg": 0.015675290704351634,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Hoist rope drum to sheave · right": {
+      "volumeMm3": 1409.0614357829904,
+      "kg": 0.0013667895927095008,
+      "role": "cassette",
+      "densityKgM3": 970
+    },
+    "Hoist rope working span · right": {
+      "volumeMm3": 2007.4777056438777,
+      "kg": 0.0019472533744745615,
+      "role": "cord",
+      "densityKgM3": 970
+    },
+    "Hoist rope anchor · right": {
+      "volumeMm3": 436.04625998339674,
+      "kg": 0.0011773249019551714,
+      "role": "carriage",
+      "densityKgM3": 2700
+    },
+    "Hoist anchor cross pin · right": {
+      "volumeMm3": 238.93621687918903,
+      "kg": 0.001875649302501634,
+      "role": "carriage",
+      "densityKgM3": 7850
+    },
+    "Pivot torque shaft": {
+      "volumeMm3": 142437.33035047198,
+      "kg": 1.118133043251205,
+      "role": "drum",
+      "densityKgM3": 7850
+    },
+    "Pivot drive socket": {
+      "volumeMm3": 6596.43036907637,
+      "kg": 0.05178197839724951,
+      "role": "cassette",
+      "densityKgM3": 7850
+    },
+    "Sliding pivot clutch": {
+      "volumeMm3": 7205.440646709118,
+      "kg": 0.05656270907666657,
+      "role": "clutch",
+      "densityKgM3": 7850
+    },
+    "Cassette cheek · right": {
+      "volumeMm3": 29419.80577549067,
+      "kg": 0.07943347559382481,
+      "role": "cassette",
+      "densityKgM3": 2700
+    }
+  },
+  "states": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      4.2
+    ],
+    [
+      55,
+      0,
+      4.2
+    ],
+    [
+      110,
+      0,
+      4.2
+    ],
+    [
+      165,
+      0,
+      4.2
+    ],
+    [
+      220,
+      0,
+      4.2
+    ],
+    [
+      230,
+      0,
+      4.2
+    ],
+    [
+      230,
+      8,
+      4.2
+    ]
+  ],
+  "intersections": [
+    [
+      0,
+      0,
+      0,
+      "Hook slider liner 196.2 · left",
+      "Hoist anchor cross pin · left",
+      8.621409887393263
+    ],
+    [
+      0,
+      0,
+      0,
+      "Hook slider liner 215.0 · left",
+      "Hoist anchor cross pin · left",
+      8.621409887393556
+    ],
+    [
+      0,
+      0,
+      0,
+      "Hook slider liner 196.2 · right",
+      "Hoist anchor cross pin · right",
+      8.621409887393204
+    ],
+    [
+      0,
+      0,
+      0,
+      "Hook slider liner 215.0 · right",
+      "Hoist anchor cross pin · right",
+      8.621409887393614
+    ],
+    [
+      0,
+      0,
+      4.2,
+      "Hook slider liner 196.2 · left",
+      "Hoist anchor cross pin · left",
+      8.621409887393263
+    ],
+    [
+      0,
+      0,
+      4.2,
+      "Hook slider liner 215.0 · left",
+      "Hoist anchor cross pin · left",
+      8.621409887393556
+    ],
+    [
+      0,
+      0,
+      4.2,
+      "Hook slider liner 196.2 · right",
+      "Hoist anchor cross pin · right",
+      8.621409887393204
+    ],
+    [
+      0,
+      0,
+      4.2,
+      "Hook slider liner 215.0 · right",
+      "Hoist anchor cross pin · right",
+      8.621409887393614
+    ],
+    [
+      55,
+      0,
+      4.2,
+      "Hook slider liner 196.2 · left",
+      "Hoist anchor cross pin · left",
+      8.621409887393252
+    ],
+    [
+      55,
+      0,
+      4.2,
+      "Hook slider liner 215.0 · left",
+      "Hoist anchor cross pin · left",
+      8.621409887393543
+    ],
+    [
+      55,
+      0,
+      4.2,
+      "Hook slider liner 196.2 · right",
+      "Hoist anchor cross pin · right",
+      8.621409887393193
+    ],
+    [
+      55,
+      0,
+      4.2,
+      "Hook slider liner 215.0 · right",
+      "Hoist anchor cross pin · right",
+      8.621409887393602
+    ],
+    [
+      110,
+      0,
+      4.2,
+      "Hook slider liner 196.2 · left",
+      "Hoist anchor cross pin · left",
+      8.62140988739325
+    ],
+    [
+      110,
+      0,
+      4.2,
+      "Hook slider liner 215.0 · left",
+      "Hoist anchor cross pin · left",
+      8.621409887393543
+    ],
+    [
+      110,
+      0,
+      4.2,
+      "Hook slider liner 196.2 · right",
+      "Hoist anchor cross pin · right",
+      8.621409887393192
+    ],
+    [
+      110,
+      0,
+      4.2,
+      "Hook slider liner 215.0 · right",
+      "Hoist anchor cross pin · right",
+      8.621409887393602
+    ],
+    [
+      165,
+      0,
+      4.2,
+      "Hook slider liner 196.2 · left",
+      "Hoist anchor cross pin · left",
+      8.62140988739325
+    ],
+    [
+      165,
+      0,
+      4.2,
+      "Hook slider liner 215.0 · left",
+      "Hoist anchor cross pin · left",
+      8.621409887393543
+    ],
+    [
+      165,
+      0,
+      4.2,
+      "Hook slider liner 196.2 · right",
+      "Hoist anchor cross pin · right",
+      8.621409887393192
+    ],
+    [
+      165,
+      0,
+      4.2,
+      "Hook slider liner 215.0 · right",
+      "Hoist anchor cross pin · right",
+      8.621409887393602
+    ],
+    [
+      220,
+      0,
+      4.2,
+      "Hook slider liner 196.2 · left",
+      "Hoist anchor cross pin · left",
+      8.62140988739325
+    ],
+    [
+      220,
+      0,
+      4.2,
+      "Hook slider liner 215.0 · left",
+      "Hoist anchor cross pin · left",
+      8.621409887393543
+    ],
+    [
+      220,
+      0,
+      4.2,
+      "Hook slider liner 196.2 · right",
+      "Hoist anchor cross pin · right",
+      8.621409887393192
+    ],
+    [
+      220,
+      0,
+      4.2,
+      "Hook slider liner 215.0 · right",
+      "Hoist anchor cross pin · right",
+      8.621409887393602
+    ],
+    [
+      230,
+      0,
+      4.2,
+      "Hook slider liner 196.2 · left",
+      "Hoist anchor cross pin · left",
+      8.621409887393252
+    ],
+    [
+      230,
+      0,
+      4.2,
+      "Hook slider liner 215.0 · left",
+      "Hoist anchor cross pin · left",
+      8.621409887393543
+    ],
+    [
+      230,
+      0,
+      4.2,
+      "Hook slider liner 196.2 · right",
+      "Hoist anchor cross pin · right",
+      8.621409887393193
+    ],
+    [
+      230,
+      0,
+      4.2,
+      "Hook slider liner 215.0 · right",
+      "Hoist anchor cross pin · right",
+      8.621409887393602
+    ],
+    [
+      230,
+      8,
+      4.2,
+      "Hook slider liner 196.2 · left",
+      "Hoist anchor cross pin · left",
+      8.621409887393252
+    ],
+    [
+      230,
+      8,
+      4.2,
+      "Hook slider liner 215.0 · left",
+      "Hoist anchor cross pin · left",
+      8.621409887393543
+    ],
+    [
+      230,
+      8,
+      4.2,
+      "Hook slider liner 196.2 · right",
+      "Hoist anchor cross pin · right",
+      8.621409887393193
+    ],
+    [
+      230,
+      8,
+      4.2,
+      "Hook slider liner 215.0 · right",
+      "Hoist anchor cross pin · right",
+      8.621409887393602
+    ]
+  ],
+  "comparisons": 731,
+  "cheekPilots": [
+    {
+      "x": 7.500000000000002,
+      "z": 12.990381056766578,
+      "fullDepthMm": 7.5
+    },
+    {
+      "x": -15.0,
+      "z": 1.83697019872103e-15,
+      "fullDepthMm": 7.5
+    },
+    {
+      "x": 7.500000000000002,
+      "z": -12.990381056766578,
+      "fullDepthMm": 7.499999999999999
+    }
+  ],
+  "wrongStopAt226Mm": 101.36748113145237,
+  "wrongClockClutchMm3": [
+    96.23672924479402,
+    0.0
+  ],
+  "shaftFlatMm3": {
+    "Pivot cable drum · left": [
+      0.0,
+      3.7848972107284817,
+      3.7848972107283014
+    ],
+    "Pivot cable drum · right": [
+      0.0,
+      3.7848972107284817,
+      3.7848972107283014
+    ],
+    "Sliding pivot clutch": [
+      0.0,
+      5.677345816092732,
+      5.67734581609245
+    ]
+  },
+  "step": "8800e12f61ac3312639ffb1f727635878a4151f03f86da62e2e7d3d573950627"
+}

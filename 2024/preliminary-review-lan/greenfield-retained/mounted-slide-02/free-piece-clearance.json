@@ -1,0 +1,223 @@
+{
+  "serviceMesh": "097d848f4aee4423d7c6bab5549aa2f5d3231d02f595642d9b1b72e344d8e469",
+  "results": [
+    {
+      "resolution": 48,
+      "piece": "middle",
+      "acquisitionAndCarry": {
+        "minGuaranteedM": 0.00019400000000124873,
+        "minimumSampledM": 0.06019399999999997,
+        "part": "Slide drive motor",
+        "time": 5.29,
+        "largestChordMps": 0.7896714138171655
+      },
+      "shotAndCollection": {
+        "minGuaranteedM": 0.12528746930125423,
+        "minimumSampledM": 0.1972874693012463,
+        "part": "Slide drive motor",
+        "time": 0.5639999999999933,
+        "largestChordMps": 6.734338741724323
+      }
+    },
+    {
+      "resolution": 48,
+      "piece": "outer",
+      "acquisitionAndCarry": {
+        "minGuaranteedM": 0.00019549999999859957,
+        "minimumSampledM": 0.060195499999999985,
+        "part": "Slide drive motor",
+        "time": 3.73,
+        "largestChordMps": 0.792952255372288
+      },
+      "shotAndCollection": {
+        "minGuaranteedM": 0.12528522759632554,
+        "minimumSampledM": 0.1972852275963176,
+        "part": "Slide drive motor",
+        "time": 0.5639999999999933,
+        "largestChordMps": 6.72821822439507
+      }
+    },
+    {
+      "resolution": 48,
+      "piece": "inner",
+      "acquisitionAndCarry": {
+        "minGuaranteedM": 0.00018909999999591753,
+        "minimumSampledM": 0.06018909999999997,
+        "part": "Slide drive motor",
+        "time": 4.02,
+        "largestChordMps": 0.7854871355407413
+      },
+      "shotAndCollection": {
+        "minGuaranteedM": 0.12528915877028912,
+        "minimumSampledM": 0.1972891587702812,
+        "part": "Slide drive motor",
+        "time": 0.5639999999999933,
+        "largestChordMps": 6.752957267127845
+      }
+    },
+    {
+      "resolution": 48,
+      "piece": "center-high",
+      "acquisitionAndCarry": {
+        "minGuaranteedM": 0.0001919999999985822,
+        "minimumSampledM": 0.06019199999999997,
+        "part": "Slide drive motor",
+        "time": 3.84,
+        "largestChordMps": 0.7990089374343651
+      },
+      "shotAndCollection": {
+        "minGuaranteedM": 0.12528733570520684,
+        "minimumSampledM": 0.1972873357051989,
+        "part": "Slide drive motor",
+        "time": 0.5639999999999933,
+        "largestChordMps": 6.737032777266038
+      }
+    },
+    {
+      "resolution": 48,
+      "piece": "center-mid",
+      "acquisitionAndCarry": {
+        "minGuaranteedM": 0.0001951000000012526,
+        "minimumSampledM": 0.060195099999999974,
+        "part": "Slide drive motor",
+        "time": 4.03,
+        "largestChordMps": 0.786173343735337
+      },
+      "shotAndCollection": {
+        "minGuaranteedM": 0.12528890484965,
+        "minimumSampledM": 0.19728890484964207,
+        "part": "Slide drive motor",
+        "time": 0.5639999999999933,
+        "largestChordMps": 6.666973557839832
+      }
+    },
+    {
+      "resolution": 48,
+      "piece": "center-low",
+      "acquisitionAndCarry": {
+        "minGuaranteedM": 0.00019580000000124498,
+        "minimumSampledM": 0.060195799999999966,
+        "part": "Slide drive motor",
+        "time": 4.07,
+        "largestChordMps": 0.8100847591456114
+      },
+      "shotAndCollection": {
+        "minGuaranteedM": 0.1252860979165531,
+        "minimumSampledM": 0.19728609791654517,
+        "part": "Slide drive motor",
+        "time": 0.5639999999999933,
+        "largestChordMps": 6.752536492210235
+      }
+    },
+    {
+      "resolution": 96,
+      "piece": "middle",
+      "acquisitionAndCarry": {
+        "minGuaranteedM": 0.0001927999999959129,
+        "minimumSampledM": 0.06019279999999996,
+        "part": "Slide drive motor",
+        "time": 5.27,
+        "largestChordMps": 0.7888855347260462
+      },
+      "shotAndCollection": {
+        "minGuaranteedM": 0.1252915968488572,
+        "minimumSampledM": 0.19729159684884928,
+        "part": "Slide drive motor",
+        "time": 0.5639999999999656,
+        "largestChordMps": 6.755154917697243
+      }
+    },
+    {
+      "resolution": 96,
+      "piece": "outer",
+      "acquisitionAndCarry": {
+        "minGuaranteedM": 0.00019900000000125373,
+        "minimumSampledM": 0.060198999999999975,
+        "part": "Slide drive motor",
+        "time": 3.74,
+        "largestChordMps": 0.7846265988353955
+      },
+      "shotAndCollection": {
+        "minGuaranteedM": 0.12528727681234308,
+        "minimumSampledM": 0.19728727681233516,
+        "part": "Slide drive motor",
+        "time": 0.5639999999999656,
+        "largestChordMps": 6.7575885399390705
+      }
+    },
+    {
+      "resolution": 96,
+      "piece": "inner",
+      "acquisitionAndCarry": {
+        "minGuaranteedM": 0.0001895000000012581,
+        "minimumSampledM": 0.06018949999999998,
+        "part": "Slide drive motor",
+        "time": 4.04,
+        "largestChordMps": 0.7888317123442752
+      },
+      "shotAndCollection": {
+        "minGuaranteedM": 0.12528300218291005,
+        "minimumSampledM": 0.19728300218290212,
+        "part": "Slide drive motor",
+        "time": 0.5639999999999656,
+        "largestChordMps": 6.7504988962475885
+      }
+    },
+    {
+      "resolution": 96,
+      "piece": "center-high",
+      "acquisitionAndCarry": {
+        "minGuaranteedM": 0.00019180000000124098,
+        "minimumSampledM": 0.06019179999999996,
+        "part": "Slide drive motor",
+        "time": 4.11,
+        "largestChordMps": 0.7976155264913048
+      },
+      "shotAndCollection": {
+        "minGuaranteedM": 0.1252909348647155,
+        "minimumSampledM": 0.19729093486470756,
+        "part": "Slide drive motor",
+        "time": 0.5639999999999656,
+        "largestChordMps": 6.753095348958393
+      }
+    },
+    {
+      "resolution": 96,
+      "piece": "center-mid",
+      "acquisitionAndCarry": {
+        "minGuaranteedM": 0.00019240000000125823,
+        "minimumSampledM": 0.06019239999999998,
+        "part": "Slide drive motor",
+        "time": 4.0,
+        "largestChordMps": 0.7888736464732476
+      },
+      "shotAndCollection": {
+        "minGuaranteedM": 0.12528224742213662,
+        "minimumSampledM": 0.1972822474221287,
+        "part": "Slide drive motor",
+        "time": 0.5639999999999656,
+        "largestChordMps": 6.753086877051156
+      }
+    },
+    {
+      "resolution": 96,
+      "piece": "center-low",
+      "acquisitionAndCarry": {
+        "minGuaranteedM": 0.0001947999999959149,
+        "minimumSampledM": 0.060194799999999965,
+        "part": "Slide drive motor",
+        "time": 4.06,
+        "largestChordMps": 0.7882916986116262
+      },
+      "shotAndCollection": {
+        "minGuaranteedM": 0.12529153718009345,
+        "minimumSampledM": 0.19729153718008552,
+        "part": "Slide drive motor",
+        "time": 0.5639999999999656,
+        "largestChordMps": 6.756480739627385
+      }
+    }
+  ],
+  "minimumM": 0.00018909999999591753,
+  "assumptions": "Circumsphere with 177.8 mm radius. Robot-frame centers for carry and stationary field-frame centers for the outgoing NOTE. Each interval deducts half the interval times a 12 m/s relative speed bound. Motor box includes all motor terminals. This excludes other loose floor NOTES and post-shot robot departure."
+}

@@ -1,0 +1,22 @@
+{
+  "predecessor": "db9eda32dcc43e6439735fe9671c37b6cfe590840fd7937935977efb1b01d19d",
+  "carry": {
+    "R01-center-low-96": "a3cf37c0063e5b67cbdec207273ee0ed0f0ce9071b0bf5bc4c84f94dcbd650d8",
+    "dev-center-low-96": "59d614e3c17b73246bb9e92f272c4d5f9cd198e158a3c71af596b87ef136b868",
+    "dev-center-low-48": "0c17e057b53b544636df8e46aa7161f0051058f214f1ffed428004643b319eb8"
+  },
+  "stationM": [
+    1.54,
+    5.55
+  ],
+  "pitchDeg": 125,
+  "setpointsMps": [
+    6.74,
+    6.88,
+    7.02
+  ],
+  "changed": "Only the launch-belt setpoint changes. Each shot starts from the same saved incoming free NOTE and rotor states for that row.",
+  "readout": "Full opening margin, both official detector pairs, release and credited time, minimum weak-pack voltage. Exclude a setting if it loses either nominal configuration, fails the known miss or falls below 8 V. A surviving setting is a candidate for a new full campaign, never retroactive credit.",
+  "baseline": "Reuse exact 6.88 m/s issued shots for all three rows.",
+  "scope": "One calibration case with two matched nominal controls. The frozen 19/20 result remains intact."
+}

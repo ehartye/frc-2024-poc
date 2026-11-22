@@ -1,0 +1,102 @@
+{
+  "url": "http://192.168.1.129:8764/data.json",
+  "sha": "a7811604f921787c6f6e6f21344172c36b9f383c4d434cfadf77f34bbde58e7d",
+  "checks": [
+    {
+      "resolution": 48,
+      "id": "middle",
+      "checked": 240,
+      "largestDisplayErrorMm": 6.248439812923799e-05,
+      "displayToShotMm": 9.904462973610447e-06,
+      "oldFullStrokeErrorMm": 440.0
+    },
+    {
+      "resolution": 48,
+      "id": "outer",
+      "checked": 211,
+      "largestDisplayErrorMm": 5.48688701744812e-05,
+      "displayToShotMm": 8.073709860541017e-05,
+      "oldFullStrokeErrorMm": 440.0
+    },
+    {
+      "resolution": 48,
+      "id": "inner",
+      "checked": 211,
+      "largestDisplayErrorMm": 5.018741342555455e-05,
+      "displayToShotMm": 7.722152661405175e-05,
+      "oldFullStrokeErrorMm": 350.0
+    },
+    {
+      "resolution": 48,
+      "id": "center-high",
+      "checked": 211,
+      "largestDisplayErrorMm": 5.097719780404575e-05,
+      "displayToShotMm": 4.022498808495264e-05,
+      "oldFullStrokeErrorMm": 440.0
+    },
+    {
+      "resolution": 48,
+      "id": "center-mid",
+      "checked": 254,
+      "largestDisplayErrorMm": 5.2201169772699795e-05,
+      "displayToShotMm": 3.18371838965061e-05,
+      "oldFullStrokeErrorMm": 440.0
+    },
+    {
+      "resolution": 48,
+      "id": "center-low",
+      "checked": 273,
+      "largestDisplayErrorMm": 5.3586560102343755e-05,
+      "displayToShotMm": 4.391925309218596e-05,
+      "oldFullStrokeErrorMm": 440.0
+    },
+    {
+      "resolution": 96,
+      "id": "middle",
+      "checked": 240,
+      "largestDisplayErrorMm": 6.887145012538609e-05,
+      "displayToShotMm": 6.964317448718228e-05,
+      "oldFullStrokeErrorMm": 440.0
+    },
+    {
+      "resolution": 96,
+      "id": "outer",
+      "checked": 211,
+      "largestDisplayErrorMm": 4.9879827311469793e-05,
+      "displayToShotMm": 6.514555664576849e-05,
+      "oldFullStrokeErrorMm": 440.0
+    },
+    {
+      "resolution": 96,
+      "id": "inner",
+      "checked": 211,
+      "largestDisplayErrorMm": 5.1089530759318364e-05,
+      "displayToShotMm": 6.734441908910853e-05,
+      "oldFullStrokeErrorMm": 350.0
+    },
+    {
+      "resolution": 96,
+      "id": "center-high",
+      "checked": 211,
+      "largestDisplayErrorMm": 5.050082541762722e-05,
+      "displayToShotMm": 5.1935114163288994e-05,
+      "oldFullStrokeErrorMm": 440.0
+    },
+    {
+      "resolution": 96,
+      "id": "center-mid",
+      "checked": 254,
+      "largestDisplayErrorMm": 5.1402519103445145e-05,
+      "displayToShotMm": 7.37932864874277e-05,
+      "oldFullStrokeErrorMm": 440.0
+    },
+    {
+      "resolution": 96,
+      "id": "center-low",
+      "checked": 273,
+      "largestDisplayErrorMm": 4.971492021919781e-05,
+      "displayToShotMm": 5.016703421748735e-05,
+      "oldFullStrokeErrorMm": 440.0
+    }
+  ]
+}

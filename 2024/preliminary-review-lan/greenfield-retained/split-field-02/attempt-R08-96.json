@@ -1,0 +1,53 @@
+{
+  "attempt": "R08",
+  "n": 96,
+  "score": 2,
+  "passAttempt": false,
+  "elapsed": 43.730101522003054,
+  "parts": [
+    {
+      "id": "middle",
+      "carry": "b282f03108e2f06eb60fa66fa5b5fc7dd4256b86de5ca86a15163f75605112e1",
+      "held": true,
+      "seat": true,
+      "endCarryClock": 10.196068093916782,
+      "shot": "f233e4b04266a19c00b40d7f8063400193701c33dd5630936877dc9b6288076b",
+      "wholeOpening": {
+        "firstPossibleS": 1.0074999999999201,
+        "fullyThroughByS": 1.0952499999999494,
+        "minimumMarginM": 0.09896878379289073
+      },
+      "both": 4.473999999999722,
+      "bus": 8.349208373679973,
+      "credited": true,
+      "clock": 14.670068093916505
+    },
+    {
+      "id": "outer",
+      "carry": "4060db7a75665edb54c0ef4212ebff80c44ff67c6e9aa41ba1aacebf6ffd4289",
+      "held": true,
+      "seat": true,
+      "endCarryClock": 26.94974986747279,
+      "shot": "5c67c84e4ae0cdfe7022606e16495dca7cad0d14d33526da030088df3f1ea396",
+      "wholeOpening": {
+        "firstPossibleS": 1.0087499999999205,
+        "fullyThroughByS": 1.0899999999999477,
+        "minimumMarginM": 0.10219005078151333
+      },
+      "both": 4.504249999999759,
+      "bus": 8.349213308453908,
+      "credited": true,
+      "clock": 31.453999867472547
+    },
+    {
+      "id": "inner",
+      "carry": "fb3cfbf3808653be527e061bf13c9db72163da4883aded8ba203ec9f3117b17c",
+      "held": true,
+      "seat": false,
+      "endCarryClock": 43.730101522003054,
+      "credited": false,
+      "clock": 43.730101522003054
+    }
+  ],
+  "config": "db9eda32dcc43e6439735fe9671c37b6cfe590840fd7937935977efb1b01d19d"
+}

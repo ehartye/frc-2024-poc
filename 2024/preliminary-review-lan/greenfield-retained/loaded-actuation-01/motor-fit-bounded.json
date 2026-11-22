@@ -1,0 +1,9 @@
+{
+  "processId": 2680,
+  "command": "\"C:\\Users\\ehart\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" motor_fit.py",
+  "elapsedSeconds": 652.0077861,
+  "cpuSeconds": 645.359375,
+  "status": "ten-minute occupied-shape budget exhausted before four-clock report",
+  "input": "A8ACED44395CEA5BED9EA942277273EE8F39277E0CD783EBB504B40B4A6A141B",
+  "alternate": "motor-envelope.json"
+}

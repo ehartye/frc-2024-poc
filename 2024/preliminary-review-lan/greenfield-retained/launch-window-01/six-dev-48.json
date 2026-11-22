@@ -1,0 +1,86 @@
+{
+  "start": "dev",
+  "n": 48,
+  "rows": [
+    {
+      "id": "middle",
+      "passShot": true,
+      "opening": {
+        "firstPossibleS": 1.0099999999999443,
+        "fullyThroughByS": 1.1104999999999332,
+        "minimumMarginM": 0.05422415067101103
+      },
+      "both": 3.774500000000428,
+      "arrival": 13.9830238523779,
+      "fieldSha": "197ab72030f8d9a22f9af8812bb7f7105d489551861d7711f5c1ef23cce91250",
+      "minBusV": 8.344286851719724
+    },
+    {
+      "id": "outer",
+      "passShot": true,
+      "opening": {
+        "firstPossibleS": 1.011499999999944,
+        "fullyThroughByS": 1.0994999999999344,
+        "minimumMarginM": 0.1187903481185958
+      },
+      "both": 3.158500000000222,
+      "arrival": 29.421205625934405,
+      "fieldSha": "e49ce9100e081bc3ed436310bedae114874c4d1b981a582cb19a59d6b3a3e46e",
+      "minBusV": 8.344287465475334
+    },
+    {
+      "id": "inner",
+      "passShot": true,
+      "opening": {
+        "firstPossibleS": 1.0089999999999444,
+        "fullyThroughByS": 1.1079999999999335,
+        "minimumMarginM": 0.06647771522409932
+      },
+      "both": 3.772500000000427,
+      "arrival": 45.46980728046534,
+      "fieldSha": "fa0c02eb07ba3aeacc867d9dbe891b9c496b7c3b99f7ce119a620254df2c8237",
+      "minBusV": 8.344286841979393
+    },
+    {
+      "id": "center-high",
+      "passShot": true,
+      "opening": {
+        "firstPossibleS": 1.013499999999944,
+        "fullyThroughByS": 1.1174999999999324,
+        "minimumMarginM": 0.037532689258607636
+      },
+      "both": 3.796500000000435,
+      "arrival": 63.937453498412985,
+      "fieldSha": "e954ac178b0e4278feb347ad113bc95ba5da7ed0bf34999a6ee425bcb018ff78",
+      "minBusV": 8.344286681770603
+    },
+    {
+      "id": "center-mid",
+      "passShot": true,
+      "opening": {
+        "firstPossibleS": 1.011499999999944,
+        "fullyThroughByS": 1.1134999999999329,
+        "minimumMarginM": 0.02984892784339507
+      },
+      "both": 3.0335000000001804,
+      "arrival": 86.7402417092847,
+      "fieldSha": "f6d46b1d278b251544b4c4b7d1d1262e4731ea7a1638a94733d4f364c989d843",
+      "minBusV": 8.344287529173414
+    },
+    {
+      "id": "center-low",
+      "passShot": true,
+      "opening": {
+        "firstPossibleS": 1.011999999999944,
+        "fullyThroughByS": 1.0989999999999345,
+        "minimumMarginM": 0.09877924547570201
+      },
+      "both": 3.697500000000402,
+      "arrival": 112.4487929271237,
+      "fieldSha": "530e8d22b3e4ec70c5575699573f02924f7a2d6db8b750a515d6f767476b052d",
+      "minBusV": 8.344287585834383
+    }
+  ],
+  "score": 6,
+  "passMission": true
+}
