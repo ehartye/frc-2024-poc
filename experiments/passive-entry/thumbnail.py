@@ -40,7 +40,7 @@ def build():
                 faces.extend([base+a-1,base+b-1,base+c-1])
             explorer.Next()
         groups.append({"name":row["name"],"v":verts,"f":faces})
-    path=HERE.parents[1]/"docs/passive-cassette.json"
+    path=HERE.parents[1]/"docs/detailed-design/archive/draft-001/passive-cassette.json"
     path.write_bytes((json.dumps({"stepSha256":receipt["stepSha256"],"groups":groups},separators=(",",":"))+"\n").encode())
 
 if __name__=="__main__":build()

@@ -70,7 +70,7 @@ To regenerate, use `export_swerve.extract(display_archive, display_sha, folder)`
 ```text
 python scripts/showcase/build_model.py <folder>/manifest.json <folder>/public-floor.glb --public
 python scripts/showcase/register_swerve_replay.py <folder> <comparison.json> <registration.json>
-python scripts/showcase/build_replay.py <folder>/public-floor.glb docs/media/swerve-r7.glb sim/pressure/evidence/maxswerve-development-shot.json <carry> <shot> <field> --registered-motion <registration.json>
+python scripts/showcase/build_replay.py <folder>/public-floor.glb docs/detailed-design/archive/draft-001/media/swerve-r7.glb sim/pressure/evidence/maxswerve-development-shot.json <carry> <shot> <field> --registered-motion <registration.json>
 ```
 
-The [public model receipt](../../docs/media/swerve-r7.json) identifies the CAD revisions, trace digests and displayed geometry. R7 shot clearance and mission repeatability require their own checks.
+The [public model receipt](../../docs/detailed-design/archive/draft-001/media/swerve-r7.json) identifies the CAD revisions, trace digests and displayed geometry. R7 shot clearance and mission repeatability require their own checks.

@@ -5,7 +5,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 STUDY = ROOT / "experiments/passive-entry"
-DOCS = ROOT / "docs"
+DOCS = ROOT / "docs/detailed-design/archive/draft-001"
 
 def read(path):
     return json.loads(path.read_bytes())
@@ -76,7 +76,7 @@ class PassiveEntry(unittest.TestCase):
             for corner in ("Front left","Front right","Rear left","Rear right"):
                 self.assertIn({corner+" wheel hub",corner+" tire"},pairs)
         self.assertIn('src="media/swerve-r7.glb"',(DOCS/"index.html").read_text(encoding="utf-8"))
-        self.assertIn("?view=r9-assembly#model",(ROOT/"README.md").read_text(encoding="utf-8"))
+        self.assertIn("frc-2024-poc/detailed-design/",(ROOT/"README.md").read_text(encoding="utf-8"))
 
 if __name__=="__main__":
     unittest.main()

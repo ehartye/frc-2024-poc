@@ -61,7 +61,7 @@ def classify(name):
 def budget(survey, manifest, *, independent_bounds=False):
     assembly = json.loads(survey.read_bytes())
     display = json.loads(manifest.read_bytes())
-    identity = json.loads((ROOT / "docs/media/swerve-r7.json").read_bytes())
+    identity = json.loads((ROOT / "docs/detailed-design/archive/draft-001/media/swerve-r7.json").read_bytes())
     if assembly["archive"] != display["sourceSha256"] or assembly["archive"] != identity["sourceSha256"]:
         raise ValueError("The material survey and display must both belong to R7")
     electrical = {r["id"]: r["massKg"] for r in json.loads(
