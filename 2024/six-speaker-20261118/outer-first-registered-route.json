@@ -1,0 +1,45 @@
+{
+  "firstMark": "middle",
+  "yaw": 245.0,
+  "native": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "field": "42c91b3efb9521d059c13cf25e2d7dda6315bdd6b7eb1202847bfe84ffb43c1a",
+  "fieldBounds": "a43889e63d4f793b884e2094d682c887bc7b3c5044ce5033224b306f4ada3096",
+  "stop": "3dc7df0d5fbcb7f9a001a9d56ba6659da2ffef030f56940f4d9e0385d0a9abea",
+  "results": [
+    {
+      "begin": 16.479700000017857,
+      "end": 35.08210000000278,
+      "intervals": 41244,
+      "unresolvedIntervals": 0,
+      "firstUnresolved": null,
+      "minimumReportedAxisGapM": 0.0935929899846828
+    },
+    {
+      "begin": 35.08210000000278,
+      "end": 41.615100000033976,
+      "intervals": 13066,
+      "unresolvedIntervals": 4526,
+      "firstUnresolved": {
+        "t": 39.35210000002317,
+        "pairs": [
+          [
+            "body-696-1",
+            "FE-2024/GE-24200_Blue/GE-24207_Blue"
+          ],
+          [
+            "body-701-1",
+            "FE-2024/GE-24200_Blue/GE-24207_Blue"
+          ]
+        ]
+      },
+      "minimumReportedAxisGapM": 2.998779658991424e-05
+    }
+  ],
+  "release": "967f787e4a92f3ff7294efd9c3cabc64b60ee035723496db7482e681fc9c862c",
+  "delivery": "2a04ebb0fd8a88997b8375684f52180331434634f89a9cbe7fa101c24e44c8ee",
+  "entryAcquisition": "c025d45afc88c2fcf6fe82213ac32455b5fbd957e935959e781aacbfbbffa891",
+  "entryRelease": "2b65cf164a454630ba0afe1b4467113656aee06f5dc1e92b99c5e7b1925bcb79",
+  "followingTraces": [
+    "d031c33b020237683e1466d6f900345219ebb72472658046d66f7282be538ff1"
+  ]
+}
