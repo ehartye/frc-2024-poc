@@ -6,6 +6,8 @@
 **1780 MAXSwerve · R9 physical assembly.** Parked robot with its inboard lift drive, frame, removable bumper and electrical supports. Purchased mechanisms use dimensioned external models. This view records mechanical fit in CAD. [Native model record](docs/media/r9-assembly.json) · [Inspect the parked assembly](https://ehartye.github.io/frc-2024-poc/?view=r9-assembly#model)
 <!-- /cad-still -->
 
+[Explore the work-in-progress preliminary design](https://ehartye.github.io/frc-2024-poc/preliminary-design/) · [Open preliminary release 001](https://ehartye.github.io/frc-2024-poc/preliminary-design/?release=001). The interactive review shows the guided cassette, six-NOTE scoring cycle, climb and resource budgets.
+
 [Download the editable R9 robot](cad/student/r9-physical-assembly.f3d) · [Assembly sequence and fit results](cad/assembly-readiness/physical-assembly.md) · [Shop drawings](cad/assembly-readiness/drawings/r9-shop-drawings.pdf)
 
 [Blue 3 role comparison, service availability and whole-robot support review](experiments/alliance-service/study.md)
