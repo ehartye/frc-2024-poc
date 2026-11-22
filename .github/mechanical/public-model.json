@@ -78,10 +78,56 @@
   ],
   "preliminaryReadmeLink": "https://ehartye.github.io/frc-2024-poc/preliminary-design/",
   "preliminaryReadmeArchive": {
-    "archive": "cad/preliminary-design/history/readme-before-consolidation.md",
-    "archivedSha256": "be71d6d5de0d929c10099e9efd009f3432d95e41b168cbe73996dbb50d28edaa",
-    "readmeSha256": "64759e4c7550bdf7d9ca713ea2c31d35dbb7ef2c9d18da29ec8960950bc77257",
+    "archive": "cad/preliminary-design/history/readme-before-withdrawal.md",
+    "archivedSha256": "64759e4c7550bdf7d9ca713ea2c31d35dbb7ef2c9d18da29ec8960950bc77257",
+    "readmeSha256": "714ca76c942fbb41c233a715ed02e702db9f09530e915dfaed6f1ecead5716bd",
     "image": "cad/preliminary-design/media/002-preliminary-robot.png",
     "imageSha256": "dc7c92897c250f88dfc0194cc38633c08dd528684e0131fb6fbd34e98be84c96"
+  },
+  "detailedDesigns": {
+    "index": "docs/detailed-design/designs.json",
+    "withdrawn": [
+      {
+        "design": "draft-001",
+        "reason": "Rough draft published before the design-status process. It never passed a mechanical-readiness review.",
+        "files": {
+          "docs/index.html": "docs/detailed-design/archive/draft-001/index.html",
+          "docs/media/final-release.jpg": "docs/detailed-design/archive/draft-001/media/final-release.jpg",
+          "docs/media/final-release.mp4": "docs/detailed-design/archive/draft-001/media/final-release.mp4",
+          "docs/media/first-film-index.json": "docs/detailed-design/archive/draft-001/media/first-film-index.json",
+          "docs/media/r7-first-index.json": "docs/detailed-design/archive/draft-001/media/r7-first-index.json",
+          "docs/media/r7-nominal-d1.glb": "docs/detailed-design/archive/draft-001/media/r7-nominal-d1.glb",
+          "docs/media/r8-stage.glb": "docs/detailed-design/archive/draft-001/media/r8-stage.glb",
+          "docs/media/r8-stage.png": "docs/detailed-design/archive/draft-001/media/r8-stage.png",
+          "docs/media/r9-assembly.glb": "docs/detailed-design/archive/draft-001/media/r9-assembly.glb",
+          "docs/media/r9-assembly.json": "docs/detailed-design/archive/draft-001/media/r9-assembly.json",
+          "docs/media/r9-assembly.png": "docs/detailed-design/archive/draft-001/media/r9-assembly.png",
+          "docs/media/robot-native.glb": "docs/detailed-design/archive/draft-001/media/robot-native.glb",
+          "docs/media/robot-native.json": "docs/detailed-design/archive/draft-001/media/robot-native.json",
+          "docs/media/robot-native.png": "docs/detailed-design/archive/draft-001/media/robot-native.png",
+          "docs/media/six-score-route.jpg": "docs/detailed-design/archive/draft-001/media/six-score-route.jpg",
+          "docs/media/six-score-route.mp4": "docs/detailed-design/archive/draft-001/media/six-score-route.mp4",
+          "docs/media/swerve-first-shot.webm": "docs/detailed-design/archive/draft-001/media/swerve-first-shot.webm",
+          "docs/media/swerve-r7.glb": "docs/detailed-design/archive/draft-001/media/swerve-r7.glb",
+          "docs/media/swerve-r7.json": "docs/detailed-design/archive/draft-001/media/swerve-r7.json",
+          "docs/media/swerve-r7.png": "docs/detailed-design/archive/draft-001/media/swerve-r7.png",
+          "docs/media/swerve-underside.png": "docs/detailed-design/archive/draft-001/media/swerve-underside.png",
+          "docs/media/wing-acquisition.jpg": "docs/detailed-design/archive/draft-001/media/wing-acquisition.jpg",
+          "docs/media/wing-acquisition.mp4": "docs/detailed-design/archive/draft-001/media/wing-acquisition.mp4",
+          "docs/passive-cassette.json": "docs/detailed-design/archive/draft-001/passive-cassette.json",
+          "docs/passive-entry.html": "docs/detailed-design/archive/draft-001/passive-entry.html",
+          "docs/passive-entry.js": "docs/detailed-design/archive/draft-001/passive-entry.js",
+          "docs/passive-entry.json": "docs/detailed-design/archive/draft-001/passive-entry.json",
+          "docs/robot-model.js": "docs/detailed-design/archive/draft-001/robot-model.js",
+          "docs/robot.css": "docs/detailed-design/archive/draft-001/robot.css",
+          "docs/robot/cad/assembly.png": "docs/detailed-design/archive/draft-001/robot/cad/assembly.png",
+          "docs/robot/cad/assembly.stl.gz": "docs/detailed-design/archive/draft-001/robot/cad/assembly.stl.gz",
+          "docs/robot/cad/index.html": "docs/detailed-design/archive/draft-001/robot/cad/index.html",
+          "docs/robot/cad/receipt.json": "docs/detailed-design/archive/draft-001/robot/cad/receipt.json",
+          "docs/vendor/model-viewer-4.1.0.min.js": "docs/detailed-design/archive/draft-001/vendor/model-viewer-4.1.0.min.js",
+          "cad-showcase.json": "cad/history/draft-001/cad-showcase.json"
+        }
+      }
+    ]
   }
 }
