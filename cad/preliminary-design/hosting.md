@@ -6,7 +6,7 @@ From the season checkout, run `python -m http.server 8000 --directory docs` and 
 
 Each numbered directory contains its launch page, scripts, styling, compressed scene, budgets, motion traces and release record. The viewer loads the compressed JSON in the browser. A new release gets a new directory and an entry in `releases.json`; append the new ID in chronological order and update `current` after verifying the release. The selector reads descriptive titles from each revision and shows the newest first. Keep previously published directories intact.
 
-The geometry is a preliminary robot blockout. Revision 003 loads the grey scoring speaker from the official field CAD. The robot, scoring evidence and earlier releases remain available in the same viewer. Inspect the evidence and open qualifications within each replay before using a simulation result for a design decision.
+The geometry is a preliminary robot blockout. Revision 004 loads the blue stage, all three chains and the grey scoring speaker from the official field CAD. The robot, scoring evidence and earlier releases remain available in the same viewer. Inspect the evidence and open qualifications within each replay before using a simulation result for a design decision.
 
 ### What revision 002 checks
 

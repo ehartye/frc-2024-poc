@@ -75,9 +75,11 @@ async function check(page, query, release, motion) {
       observations.push(row);
       console.log(JSON.stringify(row));
     }
+    const archivedSpeaker = await check(page,'?release=003','003','continuous-cycle-96');
+    assert.equal(archivedSpeaker.end, observations[0].end);
     for (const motion of ['continuous-cycle-96','continuous-cycle-48','score-to-climb-front','score-to-climb-rear']) {
       const query = motion === 'continuous-cycle-96' ? '' : '?case='+motion;
-      const live = await check(page,query,'003',motion);
+      const live = await check(page,query,'004',motion);
       const prior = observations.find(r => r.release === '002' && r.motion === motion);
       for (const key of ['end','inventory','weight','power']) assert.equal(live[key],prior[key],motion+' '+key);
     }
@@ -100,7 +102,7 @@ async function check(page, query, release, motion) {
         assert.ok(edge < 1,'Speaker opening is clipped at width '+width+' and fraction '+fraction);
       }
     }
-    await scene.locator('#speakerStatus[data-ready="true"]').waitFor({timeout:180000});
+    await scene.locator('#fieldStatus[data-fixture="speaker"][data-ready="true"]').waitFor({timeout:180000});
     const counts = await scene.locator('#canvas').evaluate(() =>
       Object.fromEntries(['speakerPanel','speakerRamp','sensors'].map(k => [k,sceneGPU.fixtures[k].count/3])));
     assert.ok(counts.speakerPanel>100000 && counts.speakerRamp>5000 && counts.sensors>100,
@@ -108,6 +110,45 @@ async function check(page, query, release, motion) {
     const shellImage = sha(await scene.locator('#canvas').screenshot());
     await scene.locator('#cutaway').check();
     assert.notEqual(sha(await scene.locator('#canvas').screenshot()),shellImage,'Speaker cutaway must reveal the interior');
+    for (const approach of ['front','rear']) {
+      const motion='score-to-climb-'+approach;
+      await scene.locator('#motion').evaluate((select,key)=>{
+        select.selectedIndex=data.cases.findIndex(c=>c.key===key);
+        select.dispatchEvent(new Event('change'));
+      },motion);
+      await scene.locator('#fieldStatus[data-fixture="stage"][data-ready="true"]').waitFor({timeout:180000});
+      const poses=await scene.locator('#time').evaluate(el=>{
+        const names=['stageSteel','anchors','workingChain','otherChain'];
+        const fixture=sceneGPU.fixtures,c=current(),poses=[];
+        const originalDraw=gl.drawArrays;
+        try{
+          for(const t of [0,Math.round(Number(el.max)/2),Number(el.max)]){
+            el.value=t;
+            const draws={};
+            gl.drawArrays=function(...args){
+              const buffer=this.getParameter(this.ARRAY_BUFFER_BINDING);
+              const name=names.find(n=>fixture[n].buffer===buffer);
+              if(name)draws[name]={triangles:args[2]/3,bent:!!this.getUniform(program,locationMap.bend)};
+              return originalDraw.apply(this,args);
+            };
+            render();
+            const offset=gl.getUniform(program,gl.getUniformLocation(program,'offsets[12]'));
+            const expected=c.chain[t][12][2]-c.chain[0][12][2];
+            poses.push({draws,dz:offset[2],expected});
+          }
+        }finally{gl.drawArrays=originalDraw}
+        return poses;
+      });
+      for(const {draws,dz,expected} of poses){
+        assert.deepEqual(Object.keys(draws).sort(),['anchors','otherChain','stageSteel','workingChain']);
+        assert.ok(draws.stageSteel.triangles>100000 && draws.anchors.triangles>1000 && draws.workingChain.triangles>50000);
+        assert.equal(draws.otherChain.triangles,2*draws.workingChain.triangles);
+        assert.deepEqual(Object.keys(draws).filter(k=>draws[k].bent),['workingChain']);
+        assert.ok(Math.abs(dz-expected)<.001,'CAD chain follows the recorded midpoint displacement');
+      }
+      assert.equal(poses[0].dz,0);
+      assert.ok(poses.at(-1).dz < -45,'Loaded chain sags at power cut');
+    }
     await page.goto(new URL('?release=missing',root).href);
     await page.locator('[role=alert]').waitFor({state:'visible'});
     await page.selectOption('#release','001');
