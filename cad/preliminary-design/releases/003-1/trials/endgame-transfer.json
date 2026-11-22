@@ -1,0 +1,81 @@
+{
+  "step": "a29a146d8897f64e8f056fcb46a431ba234c7aecccbc3233b6834c43c703bc88",
+  "serviceParts": "587441e076a41b1c27afd4a50c538c5ad1413f7de64db7ee05620495a1642e14",
+  "robotBodies": 255,
+  "obstacleAndPeerSlabs": 3894,
+  "waiting": [
+    6611.378898962996,
+    4104.32
+  ],
+  "start": [
+    1390.0,
+    5871.0
+  ],
+  "path": [
+    [
+      1390.0,
+      5871.0
+    ],
+    [
+      6115.0,
+      6321.0
+    ],
+    [
+      6340.0,
+      6096.0
+    ],
+    [
+      6611.378898962996,
+      4104.32
+    ]
+  ],
+  "legsS": [
+    4.812459690217041,
+    0.9534869113401556,
+    2.53221245130288
+  ],
+  "driveS": 8.298159052860075,
+  "plannedPoseChangeS": 1.0,
+  "slew": {
+    "minimumSlabMm": 460.1687596548063,
+    "at": [
+      122.0,
+      "Blue bumper set",
+      "FE-2024/GE-24200_Blue/GE-24210/FE-01021/FE-01020/FE-01020-01"
+    ],
+    "pass5mm": true
+  },
+  "segmentHits": [
+    [],
+    [],
+    []
+  ],
+  "blockedShortcut": [
+    [
+      "Blade retaining screw 1",
+      "FE-2024/GE-24200_Blue/GE-24205/GE-24205_hanging"
+    ],
+    [
+      "Blade retaining screw 1",
+      "FE-2024/GE-24200_Blue/GE-24220_GE-24220 Tag14/GE-24222"
+    ],
+    [
+      "Blade retaining screw 1",
+      "FE-2024/GE-24200_Blue/GE-24220_GE-24220 Tag14/GE-24240/GE-24241"
+    ],
+    [
+      "Blade retaining screw 1",
+      "FE-2024/GE-24200_Blue/GE-24220_GE-24220 Tag14/GE-24240/GE-24243"
+    ],
+    [
+      "Blade retaining screw 1",
+      "FE-2024/GE-24200_Blue/GE-24220_GE-24220 Tag15/GE-24222"
+    ]
+  ],
+  "earlierRouteArrivalAtWaitS": 10.074926822419265,
+  "earlierPowerCutS": 22.78678471445834,
+  "powerCutFromSixthS": 22.01001694489915,
+  "remainingIn24S": 1.9899830551008506,
+  "holdToEndS": 27.010016944887496,
+  "scope": "Continuous field slabs for travel with robot at 122 degrees, including the new motor package. At the waiting point the unloaded cassette moves to the prior 125-degree approach. Subsequent 230 mm guided climb uses the existing forward-CG physics trial and an archived five-peer field envelope. This composes geometry and timing. Service overlays, changed mass, live traffic and field availability require their own checks during the loaded climb."
+}
