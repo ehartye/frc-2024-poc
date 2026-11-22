@@ -1,0 +1,97 @@
+{
+  "schema": "second-wing-acquisition/1",
+  "firstReleaseTrace": "a9ba1e6409e09b42abf4f8558dbc0b2fd1bb97612f2b4312a43ff6308f7f9380",
+  "nativeSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "trace": "2a5a4fe35258d1457e96d291b61fb8a322b086006cdef6e7d5f19f6815abb1f0",
+  "initialRobotQ": [
+    1.263150000362002,
+    -1.2881923206174513,
+    -1.1358869590755307,
+    0.4483409311198113,
+    1.051519281620678,
+    24579.30490755602,
+    24601.01968148203,
+    24685.15731739049,
+    24707.947677200264
+  ],
+  "initialRobotV": [
+    -0.0026815203532341196,
+    0.005771541852665099,
+    0.003974503785417916,
+    -0.00027548311555513873,
+    0.006933715163153225,
+    297.80974217001045,
+    297.60984297076885,
+    299.4660219622155,
+    299.2520658359598
+  ],
+  "initialRotors": [
+    -0.07151972965402448,
+    -0.034057962568374726,
+    -132.06346119833202,
+    -132.044164327627
+  ],
+  "initialBusV": 10.572845597750135,
+  "start": 97.97740000037497,
+  "end": 107.75740000042167,
+  "firstBilateral": 106.08290000041367,
+  "seated": 107.75740000042167,
+  "minimumBusV": 9.91818451056754,
+  "peakLocalBrakingW": 305.94530098556646,
+  "outcome": "SEATED",
+  "dt": 0.0005,
+  "grid": 512,
+  "traceStride": 1,
+  "firstMark": "middle",
+  "fieldYawDeg": 245.0,
+  "retreatM": 0.0,
+  "approachHeadingDeg": null,
+  "captureStandoffM": 0.0,
+  "viaFieldXY": [
+    [
+      2.17,
+      5.55
+    ],
+    [
+      2.9,
+      6.19
+    ],
+    [
+      3.6,
+      6.8
+    ],
+    [
+      6.65,
+      6.85
+    ],
+    [
+      8.45,
+      6.5
+    ],
+    [
+      9.11,
+      5.55
+    ],
+    [
+      9.3,
+      3.49
+    ]
+  ],
+  "transitSpeedMps": 3.0,
+  "reverseTransit": true,
+  "waitingNoteLocalXY": [
+    -0.3015369628065748,
+    5.483520309311615
+  ],
+  "pieceId": "center-low",
+  "collectedMarks": [
+    "middle",
+    "outer",
+    "inner",
+    "center-high",
+    "center-mid",
+    "center-low"
+  ],
+  "lookaheadM": 0.54,
+  "captureSpeedMps": 0.28
+}

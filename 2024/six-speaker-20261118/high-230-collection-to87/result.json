@@ -1,0 +1,37 @@
+{
+  "schema": "speaker-field-contact/1",
+  "sourceTrace": "e06fb35283d5c4a3a229b3b8bf2bad25ac9f34e780b65b1bb3a2a679c30c1c7f",
+  "nativeSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "field": {
+    "panels.json": "179593289b9850e7bc88db0573088657a1143b745040c8b269a5f74ae1594d85",
+    "named-panels.npz": "fcf29b7d726ae323e52f2c76cd4ec47b9d8ad60488f99f7a1fbdc266e8c23bad",
+    "extras.json": "72f92baebb9fc8ed31cc1f6a8a2ebe50cc78eb89bf38ce3c0625336203200e06",
+    "extras.npz": "2cffcdf267edd6c490f87e099f42e706a043382a32294b6d3f52b85857d7d605"
+  },
+  "trace": "52107bc71bbeda196533cf49d8e31e771bd5026bd9519cf9188b238b00238b26",
+  "runner": "0572d7bbcc47813fcc1f2eae79146ad38d3bf97d595d3b27682fffff2b467081",
+  "surfaces": "9fbf92f7cc2501b5b2ad109f0ab9a1af85ac413c206da7a4c754673a3fd8237e",
+  "firstContactS": {
+    "p53": 86.54620000046006,
+    "p57": 86.54620000046006,
+    "p51": 86.68970000046482
+  },
+  "maximumIndentM": 0.0004568485932923347,
+  "releaseTimeS": 81.54620000029408,
+  "segmentStartS": 86.54620000046006,
+  "endS": 87.00000000047513,
+  "parameters": {
+    "dt": 0.0001,
+    "nodes": 192,
+    "first_mark": "middle",
+    "field_yaw_deg": 245.0,
+    "belt_speed": 1.5,
+    "trace_every_step": true,
+    "horizon": 0.45379999954,
+    "collection_floor": true,
+    "stiffness": 1200000.0,
+    "damping": 450.0,
+    "friction": 0.45
+  },
+  "previousFieldTrace": "2f13d048177e14c0a1f02e93812dfec9f9848231ba3daf45c129c40897a2064d"
+}

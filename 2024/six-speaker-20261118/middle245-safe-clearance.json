@@ -1,0 +1,18 @@
+{
+  "firstMark": "middle",
+  "yaw": 245.0,
+  "native": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "field": "42c91b3efb9521d059c13cf25e2d7dda6315bdd6b7eb1202847bfe84ffb43c1a",
+  "stop": "3dc7df0d5fbcb7f9a001a9d56ba6659da2ffef030f56940f4d9e0385d0a9abea",
+  "results": [
+    {
+      "begin": 0.0,
+      "end": 16.17250000000766,
+      "intervals": 32345,
+      "unresolvedIntervals": 0,
+      "firstUnresolved": null,
+      "minimumReportedAxisGapM": 5.51605142435907e-05
+    }
+  ],
+  "delivery": "6a61cd02bb4ae8afa324c78131887e98ee999666235a83cf5d2e5dc8e69fe914"
+}

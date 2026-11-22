@@ -1,0 +1,38 @@
+{
+  "levels": [
+    {
+      "level": 5,
+      "children": 1070,
+      "unresolved": 0,
+      "checks": 188,
+      "inputs": [
+        {
+          "posesSha256": "7aff9f4bf7c08c715375a93c7e1fc796bf91d037e6c534c19aa32212a08d2a7f",
+          "resultsSha256": "34049f715a6d113d8a48035bd0a58e78d1a1add7e8bd12b3669f826f6b1ade29",
+          "label": "raised-feed-parent-bound-5-0"
+        },
+        {
+          "posesSha256": "6c22ca93f987ab69cd006ce78ae18520ebe5caa336f94493637a83587a9134f3",
+          "resultsSha256": "aa85b72bda8764aeb668111cd0bc18cb89e46247f592fc282042bd594325ccec",
+          "label": "raised-feed-parent-bound-5-250"
+        },
+        {
+          "posesSha256": "2351a75c54b07bbb74f1e999e0326c735bd46bc65d7a2e2164e396afe5d085ed",
+          "resultsSha256": "ec199904d7318f5c63c4c717971887ef506e63f515718d0c38cf01ea21eaf4e0",
+          "label": "raised-feed-parent-bound-5-500"
+        },
+        {
+          "posesSha256": "00747984ef686b1e01f8f16c0d7704de43a5486e1ca13b3f7c47863bb095408c",
+          "resultsSha256": "0b0392d1b694a811271e876f99dc498ac0a3f18e24b0c3a8814d308afec09a01",
+          "label": "raised-feed-parent-bound-5-750"
+        },
+        {
+          "posesSha256": "66e25779af8117121e9c6cf334738e879ff2d01feb996fc266bad1727af5ee2d",
+          "resultsSha256": "23929ddd51cc4df365bf3efd131ac058dae629fc6207152348795de1634b3e05",
+          "label": "raised-feed-parent-bound-5-1000"
+        }
+      ]
+    }
+  ],
+  "unresolved": []
+}

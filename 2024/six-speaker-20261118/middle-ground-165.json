@@ -1,0 +1,60 @@
+{
+  "begin": 0.0,
+  "end": 9.450000000000058,
+  "intervals": 18900,
+  "unresolvedIntervals": 1862,
+  "firstUnresolved": {
+    "t": 0.0,
+    "pairs": [
+      [
+        "body-440-1",
+        "FE-2024/GE-24200_Blue/GE-24205/GE-24205_hanging"
+      ],
+      [
+        "body-454-1",
+        "FE-2024/GE-24200_Blue/GE-24205/GE-24205_hanging"
+      ],
+      [
+        "body-463-1",
+        "FE-2024/GE-24200_Blue/GE-24205/GE-24205_hanging"
+      ],
+      [
+        "body-464-1",
+        "FE-2024/GE-24200_Blue/GE-24205/GE-24205_hanging"
+      ],
+      [
+        "body-465-1",
+        "FE-2024/GE-24200_Blue/GE-24205/GE-24205_hanging"
+      ],
+      [
+        "body-473-1",
+        "FE-2024/GE-24200_Blue/GE-24205/GE-24205_hanging"
+      ],
+      [
+        "body-555-1",
+        "FE-2024/GE-24200_Blue/GE-24205/GE-24205_hanging"
+      ],
+      [
+        "body-558-1",
+        "FE-2024/GE-24200_Blue/GE-24205/GE-24205_hanging"
+      ],
+      [
+        "body-561-1",
+        "FE-2024/GE-24200_Blue/GE-24205/GE-24205_hanging"
+      ],
+      [
+        "body-563-1",
+        "FE-2024/GE-24200_Blue/GE-24205/GE-24205_hanging"
+      ],
+      [
+        "body-564-1",
+        "FE-2024/GE-24200_Blue/GE-24205/GE-24205_hanging"
+      ]
+    ]
+  },
+  "minimumReportedAxisGapM": 1.0129002396830344e-06,
+  "firstMark": "middle",
+  "fieldYawDeg": 165,
+  "native": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "field": "42c91b3efb9521d059c13cf25e2d7dda6315bdd6b7eb1202847bfe84ffb43c1a"
+}

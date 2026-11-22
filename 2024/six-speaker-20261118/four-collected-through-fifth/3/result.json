@@ -1,0 +1,30 @@
+{
+  "sourceTrace": "e06fb35283d5c4a3a229b3b8bf2bad25ac9f34e780b65b1bb3a2a679c30c1c7f",
+  "nativeSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "field": {
+    "panels.json": "179593289b9850e7bc88db0573088657a1143b745040c8b269a5f74ae1594d85",
+    "named-panels.npz": "fcf29b7d726ae323e52f2c76cd4ec47b9d8ad60488f99f7a1fbdc266e8c23bad",
+    "extras.json": "72f92baebb9fc8ed31cc1f6a8a2ebe50cc78eb89bf38ce3c0625336203200e06",
+    "extras.npz": "2cffcdf267edd6c490f87e099f42e706a043382a32294b6d3f52b85857d7d605"
+  },
+  "trace": "49e7bbe506862592104cee6cfd6b954803d77b4e7d8cf5afa9443bed9f49ebfb",
+  "previousFieldTrace": "52107bc71bbeda196533cf49d8e31e771bd5026bd9519cf9188b238b00238b26",
+  "segmentStartS": 87.00000000047513,
+  "releaseTimeS": 81.54620000029408,
+  "endS": 109.0,
+  "parameters": {
+    "dt": 0.0001,
+    "nodes": 192,
+    "first_mark": "middle",
+    "field_yaw_deg": 245.0,
+    "belt_speed": 1.5,
+    "trace_every_step": true,
+    "horizon": 22.0,
+    "collection_floor": true,
+    "stiffness": 1200000.0,
+    "damping": 450.0,
+    "friction": 0.45
+  },
+  "coupledManifest": "fbc1021f9b64b86dc1260be9e8865893fb85d79567fb150fd9d29a89074378fa",
+  "finalStepS": 9.999926967907413e-05
+}

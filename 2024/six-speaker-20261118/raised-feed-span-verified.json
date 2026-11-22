@@ -1,0 +1,45 @@
+{
+  "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "totalPairChecks": 105338,
+  "levels": [
+    {
+      "level": 0,
+      "intervals": 65,
+      "unresolved": 63,
+      "pairChecks": 3874
+    },
+    {
+      "level": 1,
+      "intervals": 126,
+      "unresolved": 123,
+      "pairChecks": 7351
+    },
+    {
+      "level": 2,
+      "intervals": 246,
+      "unresolved": 241,
+      "pairChecks": 14135
+    },
+    {
+      "level": 3,
+      "intervals": 482,
+      "unresolved": 468,
+      "pairChecks": 27379
+    },
+    {
+      "level": 4,
+      "intervals": 936,
+      "unresolved": 535,
+      "pairChecks": 52411
+    },
+    {
+      "level": 5,
+      "intervals": 1070,
+      "unresolved": 0,
+      "pairChecks": 188
+    }
+  ],
+  "method": "Temporary torus enlarged in each fixed/articulated native frame by half the interval length plus 0.002 mm. Every unresolved parent was subdivided. Final level retested only parent-suspect bodies.",
+  "scope": "325 mm ideal straight feed at fixed attained lift, pitch, and NOTE attitude. Boolean volume reporting threshold 0.0001 mm3; representation, compliance, tolerances and actual dynamic trajectory remain independent.",
+  "registeredTreadExceptions": 4
+}

@@ -1,0 +1,353 @@
+{
+  "schema": "native-launcher-quadrature-experiment/1",
+  "contractSha256": "ac5abbf4e2396709a8c5d5becc38087948e7a337584303eb24a0d550a162f8a1",
+  "complete": true,
+  "acceptance": false,
+  "status": "PASSED_LOCAL_LAUNCHER_DOMAIN",
+  "nativeArchiveSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "bindingSha256": "4f7fb81f5f7759d48692c8de9bdc4307501f07af2e94dd8b075b1e085798c7ce",
+  "inputs": {
+    "cad/cycle-contract-A2.json": "3700da3bf1a271d6b6763060f913435a4a50cda8d456cb1a57a6f1898416b6ad",
+    "cad/components/a2-transmission.json": "0aae2e2dd0d8c4b16729139380f6d1e2df0efa956dad2ee8b205be1a57f3d8b0",
+    "cad/assembly/intake_components.json": "d94e37fc9ae5d4cdf3213f33abc021125ee24aaab9f7f4126854e86bb1fede4d",
+    "sim/component-launcher/six-drive-config.json": "54697b9bd1eca98551c44073759441186a722f552cddf2a8604ec8bb3ff5e85d",
+    "sim/drivetrain/config.json": "334a7d02b4968401a10fb829ae838edfbeb7d9a311c13f3e2cbcc47b54748ff4",
+    "sim/drivetrain/plant.py": "3d30f7df18abf6c24cc5c949a308246bb275bea57242128916cee627da561155",
+    "cad/drivetrain/candidate.json": "2b4f0a5407ad8a26ece021f729ff8cc414ab718f3607a984029f57bdf0e4b749",
+    "sim/mujoco/native_drive.py": "af1a0e679ac7e4db8d9d8b82b02623f2eb9f352fca87bab3daad37c1311a4343",
+    "sim/mujoco/drivetrain_bridge.py": "bc5c47c3881bfd835516b0e31ac3b80e0f7d562a357806c7cba0a0b38f5fee7a",
+    "sim/integrated/shared_supply.py": "888855338f8d6d73510767cc9c64bf88f5ea0dbf899bd1bb67e136547f821e99"
+  },
+  "scriptSha256": "4e16a2e6351d7a2df554290519366aaea9a28afc82e0649bb69b2acbe1a6209e",
+  "mujocoVersion": "4.0.1",
+  "parameters": {
+    "segments": 16384,
+    "ringPhaseDeg": 0.0,
+    "dtS": 5e-05,
+    "mu": 0.8,
+    "duty": 0.8,
+    "driveDuty": 0.0,
+    "initialRpm": 1800.0,
+    "initialAdvanceM": -0.03,
+    "noContact": false,
+    "floating": false,
+    "fittedStiffness": 317.5342588366041,
+    "targetInitialNormalPerWheelN": 25,
+    "rotatingInertiaEachKgM2": 0.0003,
+    "bodyMassEachKgHypothesis": 0.2,
+    "openCircuitV": 12.0,
+    "sourceResistanceOhm": 0.02,
+    "currentLimitA": 40,
+    "contactLaw": "uniform-ring-constraint-quadrature",
+    "referenceSegments": 128,
+    "referenceImpedance": 0.9,
+    "impedance": 0.06569343065693431,
+    "quadratureWeight": 0.0078125,
+    "noslipIterations": 0,
+    "referenceStiffness": 4350.219346061477,
+    "referenceDamping": 131.9123852572074,
+    "fittedDamping": 9.628641259650177,
+    "calibrationBoundary": "Reference 128-segment static normal target and damping are hypotheses; no per-resolution force or speed fit"
+  },
+  "initial": {
+    "notePositionM": [
+      0.27299999999999996,
+      0.0,
+      0.6403782217350893
+    ],
+    "noteVelocityMps": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "noteAngularVelocityRadps": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "advanceM": -0.03000000000000002,
+    "normalOffsetM": 5.850029223782667e-19,
+    "lateralOffsetM": 0.0,
+    "noteAxisWorld": [
+      -0.8660254037844386,
+      -0.0,
+      0.5000000000000002
+    ],
+    "chassisPositionM": [
+      0.0,
+      0.0,
+      0.001
+    ],
+    "chassisYawRad": 0.0,
+    "normalForcesN": [
+      194.9963550474474,
+      194.99638407654834,
+      194.9983181940506,
+      194.99834722293087
+    ],
+    "noteForceWorldN": [
+      93.8680611403111,
+      5.547098896853273e-08,
+      162.56947995906555
+    ],
+    "contacts": 1520,
+    "axialEdgeContactCount": 0,
+    "minimumTreadContactRadiusM": 0.047859999999364286,
+    "maximumPenetrationM": 0.0007999999986451345,
+    "coneExcessN": 0.0,
+    "forceProjectionErrorN": 8.526512829121202e-13,
+    "systemComM": [
+      0.001418260196750303,
+      6.135862853018438e-19,
+      0.17305283254636994
+    ],
+    "noteMechanicalEnergyJ": 1.4757917957219269,
+    "noteContactPowerW": 0.0
+  },
+  "final": {
+    "step": 1289,
+    "timeS": 0.06445000000000106,
+    "notePositionM": [
+      0.4412552951506787,
+      -1.4033551241734504e-09,
+      0.9230827523504337
+    ],
+    "noteVelocityMps": [
+      2.9033071556068926,
+      -3.114823074107866e-08,
+      4.638387277948697
+    ],
+    "noteAngularVelocityRadps": [
+      -4.882737840673043e-07,
+      0.16319527310317403,
+      -5.685485431691862e-07
+    ],
+    "advanceM": 0.3001625710188257,
+    "normalOffsetM": -0.004431572731955823,
+    "lateralOffsetM": -1.4135501104021198e-09,
+    "noteAxisWorld": [
+      -0.8619488486998245,
+      2.3703604236580945e-08,
+      0.5069952487203894
+    ],
+    "chassisPositionM": [
+      -0.0006638449233263501,
+      9.858581777768312e-15,
+      -8.856899764583597e-06
+    ],
+    "chassisYawRad": 2.3047491550572013e-11,
+    "normalForcesN": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "noteForceWorldN": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "contacts": 0,
+    "axialEdgeContactCount": 0,
+    "minimumTreadContactRadiusM": null,
+    "maximumPenetrationM": 0.0,
+    "coneExcessN": 0.0,
+    "forceProjectionErrorN": 0.0,
+    "systemComM": [
+      0.0016319657966336605,
+      -7.280750603492192e-12,
+      0.17351789288029723
+    ],
+    "noteMechanicalEnergyJ": 5.6457396338893915,
+    "noteContactPowerW": 0.0,
+    "noteWorkResidualJ": 0.015248920088767548,
+    "launcherMotors": [
+      {
+        "omegaRadps": 222.14994553348896,
+        "currentA": 31.37743069595901,
+        "terminalV": 7.994045516120001,
+        "torqueNm": 0.622612762196602,
+        "terminalPowerW": 250.8326091623972,
+        "heatW": 112.51921795196694,
+        "shaftPowerW": 138.31339121043024
+      },
+      {
+        "omegaRadps": 222.14994831756303,
+        "currentA": 31.37743021257812,
+        "terminalV": 7.994045516120001,
+        "torqueNm": 0.6226127526050228,
+        "terminalPowerW": 250.83260529822834,
+        "heatW": 112.51921448516687,
+        "shaftPowerW": 138.31339081306146
+      },
+      {
+        "omegaRadps": 222.27817656944984,
+        "currentA": 31.35516676516159,
+        "terminalV": 7.994045516120001,
+        "torqueNm": 0.6221709858260173,
+        "terminalPowerW": 250.6546302862349,
+        "heatW": 112.35959804241074,
+        "shaftPowerW": 138.29503224382415
+      },
+      {
+        "omegaRadps": 222.27817879210272,
+        "currentA": 31.355166379256655,
+        "terminalV": 7.994045516120001,
+        "torqueNm": 0.6221709781686237,
+        "terminalPowerW": 250.65462720129327,
+        "heatW": 112.35959527667049,
+        "shaftPowerW": 138.29503192462278
+      }
+    ],
+    "driveDemand": [
+      0.0,
+      0.0
+    ],
+    "driveBusPowerW": 0.0,
+    "busV": 9.99255689515,
+    "busCurrentA": 100.3721552423643,
+    "supplyPowerResidualW": 2.7225155463384e-10,
+    "qpos": [
+      -0.0006638449233263501,
+      9.858581777768312e-15,
+      -0.0010088568997645836,
+      2.3047491550572013e-11,
+      -0.006879059031070533,
+      -0.006879044230796675,
+      -0.006879059031070532,
+      -0.006879058855720143,
+      -0.006879044055477984,
+      -0.006879058855720143,
+      10.48223789732244,
+      10.482238057229507,
+      10.490315463153618,
+      10.490315592286272,
+      0.4412552951506787,
+      -1.4033551241734504e-09,
+      0.9230827523504337,
+      0.8680424093097037,
+      -3.81302288353239e-09,
+      -0.49649005593244866,
+      -1.720464779838044e-08
+    ],
+    "qvel": [
+      -0.010723743364379331,
+      -2.369644648258702e-13,
+      8.811581157866607e-05,
+      3.7600582722480787e-10,
+      -0.1407386833553801,
+      -0.14073870905439528,
+      -0.1407386833553802,
+      -0.14073868049441812,
+      -0.14073870619305862,
+      -0.14073868049441812,
+      222.14994553348896,
+      222.14994831756303,
+      222.27817656944984,
+      222.27817879210272,
+      2.9033071556068926,
+      -3.114823074107866e-08,
+      4.638387277948697,
+      -4.882737840673043e-07,
+      0.16319527310317403,
+      -5.685485431691862e-07
+    ]
+  },
+  "lastContact": {
+    "step": 501,
+    "timeS": 0.025050000000000204,
+    "notePositionM": [
+      0.3268649932197522,
+      -1.7611483297493086e-10,
+      0.7327282275525039
+    ],
+    "noteVelocityMps": [
+      2.9017863911102166,
+      -3.121520389390304e-08,
+      5.0243638482039295
+    ],
+    "noteAngularVelocityRadps": [
+      -4.939911569462012e-07,
+      0.16770866492990608,
+      -5.694285166449008e-07
+    ],
+    "advanceM": 0.07803738188245352,
+    "normalOffsetM": -0.0001001161465859901,
+    "lateralOffsetM": -1.7749851918066006e-10,
+    "noteAxisWorld": [
+      -0.8651909338790158,
+      4.490954016151468e-09,
+      0.501442566934196
+    ],
+    "chassisPositionM": [
+      -0.00024040084774701992,
+      1.3949337199096514e-14,
+      -0.0001630533778577772
+    ],
+    "chassisYawRad": 4.187448123363693e-12,
+    "normalForcesN": [
+      0.0,
+      0.0,
+      2.9755151128523916,
+      2.975514081367573
+    ],
+    "noteForceWorldN": [
+      7.147593134376983,
+      3.147738182052162e-07,
+      1.9055668006986628
+    ],
+    "contacts": 76,
+    "axialEdgeContactCount": 76,
+    "minimumTreadContactRadiusM": 0.048254084949799984,
+    "maximumPenetrationM": 1.2043499257090307e-05,
+    "coneExcessN": 2.7755575615628914e-17,
+    "forceProjectionErrorN": 8.881784197001252e-16,
+    "systemComM": [
+      0.0014589418648839575,
+      -9.010572484046392e-13,
+      0.17237558814189316
+    ],
+    "noteMechanicalEnergyJ": 5.644247960057653,
+    "noteContactPowerW": 30.27230100589178
+  },
+  "initialRotorKineticJ": 21.31834550635301,
+  "energyLedgerJ": {
+    "launcherTerminalJ": 72.97688946729315,
+    "launcherHeatJ": 42.03726334295432,
+    "launcherShaftJ": 30.93962612433867,
+    "driveAxleJ": -4.023204230851771e-05,
+    "sourceJ": 90.81493326940023,
+    "sourceHeatJ": 17.838043802106487,
+    "busJ": 72.97688946729315,
+    "noteContactWorkJ": 4.154698918078697
+  },
+  "maxNoteWorkResidualJ": 0.015271152878475469,
+  "minimumBusV": 9.44049921163,
+  "maximumBusCurrentA": 127.97503941863876,
+  "maxNoteForceN": 203.67024622810428,
+  "maxPhaseCurrentA": 40,
+  "maxConeExcessN": 1.1102230246251565e-16,
+  "maxForceProjectionErrorN": 1.7674750552032492e-12,
+  "maxPenetrationM": 0.0008157893816483318,
+  "axialEdgeContactSamples": 29394,
+  "warningCounts": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "traceSha256": "6a74e710fee564421bf1e3d957fe683743ae5d4b1b15bdc93cbdc27cc2214bf2",
+  "modelSha256": "a8939b374cd351a8f152b86206a7d7e37a72a20d7a555daef0c193bcf7f686ea",
+  "wallSeconds": 38.82401569999638,
+  "limits": [
+    "Staged NOTE inside launcher; no acquisition, lift, transfer continuity or prescribed feed velocity",
+    "Cylinder tread exteriors omit annular cavities and all other native hard parts; no flange/structure clearance acceptance",
+    "Stiffness/normal target/friction/mass/inertia/motor/controller behavior are hypotheses, not measurements",
+    "Shared quasistatic resistive supply is an existing hypothesis; no battery transients, faults, thermal or controller validation",
+    "Chassis roll/pitch constrained; rotor torque reactions do not establish tipping or dynamic load-transfer behavior",
+    "No aerodynamic/field/target scoring model; launcher-only ejection and free flight are not a complete robot cycle"
+  ]
+}

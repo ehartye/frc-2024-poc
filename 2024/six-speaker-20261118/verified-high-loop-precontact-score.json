@@ -1,0 +1,72 @@
+{
+  "schema": "continued-full-field-score/1",
+  "precedingScores": [
+    {
+      "piece": "blue-wing-middle",
+      "shot": "2b65cf164a454630ba0afe1b4467113656aee06f5dc1e92b99c5e7b1925bcb79",
+      "scoreS": 19.223500000011462,
+      "receiptSha256": "205bd708130af8c881455a952f9b5d9a760171576ccd0712eb6fa9d1aea644ca"
+    },
+    {
+      "piece": "blue-wing-outer",
+      "shot": "3d11228712938b08d86fd88007ccab7df046a06e6387caec29de5aad2ecd7370",
+      "scoreS": 38.27090000010864,
+      "receiptSha256": "47c570ad2322c085ed221323b1761901c6aa4c6778b8e93da1ed81196e6d5300"
+    },
+    {
+      "piece": "blue-wing-inner",
+      "shot": "19b43a96a786380890593c99fde1084ba007739f6e79914decb1f823c09bdcce",
+      "scoreS": 60.78015000027948,
+      "receiptSha256": "14c565ee5995e19576758654117d8773d8fe73451934e025149d01da120d9a17"
+    }
+  ],
+  "scoreNumber": 4,
+  "piece": "center-high",
+  "scoreS": 81.16660000039096,
+  "openedByS": 77.33700000026383,
+  "releaseS": 77.19310000025905,
+  "native": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "firstMark": "middle",
+  "fieldYawDeg": 245.0,
+  "chassisFieldXY": [
+    1.4719307480197437,
+    5.5486971039746305
+  ],
+  "firstPickupStop": "3dc7df0d5fbcb7f9a001a9d56ba6659da2ffef030f56940f4d9e0385d0a9abea",
+  "carry": "b15bd66217c8c4788303f5074ec0f86c05577605f0ffed185b7e206062141ebb",
+  "shot": "bfd9ca75ddf65abeeb7011d6c04f07cd14e182f1755ac2b65de9dc85de329956",
+  "field": "43ff16646dbd849fd1e6e4784494970af71468bb67790255809432bd4b6a65ba",
+  "nextPickup": "b7a68c599a8fd6180d4bada85e5b64cbe8d9bec56d0d842cacbf5bb422dc086f",
+  "fieldRoute": "96da69513ee43580f0dfaeaff638dd20fa8822ff2eb2ab2ac9472ec58c627d2d",
+  "flightClearance": "45231d3fba2ee6f9647d198cdde715f7248225bcf87d3637233ed32aacd03120",
+  "shellRefinement": "8e2c7bcf8f77f416419140973f819680edd9d23c84e1be2db4db9b548b43ebd6",
+  "sensorObservation": {
+    "opening": {
+      "firstPossibleS": 77.30510000026277,
+      "fullyThroughByS": 77.33700000026383,
+      "minimumMarginM": 0.07715912248276498
+    },
+    "firstFullShadowsS": [
+      81.16660000039096,
+      81.15350000039052
+    ],
+    "firstSimultaneousFullShadowS": 81.16660000039096,
+    "bestMarginPerPairM": [
+      0.008835363656098981,
+      0.008731392391273947
+    ],
+    "bestSimultaneousMarginM": 0.007114588401787435,
+    "countedFloorNotes": 1,
+    "fieldTrace": "43ff16646dbd849fd1e6e4784494970af71468bb67790255809432bd4b6a65ba",
+    "sensorFile": "13d07c04856ee1ca927d8f17fa29570e6ead74cc1c917f1879b94b3b9d8b236f",
+    "sourceTrace": "bfd9ca75ddf65abeeb7011d6c04f07cd14e182f1755ac2b65de9dc85de329956"
+  },
+  "pickupClearance": "f3003279e536a44886c6f743b83d2e120971d367d84a9ae9875928a678db0044",
+  "deliveryClearance": "b61097181a34407688f7ca6e8ab9fa6abe75a23adb6b8db67f8c78ca9b9e239e",
+  "shotClearance": "eac92434054475b45fb5d6e0e3fa931bc79959808165d4f18fc403bf8ba5e0cb",
+  "counterResets": [
+    "b7697ce329dc6e98a968de0c304ebe048ce42d9cabe4ef46a04c418bd2fe87da",
+    "76e177f6d517d9b1e72419813eed867c60aa2f341482d04b04545e99bfa511d1",
+    "b53a610742d19c72b7968d75e333bb533267f663d47958bda81921cac264e69f"
+  ]
+}

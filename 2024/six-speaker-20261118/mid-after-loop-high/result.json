@@ -1,0 +1,96 @@
+{
+  "schema": "second-wing-acquisition/1",
+  "firstReleaseTrace": "bfd9ca75ddf65abeeb7011d6c04f07cd14e182f1755ac2b65de9dc85de329956",
+  "nativeSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "trace": "b7a68c599a8fd6180d4bada85e5b64cbe8d9bec56d0d842cacbf5bb422dc086f",
+  "initialRobotQ": [
+    1.2636363458242061,
+    -1.288432350426026,
+    -1.136349689790283,
+    0.44993629965579746,
+    1.043889370905267,
+    18344.70496911469,
+    18373.09717484833,
+    18415.15001132989,
+    18444.761924246402
+  ],
+  "initialRobotV": [
+    -0.0028649207403487536,
+    0.006173520520547292,
+    0.005274692268427754,
+    -0.000591587326517593,
+    -0.0001852727508847825,
+    297.27784740942815,
+    296.9494246924719,
+    299.01711814619756,
+    298.6821063795642
+  ],
+  "initialRotors": [
+    -0.08192416897478141,
+    -0.03224343820173345,
+    -137.07077230699343,
+    -137.1465207992322
+  ],
+  "initialBusV": 10.56891841204036,
+  "start": 77.19310000025905,
+  "end": 86.7966000003049,
+  "firstBilateral": 85.12210000029691,
+  "seated": 86.7966000003049,
+  "minimumBusV": 9.919098930445848,
+  "peakLocalBrakingW": 305.4195664238943,
+  "outcome": "SEATED",
+  "dt": 0.0005,
+  "grid": 512,
+  "traceStride": 1,
+  "firstMark": "middle",
+  "fieldYawDeg": 245.0,
+  "retreatM": 0.0,
+  "approachHeadingDeg": null,
+  "captureStandoffM": 0.0,
+  "viaFieldXY": [
+    [
+      2.17,
+      5.55
+    ],
+    [
+      2.9,
+      6.19
+    ],
+    [
+      3.6,
+      6.8
+    ],
+    [
+      6.6,
+      6.85
+    ],
+    [
+      7.89,
+      6.82
+    ],
+    [
+      9.17,
+      6.38
+    ],
+    [
+      9.26,
+      5.18
+    ]
+  ],
+  "transitSpeedMps": 3.0,
+  "reverseTransit": true,
+  "waitingNoteLocalXY": [
+    -1.8208713369948155,
+    4.7750430553295065
+  ],
+  "pieceId": "center-mid",
+  "collectedMarks": [
+    "middle",
+    "outer",
+    "inner",
+    "center-high",
+    "center-mid"
+  ],
+  "lookaheadM": 0.54,
+  "captureSpeedMps": 0.28
+}

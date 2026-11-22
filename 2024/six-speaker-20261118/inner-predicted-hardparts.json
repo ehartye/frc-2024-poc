@@ -1,0 +1,10 @@
+{
+  "native": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "trace": "19b43a96a786380890593c99fde1084ba007739f6e79914decb1f823c09bdcce",
+  "nativeSweep": "d8752156323b2c7dc358fd97abd2e80bac90442ceabbffea892ffd7a3a08f73b",
+  "initialUnresolved": 310,
+  "unresolved": [],
+  "samples": 32768,
+  "substeps": 16,
+  "minimumLowerBoundMm": 0.0005939040514627986
+}

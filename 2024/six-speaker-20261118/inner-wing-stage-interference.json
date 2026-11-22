@@ -1,0 +1,51 @@
+{
+  "sourceNative": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "sourceGround": "694ccd691cf735b13217235463dcedeee3e8f71946433cdbae7ba7499fc076c5",
+  "body": "body-95-1",
+  "installedBoxVolumeMm3": 1720641.7200000011,
+  "clock": 1.1344999999999306,
+  "chassisFieldXY": [
+    2.8955999999999995,
+    3.6972622922614327
+  ],
+  "hits": [
+    {
+      "path": [
+        "FE-2024",
+        "GE-24200_Blue",
+        "GE-24210",
+        "FE-01003",
+        "FE-01003-01"
+      ],
+      "volumeMm3": 0.0
+    },
+    {
+      "path": [
+        "FE-2024",
+        "GE-24200_Blue",
+        "GE-24210",
+        "FE-01003",
+        "FE-01003-01"
+      ],
+      "volumeMm3": 0.0
+    },
+    {
+      "path": [
+        "FE-2024",
+        "GE-24200_Blue",
+        "GE-24210",
+        "FE-01003",
+        "FE-01003-01"
+      ],
+      "volumeMm3": 19745.00683652555
+    },
+    {
+      "path": [
+        "FE-2024",
+        "GE-24200_Blue",
+        "GE-24207_Blue"
+      ],
+      "volumeMm3": 15362.872500000889
+    }
+  ]
+}

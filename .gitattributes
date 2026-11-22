@@ -173,3 +173,7 @@ plugin-qa/toe-actuator-20261121/** -text
 iterations/** -text
 engineering-iterations/** -text
 plugin-qa/toe-actuator-20261121/support/wrist-local.step filter=lfs diff=lfs merge=lfs -text
+engineering-iterations/engineering-iterations.bundle.part* filter=lfs diff=lfs merge=lfs -text
+
+2024/six-speaker-20261118/** -text
+2024/six-speaker-20261118/outer-aligned-collection-to-66/trace.jsonl filter=lfs diff=lfs merge=lfs -text

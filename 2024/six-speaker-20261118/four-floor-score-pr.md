@@ -1,0 +1,7 @@
+Four distinct floor NOTES scored on one simulated clock at 19.2235, 38.2709, 60.78015 and 84.1170 seconds. The robot then seated the center-mid NOTE at 91.1897 seconds.
+
+The fourth release at 81.5462 seconds uses 0.23 feed duty with the 3,950 rpm wheel target. The entire unchanged-duty replay matched byte for byte at a control checkpoint, and a separate full run reproduced the corrected release trace. All 307 native intervals cleared by at least 0.0511 mm in the model. Nine attained mechanism poses had no new structural overlap. The whole NOTE cleared the opening at 81.6889 seconds. The three earlier NOTES stayed at least 0.953 m from the fourth during its field flight.
+
+The collector can now integrate its last physical step to another NOTE's recorded clock. Both earlier bodies matched all 214,266 prior samples before that step. Consecutive shots retain both existing contacts and all distinct pieces. A separate empty-chassis rehearsal carried the real wheel and actuator state five seconds beyond release, with 0.0861 mm of drift and 29.58 mm of separation from the released NOTE.
+
+The committed evidence contains only results and digests. The focused score and chassis tests pass. The preceding three-score receipt also reproduces byte for byte. The final combined native CAD and simulation suite ran 566 tests. The same four failures and nine errors reproduced on the preceding main with matching test names and error messages. The remaining 553 tests passed.

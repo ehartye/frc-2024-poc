@@ -1,0 +1,97 @@
+{
+  "schema": "second-wing-acquisition/1",
+  "firstReleaseTrace": "c27bb69e4e30a12aa53ef114b2117468148e03f4944b812cefd44a9dcad4175d",
+  "nativeSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "trace": "ad36e0c76a802c074d8d341f25f02984b9683060bc78cf2b738835fc1ff8d8cb",
+  "initialRobotQ": [
+    1.006178051404407,
+    -1.3892310641192702,
+    -0.9254221323524243,
+    0.44826395658315094,
+    1.0520430481536178,
+    24485.400913101956,
+    24507.4959607259,
+    24589.72881157779,
+    24612.916476032682
+  ],
+  "initialRobotV": [
+    -0.002926694603988623,
+    0.003885202662427203,
+    0.0011165701473326386,
+    -6.3824275580993e-05,
+    0.00681787549354564,
+    297.03919958416395,
+    298.53967768924537,
+    298.6154620135649,
+    300.1841621961641
+  ],
+  "initialRotors": [
+    -0.03907685785630843,
+    -0.028608624994930578,
+    -137.6453891938783,
+    -137.1249615478849
+  ],
+  "initialBusV": 10.573370952826707,
+  "start": 97.49075000038506,
+  "end": 106.73775000042922,
+  "firstBilateral": 105.06325000042122,
+  "seated": 106.73775000042922,
+  "minimumBusV": 9.91684433983877,
+  "peakLocalBrakingW": 295.089670402147,
+  "outcome": "SEATED",
+  "dt": 0.0005,
+  "grid": 512,
+  "traceStride": 1,
+  "firstMark": "middle",
+  "fieldYawDeg": 245.0,
+  "retreatM": 0.0,
+  "approachHeadingDeg": null,
+  "captureStandoffM": 0.0,
+  "viaFieldXY": [
+    [
+      2.18,
+      5.98
+    ],
+    [
+      2.98,
+      6.37
+    ],
+    [
+      3.7,
+      6.82
+    ],
+    [
+      6.65,
+      6.85
+    ],
+    [
+      8.45,
+      6.5
+    ],
+    [
+      9.11,
+      5.55
+    ],
+    [
+      9.3,
+      3.49
+    ]
+  ],
+  "transitSpeedMps": 3.0,
+  "reverseTransit": true,
+  "waitingNoteLocalXY": [
+    -0.3015369628065748,
+    5.483520309311615
+  ],
+  "pieceId": "center-low",
+  "collectedMarks": [
+    "middle",
+    "outer",
+    "inner",
+    "center-high",
+    "center-mid",
+    "center-low"
+  ],
+  "lookaheadM": 0.54,
+  "captureSpeedMps": 0.28
+}

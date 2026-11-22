@@ -1,0 +1,20 @@
+{
+  "model": {
+    "file": "..\\..\\native-launcher-quadrature-20261118\\launcher-quadrature-runs\\grid-16384\\model.xml",
+    "sha256": "ff396b49933e48d28970fdbb7c44f0ac738e65c04e141b68312c58074b002a47"
+  },
+  "trace": {
+    "file": "grid-16384-sample.json",
+    "sha256": "7e8a7814a919bdb87681db633bd14006b3b82b314e7cca295a6f4476ea49db29"
+  },
+  "sampleIndex": 0,
+  "target": {
+    "units": "m",
+    "lowerEdge": 1.9845019999999998,
+    "uncertainty": 0.0127,
+    "locator": "GE-24300 Rev A, sheet 2 of 6, floor datum assumed",
+    "frame": "native-world-z-up",
+    "datum": "model-floor",
+    "registration": "assumed"
+  }
+}

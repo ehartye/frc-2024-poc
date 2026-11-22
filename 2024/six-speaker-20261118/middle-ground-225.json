@@ -1,0 +1,20 @@
+{
+  "begin": 0.0,
+  "end": 9.450000000000058,
+  "intervals": 18900,
+  "unresolvedIntervals": 796,
+  "firstUnresolved": {
+    "t": 0.3795000000000003,
+    "pairs": [
+      [
+        "body-153-1",
+        "FE-2024/GE-24200_Blue/GE-24205/GE-24205_hanging"
+      ]
+    ]
+  },
+  "minimumReportedAxisGapM": 2.6692712396858553e-05,
+  "firstMark": "middle",
+  "fieldYawDeg": 225,
+  "native": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "field": "42c91b3efb9521d059c13cf25e2d7dda6315bdd6b7eb1202847bfe84ffb43c1a"
+}

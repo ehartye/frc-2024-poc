@@ -1,0 +1,59 @@
+{
+  "source": "2d1056268f5c11c261886360823c9852c57d1ca667f17a7bf9be762d3e678b2c",
+  "steps": 23785,
+  "levels": [
+    {
+      "stride": 120,
+      "intervals": 199,
+      "pairChecks": 2064,
+      "ambiguous": 16,
+      "files": [
+        [
+          "89fa32bb3a0800329900ca53c97272459867e63a1ff21ceec377f4af524ba669",
+          "d52c1f73a6f72732925ed20d7e50090be08552091181734536fb3b494232f9b9"
+        ],
+        [
+          "55d8e44b2decb5267811415e47d121e67a026f7665d568c1ed74052f7885c21f",
+          "88931be09983a49dd32c7f05eba09bfa3eb0e9a6f5e2bceab4501fae14b277ab"
+        ],
+        [
+          "22b556b68ab1ee28c77b6a54c300aed14b390e006fedd9a7bff3419eff085475",
+          "2ebb4caa697e36f83049d27dc13d78c079b830b039fd7eddec5e5a701b503cb5"
+        ],
+        [
+          "58722b304e5b9d9e153b9061088958ce7f79a3ea0d364a008e5e24d4684aef3b",
+          "7d5fe847c085d452f05bbdb63689006fddeb5be23dab6fef41eb9e58218b7f35"
+        ]
+      ]
+    },
+    {
+      "stride": 24,
+      "intervals": 80,
+      "pairChecks": 100,
+      "ambiguous": 7,
+      "files": [
+        [
+          "2fb20eb0db516d16f28f527b97cc97de6004f9ef0a51f3ac5e0f4139b4752cb7",
+          "992c1c1fb3454274aec6b9a2ab7da8700f7fb1ab436bd913d79c107a9cec2200"
+        ],
+        [
+          "ee2119189e789769391b00ac975505e7bf91d1c5399d2994d5797bd3e57f9bbc",
+          "dd47672b96673b92c7e85d5df68f6401e1dc3dc712343ee57d4a5861dbd7c5d5"
+        ]
+      ]
+    },
+    {
+      "stride": 4,
+      "intervals": 42,
+      "pairChecks": 84,
+      "ambiguous": 0,
+      "files": [
+        [
+          "52600a42775be0f6bc62ee425c09cf42e7d778406cff131b3b58c19720fdebf1",
+          "ee05a8508227fe50d242210d5dc4a737152a52f38db253a49ef419009aeb8c9f"
+        ]
+      ]
+    }
+  ],
+  "unresolved": []
+}

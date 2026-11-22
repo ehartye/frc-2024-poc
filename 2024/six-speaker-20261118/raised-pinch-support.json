@@ -1,0 +1,1391 @@
+{
+  "traceSha256": "b06928ecfa09a08f3f166e1f99cdd678183c693dfaebd925a3236b1d1b878b69",
+  "rows": [
+    {
+      "advanceMm": 0,
+      "grid": 512,
+      "pinchNormalN": 7.502753955781758,
+      "uphillForceUpperN": 4.498041023647151,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 0,
+      "grid": 1024,
+      "pinchNormalN": 7.501768552407133,
+      "uphillForceUpperN": 4.498627808246163,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 0,
+      "grid": 2048,
+      "pinchNormalN": 7.501130794335957,
+      "uphillForceUpperN": 4.4984837316850355,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 5,
+      "grid": 512,
+      "pinchNormalN": 7.515156540807029,
+      "uphillForceUpperN": 4.509093924484222,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 5,
+      "grid": 1024,
+      "pinchNormalN": 7.519581482373958,
+      "uphillForceUpperN": 4.511748889424363,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 5,
+      "grid": 2048,
+      "pinchNormalN": 7.519493580773462,
+      "uphillForceUpperN": 4.511696148464081,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 10,
+      "grid": 512,
+      "pinchNormalN": 7.515156540807022,
+      "uphillForceUpperN": 4.50909392448422,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 10,
+      "grid": 1024,
+      "pinchNormalN": 7.519581482373954,
+      "uphillForceUpperN": 4.5117488894243625,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 10,
+      "grid": 2048,
+      "pinchNormalN": 7.519493580773458,
+      "uphillForceUpperN": 4.51169614846408,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 15,
+      "grid": 512,
+      "pinchNormalN": 7.515156540807024,
+      "uphillForceUpperN": 4.509093924484222,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 15,
+      "grid": 1024,
+      "pinchNormalN": 7.519581482373954,
+      "uphillForceUpperN": 4.511748889424363,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 15,
+      "grid": 2048,
+      "pinchNormalN": 7.519493580773458,
+      "uphillForceUpperN": 4.511696148464081,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 20,
+      "grid": 512,
+      "pinchNormalN": 7.5151565408070224,
+      "uphillForceUpperN": 4.50909392448422,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 20,
+      "grid": 1024,
+      "pinchNormalN": 7.519581482373951,
+      "uphillForceUpperN": 4.511748889424362,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 20,
+      "grid": 2048,
+      "pinchNormalN": 7.519493580773458,
+      "uphillForceUpperN": 4.511696148464079,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 25,
+      "grid": 512,
+      "pinchNormalN": 7.515156540807026,
+      "uphillForceUpperN": 4.509093924484221,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 25,
+      "grid": 1024,
+      "pinchNormalN": 7.519581482373954,
+      "uphillForceUpperN": 4.5117488894243625,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 25,
+      "grid": 2048,
+      "pinchNormalN": 7.519493580773458,
+      "uphillForceUpperN": 4.511696148464081,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 30,
+      "grid": 512,
+      "pinchNormalN": 7.515156540807028,
+      "uphillForceUpperN": 4.509093924484222,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 30,
+      "grid": 1024,
+      "pinchNormalN": 7.519581482373953,
+      "uphillForceUpperN": 4.511748889424363,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 30,
+      "grid": 2048,
+      "pinchNormalN": 7.519493580773458,
+      "uphillForceUpperN": 4.511696148464081,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 35,
+      "grid": 512,
+      "pinchNormalN": 7.51515654080702,
+      "uphillForceUpperN": 4.509093924484217,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 35,
+      "grid": 1024,
+      "pinchNormalN": 7.519581482373944,
+      "uphillForceUpperN": 4.51174888942436,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 35,
+      "grid": 2048,
+      "pinchNormalN": 7.5194935807734575,
+      "uphillForceUpperN": 4.511696148464079,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 40,
+      "grid": 512,
+      "pinchNormalN": 7.515156540807027,
+      "uphillForceUpperN": 4.509093924484222,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 40,
+      "grid": 1024,
+      "pinchNormalN": 7.519581482373952,
+      "uphillForceUpperN": 4.5117488894243625,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 40,
+      "grid": 2048,
+      "pinchNormalN": 7.51949358077346,
+      "uphillForceUpperN": 4.51169614846408,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 45,
+      "grid": 512,
+      "pinchNormalN": 7.515156540807022,
+      "uphillForceUpperN": 4.50909392448422,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 45,
+      "grid": 1024,
+      "pinchNormalN": 7.51958148237395,
+      "uphillForceUpperN": 4.511748889424362,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 45,
+      "grid": 2048,
+      "pinchNormalN": 7.519493580773464,
+      "uphillForceUpperN": 4.511696148464079,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 50,
+      "grid": 512,
+      "pinchNormalN": 7.515156540807023,
+      "uphillForceUpperN": 4.50909392448422,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 50,
+      "grid": 1024,
+      "pinchNormalN": 7.519581482373949,
+      "uphillForceUpperN": 4.511748889424362,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 50,
+      "grid": 2048,
+      "pinchNormalN": 7.51949358077346,
+      "uphillForceUpperN": 4.511696148464079,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 55,
+      "grid": 512,
+      "pinchNormalN": 7.515156540807023,
+      "uphillForceUpperN": 4.509093924484218,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 55,
+      "grid": 1024,
+      "pinchNormalN": 7.519581482373949,
+      "uphillForceUpperN": 4.511748889424361,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 55,
+      "grid": 2048,
+      "pinchNormalN": 7.519493580773459,
+      "uphillForceUpperN": 4.511696148464079,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 60,
+      "grid": 512,
+      "pinchNormalN": 7.5151565408070224,
+      "uphillForceUpperN": 4.50909392448422,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 60,
+      "grid": 1024,
+      "pinchNormalN": 7.51958148237395,
+      "uphillForceUpperN": 4.511748889424362,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 60,
+      "grid": 2048,
+      "pinchNormalN": 7.519493580773462,
+      "uphillForceUpperN": 4.511696148464079,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 65,
+      "grid": 512,
+      "pinchNormalN": 7.515156540807023,
+      "uphillForceUpperN": 4.50909392448422,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 65,
+      "grid": 1024,
+      "pinchNormalN": 7.51958148237395,
+      "uphillForceUpperN": 4.511748889424362,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 65,
+      "grid": 2048,
+      "pinchNormalN": 7.51949358077346,
+      "uphillForceUpperN": 4.511696148464079,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 70,
+      "grid": 512,
+      "pinchNormalN": 7.5151565408070224,
+      "uphillForceUpperN": 4.509093924484218,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 70,
+      "grid": 1024,
+      "pinchNormalN": 7.519581482373949,
+      "uphillForceUpperN": 4.511748889424361,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 70,
+      "grid": 2048,
+      "pinchNormalN": 7.519493580773459,
+      "uphillForceUpperN": 4.511696148464079,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 75,
+      "grid": 512,
+      "pinchNormalN": 7.515156540807029,
+      "uphillForceUpperN": 4.5090939244842225,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 75,
+      "grid": 1024,
+      "pinchNormalN": 7.519581482373952,
+      "uphillForceUpperN": 4.5117488894243625,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 75,
+      "grid": 2048,
+      "pinchNormalN": 7.519493580773459,
+      "uphillForceUpperN": 4.51169614846408,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 80,
+      "grid": 512,
+      "pinchNormalN": 7.515156540807031,
+      "uphillForceUpperN": 4.5090939244842225,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 80,
+      "grid": 1024,
+      "pinchNormalN": 7.519581482373952,
+      "uphillForceUpperN": 4.511748889424363,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 80,
+      "grid": 2048,
+      "pinchNormalN": 7.519493580773458,
+      "uphillForceUpperN": 4.51169614846408,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 85,
+      "grid": 512,
+      "pinchNormalN": 7.51515654080703,
+      "uphillForceUpperN": 4.509093924484224,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 85,
+      "grid": 1024,
+      "pinchNormalN": 7.519581482373959,
+      "uphillForceUpperN": 4.511748889424363,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 85,
+      "grid": 2048,
+      "pinchNormalN": 7.519493580773461,
+      "uphillForceUpperN": 4.511696148464081,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 90,
+      "grid": 512,
+      "pinchNormalN": 7.515156540807029,
+      "uphillForceUpperN": 4.509093924484222,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 90,
+      "grid": 1024,
+      "pinchNormalN": 7.519581482373952,
+      "uphillForceUpperN": 4.511748889424363,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 90,
+      "grid": 2048,
+      "pinchNormalN": 7.519493580773459,
+      "uphillForceUpperN": 4.51169614846408,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 95,
+      "grid": 512,
+      "pinchNormalN": 7.51515654080703,
+      "uphillForceUpperN": 4.5090939244842225,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 95,
+      "grid": 1024,
+      "pinchNormalN": 7.519581482373955,
+      "uphillForceUpperN": 4.511748889424363,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 95,
+      "grid": 2048,
+      "pinchNormalN": 7.519493580773458,
+      "uphillForceUpperN": 4.51169614846408,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 100,
+      "grid": 512,
+      "pinchNormalN": 7.51515654080703,
+      "uphillForceUpperN": 4.509093924484224,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 100,
+      "grid": 1024,
+      "pinchNormalN": 7.519581482373959,
+      "uphillForceUpperN": 4.511748889424363,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 100,
+      "grid": 2048,
+      "pinchNormalN": 7.519493580773461,
+      "uphillForceUpperN": 4.511696148464081,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 105,
+      "grid": 512,
+      "pinchNormalN": 7.515156540807029,
+      "uphillForceUpperN": 4.509093924484222,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 105,
+      "grid": 1024,
+      "pinchNormalN": 7.519581482373954,
+      "uphillForceUpperN": 4.511748889424363,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 105,
+      "grid": 2048,
+      "pinchNormalN": 7.519493580773461,
+      "uphillForceUpperN": 4.51169614846408,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 110,
+      "grid": 512,
+      "pinchNormalN": 7.51515654080703,
+      "uphillForceUpperN": 4.5090939244842225,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 110,
+      "grid": 1024,
+      "pinchNormalN": 7.519581482373955,
+      "uphillForceUpperN": 4.5117488894243625,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 110,
+      "grid": 2048,
+      "pinchNormalN": 7.519493580773461,
+      "uphillForceUpperN": 4.511696148464081,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 115,
+      "grid": 512,
+      "pinchNormalN": 7.515156540807029,
+      "uphillForceUpperN": 4.509093924484222,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 115,
+      "grid": 1024,
+      "pinchNormalN": 7.519581482373951,
+      "uphillForceUpperN": 4.511748889424362,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 115,
+      "grid": 2048,
+      "pinchNormalN": 7.519493580773457,
+      "uphillForceUpperN": 4.511696148464079,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 120,
+      "grid": 512,
+      "pinchNormalN": 7.515156540807022,
+      "uphillForceUpperN": 4.509093924484218,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 120,
+      "grid": 1024,
+      "pinchNormalN": 7.519581482373952,
+      "uphillForceUpperN": 4.511748889424362,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 120,
+      "grid": 2048,
+      "pinchNormalN": 7.519493580773461,
+      "uphillForceUpperN": 4.511696148464079,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 125,
+      "grid": 512,
+      "pinchNormalN": 7.51461148879805,
+      "uphillForceUpperN": 4.508836029888397,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 125,
+      "grid": 1024,
+      "pinchNormalN": 7.519581482373941,
+      "uphillForceUpperN": 4.51174888942436,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 125,
+      "grid": 2048,
+      "pinchNormalN": 7.51941736102725,
+      "uphillForceUpperN": 4.511663134092405,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 130,
+      "grid": 512,
+      "pinchNormalN": 7.429704885995245,
+      "uphillForceUpperN": 4.467663887988392,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 130,
+      "grid": 1024,
+      "pinchNormalN": 7.433763466587458,
+      "uphillForceUpperN": 4.469684608750866,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 130,
+      "grid": 2048,
+      "pinchNormalN": 7.433757351065024,
+      "uphillForceUpperN": 4.469378706049094,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 135,
+      "grid": 512,
+      "pinchNormalN": 7.018243132489503,
+      "uphillForceUpperN": 4.2540275541637085,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 135,
+      "grid": 1024,
+      "pinchNormalN": 7.024291294000599,
+      "uphillForceUpperN": 4.256883903633106,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 135,
+      "grid": 2048,
+      "pinchNormalN": 7.025865926876678,
+      "uphillForceUpperN": 4.25949873471131,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 140,
+      "grid": 512,
+      "pinchNormalN": 6.229893108934213,
+      "uphillForceUpperN": 3.826582182908313,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 140,
+      "grid": 1024,
+      "pinchNormalN": 6.228381783738571,
+      "uphillForceUpperN": 3.829530784162415,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 140,
+      "grid": 2048,
+      "pinchNormalN": 6.22939278456385,
+      "uphillForceUpperN": 3.829689669999375,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 145,
+      "grid": 512,
+      "pinchNormalN": 5.120259992979659,
+      "uphillForceUpperN": 3.208072808916465,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 145,
+      "grid": 1024,
+      "pinchNormalN": 5.119736160248769,
+      "uphillForceUpperN": 3.2035226299531487,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 145,
+      "grid": 2048,
+      "pinchNormalN": 5.121353283551113,
+      "uphillForceUpperN": 3.2048990507846957,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 150,
+      "grid": 512,
+      "pinchNormalN": 3.8040722443261674,
+      "uphillForceUpperN": 2.43055798321686,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 150,
+      "grid": 1024,
+      "pinchNormalN": 3.8151092590878077,
+      "uphillForceUpperN": 2.437805182386857,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 150,
+      "grid": 2048,
+      "pinchNormalN": 3.8142205561136873,
+      "uphillForceUpperN": 2.4369358271742256,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 155,
+      "grid": 512,
+      "pinchNormalN": 2.4416452834645384,
+      "uphillForceUpperN": 1.592313237442261,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 155,
+      "grid": 1024,
+      "pinchNormalN": 2.4435706847797065,
+      "uphillForceUpperN": 1.59928127642689,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 155,
+      "grid": 2048,
+      "pinchNormalN": 2.4438970534395237,
+      "uphillForceUpperN": 1.5991767542102484,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 160,
+      "grid": 512,
+      "pinchNormalN": 1.1836297932658644,
+      "uphillForceUpperN": 0.7971720428977542,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 160,
+      "grid": 1024,
+      "pinchNormalN": 1.1802266179938188,
+      "uphillForceUpperN": 0.7924367336171199,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 160,
+      "grid": 2048,
+      "pinchNormalN": 1.1797399235655324,
+      "uphillForceUpperN": 0.7930288596135696,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 165,
+      "grid": 512,
+      "pinchNormalN": 0.2821335653557523,
+      "uphillForceUpperN": 0.1969623146059199,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 165,
+      "grid": 1024,
+      "pinchNormalN": 0.2798339342242419,
+      "uphillForceUpperN": 0.19385972327077866,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 165,
+      "grid": 2048,
+      "pinchNormalN": 0.280104891137232,
+      "uphillForceUpperN": 0.19402960380757678,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 170,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 170,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 170,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 175,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 175,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 175,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 180,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 180,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 180,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 185,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 185,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 185,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 190,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 190,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 190,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 195,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 195,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 195,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 200,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 200,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 200,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 205,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 205,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 205,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 210,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 210,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 210,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 215,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 215,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 215,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 220,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 220,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 220,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 225,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 225,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 225,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 230,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 230,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 230,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 235,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 235,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 235,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 240,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 240,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 240,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 245,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 245,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 245,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 250,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 250,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 250,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 255,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 255,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 255,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 260,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 260,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 260,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 265,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 265,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 265,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 270,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 270,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 270,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 275,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 275,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 275,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 280,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 280,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 280,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 285,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 285,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 285,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 290,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 290,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 290,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 295,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 295,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 295,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 300,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 300,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 300,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 305,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 305,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 305,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 310,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 310,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 310,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 315,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 315,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 315,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 320,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 320,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 320,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 325,
+      "grid": 512,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 325,
+      "grid": 1024,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    },
+    {
+      "advanceMm": 325,
+      "grid": 2048,
+      "pinchNormalN": 0.0,
+      "uphillForceUpperN": 0.0,
+      "gravityAlongPathN": 1.995763407287396
+    }
+  ]
+}

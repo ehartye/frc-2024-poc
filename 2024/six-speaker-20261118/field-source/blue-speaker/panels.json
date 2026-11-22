@@ -1,0 +1,3273 @@
+{
+  "schema": "blue-speaker-panels/1",
+  "source": {
+    "archive": "CRESCENDO2024Field-STEP.zip",
+    "url": "https://firstfrc.blob.core.windows.net/frc2024/FieldAssets/CRESCENDO2024Field-STEP.zip",
+    "archiveSha256": "87185d3bf324bb3f35787ed6be715caf6151f6a9e81794830b3f743c381b4f18",
+    "stepMember": "FE-2024.STEP",
+    "stepSha256": "42c91b3efb9521d059c13cf25e2d7dda6315bdd6b7eb1202847bfe84ffb43c1a",
+    "speakerProduct": "GE-24300_Briweld Field Blue"
+  },
+  "frame": {
+    "units": "m",
+    "name": "FE-2024 blue field",
+    "fromStepCadMm": "x=(8270.875-X)/1000; y=(4105.275+Z)/1000; z=(Y-4.7752)/1000",
+    "basis": "nominal half field dimensions with actual CAD axes and measured carpet top"
+  },
+  "mesh": "named-panels.npz",
+  "meshSha256": "fcf29b7d726ae323e52f2c76cd4ec47b9d8ad60488f99f7a1fbdc266e8c23bad",
+  "columns": {
+    "<key>_v": "blue field XYZ, metres",
+    "<key>_t": "triangles indexing zero-based vertices",
+    "<key>_face": "original zero-based OCCT face index per triangle"
+  },
+  "linearDeflectionMm": 0.38,
+  "angularDeflectionRad": 0.16,
+  "parts": [
+    {
+      "key": "p0",
+      "name": "GE-24331-01",
+      "occurrence": 1,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24331",
+        "GE-24331-01"
+      ],
+      "triangles": 32,
+      "vertices": 48,
+      "blueFieldBoundsM": [
+        [
+          -0.04886325000000761,
+          4.782239846378423,
+          0.8890000000000211
+        ],
+        [
+          -0.004413250000006883,
+          6.3125898463784225,
+          0.9334500000000246
+        ]
+      ]
+    },
+    {
+      "key": "p1",
+      "name": "GE-24331-01",
+      "occurrence": 2,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24331",
+        "GE-24331-01"
+      ],
+      "triangles": 32,
+      "vertices": 48,
+      "blueFieldBoundsM": [
+        [
+          -0.04886325000000761,
+          4.782239846378423,
+          2.2010837597008504e-14
+        ],
+        [
+          -0.004413250000006883,
+          6.3125898463784225,
+          0.044450000000024005
+        ]
+      ]
+    },
+    {
+      "key": "p2",
+      "name": "GE-24331-02",
+      "occurrence": 1,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24331",
+        "GE-24331-02"
+      ],
+      "triangles": 2624,
+      "vertices": 2640,
+      "blueFieldBoundsM": [
+        [
+          -0.04886325000000761,
+          6.0903398463784235,
+          0.04445000000002396
+        ],
+        [
+          -0.004413250000006883,
+          6.134789846378423,
+          0.8890000000000239
+        ]
+      ]
+    },
+    {
+      "key": "p3",
+      "name": "GE-24331-02",
+      "occurrence": 2,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24331",
+        "GE-24331-02"
+      ],
+      "triangles": 2624,
+      "vertices": 2640,
+      "blueFieldBoundsM": [
+        [
+          -0.04886325000000761,
+          4.9600398463784225,
+          0.04445000000002434
+        ],
+        [
+          -0.004413250000006883,
+          5.004489846378422,
+          0.8890000000000242
+        ]
+      ]
+    },
+    {
+      "key": "p4",
+      "name": "GE-24301-01",
+      "occurrence": 1,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24301",
+        "GE-24301-01"
+      ],
+      "triangles": 5216,
+      "vertices": 5232,
+      "blueFieldBoundsM": [
+        [
+          -1.007713250000046,
+          4.9600398463784225,
+          1.2096750000000156
+        ],
+        [
+          -0.09331325000004653,
+          5.004489846378422,
+          1.2541250000000155
+        ]
+      ]
+    },
+    {
+      "key": "p5",
+      "name": "GE-24301-01",
+      "occurrence": 2,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24301",
+        "GE-24301-01"
+      ],
+      "triangles": 5216,
+      "vertices": 5232,
+      "blueFieldBoundsM": [
+        [
+          -1.007713250000046,
+          4.9600398463784225,
+          1.9399250000000157
+        ],
+        [
+          -0.09331325000004653,
+          5.004489846378422,
+          1.9843750000000155
+        ]
+      ]
+    },
+    {
+      "key": "p6",
+      "name": "GE-24301-01",
+      "occurrence": 3,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24301",
+        "GE-24301-01"
+      ],
+      "triangles": 5216,
+      "vertices": 5232,
+      "blueFieldBoundsM": [
+        [
+          -1.007713250000046,
+          4.9600398463784225,
+          1.517186376531754e-14
+        ],
+        [
+          -0.09331325000004653,
+          5.004489846378423,
+          0.04445000000001519
+        ]
+      ]
+    },
+    {
+      "key": "p7",
+      "name": "GE-24301-02",
+      "occurrence": 1,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24301",
+        "GE-24301-02"
+      ],
+      "triangles": 2624,
+      "vertices": 2640,
+      "blueFieldBoundsM": [
+        [
+          -0.09331325000004471,
+          4.9600398463784225,
+          1.5495160710088386e-14
+        ],
+        [
+          -0.04886325000004399,
+          5.004489846378423,
+          1.9843750000000155
+        ]
+      ]
+    },
+    {
+      "key": "p8",
+      "name": "GE-24301-02",
+      "occurrence": 2,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24301",
+        "GE-24301-02"
+      ],
+      "triangles": 2624,
+      "vertices": 2640,
+      "blueFieldBoundsM": [
+        [
+          -1.0521632500000468,
+          4.9600398463784225,
+          1.5495160710088386e-14
+        ],
+        [
+          -1.007713250000046,
+          5.004489846378423,
+          1.9843750000000155
+        ]
+      ]
+    },
+    {
+      "key": "p9",
+      "name": "GE-24301-01",
+      "occurrence": 4,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24301",
+        "GE-24301-01"
+      ],
+      "triangles": 5216,
+      "vertices": 5232,
+      "blueFieldBoundsM": [
+        [
+          -1.007713249999988,
+          6.090339846378423,
+          1.2096750000000003
+        ],
+        [
+          -0.09331324999998833,
+          6.134789846378422,
+          1.254125
+        ]
+      ]
+    },
+    {
+      "key": "p10",
+      "name": "GE-24301-01",
+      "occurrence": 5,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24301",
+        "GE-24301-01"
+      ],
+      "triangles": 5216,
+      "vertices": 5232,
+      "blueFieldBoundsM": [
+        [
+          -1.007713249999988,
+          6.090339846378423,
+          1.9399250000000001
+        ],
+        [
+          -0.09331324999998833,
+          6.134789846378422,
+          1.984375
+        ]
+      ]
+    },
+    {
+      "key": "p11",
+      "name": "GE-24301-01",
+      "occurrence": 6,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24301",
+        "GE-24301-01"
+      ],
+      "triangles": 5216,
+      "vertices": 5232,
+      "blueFieldBoundsM": [
+        [
+          -1.007713249999988,
+          6.090339846378423,
+          -2.8954616482224084e-16
+        ],
+        [
+          -0.09331324999998833,
+          6.134789846378422,
+          0.04444999999999973
+        ]
+      ]
+    },
+    {
+      "key": "p12",
+      "name": "GE-24301-02",
+      "occurrence": 3,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24301",
+        "GE-24301-02"
+      ],
+      "triangles": 2624,
+      "vertices": 2640,
+      "blueFieldBoundsM": [
+        [
+          -0.09331324999998651,
+          6.0903398463784235,
+          3.375077994860476e-17
+        ],
+        [
+          -0.048863249999985786,
+          6.134789846378424,
+          1.984375
+        ]
+      ]
+    },
+    {
+      "key": "p13",
+      "name": "GE-24301-02",
+      "occurrence": 4,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24301",
+        "GE-24301-02"
+      ],
+      "triangles": 2624,
+      "vertices": 2640,
+      "blueFieldBoundsM": [
+        [
+          -1.0521632499999887,
+          6.0903398463784235,
+          3.375077994860476e-17
+        ],
+        [
+          -1.007713249999988,
+          6.134789846378423,
+          1.984375
+        ]
+      ]
+    },
+    {
+      "key": "p14",
+      "name": "GE-24312",
+      "occurrence": 1,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24310",
+        "GE-24323",
+        "GE-24312"
+      ],
+      "triangles": 18612,
+      "vertices": 18752,
+      "blueFieldBoundsM": [
+        [
+          -1.0420606516825137,
+          6.144314846378419,
+          1.9843750000000242
+        ],
+        [
+          0.4652939641358826,
+          6.147489846378423,
+          2.492375000000031
+        ]
+      ]
+    },
+    {
+      "key": "p15",
+      "name": "GE-24312",
+      "occurrence": 2,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24310",
+        "GE-24323",
+        "GE-24312"
+      ],
+      "triangles": 18612,
+      "vertices": 18752,
+      "blueFieldBoundsM": [
+        [
+          -1.0420606516825155,
+          6.071289846378417,
+          1.9843750000000309
+        ],
+        [
+          0.4652939641358826,
+          6.07446484637842,
+          2.4923750000000373
+        ]
+      ]
+    },
+    {
+      "key": "p16",
+      "name": "GE-24311-07",
+      "occurrence": 1,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24310",
+        "GE-24323",
+        "GE-24311",
+        "GE-24311-01",
+        "GE-24311-07"
+      ],
+      "triangles": 13752,
+      "vertices": 13932,
+      "blueFieldBoundsM": [
+        [
+          -1.0521632499999996,
+          6.074464846378418,
+          1.984375000000014
+        ],
+        [
+          0.07945953942213692,
+          6.144314846378419,
+          2.044700000000015
+        ]
+      ]
+    },
+    {
+      "key": "p17",
+      "name": "GE-24311-08",
+      "occurrence": 1,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24310",
+        "GE-24323",
+        "GE-24311",
+        "GE-24311-02",
+        "GE-24311-08"
+      ],
+      "triangles": 7220,
+      "vertices": 7272,
+      "blueFieldBoundsM": [
+        [
+          -1.0338139926427994,
+          6.077639846378417,
+          2.0055890751275736
+        ],
+        [
+          -0.48377338613088794,
+          6.141139846378419,
+          2.492997508284848
+        ]
+      ]
+    },
+    {
+      "key": "p18",
+      "name": "GE-24311-03",
+      "occurrence": 1,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24310",
+        "GE-24323",
+        "GE-24311",
+        "GE-24311-03"
+      ],
+      "triangles": 5988,
+      "vertices": 6040,
+      "blueFieldBoundsM": [
+        [
+          -0.2013482124012844,
+          6.0776398463784185,
+          1.98733212479669
+        ],
+        [
+          0.45979028069063405,
+          6.141139846378419,
+          2.1696543833955424
+        ]
+      ]
+    },
+    {
+      "key": "p19",
+      "name": "GE-24311-09",
+      "occurrence": 1,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24310",
+        "GE-24323",
+        "GE-24311",
+        "GE-24311-04",
+        "GE-24311-09"
+      ],
+      "triangles": 9228,
+      "vertices": 9280,
+      "blueFieldBoundsM": [
+        [
+          0.40814396413588294,
+          6.074464846378418,
+          2.1099667850548873
+        ],
+        [
+          0.4652939641358835,
+          6.144314846378419,
+          2.338573279800805
+        ]
+      ]
+    },
+    {
+      "key": "p20",
+      "name": "GE-24311-05",
+      "occurrence": 1,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24310",
+        "GE-24323",
+        "GE-24311",
+        "GE-24311-05"
+      ],
+      "triangles": 7460,
+      "vertices": 7456,
+      "blueFieldBoundsM": [
+        [
+          -0.5839647893680158,
+          6.074464846378418,
+          2.4397229838272128
+        ],
+        [
+          0.0988180002515328,
+          6.144314846378419,
+          2.496873081195853
+        ]
+      ]
+    },
+    {
+      "key": "p21",
+      "name": "GE-24311-10",
+      "occurrence": 1,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24310",
+        "GE-24323",
+        "GE-24311",
+        "GE-24311-06",
+        "GE-24311-10"
+      ],
+      "triangles": 7416,
+      "vertices": 7412,
+      "blueFieldBoundsM": [
+        [
+          -0.10215235593434409,
+          6.077639846378415,
+          2.2741876396876752
+        ],
+        [
+          0.46014045411985444,
+          6.141139846378418,
+          2.493809970563015
+        ]
+      ]
+    },
+    {
+      "key": "p22",
+      "name": "GE-24312",
+      "occurrence": 3,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24310",
+        "GE-24323",
+        "GE-24312"
+      ],
+      "triangles": 18612,
+      "vertices": 18752,
+      "blueFieldBoundsM": [
+        [
+          -1.042060651682521,
+          5.017189846378421,
+          1.9843750000000229
+        ],
+        [
+          0.46529396413587526,
+          5.020364846378424,
+          2.49237500000003
+        ]
+      ]
+    },
+    {
+      "key": "p23",
+      "name": "GE-24312",
+      "occurrence": 4,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24310",
+        "GE-24323",
+        "GE-24312"
+      ],
+      "triangles": 18612,
+      "vertices": 18752,
+      "blueFieldBoundsM": [
+        [
+          -1.0420606516825228,
+          4.94416484637842,
+          1.9843750000000298
+        ],
+        [
+          0.46529396413587526,
+          4.94733984637842,
+          2.4923750000000364
+        ]
+      ]
+    },
+    {
+      "key": "p24",
+      "name": "GE-24311-07",
+      "occurrence": 2,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24310",
+        "GE-24323",
+        "GE-24311",
+        "GE-24311-01",
+        "GE-24311-07"
+      ],
+      "triangles": 13752,
+      "vertices": 13932,
+      "blueFieldBoundsM": [
+        [
+          -1.0521632500000069,
+          4.947339846378419,
+          1.9843750000000129
+        ],
+        [
+          0.07945953942212963,
+          5.017189846378421,
+          2.0447000000000135
+        ]
+      ]
+    },
+    {
+      "key": "p25",
+      "name": "GE-24311-08",
+      "occurrence": 2,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24310",
+        "GE-24323",
+        "GE-24311",
+        "GE-24311-02",
+        "GE-24311-08"
+      ],
+      "triangles": 7220,
+      "vertices": 7272,
+      "blueFieldBoundsM": [
+        [
+          -1.0338139926428067,
+          4.950514846378418,
+          2.0055890751275722
+        ],
+        [
+          -0.4837733861308952,
+          5.014014846378421,
+          2.4929975082848466
+        ]
+      ]
+    },
+    {
+      "key": "p26",
+      "name": "GE-24311-03",
+      "occurrence": 2,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24310",
+        "GE-24323",
+        "GE-24311",
+        "GE-24311-03"
+      ],
+      "triangles": 5988,
+      "vertices": 6040,
+      "blueFieldBoundsM": [
+        [
+          -0.20134821240129167,
+          4.95051484637842,
+          1.9873321247966884
+        ],
+        [
+          0.4597902806906268,
+          5.014014846378421,
+          2.169654383395541
+        ]
+      ]
+    },
+    {
+      "key": "p27",
+      "name": "GE-24311-09",
+      "occurrence": 2,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24310",
+        "GE-24323",
+        "GE-24311",
+        "GE-24311-04",
+        "GE-24311-09"
+      ],
+      "triangles": 9228,
+      "vertices": 9280,
+      "blueFieldBoundsM": [
+        [
+          0.40814396413587567,
+          4.947339846378419,
+          2.109966785054886
+        ],
+        [
+          0.4652939641358762,
+          5.017189846378421,
+          2.3385732798008037
+        ]
+      ]
+    },
+    {
+      "key": "p28",
+      "name": "GE-24311-05",
+      "occurrence": 2,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24310",
+        "GE-24323",
+        "GE-24311",
+        "GE-24311-05"
+      ],
+      "triangles": 7460,
+      "vertices": 7456,
+      "blueFieldBoundsM": [
+        [
+          -0.5839647893680231,
+          4.947339846378419,
+          2.4397229838272114
+        ],
+        [
+          0.09881800025152551,
+          5.017189846378421,
+          2.4968730811958517
+        ]
+      ]
+    },
+    {
+      "key": "p29",
+      "name": "GE-24311-10",
+      "occurrence": 2,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24310",
+        "GE-24323",
+        "GE-24311",
+        "GE-24311-06",
+        "GE-24311-10"
+      ],
+      "triangles": 7416,
+      "vertices": 7412,
+      "blueFieldBoundsM": [
+        [
+          -0.10215235593435136,
+          4.950514846378416,
+          2.274187639687674
+        ],
+        [
+          0.46014045411984716,
+          5.01401484637842,
+          2.4938099705630137
+        ]
+      ]
+    },
+    {
+      "key": "p30",
+      "name": "GE-24319",
+      "occurrence": 1,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24310",
+        "GE-24319"
+      ],
+      "triangles": 10596,
+      "vertices": 10700,
+      "blueFieldBoundsM": [
+        [
+          0.40496896413587913,
+          4.94987984637842,
+          2.1048837397086255
+        ],
+        [
+          0.46846896413588274,
+          6.13859984637842,
+          2.2541075457209776
+        ]
+      ]
+    },
+    {
+      "key": "p31",
+      "name": "GE-24318",
+      "occurrence": 1,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24310",
+        "GE-24324",
+        "GE-24318"
+      ],
+      "triangles": 6536,
+      "vertices": 6652,
+      "blueFieldBoundsM": [
+        [
+          -0.6831988720980007,
+          4.956864846378416,
+          2.3180122456322887
+        ],
+        [
+          -0.5896505934386697,
+          6.1383458463784155,
+          2.411560540844122
+        ]
+      ]
+    },
+    {
+      "key": "p32",
+      "name": "GE-24318",
+      "occurrence": 2,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24310",
+        "GE-24324",
+        "GE-24318"
+      ],
+      "triangles": 6536,
+      "vertices": 6652,
+      "blueFieldBoundsM": [
+        [
+          -0.9077052367376709,
+          4.956864846378416,
+          2.0935058042184975
+        ],
+        [
+          -0.8141569580783398,
+          6.1383458463784155,
+          2.1870540994303314
+        ]
+      ]
+    },
+    {
+      "key": "p33",
+      "name": "GE-24316",
+      "occurrence": 1,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24310",
+        "GE-24324",
+        "GE-24316"
+      ],
+      "triangles": 7460,
+      "vertices": 7480,
+      "blueFieldBoundsM": [
+        [
+          -0.96846371370015,
+          5.026905346378416,
+          2.027654534513386
+        ],
+        [
+          -0.49924541083551777,
+          6.068305346378418,
+          2.496872996300472
+        ]
+      ]
+    },
+    {
+      "key": "p34",
+      "name": "GE-24318",
+      "occurrence": 3,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24310",
+        "GE-24326",
+        "GE-24318"
+      ],
+      "triangles": 6536,
+      "vertices": 6652,
+      "blueFieldBoundsM": [
+        [
+          0.06230024314896946,
+          4.956864846378427,
+          2.39884755525124
+        ],
+        [
+          0.1839205295722395,
+          6.138345846378426,
+          2.463765936419003
+        ]
+      ]
+    },
+    {
+      "key": "p35",
+      "name": "GE-24318",
+      "occurrence": 4,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24310",
+        "GE-24326",
+        "GE-24318"
+      ],
+      "triangles": 6536,
+      "vertices": 6652,
+      "blueFieldBoundsM": [
+        [
+          0.30336898805118107,
+          4.956864846377445,
+          2.3111057076839563
+        ],
+        [
+          0.42498927450462454,
+          6.138345846378823,
+          2.3760240888627124
+        ]
+      ]
+    },
+    {
+      "key": "p36",
+      "name": "GE-24314",
+      "occurrence": 1,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24310",
+        "GE-24326",
+        "GE-24314"
+      ],
+      "triangles": 8804,
+      "vertices": 8848,
+      "blueFieldBoundsM": [
+        [
+          -0.00013702932980413606,
+          4.957055346378427,
+          2.3311225330832
+        ],
+        [
+          0.4687654589573176,
+          6.1381553463784275,
+          2.5043773653074535
+        ]
+      ]
+    },
+    {
+      "key": "p37",
+      "name": "GE-24317",
+      "occurrence": 1,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24310",
+        "GE-24326",
+        "GE-24317"
+      ],
+      "triangles": 5516,
+      "vertices": 5536,
+      "blueFieldBoundsM": [
+        [
+          -0.0935194751736908,
+          5.026905346376905,
+          2.2919016304362048
+        ],
+        [
+          0.4684689641337691,
+          6.068305346380115,
+          2.4990369780601958
+        ]
+      ]
+    },
+    {
+      "key": "p38",
+      "name": "GE-24313",
+      "occurrence": 1,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24310",
+        "GE-24313"
+      ],
+      "triangles": 3896,
+      "vertices": 3916,
+      "blueFieldBoundsM": [
+        [
+          0.46846896413587913,
+          4.949879846378427,
+          2.114803785720989
+        ],
+        [
+          0.47164396413588294,
+          6.138599846378427,
+          2.3275287857209928
+        ]
+      ]
+    },
+    {
+      "key": "p39",
+      "name": "GE-24315",
+      "occurrence": 1,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24310",
+        "GE-24315"
+      ],
+      "triangles": 4244,
+      "vertices": 4276,
+      "blueFieldBoundsM": [
+        [
+          -0.5485401822356288,
+          4.955277346378421,
+          2.496872988255634
+        ],
+        [
+          0.003909818307238311,
+          6.13637734637842,
+          2.500048082715906
+        ]
+      ]
+    },
+    {
+      "key": "p40",
+      "name": "GE-24305",
+      "occurrence": 1,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24325",
+        "GE-24305"
+      ],
+      "triangles": 1148,
+      "vertices": 1184,
+      "blueFieldBoundsM": [
+        [
+          -0.04886325000054603,
+          4.782239846377905,
+          1.9400138999983254
+        ],
+        [
+          0.00202564999945389,
+          6.312589846378338,
+          1.984463900014334
+        ]
+      ]
+    },
+    {
+      "key": "p41",
+      "name": "GE-24322",
+      "occurrence": 1,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24322"
+      ],
+      "triangles": 6028,
+      "vertices": 6080,
+      "blueFieldBoundsM": [
+        [
+          -0.048863249999985786,
+          4.7854148463784085,
+          0.9334500000000203
+        ],
+        [
+          -0.04568824999998651,
+          6.3094148463784085,
+          1.9494500000000203
+        ]
+      ]
+    },
+    {
+      "key": "p42",
+      "name": "GE-24303",
+      "occurrence": 1,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24303"
+      ],
+      "triangles": 332,
+      "vertices": 352,
+      "blueFieldBoundsM": [
+        [
+          -1.0521632500000069,
+          6.134789846378423,
+          1.1715750000000198
+        ],
+        [
+          -0.04886325000000761,
+          6.136377346378423,
+          1.9843750000000195
+        ]
+      ]
+    },
+    {
+      "key": "p43",
+      "name": "GE-24303",
+      "occurrence": 2,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24303"
+      ],
+      "triangles": 332,
+      "vertices": 352,
+      "blueFieldBoundsM": [
+        [
+          -1.0521632500000069,
+          4.958452346378422,
+          1.171575000000019
+        ],
+        [
+          -0.04886325000000761,
+          4.9600398463784225,
+          1.9843750000000187
+        ]
+      ]
+    },
+    {
+      "key": "p44",
+      "name": "GE-24321",
+      "occurrence": 1,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24321"
+      ],
+      "triangles": 1640,
+      "vertices": 1692,
+      "blueFieldBoundsM": [
+        [
+          -0.045688250000548575,
+          4.163114846378442,
+          1.9527139000124982
+        ],
+        [
+          0.011461749999451059,
+          4.201214846378443,
+          2.054313900012499
+        ]
+      ]
+    },
+    {
+      "key": "p45",
+      "name": "GE-24321",
+      "occurrence": 2,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24321"
+      ],
+      "triangles": 1640,
+      "vertices": 1692,
+      "blueFieldBoundsM": [
+        [
+          -0.045688250000548575,
+          6.433239846378444,
+          1.952713899999848
+        ],
+        [
+          0.011461749999451059,
+          6.471339846378445,
+          2.054313899999848
+        ]
+      ]
+    },
+    {
+      "key": "p46",
+      "name": "GE-24321",
+      "occurrence": 3,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24321"
+      ],
+      "triangles": 1640,
+      "vertices": 1692,
+      "blueFieldBoundsM": [
+        [
+          -0.04568825000054676,
+          6.8904398463784435,
+          1.9527138999998424
+        ],
+        [
+          0.011461749999452877,
+          6.928539846378445,
+          2.0543138999998427
+        ]
+      ]
+    },
+    {
+      "key": "p47",
+      "name": "GE-24321",
+      "occurrence": 4,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24321"
+      ],
+      "triangles": 1640,
+      "vertices": 1692,
+      "blueFieldBoundsM": [
+        [
+          -0.04568825000054676,
+          4.620314846378442,
+          1.9527139000124911
+        ],
+        [
+          0.011461749999452877,
+          4.658414846378443,
+          2.054313900012492
+        ]
+      ]
+    },
+    {
+      "key": "p48",
+      "name": "GE-24352-01",
+      "occurrence": 1,
+      "className": "counter structure",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24351",
+        "GE-24352",
+        "GE-24352-01"
+      ],
+      "triangles": 13528,
+      "vertices": 13644,
+      "blueFieldBoundsM": [
+        [
+          -1.0648632500000057,
+          5.795064846378449,
+          1.257300000000039
+        ],
+        [
+          -0.04886325000000579,
+          5.845864846378449,
+          1.3874750000000393
+        ]
+      ]
+    },
+    {
+      "key": "p49",
+      "name": "GE-24355",
+      "occurrence": 1,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24351",
+        "GE-24355"
+      ],
+      "triangles": 656,
+      "vertices": 676,
+      "blueFieldBoundsM": [
+        [
+          -0.5561393500000049,
+          5.325164846378447,
+          1.2762230000000412
+        ],
+        [
+          -0.04801235000000452,
+          5.769664846378448,
+          1.3272770000000442
+        ]
+      ]
+    },
+    {
+      "key": "p50",
+      "name": "GE-24355",
+      "occurrence": 2,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24351",
+        "GE-24355"
+      ],
+      "triangles": 656,
+      "vertices": 676,
+      "blueFieldBoundsM": [
+        [
+          -1.0657141500000054,
+          5.3243710963784485,
+          1.2762230000000392
+        ],
+        [
+          -0.5575871500000048,
+          5.768871096378449,
+          1.3272770000126495
+        ]
+      ]
+    },
+    {
+      "key": "p51",
+      "name": "GE-24362-01",
+      "occurrence": 1,
+      "className": "counter structure",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24351",
+        "GE-24361",
+        "GE-24362",
+        "GE-24362-01"
+      ],
+      "triangles": 7374,
+      "vertices": 7478,
+      "blueFieldBoundsM": [
+        [
+          -1.166463250000006,
+          5.731564846378449,
+          1.3144500000000379
+        ],
+        [
+          -0.9061132500000076,
+          5.795064848994612,
+          1.3970000000000387
+        ]
+      ]
+    },
+    {
+      "key": "p52",
+      "name": "GE-24365",
+      "occurrence": 1,
+      "className": "counter structure",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24351",
+        "GE-24361",
+        "GE-24365"
+      ],
+      "triangles": 3512,
+      "vertices": 3542,
+      "blueFieldBoundsM": [
+        [
+          -1.166463250000008,
+          5.248964846378439,
+          1.3874750000000429
+        ],
+        [
+          -0.9061132500000076,
+          5.78553984637844,
+          1.393825000000044
+        ]
+      ]
+    },
+    {
+      "key": "p53",
+      "name": "GE-24364",
+      "occurrence": 1,
+      "className": "counter structure",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24351",
+        "GE-24361",
+        "GE-24364"
+      ],
+      "triangles": 1628,
+      "vertices": 1648,
+      "blueFieldBoundsM": [
+        [
+          -1.1664632500000098,
+          5.4045398463784435,
+          1.3176250000000376
+        ],
+        [
+          -1.0775632500000083,
+          5.747439846378443,
+          1.320800000000039
+        ]
+      ]
+    },
+    {
+      "key": "p54",
+      "name": "GE-24363",
+      "occurrence": 1,
+      "className": "counter structure",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24351",
+        "GE-24361",
+        "GE-24363"
+      ],
+      "triangles": 3426,
+      "vertices": 3516,
+      "blueFieldBoundsM": [
+        [
+          -1.1664632500000334,
+          5.310051078454967,
+          1.3208000000000397
+        ],
+        [
+          -0.9143259328291752,
+          5.429939846378602,
+          1.3874750000000413
+        ]
+      ]
+    },
+    {
+      "key": "p55",
+      "name": "42SMR",
+      "occurrence": 1,
+      "className": "counter structure",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24351",
+        "GE-24361",
+        "42SMR"
+      ],
+      "triangles": 1016,
+      "vertices": 1056,
+      "blueFieldBoundsM": [
+        [
+          -1.179631562705028,
+          5.735819346378446,
+          1.3970000000000413
+        ],
+        [
+          -1.1296332500000061,
+          5.777475346378448,
+          1.4342983127050617
+        ]
+      ]
+    },
+    {
+      "key": "p56",
+      "name": "42SMR",
+      "occurrence": 2,
+      "className": "counter structure",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24351",
+        "GE-24361",
+        "42SMR"
+      ],
+      "triangles": 1016,
+      "vertices": 1056,
+      "blueFieldBoundsM": [
+        [
+          -1.1137582500000063,
+          5.745979346378449,
+          1.397000000000039
+        ],
+        [
+          -1.0637599372949844,
+          5.787635346378449,
+          1.4342983127050597
+        ]
+      ]
+    },
+    {
+      "key": "p57",
+      "name": "42SMR",
+      "occurrence": 3,
+      "className": "counter structure",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24351",
+        "GE-24361",
+        "42SMR"
+      ],
+      "triangles": 1016,
+      "vertices": 1056,
+      "blueFieldBoundsM": [
+        [
+          -1.179631562705028,
+          5.745979346378448,
+          1.2771516872950184
+        ],
+        [
+          -1.1296332500000061,
+          5.787635346378449,
+          1.314450000000039
+        ]
+      ]
+    },
+    {
+      "key": "p58",
+      "name": "42SMR",
+      "occurrence": 4,
+      "className": "counter structure",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24351",
+        "GE-24361",
+        "42SMR"
+      ],
+      "triangles": 1016,
+      "vertices": 1056,
+      "blueFieldBoundsM": [
+        [
+          -1.1137582500000063,
+          5.735819346378448,
+          1.2771516872950184
+        ],
+        [
+          -1.0637599372949844,
+          5.777475346378449,
+          1.314450000000039
+        ]
+      ]
+    },
+    {
+      "key": "p59",
+      "name": "GE-24352-01",
+      "occurrence": 2,
+      "className": "counter structure",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24351",
+        "GE-24352",
+        "GE-24352-01"
+      ],
+      "triangles": 13528,
+      "vertices": 13644,
+      "blueFieldBoundsM": [
+        [
+          -1.0648632500000057,
+          5.2489648463784535,
+          1.257300000000039
+        ],
+        [
+          -0.04886325000000397,
+          5.299764846378454,
+          1.3874750000000395
+        ]
+      ]
+    },
+    {
+      "key": "p60",
+      "name": "GE-24393",
+      "occurrence": 1,
+      "className": "counter structure",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24351",
+        "GE-24384",
+        "GE-24393"
+      ],
+      "triangles": 640,
+      "vertices": 648,
+      "blueFieldBoundsM": [
+        [
+          -0.09576366692195189,
+          5.316414546378449,
+          1.2795256830780923
+        ],
+        [
+          -0.05131503307805724,
+          5.317227346378449,
+          1.323974316921986
+        ]
+      ]
+    },
+    {
+      "key": "p61",
+      "name": "GE-24393",
+      "occurrence": 2,
+      "className": "counter structure",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24351",
+        "GE-24384",
+        "GE-24393"
+      ],
+      "triangles": 640,
+      "vertices": 648,
+      "blueFieldBoundsM": [
+        [
+          -0.09576366692195189,
+          5.777602346378449,
+          1.279525683078092
+        ],
+        [
+          -0.05131503307805724,
+          5.778415146378449,
+          1.3239743169219855
+        ]
+      ]
+    },
+    {
+      "key": "p62",
+      "name": "GE-24393",
+      "occurrence": 3,
+      "className": "counter structure",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24351",
+        "GE-24384",
+        "GE-24393"
+      ],
+      "triangles": 640,
+      "vertices": 648,
+      "blueFieldBoundsM": [
+        [
+          -1.0624102029677907,
+          5.31641454637845,
+          1.2795269470322546
+        ],
+        [
+          -1.0179640970322235,
+          5.317227346378449,
+          1.3239730529678222
+        ]
+      ]
+    },
+    {
+      "key": "p63",
+      "name": "GE-24393",
+      "occurrence": 4,
+      "className": "counter structure",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24351",
+        "GE-24384",
+        "GE-24393"
+      ],
+      "triangles": 640,
+      "vertices": 648,
+      "blueFieldBoundsM": [
+        [
+          -1.0624102029677907,
+          5.777602346378449,
+          1.2795269470322546
+        ],
+        [
+          -1.0179640970322235,
+          5.778415146378449,
+          1.3239730529678222
+        ]
+      ]
+    },
+    {
+      "key": "p64",
+      "name": "GE-24371-01",
+      "occurrence": 1,
+      "className": "counter structure",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "GE-24371",
+        "GE-24371-01"
+      ],
+      "triangles": 9444,
+      "vertices": 9546,
+      "blueFieldBoundsM": [
+        [
+          -0.8911914754137633,
+          5.299764846378452,
+          1.2636500000000392
+        ],
+        [
+          -0.32193103000000517,
+          5.341039846378456,
+          1.7215452117825891
+        ]
+      ]
+    },
+    {
+      "key": "p65",
+      "name": "GE-24372-01",
+      "occurrence": 1,
+      "className": "counter structure",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "GE-24372",
+        "GE-24372-01"
+      ],
+      "triangles": 12548,
+      "vertices": 12676,
+      "blueFieldBoundsM": [
+        [
+          -0.8911914754137633,
+          5.753789847478453,
+          1.263650000000035
+        ],
+        [
+          -0.32193103000000517,
+          5.795064847478455,
+          1.7215452117825853
+        ]
+      ]
+    },
+    {
+      "key": "p66",
+      "name": "GE-24374",
+      "occurrence": 1,
+      "className": "counter structure",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "GE-24374"
+      ],
+      "triangles": 1952,
+      "vertices": 1974,
+      "blueFieldBoundsM": [
+        [
+          -0.7593275826361223,
+          5.795064847478453,
+          1.3525500000000343
+        ],
+        [
+          -0.3921994699365641,
+          5.798239847478455,
+          1.6599238436691928
+        ]
+      ]
+    },
+    {
+      "key": "p67",
+      "name": "GE-24374",
+      "occurrence": 2,
+      "className": "counter structure",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "GE-24374"
+      ],
+      "triangles": 1952,
+      "vertices": 1974,
+      "blueFieldBoundsM": [
+        [
+          -0.7593275826361223,
+          5.296589846378453,
+          1.3525500000000383
+        ],
+        [
+          -0.3921994699365641,
+          5.299764846378455,
+          1.659923843669197
+        ]
+      ]
+    },
+    {
+      "key": "p68",
+      "name": "GE-24390-01",
+      "occurrence": 1,
+      "className": "counter structure",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "GE-24390",
+        "GE-24390-01"
+      ],
+      "triangles": 3732,
+      "vertices": 3824,
+      "blueFieldBoundsM": [
+        [
+          -0.8207329984466069,
+          5.302939847478454,
+          1.5400681031495689
+        ],
+        [
+          -0.407955772391786,
+          5.791889847478455,
+          1.723496148025884
+        ]
+      ]
+    },
+    {
+      "key": "p69",
+      "name": "GE-24375",
+      "occurrence": 1,
+      "className": "counter structure",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "GE-24375"
+      ],
+      "triangles": 2276,
+      "vertices": 2296,
+      "blueFieldBoundsM": [
+        [
+          -0.891345423293822,
+          5.306114847478453,
+          1.3996278740745414
+        ],
+        [
+          -0.833085362268761,
+          5.788714847478455,
+          1.7128556686200138
+        ]
+      ]
+    },
+    {
+      "key": "p70",
+      "name": "80 tooth RT-25 Belt",
+      "occurrence": 1,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "80 tooth RT-25 Belt"
+      ],
+      "triangles": 656,
+      "vertices": 676,
+      "blueFieldBoundsM": [
+        [
+          -0.834164587528021,
+          5.726802347478453,
+          1.4177048878857783
+        ],
+        [
+          -0.752243717310328,
+          5.739502347478455,
+          1.6438499305998637
+        ]
+      ]
+    },
+    {
+      "key": "p71",
+      "name": "Grip_Wheel-2in-MAXSpline",
+      "occurrence": 1,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "GE-24385",
+        "Grip_Wheel-2in-MAXSpline"
+      ],
+      "triangles": 116228,
+      "vertices": 75793,
+      "blueFieldBoundsM": [
+        [
+          -0.4298696767888923,
+          5.725908597478454,
+          1.484217173211152
+        ],
+        [
+          -0.37909238321112027,
+          5.749921097478453,
+          1.5349944667889248
+        ]
+      ]
+    },
+    {
+      "key": "p72",
+      "name": "Grip_Wheel-2in-MAXSpline",
+      "occurrence": 2,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "GE-24385",
+        "Grip_Wheel-2in-MAXSpline"
+      ],
+      "triangles": 116228,
+      "vertices": 75793,
+      "blueFieldBoundsM": [
+        [
+          -0.4298696767888923,
+          5.678283597478454,
+          1.484217173211152
+        ],
+        [
+          -0.37909238321112027,
+          5.702296097478453,
+          1.5349944667889248
+        ]
+      ]
+    },
+    {
+      "key": "p73",
+      "name": "Grip_Wheel-2in-MAXSpline",
+      "occurrence": 3,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "GE-24385",
+        "Grip_Wheel-2in-MAXSpline"
+      ],
+      "triangles": 116228,
+      "vertices": 75793,
+      "blueFieldBoundsM": [
+        [
+          -0.4298696767888923,
+          5.630658597478454,
+          1.484217173211152
+        ],
+        [
+          -0.37909238321112027,
+          5.654671097478453,
+          1.5349944667889248
+        ]
+      ]
+    },
+    {
+      "key": "p74",
+      "name": "Grip_Wheel-2in-MAXSpline",
+      "occurrence": 4,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "GE-24385",
+        "Grip_Wheel-2in-MAXSpline"
+      ],
+      "triangles": 116228,
+      "vertices": 75793,
+      "blueFieldBoundsM": [
+        [
+          -0.4298696767888923,
+          5.583033597478454,
+          1.484217173211152
+        ],
+        [
+          -0.37909238321112027,
+          5.607046097478453,
+          1.5349944667889248
+        ]
+      ]
+    },
+    {
+      "key": "p75",
+      "name": "Grip_Wheel-2in-MAXSpline",
+      "occurrence": 5,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "GE-24385",
+        "Grip_Wheel-2in-MAXSpline"
+      ],
+      "triangles": 116228,
+      "vertices": 75793,
+      "blueFieldBoundsM": [
+        [
+          -0.4298696767888923,
+          5.535408597478454,
+          1.484217173211152
+        ],
+        [
+          -0.37909238321112027,
+          5.559421097478454,
+          1.5349944667889248
+        ]
+      ]
+    },
+    {
+      "key": "p76",
+      "name": "Grip_Wheel-2in-MAXSpline",
+      "occurrence": 6,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "GE-24385",
+        "Grip_Wheel-2in-MAXSpline"
+      ],
+      "triangles": 116228,
+      "vertices": 75793,
+      "blueFieldBoundsM": [
+        [
+          -0.4298696767888923,
+          5.487783597478454,
+          1.484217173211152
+        ],
+        [
+          -0.37909238321112027,
+          5.511796097478454,
+          1.5349944667889248
+        ]
+      ]
+    },
+    {
+      "key": "p77",
+      "name": "Grip_Wheel-2in-MAXSpline",
+      "occurrence": 7,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "GE-24385",
+        "Grip_Wheel-2in-MAXSpline"
+      ],
+      "triangles": 116228,
+      "vertices": 75793,
+      "blueFieldBoundsM": [
+        [
+          -0.4298696767888923,
+          5.440158597478454,
+          1.4842171732111522
+        ],
+        [
+          -0.37909238321112027,
+          5.464171097478454,
+          1.534994466788925
+        ]
+      ]
+    },
+    {
+      "key": "p78",
+      "name": "Grip_Wheel-2in-MAXSpline",
+      "occurrence": 8,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "GE-24385",
+        "Grip_Wheel-2in-MAXSpline"
+      ],
+      "triangles": 116228,
+      "vertices": 75793,
+      "blueFieldBoundsM": [
+        [
+          -0.4298696767888923,
+          5.392533597478454,
+          1.4842171732111522
+        ],
+        [
+          -0.37909238321112027,
+          5.416546097478454,
+          1.534994466788925
+        ]
+      ]
+    },
+    {
+      "key": "p79",
+      "name": "Grip_Wheel-2in-MAXSpline",
+      "occurrence": 9,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "GE-24385",
+        "Grip_Wheel-2in-MAXSpline"
+      ],
+      "triangles": 116228,
+      "vertices": 75793,
+      "blueFieldBoundsM": [
+        [
+          -0.4298696767888923,
+          5.344908597478454,
+          1.4842171732111522
+        ],
+        [
+          -0.37909238321112027,
+          5.368921097478454,
+          1.534994466788925
+        ]
+      ]
+    },
+    {
+      "key": "p80",
+      "name": "GE-24393",
+      "occurrence": 5,
+      "className": "counter structure",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "GE-24387",
+        "GE-24393"
+      ],
+      "triangles": 640,
+      "vertices": 648,
+      "blueFieldBoundsM": [
+        [
+          -0.7999918294245854,
+          5.323558297478454,
+          1.59610181848561
+        ],
+        [
+          -0.7555418294245847,
+          5.324371097478455,
+          1.6405518184856098
+        ]
+      ]
+    },
+    {
+      "key": "p81",
+      "name": "GE-24393",
+      "occurrence": 6,
+      "className": "counter structure",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "GE-24387",
+        "GE-24393"
+      ],
+      "triangles": 640,
+      "vertices": 648,
+      "blueFieldBoundsM": [
+        [
+          -0.7999918294245854,
+          5.770458597478454,
+          1.5961018184856093
+        ],
+        [
+          -0.7555418294245847,
+          5.771271397478454,
+          1.6405518184856092
+        ]
+      ]
+    },
+    {
+      "key": "p82",
+      "name": "Compliant Wheel - 4in - MAXSpline",
+      "occurrence": 1,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "GE-24386",
+        "Compliant Wheel - 4in - MAXSpline"
+      ],
+      "triangles": 252320,
+      "vertices": 156489,
+      "blueFieldBoundsM": [
+        [
+          -0.8594385456769069,
+          5.741783596928453,
+          1.3924309297368909
+        ],
+        [
+          -0.7578444051506212,
+          5.765796096928453,
+          1.4940250702631774
+        ]
+      ]
+    },
+    {
+      "key": "p83",
+      "name": "Compliant Wheel - 4in - MAXSpline",
+      "occurrence": 2,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "GE-24386",
+        "Compliant Wheel - 4in - MAXSpline"
+      ],
+      "triangles": 252320,
+      "vertices": 156489,
+      "blueFieldBoundsM": [
+        [
+          -0.8594385456769069,
+          5.7005085969284535,
+          1.3924309297368904
+        ],
+        [
+          -0.7578444051506212,
+          5.724521096928454,
+          1.494025070263177
+        ]
+      ]
+    },
+    {
+      "key": "p84",
+      "name": "Compliant Wheel - 4in - MAXSpline",
+      "occurrence": 3,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "GE-24386",
+        "Compliant Wheel - 4in - MAXSpline"
+      ],
+      "triangles": 252320,
+      "vertices": 156489,
+      "blueFieldBoundsM": [
+        [
+          -0.8594385456769069,
+          5.659233596928453,
+          1.3924309297368915
+        ],
+        [
+          -0.7578444051506212,
+          5.683246096928454,
+          1.494025070263178
+        ]
+      ]
+    },
+    {
+      "key": "p85",
+      "name": "Compliant Wheel - 4in - MAXSpline",
+      "occurrence": 4,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "GE-24386",
+        "Compliant Wheel - 4in - MAXSpline"
+      ],
+      "triangles": 252320,
+      "vertices": 156489,
+      "blueFieldBoundsM": [
+        [
+          -0.8594385456769069,
+          5.617958596928453,
+          1.3924309297368918
+        ],
+        [
+          -0.7578444051506212,
+          5.6419710969284536,
+          1.4940250702631783
+        ]
+      ]
+    },
+    {
+      "key": "p86",
+      "name": "Compliant Wheel - 4in - MAXSpline",
+      "occurrence": 5,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "GE-24386",
+        "Compliant Wheel - 4in - MAXSpline"
+      ],
+      "triangles": 252320,
+      "vertices": 156489,
+      "blueFieldBoundsM": [
+        [
+          -0.8594385456769069,
+          5.576683596928453,
+          1.392430929736892
+        ],
+        [
+          -0.7578444051506212,
+          5.600696096928454,
+          1.4940250702631785
+        ]
+      ]
+    },
+    {
+      "key": "p87",
+      "name": "Compliant Wheel - 4in - MAXSpline",
+      "occurrence": 6,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "GE-24386",
+        "Compliant Wheel - 4in - MAXSpline"
+      ],
+      "triangles": 252320,
+      "vertices": 156489,
+      "blueFieldBoundsM": [
+        [
+          -0.8594385456769069,
+          5.535408596928454,
+          1.3924309297368924
+        ],
+        [
+          -0.7578444051506212,
+          5.559421096928454,
+          1.494025070263179
+        ]
+      ]
+    },
+    {
+      "key": "p88",
+      "name": "Compliant Wheel - 4in - MAXSpline",
+      "occurrence": 7,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "GE-24386",
+        "Compliant Wheel - 4in - MAXSpline"
+      ],
+      "triangles": 252320,
+      "vertices": 156489,
+      "blueFieldBoundsM": [
+        [
+          -0.8594385456769069,
+          5.494133596928454,
+          1.3924309297368926
+        ],
+        [
+          -0.7578444051506212,
+          5.5181460969284535,
+          1.4940250702631792
+        ]
+      ]
+    },
+    {
+      "key": "p89",
+      "name": "Compliant Wheel - 4in - MAXSpline",
+      "occurrence": 8,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "GE-24386",
+        "Compliant Wheel - 4in - MAXSpline"
+      ],
+      "triangles": 252320,
+      "vertices": 156489,
+      "blueFieldBoundsM": [
+        [
+          -0.8594385456769069,
+          5.452858596928453,
+          1.3924309297368929
+        ],
+        [
+          -0.7578444051506212,
+          5.476871096928454,
+          1.4940250702631794
+        ]
+      ]
+    },
+    {
+      "key": "p90",
+      "name": "Compliant Wheel - 4in - MAXSpline",
+      "occurrence": 9,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "GE-24386",
+        "Compliant Wheel - 4in - MAXSpline"
+      ],
+      "triangles": 252320,
+      "vertices": 156489,
+      "blueFieldBoundsM": [
+        [
+          -0.8594385456769069,
+          5.411583596928454,
+          1.3924309297368933
+        ],
+        [
+          -0.7578444051506212,
+          5.435596096928453,
+          1.4940250702631799
+        ]
+      ]
+    },
+    {
+      "key": "p91",
+      "name": "Compliant Wheel - 4in - MAXSpline",
+      "occurrence": 10,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "GE-24386",
+        "Compliant Wheel - 4in - MAXSpline"
+      ],
+      "triangles": 252320,
+      "vertices": 156489,
+      "blueFieldBoundsM": [
+        [
+          -0.8594385456769069,
+          5.370308596928453,
+          1.3924309297368929
+        ],
+        [
+          -0.7578444051506212,
+          5.394321096928453,
+          1.4940250702631794
+        ]
+      ]
+    },
+    {
+      "key": "p92",
+      "name": "Compliant Wheel - 4in - MAXSpline",
+      "occurrence": 11,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "GE-24386",
+        "Compliant Wheel - 4in - MAXSpline"
+      ],
+      "triangles": 252320,
+      "vertices": 156489,
+      "blueFieldBoundsM": [
+        [
+          -0.8594385456769069,
+          5.329033596928453,
+          1.3924309297368944
+        ],
+        [
+          -0.7578444051506212,
+          5.353046096928454,
+          1.4940250702631808
+        ]
+      ]
+    },
+    {
+      "key": "p93",
+      "name": "80 tooth RT-25 Belt",
+      "occurrence": 2,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "80 tooth RT-25 Belt"
+      ],
+      "triangles": 656,
+      "vertices": 676,
+      "blueFieldBoundsM": [
+        [
+          -0.834164587528021,
+          5.685527347478454,
+          1.4177048878857788
+        ],
+        [
+          -0.752243717310328,
+          5.698227347478455,
+          1.6438499305998642
+        ]
+      ]
+    },
+    {
+      "key": "p94",
+      "name": "80 tooth RT-25 Belt",
+      "occurrence": 3,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "80 tooth RT-25 Belt"
+      ],
+      "triangles": 656,
+      "vertices": 676,
+      "blueFieldBoundsM": [
+        [
+          -0.834164587528021,
+          5.644252347478453,
+          1.417704887885779
+        ],
+        [
+          -0.752243717310328,
+          5.656952347478454,
+          1.6438499305998644
+        ]
+      ]
+    },
+    {
+      "key": "p95",
+      "name": "80 tooth RT-25 Belt",
+      "occurrence": 4,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "80 tooth RT-25 Belt"
+      ],
+      "triangles": 656,
+      "vertices": 676,
+      "blueFieldBoundsM": [
+        [
+          -0.834164587528021,
+          5.602977347478453,
+          1.4177048878857792
+        ],
+        [
+          -0.752243717310328,
+          5.615677347478455,
+          1.6438499305998646
+        ]
+      ]
+    },
+    {
+      "key": "p96",
+      "name": "80 tooth RT-25 Belt",
+      "occurrence": 5,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "80 tooth RT-25 Belt"
+      ],
+      "triangles": 656,
+      "vertices": 676,
+      "blueFieldBoundsM": [
+        [
+          -0.834164587528021,
+          5.561702347478453,
+          1.4177048878857792
+        ],
+        [
+          -0.752243717310328,
+          5.574402347478455,
+          1.6438499305998646
+        ]
+      ]
+    },
+    {
+      "key": "p97",
+      "name": "80 tooth RT-25 Belt",
+      "occurrence": 6,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "80 tooth RT-25 Belt"
+      ],
+      "triangles": 656,
+      "vertices": 676,
+      "blueFieldBoundsM": [
+        [
+          -0.834164587528021,
+          5.520427347478453,
+          1.4177048878857799
+        ],
+        [
+          -0.752243717310328,
+          5.533127347478454,
+          1.6438499305998653
+        ]
+      ]
+    },
+    {
+      "key": "p98",
+      "name": "80 tooth RT-25 Belt",
+      "occurrence": 7,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "80 tooth RT-25 Belt"
+      ],
+      "triangles": 656,
+      "vertices": 676,
+      "blueFieldBoundsM": [
+        [
+          -0.834164587528021,
+          5.479152347478453,
+          1.41770488788578
+        ],
+        [
+          -0.752243717310328,
+          5.491852347478455,
+          1.6438499305998655
+        ]
+      ]
+    },
+    {
+      "key": "p99",
+      "name": "80 tooth RT-25 Belt",
+      "occurrence": 8,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "80 tooth RT-25 Belt"
+      ],
+      "triangles": 656,
+      "vertices": 676,
+      "blueFieldBoundsM": [
+        [
+          -0.834164587528021,
+          5.437877347478453,
+          1.4177048878857805
+        ],
+        [
+          -0.752243717310328,
+          5.450577347478455,
+          1.643849930599866
+        ]
+      ]
+    },
+    {
+      "key": "p100",
+      "name": "80 tooth RT-25 Belt",
+      "occurrence": 9,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "80 tooth RT-25 Belt"
+      ],
+      "triangles": 656,
+      "vertices": 676,
+      "blueFieldBoundsM": [
+        [
+          -0.834164587528021,
+          5.396602347478454,
+          1.417704887885781
+        ],
+        [
+          -0.752243717310328,
+          5.409302347478455,
+          1.6438499305998662
+        ]
+      ]
+    },
+    {
+      "key": "p101",
+      "name": "80 tooth RT-25 Belt",
+      "occurrence": 10,
+      "className": "counter moving contact candidate",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24350",
+        "GE-24370",
+        "80 tooth RT-25 Belt"
+      ],
+      "triangles": 656,
+      "vertices": 676,
+      "blueFieldBoundsM": [
+        [
+          -0.834164587528021,
+          5.355327347478454,
+          1.4177048878857812
+        ],
+        [
+          -0.752243717310328,
+          5.3680273474784554,
+          1.6438499305998664
+        ]
+      ]
+    },
+    {
+      "key": "p102",
+      "name": "GE-24308",
+      "occurrence": 1,
+      "className": "interior ramp or wall",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24308"
+      ],
+      "triangles": 3256,
+      "vertices": 3276,
+      "blueFieldBoundsM": [
+        [
+          -0.9681611116973873,
+          5.031334158275175,
+          1.5919739501151822
+        ],
+        [
+          -0.40616158428081506,
+          6.06349553448167,
+          2.0276545345133883
+        ]
+      ]
+    },
+    {
+      "key": "p103",
+      "name": "GE-24307",
+      "occurrence": 1,
+      "className": "interior ramp or wall",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24307"
+      ],
+      "triangles": 4252,
+      "vertices": 4288,
+      "blueFieldBoundsM": [
+        [
+          -0.9124632500000062,
+          5.792348738298045,
+          1.5875000000000306
+        ],
+        [
+          -0.04886325000000579,
+          6.071289846378419,
+          2.0454503539314355
+        ]
+      ]
+    },
+    {
+      "key": "p104",
+      "name": "GE-24307",
+      "occurrence": 2,
+      "className": "interior ramp or wall",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24307"
+      ],
+      "triangles": 4252,
+      "vertices": 4288,
+      "blueFieldBoundsM": [
+        [
+          -0.9124632500000079,
+          5.020364846378425,
+          1.587500000000028
+        ],
+        [
+          -0.04886325000000761,
+          5.302469423836925,
+          2.0435321082660804
+        ]
+      ]
+    },
+    {
+      "key": "p105",
+      "name": "GE-24309",
+      "occurrence": 1,
+      "className": "interior ramp or wall",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24309"
+      ],
+      "triangles": 3628,
+      "vertices": 3670,
+      "blueFieldBoundsM": [
+        [
+          -0.3844690607281664,
+          5.299764846378424,
+          1.3271500000000296
+        ],
+        [
+          -0.04886325000001307,
+          5.302939846378424,
+          1.5875000000000297
+        ]
+      ]
+    },
+    {
+      "key": "p106",
+      "name": "GE-24309",
+      "occurrence": 2,
+      "className": "interior ramp or wall",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24309"
+      ],
+      "triangles": 3628,
+      "vertices": 3670,
+      "blueFieldBoundsM": [
+        [
+          -0.3844690607281664,
+          5.791889846378424,
+          1.3271500000000247
+        ],
+        [
+          -0.04886325000001307,
+          5.795064846378423,
+          1.5875000000000246
+        ]
+      ]
+    },
+    {
+      "key": "p107",
+      "name": "GE-24320",
+      "occurrence": 1,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24328_GE-24328-RightBlue",
+        "GE-24320"
+      ],
+      "triangles": 4220,
+      "vertices": 4240,
+      "blueFieldBoundsM": [
+        [
+          0.011461749999454696,
+          6.1474898463784315,
+          1.9336638999999975
+        ],
+        [
+          0.014636749999453968,
+          7.163489846378432,
+          2.497221078649053
+        ]
+      ]
+    },
+    {
+      "key": "p108",
+      "name": "GE-24320",
+      "occurrence": 2,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24328_GE-24328-LeftBlue",
+        "GE-24320"
+      ],
+      "triangles": 4220,
+      "vertices": 4240,
+      "blueFieldBoundsM": [
+        [
+          0.011461749999452877,
+          3.9281648463784213,
+          1.9336639000126188
+        ],
+        [
+          0.014636749999452149,
+          4.944164846378421,
+          2.497221078661677
+        ]
+      ]
+    },
+    {
+      "key": "p109",
+      "name": "GE-24302-01",
+      "occurrence": 1,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24302",
+        "GE-24302-01"
+      ],
+      "triangles": 10076,
+      "vertices": 10144,
+      "blueFieldBoundsM": [
+        [
+          -1.007713250000048,
+          4.9600398463784225,
+          1.2160250000000152
+        ],
+        [
+          -0.9315132500000473,
+          6.134789846378422,
+          1.2573000000000156
+        ]
+      ]
+    },
+    {
+      "key": "p110",
+      "name": "GE-24302-01",
+      "occurrence": 2,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24302",
+        "GE-24302-01"
+      ],
+      "triangles": 10076,
+      "vertices": 10144,
+      "blueFieldBoundsM": [
+        [
+          -0.16951325000004908,
+          4.9600398463784225,
+          1.2160250000000152
+        ],
+        [
+          -0.09331325000004835,
+          6.134789846378422,
+          1.2573000000000156
+        ]
+      ]
+    },
+    {
+      "key": "p111",
+      "name": "GE-24302-01",
+      "occurrence": 3,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24302",
+        "GE-24302-01"
+      ],
+      "triangles": 10076,
+      "vertices": 10144,
+      "blueFieldBoundsM": [
+        [
+          -0.4489132500000469,
+          4.9600398463784225,
+          1.2160250000000152
+        ],
+        [
+          -0.3727132500000462,
+          6.134789846378422,
+          1.2573000000000156
+        ]
+      ]
+    },
+    {
+      "key": "p112",
+      "name": "GE-24302-01",
+      "occurrence": 4,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24302",
+        "GE-24302-01"
+      ],
+      "triangles": 10076,
+      "vertices": 10144,
+      "blueFieldBoundsM": [
+        [
+          -0.7283132500000483,
+          4.9600398463784225,
+          1.2160250000000152
+        ],
+        [
+          -0.6521132500000476,
+          6.134789846378422,
+          1.2573000000000156
+        ]
+      ]
+    },
+    {
+      "key": "p113",
+      "name": "GE-24392",
+      "occurrence": 1,
+      "className": "collection ramp downstream",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24392"
+      ],
+      "triangles": 4868,
+      "vertices": 4888,
+      "blueFieldBoundsM": [
+        [
+          -1.5181928133257734,
+          4.9695648463784226,
+          0.7753954087621787
+        ],
+        [
+          -1.0523308900000048,
+          6.125264846378423,
+          1.1042467515635832
+        ]
+      ]
+    },
+    {
+      "key": "p114",
+      "name": "GE-24391-01",
+      "occurrence": 1,
+      "className": "collection ramp downstream",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24391",
+        "GE-24391-01"
+      ],
+      "triangles": 4892,
+      "vertices": 4968,
+      "blueFieldBoundsM": [
+        [
+          -1.505247888199623,
+          6.0903398463784235,
+          0.7831328052604252
+        ],
+        [
+          -1.0521632499999851,
+          6.134789846378423,
+          1.2652733923217558
+        ]
+      ]
+    },
+    {
+      "key": "p115",
+      "name": "GE-24391-01",
+      "occurrence": 2,
+      "className": "collection ramp downstream",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24391",
+        "GE-24391-01"
+      ],
+      "triangles": 4892,
+      "vertices": 4968,
+      "blueFieldBoundsM": [
+        [
+          -1.5052478881996831,
+          4.960039846378422,
+          0.7831328052604519
+        ],
+        [
+          -1.052163250000045,
+          5.004489846378423,
+          1.2652733923217838
+        ]
+      ]
+    },
+    {
+      "key": "p116",
+      "name": "GE-24306",
+      "occurrence": 1,
+      "className": "interior ramp or wall",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24306"
+      ],
+      "triangles": 668,
+      "vertices": 704,
+      "blueFieldBoundsM": [
+        [
+          -1.0537507500000083,
+          4.963214846378422,
+          1.2604750000000196
+        ],
+        [
+          -1.0521632500000087,
+          6.131614846378423,
+          1.9843750000000195
+        ]
+      ]
+    },
+    {
+      "key": "p117",
+      "name": "GE-24303",
+      "occurrence": 3,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24303"
+      ],
+      "triangles": 332,
+      "vertices": 352,
+      "blueFieldBoundsM": [
+        [
+          -1.052163250000045,
+          4.958452346378422,
+          0.3587750000000188
+        ],
+        [
+          -0.04886325000004581,
+          4.9600398463784225,
+          1.1715750000000187
+        ]
+      ]
+    },
+    {
+      "key": "p118",
+      "name": "GE-24303",
+      "occurrence": 4,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24303"
+      ],
+      "triangles": 332,
+      "vertices": 352,
+      "blueFieldBoundsM": [
+        [
+          -1.0521632499999851,
+          6.134789846378423,
+          0.35877500000001994
+        ],
+        [
+          -0.048863249999985786,
+          6.136377346378423,
+          1.1715750000000198
+        ]
+      ]
+    },
+    {
+      "key": "p119",
+      "name": "GE-24394",
+      "occurrence": 1,
+      "className": "opening, guard, or frame",
+      "path": [
+        "FE-2024",
+        "GE-24300_Briweld Field Blue",
+        "GE-24394"
+      ],
+      "triangles": 3248,
+      "vertices": 3268,
+      "blueFieldBoundsM": [
+        [
+          -0.04568825000000834,
+          4.950514846378422,
+          1.8534062500000206
+        ],
+        [
+          -0.03933825000000797,
+          6.144314846378422,
+          1.9804062500000206
+        ]
+      ]
+    }
+  ],
+  "limits": [
+    "selected occurrence roles only; dynamics and material parameters unmeasured",
+    "private FIRST geometry; do not redistribute",
+    "all bodies at saved fixed pose; moving surfaces require a separate powered model"
+  ]
+}

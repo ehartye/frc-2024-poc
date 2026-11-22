@@ -1,0 +1,29 @@
+{
+  "originalTraceSha256": "79feeb5b49279c5eb10cf8921deb315b0ed515dd0da116bd47f24c6aa6273b1d",
+  "sourceLine": 130,
+  "samples": [
+    {
+      "position": [
+        0.4413586240023072,
+        -3.4649362487529746e-09,
+        0.9231836654265664
+      ],
+      "velocity": [
+        2.9057460889861573,
+        -7.63162241887096e-08,
+        4.640929549662508
+      ],
+      "gravity": [
+        0.0,
+        0.0,
+        -9.80665
+      ],
+      "units": "m,m/s,m/s\u00b2",
+      "frame": "native-world-z-up",
+      "datum": "model-floor",
+      "boundingRadius": 0.1778,
+      "contactFree": true,
+      "gravityOnly": true
+    }
+  ]
+}

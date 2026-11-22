@@ -1,0 +1,29 @@
+{
+  "firstMark": "outer",
+  "yaw": 149.25,
+  "native": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "field": "42c91b3efb9521d059c13cf25e2d7dda6315bdd6b7eb1202847bfe84ffb43c1a",
+  "release": "dc6517afe733e5369047f7957fffa382b102433501a16d53e3825466f5afb192",
+  "results": [
+    {
+      "begin": 0.0,
+      "end": 17.051850000010077,
+      "intervals": 54137,
+      "unresolvedIntervals": 15435,
+      "firstUnresolved": {
+        "t": 14.400500000000058,
+        "pairs": [
+          [
+            "body-696-1",
+            "FE-2024/GE-24300_Briweld Field Blue/GE-24330_Blue/GE-24335"
+          ],
+          [
+            "body-701-1",
+            "FE-2024/GE-24300_Briweld Field Blue/GE-24330_Blue/GE-24335"
+          ]
+        ]
+      },
+      "minimumReportedAxisGapM": 8.14487266405095e-05
+    }
+  ]
+}

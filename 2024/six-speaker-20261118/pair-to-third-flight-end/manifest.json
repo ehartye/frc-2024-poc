@@ -1,0 +1,22 @@
+{
+  "schema": "coupled-note-collection/1",
+  "shots": [
+    "2b65cf164a454630ba0afe1b4467113656aee06f5dc1e92b99c5e7b1925bcb79",
+    "3d11228712938b08d86fd88007ccab7df046a06e6387caec29de5aad2ecd7370"
+  ],
+  "traces": [
+    "2f48443ecb886c86cfb839a0c059276ef7ed3a37226ef8bc4fad34001620cbb4",
+    "acde08736f905c94004367521af18f86cf2415e679216b4960726818b257aee0"
+  ],
+  "inputs": [
+    "1be84c3c20a48ab7bb033917ec0da23ca8a55488d3ddb4e58d0baeb8dfe8ba69",
+    "13e2b05b2bca80e3194073c99ddf3c25fc6b8bd0e17c283b9a46ccd398dc78b9"
+  ],
+  "start": 40.387400000260115,
+  "end": 61.8139500003138,
+  "firstPairContactS": {
+    "0-1": 42.731300000337924
+  },
+  "maximumPairIndentationM": 0.003158922080637082,
+  "solver": "c52e659fbdeaf384f90b53fbb8c73b8600ac91da8e15bcc1b64fe9e87623063e"
+}

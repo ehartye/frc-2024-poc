@@ -1,0 +1,22 @@
+[
+  {
+    "wheel": "body-157-1",
+    "nearestSampleGapMm": 0.144822698354659,
+    "time": 100.29440000038134
+  },
+  {
+    "wheel": "body-192-1",
+    "nearestSampleGapMm": 0.08953879791685893,
+    "time": 100.29440000038134
+  },
+  {
+    "wheel": "body-227-1",
+    "nearestSampleGapMm": -0.0487655308053867,
+    "time": 100.29960000038133
+  },
+  {
+    "wheel": "body-262-1",
+    "nearestSampleGapMm": -0.17211399499818114,
+    "time": 100.30005000038133
+  }
+]
