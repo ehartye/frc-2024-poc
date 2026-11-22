@@ -1,0 +1,71 @@
+{
+  "sceneSha256": "5a1a5861cc9df6e3fc43ec7038701a64322de008b01f0e557416839b7943e0b5",
+  "stepSha256": "a29a146d8897f64e8f056fcb46a431ba234c7aecccbc3233b6834c43c703bc88",
+  "scope": "Rigid nominal NOTE and stock at recorded frames. Foam compression is unqualified.",
+  "results": [
+    {
+      "case": "continuous-cycle-48",
+      "frame": 1784,
+      "seconds": 78.956248,
+      "part": "NOTE runner \u00b7 left",
+      "rigidCommonMm3": 103.58392602827416,
+      "separatedControlGapMm": 1540.0591910094502
+    },
+    {
+      "case": "continuous-cycle-48",
+      "frame": 1784,
+      "seconds": 78.956248,
+      "part": "NOTE runner \u00b7 right",
+      "rigidCommonMm3": 111.66139679704588,
+      "separatedControlGapMm": 1540.0586947592217
+    },
+    {
+      "case": "continuous-cycle-48",
+      "frame": 604,
+      "seconds": 25.879613,
+      "part": "Windowed keeper panel",
+      "rigidCommonMm3": 423.7133938380708,
+      "separatedControlGapMm": 1744.061357587357
+    },
+    {
+      "case": "continuous-cycle-48",
+      "frame": 453,
+      "seconds": 19.839613,
+      "part": "Replaceable pickup lip",
+      "rigidCommonMm3": 0.00859635706677801,
+      "separatedControlGapMm": 1953.853193423421
+    },
+    {
+      "case": "continuous-cycle-96",
+      "frame": 485,
+      "seconds": 21.120113,
+      "part": "NOTE runner \u00b7 left",
+      "rigidCommonMm3": 879.2377064651636,
+      "separatedControlGapMm": 1717.2133098143445
+    },
+    {
+      "case": "continuous-cycle-96",
+      "frame": 485,
+      "seconds": 21.120113,
+      "part": "NOTE runner \u00b7 right",
+      "rigidCommonMm3": 879.2667715273482,
+      "separatedControlGapMm": 1717.2133100111196
+    },
+    {
+      "case": "continuous-cycle-96",
+      "frame": 605,
+      "seconds": 25.920113,
+      "part": "Windowed keeper panel",
+      "rigidCommonMm3": 645.7031027873214,
+      "separatedControlGapMm": 1743.1028645622757
+    },
+    {
+      "case": "continuous-cycle-96",
+      "frame": 39,
+      "seconds": 2.16387,
+      "part": "Replaceable pickup lip",
+      "rigidCommonMm3": 0.4480106863038926,
+      "separatedControlGapMm": 1953.9389950035225
+    }
+  ]
+}

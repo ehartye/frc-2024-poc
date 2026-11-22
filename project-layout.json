@@ -1,3 +1,4 @@
 {
-  "publicFusionHandoff": "cad/public-handoff.json"
+  "publicFusionHandoff": "cad/public-handoff.json",
+  "toolchainFiles": ["ROUGH-DRAFT.md"]
 }

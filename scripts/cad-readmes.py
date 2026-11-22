@@ -79,6 +79,16 @@ def run(root, update, template):
             block = (f'{START}\n[![{title}]({image})]({target})\n\n'
                      f'**{title}.** {featured["scope"]} '
                      f'[Native model record]({provenance}) · [{featured.get("linkLabel", "Open 3D replay")}]({target})\n{END}')
+        if name == "README.md":
+            # The top-level README features the season's current preliminary design.
+            photo = root / "cad/preliminary-design/media/002-preliminary-robot.json"
+            record = json.loads(photo.read_bytes())
+            scene = root / "docs/preliminary-design/releases" / record["release"]
+            checked(scene / "scene.json.gz", record["sceneSha256"])
+            checked(photo.with_suffix(".png"), record["pngSha256"])
+            if json.loads((scene / "release.json").read_bytes())["geometry"] != record["stepSha256"]:
+                raise ValueError("Preliminary still and release refer to different geometry")
+            block = (root / "cad/preliminary-design/readme-still.md").read_text(encoding="utf-8").strip()
         merged = "".join(lines[:heading+1]).rstrip("\n") + "\n\n" + block + "\n\n" + "".join(lines[heading+1:]).lstrip("\n")
         if b"\r\n" in original:
             merged = merged.replace("\n", "\r\n")

@@ -1,0 +1,17 @@
+{
+  "step": "a29a146d8897f64e8f056fcb46a431ba234c7aecccbc3233b6834c43c703bc88",
+  "motion": "830602fcea855d68403c8c11734a1a1a403c2b8c1c204d6240b1bd19772f1a3c",
+  "case": "feed-289",
+  "pair": [
+    "Chambered NOTE",
+    "Entry bearing bracket \u00b7 right"
+  ],
+  "method": "Distance from the modeled bracket volume to the transformed NOTE center circle, less the unloaded minor radius. The rigid travel upper bound times each half interval encloses all unsampled poses.",
+  "scope": "Nominal prescribed interframe path. Preliminary gross geometry and source precision. Assembly and piece variation remain open.",
+  "signedSurfaceGapLowerBoundMm": 0.015215307242861811,
+  "smallestSampledGapMm": 0.035079763144224785,
+  "atFraction": 0.4686279296875,
+  "samples": 795,
+  "deepestSubdivision": 13,
+  "rateMmPerUnitTime": 322.4230405872221
+}

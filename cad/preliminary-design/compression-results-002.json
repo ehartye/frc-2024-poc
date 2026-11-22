@@ -1,0 +1,349 @@
+{
+  "stepSha256": "a29a146d8897f64e8f056fcb46a431ba234c7aecccbc3233b6834c43c703bc88",
+  "sceneSha256": "5a1a5861cc9df6e3fc43ec7038701a64322de008b01f0e557416839b7943e0b5",
+  "scope": "Analytic section depth at the reported sampled mesh extrema on each clock. Interval coverage is separate.",
+  "measurements": [
+    {
+      "case": "continuous-cycle-48",
+      "frame": 68,
+      "timeS": 3.32387,
+      "pair": [
+        "Chambered NOTE",
+        "Center intake belt"
+      ],
+      "method": "payload section indentation",
+      "basis": "Preliminary geometric assumptions authorized for this review. The belt limit is a rounded 8 mm one-sided indentation, roughly 16% of the 50.8 mm unloaded NOTE section diameter. Separate planning limits apply to the named treads, soft pad and guiding surfaces. No measured allowable or contact force is claimed.",
+      "limitMm": 8,
+      "maxObservedDepthMm": 7.672274702990734,
+      "status": "pass",
+      "witnessTime": 0.0,
+      "upperBoundMm": 7.672274702990734,
+      "samples": 3,
+      "sevenMmControl": "fail"
+    },
+    {
+      "case": "continuous-cycle-48",
+      "frame": 1297,
+      "timeS": 56.750966,
+      "pair": [
+        "Chambered NOTE",
+        "Feed tread \u00b7 left"
+      ],
+      "method": "payload section indentation",
+      "basis": "Preliminary geometric assumptions authorized for this review. The belt limit is a rounded 8 mm one-sided indentation, roughly 16% of the 50.8 mm unloaded NOTE section diameter. Separate planning limits apply to the named treads, soft pad and guiding surfaces. No measured allowable or contact force is claimed.",
+      "limitMm": 7,
+      "maxObservedDepthMm": 6.127513372545955,
+      "status": "pass",
+      "witnessTime": 0.0,
+      "upperBoundMm": 6.127513372545955,
+      "samples": 3
+    },
+    {
+      "case": "continuous-cycle-48",
+      "frame": 880,
+      "timeS": 38.221781,
+      "pair": [
+        "Chambered NOTE",
+        "Feed tread \u00b7 right"
+      ],
+      "method": "payload section indentation",
+      "basis": "Preliminary geometric assumptions authorized for this review. The belt limit is a rounded 8 mm one-sided indentation, roughly 16% of the 50.8 mm unloaded NOTE section diameter. Separate planning limits apply to the named treads, soft pad and guiding surfaces. No measured allowable or contact force is claimed.",
+      "limitMm": 7,
+      "maxObservedDepthMm": 6.105831464773011,
+      "status": "pass",
+      "witnessTime": 0.0,
+      "upperBoundMm": 6.105831464773011,
+      "samples": 3
+    },
+    {
+      "case": "continuous-cycle-48",
+      "frame": 1983,
+      "timeS": 86.933248,
+      "pair": [
+        "Chambered NOTE",
+        "Launch tread \u00b7 left"
+      ],
+      "method": "payload section indentation",
+      "basis": "Preliminary geometric assumptions authorized for this review. The belt limit is a rounded 8 mm one-sided indentation, roughly 16% of the 50.8 mm unloaded NOTE section diameter. Separate planning limits apply to the named treads, soft pad and guiding surfaces. No measured allowable or contact force is claimed.",
+      "limitMm": 7,
+      "maxObservedDepthMm": 6.027931593778003,
+      "status": "pass",
+      "witnessTime": 0.0,
+      "upperBoundMm": 6.027931593778003,
+      "samples": 3
+    },
+    {
+      "case": "continuous-cycle-48",
+      "frame": 289,
+      "timeS": 12.17437,
+      "pair": [
+        "Chambered NOTE",
+        "Launch tread \u00b7 right"
+      ],
+      "method": "payload section indentation",
+      "basis": "Preliminary geometric assumptions authorized for this review. The belt limit is a rounded 8 mm one-sided indentation, roughly 16% of the 50.8 mm unloaded NOTE section diameter. Separate planning limits apply to the named treads, soft pad and guiding surfaces. No measured allowable or contact force is claimed.",
+      "limitMm": 7,
+      "maxObservedDepthMm": 6.023705541588111,
+      "status": "pass",
+      "witnessTime": 0.0,
+      "upperBoundMm": 6.023705541588111,
+      "samples": 3
+    },
+    {
+      "case": "continuous-cycle-48",
+      "frame": 2290,
+      "timeS": 102.347598,
+      "pair": [
+        "Chambered NOTE",
+        "Rear stop pad"
+      ],
+      "method": "payload section indentation",
+      "basis": "Preliminary geometric assumptions authorized for this review. The belt limit is a rounded 8 mm one-sided indentation, roughly 16% of the 50.8 mm unloaded NOTE section diameter. Separate planning limits apply to the named treads, soft pad and guiding surfaces. No measured allowable or contact force is claimed.",
+      "limitMm": 3,
+      "maxObservedDepthMm": 2.09053799444969,
+      "status": "pass",
+      "witnessTime": 0.0,
+      "upperBoundMm": 2.09053799444969,
+      "samples": 3
+    },
+    {
+      "case": "continuous-cycle-48",
+      "frame": 604,
+      "timeS": 25.879613,
+      "pair": [
+        "Chambered NOTE",
+        "Windowed keeper panel"
+      ],
+      "method": "payload section indentation",
+      "basis": "Preliminary geometric assumptions authorized for this review. The belt limit is a rounded 8 mm one-sided indentation, roughly 16% of the 50.8 mm unloaded NOTE section diameter. Separate planning limits apply to the named treads, soft pad and guiding surfaces. No measured allowable or contact force is claimed.",
+      "limitMm": 1,
+      "maxObservedDepthMm": 0.5253230474636439,
+      "status": "pass",
+      "witnessTime": 0.0,
+      "upperBoundMm": 0.5253230474636439,
+      "samples": 3
+    },
+    {
+      "case": "continuous-cycle-48",
+      "frame": 1784,
+      "timeS": 78.956248,
+      "pair": [
+        "Chambered NOTE",
+        "NOTE runner \u00b7 right"
+      ],
+      "method": "payload section indentation",
+      "basis": "Preliminary geometric assumptions authorized for this review. The belt limit is a rounded 8 mm one-sided indentation, roughly 16% of the 50.8 mm unloaded NOTE section diameter. Separate planning limits apply to the named treads, soft pad and guiding surfaces. No measured allowable or contact force is claimed.",
+      "limitMm": 2,
+      "maxObservedDepthMm": 0.33043603516009057,
+      "status": "pass",
+      "witnessTime": 0.0,
+      "upperBoundMm": 0.33043603516009057,
+      "samples": 3
+    },
+    {
+      "case": "continuous-cycle-48",
+      "frame": 1784,
+      "timeS": 78.956248,
+      "pair": [
+        "Chambered NOTE",
+        "NOTE runner \u00b7 left"
+      ],
+      "method": "payload section indentation",
+      "basis": "Preliminary geometric assumptions authorized for this review. The belt limit is a rounded 8 mm one-sided indentation, roughly 16% of the 50.8 mm unloaded NOTE section diameter. Separate planning limits apply to the named treads, soft pad and guiding surfaces. No measured allowable or contact force is claimed.",
+      "limitMm": 2,
+      "maxObservedDepthMm": 0.3199292189629581,
+      "status": "pass",
+      "witnessTime": 0.0,
+      "upperBoundMm": 0.3199292189629581,
+      "samples": 3
+    },
+    {
+      "case": "continuous-cycle-48",
+      "frame": 453,
+      "timeS": 19.839613,
+      "pair": [
+        "Chambered NOTE",
+        "Replaceable pickup lip"
+      ],
+      "method": "payload section indentation",
+      "basis": "Preliminary geometric assumptions authorized for this review. The belt limit is a rounded 8 mm one-sided indentation, roughly 16% of the 50.8 mm unloaded NOTE section diameter. Separate planning limits apply to the named treads, soft pad and guiding surfaces. No measured allowable or contact force is claimed.",
+      "limitMm": 1,
+      "maxObservedDepthMm": 0.027007548804899528,
+      "status": "pass",
+      "witnessTime": 0.0,
+      "upperBoundMm": 0.027007548804899528,
+      "samples": 3
+    },
+    {
+      "case": "continuous-cycle-96",
+      "frame": 2277,
+      "timeS": 101.829098,
+      "pair": [
+        "Chambered NOTE",
+        "Center intake belt"
+      ],
+      "method": "payload section indentation",
+      "basis": "Preliminary geometric assumptions authorized for this review. The belt limit is a rounded 8 mm one-sided indentation, roughly 16% of the 50.8 mm unloaded NOTE section diameter. Separate planning limits apply to the named treads, soft pad and guiding surfaces. No measured allowable or contact force is claimed.",
+      "limitMm": 8,
+      "maxObservedDepthMm": 7.55525863687841,
+      "status": "pass",
+      "witnessTime": 0.0,
+      "upperBoundMm": 7.55525863687841,
+      "samples": 3,
+      "sevenMmControl": "fail"
+    },
+    {
+      "case": "continuous-cycle-96",
+      "frame": 905,
+      "timeS": 39.222531,
+      "pair": [
+        "Chambered NOTE",
+        "Feed tread \u00b7 right"
+      ],
+      "method": "payload section indentation",
+      "basis": "Preliminary geometric assumptions authorized for this review. The belt limit is a rounded 8 mm one-sided indentation, roughly 16% of the 50.8 mm unloaded NOTE section diameter. Separate planning limits apply to the named treads, soft pad and guiding surfaces. No measured allowable or contact force is claimed.",
+      "limitMm": 7,
+      "maxObservedDepthMm": 6.05679616693185,
+      "status": "pass",
+      "witnessTime": 0.0,
+      "upperBoundMm": 6.05679616693185,
+      "samples": 3
+    },
+    {
+      "case": "continuous-cycle-96",
+      "frame": 102,
+      "timeS": 4.68387,
+      "pair": [
+        "Chambered NOTE",
+        "Feed tread \u00b7 left"
+      ],
+      "method": "payload section indentation",
+      "basis": "Preliminary geometric assumptions authorized for this review. The belt limit is a rounded 8 mm one-sided indentation, roughly 16% of the 50.8 mm unloaded NOTE section diameter. Separate planning limits apply to the named treads, soft pad and guiding surfaces. No measured allowable or contact force is claimed.",
+      "limitMm": 7,
+      "maxObservedDepthMm": 6.053313865693923,
+      "status": "pass",
+      "witnessTime": 0.0,
+      "upperBoundMm": 6.053313865693923,
+      "samples": 3
+    },
+    {
+      "case": "continuous-cycle-96",
+      "frame": 1294,
+      "timeS": 56.631966,
+      "pair": [
+        "Chambered NOTE",
+        "Launch tread \u00b7 left"
+      ],
+      "method": "payload section indentation",
+      "basis": "Preliminary geometric assumptions authorized for this review. The belt limit is a rounded 8 mm one-sided indentation, roughly 16% of the 50.8 mm unloaded NOTE section diameter. Separate planning limits apply to the named treads, soft pad and guiding surfaces. No measured allowable or contact force is claimed.",
+      "limitMm": 7,
+      "maxObservedDepthMm": 6.031517594257004,
+      "status": "pass",
+      "witnessTime": 0.0,
+      "upperBoundMm": 6.031517594257004,
+      "samples": 3
+    },
+    {
+      "case": "continuous-cycle-96",
+      "frame": 673,
+      "timeS": 28.685613,
+      "pair": [
+        "Chambered NOTE",
+        "Launch tread \u00b7 right"
+      ],
+      "method": "payload section indentation",
+      "basis": "Preliminary geometric assumptions authorized for this review. The belt limit is a rounded 8 mm one-sided indentation, roughly 16% of the 50.8 mm unloaded NOTE section diameter. Separate planning limits apply to the named treads, soft pad and guiding surfaces. No measured allowable or contact force is claimed.",
+      "limitMm": 7,
+      "maxObservedDepthMm": 6.004659688042871,
+      "status": "pass",
+      "witnessTime": 0.0,
+      "upperBoundMm": 6.004659688042871,
+      "samples": 3
+    },
+    {
+      "case": "continuous-cycle-96",
+      "frame": 884,
+      "timeS": 38.382531,
+      "pair": [
+        "Chambered NOTE",
+        "Rear stop pad"
+      ],
+      "method": "payload section indentation",
+      "basis": "Preliminary geometric assumptions authorized for this review. The belt limit is a rounded 8 mm one-sided indentation, roughly 16% of the 50.8 mm unloaded NOTE section diameter. Separate planning limits apply to the named treads, soft pad and guiding surfaces. No measured allowable or contact force is claimed.",
+      "limitMm": 3,
+      "maxObservedDepthMm": 1.9173204511720598,
+      "status": "pass",
+      "witnessTime": 0.0,
+      "upperBoundMm": 1.9173204511720598,
+      "samples": 3
+    },
+    {
+      "case": "continuous-cycle-96",
+      "frame": 485,
+      "timeS": 21.120113,
+      "pair": [
+        "Chambered NOTE",
+        "NOTE runner \u00b7 right"
+      ],
+      "method": "payload section indentation",
+      "basis": "Preliminary geometric assumptions authorized for this review. The belt limit is a rounded 8 mm one-sided indentation, roughly 16% of the 50.8 mm unloaded NOTE section diameter. Separate planning limits apply to the named treads, soft pad and guiding surfaces. No measured allowable or contact force is claimed.",
+      "limitMm": 2,
+      "maxObservedDepthMm": 1.3756295091665613,
+      "status": "pass",
+      "witnessTime": 0.0,
+      "upperBoundMm": 1.3756295091665613,
+      "samples": 3
+    },
+    {
+      "case": "continuous-cycle-96",
+      "frame": 485,
+      "timeS": 21.120113,
+      "pair": [
+        "Chambered NOTE",
+        "NOTE runner \u00b7 left"
+      ],
+      "method": "payload section indentation",
+      "basis": "Preliminary geometric assumptions authorized for this review. The belt limit is a rounded 8 mm one-sided indentation, roughly 16% of the 50.8 mm unloaded NOTE section diameter. Separate planning limits apply to the named treads, soft pad and guiding surfaces. No measured allowable or contact force is claimed.",
+      "limitMm": 2,
+      "maxObservedDepthMm": 1.3756099379283988,
+      "status": "pass",
+      "witnessTime": 0.0,
+      "upperBoundMm": 1.3756099379283988,
+      "samples": 3
+    },
+    {
+      "case": "continuous-cycle-96",
+      "frame": 605,
+      "timeS": 25.920113,
+      "pair": [
+        "Chambered NOTE",
+        "Windowed keeper panel"
+      ],
+      "method": "payload section indentation",
+      "basis": "Preliminary geometric assumptions authorized for this review. The belt limit is a rounded 8 mm one-sided indentation, roughly 16% of the 50.8 mm unloaded NOTE section diameter. Separate planning limits apply to the named treads, soft pad and guiding surfaces. No measured allowable or contact force is claimed.",
+      "limitMm": 1,
+      "maxObservedDepthMm": 0.5129893488911783,
+      "status": "pass",
+      "witnessTime": 0.0,
+      "upperBoundMm": 0.5129893488911783,
+      "samples": 3
+    },
+    {
+      "case": "continuous-cycle-96",
+      "frame": 39,
+      "timeS": 2.16387,
+      "pair": [
+        "Chambered NOTE",
+        "Replaceable pickup lip"
+      ],
+      "method": "payload section indentation",
+      "basis": "Preliminary geometric assumptions authorized for this review. The belt limit is a rounded 8 mm one-sided indentation, roughly 16% of the 50.8 mm unloaded NOTE section diameter. Separate planning limits apply to the named treads, soft pad and guiding surfaces. No measured allowable or contact force is claimed.",
+      "limitMm": 1,
+      "maxObservedDepthMm": 0.13184235235380015,
+      "status": "pass",
+      "witnessTime": 0.0,
+      "upperBoundMm": 0.13184235235380015,
+      "samples": 3
+    }
+  ]
+}
