@@ -11,9 +11,11 @@
     const page = new URL(location.href);
     const id = page.searchParams.get('release');
     if (id && !['001','002',current].includes(id)) throw Error('Unknown preliminary design.');
-    const url = new URL('releases/' + current + '/', page);
-    url.searchParams.set('concept', 'guided');
     const motion = page.searchParams.get('case');
+    const showReplay = Boolean(motion);
+    const url = new URL('releases/' + current + '/' + (showReplay ? 'match-replay.html' : ''), page);
+    document.querySelector(showReplay ? '#replay' : '#assembly').setAttribute('aria-current','page');
+    if (showReplay) url.searchParams.set('concept','guided');
     if (motion) {
       const earlier = {'loaded-cycle-48':'continuous-cycle-48','observed-reset-96':'continuous-cycle-96'};
       url.searchParams.set('case', earlier[motion] || motion);
