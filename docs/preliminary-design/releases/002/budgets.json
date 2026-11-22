@@ -1,0 +1,833 @@
+{
+  "issue": "2024-002-cassette",
+  "step": {
+    "file": "robot.step",
+    "sha256": "a29a146d8897f64e8f056fcb46a431ba234c7aecccbc3233b6834c43c703bc88"
+  },
+  "motion": {
+    "file": "motion.json",
+    "sha256": "830602fcea855d68403c8c11734a1a1a403c2b8c1c204d6240b1bd19772f1a3c"
+  },
+  "design": {
+    "file": "design.json",
+    "sha256": "c09b9c28bebcb3601183995e468d587ba22a0d59e324c07dcad82ebdfb349abf"
+  },
+  "masses": [
+    {
+      "id": "Chassis",
+      "members": [
+        "Chassis perimeter",
+        "Bay crossmember \u00c2\u00b7 rear",
+        "Bay crossmember \u00c2\u00b7 front",
+        "Chassis sill \u00c2\u00b7 left",
+        "Chassis sill \u00c2\u00b7 right"
+      ],
+      "kg": [
+        5.246069149370916,
+        5.735787718045076
+      ],
+      "basis": "Published revision 002 subtotal, preserving additions and incremental stock allowances."
+    },
+    {
+      "id": "Pivot support",
+      "members": [
+        "Pivot A-frame \u00c2\u00b7 left",
+        "Slide base \u00c2\u00b7 left",
+        "Slide guide \u00c2\u00b7 left",
+        "Translating bearing block \u00c2\u00b7 left",
+        "Pivot bearing \u00c2\u00b7 left",
+        "Pivot A-frame \u00c2\u00b7 right",
+        "Slide base \u00c2\u00b7 right",
+        "Slide guide \u00c2\u00b7 right",
+        "Translating bearing block \u00c2\u00b7 right",
+        "Pivot bearing \u00c2\u00b7 right",
+        "Pivot torque shaft",
+        "Pivot reducer",
+        "Pivot motor",
+        "Slide screw",
+        "Slide drive motor",
+        "Slide bearing mount -49",
+        "Slide bearing mount 220",
+        "Travel nut and clevis",
+        "Service index disk",
+        "Service pin guide",
+        "Battery service pin"
+      ],
+      "kg": [
+        3.86,
+        6.23
+      ],
+      "basis": "Published revision 002 subtotal, preserving additions and incremental stock allowances."
+    },
+    {
+      "id": "Pivoting cassette",
+      "members": [
+        "Cassette cheek \u00c2\u00b7 left",
+        "Cassette side beam \u00c2\u00b7 left",
+        "Entry bearing bracket \u00c2\u00b7 left",
+        "Cassette cheek \u00c2\u00b7 right",
+        "Cassette side beam \u00c2\u00b7 right",
+        "Entry bearing bracket \u00c2\u00b7 right"
+      ],
+      "kg": [
+        1.2,
+        2.3
+      ],
+      "basis": "Published revision 002 subtotal, preserving additions and incremental stock allowances."
+    },
+    {
+      "id": "Piece support",
+      "members": [
+        "NOTE runner \u00c2\u00b7 left",
+        "NOTE runner \u00c2\u00b7 right",
+        "Runner crossbar 125",
+        "Runner crossbar 370",
+        "Runner crossbar 599",
+        "Rear piece stop",
+        "Rear stop bracket \u00c2\u00b7 right",
+        "Rear stop bracket \u00c2\u00b7 left",
+        "Rear stop screw \u00c2\u00b7 right",
+        "Rear stop screw \u00c2\u00b7 left",
+        "Rear stop pad",
+        "Stop bracket through bolt \u00c2\u00b7 right",
+        "Stop bracket locknut \u00c2\u00b7 right",
+        "Stop bracket through bolt \u00c2\u00b7 left",
+        "Stop bracket locknut \u00c2\u00b7 left"
+      ],
+      "kg": [
+        0.78,
+        1.61
+      ],
+      "basis": "Published revision 002 subtotal, preserving additions and incremental stock allowances."
+    },
+    {
+      "id": "Cassette drive",
+      "members": [
+        "Nose roller shaft",
+        "Nose motor",
+        "Nose pickup roller",
+        "Center intake belt",
+        "Center belt idler",
+        "Center idler axle",
+        "Center idler fork \u00c2\u00b7 right",
+        "Center idler fork \u00c2\u00b7 left"
+      ],
+      "kg": [
+        2.27,
+        4.56
+      ],
+      "basis": "Published revision 002 subtotal, preserving additions and incremental stock allowances."
+    },
+    {
+      "id": "Electrical bay",
+      "members": [
+        "Electronics deck",
+        "PDH",
+        "roboRIO flat",
+        "radio",
+        "main breaker",
+        "Pack lead",
+        "Distribution lead"
+      ],
+      "kg": [
+        3.6,
+        5.9
+      ],
+      "basis": "Published revision 002 subtotal, preserving additions and incremental stock allowances."
+    },
+    {
+      "id": "Swerve \u00b7 Front left",
+      "members": [
+        "Front left tire",
+        "Front left wheel axle",
+        "Front left module deck",
+        "Front left axle support 255",
+        "Front left axle support 295",
+        "Swerve drive motor \u00c2\u00b7 Front left",
+        "Swerve steer motor \u00c2\u00b7 Front left"
+      ],
+      "kg": [
+        2.4,
+        3.1
+      ],
+      "basis": "Published revision 002 subtotal, preserving additions and incremental stock allowances."
+    },
+    {
+      "id": "Swerve \u00b7 Rear left",
+      "members": [
+        "Rear left tire",
+        "Rear left wheel axle",
+        "Rear left module deck",
+        "Rear left axle support 255",
+        "Rear left axle support 295",
+        "Swerve drive motor \u00c2\u00b7 Rear left",
+        "Swerve steer motor \u00c2\u00b7 Rear left"
+      ],
+      "kg": [
+        2.4,
+        3.1
+      ],
+      "basis": "Published revision 002 subtotal, preserving additions and incremental stock allowances."
+    },
+    {
+      "id": "Swerve \u00b7 Front right",
+      "members": [
+        "Front right tire",
+        "Front right wheel axle",
+        "Front right module deck",
+        "Front right axle support 255",
+        "Front right axle support 295",
+        "Swerve drive motor \u00c2\u00b7 Front right",
+        "Swerve steer motor \u00c2\u00b7 Front right"
+      ],
+      "kg": [
+        2.4,
+        3.1
+      ],
+      "basis": "Published revision 002 subtotal, preserving additions and incremental stock allowances."
+    },
+    {
+      "id": "Swerve \u00b7 Rear right",
+      "members": [
+        "Rear right tire",
+        "Rear right wheel axle",
+        "Rear right module deck",
+        "Rear right axle support 255",
+        "Rear right axle support 295",
+        "Swerve drive motor \u00c2\u00b7 Rear right",
+        "Swerve steer motor \u00c2\u00b7 Rear right"
+      ],
+      "kg": [
+        2.4,
+        3.1
+      ],
+      "basis": "Published revision 002 subtotal, preserving additions and incremental stock allowances."
+    },
+    {
+      "id": "Unplaced fasteners, harness and sensors",
+      "members": [],
+      "kg": [
+        2,
+        4.2
+      ],
+      "basis": "Published revision 002 subtotal, preserving additions and incremental stock allowances."
+    },
+    {
+      "id": "Unallocated design reserve",
+      "members": [],
+      "kg": [
+        3,
+        6
+      ],
+      "basis": "Published revision 002 subtotal, preserving additions and incremental stock allowances."
+    },
+    {
+      "id": "Passive cover",
+      "members": [
+        "Lid post 95 \u00c2\u00b7 left",
+        "Lid post 330 \u00c2\u00b7 left",
+        "Lid edge rail \u00c2\u00b7 left",
+        "Lid post 95 \u00c2\u00b7 right",
+        "Lid post 330 \u00c2\u00b7 right",
+        "Lid edge rail \u00c2\u00b7 right",
+        "Windowed keeper panel",
+        "Flap axle",
+        "Mouth retention flap"
+      ],
+      "kg": [
+        0.62,
+        1.2
+      ],
+      "basis": "Published revision 002 subtotal, preserving additions and incremental stock allowances."
+    },
+    {
+      "id": "Replacement traction tread and hardware allowance",
+      "members": [],
+      "kg": [
+        0.06,
+        0.22
+      ],
+      "basis": "Published revision 002 subtotal, preserving additions and incremental stock allowances."
+    },
+    {
+      "id": "Pickup lip, extended rail tips and attachments",
+      "members": [
+        "Replaceable pickup lip",
+        "Pickup lip crossbar",
+        "Cassette side beam extension \u00c2\u00b7 left",
+        "Cassette side beam extension \u00c2\u00b7 right",
+        "Blade retaining screw 1",
+        "Blade retaining screw 2",
+        "Blade retaining screw 3",
+        "Blade retaining screw 4"
+      ],
+      "kg": [
+        0.0886,
+        0.1736
+      ],
+      "basis": "Published revision 002 subtotal, preserving additions and incremental stock allowances."
+    },
+    {
+      "id": "Climb catch, actuator and sensing allowance",
+      "members": [
+        "Catch sector screw 1",
+        "Catch sector screw 2",
+        "Catch sector screw 3",
+        "Catch sector",
+        "Catch receiver screw 1",
+        "Catch receiver screw 2",
+        "Catch receiver screw 3",
+        "Catch receiver screw 4",
+        "Catch receiver",
+        "Catch dog",
+        "Catch actuator and spring"
+      ],
+      "kg": [
+        0.2626578479728554,
+        0.4531347838881425
+      ],
+      "basis": "Published revision 002 subtotal, preserving additions and incremental stock allowances."
+    },
+    {
+      "id": "Carpet followers, axles and added cheek material",
+      "members": [
+        "Carpet follower \u00c2\u00b7 left",
+        "Follower shoulder axle \u00c2\u00b7 left",
+        "Follower thrust washer \u00c2\u00b7 left",
+        "Follower locknut \u00c2\u00b7 left",
+        "Carpet follower \u00c2\u00b7 right",
+        "Follower shoulder axle \u00c2\u00b7 right",
+        "Follower thrust washer \u00c2\u00b7 right",
+        "Follower locknut \u00c2\u00b7 right"
+      ],
+      "kg": [
+        0.022335886164116765,
+        0.05
+      ],
+      "basis": "Published revision 002 subtotal, preserving additions and incremental stock allowances."
+    },
+    {
+      "id": "Split transmission, net added stock and electrical allowance",
+      "members": [
+        "Feed belt \u00c2\u00b7 left",
+        "Feed tread \u00c2\u00b7 left",
+        "Feed drive pulley \u00c2\u00b7 left",
+        "Feed idler pulley \u00c2\u00b7 left",
+        "Feed Nose pulley shelf \u00c2\u00b7 left",
+        "Feed Idler axle \u00c2\u00b7 left",
+        "Launch belt \u00c2\u00b7 left",
+        "Launch tread \u00c2\u00b7 left",
+        "Launch drive pulley \u00c2\u00b7 left",
+        "Launch Belt motor \u00c2\u00b7 left",
+        "Launch Belt motor shelf \u00c2\u00b7 left",
+        "Launch Belt drive shaft \u00c2\u00b7 left",
+        "Launch idler pulley \u00c2\u00b7 left",
+        "Launch idler bridge seat \u00c2\u00b7 left",
+        "Launch idler axle \u00c2\u00b7 left",
+        "Feed right-angle gearbox \u00c2\u00b7 left",
+        "Feed gearhead flange \u00c2\u00b7 left",
+        "Feed output shaft \u00c2\u00b7 left",
+        "Feed belt \u00c2\u00b7 right",
+        "Feed tread \u00c2\u00b7 right",
+        "Feed drive pulley \u00c2\u00b7 right",
+        "Feed idler pulley \u00c2\u00b7 right",
+        "Feed Nose pulley shelf \u00c2\u00b7 right",
+        "Feed Idler axle \u00c2\u00b7 right",
+        "Launch belt \u00c2\u00b7 right",
+        "Launch tread \u00c2\u00b7 right",
+        "Launch drive pulley \u00c2\u00b7 right",
+        "Launch Belt motor \u00c2\u00b7 right",
+        "Launch Belt motor shelf \u00c2\u00b7 right",
+        "Launch Belt drive shaft \u00c2\u00b7 right",
+        "Launch idler pulley \u00c2\u00b7 right",
+        "Launch idler bridge seat \u00c2\u00b7 right",
+        "Launch idler axle \u00c2\u00b7 right",
+        "Feed right-angle gearbox \u00c2\u00b7 right",
+        "Feed gearhead flange \u00c2\u00b7 right",
+        "Feed output shaft \u00c2\u00b7 right",
+        "Feed transverse jackshaft",
+        "Feed input reduction housing",
+        "Feed motor output",
+        "Feed motor",
+        "Feed input pilot flange",
+        "Feed reducer mount"
+      ],
+      "kg": [
+        0.5563888325416134,
+        0.9072314544810522
+      ],
+      "basis": "Published revision 002 subtotal, preserving additions and incremental stock allowances. Includes the source ledger's lower-bound backing material credit."
+    },
+    {
+      "id": "Forward drive bridges and shafts",
+      "members": [],
+      "kg": [
+        0.1249848120626099,
+        0.17648253387200136
+      ],
+      "basis": "Published revision 002 subtotal, preserving additions and incremental stock allowances."
+    },
+    {
+      "id": "Guided climb, keeper and take-up",
+      "members": [
+        "Captive hook wear block \u00c2\u00b7 left",
+        "Captive hook wear block \u00c2\u00b7 right",
+        "Capture-angle dog bushing",
+        "Chain hook \u00c2\u00b7 left",
+        "Chain hook \u00c2\u00b7 right",
+        "Climb yoke post \u00c2\u00b7 left",
+        "Climb yoke post \u00c2\u00b7 right",
+        "Common keeper yoke and sliding rack",
+        "Guide rear anchor cleat \u00c2\u00b7 left",
+        "Guide rear anchor cleat \u00c2\u00b7 right",
+        "Guide rear anchor web \u00c2\u00b7 left",
+        "Guide rear anchor web \u00c2\u00b7 right",
+        "Hoist eye thimble \u00c2\u00b7 left",
+        "Hoist eye thimble \u00c2\u00b7 right",
+        "Hoist rear redirect axle \u00c2\u00b7 left",
+        "Hoist rear redirect axle \u00c2\u00b7 right",
+        "Hoist rear redirect sheave \u00c2\u00b7 left",
+        "Hoist rear redirect sheave \u00c2\u00b7 right",
+        "Hoist redirect ear 194 \u00c2\u00b7 left",
+        "Hoist redirect ear 194 \u00c2\u00b7 right",
+        "Hoist redirect ear 211 \u00c2\u00b7 left",
+        "Hoist redirect ear 211 \u00c2\u00b7 right",
+        "Hoist rope drum to sheave \u00c2\u00b7 left",
+        "Hoist rope drum to sheave \u00c2\u00b7 right",
+        "Hoist rope working span \u00c2\u00b7 left",
+        "Hoist rope working span \u00c2\u00b7 right",
+        "Hoist splice allowance \u00c2\u00b7 left",
+        "Hoist splice allowance \u00c2\u00b7 right",
+        "Hoist thimble pin \u00c2\u00b7 left",
+        "Hoist thimble pin \u00c2\u00b7 right",
+        "Hook anchor compression tube \u00c2\u00b7 left",
+        "Hook anchor compression tube \u00c2\u00b7 right",
+        "Hook anchor root \u00c2\u00b7 left",
+        "Hook anchor root \u00c2\u00b7 right",
+        "Hook guide channel \u00c2\u00b7 left",
+        "Hook guide channel \u00c2\u00b7 right",
+        "Hook slider liner 196.2 \u00c2\u00b7 left",
+        "Hook slider liner 196.2 \u00c2\u00b7 right",
+        "Hook slider liner 215.0 \u00c2\u00b7 left",
+        "Hook slider liner 215.0 \u00c2\u00b7 right",
+        "Keeper drive mast",
+        "Keeper motor and return spring",
+        "Keeper pinion output",
+        "Keeper return pinion",
+        "Pivot cable drum \u00c2\u00b7 left",
+        "Pivot cable drum \u00c2\u00b7 right",
+        "Pivot drive socket",
+        "Redirect cross-tie \u00c2\u00b7 left",
+        "Redirect cross-tie \u00c2\u00b7 right",
+        "Shared lift crosspiece",
+        "Slide stop actuator \u00c2\u00b7 left",
+        "Slide stop actuator \u00c2\u00b7 right",
+        "Slide stop guide \u00c2\u00b7 left",
+        "Slide stop guide \u00c2\u00b7 right",
+        "Slide stop pin \u00c2\u00b7 left",
+        "Slide stop pin \u00c2\u00b7 right",
+        "Sliding pivot clutch",
+        "Spliced hoist eye \u00c2\u00b7 left",
+        "Spliced hoist eye \u00c2\u00b7 right",
+        "Thimble pin shelf \u00c2\u00b7 left",
+        "Thimble pin shelf \u00c2\u00b7 right"
+      ],
+      "kg": [
+        2.4494262792555657,
+        3.8464262792555655
+      ],
+      "basis": "Published revision 002 subtotal, preserving additions and incremental stock allowances."
+    },
+    {
+      "id": "battery",
+      "members": [
+        "Battery and terminal case"
+      ],
+      "kg": [
+        0,
+        0
+      ],
+      "basis": "Excluded from the inspection scale; included at operating weight in the payload ledger."
+    },
+    {
+      "id": "finished bumper scenario",
+      "members": [
+        "Blue bumper set"
+      ],
+      "kg": [
+        0,
+        0
+      ],
+      "basis": "Excluded from the inspection scale; included at operating weight in the payload ledger."
+    },
+    {
+      "id": "Slide motor service package, gross allowance",
+      "members": [],
+      "kg": [
+        0.2573540409325571,
+        0.30735404093255714
+      ],
+      "basis": "Gross motor, machined stock and fasteners plus 40\u201390 g wiring and connector allowance. Prior group budget retained. Cold assembly fit is documented for the installed source model."
+    }
+  ],
+  "runningPayloadKg": [
+    12.884980332326137,
+    15.604980332326138
+  ],
+  "requirements": {
+    "file": "limits.json",
+    "sha256": "77b3830925a2659a29f1505167b5e2ca986b554f6b0c578c950abf0adbc5f768"
+  },
+  "electricalCases": {
+    "feed-284-nominal": {
+      "loadedKg": [
+        48.88279718062636,
+        71.87499714280055
+      ],
+      "batterySideA": {
+        "Concurrent accessories": [
+          27,
+          27
+        ],
+        "Feed plus two launch drives, battery side": [
+          0,
+          100.98938215664437
+        ]
+      },
+      "openCircuitV": [
+        12.6,
+        12.6
+      ],
+      "resistanceOhm": [
+        0.018,
+        0.018
+      ],
+      "basis": "Same source-bounded battery-side load envelope for the feed and immediate post-release dwell."
+    },
+    "feed-284-weak": {
+      "loadedKg": [
+        48.88279718062636,
+        71.87499714280055
+      ],
+      "batterySideA": {
+        "Concurrent accessories": [
+          27,
+          27
+        ],
+        "Feed plus two launch drives, battery side": [
+          0,
+          100.98938215664437
+        ]
+      },
+      "openCircuitV": [
+        11.8,
+        11.8
+      ],
+      "resistanceOhm": [
+        0.027,
+        0.027
+      ],
+      "basis": "Same source-bounded battery-side load envelope for the feed and immediate post-release dwell."
+    },
+    "feed-285-nominal": {
+      "loadedKg": [
+        48.88279718062636,
+        71.87499714280055
+      ],
+      "batterySideA": {
+        "Concurrent accessories": [
+          27,
+          27
+        ],
+        "Feed plus two launch drives, battery side": [
+          0,
+          100.98938215664437
+        ]
+      },
+      "openCircuitV": [
+        12.6,
+        12.6
+      ],
+      "resistanceOhm": [
+        0.018,
+        0.018
+      ],
+      "basis": "Same source-bounded battery-side load envelope for the feed and immediate post-release dwell."
+    },
+    "feed-285-weak": {
+      "loadedKg": [
+        48.88279718062636,
+        71.87499714280055
+      ],
+      "batterySideA": {
+        "Concurrent accessories": [
+          27,
+          27
+        ],
+        "Feed plus two launch drives, battery side": [
+          0,
+          100.98938215664437
+        ]
+      },
+      "openCircuitV": [
+        11.8,
+        11.8
+      ],
+      "resistanceOhm": [
+        0.027,
+        0.027
+      ],
+      "basis": "Same source-bounded battery-side load envelope for the feed and immediate post-release dwell."
+    },
+    "feed-286-nominal": {
+      "loadedKg": [
+        48.88279718062636,
+        71.87499714280055
+      ],
+      "batterySideA": {
+        "Concurrent accessories": [
+          27,
+          27
+        ],
+        "Feed plus two launch drives, battery side": [
+          0,
+          100.98938215664437
+        ]
+      },
+      "openCircuitV": [
+        12.6,
+        12.6
+      ],
+      "resistanceOhm": [
+        0.018,
+        0.018
+      ],
+      "basis": "Same source-bounded battery-side load envelope for the feed and immediate post-release dwell."
+    },
+    "feed-286-weak": {
+      "loadedKg": [
+        48.88279718062636,
+        71.87499714280055
+      ],
+      "batterySideA": {
+        "Concurrent accessories": [
+          27,
+          27
+        ],
+        "Feed plus two launch drives, battery side": [
+          0,
+          100.98938215664437
+        ]
+      },
+      "openCircuitV": [
+        11.8,
+        11.8
+      ],
+      "resistanceOhm": [
+        0.027,
+        0.027
+      ],
+      "basis": "Same source-bounded battery-side load envelope for the feed and immediate post-release dwell."
+    },
+    "feed-287-nominal": {
+      "loadedKg": [
+        48.88279718062636,
+        71.87499714280055
+      ],
+      "batterySideA": {
+        "Concurrent accessories": [
+          27,
+          27
+        ],
+        "Feed plus two launch drives, battery side": [
+          0,
+          100.98938215664437
+        ]
+      },
+      "openCircuitV": [
+        12.6,
+        12.6
+      ],
+      "resistanceOhm": [
+        0.018,
+        0.018
+      ],
+      "basis": "Same source-bounded battery-side load envelope for the feed and immediate post-release dwell."
+    },
+    "feed-287-weak": {
+      "loadedKg": [
+        48.88279718062636,
+        71.87499714280055
+      ],
+      "batterySideA": {
+        "Concurrent accessories": [
+          27,
+          27
+        ],
+        "Feed plus two launch drives, battery side": [
+          0,
+          100.98938215664437
+        ]
+      },
+      "openCircuitV": [
+        11.8,
+        11.8
+      ],
+      "resistanceOhm": [
+        0.027,
+        0.027
+      ],
+      "basis": "Same source-bounded battery-side load envelope for the feed and immediate post-release dwell."
+    },
+    "feed-288-nominal": {
+      "loadedKg": [
+        48.88279718062636,
+        71.87499714280055
+      ],
+      "batterySideA": {
+        "Concurrent accessories": [
+          27,
+          27
+        ],
+        "Feed plus two launch drives, battery side": [
+          0,
+          100.98938215664437
+        ]
+      },
+      "openCircuitV": [
+        12.6,
+        12.6
+      ],
+      "resistanceOhm": [
+        0.018,
+        0.018
+      ],
+      "basis": "Same source-bounded battery-side load envelope for the feed and immediate post-release dwell."
+    },
+    "feed-288-weak": {
+      "loadedKg": [
+        48.88279718062636,
+        71.87499714280055
+      ],
+      "batterySideA": {
+        "Concurrent accessories": [
+          27,
+          27
+        ],
+        "Feed plus two launch drives, battery side": [
+          0,
+          100.98938215664437
+        ]
+      },
+      "openCircuitV": [
+        11.8,
+        11.8
+      ],
+      "resistanceOhm": [
+        0.027,
+        0.027
+      ],
+      "basis": "Same source-bounded battery-side load envelope for the feed and immediate post-release dwell."
+    },
+    "feed-289-nominal": {
+      "loadedKg": [
+        48.88279718062636,
+        71.87499714280055
+      ],
+      "batterySideA": {
+        "Concurrent accessories": [
+          27,
+          27
+        ],
+        "Feed plus two launch drives, battery side": [
+          0,
+          100.98938215664437
+        ]
+      },
+      "openCircuitV": [
+        12.6,
+        12.6
+      ],
+      "resistanceOhm": [
+        0.018,
+        0.018
+      ],
+      "basis": "Same source-bounded battery-side load envelope for the feed and immediate post-release dwell."
+    },
+    "feed-289-weak": {
+      "loadedKg": [
+        48.88279718062636,
+        71.87499714280055
+      ],
+      "batterySideA": {
+        "Concurrent accessories": [
+          27,
+          27
+        ],
+        "Feed plus two launch drives, battery side": [
+          0,
+          100.98938215664437
+        ]
+      },
+      "openCircuitV": [
+        11.8,
+        11.8
+      ],
+      "resistanceOhm": [
+        0.027,
+        0.027
+      ],
+      "basis": "Same source-bounded battery-side load envelope for the feed and immediate post-release dwell."
+    },
+    "empty-launch-dwell-nominal": {
+      "loadedKg": [
+        48.88279718062636,
+        71.87499714280055
+      ],
+      "batterySideA": {
+        "Concurrent accessories": [
+          27,
+          27
+        ],
+        "Feed plus two launch drives, battery side": [
+          0,
+          100.98938215664437
+        ]
+      },
+      "openCircuitV": [
+        12.6,
+        12.6
+      ],
+      "resistanceOhm": [
+        0.018,
+        0.018
+      ],
+      "basis": "Same source-bounded battery-side load envelope for the feed and immediate post-release dwell."
+    },
+    "empty-launch-dwell-weak": {
+      "loadedKg": [
+        48.88279718062636,
+        71.87499714280055
+      ],
+      "batterySideA": {
+        "Concurrent accessories": [
+          27,
+          27
+        ],
+        "Feed plus two launch drives, battery side": [
+          0,
+          100.98938215664437
+        ]
+      },
+      "openCircuitV": [
+        11.8,
+        11.8
+      ],
+      "resistanceOhm": [
+        0.027,
+        0.027
+      ],
+      "basis": "Same source-bounded battery-side load envelope for the feed and immediate post-release dwell."
+    }
+  }
+}

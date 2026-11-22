@@ -154,5 +154,10 @@ experiments/a2-campaign/frozen/** -text
 # Keep the source-bound, reopened cassette STEP byte-identical.
 experiments/passive-entry/paired-entry.step binary
 
-# Compressed preliminary design scenes must keep their exact bytes.
-docs/preliminary-design/releases/*/scene.json.gz binary
+# The preliminary review receipt pins the generated player, its mesh and input ledgers.
+docs/preliminary-design/releases/*/*.json.gz binary
+docs/preliminary-design/releases/*/package-motion.html -text
+docs/preliminary-design/releases/*/motion.json -text
+docs/preliminary-design/releases/*/budgets.json -text
+docs/preliminary-design/releases/*/limits.json -text
+docs/preliminary-design/releases/*/receipt.json -text whitespace=cr-at-eol
