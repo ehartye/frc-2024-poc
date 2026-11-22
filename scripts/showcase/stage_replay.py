@@ -111,4 +111,4 @@ if __name__=='__main__':
     parser=argparse.ArgumentParser()
     parser.add_argument('mesh_manifest',type=Path)
     args=parser.parse_args()
-    write(args.mesh_manifest,ROOT/'docs/media/r8-stage.glb')
+    write(args.mesh_manifest,ROOT/'docs/detailed-design/archive/draft-001/media/r8-stage.glb')

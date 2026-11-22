@@ -39,7 +39,7 @@ class StageEndgame(unittest.TestCase):
         receipt=read("cad/student/r8-reopened.json")
         screen=read("experiments/stage-climb/static-screen.json")
         trace=read("experiments/stage-climb/solo-trajectory.json")
-        raw=(ROOT/"docs/media/r8-stage.glb").read_bytes()
+        raw=(ROOT/"docs/detailed-design/archive/draft-001/media/r8-stage.glb").read_bytes()
         header=json.loads(raw[20:20+struct.unpack_from("<I",raw,12)[0]])
         digest=hashlib.sha256((ROOT/receipt["source"]).read_bytes()).hexdigest()
         self.assertEqual({digest,receipt["sha256"],screen["nativeSha256"],trace["nativeSha256"],header["asset"]["extras"]["nativeSha256"]},{digest})

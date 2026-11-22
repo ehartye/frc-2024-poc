@@ -165,3 +165,8 @@ docs/preliminary-design/releases/*/receipt.json -text whitespace=cr-at-eol
 # Keep licensed viewer fonts byte-identical to the distributed template.
 docs/preliminary-design/fonts/*.woff2 binary
 docs/preliminary-design/fonts/OFL-*.txt -whitespace
+
+# Withdrawn showcase files are archived byte for byte.
+docs/detailed-design/archive/** -text
+cad/history/** -text
+cad/preliminary-design/history/** -text

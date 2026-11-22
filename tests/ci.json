@@ -6,9 +6,7 @@
       "argv": [
         "python",
         "scripts/cad-readmes.py",
-        ".",
-        "--template",
-        "scripts/cad-orbit.html"
+        "."
       ],
       "inputs": []
     },
@@ -28,8 +26,8 @@
         "cad/",
         "scripts/showcase/",
         "tests/",
-        "docs/media/",
-        "docs/robot/",
+        "docs/detailed-design/archive/draft-001/media/",
+        "docs/detailed-design/archive/draft-001/robot/",
         "docs/index.html",
         "README.md"
       ]
@@ -46,8 +44,8 @@
         "experiments/speaker-cycles/",
         "experiments/stage-climb/",
         "cad/student/",
-        "docs/media/r8-stage.glb",
-        "docs/media/r8-stage.json",
+        "docs/detailed-design/archive/draft-001/media/r8-stage.glb",
+        "docs/detailed-design/archive/draft-001/media/r8-stage.json",
         "docs/index.html",
         "tests/test_stage_endgame.py",
         "tests/ci_history.py",
@@ -79,7 +77,7 @@
       ],
       "inputs": [
         "cad/",
-        "docs/media/",
+        "docs/detailed-design/archive/draft-001/media/",
         "tests/test_r9_physical_assembly.py",
         "tests/ci_history.py",
         "tests/requirements-ci.txt"

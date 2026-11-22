@@ -77,8 +77,8 @@ function nativeNames(box){
     b.every((x,k)=>Math.abs(x-box[k])<=.21)?[bill.bodies[i].body]:[]);
 }
 function audit(file){
-  const manifest=json('../../docs/media/'+file+'.json');
-  const asset=manifest.assets.glb??manifest.assets.model, raw=read('../../'+asset.path);
+  const manifest=json('../../docs/detailed-design/archive/draft-001/media/'+file+'.json');
+  const asset=manifest.assets.glb??manifest.assets.model, raw=read('../../'+asset.path.replace(/^docs\//,'docs/detailed-design/archive/draft-001/'));
   if(createHash('sha256').update(raw).digest('hex')!==asset.sha256)throw Error(asset.path);
   const size=raw.readUInt32LE(12),g=JSON.parse(raw.subarray(20,20+size)),data=raw.subarray(28+size);
   function array(i){

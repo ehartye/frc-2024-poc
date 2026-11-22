@@ -24,7 +24,7 @@ def build(folder):
                      "outerScrewTensionN":round(force*(500-293)/(2*13),2)}
     save(HERE/"load-path.json",cases)
     frames=read(folder/"section-traces.json")
-    save(ROOT/"docs/passive-entry.json",{"design":read(HERE/"part.json"),"runs":records,
+    save(ROOT/"docs/detailed-design/archive/draft-001/passive-entry.json",{"design":read(HERE/"part.json"),"runs":records,
          "bench":{k:frames[k] for k in ("-6","-3","0","3","6")},"service":read(HERE/"service.json")})
 
 if __name__=="__main__":build(Path(sys.argv[1]))

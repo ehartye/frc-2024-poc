@@ -8,7 +8,7 @@ The project README opens the parked **R9 physical assembly**. Opening the studen
 | README still and assembly link, R9, parked with red cover and battery | Public 923-solid F3D `4663d9fa`, 35 visual material groups in GLB `e0fa4d0c`, still `0303f001`. | 802 welded-vertex shells, 1,250 edges, 24 connected groups. |
 | R17 study, proposed pair on an R14 register | STEP `3cc1cc80`, 16 solids. The cassette canvas tessellates the eight reopened positive-Y solids. | R17 has six proposed tapped mount holes. The R9/R7 visuals predate these parts. The R14 stiffness archive contains a subsystem fixture. |
 
-[Exact R7 file identities](../../docs/media/swerve-r7.json) · [Exact R9 file identities](../../docs/media/r9-assembly.json) · [R14 configuration](../../cad/service-readiness/stiffness/native-fit.json) · [R17 solids](part-receipt.json)
+[Exact R7 file identities](../../docs/detailed-design/archive/draft-001/media/swerve-r7.json) · [Exact R9 file identities](../../docs/detailed-design/archive/draft-001/media/r9-assembly.json) · [R14 configuration](../../cad/service-readiness/stiffness/native-fit.json) · [R17 solids](part-receipt.json)
 
 ## Trace the passive intake and frame
 

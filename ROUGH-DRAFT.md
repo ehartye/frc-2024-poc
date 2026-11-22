@@ -1,9 +1,9 @@
 # 2024 CRESCENDO: component-based robot proof of concept
 
 <!-- cad-still -->
-[![1780 MAXSwerve · R9 physical assembly](docs/media/r9-assembly.png)](https://ehartye.github.io/frc-2024-poc/?view=r9-assembly#model)
+[![1780 MAXSwerve · R9 physical assembly](docs/detailed-design/archive/draft-001/media/r9-assembly.png)](https://ehartye.github.io/frc-2024-poc/?view=r9-assembly#model)
 
-**1780 MAXSwerve · R9 physical assembly.** Parked robot with its inboard lift drive, frame, removable bumper and electrical supports. Purchased mechanisms use dimensioned external models. This view records mechanical fit in CAD. [Native model record](docs/media/r9-assembly.json) · [Inspect the parked assembly](https://ehartye.github.io/frc-2024-poc/?view=r9-assembly#model)
+**1780 MAXSwerve · R9 physical assembly.** Parked robot with its inboard lift drive, frame, removable bumper and electrical supports. Purchased mechanisms use dimensioned external models. This view records mechanical fit in CAD. [Native model record](docs/detailed-design/archive/draft-001/media/r9-assembly.json) · [Inspect the parked assembly](https://ehartye.github.io/frc-2024-poc/?view=r9-assembly#model)
 <!-- /cad-still -->
 
 [Download the editable R9 robot](cad/student/r9-physical-assembly.f3d) · [Assembly sequence and fit results](cad/assembly-readiness/physical-assembly.md) · [Shop drawings](cad/assembly-readiness/drawings/r9-shop-drawings.pdf)
