@@ -1,0 +1,18 @@
+{
+  "schema": "agent-frc/preliminary-release@1",
+  "release": "003-1",
+  "issue": "2024-002-cassette",
+  "phase": "preliminary-design",
+  "check": {
+    "project": "cad/preliminary-design/releases/003-1",
+    "plan": "layout.json"
+  },
+  "missionCases": [
+    {
+      "case": "feed-289",
+      "kind": "operating-case",
+      "accomplishes": "delivered",
+      "objective": "Discharge the retained NOTE from the cassette"
+    }
+  ]
+}

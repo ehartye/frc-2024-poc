@@ -38,7 +38,7 @@ def main():
     from mechanical_motion import common, distance
 
     catalog = Path(__file__).resolve().parents[2] / "docs/preliminary-design"
-    release = catalog / "releases" / json.loads((catalog / "releases.json").read_bytes())["current"]
+    release = catalog / "releases" / "003"  # the release whose replay scene these measurements were taken on
     record = json.loads((release / "release.json").read_bytes())
     scene_file = release / "scene.json.gz"
     assert sha(scene_file) == record["sceneSha256"] and sha(args.layout_step) == record["geometry"]

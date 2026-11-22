@@ -40,9 +40,9 @@ def run(root, update):
     scene = catalog / "releases" / current
     if record["release"] != current:
         raise ValueError("The preliminary still names a release other than the current one")
-    checked(scene / "scene.json.gz", record["sceneSha256"])
     checked(root / STILL, record["pngSha256"])
-    if json.loads((scene / "release.json").read_bytes())["geometry"] != record["stepSha256"]:
+    # The published receipt names the STEP the layout check and the review scene were built from.
+    if json.loads((scene / "receipt.json").read_bytes())["step"]["sha256"] != record["stepSha256"]:
         raise ValueError("Preliminary still and release refer to different geometry")
     still = (root / "cad/preliminary-design/readme-still.md").read_text(encoding="utf-8").strip()
     if still.count(STILL) != 1 or still.count(RECORD) != 1:

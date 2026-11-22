@@ -1,39 +1,48 @@
 # 2024 guided-cassette preliminary design
 
-The [preliminary viewer](https://ehartye.github.io/frc-2024-poc/preliminary-design/) opens the stock Agent FRC assembly review. Select **Match replays** for both six-NOTE scoring clocks and the front and rear climbs. A case URL opens that replay directly. Copy the page URL to share the selected motion. The robot, four replays, weight and power ledgers, mechanical companion, and FIRST field fixtures ship together in `docs/preliminary-design/releases/003/`.
+The [preliminary design](https://ehartye.github.io/frc-2024-poc/preliminary-design/) opens release 003-1 in the stock Agent FRC review page. The page has one view and one motion list. The list holds the checked discharge and service cases, the displaced control, both six-NOTE scoring clocks and the front and rear climbs. Add `?case=ID` to the release page URL to open one entry, for example `releases/003-1/?case=continuous-cycle-96`.
 
-Git preserves the earlier presentation iterations. Earlier catalog links using `?release=001`, `002` or `003` open this same design. Both current scoring runs use the official blue speaker. Both climbs use the official blue stage, anchors and chains. FIRST supplies the field archive directly to the browser. The NOTE follows the measured free-piece trajectory using the project’s simulation geometry.
+Release 003-1 is the same design as release 003. Release 003 showed the assembly review and the match replays on two tabs. It stays published as superseded at `?release=003`.
 
-Run `python cad/preliminary-design/serve.py` from the season checkout to serve the page locally. The checked assembly page is the Agent FRC 0.102.0 template. The season replay loads the official field CAD independently.
+Run `python cad/preliminary-design/serve.py` from the season checkout to serve the page locally.
 
-### Reproduce the assembly review
+## What is checked and what is replayed
 
-The issue inputs are in `cad/preliminary-design/releases/003/`. Copy them into a clean working directory and supply the season’s original layout STEP as `robot.step`. Its SHA-256 is `a29a146d8897f64e8f056fcb46a431ba234c7aecccbc3233b6834c43c703bc88`. The source register is `layout.json`. With the Agent FRC geometry environment active, generate the receipt, stock page and compressed review scene:
+The layout check follows one discharge from the fine-clock trial on all 232 robot and piece solids, and the straight withdrawal of the service index pin. Those cases have collision, mass and loaded-voltage results in `receipt.json`.
 
-```sh
-python "$PLUGIN/scripts/preliminary_design.py" "$ISSUE" layout.json --write-view --require-checked > "$ISSUE/receipt.json"
-node "$PLUGIN/scripts/preliminary-release.mjs" verify-catalog docs/preliminary-design --policy .github/mechanical/served-docs.json
-node "$PLUGIN/scripts/preliminary-release.mjs" compare-template docs/preliminary-design/releases/003
-```
+The four match replays play back the pinned trial files in `releases/003-1/trials/`. A replay is recorded evidence. It is not a clearance case, and the receipt's decision does not depend on it. Each replay lists the motions taken from its trial files and the motions prescribed for display.
 
-The season release holds the stock assembly review and the source-linked match replay. The match replay renders FIRST field CAD in the visitor’s browser. Its nominal NOTE and the original simulated scoring, elevation and power-cut traces remain in the season data.
+The speaker, stage and chains are tessellated from FIRST's `FE-2024.STEP` for display. The trials use their own contact surfaces.
 
-### What the mechanical replay checks
+## Rebuild the release
 
+The inputs are in `cad/preliminary-design/releases/003-1/`. `PLUGIN` is a checkout of Agent FRC at the `AGENT_FRC_REF` in `.github/workflows/design-publication.yml`. Use the Agent FRC geometry environment.
 
-The season viewer plays the continuous six-NOTE trials and both climb approaches. Its [companion mechanical review](../../docs/preliminary-design/releases/003/package-motion.html) follows one discharge from the fine-clock trial on all 232 robot and piece solids. It also shows straight withdrawal of the service index pin. Those operations have their own collision, mass and loaded-voltage records. The field trial and mechanical review answer different questions.
+1. Tessellate the field parts. Download FIRST's 2024 field STEP archive and pass its `FE-2024.STEP`. The script checks the file's SHA-256.
+
+   ```sh
+   python cad/preliminary-design/build-003-1/field.py FE-2024.STEP field-meshes.json
+   ```
+
+2. Write the replay set and the layout. This copies release 003's check inputs, writes every pin from the repository root and checks each trial file against `build-003-1/replay-bindings.json`.
+
+   ```sh
+   python cad/preliminary-design/build-003-1/replays.py field-meshes.json
+   ```
+
+3. Run the layout check, then stage and check the release.
+
+   ```sh
+   node PLUGIN/scripts/design.mjs preliminary-check . cad/preliminary-design/releases/003-1/layout.json --write-view --require-checked --output cad/preliminary-design/releases/003-1/receipt.json
+   python cad/preliminary-design/stage.py 003-1
+   node PLUGIN/scripts/design-publication.mjs check . --skip-rerun
+   python scripts/cad-readmes.py . --update
+   ```
+
+The **Design publication** workflow reruns the layout check from the committed inputs on every push. [Publish and check designs](https://github.com/ehartye/agent-frc/blob/main/docs/design-publication.md)
+
+## Measured margins to check on the prototype
 
 At discharge the unloaded NOTE passes the right entry bearing bracket with a smallest sampled clearance of 0.035 mm. An independent interval calculation bounds the nominal clearance above 0.015 mm throughout that segment. Assembly error or variation in the NOTE could consume that margin. Check it on the prototype. [Bracket clearance calculation](motion-evidence-002/exit-bracket-clearance.json)
 
 The center intake belt has an assumed one-sided NOTE indentation limit of 8 mm. The two replay resolutions reach 7.67 and 7.55 mm. A 7 mm limit rejects both. Each additional allowance names its own contact surface. The bracket uses rigid geometry. [Contact assumptions](compression-limits-002.json) · [Two-clock measurements](compression-results-002.json)
-
-### Compare a viewer change with the previous revision
-
-Serve the reference checkout and the candidate on separate ports. Run these commands with the same Playwright installation, browser and machine. Set `BROWSER_CHANNEL=msedge` to select an installed Edge browser.
-
-```sh
-node cad/preliminary-design/check-viewer.cjs http://localhost:8000/preliminary-design/ > reference.jsonl
-node cad/preliminary-design/check-viewer.cjs http://localhost:8001/preliminary-design/ reference.jsonl
-```
-
-The comparison exercises all four current replays and checks that older catalog links resolve. It compares the final readouts, inventory counts and weight and power ledgers with the reference. It also checks camera controls, selection, speaker cutaway, phone framing, and which of the three stage chains moves during each climb.

@@ -26,7 +26,7 @@ def main():
 
     here = Path(__file__).resolve().parent
     catalog = here.parents[1] / "docs/preliminary-design"
-    release = catalog / "releases" / json.loads((catalog / "releases.json").read_bytes())["current"]
+    release = catalog / "releases" / "003"  # the release whose replay scene these measurements were taken on
     commissioning = json.loads((here / "compression-limits-002.json").read_bytes())
     original = json.loads((here / "contact-depth-002.json").read_bytes())
     data = (release / "scene.json.gz").read_bytes()

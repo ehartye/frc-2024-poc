@@ -40,7 +40,7 @@ def main():
     root = opt.output.resolve()
     root.mkdir(exist_ok=True, parents=True)
     catalog = PROJECT / "docs/preliminary-design"
-    release = catalog / "releases" / json.loads((catalog / "releases.json").read_bytes())["current"]
+    release = catalog / "releases" / "003"  # the release whose replay scene these measurements were taken on
     published = read(release / "release.json")
     assert sha(opt.step) == published["geometry"] and sha(release / "scene.json.gz") == published["sceneSha256"]
     scene = json.loads(gzip.decompress((release / "scene.json.gz").read_bytes()))

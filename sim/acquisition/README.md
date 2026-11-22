@@ -3,7 +3,7 @@
 <!-- cad-still -->
 [![Preliminary robot with the scoring cassette raised above the blue bumper](../../cad/preliminary-design/media/002-preliminary-robot.png)](https://ehartye.github.io/frc-2024-poc/preliminary-design/)
 
-**Guided cassette, parked. Preliminary design release 003.** The angled cassette picks up, retains and shoots a NOTE. The parallel guides support the climb. This still uses the same robot geometry as the interactive preliminary review. [Still and geometry record](../../cad/preliminary-design/media/002-preliminary-robot.json)
+**Guided cassette, parked. Preliminary design release 003-1.** The angled cassette picks up, retains and shoots a NOTE. The parallel guides support the climb. This still uses the same robot geometry as the interactive preliminary review. [Still and geometry record](../../cad/preliminary-design/media/002-preliminary-robot.json)
 <!-- /cad-still -->
 
 Run `python sim/acquisition/ground_entry.py --output artifacts/a-new-ground-entry-run`.
