@@ -1,0 +1,41 @@
+{
+  "id": "003",
+  "title": "Six-NOTE cycle and climb \u00b7 speaker view",
+  "defaultCase": "continuous-cycle-96",
+  "sceneSha256": "5a1a5861cc9df6e3fc43ec7038701a64322de008b01f0e557416839b7943e0b5",
+  "geometry": "a29a146d8897f64e8f056fcb46a431ba234c7aecccbc3233b6834c43c703bc88",
+  "cases": [
+    "continuous-cycle-96",
+    "continuous-cycle-48",
+    "score-to-climb-front",
+    "score-to-climb-rear"
+  ],
+  "scope": "Four of the first five starts produced six individual shot events within 120 s when the field observer kept running. One sixth NOTE reached both beams at 118.264 s. In the remaining start, the third NOTE returned to the carpet. Fifteen starts and the complete shared-counter check remain open.",
+  "fixtureRepresentation": "Grey speaker from the original GE-24300 assembly in the official FIRST 2024 field STEP, loaded directly from FIRST by the browser. Registered opening and scoring trials are inherited from robot revision 002.",
+  "schema": "agent-frc/preliminary-release@1",
+  "release": "003",
+  "status": "layout-checked",
+  "label": "Work-in-progress preliminary design",
+  "issue": "2024-002-cassette",
+  "receipt": {
+    "file": "receipt.json",
+    "sha256": "efecb3fed213357608ded1ba4438b734dbbfe275e4c712d62974585dbb120270"
+  },
+  "view": {
+    "file": "package-motion.html",
+    "sha256": "e3f23bf4ddb94f4dd09800584c62b64495b62ca44e76ceadb2315a50426a7db1"
+  },
+  "scene": {
+    "file": "motion.json",
+    "sha256": "830602fcea855d68403c8c11734a1a1a403c2b8c1c204d6240b1bd19772f1a3c",
+    "stepSha256": "a29a146d8897f64e8f056fcb46a431ba234c7aecccbc3233b6834c43c703bc88"
+  },
+  "missionCases": [
+    {
+      "case": "feed-289",
+      "kind": "operating-case",
+      "accomplishes": "delivered",
+      "objective": "Discharge the retained NOTE from the cassette"
+    }
+  ]
+}

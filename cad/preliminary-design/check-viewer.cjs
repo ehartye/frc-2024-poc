@@ -65,7 +65,7 @@ async function check(page, query, release, motion) {
     page.on('response', response => { if (response.status() >= 400) failures.push(response.url()); });
     const observations = [];
     for (const [query, release, motion] of [
-      ['', '002','continuous-cycle-96'], ['?release=001','001','loaded-cycle-48'],
+      ['?release=002', '002','continuous-cycle-96'], ['?release=001','001','loaded-cycle-48'],
       ['?release=001&case=observed-reset-96','001','observed-reset-96'],
       ...['continuous-cycle-48','score-to-climb-front','score-to-climb-rear'].map(m => ['?release=002&case='+m,'002',m])
     ]) {
@@ -75,6 +75,39 @@ async function check(page, query, release, motion) {
       observations.push(row);
       console.log(JSON.stringify(row));
     }
+    for (const motion of ['continuous-cycle-96','continuous-cycle-48','score-to-climb-front','score-to-climb-rear']) {
+      const query = motion === 'continuous-cycle-96' ? '' : '?case='+motion;
+      const live = await check(page,query,'003',motion);
+      const prior = observations.find(r => r.release === '002' && r.motion === motion);
+      for (const key of ['end','inventory','weight','power']) assert.equal(live[key],prior[key],motion+' '+key);
+    }
+    await page.goto(root.href);
+    const scene = page.frameLocator('#viewer');
+    await scene.locator('#time').evaluate(el => new Promise(resolve => {
+      function ready() { if (el.oninput) resolve(); else setTimeout(ready,50); } ready();
+    }));
+    for (const width of [1344,390]) {
+      await page.setViewportSize({width,height:900});
+      for (const fraction of [0,.33,.67,1]) {
+        const edge = await scene.locator('#time').evaluate(async (el,fraction) => {
+          el.value = Math.round(fraction * Number(el.max));
+          el.dispatchEvent(new Event('input'));
+          await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+          const [x,y] = current().positions[Number(el.value)];
+          return Math.max(...data.corners.flatMap(([px,py,pz]) =>
+            lastProjection([px-x,py-y,pz]).slice(0,2).map(Math.abs)));
+        },fraction);
+        assert.ok(edge < 1,'Speaker opening is clipped at width '+width+' and fraction '+fraction);
+      }
+    }
+    await scene.locator('#speakerStatus[data-ready="true"]').waitFor({timeout:180000});
+    const counts = await scene.locator('#canvas').evaluate(() =>
+      Object.fromEntries(['speakerPanel','speakerRamp','sensors'].map(k => [k,sceneGPU.fixtures[k].count/3])));
+    assert.ok(counts.speakerPanel>100000 && counts.speakerRamp>5000 && counts.sensors>100,
+      'Detailed CAD shell, ramp and sensor meshes must be installed');
+    const shellImage = sha(await scene.locator('#canvas').screenshot());
+    await scene.locator('#cutaway').check();
+    assert.notEqual(sha(await scene.locator('#canvas').screenshot()),shellImage,'Speaker cutaway must reveal the interior');
     await page.goto(new URL('?release=missing',root).href);
     await page.locator('[role=alert]').waitFor({state:'visible'});
     await page.selectOption('#release','001');
