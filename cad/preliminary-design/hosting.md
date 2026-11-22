@@ -8,6 +8,14 @@ Each numbered directory contains its launch page, scripts, styling, compressed s
 
 The geometry is a preliminary robot blockout. The field display uses dimensioned presentation primitives. Inspect the evidence and open qualifications within each replay before using a simulation result for a design decision.
 
+### What revision 002 checks
+
+The season viewer plays the continuous six-NOTE trials and both climb approaches. Its [companion mechanical review](../../docs/preliminary-design/releases/002/package-motion.html) follows one discharge from the fine-clock trial on all 232 robot and piece solids. It also shows straight withdrawal of the service index pin. Those operations have their own collision, mass and loaded-voltage records. The field trial and mechanical review answer different questions.
+
+At discharge the unloaded NOTE passes the right entry bearing bracket with a smallest sampled clearance of 0.035 mm. An independent interval calculation bounds the nominal clearance above 0.015 mm throughout that segment. Assembly error or variation in the NOTE could consume that margin. Check it on the prototype. [Bracket clearance calculation](motion-evidence-002/exit-bracket-clearance.json)
+
+The center intake belt has an assumed one-sided NOTE indentation limit of 8 mm. The two replay resolutions reach 7.67 and 7.55 mm. A 7 mm limit rejects both. Each additional allowance names its own contact surface. The bracket uses rigid geometry. [Contact assumptions](compression-limits-002.json) · [Two-clock measurements](compression-results-002.json)
+
 ### Compare a viewer change with the previous revision
 
 Serve the reference checkout and the candidate on separate ports. Run these commands with the same Playwright installation, browser and machine. Set `BROWSER_CHANNEL=msedge` to select an installed Edge browser.
