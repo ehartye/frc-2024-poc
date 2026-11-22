@@ -40,7 +40,7 @@ def run(root, update, template):
     checked(folder / "assembly.png", receipt["imageSha256"])
     mesh = checked(folder / "assembly.stl.gz", receipt["meshSha256"])
     fields = dict(title=html.escape(config["title"]), scope=html.escape(config["scope"]),
-                  facts=f'{receipt["solids"]:,} solids · {receipt["triangles"]:,} triangles · {receipt["chordMm"]} mm chord setting',
+                  facts=f'{receipt["solids"]:,} solids Â· {receipt["triangles"]:,} triangles Â· {receipt["chordMm"]} mm chord setting',
                   bounds=json.dumps(receipt["nativeBounds"]), mesh=base64.b64encode(mesh).decode("ascii"))
     viewer = re.sub(r"\{\{(\w+)\}\}", lambda match: fields[match[1]], template.read_text(encoding="utf-8"))
     output(folder / "index.html", viewer.encode(), update)
@@ -69,8 +69,8 @@ def run(root, update, template):
         target = config.get("viewerUrl") or link(folder / "index.html")
         source = link(root / config["source"])
         block = (f'{START}\n[![{title}]({image})]({target})\n\n'
-                 f'**Project CAD · {title}.** {config["scope"]} '
-                 f'[Source STEP · {receipt["sourceSha256"][:10]}]({source}) · [Rotate the model]({target})\n{END}')
+                 f'**Project CAD Â· {title}.** {config["scope"]} '
+                 f'[Source STEP Â· {receipt["sourceSha256"][:10]}]({source}) Â· [Rotate the model]({target})\n{END}')
         if featured:
             title = featured["title"]
             target = featured["viewerUrl"]
@@ -78,12 +78,14 @@ def run(root, update, template):
             provenance = link(root / featured["receipt"])
             block = (f'{START}\n[![{title}]({image})]({target})\n\n'
                      f'**{title}.** {featured["scope"]} '
-                     f'[Native model record]({provenance}) · [{featured.get("linkLabel", "Open 3D replay")}]({target})\n{END}')
+                     f'[Native model record]({provenance}) Â· [{featured.get("linkLabel", "Open 3D replay")}]({target})\n{END}')
         if name == "README.md":
             # The top-level README features the season's current preliminary design.
             photo = root / "cad/preliminary-design/media/002-preliminary-robot.json"
             record = json.loads(photo.read_bytes())
-            scene = root / "docs/preliminary-design/releases" / record["release"]
+            catalog = root / "docs/preliminary-design"
+            current = json.loads((catalog / "releases.json").read_bytes())["current"]
+            scene = catalog / "releases" / current
             checked(scene / "scene.json.gz", record["sceneSha256"])
             checked(photo.with_suffix(".png"), record["pngSha256"])
             if json.loads((scene / "release.json").read_bytes())["geometry"] != record["stepSha256"]:

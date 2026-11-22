@@ -3,10 +3,10 @@
 <!-- cad-still -->
 [![Preliminary robot with the scoring cassette raised above the blue bumper](cad/preliminary-design/media/002-preliminary-robot.png)](https://ehartye.github.io/frc-2024-poc/preliminary-design/)
 
-**Revision 002, parked.** The angled cassette picks up, retains and shoots a NOTE. The parallel guides support the climb. This still uses the same robot geometry as the interactive preliminary review. [Still and geometry record](cad/preliminary-design/media/002-preliminary-robot.json)
+**Guided cassette, parked.** The angled cassette picks up, retains and shoots a NOTE. The parallel guides support the climb. This still uses the same robot geometry as the interactive preliminary review. [Still and geometry record](cad/preliminary-design/media/002-preliminary-robot.json)
 <!-- /cad-still -->
 
-[Open the preliminary design](https://ehartye.github.io/frc-2024-poc/preliminary-design/) to rotate the robot, inspect a component, or play the continuous six-NOTE and climb trials. The selector opens earlier revisions. The orange NOTE shows its unloaded shape during contact.
+[Open the preliminary design](https://ehartye.github.io/frc-2024-poc/preliminary-design/) to rotate the robot, inspect a component, or play the continuous six-NOTE and climb trials. Choose either scoring clock or either climb approach. The speaker, stage and chains use official FIRST field CAD. The orange NOTE shows its unloaded shape during contact.
 
 ## Rough draft
 
