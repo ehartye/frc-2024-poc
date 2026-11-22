@@ -131,7 +131,7 @@ def run(context):
     state=snapshot(doc)
     assert hashlib.sha256(json.dumps(state['bodies'],sort_keys=True,separators=(',',':')).encode()).hexdigest()=='1626b467b7da6fa65817b643e92d8b4f19de40f7dbe98038d306a6f5445d3317'
     occ=dict(state['occ'])
-    inv_path=Path('C:\\Users\\ehart\\Documents\\FRC Native\\2024\\turn-lift-20261118\\native-refinement-import\\fusion-relieved-inventory.json');scan_path=Path('C:\\Users\\ehart\\Documents\\FRC Native\\2024\\track-tread-candidate-20261118\\route-relieved\\scan.json')
+    inv_path=Path('R:\\2024\\turn-lift-20261118\\native-refinement-import\\fusion-relieved-inventory.json');scan_path=Path('R:\\2024\\track-tread-candidate-20261118\\route-relieved\\scan.json')
     assert hashlib.sha256(inv_path.read_bytes()).hexdigest()=='4e87aed3b344dd80f22a6aa6fff2868322df6ea51b28eff0091bb1e3fe077f73'
     assert hashlib.sha256(scan_path.read_bytes()).hexdigest()=='3b311a1546d1e24ea92b80d16459174cbc547f2db92bcf3974b81b43f90d132f'
     inventory=json.loads(inv_path.read_bytes());scan=json.loads(scan_path.read_bytes())
@@ -163,4 +163,4 @@ def run(context):
             residue=outside.volume*1000 if outside.isValid and outside.faces.count else 0.
             report.append(dict(key=rec['key'],outsideMm3=residue))
     assert len(report)==2
-    Path('C:\\Users\\ehart\\Documents\\FRC Native\\2024\\six-speaker-20261118\\native-belt-envelope-verification.json').write_text(json.dumps(report))
+    Path('R:\\2024\\six-speaker-20261118\\native-belt-envelope-verification.json').write_text(json.dumps(report))

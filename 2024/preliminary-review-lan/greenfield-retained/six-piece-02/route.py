@@ -2,12 +2,12 @@
 from pathlib import Path
 import numpy as np,json,hashlib,math,heapq,csv,sys
 p=Path(__file__).resolve().parent;parent=p.parent/'follower-01'
-season=Path('C:/Users/ehart/repos/frc-2024-poc/sim/pressure')
+season=Path('R:/sim/pressure')
 sys.path.insert(0,str(season));from wing_field_frame import SUPPLY_MARKS
 sys.path.insert(0,str(parent));from stroke import scheduled, mat
 def read(f):return json.loads(f.read_bytes())
 def sha(f):return hashlib.sha256(f.read_bytes()).hexdigest()
-field=Path('C:/Users/ehart/Documents/FRC Native/2024/six-speaker-20261118/field-source/whole-field-sliced-bounds.json')
+field=Path('R:/2024/six-speaker-20261118/field-source/whole-field-sliced-bounds.json')
 fielddata=read(field);assert fielddata['source']=='42c91b3efb9521d059c13cf25e2d7dda6315bdd6b7eb1202847bfe84ffb43c1a'
 from ast import parse,literal_eval,Assign
 syntax=parse((season/'field_route_clearance.py').read_text())

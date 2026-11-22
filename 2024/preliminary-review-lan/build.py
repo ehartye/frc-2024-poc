@@ -30,7 +30,7 @@ groups=result['groups'];groupof={n:g for g,group in groups.items() for n in grou
 palette=resolve_palette(review.parents[4]);palette['bumper']='#356EB7'
 track=next(Path(k) for k in read(review/'sources.json')['referenceFiles'] if k.endswith('ring.npy'))
 verify(track,read(review/'sources.json')['referenceFiles'][str(track)]);raw=np.load(track)
-goal=Path(r'C:\Users\ehart\Documents\FRC Native\2024\six-speaker-20261118\field-source\blue-speaker\opening-and-counter.json')
+goal=Path(r'R:\2024\six-speaker-20261118\field-source\blue-speaker\opening-and-counter.json')
 corners=(1000*np.array(read(goal)['nominalOpeningCornersM'])).tolist()
 def describe(n,g):
     if g=='Frame':return 'structure','Aluminum frame stock'

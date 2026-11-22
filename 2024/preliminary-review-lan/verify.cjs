@@ -1,4 +1,4 @@
-const {chromium}=require('C:/Users/ehart/repos/certaindeath/node_modules/playwright');
+const {chromium}=require('%USERPROFILE%/repos/certaindeath/node_modules/playwright');
 (async()=>{const browser=await chromium.launch({channel:'msedge',headless:true,args:['--no-proxy-server','--use-angle=swiftshader','--enable-unsafe-swiftshader']});try{
 const p=await browser.newPage({viewport:{width:1400,height:950}});p.on('pageerror',e=>console.log('PAGE ERROR',e.message));
 await p.goto('http://192.168.1.129:8764/');await p.locator('#inventory tr[data-name]').first().waitFor({timeout:15000});console.log(await p.locator('#validation').innerText());

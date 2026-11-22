@@ -5,7 +5,7 @@ from concurrent.futures import ThreadPoolExecutor,as_completed
 p=Path(__file__).resolve().parent
 def read(f):return json.loads(f.read_bytes())
 def sha(f):return hashlib.sha256(f.read_bytes()).hexdigest()
-enc=Path('C:/Users/ehart/repos/frc-2024-poc/sim/pressure/evidence/speaker-repeatability-starts.csv')
+enc=Path('R:/sim/pressure/evidence/speaker-repeatability-starts.csv')
 roster=list(csv.DictReader(enc.open()));plan=read(p/'plan.json')
 assert len(roster)==20 and sha(enc)==plan['roster']
 sources=[p/k for k in ['route.py','loaded.py','shoot.py','index_shoot.py','plan.json','campaign.py']]

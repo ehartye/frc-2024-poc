@@ -11,8 +11,8 @@ import numpy as np
 from make_generator import make, read, sha, old, p
 
 sys.path[:0] = [str(p.parent/'counter-drive-01'),
-    'C:/Users/ehart/Documents/FRC Native/2024/six-speaker-20261118/field-query-libs',
-    'C:/Users/ehart/repos/frc-2024-poc/sim/pressure']
+    'R:/2024/six-speaker-20261118/field-query-libs',
+    'R:/sim/pressure']
 import run_speaker_field as field
 import coupled_collection as contact
 from speaker_score_observer import beam_samples, shadow_margin, opening_passage

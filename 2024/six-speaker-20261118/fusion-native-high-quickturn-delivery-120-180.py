@@ -131,7 +131,7 @@ def run(context):
     state=snapshot(doc)
     assert hashlib.sha256(json.dumps(state['bodies'],sort_keys=True,separators=(',',':')).encode()).hexdigest()=='1626b467b7da6fa65817b643e92d8b4f19de40f7dbe98038d306a6f5445d3317'
     occ=dict(state['occ'])
-    inv_path=Path('C:\\Users\\ehart\\Documents\\FRC Native\\2024\\turn-lift-20261118\\native-refinement-import\\fusion-relieved-inventory.json');scan_path=Path('C:\\Users\\ehart\\Documents\\FRC Native\\2024\\track-tread-candidate-20261118\\route-relieved\\scan.json')
+    inv_path=Path('R:\\2024\\turn-lift-20261118\\native-refinement-import\\fusion-relieved-inventory.json');scan_path=Path('R:\\2024\\track-tread-candidate-20261118\\route-relieved\\scan.json')
     assert hashlib.sha256(inv_path.read_bytes()).hexdigest()=='4e87aed3b344dd80f22a6aa6fff2868322df6ea51b28eff0091bb1e3fe077f73'
     assert hashlib.sha256(scan_path.read_bytes()).hexdigest()=='3b311a1546d1e24ea92b80d16459174cbc547f2db92bcf3974b81b43f90d132f'
     inventory=json.loads(inv_path.read_bytes());scan=json.loads(scan_path.read_bytes())
@@ -139,4 +139,4 @@ def run(context):
     assert all(x['body']==y['name'] and (x['nativeGroup'] or 'fixed')==y['motionGroup'] and list(occ[x['path']])==y['transformCm'] for x,y in zip(inventory['bodies'],scan['inventory']))
 
 
-    check(adsk.fusion.Design.cast(doc.products.itemByProductType("DesignProductType")),'C:\\Users\\ehart\\Documents\\FRC Native\\2024\\track-tread-candidate-20261118\\route-relieved\\scan.json','C:\\Users\\ehart\\Documents\\FRC Native\\2024\\six-speaker-20261118\\native-high-quickturn-delivery-120-180-poses.json','C:\\Users\\ehart\\Documents\\FRC Native\\2024\\six-speaker-20261118\\native-high-quickturn-delivery-120-180-clearance.jsonl','5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96')
+    check(adsk.fusion.Design.cast(doc.products.itemByProductType("DesignProductType")),'R:\\2024\\track-tread-candidate-20261118\\route-relieved\\scan.json','R:\\2024\\six-speaker-20261118\\native-high-quickturn-delivery-120-180-poses.json','R:\\2024\\six-speaker-20261118\\native-high-quickturn-delivery-120-180-clearance.jsonl','5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96')

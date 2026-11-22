@@ -1,7 +1,7 @@
 """Recover the real tire cross-section on the speaker's powered grip shaft."""
 from pathlib import Path
 import numpy as np,json,math,hashlib
-p=Path(__file__).resolve().parent;fld=Path('C:/Users/ehart/Documents/FRC Native/2024/six-speaker-20261118/field-source/blue-speaker')
+p=Path(__file__).resolve().parent;fld=Path('R:/2024/six-speaker-20261118/field-source/blue-speaker')
 cfg=json.loads((fld/'panels.json').read_bytes());pack=np.load(fld/cfg['mesh'])
 part=next(v for v in cfg['parts'] if v['key']=='p75')
 center=np.mean(part['blueFieldBoundsM'],axis=0);v=pack['p75_v'];tri=v[pack['p75_t']]

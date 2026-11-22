@@ -9,7 +9,7 @@ def label(n):
     while chr(194)+chr(183) in n:n=n.replace(chr(194)+chr(183),chr(183))
     return n
 G={label(n):sh for n,sh in raw.items() if label(n)!='Chambered NOTE'}
-field=Path('C:/Users/ehart/Documents/FRC Native/2024/six-speaker-20261118/field-source/whole-field-sliced-bounds.json')
+field=Path('R:/2024/six-speaker-20261118/field-source/whole-field-sliced-bounds.json')
 rows=json.loads(field.read_bytes())['parts'];ob=[]
 for part in rows:
     if part['path'][1]!='GE-24200_Blue':continue

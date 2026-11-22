@@ -5,7 +5,7 @@ folder=Path(__file__).resolve().parent
 method=folder.parent/'follower-01';sys.path.insert(0,str(method))
 key,attempt,nArg=sys.argv[1:4];n=int(nArg)
 plan=json.loads((folder/'plan.json').read_bytes());leg=next(k for k in plan['plan'] if k['id']==key)
-roster=Path('C:/Users/ehart/repos/frc-2024-poc/sim/pressure/evidence/speaker-repeatability-starts.csv')
+roster=Path('R:/sim/pressure/evidence/speaker-repeatability-starts.csv')
 assert hashlib.sha256(roster.read_bytes()).hexdigest()==plan['roster']
 def rot(q):return np.array([[math.cos(q),-math.sin(q)],[math.sin(q),math.cos(q)]])
 qEntry=leg['yaw'];mark=np.array(leg['mark']);origin=np.array(leg['out'][-1])

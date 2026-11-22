@@ -17,7 +17,7 @@ from OCP.TopExp import TopExp_Explorer
 from OCP.TopoDS import TopoDS
 from OCP.BRep import BRep_Tool
 out=Path(__file__).resolve().parent
-root=Path('C:/Users/ehart/Documents/FRC Native/2024/six-speaker-20261118/field-source')
+root=Path('R:/2024/six-speaker-20261118/field-source')
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 src=root/'FE-2024.STEP';expected='42c91b3efb9521d059c13cf25e2d7dda6315bdd6b7eb1202847bfe84ffb43c1a';assert sha(src)==expected
 doc=TDocStd_Document(TCollection_ExtendedString('XCAF'));reader=STEPCAFControl_Reader();reader.SetColorMode(False)

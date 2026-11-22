@@ -8,7 +8,7 @@ from OCP.TopAbs import TopAbs_FACE
 from OCP.TopoDS import TopoDS
 from OCP.BRepAdaptor import BRepAdaptor_Surface
 from OCP.GeomAbs import GeomAbs_Cylinder,GeomAbs_Plane
-source=Path('C:/Users/ehart/Documents/FRC Native/plugin-qa/toe-actuator-20261121/REV-21-1651.STEP')
+source=Path('R:/plugin-qa/toe-actuator-20261121/REV-21-1651.STEP')
 bodies=list(load_solids(source)[0].values());print('count',len(bodies))
 rows=[]
 for body in bodies:

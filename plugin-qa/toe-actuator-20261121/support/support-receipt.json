@@ -32,12 +32,12 @@
     "handoff.md": "6842e943024c8cec4bc281b3cbf41ce8a3fbb143202b0490d49e36ac9d1ffbf2"
   },
   "sourceArchives": {
-    "C:\\Users\\ehart\\Documents\\FRC Native\\plugin-qa\\toe-actuator-20261121\\support\\M3X20.STEP": "b16016e5683f2d5acbdc64646f10357346c819152895ece56a1d7347fae1b546",
-    "C:\\Users\\ehart\\Documents\\FRC Native\\plugin-qa\\toe-actuator-20261121\\support\\bearing.step": "d6a560ccd6a01ad7d5a0421c9384ca9019cc4ed843fe7166475bfb19b9e731d9",
-    "C:\\Users\\ehart\\Documents\\FRC Native\\plugin-qa\\toe-actuator-20261121\\support\\switch.step": "0fdbf475c49ed043325e78a27bf701f11ff409ed136ff376b2ba870ea3610704",
-    "C:\\Users\\ehart\\Documents\\FRC Native\\plugin-qa\\toe-actuator-20261121\\rack-fit.py": "576a9c6eb4e4085f8b9a85f9dc767dda6f7f948813015c568cbfb1ef78b90b72",
-    "C:\\Users\\ehart\\Documents\\FRC Native\\plugin-qa\\toe-actuator-20261121\\fit-decision.json": "d27744dd909c8f3cd923b2ce606cfd817dc64408f408ab90c3e23983dfd3a850",
-    "C:\\Users\\ehart\\Documents\\FRC Native\\plugin-qa\\toe-actuator-20261121\\wrist-shaft-check.json": "13c91ad1ea4978669c2335e58b0e8b358b22e2a17c730f7fe238d8a703837c1d"
+    "R:\\plugin-qa\\toe-actuator-20261121\\support\\M3X20.STEP": "b16016e5683f2d5acbdc64646f10357346c819152895ece56a1d7347fae1b546",
+    "R:\\plugin-qa\\toe-actuator-20261121\\support\\bearing.step": "d6a560ccd6a01ad7d5a0421c9384ca9019cc4ed843fe7166475bfb19b9e731d9",
+    "R:\\plugin-qa\\toe-actuator-20261121\\support\\switch.step": "0fdbf475c49ed043325e78a27bf701f11ff409ed136ff376b2ba870ea3610704",
+    "R:\\plugin-qa\\toe-actuator-20261121\\rack-fit.py": "576a9c6eb4e4085f8b9a85f9dc767dda6f7f948813015c568cbfb1ef78b90b72",
+    "R:\\plugin-qa\\toe-actuator-20261121\\fit-decision.json": "d27744dd909c8f3cd923b2ce606cfd817dc64408f408ab90c3e23983dfd3a850",
+    "R:\\plugin-qa\\toe-actuator-20261121\\wrist-shaft-check.json": "13c91ad1ea4978669c2335e58b0e8b358b22e2a17c730f7fe238d8a703837c1d"
   },
   "releasedHelpersAtInspection": {
     "mechanical_motion.py": "13f3b750837663ea7e6abf183a71b6177061c15e05ad7d84ae05b12876d37752",

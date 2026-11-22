@@ -20,7 +20,7 @@ from OCP.IFSelect import IFSelect_RetDone
 HERE=Path(__file__).resolve().parent
 sys.path.insert(0,str(HERE.parent))
 from tube import lead
-sys.path.insert(0,'C:/Users/ehart/repos/agent-frc/scripts')
+sys.path.insert(0,'%USERPROFILE%/repos/agent-frc/scripts')
 from mechanical_motion import bounds,common,distance
 from package_mesh import surface_mesh
 from collections import Counter

@@ -117,4 +117,4 @@ def run(context):
     matches=[doc for doc in app.documents if doc.creationId=='b80c1d61-e092-43b1-bfe5-cf3afbd50b66']
     assert len(matches)==1
     design=adsk.fusion.Design.cast(matches[0].products.itemByProductType('DesignProductType'))
-    check(design,'C:\\Users\\ehart\\Documents\\FRC Native\\2024\\track-tread-candidate-20261118\\route-relieved\\scan.json','C:\\Users\\ehart\\Documents\\FRC Native\\2024\\six-speaker-20261118\\raised-feed-probe-5mm-poses.json','C:\\Users\\ehart\\Documents\\FRC Native\\2024\\six-speaker-20261118\\raised-feed-probe-5mm-clearance.jsonl','5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96')
+    check(design,'R:\\2024\\track-tread-candidate-20261118\\route-relieved\\scan.json','R:\\2024\\six-speaker-20261118\\raised-feed-probe-5mm-poses.json','R:\\2024\\six-speaker-20261118\\raised-feed-probe-5mm-clearance.jsonl','5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96')

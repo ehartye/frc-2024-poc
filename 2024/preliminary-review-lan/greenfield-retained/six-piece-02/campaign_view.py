@@ -2,7 +2,7 @@
 from pathlib import Path
 import csv,json,math,numpy as np
 p=Path(__file__).resolve().parent
-roster=Path('C:/Users/ehart/repos/frc-2024-poc/sim/pressure/evidence/speaker-repeatability-starts.csv')
+roster=Path('R:/sim/pressure/evidence/speaker-repeatability-starts.csv')
 stored=json.loads((p/'campaign-status.json').read_bytes());assert stored['terminal']
 template=(p/'publish.py').read_text(encoding='utf8')
 for attempt in stored['attempts']:

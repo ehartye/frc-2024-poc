@@ -1,10 +1,10 @@
 Traceback (most recent call last):
-  File "C:\Users\ehart\Documents\FRC Native\2024\preliminary-review-lan\greenfield-retained\shared-counter-03\paired_field.py", line 69, in <module>
+  File "R:\2024\preliminary-review-lan\greenfield-retained\shared-counter-03\paired_field.py", line 69, in <module>
     solve(sys.argv[1])
     ~~~~~^^^^^^^^^^^^^
-  File "C:\Users\ehart\Documents\FRC Native\2024\preliminary-review-lan\greenfield-retained\shared-counter-03\paired_field.py", line 44, in solve
+  File "R:\2024\preliminary-review-lan\greenfield-retained\shared-counter-03\paired_field.py", line 44, in solve
     forces,depth=pair_wrenches(a,b,params)
                  ~~~~~~~~~~~~~^^^^^^^^^^^^
-  File "C:\Users\ehart\repos\frc-2024-poc\sim\pressure\coupled_collection.py", line 38, in pair_wrenches
+  File "R:\sim\pressure\coupled_collection.py", line 38, in pair_wrenches
     raise ValueError("Excessive ring-to-ring indentation")
 ValueError: Excessive ring-to-ring indentation

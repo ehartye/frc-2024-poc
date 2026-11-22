@@ -11,717 +11,717 @@
   "evidence": {
     "whole-fusion": {
       "kind": "design",
-      "source": "whole-fusion | C:\\Users\\ehart\\repos\\frc-2024-poc-worktrees\\canonical-2024-register\\build\\private-native-archives\\r9-front-materials-03.f3d",
+      "source": "whole-fusion | R:\\build\\private-native-archives\\r9-front-materials-03.f3d",
       "sha256": "741c62a293cae9463dc41213fb2971e54e9797d8c22f89b665f60ce75638ef81"
     },
     "whole-step": {
       "kind": "design",
-      "source": "whole-step | C:\\Users\\ehart\\repos\\frc-2024-poc-worktrees\\canonical-2024-register\\build\\private-material-issued-03\\assembly.step",
+      "source": "whole-step | R:\\build\\private-material-issued-03\\assembly.step",
       "sha256": "a6aa01f5a0d7ddc371025fddab5134b062ea669365ade300503c1c00d64ed9a7"
     },
     "whole-register": {
       "kind": "result",
-      "source": "whole-register | C:\\Users\\ehart\\repos\\frc-2024-poc-worktrees\\canonical-2024-register\\cad\\fusion-authority.json",
+      "source": "whole-register | R:\\cad\\fusion-authority.json",
       "sha256": "85a7bf304b066a3a981801fd5794cdac9077cba7cb11c0993ee97b91b81c3851"
     },
     "whole-reconciliation": {
       "kind": "result",
-      "source": "whole-reconciliation | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\canonical-2024.json",
+      "source": "whole-reconciliation | R:\\2024\\private-readiness-20261120\\canonical-2024.json",
       "sha256": "6b3d36b479b29d7b30ca6e798772f2eb2ca1dcc2fdcafe56738c06d11b5a8c21"
     },
     "chassis-fusion": {
       "kind": "design",
-      "source": "chassis-fusion | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\native-issue-01\\r18-continuous-corner01.f3d",
+      "source": "chassis-fusion | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\native-issue-01\\r18-continuous-corner01.f3d",
       "sha256": "d2e7b2ac44b20376b4ecd2dc45e229cf1a2e29ba6d9f227e1162ad2c18dd8a1a"
     },
     "chassis-step": {
       "kind": "design",
-      "source": "chassis-step | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\native-issue-01\\r18-continuous-corner01.step",
+      "source": "chassis-step | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\native-issue-01\\r18-continuous-corner01.step",
       "sha256": "355ff2331f966facf7a20b342b3e2cea3f56ca7f32506c2dfa68f14c7d103abd"
     },
     "native-fit-motion": {
       "kind": "result",
-      "source": "native-fit-motion | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\split-04-results.json",
+      "source": "native-fit-motion | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\split-04-results.json",
       "sha256": "79194b545d21779263e27ec7dc0626ae9f9cca7326cdfb3d01ecc8926a575b57"
     },
     "v10": {
       "kind": "result",
-      "source": "v10 | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\front-corner-review.json",
+      "source": "v10 | R:\\2024\\private-readiness-20261120\\front-corner-review.json",
       "sha256": "6e67b3effdc803c713d308f442ccea77390e184fec70f65b4fc4389c3c4330da"
     },
     "design-review": {
       "kind": "result",
-      "source": "design-review | C:\\Users\\ehart\\repos\\frc-2024-poc-worktrees\\ground-relay-r18\\experiments\\ground-relay-r18\\architecture-comparison.json",
+      "source": "design-review | R:\\experiments\\ground-relay-r18\\architecture-comparison.json",
       "sha256": "a18ca1a5c259ea90c075489ec3748d219d20ee78bc198e6461c75b3e3407b350"
     },
     "role-receipt": {
       "kind": "result",
-      "source": "role-receipt | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\1780-receipt.json",
+      "source": "role-receipt | R:\\2024\\private-readiness-20261120\\r18-match-role\\1780-receipt.json",
       "sha256": "977e0ab9f4f44fed861fa946759d7461958a0c599fb9e32f7c4731e1b2c36287"
     },
     "R9-image": {
       "kind": "image",
-      "source": "R9-image | C:\\Users\\ehart\\repos\\frc-2024-poc-worktrees\\ground-relay-r18\\docs\\media\\r9-assembly.png",
+      "source": "R9-image | R:\\docs\\media\\r9-assembly.png",
       "sha256": "0303f001895c0c8a0a7940896a5671174ebe18b3a28407dc82d4132692755d7f"
     },
     "R7-image": {
       "kind": "image",
-      "source": "R7-image | C:\\Users\\ehart\\repos\\frc-2024-poc-worktrees\\ground-relay-r18\\docs\\media\\swerve-r7.png",
+      "source": "R7-image | R:\\docs\\media\\swerve-r7.png",
       "sha256": "b6e69fe4d649c9372eb5ad6baf8d99f435cfddc8ecfc7db82b219d674abe6bda"
     },
     "floor-image": {
       "kind": "image",
-      "source": "floor-image | C:\\Users\\ehart\\repos\\frc-2024-poc-worktrees\\ground-relay-r18\\docs\\media\\wing-acquisition.jpg",
+      "source": "floor-image | R:\\docs\\media\\wing-acquisition.jpg",
       "sha256": "59d6337f2baa63eb909150b211d1e2d3d134b3908c086374538aa3b721650b56"
     },
     "R7-counter-control": {
       "kind": "result",
-      "source": "R7-counter-control | C:\\Users\\ehart\\repos\\frc-2024-poc-worktrees\\ground-relay-r18\\sim\\pressure\\evidence\\r7-shared-six-D1.json",
+      "source": "R7-counter-control | R:\\sim\\pressure\\evidence\\r7-shared-six-D1.json",
       "sha256": "ca094dba31cffcffcf42732457b84324ccf43cb4eba3d6428f268b768e731054"
     },
     "control-split-cam": {
       "kind": "result",
-      "source": "control-split-cam | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\split-cam-transfer.json",
+      "source": "control-split-cam | R:\\2024\\private-readiness-20261120\\r18-match-role\\split-cam-transfer.json",
       "sha256": "19fc7b8a3e730077ea882c2b35c12b24f91c6caf82d957abf0291a501988ed56"
     },
     "B1-field-frames": {
       "kind": "result",
-      "source": "B1-field-frames | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\b1-auto-frames.json",
+      "source": "B1-field-frames | R:\\2024\\private-readiness-20261120\\r18-match-role\\b1-auto-frames.json",
       "sha256": "2b775aa740ac9e8b70b28bbbebc69e7d4c2d361c1b59becce6df085361983b75"
     },
     "evidence-016": {
       "kind": "result",
-      "source": "scorer/prepare_open_throat.py | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\prepare_open_throat.py",
+      "source": "scorer/prepare_open_throat.py | R:\\2024\\private-readiness-20261120\\prepare_open_throat.py",
       "sha256": "3dd7c0c96ef6e8b1d6e10aa8b93baea4b49dd1109c7f1f913753fbdc9ebfe31d"
     },
     "evidence-017": {
       "kind": "result",
-      "source": "scorer/trace_current_bumper.py | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\trace_current_bumper.py",
+      "source": "scorer/trace_current_bumper.py | R:\\2024\\private-readiness-20261120\\trace_current_bumper.py",
       "sha256": "d69577fe56bbba61cece978e104890461d8d4d312fc533b43ba9b935d9a74ef6"
     },
     "evidence-018": {
       "kind": "result",
-      "source": "scorer/open_throat_geometry.py | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\open_throat_geometry.py",
+      "source": "scorer/open_throat_geometry.py | R:\\2024\\private-readiness-20261120\\open_throat_geometry.py",
       "sha256": "d80c4366f1121e047c9f43fef59762bde4721c4f9607a1863985c5f85a1ca8dd"
     },
     "evidence-019": {
       "kind": "result",
-      "source": "scorer/staple_exact.py | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\staple_exact.py",
+      "source": "scorer/staple_exact.py | R:\\2024\\private-readiness-20261120\\staple_exact.py",
       "sha256": "edf1a568000c24a88871e940dd80ea8765042becdf8ffcd55e67b892ad3f35ac"
     },
     "evidence-020": {
       "kind": "result",
-      "source": "scorer/scorer_route_room.py | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\scorer_route_room.py",
+      "source": "scorer/scorer_route_room.py | R:\\2024\\private-readiness-20261120\\scorer_route_room.py",
       "sha256": "165a4eb9f7c842bc48f465d1430166b2bf05768037d02987ca66358ec34b046f"
     },
     "evidence-021": {
       "kind": "result",
-      "source": "scorer/open_center_shaft.py | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\open_center_shaft.py",
+      "source": "scorer/open_center_shaft.py | R:\\2024\\private-readiness-20261120\\open_center_shaft.py",
       "sha256": "2c80541cadec3ac0da0cbfee834cf5f549353f878ea47769a19a7b97729e0554"
     },
     "evidence-022": {
       "kind": "result",
-      "source": "scorer/scorer_pivot_stock.py | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\scorer_pivot_stock.py",
+      "source": "scorer/scorer_pivot_stock.py | R:\\2024\\private-readiness-20261120\\scorer_pivot_stock.py",
       "sha256": "88dbf340f71d3a9386bd63f110438760e05b13d2ba0a0a1af98d698b9ef69b21"
     },
     "evidence-023": {
       "kind": "result",
-      "source": "scorer/scorer_takeaway.py | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\scorer_takeaway.py",
+      "source": "scorer/scorer_takeaway.py | R:\\2024\\private-readiness-20261120\\scorer_takeaway.py",
       "sha256": "1d7967d4efe780e325fa5a446501fcfbde3e28085d3e641e34ee9c3d65aa2610"
     },
     "evidence-024": {
       "kind": "result",
-      "source": "scorer/takeaway_handoff.py | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\takeaway_handoff.py",
+      "source": "scorer/takeaway_handoff.py | R:\\2024\\private-readiness-20261120\\takeaway_handoff.py",
       "sha256": "389fb1c4ff12cd189da318f4511db64703238403827e33e6ec91a1f097b03000"
     },
     "evidence-025": {
       "kind": "result",
-      "source": "scorer/compliant_takeaway.py | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\compliant_takeaway.py",
+      "source": "scorer/compliant_takeaway.py | R:\\2024\\private-readiness-20261120\\compliant_takeaway.py",
       "sha256": "95d3f1837ee9cbf4ecd745f1ad07396d89160bd13bc7e2ec326f74d36f2b06ce"
     },
     "evidence-026": {
       "kind": "result",
-      "source": "scorer/scorer_socket.py | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\scorer_socket.py",
+      "source": "scorer/scorer_socket.py | R:\\2024\\private-readiness-20261120\\scorer_socket.py",
       "sha256": "e59447f8a4f9cc965b866947e36737be32fc59939e79c94e4bea661272e6a6ed"
     },
     "evidence-027": {
       "kind": "result",
-      "source": "scorer/coaxial_body_fit.py | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\coaxial_body_fit.py",
+      "source": "scorer/coaxial_body_fit.py | R:\\2024\\private-readiness-20261120\\coaxial_body_fit.py",
       "sha256": "8544c555215ff3076235d46b19edc0e68cfd8e7827ccb7393bae966428497d6d"
     },
     "evidence-028": {
       "kind": "result",
-      "source": "scorer/bind_scorer_issue.py | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\bind_scorer_issue.py",
+      "source": "scorer/bind_scorer_issue.py | R:\\2024\\private-readiness-20261120\\bind_scorer_issue.py",
       "sha256": "0fa139e8687dd60acef51ae096873d052d46439656e39d090113a1e3540c4b7a"
     },
     "evidence-029": {
       "kind": "result",
-      "source": "scorer/r18-match-role/focal_1780.py | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\focal_1780.py",
+      "source": "scorer/r18-match-role/focal_1780.py | R:\\2024\\private-readiness-20261120\\r18-match-role\\focal_1780.py",
       "sha256": "2c61484551882b9206b9731718d254828b68b38b329b1a73c63c48b20f07ce30"
     },
     "evidence-030": {
       "kind": "result",
-      "source": "scorer/r18-match-role/compare_scoring_roles.py | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\compare_scoring_roles.py",
+      "source": "scorer/r18-match-role/compare_scoring_roles.py | R:\\2024\\private-readiness-20261120\\r18-match-role\\compare_scoring_roles.py",
       "sha256": "c4bf7dd8ffd58b941051c1e7a53f3274a88aa81b082c07dce718b53b086e1252"
     },
     "evidence-031": {
       "kind": "result",
-      "source": "scorer/r18-match-role/architecture_handoff.py | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\architecture_handoff.py",
+      "source": "scorer/r18-match-role/architecture_handoff.py | R:\\2024\\private-readiness-20261120\\r18-match-role\\architecture_handoff.py",
       "sha256": "9e75be055aa0cafaeabbee4710f6d3153620f8c41d832fae0439fc2aacad60b7"
     },
     "evidence-032": {
       "kind": "result",
-      "source": "scorer/r18-match-role/1780-profile.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\1780-profile.json",
+      "source": "scorer/r18-match-role/1780-profile.json | R:\\2024\\private-readiness-20261120\\r18-match-role\\1780-profile.json",
       "sha256": "8d87e9cb6b791e64b866792cf7b558ea84b8011c59c3892d0d1c008bafcedb32"
     },
     "evidence-033": {
       "kind": "result",
-      "source": "scorer/r18-match-role/1780-study.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\1780-study.json",
+      "source": "scorer/r18-match-role/1780-study.json | R:\\2024\\private-readiness-20261120\\r18-match-role\\1780-study.json",
       "sha256": "976d005e9dc1ee1be6eb6ae75c9833304752bfd9d6c5bfcd6679e9c1a6a1707f"
     },
     "evidence-034": {
       "kind": "result",
-      "source": "scorer/r18-match-role/1780-results.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\1780-results.json",
+      "source": "scorer/r18-match-role/1780-results.json | R:\\2024\\private-readiness-20261120\\r18-match-role\\1780-results.json",
       "sha256": "2f5e3689365222c46a1b9a9c66f2c60085be5d69107a80e131027a582599379b"
     },
     "evidence-035": {
       "kind": "result",
-      "source": "scorer/r18-match-role/1780-receipt.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\1780-receipt.json",
+      "source": "scorer/r18-match-role/1780-receipt.json | R:\\2024\\private-readiness-20261120\\r18-match-role\\1780-receipt.json",
       "sha256": "977e0ab9f4f44fed861fa946759d7461958a0c599fb9e32f7c4731e1b2c36287"
     },
     "evidence-036": {
       "kind": "result",
-      "source": "scorer/r18-match-role/receipt.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\receipt.json",
+      "source": "scorer/r18-match-role/receipt.json | R:\\2024\\private-readiness-20261120\\r18-match-role\\receipt.json",
       "sha256": "c7fb3a98cc98613b42184eaca0d46e17245a44381ddb9153da23c491044d8208"
     },
     "evidence-037": {
       "kind": "result",
-      "source": "scorer/r18-match-role/scorer-route-room.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\scorer-route-room.json",
+      "source": "scorer/r18-match-role/scorer-route-room.json | R:\\2024\\private-readiness-20261120\\r18-match-role\\scorer-route-room.json",
       "sha256": "faf91aa07bb87f439edadf898051398b911d8b79705e111cac7a1ef260aa3392"
     },
     "evidence-038": {
       "kind": "result",
-      "source": "scorer/r18-match-role/open-center-drive-stock.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\open-center-drive-stock.json",
+      "source": "scorer/r18-match-role/open-center-drive-stock.json | R:\\2024\\private-readiness-20261120\\r18-match-role\\open-center-drive-stock.json",
       "sha256": "2a0705a98022c207acb9c66ee777b255f2b0e4da2bb309171b575be4141fe6b2"
     },
     "evidence-039": {
       "kind": "result",
-      "source": "scorer/r18-match-role/paired-swing-arm-stock.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\paired-swing-arm-stock.json",
+      "source": "scorer/r18-match-role/paired-swing-arm-stock.json | R:\\2024\\private-readiness-20261120\\r18-match-role\\paired-swing-arm-stock.json",
       "sha256": "990f9f65f4acf11f8713f8b0af503f9ebdb3ef4f84927606007d17f2c5224708"
     },
     "evidence-040": {
       "kind": "result",
-      "source": "scorer/r18-match-role/running-piece-takeaway.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\running-piece-takeaway.json",
+      "source": "scorer/r18-match-role/running-piece-takeaway.json | R:\\2024\\private-readiness-20261120\\r18-match-role\\running-piece-takeaway.json",
       "sha256": "c83715c725410fd8ee562992e5876f9910594d27824f63afadf8bddc8227a037"
     },
     "evidence-041": {
       "kind": "result",
-      "source": "scorer/r18-match-role/twin-takeaway-cartridge.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\twin-takeaway-cartridge.json",
+      "source": "scorer/r18-match-role/twin-takeaway-cartridge.json | R:\\2024\\private-readiness-20261120\\r18-match-role\\twin-takeaway-cartridge.json",
       "sha256": "0038f2a6189f37e9837452b21eec986a337582f8292ed237bfea3807d6711d9d"
     },
     "evidence-042": {
       "kind": "result",
-      "source": "scorer/r18-match-role/compliant-takeaway.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\compliant-takeaway.json",
+      "source": "scorer/r18-match-role/compliant-takeaway.json | R:\\2024\\private-readiness-20261120\\r18-match-role\\compliant-takeaway.json",
       "sha256": "c891fbefbecb9a8779d3661aec93bea1e6679fd23c1f8e9133153e54a4943da6"
     },
     "evidence-043": {
       "kind": "result",
-      "source": "scorer/r18-match-role/output-socket-fit.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\output-socket-fit.json",
+      "source": "scorer/r18-match-role/output-socket-fit.json | R:\\2024\\private-readiness-20261120\\r18-match-role\\output-socket-fit.json",
       "sha256": "19b1a83e2b0dd351fb895836c311464f6292951959f7d10acaec1c4f2c000ae9"
     },
     "evidence-044": {
       "kind": "result",
-      "source": "scorer/r18-match-role/coaxial-drive-fit.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\coaxial-drive-fit.json",
+      "source": "scorer/r18-match-role/coaxial-drive-fit.json | R:\\2024\\private-readiness-20261120\\r18-match-role\\coaxial-drive-fit.json",
       "sha256": "5456c5fd6999e4db70bf11ab9892449d3001791d628378338476c2c06ef7cb98"
     },
     "evidence-045": {
       "kind": "result",
-      "source": "scorer/r18-match-role/scorer-architecture.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\scorer-architecture.json",
+      "source": "scorer/r18-match-role/scorer-architecture.json | R:\\2024\\private-readiness-20261120\\r18-match-role\\scorer-architecture.json",
       "sha256": "33b7c0d035174bd5857bc86abe89743459bc6e6e06563e70ab846b1f6531348d"
     },
     "evidence-046": {
       "kind": "result",
-      "source": "scorer/r18-match-role/scorer-architecture-traces.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\scorer-architecture-traces.json",
+      "source": "scorer/r18-match-role/scorer-architecture-traces.json | R:\\2024\\private-readiness-20261120\\r18-match-role\\scorer-architecture-traces.json",
       "sha256": "6f299bdc77ee41743819d57c109139fdab2109b0326665f89cc966e4c3b52124"
     },
     "evidence-047": {
       "kind": "result",
-      "source": "scorer/r18-match-role/scorer-architecture-result.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\scorer-architecture-result.json",
+      "source": "scorer/r18-match-role/scorer-architecture-result.json | R:\\2024\\private-readiness-20261120\\r18-match-role\\scorer-architecture-result.json",
       "sha256": "761d30834d3aac05a3e2e0172c3ea5510592c5746c598b96a100fe5c84c658c4"
     },
     "evidence-048": {
       "kind": "result",
-      "source": "scorer/r18-match-role/open-center-drive-stock.step | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\open-center-drive-stock.step",
+      "source": "scorer/r18-match-role/open-center-drive-stock.step | R:\\2024\\private-readiness-20261120\\r18-match-role\\open-center-drive-stock.step",
       "sha256": "c6743492166f8b49409c9ae0ab1dff5396857dfe50ae64333508d08493fa9120"
     },
     "evidence-049": {
       "kind": "result",
-      "source": "scorer/r18-match-role/paired-swing-arm-stock.step | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\paired-swing-arm-stock.step",
+      "source": "scorer/r18-match-role/paired-swing-arm-stock.step | R:\\2024\\private-readiness-20261120\\r18-match-role\\paired-swing-arm-stock.step",
       "sha256": "ad778b3379ad327dbb93152a1ca646dcda7a1d583e06d8502c2568238471ba85"
     },
     "evidence-050": {
       "kind": "result",
-      "source": "scorer/r18-match-role/twin-takeaway-cartridge.step | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\twin-takeaway-cartridge.step",
+      "source": "scorer/r18-match-role/twin-takeaway-cartridge.step | R:\\2024\\private-readiness-20261120\\r18-match-role\\twin-takeaway-cartridge.step",
       "sha256": "c00e3bcce060f93ad53cf00d5be84a4c1a16452017bddbf602ec1c4f5fe5f9cb"
     },
     "evidence-051": {
       "kind": "result",
-      "source": "scorer/r18-match-role/socket-on-roller-shaft.step | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\socket-on-roller-shaft.step",
+      "source": "scorer/r18-match-role/socket-on-roller-shaft.step | R:\\2024\\private-readiness-20261120\\r18-match-role\\socket-on-roller-shaft.step",
       "sha256": "145c1c7a4e81e95f68a9b40b97f11c0737cd429279d9370d017b8fdf80aad592"
     },
     "evidence-052": {
       "kind": "result",
-      "source": "scorer/r18-match-role/compliant-takeaway-stock.step | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\compliant-takeaway-stock.step",
+      "source": "scorer/r18-match-role/compliant-takeaway-stock.step | R:\\2024\\private-readiness-20261120\\r18-match-role\\compliant-takeaway-stock.step",
       "sha256": "26febd218dfc6bdc32d65529edb242a18ddd78a056b90839f24f0a0f9689db3d"
     },
     "evidence-053": {
       "kind": "result",
-      "source": "scorer/r18-match-role/am-3608.step | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\am-3608.step",
+      "source": "scorer/r18-match-role/am-3608.step | R:\\2024\\private-readiness-20261120\\r18-match-role\\am-3608.step",
       "sha256": "e5323f8dff336e35b6abcfa970df5be5230fce20badb60c2701b83e9b8bc587d"
     },
     "evidence-054": {
       "kind": "result",
-      "source": "scorer/r18-match-role/am-3945-rev3.step | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\am-3945-rev3.step",
+      "source": "scorer/r18-match-role/am-3945-rev3.step | R:\\2024\\private-readiness-20261120\\r18-match-role\\am-3945-rev3.step",
       "sha256": "60fda7b3e5fde25adb4523a47a990e675e179238549a69df9ce5e05d4db35edd"
     },
     "evidence-055": {
       "kind": "result",
-      "source": "scorer/r18-match-role/REV-21-2103.step | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\REV-21-2103.step",
+      "source": "scorer/r18-match-role/REV-21-2103.step | R:\\2024\\private-readiness-20261120\\r18-match-role\\REV-21-2103.step",
       "sha256": "a03cf6c9a82f6f806c7d04f5e15a0d5d0b36844443ca6985670aac7c50c18d9b"
     },
     "evidence-056": {
       "kind": "result",
-      "source": "scorer/r18-match-role/REV-21-2104.step | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\REV-21-2104.step",
+      "source": "scorer/r18-match-role/REV-21-2104.step | R:\\2024\\private-readiness-20261120\\r18-match-role\\REV-21-2104.step",
       "sha256": "76a03d917157758f6c736aadc233bb01749795f2f45b632236159de0654a84f6"
     },
     "evidence-057": {
       "kind": "result",
-      "source": "scorer/r18-match-role/REV-21-2106.step | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\REV-21-2106.step",
+      "source": "scorer/r18-match-role/REV-21-2106.step | R:\\2024\\private-readiness-20261120\\r18-match-role\\REV-21-2106.step",
       "sha256": "380d5a6c1c3e71c14e02e138815e852c2383dcee8dbdf26121e4c9c4e919a03c"
     },
     "evidence-058": {
       "kind": "result",
-      "source": "scorer/r18-match-role/REV-21-2108.step | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\REV-21-2108.step",
+      "source": "scorer/r18-match-role/REV-21-2108.step | R:\\2024\\private-readiness-20261120\\r18-match-role\\REV-21-2108.step",
       "sha256": "2b665b82f813da7d774cc5521402ec93a9480aa855a723c4f4d649b128804dd7"
     },
     "neo-v11": {
       "kind": "element",
-      "source": "scorer/r18-match-role/REV-21-1650-V1.1.step | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\REV-21-1650-V1.1.step",
+      "source": "scorer/r18-match-role/REV-21-1650-V1.1.step | R:\\2024\\private-readiness-20261120\\r18-match-role\\REV-21-1650-V1.1.step",
       "sha256": "50fb9445ae07465fbd10605e48009649316d376e8194451b7fc97959d17003a9"
     },
     "evidence-060": {
       "kind": "result",
-      "source": "scorer/r18-match-role/retract-swing-poses.step | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\retract-swing-poses.step",
+      "source": "scorer/r18-match-role/retract-swing-poses.step | R:\\2024\\private-readiness-20261120\\r18-match-role\\retract-swing-poses.step",
       "sha256": "549d6a51b22b2410e6e1a9395bfbd9b086abd06c7055471c5c9763665d9793df"
     },
     "evidence-061": {
       "kind": "result",
-      "source": "scorer/r18-match-role/forward-swing-poses.step | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\forward-swing-poses.step",
+      "source": "scorer/r18-match-role/forward-swing-poses.step | R:\\2024\\private-readiness-20261120\\r18-match-role\\forward-swing-poses.step",
       "sha256": "e1995eecf39da4a288114edb103652178404222e381b3c1fd278bf061d3dbbb6"
     },
     "evidence-062": {
       "kind": "result",
-      "source": "scorer/r18-match-role/fixed-turning-guide-poses.step | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\fixed-turning-guide-poses.step",
+      "source": "scorer/r18-match-role/fixed-turning-guide-poses.step | R:\\2024\\private-readiness-20261120\\r18-match-role\\fixed-turning-guide-poses.step",
       "sha256": "11e0e7e37e216e24b801db5996b25e39545e901d6229d4866d442ef03744f86b"
     },
     "evidence-063": {
       "kind": "result",
-      "source": "scorer/continuous-front-corner/relay-install/open-throat/inputs.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\inputs.json",
+      "source": "scorer/continuous-front-corner/relay-install/open-throat/inputs.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\inputs.json",
       "sha256": "d52d63ab131afb967020956a09c17546a04c2bb67692dc20c096e3f5817c8360"
     },
     "evidence-064": {
       "kind": "result",
-      "source": "scorer/continuous-front-corner/relay-install/open-throat/geometry.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\geometry.json",
+      "source": "scorer/continuous-front-corner/relay-install/open-throat/geometry.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\geometry.json",
       "sha256": "a1a10b78fec31829d8884896bcdd85dadfd58c24b0ee36c786e241612fc403ab"
     },
     "evidence-065": {
       "kind": "result",
-      "source": "scorer/continuous-front-corner/relay-install/open-throat/bumper-candidates.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\bumper-candidates.json",
+      "source": "scorer/continuous-front-corner/relay-install/open-throat/bumper-candidates.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\bumper-candidates.json",
       "sha256": "70d8bd4b055808db41eab379cd6f8e03210020f5fb7b6037cd5e0970bccf826f"
     },
     "evidence-066": {
       "kind": "result",
-      "source": "scorer/continuous-front-corner/relay-install/open-throat/compare.mjs | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\compare.mjs",
+      "source": "scorer/continuous-front-corner/relay-install/open-throat/compare.mjs | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\compare.mjs",
       "sha256": "e116f242fc613e753d5dd09b8f2b78b979ea4a7b5dfc06ca5bb811aecbab5790"
     },
     "evidence-067": {
       "kind": "result",
-      "source": "scorer/continuous-front-corner/relay-install/open-throat/guide_profile.py | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\guide_profile.py",
+      "source": "scorer/continuous-front-corner/relay-install/open-throat/guide_profile.py | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\guide_profile.py",
       "sha256": "b3b2e4d3642473e77968171c27817470626abae8c4d5db2e12969df12c820717"
     },
     "evidence-068": {
       "kind": "result",
-      "source": "scorer/continuous-front-corner/relay-install/open-throat/staple_poses.mjs | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\staple_poses.mjs",
+      "source": "scorer/continuous-front-corner/relay-install/open-throat/staple_poses.mjs | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\staple_poses.mjs",
       "sha256": "9295748d75a89b57d0cd90ec83ec0139ebc81e7b3d2da469c971320850be370d"
     },
     "evidence-069": {
       "kind": "result",
-      "source": "scorer/continuous-front-corner/relay-install/open-throat/staple-poses.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\staple-poses.json",
+      "source": "scorer/continuous-front-corner/relay-install/open-throat/staple-poses.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\staple-poses.json",
       "sha256": "3732680c2cdee25b3ed9aa33d54141aeed27cda08258bae5a7386b3d9b96c73a"
     },
     "evidence-070": {
       "kind": "result",
-      "source": "scorer/continuous-front-corner/relay-install/open-throat/staple-exact.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\staple-exact.json",
+      "source": "scorer/continuous-front-corner/relay-install/open-throat/staple-exact.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\staple-exact.json",
       "sha256": "6c0a6a233514773a9b4b7b613374907acaf9f1e9e9a953efd5c308211e69bbf4"
     },
     "evidence-071": {
       "kind": "result",
-      "source": "scorer/continuous-front-corner/relay-install/open-throat/carry-witness.mjs | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\carry-witness.mjs",
+      "source": "scorer/continuous-front-corner/relay-install/open-throat/carry-witness.mjs | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\carry-witness.mjs",
       "sha256": "ef6d485ac0bd812d8c4e062fe5aef09651fa0a1423d5d0c565fbefb150f1162e"
     },
     "evidence-072": {
       "kind": "result",
-      "source": "scorer/continuous-front-corner/relay-install/open-throat/carry-witness.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\carry-witness.json",
+      "source": "scorer/continuous-front-corner/relay-install/open-throat/carry-witness.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\carry-witness.json",
       "sha256": "270a5429a5bfea7564406b8a3b3ed922d413e82e280ac73050cc5d98cb1c75f4"
     },
     "evidence-073": {
       "kind": "result",
-      "source": "scorer/continuous-front-corner/relay-install/open-throat/inclined/refine.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\inclined\\refine.json",
+      "source": "scorer/continuous-front-corner/relay-install/open-throat/inclined/refine.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\inclined\\refine.json",
       "sha256": "d3941a781235e7c8611c46c511760403b3592481012952d26db657698e233ffc"
     },
     "evidence-074": {
       "kind": "result",
-      "source": "scorer/continuous-front-corner/relay-install/open-throat/inclined/materials.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\inclined\\materials.json",
+      "source": "scorer/continuous-front-corner/relay-install/open-throat/inclined/materials.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\inclined\\materials.json",
       "sha256": "8aae06b5630bf332d4f1df2cb874884889bcfe16bfe8abd73a785e2e76deb4ae"
     },
     "evidence-075": {
       "kind": "result",
-      "source": "scorer/continuous-front-corner/relay-install/open-throat/inclined/field.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\inclined\\field.json",
+      "source": "scorer/continuous-front-corner/relay-install/open-throat/inclined/field.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\inclined\\field.json",
       "sha256": "249261a88ee24aecada4052888f664607b8c4f5f09ad1421fb27e8db34ea10e7"
     },
     "evidence-076": {
       "kind": "result",
-      "source": "scorer/continuous-front-corner/relay-install/open-throat/inclined/home.step | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\inclined\\home.step",
+      "source": "scorer/continuous-front-corner/relay-install/open-throat/inclined/home.step | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\inclined\\home.step",
       "sha256": "89fe11c7153f22e0ab0a22e85c664025b838198e5b0698cc31876ee3959409ae"
     },
     "evidence-077": {
       "kind": "result",
-      "source": "scorer/continuous-front-corner/relay-install/open-throat/inclined/carry.step | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\inclined\\carry.step",
+      "source": "scorer/continuous-front-corner/relay-install/open-throat/inclined/carry.step | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\inclined\\carry.step",
       "sha256": "155b60aa327022553ef7a14e6679cb16102741e2a07680dfbeb5bf7764aa8ace"
     },
     "evidence-078": {
       "kind": "result",
-      "source": "scorer/continuous-front-corner/relay-install/open-throat/inclined/physics-observe.mjs | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\inclined\\physics-observe.mjs",
+      "source": "scorer/continuous-front-corner/relay-install/open-throat/inclined/physics-observe.mjs | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\inclined\\physics-observe.mjs",
       "sha256": "0b46efb9ea9874c849f31b1c9f144c70b074abbd641bf5847984ad303c23573b"
     },
     "evidence-079": {
       "kind": "result",
-      "source": "scorer/continuous-front-corner/relay-install/open-throat/inclined/physics.mjs | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\inclined\\physics.mjs",
+      "source": "scorer/continuous-front-corner/relay-install/open-throat/inclined/physics.mjs | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\inclined\\physics.mjs",
       "sha256": "257a65a9d80ea3c17b43501c22c89ecb433fe6ef2de24bd18623d152b3b7bdaf"
     },
     "evidence-080": {
       "kind": "result",
-      "source": "scorer/continuous-front-corner/relay-install/open-throat/inclined/part.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\inclined\\part.json",
+      "source": "scorer/continuous-front-corner/relay-install/open-throat/inclined/part.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\inclined\\part.json",
       "sha256": "909dd3a0416cc5325f7253d04d00c659d308e1ce3608c26b1235bbcc320da35c"
     },
     "evidence-081": {
       "kind": "result",
-      "source": "scorer/continuous-front-corner/relay-install/open-throat/old/refine.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\old\\refine.json",
+      "source": "scorer/continuous-front-corner/relay-install/open-throat/old/refine.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\old\\refine.json",
       "sha256": "736678f63ebf22310a87430aa5dbc0c242b3151461366d6d4f7aec2964dcac51"
     },
     "evidence-082": {
       "kind": "result",
-      "source": "scorer/continuous-front-corner/relay-install/open-throat/old/materials.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\old\\materials.json",
+      "source": "scorer/continuous-front-corner/relay-install/open-throat/old/materials.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\old\\materials.json",
       "sha256": "3f71fa5429f568bb4638557d7fecda45a96094240abf33e6ee3824793fbdfe13"
     },
     "evidence-083": {
       "kind": "result",
-      "source": "scorer/continuous-front-corner/relay-install/open-throat/middle/materials.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\middle\\materials.json",
+      "source": "scorer/continuous-front-corner/relay-install/open-throat/middle/materials.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\middle\\materials.json",
       "sha256": "05f323720e5ba02a16402f21ca1ee8337a8b3da1cf6c325c9b6cb978a2eaaf17"
     },
     "evidence-084": {
       "kind": "result",
-      "source": "scorer/continuous-front-corner/relay-install/open-throat/narrow/materials.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\narrow\\materials.json",
+      "source": "scorer/continuous-front-corner/relay-install/open-throat/narrow/materials.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\narrow\\materials.json",
       "sha256": "9db599fa2e5eeb7c125781f9b9030a4a2edd1252f0a6deb51a1ff0f5edb5bc25"
     },
     "evidence-085": {
       "kind": "result",
-      "source": "scorer/continuous-front-corner/relay-install/open-throat/narrow/refine.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\narrow\\refine.json",
+      "source": "scorer/continuous-front-corner/relay-install/open-throat/narrow/refine.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\narrow\\refine.json",
       "sha256": "a91ecec49846fb47ff82ba144eb791a458adcab78f193f372c81a9a58dca948f"
     },
     "evidence-086": {
       "kind": "result",
-      "source": "scorer/continuous-front-corner/relay-install/open-throat/plans.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\plans.json",
+      "source": "scorer/continuous-front-corner/relay-install/open-throat/plans.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\plans.json",
       "sha256": "8cf9609ae04338cc8cadbc278414041f498fa1f295287e1a4940491ff09f5766"
     },
     "evidence-087": {
       "kind": "result",
-      "source": "draw2/control.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-02\\control.json",
+      "source": "draw2/control.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-02\\control.json",
       "sha256": "ab349b0b8b021fd762b4c447b17aab3c128bbf0a9c6b1679bc51393791b80a4e"
     },
     "evidence-088": {
       "kind": "result",
-      "source": "draw2/dog.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-02\\dog.json",
+      "source": "draw2/dog.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-02\\dog.json",
       "sha256": "4105e03455da5b98332d9312f68ee366a8dfdcd073d9e619556c0299254662e9"
     },
     "evidence-089": {
       "kind": "result",
-      "source": "draw2/draw.mjs | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-02\\draw.mjs",
+      "source": "draw2/draw.mjs | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-02\\draw.mjs",
       "sha256": "91fe873d7ed4f600fc617d12a23dc54415cdcc7dbc8df1b46b144300882acc58"
     },
     "evidence-090": {
       "kind": "result",
-      "source": "draw2/part.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-02\\part.json",
+      "source": "draw2/part.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-02\\part.json",
       "sha256": "ea605446aacbb53bba2cb889f6e91796629e824e27fd01c8b0a69db4041b8b1b"
     },
     "evidence-091": {
       "kind": "result",
-      "source": "draw2/physics.mjs | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-02\\physics.mjs",
+      "source": "draw2/physics.mjs | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-02\\physics.mjs",
       "sha256": "aedb0497193499f1eb896fff084355c8ab5ef230c04c3f8890220911e4642f44"
     },
     "evidence-092": {
       "kind": "result",
-      "source": "draw2/roller.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-02\\roller.json",
+      "source": "draw2/roller.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-02\\roller.json",
       "sha256": "9a0cd7a601c29483f16a6a8afd6bf53cb597258e69118e3c7b06e88c860861db"
     },
     "draw2-recipe": {
       "kind": "result",
-      "source": "draw2-recipe | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\prepare_draw_02.py",
+      "source": "draw2-recipe | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\prepare_draw_02.py",
       "sha256": "c3a2dc9fbadf4e8e0049cc1e3ee0ab5d157faae49b1558fe876d88d872cccd1a"
     },
     "evidence-094": {
       "kind": "result",
-      "source": "draw3/draw.mjs | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-03\\draw.mjs",
+      "source": "draw3/draw.mjs | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-03\\draw.mjs",
       "sha256": "f593469beed3c125ca599255f5781fdbbaccb3fb7265d183c29175764c5d9a97"
     },
     "evidence-095": {
       "kind": "result",
-      "source": "draw3/high.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-03\\high.json",
+      "source": "draw3/high.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-03\\high.json",
       "sha256": "39507ee45afe10bf93d8cf9bfde4075883ca9eb00e4dd7b12543c96c037f57b4"
     },
     "evidence-096": {
       "kind": "result",
-      "source": "draw3/low.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-03\\low.json",
+      "source": "draw3/low.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-03\\low.json",
       "sha256": "db0b6bf490bd3d66455baa85a950a59b48357f1a4b03357494ed5f6e384c9055"
     },
     "evidence-097": {
       "kind": "result",
-      "source": "draw3/mid.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-03\\mid.json",
+      "source": "draw3/mid.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-03\\mid.json",
       "sha256": "f2bdb53404ff06aa65286f8f77605ee8a7b4aa392f6e0f93bb21b739c57d3be9"
     },
     "evidence-098": {
       "kind": "result",
-      "source": "draw3/part.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-03\\part.json",
+      "source": "draw3/part.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-03\\part.json",
       "sha256": "ea605446aacbb53bba2cb889f6e91796629e824e27fd01c8b0a69db4041b8b1b"
     },
     "evidence-099": {
       "kind": "result",
-      "source": "draw3/physics.mjs | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-03\\physics.mjs",
+      "source": "draw3/physics.mjs | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-03\\physics.mjs",
       "sha256": "5247be9b2d001f4dc894a607f3d5e32a9b1022f87d664ade40899e51ecdf6118"
     },
     "draw3-recipe": {
       "kind": "result",
-      "source": "draw3-recipe | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\prepare_draw_03.py",
+      "source": "draw3-recipe | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\prepare_draw_03.py",
       "sha256": "c5e1d346c54656b733c3c0f6983240e60ed347050ca8e26a8b2f2032bd3fc7e7"
     },
     "evidence-101": {
       "kind": "result",
-      "source": "draw4/draw.mjs | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-04\\draw.mjs",
+      "source": "draw4/draw.mjs | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-04\\draw.mjs",
       "sha256": "dccce7c651c39c53b7b595e0064b040b970e4928d7a34a470455378f31b3a8dd"
     },
     "evidence-102": {
       "kind": "result",
-      "source": "draw4/high.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-04\\high.json",
+      "source": "draw4/high.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-04\\high.json",
       "sha256": "6c10db48ee5ebed3accd7009b9382a9431a29682c332bf485ec3196321ff1c57"
     },
     "evidence-103": {
       "kind": "result",
-      "source": "draw4/low.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-04\\low.json",
+      "source": "draw4/low.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-04\\low.json",
       "sha256": "9a75b9e5a59fed67739e5806f2d4c31fd7fbbf3561cd652c097bc6f6e96c2278"
     },
     "evidence-104": {
       "kind": "result",
-      "source": "draw4/mid.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-04\\mid.json",
+      "source": "draw4/mid.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-04\\mid.json",
       "sha256": "aa1e9a6b03c2a23f9b6174ef8732e8c75aa5a529be5d3f4db28f903494699bc7"
     },
     "evidence-105": {
       "kind": "result",
-      "source": "draw4/part.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-04\\part.json",
+      "source": "draw4/part.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-04\\part.json",
       "sha256": "ea605446aacbb53bba2cb889f6e91796629e824e27fd01c8b0a69db4041b8b1b"
     },
     "evidence-106": {
       "kind": "result",
-      "source": "draw4/physics.mjs | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-04\\physics.mjs",
+      "source": "draw4/physics.mjs | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-04\\physics.mjs",
       "sha256": "599a6b76609e8749429e91015c568e68bfa0445d2c64a26f8c4e2b466d2532c5"
     },
     "draw4-recipe": {
       "kind": "result",
-      "source": "draw4-recipe | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\prepare_draw_04.py",
+      "source": "draw4-recipe | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\prepare_draw_04.py",
       "sha256": "c489ce33c5cead0febb7da17aad4f7644b776058c8b90ab0ab6b5b2d999a397f"
     },
     "evidence-108": {
       "kind": "result",
-      "source": "draw5/draw.mjs | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-05\\draw.mjs",
+      "source": "draw5/draw.mjs | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-05\\draw.mjs",
       "sha256": "dccce7c651c39c53b7b595e0064b040b970e4928d7a34a470455378f31b3a8dd"
     },
     "evidence-109": {
       "kind": "result",
-      "source": "draw5/high.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-05\\high.json",
+      "source": "draw5/high.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-05\\high.json",
       "sha256": "bcbc04bbacb8860e33c72c28e4ba86c0ac027d6ff8119a6a076036e616d79928"
     },
     "evidence-110": {
       "kind": "result",
-      "source": "draw5/low.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-05\\low.json",
+      "source": "draw5/low.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-05\\low.json",
       "sha256": "68e53de44e71e98422577c39e112cf689c72b25206214d8f94ed62f54529863a"
     },
     "evidence-111": {
       "kind": "result",
-      "source": "draw5/mid.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-05\\mid.json",
+      "source": "draw5/mid.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-05\\mid.json",
       "sha256": "a08229776f59cf06523ed5d0d4c5ac6a9c09a5cb1ebede33fa9ec67f030eb2e9"
     },
     "evidence-112": {
       "kind": "result",
-      "source": "draw5/part.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-05\\part.json",
+      "source": "draw5/part.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-05\\part.json",
       "sha256": "ea605446aacbb53bba2cb889f6e91796629e824e27fd01c8b0a69db4041b8b1b"
     },
     "evidence-113": {
       "kind": "result",
-      "source": "draw5/physics.mjs | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-05\\physics.mjs",
+      "source": "draw5/physics.mjs | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-05\\physics.mjs",
       "sha256": "741cb2101c8ece183c995ecce872d97a45410eafe39b7638a52e1c108e3d148b"
     },
     "draw5-recipe": {
       "kind": "result",
-      "source": "draw5-recipe | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\prepare_draw_05.py",
+      "source": "draw5-recipe | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\prepare_draw_05.py",
       "sha256": "d5dfc2d68884ca85dae802760a76dea30e4a01a0410bbdd7748327c3a5391b14"
     },
     "evidence-115": {
       "kind": "result",
-      "source": "draw6/draw.mjs | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-06\\draw.mjs",
+      "source": "draw6/draw.mjs | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-06\\draw.mjs",
       "sha256": "c438a534061abc3075cc3223b5e3f4a0328c9ff433b20f08fe0503b370c48014"
     },
     "evidence-116": {
       "kind": "result",
-      "source": "draw6/high.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-06\\high.json",
+      "source": "draw6/high.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-06\\high.json",
       "sha256": "3ea7ad79d41089d01e7cb3bf9f2b47639b5a16a4f513afc441f1ce5382e86595"
     },
     "evidence-117": {
       "kind": "result",
-      "source": "draw6/low.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-06\\low.json",
+      "source": "draw6/low.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-06\\low.json",
       "sha256": "4df968d50d27ee9503386ee3f705da0c341ffd68c2baa93208cbc57511693525"
     },
     "evidence-118": {
       "kind": "result",
-      "source": "draw6/mid.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-06\\mid.json",
+      "source": "draw6/mid.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-06\\mid.json",
       "sha256": "b22013137686bb860ff0d216d812de3c415d956831b684e7208840e1764575a9"
     },
     "evidence-119": {
       "kind": "result",
-      "source": "draw6/part.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-06\\part.json",
+      "source": "draw6/part.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-06\\part.json",
       "sha256": "ea605446aacbb53bba2cb889f6e91796629e824e27fd01c8b0a69db4041b8b1b"
     },
     "evidence-120": {
       "kind": "result",
-      "source": "draw6/physics.mjs | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-06\\physics.mjs",
+      "source": "draw6/physics.mjs | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-06\\physics.mjs",
       "sha256": "ff31893992535de3aa3cf3696f7a4c51de3eaa0e2852a52bd24e718c621085f7"
     },
     "draw6-recipe": {
       "kind": "result",
-      "source": "draw6-recipe | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\prepare_draw_06.py",
+      "source": "draw6-recipe | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\prepare_draw_06.py",
       "sha256": "81ae2e2ae4e0adc4de1104f7804194e9a5ba75628be7b049523493493a07270b"
     },
     "evidence-122": {
       "kind": "result",
-      "source": "draw7/draw.mjs | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-07\\draw.mjs",
+      "source": "draw7/draw.mjs | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-07\\draw.mjs",
       "sha256": "c438a534061abc3075cc3223b5e3f4a0328c9ff433b20f08fe0503b370c48014"
     },
     "evidence-123": {
       "kind": "result",
-      "source": "draw7/high.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-07\\high.json",
+      "source": "draw7/high.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-07\\high.json",
       "sha256": "08855e3a52269a0aab1e997d070ef837179c7844fd476c97d00ca846e86ae13c"
     },
     "evidence-124": {
       "kind": "result",
-      "source": "draw7/low.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-07\\low.json",
+      "source": "draw7/low.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-07\\low.json",
       "sha256": "13efbfef2cdba38215862b6b185e1c507eb09081a38fe76b195c8a534cfb9da5"
     },
     "evidence-125": {
       "kind": "result",
-      "source": "draw7/mid.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-07\\mid.json",
+      "source": "draw7/mid.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-07\\mid.json",
       "sha256": "0f3430be67910c3ad317feda137242fd121c317ececa07be50e0fb6c9f27ad87"
     },
     "evidence-126": {
       "kind": "result",
-      "source": "draw7/part.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-07\\part.json",
+      "source": "draw7/part.json | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-07\\part.json",
       "sha256": "ea605446aacbb53bba2cb889f6e91796629e824e27fd01c8b0a69db4041b8b1b"
     },
     "evidence-127": {
       "kind": "result",
-      "source": "draw7/physics.mjs | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-07\\physics.mjs",
+      "source": "draw7/physics.mjs | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\draw-07\\physics.mjs",
       "sha256": "eab47369c7132e12b67dbf4dfe3e61d7bae2eace9edf2127a9aa4811b41ee3cc"
     },
     "draw7-recipe": {
       "kind": "result",
-      "source": "draw7-recipe | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\prepare_draw_07.py",
+      "source": "draw7-recipe | R:\\2024\\private-readiness-20261120\\continuous-front-corner\\relay-install\\open-throat\\prepare_draw_07.py",
       "sha256": "67cd2e228cfea4bc6935c4e2f6c4feddff145940ed0baa810aae31013d442549"
     },
     "evidence-129": {
       "kind": "result",
-      "source": "other/split_cam_transfer.py | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\split_cam_transfer.py",
+      "source": "other/split_cam_transfer.py | R:\\2024\\private-readiness-20261120\\split_cam_transfer.py",
       "sha256": "f1d6a0081360e11b147735dba5d10d04811961485c57cd66904240efef8c5dac"
     },
     "evidence-130": {
       "kind": "result",
-      "source": "other/pocket_room.py | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\pocket_room.py",
+      "source": "other/pocket_room.py | R:\\2024\\private-readiness-20261120\\pocket_room.py",
       "sha256": "929e0d468168c241cfbecbc064ad48380baf7f77db75b545f4196da9833d2a91"
     },
     "evidence-131": {
       "kind": "result",
-      "source": "other/b1_auto_frames.mjs | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\b1_auto_frames.mjs",
+      "source": "other/b1_auto_frames.mjs | R:\\2024\\private-readiness-20261120\\r18-match-role\\b1_auto_frames.mjs",
       "sha256": "4435f65208db6ca4003d1c561ed2a09395cae52f35d7c529cdea90801c05eba3"
     },
     "evidence-132": {
       "kind": "result",
-      "source": "other/draw-03-installed-room.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\draw-03-installed-room.json",
+      "source": "other/draw-03-installed-room.json | R:\\2024\\private-readiness-20261120\\r18-match-role\\draw-03-installed-room.json",
       "sha256": "2f9e7294e41c8ce538d12dd238485caf42d5a490d1c677b3e78f2b8b15e11e1d"
     },
     "evidence-133": {
       "kind": "result",
-      "source": "other/draw-04-installed-room.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\draw-04-installed-room.json",
+      "source": "other/draw-04-installed-room.json | R:\\2024\\private-readiness-20261120\\r18-match-role\\draw-04-installed-room.json",
       "sha256": "ad4e1375d0afbc12be75dd05bfb273828ffde903230f50ddbc3bcd0c64f823a0"
     },
     "evidence-134": {
       "kind": "result",
-      "source": "other/draw-05-installed-room.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\draw-05-installed-room.json",
+      "source": "other/draw-05-installed-room.json | R:\\2024\\private-readiness-20261120\\r18-match-role\\draw-05-installed-room.json",
       "sha256": "fbba587a2083606dec19db21e9d56f725e834198900960ef76ba15063de33c5f"
     },
     "evidence-135": {
       "kind": "result",
-      "source": "other/draw-06-installed-room.json | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\draw-06-installed-room.json",
+      "source": "other/draw-06-installed-room.json | R:\\2024\\private-readiness-20261120\\r18-match-role\\draw-06-installed-room.json",
       "sha256": "00925ef88f2ab53324c1a2ac8cf7dd0d80660422d123fd9a7b574b51e961f2ac"
     },
     "evidence-136": {
       "kind": "result",
-      "source": "other/draw-03-pocket-states.step | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\draw-03-pocket-states.step",
+      "source": "other/draw-03-pocket-states.step | R:\\2024\\private-readiness-20261120\\r18-match-role\\draw-03-pocket-states.step",
       "sha256": "cb891536944738c2ad7667bfbf3d6716cc23d86f228b8daa91e66bcff1524f75"
     },
     "evidence-137": {
       "kind": "result",
-      "source": "other/draw-04-pocket-states.step | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\draw-04-pocket-states.step",
+      "source": "other/draw-04-pocket-states.step | R:\\2024\\private-readiness-20261120\\r18-match-role\\draw-04-pocket-states.step",
       "sha256": "bce44a192be4e3b68e12a2e2a7ceabb6a68bfe4d46ed0be56d342950a3d9023d"
     },
     "evidence-138": {
       "kind": "result",
-      "source": "other/draw-05-pocket-states.step | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\draw-05-pocket-states.step",
+      "source": "other/draw-05-pocket-states.step | R:\\2024\\private-readiness-20261120\\r18-match-role\\draw-05-pocket-states.step",
       "sha256": "33df001d557d9fc27cb609e1fd56d0fa15e6dad39092e739a7c9da0fe6722d0e"
     },
     "evidence-139": {
       "kind": "result",
-      "source": "other/draw-06-pocket-states.step | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\draw-06-pocket-states.step",
+      "source": "other/draw-06-pocket-states.step | R:\\2024\\private-readiness-20261120\\r18-match-role\\draw-06-pocket-states.step",
       "sha256": "132e1508a02bec480cd1c2c0b1e62e88efbb9fda74cb64ce48d974fb047118e7"
     },
     "evidence-140": {
       "kind": "result",
-      "source": "other/split-cam-0.step | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\split-cam-0.step",
+      "source": "other/split-cam-0.step | R:\\2024\\private-readiness-20261120\\r18-match-role\\split-cam-0.step",
       "sha256": "09786082c19d7cae0873f8b0df7a2c4ae57f695d074f8b816124d435f3e5f322"
     },
     "evidence-141": {
       "kind": "result",
-      "source": "other/split-cam-120.step | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\split-cam-120.step",
+      "source": "other/split-cam-120.step | R:\\2024\\private-readiness-20261120\\r18-match-role\\split-cam-120.step",
       "sha256": "790aacdab2f871a0019e7944311a6dacf44e547693d10bacff7a8acf82a4d3ab"
     },
     "evidence-142": {
       "kind": "result",
-      "source": "other/split-cam-60.step | C:\\Users\\ehart\\Documents\\FRC Native\\2024\\private-readiness-20261120\\r18-match-role\\split-cam-60.step",
+      "source": "other/split-cam-60.step | R:\\2024\\private-readiness-20261120\\r18-match-role\\split-cam-60.step",
       "sha256": "ce847872639072d2af80f526149ff548b8084a6e9078ecff2dfe615d3f8a1ee4"
     },
     "material-03-full-step": {

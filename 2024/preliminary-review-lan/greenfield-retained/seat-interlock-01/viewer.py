@@ -8,7 +8,7 @@ renderer=root/'tread-underlay-01/scene.py'
 src=renderer.read_text(encoding='utf8');options=src[src.index('template='):src.index('cases=[]')];env=dict(root=root)
 exec(options,env);base=env['template'];read=lambda path:json.loads(path.read_bytes())
 doc=read(web);layout=doc['concepts']['field'];example=next(c for c in layout['cases'] if c['key']=='field-r01')
-observed=next(x for x in csv.DictReader(Path('C:/Users/ehart/repos/frc-2024-poc/sim/pressure/evidence/speaker-repeatability-starts.csv').open()) if x['attempt']=='R08')
+observed=next(x for x in csv.DictReader(Path('R:/sim/pressure/evidence/speaker-repeatability-starts.csv').open()) if x['attempt']=='R08')
 expected=read(sf/'attempt-R08-96.json')
 for recover in (False,True):
     patch=base.replace("r=read(p/(tag+'.json'));s=read(p/('split-ready-'+tag+'-6.88.json'))","folder=local if name=='inner' and successor else p;r=read(folder/(tag+'.json'));shot=folder/('split-ready-'+tag+'-6.88.json');s=read(shot) if shot.exists() else None")

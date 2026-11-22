@@ -54,7 +54,7 @@ for title,lines in [('Aim and spin up',[(8,22),(5,18),(30,70),(0,2),(0,3),(0,0),
     for pack,v,r in [('weak',11.8,.027),('nominal',12.6,.018)]:
         lo,hi=np.sum(lines,axis=0);p=v-r*hi
         power.append(dict(case=title+' / '+pack,stage=title,batteryCondition=pack,openCircuitV=v,resistance=r,requiredMinV=8,loadedBusV=[p,v-r*lo],batterySideA=[int(lo),int(hi)],marginV=p-8,status='pass' if p>=8 else 'fail',lines=[dict(name=g,amps=a,members=loads[g]) for g,a in zip(loads,lines)]))
-narr=Path('C:/Users/ehart/repos/frc-2024-poc/kickoff/strategic-narrative.md')
+narr=Path('R:/kickoff/strategic-narrative.md')
 review=dict(source=dict(file='kickoff/strategic-narrative.md',sha256=sha(narr)),objectives=[dict(objective=o,disposition='open',basis=b) for o,b in [
  ('Acquire and repeat close Speaker deliveries','The ring is mechanically captured once seated. The free-piece center-belt trial still pushes a floor NOTE away. No scored run on this assembly.'),
  ('Finish the next delivery or PARK','A timed route with peer traffic and the terminal bumper position is still required.'),

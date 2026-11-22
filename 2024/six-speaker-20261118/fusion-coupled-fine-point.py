@@ -128,4 +128,4 @@ def run(context):
     doc=next(d for d in app.documents if d.creationId=='66980ae7-d1d8-48ed-bcd6-c785494a3fd8')
     assert hashlib.sha256(json.dumps(snapshot(doc),sort_keys=True,separators=(',',':')).encode()).hexdigest()=='d62a221df675465f59c377ccc1c989e48afbbc95243cb1c9c1ac818c5d830c19'
 
-    check(adsk.fusion.Design.cast(doc.products.itemByProductType("DesignProductType")),'C:\\Users\\ehart\\Documents\\FRC Native\\2024\\track-tread-candidate-20261118\\route-relieved\\scan.json','C:\\Users\\ehart\\Documents\\FRC Native\\2024\\six-speaker-20261118\\coupled-fine-point-poses.json','C:\\Users\\ehart\\Documents\\FRC Native\\2024\\six-speaker-20261118\\coupled-fine-point-clearance.jsonl','5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96')
+    check(adsk.fusion.Design.cast(doc.products.itemByProductType("DesignProductType")),'R:\\2024\\track-tread-candidate-20261118\\route-relieved\\scan.json','R:\\2024\\six-speaker-20261118\\coupled-fine-point-poses.json','R:\\2024\\six-speaker-20261118\\coupled-fine-point-clearance.jsonl','5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96')

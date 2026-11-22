@@ -3,7 +3,7 @@ from pathlib import Path
 import json,math,numpy as np
 p=Path(__file__).resolve().parent;leg=json.loads((p/'plan.json').read_bytes())['plan']
 cad=json.loads((p.parent/'follower-01/review-data.json').read_bytes())
-module=json.loads(Path('C:/Users/ehart/repos/frc-2024-poc/cad/drivetrain/maxswerve-layout.json').read_bytes())['module']
+module=json.loads(Path('R:/cad/drivetrain/maxswerve-layout.json').read_bytes())['module']
 m=cad['running'][1];r=module['wheelDiameterMm']/2000;gear=module['driveReduction']
 R=12/105;kt=2.6/105;ke=(12-R*1.8)/(5676*math.tau/60)
 runs=[]

@@ -1,0 +1,2993 @@
+{
+ "note": "SHA-256 of each file before and after its machine paths were replaced. R: is the repository root.",
+ "files": {
+  "2024/preliminary-review-lan/build.py": {
+   "before": "071604a6986ff5d95b3d31673771b7b95bfad0a644b53a81a8712d852f36238a",
+   "after": "04b36a106ad2e67bebd81a8fcbaf0abf9a9f5bf7eee9918d310acc2241db9052"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/bounded-lift-01/mission.py": {
+   "before": "2f0676369ec1d442000806bf411146b3a676ea551e3d32f785e7be4e9f18198d",
+   "after": "3e3fa4709208c5341c8a9ef44b787a4091f6e4dc49a3de5fb9cc34fb00accc3b"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/bounded-lift-01/shot.py": {
+   "before": "0a4895245ee7ae1e3da840d411b072e460c7ac1f113fc129e26920e8dd5ffc05",
+   "after": "ce49293dbe4c7c9972186346ac05b95719cfec4e818bda291becfa887bfed8a4"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/bounded-lift-01/verify-tail.cjs": {
+   "before": "5d64a1e422e8e119d6be6a916d930047f826fa6d27dee1a8073610b7fb15b8af",
+   "after": "2ba8bb5f2488f205a96df6641fc12817f1629b66204862dd3468d7ef9caec621"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/bounded-lift-01/verify-view.cjs": {
+   "before": "b05004aa0a5cd3b81bd3df401d32ab637c6ec8e0eee34e96d3affa85bdbae974",
+   "after": "2e17554dcb340427091c93bdc08a3b2afdffad2d1923a3cb357f44a486701bab"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/bounded-risk-01/check-view.cjs": {
+   "before": "ea808e9320fa670f3d1c1ba258c7893dff9b10b738ac34061d3e8c6e40cf2006",
+   "after": "b223cbfe15b8dadaa09fb06c4009ac1a43bff3f8d8d6b376e6b5932ec7d7cb3b"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/bounded-risk-01/replay-check.log": {
+   "before": "326920c58fee6302c48e77ce460fa133ff8f68de269d5b66a826786133f976a2",
+   "after": "f634197ea101d1a774b9f333b4c5e6a7abc07b2542664f938cd8fa7cc75efa99"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/catch-layout-01/log.txt": {
+   "before": "eabfb37fd0b9bc25ab07d0676c25a14be402ed8176eaf8a7f3d444ba7a0532c8",
+   "after": "39235542e95a85a9e3d2b28afec3008729eddac37221762dd506a36d7a45893e"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/catch-layout-02/log.txt": {
+   "before": "d0af01e045193101e5d22419b2396946e1023eab0b4c573085691f0f4b64d24e",
+   "after": "8c83be5c844ee1a2e65e45c413de05b601a5c46534b2bca6c4567acb21899efb"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/catch-layout-03/build.log": {
+   "before": "076b18edbe466476b3dcef086dd8786cd5b79935a027ed3d1f7e6e7afb9f5c92",
+   "after": "d05cffe50fce533aa2f21bd90e8563267302f37a5eda9d03a54eb564b5b80c4b"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/catch-layout-03/check-view.cjs": {
+   "before": "d6ddae64d4155dc42349893683193ff316f5bd391be732932ce9aaff4a8e3607",
+   "after": "0a9f8bdb7b09d932b07d510c44f8b86b8363e36ff9a679a1ce609b83f9ecb5c9"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/catch-layout-03/review-record.py": {
+   "before": "5c0d111d8f3aa43890304e6789a6325c7dfd46e70123a075fee3bf95c1fb18de",
+   "after": "77ec5c6782be95ba7d4420d777eb6e56e57cc937267d777928ef7f1398ba3abe"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/catch-transfer-01/check-view.cjs": {
+   "before": "c7e073403b7212d290f1903aecdc3405ebe225390828cdf8b6d0df42e1b0b74c",
+   "after": "158c8b2e50cf6051e936a0c4073c024947ca22cce2758c6f0adcc371e6d52def"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/chain-entry-01/gate-build.log": {
+   "before": "7d111583b047f5b62565b10e0865bd452f80bc505c91d69236a5b3a38d41935b",
+   "after": "47efef3659c11820d98469c93594c35e7df3d574a4dabb3bc817c90fde7654ef"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/chain-entry-01/root_approach.py": {
+   "before": "a42adae9dd0bb7e51718b4060439599120e3792173297a744431047bc220aff2",
+   "after": "6e0734ac5d3657a4cbc2db810bf1631d83e41f6a58d7ba1a4abc462b1c94e035"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/compare-view.log": {
+   "before": "791cb61251b6bfd3c36bac50b67602970b24c083bbb6d7d973b600b5b88f59ef",
+   "after": "336f3f1be07feb77c916afae1c4a88d7cd515990e407c3586e208c2a41efe65a"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/counted-reset-01/mission.py": {
+   "before": "7577eac5115895cefd9994d1c370769725c6913d1ec23de9e0ade196347f08e4",
+   "after": "7f19faef4f27c0f09da88b637f72f7a8c10ba2102a7908b8f8bb177dedc602f4"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/counted-reset-01/shot.py": {
+   "before": "0a4895245ee7ae1e3da840d411b072e460c7ac1f113fc129e26920e8dd5ffc05",
+   "after": "ce49293dbe4c7c9972186346ac05b95719cfec4e818bda291becfa887bfed8a4"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/collection_window.py": {
+   "before": "ea981479e61a2d35c58a84ee71aa231ebc2366018fc7058ea55b1aa8696a6cb7",
+   "after": "bc425e85544c692822950274a5d434b42908b0507ed8b665f150cd4d799b27e4"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/counter_clear.py": {
+   "before": "172f3756ae76b3ef21b4d92a756944e0b72d30b9f5d96a795f87d3be34b4e9f0",
+   "after": "d6db1c72cf039903935a499ef7f4d877eb5407f641217b524ce4cec418e20bc8"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/mission.py": {
+   "before": "a89b642b45e3dd5bfca5e36b17d0c990ef5a74494cd3a066a2da4797994549c2",
+   "after": "58b9b2d57bdbc99b7446ee14eb78e3cf43b7abafb93036d05dfcee2db054d79f"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/shot.py": {
+   "before": "0a4895245ee7ae1e3da840d411b072e460c7ac1f113fc129e26920e8dd5ffc05",
+   "after": "ce49293dbe4c7c9972186346ac05b95719cfec4e818bda291becfa887bfed8a4"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/terminal_contacts.py": {
+   "before": "74833ac2ec41fd90f337e5de7ed8cf073dbec06fa017b4c5ed860605364bf87d",
+   "after": "93be6a9c121a751f114bf2aa05e0a684c964b05a49c199bf9f31f90bfcb17d35"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/verify-replays.cjs": {
+   "before": "d7dd601112def53d37b2f3dfd52b643d8bfce6c1de36b5e8e02c5f48445cece7",
+   "after": "d802f5d118ca0eb766bb34f3c387c998ed511a898c9d84c95fa47af619b164e2"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/counter-drive-01/counter.py": {
+   "before": "e8bfcc15a5ed6c4379edb5f75cef33b305394af05630ecf695fdedf306b4f09e",
+   "after": "9a806fbaee38060303e281fe0fa4a7db613f031f78b0efed689644cbb6e050a2"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/counter-drive-01/fired.py": {
+   "before": "a610715c9ae64450d8ef06a66ba79cd0ab3ff69ead7f20a101c48c2531134ffe",
+   "after": "a672f5eacdacd7b1dc605b9c25cfcd3d265f37090a8a739fc218461b3fd6e767"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/counter-drive-01/repeatability.py": {
+   "before": "51f837e335d69dea6602def339e8df7df8f5aa9481014a09b9dd555b7f63cfdc",
+   "after": "51dc8f8bd4d322eb285b6d622e8526081b6bee45aa632c9f3425cd4f2aff172b"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/counter-drive-01/verify-view.cjs": {
+   "before": "160734b2b5a5d03a102b8ee0c296137e43ce8a344e5483d94c4fb08bdec11738",
+   "after": "8c7be6d5fd42fc2a9759f63d5956bcd171fa2b3b516053e1492959ee56e0e56e"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/elevated-station-01/shot.py": {
+   "before": "2cb84d717b823a4ed823275b7c298b34a1f94559e6280d4fb6144dc56a51d570",
+   "after": "d85db4f65f162c5b5c049278ba05e6bd9d8c6edd9f9d38105f28f2e49ad400ed"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/elevated-station-01/wheel-section.py": {
+   "before": "9e919b86c085800c6f688fdb923799f76f7a3cc99c6c9862d37da7657f325350",
+   "after": "c5f6d545ce3c5712c45092c188fa2b2b7a643141edc88ca5936aadaad53b3372"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/endgame-route-01/access.py": {
+   "before": "d4cd9c937f3c82f3f3694d2fe5a6953a829085b6cff0141cf982663517e20bd6",
+   "after": "4b7e141392dd841762ca383e09b0889f4623fea3644f7c87d485a709e8bb86fd"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/endgame-route-01/check-view.cjs": {
+   "before": "42cd895d8f607610c859a192935fe47626d2799f86af788747c4b9b2ab61805f",
+   "after": "4274b45f47c0388d5cee4c666e83a98e605d70ff0c6626c8169ae16fc1c9958e"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/endgame-route-01/motor-fit.log": {
+   "before": "d65bd82deaef44299075f629bfde7fa21587f2c948cc105e6abf40e4a98c8288",
+   "after": "4185f04d67b7f5fd442a07af5c2c52954d5a7581295c48205c10efe0862535cc"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/follower-01/build-log.txt": {
+   "before": "2ccbdc0f5c813cd4db73d08d980401f9207d0cfc74f04d6b10f361f641822695",
+   "after": "f161e9cd90ccb78b8afa9b4a3a1644a43ee9737a24ba1d9ee4e6ece040c375b1"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/follower-01/check-view.cjs": {
+   "before": "8c1833ff32fbafd327de62f0eeea96066533f2524f12c3821171e3e841c43fb8",
+   "after": "de133a71260453438c73ebede04eef27cc89e234280ac391d4d8dc56aa19d8ad"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/forward-drive-01/fit.log": {
+   "before": "2f094fe565d1ed968b7cb22f8b5fdbb1bd23407d8e5630621984f32c6dc78681",
+   "after": "021c9b243d3927267f0aab66b01d08be806bb83b06818f9c8a30dc5046d876a4"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/forward-drive-02/fit.log": {
+   "before": "d630499b1a4952089a5c4e36a8b56511fc37a34842372e01e742ee9f5338155a",
+   "after": "d07373312700cbc040a967df9d9d458ef5efd73860952e3bc58f1141ce0b8e9f"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/frame-pocket-01/build.log": {
+   "before": "9ef02ecfc002ceae45f915603c8818ededaea38812f3c9aa94c58128f2402ab5",
+   "after": "d6b08828a3d6e204445455fc72dfb26b1acd60898efba3a573d510508efaeaea"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/frame-pocket-01/perimeter.log": {
+   "before": "612fd6d0366c68c71648ff14342194797575d2373a30c7da131583038b3a40c0",
+   "after": "1de1ff492c19ec3e789f9492358e520fccd20ab959de91dfa0b9e9d2167d26b7"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/guided-hoist-01/aligned.log": {
+   "before": "a1cb34b2d337430e49959812510812c99383bb16efa32eae35b087c43e9995f6",
+   "after": "6f1af5e143a23742100a9fcc17f2d4d50c46dddd3d3ea32849fd967593ac97fa"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/guided-hoist-01/dormant.py": {
+   "before": "b5db125b3cc4e8db214509a57503a82e4e5628d9acdafc9fda1ae40247a0b767",
+   "after": "472503937ca8f8e3404451ce9dbb8c632f43496bd0384775806c156d051a357a"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/guided-hoist-01/exchange.log": {
+   "before": "689288c40c644efa26a625591589850a063d297a1abd9c471f2bbe2becdbb9b9",
+   "after": "d5de001eb412012b756004330afc8c38b26955490337bcc490c9fe32b13e6b27"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/guided-hoist-01/inboard.log": {
+   "before": "b886aae5a71b1fcf428d929f9a55f38e2b757c85f91ff3ec21ce1cd5b4f7dc6d",
+   "after": "2892bddb251fdd3da199646c84fb2c24fb71a6da54e988d4183b65738ab6273c"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/guided-hoist-01/routed.log": {
+   "before": "28d61d1b67c04a5235f4b9954df428a8e11348f20532604c805f24a9ac0eed8d",
+   "after": "f5c4b14ce84560fb2e390fee75e3e6a12c81ba85d52aa9ec6bbcafd45cf891ec"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/guided-hoist-01/selected.log": {
+   "before": "434c35f152909da5e4df0648a62c55eab92eb6dc1b77e4cefa4ce2d40976ff08",
+   "after": "4457988385ddfab56ed3106e0d3bb38f4c70e5733cc993a2abdcc8f6a42e5c1c"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/guided-hoist-01/splice.log": {
+   "before": "46eeb717fca99370d1b331b114dae7dc01016cf2f7e8f8915325b709a56414eb",
+   "after": "5809a4991371704a234603f569092b78bc4efc777c7c70076af59423434a2560"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/guided-hoist-01/stop-slot.log": {
+   "before": "fb96101b6332af9989d9f47f820f7b4482b67d651d6b89e5ab872aca347a9a79",
+   "after": "bdf084003ec8740f953f7e47a76bb418e07e18cae821f40249d3a3293f8f8555"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/guided-hoist-01/transmission.log": {
+   "before": "37fb5db7d4b6c0057dc0ebc0af3e7896f4756f582c567fc306ba380b24f390c1",
+   "after": "6c4187d4a7607fe450d8a67c1e8c33d68c47d6af60542cc7b25558dc7e0cb8bb"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/guided-hoist-01/truck-lock.log": {
+   "before": "1d7d4540f164c8560748a4a2e8b0d4f9315902fd58de4629cb3c9bbf05c2a0a8",
+   "after": "5f39fa12e0e4e84fedad3dfd48c1f5e77dc753bd74b33fa4c7b3d89f99f08472"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/guided-hoist-01/verify-view.cjs": {
+   "before": "e6fd79893380e6508673b95abc050e603239196bf2cfe95cd349ded199812f0e",
+   "after": "2f6a7e09ed5e3ffbcc5da4c93f0285f52ad6c13758d8c97c0f4a5866360f19a0"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/keeper-drive-01/fit.log": {
+   "before": "9c01d92a9827f7e0bd4932aca1f73d3db2d97b97a76b8188bc501a9644c789fe",
+   "after": "a65c65245e884fa62fed7608f1f63694b1b15189377ebe7674416ef8818e5aa0"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/keeper-drive-02/fit.log": {
+   "before": "5f7a490133924f8961b2807fe989c295e801027434e2d580797045f50335545d",
+   "after": "9e59bc3bf01bd7c76d4898dae39977687e401c3a362313c289a212800eb65a8a"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/lateral-station-01/harness-argument-error.log": {
+   "before": "bd22c646794e8797f71a9c46c970e7abebea6d42f1cd3a540a8830608b504dce",
+   "after": "49c5eca3a1b9c33083e47549be8a692bc3c3e9ce929df9d8f21d5181b0ab7632"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/lateral-station-01/repeatability.py": {
+   "before": "fb2d2fce2a8d0bcb240b233b744ccd11f37a9b9addd0034076a83b2278fd4651",
+   "after": "452eeae72de6d53a75ea6fec11cd711300074ec9711e2688427c43bf8662fa5c"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/lateral-station-01/shot.py": {
+   "before": "0a4895245ee7ae1e3da840d411b072e460c7ac1f113fc129e26920e8dd5ffc05",
+   "after": "ce49293dbe4c7c9972186346ac05b95719cfec4e818bda291becfa887bfed8a4"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/lateral-station-01/verify-view.cjs": {
+   "before": "f51116c872ae85b8fa1464b94bd5a42a9e67f7a93f69496ac1e4ad6b5299432c",
+   "after": "7dde6ee7bd596947cfa4ee1e4f88d96293de3f78b5579707c0472c0a39e4f53e"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/launch-window-01/wheel.py": {
+   "before": "ac678d8316d171799877983a212d247acd6f0abecdfe3cbb3d895cd79fba4533",
+   "after": "ad3908e357f40b82e972afb3e043067ab073dcbfbc98758f72d0281fa92070b2"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/layout.py": {
+   "before": "4bfd3ab077b02a87487a323387df96959b6aedb24284f73936c4d4b2c807be1b",
+   "after": "bfcc08ba1fd90f1e425306f7890e8265cff7aba3aa3f557fc87b116b31d71494"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/loaded-actuation-01/motor-fit-bounded.json": {
+   "before": "1bb193ba7d4758bd4a22c68add538bca2c697f64e41590ce3132ceff692cbfee",
+   "after": "2ccabe387f377818a15b9d0f39bf91883d896413b1e43f383f6ea9aa71ae319f"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/loaded-actuation-01/motor_source.py": {
+   "before": "add7af490f0bac2f5aaf5adf5a8efcef71aac3b1769ef8f22e8f647ccc8d472c",
+   "after": "37fb1bc3eacc5da183e5f00b17a2660e7ca4e035f5c96730e48069de031201ad"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/loaded-actuation-01/purchased_power.py": {
+   "before": "3879e02240276cf78f530bce28990cfb9b0d0e9e7559f3ef38d0f2add5bb5e70",
+   "after": "cd247fa420214661eb7e01e03fea2c926789d4cde1b9cd6a76c5aee2809d1632"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/loaded-actuation-01/screw-wiki-search.json": {
+   "before": "b21b42678b43224684647282d3fbab56d9835ba9d47a905f8df2509d4c8dfcfc",
+   "after": "4ee2babea832bc4fd537c3ef5e21a253d38b24f0f3c7a4dcb2ce7f652e6c68b8"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/mission-physics/check-view.cjs": {
+   "before": "3eccce71cd3220f5703882e9f9dd5bf38e5538c9aa8ed59dfeb8ddf72df56b18",
+   "after": "27eaf611798d14a7d4f6cbc7b285ca8d3725067a4d7094b016759a71e20a274b"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/mission-physics/fixtures.py": {
+   "before": "5c149ab8e061e95c3e6fae3fc0b3d04a274c1daee3f87f93b775a3d667bb3df9",
+   "after": "917150ec8ecf5a7606342f7829de8d521551d77ae32e33d5770a019131ad57c3"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/mission-physics/shot.py": {
+   "before": "e01fd46cb134358d33197c655bf8fb6a041df6cd3db808b61a87f046cd6de16e",
+   "after": "9482dd0585870166ab25134417bd21024b3206723505ba0680dd1dd35c14683b"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/mission-physics/simplifier.log": {
+   "before": "d8ea452380e481ea71820d8ab3767958d1d0cc8733d90b02dc15a2ffbed2321c",
+   "after": "a150c29ff1fb33cfbf277c8c550fb727409f8361cffa9d77a9a7442d463caf98"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/mission-physics/stock.log": {
+   "before": "8487e6bd84a014c8870e1235b837be72b1f768a6c6c8f433823bb7413e79064d",
+   "after": "a9bef0a6e0227221f18fc6c4f6799312e79d40c777fd7aafcc6877fe2ab43c5f"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/cartridge.log": {
+   "before": "0bbacebbd32915375430eba34467978fc2e7845fdedcacb42a394506dbc9c4a7",
+   "after": "e20df5fc0917de72b4e59d4907530dd5f57cc6aa5bea8d911f0e17c2c8b6c88f"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/cartridge.py": {
+   "before": "216177e7a51d160b933488e31e766b1f5bd87da4dcf215f3c5407851bd84e037",
+   "after": "db8974ba18373433b8931deb48117195e4a7286dd01cc3f053e3c839f6b27caf"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/drive-service.log": {
+   "before": "8f2799b73b84ad78f762308b664ff71f0b368bc69103b8ea63c294b0bc8b8e47",
+   "after": "b307b09e015ae674ee5d46c06ef4b91c94cdfe95811c733c233b18fad7fb7a93"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/verify-view.cjs": {
+   "before": "ba6716431626510d48c3eaaa9ff26d6e0c1338a25da041d156267b374681c009",
+   "after": "b5135a80d4f6c4dd2ba13d9bfc6ea1a77acf86aa4b7b8f604a1ecbd9a1864444"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/park-inputs.json": {
+   "before": "8004fcf7125a5f43e8d2449ea27152cc9a0d6c8ed8ccb6fd9838b9a7ade087d8",
+   "after": "2a9fa876b46aa9e74994feb4e04b7f10a172279377e2e90e75184da94c009cc2"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/park_inputs.mjs": {
+   "before": "26ae578b69af80b7eeaf0c43b3811b007802f959e299f02ef83a931bed762d6a",
+   "after": "ab873b8b053d453503f44ebff2a76fdaded1291cafa80ce10f28813614562a89"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/pickup-lip/geometry.log": {
+   "before": "71cb4b0155e63e11cee1083f07202ea024ffbcfcf2fb76f80726827349e780af",
+   "after": "fdc839b8b6e3209fff3fe5b35e4f883af4014784df8ed6b5d0c4f8da85b7b7b7"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/pickup-lip/live-check.cjs": {
+   "before": "c6dca97ab41cce1e75cd83c72e8dbcd9e968df1acdbce28bf05bc15313b4a198",
+   "after": "062cfb5cdd26a69f42208fd3dc014c9c3f9724c46afced37e7c389169e691577"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/present.py": {
+   "before": "ba8c78fab6e8e7a303635e580ad562bf7fd34fbd293fe87aeba1339e94f973c8",
+   "after": "9a791b770c166d41f136d632ce05e5920ba9d9d16be6349dcaf77aa8df6c1858"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/publish_revision.py": {
+   "before": "e09337caca34992a7310b473791f02d2772b7bb3caf33446d3a1679247970be9",
+   "after": "d40fc132d392ad1b75f5cd548579de634ac0615a829fe0e684342f594686a8b0"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/removable-slide-01/cartridge.log": {
+   "before": "b16cd53401425bf3dc31c2c9e76ce730b0c0d8c05ee885d0dea23b894a2491c9",
+   "after": "9871820cfd55a8f1440bd2c00adf107a4b7c7fbfa74617b4e0659ff090121a72"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/removable-slide-01/cartridge.py": {
+   "before": "7147e9c336ba064bf03c6bc334b1033f200d6ca0d284917170330134eede13c5",
+   "after": "15d0aea9dee6d8f1ac3ac5aed67dc03b3031076733a2a368274a53121d0c16b9"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/removable-slide-01/corrected.log": {
+   "before": "82b70909b3a31b0f1113041c3428cd313f6e033f34e1b006c80283c73799b9d0",
+   "after": "2364e2bf822635832b47522d242573e6cb4457fb96e0d97b1e6abd97a7658e1b"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/removable-slide-01/drive-service.log": {
+   "before": "ff68eebdf60073b31d1fb67123f2d1226a7a429357c1dbccdb26078dc9864e34",
+   "after": "52aeb0659e4927ec9e7e60d1860cf21ee753e01eb2b4713feb5affcd79657ac9"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/robot-clock-01/mission.py": {
+   "before": "775f805cfc02a21813291377b17f9fc5ee926f4650b64e1095b52e03255143f0",
+   "after": "1bc5e195dc3377277696be7d1a5a86819bcbbec72b496267b4c0386a58838e6b"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/robot-clock-01/shot.py": {
+   "before": "0a4895245ee7ae1e3da840d411b072e460c7ac1f113fc129e26920e8dd5ffc05",
+   "after": "ce49293dbe4c7c9972186346ac05b95719cfec4e818bda291becfa887bfed8a4"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/seat-interlock-01/primary.log": {
+   "before": "716d77938a084208774fe3c28239c249178de1ab219870c7ee316d089bf2a927",
+   "after": "0c5d16a5bb57b3bd14b1ed52241f5eb163333ee7dec86bcccfdd2b458a45bc5c"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/seat-interlock-01/viewer.py": {
+   "before": "f998c860ecdadd9665b5fbec95ddeb27a1537e8a01f8595e145bd0419a07bacf",
+   "after": "3542fc2c4952187c7990d2a96e9e2a5429f02cf81a6a7a339d72939bc443296a"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/shared-counter-03/export_pages.py": {
+   "before": "5fb37ebbe790e9c222724c2abdb293a155e93cf75db37d5ee6ddcc9780783ab5",
+   "after": "e2aee9b888680e042b924bfaa1affd3edd47160a2ac615c0038f4ad57780aa87"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/shared-counter-03/pair-independent.log": {
+   "before": "930868248abca2d56373d344fe54ef0ba16e94892a5348e846fd44c285159cbb",
+   "after": "1970166d2986794bfe81471c9940f2861b57386ec91fbdb5eb0f19ef79aeaf54"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/shared-counter-03/paired_field.py": {
+   "before": "d0b3cc388f8bd329fd240dab5e654a73e037934f85805c3abe14660f8224bb29",
+   "after": "4141d7288847cd4281d840bbbb392494f217899516398003048b36f121d3f161"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/shared-counter-03/six_field.py": {
+   "before": "83b6f3c33547756db625222520aa5ad02bef4bd0ab0b2025df485354d9009f34",
+   "after": "740827c371c0e455dd182fd3635b3ded0d4572a40a8aff9b244bf9a04eeabf0b"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/shared-counter-03/test_pages.cjs": {
+   "before": "7d0b34a54ffa1c4c5c0a16b58f17404d3ab6ddf0a661a96b03a9bd9400741a0a",
+   "after": "dfb4a94b4b30949181491be2f25d434a7e2f3b74a1bb6747bf138fecc08daa5c"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/shooter-command-696/mission.py": {
+   "before": "bbd26424543a6a557e7f7e8a87394ffcf4942809d82eba9423a3ff43cd04b8a2",
+   "after": "5dfc8043be7a4d3094cac31a5420f3a83981561564a77f8788ca977e6f2aea36"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/shooter-command-696/shot.py": {
+   "before": "1fefae2bc8d3fd8300b8cb75a1b2d3fcb503f98f31ed10e6f2b6db8bfc6653af",
+   "after": "4bf9059932d7af9d14e59274c2f3e337c50fdcc717ab4a9a888b6f6a5cea46f9"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/six-piece-01/check-park.cjs": {
+   "before": "9dc88d37752ddc0005daf2c81a5c51e808e57baefbdcc7fed8af670370a5468f",
+   "after": "6b787c103fa925c7ddb0719b4d27200ad1e8a829bac7690e756048d6fc942fb2"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/six-piece-01/check-view.cjs": {
+   "before": "11af85c641c4fc261866bd25aedee170f11b7b47cb14dff427ca69faaada22a9",
+   "after": "fed95b75603c190e888f8d6e8cebd116b1166f8b76f9542c2168712681e2e018"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/six-piece-01/loaded.py": {
+   "before": "51da6710398952e7f65764f0c7af9edbf77f37d122aad133ee60235c9e20d938",
+   "after": "5c31934f3f598dfd36a6583480c0764aa16e235e9af7a30ac30a77b036695652"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/six-piece-01/route.py": {
+   "before": "b9318754e3d660131e3c06a6af0a8e0942f7c672849a104b72baa7fb4debf230",
+   "after": "1feeb906d88d4df4d10d295f4811114d43fdb43405a3d2754b9d103736e8cf44"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/six-piece-02/campaign.py": {
+   "before": "b18d26c7a702d7ea2addc22e73fadf4b18c1a62bed2a003ae09b1a58833554eb",
+   "after": "80647bae88d4da8fd967a8290589f861b7edd7a16b33eea1b797ab0a5a884f8e"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/six-piece-02/campaign_view.py": {
+   "before": "47955190c81531a67360b74d81b0504cef9ae0a4b2788f81e20bd3192ba3da5e",
+   "after": "6dd86defd70297f0b7c5e5e699e5d201358ce8c3269de400e06c85fd027f788e"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/six-piece-02/check-attempt.cjs": {
+   "before": "3dbc375475ca86e0ec0e978d678b1cbf22aaa9101d2718a6d0bf2df10a9f3e73",
+   "after": "6f450fb136a0508a703fbff2eb3e925d63530c6952865bc53394f549c1e84437"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/six-piece-02/check-view.cjs": {
+   "before": "8dfefd2371f6068ccefa49ca4b663174485867e2faa2b0d8961f4d0267c0e352",
+   "after": "dec012dbcfef59f09a955d1a956ce4b3763c9b097a97ab5241bb826c93a6bda8"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/six-piece-02/loaded.py": {
+   "before": "51da6710398952e7f65764f0c7af9edbf77f37d122aad133ee60235c9e20d938",
+   "after": "5c31934f3f598dfd36a6583480c0764aa16e235e9af7a30ac30a77b036695652"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/six-piece-02/power_route.py": {
+   "before": "282449f405093151ef8fe6b6d65a5f2182974261192c6aaabb506d2e744b9bc0",
+   "after": "fbdd5b223bf95553e7726cbec8a73ad3aa7fabb38cab5aefbe6701a5fa114a0c"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/six-piece-02/route.py": {
+   "before": "8348267cea6971105550fd7be7a1768810ca7dd5a4d2cd800484f246ab390c9e",
+   "after": "cd3462f5601cdaad9ad5e6a33cf01b2e6ab9f92d5df1d8bd81406a5697cc0981"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/split-cycle-01/check.cjs": {
+   "before": "88b4b5bc9c217187af1642f6d56232823b9a2f760f338260e9c45066d8f9236e",
+   "after": "b19fa79f35b6f6ff9ec0c5db29014acdd7e5261a23ce710ad7798017ea0dc941"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/split-cycle-01/fit.log": {
+   "before": "ef0a04398d2119f07b35fcb257b64fb67376ec187a257da21504d860e4e5f4ad",
+   "after": "03ad5142579bdda97bf870b8af52f05a35bd5ab86af62cc05e77b3739afcbaa8"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/split-field-02/run.py": {
+   "before": "9cac8a87748f3adf591c142734cd589371bacdaced7406e31b802799d20edaa9",
+   "after": "6be90b524b4059975b43212be7ee11cc7e4804806f20d9b3a7614c24d0990ad2"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/start_guided_cad.py": {
+   "before": "cdb9f34cfd9744c369e1da93ac371db52ff923bb72a4b77cbb1bb7adbef7bc1f",
+   "after": "531127a5423c3ee0f4536d6216745e2bcfc7e98f5ec23c02afd81531ef2e8c1c"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/swap-blade/build.log": {
+   "before": "d812a26f5cc6e88558d78fce490fd11da9a6bb5f8ed38364fc3b3c0d92373cd0",
+   "after": "7943d5bafd18d79ad09ae884cff0d4275e755e3a4206d105d1d8a2509ab1bd87"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/tread-underlay-01/check-view.cjs": {
+   "before": "68a8d77dd57414666687e1ff5171310bdb033b43c4d442c3054355cacbd10a5b",
+   "after": "98bfcf6f30e0896dd61d034b23f517c16be35ae4f6435cad7e26a8e2d532ebe2"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/tread-underlay-01/fit.log": {
+   "before": "415675a2c9b617a752027d2044b35b9f2932aefcbb4a83bf22e81f85b6a90ef7",
+   "after": "8950a4a46f6f82603dbc0f6d5adc37c88ae1dbc09a63e2b34772ae4074f1acd2"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/tread-underlay-01/scene.py": {
+   "before": "f4cfa841274fd7b9411161d7e6c78a8c58a98e4387b17159e0deac5597f0e6d6",
+   "after": "21f8564a88b227f6bb094e716972713b65bfdecc5d3a0bc3be744864f79de186"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/verify-comparison.cjs": {
+   "before": "f43a30f90f55bcf1476c990ade6b401dcc46f9338ba783024d2a5e6f12a16b37",
+   "after": "f918d227fc26b7e2fb144aee1197919783108695e93f0e6a74ed2299b407d442"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/verify-view.cjs": {
+   "before": "cf0546aefaaaa3e1af909666a85c55eedfda03ddbeadaac52df560e3613360f9",
+   "after": "1adbc596a388e158adde7d903044ad75ca1b4490db7c99336b91a2642447d132"
+  },
+  "2024/preliminary-review-lan/greenfield-retained/verify.log": {
+   "before": "dfb82d59a35aa06ec1f6cf79c705775e111b28fc687595f47c7ceefd333b0c17",
+   "after": "bbcf349a64388607ade6fac661d9a405375100b331a401de310b02edabba0cee"
+  },
+  "2024/preliminary-review-lan/greenfield-slide/browser-verify.cjs": {
+   "before": "796d8b99f3e79aa9b584369b984fc004c1b416d4c5ce5e8684291edf5ab474cb",
+   "after": "691d7ca491b513d1257bb0c2ca1ec895afe28c8acb1180d1c0e6520485888b85"
+  },
+  "2024/preliminary-review-lan/greenfield-slide/layout.py": {
+   "before": "74a1b8fc741f474e0206d43659d39d8bb2a16c802eea020ec79f7f420c202283",
+   "after": "d1bbe0e5e3d0c20c7d7afe9c3ebe47e3bcbc2af90ff13ab590a0d0182c6fdc58"
+  },
+  "2024/preliminary-review-lan/greenfield-slide/present.py": {
+   "before": "ba8c78fab6e8e7a303635e580ad562bf7fd34fbd293fe87aeba1339e94f973c8",
+   "after": "9a791b770c166d41f136d632ce05e5920ba9d9d16be6349dcaf77aa8df6c1858"
+  },
+  "2024/preliminary-review-lan/greenfield-slide/review_intent.py": {
+   "before": "eea64b5d5389bee814d37b23982b70da1addc046593f844755a3018159b3d2cf",
+   "after": "5ad5483e3758f3ddf9c3c41a2ad7979c6f31b4a40771c47941ed9be7dfda7033"
+  },
+  "2024/preliminary-review-lan/greenfield/layout.py": {
+   "before": "31a4c1ae5481f09cc1b4de1c6e00371262f5cd9ac7cfa21716d648169dffdbeb",
+   "after": "1d102017955da6786f9c5926201b344e2f6853cdce066a9ca7c5047a600cb8e2"
+  },
+  "2024/preliminary-review-lan/greenfield/present.log": {
+   "before": "5e36003bd7e8ea29e0e06050dda08dd4b70bf967bfe74ebdabdb2fd5fae674a2",
+   "after": "938f51d02e5263f30ababe146b2819e298c9482a45be53253d6324d4fbb2d727"
+  },
+  "2024/preliminary-review-lan/greenfield/present.py": {
+   "before": "8531614eeb1ef34b55d57450fbffa1e9411cf38f9d79b873198215748613aeb3",
+   "after": "eec5edcad4a68584dc80ff52fd721a2d239272c213eec48fa164f313f87d1e26"
+  },
+  "2024/preliminary-review-lan/pick-test.cjs": {
+   "before": "bee82043eaa3b4eaef4369208261d0251e84b10a93274fae6632050d00a71ba7",
+   "after": "8d9f59330fe1f740b9b820694a2a609619f9af39c63460d67bb2a04a0e663935"
+  },
+  "2024/preliminary-review-lan/verify.cjs": {
+   "before": "97b351e7caa92a920fa798da214a256c9b538141baceda8540220ebdebf3be97",
+   "after": "44580423ed517f82ab9664abd152f0299256b7c7c682ba98dc37448a36569d73"
+  },
+  "2024/six-speaker-20261118/audit-named-draft.py": {
+   "before": "ef8f67baacf683d6608236eee654cbb1c2b5fb51053fa5f4dc26391be860d2bc",
+   "after": "5059d3da827849a8da63f490b3166d85501c1c5faff646a6a1992d7f3e860ea3"
+  },
+  "2024/six-speaker-20261118/centerline-final-combined-unittest.log": {
+   "before": "32c66ba72d688f9c2b9b8a94ad517a375b2009ff8021749afd7ca12124502254",
+   "after": "56a5a1c0a4ad1ef357a9def86810aed79093a8d55f8fa690e818f0c2267a2b1b"
+  },
+  "2024/six-speaker-20261118/centerline-goal-combined-unittest.log": {
+   "before": "b0f5e6330320e2c6e913f3c563181d58f7159f21972b743cf7769af593fd6a78",
+   "after": "9e5575a714f20de635b73d692446d96078f15ac9773678cf270a32131b3fb121"
+  },
+  "2024/six-speaker-20261118/fusion-bound-handoff-100-0.py": {
+   "before": "77b62ca2ae72740e790639897153d181a83b3fa254156798103c8cc325db98bd",
+   "after": "bd76d33c3bac472ffd3ce6578efdffb45363b574ff688c2b24549195f3d614fd"
+  },
+  "2024/six-speaker-20261118/fusion-check-belt-envelope.py": {
+   "before": "b9f18d2476f157e2e2fa669f4aa7bd3e3e63d1779bcc3767472f621a0ba17955",
+   "after": "442591ae57d8b486c3b66ec6b45f72daf02425902b607f165345bb4e344d216e"
+  },
+  "2024/six-speaker-20261118/fusion-checked-feed-1-0.py": {
+   "before": "a804852f83d0630b3e15040b197874896eb108d7c19ee76971d7f92e18e05ef7",
+   "after": "a0c06e87dbe3a887e143a174fbb4a7d107f8fbc3b488e3c0f33bbcf83b17ce7b"
+  },
+  "2024/six-speaker-20261118/fusion-checked-feed-1-180.py": {
+   "before": "5435a6104a280401ac72322f5a06844fc65b9cc143e5f4c420957e5ed4cf1da6",
+   "after": "6b439fa20d0c312ac344d9d5405a613e14cd81987743b2fd458dd7c87e083dd0"
+  },
+  "2024/six-speaker-20261118/fusion-checked-feed-1-360.py": {
+   "before": "7b976211df980168fb307faa46e8ec4ee66732803beab7d41d0e4ff0b27d8e36",
+   "after": "0e5e2c0ea8ec5140aeea63329eefdcff91129bef23075b8eb30feaa1c0c658e8"
+  },
+  "2024/six-speaker-20261118/fusion-checked-feed-100-0.py": {
+   "before": "97595fb5534acaff2630e8dbf6de496fe74849b1ff57882c30c0ffe46967b17f",
+   "after": "3a69cbce4c7c25c187115a6007e57d34d06069e2277a34b952e4cc9e33232168"
+  },
+  "2024/six-speaker-20261118/fusion-checked-feed-20-0.py": {
+   "before": "dade84f2544cf06b1f06a347b9f51945c4a7c4172ca1bba3ae3e97d2ed83c88b",
+   "after": "eec97cca850ed4bc5c71d187b5502c05fbf88f417569acc51bf76c8b8df99256"
+  },
+  "2024/six-speaker-20261118/fusion-checked-feed-4-0.py": {
+   "before": "8a9c72ec9f83ac23d726e29fac9bbee2ce750d3c790284571da968ddd1ecd900",
+   "after": "27ab7dcbb84516fe9e7a0f6e39aeded2920de844d4cd4d7f7bad62c939b52b6f"
+  },
+  "2024/six-speaker-20261118/fusion-checked-feed-4-180.py": {
+   "before": "9c60b5f3ce85c08fcbbd8a52ca31beca231b1a4df5e2535fe231020ac1f410c5",
+   "after": "96bd31c0f8b973977f2af35e35e308436ac74d4038c6da1c66cee4b9a59fb953"
+  },
+  "2024/six-speaker-20261118/fusion-coupled-fine-point.py": {
+   "before": "87bff4ca4b5c16dcbb99fe53d858215aa88f2c6e5df180d34082368c7fdcf66f",
+   "after": "dc88c6840115638e2fdb2bb78e2900c5eee1c68ada77c451246569c1ad74312b"
+  },
+  "2024/six-speaker-20261118/fusion-coupled-pilot-point.py": {
+   "before": "e31dc4c252ea75de9ad320433a2fe144094b4d5db67851860bb3c199808ac32c",
+   "after": "34fcc5f284197466feb00d25a8c50834f91de0c649e76a2085387256e630b75d"
+  },
+  "2024/six-speaker-20261118/fusion-dynamic-feed-100-0.py": {
+   "before": "58b25b1ac7f043d2b0880cd2dc9469e79e72ee36c5c4be2569fab38c5769b433",
+   "after": "4f6a5728aca452fb216a0a7f614c47a304b0a50495c79e0925209f8c1719a7a4"
+  },
+  "2024/six-speaker-20261118/fusion-dynamic-source-checked.py": {
+   "before": "7bd9bbc4d1ef09197582b2193bbad4b0010e1d318948503302966e227b342060",
+   "after": "411263ea5af1588906c7874928eae8f9f42ba14618d4fd9728a13ce7c2e1d3b6"
+  },
+  "2024/six-speaker-20261118/fusion-exact-feed-0.py": {
+   "before": "2359d10cf400f52293d0bd4152a554699ef17234993138480b4634d3855207a4",
+   "after": "fdecc0c37d14f62298f8c584010175cde8fc3e3885f3301950b6cc14ce12c50a"
+  },
+  "2024/six-speaker-20261118/fusion-exact-feed-150.py": {
+   "before": "61c2ecdf12dac1a1c9cc805d72e504c9036768ceb07bb7ab4cc9be2d529d5de1",
+   "after": "1f89591ac9a164e9c3f1e7bc38b295c623be2b416fe1291621585932619fbbca"
+  },
+  "2024/six-speaker-20261118/fusion-local-feed-16-0.py": {
+   "before": "51fe6e80dc4ccae2e7445ea78adc56752b4a7d9b3ce3fb1da3ddafbb6e27bfff",
+   "after": "bafc099ec37e2a459204583fa9246562a3e7ecfc84966c9f0fa3b2caef9a966d"
+  },
+  "2024/six-speaker-20261118/fusion-local-feed-16-220.py": {
+   "before": "1c000f466dcb6de94a4c3940f472e75e1922680e58a1f528cde14db74b4dcca8",
+   "after": "79d29ab917610ec93c9462bda8281aaf21ce8cdc4c2f1e38888f649972e7985d"
+  },
+  "2024/six-speaker-20261118/fusion-local-feed-16-440.py": {
+   "before": "953a7a5ee5e79c58e6318c289318f90634fd19f122828e861dfef757fd1338fb",
+   "after": "8a7357a8e1bdd9b44fd5c74dd5547ada850569bfd0ca0239ea507d9e2c8250fb"
+  },
+  "2024/six-speaker-20261118/fusion-local-feed-4-0.py": {
+   "before": "9500a6e0c23aff6e4e9fb0f2d0fe26e31d5263360f5d6aebc584aaabc115cf5e",
+   "after": "b38764051f7f47f147b0aee11538f22c5b3280ede4ba64e10c19cf379fc42a77"
+  },
+  "2024/six-speaker-20261118/fusion-local-feed-4-220.py": {
+   "before": "b7ba9f015fe645e43d8f4a09373fcbadc0e3c1415a6b8e579f0cc74d7c531018",
+   "after": "fdbce594f901716ec4beefe219ae3886e7b49402879a58bfefacbac709ff29b4"
+  },
+  "2024/six-speaker-20261118/fusion-native-balanced-outer-delivery-120-0.py": {
+   "before": "81492d9c9e405d10fe3e3c7fe12f66f258cc6ef4da58d3deeddc229ae653f605",
+   "after": "ef0643f42aed9514f0073c48f196c6908b56465ab19ebcebf41c7fa11554b902"
+  },
+  "2024/six-speaker-20261118/fusion-native-balanced-outer-delivery-120-120.py": {
+   "before": "66b5de6e7aa26e98cb5392802585835e1aeee75f798475554aaf932a3216d24a",
+   "after": "5093d9bd15654d1fcb4de8bb0bbb5845b65cb7e905f9cebef3f73789ef8364ea"
+  },
+  "2024/six-speaker-20261118/fusion-native-balanced-outer-delivery-120-60.py": {
+   "before": "60799b05d0ede511e5020aaccf08f5311c7f93e691d53c38e69674137bbe96d6",
+   "after": "5f77559585bf25528f98d979b2da4efc8084f4540f8f432793f1280092ade217"
+  },
+  "2024/six-speaker-20261118/fusion-native-balanced-outer-delivery-24-0.py": {
+   "before": "d572c1fa343cc4506588aa76b543af64f83280255ddf329be18dfb5128533163",
+   "after": "12049dd63ddb9a3a7af0ee4d759efc798323a8592b365098b6e84b79e394d292"
+  },
+  "2024/six-speaker-20261118/fusion-native-balanced-outer-delivery-24-60.py": {
+   "before": "d8478d6f265fa37d90bbfa65df7b5d5c523326ce4c0d01e556e8b60f0468e53d",
+   "after": "2e6bb4aaaf2785d7173ac4080083173819f1323b4cf633e1f0cbc86425328f45"
+  },
+  "2024/six-speaker-20261118/fusion-native-balanced-outer-pickup-120-0.py": {
+   "before": "7240708f6843dfb82f28f811e4b32bb13b916f455acb6e69c77df264ce992a2b",
+   "after": "1d21943e11aec2d2cc457a6804e907d64dd8d086bc2da9798dcfed8c4e0f9672"
+  },
+  "2024/six-speaker-20261118/fusion-native-balanced-outer-pickup-120-60.py": {
+   "before": "d4dc96c72aaec35fb1348d3bcf33a87a0de8baf03a5f95634eb837b3f57e354f",
+   "after": "8cfc2d7e48d5f8b2ff44d4c94fbf78f4075885cb87b933e790544f4949b0dded"
+  },
+  "2024/six-speaker-20261118/fusion-native-balanced-outer-pickup-24-0.py": {
+   "before": "f184ddfa0bfc3d889d5ae9a0ace25dce2eca117e5b42b6d460a934a02d667625",
+   "after": "cf3f595b2f61009c9dd4e4cce8b549e67986070d41d1e8ff810dc941c67914ce"
+  },
+  "2024/six-speaker-20261118/fusion-native-balanced-outer-pickup-4-0.py": {
+   "before": "f167b13ece7ed4c193fd34cd0bcbadac98053713e91e0c8a51aa0a44c6cb5d41",
+   "after": "6aadb2dbefb8663de71f40a95b170a20922647345bcd3881b0a793be5d2a7fc8"
+  },
+  "2024/six-speaker-20261118/fusion-native-center-high-actual-pickup-120-0.py": {
+   "before": "da8bf9f5db8cacfdc0c4f1b50ff189497c4e81c5e0288a9850ec954832297816",
+   "after": "366297de8669650c6e6aaa650b405e2542ab8c58e925295a11a6f8a3734c3f75"
+  },
+  "2024/six-speaker-20261118/fusion-native-center-high-actual-pickup-120-120.py": {
+   "before": "a9fefbf20f4fa7a48c0bba91afa9e06422f02d796adc10df33c5f2906a5288f1",
+   "after": "04d4f57305ba9ba6d5fc93026d879c19b91dda3bf698f4098e0435632afeb9aa"
+  },
+  "2024/six-speaker-20261118/fusion-native-center-high-actual-pickup-120-60.py": {
+   "before": "ab233456fa2a78277ffaf8db45712d3082f3f3cbf9aa35480fa5a64e5f290e49",
+   "after": "be89bd5667b09648fce73aa830c20e8a030785c52cf09409605cf33c6d479511"
+  },
+  "2024/six-speaker-20261118/fusion-native-center-high-actual-pickup-24-0.py": {
+   "before": "5dc67da5be30fac24d128494059559f7644413bc4bba6ebd07ae1fe861bfe2b9",
+   "after": "6837225d7cb90cd0242b45896c80fc01cf2adc37fcdb5b2b120e5b5d550eec76"
+  },
+  "2024/six-speaker-20261118/fusion-native-center-high-actual-pickup-4-0.py": {
+   "before": "4cc2e5b8218b3b1a3ed6d12815f9a291ad82f4a97a666494fcbc61a7b52132cf",
+   "after": "33b5cbd0601f66b17adfbdae91a3eddc3870e3a7bd9215033e7cd62102aab3c1"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-230-shot-1-0.py": {
+   "before": "6f81a94de27c13da9caf566b5e0aa1b14c81c0f9c134e8986a0574bd3e3e5db7",
+   "after": "754853ca13574327aed90cedb5f82f709111410d8c7df996ebeada03828455ba"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-230-shot-1-120.py": {
+   "before": "3dfa03ca3ab631f0364b8f1f62b79753978a860d66476e9a6bd898f91e6590f9",
+   "after": "f3a14e2d442040dc9e0592381572954a772392a94836f12659a7b2cc2821e4bb"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-230-shot-1-180.py": {
+   "before": "31cffb39ae408144f7339ddaf33b7c37db5413ac05d2b6c279586264f4f93cb4",
+   "after": "2ef031b30402dc49d27f0f95c511e12424649355e908b8bd369ced5c91943734"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-230-shot-1-240.py": {
+   "before": "653515d675362f76808db0eeba6dc2038a892e2bf265f5b307134bca71c5eb8c",
+   "after": "440d4b659f896eb672e8d6a4b4c826c5538d6a9f099c730daf412fdad784e528"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-230-shot-1-300.py": {
+   "before": "5ccc446c93e7b5ca681ccbb08c456a0fe6e4bbc3cb402dd18861fc249a975239",
+   "after": "4490d8d7b5d3cb9e91157833737b0c085f1481012c2aaaaf1351a122887bf56d"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-230-shot-1-360.py": {
+   "before": "8b3b173522785f83e05ef549b4ccf19a20a1cdb9cf82ed2258af2b56e6d06a7f",
+   "after": "8985d4c7e73334a0acfbadbf7405125b1f8c1c4b5170c6608c1d529c371b7da5"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-230-shot-1-60.py": {
+   "before": "06ad45907eed5093ec0f955d0743cc652b2caaa918d27b46fdfe260024e4a330",
+   "after": "fe5c60854803b76c1f3c27bc24d9bed3e2c819d7575e5eecb31b2ec3402b7a29"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-230-shot-120-0.py": {
+   "before": "2861fcec00039be7c65c93ae766ffe22715bd6bd7c2f8d81de54ad9a09769ebb",
+   "after": "3b34f6048c974ca5e259c20efb3035c4ff4b7c32e024089fa45feaa4ab45f170"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-230-shot-120-120.py": {
+   "before": "88f16df734fff3a5c3940036529bf4bc24c7095a8f6c17836911bfb597f44f1b",
+   "after": "83399dd2668bf7d96ea77748ddff0f313f819816c7b21a651d5a7078dda3f3dc"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-230-shot-120-60.py": {
+   "before": "d62fce4c1ca095fda0606523e5006f8874735602b5460ecd3a5f415b46595e7e",
+   "after": "1aac37600433fa3c5710d4ce62953084fe7df81f191fc7baee6b3e2248f40d65"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-230-shot-24-0.py": {
+   "before": "45aef5232de4ba3cdfd2c50a489e258b02dd05c692099200b9af734823bf1819",
+   "after": "45c92f79bb337ba625438564ad12e7e8164d63cfc2a1a7795c70600eb1919539"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-230-shot-4-0.py": {
+   "before": "077d26f9cf1e54d93d1ac69a19dbf9a316b2b22009046cfcd1dbcd34150cfa16",
+   "after": "d3d5cd1f81eda2ee032bbfa046c46de9ae78dcd99859d801271fc21af318e071"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-230-shot-4-120.py": {
+   "before": "ccf9637769f179971719c08530018178636a2d0a8322f18b23ccf49f3b086433",
+   "after": "ee3ca56213f176d5bb025a0b4760b7955d134066673f38740f35a5f202f64205"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-230-shot-4-180.py": {
+   "before": "16f6d187bf95e52797815502f4b0ec81886026447533d55e18909ffc4f1dea96",
+   "after": "2d5905471f6fdcb46a66cc5cb3c72b5de343df577f16ae0dc6c2c262fd55718d"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-230-shot-4-60.py": {
+   "before": "3db7fd95c6f1e72e28414397eaa307cd33c5bd06f3ccda6faef5988840eff839",
+   "after": "6cda22fc26e8fad09cb48b830437d07a30803f33e1aa2f90de45534c474cf750"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-flow-braked-delivery-120-0.py": {
+   "before": "96a03a5e90b6c30a8024ec6eeb343d510b3d9bf85b1558fcab07fadf905f8090",
+   "after": "55f2fb83e0d8ba481ec4744e23b19605799a64a8779346c28e62d8b1b927fa2d"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-flow-braked-delivery-120-120.py": {
+   "before": "1aad60c1f6022958dd720d8dc7933c512a19c20d9d24139cca9075cea7471585",
+   "after": "9318c94b8acdfe39c4d958b429f344e7674c63ad52ff044562812e4fb564b582"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-flow-braked-delivery-120-180.py": {
+   "before": "5ef915002cfd4fd145eca9ed918d492b83375e68ea025d7980bf639eef33e5fc",
+   "after": "74b062984718b50eac90ce86c5c819d262190a107e293df746cf3d6d45309fc3"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-flow-braked-delivery-120-60.py": {
+   "before": "a736a7e6d711020a54e4e69c3a6c442a873e191c72258044b6dbfe3a14c55cd9",
+   "after": "731c597fbd42794d6d7dbc4ed67c030a2248a2bac6f063f44681494bc7de33fe"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-flow-braked-delivery-24-0.py": {
+   "before": "c88a874f19e1d1170a1d871d8847a20c1e9afd5b5dc4f7cae343f9ea4491471e",
+   "after": "653ead35e5c357ab67892e61e53441e3d30a7131ea709d6df16f45c7a70cd866"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-flow-braked-delivery-24-60.py": {
+   "before": "70481b4d2fd077b2aaba4f2831d4527e46c2934ead95675794d0ebbec63e5bcb",
+   "after": "1fb06ea874caa3ec2706f72604d9c9a7f1444dab2288af33e18f38f462f00869"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-flow-braked-delivery-4-0.py": {
+   "before": "670a76a0bde2ea233f630859b9fc880159fc3f7bea2cc07ee0712884d2a951ca",
+   "after": "b6b9385780724bae8abcaa0545cf7c3aa6eebca106ed6875e509c694dae57155"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-forward-flowing-delivery-120-0.py": {
+   "before": "5d5bcbc6d316a0cd6aa0040b683c57262a579acb3e2cbbfa7d8689e171096b23",
+   "after": "024811d852cfc741bed32a2a3a7cef99c5d2dbbcd7935c015331e2f8e3c829a6"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-forward-flowing-delivery-120-120.py": {
+   "before": "9e8b2882565258de7d179a3619743b5dda342de7e2aa89092b768c5a62e7405f",
+   "after": "c9c420af224a1ad876b21f6063378c72595deb71ce635b1cc2f1c2d4a61f0c6c"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-forward-flowing-delivery-120-180.py": {
+   "before": "00224c0476c74ce899ec0080285cacce510c95693d4cccbbce92a77abe9e8829",
+   "after": "f80fe708d57bd236376a4ec1155cfe8e0babccbeb07fa3ea43d8684bb74590b5"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-forward-flowing-delivery-120-60.py": {
+   "before": "fc34969c822dd19b51cd82ca278c708bc6f3b5c8415e84256e87bef8b63f1c3a",
+   "after": "4239160d2ba1eb74ff96de20d0e19e011c8dc7085ee520ef07a9f3843e90e500"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-forward-flowing-delivery-24-0.py": {
+   "before": "b386a006a8824326d17e657bc06a1f6824ac8b2eb180f782e9d7285ef2e038c3",
+   "after": "a4468d3ca58d2a35a7196b1741d1fe4ae8cb492c7c8c186b66342bb15846ec66"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-forward-flowing-delivery-24-60.py": {
+   "before": "163c3cf36385c5d0bf42d10a5da7775b3eea0efdddd7e876a17b6a2614e60cf3",
+   "after": "d2ebe8d75b73058f2663f6ea719a3734c109a1d775918f884c5e913857527053"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-forward-flowing-delivery-4-0.py": {
+   "before": "e90d25881fc8569f2b632c4b143e3aa74bbf2b792844086692821519bb34d2ac",
+   "after": "b8243e80f7e1b3ce39585bdcb2be7adf69679efbcc61923b52775b3e61dcf97a"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-limited-120-0.py": {
+   "before": "ec648a1bc9971e52c2b75c5929b340c998937ae8da3bacc1048dfc53986dfb9a",
+   "after": "0711199673e8685cf49ba72ecb22901ecb02a71ae0c72b8de8e724a6f31ec463"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-limited-120-120.py": {
+   "before": "55fe4b076de9625adb00497effa9e521203db66e24fda30fcab1223b42422618",
+   "after": "0bf1e317358cf94d932a7ec8ebf540938543017bf65dd0efe7ab2aa52125f0a5"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-limited-120-60.py": {
+   "before": "a3580b7772625e3a259debaf8b7327dc584300ad21784f7903d64bbeb6bd361e",
+   "after": "4e104ea4a9e9d88ac0c5a7eb9d4ac09d1f8a64bf9b570d72c4ae6ca4d7fa2b8b"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-limited-24-0.py": {
+   "before": "63323ae28758f5ba846dd489ff1825ee5b05b661343c7afd6e3e42a1fb04048e",
+   "after": "4f083fd20f83100e7ac5c2b9375a1af64b7611639a19e7f07f1910e7ec293cc0"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-limited-24-60.py": {
+   "before": "4d0fde9cae8a55930dbe48c65d6bb1ffa1334a636e3de52742db025e3c2778dd",
+   "after": "e18d57486086af4b722ef4687c8264c17bab09b9df6cb0c9869218847bc30fe3"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-limited-4-0.py": {
+   "before": "97d8b1926b47981628119c75df8aa61131ac84b35fd429febc3cfb2a3431fa22",
+   "after": "d05095688d5f45f2df00b881009e202767ec8dac2e22966181ad04ba9c230e4b"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-limited-4-60.py": {
+   "before": "1e553a9de7392fc49618eb3d33a7bccf8c31a7a5d54e497b82207a0a441cc446",
+   "after": "fbea93b83d71d0744fbae0fafe9db2a7376ea9a32bc8c7089e9c3f412eaf50c1"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-oblique-1-0.py": {
+   "before": "c3bf6b0f746b71cf036959940562d6be146795c5bfd2259e22867a6719fb2361",
+   "after": "dd5acee563f2d2b25c4238042329c07e7625bfafd8c5cb68494a99958f561b1c"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-oblique-1-120.py": {
+   "before": "a308fd8bae31214be43f4ea8c8628df087e4fe01a749985ed443ad2af4a6cde8",
+   "after": "f4a63dc0997e5d04ce4ca96392fe5251100d5a8b46a1c86a091b0999fc252c6f"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-oblique-1-180.py": {
+   "before": "ad95b930a1400df08a2746519555719094fc61205aaa50bdb84f4c66f0013a25",
+   "after": "d385e90dee5f22ea2a6defe95af700b56209e73558c2c5a874bd118163c2df78"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-oblique-1-240.py": {
+   "before": "f7d99e80349dc3061e452dce271badb56cda281cb4ed92526272da5a20a74b80",
+   "after": "79402ea6ebd182232cd41748ba4b02e21685d030e7a2b78f399197f181687f59"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-oblique-1-60.py": {
+   "before": "b536c3e66b35fba57236e373aeaffcc11129efed7aa093c7d8c9a88fc1f5dfb3",
+   "after": "50c5c0cbf1b1609f3f7fb9ebb3e68e16c1f487302df747d78f7b2de7cb16099c"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-oblique-120-0.py": {
+   "before": "f4e550059827bf2d02467775da3057dabab592e9ee6e9ab8b650963010e5f551",
+   "after": "6b49d346f9a89d5d615aa37d2fa0f7329f36607f8a426e42c2dcf0825ee6e99f"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-oblique-120-120.py": {
+   "before": "e2ab37d5e2eeffc15cecc47b6c8f4a32a2429380886805db710bb05d83703cf7",
+   "after": "447a0f5615a7d2984645cfaf45d507a1e0b3bf3ad8ae461c6372034a4ce1fc6d"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-oblique-120-60.py": {
+   "before": "ab010a6544b30c4d711bbf02e9693ceacad1b378d2a3ed0629915e4e9a0b23a1",
+   "after": "13dfe746cd215de18bc7a5eb5e1f566fd1d5a7bf9a4f5458e4e3da80d66c2391"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-oblique-24-0.py": {
+   "before": "da7cc6e3831f17f5315aa6a2bd0dc384d24ae23bc0a5bf5a0ec452f76d2ead58",
+   "after": "0b8400e3f211304eefaa5b2b62b6f143c9dac2ed1ed9123a0074660f19febf6d"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-oblique-24-60.py": {
+   "before": "6ed38a80a2d973096ddef86ba23c62a0a3689dd66821bde50e33fa2b945fef34",
+   "after": "c52208b14a8d811b17ed24d68f870149f0c2e4a2287b5a44fd14a18c68e0c325"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-oblique-4-0.py": {
+   "before": "e98201e9e077d4a58ca59b6ed8507ce00003d1a761dafc1893a1f458d0ba5c78",
+   "after": "8dc106df5979cc35dd8bb867199361a7295beeeafce15545cb47b6505d6face4"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-oblique-4-120.py": {
+   "before": "17492ca1d75b24dd7143f067eba4e69265f561b6ed17f9240a5004a3388c10fa",
+   "after": "6b41b5de6ee4113488d3605ca0a6be307a4dc4aaebf03d6b42183236160b614b"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-oblique-4-60.py": {
+   "before": "fe73f768924ce4dc1c1af0b35494cdb73e9a83cac8ac50381ecc96bbc5c1c557",
+   "after": "6da215b88fbd896b9904c7b56a67cc072f2fd3905d4b6c19b9174005e69d4c40"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-pickup-1-0.py": {
+   "before": "08c89638d14438d2fd9c8ce1ebba66bfedec2f21444679f5348756e2545774a7",
+   "after": "8a1f789f91b9a57da3deb224a93ec0d6e453e919a51401c18a23076a43c38fd2"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-pickup-120-0.py": {
+   "before": "8d314e7dab662e570a7cdfbaf8a6c94f2cf6a4c71b3d2e6c241c0a4ca42a842c",
+   "after": "79221d04cd495a9d1c0786bca4e4c1f7e846fc05b688a73b956a3e1d1bcb9cc5"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-pickup-120-120.py": {
+   "before": "33c53dad1ec98ddaadfbb9dbadc3e6443c571a17031e9feaa4c252d391f576fa",
+   "after": "6e8ab03588599bfa455e1d6707027132d88bc0fa3b632dc9724a6e9c6bc9e96a"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-pickup-120-60.py": {
+   "before": "1bd2c71b2e4bb8049f69132d4bcef770b6da6adf6581ebff4bcdda39eb719acf",
+   "after": "e78ffa8d5d2a60d846e0c7394f4be7670c6f1f79d9a814291058b26aa6a6fc74"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-pickup-24-0.py": {
+   "before": "28e872c3a619bf0958237b7d0663ea1e60c8ae96730c1dff66078fb48b04ebf1",
+   "after": "57cd996ec0004847cea1edd6823bfb07dc287a1c090aee0765d4fc9ccf804400"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-pickup-24-60.py": {
+   "before": "fe977b10b7a7b30ed6aef397808dcf0e621e6a67b611ec9f2de0820c3671fe7b",
+   "after": "2e28e414af7b34a066bf9b7601d9645ac4823a3ab0e0db4b47c82fa3f346c93d"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-pickup-4-0.py": {
+   "before": "27c2a63d2b60ede76f3d04377f33b180b4afcb90f0a4e43d349412bc17a6de10",
+   "after": "2a0b5a1a59eadbf7e132c4e5c553c42dd62b8762b09384d2f5a44f8a13a39398"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-reference-shot-1-0.py": {
+   "before": "c6199c659937fc1b00d96963267fa6e2e984fbec58d6e71a303e0aa7c8fa48d5",
+   "after": "247efdc516e63edba4d9aa0c7b56f181c24e8ea7f57a73705efd7020edaaf5aa"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-reference-shot-1-120.py": {
+   "before": "2b83c98f50732ecbbebe6981bbe684c3abd938c10c2af23de9a6ea391ff707d1",
+   "after": "dac7ec60bcc850d7adb60ce6ea4ba3b0f46dd1059ddda294f905d927e5c86653"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-reference-shot-1-180.py": {
+   "before": "0ce0325068e5f984d124f71db51ddbeb333146ace1f8b2962a779e145cd26b85",
+   "after": "fe5c5133d68a6d48f02da7ff1fbd361fa9345990adec9153a067881aa77050a8"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-reference-shot-1-240.py": {
+   "before": "627cc9654ef3e23358675440ecb8cdbbef95e7a2b406fcb51755e7a21b4336c1",
+   "after": "98cdfb4c33285e9b46cd364f48b85a3aae968c18821bd20c4c3d9323c0a38fbc"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-reference-shot-1-300.py": {
+   "before": "64157ee3328a7c253a733997b20eb1c5333de733d2e60da9bcb97dd223b42ed6",
+   "after": "8adfd15a4b0d2271f5c6bd8ca0db8ca34194785a32ef0c41e07de2a04f9a85f1"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-reference-shot-1-360.py": {
+   "before": "ac343936cf8524ea0131dff9d6966aa826f60a50ffb3c994050dc3ffbecf90c5",
+   "after": "9431837747f5bdf997dc390f178c7597b059c55f2a7a2eb70b8c90c99ff68349"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-reference-shot-1-60.py": {
+   "before": "2a4addc8d4ab80b7a8b416e634506dea1fb19572eb6a5c3ee959c709b6b70ffa",
+   "after": "f5f2b65c05aba4bae8b0bea0b4b25707a6a4414185e5a782f0917064cadf1ca4"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-reference-shot-120-0.py": {
+   "before": "79237e33bb56668bbdeb30093aa81ef074935d754bebd55b2ffccc71d65c4227",
+   "after": "ce4104d690602c8b4c89c6c8cceaa79132483711da055a2e2aac3a77deb63bc7"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-reference-shot-120-60.py": {
+   "before": "99d3b4a38f89714286c5f6b3b6e7572c43d2ba882c3c811ab688a71a59df42de",
+   "after": "8483e02c9f5c0aeaacf8ce7657c6e585138071aceaade9a50325a5e479978727"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-reference-shot-24-0.py": {
+   "before": "a300992df8ab440c98033ec9a611733d44e52bb3216eb6d6e9ce39e62e535099",
+   "after": "da8bf9be9cf5febf3481043cf0f15cc2b4432be5580cb0c4c50080785962c908"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-reference-shot-4-0.py": {
+   "before": "ed21acc8b9c2835cbc3e4169844e4312d6724b831b0eb5784c4de174dc3560cf",
+   "after": "8076894ad299e913a3151b034a3512759a1f41093082f85b5337e4b5da2c22bc"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-reference-shot-4-120.py": {
+   "before": "c3d42c0ee7bf6fd02b793e06e48bb8db730b990dbda00bd4a2e0f46bc50f30e7",
+   "after": "9c0e53ed60b0f70588005169d7f8c5a9013d34cf91cb1c1fe7b571ee4f44a490"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-reference-shot-4-180.py": {
+   "before": "ab0f8761ceaf0ad83ec8c4f2eb2dd59bcf2fa853e0ec4d77b6f92efad8fb7cda",
+   "after": "c70cde91f8b6b8a129e8393edc3ed70e1dd7edd22b1dd7712ca1e9caa53ae647"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-loop-reference-shot-4-60.py": {
+   "before": "6f5bb509b8f9481103853ae141ffe250c6bc5a343db0f6ddf8c8f4a917c426ad",
+   "after": "2dc1151177397e87dcfc901576f754bf24c668188c1f13ee48e07d75231db75d"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-oblique-tangent-120-0.py": {
+   "before": "020b8858102b292b055f62acbf6a8d5f6a11c33269fd8f43c540208656f0eab7",
+   "after": "542e75fc70900dfcff9fdd893b0a8597829af4e3dbebeb27e0b2bcca86528f6f"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-oblique-tangent-120-120.py": {
+   "before": "e65714600d1720a20c84908ca288482781bf6dc367915e15fe894dc9a627cd22",
+   "after": "907fe891980856b05d44be8b1c9177c6784135cf5172d59887e53c09a9df7ce2"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-oblique-tangent-120-60.py": {
+   "before": "041a644828b2e89f693148b152b69e074a209cac9c04a1763d50b2662376aabe",
+   "after": "36b818a77da59b6e2a6076c8fb703b61f63d1d649f6623383dad56ad63561b1d"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-oblique-tangent-24-0.py": {
+   "before": "0f48a1fc57c6fdcd098fde1c4a43d32359eca6d5f55d38056b50458616e696d7",
+   "after": "0a13de667718af502f5a486ebc26ed31ed5b2345290f8913447d76620d8d765e"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-oblique-tangent-24-60.py": {
+   "before": "29c31808176e8d5fee87304eab70ef9ee81f3c9155cd857afbc71146590b00ed",
+   "after": "2c4075f4e5f8424313a8990f6a1361abfdf6f483f7cd22a510c0db7d5bd09f59"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-oblique-tangent-4-0.py": {
+   "before": "8123286374d271d3bb925c7300745e9dc9e362af1562f65eb939fc6b3ed144f7",
+   "after": "2e0de4217733c583ae6dbaa5a27e047b21aac23e48d26cc19d5a6a960434a874"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-quickturn-delivery-120-0.py": {
+   "before": "9d943926fa62e2a44b6788744b92bb005baf99dde51b3415cc43e0ee31d2a431",
+   "after": "b277ffc0e17889218b2d952a773798046d363fec52973904a0e4f53a0a7f30b1"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-quickturn-delivery-120-120.py": {
+   "before": "8e95c34ce028bee39aeb28854d022a893c5ea7cb260f5abad69cc8f99f00e05d",
+   "after": "91daf60fd12e1e8245fa154454903f1175785fdf86faa1eb162de0bd54f33d27"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-quickturn-delivery-120-180.py": {
+   "before": "904c9aa2404d1cf9d1b69e13212ab3490aade7f1e69db33cfdb6d804fbdb1e3c",
+   "after": "788f0adb34e7250b7616ca75ec00bd0027ed9340eb81363539e2abb9a4a575fc"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-quickturn-delivery-120-60.py": {
+   "before": "77e2f358193f5171121734a235ab7b996064c6c1dc66682100fa49ebf76e5c84",
+   "after": "87827e06636043a32e948f42fc6790ffdf8878c86b6175bfb68645dc49a4728d"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-quickturn-delivery-24-0.py": {
+   "before": "b9ad50ca476152117aa499fc3b2e79766060bbca2b1cd2cd7d36a09093775f3f",
+   "after": "7bf0f500ae036fac5713cb58037fc2e4fee06e1406922e87ef872b861f123d8f"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-quickturn-delivery-24-60.py": {
+   "before": "f726e156feb4e97af39a6949c592e9bafcba514fade8ede39832095815da22ed",
+   "after": "0af710f40a86790cdb0573bd5f2d7023f33bfbbefa7cbfd7d9dfd89ffd253c19"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-quickturn-delivery-4-0.py": {
+   "before": "4d125adc3699f2ee0b8f4eb636bf4b67681a97d0dc9ad626731f341f998e0b87",
+   "after": "8f3406d68e20e93a300558fb07c031fe15e4da02b6b14201e47212f6460677e6"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-reverse-delivery-1-0.py": {
+   "before": "36c8fa5bca5bd29e5e6ceb97aa228b240e99c15b50c5b98aeb02e6370198457e",
+   "after": "8085eec7150665eaa9517cfec501e968dbba34846ae6dc2ffeee5af44e5f61e4"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-reverse-delivery-1-120.py": {
+   "before": "4ea6611d201a4956df3620763491bb177d6c068d4b220d79f96a11db755589bd",
+   "after": "1d8848e02471e6baeffacf2bd0f3df4451d8f87d09d824169812cc8ffec3bd67"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-reverse-delivery-1-180.py": {
+   "before": "1340c4f775e36a364cb1c9c57230c99576758df59ccc77edea4e6908923355b1",
+   "after": "ee971477a2e7206edebcdd18f76aa5fc0fb12b264175b50f354305ea3eb6f73c"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-reverse-delivery-1-240.py": {
+   "before": "75c8081c74a73521a0a66cc05d4d4262a4669c67978a08dad94a24bd0096ceaa",
+   "after": "1612a64717f3f31b9f642089667151d04182f73e1fb55845f96ed6be655f02bc"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-reverse-delivery-1-300.py": {
+   "before": "647cc73caae0fedde56d26bca8309898eeb645bd135b5a389f0c385ff41c72f9",
+   "after": "489b60ee29e281f297a4f3f7ec9f692fef161dd18c8548ffd445322674e62964"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-reverse-delivery-1-360.py": {
+   "before": "9e7107589dde84d3e0df41ae0865fb23b34483047382325d3eccb52a59a2ae65",
+   "after": "288cd0cf1007eec373a4daf258d57099afa9cabe6fdf8bbb54e6254e8a1315a3"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-reverse-delivery-1-420.py": {
+   "before": "44b1af5032cd331440aeac752be380fd4e90f71dc345918e206b45de48741d27",
+   "after": "36fdd6e6ac5d7cd92f7a66ab4b2046ab178c1082171f8ab96d299db8a7539565"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-reverse-delivery-1-480.py": {
+   "before": "ec7d3e026806c0e78472de608094defad7fb6b9779cc0e2ecc3560513da2ff20",
+   "after": "f77cce338be9667b22d367db73fd0cb0ee226c29a3a165c63aea974203abd8cf"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-reverse-delivery-1-540.py": {
+   "before": "9ae9c65621d8283b0b6b973aa76378d8aaa501ce6c38bcb7031c6148fd9bb006",
+   "after": "f8ebb606c57578c3e0eb9ea908664937393e5fb82f17b500ca0d182f6d544310"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-reverse-delivery-1-60.py": {
+   "before": "4a21d216ec705397a187ffa7f2c63791aea9ca102e115127c4f87b7c23353da9",
+   "after": "f81463cd673a95faf7eab2b03b6dae7a70895021bb0a29cf3da1739cb404f0d3"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-reverse-delivery-1-600.py": {
+   "before": "127930bd9e53d5fd93cbd77735b9810df20909c9548d77a4d91b55e235110fa6",
+   "after": "d2818df7cb3010707e5b76b6f0f8cb7308f1a28f3f3d1ed4ad1331d0590ca1aa"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-reverse-delivery-1-660.py": {
+   "before": "2b9d2017b0d64658107f2dd37919001922c7aa43380f7a6b6e737aa248bb8481",
+   "after": "7c41033f48dfd001115aab8396c8f316fe4049e67763d87d61e03fd26a7b3f11"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-reverse-delivery-1-720.py": {
+   "before": "a593b5a57204613cb92e86d103fef04bebea97b73522ccd38be423bc9a61d8a2",
+   "after": "ed9ecc75e341f855ec9d4acc7f6c38c1ec11cbc9c8d05050e8d9ef131cf96b3a"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-reverse-delivery-120-0.py": {
+   "before": "ddc2de948430232d6e3cdc88d78e8395620bbfca8d11cbc64787a7705c816549",
+   "after": "004e82f87c0eb9d3e8b0590fc80385c6eae52acfac774ba72a7f8a82dd14fed4"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-reverse-delivery-120-120.py": {
+   "before": "f39c6d3e2d52ffa65e0ac708fec364d5c92f6b538ad51ad918b5fa3a9f2820c4",
+   "after": "989ae08e357b4e54480962713a3e5e1b2ab29fef67616aee230fa3ca9c25f769"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-reverse-delivery-120-180.py": {
+   "before": "b616929a7f04047abfb662f74c391e64a68889fc04791cc714a0e0500628a066",
+   "after": "a05a7dc04abdd793363935cdcb18a27f4d2c3dec496410fabb0d4757e34e2060"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-reverse-delivery-120-60.py": {
+   "before": "489f42cd0db8d30c5304c9d49d1156a7632afd7dabe64d0491ceec93e0fa3399",
+   "after": "cda701a2b05a0c4c062a4623cc8bedac9f8816f1f671f436cfac1383a8e639fb"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-reverse-delivery-24-0.py": {
+   "before": "292ce593164d46e9536464f21a2ce6f08a6c1659dbdaa5ac8724e446764ecae8",
+   "after": "05381e0050fd158271cc596978ce29cab20be73a7085a249c4aa69c15c011485"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-reverse-delivery-4-0.py": {
+   "before": "678553416df30fc77758d6e746ff693101155cdb52f5c4ff81d62ce6580dd8fa",
+   "after": "8b049002e7c543d857b4e91644f54427952a1a81451829576bf7868ae0a6bcae"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-reverse-delivery-4-120.py": {
+   "before": "89c8bc8d5182948c28a0b2c810b09d394a4c4d1a185b64c6639de6a8eb77fd7f",
+   "after": "39d9f3bad51592d9a288489a40e5695a4171fbe2c8086d840721b3c664e756dd"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-reverse-delivery-4-180.py": {
+   "before": "e2ee10ebc17d500adf708c2e18fe6e287b4e888deafbb4a8a40d7d041be8cc3f",
+   "after": "4a500a68dad5f87fbf0c765571fda9c9f511464ec80a6bba181c5b17bc5dbadc"
+  },
+  "2024/six-speaker-20261118/fusion-native-high-reverse-delivery-4-60.py": {
+   "before": "2b049eb7e6238d41bfc55759a935ad9ee20d29f25beeb955e411c3df3ea89f19",
+   "after": "39da629a169df72803ab55656701decbb7977c11defd255b8930d7372be573cb"
+  },
+  "2024/six-speaker-20261118/fusion-native-inner-aligned-delivery-120-0.py": {
+   "before": "27e7730a638e08f8abfba59ae6b1a357506c15ed02682ecad584d1f436e15604",
+   "after": "d50b14ee2636fef89f2d2bf656bc5fda30dfb250e14ec593af3f02644dc23879"
+  },
+  "2024/six-speaker-20261118/fusion-native-inner-aligned-delivery-120-120.py": {
+   "before": "e8808d656cb2a3734f3445e1bb3147c420bd7be9d5ae4d4017b7d96762d58c3c",
+   "after": "d69fc6d7472900f227dd8d30737a469fb241b906bfb05666346ea6b590aa8c3f"
+  },
+  "2024/six-speaker-20261118/fusion-native-inner-aligned-delivery-120-60.py": {
+   "before": "f94a849b319b8ac4ec068cebf7139f8eeb8e0a025935f92dc2bdf01cfd4b3336",
+   "after": "f9e55b9124b7c267854fa0e656451000f81493df9e2fd003be84eb316a3ef013"
+  },
+  "2024/six-speaker-20261118/fusion-native-inner-aligned-delivery-24-0.py": {
+   "before": "7da01a5d29a7d32a1a5fdeb5c9f1cfaa50538ea7e347f5a184955cf381f3ee38",
+   "after": "d8c10b90fd4f2cf23d4052ccc227e1097ca245730454c05aeb0e7b88161901e4"
+  },
+  "2024/six-speaker-20261118/fusion-native-inner-aligned-delivery-24-60.py": {
+   "before": "77faa89ffa378e034ff7b37bbaa93189f6e8cf0f9e50d5863380209bd310f0e9",
+   "after": "5df1589c6bf0d9e9871eda51affbee172b492bfd75be7d5292e3c9e67895f7f2"
+  },
+  "2024/six-speaker-20261118/fusion-native-inner-aligned-pickup-120-0.py": {
+   "before": "c704e07145e536a63f341c94de1e0bc7d6b50909d8575d32b4545e7af4a99950",
+   "after": "b15ff222e7dbe9ef5539e2b061817c46549291511517eda79ce090aaf1d79a48"
+  },
+  "2024/six-speaker-20261118/fusion-native-inner-aligned-pickup-120-120.py": {
+   "before": "07230bf1eadca1405438b52acfd310b2dd4ecd87a925178b9be40c9436a86857",
+   "after": "97a0412830ae1b0627705d0b40e5c831c419c34d70ff8af2623bb000db1aafc7"
+  },
+  "2024/six-speaker-20261118/fusion-native-inner-aligned-pickup-120-60.py": {
+   "before": "71763307cbf9084e8c611fdca902a81232668298e72258177246ce24ef3462e4",
+   "after": "94135a035501e1b2c4543efef554120a03773184fdd07b68f4b19cf437d517bb"
+  },
+  "2024/six-speaker-20261118/fusion-native-inner-aligned-pickup-24-0.py": {
+   "before": "1221dfa9eb9b52b650569f74848fb1c503947e13a160b280fe00eb9e26a133bc",
+   "after": "4b160111dba24dabc8fe56db9403bc728fac9712eee216b8f1eb7717ed5d7bcb"
+  },
+  "2024/six-speaker-20261118/fusion-native-inner-smooth-predicted-1-0.py": {
+   "before": "2666b5be888567ca8fb016d7f38310f881c928a2d39dfecc5cc5af0f2445265e",
+   "after": "8cdc81197823225382109c896df020530b26d7627ef855aa4b01ed8bb248de58"
+  },
+  "2024/six-speaker-20261118/fusion-native-inner-smooth-predicted-1-120.py": {
+   "before": "4ffc0a49d0fd1cdae29e460c455afeb0415c968e26412435231c520d7372cd5d",
+   "after": "0c90c4729c82d1ae53f303d84cc4f233d155dbaeace5fcd2929a531e8b043a76"
+  },
+  "2024/six-speaker-20261118/fusion-native-inner-smooth-predicted-1-180.py": {
+   "before": "97d2440d0f39c04be7345d3a7eae16593e8ef62b7df22b47fab880d6d725496f",
+   "after": "bc5103daf4a9fc0170f6fea18572830871f5e15c1b52b7f382efec5c42295a67"
+  },
+  "2024/six-speaker-20261118/fusion-native-inner-smooth-predicted-1-240.py": {
+   "before": "e24639736532357daf562736bafe4094e91fd5d0a8e4e4b213e964c16dbb3690",
+   "after": "e3796b9ac18df02c7421d0dc70c407e7cc3bae60baf4846a6b7b2bb079bd4dbc"
+  },
+  "2024/six-speaker-20261118/fusion-native-inner-smooth-predicted-1-300.py": {
+   "before": "9e97447f286d64c401237a270fc28b64532a4b04cf0672f04a3597680cd86405",
+   "after": "104262d5947ff7ef995090da36d48130194ac234c1b2413d1d78c84ae8653ad4"
+  },
+  "2024/six-speaker-20261118/fusion-native-inner-smooth-predicted-1-60.py": {
+   "before": "79c3ae9b4bd824b87562ffb5c8275dcd5d75e2c32ded9a3e29c865dd3d5e773d",
+   "after": "c469c06d4aa117d01492c820298b40c4ea75b5b0dc8a69480eb66127902784fd"
+  },
+  "2024/six-speaker-20261118/fusion-native-inner-smooth-predicted-120-0.py": {
+   "before": "e1b3444bd0872298382f047a39f0b79b27ddaf8e6be4041233ba213107f84fa1",
+   "after": "6dd1a3255c31e7d4c392421c934cfde9b490ae9fbdf72beb0feecfc927ccc2a5"
+  },
+  "2024/six-speaker-20261118/fusion-native-inner-smooth-predicted-120-120.py": {
+   "before": "78f23cf48bf1190e1f0ce35b5f606f2c8782fe9849c0f5ea0df264bd1387e433",
+   "after": "616960da00d1a634355011741eeea2b6963f78237e555ecf3bf5abb3030d7277"
+  },
+  "2024/six-speaker-20261118/fusion-native-inner-smooth-predicted-120-180.py": {
+   "before": "5152c50b3658fc18b8dc70e50787eb36eaf1b29f5cf0f55f13a9486c2c2057bf",
+   "after": "ff05884443ae185627512b5bd03f2d0279de441eace595d675a8391bbe62583e"
+  },
+  "2024/six-speaker-20261118/fusion-native-inner-smooth-predicted-120-60.py": {
+   "before": "c519fe395a38e852ad1e01a0f14ba9179540478beba481f31ddcb3d3dd45596c",
+   "after": "89ee88d533dd4f5c5a2983bd4cccccb550785afa4684a678463d38bede8ed7e3"
+  },
+  "2024/six-speaker-20261118/fusion-native-inner-smooth-predicted-24-0.py": {
+   "before": "8f2ea528e9a31bd33bf0b6e2231ae737a8cd84c8de6a9959d43b0df426a8bf0b",
+   "after": "fadc7866781b71e87dcc80b9e42c802333fb0c4e50bd785a4fec2efae4a83228"
+  },
+  "2024/six-speaker-20261118/fusion-native-inner-smooth-predicted-4-0.py": {
+   "before": "aee906d1cf04e74ea7ff0dbf02201a3aecf6ab88c50544e463678fa7879ded82",
+   "after": "8faf33a0b8114c478c0f9d0928ca7c1557cbee1c5bd4485b9be95096ca6915a4"
+  },
+  "2024/six-speaker-20261118/fusion-native-inner-smooth-predicted-4-120.py": {
+   "before": "b6f93b6dde7c0e1b569db9fc3633ba0067e3fe7176b60f87a9ff54acd6251940",
+   "after": "ceebaff9e49d2e2d2c56684523ac07925788a43ac5e6e94a229a54e1256af707"
+  },
+  "2024/six-speaker-20261118/fusion-native-inner-smooth-predicted-4-60.py": {
+   "before": "885b296c8e28571f23f3d3f2d0554a9044bb9242263b0bfc7301108620ca5760",
+   "after": "fe4cf9e7a0e7c239edf4b337545fd350744f733f54f03c36f0bbefbcd71dc03d"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-2275-round-north-120-0.py": {
+   "before": "73685e0cc23906836ff2a213535fad1122f6e31f54170f20d53fdf5e1de90558",
+   "after": "67186f88da6395572404698ded6634a78124e68436286430e1de213b615d38a3"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-2275-round-north-120-120.py": {
+   "before": "155dd8d1348fd56a8a314fbfd669e270199b7a50b62cb5a0327ed92680873495",
+   "after": "50b1857ac35c698e3b4df241dbe22721a4a6c73ca845918618d571a389760d12"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-2275-round-north-120-60.py": {
+   "before": "cd3793f7a983cb0d39039c0c157c82c7fd73bcbab7514c6a4a6ba8f273ca4677",
+   "after": "3ec6e37c8c56438eef0f90ffebad0c6bccafc75e9b8374cdfe7be6b110747d65"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-2275-round-north-24-0.py": {
+   "before": "47c7d87d5b8b62bfff9c19600eb96cb5ab5f12cbab4a3961dd554767c23ae95b",
+   "after": "1bf67a0fb0e1bc8149f0d065ebde3c4173dbe8c29a2c356bcb643db0839a28c9"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-2275-round-north-24-60.py": {
+   "before": "32021eb1628fff3eb914404a7d76a5e4fc992e0df5fdf755409b57d124cde643",
+   "after": "2d3f543335bd4e240f6627a8ad19d571951a01328aeffd642ff8fb7a01de6786"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-2275-round-north-4-0.py": {
+   "before": "f77b0cfde30b0f58f1425550686bdf0fbe1b79e8cb6850a8a5d967a7f0326fee",
+   "after": "cf880590d889b3d13625778ed5a76960a0da54581afb908b3826018721e87c72"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-2275-to-oblique-120-0.py": {
+   "before": "f8bc1e71f90c6bb0150f0e58d4eb43ca8628772b1e2cbca9aa6293a776ecea38",
+   "after": "556fa106dd6b0f0fed96f66d484da0685fefc4f4c91757bc885d59ece6c97cdc"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-2275-to-oblique-120-120.py": {
+   "before": "2720620a08d48189262c705c62a8c197781c64f12a79b7699826ca7f10adcdd9",
+   "after": "e1e324637c9c69a3b64bbc68a8986b05be6324b7d84e66a3a525796d04efb790"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-2275-to-oblique-120-60.py": {
+   "before": "575dd7113b7da88dfc8283d6ca753e22bba20d5de3e0344a65b81a20f59e8c3e",
+   "after": "cde0121c1dd2c05669880723ca492fa0f9f164c1b07760dddc3af8a25da0c60d"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-2275-to-oblique-24-0.py": {
+   "before": "73ca29ff675d7ec504435e9c50b07eb2e3001b1ec09d74d459bb4021976d1512",
+   "after": "9b43c0e9caf763d1cc57c5e8a3b3fd40ae8501f1ac5fd599fa4e66633dd8e403"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-2275-to-oblique-24-60.py": {
+   "before": "ba7e1d2187d86015d80b02c22e60a7a79465b8e8e7ec737d7d1a67d223def8c9",
+   "after": "7530b8d7ee50dbc0518d2345e4cafe418e758a9e035c121f8d46bc46deea2e66"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-2275-to-oblique-4-0.py": {
+   "before": "63c2ea464557c153d5e8f10e63e6c38979f72f84d5f10d1f0243f56e7c619c30",
+   "after": "7b9d89e8be5bc301a95c2d29858e0c1b22a0489067b0e3f14463ba2943e6830b"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-after-oblique-2275-1-0.py": {
+   "before": "44d941488abca17b3ce2ded0203200703166964693f0e77c1c80fab5e3c07587",
+   "after": "1a3725f46693bc11e90d7df0f790815c1fedad4d7570f91af1761ce5497abd1a"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-after-oblique-2275-120-0.py": {
+   "before": "2ade606252f4e2ecaf531d7a3514c443f2f5f8fee89eed2f7c9f27a2cd63c3ec",
+   "after": "f987154db700c4d4d1e76e4122c08b795738079896614cb2cd6889481f48841b"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-after-oblique-2275-120-120.py": {
+   "before": "500dfdc1380e6cc66f8cd321a4b68afd42e9ffae725867b53fd5f0a1ade3eaad",
+   "after": "f58374b142664dad9cfa19fbbc0bf52d3e2baf644bffea0a8fc5dc5b653febed"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-after-oblique-2275-120-60.py": {
+   "before": "07fafad629f9608e420398271dc06f9d6e5cf2d1dbfe01099102f9f6c418d302",
+   "after": "18332eb15cc1a3090dcd1d65ada473337167c7e7cff0d7bbcdff965e0f999a56"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-after-oblique-2275-24-0.py": {
+   "before": "ce68686ee88471a376e536d396500a6e1d346de0105e99e54412e2ee5b7049c9",
+   "after": "0111792ec8f364a32ce6624ce91dc67f2656af32ec98a841868a58222e8439e9"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-after-oblique-2275-24-60.py": {
+   "before": "fa23a23cfde8fddd4da14d0f967794dababf0459aab5995737c51b74ce0b6c29",
+   "after": "a076416d9e779b6f3209b7110e4128e5d24cb4dc5754435318bf9f0c778561c1"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-after-oblique-2275-4-0.py": {
+   "before": "279148a847949de9cc3de831078d8ed80857275d0f40046feee120e87459b6cd",
+   "after": "21dcda4f0805162ec4130bc70de949a94c63921ec41a91088296fa727bd8ee4e"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-after-square-indexed-1-0.py": {
+   "before": "372fa85572e219c339b0e7998b434377944b91453a7e721162900b0abdd1b97d",
+   "after": "2d8edc43739680f203198203e6c1707757a1aa510ccb933848368c9720e78d6d"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-after-square-indexed-120-0.py": {
+   "before": "4eb5bf6420da1dfca356bf81114781423ec1f3b40517951a897a74b7d0b17e3e",
+   "after": "0cdb7c8f0ee8adad90e4085659a02c6ab2f71c5be65fe698a6216aef4324e310"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-after-square-indexed-120-120.py": {
+   "before": "37fafcdd569ece8af4e68ad32f2bad031aa9749b66d1ef10a1dfafb011f0ddad",
+   "after": "a10cf1cb1a672cd3ff99a0319712dbbcf695642f385d89b547e4725098bf1033"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-after-square-indexed-120-60.py": {
+   "before": "11d3359b1275c5608f163853e4d548cfe86fc4b42329aa71811c780304395e09",
+   "after": "570de03a77235f2dd4ac734069d50a4e931c7d1c4652b6eb8916495dc57f7f9c"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-after-square-indexed-24-0.py": {
+   "before": "0c570d13fc82720142431c14fd24be8e7dc3a9724d04ab41d25e08e630112333",
+   "after": "6883dc298266cfb858322618f90a119a9c895e2ba96fe64332609fbe49a67e56"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-after-square-indexed-24-60.py": {
+   "before": "6961e385f3e516b397ddcacbd631b24d8e0910e7eae84adf2242c9108e966e3d",
+   "after": "0c4f9138e1e67c30f981b47731a6cf56de9ec3e269642258d14c2eecbfed7663"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-after-square-indexed-4-0.py": {
+   "before": "cd29e0d736a2a09fee1c6b342c2cba1a641333e3b17325f7cdbbe0ae3659d600",
+   "after": "ec7790c19f0785646d24095b5ec1ef0cce77c0a4cf3c276fc0ee88b84f1b0011"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-short-pickup-1-0.py": {
+   "before": "ff0e9fd3e452cef3b1517dac181e8a4d6eb0d7b6280575cd1b09b09a8e963242",
+   "after": "7b1c262a0474ff9a821ac94d0a6778e9e117c0b4d0cd3c01b6588253d0cbeb0a"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-short-pickup-120-0.py": {
+   "before": "2f1b93aaf6320df6f63f83e38ad9ec0211183247205f339f0ab628792d83f3a2",
+   "after": "b62aebca7ff94e3b0d16a9d76d16e557ce5f8651c30b936605b8c622f87b2277"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-short-pickup-120-120.py": {
+   "before": "96fa6bf26757f1dcc6450bfbc4e6fbba9b8ea0c13ab9dfeb08bc9d1768b5c15b",
+   "after": "57ea3d0e80058a49b323b8b6a0d35335e2fb08426a091802f93370f92b5e49c5"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-short-pickup-120-60.py": {
+   "before": "656816024c8f96ad56a09202499ab331e07b6da560a3968e4f033d647a924559",
+   "after": "6fc252add946ce36ecb3cd0f8136505a9d2be2a17e205c2342bf338f88e5d4d3"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-short-pickup-24-0.py": {
+   "before": "5dc48a7b8295792aa4e932e6781eab1d0bf7b387ca991455c3fccd4295893c7d",
+   "after": "c089be9ea7abeb20f4766a90291047b3cc6194d18773f5a290abb0afa27082e4"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-short-pickup-24-60.py": {
+   "before": "4f0d44745d82a24a88273a14025245f1c437892fc99c6dd49921e256548a0ce2",
+   "after": "0fc97e3ffc65dcb0ef24c5a68c88b638780ce648220f3a42b2632be53394fe34"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-short-pickup-4-0.py": {
+   "before": "c7f3a59f253e1eabd48a02ddd336a9b27c54a9972ac16e9b40ecd8f7ac00fe59",
+   "after": "5c6d0a3c4834b6ec915e003ac60c9c47f32918188c6aa67cb8e64ca8e6949d8a"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-short-profiled-round-120-0.py": {
+   "before": "d0b5595fa1b70c319ce85c17ea9a5d1e4d84d332d0fe134918fb61ca0669cf00",
+   "after": "9bdfce5a737156838a93468c4b20540d4be1da1f1bad8a9e0ce8239973905684"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-short-profiled-round-120-120.py": {
+   "before": "aedaff39c89cc5b389b02c5302495dd96fa22eacd0997bb83cb0b2a932b44dd8",
+   "after": "8c5cdf04325bc21d9b6b458608cb0cb6b4490a252edec07652292e279fa7f54e"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-short-profiled-round-120-60.py": {
+   "before": "5c6aca98ce76941e81f155d05757f77d394a7cd4efefca331a01cc1fe10cf066",
+   "after": "17b95f6e94bb5abeb365cc21adc82a7490b5eb7a6bf8f9a8c9702a064990be2a"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-short-profiled-round-24-0.py": {
+   "before": "4a25fc006b3802d6c38dfedf9106bfe2f8c9486ef0f7d59b06ada8264e58ee59",
+   "after": "bd337bf3850989c515df33bf12ddced8c5a26402410a6cad84ae25f5a09a726e"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-short-profiled-round-24-60.py": {
+   "before": "52b0cb58c51c17ade6a1d574c5943a9e1409e1eff3916b3e64ca477cfd59a59c",
+   "after": "a6c9a571e9b710ff6cdb74b5e56cc31f054341028ec459c5f20aa7cf5611227e"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-short-profiled-round-4-0.py": {
+   "before": "3cdb52af394708a2a2f2e0b54c17c95e4ba46bcd12434eadb514861f88d76269",
+   "after": "ddb4e898f22c677546362104e89714adbbdf20778ea09fafd0570654f496a19f"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-short-profiled-round-4-60.py": {
+   "before": "ee7463700dea90b5212c53c4a044086c678c2fdc04aab00020ba61308aed1459",
+   "after": "bba0ec665a83ef00f2e96b90869be1949735005b482859520b554bd802c63563"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-short-round-north-120-0.py": {
+   "before": "61a5f247d9a51b47636856beb1532b294efd01fa20fcfdd00df30a8809896eaf",
+   "after": "48ddbe5dc49102676bc2533db3762f94dbd234d94b8f13ab9696a10a498e2c1f"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-short-round-north-120-120.py": {
+   "before": "a21dd474e310cb07444f5214c868a8a7b31d5d4ea277a49142c3b4dbc20d1c7e",
+   "after": "4a68c07f453d7bcccbfe52ab737331b4e5a48898e69b2bd08e14ad5176178e2f"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-short-round-north-120-60.py": {
+   "before": "66432957249cc3c2359071260b9cc8848fca2f8febfc57c5597a45986eb18efb",
+   "after": "b63a9624bf8d461a2d11d0719a3cf39d35b41b3d622d10a17048513a4533b30b"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-short-round-north-24-0.py": {
+   "before": "6309a720a9bc81afbbc145d59cbeb7103bb43b4d13a5b4a694b25a96f855e129",
+   "after": "abdc881b0d4e30601f6f042d3615917514b20d863afc5c5449d5222bf030cc5c"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-short-round-north-24-60.py": {
+   "before": "891ea5baef007cb37d2b884398d05d424df221a6224dbdb76d14327098fac183",
+   "after": "6fd29c2424e58fa0deedcbab4f667471fee74a19d2d82753f4eea0516ce85900"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-short-round-north-4-0.py": {
+   "before": "576fbfd8f503b970904f24df52ffb29c8b8273216b901593dbd328f78744b8a1",
+   "after": "95ded0d77a9b10b27a06e85c29f05a679575381ee9ea66e5a027a68cdc192753"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-short-round-north-4-60.py": {
+   "before": "16be2d4eae59a9256db729ed8b70ce3a1f43ebac0140b3b7dc9b785fa1aee5dc",
+   "after": "ef07657e83871e20efc2a0ae0d8753e51911d9b141dfdf85fdf01a64ce19f441"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-short-to-oblique-120-0.py": {
+   "before": "7c5f67e6fcbac4393c4cebd94ab62f31fc4eb34d5d1f2a17f2511e53f44feb62",
+   "after": "e5b9278f7e9bcb08ca947a946a9a84388dcc3ebdc530cc2f344296b149d0098b"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-short-to-oblique-120-120.py": {
+   "before": "6ab96c3f24d29214beb039617e5f849dd3cc963a604c5818fe74b3d41dc6bb3a",
+   "after": "b12320076f60fdc384ab4feb0b32040f7023a1a1b39c235a15235dcb66eb9c1f"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-short-to-oblique-120-60.py": {
+   "before": "be2b5c7bbe78da3a8261d5d7086117a996a49c420417ea2ad424eaecee8dd5de",
+   "after": "d5de93183a024d4a58779ee0bcb8e356e4e43fc8576e8702cabf609457be08e2"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-short-to-oblique-24-0.py": {
+   "before": "22fc789e91318647a2e64f0d7bd83748eaacc4955357875f06ece6713353747d",
+   "after": "ae2cf88803a59f5f60ecd1ed1aa7d86654bde6b38651e43145e9d91d0d5da53b"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-short-to-oblique-24-60.py": {
+   "before": "c191510c432e2b6c87f8f2f4e346cea74ca6bac4f289cfbdf53941c377aa0f74",
+   "after": "d06af3fac9e7783bdcbca43cf5193a5758482485e3ededb8176141c2edea2f2e"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-short-to-oblique-4-0.py": {
+   "before": "5484dfc30a84a9749fc4f6ceb765c33a3bb32855a6ec66703d3fe58a9ea7e682",
+   "after": "b52285d21aa7d8da5607782a09941cc2eebad53b6b574276f1cea72741588c3a"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-short-to-oblique-4-60.py": {
+   "before": "66d4c644382b1ceb9663bd7c2cd92dba7262abeebff65c88f3ce98ee47040a34",
+   "after": "be1b7634937ecae5ef0e66d71d4f41a30022ba51e90426cac1e9ce61c5d1c64e"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-square-scout-120-0.py": {
+   "before": "6737b7d25fc415be6c7532ecc9c91735a7b75489f9644aac7900bb58186509d9",
+   "after": "848ea645e6284f19af42222cc9e4b6ce8af2247ecaa50c242eec81c8948688ad"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-square-scout-120-120.py": {
+   "before": "130de70835de133fe03d027f79aae26d756b9617b6f97f8377674d683e4f20d0",
+   "after": "dcb9f47bac1296a0a724364930f148153b905572e4fa6c0962594019a8bfc8d2"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-square-scout-120-180.py": {
+   "before": "cfb03a19f4ac8c79b305120ea19ec79a1ea28c6b71671dbc3332ae2900bca9e1",
+   "after": "4c763d14b33c804f2bd6b26dc4c308f020e0039b905a2f63f7748e2e5740689b"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-square-scout-120-60.py": {
+   "before": "2f41973983400f1fa2fc1c0597531a6554f47bfce147b6bf2bce92efa3cafc0b",
+   "after": "0666c0ab8a1f2e2bde07f71bf0486b1081469398646d1a893e6bb5503891b28d"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-square-scout-24-0.py": {
+   "before": "70661d328a7f5260a66ba0d78be5d119feec3c8047c2178f3d2a661834ae92bf",
+   "after": "33c38b53fc97f789edc4868cef46eb5fad179b22b5e3f6e9f4de7724a62b08ec"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-square-scout-24-60.py": {
+   "before": "a39fd6ef01d2be013782f20fbab1af293c0f5f0fb1e279aba2f443d09655c839",
+   "after": "e9bbab43b52a5a5c6d217400b4cd896d476cc3061f91df5db0b8f3d2f4fe177f"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-square-scout-4-0.py": {
+   "before": "c4ad298e314402a857eb83d1f7c0969619fc2941ca689fe1975cf819eab85f38",
+   "after": "2a92742c29e069bc0843b561434c7e8c32c658bdb902f4bba5de0ae8a0bb6b0a"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-square-to-oblique-120-0.py": {
+   "before": "222b55c63613259123250fdbf4668bd749a08bebc4306ef8e94c6b13171e0b22",
+   "after": "5397535a3dcb596599078d7183a49ed64ba910afe73168a89ffdabe39cd116aa"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-square-to-oblique-120-120.py": {
+   "before": "01ae04baaaa4bc2072d3eb30cca7dd898aff2a841cdc53725158dbe8de470c28",
+   "after": "2f8945f91d6fc9491edb82c3c32433864b0f7850b39e225ee15c4468c5bce403"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-square-to-oblique-120-60.py": {
+   "before": "82cd043aa390f0089f60a3e83d67752c91ba32bf8e6bb2414f88b3a17cd10ff1",
+   "after": "3ea81c4b6eca1983aab1f28106904122a66ee11855119815b13f6d0738c11a56"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-square-to-oblique-24-0.py": {
+   "before": "e57756796ebc862713c8051abccf009894e37b77b8aa7943d9202c79a7d75cb1",
+   "after": "90c3f1ff84c793ecf2b9919e8a4dd4918dc6589b9e3deddecb0359a90d37108f"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-square-to-oblique-24-60.py": {
+   "before": "0661b5c8635874e4d5d81e70b889098154b1aea5563379b9fc33997afd180d19",
+   "after": "a57b860a2c2ec7f0f2e7fcdac44f1419b1a6d4cda130e92c055401a1241d1da1"
+  },
+  "2024/six-speaker-20261118/fusion-native-low-square-to-oblique-4-0.py": {
+   "before": "d34d42fee4ef0d040ac8e20c61d1cf55cccd6b3890885a2e5c6fcbee4ad7abd8",
+   "after": "10e21aa6dea63385ed5a5f680798d6b43fc1c6583cde4ea234a4180e4b9b96c4"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-230-pickup-1-0.py": {
+   "before": "27057482fa1a43e475736683bd17672df6cf138d1ecf02c8465e8fea8943e05b",
+   "after": "c2fea64f9ff6ba70f904604b6a9f0e1cdd081466104fdf61805f2d19ad2691fb"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-230-pickup-120-0.py": {
+   "before": "e5620930fdcb7b4758416170bd02098017ea6faf44ea933d385b94d98304f41a",
+   "after": "58e5b67e9cfcf309e5ebe18a71afb8f4592889db0d78151588adaf90d55a3854"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-230-pickup-120-120.py": {
+   "before": "2a7d09f195f12fef391ee7437c4d13c89d7fc06d006919e8839c45c4b927ac1a",
+   "after": "5ae69a6dd362171d07453a4df24eb48eecd6b0bb25df7912fd14dbfc5b72c620"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-230-pickup-120-60.py": {
+   "before": "d6962da120b5a858073eeed9c724fe4391ab3d3aa0eeaaae48006b9ebe35177a",
+   "after": "25cf44fe4602b091f6b6c686a23ff3e71734a5ba58258bec5de4c9e9058fc24a"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-230-pickup-24-0.py": {
+   "before": "63200a5d4e2634b08f739e34953430811549ab530bef3f0813c7ebbc0e41c528",
+   "after": "297b92b138e3981ad365c3084b4b36c8c4d24f7b5b68498f01b2a31f5800b11a"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-230-pickup-24-60.py": {
+   "before": "e1fb47abe365220fd257c527122309727e55f22810437a10db273db4cd8a1410",
+   "after": "5cb5a433bb6f9fe782232d6d8abaf69387db6bfedd14d544bc5277d59d720d52"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-230-pickup-4-0.py": {
+   "before": "ae3a2ec88fd3d88bd8049e508146107ffd68763a9e5b1b20d3473e9b03140514",
+   "after": "174132e425b257f754cb42dcc50ee36974a52229000e84945a252288bca1a127"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-fast-carry-1-0.py": {
+   "before": "90e21a13bda75f82fdb9212ad6078c6f426a3056012e60d8abf028e391fcddab",
+   "after": "030e098b21529792a661c5dd5481756531e5da310bf3830bce4631cfc94185a6"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-fast-carry-1-120.py": {
+   "before": "1b14e406c62453570c6e485fa32748868bfae40faea127ac860cf2d5e98c184d",
+   "after": "701ee22f95c93c8c2fc9699b6f455c235d7eb6ea12ed9aafb6cb695d2de8eb26"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-fast-carry-1-180.py": {
+   "before": "d9957b9606467fbd1633cbfd62a850f6be6a9aaf6692d10670ce7af5e8bd17ae",
+   "after": "0e653006062f1c42364d583d1efff82718a3f006ea49cb1414e37c3d780a771e"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-fast-carry-1-240.py": {
+   "before": "d70134a3cf22af95655f92fad7eaf1e4f15b9f7397059afc26242e18a9eed58e",
+   "after": "854ae46c6b3b89ea6a0ceb76f4528c7dc81a6cc31c3650e85a75a3972ea86787"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-fast-carry-1-300.py": {
+   "before": "8c00d59cc28173c28d41d0c35584d66e4a974e44575432a6c918d5a9bda78389",
+   "after": "ede0c888605744ba83071cb0d6c949e1e32c632ea952d2919c4cb9676f300e0d"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-fast-carry-1-360.py": {
+   "before": "482930c3dfc07a6fbebefb27fd22edbeb70a1982e122bf719caced2ac5b2a196",
+   "after": "2b965e96a26f68701c7b0552991ebf706ead5db10789c9d229246d41cdf44980"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-fast-carry-1-60.py": {
+   "before": "8e4b8bdfd88fec1d9d93771b4b8e7420622f87e7a73f9202d5c8fbea96c694ed",
+   "after": "2aff5a6e90d5fb29db663d6b9dfd6c786679fef5815faf8125ee6b7167fb8b88"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-fast-carry-120-0.py": {
+   "before": "be225d1b92d891ed8e53a26a9207e9b74567b791d84a0ddbdeabac6c7ac116f6",
+   "after": "5e3e645a50dcc19beba03767890be18c97cd8d0d1fc72682d05415cec803da62"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-fast-carry-120-120.py": {
+   "before": "191eae207610f271734b1142c8c6e3cac10b171aa804f7ffbfd0ad9b32f06487",
+   "after": "abe3c5fa305eddb057a789bd3fe3394e686d89fde644a0f134bc4ba7839899df"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-fast-carry-120-180.py": {
+   "before": "e938cbc73257475e0a3461ee1071c693ccd905baa07ba5b628b2fe96f25b967a",
+   "after": "b63280faa07b244ba1ece7b944cf74dc4d1d943551322ec04a129951d0fb02d8"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-fast-carry-120-60.py": {
+   "before": "0479494a4f9e93bd905b6c0a8661726c7094d8fc673736394546893914a67f08",
+   "after": "3c4bd16f216c356ecc9a0c3bcd59f9ccc165e8e8091ca2fcb449795bd8d70c88"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-fast-carry-24-0.py": {
+   "before": "fbe2e1c218d1c3c8c060c00bf7934544fde9b69fd2a1dbd2781d661177af9994",
+   "after": "d65efe886c530c7bc981cdcf515ac19c867a826e42c43df4f40cba7bb85c8c11"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-fast-carry-4-0.py": {
+   "before": "f05744a584e608e44fa7fc27f8b0dd1c2b82e3ff5c0dab9f9ba4edc7baaa6411",
+   "after": "541cd314887ad23a24540cad8d640b54db5c589d781d4a345ff41923b2ce57d1"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-fast-carry-4-60.py": {
+   "before": "d2d4295b5ae1a0158ee64293142686be32c5379dd0beb8e1480d5f1548fcfd6f",
+   "after": "e23a9deec4be175d09e34a8386fb2e4e9b14040a480d85e95a020d6e4d69c7ce"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-limited-1-0.py": {
+   "before": "04c7cb1702eb0a692b43a847b100d0c9478608b0e4ba63ff26bed98332f58c23",
+   "after": "04a7318383ad9d9f3a999e88e9308cafae5ee8ca6d1d81bfdb321bf4d9d426a5"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-limited-1-120.py": {
+   "before": "d49057687b11667f99b0fa7fc12d417fafa8d5e0525a81df263f45cec1731fca",
+   "after": "8e68bc2944e8b88b95f6485871b8668edeac19a4a037be463493648784fd483a"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-limited-1-180.py": {
+   "before": "4172ae93c3f86a5c4ff0e00a27f1ed788f00f587fffd3c02dc91543fa292d349",
+   "after": "516120ca162eda8fb81d412cb60b2bd8f3a2c2105e177b0c125c5eb53efe09b1"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-limited-1-240.py": {
+   "before": "d30f00272534b39063aede3b118835266f00010eb7d83524a4ff78d07ff162ef",
+   "after": "fbef5a65cf38317d7051ab73979115234de2f0887eae6a89e82141bdf240e884"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-limited-1-60.py": {
+   "before": "ff62613d249dffc83abf6c7e921648e2a7b49b05c51e9a0de7bf9272c8b62ee2",
+   "after": "e6fcc8bd23edb824247b285dbb104174561e8387dd9a76ea915f9083dba3f47c"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-limited-120-0.py": {
+   "before": "616d0793ccb45f8f597518869ef64d2f1bb04fe546bcc945b6e8f19294557ab6",
+   "after": "81076ce662058711208156de6649e8046ee6dc7775f4e38b899a9b3a19223eb2"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-limited-120-120.py": {
+   "before": "4fa5c0f165ba49cb5f12a2edec43a37c305472a3df2673c2893b235eb6a597b4",
+   "after": "aff3b77b039a6971538b0a2779b3672ac65b0bb20a68f1cc259bdcb9b69b3dca"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-limited-120-180.py": {
+   "before": "72a5331871401894ca0779e5a8b57862ce669da1a6406de6dc5945a2d389bea6",
+   "after": "a18d249e57c8283b8415acc7d3febd596df630513084bc99f4703ac1e8958dab"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-limited-120-60.py": {
+   "before": "0bc0e64cf74723534956686bd0ffc31b26512b13cbdc35cb6575e0ec2f5edb3d",
+   "after": "af6a23d49d8d23970a6bd6f59d551dba3657c331c1351371d3e589df964d8df7"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-limited-24-0.py": {
+   "before": "631a1b2abe060f32a73f0923594812ec94f8636ec41e07434ffcde50d7d8e6f3",
+   "after": "58a629bac4065d8b09a7a7f46eec3ac051c8cc7553f719c470134c7177926a84"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-limited-24-60.py": {
+   "before": "bb1e7c5c06c1a22a29aeba0e36965de852d0900e8bce566409f685418d6f64f9",
+   "after": "d7323428172544e0a0b606bc6b71021b83511749ab0efe3179dd7fbeb7875f7f"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-limited-4-0.py": {
+   "before": "edfa37fd81808a96d2d59c6e1d8cdab8651d0d0a2b31df4e4803df2f144bc0d1",
+   "after": "e7ffbe6abb1633b5b3d60968deab2f718b0f9031fffe2a287a4beeb18562d02d"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-limited-4-120.py": {
+   "before": "4d61c4f83fe15bd0c183acce20bcb9b27cce218a57c635a84394d03799d4641b",
+   "after": "8ed93b93263a4b05b1676d460d44dfd6e07422851ed4ce502e7e0080b77cfc54"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-limited-4-60.py": {
+   "before": "98f3344340b84f0dbb39db36e8a26202db756bdfab80069b3ef55c6fcb6b831a",
+   "after": "2ce6e679343808ca46e8e7e13d5ae930599fba0c0b7ae76a070b55d25b444b03"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-limited-unpadded-check.py": {
+   "before": "901552f3b0193d245edbe61240ac76b28a778d65a8f487cabb24666aed4668b4",
+   "after": "093f6833af0db776309b8ca6f1b9089a655331939c0459f85cb3dc16f20af8e6"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-oblique-1-0.py": {
+   "before": "5f0e4aa14e75cbb1c3844499f635c0619ddc2f5bb6d6b42c8da2fb8c4e2faab7",
+   "after": "926ec01100a0d655f5d914e7a71fc464903972d2ce8be467d6ea48f307063ecc"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-oblique-1-120.py": {
+   "before": "e316fcd93b9afd580d7d04e0ee9c19077f74ea3e2583e3d3b2f882fa4383d04b",
+   "after": "dcddee08a1552b186530638fdd9bc7f56a3d1d49f135efeb55c0358da36cac0d"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-oblique-1-180.py": {
+   "before": "87edb916120fbb394423618b1004525c641e61916fc71984e0c24fcdb92bf908",
+   "after": "f8a449e453a46a7a98ad0d43ef1a4992fc1d7dcf2578db9a2866c53a65007901"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-oblique-1-240.py": {
+   "before": "526908cd7f266ae7a589e63c8cd238e19644d1b7943838485b072b8d11fe7147",
+   "after": "295af87569e5cceff9885422cae4c0136ca3a7d75bed95c4141f8fca58636b75"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-oblique-1-60.py": {
+   "before": "df0f45dc3fb27a204fd9799b3d59298132e3576d9ae540eff79187ed08fb0011",
+   "after": "f7d477b29de44131779a144f30e0f74f46ddd293f2a6dd920523686bf3e1faa1"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-oblique-120-0.py": {
+   "before": "0989428d77359c81be5d71191b15bbc9719dc0f2d708a9e6d7cfba45389ec305",
+   "after": "abfaa284269a69c88b00381842d82e52b17c015b38906458deb7fd5cf2963c68"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-oblique-120-120.py": {
+   "before": "08c8570a55968649c9bca639d48b4b5fcd69618d43fd9a38d328629fc552b502",
+   "after": "f2b55fdb4eaed2e681f62213d1f8ce721721ac4891284812a3da84412168ea88"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-oblique-120-60.py": {
+   "before": "d27bbf6828177022fb7143f8fd830de51682216ff53ce5f8ed882fba31ad9648",
+   "after": "5dda767088bc2a9906a90aefd4d9bd110d7c04a86cf798ebb7f1f0901cd6115a"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-oblique-24-0.py": {
+   "before": "43496071abd4e7d2372e73f7e6758791817653c0c62ee805b0b8eb2d85276a07",
+   "after": "8d85eaf0cdb8b09c5ad097d25a5897f1aeeea5b93932b34d694c0d4103e87ce3"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-oblique-24-60.py": {
+   "before": "a3ab3c33e350457b36b481e678c3a151f1d7e69da5738b799f4336815b3aefaa",
+   "after": "77da7127bc64a160679e10612cbbefcafa13cb3eaf8fdfb78f810c4651afbb5c"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-oblique-4-0.py": {
+   "before": "6afe4201c57840770e7baeb5d75dd0bb43bf6e162bae874807d62d4fc7e09500",
+   "after": "1fedb13fa9dac58ac3ff4a0c762fc4f384e7ab291550f34c8c83e1d240aae7aa"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-oblique-4-120.py": {
+   "before": "d0ed8eab37089d561e06494fa20e40c84a05256b7e90c8de07b3e835b9b0f032",
+   "after": "ffab1008516720c2384e357a241e9bdce3f79490cf5b4cdccbb15fc8714da232"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-oblique-4-60.py": {
+   "before": "12863f7983e9e1414a0e134f879c91e0891ca52c96d20afaf404cf5cf073084b",
+   "after": "370c9116299d4f10fcf87dddcacc50d7a2b14f434f5b79a9ee4babdddfadc2b2"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-soft-start-120-0.py": {
+   "before": "11da8421276a4a36911f880c61358ea9cb891f3fa9d7a19aa0c905f3152fa5f6",
+   "after": "1259a3a287ec1e2ac82bed9577736721478f8d31deb7f35639f3985a753c7158"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-soft-start-120-120.py": {
+   "before": "fc420a8071c52614256dc575619d3fb4aee0ef2f95ef5c31ee6659923adebf8c",
+   "after": "69b6a2494f9349433e4cbb7fe1852d3639aef416dbb18e25f3d536108c37c160"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-soft-start-120-180.py": {
+   "before": "0f07d49887da0f49bf36c3657ee40894491e79f9a06beec764c5b03989f309ec",
+   "after": "f9de417b9f134ab61886051608fe491450fab227a02dc12347008b22891e3333"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-soft-start-120-60.py": {
+   "before": "4a78f36cfaf3b9683972bf7d5d2ce325bb586fec9417877b20c924cc1ca8c734",
+   "after": "912e603a8ad817ebdd9db8f47e933c3483514cd3978ac5cc566b007461257f4e"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-soft-start-24-0.py": {
+   "before": "b9dd1010b6071ff4be4fca9cffdda6774f4fa1e8c7b8f66a5b2bb47db81eb448",
+   "after": "572264cb7c9bf227ab6f1690120e6438944462db3c44fd04c5102c2fec4144e2"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-soft-start-24-60.py": {
+   "before": "5c39757a24f456c471457e22730ea60633690e48ca70573739e44e23bf3b3758",
+   "after": "c2ca3fb54cd104f5eba1e7d856e5d7ad21f16c883012c8f2deeb7d345894a342"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-lateral-soft-start-4-0.py": {
+   "before": "6164670d12f23a3e08801b9c9b250b933ad24cbad913edcaa5e477958ef82ead",
+   "after": "f6a836f8c221ee12bd74e091565f6508089519bd208a33c322910657d739c981"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-oblique-tangent-120-0.py": {
+   "before": "02bf186bebeaf8222955e55a45bbf817e2e74de033413948d766554bc5f16668",
+   "after": "ea4edf196dc094b3fa405b9eebf38e96e72c33a0966a326cd8c818394968b2ff"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-oblique-tangent-120-120.py": {
+   "before": "e24ca490f5ffb2fc0dad24bb37030379d0ec8b2b9c27e821c051de2352e101c4",
+   "after": "27ef965721876e1d2054476e0e794fe0a7f4288b7e70dbd5f2b0d70b561891c8"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-oblique-tangent-120-60.py": {
+   "before": "95c5f23f09b54ac4ab15ca68fb3114f68f088a061b49120fd51c1b24caf52803",
+   "after": "8932543ad5083394183e9c4bc2452f7041384f6a28e55663bf25321995d7616c"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-oblique-tangent-24-0.py": {
+   "before": "730e5eac1026b73e34453f626b9a796ab9929d2e0fd4f07284a237aae4046098",
+   "after": "096d5011a37a84cfdf9b36d7d066a91793cd2a09d073847d188f98007abecc74"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-oblique-tangent-24-60.py": {
+   "before": "c0f715075e5384faf08ed73e2a32bf528bb185a92259601c939708923fcc6bbb",
+   "after": "af06d369307200d73f2470f50ef2d2638c856cc97e86898ff1e488ccd5885113"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-oblique-tangent-4-0.py": {
+   "before": "feb153fea201ed5562d81321cde7772f491b3989528fed498f22b87ebc3950c4",
+   "after": "e15a2d9d6389aee1f72c17e4eefa426ed70c53d87a3b58bc6113a6904c623c16"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-pickup-1-0.py": {
+   "before": "fbdffc409848ef57965c7b9442c522fbbe2724832c5c4adc903764e691f4ea60",
+   "after": "f92f607a89d4f10d04066fbf6d16c9ca161d98213fc57127411b6f53d67bce4d"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-pickup-120-0.py": {
+   "before": "06286dbab6c808441b2b68b4062a0a4b22eadbf9e578425f87cfc9c9bc69a6cb",
+   "after": "06a8062ec92858b6bf2de19466093e5fa18e4ba3a4434e3254230d862a714b45"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-pickup-120-120.py": {
+   "before": "325237769a0c34c0080184598605694cf4d872090b26532eae0f1a029becb586",
+   "after": "2e58b19797360d61293f83416e71beb6ab8bf5a9b5a77b78cd298807038a6a3a"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-pickup-120-60.py": {
+   "before": "64373281b3e4b941bbc08a6c81eea29f0d7683b95a70bb8236c49c362f33633a",
+   "after": "fd487d49d9847a1cfc7b9075dbb6400083f991895e40645e07bb0cf32207edf4"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-pickup-24-0.py": {
+   "before": "ebc39e3f2fc14a5c17d4890e827a7713400fecbd2e74c903f22ba2a01a1214dc",
+   "after": "b9a10eaace8b0ea3bdd7d90eb24ea2c46c43026f4a3830c80c7d80b345123e1f"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-pickup-24-60.py": {
+   "before": "3efc39771d07419a059a3b49b377b308b2e3edf92f8babc6f5098dae7bedaa00",
+   "after": "ebcfc184ef2c32cadf17dd174abf44bd4b72594f454345cf8705c4856d66299a"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-pickup-4-0.py": {
+   "before": "5df1e5d9683d1914483a41c6bf4102f0280ca7295ce22a4c96b9456568bc06a3",
+   "after": "3f7cf7e578c89e4a6adae1b32fe5bd099dbc170b14fe21d5234690dfb05b6eb6"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-soft-delivery-120-0.py": {
+   "before": "ea86433dba11a6d7f064e718f82fa183c81cd463986368abab0dc87de35fb0e8",
+   "after": "ae39f272f3813aa1ba72363a7b768b0be3760bcb5ddb9d32d50cd049733d6d9f"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-soft-delivery-120-120.py": {
+   "before": "7b0a8ae23b1a37344474ea8cc16bbeb091bda34f79a2fcf00dba3683f389b40a",
+   "after": "78a78e92d85dfea63081bbe1af66320f0df0954e13bfad1836d576f695cdafab"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-soft-delivery-120-180.py": {
+   "before": "995ebb355cde830dd3cf91f11e27da18feeab68465aaab20de273d534bf1eedc",
+   "after": "cf50c173203897df4cb2ad6a8d87ebe5c244e64be73a16093ab0548cd52b3c7c"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-soft-delivery-120-60.py": {
+   "before": "c80febb90f42445dae74852fc69e5956e251394abcaf85a1d0da8e8d2a49765f",
+   "after": "5acefac539ce9fbaa8b328387843f6ae151c07bfd7ff8af345390860e0bd1a6b"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-soft-delivery-24-0.py": {
+   "before": "8cae0efa31385d0fff1dcb76cbbf825a66b2c5e8dd819d7c31abdb778f3ee33c",
+   "after": "5d126c9e6dd6809b18e58df9a8bf1094c36bf1159927b7271574d456a034855b"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-soft-delivery-24-60.py": {
+   "before": "9c1edde50bcbd9f0534b1595cf84effaeac99a712009c266271bce163cf1b497",
+   "after": "a6756791d413cff0dd06f51d8fd94af7e61da46f9ebc5bfced578df0871b07dd"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-soft-delivery-4-0.py": {
+   "before": "ad956b885028fb79a03569d98fb783b660cdec2f73db2ea92b45de65f42b56b4",
+   "after": "28a5ef4b404841a993c4d566a95a37205358b72004754f5966af6f5eba2630ff"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-soft-shot-1-0.py": {
+   "before": "828be1b3939f589e5297e24cd1e4fa571c279eab83e475a6ce54eaa873909e5c",
+   "after": "1bd023baab52313e8cdb5a8ba8820074970cfa80719d9987932c166058ab95db"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-soft-shot-1-120.py": {
+   "before": "cecf6f9f0001bab4c54b6617a099f042c73bd75bca9bc7dcceb7e7dc339100da",
+   "after": "19ff3814f6481410ba7f0a24ab3345ff974cdfc2841c949863310e794818f6c9"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-soft-shot-1-180.py": {
+   "before": "4fc9530673a74ce1886868fd73b82da42d3b8fea8c977e8353a7890daa5462c3",
+   "after": "44335b2ae0029e56d28843e4c8064a4333b85a51aa929cd6f0a013af55bcb663"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-soft-shot-1-240.py": {
+   "before": "fbabf1c53e390d999d8c07d1e202a9eadaeee847605cde50e5a9dfc0a2abb688",
+   "after": "a6f7ab23d77ff52a9e48459e292acf4b6a54eef40d11c5eb4c266939dfffed30"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-soft-shot-1-300.py": {
+   "before": "d6da2bfda302bd4c9d828a18cf49db97cd3b906f33db358ebcb3dcb4d954fe96",
+   "after": "d3f41648d8c3cf184dca8e69fcee8c51c8e474c4dc3b80b3da6386c6dd788865"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-soft-shot-1-360.py": {
+   "before": "501990f1ddbf142762425c07416d8a9cf95869f85557dd96ab90c00d56e5d888",
+   "after": "9dc451a990588feebc7b156a98721a0b83708e22cfc85496931ee19426967702"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-soft-shot-1-60.py": {
+   "before": "834b73e7ea27ae2b9ab1e250b9fed5aa0becfe0d2c4d67023fe0defc1bcd9779",
+   "after": "0bbf92e17e3ee272c8ce9893eeb518d908e3994022fa81a32e78fffe74367be0"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-soft-shot-120-0.py": {
+   "before": "c6f888a601c5d615a8b978a6e36fc6a7ddf6fedbac2260a908a996b6f03a6dd3",
+   "after": "7de0dc835ccfdb92346e816487d59b58cc862bda44dd0ac717ef791c4a053894"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-soft-shot-120-120.py": {
+   "before": "4e15e3186ae5ba3bd823b6a93fff7afbf218bf8bff4a125c829c0169fc704f01",
+   "after": "ff7d4510ec080bda6ed3f8176192f919d93f85f3bd676653bc04e935eb9a960c"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-soft-shot-120-60.py": {
+   "before": "0f077d02a16cdff4a326a7d0ea1ae3c0b3d4effc696b658de5f4cd9d472cfe4f",
+   "after": "dc9085a697fa73efd8779aaf620ce95c82ba423ad5aec3565de7a009a1fbf4c3"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-soft-shot-24-0.py": {
+   "before": "e00ac7f6437277166262cd0d4318ec9cb1592d641212d5371e2361e97b3a8c31",
+   "after": "cad2d67aa1f9bedbde1b2ffcc25c2cec0e265d5a991a376a4aded093e993114a"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-soft-shot-4-0.py": {
+   "before": "cda82b14bb1c80312d487c016454e9318ce8eb84af2286044aab080662203c45",
+   "after": "a1414fb372064054a178da1a0700c61ad9183a40ea39bf479ebd46a6cc06e3b4"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-soft-shot-4-120.py": {
+   "before": "f6514c9c9de764db9d6dc0ec7cf6bfddc6e171cff322225ed5d7c6190ac4f09c",
+   "after": "2de3fdd7b983470b861e0b942071054c82ccceaeb890084aa6cca30e80d44707"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-soft-shot-4-180.py": {
+   "before": "581d8d0742323ec23f4f32ba54d9d64a6d225a3db29512a770d3d819cbc627a6",
+   "after": "3d3110a34fcb105cb4dfb5be4d090c1494a9698abdc05ac8c52433604f12a83d"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-soft-shot-4-60.py": {
+   "before": "d738dcba187c5e6765fa4016a7e2f4c40a651fa5568b1cc9af5969a3db5b6cae",
+   "after": "4fbf59391cfbb4e373100af802d06a1a6f2ecf0a7172c8923d7982e92c234acf"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-square-tangent-120-0.py": {
+   "before": "5307d1e93b515ed98805cb46ea150e6c43ffda8359592ba71a5c0f4ae898070b",
+   "after": "ab4aa54858c300ce3dbdee4c86ffddc78261e4d2bd48aa553d0537eaca7ac631"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-square-tangent-120-120.py": {
+   "before": "a13f30c126a85f4102865875b82feba3f0d68f4a2fd914c34aa02b47022b28be",
+   "after": "8d556f35526400d0a68c31a4ef670e071412cecc1a0e728e7b2fa31457542399"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-square-tangent-120-60.py": {
+   "before": "af5c3099b742c49c7a74071c16c7962d320ad4d1307afff27a24ddc1da49f887",
+   "after": "30d492cc19cc8ac667548512e40ef2bbc539bfbc1f41b26aeb8c50264aa535f1"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-square-tangent-24-0.py": {
+   "before": "a7dc326d102e5fffc2b37205396f46d65f62c92c85002183c409eac1a8114dc4",
+   "after": "f7b3d61df896d52209c54a438231543dd73203c8ee82fa70c4b3073211170c5d"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-square-tangent-24-60.py": {
+   "before": "68c3c8931bdc011c568434ff1623d3a16425dae78ab0c7f04d0e5d574164e650",
+   "after": "18b2d32f88f25a6587180d8ea834017b55b316841c2e5b96d1a72c680cc6c961"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-loop-square-tangent-4-0.py": {
+   "before": "f49a560581bb58804679c8fd8eab2b04cab2126483ce9d212a98ee59240efc2e",
+   "after": "9a6164d363cfb0991e90dcc7b6ea1c6cf18e6978843be236d3088524706376d9"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-2275-1-0.py": {
+   "before": "6325dc104825290232ace1e12c2312c98d673fb0e529035f6532f603d821d422",
+   "after": "222a5638414dd1d4a1043c765b1dccc22637bab72c3f8cdcbf02e15612786645"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-2275-1-120.py": {
+   "before": "587d4729cb134a601847ef503ad69eb364ccca71d7aeaf202f3737cb265b7adf",
+   "after": "27a2415934b8da949686d5aa15e5a8427a47030299d1c197e95fccb7c65ad81b"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-2275-1-180.py": {
+   "before": "6a02f2c22994b1065a3e6052aa69987dc098c25df6511c493149823ef67eeb2b",
+   "after": "678963c8cb2c6a5b5143d6aab2f4608b7bcf4b7fe1c5f5ed6b208de931095416"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-2275-1-240.py": {
+   "before": "fbf1daf9d224690573214aa18e5bae0ed3c852dddc1a1e56d4a68e6593ed80b4",
+   "after": "c0296c1ec1e298bc0a3644d5c913cc36eb44e493ab2cc65614c677058f1a8955"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-2275-1-300.py": {
+   "before": "f2e23b6e9eb55b7b959d68765bc58e2e2a149f51c6b1750a76bb0a6024dd9f25",
+   "after": "fd7d182f181c05a68233fe3888c4dff45b737b434843590f758d0533534450ec"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-2275-1-360.py": {
+   "before": "d879e58b27a784be880e5c2526d4059bb4c02c77e93859ff4fc76572b93735f0",
+   "after": "54354664731ea4b759c021e945e755af5ae4b0f6a12619d9519753ed43ffe175"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-2275-1-60.py": {
+   "before": "babeff29ffd57573bf8b9291529a27bb8cd24054fc747a891fb288f1b7c33604",
+   "after": "de40d8e64766c1a9764d92161295cf6b3af8f75171d0d75274772ab7cfda0d38"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-2275-120-0.py": {
+   "before": "a9118d9fdee3f05bb55609358907b1f891f8a1de02989e4bc5711ca8e66c19ef",
+   "after": "1f5e486c74811535f02e2ba072cf94f9b939bde08e2bf572076eebb9d5b45f0d"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-2275-120-120.py": {
+   "before": "1724ba8a6efdbcb7ecf82025c7577526f5a7eeec2aecbad772e18ed17e2b1fab",
+   "after": "e1ccf786cf39fcd6036243805018f0ea086fe0a59b4c192684eb07f05e3c1c68"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-2275-120-60.py": {
+   "before": "7f77da5aa5cafe17636fd2abc9e3af3961ad641a6c5b3a877f213a18d96c7d02",
+   "after": "50e3966c50db708789973adfd5f18f878dbdccde3882caf1cb2bddc01b3d0429"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-2275-24-0.py": {
+   "before": "1e244ec9385840b6b09152993ce06bb1ba35e986d84a6be8866b2a1ce2a9dbaf",
+   "after": "62ef2da2dcd402d5180a13b4a8f7f365efbe1485fe1f6824c26dc9e8dfb71a24"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-2275-4-0.py": {
+   "before": "8368af489ea1335f39a7ff1dac22a749a7c3672d198f284fb00280f1c872e4b5",
+   "after": "fbf25ff515a5226ef8a067c737a8dd48fe352f111d362456e804bea1f533f393"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-2275-4-120.py": {
+   "before": "e1bb00a7951af7094843163a00e8755f0d7dc228e9aff8dedf0138cbc1ed9ae8",
+   "after": "e0bcf885addf81857b0a14dc45fe35f0f4a5b4821ac40f8aac5c507f1551782d"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-2275-4-180.py": {
+   "before": "0991a539fc4a53ca7e3954020bcbdaefffd8117a2d961b0fbc595758e73796dc",
+   "after": "a31f1db1be83e878a7f3b00607d242e69e6b99d756f32a24e7fe4eb3332bfb94"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-2275-4-60.py": {
+   "before": "dc85d19e189111ac4654f94574512675524275939e18b1c06bfe7989eb36a827",
+   "after": "fe2de9c8f32a025663601abf66e5df2bf5ac3ec8addd2f7d9381dd1e70918fe2"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-230-1-0.py": {
+   "before": "7491035943d492db53af883940ceb9bc8864055fa06cf13cab83ae33d6751052",
+   "after": "4ade6f226d98af8d74e392fd0008ebad839ca9978f2f2a7eb86b4dbf4f113bec"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-230-1-120.py": {
+   "before": "d9fddbf36c8c0dc9eebd411db6c8e44d85e74f0d00e93a56fecaadde69bb623f",
+   "after": "996966148284034f9098f094b5c4a034ba83881b9472c72a2b6fc55089505634"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-230-1-180.py": {
+   "before": "bf35318d3775f77595d8816af0738d8eef12167c357dda7824a8d57ff5d13d40",
+   "after": "3598b0cdd612dff774d634da1c621bc73dc024cafcc775015070b08eb7498c83"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-230-1-240.py": {
+   "before": "a41de1401765c68f24559410e09e78bc060de1c46e18b1ebaaf6f641f6e52355",
+   "after": "314880ed4213077a2c443890d30567a3eb8379ddb2b2445b6212fdcb405d69fc"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-230-1-300.py": {
+   "before": "aa5d7457ea8992dc9721f099de84d6d6e150585250eb80bd3e7cccdca7e794cd",
+   "after": "20ea589201f63da6ab5481d21fa8fa0b02db390b80f979491d290eb85248dda1"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-230-1-360.py": {
+   "before": "94b099943b784f7ef6646df0ad07fabbc7d691005047368c81b72d5e9cb7c5a3",
+   "after": "c3582a34bd75a8608dbcc87af106f3a4aa91602853e3a2d54b0bdbbb07fbffd4"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-230-1-60.py": {
+   "before": "28850c1e778b32152deb242719355d6e9055f16e3634af1eb536eb5f8f70d6ed",
+   "after": "6e551ffb686734de50b5b8801a6bc263c30ea8d29fc9646b7a1acbf301b87abe"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-230-120-0.py": {
+   "before": "f90e19f5a01d3b8fc1474e421857ea178c965d39e0d446239768590321a98eb4",
+   "after": "3c8dd0b3397ccc2dc0a5adf702f7e2067878225c3be9438cf90530dffd913078"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-230-120-120.py": {
+   "before": "d1ab8a166ae254ff28e3501bebb40b2391b66e3d2174a2348a81998bfc4e84ef",
+   "after": "dadea9b4c155aa7bf720d54b4b9dde06925bb7fe081a12de517bede6bd17d271"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-230-120-60.py": {
+   "before": "fbc384df3132d90a0d2a3f819b489cd6eed5a82f5503bc00e2445a3125ac13e8",
+   "after": "9e52b2c7cd4b5b329207fb953e4f83876aafacdfc676aa0e27a870c4c48026d6"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-230-24-0.py": {
+   "before": "5e001b66df0f3a25016e366129facf70a02cbcda0cea7527cb81c22b8bd2c790",
+   "after": "8584448f3118940cfca7d0f3a69161993f13f96c3a3afc693e9761cd58fae3fb"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-230-4-0.py": {
+   "before": "afe1e10a785bfe1cd6b74a982c069d3b64311852c28e2a8b6e8fcd7cbbb97817",
+   "after": "63347a58f7d9c26ae44f4374b1b94f1aadf817adb4514e62741a9555f8d6bc08"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-230-4-120.py": {
+   "before": "688a2296970649182b2a472c97f71e2ef793e96aff74de6bc92a11b52337dcd8",
+   "after": "19c9dcc4d6a3a3be78b41de9ef2d8b85f7688d6b78e8e34c80958846e9603e36"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-230-4-180.py": {
+   "before": "3851cc037ca0650d44b5fa205c8dc30faa3bcd75ccee6b423f8f75ea6e5aae40",
+   "after": "b70612d7f02e72f6237b1475ce4e863c32adfbbec43490eef9a7ad1f60c03b37"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-230-4-60.py": {
+   "before": "e22fc44c169e606cda9599979e8f9c21ffe3d0d40246467710d4c8e94e85a8e7",
+   "after": "c0e3919cdfd26636a8605e230dde24f1e25848271505c77d617d26666f3a5dbc"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-tangent-120-0.py": {
+   "before": "c3e69ff0269814e8da702b9657473d15365ecd7dcbb71bc403e8df8ecbfd0912",
+   "after": "e4486fcf560631a044df88c92c5c1bf843a9bd03b0c76d99050bedcc1b4c8126"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-tangent-120-120.py": {
+   "before": "79ead4d0e92a08e2f94e588c7e4aa49a7e16995da40bda206efb11c630285b03",
+   "after": "fe951eba3f3626b1c17e1d240fc74cb3497c4a00b1666d99a1fd2bbfceb232ed"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-tangent-120-60.py": {
+   "before": "5f631b78408c5ca8d396fc8e62ddc990e494834084991797c5fd94ed148b6a00",
+   "after": "c91266f18793a840d1a507d6ff56272be501353374cc42c3b3e32f2bf9d2da7e"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-tangent-24-0.py": {
+   "before": "25e350bb33bed6d9427d5341af3ea36cb6d48e1799e4bd376aaede2f2eb6f9b9",
+   "after": "36ca030bf7d27ac0786bb948384e50e4748ff9b056a4fa47fd851e87623c3c15"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-tangent-24-60.py": {
+   "before": "37fdbb32cb7f7a95821e79e985f2b14ae688e92c52fc52fe894fa5f621457650",
+   "after": "eac9f7defdd601cda41aacfc3d6e95ac6fb616905b3eb158dec452086b0dcb79"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-oblique-tangent-4-0.py": {
+   "before": "800cd69ae47d731b41be8cc199ebbffdbfc814a492f3a5c8de95b1ca4fc23a46",
+   "after": "9c23e58dc8ef539ec9363ec4e7df21235a2c1cfa8cb3a0d7d04d3e27702bd8c4"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-soft-230-1-0.py": {
+   "before": "520cfcdfb979a52f3652d993899af135c8ccd6f46e80dd1d9e9e6c7bc49f4bef",
+   "after": "4c04c8a476ac3e813f36fdf4de7becbbe22f06e7c24d33e6ace0be1db66d3d9e"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-soft-230-1-120.py": {
+   "before": "8fe5905591bba01f09231d319363378ac90259456bce64aa4a2d4843f8a39cb8",
+   "after": "d9355e457c5c23834780d69dd31a5ec1b8cd39d66428fd26915812a141f8f0bc"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-soft-230-1-180.py": {
+   "before": "33c8aecec6a9e16e8720c9bb3753b1d42d52b9e3be11fe574183f582bb5fdc60",
+   "after": "d1459c574c215c46734ba110a5a1fca48d21848b420aa1d234d648071b3cf156"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-soft-230-1-240.py": {
+   "before": "53c3ad25d5999fb123f80d8ff4384783e8535dc907b522ec2ac945d7409f4b76",
+   "after": "62622132cd97bca1e896cbd215dca49e27cda2c67f8f302f1c489e344a2de0e2"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-soft-230-1-300.py": {
+   "before": "f69da829aa1c9ddf2a9748830467fb516e91c4cefd4b9b2603154dc41a1e9d55",
+   "after": "4484507a82537dd55471e0df6e9a5460c45267c9226024f0ba03a9452daf4b0c"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-soft-230-1-360.py": {
+   "before": "2ecf00b31e9c92b6200c2f3ed26019947f3d21fbb2279bc58bdd4aaa47c0b212",
+   "after": "a57a4241835032ca3be341c1f58510357adc4d947d5aaf8b37731b0a3686e9cb"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-soft-230-1-60.py": {
+   "before": "c23aac75aadc2d16124ee3f976250149c4acbe77c994cfe886053aa53c8e4fca",
+   "after": "94c5abc7a4fd787405273a91cc15eac5b76d48b221e96683ed13a35ff7c72761"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-soft-230-120-0.py": {
+   "before": "b86dfbccc1db4ec46a2a4dd2d8c8647db94d91c5ad51eed98df096823e60c968",
+   "after": "ca737de2d1ee817ec355f8828a3fb706b1c5ce54b53a1c5627947cc507efc3bd"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-soft-230-120-120.py": {
+   "before": "84f30ffbd9ebbb9b38b12e6a21ae20442ccea78fb85d2ab6188e3eabc371f0cc",
+   "after": "d9d12a3726132cfe558bc6013b041f52c18f70800a3a81746537044d21d4abfe"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-soft-230-120-60.py": {
+   "before": "1e361c3a5dff358333b5d51df4d550c7a24ebc3d6a3c8cfa01195896c397cca6",
+   "after": "5a2a4fbe9104e0aa1b9f6e2f4cf6baa88e7543e933a9cca106cd4dc056d43160"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-soft-230-24-0.py": {
+   "before": "e06ec962e8f0b327a7f3b73594e8dc72712f23ccc8ac87b1dbf086bcbca8081f",
+   "after": "c98106b06b65bae02a2b35e8539f42cbf31c1dffb607a2891edeb09d03482c4d"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-soft-230-4-0.py": {
+   "before": "57bd4b098f7ebfd0d5d77931f3d7433739532b747919d05b91a4459ed2475746",
+   "after": "01f56438b74340c4087b48e9e3f18f15aaa07da3e815264a7e86fa69d8be2865"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-soft-230-4-120.py": {
+   "before": "b7dc55500d015cc17d836bde51e6c14c9b4c8fbef1b555fac5ac856271d166f6",
+   "after": "e0ab48d40d78c82c955deb1565d418ce66c884c09d5bcbad9227ce7395af3519"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-soft-230-4-180.py": {
+   "before": "7e9daa7b9f239f0ea231a42e56cbae2807130b9db434e37905de003a1cf1a861",
+   "after": "7891458e89a0f5738cf5e5012ea6d15d3c36538de362373efdfc00f0e1df40c8"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-soft-230-4-60.py": {
+   "before": "6cd4e2b0a63611aedcc9cc0c84e9e1044d8e8041daefff79f7a076b46a5805e3",
+   "after": "02fb69baf9d8f593b9167791832449b4e9671c56ff4f1d28fc3cc3f52c5a4fd8"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-square-indexed-1-0.py": {
+   "before": "d5eeafc5aea283e60a84e7c8daaf27c02cf2c8532a684da327ef8b995183d017",
+   "after": "5f9bce6f82dad16e1cc9af9d0ae3bd3a50367ad60d130669e8fdadfc38a9f288"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-square-indexed-1-120.py": {
+   "before": "79f62a124f5270c30fb491ac4904bc6217c7d29caf9ff4a5aa6801d40ec99db2",
+   "after": "4e0ffb63c03a1d396284980ffa2ea42e8af44399842f8e01ae5192dc79a1d6c8"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-square-indexed-1-180.py": {
+   "before": "d5bdde42c2700c3dd5dabf3d7575bcfa0cb7e50de30d6f84d47716ecbf51f2ef",
+   "after": "214334bbf3807dd8512019db018562a3d9e8be9da05aa84c573b13631401df21"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-square-indexed-1-240.py": {
+   "before": "2b42ada564fe0374ace79ff2e158d04744a0faacf626804d751738b136939972",
+   "after": "fa9995722fba213dfe3f05e1336086e3cd3c877ac110d58ae867edb6d3b7b3c5"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-square-indexed-1-300.py": {
+   "before": "ad6e971fdc851c126328e3a8c9c918b292271017fdf563e238374bb1c972c5e5",
+   "after": "4a2bfd825b0542fd618cc5ce8d8a5d07a3ecd63fc0ffa3fa7d3af55cfe12d623"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-square-indexed-1-360.py": {
+   "before": "ad94c029b87f140141bd337c67a9410e5942983ee2af4803ab7c26daa488448a",
+   "after": "18e0096c2eb9cb351b5877d87ebd389992d7167faaea554c4b8a9accbf5ad7c1"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-square-indexed-1-60.py": {
+   "before": "eb8bf2c69a1fbfa4aea4d21a852e6dd8946be39dcd2d3440c3ed4c9b71a38f69",
+   "after": "04cf56aed764ad356d8515cbca68d4c6d1a58d15bb345c288835ef40a83e3f33"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-square-indexed-120-0.py": {
+   "before": "4fc243bc05ae23ba07e3f8924e5658465fe409005faa9c7fd5f0cb4d4fed3ba4",
+   "after": "e9e5893d8da4a196e2b309d852451fa681821fc1cf5db036f355a3f77393e6bb"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-square-indexed-120-60.py": {
+   "before": "8cf69dcb9ccfe9c69d5e2e3861949f153c1585b2db93ed81aa72a82ce5e831b2",
+   "after": "2f7e5efb7ae5da6df1e3af478f6cb19d26e8ffec6b24994192d42452acf59b0e"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-square-indexed-24-0.py": {
+   "before": "c3204561b1e78e056afd5b7b5c64051c4e28da288ce5d7150131f83f2aac1a55",
+   "after": "ab69b9209d2fd925411c4aebe51fe51648fa7b68535fa3fb3702cd8d89c9008a"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-square-indexed-4-0.py": {
+   "before": "39d610625d8e93c1af22e7d1322e2ab7cbea5731fea082600f5cb382782738aa",
+   "after": "f64a7c90f62a6bbf7e757072baea70d8f9c193e09af79152db3090a1f20d6363"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-square-indexed-4-120.py": {
+   "before": "e3ce6b92719d584c2bfc9727400d82c93b6bf2ed8f8670093abf990484a6f5e7",
+   "after": "0d8fd1252a8006d53a452ced143ff46f46f13240a0550ded773686d8281a45b0"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-square-indexed-4-180.py": {
+   "before": "ab111d1ad27c03863f7893573e6d8bc00c6c4e7d96459b2175a2ce826df070de",
+   "after": "1c330442108d699688c40ae37b781ec7ea3aa4210f3b0190e3059e4807fa0249"
+  },
+  "2024/six-speaker-20261118/fusion-native-mid-square-indexed-4-60.py": {
+   "before": "720123c98605fada78c57107564ad9c72433e7cd30532004df0942c3473b2508",
+   "after": "ba74bba328b9e0c8d90947d6152fff1709ba4aa30362b756d22d60a3cf850daf"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-balanced-1-0.py": {
+   "before": "77e1c336f003453b5c2e621387b06548852c1bafbddcb6f03685a29cde54f4d3",
+   "after": "b10e2d1fa5f8fded3cec40ce93d8c2e0ce7e44825c53ad7b2baa3cacf6259a96"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-balanced-1-120.py": {
+   "before": "0058bc6fa7ba073bb4acdd522f24eff75d67a6fa2265f71066d4fe51767f0921",
+   "after": "afffaa8f1b99ef11e8fba07e486d1ded5d319b6ac12a95032194015182a8df64"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-balanced-1-180.py": {
+   "before": "b66382c777fc177a093e5522a55ad5aef5cfb43411f57467b43b8f6f98329009",
+   "after": "acbf66bec716b0b26925e90daeaf5548c3ebfc7dabbb704d583234e548acafb6"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-balanced-1-240.py": {
+   "before": "afe9dbd431a6767257df887e97fe402353ee2c89091d8c1299dfafe3e6843b96",
+   "after": "b0501431e6aad6ff2604a53c1ac7fe9d9e8e04e8c5f17a3ee40edbe484bb1cdb"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-balanced-1-300.py": {
+   "before": "55e9507eec4d0fb186836043b6c2da86640e7233db9c6ebd7fff18b91330dc8c",
+   "after": "ad7441893062923ff1c1bffce5fd7a7d4e79d84a00d1b9831abcb6e86289f90a"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-balanced-1-360.py": {
+   "before": "d7d9ccc6f02a4b0a5cada0abaf4abfd133976025ef1c56729de1296969337963",
+   "after": "15c3e52c95f66d0bfa09ada35dbff46a62e71ceb8659c9a2427e99d40c21db57"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-balanced-1-60.py": {
+   "before": "c811c700c4f6734ee35e4b545224b16e05fa7c652239e6d6792fc8759241d72a",
+   "after": "a216856b07ee7aa22e11bd4c6bf685c5b75399a5c314f0a6c330bb8d66430af8"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-balanced-120-0.py": {
+   "before": "e873b6bceea2ed87095c674d4dffd6ae27ba8ebf126abb85a8048752a5ecf544",
+   "after": "f8f96a9399d3db85107122117dca27058573af6431c2a8eecbb0d8d93e250f38"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-balanced-24-0.py": {
+   "before": "f05acbd23f16400930ad2033bd49a76d5e37af5afc2c29287677500654a4cde0",
+   "after": "f3a9505739c17b03190c9096920942374fa847d7adb4694a3203401bcb972c61"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-balanced-4-0.py": {
+   "before": "9e02b26deaab5ea60718bbd9c32259942278a8f22e8efc6441b6f2a8a3b3be70",
+   "after": "1aa95be040fa4e9b92fea8086fcb0fea25607b02b8fc30298c03b477f025d85b"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-balanced-4-120.py": {
+   "before": "11969849de5aff48ecfebf635170522ce1dd1d58f341bcac9a20d4947743b772",
+   "after": "1353fa094badcdf2be12389dca689cb592e1e6ffb56263f26e0cf9be955422d7"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-balanced-4-180.py": {
+   "before": "389db62ab05e6f4093d4171c3328cc22d088ee8b8bc8f56f2d72a67fbe2369b3",
+   "after": "6f6e81b76e2c5af40d6349bf9422d8ac152f96b34c4412f89bdddbf04450c27d"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-balanced-4-60.py": {
+   "before": "c4e0e8431827a7934eaeafb61b71e7a969830488829763cbf6ad781f16d9222f",
+   "after": "eb29a632a6183711ca89815ee46b1ed505b7b18641cfa725b5c2a55a943e0d0a"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-delivery-120-0.py": {
+   "before": "cb20b9f208e23ea54e321be6d5be722abd16f2f35972e23d94306b7e54e528ff",
+   "after": "d8f23250c6013c365acd8de6d86d58f6ce3e60ddc4e2c2821ceb677c82a20bb4"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-delivery-120-60.py": {
+   "before": "3f55aef5ad985ebe640008ebbae77860d170c8990b3f4dad137a9e8d7749638d",
+   "after": "a6f67c71eadd736b3a4ce4d09c478e535e996b8e4cb61eab1cdc40025af313c4"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-delivery-24-0.py": {
+   "before": "b0602e82601563c500fcf1a53413b535cd4420efafa855490be31a255661556e",
+   "after": "0def72f9a64391fa4b3e07e417d09e12bd3a944779641e8c0446bf93f9e68986"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-delivery-24-60.py": {
+   "before": "75ab20394e9d4567da33973034130e7930a60ae6266e1532e9d69e1221017dbc",
+   "after": "c167b497eaab90d93a56c9159d6ba9040a3caf3f83a15a76be23bb7b70f5bca1"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-delivery-4-0.py": {
+   "before": "1b23596c9ea0b9128ef7923132914158e1fa134c22cbe41eccb350ca38ab2309",
+   "after": "edde3f6880ddd59278167ebe9d6c667f9ca16af23018f27f683deb476197d73f"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-delivery-4-60.py": {
+   "before": "a4d95a128d4225b4d6b36920219206cb0a90aa09e087ebc229b7b0509610b70e",
+   "after": "f3e262a62203c642e443c85ce7554fa6b1c6fa4b52b86b8cb070cda2e4722f24"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-shot-1-0.py": {
+   "before": "2fd74a5f3a7ed6bc15889b47321f7ab3b290eca980a1896b919ee4f312790042",
+   "after": "47dd964cb97ad35d72dded4cfd23cbd6cb0e066307b0e85146d2badd3ba093fd"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-shot-1-120.py": {
+   "before": "0a34af80a8f9911fcdf5d4272f3c0f1293106ecf17e2645e0e43821c13add7c7",
+   "after": "7243ed8bcd1b0f3b9c0c09c6f6a480f932507c0950f85de4c959cf6af3b5e95d"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-shot-1-180.py": {
+   "before": "1b7b150d823e6f580fe1e56a9ed8d01261a21e27059bd7d5a6f453e001074c68",
+   "after": "70cddb4be35c68e83b99f8da214847beb099cd1c121ef50d3eb807ed93667fed"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-shot-1-240.py": {
+   "before": "2e8edd8ec720b110a433f51a1d9799c0c75dca45e030aec630958015367c1a40",
+   "after": "98532fc836d704e1f701d0286680b84e42ee0678fa58bdca673dc405c44d5183"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-shot-1-300.py": {
+   "before": "75ed6e0d6c8f305a9ea61df4296c66971eaf2b28d1c6108ee91d9f29a236c60b",
+   "after": "b800fa3c3100493b8285951a07c3f5dfa5546737db7afabbb7a6f0a1393166d4"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-shot-1-360.py": {
+   "before": "56f988711b4d98acec66d9f0d2ee6c6360126bc1f3a86d70a988e610c233d9ce",
+   "after": "e1871c0c84d1ec3c521261cebb547d5f42b152afe02a05d4fca8d0c6aa902cde"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-shot-1-60.py": {
+   "before": "7e036fbf20bbe669c700942b3104727a00acc40f988f185e14d56395aa006e13",
+   "after": "fb946683f54478dac2a8e46775f18ca0eb673273bc0885f454feb0a52f261ffc"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-shot-120-0.py": {
+   "before": "d342bc3a2df95ecdcd8e11e625628fe7967c1f8d154475a980f3b292e13c28f7",
+   "after": "717f17e9bbba855c29df179d382da93901d052723f671e6b3c92bde0ddf8aa59"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-shot-24-0.py": {
+   "before": "b010ed29b05a603af12e1d861b17c06f608308d4f7b375cdd41bd33a99701673",
+   "after": "f080263e169e318d569d2a4ddecdf1d9e0f9dcbe0d00f435823b0c5d9a81c066"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-shot-4-0.py": {
+   "before": "98bd445d5a763f2d45ccc64e781e6ec273928d754d39514cb77ad4aba5c671ae",
+   "after": "7e030fa933bc61b13d34d3e009b8e099be3fe5736d90f6e1a9a438bc92c62f51"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-shot-4-120.py": {
+   "before": "762c20e3f9a9e32520a5c1a7c180c7066c88eb87b75bf36e1080a0b9e3dabb82",
+   "after": "f4074ef02348b82e466e3be803577e3dc61cf8a27fb93ac493276d30f07dc881"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-shot-4-180.py": {
+   "before": "c4820ae8a3429e22ccfff79d8003be2615e697400f6190591f842a185803efe2",
+   "after": "a4fe8d275a6a028cd5c462c55fed8344b1fc4889ecbca77a15c6e74483e13340"
+  },
+  "2024/six-speaker-20261118/fusion-native-middle245-shot-4-60.py": {
+   "before": "ca60e45665f810cb0bd5d9f1c645c44fbb6e025e4086a2f93b8d2300800c9aa6",
+   "after": "7f400a6a82aa8d4e2c022947a07742479e20f21b70d715f611bc48e51b7c1f0d"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-short-approach-1-0.py": {
+   "before": "998041eeb07c7afaa49c43a17940baddc76f375d6cf5ddd7c1429504cd6b4e69",
+   "after": "20fe3c069ea748d8ab633728c7acf11776d289de246eb121d6f53aa1e66dcf6d"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-short-approach-1-120.py": {
+   "before": "31a643214a428d4ceec16057e1eb80712069842f000da7d8cd2258b9792dd770",
+   "after": "ab38ecbadd445f6571d8173f8d15e73c062cd8faa56042cba7b987022fb50b37"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-short-approach-1-180.py": {
+   "before": "aedc6dec81d60f74074d0da970c82cb23072666532cee87ab39ed4ee2c82b91f",
+   "after": "728ce7d0ab6a83c5aa81ff9a51745da9ee4d725bc21a61abad5e15f33dc1bf6f"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-short-approach-1-60.py": {
+   "before": "8119737f4dadd4ab14575aa78835e0ef2aade22325781309e1e92add77613c88",
+   "after": "bc9cb7282824f4a349f8e61c3630f0525e3b0244f498e681d5d2f63247c2c8f1"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-short-approach-120-0.py": {
+   "before": "40d89a45f326c882bfa95cdc3de336f80fe2acb02d3f461aa4d698e8b4ccde07",
+   "after": "c5e8149e4b48170bf6c7ebe8e68726e95297b299010b549b1c9a0e73c5838c5a"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-short-approach-120-120.py": {
+   "before": "96fa30da929d22ea9d253a64fe3df315d680d726d8708c1478628162147fc686",
+   "after": "6aeb7253e915faedea00bb4d5319da5bfc342aa9d40e419ba44d96c99d93390a"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-short-approach-120-60.py": {
+   "before": "d61f81cb9d42a305bea87ff719c91153cc84639cfb22bb6dc9318d95cf8bbe72",
+   "after": "6640a3182ec951ee946873c4c15457f83a04a56308f812f0d4e63eaf24acc1b0"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-short-approach-24-0.py": {
+   "before": "aa26b02dad4342972a3253982f77386c26125d9c44f1dfdc38206d099f1b1485",
+   "after": "3841e10402c9af097f05e2ecccb207e661ec448c946be01f5e476f2d391ba728"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-short-approach-24-60.py": {
+   "before": "5d10b9cc49819789209284e464129bb443ccafc3ad783dbd77301b56b60675e9",
+   "after": "12430ce7857cfd6da65d3d1fc697b937a7a326f3ec3e12f64f136aebede0137a"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-short-approach-4-0.py": {
+   "before": "72343abd64e55b4e4c256040c9bc2b4f519d7970fd266f99e7bb2598de1bcb32",
+   "after": "e4cc44fae9eaf991f9909d1ede62f99c9e2a4426bafee4cc359bf8a9e4209ef1"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-short-approach-4-120.py": {
+   "before": "fafb5798eae72ea4fcc527b48eff9f4fdfe4cca4e79374a377681034bac0b34c",
+   "after": "de6c7fe25eeeb23bff038207803d6af8d665f899a1984db86242ac6380589666"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-short-approach-4-60.py": {
+   "before": "e1208ad4c6cb601f0d2373503d1741ea34225ed1d327f7d610fb6d31ca5284ca",
+   "after": "2d19539d6704e5dd629432e91d12dcbded80933c61ae2cb3ad49c50c79bfefc7"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-short-approach-unpadded-check.py": {
+   "before": "8db46844119cd7e053013c32a0584cfaad46a9ef01e8c0646d4b3661e958e4a0",
+   "after": "40ab053f80aa0985cf4577d87bc73d05df9f938d6861c09fa3f1b2b3044e95bd"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-short-soft-rise-120-0.py": {
+   "before": "18a2c7c34d3d3a4e3586069d426786821572581df3d8cd51d4124d425afd9c64",
+   "after": "d7da4660540820551bd31fafe1bc617c6c478a77d01f5353fab5f8b8f829272f"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-short-soft-rise-120-120.py": {
+   "before": "da72c3809d863545dc7dfa08a1272c57103a6f9e7faed818f8a751313213b0ee",
+   "after": "b878c9be981c605858e98eddb69fdc1c1780ab483f5a41e8c230056f5296ef02"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-short-soft-rise-120-60.py": {
+   "before": "083ba117b9795a5b9e3ad4cf3d0298a66a9fbb922835a77748e1a61cab548a12",
+   "after": "c5a7e65bb0f92fa5e32166bdc00b20bef40d817969f505a7f92ac99fdf719846"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-short-soft-rise-24-0.py": {
+   "before": "fc1adc9461c9d9f67559e38b43e973062157f8ee45dbd38b503cb44cb439bf22",
+   "after": "97ac1843b75b61773e4bf4c06f6924e1a134d61f761a28b44a0e3c28d6e168a2"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-short-soft-rise-24-60.py": {
+   "before": "8449fd752700745eba4979b07d34863d4f5f724dabd26f2cf5878c9da2fd4781",
+   "after": "af8985b7db03814504bae1cd0c84c90f9baef49ca072cd50d4b513237bf4ee9e"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-short-soft-rise-4-0.py": {
+   "before": "d78790780be023eda7fff0fd89a7a2ae295783d6226425fefa1add0edfb7674f",
+   "after": "0719220bd73274d6ca54cf9e4182f513ee4ce85ef943e7bc0f5438a0dec283f4"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-straight-delivery-120-0.py": {
+   "before": "a18ff145c8284bf31e668f7fc983b71d1c5bb3a153eb75704b5c366639421137",
+   "after": "48b86821e4126fd68331baddbe42495302dc35eba0b49c4461e4a5b6fb283e64"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-straight-delivery-120-120.py": {
+   "before": "15580891b925d5086c9f87a9641b16bf40ba77814078792e5637b95593b7c061",
+   "after": "cefaf979374fe6f43cef8c75c781bf020750c2837557058539986a30a2002894"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-straight-delivery-120-180.py": {
+   "before": "d84db4ed9c56d13739f5daae9559fa405147346c12242cf870843a87aba8321c",
+   "after": "a522708f34c2f0b95cb94103f3d3fb8cbee8b596406994e7fe8666118e3680f1"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-straight-delivery-120-60.py": {
+   "before": "9d3cc2d6f0ddfc2f36839b5988b4b60f4d4f9fefb1b2f7f4b17192e4cec0a753",
+   "after": "8f0e5362b55f35be2db00d1ef06ee4440cc36cbba773b651d15d55de2ad12a44"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-straight-delivery-24-0.py": {
+   "before": "e090534b0e18fdae7359204fd3f19adf05d55ddd4b6b48bfd5b49d4d33f1b7bf",
+   "after": "57c9dab4bf6059f68b9413380207c41e5a76f78c698718242489134b9725ce4d"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-straight-delivery-24-60.py": {
+   "before": "c4fc6a6eef838f313988c299a972d78e9400c9160ec8d0f3d2b0bc812d7f2570",
+   "after": "dc6d2a9bcb3fca0364f850a1a4d82331f63ff9b5fe03f2e1f22964d2007b6b8e"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-straight-shot-1-0.py": {
+   "before": "e21cd6c841e476f4378e0b650faec393864c4298a47bba4d43b935331ce6591f",
+   "after": "60b93543d5cc8fee3885aae4fafa1063e44a2d94b917c8053c69209c8186cba1"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-straight-shot-1-120.py": {
+   "before": "433a02f93f73bc9a0b0385947049a117065141ca82d079dd036f43f12528b1fd",
+   "after": "2d38cfce5d11116cdba830456f688ac98ac8f8a5411ab2b44ea413c6c324d057"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-straight-shot-1-180.py": {
+   "before": "8bc1580b34e80beaf502fa328fde0ff872afcb3f60a0c50db366b3736dcf1ca9",
+   "after": "69a7cd88e733073e9c8ad78df1288c784cf819aaf674e5e07bf50e4893793c64"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-straight-shot-1-240.py": {
+   "before": "804eb297d9b5f07c26899bcd5fe57a03c3f65b8c185df3fab1a7ad848a185d05",
+   "after": "9403bc8fc89d42dd6985049b2ddfcf38b5ab365b1109ffde46992ad9f0010be8"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-straight-shot-1-300.py": {
+   "before": "0f7a7558f643729f9ead5fe5d1ed273960c00dccc4fdb2b69ec03dce7374d37c",
+   "after": "61a3419d3ae73ef952b704dc4183a702ad549cf5a106fe3e5fd16269234d94de"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-straight-shot-1-60.py": {
+   "before": "e2d8928a2ab78c67817dab8a186447c21649b37c618982094f21325e48910ade",
+   "after": "5f111faa0790022c5ca119b2546dfcb532c3f365222f915e29392698ea677415"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-straight-shot-120-0.py": {
+   "before": "1c7937cc77e527990b9d78d679733590304bafde45479ed57afab54b21c89565",
+   "after": "5a9627225c1252de7abe23ae769491876a24f8e53d4731fe4b0150f6e1d6859f"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-straight-shot-24-0.py": {
+   "before": "405b40a1712ad74daf33ea1c4e76dbe411277140f591b5c7cd28c6de3f9eb8eb",
+   "after": "2ffc47574fbe68e79400614f27f2431375a889822937979acd00e776e09e4d09"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-straight-shot-4-0.py": {
+   "before": "613b4c26ade26f9f59a4ada92fdffc755457e94f8dd53152da97fbb187ad80c5",
+   "after": "06717fe14f12df4a8a7c04d1aed3f512a54f0418d6bae0a73faa551b42e7a0a7"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-straight-shot-4-120.py": {
+   "before": "11fceb08571d6454c41a67b16aeaffcd5d4d1a95fc31c91f2d8768dfe6d44bee",
+   "after": "4e85ba950a32b2c124fed9983769fc3c215ac57d7e6be800e1d8b3f7b70e9f34"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-straight-shot-4-180.py": {
+   "before": "c58bc4261766c5f55148b15284606c785c0065f40aeace0f3d1f33c0504ee4ad",
+   "after": "2ae26ed711220c78fc9806e9844f8429eb5c2435a85f8edf6f34310025d73351"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-straight-shot-4-60.py": {
+   "before": "807f0684dd51ef842a68e56051241bafc34ccd9754c90d0180c022ac82a57830",
+   "after": "3e8d7175b4f6d5794b0f1403db7cbf076d5618f623a32a8289f05bdb9a73fd9a"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-trim-plus15-1-0.py": {
+   "before": "68a1439a7bc97f6e1aee9fdd0a64b24f5792f5981c1fad5829a9c8e504e75aa1",
+   "after": "ff2392268b6bfc0bac136a8037aee1fffbb4aa0cb349cf46a22a6eeb2cb2a161"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-trim-plus15-1-120.py": {
+   "before": "bf1562012f14bca3447dc7e96d22139610bd70c3d3c38138cf45e80c1fa14780",
+   "after": "56e4730526cca3c98a24104f89f5e31dc9b75c12037b0b3df491d691eba277e1"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-trim-plus15-1-180.py": {
+   "before": "f758b22ac4aac82890c9f23492738bb37f998e05904e2ce06fa16e7bdb4a94c1",
+   "after": "e65ff47be896152f422cd095032bea71887fc5733b29024b8a8d579dfabba37e"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-trim-plus15-1-240.py": {
+   "before": "4a15ab56fd62045379ddce83d19e51934431c71c2a5f0388db0caaa325767815",
+   "after": "af2c4cd997fb0d193f3fb595018a737b8361e339a3f9caa20e493b03dd4f92b3"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-trim-plus15-1-300.py": {
+   "before": "93e8d55f040ae34bc36ab4f0be070eb0757961de5f39801e32cca6263f7c2796",
+   "after": "72fcb46c61fc5d1349ee45984a440fe00ff861a9aa038bd2d5eab7575416198d"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-trim-plus15-1-360.py": {
+   "before": "b22ce84773bd724e06a4bfc07781c9abb306ad120aaf1d6464c72ac55e5a9330",
+   "after": "03de903d01c747d3124ebda5299cf146314162fee929f2cbca130f4c62dd78cb"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-trim-plus15-1-60.py": {
+   "before": "e207867397ba376c7223d0cac87da3c154349c8695ff89805af9bd6d9564b079",
+   "after": "df90be9ad1990aaa1d0849cae4533d6c787a895c5e1fcc1f05c55c37afa7dcac"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-trim-plus15-120-0.py": {
+   "before": "5715c16687b143c83387fa8f5f539a1b512bcc7487772b78afcc4f5df97e22b6",
+   "after": "ad4a9f11e72b7456a7c401a4cae74c969c90b907a9c514aff3322b4880972111"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-trim-plus15-120-60.py": {
+   "before": "45d510096c85896157347c0be9060624d5d83309ecaf15d747f7f127dfaa8aa5",
+   "after": "5785473f90dca9a0a7c595227d8481a97cc6be515aaac63cfebc614ee9d84c25"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-trim-plus15-24-0.py": {
+   "before": "1100a8645cfb6a7fae07b216efc61d80d57e6ea242e1e083b7a4abdd16937773",
+   "after": "6e4369a4f862464a6156ec8088bf13bbe7c1eef735552e1dbb2dd9b0085bbae3"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-trim-plus15-4-0.py": {
+   "before": "19564679908be78b71bffa8b5ae09772d31da528302b34a3c0331fdd7a1fbee8",
+   "after": "3830d009e0390b64d7175e0604beaf5b3a28c07b26a6665af9ca4252911e82dd"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-trim-plus15-4-120.py": {
+   "before": "c4e51e5ff705f1d40ab95681aab2a6b6befd0df6b4b10e778421c8c7c7b7ea37",
+   "after": "e001fa05478faab7a8d37737bd272cfdd002147844063d6d2606abcbc62cddf2"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-trim-plus15-4-180.py": {
+   "before": "35dbb34c768398f0c3d00433b45fc2284da9b98dcb75d3d2ffacbc015aa0ca22",
+   "after": "96d9908c8b8ea09e9a68590c3be71be4c77c301619567a8623006da088c24534"
+  },
+  "2024/six-speaker-20261118/fusion-native-outer-trim-plus15-4-60.py": {
+   "before": "e9fc3c96e43b597092864140031fae941367c36dc128a8e2a480dcd6cb3d7406",
+   "after": "4b299cd6bfbf5faa5c5e1c947862cecc4f4b09da01ef6851bab7725cfb2d93ba"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-oblique-feed225-1-0.py": {
+   "before": "38591376ab7fa081b9e5d8adc319b6d110194399e940e470425b16fa1c60801f",
+   "after": "d1d8109724f56512ffa144ec3ba4ff3366925acc236f23c64eed2ba69f43e16f"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-oblique-feed225-1-120.py": {
+   "before": "48c9c28436a8b2a89b0a1bf079274fbb158921cb959dbbfd86ebf20ac8d44af2",
+   "after": "6c8601ebdf5373063e81902db6f1d410895926b6934c41b06267761d85688e2e"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-oblique-feed225-1-180.py": {
+   "before": "6579feae91cb98c537bcdf5db4fb9991f3e5b427aa853751fdcc2be0262fb961",
+   "after": "1a7072364f448af176762dadbb8662cb2b7a541190cd9329e3d83f754efcc607"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-oblique-feed225-1-240.py": {
+   "before": "a7e0285e85e2c9c457af09e37b9557b9e5d3bef1648a7f4a709eb87b3d5bf5bd",
+   "after": "1caaeb6180601167a48117601d1973e013a4c6c10fb6c0c191cd96fc7671d2c8"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-oblique-feed225-1-300.py": {
+   "before": "62f09c668bb85406a263d63197c1e2dc508e22e1b1b9bbed99ecbd880a8175b1",
+   "after": "2d8857640226d19a35c124553f28c4d112ce155e4e17e54a6690266c05ed5e4f"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-oblique-feed225-1-360.py": {
+   "before": "9b326d41df863bc0f81d078759776d382910d8e3e1b89c857e080a25702d867a",
+   "after": "24fb1411b9d1919a19007add40c57fde32e7e2360e25901badcb0eda24172743"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-oblique-feed225-1-60.py": {
+   "before": "ee0dccaacd566a82f883e934298f696b1a15b1a2e159117948d0dcd9d1c18ccc",
+   "after": "901ea3a459d9daba903c1b697e1e2e356f82270eb728d1e202a44a24fa2acc8f"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-oblique-feed225-120-0.py": {
+   "before": "8ee2dde8c825a5aebd0d79820a53d48eb0a8f6e2aae2ac6c697ebb74d91203f3",
+   "after": "fe94c8ccb1cadce9f3d04ef943369dc7682fc8957765082bfd4f222aebd259dd"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-oblique-feed225-120-60.py": {
+   "before": "44f8a85eb2f4c44d65e256314c7c9fd116d24b2125de95e3e6c0d08f1e8402b2",
+   "after": "a2d87eb42b3714092962874892ddb0b4ae18a5dc41ea2f2a4003bd03f121ddf8"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-oblique-feed225-24-0.py": {
+   "before": "f95fcdebf1514b6b1853d5116b1500d3b1886f9cf5fae21468360bf85467ceb3",
+   "after": "8f5c9138b06a4c8ee5cad8d1a6a0c76df136214cd3156a4f2573c1fc7a6128de"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-oblique-feed225-4-0.py": {
+   "before": "745b4da1b8db7de2bc8efc7ea6731a22f88da189216dcd0ff19375f5f8e9387d",
+   "after": "5a235c733b02456b657c8d7a055d95fee4954b393a288af246d2aeef6093a8ee"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-oblique-feed225-4-120.py": {
+   "before": "878a6f511aeff4586bea9e16d184bf340aceffe7216b538b2cb8af40c94b0167",
+   "after": "78a5c443dc12d5c0f06a14bbf41864fbda8dce44322320d423bc63aed0dff954"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-oblique-feed225-4-180.py": {
+   "before": "5b21d1cc4ee33f2b37ee4812b6142710e5a0fcaa97b5db4647749be3cf10b0e6",
+   "after": "f2961e44bb2d1be5ae7eb182fb033a326a8024bea07cdd512850c8b4c07d4673"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-oblique-feed225-4-60.py": {
+   "before": "554648367dd784bd09b1f8d6ed098ccd056278262c498f1d0e8c042ff8372d68",
+   "after": "ca4a5bd8a9fd44a53409e59e29bd83ce90457af2b06189781fa56b02a127874e"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-oblique-reregistered-1-0.py": {
+   "before": "f8253e76c93d971d28dcc7414e220244ff950426db83657c3062d123a87e2e2f",
+   "after": "81f11111ee1543dd8ff60935b63f060b5f13cd2be6c67f6467a68de6d238b40c"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-oblique-reregistered-1-120.py": {
+   "before": "5b72be2ae4c33c1ca2172750513f99d67f2cd692cf327b78090d49920dff2953",
+   "after": "7050e654b4713b2641c6aab265518226c4de2d57cdf455fe9468618bb29e7d44"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-oblique-reregistered-1-180.py": {
+   "before": "e61cc487ffb4cec9565e75d11e7ad48971a17d0b30ae754d6181c634d0110a38",
+   "after": "58461f4e0e6f29d32f9af96c33263049069a205e3dd3a0b1b008f59b760135b7"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-oblique-reregistered-1-240.py": {
+   "before": "ac4dd73f0adb05c7dc486beb69073b17d801da7c6a73d2937bd250c4cac020a1",
+   "after": "4a13f0cc38d5852b846eae0aea67709d9eed15dfef033d96eb9f46987b323a70"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-oblique-reregistered-1-300.py": {
+   "before": "d85aa6ab59827780a5af542a5fc2aa372c1eb5c03eea7a7dc67fddba41a0db71",
+   "after": "432471b65ceed2a47ca8c084ba230c23bfb654374f87a0f94985a669cf8a9b3a"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-oblique-reregistered-1-360.py": {
+   "before": "174b2770384f0946355f4048647a018c783aaabab4ee7a325fcc76f8a8fb67aa",
+   "after": "15bd331b759b033f4a3412a58dec5cbbbb4ac5d847de28e5eb3173f4bdc0c8c8"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-oblique-reregistered-1-60.py": {
+   "before": "5fec6b700bd51d9b22b279530af2866a372865894b4546ef8d905e1df7d5cc33",
+   "after": "1dd105c22db6b9c914f76d3dfee709e9f5fc986628703c8675d3e106e7f647c6"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-oblique-reregistered-120-0.py": {
+   "before": "7aa9d1e1db9828a7fb201b6193be4eba412490299f2f52ffc4e72aac1fa2b67a",
+   "after": "16ff007225330eaea8d2df8033e36d5960c4c91ce50f4e2fc4f2473ea81fb826"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-oblique-reregistered-120-60.py": {
+   "before": "9b531abde06f425530c4ab548bba20ebd309355620eca63236b39ae767258792",
+   "after": "fe5546ff61493eb74a40a87fd0eb3925ad2f3af64149e65aed5804d1495e9217"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-oblique-reregistered-24-0.py": {
+   "before": "bdbd37bdda844f01b4fa39cb96051cd1e60bbd3d572cbea14827b48119f56e65",
+   "after": "f77ec402e1a3173ff62dcaa3d747c352290632925f85d8de0db4a68a591d0a9e"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-oblique-reregistered-4-0.py": {
+   "before": "952793225e8b67068cbd4d0b0beade37329a798445b47166fc1610b0a0fe0aa2",
+   "after": "4a157a96753af8cf6e7bef1d97037737a88322e75b93fa32d6648a2efa07e766"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-oblique-reregistered-4-120.py": {
+   "before": "99e10c75e79f58c4df0b9762aef4fda1ad470f5acf7f464a02a39858c29f9d91",
+   "after": "11f4a9d81b3cd9afe9fd87b395019f570edd6283fe6cbaa065feb430402f7e11"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-oblique-reregistered-4-180.py": {
+   "before": "76305e83e84909cafbcd06c4dad39a6652ef0228fd56f53f7ee9dae26c0685e2",
+   "after": "4c563fc4d6b8f2c5b74feb11580140ebb22e9a8130d8a3f4e153ec8e80fc6e71"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-oblique-reregistered-4-60.py": {
+   "before": "06151cbb208f227d11b71e9ce8866463d651f8482443a3fbc58e06921ff4fbfa",
+   "after": "a895db39e418028e904f0cc392fa679aca3ac8b40b81cdb8e76b2319cc1bc35a"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-profiled-3800-1-0.py": {
+   "before": "3d24e85f0c4019903823e625f73c1667b92d63628e22deed85d7ecbce883de8b",
+   "after": "a871e1fd2838b08a6495b67fb77fcdd20e1b57e56b643e56ebdd0de4329dce53"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-profiled-3800-1-120.py": {
+   "before": "59a350eaad58d0a30df76a5151ea444312c19b0833ea9200d7fcd831a795a1a5",
+   "after": "2f54895bec21d27d214d4293ff279968665e6ab467ee1290e38f9f420c016efa"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-profiled-3800-1-180.py": {
+   "before": "74d1f31d24f02a7f7d6fb7affc55dab9d30b015a56a96900f0312d4b4a02e67e",
+   "after": "c9dbfa91f2af36c74f5d65159ac61de45f1eb8c772d54b14231647e88e8372af"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-profiled-3800-1-240.py": {
+   "before": "c42551d75d1d1cb221e2012713b49abcba25ee2ecd232e47613c4b47e7228b8c",
+   "after": "6b2b57db73442810ccffa4206b00b76fb49a631cd52ff2f69785c705a3392be3"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-profiled-3800-1-300.py": {
+   "before": "1f7be8c936a7fe83322b400798c35173fa8230114b5397ad8b67cdcdcdb19b22",
+   "after": "dbedeb296f0a08f101833fc70ecc486a21055ec720fde8c3a749974955028f2c"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-profiled-3800-1-360.py": {
+   "before": "f18e28b0488363011a6c65a774c5e9693b789eeac3e8c03fd37ab3d722da5b15",
+   "after": "6c2fe18de45d3bba7f1ae321a975676e358dcab9aed70cc988730fa6dc78d321"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-profiled-3800-1-60.py": {
+   "before": "14b33ee8c6e99d9044ae2fe1c4413c26b85d21e13f3ff21e8606cebe83d5e1b8",
+   "after": "5a351e63a81b009fe8084316f57fde1948f9e951293694eb7b8d5a12519159d9"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-profiled-3800-120-0.py": {
+   "before": "91a8b992d7912987b47e1b3e3867a45c12a8596cf6166d34e3736042ef2ccddd",
+   "after": "afde5fee4b302d67ae90185cd924601bdceddc9c1908864eb1afa40391f2e1dc"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-profiled-3800-120-60.py": {
+   "before": "dc08ae3e0350b49a173e4293931e30ff2e3790d55098785b9aa421c2eaa1a88d",
+   "after": "fe416ad305971a84d82e1b756e1fc9c74795ec7fad76b92e21d92bcee0133d32"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-profiled-3800-24-0.py": {
+   "before": "ec1fbe8a7b4384ae488b8522462af1a20f29443898a74fc80107ea58c2d111a0",
+   "after": "9bf743b6b21b96d2334ac9f2bf97d1a84cf2fee93b20bbddf7509a3ab1ceeb2e"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-profiled-3800-4-0.py": {
+   "before": "a43c0441bb2f3693ad96ec858b75726a1da227d1a5bf4bbecc579d7ec16a4963",
+   "after": "87b3c04b2ddc2058fba4f19aff9c91a2d3b0d4cffa58a4471bdbfec24e1dcf42"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-profiled-3800-4-120.py": {
+   "before": "71301b23fe04692509a28dd23dbe5d5a9c14e47f179a7cb691975ee83edd6f25",
+   "after": "333dfbe2549b452cefe91db6bc8e50b18e50225955a566eba7330821fee053ac"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-profiled-3800-4-180.py": {
+   "before": "c9c4c6d4b0c1b90ac45c9420ccb4d0176b9407aac56899449594155e887b9f70",
+   "after": "de8df52454de4855af7218fffa52f4527ae4f166587c4f902d6a209c98b7523f"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-profiled-3800-4-60.py": {
+   "before": "637b6da64d818b516835d362851a44d032308c89200f064886a8152a5b63081b",
+   "after": "9b2a843ddede33463c87cf957f316d48cf7d72e89ae834cdedaca6c81b6ebd79"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-round-3800-1-0.py": {
+   "before": "dac4038980e57f19a7fc152c2d54f922fa53357e107d1e40731a9373abd9c494",
+   "after": "a19b65591f26b179f23a205c2233cc768840014ee3da1706bd59eb57ab96bd85"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-round-3800-1-120.py": {
+   "before": "a0e36de87d1f38abf4e0c37a8a2b2ef37b2b9a30dc20ee63bd7527fbf913f89f",
+   "after": "eb46848a7560d9da23311aadc7a7b75f6cff90f3d16851d17632a24daaae99bf"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-round-3800-1-180.py": {
+   "before": "87eabebec6b76e7114a6d872598c5b463060bf44a228eb6c56cb9912aba3e8a4",
+   "after": "fa5774bf9ff646ce9cf4d67d1d0ef3f0b96b2e31576f274fde500e06b75aefb1"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-round-3800-1-240.py": {
+   "before": "417c7e0667a539dd417831a7edcd0654bf914ead7ef4a422ab86e37c0031d94d",
+   "after": "7ac56f7d94f871eed05fa14ff414c9dc9a5007ef4ded5a1edb0d0c0894cfb800"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-round-3800-1-300.py": {
+   "before": "6585388f05560d9760ab553d0ad8c123f30775d7c135873787214557cce08074",
+   "after": "ec9edb37abd4c787b82598dc6de9c3fa267987c1ba019c5fd8327ab6ae22c06a"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-round-3800-1-360.py": {
+   "before": "3e7a21c4b12eb97c441bf714368da22fbf740c697f1ba86b187487ff2c59f0df",
+   "after": "c6fde4d492bee206dab87a1094c02516dcf6dd9dc059fbec4275d9a39a95a683"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-round-3800-1-60.py": {
+   "before": "6022213fad851cae63e7041aa796d80674acb305f684dec736dfa4ebed490366",
+   "after": "2673b470824f41529e999412dfb5954a47a490a8ec183730081e819742cc9aec"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-round-3800-120-0.py": {
+   "before": "5470b47194afe496c79d1ea0ed4292fcd0f84d0b54bf6f0ecdd0c7ab9df8d153",
+   "after": "75121aa94caff9db082dee9ad05c38bb4b2a4cf9dda1a9cf88e2834fa91b3721"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-round-3800-120-60.py": {
+   "before": "db5dc256b0025b31bce9820db7e322f12c7b8cc2381826a14f442866dc7e031f",
+   "after": "9da90496b6e27420e1be1e54f4952fcf7cc688d5d4145ae04d675a56bc2896de"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-round-3800-24-0.py": {
+   "before": "9c1e6f03ec7a52ed1228f23e7297ba99ee0b2e4c9720064add38bd5917f90783",
+   "after": "be73324aada6ced382f864b14ee9f4bdafbe08e4402d076f52628ff2fd981a1b"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-round-3800-4-0.py": {
+   "before": "ebf8e055076590d54accafd51bd29238384bf3e97e7414c47e4382fdf21d3e92",
+   "after": "3bfa451fcd9c4ef212f2c5c1895e698d208c6b0773e42702fa118a39f5fabbbd"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-round-3800-4-120.py": {
+   "before": "c2bc005719989a9b94fd1a0bcffad4ba24a9ccbba041cfd550e7b68e5295bead",
+   "after": "b0e50004c43e4d7faa45acdf46617576f746d6f305cd4490adba0d758e77a998"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-round-3800-4-180.py": {
+   "before": "67af14a7e2171d2e58b42d0265f5bacc0bd99ddab5c2708c542ce05832041aaf",
+   "after": "0705dd6b633e4f46d3881eb7db6153ff9612da0869c8d35359d1c84dc11ba6df"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-round-3800-4-60.py": {
+   "before": "6e87a3211d891b8d0d166dfcb422c1f69bc128a6af46ce4054efa647b58aa69c",
+   "after": "e6262de547a84baea79a8ecd56589d38c33057e72394f10d4f59b8336fd51211"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-round-regulated-1-0.py": {
+   "before": "1e7e08dc27162e9668acaa3b8c1127b81f2536d51140aaab9887a3f1330cb25b",
+   "after": "97e1a1aa4d81d21003ca233212edf3c854b8e95279432071036ce42b6597861d"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-round-regulated-1-120.py": {
+   "before": "04bbb6dd8db6e61aed924ab026253624af8272e768a2531c5fa38b58c5a2127f",
+   "after": "123c1979eb615cef78771560ce07f8c4f2b92d8ca676aeef480fa4cde372a78a"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-round-regulated-1-180.py": {
+   "before": "062cffff53deb490701c7386e9acfcf2754f4512bf27dc6dbd359d99b7ed4796",
+   "after": "b869b093a2761665e049317bf2fce88c482929a8e081f0a1c242b4bec5b30026"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-round-regulated-1-240.py": {
+   "before": "158e3b6e35b43ffb5568d9e83293aff067103272f19e0c06f5511d1ac7c3a7b0",
+   "after": "e47f2ca5896d14b9edd2751a69fb343e1003b6f5da75fa99deefafb12b51efd1"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-round-regulated-1-300.py": {
+   "before": "f99f488333973259e94f77e41060dd954df78887b0cac382c55dab11db742c55",
+   "after": "f0b68e77b673fd17ba1afc17aaa637d519f1c5fec82e5c99d8b8b60884e1ddbd"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-round-regulated-1-360.py": {
+   "before": "dded55316a2bfc34c3e2ab03453ed3204d94b2fdd3ac58bb607e67b6b8faf84b",
+   "after": "fd2ead25817899f51ca818caff5f326de059783c7db6229486e82678fc001785"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-round-regulated-1-60.py": {
+   "before": "50cdfcc44458ba2d6419452e96c4fa11a2c2ca401bf6426c30213ef2e191fb16",
+   "after": "7edacce79447ca2fe9e2dee26decc99b0090ca5ff01d3869b2127928471dde7b"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-round-regulated-120-0.py": {
+   "before": "244168e0b6ef7076a24f4dc000692a5b9bd124524e83be5b43604f0e6b9c7d98",
+   "after": "0c4c4615805ca48c70ffc9a90417f0305c0dc195c1d4c21c776f18efedcd2f42"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-round-regulated-120-60.py": {
+   "before": "95b7bc5ac2b1402d81f02c097a5d2cd784a74ab675ebe7a43bb16472fb1217f6",
+   "after": "6e8efa49d8bc389438f2133026cb0980af17c1ff2fd7e2f9759e02e039302b4f"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-round-regulated-24-0.py": {
+   "before": "cd2dee7e0f1db6f91ab7393c3b8a090b80ecab9c623876aee8ac137f540e3b7b",
+   "after": "79e0d6f35a7ed5054e034564ca2c27fd9dfc5a24121742f57982277d6bbb9809"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-round-regulated-4-0.py": {
+   "before": "44a3b35c163a6a6343a58fa23feabcb0fa427ac9b60b250c3e70310afe3f734d",
+   "after": "c9256639ea21f03a4bb99cc426591e056d1f65338f152be5fd1e45347a562e55"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-round-regulated-4-120.py": {
+   "before": "538a1d42fda7bef5c84f2ae7a514790888dad2bb65f654988192672dc627b261",
+   "after": "e4c625a2b039941a08072058a94f9b087365409881c0005a90b535db84f8d8da"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-round-regulated-4-180.py": {
+   "before": "9da2c189707fbc8e0c19e58114f4ff3c1a5517f40743837b7f6aeac9eb46498a",
+   "after": "43084726f7a12552eac674363a01e8c1a570687250e1606ee713726b00c720ad"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-round-regulated-4-60.py": {
+   "before": "e81aa21120c682bc59c5bf2ba8dc078821f506c6434c37e574034f11fd762308",
+   "after": "58f6b4e8e54f7d1aa4f8b24312610fe16473b647a601cee0eb322cd403b9c52f"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-short-round-3825-1-0.py": {
+   "before": "a3499a7ceeee921173ac3b607801151cbcdfc3cd9d2b72347af3675ee05c7054",
+   "after": "78064b8ca05b2d3409c03818cb0f6dcc70f49ed29473a138db041d03f969c259"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-short-round-3825-1-120.py": {
+   "before": "59140ea61a97321e27388b903a23396bdaa80c6cc132471bc3f667e0ebb803b7",
+   "after": "de4fcc54a1659d75ad9d84ed679e9e6057558bef45d10d8ed8e0092cc101c48c"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-short-round-3825-1-180.py": {
+   "before": "0b4ba1031983ad75257cae270a4f0e50fb5d6a2890007d534ebcb05eca44346c",
+   "after": "3b06f23b69fef52c31e2db0588dfccecad83482421abf9e95d97685d4af05b55"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-short-round-3825-1-240.py": {
+   "before": "39fdb32c138309d7f039645dff6517bb73523c44808def3a4cd469df4af90a64",
+   "after": "87f75abe60c7ad71de0025117ed6591912ca788fa844ca5716546eb06502393a"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-short-round-3825-1-300.py": {
+   "before": "618ab2038df2b9ca61772af78dba9dda9cceb2448a3143d7199faef400e75a2a",
+   "after": "b69181e432141829838d05a2339ee692547380c6bc70a60cdb9d2f2746f6531e"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-short-round-3825-1-360.py": {
+   "before": "1ab9fcd4a6a546e8875e5fc20eaf2039a9c156df6f206c12b1dd495fe5332130",
+   "after": "8d9198065f556bb59f00bd74d7318462be98940e8d44d5006ef58ed3916d4975"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-short-round-3825-1-60.py": {
+   "before": "168cbf379eba5eb16f690d7b2685207b74da67140a3ada6c664fa5c4306b0d5f",
+   "after": "0c7d3d70821d6b75d0bc1b00614116d043b202103e19156a8a4edf655427ad1a"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-short-round-3825-120-0.py": {
+   "before": "27699bdfdbdfebe4c6b03068f00620e14b9aacaccb33a31b4d5586fcd1f72cae",
+   "after": "eef656c9f6477849062de90c259514f7292f222d829abd91106900e1c531f23f"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-short-round-3825-120-60.py": {
+   "before": "58e2d9b3689464302f5c5cc7e14fdb49d3f20d2689cbfe4abe61035965512964",
+   "after": "e7ade430edc48a3921c9fc4e208f0cbcf24b4fae6898b41018a7223e2f84606d"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-short-round-3825-24-0.py": {
+   "before": "c7a3e2500c8ff8598868fc145cec7571f43ded37af42c11c03baad7d0a003dab",
+   "after": "91a5b0b524bfcaebb59ab056e36216670f0294c2aa5d3bbcd28ad59b532bbae9"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-short-round-3825-4-0.py": {
+   "before": "f600817ae27c74ae5e9a74a8836e3c035888081bdcf03f4c65df983646d908cd",
+   "after": "ce1fc26453b36b7822596ec143914e93ba3c46fc8b5a4a359b0ae085c4de93b3"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-short-round-3825-4-120.py": {
+   "before": "a9bff8e3fc2c17aaaf5512be2187cd7378893325bd2f89510edc672cec4cbce4",
+   "after": "2a11b854613ed9ca1f10175952381159ffca76b3e64d120e2c9f48975bca03bf"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-short-round-3825-4-180.py": {
+   "before": "9b5598c2834f88ddc76f85a2e8fe2528425917aeecb3351556b57e38a636390a",
+   "after": "a50fa8d3cc8d81e60e21d6c0a254be90113efc87ff434b1d1245e561cd2bdc2d"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-short-round-3825-4-60.py": {
+   "before": "f40212c0da42db8490337004e1e7fc81ad2b6ed5d72be57e78b3aca5cb11e69d",
+   "after": "d6cd53a5ee8c8d6317c279982b932dbc6a29700aae30947054f53301d07cb12b"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-short-round-indexed-1-0.py": {
+   "before": "8500ed4243f82767668a8a77e2e5a29927ddf705c3d1135c3d24ca613350ecf0",
+   "after": "e671a76e4238a138c0ee999d28cac19985b70653672aedbdad670bb7ca5300b3"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-short-round-indexed-1-120.py": {
+   "before": "9c892d5071ceba11414cdcff5de588333e8fcbce9df2f0534e4ea0e269521062",
+   "after": "4bf0c07001f59e2472b0c2ac869db738fee17a3410f6aa3c2ce4a4ca2ee463bc"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-short-round-indexed-1-180.py": {
+   "before": "0f97b6fa6c7f735f55bfc7a7f5a47f7a024316464aeba23fc91e8801b4eb3ded",
+   "after": "324d2278e2ba2ed0f4552d145f7508a0b092a4d9fc44411099e11bb17b926355"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-short-round-indexed-1-240.py": {
+   "before": "5c481e9cfff0de06d67dcf475c99113c5597759b230a1bb2769f830bed1f11b6",
+   "after": "0c2f1c6e1813df356fe7710435a906fabadc4a0a5564d78054cbcd7925df2ca0"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-short-round-indexed-1-300.py": {
+   "before": "d79e3f1ea2181b314aa7b5dabb6ee18f37a689277ed2204b5104b80bdf4a9bd4",
+   "after": "3a3d1b5585d5ecb99bb4318ee4feed2b5b0c2bd00b413e4faf36235a4bc15fd8"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-short-round-indexed-1-360.py": {
+   "before": "3e33d0d87be176485e4f009c834285a013b44628dbaae50d427d2f42103ee261",
+   "after": "0d60be012fa7d03cbda64cdca3a5eee551471dc0b1a3dcac3a62d6320ff6edfb"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-short-round-indexed-1-60.py": {
+   "before": "939eac80fa862a97c683f49a8d01a8a8421d8f50aae6af87f5d5a01d4e33ac9d",
+   "after": "10c1bbf8c6e26c11aae427f9ce9d547e315922d7779ceb923327fed47f739995"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-short-round-indexed-120-0.py": {
+   "before": "e65f0a0a5a3d8cbd3a36f820d90209829568ad57480985a7b23da148a3f733d7",
+   "after": "0d2615d1bffdaad3d3097285c0c63a47b2f34b6ca147bb9d87aa8353fb026ebd"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-short-round-indexed-120-60.py": {
+   "before": "d822195024af1258790251af2c02966f1760e11578f46de0f3c8e4a59ad6e5bf",
+   "after": "a74c2841f85c7c5c9db58c90262d846d813242a3742afbcb0b9ee04345b7aae6"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-short-round-indexed-24-0.py": {
+   "before": "e9231a840e6c6564255a408e4138ef33d96c7d061121194efb9a5aed5a949837",
+   "after": "2ad9b120bf64b1f33d5b7e10e9a7798727b9f109ff3760cc19124ec9e958e866"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-short-round-indexed-4-0.py": {
+   "before": "51269c4192a359b92ddfa512c2848a27b81ea641ca58986b16eadcff9f2ecaad",
+   "after": "552537a75d14f15556ce7eb93fcb43babc252b34d4f4571ed306e079b68ff360"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-short-round-indexed-4-120.py": {
+   "before": "3bf9773bd9a64b937aa390ec7a7a8667cf8795df5590e581aa7473072c50d2a4",
+   "after": "3972929f06cd3009398714316ad1e6c62edf5623f83f380eabe7b6c389b3d342"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-short-round-indexed-4-180.py": {
+   "before": "43adff3e8635d8a352892773d19d2a04dc32100a05927ad845be267bf6f22781",
+   "after": "2a65dbfd02419d19efd753579d5771a4940313569b1506cefe6cebeecb9d2b5b"
+  },
+  "2024/six-speaker-20261118/fusion-native-six-short-round-indexed-4-60.py": {
+   "before": "d42e2e8bfde5053ae1eade9d9a04a01326af4ee4be1bb142bc834bd2023bcbba",
+   "after": "fa565814703805cd9c5551cf7ece2ff186f9a6c3f5593de09a2a614d7bc34a82"
+  },
+  "2024/six-speaker-20261118/fusion-native-wing2-pickup-120-0.py": {
+   "before": "35203b02bdd6acfb8755430f4248c2cb9038cb8a59e325855f8572743fb56d09",
+   "after": "c1e1e4157158c897b2f00a63759a9742771142b007a16f86abda0824e92eb7f9"
+  },
+  "2024/six-speaker-20261118/fusion-native-wing2-pickup-120-120.py": {
+   "before": "1a6b8e4988ece0daa2254c97c498c7d9cb62efbe2767304716fb6a04e04398cd",
+   "after": "a62decfe6fd6d78fd7e5b050ec47c579325c04024b9a84e30c57a32c05e9176c"
+  },
+  "2024/six-speaker-20261118/fusion-native-wing2-pickup-120-180.py": {
+   "before": "a48135411e1038e06f46f92702fc7df8b033b68db6def339d52120522d852039",
+   "after": "dd3a5cd0bd9c3072bf9225f31e4355f9be84d9034496ded0b93e9ad555b836e1"
+  },
+  "2024/six-speaker-20261118/fusion-native-wing2-pickup-120-60.py": {
+   "before": "5db35dc736f089646a235c82db36571d42542ba028db9bc164c3b3c81c2a127f",
+   "after": "8362816f899b60e1308aaa5f58561ab14b1f3370810ec5951daae76956d77fd5"
+  },
+  "2024/six-speaker-20261118/fusion-native-wing2-pickup-24-0.py": {
+   "before": "85c72df2a2a7203dbc307e3e69ed410b2920d3753c04e754879c1f105d28f971",
+   "after": "50a1ddab23be09985f4f09931b2fa381a743ff1cf5f30e2a980206c500316d19"
+  },
+  "2024/six-speaker-20261118/fusion-outer-pair-aligned-1-0.py": {
+   "before": "7c2338d17d2c3b416107e89eceeef3c77382b0d445972478d4e187ee0ade84dd",
+   "after": "9f08dc53873054557f47fd37eebdb7975aa7ea83e06f71cd51f4b40d6e7b2fc9"
+  },
+  "2024/six-speaker-20261118/fusion-outer-pair-aligned-1-120.py": {
+   "before": "774cbd991aec2c5b96fabefabbdcc42d61f4d6c50013f73ad02610a93ac379cb",
+   "after": "20f0ff1bce1814a79b85bf2b1baa549f2e588a847230c70824220319b7376976"
+  },
+  "2024/six-speaker-20261118/fusion-outer-pair-aligned-1-180.py": {
+   "before": "536e8b5e9bc3b84dc1ce708c98315aef0ea6bea1883ddce04fc34f40627d4632",
+   "after": "2820ba03be44103fc92c88bec6f94a69e31debf10d9a3055fd28bf184c5f746c"
+  },
+  "2024/six-speaker-20261118/fusion-outer-pair-aligned-1-240.py": {
+   "before": "72612ddf2b7cfdac09cf006d0f4ea4e6fb3d6dfd97bf29f8f2d7dd36a7fe27e2",
+   "after": "c3abdc5e4ea5e0b190c2719e01437c625b36a9bc8ce92af0bbfb6bd837065cbc"
+  },
+  "2024/six-speaker-20261118/fusion-outer-pair-aligned-1-300.py": {
+   "before": "6a5b86ed515133a0880c4b4094889a175dfb770f4a82f35d97788f699408f0fb",
+   "after": "8b159880da905882bdd7fba3065b0f480c75b6282f9e1d051f77ecb612d5541e"
+  },
+  "2024/six-speaker-20261118/fusion-outer-pair-aligned-1-360.py": {
+   "before": "136b01eaef07b3712dda67f4660cdf20401b813ad4f6f0b0f39c4ed03ddb9255",
+   "after": "7d2bcfb111044c381ed0a18e934479f49de545cc8cffd83a5146e3e49715ee7f"
+  },
+  "2024/six-speaker-20261118/fusion-outer-pair-aligned-1-60.py": {
+   "before": "59eea15052ef2005230c3461b3df30d2f1ff2320f59bf07f3f46f7caf7ae0000",
+   "after": "a48ee3c7a443b384d85e634ec8b05bdc4f94d25f4e1717bcdcbfc7c645e76973"
+  },
+  "2024/six-speaker-20261118/fusion-outer-pair-aligned-120-0.py": {
+   "before": "1bc454d664d125930d2858ade246f9a57b51f7cf57832e740954cd20a2903130",
+   "after": "726286a4a9343fbed89d11f625c89bb1ab9ed28e7f914dfaee59c2b27c3a3b9e"
+  },
+  "2024/six-speaker-20261118/fusion-outer-pair-aligned-120-60.py": {
+   "before": "c98eae752fc5ac2aed4240255345a82990f3e441a5359ac4615a11758bf0de1a",
+   "after": "4d6902d70a973639570eb5d9c18c39ab93d171bfa5a09f6ba1b4ffa4bdc1266c"
+  },
+  "2024/six-speaker-20261118/fusion-outer-pair-aligned-24-0.py": {
+   "before": "ea2820761208b518ec44be9858881e2276e57cdec0841ea945bcb5f37834e4ca",
+   "after": "016a95acca82224e8726bea5ff27298bdeee538bcc35ee26af46036cc5c84db6"
+  },
+  "2024/six-speaker-20261118/fusion-outer-pair-aligned-4-0.py": {
+   "before": "6ae50c72523bd8342ccaacf146861db7277cd3a3d3bee23fb0d32a884a9144f2",
+   "after": "7862d72a059df2d431b78cb17adcc327110eb67bbe414757c78fd38a2558ff5c"
+  },
+  "2024/six-speaker-20261118/fusion-outer-pair-aligned-4-120.py": {
+   "before": "ea7d26f39878834eb5d475929bd835767024abccf99893569d0743f59d87316b",
+   "after": "646232c60b442ff46f081bd91d6ba14f138051c5d08ee387bd6ae7fe162010b7"
+  },
+  "2024/six-speaker-20261118/fusion-outer-pair-aligned-4-180.py": {
+   "before": "c38175d95484fbadbac9c1dee982555618782c8e9a21ca2c28041cc2dc1533fb",
+   "after": "45f43ba535689a7f6adc82dc74c662d4b7c0be6a54668b8816822942372d3913"
+  },
+  "2024/six-speaker-20261118/fusion-outer-pair-aligned-4-60.py": {
+   "before": "648057790364797da97b7fe18fb2215d0d6a098f0d9b505b95cead59a50e6620",
+   "after": "689f13779716e1d45c4e121de9f7dbd625346ad49acd7939e68bfa1efaa83404"
+  },
+  "2024/six-speaker-20261118/fusion-raised-feed-named.py": {
+   "before": "fbafda56bb50af5bec610245f3214f69e2915fd032e1d5492577679ad250a75e",
+   "after": "f3aca39efaa372071a0135e5d4d73bd81c1a56ebcaeec9671b07e54a2cbd2ede"
+  },
+  "2024/six-speaker-20261118/fusion-raised-feed-parent-bound-5-0.py": {
+   "before": "6274f4f1ab629c312ddb41f291e496eb40bd685f9f3d7e6d312b5dca4fde8ca1",
+   "after": "ff0ca15c673ae9a2173fffb9414f2d8693d1f90c8e4373a1c8813eaa98121ba7"
+  },
+  "2024/six-speaker-20261118/fusion-raised-feed-parent-bound-5-1000.py": {
+   "before": "a632f02923b4b01dfcf2e3bb1e2e4e7e1929086cdcd05ebf04f3d2b458fdc73a",
+   "after": "4432f6f3a1ffb894cc52fdf041f3cb64d757500701a033851738360480b2dd79"
+  },
+  "2024/six-speaker-20261118/fusion-raised-feed-parent-bound-5-250.py": {
+   "before": "327278ea00c190481ced1ad4614b1dd8ee6fad14a0b8244ab0a79a30bd11db47",
+   "after": "a3821ac08efb4620a385a5d972dad6164a6a157df11632a9459c7edd4c44d446"
+  },
+  "2024/six-speaker-20261118/fusion-raised-feed-parent-bound-5-500.py": {
+   "before": "4c6586027b44cbe31e153df07a0020349fdf72a7d0caec9e8225130e4deae1dc",
+   "after": "99bf7f94959e7faf66432fb5abb75127ddb77d4f6132384ef5b89da527df519a"
+  },
+  "2024/six-speaker-20261118/fusion-raised-feed-parent-bound-5-750.py": {
+   "before": "c22aac3c1cf288e8be0fedb22b54af5ff5c940d1ddd8980c5fe05f9c6961f4c1",
+   "after": "7e0aefe2a2bbb57667f3b570c7f14680f3881fdc4cc09928e7aaedbc11695742"
+  },
+  "2024/six-speaker-20261118/fusion-raised-feed-probe-5mm.py": {
+   "before": "84ae60c7926d1ceaa1fe40b591101c658f76e2bff85752da19096c9da525ad20",
+   "after": "8bcc7e1cc3f69e6c4b921652cd6ebae5926003d55ef9076e6ba50b407512442e"
+  },
+  "2024/six-speaker-20261118/fusion-raised-feed-span-0.py": {
+   "before": "a13720af11ebe4a4d99a9dd31d3e386b25c3db191b678291b0f1242098f74460",
+   "after": "08c12976903be30feb2490bc58621ea9bbe27aed9d1ae7ce548d9720f045147c"
+  },
+  "2024/six-speaker-20261118/fusion-raised-feed-span-1.py": {
+   "before": "77f4cfddec86894afabe7daf7243e66ef8a845b83b65ad926142cf9dc09c4895",
+   "after": "63cf7cbd779962d7174e7feb57b131f05192670bfd4959c86ff190dd2e0f402a"
+  },
+  "2024/six-speaker-20261118/fusion-raised-feed-span-2.py": {
+   "before": "573fab4141c500d59c12f4aae8717dd81d1eae86c2588c79696571642ca74ee7",
+   "after": "2729d42cee36aa79c87817598e122de1f82987b1d7b8de8f2c5d582675b57b7e"
+  },
+  "2024/six-speaker-20261118/fusion-raised-feed-span-3.py": {
+   "before": "d0e6e8f17a8cd122ad18ca42e9bfcb32615ad7e9d919657c8cd0c870fd48a608",
+   "after": "2cecf0dd333fa28cd7cc27fd07ff554a4eb78a63384cc492a1236fef9ee8d742"
+  },
+  "2024/six-speaker-20261118/fusion-raised-feed-span-4.py": {
+   "before": "1d2433c5a56519817791668508eeba27196739abbab9634dda3fd239536c4ebf",
+   "after": "cf47f464bbeb6a548e5a36d3a84ed2ddedfddb135644d8167799350edeb91d78"
+  },
+  "2024/six-speaker-20261118/fusion-structure-high-recovery-230.py": {
+   "before": "be4f2fae8bd5540a5c5748a74e6a7ae250415d1abd8cc6d17625ed3f4c5d937a",
+   "after": "effe55a7e4413b12e540e91ec329db4194ad8083602d1c64c7be43ebc8954ce0"
+  },
+  "2024/six-speaker-20261118/fusion-structure-inner-smooth-predicted.py": {
+   "before": "d4dbbb51a993eafd928201f594edc666e28bbb9ebe8efb2689e79b5c9106a093",
+   "after": "caec04ebad9d5b22faa324ba0e7b93e680fe752b2b70653b3da96f31b58198cc"
+  },
+  "2024/six-speaker-20261118/fusion-structure-mid-oblique-2275-full.py": {
+   "before": "46258cc42b1e16d26d809cf62bc9c52af06bfb76494da6488a9a713f5e850f15",
+   "after": "d31a31fac0595f2166b00bdd8d2b07fe8e5cf29a39c28d7dbf9e4b776b370e89"
+  },
+  "2024/six-speaker-20261118/fusion-structure-mid-soft-pilot-230.py": {
+   "before": "1e3717d8e3bc894d3f53ed1eaf75853034e6917bc6327b4cea72b3875437bf55",
+   "after": "96e0fb7a1cfd1495cb6aef1864655edc46bd227c7a87e23a8638d5fecef64382"
+  },
+  "2024/six-speaker-20261118/fusion-structure-mid-square-indexed.py": {
+   "before": "a592306f426c03e34f3f8742696d2e8294249bc15f134801f666049ee0d43576",
+   "after": "5fae328130f664d5a34389961c26e66b736a48fa15cf96b4e9db82a9ccde6b71"
+  },
+  "2024/six-speaker-20261118/fusion-structure-outer-pair-aligned.py": {
+   "before": "a118eb59340beb9e718d322b29089f0ccbfab91748c838b7fc8c40e0e6e3dc3f",
+   "after": "2cda07dbfbbb9959c09e2e300e9a7122ed228a2ef80d4ff3a6753899df9d8a2a"
+  },
+  "2024/six-speaker-20261118/fusion-structure-six-profiled-3800.py": {
+   "before": "3664d668b304c243d4855b24a9b343b94de3e19fa0564b9630dac2539f05394a",
+   "after": "5063f0d8bd12eea7d0d26ec30cdf24c200b4de13d800c32b55c6d64e34fb5541"
+  },
+  "2024/six-speaker-20261118/pre-three-floor-full-unittest.log": {
+   "before": "898e77e51ed531bb5d662921909de65f70ed977894deba24726dbd2354fd8998",
+   "after": "3884810c0db16a42447448d4d69ef3837c6be5501c24ddcfba5b135795561bfc"
+  },
+  "2024/six-speaker-20261118/prior-main-combined-13.log": {
+   "before": "c2c6c175e3d66c7d0595a09b2ec295da85674e685b12bd84dacdc535caf99179",
+   "after": "e453ef296113a389b6567c3b179ea7d888874acdea74db20e770b8678c2d0658"
+  },
+  "2024/six-speaker-20261118/six-floor-station-unittest.log": {
+   "before": "ed02f59b279cf1061a3d2e13d889e91da664a991a28c8fceded4bdf49a50c152",
+   "after": "a7802d543cfde60f8d4c74fc7f3b3762d07cb2a141265f7aedc41785618a43ae"
+  },
+  "2024/six-speaker-20261118/three-floor-full-occt-unittest.log": {
+   "before": "109b6feb6ff498e19bdae2eedf9cd40fcfe5fcb1bd91d56abb5efe0cc4c1b10d",
+   "after": "979f6cfe16760dcf39d4879e40408e29b6e4d3f231976435c21edb4a3809bfea"
+  },
+  "2024/six-speaker-20261118/three-floor-full-unittest.log": {
+   "before": "084038f9a2589be3f1ae4134f44f9fbf8df5d904bb67cc24ecf5da35ac90163f",
+   "after": "e3537d8591777e570013d99b0b90cede77e553385f0f5d9fb6b8986f3fad84e8"
+  },
+  "iterations/001/retrospective.json": {
+   "before": "d98f3f7cf96cc3f4af923fc84315c90f5f49088a3e8a60ff2cd7baeb2f904f4e",
+   "after": "3d48dd857ec68a91defff1e78bfbebbdb194b06461e0fc334871bbe96a799919"
+  },
+  "plugin-qa/toe-actuator-20261121/gallery-qa-v30.cjs": {
+   "before": "fe67d0e8ee5f76fa0007c6d24a9523689dc85edbce4aae2779a246675184b845",
+   "after": "eb0954a7fb49b99b6e2f485ddaf02ae8bfa5bf420a3744521887bb67938a1246"
+  },
+  "plugin-qa/toe-actuator-20261121/gallery-qa.cjs": {
+   "before": "2e58c735517b1f05c6f090984430e26504f7c11551ab75dc6bc4c6f0aceb176a",
+   "after": "3791afe44f262b662c8e742c6107a44f29e0c095920334f7d0911c3457e25f4c"
+  },
+  "plugin-qa/toe-actuator-20261121/support/build.log": {
+   "before": "405516c004bd296675ab511c61a0c9c3279a1153880b2b7b9fcf935f0a956dfe",
+   "after": "c3263f04ef2eb6f430d9b6397ab0db5bf8bfae0690cd17f7c65816acf6fb7167"
+  },
+  "plugin-qa/toe-actuator-20261121/support/screen-v4.log": {
+   "before": "f001a58a0d7c45c2216b8f3bf4f30e993298651437bc58648f1705be9b8de909",
+   "after": "1688047685bf2744d4cdc3f2a0888e907b21fab47e0e4cf843d16e5e8cdee41f"
+  },
+  "plugin-qa/toe-actuator-20261121/support/support-receipt.json": {
+   "before": "f8635f0a04fb6580388d0619accb1b0f476a4281ad6ba367cab74d70dca39e43",
+   "after": "2f16ecb5ad815e30422068c783f12190bf0a80fec190cd623de0135ce632d75f"
+  }
+ }
+}

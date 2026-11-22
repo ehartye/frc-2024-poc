@@ -27,9 +27,9 @@ else:
     s=read(sf);old=read(p/f'split-tail_.25_0-dev-{k}-{n}-6.88.json')
     assert old['release']==s['release'] and old['both']==s['both'] and s['trace'][:len(old['trace'])-1]==old['trace'][:-1]
     import numpy as np
-    sys.path.insert(0,'C:/Users/ehart/repos/frc-2024-poc/sim/pressure')
+    sys.path.insert(0,'R:/sim/pressure')
     from speaker_score_observer import beam_samples,shadow_margin
-    f=Path('C:/Users/ehart/Documents/FRC Native/2024/six-speaker-20261118/field-source/blue-speaker/opening-and-counter.json')
+    f=Path('R:/2024/six-speaker-20261118/field-source/blue-speaker/opening-and-counter.json')
     g=read(f);corners={v['key']:np.array(v['caseEndCornersM']) for v in g['sensorCaseEnds']}
     beams=[beam_samples(corners[a],corners[b]) for a,b in g['beamPairs']]
     tr=[r for r in s['trace'] if r['t']>old['both']];x=np.array([r['q'] for r in tr]);t=np.array([r['t'] for r in tr])

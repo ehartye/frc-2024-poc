@@ -4,8 +4,8 @@ from types import SimpleNamespace
 import json,sys,math
 import numpy as np
 from scipy.spatial.transform import Rotation
-p=Path(__file__).resolve().parent;field=Path('C:/Users/ehart/Documents/FRC Native/2024/six-speaker-20261118/field-source/blue-speaker')
-sys.path[:0]=[str(p.parent/'counter-drive-01'),str(field.parent.parent/'field-query-libs'),'C:/Users/ehart/repos/frc-2024-poc/sim/pressure']
+p=Path(__file__).resolve().parent;field=Path('R:/2024/six-speaker-20261118/field-source/blue-speaker')
+sys.path[:0]=[str(p.parent/'counter-drive-01'),str(field.parent.parent/'field-query-libs'),'R:/sim/pressure']
 from speaker_surfaces import SpeakerSurfaces
 import run_speaker_field as mod
 from counter import bind

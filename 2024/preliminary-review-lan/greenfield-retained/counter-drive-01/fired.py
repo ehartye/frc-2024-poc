@@ -3,7 +3,7 @@ from pathlib import Path
 import sys,shutil,json,hashlib
 from counter import bind
 p=Path(__file__).resolve().parent
-sys.path[:0]=['C:/Users/ehart/Documents/FRC Native/2024/six-speaker-20261118/field-query-libs','C:/Users/ehart/repos/frc-2024-poc/sim/pressure']
+sys.path[:0]=['R:/2024/six-speaker-20261118/field-query-libs','R:/sim/pressure']
 import run_speaker_field as model
 tag,n,setting,lo,hi=sys.argv[1:6]
 src=None

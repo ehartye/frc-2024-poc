@@ -1,5 +1,5 @@
 from travel import *
-field=Path('C:/Users/ehart/Documents/FRC Native/2024/six-speaker-20261118/field-source/blue-speaker/opening-and-counter.json')
+field=Path('R:/2024/six-speaker-20261118/field-source/blue-speaker/opening-and-counter.json')
 target=(1000*np.array(json.loads(field.read_bytes())['nominalOpeningCornersM'])).tolist()
 receipts=json.loads((HERE/'travel.json').read_bytes());parked=json.loads((HERE/'parked.json').read_bytes())
 view=HERE/'pivot-cassette.step'

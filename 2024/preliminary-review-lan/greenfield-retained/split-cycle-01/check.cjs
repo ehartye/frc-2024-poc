@@ -1,4 +1,4 @@
-const {chromium}=require('C:/Users/ehart/repos/certaindeath/node_modules/playwright');
+const {chromium}=require('%USERPROFILE%/repos/certaindeath/node_modules/playwright');
 (async()=>{const b=await chromium.launch({channel:'msedge',headless:true,args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']});const page=await b.newPage();const errors=[];page.on('pageerror',e=>errors.push(String(e)));try{
 for(const [key,end] of [['split-96','6/6 scored'],['split-r02','0/1 scored']]){
  await page.goto('http://192.168.1.129:8764/?concept=split&case='+key);await page.waitForFunction(()=>typeof document.querySelector('#time').oninput==='function');

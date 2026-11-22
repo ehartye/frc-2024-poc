@@ -2,7 +2,7 @@ from pathlib import Path
 import numpy as np,json,base64, math,gzip,shutil,hashlib,sys,re
 from scipy.spatial.transform import Rotation
 p=Path(__file__).resolve().parent; web=p.parent.parent/'www'; repo=Path(sys.argv[1]);dest=repo/'docs/preliminary-design/releases/001';dest.mkdir(exist_ok=True,parents=True)
-d=json.loads((web/'data.json').read_bytes()); ff=Path('C:/Users/ehart/Documents/FRC Native/2024/six-speaker-20261118/field-source/blue-speaker')
+d=json.loads((web/'data.json').read_bytes()); ff=Path('R:/2024/six-speaker-20261118/field-source/blue-speaker')
 v=[];f=[]; fixtures={}
 def beam(a,b,w,h):
     a,b=np.array(a,float),np.array(b,float);axis=b-a;axis/=np.linalg.norm(axis);basis=np.array([0,0,1]) if abs(axis[2])<.9 else np.array([0,1,0])

@@ -23,8 +23,8 @@ def boxes(angle,gate=0):
     for n,v in zip(names,local):
         t=tr[roles[n]];w=v@t[:3,:3].T+t[:3,3];out.append([w.min(axis=0),w.max(axis=0)])
     return np.array(out)
-fieldpath=Path('C:/Users/ehart/Documents/FRC Native/2024/six-speaker-20261118/field-source/whole-field-sliced-bounds.json')
-field=read(fieldpath);syntax=parse(Path('C:/Users/ehart/repos/frc-2024-poc/sim/pressure/field_route_clearance.py').read_text())
+fieldpath=Path('R:/2024/six-speaker-20261118/field-source/whole-field-sliced-bounds.json')
+field=read(fieldpath);syntax=parse(Path('R:/sim/pressure/field_route_clearance.py').read_text())
 ignore=set.union(*(literal_eval(n.value) for n in syntax.body if isinstance(n,Assign) and n.targets[0].id in ('SURFACES','GAME_PIECES')))
 items=[];ids=[];tridata=None;skipped=0
 for part in field['parts']:

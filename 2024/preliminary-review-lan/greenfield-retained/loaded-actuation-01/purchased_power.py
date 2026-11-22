@@ -2,7 +2,7 @@
 from power import *
 from pathlib import Path
 here=Path(__file__).resolve().parent
-ds=Path('C:/Users/ehart/Documents/FRC Native/plugin-qa/toe-actuator-20261121/REV-21-1651-DS.pdf')
+ds=Path('R:/plugin-qa/toe-actuator-20261121/REV-21-1651-DS.pdf')
 body=(here/'power.py').read_text().split('def run(',1)[1].split("if __name__==",1)[0]
 body='def motor_run('+body
 for a,b in [(')/.0097',')/.0097+1.4'),("math.tau/lead*.010+slideI*.13","math.tau/lead*((12.-.12*1.4)/(11000*math.tau/60))+slideI*.12")]:

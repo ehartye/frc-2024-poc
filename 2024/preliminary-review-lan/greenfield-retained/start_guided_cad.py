@@ -1,8 +1,8 @@
 import ast, json, hashlib, sys, runpy, subprocess
 from pathlib import Path
 here=Path(__file__).resolve().parent
-project=Path(r'C:/Users/ehart/repos/frc-2024-poc-worktrees/engineering-iterations/iterations/002/design/cad/guided-cassette/profile-a')
-private=Path(r'C:/Users/ehart/Documents/FRC Native/2024/private-readiness-20261120')
+project=Path(r'R:/iterations/002/design/cad/guided-cassette/profile-a')
+private=Path(r'R:/2024/private-readiness-20261120')
 jobs=private/'native-jobs'
 install=Path.home()/'.codex/plugins/cache/agent-frc-local/agent-frc/0.86.0'
 native=private/'iteration-002-native'

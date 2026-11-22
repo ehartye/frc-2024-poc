@@ -1,4 +1,4 @@
-const {chromium}=require('C:/Users/ehart/repos/certaindeath/node_modules/playwright');
+const {chromium}=require('%USERPROFILE%/repos/certaindeath/node_modules/playwright');
 const fs=require('fs'),p=require('path');
 (async()=>{const b=await chromium.launch({channel:'msedge',args:['--no-proxy-server','--use-angle=swiftshader','--enable-unsafe-swiftshader']});try{
  const page=await b.newPage({viewport:{width:1440,height:960}}),errors=[];page.on('pageerror',e=>errors.push(e.message));

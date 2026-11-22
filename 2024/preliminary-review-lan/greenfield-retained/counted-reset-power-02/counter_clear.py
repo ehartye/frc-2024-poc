@@ -3,8 +3,8 @@ from pathlib import Path
 import hashlib, json, sys
 import numpy as np
 here=Path(__file__).resolve().parent
-field=Path('C:/Users/ehart/Documents/FRC Native/2024/six-speaker-20261118/field-source/blue-speaker/opening-and-counter.json')
-sys.path.insert(0,'C:/Users/ehart/repos/frc-2024-poc/sim/pressure')
+field=Path('R:/2024/six-speaker-20261118/field-source/blue-speaker/opening-and-counter.json')
+sys.path.insert(0,'R:/sim/pressure')
 from speaker_score_observer import beam_samples,shadow_margin
 read=lambda p:json.loads(p.read_bytes())
 geom=read(field);ends={r['key']:np.array(r['caseEndCornersM']) for r in geom['sensorCaseEnds']}

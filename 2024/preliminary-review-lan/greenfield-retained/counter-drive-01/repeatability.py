@@ -5,7 +5,7 @@ import csv, hashlib, json, math, subprocess, sys
 from paired_cycle import read,sha,save
 p=Path(__file__).resolve().parent
 base=p.parent/'split-field-02';plan=read(base/'plan.json')
-roster=Path('C:/Users/ehart/repos/frc-2024-poc/sim/pressure/evidence/speaker-repeatability-starts.csv')
+roster=Path('R:/sim/pressure/evidence/speaker-repeatability-starts.csv')
 assert sha(roster)==plan['roster']
 def call(script,args,log):
     with log.open('w') as f: subprocess.run([sys.executable,script,*args],cwd=p,check=True,stdout=f,stderr=f)

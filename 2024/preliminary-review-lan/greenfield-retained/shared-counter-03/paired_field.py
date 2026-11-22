@@ -65,7 +65,7 @@ def solve(which):
     print({k:v for k,v in out.items() if k!='trace'},flush=True);ga.close();gb.close()
 if __name__=='__main__':
     if len(sys.argv)>1:
-        sys.path[:0]=[str(p.parent/'counter-drive-01'),'C:/Users/ehart/Documents/FRC Native/2024/six-speaker-20261118/field-query-libs','C:/Users/ehart/repos/frc-2024-poc/sim/pressure']
+        sys.path[:0]=[str(p.parent/'counter-drive-01'),'R:/2024/six-speaker-20261118/field-query-libs','R:/sim/pressure']
         solve(sys.argv[1])
     else:
         def run_case(k):

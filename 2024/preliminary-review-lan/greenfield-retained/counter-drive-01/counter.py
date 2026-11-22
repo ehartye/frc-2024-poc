@@ -3,7 +3,7 @@ from pathlib import Path
 import hashlib,json,math,inspect
 import numpy as np
 p=Path(__file__).resolve().parent
-fieldfolder=Path('C:/Users/ehart/Documents/FRC Native/2024/six-speaker-20261118/field-source')
+fieldfolder=Path('R:/2024/six-speaker-20261118/field-source')
 def sha(f):return hashlib.sha256(f.read_bytes()).hexdigest()
 def read(f):return json.loads(f.read_bytes())
 def transmission():

@@ -4,7 +4,7 @@ import json,sys
 p=Path(__file__).resolve().parent;root=p.parent
 sys.path.insert(0,str(root/'counter-drive-01'))
 from counter import bind
-sys.path[:0]=['C:/Users/ehart/Documents/FRC Native/2024/six-speaker-20261118/field-query-libs','C:/Users/ehart/repos/frc-2024-poc/sim/pressure']
+sys.path[:0]=['R:/2024/six-speaker-20261118/field-query-libs','R:/sim/pressure']
 import run_speaker_field as model
 tag,n=sys.argv[1:3]
 c=json.loads((p/f'{tag}-{n}.json').read_bytes())

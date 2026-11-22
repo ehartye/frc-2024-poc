@@ -21,7 +21,7 @@ def mesh(folder):
         if folder=='tread-underlay-01':b['basis']='The hard backing ends at radius 17.25 mm. The compliant tread extends to 24 mm. Actual compound and force curve remain open.'
         parts[n]=b
 for folder in ['frame-pocket-01','forward-drive-02','keeper-drive-02','tread-underlay-01']:mesh(folder)
-plan=read(sf/'plan.json');roster=list(csv.DictReader(Path('C:/Users/ehart/repos/frc-2024-poc/sim/pressure/evidence/speaker-repeatability-starts.csv').open()))
+plan=read(sf/'plan.json');roster=list(csv.DictReader(Path('R:/sim/pressure/evidence/speaker-repeatability-starts.csv').open()))
 def rigs(c,climbing=False):
     for n in remove:c['rig'].pop(n,None)
     for n in parts:

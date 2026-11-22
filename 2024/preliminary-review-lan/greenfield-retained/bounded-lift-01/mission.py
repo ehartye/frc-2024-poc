@@ -7,7 +7,7 @@ def read(f):return json.loads(f.read_bytes())
 def sha(f):return hashlib.sha256(f.read_bytes()).hexdigest()
 def save(f,r):
     tmp=f.with_suffix('.tmp');tmp.write_text(json.dumps(r,indent=2));tmp.replace(f)
-roster=Path('C:/Users/ehart/repos/frc-2024-poc/sim/pressure/evidence/speaker-repeatability-starts.csv')
+roster=Path('R:/sim/pressure/evidence/speaker-repeatability-starts.csv')
 plan=read(p/'plan.json');assert sha(roster)==plan['roster']
 def call(script,args,log):
     with log.open('w') as out:subprocess.run([sys.executable,script,*args],cwd=p,stdout=out,stderr=out,check=True)

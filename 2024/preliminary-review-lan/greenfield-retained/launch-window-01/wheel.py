@@ -2,7 +2,7 @@
 from pathlib import Path
 import sys,inspect,json
 p=Path(__file__).resolve().parent
-speed=float(sys.argv.pop());sys.path[:0]=[str(Path('C:/Users/ehart/Documents/FRC Native/2024/six-speaker-20261118/field-query-libs')),'C:/Users/ehart/repos/frc-2024-poc/sim/pressure']
+speed=float(sys.argv.pop());sys.path[:0]=[str(Path('R:/2024/six-speaker-20261118/field-query-libs')),'R:/sim/pressure']
 import run_speaker_field as field
 source=inspect.getsource(field.field_wrench)
 needle='        normal_speed = (relative*normal).sum(axis=1)'

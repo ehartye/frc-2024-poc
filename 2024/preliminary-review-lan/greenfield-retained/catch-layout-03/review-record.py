@@ -3,7 +3,7 @@ import math,json,hashlib,csv
 p=Path(__file__).resolve().parent;root=p.parent
 def read(f):return json.loads(f.read_bytes())
 def sha(f):return hashlib.sha256(f.read_bytes()).hexdigest()
-season=Path('C:/Users/ehart/repos/frc-2024-poc')
+season=Path('R:')
 narr=season/'kickoff/strategic-narrative.md';roster=season/'sim/pressure/evidence/speaker-repeatability-starts.csv'
 d=read(p/'review-data.json');assert d['narrativeReview']['source']['sha256']==sha(narr)
 cases={n:read(p/(n+'.json')) for n in ['controlled-front','controlled-center','controlled-rear','controlled-short','controlled-open','stiff-front','early']}

@@ -13,14 +13,14 @@ def registered_document(doc):
 
 
 import adsk.core,adsk.fusion,math,json,pathlib
-C=adsk.core;F=adsk.fusion;P=pathlib.Path(r'C:/Users/ehart/Documents/FRC Native/2024/turn-lift-20261118')
+C=adsk.core;F=adsk.fusion;P=pathlib.Path(r'R:/2024/turn-lift-20261118')
 def run(context):
     app=adsk.core.Application.get()
     doc=next(d for d in app.documents if d.creationId=='66980ae7-d1d8-48ed-bcd6-c785494a3fd8')
     state=registered_document(doc)
     assert hashlib.sha256(json.dumps(state['bodies'],sort_keys=True,separators=(',',':')).encode()).hexdigest()=='1626b467b7da6fa65817b643e92d8b4f19de40f7dbe98038d306a6f5445d3317'
     occ=dict(state['occ'])
-    inv_path=Path('C:\\Users\\ehart\\Documents\\FRC Native\\2024\\turn-lift-20261118\\native-refinement-import\\fusion-relieved-inventory.json');scan_path=Path('C:\\Users\\ehart\\Documents\\FRC Native\\2024\\track-tread-candidate-20261118\\route-relieved\\scan.json')
+    inv_path=Path('R:\\2024\\turn-lift-20261118\\native-refinement-import\\fusion-relieved-inventory.json');scan_path=Path('R:\\2024\\track-tread-candidate-20261118\\route-relieved\\scan.json')
     assert hashlib.sha256(inv_path.read_bytes()).hexdigest()=='4e87aed3b344dd80f22a6aa6fff2868322df6ea51b28eff0091bb1e3fe077f73'
     assert hashlib.sha256(scan_path.read_bytes()).hexdigest()=='3b311a1546d1e24ea92b80d16459174cbc547f2db92bcf3974b81b43f90d132f'
     inventory=json.loads(inv_path.read_bytes());scan=json.loads(scan_path.read_bytes())
@@ -29,7 +29,7 @@ def run(context):
 
 
     docs=[doc]
-    root=F.Design.cast(docs[0].products.itemByProductType('DesignProductType')).rootComponent;mgr=F.TemporaryBRepManager.get();inv=json.loads(pathlib.Path(r'C:/Users/ehart/Documents/FRC Native/2024/track-tread-candidate-20261118/route-relieved/scan.json').read_bytes())['inventory'];parts=[];j=0
+    root=F.Design.cast(docs[0].products.itemByProductType('DesignProductType')).rootComponent;mgr=F.TemporaryBRepManager.get();inv=json.loads(pathlib.Path(r'R:/2024/track-tread-candidate-20261118/route-relieved/scan.json').read_bytes())['inventory'];parts=[];j=0
     for o in root.allOccurrences:
         for b in o.bRepBodies:
             r=inv[j];j+=1;assert r['name']==b.name
@@ -56,7 +56,7 @@ def run(context):
                 tests+=1;v=common(x,y)
                 if v is None or v>.01:out[(r['key'],s['key'])]=v
         return out,tests
-    with pathlib.Path('C:\\Users\\ehart\\Documents\\FRC Native\\2024\\six-speaker-20261118\\native-mid-oblique-2275-full-structure.jsonl').open('x') as f:
+    with pathlib.Path('R:\\2024\\six-speaker-20261118\\native-mid-oblique-2275-full-structure.jsonl').open('x') as f:
         ref,count=hits(snapshot(0,25.4));names={r['key']:r['name'] for r,b in parts};f.write(json.dumps(dict(label='floor',pairs=count,positive=len(ref)))+'\n');f.flush()
         poses=[(96.46715000035108, 1.0469897409440974, 474.8335371661612), (96.57650000035471, 1.0468508342360556, 474.7665825158803), (97.26710000037764, 1.0519130612679686, 473.7083589120066), (97.37850000038134, 1.0519353442414352, 473.6648641232395), (97.43930000038335, 1.0518851039262835, 473.6727563370297), (97.46105000038408, 1.0518989336831785, 473.6786632111774), (97.49105000038507, 1.0520501761393564, 473.6657830789568)]
         for label,angle,z in poses:

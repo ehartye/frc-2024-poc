@@ -6,7 +6,7 @@ def add_review(data,seat,held):
     here=Path(__file__).resolve().parent
     body=data['bodies']
     for name,b in body.items(): b.update(explain(name))
-    source=Path('C:/Users/ehart/repos/frc-2024-poc/kickoff/strategic-narrative.md')
+    source=Path('R:/kickoff/strategic-narrative.md')
     text=source.read_text(encoding='utf8')
     assert 'End-of-match decision' in text
     data['narrativeReview']=dict(source=dict(file='kickoff/strategic-narrative.md',sha256=hashlib.sha256(source.read_bytes()).hexdigest()),objectives=[

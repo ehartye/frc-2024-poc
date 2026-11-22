@@ -13,7 +13,7 @@ def ax(x,y,z,r,l):return cyl((x,y,z),X,r,l)
 def az(x,y,z,r,l):return cyl((x,y,z),(0,0,1),r,l)
 def digest(f):return hashlib.sha256(f.read_bytes()).hexdigest()
 fp=root/'guided-hoist-01/service-locked-robot.step'
-src=Path('C:/Users/ehart/Documents/FRC Native/plugin-qa/toe-actuator-20261121/REV-21-1651.STEP')
+src=Path('R:/plugin-qa/toe-actuator-20261121/REV-21-1651.STEP')
 assert digest(src).startswith('4fdcdd97') and digest(fp).startswith('a29a146d')
 stock={name(k):v for k,v in load_solids(fp)[0].items()};assert len(stock)==232
 del stock['Slide drive motor']

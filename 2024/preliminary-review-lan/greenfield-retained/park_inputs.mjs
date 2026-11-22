@@ -1,8 +1,8 @@
 import fs from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';
-import {loadScoreObservations} from 'file:///C:/Users/ehart/repos/agent-frc/scripts/score-observations.mjs';
-import {createFieldRehearsal} from 'file:///C:/Users/ehart/repos/agent-frc/scripts/field-rehearsal.mjs';
-import {createMatchSeries} from 'file:///C:/Users/ehart/repos/agent-frc/scripts/rehearsal-series-core.mjs';
-const src='C:/Users/ehart/repos/frc-2024-poc/kickoff/physical-match.json';
+import {loadScoreObservations} from 'file:///%USERPROFILE%/repos/agent-frc/scripts/score-observations.mjs';
+import {createFieldRehearsal} from 'file:///%USERPROFILE%/repos/agent-frc/scripts/field-rehearsal.mjs';
+import {createMatchSeries} from 'file:///%USERPROFILE%/repos/agent-frc/scripts/rehearsal-series-core.mjs';
+const src='R:/kickoff/physical-match.json';
 const p=await loadScoreObservations(JSON.parse(fs.readFileSync(src)),src);const eng=createFieldRehearsal(p);
 const series=createMatchSeries(eng,[p.rehearsal.series.matches[0]]);series.advance(15+111);
 const frames=[];for(let i=0;i<=480;i++){const s=series.sim;frames.push({t:i*.05,actors:s.robots.map(r=>({id:r.id,p:r.p.slice(),heading:r.heading,length:r.length,width:r.width,bumper:r.bumper}))});if(i<480)series.advance(.05)}

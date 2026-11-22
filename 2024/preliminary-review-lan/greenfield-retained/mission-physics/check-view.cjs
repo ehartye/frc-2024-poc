@@ -1,4 +1,4 @@
-const {chromium}=require('C:/Users/ehart/repos/certaindeath/node_modules/playwright');
+const {chromium}=require('%USERPROFILE%/repos/certaindeath/node_modules/playwright');
 (async()=>{const b=await chromium.launch({channel:'msedge',headless:true,args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']});try{
  const page=await b.newPage({viewport:{width:1440,height:1050}});page.on('pageerror',e=>console.error('PAGE',e.message));for(const key of ['shot','climb']){
  await page.goto('http://192.168.1.129:8764/?case='+key);await page.waitForFunction(()=>document.querySelector('#liveMeasure')?.textContent.length>0,null,{timeout:60000});await page.locator('#stage').scrollIntoViewIfNeeded();

@@ -8,7 +8,7 @@ def sha(f):return hashlib.sha256(f.read_bytes()).hexdigest()
 def write(file,data):
     tmp=file.with_suffix('.tmp');tmp.write_text(json.dumps(data,indent=2));tmp.replace(file)
 plan=read(p/'plan.json')
-roster=Path('C:/Users/ehart/repos/frc-2024-poc/sim/pressure/evidence/speaker-repeatability-starts.csv')
+roster=Path('R:/sim/pressure/evidence/speaker-repeatability-starts.csv')
 assert sha(roster)==plan['roster']
 sources=[p/f for f in ('run.py','carry.py','fire.py','route.py','plan.json')]+[root/'split-cycle-01'/f for f in ('split_intake.py','split_fire.py','package.json')]+[root/'scorer-contact-01'/f for f in ('split.py','patch.py')]+[root/'six-piece-02'/f for f in ('route.py','loaded.py')]+[root/'follower-01'/f for f in ('carry_cam.py','fire.py','stroke.py','response.json')]+[root/'bounded-risk-01'/f for f in ('pickup.py','power.py')]+[root/'pickup-lip'/f for f in ('pickup_trial.py','shot_replay.py','layout.json')]+[root/'pickup_physics.py',root/'mission-physics/shot.py']
 cfg=dict(inputs={str(f.relative_to(root)):sha(f) for f in sources},setupRoster=sha(roster),field=plan['field'],commandMps=6.88,stationM=[1.54,5.55],required=[19,20],limitS=120,scoring='The full ring crossed the opening and fully shadowed both counter pairs. A failed or late leg fails that six-NOTE attempt.',cutoff='Stop after second failed run. Tests after first failure on a given run cannot restore its credit.',scope='Two start cases informed development. This is regression on the prespecified roster. Independent unseen setup validation remains separate.')

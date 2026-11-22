@@ -132,4 +132,4 @@ def run(context):
             state=snapshot(doc)
             item.update(signature=hashlib.sha256(json.dumps(state,sort_keys=True,separators=(',',':')).encode()).hexdigest(),state=state)
         rows.append(item)
-    with Path('C:\\Users\\ehart\\Documents\\FRC Native\\2024\\six-speaker-20261118\\draft-state-audit.json').open('x') as f:json.dump(rows,f)
+    with Path('R:\\2024\\six-speaker-20261118\\draft-state-audit.json').open('x') as f:json.dump(rows,f)

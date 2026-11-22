@@ -1,4 +1,4 @@
-const {chromium}=require('C:/Users/ehart/repos/certaindeath/node_modules/playwright');
+const {chromium}=require('%USERPROFILE%/repos/certaindeath/node_modules/playwright');
 (async()=>{const b=await chromium.launch({channel:'msedge',headless:true,args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']});try{const p=await b.newPage({viewport:{width:1440,height:1020}});p.on('pageerror',e=>{throw e});
 await p.goto('http://192.168.1.129:8764/?case=intake');await p.waitForFunction(()=>document.querySelector('#liveMeasure')?.textContent.includes('flap'));if(!(await p.locator('h1').innerText()).includes('pickup lip'))throw Error('Old issue');
 for(const frame of [0,80,150,250]){await p.locator('#time').evaluate((el,f)=>{el.value=f;el.dispatchEvent(new Event('input'))},frame);await p.waitForTimeout(100);console.log(frame,await p.locator('#liveMeasure').innerText());if(frame===80){await p.locator('#stage').scrollIntoViewIfNeeded();await p.locator('.viewer').screenshot({path:'pickup-lip-flap.png'})}}

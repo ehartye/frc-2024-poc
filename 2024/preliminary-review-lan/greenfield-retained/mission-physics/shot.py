@@ -5,9 +5,9 @@ import sys,json,math,hashlib
 from types import SimpleNamespace
 import numpy as np,mujoco as mj
 here=Path(__file__).resolve().parent
-root=Path('C:/Users/ehart/Documents/FRC Native/2024/six-speaker-20261118')
+root=Path('R:/2024/six-speaker-20261118')
 field=root/'field-source'/'blue-speaker'
-sys.path[:0]=[str(root/'field-query-libs'),'C:/Users/ehart/repos/frc-2024-poc/sim/pressure']
+sys.path[:0]=[str(root/'field-query-libs'),'R:/sim/pressure']
 from speaker_surfaces import SpeakerSurfaces,digest
 from run_speaker_field import field_wrench
 from speaker_score_observer import opening_passage,shadow_margin,beam_samples
