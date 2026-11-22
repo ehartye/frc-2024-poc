@@ -106,9 +106,19 @@ def initial_ops(st, classes):
     return {c: kin.operations(m, PIVOT_PARK) for c, m in poses(st, classes).items()}
 
 
-def _deviation(ops, start_pose, true_pose, fraction, cls):
-    e = kin.matrix(ops, fraction) @ start_pose - true_pose
-    return float(np.linalg.norm(e[:3, 3]) + REACH_MM.get(cls, 720.0) * np.abs(e[:3, :3]).max())
+def _deviation(ops, start_pose, true_pose, fraction, corners):
+    """Largest distance between the interpolated and the sampled position of any point of the class.
+
+    `corners` holds the eight corners of the class's parked bounding box as homogeneous columns. The
+    difference of two rigid placements is affine, so its largest value over the box is at a corner.
+    """
+    e = (kin.matrix(ops, fraction) @ start_pose - true_pose) @ corners
+    return float(np.linalg.norm(e[:3], axis=0).max())
+
+
+def box_corners(box):
+    """Homogeneous corner columns of (xmin, ymin, zmin, xmax, ymax, zmax)."""
+    return np.array([[box[i], box[j], box[k], 1.0] for i in (0, 3) for j in (1, 4) for k in (2, 5)]).T
 
 
 def path_parameter(states, classes):
@@ -126,8 +136,10 @@ def path_parameter(states, classes):
     return s
 
 
-def cut(states, classes, carried, tolerance_mm, max_span=None):
-    """Greedy segmentation. Returns [(i, j, deviationMm)] over sample indices."""
+def cut(states, classes, carried, tolerance_mm, corners, max_span=None):
+    """Greedy segmentation. Returns [(i, j, deviationMm)] over sample indices.
+
+    `corners` maps each rigid class to the corner columns of its parked bounding box."""
     s = path_parameter(states, classes)
     out, i = [], 0
     while i < len(states) - 1:
@@ -139,7 +151,7 @@ def cut(states, classes, carried, tolerance_mm, max_span=None):
             for k in range(i + 1, j + 1):
                 f = (s[k] - s[i]) / span
                 true = poses(states[k], classes)
-                trial = max(trial, max(_deviation(ops[c], pa[c], true[c], f, c) for c in pa))
+                trial = max(trial, max(_deviation(ops[c], pa[c], true[c], f, corners[c]) for c in pa))
                 if trial > tolerance_mm:
                     break
             if trial > tolerance_mm:

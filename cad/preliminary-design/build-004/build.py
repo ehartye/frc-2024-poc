@@ -57,7 +57,22 @@ PHASES = dict(
                 text="Released NOTE flies free through the speaker opening"),
     stow=dict(purpose="park", duty="pivot-empty", carried=False, stage="park",
               text="Empty cassette moves from the launch angle to the parked angle"),
+    approach=dict(purpose="operating", duty="pivot-empty", carried=False, stage="endgame",
+                  text="Empty cassette lowers to the chain capture angle and the keeper opens (commanded approach)"),
+    capture=dict(purpose="operating", duty="climb", carried=False, stage="endgame",
+                 text="Keeper closes on the chain; catch dog and clutch movements are drawn as allocations"),
+    hoist=dict(purpose="operating", duty="climb", carried=False, stage="endgame",
+               text="Pivot motor reels both lines and the hook carriage draws along the cassette"),
+    hold=dict(purpose="park", duty="hold", carried=False, stage="endgame",
+              text="Carriage seats on the slide stops and holds after motor power is cut"),
 )
+SCORING = ("reset", "acquire", "lift", "feed", "flight", "stow")
+CLIMB_TRACE = ledgers.CLIMB["front"]
+# Display allocations of the hoist publisher (guided-hoist-01/publish-review.py): not solved by the climb trial.
+DOG_MM, DOG_S = -10.8, 0.13
+CLUTCH_MM, CLUTCH_S = -4.2, (0.15, 0.35)
+STOP_MM = 8.0
+REEL_FROM_S = 0.45
 
 
 def save(name, value):
@@ -96,12 +111,49 @@ def scoring_states(c):
     out["feed"], out["flight"] = shots[:j_release + 1], shots[j_release:j_through + 1]
     last = shots[j_through]
     out["stow"] = [dict(last), dict(last, angle=kin.PARK_ANGLE_DEG, clock=last["clock"] + 1.0)]
+    out.update(climb_states(read(CLIMB_TRACE), dict(out["stow"][-1])))
     # Each phase starts exactly where the previous one ended.
     order = list(PHASES)
     for prev, nxt in zip(order, order[1:]):
         end = out[prev][-1]
         out[nxt][0] = dict(end, clock=end["clock"])
     return {k: [segments.complete(s) for s in v] for k, v in out.items()}
+
+
+def climb_states(trial, parked):
+    """States of the endgame from the parked cassette through capture, hoist and the disabled hold.
+
+    The approach is commanded: the cassette lowers to the capture angle of the trial while the keeper opens to
+    the gate the trial starts with, and the cover leaf follows its cam. From capture on, cassette angle,
+    carriage draw, keeper gate and drum coil are the recorded trial values.
+    """
+    rows = trial["trace"]
+    first = rows[0]
+    base = dict(parked, draw=0.0, gate=0.0, coil=0.0, dog=0.0, clutch=0.0, stop=0.0)
+    t0 = base["clock"]
+
+    def cam(angle):
+        return min(base["flap"], 90.0 * min(1.0, max(0.0, (angle - 102.0) / 18.0)))
+    span = kin.PARK_ANGLE_DEG - first["angle"]
+    steps = int(math.ceil(span))
+    approach = []
+    for k in range(steps + 1):
+        u = k / steps
+        angle = kin.PARK_ANGLE_DEG - span * u
+        approach.append(dict(base, angle=angle, flap=cam(angle), gate=1000 * first["gate"] * u, clock=t0 + 2.0 * u))
+    t1 = approach[-1]["clock"]
+    solved = []
+    for r in rows:
+        t = r["t"]
+        solved.append(dict(base, angle=r["angle"], flap=cam(r["angle"]), draw=1000 * r["draw"],
+                           gate=1000 * max(0.0, r["gate"]), coil=r["coil"],
+                           dog=DOG_MM * min(t / DOG_S, 1.0),
+                           clutch=CLUTCH_MM * min(max((t - CLUTCH_S[0]) / (CLUTCH_S[1] - CLUTCH_S[0]), 0.0), 1.0),
+                           stop=STOP_MM if r["latchedNow"] else 0.0, clock=t1 + t))
+    i_reel = max(i for i, r in enumerate(rows) if r["t"] <= REEL_FROM_S + 1e-9)
+    i_latch = min(i for i, r in enumerate(rows) if r["latchedNow"])
+    return dict(approach=approach, capture=solved[:i_reel + 1], hoist=solved[i_reel:i_latch],
+                hold=solved[i_latch - 1:])
 
 
 class Geometry:
@@ -137,8 +189,13 @@ def main():
     parser.add_argument("plugin", type=Path)
     parser.add_argument("--only", default="", help="Comma-separated phases to build, for a partial trial run")
     parser.add_argument("--tolerance", type=float, default=1.0, help="Largest departure of a case path from its trace, mm")
+    parser.add_argument("--battery", action="store_true", help="Include the battery lift at the service index")
+    parser.add_argument("--count", action="store_true", help="Print the case count of each phase and write nothing")
     opt = parser.parse_args()
     OUT.mkdir(parents=True, exist_ok=True)
+    if not opt.count:
+        for stale in [*OUT.glob("trial-*.json"), *OUT.glob("joint-*.json")]:
+            stale.unlink()
     step_file = OUT / "robot.step"
     import step_names
     fixed, _ = step_names.repair(SOURCE_STEP.read_bytes())
@@ -149,14 +206,24 @@ def main():
     names = sorted(geo.shapes)
     rigid, groups, member_group, components, scene = roster.build(names)
     near = roster.contacts(geo.shapes, geo.mm.bounds, HERE / "derived/contacts.json", step["sha256"])
-    mounts = roster.mounts(groups, member_group, rigid, near)
+    mounts, floating = roster.mounts(groups, member_group, rigid, near)
     classes = sorted(set(rigid.values()))
     by_class = {c: [n for n in names if rigid[n] == c] for c in classes}
     note = by_class["note"][0]
+    corners = {}
+    for c, members in by_class.items():
+        boxes = [geo.mm.bounds(geo.shapes[n]) for n in members]
+        corners[c] = segments.box_corners([min(b[i] for b in boxes) for i in range(3)] + [max(b[i] for b in boxes) for i in (3, 4, 5)])
 
     cyc = timeline.Cycle()
     states = scoring_states(cyc)
     wanted = [p for p in opt.only.split(",") if p] or list(PHASES)
+    if opt.count:
+        for phase in wanted:
+            cuts, _ = segments.cut(states[phase], classes, PHASES[phase]["carried"], opt.tolerance, corners)
+            print(phase, len(states[phase]), "samples ->", len(cuts), "cases, largest deviation",
+                  round(max(c[2] for c in cuts), 3), "mm")
+        return
     limits = read(LIMITS)
     rules = [dict(payload=note, contact=n, maxDepthMm=v, basis=limits["basis"]) for n, v in limits["limitsMm"].items()]
     assert all(r["contact"] in names for r in rules)
@@ -174,7 +241,7 @@ def main():
         if phase not in wanted:
             continue
         spec, sts = PHASES[phase], states[phase]
-        cuts, s = segments.cut(sts, classes, spec["carried"], opt.tolerance)
+        cuts, s = segments.cut(sts, classes, spec["carried"], opt.tolerance, corners)
         for index, (i, j, deviation) in enumerate(cuts, 1):
             a, b = sts[i], sts[j]
             cid = phase if len(cuts) == 1 else f"{phase}-{index:02d}"
@@ -235,6 +302,18 @@ def main():
     stages[pin_case["id"]] = dict(purpose="service", movingGroups=[member_group[roster.SERVICE_PIN]],
                                   allowanceBasis="Full straight withdrawal past the installed robot envelope.")
     cases.append(pin_case)
+    index = segments.complete(dict(angle=SERVICE_INDEX_DEG, px=float(cyc.scheduled(SERVICE_INDEX_DEG)), note=states["reset"][0]["note"]))
+    index_pose = segments.initial_ops(index, classes)
+    lift_case = dict(id="lift-battery-at-service-index", stage="service",
+                     basis=f"Empty cassette indexed at {SERVICE_INDEX_DEG:.0f} degrees with the truck on its slide law. The "
+                           f"battery lifts straight up {BATTERY_LIFT_MM:.0f} mm with its leads disconnected.",
+                     initialPose={n: index_pose[rigid[n]] for n in names if index_pose.get(rigid[n])},
+                     moves={roster.BATTERY: [kin.translation([0, 0, BATTERY_LIFT_MM])]},
+                     minGapMm=0, maxDepth=10, checkLinearEnvelope=True, payloadCompression=rules, _joints=[])
+    if opt.battery:
+        stages[lift_case["id"]] = dict(purpose="service", movingGroups=[member_group[roster.BATTERY]],
+                                       allowanceBasis="Zero clearance to every installed solid through the straight lift.")
+        cases.append(lift_case)
 
     step_sha = step["sha256"]
     for case in cases:
@@ -250,7 +329,9 @@ def main():
                                       layoutDatum=datum, step=step, cases=cases))
 
     mass_lines, payload, gross = ledgers.masses()
-    inspection = [sum(r["kg"][i] for r in mass_lines) for i in (0, 1)]
+    inspection = [0.0, 0.0]
+    for line in mass_lines:      # the checker's own summation order, so the running range matches bit for bit
+        inspection = [a + b for a, b in zip(inspection, line["kg"])]
     running = [a + b for a, b in zip(inspection, payload)]
     duty_table = ledgers.duties()
     duty, electrical = {}, {}
@@ -279,7 +360,9 @@ def main():
                                           source=gross_pin, issue=ISSUE, designSha256=design["sha256"], stepSha256=step_sha))
     narrative = copy(NARRATIVE, "strategic-narrative.md")
 
-    control_case = next(c for c in cases if case_phase.get(c["id"]) == "feed" and note in c["moves"])
+    # The control repeats a feed case that has no designed joint in motion, so only the displaced tread can reject it.
+    control_case = next(c for c in cases if case_phase.get(c["id"]) == "feed" and note in c["moves"]
+                        and not c.get("intendedInterfaces"))
     presentation = evidence.presentation(components, groups, member_group, rigid, duty_table, timelines, case_phase)
     plan = dict(schema="agent-frc/preliminary-layout@1", issue=ISSUE, datum=datum, step=step, design=design, motion=motion,
                 groups=groups, mounts=mounts, stages=stages, cycle=cycle_ids, budgets=budget, missingInputs=[],
@@ -292,6 +375,7 @@ def main():
     summary = {p: sum(1 for v in case_phase.values() if v == p) for p in PHASES}
     print("Prepared", len(names), "solids,", len(groups), "groups,", len(mounts), "mounts,", len(cases), "cases", summary)
     print("largest path deviation mm", max(deviations.values(), default=0))
+    print("members that touch no other solid when parked:", floating)
 
 
 if __name__ == "__main__":

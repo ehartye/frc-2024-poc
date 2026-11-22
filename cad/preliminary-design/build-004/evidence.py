@@ -4,6 +4,7 @@ Every qualification statement is checked against the evidence file it cites when
 the build stops if a cited file no longer shows the stated outcome. A qualification element with no
 supporting trial is left out, so the readiness report names it as missing.
 """
+from risks import RISKS
 from timeline import EVIDENCE, pin, read
 
 CAMPAIGN = EVIDENCE / "counted-reset-power-02"
@@ -187,16 +188,6 @@ def presentation(components, groups, member_group, rigid, duty_table, timelines,
         uncoveredCases=[dict(id=r["id"], condition=r["condition"], reason=r["risk"]) for r in RISKS if r.get("condition")])
 
 
-# Open risks. Each is closed by a named design change or carried as a bench test with pass and fail values.
-RISKS = [
-    dict(id="scoring-repeatability", condition="Twenty perturbed starts of the six-NOTE mission",
-         risk="Six scores in 120 s on 19 of 20 starts. In the frozen simulation campaign at the 6.88 m/s command three of "
-              "seven perturbed starts failed (R02, R03 and R06) and thirteen were not run.",
-         benchTest=dict(measure="Starts out of 20 on a full field speaker that score six floor NOTES within 120 s",
-                        **{"pass": 19, "fail": 18}, unit="starts")),
-]
-
-
 def missions(case_phase, trials, cycle_ids):
     """Mission cases, the cycle map and the risk register."""
     def last(phase):
@@ -211,7 +202,8 @@ def missions(case_phase, trials, cycle_ids):
         cid = last(phase)
         if cid and cid in trials:
             cases.append(dict(case=cid, kind="operating-case", accomplishes=verb, objective=objective, trial=trials[cid]))
-    stage_of = dict(reset="reset", acquire="acquire", lift="retain", feed="transfer", flight="deliver", stow="park")
+    stage_of = dict(reset="reset", acquire="acquire", lift="retain", feed="transfer", flight="deliver", stow="park",
+                    approach="endgame", capture="endgame", hoist="endgame", hold="endgame")
     cycle = {}
     for cid in cycle_ids:
         cycle.setdefault(stage_of[case_phase[cid]], dict(cases=[]))["cases"].append(cid)

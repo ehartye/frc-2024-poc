@@ -128,32 +128,28 @@ def mounts(groups, member_group, rigid, near, touch_mm=1e-5):
     for (a, b), row in near.items():
         by_member.setdefault(a, []).append((row["gapMm"], b, row["onSecondMm"]))
         by_member.setdefault(b, []).append((row["gapMm"], a, row["onFirstMm"]))
-    out = []
+    out, floating = [], []
     for key, g in groups.items():
         if g["role"] != "mechanism":
             continue
-        found = 0
-        loose = []
         for member in g["members"]:
-            options = [(gap, host, point) for gap, host, point in by_member.get(member, []) if member_group[host] != key
-                       and groups[member_group[host]]["role"] != "payload"]
+            options = [o for o in by_member.get(member, []) if groups[member_group[o[1]]]["role"] != "payload"]
             if not options:
+                floating.append(member)
                 continue
-            # Prefer a touching host on the parent rigid body, then any touching host, then the nearest.
+            # Prefer a touching host: on another group and the parent rigid body, then another group, then its own
+            # group. A member that touches nothing takes its nearest neighbour and says so.
             wanted = PARENT[rigid[member]]
-            options.sort(key=lambda o: (o[0] > touch_mm, rigid[o[1]] not in (wanted, rigid[member]), o[0], o[1]))
+            options.sort(key=lambda o: (o[0] > touch_mm, member_group[o[1]] == key,
+                                        rigid[o[1]] not in (wanted, rigid[member]), o[0], o[1]))
             gap, host, point = options[0]
             if gap <= touch_mm:
-                out.append(dict(group=key, member=member, on=host, pointMm=point,
-                                basis=f"Parked STEP surface datum on {host} where {member} bears on it. "
-                                      f"Measured separation {gap:.3f} mm."))
-                found += 1
+                basis = (f"Parked STEP surface datum on {host} where {member} bears on it. "
+                         f"Measured separation {gap:.3f} mm.")
             else:
-                loose.append((gap, member, host, point))
-        if not found:
-            assert loose, "No neighbouring solid for " + key
-            gap, member, host, point = min(loose)
-            out.append(dict(group=key, member=member, on=host, pointMm=point,
-                            basis=f"Parked STEP surface datum on {host} nearest {member}. Measured running "
-                                  f"clearance {gap:.3f} mm; the pair does not touch in the parked layout."))
-    return out
+                basis = (f"Parked STEP surface datum on {host} nearest {member}. Measured clearance {gap:.3f} mm; "
+                         "the pair does not touch in the parked layout, so the connection is not yet drawn.")
+                floating.append(member)
+            out.append(dict(group=key, member=member, on=host, pointMm=point, basis=basis))
+        assert any(m["group"] == key for m in out), "No neighbouring solid for " + key
+    return out, floating
