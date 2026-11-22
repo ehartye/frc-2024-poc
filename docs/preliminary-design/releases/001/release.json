@@ -1,0 +1,13 @@
+{
+  "id": "001",
+  "title": "Bounded lift and empty-cassette reset",
+  "defaultCase": "loaded-cycle-48",
+  "sceneSha256": "62765eb754f607fb4c0e7347be796beb80bf1fb9971b85f02919736b3ddee258",
+  "geometry": "a29a146d8897f64e8f056fcb46a431ba234c7aecccbc3233b6834c43c703bc88",
+  "cases": [
+    "loaded-cycle-48",
+    "observed-reset-96"
+  ],
+  "scope": "Archived bounded-lift trial. Its earlier carry visualization is superseded by release 002. The saved individual-shot run is preserved with its original scope.",
+  "fixtureRepresentation": "Dimensioned presentation primitives. The numerical results use the original field contact model."
+}

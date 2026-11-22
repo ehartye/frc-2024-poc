@@ -153,3 +153,6 @@ experiments/a2-campaign/frozen/** -text
 
 # Keep the source-bound, reopened cassette STEP byte-identical.
 experiments/passive-entry/paired-entry.step binary
+
+# Compressed preliminary design scenes must keep their exact bytes.
+docs/preliminary-design/releases/*/scene.json.gz binary
