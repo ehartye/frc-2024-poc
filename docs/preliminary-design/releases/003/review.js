@@ -8,7 +8,7 @@ function weightLedger(){
  const [tab,body]=table(['Inspection allocation','Low, kg','High, kg']);for(const row of data.mass.filter(r=>r.kg[1]>0)){
  const tr=body.insertRow();tr.insertCell().textContent=row.id;for(const v of row.kg)tr.insertCell().textContent=v.toFixed(3)}
  const total=body.insertRow();total.className='grand-total';total.insertCell().textContent='Inspection total';for(const v of data.inspection)total.insertCell().textContent=v.toFixed(3);root.append(tab);
- const details=document.createElement('details');details.append(text('summary','Running configuration Â· '+range(data.running,2)+' kg'));details.append(text('p','Add the battery, one game piece and the finished bumper scenario to the inspection estimate.'));
+ const details=document.createElement('details');details.append(text('summary','Running configuration · '+range(data.running,2)+' kg'));details.append(text('p','Add the battery, one game piece and the finished bumper scenario to the inspection estimate.'));
  const [ta,bd]=table(['Additional article','Low, kg','High, kg']);for(const r of data.details.filter(r=>['battery','one NOTE','finished bumper scenario'].includes(r.name))){const tr=bd.insertRow();tr.insertCell().textContent=r.name;for(const v of r.kg)tr.insertCell().textContent=v.toFixed(3)}details.append(ta);root.append(details)
 }
 function drawPowerBars(){
@@ -21,25 +21,25 @@ function drawPowerBars(){
 }
 
 /* Selected-duty, battery-side load ledger and role-based commissioning checks. */
-function signed(v,unit,digits){return (v>=0?'+':'âˆ’')+Math.abs(v).toFixed(digits)+' '+unit}
+function signed(v,unit,digits){return (v>=0?'+':'−')+Math.abs(v).toFixed(digits)+' '+unit}
 function resourcePanel(){
  const e=duty(),limit=56.69904625,worst=data.inspection[1],voc=e.openCircuitV??(e.loadedBusV[0]+e.resistance*e.batterySideA[1]),r=e.resistance,minimum=e.requiredMinV,available=(voc-minimum)/r,imax=e.batterySideA[1];
  const pAt=i=>i*(voc-r*i),peak=Math.max(pAt(e.batterySideA[0]),pAt(imax),e.batterySideA[0]<=voc/(2*r)&&imax>=voc/(2*r)?pAt(voc/(2*r)):0);
  weightLedger();drawPowerBars();const total=$('resources');total.replaceChildren();
- function meter(label,value,message,used,capacity,negative){const block=document.createElement('section');block.className='budget-meter';block.append(text('span',label),text('b',value));const bar=document.createElement('progress');bar.max=Math.max(used,capacity)*1.04;bar.value=used;bar.setAttribute('aria-label',label);block.classList.toggle('over',negative);block.append(bar,text('small',message));const link=text('a',label==='Inspection weight'?'Weight ledger â†“':'Power ledger â†“');link.href=label==='Inspection weight'?'#weightCard':'#powerCard';block.append(link);total.append(block)}
- meter('Inspection weight',data.inspection[0].toFixed(3)+'â€“'+worst.toFixed(3)+' kg','Limit '+limit.toFixed(3)+' kg Â· headroom '+signed(limit-worst,'kg',3)+' high / '+signed(limit-data.inspection[0],'kg',3)+' low',worst,limit,worst>limit);
- meter('Battery voltage under load',e.loadedBusV[0].toFixed(3)+' V minimum','Requirement '+minimum.toFixed(2)+' V Â· headroom '+signed(e.loadedBusV[0]-minimum,'V',3),voc-e.loadedBusV[0],voc-minimum,e.loadedBusV[0]<minimum);
- meter('Battery-side demand',imax.toFixed(1)+' A Â· '+(peak/1000).toFixed(2)+' kW','Pack budget at '+minimum.toFixed(1)+' V: '+available.toFixed(1)+' A / '+(minimum*available/1000).toFixed(2)+' kW',imax,available,imax>available);
- const mount=$('loads');mount.replaceChildren(text('p',e.case+' Â· '+voc.toFixed(1)+' V open circuit Â· '+(1000*r).toFixed(1)+' mÎ© battery model. Select a load to highlight its components.'));
+ function meter(label,value,message,used,capacity,negative){const block=document.createElement('section');block.className='budget-meter';block.append(text('span',label),text('b',value));const bar=document.createElement('progress');bar.max=Math.max(used,capacity)*1.04;bar.value=used;bar.setAttribute('aria-label',label);block.classList.toggle('over',negative);block.append(bar,text('small',message));const link=text('a',label==='Inspection weight'?'Weight ledger ↓':'Power ledger ↓');link.href=label==='Inspection weight'?'#weightCard':'#powerCard';block.append(link);total.append(block)}
+ meter('Inspection weight',data.inspection[0].toFixed(3)+'–'+worst.toFixed(3)+' kg','Limit '+limit.toFixed(3)+' kg · headroom '+signed(limit-worst,'kg',3)+' high / '+signed(limit-data.inspection[0],'kg',3)+' low',worst,limit,worst>limit);
+ meter('Battery voltage under load',e.loadedBusV[0].toFixed(3)+' V minimum','Requirement '+minimum.toFixed(2)+' V · headroom '+signed(e.loadedBusV[0]-minimum,'V',3),voc-e.loadedBusV[0],voc-minimum,e.loadedBusV[0]<minimum);
+ meter('Battery-side demand',imax.toFixed(1)+' A · '+(peak/1000).toFixed(2)+' kW','Pack budget at '+minimum.toFixed(1)+' V: '+available.toFixed(1)+' A / '+(minimum*available/1000).toFixed(2)+' kW',imax,available,imax>available);
+ const mount=$('loads');mount.replaceChildren(text('p',e.case+' · '+voc.toFixed(1)+' V open circuit · '+(1000*r).toFixed(1)+' mΩ battery model. Select a load to highlight its components.'));
  for(const line of e.lines){
-  const d=document.createElement('details');const s=document.createElement('summary');s.textContent=line.name+'ã€€ '+range(line.amps,1)+' A';d.append(s);
-  const minW=line.amps[0]*e.loadedBusV[0],maxW=line.amps[1]*e.loadedBusV[1];d.append(text('p','Battery input envelope '+Math.floor(minW)+'â€“'+Math.ceil(maxW)+' W Â· pack sag contribution '+range(line.amps.map(i=>r*i),3)+' V. Power bounds combine voltage and current extrema.'));
+  const d=document.createElement('details');const s=document.createElement('summary');s.textContent=line.name+'　 '+range(line.amps,1)+' A';d.append(s);
+  const minW=line.amps[0]*e.loadedBusV[0],maxW=line.amps[1]*e.loadedBusV[1];d.append(text('p','Battery input envelope '+Math.floor(minW)+'–'+Math.ceil(maxW)+' W · pack sag contribution '+range(line.amps.map(i=>r*i),3)+' V. Power bounds combine voltage and current extrema.'));
   const group=text('button','Locate this load');group.onclick=()=>{isolated=null;selected=null;marked=line.members.slice();draw();$('stage').scrollIntoView({block:'nearest'});};d.append(group);
   const members=document.createElement('div');members.className='member-buttons';line.members.forEach(n=>{if(data.bodies[n]){const b=text('button',n);b.onclick=()=>{isolated=null;inspect(n);$('stage').scrollIntoView({block:'nearest'})};members.append(b)}});d.append(members);d.append(text('p',line.members.length>1?'Budgeted as a shared load. Individual current split is unavailable.':'Assigned to this component in the duty model.'));mount.append(d)
  }
  const v=$('required');v.replaceChildren();const names=new Set(entries.map(([n])=>n));const motors=Array.from(names).filter(n=>/^Swerve (drive|steer) motor/.test(n));
  const expected=data.required||[];
- let missing=0;for(const [role,list] of expected){const absent=list.filter(n=>!names.has(n));missing+=absent.length;const row=document.createElement('div');row.className='role-row '+(absent.length?'warn':'');row.append(text('strong',absent.length?'Missing':'Present'),text('span',role+'ã€€ '+(list.length-absent.length)+'/'+list.length));if(absent.length)row.append(text('small',absent.join(', ')));v.append(row)}
+ let missing=0;for(const [role,list] of expected){const absent=list.filter(n=>!names.has(n));missing+=absent.length;const row=document.createElement('div');row.className='role-row '+(absent.length?'warn':'');row.append(text('strong',absent.length?'Missing':'Present'),text('span',role+'　 '+(list.length-absent.length)+'/'+list.length));if(absent.length)row.append(text('small',absent.join(', ')));v.append(row)}
  const warns=$('warningText');warns.textContent=(missing?missing+' missing required representations. ':'Required component counts present. ')+(worst>limit?'High estimate exceeds inspection weight. ':'')+(e.loadedBusV[0]<minimum?'Selected duty falls below voltage requirement. ':'')+(data.focus||'');
 }
 
@@ -48,7 +48,7 @@ function resourcePanel(){
 const $=id=>document.getElementById(id);
 const text=(tag,value)=>Object.assign(document.createElement(tag),{textContent:value});
 const options=(sel,values)=>sel.replaceChildren(...values.map(x=>new Option(x,x)));
-const range=(r,n=2)=>r.map(v=>v.toFixed(n)).join('â€“');
+const range=(r,n=2)=>r.map(v=>v.toFixed(n)).join('–');
 const sum=(rows,key)=>rows.reduce((s,r)=>s.map((v,i)=>v+r[key][i]),[0,0]);
 const flat=(m,p)=>[0,4,8].map(k=>m[k]*p[0]+m[k+1]*p[1]+m[k+2]*p[2]+m[k+3]);
 const identity=[1,0,0,0,0,1,0,0,0,0,1,0];
@@ -258,8 +258,8 @@ function candidatesForPick(){
 
 
 function shape(b){return b}
-function modelEvidence(){const all=entries.map(([,b])=>b);$('validation').textContent=all.filter(b=>b.closed).length+'/'+all.length+' closed meshes Â· '+(all.length*(all.length-1)/2).toLocaleString()+' parked pairs screened, '+data.static.length+' positive, '+data.unresolved.length+' unresolved. Two parked overlaps correspond to the designed compliant tread squeeze. Motion evidence appears under each replay. '+data.focus}
-function inspect(n){followLabel=n;selected=n;marked=[];const b=data.bodies[meshName(current(),n)],s=shape(b),box=$('inspector');box.replaceChildren();box.append(text('span',current().fieldNotes?.[n]?'FIELD PIECE':'COMPONENT INSPECTOR'),text('h2',n),text('b',b.category+' / '+b.group),text('p',b.material),text('p',(s.volume/1000).toFixed(1)+' cmÂ³ Â· '+(s.basis||'Placed planning envelope')));for(const r of data.details.filter(r=>r.members.length===1&&r.members[0]===n))box.append(text('p',range(r.kg,3)+' kg Â· '+r.name));for(const [label,key] of [['Purpose','purpose'],['Why it is included','rationale']])box.append(text('h3',label),text('p',b[key]||'Missing from this review'));const focus=text('button','Focus part'),restore=text('button','Show assembly');focus.onclick=()=>{const m=poseAt(current(),n,+$('time').value);cam.center=flat(m,b.anchor);const extent=Math.max(...[0,1,2].map(i=>Math.max(...s.v.map(p=>p[i]))-Math.min(...s.v.map(p=>p[i]))));cam.zoom=Math.min(6,300/Math.max(extent,1));cam.x=cam.y=0;isolated=n;draw()};restore.onclick=reset;if(data.support[n])box.append(text('p',data.support[n]));box.append(focus,restore);draw()}
+function modelEvidence(){const all=entries.map(([,b])=>b);$('validation').textContent=all.filter(b=>b.closed).length+'/'+all.length+' closed meshes · '+(all.length*(all.length-1)/2).toLocaleString()+' parked pairs screened, '+data.static.length+' positive, '+data.unresolved.length+' unresolved. Two parked overlaps correspond to the designed compliant tread squeeze. Motion evidence appears under each replay. '+data.focus}
+function inspect(n){followLabel=n;selected=n;marked=[];const b=data.bodies[meshName(current(),n)],s=shape(b),box=$('inspector');box.replaceChildren();box.append(text('span',current().fieldNotes?.[n]?'FIELD PIECE':'COMPONENT INSPECTOR'),text('h2',n),text('b',b.category+' / '+b.group),text('p',b.material),text('p',(s.volume/1000).toFixed(1)+' cm³ · '+(s.basis||'Placed planning envelope')));for(const r of data.details.filter(r=>r.members.length===1&&r.members[0]===n))box.append(text('p',range(r.kg,3)+' kg · '+r.name));for(const [label,key] of [['Purpose','purpose'],['Why it is included','rationale']])box.append(text('h3',label),text('p',b[key]||'Missing from this review'));const focus=text('button','Focus part'),restore=text('button','Show assembly');focus.onclick=()=>{const m=poseAt(current(),n,+$('time').value);cam.center=flat(m,b.anchor);const extent=Math.max(...[0,1,2].map(i=>Math.max(...s.v.map(p=>p[i]))-Math.min(...s.v.map(p=>p[i]))));cam.zoom=Math.min(6,300/Math.max(extent,1));cam.x=cam.y=0;isolated=n;draw()};restore.onclick=reset;if(data.support[n])box.append(text('p',data.support[n]));box.append(focus,restore);draw()}
 function pick(e){const r=$('canvas').getBoundingClientRect(),x=2*(e.clientX-r.left)/r.width-1,y=1-2*(e.clientY-r.top)/r.height;let best=Infinity,hit=null;for(const obj of candidatesForPick())for(const [i,j,k] of obj.faces){const [a,b,c]=[obj.points[i],obj.points[j],obj.points[k]];const det=(b[1]-c[1])*(a[0]-c[0])+(c[0]-b[0])*(a[1]-c[1]);if(Math.abs(det)<1e-14)continue;const u=((b[1]-c[1])*(x-c[0])+(c[0]-b[0])*(y-c[1]))/det,v=((c[1]-a[1])*(x-c[0])+(a[0]-c[0])*(y-c[1]))/det,h=1-u-v;if(Math.min(u,v,h)<0)continue;const z=u*a[2]+v*b[2]+h*c[2];if(z<best){best=z;hit=obj.name}}if(hit)inspect(hit)}
 function group(){
  const by=$('group').value,sub=$('subset'),opts=by==='Category'?[...new Set(entries.map(([,b])=>b.category))]:by==='Subsystem'?[...new Set(entries.map(([,b])=>b.group))]:Object.keys(custom);
@@ -280,11 +280,11 @@ function partition(lines,whole){
 function budget(){
  resourcePanel();
  const whole=$('group').value==='Whole robot',e=duty(),m=partition(data.mass,whole),p=partition(e.lines,whole),detail=partition(data.details,false),amps=sum(p.included,'amps'),kg=sum(m.included,'kg'),volume=entries.filter(([n])=>selNames.has(n)).reduce((s,[,b])=>s+shape(b).volume,0)/1e6;
- const values=[['Component envelopes',selNames.size+' selected Â· '+volume.toFixed(2)+' L'],['Inspection mass allocated',m.shared.length&&!m.included.length?'Shared estimate Â· see detail':range(kg,3)+' kg'+(m.shared.length?' + shared mass':'')],...(!whole&&detail.included.length?[['Identified component estimates',range(sum(detail.included,'kg'),3)+' kg Â· partial']]:[]),['Attributed battery current',range(amps,1)+' A'+(p.shared.length?' + shared load':'')],['Attributed pack sag',range(amps.map(a=>a*e.resistance),2)+' V'+(p.shared.length?' + shared load':'')],['Whole-robot loaded bus',range(e.loadedBusV,2)+' V Â· '+e.requiredMinV+' V required']];
+ const values=[['Component envelopes',selNames.size+' selected · '+volume.toFixed(2)+' L'],['Inspection mass allocated',m.shared.length&&!m.included.length?'Shared estimate · see detail':range(kg,3)+' kg'+(m.shared.length?' + shared mass':'')],...(!whole&&detail.included.length?[['Identified component estimates',range(sum(detail.included,'kg'),3)+' kg · partial']]:[]),['Attributed battery current',range(amps,1)+' A'+(p.shared.length?' + shared load':'')],['Attributed pack sag',range(amps.map(a=>a*e.resistance),2)+' V'+(p.shared.length?' + shared load':'')],['Whole-robot loaded bus',range(e.loadedBusV,2)+' V · '+e.requiredMinV+' V required']];
  const div=$('summary');div.replaceChildren();for(const [k,v] of values){const row=text('p',k);row.append(text('b',v));div.append(row)}
- const lines=$('lines');lines.replaceChildren();for(const [title,arr,unit,field] of [['Included inspection',m.included,'kg','kg'],['Shared inspection Â· unapportioned',m.shared,'kg','kg'],['Component estimates Â· separate basis',detail.included,'kg','kg'],['Included current',p.included,'A','amps'],['Shared current Â· unapportioned',p.shared,'A','amps']]){
+ const lines=$('lines');lines.replaceChildren();for(const [title,arr,unit,field] of [['Included inspection',m.included,'kg','kg'],['Shared inspection · unapportioned',m.shared,'kg','kg'],['Component estimates · separate basis',detail.included,'kg','kg'],['Included current',p.included,'A','amps'],['Shared current · unapportioned',p.shared,'A','amps']]){
   if(!arr.length)continue;lines.append(text('strong',title));
-  for(const v of arr)lines.append(text('p',(v.id||v.name)+' Â· '+range(v[field],3)+' '+unit))
+  for(const v of arr)lines.append(text('p',(v.id||v.name)+' · '+range(v[field],3)+' '+unit))
  }
  lines.append(text('p','The whole-robot bus includes all loads. Ranges from independent extrema can be conservative. Running items and slide estimates are shown separately from inspection allocations.'));
 }
@@ -295,18 +295,18 @@ function inventory(){
   const r=body.insertRow();r.dataset.name=n;const first=r.insertCell();
   if(edit){const ck=document.createElement('input');ck.type='checkbox';ck.checked=picked.has(n);ck.setAttribute('aria-label','Include '+n);ck.onclick=ev=>{ev.stopPropagation();ck.checked?picked.add(n):picked.delete(n);selNames=new Set(picked);budget();draw()};first.append(ck)}
   else{const s=document.createElement('i');s.className='swatch';s.style.background=data.palette[b.category];first.append(s,b.category)}
-  const cell=r.insertCell();cell.append(text('b',n),document.createElement('br'),b.group);r.insertCell().textContent=b.material;r.insertCell().textContent=(shape(b).volume/1000).toFixed(1)+' cmÂ³';r.tabIndex=0;r.onclick=()=>inspect(n);r.onkeydown=e=>{if(e.key==="Enter")inspect(n)}
+  const cell=r.insertCell();cell.append(text('b',n),document.createElement('br'),b.group);r.insertCell().textContent=b.material;r.insertCell().textContent=(shape(b).volume/1000).toFixed(1)+' cm³';r.tabIndex=0;r.onclick=()=>inspect(n);r.onkeydown=e=>{if(e.key==="Enter")inspect(n)}
  }
  $('inventory').replaceChildren(tab);$('inventoryScope').textContent=edit?'Check members, give the subsystem a name and save.':'Each row is one placed preliminary envelope. Select a row to locate it.';
 }
 function evidence(){
  const parked=$('set').selectedIndex===1,cs=current(),rows=parked?data.static.map(x=>({pair:x.pair,status:'overlap',witness:{volumeMm3:x.volume}})):cs.results;
  const counts={};rows.forEach(r=>counts[r.status]=(counts[r.status]||0)+1);
- $('count').textContent=parked?'Base STEP Â· '+data.narrow+' bounding-box candidates measured. '+rows.length+' positive-volume pairs.':cs.id+' Â· '+Object.entries(counts).map(([k,v])=>v+' '+k).join(' / ')+(cs.gap==null?'':' Â· clearance '+cs.gap+' mm');
+ $('count').textContent=parked?'Base STEP · '+data.narrow+' bounding-box candidates measured. '+rows.length+' positive-volume pairs.':cs.id+' · '+Object.entries(counts).map(([k,v])=>v+' '+k).join(' / ')+(cs.gap==null?'':' · clearance '+cs.gap+' mm');
  const [tab,body]=table(['Pair','Result','Witness']);for(const f of rows){
   if(!parked&&$('filter').value==='adverse'&&!['fail','open'].includes(f.status))continue;
-  const r=body.insertRow();r.dataset.finding='1';r.insertCell().textContent=f.pair.join(' / ');r.insertCell().textContent=f.status;const w=f.witness||{};r.insertCell().textContent=w.reason|| (Array.isArray(w)?'Open interval '+w.map(v=>Math.round(v*100)+'%').join('â€“'):w.volumeMm3>0?w.volumeMm3.toFixed(2)+' mmÂ³':Number.isFinite(w.gapMm)?w.gapMm.toFixed(2)+' mm':'Unresolved');
-  r.onclick=()=>{stop();marked=f.pair;if(parked){$('motion').selectedIndex=0;$('time').value=0}else if(Number.isFinite(w.t))$('time').value=Math.round(w.t*24);$('witness').textContent=f.pair.join(' / ')+(Number.isFinite(w.t)?' Â· recorded stroke '+(100*w.t).toFixed(2)+'% Â· nearest displayed frame':' Â· parked or interval result');draw()}
+  const r=body.insertRow();r.dataset.finding='1';r.insertCell().textContent=f.pair.join(' / ');r.insertCell().textContent=f.status;const w=f.witness||{};r.insertCell().textContent=w.reason|| (Array.isArray(w)?'Open interval '+w.map(v=>Math.round(v*100)+'%').join('–'):w.volumeMm3>0?w.volumeMm3.toFixed(2)+' mm³':Number.isFinite(w.gapMm)?w.gapMm.toFixed(2)+' mm':'Unresolved');
+  r.onclick=()=>{stop();marked=f.pair;if(parked){$('motion').selectedIndex=0;$('time').value=0}else if(Number.isFinite(w.t))$('time').value=Math.round(w.t*24);$('witness').textContent=f.pair.join(' / ')+(Number.isFinite(w.t)?' · recorded stroke '+(100*w.t).toFixed(2)+'% · nearest displayed frame':' · parked or interval result');draw()}
  }
  $('findings').replaceChildren(tab)
 }
@@ -339,12 +339,12 @@ async function init(){
        variant={...variant,add:{...variant.add,...slideService.add},mass:[...originalMass,slideService.mass],
          cases:variant.cases.map(c=>slideService.currentKeys.includes(c.key)?{...c,rig:{...c.rig,...members}}:c),
          power:[slideService.currentPower,...variant.power],inspection:combine(variant.inspection),running:combine(variant.running),
-         status:'Preliminary design held Â· scoring repeatability',
+         status:'Preliminary design held · scoring repeatability',
          validationText:'The complete service package is charged to the chassis mass budget. The free-piece screen covers twelve nominal pickups and shots. The motor can be removed with the cassette locked at its service angle.',
          notes:['Six individual events at both nominal resolutions. Four of five starts produced six individual events with the mission-length observer. Fifteen starts remain untested.',
                 'The inspection estimate includes 6 kg design reserve, the cable take-up allowance and the gross slide-motor service package. Grip, loaded tracking and thermal duty remain provisional.']};
      }elsevariant={...variant,add:{...variant.add,...slideService.add},mass:[...originalMass,slideService.mass],
-       inspection:combine(variant.inspection),running:combine(variant.running),issue:'Guided cassette Â· slide motor service',
+       inspection:combine(variant.inspection),running:combine(variant.running),issue:'Guided cassette · slide motor service',
        step:slideService.step,focus:slideService.case.basis,validationText:'Service-specific installed package. Connector envelopes and the real wire exits are included. See the checks for the fully supported maintenance position.'};
    }
  }
@@ -355,14 +355,14 @@ async function init(){
  for(const [n,b] of entries){b.tint=rgb(data.palette[b.category]);b.dim=b.tint.map((x,i)=>.20*x+.80*[.64,.73,.83][i]);b.anchor=[0,1,2].map(i=>b.v.reduce((s,p)=>s+p[i],0)/b.v.length);let best=Infinity;for(const p of b.v){const d=p.reduce((sum,x,i)=>sum+(x-b.anchor[i])**2,0);if(d<best){best=d;b.leaderAnchor=p}}}
  options($('motion'),data.cases.map(c=>c.id));const deep=new URLSearchParams(location.search).get('case')||variant?.defaultCase;const ix=data.cases.findIndex(c=>c.key===deep);if(ix>=0)$('motion').selectedIndex=ix;
  options($('duty'),data.power.map(e=>e.case));$('duty').selectedIndex=0;
- $('state').textContent=data.status;document.querySelector('.title p').textContent='2024ã€€/ã€€Preliminary design';document.querySelector('h1').textContent=data.issue;const parts=entries.length;
+ $('state').textContent=data.status;document.querySelector('.title p').textContent='2024　/　Preliminary design';document.querySelector('h1').textContent=data.issue;const parts=entries.length;
  const maxError=Math.max(...entries.map(([,b])=>b.error));
  const metrics=[['Inspection estimate',range(data.inspection,3)+' kg'],['Running estimate',range(data.running,2)+' kg'],['Package envelope sum',(entries.reduce((s,[,b])=>s+shape(b).volume,0)/1e6).toFixed(1)+' L'],['Movement cases',data.cases.length+' modeled']];
  for(const [label,value] of metrics){const box=document.createElement('div');box.append(text('span',label),text('b',value));$('metrics').append(box)}
  for(const role of new Set(entries.map(([,b])=>b.category))){const span=document.createElement('span'),i=document.createElement('i');i.className='swatch';i.style.background=data.palette[role];span.append(i,role);$('legend').append(span)}
- $('validation').textContent=entries.filter(([,b])=>b.closed).length+'/'+parts+' closed meshes Â· max absolute volume difference '+maxError.toPrecision(3)+' mmÂ³. '+parts*(parts-1)/2+' parked pairs screened, '+data.static.length+' positive, '+data.unresolved.length+' unresolved. Motion evidence is scoped to each case.';
+ $('validation').textContent=entries.filter(([,b])=>b.closed).length+'/'+parts+' closed meshes · max absolute volume difference '+maxError.toPrecision(3)+' mm³. '+parts*(parts-1)/2+' parked pairs screened, '+data.static.length+' positive, '+data.unresolved.length+' unresolved. Motion evidence is scoped to each case.';
  if(variant?.validationText)$('validation').textContent=variant.validationText;
- const notes=data.notes||[];const n=data.narrativeReview;if(n){$('narrative').replaceChildren(text('p',n.source.file+' Â· '+n.source.sha256.slice(0,12)),...n.objectives.map(row=>text('p',row.objective+' â€” '+row.disposition+'. '+row.basis)))}
+ const notes=data.notes||[];const n=data.narrativeReview;if(n){$('narrative').replaceChildren(text('p',n.source.file+' · '+n.source.sha256.slice(0,12)),...n.objectives.map(row=>text('p',row.objective+' — '+row.disposition+'. '+row.basis)))}
  $('notes').replaceChildren(...notes.map(v=>text('p',v)));initGL();group();reset();evidence();modelEvidence();
  $('duty').onchange=budget;$('group').onchange=group;$('subset').onchange=()=>{if($('group').value==='Custom subsystem')picked=new Set(custom[$('subset').value]||[]);select()};
  $('save').onclick=()=>{const n=$('subname').value.trim();if(!n||!picked.size){$('inventoryScope').textContent='Enter a subsystem name and select at least one component.';return}custom[n]=[...picked];localStorage.setItem(key(),JSON.stringify(custom));group();$('subset').value=n;$('subset').onchange()};
