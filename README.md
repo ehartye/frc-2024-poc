@@ -6,8 +6,6 @@
 **1780 MAXSwerve · R9 physical assembly.** Parked robot with its inboard lift drive, frame, removable bumper and electrical supports. Purchased mechanisms use dimensioned external models. This view records mechanical fit in CAD. [Native model record](docs/media/r9-assembly.json) · [Inspect the parked assembly](https://ehartye.github.io/frc-2024-poc/?view=r9-assembly#model)
 <!-- /cad-still -->
 
-[Explore the work-in-progress preliminary design](https://ehartye.github.io/frc-2024-poc/preliminary-design/) · [Open preliminary release 001](https://ehartye.github.io/frc-2024-poc/preliminary-design/?release=001). The interactive review shows the guided cassette, six-NOTE scoring cycle, climb and resource budgets.
-
 [Download the editable R9 robot](cad/student/r9-physical-assembly.f3d) · [Assembly sequence and fit results](cad/assembly-readiness/physical-assembly.md) · [Shop drawings](cad/assembly-readiness/drawings/r9-shop-drawings.pdf)
 
 [Blue 3 role comparison, service availability and whole-robot support review](experiments/alliance-service/study.md)
@@ -138,3 +136,5 @@ Current launcher spacing and original mounting correction: [revision and remaini
 An additive [spring-biased cassette study](cad/assembly/spring-cassette-candidate.md) preserves failed layouts and sampled feed conflicts. It is not adopted by the 711-part assembly or current simulation: actual springs, opening actuator, clamps and moving mass remain unresolved.
 
 The [100 ms extension](sim/integrated/coupled_lift_duration_README.md) records partial fixed-patch domain loss: 28 of 30 nominal witnesses remain at the rejected trials. This is not proof of full physical release or a collision. Exact accepted state and rejected trial diagnostics stay separate.
+
+[Work-in-progress preliminary design](https://ehartye.github.io/frc-2024-poc/preliminary-design/)

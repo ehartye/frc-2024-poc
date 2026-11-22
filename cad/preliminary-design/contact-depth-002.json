@@ -1,0 +1,140 @@
+{
+  "sceneSha256": "5a1a5861cc9df6e3fc43ec7038701a64322de008b01f0e557416839b7943e0b5",
+  "basis": "Unloaded NOTE, 128 circumferential samples against the displayed surfaces on both replay clocks. Values are geometric intrusion depths. The largest depth occurs on the intake belt. These trials do not establish the foam force versus indentation relationship or a universal depth limit.",
+  "clocks": [
+    {
+      "source": "view-contact-48.json",
+      "sha256": "facd633a9fa11a7000ffdd9b656d92b83629761b84d5903ff09f259b369056a0",
+      "frames": 2632,
+      "maxima": [
+        {
+          "part": "Center intake belt",
+          "penetrationMm": 7.6722775687223255,
+          "t": 3.32387,
+          "frame": 68
+        },
+        {
+          "part": "Feed tread · left",
+          "penetrationMm": 6.127271827762904,
+          "t": 56.750966,
+          "frame": 1297
+        },
+        {
+          "part": "Feed tread · right",
+          "penetrationMm": 6.105851497583949,
+          "t": 38.221781,
+          "frame": 880
+        },
+        {
+          "part": "Launch tread · left",
+          "penetrationMm": 6.026637647721849,
+          "t": 86.933248,
+          "frame": 1983
+        },
+        {
+          "part": "Launch tread · right",
+          "penetrationMm": 6.022584689276748,
+          "t": 12.17437,
+          "frame": 289
+        },
+        {
+          "part": "Rear stop pad",
+          "penetrationMm": 2.0905288362805905,
+          "t": 102.347598,
+          "frame": 2290
+        },
+        {
+          "part": "Windowed keeper panel",
+          "penetrationMm": 0.5253176923156744,
+          "t": 25.879613,
+          "frame": 604
+        },
+        {
+          "part": "NOTE runner · right",
+          "penetrationMm": 0.3267748044442378,
+          "t": 78.956248,
+          "frame": 1784
+        },
+        {
+          "part": "NOTE runner · left",
+          "penetrationMm": 0.31563593964936487,
+          "t": 78.956248,
+          "frame": 1784
+        },
+        {
+          "part": "Replaceable pickup lip",
+          "penetrationMm": 0.027010402193923255,
+          "t": 19.839613,
+          "frame": 453
+        }
+      ]
+    },
+    {
+      "source": "view-contact-96.json",
+      "sha256": "1dbac16a309586e24dc34e3cb65de63d2af72ce4f1042ab8839fbc6f25d4f5f4",
+      "frames": 2600,
+      "maxima": [
+        {
+          "part": "Center intake belt",
+          "penetrationMm": 7.555265845825399,
+          "t": 101.829098,
+          "frame": 2277
+        },
+        {
+          "part": "Feed tread · right",
+          "penetrationMm": 6.056812591645915,
+          "t": 39.222531,
+          "frame": 905
+        },
+        {
+          "part": "Feed tread · left",
+          "penetrationMm": 6.053316996294448,
+          "t": 4.68387,
+          "frame": 102
+        },
+        {
+          "part": "Launch tread · left",
+          "penetrationMm": 6.031058742995889,
+          "t": 56.631966,
+          "frame": 1294
+        },
+        {
+          "part": "Launch tread · right",
+          "penetrationMm": 6.004485329677969,
+          "t": 28.685613,
+          "frame": 673
+        },
+        {
+          "part": "Rear stop pad",
+          "penetrationMm": 1.9172906933047535,
+          "t": 38.382531,
+          "frame": 884
+        },
+        {
+          "part": "NOTE runner · right",
+          "penetrationMm": 1.3553879557116737,
+          "t": 21.120113,
+          "frame": 485
+        },
+        {
+          "part": "NOTE runner · left",
+          "penetrationMm": 1.3553699398760841,
+          "t": 21.120113,
+          "frame": 485
+        },
+        {
+          "part": "Windowed keeper panel",
+          "penetrationMm": 0.5128177222096291,
+          "t": 25.920113,
+          "frame": 605
+        },
+        {
+          "part": "Replaceable pickup lip",
+          "penetrationMm": 0.1318334510414445,
+          "t": 2.16387,
+          "frame": 39
+        }
+      ]
+    }
+  ]
+}

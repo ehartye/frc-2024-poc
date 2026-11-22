@@ -11,5 +11,9 @@
     "score-to-climb-rear"
   ],
   "scope": "Four of the first five starts produced six individual shot events within 120 s when the field observer kept running. One sixth NOTE reached both beams at 118.264 s. In the remaining start, the third NOTE returned to the carpet. Fifteen starts and the complete shared-counter check remain open.",
-  "fixtureRepresentation": "Dimensioned presentation primitives. The numerical results use the original field contact model."
+  "fixtureRepresentation": "Dimensioned presentation primitives. The numerical results use the original field contact model.",
+  "schema": "agent-frc/preliminary-release@1",
+  "release": "002",
+  "status": "reopen",
+  "label": "Work-in-progress preliminary design"
 }

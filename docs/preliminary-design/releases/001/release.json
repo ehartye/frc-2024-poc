@@ -9,5 +9,11 @@
     "observed-reset-96"
   ],
   "scope": "Archived bounded-lift trial. Its earlier carry visualization is superseded by release 002. The saved individual-shot run is preserved with its original scope.",
-  "fixtureRepresentation": "Dimensioned presentation primitives. The numerical results use the original field contact model."
+  "fixtureRepresentation": "Dimensioned presentation primitives. The numerical results use the original field contact model.",
+  "schema": "agent-frc/preliminary-release@1",
+  "release": "001",
+  "label": "Historical preliminary review",
+  "status": "historical-review",
+  "knownIssue": "The archived carry animation uses an earlier position transform. Use revision 002 to inspect the corrected NOTE path.",
+  "supersededBy": "002"
 }
