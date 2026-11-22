@@ -75,12 +75,13 @@
       },
       "003": {
         "files": {
-          "index.html": "97ea4fb6cdeddd0595dd800b1818c53017a3f003e01cf90115f6fceb8a35beb7",
-          "review.js": "d8e08a3cfd363c8e13dd385cee1549c5bfec88ae855367eb627a3cdf98055c8a",
+          "index.html": "976e798a820e071659de76386648888480db3c2569cffe886b53d19c732573ec",
+          "review.js": "c4ad0e45d2377359697d2e0c065ff6cfeb1b23220f6e673ba1c296bea78c8c06",
           "resources.js": "ddcba2d59c466f0f0ae1f32e92a166e193e4ccee44fcfc7bd535948c7e474a44",
           "review.css": "ce1b4db109f8b4c78da48662cec4df817e54df918199a8a5da36536866b96b7c",
-          "presentation.md": "6295f65423e076b3d4859ed75a89f11b787d56cebdd93a1b980ecfd636aeae41",
-          "scene.json.gz": "5a1a5861cc9df6e3fc43ec7038701a64322de008b01f0e557416839b7943e0b5"
+          "presentation.md": "79efcdb415a2c051482028c8aea9fff954fa3577e1abfb59f846ee85f45456c3",
+          "scene.json.gz": "5a1a5861cc9df6e3fc43ec7038701a64322de008b01f0e557416839b7943e0b5",
+          "speaker-cad-worker.js": "3a29cf1cd9058ff29ee52ad18fee1a2bce90a3d5f79cf1b6d4789297b316ff72"
         }
       }
     }
