@@ -53,8 +53,20 @@ def audit(project, commit, verifier, field_generator):
                     raise ValueError(f"Unapproved consolidation bytes: {name}")
             # Compare the robot, all trials and every generated mechanical artifact
             # to the deployed issue, even though the presentation is changing.
-            preserved = ("scene.json.gz", "budgets.json", "limits.json", "motion.json",
-                         "package-motion.geometry.json.gz", "package-motion.html", "receipt.json")
+            preserved = ("scene.json.gz", "budgets.json", "limits.json", "motion.json")
+            if plan.get("purpose") == "canonical-review-template":
+                issue = f"{root}/releases/003"
+                old_record = json.loads(approved_file(project, commit, f"{issue}/release.json"))
+                new_record = json.loads((project / issue / "release.json").read_bytes())
+                for field in ("id", "issue", "geometry", "cases", "missionCases"):
+                    if old_record[field] != new_record[field]:
+                        raise ValueError(f"Template upgrade changed the commissioned {field}")
+                stock = (verifier / "templates/preliminary-review/review.html").read_bytes()
+                for page in ("index.html", "package-motion.html"):
+                    if (project / issue / page).read_bytes() != stock:
+                        raise ValueError(f"Expected the verified plugin's stock template at {page}")
+            else:
+                preserved += ("package-motion.geometry.json.gz", "package-motion.html", "receipt.json")
             for name in preserved:
                 path = f"{root}/releases/003/{name}"
                 if (project / path).read_bytes() != approved_file(project, commit, path):
