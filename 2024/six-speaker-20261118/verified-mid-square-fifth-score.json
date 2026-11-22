@@ -1,0 +1,79 @@
+{
+  "schema": "continued-full-field-score/1",
+  "precedingScores": [
+    {
+      "piece": "blue-wing-middle",
+      "shot": "2b65cf164a454630ba0afe1b4467113656aee06f5dc1e92b99c5e7b1925bcb79",
+      "scoreS": 19.223500000011462,
+      "receiptSha256": "205bd708130af8c881455a952f9b5d9a760171576ccd0712eb6fa9d1aea644ca"
+    },
+    {
+      "piece": "blue-wing-outer",
+      "shot": "3d11228712938b08d86fd88007ccab7df046a06e6387caec29de5aad2ecd7370",
+      "scoreS": 38.27090000010864,
+      "receiptSha256": "47c570ad2322c085ed221323b1761901c6aa4c6778b8e93da1ed81196e6d5300"
+    },
+    {
+      "piece": "blue-wing-inner",
+      "shot": "19b43a96a786380890593c99fde1084ba007739f6e79914decb1f823c09bdcce",
+      "scoreS": 60.78015000027948,
+      "receiptSha256": "14c565ee5995e19576758654117d8773d8fe73451934e025149d01da120d9a17"
+    },
+    {
+      "piece": "center-high",
+      "shot": "bfd9ca75ddf65abeeb7011d6c04f07cd14e182f1755ac2b65de9dc85de329956",
+      "scoreS": 81.16660000039096,
+      "receiptSha256": "1cfc9613df089f151cf9cad59cb7202422e320e6adc42c9abbad502831a03009"
+    }
+  ],
+  "scoreNumber": 5,
+  "piece": "center-mid",
+  "scoreS": 101.94230000050659,
+  "openedByS": 98.12110000037974,
+  "releaseS": 97.97740000037497,
+  "native": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "firstMark": "middle",
+  "fieldYawDeg": 245.0,
+  "chassisFieldXY": [
+    1.4723538273782182,
+    5.54903644167375
+  ],
+  "firstPickupStop": "3dc7df0d5fbcb7f9a001a9d56ba6659da2ffef030f56940f4d9e0385d0a9abea",
+  "carry": "4df53bf220c336ad29456c6ade002c77b0cce0f3429cdc117bcb0f319b969659",
+  "shot": "a9ba1e6409e09b42abf4f8558dbc0b2fd1bb97612f2b4312a43ff6308f7f9380",
+  "field": "614842835df1ac81caabfb794c998efc49471aa83b042318b2e770a7e5ebb01a",
+  "nextPickup": "2a5a4fe35258d1457e96d291b61fb8a322b086006cdef6e7d5f19f6815abb1f0",
+  "fieldRoute": "614991202476f197346b8ac608628f971d9fb71e52c514c2741f3286175b5287",
+  "flightClearance": "ed3aa9ce1ac43fb04397ef57186590cc9c240980ad89fa3cb4d99c46b3163ab7",
+  "shellRefinement": "12c1f7f50d9907e3411f5459ad04b9a699b8f9e6765361d576af5d99226a1033",
+  "sensorObservation": {
+    "opening": {
+      "firstPossibleS": 98.08860000037866,
+      "fullyThroughByS": 98.12110000037974,
+      "minimumMarginM": 0.0797595817446013
+    },
+    "firstFullShadowsS": [
+      101.94230000050659,
+      101.83300000050296
+    ],
+    "firstSimultaneousFullShadowS": 101.94230000050659,
+    "bestMarginPerPairM": [
+      0.006020568226986316,
+      0.008683195289774334
+    ],
+    "bestSimultaneousMarginM": 0.006020568226986316,
+    "countedFloorNotes": 1,
+    "fieldTrace": "614842835df1ac81caabfb794c998efc49471aa83b042318b2e770a7e5ebb01a",
+    "sensorFile": "13d07c04856ee1ca927d8f17fa29570e6ead74cc1c917f1879b94b3b9d8b236f",
+    "sourceTrace": "a9ba1e6409e09b42abf4f8558dbc0b2fd1bb97612f2b4312a43ff6308f7f9380"
+  },
+  "pickupClearance": "8d2f7731d5487fab82a325e3f15f71943e0838dc0f94c86662ccb908ea715c70",
+  "deliveryClearance": "02093e86b4a0343cce73d7a4af557078a7e837b4c507b2385c553e6861758618",
+  "shotClearance": "da340cafe05fd158e070b41978a96a7dbccf9d9a81ea92c1fb16f835673031c0",
+  "counterResets": [
+    "16947d440a66a49ef22bbabe778bdbf88a472d665e859606de201b34e8e6be6d",
+    "9d6b4a347243f856e17e90b719167c5815203b974b5e16c21f6ab5699ec0ab03",
+    "561b86bed0124bc1c8ee083ae1e15028ee6536ce5652c6781d7ebe340ba7ded7",
+    "b604884bf637f6dcdb83db35b6ac5b810c61f3711fbc3937e5551a22d8becd6d"
+  ]
+}

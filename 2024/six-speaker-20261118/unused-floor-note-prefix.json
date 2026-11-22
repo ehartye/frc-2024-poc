@@ -1,0 +1,119 @@
+{
+  "intervals": 54137,
+  "beginS": 0.0,
+  "endS": 17.051850000010077,
+  "sourceNative": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "sources": {
+    "receipt.json-stop": "3dc7df0d5fbcb7f9a001a9d56ba6659da2ffef030f56940f4d9e0385d0a9abea",
+    "receipt.json-ground": "694ccd691cf735b13217235463dcedeee3e8f71946433cdbae7ba7499fc076c5",
+    "trace.jsonl-lift": "b06928ecfa09a08f3f166e1f99cdd678183c693dfaebd925a3236b1d1b878b69",
+    "trace.jsonl-result-refined": "dc6517afe733e5369047f7957fffa382b102433501a16d53e3825466f5afb192"
+  },
+  "results": {
+    "wing-middle": {
+      "bodyGroups": {
+        "fixed": {
+          "minimumAxisGapM": 0.0006418335405633108,
+          "nearS": 12.243000000000059,
+          "ambiguous": []
+        },
+        "carriage": {
+          "minimumAxisGapM": 0.09804591915909772,
+          "nearS": 12.398250000000058,
+          "ambiguous": []
+        },
+        "cradle": {
+          "minimumAxisGapM": 0.07948351146793098,
+          "nearS": 12.092250000000059,
+          "ambiguous": []
+        }
+      },
+      "otherPieceGapM": 0.19849475954166276,
+      "chassisCenterNearestM": 0.5582061629616694
+    },
+    "wing-outer": {
+      "bodyGroups": {
+        "fixed": {
+          "minimumAxisGapM": 0.7904216778237171,
+          "nearS": 12.908500000000057,
+          "ambiguous": []
+        },
+        "carriage": {
+          "minimumAxisGapM": 0.9767812042272891,
+          "nearS": 13.017000000000058,
+          "ambiguous": []
+        },
+        "cradle": {
+          "minimumAxisGapM": 0.9405785664604982,
+          "nearS": 12.665000000000058,
+          "ambiguous": []
+        }
+      },
+      "otherPieceGapM": 1.376600002658243,
+      "chassisCenterNearestM": 1.7352630637933224
+    },
+    "center-middle": {
+      "bodyGroups": {
+        "fixed": {
+          "minimumAxisGapM": 3.4258657894653846,
+          "nearS": 12.846750000000057,
+          "ambiguous": []
+        },
+        "carriage": {
+          "minimumAxisGapM": 3.7292610577601306,
+          "nearS": 12.684750000000058,
+          "ambiguous": []
+        },
+        "cradle": {
+          "minimumAxisGapM": 3.245099379590496,
+          "nearS": 13.302000000000058,
+          "ambiguous": []
+        }
+      },
+      "otherPieceGapM": 5.01965962388593,
+      "chassisCenterNearestM": 5.37527500000457
+    },
+    "center-amp-one": {
+      "bodyGroups": {
+        "fixed": {
+          "minimumAxisGapM": 3.5611814183529416,
+          "nearS": 13.968750000000057,
+          "ambiguous": []
+        },
+        "carriage": {
+          "minimumAxisGapM": 3.865340898153081,
+          "nearS": 13.811250000000058,
+          "ambiguous": []
+        },
+        "cradle": {
+          "minimumAxisGapM": 3.5872958555181573,
+          "nearS": 14.205000000000059,
+          "ambiguous": []
+        }
+      },
+      "otherPieceGapM": 5.198087575673045,
+      "chassisCenterNearestM": 5.56468531910416
+    },
+    "center-amp-two": {
+      "bodyGroups": {
+        "fixed": {
+          "minimumAxisGapM": 3.9643612669016894,
+          "nearS": 15.011250000000057,
+          "ambiguous": []
+        },
+        "carriage": {
+          "minimumAxisGapM": 4.270421329796386,
+          "nearS": 14.865500000000058,
+          "ambiguous": []
+        },
+        "cradle": {
+          "minimumAxisGapM": 3.8996707183018002,
+          "nearS": 15.311750000000057,
+          "ambiguous": []
+        }
+      },
+      "otherPieceGapM": 5.762967995478316,
+      "chassisCenterNearestM": 6.1291005774128156
+    }
+  }
+}

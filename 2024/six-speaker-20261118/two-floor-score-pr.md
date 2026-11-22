@@ -1,0 +1,5 @@
+The 2024 practice simulation verifies two distinct floor NOTES entering the Speaker and crossing the sensor array at 19.2235 and 38.2709 seconds on one clock. The second shot retains the warm launcher speed and adjusts cradle pitch and lift height under motor control. The first NOTE clears the array before the next release. Its collection trajectory uses a passive floor behind the end wall.
+
+The second clearance check includes the registered robot, installed field, remaining floor supply and first released NOTE. A filled belt envelope and annular wheel calculation resolve 345 intervals from the native sweep. The smallest certified gap is 0.00092 mm. This supports the nominal simulation only. The ring and the moving chassis clear one another by at least 25.68 mm.
+
+The attached receipt contains numerical measurements and content hashes. Both score records replayed against their original private traces. The focused regression suite passed 41 tests, including a counter reset, crossing trajectories between samples, nondefault field registration and the intake belt's rounded ends.

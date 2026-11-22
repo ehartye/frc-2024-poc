@@ -1,0 +1,113 @@
+{
+  "schema": "staged-speaker-height-screen/1",
+  "game": "2024 CRESCENDO",
+  "targetGeometryDigest": "51392cd4fe6b23dd7af1d63c32d27bbee3438f0ea2dc904d3875226bd0c086b6",
+  "bindingDigest": "4f7fb81f5f7759d48692c8de9bdc4307501f07af2e94dd8b075b1e085798c7ce",
+  "formula": "Torque-free angular speed <= |omega0| sqrt(Imax/Imin). Choose the currently lowest point on the major circle. Its rotation raises it by at most R*omega_max*t relative to COM. Maximize its resulting height bound over t >= 0 under gravity.",
+  "assumptions": [
+    "rigid ring and gravity-only free flight from recorded last row",
+    "drawing assembly bottom at model floor",
+    "no additional wall or roof interaction; no aerodynamic lift"
+  ],
+  "results": [
+    {
+      "case": "half-step",
+      "receiptSha256": "b6505cf7c146ef569ab87200375cdf5a66b02c36a69645f03ff825afe63b8b7f",
+      "finalTimeS": 0.1402999999999927,
+      "initialRotorJ": 0.0,
+      "zM": 0.9171703991743704,
+      "vzMps": 1.995819611829786,
+      "ringAxisZ": 0.5112534704455423,
+      "angularSpeedBoundRadps": 0.19471411781424558,
+      "centerApexM": 1.1202619708611543,
+      "anyPointHeightUpperBoundM": 1.2980619708611543,
+      "oneMaterialPointHeightUpperBoundM": 0.9953689888678319,
+      "conditionalLowLipM": 1.9845019999999998
+    },
+    {
+      "case": "grid-16384",
+      "receiptSha256": "c82c8b16b31ee5c54bb8c79cb9eac736f48737acc3f6f0fbdbae966e5bd3d1dc",
+      "finalTimeS": 0.14030000000000087,
+      "initialRotorJ": 0.0,
+      "zM": 0.9171328111283008,
+      "vzMps": 1.9943968708059034,
+      "ringAxisZ": 0.5109406982381441,
+      "angularSpeedBoundRadps": 0.18773152870117987,
+      "centerApexM": 1.11993493408978,
+      "anyPointHeightUpperBoundM": 1.29773493408978,
+      "oneMaterialPointHeightUpperBoundM": 0.9947897232797298,
+      "conditionalLowLipM": 1.9845019999999998
+    },
+    {
+      "case": "drive-half-step",
+      "receiptSha256": "d7ef03ae1db28f49372a751f0ed563216f0eeb7f8d612c2d733e46ac08615ec5",
+      "finalTimeS": 0.14174999999999255,
+      "initialRotorJ": 0.0,
+      "zM": 0.919389512996036,
+      "vzMps": 1.978432249036246,
+      "ringAxisZ": 0.5071745042512387,
+      "angularSpeedBoundRadps": 0.12279111393999984,
+      "centerApexM": 1.1189578754861125,
+      "anyPointHeightUpperBoundM": 1.2967578754861124,
+      "oneMaterialPointHeightUpperBoundM": 0.9914061063779985,
+      "conditionalLowLipM": 1.9845019999999998
+    },
+    {
+      "case": "drive-launch",
+      "receiptSha256": "0555d259f2200052e4bfbe04a8da21f86bd2c81faf75cab7c703826b1e589374",
+      "finalTimeS": 0.14170000000000071,
+      "initialRotorJ": 0.0,
+      "zM": 0.9194055007764704,
+      "vzMps": 1.979449252713134,
+      "ringAxisZ": 0.5074413832545718,
+      "angularSpeedBoundRadps": 0.12822138516789713,
+      "centerApexM": 1.1191790903338925,
+      "anyPointHeightUpperBoundM": 1.2969790903338925,
+      "oneMaterialPointHeightUpperBoundM": 0.9918218629629283,
+      "conditionalLowLipM": 1.9845019999999998
+    },
+    {
+      "case": "staged-ready-8192",
+      "receiptSha256": "2cd77ad10ccb914733cbd0af23e148e423a475b121641ee6f15d01b30f260b25",
+      "finalTimeS": 0.06440000000000082,
+      "initialRotorJ": 21.31834550635301,
+      "zM": 0.9231836654265664,
+      "vzMps": 4.640929549662508,
+      "ringAxisZ": 0.5067285940199053,
+      "angularSpeedBoundRadps": 0.21784227807693718,
+      "centerApexM": 2.0213276332917727,
+      "anyPointHeightUpperBoundM": 2.1991276332917726,
+      "oneMaterialPointHeightUpperBoundM": 1.9057102049942611,
+      "conditionalLowLipM": 1.9845019999999998
+    },
+    {
+      "case": "staged-ready-16384",
+      "receiptSha256": "886df877a2499dab685f6e3dc80392cb5fc2fa2668840fd056e20fbdefad6382",
+      "finalTimeS": 0.06440000000000082,
+      "initialRotorJ": 21.31834550635301,
+      "zM": 0.9231539178015724,
+      "vzMps": 4.640350226956898,
+      "ringAxisZ": 0.506698441511359,
+      "angularSpeedBoundRadps": 0.2175820781426328,
+      "centerApexM": 2.021023742299181,
+      "anyPointHeightUpperBoundM": 2.1988237422991808,
+      "oneMaterialPointHeightUpperBoundM": 1.9053827538672272,
+      "conditionalLowLipM": 1.9845019999999998
+    },
+    {
+      "case": "staged-ready-half",
+      "receiptSha256": "86315de9dbb0bf7167b51caddb6b13e23b13f17f796f3a34023f38d79f77f027",
+      "finalTimeS": 0.06445000000000106,
+      "initialRotorJ": 21.31834550635301,
+      "zM": 0.9230827523504337,
+      "vzMps": 4.638387277948697,
+      "ringAxisZ": 0.5069952487203894,
+      "angularSpeedBoundRadps": 0.22923878945680637,
+      "centerApexM": 2.020023937170751,
+      "anyPointHeightUpperBoundM": 2.197823937170751,
+      "oneMaterialPointHeightUpperBoundM": 1.9052493225101452,
+      "conditionalLowLipM": 1.9845019999999998
+    }
+  ],
+  "wholeRingOrSensorPassageDemonstrated": false
+}

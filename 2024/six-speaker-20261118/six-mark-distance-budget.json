@@ -1,0 +1,52 @@
+{
+  "notes": [
+    {
+      "id": "W1",
+      "xM": 2.8956,
+      "yM": 4.105275,
+      "minimumRoundTripXM": 1.4751999999999998
+    },
+    {
+      "id": "W2",
+      "xM": 2.8956,
+      "yM": 5.553075,
+      "minimumRoundTripXM": 1.4751999999999998
+    },
+    {
+      "id": "W3",
+      "xM": 2.8956,
+      "yM": 7.000875,
+      "minimumRoundTripXM": 1.4751999999999998
+    },
+    {
+      "id": "C3",
+      "xM": 8.270875,
+      "yM": 4.105275,
+      "minimumRoundTripXM": 12.22575
+    },
+    {
+      "id": "C4",
+      "xM": 8.270875,
+      "yM": 5.781675,
+      "minimumRoundTripXM": 12.22575
+    },
+    {
+      "id": "C5",
+      "xM": 8.270875,
+      "yM": 7.458075,
+      "minimumRoundTripXM": 12.22575
+    }
+  ],
+  "totalLowerBoundM": 41.10285,
+  "secondsAtTurningReferenceSpeed": 128.44640625,
+  "minimumAverageXTravelSpeedIn120Mps": 0.34252374999999996,
+  "initialEmptyInShotZone": true,
+  "maximumChassisXWhileShootingM": 1.5,
+  "maximumPlanarPickupOffsetM": 0.658,
+  "routeReference": "FE-2024 Rev A and Game Details V10 figure 6-2",
+  "limits": [
+    "optimistic x-axis lower bound for this six-mark practice scenario",
+    "omits lateral travel, obstacles, service time and acceleration",
+    "assumes each initially stationary piece can be contacted within the declared reach and one piece per trip"
+  ]
+}

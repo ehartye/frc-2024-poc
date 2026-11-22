@@ -1,0 +1,33 @@
+{
+  "firstMark": "middle",
+  "yaw": 245.0,
+  "native": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "field": "42c91b3efb9521d059c13cf25e2d7dda6315bdd6b7eb1202847bfe84ffb43c1a",
+  "fieldBounds": "a43889e63d4f793b884e2094d682c887bc7b3c5044ce5033224b306f4ada3096",
+  "stop": "3dc7df0d5fbcb7f9a001a9d56ba6659da2ffef030f56940f4d9e0385d0a9abea",
+  "results": [
+    {
+      "begin": 97.49105000038507,
+      "end": 116.99710000049215,
+      "intervals": 47842,
+      "unresolvedIntervals": 0,
+      "firstUnresolved": null,
+      "minimumReportedAxisGapM": 0.005689764661634733
+    },
+    {
+      "begin": 116.99710000049215,
+      "end": 122.00210000051605,
+      "intervals": 10010,
+      "unresolvedIntervals": 0,
+      "firstUnresolved": null,
+      "minimumReportedAxisGapM": 0.05037827313114707
+    }
+  ],
+  "release": "c816630458f97fea2add6c6f7325e237526205209b8cedcd249b567c08d4dbf0",
+  "delivery": "61d4d5c1dca86a5d31b002f57e40f284d1068a3e31b60202d927c1499a051176",
+  "entryAcquisition": "970fd7ef25bc747356492a607078363d60ffe1db260c84ddd2744f88980ca51a",
+  "entryRelease": "8db8eb4784a7cb4e28772f39cb3beab02f712cb3ee24a5b31c9ce3e8ccf9309a",
+  "followingTraces": [
+    "3d8ecf7a2f46bc793ca64a7b073b34bafb9f99f7f457b1cd9e198af405d95716"
+  ]
+}

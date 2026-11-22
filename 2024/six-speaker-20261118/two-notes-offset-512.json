@@ -1,0 +1,45 @@
+{
+  "schema": "two-wing-floor-scores/1",
+  "scores": [
+    {
+      "piece": "blue-wing-inner",
+      "timeS": 19.503850000004363
+    },
+    {
+      "piece": "blue-wing-middle",
+      "timeS": 35.69174999996664
+    }
+  ],
+  "pickupStartedS": 17.051850000010077,
+  "secondSeatedS": 22.849849999996565,
+  "arrivedAtS": 31.199849999977104,
+  "secondReleaseS": 31.42074999997659,
+  "minimumLoadedSideForceN": 3.6946693275245015,
+  "firstRelease": "dc6517afe733e5369047f7957fffa382b102433501a16d53e3825466f5afb192",
+  "pickupTrace": "594cf00bd7ffd03947b83eb2d73d44d721533984526737b956073c1f940401aa",
+  "carryTrace": "d41cbe95faf7f7abf05903f3d2b43a46003ab5194c799b1238b06505c9126d1a",
+  "secondRelease": "a9f4fb1951a636ea8bbce13067876331b0c50c2bf94a78d35905775e8968f2a8",
+  "firstField": "f226763e83d4042e3f148ef8a49cae3eef65a15b4b81b06fbb177e55d7ce6b92",
+  "secondField": "d1a2ecd7020df916f1f3115f44f8cf8a4d654c147e4914c37537689bdf0ab3f0",
+  "secondObservation": {
+    "opening": {
+      "firstPossibleS": 31.521349999976355,
+      "fullyThroughByS": 31.56154999997626,
+      "minimumMarginM": 0.08147013270975034
+    },
+    "firstFullShadowsS": [
+      35.69174999996664,
+      35.5807499999669
+    ],
+    "firstSimultaneousFullShadowS": 35.69174999996664,
+    "bestMarginPerPairM": [
+      0.00848869708589315,
+      0.008720500848495289
+    ],
+    "bestSimultaneousMarginM": 0.006578443019591061,
+    "countedFloorNotes": 1,
+    "fieldTrace": "d1a2ecd7020df916f1f3115f44f8cf8a4d654c147e4914c37537689bdf0ab3f0",
+    "sensorFile": "13d07c04856ee1ca927d8f17fa29570e6ead74cc1c917f1879b94b3b9d8b236f",
+    "sourceTrace": "a9f4fb1951a636ea8bbce13067876331b0c50c2bf94a78d35905775e8968f2a8"
+  }
+}
