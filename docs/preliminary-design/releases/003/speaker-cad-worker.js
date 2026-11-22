@@ -61,12 +61,10 @@ const archiveUrl = 'https://firstfrc.blob.core.windows.net/frc2024/FieldAssets/C
 const archiveDigest = '87185d3bf324bb3f35787ed6be715caf6151f6a9e81794830b3f743c381b4f18';
 const readerBase = 'https://cdn.jsdelivr.net/npm/occt-import-js@0.0.23/dist/';
 async function verifiedBytes(url, expected) {
-  const response = await fetch(url);
+  const integrity = 'sha256-'+btoa(String.fromCharCode(...expected.match(/../g).map(pair=>parseInt(pair,16))));
+  const response = await fetch(url,{integrity});
   if (!response.ok) throw Error('Download returned HTTP '+response.status);
-  const bytes = await response.arrayBuffer();
-  const digest = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)), b=>b.toString(16).padStart(2,'0')).join('');
-  if (digest !== expected) throw Error('Source fingerprint changed');
-  return bytes;
+  return response.arrayBuffer();
 }
 async function fieldMember(zip) {
   const header = new DataView(zip);
@@ -113,7 +111,7 @@ function displayGroups(meshes) {
 }
 async function loadFieldSpeaker() {
   const cacheName='frc-2024-speaker-003-v1-'+archiveDigest;
-  const cache=await caches.open(cacheName).catch(()=>null);
+  const cache=self.caches ? await self.caches.open(cacheName).catch(()=>null) : null;
   const groups=['speakerPanel','speakerRamp','sensors'];
   const key=name=>new URL('./cad-preview-cache/'+name,self.location.href).href;
   const hits=cache ? await Promise.all(groups.map(group=>cache.match(key(group)))) : [];
