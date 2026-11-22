@@ -1,6 +1,26 @@
 {
  "missionCases": [
   {
+   "case": "acquire-49",
+   "kind": "operating-case",
+   "accomplishes": "seated",
+   "objective": "Seat the floor NOTE between the powered belts",
+   "trial": {
+    "file": "trial-acquire-49.json",
+    "sha256": "46c93d223cc692b7afe28edd7325cc472d87c08347cf6c0e7c2f027db1b2f612"
+   }
+  },
+  {
+   "case": "lift-32",
+   "kind": "operating-case",
+   "accomplishes": "carried",
+   "objective": "Carry the NOTE while raising the mechanism",
+   "trial": {
+    "file": "trial-lift-32.json",
+    "sha256": "bb31d4b4ecfdf47c6d86016051f862cc95e756867b71cc0abeabeb598626ae56"
+   }
+  },
+  {
    "case": "feed-04",
    "kind": "operating-case",
    "accomplishes": "fed",
@@ -9,15 +29,157 @@
     "file": "trial-feed-04.json",
     "sha256": "5e48c0c1eb070ef808f871b8021fc26a9b959343df46254732ba5ac2a0cf0c1e"
    }
+  },
+  {
+   "case": "flight-10",
+   "kind": "operating-case",
+   "accomplishes": "delivered",
+   "objective": "Feed and deliver the NOTE through the speaker opening",
+   "trial": {
+    "file": "trial-flight-10.json",
+    "sha256": "cbce95820c8a9215f16c7747045c971502a9ef7d71d9968ae2e23098e44d6ea6"
+   }
   }
  ],
  "cycle": {
+  "reset": {
+   "cases": [
+    "reset-01",
+    "reset-02",
+    "reset-03",
+    "reset-04",
+    "reset-05",
+    "reset-06",
+    "reset-07",
+    "reset-08",
+    "reset-09",
+    "reset-10",
+    "reset-11",
+    "reset-12",
+    "reset-13",
+    "reset-14",
+    "reset-15",
+    "reset-16",
+    "reset-17",
+    "reset-18",
+    "reset-19",
+    "reset-20",
+    "reset-21",
+    "reset-22",
+    "reset-23",
+    "reset-24",
+    "reset-25"
+   ]
+  },
+  "acquire": {
+   "cases": [
+    "acquire-01",
+    "acquire-02",
+    "acquire-03",
+    "acquire-04",
+    "acquire-05",
+    "acquire-06",
+    "acquire-07",
+    "acquire-08",
+    "acquire-09",
+    "acquire-10",
+    "acquire-11",
+    "acquire-12",
+    "acquire-13",
+    "acquire-14",
+    "acquire-15",
+    "acquire-16",
+    "acquire-17",
+    "acquire-18",
+    "acquire-19",
+    "acquire-20",
+    "acquire-21",
+    "acquire-22",
+    "acquire-23",
+    "acquire-24",
+    "acquire-25",
+    "acquire-26",
+    "acquire-27",
+    "acquire-28",
+    "acquire-29",
+    "acquire-30",
+    "acquire-31",
+    "acquire-32",
+    "acquire-33",
+    "acquire-34",
+    "acquire-35",
+    "acquire-36",
+    "acquire-37",
+    "acquire-38",
+    "acquire-39",
+    "acquire-40",
+    "acquire-41",
+    "acquire-42",
+    "acquire-43",
+    "acquire-44",
+    "acquire-45",
+    "acquire-46",
+    "acquire-47",
+    "acquire-48",
+    "acquire-49"
+   ]
+  },
+  "retain": {
+   "cases": [
+    "lift-01",
+    "lift-02",
+    "lift-03",
+    "lift-04",
+    "lift-05",
+    "lift-06",
+    "lift-07",
+    "lift-08",
+    "lift-09",
+    "lift-10",
+    "lift-11",
+    "lift-12",
+    "lift-13",
+    "lift-14",
+    "lift-15",
+    "lift-16",
+    "lift-17",
+    "lift-18",
+    "lift-19",
+    "lift-20",
+    "lift-21",
+    "lift-22",
+    "lift-23",
+    "lift-24",
+    "lift-25",
+    "lift-26",
+    "lift-27",
+    "lift-28",
+    "lift-29",
+    "lift-30",
+    "lift-31",
+    "lift-32"
+   ]
+  },
   "transfer": {
    "cases": [
     "feed-01",
     "feed-02",
     "feed-03",
     "feed-04"
+   ]
+  },
+  "deliver": {
+   "cases": [
+    "flight-01",
+    "flight-02",
+    "flight-03",
+    "flight-04",
+    "flight-05",
+    "flight-06",
+    "flight-07",
+    "flight-08",
+    "flight-09",
+    "flight-10"
    ]
   },
   "park": {
@@ -56,13 +218,191 @@
  "risks": [
   {
    "id": "scoring-repeatability",
-   "risk": "Six scores in 120 s on 19 of 20 starts. In the frozen simulation campaign at the 6.88 m/s command three of seven perturbed starts failed (R02, R03 and R06) and thirteen were not run.",
+   "risk": "Six scores in 120 s on 19 of 20 starts. In the frozen simulation campaign at the 6.88 m/s command three of seven perturbed starts failed (R02 scored 2, R03 scored 5 inside the 7 s window, R06 scored 0) and thirteen were not run. The misses happen inside the speaker, where the model assumes the field conveyor speeds. A 6.96 m/s command recovered R02 and R03 in single shots and is the first setting to try.",
+   "evidence": "counted-reset-power-02/run-R02-96.json, run-R03-96.json, run-R06-96.json; shared-counter-03/design-decision.json",
    "benchTest": {
     "measure": "Starts out of 20 on a full field speaker that score six floor NOTES within 120 s",
     "pass": 19,
     "fail": 18,
     "unit": "starts"
    }
+  },
+  {
+   "id": "returning-note",
+   "risk": "In start R02 the third NOTE left the speaker and entered the roboRIO envelope by up to 25.0 mm. No guard is drawn. Detailed design fits a guard over the electrical bay, charged to the unallocated reserve.",
+   "evidence": "shared-counter-03/return-to-robot.json",
+   "benchTest": {
+    "measure": "Deepest entry into the control-board envelope of a NOTE dropped from the speaker opening, guard fitted",
+    "pass": 0,
+    "fail": 1,
+    "unit": "mm"
+   }
+  },
+  {
+   "id": "entry-bracket-clearance",
+   "risk": "During discharge the unloaded NOTE passes the right entry bearing bracket with 0.035 mm sampled clearance, bounded above 0.015 mm. NOTE tolerance or assembly error consumes it. Detailing relieves the bracket.",
+   "evidence": "cad/preliminary-design/motion-evidence-002/exit-bracket-clearance.json",
+   "benchTest": {
+    "measure": "Smallest gap between a nominal NOTE and either entry bearing bracket through discharge",
+    "pass": 1.0,
+    "fail": 0.0,
+    "unit": "mm"
+   }
+  },
+  {
+   "id": "motor-package-clearance",
+   "risk": "The free NOTE clears the slide motor package by a guaranteed 0.189 mm under a 12 m/s relative-speed bound.",
+   "evidence": "mounted-slide-02/free-piece-clearance.json",
+   "benchTest": {
+    "measure": "Smallest gap between the NOTE and the slide motor package through pickup and lift",
+    "pass": 1.0,
+    "fail": 0.0,
+    "unit": "mm"
+   }
+  },
+  {
+   "id": "belt-indentation",
+   "risk": "The centre intake belt indents the NOTE 7.56 to 7.67 mm against an assumed 8 mm one-sided limit. A 7 mm limit rejects both numerical resolutions. No force against indentation has been measured.",
+   "evidence": "shared-counter-03/view-contact-96.json, view-contact-48.json; cad/preliminary-design/compression-limits-002.json",
+   "benchTest": {
+    "measure": "One-sided NOTE indentation under the centre intake belt at the seat",
+    "pass": 8.0,
+    "fail": 8.1,
+    "unit": "mm"
+   }
+  },
+  {
+   "id": "runner-indentation",
+   "risk": "The unloaded NOTE overlaps each hard runner by up to 1.36 mm against a 2 mm planning limit. Runner height is adjustable; hard clearance and elastic compression are not yet separated.",
+   "evidence": "shared-counter-03/view-contact-96.json",
+   "benchTest": {
+    "measure": "One-sided NOTE indentation on either runner with the NOTE seated",
+    "pass": 2.0,
+    "fail": 2.1,
+    "unit": "mm"
+   }
+  },
+  {
+   "id": "floor-pickup-calibration",
+   "risk": "Carpet grip, tread compliance and lip height in the pickup trial are assumed. A high, offset, low-grip pickup failed on two refinements; the usable tip-height band is unmeasured.",
+   "evidence": "bounded-risk-01/results.json; pickup-height-control-01/",
+   "benchTest": {
+    "measure": "Floor pickups out of 20 on competition carpet that seat within 2.82 s at the nominal tip height",
+    "pass": 19,
+    "fail": 18,
+    "unit": "pickups"
+   }
+  },
+  {
+   "id": "seat-sensor",
+   "risk": "Departure waits for a seat beam held 40 ms. The sensor, its mount and its response to a deformed NOTE are not selected.",
+   "evidence": "seat-interlock-01/R08-inner-96.json, blind-R08-inner-96.json",
+   "benchTest": {
+    "measure": "Seated NOTES out of 20 confirmed by the seat sensor within 0.2 s of seating",
+    "pass": 20,
+    "fail": 19,
+    "unit": "NOTES"
+   }
+  },
+  {
+   "id": "auxiliary-load-during-lift",
+   "risk": "With 39 A of other loads the governing loaded lift misses the pivot motor terminal demand by 0.089 V. The budget stages other loads to 25 A during the lift, which leaves 0.448 V.",
+   "evidence": "mounted-slide-02/gross-power.json",
+   "benchTest": {
+    "measure": "Battery current of all loads other than drive, pivot and slide during the loaded lift",
+    "pass": 25,
+    "fail": 39,
+    "unit": "A"
+   }
+  },
+  {
+   "id": "weak-battery-shot",
+   "risk": "The weak-pack bus falls to 8.344 V during feed and launch, 0.344 V above the 8 V floor. Pack model: 11.8 V open circuit and 27 milliohm.",
+   "evidence": "counted-reset-power-02/run-dev-48.json",
+   "benchTest": {
+    "measure": "Lowest bus voltage during a shot on a pack at 11.8 V open circuit",
+    "pass": 8.0,
+    "fail": 7.9,
+    "unit": "V"
+   }
+  },
+  {
+   "id": "inspection-mass",
+   "risk": "The upper inspection estimate is 56.270 kg against 56.699 kg: 0.429 kg of headroom, with a 3 to 6 kg unallocated reserve inside the estimate. The control-board guard and detailing growth draw on that reserve.",
+   "evidence": "mounted-slide-02/gross-power.json",
+   "benchTest": {
+    "measure": "Weighed inspection mass without battery and bumpers",
+    "pass": 56.69,
+    "fail": 56.7,
+    "unit": "kg"
+   }
+  },
+  {
+   "id": "endgame-clock",
+   "risk": "Six scores followed by the climb on one 135 s clock leaves 0.18 s.",
+   "evidence": "counted-reset-power-02/endgame-clock.json",
+   "closedBy": "Mission rule from the strategic narrative: with 24 s left the robot leaves the scoring lane for the stage. The separate 24 s endgame case reaches power cut with 1.99 s remaining. A sixth score before the climb is not required."
+  },
+  {
+   "id": "climb-floor-clearance",
+   "risk": "After power cut the forward-CG climb holds 11.5 mm above the carpet against a 10 mm allowance. The centre of gravity is unmeasured.",
+   "evidence": "counted-reset-power-02/climb-gross-front.json",
+   "benchTest": {
+    "measure": "Lowest tire or bumper clearance during a 5 s disabled hold at the forward CG limit",
+    "pass": 10,
+    "fail": 0,
+    "unit": "mm"
+   }
+  },
+  {
+   "id": "hoist-line-termination",
+   "risk": "Installed splice, drum dead end and bend strength of the 3 mm hoist lines are unqualified. The installed line target is 5.73 kN.",
+   "evidence": "guided-hoist-01/return-budget.json, inboard-exchange.json",
+   "benchTest": {
+    "measure": "Proof load held by each terminated hoist line without slip or damage",
+    "pass": 5.73,
+    "fail": 5.7,
+    "unit": "kN"
+   }
+  },
+  {
+   "id": "hoist-line-slack",
+   "risk": "Without take-up up to 227 mm of line pays out after the motor is disconnected. A 0.30 N m passive drum bias holds the modeled slack to 0.19 mm; the spring is a purchasing allowance.",
+   "evidence": "guided-hoist-01/return-front.json, winch-front.json",
+   "benchTest": {
+    "measure": "Largest slack in either hoist line through full carriage travel, take-up fitted",
+    "pass": 5,
+    "fail": 10,
+    "unit": "mm"
+   }
+  },
+  {
+   "id": "climb-catch-and-stops",
+   "risk": "Slide stop pins, the pitch lock and the keeper are ideal constraints in the climb trial. Pin capacity, catch engagement under load and wear are unproven.",
+   "evidence": "counted-reset-power-02/climb-gross-front.json; guided-hoist-01/return-no-catch.json",
+   "benchTest": {
+    "measure": "Chassis drop during a 5 s disabled hold on the stops at 1.5 times robot weight",
+    "pass": 0,
+    "fail": 1,
+    "unit": "mm"
+   }
+  },
+  {
+   "id": "battery-service-restraint",
+   "risk": "The removable slide link and index pin hold the cassette for hands-on battery service. Thread engagement, proof load and operator access are unverified.",
+   "evidence": "guided-hoist-01/truck-lock.json, service-pin.json",
+   "benchTest": {
+    "measure": "Horizontal load held by the fitted slide link without movement",
+    "pass": 1.29,
+    "fail": 1.0,
+    "unit": "kN"
+   }
+  },
+  {
+   "id": "cover-leaf-park-pose",
+   "risk": "The layout STEP draws the cover leaf closed at the parked angle; the cam of the trials holds it open above 102 degrees.",
+   "evidence": "counted-reset-power-02/empty_return.py",
+   "closedBy": "The cam law governs: every cycle case moves the leaf by the cam and the recorded trace. The detailed model draws the leaf in its cam position at park."
   }
  ]
 }

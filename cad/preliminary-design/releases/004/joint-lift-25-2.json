@@ -1,0 +1,60 @@
+{
+ "schema": "frc-2024-poc/joint-qualification@1",
+ "stepSha256": "91ac459ba6f4f3116fc5da3bf25d54c9e58ee19e214e0dba8cdc076960e50b74",
+ "case": "lift-25",
+ "pair": [
+  "Pivot bearing · right",
+  "Pivot torque shaft"
+ ],
+ "status": "pass",
+ "basis": "Pivot shaft journal in the right bearing",
+ "method": "Exact common volume of the two placed solids at 9 evenly spaced path fractions. A designed sliding or turning fit passes when no sample shares more than 0.01 mm3.",
+ "largestCommonMm3": 0.0,
+ "samples": [
+  {
+   "t": 0.0,
+   "gapMm": 5.684341886080802e-14,
+   "volumeMm3": 0.0
+  },
+  {
+   "t": 0.125,
+   "gapMm": 0.0,
+   "volumeMm3": 0.0
+  },
+  {
+   "t": 0.25,
+   "gapMm": 5.684341886080802e-14,
+   "volumeMm3": 0.0
+  },
+  {
+   "t": 0.375,
+   "gapMm": 1.1368683772161603e-13,
+   "volumeMm3": 0.0
+  },
+  {
+   "t": 0.5,
+   "gapMm": 0.0,
+   "volumeMm3": 0.0
+  },
+  {
+   "t": 0.625,
+   "gapMm": 1.1368683772161603e-13,
+   "volumeMm3": 0.0
+  },
+  {
+   "t": 0.75,
+   "gapMm": 1.1368683772161603e-13,
+   "volumeMm3": 0.0
+  },
+  {
+   "t": 0.875,
+   "gapMm": 1.1368683772161603e-13,
+   "volumeMm3": 0.0
+  },
+  {
+   "t": 1.0,
+   "gapMm": 1.1368683772161603e-13,
+   "volumeMm3": 0.0
+  }
+ ]
+}

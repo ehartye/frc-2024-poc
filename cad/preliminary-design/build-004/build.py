@@ -9,6 +9,7 @@ import argparse
 import hashlib
 import json
 import math
+import os
 import shutil
 import sys
 from pathlib import Path
@@ -18,13 +19,14 @@ import numpy as np
 import evidence
 import kin
 import ledgers
+import risks
 import roster
 import segments
 import timeline
 from timeline import EVIDENCE, REPO, pin, read, sha
 
 HERE = Path(__file__).resolve().parent
-OUT = REPO / "cad/preliminary-design/releases/004"
+OUT = Path(os.environ["RELEASE_004_OUT"]).resolve() if os.environ.get("RELEASE_004_OUT") else REPO / "cad/preliminary-design/releases/004"
 ISSUE = "2024-004-guided-cassette"
 SOURCE_STEP = EVIDENCE / "guided-hoist-01/service-locked-robot.step"
 LIMITS = REPO / "cad/preliminary-design/compression-limits-002.json"
@@ -81,7 +83,7 @@ PHASES = dict(
                  text="Keeper closes on the chain; catch dog and clutch movements are drawn as allocations"),
     hoist=dict(purpose="operating", duty="climb", carried=False, stage="endgame",
                text="Pivot motor reels both lines and the hook carriage draws along the cassette"),
-    hold=dict(purpose="park", duty="hold", carried=False, stage="endgame",
+    hold=dict(purpose="operating", duty="hold", carried=False, stage="endgame",
               text="Carriage seats on the slide stops and holds after motor power is cut"),
 )
 SCORING = ("reset", "acquire", "lift", "feed", "flight", "stow")
@@ -228,11 +230,12 @@ def main():
     if not opt.count:
         for stale in [*OUT.glob("trial-*.json"), *OUT.glob("joint-*.json")]:
             stale.unlink()
-    step_file = OUT / "robot.step"
-    import step_names
-    fixed, _ = step_names.repair(SOURCE_STEP.read_bytes())
-    if not step_file.is_file() or step_file.read_bytes() != fixed:
-        step_file.write_bytes(fixed)
+    step_file, revision_file = OUT / "robot.step", OUT / "step-revision.json"
+    import revise_step
+    done = read(revision_file) if revision_file.is_file() else {}
+    if not (step_file.is_file() and done.get("sha256") == sha(step_file) and done.get("sourceSha256") == sha(SOURCE_STEP)
+            and done.get("raiseMm") == revise_step.RAISE_MM):
+        save("step-revision.json", revise_step.build(SOURCE_STEP, step_file))
     step = dict(file="robot.step", sha256=sha(step_file))
     geo = Geometry(opt.plugin, step_file)
     names = sorted(geo.shapes)
@@ -260,6 +263,9 @@ def main():
     rules = [dict(payload=note, contact=n, maxDepthMm=v, basis=limits["basis"]) for n, v in limits["limitsMm"].items()]
     assert all(r["contact"] in names for r in rules)
     quals = evidence.qualifications(cyc)
+    operating = quals.pop("operating")
+    save("operating-point.json", operating)
+    register = risks.risks(operating)
 
     design_form = json.loads(ISSUED_DESIGN.read_bytes())
     design_form.update(revision=3, parentRevision=2)
@@ -327,6 +333,18 @@ def main():
             timelines[cid] = dict(time=[round(float(t), 4) for t in clock],
                                   measure=[f"{spec['text']} · cassette {np.interp(f, [0, 1], [a['angle'], b['angle']]):.1f}°"
                                            for f in fr])
+
+    # The climb is not a payload transport, so its trial is pinned by the mission case, not by a stage.
+    hold_ids = [c for c in cycle_ids if case_phase[c] == "hold"]
+    if hold_ids:
+        q = evidence.climb()
+        cid = hold_ids[-1]
+        endgame = [c for c in cycle_ids if case_phase[c] in ("approach", "capture", "hoist", "hold")]
+        trials[cid] = save(f"trial-{cid}.json", dict(
+            schema="frc-2024-poc/trial-record@1", case=cid, phase="hold", interaction=q["interaction"], basis=q["basis"],
+            cycleClockS=[states["approach"][0]["clock"], states["hold"][-1]["clock"]], cases=endgame,
+            pathDeviationMm=max(deviations[c] for c in endgame),
+            sources=q["sources"], qualification=q["qualification"], limits=q["limits"]))
 
     # Service: withdraw the index pin from the parked robot, and lift the battery at the service index.
     pin_case = dict(id="withdraw-service-pin", stage="service",
@@ -401,7 +419,15 @@ def main():
     # The control repeats a feed case that has no designed joint in motion, so only the displaced tread can reject it.
     control_case = next(c for c in cases if case_phase.get(c["id"]) == "feed" and note in c["moves"]
                         and not c.get("intendedInterfaces"))
-    presentation = evidence.presentation(components, groups, member_group, rigid, duty_table, timelines, case_phase)
+    presentation = evidence.presentation(components, groups, member_group, rigid, duty_table, timelines, case_phase,
+                                         register, operating)
+    if not opt.only and OUT == REPO / "cad/preliminary-design/releases/004":
+        # The four recorded season runs join the one motion list as replays, bound to their trial files.
+        import replay_set
+        import replays
+        replays.main()
+        replay_set.main()
+        presentation["replays"] = [dict(file=replay_set.NAME, sha256=sha(OUT / replay_set.NAME))]
     plan = dict(schema="agent-frc/preliminary-layout@1", issue=ISSUE, datum=datum, step=step, design=design, motion=motion,
                 groups=groups, mounts=mounts, stages=stages, cycle=cycle_ids, budgets=budget, missingInputs=[],
                 premises=[dict(accepted=accepted, current=observed)], view="index.html", presentation=presentation,
@@ -409,7 +435,7 @@ def main():
                 control=dict(case=control_case["id"], moving=note, displaced="Feed tread · left", offsetMm=[0, -22, 0],
                              basis="Push the left feed tread 22 mm into the NOTE, beyond its registered indentation limit."))
     save("layout.json", plan)
-    save("missions.json", evidence.missions(case_phase, trials, cycle_ids))
+    save("missions.json", evidence.missions(case_phase, trials, cycle_ids, register))
     summary = {p: sum(1 for v in case_phase.values() if v == p) for p in PHASES}
     print("Prepared", len(names), "solids,", len(groups), "groups,", len(mounts), "mounts,", len(cases), "cases", summary)
     print("largest path deviation mm", max(deviations.values(), default=0))

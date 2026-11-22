@@ -1,0 +1,60 @@
+{
+ "schema": "frc-2024-poc/joint-qualification@1",
+ "stepSha256": "91ac459ba6f4f3116fc5da3bf25d54c9e58ee19e214e0dba8cdc076960e50b74",
+ "case": "acquire-17",
+ "pair": [
+  "Flap axle",
+  "Mouth retention flap"
+ ],
+ "status": "pass",
+ "basis": "Cover leaf hinge on its axle",
+ "method": "Exact common volume of the two placed solids at 9 evenly spaced path fractions. A designed sliding or turning fit passes when no sample shares more than 0.01 mm3.",
+ "largestCommonMm3": 0.0,
+ "samples": [
+  {
+   "t": 0.0,
+   "gapMm": 2.3534290968354552e-11,
+   "volumeMm3": 0.0
+  },
+  {
+   "t": 0.125,
+   "gapMm": 2.282502167010198e-11,
+   "volumeMm3": 0.0
+  },
+  {
+   "t": 0.25,
+   "gapMm": 2.2486170903772752e-11,
+   "volumeMm3": 0.0
+  },
+  {
+   "t": 0.375,
+   "gapMm": 2.1616648628083722e-11,
+   "volumeMm3": 0.0
+  },
+  {
+   "t": 0.5,
+   "gapMm": 2.1154326252205597e-11,
+   "volumeMm3": 0.0
+  },
+  {
+   "t": 0.625,
+   "gapMm": 2.0426668924257172e-11,
+   "volumeMm3": 0.0
+  },
+  {
+   "t": 0.75,
+   "gapMm": 1.9964344202956323e-11,
+   "volumeMm3": 0.0
+  },
+  {
+   "t": 0.875,
+   "gapMm": 1.9341824229315724e-11,
+   "volumeMm3": 0.0
+  },
+  {
+   "t": 1.0,
+   "gapMm": 1.8614136748093274e-11,
+   "volumeMm3": 0.0
+  }
+ ]
+}

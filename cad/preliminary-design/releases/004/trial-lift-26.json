@@ -1,0 +1,156 @@
+{
+ "schema": "frc-2024-poc/trial-record@1",
+ "case": "lift-26",
+ "phase": "lift",
+ "interaction": "Retention of the seated NOTE through the loaded lift",
+ "cycleClockS": [
+  12.23,
+  12.56
+ ],
+ "pathDeviationMm": 0.8422230420171403,
+ "sources": {
+  "carry": {
+   "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+   "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+  },
+  "run": {
+   "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/run-dev-96.json",
+   "sha256": "50badf79dcca711a849c99c2c546b47b92ebb7d8e77afad9e0bfefa6e80db0d1"
+  },
+  "freeze": {
+   "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/freeze.json",
+   "sha256": "ff007748cc720f076311ec2d35f20987a3eb954b77af3bd90371f62a4c3a05f9"
+  }
+ },
+ "qualification": {
+  "result": "pass",
+  "observed": {
+   "held": true,
+   "stopOvertravelDeg": 0.12662047088099246
+  },
+  "control": {
+   "condition": "Cover leaf removed with the belts coasting and power off",
+   "rejected": true,
+   "evidence": {
+    "file": "2024/preliminary-review-lan/greenfield-retained/pickup-lip/power-off-hold.json",
+    "sha256": "0a6b4e367ce29320dac628961a599b533b1105ab6c2e54ed12cb96de6dc08604",
+    "observed": {
+     "withoutLeafOutwardMm": [
+      296.4590817170829,
+      295.9263529897951
+     ],
+     "withLeafOutwardMm": [
+      64.08376942310403,
+      63.83546068596516
+     ]
+    }
+   }
+  },
+  "timestep": {
+   "coarseS": 0.0005,
+   "fineS": 0.00025,
+   "sameOutcome": true,
+   "note": "The finer step also doubles the NOTE ring segments, 48 to 96.",
+   "evidence": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-48.json",
+     "sha256": "611399859733ad8d4f7099874b1d03e433fc6555cdb3aa3d4203716cb703c2c6",
+     "observed": {
+      "held": true
+     }
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1",
+     "observed": {
+      "held": true
+     }
+    }
+   ]
+  }
+ },
+ "limits": "Free rigid NOTE on commanded cassette, truck and chassis motion. Carpet grip, tread compliance and field counter speed are assumed values awaiting measurement. No sensitivity bracket with a failing value exists for retention on the 4.8 s lift.",
+ "transport": {
+  "case": "lift-26",
+  "payload": "NOTE",
+  "mechanisms": [
+   "Launch drive",
+   "Metering drive",
+   "Piece support"
+  ],
+  "moves": {
+   "Chambered NOTE": [
+    {
+     "kind": "rotation",
+     "axis": [
+      -0.15601524220474255,
+      -0.19230397355861198,
+      0.9688541819868273
+     ],
+     "originMm": [
+      136.96490000000006,
+      -0.0021999999999999797,
+      764.2305
+     ],
+     "travelDeg": 0.04960795378073426
+    },
+    {
+     "kind": "translation",
+     "travelMm": [
+      -0.2728933682611512,
+      0.002099999999999602,
+      -8.08390162619969
+     ]
+    },
+    {
+     "kind": "rotation",
+     "axis": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "originMm": [
+      185.38823034130485,
+      0.0,
+      501.0
+     ],
+     "travelDeg": 13.182491883511112
+    },
+    {
+     "kind": "translation",
+     "travelMm": [
+      -0.1533798278066314,
+      0.0,
+      -1.1368683772161603e-13
+     ]
+    }
+   ]
+  },
+  "initialPose": {
+   "Chambered NOTE": [
+    {
+     "kind": "rotation",
+     "axis": [
+      0.003561967413811357,
+      0.9999936060550443,
+      -0.0003166025452457202
+     ],
+     "originMm": [
+      185.0,
+      0.0,
+      501.0
+     ],
+     "travelDeg": 36.338563170119244
+    },
+    {
+     "kind": "translation",
+     "travelMm": [
+      -2.670302364111933,
+      0.4007127728396823,
+      47.11240081172656
+     ]
+    }
+   ]
+  }
+ }
+}

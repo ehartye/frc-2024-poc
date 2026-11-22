@@ -1,0 +1,78 @@
+{
+ "schema": "frc-2024-poc/joint-qualification@1",
+ "stepSha256": "91ac459ba6f4f3116fc5da3bf25d54c9e58ee19e214e0dba8cdc076960e50b74",
+ "case": "capture-04",
+ "pair": [
+  "Hoist rope working span · left",
+  "Hoist splice allowance · left"
+ ],
+ "status": "pass",
+ "basis": "Hoist line taken up at the left hook carriage splice",
+ "method": "Exact common volume of the drawn line span and its splice at 9 evenly spaced path fractions. The 3 mm line is flexible and is taken up as the hook carriage draws in; the drawn span keeps its parked length. The pair passes when the shared volume never exceeds the line section (7.069 mm2) times the line taken up, plus 0.5 mm3.",
+ "largestCommonMm3": 290.70232665586843,
+ "samples": [
+  {
+   "t": 0.0,
+   "gapMm": 0.0,
+   "volumeMm3": 1.8649564903666274,
+   "takeUpMm": 0.2638373725213048,
+   "allowedMm3": 2.3649564903245706
+  },
+  {
+   "t": 0.125,
+   "gapMm": 0.0,
+   "volumeMm3": 37.969627761053864,
+   "takeUpMm": 5.371603507132776,
+   "allowedMm3": 38.46962776101237
+  },
+  {
+   "t": 0.25,
+   "gapMm": 0.0,
+   "volumeMm3": 74.07429903174321,
+   "takeUpMm": 10.479369641744247,
+   "allowedMm3": 74.57429903170016
+  },
+  {
+   "t": 0.375,
+   "gapMm": 0.0,
+   "volumeMm3": 110.17897030242995,
+   "takeUpMm": 15.58713577635572,
+   "allowedMm3": 110.67897030238797
+  },
+  {
+   "t": 0.5,
+   "gapMm": 0.0,
+   "volumeMm3": 146.2836415731173,
+   "takeUpMm": 20.69490191096719,
+   "allowedMm3": 146.78364157307576
+  },
+  {
+   "t": 0.625,
+   "gapMm": 0.0,
+   "volumeMm3": 182.3883128438058,
+   "takeUpMm": 25.80266804557866,
+   "allowedMm3": 182.88831284376354
+  },
+  {
+   "t": 0.75,
+   "gapMm": 0.0,
+   "volumeMm3": 218.4929841144929,
+   "takeUpMm": 30.910434180190133,
+   "allowedMm3": 218.99298411445136
+  },
+  {
+   "t": 0.875,
+   "gapMm": 0.0,
+   "volumeMm3": 254.59765538518124,
+   "takeUpMm": 36.0182003148016,
+   "allowedMm3": 255.09765538513912
+  },
+  {
+   "t": 1.0,
+   "gapMm": 0.0,
+   "volumeMm3": 290.70232665586843,
+   "takeUpMm": 41.12596644941307,
+   "allowedMm3": 291.20232665582694
+  }
+ ]
+}

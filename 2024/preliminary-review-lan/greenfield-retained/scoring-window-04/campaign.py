@@ -79,6 +79,7 @@ def stages():
     # 2. One input at a time from the released operating point. The robot fires with its rear bumper 35 mm from the
     #    subwoofer face, so the station can only err away from the speaker.
     s["angle"] = by(grid(frozen, angle=[119.0, 120.0, 121.0, 123.0, 124.0, 125.0]), "angle")
+    s["angle-high"] = by(grid(frozen, angle=[126.0, 127.0, 128.0, 129.0, 130.0]), "angle")
     s["heading"] = by(grid(frozen, yaw=[-3.0, -2.0, -1.0, 1.0, 2.0, 3.0]), "yaw")
     s["lateral"] = by(grid(frozen, y=[5.721, 5.771, 5.821, 5.921, 5.971, 6.021]), "y")
     s["station"] = by(grid(frozen, x=[1.42, 1.45, 1.49]), "x")
@@ -86,6 +87,24 @@ def stages():
     s["field"] = [dict(c, upper=c["lower"]) for c in by(grid(frozen, lower=[0.55, 0.90, 1.00]), "lower")]
     #    And the friction of every speaker surface against the NOTE (0.45 as released).
     s["field-friction"] = by(grid(frozen, fieldMu=[0.30, 0.60]), "fieldMu")
+    #    Low launcher speeds on the nominal carries, to find where delivery through the opening stops.
+    s["low-speed"] = by(grid(carries("dev")[:6], speed=[3.44, 5.20, 5.60, 5.92, 6.08, 6.24]), "speed")
+    #    Rear bumper against the subwoofer face: the face is at x = 0.918 m and the bumper 0.435 m behind the robot
+    #    centre, so the robot centre is at 1.353 m. The closer station wants a slightly steeper cassette.
+    s["contact-station"] = by(grid(frozen, x=[1.353], angle=[120.5, 121.0, 121.5, 122.0]), "angle")
+    # 3. The revised firing lane, 50 mm nearer the opening centre (y = 5.821 m), one input at a time.
+    lane = dict(y=5.821)
+    s["revised-heading"] = by(one_at_a_time(frozen, lane, yaw=[-4.0, -3.0, -2.0, -1.0, 1.0, 2.0, 3.0, 4.0]), "yaw")
+    s["revised-angle"] = by(one_at_a_time(frozen, lane, angle=[120.0, 121.0, 123.0, 124.0]), "angle")
+    s["revised-lateral"] = by(grid(frozen, y=[5.846, 5.896]), "y")
+    s["revised-station"] = by(one_at_a_time(frozen, lane, x=[1.42, 1.45, 1.49]), "x")
+    s["revised-speed"] = by(one_at_a_time(frozen, lane, speed=[6.56, 7.20]), "speed")
+    s["revised-more"] = (by(grid(frozen, y=[5.796]), "y")
+                         + by(one_at_a_time(frozen, lane, angle=[125.0, 126.0]), "angle"))
+    s["revised-nominal"] = grid(carries("dev"), y=[5.821])
+    #    Counting rose as the heading turned the shot toward the +y side of the opening. Sample that neighbourhood.
+    s["aim-search"] = (by(grid(frozen, y=[5.801, 5.841], yaw=[-3.0, -2.0, -1.0]), "yaw")
+                       + by(grid(frozen, y=[5.821], yaw=[-2.0], speed=[6.72, 7.04]), "speed"))
     # 4. Every delivered NOTE that was not counted within 7 s, observed for 20 s.
     late = []
     for f in sorted((HERE / "results").glob("*.jsonl")):

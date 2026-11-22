@@ -28,6 +28,2600 @@
   "Slide motor service package, gross allowance"
  ],
  "electricalCases": {
+  "reset-01-weak": {
+   "stage": "reset-01",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-01-nominal": {
+   "stage": "reset-01",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-02-weak": {
+   "stage": "reset-02",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-02-nominal": {
+   "stage": "reset-02",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-03-weak": {
+   "stage": "reset-03",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-03-nominal": {
+   "stage": "reset-03",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-04-weak": {
+   "stage": "reset-04",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-04-nominal": {
+   "stage": "reset-04",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-05-weak": {
+   "stage": "reset-05",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-05-nominal": {
+   "stage": "reset-05",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-06-weak": {
+   "stage": "reset-06",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-06-nominal": {
+   "stage": "reset-06",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-07-weak": {
+   "stage": "reset-07",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-07-nominal": {
+   "stage": "reset-07",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-08-weak": {
+   "stage": "reset-08",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-08-nominal": {
+   "stage": "reset-08",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-09-weak": {
+   "stage": "reset-09",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-09-nominal": {
+   "stage": "reset-09",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-10-weak": {
+   "stage": "reset-10",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-10-nominal": {
+   "stage": "reset-10",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-11-weak": {
+   "stage": "reset-11",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-11-nominal": {
+   "stage": "reset-11",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-12-weak": {
+   "stage": "reset-12",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-12-nominal": {
+   "stage": "reset-12",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-13-weak": {
+   "stage": "reset-13",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-13-nominal": {
+   "stage": "reset-13",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-14-weak": {
+   "stage": "reset-14",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-14-nominal": {
+   "stage": "reset-14",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-15-weak": {
+   "stage": "reset-15",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-15-nominal": {
+   "stage": "reset-15",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-16-weak": {
+   "stage": "reset-16",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-16-nominal": {
+   "stage": "reset-16",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-17-weak": {
+   "stage": "reset-17",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-17-nominal": {
+   "stage": "reset-17",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-18-weak": {
+   "stage": "reset-18",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-18-nominal": {
+   "stage": "reset-18",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-19-weak": {
+   "stage": "reset-19",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-19-nominal": {
+   "stage": "reset-19",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-20-weak": {
+   "stage": "reset-20",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-20-nominal": {
+   "stage": "reset-20",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-21-weak": {
+   "stage": "reset-21",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-21-nominal": {
+   "stage": "reset-21",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-22-weak": {
+   "stage": "reset-22",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-22-nominal": {
+   "stage": "reset-22",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-23-weak": {
+   "stage": "reset-23",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-23-nominal": {
+   "stage": "reset-23",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-24-weak": {
+   "stage": "reset-24",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-24-nominal": {
+   "stage": "reset-24",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-25-weak": {
+   "stage": "reset-25",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "reset-25-nominal": {
+   "stage": "reset-25",
+   "duty": "Empty cassette return with the truck moving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 7.734316020084566,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed roller command",
+    "Pivot motor",
+    "Slide motor",
+    "Four drive motors"
+   ]
+  },
+  "acquire-01-weak": {
+   "stage": "acquire-01",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-01-nominal": {
+   "stage": "acquire-01",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-02-weak": {
+   "stage": "acquire-02",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-02-nominal": {
+   "stage": "acquire-02",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-03-weak": {
+   "stage": "acquire-03",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-03-nominal": {
+   "stage": "acquire-03",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-04-weak": {
+   "stage": "acquire-04",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-04-nominal": {
+   "stage": "acquire-04",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-05-weak": {
+   "stage": "acquire-05",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-05-nominal": {
+   "stage": "acquire-05",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-06-weak": {
+   "stage": "acquire-06",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-06-nominal": {
+   "stage": "acquire-06",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-07-weak": {
+   "stage": "acquire-07",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-07-nominal": {
+   "stage": "acquire-07",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-08-weak": {
+   "stage": "acquire-08",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-08-nominal": {
+   "stage": "acquire-08",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-09-weak": {
+   "stage": "acquire-09",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-09-nominal": {
+   "stage": "acquire-09",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-10-weak": {
+   "stage": "acquire-10",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-10-nominal": {
+   "stage": "acquire-10",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-11-weak": {
+   "stage": "acquire-11",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-11-nominal": {
+   "stage": "acquire-11",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-12-weak": {
+   "stage": "acquire-12",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-12-nominal": {
+   "stage": "acquire-12",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-13-weak": {
+   "stage": "acquire-13",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-13-nominal": {
+   "stage": "acquire-13",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-14-weak": {
+   "stage": "acquire-14",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-14-nominal": {
+   "stage": "acquire-14",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-15-weak": {
+   "stage": "acquire-15",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-15-nominal": {
+   "stage": "acquire-15",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-16-weak": {
+   "stage": "acquire-16",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-16-nominal": {
+   "stage": "acquire-16",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-17-weak": {
+   "stage": "acquire-17",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-17-nominal": {
+   "stage": "acquire-17",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-18-weak": {
+   "stage": "acquire-18",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-18-nominal": {
+   "stage": "acquire-18",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-19-weak": {
+   "stage": "acquire-19",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-19-nominal": {
+   "stage": "acquire-19",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-20-weak": {
+   "stage": "acquire-20",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-20-nominal": {
+   "stage": "acquire-20",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-21-weak": {
+   "stage": "acquire-21",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-21-nominal": {
+   "stage": "acquire-21",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-22-weak": {
+   "stage": "acquire-22",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-22-nominal": {
+   "stage": "acquire-22",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-23-weak": {
+   "stage": "acquire-23",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-23-nominal": {
+   "stage": "acquire-23",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-24-weak": {
+   "stage": "acquire-24",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-24-nominal": {
+   "stage": "acquire-24",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-25-weak": {
+   "stage": "acquire-25",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-25-nominal": {
+   "stage": "acquire-25",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-26-weak": {
+   "stage": "acquire-26",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-26-nominal": {
+   "stage": "acquire-26",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-27-weak": {
+   "stage": "acquire-27",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-27-nominal": {
+   "stage": "acquire-27",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-28-weak": {
+   "stage": "acquire-28",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-28-nominal": {
+   "stage": "acquire-28",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-29-weak": {
+   "stage": "acquire-29",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-29-nominal": {
+   "stage": "acquire-29",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-30-weak": {
+   "stage": "acquire-30",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-30-nominal": {
+   "stage": "acquire-30",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-31-weak": {
+   "stage": "acquire-31",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-31-nominal": {
+   "stage": "acquire-31",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-32-weak": {
+   "stage": "acquire-32",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-32-nominal": {
+   "stage": "acquire-32",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-33-weak": {
+   "stage": "acquire-33",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-33-nominal": {
+   "stage": "acquire-33",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-34-weak": {
+   "stage": "acquire-34",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-34-nominal": {
+   "stage": "acquire-34",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-35-weak": {
+   "stage": "acquire-35",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-35-nominal": {
+   "stage": "acquire-35",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-36-weak": {
+   "stage": "acquire-36",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-36-nominal": {
+   "stage": "acquire-36",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-37-weak": {
+   "stage": "acquire-37",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-37-nominal": {
+   "stage": "acquire-37",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-38-weak": {
+   "stage": "acquire-38",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-38-nominal": {
+   "stage": "acquire-38",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-39-weak": {
+   "stage": "acquire-39",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-39-nominal": {
+   "stage": "acquire-39",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-40-weak": {
+   "stage": "acquire-40",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-40-nominal": {
+   "stage": "acquire-40",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-41-weak": {
+   "stage": "acquire-41",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-41-nominal": {
+   "stage": "acquire-41",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-42-weak": {
+   "stage": "acquire-42",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-42-nominal": {
+   "stage": "acquire-42",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-43-weak": {
+   "stage": "acquire-43",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-43-nominal": {
+   "stage": "acquire-43",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-44-weak": {
+   "stage": "acquire-44",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-44-nominal": {
+   "stage": "acquire-44",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-45-weak": {
+   "stage": "acquire-45",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-45-nominal": {
+   "stage": "acquire-45",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-46-weak": {
+   "stage": "acquire-46",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-46-nominal": {
+   "stage": "acquire-46",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-47-weak": {
+   "stage": "acquire-47",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-47-nominal": {
+   "stage": "acquire-47",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-48-weak": {
+   "stage": "acquire-48",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-48-nominal": {
+   "stage": "acquire-48",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-49-weak": {
+   "stage": "acquire-49",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "acquire-49-nominal": {
+   "stage": "acquire-49",
+   "duty": "Floor pickup while advancing on the NOTE",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Nose roller motor",
+    "Feed and launch zone motors",
+    "Four drive motors"
+   ]
+  },
+  "lift-01-weak": {
+   "stage": "lift-01",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-01-nominal": {
+   "stage": "lift-01",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-02-weak": {
+   "stage": "lift-02",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-02-nominal": {
+   "stage": "lift-02",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-03-weak": {
+   "stage": "lift-03",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-03-nominal": {
+   "stage": "lift-03",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-04-weak": {
+   "stage": "lift-04",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-04-nominal": {
+   "stage": "lift-04",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-05-weak": {
+   "stage": "lift-05",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-05-nominal": {
+   "stage": "lift-05",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-06-weak": {
+   "stage": "lift-06",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-06-nominal": {
+   "stage": "lift-06",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-07-weak": {
+   "stage": "lift-07",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-07-nominal": {
+   "stage": "lift-07",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-08-weak": {
+   "stage": "lift-08",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-08-nominal": {
+   "stage": "lift-08",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-09-weak": {
+   "stage": "lift-09",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-09-nominal": {
+   "stage": "lift-09",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-10-weak": {
+   "stage": "lift-10",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-10-nominal": {
+   "stage": "lift-10",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-11-weak": {
+   "stage": "lift-11",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-11-nominal": {
+   "stage": "lift-11",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-12-weak": {
+   "stage": "lift-12",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-12-nominal": {
+   "stage": "lift-12",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-13-weak": {
+   "stage": "lift-13",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-13-nominal": {
+   "stage": "lift-13",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-14-weak": {
+   "stage": "lift-14",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-14-nominal": {
+   "stage": "lift-14",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-15-weak": {
+   "stage": "lift-15",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-15-nominal": {
+   "stage": "lift-15",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-16-weak": {
+   "stage": "lift-16",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-16-nominal": {
+   "stage": "lift-16",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-17-weak": {
+   "stage": "lift-17",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-17-nominal": {
+   "stage": "lift-17",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-18-weak": {
+   "stage": "lift-18",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-18-nominal": {
+   "stage": "lift-18",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-19-weak": {
+   "stage": "lift-19",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-19-nominal": {
+   "stage": "lift-19",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-20-weak": {
+   "stage": "lift-20",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-20-nominal": {
+   "stage": "lift-20",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-21-weak": {
+   "stage": "lift-21",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-21-nominal": {
+   "stage": "lift-21",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-22-weak": {
+   "stage": "lift-22",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-22-nominal": {
+   "stage": "lift-22",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-23-weak": {
+   "stage": "lift-23",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-23-nominal": {
+   "stage": "lift-23",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-24-weak": {
+   "stage": "lift-24",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-24-nominal": {
+   "stage": "lift-24",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-25-weak": {
+   "stage": "lift-25",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-25-nominal": {
+   "stage": "lift-25",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-26-weak": {
+   "stage": "lift-26",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-26-nominal": {
+   "stage": "lift-26",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-27-weak": {
+   "stage": "lift-27",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-27-nominal": {
+   "stage": "lift-27",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-28-weak": {
+   "stage": "lift-28",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-28-nominal": {
+   "stage": "lift-28",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-29-weak": {
+   "stage": "lift-29",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-29-nominal": {
+   "stage": "lift-29",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-30-weak": {
+   "stage": "lift-30",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-30-nominal": {
+   "stage": "lift-30",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-31-weak": {
+   "stage": "lift-31",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-31-nominal": {
+   "stage": "lift-31",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-32-weak": {
+   "stage": "lift-32",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
+  "lift-32-nominal": {
+   "stage": "lift-32",
+   "duty": "Loaded lift with the truck moving and the robot driving",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.256595920370724,
+   "sources": [
+    "Controls and other loads, staged to 25 A",
+    "Four drive motors",
+    "Pivot motor",
+    "Slide motor"
+   ]
+  },
   "feed-01-weak": {
    "stage": "feed-01",
    "duty": "Feed and launch with concurrent accessories",
@@ -100,6 +2694,206 @@
   },
   "feed-04-nominal": {
    "stage": "feed-04",
+   "duty": "Feed and launch with concurrent accessories",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed plus two launch drives"
+   ]
+  },
+  "flight-01-weak": {
+   "stage": "flight-01",
+   "duty": "Feed and launch with concurrent accessories",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed plus two launch drives"
+   ]
+  },
+  "flight-01-nominal": {
+   "stage": "flight-01",
+   "duty": "Feed and launch with concurrent accessories",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed plus two launch drives"
+   ]
+  },
+  "flight-02-weak": {
+   "stage": "flight-02",
+   "duty": "Feed and launch with concurrent accessories",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed plus two launch drives"
+   ]
+  },
+  "flight-02-nominal": {
+   "stage": "flight-02",
+   "duty": "Feed and launch with concurrent accessories",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed plus two launch drives"
+   ]
+  },
+  "flight-03-weak": {
+   "stage": "flight-03",
+   "duty": "Feed and launch with concurrent accessories",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed plus two launch drives"
+   ]
+  },
+  "flight-03-nominal": {
+   "stage": "flight-03",
+   "duty": "Feed and launch with concurrent accessories",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed plus two launch drives"
+   ]
+  },
+  "flight-04-weak": {
+   "stage": "flight-04",
+   "duty": "Feed and launch with concurrent accessories",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed plus two launch drives"
+   ]
+  },
+  "flight-04-nominal": {
+   "stage": "flight-04",
+   "duty": "Feed and launch with concurrent accessories",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed plus two launch drives"
+   ]
+  },
+  "flight-05-weak": {
+   "stage": "flight-05",
+   "duty": "Feed and launch with concurrent accessories",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed plus two launch drives"
+   ]
+  },
+  "flight-05-nominal": {
+   "stage": "flight-05",
+   "duty": "Feed and launch with concurrent accessories",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed plus two launch drives"
+   ]
+  },
+  "flight-06-weak": {
+   "stage": "flight-06",
+   "duty": "Feed and launch with concurrent accessories",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed plus two launch drives"
+   ]
+  },
+  "flight-06-nominal": {
+   "stage": "flight-06",
+   "duty": "Feed and launch with concurrent accessories",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed plus two launch drives"
+   ]
+  },
+  "flight-07-weak": {
+   "stage": "flight-07",
+   "duty": "Feed and launch with concurrent accessories",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed plus two launch drives"
+   ]
+  },
+  "flight-07-nominal": {
+   "stage": "flight-07",
+   "duty": "Feed and launch with concurrent accessories",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed plus two launch drives"
+   ]
+  },
+  "flight-08-weak": {
+   "stage": "flight-08",
+   "duty": "Feed and launch with concurrent accessories",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed plus two launch drives"
+   ]
+  },
+  "flight-08-nominal": {
+   "stage": "flight-08",
+   "duty": "Feed and launch with concurrent accessories",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed plus two launch drives"
+   ]
+  },
+  "flight-09-weak": {
+   "stage": "flight-09",
+   "duty": "Feed and launch with concurrent accessories",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed plus two launch drives"
+   ]
+  },
+  "flight-09-nominal": {
+   "stage": "flight-09",
+   "duty": "Feed and launch with concurrent accessories",
+   "batteryCondition": "nominal",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed plus two launch drives"
+   ]
+  },
+  "flight-10-weak": {
+   "stage": "flight-10",
+   "duty": "Feed and launch with concurrent accessories",
+   "batteryCondition": "weak",
+   "requiredMotionMinV": 8.0,
+   "sources": [
+    "Controls, sensors and standby loads",
+    "Feed plus two launch drives"
+   ]
+  },
+  "flight-10-nominal": {
+   "stage": "flight-10",
    "duty": "Feed and launch with concurrent accessories",
    "batteryCondition": "nominal",
    "requiredMotionMinV": 8.0,

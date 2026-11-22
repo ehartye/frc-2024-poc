@@ -15,6 +15,7 @@ HERE = Path(__file__).resolve().parent
 SOURCE = HERE.parent / "counted-reset-power-02"
 AXES = ("speed", "angle", "x", "y", "yaw", "lower", "upper", "fieldMu")
 NOMINAL = dict(speed=6.88, angle=122.0, x=1.39, y=5.871, yaw=0.0, lower=0.75, upper=0.75, fieldMu=0.45)
+REVISED_Y = 5.821
 
 
 def released():
@@ -51,19 +52,24 @@ def tally(rows):
                 smallestOpeningMarginMm=min(margins) if margins else None,
                 medianCountS=times[len(times) // 2] if times else None, latestCountS=times[-1] if times else None,
                 uncountedStillInSpeaker=len(inside), uncountedLeftSpeaker=len(out),
-                lowestBusV=min(r["minBusV"] for r in rows) if rows else None,
+                lowestBusV=min((r["minBusV"] for r in rows if r.get("minBusV") is not None), default=None),
                 uncounted=sorted(f"{r['tag']}-{r['n']}" for r in rows if not r.get("passShot")))
 
 
 def main():
     rows = released()
-    errors = []
+    errors, vetoed = [], []
     for f in sorted((HERE / "results").glob("*.jsonl")):
         for line in f.read_text().splitlines():
             r = json.loads(line)
             if "error" in r:
-                errors.append(r["id"])
-                continue
+                # The field contact model stops a shot whose NOTE is driven too deep into a speaker surface to tell
+                # which way is out. That happens only on a hard strike: the NOTE is neither delivered nor counted.
+                if "Excessive indentation" not in r["error"]:
+                    errors.append(r["id"])
+                    continue
+                vetoed.append(r["id"])
+                r.update(passShot=False, opening=None, both=None, minBusV=None, endQ=[9.0, 0.0, 0.0])
             r["stage"] = f.stem
             rows.append(r)
     frozen = [r for r in rows if r["tag"].startswith("R0")]
@@ -72,30 +78,50 @@ def main():
                              "Delivered: whole NOTE through the opening.",
                    population=dict(frozenCarries=len({(r["tag"], r["n"]) for r in frozen}),
                                    nominalCarries=len({(r["tag"], r["n"]) for r in dev})),
-                   errors=errors, sweeps={})
-    for axis in AXES:
-        for name, pop in (("frozen", frozen), ("nominal", dev)):
-            line = [r for r in pop if r.get("duration", 7.0) == 7.0 and all(r.get(k, NOMINAL[k]) == NOMINAL[k] for k in AXES if k != axis
-                                          and not (axis == "lower" and k == "upper"))]
-            if axis == "lower":
-                line = [r for r in line if r.get("upper") == r.get("lower")]
-            values = sorted({r.get(axis, NOMINAL[axis]) for r in line})
-            if len(values) < 2:
+                   errors=errors, stoppedOnHardStrike=vetoed, sweeps={})
+    bases = dict(released=NOMINAL, revised=dict(NOMINAL, y=REVISED_Y))
+    for base_name, base in bases.items():
+        for axis in AXES:
+            if axis == "upper":
                 continue
-            summary["sweeps"].setdefault(axis, {})[name] = [
-                dict(value=v, **tally([r for r in line if r.get(axis, NOMINAL[axis]) == v])) for v in values]
+            for name, pop in (("frozen", frozen), ("nominal", dev)):
+                line = [r for r in pop if r.get("duration", 7.0) == 7.0
+                        and all(r.get(k, NOMINAL[k]) == base[k] for k in AXES if k not in (axis, "upper"))
+                        and (r.get("upper", 0.75) == r.get("lower", 0.75))]
+                values = sorted({r.get(axis, NOMINAL[axis]) for r in line})
+                if len(values) < 2:
+                    continue
+                summary["sweeps"].setdefault(base_name, {}).setdefault(axis, {})[name] = [
+                    dict(value=v, **tally([r for r in line if r.get(axis, NOMINAL[axis]) == v])) for v in values]
+    late = [r for r in rows if r.get("duration", 7.0) != 7.0]
+    summary["extendedObservation"] = dict(
+        observedS=sorted({r["duration"] for r in late}), shots=len(late),
+        countedLate=sum(bool(r.get("both")) for r in late),
+        stillInSpeaker=sum(1 for r in late if not r.get("both") and r["endQ"][0] < 0.46 and r["endQ"][2] > 1.0),
+        leftSpeaker=sum(1 for r in late if not r.get("both") and not (r["endQ"][0] < 0.46 and r["endQ"][2] > 1.0)),
+        countTimesS=sorted(round(r["both"], 2) for r in late if r.get("both")))
+    rows = [r for r in rows if r.get("duration", 7.0) == 7.0]
+    frozen = [r for r in rows if r["tag"].startswith("R0")]
+    dev = [r for r in rows if r["tag"].startswith("dev")]
+    at = lambda pop, base: [r for r in pop if all(r.get(k, NOMINAL[k]) == base[k] for k in AXES)]
+    summary["operatingPoints"] = {name: dict(point={k: base[k] for k in ("speed", "angle", "x", "y")},
+                                             frozen=tally(at(frozen, base)), nominal=tally(at(dev, base)))
+                                  for name, base in bases.items()}
     summary["allFrozenShots"] = tally(frozen)
     summary["allNominalShots"] = tally(dev)
     (HERE / "summary.json").write_text(json.dumps(summary, indent=1) + "\n")
-    for axis, pops in summary["sweeps"].items():
-        for name, line in pops.items():
-            print(axis, name)
-            for t in line:
-                print("  %8.3f  counted %3d/%3d  delivered %3d  margin %s mm  median %s s  inside %d  left %d" % (
-                    t["value"], t["counted"], t["shots"], t["delivered"],
-                    None if t["smallestOpeningMarginMm"] is None else round(t["smallestOpeningMarginMm"], 1),
-                    None if t["medianCountS"] is None else round(t["medianCountS"], 2),
-                    t["uncountedStillInSpeaker"], t["uncountedLeftSpeaker"]))
+    for base_name, axes in summary["sweeps"].items():
+        for axis, pops in axes.items():
+            for name, line in pops.items():
+                print(base_name, axis, name)
+                for t in line:
+                    print("  %8.3f  counted %3d/%3d  delivered %3d  margin %s mm  median %s s  inside %d  left %d" % (
+                        t["value"], t["counted"], t["shots"], t["delivered"],
+                        None if t["smallestOpeningMarginMm"] is None else round(t["smallestOpeningMarginMm"], 1),
+                        None if t["medianCountS"] is None else round(t["medianCountS"], 2),
+                        t["uncountedStillInSpeaker"], t["uncountedLeftSpeaker"]))
+    print("extended", summary["extendedObservation"])
+    print({k: (v["frozen"]["counted"], v["frozen"]["shots"]) for k, v in summary["operatingPoints"].items()})
     print("frozen", {k: summary["allFrozenShots"][k] for k in ("shots", "delivered", "counted", "counted95")})
     print("errors", len(errors))
 
