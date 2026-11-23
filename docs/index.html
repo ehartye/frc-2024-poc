@@ -1,81 +1,42 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Technical data sheet and recorded simulations for the 2024 CRESCENDO floor-to-Speaker robot study.">
-<title>1780 / CRESCENDO robot data sheet</title>
-<link rel="stylesheet" href="robot.css">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2024 CRESCENDO robot study</title><link rel="icon" href="data:,"><link rel="stylesheet" href="preliminary-design/fonts/fonts.css">
+<script>
+// Links to the withdrawn rough-draft viewer keep working: they open its archived page.
+if(new URLSearchParams(location.search).has('view'))location.replace('detailed-design/archive/draft-001/'+location.search+location.hash);
+</script>
 <style>
-body > .draft-notice {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  display: block;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  border-bottom: 1px solid #29261b;
-  background: #ffdc57;
-  color: #1d1b14;
-  text-align: center;
-}
-body > .draft-notice::before {
-  content: "";
-  display: block;
-  height: 5px;
-  background: repeating-linear-gradient(135deg, #202018 0 8px, #ffdc57 8px 16px);
-}
-body > .draft-notice p {
-  max-width: none;
-  margin: 0;
-  padding: 6px 16px;
-  color: inherit;
-  font: 600 14px/1.4 system-ui, sans-serif;
-  text-wrap: pretty;
-}
-#model { scroll-margin-top: 6rem; }
-</style>
-</head><body>
-<aside class="draft-notice" aria-label="Design status"><p>This is a design first draft from agent-frc. Expect mechanical 'room for improvement'. Our robot design agents are working hard on refinements.</p></aside>
-<header><a class="wordmark" href="#top">1780 <span>/</span> ROBOT STUDY</a><nav aria-label="On this page"><a href="#model">Model</a><a href="field-lab.html#rehearsal">Open the field lab</a><a href="#build">Build sheet</a><a href="#films">Films</a><a href="#evidence">Results</a><a href="https://github.com/ehartye/frc-2024-poc/blob/main/docs/workflow.md">Workflow</a></nav></header>
-<main id="top"><section class="hero"><div><p class="season">2024 &nbsp; / &nbsp; CRESCENDO</p><h1>Floor to<br>Speaker<span>.</span></h1><p class="lede">A theoretical 2024 robot for drive-over pickup and close-range Speaker scoring. On development start D1, the nominal R7 collected six distinct floor NOTES. The sixth reached the shared Speaker counter at 117.756 seconds.</p><p><a class="button" href="?view=r7-budget#model">Explore the R7 replay <span aria-hidden="true">↘</span></a></p></div>
-<figure id="model" class="cad-view">
-<model-viewer id="robot-model" src="media/swerve-r7.glb" poster="media/swerve-r7.png" alt="Fusion model of the 1780 robot with its continuous red bumper and white team numbers" camera-controls max-camera-orbit="auto auto 7m" touch-action="pan-y" interaction-prompt="none" camera-orbit="42deg 68deg auto" shadow-intensity=".75" shadow-softness=".8" exposure="1.15">
-<img slot="poster" src="media/swerve-r7.png" alt="1780 robot in the floor pickup pose">
-<span slot="pan-target" hidden></span>
-</model-viewer>
-<figcaption><strong id="model-caption">1780 &middot; R7 MAXSwerve</strong><span>Drag to rotate · Scroll or pinch to zoom</span></figcaption>
-<p class="model-scope" id="model-status" role="status">Reopened R7 Fusion assembly &middot; Four installed MAXSwerve modules with simplified housings, motors and wheel carriers</p>
-<p class="model-scope"><a href="https://raw.githubusercontent.com/ehartye/frc-2024-poc/main/cad/student/r7-maxswerve.f3d">Download student R7 for Fusion</a> · <a href="https://github.com/ehartye/frc-2024-poc/blob/main/cad/native-handoff.md">Open and drive its ten joints</a></p>
-<p class="model-scope"><a href="?view=r9-assembly#model">Inspect the parked R9 assembly</a> · <a href="https://raw.githubusercontent.com/ehartye/frc-2024-poc/main/cad/student/r9-physical-assembly.f3d">Download R9 for Fusion</a> · <a href="https://github.com/ehartye/frc-2024-poc/blob/main/cad/assembly-readiness/physical-assembly.md">Fabrication drawings and fit evidence</a> · <a href="https://github.com/ehartye/frc-2024-poc/blob/main/cad/service-readiness/passive-service.md">R10 battery and mast service fixture</a> · <a href="https://github.com/ehartye/frc-2024-poc/blob/main/cad/service-readiness/r11-service.md">R11 controller bench and service tooling</a> · <a href="ground-relay.html">Replay the R15 ground relay</a> · <a href="https://github.com/ehartye/frc-2024-poc/blob/main/cad/service-readiness/stiffness/study.md">R14 frame stiffness and removable tie</a> · <a href="https://github.com/ehartye/frc-2024-poc/blob/main/cad/service-readiness/ground-rails/study.md">R13 ground-supported frame and rail service</a> · <a href="https://github.com/ehartye/frc-2024-poc/blob/main/experiments/alliance-service/study.md">Blue 3 role and service review</a></p>
-<p class="model-scope">The homepage opens R7. The README still opens parked R9. <a href="passive-entry.html">Inspect the R17 passive cassette</a></p>
-<label class="revision-picker">Robot revision <select id="model-revision"><option value="swerve">R7 · original D1 replay</option><option value="r7-budget">R7 · nominal mass D1 replay</option><option value="r9-assembly">R9 · physical assembly</option><option value="r8-stage">R8 · Stage climb study</option><option value="baseline">Six-wheel baseline</option></select></label>
-<div id="replay" hidden>
-<nav id="r7-events" class="replay-controls" aria-label="R7 animation events" hidden></nav>
-<div class="replay-controls"><button id="play-replay" type="button">Play lift and shot</button><button id="slow-shot" type="button">Slow-motion shot</button><button id="view-counter" type="button" hidden>Inspect sensor event</button><label>Speed <select id="replay-speed"><option value="1">1×</option><option value=".25">¼×</option></select></label></div>
-<label class="scrubber">Replay <input type="range" id="replay-time" min="0" max="1" step=".001" value="0"><output id="replay-clock">0.0 s</output></label>
-</div>
-<div id="stage-controls" hidden>
-<label for="stage-pose">Climber pose</label>
-<select id="stage-pose"><option value="0">Grounded</option><option value="2.1">Extended outside the chain</option><option value="4.2">Roof contacts chain</option><option value="5.2">Weight transfers from carpet</option><option value="7.6">Raised and locked</option><option value="12.5">At rest after disable</option></select>
-<button type="button" id="stage-play">Play climb</button>
-<a href="https://raw.githubusercontent.com/ehartye/frc-2024-poc/main/cad/student/r8-stage-climber.f3d">Download R8 for Fusion</a>
-</div>
-<p class="model-scope" id="replay-description">Follow the first D1 NOTE from the floor to both modeled Speaker sensors at 12.915 s. The earlier articulated chassis produced the motion. R7 displays the same 188 moving solids. The lines show the registered opening and sensor locations.</p>
-<div class="model-tools"><button type="button" id="reset-camera">Reset view</button><button type="button" id="view-wheels">View four swerve modules</button><label class="file-button">Open local GLB<input type="file" id="local-model" accept=".glb"></label><button type="button" hidden id="show-default">Restore public model</button></div>
-</figure></section>
-<section class="strip" aria-label="Six-wheel baseline results"><div><strong>6 <small>/ 6</small></strong><span>Six-wheel baseline · floor NOTES</span></div><div><strong>118.7945 <small>s</small></strong><span>Sixth sensor event</span></div><div><strong>1.2055 <small>s</small></strong><span>Time remaining</span></div></section>
-<section id="build"><p class="season">ROBOT / TECHNICAL DATA</p><h2>Build sheet</h2><div class="tablewrap"><table><thead><tr><th>Subsystem</th><th>Modeled configuration</th><th>Evidence</th></tr></thead><tbody>
-<tr><th>Stage climber</th><td>A single saddle above the R7 chassis pulls the robot toward the chain. A transverse pin carries the modeled load after power cuts off. Inspect the solo hold and the missed-lock control before assigning points to this design.</td><td><a href="?view=r8-stage#model">Climb replay</a> · <a href="https://github.com/ehartye/frc-2024-poc/blob/main/experiments/stage-climb/study.md">Load and clearance study</a></td></tr>
-<tr><th>Drivetrain</th><td>Six-wheel baseline with differential drive and two CIM motor models per side. Track width 580 mm, wheel diameter 152.4 mm, reduction 10.71∶1.</td><td><a href="https://github.com/ehartye/frc-2024-poc/blob/main/sim/drivetrain/config.json">Drive parameters</a></td></tr>
-<tr><th>Swerve conversion</th><td>Four REV 3-inch MAXSwerve modules, each with a NEO drive motor and NEO 550 steering motor. Wheel centers form a 520 × 520 mm square. All eight native joints passed independent motion checks. The intake and cradle clear the module envelopes by at least 4.82 mm through the modeled lift and pitch range. In simulation the loaded robot strafed, turned and lifted together for 2.65 s. The first NOTE reached the shooting pose at 9.895 s and 10.055 s on mirrored starts. The native frame has three perimeter rails, twelve through-bolts and four supports for the electronics beams. Two stepped webs connect the lift bridges to the side rails and clear the moving mechanism by at least 36.65 mm. All eight bumper mounts clear their service tools. The boxed front crossmember has an estimated 0.91 mm deflection under a 1 kN center load. The NOTE clears the bumper by at least 3.63 mm on both sampled pickup routes. In the measured starting pose, the lift motor extends 71.25 mm beyond the frame outline. Upper packaging, harness routing and release repeatability remain open.</td><td><a href="https://github.com/ehartye/frc-2024-poc/blob/main/cad/drivetrain/maxswerve-layout.json">Native layout record</a> · <a href="https://github.com/ehartye/frc-2024-poc/blob/main/cad/drivetrain/MAXSWERVE_FRAME.md">Frame build sheet</a> · <a href="https://github.com/ehartye/frc-2024-poc/blob/main/sim/pressure/evidence/maxswerve-development-carry.json">Measured pickup and carry</a></td></tr>
-<tr><th>Intake</th><td>Drive-over floor acquisition. Opposed powered surfaces seat the NOTE and retain it while the robot brakes.</td><td><a href="https://github.com/ehartye/frc-2024-poc/blob/main/sim/pressure/run_native_signed.py">Acquisition model</a></td></tr>
-<tr><th>Lift &amp; pitch</th><td>Target carriage travel 449.4 mm and pitch 60°. The lift carries the retained piece while driving and turning.</td><td><a href="https://github.com/ehartye/frc-2024-poc/blob/main/sim/pressure/evidence/turning-lift-20261118/contract.json">Mechanism targets</a></td></tr>
-<tr><th>Launcher</th><td>Two pinch motors feed four simulated launcher wheels. Final approach uses a 3,800 rpm target and a 0.225 pinch duty fraction.</td><td><a href="https://github.com/ehartye/frc-2024-poc/blob/main/sim/pressure/evidence/centerline-route-controls.json">Shot settings</a></td></tr>
-<tr><th>Scoring</th><td>The same NOTE must clear the opening and cover both Speaker sensor pairs. Each earlier NOTE must clear the counter before the next release.</td><td><a href="https://github.com/ehartye/frc-2024-poc/blob/main/sim/pressure/WING_CYCLE.md">Verification record</a></td></tr></tbody></table></div>
-<p class="limit">Native Fusion geometry underlies the mechanism checks. The narrowest nominal rigid clearance was 0.0142 mm. The model uses assumed material response. Its scoring results describe simulated runs.</p></section>
-<section id="films"><p class="season">SIMULATION / TELEMETRY</p><h2>Evidence films</h2><figure><video id="first-note-film" controls playsinline preload="metadata" poster="media/swerve-r7.png" aria-label="R7 swerve lift and first Speaker shot on start D1"><source src="media/swerve-first-shot.webm" type="video/webm"></video><figcaption>MAXSwerve &middot; first floor NOTE <span>Floor pickup to both Speaker sensors at 12.915 s &middot; 1/8-speed release</span></figcaption><nav id="film-events" aria-label="Jump to a first NOTE film event"></nav></figure><figure id="route"><video controls playsinline preload="metadata" poster="media/six-score-route.jpg" aria-label="Overhead replay of the six-score route"><source src="media/six-score-route.mp4" type="video/mp4"></video><figcaption>Six-wheel baseline &middot; full route <span>40 s film · 3× speed</span></figcaption></figure><div class="twocol"><figure><video controls playsinline preload="none" poster="media/wing-acquisition.jpg" aria-label="First wing pickup and score"><source src="media/wing-acquisition.mp4" type="video/mp4"></video><figcaption>First pickup to first score <span>Real time</span></figcaption></figure>
-<figure><video controls playsinline preload="none" poster="media/final-release.jpg" aria-label="Height of the sixth NOTE from feed to scoring"><source src="media/final-release.mp4" type="video/mp4"></video><figcaption>Sixth NOTE from feed to sensor <span>0.3× speed</span></figcaption></figure></div><p class="limit">These six-wheel baseline films plot recorded robot and NOTE positions. The slow-motion film follows the final NOTE’s height through release, the opening and sensor registration.</p></section>
-<section id="evidence"><p class="season">CAMPAIGN / 2024</p><h2>Repeatability</h2><p class="lede">The target is six close-range scores within 120 simulated seconds on at least 19 of 20 varied starts.</p><p id="campaign-status">The nominal R7 reached both sensor pairs six times on one development start. The sixth event came at 117.756 s against a 120 s deadline. The field solver retained every earlier NOTE. The robot cleared the modeled field and waiting supply, including the Stage foot on the inner-wing trip. The 20 formal evaluation starts remain available. <a href="https://github.com/ehartye/frc-2024-poc/blob/main/experiments/speaker-cycles/mission.md">Inspect all six pickups, counter times and limits ↗</a></p>
-<p><a href="https://github.com/ehartye/frc-2024-poc/blob/main/sim/pressure/evidence/center-low-sixth-score.json">Inspect the baseline score record ↗</a></p></section></main>
-<footer><b>1780 / CRESCENDO</b><a href="https://github.com/ehartye/frc-2024-poc">Project repository ↗</a></footer><script type="module" src="robot-model.js"></script></body></html>
+*{box-sizing:border-box}body{margin:0;display:flex;flex-direction:column;min-height:100dvh;color:#182e49;background:#f7faf8;font:1rem/1.5 "Source Sans 3",system-ui,sans-serif}
+header{display:flex;align-items:center;gap:.5rem 1rem;flex-wrap:wrap;padding:.45rem clamp(1rem,3vw,3rem);background:#142f63;color:#fff;border-bottom:3px solid #ffd078}
+h1{font:700 1.5rem "Barlow Condensed",system-ui,sans-serif;margin:0 auto 0 0}h2{font:700 1.25rem "Barlow Condensed",system-ui,sans-serif;margin:0}
+header a{color:#fff;padding:.25rem .3rem;text-underline-offset:.22rem}a{color:#14408f}a:focus-visible{outline:3px solid #ffd078;outline-offset:2px}
+section{padding:.9rem clamp(1rem,3vw,3rem)}p{margin:.3rem 0;max-width:70ch}
+#status{display:flex;flex-wrap:wrap;gap:.5rem 2rem;align-items:baseline;background:#fff;border-bottom:1px solid #cdd8e4}
+#release{font-weight:700}
+main{flex:1;display:flex;flex-direction:column;min-height:34rem}iframe{flex:1;width:100%;min-height:30rem;border:0;border-bottom:1px solid #cdd8e4}
+ul{margin:.3rem 0;padding-left:1.1rem}
+@media (prefers-color-scheme:dark){body{color:#e6edf5;background:#0f1b2d}#status{background:#15243a;border-color:#2b3d57}a{color:#9cc0ff}iframe{border-color:#2b3d57}}
+</style></head><body>
+<header><h1>2024 CRESCENDO robot study</h1>
+<nav aria-label="Project pages"><a href="preliminary-design/">Preliminary design</a><a href="detailed-design/">Detailed designs</a><a href="field-lab.html">Field lab</a><a href="https://github.com/ehartye/frc-2024-poc">Repository</a></nav></header>
+<main>
+<section id="status"><div><h2>No detailed design is published</h2>
+<p>The current design is the guided-cassette preliminary design. <span id="release"></span></p></div>
+<p><a href="preliminary-design/">Open the preliminary design: one view, one motion list</a></p></section>
+<iframe id="viewer" title="Current preliminary design" allowfullscreen></iframe>
+<noscript><section><p><a href="preliminary-design/">Open the preliminary design</a></p></section></noscript>
+<section><h2>Withdrawn rough draft</h2>
+<p>The earlier R7, R8 and R9 robot models were published before the design-status process and never passed a mechanical-readiness review. They are withdrawn. Every file is kept in the archive.</p>
+<ul><li><a href="detailed-design/">Detailed design catalog and archive</a></li>
+<li><a href="detailed-design/archive/draft-001/">Archived rough-draft page</a></li></ul></section>
+</main>
+<script>
+const words={'in-progress':'In progress',effective:'Effective',superseded:'Superseded',withdrawn:'Withdrawn'};
+fetch('preliminary-design/releases.json').then(r=>r.json()).then(index=>{
+  const id=String(index.current),status=(index.designStatus||{})[id]||'in-progress';
+  if(!/^[A-Za-z0-9._-]+$/.test(id))throw Error('Unexpected release');
+  document.getElementById('release').textContent='Release '+id+' · '+(words[status]||status);
+  document.getElementById('viewer').src='preliminary-design/releases/'+id+'/';
+}).catch(()=>{document.getElementById('viewer').src='preliminary-design/';});
+</script>
+</body></html>

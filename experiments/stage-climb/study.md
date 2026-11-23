@@ -1,6 +1,6 @@
 # R8 Stage climb on the R7 MAXSwerve chassis
 
-[![R8 above the carpet on the modeled center chain](../../docs/media/r8-stage.png)](https://ehartye.github.io/frc-2024-poc/?view=r8-stage#model)
+[![R8 above the carpet on the modeled center chain](../../docs/detailed-design/archive/draft-001/media/r8-stage.png)](https://ehartye.github.io/frc-2024-poc/?view=r8-stage#model)
 
 *Nominal solo pose after the cross-pin seats. The gold curve represents the analytical chain. The viewer animates the reopened R8 assembly and its approach, load transfer and passive hold.* [Explore the poses](https://ehartye.github.io/frc-2024-poc/?view=r8-stage#model) · [Download editable R8 for Fusion](../../cad/student/r8-stage-climber.f3d)
 

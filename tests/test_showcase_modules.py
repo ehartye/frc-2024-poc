@@ -7,6 +7,12 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
+ARCHIVE = ROOT / "docs/detailed-design/archive/draft-001"
+
+
+def archived(path):
+    """Resolve a path recorded before the rough draft was withdrawn to its archived copy."""
+    return ARCHIVE / path.removeprefix("docs/") if path.startswith("docs/") else ROOT / path
 
 
 class InstalledModules(unittest.TestCase):
@@ -14,7 +20,7 @@ class InstalledModules(unittest.TestCase):
         receipt = json.loads((ROOT / "cad/student/r7-reopened.json").read_bytes())
         self.assertTrue(receipt["opened"])
         self.assertEqual(hashlib.sha256((ROOT / receipt["source"]).read_bytes()).hexdigest(), receipt["sha256"])
-        native = json.loads((ROOT / "docs/media/swerve-r7.json").read_bytes())
+        native = json.loads((ROOT / "docs/detailed-design/archive/draft-001/media/swerve-r7.json").read_bytes())
         self.assertEqual(receipt["privateSourceSha256"], native["sourceSha256"])
         groups = receipt["components"]
         self.assertEqual(len(groups), 15)
@@ -33,8 +39,8 @@ class InstalledModules(unittest.TestCase):
         self.assertEqual(set(receipt["combinedSteerAndRoll"]),set(axes))
 
     def test_all_corners_steer_and_roll_independently(self):
-        receipt = json.loads((ROOT / "docs/media/swerve-r7.json").read_bytes())
-        with (ROOT / receipt["assets"]["model"]["path"]).open("rb") as stream:
+        receipt = json.loads((ROOT / "docs/detailed-design/archive/draft-001/media/swerve-r7.json").read_bytes())
+        with archived(receipt["assets"]["model"]["path"]).open("rb") as stream:
             stream.seek(12)
             length, kind = struct.unpack("<I4s", stream.read(8))
             self.assertEqual(kind, b"JSON")
@@ -64,14 +70,14 @@ class InstalledModules(unittest.TestCase):
                         self.assertIn("mesh", nodes[find(role, nodes[parent]["children"])])
 
     def test_first_floor_note_film_reaches_its_recorded_counter_event(self):
-        receipt = json.loads((ROOT / "docs/media/swerve-r7.json").read_bytes())
+        receipt = json.loads((ROOT / "docs/detailed-design/archive/draft-001/media/swerve-r7.json").read_bytes())
         route = json.loads((ROOT / "sim/pressure/evidence/maxswerve-six-note-D1.json").read_bytes())
         first = route["records"][0]
         self.assertEqual(receipt["plantSha256"], route["plantArchiveSha256"])
         self.assertEqual(receipt["sourceSha256"], route["displayArchiveSha256"])
         self.assertEqual(receipt["traceSha256"]["pickup"], first["pickupTrace"])
         self.assertEqual(receipt["traceSha256"]["field"], first["fieldTrace"])
-        data = (ROOT / receipt["assets"]["model"]["path"]).read_bytes()
+        data = archived(receipt["assets"]["model"]["path"]).read_bytes()
         length = struct.unpack_from("<I", data, 12)[0]
         gltf = json.loads(data[20:20+length])
         clip, = (a for a in gltf["animations"] if a["name"] == receipt["clip"])

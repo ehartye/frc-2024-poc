@@ -43,9 +43,10 @@ def cradle_components(triangles):
 
 
 def meshes():
-    manifest = json.loads((ROOT / "docs/media/r9-assembly.json").read_bytes())
+    manifest = json.loads((ROOT / "docs/detailed-design/archive/draft-001/media/r9-assembly.json").read_bytes())
     asset = manifest["assets"]["glb"]
-    raw = (ROOT / asset["path"]).read_bytes()
+    # The record predates the withdrawal and names the original path.
+    raw = (ROOT / asset["path"].replace("docs/", "docs/detailed-design/archive/draft-001/", 1)).read_bytes()
     assert hashlib.sha256(raw).hexdigest() == asset["sha256"]
     footprint = json.loads((ROOT / "experiments/ground-relay/footprint.json").read_bytes())
     assert footprint["sourceParkedArchiveSha256"] == manifest["sourceSha256"]

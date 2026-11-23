@@ -162,6 +162,9 @@ docs/preliminary-design/releases/*/budgets.json -text
 docs/preliminary-design/releases/*/limits.json -text
 docs/preliminary-design/releases/*/receipt.json -text whitespace=cr-at-eol
 
+# The layout check pins every committed release input by SHA-256, so each is kept byte for byte.
+cad/preliminary-design/releases/** -text
+
 # Keep licensed viewer fonts byte-identical to the distributed template.
 docs/preliminary-design/fonts/*.woff2 binary
 docs/preliminary-design/fonts/OFL-*.txt -whitespace
@@ -177,3 +180,6 @@ engineering-iterations/engineering-iterations.bundle.part* filter=lfs diff=lfs m
 
 2024/six-speaker-20261118/** -text
 2024/six-speaker-20261118/outer-aligned-collection-to-66/trace.jsonl filter=lfs diff=lfs merge=lfs -text
+# Withdrawn showcase files are archived byte for byte.
+docs/detailed-design/archive/** -text
+cad/history/** -text

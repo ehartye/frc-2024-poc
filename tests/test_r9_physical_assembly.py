@@ -15,7 +15,7 @@ def read(path):
 
 class MechanicalHandoff(unittest.TestCase):
     def test_archive_and_bill(self):
-        receipt=read(ROOT/'docs/media/r9-assembly.json')
+        receipt=read(ROOT/'docs/detailed-design/archive/draft-001/media/r9-assembly.json')
         digest=hashlib.sha256((ROOT/receipt['assets']['archive']['path']).read_bytes()).hexdigest()
         result=read(READY/'mass/result.json')
         actual=read(READY/'mass/actual.json')

@@ -1,8 +1,6 @@
-"""Refresh or verify the shared CAD view and every project README using only Python and Git."""
+"""Refresh or verify the preliminary design still at the top of every project README."""
 import argparse
-import base64
 import hashlib
-import html
 import json
 import os
 import re
@@ -12,6 +10,10 @@ from urllib.parse import quote
 
 START = "<!-- cad-still -->"
 END = "<!-- /cad-still -->"
+# Withdrawn pages are kept byte for byte, so their READMEs are never rewritten.
+ARCHIVES = ("docs/detailed-design/archive/",)
+STILL = "cad/preliminary-design/media/002-preliminary-robot.png"
+RECORD = "cad/preliminary-design/media/002-preliminary-robot.json"
 
 
 def checked(path, expected):
@@ -30,27 +32,24 @@ def output(file, data, update):
     file.write_bytes(data)
 
 
-def run(root, update, template):
-    config = json.loads((root / "cad-showcase.json").read_text(encoding="utf-8-sig"))
-    folder = root / "docs/robot/cad"
-    receipt = json.loads((folder / "receipt.json").read_text(encoding="utf-8"))
-    if receipt["source"] != config["source"]:
-        raise ValueError("Selected CAD differs from export. Regenerate the still and mesh.")
-    checked(root / config["source"], receipt["sourceSha256"])
-    checked(folder / "assembly.png", receipt["imageSha256"])
-    mesh = checked(folder / "assembly.stl.gz", receipt["meshSha256"])
-    fields = dict(title=html.escape(config["title"]), scope=html.escape(config["scope"]),
-                  facts=f'{receipt["solids"]:,} solids · {receipt["triangles"]:,} triangles · {receipt["chordMm"]} mm chord setting',
-                  bounds=json.dumps(receipt["nativeBounds"]), mesh=base64.b64encode(mesh).decode("ascii"))
-    viewer = re.sub(r"\{\{(\w+)\}\}", lambda match: fields[match[1]], template.read_text(encoding="utf-8"))
-    output(folder / "index.html", viewer.encode(), update)
-    featured = config.get("featured")
-    if featured:
-        native = json.loads((root / featured["receipt"]).read_bytes())
-        for asset in native["assets"].values():
-            checked(root / asset["path"], asset["sha256"])
+def run(root, update):
+    # No detailed design is published, so every README features the current preliminary design.
+    record = json.loads((root / RECORD).read_bytes())
+    catalog = root / "docs/preliminary-design"
+    current = json.loads((catalog / "releases.json").read_bytes())["current"]
+    scene = catalog / "releases" / current
+    if record["release"] != current:
+        raise ValueError("The preliminary still names a release other than the current one")
+    checked(root / STILL, record["pngSha256"])
+    # The published receipt names the STEP the layout check and the review scene were built from.
+    if json.loads((scene / "receipt.json").read_bytes())["step"]["sha256"] != record["stepSha256"]:
+        raise ValueError("Preliminary still and release refer to different geometry")
+    still = (root / "cad/preliminary-design/readme-still.md").read_text(encoding="utf-8").strip()
+    if still.count(STILL) != 1 or still.count(RECORD) != 1:
+        raise ValueError("The README still block must link its image and its record once each")
     paths = subprocess.check_output(["git", "ls-files", "-co", "--exclude-standard", "-z"], cwd=root)
-    names = sorted(set(n.decode() for n in paths.split(b"\0") if n and Path(n.decode()).name.lower() in ("readme.md", "readme")))
+    listed = (n.decode() for n in paths.split(bytes(1)) if n)
+    names = sorted(set(n for n in listed if Path(n).name.lower() in ("readme.md", "readme") and not n.startswith(ARCHIVES)))
     for name in names:
         file = root / name
         if not file.exists():
@@ -62,48 +61,22 @@ def run(root, update, template):
         heading = next((i for i, line in enumerate(lines) if line.startswith("# ")), None)
         if heading is None:
             raise ValueError(f"README needs a title: {name}")
+
         def link(target):
-            return quote(Path(os.path.relpath(target, file.parent)).as_posix(), safe="/.-_")
-        title = config["title"]
-        image = link(folder / "assembly.png")
-        target = config.get("viewerUrl") or link(folder / "index.html")
-        source = link(root / config["source"])
-        block = (f'{START}\n[![{title}]({image})]({target})\n\n'
-                 f'**Project CAD · {title}.** {config["scope"]} '
-                 f'[Source STEP · {receipt["sourceSha256"][:10]}]({source}) · [Rotate the model]({target})\n{END}')
-        if featured:
-            title = featured["title"]
-            target = featured["viewerUrl"]
-            image = link(root / native["assets"]["still"]["path"])
-            provenance = link(root / featured["receipt"])
-            block = (f'{START}\n[![{title}]({image})]({target})\n\n'
-                     f'**{title}.** {featured["scope"]} '
-                     f'[Native model record]({provenance}) · [{featured.get("linkLabel", "Open 3D replay")}]({target})\n{END}')
-        if name == "README.md":
-            # The top-level README features the season's current preliminary design.
-            photo = root / "cad/preliminary-design/media/002-preliminary-robot.json"
-            record = json.loads(photo.read_bytes())
-            catalog = root / "docs/preliminary-design"
-            current = json.loads((catalog / "releases.json").read_bytes())["current"]
-            scene = catalog / "releases" / current
-            checked(scene / "scene.json.gz", record["sceneSha256"])
-            checked(photo.with_suffix(".png"), record["pngSha256"])
-            if json.loads((scene / "release.json").read_bytes())["geometry"] != record["stepSha256"]:
-                raise ValueError("Preliminary still and release refer to different geometry")
-            block = (root / "cad/preliminary-design/readme-still.md").read_text(encoding="utf-8").strip()
+            return quote(Path(os.path.relpath(root / target, file.parent)).as_posix(), safe="/.-_")
+
+        block = still.replace(STILL, link(STILL)).replace(RECORD, link(RECORD))
         merged = "".join(lines[:heading+1]).rstrip("\n") + "\n\n" + block + "\n\n" + "".join(lines[heading+1:]).lstrip("\n")
         if b"\r\n" in original:
             merged = merged.replace("\n", "\r\n")
         bom = b"\xef\xbb\xbf" if original.startswith(b"\xef\xbb\xbf") else b""
         output(file, bom + merged.encode(errors="surrogateescape"), update)
-    print(f"Verified CAD source, mesh, still, viewer and {len(names)} README files.")
+    print(f"Verified the preliminary still, its release geometry and {len(names)} README files.")
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("root", type=Path)
     parser.add_argument("--update", action="store_true")
-    parser.add_argument("--template", type=Path, default=Path(__file__).resolve().parents[1] / "templates/cad-orbit.html")
     args = parser.parse_args()
-    run(args.root.resolve(), args.update, args.template)
-
+    run(args.root.resolve(), args.update)
