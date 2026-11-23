@@ -9,7 +9,7 @@
  "parameters": {
   "lateral_mm": 0,
   "keeper_raise_mm": 5,
-  "side_squeeze_mm": 0
+  "lip_pitch_deg": 0
  },
  "groups": {
   "Battery": {
@@ -184,7 +184,23 @@
    "part": {
     "file": "parts/guided-cassette-1.0.step",
     "solid": "Blade retaining screw 1"
-   }
+   },
+   "place": [
+    {
+     "kind": "rotation",
+     "originMm": [
+      -196.354,
+      0,
+      1022.171
+     ],
+     "axis": [
+      0,
+      -1,
+      0
+     ],
+     "travelDeg": "=lip_pitch_deg"
+    }
+   ]
   },
   {
    "name": "Blade retaining screw 2",
@@ -192,7 +208,23 @@
    "part": {
     "file": "parts/guided-cassette-1.0.step",
     "solid": "Blade retaining screw 2"
-   }
+   },
+   "place": [
+    {
+     "kind": "rotation",
+     "originMm": [
+      -196.354,
+      0,
+      1022.171
+     ],
+     "axis": [
+      0,
+      -1,
+      0
+     ],
+     "travelDeg": "=lip_pitch_deg"
+    }
+   ]
   },
   {
    "name": "Blade retaining screw 3",
@@ -200,7 +232,23 @@
    "part": {
     "file": "parts/guided-cassette-1.0.step",
     "solid": "Blade retaining screw 3"
-   }
+   },
+   "place": [
+    {
+     "kind": "rotation",
+     "originMm": [
+      -196.354,
+      0,
+      1022.171
+     ],
+     "axis": [
+      0,
+      -1,
+      0
+     ],
+     "travelDeg": "=lip_pitch_deg"
+    }
+   ]
   },
   {
    "name": "Blade retaining screw 4",
@@ -208,7 +256,23 @@
    "part": {
     "file": "parts/guided-cassette-1.0.step",
     "solid": "Blade retaining screw 4"
-   }
+   },
+   "place": [
+    {
+     "kind": "rotation",
+     "originMm": [
+      -196.354,
+      0,
+      1022.171
+     ],
+     "axis": [
+      0,
+      -1,
+      0
+     ],
+     "travelDeg": "=lip_pitch_deg"
+    }
+   ]
   },
   {
    "name": "Cassette side beam extension - left",
@@ -240,7 +304,23 @@
    "part": {
     "file": "parts/guided-cassette-1.0.step",
     "solid": "Replaceable pickup lip"
-   }
+   },
+   "place": [
+    {
+     "kind": "rotation",
+     "originMm": [
+      -196.354,
+      0,
+      1022.171
+     ],
+     "axis": [
+      0,
+      -1,
+      0
+     ],
+     "travelDeg": "=lip_pitch_deg"
+    }
+   ]
   },
   {
    "name": "Blue bumper set",
@@ -1192,17 +1272,7 @@
    "part": {
     "file": "parts/guided-cassette-1.0.step",
     "solid": "Feed tread \u00b7 left"
-   },
-   "place": [
-    {
-     "kind": "translation",
-     "travelMm": [
-      0,
-      "=-side_squeeze_mm",
-      0
-     ]
-    }
-   ]
+   }
   },
   {
    "name": "Feed tread - right",
@@ -1210,17 +1280,7 @@
    "part": {
     "file": "parts/guided-cassette-1.0.step",
     "solid": "Feed tread \u00b7 right"
-   },
-   "place": [
-    {
-     "kind": "translation",
-     "travelMm": [
-      0,
-      "=side_squeeze_mm",
-      0
-     ]
-    }
-   ]
+   }
   },
   {
    "name": "Flap axle",
@@ -1558,17 +1618,7 @@
    "part": {
     "file": "parts/guided-cassette-1.0.step",
     "solid": "Launch tread \u00b7 left"
-   },
-   "place": [
-    {
-     "kind": "translation",
-     "travelMm": [
-      0,
-      "=-side_squeeze_mm",
-      0
-     ]
-    }
-   ]
+   }
   },
   {
    "name": "Launch tread - right",
@@ -1576,17 +1626,7 @@
    "part": {
     "file": "parts/guided-cassette-1.0.step",
     "solid": "Launch tread \u00b7 right"
-   },
-   "place": [
-    {
-     "kind": "translation",
-     "travelMm": [
-      0,
-      "=side_squeeze_mm",
-      0
-     ]
-    }
-   ]
+   }
   },
   {
    "name": "Mouth retention flap",
@@ -55252,15 +55292,24 @@
    "step": 1,
    "note": "Shims under the keeper panel's four posts raise it off the deck, 1 mm at a time, up to 10 mm; the panel then keeps the seated NOTE with that much more play"
   },
-  "side belt squeeze": {
-   "input": "parameters.side_squeeze_mm",
+  "lip pitch": {
+   "input": "parameters.lip_pitch_deg",
    "kind": "mechanical",
    "range": [
-    0,
+    -4,
     4
    ],
    "step": 1,
-   "note": "Shims behind each side belt's backing strip press its tread inward toward the NOTE, 1 mm at a time, up to 4 mm a side; more squeeze, more grip"
+   "note": "Shims under the rear edge of the replaceable lip pitch it about the crossbar's centre line, 1 degree at a time; positive raises the tip"
+  },
+  "nose current": {
+   "input": "drives.Cassette drive.statorLimitA",
+   "kind": "setpoint",
+   "range": [
+    4,
+    20
+   ],
+   "note": "The nose motor's current limit, set in software; 8 A as 1.0 ran it. 20 A is near the motor's stall current on the 8.5 V the model gives it"
   }
  },
  "pieces": {
