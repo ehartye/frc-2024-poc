@@ -1,3 +1,4 @@
 {
-  "publicFusionHandoff": "cad/public-handoff.json"
+  "publicFusionHandoff": "cad/public-handoff.json",
+  "evidenceFolders": ["2024", "engineering-iterations", "plugin-qa"]
 }
