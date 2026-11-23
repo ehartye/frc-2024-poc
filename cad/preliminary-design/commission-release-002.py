@@ -39,11 +39,10 @@ def main():
 
     root = opt.output.resolve()
     root.mkdir(exist_ok=True, parents=True)
-    catalog = PROJECT / "docs/preliminary-design"
-    release = catalog / "releases" / "003"  # the release whose replay scene these measurements were taken on
-    published = read(release / "release.json")
-    assert sha(opt.step) == published["geometry"] and sha(release / "scene.json.gz") == published["sceneSha256"]
-    scene = json.loads(gzip.decompress((release / "scene.json.gz").read_bytes()))
+    release = HERE / "builder/inputs"  # the draft layout's replay scene, on which these measurements were taken
+    published = read(release / "replay-scene-record.json")
+    assert sha(opt.step) == published["geometry"] and sha(release / "replay-scene.json.gz") == published["sceneSha256"]
+    scene = json.loads(gzip.decompress((release / "replay-scene.json.gz").read_bytes()))
     guided = scene["concepts"]["guided"]
     replay = next(c for c in guided["cases"] if c["key"] == "continuous-cycle-96")
     issue = "2024-002-cassette"

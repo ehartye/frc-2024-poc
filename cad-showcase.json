@@ -1,0 +1,8 @@
+{
+  "title": "Preliminary design of the robot",
+  "design": "Guided cassette 1.0",
+  "status": "effective",
+  "scope": "The robot is at the start of a cycle, with a floor NOTE ahead. The angled cassette picks up, retains and shoots a NOTE. The parallel guides support the climb. The still shows the layout solids of the preliminary design review in its opening pose.",
+  "still": "cad/preliminary-design/media/guided-cassette-preliminary.png",
+  "viewerUrl": "https://ehartye.github.io/frc-2024-poc/preliminary-design/"
+}

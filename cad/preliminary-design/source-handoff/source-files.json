@@ -15482,55 +15482,10 @@
       "bytes": 1127,
       "source": "engineering-iterations@d4ebf59"
     },
-    "cad/preliminary-design/releases/003/robot.step": {
-      "sha256": "a29a146d8897f64e8f056fcb46a431ba234c7aecccbc3233b6834c43c703bc88",
-      "bytes": 10216529,
-      "source": "duplicate of 2024\\preliminary-review-lan\\greenfield-retained\\guided-hoist-01\\service-locked-robot.step"
-    },
-    "cad/preliminary-design/releases/003/layout.json": {
-      "sha256": "a7e03f2c1ddf93fd817146ffcccbb90b3a7215c1a4a6aa84d24c36fbed499c63",
-      "bytes": 119941,
-      "source": "published 003"
-    },
-    "cad/preliminary-design/releases/003/motion.json": {
-      "sha256": "830602fcea855d68403c8c11734a1a1a403c2b8c1c204d6240b1bd19772f1a3c",
-      "bytes": 447147,
-      "source": "published 003"
-    },
-    "cad/preliminary-design/releases/003/issued-budget.json": {
-      "sha256": "6f668a975f055cecb8e034310a02f558bc6a6505f6252c1c56c17c59cd374ad9",
-      "bytes": 14432,
-      "source": "published 003"
-    },
-    "cad/preliminary-design/releases/003/feed-284-transport.json": {
-      "sha256": "c4da9fafefe33f01b01e40f448adfa8bf5a368e689441f1368dd82a97535ec29",
-      "bytes": 1508,
-      "source": "published 003"
-    },
-    "cad/preliminary-design/releases/003/feed-285-transport.json": {
-      "sha256": "7bdbef6d74a4aebf7e9b3d11a097c6180b9616a8f8b7daef8e7f7e2ce2f3b42b",
-      "bytes": 2059,
-      "source": "published 003"
-    },
-    "cad/preliminary-design/releases/003/feed-286-transport.json": {
-      "sha256": "9e2f544336a39ba79d6b4bd7ad4fb8254e6e3feeb53d2d4249922b3ccdc1661d",
-      "bytes": 2604,
-      "source": "published 003"
-    },
-    "cad/preliminary-design/releases/003/feed-287-transport.json": {
-      "sha256": "d92fd884ae5ddb8fed6e2389f6342d633063cd3673acb36684cb969db2c63e77",
-      "bytes": 3153,
-      "source": "published 003"
-    },
-    "cad/preliminary-design/releases/003/feed-288-transport.json": {
-      "sha256": "d5e4e9c71109859406b30735dd786ab0934f0c5a64778a02fc531a192b1e8bc2",
-      "bytes": 3698,
-      "source": "published 003"
-    },
-    "docs/preliminary-design/releases/003/scene.json.gz": {
+    "cad/preliminary-design/builder/inputs/replay-scene.json.gz": {
       "sha256": "5a1a5861cc9df6e3fc43ec7038701a64322de008b01f0e557416839b7943e0b5",
       "bytes": 4223540,
-      "source": "published 003"
+      "source": "replay scene of the draft layout"
     }
   }
 }

@@ -1,0 +1,6465 @@
+{
+ "issue": "2024-guided-cassette-1.0",
+ "step": {
+  "file": "cad/preliminary-design/releases/1.0/robot.step",
+  "sha256": "2914b6f0b94eda5c0fa18f411c58f933ce0502527997c9e2baf06476a0af9343"
+ },
+ "motion": {
+  "file": "cad/preliminary-design/releases/1.0/motion.json",
+  "sha256": "1a93d0086d961e47213e5fc6cda0130f0ce506fc64c1c2b80c9eb9e6e6c32f04"
+ },
+ "design": {
+  "file": "cad/preliminary-design/releases/1.0/design.json",
+  "sha256": "31a972a085847366fbbf02ab937edebecc4b9e8262168daf2a50678f343169ac"
+ },
+ "masses": [
+  {
+   "id": "Chassis",
+   "members": [
+    "Chassis perimeter",
+    "Bay crossmember · rear",
+    "Bay crossmember · front",
+    "Chassis sill · left",
+    "Chassis sill · right"
+   ],
+   "kg": [
+    5.246069149370916,
+    5.735787718045076
+   ],
+   "basis": "Draft layout subtotal, preserving additions and incremental stock allowances."
+  },
+  {
+   "id": "Pivot support",
+   "members": [
+    "Pivot A-frame · left",
+    "Slide base · left",
+    "Slide guide · left",
+    "Translating bearing block · left",
+    "Pivot bearing · left",
+    "Pivot A-frame · right",
+    "Slide base · right",
+    "Slide guide · right",
+    "Translating bearing block · right",
+    "Pivot bearing · right",
+    "Pivot torque shaft",
+    "Pivot reducer",
+    "Pivot motor",
+    "Slide screw",
+    "Slide drive motor",
+    "Slide bearing mount -49",
+    "Slide bearing mount 220",
+    "Travel nut and clevis",
+    "Service index disk",
+    "Service pin guide",
+    "Battery service pin"
+   ],
+   "kg": [
+    3.86,
+    6.23
+   ],
+   "basis": "Draft layout subtotal, preserving additions and incremental stock allowances."
+  },
+  {
+   "id": "Pivoting cassette",
+   "members": [
+    "Cassette cheek · left",
+    "Cassette side beam · left",
+    "Entry bearing bracket · left",
+    "Cassette cheek · right",
+    "Cassette side beam · right",
+    "Entry bearing bracket · right"
+   ],
+   "kg": [
+    1.2,
+    2.3
+   ],
+   "basis": "Draft layout subtotal, preserving additions and incremental stock allowances."
+  },
+  {
+   "id": "Piece support",
+   "members": [
+    "NOTE runner · left",
+    "NOTE runner · right",
+    "Runner crossbar 125",
+    "Runner crossbar 370",
+    "Runner crossbar 599",
+    "Rear piece stop",
+    "Rear stop bracket · right",
+    "Rear stop bracket · left",
+    "Rear stop screw · right",
+    "Rear stop screw · left",
+    "Rear stop pad",
+    "Stop bracket through bolt · right",
+    "Stop bracket locknut · right",
+    "Stop bracket through bolt · left",
+    "Stop bracket locknut · left"
+   ],
+   "kg": [
+    0.78,
+    1.61
+   ],
+   "basis": "Draft layout subtotal, preserving additions and incremental stock allowances."
+  },
+  {
+   "id": "Cassette drive",
+   "members": [
+    "Nose roller shaft",
+    "Nose motor",
+    "Nose pickup roller",
+    "Center intake belt",
+    "Center belt idler",
+    "Center idler axle",
+    "Center idler fork · right",
+    "Center idler fork · left"
+   ],
+   "kg": [
+    2.27,
+    4.56
+   ],
+   "basis": "Draft layout subtotal, preserving additions and incremental stock allowances."
+  },
+  {
+   "id": "Electrical bay",
+   "members": [
+    "Electronics deck",
+    "PDH",
+    "roboRIO flat",
+    "radio",
+    "main breaker",
+    "Pack lead",
+    "Distribution lead"
+   ],
+   "kg": [
+    3.6,
+    5.9
+   ],
+   "basis": "Draft layout subtotal, preserving additions and incremental stock allowances."
+  },
+  {
+   "id": "Swerve · Front left",
+   "members": [
+    "Front left tire",
+    "Front left wheel axle",
+    "Front left module deck",
+    "Front left axle support 255",
+    "Front left axle support 295",
+    "Swerve drive motor · Front left",
+    "Swerve steer motor · Front left"
+   ],
+   "kg": [
+    2.4,
+    3.1
+   ],
+   "basis": "Draft layout subtotal, preserving additions and incremental stock allowances."
+  },
+  {
+   "id": "Swerve · Rear left",
+   "members": [
+    "Rear left tire",
+    "Rear left wheel axle",
+    "Rear left module deck",
+    "Rear left axle support 255",
+    "Rear left axle support 295",
+    "Swerve drive motor · Rear left",
+    "Swerve steer motor · Rear left"
+   ],
+   "kg": [
+    2.4,
+    3.1
+   ],
+   "basis": "Draft layout subtotal, preserving additions and incremental stock allowances."
+  },
+  {
+   "id": "Swerve · Front right",
+   "members": [
+    "Front right tire",
+    "Front right wheel axle",
+    "Front right module deck",
+    "Front right axle support 255",
+    "Front right axle support 295",
+    "Swerve drive motor · Front right",
+    "Swerve steer motor · Front right"
+   ],
+   "kg": [
+    2.4,
+    3.1
+   ],
+   "basis": "Draft layout subtotal, preserving additions and incremental stock allowances."
+  },
+  {
+   "id": "Swerve · Rear right",
+   "members": [
+    "Rear right tire",
+    "Rear right wheel axle",
+    "Rear right module deck",
+    "Rear right axle support 255",
+    "Rear right axle support 295",
+    "Swerve drive motor · Rear right",
+    "Swerve steer motor · Rear right"
+   ],
+   "kg": [
+    2.4,
+    3.1
+   ],
+   "basis": "Draft layout subtotal, preserving additions and incremental stock allowances."
+  },
+  {
+   "id": "Unplaced fasteners, harness and sensors",
+   "members": [],
+   "kg": [
+    2,
+    4.2
+   ],
+   "basis": "Draft layout subtotal, preserving additions and incremental stock allowances."
+  },
+  {
+   "id": "Unallocated design reserve",
+   "members": [],
+   "kg": [
+    3,
+    6
+   ],
+   "basis": "Draft layout subtotal, preserving additions and incremental stock allowances."
+  },
+  {
+   "id": "Passive cover",
+   "members": [
+    "Lid post 95 · left",
+    "Lid post 330 · left",
+    "Lid edge rail · left",
+    "Lid post 95 · right",
+    "Lid post 330 · right",
+    "Lid edge rail · right",
+    "Windowed keeper panel",
+    "Flap axle",
+    "Mouth retention flap"
+   ],
+   "kg": [
+    0.62,
+    1.2
+   ],
+   "basis": "Draft layout subtotal, preserving additions and incremental stock allowances."
+  },
+  {
+   "id": "Replacement traction tread and hardware allowance",
+   "members": [],
+   "kg": [
+    0.06,
+    0.22
+   ],
+   "basis": "Draft layout subtotal, preserving additions and incremental stock allowances."
+  },
+  {
+   "id": "Pickup lip, extended rail tips and attachments",
+   "members": [
+    "Replaceable pickup lip",
+    "Pickup lip crossbar",
+    "Cassette side beam extension · left",
+    "Cassette side beam extension · right",
+    "Blade retaining screw 1",
+    "Blade retaining screw 2",
+    "Blade retaining screw 3",
+    "Blade retaining screw 4"
+   ],
+   "kg": [
+    0.0886,
+    0.1736
+   ],
+   "basis": "Draft layout subtotal, preserving additions and incremental stock allowances."
+  },
+  {
+   "id": "Climb catch, actuator and sensing allowance",
+   "members": [
+    "Catch sector screw 1",
+    "Catch sector screw 2",
+    "Catch sector screw 3",
+    "Catch sector",
+    "Catch receiver screw 1",
+    "Catch receiver screw 2",
+    "Catch receiver screw 3",
+    "Catch receiver screw 4",
+    "Catch receiver",
+    "Catch dog",
+    "Catch actuator and spring"
+   ],
+   "kg": [
+    0.2626578479728554,
+    0.4531347838881425
+   ],
+   "basis": "Draft layout subtotal, preserving additions and incremental stock allowances."
+  },
+  {
+   "id": "Carpet followers, axles and added cheek material",
+   "members": [
+    "Carpet follower · left",
+    "Follower shoulder axle · left",
+    "Follower thrust washer · left",
+    "Follower locknut · left",
+    "Carpet follower · right",
+    "Follower shoulder axle · right",
+    "Follower thrust washer · right",
+    "Follower locknut · right"
+   ],
+   "kg": [
+    0.022335886164116765,
+    0.05
+   ],
+   "basis": "Draft layout subtotal, preserving additions and incremental stock allowances."
+  },
+  {
+   "id": "Split transmission, net added stock and electrical allowance",
+   "members": [
+    "Feed belt · left",
+    "Feed tread · left",
+    "Feed drive pulley · left",
+    "Feed idler pulley · left",
+    "Feed Nose pulley shelf · left",
+    "Feed Idler axle · left",
+    "Launch belt · left",
+    "Launch tread · left",
+    "Launch drive pulley · left",
+    "Launch Belt motor · left",
+    "Launch Belt motor shelf · left",
+    "Launch Belt drive shaft · left",
+    "Launch idler pulley · left",
+    "Launch idler bridge seat · left",
+    "Launch idler axle · left",
+    "Feed right-angle gearbox · left",
+    "Feed gearhead flange · left",
+    "Feed output shaft · left",
+    "Feed belt · right",
+    "Feed tread · right",
+    "Feed drive pulley · right",
+    "Feed idler pulley · right",
+    "Feed Nose pulley shelf · right",
+    "Feed Idler axle · right",
+    "Launch belt · right",
+    "Launch tread · right",
+    "Launch drive pulley · right",
+    "Launch Belt motor · right",
+    "Launch Belt motor shelf · right",
+    "Launch Belt drive shaft · right",
+    "Launch idler pulley · right",
+    "Launch idler bridge seat · right",
+    "Launch idler axle · right",
+    "Feed right-angle gearbox · right",
+    "Feed gearhead flange · right",
+    "Feed output shaft · right",
+    "Feed transverse jackshaft",
+    "Feed input reduction housing",
+    "Feed motor output",
+    "Feed motor",
+    "Feed input pilot flange",
+    "Feed reducer mount"
+   ],
+   "kg": [
+    0.6303733395336183,
+    0.9812159614730571
+   ],
+   "basis": "Draft layout subtotal, preserving additions and incremental stock allowances. Revision A adds 0.0370 kg for Launch Belt drive shaft · left: 4712 mm3 of added solid taken as steel. Revision A adds 0.0370 kg for Launch Belt drive shaft · right: 4712 mm3 of added solid taken as steel."
+  },
+  {
+   "id": "Forward drive bridges and shafts",
+   "members": [],
+   "kg": [
+    0.1249848120626099,
+    0.17648253387200136
+   ],
+   "basis": "Draft layout subtotal, preserving additions and incremental stock allowances."
+  },
+  {
+   "id": "Guided climb, keeper and take-up",
+   "members": [
+    "Captive hook wear block · left",
+    "Captive hook wear block · right",
+    "Capture-angle dog bushing",
+    "Chain hook · left",
+    "Chain hook · right",
+    "Climb yoke post · left",
+    "Climb yoke post · right",
+    "Common keeper yoke and sliding rack",
+    "Guide rear anchor cleat · left",
+    "Guide rear anchor cleat · right",
+    "Guide rear anchor web · left",
+    "Guide rear anchor web · right",
+    "Hoist eye thimble · left",
+    "Hoist eye thimble · right",
+    "Hoist rear redirect axle · left",
+    "Hoist rear redirect axle · right",
+    "Hoist rear redirect sheave · left",
+    "Hoist rear redirect sheave · right",
+    "Hoist redirect ear 194 · left",
+    "Hoist redirect ear 194 · right",
+    "Hoist redirect ear 211 · left",
+    "Hoist redirect ear 211 · right",
+    "Hoist rope drum to sheave · left",
+    "Hoist rope drum to sheave · right",
+    "Hoist rope working span · left",
+    "Hoist rope working span · right",
+    "Hoist splice allowance · left",
+    "Hoist splice allowance · right",
+    "Hoist thimble pin · left",
+    "Hoist thimble pin · right",
+    "Hook anchor compression tube · left",
+    "Hook anchor compression tube · right",
+    "Hook anchor root · left",
+    "Hook anchor root · right",
+    "Hook guide channel · left",
+    "Hook guide channel · right",
+    "Hook slider liner 196.2 · left",
+    "Hook slider liner 196.2 · right",
+    "Hook slider liner 215.0 · left",
+    "Hook slider liner 215.0 · right",
+    "Keeper drive mast",
+    "Keeper motor and return spring",
+    "Keeper pinion output",
+    "Keeper return pinion",
+    "Pivot cable drum · left",
+    "Pivot cable drum · right",
+    "Pivot drive socket",
+    "Redirect cross-tie · left",
+    "Redirect cross-tie · right",
+    "Shared lift crosspiece",
+    "Slide stop actuator · left",
+    "Slide stop actuator · right",
+    "Slide stop guide · left",
+    "Slide stop guide · right",
+    "Slide stop pin · left",
+    "Slide stop pin · right",
+    "Sliding pivot clutch",
+    "Spliced hoist eye · left",
+    "Spliced hoist eye · right",
+    "Thimble pin shelf · left",
+    "Thimble pin shelf · right"
+   ],
+   "kg": [
+    2.4494262792555657,
+    3.8464262792555655
+   ],
+   "basis": "Draft layout subtotal, preserving additions and incremental stock allowances."
+  },
+  {
+   "id": "battery",
+   "members": [
+    "Battery and terminal case"
+   ],
+   "kg": [
+    0,
+    0
+   ],
+   "basis": "Excluded from the inspection scale; included at operating weight in the payload ledger."
+  },
+  {
+   "id": "finished bumper scenario",
+   "members": [
+    "Blue bumper set"
+   ],
+   "kg": [
+    0,
+    0
+   ],
+   "basis": "Excluded from the inspection scale; included at operating weight in the payload ledger."
+  },
+  {
+   "id": "Slide motor service package, gross allowance",
+   "members": [],
+   "kg": [
+    0.2573540409325571,
+    0.30735404093255714
+   ],
+   "basis": "Gross motor, machined stock and fasteners plus 40–90 g wiring and connector allowance. Prior group budget retained. Cold assembly fit is documented for the installed source model."
+  }
+ ],
+ "runningPayloadKg": [
+  12.884980332326137,
+  15.604980332326138
+ ],
+ "requirements": {
+  "file": "cad/preliminary-design/releases/1.0/limits.json",
+  "sha256": "5716c5edaf18a6fb3a6be8618db02f15d1330a2b382339c16c7bc8b1b7728a04"
+ },
+ "electricalCases": {
+  "reset-01-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Feed roller command": [
+     0,
+     8
+    ],
+    "Pivot motor": [
+     0,
+     21.960814433127123
+    ],
+    "Slide motor": [
+     0,
+     16.08404145961313
+    ],
+    "Four drive motors": [
+     0,
+     0.18136528404855087
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Empty-return study with 35 A of other loads held through the whole reset. The required voltage is the bus at which the pivot motor reaches its terminal demand.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/reset-budget.json",
+     "sha256": "4a594b9a58b8c11096f8fff7af260a1bf1deb448d70dd835506c26cda12a79b2"
+    }
+   ]
+  },
+  "reset-01-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Feed roller command": [
+     0,
+     8
+    ],
+    "Pivot motor": [
+     0,
+     21.960814433127123
+    ],
+    "Slide motor": [
+     0,
+     16.08404145961313
+    ],
+    "Four drive motors": [
+     0,
+     0.18136528404855087
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Empty-return study with 35 A of other loads held through the whole reset. The required voltage is the bus at which the pivot motor reaches its terminal demand.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/reset-budget.json",
+     "sha256": "4a594b9a58b8c11096f8fff7af260a1bf1deb448d70dd835506c26cda12a79b2"
+    }
+   ]
+  },
+  "reset-02-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Feed roller command": [
+     0,
+     8
+    ],
+    "Pivot motor": [
+     0,
+     21.960814433127123
+    ],
+    "Slide motor": [
+     0,
+     16.08404145961313
+    ],
+    "Four drive motors": [
+     0,
+     0.18136528404855087
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Empty-return study with 35 A of other loads held through the whole reset. The required voltage is the bus at which the pivot motor reaches its terminal demand.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/reset-budget.json",
+     "sha256": "4a594b9a58b8c11096f8fff7af260a1bf1deb448d70dd835506c26cda12a79b2"
+    }
+   ]
+  },
+  "reset-02-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Feed roller command": [
+     0,
+     8
+    ],
+    "Pivot motor": [
+     0,
+     21.960814433127123
+    ],
+    "Slide motor": [
+     0,
+     16.08404145961313
+    ],
+    "Four drive motors": [
+     0,
+     0.18136528404855087
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Empty-return study with 35 A of other loads held through the whole reset. The required voltage is the bus at which the pivot motor reaches its terminal demand.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/reset-budget.json",
+     "sha256": "4a594b9a58b8c11096f8fff7af260a1bf1deb448d70dd835506c26cda12a79b2"
+    }
+   ]
+  },
+  "reset-03-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Feed roller command": [
+     0,
+     8
+    ],
+    "Pivot motor": [
+     0,
+     21.960814433127123
+    ],
+    "Slide motor": [
+     0,
+     16.08404145961313
+    ],
+    "Four drive motors": [
+     0,
+     0.18136528404855087
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Empty-return study with 35 A of other loads held through the whole reset. The required voltage is the bus at which the pivot motor reaches its terminal demand.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/reset-budget.json",
+     "sha256": "4a594b9a58b8c11096f8fff7af260a1bf1deb448d70dd835506c26cda12a79b2"
+    }
+   ]
+  },
+  "reset-03-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Feed roller command": [
+     0,
+     8
+    ],
+    "Pivot motor": [
+     0,
+     21.960814433127123
+    ],
+    "Slide motor": [
+     0,
+     16.08404145961313
+    ],
+    "Four drive motors": [
+     0,
+     0.18136528404855087
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Empty-return study with 35 A of other loads held through the whole reset. The required voltage is the bus at which the pivot motor reaches its terminal demand.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/reset-budget.json",
+     "sha256": "4a594b9a58b8c11096f8fff7af260a1bf1deb448d70dd835506c26cda12a79b2"
+    }
+   ]
+  },
+  "reset-04-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Feed roller command": [
+     0,
+     8
+    ],
+    "Pivot motor": [
+     0,
+     21.960814433127123
+    ],
+    "Slide motor": [
+     0,
+     16.08404145961313
+    ],
+    "Four drive motors": [
+     0,
+     0.18136528404855087
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Empty-return study with 35 A of other loads held through the whole reset. The required voltage is the bus at which the pivot motor reaches its terminal demand.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/reset-budget.json",
+     "sha256": "4a594b9a58b8c11096f8fff7af260a1bf1deb448d70dd835506c26cda12a79b2"
+    }
+   ]
+  },
+  "reset-04-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Feed roller command": [
+     0,
+     8
+    ],
+    "Pivot motor": [
+     0,
+     21.960814433127123
+    ],
+    "Slide motor": [
+     0,
+     16.08404145961313
+    ],
+    "Four drive motors": [
+     0,
+     0.18136528404855087
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Empty-return study with 35 A of other loads held through the whole reset. The required voltage is the bus at which the pivot motor reaches its terminal demand.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/reset-budget.json",
+     "sha256": "4a594b9a58b8c11096f8fff7af260a1bf1deb448d70dd835506c26cda12a79b2"
+    }
+   ]
+  },
+  "reset-05-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Feed roller command": [
+     0,
+     8
+    ],
+    "Pivot motor": [
+     0,
+     21.960814433127123
+    ],
+    "Slide motor": [
+     0,
+     16.08404145961313
+    ],
+    "Four drive motors": [
+     0,
+     0.18136528404855087
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Empty-return study with 35 A of other loads held through the whole reset. The required voltage is the bus at which the pivot motor reaches its terminal demand.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/reset-budget.json",
+     "sha256": "4a594b9a58b8c11096f8fff7af260a1bf1deb448d70dd835506c26cda12a79b2"
+    }
+   ]
+  },
+  "reset-05-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Feed roller command": [
+     0,
+     8
+    ],
+    "Pivot motor": [
+     0,
+     21.960814433127123
+    ],
+    "Slide motor": [
+     0,
+     16.08404145961313
+    ],
+    "Four drive motors": [
+     0,
+     0.18136528404855087
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Empty-return study with 35 A of other loads held through the whole reset. The required voltage is the bus at which the pivot motor reaches its terminal demand.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/reset-budget.json",
+     "sha256": "4a594b9a58b8c11096f8fff7af260a1bf1deb448d70dd835506c26cda12a79b2"
+    }
+   ]
+  },
+  "acquire-01-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-01-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-02-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-02-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-03-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-03-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-04-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-04-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-05-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-05-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-06-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-06-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-07-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-07-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-08-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-08-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-09-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-09-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-10-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-10-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-11-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-11-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-12-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-12-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-13-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-13-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-14-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-14-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-15-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-15-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-16-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-16-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-17-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-17-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-18-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-18-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-19-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-19-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-20-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-20-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-21-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-21-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-22-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-22-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-23-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-23-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-24-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-24-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-25-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-25-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-26-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-26-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-27-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-27-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-28-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-28-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-29-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-29-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-30-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-30-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-31-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-31-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-32-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-32-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-33-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-33-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-34-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-34-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-35-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-35-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-36-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-36-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-37-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-37-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-38-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-38-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-39-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-39-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-40-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-40-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-41-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-41-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-42-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-42-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-43-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-43-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-44-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-44-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-45-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-45-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-46-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-46-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-47-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-47-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-48-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-48-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-49-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "acquire-49-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Nose roller motor": [
+     0,
+     8.0
+    ],
+    "Feed and launch zone motors": [
+     0,
+     32.0
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Phase-current limits of the pickup trial taken as battery-side upper bounds. The drive bound is borrowed from the loaded-lift study; no pickup-specific drive current was recorded.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "lift-01-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls and other loads, staged to 25 A": [
+     25,
+     25
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ],
+    "Pivot motor": [
+     0,
+     31.045863013201878
+    ],
+    "Slide motor": [
+     0,
+     30.48406732972448
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Governing loaded-lift case of the six NOTES at the gross running mass, with other loads staged to 25 A. The required voltage is the pivot motor terminal demand at the governing instant.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "lift-01-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls and other loads, staged to 25 A": [
+     25,
+     25
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ],
+    "Pivot motor": [
+     0,
+     31.045863013201878
+    ],
+    "Slide motor": [
+     0,
+     30.48406732972448
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Governing loaded-lift case of the six NOTES at the gross running mass, with other loads staged to 25 A. The required voltage is the pivot motor terminal demand at the governing instant.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "lift-02-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls and other loads, staged to 25 A": [
+     25,
+     25
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ],
+    "Pivot motor": [
+     0,
+     31.045863013201878
+    ],
+    "Slide motor": [
+     0,
+     30.48406732972448
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Governing loaded-lift case of the six NOTES at the gross running mass, with other loads staged to 25 A. The required voltage is the pivot motor terminal demand at the governing instant.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "lift-02-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls and other loads, staged to 25 A": [
+     25,
+     25
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ],
+    "Pivot motor": [
+     0,
+     31.045863013201878
+    ],
+    "Slide motor": [
+     0,
+     30.48406732972448
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Governing loaded-lift case of the six NOTES at the gross running mass, with other loads staged to 25 A. The required voltage is the pivot motor terminal demand at the governing instant.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "lift-03-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls and other loads, staged to 25 A": [
+     25,
+     25
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ],
+    "Pivot motor": [
+     0,
+     31.045863013201878
+    ],
+    "Slide motor": [
+     0,
+     30.48406732972448
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Governing loaded-lift case of the six NOTES at the gross running mass, with other loads staged to 25 A. The required voltage is the pivot motor terminal demand at the governing instant.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "lift-03-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls and other loads, staged to 25 A": [
+     25,
+     25
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ],
+    "Pivot motor": [
+     0,
+     31.045863013201878
+    ],
+    "Slide motor": [
+     0,
+     30.48406732972448
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Governing loaded-lift case of the six NOTES at the gross running mass, with other loads staged to 25 A. The required voltage is the pivot motor terminal demand at the governing instant.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "lift-04-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls and other loads, staged to 25 A": [
+     25,
+     25
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ],
+    "Pivot motor": [
+     0,
+     31.045863013201878
+    ],
+    "Slide motor": [
+     0,
+     30.48406732972448
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Governing loaded-lift case of the six NOTES at the gross running mass, with other loads staged to 25 A. The required voltage is the pivot motor terminal demand at the governing instant.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "lift-04-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls and other loads, staged to 25 A": [
+     25,
+     25
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ],
+    "Pivot motor": [
+     0,
+     31.045863013201878
+    ],
+    "Slide motor": [
+     0,
+     30.48406732972448
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Governing loaded-lift case of the six NOTES at the gross running mass, with other loads staged to 25 A. The required voltage is the pivot motor terminal demand at the governing instant.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "lift-05-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls and other loads, staged to 25 A": [
+     25,
+     25
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ],
+    "Pivot motor": [
+     0,
+     31.045863013201878
+    ],
+    "Slide motor": [
+     0,
+     30.48406732972448
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Governing loaded-lift case of the six NOTES at the gross running mass, with other loads staged to 25 A. The required voltage is the pivot motor terminal demand at the governing instant.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "lift-05-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls and other loads, staged to 25 A": [
+     25,
+     25
+    ],
+    "Four drive motors": [
+     0,
+     28.10964427497097
+    ],
+    "Pivot motor": [
+     0,
+     31.045863013201878
+    ],
+    "Slide motor": [
+     0,
+     30.48406732972448
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Governing loaded-lift case of the six NOTES at the gross running mass, with other loads staged to 25 A. The required voltage is the pivot motor terminal demand at the governing instant.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/gross-power.json",
+     "sha256": "98c42e8f21a877293d1e571e8d0924eabba0fef62d018ac50048b210446bb5e6"
+    }
+   ]
+  },
+  "feed-01-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Feed plus two launch drives": [
+     0,
+     100.9893535998066
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Largest feed and launch battery current of the twelve nominal shots at both numerical resolutions.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/run-dev-48.json",
+     "sha256": "8d7fb0d613a87ad27139e9d8e1a84bbf02b8399499bc4ea6e480dc2b3938df28"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/run-dev-96.json",
+     "sha256": "50badf79dcca711a849c99c2c546b47b92ebb7d8e77afad9e0bfefa6e80db0d1"
+    }
+   ]
+  },
+  "feed-01-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Feed plus two launch drives": [
+     0,
+     100.9893535998066
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Largest feed and launch battery current of the twelve nominal shots at both numerical resolutions.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/run-dev-48.json",
+     "sha256": "8d7fb0d613a87ad27139e9d8e1a84bbf02b8399499bc4ea6e480dc2b3938df28"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/run-dev-96.json",
+     "sha256": "50badf79dcca711a849c99c2c546b47b92ebb7d8e77afad9e0bfefa6e80db0d1"
+    }
+   ]
+  },
+  "feed-02-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Feed plus two launch drives": [
+     0,
+     100.9893535998066
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Largest feed and launch battery current of the twelve nominal shots at both numerical resolutions.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/run-dev-48.json",
+     "sha256": "8d7fb0d613a87ad27139e9d8e1a84bbf02b8399499bc4ea6e480dc2b3938df28"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/run-dev-96.json",
+     "sha256": "50badf79dcca711a849c99c2c546b47b92ebb7d8e77afad9e0bfefa6e80db0d1"
+    }
+   ]
+  },
+  "feed-02-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Feed plus two launch drives": [
+     0,
+     100.9893535998066
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Largest feed and launch battery current of the twelve nominal shots at both numerical resolutions.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/run-dev-48.json",
+     "sha256": "8d7fb0d613a87ad27139e9d8e1a84bbf02b8399499bc4ea6e480dc2b3938df28"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/run-dev-96.json",
+     "sha256": "50badf79dcca711a849c99c2c546b47b92ebb7d8e77afad9e0bfefa6e80db0d1"
+    }
+   ]
+  },
+  "feed-03-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Feed plus two launch drives": [
+     0,
+     100.9893535998066
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Largest feed and launch battery current of the twelve nominal shots at both numerical resolutions.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/run-dev-48.json",
+     "sha256": "8d7fb0d613a87ad27139e9d8e1a84bbf02b8399499bc4ea6e480dc2b3938df28"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/run-dev-96.json",
+     "sha256": "50badf79dcca711a849c99c2c546b47b92ebb7d8e77afad9e0bfefa6e80db0d1"
+    }
+   ]
+  },
+  "feed-03-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Feed plus two launch drives": [
+     0,
+     100.9893535998066
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Largest feed and launch battery current of the twelve nominal shots at both numerical resolutions.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/run-dev-48.json",
+     "sha256": "8d7fb0d613a87ad27139e9d8e1a84bbf02b8399499bc4ea6e480dc2b3938df28"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/run-dev-96.json",
+     "sha256": "50badf79dcca711a849c99c2c546b47b92ebb7d8e77afad9e0bfefa6e80db0d1"
+    }
+   ]
+  },
+  "feed-04-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Feed plus two launch drives": [
+     0,
+     100.9893535998066
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Largest feed and launch battery current of the twelve nominal shots at both numerical resolutions.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/run-dev-48.json",
+     "sha256": "8d7fb0d613a87ad27139e9d8e1a84bbf02b8399499bc4ea6e480dc2b3938df28"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/run-dev-96.json",
+     "sha256": "50badf79dcca711a849c99c2c546b47b92ebb7d8e77afad9e0bfefa6e80db0d1"
+    }
+   ]
+  },
+  "feed-04-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Feed plus two launch drives": [
+     0,
+     100.9893535998066
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Largest feed and launch battery current of the twelve nominal shots at both numerical resolutions.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/run-dev-48.json",
+     "sha256": "8d7fb0d613a87ad27139e9d8e1a84bbf02b8399499bc4ea6e480dc2b3938df28"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/run-dev-96.json",
+     "sha256": "50badf79dcca711a849c99c2c546b47b92ebb7d8e77afad9e0bfefa6e80db0d1"
+    }
+   ]
+  },
+  "flight-01-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Feed plus two launch drives": [
+     0,
+     100.9893535998066
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Largest feed and launch battery current of the twelve nominal shots at both numerical resolutions.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/run-dev-48.json",
+     "sha256": "8d7fb0d613a87ad27139e9d8e1a84bbf02b8399499bc4ea6e480dc2b3938df28"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/run-dev-96.json",
+     "sha256": "50badf79dcca711a849c99c2c546b47b92ebb7d8e77afad9e0bfefa6e80db0d1"
+    }
+   ]
+  },
+  "flight-01-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Feed plus two launch drives": [
+     0,
+     100.9893535998066
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Largest feed and launch battery current of the twelve nominal shots at both numerical resolutions.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/run-dev-48.json",
+     "sha256": "8d7fb0d613a87ad27139e9d8e1a84bbf02b8399499bc4ea6e480dc2b3938df28"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/run-dev-96.json",
+     "sha256": "50badf79dcca711a849c99c2c546b47b92ebb7d8e77afad9e0bfefa6e80db0d1"
+    }
+   ]
+  },
+  "flight-02-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Feed plus two launch drives": [
+     0,
+     100.9893535998066
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Largest feed and launch battery current of the twelve nominal shots at both numerical resolutions.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/run-dev-48.json",
+     "sha256": "8d7fb0d613a87ad27139e9d8e1a84bbf02b8399499bc4ea6e480dc2b3938df28"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/run-dev-96.json",
+     "sha256": "50badf79dcca711a849c99c2c546b47b92ebb7d8e77afad9e0bfefa6e80db0d1"
+    }
+   ]
+  },
+  "flight-02-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Feed plus two launch drives": [
+     0,
+     100.9893535998066
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Largest feed and launch battery current of the twelve nominal shots at both numerical resolutions.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/run-dev-48.json",
+     "sha256": "8d7fb0d613a87ad27139e9d8e1a84bbf02b8399499bc4ea6e480dc2b3938df28"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/run-dev-96.json",
+     "sha256": "50badf79dcca711a849c99c2c546b47b92ebb7d8e77afad9e0bfefa6e80db0d1"
+    }
+   ]
+  },
+  "stow-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Pivot motor": [
+     0,
+     21.960814433127123
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Pivot current bound of the empty-return study applied to a shorter unloaded move.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/reset-budget.json",
+     "sha256": "4a594b9a58b8c11096f8fff7af260a1bf1deb448d70dd835506c26cda12a79b2"
+    }
+   ]
+  },
+  "stow-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Pivot motor": [
+     0,
+     21.960814433127123
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Pivot current bound of the empty-return study applied to a shorter unloaded move.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/reset-budget.json",
+     "sha256": "4a594b9a58b8c11096f8fff7af260a1bf1deb448d70dd835506c26cda12a79b2"
+    }
+   ]
+  },
+  "approach-01-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Pivot motor": [
+     0,
+     21.960814433127123
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Pivot current bound of the empty-return study applied to a shorter unloaded move.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/reset-budget.json",
+     "sha256": "4a594b9a58b8c11096f8fff7af260a1bf1deb448d70dd835506c26cda12a79b2"
+    }
+   ]
+  },
+  "approach-01-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Pivot motor": [
+     0,
+     21.960814433127123
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Pivot current bound of the empty-return study applied to a shorter unloaded move.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/reset-budget.json",
+     "sha256": "4a594b9a58b8c11096f8fff7af260a1bf1deb448d70dd835506c26cda12a79b2"
+    }
+   ]
+  },
+  "approach-02-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Pivot motor": [
+     0,
+     21.960814433127123
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Pivot current bound of the empty-return study applied to a shorter unloaded move.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/reset-budget.json",
+     "sha256": "4a594b9a58b8c11096f8fff7af260a1bf1deb448d70dd835506c26cda12a79b2"
+    }
+   ]
+  },
+  "approach-02-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls, sensors and standby loads": [
+     27,
+     27
+    ],
+    "Pivot motor": [
+     0,
+     21.960814433127123
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Pivot current bound of the empty-return study applied to a shorter unloaded move.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/reset-budget.json",
+     "sha256": "4a594b9a58b8c11096f8fff7af260a1bf1deb448d70dd835506c26cda12a79b2"
+    }
+   ]
+  },
+  "capture-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls and concurrent loads": [
+     25,
+     25
+    ],
+    "Shared pivot motor reeling both lines": [
+     0,
+     5.317310334592065
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Peak battery current of the forward and rearward centre-of-gravity climb trials at 71.764 kg.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/climb-gross-front.json",
+     "sha256": "c8105bdcc35482856a0a394e0c55bd3dbd42bece9cb757694cf4bdcc46405f02"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/climb-gross-rear.json",
+     "sha256": "59297a9d07053e4fb250d9580e8d1da176071bebe0a0bc40186497a845ff7679"
+    }
+   ]
+  },
+  "capture-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls and concurrent loads": [
+     25,
+     25
+    ],
+    "Shared pivot motor reeling both lines": [
+     0,
+     5.317310334592065
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Peak battery current of the forward and rearward centre-of-gravity climb trials at 71.764 kg.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/climb-gross-front.json",
+     "sha256": "c8105bdcc35482856a0a394e0c55bd3dbd42bece9cb757694cf4bdcc46405f02"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/climb-gross-rear.json",
+     "sha256": "59297a9d07053e4fb250d9580e8d1da176071bebe0a0bc40186497a845ff7679"
+    }
+   ]
+  },
+  "hoist-01-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls and concurrent loads": [
+     25,
+     25
+    ],
+    "Shared pivot motor reeling both lines": [
+     0,
+     5.317310334592065
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Peak battery current of the forward and rearward centre-of-gravity climb trials at 71.764 kg.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/climb-gross-front.json",
+     "sha256": "c8105bdcc35482856a0a394e0c55bd3dbd42bece9cb757694cf4bdcc46405f02"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/climb-gross-rear.json",
+     "sha256": "59297a9d07053e4fb250d9580e8d1da176071bebe0a0bc40186497a845ff7679"
+    }
+   ]
+  },
+  "hoist-01-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls and concurrent loads": [
+     25,
+     25
+    ],
+    "Shared pivot motor reeling both lines": [
+     0,
+     5.317310334592065
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Peak battery current of the forward and rearward centre-of-gravity climb trials at 71.764 kg.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/climb-gross-front.json",
+     "sha256": "c8105bdcc35482856a0a394e0c55bd3dbd42bece9cb757694cf4bdcc46405f02"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/climb-gross-rear.json",
+     "sha256": "59297a9d07053e4fb250d9580e8d1da176071bebe0a0bc40186497a845ff7679"
+    }
+   ]
+  },
+  "hoist-02-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls and concurrent loads": [
+     25,
+     25
+    ],
+    "Shared pivot motor reeling both lines": [
+     0,
+     5.317310334592065
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Peak battery current of the forward and rearward centre-of-gravity climb trials at 71.764 kg.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/climb-gross-front.json",
+     "sha256": "c8105bdcc35482856a0a394e0c55bd3dbd42bece9cb757694cf4bdcc46405f02"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/climb-gross-rear.json",
+     "sha256": "59297a9d07053e4fb250d9580e8d1da176071bebe0a0bc40186497a845ff7679"
+    }
+   ]
+  },
+  "hoist-02-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls and concurrent loads": [
+     25,
+     25
+    ],
+    "Shared pivot motor reeling both lines": [
+     0,
+     5.317310334592065
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Peak battery current of the forward and rearward centre-of-gravity climb trials at 71.764 kg.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/climb-gross-front.json",
+     "sha256": "c8105bdcc35482856a0a394e0c55bd3dbd42bece9cb757694cf4bdcc46405f02"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/climb-gross-rear.json",
+     "sha256": "59297a9d07053e4fb250d9580e8d1da176071bebe0a0bc40186497a845ff7679"
+    }
+   ]
+  },
+  "hoist-03-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls and concurrent loads": [
+     25,
+     25
+    ],
+    "Shared pivot motor reeling both lines": [
+     0,
+     5.317310334592065
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Peak battery current of the forward and rearward centre-of-gravity climb trials at 71.764 kg.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/climb-gross-front.json",
+     "sha256": "c8105bdcc35482856a0a394e0c55bd3dbd42bece9cb757694cf4bdcc46405f02"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/climb-gross-rear.json",
+     "sha256": "59297a9d07053e4fb250d9580e8d1da176071bebe0a0bc40186497a845ff7679"
+    }
+   ]
+  },
+  "hoist-03-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls and concurrent loads": [
+     25,
+     25
+    ],
+    "Shared pivot motor reeling both lines": [
+     0,
+     5.317310334592065
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Peak battery current of the forward and rearward centre-of-gravity climb trials at 71.764 kg.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/climb-gross-front.json",
+     "sha256": "c8105bdcc35482856a0a394e0c55bd3dbd42bece9cb757694cf4bdcc46405f02"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/climb-gross-rear.json",
+     "sha256": "59297a9d07053e4fb250d9580e8d1da176071bebe0a0bc40186497a845ff7679"
+    }
+   ]
+  },
+  "hold-weak": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls and concurrent loads": [
+     25,
+     25
+    ]
+   },
+   "openCircuitV": [
+    11.8,
+    11.8
+   ],
+   "resistanceOhm": [
+    0.027,
+    0.027
+   ],
+   "basis": "Motor power is cut. The climb trials keep 25 A of other loads on the bus.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/climb-gross-front.json",
+     "sha256": "c8105bdcc35482856a0a394e0c55bd3dbd42bece9cb757694cf4bdcc46405f02"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/climb-gross-rear.json",
+     "sha256": "59297a9d07053e4fb250d9580e8d1da176071bebe0a0bc40186497a845ff7679"
+    }
+   ]
+  },
+  "hold-nominal": {
+   "loadedKg": [
+    48.95678168761837,
+    71.94898164979256
+   ],
+   "batterySideA": {
+    "Controls and concurrent loads": [
+     25,
+     25
+    ]
+   },
+   "openCircuitV": [
+    12.6,
+    12.6
+   ],
+   "resistanceOhm": [
+    0.018,
+    0.018
+   ],
+   "basis": "Motor power is cut. The climb trials keep 25 A of other loads on the bus.",
+   "sourcePins": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/climb-gross-front.json",
+     "sha256": "c8105bdcc35482856a0a394e0c55bd3dbd42bece9cb757694cf4bdcc46405f02"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/climb-gross-rear.json",
+     "sha256": "59297a9d07053e4fb250d9580e8d1da176071bebe0a0bc40186497a845ff7679"
+    }
+   ]
+  }
+ }
+}

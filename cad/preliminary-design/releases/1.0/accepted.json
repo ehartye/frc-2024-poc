@@ -1,0 +1,21 @@
+{
+ "id": "inspection-mass",
+ "unit": "kg",
+ "scenarioId": "inspection-mass-upper",
+ "scenario": "Upper inspection estimate including slide service stock",
+ "basis": "Kickoff inspection limit applied to the current gross upper allocation.",
+ "phase": "preliminary-design",
+ "criterion": {
+  "range": [
+   0,
+   56.69904625
+  ]
+ },
+ "interfaces": [
+  "Chassis"
+ ],
+ "source": {
+  "file": "cad/preliminary-design/releases/1.0/limits.json",
+  "sha256": "5716c5edaf18a6fb3a6be8618db02f15d1330a2b382339c16c7bc8b1b7728a04"
+ }
+}

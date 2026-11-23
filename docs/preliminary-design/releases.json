@@ -1,23 +1,24 @@
 {
-  "current": "004",
+  "current": "1.0",
   "releases": [
-    "003",
-    "003-1",
-    "004"
+    "1.0"
   ],
   "designStatus": {
-    "003": "superseded",
-    "003-1": "superseded",
-    "004": "effective"
+    "1.0": "effective"
   },
   "revision": {
-    "004": {
-      "number": 4,
-      "date": "2026-11-22",
-      "commit": "de31f6a712c4f6cb15fcf2b831ee006026402c66"
+    "1.0": {
+      "number": 1,
+      "date": "2026-11-23",
+      "commit": "d2d7b6882ee9453c5234042bcfa5b08bdbb8e425"
     }
   },
   "accepted": {
-    "004": "2026-11-22"
+    "1.0": "2026-11-22"
+  },
+  "designs": {
+    "1": {
+      "name": "Guided cassette"
+    }
   }
 }

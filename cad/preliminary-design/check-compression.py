@@ -25,14 +25,13 @@ def main():
     from OCP.gp import gp_Trsf
 
     here = Path(__file__).resolve().parent
-    catalog = here.parents[1] / "docs/preliminary-design"
-    release = catalog / "releases" / "003"  # the release whose replay scene these measurements were taken on
+    release = here / "builder/inputs"  # the draft layout's replay scene, on which these measurements were taken
     commissioning = json.loads((here / "compression-limits-002.json").read_bytes())
     original = json.loads((here / "contact-depth-002.json").read_bytes())
-    data = (release / "scene.json.gz").read_bytes()
+    data = (release / "replay-scene.json.gz").read_bytes()
     step_hash = hashlib.sha256(args.layout_step.read_bytes()).hexdigest()
     assert hashlib.sha256(data).hexdigest() == original["sceneSha256"]
-    assert json.loads((release / "release.json").read_bytes())["geometry"] == step_hash
+    assert json.loads((release / "replay-scene-record.json").read_bytes())["geometry"] == step_hash
     cases = {c["key"]: c for c in json.loads(gzip.decompress(data))["concepts"]["guided"]["cases"]}
     shapes = {n.replace("\u00c2\u00b7", "\u00b7"): s for n, s in load_solids(args.layout_step)[0].items()}
     output = []

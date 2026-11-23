@@ -7,7 +7,7 @@ permissions:
   contents: read
 env:
   # The one plugin pin: a release tag or full commit of ehartye/agent-frc. Change it by pull request.
-  AGENT_FRC_REF: 6e2d14fc0fb9b2ec09c6992f97ddf00376f5dd78
+  AGENT_FRC_REF: 04409a9309110a4422cebd23c34e3b29e05c74ea
   # The interpreter and CAD kernel the layout check runs with. Keep them at the versions the project checks with locally.
   PYTHON_VERSION: '3.13'
   OCP_VERSION: 8.0.1.0.0
