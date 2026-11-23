@@ -1,0 +1,50 @@
+{
+  "climb-control": {
+    "modeledRobotMass": 71.456734783889,
+    "chargedMass": 0,
+    "disabledMinSideN": [
+      498.6488263366751,
+      512.6520140282759
+    ],
+    "captured": true,
+    "latched": true,
+    "weakBusMin": 10.996371103428654,
+    "maxCombinedCableN": 637.0005532120821,
+    "peakPitchLockNm": 216.95433147635896,
+    "disabledMinTireOrBumperM": 0.015029352627880577,
+    "maxDisabledFloorN": 0.0,
+    "neighborN": {}
+  },
+  "climb-gross-front": {
+    "modeledRobotMass": 71.76408882482156,
+    "chargedMass": 0.30735404093255714,
+    "disabledMinSideN": [
+      500.32424798885455,
+      516.0558650389571
+    ],
+    "captured": true,
+    "latched": true,
+    "weakBusMin": 10.996054547236005,
+    "maxCombinedCableN": 638.8432329493886,
+    "peakPitchLockNm": 256.0927279635835,
+    "disabledMinTireOrBumperM": 0.011514135850496432,
+    "maxDisabledFloorN": 0.0,
+    "neighborN": {}
+  },
+  "climb-gross-rear": {
+    "modeledRobotMass": 71.76408882482156,
+    "chargedMass": 0.30735404093255714,
+    "disabledMinSideN": [
+      482.1477458315018,
+      493.73905157070607
+    ],
+    "captured": true,
+    "latched": true,
+    "weakBusMin": 10.981432620966713,
+    "maxCombinedCableN": 726.7148975982643,
+    "peakPitchLockNm": 182.8061075203304,
+    "disabledMinTireOrBumperM": 0.08054149283788938,
+    "maxDisabledFloorN": 0.0,
+    "neighborN": {}
+  }
+}

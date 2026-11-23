@@ -169,6 +169,17 @@ cad/preliminary-design/releases/** -text
 docs/preliminary-design/fonts/*.woff2 binary
 docs/preliminary-design/fonts/OFL-*.txt -whitespace
 
+# Preserve archived engineering evidence exactly as produced.
+2024/preliminary-review-lan/** -text
+2024/private-readiness-20261120/iteration-002-native/poc24-guided-profile-a03/** -text
+plugin-qa/toe-actuator-20261121/** -text
+iterations/** -text
+engineering-iterations/** -text
+plugin-qa/toe-actuator-20261121/support/wrist-local.step filter=lfs diff=lfs merge=lfs -text
+engineering-iterations/engineering-iterations.bundle.part* filter=lfs diff=lfs merge=lfs -text
+
+2024/six-speaker-20261118/** -text
+2024/six-speaker-20261118/outer-aligned-collection-to-66/trace.jsonl filter=lfs diff=lfs merge=lfs -text
 # Withdrawn showcase files are archived byte for byte.
 docs/detailed-design/archive/** -text
 cad/history/** -text

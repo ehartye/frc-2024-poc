@@ -1,0 +1,134 @@
+{
+  "planHash": "ae70de30c37be782ac88fe37f2af827a0053aa09b48b2bd7caa9d0013afde2b1",
+  "placedStep": "fd49a9cdde14aa4d5acd1aac602580e456e19776512099517a9e51cba992510f",
+  "rows": [
+    {
+      "id": "middle",
+      "floorStartS": 1.8438702494536878,
+      "scoreRequestS": 10.165286645718979,
+      "endS": 12.69053664571894,
+      "seat": true,
+      "held": true,
+      "opening": {
+        "firstPossibleS": 0.7807499999999418,
+        "fullyThroughByS": 0.8459999999999346,
+        "minimumMarginM": 0.050441456838440715
+      },
+      "counterS": 12.69053664571894,
+      "release": 0.5919999999999626,
+      "busV": 8.379085394779676,
+      "files": {
+        "dev-middle-96.json": "295b1488fb0ec1d3268016680d53d186bc42731255f793ef1dff108da0ff7734",
+        "indexed-dev-middle-96.json": "3e89429ad839cb3418c125e13c29a94427666ae33af2691cbd07e8eea57c67d6"
+      }
+    },
+    {
+      "id": "outer",
+      "floorStartS": 17.972195786650865,
+      "scoreRequestS": 24.972195786650865,
+      "endS": 28.422195786650313,
+      "seat": true,
+      "held": true,
+      "opening": {
+        "firstPossibleS": 0.7819999999999416,
+        "fullyThroughByS": 0.8569999999999334,
+        "minimumMarginM": 0.07262263365001836
+      },
+      "counterS": 28.422195786650313,
+      "release": 0.5919999999999626,
+      "busV": 8.381652532175021,
+      "files": {
+        "dev-outer-96.json": "967712f87478b75079b7db054546afddeacefeb81c89b12a6dc7d52e7644c2ab",
+        "indexed-dev-outer-96.json": "603cebf5ce9e5f0d64d7437a57e76801fe7f8fed247cda052c2f8b78dc2ee632"
+      }
+    },
+    {
+      "id": "inner",
+      "floorStartS": 33.700286126278314,
+      "scoreRequestS": 40.700286126278314,
+      "endS": 45.13528612627799,
+      "seat": true,
+      "held": true,
+      "opening": {
+        "firstPossibleS": 0.778749999999942,
+        "fullyThroughByS": 0.8499999999999341,
+        "minimumMarginM": 0.05397245003574278
+      },
+      "counterS": 45.13528612627799,
+      "release": 0.5917499999999626,
+      "busV": 8.38062889871262,
+      "files": {
+        "dev-inner-96.json": "32c3b449b5c206a9399a5d30ebe3d29ace5b91fe0d503f727c693f5ca702ff2a",
+        "indexed-dev-inner-96.json": "27b988b4cab11c3be21237928539aa40777994daad21ffe86798a4d631fc9dfc"
+      }
+    },
+    {
+      "id": "center-high",
+      "floorStartS": 52.310620779608456,
+      "scoreRequestS": 59.812171812608945,
+      "endS": 64.76392181260925,
+      "seat": true,
+      "held": true,
+      "opening": {
+        "firstPossibleS": 0.7814999999999417,
+        "fullyThroughByS": 0.8482499999999343,
+        "minimumMarginM": 0.07466238645999936
+      },
+      "counterS": 64.76392181260925,
+      "release": 0.5917499999999626,
+      "busV": 8.380771790059914,
+      "files": {
+        "dev-center-high-96.json": "2fb0acd993d90f9d2c011caf29cc8357a13ba8008ee3e059cf18ac0250c21ee5",
+        "indexed-dev-center-high-96.json": "610aa0d621604326a5b0e5b96fee2aec095f4e4f17d438f52a71bdf1591d2698"
+      }
+    },
+    {
+      "id": "center-mid",
+      "floorStartS": 74.48122967213523,
+      "scoreRequestS": 84.54283536518209,
+      "endS": 88.97683536518176,
+      "seat": true,
+      "held": true,
+      "opening": {
+        "firstPossibleS": 0.7802499999999418,
+        "fullyThroughByS": 0.8557499999999335,
+        "minimumMarginM": 0.06113466552386055
+      },
+      "counterS": 88.97683536518176,
+      "release": 0.5919999999999626,
+      "busV": 8.379471432876716,
+      "files": {
+        "dev-center-mid-96.json": "5b5211927e8b8ad8df44671194b0936f329b87a1599b081ff6d0abf02c3cc702",
+        "indexed-dev-center-mid-96.json": "0fb01a6ccb788692a206e2bd831ac83a31371ef6b443fa4e4a9ae36f4560155c"
+      }
+    },
+    {
+      "id": "center-low",
+      "floorStartS": 100.14519805855745,
+      "scoreRequestS": 110.9938842941836,
+      "endS": 115.07263429418285,
+      "seat": true,
+      "held": true,
+      "opening": {
+        "firstPossibleS": 0.7807499999999418,
+        "fullyThroughByS": 0.8494999999999342,
+        "minimumMarginM": 0.0876539184720323
+      },
+      "counterS": 115.07263429418285,
+      "release": 0.5917499999999626,
+      "busV": 8.381030172840708,
+      "files": {
+        "dev-center-low-96.json": "69eb2787a07bc9a504ce40562080fc8794c124b0602a4e696654f4ed591b923e",
+        "indexed-dev-center-low-96.json": "78b452e34f0d7c730a9f3de7703f62dded0a188c2c2dae7c4b56a77a0ce030c2"
+      }
+    }
+  ],
+  "scoreCount": 6,
+  "timeS": 115.07263429418285,
+  "target": [
+    6,
+    120
+  ],
+  "frozenRosterAttempts": 0,
+  "calibration": "Development, nominal marks, 96 segments. Supply is finite. Holding and field scoring are simulated; route tracking and empty arm resetting are commanded. Positive NOTE custody through return and a score are separate evidence."
+}

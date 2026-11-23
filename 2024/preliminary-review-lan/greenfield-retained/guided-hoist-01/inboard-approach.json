@@ -1,0 +1,27 @@
+{
+  "field-climb": {
+    "knots": 289,
+    "lastTime": 13.986784714456173,
+    "largestGuardMm": 0.5532107876800361,
+    "candidates": {
+      "Hook guide channel \u00b7 left / working chain": [
+        13.466784714456173,
+        13.986784714456173,
+        39
+      ],
+      "Hook guide channel \u00b7 right / working chain": [
+        13.466784714456173,
+        13.986784714456173,
+        37
+      ]
+    },
+    "scope": "Enclosing interval boxes; interpolated rigid motion, fixed route peer and field envelopes. Chain-contact continuation uses the separate articulated-chain test."
+  },
+  "field-park": {
+    "knots": 258,
+    "lastTime": 24,
+    "largestGuardMm": 0.5532107876800361,
+    "candidates": {},
+    "scope": "Enclosing interval boxes; interpolated rigid motion, fixed route peer and field envelopes. Chain-contact continuation uses the separate articulated-chain test."
+  }
+}

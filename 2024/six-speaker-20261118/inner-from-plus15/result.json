@@ -1,0 +1,62 @@
+{
+  "schema": "second-wing-acquisition/1",
+  "firstReleaseTrace": "cb87fb62279dd1f48dbf65b63e4a5a791ecb3439986743382e0a8ba1ac1600c4",
+  "nativeSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "trace": "ff928acb5391e152323145d680600d1fd2030bd53b9a5d11605920bf06209d1e",
+  "initialRobotQ": [
+    1.254563945987761,
+    -1.2791970509335027,
+    -7.417691234079379,
+    0.4493945973324167,
+    1.048992941986151,
+    5798.339678801081,
+    5804.872499968988,
+    5821.665269493942,
+    5829.2293882227905
+  ],
+  "initialRobotV": [
+    -0.00020042191010410988,
+    0.0004303972502441109,
+    0.00010462089885932986,
+    -0.00019132765760209133,
+    0.004999120498981407,
+    299.2079163511538,
+    298.4575761298251,
+    297.85329222886145,
+    297.1560313365289
+  ],
+  "initialRotors": [
+    0.020855209551909983,
+    0.021955898674683397,
+    -131.14935684171365,
+    -131.50656867007496
+  ],
+  "initialBusV": 10.57019288307439,
+  "start": 35.44090000001469,
+  "end": 46.0394000000653,
+  "firstBilateral": 42.95940000005059,
+  "seated": 46.0394000000653,
+  "minimumBusV": 10.238790226952444,
+  "peakLocalBrakingW": 61.33245064166795,
+  "outcome": "SEATED",
+  "dt": 0.0005,
+  "grid": 512,
+  "traceStride": 1,
+  "firstMark": "middle",
+  "fieldYawDeg": 245.0,
+  "retreatM": 0.4,
+  "approachHeadingDeg": 0.0,
+  "captureStandoffM": 0.32,
+  "viaFieldXY": [],
+  "transitSpeedMps": 1.1,
+  "waitingNoteLocalXY": [
+    1.970152414071662,
+    0.6118667193481843
+  ],
+  "pieceId": "blue-wing-inner",
+  "collectedMarks": [
+    "middle",
+    "outer",
+    "inner"
+  ]
+}

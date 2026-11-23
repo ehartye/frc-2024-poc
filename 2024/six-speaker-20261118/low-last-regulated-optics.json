@@ -1,0 +1,21 @@
+{
+  "opening": {
+    "firstPossibleS": 118.54160000049056,
+    "fullyThroughByS": 118.57730000049175,
+    "minimumMarginM": 0.06274962830014591
+  },
+  "firstFullShadowsS": [
+    null,
+    null
+  ],
+  "firstSimultaneousFullShadowS": null,
+  "bestMarginPerPairM": [
+    null,
+    null
+  ],
+  "bestSimultaneousMarginM": null,
+  "countedFloorNotes": 0,
+  "fieldTrace": "e2da939c8cd180c311605cb3734418c0b650f608b7895695fcebc0ad6e11b1f7",
+  "sensorFile": "13d07c04856ee1ca927d8f17fa29570e6ead74cc1c917f1879b94b3b9d8b236f",
+  "sourceTrace": "c9559541ffd9f99b34ecd733d004acae0d31f13c1f1bca155c8c3fd03c995e32"
+}

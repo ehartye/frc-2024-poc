@@ -1,0 +1,36 @@
+{
+  "parent": "d686395c8a0404ccf636c60ed56aae17e387f0cd612f1da91b9a10d3f44880a4",
+  "whole": "d65c56f5b2ac5693712ba63579321ceebe649bc13d90f40f9a7fd4651821ff7c",
+  "solids": 232,
+  "cutMm3": 387.82175910384103,
+  "releasedKg": 0.003044400808965152,
+  "nominalInsertedMm": 10,
+  "poses": {
+    "-44": {
+      "oldCommonMm3": 316.6921744359362,
+      "newCommonMm3": 83.58215860315595,
+      "radialGapMm": 0.0
+    },
+    "-40": {
+      "oldCommonMm3": 316.6921744359362,
+      "newCommonMm3": 0.0,
+      "radialGapMm": 0.1749999999999343
+    },
+    "-36": {
+      "oldCommonMm3": 316.6921744359362,
+      "newCommonMm3": 83.5821586032298,
+      "radialGapMm": 0.0
+    },
+    "80": {
+      "oldCommonMm3": 0.0,
+      "newCommonMm3": 0.0,
+      "radialGapMm": 0.1749999999953759
+    }
+  },
+  "axis": [
+    190.67237061015595,
+    260.5,
+    522.6292443617709
+  ],
+  "scope": "Straight 370 mm disconnected battery sweep clears by 5 mm at the −40 degree service index. Manual slide restraint, pin strength, operator handling and disconnected harness still require proof. Matched angle shifts use the real 6.35 mm pin."
+}

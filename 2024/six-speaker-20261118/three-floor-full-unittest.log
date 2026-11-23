@@ -1,0 +1,2014 @@
+......E...E......E.......E................................E..F.E..E.....E....E.EE.................................................................................E.....E....................................EE..............EEEEE..........EE.........E...E...........E..............F..E................EEE..EEEEEFEEEEEEEEEEE.......EE.EEE...E....EEEEEEEEEE..................................EE.............E..........................E..E.......................E..................EE.........
+======================================================================
+ERROR: test_a2_sweep (unittest.loader._FailedTest.test_a2_sweep)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_a2_sweep
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "R:\tests\test_a2_sweep.py", line 3, in <module>
+    import a2_kinematics as k,build_a2_layout as cad
+  File "R:\cad\build_a2_layout.py", line 3, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+
+======================================================================
+ERROR: test_assembly_identifiers (unittest.loader._FailedTest.test_assembly_identifiers)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_assembly_identifiers
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "R:\tests\test_assembly_identifiers.py", line 3, in <module>
+    import build_connected_candidate as q
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+
+======================================================================
+ERROR: setUpClass (test_bilateral_derivative.Derivative)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_bilateral_derivative.py", line 8, in setUpClass
+    def setUpClass(cls):cls.plant,_=entry.setup();cls.final=json.loads((R/'sim/pressure/acquisition-entry-evidence.json').read_text())['final']
+                                    ~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_cartridge_interfaces (unittest.loader._FailedTest.test_cartridge_interfaces)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_cartridge_interfaces
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "R:\tests\test_cartridge_interfaces.py", line 3, in <module>
+    import build_connected_candidate as a
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+
+======================================================================
+ERROR: test_component_cartridge (unittest.loader._FailedTest.test_component_cartridge)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_component_cartridge
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "R:\tests\test_component_cartridge.py", line 3, in <module>
+    spec=importlib.util.spec_from_file_location('cartridge',R/'cad/components/build_cartridge.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
+                                                                                                                                           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "R:\cad\components\build_cartridge.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Vec,gp_Trsf,gp_Ax1,gp_Dir
+ModuleNotFoundError: No module named 'OCP'
+
+
+======================================================================
+ERROR: test_component_transmission (unittest.loader._FailedTest.test_component_transmission)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_component_transmission
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "R:\tests\test_component_transmission.py", line 3, in <module>
+    from check_transmission import center_distance,screw_stack,motor_originals
+  File "R:\cad\components\check_transmission.py", line 3, in <module>
+    from build_cartridge import *
+  File "R:\cad\components\build_cartridge.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Vec,gp_Trsf,gp_Ax1,gp_Dir
+ModuleNotFoundError: No module named 'OCP'
+
+
+======================================================================
+ERROR: test_connected_candidate (unittest.loader._FailedTest.test_connected_candidate)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_connected_candidate
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "R:\tests\test_connected_candidate.py", line 3, in <module>
+    import build_connected_candidate as q
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+
+======================================================================
+ERROR: setUpClass (test_constrained_cassettes.Bridge)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_constrained_cassettes.py", line 8, in setUpClass
+    def setUpClass(cls):cls.original,_=entry.setup()
+                                       ~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_current_complete_gate (test_corrected_transfer.CorrectedTransfer.test_current_complete_gate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_corrected_transfer.py", line 5, in test_current_complete_gate
+    t,n=q.validate_reports(H/'corrected-transfer-evidence.json',H/'corrected-native-wheel-evidence.json')
+        ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\component-launcher\run_six_drive.py", line 14, in validate_reports
+    import build_connected_candidate as c
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_missing_dependency_rejected (test_corrected_transfer.CorrectedTransfer.test_missing_dependency_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_corrected_transfer.py", line 12, in test_missing_dependency_rejected
+    with self.assertRaisesRegex(ValueError,'inventory'):q.validate_reports(p,H/'corrected-native-wheel-evidence.json')
+                                                        ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\component-launcher\run_six_drive.py", line 14, in validate_reports
+    import build_connected_candidate as c
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_native_identity_rejected (test_corrected_transfer.CorrectedTransfer.test_native_identity_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_corrected_transfer.py", line 22, in test_native_identity_rejected
+    with self.assertRaisesRegex(ValueError,'identity'):q.validate_reports(H/'corrected-transfer-evidence.json',p)
+                                                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\component-launcher\run_six_drive.py", line 14, in validate_reports
+    import build_connected_candidate as c
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_fresh_evidence_inventory_and_trace (test_electrical_midpoint.ElectricalPort.test_fresh_evidence_inventory_and_trace)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_electrical_midpoint.py", line 50, in test_fresh_evidence_inventory_and_trace
+    _,_,pins=runner.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_fresh_receipt_inventory_and_domain (test_fast_coupled.ExplicitFast.test_fresh_receipt_inventory_and_domain)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_fast_coupled.py", line 31, in test_fresh_receipt_inventory_and_domain
+    _,_,pins=runner.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_finite_slip (unittest.loader._FailedTest.test_finite_slip)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_finite_slip
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "R:\tests\test_finite_slip.py", line 2, in <module>
+    R=pathlib.Path(__file__).resolve().parents[1];H=R/'sim/retention';sys.path.insert(0,str(H));import finite_slip as f
+                                                                                                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\retention\finite_slip.py", line 5, in <module>
+    R=pathlib.Path(__file__).resolve().parents[2];sys.path.insert(0,str(R/'cad/assembly'));import extract_retention_patch as src
+                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\cad\assembly\extract_retention_patch.py", line 3, in <module>
+    import build_connected_candidate as a
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+
+======================================================================
+ERROR: test_floor_entry (unittest.loader._FailedTest.test_floor_entry)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_floor_entry
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "R:\tests\test_floor_entry.py", line 3, in <module>
+    import audit_floor_entry as q
+  File "R:\cad\assembly\audit_floor_entry.py", line 3, in <module>
+    import build_connected_candidate as a
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+
+======================================================================
+ERROR: test_changed_source_rejected (test_free_planar_receipt.PlanarReceiptTest.test_changed_source_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_free_planar_receipt.py", line 12, in test_changed_source_rejected
+    with self.assertRaises(ValueError):r.load(R/'sim/acquisition/free-obstacles.json')
+                                       ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_complete_current_sources_and_unchanged_offset_controls (test_free_planar_receipt.PlanarReceiptTest.test_complete_current_sources_and_unchanged_offset_controls)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_free_planar_receipt.py", line 7, in test_complete_current_sources_and_unchanged_offset_controls
+    o,f,p=r.load(R/'sim/acquisition/free-obstacles.json');self.assertEqual(len(o['obstacles']),744)
+          ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_evidence_inventory_and_binding (test_free_planar_receipt.PlanarReceiptTest.test_evidence_inventory_and_binding)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_free_planar_receipt.py", line 14, in test_evidence_inventory_and_binding
+    report=json.loads((R/'sim/acquisition/free-planar-evidence.json').read_text());self.assertEqual(report['inputs'],r.load(R/'sim/acquisition/free-obstacles.json')[2]);self.assertEqual(len(report['cases']),14)
+                                                                                                                     ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_gearbox_output_coupling (unittest.loader._FailedTest.test_gearbox_output_coupling)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_gearbox_output_coupling
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "R:\tests\test_gearbox_output_coupling.py", line 3, in <module>
+    import gearbox_output_coupling as q
+  File "R:\cad\components\gearbox_output_coupling.py", line 4, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+
+======================================================================
+ERROR: test_ground_entry_model (unittest.loader._FailedTest.test_ground_entry_model)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_ground_entry_model
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "R:\tests\test_ground_entry_model.py", line 2, in <module>
+    R=pathlib.Path(__file__).resolve().parents[1];H=R/'sim/acquisition';sys.path.insert(0,str(H));import ground_entry as g
+                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\ground_entry.py", line 4, in <module>
+    import audit_floor_entry as geometry
+  File "R:\cad\assembly\audit_floor_entry.py", line 3, in <module>
+    import build_connected_candidate as a
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+
+======================================================================
+ERROR: test_intake_components (unittest.loader._FailedTest.test_intake_components)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_intake_components
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "R:\tests\test_intake_components.py", line 3, in <module>
+    import intake_components as q
+  File "R:\cad\assembly\intake_components.py", line 3, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+
+======================================================================
+ERROR: test_intake_feed_filter (unittest.loader._FailedTest.test_intake_feed_filter)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_intake_feed_filter
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "R:\tests\test_intake_feed_filter.py", line 3, in <module>
+    from audit_intake_feed import possible_torus_box
+  File "R:\cad\assembly\audit_intake_feed.py", line 3, in <module>
+    import build_connected_candidate as connected
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+
+======================================================================
+ERROR: test_launcher_gap_candidate (unittest.loader._FailedTest.test_launcher_gap_candidate)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_launcher_gap_candidate
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "R:\tests\test_launcher_gap_candidate.py", line 3, in <module>
+    import check_launcher_gap_candidate as q
+  File "R:\cad\components\check_launcher_gap_candidate.py", line 4, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+
+======================================================================
+ERROR: test_lower_support_mounts (unittest.loader._FailedTest.test_lower_support_mounts)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_lower_support_mounts
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "R:\tests\test_lower_support_mounts.py", line 3, in <module>
+    import lower_support_mounts as m
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+
+======================================================================
+ERROR: test_obstacle_coverage (unittest.loader._FailedTest.test_obstacle_coverage)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_obstacle_coverage
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "R:\tests\test_obstacle_coverage.py", line 4, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+
+======================================================================
+ERROR: test_native_torus_material_at_exact_registered_points (test_patch_registration.Registration.test_native_torus_material_at_exact_registered_points)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_patch_registration.py", line 25, in test_native_torus_material_at_exact_registered_points
+    from OCP.BRepPrimAPI import BRepPrimAPI_MakeTorus
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_atomic_rejected_trial (test_pressure_braking_boundary.Boundary.test_atomic_rejected_trial)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_braking_boundary.py", line 15, in test_atomic_rejected_trial
+    with tempfile.TemporaryDirectory() as d,patch.object(r.c.factory.r.PressureAcquisition,'step',fail):o=r.run(pathlib.Path(d)/'out.json',duration=.002)
+                                                                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\pressure\run_braking_boundary.py", line 34, in run
+    p,controller,pins,bus,ancestry=load(scenario); initial=c.export(p)
+                                   ~~~~^^^^^^^^^^
+  File "R:\sim\pressure\run_braking_boundary.py", line 24, in load
+    controller,pins=replay(None,report)
+                    ~~~~~~^^^^^^^^^^^^^
+  File "R:\sim\pressure\run_braking_boundary.py", line 9, in replay
+    p,controller,pins,bus,ancestry=prev.load('nominal')
+                                   ~~~~~~~~~^^^^^^^^^^^
+  File "R:\sim\pressure\run_early_continuation.py", line 24, in load
+    initial,pins,_,_=prior.load()
+                     ~~~~~~~~~~^^
+  File "R:\sim\pressure\run_early_policy.py", line 10, in load
+    raw=(R/SOURCE).read_bytes();report=json.loads(raw);p,pins=c.factory.setup()
+                                                              ~~~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_exact_continuity (test_pressure_braking_boundary.Boundary.test_exact_continuity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_braking_boundary.py", line 7, in test_exact_continuity
+    p,ctl,pins,bus,a=r.load();self.assertAlmostEqual(p.t,.862,places=12);self.assertGreater(p.drive.state['vx'],.2)
+                     ~~~~~~^^
+  File "R:\sim\pressure\run_braking_boundary.py", line 24, in load
+    controller,pins=replay(None,report)
+                    ~~~~~~^^^^^^^^^^^^^
+  File "R:\sim\pressure\run_braking_boundary.py", line 9, in replay
+    p,controller,pins,bus,ancestry=prev.load('nominal')
+                                   ~~~~~~~~~^^^^^^^^^^^
+  File "R:\sim\pressure\run_early_continuation.py", line 24, in load
+    initial,pins,_,_=prior.load()
+                     ~~~~~~~~~~^^
+  File "R:\sim\pressure\run_early_policy.py", line 10, in load
+    raw=(R/SOURCE).read_bytes();report=json.loads(raw);p,pins=c.factory.setup()
+                                                              ~~~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_history_mutation (test_pressure_braking_boundary.Boundary.test_history_mutation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_braking_boundary.py", line 12, in test_history_mutation
+    with self.assertRaises(ValueError):r.replay(None,d)
+                                       ~~~~~~~~^^^^^^^^
+  File "R:\sim\pressure\run_braking_boundary.py", line 9, in replay
+    p,controller,pins,bus,ancestry=prev.load('nominal')
+                                   ~~~~~~~~~^^^^^^^^^^^
+  File "R:\sim\pressure\run_early_continuation.py", line 24, in load
+    initial,pins,_,_=prior.load()
+                     ~~~~~~~~~~^^
+  File "R:\sim\pressure\run_early_policy.py", line 10, in load
+    raw=(R/SOURCE).read_bytes();report=json.loads(raw);p,pins=c.factory.setup()
+                                                              ~~~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_contact_phase_split_byte_parity (test_pressure_checkpoint.CheckpointTest.test_contact_phase_split_byte_parity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_checkpoint.py", line 13, in test_contact_phase_split_byte_parity
+    p,origin=c.from_pressure_report(R/'sim/pressure/acquisition-entry-evidence.json')
+             ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\pressure\checkpoint.py", line 45, in from_pressure_report
+    path=__import__('pathlib').Path(path);raw=path.read_bytes();report=json.loads(raw);p,pins=factory.setup()
+                                                                                              ~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_corruption_and_purity (test_pressure_checkpoint.CheckpointTest.test_corruption_and_purity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_checkpoint.py", line 25, in test_corruption_and_purity
+    p,_=c.factory.setup();before=copy.deepcopy((p.drive.state,p.note,p.energy,p.t));r=c.export(p);self.assertEqual(before,(p.drive.state,p.note,p.energy,p.t));r['state']['note']['p'][0]+=.01
+        ~~~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_reject_identity_shapes_and_diagnostics (test_pressure_checkpoint.CheckpointTest.test_reject_identity_shapes_and_diagnostics)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_checkpoint.py", line 19, in test_reject_identity_shapes_and_diagnostics
+    p,_=c.factory.setup();r=c.export(p)
+        ~~~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_split_byte_parity (test_pressure_checkpoint.CheckpointTest.test_split_byte_parity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_checkpoint.py", line 7, in test_split_byte_parity
+    p,_=c.factory.setup()
+        ~~~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_exact_lineage_and_state (test_pressure_continuation_receipt.ContinuationReceiptTest.test_exact_lineage_and_state)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_continuation_receipt.py", line 6, in test_exact_lineage_and_state
+    e=json.loads((R/'sim/pressure/continuation-20ms-evidence.json').read_text());p,origin=r.c.from_pressure_report(R/'sim/pressure/acquisition-entry-evidence.json');start=r.c.export(p)
+                                                                                          ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\pressure\checkpoint.py", line 45, in from_pressure_report
+    path=__import__('pathlib').Path(path);raw=path.read_bytes();report=json.loads(raw);p,pins=factory.setup()
+                                                                                              ~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_longer_prefix_and_finite_momentum (test_pressure_continued_receipt.ContinuedReceipt.test_longer_prefix_and_finite_momentum)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_continued_receipt.py", line 19, in test_longer_prefix_and_finite_momentum
+    self.assertEqual(len(long['trace']),200);end=r.c.restore(long['endCheckpoint'])
+                                                 ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\pressure\checkpoint.py", line 35, in restore
+    p,pins=factory.setup()
+           ~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_prefix_exact_lineage_and_nonzero_momentum (test_pressure_continued_receipt.ContinuedReceipt.test_prefix_exact_lineage_and_nonzero_momentum)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_continued_receipt.py", line 6, in test_prefix_exact_lineage_and_nonzero_momentum
+    p,c,pins,bus,ancestry=r.load();report=json.loads((R/'sim/pressure/early-continued-20ms-evidence.json').read_text())
+                          ~~~~~~^^
+  File "R:\sim\pressure\run_early_continuation.py", line 24, in load
+    initial,pins,_,_=prior.load()
+                     ~~~~~~~~~~^^
+  File "R:\sim\pressure\run_early_policy.py", line 10, in load
+    raw=(R/SOURCE).read_bytes();report=json.loads(raw);p,pins=c.factory.setup()
+                                                              ~~~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_fresh_reconstruction_and_all_rows (test_pressure_corrected_lineage.CorrectedLineage.test_fresh_reconstruction_and_all_rows)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_corrected_lineage.py", line 6, in test_fresh_reconstruction_and_all_rows
+    self.assertEqual(v.verify(),json.loads((R/'sim/pressure/corrected-lineage.json').read_text()))
+                     ~~~~~~~~^^
+  File "R:\sim\pressure\verify_corrected_lineage.py", line 9, in verify
+    new=json.loads((R/NEW).read_text());old=[json.loads((R/f).read_text()) for f in OLD];p,pins=c.factory.setup()
+                                                                                                ~~~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_atomic_unknown_and_rejected_query (test_pressure_early_continuation.ContinuePolicy.test_atomic_unknown_and_rejected_query)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_early_continuation.py", line 24, in test_atomic_unknown_and_rejected_query
+    with patch.object(r.c.factory.r.PressureAcquisition,'step',fail):out=r.run(pathlib.Path(d)/'r.json',duration=.002)
+                                                                         ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\pressure\run_early_continuation.py", line 40, in run
+    p,controller,pins,bus,ancestry=load(scenario); initial=c.export(p)
+                                   ~~~~^^^^^^^^^^
+  File "R:\sim\pressure\run_early_continuation.py", line 24, in load
+    initial,pins,_,_=prior.load()
+                     ~~~~~~~~~~^^
+  File "R:\sim\pressure\run_early_policy.py", line 10, in load
+    raw=(R/SOURCE).read_bytes();report=json.loads(raw);p,pins=c.factory.setup()
+                                                              ~~~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_command_history_mutation_rejected (test_pressure_early_continuation.ContinuePolicy.test_command_history_mutation_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_early_continuation.py", line 15, in test_command_history_mutation_rejected
+    report=json.loads((R/'sim/pressure/early-policy-evidence/nominal-1ms.json').read_text());p,_,_,_,_=r.load()
+                                                                                                       ~~~~~~^^
+  File "R:\sim\pressure\run_early_continuation.py", line 24, in load
+    initial,pins,_,_=prior.load()
+                     ~~~~~~~~~~^^
+  File "R:\sim\pressure\run_early_policy.py", line 10, in load
+    raw=(R/SOURCE).read_bytes();report=json.loads(raw);p,pins=c.factory.setup()
+                                                              ~~~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_exact_endpoint_and_fault_latch (test_pressure_early_continuation.ContinuePolicy.test_exact_endpoint_and_fault_latch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_early_continuation.py", line 8, in test_exact_endpoint_and_fault_latch
+    p,controller,pins,bus,_=r.load(name)
+                            ~~~~~~^^^^^^
+  File "R:\sim\pressure\run_early_continuation.py", line 24, in load
+    initial,pins,_,_=prior.load()
+                     ~~~~~~~~~~^^
+  File "R:\sim\pressure\run_early_policy.py", line 10, in load
+    raw=(R/SOURCE).read_bytes();report=json.loads(raw);p,pins=c.factory.setup()
+                                                              ~~~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_atomic_rejection_is_saved (test_pressure_early_policy.EarlyPolicy.test_atomic_rejection_is_saved)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_early_policy.py", line 11, in test_atomic_rejection_is_saved
+    with patch.object(r.c.factory.r.PressureAcquisition,'step',side_effect=r.DomainExit('test-domain')):r.run(output)
+                                                                                                        ~~~~~^^^^^^^^
+  File "R:\sim\pressure\run_early_policy.py", line 23, in run
+    p,pins,bus,ancestry=load();initial=c.export(p);controller=SpeedApproach(p.drive.c,goal=.185,pinch_enabled=scenario!='no-pinch');rows=[];events=[];reason=None;status='HORIZON';last=None;rejected=None;original=p.geometry;start=time.perf_counter();inherited=initial['diagnostics']['residualJ']
+                        ~~~~^^
+  File "R:\sim\pressure\run_early_policy.py", line 10, in load
+    raw=(R/SOURCE).read_bytes();report=json.loads(raw);p,pins=c.factory.setup()
+                                                              ~~~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_source_row_and_no_reset (test_pressure_early_policy.EarlyPolicy.test_source_row_and_no_reset)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_early_policy.py", line 7, in test_source_row_and_no_reset
+    p,pins,bus,ancestry=r.load();self.assertAlmostEqual(p.t,.562,places=12);self.assertEqual(ancestry['rowIndex'],561);self.assertGreater(ancestry['distanceToDomainLowerBoundM'],.16);self.assertGreater(p.drive.state['vx'],.8);self.assertGreater(p.note['w'][0],70);self.assertGreater(p.energy['sourceWork'],0);before=r.c.export(p);controller=r.SpeedApproach(p.drive.c,goal=.185);cmd=controller.update(p.t,r.observe(p.t,p.drive.state,p.note,bus));self.assertEqual(before,r.c.export(p));self.assertEqual(cmd['modes'],['brake','brake']);self.assertTrue(all(r.c.factory.r.sha(R/f)==h for f,h in pins.items()))
+                        ~~~~~~^^
+  File "R:\sim\pressure\run_early_policy.py", line 10, in load
+    raw=(R/SOURCE).read_bytes();report=json.loads(raw);p,pins=c.factory.setup()
+                                                              ~~~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_source_bound_same_time_reconstruction (test_pressure_early_receipts.EarlyReceipts.test_source_bound_same_time_reconstruction)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_early_receipts.py", line 6, in test_source_bound_same_time_reconstruction
+    e=s.summarize();self.assertEqual(e,json.loads((R/'sim/pressure/early-policy-evidence/summary.json').read_text()));self.assertTrue(e['controlsPhysicalTraceEquality']);self.assertLess(abs(e['halfMinusCoarse']['noteX']),2e-7);self.assertLess(abs(e['halfMinusCoarse']['chassisX']),3e-7);self.assertGreater(e['rows'][0]['relativeX'],.26);self.assertGreater(e['rows'][0]['chassisVx'],.5);self.assertLess(abs(e['rows'][1]['newPhaseResidualJ']),abs(e['rows'][0]['newPhaseResidualJ'])/4)
+  File "R:\sim\pressure\summarize_early_policy.py", line 8, in summarize
+    p,pins,_,_=r.load();start=r.c.export(p);reports=[];rows=[]
+               ~~~~~~^^
+  File "R:\sim\pressure\run_early_policy.py", line 10, in load
+    raw=(R/SOURCE).read_bytes();report=json.loads(raw);p,pins=c.factory.setup()
+                                                              ~~~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_fresh_endpoint_replay (test_pressure_entry_comparison.ComparisonTest.test_fresh_endpoint_replay)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_entry_comparison.py", line 6, in test_fresh_endpoint_replay
+    a=c.compare();b=json.loads((R/'sim/pressure/entry-comparison.json').read_text());self.assertEqual(a,b)
+  File "R:\sim\pressure\compare_entry.py", line 16, in compare
+    p,pins=setup();before=copy.deepcopy((p.drive.state,p.note,p.energy,p.t));rows=[]
+           ~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_exact_source_inventory (test_pressure_entry_receipt.EntryReceiptTest.test_exact_source_inventory)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_entry_receipt.py", line 7, in test_exact_source_inventory
+    r=json.loads((R/'sim/pressure/acquisition-entry-evidence.json').read_text());_,_,pins=runner.run_free_planar.load(R/'sim/acquisition/free-obstacles.json');pins.update({f:sha(R/f) for f in runner.FILES+runner.drive_source.FILES});self.assertEqual(r['inputs'],pins);self.assertFalse(r['acceptance']);self.assertEqual(r['pressureConfig']['resolution'],[1024,1024])
+                                                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_exact_state_energy_and_next_command (test_pressure_fresh_local_refinement.Local.test_exact_state_energy_and_next_command)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_fresh_local_refinement.py", line 6, in test_exact_state_energy_and_next_command
+    p,c,pins,bus,a=m.load();r=json.loads((R/m.SOURCE).read_text());row=r['trace'][1399]
+                   ~~~~~~^^
+  File "R:\sim\pressure\run_fresh_local_refinement.py", line 11, in load
+    p,controller,pins,bus,ancestry=fresh.load();raw=(R/SOURCE).read_bytes();r=json.loads(raw)
+                                   ~~~~~~~~~~^^
+  File "R:\sim\pressure\run_fresh_rest_controller.py", line 10, in load
+    p,pins=c.factory.setup();obs=json.loads((R/'sim/acquisition/free-obstacles.json').read_text())
+           ~~~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_first_original_step_matches (test_pressure_fresh_local_refinement.Local.test_first_original_step_matches)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_fresh_local_refinement.py", line 10, in test_first_original_step_matches
+    p,c,pins,bus,a=m.load();r=json.loads((R/m.SOURCE).read_text());cmd=c.update(p.t,m.prior.observe(p.t,p.drive.state,p.note,bus));row=p.step(.001,cmd['driveDemands'],cmd['pinchDemands'],[p.drive.c['massKg']*9.80665/2]*2,modes=cmd['modes'])
+                   ~~~~~~^^
+  File "R:\sim\pressure\run_fresh_local_refinement.py", line 11, in load
+    p,controller,pins,bus,ancestry=fresh.load();raw=(R/SOURCE).read_bytes();r=json.loads(raw)
+                                   ~~~~~~~~~~^^
+  File "R:\sim\pressure\run_fresh_rest_controller.py", line 10, in load
+    p,pins=c.factory.setup();obs=json.loads((R/'sim/acquisition/free-obstacles.json').read_text())
+           ~~~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_two_ms_fresh_smoke (test_pressure_fresh_rest_controller.Fresh.test_two_ms_fresh_smoke)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_fresh_rest_controller.py", line 12, in test_two_ms_fresh_smoke
+    r=m.run(pathlib.Path(d)/'out.json',duration=.002)
+  File "R:\sim\pressure\run_fresh_rest_controller.py", line 25, in run
+    p,controller,pins,bus,ancestry=load(scenario); initial=export_domain(p)
+                                   ~~~~^^^^^^^^^^
+  File "R:\sim\pressure\run_fresh_rest_controller.py", line 10, in load
+    p,pins=c.factory.setup();obs=json.loads((R/'sim/acquisition/free-obstacles.json').read_text())
+           ~~~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_zero_energy_and_unchanged_control (test_pressure_fresh_rest_controller.Fresh.test_zero_energy_and_unchanged_control)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_fresh_rest_controller.py", line 6, in test_zero_energy_and_unchanged_control
+    p,c,pins,bus,a=m.load();self.assertEqual(p.t,0);self.assertEqual(p.note['v'],[0.,0.]);self.assertEqual(p.note['w'],[0.,0.]);self.assertEqual(p.drive.kinetic(),0);self.assertFalse(any(p.energy.values()));self.assertEqual(c.goal,.185);self.assertEqual(c.max_speed,.25);self.assertEqual(a['nextControllerTimeS'],0.)
+                   ~~~~~~^^
+  File "R:\sim\pressure\run_fresh_rest_controller.py", line 10, in load
+    p,pins=c.factory.setup();obs=json.loads((R/'sim/acquisition/free-obstacles.json').read_text())
+           ~~~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_nested_directory_and_exact_physical_output (test_pressure_fresh_safe.Entry.test_nested_directory_and_exact_physical_output)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_fresh_safe.py", line 7, in test_nested_directory_and_exact_physical_output
+    root=pathlib.Path(d);a=wrapper.frozen.run(root/'reference.json',duration=.002);b=wrapper.run(root/'new'/'nested'/'candidate.json',duration=.002)
+                           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\pressure\run_fresh_rest_controller.py", line 25, in run
+    p,controller,pins,bus,ancestry=load(scenario); initial=export_domain(p)
+                                   ~~~~^^^^^^^^^^
+  File "R:\sim\pressure\run_fresh_rest_controller.py", line 10, in load
+    p,pins=c.factory.setup();obs=json.loads((R/'sim/acquisition/free-obstacles.json').read_text())
+           ~~~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_state_and_domain_identity (test_pressure_inward_continuation.Transition.test_state_and_domain_identity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_inward_continuation.py", line 6, in test_state_and_domain_identity
+    p,c,pins,bus,a=m.load();old=json.loads((R/m.SOURCE).read_text())['endCheckpoint'];new=m.export_domain(p)
+                   ~~~~~~^^
+  File "R:\sim\pressure\run_inward_continuation.py", line 18, in load
+    p,controller,pins,bus,ancestry=base.load()
+                                   ~~~~~~~~~^^
+  File "R:\sim\pressure\run_braking_boundary.py", line 24, in load
+    controller,pins=replay(None,report)
+                    ~~~~~~^^^^^^^^^^^^^
+  File "R:\sim\pressure\run_braking_boundary.py", line 9, in replay
+    p,controller,pins,bus,ancestry=prev.load('nominal')
+                                   ~~~~~~~~~^^^^^^^^^^^
+  File "R:\sim\pressure\run_early_continuation.py", line 24, in load
+    initial,pins,_,_=prior.load()
+                     ~~~~~~~~~~^^
+  File "R:\sim\pressure\run_early_policy.py", line 10, in load
+    raw=(R/SOURCE).read_bytes();report=json.loads(raw);p,pins=c.factory.setup()
+                                                              ~~~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_reject_identity_and_shapes (test_pressure_inward_extended.Restore.test_reject_identity_and_shapes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_inward_extended.py", line 13, in test_reject_identity_and_shapes
+    with self.assertRaises(ValueError):m.restore_domain(q)
+                                       ~~~~~~~~~~~~~~~~^^^
+  File "R:\sim\pressure\run_inward_extended.py", line 9, in restore_domain
+    p,_,_,_,_=prev.load()
+              ~~~~~~~~~^^
+  File "R:\sim\pressure\run_inward_continuation.py", line 18, in load
+    p,controller,pins,bus,ancestry=base.load()
+                                   ~~~~~~~~~^^
+  File "R:\sim\pressure\run_braking_boundary.py", line 24, in load
+    controller,pins=replay(None,report)
+                    ~~~~~~^^^^^^^^^^^^^
+  File "R:\sim\pressure\run_braking_boundary.py", line 9, in replay
+    p,controller,pins,bus,ancestry=prev.load('nominal')
+                                   ~~~~~~~~~^^^^^^^^^^^
+  File "R:\sim\pressure\run_early_continuation.py", line 24, in load
+    initial,pins,_,_=prior.load()
+                     ~~~~~~~~~~^^
+  File "R:\sim\pressure\run_early_policy.py", line 10, in load
+    raw=(R/SOURCE).read_bytes();report=json.loads(raw);p,pins=c.factory.setup()
+                                                              ~~~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_restore_and_clock (test_pressure_inward_extended.Restore.test_restore_and_clock)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_inward_extended.py", line 6, in test_restore_and_clock
+    p,c,pins,bus,a=m.load();r=json.loads((R/m.SOURCE).read_text())
+                   ~~~~~~^^
+  File "R:\sim\pressure\run_inward_extended.py", line 21, in load
+    p,controller,pins,bus,ancestry=prev.load();raw=(R/SOURCE).read_bytes();report=json.loads(raw)
+                                   ~~~~~~~~~^^
+  File "R:\sim\pressure\run_inward_continuation.py", line 18, in load
+    p,controller,pins,bus,ancestry=base.load()
+                                   ~~~~~~~~~^^
+  File "R:\sim\pressure\run_braking_boundary.py", line 24, in load
+    controller,pins=replay(None,report)
+                    ~~~~~~^^^^^^^^^^^^^
+  File "R:\sim\pressure\run_braking_boundary.py", line 9, in replay
+    p,controller,pins,bus,ancestry=prev.load('nominal')
+                                   ~~~~~~~~~^^^^^^^^^^^
+  File "R:\sim\pressure\run_early_continuation.py", line 24, in load
+    initial,pins,_,_=prior.load()
+                     ~~~~~~~~~~^^
+  File "R:\sim\pressure\run_early_policy.py", line 10, in load
+    raw=(R/SOURCE).read_bytes();report=json.loads(raw);p,pins=c.factory.setup()
+                                                              ~~~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_restored_state_and_clock (test_pressure_inward_rearwrap.Restore.test_restored_state_and_clock)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_inward_rearwrap.py", line 6, in test_restored_state_and_clock
+    p,c,pins,bus,a=m.load();r=json.loads((R/m.SOURCE).read_text())
+                   ~~~~~~^^
+  File "R:\sim\pressure\run_inward_rearwrap.py", line 12, in load
+    p,controller,pins,bus,ancestry=prev.load();raw=(R/SOURCE).read_bytes();report=json.loads(raw)
+                                   ~~~~~~~~~^^
+  File "R:\sim\pressure\run_inward_extended.py", line 21, in load
+    p,controller,pins,bus,ancestry=prev.load();raw=(R/SOURCE).read_bytes();report=json.loads(raw)
+                                   ~~~~~~~~~^^
+  File "R:\sim\pressure\run_inward_continuation.py", line 18, in load
+    p,controller,pins,bus,ancestry=base.load()
+                                   ~~~~~~~~~^^
+  File "R:\sim\pressure\run_braking_boundary.py", line 24, in load
+    controller,pins=replay(None,report)
+                    ~~~~~~^^^^^^^^^^^^^
+  File "R:\sim\pressure\run_braking_boundary.py", line 9, in replay
+    p,controller,pins,bus,ancestry=prev.load('nominal')
+                                   ~~~~~~~~~^^^^^^^^^^^
+  File "R:\sim\pressure\run_early_continuation.py", line 24, in load
+    initial,pins,_,_=prior.load()
+                     ~~~~~~~~~~^^
+  File "R:\sim\pressure\run_early_policy.py", line 10, in load
+    raw=(R/SOURCE).read_bytes();report=json.loads(raw);p,pins=c.factory.setup()
+                                                              ~~~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_restored_state_and_clock (test_pressure_inward_tail.Restore.test_restored_state_and_clock)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_inward_tail.py", line 6, in test_restored_state_and_clock
+    p,c,pins,bus,a=m.load();r=json.loads((R/m.SOURCE).read_text())
+                   ~~~~~~^^
+  File "R:\sim\pressure\run_inward_tail.py", line 12, in load
+    p,controller,pins,bus,ancestry=prev.load();raw=(R/SOURCE).read_bytes();report=json.loads(raw)
+                                   ~~~~~~~~~^^
+  File "R:\sim\pressure\run_inward_rearwrap.py", line 12, in load
+    p,controller,pins,bus,ancestry=prev.load();raw=(R/SOURCE).read_bytes();report=json.loads(raw)
+                                   ~~~~~~~~~^^
+  File "R:\sim\pressure\run_inward_extended.py", line 21, in load
+    p,controller,pins,bus,ancestry=prev.load();raw=(R/SOURCE).read_bytes();report=json.loads(raw)
+                                   ~~~~~~~~~^^
+  File "R:\sim\pressure\run_inward_continuation.py", line 18, in load
+    p,controller,pins,bus,ancestry=base.load()
+                                   ~~~~~~~~~^^
+  File "R:\sim\pressure\run_braking_boundary.py", line 24, in load
+    controller,pins=replay(None,report)
+                    ~~~~~~^^^^^^^^^^^^^
+  File "R:\sim\pressure\run_braking_boundary.py", line 9, in replay
+    p,controller,pins,bus,ancestry=prev.load('nominal')
+                                   ~~~~~~~~~^^^^^^^^^^^
+  File "R:\sim\pressure\run_early_continuation.py", line 24, in load
+    initial,pins,_,_=prior.load()
+                     ~~~~~~~~~~^^
+  File "R:\sim\pressure\run_early_policy.py", line 10, in load
+    raw=(R/SOURCE).read_bytes();report=json.loads(raw);p,pins=c.factory.setup()
+                                                              ~~~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_nominal_rejected_query (test_pressure_policy_boundary.BoundaryTest.test_nominal_rejected_query)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_policy_boundary.py", line 6, in test_nominal_rejected_query
+    p=R/'sim/pressure/policy-evidence/nominal.json';r=b.reconstruct(p);self.assertTrue(r['atomicStateUnchanged']);self.assertEqual(r['reason'],'OUTSIDE_BOUNDED_PLANAR_EXPERIMENT');self.assertLess(r['rejectedGeometryQuery']['relativeRobotXY'][0],.178);self.assertEqual(r['rejectedGeometryQuery']['status'],r['reason'])
+                                                      ~~~~~~~~~~~~~^^^
+  File "R:\sim\pressure\reconstruct_policy_boundary.py", line 7, in reconstruct
+    raw=path.read_bytes();report=json.loads(raw);base,pins=r.load()
+                                                           ~~~~~~^^
+  File "R:\sim\pressure\run_policy_transition.py", line 11, in load
+    report=json.loads((R/SOURCE).read_text());p,origin=c.from_pressure_report(R/'sim/pressure/acquisition-entry-evidence.json');start=c.export(p)
+                                                       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\pressure\checkpoint.py", line 45, in from_pressure_report
+    path=__import__('pathlib').Path(path);raw=path.read_bytes();report=json.loads(raw);p,pins=factory.setup()
+                                                                                              ~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_exact_inventory_and_identical_physics_controls (test_pressure_policy_receipts.PolicyReceipts.test_exact_inventory_and_identical_physics_controls)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_policy_receipts.py", line 6, in test_exact_inventory_and_identical_physics_controls
+    p,pins=r.load();base=R/'sim/pressure/policy-evidence';reports=[json.loads((base/(s+'.json')).read_text()) for s in ['nominal','stale','no-pinch']]
+           ~~~~~~^^
+  File "R:\sim\pressure\run_policy_transition.py", line 11, in load
+    report=json.loads((R/SOURCE).read_text());p,origin=c.from_pressure_report(R/'sim/pressure/acquisition-entry-evidence.json');start=c.export(p)
+                                                       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\pressure\checkpoint.py", line 45, in from_pressure_report
+    path=__import__('pathlib').Path(path);raw=path.read_bytes();report=json.loads(raw);p,pins=factory.setup()
+                                                                                              ~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_domain_exit_records_atomic_prefix (test_pressure_policy_transition.PolicyTest.test_domain_exit_records_atomic_prefix)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_policy_transition.py", line 18, in test_domain_exit_records_atomic_prefix
+    with patch.object(r.c.factory.r.PressureAcquisition,'step',side_effect=r.DomainExit('synthetic-boundary')):r.run(out)
+                                                                                                               ~~~~~^^^^^
+  File "R:\sim\pressure\run_policy_transition.py", line 32, in run
+    p,pins=load();initial=c.export(p);controller=engage(p,scenario);rows=[];events=[];status='HORIZON';reason=None;bus=12.;started=time.perf_counter();inherited=initial['diagnostics']['residualJ']
+           ~~~~^^
+  File "R:\sim\pressure\run_policy_transition.py", line 11, in load
+    report=json.loads((R/SOURCE).read_text());p,origin=c.from_pressure_report(R/'sim/pressure/acquisition-entry-evidence.json');start=c.export(p)
+                                                       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\pressure\checkpoint.py", line 45, in from_pressure_report
+    path=__import__('pathlib').Path(path);raw=path.read_bytes();report=json.loads(raw);p,pins=factory.setup()
+                                                                                              ~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_engagement_preserves_physical_state (test_pressure_policy_transition.PolicyTest.test_engagement_preserves_physical_state)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_policy_transition.py", line 7, in test_engagement_preserves_physical_state
+    p,pins=r.load();before=r.c.export(p);ctl=r.engage(p,'nominal');cmd,obs=r.command(ctl,p,11.96,'nominal');self.assertEqual(before,r.c.export(p));self.assertEqual(cmd['modes'],['brake','brake']);self.assertEqual(cmd['driveDemands'],[0.,0.]);self.assertGreater(p.drive.state['vx'],.8);self.assertGreater(p.note['w'][0],70);self.assertTrue(all(r.c.factory.r.sha(R/f)==h for f,h in pins.items()))
+           ~~~~~~^^
+  File "R:\sim\pressure\run_policy_transition.py", line 11, in load
+    report=json.loads((R/SOURCE).read_text());p,origin=c.from_pressure_report(R/'sim/pressure/acquisition-entry-evidence.json');start=c.export(p)
+                                                       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\pressure\checkpoint.py", line 45, in from_pressure_report
+    path=__import__('pathlib').Path(path);raw=path.read_bytes();report=json.loads(raw);p,pins=factory.setup()
+                                                                                              ~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_fault_and_no_pinch_are_commands_not_resets (test_pressure_policy_transition.PolicyTest.test_fault_and_no_pinch_are_commands_not_resets)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_policy_transition.py", line 10, in test_fault_and_no_pinch_are_commands_not_resets
+    p,_=r.load();before=r.c.export(p);ctl=r.engage(p,scenario);cmd,_=r.command(ctl,p,12.,scenario);self.assertEqual(before,r.c.export(p));self.assertEqual(cmd['pinchDemands'],[0.,0.])
+        ~~~~~~^^
+  File "R:\sim\pressure\run_policy_transition.py", line 11, in load
+    report=json.loads((R/SOURCE).read_text());p,origin=c.from_pressure_report(R/'sim/pressure/acquisition-entry-evidence.json');start=c.export(p)
+                                                       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\pressure\checkpoint.py", line 45, in from_pressure_report
+    path=__import__('pathlib').Path(path);raw=path.read_bytes();report=json.loads(raw);p,pins=factory.setup()
+                                                                                              ~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_first_finite_brake_step (test_pressure_policy_transition.PolicyTest.test_first_finite_brake_step)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_policy_transition.py", line 13, in test_first_finite_brake_step
+    p,_=r.load();ctl=r.engage(p,'nominal');cmd,_=r.command(ctl,p,12.,'nominal');v=p.drive.state['vx'];t=p.t;heat=p.energy['driveWinding']+p.energy['driveBrake']
+        ~~~~~~^^
+  File "R:\sim\pressure\run_policy_transition.py", line 11, in load
+    report=json.loads((R/SOURCE).read_text());p,origin=c.from_pressure_report(R/'sim/pressure/acquisition-entry-evidence.json');start=c.export(p)
+                                                       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\pressure\checkpoint.py", line 45, in from_pressure_report
+    path=__import__('pathlib').Path(path);raw=path.read_bytes();report=json.loads(raw);p,pins=factory.setup()
+                                                                                              ~~~~~~~~~~~~~^^
+  File "R:\sim\pressure\compare_entry.py", line 7, in setup
+    obs,_,pins=r.run_free_planar.load(R/'sim/acquisition/free-obstacles.json')
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\acquisition\run_free_planar.py", line 9, in load
+    import build_connected_candidate as cad
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_retention_patch (unittest.loader._FailedTest.test_retention_patch)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_retention_patch
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "R:\tests\test_retention_patch.py", line 3, in <module>
+    import extract_retention_patch as q
+  File "R:\cad\assembly\extract_retention_patch.py", line 3, in <module>
+    import build_connected_candidate as a
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+
+======================================================================
+ERROR: test_retention_refinement (unittest.loader._FailedTest.test_retention_refinement)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_retention_refinement
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "R:\tests\test_retention_refinement.py", line 3, in <module>
+    from refine_slip import compare
+  File "R:\sim\retention\refine_slip.py", line 4, in <module>
+    import finite_slip as model
+  File "R:\sim\retention\finite_slip.py", line 5, in <module>
+    R=pathlib.Path(__file__).resolve().parents[2];sys.path.insert(0,str(R/'cad/assembly'));import extract_retention_patch as src
+                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\cad\assembly\extract_retention_patch.py", line 3, in <module>
+    import build_connected_candidate as a
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+
+======================================================================
+ERROR: test_servo_opening_relocation (unittest.loader._FailedTest.test_servo_opening_relocation)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_servo_opening_relocation
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "R:\tests\test_servo_opening_relocation.py", line 3, in <module>
+    import servo_opening_relocation as m
+  File "R:\cad\assembly\servo_opening_relocation.py", line 3, in <module>
+    import servo_opening_mount as old
+  File "R:\cad\assembly\servo_opening_mount.py", line 3, in <module>
+    import spring_cassette_candidate as s
+  File "R:\cad\assembly\spring_cassette_candidate.py", line 3, in <module>
+    import build_connected_candidate as a
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+
+======================================================================
+ERROR: test_baseline_native_contacts_rejected (test_six_drive_runner.RunnerTest.test_baseline_native_contacts_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_six_drive_runner.py", line 5, in test_baseline_native_contacts_rejected
+    with self.assertRaisesRegex(ValueError,'Stale'):q.validate_reports(H/'connected-transfer-evidence.json',H/'connected-native-wheel-evidence.json')
+                                                    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\sim\component-launcher\run_six_drive.py", line 14, in validate_reports
+    import build_connected_candidate as c
+  File "R:\cad\assembly\build_connected_candidate.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+======================================================================
+ERROR: test_slide_pad_attachments (unittest.loader._FailedTest.test_slide_pad_attachments)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_slide_pad_attachments
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "R:\tests\test_slide_pad_attachments.py", line 3, in <module>
+    import slide_pad_attachments as q
+  File "R:\cad\assembly\slide_pad_attachments.py", line 3, in <module>
+    import upper_carriage_connections as upper
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+
+======================================================================
+ERROR: test_transfer_material (unittest.loader._FailedTest.test_transfer_material)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_transfer_material
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "R:\tests\test_transfer_material.py", line 4, in <module>
+    import extract_geometry as e
+  File "R:\sim\component-launcher\extract_geometry.py", line 5, in <module>
+    import build_intake_candidate as a
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+
+======================================================================
+ERROR: test_upper_carriage_connections (unittest.loader._FailedTest.test_upper_carriage_connections)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_upper_carriage_connections
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "R:\tests\test_upper_carriage_connections.py", line 3, in <module>
+    import upper_carriage_connections as q
+  File "R:\cad\assembly\upper_carriage_connections.py", line 3, in <module>
+    import lower_support_mounts as lower
+  File "R:\cad\assembly\lower_support_mounts.py", line 3, in <module>
+    import build_intake_candidate as assembly
+  File "R:\cad\assembly\build_intake_candidate.py", line 5, in <module>
+    import build_robot as robot
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+
+======================================================================
+ERROR: test_whole_assembly (unittest.loader._FailedTest.test_whole_assembly)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_whole_assembly
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "%USERPROFILE%\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "R:\tests\test_whole_assembly.py", line 4, in <module>
+    import build_robot as b
+  File "R:\cad\assembly\build_robot.py", line 5, in <module>
+    import a2_primitives as h
+  File "R:\cad\a2_primitives.py", line 3, in <module>
+    from OCP.gp import gp_Pnt,gp_Dir,gp_Ax1,gp_Ax2,gp_Trsf,gp_Vec
+ModuleNotFoundError: No module named 'OCP'
+
+
+======================================================================
+FAIL: test_input_pins (test_component_context.ContextTests.test_input_pins)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_component_context.py", line 6, in test_input_pins
+    for key,path in [('contractSha256','cad/cycle-contract-A2.json'),('transmissionSha256','cad/components/a2-transmission.json')]:self.assertEqual(self.r[key],hashlib.sha256((R/path).read_bytes()).hexdigest())
+                                                                                                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '0e08bf88e488539ca8966dcc3cc08727ef2faf98da3740787b308cd54c652f52' != '3700da3bf1a271d6b6763060f913435a4a50cda8d456cb1a57a6f1898416b6ad'
+- 0e08bf88e488539ca8966dcc3cc08727ef2faf98da3740787b308cd54c652f52
++ 3700da3bf1a271d6b6763060f913435a4a50cda8d456cb1a57a6f1898416b6ad
+
+
+======================================================================
+FAIL: test_snapshot_hashes_match (test_packaging.ReceiptBoundary.test_snapshot_hashes_match)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_packaging.py", line 11, in test_snapshot_hashes_match
+    for p,h in json.loads((ROOT/'PROVENANCE.json').read_text())['snapshotSha256'].items():self.assertEqual(hashlib.sha256((ROOT/p).read_bytes()).hexdigest(),h,p)
+                                                                                          ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '3700da3bf1a271d6b6763060f913435a4a50cda8d456cb1a57a6f1898416b6ad' != '0e08bf88e488539ca8966dcc3cc08727ef2faf98da3740787b308cd54c652f52'
+- 3700da3bf1a271d6b6763060f913435a4a50cda8d456cb1a57a6f1898416b6ad
++ 0e08bf88e488539ca8966dcc3cc08727ef2faf98da3740787b308cd54c652f52
+ : cad/cycle-contract-A2.json
+
+======================================================================
+FAIL: test_longer_same_law_lineage (test_pressure_continuation_receipt.ContinuationReceiptTest.test_longer_same_law_lineage)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "R:\tests\test_pressure_continuation_receipt.py", line 13, in test_longer_same_law_lineage
+    self.assertTrue(all(r.c.factory.r.sha(R/f)==h for f,h in e['inputs'].items()));q=r.c.restore(e['endCheckpoint']);self.assertAlmostEqual(q.t,.68,places=12);self.assertEqual(e['outcome'],'HORIZON');self.assertFalse(e['acceptance'])
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 482 tests in 234.987s
+
+FAILED (failures=3, errors=69)

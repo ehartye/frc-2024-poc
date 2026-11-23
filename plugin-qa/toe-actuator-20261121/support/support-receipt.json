@@ -1,0 +1,48 @@
+{
+  "status": "Select for native integration as a partial design",
+  "privateOnly": true,
+  "projectScope": "2024 Blue 1 over-bumper head only, provisional part local poses. No authority change or promotion.",
+  "diagnosticStepSha256": "e1053fd0261d45ae3fddf3366933fdd6ce8f490726080ca24ca788e73e62d439",
+  "artifacts": {
+    "support-only-v4.step": "e1053fd0261d45ae3fddf3366933fdd6ce8f490726080ca24ca788e73e62d439",
+    "roster-v4.json": "165147082a9c742128af0720a4999532521b64d62fa53f720d20b0a788f6a59b",
+    "splits-v4.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "screen.json": "71f78e10c1a26c5c20262dc5f20f3e32fc77482514f428d2fd5b32f67fa4025b",
+    "screen-v2.json": "a0e4741d0d18c253d998a00ebf51ef568f99643f0714295353d1437abbadf21a",
+    "screen-v3.json": "40c7e1509504700d02a6d6c8dc2e177a33f7f816e9cac59cda0e904ce0686727",
+    "screen-v4.json": "19c9899200ede9e714e1be29ce9edaa2482102bb2c98172e48abcb7ae25ba760",
+    "loads-v4.json": "23065dfe3926a2d0ac84ea94f5919f3692d5606341f5897c8bd77d5fb3208ecd",
+    "loaded-cg-v4.json": "db07a40a069f76cbaae645a904ed558d1c145c510645451d848544f9c92e01ec",
+    "three-witnesses.json": "ec606f2bf11bbb2eaafe6b6bd3a3ad17c95c2c4f40a36986cb44f0a0fc152e97",
+    "three-witnesses-lowered.json": "7da466d57eb7e98f4a44353ba0c37a8e567bbb37bf6697e4afdc24782b352766",
+    "shaft-demand.json": "0633ba379d87f8c084d95fb0b2df6821fd881865bc705152cc755065274acaa9",
+    "shaft-width.json": "bd0d56271b53db17b1f03cd0a26c8134912ce684f69b0d6de4bb7f74f11bdc32",
+    "rack-land-radius.json": "68a316237308f3833fd55b719cd75352147d7ae01845fc2ff3b7965740be8407",
+    "gearbox-mount.json": "b4b0a62f6a4e8291fbd37f5180e7165c6fd38e21e0dea66afac316ccb18c6c83",
+    "gearbox-mount-corrected.json": "70f74e5e13ea72e7734b4a33d3e7605390e398cd58e91233523ccc0d541c3700",
+    "gearbox-stack-envelope.json": "0bb1ebda0c23c44093f5d8e14a4f414ff1d0f815abb47c6c9d5b3c1c10da0550",
+    "head-path-v3.json": "e5aad21d2c8dec4f52c5358887b685a189788d443e502543ad0f5b7113b48c5a",
+    "loom-all-ring.json": "840f76683dce0a2da1262a55ba3104ef8b525972e198a6f61b9a8432e821cc43",
+    "loom-all-reservations.json": "2e4e6ae9b11e552f66cd5ba557eb1715ef0e11bf2d260ecd4741e66bc5339bf3",
+    "loom-neighbors.json": "7964d26242597324157fe650b28a492395fc7fc94277046ff75bc7d57c0b1c07",
+    "support.py": "28d64f3e70d7caaad404787bed1b528a999ee35deb2f7665881deaee5e00afca",
+    "support-v4.py": "62bc5cbf7d2a7871d390a7e626bf1f46b46a669bd0606484a32b8f8bfcd1444a",
+    "revised.py": "8b6e60a528479ee9ba0973c3ac183cd20dc66ccf14263222e4760178b75f3f2d",
+    "support-v3.py": "d6bf6e0a4764d97574473c52f2b91f2c18025d2995eaf851ec346c1f32308058",
+    "handoff.md": "6842e943024c8cec4bc281b3cbf41ce8a3fbb143202b0490d49e36ac9d1ffbf2"
+  },
+  "sourceArchives": {
+    "R:\\plugin-qa\\toe-actuator-20261121\\support\\M3X20.STEP": "b16016e5683f2d5acbdc64646f10357346c819152895ece56a1d7347fae1b546",
+    "R:\\plugin-qa\\toe-actuator-20261121\\support\\bearing.step": "d6a560ccd6a01ad7d5a0421c9384ca9019cc4ed843fe7166475bfb19b9e731d9",
+    "R:\\plugin-qa\\toe-actuator-20261121\\support\\switch.step": "0fdbf475c49ed043325e78a27bf701f11ff409ed136ff376b2ba870ea3610704",
+    "R:\\plugin-qa\\toe-actuator-20261121\\rack-fit.py": "576a9c6eb4e4085f8b9a85f9dc767dda6f7f948813015c568cbfb1ef78b90b72",
+    "R:\\plugin-qa\\toe-actuator-20261121\\fit-decision.json": "d27744dd909c8f3cd923b2ce606cfd817dc64408f408ab90c3e23983dfd3a850",
+    "R:\\plugin-qa\\toe-actuator-20261121\\wrist-shaft-check.json": "13c91ad1ea4978669c2335e58b0e8b358b22e2a17c730f7fe238d8a703837c1d"
+  },
+  "releasedHelpersAtInspection": {
+    "mechanical_motion.py": "13f3b750837663ea7e6abf183a71b6177061c15e05ad7d84ae05b12876d37752",
+    "showcase_contacts.py": "26e962862908be829fd14b4f4da76204c0b2543521d097d551c91cd17c766409",
+    "stock_sections.py": "eb5d6963bc2fd4381ff08c956c56986f80a520ffa865f05b68168e0b132b1a35"
+  },
+  "next": "Register actual wrist torque connection and serviceable aluminum stocks in Fusion. Validate sensor trip force/overtravel, shaft form and lash, preload/fasteners, friction and real routing; replay actual constraints. Preserve all old negatives."
+}

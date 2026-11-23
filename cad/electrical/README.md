@@ -3,7 +3,7 @@
 <!-- cad-still -->
 [![Preliminary robot with the scoring cassette raised above the blue bumper](../preliminary-design/media/002-preliminary-robot.png)](https://ehartye.github.io/frc-2024-poc/preliminary-design/)
 
-**Guided cassette, parked. Preliminary design release 003-1.** The angled cassette picks up, retains and shoots a NOTE. The parallel guides support the climb. This still uses the same robot geometry as the interactive preliminary review. [Still and geometry record](../preliminary-design/media/002-preliminary-robot.json)
+**Guided cassette at the start of a cycle, with a floor NOTE ahead. Preliminary design release 004, effective.** The angled cassette picks up, retains and shoots a NOTE. The parallel guides support the climb. This still uses the same robot geometry as the interactive preliminary review. [Still and geometry record](../preliminary-design/media/002-preliminary-robot.json)
 <!-- /cad-still -->
 
 Editable original dimensional representations, not vendor CAD and not a finished wiring or mounting design. Frame: +X forward, +Y left, +Z up; millimetres, ground origin under chassis center. Placement is a candidate for the AM14U4 integration, not verified against the complete moving assembly.

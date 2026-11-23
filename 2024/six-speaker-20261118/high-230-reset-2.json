@@ -1,0 +1,43 @@
+{
+  "previousScore": "4de75792fca6029cdd0e6420c29ccf85ee3248cdc04aafac37e222f9bfba79ec",
+  "olderShot": "19b43a96a786380890593c99fde1084ba007739f6e79914decb1f823c09bdcce",
+  "laterShot": "e06fb35283d5c4a3a229b3b8bf2bad25ac9f34e780b65b1bb3a2a679c30c1c7f",
+  "field": "2f13d048177e14c0a1f02e93812dfec9f9848231ba3daf45c129c40897a2064d",
+  "priorSegments": [
+    "725e742e96e03d77092c5afcdf9f17b67245e1967a13d5c99b2370732ea1e885",
+    "855e86bfef3eb9a37d4734657329516db85a647a16ecd418fc7f06bdf2897079"
+  ],
+  "sensorClearByS": 64.45115000040134,
+  "minimumPieceSeparationM": 0.9530698517135825,
+  "verifiedThroughS": 86.54620000046006,
+  "earlierCollectionSeparation": [
+    {
+      "score": "205bd708130af8c881455a952f9b5d9a760171576ccd0712eb6fa9d1aea644ca",
+      "segments": [
+        "f444be8f3a4f34366ac68d78be655371dd84874062641ae1e5fc95c0e7b7042a",
+        "dafef3d790f4e9c659ed460b25d1ebec6d02969ae33b5d3fd81826d57b35d367",
+        "1be84c3c20a48ab7bb033917ec0da23ca8a55488d3ddb4e58d0baeb8dfe8ba69",
+        "2f48443ecb886c86cfb839a0c059276ef7ed3a37226ef8bc4fad34001620cbb4",
+        "80169f1f46b97a121bbb68b55ff420ffa57f8235680f7d76d0e2c1bf35d7d592"
+      ],
+      "gapM": 0.9739994656100488,
+      "coupledManifests": [
+        "95b3fd9207de5ee811bdbd7b5326abde406b18a2c883a057e51b1f8e5e7105f4"
+      ],
+      "verifiedThroughS": 86.54620000046006
+    },
+    {
+      "score": "47c570ad2322c085ed221323b1761901c6aa4c6778b8e93da1ed81196e6d5300",
+      "segments": [
+        "13e2b05b2bca80e3194073c99ddf3c25fc6b8bd0e17c283b9a46ccd398dc78b9",
+        "acde08736f905c94004367521af18f86cf2415e679216b4960726818b257aee0",
+        "632b9b95e26b63f69fbff7eff60dab8b3c170369b45ac7d99fd03e9a9915a24b"
+      ],
+      "gapM": 0.9696451322979718,
+      "coupledManifests": [
+        "95b3fd9207de5ee811bdbd7b5326abde406b18a2c883a057e51b1f8e5e7105f4"
+      ],
+      "verifiedThroughS": 86.54620000046006
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "parent": "83517673b62c1917534e6a09be04eace6189b97dc0986cb3ffc8fd6832e1bf63",
+  "step": "22839f34da0dfdcaabca98c00fad2c8db762aec46d61d7ba21fe897146ae4cb0",
+  "n": 146,
+  "axis": [
+    141.81524400828636,
+    535.0599009090771
+  ],
+  "r": 55.0,
+  "checks": {
+    "(125, 0)": {
+      "collision": [
+        [
+          "Catch sector screw 1",
+          "Service index disk",
+          27.48042
+        ],
+        [
+          "Catch sector",
+          "Service index disk",
+          513.8777
+        ]
+      ],
+      "dogSectorMm": 1.1999999999999886,
+      "dogSectorCommon": 0.0
+    },
+    "(-50, 0)": {
+      "collision": [
+        [
+          "Catch sector screw 1",
+          "Service index disk",
+          27.48042
+        ],
+        [
+          "Catch sector",
+          "Service index disk",
+          513.8777
+        ]
+      ],
+      "dogSectorMm": 71.81283928732609,
+      "dogSectorCommon": 0.0
+    },
+    "(90, 0)": {
+      "collision": [
+        [
+          "Catch sector screw 1",
+          "Service index disk",
+          27.48042
+        ],
+        [
+          "Catch sector",
+          "Service index disk",
+          513.8777
+        ]
+      ],
+      "dogSectorMm": 22.96260111514432,
+      "dogSectorCommon": 0.0
+    },
+    "(150, 0)": {
+      "collision": [
+        [
+          "Catch sector screw 1",
+          "Service index disk",
+          27.48042
+        ],
+        [
+          "Catch sector",
+          "Service index disk",
+          513.8777
+        ]
+      ],
+      "dogSectorMm": 1.1999999999999886,
+      "dogSectorCommon": 0.0
+    },
+    "(160, 10.8)": {
+      "collision": [
+        [
+          "Catch sector screw 1",
+          "Service index disk",
+          27.48042
+        ],
+        [
+          "Catch sector",
+          "Service index disk",
+          513.8777
+        ]
+      ],
+      "dogSectorMm": 1.9043614417846058,
+      "dogSectorCommon": 0.0
+    },
+    "(158, 10.8)": {
+      "collision": [
+        [
+          "Catch sector screw 1",
+          "Service index disk",
+          27.48042
+        ],
+        [
+          "Catch sector",
+          "Service index disk",
+          513.8777
+        ]
+      ],
+      "dogSectorMm": 0.0,
+      "dogSectorCommon": 0.0
+    },
+    "(157, 10.8)": {
+      "collision": [
+        [
+          "Catch sector screw 1",
+          "Service index disk",
+          27.48042
+        ],
+        [
+          "Catch sector",
+          "Service index disk",
+          513.8777
+        ],
+        [
+          "Catch dog",
+          "Catch sector",
+          40.38317
+        ]
+      ],
+      "dogSectorMm": 0.0,
+      "dogSectorCommon": 40.38317160145844
+    },
+    "(165, 10.8)": {
+      "collision": [
+        [
+          "Catch sector screw 1",
+          "Service index disk",
+          27.48042
+        ],
+        [
+          "Catch sector",
+          "Service index disk",
+          513.8777
+        ]
+      ],
+      "dogSectorMm": 6.618086908679024,
+      "dogSectorCommon": 0.0
+    }
+  },
+  "attr": {
+    "Catch sector screw 1": {
+      "role": "arm",
+      "material": "Steel",
+      "purpose": "Clamp and locate the angular stop on the cassette cheek."
+    },
+    "Catch sector screw 2": {
+      "role": "arm",
+      "material": "Steel",
+      "purpose": "Clamp and locate the angular stop on the cassette cheek."
+    },
+    "Catch sector screw 3": {
+      "role": "arm",
+      "material": "Steel",
+      "purpose": "Clamp and locate the angular stop on the cassette cheek."
+    },
+    "Catch sector": {
+      "role": "arm",
+      "material": "Steel",
+      "purpose": "Transfer lowering torque from cassette cheek into the seated dog."
+    },
+    "Catch receiver screw 1": {
+      "role": "slide",
+      "material": "Steel",
+      "purpose": "Hold the dog receiver to the translating bearing block."
+    },
+    "Catch receiver screw 2": {
+      "role": "slide",
+      "material": "Steel",
+      "purpose": "Hold the dog receiver to the translating bearing block."
+    },
+    "Catch receiver screw 3": {
+      "role": "slide",
+      "material": "Steel",
+      "purpose": "Hold the dog receiver to the translating bearing block."
+    },
+    "Catch receiver screw 4": {
+      "role": "slide",
+      "material": "Steel",
+      "purpose": "Hold the dog receiver to the translating bearing block."
+    },
+    "Catch receiver": {
+      "role": "slide",
+      "material": "Aluminum",
+      "purpose": "Guide the axial dog and react its side load into the translating truck."
+    },
+    "Catch dog": {
+      "role": "dog",
+      "material": "Steel",
+      "purpose": "Advance 10.8 mm behind the sector before allowing load transfer."
+    },
+    "Catch actuator and spring": {
+      "role": "slide",
+      "material": "Actuator and spring envelope",
+      "purpose": "Retract the dog during scoring and deploy it for the climb."
+    }
+  }
+}

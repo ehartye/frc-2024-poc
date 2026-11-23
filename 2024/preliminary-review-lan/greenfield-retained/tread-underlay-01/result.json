@@ -1,0 +1,47 @@
+{
+  "parent": "5ea3e2ef1260cb6fcca1dfaccf39fbfaa4656461be6aedd9e415cdae8e84e02e",
+  "step": "093ca2ff6f5d2d53aa46c66651baa65f2d93bc59611a5e6e183006b9c7349415",
+  "changed": [
+    "Feed belt \u00b7 left",
+    "Feed tread \u00b7 left",
+    "Launch belt \u00b7 left",
+    "Launch tread \u00b7 left",
+    "Feed belt \u00b7 right",
+    "Feed tread \u00b7 right",
+    "Launch belt \u00b7 right",
+    "Launch tread \u00b7 right"
+  ],
+  "netNominalKg": -0.05095719206257902,
+  "controlTrace": "d863a4d69624cffe1a1396c0ddf9f60da43a69160865e11450ed16676b6311ff",
+  "atS": 1.87,
+  "backingComparisons": [
+    [
+      "Feed belt \u00b7 left",
+      0.0,
+      0.0,
+      244.1292717799904
+    ],
+    [
+      "Launch belt \u00b7 left",
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      "Feed belt \u00b7 right",
+      5.528766682769137,
+      0.0,
+      411.9004572316867
+    ],
+    [
+      "Launch belt \u00b7 right",
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "hardBackingOuterMm": 17.25,
+  "pulleyRadiusMm": 16,
+  "compliantOuterMm": 24,
+  "scope": "Same tread contact envelope, 1.25 mm backing and 6.75 mm compliant tread. Neutral-axis drive ratio, compound stiffness, timing-belt pitch, flex life and actual Article force-travel remain assumptions."
+}

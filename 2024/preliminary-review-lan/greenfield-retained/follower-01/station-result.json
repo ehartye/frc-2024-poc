@@ -1,0 +1,94 @@
+{
+  "follower": "10ed645194e470ad11da969a739c2df17a7c0c429517056504d8e9c384aefe3f",
+  "response": "d1700256ae44575386fb45b23bf2142ddafe5921bbe8e0921dbb5e7081a42ee9",
+  "sweep": {
+    "minimumStationaryBoxGapMm": 110.648420119516,
+    "nearest": [
+      "Blue bumper set",
+      -1,
+      -43.0525579365826
+    ],
+    "betweenPoseAllowanceMm": 1.2377117276834706,
+    "frontSampleMm": 641.2491976139148,
+    "frontCertifiedMm": 642.4869093415983,
+    "limitMm": 644.8,
+    "rangeDeg": [
+      -49.744598926381464,
+      165
+    ],
+    "qualifier": "Frame and slide stock; the NOTE and the permitted carpet contact are checked separately."
+  },
+  "station": [
+    {
+      "segments": 48,
+      "held": {
+        "startS": 2.82,
+        "arriveS": 6.22,
+        "heldUntilS": 7.0,
+        "minCassetteS": 0.214203,
+        "maxCassetteS": 0.310802,
+        "endLocal": [
+          0.295151,
+          0.054598
+        ],
+        "retainedThroughout": true,
+        "scope": "Pitch is commanded; the ring keeps the original six dynamic DOFs and velocities through the lift. Robot translation ends at the pickup stop. Release and field travel are separate."
+      },
+      "endFlapDeg": 89.81726760843605,
+      "gapMm": [
+        1.3668084315749347,
+        12.296312322935488,
+        2.462606430314768
+      ],
+      "handoffPositionAndVelocityChecked": true,
+      "score": true,
+      "minBusV": 8.388808946880097,
+      "opening": {
+        "firstPossibleS": 0.7819999999999693,
+        "fullyThroughByS": 0.8654999999999601,
+        "minimumMarginM": 0.036355748146510825
+      },
+      "pairS": 3.2285000000002455,
+      "source": {
+        "cam48.json": "7ea41cb0cb3a339faedf836f3370405d3ec1d3921dda2c71bb6da0c5687a02df",
+        "fire48.json": "81b8e8ca247cfad07373b9193e7a31a533b03fc80380ba81f76ec738f8d9111d"
+      }
+    },
+    {
+      "segments": 96,
+      "held": {
+        "startS": 2.82,
+        "arriveS": 6.22,
+        "heldUntilS": 7.0,
+        "minCassetteS": 0.214268,
+        "maxCassetteS": 0.30794,
+        "endLocal": [
+          0.294924,
+          0.0546
+        ],
+        "retainedThroughout": true,
+        "scope": "Pitch is commanded; the ring keeps the original six dynamic DOFs and velocities through the lift. Robot translation ends at the pickup stop. Release and field travel are separate."
+      },
+      "endFlapDeg": 89.8173027086497,
+      "gapMm": [
+        1.3881475608107365,
+        12.47349363744674,
+        2.468040155395009
+      ],
+      "handoffPositionAndVelocityChecked": true,
+      "score": true,
+      "minBusV": 8.378365550580003,
+      "opening": {
+        "firstPossibleS": 0.7737499999999425,
+        "fullyThroughByS": 0.8429999999999349,
+        "minimumMarginM": 0.14089594263763386
+      },
+      "pairS": 3.873249999999213,
+      "source": {
+        "cam96.json": "c368e6fed4c5522fec3987df0c4a1a018d8aea2a600b867bba583e059e1cc3fc",
+        "fire96.json": "a15a774aacf1cbc6e897bb11535b5b78fadca9d75a4184515c6b58de72a9363d"
+      }
+    }
+  ],
+  "scope": "Single floor fixture 0.44 m from the firing station. Travel between field marks, actual carpet calibration, loaded moving chassis and climb approach remain open."
+}

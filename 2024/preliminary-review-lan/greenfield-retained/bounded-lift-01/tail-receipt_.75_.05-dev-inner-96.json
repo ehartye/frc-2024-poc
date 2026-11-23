@@ -1,0 +1,26 @@
+{
+  "tag": "dev-inner",
+  "n": 96,
+  "mu": ".75",
+  "floorHeightM": ".05",
+  "original": "631311ff1dd894cce5b4309ebbd1016d3efab90622ca3530a96db62dcc36571f",
+  "extended": "ea54ce6cd493389a7a6d15425ec6e8e146ba7ac369a3b0806b29f2d5f843f389",
+  "same": {
+    "sourceCarry": true,
+    "initialState": true,
+    "initialVelocity": true,
+    "rotorsAtFeed": true,
+    "release": true,
+    "exit": true,
+    "opening": true,
+    "beams": true,
+    "both": true,
+    "minBusV": true
+  },
+  "endS": 7.000000000002809,
+  "minGapM": 0.8170494907090506,
+  "afterShotA": 27.11745218656642,
+  "resetStart": 1.580249999999964,
+  "resetEnd": 6.380249999999964,
+  "passScreen": true
+}

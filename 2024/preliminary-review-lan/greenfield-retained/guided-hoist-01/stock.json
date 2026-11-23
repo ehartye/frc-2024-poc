@@ -1,0 +1,267 @@
+{
+  "parent": "093ca2ff6f5d2d53aa46c66651baa65f2d93bc59611a5e6e183006b9c7349415",
+  "materialParts": {
+    "Shared lift crosspiece": {
+      "volumeMm3": 80678.14519471805,
+      "kg": 0.21783099202573872,
+      "role": "carriage",
+      "densityKgM3": 2700
+    },
+    "Hook guide channel · left": {
+      "volumeMm3": 51680.0,
+      "kg": 0.13953600000000002,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Captive hook wear block · left": {
+      "volumeMm3": 25011.31995043224,
+      "kg": 0.03551607432961378,
+      "role": "carriage",
+      "densityKgM3": 1420
+    },
+    "Guide rear anchor web · left": {
+      "volumeMm3": 20317.5,
+      "kg": 0.05485725,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Guide rear anchor cleat · left": {
+      "volumeMm3": 10296.0,
+      "kg": 0.027799200000000003,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Pivot cable drum · left": {
+      "volumeMm3": 17600.018859499964,
+      "kg": 0.047520050920649905,
+      "role": "drum",
+      "densityKgM3": 2700
+    },
+    "Hoist rear redirect sheave · left": {
+      "volumeMm3": 5007.384530556769,
+      "kg": 0.013519938232503277,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Hoist rear redirect axle · left": {
+      "volumeMm3": 678.5840131753953,
+      "kg": 0.005326884503426853,
+      "role": "cassette",
+      "densityKgM3": 7850
+    },
+    "Hook guide channel · right": {
+      "volumeMm3": 51680.0,
+      "kg": 0.13953600000000002,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Captive hook wear block · right": {
+      "volumeMm3": 25011.31995043224,
+      "kg": 0.03551607432961378,
+      "role": "carriage",
+      "densityKgM3": 1420
+    },
+    "Guide rear anchor web · right": {
+      "volumeMm3": 20317.5,
+      "kg": 0.05485725,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Guide rear anchor cleat · right": {
+      "volumeMm3": 10296.0,
+      "kg": 0.027799200000000003,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Pivot cable drum · right": {
+      "volumeMm3": 17600.018859499964,
+      "kg": 0.047520050920649905,
+      "role": "drum",
+      "densityKgM3": 2700
+    },
+    "Hoist rear redirect sheave · right": {
+      "volumeMm3": 5007.384530556769,
+      "kg": 0.013519938232503277,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Hoist rear redirect axle · right": {
+      "volumeMm3": 678.5840131753953,
+      "kg": 0.005326884503426853,
+      "role": "cassette",
+      "densityKgM3": 7850
+    }
+  },
+  "removedBeamKg": 0.23431680000010566,
+  "netStockKg": 0.6316649879980207,
+  "targetStrokeMm": 230,
+  "samplesMm": [
+    0,
+    55,
+    110,
+    165,
+    220,
+    230
+  ],
+  "narrowPairs": 40,
+  "intersections": [
+    [
+      0,
+      "Catch sector",
+      "Guide rear anchor web · left",
+      256.2942531784091
+    ],
+    [
+      0,
+      "Hook guide channel · left",
+      "Hoist rear redirect sheave · left",
+      244.13429527396542
+    ],
+    [
+      0,
+      "Hook guide channel · left",
+      "Hoist rear redirect axle · left",
+      113.09733552923257
+    ],
+    [
+      0,
+      "Hook guide channel · right",
+      "Hoist rear redirect sheave · right",
+      244.13429527396545
+    ],
+    [
+      0,
+      "Hook guide channel · right",
+      "Hoist rear redirect axle · right",
+      113.09733552923257
+    ]
+  ],
+  "parkedNear": [
+    [
+      "Cassette cheek · left",
+      "Guide rear anchor web · left",
+      0.0
+    ],
+    [
+      "Cassette cheek · right",
+      "Guide rear anchor web · right",
+      0.0
+    ],
+    [
+      "Pivot torque shaft",
+      "Pivot cable drum · left",
+      0.09999999999215525
+    ],
+    [
+      "Pivot torque shaft",
+      "Pivot cable drum · right",
+      0.09999999999215525
+    ],
+    [
+      "Service index disk",
+      "Guide rear anchor web · left",
+      3.877632170757083
+    ],
+    [
+      "Lid edge rail · left",
+      "Guide rear anchor web · left",
+      14.4814787386863
+    ],
+    [
+      "Climb yoke post · left",
+      "Hook guide channel · left",
+      0.0
+    ],
+    [
+      "Lid edge rail · right",
+      "Guide rear anchor web · right",
+      14.4814787386863
+    ],
+    [
+      "Climb yoke post · right",
+      "Hook guide channel · right",
+      0.0
+    ],
+    [
+      "Shared lift crosspiece",
+      "Chain hook · left",
+      2.999938020917917e-12
+    ],
+    [
+      "Shared lift crosspiece",
+      "Chain hook · right",
+      2.999938020917917e-12
+    ],
+    [
+      "Shared lift crosspiece",
+      "Keeper drive mast",
+      2.999938020917917e-12
+    ],
+    [
+      "Shared lift crosspiece",
+      "Captive hook wear block · left",
+      0.0
+    ],
+    [
+      "Shared lift crosspiece",
+      "Captive hook wear block · right",
+      0.0
+    ],
+    [
+      "Catch sector screw 3",
+      "Guide rear anchor web · left",
+      4.774847184307873e-12
+    ],
+    [
+      "Hook guide channel · left",
+      "Captive hook wear block · left",
+      0.19999999999998863
+    ],
+    [
+      "Hook guide channel · left",
+      "Guide rear anchor cleat · left",
+      0.0
+    ],
+    [
+      "Guide rear anchor web · left",
+      "Guide rear anchor cleat · left",
+      0.0
+    ],
+    [
+      "Guide rear anchor cleat · left",
+      "Hoist rear redirect axle · left",
+      0.0
+    ],
+    [
+      "Hoist rear redirect sheave · left",
+      "Hoist rear redirect axle · left",
+      0.09999999999999125
+    ],
+    [
+      "Hook guide channel · right",
+      "Captive hook wear block · right",
+      0.19999999999998863
+    ],
+    [
+      "Hook guide channel · right",
+      "Guide rear anchor cleat · right",
+      0.0
+    ],
+    [
+      "Guide rear anchor web · right",
+      "Guide rear anchor cleat · right",
+      0.0
+    ],
+    [
+      "Guide rear anchor cleat · right",
+      "Hoist rear redirect axle · right",
+      0.0
+    ],
+    [
+      "Hoist rear redirect sheave · right",
+      "Hoist rear redirect axle · right",
+      0.09999999999999432
+    ]
+  ],
+  "step": "1312d8b0562039bf1263bb7700c003875909127f7b0d91d5a488f0afb0a2f8ba"
+}

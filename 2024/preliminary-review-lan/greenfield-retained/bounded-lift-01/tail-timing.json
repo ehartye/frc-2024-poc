@@ -1,0 +1,214 @@
+[
+  {
+    "resolution": 48,
+    "friction": ".25",
+    "height": "0",
+    "source": "866f6681aeb04b6ec25969eec1cdfec6ee76a5e17ad3bf7841b0d685c1b306a7",
+    "parts": [
+      {
+        "id": "middle",
+        "elapsed": 15.621870249454073,
+        "overlap": true,
+        "nextDeparture": 17.78887024945368,
+        "receipt": null
+      },
+      {
+        "id": "outer",
+        "elapsed": 32.33061260090102,
+        "overlap": true,
+        "nextDeparture": 34.30011260090073,
+        "receipt": "0bf9db2d1480bf78ffe9a9f480b43fa9c869cc52ac1b4e5046b638d12d02245f"
+      },
+      {
+        "id": "inner",
+        "elapsed": 48.846781095207525,
+        "overlap": true,
+        "nextDeparture": 51.16228109520704,
+        "receipt": null
+      },
+      {
+        "id": "center-high",
+        "elapsed": 67.8094657841567,
+        "overlap": true,
+        "nextDeparture": 69.73146578415644,
+        "receipt": null
+      },
+      {
+        "id": "center-mid",
+        "elapsed": 91.29974839101872,
+        "overlap": true,
+        "nextDeparture": 92.54774839101884,
+        "receipt": null
+      },
+      {
+        "id": "center-low",
+        "elapsed": 115.62909769423337,
+        "overlap": true,
+        "nextDeparture": 117.60909769423307,
+        "receipt": null
+      }
+    ],
+    "count": 6,
+    "elapsed": 115.62909769423337,
+    "within120": true
+  },
+  {
+    "resolution": 48,
+    "friction": ".75",
+    "height": ".05",
+    "source": "866f6681aeb04b6ec25969eec1cdfec6ee76a5e17ad3bf7841b0d685c1b306a7",
+    "parts": [
+      {
+        "id": "middle",
+        "elapsed": 15.621870249454073,
+        "overlap": true,
+        "nextDeparture": 17.78887024945368,
+        "receipt": null
+      },
+      {
+        "id": "outer",
+        "elapsed": 32.33061260090102,
+        "overlap": true,
+        "nextDeparture": 34.30011260090073,
+        "receipt": "bad80b23f5287b9580dce82636d36c9daf84c459ffea3697cbbf447db6aee483"
+      },
+      {
+        "id": "inner",
+        "elapsed": 48.846781095207525,
+        "overlap": true,
+        "nextDeparture": 51.16228109520704,
+        "receipt": null
+      },
+      {
+        "id": "center-high",
+        "elapsed": 67.8094657841567,
+        "overlap": true,
+        "nextDeparture": 69.73146578415644,
+        "receipt": null
+      },
+      {
+        "id": "center-mid",
+        "elapsed": 91.29974839101872,
+        "overlap": true,
+        "nextDeparture": 92.54774839101884,
+        "receipt": null
+      },
+      {
+        "id": "center-low",
+        "elapsed": 115.62909769423337,
+        "overlap": true,
+        "nextDeparture": 117.60909769423307,
+        "receipt": null
+      }
+    ],
+    "count": 6,
+    "elapsed": 115.62909769423337,
+    "within120": true
+  },
+  {
+    "resolution": 96,
+    "friction": ".25",
+    "height": "0",
+    "source": "733f17fd7170f1d0f5f974edee13898c5e60102d1480e9366d8ffbba6c79a5ad",
+    "parts": [
+      {
+        "id": "middle",
+        "elapsed": 15.828120249453345,
+        "overlap": true,
+        "nextDeparture": 17.789370249453654,
+        "receipt": "8366be4a5d504b750b7181a6041e76bc537bf712860a6f03a7b83b1f63334c04"
+      },
+      {
+        "id": "outer",
+        "elapsed": 32.15286260090014,
+        "overlap": true,
+        "nextDeparture": 34.30086260090068,
+        "receipt": "31f36b389bd6c6e323eb9f0cf3f7612724c9f63da0c17ebfacc6761483f6c517"
+      },
+      {
+        "id": "inner",
+        "elapsed": 49.002781095206416,
+        "overlap": true,
+        "nextDeparture": 51.16328109520696,
+        "receipt": "cf00d79d390292d72a9023070528d53ddbaccb263a48dd7172cf6ac2eb9160dd"
+      },
+      {
+        "id": "center-high",
+        "elapsed": 68.03071578415634,
+        "overlap": true,
+        "nextDeparture": 69.73271578415633,
+        "receipt": "961057c42e2d3383f68c4c215576e889abc886f31feb6b2ab9afc5eeeb6fd8a7"
+      },
+      {
+        "id": "center-mid",
+        "elapsed": 90.90024839101876,
+        "overlap": true,
+        "nextDeparture": 92.5492483910187,
+        "receipt": "fb4a76c0ccc9340da81fb25e52a7b712ef71346ecd51709b9b3edd482c7320a5"
+      },
+      {
+        "id": "center-low",
+        "elapsed": 115.46334769423235,
+        "overlap": false,
+        "nextDeparture": 120.26334769423235,
+        "receipt": null
+      }
+    ],
+    "count": 6,
+    "elapsed": 115.46334769423235,
+    "within120": true
+  },
+  {
+    "resolution": 96,
+    "friction": ".75",
+    "height": ".05",
+    "source": "733f17fd7170f1d0f5f974edee13898c5e60102d1480e9366d8ffbba6c79a5ad",
+    "parts": [
+      {
+        "id": "middle",
+        "elapsed": 15.828120249453345,
+        "overlap": true,
+        "nextDeparture": 17.789370249453654,
+        "receipt": "4fe983038bd5cf04cf6b2c9ce4dc9a7231387bb894ffab785e70fea5adc7c86f"
+      },
+      {
+        "id": "outer",
+        "elapsed": 32.15286260090014,
+        "overlap": true,
+        "nextDeparture": 34.30086260090068,
+        "receipt": "68b86e2d3796f0e3458e47cc3d931423040401289cfec3956236df13a453b1a7"
+      },
+      {
+        "id": "inner",
+        "elapsed": 49.002781095206416,
+        "overlap": true,
+        "nextDeparture": 51.16328109520696,
+        "receipt": "1807e40085ee23d5552cd72d68958dedabdd002efc14ac2fe4bbca4ee855be7e"
+      },
+      {
+        "id": "center-high",
+        "elapsed": 68.03071578415634,
+        "overlap": true,
+        "nextDeparture": 69.73271578415633,
+        "receipt": "1c17b7bf28a28b14182b1bcf3cd54a9b68c7292efc464391d28da25d351f8012"
+      },
+      {
+        "id": "center-mid",
+        "elapsed": 90.90024839101876,
+        "overlap": true,
+        "nextDeparture": 92.5492483910187,
+        "receipt": "7cbbbb7f7bf57e80f20d7180b2461fd99477283d7273d77de7adc604739a39bd"
+      },
+      {
+        "id": "center-low",
+        "elapsed": 115.46334769423235,
+        "overlap": false,
+        "nextDeparture": 120.26334769423235,
+        "receipt": null
+      }
+    ],
+    "count": 6,
+    "elapsed": 115.46334769423235,
+    "within120": true
+  }
+]

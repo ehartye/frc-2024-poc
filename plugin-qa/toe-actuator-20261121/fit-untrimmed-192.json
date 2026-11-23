@@ -1,0 +1,1243 @@
+{
+  "rows": [
+    {
+      "part": "side pinion",
+      "source": "REV-41-1332",
+      "sourceToHeadA": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "baseTranslation": [
+        -4.0,
+        0.0,
+        132.0
+      ],
+      "joint": null,
+      "witness": {
+        "cover": {
+          "maxVertexInsideDepthMm": -173.57869108379597,
+          "t": 7.3500000000000005,
+          "point": [
+            677.628691083796,
+            -0.587489,
+            136.7702818673974
+          ],
+          "sample": 294,
+          "sourceVertex": 188
+        },
+        "rail0": {
+          "maxVertexInsideDepthMm": -109.71221111758722,
+          "t": 10.975,
+          "point": [
+            -56.67564863941689,
+            -1.007194,
+            551.0969365758306
+          ],
+          "sample": 439,
+          "sourceVertex": 183
+        },
+        "rail1": {
+          "maxVertexInsideDepthMm": -109.71221111758722,
+          "t": 10.975,
+          "point": [
+            -56.67564863941689,
+            -1.007194,
+            551.0969365758306
+          ],
+          "sample": 439,
+          "sourceVertex": 183
+        }
+      },
+      "peakX": 693.1751632809655,
+      "peakXTime": 6.2,
+      "minZ": 119.44697617331943
+    },
+    {
+      "part": "side output",
+      "source": "REV-41-1615",
+      "sourceToHeadA": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "baseTranslation": [
+        -33.25,
+        0.0,
+        132.0
+      ],
+      "joint": null,
+      "witness": {
+        "cover": {
+          "maxVertexInsideDepthMm": -145.80954061727002,
+          "t": 7.3500000000000005,
+          "point": [
+            649.85954061727,
+            -3.375,
+            140.35055567757428
+          ],
+          "sample": 294,
+          "sourceVertex": 626
+        },
+        "rail0": {
+          "maxVertexInsideDepthMm": -102.75197635137819,
+          "t": 10.85,
+          "point": [
+            -74.71695323390715,
+            -10.392305,
+            568.4249232358954
+          ],
+          "sample": 434,
+          "sourceVertex": 304
+        },
+        "rail1": {
+          "maxVertexInsideDepthMm": -102.75197635137819,
+          "t": 10.85,
+          "point": [
+            -74.71695323390715,
+            -10.392305,
+            568.4249232358954
+          ],
+          "sample": 434,
+          "sourceVertex": 304
+        }
+      },
+      "peakX": 668.6970656842641,
+      "peakXTime": 6.2,
+      "minZ": 112.33601883329983
+    },
+    {
+      "part": "side stage",
+      "source": "REV-41-1602",
+      "sourceToHeadA": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "baseTranslation": [
+        -39.25,
+        0.0,
+        132.0
+      ],
+      "joint": null,
+      "witness": {
+        "cover": {
+          "maxVertexInsideDepthMm": -133.9720251523631,
+          "t": 7.3500000000000005,
+          "point": [
+            638.0220251523631,
+            1.79033,
+            133.1691371185578
+          ],
+          "sample": 294,
+          "sourceVertex": 6315
+        },
+        "rail0": {
+          "maxVertexInsideDepthMm": -102.79344637198582,
+          "t": 10.85,
+          "point": [
+            -80.8060040452688,
+            -10.392305,
+            579.0544086522576
+          ],
+          "sample": 434,
+          "sourceVertex": 1511
+        },
+        "rail1": {
+          "maxVertexInsideDepthMm": -102.79344637198582,
+          "t": 10.85,
+          "point": [
+            -80.8060040452688,
+            -10.392305,
+            579.0544086522576
+          ],
+          "sample": 434,
+          "sourceVertex": 1511
+        }
+      },
+      "peakX": 656.4470798083876,
+      "peakXTime": 6.2,
+      "minZ": 112.2772723205485
+    },
+    {
+      "part": "side input plate",
+      "source": "REV-41-1607",
+      "sourceToHeadA": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "baseTranslation": [
+        -49.25,
+        0.0,
+        132.0
+      ],
+      "joint": null,
+      "witness": {
+        "cover": {
+          "maxVertexInsideDepthMm": -135.75337951288654,
+          "t": 7.3500000000000005,
+          "point": [
+            639.8033795128865,
+            -10.392305,
+            151.03725004874957
+          ],
+          "sample": 294,
+          "sourceVertex": 86
+        },
+        "rail0": {
+          "maxVertexInsideDepthMm": -102.8272994500329,
+          "t": 10.85,
+          "point": [
+            -85.77665776882935,
+            -10.392305,
+            587.73153960439
+          ],
+          "sample": 434,
+          "sourceVertex": 91
+        },
+        "rail1": {
+          "maxVertexInsideDepthMm": -102.8272994500329,
+          "t": 10.85,
+          "point": [
+            -85.77665776882935,
+            -10.392305,
+            587.73153960439
+          ],
+          "sample": 434,
+          "sourceVertex": 91
+        }
+      },
+      "peakX": 645.4493073889455,
+      "peakXTime": 6.2,
+      "minZ": 112.25862263396078
+    },
+    {
+      "part": "side motor",
+      "source": "REV-21-1651",
+      "sourceToHeadA": [
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "baseTranslation": [
+        -37.75,
+        0.0,
+        132.0
+      ],
+      "joint": null,
+      "witness": {
+        "cover": {
+          "maxVertexInsideDepthMm": -91.30379289428717,
+          "t": 7.3500000000000005,
+          "point": [
+            595.3537928942872,
+            0.0,
+            141.30409796755615
+          ],
+          "sample": 294,
+          "sourceVertex": 1876
+        },
+        "rail0": {
+          "maxVertexInsideDepthMm": -96.35974465287032,
+          "t": 10.825000000000001,
+          "point": [
+            -96.29336330868965,
+            15.246204,
+            593.011898333344
+          ],
+          "sample": 433,
+          "sourceVertex": 85
+        },
+        "rail1": {
+          "maxVertexInsideDepthMm": -96.35974465287032,
+          "t": 10.825000000000001,
+          "point": [
+            -96.29336330868965,
+            15.246204,
+            593.011898333344
+          ],
+          "sample": 433,
+          "sourceVertex": 85
+        }
+      },
+      "peakX": 651.9230822202351,
+      "peakXTime": 6.2,
+      "minZ": 105.73983367340296
+    },
+    {
+      "part": "side sun",
+      "source": "REV-41-1608",
+      "sourceToHeadA": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "baseTranslation": [
+        -41.25,
+        0.0,
+        132.0
+      ],
+      "joint": null,
+      "witness": {
+        "cover": {
+          "maxVertexInsideDepthMm": -140.35161091745223,
+          "t": 7.3500000000000005,
+          "point": [
+            644.4016109174522,
+            -2.0,
+            132.31109806949698
+          ],
+          "sample": 294,
+          "sourceVertex": 328
+        },
+        "rail0": {
+          "maxVertexInsideDepthMm": -117.68475001879432,
+          "t": 10.85,
+          "point": [
+            -69.75956156813339,
+            -0.174522,
+            589.704016332589
+          ],
+          "sample": 434,
+          "sourceVertex": 525
+        },
+        "rail1": {
+          "maxVertexInsideDepthMm": -117.68475001879432,
+          "t": 10.85,
+          "point": [
+            -69.75956156813339,
+            -0.174522,
+            589.704016332589
+          ],
+          "sample": 434,
+          "sourceVertex": 525
+        }
+      },
+      "peakX": 651.9208271813528,
+      "peakXTime": 6.2,
+      "minZ": 127.15493033644695
+    },
+    {
+      "part": "left seg 0",
+      "source": "REV-41-1503",
+      "sourceToHeadA": [
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "baseTranslation": [
+        2.0,
+        28.688055,
+        148.875
+      ],
+      "joint": "left",
+      "witness": {
+        "cover": {
+          "maxVertexInsideDepthMm": -175.52546999020123,
+          "t": 7.3500000000000005,
+          "point": [
+            679.5754699902012,
+            5.376110321006209,
+            146.9276140500005
+          ],
+          "sample": 294,
+          "sourceVertex": 17
+        },
+        "rail0": {
+          "maxVertexInsideDepthMm": -132.16969340631644,
+          "t": 10.975,
+          "point": [
+            -37.18260631428184,
+            -16.948676828308816,
+            562.2489614520646
+          ],
+          "sample": 439,
+          "sourceVertex": 23
+        },
+        "rail1": {
+          "maxVertexInsideDepthMm": -132.16969340631644,
+          "t": 10.975,
+          "point": [
+            -37.18260631428184,
+            -16.948676828308816,
+            562.2489614520646
+          ],
+          "sample": 439,
+          "sourceVertex": 23
+        }
+      },
+      "peakX": 692.9602003698358,
+      "peakXTime": 6.175,
+      "minZ": 141.90449421896759
+    },
+    {
+      "part": "left seg 1",
+      "source": "REV-41-1503",
+      "sourceToHeadA": [
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "baseTranslation": [
+        2.0,
+        -18.435834999999997,
+        148.875
+      ],
+      "joint": "left",
+      "witness": {
+        "cover": {
+          "maxVertexInsideDepthMm": -175.52546999020123,
+          "t": 7.3500000000000005,
+          "point": [
+            679.5754699902012,
+            -41.74777967899379,
+            146.9276140500005
+          ],
+          "sample": 294,
+          "sourceVertex": 17
+        },
+        "rail0": {
+          "maxVertexInsideDepthMm": -132.16969340631644,
+          "t": 10.975,
+          "point": [
+            -37.18260631428184,
+            -64.07256682830881,
+            562.2489614520646
+          ],
+          "sample": 439,
+          "sourceVertex": 23
+        },
+        "rail1": {
+          "maxVertexInsideDepthMm": -132.16969340631644,
+          "t": 10.975,
+          "point": [
+            -37.18260631428184,
+            -64.07256682830881,
+            562.2489614520646
+          ],
+          "sample": 439,
+          "sourceVertex": 23
+        }
+      },
+      "peakX": 692.9602003698358,
+      "peakXTime": 6.175,
+      "minZ": 141.90449421896759
+    },
+    {
+      "part": "right seg 0",
+      "source": "REV-41-1503",
+      "sourceToHeadA": [
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "baseTranslation": [
+        2.0,
+        -28.688055,
+        115.125
+      ],
+      "joint": "right",
+      "witness": {
+        "cover": {
+          "maxVertexInsideDepthMm": -175.65617076170346,
+          "t": 7.3500000000000005,
+          "point": [
+            679.7061707617034,
+            -6.001971321006209,
+            121.99603363907875
+          ],
+          "sample": 294,
+          "sourceVertex": 24
+        },
+        "rail0": {
+          "maxVertexInsideDepthMm": -92.73245908040147,
+          "t": 10.975,
+          "point": [
+            -71.2890328909037,
+            17.574528663127616,
+            542.4485564955611
+          ],
+          "sample": 439,
+          "sourceVertex": 8
+        },
+        "rail1": {
+          "maxVertexInsideDepthMm": -92.73245908040147,
+          "t": 10.975,
+          "point": [
+            -71.2890328909037,
+            17.574528663127616,
+            542.4485564955611
+          ],
+          "sample": 439,
+          "sourceVertex": 8
+        }
+      },
+      "peakX": 693.0053945142256,
+      "peakXTime": 6.2,
+      "minZ": 102.50775820830872
+    },
+    {
+      "part": "right seg 1",
+      "source": "REV-41-1503",
+      "sourceToHeadA": [
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "baseTranslation": [
+        2.0,
+        18.435834999999997,
+        115.125
+      ],
+      "joint": "right",
+      "witness": {
+        "cover": {
+          "maxVertexInsideDepthMm": -175.65617076170346,
+          "t": 7.3500000000000005,
+          "point": [
+            679.7061707617034,
+            41.12191867899379,
+            121.99603363907875
+          ],
+          "sample": 294,
+          "sourceVertex": 24
+        },
+        "rail0": {
+          "maxVertexInsideDepthMm": -92.73245908040147,
+          "t": 10.975,
+          "point": [
+            -71.2890328909037,
+            64.69841866312761,
+            542.4485564955611
+          ],
+          "sample": 439,
+          "sourceVertex": 8
+        },
+        "rail1": {
+          "maxVertexInsideDepthMm": -92.73245908040147,
+          "t": 10.975,
+          "point": [
+            -71.2890328909037,
+            64.69841866312761,
+            542.4485564955611
+          ],
+          "sample": 439,
+          "sourceVertex": 8
+        }
+      },
+      "peakX": 693.0053945142256,
+      "peakXTime": 6.2,
+      "minZ": 102.50775820830872
+    },
+    {
+      "part": "rear pinion",
+      "source": "REV-41-1332",
+      "sourceToHeadA": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "baseTranslation": [
+        -92.0,
+        -25.0,
+        130.0
+      ],
+      "joint": null,
+      "witness": {
+        "cover": {
+          "maxVertexInsideDepthMm": -81.11290968272951,
+          "t": 7.3500000000000005,
+          "point": [
+            585.1629096827295,
+            -30.5,
+            130.00051891628252
+          ],
+          "sample": 294,
+          "sourceVertex": 0
+        },
+        "rail0": {
+          "maxVertexInsideDepthMm": -108.0204097504771,
+          "t": 10.825000000000001,
+          "point": [
+            -104.54752695672423,
+            -30.5,
+            630.6298593409415
+          ],
+          "sample": 433,
+          "sourceVertex": 232
+        },
+        "rail1": {
+          "maxVertexInsideDepthMm": -108.0204097504771,
+          "t": 10.825000000000001,
+          "point": [
+            -104.54752695672423,
+            -30.5,
+            630.6298593409415
+          ],
+          "sample": 433,
+          "sourceVertex": 232
+        }
+      },
+      "peakX": 609.6717219495492,
+      "peakXTime": 6.2,
+      "minZ": 117.13678648306973
+    },
+    {
+      "part": "rear output",
+      "source": "REV-41-1615",
+      "sourceToHeadA": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "baseTranslation": [
+        -92.0,
+        -54.25,
+        130.0
+      ],
+      "joint": null,
+      "witness": {
+        "cover": {
+          "maxVertexInsideDepthMm": -71.32843413286886,
+          "t": 7.3500000000000005,
+          "point": [
+            575.3784341328688,
+            -47.25,
+            129.9492249957996
+          ],
+          "sample": 294,
+          "sourceVertex": 0
+        },
+        "rail0": {
+          "maxVertexInsideDepthMm": -100.94767453287993,
+          "t": 10.825000000000001,
+          "point": [
+            -105.9915811470292,
+            -49.25,
+            618.9855641322381
+          ],
+          "sample": 433,
+          "sourceVertex": 2006
+        },
+        "rail1": {
+          "maxVertexInsideDepthMm": -100.94767453287993,
+          "t": 10.825000000000001,
+          "point": [
+            -105.9915811470292,
+            -49.25,
+            618.9855641322381
+          ],
+          "sample": 433,
+          "sourceVertex": 2006
+        }
+      },
+      "peakX": 619.4585117030158,
+      "peakXTime": 6.2,
+      "minZ": 110.05948659555236
+    },
+    {
+      "part": "rear stage",
+      "source": "REV-41-1602",
+      "sourceToHeadA": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "baseTranslation": [
+        -92.0,
+        -60.25,
+        130.0
+      ],
+      "joint": null,
+      "witness": {
+        "cover": {
+          "maxVertexInsideDepthMm": -71.45978613888153,
+          "t": 7.3500000000000005,
+          "point": [
+            575.5097861388815,
+            -65.0,
+            130.4499204632661
+          ],
+          "sample": 294,
+          "sourceVertex": 0
+        },
+        "rail0": {
+          "maxVertexInsideDepthMm": -100.94767453287993,
+          "t": 10.825000000000001,
+          "point": [
+            -105.9915811470292,
+            -65.0,
+            618.9855641322381
+          ],
+          "sample": 433,
+          "sourceVertex": 9424
+        },
+        "rail1": {
+          "maxVertexInsideDepthMm": -100.94767453287993,
+          "t": 10.825000000000001,
+          "point": [
+            -105.9915811470292,
+            -65.0,
+            618.9855641322381
+          ],
+          "sample": 433,
+          "sourceVertex": 9424
+        }
+      },
+      "peakX": 619.4585117030158,
+      "peakXTime": 6.2,
+      "minZ": 110.05948659555236
+    },
+    {
+      "part": "rear input plate",
+      "source": "REV-41-1607",
+      "sourceToHeadA": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baseTranslation": [
+        -92.0,
+        -70.25,
+        130.0
+      ],
+      "joint": null,
+      "witness": {
+        "cover": {
+          "maxVertexInsideDepthMm": -71.45978613888153,
+          "t": 7.3500000000000005,
+          "point": [
+            575.5097861388815,
+            -70.0,
+            130.4499204632661
+          ],
+          "sample": 294,
+          "sourceVertex": 1
+        },
+        "rail0": {
+          "maxVertexInsideDepthMm": -100.94767453287993,
+          "t": 10.825000000000001,
+          "point": [
+            -105.9915811470292,
+            -70.0,
+            618.9855641322381
+          ],
+          "sample": 433,
+          "sourceVertex": 166
+        },
+        "rail1": {
+          "maxVertexInsideDepthMm": -100.94767453287993,
+          "t": 10.825000000000001,
+          "point": [
+            -105.9915811470292,
+            -70.0,
+            618.9855641322381
+          ],
+          "sample": 433,
+          "sourceVertex": 166
+        }
+      },
+      "peakX": 619.3252961298385,
+      "peakXTime": 6.2,
+      "minZ": 110.05948659555236
+    },
+    {
+      "part": "rear motor",
+      "source": "REV-21-1651",
+      "sourceToHeadA": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baseTranslation": [
+        -92.0,
+        -58.75,
+        130.0
+      ],
+      "joint": null,
+      "witness": {
+        "cover": {
+          "maxVertexInsideDepthMm": -75.61298525812455,
+          "t": 7.3500000000000005,
+          "point": [
+            579.6629852581245,
+            -70.603553,
+            129.97168623284844
+          ],
+          "sample": 294,
+          "sourceVertex": 42
+        },
+        "rail0": {
+          "maxVertexInsideDepthMm": -102.48127305070304,
+          "t": 10.825000000000001,
+          "point": [
+            -109.82360681026337,
+            -84.532991,
+            628.6900243125137
+          ],
+          "sample": 433,
+          "sourceVertex": 171
+        },
+        "rail1": {
+          "maxVertexInsideDepthMm": -102.48136149543296,
+          "t": 10.825000000000001,
+          "point": [
+            -109.8570627477535,
+            -70.603553,
+            628.7481485855213
+          ],
+          "sample": 433,
+          "sourceVertex": 43
+        }
+      },
+      "peakX": 623.0742588183368,
+      "peakXTime": 6.175,
+      "minZ": 111.59811951532743
+    },
+    {
+      "part": "rear sun",
+      "source": "REV-41-1608",
+      "sourceToHeadA": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "baseTranslation": [
+        -92.0,
+        -62.25,
+        130.0
+      ],
+      "joint": null,
+      "witness": {
+        "cover": {
+          "maxVertexInsideDepthMm": -88.99881131229151,
+          "t": 7.3500000000000005,
+          "point": [
+            593.0488113122915,
+            -65.25,
+            130.3653832399267
+          ],
+          "sample": 294,
+          "sourceVertex": 0
+        },
+        "rail0": {
+          "maxVertexInsideDepthMm": -115.93532732690166,
+          "t": 10.825000000000001,
+          "point": [
+            -97.77535247794603,
+            -65.25,
+            634.7299442188255
+          ],
+          "sample": 433,
+          "sourceVertex": 604
+        },
+        "rail1": {
+          "maxVertexInsideDepthMm": -115.93532732690166,
+          "t": 10.825000000000001,
+          "point": [
+            -97.77535247794603,
+            -65.25,
+            634.7299442188255
+          ],
+          "sample": 433,
+          "sourceVertex": 604
+        }
+      },
+      "peakX": 601.7857248009502,
+      "peakXTime": 6.2,
+      "minZ": 125.0517834300325
+    },
+    {
+      "part": "rear seg 0",
+      "source": "REV-41-1503",
+      "sourceToHeadA": [
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "baseTranslation": [
+        -64.56194500000001,
+        -19.0,
+        146.875
+      ],
+      "joint": "rear",
+      "witness": {
+        "cover": {
+          "maxVertexInsideDepthMm": -62.90070170594456,
+          "t": 7.775,
+          "point": [
+            566.9507017059445,
+            -19.25,
+            169.7314880953832
+          ],
+          "sample": 311,
+          "sourceVertex": 313
+        },
+        "rail0": {
+          "maxVertexInsideDepthMm": -130.13100860356454,
+          "t": 10.975,
+          "point": [
+            -34.04653610140224,
+            -19.5,
+            552.73975890175
+          ],
+          "sample": 439,
+          "sourceVertex": 23
+        },
+        "rail1": {
+          "maxVertexInsideDepthMm": -130.13100860356454,
+          "t": 10.975,
+          "point": [
+            -34.04653610140224,
+            -19.5,
+            552.73975890175
+          ],
+          "sample": 439,
+          "sourceVertex": 23
+        }
+      },
+      "peakX": 648.6648511480576,
+      "peakXTime": 6.175,
+      "minZ": 139.4889773172735
+    },
+    {
+      "part": "rear seg 1",
+      "source": "REV-41-1503",
+      "sourceToHeadA": [
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "baseTranslation": [
+        -111.685835,
+        -19.0,
+        146.875
+      ],
+      "joint": "rear",
+      "witness": {
+        "cover": {
+          "maxVertexInsideDepthMm": -15.777367733343318,
+          "t": 7.775,
+          "point": [
+            519.8273677333433,
+            -19.25,
+            169.5025688109574
+          ],
+          "sample": 311,
+          "sourceVertex": 313
+        },
+        "rail0": {
+          "maxVertexInsideDepthMm": -130.31688897248404,
+          "t": 10.975,
+          "point": [
+            -57.44732067767906,
+            -19.5,
+            593.6428674626745
+          ],
+          "sample": 439,
+          "sourceVertex": 23
+        },
+        "rail1": {
+          "maxVertexInsideDepthMm": -130.31688897248404,
+          "t": 10.975,
+          "point": [
+            -57.44732067767906,
+            -19.5,
+            593.6428674626745
+          ],
+          "sample": 439,
+          "sourceVertex": 23
+        }
+      },
+      "peakX": 601.5409663674305,
+      "peakXTime": 6.175,
+      "minZ": 139.31320816141465
+    },
+    {
+      "part": "rear seg 2",
+      "source": "REV-41-1503",
+      "sourceToHeadA": [
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "baseTranslation": [
+        -158.80972500000001,
+        -19.0,
+        146.875
+      ],
+      "joint": "rear",
+      "witness": {
+        "cover": {
+          "maxVertexInsideDepthMm": 31.276870865599847,
+          "t": 7.775,
+          "point": [
+            472.7718036504402,
+            -19.276168,
+            155.32312913440015
+          ],
+          "sample": 311,
+          "sourceVertex": 316
+        },
+        "rail0": {
+          "maxVertexInsideDepthMm": -130.49656418331818,
+          "t": 11.025,
+          "point": [
+            -80.88314637113685,
+            -19.5,
+            634.5942587027398
+          ],
+          "sample": 441,
+          "sourceVertex": 23
+        },
+        "rail1": {
+          "maxVertexInsideDepthMm": -130.49656418331818,
+          "t": 11.025,
+          "point": [
+            -80.88314637113685,
+            -19.5,
+            634.5942587027398
+          ],
+          "sample": 441,
+          "sourceVertex": 23
+        }
+      },
+      "peakX": 554.4170815868036,
+      "peakXTime": 6.175,
+      "minZ": 139.1374390055558
+    }
+  ],
+  "cycle": "47fccdb670e5535b632b765775ab3adc71ff0f7a07fbe8b017dca84dc6fc84df",
+  "fixture": "11d290ba4ceb1cd32f3f7cf18255d3e949792e5d37400c6700ce9d0b01b0fb5a",
+  "toe": "df60294ff888524e6518e1733f0ad4cd63e8bc321c4740d43b870cb102470b53",
+  "countSamples": 600
+}

@@ -1,0 +1,71 @@
+{
+  "equipped-front": {
+    "inputs": "cb353b7737d995f630d3445670cd8ad237c1ff7cb3bf1d1c26903fe9bbcd2b3c",
+    "samples": 401,
+    "minDisabledFloorMm": 9.412568853856367,
+    "fieldCandidates": {
+      "Chain hook \u00b7 left / working chain": [
+        0.0,
+        1.1249999999999594,
+        92
+      ],
+      "Chain hook \u00b7 right / working chain": [
+        0.0,
+        1.1249999999999594,
+        92
+      ],
+      "Keeper drive mast / working chain": [
+        0.0,
+        9.99999999999937,
+        725
+      ],
+      "Common keeper yoke and sliding rack / working chain": [
+        0.17500000000000013,
+        9.99999999999937,
+        6770
+      ],
+      "Keeper motor and return spring / working chain": [
+        1.5750000000001096,
+        7.700000000003665,
+        111
+      ],
+      "Keeper return pinion / working chain": [
+        1.6250000000001263,
+        5.750000000001282,
+        27
+      ],
+      "Keeper pinion output / working chain": [
+        1.6500000000001347,
+        3.7499999999992815,
+        24
+      ]
+    }
+  },
+  "equipped-rear": {
+    "inputs": "14e60c94f0e755964f5d255cdc71e41f16d03443132359d5dd8dc3720bdaa41b",
+    "samples": 401,
+    "minDisabledFloorMm": 78.98435028765383,
+    "fieldCandidates": {
+      "Chain hook \u00b7 left / working chain": [
+        0.0,
+        1.1249999999999594,
+        92
+      ],
+      "Chain hook \u00b7 right / working chain": [
+        0.0,
+        1.1249999999999594,
+        92
+      ],
+      "Keeper drive mast / working chain": [
+        0.0,
+        9.99999999999937,
+        789
+      ],
+      "Common keeper yoke and sliding rack / working chain": [
+        0.17500000000000013,
+        9.99999999999937,
+        7222
+      ]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "scope": "1 degree relative-placement samples on the new arms and altered slide range. Existing nominal guide and lead-screw interfaces listed separately. Shot checked at archived 12 ms display samples. Disabled climb sampled on inherited motion.",
+  "exactPairs": 92,
+  "positivePairs": [],
+  "minSampledShotGapMm": 0.0,
+  "shotNarrowTests": 29,
+  "shotHits": [
+    [
+      0.07200000000000005,
+      "Replaceable pickup lip",
+      232.54747106058315
+    ],
+    [
+      0.08400000000000006,
+      "Replaceable pickup lip",
+      16.50716265053233
+    ],
+    [
+      0.09600000000000007,
+      "Replaceable pickup lip",
+      23.90669610185116
+    ],
+    [
+      0.10800000000000008,
+      "Replaceable pickup lip",
+      338.2908542379358
+    ]
+  ],
+  "minDisabledLipHeightMm": 836.7212066872842
+}

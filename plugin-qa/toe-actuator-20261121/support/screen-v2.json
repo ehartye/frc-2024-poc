@@ -1,0 +1,350 @@
+{
+ "neutral": [
+  [
+   "side shaft blank",
+   "side pinion leaf 0",
+   1.987430306314019
+  ],
+  [
+   "side shaft blank",
+   "side bearing -1 REV-41-1527",
+   5.379775811909853
+  ],
+  [
+   "side shaft blank",
+   "side bearing 1 REV-41-1527",
+   5.379775811909893
+  ],
+  [
+   "rear shaft blank",
+   "rear pinion leaf 0",
+   1.9874303063140135
+  ],
+  [
+   "rear shaft blank",
+   "rear bearing -1 REV-41-1527",
+   5.379775811909894
+  ],
+  [
+   "rear shaft blank",
+   "rear bearing 1 REV-41-1527",
+   5.37977581190987
+  ],
+  [
+   "left moving rack backer and finger link",
+   "left seg 0 leaf 0",
+   1.9410102304370658
+  ],
+  [
+   "left moving rack backer and finger link",
+   "left seg 1 leaf 0",
+   1.941010230446405
+  ],
+  [
+   "right moving rack backer and finger link",
+   "right seg 0 leaf 0",
+   1.9410102583740338
+  ],
+  [
+   "right moving rack backer and finger link",
+   "right seg 1 leaf 0",
+   1.941010258376623
+  ],
+  [
+   "rear moving rack backer and finger link",
+   "rear seg 0 leaf 0",
+   1.9410102304420518
+  ],
+  [
+   "rear moving rack backer and finger link",
+   "rear seg 1 leaf 0",
+   1.9410102304555925
+  ],
+  [
+   "rear moving rack backer and finger link",
+   "rear seg 2 leaf 0",
+   1.9410102304414774
+  ],
+  [
+   "left original finger",
+   "left moving rack backer and finger link",
+   36.0
+  ],
+  [
+   "right original finger",
+   "right moving rack backer and finger link",
+   36.0
+  ],
+  [
+   "rear original finger",
+   "rear moving rack backer and finger link",
+   210.0
+  ]
+ ],
+ "mid-withdraw": [
+  [
+   "side shaft blank",
+   "side pinion leaf 0",
+   1.987430306314019
+  ],
+  [
+   "side shaft blank",
+   "side bearing -1 REV-41-1527",
+   5.379775811909853
+  ],
+  [
+   "side shaft blank",
+   "side bearing 1 REV-41-1527",
+   5.379775811909893
+  ],
+  [
+   "rear shaft blank",
+   "rear pinion leaf 0",
+   1.9874303063140135
+  ],
+  [
+   "rear shaft blank",
+   "rear bearing -1 REV-41-1527",
+   5.379775811909894
+  ],
+  [
+   "rear shaft blank",
+   "rear bearing 1 REV-41-1527",
+   5.37977581190987
+  ],
+  [
+   "left moving rack backer and finger link",
+   "left seg 0 leaf 0",
+   1.941010230437135
+  ],
+  [
+   "left moving rack backer and finger link",
+   "left seg 1 leaf 0",
+   1.9410102304522294
+  ],
+  [
+   "right moving rack backer and finger link",
+   "right seg 0 leaf 0",
+   1.941010258383204
+  ],
+  [
+   "right moving rack backer and finger link",
+   "right seg 1 leaf 0",
+   1.941010258382413
+  ],
+  [
+   "rear moving rack backer and finger link",
+   "rear seg 0 leaf 0",
+   1.9410102304433512
+  ],
+  [
+   "rear moving rack backer and finger link",
+   "rear seg 1 leaf 0",
+   1.9410102304536438
+  ],
+  [
+   "rear moving rack backer and finger link",
+   "rear seg 2 leaf 0",
+   1.941010230441722
+  ],
+  [
+   "left original finger",
+   "left moving rack backer and finger link",
+   36.0
+  ],
+  [
+   "right original finger",
+   "right moving rack backer and finger link",
+   36.0
+  ],
+  [
+   "rear original finger",
+   "rear moving rack backer and finger link",
+   210.0
+  ]
+ ],
+ "capture": [
+  [
+   "side shaft blank",
+   "side pinion leaf 0",
+   1.987430306314019
+  ],
+  [
+   "side shaft blank",
+   "side bearing -1 REV-41-1527",
+   5.379775811909853
+  ],
+  [
+   "side shaft blank",
+   "side bearing 1 REV-41-1527",
+   5.379775811909893
+  ],
+  [
+   "rear shaft blank",
+   "rear pinion leaf 0",
+   1.9874303063140135
+  ],
+  [
+   "rear shaft blank",
+   "rear bearing -1 REV-41-1527",
+   5.379775811909894
+  ],
+  [
+   "rear shaft blank",
+   "rear bearing 1 REV-41-1527",
+   5.37977581190987
+  ],
+  [
+   "left moving rack backer and finger link",
+   "left seg 0 leaf 0",
+   1.941010230451748
+  ],
+  [
+   "left moving rack backer and finger link",
+   "left seg 1 leaf 0",
+   1.9410102304364305
+  ],
+  [
+   "right moving rack backer and finger link",
+   "right seg 0 leaf 0",
+   1.941010258368444
+  ],
+  [
+   "right moving rack backer and finger link",
+   "right seg 1 leaf 0",
+   1.9410102583820332
+  ],
+  [
+   "rear moving rack backer and finger link",
+   "rear seg 0 leaf 0",
+   1.94101023045595
+  ],
+  [
+   "rear moving rack backer and finger link",
+   "rear seg 1 leaf 0",
+   1.9410102304428791
+  ],
+  [
+   "rear moving rack backer and finger link",
+   "rear seg 2 leaf 0",
+   1.9410102304418497
+  ],
+  [
+   "left original finger",
+   "left moving rack backer and finger link",
+   36.0
+  ],
+  [
+   "right original finger",
+   "right moving rack backer and finger link",
+   36.0
+  ],
+  [
+   "rear original finger",
+   "rear moving rack backer and finger link",
+   210.0
+  ]
+ ],
+ "home": [
+  [
+   "side shaft blank",
+   "side pinion leaf 0",
+   1.987430306314019
+  ],
+  [
+   "side shaft blank",
+   "side bearing -1 REV-41-1527",
+   5.379775811909853
+  ],
+  [
+   "side shaft blank",
+   "side bearing 1 REV-41-1527",
+   5.379775811909893
+  ],
+  [
+   "rear shaft blank",
+   "rear pinion leaf 0",
+   1.9874303063140135
+  ],
+  [
+   "rear shaft blank",
+   "rear bearing -1 REV-41-1527",
+   5.379775811909894
+  ],
+  [
+   "rear shaft blank",
+   "rear bearing 1 REV-41-1527",
+   5.37977581190987
+  ],
+  [
+   "left moving rack backer and finger link",
+   "left seg 0 leaf 0",
+   1.9410102304369494
+  ],
+  [
+   "left moving rack backer and finger link",
+   "left seg 1 leaf 0",
+   1.9410102304360664
+  ],
+  [
+   "right moving rack backer and finger link",
+   "right seg 0 leaf 0",
+   1.9410102583731301
+  ],
+  [
+   "right moving rack backer and finger link",
+   "right seg 1 leaf 0",
+   1.9410102583676239
+  ],
+  [
+   "rear moving rack backer and finger link",
+   "rear seg 0 leaf 0",
+   1.941010230445566
+  ],
+  [
+   "rear moving rack backer and finger link",
+   "rear seg 1 leaf 0",
+   1.9410102304418981
+  ],
+  [
+   "rear moving rack backer and finger link",
+   "rear seg 2 leaf 0",
+   1.9410102304528223
+  ],
+  [
+   "rear stationary POM guide 1",
+   "rear moving rack backer and finger link",
+   40.832778368303586
+  ],
+  [
+   "left original finger",
+   "left moving rack backer and finger link",
+   36.0
+  ],
+  [
+   "left original finger",
+   "left home switch",
+   2.1004255550348603
+  ],
+  [
+   "right original finger",
+   "right moving rack backer and finger link",
+   36.0
+  ],
+  [
+   "right original finger",
+   "right home switch",
+   2.1004255550348603
+  ],
+  [
+   "rear original finger",
+   "rear moving rack backer and finger link",
+   210.0
+  ],
+  [
+   "rear original finger",
+   "rear home switch",
+   2.1004255550348523
+  ]
+ ]
+}

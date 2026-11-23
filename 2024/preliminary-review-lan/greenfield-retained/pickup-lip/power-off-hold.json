@@ -1,0 +1,46 @@
+[
+  {
+    "case": "pickup",
+    "flap": false,
+    "belt": "coast",
+    "dt": 0.0005,
+    "segments": 48,
+    "peakOutwardMm": 296.4590817170829,
+    "endShiftMm": 296.4590817170829,
+    "centerPastFlapS": 1.217,
+    "carpetContactS": 1.3900000000000001
+  },
+  {
+    "case": "pickup",
+    "flap": true,
+    "belt": "coast",
+    "dt": 0.0005,
+    "segments": 48,
+    "peakOutwardMm": 64.08376942310403,
+    "endShiftMm": 63.53225322350228,
+    "centerPastFlapS": null,
+    "carpetContactS": null
+  },
+  {
+    "case": "pickup",
+    "flap": false,
+    "belt": "coast",
+    "dt": 0.00025,
+    "segments": 96,
+    "peakOutwardMm": 295.9263529897951,
+    "endShiftMm": 295.9263529897951,
+    "centerPastFlapS": 1.2902500000000001,
+    "carpetContactS": 1.46625
+  },
+  {
+    "case": "pickup",
+    "flap": true,
+    "belt": "coast",
+    "dt": 0.00025,
+    "segments": 96,
+    "peakOutwardMm": 63.83546068596516,
+    "endShiftMm": 63.268973123957714,
+    "centerPastFlapS": null,
+    "carpetContactS": null
+  }
+]

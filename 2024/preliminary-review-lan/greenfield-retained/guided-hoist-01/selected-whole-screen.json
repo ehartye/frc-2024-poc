@@ -1,0 +1,148 @@
+{
+  "parent": "093ca2ff6f5d2d53aa46c66651baa65f2d93bc59611a5e6e183006b9c7349415",
+  "package": "b85dd3688535215093ba0cf8dc8f4a4bbdfea4d5a16af864a22bef1d1fdc3fe0",
+  "poses": 100,
+  "comparisons": 680,
+  "intersections": [
+    [
+      96.0,
+      0,
+      0,
+      0,
+      "Hoist redirect ear 211 · right",
+      "Pack lead",
+      11.973599065190697
+    ],
+    [
+      96.0,
+      0,
+      0,
+      0,
+      "Hoist rear redirect axle · right",
+      "Pack lead",
+      1.7752736171914785
+    ],
+    [
+      98.0,
+      0,
+      0,
+      0,
+      "Hoist redirect ear 211 · right",
+      "Pack lead",
+      18.02160542556416
+    ],
+    [
+      98.0,
+      0,
+      0,
+      0,
+      "Hoist rear redirect axle · right",
+      "Pack lead",
+      95.41122677264566
+    ],
+    [
+      100.0,
+      0,
+      0,
+      0,
+      "Hoist redirect ear 211 · right",
+      "Pack lead",
+      21.141558349343814
+    ],
+    [
+      100.0,
+      0,
+      0,
+      0,
+      "Hoist rear redirect axle · right",
+      "Pack lead",
+      110.99992967335437
+    ],
+    [
+      102.0,
+      0,
+      0,
+      0,
+      "Hoist redirect ear 211 · right",
+      "Pack lead",
+      20.254118382608677
+    ],
+    [
+      102.0,
+      0,
+      0,
+      0,
+      "Hoist rear redirect axle · right",
+      "Pack lead",
+      119.7957514242135
+    ],
+    [
+      104.0,
+      0,
+      0,
+      0,
+      "Hoist redirect ear 211 · right",
+      "Pack lead",
+      25.865836605637607
+    ],
+    [
+      104.0,
+      0,
+      0,
+      0,
+      "Hoist rear redirect axle · right",
+      "Pack lead",
+      25.91493427409846
+    ],
+    [
+      106.0,
+      0,
+      0,
+      0,
+      "Hoist redirect ear 211 · right",
+      "Pack lead",
+      2.5519043166509077
+    ]
+  ],
+  "pitchStop": [
+    [
+      75.38642106234,
+      10.8,
+      0.04999999999193607,
+      0.0
+    ],
+    [
+      74.38642106234,
+      10.8,
+      0.0,
+      101.99152506468316
+    ],
+    [
+      76.38642106234,
+      10.8,
+      0.0,
+      101.99152506257259
+    ]
+  ],
+  "controlContacts": [
+    [
+      74.38642106234,
+      0,
+      0,
+      4.2,
+      "Capture-angle dog bushing",
+      "Catch dog",
+      101.99152506468316
+    ],
+    [
+      76.38642106234,
+      0,
+      0,
+      4.2,
+      "Capture-angle dog bushing",
+      "Catch dog",
+      101.99152506257259
+    ]
+  ],
+  "scope": "Sampled tilt/slide and supplied six hoist states. The gate and rotating cassette internal comparisons and field service are separate."
+}

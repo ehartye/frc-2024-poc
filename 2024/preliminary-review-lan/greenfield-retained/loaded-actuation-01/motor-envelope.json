@@ -1,0 +1,186 @@
+{
+  "source": "4fdcdd973fecf09fc8d1851ebcc51220c34c7def9f30e82c21a57c5b72a7625c",
+  "root": "a29a146d8897f64e8f056fcb46a431ba234c7aecccbc3233b6834c43c703bc88",
+  "cases": [
+    {
+      "orientation": "forward",
+      "clockDeg": 0,
+      "originalPilotCollision": 162.57741982327224,
+      "pilotAfter": 0.0,
+      "shaftHub": 0.0,
+      "spindleHub": 0.0,
+      "obstructions": [],
+      "toolObstructions": [
+        [
+          0,
+          "Slide bearing mount 220",
+          159.043128087983
+        ],
+        [
+          0,
+          "Travel nut and clevis",
+          198.2677079422961
+        ],
+        [
+          0,
+          "back wall",
+          47.7129384263949
+        ],
+        [
+          0,
+          "side webs",
+          47.7129384263949
+        ],
+        [
+          1,
+          "Slide bearing mount 220",
+          17.42333670062886
+        ],
+        [
+          1,
+          "back wall",
+          47.7129384263949
+        ],
+        [
+          1,
+          "side webs",
+          47.7129384263949
+        ]
+      ]
+    },
+    {
+      "orientation": "forward",
+      "clockDeg": 45,
+      "originalPilotCollision": 162.57741982327224,
+      "pilotAfter": 0.0,
+      "shaftHub": 0.0,
+      "spindleHub": 0.0,
+      "obstructions": [],
+      "toolObstructions": [
+        [
+          0,
+          "Slide bearing mount 220",
+          159.04312808798304
+        ],
+        [
+          0,
+          "Travel nut and clevis",
+          59.73468581257962
+        ],
+        [
+          0,
+          "back wall",
+          47.712938426394906
+        ],
+        [
+          0,
+          "side webs",
+          47.712938426394906
+        ],
+        [
+          1,
+          "Slide bearing mount 220",
+          158.29868661284488
+        ],
+        [
+          1,
+          "Travel nut and clevis",
+          181.09246480338044
+        ],
+        [
+          1,
+          "back wall",
+          47.7129384263949
+        ],
+        [
+          1,
+          "side webs",
+          47.7129384263949
+        ]
+      ]
+    },
+    {
+      "orientation": "rear",
+      "clockDeg": 0,
+      "originalPilotCollision": 162.57741982327224,
+      "pilotAfter": 0.0,
+      "shaftHub": 0.0,
+      "spindleHub": 0.0,
+      "obstructions": [],
+      "toolObstructions": [
+        [
+          0,
+          "Slide bearing mount -49",
+          17.42333670062886
+        ],
+        [
+          0,
+          "back wall",
+          47.7129384263949
+        ],
+        [
+          0,
+          "side webs",
+          47.7129384263949
+        ],
+        [
+          1,
+          "Slide bearing mount -49",
+          159.043128087983
+        ],
+        [
+          1,
+          "back wall",
+          47.7129384263949
+        ],
+        [
+          1,
+          "side webs",
+          47.7129384263949
+        ]
+      ]
+    },
+    {
+      "orientation": "rear",
+      "clockDeg": 45,
+      "originalPilotCollision": 162.57741982327224,
+      "pilotAfter": 0.0,
+      "shaftHub": 0.0,
+      "spindleHub": 0.0,
+      "obstructions": [],
+      "toolObstructions": [
+        [
+          0,
+          "Slide bearing mount -49",
+          158.2986866129243
+        ],
+        [
+          0,
+          "back wall",
+          47.712938426394906
+        ],
+        [
+          0,
+          "side webs",
+          47.712938426394906
+        ],
+        [
+          1,
+          "Slide bearing mount -49",
+          159.043128087983
+        ],
+        [
+          1,
+          "back wall",
+          47.7129384263949
+        ],
+        [
+          1,
+          "side webs",
+          47.7129384263949
+        ]
+      ]
+    }
+  ],
+  "scope": "Manufacturer shaft, pilot and case are represented by conservative occupied cylinders; the terminal disk is a keepout, and any interference there requires actual connector narrowing. The 75 mm straight driver starts under the proposed motor plate. Retain a separate incoming support attachment and cable service check."
+}

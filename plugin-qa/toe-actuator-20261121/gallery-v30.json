@@ -1,0 +1,28 @@
+{
+  "project": "appgprj_6b0137ec2f248191badcf0be808d4a1b",
+  "version": 30,
+  "versionId": "appgprj_6b0137ec2f248191badcf0be808d4a1b~appgver_548ec4a452e08191b6f3caca4d82e13f",
+  "deploymentId": "appgdep_6b01cb7b4e288191b40a90023c2de226",
+  "url": "https://frc-design-snapshot-gallery.ehartye.chatgpt.site",
+  "status": "succeeded",
+  "latest": 30,
+  "sourceCommit": "070674a2e289afc372f3775c73a900e9edd79a2c",
+  "native": "037a6d491b12341a56d4cf145add15e4b4e9a5c7598b39f50689a29857bb7f65",
+  "placed": "39dae40b60c7316bb49fdb31d738634547ec0175ab14ad43c396a4f64fa26234",
+  "still": "41e58b72e618258f8288e6ba493367ec5f244408696c6d02b9890498bd93840f",
+  "localBrowser": {
+    "widths": [
+      390,
+      1280
+    ],
+    "views": 38,
+    "revisions": [
+      11,
+      8,
+      10
+    ]
+  },
+  "audienceAllowedAccounts": 1,
+  "externalVisitors": 0,
+  "liveBrowser": "Native deployment and saved version verified, authenticated page navigation not attempted."
+}

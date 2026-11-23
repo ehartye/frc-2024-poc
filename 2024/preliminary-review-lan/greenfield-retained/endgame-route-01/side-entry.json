@@ -1,0 +1,14 @@
+{
+  "connected": false,
+  "components": 2,
+  "originComponent": 1,
+  "goalComponent": 2,
+  "dimensions": [
+    109,
+    131,
+    159
+  ],
+  "source": "093ca2ff6f5d2d53aa46c66651baa65f2d93bc59611a5e6e183006b9c7349415",
+  "route": [],
+  "scope": "Nominal lattice on three independent coordinates. Uses the two hook apertures open, two-degree pitch steps, 20 mm XY steps and conservative placed fixture boxes. Disconnection is a failed coarse screen, not a proof of impossibility."
+}

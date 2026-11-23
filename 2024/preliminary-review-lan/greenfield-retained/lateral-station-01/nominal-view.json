@@ -1,0 +1,131 @@
+{
+  "case": "lateral-nominal-48",
+  "source": "857ebc81f7984232a54281bafedc30c07a43cb0d2d7d1a5cd32f536c8f316ed3",
+  "step": "a29a146d8897f64e8f056fcb46a431ba234c7aecccbc3233b6834c43c703bc88",
+  "legs": [
+    {
+      "id": "middle",
+      "floorStartS": 1.8438702494536878,
+      "scoreRequestS": 10.276870249453687,
+      "endS": 14.427870249454106,
+      "seat": true,
+      "held": true,
+      "opening": {
+        "firstPossibleS": 0.9874999999999466,
+        "fullyThroughByS": 1.0739999999999372,
+        "minimumMarginM": 0.021162828400453776
+      },
+      "counterS": 14.427870249454106,
+      "release": 0.7944999999999679,
+      "busV": 8.344287044974564,
+      "files": {
+        "dev-middle-48.json": "94f809e02150f0ebcf2bc8f09ab718e2fdf5de3f0c47b47dd6c96780dbf3bae2",
+        "split-outerlane-dev-middle-48-6.88.json": "9b5a26081a44f3f9ac18b0384d11c77c7eaa20065b935d493c6717e6551db4d9"
+      }
+    },
+    {
+      "id": "outer",
+      "floorStartS": 19.558612600901167,
+      "scoreRequestS": 26.55961260090117,
+      "endS": 30.653612600901617,
+      "seat": true,
+      "held": true,
+      "opening": {
+        "firstPossibleS": 0.993499999999946,
+        "fullyThroughByS": 1.084999999999936,
+        "minimumMarginM": 0.021330599472553686
+      },
+      "counterS": 30.653612600901617,
+      "release": 0.7944999999999679,
+      "busV": 8.344287146640838,
+      "files": {
+        "dev-outer-48.json": "6ff2eba7e865cb1fe66681fb027642a2a2cb78c6d205f6d9fcd13ef6ddaa51cd",
+        "split-outerlane-dev-outer-48-6.88.json": "b734e9e94f10d03606450913da809d963e337e5dfaef47fa6b9d5a723ceeaee9"
+      }
+    },
+    {
+      "id": "inner",
+      "floorStartS": 36.135281095207944,
+      "scoreRequestS": 43.13628109520794,
+      "endS": 46.86328109520835,
+      "seat": true,
+      "held": true,
+      "opening": {
+        "firstPossibleS": 0.9889999999999465,
+        "fullyThroughByS": 1.0689999999999378,
+        "minimumMarginM": 0.020169170745665262
+      },
+      "counterS": 46.86328109520835,
+      "release": 0.793499999999968,
+      "busV": 8.344287154763226,
+      "files": {
+        "dev-inner-48.json": "672c0266aa6f1181b465261823196364e0645b76bc1729922574e2a70d421cc1",
+        "split-outerlane-dev-inner-48-6.88.json": "79392f62a4f39caa4a2616ee52dceae7d4eeb80fd9956b69dd09312add248703"
+      }
+    },
+    {
+      "id": "center-high",
+      "floorStartS": 54.05196578415775,
+      "scoreRequestS": 61.568965784157754,
+      "endS": 65.87996578415809,
+      "seat": true,
+      "held": true,
+      "opening": {
+        "firstPossibleS": 0.9874999999999466,
+        "fullyThroughByS": 1.0749999999999371,
+        "minimumMarginM": 0.02296630564942627
+      },
+      "counterS": 65.87996578415809,
+      "release": 0.793999999999968,
+      "busV": 8.344286765909185,
+      "files": {
+        "dev-center-high-48.json": "876e8a0105b4f3e9e41f7b792c36a3f415a5e34b5af64e7976462a17c133015c",
+        "split-outerlane-dev-center-high-48-6.88.json": "2a2a8124d00790d6892ec77ed94742909beb606e2ee54c99529362c263281b09"
+      }
+    },
+    {
+      "id": "center-mid",
+      "floorStartS": 75.62474839102049,
+      "scoreRequestS": 85.71674839102049,
+      "endS": 90.01824839102082,
+      "seat": true,
+      "held": true,
+      "opening": {
+        "firstPossibleS": 0.9874999999999466,
+        "fullyThroughByS": 1.075499999999937,
+        "minimumMarginM": 0.017063893000541827
+      },
+      "counterS": 90.01824839102082,
+      "release": 0.7949999999999678,
+      "busV": 8.344287164725573,
+      "files": {
+        "dev-center-mid-48.json": "20409483f0d7e89abd716394440463f7fe0e78c77701601f1943087b8bd2a38c",
+        "split-outerlane-dev-center-mid-48-6.88.json": "f9d5ee71197f8cf76aa957f3ccbf5b6aa7620a3ba14b1270227a468160192374"
+      }
+    },
+    {
+      "id": "center-low",
+      "floorStartS": 101.21809769423504,
+      "scoreRequestS": 112.10009769423505,
+      "endS": 116.47409769423534,
+      "seat": true,
+      "held": true,
+      "opening": {
+        "firstPossibleS": 0.9864999999999468,
+        "fullyThroughByS": 1.0734999999999373,
+        "minimumMarginM": 0.019096125588738515
+      },
+      "counterS": 116.47409769423534,
+      "release": 0.793999999999968,
+      "busV": 8.344287922697758,
+      "files": {
+        "dev-center-low-48.json": "9bfd21714bc5b76b16cdad59e6e180905c62f3eeb5d55dfebbdd008bdccb9de2",
+        "split-outerlane-dev-center-low-48-6.88.json": "fd67e0edabf4c508988bb4bd5d370f70168a68da5a6b1c9ab5f7774e93dff8d5"
+      }
+    }
+  ],
+  "timeS": 116.47409769423534,
+  "frames": 2231,
+  "score": 6,
+  "power": "035502fff662bce8f1fa863a4a724e3e4667bf5b1338306a3c6a0c48b56fbc3e"
+}

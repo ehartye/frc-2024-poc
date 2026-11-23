@@ -1,0 +1,20 @@
+{
+  "tag": "R02-inner",
+  "originalShotSha": "28d2269ee8421391ecb5016a2e63f65835c8d5795d00206b8ad3039842b4ed9d",
+  "minimumOpeningMm": 23.425725802842113,
+  "identicalSampledPoseError": 0.0,
+  "elapsedAtStart": 44.79073412131745,
+  "observedTo": 15.0,
+  "counterS": null,
+  "counterMissionClock": null,
+  "finalQ": [
+    1.311645999928249,
+    6.012773638827644,
+    0.02539978244692632,
+    -1.0247201076480681e-16,
+    -0.6946100170591563,
+    0.7193864915336381,
+    2.328692847633268e-16
+  ],
+  "scope": "Original release with extended field observation only. Any late credit requires the remaining robot route, deadline and prior counter occupancy to be reconciled."
+}

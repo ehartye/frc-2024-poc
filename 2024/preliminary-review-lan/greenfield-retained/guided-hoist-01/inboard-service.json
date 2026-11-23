@@ -1,0 +1,36 @@
+{
+  "80": {
+    "minGapMm": 0.0,
+    "closest": "Hook guide channel · right",
+    "hits": {
+      "Hook guide channel · right": 22030.21395912897,
+      "Guide rear anchor web · right": 571.5963001397945,
+      "Guide rear anchor cleat · right": 2411.9999999999973,
+      "Hoist redirect ear 194 · right": 1103.2854624794043,
+      "Hoist redirect ear 211 · right": 1103.2854624794043,
+      "Hoist rear redirect sheave · right": 5007.384530556772,
+      "Hoist rear redirect axle · right": 678.5840131753952,
+      "Slide stop guide · right": 339.7789534490042,
+      "Slide stop pin · right": 48.06636759992354,
+      "Hoist rope drum to sheave · right": 78.70395015103298,
+      "Hoist rope working span · right": 1251.0524456642563,
+      "Redirect cross-tie · right": 7186.457142857127
+    }
+  },
+  "125": {
+    "minGapMm": 0.0,
+    "closest": "Shared lift crosspiece",
+    "hits": {
+      "Shared lift crosspiece": 13459.072597359062,
+      "Hook guide channel · right": 27631.823850132634,
+      "Captive hook wear block · right": 21791.90694466146,
+      "Hook slider liner 196.2 · right": 641.733401177841,
+      "Hook slider liner 215.0 · right": 641.733401177841,
+      "Hoist rope working span · right": 566.3648911096399,
+      "Hook anchor compression tube · right": 16690.232589245734,
+      "Hook anchor root · right": 4256.000000000001,
+      "Spliced hoist eye · right": 801.7279924385275,
+      "Hoist splice allowance · right": 5089.380098815448
+    }
+  }
+}

@@ -1,0 +1,359 @@
+{
+  "parent": "a29a146d8897f64e8f056fcb46a431ba234c7aecccbc3233b6834c43c703bc88",
+  "cartridge": "869e973909d97f2ca7cc4e5c7cb5d06a3c73a572531adeddf154cfe61220597e",
+  "phaseWireGauge": "16 AWG from REV-21-1651-DS",
+  "wireFaces": "The four outgoing planar faces in exits.log are at source X16.5. The previous keepout began at installed X282 and omitted these stubs.",
+  "path": [
+    {
+      "start": [
+        261.0,
+        291.4835,
+        452.2615
+      ],
+      "end": [
+        261.0,
+        325.91168824543144,
+        504.3675323681471
+      ],
+      "radius": 1.75,
+      "minBendRadiusBoundMm": 49.920649207978606,
+      "connectorReservationDiameterMm": 14.0
+    },
+    {
+      "start": [
+        261.0,
+        294.312,
+        449.433
+      ],
+      "end": [
+        261.0,
+        334.39696961967,
+        495.88225099390854
+      ],
+      "radius": 1.625,
+      "minBendRadiusBoundMm": 138.6628596868096,
+      "connectorReservationDiameterMm": 9.0
+    },
+    {
+      "start": [
+        261.0,
+        296.787,
+        446.9585
+      ],
+      "end": [
+        261.0,
+        342.88225099390854,
+        487.39696961967
+      ],
+      "radius": 1.625,
+      "minBendRadiusBoundMm": 156.00377647544593,
+      "connectorReservationDiameterMm": 9.0
+    },
+    {
+      "start": [
+        261.0,
+        299.262,
+        444.484
+      ],
+      "end": [
+        261.0,
+        351.3675323681471,
+        478.91168824543144
+      ],
+      "radius": 1.625,
+      "minBendRadiusBoundMm": 49.919495436432314,
+      "connectorReservationDiameterMm": 9.0
+    }
+  ],
+  "checks": {
+    "tools at service clock": {
+      "subjects": 2,
+      "obstacles": 241,
+      "narrow": 5,
+      "positive": []
+    },
+    "coupler parked": {
+      "subjects": 3,
+      "obstacles": 240,
+      "narrow": 10,
+      "positive": [
+        [
+          "hub",
+          "M4 receiver attachment 0",
+          2.7925152068894024
+        ],
+        [
+          "hub",
+          "M4 receiver attachment 1",
+          56.526428372183105
+        ]
+      ]
+    },
+    "rotating envelope": {
+      "subjects": 1,
+      "obstacles": 239,
+      "narrow": 6,
+      "positive": [
+        [
+          "rotor",
+          "M3 on cap 0",
+          0.7397912537126141
+        ],
+        [
+          "rotor",
+          "M3 on cap 1",
+          0.7397912537126148
+        ],
+        [
+          "rotor",
+          "M4 receiver attachment 0",
+          18.50549909370183
+        ],
+        [
+          "rotor",
+          "M4 receiver attachment 1",
+          83.0879836362387
+        ]
+      ]
+    },
+    "routed cables and plugs": {
+      "subjects": 12,
+      "obstacles": 243,
+      "narrow": 0,
+      "positive": []
+    },
+    "wires against each other": [
+      {
+        "subjects": 1,
+        "obstacles": 1,
+        "narrow": 1,
+        "positive": []
+      },
+      {
+        "subjects": 1,
+        "obstacles": 1,
+        "narrow": 1,
+        "positive": []
+      },
+      {
+        "subjects": 1,
+        "obstacles": 1,
+        "narrow": 1,
+        "positive": []
+      },
+      {
+        "subjects": 1,
+        "obstacles": 1,
+        "narrow": 1,
+        "positive": []
+      },
+      {
+        "subjects": 1,
+        "obstacles": 1,
+        "narrow": 0,
+        "positive": []
+      },
+      {
+        "subjects": 1,
+        "obstacles": 1,
+        "narrow": 0,
+        "positive": []
+      },
+      {
+        "subjects": 1,
+        "obstacles": 1,
+        "narrow": 0,
+        "positive": []
+      },
+      {
+        "subjects": 1,
+        "obstacles": 1,
+        "narrow": 1,
+        "positive": []
+      },
+      {
+        "subjects": 1,
+        "obstacles": 1,
+        "narrow": 1,
+        "positive": []
+      },
+      {
+        "subjects": 1,
+        "obstacles": 1,
+        "narrow": 0,
+        "positive": []
+      },
+      {
+        "subjects": 1,
+        "obstacles": 1,
+        "narrow": 1,
+        "positive": []
+      },
+      {
+        "subjects": 1,
+        "obstacles": 1,
+        "narrow": 0,
+        "positive": []
+      },
+      {
+        "subjects": 1,
+        "obstacles": 1,
+        "narrow": 0,
+        "positive": []
+      },
+      {
+        "subjects": 1,
+        "obstacles": 1,
+        "narrow": 1,
+        "positive": []
+      },
+      {
+        "subjects": 1,
+        "obstacles": 1,
+        "narrow": 0,
+        "positive": []
+      },
+      {
+        "subjects": 1,
+        "obstacles": 1,
+        "narrow": 0,
+        "positive": []
+      },
+      {
+        "subjects": 1,
+        "obstacles": 1,
+        "narrow": 1,
+        "positive": []
+      },
+      {
+        "subjects": 1,
+        "obstacles": 1,
+        "narrow": 0,
+        "positive": []
+      },
+      {
+        "subjects": 1,
+        "obstacles": 1,
+        "narrow": 0,
+        "positive": []
+      },
+      {
+        "subjects": 1,
+        "obstacles": 1,
+        "narrow": 0,
+        "positive": []
+      },
+      {
+        "subjects": 1,
+        "obstacles": 1,
+        "narrow": 0,
+        "positive": []
+      },
+      {
+        "subjects": 1,
+        "obstacles": 1,
+        "narrow": 1,
+        "positive": []
+      },
+      {
+        "subjects": 1,
+        "obstacles": 1,
+        "narrow": 1,
+        "positive": []
+      },
+      {
+        "subjects": 1,
+        "obstacles": 1,
+        "narrow": 1,
+        "positive": []
+      },
+      {
+        "subjects": 1,
+        "obstacles": 1,
+        "narrow": 0,
+        "positive": []
+      },
+      {
+        "subjects": 1,
+        "obstacles": 1,
+        "narrow": 1,
+        "positive": []
+      },
+      {
+        "subjects": 1,
+        "obstacles": 1,
+        "narrow": 1,
+        "positive": []
+      },
+      {
+        "subjects": 1,
+        "obstacles": 1,
+        "narrow": 1,
+        "positive": []
+      }
+    ],
+    "raised clamp drivers alongside leads": {
+      "subjects": 2,
+      "obstacles": 8,
+      "narrow": 0,
+      "positive": []
+    },
+    "disconnect reach vs fixed installed stock": {
+      "subjects": 4,
+      "obstacles": 240,
+      "narrow": 0,
+      "positive": []
+    },
+    "disconnect cylinder stroke": {
+      "subjects": 4,
+      "obstacles": 240,
+      "narrow": 0,
+      "positive": []
+    },
+    "45 mm draw after permanent socket is parked": {
+      "subjects": 8,
+      "obstacles": 244,
+      "narrow": 0,
+      "positive": []
+    },
+    "draw with connected plugs left in place": {
+      "0": [
+        0.0,
+        15.772168590726764
+      ],
+      "1": [
+        0.0,
+        15.772168590749088
+      ],
+      "2": [
+        0.0,
+        15.772168590726853
+      ],
+      "3": [
+        0.0,
+        15.772168590726752
+      ]
+    }
+  },
+  "torqueNm": 0.3639537,
+  "motorShaftFrictionThresholds": [
+    {
+      "mu": 0.1,
+      "requiredNormalN": 2296.23785488959
+    },
+    {
+      "mu": 0.15,
+      "requiredNormalN": 1530.8252365930598
+    },
+    {
+      "mu": 0.2,
+      "requiredNormalN": 1148.118927444795
+    },
+    {
+      "mu": 0.25,
+      "requiredNormalN": 918.495141955836
+    }
+  ],
+  "scope": "Clamp and pins are preliminary machining and service envelopes. Connector housings, hand tooling, strain relief, actual leads, clamp preload/slip, allowable total runout and thrust bearing remain to validate.",
+  "step": "93e7cc6270f0d891c6a3026a855c88e09ed1cb0a4bd8500c6a98722c83987a98"
+}

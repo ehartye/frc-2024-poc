@@ -1,0 +1,34 @@
+{
+  "sourceProfile": "1d62b97dbd44300ff63c6d72ed831aa6ba374e4e4454066cda89f415182adf99",
+  "complete": true,
+  "features": [
+    "Deployed pickup contour - X forward, Z up",
+    "Extrude replaceable UHMW blank symmetrically",
+    "Countersink tool start above both wear faces",
+    "Four common fastener axes on the inclined seat",
+    "Four flush M3 countersinks on the common mount"
+  ],
+  "volumeMm3": 30467.171948045994,
+  "parametersMm": {
+    "BladeWidth": 434.00000000000006,
+    "ClearanceBore": 3.4000000000000004,
+    "SeatDiameter": 6.400000000000001,
+    "SeatPlaneOffset": 0.5
+  },
+  "materialInFusion": "UHMW, Black",
+  "faceCount": 23,
+  "countersinks": 4,
+  "boundsMm": [
+    [
+      593.8,
+      -217.0,
+      3.0
+    ],
+    [
+      619.05,
+      217.0,
+      24.0
+    ]
+  ],
+  "restored": true
+}

@@ -1,0 +1,26 @@
+{
+  "tag": "dev-outer",
+  "n": 96,
+  "mu": ".25",
+  "floorHeightM": "0",
+  "original": "c4d2eca50bc7de5238ea78c66403c60f114b7591ae398ffd299b0d4a1556910a",
+  "extended": "e86e9a30e2575d9cee45067e9a9d80d2b3d7169f128530f3bf262ef3d332bcb1",
+  "same": {
+    "sourceCarry": true,
+    "initialState": true,
+    "initialVelocity": true,
+    "rotorsAtFeed": true,
+    "release": true,
+    "exit": true,
+    "opening": true,
+    "beams": true,
+    "both": true,
+    "minBusV": true
+  },
+  "endS": 7.000000000002809,
+  "minGapM": 0.8188630151881464,
+  "afterShotA": 27.11745218656642,
+  "resetStart": 1.580249999999964,
+  "resetEnd": 6.380249999999964,
+  "passScreen": true
+}

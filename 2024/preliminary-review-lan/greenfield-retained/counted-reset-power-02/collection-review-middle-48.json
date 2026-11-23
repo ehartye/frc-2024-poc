@@ -1,0 +1,18 @@
+{
+  "n": "48",
+  "piece": "middle",
+  "throughS": 23,
+  "nextPiece": "outer",
+  "nextScoreTimeRelative": 21.140742351447205,
+  "eitherBeamStillCoveredNearNext": true,
+  "bothStillCoveredNearNext": true,
+  "sustainedClearS": null,
+  "lastPositionM": [
+    -1.160646095220276,
+    5.614137177001406,
+    1.3445651731071384
+  ],
+  "smallestCircumsphereSeparationM": -0.3533227268801053,
+  "scope": "Continuous single-piece simulation through the next recorded score. Negative sphere separation requires the two torus geometries and coupled dynamics if they touch. Field speed and collector handling are unmeasured.",
+  "sha": "fcb69224ef2ec55487ce311f93e3036255877034527dc3f8d3cad87e07e82f5d"
+}

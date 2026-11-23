@@ -1,0 +1,23 @@
+{
+  "step": "093ca2ff6f5d2d53aa46c66651baa65f2d93bc59611a5e6e183006b9c7349415",
+  "cases": [
+    "field-96",
+    "field-48",
+    "field-r01",
+    "field-r02",
+    "field-climb",
+    "field-park"
+  ],
+  "highMarginKg": 0.19930502731914856,
+  "inspection": [
+    35.107541260506686,
+    56.49974122268085
+  ],
+  "running": [
+    45.437541260506684,
+    69.54974122268086
+  ],
+  "sweep": 1512,
+  "entry": 163,
+  "sourceBoundDisabled": 85.81966319919576
+}

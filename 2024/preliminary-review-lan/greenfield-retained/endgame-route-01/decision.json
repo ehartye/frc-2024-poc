@@ -1,0 +1,151 @@
+{
+  "preliminaryStatus": "held",
+  "profile": "A",
+  "campaign": {
+    "digest": "665c48f61a0ddbf3683e90a35580fa78bea21af5312c18d957322fa6d29857ce",
+    "passRuns": [
+      "R02",
+      "R03",
+      "R04",
+      "R05",
+      "R06",
+      "R07"
+    ],
+    "failedRuns": {
+      "R01": 5,
+      "R08": 2
+    },
+    "untested": 12,
+    "maxPossible": 18,
+    "target": 19
+  },
+  "climbHoldSamples": {
+    "pull-front": {
+      "input": "f9bcc7b6d062559471309d3b3da81b26c9a9866c4d5c871ceffeff9a139aed89",
+      "interval": [
+        5.000000000000365,
+        9.99999999999937
+      ],
+      "sampleStep": 0.025,
+      "minClearMm": -0.016412106927009285,
+      "peakFloorN": 207.73898126100667,
+      "minHookContactN": [
+        307.4293831066618,
+        332.41004963548596
+      ],
+      "engaged": true,
+      "maxPullN": 638.440333040538,
+      "peakNonHookN": {},
+      "passedHoldScreen": false
+    },
+    "pull-rear": {
+      "input": "ea59a6ffad7df317b1c562f08a23607d81aa13915d0914b5cdbf013f35f13abd",
+      "interval": [
+        5.000000000000365,
+        9.99999999999937
+      ],
+      "sampleStep": 0.025,
+      "minClearMm": 12.843673520575596,
+      "peakFloorN": 0.0,
+      "minHookContactN": [
+        409.0783430090114,
+        423.3927006256562
+      ],
+      "engaged": true,
+      "maxPullN": 741.3860281413215,
+      "peakNonHookN": {},
+      "passedHoldScreen": true
+    },
+    "long-front": {
+      "input": "c5c66a8cf824c47eba34e80a03a4a6f4ca9c11043f7a2d25e30f76f6a5c96ca9",
+      "interval": [
+        5.000000000000365,
+        9.99999999999937
+      ],
+      "sampleStep": 0.025,
+      "minClearMm": -0.0023046734299314586,
+      "peakFloorN": 133.38367612957393,
+      "minHookContactN": [
+        400.09855437220534,
+        403.8592098022597
+      ],
+      "engaged": true,
+      "maxPullN": 698.7245288227728,
+      "peakNonHookN": {},
+      "passedHoldScreen": false
+    },
+    "long-rear": {
+      "input": "9124064addb19b8e4d2cbb2b2cbb1b2dda1a21cce6292a6efd30a791a769efb8",
+      "interval": [
+        5.000000000000365,
+        9.99999999999937
+      ],
+      "sampleStep": 0.025,
+      "minClearMm": 56.506301918603604,
+      "peakFloorN": 0.0,
+      "minHookContactN": [
+        433.8383758859215,
+        446.48570493881584
+      ],
+      "engaged": true,
+      "maxPullN": 801.6339988244234,
+      "peakNonHookN": {},
+      "passedHoldScreen": true
+    },
+    "long-no-catch": {
+      "input": "030cc2eb602eca8ad6e1e365c0cc5bf47980216a16cdf80840b7f2ce5e5817c0",
+      "interval": [
+        5.000000000000365,
+        9.99999999999937
+      ],
+      "sampleStep": 0.025,
+      "minClearMm": -1.894917489472757,
+      "peakFloorN": 3543.2089178233737,
+      "minHookContactN": [
+        0.0,
+        0.0
+      ],
+      "engaged": false,
+      "maxPullN": 801.6339988244234,
+      "peakNonHookN": {},
+      "passedHoldScreen": false
+    },
+    "equipped-front": {
+      "input": "cb353b7737d995f630d3445670cd8ad237c1ff7cb3bf1d1c26903fe9bbcd2b3c",
+      "interval": [
+        5.000000000000365,
+        9.99999999999937
+      ],
+      "sampleStep": 0.025,
+      "minClearMm": 4.800407137801999,
+      "peakFloorN": 0.0,
+      "minHookContactN": [
+        467.1846560451799,
+        481.6312415309428
+      ],
+      "engaged": true,
+      "maxPullN": 727.5802284617026,
+      "peakNonHookN": {},
+      "passedHoldScreen": false
+    },
+    "equipped-rear": {
+      "input": "14e60c94f0e755964f5d255cdc71e41f16d03443132359d5dd8dc3720bdaa41b",
+      "interval": [
+        5.000000000000365,
+        9.99999999999937
+      ],
+      "sampleStep": 0.025,
+      "minClearMm": 73.053855991019,
+      "peakFloorN": 0.0,
+      "minHookContactN": [
+        448.9609628029197,
+        471.25630992184654
+      ],
+      "engaged": true,
+      "maxPullN": 837.4416697221936,
+      "peakNonHookN": {},
+      "passedHoldScreen": true
+    }
+  },
+  "parkTime": 12.605877073716648
+}

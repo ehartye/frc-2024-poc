@@ -1,0 +1,24 @@
+{
+  "policy": "registered-offline-archive",
+  "externalReferences": [],
+  "schema": "agent-frc/fusion-export-lineage@1",
+  "authority": {
+    "file": "iterations/002/design/cad/fusion-authority.json",
+    "sha256": "c36d405f4cbaed23c81cc431099011e64179872c92fd941e24556510a7de56a6"
+  },
+  "exporterSha256": "223ae25eacc3163b7c056a2bb5be2e60d36c5f41ef2ab656ba986acf717952cc",
+  "id": "2024-b1-fixed-close-scorer",
+  "configuration": "Parked Blue 1 with two native pinion-to-rack links, trimmed side motor screws and separate fixed scorer",
+  "nativeConfiguration": "unconfigured",
+  "revision": "002 linked side-finger drive and motor attachment",
+  "dirty": false,
+  "archive": {
+    "file": "iterations/002/design/cad/linked-side-drive/002-linked-side-pickup-drive.f3d",
+    "sha256": "991223b07a4b00c94badacf7a474915fbf6c0eebd012450ec6f1d5dc1039a854"
+  },
+  "step": {
+    "file": "iterations/002/design/cad/linked-side-drive/first-party-lineage/assembly.step",
+    "sha256": "7a1e46c52140c7b6374e89c9139d0400111f7c841ec0561240d60cac3e6ef264"
+  },
+  "inspectedAt": "2026-11-22T01:36:58.741278+00:00"
+}

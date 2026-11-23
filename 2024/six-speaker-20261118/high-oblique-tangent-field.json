@@ -1,0 +1,21 @@
+{
+  "firstMark": "middle",
+  "yaw": 245.0,
+  "native": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "field": "42c91b3efb9521d059c13cf25e2d7dda6315bdd6b7eb1202847bfe84ffb43c1a",
+  "fieldBounds": "a43889e63d4f793b884e2094d682c887bc7b3c5044ce5033224b306f4ada3096",
+  "stop": "3dc7df0d5fbcb7f9a001a9d56ba6659da2ffef030f56940f4d9e0385d0a9abea",
+  "results": [
+    {
+      "begin": 56.81395000014781,
+      "end": 74.88895000023412,
+      "intervals": 36150,
+      "unresolvedIntervals": 0,
+      "firstUnresolved": null,
+      "minimumReportedAxisGapM": 0.01567764733284438
+    }
+  ],
+  "delivery": "0c32507cc099e0eff86290cf614bb686728bd13d3ce2998228107caee11c1b3c",
+  "entryAcquisition": "0a11e27a32eab1f09d6c4b6566a6a0255ba5b97023dad80e2173111c1d315fc8",
+  "entryRelease": "19b43a96a786380890593c99fde1084ba007739f6e79914decb1f823c09bdcce"
+}

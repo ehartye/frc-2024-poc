@@ -1,0 +1,875 @@
+{
+  "n": 192,
+  "poseSource": "c9120dcf878b2ecc2f6f2bbd77a1dcb2ad6e6cf47e8c3b029d2dd9c631219394",
+  "run": "ee9cc1f170ff1e96fa58fe6d076f973065c514b05bda70ab910e68df208ba423",
+  "sampleDtS": 0.002,
+  "poses": 7500,
+  "centerlinePoints": 1024,
+  "centerlineInterpolationMm": 0.46755734414754346,
+  "capsuleVsTorusSagMm": 0.020400582582781237,
+  "receipt": "same phase original, new geometry as observer only",
+  "rows": {
+    "floor/side pinion": {
+      "t": 10.842,
+      "nodeToEnvelopeGapMm": 103.5690192591033,
+      "certifiedSampledLowerBoundMm": 103.08106133237298,
+      "ringCenterHead": [
+        42.129554137530874,
+        -0.011516349050907593,
+        35.93483302078377
+      ],
+      "ringNormalHead": [
+        -0.0028704109742194177,
+        -0.00011284731999318542,
+        0.9999958739946484
+      ],
+      "translatePartHead": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ring": "floor",
+      "part": "side pinion"
+    },
+    "floor/side output": {
+      "t": 10.842,
+      "nodeToEnvelopeGapMm": 77.78902601453646,
+      "certifiedSampledLowerBoundMm": 77.30106808780614,
+      "ringCenterHead": [
+        42.129554137530874,
+        -0.011516349050907593,
+        35.93483302078377
+      ],
+      "ringNormalHead": [
+        -0.0028704109742194177,
+        -0.00011284731999318542,
+        0.9999958739946484
+      ],
+      "translatePartHead": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ring": "floor",
+      "part": "side output"
+    },
+    "floor/side stage": {
+      "t": 10.842,
+      "nodeToEnvelopeGapMm": 70.44358368395302,
+      "certifiedSampledLowerBoundMm": 69.9556257572227,
+      "ringCenterHead": [
+        42.129554137530874,
+        -0.011516349050907593,
+        35.93483302078377
+      ],
+      "ringNormalHead": [
+        -0.0028704109742194177,
+        -0.00011284731999318542,
+        0.9999958739946484
+      ],
+      "translatePartHead": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ring": "floor",
+      "part": "side stage"
+    },
+    "floor/side input plate": {
+      "t": 10.842,
+      "nodeToEnvelopeGapMm": 71.66213775586189,
+      "certifiedSampledLowerBoundMm": 71.17417982913157,
+      "ringCenterHead": [
+        42.129554137530874,
+        -0.011516349050907593,
+        35.93483302078377
+      ],
+      "ringNormalHead": [
+        -0.0028704109742194177,
+        -0.00011284731999318542,
+        0.9999958739946484
+      ],
+      "translatePartHead": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ring": "floor",
+      "part": "side input plate"
+    },
+    "floor/side motor": {
+      "t": 10.844,
+      "nodeToEnvelopeGapMm": 46.97363938428044,
+      "certifiedSampledLowerBoundMm": 46.485681457550115,
+      "ringCenterHead": [
+        42.08353136739143,
+        -0.006857485258478846,
+        35.95384322472688
+      ],
+      "ringNormalHead": [
+        -0.002898178481728028,
+        -0.0005359453534209977,
+        0.9999956566526
+      ],
+      "translatePartHead": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ring": "floor",
+      "part": "side motor",
+      "exactTorusToSolidMm": 57.46960258527929,
+      "exactCommonMm3": 0.0
+    },
+    "floor/side sun": {
+      "t": 10.842,
+      "nodeToEnvelopeGapMm": 87.79509038336644,
+      "certifiedSampledLowerBoundMm": 87.30713245663613,
+      "ringCenterHead": [
+        42.129554137530874,
+        -0.011516349050907593,
+        35.93483302078377
+      ],
+      "ringNormalHead": [
+        -0.0028704109742194177,
+        -0.00011284731999318542,
+        0.9999958739946484
+      ],
+      "translatePartHead": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ring": "floor",
+      "part": "side sun"
+    },
+    "floor/left seg 0": {
+      "t": 10.736,
+      "nodeToEnvelopeGapMm": 98.75609371220713,
+      "certifiedSampledLowerBoundMm": 98.26813578547682,
+      "ringCenterHead": [
+        15.100982110508497,
+        -0.006806897943533841,
+        35.527584624333315
+      ],
+      "ringNormalHead": [
+        -0.004351828304219091,
+        -1.2218959617180732e-08,
+        0.9999905307503726
+      ],
+      "translatePartHead": [
+        0.0,
+        33.989859121229465,
+        0.0
+      ],
+      "ring": "floor",
+      "part": "left seg 0"
+    },
+    "floor/left seg 1": {
+      "t": 11.026,
+      "nodeToEnvelopeGapMm": 102.26561600623509,
+      "certifiedSampledLowerBoundMm": 101.77765807950477,
+      "ringCenterHead": [
+        41.64011524226506,
+        0.023259794663317734,
+        35.892248627293995
+      ],
+      "ringNormalHead": [
+        -0.003908968946220975,
+        3.3135606604604005e-08,
+        0.999992359951703
+      ],
+      "translatePartHead": [
+        0.0,
+        -22.99993150352845,
+        0.0
+      ],
+      "ring": "floor",
+      "part": "left seg 1"
+    },
+    "floor/right seg 0": {
+      "t": 10.734,
+      "nodeToEnvelopeGapMm": 66.90451911947619,
+      "certifiedSampledLowerBoundMm": 66.41656119274587,
+      "ringCenterHead": [
+        15.10130857283086,
+        -0.006807048015616601,
+        35.51830652483432
+      ],
+      "ringNormalHead": [
+        -0.0042845453432505945,
+        -1.8460190815249434e-08,
+        0.9999908212934769
+      ],
+      "translatePartHead": [
+        0.0,
+        -33.997375968922796,
+        0.0
+      ],
+      "ring": "floor",
+      "part": "right seg 0"
+    },
+    "floor/right seg 1": {
+      "t": 11.028,
+      "nodeToEnvelopeGapMm": 71.66408627413358,
+      "certifiedSampledLowerBoundMm": 71.17612834740326,
+      "ringCenterHead": [
+        41.64326559461466,
+        0.023259724586750963,
+        35.88975467412172
+      ],
+      "ringNormalHead": [
+        -0.003897594686345105,
+        3.201673450008635e-08,
+        0.9999924043489823
+      ],
+      "translatePartHead": [
+        0.0,
+        22.999964347798116,
+        0.0
+      ],
+      "ring": "floor",
+      "part": "right seg 1"
+    },
+    "floor/rear pinion": {
+      "t": 10.842,
+      "nodeToEnvelopeGapMm": 112.1225567215526,
+      "certifiedSampledLowerBoundMm": 111.63459879482228,
+      "ringCenterHead": [
+        42.129554137530874,
+        -0.011516349050907593,
+        35.93483302078377
+      ],
+      "ringNormalHead": [
+        -0.0028704109742194177,
+        -0.00011284731999318542,
+        0.9999958739946484
+      ],
+      "translatePartHead": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ring": "floor",
+      "part": "rear pinion"
+    },
+    "floor/rear output": {
+      "t": 10.842,
+      "nodeToEnvelopeGapMm": 105.07301919735417,
+      "certifiedSampledLowerBoundMm": 104.58506127062385,
+      "ringCenterHead": [
+        42.129554137530874,
+        -0.011516349050907593,
+        35.93483302078377
+      ],
+      "ringNormalHead": [
+        -0.0028704109742194177,
+        -0.00011284731999318542,
+        0.9999958739946484
+      ],
+      "translatePartHead": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ring": "floor",
+      "part": "rear output"
+    },
+    "floor/rear stage": {
+      "t": 10.84,
+      "nodeToEnvelopeGapMm": 105.0547900214194,
+      "certifiedSampledLowerBoundMm": 104.56683209468908,
+      "ringCenterHead": [
+        42.02719447979827,
+        -0.016992325640785566,
+        35.91404145222042
+      ],
+      "ringNormalHead": [
+        -0.0029498953942448023,
+        0.0003649372104876725,
+        0.99999558245924
+      ],
+      "translatePartHead": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ring": "floor",
+      "part": "rear stage"
+    },
+    "floor/rear input plate": {
+      "t": 10.84,
+      "nodeToEnvelopeGapMm": 105.05839980524232,
+      "certifiedSampledLowerBoundMm": 104.570441878512,
+      "ringCenterHead": [
+        42.02719447979827,
+        -0.016992325640785566,
+        35.91404145222042
+      ],
+      "ringNormalHead": [
+        -0.0029498953942448023,
+        0.0003649372104876725,
+        0.99999558245924
+      ],
+      "translatePartHead": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ring": "floor",
+      "part": "rear input plate"
+    },
+    "floor/rear motor": {
+      "t": 10.84,
+      "nodeToEnvelopeGapMm": 106.46585295558452,
+      "certifiedSampledLowerBoundMm": 105.9778950288542,
+      "ringCenterHead": [
+        42.02719447979827,
+        -0.016992325640785566,
+        35.91404145222042
+      ],
+      "ringNormalHead": [
+        -0.0029498953942448023,
+        0.0003649372104876725,
+        0.99999558245924
+      ],
+      "translatePartHead": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ring": "floor",
+      "part": "rear motor"
+    },
+    "floor/rear sun": {
+      "t": 10.842,
+      "nodeToEnvelopeGapMm": 120.02314622691588,
+      "certifiedSampledLowerBoundMm": 119.53518830018557,
+      "ringCenterHead": [
+        42.129554137530874,
+        -0.011516349050907593,
+        35.93483302078377
+      ],
+      "ringNormalHead": [
+        -0.0028704109742194177,
+        -0.00011284731999318542,
+        0.9999958739946484
+      ],
+      "translatePartHead": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ring": "floor",
+      "part": "rear sun"
+    },
+    "floor/rear seg 0": {
+      "t": 9.958,
+      "nodeToEnvelopeGapMm": 135.25781806317627,
+      "certifiedSampledLowerBoundMm": 134.76986013644594,
+      "ringCenterHead": [
+        15.631642671154172,
+        0.0036549180431393324,
+        31.519558804958805
+      ],
+      "ringNormalHead": [
+        0.025813826292014858,
+        -5.862901811253405e-06,
+        0.9996667676469956
+      ],
+      "translatePartHead": [
+        -32.31834946788337,
+        0.0,
+        0.0
+      ],
+      "ring": "floor",
+      "part": "rear seg 0"
+    },
+    "floor/rear seg 1": {
+      "t": 10.844,
+      "nodeToEnvelopeGapMm": 134.5942390449175,
+      "certifiedSampledLowerBoundMm": 134.10628111818716,
+      "ringCenterHead": [
+        42.08353136739143,
+        -0.006857485258478846,
+        35.95384322472688
+      ],
+      "ringNormalHead": [
+        -0.002898178481728028,
+        -0.0005359453534209977,
+        0.9999956566526
+      ],
+      "translatePartHead": [
+        2.2560415726281557,
+        0.0,
+        0.0
+      ],
+      "ring": "floor",
+      "part": "rear seg 1"
+    },
+    "floor/rear seg 2": {
+      "t": 10.886000000000001,
+      "nodeToEnvelopeGapMm": 134.72411467282785,
+      "certifiedSampledLowerBoundMm": 134.23615674609752,
+      "ringCenterHead": [
+        41.78447280709581,
+        0.033321834618618595,
+        35.916557274242905
+      ],
+      "ringNormalHead": [
+        -0.003651758133530501,
+        0.0007556693893655928,
+        0.9999930467889804
+      ],
+      "translatePartHead": [
+        24.76523741741787,
+        0.0,
+        0.0
+      ],
+      "ring": "floor",
+      "part": "rear seg 2"
+    },
+    "preload/side pinion": {
+      "t": 2.532,
+      "nodeToEnvelopeGapMm": 315.01831501979774,
+      "certifiedSampledLowerBoundMm": 314.5303570930674,
+      "ringCenterHead": [
+        -384.7485479257802,
+        0.0017186971035698662,
+        83.23313178534755
+      ],
+      "ringNormalHead": [
+        0.8620080562538442,
+        -7.492120876532495e-07,
+        0.5068945757777519
+      ],
+      "translatePartHead": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ring": "preload",
+      "part": "side pinion"
+    },
+    "preload/side output": {
+      "t": 2.5340000000000003,
+      "nodeToEnvelopeGapMm": 287.3979682466961,
+      "certifiedSampledLowerBoundMm": 286.91001031996575,
+      "ringCenterHead": [
+        -395.1464674450916,
+        0.0017991486174651072,
+        101.16842150430556
+      ],
+      "ringNormalHead": [
+        0.8603712792950312,
+        -5.985551250968102e-07,
+        0.5096677954941559
+      ],
+      "translatePartHead": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ring": "preload",
+      "part": "side output"
+    },
+    "preload/side stage": {
+      "t": 2.5340000000000003,
+      "nodeToEnvelopeGapMm": 276.8072704096347,
+      "certifiedSampledLowerBoundMm": 276.31931248290437,
+      "ringCenterHead": [
+        -395.1464674450916,
+        0.0017991486174651072,
+        101.16842150430556
+      ],
+      "ringNormalHead": [
+        0.8603712792950312,
+        -5.985551250968102e-07,
+        0.5096677954941559
+      ],
+      "translatePartHead": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ring": "preload",
+      "part": "side stage"
+    },
+    "preload/side input plate": {
+      "t": 2.5340000000000003,
+      "nodeToEnvelopeGapMm": 278.53770254921324,
+      "certifiedSampledLowerBoundMm": 278.0497446224829,
+      "ringCenterHead": [
+        -395.1464674450916,
+        0.0017991486174651072,
+        101.16842150430556
+      ],
+      "ringNormalHead": [
+        0.8603712792950312,
+        -5.985551250968102e-07,
+        0.5096677954941559
+      ],
+      "translatePartHead": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ring": "preload",
+      "part": "side input plate"
+    },
+    "preload/side motor": {
+      "t": 2.536,
+      "nodeToEnvelopeGapMm": 236.53698352073567,
+      "certifiedSampledLowerBoundMm": 236.04902559400534,
+      "ringCenterHead": [
+        -405.5444918069872,
+        0.0018796001313603483,
+        119.0642626222799
+      ],
+      "ringNormalHead": [
+        0.8587249314327768,
+        -4.40633250544005e-07,
+        0.5124368177010478
+      ],
+      "translatePartHead": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ring": "preload",
+      "part": "side motor"
+    },
+    "preload/side sun": {
+      "t": 2.5340000000000003,
+      "nodeToEnvelopeGapMm": 289.69750644496696,
+      "certifiedSampledLowerBoundMm": 289.2095485182366,
+      "ringCenterHead": [
+        -395.1464674450916,
+        0.0017991486174651072,
+        101.16842150430556
+      ],
+      "ringNormalHead": [
+        0.8603712792950312,
+        -5.985551250968102e-07,
+        0.5096677954941559
+      ],
+      "translatePartHead": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ring": "preload",
+      "part": "side sun"
+    },
+    "preload/left seg 0": {
+      "t": 2.5340000000000003,
+      "nodeToEnvelopeGapMm": 327.5709867402005,
+      "certifiedSampledLowerBoundMm": 327.08302881347015,
+      "ringCenterHead": [
+        -395.1464674450916,
+        0.0017991486174651072,
+        101.16842150430556
+      ],
+      "ringNormalHead": [
+        0.8603712792950312,
+        -5.985551250968102e-07,
+        0.5096677954941559
+      ],
+      "translatePartHead": [
+        0.0,
+        -2.3804214419266995e-07,
+        0.0
+      ],
+      "ring": "preload",
+      "part": "left seg 0"
+    },
+    "preload/left seg 1": {
+      "t": 2.5340000000000003,
+      "nodeToEnvelopeGapMm": 327.5689496340484,
+      "certifiedSampledLowerBoundMm": 327.08099170731805,
+      "ringCenterHead": [
+        -395.1464674450916,
+        0.0017991486174651072,
+        101.16842150430556
+      ],
+      "ringNormalHead": [
+        0.8603712792950312,
+        -5.985551250968102e-07,
+        0.5096677954941559
+      ],
+      "translatePartHead": [
+        0.0,
+        -2.3804214419266995e-07,
+        0.0
+      ],
+      "ring": "preload",
+      "part": "left seg 1"
+    },
+    "preload/right seg 0": {
+      "t": 2.5300000000000002,
+      "nodeToEnvelopeGapMm": 308.75592072934126,
+      "certifiedSampledLowerBoundMm": 308.2679628026109,
+      "ringCenterHead": [
+        -374.3506137415447,
+        0.001638245589674625,
+        65.25830151729193
+      ],
+      "ringNormalHead": [
+        0.8636350435068689,
+        -8.926025629221829e-07,
+        0.5041175573475792
+      ],
+      "translatePartHead": [
+        0.0,
+        -1.376811149633088e-07,
+        0.0
+      ],
+      "ring": "preload",
+      "part": "right seg 0"
+    },
+    "preload/right seg 1": {
+      "t": 2.5300000000000002,
+      "nodeToEnvelopeGapMm": 308.7558873996185,
+      "certifiedSampledLowerBoundMm": 308.2679294728881,
+      "ringCenterHead": [
+        -374.3506137415447,
+        0.001638245589674625,
+        65.25830151729193
+      ],
+      "ringNormalHead": [
+        0.8636350435068689,
+        -8.926025629221829e-07,
+        0.5041175573475792
+      ],
+      "translatePartHead": [
+        0.0,
+        -1.376811149633088e-07,
+        0.0
+      ],
+      "ring": "preload",
+      "part": "right seg 1"
+    },
+    "preload/rear pinion": {
+      "t": 2.5420000000000003,
+      "nodeToEnvelopeGapMm": 259.7274490372333,
+      "certifiedSampledLowerBoundMm": 259.23949111050297,
+      "ringCenterHead": [
+        -436.7462995116407,
+        0.0021209546730460715,
+        172.51397706878421
+      ],
+      "ringNormalHead": [
+        0.8537276638494987,
+        7.670495284074945e-08,
+        0.520719767224244
+      ],
+      "translatePartHead": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ring": "preload",
+      "part": "rear pinion"
+    },
+    "preload/rear output": {
+      "t": 2.54,
+      "nodeToEnvelopeGapMm": 247.8503345365871,
+      "certifiedSampledLowerBoundMm": 247.36237660985677,
+      "ringCenterHead": [
+        -426.34136402980914,
+        0.0020405031591508305,
+        154.73758804326232
+      ],
+      "ringNormalHead": [
+        0.8554037831081664,
+        -1.0300144641155474e-07,
+        0.517961743610689
+      ],
+      "translatePartHead": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ring": "preload",
+      "part": "rear output"
+    },
+    "preload/rear stage": {
+      "t": 2.54,
+      "nodeToEnvelopeGapMm": 247.95015295578256,
+      "certifiedSampledLowerBoundMm": 247.46219502905222,
+      "ringCenterHead": [
+        -426.34136402980914,
+        0.0020405031591508305,
+        154.73758804326232
+      ],
+      "ringNormalHead": [
+        0.8554037831081664,
+        -1.0300144641155474e-07,
+        0.517961743610689
+      ],
+      "translatePartHead": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ring": "preload",
+      "part": "rear stage"
+    },
+    "preload/rear input plate": {
+      "t": 2.54,
+      "nodeToEnvelopeGapMm": 248.11522388910103,
+      "certifiedSampledLowerBoundMm": 247.6272659623707,
+      "ringCenterHead": [
+        -426.34136402980914,
+        0.0020405031591508305,
+        154.73758804326232
+      ],
+      "ringNormalHead": [
+        0.8554037831081664,
+        -1.0300144641155474e-07,
+        0.517961743610689
+      ],
+      "translatePartHead": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ring": "preload",
+      "part": "rear input plate"
+    },
+    "preload/rear motor": {
+      "t": 2.54,
+      "nodeToEnvelopeGapMm": 252.48188903833895,
+      "certifiedSampledLowerBoundMm": 251.99393111160862,
+      "ringCenterHead": [
+        -426.34136402980914,
+        0.0020405031591508305,
+        154.73758804326232
+      ],
+      "ringNormalHead": [
+        0.8554037831081664,
+        -1.0300144641155474e-07,
+        0.517961743610689
+      ],
+      "translatePartHead": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ring": "preload",
+      "part": "rear motor"
+    },
+    "preload/rear sun": {
+      "t": 2.54,
+      "nodeToEnvelopeGapMm": 270.75162885073746,
+      "certifiedSampledLowerBoundMm": 270.2636709240071,
+      "ringCenterHead": [
+        -426.34136402980914,
+        0.0020405031591508305,
+        154.73758804326232
+      ],
+      "ringNormalHead": [
+        0.8554037831081664,
+        -1.0300144641155474e-07,
+        0.517961743610689
+      ],
+      "translatePartHead": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ring": "preload",
+      "part": "rear sun"
+    },
+    "preload/rear seg 0": {
+      "t": 2.5420000000000003,
+      "nodeToEnvelopeGapMm": 284.3592096637545,
+      "certifiedSampledLowerBoundMm": 283.8712517370241,
+      "ringCenterHead": [
+        -436.7462995116407,
+        0.0021209546730460715,
+        172.51397706878421
+      ],
+      "ringNormalHead": [
+        0.8537276638494987,
+        7.670495284074945e-08,
+        0.520719767224244
+      ],
+      "translatePartHead": [
+        -0.018188275348488294,
+        0.0,
+        0.0
+      ],
+      "ring": "preload",
+      "part": "rear seg 0"
+    },
+    "preload/rear seg 1": {
+      "t": 2.544,
+      "nodeToEnvelopeGapMm": 243.1926486958511,
+      "certifiedSampledLowerBoundMm": 242.70469076912076,
+      "ringCenterHead": [
+        -447.1537379822261,
+        0.0022014061869413126,
+        190.2481434160129
+      ],
+      "ringNormalHead": [
+        0.8520387964588846,
+        2.6366920347166087e-07,
+        0.523478642667324
+      ],
+      "translatePartHead": [
+        -0.016181005252528323,
+        0.0,
+        0.0
+      ],
+      "ring": "preload",
+      "part": "rear seg 1"
+    },
+    "preload/rear seg 2": {
+      "t": 2.5460000000000003,
+      "nodeToEnvelopeGapMm": 202.08188605241625,
+      "certifiedSampledLowerBoundMm": 201.59392812568592,
+      "ringCenterHead": [
+        -457.5622247629391,
+        0.0022818577008365537,
+        207.9411947968549
+      ],
+      "ringNormalHead": [
+        0.8503388468964547,
+        4.57889350555718e-07,
+        0.526235541804805
+      ],
+      "translatePartHead": [
+        -0.013784665296384887,
+        0.0,
+        0.0
+      ],
+      "ring": "preload",
+      "part": "rear seg 2"
+    }
+  },
+  "limitingEnvelopePoseCheck": {
+    "t": 10.844,
+    "nodeToEnvelopeGapMm": 46.97363938428044,
+    "certifiedSampledLowerBoundMm": 46.485681457550115,
+    "ringCenterHead": [
+      42.08353136739143,
+      -0.006857485258478846,
+      35.95384322472688
+    ],
+    "ringNormalHead": [
+      -0.002898178481728028,
+      -0.0005359453534209977,
+      0.9999956566526
+    ],
+    "translatePartHead": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ring": "floor",
+    "part": "side motor",
+    "exactTorusToSolidMm": 57.46960258527929,
+    "exactCommonMm3": 0.0
+  }
+}

@@ -1,0 +1,412 @@
+{
+  "whole": "d686395c8a0404ccf636c60ed56aae17e387f0cd612f1da91b9a10d3f44880a4",
+  "parent": "093ca2ff6f5d2d53aa46c66651baa65f2d93bc59611a5e6e183006b9c7349415",
+  "netStockKg": 1.0533919236035538,
+  "rows": {
+    "Shared lift crosspiece": {
+      "volumeMm3": 80678.14519471805,
+      "kg": 0.21783099202573872,
+      "role": "carriage",
+      "densityKgM3": 2700
+    },
+    "Hook guide channel · left": {
+      "volumeMm3": 51472.62346893652,
+      "kg": 0.13897608336612863,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Captive hook wear block · left": {
+      "volumeMm3": 21791.90691035589,
+      "kg": 0.05883814865796091,
+      "role": "carriage",
+      "densityKgM3": 2700
+    },
+    "Guide rear anchor web · left": {
+      "volumeMm3": 19990.73867647059,
+      "kg": 0.0539749944264706,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Guide rear anchor cleat · left": {
+      "volumeMm3": 3456.0,
+      "kg": 0.009331200000000001,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Pivot cable drum · left": {
+      "volumeMm3": 19985.373596278765,
+      "kg": 0.05396050870995267,
+      "role": "drum",
+      "densityKgM3": 2700
+    },
+    "Hoist redirect ear 194 · left": {
+      "volumeMm3": 1103.2854624794022,
+      "kg": 0.0029788707486943862,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Hoist redirect ear 211 · left": {
+      "volumeMm3": 1103.2854624794022,
+      "kg": 0.0029788707486943862,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Hoist rear redirect sheave · left": {
+      "volumeMm3": 5007.384530556769,
+      "kg": 0.013519938232503277,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Hoist rear redirect axle · left": {
+      "volumeMm3": 678.5840131753954,
+      "kg": 0.005326884503426854,
+      "role": "cassette",
+      "densityKgM3": 7850
+    },
+    "Hook guide channel · right": {
+      "volumeMm3": 51472.62346893652,
+      "kg": 0.13897608336612863,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Captive hook wear block · right": {
+      "volumeMm3": 21791.90694466142,
+      "kg": 0.058838148750585836,
+      "role": "carriage",
+      "densityKgM3": 2700
+    },
+    "Guide rear anchor web · right": {
+      "volumeMm3": 19990.73867647059,
+      "kg": 0.0539749944264706,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Guide rear anchor cleat · right": {
+      "volumeMm3": 3456.0,
+      "kg": 0.009331200000000001,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Pivot cable drum · right": {
+      "volumeMm3": 19985.373596278754,
+      "kg": 0.05396050870995264,
+      "role": "drum",
+      "densityKgM3": 2700
+    },
+    "Hoist redirect ear 194 · right": {
+      "volumeMm3": 1103.2854624794022,
+      "kg": 0.0029788707486943862,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Hoist redirect ear 211 · right": {
+      "volumeMm3": 1103.2854624794022,
+      "kg": 0.0029788707486943862,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Hoist rear redirect sheave · right": {
+      "volumeMm3": 5007.384530556769,
+      "kg": 0.013519938232503277,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Hoist rear redirect axle · right": {
+      "volumeMm3": 678.5840131753954,
+      "kg": 0.005326884503426854,
+      "role": "cassette",
+      "densityKgM3": 7850
+    },
+    "Catch sector": {
+      "volumeMm3": 22777.943209620356,
+      "kg": 0.06150044666597496,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Capture-angle dog bushing": {
+      "volumeMm3": 617.2444166140549,
+      "kg": 0.004845368670420331,
+      "role": "cassette",
+      "densityKgM3": 7850
+    },
+    "Hook slider liner 196.2 · left": {
+      "volumeMm3": 641.7334011778422,
+      "kg": 0.0009112614296725361,
+      "role": "carriage",
+      "densityKgM3": 1420
+    },
+    "Hook slider liner 215.0 · left": {
+      "volumeMm3": 641.7334011778422,
+      "kg": 0.0009112614296725361,
+      "role": "carriage",
+      "densityKgM3": 1420
+    },
+    "Slide stop guide · left": {
+      "volumeMm3": 1359.1158137960165,
+      "kg": 0.01066905913829873,
+      "role": "cassette",
+      "densityKgM3": 7850
+    },
+    "Slide stop pin · left": {
+      "volumeMm3": 395.84067435231384,
+      "kg": 0.003107349293665664,
+      "role": "stop",
+      "densityKgM3": 7850
+    },
+    "Slide stop actuator · left": {
+      "volumeMm3": 5805.663223833938,
+      "kg": 0.015675290704351634,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Hoist rope drum to sheave · left": {
+      "volumeMm3": 1409.0614357829888,
+      "kg": 0.0013667895927094993,
+      "role": "cassette",
+      "densityKgM3": 970
+    },
+    "Hoist rope working span · left": {
+      "volumeMm3": 1731.8029502913737,
+      "kg": 0.0016798488617826327,
+      "role": "cord",
+      "densityKgM3": 970
+    },
+    "Hook slider liner 196.2 · right": {
+      "volumeMm3": 641.7334011778422,
+      "kg": 0.0009112614296725361,
+      "role": "carriage",
+      "densityKgM3": 1420
+    },
+    "Hook slider liner 215.0 · right": {
+      "volumeMm3": 641.7334011778422,
+      "kg": 0.0009112614296725361,
+      "role": "carriage",
+      "densityKgM3": 1420
+    },
+    "Slide stop guide · right": {
+      "volumeMm3": 1359.1158137960165,
+      "kg": 0.01066905913829873,
+      "role": "cassette",
+      "densityKgM3": 7850
+    },
+    "Slide stop pin · right": {
+      "volumeMm3": 395.84067435231384,
+      "kg": 0.003107349293665664,
+      "role": "stop",
+      "densityKgM3": 7850
+    },
+    "Slide stop actuator · right": {
+      "volumeMm3": 5805.663223833938,
+      "kg": 0.015675290704351634,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Hoist rope drum to sheave · right": {
+      "volumeMm3": 1409.0614357829888,
+      "kg": 0.0013667895927094993,
+      "role": "cassette",
+      "densityKgM3": 970
+    },
+    "Hoist rope working span · right": {
+      "volumeMm3": 1731.8029502913737,
+      "kg": 0.0016798488617826327,
+      "role": "cord",
+      "densityKgM3": 970
+    },
+    "Pivot torque shaft": {
+      "volumeMm3": 141702.9653090285,
+      "kg": 1.1123682776758739,
+      "role": "drum",
+      "densityKgM3": 7850
+    },
+    "Pivot drive socket": {
+      "volumeMm3": 6596.43036907637,
+      "kg": 0.05178197839724951,
+      "role": "cassette",
+      "densityKgM3": 7850
+    },
+    "Sliding pivot clutch": {
+      "volumeMm3": 7205.440646709118,
+      "kg": 0.05656270907666657,
+      "role": "clutch",
+      "densityKgM3": 7850
+    },
+    "Cassette cheek · right": {
+      "volumeMm3": 29419.80577549067,
+      "kg": 0.07943347559382481,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Redirect cross-tie · left": {
+      "volumeMm3": 7186.457142857141,
+      "kg": 0.019403434285714283,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Hook anchor compression tube · left": {
+      "volumeMm3": 20993.27999999994,
+      "kg": 0.056681855999999836,
+      "role": "carriage",
+      "densityKgM3": 2700
+    },
+    "Hook anchor root · left": {
+      "volumeMm3": 4255.999999999999,
+      "kg": 0.011491199999999998,
+      "role": "carriage",
+      "densityKgM3": 2700
+    },
+    "Thimble pin shelf · left": {
+      "volumeMm3": 2417.9745687328896,
+      "kg": 0.006528531335578802,
+      "role": "carriage",
+      "densityKgM3": 2700
+    },
+    "Hoist thimble pin · left": {
+      "volumeMm3": 638.3716272094459,
+      "kg": 0.005011217273594151,
+      "role": "carriage",
+      "densityKgM3": 7850
+    },
+    "Hoist eye thimble · left": {
+      "volumeMm3": 2084.1011504649323,
+      "kg": 0.005627073106255318,
+      "role": "carriage",
+      "densityKgM3": 2700
+    },
+    "Spliced hoist eye · left": {
+      "volumeMm3": 1486.7747658802098,
+      "kg": 0.0014421715229038035,
+      "role": "carriage",
+      "densityKgM3": 970
+    },
+    "Hoist splice allowance · left": {
+      "volumeMm3": 5089.380098815466,
+      "kg": 0.0049366986958510025,
+      "role": "carriage",
+      "densityKgM3": 970
+    },
+    "Redirect cross-tie · right": {
+      "volumeMm3": 7186.457142857143,
+      "kg": 0.019403434285714286,
+      "role": "cassette",
+      "densityKgM3": 2700
+    },
+    "Hook anchor compression tube · right": {
+      "volumeMm3": 20993.27999999994,
+      "kg": 0.056681855999999836,
+      "role": "carriage",
+      "densityKgM3": 2700
+    },
+    "Hook anchor root · right": {
+      "volumeMm3": 4255.999999999999,
+      "kg": 0.011491199999999998,
+      "role": "carriage",
+      "densityKgM3": 2700
+    },
+    "Thimble pin shelf · right": {
+      "volumeMm3": 2417.9745687328896,
+      "kg": 0.006528531335578802,
+      "role": "carriage",
+      "densityKgM3": 2700
+    },
+    "Hoist thimble pin · right": {
+      "volumeMm3": 638.3716272094459,
+      "kg": 0.005011217273594151,
+      "role": "carriage",
+      "densityKgM3": 7850
+    },
+    "Hoist eye thimble · right": {
+      "volumeMm3": 2084.1011504649323,
+      "kg": 0.005627073106255318,
+      "role": "carriage",
+      "densityKgM3": 2700
+    },
+    "Spliced hoist eye · right": {
+      "volumeMm3": 1486.7747658799885,
+      "kg": 0.0014421715229035888,
+      "role": "carriage",
+      "densityKgM3": 970
+    },
+    "Hoist splice allowance · right": {
+      "volumeMm3": 5089.380098815466,
+      "kg": 0.0049366986958510025,
+      "role": "carriage",
+      "densityKgM3": 970
+    }
+  },
+  "role": {
+    "Shared lift crosspiece": "carriage",
+    "Hook guide channel · left": "cassette",
+    "Captive hook wear block · left": "carriage",
+    "Guide rear anchor web · left": "cassette",
+    "Guide rear anchor cleat · left": "cassette",
+    "Pivot cable drum · left": "drum",
+    "Hoist redirect ear 194 · left": "cassette",
+    "Hoist redirect ear 211 · left": "cassette",
+    "Hoist rear redirect sheave · left": "cassette",
+    "Hoist rear redirect axle · left": "cassette",
+    "Hook guide channel · right": "cassette",
+    "Captive hook wear block · right": "carriage",
+    "Guide rear anchor web · right": "cassette",
+    "Guide rear anchor cleat · right": "cassette",
+    "Pivot cable drum · right": "drum",
+    "Hoist redirect ear 194 · right": "cassette",
+    "Hoist redirect ear 211 · right": "cassette",
+    "Hoist rear redirect sheave · right": "cassette",
+    "Hoist rear redirect axle · right": "cassette",
+    "Catch sector": "cassette",
+    "Capture-angle dog bushing": "cassette",
+    "Hook slider liner 196.2 · left": "carriage",
+    "Hook slider liner 215.0 · left": "carriage",
+    "Slide stop guide · left": "cassette",
+    "Slide stop pin · left": "stop",
+    "Slide stop actuator · left": "cassette",
+    "Hoist rope drum to sheave · left": "cassette",
+    "Hoist rope working span · left": "cord",
+    "Hook slider liner 196.2 · right": "carriage",
+    "Hook slider liner 215.0 · right": "carriage",
+    "Slide stop guide · right": "cassette",
+    "Slide stop pin · right": "stop",
+    "Slide stop actuator · right": "cassette",
+    "Hoist rope drum to sheave · right": "cassette",
+    "Hoist rope working span · right": "cord",
+    "Pivot torque shaft": "drum",
+    "Pivot drive socket": "cassette",
+    "Sliding pivot clutch": "clutch",
+    "Cassette cheek · right": "cassette",
+    "Redirect cross-tie · left": "cassette",
+    "Hook anchor compression tube · left": "carriage",
+    "Hook anchor root · left": "carriage",
+    "Thimble pin shelf · left": "carriage",
+    "Hoist thimble pin · left": "carriage",
+    "Hoist eye thimble · left": "carriage",
+    "Spliced hoist eye · left": "carriage",
+    "Hoist splice allowance · left": "carriage",
+    "Redirect cross-tie · right": "cassette",
+    "Hook anchor compression tube · right": "carriage",
+    "Hook anchor root · right": "carriage",
+    "Thimble pin shelf · right": "carriage",
+    "Hoist thimble pin · right": "carriage",
+    "Hoist eye thimble · right": "carriage",
+    "Spliced hoist eye · right": "carriage",
+    "Hoist splice allowance · right": "carriage"
+  },
+  "states": 8,
+  "comparisons": 797,
+  "intersections": [],
+  "landsGapMm": {
+    "Hook anchor root · left / Shared lift crosspiece": 0.0,
+    "Hook anchor compression tube · left / Hook anchor root · left": 0.0,
+    "Redirect cross-tie · left / Hook guide channel · left": 0.0,
+    "Hook anchor root · right / Shared lift crosspiece": 0.0,
+    "Hook anchor compression tube · right / Hook anchor root · right": 0.0,
+    "Redirect cross-tie · right / Hook guide channel · right": 0.0
+  },
+  "buryLengthMm": 180,
+  "minimumStraightReserveMm": 12,
+  "ropeDiameterMm": 3,
+  "rollingSurfaceDiameterMm": 26,
+  "eyeDmMm": 27,
+  "flatEyeMm": 82,
+  "source": "Marlow D12 MAX 99 3 mm spliced minimum 16.2 kN. Published 60d splice allowance and minimum 2.7d eye. Finished bury diameter represented by a conservative 6 mm envelope; loaded construction and installation remain unmeasured."
+}

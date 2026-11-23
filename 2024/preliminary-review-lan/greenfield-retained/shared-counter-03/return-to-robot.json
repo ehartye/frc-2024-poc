@@ -1,0 +1,141 @@
+{
+  "stationM": [
+    1.39,
+    5.871,
+    0.0
+  ],
+  "scope": "Post-opening shared registration to fixed stock only. Intrusion at any sampled material site is a positive geometric control. The field-only path becomes physically unevaluated after the first interference; deeper intersections on that same trajectory are diagnostic only.",
+  "cases": [
+    {
+      "input": "28d2269ee8421391ecb5016a2e63f65835c8d5795d00206b8ad3039842b4ed9d",
+      "tag": "R02-inner",
+      "parts": 76,
+      "samples": 495,
+      "first": [
+        {
+          "part": "roboRIO flat",
+          "firstLocalS": 2.8799999999997636,
+          "penetrationAtFirstSampleMm": 1.6028098534055246,
+          "deepestMm": 25.043963883426578,
+          "maxDepthAtLocalS": 2.9039999999997503
+        },
+        {
+          "part": "Chassis perimeter",
+          "firstLocalS": 2.891999999999757,
+          "penetrationAtFirstSampleMm": 0.6568439880511185,
+          "deepestMm": 25.30972502241837,
+          "maxDepthAtLocalS": 2.9039999999997503
+        },
+        {
+          "part": "Blue bumper set",
+          "firstLocalS": 2.891999999999757,
+          "penetrationAtFirstSampleMm": 0.35850781340879934,
+          "deepestMm": 25.380517712214917,
+          "maxDepthAtLocalS": 2.927999999999737
+        },
+        {
+          "part": "Bay crossmember \u00b7 rear",
+          "firstLocalS": 2.891999999999757,
+          "penetrationAtFirstSampleMm": 5.122210072994033,
+          "deepestMm": 24.867054061706945,
+          "maxDepthAtLocalS": 2.9039999999997503
+        }
+      ],
+      "hits": [
+        {
+          "part": "Chassis perimeter",
+          "firstLocalS": 2.891999999999757,
+          "penetrationAtFirstSampleMm": 0.6568439880511185,
+          "deepestMm": 25.30972502241837,
+          "maxDepthAtLocalS": 2.9039999999997503
+        },
+        {
+          "part": "Blue bumper set",
+          "firstLocalS": 2.891999999999757,
+          "penetrationAtFirstSampleMm": 0.35850781340879934,
+          "deepestMm": 25.380517712214917,
+          "maxDepthAtLocalS": 2.927999999999737
+        },
+        {
+          "part": "Bay crossmember \u00b7 rear",
+          "firstLocalS": 2.891999999999757,
+          "penetrationAtFirstSampleMm": 5.122210072994033,
+          "deepestMm": 24.867054061706945,
+          "maxDepthAtLocalS": 2.9039999999997503
+        },
+        {
+          "part": "Chassis sill \u00b7 left",
+          "firstLocalS": 2.963999999999717,
+          "penetrationAtFirstSampleMm": 0.8691327029328804,
+          "deepestMm": 15.34147614417497,
+          "maxDepthAtLocalS": 2.9759999999997104
+        },
+        {
+          "part": "Rear left tire",
+          "firstLocalS": 2.987999999999704,
+          "penetrationAtFirstSampleMm": 1.0188970528686028,
+          "deepestMm": 11.755583620183314,
+          "maxDepthAtLocalS": 3.059999999999664
+        },
+        {
+          "part": "Rear left module deck",
+          "firstLocalS": 2.9519999999997237,
+          "penetrationAtFirstSampleMm": 1.6714735035679311,
+          "deepestMm": 25.02967115624282,
+          "maxDepthAtLocalS": 2.963999999999717
+        },
+        {
+          "part": "Swerve drive motor \u00b7 Rear left",
+          "firstLocalS": 2.9399999999997304,
+          "penetrationAtFirstSampleMm": 2.735757538758797,
+          "deepestMm": 23.39417287556244,
+          "maxDepthAtLocalS": 2.9519999999997237
+        },
+        {
+          "part": "Swerve steer motor \u00b7 Rear left",
+          "firstLocalS": 2.9399999999997304,
+          "penetrationAtFirstSampleMm": 0.7742432093242115,
+          "deepestMm": 25.253781635391867,
+          "maxDepthAtLocalS": 2.9519999999997237
+        },
+        {
+          "part": "Electronics deck",
+          "firstLocalS": 2.891999999999757,
+          "penetrationAtFirstSampleMm": 10.670040406034524,
+          "deepestMm": 25.17711900536235,
+          "maxDepthAtLocalS": 2.9519999999997237
+        },
+        {
+          "part": "PDH",
+          "firstLocalS": 2.9159999999997437,
+          "penetrationAtFirstSampleMm": 2.4567827103652675,
+          "deepestMm": 25.17711900536235,
+          "maxDepthAtLocalS": 2.9519999999997237
+        },
+        {
+          "part": "roboRIO flat",
+          "firstLocalS": 2.8799999999997636,
+          "penetrationAtFirstSampleMm": 1.6028098534055246,
+          "deepestMm": 25.043963883426578,
+          "maxDepthAtLocalS": 2.9039999999997503
+        }
+      ]
+    },
+    {
+      "input": "282709aa88c739869c5bb9bcf77efd88cc513c0964a713402c4a1750d25c262c",
+      "tag": "R06-middle",
+      "parts": 76,
+      "samples": 495,
+      "first": [],
+      "hits": []
+    },
+    {
+      "input": "86e539ca90c65c7b46e728c54700ec0d5f9322a709f461fd1b107299be805f87",
+      "tag": "R01-inner",
+      "parts": 76,
+      "samples": 496,
+      "first": [],
+      "hits": []
+    }
+  ]
+}

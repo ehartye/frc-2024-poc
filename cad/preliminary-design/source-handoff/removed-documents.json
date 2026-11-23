@@ -1,0 +1,26 @@
+{
+ "note": "Third-party documents removed from the repository. Download each from its source and check the SHA-256 before rerunning a script that reads it. The research wiki holds a text capture of each.",
+ "documents": [
+  {
+   "path": "2024/preliminary-review-lan/greenfield-retained/launch-window-01/field-drawing-source.pdf",
+   "bytes": 14173757,
+   "sha256": "c391486d70060556556205522f27db21b787e25c17358f3ab88197d79167cbb6",
+   "source": "https://firstfrc.blob.core.windows.net/frc2024/FieldAssets/2024FieldDrawings-CRESCENDOSpecific.pdf",
+   "researchWikiClipping": "raw/clippings/field-drawing-source.md"
+  },
+  {
+   "path": "2024/preliminary-review-lan/greenfield-retained/mounted-slide-02/helix-screw-catalog.pdf",
+   "bytes": 7853198,
+   "sha256": "0729a66e837cf5b342fd65809ae87786a109feb5f127adfe52c9189b3394b4f1",
+   "source": "https://9088664.fs1.hubspotusercontent-na1.net/hubfs/9088664/2024%20Lead%20Screw%20Assemblies%20Catalog-1.pdf",
+   "researchWikiClipping": "raw/clippings/helix-precision-lead-screw-assemblies-october-2024.md"
+  },
+  {
+   "path": "plugin-qa/toe-actuator-20261121/REV-21-1651-DS.pdf",
+   "bytes": 166386,
+   "sha256": "b7b5e2578186ba88fe6e4aa93a391892ac4ede42d760a889676ef9e70fffa17b",
+   "source": "https://www.revrobotics.com/content/docs/REV-21-1651-DS.pdf",
+   "researchWikiClipping": "raw/clippings/REV NEO 550 motor datasheet.md"
+  }
+ ]
+}

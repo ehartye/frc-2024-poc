@@ -1,0 +1,78 @@
+{
+  "attempt": "dev",
+  "n": 48,
+  "parts": [
+    {
+      "id": "middle",
+      "carry": "ab0afa27776fead84fea10ebba5b696d323463943987a3dbd44192f0bd22b7b3",
+      "gateS": 2.82,
+      "seated": true,
+      "held": true,
+      "passShot": true,
+      "endCarryClock": 10.209370249453688,
+      "shot": "e98418abc044310878a97f1b1dce55db4852f79c6464a811b518de6802572960",
+      "both": 5.192499999999842,
+      "opening": {
+        "firstPossibleS": 1.0064999999999447,
+        "fullyThroughByS": 1.102499999999934,
+        "minimumMarginM": 0.07554025381338468
+      },
+      "bus": 8.344287475169953,
+      "clock": 15.40187024945353
+    },
+    {
+      "id": "outer",
+      "carry": "1e243aa834dce42aa419588a47c1031565504965f69b259cad085672cb86a109",
+      "gateS": 2.82,
+      "seated": true,
+      "held": true,
+      "passShot": true,
+      "endCarryClock": 27.682552023009816,
+      "shot": "1805ed47c9c943369d8d7596a12a9b693f073c7e2bbda92c8839447c7f48da69",
+      "both": 3.544000000000351,
+      "opening": {
+        "firstPossibleS": 1.0079999999999445,
+        "fullyThroughByS": 1.1064999999999336,
+        "minimumMarginM": 0.051706108971483374
+      },
+      "bus": 8.34428746415125,
+      "clock": 31.226552023010168
+    },
+    {
+      "id": "inner",
+      "carry": "072f59e29d08dac8f655d0f703e70f5a35e350c169495475d7e554a21b558d66",
+      "gateS": 2.82,
+      "seated": true,
+      "held": true,
+      "passShot": true,
+      "endCarryClock": 43.503653677540676,
+      "shot": "7cca1c3cc6b5e2721fc65c00a600fe3cfffdc54ee8524bdc92ef598a9ad30d88",
+      "both": 4.053500000000473,
+      "opening": {
+        "firstPossibleS": 1.0054999999999448,
+        "fullyThroughByS": 1.0989999999999345,
+        "minimumMarginM": 0.03455984468799069
+      },
+      "bus": 8.34428683105055,
+      "clock": 47.55715367754115
+    },
+    {
+      "id": "center-high",
+      "carry": "f148f444abb687a5db8724cce2ff031731345209ab6aa1800ba8e373f0059a8a",
+      "gateS": 2.82,
+      "seated": true,
+      "held": true,
+      "passShot": false,
+      "endCarryClock": 62.22908067254181,
+      "shot": "8695fbdb041e4e33468200d693c344b2c0a163ec482a67bb43738ba7f3f12476",
+      "both": null,
+      "opening": null,
+      "bus": 8.344286799754851,
+      "clock": 67.66758067254152
+    }
+  ],
+  "score": 3,
+  "passMission": false,
+  "terminal": true,
+  "freeze": "cc18ade3fcd3222a6ca84ac37b97125c531172eb37dbb2bca01e74f4d95cdfb1"
+}

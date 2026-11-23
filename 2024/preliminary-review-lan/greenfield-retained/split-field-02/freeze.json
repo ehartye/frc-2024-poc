@@ -1,0 +1,42 @@
+{
+  "inputs": {
+    "split-field-02\\run.py": "9cac8a87748f3adf591c142734cd589371bacdaced7406e31b802799d20edaa9",
+    "split-field-02\\carry.py": "79dca850da39e40ec811d09842e807ba7980f12bd11a40003339bbe4baa060aa",
+    "split-field-02\\fire.py": "3e0f74203070383e5bfa139430a6c96d276cd400e4819e63da205ae8fc88986e",
+    "split-field-02\\route.py": "812c7f4ad2f5002bab69d1ee69e964e27e8db3307b0d2328aa16d364b8a94712",
+    "split-field-02\\plan.json": "069b21d12643135f1a43d763d7d2c450b901e25dcdd100915721f6d7941d0ce1",
+    "split-cycle-01\\split_intake.py": "16c77ae0bfbee435f705ed3ce3eef1ad3db9bded704524964971fed679981c7d",
+    "split-cycle-01\\split_fire.py": "4a8284e0e539b896bea2950deff1c1fbcd3a43e1232e02a22358b36b5087960c",
+    "split-cycle-01\\package.json": "d07c060e034d89dd85726c616745f84bf946fed9466ff92fff1ebd0dfd174f5d",
+    "scorer-contact-01\\split.py": "d8a66919c6deb3c740fe3dc2ec144380a93d870b791441f483f5ff802de05fb1",
+    "scorer-contact-01\\patch.py": "a40ad5ab263e51fda5744cd750b0765b32088469b2583f69e6e95133aafb8bf1",
+    "six-piece-02\\route.py": "8348267cea6971105550fd7be7a1768810ca7dd5a4d2cd800484f246ab390c9e",
+    "six-piece-02\\loaded.py": "51da6710398952e7f65764f0c7af9edbf77f37d122aad133ee60235c9e20d938",
+    "follower-01\\carry_cam.py": "50da675c832c8b01db8b8d5916dc8aecf83f4e240500194488e84a3ed3d99618",
+    "follower-01\\fire.py": "f8d84e2c8e7c454ea620314d259e5dd9ccd0c6fbfdca41a7a0a575aa024ecf70",
+    "follower-01\\stroke.py": "5034eb5083fd9c9028a650d0deb6e6de34245a342298655c55bd608a275881a9",
+    "follower-01\\response.json": "d1700256ae44575386fb45b23bf2142ddafe5921bbe8e0921dbb5e7081a42ee9",
+    "bounded-risk-01\\pickup.py": "bb99a16f0491a4c408e689b248a23d8eafa9a1dd6e43bfe26697b87c5cfd1a13",
+    "bounded-risk-01\\power.py": "b485d89a81e7f32f02e0e61a1c35b514e6e3ac407f714283b726c3a92fd1ad0f",
+    "pickup-lip\\pickup_trial.py": "2bf54f39fb865d80f053c3ad52291c868444732cb2b9a7e8c3c9f52009ca37ff",
+    "pickup-lip\\shot_replay.py": "cdebdd4b9c7a9a01a796e7e16324d5b37ebaf80bbf7da0ddf52da33ebe126cd6",
+    "pickup-lip\\layout.json": "150298fe6ea6575019475d18aa8fa9309c8d64adadf5ab16115f10b95ea1c030",
+    "pickup_physics.py": "8c1a413182853c964bb8d6fff77f76de0ef2fc9a70983209600ddf658c0fbe9b",
+    "mission-physics\\shot.py": "e01fd46cb134358d33197c655bf8fb6a041df6cd3db808b61a87f046cd6de16e"
+  },
+  "setupRoster": "5e21fa7a017cf6653fe54e7b6be1db51b598fb9f940c4364e0a23d0fa8913d49",
+  "field": "4b44f149634e99602ab886ae6e2a5df65a38d35d8b9614133119d30f05331e50",
+  "commandMps": 6.88,
+  "stationM": [
+    1.54,
+    5.55
+  ],
+  "required": [
+    19,
+    20
+  ],
+  "limitS": 120,
+  "scoring": "The full ring crossed the opening and fully shadowed both counter pairs. A failed or late leg fails that six-NOTE attempt.",
+  "cutoff": "Stop after second failed run. Tests after first failure on a given run cannot restore its credit.",
+  "scope": "Two start cases informed development. This is regression on the prespecified roster. Independent unseen setup validation remains separate."
+}

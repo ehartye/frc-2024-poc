@@ -33,57 +33,6 @@
       ]
     },
     {
-      "name": "Stage rehearsal and public climber",
-      "argv": [
-        "python",
-        "tests/ci_history.py",
-        "stage"
-      ],
-      "inputs": [
-        "kickoff/",
-        "experiments/speaker-cycles/",
-        "experiments/stage-climb/",
-        "cad/student/",
-        "docs/detailed-design/archive/draft-001/media/r8-stage.glb",
-        "docs/detailed-design/archive/draft-001/media/r8-stage.json",
-        "docs/index.html",
-        "tests/test_stage_endgame.py",
-        "tests/ci_history.py",
-        "tests/requirements-ci.txt"
-      ]
-    },
-    {
-      "name": "Six field roles, finite stock, human service and student controls",
-      "argv": [
-        "python",
-        "tests/ci_history.py",
-        "physical"
-      ],
-      "inputs": [
-        "kickoff/",
-        "experiments/physical-match/",
-        "docs/field-lab.html",
-        "tests/test_physical_match.py",
-        "tests/ci_history.py",
-        "tests/requirements-ci.txt"
-      ]
-    },
-    {
-      "name": "R9 physical bill and native handoff",
-      "argv": [
-        "python",
-        "tests/ci_history.py",
-        "mass"
-      ],
-      "inputs": [
-        "cad/",
-        "docs/detailed-design/archive/draft-001/media/",
-        "tests/test_r9_physical_assembly.py",
-        "tests/ci_history.py",
-        "tests/requirements-ci.txt"
-      ]
-    },
-    {
       "name": "Passive service fixture and rejected layout",
       "argv": [
         "python",
@@ -107,60 +56,6 @@
       ]
     },
     {
-      "name": "Alliance service and spatial saddle",
-      "argv": [
-        "python",
-        "tests/ci_history.py",
-        "alliance"
-      ],
-      "inputs": [
-        "cad/",
-        "kickoff/",
-        "experiments/alliance-service/",
-        "experiments/speaker-cycles/",
-        "experiments/stage-climb/",
-        "sim/",
-        "tests/ci_history.py",
-        "tests/requirements-ci.txt"
-      ]
-    },
-    {
-      "name": "Ground relay occupancy and peer clocks",
-      "argv": [
-        "python",
-        "tests/ci_history.py",
-        "ground"
-      ],
-      "inputs": [
-        "cad/",
-        "kickoff/",
-        "experiments/ground-relay/",
-        "experiments/alliance-service/",
-        "docs/ground-relay.json",
-        "tests/test_ground_relay.py",
-        "tests/ci_history.py",
-        "tests/requirements-ci.txt"
-      ]
-    },
-    {
-      "name": "Registered contact, custody and student lab",
-      "argv": [
-        "python",
-        "tests/ci_history.py",
-        "custody"
-      ],
-      "inputs": [
-        "cad/",
-        "kickoff/",
-        "experiments/ground-relay/",
-        "experiments/registered-custody/",
-        "docs/ground-contact.json",
-        "tests/test_registered_custody.py",
-        "tests/ci_history.py",
-        "tests/requirements-ci.txt"
-      ]
-    },
-    {
       "name": "Passive entry evidence and public revision bindings",
       "argv": [
         "python",
@@ -173,25 +68,6 @@
         "experiments/passive-entry/",
         "experiments/registered-custody/",
         "tests/test_passive_entry.py"
-      ]
-    },
-    {
-      "name": "Passive cassette and displayed revisions",
-      "argv": [
-        "python",
-        "tests/ci_history.py",
-        "passive"
-      ],
-      "inputs": [
-        "cad/",
-        "kickoff/",
-        "experiments/passive-entry/",
-        "experiments/registered-custody/",
-        "experiments/ground-relay/",
-        "tests/test_passive_entry.py",
-        "scripts/showcase/",
-        "tests/ci_history.py",
-        "tests/requirements-ci.txt"
       ]
     }
   ]

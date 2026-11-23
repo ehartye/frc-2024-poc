@@ -1,0 +1,12 @@
+{
+  "default": "A",
+  "label": "Blunt UHMW",
+  "geometry": "A-blunt.step",
+  "sha256": "1d62b97dbd44300ff63c6d72ed831aa6ba374e4e4454066cda89f415182adf99",
+  "spare": "B-short-raised.step",
+  "assembly": "83517673b62c1917534e6a09be04eace6189b97dc0986cb3ffc8fd6832e1bf63",
+  "nominalFloorMm": 2.9999999999999805,
+  "floorAtHalfDegreeDownMm": -0.9008875710055317,
+  "additionalNoseDownDegreesToTouch": 0.38409305213010825,
+  "scope": "Unloaded rigid edge, level floor, deployed pivot height held fixed; physical carpet and loaded deflection unmeasured."
+}

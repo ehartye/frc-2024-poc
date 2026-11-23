@@ -1,0 +1,20 @@
+{
+  "model": {
+    "file": "..\\..\\native-launcher-quadrature-20261118\\launcher-quadrature-runs\\drive-launch\\model.xml",
+    "sha256": "ff396b49933e48d28970fdbb7c44f0ac738e65c04e141b68312c58074b002a47"
+  },
+  "trace": {
+    "file": "drive-launch-sample.json",
+    "sha256": "17cb28547cd25509f32dabd39a67f47ebc28fb8e59b822246cbcd64a67349a5b"
+  },
+  "sampleIndex": 0,
+  "target": {
+    "units": "m",
+    "lowerEdge": 1.9845019999999998,
+    "uncertainty": 0.0127,
+    "locator": "GE-24300 Rev A, sheet 2 of 6, floor datum assumed",
+    "frame": "native-world-z-up",
+    "datum": "model-floor",
+    "registration": "assumed"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "parent": "456638547eebf64ac68fc7f00a095ef75c9efdc13019e937c3ddd312ee0ebd71",
+  "hookSource": "3b7d7c63bf3758ceda05449e5ce6f5d8b9a67a46c151a644e3d7f82b1693a4f7",
+  "step": "5ea3e2ef1260cb6fcca1dfaccf39fbfaa4656461be6aedd9e415cdae8e84e02e",
+  "removed": [
+    "Chain hook \u00b7 left",
+    "Hook keeper \u00b7 left",
+    "Chain hook \u00b7 right",
+    "Hook keeper \u00b7 right"
+  ],
+  "rig": {
+    "Chain hook \u00b7 left": "arm",
+    "Chain hook \u00b7 right": "arm",
+    "Common keeper yoke and sliding rack": "keeper",
+    "Keeper drive mast": "arm",
+    "Keeper pinion output": "arm",
+    "Keeper return pinion": "arm",
+    "Keeper motor and return spring": "arm"
+  },
+  "seats": {
+    "Keeper drive mast": 32949.961094726896,
+    "Common keeper yoke and sliding rack": 13180.0,
+    "mast lands mm2": 191.99999999576806,
+    "rack face overlap closed and open mm": [
+      7,
+      9
+    ],
+    "spring at pitch radius Nm": [
+      0.028800000000000003,
+      0.15552000000000002
+    ],
+    "open peak commanded Nm": 0.36
+  },
+  "netSolidMassKg": 0.2885047323945783,
+  "extraIncludingActuatorKg": [
+    0.4165047323945783,
+    0.5835047323945783
+  ],
+  "scope": "Spring and backdrivable motor are an allocation; opening torque, friction, lost motion, shaft and positive stop strength require selected components. Pinion and rack are pitch envelopes. Gate travel 0\u201344 mm."
+}

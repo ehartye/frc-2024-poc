@@ -1,0 +1,43 @@
+{
+  "reference": "1d62b97dbd44300ff63c6d72ed831aa6ba374e4e4454066cda89f415182adf99",
+  "parkedAssembly": "a29a146d8897f64e8f056fcb46a431ba234c7aecccbc3233b6834c43c703bc88",
+  "exportedBlade": "7f55fe959cca467c368a5bf6fd86d7f7128acc9264030fe238eca585af1253de",
+  "coordinateSystem": "mm, deployed blade to parked assembly",
+  "parkedBodies": 232,
+  "deployedToParked": [
+    [
+      -0.9961946980917711,
+      0.0,
+      -0.0871557427473671,
+      397.38314061447994
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      1.8633013430411425e-13
+    ],
+    [
+      0.0871557427473671,
+      0.0,
+      -0.9961946980917711,
+      985.3326214820747
+    ]
+  ],
+  "nativeVsReference": {
+    "absentMm3": 0.0,
+    "extraMm3": 0.0
+  },
+  "referenceVsParked": {
+    "absentMm3": 0.0,
+    "extraMm3": 0.0
+  },
+  "displaced2mm": {
+    "absentMm3": 219.20144835744034,
+    "extraMm3": 219.20144833326066
+  },
+  "mountCommonMm3": 0.0,
+  "mountGapMm": 8.572055414176037e-12,
+  "rollerGapMm": 2.3351509653796607,
+  "pass": true
+}

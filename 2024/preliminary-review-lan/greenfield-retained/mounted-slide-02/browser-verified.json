@@ -1,0 +1,7 @@
+{
+  "tip": "Withdraw the motor and its cap at the bench mounting screws · cartridge 45 / 45 mm",
+  "weight": "Inspection weight\n35.998–56.270 kg\nLimit 56.699 kg · headroom +0.429 kg high / +20.701 kg low\nWeight ledger ↓\nBattery voltage under load\n8.344 V minimum\nRequirement 8.00 V · headroom +0.344 V\nPower ledger ↓\nBattery-side demand\n128.0 A · 1.07 kW\nPack budget at 8.0 V: 140.7 A / 1.13 kW\nPower ledger ↓",
+  "selected": "COMPONENT INSPECTOR\nDouble pinch hub\nmechanism / Slide drive and service\n\nAluminum clamp blank\n\n3.7 cm³ · Preliminary package derived from the service trial, 1:1 in millimeters. Connector mating hardware and clamp preload require measured confirmation.\n\nPurpose\n\nCouple the screw spindle to the round motor shaft.\n\nWhy it is included\n\nSeparate pinches can be loosened with the cartridge still in the robot.\n\nFocus partShow assembly",
+  "returned": "http://192.168.1.129:8764/?concept=guided&case=observed-reset-96",
+  "errors": []
+}

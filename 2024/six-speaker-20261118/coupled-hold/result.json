@@ -1,0 +1,38 @@
+{
+  "schema": "native-raised-feed/1",
+  "case": "hold",
+  "outcome": "HORIZON",
+  "dt": 0.0001,
+  "grid": 512,
+  "segments": 1024,
+  "sourceTraceSha256": "b06928ecfa09a08f3f166e1f99cdd678183c693dfaebd925a3236b1d1b878b69",
+  "nativeSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "calibrationSha256": "fb4f17c185a1f149f1c125bca5652ce7abf64ebd9dbedf39ceb729a83e5de2da",
+  "start": 16.750000000000057,
+  "end": 17.149999999999125,
+  "feedStart": null,
+  "firstLauncherContact": null,
+  "firstSimultaneousContact": null,
+  "lastLauncherContact": null,
+  "minimumBusV": 9.410406762317212,
+  "sourceWorkJ": 255.3765020804874,
+  "unloadingHeatJ": 0.0,
+  "traceSha256": "89451ee15ed85048c534a8ea53da913b73c8269310341489815e8c287d7583fa",
+  "finalNotePositionM": [
+    2.1707533015121117,
+    1.62116866007753,
+    0.4746628232192584
+  ],
+  "finalNoteVelocityMps": [
+    -0.035770312620232995,
+    0.3175082633707363,
+    0.0010561659453326854
+  ],
+  "finalWheelRadps": [
+    460.4654121819012,
+    460.46541218190106,
+    460.4654121819013,
+    460.4654121819013
+  ],
+  "verifiedSpeakerScores": 0
+}

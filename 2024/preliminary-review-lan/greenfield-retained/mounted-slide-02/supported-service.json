@@ -1,0 +1,198 @@
+{
+  "registered": "a29a146d8897f64e8f056fcb46a431ba234c7aecccbc3233b6834c43c703bc88",
+  "fixture": "587441e076a41b1c27afd4a50c538c5ad1413f7de64db7ee05620495a1642e14",
+  "serviceIndex": 78,
+  "servicePose": "Slide restrained \u00b7 power isolated \u00b7 pack withdrawal 0 / 370 mm",
+  "rootMembers": 230,
+  "checks": {
+    "installed hardware vs supported robot": {
+      "subjects": 26,
+      "obstacles": 230,
+      "narrow": 11,
+      "hits": []
+    },
+    "unplug all four": {
+      "subjects": 4,
+      "obstacles": 241,
+      "narrow": 0,
+      "hits": []
+    },
+    "finger approach": {
+      "subjects": 4,
+      "obstacles": 241,
+      "narrow": 0,
+      "hits": []
+    },
+    "cartridge retaining screws and drivers": {
+      "subjects": 2,
+      "obstacles": 242,
+      "narrow": 1,
+      "hits": []
+    },
+    "draw vs supported stock": {
+      "Slide drive motor": {
+        "subjects": 1,
+        "obstacles": 234,
+        "narrow": 1,
+        "hits": []
+      },
+      "Removable cap and ears": {
+        "subjects": 1,
+        "obstacles": 234,
+        "narrow": 1,
+        "hits": []
+      },
+      "M3 on cap 0": {
+        "subjects": 1,
+        "obstacles": 234,
+        "narrow": 1,
+        "hits": []
+      },
+      "M3 on cap 1": {
+        "subjects": 1,
+        "obstacles": 234,
+        "narrow": 0,
+        "hits": []
+      },
+      "lead 0": {
+        "subjects": 1,
+        "obstacles": 234,
+        "narrow": 0,
+        "hits": []
+      },
+      "lead 1": {
+        "subjects": 1,
+        "obstacles": 234,
+        "narrow": 0,
+        "hits": []
+      },
+      "lead 2": {
+        "subjects": 1,
+        "obstacles": 234,
+        "narrow": 0,
+        "hits": []
+      },
+      "lead 3": {
+        "subjects": 1,
+        "obstacles": 234,
+        "narrow": 0,
+        "hits": []
+      },
+      "plug 0": {
+        "subjects": 1,
+        "obstacles": 234,
+        "narrow": 0,
+        "hits": []
+      },
+      "plug 1": {
+        "subjects": 1,
+        "obstacles": 234,
+        "narrow": 0,
+        "hits": []
+      },
+      "plug 2": {
+        "subjects": 1,
+        "obstacles": 234,
+        "narrow": 0,
+        "hits": []
+      },
+      "plug 3": {
+        "subjects": 1,
+        "obstacles": 234,
+        "narrow": 0,
+        "hits": []
+      }
+    }
+  },
+  "hubClockToolChecks": {
+    "-180": {
+      "subjects": 2,
+      "obstacles": 253,
+      "narrow": 4,
+      "hits": []
+    },
+    "-90": {
+      "subjects": 2,
+      "obstacles": 253,
+      "narrow": 4,
+      "hits": [
+        [
+          "238.4",
+          "Stationary rail receiver",
+          85.52985999398224
+        ],
+        [
+          "247.6",
+          "Stationary rail receiver",
+          85.52985999398223
+        ]
+      ]
+    },
+    "-10": {
+      "subjects": 2,
+      "obstacles": 253,
+      "narrow": 5,
+      "hits": []
+    },
+    "0": {
+      "subjects": 2,
+      "obstacles": 253,
+      "narrow": 4,
+      "hits": []
+    },
+    "10": {
+      "subjects": 2,
+      "obstacles": 253,
+      "narrow": 5,
+      "hits": []
+    },
+    "90": {
+      "subjects": 2,
+      "obstacles": 253,
+      "narrow": 20,
+      "hits": [
+        [
+          "238.4",
+          "Feed belt \u00b7 left",
+          10.691232556886073
+        ],
+        [
+          "238.4",
+          "Feed tread \u00b7 left",
+          57.73265580718393
+        ],
+        [
+          "238.4",
+          "Stationary rail receiver",
+          85.52985999398226
+        ],
+        [
+          "238.4",
+          "M4 receiver attachment 1",
+          0.4563447356291143
+        ],
+        [
+          "247.6",
+          "Feed belt \u00b7 left",
+          10.691232556886074
+        ],
+        [
+          "247.6",
+          "Feed tread \u00b7 left",
+          57.732655807183924
+        ],
+        [
+          "247.6",
+          "Stationary rail receiver",
+          64.63370464497619
+        ],
+        [
+          "247.6",
+          "M4 cap retention 0",
+          24.51479674856915
+        ]
+      ]
+    }
+  },
+  "source": "6871d1d5c6ef81d7318b94477662119e6190a2a96492db7d244a1e1a06dbee1a"
+}

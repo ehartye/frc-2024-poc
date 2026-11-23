@@ -1,0 +1,14 @@
+{
+  "status": "rejected",
+  "basis": "Source field and robot Breps intersect on the inward swing. Terminate remaining measurements after this decisive veto.",
+  "capturedPairs": 53,
+  "positives": 1693,
+  "largest": [
+    "FE-2024/GE-24200_Blue/GE-24220_GE-24220 Tag14/GE-24222",
+    "Blue bumper set",
+    5.150000000000548,
+    0.0,
+    611051.5654267968
+  ],
+  "raw": "f70f38c331206e94ede74ca699480b8375a970baf09aeab874a60c0ab8db5f78"
+}

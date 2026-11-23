@@ -1,0 +1,122 @@
+{
+ "96/0/side": {
+  "netTangentialUpperN": 11.858833958685487,
+  "simpleSpanMm": 24,
+  "radialResultantUpperN": 12.619907506315624,
+  "perSupportN": 6.309953753157812,
+  "torqueNm": 0.13341188203521173,
+  "nominalShearMPa": 5.8466238619908655,
+  "nominalBendMPa": 6.636636968488483,
+  "elasticDeflectionMm": 0.0006527839641136215
+ },
+ "96/0/rear": {
+  "netTangentialUpperN": 6.281355349131987,
+  "simpleSpanMm": 24,
+  "radialResultantUpperN": 6.684478743568933,
+  "perSupportN": 3.3422393717844665,
+  "torqueNm": 0.07066524767773485,
+  "nominalShearMPa": 3.096824038334866,
+  "nominalBendMPa": 3.5152760606560607,
+  "elasticDeflectionMm": 0.0003457648584251863
+ },
+ "96/0.1/side": {
+  "netTangentialUpperN": 25.65820471034452,
+  "simpleSpanMm": 24,
+  "radialResultantUpperN": 27.304891134385386,
+  "perSupportN": 13.652445567192693,
+  "torqueNm": 0.28865480299137586,
+  "nominalShearMPa": 12.649968153527908,
+  "nominalBendMPa": 14.359269260280058,
+  "elasticDeflectionMm": 0.0014123871403554158
+ },
+ "96/0.1/rear": {
+  "netTangentialUpperN": 15.093489030865863,
+  "simpleSpanMm": 24,
+  "radialResultantUpperN": 16.062155535756446,
+  "perSupportN": 8.031077767878223,
+  "torqueNm": 0.16980175159724095,
+  "nominalShearMPa": 7.441368471469813,
+  "nominalBendMPa": 8.446868185750644,
+  "elasticDeflectionMm": 0.0008308394936803913
+ },
+ "96/0.25/side": {
+  "netTangentialUpperN": 46.35726083783307,
+  "simpleSpanMm": 24,
+  "radialResultantUpperN": 49.332366576490024,
+  "perSupportN": 24.666183288245012,
+  "torqueNm": 0.5215191844256221,
+  "nominalShearMPa": 22.85498459083347,
+  "nominalBendMPa": 25.94321769796742,
+  "elasticDeflectionMm": 0.0025517919047181067
+ },
+ "96/0.25/rear": {
+  "netTangentialUpperN": 28.31168955346667,
+  "simpleSpanMm": 24,
+  "radialResultantUpperN": 30.12867072403771,
+  "perSupportN": 15.064335362018856,
+  "torqueNm": 0.31850650747650006,
+  "nominalShearMPa": 13.958185121172232,
+  "nominalBendMPa": 15.844256373392517,
+  "elasticDeflectionMm": 0.0015584514465631985
+ },
+ "192/0/side": {
+  "netTangentialUpperN": 11.98835686873191,
+  "simpleSpanMm": 24,
+  "radialResultantUpperN": 12.757742908213425,
+  "perSupportN": 6.378871454106712,
+  "torqueNm": 0.134869014773234,
+  "nominalShearMPa": 5.9104810455208945,
+  "nominalBendMPa": 6.7091227235024276,
+  "elasticDeflectionMm": 0.0006599137105084355
+ },
+ "192/0/rear": {
+  "netTangentialUpperN": 6.237581892381531,
+  "simpleSpanMm": 24,
+  "radialResultantUpperN": 6.637896003870662,
+  "perSupportN": 3.318948001935331,
+  "torqueNm": 0.07017279628929222,
+  "nominalShearMPa": 3.0752429168139264,
+  "nominalBendMPa": 3.490778834173195,
+  "elasticDeflectionMm": 0.00034335529516457664
+ },
+ "192/0.1/side": {
+  "netTangentialUpperN": 25.938444861552597,
+  "simpleSpanMm": 24,
+  "radialResultantUpperN": 27.60311647425631,
+  "perSupportN": 13.801558237128155,
+  "torqueNm": 0.2918075046924667,
+  "nominalShearMPa": 12.788131716728913,
+  "nominalBendMPa": 14.516101892732944,
+  "elasticDeflectionMm": 0.0014278133009245522
+ },
+ "192/0.1/rear": {
+  "netTangentialUpperN": 14.98830565043549,
+  "simpleSpanMm": 24,
+  "radialResultantUpperN": 15.950221720268567,
+  "perSupportN": 7.975110860134284,
+  "torqueNm": 0.16861843856739928,
+  "nominalShearMPa": 7.389511124950625,
+  "nominalBendMPa": 8.388003721211655,
+  "elasticDeflectionMm": 0.0008250495463486875
+ },
+ "192/0.25/side": {
+  "netTangentialUpperN": 46.86357685078363,
+  "simpleSpanMm": 24,
+  "radialResultantUpperN": 49.871176823320646,
+  "perSupportN": 24.935588411660323,
+  "torqueNm": 0.5272152395713158,
+  "nominalShearMPa": 23.10460772354094,
+  "nominalBendMPa": 26.226570646578725,
+  "elasticDeflectionMm": 0.0025796626865487275
+ },
+ "192/0.25/rear": {
+  "netTangentialUpperN": 28.114391287516433,
+  "simpleSpanMm": 24,
+  "radialResultantUpperN": 29.918710294865427,
+  "perSupportN": 14.959355147432714,
+  "torqueNm": 0.31628690198455983,
+  "nominalShearMPa": 13.860913437155672,
+  "nominalBendMPa": 15.733841051769344,
+  "elasticDeflectionMm": 0.001547590923124854
+ }
+}

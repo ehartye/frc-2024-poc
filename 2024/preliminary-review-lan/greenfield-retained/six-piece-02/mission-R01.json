@@ -1,0 +1,74 @@
+{
+  "planHash": "ae70de30c37be782ac88fe37f2af827a0053aa09b48b2bd7caa9d0013afde2b1",
+  "placedStep": "fd49a9cdde14aa4d5acd1aac602580e456e19776512099517a9e51cba992510f",
+  "rows": [
+    {
+      "id": "middle",
+      "floorStartS": 1.8522464715461662,
+      "scoreRequestS": 10.173662867811457,
+      "endS": 13.835912867810787,
+      "seat": true,
+      "held": true,
+      "opening": {
+        "firstPossibleS": 0.7794999999999419,
+        "fullyThroughByS": 0.8557499999999335,
+        "minimumMarginM": 0.043963128944311425
+      },
+      "counterS": 13.835912867810787,
+      "release": 0.5919999999999626,
+      "busV": 8.381829071169348,
+      "files": {
+        "R01-middle-96.json": "bbe59df13939d8e2d3c7c4a4c332612199976fc87b68f3a5671bb3c26d8d6623",
+        "indexed-R01-middle-96.json": "1a9343ead690ce2a0b50f121ec51bf774821b0c9e33562a1ea4e07f24be517f8"
+      }
+    },
+    {
+      "id": "outer",
+      "floorStartS": 19.117572008742712,
+      "scoreRequestS": 26.117572008742712,
+      "endS": 30.437572008742247,
+      "seat": true,
+      "held": true,
+      "opening": {
+        "firstPossibleS": 0.7797499999999419,
+        "fullyThroughByS": 0.8474999999999344,
+        "minimumMarginM": 0.060927867319328075
+      },
+      "counterS": 30.437572008742247,
+      "release": 0.5919999999999626,
+      "busV": 8.379797729252179,
+      "files": {
+        "R01-outer-96.json": "aedd023134299c7ae947ae4c03f407ec694d3bdbc9f478bd7a14d69ef412862d",
+        "indexed-R01-outer-96.json": "0bd44324b6402f779183b10cd3609292f9857c95918ff7f701fbf4208c840996"
+      }
+    },
+    {
+      "id": "inner",
+      "floorStartS": 35.71566234837025,
+      "scoreRequestS": 42.71566234837025,
+      "endS": 45.15741234837026,
+      "seat": true,
+      "held": true,
+      "opening": {
+        "firstPossibleS": 0.7817499999999417,
+        "fullyThroughByS": 0.8469999999999345,
+        "minimumMarginM": 0.04958630543768027
+      },
+      "counterS": null,
+      "release": 0.5917499999999626,
+      "busV": 8.380616743500921,
+      "files": {
+        "R01-inner-96.json": "326368b7e2ae6ed19b1b1f08842047ecc4f993a1d251426868fd819eafb2d503",
+        "indexed-R01-inner-96.json": "ccc3db4ec1bf5ff2a18c3b452acaff5e64263b1b04445ebf821d9bbde36ad229"
+      }
+    }
+  ],
+  "scoreCount": 2,
+  "timeS": 45.15741234837026,
+  "target": [
+    6,
+    120
+  ],
+  "frozenRosterAttempts": 0,
+  "calibration": "Development, nominal marks, 96 segments. Supply is finite. Holding and field scoring are simulated; route tracking and empty arm resetting are commanded. Positive NOTE custody through return and a score are separate evidence."
+}

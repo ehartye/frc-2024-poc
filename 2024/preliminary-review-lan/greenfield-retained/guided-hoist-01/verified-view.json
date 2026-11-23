@@ -1,0 +1,27 @@
+[
+  {
+    "url": "http://192.168.1.129:8764/?concept=guided&case=guided-front",
+    "title": "Shared cassette · guided climb",
+    "end": "Power cut · mechanical stop · 227 mm travel · 0.0 N floor reaction · 15.4 mm clearance"
+  },
+  {
+    "url": "http://192.168.1.129:8764/?case=guided-rear&concept=guided",
+    "title": "Shared cassette · guided climb",
+    "end": "Power cut · mechanical stop · 227 mm travel · 0.0 N floor reaction · 93.8 mm clearance"
+  },
+  {
+    "url": "http://192.168.1.129:8764/?case=guided-service&concept=guided",
+    "title": "Shared cassette · guided climb",
+    "end": "Slide restrained · power isolated · pack withdrawal 370 / 370 mm"
+  },
+  {
+    "url": "http://192.168.1.129:8764/?concept=guided&case=loaded-cycle-48",
+    "title": "Shared cassette · guided climb",
+    "end": "Blue wing middle · empty approach · 0/6 scored"
+  },
+  {
+    "url": "http://192.168.1.129:8764/?concept=field&case=field-guide",
+    "title": "Shared cassette · field review",
+    "end": "Drive around stage and peers · 24.0 s to match cutoff"
+  }
+]

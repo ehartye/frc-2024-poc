@@ -1,0 +1,82 @@
+{
+  "field": "4b44f149634e99602ab886ae6e2a5df65a38d35d8b9614133119d30f05331e50",
+  "wheel": [
+    -0.4044810300000063,
+    0.0,
+    1.5096058200000377
+  ],
+  "gearCenters": [
+    [
+      -0.7975446012260836,
+      0.0,
+      1.5061615008352116
+    ],
+    [
+      -0.7676642004223195,
+      0.0,
+      1.4732530384558902
+    ],
+    [
+      -0.8086414754137641,
+      0.0,
+      1.4432280000000348
+    ]
+  ],
+  "meshResidualsMm": [
+    3.0915228835248776e-05,
+    5.828670879282072e-13
+  ],
+  "upper": [
+    [
+      -0.777766829424585,
+      0.0,
+      1.6183268184856097
+    ],
+    [
+      -0.8086414754137641,
+      0.0,
+      1.443228000000036
+    ]
+  ],
+  "lower": [
+    [
+      -1.040187150000007,
+      0.0,
+      1.3017500000000384
+    ],
+    [
+      -0.5831141500000031,
+      0.0,
+      1.3017500000000395
+    ],
+    [
+      -0.5306123500000031,
+      0.0,
+      1.3017500000000415
+    ],
+    [
+      -0.07353935000000456,
+      0.0,
+      1.301750000000039
+    ]
+  ],
+  "upperPitchRadius": 0.02425521332720393,
+  "lowerPitchRadius": [
+    0.02429563868274893,
+    0.024295638682750663
+  ],
+  "drawingPages": [
+    189,
+    206,
+    222
+  ],
+  "motorNoLoadRpm": 5310,
+  "reducer": 12,
+  "topRatio": 0.75,
+  "counts": [
+    2,
+    10,
+    9
+  ],
+  "scope": "Lower surface draws away from the opening. Upper live belt travels toward the exit on its underside; intervening meshed gears reverse the front wheel. Absolute operating polarity and speeds are assumptions until measured. Loaded RPM fraction is varied for each independent motor."
+}

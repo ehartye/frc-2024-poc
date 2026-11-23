@@ -1,0 +1,182 @@
+{
+  "packageStep": "d686395c8a0404ccf636c60ed56aae17e387f0cd612f1da91b9a10d3f44880a4",
+  "mass": {
+    "originalInspection": [
+      35.107541260506686,
+      56.49974122268085
+    ],
+    "originalRunning": [
+      45.437541260506684,
+      69.54974122268086
+    ],
+    "replacedBudget": {
+      "Shared cassette lift": [
+        1.4,
+        3.8
+      ],
+      "Common keeper and return drive": [
+        0.4165047323945783,
+        0.5835047323945783
+      ]
+    },
+    "unchangedGeneralReserve": [
+      3,
+      6
+    ],
+    "retainedBodyKg": {
+      "Climb yoke post \u00b7 left": 0.05325695999999992,
+      "Climb yoke post \u00b7 right": 0.05325695999999994,
+      "Shared lift crosspiece": 0.23431680000000038,
+      "Chain hook \u00b7 left": 0.1236330370207333,
+      "Chain hook \u00b7 right": 0.12363303702073329,
+      "Common keeper yoke and sliding rack": 0.10346299999999987,
+      "Keeper drive mast": 0.08896489495576254,
+      "Keeper pinion output": 0.00665860562928356,
+      "Keeper return pinion": 0.010851061025499145
+    },
+    "netChangedStockKg": 1.0533919236035538,
+    "dimensionedStockKg": 1.8514262792555658,
+    "purchasingAllowances": {
+      "Paired take-up springs, arbor mounts and retainers (provisional)": [
+        0.05,
+        0.2
+      ],
+      "Keeper gearmotor, spring, sensor and terminations, original incremental high allocation": [
+        0.128,
+        0.295
+      ],
+      "Two slide-stop actuators and springs including sleeves, beyond shown shells": [
+        0.06,
+        0.22
+      ],
+      "Clutch shifter and fork including spring and reaction bracket": [
+        0.085,
+        0.3
+      ],
+      "Pitch, clutch and slide proof switches and local harness": [
+        0.06,
+        0.18
+      ],
+      "Guide and anchor screws, ties, end retainers, rope windings and dead ends": [
+        0.09,
+        0.25
+      ],
+      "Brackets, two journals, guards and local structural reinforcement": [
+        0.125,
+        0.55
+      ]
+    },
+    "packageRangeKg": [
+      2.4494262792555657,
+      3.8464262792555655
+    ],
+    "inspectionRangeKg": [
+      35.74046280736768,
+      55.96266276954184
+    ],
+    "runningRangeKg": [
+      46.070462807367676,
+      69.01266276954185
+    ],
+    "inspectionLimitKg": 56.69904625,
+    "highReserveKg": 0.7363834804581586,
+    "scope": "Conservative purchasing ranges. All general, pivot, catch and other phase reserves retained. The two older lump sums are replaced. Prospective changes require another takeoff."
+  },
+  "trials": {
+    "front": {
+      "sha": "db2174fe91cd0cef984f930fb7e1102cb360ffedf06bcf4acd3b11d8d5488911",
+      "ground": 0.0,
+      "floorMm": 15.029352627880577,
+      "minHookN": [
+        498.6488263366751,
+        512.6520140282759
+      ],
+      "peakRopeN": 637.0005532120821,
+      "minBusV": 10.996371103428654,
+      "phaseA": 23.042211178051872,
+      "peakBatteryA": 29.76403320635812,
+      "peakMotorW": 52.387077086171026,
+      "peakPitchNm": 216.95433147635896,
+      "signedCg": 0.04,
+      "captured": 0.1432500000000001,
+      "latched": true,
+      "durationS": 8.8,
+      "timeAfterDecisionAtCutoff": 22.786784714455543
+    },
+    "rear": {
+      "sha": "f48919d73048dd20c935d1900e50455fa7f4b40077a67febe6d9b9ca5b877657",
+      "ground": 0.0,
+      "floorMm": 83.54505928174828,
+      "minHookN": [
+        481.3277027990149,
+        489.56961700395317
+      ],
+      "peakRopeN": 724.7371595467708,
+      "minBusV": 10.981926642537207,
+      "phaseA": 24.121727991012733,
+      "peakBatteryA": 30.299013239387936,
+      "peakMotorW": 58.19337467279177,
+      "peakPitchNm": 183.45970775776235,
+      "signedCg": -0.04,
+      "captured": 0.1432500000000001,
+      "latched": true,
+      "durationS": 8.8,
+      "timeAfterDecisionAtCutoff": 22.786784714455543
+    },
+    "open": {
+      "sha": "eab7de55de08095c34963e5d4faa96a68719d8a3c18a006ccfce597ef0e85e5a",
+      "ground": 700.9905698322402,
+      "floorMm": -0.0068849313541591295,
+      "minHookN": [
+        0.0,
+        0.0
+      ],
+      "peakRopeN": 0.0,
+      "minBusV": 11.125,
+      "phaseA": 0.0,
+      "peakBatteryA": 25.0,
+      "peakMotorW": 0.0,
+      "peakPitchNm": 40.25592173387744,
+      "signedCg": 0.04,
+      "captured": null,
+      "latched": false,
+      "durationS": 8.8,
+      "timeAfterDecisionAtCutoff": 22.786784714455543
+    },
+    "no-catch": {
+      "sha": "facbc9ac0aa2bab0bf33bd0cbca9e05a1ac5a2f70c767f3edbd2cad0e814c1f9",
+      "ground": 932.8204687612449,
+      "floorMm": -0.19595334776748713,
+      "minHookN": [
+        49.32610453410553,
+        50.51646922027944
+      ],
+      "peakRopeN": 770.8726863547291,
+      "minBusV": 10.996371103428654,
+      "phaseA": 6.215112567120284,
+      "peakBatteryA": 29.76403320635812,
+      "peakMotorW": 52.387077086171026,
+      "peakPitchNm": 227.46412197187743,
+      "signedCg": 0.04,
+      "captured": 0.1432500000000001,
+      "latched": false,
+      "durationS": 8.8,
+      "timeAfterDecisionAtCutoff": 22.786784714455543
+    }
+  },
+  "mechanical": {
+    "singleCableShockN": 1087.1057393201563,
+    "requiredMinBreakingLoadAtFiveToOneN": 5435.528696600782,
+    "perStopSingleShearMPa": 38.44850046141607,
+    "socketBearingAt8mmEntryMPa": 23.53042725801204,
+    "lockPinSideN": 5916.936312991608,
+    "lockPinCantileverMm": 7.2,
+    "lockPinBendingMPa": 251.12257657934626,
+    "lockBushingSeatMPa": 39.446242086610724,
+    "lineDrumTorqueNm": 21.37974620662974,
+    "fullWorkingWraps": 1.2408690478351163,
+    "usableDrumWidthMm": 14,
+    "requiredWrapWidthMm": 10.370780953072373,
+    "scope": "Maximum modeled loads with stated factors. Either 3 mm rope needs manufacturer rating after termination and bend loss. Pivot pin, backing, web fasteners, wear and shock require qualification."
+  }
+}

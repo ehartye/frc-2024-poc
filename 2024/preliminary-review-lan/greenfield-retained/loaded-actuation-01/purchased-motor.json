@@ -1,0 +1,2535 @@
+{
+  "source": "4fdcdd973fecf09fc8d1851ebcc51220c34c7def9f30e82c21a57c5b72a7625c",
+  "faces": [
+    {
+      "type": "cyl",
+      "radius": 17.5,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 19.2,
+      "maxX": 47.5,
+      "spanY": 35.0,
+      "spanZ": 17.5
+    },
+    {
+      "type": "cyl",
+      "radius": 12.5,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 18.5,
+      "maxX": 19.2,
+      "spanY": 25.0,
+      "spanZ": 12.5
+    },
+    {
+      "type": "cyl",
+      "radius": 2.0,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 55.9,
+      "maxX": 56.0,
+      "spanY": 4.0,
+      "spanZ": 2.0
+    },
+    {
+      "type": "cyl",
+      "radius": 1.25,
+      "Y": 6.928,
+      "Z": 4.0,
+      "minX": 52.0,
+      "maxX": 56.0,
+      "spanY": 1.25,
+      "spanZ": 2.5
+    },
+    {
+      "type": "cyl",
+      "radius": 1.25,
+      "Y": -0.0,
+      "Z": 8.0,
+      "minX": 52.0,
+      "maxX": 56.0,
+      "spanY": 1.25,
+      "spanZ": 2.5
+    },
+    {
+      "type": "cyl",
+      "radius": 1.25,
+      "Y": -6.928,
+      "Z": 4.0,
+      "minX": 52.0,
+      "maxX": 56.0,
+      "spanY": 1.25,
+      "spanZ": 2.5
+    },
+    {
+      "type": "cyl",
+      "radius": 1.25,
+      "Y": -6.928,
+      "Z": -4.0,
+      "minX": 52.0,
+      "maxX": 56.0,
+      "spanY": 1.25,
+      "spanZ": 2.5
+    },
+    {
+      "type": "cyl",
+      "radius": 1.25,
+      "Y": 0.0,
+      "Z": -8.0,
+      "minX": 52.0,
+      "maxX": 56.0,
+      "spanY": 1.25,
+      "spanZ": 2.5
+    },
+    {
+      "type": "cyl",
+      "radius": 1.25,
+      "Y": 6.928,
+      "Z": -4.0,
+      "minX": 52.0,
+      "maxX": 56.0,
+      "spanY": 1.25,
+      "spanZ": 2.5
+    },
+    {
+      "type": "cyl",
+      "radius": 17.5,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 11.854,
+      "maxX": 18.5,
+      "spanY": 35.0,
+      "spanZ": 17.5
+    },
+    {
+      "type": "cyl",
+      "radius": 1.95,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 55.9,
+      "maxX": 56.0,
+      "spanY": 3.9,
+      "spanZ": 1.95
+    },
+    {
+      "type": "cyl",
+      "radius": 1.25,
+      "Y": 12.5,
+      "Z": 0.0,
+      "minX": 11.5,
+      "maxX": 15.5,
+      "spanY": 1.25,
+      "spanZ": 2.5
+    },
+    {
+      "type": "cyl",
+      "radius": 1.25,
+      "Y": 0.0,
+      "Z": -12.5,
+      "minX": 11.5,
+      "maxX": 15.5,
+      "spanY": 1.25,
+      "spanZ": 2.5
+    },
+    {
+      "type": "cyl",
+      "radius": 1.25,
+      "Y": -12.5,
+      "Z": 0.0,
+      "minX": 11.5,
+      "maxX": 15.5,
+      "spanY": 1.25,
+      "spanZ": 2.5
+    },
+    {
+      "type": "cyl",
+      "radius": 1.25,
+      "Y": 0.0,
+      "Z": 12.5,
+      "minX": 11.5,
+      "maxX": 15.5,
+      "spanY": 1.25,
+      "spanZ": 2.5
+    },
+    {
+      "type": "cyl",
+      "radius": 6.5,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 7.25,
+      "maxX": 11.5,
+      "spanY": 13.0,
+      "spanZ": 6.5
+    },
+    {
+      "type": "cyl",
+      "radius": 5.0,
+      "Y": -0.0,
+      "Z": 0.0,
+      "minX": 7.25,
+      "maxX": 11.5,
+      "spanY": 10.0,
+      "spanZ": 5.0
+    },
+    {
+      "type": "cyl",
+      "radius": 2.0,
+      "Y": -0.0,
+      "Z": 0.0,
+      "minX": 7.0,
+      "maxX": 11.5,
+      "spanY": 4.0,
+      "spanZ": 2.0
+    },
+    {
+      "type": "cyl",
+      "radius": 1.585,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 0.1,
+      "maxX": 7.0,
+      "spanY": 3.17,
+      "spanZ": 1.58
+    },
+    {
+      "type": "cyl",
+      "radius": 17.5,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 19.2,
+      "maxX": 47.5,
+      "spanY": 35.0,
+      "spanZ": 17.5
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 12.5,
+      "Z": 0.0,
+      "minX": 19.2,
+      "maxX": 19.2,
+      "spanY": 35.0,
+      "spanZ": 35.0
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.552,
+      "maxX": 35.552,
+      "spanY": 0.62,
+      "spanZ": 0.06
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 36.874,
+      "maxX": 36.874,
+      "spanY": 0.64,
+      "spanZ": 0.06
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 36.305,
+      "maxX": 36.305,
+      "spanY": 0.6,
+      "spanZ": 0.25
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 36.079,
+      "maxX": 36.079,
+      "spanY": 0.6,
+      "spanZ": 0.25
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.796,
+      "maxX": 35.796,
+      "spanY": 0.65,
+      "spanZ": 0.28
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.552,
+      "maxX": 35.552,
+      "spanY": 0.92,
+      "spanZ": 0.38
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 36.874,
+      "maxX": 36.874,
+      "spanY": 0.94,
+      "spanZ": 0.38
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 36.629,
+      "maxX": 36.629,
+      "spanY": 0.66,
+      "spanZ": 0.28
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.552,
+      "maxX": 35.552,
+      "spanY": 0.28,
+      "spanZ": 0.1
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 36.874,
+      "maxX": 36.874,
+      "spanY": 0.89,
+      "spanZ": 0.3
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 36.629,
+      "maxX": 36.629,
+      "spanY": 0.61,
+      "spanZ": 0.22
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 26.891,
+      "maxX": 26.891,
+      "spanY": 2.34,
+      "spanZ": 0.92
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 26.466,
+      "maxX": 26.466,
+      "spanY": 1.43,
+      "spanZ": 0.55
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 26.179,
+      "maxX": 26.179,
+      "spanY": 1.12,
+      "spanZ": 0.43
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.862,
+      "maxX": 25.862,
+      "spanY": 0.77,
+      "spanZ": 0.3
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.576,
+      "maxX": 25.576,
+      "spanY": 0.46,
+      "spanZ": 0.18
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.15,
+      "maxX": 25.151,
+      "spanY": 0.79,
+      "spanZ": 0.33
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 37.762,
+      "maxX": 37.762,
+      "spanY": 0.58,
+      "spanZ": 0.25
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 36.119,
+      "maxX": 36.119,
+      "spanY": 1.2,
+      "spanZ": 0.42
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.606,
+      "maxX": 35.606,
+      "spanY": 1.61,
+      "spanZ": 0.58
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 37.302,
+      "maxX": 37.302,
+      "spanY": 0.52,
+      "spanZ": 0.22
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.968,
+      "maxX": 25.968,
+      "spanY": 0.33,
+      "spanZ": 0.03
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 26.867,
+      "maxX": 26.867,
+      "spanY": 0.24,
+      "spanZ": 0.03
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.968,
+      "maxX": 25.968,
+      "spanY": 0.33,
+      "spanZ": 0.04
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.764,
+      "maxX": 25.764,
+      "spanY": 0.9,
+      "spanZ": 0.08
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 36.874,
+      "maxX": 36.874,
+      "spanY": 0.28,
+      "spanZ": 0.09
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.552,
+      "maxX": 35.552,
+      "spanY": 0.28,
+      "spanZ": 0.09
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 36.059,
+      "maxX": 36.059,
+      "spanY": 0.52,
+      "spanZ": 0.14
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.552,
+      "maxX": 35.552,
+      "spanY": 0.29,
+      "spanZ": 0.08
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 36.874,
+      "maxX": 36.874,
+      "spanY": 0.29,
+      "spanZ": 0.08
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 36.303,
+      "maxX": 36.303,
+      "spanY": 0.52,
+      "spanZ": 0.14
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.15,
+      "maxX": 25.15,
+      "spanY": 0.48,
+      "spanZ": 0.13
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.15,
+      "maxX": 25.15,
+      "spanY": 0.47,
+      "spanZ": 0.17
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.764,
+      "maxX": 25.764,
+      "spanY": 0.52,
+      "spanZ": 0.05
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 26.867,
+      "maxX": 26.867,
+      "spanY": 0.53,
+      "spanZ": 0.05
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.946,
+      "maxX": 35.946,
+      "spanY": 0.28,
+      "spanZ": 0.07
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 36.435,
+      "maxX": 36.435,
+      "spanY": 0.28,
+      "spanZ": 0.05
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 26.867,
+      "maxX": 26.867,
+      "spanY": 0.24,
+      "spanZ": 0.05
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.764,
+      "maxX": 25.764,
+      "spanY": 0.58,
+      "spanZ": 0.13
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 26.867,
+      "maxX": 26.867,
+      "spanY": 0.24,
+      "spanZ": 0.06
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 26.436,
+      "maxX": 26.436,
+      "spanY": 0.24,
+      "spanZ": 0.06
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 26.501,
+      "maxX": 26.501,
+      "spanY": 0.23,
+      "spanZ": 0.06
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 26.093,
+      "maxX": 26.093,
+      "spanY": 0.23,
+      "spanZ": 0.07
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 34.375,
+      "maxX": 34.375,
+      "spanY": 6.18,
+      "spanZ": 0.33
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 31.523,
+      "maxX": 31.523,
+      "spanY": 3.4,
+      "spanZ": 0.13
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 28.969,
+      "maxX": 28.969,
+      "spanY": 3.84,
+      "spanZ": 0.18
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 26.867,
+      "maxX": 26.867,
+      "spanY": 0.24,
+      "spanZ": 0.04
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.764,
+      "maxX": 25.764,
+      "spanY": 0.24,
+      "spanZ": 0.04
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 34.375,
+      "maxX": 34.375,
+      "spanY": 1.2,
+      "spanZ": 0.67
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 29.935,
+      "maxX": 29.935,
+      "spanY": 0.02,
+      "spanZ": 0.02
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 34.375,
+      "maxX": 34.375,
+      "spanY": 1.41,
+      "spanZ": 0.4
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 27.742,
+      "maxX": 27.742,
+      "spanY": 1.32,
+      "spanZ": 0.37
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 32.192,
+      "maxX": 32.192,
+      "spanY": 0.02,
+      "spanZ": 0.02
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 27.742,
+      "maxX": 27.742,
+      "spanY": 1.27,
+      "spanZ": 0.71
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 26.442,
+      "maxX": 26.442,
+      "spanY": 0.23,
+      "spanZ": 0.05
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 26.135,
+      "maxX": 26.135,
+      "spanY": 0.23,
+      "spanZ": 0.05
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.552,
+      "maxX": 35.552,
+      "spanY": 0.29,
+      "spanZ": 0.05
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.552,
+      "maxX": 35.552,
+      "spanY": 0.29,
+      "spanZ": 0.03
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 37.624,
+      "maxX": 37.624,
+      "spanY": 0.4,
+      "spanZ": 0.05
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 38.701,
+      "maxX": 38.701,
+      "spanY": 0.29,
+      "spanZ": 0.05
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 37.624,
+      "maxX": 37.624,
+      "spanY": 0.39,
+      "spanZ": 0.07
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 37.379,
+      "maxX": 37.379,
+      "spanY": 1.08,
+      "spanZ": 0.14
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.946,
+      "maxX": 35.946,
+      "spanY": 0.26,
+      "spanZ": 0.14
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 36.435,
+      "maxX": 36.435,
+      "spanY": 0.26,
+      "spanZ": 0.13
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 36.874,
+      "maxX": 36.874,
+      "spanY": 0.29,
+      "spanZ": 0.03
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.552,
+      "maxX": 35.552,
+      "spanY": 0.71,
+      "spanZ": 0.02
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 36.874,
+      "maxX": 36.874,
+      "spanY": 0.29,
+      "spanZ": 0.01
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 36.357,
+      "maxX": 36.357,
+      "spanY": 0.29,
+      "spanZ": 0.02
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 38.701,
+      "maxX": 38.701,
+      "spanY": 0.22,
+      "spanZ": 0.02
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 37.765,
+      "maxX": 37.765,
+      "spanY": 0.0,
+      "spanZ": 0.01
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 38.701,
+      "maxX": 38.701,
+      "spanY": 0.27,
+      "spanZ": 0.02
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 37.379,
+      "maxX": 37.379,
+      "spanY": 0.41,
+      "spanZ": 0.02
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 38.288,
+      "maxX": 38.288,
+      "spanY": 0.0,
+      "spanZ": 0.01
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 37.379,
+      "maxX": 37.379,
+      "spanY": 0.41,
+      "spanZ": 0.04
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 38.701,
+      "maxX": 38.701,
+      "spanY": 0.27,
+      "spanZ": 0.03
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 37.774,
+      "maxX": 37.774,
+      "spanY": 0.0,
+      "spanZ": 0.01
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 37.762,
+      "maxX": 37.762,
+      "spanY": 0.54,
+      "spanZ": 0.32
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 36.119,
+      "maxX": 36.119,
+      "spanY": 1.13,
+      "spanZ": 0.58
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.606,
+      "maxX": 35.606,
+      "spanY": 1.52,
+      "spanZ": 0.79
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 37.302,
+      "maxX": 37.302,
+      "spanY": 0.49,
+      "spanZ": 0.29
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.946,
+      "maxX": 35.946,
+      "spanY": 0.25,
+      "spanZ": 0.15
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 36.435,
+      "maxX": 36.435,
+      "spanY": 0.25,
+      "spanZ": 0.14
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 38.701,
+      "maxX": 38.701,
+      "spanY": 0.28,
+      "spanZ": 0.1
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 37.379,
+      "maxX": 37.379,
+      "spanY": 0.69,
+      "spanZ": 0.19
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 38.701,
+      "maxX": 38.701,
+      "spanY": 0.28,
+      "spanZ": 0.08
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 38.185,
+      "maxX": 38.185,
+      "spanY": 0.28,
+      "spanZ": 0.09
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 26.233,
+      "maxX": 26.233,
+      "spanY": 0.25,
+      "spanZ": 0.13
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.15,
+      "maxX": 25.15,
+      "spanY": 1.48,
+      "spanZ": 0.77
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.918,
+      "maxX": 25.918,
+      "spanY": 0.01,
+      "spanZ": 0.01
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 41.936,
+      "maxX": 41.936,
+      "spanY": 11.33,
+      "spanZ": 2.54
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 39.62,
+      "maxX": 39.62,
+      "spanY": 11.33,
+      "spanZ": 2.54
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 10.75,
+      "Z": 0.0,
+      "minX": 50.7,
+      "maxX": 50.7,
+      "spanY": 7.36,
+      "spanZ": 7.7
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": -10.75,
+      "Z": 0.0,
+      "minX": 50.7,
+      "maxX": 50.7,
+      "spanY": 7.36,
+      "spanZ": 7.7
+    },
+    {
+      "type": "cyl",
+      "radius": 12.5,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 18.5,
+      "maxX": 19.2,
+      "spanY": 25.0,
+      "spanZ": 12.5
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.738,
+      "maxX": 26.891,
+      "spanY": 1.08,
+      "spanZ": 0.13
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.552,
+      "maxX": 36.874,
+      "spanY": 1.1,
+      "spanZ": 0.06
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.552,
+      "maxX": 36.874,
+      "spanY": 0.93,
+      "spanZ": 0.37
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.552,
+      "maxX": 36.874,
+      "spanY": 0.89,
+      "spanZ": 0.29
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.738,
+      "maxX": 26.891,
+      "spanY": 1.08,
+      "spanZ": 0.01
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.15,
+      "maxX": 26.891,
+      "spanY": 2.33,
+      "spanZ": 0.91
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.606,
+      "maxX": 38.731,
+      "spanY": 2.13,
+      "spanZ": 0.77
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.764,
+      "maxX": 26.867,
+      "spanY": 0.9,
+      "spanZ": 0.06
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.552,
+      "maxX": 36.874,
+      "spanY": 1.08,
+      "spanZ": 0.27
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.15,
+      "maxX": 26.891,
+      "spanY": 1.93,
+      "spanZ": 0.55
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.764,
+      "maxX": 26.867,
+      "spanY": 0.92,
+      "spanZ": 0.05
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.52,
+      "maxX": 36.903,
+      "spanY": 1.1,
+      "spanZ": 0.19
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.764,
+      "maxX": 26.867,
+      "spanY": 0.93,
+      "spanZ": 0.18
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.738,
+      "maxX": 26.891,
+      "spanY": 0.91,
+      "spanZ": 0.2
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 27.739,
+      "maxX": 34.375,
+      "spanY": 6.2,
+      "spanZ": 0.32
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 27.584,
+      "maxX": 34.524,
+      "spanY": 6.06,
+      "spanZ": 2.3
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.764,
+      "maxX": 26.867,
+      "spanY": 0.24,
+      "spanZ": 0.03
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 27.742,
+      "maxX": 34.375,
+      "spanY": 5.17,
+      "spanZ": 2.09
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.738,
+      "maxX": 26.891,
+      "spanY": 1.01,
+      "spanZ": 0.16
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.544,
+      "maxX": 38.731,
+      "spanY": 2.19,
+      "spanZ": 0.46
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.552,
+      "maxX": 36.903,
+      "spanY": 1.12,
+      "spanZ": 0.11
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 37.348,
+      "maxX": 38.731,
+      "spanY": 1.3,
+      "spanZ": 0.06
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 37.379,
+      "maxX": 38.701,
+      "spanY": 1.07,
+      "spanZ": 0.13
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 37.348,
+      "maxX": 38.731,
+      "spanY": 1.27,
+      "spanZ": 0.25
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.52,
+      "maxX": 36.903,
+      "spanY": 1.0,
+      "spanZ": 0.48
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.552,
+      "maxX": 36.874,
+      "spanY": 1.14,
+      "spanZ": 0.02
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 37.379,
+      "maxX": 38.701,
+      "spanY": 1.42,
+      "spanZ": 0.07
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.606,
+      "maxX": 38.731,
+      "spanY": 2.0,
+      "spanZ": 1.05
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.52,
+      "maxX": 36.903,
+      "spanY": 0.97,
+      "spanZ": 0.55
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 37.379,
+      "maxX": 38.701,
+      "spanY": 1.1,
+      "spanZ": 0.3
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.15,
+      "maxX": 26.891,
+      "spanY": 1.95,
+      "spanZ": 1.02
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 39.62,
+      "maxX": 41.936,
+      "spanY": 11.32,
+      "spanZ": 2.53
+    },
+    {
+      "type": "cyl",
+      "radius": 3.25,
+      "Y": 10.75,
+      "Z": 0.0,
+      "minX": 50.7,
+      "maxX": 55.5,
+      "spanY": 3.25,
+      "spanZ": 6.5
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 17.5,
+      "Z": 0.0,
+      "minX": 56.0,
+      "maxX": 56.0,
+      "spanY": 18.8,
+      "spanZ": 20.06
+    },
+    {
+      "type": "cyl",
+      "radius": 3.25,
+      "Y": -10.75,
+      "Z": 0.0,
+      "minX": 50.7,
+      "maxX": 55.5,
+      "spanY": 3.25,
+      "spanZ": 6.5
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 17.5,
+      "Z": 0.0,
+      "minX": 18.5,
+      "maxX": 18.5,
+      "spanY": 35.0,
+      "spanZ": 35.0
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 36.087,
+      "maxX": 36.087,
+      "spanY": 0.29,
+      "spanZ": 0.03
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.778,
+      "maxX": 35.778,
+      "spanY": 0.27,
+      "spanZ": 0.03
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 36.648,
+      "maxX": 36.648,
+      "spanY": 0.31,
+      "spanZ": 0.03
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 36.285,
+      "maxX": 36.285,
+      "spanY": 0.32,
+      "spanZ": 0.03
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 26.211,
+      "maxX": 26.211,
+      "spanY": 0.25,
+      "spanZ": 0.03
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.953,
+      "maxX": 25.953,
+      "spanY": 0.23,
+      "spanZ": 0.03
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 26.678,
+      "maxX": 26.678,
+      "spanY": 0.26,
+      "spanZ": 0.03
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 26.376,
+      "maxX": 26.376,
+      "spanY": 0.26,
+      "spanZ": 0.03
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 26.263,
+      "maxX": 26.263,
+      "spanY": 0.26,
+      "spanZ": 0.06
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.953,
+      "maxX": 25.953,
+      "spanY": 0.26,
+      "spanZ": 0.06
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 36.15,
+      "maxX": 36.15,
+      "spanY": 0.32,
+      "spanZ": 0.02
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.778,
+      "maxX": 35.778,
+      "spanY": 0.32,
+      "spanZ": 0.02
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 37.977,
+      "maxX": 37.977,
+      "spanY": 0.31,
+      "spanZ": 0.1
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 37.605,
+      "maxX": 37.605,
+      "spanY": 0.31,
+      "spanZ": 0.1
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.915,
+      "maxX": 25.915,
+      "spanY": 0.57,
+      "spanZ": 0.31
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.576,
+      "maxX": 25.576,
+      "spanY": 0.57,
+      "spanZ": 0.3
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 39.709,
+      "maxX": 39.709,
+      "spanY": 11.17,
+      "spanZ": 2.49
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 41.847,
+      "maxX": 41.847,
+      "spanY": 11.17,
+      "spanZ": 2.49
+    },
+    {
+      "type": "cyl",
+      "radius": 2.0,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 55.9,
+      "maxX": 56.0,
+      "spanY": 4.0,
+      "spanZ": 2.0
+    },
+    {
+      "type": "cyl",
+      "radius": 1.25,
+      "Y": 6.928,
+      "Z": 4.0,
+      "minX": 52.0,
+      "maxX": 56.0,
+      "spanY": 1.25,
+      "spanZ": 2.5
+    },
+    {
+      "type": "cyl",
+      "radius": 1.25,
+      "Y": -0.0,
+      "Z": 8.0,
+      "minX": 52.0,
+      "maxX": 56.0,
+      "spanY": 1.25,
+      "spanZ": 2.5
+    },
+    {
+      "type": "cyl",
+      "radius": 1.25,
+      "Y": -6.928,
+      "Z": 4.0,
+      "minX": 52.0,
+      "maxX": 56.0,
+      "spanY": 1.25,
+      "spanZ": 2.5
+    },
+    {
+      "type": "cyl",
+      "radius": 1.25,
+      "Y": -6.928,
+      "Z": -4.0,
+      "minX": 52.0,
+      "maxX": 56.0,
+      "spanY": 1.25,
+      "spanZ": 2.5
+    },
+    {
+      "type": "cyl",
+      "radius": 1.25,
+      "Y": 0.0,
+      "Z": -8.0,
+      "minX": 52.0,
+      "maxX": 56.0,
+      "spanY": 1.25,
+      "spanZ": 2.5
+    },
+    {
+      "type": "cyl",
+      "radius": 1.25,
+      "Y": 6.928,
+      "Z": -4.0,
+      "minX": 52.0,
+      "maxX": 56.0,
+      "spanY": 1.25,
+      "spanZ": 2.5
+    },
+    {
+      "type": "cyl",
+      "radius": 17.5,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 11.854,
+      "maxX": 18.5,
+      "spanY": 35.0,
+      "spanZ": 17.5
+    },
+    {
+      "type": "cyl",
+      "radius": 17.5,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.941,
+      "maxX": 26.689,
+      "spanY": 0.59,
+      "spanZ": 0.07
+    },
+    {
+      "type": "cyl",
+      "radius": 17.5,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.778,
+      "maxX": 36.087,
+      "spanY": 0.47,
+      "spanZ": 0.03
+    },
+    {
+      "type": "cyl",
+      "radius": 17.5,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 36.285,
+      "maxX": 36.648,
+      "spanY": 0.52,
+      "spanZ": 0.03
+    },
+    {
+      "type": "cyl",
+      "radius": 17.5,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.942,
+      "maxX": 26.689,
+      "spanY": 0.6,
+      "spanZ": 0.01
+    },
+    {
+      "type": "cyl",
+      "radius": 17.5,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.953,
+      "maxX": 26.211,
+      "spanY": 0.39,
+      "spanZ": 0.02
+    },
+    {
+      "type": "cyl",
+      "radius": 17.5,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 26.376,
+      "maxX": 26.678,
+      "spanY": 0.44,
+      "spanZ": 0.02
+    },
+    {
+      "type": "cyl",
+      "radius": 17.5,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.953,
+      "maxX": 26.263,
+      "spanY": 0.42,
+      "spanZ": 0.08
+    },
+    {
+      "type": "cyl",
+      "radius": 17.5,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 28.811,
+      "maxX": 33.308,
+      "spanY": 3.36,
+      "spanZ": 1.28
+    },
+    {
+      "type": "cyl",
+      "radius": 17.5,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 36.057,
+      "maxX": 38.223,
+      "spanY": 0.98,
+      "spanZ": 0.21
+    },
+    {
+      "type": "cyl",
+      "radius": 17.5,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 37.592,
+      "maxX": 38.489,
+      "spanY": 0.72,
+      "spanZ": 0.03
+    },
+    {
+      "type": "cyl",
+      "radius": 17.5,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 37.592,
+      "maxX": 38.489,
+      "spanY": 0.71,
+      "spanZ": 0.14
+    },
+    {
+      "type": "cyl",
+      "radius": 17.5,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 35.778,
+      "maxX": 36.15,
+      "spanY": 0.52,
+      "spanZ": 0.01
+    },
+    {
+      "type": "cyl",
+      "radius": 17.5,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 37.605,
+      "maxX": 37.977,
+      "spanY": 0.5,
+      "spanZ": 0.14
+    },
+    {
+      "type": "cyl",
+      "radius": 17.5,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 25.576,
+      "maxX": 25.915,
+      "spanY": 0.74,
+      "spanZ": 0.38
+    },
+    {
+      "type": "cyl",
+      "radius": 17.5,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 39.709,
+      "maxX": 41.847,
+      "spanY": 11.17,
+      "spanZ": 2.48
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 55.9,
+      "maxX": 55.9,
+      "spanY": 4.0,
+      "spanZ": 4.0
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 14.5,
+      "maxX": 14.5,
+      "spanY": 9.33,
+      "spanZ": 9.33
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 41.413,
+      "maxX": 41.413,
+      "spanY": 0.18,
+      "spanZ": 0.08
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.143,
+      "maxX": 40.143,
+      "spanY": 0.22,
+      "spanZ": 0.09
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.143,
+      "maxX": 40.143,
+      "spanY": 0.21,
+      "spanZ": 0.1
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.525,
+      "maxX": 40.525,
+      "spanY": 0.2,
+      "spanZ": 0.07
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 41.413,
+      "maxX": 41.413,
+      "spanY": 0.8,
+      "spanZ": 0.22
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 41.249,
+      "maxX": 41.249,
+      "spanY": 0.54,
+      "spanZ": 0.15
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.143,
+      "maxX": 40.143,
+      "spanY": 0.67,
+      "spanZ": 0.03
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 41.052,
+      "maxX": 41.052,
+      "spanY": 0.2,
+      "spanZ": 0.01
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.324,
+      "maxX": 40.324,
+      "spanY": 0.48,
+      "spanZ": 0.03
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.324,
+      "maxX": 40.324,
+      "spanY": 0.27,
+      "spanZ": 0.03
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 41.413,
+      "maxX": 41.413,
+      "spanY": 0.22,
+      "spanZ": 0.03
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.839,
+      "maxX": 40.839,
+      "spanY": 0.47,
+      "spanZ": 0.22
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.674,
+      "maxX": 40.674,
+      "spanY": 0.47,
+      "spanZ": 0.22
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.307,
+      "maxX": 40.307,
+      "spanY": 0.54,
+      "spanZ": 0.25
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.143,
+      "maxX": 40.143,
+      "spanY": 0.74,
+      "spanZ": 0.34
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 41.413,
+      "maxX": 41.413,
+      "spanY": 0.75,
+      "spanZ": 0.34
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 41.249,
+      "maxX": 41.249,
+      "spanY": 0.55,
+      "spanZ": 0.25
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.951,
+      "maxX": 40.951,
+      "spanY": 0.53,
+      "spanZ": 0.18
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.787,
+      "maxX": 40.787,
+      "spanY": 0.53,
+      "spanZ": 0.18
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.324,
+      "maxX": 40.324,
+      "spanY": 0.27,
+      "spanZ": 0.07
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 41.413,
+      "maxX": 41.413,
+      "spanY": 0.22,
+      "spanZ": 0.05
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.951,
+      "maxX": 40.951,
+      "spanY": 0.55,
+      "spanZ": 0.09
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.787,
+      "maxX": 40.787,
+      "spanY": 0.55,
+      "spanZ": 0.09
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.324,
+      "maxX": 40.324,
+      "spanY": 0.27,
+      "spanZ": 0.04
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 41.413,
+      "maxX": 41.413,
+      "spanY": 0.22,
+      "spanZ": 0.03
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 41.413,
+      "maxX": 41.413,
+      "spanY": 0.2,
+      "spanZ": 0.11
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.143,
+      "maxX": 40.143,
+      "spanY": 0.39,
+      "spanZ": 0.22
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 41.413,
+      "maxX": 41.413,
+      "spanY": 0.2,
+      "spanZ": 0.12
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.874,
+      "maxX": 40.874,
+      "spanY": 0.23,
+      "spanZ": 0.13
+    },
+    {
+      "type": "cyl",
+      "radius": 1.95,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 55.9,
+      "maxX": 56.0,
+      "spanY": 3.9,
+      "spanZ": 1.95
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.143,
+      "maxX": 41.413,
+      "spanY": 1.04,
+      "spanZ": 0.4
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.126,
+      "maxX": 41.413,
+      "spanY": 0.8,
+      "spanZ": 0.21
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.143,
+      "maxX": 41.429,
+      "spanY": 0.8,
+      "spanZ": 0.02
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.117,
+      "maxX": 41.413,
+      "spanY": 0.49,
+      "spanZ": 0.04
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.126,
+      "maxX": 41.429,
+      "spanY": 0.84,
+      "spanZ": 0.03
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.143,
+      "maxX": 41.413,
+      "spanY": 0.74,
+      "spanZ": 0.33
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.787,
+      "maxX": 40.951,
+      "spanY": 0.53,
+      "spanZ": 0.17
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.117,
+      "maxX": 41.413,
+      "spanY": 0.48,
+      "spanZ": 0.1
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.787,
+      "maxX": 40.951,
+      "spanY": 0.55,
+      "spanZ": 0.08
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.117,
+      "maxX": 41.413,
+      "spanY": 0.49,
+      "spanZ": 0.05
+    },
+    {
+      "type": "cyl",
+      "radius": 17.487,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.143,
+      "maxX": 41.413,
+      "spanY": 0.84,
+      "spanZ": 0.44
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 17.5,
+      "Z": 0.0,
+      "minX": 56.0,
+      "maxX": 56.0,
+      "spanY": 3.9,
+      "spanZ": 3.9
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.714,
+      "maxX": 40.714,
+      "spanY": 0.19,
+      "spanZ": 0.11
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.307,
+      "maxX": 40.307,
+      "spanY": 0.2,
+      "spanZ": 0.12
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 6.5,
+      "Z": 0.0,
+      "minX": 11.5,
+      "maxX": 11.5,
+      "spanY": 34.29,
+      "spanZ": 34.29
+    },
+    {
+      "type": "cyl",
+      "radius": 17.5,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.746,
+      "maxX": 41.265,
+      "spanY": 0.41,
+      "spanZ": 0.01
+    },
+    {
+      "type": "cyl",
+      "radius": 17.5,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 40.307,
+      "maxX": 40.714,
+      "spanY": 0.41,
+      "spanZ": 0.21
+    },
+    {
+      "type": "cyl",
+      "radius": 1.25,
+      "Y": 12.5,
+      "Z": 0.0,
+      "minX": 11.5,
+      "maxX": 15.5,
+      "spanY": 1.25,
+      "spanZ": 2.5
+    },
+    {
+      "type": "cyl",
+      "radius": 1.25,
+      "Y": 0.0,
+      "Z": -12.5,
+      "minX": 11.5,
+      "maxX": 15.5,
+      "spanY": 1.25,
+      "spanZ": 2.5
+    },
+    {
+      "type": "cyl",
+      "radius": 1.25,
+      "Y": -12.5,
+      "Z": 0.0,
+      "minX": 11.5,
+      "maxX": 15.5,
+      "spanY": 1.25,
+      "spanZ": 2.5
+    },
+    {
+      "type": "cyl",
+      "radius": 1.25,
+      "Y": 0.0,
+      "Z": 12.5,
+      "minX": 11.5,
+      "maxX": 15.5,
+      "spanY": 1.25,
+      "spanZ": 2.5
+    },
+    {
+      "type": "cyl",
+      "radius": 6.5,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 7.25,
+      "maxX": 11.5,
+      "spanY": 13.0,
+      "spanZ": 6.5
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 1.585,
+      "Z": 0.0,
+      "minX": 7.0,
+      "maxX": 7.0,
+      "spanY": 12.5,
+      "spanZ": 12.5
+    },
+    {
+      "type": "cyl",
+      "radius": 5.0,
+      "Y": -0.0,
+      "Z": 0.0,
+      "minX": 7.25,
+      "maxX": 11.5,
+      "spanY": 10.0,
+      "spanZ": 5.0
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 6.5,
+      "Z": 0.0,
+      "minX": 11.5,
+      "maxX": 11.5,
+      "spanY": 10.0,
+      "spanZ": 10.0
+    },
+    {
+      "type": "cyl",
+      "radius": 2.0,
+      "Y": -0.0,
+      "Z": 0.0,
+      "minX": 7.0,
+      "maxX": 11.5,
+      "spanY": 4.0,
+      "spanZ": 2.0
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 1.585,
+      "Z": 0.0,
+      "minX": 7.0,
+      "maxX": 7.0,
+      "spanY": 4.0,
+      "spanZ": 4.0
+    },
+    {
+      "type": "cyl",
+      "radius": 1.585,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": 0.1,
+      "maxX": 7.0,
+      "spanY": 3.17,
+      "spanZ": 1.58
+    },
+    {
+      "type": "plane",
+      "radius": null,
+      "Y": 0.0,
+      "Z": 0.0,
+      "minX": -0.0,
+      "maxX": 0.0,
+      "spanY": 2.97,
+      "spanZ": 2.97
+    }
+  ]
+}

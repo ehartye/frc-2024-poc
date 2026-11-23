@@ -1,0 +1,235 @@
+{
+  "route": "42db7ff99be1054cf3e5dedd77e9b59cf605df1f536fda6119b4b3eea2f11bc6",
+  "webPayload": "a7811604f921787c6f6e6f21344172c36b9f383c4d434cfadf77f34bbde58e7d",
+  "scope": "During each intended pickup approach up to initialization of the free NOTE. Circumsphere around each stationary free NOTE against each part-local bounding box. Between-frame enclosure assumes linear translation and shortest rigid rotation per displayed part. No physical calibration implied.",
+  "proof": [
+    {
+      "meshResolution": 48,
+      "id": "middle",
+      "ownApproachEndsS": 1.8438702494536887,
+      "parts": 255,
+      "poses": 32,
+      "minimumSampleBoundMm": [
+        59.69432671740685,
+        "Blue bumper set",
+        0.0
+      ],
+      "minimumBetweenSampleBoundMm": [
+        12.707780914051385,
+        "Replaceable pickup lip",
+        1.44
+      ],
+      "unresolved": [],
+      "sourceRun": "8d7fb0d613a87ad27139e9d8e1a84bbf02b8399499bc4ea6e480dc2b3938df28"
+    },
+    {
+      "meshResolution": 48,
+      "id": "outer",
+      "ownApproachEndsS": 19.519612600900743,
+      "parts": 255,
+      "poses": 31,
+      "minimumSampleBoundMm": [
+        68.35937926889343,
+        "Replaceable pickup lip",
+        19.519613
+      ],
+      "minimumBetweenSampleBoundMm": [
+        63.97681178834268,
+        "Replaceable pickup lip",
+        19.40887
+      ],
+      "unresolved": [],
+      "sourceRun": "8d7fb0d613a87ad27139e9d8e1a84bbf02b8399499bc4ea6e480dc2b3938df28"
+    },
+    {
+      "meshResolution": 48,
+      "id": "inner",
+      "ownApproachEndsS": 36.38178109520706,
+      "parts": 255,
+      "poses": 36,
+      "minimumSampleBoundMm": [
+        68.35937926889343,
+        "Replaceable pickup lip",
+        36.381781
+      ],
+      "minimumBetweenSampleBoundMm": [
+        63.1567756508899,
+        "Replaceable pickup lip",
+        36.220113
+      ],
+      "unresolved": [],
+      "sourceRun": "8d7fb0d613a87ad27139e9d8e1a84bbf02b8399499bc4ea6e480dc2b3938df28"
+    },
+    {
+      "meshResolution": 48,
+      "id": "center-high",
+      "ownApproachEndsS": 54.95096578415645,
+      "parts": 255,
+      "poses": 65,
+      "minimumSampleBoundMm": [
+        68.35937926889366,
+        "Replaceable pickup lip",
+        54.950966
+      ],
+      "minimumBetweenSampleBoundMm": [
+        65.47135831172821,
+        "Replaceable pickup lip",
+        54.882281
+      ],
+      "unresolved": [],
+      "sourceRun": "8d7fb0d613a87ad27139e9d8e1a84bbf02b8399499bc4ea6e480dc2b3938df28"
+    },
+    {
+      "meshResolution": 48,
+      "id": "center-mid",
+      "ownApproachEndsS": 76.07624839101885,
+      "parts": 255,
+      "poses": 107,
+      "minimumSampleBoundMm": [
+        68.35937926889366,
+        "Replaceable pickup lip",
+        76.076248
+      ],
+      "minimumBetweenSampleBoundMm": [
+        64.95541637070217,
+        "Replaceable pickup lip",
+        75.971466
+      ],
+      "unresolved": [],
+      "sourceRun": "8d7fb0d613a87ad27139e9d8e1a84bbf02b8399499bc4ea6e480dc2b3938df28"
+    },
+    {
+      "meshResolution": 48,
+      "id": "center-low",
+      "ownApproachEndsS": 100.34759769423307,
+      "parts": 255,
+      "poses": 132,
+      "minimumSampleBoundMm": [
+        68.35937926889366,
+        "Replaceable pickup lip",
+        100.347598
+      ],
+      "minimumBetweenSampleBoundMm": [
+        63.26299218982182,
+        "Replaceable pickup lip",
+        100.227748
+      ],
+      "unresolved": [],
+      "sourceRun": "8d7fb0d613a87ad27139e9d8e1a84bbf02b8399499bc4ea6e480dc2b3938df28"
+    },
+    {
+      "meshResolution": 96,
+      "id": "middle",
+      "ownApproachEndsS": 1.8438702494536887,
+      "parts": 255,
+      "poses": 32,
+      "minimumSampleBoundMm": [
+        59.69432671740685,
+        "Blue bumper set",
+        0.0
+      ],
+      "minimumBetweenSampleBoundMm": [
+        12.707780914051385,
+        "Replaceable pickup lip",
+        1.44
+      ],
+      "unresolved": [],
+      "sourceRun": "50badf79dcca711a849c99c2c546b47b92ebb7d8e77afad9e0bfefa6e80db0d1"
+    },
+    {
+      "meshResolution": 96,
+      "id": "outer",
+      "ownApproachEndsS": 19.520112600900717,
+      "parts": 255,
+      "poses": 31,
+      "minimumSampleBoundMm": [
+        68.35937926889343,
+        "Replaceable pickup lip",
+        19.520113
+      ],
+      "minimumBetweenSampleBoundMm": [
+        63.97681178834268,
+        "Replaceable pickup lip",
+        19.40937
+      ],
+      "unresolved": [],
+      "sourceRun": "50badf79dcca711a849c99c2c546b47b92ebb7d8e77afad9e0bfefa6e80db0d1"
+    },
+    {
+      "meshResolution": 96,
+      "id": "inner",
+      "ownApproachEndsS": 36.382531095207,
+      "parts": 255,
+      "poses": 36,
+      "minimumSampleBoundMm": [
+        68.35937926889343,
+        "Replaceable pickup lip",
+        36.382531
+      ],
+      "minimumBetweenSampleBoundMm": [
+        63.1567756508899,
+        "Replaceable pickup lip",
+        36.220863
+      ],
+      "unresolved": [],
+      "sourceRun": "50badf79dcca711a849c99c2c546b47b92ebb7d8e77afad9e0bfefa6e80db0d1"
+    },
+    {
+      "meshResolution": 96,
+      "id": "center-high",
+      "ownApproachEndsS": 54.951965784156364,
+      "parts": 255,
+      "poses": 65,
+      "minimumSampleBoundMm": [
+        68.35937926889366,
+        "Replaceable pickup lip",
+        54.951966
+      ],
+      "minimumBetweenSampleBoundMm": [
+        65.47135831172821,
+        "Replaceable pickup lip",
+        54.883281
+      ],
+      "unresolved": [],
+      "sourceRun": "50badf79dcca711a849c99c2c546b47b92ebb7d8e77afad9e0bfefa6e80db0d1"
+    },
+    {
+      "meshResolution": 96,
+      "id": "center-mid",
+      "ownApproachEndsS": 76.07749839101874,
+      "parts": 255,
+      "poses": 107,
+      "minimumSampleBoundMm": [
+        68.35937926889366,
+        "Replaceable pickup lip",
+        76.077498
+      ],
+      "minimumBetweenSampleBoundMm": [
+        64.95541637070217,
+        "Replaceable pickup lip",
+        75.972716
+      ],
+      "unresolved": [],
+      "sourceRun": "50badf79dcca711a849c99c2c546b47b92ebb7d8e77afad9e0bfefa6e80db0d1"
+    },
+    {
+      "meshResolution": 96,
+      "id": "center-low",
+      "ownApproachEndsS": 100.34909769423292,
+      "parts": 255,
+      "poses": 132,
+      "minimumSampleBoundMm": [
+        68.35937926889366,
+        "Replaceable pickup lip",
+        100.349098
+      ],
+      "minimumBetweenSampleBoundMm": [
+        63.26299218982182,
+        "Replaceable pickup lip",
+        100.229248
+      ],
+      "unresolved": [],
+      "sourceRun": "50badf79dcca711a849c99c2c546b47b92ebb7d8e77afad9e0bfefa6e80db0d1"
+    }
+  ]
+}

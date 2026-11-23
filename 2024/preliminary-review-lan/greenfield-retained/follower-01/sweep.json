@@ -1,0 +1,17 @@
+{
+  "minimumStationaryBoxGapMm": 110.648420119516,
+  "nearest": [
+    "Blue bumper set",
+    -1,
+    -43.0525579365826
+  ],
+  "betweenPoseAllowanceMm": 1.2377117276834706,
+  "frontSampleMm": 641.2491976139148,
+  "frontCertifiedMm": 642.4869093415983,
+  "limitMm": 644.8,
+  "rangeDeg": [
+    -49.744598926381464,
+    165
+  ],
+  "qualifier": "Frame and slide stock; the NOTE and the permitted carpet contact are checked separately."
+}

@@ -1,0 +1,17 @@
+{
+  "p-original": {
+    "matches": true,
+    "expected": "1e7589c226ac45525c9763a31db16afb1f5fae06b0d5d8bf810d10fea6f7d4ed",
+    "actual": "1e7589c226ac45525c9763a31db16afb1f5fae06b0d5d8bf810d10fea6f7d4ed"
+  },
+  "b-fine": {
+    "matches": true,
+    "expected": "d7d01fe218a727d0251ee3a49ceaa13f6f97ed43db6528e4649d076d8f35bc49",
+    "actual": "d7d01fe218a727d0251ee3a49ceaa13f6f97ed43db6528e4649d076d8f35bc49"
+  },
+  "s-armed": {
+    "matches": true,
+    "expected": "1a958c1f99adc55887ce674e42b5e23d91711e9ccfe93e60d9e29b009e7a3b5e",
+    "actual": "1a958c1f99adc55887ce674e42b5e23d91711e9ccfe93e60d9e29b009e7a3b5e"
+  }
+}

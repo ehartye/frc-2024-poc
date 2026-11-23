@@ -1,0 +1,37 @@
+{
+  "project": "appgprj_6b0137ec2f248191badcf0be808d4a1b",
+  "version": 29,
+  "versionId": "appgprj_6b0137ec2f248191badcf0be808d4a1b~appgver_e01ca4969bac819183653bb5d8e249c0",
+  "sourceCommit": "cee24f3db8778511cf66ac774470bfbba40a0a80",
+  "deploymentId": "appgdep_6b01c71e98308191be6a1577d6379627",
+  "status": "succeeded",
+  "url": "https://frc-design-snapshot-gallery.ehartye.chatgpt.site",
+  "archiveSha256": "f83c78cb4bdad8bfefe7c0c0b953ae9c940f4ca1a0b14992b4ffb7fe4aea0c90",
+  "stepSha256": "869021c24d80f57dea7320450657ca91b871ccc44b850c0354ac4d94e977b918",
+  "still": "532449c23f0e4c35a5f835a24689b972162dafe0646005da43aa7adbecbc0f05",
+  "detail": "e8cae6d9da259b25223fe4bff7d08ee926faf9f56ab09424db58def1fadc41fb",
+  "localBrowser": [
+    {
+      "width": 390,
+      "images": 37,
+      "seasonCounts": [
+        10,
+        8,
+        10
+      ],
+      "controls": "history, previous, next, related views and Escape passed"
+    },
+    {
+      "width": 1280,
+      "images": 37,
+      "seasonCounts": [
+        10,
+        8,
+        10
+      ],
+      "controls": "history, previous, next, related views and Escape passed"
+    }
+  ],
+  "liveBrowser": "Private page did not expose card to headless readback before timeout. Native status and saved version succeeded.",
+  "authEvent": "A private bypass credential was issued. The tool response does not distinguish initial creation from rotation. Never include the credential in the engineering record."
+}

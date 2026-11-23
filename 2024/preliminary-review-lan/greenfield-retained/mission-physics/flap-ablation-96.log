@@ -1,0 +1,79 @@
+[
+ {
+  "case": "pickup",
+  "flap": false,
+  "belt": "coast",
+  "dt": 0.00025,
+  "segments": 96,
+  "peakOutwardMm": 295.9263529897951,
+  "endShiftMm": 295.9263529897951,
+  "centerPastFlapS": 1.088,
+  "carpetContactS": 1.46625
+ },
+ {
+  "case": "pickup",
+  "flap": true,
+  "belt": "coast",
+  "dt": 0.00025,
+  "segments": 96,
+  "peakOutwardMm": 5.39761165916755,
+  "endShiftMm": 5.216005026424858,
+  "centerPastFlapS": null,
+  "carpetContactS": null
+ },
+ {
+  "case": "pickup",
+  "flap": false,
+  "belt": "shorted",
+  "dt": 0.00025,
+  "segments": 96,
+  "peakOutwardMm": 47.04493046710209,
+  "endShiftMm": 47.04493046710209,
+  "centerPastFlapS": null,
+  "carpetContactS": null
+ },
+ {
+  "case": "pickup",
+  "flap": false,
+  "belt": "locked",
+  "dt": 0.00025,
+  "segments": 96,
+  "peakOutwardMm": 8.374832193641435,
+  "endShiftMm": 8.374832193641435,
+  "centerPastFlapS": null,
+  "carpetContactS": null
+ },
+ {
+  "case": "aim",
+  "flap": false,
+  "belt": "coast",
+  "dt": 0.00025,
+  "segments": 96,
+  "peakOutwardMm": 2.7755575615628914e-14,
+  "endShiftMm": -0.023914276015557512,
+  "centerPastFlapS": null,
+  "carpetContactS": null
+ },
+ {
+  "case": "raise",
+  "flap": false,
+  "belt": "coast",
+  "dt": 0.00025,
+  "segments": 96,
+  "peakOutwardMm": 44.0057677693442,
+  "endShiftMm": -0.0858706808659071,
+  "centerPastFlapS": null,
+  "carpetContactS": null
+ },
+ {
+  "case": "raise",
+  "flap": true,
+  "belt": "coast",
+  "dt": 0.00025,
+  "segments": 96,
+  "peakOutwardMm": 5.638352463718022,
+  "endShiftMm": -0.0822709239119701,
+  "centerPastFlapS": null,
+  "carpetContactS": null
+ }
+]

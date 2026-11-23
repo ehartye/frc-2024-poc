@@ -1,0 +1,213 @@
+{
+ "schema": "frc-2024-poc/trial-record@1",
+ "case": "feed-02",
+ "phase": "feed",
+ "interaction": "Feed from the metering belts into the launch belts",
+ "cycleClockS": [
+  15.07999999999995,
+  15.103999999999948
+ ],
+ "pathDeviationMm": 0.7429050320481224,
+ "sources": {
+  "shot": {
+   "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/split-tail_.25_0-dev-middle-96-6.88.json",
+   "sha256": "7d6c8ee577b9c6e1cd85c1b51a8dbf3b3c18f6e6cb6235dfb66b349bf2530cc5"
+  },
+  "carry": {
+   "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+   "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+  },
+  "run": {
+   "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/run-dev-96.json",
+   "sha256": "50badf79dcca711a849c99c2c546b47b92ebb7d8e77afad9e0bfefa6e80db0d1"
+  },
+  "freeze": {
+   "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/freeze.json",
+   "sha256": "ff007748cc720f076311ec2d35f20987a3eb954b77af3bd90371f62a4c3a05f9"
+  }
+ },
+ "qualification": {
+  "result": "pass",
+  "observed": {
+   "openingMarginMm": 22.896818783533654,
+   "bothCountersS": 3.979999999999154,
+   "minimumBusV": 8.349209865615393,
+   "releaseSpeedMps": 6.784426823684807
+  },
+  "control": {
+   "condition": "Launcher commanded to 3.44 m/s, half the released speed",
+   "rejected": true,
+   "evidence": {
+    "file": "2024/preliminary-review-lan/greenfield-retained/scoring-window-04/results/low-speed.jsonl",
+    "sha256": "a3c710e399e06365feb937532c7fae7ae59d2ff322a614c89e187d8698bb762f",
+    "observed": {
+     "shots": 6,
+     "passedThroughOpening": 0
+    }
+   },
+   "note": "A second control, the weak-pack firing permissive bypassed during drive acceleration, is rejected in bounded-risk-01/s-bypass.json (bus 5.93 V)."
+  },
+  "brackets": [
+   {
+    "input": "chassis heading error at the firing station (lower side)",
+    "unit": "deg",
+    "passing": -3.0,
+    "failing": -4.0,
+    "note": "At -4 deg, 3 of 34 shots pass wholly through the opening. At -3 deg all 34 do, with 11.3 mm smallest margin.",
+    "evidence": {
+     "file": "2024/preliminary-review-lan/greenfield-retained/scoring-window-04/summary.json",
+     "sha256": "d7a5098b53ccaf5befa9f4f8aa5be6936bfe9de1170b9032a08510a5228cf270"
+    }
+   },
+   {
+    "input": "lateral position of the firing station (lower side)",
+    "unit": "m",
+    "passing": 5.796,
+    "failing": 5.771,
+    "note": "At 5.771 m, 33 of 34 shots pass wholly through the opening. At 5.796 m all 34 do, with 56.7 mm smallest margin.",
+    "evidence": {
+     "file": "2024/preliminary-review-lan/greenfield-retained/scoring-window-04/summary.json",
+     "sha256": "d7a5098b53ccaf5befa9f4f8aa5be6936bfe9de1170b9032a08510a5228cf270"
+    }
+   },
+   {
+    "input": "lateral position of the firing station (upper side)",
+    "unit": "m",
+    "passing": 5.871,
+    "failing": 5.921,
+    "note": "At 5.921 m, 0 of 34 shots pass wholly through the opening. At 5.871 m all 34 do, with 17.6 mm smallest margin.",
+    "evidence": {
+     "file": "2024/preliminary-review-lan/greenfield-retained/scoring-window-04/summary.json",
+     "sha256": "d7a5098b53ccaf5befa9f4f8aa5be6936bfe9de1170b9032a08510a5228cf270"
+    }
+   },
+   {
+    "input": "cassette launch angle (lower side)",
+    "unit": "deg",
+    "passing": 121.0,
+    "failing": 120.0,
+    "note": "At 120 deg, 13 of 34 shots pass wholly through the opening. At 121 deg all 34 do, with 3.4 mm smallest margin.",
+    "evidence": {
+     "file": "2024/preliminary-review-lan/greenfield-retained/scoring-window-04/summary.json",
+     "sha256": "d7a5098b53ccaf5befa9f4f8aa5be6936bfe9de1170b9032a08510a5228cf270"
+    }
+   },
+   {
+    "input": "cassette launch angle (upper side)",
+    "unit": "deg",
+    "passing": 125.0,
+    "failing": 126.0,
+    "note": "At 126 deg, 4 of 6 shots pass wholly through the opening. At 125 deg all 6 do, with 26.0 mm smallest margin.",
+    "evidence": {
+     "file": "2024/preliminary-review-lan/greenfield-retained/scoring-window-04/summary.json",
+     "sha256": "d7a5098b53ccaf5befa9f4f8aa5be6936bfe9de1170b9032a08510a5228cf270"
+    }
+   },
+   {
+    "input": "distance of the firing station from the alliance wall (upper side)",
+    "unit": "m",
+    "passing": 1.45,
+    "failing": 1.49,
+    "note": "At 1.49 m, 18 of 34 shots pass wholly through the opening. At 1.45 m all 34 do, with 7.6 mm smallest margin.",
+    "evidence": {
+     "file": "2024/preliminary-review-lan/greenfield-retained/scoring-window-04/summary.json",
+     "sha256": "d7a5098b53ccaf5befa9f4f8aa5be6936bfe9de1170b9032a08510a5228cf270"
+    }
+   },
+   {
+    "input": "launcher belt speed command (lower side)",
+    "unit": "m/s",
+    "passing": 6.08,
+    "failing": 5.92,
+    "note": "At 5.92 m/s, 5 of 6 shots pass wholly through the opening. At 6.08 m/s all 6 do, with 8.4 mm smallest margin.",
+    "evidence": {
+     "file": "2024/preliminary-review-lan/greenfield-retained/scoring-window-04/summary.json",
+     "sha256": "d7a5098b53ccaf5befa9f4f8aa5be6936bfe9de1170b9032a08510a5228cf270"
+    }
+   }
+  ],
+  "timestep": {
+   "coarseS": 0.0005,
+   "fineS": 0.00025,
+   "sameOutcome": true,
+   "note": "The finer step also doubles the NOTE ring segments, 48 to 96.",
+   "evidence": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/split-tail_.25_0-dev-middle-48-6.88.json",
+     "sha256": "ec345eac28e05feb68893328b3e3d4e4223c2e59a73a286314b2427934acbae2",
+     "observed": {
+      "bothCountersS": 4.009000000000498
+     }
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/split-tail_.25_0-dev-middle-96-6.88.json",
+     "sha256": "7d6c8ee577b9c6e1cd85c1b51a8dbf3b3c18f6e6cb6235dfb66b349bf2530cc5",
+     "observed": {
+      "bothCountersS": 3.979999999999154
+     }
+    }
+   ]
+  }
+ },
+ "limits": "Free rigid NOTE on commanded cassette, truck and chassis motion. Carpet grip, tread compliance and field counter speed are assumed values awaiting measurement. A pass here is delivery: the whole NOTE through the speaker opening with the bus at or above 8 V. Counting by the speaker's two beams is a separate result; see risk scoring-repeatability. The brackets re-fire the carried NOTES of the frozen starts from the firing station, one input at a time.",
+ "transport": {
+  "case": "feed-02",
+  "payload": "NOTE",
+  "mechanisms": [
+   "Launch drive",
+   "Metering drive"
+  ],
+  "moves": {
+   "Chambered NOTE": [
+    {
+     "kind": "rotation",
+     "axis": [
+      0.42542404363379827,
+      -0.7889099687031059,
+      -0.4434359529617917
+     ],
+     "originMm": [
+      -51.98771680026575,
+      -0.01313258550972296,
+      778.0625803944224
+     ],
+     "travelDeg": 0.2662780016624291
+    },
+    {
+     "kind": "translation",
+     "travelMm": [
+      -18.250268154202026,
+      -0.014338690844440283,
+      29.922781546638475
+     ]
+    }
+   ]
+  },
+  "initialPose": {
+   "Chambered NOTE": [
+    {
+     "kind": "rotation",
+     "axis": [
+      0.014067267557033135,
+      0.9990705633744442,
+      0.04074458715154414
+     ],
+     "originMm": [
+      185.0,
+      0.0,
+      501.0
+     ],
+     "travelDeg": 2.9188907390395484
+    },
+    {
+     "kind": "translation",
+     "travelMm": [
+      -80.08640517418962,
+      0.4290673981010935,
+      121.66971418367439
+     ]
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,62 @@
+{
+  "split-ready-dev-center-high-96-6.74.json": {
+    "lastHalfSecondPositionRangeMm": [
+      0.2649115779226885,
+      7.062570018634418,
+      2.2841524407426483
+    ],
+    "lastCenterM": [
+      -0.2266100548437123,
+      5.492921040672179,
+      1.5634922305429975
+    ],
+    "samples": 43,
+    "terminalContacts": {
+      "p41 / GE-24322": [
+        43,
+        0.02444432438127725
+      ],
+      "p75 / Grip_Wheel-2in-MAXSpline": [
+        43,
+        0.16109923542856341
+      ],
+      "e65 / Configurable Bolt_Hex Head 1\" Long": [
+        43,
+        0.12412106605993317
+      ],
+      "p76 / Grip_Wheel-2in-MAXSpline": [
+        6,
+        0.029555951428512917
+      ]
+    },
+    "scope": "Source-registered field surfaces within the finite tube radius at recorded NOTE poses. Normal force is not inferred from discrete contacts."
+  },
+  "split-ready-R01-center-low-96-6.88.json": {
+    "lastHalfSecondPositionRangeMm": [
+      0.18390983305083264,
+      8.716387884190269,
+      3.4614044994432103
+    ],
+    "lastCenterM": [
+      -0.22646964763164132,
+      5.496069013319505,
+      1.5621294123209113
+    ],
+    "samples": 43,
+    "terminalContacts": {
+      "p41 / GE-24322": [
+        33,
+        0.038928827903787766
+      ],
+      "p75 / Grip_Wheel-2in-MAXSpline": [
+        43,
+        0.16400015707105503
+      ],
+      "e65 / Configurable Bolt_Hex Head 1\" Long": [
+        43,
+        0.13600264569973292
+      ]
+    },
+    "scope": "Source-registered field surfaces within the finite tube radius at recorded NOTE poses. Normal force is not inferred from discrete contacts."
+  }
+}

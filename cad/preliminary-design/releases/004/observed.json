@@ -1,0 +1,15 @@
+{
+ "id": "inspection-mass",
+ "unit": "kg",
+ "scenarioId": "inspection-mass-upper",
+ "scenario": "Upper inspection estimate including slide service stock",
+ "valueField": "inspectionHighKg",
+ "value": 56.34400131746641,
+ "source": {
+  "file": "cad/preliminary-design/releases/004/gross-power.json",
+  "sha256": "ea6950faef1e9174c1a815ff9588d8c6573f0efe5aaafd3f0a2196d8af149a13"
+ },
+ "issue": "2024-004-guided-cassette",
+ "designSha256": "ec8ad83d89524c21bf01782f98d2b350b2fffcc08ef8d07315ce04003cb8d95e",
+ "stepSha256": "2914b6f0b94eda5c0fa18f411c58f933ce0502527997c9e2baf06476a0af9343"
+}

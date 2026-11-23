@@ -1,0 +1,28 @@
+{
+  "parent": "093ca2ff6f5d2d53aa46c66651baa65f2d93bc59611a5e6e183006b9c7349415",
+  "source": "420abfb3a542021080cb18eb699fe91b7003b426b06cfc1e1c41a1d3a678cda2",
+  "new": [
+    "Slide drive motor",
+    "Forward slide motor yoke",
+    "Slide screw coupling",
+    "Slide motor output shaft",
+    "Slide screw extension"
+  ],
+  "checks": 12,
+  "positive": [],
+  "nominalAddedKg": 0.05160029842465609,
+  "allowanceKg": [
+    0.06960029842465609,
+    0.09360029842465609
+  ],
+  "seats": {
+    "sourceMotorVol": 32634.86448549077,
+    "motorVol": 32634.864485490776,
+    "radialClearMm": 9,
+    "shaftGapMm": 0.2,
+    "overlapScrewMm": 9.3,
+    "overlapMotorMm": 8.5,
+    "bracketToHostMm2": 692.902664470728
+  },
+  "scope": "Package-level motor case, shaft engagement, bored coupling and supported face, nominal envelope. Supplier fit and torque, positive retention, fasteners and service access remain to be checked."
+}

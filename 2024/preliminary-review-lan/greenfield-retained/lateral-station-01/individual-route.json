@@ -1,0 +1,85 @@
+{
+  "plan": "42db7ff99be1054cf3e5dedd77e9b59cf605df1f536fda6119b4b3eea2f11bc6",
+  "data": "a29a146d8897f64e8f056fcb46a431ba234c7aecccbc3233b6834c43c703bc88",
+  "check": [
+    {
+      "leg": "middle",
+      "phase": "return",
+      "matches": [],
+      "subjects": 229,
+      "fieldItems": 3894
+    },
+    {
+      "leg": "outer",
+      "phase": "out",
+      "matches": [],
+      "subjects": 229,
+      "fieldItems": 3894
+    },
+    {
+      "leg": "outer",
+      "phase": "return",
+      "matches": [],
+      "subjects": 229,
+      "fieldItems": 3893
+    },
+    {
+      "leg": "inner",
+      "phase": "out",
+      "matches": [],
+      "subjects": 229,
+      "fieldItems": 3893
+    },
+    {
+      "leg": "inner",
+      "phase": "return",
+      "matches": [],
+      "subjects": 229,
+      "fieldItems": 3892
+    },
+    {
+      "leg": "center-high",
+      "phase": "out",
+      "matches": [],
+      "subjects": 229,
+      "fieldItems": 3892
+    },
+    {
+      "leg": "center-high",
+      "phase": "return",
+      "matches": [],
+      "subjects": 229,
+      "fieldItems": 3891
+    },
+    {
+      "leg": "center-mid",
+      "phase": "out",
+      "matches": [],
+      "subjects": 229,
+      "fieldItems": 3891
+    },
+    {
+      "leg": "center-mid",
+      "phase": "return",
+      "matches": [],
+      "subjects": 229,
+      "fieldItems": 3890
+    },
+    {
+      "leg": "center-low",
+      "phase": "out",
+      "matches": [],
+      "subjects": 229,
+      "fieldItems": 3890
+    },
+    {
+      "leg": "center-low",
+      "phase": "return",
+      "matches": [],
+      "subjects": 229,
+      "fieldItems": 3889
+    }
+  ],
+  "terminal": true,
+  "scope": "6 mm between-pose allowance. Entire angle interval -51..122 degrees allowed anywhere on each changed straight segment. Fixed field structure and dormant NOTES included; time-varying peers remain separate."
+}

@@ -3,7 +3,7 @@
 <!-- cad-still -->
 [![Preliminary robot with the scoring cassette raised above the blue bumper](../../cad/preliminary-design/media/002-preliminary-robot.png)](https://ehartye.github.io/frc-2024-poc/preliminary-design/)
 
-**Guided cassette, parked. Preliminary design release 003-1.** The angled cassette picks up, retains and shoots a NOTE. The parallel guides support the climb. This still uses the same robot geometry as the interactive preliminary review. [Still and geometry record](../../cad/preliminary-design/media/002-preliminary-robot.json)
+**Guided cassette at the start of a cycle, with a floor NOTE ahead. Preliminary design release 004, effective.** The angled cassette picks up, retains and shoots a NOTE. The parallel guides support the climb. This still uses the same robot geometry as the interactive preliminary review. [Still and geometry record](../../cad/preliminary-design/media/002-preliminary-robot.json)
 <!-- /cad-still -->
 
 This is a force-driven planar plant, not a kinematic driving preview or a complete robot simulation. Source-sized six-wheel contact stations, rigid gearing, wheel/rotor momentum, longitudinal slip, lateral scrub and chassis momentum persist across steps. No field collision, acquisition success, scoring, or physical validation is claimed.

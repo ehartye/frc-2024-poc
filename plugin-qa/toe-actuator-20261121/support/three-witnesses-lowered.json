@@ -1,0 +1,235 @@
+{
+ "modelSHA": "0fdbf475c49ed043325e78a27bf701f11ff409ed136ff376b2ba870ea3610704",
+ "positionedThreeSwitches": {
+  "left": [
+   {
+    "mmBehindHome": 0,
+    "rigidFreeModelCommonMm3": 2.1004255550348603,
+    "inLeverTipMm3": 2.1004255550348603,
+    "bodyCommonOutsideTipMm3": 0.0,
+    "freeGapMm": 0.0
+   },
+   {
+    "mmBehindHome": 0.25,
+    "rigidFreeModelCommonMm3": 0.9415538946397031,
+    "inLeverTipMm3": 0.9415538946397031,
+    "bodyCommonOutsideTipMm3": 0.0,
+    "freeGapMm": 0.0
+   },
+   {
+    "mmBehindHome": 0.5,
+    "rigidFreeModelCommonMm3": 0.00020102644990226988,
+    "inLeverTipMm3": 0.00020102644990226988,
+    "bodyCommonOutsideTipMm3": 0.0,
+    "freeGapMm": 0.0
+   },
+   {
+    "mmBehindHome": 0.75,
+    "rigidFreeModelCommonMm3": 0.0,
+    "inLeverTipMm3": 0,
+    "bodyCommonOutsideTipMm3": 0.0,
+    "freeGapMm": 0.24912459859465486
+   },
+   {
+    "mmBehindHome": 1,
+    "rigidFreeModelCommonMm3": 0.0,
+    "inLeverTipMm3": 0,
+    "bodyCommonOutsideTipMm3": 0.0,
+    "freeGapMm": 0.49912459859465486
+   },
+   {
+    "mmBehindHome": 3,
+    "rigidFreeModelCommonMm3": 0.0,
+    "inLeverTipMm3": 0,
+    "bodyCommonOutsideTipMm3": 0.0,
+    "freeGapMm": 2.499124598594655
+   },
+   {
+    "mmBehindHome": 10,
+    "rigidFreeModelCommonMm3": 0.0,
+    "inLeverTipMm3": 0,
+    "bodyCommonOutsideTipMm3": 0.0,
+    "freeGapMm": 9.499124598594655
+   },
+   {
+    "mmBehindHome": 57,
+    "rigidFreeModelCommonMm3": 0.0,
+    "inLeverTipMm3": 0,
+    "bodyCommonOutsideTipMm3": 0.0,
+    "freeGapMm": 56.499124598594655
+   }
+  ],
+  "right": [
+   {
+    "mmBehindHome": 0,
+    "rigidFreeModelCommonMm3": 2.1004255550348603,
+    "inLeverTipMm3": 2.1004255550348603,
+    "bodyCommonOutsideTipMm3": 0.0,
+    "freeGapMm": 0.0
+   },
+   {
+    "mmBehindHome": 0.25,
+    "rigidFreeModelCommonMm3": 0.9415538946397031,
+    "inLeverTipMm3": 0.9415538946397031,
+    "bodyCommonOutsideTipMm3": 0.0,
+    "freeGapMm": 0.0
+   },
+   {
+    "mmBehindHome": 0.5,
+    "rigidFreeModelCommonMm3": 0.00020102644990226988,
+    "inLeverTipMm3": 0.00020102644990226988,
+    "bodyCommonOutsideTipMm3": 0.0,
+    "freeGapMm": 0.0
+   },
+   {
+    "mmBehindHome": 0.75,
+    "rigidFreeModelCommonMm3": 0.0,
+    "inLeverTipMm3": 0,
+    "bodyCommonOutsideTipMm3": 0.0,
+    "freeGapMm": 0.24912459859465486
+   },
+   {
+    "mmBehindHome": 1,
+    "rigidFreeModelCommonMm3": 0.0,
+    "inLeverTipMm3": 0,
+    "bodyCommonOutsideTipMm3": 0.0,
+    "freeGapMm": 0.49912459859465486
+   },
+   {
+    "mmBehindHome": 3,
+    "rigidFreeModelCommonMm3": 0.0,
+    "inLeverTipMm3": 0,
+    "bodyCommonOutsideTipMm3": 0.0,
+    "freeGapMm": 2.499124598594655
+   },
+   {
+    "mmBehindHome": 10,
+    "rigidFreeModelCommonMm3": 0.0,
+    "inLeverTipMm3": 0,
+    "bodyCommonOutsideTipMm3": 0.0,
+    "freeGapMm": 9.499124598594655
+   },
+   {
+    "mmBehindHome": 57,
+    "rigidFreeModelCommonMm3": 0.0,
+    "inLeverTipMm3": 0,
+    "bodyCommonOutsideTipMm3": 0.0,
+    "freeGapMm": 56.499124598594655
+   }
+  ],
+  "rear": [
+   {
+    "mmBehindHome": 0,
+    "rigidFreeModelCommonMm3": 2.100425555034852,
+    "inLeverTipMm3": 2.100425555034852,
+    "bodyCommonOutsideTipMm3": 0.0,
+    "freeGapMm": 0.0
+   },
+   {
+    "mmBehindHome": 0.25,
+    "rigidFreeModelCommonMm3": 0.9415538946396926,
+    "inLeverTipMm3": 0.9415538946396926,
+    "bodyCommonOutsideTipMm3": 0.0,
+    "freeGapMm": 0.0
+   },
+   {
+    "mmBehindHome": 0.5,
+    "rigidFreeModelCommonMm3": 0.00020102644990155035,
+    "inLeverTipMm3": 0.00020102644990155035,
+    "bodyCommonOutsideTipMm3": 0.0,
+    "freeGapMm": 1.3877787807814457e-16
+   },
+   {
+    "mmBehindHome": 0.75,
+    "rigidFreeModelCommonMm3": 0.0,
+    "inLeverTipMm3": 0,
+    "bodyCommonOutsideTipMm3": 0.0,
+    "freeGapMm": 0.2491245985946584
+   },
+   {
+    "mmBehindHome": 1,
+    "rigidFreeModelCommonMm3": 0.0,
+    "inLeverTipMm3": 0,
+    "bodyCommonOutsideTipMm3": 0.0,
+    "freeGapMm": 0.4991245985946584
+   },
+   {
+    "mmBehindHome": 3,
+    "rigidFreeModelCommonMm3": 0.0,
+    "inLeverTipMm3": 0,
+    "bodyCommonOutsideTipMm3": 0.0,
+    "freeGapMm": 2.4991245985946584
+   },
+   {
+    "mmBehindHome": 10,
+    "rigidFreeModelCommonMm3": 0.0,
+    "inLeverTipMm3": 0,
+    "bodyCommonOutsideTipMm3": 0.0,
+    "freeGapMm": 9.499124598594658
+   },
+   {
+    "mmBehindHome": 87,
+    "rigidFreeModelCommonMm3": 0.0,
+    "inLeverTipMm3": 0,
+    "bodyCommonOutsideTipMm3": 0.0,
+    "freeGapMm": 86.49912459859466
+   }
+  ]
+ },
+ "wireReservationDiameterMm": 4,
+ "wirePullLengthMm": 16,
+ "service": {
+  "left/0": {
+   "otherSwitchCommonMm3": 0.0,
+   "homePostCommonMm3": 0.0,
+   "otherTerminalCommonMm3": 0.0
+  },
+  "left/1": {
+   "otherSwitchCommonMm3": 0.0,
+   "homePostCommonMm3": 0.0,
+   "otherTerminalCommonMm3": 0.0
+  },
+  "left/2": {
+   "otherSwitchCommonMm3": 0.0,
+   "homePostCommonMm3": 0.0,
+   "otherTerminalCommonMm3": 0.0
+  },
+  "right/0": {
+   "otherSwitchCommonMm3": 0.0,
+   "homePostCommonMm3": 0.0,
+   "otherTerminalCommonMm3": 0.0
+  },
+  "right/1": {
+   "otherSwitchCommonMm3": 0.0,
+   "homePostCommonMm3": 0.0,
+   "otherTerminalCommonMm3": 0.0
+  },
+  "right/2": {
+   "otherSwitchCommonMm3": 0.0,
+   "homePostCommonMm3": 0.0,
+   "otherTerminalCommonMm3": 0.0
+  },
+  "rear/0": {
+   "otherSwitchCommonMm3": 0.0,
+   "homePostCommonMm3": 0.0,
+   "otherTerminalCommonMm3": 0.0
+  },
+  "rear/1": {
+   "otherSwitchCommonMm3": 0.0,
+   "homePostCommonMm3": 0.0,
+   "otherTerminalCommonMm3": 0.0
+  },
+  "rear/2": {
+   "otherSwitchCommonMm3": 0.0,
+   "homePostCommonMm3": 0.0,
+   "otherTerminalCommonMm3": 0.0
+  }
+ },
+ "logic": "Require home->away->home transition per physical finger, with distinct NC and NO channels complementary at stable states. Require all three home plus raised/cleared head before feed. Lost wire, stuck contact, no transition, disagreement or timeout veto feed, stop toes. A garage test or native rigid contact does not define trip or overtravel; calibrate start/release, differential, force and actuation before assigning clearance.",
+ "stuckRear": {
+  "rearMmBeforeHome": 10,
+  "healthyLeftAndRightAtHome": true,
+  "rearGeometricContact": false,
+  "permitFeed": false
+ }
+}

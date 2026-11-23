@@ -1,0 +1,511 @@
+{
+  "parent": "fd49a9cdde14aa4d5acd1aac602580e456e19776512099517a9e51cba992510f",
+  "chain": {
+    "field": "42c91b3efb9521d059c13cf25e2d7dda6315bdd6b7eb1202847bfe84ffb43c1a",
+    "path": [
+      "FE-2024",
+      "GE-24200_Blue",
+      "GE-24205",
+      "GE-24205_hanging"
+    ],
+    "bounds": [
+      5745.738203510794,
+      2894.7809861666815,
+      717.5044996060802,
+      5772.408203710799,
+      5315.919313264898,
+      1179.2636759986485
+    ],
+    "brep": "540669f81f139e886ab05ac600f98002a6db156437bc21c8991ba09705767591"
+  },
+  "assumedAxisZmm": 720.574,
+  "measuredMidRangeZmm": 733.71019,
+  "measuredMidRangeXmm": 5759.0732575,
+  "old": {
+    "localChainCenterX": 180,
+    "deg": 79.40913341625131,
+    "chassisX": 5769.038019762313,
+    "contacts": {
+      "Chain hook left": [
+        0.0,
+        4.603302977132083
+      ],
+      "Hook keeper left": [
+        188.0418727878126,
+        0.0
+      ],
+      "Chain hook right": [
+        0.0,
+        1.8585833535661447
+      ],
+      "Hook keeper right": [
+        186.2289946570486,
+        0.0
+      ]
+    }
+  },
+  "registered": {
+    "localChainCenterX": 180,
+    "deg": 75.38642106234188,
+    "chassisX": 5753.154153941144,
+    "contacts": {
+      "Chain hook left": [
+        0.0,
+        0.9451978348326331
+      ],
+      "Hook keeper left": [
+        0.0,
+        4.7506176204702015
+      ],
+      "Chain hook right": [
+        0.0,
+        1.0536540172467341
+      ],
+      "Hook keeper right": [
+        0.0,
+        4.766186727999215
+      ]
+    }
+  },
+  "openApproach": [
+    {
+      "localChainCenterX": 238.0,
+      "deg": 91.29157174433587,
+      "chassisX": 5811.378898962996,
+      "contacts": {
+        "Chain hook left": [
+          0.0,
+          27.547569222706958
+        ],
+        "Hook keeper left": [
+          0.0,
+          28.640035200598764
+        ],
+        "Chain hook right": [
+          0.0,
+          27.64520305967158
+        ],
+        "Hook keeper right": [
+          0.0,
+          28.72592823100267
+        ]
+      }
+    },
+    {
+      "localChainCenterX": 233.85714285714286,
+      "deg": 90.28255557020822,
+      "chassisX": 5807.223704069313,
+      "contacts": {
+        "Chain hook left": [
+          0.0,
+          24.025986864265292
+        ],
+        "Hook keeper left": [
+          0.0,
+          25.666579142875676
+        ],
+        "Chain hook right": [
+          0.0,
+          24.11879670343911
+        ],
+        "Hook keeper right": [
+          0.0,
+          25.744498346438196
+        ]
+      }
+    },
+    {
+      "localChainCenterX": 229.71428571428572,
+      "deg": 89.25530503505976,
+      "chassisX": 5803.068062094751,
+      "contacts": {
+        "Chain hook left": [
+          0.0,
+          20.551197862049463
+        ],
+        "Hook keeper left": [
+          0.0,
+          23.015409616883815
+        ],
+        "Chain hook right": [
+          0.0,
+          20.639231025546486
+        ],
+        "Hook keeper right": [
+          0.0,
+          23.08265227341353
+        ]
+      }
+    },
+    {
+      "localChainCenterX": 225.57142857142856,
+      "deg": 88.20948784928395,
+      "chassisX": 5798.9119482494325,
+      "contacts": {
+        "Chain hook left": [
+          0.0,
+          17.254443286037734
+        ],
+        "Hook keeper left": [
+          0.0,
+          20.790786071133958
+        ],
+        "Chain hook right": [
+          0.0,
+          17.336123775579757
+        ],
+        "Hook keeper right": [
+          0.0,
+          20.84397307867098
+        ]
+      }
+    },
+    {
+      "localChainCenterX": 221.42857142857142,
+      "deg": 87.14477162458695,
+      "chassisX": 5794.755335873079,
+      "contacts": {
+        "Chain hook left": [
+          0.0,
+          14.314414615060068
+        ],
+        "Hook keeper left": [
+          0.0,
+          19.117158684462403
+        ],
+        "Chain hook right": [
+          0.0,
+          14.38589980211182
+        ],
+        "Hook keeper right": [
+          0.0,
+          19.152526568328028
+        ]
+      }
+    },
+    {
+      "localChainCenterX": 217.28571428571428,
+      "deg": 86.06082451467506,
+      "chassisX": 5790.5981962549085,
+      "contacts": {
+        "Chain hook left": [
+          0.0,
+          11.933687701368155
+        ],
+        "Hook keeper left": [
+          0.0,
+          18.120472265976456
+        ],
+        "Chain hook right": [
+          0.0,
+          11.988922987310806
+        ],
+        "Hook keeper right": [
+          0.0,
+          17.58406574388429
+        ]
+      }
+    },
+    {
+      "localChainCenterX": 213.14285714285714,
+      "deg": 84.95731591103699,
+      "chassisX": 5786.440498432269,
+      "contacts": {
+        "Chain hook left": [
+          0.0,
+          10.399077114149547
+        ],
+        "Hook keeper left": [
+          0.0,
+          17.28533628237436
+        ],
+        "Chain hook right": [
+          0.0,
+          10.430232448469761
+        ],
+        "Hook keeper right": [
+          0.0,
+          14.815267582869243
+        ]
+      }
+    },
+    {
+      "localChainCenterX": 209.0,
+      "deg": 83.83391719599612,
+      "chassisX": 5782.282208965022,
+      "contacts": {
+        "Chain hook left": [
+          0.0,
+          9.927279388276789
+        ],
+        "Hook keeper left": [
+          0.0,
+          15.406577843565424
+        ],
+        "Chain hook right": [
+          0.0,
+          9.17827497842469
+        ],
+        "Hook keeper right": [
+          0.0,
+          12.734345589454819
+        ]
+      }
+    },
+    {
+      "localChainCenterX": 204.85714285714286,
+      "deg": 82.69030255500157,
+      "chassisX": 5778.123291682197,
+      "contacts": {
+        "Chain hook left": [
+          0.0,
+          9.24337011588303
+        ],
+        "Hook keeper left": [
+          0.0,
+          14.443360136257555
+        ],
+        "Chain hook right": [
+          0.0,
+          6.604497465624153
+        ],
+        "Hook keeper right": [
+          0.0,
+          11.671505702692219
+        ]
+      }
+    },
+    {
+      "localChainCenterX": 200.71428571428572,
+      "deg": 81.5261498498559,
+      "chassisX": 5773.963707396837,
+      "contacts": {
+        "Chain hook left": [
+          0.0,
+          8.364126705946951
+        ],
+        "Hook keeper left": [
+          0.0,
+          14.362394390489618
+        ],
+        "Chain hook right": [
+          0.0,
+          5.602237753870346
+        ],
+        "Hook keeper right": [
+          0.0,
+          11.599351275035927
+        ]
+      }
+    },
+    {
+      "localChainCenterX": 196.57142857142856,
+      "deg": 80.34114155423228,
+      "chassisX": 5769.803413584279,
+      "contacts": {
+        "Chain hook left": [
+          0.0,
+          8.370924532375403
+        ],
+        "Hook keeper left": [
+          0.0,
+          14.471596047365598
+        ],
+        "Chain hook right": [
+          0.0,
+          5.6137495654299645
+        ],
+        "Hook keeper right": [
+          0.0,
+          11.760969120284036
+        ]
+      }
+    },
+    {
+      "localChainCenterX": 192.42857142857142,
+      "deg": 79.13496575240093,
+      "chassisX": 5765.642364018261,
+      "contacts": {
+        "Chain hook left": [
+          0.0,
+          8.379996549327581
+        ],
+        "Hook keeper left": [
+          0.0,
+          15.106823437984936
+        ],
+        "Chain hook right": [
+          0.0,
+          5.628341485466594
+        ],
+        "Hook keeper right": [
+          0.0,
+          12.985270701963861
+        ]
+      }
+    },
+    {
+      "localChainCenterX": 188.28571428571428,
+      "deg": 77.90731720155051,
+      "chassisX": 5761.480508358246,
+      "contacts": {
+        "Chain hook left": [
+          0.0,
+          8.384297335179781
+        ],
+        "Hook keeper left": [
+          0.0,
+          14.895103594319227
+        ],
+        "Chain hook right": [
+          0.0,
+          5.646161296876607
+        ],
+        "Hook keeper right": [
+          0.0,
+          14.898474267376379
+        ]
+      }
+    },
+    {
+      "localChainCenterX": 184.14285714285714,
+      "deg": 76.65789845744149,
+      "chassisX": 5757.317791680146,
+      "contacts": {
+        "Chain hook left": [
+          0.0,
+          4.894802717169855
+        ],
+        "Hook keeper left": [
+          0.0,
+          15.125618236478847
+        ],
+        "Chain hook right": [
+          0.0,
+          5.00198779712305
+        ],
+        "Hook keeper right": [
+          0.0,
+          15.132650358846847
+        ]
+      }
+    },
+    {
+      "localChainCenterX": 180.0,
+      "deg": 75.38642106234188,
+      "chassisX": 5753.154153941144,
+      "contacts": {
+        "Chain hook left": [
+          0.0,
+          0.9451978348326331
+        ],
+        "Hook keeper left": [
+          0.0,
+          16.265203085421707
+        ],
+        "Chain hook right": [
+          0.0,
+          1.0536540172467341
+        ],
+        "Hook keeper right": [
+          0.0,
+          16.27539181526202
+        ]
+      }
+    }
+  ],
+  "jammedKeeper": [
+    {
+      "localChainCenterX": 210.0,
+      "deg": 84.10692103685679,
+      "chassisX": 5783.28599007181,
+      "contacts": {
+        "Chain hook left": [
+          0.0,
+          9.974945800666712
+        ],
+        "Hook keeper left": [
+          251.81709678912645,
+          0.0
+        ],
+        "Chain hook right": [
+          0.0,
+          9.93315439619704
+        ],
+        "Hook keeper right": [
+          252.7389619990027,
+          0.0
+        ]
+      }
+    },
+    {
+      "localChainCenterX": 203.0,
+      "deg": 82.17099985575649,
+      "chassisX": 5776.258735391376,
+      "contacts": {
+        "Chain hook left": [
+          0.0,
+          8.644643151918807
+        ],
+        "Hook keeper left": [
+          12.664852828292394,
+          0.0
+        ],
+        "Chain hook right": [
+          0.0,
+          5.9017215557063905
+        ],
+        "Hook keeper right": [
+          77.20309675788916,
+          0.0
+        ]
+      }
+    },
+    {
+      "localChainCenterX": 196.0,
+      "deg": 80.17603790909,
+      "chassisX": 5769.229521735007,
+      "contacts": {
+        "Chain hook left": [
+          0.0,
+          8.372048573004191
+        ],
+        "Hook keeper left": [
+          20.520316351411893,
+          0.0
+        ],
+        "Chain hook right": [
+          0.0,
+          5.615575818186297
+        ],
+        "Hook keeper right": [
+          50.0472805881965,
+          0.0
+        ]
+      }
+    },
+    {
+      "localChainCenterX": 190.0,
+      "deg": 78.41793327490977,
+      "chassisX": 5763.202756706665,
+      "contacts": {
+        "Chain hook left": [
+          0.0,
+          8.386332446190147
+        ],
+        "Hook keeper left": [
+          241.31635732403885,
+          0.0
+        ],
+        "Chain hook right": [
+          0.0,
+          5.638386504335594
+        ],
+        "Hook keeper right": [
+          243.21965546116155,
+          0.0
+        ]
+      }
+    }
+  ]
+}

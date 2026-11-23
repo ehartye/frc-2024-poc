@@ -1,0 +1,20 @@
+[
+  {
+    "url": "http://192.168.1.129:8764/?concept=field&case=field-96",
+    "title": "Shared cassette · field review",
+    "end": "Center line low · registered · 6/6 scored",
+    "metrics": "Inspection estimate35.108–56.500 kgRunning estimate45.44–69.55 kgPackage envelope sum45.5 LMovement cases6 modeled"
+  },
+  {
+    "url": "http://192.168.1.129:8764/?case=field-r01&concept=field",
+    "title": "Shared cassette · field review",
+    "end": "Center line low · miss · 5/6 scored",
+    "metrics": "Inspection estimate35.108–56.500 kgRunning estimate45.44–69.55 kgPackage envelope sum45.5 LMovement cases6 modeled"
+  },
+  {
+    "url": "http://192.168.1.129:8764/?concept=field&case=field-climb",
+    "title": "Shared cassette · field review",
+    "end": "Disabled · 115 mm tire / bumper clearance · 0.0 N floor load",
+    "metrics": "Inspection estimate35.108–56.500 kgRunning estimate45.44–69.55 kgPackage envelope sum45.5 LMovement cases6 modeled"
+  }
+]

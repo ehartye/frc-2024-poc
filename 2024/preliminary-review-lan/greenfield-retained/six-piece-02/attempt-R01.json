@@ -1,0 +1,62 @@
+{
+  "id": "R01",
+  "freeze": "1a47d135e865a2b7c619488bceed5d0b17422898b4870097ff63771a6df757af",
+  "pieces": [
+    {
+      "id": "middle",
+      "carry": "bbe59df13939d8e2d3c7c4a4c332612199976fc87b68f3a5671bb3c26d8d6623",
+      "seat": true,
+      "held": true,
+      "reachedStation": 10.173662867811455,
+      "sourceClock": "commanded route with finite mark offsets",
+      "shot": "1a9343ead690ce2a0b50f121ec51bf774821b0c9e33562a1ea4e07f24be517f8",
+      "opening": {
+        "firstPossibleS": 0.7794999999999419,
+        "fullyThroughByS": 0.8557499999999335,
+        "minimumMarginM": 0.043963128944311425
+      },
+      "both": 3.66224999999933,
+      "minBusV": 8.381829071169348,
+      "clock": 13.835912867810785,
+      "credited": true
+    },
+    {
+      "id": "outer",
+      "carry": "aedd023134299c7ae947ae4c03f407ec694d3bdbc9f478bd7a14d69ef412862d",
+      "seat": true,
+      "held": true,
+      "reachedStation": 26.11757200874271,
+      "sourceClock": "commanded route with finite mark offsets",
+      "shot": "0bd44324b6402f779183b10cd3609292f9857c95918ff7f701fbf4208c840996",
+      "opening": {
+        "firstPossibleS": 0.7797499999999419,
+        "fullyThroughByS": 0.8474999999999344,
+        "minimumMarginM": 0.060927867319328075
+      },
+      "both": 4.319999999999534,
+      "minBusV": 8.379797729252179,
+      "clock": 30.437572008742244,
+      "credited": true
+    },
+    {
+      "id": "inner",
+      "carry": "326368b7e2ae6ed19b1b1f08842047ecc4f993a1d251426868fd819eafb2d503",
+      "seat": true,
+      "held": true,
+      "reachedStation": 42.715662348370245,
+      "sourceClock": "commanded route with finite mark offsets",
+      "shot": "ccc3db4ec1bf5ff2a18c3b452acaff5e64263b1b04445ebf821d9bbde36ad229",
+      "opening": {
+        "firstPossibleS": 0.7817499999999417,
+        "fullyThroughByS": 0.8469999999999345,
+        "minimumMarginM": 0.04958630543768027
+      },
+      "both": null,
+      "minBusV": 8.380616743500921,
+      "clock": 45.15741234837025,
+      "credited": false
+    }
+  ],
+  "passAttempt": false,
+  "endS": 45.15741234837025
+}

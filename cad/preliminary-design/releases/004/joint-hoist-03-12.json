@@ -1,0 +1,78 @@
+{
+ "schema": "frc-2024-poc/joint-qualification@1",
+ "stepSha256": "2914b6f0b94eda5c0fa18f411c58f933ce0502527997c9e2baf06476a0af9343",
+ "case": "hoist-03",
+ "pair": [
+  "Hoist rope working span · left",
+  "Spliced hoist eye · left"
+ ],
+ "status": "pass",
+ "basis": "Hoist line running into its own spliced eye at the left hook carriage",
+ "method": "Exact common volume of the drawn line span and its splice at 9 evenly spaced path fractions. The 3 mm line is flexible and is taken up as the hook carriage draws in; the drawn span keeps its parked length. The pair passes when the shared volume never exceeds the line section (7.069 mm2) times the line taken up, plus 0.5 mm3.",
+ "largestCommonMm3": 346.4511845194629,
+ "samples": [
+  {
+   "t": 0.0,
+   "gapMm": 0.0,
+   "volumeMm3": 3.1852275701926573,
+   "takeUpMm": 180.4506218835905,
+   "allowedMm3": 1276.0302831016943
+  },
+  {
+   "t": 0.125,
+   "gapMm": 0.0,
+   "volumeMm3": 45.06868042879633,
+   "takeUpMm": 186.52089620994957,
+   "allowedMm3": 1318.9385238668642
+  },
+  {
+   "t": 0.25,
+   "gapMm": 0.0,
+   "volumeMm3": 0.0,
+   "takeUpMm": 192.59117053630865,
+   "allowedMm3": 1361.8467646320341
+  },
+  {
+   "t": 0.375,
+   "gapMm": 0.0,
+   "volumeMm3": 0.0,
+   "takeUpMm": 198.66144486266776,
+   "allowedMm3": 1404.7550053972043
+  },
+  {
+   "t": 0.5,
+   "gapMm": 0.0,
+   "volumeMm3": 0.0,
+   "takeUpMm": 204.73171918902685,
+   "allowedMm3": 1447.6632461623742
+  },
+  {
+   "t": 0.625,
+   "gapMm": 0.0,
+   "volumeMm3": 73.38490281170893,
+   "takeUpMm": 210.80199351538593,
+   "allowedMm3": 1490.5714869275441
+  },
+  {
+   "t": 0.75,
+   "gapMm": 0.0,
+   "volumeMm3": 73.38490277604832,
+   "takeUpMm": 216.87226784174504,
+   "allowedMm3": 1533.4797276927143
+  },
+  {
+   "t": 0.875,
+   "gapMm": 0.0,
+   "volumeMm3": 0.0,
+   "takeUpMm": 222.94254216810413,
+   "allowedMm3": 1576.3879684578844
+  },
+  {
+   "t": 1.0,
+   "gapMm": 0.0,
+   "volumeMm3": 346.4511845194629,
+   "takeUpMm": 229.0128164944632,
+   "allowedMm3": 1619.2962092230543
+  }
+ ]
+}

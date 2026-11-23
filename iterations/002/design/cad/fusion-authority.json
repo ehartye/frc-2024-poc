@@ -1,0 +1,17 @@
+{
+  "schema": "agent-frc/fusion-authority@1",
+  "id": "2024-b1-fixed-close-scorer",
+  "configuration": "Parked Blue 1 with two native pinion-to-rack links, trimmed side motor screws and separate fixed scorer",
+  "nativeConfiguration": "unconfigured",
+  "revision": "002 linked side-finger drive and motor attachment",
+  "scope": "1,368 solids. Two 11.25 mm/rad native motion links, two fitted motor buttons, opposed integral side fingers, fixed left scorer. Rear finger and its drive, axial retention, loaded pickup and fabrication qualification remain open.",
+  "source": {
+    "kind": "offline",
+    "archive": {
+      "file": "iterations/002/design/cad/linked-side-drive/002-linked-side-pickup-drive.f3d",
+      "sha256": "991223b07a4b00c94badacf7a474915fbf6c0eebd012450ec6f1d5dc1039a854"
+    }
+  },
+  "pinnedChildren": [],
+  "basis": "Cold motor screw contacts and two actual driven tip corners in single-input motion."
+}

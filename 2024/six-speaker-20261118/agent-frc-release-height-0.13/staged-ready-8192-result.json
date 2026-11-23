@@ -1,0 +1,20 @@
+{
+  "modelSha256": "f423b7605400440bb21268dc7ea08175ede0df37cdcc26f64f2a282e56a559ff",
+  "traceSha256": "a704521d2aa457385356d046d795b4d39e0d0c635b13973685805bdaa7aaf372",
+  "sampleIndex": 0,
+  "target": {
+    "units": "m",
+    "lowerEdge": 1.9845019999999998,
+    "uncertainty": 0.0127,
+    "locator": "GE-24300 Rev A, sheet 2 of 6, floor datum assumed",
+    "frame": "native-world-z-up",
+    "datum": "model-floor",
+    "registration": "assumed"
+  },
+  "maximumCenterM": 2.0213276332917727,
+  "maximumTopM": 2.1991276332917726,
+  "marginM": 0.2273256332917728,
+  "score": "unverified",
+  "status": "requires-passage-test",
+  "conditionalOnDatum": true
+}

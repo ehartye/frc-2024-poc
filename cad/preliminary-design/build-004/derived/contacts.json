@@ -1,0 +1,6177 @@
+{
+ "stepSha256": "2914b6f0b94eda5c0fa18f411c58f933ce0502527997c9e2baf06476a0af9343",
+ "reachMm": 0.5,
+ "pairs": [
+  {
+   "pair": [
+    "Battery and terminal case",
+    "Electronics deck"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -155.0,
+    -220.0,
+    151.0
+   ],
+   "onSecondMm": [
+    -155.0,
+    -220.0,
+    151.0
+   ]
+  },
+  {
+   "pair": [
+    "Battery and terminal case",
+    "Pack lead"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    23.5,
+    -186.0,
+    324.0
+   ],
+   "onSecondMm": [
+    23.5,
+    -186.0,
+    324.0
+   ]
+  },
+  {
+   "pair": [
+    "Battery service pin",
+    "Service pin guide"
+   ],
+   "gapMm": 0.1749999999999462,
+   "onFirstMm": [
+    185.11897110337,
+    269.0,
+    481.81463672306
+   ],
+   "onSecondMm": [
+    185.11897110337,
+    269.0,
+    481.98963672306
+   ]
+  },
+  {
+   "pair": [
+    "Battery service pin",
+    "Translating bearing block \u00b7 left"
+   ],
+   "gapMm": 0.1749999999999462,
+   "onFirstMm": [
+    185.11897110337,
+    247.0,
+    481.81463672306
+   ],
+   "onSecondMm": [
+    185.11897110337,
+    247.0,
+    481.98963672306
+   ]
+  },
+  {
+   "pair": [
+    "Bay crossmember \u00b7 front",
+    "Chassis sill \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    150.0,
+    240.0,
+    116.0
+   ],
+   "onSecondMm": [
+    150.0,
+    240.0,
+    116.0
+   ]
+  },
+  {
+   "pair": [
+    "Bay crossmember \u00b7 front",
+    "Chassis sill \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    150.0,
+    -240.0,
+    116.0
+   ],
+   "onSecondMm": [
+    150.0,
+    -240.0,
+    116.0
+   ]
+  },
+  {
+   "pair": [
+    "Bay crossmember \u00b7 front",
+    "Electronics deck"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    150.0,
+    -240.0,
+    146.0
+   ],
+   "onSecondMm": [
+    150.0,
+    -240.0,
+    146.0
+   ]
+  },
+  {
+   "pair": [
+    "Bay crossmember \u00b7 rear",
+    "Chassis sill \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -160.0,
+    240.0,
+    116.0
+   ],
+   "onSecondMm": [
+    -160.0,
+    240.0,
+    116.0
+   ]
+  },
+  {
+   "pair": [
+    "Bay crossmember \u00b7 rear",
+    "Chassis sill \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -160.0,
+    -240.0,
+    116.0
+   ],
+   "onSecondMm": [
+    -160.0,
+    -240.0,
+    116.0
+   ]
+  },
+  {
+   "pair": [
+    "Bay crossmember \u00b7 rear",
+    "Electronics deck"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -160.0,
+    -240.0,
+    146.0
+   ],
+   "onSecondMm": [
+    -160.0,
+    -240.0,
+    146.0
+   ]
+  },
+  {
+   "pair": [
+    "Blade retaining screw 1",
+    "Pickup lip crossbar"
+   ],
+   "gapMm": 4.852244266279688e-11,
+   "onFirstMm": [
+    -193.1099823284,
+    -165.0,
+    1022.715091447
+   ],
+   "onSecondMm": [
+    -193.10998232833592,
+    -165.0,
+    1022.7150914469134
+   ]
+  },
+  {
+   "pair": [
+    "Blade retaining screw 1",
+    "Replaceable pickup lip"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -198.645294916,
+    -165.0,
+    1016.747653591
+   ],
+   "onSecondMm": [
+    -198.64529491600666,
+    -165.0,
+    1016.747653591001
+   ]
+  },
+  {
+   "pair": [
+    "Blade retaining screw 2",
+    "Pickup lip crossbar"
+   ],
+   "gapMm": 4.852244266279688e-11,
+   "onFirstMm": [
+    -193.1099823284,
+    -55.0,
+    1022.715091447
+   ],
+   "onSecondMm": [
+    -193.10998232833592,
+    -55.0,
+    1022.7150914469134
+   ]
+  },
+  {
+   "pair": [
+    "Blade retaining screw 2",
+    "Replaceable pickup lip"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -198.645294916,
+    -55.0,
+    1016.747653591
+   ],
+   "onSecondMm": [
+    -198.64529491600666,
+    -55.0,
+    1016.747653591001
+   ]
+  },
+  {
+   "pair": [
+    "Blade retaining screw 3",
+    "Pickup lip crossbar"
+   ],
+   "gapMm": 4.852244266279688e-11,
+   "onFirstMm": [
+    -193.1099823284,
+    55.0,
+    1022.715091447
+   ],
+   "onSecondMm": [
+    -193.10998232833592,
+    55.0,
+    1022.7150914469134
+   ]
+  },
+  {
+   "pair": [
+    "Blade retaining screw 3",
+    "Replaceable pickup lip"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -198.645294916,
+    55.0,
+    1016.747653591
+   ],
+   "onSecondMm": [
+    -198.64529491600666,
+    55.0,
+    1016.747653591001
+   ]
+  },
+  {
+   "pair": [
+    "Blade retaining screw 4",
+    "Pickup lip crossbar"
+   ],
+   "gapMm": 4.852244266279688e-11,
+   "onFirstMm": [
+    -193.1099823284,
+    165.0,
+    1022.715091447
+   ],
+   "onSecondMm": [
+    -193.10998232833592,
+    165.0,
+    1022.7150914469134
+   ]
+  },
+  {
+   "pair": [
+    "Blade retaining screw 4",
+    "Replaceable pickup lip"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -198.645294916,
+    165.0,
+    1016.747653591
+   ],
+   "onSecondMm": [
+    -198.64529491600666,
+    165.0,
+    1016.747653591001
+   ]
+  },
+  {
+   "pair": [
+    "Blue bumper set",
+    "Chassis perimeter"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -285.0,
+    -330.0,
+    146.0
+   ],
+   "onSecondMm": [
+    -285.0,
+    -330.0,
+    146.0
+   ]
+  },
+  {
+   "pair": [
+    "Blue bumper set",
+    "Rear left module deck"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -307.0,
+    308.0,
+    104.0
+   ],
+   "onSecondMm": [
+    -307.0,
+    308.0,
+    104.0
+   ]
+  },
+  {
+   "pair": [
+    "Blue bumper set",
+    "Rear right module deck"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -307.0,
+    -308.0,
+    104.0
+   ],
+   "onSecondMm": [
+    -307.0,
+    -308.0,
+    104.0
+   ]
+  },
+  {
+   "pair": [
+    "Captive hook wear block \u00b7 left",
+    "Hook guide channel \u00b7 left"
+   ],
+   "gapMm": 0.1999999999863402,
+   "onFirstMm": [
+    -30.29933806285,
+    215.8,
+    538.24506718609
+   ],
+   "onSecondMm": [
+    -30.29933806285,
+    216.0,
+    538.24506718609
+   ]
+  },
+  {
+   "pair": [
+    "Captive hook wear block \u00b7 left",
+    "Hook slider liner 196.2 \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -44.22492281576,
+    196.2,
+    528.49426776812
+   ],
+   "onSecondMm": [
+    -44.22492281576,
+    196.2,
+    528.49426776812
+   ]
+  },
+  {
+   "pair": [
+    "Captive hook wear block \u00b7 left",
+    "Hook slider liner 215.0 \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -44.22492281576,
+    215.8,
+    528.49426776812
+   ],
+   "onSecondMm": [
+    -44.22492281576,
+    215.8,
+    528.49426776812
+   ]
+  },
+  {
+   "pair": [
+    "Captive hook wear block \u00b7 left",
+    "Shared lift crosspiece"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -64.65868892977117,
+    206.0,
+    543.7291357491092
+   ],
+   "onSecondMm": [
+    -64.65868892977,
+    206.0,
+    543.72913574911
+   ]
+  },
+  {
+   "pair": [
+    "Captive hook wear block \u00b7 right",
+    "Hook guide channel \u00b7 right"
+   ],
+   "gapMm": 0.1999999999863402,
+   "onFirstMm": [
+    -30.29933806285,
+    -196.2,
+    538.24506718609
+   ],
+   "onSecondMm": [
+    -30.29933806285,
+    -196.0,
+    538.24506718609
+   ]
+  },
+  {
+   "pair": [
+    "Captive hook wear block \u00b7 right",
+    "Hook slider liner 196.2 \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -44.22492281576,
+    -196.2,
+    528.49426776812
+   ],
+   "onSecondMm": [
+    -44.22492281576,
+    -196.2,
+    528.49426776812
+   ]
+  },
+  {
+   "pair": [
+    "Captive hook wear block \u00b7 right",
+    "Hook slider liner 215.0 \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -44.22492281576,
+    -215.8,
+    528.49426776812
+   ],
+   "onSecondMm": [
+    -44.22492281576,
+    -215.8,
+    528.49426776812
+   ]
+  },
+  {
+   "pair": [
+    "Captive hook wear block \u00b7 right",
+    "Shared lift crosspiece"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -64.65868892977117,
+    -206.0,
+    543.7291357491092
+   ],
+   "onSecondMm": [
+    -64.65868892977,
+    -206.0,
+    543.72913574911
+   ]
+  },
+  {
+   "pair": [
+    "Capture-angle dog bushing",
+    "Catch sector"
+   ],
+   "gapMm": 0.009999999995612128,
+   "onFirstMm": [
+    124.93210450903,
+    236.0,
+    485.87345014565
+   ],
+   "onSecondMm": [
+    124.92391298859,
+    235.99999999999,
+    485.86771438129
+   ]
+  },
+  {
+   "pair": [
+    "Carpet follower \u00b7 left",
+    "Cassette side beam extension \u00b7 left"
+   ],
+   "gapMm": 0.30000000000001137,
+   "onFirstMm": [
+    -205.4776284109,
+    230.3,
+    1024.725300616
+   ],
+   "onSecondMm": [
+    -205.4776284109,
+    230.0,
+    1024.725300616
+   ]
+  },
+  {
+   "pair": [
+    "Carpet follower \u00b7 left",
+    "Follower locknut \u00b7 left"
+   ],
+   "gapMm": 0.14999999999997726,
+   "onFirstMm": [
+    -205.4776284109,
+    238.3,
+    1024.725300616
+   ],
+   "onSecondMm": [
+    -205.4776284109,
+    238.45,
+    1024.725300616
+   ]
+  },
+  {
+   "pair": [
+    "Carpet follower \u00b7 left",
+    "Follower shoulder axle \u00b7 left"
+   ],
+   "gapMm": 0.09999999999987427,
+   "onFirstMm": [
+    -205.4776284109,
+    238.3,
+    1024.725300616
+   ],
+   "onSecondMm": [
+    -205.4689128367,
+    238.3,
+    1024.824920086
+   ]
+  },
+  {
+   "pair": [
+    "Carpet follower \u00b7 left",
+    "Follower thrust washer \u00b7 left"
+   ],
+   "gapMm": 0.05000000000001137,
+   "onFirstMm": [
+    -205.4776284109,
+    230.3,
+    1024.725300616
+   ],
+   "onSecondMm": [
+    -205.4776284109,
+    230.25,
+    1024.725300616
+   ]
+  },
+  {
+   "pair": [
+    "Carpet follower \u00b7 right",
+    "Cassette side beam extension \u00b7 right"
+   ],
+   "gapMm": 0.30000000000001137,
+   "onFirstMm": [
+    -205.0244185486,
+    -230.3,
+    1029.905513046
+   ],
+   "onSecondMm": [
+    -205.0244185486,
+    -230.0,
+    1029.905513046
+   ]
+  },
+  {
+   "pair": [
+    "Carpet follower \u00b7 right",
+    "Follower locknut \u00b7 right"
+   ],
+   "gapMm": 0.14999999999997726,
+   "onFirstMm": [
+    -205.0244185486,
+    -238.3,
+    1029.905513046
+   ],
+   "onSecondMm": [
+    -205.0244185486,
+    -238.45,
+    1029.905513046
+   ]
+  },
+  {
+   "pair": [
+    "Carpet follower \u00b7 right",
+    "Follower shoulder axle \u00b7 right"
+   ],
+   "gapMm": 0.09999999919599434,
+   "onFirstMm": [
+    -205.0244185486,
+    -238.3,
+    1029.905513046
+   ],
+   "onSecondMm": [
+    -205.0331341229,
+    -238.3,
+    1029.805893577
+   ]
+  },
+  {
+   "pair": [
+    "Carpet follower \u00b7 right",
+    "Follower thrust washer \u00b7 right"
+   ],
+   "gapMm": 0.05000000000001137,
+   "onFirstMm": [
+    -205.0244185486,
+    -230.3,
+    1029.905513046
+   ],
+   "onSecondMm": [
+    -205.0244185486,
+    -230.25,
+    1029.905513046
+   ]
+  },
+  {
+   "pair": [
+    "Cassette cheek \u00b7 left",
+    "Cassette side beam \u00b7 left"
+   ],
+   "gapMm": 1.3716235698681947e-12,
+   "onFirstMm": [
+    150.17328771655605,
+    218.0,
+    568.1721676851857
+   ],
+   "onSecondMm": [
+    150.17328771656,
+    218.0,
+    568.17216768518
+   ]
+  },
+  {
+   "pair": [
+    "Cassette cheek \u00b7 left",
+    "Catch sector"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    156.48602862339,
+    226.0,
+    534.74838420331
+   ],
+   "onSecondMm": [
+    156.48602862339,
+    225.99999999999,
+    534.74838420331
+   ]
+  },
+  {
+   "pair": [
+    "Cassette cheek \u00b7 left",
+    "Catch sector screw 1"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    156.48602862339,
+    226.0,
+    534.74838420331
+   ],
+   "onSecondMm": [
+    156.48602862339,
+    226.0,
+    534.74838420331
+   ]
+  },
+  {
+   "pair": [
+    "Cassette cheek \u00b7 left",
+    "Catch sector screw 2"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    142.55704376351,
+    226.0,
+    549.41069578003
+   ],
+   "onSecondMm": [
+    142.55704376351,
+    226.0,
+    549.41069578003
+   ]
+  },
+  {
+   "pair": [
+    "Cassette cheek \u00b7 left",
+    "Catch sector screw 3"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    140.92043972842,
+    226.0,
+    536.05698740998
+   ],
+   "onSecondMm": [
+    140.92043972842,
+    226.0,
+    536.05698740998
+   ]
+  },
+  {
+   "pair": [
+    "Cassette cheek \u00b7 left",
+    "Guide rear anchor web \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    140.92043972842,
+    218.0,
+    536.05698740998
+   ],
+   "onSecondMm": [
+    140.9204397284133,
+    218.0,
+    536.0569874099754
+   ]
+  },
+  {
+   "pair": [
+    "Cassette cheek \u00b7 left",
+    "Pivot torque shaft"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    177.62763160139,
+    218.0,
+    495.83781207284
+   ],
+   "onSecondMm": [
+    177.62763160139,
+    218.0,
+    495.83781207284
+   ]
+  },
+  {
+   "pair": [
+    "Cassette cheek \u00b7 left",
+    "Service index disk"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    177.62763160139,
+    226.0,
+    495.83781207284
+   ],
+   "onSecondMm": [
+    177.62763160139,
+    226.0,
+    495.83781207284
+   ]
+  },
+  {
+   "pair": [
+    "Cassette cheek \u00b7 right",
+    "Cassette side beam \u00b7 right"
+   ],
+   "gapMm": 1.3716235698681947e-12,
+   "onFirstMm": [
+    150.17328771655605,
+    -226.0,
+    568.1721676851857
+   ],
+   "onSecondMm": [
+    150.17328771656,
+    -226.0,
+    568.17216768518
+   ]
+  },
+  {
+   "pair": [
+    "Cassette cheek \u00b7 right",
+    "Guide rear anchor web \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    124.12527274026,
+    -218.0,
+    542.60850371081
+   ],
+   "onSecondMm": [
+    124.12527274026,
+    -218.0,
+    542.60850371081
+   ]
+  },
+  {
+   "pair": [
+    "Cassette cheek \u00b7 right",
+    "Pivot drive socket"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    166.97865502564,
+    -226.0,
+    488.38131840027
+   ],
+   "onSecondMm": [
+    166.97865502564,
+    -226.0,
+    488.38131840027
+   ]
+  },
+  {
+   "pair": [
+    "Cassette cheek \u00b7 right",
+    "Pivot torque shaft"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    177.62763160139,
+    -226.0,
+    495.83781207284
+   ],
+   "onSecondMm": [
+    177.62763160139,
+    -226.0,
+    495.83781207284
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam extension \u00b7 left",
+    "Cassette side beam \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -137.5148076702,
+    226.0,
+    968.57266690155
+   ],
+   "onSecondMm": [
+    -137.5148076702,
+    226.0,
+    968.57266690155
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam extension \u00b7 left",
+    "Entry bearing bracket \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -193.5468195259,
+    226.0,
+    1011.936797993
+   ],
+   "onSecondMm": [
+    -193.5468195259,
+    226.0,
+    1011.936797993
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam extension \u00b7 left",
+    "Follower shoulder axle \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -205.4689128367,
+    226.0,
+    1024.824920086
+   ],
+   "onSecondMm": [
+    -205.4689128367,
+    226.0,
+    1024.824920086
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam extension \u00b7 left",
+    "Follower thrust washer \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -201.2052356675,
+    230.0,
+    1027.664120149
+   ],
+   "onSecondMm": [
+    -201.2052356675,
+    230.0,
+    1027.664120149
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam extension \u00b7 left",
+    "Pickup lip crossbar"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -201.2052356675,
+    226.0,
+    1027.664120149
+   ],
+   "onSecondMm": [
+    -201.2052356675,
+    226.0,
+    1027.664120149
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam extension \u00b7 left",
+    "Runner crossbar 599"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -164.8782260671,
+    226.0,
+    976.26963602159
+   ],
+   "onSecondMm": [
+    -164.8782260671,
+    226.0,
+    976.26963602159
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam extension \u00b7 right",
+    "Cassette side beam \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -137.5148076702,
+    -226.0,
+    968.57266690155
+   ],
+   "onSecondMm": [
+    -137.5148076702,
+    -226.0,
+    968.57266690155
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam extension \u00b7 right",
+    "Entry bearing bracket \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -193.5468195259,
+    -226.0,
+    1011.936797993
+   ],
+   "onSecondMm": [
+    -193.5468195259,
+    -226.0,
+    1011.936797993
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam extension \u00b7 right",
+    "Follower shoulder axle \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -205.0331341229,
+    -226.0,
+    1029.805893577
+   ],
+   "onSecondMm": [
+    -205.0331341229,
+    -226.0,
+    1029.805893577
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam extension \u00b7 right",
+    "Follower thrust washer \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -201.2052356675,
+    -230.0,
+    1027.664120149
+   ],
+   "onSecondMm": [
+    -201.2052356675,
+    -230.0,
+    1027.664120149
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam extension \u00b7 right",
+    "Pickup lip crossbar"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -201.2052356675,
+    -226.0,
+    1027.664120149
+   ],
+   "onSecondMm": [
+    -201.2052356675,
+    -226.0,
+    1027.664120149
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam extension \u00b7 right",
+    "Runner crossbar 599"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -164.8782260671,
+    -226.0,
+    976.26963602159
+   ],
+   "onSecondMm": [
+    -164.8782260671,
+    -226.0,
+    976.26963602159
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam \u00b7 left",
+    "Climb yoke post \u00b7 left"
+   ],
+   "gapMm": 9.43605033457631e-13,
+   "onFirstMm": [
+    74.87672432757475,
+    218.0,
+    633.8640815087906
+   ],
+   "onSecondMm": [
+    74.876724327574,
+    218.0,
+    633.86408150879
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam \u00b7 left",
+    "Entry bearing bracket \u00b7 left"
+   ],
+   "gapMm": 9.981848401723668e-12,
+   "onFirstMm": [
+    -171.7611433033,
+    218.0,
+    986.09946055305
+   ],
+   "onSecondMm": [
+    -171.76114330330572,
+    218.0,
+    986.0994605530582
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam \u00b7 left",
+    "Feed Nose pulley shelf \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -4.853800432185,
+    218.0,
+    772.13932665964
+   ],
+   "onSecondMm": [
+    -4.853800432185,
+    218.0,
+    772.13932665964
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam \u00b7 left",
+    "Feed gearhead flange \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    138.21230782715,
+    218.0,
+    569.56319611233
+   ],
+   "onSecondMm": [
+    138.21230782715,
+    218.0,
+    569.56319611233
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam \u00b7 left",
+    "Launch Belt motor shelf \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -25.341101806843994,
+    218.0,
+    818.8326932376112
+   ],
+   "onSecondMm": [
+    -25.34110180686,
+    218.0,
+    818.8326932376
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam \u00b7 left",
+    "Lid post 330 \u00b7 left"
+   ],
+   "gapMm": 4.260971703527731e-12,
+   "onFirstMm": [
+    -15.7483526158843,
+    226.0,
+    763.2901045064541
+   ],
+   "onSecondMm": [
+    -15.74835261589,
+    226.0,
+    763.29010450645
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam \u00b7 left",
+    "Lid post 95 \u00b7 left"
+   ],
+   "gapMm": 4.263256414560601e-14,
+   "onFirstMm": [
+    119.04210992660005,
+    218.0,
+    570.78937409854
+   ],
+   "onSecondMm": [
+    119.0421099266,
+    218.0,
+    570.78937409854
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam \u00b7 left",
+    "Runner crossbar 125"
+   ],
+   "gapMm": 3.3320439271567093e-12,
+   "onFirstMm": [
+    101.83481683607474,
+    226.0,
+    595.3639354272033
+   ],
+   "onSecondMm": [
+    101.83481683607,
+    226.0,
+    595.3639354272
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam \u00b7 left",
+    "Runner crossbar 370"
+   ],
+   "gapMm": 6.96192658754356e-12,
+   "onFirstMm": [
+    -38.691410069924274,
+    226.0,
+    796.056186278014
+   ],
+   "onSecondMm": [
+    -38.69141006993,
+    226.0,
+    796.05618627801
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam \u00b7 left",
+    "Runner crossbar 599"
+   ],
+   "gapMm": 3.392510530913648e-11,
+   "onFirstMm": [
+    -164.87822606712788,
+    226.0,
+    976.2696360215707
+   ],
+   "onSecondMm": [
+    -164.8782260671,
+    226.0,
+    976.26963602159
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam \u00b7 right",
+    "Climb yoke post \u00b7 right"
+   ],
+   "gapMm": 9.43605033457631e-13,
+   "onFirstMm": [
+    74.87672432757475,
+    -226.0,
+    633.8640815087906
+   ],
+   "onSecondMm": [
+    74.876724327574,
+    -226.0,
+    633.86408150879
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam \u00b7 right",
+    "Entry bearing bracket \u00b7 right"
+   ],
+   "gapMm": 9.981848401723668e-12,
+   "onFirstMm": [
+    -171.7611433033,
+    -226.0,
+    986.09946055305
+   ],
+   "onSecondMm": [
+    -171.76114330330572,
+    -226.0,
+    986.0994605530582
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam \u00b7 right",
+    "Feed Nose pulley shelf \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -4.853800432185,
+    -218.0,
+    772.13932665964
+   ],
+   "onSecondMm": [
+    -4.853800432185,
+    -218.0,
+    772.13932665964
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam \u00b7 right",
+    "Feed gearhead flange \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    138.21230782715,
+    -218.0,
+    569.56319611233
+   ],
+   "onSecondMm": [
+    138.21230782715,
+    -218.0,
+    569.56319611233
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam \u00b7 right",
+    "Launch Belt motor shelf \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -25.341101806843994,
+    -218.0,
+    818.8326932376112
+   ],
+   "onSecondMm": [
+    -25.34110180686,
+    -218.0,
+    818.8326932376
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam \u00b7 right",
+    "Lid post 330 \u00b7 right"
+   ],
+   "gapMm": 4.260971703527731e-12,
+   "onFirstMm": [
+    -15.7483526158843,
+    -218.0,
+    763.2901045064541
+   ],
+   "onSecondMm": [
+    -15.74835261589,
+    -218.0,
+    763.29010450645
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam \u00b7 right",
+    "Lid post 95 \u00b7 right"
+   ],
+   "gapMm": 4.263256414560601e-14,
+   "onFirstMm": [
+    119.04210992660005,
+    -226.0,
+    570.78937409854
+   ],
+   "onSecondMm": [
+    119.0421099266,
+    -226.0,
+    570.78937409854
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam \u00b7 right",
+    "Runner crossbar 125"
+   ],
+   "gapMm": 3.3320439271567093e-12,
+   "onFirstMm": [
+    101.83481683607474,
+    -226.0,
+    595.3639354272033
+   ],
+   "onSecondMm": [
+    101.83481683607,
+    -226.0,
+    595.3639354272
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam \u00b7 right",
+    "Runner crossbar 370"
+   ],
+   "gapMm": 6.96192658754356e-12,
+   "onFirstMm": [
+    -38.691410069924274,
+    -226.0,
+    796.056186278014
+   ],
+   "onSecondMm": [
+    -38.69141006993,
+    -226.0,
+    796.05618627801
+   ]
+  },
+  {
+   "pair": [
+    "Cassette side beam \u00b7 right",
+    "Runner crossbar 599"
+   ],
+   "gapMm": 3.392510530913648e-11,
+   "onFirstMm": [
+    -164.87822606712788,
+    -226.0,
+    976.2696360215707
+   ],
+   "onSecondMm": [
+    -164.8782260671,
+    -226.0,
+    976.26963602159
+   ]
+  },
+  {
+   "pair": [
+    "Catch actuator and spring",
+    "Catch dog"
+   ],
+   "gapMm": 0.34999999999988796,
+   "onFirstMm": [
+    141.81524400828,
+    262.0,
+    541.40990090907
+   ],
+   "onSecondMm": [
+    141.81524400828,
+    262.0,
+    541.05990090907
+   ]
+  },
+  {
+   "pair": [
+    "Catch actuator and spring",
+    "Catch receiver"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    141.81524400828,
+    262.0,
+    541.40990090907
+   ],
+   "onSecondMm": [
+    141.81524400828,
+    262.0,
+    541.40990090907
+   ]
+  },
+  {
+   "pair": [
+    "Catch dog",
+    "Catch receiver"
+   ],
+   "gapMm": 0.1999999999999318,
+   "onFirstMm": [
+    141.81524400828,
+    262.0,
+    541.05990090907
+   ],
+   "onSecondMm": [
+    141.81524400828,
+    262.0,
+    541.25990090907
+   ]
+  },
+  {
+   "pair": [
+    "Catch receiver",
+    "Catch receiver screw 1"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    172.0,
+    240.1,
+    466.0
+   ],
+   "onSecondMm": [
+    172.0,
+    240.1,
+    466.0
+   ]
+  },
+  {
+   "pair": [
+    "Catch receiver",
+    "Catch receiver screw 2"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    198.0,
+    240.1,
+    466.0
+   ],
+   "onSecondMm": [
+    198.0,
+    240.1,
+    466.0
+   ]
+  },
+  {
+   "pair": [
+    "Catch receiver",
+    "Catch receiver screw 3"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    172.0,
+    240.1,
+    482.0
+   ],
+   "onSecondMm": [
+    172.0,
+    240.1,
+    482.0
+   ]
+  },
+  {
+   "pair": [
+    "Catch receiver",
+    "Catch receiver screw 4"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    198.0,
+    240.1,
+    482.0
+   ],
+   "onSecondMm": [
+    198.0,
+    240.1,
+    482.0
+   ]
+  },
+  {
+   "pair": [
+    "Catch receiver",
+    "Translating bearing block \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    172.0,
+    247.0,
+    466.0
+   ],
+   "onSecondMm": [
+    172.0,
+    247.0,
+    466.0
+   ]
+  },
+  {
+   "pair": [
+    "Catch receiver screw 1",
+    "Translating bearing block \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    172.0,
+    255.1,
+    466.0
+   ],
+   "onSecondMm": [
+    172.0,
+    255.1,
+    466.0
+   ]
+  },
+  {
+   "pair": [
+    "Catch receiver screw 2",
+    "Translating bearing block \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    198.0,
+    255.1,
+    466.0
+   ],
+   "onSecondMm": [
+    198.0,
+    255.1,
+    466.0
+   ]
+  },
+  {
+   "pair": [
+    "Catch receiver screw 3",
+    "Service index disk"
+   ],
+   "gapMm": 0.09999999999999432,
+   "onFirstMm": [
+    172.0,
+    237.1,
+    483.9
+   ],
+   "onSecondMm": [
+    172.0,
+    237.0,
+    483.9
+   ]
+  },
+  {
+   "pair": [
+    "Catch receiver screw 3",
+    "Translating bearing block \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    172.0,
+    255.1,
+    482.0
+   ],
+   "onSecondMm": [
+    172.0,
+    255.1,
+    482.0
+   ]
+  },
+  {
+   "pair": [
+    "Catch receiver screw 4",
+    "Service index disk"
+   ],
+   "gapMm": 0.09999999999999432,
+   "onFirstMm": [
+    198.15113042851,
+    237.1,
+    483.35147970927
+   ],
+   "onSecondMm": [
+    198.15113042851,
+    237.0,
+    483.35147970927
+   ]
+  },
+  {
+   "pair": [
+    "Catch receiver screw 4",
+    "Translating bearing block \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    198.0,
+    255.1,
+    482.0
+   ],
+   "onSecondMm": [
+    198.0,
+    255.1,
+    482.0
+   ]
+  },
+  {
+   "pair": [
+    "Catch sector",
+    "Catch sector screw 1"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    156.48602862339,
+    232.9,
+    534.74838420331
+   ],
+   "onSecondMm": [
+    156.48602862339,
+    232.9,
+    534.74838420331
+   ]
+  },
+  {
+   "pair": [
+    "Catch sector",
+    "Catch sector screw 2"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    142.55704376351,
+    232.9,
+    549.41069578003
+   ],
+   "onSecondMm": [
+    142.55704376351,
+    232.9,
+    549.41069578003
+   ]
+  },
+  {
+   "pair": [
+    "Catch sector",
+    "Catch sector screw 3"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    140.92043972842,
+    232.9,
+    536.05698740998
+   ],
+   "onSecondMm": [
+    140.92043972842,
+    232.9,
+    536.05698740998
+   ]
+  },
+  {
+   "pair": [
+    "Center belt idler",
+    "Center idler axle"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    118.87895953914,
+    22.5,
+    565.79203661233
+   ],
+   "onSecondMm": [
+    118.87895953914,
+    22.5,
+    565.79203661233
+   ]
+  },
+  {
+   "pair": [
+    "Center belt idler",
+    "Center intake belt"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    113.9640472734,
+    22.5,
+    562.35057799422
+   ],
+   "onSecondMm": [
+    113.9640472734,
+    22.5,
+    562.35057799422
+   ]
+  },
+  {
+   "pair": [
+    "Center idler axle",
+    "Center idler fork \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    118.87895953914,
+    26.0,
+    565.79203661233
+   ],
+   "onSecondMm": [
+    118.87895953914,
+    26.0,
+    565.79203661233
+   ]
+  },
+  {
+   "pair": [
+    "Center idler axle",
+    "Center idler fork \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    118.87895953914,
+    -31.0,
+    565.79203661233
+   ],
+   "onSecondMm": [
+    118.87895953914,
+    -31.0,
+    565.79203661233
+   ]
+  },
+  {
+   "pair": [
+    "Center idler fork \u00b7 left",
+    "Runner crossbar 125"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    97.739056614628,
+    26.0,
+    592.49605324545
+   ],
+   "onSecondMm": [
+    97.739056614628,
+    26.0,
+    592.49605324545
+   ]
+  },
+  {
+   "pair": [
+    "Center idler fork \u00b7 right",
+    "Runner crossbar 125"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    97.739056614628,
+    -31.0,
+    592.49605324545
+   ],
+   "onSecondMm": [
+    97.739056614628,
+    -31.0,
+    592.49605324545
+   ]
+  },
+  {
+   "pair": [
+    "Center intake belt",
+    "Chambered NOTE"
+   ],
+   "gapMm": 1.2536132814147066e-11,
+   "onFirstMm": [
+    -45.25291147961113,
+    -22.5,
+    786.249066685666
+   ],
+   "onSecondMm": [
+    -45.25291147970695,
+    -22.500000000000004,
+    786.2490666855989
+   ]
+  },
+  {
+   "pair": [
+    "Center intake belt",
+    "Nose pickup roller"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -192.325769738,
+    -22.5,
+    999.77776964454
+   ],
+   "onSecondMm": [
+    -192.325769738,
+    -22.5,
+    999.77776964454
+   ]
+  },
+  {
+   "pair": [
+    "Chain hook \u00b7 left",
+    "Common keeper yoke and sliding rack"
+   ],
+   "gapMm": 0.19999999999998863,
+   "onFirstMm": [
+    -100.6724889186,
+    96.68,
+    546.34566214107
+   ],
+   "onSecondMm": [
+    -100.6724889186,
+    96.88,
+    546.34566214107
+   ]
+  },
+  {
+   "pair": [
+    "Chain hook \u00b7 left",
+    "Shared lift crosspiece"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -80.10956253748,
+    96.88,
+    544.87390854693
+   ],
+   "onSecondMm": [
+    -80.10956253748,
+    96.88,
+    544.87390854693
+   ]
+  },
+  {
+   "pair": [
+    "Chain hook \u00b7 right",
+    "Common keeper yoke and sliding rack"
+   ],
+   "gapMm": 0.19999999999998863,
+   "onFirstMm": [
+    -100.6724889186,
+    -96.68,
+    546.34566214107
+   ],
+   "onSecondMm": [
+    -100.6724889186,
+    -96.88,
+    546.34566214107
+   ]
+  },
+  {
+   "pair": [
+    "Chain hook \u00b7 right",
+    "Shared lift crosspiece"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -80.10956253748,
+    -104.88,
+    544.87390854693
+   ],
+   "onSecondMm": [
+    -80.10956253748,
+    -104.88,
+    544.87390854693
+   ]
+  },
+  {
+   "pair": [
+    "Chambered NOTE",
+    "Feed tread \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    46.6653534659827,
+    171.8,
+    610.6926312116246
+   ],
+   "onSecondMm": [
+    46.6653534659827,
+    171.8,
+    610.6926312116246
+   ]
+  },
+  {
+   "pair": [
+    "Chambered NOTE",
+    "Feed tread \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    46.6653534659827,
+    -171.8,
+    610.6926312116246
+   ],
+   "onSecondMm": [
+    46.6653534659827,
+    -171.8,
+    610.6926312116246
+   ]
+  },
+  {
+   "pair": [
+    "Chambered NOTE",
+    "NOTE runner \u00b7 left"
+   ],
+   "gapMm": 1.946557210238735e-11,
+   "onFirstMm": [
+    75.67859858547813,
+    140.04583328372908,
+    613.540971633861
+   ],
+   "onSecondMm": [
+    75.67859858547719,
+    140.04583328372877,
+    613.5409716338804
+   ]
+  },
+  {
+   "pair": [
+    "Chambered NOTE",
+    "NOTE runner \u00b7 right"
+   ],
+   "gapMm": 3.4821724082873864e-11,
+   "onFirstMm": [
+    75.67860297871083,
+    -140.04585110454312,
+    613.540965359638
+   ],
+   "onSecondMm": [
+    75.67860297874338,
+    -140.04585110455247,
+    613.5409653596461
+   ]
+  },
+  {
+   "pair": [
+    "Chambered NOTE",
+    "Rear stop pad"
+   ],
+   "gapMm": 9.09950202889984e-14,
+   "onFirstMm": [
+    122.37769353556982,
+    2.1774220088839943e-14,
+    502.5642036554529
+   ],
+   "onSecondMm": [
+    122.37769353556897,
+    2.1316282072803006e-14,
+    502.56420365545404
+   ]
+  },
+  {
+   "pair": [
+    "Chassis perimeter",
+    "Chassis sill \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -322.0,
+    240.0,
+    146.0
+   ],
+   "onSecondMm": [
+    -322.0,
+    240.0,
+    146.0
+   ]
+  },
+  {
+   "pair": [
+    "Chassis perimeter",
+    "Chassis sill \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -322.0,
+    -264.0,
+    146.0
+   ],
+   "onSecondMm": [
+    -322.0,
+    -264.0,
+    146.0
+   ]
+  },
+  {
+   "pair": [
+    "Chassis perimeter",
+    "Rear left module deck"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -307.0,
+    308.0,
+    116.0
+   ],
+   "onSecondMm": [
+    -307.0,
+    308.0,
+    116.0
+   ]
+  },
+  {
+   "pair": [
+    "Chassis perimeter",
+    "Rear right module deck"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -307.0,
+    -308.0,
+    116.0
+   ],
+   "onSecondMm": [
+    -307.0,
+    -308.0,
+    116.0
+   ]
+  },
+  {
+   "pair": [
+    "Chassis sill \u00b7 left",
+    "Electronics deck"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -190.0,
+    248.0,
+    146.0
+   ],
+   "onSecondMm": [
+    -190.0,
+    248.0,
+    146.0
+   ]
+  },
+  {
+   "pair": [
+    "Chassis sill \u00b7 left",
+    "Front left module deck"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    191.0,
+    240.0,
+    116.0
+   ],
+   "onSecondMm": [
+    191.0,
+    240.0,
+    116.0
+   ]
+  },
+  {
+   "pair": [
+    "Chassis sill \u00b7 left",
+    "Pivot A-frame \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -141.0,
+    248.0,
+    146.0
+   ],
+   "onSecondMm": [
+    -141.0,
+    248.0,
+    146.0
+   ]
+  },
+  {
+   "pair": [
+    "Chassis sill \u00b7 left",
+    "Rear left module deck"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -307.0,
+    240.0,
+    116.0
+   ],
+   "onSecondMm": [
+    -307.0,
+    240.0,
+    116.0
+   ]
+  },
+  {
+   "pair": [
+    "Chassis sill \u00b7 right",
+    "Electronics deck"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -190.0,
+    -248.0,
+    146.0
+   ],
+   "onSecondMm": [
+    -190.0,
+    -248.0,
+    146.0
+   ]
+  },
+  {
+   "pair": [
+    "Chassis sill \u00b7 right",
+    "Front right module deck"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    191.0,
+    -264.0,
+    116.0
+   ],
+   "onSecondMm": [
+    191.0,
+    -264.0,
+    116.0
+   ]
+  },
+  {
+   "pair": [
+    "Chassis sill \u00b7 right",
+    "Pivot A-frame \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -141.0,
+    -260.0,
+    146.0
+   ],
+   "onSecondMm": [
+    -141.0,
+    -260.0,
+    146.0
+   ]
+  },
+  {
+   "pair": [
+    "Chassis sill \u00b7 right",
+    "Rear right module deck"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -307.0,
+    -264.0,
+    116.0
+   ],
+   "onSecondMm": [
+    -307.0,
+    -264.0,
+    116.0
+   ]
+  },
+  {
+   "pair": [
+    "Climb yoke post \u00b7 left",
+    "Hook guide channel \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -52.62514139275,
+    218.0,
+    550.69018693942
+   ],
+   "onSecondMm": [
+    -52.62514139275,
+    218.0,
+    550.69018693942
+   ]
+  },
+  {
+   "pair": [
+    "Climb yoke post \u00b7 left",
+    "Lid edge rail \u00b7 left"
+   ],
+   "gapMm": 1.0917645786190462e-12,
+   "onFirstMm": [
+    24.089297581652907,
+    226.0,
+    598.3023424550258
+   ],
+   "onSecondMm": [
+    24.089297581657,
+    226.0,
+    598.30234245502
+   ]
+  },
+  {
+   "pair": [
+    "Climb yoke post \u00b7 left",
+    "Windowed keeper panel"
+   ],
+   "gapMm": 7.105427357601002e-15,
+   "onFirstMm": [
+    19.17438531592292,
+    218.0,
+    594.8608838369227
+   ],
+   "onSecondMm": [
+    19.174385315922905,
+    218.0,
+    594.8608838369228
+   ]
+  },
+  {
+   "pair": [
+    "Climb yoke post \u00b7 right",
+    "Hook guide channel \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -52.62514139275,
+    -218.0,
+    550.69018693942
+   ],
+   "onSecondMm": [
+    -52.62514139275,
+    -218.0,
+    550.69018693942
+   ]
+  },
+  {
+   "pair": [
+    "Climb yoke post \u00b7 right",
+    "Lid edge rail \u00b7 right"
+   ],
+   "gapMm": 1.0917645786190462e-12,
+   "onFirstMm": [
+    24.089297581652907,
+    -226.0,
+    598.3023424550258
+   ],
+   "onSecondMm": [
+    24.089297581657,
+    -226.0,
+    598.30234245502
+   ]
+  },
+  {
+   "pair": [
+    "Climb yoke post \u00b7 right",
+    "Windowed keeper panel"
+   ],
+   "gapMm": 7.105427357601002e-15,
+   "onFirstMm": [
+    11.635466422890246,
+    -218.0,
+    609.1144694182491
+   ],
+   "onSecondMm": [
+    11.635466422890232,
+    -218.0,
+    609.1144694182491
+   ]
+  },
+  {
+   "pair": [
+    "Common keeper yoke and sliding rack",
+    "Keeper return pinion"
+   ],
+   "gapMm": 9.152496538777437e-13,
+   "onFirstMm": [
+    -192.58066826640862,
+    -4.0,
+    477.1077637835429
+   ],
+   "onSecondMm": [
+    -192.58066826640808,
+    -4.0,
+    477.10776378354217
+   ]
+  },
+  {
+   "pair": [
+    "Distribution lead",
+    "PDH"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -20.0,
+    174.0,
+    181.5
+   ],
+   "onSecondMm": [
+    -20.0,
+    174.0,
+    181.5
+   ]
+  },
+  {
+   "pair": [
+    "Distribution lead",
+    "main breaker"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    82.0,
+    -172.0,
+    181.5
+   ],
+   "onSecondMm": [
+    82.0,
+    -172.0,
+    181.5
+   ]
+  },
+  {
+   "pair": [
+    "Electronics deck",
+    "PDH"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -185.0,
+    95.0,
+    151.0
+   ],
+   "onSecondMm": [
+    -185.0,
+    95.0,
+    151.0
+   ]
+  },
+  {
+   "pair": [
+    "Electronics deck",
+    "Pivot A-frame \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -141.0,
+    248.0,
+    146.0
+   ],
+   "onSecondMm": [
+    -141.0,
+    248.0,
+    146.0
+   ]
+  },
+  {
+   "pair": [
+    "Electronics deck",
+    "Pivot A-frame \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -141.0,
+    -248.0,
+    146.0
+   ],
+   "onSecondMm": [
+    -141.0,
+    -248.0,
+    146.0
+   ]
+  },
+  {
+   "pair": [
+    "Electronics deck",
+    "main breaker"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    45.0,
+    -207.0,
+    151.0
+   ],
+   "onSecondMm": [
+    45.0,
+    -207.0,
+    151.0
+   ]
+  },
+  {
+   "pair": [
+    "Electronics deck",
+    "radio"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -3.0,
+    48.0,
+    151.0
+   ],
+   "onSecondMm": [
+    -3.0,
+    48.0,
+    151.0
+   ]
+  },
+  {
+   "pair": [
+    "Electronics deck",
+    "roboRIO flat"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -169.0,
+    -98.0,
+    151.0
+   ],
+   "onSecondMm": [
+    -169.0,
+    -98.0,
+    151.0
+   ]
+  },
+  {
+   "pair": [
+    "Entry bearing bracket \u00b7 left",
+    "Launch Belt drive shaft \u00b7 left"
+   ],
+   "gapMm": 0.39999999998810903,
+   "onFirstMm": [
+    -217.9455135785,
+    195.8,
+    957.91144994068
+   ],
+   "onSecondMm": [
+    -217.7160830039487,
+    195.8,
+    957.5837891229488
+   ]
+  },
+  {
+   "pair": [
+    "Entry bearing bracket \u00b7 left",
+    "Nose roller shaft"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -189.0491615608,
+    218.0,
+    1002.07207539
+   ],
+   "onSecondMm": [
+    -189.0491615608,
+    218.0,
+    1002.07207539
+   ]
+  },
+  {
+   "pair": [
+    "Entry bearing bracket \u00b7 left",
+    "Runner crossbar 599"
+   ],
+   "gapMm": 3.1507884566056026e-11,
+   "onFirstMm": [
+    -168.9739862885675,
+    220.4,
+    973.4017538398527
+   ],
+   "onSecondMm": [
+    -168.9739862886,
+    220.39999999999998,
+    973.40175383983
+   ]
+  },
+  {
+   "pair": [
+    "Entry bearing bracket \u00b7 right",
+    "Launch Belt drive shaft \u00b7 right"
+   ],
+   "gapMm": 0.39999999998810903,
+   "onFirstMm": [
+    -217.9455135785,
+    -195.8,
+    957.91144994068
+   ],
+   "onSecondMm": [
+    -217.7160830039487,
+    -195.8,
+    957.5837891229488
+   ]
+  },
+  {
+   "pair": [
+    "Entry bearing bracket \u00b7 right",
+    "Nose roller shaft"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -189.0491615608,
+    -226.0,
+    1002.07207539
+   ],
+   "onSecondMm": [
+    -189.0491615608,
+    -226.0,
+    1002.07207539
+   ]
+  },
+  {
+   "pair": [
+    "Entry bearing bracket \u00b7 right",
+    "Runner crossbar 599"
+   ],
+   "gapMm": 3.1507871747141927e-11,
+   "onFirstMm": [
+    -168.9739862885675,
+    -225.4,
+    973.4017538398527
+   ],
+   "onSecondMm": [
+    -168.9739862886,
+    -225.4,
+    973.40175383983
+   ]
+  },
+  {
+   "pair": [
+    "Feed Idler axle \u00b7 left",
+    "Feed Nose pulley shelf \u00b7 left"
+   ],
+   "gapMm": 0.39999999997181424,
+   "onFirstMm": [
+    -19.76678777728,
+    195.8,
+    793.43727981116
+   ],
+   "onSecondMm": [
+    -19.99621835178,
+    195.8,
+    793.76494062887
+   ]
+  },
+  {
+   "pair": [
+    "Feed Idler axle \u00b7 left",
+    "Feed idler pulley \u00b7 left"
+   ],
+   "gapMm": 2.578644170445281e-11,
+   "onFirstMm": [
+    -72.19251861178,
+    195.8,
+    756.72838788469
+   ],
+   "onSecondMm": [
+    -72.19251861181,
+    195.8,
+    756.7283878847
+   ]
+  },
+  {
+   "pair": [
+    "Feed Idler axle \u00b7 right",
+    "Feed Nose pulley shelf \u00b7 right"
+   ],
+   "gapMm": 0.39999999997181424,
+   "onFirstMm": [
+    -19.76678777728,
+    -195.8,
+    793.43727981116
+   ],
+   "onSecondMm": [
+    -19.99621835178,
+    -195.8,
+    793.76494062887
+   ]
+  },
+  {
+   "pair": [
+    "Feed Idler axle \u00b7 right",
+    "Feed idler pulley \u00b7 right"
+   ],
+   "gapMm": 2.578644170445281e-11,
+   "onFirstMm": [
+    -72.19251861178,
+    -195.8,
+    756.72838788469
+   ],
+   "onSecondMm": [
+    -72.19251861181,
+    -195.8,
+    756.7283878847
+   ]
+  },
+  {
+   "pair": [
+    "Feed belt \u00b7 left",
+    "Feed drive pulley \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    103.1502202567,
+    179.8,
+    562.10330233279
+   ],
+   "onSecondMm": [
+    103.1502202567,
+    179.8,
+    562.10330233279
+   ]
+  },
+  {
+   "pair": [
+    "Feed belt \u00b7 left",
+    "Feed idler pulley \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -52.28899399443,
+    195.8,
+    784.09350633511
+   ],
+   "onSecondMm": [
+    -52.28899399443,
+    195.8,
+    784.09350633511
+   ]
+  },
+  {
+   "pair": [
+    "Feed belt \u00b7 left",
+    "Feed tread \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -53.00596453987,
+    195.8,
+    785.11744639047
+   ],
+   "onSecondMm": [
+    -53.00596453987,
+    195.8,
+    785.11744639047
+   ]
+  },
+  {
+   "pair": [
+    "Feed belt \u00b7 right",
+    "Feed drive pulley \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    103.1502202567,
+    -211.8,
+    562.10330233279
+   ],
+   "onSecondMm": [
+    103.1502202567,
+    -211.8,
+    562.10330233279
+   ]
+  },
+  {
+   "pair": [
+    "Feed belt \u00b7 right",
+    "Feed idler pulley \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -52.28899399443,
+    -195.8,
+    784.09350633511
+   ],
+   "onSecondMm": [
+    -52.28899399443,
+    -195.8,
+    784.09350633511
+   ]
+  },
+  {
+   "pair": [
+    "Feed belt \u00b7 right",
+    "Feed tread \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -53.00596453987,
+    -195.8,
+    785.11744639047
+   ],
+   "onSecondMm": [
+    -53.00596453987,
+    -195.8,
+    785.11744639047
+   ]
+  },
+  {
+   "pair": [
+    "Feed drive pulley \u00b7 left",
+    "Feed output shaft \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    74.069472657698,
+    195.8,
+    547.84461659101
+   ],
+   "onSecondMm": [
+    74.069472657698,
+    195.8,
+    547.84461659101
+   ]
+  },
+  {
+   "pair": [
+    "Feed drive pulley \u00b7 right",
+    "Feed output shaft \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    74.069472657698,
+    -195.8,
+    547.84461659101
+   ],
+   "onSecondMm": [
+    74.069472657698,
+    -195.8,
+    547.84461659101
+   ]
+  },
+  {
+   "pair": [
+    "Feed gearhead flange \u00b7 left",
+    "Feed output shaft \u00b7 left"
+   ],
+   "gapMm": 0.39999999999538927,
+   "onFirstMm": [
+    122.98916474049,
+    195.8,
+    582.58686358978
+   ],
+   "onSecondMm": [
+    123.21859531502776,
+    195.8,
+    582.2592027720682
+   ]
+  },
+  {
+   "pair": [
+    "Feed gearhead flange \u00b7 left",
+    "Feed right-angle gearbox \u00b7 left"
+   ],
+   "gapMm": 1.7112135109858138e-13,
+   "onFirstMm": [
+    137.06515495444773,
+    185.8,
+    571.2015002009084
+   ],
+   "onSecondMm": [
+    137.06515495445,
+    185.8,
+    571.20150020091
+   ]
+  },
+  {
+   "pair": [
+    "Feed gearhead flange \u00b7 right",
+    "Feed output shaft \u00b7 right"
+   ],
+   "gapMm": 0.39999999999538927,
+   "onFirstMm": [
+    122.98916474049,
+    -195.8,
+    582.58686358978
+   ],
+   "onSecondMm": [
+    123.21859531502776,
+    -195.8,
+    582.2592027720682
+   ]
+  },
+  {
+   "pair": [
+    "Feed gearhead flange \u00b7 right",
+    "Feed right-angle gearbox \u00b7 right"
+   ],
+   "gapMm": 1.7112135109858138e-13,
+   "onFirstMm": [
+    137.06515495444773,
+    -185.8,
+    571.2015002009084
+   ],
+   "onSecondMm": [
+    137.06515495445,
+    -185.8,
+    571.20150020091
+   ]
+  },
+  {
+   "pair": [
+    "Feed input pilot flange",
+    "Feed input reduction housing"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    123.21451518666,
+    -124.0,
+    611.5549359657
+   ],
+   "onSecondMm": [
+    123.21451518666,
+    -124.0,
+    611.5549359657
+   ]
+  },
+  {
+   "pair": [
+    "Feed input pilot flange",
+    "Feed motor"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    115.18682515263683,
+    -129.0,
+    605.9338868894648
+   ],
+   "onSecondMm": [
+    115.18682515263,
+    -129.0,
+    605.93388688946
+   ]
+  },
+  {
+   "pair": [
+    "Feed input pilot flange",
+    "Feed motor output"
+   ],
+   "gapMm": 0.19999999999993132,
+   "onFirstMm": [
+    123.21451518666,
+    -129.0,
+    611.5549359657
+   ],
+   "onSecondMm": [
+    123.37834559552,
+    -129.0,
+    611.66965125297
+   ]
+  },
+  {
+   "pair": [
+    "Feed input reduction housing",
+    "Feed motor output"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    123.37834559552,
+    -124.0,
+    611.66965125297
+   ],
+   "onSecondMm": [
+    123.37834559552,
+    -124.0,
+    611.66965125297
+   ]
+  },
+  {
+   "pair": [
+    "Feed input reduction housing",
+    "Feed reducer mount"
+   ],
+   "gapMm": 1.3761068524333063e-12,
+   "onFirstMm": [
+    117.39870567756114,
+    -123.0,
+    606.2618877178708
+   ],
+   "onSecondMm": [
+    117.39870567756,
+    -123.0,
+    606.26188771787
+   ]
+  },
+  {
+   "pair": [
+    "Feed input reduction housing",
+    "Feed transverse jackshaft"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    139.19291020541,
+    -124.0,
+    587.34066553224
+   ],
+   "onSecondMm": [
+    139.19291020541,
+    -124.0,
+    587.34066553224
+   ]
+  },
+  {
+   "pair": [
+    "Feed motor",
+    "Feed motor output"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    123.37834559552,
+    -129.0,
+    611.66965125297
+   ],
+   "onSecondMm": [
+    123.37834559552,
+    -129.0,
+    611.66965125297
+   ]
+  },
+  {
+   "pair": [
+    "Feed output shaft \u00b7 left",
+    "Feed right-angle gearbox \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    136.32502802366,
+    195.8,
+    591.43642575369
+   ],
+   "onSecondMm": [
+    136.32502802365988,
+    195.8,
+    591.4364257536901
+   ]
+  },
+  {
+   "pair": [
+    "Feed output shaft \u00b7 left",
+    "Feed transverse jackshaft"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    139.19291020541,
+    191.8,
+    587.34066553224
+   ],
+   "onSecondMm": [
+    139.19291020541,
+    191.8,
+    587.34066553224
+   ]
+  },
+  {
+   "pair": [
+    "Feed output shaft \u00b7 right",
+    "Feed right-angle gearbox \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    136.32502802366,
+    -195.8,
+    591.43642575369
+   ],
+   "onSecondMm": [
+    136.32502802365988,
+    -195.8,
+    591.4364257536901
+   ]
+  },
+  {
+   "pair": [
+    "Feed output shaft \u00b7 right",
+    "Feed transverse jackshaft"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    139.19291020541,
+    -191.8,
+    587.34066553224
+   ],
+   "onSecondMm": [
+    139.19291020541,
+    -191.8,
+    587.34066553224
+   ]
+  },
+  {
+   "pair": [
+    "Feed reducer mount",
+    "Runner crossbar 125"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    101.83481683607,
+    -123.0,
+    595.3639354272
+   ],
+   "onSecondMm": [
+    101.83481683607,
+    -123.0,
+    595.3639354272
+   ]
+  },
+  {
+   "pair": [
+    "Feed right-angle gearbox \u00b7 left",
+    "Feed transverse jackshaft"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    139.19291020541,
+    185.8,
+    587.34066553224
+   ],
+   "onSecondMm": [
+    139.19291020541,
+    185.8,
+    587.34066553224
+   ]
+  },
+  {
+   "pair": [
+    "Feed right-angle gearbox \u00b7 right",
+    "Feed transverse jackshaft"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    139.19291020541,
+    -185.8,
+    587.34066553224
+   ],
+   "onSecondMm": [
+    139.19291020541,
+    -185.8,
+    587.34066553224
+   ]
+  },
+  {
+   "pair": [
+    "Flap axle",
+    "Lid edge rail \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -157.6881199709,
+    226.0,
+    819.55156949981
+   ],
+   "onSecondMm": [
+    -157.6881199709,
+    226.0,
+    819.55156949981
+   ]
+  },
+  {
+   "pair": [
+    "Flap axle",
+    "Lid edge rail \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -157.6881199709,
+    -226.0,
+    819.55156949981
+   ],
+   "onSecondMm": [
+    -157.6881199709,
+    -226.0,
+    819.55156949981
+   ]
+  },
+  {
+   "pair": [
+    "Flap axle",
+    "Mouth retention flap"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -157.6881199709,
+    -37.0,
+    819.55156949981
+   ],
+   "onSecondMm": [
+    -157.6881199709,
+    -37.0,
+    819.55156949981
+   ]
+  },
+  {
+   "pair": [
+    "Follower locknut \u00b7 left",
+    "Follower shoulder axle \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -205.4253349653,
+    238.45,
+    1025.323017435
+   ],
+   "onSecondMm": [
+    -205.4253349653,
+    238.45,
+    1025.323017435
+   ]
+  },
+  {
+   "pair": [
+    "Follower locknut \u00b7 right",
+    "Follower shoulder axle \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -205.0767119943,
+    -238.45,
+    1029.307796228
+   ],
+   "onSecondMm": [
+    -205.0767119943,
+    -238.45,
+    1029.307796228
+   ]
+  },
+  {
+   "pair": [
+    "Follower shoulder axle \u00b7 left",
+    "Follower thrust washer \u00b7 left"
+   ],
+   "gapMm": 0.010000000016579613,
+   "onFirstMm": [
+    -205.4689128367,
+    230.25,
+    1024.824920086
+   ],
+   "onSecondMm": [
+    -205.4697843941,
+    230.25,
+    1024.814958139
+   ]
+  },
+  {
+   "pair": [
+    "Follower shoulder axle \u00b7 left",
+    "Pickup lip crossbar"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -201.26624468743296,
+    226.0,
+    1026.9667838600103
+   ],
+   "onSecondMm": [
+    -201.26624468746354,
+    226.0,
+    1026.966783860013
+   ]
+  },
+  {
+   "pair": [
+    "Follower shoulder axle \u00b7 right",
+    "Follower thrust washer \u00b7 right"
+   ],
+   "gapMm": 0.01000000001658209,
+   "onFirstMm": [
+    -205.0331341229,
+    -230.25,
+    1029.805893577
+   ],
+   "onSecondMm": [
+    -205.0322625655,
+    -230.25,
+    1029.815855524
+   ]
+  },
+  {
+   "pair": [
+    "Follower shoulder axle \u00b7 right",
+    "Pickup lip crossbar"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -201.26624468743296,
+    -226.0,
+    1026.9667838600103
+   ],
+   "onSecondMm": [
+    -201.26624468746354,
+    -226.0,
+    1026.966783860013
+   ]
+  },
+  {
+   "pair": [
+    "Front left axle support 255",
+    "Front left module deck"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    233.0,
+    255.0,
+    104.0
+   ],
+   "onSecondMm": [
+    233.0,
+    255.0,
+    104.0
+   ]
+  },
+  {
+   "pair": [
+    "Front left axle support 255",
+    "Front left wheel axle"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    249.0,
+    255.0,
+    57.8
+   ],
+   "onSecondMm": [
+    249.0,
+    255.0,
+    57.8
+   ]
+  },
+  {
+   "pair": [
+    "Front left axle support 295",
+    "Front left module deck"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    233.0,
+    295.0,
+    104.0
+   ],
+   "onSecondMm": [
+    233.0,
+    295.0,
+    104.0
+   ]
+  },
+  {
+   "pair": [
+    "Front left axle support 295",
+    "Front left wheel axle"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    249.0,
+    303.0,
+    57.8
+   ],
+   "onSecondMm": [
+    249.0,
+    303.0,
+    57.8
+   ]
+  },
+  {
+   "pair": [
+    "Front left module deck",
+    "Swerve drive motor \u00b7 Front left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    245.0,
+    201.0,
+    116.0
+   ],
+   "onSecondMm": [
+    245.0,
+    201.0,
+    116.0
+   ]
+  },
+  {
+   "pair": [
+    "Front left module deck",
+    "Swerve steer motor \u00b7 Front left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    293.0,
+    201.0,
+    116.0
+   ],
+   "onSecondMm": [
+    293.0,
+    201.0,
+    116.0
+   ]
+  },
+  {
+   "pair": [
+    "Front left tire",
+    "Front left wheel axle"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    249.0,
+    293.0,
+    57.8
+   ],
+   "onSecondMm": [
+    249.0,
+    293.0,
+    57.8
+   ]
+  },
+  {
+   "pair": [
+    "Front right axle support 255",
+    "Front right module deck"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    233.0,
+    -263.0,
+    104.0
+   ],
+   "onSecondMm": [
+    233.0,
+    -263.0,
+    104.0
+   ]
+  },
+  {
+   "pair": [
+    "Front right axle support 255",
+    "Front right wheel axle"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    249.0,
+    -255.0,
+    57.8
+   ],
+   "onSecondMm": [
+    249.0,
+    -255.0,
+    57.8
+   ]
+  },
+  {
+   "pair": [
+    "Front right axle support 295",
+    "Front right module deck"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    233.0,
+    -303.0,
+    104.0
+   ],
+   "onSecondMm": [
+    233.0,
+    -303.0,
+    104.0
+   ]
+  },
+  {
+   "pair": [
+    "Front right axle support 295",
+    "Front right wheel axle"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    249.0,
+    -303.0,
+    57.8
+   ],
+   "onSecondMm": [
+    249.0,
+    -303.0,
+    57.8
+   ]
+  },
+  {
+   "pair": [
+    "Front right module deck",
+    "Swerve drive motor \u00b7 Front right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    245.0,
+    -201.0,
+    116.0
+   ],
+   "onSecondMm": [
+    245.0,
+    -201.0,
+    116.0
+   ]
+  },
+  {
+   "pair": [
+    "Front right module deck",
+    "Swerve steer motor \u00b7 Front right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    293.0,
+    -201.0,
+    116.0
+   ],
+   "onSecondMm": [
+    293.0,
+    -201.0,
+    116.0
+   ]
+  },
+  {
+   "pair": [
+    "Front right tire",
+    "Front right wheel axle"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    249.0,
+    -265.0,
+    57.8
+   ],
+   "onSecondMm": [
+    249.0,
+    -265.0,
+    57.8
+   ]
+  },
+  {
+   "pair": [
+    "Guide rear anchor cleat \u00b7 left",
+    "Guide rear anchor web \u00b7 left"
+   ],
+   "gapMm": 3.7650183878921086e-12,
+   "onFirstMm": [
+    102.19511868074,
+    218.0,
+    361.22750045268
+   ],
+   "onSecondMm": [
+    102.19511868074342,
+    218.0,
+    361.22750045268236
+   ]
+  },
+  {
+   "pair": [
+    "Guide rear anchor cleat \u00b7 left",
+    "Hook guide channel \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    120.38641425652,
+    218.0,
+    330.01729754922
+   ],
+   "onSecondMm": [
+    120.38641425651558,
+    218.0,
+    330.01729754921695
+   ]
+  },
+  {
+   "pair": [
+    "Guide rear anchor cleat \u00b7 left",
+    "Redirect cross-tie \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    122.84387038938,
+    218.0,
+    331.73802685827
+   ],
+   "onSecondMm": [
+    122.84387038938,
+    218.0,
+    331.73802685827
+   ]
+  },
+  {
+   "pair": [
+    "Guide rear anchor cleat \u00b7 right",
+    "Guide rear anchor web \u00b7 right"
+   ],
+   "gapMm": 3.7650183878921086e-12,
+   "onFirstMm": [
+    102.19511868074,
+    -218.0,
+    361.22750045268
+   ],
+   "onSecondMm": [
+    102.19511868074342,
+    -218.0,
+    361.22750045268236
+   ]
+  },
+  {
+   "pair": [
+    "Guide rear anchor cleat \u00b7 right",
+    "Hook guide channel \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    120.38641425652,
+    -218.0,
+    330.01729754922
+   ],
+   "onSecondMm": [
+    120.38641425651558,
+    -218.0,
+    330.01729754921695
+   ]
+  },
+  {
+   "pair": [
+    "Guide rear anchor cleat \u00b7 right",
+    "Redirect cross-tie \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    122.84387038938,
+    -218.0,
+    331.73802685827
+   ],
+   "onSecondMm": [
+    122.84387038938,
+    -218.0,
+    331.73802685827
+   ]
+  },
+  {
+   "pair": [
+    "Guide rear anchor web \u00b7 left",
+    "Redirect cross-tie \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    122.22440783812,
+    215.0,
+    332.62271106611
+   ],
+   "onSecondMm": [
+    122.22440783812,
+    215.0,
+    332.62271106611
+   ]
+  },
+  {
+   "pair": [
+    "Guide rear anchor web \u00b7 right",
+    "Redirect cross-tie \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    122.22440783812,
+    -215.0,
+    332.62271106611
+   ],
+   "onSecondMm": [
+    122.22440783812,
+    -215.0,
+    332.62271106611
+   ]
+  },
+  {
+   "pair": [
+    "Hoist eye thimble \u00b7 left",
+    "Hoist thimble pin \u00b7 left"
+   ],
+   "gapMm": 0.04999999999062194,
+   "onFirstMm": [
+    -170.1956920536,
+    160.0,
+    716.24468134323
+   ],
+   "onSecondMm": [
+    -170.16701323176386,
+    160.0,
+    716.2037237409891
+   ]
+  },
+  {
+   "pair": [
+    "Hoist eye thimble \u00b7 left",
+    "Spliced hoist eye \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -164.8179493933992,
+    173.27220816285748,
+    712.0513624735289
+   ],
+   "onSecondMm": [
+    -164.8179493934,
+    173.27220816285,
+    712.05136247353
+   ]
+  },
+  {
+   "pair": [
+    "Hoist eye thimble \u00b7 left",
+    "Thimble pin shelf \u00b7 left"
+   ],
+   "gapMm": 4.708148603280685e-12,
+   "onFirstMm": [
+    -172.3393811999,
+    160.0,
+    726.27997390716
+   ],
+   "onSecondMm": [
+    -172.33938119990384,
+    160.0,
+    726.2799739071572
+   ]
+  },
+  {
+   "pair": [
+    "Hoist eye thimble \u00b7 right",
+    "Hoist thimble pin \u00b7 right"
+   ],
+   "gapMm": 0.04999999999062194,
+   "onFirstMm": [
+    -170.1956920536,
+    -160.0,
+    716.24468134323
+   ],
+   "onSecondMm": [
+    -170.16701323176386,
+    -160.0,
+    716.2037237409891
+   ]
+  },
+  {
+   "pair": [
+    "Hoist eye thimble \u00b7 right",
+    "Spliced hoist eye \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -164.81794939340438,
+    -146.72779183714084,
+    712.0513624735363
+   ],
+   "onSecondMm": [
+    -164.8179493934,
+    -146.7277918371,
+    712.05136247353
+   ]
+  },
+  {
+   "pair": [
+    "Hoist eye thimble \u00b7 right",
+    "Thimble pin shelf \u00b7 right"
+   ],
+   "gapMm": 4.708148603280685e-12,
+   "onFirstMm": [
+    -172.3393811999,
+    -160.0,
+    726.27997390716
+   ],
+   "onSecondMm": [
+    -172.33938119990384,
+    -160.0,
+    726.2799739071572
+   ]
+  },
+  {
+   "pair": [
+    "Hoist rear redirect axle \u00b7 left",
+    "Hoist rear redirect sheave \u00b7 left"
+   ],
+   "gapMm": 0.0999999999999779,
+   "onFirstMm": [
+    133.98909834148,
+    165.0,
+    305.36031100008
+   ],
+   "onSecondMm": [
+    133.90718313705,
+    165.0,
+    305.30295335644
+   ]
+  },
+  {
+   "pair": [
+    "Hoist rear redirect axle \u00b7 left",
+    "Hoist redirect ear 194 \u00b7 left"
+   ],
+   "gapMm": 0.04999999999995891,
+   "onFirstMm": [
+    133.98909834148,
+    152.0,
+    305.36031100008
+   ],
+   "onSecondMm": [
+    133.94814073926,
+    152.0,
+    305.33163217826
+   ]
+  },
+  {
+   "pair": [
+    "Hoist rear redirect axle \u00b7 left",
+    "Hoist redirect ear 211 \u00b7 left"
+   ],
+   "gapMm": 0.04999999999995891,
+   "onFirstMm": [
+    133.98909834148,
+    169.0,
+    305.36031100008
+   ],
+   "onSecondMm": [
+    133.94814073926,
+    169.0,
+    305.33163217826
+   ]
+  },
+  {
+   "pair": [
+    "Hoist rear redirect axle \u00b7 right",
+    "Hoist rear redirect sheave \u00b7 right"
+   ],
+   "gapMm": 0.09999999999998879,
+   "onFirstMm": [
+    133.98909834148,
+    -155.0,
+    305.36031100008
+   ],
+   "onSecondMm": [
+    133.90718313705,
+    -155.0,
+    305.30295335644
+   ]
+  },
+  {
+   "pair": [
+    "Hoist rear redirect axle \u00b7 right",
+    "Hoist redirect ear 194 \u00b7 right"
+   ],
+   "gapMm": 0.04999999999995891,
+   "onFirstMm": [
+    133.98909834148,
+    -152.0,
+    305.36031100008
+   ],
+   "onSecondMm": [
+    133.94814073926,
+    -152.0,
+    305.33163217826
+   ]
+  },
+  {
+   "pair": [
+    "Hoist rear redirect axle \u00b7 right",
+    "Hoist redirect ear 211 \u00b7 right"
+   ],
+   "gapMm": 0.04999999999996285,
+   "onFirstMm": [
+    133.98909834148,
+    -169.0,
+    305.36031100008
+   ],
+   "onSecondMm": [
+    133.94814073926,
+    -169.0,
+    305.33163217826
+   ]
+  },
+  {
+   "pair": [
+    "Hoist rear redirect sheave \u00b7 left",
+    "Hoist redirect ear 194 \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    133.90718313705,
+    155.0,
+    305.30295335644
+   ],
+   "onSecondMm": [
+    133.90718313705,
+    155.0,
+    305.30295335644
+   ]
+  },
+  {
+   "pair": [
+    "Hoist rear redirect sheave \u00b7 left",
+    "Hoist rope drum to sheave \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    148.78480374776396,
+    160.0,
+    302.986213711232
+   ],
+   "onSecondMm": [
+    148.78480374777,
+    160.0,
+    302.98621371123
+   ]
+  },
+  {
+   "pair": [
+    "Hoist rear redirect sheave \u00b7 left",
+    "Hoist rope working span \u00b7 left"
+   ],
+   "gapMm": 7.38900220267658e-12,
+   "onFirstMm": [
+    125.79757789859,
+    160.0,
+    299.62454663657
+   ],
+   "onSecondMm": [
+    125.79757789858351,
+    160.0,
+    299.6245466365665
+   ]
+  },
+  {
+   "pair": [
+    "Hoist rear redirect sheave \u00b7 right",
+    "Hoist redirect ear 194 \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    133.90718313705,
+    -155.0,
+    305.30295335644
+   ],
+   "onSecondMm": [
+    133.90718313705,
+    -155.0,
+    305.30295335644
+   ]
+  },
+  {
+   "pair": [
+    "Hoist rear redirect sheave \u00b7 right",
+    "Hoist rope drum to sheave \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    148.78480374776396,
+    -160.0,
+    302.986213711232
+   ],
+   "onSecondMm": [
+    148.78480374777,
+    -160.0,
+    302.98621371123
+   ]
+  },
+  {
+   "pair": [
+    "Hoist rear redirect sheave \u00b7 right",
+    "Hoist rope working span \u00b7 right"
+   ],
+   "gapMm": 7.38900220267658e-12,
+   "onFirstMm": [
+    125.79757789859,
+    -160.0,
+    299.62454663657
+   ],
+   "onSecondMm": [
+    125.79757789858351,
+    -160.0,
+    299.6245466365665
+   ]
+  },
+  {
+   "pair": [
+    "Hoist redirect ear 194 \u00b7 left",
+    "Redirect cross-tie \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    121.53356712922,
+    155.0,
+    328.37899346064
+   ],
+   "onSecondMm": [
+    121.53356712922,
+    155.0,
+    328.37899346064
+   ]
+  },
+  {
+   "pair": [
+    "Hoist redirect ear 194 \u00b7 right",
+    "Redirect cross-tie \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    121.53356712922,
+    -155.0,
+    328.37899346064
+   ],
+   "onSecondMm": [
+    121.53356712922,
+    -155.0,
+    328.37899346064
+   ]
+  },
+  {
+   "pair": [
+    "Hoist redirect ear 211 \u00b7 left",
+    "Redirect cross-tie \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    121.53356712922,
+    172.0,
+    328.37899346064
+   ],
+   "onSecondMm": [
+    121.53356712922,
+    172.0,
+    328.37899346064
+   ]
+  },
+  {
+   "pair": [
+    "Hoist redirect ear 211 \u00b7 right",
+    "Redirect cross-tie \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    121.53356712922,
+    -172.0,
+    328.37899346064
+   ],
+   "onSecondMm": [
+    121.53356712922,
+    -172.0,
+    328.37899346064
+   ]
+  },
+  {
+   "pair": [
+    "Hoist rope drum to sheave \u00b7 left",
+    "Pivot cable drum \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    211.57469074275,
+    160.0,
+    492.18037348144
+   ],
+   "onSecondMm": [
+    211.57469074275525,
+    160.0,
+    492.18037348143827
+   ]
+  },
+  {
+   "pair": [
+    "Hoist rope drum to sheave \u00b7 right",
+    "Pivot cable drum \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    211.57469074275,
+    -160.0,
+    492.18037348144
+   ],
+   "onSecondMm": [
+    211.57469074275525,
+    -160.0,
+    492.18037348143827
+   ]
+  },
+  {
+   "pair": [
+    "Hoist rope working span \u00b7 left",
+    "Hoist splice allowance \u00b7 left"
+   ],
+   "gapMm": 9.085116925521123e-12,
+   "onFirstMm": [
+    -17.18610514028,
+    160.0,
+    498.59606817832
+   ],
+   "onSecondMm": [
+    -17.186105140274794,
+    160.0,
+    498.5960681783126
+   ]
+  },
+  {
+   "pair": [
+    "Hoist rope working span \u00b7 right",
+    "Hoist splice allowance \u00b7 right"
+   ],
+   "gapMm": 9.085116925521123e-12,
+   "onFirstMm": [
+    -17.18610514028,
+    -160.0,
+    498.59606817832
+   ],
+   "onSecondMm": [
+    -17.186105140274794,
+    -160.0,
+    498.5960681783126
+   ]
+  },
+  {
+   "pair": [
+    "Hoist splice allowance \u00b7 left",
+    "Spliced hoist eye \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -117.97240755058732,
+    160.0,
+    647.764165459372
+   ],
+   "onSecondMm": [
+    -117.9724075506,
+    160.0,
+    647.76416545939
+   ]
+  },
+  {
+   "pair": [
+    "Hoist splice allowance \u00b7 right",
+    "Spliced hoist eye \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -117.97240755058732,
+    -160.0,
+    647.764165459372
+   ],
+   "onSecondMm": [
+    -117.9724075506,
+    -160.0,
+    647.76416545939
+   ]
+  },
+  {
+   "pair": [
+    "Hoist thimble pin \u00b7 left",
+    "Thimble pin shelf \u00b7 left"
+   ],
+   "gapMm": 0.09999999997933312,
+   "onFirstMm": [
+    -166.89040505456586,
+    160.0,
+    718.4980294864224
+   ],
+   "onSecondMm": [
+    -166.9477626982,
+    160.0,
+    718.57994469085
+   ]
+  },
+  {
+   "pair": [
+    "Hoist thimble pin \u00b7 right",
+    "Thimble pin shelf \u00b7 right"
+   ],
+   "gapMm": 0.09999999997933312,
+   "onFirstMm": [
+    -166.89040505456586,
+    -160.0,
+    718.4980294864224
+   ],
+   "onSecondMm": [
+    -166.9477626982,
+    -160.0,
+    718.57994469085
+   ]
+  },
+  {
+   "pair": [
+    "Hook anchor compression tube \u00b7 left",
+    "Hook anchor root \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -45.5386261829,
+    140.0,
+    549.54834536518
+   ],
+   "onSecondMm": [
+    -45.5386261829,
+    140.0,
+    549.54834536518
+   ]
+  },
+  {
+   "pair": [
+    "Hook anchor compression tube \u00b7 left",
+    "Thimble pin shelf \u00b7 left"
+   ],
+   "gapMm": 2.1770528513126297e-11,
+   "onFirstMm": [
+    -167.7104071256,
+    140.0,
+    724.02773079874
+   ],
+   "onSecondMm": [
+    -167.71040712561782,
+    140.0,
+    724.0277307987275
+   ]
+  },
+  {
+   "pair": [
+    "Hook anchor compression tube \u00b7 right",
+    "Hook anchor root \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -45.5386261829,
+    -154.0,
+    549.54834536518
+   ],
+   "onSecondMm": [
+    -45.5386261829,
+    -154.0,
+    549.54834536518
+   ]
+  },
+  {
+   "pair": [
+    "Hook anchor compression tube \u00b7 right",
+    "Thimble pin shelf \u00b7 right"
+   ],
+   "gapMm": 2.1770528513126297e-11,
+   "onFirstMm": [
+    -167.7104071256,
+    -140.0,
+    724.02773079874
+   ],
+   "onSecondMm": [
+    -167.71040712561782,
+    -140.0,
+    724.0277307987275
+   ]
+  },
+  {
+   "pair": [
+    "Hook anchor root \u00b7 left",
+    "Shared lift crosspiece"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -61.10251502439,
+    140.0,
+    538.65039307451
+   ],
+   "onSecondMm": [
+    -61.10251502439,
+    140.0,
+    538.65039307451
+   ]
+  },
+  {
+   "pair": [
+    "Hook anchor root \u00b7 right",
+    "Shared lift crosspiece"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -61.10251502439,
+    -154.0,
+    538.65039307451
+   ],
+   "onSecondMm": [
+    -61.10251502439,
+    -154.0,
+    538.65039307451
+   ]
+  },
+  {
+   "pair": [
+    "Hook guide channel \u00b7 left",
+    "Hook slider liner 196.2 \u00b7 left"
+   ],
+   "gapMm": 0.19999999999998863,
+   "onFirstMm": [
+    -45.04526489749,
+    196.0,
+    536.46528017991
+   ],
+   "onSecondMm": [
+    -45.04526489749,
+    196.2,
+    536.46528017991
+   ]
+  },
+  {
+   "pair": [
+    "Hook guide channel \u00b7 left",
+    "Hook slider liner 215.0 \u00b7 left"
+   ],
+   "gapMm": 0.19999999999998863,
+   "onFirstMm": [
+    -45.04526489749,
+    216.0,
+    536.46528017991
+   ],
+   "onSecondMm": [
+    -45.04526489749,
+    215.8,
+    536.46528017991
+   ]
+  },
+  {
+   "pair": [
+    "Hook guide channel \u00b7 left",
+    "Redirect cross-tie \u00b7 left"
+   ],
+   "gapMm": 2.7638194437112026e-12,
+   "onFirstMm": [
+    123.82787287461774,
+    218.0,
+    325.1023852834884
+   ],
+   "onSecondMm": [
+    123.82787287462,
+    218.0,
+    325.10238528349
+   ]
+  },
+  {
+   "pair": [
+    "Hook guide channel \u00b7 left",
+    "Slide stop guide \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    76.716600012433,
+    218.0,
+    364.14041762765
+   ],
+   "onSecondMm": [
+    76.716600012433,
+    218.0,
+    364.14041762765
+   ]
+  },
+  {
+   "pair": [
+    "Hook guide channel \u00b7 left",
+    "Slide stop pin \u00b7 left"
+   ],
+   "gapMm": 0.3605551275464386,
+   "onFirstMm": [
+    76.716600012433,
+    218.0,
+    364.14041762765
+   ],
+   "onSecondMm": [
+    76.880430421291,
+    218.3,
+    364.25513291492
+   ]
+  },
+  {
+   "pair": [
+    "Hook guide channel \u00b7 right",
+    "Hook slider liner 196.2 \u00b7 right"
+   ],
+   "gapMm": 0.19999999999998863,
+   "onFirstMm": [
+    -45.04526489749,
+    -196.0,
+    536.46528017991
+   ],
+   "onSecondMm": [
+    -45.04526489749,
+    -196.2,
+    536.46528017991
+   ]
+  },
+  {
+   "pair": [
+    "Hook guide channel \u00b7 right",
+    "Hook slider liner 215.0 \u00b7 right"
+   ],
+   "gapMm": 0.19999999999998863,
+   "onFirstMm": [
+    -45.04526489749,
+    -216.0,
+    536.46528017991
+   ],
+   "onSecondMm": [
+    -45.04526489749,
+    -215.8,
+    536.46528017991
+   ]
+  },
+  {
+   "pair": [
+    "Hook guide channel \u00b7 right",
+    "Redirect cross-tie \u00b7 right"
+   ],
+   "gapMm": 2.7638194437112026e-12,
+   "onFirstMm": [
+    123.82787287461774,
+    -218.0,
+    325.1023852834884
+   ],
+   "onSecondMm": [
+    123.82787287462,
+    -218.0,
+    325.10238528349
+   ]
+  },
+  {
+   "pair": [
+    "Hook guide channel \u00b7 right",
+    "Slide stop guide \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    76.716600012433,
+    -218.0,
+    364.14041762765
+   ],
+   "onSecondMm": [
+    76.716600012433,
+    -218.0,
+    364.14041762765
+   ]
+  },
+  {
+   "pair": [
+    "Hook guide channel \u00b7 right",
+    "Slide stop pin \u00b7 right"
+   ],
+   "gapMm": 0.3605551275464386,
+   "onFirstMm": [
+    76.716600012433,
+    -218.0,
+    364.14041762765
+   ],
+   "onSecondMm": [
+    76.880430421291,
+    -218.3,
+    364.25513291492
+   ]
+  },
+  {
+   "pair": [
+    "Keeper drive mast",
+    "Keeper motor and return spring"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -200.8546139298,
+    21.0,
+    474.9766084256
+   ],
+   "onSecondMm": [
+    -200.8546139298,
+    21.0,
+    474.9766084256
+   ]
+  },
+  {
+   "pair": [
+    "Keeper drive mast",
+    "Keeper pinion output"
+   ],
+   "gapMm": 0.19999999999996929,
+   "onFirstMm": [
+    -190.6133433174,
+    9.0,
+    468.7191028329
+   ],
+   "onSecondMm": [
+    -190.4495129085,
+    9.0,
+    468.83381812017
+   ]
+  },
+  {
+   "pair": [
+    "Keeper drive mast",
+    "Shared lift crosspiece"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -80.10956253748,
+    9.0,
+    544.87390854693
+   ],
+   "onSecondMm": [
+    -80.10956253748,
+    9.0,
+    544.87390854693
+   ]
+  },
+  {
+   "pair": [
+    "Keeper motor and return spring",
+    "Keeper pinion output"
+   ],
+   "gapMm": 0.24999999999996783,
+   "onFirstMm": [
+    -190.6543009196,
+    21.0,
+    468.69042401109
+   ],
+   "onSecondMm": [
+    -190.4495129085,
+    21.0,
+    468.83381812017
+   ]
+  },
+  {
+   "pair": [
+    "Keeper pinion output",
+    "Keeper return pinion"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -190.4495129085,
+    -4.0,
+    468.83381812017
+   ],
+   "onSecondMm": [
+    -190.4495129085,
+    -4.0,
+    468.83381812017
+   ]
+  },
+  {
+   "pair": [
+    "Launch Belt drive shaft \u00b7 left",
+    "Launch Belt motor \u00b7 left"
+   ],
+   "gapMm": 4.7955669944550674e-11,
+   "onFirstMm": [
+    -272.5992699713,
+    195.8,
+    919.15416788744
+   ],
+   "onSecondMm": [
+    -272.59926997133925,
+    195.8,
+    919.1541678874125
+   ]
+  },
+  {
+   "pair": [
+    "Launch Belt drive shaft \u00b7 left",
+    "Launch idler bridge seat \u00b7 left"
+   ],
+   "gapMm": 0.3999999999762292,
+   "onFirstMm": [
+    -177.5776328338,
+    195.8,
+    985.68903450417
+   ],
+   "onSecondMm": [
+    -177.8070634084,
+    195.8,
+    986.01669532188
+   ]
+  },
+  {
+   "pair": [
+    "Launch Belt drive shaft \u00b7 left",
+    "Launch idler pulley \u00b7 left"
+   ],
+   "gapMm": 1.8198773652309366e-11,
+   "onFirstMm": [
+    -214.43947482678954,
+    195.8,
+    959.8780948683551
+   ],
+   "onSecondMm": [
+    -214.4394748268,
+    195.8,
+    959.87809486837
+   ]
+  },
+  {
+   "pair": [
+    "Launch Belt drive shaft \u00b7 left",
+    "Runner crossbar 599"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -174.7097506521,
+    200.8,
+    981.59327428272
+   ],
+   "onSecondMm": [
+    -174.7097506521,
+    200.8,
+    981.59327428272
+   ]
+  },
+  {
+   "pair": [
+    "Launch Belt drive shaft \u00b7 right",
+    "Launch Belt motor \u00b7 right"
+   ],
+   "gapMm": 4.7955669944550674e-11,
+   "onFirstMm": [
+    -272.5992699713,
+    -195.8,
+    919.15416788744
+   ],
+   "onSecondMm": [
+    -272.59926997133925,
+    -195.8,
+    919.1541678874125
+   ]
+  },
+  {
+   "pair": [
+    "Launch Belt drive shaft \u00b7 right",
+    "Launch idler bridge seat \u00b7 right"
+   ],
+   "gapMm": 0.3999999999762292,
+   "onFirstMm": [
+    -177.5776328338,
+    -195.8,
+    985.68903450417
+   ],
+   "onSecondMm": [
+    -177.8070634084,
+    -195.8,
+    986.01669532188
+   ]
+  },
+  {
+   "pair": [
+    "Launch Belt drive shaft \u00b7 right",
+    "Launch idler pulley \u00b7 right"
+   ],
+   "gapMm": 1.8198773652309366e-11,
+   "onFirstMm": [
+    -214.43947482678954,
+    -195.8,
+    959.8780948683551
+   ],
+   "onSecondMm": [
+    -214.4394748268,
+    -195.8,
+    959.87809486837
+   ]
+  },
+  {
+   "pair": [
+    "Launch Belt drive shaft \u00b7 right",
+    "Runner crossbar 599"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -174.7097506521,
+    -190.8,
+    981.59327428272
+   ],
+   "onSecondMm": [
+    -174.7097506521,
+    -190.8,
+    981.59327428272
+   ]
+  },
+  {
+   "pair": [
+    "Launch Belt motor shelf \u00b7 left",
+    "Launch idler axle \u00b7 left"
+   ],
+   "gapMm": 0.39999999999509395,
+   "onFirstMm": [
+    -43.35140190828,
+    195.8,
+    844.55406742828
+   ],
+   "onSecondMm": [
+    -43.12197133374,
+    195.8,
+    844.22640661057
+   ]
+  },
+  {
+   "pair": [
+    "Launch Belt motor shelf \u00b7 right",
+    "Launch idler axle \u00b7 right"
+   ],
+   "gapMm": 0.39999999999509395,
+   "onFirstMm": [
+    -43.35140190828,
+    -195.8,
+    844.55406742828
+   ],
+   "onSecondMm": [
+    -43.12197133374,
+    -195.8,
+    844.22640661057
+   ]
+  },
+  {
+   "pair": [
+    "Launch belt \u00b7 left",
+    "Launch drive pulley \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -74.65847501212,
+    179.8,
+    816.04043606238
+   ],
+   "onSecondMm": [
+    -74.65847501212,
+    179.8,
+    816.04043606238
+   ]
+  },
+  {
+   "pair": [
+    "Launch belt \u00b7 left",
+    "Launch idler pulley \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -194.5359502094,
+    195.8,
+    987.24321331878
+   ],
+   "onSecondMm": [
+    -194.5359502094,
+    195.8,
+    987.24321331878
+   ]
+  },
+  {
+   "pair": [
+    "Launch belt \u00b7 left",
+    "Launch tread \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -195.2529207549,
+    195.8,
+    988.26715337414
+   ],
+   "onSecondMm": [
+    -195.2529207549,
+    195.8,
+    988.26715337414
+   ]
+  },
+  {
+   "pair": [
+    "Launch belt \u00b7 right",
+    "Launch drive pulley \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -74.65847501212,
+    -211.8,
+    816.04043606238
+   ],
+   "onSecondMm": [
+    -74.65847501212,
+    -211.8,
+    816.04043606238
+   ]
+  },
+  {
+   "pair": [
+    "Launch belt \u00b7 right",
+    "Launch idler pulley \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -194.5359502094,
+    -195.8,
+    987.24321331878
+   ],
+   "onSecondMm": [
+    -194.5359502094,
+    -195.8,
+    987.24321331878
+   ]
+  },
+  {
+   "pair": [
+    "Launch belt \u00b7 right",
+    "Launch tread \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -195.2529207549,
+    -195.8,
+    988.26715337414
+   ],
+   "onSecondMm": [
+    -195.2529207549,
+    -195.8,
+    988.26715337414
+   ]
+  },
+  {
+   "pair": [
+    "Launch drive pulley \u00b7 left",
+    "Launch idler axle \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -103.7392226111,
+    195.8,
+    801.78175032059
+   ],
+   "onSecondMm": [
+    -103.7392226111,
+    195.8,
+    801.78175032059
+   ]
+  },
+  {
+   "pair": [
+    "Launch drive pulley \u00b7 right",
+    "Launch idler axle \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -103.7392226111,
+    -195.8,
+    801.78175032059
+   ],
+   "onSecondMm": [
+    -103.7392226111,
+    -195.8,
+    801.78175032059
+   ]
+  },
+  {
+   "pair": [
+    "Launch idler bridge seat \u00b7 left",
+    "Runner crossbar 599"
+   ],
+   "gapMm": 2.842170943040401e-14,
+   "onFirstMm": [
+    -168.9739862885676,
+    178.8,
+    973.4017538398527
+   ],
+   "onSecondMm": [
+    -168.9739862886,
+    178.8,
+    973.40175383983
+   ]
+  },
+  {
+   "pair": [
+    "Launch idler bridge seat \u00b7 right",
+    "Runner crossbar 599"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -168.9739862885676,
+    -212.8,
+    973.4017538398527
+   ],
+   "onSecondMm": [
+    -168.9739862886,
+    -212.8,
+    973.40175383983
+   ]
+  },
+  {
+   "pair": [
+    "Lid edge rail \u00b7 left",
+    "Lid post 330 \u00b7 left"
+   ],
+   "gapMm": 1.5106345774618504e-13,
+   "onFirstMm": [
+    -66.5357793617999,
+    226.0,
+    727.7283654526801
+   ],
+   "onSecondMm": [
+    -66.5357793618,
+    226.0,
+    727.72836545268
+   ]
+  },
+  {
+   "pair": [
+    "Lid edge rail \u00b7 left",
+    "Lid post 95 \u00b7 left"
+   ],
+   "gapMm": 4.33319231265956e-12,
+   "onFirstMm": [
+    68.25468318068346,
+    218.0,
+    535.2276350447675
+   ],
+   "onSecondMm": [
+    68.254683180687,
+    218.0,
+    535.22763504477
+   ]
+  },
+  {
+   "pair": [
+    "Lid edge rail \u00b7 left",
+    "Windowed keeper panel"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -114.5513495743,
+    218.0,
+    789.32791916182
+   ],
+   "onSecondMm": [
+    -114.5513495743,
+    218.0,
+    789.32791916182
+   ]
+  },
+  {
+   "pair": [
+    "Lid edge rail \u00b7 right",
+    "Lid post 330 \u00b7 right"
+   ],
+   "gapMm": 1.5106345774618504e-13,
+   "onFirstMm": [
+    -66.5357793617999,
+    -226.0,
+    727.7283654526801
+   ],
+   "onSecondMm": [
+    -66.5357793618,
+    -226.0,
+    727.72836545268
+   ]
+  },
+  {
+   "pair": [
+    "Lid edge rail \u00b7 right",
+    "Lid post 95 \u00b7 right"
+   ],
+   "gapMm": 4.33319231265956e-12,
+   "onFirstMm": [
+    68.25468318068346,
+    -218.0,
+    535.2276350447675
+   ],
+   "onSecondMm": [
+    68.254683180687,
+    -218.0,
+    535.22763504477
+   ]
+  },
+  {
+   "pair": [
+    "Lid edge rail \u00b7 right",
+    "Windowed keeper panel"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -114.5513495743,
+    -218.0,
+    789.32791916182
+   ],
+   "onSecondMm": [
+    -114.5513495743,
+    -218.0,
+    789.32791916182
+   ]
+  },
+  {
+   "pair": [
+    "NOTE runner \u00b7 left",
+    "Runner crossbar 125"
+   ],
+   "gapMm": 3.9466539633277455e-12,
+   "onFirstMm": [
+    97.73905661462477,
+    100.0,
+    592.4960532454477
+   ],
+   "onSecondMm": [
+    97.739056614628,
+    100.0,
+    592.49605324545
+   ]
+  },
+  {
+   "pair": [
+    "NOTE runner \u00b7 left",
+    "Runner crossbar 370"
+   ],
+   "gapMm": 1.3358392405085076e-12,
+   "onFirstMm": [
+    -42.78717029136894,
+    100.0,
+    793.1883040962509
+   ],
+   "onSecondMm": [
+    -42.78717029137,
+    100.0,
+    793.18830409625
+   ]
+  },
+  {
+   "pair": [
+    "NOTE runner \u00b7 left",
+    "Runner crossbar 599"
+   ],
+   "gapMm": 1.3645380800150865e-12,
+   "onFirstMm": [
+    -168.97398628859222,
+    100.0,
+    973.4017538398356
+   ],
+   "onSecondMm": [
+    -168.9739862886,
+    100.0,
+    973.40175383983
+   ]
+  },
+  {
+   "pair": [
+    "NOTE runner \u00b7 right",
+    "Runner crossbar 125"
+   ],
+   "gapMm": 3.9466539633277455e-12,
+   "onFirstMm": [
+    97.73905661462477,
+    -145.0,
+    592.4960532454477
+   ],
+   "onSecondMm": [
+    97.739056614628,
+    -145.0,
+    592.49605324545
+   ]
+  },
+  {
+   "pair": [
+    "NOTE runner \u00b7 right",
+    "Runner crossbar 370"
+   ],
+   "gapMm": 1.3358392405085076e-12,
+   "onFirstMm": [
+    -42.78717029136894,
+    -145.0,
+    793.1883040962509
+   ],
+   "onSecondMm": [
+    -42.78717029137,
+    -145.0,
+    793.18830409625
+   ]
+  },
+  {
+   "pair": [
+    "NOTE runner \u00b7 right",
+    "Runner crossbar 599"
+   ],
+   "gapMm": 1.3645380800150865e-12,
+   "onFirstMm": [
+    -168.97398628859222,
+    -145.0,
+    973.4017538398356
+   ],
+   "onSecondMm": [
+    -168.9739862886,
+    -145.0,
+    973.40175383983
+   ]
+  },
+  {
+   "pair": [
+    "Nose motor",
+    "Nose roller shaft"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -189.0491615608,
+    233.0,
+    1002.07207539
+   ],
+   "onSecondMm": [
+    -189.0491615608,
+    233.0,
+    1002.07207539
+   ]
+  },
+  {
+   "pair": [
+    "Nose pickup roller",
+    "Nose roller shaft"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -189.0491615608,
+    -217.0,
+    1002.07207539
+   ],
+   "onSecondMm": [
+    -189.0491615608,
+    -217.0,
+    1002.07207539
+   ]
+  },
+  {
+   "pair": [
+    "Pack lead",
+    "main breaker"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    60.5,
+    -186.0,
+    185.0
+   ],
+   "onSecondMm": [
+    60.5,
+    -186.0,
+    185.0
+   ]
+  },
+  {
+   "pair": [
+    "Pickup lip crossbar",
+    "Replaceable pickup lip"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -195.9439638382,
+    -217.0,
+    1016.663710214
+   ],
+   "onSecondMm": [
+    -195.9439638382,
+    -217.0,
+    1016.663710214
+   ]
+  },
+  {
+   "pair": [
+    "Pivot A-frame \u00b7 left",
+    "Slide base \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    193.0,
+    260.0,
+    442.0
+   ],
+   "onSecondMm": [
+    193.0,
+    260.0,
+    442.0
+   ]
+  },
+  {
+   "pair": [
+    "Pivot A-frame \u00b7 right",
+    "Slide base \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -4.0,
+    -260.0,
+    442.0
+   ],
+   "onSecondMm": [
+    -4.0,
+    -260.0,
+    442.0
+   ]
+  },
+  {
+   "pair": [
+    "Pivot bearing \u00b7 left",
+    "Pivot torque shaft"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    185.0,
+    261.0,
+    510.0
+   ],
+   "onSecondMm": [
+    185.0,
+    261.0,
+    510.0
+   ]
+  },
+  {
+   "pair": [
+    "Pivot bearing \u00b7 left",
+    "Service pin guide"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    185.11897110337,
+    261.0,
+    484.63963672306
+   ],
+   "onSecondMm": [
+    185.11897110337,
+    261.0,
+    484.63963672306
+   ]
+  },
+  {
+   "pair": [
+    "Pivot bearing \u00b7 left",
+    "Translating bearing block \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    185.0,
+    261.0,
+    518.0
+   ],
+   "onSecondMm": [
+    185.0,
+    261.0,
+    518.0
+   ]
+  },
+  {
+   "pair": [
+    "Pivot bearing \u00b7 right",
+    "Pivot reducer"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    185.0,
+    -261.0,
+    510.0
+   ],
+   "onSecondMm": [
+    185.0,
+    -261.0,
+    510.0
+   ]
+  },
+  {
+   "pair": [
+    "Pivot bearing \u00b7 right",
+    "Pivot torque shaft"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    185.0,
+    -247.0,
+    510.0
+   ],
+   "onSecondMm": [
+    185.0,
+    -247.0,
+    510.0
+   ]
+  },
+  {
+   "pair": [
+    "Pivot bearing \u00b7 right",
+    "Translating bearing block \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    185.0,
+    -247.0,
+    518.0
+   ],
+   "onSecondMm": [
+    185.0,
+    -247.0,
+    518.0
+   ]
+  },
+  {
+   "pair": [
+    "Pivot cable drum \u00b7 left",
+    "Pivot torque shaft"
+   ],
+   "gapMm": 0.04999999999633475,
+   "onFirstMm": [
+    176.22331689374457,
+    151.0,
+    503.15576753210144
+   ],
+   "onSecondMm": [
+    176.25199571556,
+    151.0,
+    503.11480992989
+   ]
+  },
+  {
+   "pair": [
+    "Pivot cable drum \u00b7 right",
+    "Pivot torque shaft"
+   ],
+   "gapMm": 0.04999999999633475,
+   "onFirstMm": [
+    176.22331689374457,
+    -153.0,
+    503.15576753210144
+   ],
+   "onSecondMm": [
+    176.25199571556,
+    -153.0,
+    503.11480992989
+   ]
+  },
+  {
+   "pair": [
+    "Pivot drive socket",
+    "Sliding pivot clutch"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    168.2959026334,
+    -232.0,
+    498.45947452063
+   ],
+   "onSecondMm": [
+    168.2959026334,
+    -232.0,
+    498.45947452063
+   ]
+  },
+  {
+   "pair": [
+    "Pivot motor",
+    "Pivot reducer"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    140.0,
+    -281.0,
+    529.0
+   ],
+   "onSecondMm": [
+    140.0,
+    -281.0,
+    529.0
+   ]
+  },
+  {
+   "pair": [
+    "Pivot reducer",
+    "Pivot torque shaft"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    185.0,
+    -261.0,
+    510.0
+   ],
+   "onSecondMm": [
+    185.0,
+    -261.0,
+    510.0
+   ]
+  },
+  {
+   "pair": [
+    "Pivot reducer",
+    "Translating bearing block \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    165.0,
+    -261.0,
+    523.0
+   ],
+   "onSecondMm": [
+    165.0,
+    -261.0,
+    523.0
+   ]
+  },
+  {
+   "pair": [
+    "Pivot torque shaft",
+    "Service index disk"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    177.62763160139,
+    237.0,
+    495.83781207284
+   ],
+   "onSecondMm": [
+    177.62763160139,
+    237.0,
+    495.83781207284
+   ]
+  },
+  {
+   "pair": [
+    "Pivot torque shaft",
+    "Sliding pivot clutch"
+   ],
+   "gapMm": 0.04999999999633475,
+   "onFirstMm": [
+    186.00472239369,
+    -232.0,
+    509.94374266801
+   ],
+   "onSecondMm": [
+    185.97604357187222,
+    -232.0,
+    509.9847002702247
+   ]
+  },
+  {
+   "pair": [
+    "Rear left axle support 255",
+    "Rear left module deck"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -265.0,
+    255.0,
+    104.0
+   ],
+   "onSecondMm": [
+    -265.0,
+    255.0,
+    104.0
+   ]
+  },
+  {
+   "pair": [
+    "Rear left axle support 255",
+    "Rear left wheel axle"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -249.0,
+    255.0,
+    57.8
+   ],
+   "onSecondMm": [
+    -249.0,
+    255.0,
+    57.8
+   ]
+  },
+  {
+   "pair": [
+    "Rear left axle support 295",
+    "Rear left module deck"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -265.0,
+    295.0,
+    104.0
+   ],
+   "onSecondMm": [
+    -265.0,
+    295.0,
+    104.0
+   ]
+  },
+  {
+   "pair": [
+    "Rear left axle support 295",
+    "Rear left wheel axle"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -249.0,
+    303.0,
+    57.8
+   ],
+   "onSecondMm": [
+    -249.0,
+    303.0,
+    57.8
+   ]
+  },
+  {
+   "pair": [
+    "Rear left module deck",
+    "Swerve drive motor \u00b7 Rear left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -253.0,
+    201.0,
+    116.0
+   ],
+   "onSecondMm": [
+    -253.0,
+    201.0,
+    116.0
+   ]
+  },
+  {
+   "pair": [
+    "Rear left module deck",
+    "Swerve steer motor \u00b7 Rear left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -205.0,
+    201.0,
+    116.0
+   ],
+   "onSecondMm": [
+    -205.0,
+    201.0,
+    116.0
+   ]
+  },
+  {
+   "pair": [
+    "Rear left tire",
+    "Rear left wheel axle"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -249.0,
+    293.0,
+    57.8
+   ],
+   "onSecondMm": [
+    -249.0,
+    293.0,
+    57.8
+   ]
+  },
+  {
+   "pair": [
+    "Rear piece stop",
+    "Rear stop bracket \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    153.37597094068,
+    35.0,
+    513.03830494942
+   ],
+   "onSecondMm": [
+    153.37597094068,
+    35.0,
+    513.03830494942
+   ]
+  },
+  {
+   "pair": [
+    "Rear piece stop",
+    "Rear stop bracket \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    153.37597094068,
+    -47.0,
+    513.03830494942
+   ],
+   "onSecondMm": [
+    153.37597094068,
+    -47.0,
+    513.03830494942
+   ]
+  },
+  {
+   "pair": [
+    "Rear piece stop",
+    "Rear stop pad"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    149.8197970353,
+    -48.0,
+    518.11704762401
+   ],
+   "onSecondMm": [
+    149.8197970353,
+    -48.0,
+    518.11704762401
+   ]
+  },
+  {
+   "pair": [
+    "Rear piece stop",
+    "Rear stop screw \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    138.38480850879,
+    41.0,
+    507.42447836313
+   ],
+   "onSecondMm": [
+    138.38480850879,
+    41.0,
+    507.42447836313
+   ]
+  },
+  {
+   "pair": [
+    "Rear piece stop",
+    "Rear stop screw \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    138.38480850879,
+    -41.0,
+    507.42447836313
+   ],
+   "onSecondMm": [
+    138.38480850879,
+    -41.0,
+    507.42447836313
+   ]
+  },
+  {
+   "pair": [
+    "Rear right axle support 255",
+    "Rear right module deck"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -265.0,
+    -263.0,
+    104.0
+   ],
+   "onSecondMm": [
+    -265.0,
+    -263.0,
+    104.0
+   ]
+  },
+  {
+   "pair": [
+    "Rear right axle support 255",
+    "Rear right wheel axle"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -249.0,
+    -255.0,
+    57.8
+   ],
+   "onSecondMm": [
+    -249.0,
+    -255.0,
+    57.8
+   ]
+  },
+  {
+   "pair": [
+    "Rear right axle support 295",
+    "Rear right module deck"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -265.0,
+    -303.0,
+    104.0
+   ],
+   "onSecondMm": [
+    -265.0,
+    -303.0,
+    104.0
+   ]
+  },
+  {
+   "pair": [
+    "Rear right axle support 295",
+    "Rear right wheel axle"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -249.0,
+    -303.0,
+    57.8
+   ],
+   "onSecondMm": [
+    -249.0,
+    -303.0,
+    57.8
+   ]
+  },
+  {
+   "pair": [
+    "Rear right module deck",
+    "Swerve drive motor \u00b7 Rear right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -253.0,
+    -201.0,
+    116.0
+   ],
+   "onSecondMm": [
+    -253.0,
+    -201.0,
+    116.0
+   ]
+  },
+  {
+   "pair": [
+    "Rear right module deck",
+    "Swerve steer motor \u00b7 Rear right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -205.0,
+    -201.0,
+    116.0
+   ],
+   "onSecondMm": [
+    -205.0,
+    -201.0,
+    116.0
+   ]
+  },
+  {
+   "pair": [
+    "Rear right tire",
+    "Rear right wheel axle"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -249.0,
+    -265.0,
+    57.8
+   ],
+   "onSecondMm": [
+    -249.0,
+    -265.0,
+    57.8
+   ]
+  },
+  {
+   "pair": [
+    "Rear stop bracket \u00b7 left",
+    "Rear stop pad"
+   ],
+   "gapMm": 1.7053025658242404e-12,
+   "onFirstMm": [
+    149.81979703529865,
+    35.0,
+    518.1170476240089
+   ],
+   "onSecondMm": [
+    149.8197970353,
+    35.0,
+    518.11704762401
+   ]
+  },
+  {
+   "pair": [
+    "Rear stop bracket \u00b7 left",
+    "Rear stop screw \u00b7 left"
+   ],
+   "gapMm": 3.406457777396313e-12,
+   "onFirstMm": [
+    142.80958959074,
+    41.0,
+    500.75654672155
+   ],
+   "onSecondMm": [
+    142.809589590738,
+    41.0,
+    500.75654672155287
+   ]
+  },
+  {
+   "pair": [
+    "Rear stop bracket \u00b7 left",
+    "Runner crossbar 125"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    97.991854712521,
+    41.0,
+    600.85225412394
+   ],
+   "onSecondMm": [
+    97.991854712521,
+    41.0,
+    600.85225412394
+   ]
+  },
+  {
+   "pair": [
+    "Rear stop bracket \u00b7 left",
+    "Stop bracket locknut \u00b7 left"
+   ],
+   "gapMm": 2.319462255752929e-12,
+   "onFirstMm": [
+    102.08761493396,
+    41.0,
+    603.7201363057
+   ],
+   "onSecondMm": [
+    102.08761493395812,
+    41.0,
+    603.7201363056986
+   ]
+  },
+  {
+   "pair": [
+    "Rear stop bracket \u00b7 left",
+    "Stop bracket through bolt \u00b7 left"
+   ],
+   "gapMm": 0.1999999999955802,
+   "onFirstMm": [
+    102.08761493396,
+    41.0,
+    603.7201363057
+   ],
+   "onSecondMm": [
+    102.20233022123435,
+    41.0,
+    603.5563058968362
+   ]
+  },
+  {
+   "pair": [
+    "Rear stop bracket \u00b7 right",
+    "Rear stop pad"
+   ],
+   "gapMm": 1.7053025658242404e-12,
+   "onFirstMm": [
+    149.81979703529865,
+    -47.0,
+    518.1170476240089
+   ],
+   "onSecondMm": [
+    149.8197970353,
+    -47.0,
+    518.11704762401
+   ]
+  },
+  {
+   "pair": [
+    "Rear stop bracket \u00b7 right",
+    "Rear stop screw \u00b7 right"
+   ],
+   "gapMm": 3.406457777396313e-12,
+   "onFirstMm": [
+    142.80958959074,
+    -41.0,
+    500.75654672155
+   ],
+   "onSecondMm": [
+    142.809589590738,
+    -41.0,
+    500.75654672155287
+   ]
+  },
+  {
+   "pair": [
+    "Rear stop bracket \u00b7 right",
+    "Runner crossbar 125"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    97.991854712521,
+    -41.0,
+    600.85225412394
+   ],
+   "onSecondMm": [
+    97.991854712521,
+    -41.0,
+    600.85225412394
+   ]
+  },
+  {
+   "pair": [
+    "Rear stop bracket \u00b7 right",
+    "Stop bracket locknut \u00b7 right"
+   ],
+   "gapMm": 2.319462255752929e-12,
+   "onFirstMm": [
+    102.08761493396,
+    -41.0,
+    603.7201363057
+   ],
+   "onSecondMm": [
+    102.08761493395812,
+    -41.0,
+    603.7201363056986
+   ]
+  },
+  {
+   "pair": [
+    "Rear stop bracket \u00b7 right",
+    "Stop bracket through bolt \u00b7 right"
+   ],
+   "gapMm": 0.1999999999955802,
+   "onFirstMm": [
+    102.08761493396,
+    -41.0,
+    603.7201363057
+   ],
+   "onSecondMm": [
+    102.20233022123435,
+    -41.0,
+    603.5563058968362
+   ]
+  },
+  {
+   "pair": [
+    "Runner crossbar 125",
+    "Stop bracket through bolt \u00b7 left"
+   ],
+   "gapMm": 3.208633511439223e-12,
+   "onFirstMm": [
+    93.896094491076,
+    41.0,
+    597.98437194219
+   ],
+   "onSecondMm": [
+    93.89609449107212,
+    41.0,
+    597.9843719421873
+   ]
+  },
+  {
+   "pair": [
+    "Runner crossbar 125",
+    "Stop bracket through bolt \u00b7 right"
+   ],
+   "gapMm": 3.208633511439223e-12,
+   "onFirstMm": [
+    93.896094491076,
+    -41.0,
+    597.98437194219
+   ],
+   "onSecondMm": [
+    93.89609449107212,
+    -41.0,
+    597.9843719421873
+   ]
+  },
+  {
+   "pair": [
+    "Service pin guide",
+    "Translating bearing block \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    185.11897110337,
+    261.0,
+    481.98963672306
+   ],
+   "onSecondMm": [
+    185.11897110337,
+    261.0,
+    481.98963672306
+   ]
+  },
+  {
+   "pair": [
+    "Slide base \u00b7 left",
+    "Slide bearing mount -49"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -47.0,
+    260.0,
+    442.0
+   ],
+   "onSecondMm": [
+    -47.0,
+    260.0,
+    442.0
+   ]
+  },
+  {
+   "pair": [
+    "Slide base \u00b7 left",
+    "Slide bearing mount 220"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    226.0,
+    260.0,
+    442.0
+   ],
+   "onSecondMm": [
+    226.0,
+    260.0,
+    442.0
+   ]
+  },
+  {
+   "pair": [
+    "Slide base \u00b7 left",
+    "Slide guide \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -45.0,
+    250.0,
+    449.0
+   ],
+   "onSecondMm": [
+    -45.0,
+    250.0,
+    449.0
+   ]
+  },
+  {
+   "pair": [
+    "Slide base \u00b7 right",
+    "Slide guide \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -45.0,
+    -258.0,
+    449.0
+   ],
+   "onSecondMm": [
+    -45.0,
+    -258.0,
+    449.0
+   ]
+  },
+  {
+   "pair": [
+    "Slide bearing mount -49",
+    "Slide drive motor"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -49.0,
+    275.0,
+    442.0
+   ],
+   "onSecondMm": [
+    -49.0,
+    275.0,
+    442.0
+   ]
+  },
+  {
+   "pair": [
+    "Slide bearing mount -49",
+    "Slide screw"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -49.0,
+    275.0,
+    433.0
+   ],
+   "onSecondMm": [
+    -49.0,
+    275.0,
+    433.0
+   ]
+  },
+  {
+   "pair": [
+    "Slide bearing mount 220",
+    "Slide screw"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    230.0,
+    275.0,
+    433.0
+   ],
+   "onSecondMm": [
+    230.0,
+    275.0,
+    433.0
+   ]
+  },
+  {
+   "pair": [
+    "Slide drive motor",
+    "Slide screw"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    -49.0,
+    275.0,
+    433.0
+   ],
+   "onSecondMm": [
+    -49.0,
+    275.0,
+    433.0
+   ]
+  },
+  {
+   "pair": [
+    "Slide guide \u00b7 left",
+    "Translating bearing block \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    165.0,
+    250.0,
+    455.0
+   ],
+   "onSecondMm": [
+    165.0,
+    250.0,
+    455.0
+   ]
+  },
+  {
+   "pair": [
+    "Slide guide \u00b7 right",
+    "Translating bearing block \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    165.0,
+    -258.0,
+    455.0
+   ],
+   "onSecondMm": [
+    165.0,
+    -258.0,
+    455.0
+   ]
+  },
+  {
+   "pair": [
+    "Slide screw",
+    "Travel nut and clevis"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    178.0,
+    275.0,
+    433.0
+   ],
+   "onSecondMm": [
+    178.0,
+    275.0,
+    433.0
+   ]
+  },
+  {
+   "pair": [
+    "Slide stop actuator \u00b7 left",
+    "Slide stop guide \u00b7 left"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    76.061278377002,
+    226.0,
+    363.68155647857
+   ],
+   "onSecondMm": [
+    76.061278377002,
+    226.0,
+    363.68155647857
+   ]
+  },
+  {
+   "pair": [
+    "Slide stop actuator \u00b7 right",
+    "Slide stop guide \u00b7 right"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    76.061278377002,
+    -226.0,
+    363.68155647857
+   ],
+   "onSecondMm": [
+    76.061278377002,
+    -226.0,
+    363.68155647857
+   ]
+  },
+  {
+   "pair": [
+    "Slide stop guide \u00b7 left",
+    "Slide stop pin \u00b7 left"
+   ],
+   "gapMm": 0.14999999999725142,
+   "onFirstMm": [
+    76.757557614647,
+    226.0,
+    364.16909644947
+   ],
+   "onSecondMm": [
+    76.880430421291,
+    226.0,
+    364.25513291492
+   ]
+  },
+  {
+   "pair": [
+    "Slide stop guide \u00b7 right",
+    "Slide stop pin \u00b7 right"
+   ],
+   "gapMm": 0.14999999999725142,
+   "onFirstMm": [
+    76.757557614647,
+    -226.0,
+    364.16909644947
+   ],
+   "onSecondMm": [
+    76.880430421291,
+    -226.0,
+    364.25513291492
+   ]
+  },
+  {
+   "pair": [
+    "Stop bracket locknut \u00b7 left",
+    "Stop bracket through bolt \u00b7 left"
+   ],
+   "gapMm": 1.3959226453733927e-12,
+   "onFirstMm": [
+    102.20233022123,
+    41.0,
+    603.55630589684
+   ],
+   "onSecondMm": [
+    102.20233022123318,
+    41.0,
+    603.5563058968354
+   ]
+  },
+  {
+   "pair": [
+    "Stop bracket locknut \u00b7 right",
+    "Stop bracket through bolt \u00b7 right"
+   ],
+   "gapMm": 1.3959226453733927e-12,
+   "onFirstMm": [
+    102.20233022123,
+    -41.0,
+    603.55630589684
+   ],
+   "onSecondMm": [
+    102.20233022123318,
+    -41.0,
+    603.5563058968354
+   ]
+  },
+  {
+   "pair": [
+    "Translating bearing block \u00b7 left",
+    "Travel nut and clevis"
+   ],
+   "gapMm": 0.0,
+   "onFirstMm": [
+    178.0,
+    261.0,
+    468.0
+   ],
+   "onSecondMm": [
+    178.0,
+    261.0,
+    468.0
+   ]
+  }
+ ]
+}

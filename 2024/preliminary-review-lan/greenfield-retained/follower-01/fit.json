@@ -1,0 +1,38 @@
+{
+  "source": "005b1d394aeccb5a25a81b2cd13af0682e9cfac16784a011564af4b73a17162e",
+  "wheelCenterPickup": [
+    604.0,
+    234.3,
+    10.7
+  ],
+  "radius": 13.0,
+  "installedAddedKg": 0.022335886164116765,
+  "checkedParked": {
+    "left": {
+      "joinOverlapMm3": 339.87617732823946,
+      "loadSideMm": 230.3,
+      "outerHeadClearanceMm": 3.3519325673993765
+    },
+    "right": {
+      "joinOverlapMm3": 339.87617732823946,
+      "loadSideMm": 230.3,
+      "outerHeadClearanceMm": 463.31212530208654
+    }
+  },
+  "overlaps": [],
+  "modified": [
+    "Cassette side beam extension \u00b7 left",
+    "Cassette side beam extension \u00b7 right"
+  ],
+  "added": {
+    "Carpet follower \u00b7 left": "Acetal",
+    "Follower shoulder axle \u00b7 left": "Steel",
+    "Follower thrust washer \u00b7 left": "Steel",
+    "Follower locknut \u00b7 left": "Steel",
+    "Carpet follower \u00b7 right": "Acetal",
+    "Follower shoulder axle \u00b7 right": "Steel",
+    "Follower thrust washer \u00b7 right": "Steel",
+    "Follower locknut \u00b7 right": "Steel"
+  },
+  "step": "fd49a9cdde14aa4d5acd1aac602580e456e19776512099517a9e51cba992510f"
+}

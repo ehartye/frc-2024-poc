@@ -1,0 +1,122 @@
+{
+  "case": "R01",
+  "n": 96,
+  "legs": [
+    {
+      "piece": "middle",
+      "clock": 14.349150074469252,
+      "oldBoth": 3.9757499999991563,
+      "both": 4.1322499999993045,
+      "beams": [
+        4.1322499999993045,
+        4.100749999999266
+      ],
+      "opening": {
+        "firstPossibleS": 1.0074999999999201,
+        "fullyThroughByS": 1.0927499999999486,
+        "minimumMarginM": 0.10541463346522092
+      },
+      "passShot": true,
+      "minBusV": 8.349210554202735,
+      "baseline": "e6ce7f4377f48c72879bd8f15fd6fbd14d038b24025bda5da7ceb8cf2a303cf6",
+      "fieldRun": "f740ec6cb75bb0fcb8c582933f658c4cd22475d29ce5fd34dd3bdd8ad5499392"
+    },
+    {
+      "piece": "outer",
+      "clock": 29.98983184802503,
+      "oldBoth": 3.9142499999991904,
+      "both": 3.360999999999497,
+      "beams": [
+        3.360999999999497,
+        3.3299999999995142
+      ],
+      "opening": {
+        "firstPossibleS": 1.0089999999999206,
+        "fullyThroughByS": 1.0922499999999484,
+        "minimumMarginM": 0.11326485816006743
+      },
+      "passShot": true,
+      "minBusV": 8.349216623706745,
+      "baseline": "b6e67aa59e04f93942b72727a7b7816279de08441bf48c608a6b19d7995816a2",
+      "fieldRun": "9b56a75c0289aa519847162898cc6771b035bfae0dff30c9b1abf6a9500d6661"
+    },
+    {
+      "piece": "inner",
+      "clock": 46.274683502554694,
+      "oldBoth": 4.06274999999922,
+      "both": 4.008749999999154,
+      "beams": [
+        4.008749999999154,
+        3.9739999999991573
+      ],
+      "opening": {
+        "firstPossibleS": 1.0074999999999201,
+        "fullyThroughByS": 1.0932499999999488,
+        "minimumMarginM": 0.10577641314232444
+      },
+      "passShot": true,
+      "minBusV": 8.349423650599563,
+      "baseline": "f6bf394c7204ba6ca0f10e4d63788532f5ed78b204d1f7a5255aba2854b7532f",
+      "fieldRun": "c14e19d0435f49dd682ceb454d98b5809be99491116f76010bf8780f65c51be1"
+    },
+    {
+      "piece": "center-high",
+      "clock": 65.03507972050114,
+      "oldBoth": 4.534249999999796,
+      "both": 4.089249999999252,
+      "beams": [
+        4.089249999999252,
+        4.037499999999189
+      ],
+      "opening": {
+        "firstPossibleS": 1.0089999999999206,
+        "fullyThroughByS": 1.0874999999999468,
+        "minimumMarginM": 0.1122390430637133
+      },
+      "passShot": true,
+      "minBusV": 8.349209513228878,
+      "baseline": "f13e91229e5daee254045959103bfc9a61cd68ee98b601543a476c412042c5e0",
+      "fieldRun": "6ec455550815d2af57599f8a72599e60d5f0f681bf734c06806545e499a36b4e"
+    },
+    {
+      "piece": "center-mid",
+      "clock": 89.04286793137213,
+      "oldBoth": 3.938499999999177,
+      "both": 4.238499999999434,
+      "beams": [
+        4.238499999999434,
+        4.205749999999394
+      ],
+      "opening": {
+        "firstPossibleS": 1.0074999999999201,
+        "fullyThroughByS": 1.0917499999999483,
+        "minimumMarginM": 0.09888394213665636
+      },
+      "passShot": true,
+      "minBusV": 8.34920947216255,
+      "baseline": "88dfd33c7e47bf77bc48c5aa2f7a1b4d137bc10841f9f96302002fd40f8b7bb2",
+      "fieldRun": "f619fb8be7d13c9d207e6c06e8644564134710bae679f0e900af57fbf373ff48"
+    },
+    {
+      "piece": "center-low",
+      "clock": 115.80116914921078,
+      "oldBoth": null,
+      "both": 4.747250000000056,
+      "beams": [
+        4.747250000000056,
+        4.700499999999999
+      ],
+      "opening": {
+        "firstPossibleS": 1.0079999999999203,
+        "fullyThroughByS": 1.0904999999999478,
+        "minimumMarginM": 0.10630570375760204
+      },
+      "passShot": true,
+      "minBusV": 8.349228652482632,
+      "baseline": "a9e6fa218af3231386465af3fd236b0a65a3bed99b0012ddf766bc5c7be65c59",
+      "fieldRun": "006938dc6300092f9bbf4435f5f9ae440375e2062336a96915d3ded55b474535"
+    }
+  ],
+  "score": 6,
+  "passMission": true
+}

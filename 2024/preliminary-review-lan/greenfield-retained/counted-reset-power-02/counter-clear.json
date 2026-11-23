@@ -1,0 +1,134 @@
+[
+  {
+    "n": 48,
+    "id": "middle",
+    "simultaneous": 4.009000000000498,
+    "sustainedBothBeamsClearFromSampleS": null,
+    "throughS": 6.99999999999884,
+    "obscuredAtLastSample": [
+      true,
+      true
+    ]
+  },
+  {
+    "n": 48,
+    "id": "outer",
+    "simultaneous": 4.629500000000154,
+    "sustainedBothBeamsClearFromSampleS": 5.315999999999773,
+    "throughS": 6.99999999999884,
+    "obscuredAtLastSample": [
+      false,
+      false
+    ]
+  },
+  {
+    "n": 48,
+    "id": "inner",
+    "simultaneous": 3.8580000000004557,
+    "sustainedBothBeamsClearFromSampleS": 4.200000000000392,
+    "throughS": 6.99999999999884,
+    "obscuredAtLastSample": [
+      false,
+      false
+    ]
+  },
+  {
+    "n": 48,
+    "id": "center-high",
+    "simultaneous": 3.415000000000308,
+    "sustainedBothBeamsClearFromSampleS": 4.116000000000438,
+    "throughS": 6.99999999999884,
+    "obscuredAtLastSample": [
+      false,
+      false
+    ]
+  },
+  {
+    "n": 48,
+    "id": "center-mid",
+    "simultaneous": 4.550500000000198,
+    "sustainedBothBeamsClearFromSampleS": 4.740000000000093,
+    "throughS": 6.99999999999884,
+    "obscuredAtLastSample": [
+      false,
+      false
+    ]
+  },
+  {
+    "n": 48,
+    "id": "center-low",
+    "simultaneous": 5.2684999999998,
+    "sustainedBothBeamsClearFromSampleS": 5.59199999999962,
+    "throughS": 6.99999999999884,
+    "obscuredAtLastSample": [
+      false,
+      false
+    ]
+  },
+  {
+    "n": 96,
+    "id": "middle",
+    "simultaneous": 3.979999999999154,
+    "sustainedBothBeamsClearFromSampleS": 4.187999999999373,
+    "throughS": 7.000000000002809,
+    "obscuredAtLastSample": [
+      false,
+      false
+    ]
+  },
+  {
+    "n": 96,
+    "id": "outer",
+    "simultaneous": 4.678249999999972,
+    "sustainedBothBeamsClearFromSampleS": null,
+    "throughS": 7.000000000002809,
+    "obscuredAtLastSample": [
+      true,
+      true
+    ]
+  },
+  {
+    "n": 96,
+    "id": "inner",
+    "simultaneous": 4.203499999999392,
+    "sustainedBothBeamsClearFromSampleS": 4.439999999999681,
+    "throughS": 7.000000000002809,
+    "obscuredAtLastSample": [
+      false,
+      false
+    ]
+  },
+  {
+    "n": 96,
+    "id": "center-high",
+    "simultaneous": 4.160499999999339,
+    "sustainedBothBeamsClearFromSampleS": null,
+    "throughS": 7.000000000002809,
+    "obscuredAtLastSample": [
+      true,
+      true
+    ]
+  },
+  {
+    "n": 96,
+    "id": "center-mid",
+    "simultaneous": 4.252249999999451,
+    "sustainedBothBeamsClearFromSampleS": 4.46399999999971,
+    "throughS": 7.000000000002809,
+    "obscuredAtLastSample": [
+      false,
+      false
+    ]
+  },
+  {
+    "n": 96,
+    "id": "center-low",
+    "simultaneous": 3.8509999999992255,
+    "sustainedBothBeamsClearFromSampleS": 5.460000000000927,
+    "throughS": 7.000000000002809,
+    "obscuredAtLastSample": [
+      false,
+      false
+    ]
+  }
+]

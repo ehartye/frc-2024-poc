@@ -1,0 +1,20 @@
+{
+  "model": {
+    "file": "..\\staged-ready-8192\\model.xml",
+    "sha256": "f423b7605400440bb21268dc7ea08175ede0df37cdcc26f64f2a282e56a559ff"
+  },
+  "trace": {
+    "file": "staged-ready-8192-sample.json",
+    "sha256": "a704521d2aa457385356d046d795b4d39e0d0c635b13973685805bdaa7aaf372"
+  },
+  "sampleIndex": 0,
+  "target": {
+    "units": "m",
+    "lowerEdge": 1.9845019999999998,
+    "uncertainty": 0.0127,
+    "locator": "GE-24300 Rev A, sheet 2 of 6, floor datum assumed",
+    "frame": "native-world-z-up",
+    "datum": "model-floor",
+    "registration": "assumed"
+  }
+}

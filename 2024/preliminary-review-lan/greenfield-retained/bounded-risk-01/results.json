@@ -1,0 +1,961 @@
+{
+  "assembly": "83517673b62c1917534e6a09be04eace6189b97dc0986cb3ffc8fd6832e1bf63",
+  "profile": "A",
+  "sources": {
+    "bounded-risk-01\\PLAN.md": "548297df4b4bd2135ee556145ea410e52199b675ea928ed86eb12184d1425490",
+    "bounded-risk-01\\pickup.py": "bb99a16f0491a4c408e689b248a23d8eafa9a1dd6e43bfe26697b87c5cfd1a13",
+    "bounded-risk-01\\brake.py": "af4d06935dcce3a0f5e03727e0b7b89482800b7e1c4977b780ed2b13307433da",
+    "bounded-risk-01\\power.py": "b485d89a81e7f32f02e0e61a1c35b514e6e3ac407f714283b726c3a92fd1ad0f",
+    "bounded-risk-01\\report.py": "bef2ba9621174f57b8bab2bb0397797eccc801797e2192f23f0c80811b79eed0",
+    "pickup_physics.py": "8c1a413182853c964bb8d6fff77f76de0ef2fc9a70983209600ddf658c0fbe9b",
+    "pickup-lip\\pickup_trial.py": "2bf54f39fb865d80f053c3ad52291c868444732cb2b9a7e8c3c9f52009ca37ff",
+    "pickup-lip\\shot_replay.py": "cdebdd4b9c7a9a01a796e7e16324d5b37ebaf80bbf7da0ddf52da33ebe126cd6",
+    "pickup-lip\\gap.py": "5a8ab2fe9b8c57f754e47ea105742749b6ff78566ec6debbf8eea7efdc9cf092",
+    "pickup-lip\\layout.json": "150298fe6ea6575019475d18aa8fa9309c8d64adadf5ab16115f10b95ea1c030",
+    "mission-physics\\climb.py": "f229169f7c8b7d6b80a6c53515566b5718c8e0078b644796843bc0e02427f644",
+    "mission-physics\\shot.py": "e01fd46cb134358d33197c655bf8fb6a041df6cd3db808b61a87f046cd6de16e",
+    "swap-blade\\blade-selection.json": "9007abaebef73e7b807d58b3b45f7c6419760dca04a8dbd5354f6b5b0a27de63",
+    "swap-blade\\review-data.json": "cd4e78400040c3579f0e20dd12221aa1f7610d1c233e339ced17385b84ec9f66"
+  },
+  "cases": {
+    "p-original": {
+      "group": "pickup",
+      "file": "p-original.json",
+      "sha256": "1e7589c226ac45525c9763a31db16afb1f5fae06b0d5d8bf810d10fea6f7d4ed",
+      "result": {
+        "label": "p-original",
+        "pitchDegrees": -50.5,
+        "addedHeightMm": -2.0,
+        "offsetM": 0.0,
+        "noseMu": 0.45,
+        "phaseCurrentLimitA": 8.0,
+        "capSegments": 48,
+        "minimumBladeHeightMm": -2.9008875710055317,
+        "passScreen": false,
+        "skipReason": "Fails 1 mm rigid-floor geometric minimum"
+      }
+    },
+    "p-baseline": {
+      "group": "pickup",
+      "file": "p-baseline.json",
+      "sha256": "425eaf727953320d99d250f001df370e29e95d75bf9dd5cb406f5721b11cfd4a",
+      "result": {
+        "minimumContactSpeedMps": 0.5739489442138882,
+        "peakPhaseA": 8.0,
+        "lip": true,
+        "lipFriction": 0.15,
+        "approachM": 0.44,
+        "pickAngle": -50.0,
+        "firstContactS": {
+          "floor": 0.0,
+          "lip": 0.3275,
+          "center belt": 0.363,
+          "flapLeaf": 1.004,
+          "axle": 1.3275
+        },
+        "maxRiseMm": 346.1609515867819,
+        "liftDuringLipMm": 2.718318432726456,
+        "sideBeltTakeoverS": 1.278,
+        "lastCarpetContactS": 1.281,
+        "maxPoweredSideForceN": 18.0,
+        "n": 48,
+        "dt": 0.0005,
+        "enabled": true,
+        "upper": false,
+        "mu": 0.75,
+        "offset": 0.0,
+        "minimumCenterS": 0.21276435857686793,
+        "seatResidenceS": 1.0269999999999424,
+        "seated": true,
+        "label": "p-baseline",
+        "pitchDegrees": -50.0,
+        "addedHeightMm": 0.0,
+        "offsetM": 0.0,
+        "noseMu": 0.75,
+        "phaseCurrentLimitA": 8.0,
+        "capSegments": 48,
+        "minimumBladeHeightMm": 2.9999999999999805,
+        "flapClearanceMm": [
+          1.529555824196379,
+          15.288841925199069,
+          2.5353891992918847
+        ],
+        "passScreen": true
+      }
+    },
+    "p-default": {
+      "group": "pickup",
+      "file": "p-default.json",
+      "sha256": "235718532d20a7d40705aa0e5d456a0ce3ab5f152465a0fa14925efe3635e949",
+      "result": {
+        "minimumContactSpeedMps": 0.643112868725168,
+        "peakPhaseA": 8.0,
+        "lip": true,
+        "lipFriction": 0.15,
+        "approachM": 0.44,
+        "pickAngle": -49.25,
+        "firstContactS": {
+          "floor": 0.0,
+          "lip": 0.2755,
+          "center belt": 0.3615,
+          "flapLeaf": 1.0085,
+          "axle": 1.302
+        },
+        "maxRiseMm": 350.1431188284766,
+        "liftDuringLipMm": 5.775332281433485,
+        "sideBeltTakeoverS": 1.2550000000000001,
+        "lastCarpetContactS": 1.2615,
+        "maxPoweredSideForceN": 18.0,
+        "n": 48,
+        "dt": 0.0005,
+        "enabled": true,
+        "upper": false,
+        "mu": 0.75,
+        "offset": 0.0,
+        "minimumCenterS": 0.21281152053487873,
+        "seatResidenceS": 1.076499999999937,
+        "seated": true,
+        "label": "p-default",
+        "pitchDegrees": -49.25,
+        "addedHeightMm": 0.0,
+        "offsetM": 0.0,
+        "noseMu": 0.75,
+        "phaseCurrentLimitA": 8.0,
+        "capSegments": 48,
+        "minimumBladeHeightMm": 8.922346410174791,
+        "flapClearanceMm": [
+          1.778266877125759,
+          15.446280110177451,
+          2.384316692649289
+        ],
+        "passScreen": true
+      }
+    },
+    "p-low": {
+      "group": "pickup",
+      "file": "p-low.json",
+      "sha256": "2fa96e5b617609cae54b4e4015314e563fb42978185024b5dec88cfa78827208",
+      "result": {
+        "minimumContactSpeedMps": 0.6636936490108617,
+        "peakPhaseA": 8.0,
+        "lip": true,
+        "lipFriction": 0.15,
+        "approachM": 0.44,
+        "pickAngle": -49.75,
+        "firstContactS": {
+          "floor": 0.0,
+          "lip": 0.319,
+          "center belt": 0.364,
+          "flapLeaf": 1.276,
+          "axle": 1.5395
+        },
+        "maxRiseMm": 344.9833554559163,
+        "liftDuringLipMm": 2.948699508451273,
+        "sideBeltTakeoverS": 1.0010000000000001,
+        "lastCarpetContactS": 1.5935000000000001,
+        "maxPoweredSideForceN": 18.0,
+        "n": 48,
+        "dt": 0.0005,
+        "enabled": true,
+        "upper": false,
+        "mu": 0.75,
+        "offset": -0.05,
+        "minimumCenterS": 0.212522965015363,
+        "seatResidenceS": 0.757499999999972,
+        "seated": true,
+        "label": "p-low",
+        "pitchDegrees": -49.75,
+        "addedHeightMm": -2.0,
+        "offsetM": -0.05,
+        "noseMu": 0.45,
+        "phaseCurrentLimitA": 8.0,
+        "capSegments": 48,
+        "minimumBladeHeightMm": 2.964684200848712,
+        "flapClearanceMm": [
+          1.3091944619521634,
+          14.185817211280419,
+          1.749675364454692
+        ],
+        "passScreen": true
+      }
+    },
+    "p-high": {
+      "group": "pickup",
+      "file": "p-high.json",
+      "sha256": "963951d07e45abce05d1415aa3cdf99bc547a9b6a48254fe395a1160945d9af1",
+      "result": {
+        "minimumContactSpeedMps": null,
+        "peakPhaseA": 8.0,
+        "lip": true,
+        "lipFriction": 0.15,
+        "approachM": 0.44,
+        "pickAngle": -48.75,
+        "firstContactS": {
+          "floor": 0.0,
+          "lip": 0.243
+        },
+        "maxRiseMm": 1.7697029135930777,
+        "liftDuringLipMm": 1.7697029135930777,
+        "sideBeltTakeoverS": null,
+        "lastCarpetContactS": 2.82,
+        "maxPoweredSideForceN": 0.0,
+        "n": 48,
+        "dt": 0.0005,
+        "enabled": true,
+        "upper": false,
+        "mu": 0.75,
+        "offset": 0.05,
+        "minimumCenterS": 0.7771718744852085,
+        "seatResidenceS": 0,
+        "seated": false,
+        "label": "p-high",
+        "pitchDegrees": -48.75,
+        "addedHeightMm": 3.0,
+        "offsetM": 0.05,
+        "noseMu": 0.45,
+        "phaseCurrentLimitA": 8.0,
+        "capSegments": 48,
+        "minimumBladeHeightMm": 15.917482237977858,
+        "flapClearanceMm": [
+          190.83133751443634,
+          194.39002559696956,
+          195.2292535014111
+        ],
+        "passScreen": false
+      }
+    },
+    "p-fine": {
+      "group": "pickup",
+      "file": "p-fine.json",
+      "sha256": "4be09c30e259233b3076ea43b7dfcd4f40436d1633680abb24d7d3f42cedc1ef",
+      "result": {
+        "minimumContactSpeedMps": null,
+        "peakPhaseA": 8.0,
+        "lip": true,
+        "lipFriction": 0.15,
+        "approachM": 0.44,
+        "pickAngle": -48.75,
+        "firstContactS": {
+          "floor": 0.0,
+          "lip": 0.2427
+        },
+        "maxRiseMm": 0.9398471073116359,
+        "liftDuringLipMm": 0.9398471073116359,
+        "sideBeltTakeoverS": null,
+        "lastCarpetContactS": 2.82,
+        "maxPoweredSideForceN": 0.0,
+        "n": 96,
+        "dt": 0.00025,
+        "enabled": true,
+        "upper": false,
+        "mu": 0.75,
+        "offset": 0.05,
+        "minimumCenterS": 0.7783052142453104,
+        "seatResidenceS": 0,
+        "seated": false,
+        "label": "p-fine",
+        "pitchDegrees": -48.75,
+        "addedHeightMm": 3.0,
+        "offsetM": 0.05,
+        "noseMu": 0.45,
+        "phaseCurrentLimitA": 8.0,
+        "capSegments": 96,
+        "minimumBladeHeightMm": 15.917482237977858,
+        "flapClearanceMm": [
+          192.5496118788297,
+          196.16934284249277,
+          197.0099601706375
+        ],
+        "passScreen": false
+      }
+    },
+    "p-weak": {
+      "group": "pickup",
+      "file": "p-weak.json",
+      "sha256": "9f04ef8fd689c4e651bf27f36806e5969eed33dc7822e2276f0edc4718ba229f",
+      "result": {
+        "minimumContactSpeedMps": null,
+        "peakPhaseA": 2.0,
+        "lip": true,
+        "lipFriction": 0.15,
+        "approachM": 0.44,
+        "pickAngle": -48.75,
+        "firstContactS": {
+          "floor": 0.0,
+          "lip": 0.243
+        },
+        "maxRiseMm": 1.7697029135930742,
+        "liftDuringLipMm": 1.7697029135930742,
+        "sideBeltTakeoverS": null,
+        "lastCarpetContactS": 2.82,
+        "maxPoweredSideForceN": 0.0,
+        "n": 48,
+        "dt": 0.0005,
+        "enabled": true,
+        "upper": false,
+        "mu": 0.75,
+        "offset": 0.05,
+        "minimumCenterS": 0.7771718744852085,
+        "seatResidenceS": 0,
+        "seated": false,
+        "label": "p-weak",
+        "pitchDegrees": -48.75,
+        "addedHeightMm": 3.0,
+        "offsetM": 0.05,
+        "noseMu": 0.45,
+        "phaseCurrentLimitA": 2.0,
+        "capSegments": 48,
+        "minimumBladeHeightMm": 15.917482237977858,
+        "flapClearanceMm": [
+          190.83133751443634,
+          194.39002559696956,
+          195.2292535014111
+        ],
+        "passScreen": false
+      }
+    },
+    "p-off": {
+      "group": "pickup",
+      "file": "p-off.json",
+      "sha256": "a2102f2f96ea02ced09c78c96a924b789f7875f5614ed697169753b0ed4819a9",
+      "result": {
+        "minimumContactSpeedMps": -0.008338052570623856,
+        "peakPhaseA": 0.0,
+        "lip": true,
+        "lipFriction": 0.15,
+        "approachM": 0.44,
+        "pickAngle": -49.25,
+        "firstContactS": {
+          "floor": 0.0,
+          "lip": 0.2755,
+          "center belt": 0.3535
+        },
+        "maxRiseMm": 5.891821247747613,
+        "liftDuringLipMm": 5.885917766555434,
+        "sideBeltTakeoverS": null,
+        "lastCarpetContactS": 2.82,
+        "maxPoweredSideForceN": 0.0,
+        "n": 48,
+        "dt": 0.0005,
+        "enabled": false,
+        "upper": false,
+        "mu": 0.75,
+        "offset": 0.0,
+        "minimumCenterS": 0.7544856533559072,
+        "seatResidenceS": 0,
+        "seated": false,
+        "label": "p-off",
+        "pitchDegrees": -49.25,
+        "addedHeightMm": 0.0,
+        "offsetM": 0.0,
+        "noseMu": 0.75,
+        "phaseCurrentLimitA": 0.0,
+        "capSegments": 48,
+        "minimumBladeHeightMm": 8.922346410174791,
+        "flapClearanceMm": [
+          165.83850480647746,
+          171.3115851448788,
+          172.3115851448788
+        ],
+        "passScreen": false
+      }
+    },
+    "b-center": {
+      "group": "climb",
+      "file": "b-center.json",
+      "sha256": "d4d9a9233d00bf5f02a53c74c314e04a9634f503d1e770b8dda2d95da3e7b7f2",
+      "result": {
+        "dt": 0.001,
+        "gates": [
+          [
+            0.25000000000000017,
+            1,
+            0.007051396781879398
+          ],
+          [
+            0.25000000000000017,
+            2,
+            0.007060834958143238
+          ]
+        ],
+        "contactDeg": 79.40914371205346,
+        "chainX": -0.009964801718801208,
+        "peakNm": 179.80162077623785,
+        "minHeldFloorM": -0.00011908101881408228,
+        "maxHeldFloorN": 403.1715313982695,
+        "disabledS": 5,
+        "activeMassKg": 68.56,
+        "cgX": 0.0,
+        "method": "finite spring-applied friction brake",
+        "capacityNm": 180.0,
+        "delayS": 0.03,
+        "rampS": 0.03,
+        "peakDisabledBrakeNm": 180.0,
+        "peakDisabledMotorNm": 0.0,
+        "driftDeg": 74.34985537704398,
+        "maxFloorAfterCutN": 2211.988995315434,
+        "minFloorAfterCutM": -0.00026863037521163147,
+        "passScreen": false
+      }
+    },
+    "b-forward": {
+      "group": "climb",
+      "file": "b-forward.json",
+      "sha256": "799d6662e7324cb0b5f099ddb0eb843477966d8825284a4480f810175401c949",
+      "result": {
+        "dt": 0.001,
+        "gates": [
+          [
+            0.25000000000000017,
+            1,
+            0.007051433214776601
+          ],
+          [
+            0.25000000000000017,
+            2,
+            0.007060871384121182
+          ]
+        ],
+        "contactDeg": 79.40914371205346,
+        "chainX": -0.009964801718801208,
+        "peakNm": 179.40842822430182,
+        "minHeldFloorM": -0.00010767822547319561,
+        "maxHeldFloorN": 540.1509622235885,
+        "disabledS": 5,
+        "activeMassKg": 68.56,
+        "cgX": 0.04,
+        "method": "finite spring-applied friction brake",
+        "capacityNm": 180.0,
+        "delayS": 0.03,
+        "rampS": 0.03,
+        "peakDisabledBrakeNm": 180.0,
+        "peakDisabledMotorNm": 0.0,
+        "driftDeg": 63.87374258504411,
+        "maxFloorAfterCutN": 2644.666081128777,
+        "minFloorAfterCutM": -0.0003567235483233344,
+        "passScreen": false
+      }
+    },
+    "b-fine": {
+      "group": "climb",
+      "file": "b-fine.json",
+      "sha256": "d7d01fe218a727d0251ee3a49ceaa13f6f97ed43db6528e4649d076d8f35bc49",
+      "result": {
+        "dt": 0.0005,
+        "gates": [
+          [
+            0.25000000000000017,
+            1,
+            0.007056256770219338
+          ],
+          [
+            0.25000000000000017,
+            2,
+            0.007066409539019068
+          ]
+        ],
+        "contactDeg": 79.40914371205346,
+        "chainX": -0.009964801718801208,
+        "peakNm": 179.8707661378109,
+        "minHeldFloorM": -0.00026490693383418584,
+        "maxHeldFloorN": 786.4814202357861,
+        "disabledS": 5,
+        "activeMassKg": 68.56,
+        "cgX": 0.04,
+        "method": "finite spring-applied friction brake",
+        "capacityNm": 180.0,
+        "delayS": 0.03,
+        "rampS": 0.03,
+        "peakDisabledBrakeNm": 180.0,
+        "peakDisabledMotorNm": 0.0,
+        "driftDeg": 63.73122311238047,
+        "maxFloorAfterCutN": 3297.9897605883543,
+        "minFloorAfterCutM": -0.0004227577404912197,
+        "passScreen": false
+      }
+    },
+    "b-rear": {
+      "group": "climb",
+      "file": "b-rear.json",
+      "sha256": "9208a24a06715fe071f1b2d32a2a87d4c095d6b9e7c445275b6d2406eb7f8e79",
+      "result": {
+        "dt": 0.001,
+        "gates": [
+          [
+            0.25000000000000017,
+            1,
+            0.007051360620428033
+          ],
+          [
+            0.25000000000000017,
+            2,
+            0.007060798802939644
+          ]
+        ],
+        "contactDeg": 79.40914371205346,
+        "chainX": -0.009964801718801208,
+        "peakNm": 196.492565292876,
+        "minHeldFloorM": -4.3241563927265414e-05,
+        "maxHeldFloorN": 1241.7135825662085,
+        "disabledS": 5,
+        "activeMassKg": 68.56,
+        "cgX": -0.04,
+        "method": "finite spring-applied friction brake",
+        "capacityNm": 180.0,
+        "delayS": 0.03,
+        "rampS": 0.03,
+        "peakDisabledBrakeNm": 180.0,
+        "peakDisabledMotorNm": 0.0,
+        "driftDeg": 77.4063452497434,
+        "maxFloorAfterCutN": 2369.998420969949,
+        "minFloorAfterCutM": -0.00043700179532164124,
+        "passScreen": false
+      }
+    },
+    "b-low": {
+      "group": "climb",
+      "file": "b-low.json",
+      "sha256": "568886b02539a7937ce93482425b5569d5f283181de980928df7b0b9bc09815f",
+      "result": {
+        "dt": 0.001,
+        "gates": [
+          [
+            0.25000000000000017,
+            1,
+            0.007051433214776601
+          ],
+          [
+            0.25000000000000017,
+            2,
+            0.007060871384121182
+          ]
+        ],
+        "contactDeg": 79.40914371205346,
+        "chainX": -0.009964801718801208,
+        "peakNm": 179.40842822430182,
+        "minHeldFloorM": -0.0006422627485974663,
+        "maxHeldFloorN": 660.7952812609517,
+        "disabledS": 5,
+        "activeMassKg": 68.56,
+        "cgX": 0.04,
+        "method": "finite spring-applied friction brake",
+        "capacityNm": 80.0,
+        "delayS": 0.03,
+        "rampS": 0.03,
+        "peakDisabledBrakeNm": 80.0,
+        "peakDisabledMotorNm": 0.0,
+        "driftDeg": 98.14023488719207,
+        "maxFloorAfterCutN": 25383.56256232899,
+        "minFloorAfterCutM": -0.0019901061302911582,
+        "passScreen": false
+      }
+    },
+    "b-delay": {
+      "group": "climb",
+      "file": "b-delay.json",
+      "sha256": "006f1f1c711eac1ee7325aa24261bf9c0c659afae4185160e56e3c059e046580",
+      "result": {
+        "dt": 0.001,
+        "gates": [
+          [
+            0.25000000000000017,
+            1,
+            0.007051433214776601
+          ],
+          [
+            0.25000000000000017,
+            2,
+            0.007060871384121182
+          ]
+        ],
+        "contactDeg": 79.40914371205346,
+        "chainX": -0.009964801718801208,
+        "peakNm": 179.40842822430182,
+        "minHeldFloorM": -0.0008569544261141648,
+        "maxHeldFloorN": 536.9414954829491,
+        "disabledS": 5,
+        "activeMassKg": 68.56,
+        "cgX": 0.04,
+        "method": "finite spring-applied friction brake",
+        "capacityNm": 180.0,
+        "delayS": 0.12,
+        "rampS": 0.03,
+        "peakDisabledBrakeNm": 180.0,
+        "peakDisabledMotorNm": 0.0,
+        "driftDeg": 65.97986968905214,
+        "maxFloorAfterCutN": 23567.468116455333,
+        "minFloorAfterCutM": -0.0019259972545664361,
+        "passScreen": false
+      }
+    },
+    "b-none": {
+      "group": "climb",
+      "file": "b-none.json",
+      "sha256": "12b7570eb24ece8cdf3fb5ed439e2de2e482be2f91a3217856400a9df6219e21",
+      "result": {
+        "dt": 0.001,
+        "gates": [
+          [
+            0.25000000000000017,
+            1,
+            0.007051433214776601
+          ],
+          [
+            0.25000000000000017,
+            2,
+            0.007060871384121182
+          ]
+        ],
+        "contactDeg": 79.40914371205346,
+        "chainX": -0.009964801718801208,
+        "peakNm": 179.40842822430182,
+        "minHeldFloorM": -0.0027934985737523357,
+        "maxHeldFloorN": 701.9226566104024,
+        "disabledS": 5,
+        "activeMassKg": 68.56,
+        "cgX": 0.04,
+        "method": "finite spring-applied friction brake",
+        "capacityNm": 0.0,
+        "delayS": 0.03,
+        "rampS": 0.03,
+        "peakDisabledBrakeNm": 1e-06,
+        "peakDisabledMotorNm": 0.0,
+        "driftDeg": 190.22411307055006,
+        "maxFloorAfterCutN": 28528.058308403735,
+        "minFloorAfterCutM": -0.0034862728317023375,
+        "passScreen": false
+      }
+    },
+    "s-armed": {
+      "group": "shot",
+      "file": "s-armed.json",
+      "sha256": "1a958c1f99adc55887ce674e42b5e23d91711e9ccfe93e60d9e29b009e7a3b5e",
+      "result": {
+        "policy": "guarded",
+        "enableTime": 0.4995000000000004,
+        "maskedAccelerationSteps": 86,
+        "poweredOverlapSteps": 0,
+        "peakPackA": 124.80757419933997,
+        "allowWindowS": 0.1,
+        "voltageFloorV": 8.0,
+        "passShot": true,
+        "passInhibit": false,
+        "changedContacts": [],
+        "name": "s-armed",
+        "dt": 0.0005,
+        "n": 48,
+        "mu": 0.78,
+        "k": 4500,
+        "overdrive": 1.0,
+        "motorLimitA": 50.0,
+        "beltEquivalentKg": 0.2,
+        "angle": 125.0,
+        "robotX": 1.43,
+        "pivot": [
+          1.615,
+          5.55,
+          0.501
+        ],
+        "powered": true,
+        "exit": {
+          "t": 0.5859999999999909,
+          "q": [
+            1.231450778983209,
+            5.550000000655426,
+            0.9557746715620992,
+            0.4547189465507162,
+            2.075988383680232e-08,
+            -0.8906349867638294,
+            -1.9097019316684597e-08
+          ],
+          "velocity": [
+            -3.984254060783953,
+            2.2243767004940808e-07,
+            5.935958011117953
+          ]
+        },
+        "release": {
+          "t": 0.5929999999999901,
+          "q": [
+            1.2032012701030963,
+            5.550000001696278,
+            0.9954653470116658,
+            0.4544536787487106,
+            2.2711438919259504e-08,
+            -0.8907703710113871,
+            -2.231154079887455e-08
+          ],
+          "v": [
+            -4.043647978753146,
+            1.413715519491832e-07,
+            5.59924236709552,
+            -5.677339078069273e-07,
+            0.3493793971990328,
+            -9.345057884247932e-07
+          ]
+        },
+        "opening": {
+          "firstPossibleS": 0.7909999999999683,
+          "fullyThroughByS": 0.875499999999959,
+          "minimumMarginM": 0.1314286728843122
+        },
+        "beams": [
+          3.5245000000003444,
+          3.488000000000332
+        ],
+        "both": 3.5245000000003444,
+        "peakTractionN": 18.0,
+        "estimatedPeakDriveA": 99.80757419933997,
+        "minBusV": 8.430195496617822,
+        "peakBeltMps": 7.70080333637229,
+        "peakZ": 2.3423835366378665,
+        "contacts": [
+          "e572",
+          "p102",
+          "p113",
+          "p39",
+          "p41",
+          "p49",
+          "p50",
+          "p51",
+          "p53",
+          "p54",
+          "p57",
+          "p68"
+        ]
+      }
+    },
+    "s-fine": {
+      "group": "shot",
+      "file": "s-fine.json",
+      "sha256": "6f207bbfeff96920909ae676c3320381c7d66a6789504972359884e731de4703",
+      "result": {
+        "policy": "guarded",
+        "enableTime": 0.49999999999997263,
+        "maskedAccelerationSteps": 163,
+        "poweredOverlapSteps": 0,
+        "peakPackA": 124.7902246984611,
+        "allowWindowS": 0.1,
+        "voltageFloorV": 8.0,
+        "passShot": true,
+        "passInhibit": false,
+        "changedContacts": [],
+        "name": "s-fine",
+        "dt": 0.00025,
+        "n": 96,
+        "mu": 0.78,
+        "k": 4500,
+        "overdrive": 1.0,
+        "motorLimitA": 50.0,
+        "beltEquivalentKg": 0.2,
+        "angle": 125.0,
+        "robotX": 1.43,
+        "pivot": [
+          1.615,
+          5.55,
+          0.501
+        ],
+        "powered": true,
+        "exit": {
+          "t": 0.5849999999999633,
+          "q": [
+            1.2241517726763143,
+            5.550000000033224,
+            0.9566310680111189,
+            0.44413580080291454,
+            9.86151706328179e-10,
+            -0.8959594803589909,
+            -9.671829751366995e-10
+          ],
+          "velocity": [
+            -4.47771158663504,
+            1.1144237886587281e-08,
+            5.984718925021947
+          ]
+        },
+        "release": {
+          "t": 0.5907499999999627,
+          "q": [
+            1.1984049310531604,
+            5.550000000097307,
+            0.990874037117495,
+            0.44203111264773387,
+            1.0767159510631384e-09,
+            -0.896999718757707,
+            -1.1406349453291426e-09
+          ],
+          "v": [
+            -4.47771158663504,
+            1.1144237886587281e-08,
+            5.928330687521938,
+            -3.911285467602042e-08,
+            -0.8165998527912118,
+            -5.5369659536739314e-08
+          ]
+        },
+        "opening": {
+          "firstPossibleS": 0.7754999999999423,
+          "fullyThroughByS": 0.8407499999999352,
+          "minimumMarginM": 0.19601451152668514
+        },
+        "beams": [
+          4.020499999999168,
+          3.905749999999195
+        ],
+        "both": 4.020499999999168,
+        "peakTractionN": 18.0,
+        "estimatedPeakDriveA": 99.7902246984611,
+        "minBusV": 8.43066393314155,
+        "peakBeltMps": 7.86639868332638,
+        "peakZ": 2.384631517652871,
+        "contacts": [
+          "e571",
+          "e572",
+          "e752",
+          "p102",
+          "p33",
+          "p39",
+          "p41",
+          "p49",
+          "p50",
+          "p51",
+          "p53",
+          "p54",
+          "p75"
+        ]
+      }
+    },
+    "s-bypass": {
+      "group": "shot",
+      "file": "s-bypass.json",
+      "sha256": "c9f4df3064591adf0320b76a98c70396b5cabb9a20ab11267f63756bcd5844b0",
+      "result": {
+        "policy": "bypass",
+        "enableTime": 0.0,
+        "maskedAccelerationSteps": 0,
+        "poweredOverlapSteps": 220,
+        "peakPackA": 217.5893041882772,
+        "allowWindowS": 0.1,
+        "voltageFloorV": 8.0,
+        "passShot": false,
+        "passInhibit": false,
+        "changedContacts": [],
+        "name": "s-bypass",
+        "dt": 0.0005,
+        "n": 48,
+        "mu": 0.78,
+        "k": 4500,
+        "overdrive": 1.0,
+        "motorLimitA": 50.0,
+        "beltEquivalentKg": 0.2,
+        "angle": 125.0,
+        "robotX": 1.43,
+        "pivot": [
+          1.615,
+          5.55,
+          0.501
+        ],
+        "powered": true,
+        "exit": {
+          "t": 0.10100000000000008,
+          "q": [
+            1.2257736302139768,
+            5.549999999653966,
+            0.9512328162789672,
+            0.4537488461705976,
+            1.5707360084143529e-06,
+            -0.8911296115537788,
+            2.8975588107706593e-06
+          ],
+          "velocity": [
+            -3.560660162685284,
+            -1.5198216685825506e-07,
+            4.489930584884669
+          ]
+        },
+        "release": {
+          "t": 0.10950000000000008,
+          "q": [
+            1.195446706479381,
+            5.549999997271888,
+            0.9891096850009559,
+            0.4593754478036261,
+            2.091830868160763e-06,
+            -0.8882421955389854,
+            3.863243342125415e-06
+          ],
+          "v": [
+            -3.5689641413728186,
+            -3.0163170910898105e-07,
+            4.418433370495302,
+            0.0002582626261498964,
+            1.4879537486710517,
+            -1.116741701677418e-05
+          ]
+        },
+        "opening": null,
+        "beams": [
+          null,
+          null
+        ],
+        "both": null,
+        "peakTractionN": 18.0,
+        "estimatedPeakDriveA": 99.5893041882772,
+        "minBusV": 5.9250887869165165,
+        "peakBeltMps": 6.118496075657383,
+        "peakZ": 1.9078422411922726,
+        "contacts": [
+          "p40",
+          "p41"
+        ]
+      }
+    },
+    "s-stuck": {
+      "group": "shot",
+      "file": "s-stuck.json",
+      "sha256": "e080f54e539defab0b7005a37bff2d53959871ae9d674a9301daf036f84c2885",
+      "result": {
+        "policy": "stuck",
+        "enableTime": null,
+        "maskedAccelerationSteps": 0,
+        "poweredOverlapSteps": 0,
+        "peakPackA": 118.0,
+        "allowWindowS": 0.1,
+        "voltageFloorV": 8.0,
+        "passShot": false,
+        "passInhibit": true,
+        "changedContacts": [],
+        "name": "s-stuck",
+        "dt": 0.0005,
+        "n": 48,
+        "mu": 0.78,
+        "k": 4500,
+        "overdrive": 1.0,
+        "motorLimitA": 50.0,
+        "beltEquivalentKg": 0.2,
+        "angle": 125.0,
+        "robotX": 1.43,
+        "pivot": [
+          1.615,
+          5.55,
+          0.501
+        ],
+        "powered": true,
+        "exit": null,
+        "release": null,
+        "opening": null,
+        "beams": [
+          null,
+          null
+        ],
+        "both": null,
+        "peakTractionN": 0.15389564281443244,
+        "estimatedPeakDriveA": 0,
+        "minBusV": 8.614,
+        "peakBeltMps": 0.00018702449786963223,
+        "peakZ": 0.6482094371300405,
+        "contacts": []
+      }
+    }
+  }
+}

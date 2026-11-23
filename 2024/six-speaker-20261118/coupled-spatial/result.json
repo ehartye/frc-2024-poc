@@ -1,0 +1,38 @@
+{
+  "schema": "native-raised-feed/1",
+  "case": "nominal",
+  "outcome": "UPWARD_FREE_RELEASE",
+  "dt": 0.0001,
+  "grid": 1024,
+  "segments": 8192,
+  "sourceTraceSha256": "b06928ecfa09a08f3f166e1f99cdd678183c693dfaebd925a3236b1d1b878b69",
+  "nativeSha256": "5f2a1a4cb98931f31575444e95323c9cb78bab8df6d74f226c34dc53bd62bf96",
+  "calibrationSha256": "fb4f17c185a1f149f1c125bca5652ce7abf64ebd9dbedf39ceb729a83e5de2da",
+  "start": 16.750000000000057,
+  "end": 17.051899999999353,
+  "feedStart": 16.82999999999987,
+  "firstLauncherContact": 17.000299999999473,
+  "firstSimultaneousContact": 17.000299999999473,
+  "lastLauncherContact": 17.021799999999423,
+  "minimumBusV": 9.410406325603901,
+  "sourceWorkJ": 271.5784026802029,
+  "unloadingHeatJ": 8.793560367611408e-05,
+  "traceSha256": "26df493b07cfb08edcb2a0348313008a63c081b82e9e58b26580ac273fea85c5",
+  "finalNotePositionM": [
+    2.1849626718504855,
+    1.9031802119855195,
+    1.008082079598137
+  ],
+  "finalNoteVelocityMps": [
+    0.15044713391022568,
+    5.726758083378088,
+    8.9076885125186
+  ],
+  "finalWheelRadps": [
+    297.37236073229735,
+    298.75924921424894,
+    298.98153650218876,
+    300.45294870765946
+  ],
+  "verifiedSpeakerScores": 0
+}

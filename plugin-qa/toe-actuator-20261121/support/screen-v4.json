@@ -1,0 +1,85 @@
+{
+ "neutral": [
+  [
+   "left original finger",
+   "left moving rack backer and finger link",
+   36.0
+  ],
+  [
+   "right original finger",
+   "right moving rack backer and finger link",
+   36.0
+  ],
+  [
+   "rear original finger",
+   "rear moving rack backer and finger link",
+   245.00000000000003
+  ]
+ ],
+ "mid-withdraw": [
+  [
+   "left original finger",
+   "left moving rack backer and finger link",
+   36.0
+  ],
+  [
+   "right original finger",
+   "right moving rack backer and finger link",
+   36.0
+  ],
+  [
+   "rear original finger",
+   "rear moving rack backer and finger link",
+   245.00000000000003
+  ]
+ ],
+ "capture": [
+  [
+   "left original finger",
+   "left moving rack backer and finger link",
+   36.0
+  ],
+  [
+   "right original finger",
+   "right moving rack backer and finger link",
+   36.0
+  ],
+  [
+   "rear original finger",
+   "rear moving rack backer and finger link",
+   245.00000000000003
+  ]
+ ],
+ "home": [
+  [
+   "left original finger",
+   "left moving rack backer and finger link",
+   36.0
+  ],
+  [
+   "left original finger",
+   "left home switch",
+   2.1004255550348603
+  ],
+  [
+   "right original finger",
+   "right moving rack backer and finger link",
+   36.0
+  ],
+  [
+   "right original finger",
+   "right home switch",
+   2.1004255550348603
+  ],
+  [
+   "rear original finger",
+   "rear moving rack backer and finger link",
+   245.00000000000003
+  ],
+  [
+   "rear original finger",
+   "rear home switch",
+   2.1004255550348523
+  ]
+ ]
+}

@@ -1,0 +1,16 @@
+{
+  "angle": -49.744598926381464,
+  "slideInitialMm": 169.3625892825837,
+  "bodyCount": 231,
+  "marginMm": 5,
+  "remaining": [
+    [
+      "Blue bumper set",
+      "pickup",
+      "outer",
+      0.0,
+      0.08393367469051567
+    ]
+  ],
+  "scope": "Fixed heading and actual pickup pitch throughout both segments. Each actual part contributes its own occupied swept bounds. Dormant NOTES and stationary field include a 5 mm guard. Free NOTE in cassette independently tracked."
+}

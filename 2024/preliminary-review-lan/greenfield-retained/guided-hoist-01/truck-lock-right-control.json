@@ -1,0 +1,66 @@
+{
+  "parent": "d65c56f5b2ac5693712ba63579321ceebe649bc13d90f40f9a7fd4651821ff7c",
+  "wrongPoseControl": {
+    "-2": 30.896907792447358,
+    "2": 30.896907792447365
+  },
+  "contacts": [
+    [
+      "Service slide link",
+      "Pivot reducer",
+      132.85695133934306
+    ],
+    [
+      "Link installation",
+      "Pivot reducer",
+      1062.8556107147451
+    ]
+  ],
+  "seats": {
+    "frame": {
+      "component": "Pivot A-frame · right",
+      "centerXZ": [
+        178.0,
+        418.0
+      ],
+      "hostThicknessMm": 12,
+      "clearShoulderDepthMm": 3,
+      "underheadSeatMm2": 46.36990756698534,
+      "tappedMajorOverlapMm": 6.5,
+      "threadCommonMm3": 37.5734481369339,
+      "outsideThreadMm3": 0.0,
+      "exitReserveMm": 2
+    },
+    "truck": {
+      "component": "Translating bearing block · right",
+      "centerXZ": [
+        108.36665322549902,
+        463.0
+      ],
+      "hostThicknessMm": 14,
+      "clearShoulderDepthMm": 3,
+      "underheadSeatMm2": 46.36990756698534,
+      "tappedMajorOverlapMm": 6.5,
+      "threadCommonMm3": 37.573448136933955,
+      "outsideThreadMm3": 0.0,
+      "exitReserveMm": 4
+    }
+  },
+  "pullMm": 75,
+  "batteryToolGapMm": {
+    "Service slide shoulder screw · frame": 148.56059369832903,
+    "Service slide shoulder screw · truck": 81.95577509631717,
+    "Service slide link": 81.43995264093437
+  },
+  "statics": {
+    "test": "Assumed isolated 2 g horizontal inertia bound using entire upper robot mass at the service pose; external impacts excluded.",
+    "horizontalN": 1097.6191079,
+    "linkN": 1306.871628820078,
+    "linkNetStressMPa": 27.22649226708496,
+    "shoulderSingleShearMPa": 46.221128825171576,
+    "blockBearingMPa": 72.60397937889323,
+    "worstEstimatedHorizontalBacklashMm": 0.9525137595830865
+  },
+  "toolMetalKg": 0.03230643851659326,
+  "issues": "Thread engagement, actual fastener geometry, lower-bound material strength, restraint install sequence, de-energized handling and proof load need shop verification."
+}

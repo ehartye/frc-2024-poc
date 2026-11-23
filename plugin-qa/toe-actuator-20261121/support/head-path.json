@@ -1,0 +1,662 @@
+{
+ "96": {
+  "clockSHA": "995baa78869c0b56a0fa3c91f7d9b37a954fec1ef93dcdc4fe16b5a4852d9389",
+  "sampledPoses": 7500,
+  "clearanceLowerBounds": {
+   "side pinion/floor": [
+    101.60436524632733,
+    10.904
+   ],
+   "side output/floor": [
+    75.82822439357888,
+    10.904
+   ],
+   "side stage/floor": [
+    68.48607205273852,
+    10.904
+   ],
+   "side input plate/floor": [
+    69.70644388993993,
+    10.904
+   ],
+   "side motor/floor": [
+    45.048383883516834,
+    10.904
+   ],
+   "side sun/floor": [
+    85.8321724266889,
+    10.904
+   ],
+   "left seg 0/floor": [
+    96.81947792079784,
+    10.798
+   ],
+   "left seg 1/floor": [
+    100.33176940487404,
+    11.09
+   ],
+   "right seg 0/floor": [
+    64.96799589190765,
+    10.798
+   ],
+   "right seg 1/floor": [
+    69.6901622967904,
+    11.09
+   ],
+   "rear pinion/floor": [
+    125.12729490102727,
+    10.906
+   ],
+   "rear output/floor": [
+    118.08655981080987,
+    10.908
+   ],
+   "rear stage/floor": [
+    118.05915108375343,
+    10.908
+   ],
+   "rear input plate/floor": [
+    118.0663362165201,
+    10.908
+   ],
+   "rear motor/floor": [
+    119.51189835020783,
+    10.908
+   ],
+   "rear sun/floor": [
+    133.07501490935505,
+    10.908
+   ],
+   "rear seg 0/floor": [
+    148.18146607820103,
+    10.02
+   ],
+   "rear seg 1/floor": [
+    147.62754946689273,
+    10.906
+   ],
+   "rear seg 2/floor": [
+    147.78036251402995,
+    10.968
+   ],
+   "left home switch/floor": [
+    59.060856897574396,
+    10.904
+   ],
+   "right home switch/floor": [
+    59.0756040778419,
+    10.906
+   ],
+   "rear home switch/floor": [
+    63.93397074549399,
+    10.904
+   ],
+   "high rail and elbow plate/floor": [
+    154.07326231509353,
+    10.024000000000001
+   ],
+   "upper rear offset stem/floor": [
+    154.43845919006566,
+    11.088000000000001
+   ],
+   "top bridge/floor": [
+    168.86493548078,
+    11.088000000000001
+   ],
+   "vertical lower rear/floor": [
+    19.614069666432016,
+    11.046
+   ],
+   "low rear toe arm/floor": [
+    19.104043956465226,
+    10.024000000000001
+   ],
+   "side pinion/preload": [
+    310.40548741700974,
+    2.52
+   ],
+   "side output/preload": [
+    282.8633455455338,
+    2.5260000000000002
+   ],
+   "side stage/preload": [
+    272.22017230789356,
+    2.5260000000000002
+   ],
+   "side input plate/preload": [
+    273.9578753964541,
+    2.5260000000000002
+   ],
+   "side motor/preload": [
+    231.61557854371307,
+    2.528
+   ],
+   "side sun/preload": [
+    285.01342192820545,
+    2.5260000000000002
+   ],
+   "left seg 0/preload": [
+    322.93075793767457,
+    2.5260000000000002
+   ],
+   "left seg 1/preload": [
+    322.9250011659461,
+    2.5260000000000002
+   ],
+   "right seg 0/preload": [
+    302.24261031364966,
+    2.52
+   ],
+   "right seg 1/preload": [
+    302.26770243248814,
+    2.52
+   ],
+   "rear pinion/preload": [
+    248.22360555917976,
+    2.5340000000000003
+   ],
+   "rear output/preload": [
+    236.62382670654773,
+    2.5340000000000003
+   ],
+   "rear stage/preload": [
+    236.9628186063547,
+    2.5340000000000003
+   ],
+   "rear input plate/preload": [
+    237.37503057017517,
+    2.5340000000000003
+   ],
+   "rear motor/preload": [
+    241.60108447744358,
+    2.5340000000000003
+   ],
+   "rear sun/preload": [
+    259.7731829695735,
+    2.5340000000000003
+   ],
+   "rear seg 0/preload": [
+    285.02232003004156,
+    2.536
+   ],
+   "rear seg 1/preload": [
+    243.37929213254944,
+    2.5380000000000003
+   ],
+   "rear seg 2/preload": [
+    201.75704042051612,
+    2.54
+   ],
+   "left home switch/preload": [
+    284.96802306866255,
+    2.5180000000000002
+   ],
+   "right home switch/preload": [
+    284.96804886154916,
+    2.5180000000000002
+   ],
+   "rear home switch/preload": [
+    271.66016263218205,
+    2.5180000000000002
+   ],
+   "high rail and elbow plate/preload": [
+    204.67329976283517,
+    2.54
+   ],
+   "upper rear offset stem/preload": [
+    209.4453434743518,
+    2.54
+   ],
+   "top bridge/preload": [
+    216.3705806449076,
+    2.5420000000000003
+   ],
+   "vertical lower rear/preload": [
+    146.62739811095312,
+    2.528
+   ],
+   "low rear toe arm/preload": [
+    146.62739811095312,
+    2.528
+   ],
+   "side pinion/bumper": [
+    173.53801016493207,
+    7.41
+   ],
+   "side output/bumper": [
+    145.75070376679497,
+    7.41
+   ],
+   "side stage/bumper": [
+    133.87586773070115,
+    7.41
+   ],
+   "side input plate/bumper": [
+    135.75084184166337,
+    7.41
+   ],
+   "side motor/bumper": [
+    91.2593387402945,
+    7.41
+   ],
+   "side sun/bumper": [
+    140.32937839862922,
+    7.41
+   ],
+   "left seg 0/bumper": [
+    175.44898163237426,
+    7.41
+   ],
+   "left seg 1/bumper": [
+    175.44898163237426,
+    7.41
+   ],
+   "right seg 0/bumper": [
+    175.65608789573426,
+    7.412
+   ],
+   "right seg 1/bumper": [
+    175.65608789573426,
+    7.412
+   ],
+   "rear pinion/bumper": [
+    66.81507156923193,
+    7.412
+   ],
+   "rear output/bumper": [
+    57.029171569231934,
+    7.412
+   ],
+   "rear stage/bumper": [
+    57.029171569232005,
+    7.412
+   ],
+   "rear input plate/bumper": [
+    57.029171569231934,
+    7.412
+   ],
+   "rear motor/bumper": [
+    61.314171569232,
+    7.412
+   ],
+   "rear sun/bumper": [
+    74.70217156923196,
+    7.412
+   ],
+   "rear seg 0/bumper": [
+    62.8033032091656,
+    7.824
+   ],
+   "rear seg 1/bumper": [
+    22.703265926692488,
+    7.672000000000001
+   ],
+   "rear seg 2/bumper": [
+    22.527251365604137,
+    7.672000000000001
+   ],
+   "left home switch/bumper": [
+    174.50906868569578,
+    7.414000000000001
+   ],
+   "right home switch/bumper": [
+    174.50906868569578,
+    7.414000000000001
+   ],
+   "rear home switch/bumper": [
+    166.95034158887222,
+    7.414000000000001
+   ],
+   "high rail and elbow plate/bumper": [
+    28.97730534461645,
+    7.672000000000001
+   ],
+   "upper rear offset stem/bumper": [
+    29.047370194655628,
+    7.672000000000001
+   ],
+   "top bridge/bumper": [
+    43.497269396103675,
+    7.672000000000001
+   ],
+   "vertical lower rear/bumper": [
+    -26.0727517908343,
+    7.824
+   ],
+   "low rear toe arm/bumper": [
+    -25.63793641252112,
+    7.664000000000001
+   ]
+  }
+ },
+ "192": {
+  "clockSHA": "c9120dcf878b2ecc2f6f2bbd77a1dcb2ad6e6cf47e8c3b029d2dd9c631219394",
+  "sampledPoses": 7500,
+  "clearanceLowerBounds": {
+   "side pinion/floor": [
+    101.67838929993034,
+    10.842
+   ],
+   "side output/floor": [
+    75.90181308060461,
+    10.842
+   ],
+   "side stage/floor": [
+    68.55881404755225,
+    10.842
+   ],
+   "side input plate/floor": [
+    69.77974738579344,
+    10.842
+   ],
+   "side motor/floor": [
+    45.10000963332808,
+    10.844
+   ],
+   "side sun/floor": [
+    85.90446042419349,
+    10.842
+   ],
+   "left seg 0/floor": [
+    96.86546375303418,
+    10.736
+   ],
+   "left seg 1/floor": [
+    100.37498604706214,
+    11.026
+   ],
+   "right seg 0/floor": [
+    65.01553216998748,
+    10.734
+   ],
+   "right seg 1/floor": [
+    69.77345631496063,
+    11.028
+   ],
+   "rear pinion/floor": [
+    125.20378342237494,
+    10.844
+   ],
+   "rear output/floor": [
+    118.18427920051231,
+    10.842
+   ],
+   "rear stage/floor": [
+    118.16459526360502,
+    10.84
+   ],
+   "rear input plate/floor": [
+    118.17088818965395,
+    10.84
+   ],
+   "rear motor/floor": [
+    119.62243959742581,
+    10.84
+   ],
+   "rear sun/floor": [
+    133.17404037298417,
+    10.842
+   ],
+   "rear seg 0/floor": [
+    148.32605519804076,
+    9.958
+   ],
+   "rear seg 1/floor": [
+    147.70378342237495,
+    10.844
+   ],
+   "rear seg 2/floor": [
+    147.83289418402495,
+    10.886000000000001
+   ],
+   "left home switch/floor": [
+    59.12949472844145,
+    10.842
+   ],
+   "right home switch/floor": [
+    59.15382736881434,
+    10.842
+   ],
+   "rear home switch/floor": [
+    64.01102735985042,
+    10.842
+   ],
+   "high rail and elbow plate/floor": [
+    154.1530848624294,
+    10.844
+   ],
+   "upper rear offset stem/floor": [
+    154.49976232179003,
+    11.026
+   ],
+   "top bridge/floor": [
+    168.92611336624552,
+    11.026
+   ],
+   "vertical lower rear/floor": [
+    19.673486338698908,
+    10.98
+   ],
+   "low rear toe arm/floor": [
+    19.197201944016854,
+    10.844
+   ],
+   "side pinion/preload": [
+    313.1276850606248,
+    2.532
+   ],
+   "side output/preload": [
+    285.50733828752317,
+    2.5340000000000003
+   ],
+   "side stage/preload": [
+    274.9166404504618,
+    2.5340000000000003
+   ],
+   "side input plate/preload": [
+    276.6470725900403,
+    2.5340000000000003
+   ],
+   "side motor/preload": [
+    234.6463535615627,
+    2.536
+   ],
+   "side sun/preload": [
+    287.806876485794,
+    2.5340000000000003
+   ],
+   "left seg 0/preload": [
+    325.6821577148292,
+    2.5340000000000003
+   ],
+   "left seg 1/preload": [
+    325.67831967487547,
+    2.5340000000000003
+   ],
+   "right seg 0/preload": [
+    306.8652907701683,
+    2.5300000000000002
+   ],
+   "right seg 1/preload": [
+    306.86525744044553,
+    2.5300000000000002
+   ],
+   "rear pinion/preload": [
+    252.89967491288309,
+    2.5420000000000003
+   ],
+   "rear output/preload": [
+    240.9842056426437,
+    2.5420000000000003
+   ],
+   "rear stage/preload": [
+    241.1032850737572,
+    2.5420000000000003
+   ],
+   "rear input plate/preload": [
+    241.29217721531631,
+    2.5420000000000003
+   ],
+   "rear motor/preload": [
+    245.05712459188777,
+    2.5180000000000002
+   ],
+   "rear sun/preload": [
+    263.9048625279973,
+    2.5420000000000003
+   ],
+   "rear seg 0/preload": [
+    289.78696337394734,
+    2.544
+   ],
+   "rear seg 1/preload": [
+    248.5851954193663,
+    2.5460000000000003
+   ],
+   "rear seg 2/preload": [
+    207.41809467157645,
+    2.548
+   ],
+   "left home switch/preload": [
+    290.21807186627495,
+    2.528
+   ],
+   "right home switch/preload": [
+    290.21814879039715,
+    2.528
+   ],
+   "rear home switch/preload": [
+    277.22683609361684,
+    2.528
+   ],
+   "high rail and elbow plate/preload": [
+    210.53241540423554,
+    2.516
+   ],
+   "upper rear offset stem/preload": [
+    215.26269514633208,
+    2.548
+   ],
+   "top bridge/preload": [
+    221.85684652677202,
+    2.5180000000000002
+   ],
+   "vertical lower rear/preload": [
+    149.98997979891757,
+    2.536
+   ],
+   "low rear toe arm/preload": [
+    149.98997979891757,
+    2.536
+   ],
+   "side pinion/bumper": [
+    173.53781393523548,
+    7.348
+   ],
+   "side output/bumper": [
+    145.75051153549362,
+    7.348
+   ],
+   "side stage/bumper": [
+    133.8756754630033,
+    7.348
+   ],
+   "side input plate/bumper": [
+    135.7506495797123,
+    7.348
+   ],
+   "side motor/bumper": [
+    91.25914546703964,
+    7.348
+   ],
+   "side sun/bumper": [
+    140.32917742642428,
+    7.348
+   ],
+   "left seg 0/bumper": [
+    175.4487952874469,
+    7.348
+   ],
+   "left seg 1/bumper": [
+    175.4487952874469,
+    7.348
+   ],
+   "right seg 0/bumper": [
+    175.6560101847012,
+    7.348
+   ],
+   "right seg 1/bumper": [
+    175.6560101847012,
+    7.348
+   ],
+   "rear pinion/bumper": [
+    66.81486192750847,
+    7.348
+   ],
+   "rear output/bumper": [
+    57.028961927508476,
+    7.348
+   ],
+   "rear stage/bumper": [
+    57.02896192750852,
+    7.348
+   ],
+   "rear input plate/bumper": [
+    57.028961927508476,
+    7.348
+   ],
+   "rear motor/bumper": [
+    61.31396192750853,
+    7.348
+   ],
+   "rear sun/bumper": [
+    74.7019619275085,
+    7.348
+   ],
+   "rear seg 0/bumper": [
+    62.8089747462195,
+    7.76
+   ],
+   "rear seg 1/bumper": [
+    22.701101809263548,
+    7.61
+   ],
+   "rear seg 2/bumper": [
+    22.524688475070974,
+    7.61
+   ],
+   "left home switch/bumper": [
+    174.5089795335495,
+    7.3500000000000005
+   ],
+   "right home switch/bumper": [
+    174.5089795335495,
+    7.3500000000000005
+   ],
+   "rear home switch/bumper": [
+    166.94566994318794,
+    7.596
+   ],
+   "high rail and elbow plate/bumper": [
+    28.97474224765127,
+    7.61
+   ],
+   "upper rear offset stem/bumper": [
+    29.04485255519742,
+    7.61
+   ],
+   "top bridge/bumper": [
+    43.49475129939438,
+    7.61
+   ],
+   "vertical lower rear/bumper": [
+    -26.067080253780485,
+    7.76
+   ],
+   "low rear toe arm/bumper": [
+    -25.62785942526422,
+    7.602
+   ]
+  }
+ }
+}

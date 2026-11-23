@@ -1,0 +1,63 @@
+{
+  "parent": "8bad7eee9d6aedfd107bdcb288ecfb372f53e548afc688d3bccaa9d92b77f488",
+  "source": {
+    "carry.py": "19dae7186fbe23ef7678ee18b7ed0ea3c0837f8ef0187464c51bdcaddf2fcb88",
+    "lane.py": "526f407a0634be0546c6677ceff10dba5b8aa7735ba65ea3a9cb1eb343a917b4",
+    "counter_tail.py": "dacd1cde7677ac3647ab68942e5ca7e4e76dd246bb29bc9f81136e5da6008ef4",
+    "empty_return.py": "847ee69a61596cf8aa7179368906eb129e6b30ef129672a3761fabe9e887aa0d",
+    "plan.json": "42db7ff99be1054cf3e5dedd77e9b59cf605df1f536fda6119b4b3eea2f11bc6",
+    "clearance.json": "0e413320ea8eb609e0b9e31deda1853bea54f5636bb539f9a34fc1b828a33e30",
+    "reset-budget.json": "4a594b9a58b8c11096f8fff7af260a1bf1deb448d70dd835506c26cda12a79b2",
+    "reset-waveform.npz": "491a4f9c8a975b79c0a566d135b223c663cd6ef7df3e6933107a9e9bfc50fd78",
+    "shot.py": "1fefae2bc8d3fd8300b8cb75a1b2d3fcb503f98f31ed10e6f2b6db8bfc6653af",
+    "mission.py": "bbd26424543a6a557e7f7e8a87394ffcf4942809d82eba9423a3ff43cd04b8a2"
+  },
+  "speedMps": 6.96,
+  "basis": "Both prospective commands recovered the rebounding R02 inner and retained the passing and late-count control. The faster command reached both beams earlier in all three trials; both had at least 19 mm opening margin and 8.34 V loaded. Test 6.96 unchanged on two nominal full routines and fresh roster starts. Never count development runs toward 19/20.",
+  "cases": [
+    {
+      "tag": "R02-inner",
+      "speed": 6.8,
+      "both": 4.3604999999995835,
+      "minOpeningMm": 23.664403692318416,
+      "minBusV": 8.350471580182322
+    },
+    {
+      "tag": "R02-inner",
+      "speed": 6.96,
+      "both": 4.073749999999233,
+      "minOpeningMm": 23.998000054680457,
+      "minBusV": 8.350471580182322
+    },
+    {
+      "tag": "R01-inner",
+      "speed": 6.8,
+      "both": 4.468249999999715,
+      "minOpeningMm": 19.06584540465386,
+      "minBusV": 8.349319406967094
+    },
+    {
+      "tag": "R01-inner",
+      "speed": 6.96,
+      "both": 4.389749999999619,
+      "minOpeningMm": 19.392567156514254,
+      "minBusV": 8.349319406967094
+    },
+    {
+      "tag": "R03-center-low",
+      "speed": 6.8,
+      "both": 4.763000000000075,
+      "minOpeningMm": 20.464111185363294,
+      "minBusV": 8.349220384301272
+    },
+    {
+      "tag": "R03-center-low",
+      "speed": 6.96,
+      "both": 3.696749999999311,
+      "minOpeningMm": 19.949668110605714,
+      "minBusV": 8.349220384301272
+    }
+  ],
+  "scope": "Same physical mechanism, original field, returning belt state, on-robot reset. Individual passage followed by shared-field replay. Original failed shot returned into fixed electronics. Any candidate with a similar crossing is held regardless of apparent field score.",
+  "gate": "original 19/20 and 120 s; compare before/after; if either nominal fails review cause before full campaign."
+}

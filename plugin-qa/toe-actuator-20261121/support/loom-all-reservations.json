@@ -1,0 +1,245 @@
+{
+ "routes": {
+  "left": [
+   3,
+   [
+    [
+     -1,
+     20,
+     75
+    ],
+    [
+     -20,
+     23.5,
+     75
+    ],
+    [
+     -43,
+     23.5,
+     75
+    ],
+    [
+     -43,
+     114,
+     75
+    ],
+    [
+     -56,
+     129,
+     75
+    ],
+    [
+     -70,
+     129,
+     90
+    ],
+    [
+     -70,
+     129,
+     171
+    ]
+   ]
+  ],
+  "right": [
+   3,
+   [
+    [
+     -1,
+     -23.5,
+     75
+    ],
+    [
+     -20,
+     -23.5,
+     75
+    ],
+    [
+     -43,
+     -23.5,
+     75
+    ],
+    [
+     -43,
+     -114,
+     75
+    ],
+    [
+     -56,
+     -129,
+     75
+    ],
+    [
+     -70,
+     -129,
+     90
+    ],
+    [
+     -70,
+     -129,
+     171
+    ]
+   ]
+  ],
+  "rear": [
+   3,
+   [
+    [
+     12,
+     -10.93,
+     62
+    ],
+    [
+     12,
+     -24.5,
+     68
+    ],
+    [
+     12,
+     -24.5,
+     80
+    ],
+    [
+     -16,
+     -24.5,
+     80
+    ],
+    [
+     -54,
+     -24.5,
+     80
+    ],
+    [
+     -54,
+     -114,
+     80
+    ],
+    [
+     -66,
+     -126,
+     80
+    ],
+    [
+     -81,
+     -138,
+     95
+    ],
+    [
+     -81,
+     -138,
+     171
+    ]
+   ]
+  ],
+  "side gearmotor": [
+   6,
+   [
+    [
+     -45,
+     32,
+     133
+    ],
+    [
+     -45,
+     50,
+     133
+    ],
+    [
+     -45,
+     113,
+     133
+    ],
+    [
+     -49,
+     129,
+     145
+    ],
+    [
+     -49,
+     145,
+     171
+    ]
+   ]
+  ],
+  "rear gearmotor": [
+   6,
+   [
+    [
+     -106,
+     -122,
+     201
+    ],
+    [
+     -106,
+     -141,
+     201
+    ],
+    [
+     -100,
+     -158,
+     185
+    ],
+    [
+     -92,
+     -158,
+     166
+    ]
+   ]
+  ]
+ },
+ "broadPhase": {
+  "left/0": [],
+  "left/1": [],
+  "left/2": [],
+  "left/3": [],
+  "left/4": [],
+  "left/5": [],
+  "right/0": [],
+  "right/1": [],
+  "right/2": [],
+  "right/3": [],
+  "right/4": [],
+  "right/5": [],
+  "rear/0": [],
+  "rear/1": [],
+  "rear/2": [],
+  "rear/3": [],
+  "rear/4": [],
+  "rear/5": [],
+  "rear/6": [],
+  "rear/7": [],
+  "side gearmotor/0": [
+   [
+    "rear moving rack backer and finger link",
+    [
+     12.0,
+     8.0,
+     12.0
+    ]
+   ],
+   [
+    "integrated slotted backbone and six guide pedestals",
+    [
+     12.0,
+     30.0,
+     12.0
+    ]
+   ]
+  ],
+  "side gearmotor/1": [
+   [
+    "integrated slotted backbone and six guide pedestals",
+    [
+     12.0,
+     56.0,
+     12.0
+    ]
+   ]
+  ],
+  "side gearmotor/2": [],
+  "side gearmotor/3": [],
+  "rear gearmotor/0": [],
+  "rear gearmotor/1": [],
+  "rear gearmotor/2": []
+ },
+ "scope": "Preliminary envelopes; overlapping common runs must use a larger multicore loom. No motor lead routing, bend dynamics, clips or 2R swing qualification."
+}

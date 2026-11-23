@@ -1,0 +1,236 @@
+{
+  "assembly": "83517673b62c1917534e6a09be04eace6189b97dc0986cb3ffc8fd6832e1bf63",
+  "trialSource": "540fa1e369b20258094c41d8647ba274e297bff95923f3f9980abdef87eb8ad7",
+  "cases": {
+    "nominal": {
+      "dt": 0.001,
+      "gates": [
+        [
+          0.25000000000000017,
+          1,
+          0.007051396847040074
+        ],
+        [
+          0.25000000000000017,
+          2,
+          0.007060835023298602
+        ]
+      ],
+      "contactDeg": 79.40914371205346,
+      "chainX": -0.009964801718801208,
+      "peakNm": 179.80161978433432,
+      "minHeldFloorM": 0.06653274384899349,
+      "maxHeldFloorN": 0.0,
+      "held": true,
+      "disabledS": 5,
+      "activeMassKg": 68.56,
+      "cgX": 0.0,
+      "sourceHash": "f229169f7c8b7d6b80a6c53515566b5718c8e0078b644796843bc0e02427f644",
+      "capNm": 350.0,
+      "armAt": 2.815999999999801,
+      "seatAt": 3.542999999999721,
+      "confirmAt": 3.958999999999675,
+      "measuredDriftDeg": 0.5475172097069163,
+      "maxFloorN": 0.0,
+      "minFloorMm": 66.51439072422616,
+      "maxMotorNmAfterCut": 0.0,
+      "catchNmAtCut": 173.3683837481136,
+      "peakCatchNm": 199.29266587202886,
+      "secondsAtLimit": 0.0,
+      "passed": true,
+      "sha256": "b9c31235d2a16dafdf4144ec4e28e5d3b0df3b10f3ff37097991ee92633c658c"
+    },
+    "forward": {
+      "dt": 0.001,
+      "gates": [
+        [
+          0.25000000000000017,
+          1,
+          0.007051433279942652
+        ],
+        [
+          0.25000000000000017,
+          2,
+          0.007060871449281897
+        ]
+      ],
+      "contactDeg": 79.40914371205346,
+      "chainX": -0.009964801718801208,
+      "peakNm": 171.59260071526114,
+      "minHeldFloorM": 0.07416458644874596,
+      "maxHeldFloorN": 0.0,
+      "held": true,
+      "disabledS": 5,
+      "activeMassKg": 68.56,
+      "cgX": 0.04,
+      "sourceHash": "f229169f7c8b7d6b80a6c53515566b5718c8e0078b644796843bc0e02427f644",
+      "capNm": 350.0,
+      "armAt": 2.785999999999804,
+      "seatAt": 3.4899999999997267,
+      "confirmAt": 3.9839999999996722,
+      "measuredDriftDeg": 0.6521187630417986,
+      "maxFloorN": 0.0,
+      "minFloorMm": 74.00172335056848,
+      "maxMotorNmAfterCut": 0.0,
+      "catchNmAtCut": 156.26605577853718,
+      "peakCatchNm": 190.82983930272925,
+      "secondsAtLimit": 0.0,
+      "passed": true,
+      "sha256": "19cb73b623033a1a3134e134fb1f5134547ba09a35535716e9b470e59a42d1ff"
+    },
+    "aft": {
+      "dt": 0.001,
+      "gates": [
+        [
+          0.25000000000000017,
+          1,
+          0.007051360685569478
+        ],
+        [
+          0.25000000000000017,
+          2,
+          0.007060798868075809
+        ]
+      ],
+      "contactDeg": 79.40914371205346,
+      "chainX": -0.009964801718801208,
+      "peakNm": 196.49256411515248,
+      "minHeldFloorM": 0.06621037626754772,
+      "maxHeldFloorN": 0.0,
+      "held": true,
+      "disabledS": 5,
+      "activeMassKg": 68.56,
+      "cgX": -0.04,
+      "sourceHash": "f229169f7c8b7d6b80a6c53515566b5718c8e0078b644796843bc0e02427f644",
+      "capNm": 350.0,
+      "armAt": 2.849999999999797,
+      "seatAt": 3.3539999999997416,
+      "confirmAt": 3.711999999999702,
+      "measuredDriftDeg": 0.22084917205493987,
+      "maxFloorN": 0.0,
+      "minFloorMm": 66.19774615837393,
+      "maxMotorNmAfterCut": 0.0,
+      "catchNmAtCut": 184.09436805391215,
+      "peakCatchNm": 191.04643312935386,
+      "secondsAtLimit": 0.0,
+      "passed": true,
+      "sha256": "b42eadb9e397cc1485de9409607546c7ff239f2720c9a155d474a511baf01641"
+    },
+    "forward-refined": {
+      "dt": 0.0005,
+      "gates": [
+        [
+          0.25000000000000017,
+          1,
+          0.007056256835403031
+        ],
+        [
+          0.25000000000000017,
+          2,
+          0.0070664096041974205
+        ]
+      ],
+      "contactDeg": 79.40914371205346,
+      "chainX": -0.009964801718801208,
+      "peakNm": 171.4666522708779,
+      "minHeldFloorM": 0.0732021537122094,
+      "maxHeldFloorN": 0.0,
+      "held": true,
+      "disabledS": 5,
+      "activeMassKg": 68.56,
+      "cgX": 0.04,
+      "sourceHash": "f229169f7c8b7d6b80a6c53515566b5718c8e0078b644796843bc0e02427f644",
+      "capNm": 350.0,
+      "armAt": 2.7860000000000977,
+      "seatAt": 3.4895000000003327,
+      "confirmAt": 3.984500000000498,
+      "measuredDriftDeg": 0.6503023516388264,
+      "maxFloorN": 0.0,
+      "minFloorMm": 73.10170684339873,
+      "maxMotorNmAfterCut": 0.0,
+      "catchNmAtCut": 155.4520313562247,
+      "peakCatchNm": 190.71345519427234,
+      "secondsAtLimit": 0.0,
+      "passed": true,
+      "sha256": "7c13c80f8976bbb8654aa05a314e4ab2629a750cb2bf20f8515c5fb80c559a02",
+      "minimumRenderedStockAt25msMm": 82.70690228566349
+    },
+    "unseated": {
+      "dt": 0.0005,
+      "gates": [
+        [
+          0.25000000000000017,
+          1,
+          0.007056256835403031
+        ],
+        [
+          0.25000000000000017,
+          2,
+          0.0070664096041974205
+        ]
+      ],
+      "contactDeg": 79.40914371205346,
+      "chainX": -0.009964801718801208,
+      "peakNm": 171.4666522708779,
+      "minHeldFloorM": -0.0024880158524800133,
+      "maxHeldFloorN": 5437.055573303489,
+      "held": false,
+      "disabledS": 5,
+      "activeMassKg": 68.56,
+      "cgX": 0.04,
+      "sourceHash": "f229169f7c8b7d6b80a6c53515566b5718c8e0078b644796843bc0e02427f644",
+      "capNm": 350.0,
+      "armAt": null,
+      "seatAt": null,
+      "confirmAt": null,
+      "measuredDriftDeg": 66.07117420652914,
+      "maxFloorN": 22036.024666839297,
+      "minFloorMm": -3.7805785801454106,
+      "maxMotorNmAfterCut": 0.0,
+      "catchNmAtCut": 0.0,
+      "peakCatchNm": 0.0,
+      "secondsAtLimit": 0.0,
+      "passed": false,
+      "sha256": "60890d8c79f17f15d180885d0597a203dc9e1dc98c609a87920ba89dc74ac5da",
+      "minimumRenderedStockAt25msMm": -2.0839399544994324
+    },
+    "limited": {
+      "dt": 0.0005,
+      "gates": [
+        [
+          0.25000000000000017,
+          1,
+          0.007056256835403031
+        ],
+        [
+          0.25000000000000017,
+          2,
+          0.0070664096041974205
+        ]
+      ],
+      "contactDeg": 79.40914371205346,
+      "chainX": -0.009964801718801208,
+      "peakNm": 171.4666522708779,
+      "minHeldFloorM": -0.0002599146712848749,
+      "maxHeldFloorN": 3129.861491340618,
+      "held": true,
+      "disabledS": 5,
+      "activeMassKg": 68.56,
+      "cgX": 0.04,
+      "sourceHash": "f229169f7c8b7d6b80a6c53515566b5718c8e0078b644796843bc0e02427f644",
+      "capNm": 100.0,
+      "armAt": 2.7860000000000977,
+      "seatAt": 3.4895000000003327,
+      "confirmAt": null,
+      "measuredDriftDeg": 28.677084167064912,
+      "maxFloorN": 3306.1209726464704,
+      "minFloorMm": -0.2877041548263043,
+      "maxMotorNmAfterCut": 0.0,
+      "catchNmAtCut": 100.0,
+      "peakCatchNm": 100.0,
+      "secondsAtLimit": 5.507999999999667,
+      "passed": false,
+      "sha256": "9b13b17c8bdb53e228094ca8b8a84a92b4ec91ebc3e4abb24e9b21a02f671a92"
+    }
+  }
+}

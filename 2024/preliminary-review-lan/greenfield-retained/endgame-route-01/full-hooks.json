@@ -1,0 +1,36 @@
+{
+  "source": "093ca2ff6f5d2d53aa46c66651baa65f2d93bc59611a5e6e183006b9c7349415",
+  "field": null,
+  "installed": 180,
+  "staticFieldLeaves": 63,
+  "hookGroup": [
+    "Chain hook \u00b7 left",
+    "Chain hook \u00b7 right",
+    "Common keeper yoke and sliding rack",
+    "Keeper drive mast",
+    "Keeper motor and return spring",
+    "Keeper pinion output",
+    "Keeper return pinion"
+  ],
+  "strokeMm": 220,
+  "idealLiftMm": 212.8828687877604,
+  "fieldCandidateCounts": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "fieldContacts": [],
+  "internalContacts": [],
+  "scope": "Ideal constant-pitch motion, at five stroke samples. The frame translates along the cassette axis and hook seats remain fixed. Any new stock intersection vetoes the unmodified slide layout. Capture dynamics, actual CG tilt, rail/slide design, mass and motor remain open."
+}

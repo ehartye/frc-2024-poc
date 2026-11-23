@@ -1,0 +1,153 @@
+{
+  "parent": "456638547eebf64ac68fc7f00a095ef75c9efdc13019e937c3ddd312ee0ebd71",
+  "chassisRange": [
+    5.246069149370916,
+    5.735787718045076
+  ],
+  "machinedChassisKg": 4.985928433707996,
+  "motorBracketAndShaftDeltaKg": 0.1099848120626099,
+  "gripAndWireIncrementKg": [
+    0.1249848120626099,
+    0.17648253387200136
+  ],
+  "inspection": [
+    34.74199372017468,
+    55.91623649028627
+  ],
+  "running": [
+    45.07199372017468,
+    68.96623649028629
+  ],
+  "highMarginKg": 0.7828097597137287,
+  "sillStudies": [
+    {
+      "effectiveG": 1.0,
+      "cgXmm": -40,
+      "pitchMomentNm": -215,
+      "footForcesN": [
+        1074.2365480569006,
+        -397.90880497943454
+      ],
+      "endReactionsN": [
+        714.0227375683893,
+        -37.694994490923214
+      ],
+      "maxBendingMPa": 60.462937706984654,
+      "maxWebShearMPa": 9.54260654308481,
+      "maxVerticalDeflectionMm": 1.7144098507916992
+    },
+    {
+      "effectiveG": 1.0,
+      "cgXmm": -40,
+      "pitchMomentNm": 215,
+      "footForcesN": [
+        -14.371046879808318,
+        690.6987899572744
+      ],
+      "endReactionsN": [
+        46.32087421435199,
+        630.006868863114
+      ],
+      "maxBendingMPa": 14.45882854709315,
+      "maxWebShearMPa": 1.3125143101314876,
+      "maxVerticalDeflectionMm": 0.35786581678944634
+    },
+    {
+      "effectiveG": 1.0,
+      "cgXmm": 40,
+      "pitchMomentNm": -215,
+      "footForcesN": [
+        937.258777307034,
+        -260.931034229568
+      ],
+      "endReactionsN": [
+        630.006868863114,
+        46.320874214352045
+      ],
+      "maxBendingMPa": 53.46252641186101,
+      "maxWebShearMPa": 8.419770621696347,
+      "maxVerticalDeflectionMm": 1.5401653433347542
+    },
+    {
+      "effectiveG": 1.0,
+      "cgXmm": 40,
+      "pitchMomentNm": 215,
+      "footForcesN": [
+        -151.34881762967484,
+        827.6765607071409
+      ],
+      "endReactionsN": [
+        -37.69499449092325,
+        714.0227375683893
+      ],
+      "maxBendingMPa": 15.862305370578362,
+      "maxWebShearMPa": 1.5189344250071248,
+      "maxVerticalDeflectionMm": 0.21987077243383726
+    },
+    {
+      "effectiveG": 2.0,
+      "cgXmm": -40,
+      "pitchMomentNm": -215,
+      "footForcesN": [
+        1604.1692986454468,
+        -251.5138124905147
+      ],
+      "endReactionsN": [
+        1094.1945434597599,
+        258.46094269517215
+      ],
+      "maxBendingMPa": 93.10858483523592,
+      "maxWebShearMPa": 14.623439087367599,
+      "maxVerticalDeflectionMm": 2.7367988540890247
+    },
+    {
+      "effectiveG": 2.0,
+      "cgXmm": -40,
+      "pitchMomentNm": 215,
+      "footForcesN": [
+        515.5617037087378,
+        837.0937824461943
+      ],
+      "endReactionsN": [
+        426.49268010572257,
+        926.1628060492095
+      ],
+      "maxBendingMPa": 37.47400367776916,
+      "maxWebShearMPa": 5.699891089763557,
+      "maxVerticalDeflectionMm": 1.3660477439059806
+    },
+    {
+      "effectiveG": 2.0,
+      "cgXmm": 40,
+      "pitchMomentNm": -215,
+      "footForcesN": [
+        1330.2137571457138,
+        22.44172900921836
+      ],
+      "endReactionsN": [
+        926.1628060492094,
+        426.49268010572274
+      ],
+      "maxBendingMPa": 79.10776224498863,
+      "maxWebShearMPa": 12.377767244590675,
+      "maxVerticalDeflectionMm": 2.3892364238277684
+    },
+    {
+      "effectiveG": 2.0,
+      "cgXmm": 40,
+      "pitchMomentNm": 215,
+      "footForcesN": [
+        241.60616220900488,
+        1111.0493239459272
+      ],
+      "endReactionsN": [
+        258.460942695172,
+        1094.19454345976
+      ],
+      "maxBendingMPa": 26.147663762826863,
+      "maxWebShearMPa": 3.454219246986633,
+      "maxVerticalDeflectionMm": 1.030859808807872
+    }
+  ],
+  "scope": "All five machined chassis members plus estimated hardware, purchased parts and wiring. Sill screen assumes simple supports at both frame end faces, 69 GPa, all vertical load and pitch moment on one sill. End fixity, fatigue, joint slip, chassis torsion and compliance are open."
+}

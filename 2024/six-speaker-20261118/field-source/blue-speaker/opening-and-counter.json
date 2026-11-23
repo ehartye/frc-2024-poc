@@ -1,0 +1,172 @@
+{
+  "source": {
+    "archive": "CRESCENDO2024Field-STEP.zip",
+    "url": "https://firstfrc.blob.core.windows.net/frc2024/FieldAssets/CRESCENDO2024Field-STEP.zip",
+    "archiveSha256": "87185d3bf324bb3f35787ed6be715caf6151f6a9e81794830b3f743c381b4f18",
+    "stepMember": "FE-2024.STEP",
+    "stepSha256": "42c91b3efb9521d059c13cf25e2d7dda6315bdd6b7eb1202847bfe84ffb43c1a",
+    "speakerProduct": "GE-24300_Briweld Field Blue"
+  },
+  "frame": {
+    "units": "m",
+    "name": "FE-2024 blue field",
+    "fromStepCadMm": "x=(8270.875-X)/1000; y=(4105.275+Z)/1000; z=(Y-4.7752)/1000",
+    "basis": "nominal half field dimensions with actual CAD axes and measured carpet top"
+  },
+  "nominalOpeningCornersM": [
+    [
+      -0.00105,
+      5.020365,
+      1.984464
+    ],
+    [
+      -0.00105,
+      6.07129,
+      1.984464
+    ],
+    [
+      0.458944,
+      6.07129,
+      2.105733
+    ],
+    [
+      0.458944,
+      5.020365,
+      2.105733
+    ]
+  ],
+  "openingBasis": "GE-24312 inward side faces; GE-24305 top height; GE-24319 lower corner; low x inferred from 18.11 in horizontal run from GE-24300 sheet 2. Actual edge radii and assembly tolerance require separate collision checks.",
+  "sensorCaseEnds": [
+    {
+      "key": "p55",
+      "caseEndCornersM": [
+        [
+          -1.1296332500000061,
+          5.745979346378447,
+          1.3970000000000413
+        ],
+        [
+          -1.142333250000007,
+          5.745979346378447,
+          1.3970000000000413
+        ],
+        [
+          -1.142333250000007,
+          5.777475346378448,
+          1.3970000000000413
+        ],
+        [
+          -1.1296332500000061,
+          5.777475346378448,
+          1.3970000000000413
+        ]
+      ],
+      "caseCenterM": [
+        -1.1359832500000064,
+        5.761727346378447,
+        1.3970000000000413
+      ]
+    },
+    {
+      "key": "p56",
+      "caseEndCornersM": [
+        [
+          -1.1137582500000063,
+          5.777475346378449,
+          1.397000000000039
+        ],
+        [
+          -1.1010582500000055,
+          5.777475346378449,
+          1.397000000000039
+        ],
+        [
+          -1.1010582500000055,
+          5.745979346378449,
+          1.397000000000039
+        ],
+        [
+          -1.1137582500000063,
+          5.745979346378449,
+          1.397000000000039
+        ]
+      ],
+      "caseCenterM": [
+        -1.107408250000006,
+        5.761727346378449,
+        1.397000000000039
+      ]
+    },
+    {
+      "key": "p57",
+      "caseEndCornersM": [
+        [
+          -1.1296332500000061,
+          5.777475346378449,
+          1.314450000000039
+        ],
+        [
+          -1.142333250000007,
+          5.777475346378449,
+          1.314450000000039
+        ],
+        [
+          -1.142333250000007,
+          5.745979346378448,
+          1.314450000000039
+        ],
+        [
+          -1.1296332500000061,
+          5.745979346378448,
+          1.314450000000039
+        ]
+      ],
+      "caseCenterM": [
+        -1.1359832500000064,
+        5.761727346378448,
+        1.314450000000039
+      ]
+    },
+    {
+      "key": "p58",
+      "caseEndCornersM": [
+        [
+          -1.1137582500000063,
+          5.745979346378448,
+          1.314450000000039
+        ],
+        [
+          -1.1010582500000055,
+          5.745979346378448,
+          1.314450000000039
+        ],
+        [
+          -1.1010582500000055,
+          5.777475346378449,
+          1.314450000000039
+        ],
+        [
+          -1.1137582500000063,
+          5.777475346378449,
+          1.314450000000039
+        ]
+      ],
+      "caseCenterM": [
+        -1.107408250000006,
+        5.761727346378448,
+        1.314450000000039
+      ]
+    }
+  ],
+  "beamPairs": [
+    [
+      "p55",
+      "p57"
+    ],
+    [
+      "p56",
+      "p58"
+    ]
+  ],
+  "uncertainty": "Four simplified 42SMR cases. Pair opposing ends by x. Centerlines are geometric representatives. Actual active optical location, installed aim, electronics channel mapping and control algorithm are unresolved. A complete shadow across every ray joining a pair of facing active-end rectangles is a conservative geometric observation conditional on through-beam installation."
+}

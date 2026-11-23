@@ -1,0 +1,44 @@
+{
+  "parent": "8246c5433dd5c07a18ac94165ded249581fa643b7347ebafa3fe4d6d4790864c",
+  "step": "d7647c68bb7407692e370eb3a1d00161ea2789611c0ba2f58fa1c979c76f34b2",
+  "modified": [
+    "Launch Belt motor \u00b7 left",
+    "Launch Belt drive shaft \u00b7 left",
+    "Launch idler axle \u00b7 left",
+    "Forward launcher motor bridge \u00b7 left",
+    "Launch Belt motor \u00b7 right",
+    "Launch Belt drive shaft \u00b7 right",
+    "Launch idler axle \u00b7 right",
+    "Forward launcher motor bridge \u00b7 right"
+  ],
+  "seats": {
+    "left": {
+      "crossbarTopMm2": 49.99999999738991,
+      "motorSeatMm2": 926.2671779843613
+    },
+    "right": {
+      "crossbarTopMm2": 49.99999999738991,
+      "motorSeatMm2": 926.2671779843613
+    }
+  },
+  "bumperAtPickup": {
+    "left": {
+      "before": 16974.133493007637,
+      "after": 0.0
+    },
+    "right": {
+      "before": 16974.13349300792,
+      "after": 0.0
+    }
+  },
+  "netVolumeMm3": {
+    "Launch Belt motor \u00b7 left": 5.4060365073382854e-09,
+    "Launch Belt drive shaft \u00b7 left": -1413.7166941124951,
+    "Launch idler axle \u00b7 left": 2277.6546738527777,
+    "Forward launcher motor bridge \u00b7 left": 18055.738107549252,
+    "Launch Belt motor \u00b7 right": 5.4060365073382854e-09,
+    "Launch Belt drive shaft \u00b7 right": -1413.716694112497,
+    "Launch idler axle \u00b7 right": 2277.6546738527786,
+    "Forward launcher motor bridge \u00b7 right": 18055.738107549252
+  }
+}

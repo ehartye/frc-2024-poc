@@ -1,0 +1,44 @@
+{
+  "stepsPerOriginalStep": 32,
+  "offsetStep": 5157,
+  "sourceSha256": "dc6517afe733e5369047f7957fffa382b102433501a16d53e3825466f5afb192",
+  "levels": [
+    {
+      "stride": 16,
+      "checks": 1204,
+      "intervals": 568,
+      "unresolved": 66,
+      "files": [
+        [
+          "3507fa36c9641a678f3b4dd7c10094d6743eb7f99f48ed794cae81993f234d01",
+          "9ea1ac603b2978389ff60795fab1a7351b2f739dc1574a79969772a6e33bc032"
+        ],
+        [
+          "f4b4c3dc4f49da9dc14ff751d8047c31a9362e714edb0faa67a75111f84b709a",
+          "fd6db885cdf6a9213570cf8f7f7bebb01cb947804d512ef1395f6d63c52b9939"
+        ],
+        [
+          "8b16613215c328fdc338caa98cc9f508d11e1cc81b616c0efffc21f2db73296a",
+          "e054bb30df6ede427c0fd95dba5ac6f613ccd9a950606c9f19b62c9affbb035c"
+        ]
+      ]
+    },
+    {
+      "stride": 4,
+      "checks": 500,
+      "intervals": 264,
+      "unresolved": 0,
+      "files": [
+        [
+          "edfbf9e4344184ca52cc80adbc896ec77639a8a48d8fffcdd8d367044473418a",
+          "6e1c4b1614ae0fc3cea134c3da6bad88a625e09d777205a7dd810f3389b3bc53"
+        ],
+        [
+          "a867724d990c8a0a22273d02483097f937adf92aef24139cd90633a7fb3162c4",
+          "e55fbd4f1e4092d3663ae084bea57845f53b7161bf86ca454cb117cfdb5cae60"
+        ]
+      ]
+    }
+  ],
+  "unresolved": []
+}

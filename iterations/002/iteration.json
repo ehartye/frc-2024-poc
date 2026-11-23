@@ -1,0 +1,10 @@
+{
+  "schema": "agent-frc/design-iteration@1",
+  "id": "2024-b1-fixed-close-scorer",
+  "number": 2,
+  "previous": "2024-material03-r18",
+  "scope": "New B1 complete robot around supported legal preload, middle-wing floor stock and a close rearward Speaker score and reset.",
+  "reason": "Select the B1 scorer role. Archive the B3 cam, two-sided transmission, pinch and pitching carriage. Restart the intake bay and fixed scorer around the actual floor NOTE and field dock.",
+  "fusionId": "2024-b1-fixed-close-scorer",
+  "retrospectiveSha256": "d98f3f7cf96cc3f4af923fc84315c90f5f49088a3e8a60ff2cd7baeb2f904f4e"
+}

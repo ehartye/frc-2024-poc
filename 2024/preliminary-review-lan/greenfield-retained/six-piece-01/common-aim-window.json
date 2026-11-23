@@ -1,0 +1,39 @@
+{
+  "scored": {
+    "bestStation": 1.6600000000000004,
+    "worstMargin": -0.07026486989310946,
+    "asDrivenMargin": -0.21639431338643822,
+    "perPiece": {
+      "scored-dev-center-high-48.json": -0.07026486989310946,
+      "scored-dev-center-low-48.json": -0.05229309832583183,
+      "scored-dev-center-mid-48.json": -0.014990785234967365,
+      "scored-dev-inner-48.json": 0.07482235536511404,
+      "scored-dev-middle-48.json": -0.06311695505622442,
+      "scored-dev-outer-48.json": -0.002282577420059346
+    },
+    "feasible": []
+  },
+  "indexed": {
+    "bestStation": 1.5300000000000002,
+    "worstMargin": 0.02885140945877968,
+    "asDrivenMargin": -0.04150422353654771,
+    "perPiece": {
+      "indexed-dev-center-high-48.json": 0.04779262904642349,
+      "indexed-dev-center-low-48.json": 0.039601788057372786,
+      "indexed-dev-center-mid-48.json": 0.07455931910060806,
+      "indexed-dev-inner-48.json": 0.02941194783395224,
+      "indexed-dev-middle-48.json": 0.02885140945877968,
+      "indexed-dev-outer-48.json": 0.051527246612087775
+    },
+    "feasible": [
+      1.4900000000000002,
+      1.5000000000000002,
+      1.5100000000000002,
+      1.5200000000000002,
+      1.5300000000000002,
+      1.5400000000000003,
+      1.5500000000000003,
+      1.5600000000000003
+    ]
+  }
+}

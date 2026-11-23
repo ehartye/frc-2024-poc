@@ -1,0 +1,128 @@
+[
+  {
+    "raw": "split-paired_.55_.55-R01-center-low-96-6.88.json",
+    "hash": "502819370e1317bcfb3e17f9314ae1398178b42d28db7627b9cb67718757e3ac",
+    "old": "a9e6fa218af3231386465af3fd236b0a65a3bed99b0012ddf766bc5c7be65c59",
+    "originalBoth": null,
+    "both": 5.9487500000015245,
+    "beams": [
+      5.9487500000015245,
+      5.900750000001466
+    ],
+    "opening": {
+      "firstPossibleS": 1.0079999999999203,
+      "fullyThroughByS": 1.0904999999999478,
+      "minimumMarginM": 0.10630570375760204
+    },
+    "passShot": true,
+    "minBusV": 8.349228652482632
+  },
+  {
+    "raw": "split-paired_.75_-.75-R01-center-low-96-6.88.json",
+    "hash": "ca5e05e0136e59e5238b01df93e08ce3992f3d2c53d5cffce8692d4e4cc9c793",
+    "old": "a9e6fa218af3231386465af3fd236b0a65a3bed99b0012ddf766bc5c7be65c59",
+    "originalBoth": null,
+    "both": null,
+    "beams": [
+      null,
+      null
+    ],
+    "opening": {
+      "firstPossibleS": 1.0079999999999203,
+      "fullyThroughByS": 1.0904999999999478,
+      "minimumMarginM": 0.10630570375760204
+    },
+    "passShot": false,
+    "minBusV": 8.349228652482632
+  },
+  {
+    "raw": "split-paired_.75_.75-dev-center-high-48-6.88.json",
+    "hash": "22bc5f07ab48ce08eebb0417720ce375f9a37592ccd29ac35e53c552eed9d907",
+    "old": "82eb3cc598ced2cf59bcaa3518e90f12b511d24a4498f23e51c3f1673d962cc4",
+    "originalBoth": 4.465000000000245,
+    "both": 3.742000000000417,
+    "beams": [
+      3.742000000000417,
+      3.705500000000405
+    ],
+    "opening": {
+      "firstPossibleS": 1.0084999999999444,
+      "fullyThroughByS": 1.1069999999999336,
+      "minimumMarginM": 0.06285540464875812
+    },
+    "passShot": true,
+    "minBusV": 8.344286681770603
+  },
+  {
+    "raw": "split-paired_.75_.75-dev-center-high-96-6.74.json",
+    "hash": "16eecdd3f0b852eca8bc93fad39a8ef3c555bd1299bcbc93d39309185da0cd52",
+    "old": "71c4167608e75c32655b569d257fe1f2e84b6b2e6039953a4861000908104272",
+    "originalBoth": null,
+    "both": 5.488500000000962,
+    "beams": [
+      5.488500000000962,
+      5.456750000000923
+    ],
+    "opening": {
+      "firstPossibleS": 1.0124999999999218,
+      "fullyThroughByS": 1.1022499999999518,
+      "minimumMarginM": 0.11703700188849077
+    },
+    "passShot": true,
+    "minBusV": 8.349207811781206
+  },
+  {
+    "raw": "split-paired_.75_.75-dev-center-high-96-6.88.json",
+    "hash": "da367b30a38fdea7cc2ca7771b6b7d9e0edc541a2ad7c70e9e602e30bb56ceda",
+    "old": "e895a684aede585180fb8e071025906eb810acede52494aa389cc169dfe26543",
+    "originalBoth": 5.256250000000678,
+    "both": 4.307749999999519,
+    "beams": [
+      4.307749999999519,
+      4.269999999999473
+    ],
+    "opening": {
+      "firstPossibleS": 1.0074999999999201,
+      "fullyThroughByS": 1.0929999999999487,
+      "minimumMarginM": 0.10676851312580832
+    },
+    "passShot": true,
+    "minBusV": 8.349207811781206
+  },
+  {
+    "raw": "split-paired_.75_.75-R01-center-low-96-6.88.json",
+    "hash": "006938dc6300092f9bbf4435f5f9ae440375e2062336a96915d3ded55b474535",
+    "old": "a9e6fa218af3231386465af3fd236b0a65a3bed99b0012ddf766bc5c7be65c59",
+    "originalBoth": null,
+    "both": 4.747250000000056,
+    "beams": [
+      4.747250000000056,
+      4.700499999999999
+    ],
+    "opening": {
+      "firstPossibleS": 1.0079999999999203,
+      "fullyThroughByS": 1.0904999999999478,
+      "minimumMarginM": 0.10630570375760204
+    },
+    "passShot": true,
+    "minBusV": 8.349228652482632
+  },
+  {
+    "raw": "split-paired_.9_.9-R01-center-low-96-6.88.json",
+    "hash": "e75d2ae3aaf06bf1c9e61e4bc7baa8060c6561a4afa1b63724bb229b60bf0046",
+    "old": "a9e6fa218af3231386465af3fd236b0a65a3bed99b0012ddf766bc5c7be65c59",
+    "originalBoth": null,
+    "both": 5.318500000000754,
+    "beams": [
+      5.318500000000754,
+      5.284000000000712
+    ],
+    "opening": {
+      "firstPossibleS": 1.0079999999999203,
+      "fullyThroughByS": 1.0904999999999478,
+      "minimumMarginM": 0.10630570375760204
+    },
+    "passShot": true,
+    "minBusV": 8.349228652482632
+  }
+]

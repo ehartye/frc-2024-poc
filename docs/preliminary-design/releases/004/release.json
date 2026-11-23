@@ -1,0 +1,57 @@
+{
+  "schema": "agent-frc/preliminary-release@1",
+  "release": "004",
+  "issue": "2024-004-guided-cassette",
+  "phase": "preliminary-design",
+  "check": {
+    "project": "cad/preliminary-design/releases/004",
+    "plan": "layout.json"
+  },
+  "missionCases": [
+    {
+      "case": "acquire-49",
+      "kind": "field-interaction-trial",
+      "accomplishes": "acquired",
+      "objective": "Seat the floor NOTE between the powered belts",
+      "trial": {
+        "file": "trial-acquire-49.json"
+      }
+    },
+    {
+      "case": "lift-05",
+      "kind": "field-interaction-trial",
+      "accomplishes": "acquired",
+      "objective": "Carry the NOTE while raising the mechanism",
+      "trial": {
+        "file": "trial-lift-05.json"
+      }
+    },
+    {
+      "case": "feed-04",
+      "kind": "field-interaction-trial",
+      "accomplishes": "delivered",
+      "objective": "Feed and deliver the NOTE through the speaker opening",
+      "trial": {
+        "file": "trial-feed-04.json"
+      }
+    },
+    {
+      "case": "flight-02",
+      "kind": "field-interaction-trial",
+      "accomplishes": "delivered",
+      "objective": "Feed and deliver the NOTE through the speaker opening",
+      "trial": {
+        "file": "trial-flight-02.json"
+      }
+    },
+    {
+      "case": "hold",
+      "kind": "operating-case",
+      "accomplishes": "climb-held",
+      "objective": "Solo ONSTAGE",
+      "trial": {
+        "file": "trial-hold.json"
+      }
+    }
+  ]
+}

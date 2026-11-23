@@ -1,0 +1,16 @@
+{
+  "schema": "agent-frc/fusion-authority@1",
+  "id": "2024-r9-whole",
+  "configuration": "Parked 2024 whole robot with recovered wheel cores and verified physical-stock material corrections",
+  "nativeConfiguration": "unconfigured",
+  "revision": "r9-front-materials-03",
+  "basis": "Private material continuity successor. Current floor mechanism and chassis remain under design review.",
+  "source": {
+    "kind": "offline",
+    "archive": {
+      "file": "build/private-native-archives/r9-front-materials-03.f3d",
+      "sha256": "741c62a293cae9463dc41213fb2971e54e9797d8c22f89b665f60ce75638ef81"
+    }
+  },
+  "pinnedChildren": []
+}

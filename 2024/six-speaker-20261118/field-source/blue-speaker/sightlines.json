@@ -1,0 +1,28 @@
+{
+  "field": {
+    "panels.json": "179593289b9850e7bc88db0573088657a1143b745040c8b269a5f74ae1594d85",
+    "named-panels.npz": "fcf29b7d726ae323e52f2c76cd4ec47b9d8ad60488f99f7a1fbdc266e8c23bad",
+    "extras.json": "72f92baebb9fc8ed31cc1f6a8a2ebe50cc78eb89bf38ce3c0625336203200e06",
+    "extras.npz": "2cffcdf267edd6c490f87e099f42e706a043382a32294b6d3f52b85857d7d605"
+  },
+  "pairs": {
+    "p55-p57": {
+      "openRays": 63,
+      "rays": 81,
+      "centerBlockers": [],
+      "firstOpenFraction": [
+        0.05,
+        0.16249999999999998
+      ]
+    },
+    "p56-p58": {
+      "openRays": 63,
+      "rays": 81,
+      "centerBlockers": [],
+      "firstOpenFraction": [
+        0.05,
+        0.16249999999999998
+      ]
+    }
+  }
+}

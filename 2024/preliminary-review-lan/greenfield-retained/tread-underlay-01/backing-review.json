@@ -1,0 +1,405 @@
+{
+  "covered": [
+    "attempt-dev-48.json",
+    "attempt-dev-96.json",
+    "attempt-R01-96.json",
+    "attempt-R02-96.json"
+  ],
+  "rows": [
+    {
+      "file": "dev-middle-48.json",
+      "phase": "pickup and carry",
+      "minimumSampleMm": 0.6149393813051134,
+      "atS": 1.78,
+      "overlapSamples": 0,
+      "samples": 837
+    },
+    {
+      "file": "split-ready-dev-middle-48-6.88.json",
+      "phase": "firing",
+      "minimumSampleMm": 0.7398923958116441,
+      "atS": 0.10800000000000008,
+      "overlapSamples": 0,
+      "samples": 126
+    },
+    {
+      "file": "dev-outer-48.json",
+      "phase": "pickup and carry",
+      "minimumSampleMm": 0.6149393813051134,
+      "atS": 1.78,
+      "overlapSamples": 0,
+      "samples": 701
+    },
+    {
+      "file": "split-ready-dev-outer-48-6.88.json",
+      "phase": "firing",
+      "minimumSampleMm": 0.7116014972648443,
+      "atS": 0.7559999999999721,
+      "overlapSamples": 0,
+      "samples": 126
+    },
+    {
+      "file": "dev-inner-48.json",
+      "phase": "pickup and carry",
+      "minimumSampleMm": 0.7021008591093292,
+      "atS": 2.84,
+      "overlapSamples": 0,
+      "samples": 701
+    },
+    {
+      "file": "split-ready-dev-inner-48-6.88.json",
+      "phase": "firing",
+      "minimumSampleMm": 0.7391268080734577,
+      "atS": 0.7559999999999721,
+      "overlapSamples": 0,
+      "samples": 126
+    },
+    {
+      "file": "dev-center-high-48.json",
+      "phase": "pickup and carry",
+      "minimumSampleMm": 0.6149393813051134,
+      "atS": 1.78,
+      "overlapSamples": 0,
+      "samples": 750
+    },
+    {
+      "file": "split-ready-dev-center-high-48-6.88.json",
+      "phase": "firing",
+      "minimumSampleMm": 0.7440216347772335,
+      "atS": 0.7079999999999774,
+      "overlapSamples": 0,
+      "samples": 126
+    },
+    {
+      "file": "dev-center-mid-48.json",
+      "phase": "pickup and carry",
+      "minimumSampleMm": 0.6149393813051134,
+      "atS": 1.78,
+      "overlapSamples": 0,
+      "samples": 1006
+    },
+    {
+      "file": "split-ready-dev-center-mid-48-6.88.json",
+      "phase": "firing",
+      "minimumSampleMm": 0.7189187719776626,
+      "atS": 0.7559999999999721,
+      "overlapSamples": 0,
+      "samples": 126
+    },
+    {
+      "file": "dev-center-low-48.json",
+      "phase": "pickup and carry",
+      "minimumSampleMm": 0.6149393813051134,
+      "atS": 1.78,
+      "overlapSamples": 0,
+      "samples": 1085
+    },
+    {
+      "file": "split-ready-dev-center-low-48-6.88.json",
+      "phase": "firing",
+      "minimumSampleMm": 0.7275630527516697,
+      "atS": 0.6959999999999787,
+      "overlapSamples": 0,
+      "samples": 126
+    },
+    {
+      "file": "dev-middle-96.json",
+      "phase": "pickup and carry",
+      "minimumSampleMm": 0.6518138294771134,
+      "atS": 1.82,
+      "overlapSamples": 0,
+      "samples": 837
+    },
+    {
+      "file": "split-ready-dev-middle-96-6.88.json",
+      "phase": "firing",
+      "minimumSampleMm": 0.743035501457662,
+      "atS": 0.10800000000000008,
+      "overlapSamples": 0,
+      "samples": 125
+    },
+    {
+      "file": "dev-outer-96.json",
+      "phase": "pickup and carry",
+      "minimumSampleMm": 0.6518138294771134,
+      "atS": 1.82,
+      "overlapSamples": 0,
+      "samples": 701
+    },
+    {
+      "file": "split-ready-dev-outer-96-6.88.json",
+      "phase": "firing",
+      "minimumSampleMm": 0.7431664980233919,
+      "atS": 0.7679999999999432,
+      "overlapSamples": 0,
+      "samples": 125
+    },
+    {
+      "file": "dev-inner-96.json",
+      "phase": "pickup and carry",
+      "minimumSampleMm": 0.6547509601806567,
+      "atS": 1.87,
+      "overlapSamples": 0,
+      "samples": 701
+    },
+    {
+      "file": "split-ready-dev-inner-96-6.88.json",
+      "phase": "firing",
+      "minimumSampleMm": 0.7273644300682136,
+      "atS": 0.6959999999999511,
+      "overlapSamples": 0,
+      "samples": 125
+    },
+    {
+      "file": "dev-center-high-96.json",
+      "phase": "pickup and carry",
+      "minimumSampleMm": 0.6518138294771134,
+      "atS": 1.82,
+      "overlapSamples": 0,
+      "samples": 750
+    },
+    {
+      "file": "split-ready-dev-center-high-96-6.88.json",
+      "phase": "firing",
+      "minimumSampleMm": 0.741559713282193,
+      "atS": 0.07200000000000005,
+      "overlapSamples": 0,
+      "samples": 125
+    },
+    {
+      "file": "dev-center-mid-96.json",
+      "phase": "pickup and carry",
+      "minimumSampleMm": 0.6518138294771134,
+      "atS": 1.82,
+      "overlapSamples": 0,
+      "samples": 1006
+    },
+    {
+      "file": "split-ready-dev-center-mid-96-6.88.json",
+      "phase": "firing",
+      "minimumSampleMm": 0.7447024768282304,
+      "atS": 0.7799999999999419,
+      "overlapSamples": 0,
+      "samples": 125
+    },
+    {
+      "file": "dev-center-low-96.json",
+      "phase": "pickup and carry",
+      "minimumSampleMm": 0.6518138294771134,
+      "atS": 1.82,
+      "overlapSamples": 0,
+      "samples": 1085
+    },
+    {
+      "file": "split-ready-dev-center-low-96-6.88.json",
+      "phase": "firing",
+      "minimumSampleMm": 0.7265878784424231,
+      "atS": 0.6959999999999511,
+      "overlapSamples": 0,
+      "samples": 125
+    },
+    {
+      "file": "R01-middle-96.json",
+      "phase": "pickup and carry",
+      "minimumSampleMm": 0.598293145023213,
+      "atS": 1.86,
+      "overlapSamples": 0,
+      "samples": 837
+    },
+    {
+      "file": "split-ready-R01-middle-96-6.88.json",
+      "phase": "firing",
+      "minimumSampleMm": 0.7361686834269179,
+      "atS": 0.7559999999999445,
+      "overlapSamples": 0,
+      "samples": 125
+    },
+    {
+      "file": "R01-outer-96.json",
+      "phase": "pickup and carry",
+      "minimumSampleMm": 0.6748595514047011,
+      "atS": 1.77,
+      "overlapSamples": 0,
+      "samples": 701
+    },
+    {
+      "file": "split-ready-R01-outer-96-6.88.json",
+      "phase": "firing",
+      "minimumSampleMm": 0.7351297686633771,
+      "atS": 0.6959999999999511,
+      "overlapSamples": 0,
+      "samples": 125
+    },
+    {
+      "file": "R01-inner-96.json",
+      "phase": "pickup and carry",
+      "minimumSampleMm": 0.6657503061021046,
+      "atS": 1.84,
+      "overlapSamples": 0,
+      "samples": 701
+    },
+    {
+      "file": "split-ready-R01-inner-96-6.88.json",
+      "phase": "firing",
+      "minimumSampleMm": 0.7217785481147203,
+      "atS": 0.6959999999999511,
+      "overlapSamples": 0,
+      "samples": 125
+    },
+    {
+      "file": "R01-center-high-96.json",
+      "phase": "pickup and carry",
+      "minimumSampleMm": 0.6658119669394651,
+      "atS": 1.85,
+      "overlapSamples": 0,
+      "samples": 750
+    },
+    {
+      "file": "split-ready-R01-center-high-96-6.88.json",
+      "phase": "firing",
+      "minimumSampleMm": 0.7279862605397867,
+      "atS": 0.7559999999999445,
+      "overlapSamples": 0,
+      "samples": 125
+    },
+    {
+      "file": "R01-center-mid-96.json",
+      "phase": "pickup and carry",
+      "minimumSampleMm": 0.6412937374804031,
+      "atS": 1.86,
+      "overlapSamples": 0,
+      "samples": 1006
+    },
+    {
+      "file": "split-ready-R01-center-mid-96-6.88.json",
+      "phase": "firing",
+      "minimumSampleMm": 0.7396760218705438,
+      "atS": 0.7559999999999445,
+      "overlapSamples": 0,
+      "samples": 125
+    },
+    {
+      "file": "R01-center-low-96.json",
+      "phase": "pickup and carry",
+      "minimumSampleMm": 0.6050543497588095,
+      "atS": 1.83,
+      "overlapSamples": 0,
+      "samples": 1085
+    },
+    {
+      "file": "split-ready-R01-center-low-96-6.88.json",
+      "phase": "firing",
+      "minimumSampleMm": 0.7290279695832922,
+      "atS": 0.6959999999999511,
+      "overlapSamples": 0,
+      "samples": 125
+    },
+    {
+      "file": "R02-middle-96.json",
+      "phase": "pickup and carry",
+      "minimumSampleMm": 0.6299819229007042,
+      "atS": 1.93,
+      "overlapSamples": 0,
+      "samples": 837
+    },
+    {
+      "file": "split-ready-R02-middle-96-6.88.json",
+      "phase": "firing",
+      "minimumSampleMm": 0.7233350097076894,
+      "atS": 0.6959999999999511,
+      "overlapSamples": 0,
+      "samples": 125
+    },
+    {
+      "file": "R02-outer-96.json",
+      "phase": "pickup and carry",
+      "minimumSampleMm": 0.6357995844195514,
+      "atS": 1.84,
+      "overlapSamples": 0,
+      "samples": 701
+    },
+    {
+      "file": "split-ready-R02-outer-96-6.88.json",
+      "phase": "firing",
+      "minimumSampleMm": 0.7376255700690209,
+      "atS": 0.7559999999999445,
+      "overlapSamples": 0,
+      "samples": 125
+    },
+    {
+      "file": "R02-inner-96.json",
+      "phase": "pickup and carry",
+      "minimumSampleMm": 0.6450663453085284,
+      "atS": 1.86,
+      "overlapSamples": 0,
+      "samples": 701
+    },
+    {
+      "file": "split-ready-R02-inner-96-6.88.json",
+      "phase": "firing",
+      "minimumSampleMm": 0.7261205915032249,
+      "atS": 0.6959999999999511,
+      "overlapSamples": 0,
+      "samples": 125
+    },
+    {
+      "file": "R02-center-high-96.json",
+      "phase": "pickup and carry",
+      "minimumSampleMm": 0.5881090013731765,
+      "atS": 1.87,
+      "overlapSamples": 0,
+      "samples": 750
+    },
+    {
+      "file": "split-ready-R02-center-high-96-6.88.json",
+      "phase": "firing",
+      "minimumSampleMm": 0.7364023960908881,
+      "atS": 0.09600000000000007,
+      "overlapSamples": 0,
+      "samples": 125
+    },
+    {
+      "file": "R02-center-mid-96.json",
+      "phase": "pickup and carry",
+      "minimumSampleMm": 0.6711144245549647,
+      "atS": 1.89,
+      "overlapSamples": 0,
+      "samples": 1006
+    },
+    {
+      "file": "split-ready-R02-center-mid-96-6.88.json",
+      "phase": "firing",
+      "minimumSampleMm": 0.7326930170857011,
+      "atS": 0.7559999999999445,
+      "overlapSamples": 0,
+      "samples": 125
+    },
+    {
+      "file": "R02-center-low-96.json",
+      "phase": "pickup and carry",
+      "minimumSampleMm": 0.6382409807260743,
+      "atS": 1.96,
+      "overlapSamples": 0,
+      "samples": 1085
+    },
+    {
+      "file": "split-ready-R02-center-low-96-6.88.json",
+      "phase": "firing",
+      "minimumSampleMm": 0.7213182331910346,
+      "atS": 0.6959999999999511,
+      "overlapSamples": 0,
+      "samples": 125
+    }
+  ],
+  "worst": {
+    "file": "R02-center-high-96.json",
+    "phase": "pickup and carry",
+    "minimumSampleMm": 0.5881090013731765,
+    "atS": 1.87,
+    "overlapSamples": 0,
+    "samples": 750
+  },
+  "angularAllowanceMm": 0.23377867207377173,
+  "minimumAtRecordedPosesMm": 0.3543303292994047,
+  "model": "Analytic rigid backing ending at 17.25 mm, 2048 nodes on the circular ring centerline. One-half angular interval deducted using the Lipschitz distance bound. Covers saved poses only. STEP displaced controls in result.json."
+}
