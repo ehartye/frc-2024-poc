@@ -1,0 +1,4 @@
+{
+  "skip": ["2024/", "engineering-iterations/", "plugin-qa/"],
+  "exceptions": []
+}

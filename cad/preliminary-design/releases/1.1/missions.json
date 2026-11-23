@@ -235,7 +235,7 @@
   {
    "id": "launch-motor-clearance",
    "risk": "The whole-cycle check found both launch belt motor cans exactly at the NOTE's outer radius (177.8 mm from the cassette centre): the floor NOTE riding over the pickup lip passed them with 0.0004 mm. Revision A raises both motors 60 mm along the cassette normal on lengthened shafts; the checked cycle then clears them by more than 2.8 mm (15 mm sampled). The taller motor mount is not drawn and the pickup trial does not model the motors, so an off-centre NOTE meeting the lengthened shaft is untested. The 60 mm longer shaft is checked for clearance only: its whip and bearing support are not assessed.",
-   "evidence": "cad/preliminary-design/releases/1.0/step-revision.json; cad/preliminary-design/builder/revise_step.py",
+   "evidence": "cad/preliminary-design/releases/1.0/step-revision.json; revise_step.py of the removed builder (Git history, commit 8e5d857)",
    "benchTest": {
     "measure": "Smallest gap between a NOTE picked up 50 mm off centre and either launch motor or its shaft",
     "pass": 3.0,
@@ -461,7 +461,7 @@
   {
    "id": "battery-removal-path",
    "risk": "The straight 370 mm battery lift at the service index is not a checked case: the disconnected pack lead is not represented and the lift does not yet pass. The checked service case is the index pin withdrawal. An earlier service-lock study reported 5 mm smallest clearance for this lift; it has not been repeated on the revised layout.",
-   "evidence": "cad/preliminary-design/builder/build.py (--battery)",
+   "evidence": "build.py --battery of the removed builder (Git history, commit 8e5d857)",
    "benchTest": {
     "measure": "Smallest gap around the battery through a straight lift at the service index, leads disconnected",
     "pass": 5,

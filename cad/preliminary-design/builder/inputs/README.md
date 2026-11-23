@@ -8,7 +8,7 @@
 
 Guided cassette 1.0 was drawn on a draft layout of 232 solids. The drafts were published while the design was in progress and left the site when the design was numbered. Revision A is the one geometry change from the draft layout to Guided cassette 1.0: both launch belt motors are raised 60 mm ([revise_step.py](../revise_step.py)).
 
-The builder reads these files from the drafts. Their bytes are unchanged.
+Guided cassette 1.0's builder read these files from the drafts. Their bytes are unchanged. The builder itself was removed when Guided cassette 1.1 became a design source; it is in the Git history at commit `8e5d857`.
 
 | File | Content | SHA-256 | Read by |
 | --- | --- | --- | --- |
