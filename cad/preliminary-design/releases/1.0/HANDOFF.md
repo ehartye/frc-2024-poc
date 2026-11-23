@@ -14,9 +14,9 @@ Detailed design may publish as in-progress when three things hold: it links the 
 | Layout solids | `REL/robot.step`, 232 solids, revision A | `REL/step-revision.json` |
 | SHA-256 of the layout solids | `2914b6f0b94eda5c0fa18f411c58f933ce0502527997c9e2baf06476a0af9343` | `REL/step-revision.json`, `REL/layout.json` |
 | Parent solids (draft layout) | `EV/guided-hoist-01/service-locked-robot.step`, SHA-256 `a29a146d8897f64e8f056fcb46a431ba234c7aecccbc3233b6834c43c703bc88` | `BUILDER/revise_step.py` |
-| Receipt | `REL/receipt.json`, pending the whole-cycle check | — |
+| Receipt | `REL/receipt.json`, `layout-checked`: 74 cases pass, the displaced control is rejected, mass and voltage pass | `REL/receipt.json` |
 
-Confirm the SHA-256 against `REL/layout.json` on the day you link. The layout was still being rebuilt when this page was written.
+Confirm the SHA-256 against `REL/layout.json` on the day you link.
 
 Guided cassette 1.0 is a revised layout. The draft layout is the 232-solid layout the design was drawn on while it was in progress. Revision A is the one geometry change from it: the launch belt motors moved (section 6). The 144 double-encoded component names were also repaired.
 
