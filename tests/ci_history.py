@@ -1,5 +1,6 @@
 """Run the existing season evidence recipes with their original generator revisions."""
 import argparse
+import json
 from contextlib import nullcontext
 import os
 from pathlib import Path
@@ -19,13 +20,21 @@ PINS = {
 }
 
 
+EVIDENCE_FOLDERS = tuple(json.loads((ROOT / "project-layout.json").read_text(encoding="utf-8")).get("evidenceFolders", []))
+
+
 def replay_tree(temp):
     # Several archived generators write outputs in place. Run those on a copy
     # of the candidate, including local input edits, and compare against its index.
     tree = temp / "project"
     subprocess.run(["git", "clone", "--quiet", "--local", "--no-checkout", str(ROOT), str(tree)], check=True)
     head = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
-    subprocess.run(["git", "checkout", "--quiet", "--detach", head], cwd=tree, check=True)
+    # The recorded trial inputs are several gigabytes, hold large-file pointers and some names too long for a
+    # default Windows checkout. No archived generator reads them, so the copy leaves them out.
+    subprocess.run(["git", "sparse-checkout", "set", "--no-cone", "/*", *("!/" + name + "/" for name in EVIDENCE_FOLDERS)],
+                   cwd=tree, check=True)
+    subprocess.run(["git", "checkout", "--quiet", "--detach", head], cwd=tree, check=True,
+                   env=dict(os.environ, GIT_LFS_SKIP_SMUDGE="1"))
     def paths(*argv):
         return set(subprocess.check_output(["git", *argv], cwd=ROOT).decode().split("\0")) - {""}
     for name in paths("diff", "--name-only", "--no-renames", "-z", "HEAD") | paths("ls-files", "--others", "--exclude-standard", "-z"):
