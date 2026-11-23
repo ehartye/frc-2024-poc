@@ -1,27 +1,27 @@
 # Run the 2024 project checks
 
-Use Python 3.13, Node 22 and a full Git checkout of `ehartye/agent-frc`. Set `AGENT_FRC_PLUGIN_ROOT` to that checkout at the `AGENT_FRC_REF` in `.github/workflows/design-publication.yml`. Its history supplies the exact generators that issued the season evidence. Install the numerical dependency from `tests/requirements-ci.txt` in your project environment.
+The project's CI is `.github/workflows/ci.yml`. It runs on every push to every branch, checks out this repository and nothing else, and runs only files in this repository. Use Python 3.13 and Node 22 to run the same commands from the season root:
 
-From the season root in PowerShell:
-
-```powershell
+```sh
+node scripts/ci/scan.mjs .
+node scripts/ci/site-check.mjs docs
+python scripts/cad-readmes.py .
 python -m pip install --only-binary=:all: -r tests/requirements-ci.txt
-$env:OPENBLAS_NUM_THREADS = '1'
-$runner = Join-Path $env:AGENT_FRC_PLUGIN_ROOT 'scripts/project-checks.mjs'
-node $runner (Get-Location).Path changed (git merge-base HEAD origin/main)
-node $runner (Get-Location).Path full
+python tests/test_frame_stiffness.py
+python tests/test_passive_service.py
+python -m unittest discover -s tests -p "test_showcase*.py"
+python tests/test_passive_entry.py
 ```
 
-The changed run checks layout and the CAD source, mesh, still, viewer and student READMEs every time. It selects additional suites by their inputs in `tests/ci.json`. Edits to that manifest or a workflow select every suite. The full run also regenerates historical evidence with the pinned revisions in `tests/ci_history.py`. Generators which write into the project run in a temporary checkout containing your current working files.
+| Command | Fails when |
+| --- | --- |
+| `scripts/ci/scan.mjs` | A tracked file holds a personal machine path or a credential. `.branch-scan.json` lists the three evidence folders it skips. |
+| `scripts/ci/site-check.mjs` | A design index and its folders disagree, a file an index or record names is missing, or a relative link in a published page leads nowhere. |
+| `scripts/cad-readmes.py` | A project README lacks the CAD still below its title, or its caption does not name the current design and status. `--update` rewrites every block. |
+| `tests/test_frame_stiffness.py` | The recomputed R9 and R13 frame stiffness differs from the recorded study. Set `OPENBLAS_NUM_THREADS=1`. |
+| `tests/test_passive_service.py` | A service fixture record no longer matches the Fusion archive it names. |
+| `tests/test_showcase*.py`, `tests/test_passive_entry.py` | The archived draft-001 showcase under `docs/detailed-design/archive/` no longer matches its records. |
 
-The **Design publication** workflow runs the same entry point on every push to every branch, after it checks the published designs. A manual run of that workflow performs the full suite.
+The whole run takes under a minute. The other files in `tests/` belong to archived studies and are run by hand when their study is revisited.
 
-## Check the published designs
-
-```powershell
-$check = Join-Path $env:AGENT_FRC_PLUGIN_ROOT 'scripts/design-publication.mjs'
-node $check check (Get-Location).Path --skip-rerun
-node $check check (Get-Location).Path
-```
-
-The first command compares the records, review scenes and status indexes in seconds. The second also reruns each layout check from the committed inputs, as the workflow does. This season serves `main:/docs`, so a merged pull request is the published site. [Publish and check designs](https://github.com/ehartye/agent-frc/blob/main/docs/design-publication.md)
+CI runs no layout check and no design check. A design is checked before it is pushed, and an effective design does not change. This season serves `main:/docs`, so a merged pull request is the published site.

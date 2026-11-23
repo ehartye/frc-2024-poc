@@ -2,7 +2,7 @@
 
 The [preliminary design](https://ehartye.github.io/frc-2024-poc/preliminary-design/) opens Guided cassette 1.0 in the stock Agent FRC review page. The page has one view and one motion list. The list holds the checked cycle and service cases, the displaced control, both six-NOTE scoring clocks and the front and rear climbs. Add `?case=ID` to the release page URL to open one entry, for example `releases/1.0/?case=continuous-cycle-96`.
 
-Run `python cad/preliminary-design/serve.py` from the season checkout to serve the page locally.
+The page loads its scene over HTTP. To view it locally, serve `docs/` with any static file server, for example `python -m http.server -d docs`, and open `/preliminary-design/`.
 
 ## What is checked and what is replayed
 
@@ -14,7 +14,7 @@ The speaker, stage and chains are tessellated from FIRST's `FE-2024.STEP` for di
 
 ## Rebuild the release
 
-The inputs are in `cad/preliminary-design/releases/1.0/`. `PLUGIN` is a checkout of Agent FRC at the `AGENT_FRC_REF` in `.github/workflows/design-publication.yml`. Use the Agent FRC geometry environment.
+The inputs are in `cad/preliminary-design/releases/1.0/`. The builder and the layout check are run by the person or coding agent doing the design work, with their own installed copy of Agent FRC, shown here as `PLUGIN`, and its geometry environment. The project pins no plugin revision and its CI runs none of these commands. The builder is to be replaced by a separate design library.
 
 1. Write the check inputs. The builder reads the pinned traces and ledgers and the [carried inputs](builder/inputs/README.md), and checks each trial file against its SHA-256.
 
@@ -22,20 +22,20 @@ The inputs are in `cad/preliminary-design/releases/1.0/`. `PLUGIN` is a checkout
    python cad/preliminary-design/builder/build.py PLUGIN --tolerance 40 --refine acquire=1,feed=1
    ```
 
-2. Run the layout check, then stage and check the release.
+2. Run the layout check, then stage and check the release. The staging and publication commands are the plugin's own, run from the season root.
 
    ```sh
    node PLUGIN/scripts/design.mjs preliminary-check . cad/preliminary-design/releases/1.0/layout.json --write-view --require-checked --output cad/preliminary-design/releases/1.0/receipt.json
-   python cad/preliminary-design/stage.py 1.0
-   node PLUGIN/scripts/design-publication.mjs check . --skip-rerun
+   python PLUGIN/scripts/stage_preliminary_review.py 1.0
+   node PLUGIN/scripts/design-publication.mjs check .
    python scripts/cad-readmes.py . --update
    ```
 
-Guided cassette 1.0 is effective, so staging it again is refused. A change to the design is staged as `1.1`. [Name and number a design](https://github.com/ehartye/agent-frc/blob/main/docs/design-publication.md#name-and-number-a-design)
+Guided cassette 1.0 is effective, so staging it again is refused. A change to the design is staged as `1.1`. A change to the page alone, such as a title, is rebuilt with `--view-only` in place of `--write-view` and republished with `python PLUGIN/scripts/stage_preliminary_review.py --refresh-view 1.0`; neither reruns a case. [Name and number a design](https://github.com/ehartye/agent-frc/blob/main/docs/design-publication.md#name-and-number-a-design)
 
 The field parts in the carried replay set were tessellated with `python cad/preliminary-design/builder/field.py FE-2024.STEP field-meshes.json`. Download FIRST's 2024 field STEP archive and pass its `FE-2024.STEP`. The script checks the file's SHA-256.
 
-The **Design publication** workflow reruns the layout check from the committed inputs on every push. [Publish and check designs](https://github.com/ehartye/agent-frc/blob/main/docs/design-publication.md)
+The project's CI runs no layout check. It scans every push for personal paths and secrets and checks that the published site is whole. [Project checks](../../tests/project-checks.md)
 
 ## Measured margins to check on the prototype
 

@@ -1,0 +1,49 @@
+name: Project CI
+# This workflow belongs to the project. It checks out the project and nothing else, and runs only the project's own
+# files: the path and secret scan and the site check under scripts/ci/, then the project's own tests. It runs no
+# design check: a design is checked before it is pushed.
+on:
+  push:
+    branches: ['**']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    name: Scan and site check
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      # No published file is stored with Git LFS, so the checkout fetches none.
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22'
+      # A personal machine path or a credential is public as soon as the branch is pushed.
+      - name: Scan for personal paths and secrets
+        run: node scripts/ci/scan.mjs .
+      # Every listed design has its folder, every named file is there and every relative link leads somewhere.
+      - name: Check the published site
+        run: node scripts/ci/site-check.mjs docs
+      - uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c
+        with:
+          python-version: '3.13'
+      # Each project README shows the CAD still below its title and names the current design and its status.
+      - name: Check the README stills
+        run: python scripts/cad-readmes.py .
+      # The frame stiffness study is recomputed with the numpy version that issued it.
+      - run: python -m pip install --only-binary=:all: -r tests/requirements-ci.txt
+      - name: Recompute the matched frame stiffness
+        env:
+          OPENBLAS_NUM_THREADS: '1'
+        run: python tests/test_frame_stiffness.py
+      - name: Check the service fixture records against the Fusion archives
+        run: python tests/test_passive_service.py
+      # The archived draft-001 showcase is still served under docs/detailed-design/archive/.
+      - name: Check the archived showcase against its records
+        run: |
+          python -m unittest discover -s tests -p "test_showcase*.py"
+          python tests/test_passive_entry.py
+# GitHub Pages serves the docs folder of the default branch, so this workflow uploads nothing and has no deploy job.

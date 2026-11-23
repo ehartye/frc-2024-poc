@@ -16,6 +16,10 @@ Follow the project from the game rules to a simulated score. The table connects 
 
 The six historical kickoff records above were recovered from the source revision in the fixture inventory. Their original language and edition are preserved. Relative links in the two Markdown records resolve to the committed copies or the pinned historical source. The strategic narrative and native handoff describe the later integrated design.
 
+## Tools and project checks
+
+Agent FRC is a tool of the coding agent that did this work. The project does not depend on it: no project file runs it or pins a revision of it, and the skill links above record which revision produced each output. The project's own CI scans every push for personal paths and secrets, checks that the published site is whole and runs the project's own tests. It runs no design check. [Project checks](../tests/project-checks.md) · [Agent instructions](../AGENTS.md)
+
 ## R7 workflow checks
 
 The nominal route binds the displayed Fusion archive, role-based mass budget, raw pickup and field traces and both Speaker sensors. The R7 animation uses a single continuous, chassis-relative clip. The historical WebM uses its own film clock, including the slowed release. The two chapter registers independently verify the media, observations and clock mapping. [R7 animation chapters](../experiments/speaker-cycles/r7-first-chapters.json) · [Original film chapters](../experiments/speaker-cycles/first-film-chapters.json) · [Shared-counter evidence](../sim/pressure/evidence/r7-straight-first-two.json)
