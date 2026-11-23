@@ -36,21 +36,30 @@ def risks(operating):
                   f"Across all {everything['shots']} perturbed shots of the campaign {everything['delivered']} were delivered "
                   f"and {everything['counted']} counted. The count rate did not move with launcher speed (6.56 to 7.68 m/s) or "
                   f"with the speaker's counter drive speed; the friction of the speaker surfaces was not varied. "
-                  f"{late['shots']} uncounted NOTES at the revised lane were watched for 20 s: {late['countedLate']} "
-                  f"counted late, {late['stillInSpeaker']} stayed in the speaker and {late['leftSpeaker']} came back out "
-                  f"through the opening within 3 s without shadowing either beam. So the criterion of this release, "
-                  f"delivered and eventually counted, is met by {here['counted']} of {here['shots']} perturbed NOTES at "
-                  f"the firing station and is unmet for the rest. The frozen full-mission campaign at the trial station "
-                  f"failed three of its first seven starts. What happens to a NOTE inside the speaker rests on assumed "
-                  f"field conveyor speeds and friction, so the deciding evidence is a real speaker.",
+                  f"The {here['shots'] - here['counted']} uncounted NOTES at the firing station bounce out. Watched for "
+                  f"20 s, each enters 0.54 to 0.63 m past the opening, returns through the opening within 3 s without "
+                  f"shadowing either beam and comes to rest on the carpet in front of the speaker. None counts late and "
+                  f"none stays in the speaker ({late['shots']} NOTES watched in all, one of them at 123 degrees: "
+                  f"{late['countedLate']} counted late, {late['stillInSpeaker']} stayed, {late['leftSpeaker']} bounced "
+                  f"out). The owner's criterion, wholly through the opening and eventually counted, is NOT met for those "
+                  f"{here['shots'] - here['counted']} NOTES. That is an open finding for the owner. Nothing recorded at "
+                  f"release separates them: launch speed, elevation, lateral velocity, peak height and opening margin all "
+                  f"lie inside the range of the counted NOTES. They are the carries R02-inner, R03-center-mid and "
+                  f"R03-outer, which bounce out in 15 to 18 percent of their deliveries across the campaign while five "
+                  f"other carries never do, so the cause travels with the incoming NOTE state. NOTE attitude and spin at "
+                  f"the opening were not compared. A NOTE that bounces out touches none of the counter parts that every "
+                  f"counted NOTE touches. The frozen full-mission campaign at the trial station failed three of its first "
+                  f"seven starts. What happens to a NOTE inside the speaker rests on assumed field conveyor speeds and "
+                  f"friction, so the deciding evidence is a real speaker.",
              evidence="scoring-window-04/summary.json; scoring-window-04/results/released-20s.jsonl, angle-123-20s.jsonl; "
                       "scoring-window-04/shots/; counted-reset-power-02/run-R02-96.json, run-R03-96.json, run-R06-96.json",
              benchTest=_bench("Starts out of 20 on a full field speaker that score six floor NOTES within 120 s", 19, 18, "starts")),
         dict(id="speaker-count-delay", condition="Real speaker counting a delivered NOTE",
              risk=f"In simulation {here['counted']} of {here['shots']} perturbed NOTES delivered from the firing station are "
                   f"counted within 7 s (median {here['medianCountS']:.1f} s, latest {here['latestCountS']:.1f} s after the "
-                  f"shot starts). Six scores on 19 of 20 starts needs more than 99 in 100. The delay and the uncounted "
-                  f"NOTES are properties of the modelled speaker interior and are unmeasured.",
+                  f"shot starts). The other {here['shots'] - here['counted']} are not late: they bounce back out through "
+                  f"the opening within 3 s and are never counted. Six scores on 19 of 20 starts needs more than 99 in "
+                  f"100. The delay and the bounce-outs are properties of the modelled speaker interior and are unmeasured.",
              evidence="scoring-window-04/summary.json",
              benchTest=_bench("Delivered NOTES out of 20 counted by a real speaker within 7 s of the shot", 20, 18, "NOTES")),
         dict(id="firing-lane-tolerance", condition="Chassis position and heading error at the firing station",
@@ -82,10 +91,13 @@ def risks(operating):
              risk=f"Delivery holds for cassette launch angles of {span('angle')} at the firing lane and fails at "
                   f"{min(window['angle']['fails']):g} and {max(window['angle']['fails']):g} deg. The edges are thin: 3.4 mm "
                   f"of opening margin at 121 degrees on 34 NOTES and 26.0 mm at 125 degrees on the six NOTES fired there. "
-                  f"The release sets {lane['cassetteAngleDeg']:g} degrees; the cycle trials lifted to "
-                  f"{old['cassetteAngleDeg']:g} degrees, and the campaign re-poses the launcher for other angles without "
-                  f"re-running the lift. Detailed design puts the launch hard stop at the released angle.",
-             evidence="scoring-window-04/summary.json; scoring-window-04/results/high-125.jsonl, high-126.jsonl",
+                  f"The release sets {lane['cassetteAngleDeg']:g} degrees, the angle of the cycle trials: 1 degree above "
+                  f"the thin low edge and 3 degrees below the high one. At 123 degrees the opening margin is larger "
+                  f"(67.7 mm against 56.7 mm) but the nominal NOTES count 9 of 12 against 12 of 12, so 123 degrees is "
+                  f"recorded as an alternative, not the setpoint. The campaign re-poses the launcher for other angles "
+                  f"without re-running the lift. Detailed design puts the launch hard stop at the released angle.",
+             evidence="scoring-window-04/summary.json; scoring-window-04/results/high-125.jsonl, high-126.jsonl, "
+                      "angle-123-window.jsonl",
              benchTest=_bench(f"Largest departure of the cassette launch angle from {lane['cassetteAngleDeg']:g} degrees over "
                               f"20 lifts to the stop", 1.0, 2.0, "deg")),
         dict(id="launcher-speed-floor", condition="Launch belts below their commanded speed at feed",
@@ -167,9 +179,10 @@ def risks(operating):
              benchTest=_bench("Lowest bus voltage during a shot on a pack at 11.8 V open circuit", 8.0, 7.9, "V")),
         dict(id="inspection-mass",
              risk="The upper inspection estimate is 56.270 kg against 56.699 kg: 0.429 kg of headroom, with a 3 to 6 kg "
-                  "unallocated reserve inside the estimate. The mass ledger is the study made before revision 004-A, so the "
-                  "lengthened launch shafts (0.07 kg) and the taller launch motor mounts are not in the estimate. They, "
-                  "the control-board guard and detailing growth draw on that reserve.",
+                  "unallocated reserve inside the estimate. The mass ledger is the study made before revision 004-A. Known "
+                  "omission: the lengthened launch shafts, about 0.07 kg (9,425 mm3 of added shaft in the layout solids, "
+                  "taken as steel at 7.85 g/cm3), and the taller launch motor mounts, which are not drawn and not "
+                  "estimated. They, the control-board guard and detailing growth draw on that reserve.",
              evidence="mounted-slide-02/gross-power.json",
              benchTest=_bench("Weighed inspection mass without battery and bumpers", 56.69, 56.70, "kg")),
         dict(id="endgame-clock",

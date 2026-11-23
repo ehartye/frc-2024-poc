@@ -97,6 +97,25 @@ STOP_MM = 8.0
 REEL_FROM_S = 0.45
 
 
+def official_field():
+    """Show the four replays with the official speaker and stage of release 003-1.
+
+    Release 003-1 tessellated the official field parts and bound the same four recorded runs to their trial
+    files. Its replay set is carried here with the repaired part names. The runs were recorded on the release
+    003 geometry; the two raised launch motors of revision 004-A move with their recorded group.
+    """
+    import gzip
+    import replay_set
+    source = REPO / "cad/preliminary-design/releases/003-1/replays.json.gz"
+    text = gzip.decompress(source.read_bytes()).decode("utf-8").replace("Â·", "·")
+    note = " Recorded on the release 003 geometry, before the launch motors were raised in revision 004-A."
+    data = json.loads(text)
+    for replay in data["replays"]:
+        replay["basis"] = replay["basis"].rstrip() + note
+    packed = gzip.compress((json.dumps(data, separators=(",", ":"), ensure_ascii=False) + chr(10)).encode("utf-8"), mtime=0)
+    (OUT / replay_set.NAME).write_bytes(packed)
+
+
 # Every pin is written from the repository root, which is the project the layout check runs in.
 PREFIX = OUT.relative_to(REPO).as_posix() + "/" if OUT.is_relative_to(REPO) else ""
 
@@ -438,6 +457,7 @@ def main():
         import replays
         replays.main()
         replay_set.main()
+        official_field()
         presentation["replays"] = [dict(file=PREFIX + replay_set.NAME, sha256=sha(OUT / replay_set.NAME))]
     plan = dict(schema="agent-frc/preliminary-layout@1", issue=ISSUE, datum=datum, step=step, design=design, motion=motion,
                 groups=groups, mounts=mounts, stages=stages, cycle=cycle_ids, budgets=budget, missingInputs=[],

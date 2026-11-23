@@ -1,11 +1,20 @@
 {
-  "current": "003-1",
+  "current": "004",
   "releases": [
     "003",
-    "003-1"
+    "003-1",
+    "004"
   ],
   "designStatus": {
     "003": "superseded",
-    "003-1": "in-progress"
+    "003-1": "superseded",
+    "004": "in-progress"
+  },
+  "revision": {
+    "004": {
+      "number": 3,
+      "date": "2026-11-22",
+      "commit": "fdb7c69ba3b1921018a3d0cd173f267e5bbe7404"
+    }
   }
 }

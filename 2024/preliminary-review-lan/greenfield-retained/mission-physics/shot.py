@@ -5,9 +5,9 @@ import sys,json,math,hashlib
 from types import SimpleNamespace
 import numpy as np,mujoco as mj
 here=Path(__file__).resolve().parent
-root=Path('R:/2024/six-speaker-20261118')
+repo=next(d for d in here.parents if (d/'sim/pressure').is_dir());root=repo/'2024/six-speaker-20261118'
 field=root/'field-source'/'blue-speaker'
-sys.path[:0]=[str(root/'field-query-libs'),'R:/sim/pressure']
+sys.path[:0]=[str(root/'field-query-libs'),str(repo/'sim/pressure')]
 from speaker_surfaces import SpeakerSurfaces,digest
 from run_speaker_field import field_wrench
 from speaker_score_observer import opening_passage,shadow_margin,beam_samples

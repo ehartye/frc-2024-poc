@@ -247,19 +247,19 @@
   }
  },
  "allFrozenShots": {
-  "shots": 1670,
-  "delivered": 1337,
-  "counted": 1232,
-  "countedFraction": 0.7377245508982035,
+  "shots": 1742,
+  "delivered": 1398,
+  "counted": 1290,
+  "countedFraction": 0.7405281285878301,
   "counted95": [
-   0.7160989668276333,
-   0.7582589413519697
+   0.7194298533693629,
+   0.7605678738013036
   ],
   "smallestOpeningMarginMm": 0.020649612946146284,
-  "medianCountS": 4.175499999999357,
+  "medianCountS": 4.178749999999361,
   "latestCountS": 6.940750000002737,
-  "uncountedStillInSpeaker": 36,
-  "uncountedLeftSpeaker": 69,
+  "uncountedStillInSpeaker": 37,
+  "uncountedLeftSpeaker": 71,
   "lowestBusV": 8.349209813342059,
   "uncounted": [
    "R01-center-high-96",
@@ -300,6 +300,8 @@
    "R01-center-mid-96",
    "R01-center-mid-96",
    "R01-center-mid-96",
+   "R01-center-mid-96",
+   "R01-center-mid-96",
    "R01-inner-96",
    "R01-inner-96",
    "R01-inner-96",
@@ -356,6 +358,8 @@
    "R02-inner-96",
    "R02-inner-96",
    "R02-inner-96",
+   "R02-inner-96",
+   "R02-inner-96",
    "R02-middle-96",
    "R02-middle-96",
    "R02-middle-96",
@@ -422,6 +426,8 @@
    "R03-center-mid-96",
    "R03-center-mid-96",
    "R03-center-mid-96",
+   "R03-inner-96",
+   "R03-inner-96",
    "R03-inner-96",
    "R03-inner-96",
    "R03-inner-96",
@@ -589,6 +595,9 @@
    "R05-middle-96",
    "R05-middle-96",
    "R05-middle-96",
+   "R05-middle-96",
+   "R05-middle-96",
+   "R05-middle-96",
    "R05-outer-96",
    "R05-outer-96",
    "R05-outer-96",
@@ -603,6 +612,9 @@
    "R05-outer-96",
    "R05-outer-96",
    "R05-outer-96",
+   "R05-outer-96",
+   "R05-outer-96",
+   "R05-outer-96",
    "R06-middle-96",
    "R06-middle-96",
    "R06-middle-96",
@@ -623,6 +635,8 @@
    "R06-middle-96",
    "R06-middle-96",
    "R06-middle-96",
+   "R07-center-high-96",
+   "R07-center-high-96",
    "R07-center-high-96",
    "R07-center-high-96",
    "R07-center-high-96",
@@ -715,6 +729,6 @@
  "criterion": "Counted: both speaker beams shadowed within 7 s of the shot start, firing bus at or above 8 V. Delivered: whole NOTE through the opening.",
  "source": {
   "file": "2024/preliminary-review-lan/greenfield-retained/scoring-window-04/summary.json",
-  "sha256": "c6c432e59dd5477af38f64917f59ccdd3981e34b57c40558ad545078b0b1d7e9"
+  "sha256": "d7a5098b53ccaf5befa9f4f8aa5be6936bfe9de1170b9032a08510a5228cf270"
  }
 }

@@ -1,7 +1,7 @@
 {
   "schema": "agent-frc/preliminary-layout-result@1",
   "issue": "2024-004-guided-cassette",
-  "planSha256": "199e3ce800af75ab12d04cb4c0698a23c3bc1f6ed43cc3a789af5ce4b937b1e5",
+  "planSha256": "9f7c9b6fded6d4c55402abc4fb773f64bb11e7bff495c7e0380c77da13de68e8",
   "design": {
     "file": "cad/preliminary-design/releases/004/design.json",
     "sha256": "ec8ad83d89524c21bf01782f98d2b350b2fffcc08ef8d07315ce04003cb8d95e"
@@ -2735,9 +2735,9 @@
     "verified": true,
     "scene": {
       "file": "cad/preliminary-design/releases/004/review-scene.json.gz",
-      "sha256": "ce0285ba112f3fa45be9baaf5033c0d01b1e9b94472e991eb45964b5e3c99031",
-      "contentSha256": "9963704cacbcb011da3583cd0040fecd27ee31ba9adf40016d9721766c53ab76",
-      "bytes": 31662767
+      "sha256": "a4d6cff27cc84987bfd6831e20993542cd6d20259273dcd8fb92b1950613e8dd",
+      "contentSha256": "de96f133f0a503a78b7d83f0cd263b83470c27cb8a9eddbf76b2e970dfa1885e",
+      "bytes": 79043999
     }
   },
   "groups": {
@@ -7774,7 +7774,7 @@
           "basis": "Recorded free-NOTE path of the fine nominal shot trial from feed command to release.",
           "evidence": {
             "file": "cad/preliminary-design/releases/004/trial-feed-01.json",
-            "sha256": "d7b6ddb5b88076d59df87a8a1fa7f6c7926207e81a5251337fb963ec76b78065"
+            "sha256": "45d3343f516e36d0a4a62ee462edb6d2a8c9cf9046d6352bfe8ee87b77073c4b"
           },
           "drive": {
             "Launch drive": "Launch belts held at the 6.88 m/s command",
@@ -7798,7 +7798,7 @@
           "basis": "Recorded free-NOTE path of the fine nominal shot trial from feed command to release.",
           "evidence": {
             "file": "cad/preliminary-design/releases/004/trial-feed-02.json",
-            "sha256": "97dd151fa5877581182a3f82f3e5ab1878618762d49390a18e7121d13d78840a"
+            "sha256": "c71c695e8443a8aa0fc1d67647994d752d2c22e075fc9319e37cf3b4801eaa17"
           },
           "drive": {
             "Launch drive": "Launch belts held at the 6.88 m/s command",
@@ -7822,7 +7822,7 @@
           "basis": "Recorded free-NOTE path of the fine nominal shot trial from feed command to release.",
           "evidence": {
             "file": "cad/preliminary-design/releases/004/trial-feed-03.json",
-            "sha256": "1dd6588722ba170b5b378b952f210ae37fda9b39d10e8710f195cfbbeb1ad577"
+            "sha256": "4a96904ee7e9b083780535e23a636fec7ad5a7a0a025324066e405e56f731cd8"
           },
           "drive": {
             "Launch drive": "Launch belts held at the 6.88 m/s command",
@@ -7846,7 +7846,7 @@
           "basis": "Recorded free-NOTE path of the fine nominal shot trial from feed command to release.",
           "evidence": {
             "file": "cad/preliminary-design/releases/004/trial-feed-04.json",
-            "sha256": "6fcab71090bca35d4130025789be5eaa13bc808135aa7ded9e82189e572de866"
+            "sha256": "2db8c61e5981144a1c374c6b393461aaec9267ecdc22db76715f7094cbb49b4b"
           },
           "drive": {
             "Launch drive": "Launch belts held at the 6.88 m/s command",
@@ -7865,7 +7865,7 @@
         "NOTE": {
           "evidence": {
             "file": "cad/preliminary-design/releases/004/trial-flight-01.json",
-            "sha256": "e67c0391f37e20be33157dcd8fc0a08bf996a3f8d300bc2457dc5c8eddb1a523"
+            "sha256": "99c086beeeff5467c802cc17bb636c9297f9bb87bf01c71f6510f96521e64e1c"
           },
           "basis": "Recorded free-NOTE path of the fine nominal shot trial from release to full passage of the opening."
         }
@@ -7881,7 +7881,7 @@
         "NOTE": {
           "evidence": {
             "file": "cad/preliminary-design/releases/004/trial-flight-02.json",
-            "sha256": "2d3fa1c392168f9cb3e0fddd32c3c038f32d4e945b6b3d4056a7a172fcf3cd37"
+            "sha256": "3fd9668a5fe8d318c878736432cbaf9d4a3e712489ca4b296d75db30ae570e96"
           },
           "basis": "Recorded free-NOTE path of the fine nominal shot trial from release to full passage of the opening."
         }

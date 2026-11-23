@@ -27,7 +27,7 @@
    "objective": "Feed and deliver the NOTE through the speaker opening",
    "trial": {
     "file": "cad/preliminary-design/releases/004/trial-feed-04.json",
-    "sha256": "6fcab71090bca35d4130025789be5eaa13bc808135aa7ded9e82189e572de866"
+    "sha256": "2db8c61e5981144a1c374c6b393461aaec9267ecdc22db76715f7094cbb49b4b"
    }
   },
   {
@@ -37,7 +37,7 @@
    "objective": "Feed and deliver the NOTE through the speaker opening",
    "trial": {
     "file": "cad/preliminary-design/releases/004/trial-flight-02.json",
-    "sha256": "2d3fa1c392168f9cb3e0fddd32c3c038f32d4e945b6b3d4056a7a172fcf3cd37"
+    "sha256": "3fd9668a5fe8d318c878736432cbaf9d4a3e712489ca4b296d75db30ae570e96"
    }
   },
   {
@@ -162,7 +162,7 @@
  "risks": [
   {
    "id": "scoring-repeatability",
-   "risk": "Six scores in 120 s on 19 of 20 starts is not supported by simulation. From the firing station every one of 34 perturbed carried NOTES passes through the opening, but 31 (91%) shadow both speaker beams within 7 s; six in a row at that rate is about 57%. Across all 1670 perturbed shots of the campaign 1337 were delivered and 1232 counted. The count rate did not move with launcher speed (6.56 to 7.68 m/s) or with the speaker's counter drive speed; the friction of the speaker surfaces was not varied. 4 uncounted NOTES at the revised lane were watched for 20 s: 0 counted late, 0 stayed in the speaker and 4 came back out through the opening within 3 s without shadowing either beam. So the criterion of this release, delivered and eventually counted, is met by 31 of 34 perturbed NOTES at the firing station and is unmet for the rest. The frozen full-mission campaign at the trial station failed three of its first seven starts. What happens to a NOTE inside the speaker rests on assumed field conveyor speeds and friction, so the deciding evidence is a real speaker.",
+   "risk": "Six scores in 120 s on 19 of 20 starts is not supported by simulation. From the firing station every one of 34 perturbed carried NOTES passes through the opening, but 31 (91%) shadow both speaker beams within 7 s; six in a row at that rate is about 57%. Across all 1742 perturbed shots of the campaign 1398 were delivered and 1290 counted. The count rate did not move with launcher speed (6.56 to 7.68 m/s) or with the speaker's counter drive speed; the friction of the speaker surfaces was not varied. The 3 uncounted NOTES at the firing station bounce out. Watched for 20 s, each enters 0.54 to 0.63 m past the opening, returns through the opening within 3 s without shadowing either beam and comes to rest on the carpet in front of the speaker. None counts late and none stays in the speaker (4 NOTES watched in all, one of them at 123 degrees: 0 counted late, 0 stayed, 4 bounced out). The owner's criterion, wholly through the opening and eventually counted, is NOT met for those 3 NOTES. That is an open finding for the owner. Nothing recorded at release separates them: launch speed, elevation, lateral velocity, peak height and opening margin all lie inside the range of the counted NOTES. They are the carries R02-inner, R03-center-mid and R03-outer, which bounce out in 15 to 18 percent of their deliveries across the campaign while five other carries never do, so the cause travels with the incoming NOTE state. NOTE attitude and spin at the opening were not compared. A NOTE that bounces out touches none of the counter parts that every counted NOTE touches. The frozen full-mission campaign at the trial station failed three of its first seven starts. What happens to a NOTE inside the speaker rests on assumed field conveyor speeds and friction, so the deciding evidence is a real speaker.",
    "evidence": "scoring-window-04/summary.json; scoring-window-04/results/released-20s.jsonl, angle-123-20s.jsonl; scoring-window-04/shots/; counted-reset-power-02/run-R02-96.json, run-R03-96.json, run-R06-96.json",
    "benchTest": {
     "measure": "Starts out of 20 on a full field speaker that score six floor NOTES within 120 s",
@@ -173,7 +173,7 @@
   },
   {
    "id": "speaker-count-delay",
-   "risk": "In simulation 31 of 34 perturbed NOTES delivered from the firing station are counted within 7 s (median 4.1 s, latest 5.2 s after the shot starts). Six scores on 19 of 20 starts needs more than 99 in 100. The delay and the uncounted NOTES are properties of the modelled speaker interior and are unmeasured.",
+   "risk": "In simulation 31 of 34 perturbed NOTES delivered from the firing station are counted within 7 s (median 4.1 s, latest 5.2 s after the shot starts). The other 3 are not late: they bounce back out through the opening within 3 s and are never counted. Six scores on 19 of 20 starts needs more than 99 in 100. The delay and the bounce-outs are properties of the modelled speaker interior and are unmeasured.",
    "evidence": "scoring-window-04/summary.json",
    "benchTest": {
     "measure": "Delivered NOTES out of 20 counted by a real speaker within 7 s of the shot",
@@ -217,8 +217,8 @@
   },
   {
    "id": "launch-angle-tolerance",
-   "risk": "Delivery holds for cassette launch angles of 121 to 125 deg at the firing lane and fails at 120 and 126 deg. The edges are thin: 3.4 mm of opening margin at 121 degrees on 34 NOTES and 26.0 mm at 125 degrees on the six NOTES fired there. The release sets 122 degrees; the cycle trials lifted to 122 degrees, and the campaign re-poses the launcher for other angles without re-running the lift. Detailed design puts the launch hard stop at the released angle.",
-   "evidence": "scoring-window-04/summary.json; scoring-window-04/results/high-125.jsonl, high-126.jsonl",
+   "risk": "Delivery holds for cassette launch angles of 121 to 125 deg at the firing lane and fails at 120 and 126 deg. The edges are thin: 3.4 mm of opening margin at 121 degrees on 34 NOTES and 26.0 mm at 125 degrees on the six NOTES fired there. The release sets 122 degrees, the angle of the cycle trials: 1 degree above the thin low edge and 3 degrees below the high one. At 123 degrees the opening margin is larger (67.7 mm against 56.7 mm) but the nominal NOTES count 9 of 12 against 12 of 12, so 123 degrees is recorded as an alternative, not the setpoint. The campaign re-poses the launcher for other angles without re-running the lift. Detailed design puts the launch hard stop at the released angle.",
+   "evidence": "scoring-window-04/summary.json; scoring-window-04/results/high-125.jsonl, high-126.jsonl, angle-123-window.jsonl",
    "benchTest": {
     "measure": "Largest departure of the cassette launch angle from 122 degrees over 20 lifts to the stop",
     "pass": 1.0,
@@ -382,7 +382,7 @@
   },
   {
    "id": "inspection-mass",
-   "risk": "The upper inspection estimate is 56.270 kg against 56.699 kg: 0.429 kg of headroom, with a 3 to 6 kg unallocated reserve inside the estimate. The mass ledger is the study made before revision 004-A, so the lengthened launch shafts (0.07 kg) and the taller launch motor mounts are not in the estimate. They, the control-board guard and detailing growth draw on that reserve.",
+   "risk": "The upper inspection estimate is 56.270 kg against 56.699 kg: 0.429 kg of headroom, with a 3 to 6 kg unallocated reserve inside the estimate. The mass ledger is the study made before revision 004-A. Known omission: the lengthened launch shafts, about 0.07 kg (9,425 mm3 of added shaft in the layout solids, taken as steel at 7.85 g/cm3), and the taller launch motor mounts, which are not drawn and not estimated. They, the control-board guard and detailing growth draw on that reserve.",
    "evidence": "mounted-slide-02/gross-power.json",
    "benchTest": {
     "measure": "Weighed inspection mass without battery and bumpers",

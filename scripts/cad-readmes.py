@@ -11,7 +11,8 @@ from urllib.parse import quote
 START = "<!-- cad-still -->"
 END = "<!-- /cad-still -->"
 # Withdrawn pages are kept byte for byte, so their READMEs are never rewritten.
-ARCHIVES = ("docs/detailed-design/archive/",)
+# Archived showcase files and the recorded trial inputs, with their vendored libraries, keep their own READMEs.
+ARCHIVES = ("docs/detailed-design/archive/", "2024/")
 STILL = "cad/preliminary-design/media/002-preliminary-robot.png"
 RECORD = "cad/preliminary-design/media/002-preliminary-robot.json"
 
