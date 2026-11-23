@@ -89,6 +89,21 @@ PHASES = dict(
               text="Carriage seats on the slide stops and holds after motor power is cut"),
 )
 SCORING = ("reset", "acquire", "lift", "feed", "flight", "stow")
+# The name each mission phase takes in the animation list and the check results of the review page.
+PHASE_TITLES = {
+    "reset": "Return the empty cassette to the floor pickup pose",
+    "acquire": "Pick up a NOTE from the floor",
+    "lift": "Lift the seated NOTE to the launch angle",
+    "feed": "Feed the NOTE into the launch belts",
+    "flight": "Shoot the NOTE through the speaker opening",
+    "stow": "Stow the empty cassette at the parked angle",
+    "approach": "Lower the cassette to the chain and open the keeper",
+    "capture": "Close the keeper on the chain",
+    "hoist": "Hoist the robot on both lines",
+    "hold": "Hold on the slide stops with motor power cut",
+    "withdraw-service-pin": "Withdraw the battery service pin",
+    "lift-battery-at-service-index": "Lift the battery out at the service index",
+}
 CLIMB_TRACE = ledgers.CLIMB["front"]
 # Display allocations of the hoist publisher (guided-hoist-01/publish-review.py): not solved by the climb trial.
 DOG_MM, DOG_S = -10.8, 0.13
@@ -457,6 +472,8 @@ def main():
                         and not c.get("intendedInterfaces"))
     presentation = evidence.presentation(components, groups, member_group, rigid, duty_table, timelines, case_phase,
                                          register, operating)
+    shown = set(case_phase.values()) | {c["id"] for c in cases if c["id"] not in case_phase}
+    presentation["phases"] = {p: dict(title=t) for p, t in PHASE_TITLES.items() if p in shown}
     if not opt.only and OUT == RELEASE:
         # The four recorded season runs join the one motion list as replays, bound to their trial files.
         import replay_set

@@ -11078,6 +11078,41 @@
     "reason": "No file of this release states the largest reach beyond the frame or the largest height through chain capture and hoist. At floor pickup the furthest forward point is 640.0 mm sampled (642.3 mm bounded) against the project front limit of 644.8 mm, which is 304.8 mm beyond the frame."
    }
   ],
+  "phases": {
+   "reset": {
+    "title": "Return the empty cassette to the floor pickup pose"
+   },
+   "acquire": {
+    "title": "Pick up a NOTE from the floor"
+   },
+   "lift": {
+    "title": "Lift the seated NOTE to the launch angle"
+   },
+   "feed": {
+    "title": "Feed the NOTE into the launch belts"
+   },
+   "flight": {
+    "title": "Shoot the NOTE through the speaker opening"
+   },
+   "stow": {
+    "title": "Stow the empty cassette at the parked angle"
+   },
+   "approach": {
+    "title": "Lower the cassette to the chain and open the keeper"
+   },
+   "capture": {
+    "title": "Close the keeper on the chain"
+   },
+   "hoist": {
+    "title": "Hoist the robot on both lines"
+   },
+   "hold": {
+    "title": "Hold on the slide stops with motor power cut"
+   },
+   "withdraw-service-pin": {
+    "title": "Withdraw the battery service pin"
+   }
+  },
   "replays": [
    {
     "file": "cad/preliminary-design/releases/1.0/replays.json.gz",
