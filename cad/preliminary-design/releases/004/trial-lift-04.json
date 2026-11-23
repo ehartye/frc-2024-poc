@@ -4,10 +4,10 @@
  "phase": "lift",
  "interaction": "Retention of the seated NOTE through the loaded lift",
  "cycleClockS": [
-  9.47,
-  9.68
+  11.580000000000002,
+  12.75
  ],
- "pathDeviationMm": 0.9544719140644522,
+ "pathDeviationMm": 39.63178155260887,
  "sources": {
   "carry": {
    "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
@@ -46,6 +46,19 @@
     }
    }
   },
+  "brackets": [
+   {
+    "input": "lift duration",
+    "unit": "s",
+    "passing": 1.8,
+    "failing": 1.4,
+    "note": "The NOTE stayed in its seat band in every case, down to a 0.3 s lift and up to 90 m/s2 of chassis acceleration (2.6 m/s2 as released), so retention itself has no failing value in the tested range. The first limit reached is the cover leaf leaving its cam stop: 0.75 deg of overtravel at 1.8 s and 1.20 deg at 1.4 s against a 1 deg limit set here. The released 4.8 s lift gives 0.13 deg.",
+    "evidence": {
+     "file": "2024/preliminary-review-lan/greenfield-retained/retention-brackets-04/results.json",
+     "sha256": "8a13448dbfde39af2a19642165bfd3cd83c7abbc1f315f388fa272d26e0dbff4"
+    }
+   }
+  ],
   "timestep": {
    "coarseS": 0.0005,
    "fineS": 0.00025,
@@ -69,7 +82,7 @@
    ]
   }
  },
- "limits": "Free rigid NOTE on commanded cassette, truck and chassis motion. Carpet grip, tread compliance and field counter speed are assumed values awaiting measurement. No sensitivity bracket with a failing value exists for retention on the 4.8 s lift.",
+ "limits": "Free rigid NOTE on commanded cassette, truck and chassis motion. Carpet grip, tread compliance and field counter speed are assumed values awaiting measurement. Retention did not fail in any bracket case; the bracket states the first mechanical limit reached.",
  "transport": {
   "case": "lift-04",
   "payload": "NOTE",
@@ -83,23 +96,23 @@
     {
      "kind": "rotation",
      "axis": [
-      -0.6384923361207282,
-      -0.45156824297246817,
-      -0.6232284161155148
+      -0.7916127534241735,
+      0.3285502358842598,
+      0.5151737484738484
      ],
      "originMm": [
-      338.41769999999997,
-      -0.0019000000000000128,
-      366.6975
+      292.76590000000016,
+      -0.000400000000000178,
+      759.5631000000001
      ],
-     "travelDeg": 0.016428145607013354
+     "travelDeg": 0.011388083715765029
     },
     {
      "kind": "translation",
      "travelMm": [
-      5.37947139355424,
-      0.004799999999999978,
-      -4.548600358628391
+      -18.057901166587783,
+      0.0004000000000005388,
+      -20.256265028252415
      ]
     },
     {
@@ -110,18 +123,18 @@
       0.0
      ],
      "originMm": [
-      101.78789002058082,
+      185.75515728666457,
       0.0,
       501.0
      ],
-     "travelDeg": 6.190564034023109
+     "travelDeg": 51.0836953742419
     },
     {
      "kind": "translation",
      "travelMm": [
-      -36.143547289598516,
+      -0.5943844131355149,
       0.0,
-      -1.7053025658242404e-13
+      -5.684341886080802e-14
      ]
     }
    ]
@@ -131,23 +144,23 @@
     {
      "kind": "rotation",
      "axis": [
-      0.0006282017467312684,
-      0.9999995600618672,
-      -0.0006965907245636477
+      0.0017755244761820976,
+      0.9999984231742072,
+      3.408714892029442e-05
      ],
      "originMm": [
       185.0,
       0.0,
       501.0
      ],
-     "travelDeg": 165.2491072319343
+     "travelDeg": 67.86028502997686
     },
     {
      "kind": "translation",
      "travelMm": [
-      -43.24322375406676,
-      0.3975623222780579,
-      -33.85608892399273
+      33.44488848095165,
+      0.42588854966677936,
+      50.617516914285396
      ]
     }
    ]

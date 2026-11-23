@@ -1,6 +1,6 @@
 {
  "schema": "frc-2024-poc/joint-qualification@1",
- "stepSha256": "91ac459ba6f4f3116fc5da3bf25d54c9e58ee19e214e0dba8cdc076960e50b74",
+ "stepSha256": "2914b6f0b94eda5c0fa18f411c58f933ce0502527997c9e2baf06476a0af9343",
  "case": "hoist-01",
  "pair": [
   "Hoist rope drum to sheave · left",
@@ -23,32 +23,32 @@
   },
   {
    "t": 0.25,
-   "gapMm": 5.5206198462960265e-12,
+   "gapMm": 0.0,
    "volumeMm3": 0.0
   },
   {
    "t": 0.375,
-   "gapMm": 5.510001217795723e-12,
+   "gapMm": 0.0,
    "volumeMm3": 0.0
   },
   {
    "t": 0.5,
-   "gapMm": 5.531364130271905e-12,
-   "volumeMm3": 0.0
-  },
-  {
-   "t": 0.625,
    "gapMm": 5.5206198462960265e-12,
    "volumeMm3": 0.0
   },
   {
-   "t": 0.75,
+   "t": 0.625,
    "gapMm": 0.0,
    "volumeMm3": 0.0
   },
   {
+   "t": 0.75,
+   "gapMm": 5.573337064074511e-12,
+   "volumeMm3": 0.0
+  },
+  {
    "t": 0.875,
-   "gapMm": 0.0,
+   "gapMm": 5.5206198462960265e-12,
    "volumeMm3": 0.0
   },
   {

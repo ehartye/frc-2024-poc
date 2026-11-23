@@ -15,7 +15,9 @@ HERE = Path(__file__).resolve().parent
 SOURCE = HERE.parent / "counted-reset-power-02"
 AXES = ("speed", "angle", "x", "y", "yaw", "lower", "upper", "fieldMu")
 NOMINAL = dict(speed=6.88, angle=122.0, x=1.39, y=5.871, yaw=0.0, lower=0.75, upper=0.75, fieldMu=0.45)
-REVISED_Y = 5.821
+# The released operating point: the lane moved 50 mm toward the opening centre, and the launch angle at the
+# centre of the delivery window (fails at 120 and 126 degrees).
+REVISED = dict(y=5.821, angle=123.0)
 
 
 def released():
@@ -79,7 +81,7 @@ def main():
                    population=dict(frozenCarries=len({(r["tag"], r["n"]) for r in frozen}),
                                    nominalCarries=len({(r["tag"], r["n"]) for r in dev})),
                    errors=errors, stoppedOnHardStrike=vetoed, sweeps={})
-    bases = dict(released=NOMINAL, revised=dict(NOMINAL, y=REVISED_Y))
+    bases = dict(released=NOMINAL, revised=dict(NOMINAL, **REVISED))
     for base_name, base in bases.items():
         for axis in AXES:
             if axis == "upper":

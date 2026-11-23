@@ -61,6 +61,8 @@ JOINTS = [
 LINES = [
     ("Hoist rope working span · left", "Hoist splice allowance · left", "Hoist line taken up at the left hook carriage splice"),
     ("Hoist rope working span · right", "Hoist splice allowance · right", "Hoist line taken up at the right hook carriage splice"),
+    ("Hoist rope working span · left", "Spliced hoist eye · left", "Hoist line running into its own spliced eye at the left hook carriage"),
+    ("Hoist rope working span · right", "Spliced hoist eye · right", "Hoist line running into its own spliced eye at the right hook carriage"),
 ]
 LINE_SECTION_MM2 = math.pi * 3.0 ** 2 / 4
 
@@ -95,15 +97,19 @@ STOP_MM = 8.0
 REEL_FROM_S = 0.45
 
 
+# Every pin is written from the repository root, which is the project the layout check runs in.
+PREFIX = OUT.relative_to(REPO).as_posix() + "/" if OUT.is_relative_to(REPO) else ""
+
+
 def save(name, value):
     path = OUT / name
     path.write_bytes((json.dumps(value, indent=1, allow_nan=False, ensure_ascii=False) + "\n").encode("utf-8"))
-    return dict(file=name, sha256=sha(path))
+    return dict(file=PREFIX + name, sha256=sha(path))
 
 
 def copy(source, name):
     shutil.copyfile(source, OUT / name)
-    return dict(file=name, sha256=sha(OUT / name))
+    return dict(file=PREFIX + name, sha256=sha(OUT / name))
 
 
 def scoring_states(c):
@@ -223,9 +229,14 @@ def main():
     parser.add_argument("plugin", type=Path)
     parser.add_argument("--only", default="", help="Comma-separated phases to build, for a partial trial run")
     parser.add_argument("--tolerance", type=float, default=1.0, help="Largest departure of a case path from its trace, mm")
+    parser.add_argument("--refine", default="", help="Finer tolerance for named phases, as PHASE=MM,PHASE=MM; use it only "
+                        "where a coarse case leaves a clearance thinner than the coarse tolerance")
     parser.add_argument("--battery", action="store_true", help="Include the battery lift at the service index")
     parser.add_argument("--count", action="store_true", help="Print the case count of each phase and write nothing")
     opt = parser.parse_args()
+    refine = {k: float(v) for k, v in (item.split("=") for item in opt.refine.split(",") if item)}
+    assert set(refine) <= set(PHASES), f"Unknown phase in --refine: {sorted(set(refine) - set(PHASES))}"
+    tolerance_of = lambda phase: refine.get(phase, opt.tolerance)
     OUT.mkdir(parents=True, exist_ok=True)
     if not opt.count:
         for stale in [*OUT.glob("trial-*.json"), *OUT.glob("joint-*.json")]:
@@ -236,7 +247,7 @@ def main():
     if not (step_file.is_file() and done.get("sha256") == sha(step_file) and done.get("sourceSha256") == sha(SOURCE_STEP)
             and done.get("raiseMm") == revise_step.RAISE_MM):
         save("step-revision.json", revise_step.build(SOURCE_STEP, step_file))
-    step = dict(file="robot.step", sha256=sha(step_file))
+    step = dict(file=PREFIX + "robot.step", sha256=sha(step_file))
     geo = Geometry(opt.plugin, step_file)
     names = sorted(geo.shapes)
     rigid, groups, member_group, components, scene = roster.build(names)
@@ -255,7 +266,7 @@ def main():
     wanted = [p for p in opt.only.split(",") if p] or list(PHASES)
     if opt.count:
         for phase in wanted:
-            cuts, _ = segments.cut(states[phase], classes, PHASES[phase]["carried"], opt.tolerance, corners)
+            cuts, _ = segments.cut(states[phase], classes, PHASES[phase]["carried"], tolerance_of(phase), corners)
             print(phase, len(states[phase]), "samples ->", len(cuts), "cases, largest deviation",
                   round(max(c[2] for c in cuts), 3), "mm")
         return
@@ -279,7 +290,7 @@ def main():
         if phase not in wanted:
             continue
         spec, sts = PHASES[phase], states[phase]
-        cuts, s = segments.cut(sts, classes, spec["carried"], opt.tolerance, corners)
+        cuts, s = segments.cut(sts, classes, spec["carried"], tolerance_of(phase), corners)
         for index, (i, j, deviation) in enumerate(cuts, 1):
             a, b = sts[i], sts[j]
             cid = phase if len(cuts) == 1 else f"{phase}-{index:02d}"
@@ -416,8 +427,8 @@ def main():
                                           source=gross_pin, issue=ISSUE, designSha256=design["sha256"], stepSha256=step_sha))
     narrative = copy(NARRATIVE, "strategic-narrative.md")
 
-    # The control repeats a feed case that has no designed joint in motion, so only the displaced tread can reject it.
-    control_case = next(c for c in cases if case_phase.get(c["id"]) == "feed" and note in c["moves"]
+    # The control repeats a feed or flight case that has no designed joint in motion, so only the displaced tread can reject it.
+    control_case = next(c for c in cases if case_phase.get(c["id"]) in ("feed", "flight") and note in c["moves"]
                         and not c.get("intendedInterfaces"))
     presentation = evidence.presentation(components, groups, member_group, rigid, duty_table, timelines, case_phase,
                                          register, operating)
@@ -427,10 +438,10 @@ def main():
         import replays
         replays.main()
         replay_set.main()
-        presentation["replays"] = [dict(file=replay_set.NAME, sha256=sha(OUT / replay_set.NAME))]
+        presentation["replays"] = [dict(file=PREFIX + replay_set.NAME, sha256=sha(OUT / replay_set.NAME))]
     plan = dict(schema="agent-frc/preliminary-layout@1", issue=ISSUE, datum=datum, step=step, design=design, motion=motion,
                 groups=groups, mounts=mounts, stages=stages, cycle=cycle_ids, budgets=budget, missingInputs=[],
-                premises=[dict(accepted=accepted, current=observed)], view="index.html", presentation=presentation,
+                premises=[dict(accepted=accepted, current=observed)], view=PREFIX + "package-motion.html", presentation=presentation,
                 narrativeReview=dict(source=narrative, objectives=evidence.objectives(case_phase)),
                 control=dict(case=control_case["id"], moving=note, displaced="Feed tread · left", offsetMm=[0, -22, 0],
                              basis="Push the left feed tread 22 mm into the NOTE, beyond its registered indentation limit."))

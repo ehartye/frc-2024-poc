@@ -1,0 +1,100 @@
+{
+ "schema": "frc-2024-poc/trial-record@1",
+ "case": "hold",
+ "phase": "hold",
+ "interaction": "Chain capture, guided hoist, latch on the slide stops and disabled hold",
+ "basis": "Recorded cassette angle, carriage draw, keeper gate and drum coil of the forward centre-of-gravity climb trial at the gross mass. The approach to the capture angle is commanded; the catch dog, clutch and stop-pin movements are drawn allocations.",
+ "cycleClockS": [
+  16.439999999999948,
+  32.23999999999046
+ ],
+ "cases": [
+  "approach-01",
+  "approach-02",
+  "capture",
+  "hoist-01",
+  "hoist-02",
+  "hoist-03",
+  "hold"
+ ],
+ "pathDeviationMm": 39.3707135375301,
+ "sources": {
+  "climb": {
+   "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/climb-gross-front.json",
+   "sha256": "c8105bdcc35482856a0a394e0c55bd3dbd42bece9cb757694cf4bdcc46405f02"
+  },
+  "rearward": {
+   "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/climb-gross-rear.json",
+   "sha256": "59297a9d07053e4fb250d9580e8d1da176071bebe0a0bc40186497a845ff7679"
+  },
+  "brackets": {
+   "file": "2024/preliminary-review-lan/greenfield-retained/climb-brackets-04/results.json",
+   "sha256": "7e0be044fc2c93b3779772ca60cd1cddbb223b0a5a701981e637bd16f640d429"
+  }
+ },
+ "qualification": {
+  "result": "pass",
+  "observed": {
+   "captured": true,
+   "latched": true,
+   "floorClearanceMm": 11.514135850496432,
+   "rearwardFloorClearanceMm": 80.54149283788938,
+   "weakBusMinV": 10.996054547236005,
+   "peakCombinedLineN": 638.8432329493886,
+   "robotMassKg": 71.76408882482156
+  },
+  "control": {
+   "condition": "Catch disabled, so the carriage never latches on its stops",
+   "rejected": true,
+   "evidence": {
+    "file": "2024/preliminary-review-lan/greenfield-retained/climb-brackets-04/cg+0.04-dt0.00025-ramp6.5-no-catch.json",
+    "sha256": "48dae5a9699664a4c3823fa98e67bd70dbac9de89587ec0c06e2c46e275423ef",
+    "observed": {
+     "latched": false,
+     "floorLoadAfterPowerCutN": 1466.6070348135993
+    }
+   }
+  },
+  "brackets": [
+   {
+    "input": "centre of gravity ahead of nominal",
+    "unit": "m",
+    "passing": 0.05,
+    "failing": 0.06,
+    "note": "Floor clearance in the disabled hold: 10.9 mm at 50 mm and 8.4 mm at 60 mm against 10 mm. Rearward the climb passes to -120 mm, the furthest tried.",
+    "evidence": {
+     "file": "2024/preliminary-review-lan/greenfield-retained/climb-brackets-04/results.json",
+     "sha256": "7e0be044fc2c93b3779772ca60cd1cddbb223b0a5a701981e637bd16f640d429"
+    }
+   },
+   {
+    "input": "hoist ramp duration",
+    "unit": "s",
+    "passing": 6.5,
+    "failing": 5.0,
+    "note": "A 5 s ramp latches but leaves 6.9 mm of floor clearance; ramps of 4 s and shorter do not latch and the robot returns to the carpet.",
+    "evidence": {
+     "file": "2024/preliminary-review-lan/greenfield-retained/climb-brackets-04/results.json",
+     "sha256": "7e0be044fc2c93b3779772ca60cd1cddbb223b0a5a701981e637bd16f640d429"
+    }
+   }
+  ],
+  "timestep": {
+   "coarseS": 0.00025,
+   "fineS": 0.000125,
+   "sameOutcome": true,
+   "note": "Floor clearance 11.51 mm at the coarse step and 11.54 mm at the fine step forward; 80.54 and 80.54 mm rearward.",
+   "evidence": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/climb-brackets-04/cg+0.04-dt0.00025-ramp6.5-normal.json",
+     "sha256": "c8105bdcc35482856a0a394e0c55bd3dbd42bece9cb757694cf4bdcc46405f02"
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/climb-brackets-04/cg+0.04-dt0.000125-ramp6.5-normal.json",
+     "sha256": "b9987fbc55dfab7e3903aa6648faeb7b341efc987e4259ced6047e7e2f3f7960"
+    }
+   ]
+  }
+ },
+ "limits": "Rigid chain links and hooks, ideal slide stop pins and pitch lock, two hoist lines sharing load equally. The centre of gravity is unmeasured. A pass needs both hooks captured, the carriage latched before power is cut, a bus at or above 8 V and 10 mm of floor clearance through the disabled hold."
+}

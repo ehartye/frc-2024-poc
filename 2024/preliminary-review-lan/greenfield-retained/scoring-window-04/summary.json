@@ -10,7 +10,9 @@
   "R01-outer-96_v6.88_a122.0_x1.390_y5.871_h-3.0_c0.75-0.75",
   "R02-outer-96_v6.88_a122.0_x1.390_y5.871_h-3.0_c0.75-0.75",
   "R02-inner-96_v6.88_a122.0_x1.390_y5.721_h+0.0_c0.75-0.75",
-  "R02-inner-96_v6.88_a122.0_x1.390_y5.771_h+0.0_c0.75-0.75"
+  "R02-inner-96_v6.88_a122.0_x1.390_y5.771_h+0.0_c0.75-0.75",
+  "dev-center-high-96_v3.44_a122.0_x1.390_y5.871_h+0.0_c0.75-0.75",
+  "dev-center-mid-96_v3.44_a122.0_x1.390_y5.871_h+0.0_c0.75-0.75"
  ],
  "sweeps": {
   "released": {
@@ -245,6 +247,137 @@
      }
     ],
     "nominal": [
+     {
+      "value": 3.44,
+      "shots": 6,
+      "delivered": 0,
+      "counted": 0,
+      "countedFraction": 0.0,
+      "counted95": [
+       0.0,
+       0.3903430336530645
+      ],
+      "smallestOpeningMarginMm": null,
+      "medianCountS": null,
+      "latestCountS": null,
+      "uncountedStillInSpeaker": 0,
+      "uncountedLeftSpeaker": 0,
+      "lowestBusV": 8.349209865615393,
+      "uncounted": [
+       "dev-center-high-96",
+       "dev-center-low-96",
+       "dev-center-mid-96",
+       "dev-inner-96",
+       "dev-middle-96",
+       "dev-outer-96"
+      ]
+     },
+     {
+      "value": 5.2,
+      "shots": 6,
+      "delivered": 0,
+      "counted": 0,
+      "countedFraction": 0.0,
+      "counted95": [
+       0.0,
+       0.3903430336530645
+      ],
+      "smallestOpeningMarginMm": null,
+      "medianCountS": null,
+      "latestCountS": null,
+      "uncountedStillInSpeaker": 0,
+      "uncountedLeftSpeaker": 0,
+      "lowestBusV": 8.349209865615393,
+      "uncounted": [
+       "dev-center-high-96",
+       "dev-center-low-96",
+       "dev-center-mid-96",
+       "dev-inner-96",
+       "dev-middle-96",
+       "dev-outer-96"
+      ]
+     },
+     {
+      "value": 5.6,
+      "shots": 6,
+      "delivered": 0,
+      "counted": 0,
+      "countedFraction": 0.0,
+      "counted95": [
+       0.0,
+       0.3903430336530645
+      ],
+      "smallestOpeningMarginMm": null,
+      "medianCountS": null,
+      "latestCountS": null,
+      "uncountedStillInSpeaker": 0,
+      "uncountedLeftSpeaker": 0,
+      "lowestBusV": 8.349209865615393,
+      "uncounted": [
+       "dev-center-high-96",
+       "dev-center-low-96",
+       "dev-center-mid-96",
+       "dev-inner-96",
+       "dev-middle-96",
+       "dev-outer-96"
+      ]
+     },
+     {
+      "value": 5.92,
+      "shots": 6,
+      "delivered": 5,
+      "counted": 5,
+      "countedFraction": 0.8333333333333334,
+      "counted95": [
+       0.43649056343635395,
+       0.9699474141282697
+      ],
+      "smallestOpeningMarginMm": 19.7112222084509,
+      "medianCountS": 4.182749999999366,
+      "latestCountS": 4.802000000000123,
+      "uncountedStillInSpeaker": 0,
+      "uncountedLeftSpeaker": 0,
+      "lowestBusV": 8.349209865615393,
+      "uncounted": [
+       "dev-inner-96"
+      ]
+     },
+     {
+      "value": 6.08,
+      "shots": 6,
+      "delivered": 6,
+      "counted": 6,
+      "countedFraction": 1.0,
+      "counted95": [
+       0.6096569663469354,
+       0.9999999999999999
+      ],
+      "smallestOpeningMarginMm": 8.350631687997629,
+      "medianCountS": 3.895499999999201,
+      "latestCountS": 4.990750000000354,
+      "uncountedStillInSpeaker": 0,
+      "uncountedLeftSpeaker": 0,
+      "lowestBusV": 8.349209865615393,
+      "uncounted": []
+     },
+     {
+      "value": 6.24,
+      "shots": 6,
+      "delivered": 6,
+      "counted": 6,
+      "countedFraction": 1.0,
+      "counted95": [
+       0.6096569663469354,
+       0.9999999999999999
+      ],
+      "smallestOpeningMarginMm": 20.592659618367534,
+      "medianCountS": 4.19399999999938,
+      "latestCountS": 4.885250000000225,
+      "uncountedStillInSpeaker": 0,
+      "uncountedLeftSpeaker": 0,
+      "lowestBusV": 8.349209865615393,
+      "uncounted": []
+     },
      {
       "value": 6.4,
       "shots": 5,
@@ -839,6 +972,31 @@
       "latestCountS": 5.162250000000563,
       "uncountedStillInSpeaker": 0,
       "uncountedLeftSpeaker": 5,
+      "lowestBusV": 8.349209911171368,
+      "uncounted": [
+       "R02-inner-96",
+       "R03-center-mid-96",
+       "R03-outer-96",
+       "R07-center-high-96",
+       "R07-center-low-96",
+       "R07-center-mid-96"
+      ]
+     },
+     {
+      "value": 5.796,
+      "shots": 34,
+      "delivered": 34,
+      "counted": 28,
+      "countedFraction": 0.8235294117647058,
+      "counted95": [
+       0.6648593225994784,
+       0.9165114439643031
+      ],
+      "smallestOpeningMarginMm": 56.695005630450254,
+      "medianCountS": 4.0937499999992575,
+      "latestCountS": 5.2687500000006935,
+      "uncountedStillInSpeaker": 0,
+      "uncountedLeftSpeaker": 6,
       "lowestBusV": 8.349209911171368,
       "uncounted": [
        "R02-inner-96",
@@ -1532,6 +1690,154 @@
       "uncounted": [
        "R05-center-low-96"
       ]
+     },
+     {
+      "value": 125.0,
+      "shots": 6,
+      "delivered": 6,
+      "counted": 6,
+      "countedFraction": 1.0,
+      "counted95": [
+       0.6096569663469354,
+       0.9999999999999999
+      ],
+      "smallestOpeningMarginMm": 25.965227355978133,
+      "medianCountS": 4.0069999999991515,
+      "latestCountS": 4.121999999999292,
+      "uncountedStillInSpeaker": 0,
+      "uncountedLeftSpeaker": 0,
+      "lowestBusV": 8.349230226017761,
+      "uncounted": []
+     },
+     {
+      "value": 126.0,
+      "shots": 6,
+      "delivered": 4,
+      "counted": 4,
+      "countedFraction": 0.6666666666666666,
+      "counted95": [
+       0.29998832134152864,
+       0.9032306674407831
+      ],
+      "smallestOpeningMarginMm": 38.09847311578435,
+      "medianCountS": 3.9684999999991604,
+      "latestCountS": 4.282499999999488,
+      "uncountedStillInSpeaker": 0,
+      "uncountedLeftSpeaker": 0,
+      "lowestBusV": 8.349230279081919,
+      "uncounted": [
+       "R02-inner-96",
+       "R05-outer-96"
+      ]
+     }
+    ]
+   },
+   "x": {
+    "frozen": [
+     {
+      "value": 1.39,
+      "shots": 34,
+      "delivered": 34,
+      "counted": 31,
+      "countedFraction": 0.9117647058823529,
+      "counted95": [
+       0.7703918204763959,
+       0.9695346096956899
+      ],
+      "smallestOpeningMarginMm": 56.69500562953827,
+      "medianCountS": 4.086249999999248,
+      "latestCountS": 5.1967500000006055,
+      "uncountedStillInSpeaker": 0,
+      "uncountedLeftSpeaker": 3,
+      "lowestBusV": 8.349209911171366,
+      "uncounted": [
+       "R02-inner-96",
+       "R03-center-mid-96",
+       "R03-outer-96"
+      ]
+     },
+     {
+      "value": 1.42,
+      "shots": 34,
+      "delivered": 34,
+      "counted": 30,
+      "countedFraction": 0.8823529411764706,
+      "counted95": [
+       0.7337882520370121,
+       0.9532862902656388
+      ],
+      "smallestOpeningMarginMm": 32.15385385235126,
+      "medianCountS": 4.2922499999995,
+      "latestCountS": 5.942500000001517,
+      "uncountedStillInSpeaker": 1,
+      "uncountedLeftSpeaker": 3,
+      "lowestBusV": 8.349209911171368,
+      "uncounted": [
+       "R02-inner-96",
+       "R03-outer-96",
+       "R05-inner-96",
+       "R07-center-high-96"
+      ]
+     },
+     {
+      "value": 1.45,
+      "shots": 34,
+      "delivered": 34,
+      "counted": 30,
+      "countedFraction": 0.8823529411764706,
+      "counted95": [
+       0.7337882520370121,
+       0.9532862902656388
+      ],
+      "smallestOpeningMarginMm": 7.636648308031884,
+      "medianCountS": 4.064749999999222,
+      "latestCountS": 5.824000000001372,
+      "uncountedStillInSpeaker": 2,
+      "uncountedLeftSpeaker": 2,
+      "lowestBusV": 8.349209911171366,
+      "uncounted": [
+       "R03-outer-96",
+       "R05-center-low-96",
+       "R06-middle-96",
+       "R07-center-high-96"
+      ]
+     },
+     {
+      "value": 1.49,
+      "shots": 34,
+      "delivered": 18,
+      "counted": 16,
+      "countedFraction": 0.47058823529411764,
+      "counted95": [
+       0.31451251633111366,
+       0.6326355957994516
+      ],
+      "smallestOpeningMarginMm": 0.29930039736555947,
+      "medianCountS": 4.314499999999527,
+      "latestCountS": 5.347000000000789,
+      "uncountedStillInSpeaker": 1,
+      "uncountedLeftSpeaker": 1,
+      "lowestBusV": 8.349209911171368,
+      "uncounted": [
+       "R01-center-low-96",
+       "R01-center-mid-96",
+       "R01-inner-96",
+       "R01-middle-96",
+       "R01-outer-96",
+       "R02-inner-96",
+       "R02-middle-96",
+       "R03-center-high-96",
+       "R03-center-mid-96",
+       "R04-center-high-96",
+       "R04-center-mid-96",
+       "R04-middle-96",
+       "R04-outer-96",
+       "R05-center-high-96",
+       "R05-center-low-96",
+       "R05-inner-96",
+       "R05-middle-96",
+       "R07-outer-96"
+      ]
      }
     ]
    },
@@ -1578,6 +1884,31 @@
       "latestCountS": 5.162250000000563,
       "uncountedStillInSpeaker": 0,
       "uncountedLeftSpeaker": 5,
+      "lowestBusV": 8.349209911171368,
+      "uncounted": [
+       "R02-inner-96",
+       "R03-center-mid-96",
+       "R03-outer-96",
+       "R07-center-high-96",
+       "R07-center-low-96",
+       "R07-center-mid-96"
+      ]
+     },
+     {
+      "value": 5.796,
+      "shots": 34,
+      "delivered": 34,
+      "counted": 28,
+      "countedFraction": 0.8235294117647058,
+      "counted95": [
+       0.6648593225994784,
+       0.9165114439643031
+      ],
+      "smallestOpeningMarginMm": 56.695005630450254,
+      "medianCountS": 4.0937499999992575,
+      "latestCountS": 5.2687500000006935,
+      "uncountedStillInSpeaker": 0,
+      "uncountedLeftSpeaker": 6,
       "lowestBusV": 8.349209911171368,
       "uncounted": [
        "R02-inner-96",
@@ -2066,11 +2397,13 @@
   }
  },
  "extendedObservation": {
-  "observedS": [],
-  "shots": 0,
+  "observedS": [
+   20.0
+  ],
+  "shots": 4,
   "countedLate": 0,
   "stillInSpeaker": 0,
-  "leftSpeaker": 0,
+  "leftSpeaker": 4,
   "countTimesS": []
  },
  "operatingPoints": {
@@ -2168,19 +2501,19 @@
   }
  },
  "allFrozenShots": {
-  "shots": 1431,
-  "delivered": 1149,
-  "counted": 1062,
-  "countedFraction": 0.7421383647798742,
+  "shots": 1670,
+  "delivered": 1337,
+  "counted": 1232,
+  "countedFraction": 0.7377245508982035,
   "counted95": [
-   0.718845299300543,
-   0.7641348428977317
+   0.7160989668276333,
+   0.7582589413519697
   ],
-  "smallestOpeningMarginMm": 0.365336374868349,
-  "medianCountS": 4.179499999999362,
+  "smallestOpeningMarginMm": 0.020649612946146284,
+  "medianCountS": 4.175499999999357,
   "latestCountS": 6.940750000002737,
-  "uncountedStillInSpeaker": 30,
-  "uncountedLeftSpeaker": 57,
+  "uncountedStillInSpeaker": 36,
+  "uncountedLeftSpeaker": 69,
   "lowestBusV": 8.349209813342059,
   "uncounted": [
    "R01-center-high-96",
@@ -2194,6 +2527,7 @@
    "R01-center-high-96",
    "R01-center-high-96",
    "R01-center-high-96",
+   "R01-center-high-96",
    "R01-center-low-96",
    "R01-center-low-96",
    "R01-center-low-96",
@@ -2204,6 +2538,10 @@
    "R01-center-low-96",
    "R01-center-low-96",
    "R01-center-low-96",
+   "R01-center-low-96",
+   "R01-center-low-96",
+   "R01-center-mid-96",
+   "R01-center-mid-96",
    "R01-center-mid-96",
    "R01-center-mid-96",
    "R01-center-mid-96",
@@ -2226,6 +2564,11 @@
    "R01-inner-96",
    "R01-inner-96",
    "R01-inner-96",
+   "R01-inner-96",
+   "R01-inner-96",
+   "R01-inner-96",
+   "R01-middle-96",
+   "R01-middle-96",
    "R01-middle-96",
    "R01-middle-96",
    "R01-middle-96",
@@ -2244,6 +2587,13 @@
    "R01-outer-96",
    "R01-outer-96",
    "R01-outer-96",
+   "R01-outer-96",
+   "R01-outer-96",
+   "R02-inner-96",
+   "R02-inner-96",
+   "R02-inner-96",
+   "R02-inner-96",
+   "R02-inner-96",
    "R02-inner-96",
    "R02-inner-96",
    "R02-inner-96",
@@ -2269,6 +2619,9 @@
    "R02-middle-96",
    "R02-middle-96",
    "R02-middle-96",
+   "R02-middle-96",
+   "R02-middle-96",
+   "R02-outer-96",
    "R02-outer-96",
    "R02-outer-96",
    "R02-outer-96",
@@ -2288,6 +2641,8 @@
    "R03-center-high-96",
    "R03-center-high-96",
    "R03-center-high-96",
+   "R03-center-high-96",
+   "R03-center-high-96",
    "R03-center-low-96",
    "R03-center-low-96",
    "R03-center-low-96",
@@ -2302,6 +2657,7 @@
    "R03-center-low-96",
    "R03-center-low-96",
    "R03-center-low-96",
+   "R03-center-low-96",
    "R03-center-mid-96",
    "R03-center-mid-96",
    "R03-center-mid-96",
@@ -2317,6 +2673,10 @@
    "R03-center-mid-96",
    "R03-center-mid-96",
    "R03-center-mid-96",
+   "R03-center-mid-96",
+   "R03-center-mid-96",
+   "R03-center-mid-96",
+   "R03-inner-96",
    "R03-inner-96",
    "R03-inner-96",
    "R03-inner-96",
@@ -2334,6 +2694,11 @@
    "R03-middle-96",
    "R03-middle-96",
    "R03-middle-96",
+   "R03-middle-96",
+   "R03-outer-96",
+   "R03-outer-96",
+   "R03-outer-96",
+   "R03-outer-96",
    "R03-outer-96",
    "R03-outer-96",
    "R03-outer-96",
@@ -2357,6 +2722,9 @@
    "R04-center-high-96",
    "R04-center-high-96",
    "R04-center-high-96",
+   "R04-center-high-96",
+   "R04-center-high-96",
+   "R04-center-high-96",
    "R04-center-low-96",
    "R04-center-low-96",
    "R04-center-low-96",
@@ -2369,6 +2737,9 @@
    "R04-center-low-96",
    "R04-center-low-96",
    "R04-center-low-96",
+   "R04-center-low-96",
+   "R04-center-mid-96",
+   "R04-center-mid-96",
    "R04-center-mid-96",
    "R04-center-mid-96",
    "R04-center-mid-96",
@@ -2387,6 +2758,9 @@
    "R04-inner-96",
    "R04-inner-96",
    "R04-inner-96",
+   "R04-inner-96",
+   "R04-middle-96",
+   "R04-middle-96",
    "R04-middle-96",
    "R04-middle-96",
    "R04-middle-96",
@@ -2403,6 +2777,8 @@
    "R04-outer-96",
    "R04-outer-96",
    "R04-outer-96",
+   "R04-outer-96",
+   "R04-outer-96",
    "R05-center-high-96",
    "R05-center-high-96",
    "R05-center-high-96",
@@ -2411,6 +2787,11 @@
    "R05-center-high-96",
    "R05-center-high-96",
    "R05-center-high-96",
+   "R05-center-high-96",
+   "R05-center-high-96",
+   "R05-center-low-96",
+   "R05-center-low-96",
+   "R05-center-low-96",
    "R05-center-low-96",
    "R05-center-low-96",
    "R05-center-low-96",
@@ -2434,6 +2815,10 @@
    "R05-center-mid-96",
    "R05-center-mid-96",
    "R05-center-mid-96",
+   "R05-center-mid-96",
+   "R05-inner-96",
+   "R05-inner-96",
+   "R05-inner-96",
    "R05-inner-96",
    "R05-inner-96",
    "R05-inner-96",
@@ -2456,6 +2841,8 @@
    "R05-middle-96",
    "R05-middle-96",
    "R05-middle-96",
+   "R05-middle-96",
+   "R05-middle-96",
    "R05-outer-96",
    "R05-outer-96",
    "R05-outer-96",
@@ -2469,6 +2856,7 @@
    "R05-outer-96",
    "R05-outer-96",
    "R05-outer-96",
+   "R05-outer-96",
    "R06-middle-96",
    "R06-middle-96",
    "R06-middle-96",
@@ -2487,6 +2875,12 @@
    "R06-middle-96",
    "R06-middle-96",
    "R06-middle-96",
+   "R06-middle-96",
+   "R06-middle-96",
+   "R07-center-high-96",
+   "R07-center-high-96",
+   "R07-center-high-96",
+   "R07-center-high-96",
    "R07-center-high-96",
    "R07-center-high-96",
    "R07-center-high-96",
@@ -2512,6 +2906,10 @@
    "R07-center-low-96",
    "R07-center-low-96",
    "R07-center-low-96",
+   "R07-center-low-96",
+   "R07-center-low-96",
+   "R07-center-mid-96",
+   "R07-center-mid-96",
    "R07-center-mid-96",
    "R07-center-mid-96",
    "R07-center-mid-96",
@@ -2531,6 +2929,7 @@
    "R07-inner-96",
    "R07-inner-96",
    "R07-inner-96",
+   "R07-inner-96",
    "R07-middle-96",
    "R07-middle-96",
    "R07-middle-96",
@@ -2542,6 +2941,9 @@
    "R07-middle-96",
    "R07-middle-96",
    "R07-middle-96",
+   "R07-middle-96",
+   "R07-outer-96",
+   "R07-outer-96",
    "R07-outer-96",
    "R07-outer-96",
    "R07-outer-96",
@@ -2555,15 +2957,15 @@
   ]
  },
  "allNominalShots": {
-  "shots": 135,
-  "delivered": 135,
-  "counted": 131,
-  "countedFraction": 0.9703703703703703,
+  "shots": 171,
+  "delivered": 152,
+  "counted": 148,
+  "countedFraction": 0.8654970760233918,
   "counted95": [
-   0.9262927103040972,
-   0.988418730647318
+   0.8062582086646206,
+   0.908674621966076
   ],
-  "smallestOpeningMarginMm": 16.517869207674458,
+  "smallestOpeningMarginMm": 8.350631687997629,
   "medianCountS": 4.160499999999339,
   "latestCountS": 6.001250000001589,
   "uncountedStillInSpeaker": 3,
@@ -2571,8 +2973,27 @@
   "lowestBusV": 8.344287452805222,
   "uncounted": [
    "dev-center-high-96",
+   "dev-center-high-96",
+   "dev-center-high-96",
+   "dev-center-high-96",
+   "dev-center-low-96",
+   "dev-center-low-96",
+   "dev-center-low-96",
+   "dev-center-mid-96",
+   "dev-center-mid-96",
+   "dev-center-mid-96",
+   "dev-inner-96",
+   "dev-inner-96",
+   "dev-inner-96",
+   "dev-inner-96",
    "dev-middle-96",
    "dev-middle-96",
+   "dev-middle-96",
+   "dev-middle-96",
+   "dev-middle-96",
+   "dev-outer-96",
+   "dev-outer-96",
+   "dev-outer-96",
    "dev-outer-96"
   ]
  }

@@ -68,7 +68,7 @@ def main():
         field[key] = dict(name=name, color=colour, category="reference", subsystem="Field", mesh=mesh(scene["fixtureMeshes"][key]),
                           purpose=purpose, rationale="Simplified project drawing of the field part at its field position, "
                                                      "shown for context. It carries no contact claim.")
-    evidence = [dict(file=BINDINGS, sha256=sha(bindings_file),
+    evidence = [dict(file=(OUT / BINDINGS).relative_to(REPO).as_posix(), sha256=sha(bindings_file),
                      role="Binding manifest: every raw trial file of this run by SHA-256, and the frame-by-frame check")]
     replays = []
     for key in ("continuous-cycle-96", "continuous-cycle-48", "score-to-climb-front", "score-to-climb-rear"):

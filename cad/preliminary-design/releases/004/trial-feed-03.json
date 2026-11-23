@@ -35,28 +35,94 @@
    "releaseSpeedMps": 6.784426823684807
   },
   "control": {
-   "condition": "Weak-pack firing permissive bypassed during drive acceleration",
+   "condition": "Launcher commanded to 3.44 m/s, half the released speed",
    "rejected": true,
    "evidence": {
-    "file": "2024/preliminary-review-lan/greenfield-retained/bounded-risk-01/s-bypass.json",
-    "sha256": "c9f4df3064591adf0320b76a98c70396b5cabb9a20ab11267f63756bcd5844b0",
+    "file": "2024/preliminary-review-lan/greenfield-retained/scoring-window-04/results/low-speed.jsonl",
+    "sha256": "a3c710e399e06365feb937532c7fae7ae59d2ff322a614c89e187d8698bb762f",
     "observed": {
-     "passShot": false,
-     "minimumBusV": 5.9250887869165165
+     "shots": 6,
+     "passedThroughOpening": 0
     }
    },
-   "note": "Run on the earlier 125 deg station; it shows the kind of fault the trial rejects."
+   "note": "A second control, the weak-pack firing permissive bypassed during drive acceleration, is rejected in bounded-risk-01/s-bypass.json (bus 5.93 V)."
   },
   "brackets": [
    {
-    "input": "cassette launch angle at its matched firing distance",
+    "input": "chassis heading error at the firing station (lower side)",
     "unit": "deg",
-    "passing": 122,
-    "failing": 124,
-    "note": "Free-flight calculation over the recorded releases: worst opening margin 20.9 mm at 122 deg and 1.39 m, -3.8 mm at 124 deg and 1.52 m. The firing distance changes with the angle, so this is not a single-input bracket.",
+    "passing": -3.0,
+    "failing": -4.0,
+    "note": "At -4 deg, 3 of 34 shots pass wholly through the opening. At -3 deg all 34 do, with 11.3 mm smallest margin.",
     "evidence": {
-     "file": "2024/preliminary-review-lan/greenfield-retained/counter-drive-01/elevation-window.json",
-     "sha256": "87483cd10cb779ae12ae403b233ab62ad122224ff6fedc025d281d27052d7420"
+     "file": "2024/preliminary-review-lan/greenfield-retained/scoring-window-04/summary.json",
+     "sha256": "c6c432e59dd5477af38f64917f59ccdd3981e34b57c40558ad545078b0b1d7e9"
+    }
+   },
+   {
+    "input": "lateral position of the firing station (lower side)",
+    "unit": "m",
+    "passing": 5.796,
+    "failing": 5.771,
+    "note": "At 5.771 m, 33 of 34 shots pass wholly through the opening. At 5.796 m all 34 do, with 56.7 mm smallest margin.",
+    "evidence": {
+     "file": "2024/preliminary-review-lan/greenfield-retained/scoring-window-04/summary.json",
+     "sha256": "c6c432e59dd5477af38f64917f59ccdd3981e34b57c40558ad545078b0b1d7e9"
+    }
+   },
+   {
+    "input": "lateral position of the firing station (upper side)",
+    "unit": "m",
+    "passing": 5.871,
+    "failing": 5.921,
+    "note": "At 5.921 m, 0 of 34 shots pass wholly through the opening. At 5.871 m all 34 do, with 17.6 mm smallest margin.",
+    "evidence": {
+     "file": "2024/preliminary-review-lan/greenfield-retained/scoring-window-04/summary.json",
+     "sha256": "c6c432e59dd5477af38f64917f59ccdd3981e34b57c40558ad545078b0b1d7e9"
+    }
+   },
+   {
+    "input": "cassette launch angle (lower side)",
+    "unit": "deg",
+    "passing": 121.0,
+    "failing": 120.0,
+    "note": "At 120 deg, 13 of 34 shots pass wholly through the opening. At 121 deg all 34 do, with 3.4 mm smallest margin.",
+    "evidence": {
+     "file": "2024/preliminary-review-lan/greenfield-retained/scoring-window-04/summary.json",
+     "sha256": "c6c432e59dd5477af38f64917f59ccdd3981e34b57c40558ad545078b0b1d7e9"
+    }
+   },
+   {
+    "input": "cassette launch angle (upper side)",
+    "unit": "deg",
+    "passing": 125.0,
+    "failing": 126.0,
+    "note": "At 126 deg, 4 of 6 shots pass wholly through the opening. At 125 deg all 6 do, with 26.0 mm smallest margin.",
+    "evidence": {
+     "file": "2024/preliminary-review-lan/greenfield-retained/scoring-window-04/summary.json",
+     "sha256": "c6c432e59dd5477af38f64917f59ccdd3981e34b57c40558ad545078b0b1d7e9"
+    }
+   },
+   {
+    "input": "distance of the firing station from the alliance wall (upper side)",
+    "unit": "m",
+    "passing": 1.45,
+    "failing": 1.49,
+    "note": "At 1.49 m, 18 of 34 shots pass wholly through the opening. At 1.45 m all 34 do, with 7.6 mm smallest margin.",
+    "evidence": {
+     "file": "2024/preliminary-review-lan/greenfield-retained/scoring-window-04/summary.json",
+     "sha256": "c6c432e59dd5477af38f64917f59ccdd3981e34b57c40558ad545078b0b1d7e9"
+    }
+   },
+   {
+    "input": "launcher belt speed command (lower side)",
+    "unit": "m/s",
+    "passing": 6.08,
+    "failing": 5.92,
+    "note": "At 5.92 m/s, 5 of 6 shots pass wholly through the opening. At 6.08 m/s all 6 do, with 8.4 mm smallest margin.",
+    "evidence": {
+     "file": "2024/preliminary-review-lan/greenfield-retained/scoring-window-04/summary.json",
+     "sha256": "c6c432e59dd5477af38f64917f59ccdd3981e34b57c40558ad545078b0b1d7e9"
     }
    }
   ],
@@ -83,7 +149,7 @@
    ]
   }
  },
- "limits": "Free rigid NOTE on commanded cassette, truck and chassis motion. Carpet grip, tread compliance and field counter speed are assumed values awaiting measurement. The nominal starts pass. Three of seven perturbed starts of the frozen campaign failed; see risk scoring-repeatability.",
+ "limits": "Free rigid NOTE on commanded cassette, truck and chassis motion. Carpet grip, tread compliance and field counter speed are assumed values awaiting measurement. A pass here is delivery: the whole NOTE through the speaker opening with the bus at or above 8 V. Counting by the speaker's two beams is a separate result; see risk scoring-repeatability. The brackets re-fire the carried NOTES of the frozen starts from the firing station, one input at a time.",
  "transport": {
   "case": "feed-03",
   "payload": "NOTE",

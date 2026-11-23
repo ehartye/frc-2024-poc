@@ -34,34 +34,73 @@ def risks(operating):
                   f"one of {here['shots']} perturbed carried NOTES passes through the opening, but {here['counted']} "
                   f"({_pct(counted)}) shadow both speaker beams within 7 s; six in a row at that rate is about {_pct(six)}. "
                   f"Across all {everything['shots']} perturbed shots of the campaign {everything['delivered']} were delivered "
-                  f"and {everything['counted']} counted. The count rate did not move with launcher speed (6.56 to 7.68 m/s), "
-                  f"the speaker's counter drive speed or its surface friction. Of {late['shots']} uncounted NOTES watched for "
-                  f"20 s, {late['countedLate']} counted late, {late['stillInSpeaker']} stayed in the speaker and "
-                  f"{late['leftSpeaker']} came back out. The frozen full-mission campaign at the trial station failed three of "
-                  f"its first seven starts. What happens to a NOTE inside the speaker rests on assumed field conveyor speeds "
-                  f"and friction, so the deciding evidence is a real speaker.",
-             evidence="scoring-window-04/summary.json; counted-reset-power-02/run-R02-96.json, run-R03-96.json, run-R06-96.json",
+                  f"and {everything['counted']} counted. The count rate did not move with launcher speed (6.56 to 7.68 m/s) or "
+                  f"with the speaker's counter drive speed; the friction of the speaker surfaces was not varied. "
+                  f"{late['shots']} uncounted NOTES at the revised lane were watched for 20 s: {late['countedLate']} "
+                  f"counted late, {late['stillInSpeaker']} stayed in the speaker and {late['leftSpeaker']} came back out "
+                  f"through the opening within 3 s without shadowing either beam. So the criterion of this release, "
+                  f"delivered and eventually counted, is met by {here['counted']} of {here['shots']} perturbed NOTES at "
+                  f"the firing station and is unmet for the rest. The frozen full-mission campaign at the trial station "
+                  f"failed three of its first seven starts. What happens to a NOTE inside the speaker rests on assumed "
+                  f"field conveyor speeds and friction, so the deciding evidence is a real speaker.",
+             evidence="scoring-window-04/summary.json; scoring-window-04/results/released-20s.jsonl, angle-123-20s.jsonl; "
+                      "scoring-window-04/shots/; counted-reset-power-02/run-R02-96.json, run-R03-96.json, run-R06-96.json",
              benchTest=_bench("Starts out of 20 on a full field speaker that score six floor NOTES within 120 s", 19, 18, "starts")),
+        dict(id="speaker-count-delay", condition="Real speaker counting a delivered NOTE",
+             risk=f"In simulation {here['counted']} of {here['shots']} perturbed NOTES delivered from the firing station are "
+                  f"counted within 7 s (median {here['medianCountS']:.1f} s, latest {here['latestCountS']:.1f} s after the "
+                  f"shot starts). Six scores on 19 of 20 starts needs more than 99 in 100. The delay and the uncounted "
+                  f"NOTES are properties of the modelled speaker interior and are unmeasured.",
+             evidence="scoring-window-04/summary.json",
+             benchTest=_bench("Delivered NOTES out of 20 counted by a real speaker within 7 s of the shot", 20, 18, "NOTES")),
         dict(id="firing-lane-tolerance", condition="Chassis position and heading error at the firing station",
              risk=f"The cycle trials fired from y = {old['yM']:g} m, where the NOTE cleared the side of the opening by "
                   f"{trial['smallestOpeningMarginMm']:.1f} mm and a 2 degree heading error or a 50 mm lateral error lost every "
                   f"shot. The release moves the firing lane to y = {lane['yM']:g} m ({here['smallestOpeningMarginMm']:.1f} mm "
                   f"smallest margin). There every shot is delivered over heading errors of {span('yaw')}, lateral positions of "
-                  f"{span('y')} and stations of {span('x')} from the alliance wall. Chassis tracking to that window is unmeasured.",
-             evidence="scoring-window-04/summary.json; cad/preliminary-design/releases/004/operating-point.json",
+                  f"{span('y')} and stations of {span('x')} from the alliance wall, one input changed at a time. Errors "
+                  f"combine: at 122 degrees, 20 mm toward the side wall with 3 degrees of heading error let 1 of 34 NOTES "
+                  f"count, while 2 degrees with the same 20 mm delivered and counted all 12 nominal NOTES. The bench "
+                  f"values are therefore the combined window, not the single-input one. The rear bumper is 35 mm from "
+                  f"the subwoofer at the firing station, and stations nearer the wall were not fired. Chassis tracking "
+                  f"to that window is unmeasured.",
+             evidence="scoring-window-04/summary.json; scoring-window-04/results/aim-search.jsonl; "
+                      "cad/preliminary-design/releases/004/operating-point.json",
              benchTest=_bench("Largest heading error at the firing station over 20 autonomous arrivals", 2.0, 3.0, "deg")),
+        dict(id="firing-lane-lateral", condition="Chassis lateral error at the firing station",
+             risk="With 2 degrees of heading error present, delivery and counting held at 20 mm of lateral error either "
+                  "way on the nominal NOTES. From the trial lane, 50 mm toward the side wall lost every NOTE. Lateral "
+                  "tracking is unmeasured.",
+             evidence="scoring-window-04/summary.json; scoring-window-04/results/aim-search.jsonl",
+             benchTest=_bench("Largest lateral error at the firing station over 20 autonomous arrivals", 20, 50, "mm")),
+        dict(id="firing-lane-fore-aft", condition="Chassis fore-aft error at the firing station",
+             risk="At 122 degrees delivery holds 30 mm farther from the alliance wall with 32.2 mm of opening margin and "
+                  "60 mm farther with 7.6 mm; at 100 mm farther 16 of 34 NOTES miss the opening.",
+             evidence="scoring-window-04/summary.json; scoring-window-04/results/revised-station.jsonl",
+             benchTest=_bench("Largest fore-aft error at the firing station over 20 autonomous arrivals", 30, 100, "mm")),
         dict(id="launch-angle-tolerance",
-             risk=f"Delivery holds for cassette launch angles of {span('angle')} at the firing station. The released 122 degree "
-                  f"setpoint is near the low end of that window. Detailed design should put the launch hard stop at the centre "
-                  f"of the window and rerun the lift power and cycle traces at that angle.",
-             evidence="scoring-window-04/summary.json",
-             benchTest=_bench("Lowest cassette launch angle measured over 20 lifts to the stop", 121.5, 121.0, "deg")),
+             risk=f"Delivery holds for cassette launch angles of {span('angle')} at the firing lane and fails at "
+                  f"{min(window['angle']['fails']):g} and {max(window['angle']['fails']):g} deg. The edges are thin: 3.4 mm "
+                  f"of opening margin at 121 degrees on 34 NOTES and 26.0 mm at 125 degrees on the six NOTES fired there. "
+                  f"The release sets {lane['cassetteAngleDeg']:g} degrees; the cycle trials lifted to "
+                  f"{old['cassetteAngleDeg']:g} degrees, and the campaign re-poses the launcher for other angles without "
+                  f"re-running the lift. Detailed design puts the launch hard stop at the released angle.",
+             evidence="scoring-window-04/summary.json; scoring-window-04/results/high-125.jsonl, high-126.jsonl",
+             benchTest=_bench(f"Largest departure of the cassette launch angle from {lane['cassetteAngleDeg']:g} degrees over "
+                              f"20 lifts to the stop", 1.0, 2.0, "deg")),
+        dict(id="launcher-speed-floor", condition="Launch belts below their commanded speed at feed",
+             risk="At the trial lane every perturbed NOTE is delivered for launcher commands of 6.56 to 7.68 m/s. On the "
+                  "nominal NOTES delivery holds down to 6.08 m/s, loses 1 of 6 at 5.92 m/s and loses every NOTE at 5.60 m/s "
+                  "and below. Belt speed at feed on a weak pack is unmeasured; the voltage test does not measure it.",
+             evidence="scoring-window-04/summary.json; scoring-window-04/results/low-speed.jsonl",
+             benchTest=_bench("Launch belt surface speed at feed on a weak pack, 6.88 m/s command", 6.56, 5.92, "m/s")),
         dict(id="launch-motor-clearance",
              risk="The whole-cycle check found both launch belt motor cans exactly at the NOTE's outer radius (177.8 mm from "
                   "the cassette centre): the floor NOTE riding over the pickup lip passed them with 0.0004 mm. Revision 004-A "
                   "raises both motors 60 mm along the cassette normal on lengthened shafts; the checked cycle then clears "
                   "them by more than 2.8 mm (15 mm sampled). The taller motor mount is not drawn and the pickup trial does "
-                  "not model the motors, so an off-centre NOTE meeting the lengthened shaft is untested.",
+                  "not model the motors, so an off-centre NOTE meeting the lengthened shaft is untested. The 60 mm longer "
+                  "shaft is checked for clearance only: its whip and bearing support are not assessed.",
              evidence="cad/preliminary-design/releases/004/step-revision.json; cad/preliminary-design/build-004/revise_step.py",
              benchTest=_bench("Smallest gap between a NOTE picked up 50 mm off centre and either launch motor or its shaft", 3.0, 0.0, "mm")),
         dict(id="returning-note", condition="NOTE ejected from the speaker back onto the robot",
@@ -95,8 +134,8 @@ def risks(operating):
              evidence="pickup-brackets-04/results.json; pickup-height-control-01/",
              benchTest=_bench("Blade tip height above competition carpet with the cassette deployed and the robot loaded", 10, 12, "mm")),
         dict(id="pickup-lateral-offset", condition="Floor NOTE more than 50 mm off the cassette centre",
-             risk="The pickup seats a NOTE up to 50 mm off centre and fails at 100 mm on either side. Driver or vision "
-                  "alignment to that band is unmeasured.",
+             risk="The pickup seats a NOTE 50 mm off centre on either side and first fails at 100 mm on either side; no "
+                  "offset between was tried. Driver or vision alignment to that band is unmeasured.",
              evidence="pickup-brackets-04/results.json",
              benchTest=_bench("Floor pickups out of 20 that seat within 2.82 s with the NOTE 50 mm off centre", 19, 18, "pickups")),
         dict(id="pickup-grip",
@@ -118,7 +157,7 @@ def risks(operating):
         dict(id="auxiliary-load-during-lift",
              risk="With 39 A of other loads the governing loaded lift misses the pivot motor terminal demand by 0.089 V. The "
                   "budget stages other loads to 25 A during the lift, which leaves 0.448 V. The 004-A motor raise adds about "
-                  "1 percent to the lifted moment and is not in that study.",
+                  "1 percent to the lifted moment and is not in that study: both figures were computed before the raise.",
              evidence="mounted-slide-02/gross-power.json",
              benchTest=_bench("Battery current of all loads other than drive, pivot and slide during the loaded lift", 25, 39, "A")),
         dict(id="weak-battery-shot",
@@ -128,8 +167,9 @@ def risks(operating):
              benchTest=_bench("Lowest bus voltage during a shot on a pack at 11.8 V open circuit", 8.0, 7.9, "V")),
         dict(id="inspection-mass",
              risk="The upper inspection estimate is 56.270 kg against 56.699 kg: 0.429 kg of headroom, with a 3 to 6 kg "
-                  "unallocated reserve inside the estimate. The control-board guard, the lengthened launch shafts (0.07 kg), "
-                  "the taller launch motor mounts and detailing growth draw on that reserve.",
+                  "unallocated reserve inside the estimate. The mass ledger is the study made before revision 004-A, so the "
+                  "lengthened launch shafts (0.07 kg) and the taller launch motor mounts are not in the estimate. They, "
+                  "the control-board guard and detailing growth draw on that reserve.",
              evidence="mounted-slide-02/gross-power.json",
              benchTest=_bench("Weighed inspection mass without battery and bumpers", 56.69, 56.70, "kg")),
         dict(id="endgame-clock",
@@ -172,7 +212,9 @@ def risks(operating):
              benchTest=_bench("Horizontal load held by the fitted slide link without movement", 1.29, 1.0, "kN")),
         dict(id="battery-removal-path", condition="Battery lifted out at the service index",
              risk="The straight 370 mm battery lift at the service index is not a checked case: the disconnected pack lead is "
-                  "not represented and the lift does not yet pass. The checked service case is the index pin withdrawal.",
+                  "not represented and the lift does not yet pass. The checked service case is the index pin withdrawal. An earlier "
+                  "service-lock study reported 5 mm smallest clearance for this lift; it has not been repeated on the "
+                  "revised layout.",
              evidence="cad/preliminary-design/build-004/build.py (--battery)",
              benchTest=_bench("Smallest gap around the battery through a straight lift at the service index, leads disconnected",
                               5, 0, "mm")),
@@ -181,6 +223,13 @@ def risks(operating):
                   "their withdrawal paths are not in the checked cycle.",
              evidence="mounted-slide-02/; guided-hoist-01/removable-truck-lock.step",
              benchTest=_bench("Smallest gap around the slide motor cartridge through its full withdrawal", 3, 0, "mm")),
+        dict(id="endgame-envelope", condition="Reach and height through chain capture and hoist",
+             risk="No file of this release states the largest reach beyond the frame or the largest height through chain "
+                  "capture and hoist. At floor pickup the furthest forward point is 640.0 mm sampled (642.3 mm bounded) "
+                  "against the project front limit of 644.8 mm, which is 304.8 mm beyond the frame.",
+             evidence="pickup-lip/layout.json",
+             benchTest=_bench("Largest reach beyond the frame perimeter through capture and hoist, measured on the first "
+                              "Fusion assembly", 300, 305, "mm")),
         dict(id="cover-leaf-park-pose",
              risk="The layout STEP draws the cover leaf closed at the parked angle; the cam of the trials holds it open above "
                   "102 degrees.",

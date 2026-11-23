@@ -1,6 +1,6 @@
 {
  "schema": "frc-2024-poc/joint-qualification@1",
- "stepSha256": "91ac459ba6f4f3116fc5da3bf25d54c9e58ee19e214e0dba8cdc076960e50b74",
+ "stepSha256": "2914b6f0b94eda5c0fa18f411c58f933ce0502527997c9e2baf06476a0af9343",
  "case": "hoist-02",
  "pair": [
   "Hoist rope working span · left",
@@ -9,70 +9,70 @@
  "status": "pass",
  "basis": "Hoist line taken up at the left hook carriage splice",
  "method": "Exact common volume of the drawn line span and its splice at 9 evenly spaced path fractions. The 3 mm line is flexible and is taken up as the hook carriage draws in; the drawn span keeps its parked length. The pair passes when the shared volume never exceeds the line section (7.069 mm2) times the line taken up, plus 0.5 mm3.",
- "largestCommonMm3": 259.95215385825685,
+ "largestCommonMm3": 1272.3450247037604,
  "samples": [
   {
    "t": 0.0,
    "gapMm": 0.0,
-   "volumeMm3": 245.95591080843553,
-   "takeUpMm": 34.79564354473358,
-   "allowedMm3": 246.45591080839426
+   "volumeMm3": 623.8599376824804,
+   "takeUpMm": 88.25812700369967,
+   "allowedMm3": 624.3599376824401
   },
   {
    "t": 0.125,
    "gapMm": 0.0,
-   "volumeMm3": 247.70544118966401,
-   "takeUpMm": 35.04315146318853,
-   "allowedMm3": 248.20544118962187
+   "volumeMm3": 705.3187308598879,
+   "takeUpMm": 99.78218886368602,
+   "allowedMm3": 705.8187308598468
   },
   {
    "t": 0.25,
    "gapMm": 0.0,
-   "volumeMm3": 249.45497157089125,
-   "takeUpMm": 35.29065938164348,
-   "allowedMm3": 249.95497157084944
+   "volumeMm3": 786.7775240372933,
+   "takeUpMm": 111.30625072367238,
+   "allowedMm3": 787.2775240372537
   },
   {
    "t": 0.375,
    "gapMm": 0.0,
-   "volumeMm3": 251.20450195211916,
-   "takeUpMm": 35.538167300098436,
-   "allowedMm3": 251.7045019520771
+   "volumeMm3": 868.2363172147006,
+   "takeUpMm": 122.83031258365872,
+   "allowedMm3": 868.7363172146604
   },
   {
    "t": 0.5,
    "gapMm": 0.0,
-   "volumeMm3": 252.95403233334693,
-   "takeUpMm": 35.785675218553386,
-   "allowedMm3": 253.45403233330467
+   "volumeMm3": 949.6951103921087,
+   "takeUpMm": 134.35437444364507,
+   "allowedMm3": 950.1951103920671
   },
   {
    "t": 0.625,
    "gapMm": 0.0,
-   "volumeMm3": 254.70356271457433,
-   "takeUpMm": 36.033183137008336,
-   "allowedMm3": 255.20356271453227
+   "volumeMm3": 1031.1539035695137,
+   "takeUpMm": 145.87843630363142,
+   "allowedMm3": 1031.6539035694739
   },
   {
    "t": 0.75,
    "gapMm": 0.0,
-   "volumeMm3": 256.453093095802,
-   "takeUpMm": 36.28069105546329,
-   "allowedMm3": 256.9530930957599
+   "volumeMm3": 1112.612696746921,
+   "takeUpMm": 157.4024981636178,
+   "allowedMm3": 1113.1126967468808
   },
   {
    "t": 0.875,
    "gapMm": 0.0,
-   "volumeMm3": 258.2026234770296,
-   "takeUpMm": 36.528198973918244,
-   "allowedMm3": 258.70262347698747
+   "volumeMm3": 1194.0714899243276,
+   "takeUpMm": 168.92656002360414,
+   "allowedMm3": 1194.5714899242876
   },
   {
    "t": 1.0,
    "gapMm": 0.0,
-   "volumeMm3": 259.95215385825685,
-   "takeUpMm": 36.775706892373194,
-   "allowedMm3": 260.45215385821507
+   "volumeMm3": 1272.3450247037604,
+   "takeUpMm": 180.4506218835905,
+   "allowedMm3": 1276.0302831016943
   }
  ]
 }

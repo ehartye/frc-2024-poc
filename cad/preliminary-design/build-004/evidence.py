@@ -351,8 +351,10 @@ def presentation(components, groups, member_group, rigid, duty_table, timelines,
             "50 mm toward the centre of the opening, where the side clearance is larger.",
             f"From the firing lane {operating['atFiringStation']['frozenStarts']['delivered']} of "
             f"{operating['atFiringStation']['frozenStarts']['shots']} perturbed NOTES pass through the opening and "
-            f"{operating['atFiringStation']['frozenStarts']['counted']} are counted by the speaker within 7 s. Six scores in "
-            "120 s on 19 of 20 starts is not shown; it is carried as a bench test.",
+            f"{operating['atFiringStation']['frozenStarts']['counted']} are counted by the speaker within 7 s. The uncounted "
+            "NOTES, watched for 20 s, came back out through the opening without reaching either beam, so delivered and "
+            "eventually counted is not met for them. Six scores in 120 s on 19 of 20 starts is not shown. Both are "
+            "carried as bench tests.",
             "The 232 solids are the release 003 layout with repaired component names and one revision: both launch "
             "belt motors are raised 60 mm along the cassette normal on lengthened drive shafts, because the whole-cycle "
             "check found no clearance between their cans and the floor NOTE riding over the pickup lip. The pickup "

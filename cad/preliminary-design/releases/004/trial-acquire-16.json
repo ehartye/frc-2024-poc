@@ -42,6 +42,52 @@
     }
    }
   },
+  "brackets": [
+   {
+    "input": "rigid blade tip height above the carpet",
+    "unit": "mm",
+    "passing": 10,
+    "failing": 12,
+    "note": "Passing values [1.5, 2, 3.5, 5.0, 6.5, 8, 10]; failing values [12, 14, 16, 18, 20, 24]. 48 ring segments. Repeated at 96 segments with the same outcome: n96-h14-y0-mu0.45-a8 fails, n96-h16-y0-mu0.45-a8 fails.",
+    "evidence": {
+     "file": "2024/preliminary-review-lan/greenfield-retained/pickup-brackets-04/results.json",
+     "sha256": "c9c2b25543567f27be15b42057d6f25b2eaf286d05e5ab84d772a1b9eac67923"
+    }
+   },
+   {
+    "input": "lateral NOTE offset from the cassette centre",
+    "unit": "m",
+    "passing": 0.05,
+    "failing": 0.1,
+    "note": "Passing values [-0.05, 0.0, 0.05]; failing values [-0.2, -0.15, -0.1, 0.1, 0.15, 0.2]. 48 ring segments.",
+    "evidence": {
+     "file": "2024/preliminary-review-lan/greenfield-retained/pickup-brackets-04/results.json",
+     "sha256": "c9c2b25543567f27be15b42057d6f25b2eaf286d05e5ab84d772a1b9eac67923"
+    }
+   },
+   {
+    "input": "nose roller and pad grip coefficient",
+    "unit": "coefficient",
+    "passing": 0.3,
+    "failing": 0.2,
+    "note": "Passing values [0.3, 0.45, 0.6, 0.75]; failing values [0.02, 0.05, 0.1, 0.15, 0.2]. 48 ring segments. Repeated at 96 segments with the same outcome: n96-h5-y0-mu0.1-a8 fails, n96-h5-y0-mu0.05-a8 fails.",
+    "evidence": {
+     "file": "2024/preliminary-review-lan/greenfield-retained/pickup-brackets-04/results.json",
+     "sha256": "c9c2b25543567f27be15b42057d6f25b2eaf286d05e5ab84d772a1b9eac67923"
+    }
+   },
+   {
+    "input": "nose motor phase current limit",
+    "unit": "A",
+    "passing": 1.0,
+    "failing": 0.5,
+    "note": "Passing values [1.0, 2.0, 3.0, 4.0, 6.0, 8.0]; failing values [0.0, 0.5]. 48 ring segments. Repeated at 96 segments with the same outcome: n96-h5-y0-mu0.45-a1 passes, n96-h5-y0-mu0.45-a2 passes.",
+    "evidence": {
+     "file": "2024/preliminary-review-lan/greenfield-retained/pickup-brackets-04/results.json",
+     "sha256": "c9c2b25543567f27be15b42057d6f25b2eaf286d05e5ab84d772a1b9eac67923"
+    }
+   }
+  ],
   "timestep": {
    "coarseS": 0.0005,
    "fineS": 0.00025,
@@ -65,7 +111,7 @@
    ]
   }
  },
- "limits": "Free rigid NOTE on commanded cassette, truck and chassis motion. Carpet grip, tread compliance and field counter speed are assumed values awaiting measurement. No single-input sensitivity bracket with a failing value exists for the pickup.",
+ "limits": "Free rigid NOTE on commanded cassette, truck and chassis motion. Carpet grip, tread compliance and field counter speed are assumed values awaiting measurement. The brackets move one input at a time on the first nominal NOTE; combined errors are not bracketed.",
  "transport": {
   "case": "acquire-16",
   "payload": "NOTE",
