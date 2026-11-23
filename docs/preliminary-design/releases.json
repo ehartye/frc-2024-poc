@@ -8,13 +8,16 @@
   "designStatus": {
     "003": "superseded",
     "003-1": "superseded",
-    "004": "in-progress"
+    "004": "effective"
   },
   "revision": {
     "004": {
-      "number": 3,
+      "number": 4,
       "date": "2026-11-22",
-      "commit": "fdb7c69ba3b1921018a3d0cd173f267e5bbe7404"
+      "commit": "de31f6a712c4f6cb15fcf2b831ee006026402c66"
     }
+  },
+  "accepted": {
+    "004": "2026-11-22"
   }
 }

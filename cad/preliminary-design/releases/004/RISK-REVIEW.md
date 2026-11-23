@@ -67,7 +67,7 @@ No risk in the register has neither a closure nor a bench test. Five things that
 - **Finding 4, settled.** Six spanning NOTES were fired at 125° and 126° at the released lane. 125° delivers 6 of 6 with 26.0 mm. 126° delivers 4 of 6. The window is 121° to 125°. The release keeps 122°. The launch-angle bench test is now departure from 122°: pass 1.0°, fail 2.0°.
 - **Finding 3, partly settled.** The lane at y = 5.796 m now has all 34 carries, all delivered.
 - **New.** At 123° the 12 nominal NOTES count 9 of 12, against 12 of 12 at 122°. That is why 123° is an alternative and not the setpoint. The three were not watched beyond 7 s.
-- **Finding 6 stands.** The ledger copies the release 003 mass lines. The lengthened shafts are not in it.
+- **Finding 6 is closed for the shafts.** The ledger now adds the mass of each solid the revision changed: 0.074 kg for the two lengthened shafts. The undrawn motor mounts remain outside it.
 
 ## Edits applied to `risks.py`
 

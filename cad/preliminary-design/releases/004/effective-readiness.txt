@@ -1,0 +1,45 @@
+Preliminary release 004 is effective; the site opens 004
+Effective-readiness report for 2024-004-guided-cassette
+Informational: marking a design effective stays a project decision in a reviewed pull request.
+[met]     1. Whole mission cycle checked for clearance, mass and voltage
+[met]     2. Every mission-critical interaction driven by a qualified physics trial
+            · acquire-49: cad/preliminary-design/releases/004/trial-acquire-49.json
+            · lift-05: cad/preliminary-design/releases/004/trial-lift-05.json
+            · feed-04: cad/preliminary-design/releases/004/trial-feed-04.json
+            · flight-02: cad/preliminary-design/releases/004/trial-flight-02.json
+            · hold: cad/preliminary-design/releases/004/trial-hold.json
+[met]     3. Every open risk closed by a design change or carried as a bench test with numbers
+            · scoring-repeatability: bench test, Starts out of 20 on a full field speaker that score six floor NOTES within 120 s — pass 19, fail 18 starts
+            · speaker-count-delay: bench test, Delivered NOTES out of 20 counted by a real speaker within 7 s of the shot — pass 20, fail 18 NOTES
+            · firing-lane-tolerance: bench test, Largest heading error at the firing station over 20 autonomous arrivals — pass 2, fail 3 deg
+            · firing-lane-lateral: bench test, Largest lateral error at the firing station over 20 autonomous arrivals — pass 20, fail 50 mm
+            · firing-lane-fore-aft: bench test, Largest fore-aft error at the firing station over 20 autonomous arrivals — pass 30, fail 100 mm
+            · launch-angle-tolerance: bench test, Largest departure of the cassette launch angle from 122 degrees over 20 lifts to the stop — pass 1, fail 2 deg
+            · launcher-speed-floor: bench test, Launch belt surface speed at feed on a weak pack, 6.88 m/s command — pass 6.56, fail 5.92 m/s
+            · launch-motor-clearance: bench test, Smallest gap between a NOTE picked up 50 mm off centre and either launch motor or its shaft — pass 3, fail 0 mm
+            · returning-note: bench test, Deepest entry into the control-board envelope of a NOTE dropped from the speaker opening, guard fitted — pass 0, fail 1 mm
+            · entry-bracket-clearance: bench test, Smallest gap between a nominal NOTE and either entry bearing bracket through discharge — pass 1, fail 0 mm
+            · motor-package-clearance: bench test, Smallest gap between the NOTE and the slide motor package through pickup and lift — pass 1, fail 0 mm
+            · belt-indentation: bench test, One-sided NOTE indentation under the centre intake belt at the seat — pass 8, fail 8.1 mm
+            · runner-indentation: bench test, One-sided NOTE indentation on either runner with the NOTE seated — pass 2, fail 2.1 mm
+            · pickup-tip-height: bench test, Blade tip height above competition carpet with the cassette deployed and the robot loaded — pass 10, fail 12 mm
+            · pickup-lateral-offset: bench test, Floor pickups out of 20 that seat within 2.82 s with the NOTE 50 mm off centre — pass 19, fail 18 pickups
+            · pickup-grip: bench test, Measured grip coefficient of the nose tread on a competition NOTE — pass 0.3, fail 0.2 coefficient
+            · seat-sensor: bench test, Seated NOTES out of 20 confirmed by the seat sensor within 0.2 s of seating — pass 20, fail 19 NOTES
+            · cover-leaf-stop: bench test, Cover leaf overtravel past its cam stop during a 4.8 s loaded lift — pass 1, fail 2 deg
+            · auxiliary-load-during-lift: bench test, Battery current of all loads other than drive, pivot and slide during the loaded lift — pass 25, fail 39 A
+            · weak-battery-shot: bench test, Lowest bus voltage during a shot on a pack at 11.8 V open circuit — pass 8, fail 7.9 V
+            · inspection-mass: bench test, Weighed inspection mass without battery and bumpers — pass 56.69, fail 56.7 kg
+            · endgame-clock: closed by Mission rule from the strategic narrative: with 24 s left the robot leaves the scoring lane for the stage. The separate 24 s endgame case reaches power cut with 1.99 s remaining. A sixth score before the climb is not required.
+            · climb-centre-of-gravity: bench test, Measured centre of gravity ahead of the nominal position, robot at gross mass — pass 50, fail 60 mm
+            · hoist-ramp: bench test, Lowest tire or bumper clearance during a 5 s disabled hold after a 6.5 s hoist ramp — pass 10, fail 9 mm
+            · hoist-line-termination: bench test, Proof load held by each terminated hoist line without slip or damage — pass 5.73, fail 5.7 kN
+            · hoist-line-slack: bench test, Largest slack in either hoist line through full carriage travel, take-up fitted — pass 5, fail 10 mm
+            · climb-catch-and-stops: bench test, Chassis drop during a 5 s disabled hold on the stops at 1.5 times robot weight — pass 0, fail 1 mm
+            · battery-service-restraint: bench test, Horizontal load held by the fitted slide link without movement — pass 1.29, fail 1 kN
+            · battery-removal-path: bench test, Smallest gap around the battery through a straight lift at the service index, leads disconnected — pass 5, fail 0 mm
+            · slide-motor-cartridge: bench test, Smallest gap around the slide motor cartridge through its full withdrawal — pass 3, fail 0 mm
+            · endgame-envelope: bench test, Largest reach beyond the frame perimeter through capture and hoist, measured on the first Fusion assembly — pass 300, fail 305 mm
+            · cover-leaf-park-pose: closed by The cam law governs: every cycle case moves the leaf by the cam and the recorded trace. The detailed model draws the leaf in its cam position at park.
+Bench tests to carry as verification items (results are not required to mark the design effective): scoring-repeatability, speaker-count-delay, firing-lane-tolerance, firing-lane-lateral, firing-lane-fore-aft, launch-angle-tolerance, launcher-speed-floor, launch-motor-clearance, returning-note, entry-bracket-clearance, motor-package-clearance, belt-indentation, runner-indentation, pickup-tip-height, pickup-lateral-offset, pickup-grip, seat-sensor, cover-leaf-stop, auxiliary-load-during-lift, weak-battery-shot, inspection-mass, climb-centre-of-gravity, hoist-ramp, hoist-line-termination, hoist-line-slack, climb-catch-and-stops, battery-service-restraint, battery-removal-path, slide-motor-cartridge, endgame-envelope
+Result: 3 of 3 criteria met.

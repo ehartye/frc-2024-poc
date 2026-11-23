@@ -1,7 +1,7 @@
 {
   "schema": "agent-frc/preliminary-layout-result@1",
   "issue": "2024-004-guided-cassette",
-  "planSha256": "9f7c9b6fded6d4c55402abc4fb773f64bb11e7bff495c7e0380c77da13de68e8",
+  "planSha256": "1f760bbac23610e21a141dac5cefe121dec45a8398c2cd172ca7806dda69d285",
   "design": {
     "file": "cad/preliminary-design/releases/004/design.json",
     "sha256": "ec8ad83d89524c21bf01782f98d2b350b2fffcc08ef8d07315ce04003cb8d95e"
@@ -113,9 +113,9 @@
       "scenarioId": "inspection-mass-upper",
       "current": {
         "file": "cad/preliminary-design/releases/004/observed.json",
-        "sha256": "9a7af078a413b7c83dfac2dabfee076f34f8bf916d519a2d7c0e6ca8043333b9"
+        "sha256": "d3b00dcdedf23951872f5759935827ef8073319c3ac0d2642a6089c528583c2c"
       },
-      "value": 56.2700168104744
+      "value": 56.34400131746641
     }
   ],
   "reopen": [],
@@ -228,21 +228,21 @@
   "budgets": {
     "source": {
       "file": "cad/preliminary-design/releases/004/budgets.json",
-      "sha256": "a9294aa59e53e87cd2d966eb636adbe83b2bda616c83cccc37c13c56c5f35a78"
+      "sha256": "2e7f590cb1d81f559e415b053638494e75422b89c71683b9b14ab1210a66fc17"
     },
     "limits": {
       "file": "cad/preliminary-design/releases/004/limits.json",
       "sha256": "5716c5edaf18a6fb3a6be8618db02f15d1330a2b382339c16c7bc8b1b7728a04"
     },
     "inspectionKg": [
-      35.997816848300225,
-      56.27001681047441
+      36.07180135529223,
+      56.344001317466414
     ],
     "runningKg": [
-      48.88279718062636,
-      71.87499714280055
+      48.95678168761837,
+      71.94898164979256
     ],
-    "remainingKg": 0.4290294395255927,
+    "remainingKg": 0.3550449325335876,
     "massStatus": "pass",
     "electricalCases": [
       {
@@ -2735,9 +2735,9 @@
     "verified": true,
     "scene": {
       "file": "cad/preliminary-design/releases/004/review-scene.json.gz",
-      "sha256": "a4d6cff27cc84987bfd6831e20993542cd6d20259273dcd8fb92b1950613e8dd",
-      "contentSha256": "de96f133f0a503a78b7d83f0cd263b83470c27cb8a9eddbf76b2e970dfa1885e",
-      "bytes": 79043999
+      "sha256": "ec0bac2e0e61dc7ac52fe6b8ad95d4005ebcc80efe8f6489abece5c9a4dc80a8",
+      "contentSha256": "de994b3ecb6e1a8f52c5c98e101c3315c99d08b3c3754afc911c1ed36927cf2e",
+      "bytes": 79044222
     }
   },
   "groups": {

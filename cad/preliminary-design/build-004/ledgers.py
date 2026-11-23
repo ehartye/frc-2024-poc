@@ -1,7 +1,7 @@
 """Weight and loaded-voltage ledgers of release 004.
 
 Every figure is read from a pinned evidence file at build time. The mass lines are the issued release 003
-ledger with its component names repaired; the total is checked against the gross power study.
+ledger with its component names repaired, plus the mass of any solid the revision changed.
 """
 import json
 
@@ -23,18 +23,44 @@ def repaired(text):
     return text.replace("Â·", "·")
 
 
-def masses():
-    """The issued mass lines with repaired names, the running payload interval and the gross study."""
+STEEL_KG_PER_MM3 = 7.85e-6
+
+
+def masses(revision):
+    """The issued mass lines carried to this revision, the running payload interval and the gross study.
+
+    The lines start from the issued release 003 ledger. A solid whose volume the revision changed adds its
+    volume difference at its material density to the line that holds it, so the ledger follows the geometry.
+    `revision` is the record written with the layout STEP; every changed solid here is a steel shaft or a motor
+    whose volume did not change.
+    """
     issued = json.loads(ISSUED_BUDGETS.read_bytes())
     lines = []
     for r in issued["masses"]:
         basis = r["basis"]
         if basis.startswith("Published revision 002"):
             basis = "Issued release 003 subtotal, preserving additions and incremental stock allowances."
-        lines.append(dict(id=repaired(r["id"]), members=[repaired(m) for m in r["members"]], kg=r["kg"], basis=repaired(basis)))
+        lines.append(dict(id=repaired(r["id"]), members=[repaired(m) for m in r["members"]], kg=list(r["kg"]), basis=repaired(basis)))
     gross = read(GROSS)
-    assert abs(sum(r["kg"][1] for r in lines) - gross["inspectionHighKg"]) < 1e-7
-    return lines, issued["runningPayloadKg"], gross
+    assert abs(sum(r["kg"][1] for r in lines) - gross["inspectionHighKg"]) < 1e-7      # the issued ledger, before the revision
+    added = 0.0
+    for name, change in revision["changed"].items():
+        before, after = change["volumeMm3"]
+        if abs(after - before) < 1e-3:
+            continue
+        assert "shaft" in name, f"No density is recorded for the changed solid {name}"
+        kg = (after - before) * STEEL_KG_PER_MM3
+        line = next(r for r in lines if name in r["members"])
+        line["kg"] = [line["kg"][0] + kg, line["kg"][1] + kg]
+        line["basis"] += (f" Revision {revision['revision']} adds {kg:.4f} kg for {name}: {after - before:.0f} mm3 of"
+                          " added solid taken as steel.")
+        added += kg
+    revised = dict(gross, inspectionHighKg=gross["inspectionHighKg"] + added, runningKg=gross["runningKg"] + added,
+                   inspectionMarginKg=gross["inspectionMarginKg"] - added,
+                   revision=dict(id=revision["revision"], addedKg=added, issuedInspectionHighKg=gross["inspectionHighKg"],
+                                 basis="Volume added to each changed solid at steel density, on the issued gross study",
+                                 source=pin(GROSS)))
+    return lines, issued["runningPayloadKg"], revised
 
 
 def duties():

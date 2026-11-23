@@ -353,10 +353,10 @@
     "Feed reducer mount"
    ],
    "kg": [
-    0.5563888325416134,
-    0.9072314544810522
+    0.6303733395336183,
+    0.9812159614730571
    ],
-   "basis": "Issued release 003 subtotal, preserving additions and incremental stock allowances."
+   "basis": "Issued release 003 subtotal, preserving additions and incremental stock allowances. Revision 004-A adds 0.0370 kg for Launch Belt drive shaft · left: 4712 mm3 of added solid taken as steel. Revision 004-A adds 0.0370 kg for Launch Belt drive shaft · right: 4712 mm3 of added solid taken as steel."
   },
   {
    "id": "Forward drive bridges and shafts",
@@ -481,8 +481,8 @@
  "electricalCases": {
   "reset-01-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -524,8 +524,8 @@
   },
   "reset-01-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -567,8 +567,8 @@
   },
   "reset-02-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -610,8 +610,8 @@
   },
   "reset-02-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -653,8 +653,8 @@
   },
   "reset-03-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -696,8 +696,8 @@
   },
   "reset-03-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -739,8 +739,8 @@
   },
   "reset-04-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -782,8 +782,8 @@
   },
   "reset-04-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -825,8 +825,8 @@
   },
   "reset-05-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -868,8 +868,8 @@
   },
   "reset-05-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -911,8 +911,8 @@
   },
   "acquire-01-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -954,8 +954,8 @@
   },
   "acquire-01-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -997,8 +997,8 @@
   },
   "acquire-02-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -1040,8 +1040,8 @@
   },
   "acquire-02-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -1083,8 +1083,8 @@
   },
   "acquire-03-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -1126,8 +1126,8 @@
   },
   "acquire-03-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -1169,8 +1169,8 @@
   },
   "acquire-04-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -1212,8 +1212,8 @@
   },
   "acquire-04-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -1255,8 +1255,8 @@
   },
   "acquire-05-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -1298,8 +1298,8 @@
   },
   "acquire-05-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -1341,8 +1341,8 @@
   },
   "acquire-06-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -1384,8 +1384,8 @@
   },
   "acquire-06-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -1427,8 +1427,8 @@
   },
   "acquire-07-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -1470,8 +1470,8 @@
   },
   "acquire-07-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -1513,8 +1513,8 @@
   },
   "acquire-08-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -1556,8 +1556,8 @@
   },
   "acquire-08-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -1599,8 +1599,8 @@
   },
   "acquire-09-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -1642,8 +1642,8 @@
   },
   "acquire-09-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -1685,8 +1685,8 @@
   },
   "acquire-10-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -1728,8 +1728,8 @@
   },
   "acquire-10-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -1771,8 +1771,8 @@
   },
   "acquire-11-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -1814,8 +1814,8 @@
   },
   "acquire-11-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -1857,8 +1857,8 @@
   },
   "acquire-12-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -1900,8 +1900,8 @@
   },
   "acquire-12-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -1943,8 +1943,8 @@
   },
   "acquire-13-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -1986,8 +1986,8 @@
   },
   "acquire-13-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -2029,8 +2029,8 @@
   },
   "acquire-14-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -2072,8 +2072,8 @@
   },
   "acquire-14-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -2115,8 +2115,8 @@
   },
   "acquire-15-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -2158,8 +2158,8 @@
   },
   "acquire-15-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -2201,8 +2201,8 @@
   },
   "acquire-16-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -2244,8 +2244,8 @@
   },
   "acquire-16-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -2287,8 +2287,8 @@
   },
   "acquire-17-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -2330,8 +2330,8 @@
   },
   "acquire-17-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -2373,8 +2373,8 @@
   },
   "acquire-18-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -2416,8 +2416,8 @@
   },
   "acquire-18-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -2459,8 +2459,8 @@
   },
   "acquire-19-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -2502,8 +2502,8 @@
   },
   "acquire-19-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -2545,8 +2545,8 @@
   },
   "acquire-20-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -2588,8 +2588,8 @@
   },
   "acquire-20-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -2631,8 +2631,8 @@
   },
   "acquire-21-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -2674,8 +2674,8 @@
   },
   "acquire-21-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -2717,8 +2717,8 @@
   },
   "acquire-22-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -2760,8 +2760,8 @@
   },
   "acquire-22-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -2803,8 +2803,8 @@
   },
   "acquire-23-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -2846,8 +2846,8 @@
   },
   "acquire-23-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -2889,8 +2889,8 @@
   },
   "acquire-24-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -2932,8 +2932,8 @@
   },
   "acquire-24-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -2975,8 +2975,8 @@
   },
   "acquire-25-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -3018,8 +3018,8 @@
   },
   "acquire-25-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -3061,8 +3061,8 @@
   },
   "acquire-26-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -3104,8 +3104,8 @@
   },
   "acquire-26-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -3147,8 +3147,8 @@
   },
   "acquire-27-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -3190,8 +3190,8 @@
   },
   "acquire-27-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -3233,8 +3233,8 @@
   },
   "acquire-28-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -3276,8 +3276,8 @@
   },
   "acquire-28-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -3319,8 +3319,8 @@
   },
   "acquire-29-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -3362,8 +3362,8 @@
   },
   "acquire-29-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -3405,8 +3405,8 @@
   },
   "acquire-30-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -3448,8 +3448,8 @@
   },
   "acquire-30-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -3491,8 +3491,8 @@
   },
   "acquire-31-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -3534,8 +3534,8 @@
   },
   "acquire-31-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -3577,8 +3577,8 @@
   },
   "acquire-32-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -3620,8 +3620,8 @@
   },
   "acquire-32-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -3663,8 +3663,8 @@
   },
   "acquire-33-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -3706,8 +3706,8 @@
   },
   "acquire-33-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -3749,8 +3749,8 @@
   },
   "acquire-34-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -3792,8 +3792,8 @@
   },
   "acquire-34-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -3835,8 +3835,8 @@
   },
   "acquire-35-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -3878,8 +3878,8 @@
   },
   "acquire-35-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -3921,8 +3921,8 @@
   },
   "acquire-36-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -3964,8 +3964,8 @@
   },
   "acquire-36-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -4007,8 +4007,8 @@
   },
   "acquire-37-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -4050,8 +4050,8 @@
   },
   "acquire-37-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -4093,8 +4093,8 @@
   },
   "acquire-38-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -4136,8 +4136,8 @@
   },
   "acquire-38-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -4179,8 +4179,8 @@
   },
   "acquire-39-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -4222,8 +4222,8 @@
   },
   "acquire-39-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -4265,8 +4265,8 @@
   },
   "acquire-40-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -4308,8 +4308,8 @@
   },
   "acquire-40-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -4351,8 +4351,8 @@
   },
   "acquire-41-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -4394,8 +4394,8 @@
   },
   "acquire-41-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -4437,8 +4437,8 @@
   },
   "acquire-42-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -4480,8 +4480,8 @@
   },
   "acquire-42-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -4523,8 +4523,8 @@
   },
   "acquire-43-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -4566,8 +4566,8 @@
   },
   "acquire-43-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -4609,8 +4609,8 @@
   },
   "acquire-44-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -4652,8 +4652,8 @@
   },
   "acquire-44-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -4695,8 +4695,8 @@
   },
   "acquire-45-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -4738,8 +4738,8 @@
   },
   "acquire-45-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -4781,8 +4781,8 @@
   },
   "acquire-46-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -4824,8 +4824,8 @@
   },
   "acquire-46-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -4867,8 +4867,8 @@
   },
   "acquire-47-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -4910,8 +4910,8 @@
   },
   "acquire-47-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -4953,8 +4953,8 @@
   },
   "acquire-48-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -4996,8 +4996,8 @@
   },
   "acquire-48-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -5039,8 +5039,8 @@
   },
   "acquire-49-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -5082,8 +5082,8 @@
   },
   "acquire-49-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -5125,8 +5125,8 @@
   },
   "lift-01-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls and other loads, staged to 25 A": [
@@ -5164,8 +5164,8 @@
   },
   "lift-01-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls and other loads, staged to 25 A": [
@@ -5203,8 +5203,8 @@
   },
   "lift-02-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls and other loads, staged to 25 A": [
@@ -5242,8 +5242,8 @@
   },
   "lift-02-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls and other loads, staged to 25 A": [
@@ -5281,8 +5281,8 @@
   },
   "lift-03-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls and other loads, staged to 25 A": [
@@ -5320,8 +5320,8 @@
   },
   "lift-03-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls and other loads, staged to 25 A": [
@@ -5359,8 +5359,8 @@
   },
   "lift-04-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls and other loads, staged to 25 A": [
@@ -5398,8 +5398,8 @@
   },
   "lift-04-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls and other loads, staged to 25 A": [
@@ -5437,8 +5437,8 @@
   },
   "lift-05-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls and other loads, staged to 25 A": [
@@ -5476,8 +5476,8 @@
   },
   "lift-05-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls and other loads, staged to 25 A": [
@@ -5515,8 +5515,8 @@
   },
   "feed-01-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -5550,8 +5550,8 @@
   },
   "feed-01-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -5585,8 +5585,8 @@
   },
   "feed-02-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -5620,8 +5620,8 @@
   },
   "feed-02-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -5655,8 +5655,8 @@
   },
   "feed-03-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -5690,8 +5690,8 @@
   },
   "feed-03-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -5725,8 +5725,8 @@
   },
   "feed-04-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -5760,8 +5760,8 @@
   },
   "feed-04-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -5795,8 +5795,8 @@
   },
   "flight-01-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -5830,8 +5830,8 @@
   },
   "flight-01-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -5865,8 +5865,8 @@
   },
   "flight-02-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -5900,8 +5900,8 @@
   },
   "flight-02-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -5935,8 +5935,8 @@
   },
   "stow-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -5966,8 +5966,8 @@
   },
   "stow-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -5997,8 +5997,8 @@
   },
   "approach-01-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -6028,8 +6028,8 @@
   },
   "approach-01-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -6059,8 +6059,8 @@
   },
   "approach-02-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -6090,8 +6090,8 @@
   },
   "approach-02-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls, sensors and standby loads": [
@@ -6121,8 +6121,8 @@
   },
   "capture-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls and concurrent loads": [
@@ -6156,8 +6156,8 @@
   },
   "capture-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls and concurrent loads": [
@@ -6191,8 +6191,8 @@
   },
   "hoist-01-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls and concurrent loads": [
@@ -6226,8 +6226,8 @@
   },
   "hoist-01-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls and concurrent loads": [
@@ -6261,8 +6261,8 @@
   },
   "hoist-02-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls and concurrent loads": [
@@ -6296,8 +6296,8 @@
   },
   "hoist-02-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls and concurrent loads": [
@@ -6331,8 +6331,8 @@
   },
   "hoist-03-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls and concurrent loads": [
@@ -6366,8 +6366,8 @@
   },
   "hoist-03-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls and concurrent loads": [
@@ -6401,8 +6401,8 @@
   },
   "hold-weak": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls and concurrent loads": [
@@ -6432,8 +6432,8 @@
   },
   "hold-nominal": {
    "loadedKg": [
-    48.88279718062636,
-    71.87499714280055
+    48.95678168761837,
+    71.94898164979256
    ],
    "batterySideA": {
     "Controls and concurrent loads": [

@@ -178,11 +178,11 @@ def risks(operating):
              evidence="counted-reset-power-02/run-dev-48.json",
              benchTest=_bench("Lowest bus voltage during a shot on a pack at 11.8 V open circuit", 8.0, 7.9, "V")),
         dict(id="inspection-mass",
-             risk="The upper inspection estimate is 56.270 kg against 56.699 kg: 0.429 kg of headroom, with a 3 to 6 kg "
-                  "unallocated reserve inside the estimate. The mass ledger is the study made before revision 004-A. Known "
-                  "omission: the lengthened launch shafts, about 0.07 kg (9,425 mm3 of added shaft in the layout solids, "
-                  "taken as steel at 7.85 g/cm3), and the taller launch motor mounts, which are not drawn and not "
-                  "estimated. They, the control-board guard and detailing growth draw on that reserve.",
+             risk="The upper inspection estimate is 56.344 kg against 56.699 kg: 0.355 kg of headroom, with a 3 to 6 kg "
+                  "unallocated reserve inside the estimate. The ledger starts from the study made before revision 004-A "
+                  "and adds the lengthened launch shafts from the layout solids: 0.074 kg (9,425 mm3 of added shaft "
+                  "taken as steel at 7.85 g/cm3). The taller launch motor mounts are not drawn and not estimated. They, "
+                  "the control-board guard and detailing growth draw on that reserve.",
              evidence="mounted-slide-02/gross-power.json",
              benchTest=_bench("Weighed inspection mass without battery and bumpers", 56.69, 56.70, "kg")),
         dict(id="endgame-clock",

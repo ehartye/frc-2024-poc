@@ -32,7 +32,7 @@ Release 004 is a revised layout. It is not release 003 with repaired names.
 1. The literal criterion is not met for 3 of 34 perturbed NOTES at the released point. They bounce back out through the opening within 3 s without reaching a beam. 31 are counted. The owner decides; bench tests B1 and B2 of the handoff carry it.
 2. Why those three carries bounce out. Nothing recorded at release separates them. NOTE attitude and spin at the opening were not compared.
 3. Archived scripts outside the release's trials still name the `R:` drive. The scoring campaign no longer does. See `REPRODUCIBILITY.md`.
-4. Mass and voltage budgets do not include revision 004-A: the ledger is the release 003 mass lines. Known omission: about 0.07 kg of launch shaft.
+4. The mass ledger adds the lengthened launch shafts of revision 004-A from the layout solids (0.074 kg). The taller motor mounts are not drawn or estimated, and the voltage budget is the study made before the revision.
 5. Launch angle 122° is 1° above a thin low edge. Bench test B5.
 6. Battery lift at the service index: not a checked case.
 7. Independent review, status decision by the owner.

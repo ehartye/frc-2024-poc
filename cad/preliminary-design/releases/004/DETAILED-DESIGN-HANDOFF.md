@@ -207,7 +207,7 @@ Still to do in Fusion:
 - Draw the taller motor mount. It is not in the layout.
 - Check the lengthened shaft for whip and for bearing support.
 - The pickup trial does not model the motors. A NOTE picked up off centre meeting the shaft is untested (bench test B4).
-- The raise adds about 0.07 kg of shaft and about 1 percent to the lifted moment. Neither is in the mass or voltage budget (section 7). Source: `B4/risks.py`, `B4/ledgers.py`.
+- The raise adds 0.074 kg of shaft, which the mass ledger includes, and about 1 percent to the lifted moment, which the voltage budget does not include (section 7). Source: `B4/risks.py`, `B4/ledgers.py`.
 
 ## 7. Budgets to stay inside
 
@@ -220,7 +220,7 @@ Still to do in Fusion:
 
 Weak pack: 11.8 V open circuit, 27 mΩ (`B4/risks.py`). Reopen preliminary design if detailing consumes a margin.
 
-The builder regenerates `REL/budgets.json` and `REL/limits.json` for release 004. It does not recompute the figures. `B4/ledgers.py` copies the mass lines from the issued release 003 budget and checks that they sum to the 56.270 kg of `EV/mounted-slide-02/gross-power.json`, a study made before revision 004-A. The line that holds the launch drive shafts is the issued release 003 subtotal. So there is a known omission. The lengthened shafts are not in the mass ledger: about 0.07 kg, from the 9,425 mm³ of shaft added in `REL/step-revision.json` taken as steel at 7.85 g/cm³. The taller motor mounts are not drawn and not estimated. Also, the lift voltage margin does not include the roughly 1 percent larger lifted moment. Charge the mass to the unallocated reserve until the study is rerun.
+The builder regenerates `REL/budgets.json` and `REL/limits.json` for release 004. `B4/ledgers.py` starts from the mass lines of the issued release 003 budget, which sum to the 56.270 kg of `EV/mounted-slide-02/gross-power.json`, a study made before revision 004-A. It then adds the volume the revision added to each changed solid, at steel density, to the line that holds it. The lengthened shafts add 0.074 kg (9,425 mm³ from `REL/step-revision.json` at 7.85 g/cm³), so the upper inspection estimate is 56.344 kg and the headroom 0.355 kg. The taller motor mounts are not drawn and not estimated. Also, the lift voltage margin does not include the roughly 1 percent larger lifted moment. Charge the mass to the unallocated reserve until the study is rerun.
 
 ## 8. Brackets found by trial
 
@@ -312,7 +312,7 @@ The climb does not rely on motor power to hold. With the catch disabled the robo
 4. **Launch motor mount and shaft.** Not drawn (section 6).
 5. **Returning NOTE.** In start R02 a NOTE left the speaker and entered the roboRIO envelope by up to 25.0 mm (`EV/shared-counter-03/return-to-robot.json`). No guard is drawn.
 6. **Thin clearances.** Entry bearing bracket 0.035 mm sampled; slide motor package 0.189 mm guaranteed. Sources: `cad/preliminary-design/motion-evidence-002/exit-bracket-clearance.json`, `EV/mounted-slide-02/free-piece-clearance.json`.
-7. **Budgets do not include 004-A.** Mass headroom is 0.429 kg and lift voltage margin is 0.448 V without the motor raise (section 7).
+7. **The voltage budget does not include 004-A.** Mass headroom is 0.355 kg with the lengthened shafts and without the undrawn motor mounts. Lift voltage margin is 0.448 V without the motor raise (section 7).
 8. **Climb margin.** 0.9 mm at the forward centre-of-gravity limit. Catch, stop pins and pitch lock are ideal constraints in the trial.
 9. **Battery lift.** Not a checked case.
 10. **Assumed contact.** Every NOTE indentation limit, the grip coefficient and the speaker interior are assumptions.

@@ -414,7 +414,7 @@ def main():
     motion = save("motion.json", dict(schema="agent-frc/mechanical-motion@1", layoutDesignSha256=design["sha256"],
                                       layoutDatum=datum, step=step, cases=cases))
 
-    mass_lines, payload, gross = ledgers.masses()
+    mass_lines, payload, gross = ledgers.masses(json.loads(revision_file.read_bytes()))
     inspection = [0.0, 0.0]
     for line in mass_lines:      # the checker's own summation order, so the running range matches bit for bit
         inspection = [a + b for a, b in zip(inspection, line["kg"])]
@@ -436,7 +436,7 @@ def main():
         massLines=[r["id"] for r in mass_lines], electricalCases=duty))
     budget = save("budgets.json", dict(issue=ISSUE, step=step, motion=motion, design=design, masses=mass_lines,
                                        runningPayloadKg=payload, requirements=limits_pin, electricalCases=electrical))
-    gross_pin = copy(ledgers.GROSS, "gross-power.json")
+    gross_pin = save("gross-power.json", gross)
     hold = dict(id="inspection-mass", unit="kg", scenarioId="inspection-mass-upper",
                 scenario="Upper inspection estimate including slide service stock")
     accepted = save("accepted.json", dict(**hold, basis="Kickoff inspection limit applied to the current gross upper allocation.",
