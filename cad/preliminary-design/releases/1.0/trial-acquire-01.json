@@ -1,0 +1,175 @@
+{
+ "schema": "frc-2024-poc/trial-record@1",
+ "case": "acquire-01",
+ "phase": "acquire",
+ "interaction": "Floor acquisition over the Profile A lip to the seat",
+ "cycleClockS": [
+  4.800000000000001,
+  5.11
+ ],
+ "pathDeviationMm": 0.18862269112999447,
+ "sources": {
+  "carry": {
+   "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+   "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1"
+  },
+  "run": {
+   "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/run-dev-96.json",
+   "sha256": "50badf79dcca711a849c99c2c546b47b92ebb7d8e77afad9e0bfefa6e80db0d1"
+  },
+  "freeze": {
+   "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/freeze.json",
+   "sha256": "ff007748cc720f076311ec2d35f20987a3eb954b77af3bd90371f62a4c3a05f9"
+  }
+ },
+ "qualification": {
+  "result": "pass",
+  "observed": {
+   "seated": true,
+   "seatConfirmedS": 2.82,
+   "sideBeltTakeoverS": 1.278
+  },
+  "control": {
+   "condition": "Nose roller and belts unpowered",
+   "rejected": true,
+   "evidence": {
+    "file": "2024/preliminary-review-lan/greenfield-retained/pickup-height-control-01/dead.json",
+    "sha256": "34e30f276ee69fef36a9e1f7c9ef368965409c3eb2a009416bd441a81af110f9",
+    "observed": {
+     "enabled": false,
+     "seated": false,
+     "maxRiseMm": 3.9307887438192366
+    }
+   }
+  },
+  "brackets": [
+   {
+    "input": "rigid blade tip height above the carpet",
+    "unit": "mm",
+    "passing": 10,
+    "failing": 12,
+    "note": "Passing values [1.5, 2, 3.5, 5.0, 6.5, 8, 10]; failing values [12, 14, 16, 18, 20, 24]. 48 ring segments. Repeated at 96 segments with the same outcome: n96-h14-y0-mu0.45-a8 fails, n96-h16-y0-mu0.45-a8 fails.",
+    "evidence": {
+     "file": "2024/preliminary-review-lan/greenfield-retained/pickup-brackets-04/results.json",
+     "sha256": "c9c2b25543567f27be15b42057d6f25b2eaf286d05e5ab84d772a1b9eac67923"
+    }
+   },
+   {
+    "input": "lateral NOTE offset from the cassette centre",
+    "unit": "m",
+    "passing": 0.05,
+    "failing": 0.1,
+    "note": "Passing values [-0.05, 0.0, 0.05]; failing values [-0.2, -0.15, -0.1, 0.1, 0.15, 0.2]. 48 ring segments.",
+    "evidence": {
+     "file": "2024/preliminary-review-lan/greenfield-retained/pickup-brackets-04/results.json",
+     "sha256": "c9c2b25543567f27be15b42057d6f25b2eaf286d05e5ab84d772a1b9eac67923"
+    }
+   },
+   {
+    "input": "nose roller and pad grip coefficient",
+    "unit": "coefficient",
+    "passing": 0.3,
+    "failing": 0.2,
+    "note": "Passing values [0.3, 0.45, 0.6, 0.75]; failing values [0.02, 0.05, 0.1, 0.15, 0.2]. 48 ring segments. Repeated at 96 segments with the same outcome: n96-h5-y0-mu0.1-a8 fails, n96-h5-y0-mu0.05-a8 fails.",
+    "evidence": {
+     "file": "2024/preliminary-review-lan/greenfield-retained/pickup-brackets-04/results.json",
+     "sha256": "c9c2b25543567f27be15b42057d6f25b2eaf286d05e5ab84d772a1b9eac67923"
+    }
+   },
+   {
+    "input": "nose motor phase current limit",
+    "unit": "A",
+    "passing": 1.0,
+    "failing": 0.5,
+    "note": "Passing values [1.0, 2.0, 3.0, 4.0, 6.0, 8.0]; failing values [0.0, 0.5]. 48 ring segments. Repeated at 96 segments with the same outcome: n96-h5-y0-mu0.45-a1 passes, n96-h5-y0-mu0.45-a2 passes.",
+    "evidence": {
+     "file": "2024/preliminary-review-lan/greenfield-retained/pickup-brackets-04/results.json",
+     "sha256": "c9c2b25543567f27be15b42057d6f25b2eaf286d05e5ab84d772a1b9eac67923"
+    }
+   }
+  ],
+  "timestep": {
+   "coarseS": 0.0005,
+   "fineS": 0.00025,
+   "sameOutcome": true,
+   "note": "The finer step also doubles the NOTE ring segments, 48 to 96.",
+   "evidence": [
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-48.json",
+     "sha256": "611399859733ad8d4f7099874b1d03e433fc6555cdb3aa3d4203716cb703c2c6",
+     "observed": {
+      "seated": true
+     }
+    },
+    {
+     "file": "2024/preliminary-review-lan/greenfield-retained/counted-reset-power-02/dev-middle-96.json",
+     "sha256": "4c42fb47016cd5dfb0c38e0d5cc11f1eda145950f6e71c2ea66ae3d2d4490ee1",
+     "observed": {
+      "seated": true
+     }
+    }
+   ]
+  }
+ },
+ "limits": "Free rigid NOTE on commanded cassette, truck and chassis motion. Carpet grip, tread compliance and field counter speed are assumed values awaiting measurement. The brackets move one input at a time on the first nominal NOTE; combined errors are not bracketed.",
+ "transport": {
+  "case": "acquire-01",
+  "payload": "NOTE",
+  "mechanisms": [
+   "Cassette drive",
+   "Metering drive"
+  ],
+  "moves": {
+   "Chambered NOTE": [
+    {
+     "kind": "rotation",
+     "axis": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "originMm": [
+      866.6309,
+      0.0,
+      25.399399999999957
+     ],
+     "travelDeg": 0.026699832769928666
+    },
+    {
+     "kind": "translation",
+     "travelMm": [
+      -77.45590000000004,
+      0.0,
+      0.07179999999995346
+     ]
+    }
+   ]
+  },
+  "initialPose": {
+   "Chambered NOTE": [
+    {
+     "kind": "rotation",
+     "axis": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "originMm": [
+      185.0,
+      0.0,
+      501.0
+     ],
+     "travelDeg": 125.00000000000001
+    },
+    {
+     "kind": "translation",
+     "travelMm": [
+      466.6309,
+      0.0,
+      -526.0006000000001
+     ]
+    }
+   ]
+  }
+ }
+}

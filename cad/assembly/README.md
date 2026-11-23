@@ -1,9 +1,9 @@
 # 2024 integrated component CAD candidate
 
 <!-- cad-still -->
-[![Preliminary robot with the scoring cassette raised above the blue bumper](../preliminary-design/media/002-preliminary-robot.png)](https://ehartye.github.io/frc-2024-poc/preliminary-design/)
+[![Preliminary design of the robot](../preliminary-design/media/guided-cassette-preliminary.png)](https://ehartye.github.io/frc-2024-poc/preliminary-design/)
 
-**Guided cassette at the start of a cycle, with a floor NOTE ahead. Preliminary design release 004, effective.** The angled cassette picks up, retains and shoots a NOTE. The parallel guides support the climb. This still uses the same robot geometry as the interactive preliminary review. [Still and geometry record](../preliminary-design/media/002-preliminary-robot.json)
+**Project CAD · Preliminary design of the robot · Guided cassette 1.0 · effective.** The robot is at the start of a cycle, with a floor NOTE ahead. The angled cassette picks up, retains and shoots a NOTE. The parallel guides support the climb. The still shows the layout solids of the preliminary design review in its opening pose. [Open the design review](https://ehartye.github.io/frc-2024-poc/preliminary-design/)
 <!-- /cad-still -->
 
 Run `python cad/assembly/build_robot.py`. Output: `artifacts/whole-robot/original-component-assembly.step`, `a2-layout.png`, and `report.json`.

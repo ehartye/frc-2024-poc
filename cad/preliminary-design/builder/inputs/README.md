@@ -1,5 +1,11 @@
 # Builder inputs carried from the draft layout
 
+<!-- cad-still -->
+[![Preliminary design of the robot](../../media/guided-cassette-preliminary.png)](https://ehartye.github.io/frc-2024-poc/preliminary-design/)
+
+**Project CAD · Preliminary design of the robot · Guided cassette 1.0 · effective.** The robot is at the start of a cycle, with a floor NOTE ahead. The angled cassette picks up, retains and shoots a NOTE. The parallel guides support the climb. The still shows the layout solids of the preliminary design review in its opening pose. [Open the design review](https://ehartye.github.io/frc-2024-poc/preliminary-design/)
+<!-- /cad-still -->
+
 Guided cassette 1.0 was drawn on a draft layout of 232 solids. The drafts were published while the design was in progress and left the site when the design was numbered. Revision A is the one geometry change from the draft layout to Guided cassette 1.0: both launch belt motors are raised 60 mm ([revise_step.py](../revise_step.py)).
 
 The builder reads these files from the drafts. Their bytes are unchanged.
