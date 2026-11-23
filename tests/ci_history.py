@@ -1,4 +1,8 @@
-"""Run the existing season evidence recipes with their original generator revisions."""
+"""Run the existing season evidence recipes with their original generator revisions.
+
+Run by hand when an archived study is being regenerated. It is not a registered check: the studies it covers
+are archived, and a pull request for the current design should not wait on them.
+"""
 import argparse
 import json
 from contextlib import nullcontext

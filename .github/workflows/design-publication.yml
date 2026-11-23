@@ -50,8 +50,6 @@ jobs:
           repository: ehartye/agent-frc
           ref: ${{ env.AGENT_FRC_REF }}
           path: plugin
-          # tests/ci_history.py replays archived evidence with the plugin revisions that issued it.
-          fetch-depth: 0
           persist-credentials: false
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
