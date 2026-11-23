@@ -14,10 +14,18 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      # No published file is stored with Git LFS, so the checkout fetches none.
+      # The three evidence folders are history: about 8.7 GB that no step below reads and the scan skips by
+      # .branch-scan.json. Leaving them out takes the checkout from four minutes to seconds. No published file is
+      # stored with Git LFS, so the checkout fetches none.
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
           persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/2024/
+            !/engineering-iterations/
+            !/plugin-qa/
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: '22'
