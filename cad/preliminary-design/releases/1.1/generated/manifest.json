@@ -3,7 +3,7 @@
   "design": {
     "name": "Guided cassette",
     "source": "design.json",
-    "sourceSha256": "42b44b003c38ce53a3770f1bb6c70256a895094d6716238a2ca74fa87cf2e004",
+    "sourceSha256": "07e6f3aa2b81602fdb20ad68454c50ac0d1218d365b7f888a2053bb6ce699638",
     "frame": "Parked robot frame: origin on the carpet at the frame centre, +X forward toward the pickup, +Y left, +Z up, millimetres. The solids are drawn where Guided cassette 1.0's committed STEP has them: the cassette raised to the handoff."
   },
   "units": {
@@ -13,7 +13,7 @@
   "generator": {
     "library": "frc-design-kernel",
     "version": "0.1.0",
-    "commit": null
+    "commit": "9c69c7d201b7affc0173be277903a64075c29fe5"
   },
   "pose": null,
   "files": {
@@ -58462,7 +58462,8 @@
   },
   "parameters": {
     "lateral_mm": 0,
-    "keeper_raise_mm": 5
+    "keeper_raise_mm": 5,
+    "side_squeeze_mm": 0
   },
   "parts": [
     {

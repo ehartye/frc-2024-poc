@@ -9,7 +9,7 @@
   },
   {
    "id": "side-belt-cap",
-   "text": "Each side belt is held at its commanded speed and pushes at most 18 N, the script's law, modelled as a motor whose limit gives that cap."
+   "text": "Each belt run (launch and feed, each side) is held at its commanded speed and pushes at most 18 N, 1.0's side-belt law, modelled as a motor whose limit gives that cap. 1.0 capped each side as one belt; the stall at low grip touches the launch belts alone, so the outcome is the same"
   },
   {
    "id": "flap-weight-as-preload",
@@ -474,18 +474,6 @@
    "busV": 8.5,
    "startMps": 0.0
   },
-  "Side belt left": {
-   "mode": "speed",
-   "setpointMps": 0.84,
-   "busV": 12.0,
-   "startMps": 0.84
-  },
-  "Side belt right": {
-   "mode": "speed",
-   "setpointMps": 0.84,
-   "busV": 12.0,
-   "startMps": 0.84
-  },
   "Carpet": {
    "mode": "imposed",
    "speedMps": 0.25,
@@ -500,6 +488,30 @@
      }
     }
    ]
+  },
+  "Launch belt left": {
+   "mode": "speed",
+   "setpointMps": 0.84,
+   "busV": 12.0,
+   "startMps": 0.84
+  },
+  "Feed belt left": {
+   "mode": "speed",
+   "setpointMps": 0.84,
+   "busV": 12.0,
+   "startMps": 0.84
+  },
+  "Launch belt right": {
+   "mode": "speed",
+   "setpointMps": 0.84,
+   "busV": 12.0,
+   "startMps": 0.84
+  },
+  "Feed belt right": {
+   "mode": "speed",
+   "setpointMps": 0.84,
+   "busV": 12.0,
+   "startMps": 0.84
   }
  },
  "frames": {
@@ -680,7 +692,7 @@
    "lowest": "drive.Cassette drive.speedMps"
   },
   "sideBeltCurrentA": {
-   "peak": "drive.Side belt left.currentA"
+   "peak": "drive.Launch belt left.currentA"
   },
   "stopPeakN": {
    "peak": "contact.Rear stop pad.forceN"
@@ -695,18 +707,31 @@
   ]
  },
  "adjustments": [
-  "keeper raise"
+  "keeper raise",
+  "side belt squeeze"
  ],
  "control": {
   "change": {
    "commands.Cassette drive.busV": null,
-   "commands.Side belt left": {
+   "commands.Launch belt left": {
     "mode": "speed",
     "setpointMps": 0.84,
     "busV": null,
     "startMps": 0.0
    },
-   "commands.Side belt right": {
+   "commands.Feed belt left": {
+    "mode": "speed",
+    "setpointMps": 0.84,
+    "busV": null,
+    "startMps": 0.0
+   },
+   "commands.Launch belt right": {
+    "mode": "speed",
+    "setpointMps": 0.84,
+    "busV": null,
+    "startMps": 0.0
+   },
+   "commands.Feed belt right": {
     "mode": "speed",
     "setpointMps": 0.84,
     "busV": null,

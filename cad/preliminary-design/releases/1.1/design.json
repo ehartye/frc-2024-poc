@@ -8,7 +8,8 @@
  "frame": "Parked robot frame: origin on the carpet at the frame centre, +X forward toward the pickup, +Y left, +Z up, millimetres. The solids are drawn where Guided cassette 1.0's committed STEP has them: the cassette raised to the handoff.",
  "parameters": {
   "lateral_mm": 0,
-  "keeper_raise_mm": 5
+  "keeper_raise_mm": 5,
+  "side_squeeze_mm": 0
  },
  "groups": {
   "Battery": {
@@ -1191,7 +1192,17 @@
    "part": {
     "file": "parts/guided-cassette-1.0.step",
     "solid": "Feed tread \u00b7 left"
-   }
+   },
+   "place": [
+    {
+     "kind": "translation",
+     "travelMm": [
+      0,
+      "=-side_squeeze_mm",
+      0
+     ]
+    }
+   ]
   },
   {
    "name": "Feed tread - right",
@@ -1199,7 +1210,17 @@
    "part": {
     "file": "parts/guided-cassette-1.0.step",
     "solid": "Feed tread \u00b7 right"
-   }
+   },
+   "place": [
+    {
+     "kind": "translation",
+     "travelMm": [
+      0,
+      "=side_squeeze_mm",
+      0
+     ]
+    }
+   ]
   },
   {
    "name": "Flap axle",
@@ -1537,7 +1558,17 @@
    "part": {
     "file": "parts/guided-cassette-1.0.step",
     "solid": "Launch tread \u00b7 left"
-   }
+   },
+   "place": [
+    {
+     "kind": "translation",
+     "travelMm": [
+      0,
+      "=-side_squeeze_mm",
+      0
+     ]
+    }
+   ]
   },
   {
    "name": "Launch tread - right",
@@ -1545,7 +1576,17 @@
    "part": {
     "file": "parts/guided-cassette-1.0.step",
     "solid": "Launch tread \u00b7 right"
-   }
+   },
+   "place": [
+    {
+     "kind": "translation",
+     "travelMm": [
+      0,
+      "=side_squeeze_mm",
+      0
+     ]
+    }
+   ]
   },
   {
    "name": "Mouth retention flap",
@@ -55210,6 +55251,16 @@
    ],
    "step": 1,
    "note": "Shims under the keeper panel's four posts raise it off the deck, 1 mm at a time, up to 10 mm; the panel then keeps the seated NOTE with that much more play"
+  },
+  "side belt squeeze": {
+   "input": "parameters.side_squeeze_mm",
+   "kind": "mechanical",
+   "range": [
+    0,
+    4
+   ],
+   "step": 1,
+   "note": "Shims behind each side belt's backing strip press its tread inward toward the NOTE, 1 mm at a time, up to 4 mm a side; more squeeze, more grip"
   }
  },
  "pieces": {
@@ -55338,19 +55389,27 @@
   "tread": {
    "stiffnessNPerM": {
     "value": 4500.0,
-    "measured": "the project's finite-motor pickup script (bounded-risk-01/pickup.py)"
+    "assumed": [
+     3000.0,
+     10000.0
+    ],
+    "note": "The side-belt spring of 1.0's pickup model (bounded-risk-01/pickup.py): the NOTE's foam pressed by a belt over its contact length; unmeasured"
    },
    "dampingRatio": {
     "value": 0.076,
-    "measured": "the project's finite-motor pickup script (bounded-risk-01/pickup.py): 5 N s/m"
+    "assumed": [
+     0.05,
+     0.3
+    ],
+    "note": "1.0's pickup model's 5 N s/m on that spring; unmeasured"
    },
    "friction": {
     "value": 0.78,
     "assumed": [
-     0.6,
-     0.9
+     0.4,
+     1.0
     ],
-    "note": "Elastomer side belt on the NOTE; unmeasured"
+    "note": "Elastomer side belt on the NOTE's foam skin; unmeasured. 0.78 is the value 1.0's pickup model used. The range runs from a dusty, worn belt to a fresh one"
    }
   },
   "leaf": {
@@ -55465,7 +55524,7 @@
     }
    ]
   },
-  "Side belt left": {
+  "Launch belt left": {
    "motor": "side belt equal",
    "gear": 10,
    "radiusMm": 20,
@@ -55481,7 +55540,7 @@
     "value": 1.0,
     "measured": "the project's finite-motor pickup script (bounded-risk-01/pickup.py): no losses"
    },
-   "note": "The script holds each side belt at its commanded speed and caps its push at 18 N; this motor's limit gives that cap",
+   "note": "The launch belt on the left. During the pickup 1.0's model held each side belt at its commanded speed and capped its push at 18 N; this stand-in motor's current limit gives that cap, here for each belt run",
    "turns": [
     {
      "solid": "Launch tread - left",
@@ -55490,7 +55549,27 @@
       0,
       -0.6461836932824312
      ]
-    },
+    }
+   ]
+  },
+  "Feed belt left": {
+   "motor": "side belt equal",
+   "gear": 10,
+   "radiusMm": 20,
+   "statorLimitA": 3.6,
+   "movingKg": {
+    "value": 0.2,
+    "assumed": [
+     0.1,
+     0.4
+    ]
+   },
+   "efficiency": {
+    "value": 1.0,
+    "measured": "the project's finite-motor pickup script (bounded-risk-01/pickup.py): no losses"
+   },
+   "note": "The feed belt on the left. During the pickup 1.0's model held each side belt at its commanded speed and capped its push at 18 N; this stand-in motor's current limit gives that cap, here for each belt run",
+   "turns": [
     {
      "solid": "Feed tread - left",
      "axis": [
@@ -55501,7 +55580,7 @@
     }
    ]
   },
-  "Side belt right": {
+  "Launch belt right": {
    "motor": "side belt equal",
    "gear": 10,
    "radiusMm": 20,
@@ -55517,7 +55596,7 @@
     "value": 1.0,
     "measured": "the project's finite-motor pickup script (bounded-risk-01/pickup.py): no losses"
    },
-   "note": "The script holds each side belt at its commanded speed and caps its push at 18 N; this motor's limit gives that cap",
+   "note": "The launch belt on the right. During the pickup 1.0's model held each side belt at its commanded speed and capped its push at 18 N; this stand-in motor's current limit gives that cap, here for each belt run",
    "turns": [
     {
      "solid": "Launch tread - right",
@@ -55526,7 +55605,27 @@
       0,
       0.6461836932824312
      ]
-    },
+    }
+   ]
+  },
+  "Feed belt right": {
+   "motor": "side belt equal",
+   "gear": 10,
+   "radiusMm": 20,
+   "statorLimitA": 3.6,
+   "movingKg": {
+    "value": 0.2,
+    "assumed": [
+     0.1,
+     0.4
+    ]
+   },
+   "efficiency": {
+    "value": 1.0,
+    "measured": "the project's finite-motor pickup script (bounded-risk-01/pickup.py): no losses"
+   },
+   "note": "The feed belt on the right. During the pickup 1.0's model held each side belt at its commanded speed and capped its push at 18 N; this stand-in motor's current limit gives that cap, here for each belt run",
+   "turns": [
     {
      "solid": "Feed tread - right",
      "axis": [
