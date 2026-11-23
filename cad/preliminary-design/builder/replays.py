@@ -1,12 +1,12 @@
-"""Bind the four season replays to their trial files and write the binding manifest for release 004.
+"""Bind the four season replays to their trial files and write the binding manifest for Guided cassette 1.0.
 
-The replays are the grouped-transform cases of the published release 003 scene: two six-NOTE scoring
+The replays are the grouped-transform cases of the draft layout's scene: two six-NOTE scoring
 clocks and two score-to-climb runs. This script re-derives the recorded motion of each replay from its
 raw trial files, compares it with the published transforms frame by frame, and writes
 `replay-bindings.json`: every trial file by SHA-256, the time base, the rigid groups and the measured
 agreement. A single-viewer replay entry can be generated from this manifest without trusting the scene.
 
-Usage: python cad/preliminary-design/build-004/replays.py
+Usage: python cad/preliminary-design/builder/replays.py
 """
 import hashlib
 import json
@@ -15,10 +15,10 @@ import numpy as np
 
 import kin
 import roster
-from timeline import EVIDENCE, REPO, pin, read, sha
+from timeline import EVIDENCE, RELEASE, REPO, pin, read, sha
 
 CAMPAIGN = EVIDENCE / "counted-reset-power-02"
-OUT = REPO / "cad/preliminary-design/releases/004/replay-bindings.json"
+OUT = RELEASE / "replay-bindings.json"
 CLIMB_START_LABEL = "Capture and lock"
 
 
@@ -121,8 +121,8 @@ def main():
                                                  "published transforms at every frame that falls on a trace sample."),
                         **({"solvedFromFrame": b["solvedFromFrame"]} if "solvedFromFrame" in b else {})))
     manifest = dict(schema="frc-2024-poc/replay-bindings@1",
-                    scene=dict(file="docs/preliminary-design/releases/003/scene.json.gz", sha256=roster.SCENE_SHA256,
-                               note="Grouped transforms, clocks and readouts are the published scene's cases."),
+                    scene=dict(file=roster.SCENE.relative_to(REPO).as_posix(), sha256=roster.SCENE_SHA256,
+                               note="Grouped transforms, clocks and readouts are the replay scene's cases."),
                     replays=out)
     OUT.write_bytes((json.dumps(manifest, indent=1, ensure_ascii=False) + "\n").encode("utf-8"))
     for r in out:

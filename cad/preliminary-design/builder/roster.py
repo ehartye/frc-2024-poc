@@ -1,6 +1,6 @@
 """Roster of the 232 layout solids: rigid class, functional group, review text and mount datums.
 
-Rigid classes come from the `rig` maps of the published release 003 replay scene, which name the rigid
+Rigid classes come from the `rig` maps of the draft layout's replay scene, which name the rigid
 body each solid rides on in the scoring replays and in the climb replays. A plan group here is one
 function on one rigid body, so every member of a moving group shares the same motion.
 """
@@ -11,7 +11,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parents[2]
-SCENE = REPO / "docs/preliminary-design/releases/003/scene.json.gz"
+SCENE = HERE / "inputs/replay-scene.json.gz"
 SCENE_SHA256 = "5a1a5861cc9df6e3fc43ec7038701a64322de008b01f0e557416839b7943e0b5"
 CYCLE_KEY = "continuous-cycle-96"
 CLIMB_KEY = "score-to-climb-front"
@@ -37,7 +37,7 @@ BUMPER = "Blue bumper set"
 
 def scene():
     data = SCENE.read_bytes()
-    assert hashlib.sha256(data).hexdigest() == SCENE_SHA256, "Unexpected release 003 replay scene"
+    assert hashlib.sha256(data).hexdigest() == SCENE_SHA256, "Unexpected replay scene"
     return json.loads(gzip.decompress(data))
 
 

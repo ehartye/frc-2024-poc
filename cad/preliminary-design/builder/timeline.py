@@ -22,6 +22,9 @@ HERE = Path(__file__).resolve().parent
 REPO = HERE.parents[2]
 # One constant names the evidence tree, so relocating it changes one line.
 EVIDENCE = REPO / "2024/preliminary-review-lan/greenfield-retained"
+# The release folder the builder writes, and the files carried from the draft layout (inputs/README.md).
+RELEASE = REPO / "cad/preliminary-design/releases/1.0"
+INPUTS = HERE / "inputs"
 CAMPAIGN = EVIDENCE / "counted-reset-power-02"
 RESOLUTION = 96
 NOTE_ID = "middle"

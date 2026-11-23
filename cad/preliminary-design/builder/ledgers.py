@@ -1,13 +1,13 @@
-"""Weight and loaded-voltage ledgers of release 004.
+"""Weight and loaded-voltage ledgers of Guided cassette 1.0.
 
-Every figure is read from a pinned evidence file at build time. The mass lines are the issued release 003
+Every figure is read from a pinned evidence file at build time. The mass lines are the draft layout
 ledger with its component names repaired, plus the mass of any solid the revision changed.
 """
 import json
 
-from timeline import EVIDENCE, REPO, pin, read
+from timeline import EVIDENCE, INPUTS, REPO, pin, read
 
-ISSUED_BUDGETS = REPO / "cad/preliminary-design/releases/003/budgets.json"
+ISSUED_BUDGETS = INPUTS / "draft-budgets.json"
 CAMPAIGN = EVIDENCE / "counted-reset-power-02"
 GROSS = EVIDENCE / "mounted-slide-02/gross-power.json"
 RESET = CAMPAIGN / "reset-budget.json"
@@ -29,7 +29,7 @@ STEEL_KG_PER_MM3 = 7.85e-6
 def masses(revision):
     """The issued mass lines carried to this revision, the running payload interval and the gross study.
 
-    The lines start from the issued release 003 ledger. A solid whose volume the revision changed adds its
+    The lines start from the draft layout ledger. A solid whose volume the revision changed adds its
     volume difference at its material density to the line that holds it, so the ledger follows the geometry.
     `revision` is the record written with the layout STEP; every changed solid here is a steel shaft or a motor
     whose volume did not change.
@@ -39,7 +39,7 @@ def masses(revision):
     for r in issued["masses"]:
         basis = r["basis"]
         if basis.startswith("Published revision 002"):
-            basis = "Issued release 003 subtotal, preserving additions and incremental stock allowances."
+            basis = "Draft layout subtotal, preserving additions and incremental stock allowances."
         lines.append(dict(id=repaired(r["id"]), members=[repaired(m) for m in r["members"]], kg=list(r["kg"]), basis=repaired(basis)))
     gross = read(GROSS)
     assert abs(sum(r["kg"][1] for r in lines) - gross["inspectionHighKg"]) < 1e-7      # the issued ledger, before the revision

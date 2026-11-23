@@ -1,9 +1,9 @@
-"""Build the release 004 check inputs from the pinned traces and ledgers.
+"""Build the Guided cassette 1.0 check inputs from the pinned traces and ledgers.
 
-Usage: python cad/preliminary-design/build-004/build.py PLUGIN [--only PHASE,...] [--tolerance MM]
+Usage: python cad/preliminary-design/builder/build.py PLUGIN [--only PHASE,...] [--tolerance MM]
 
 PLUGIN is an Agent FRC checkout. The script writes every input of the layout check into
-cad/preliminary-design/releases/004/. It is deterministic: the same evidence and plugin give the same bytes.
+cad/preliminary-design/releases/1.0/, or into the folder RELEASE_OUT names. It is deterministic: the same evidence and plugin give the same bytes.
 """
 import argparse
 import hashlib
@@ -23,15 +23,15 @@ import risks
 import roster
 import segments
 import timeline
-from timeline import EVIDENCE, REPO, pin, read, sha
+from timeline import EVIDENCE, INPUTS, RELEASE, REPO, pin, read, sha
 
 HERE = Path(__file__).resolve().parent
-OUT = Path(os.environ["RELEASE_004_OUT"]).resolve() if os.environ.get("RELEASE_004_OUT") else REPO / "cad/preliminary-design/releases/004"
-ISSUE = "2024-004-guided-cassette"
+OUT = Path(os.environ["RELEASE_OUT"]).resolve() if os.environ.get("RELEASE_OUT") else RELEASE
+ISSUE = "2024-guided-cassette-1.0"
 SOURCE_STEP = EVIDENCE / "guided-hoist-01/service-locked-robot.step"
 LIMITS = REPO / "cad/preliminary-design/compression-limits-002.json"
 NARRATIVE = REPO / "kickoff/strategic-narrative.md"
-ISSUED_DESIGN = REPO / "cad/preliminary-design/releases/003/design.json"
+ISSUED_DESIGN = INPUTS / "draft-design.json"
 NOTE_GROUP = "NOTE"
 SERVICE_INDEX_DEG = -40.0
 BATTERY_LIFT_MM = 370.0
@@ -98,20 +98,26 @@ REEL_FROM_S = 0.45
 
 
 def official_field():
-    """Show the four replays with the official speaker and stage of release 003-1.
+    """Show the four replays with the official speaker and stage.
 
-    Release 003-1 tessellated the official field parts and bound the same four recorded runs to their trial
-    files. Its replay set is carried here with the repaired part names. The runs were recorded on the release
-    003 geometry; the two raised launch motors of revision 004-A move with their recorded group.
+    The carried replay set (inputs/README.md) holds the official field parts tessellated by field.py and the same
+    four recorded runs bound to their trial files. It is written here with the repaired part names, and each trial
+    file is pinned where it is recorded in the evidence tree. The runs were recorded on the draft layout; the two
+    raised launch motors of revision A move with their recorded group.
     """
     import gzip
     import replay_set
-    source = REPO / "cad/preliminary-design/releases/003-1/replays.json.gz"
+    source = INPUTS / "official-field-replays.json.gz"
     text = gzip.decompress(source.read_bytes()).decode("utf-8").replace("Â·", "·")
-    note = " Recorded on the release 003 geometry, before the launch motors were raised in revision 004-A."
+    note = " Recorded on the draft layout, before the launch motors were raised in revision A."
     data = json.loads(text)
     for replay in data["replays"]:
         replay["basis"] = replay["basis"].rstrip() + note
+        for item in replay["evidence"]:
+            # The set names its own copy of each trial file. The recorded file has the same bytes.
+            recorded = pin(ledgers.CAMPAIGN / Path(item["file"]).name)
+            assert recorded["sha256"] == item["sha256"], "The replay set was bound to another " + recorded["file"]
+            item["file"] = recorded["file"]
     packed = gzip.compress((json.dumps(data, separators=(",", ":"), ensure_ascii=False) + chr(10)).encode("utf-8"), mtime=0)
     (OUT / replay_set.NAME).write_bytes(packed)
 
@@ -299,7 +305,7 @@ def main():
 
     design_form = json.loads(ISSUED_DESIGN.read_bytes())
     design_form.update(revision=3, parentRevision=2)
-    design_form["provenance"]["basis"] = ("Release 004 of the guided cassette. The editable envelope is secondary to the "
+    design_form["provenance"]["basis"] = ("Guided cassette 1.0. The editable envelope is secondary to the "
                                            "registered solid model and the pinned trial traces.")
     design = save("design.json", design_form)
     datum = dict(name="Parked robot frame, mm", robotToStepMm=np.eye(4).flatten().tolist())
@@ -451,7 +457,7 @@ def main():
                         and not c.get("intendedInterfaces"))
     presentation = evidence.presentation(components, groups, member_group, rigid, duty_table, timelines, case_phase,
                                          register, operating)
-    if not opt.only and OUT == REPO / "cad/preliminary-design/releases/004":
+    if not opt.only and OUT == RELEASE:
         # The four recorded season runs join the one motion list as replays, bound to their trial files.
         import replay_set
         import replays

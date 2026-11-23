@@ -1,15 +1,15 @@
-"""Write the release 004 layout STEP: the release 003 solids with repaired names and one design revision.
+"""Write the Guided cassette 1.0 layout STEP: the draft layout solids with repaired names and one design revision.
 
-Revision 004-A. The whole-cycle layout check found that the floor NOTE, riding over the pickup lip, passes
+Revision A. The whole-cycle layout check found that the floor NOTE, riding over the pickup lip, passes
 between the two launch belt motors with no clearance: each motor can is 36 mm in diameter on a centreline
 195.8 mm from the cassette centre, so its inner face is 177.8 mm out, exactly the NOTE's outer radius. The
 motors are raised 60 mm along the cassette normal, away from the deck, and each drive shaft is lengthened by
-the same amount. Every other solid is the reviewed release 003 geometry.
+the same amount. Every other solid is the reviewed draft layout geometry.
 
 The file is written through the CAD kernel, so it is a new export: 232 named solids, checked below against
 the source. The double-encoded middle dot of the source names is written as its ISO 10303-21 directive.
 
-Usage: python cad/preliminary-design/build-004/revise_step.py SOURCE.step TARGET.step
+Usage: python cad/preliminary-design/builder/revise_step.py SOURCE.step TARGET.step
 """
 import hashlib
 import math
@@ -147,7 +147,7 @@ def build(source, target):
                 assert abs(v1 / v0 - (1 + RAISE_MM / 56.0)) < 0.01, (name, v0, v1)
         else:
             assert abs(v1 - v0) <= 1e-6 * max(1.0, v0) and max(abs(x - y) for x, y in zip(b0, b1)) < 1e-6, name
-    return dict(revision="004-A", raiseMm=RAISE_MM, sourceSha256=SOURCE_SHA256,
+    return dict(revision="A", raiseMm=RAISE_MM, sourceSha256=SOURCE_SHA256,
                 sha256=hashlib.sha256(target.read_bytes()).hexdigest(), solids=len(names), changed=changed)
 
 

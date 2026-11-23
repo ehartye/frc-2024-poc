@@ -1,4 +1,4 @@
-"""Trial qualifications, narrative coverage, presentation text and the risk register of release 004.
+"""Trial qualifications, narrative coverage, presentation text and the risk register of Guided cassette 1.0.
 
 Every qualification statement is checked against the evidence file it cites when the release is built:
 the build stops if a cited file no longer shows the stated outcome. A qualification element with no
@@ -336,7 +336,7 @@ def presentation(components, groups, member_group, rigid, duty_table, timelines,
     assert all(set(ids) <= names for ids in required.values()), [i for ids in required.values() for i in ids if i not in names]
     members = {source: [n for n in ids if n in names] for source, ids in LOAD_MEMBERS.items()}
     return dict(
-        title="Guided cassette · preliminary design 004",
+        title="Guided cassette 1.0 · preliminary design",
         context="FRC 2024 proof of concept",
         architecture="Floor pickup over a removable lip into a pivoting cassette on a translating truck, a close-range "
                      "speaker shot from split feed and launch belts, and a two-hook guided climb on the same pivot drive",
@@ -355,7 +355,7 @@ def presentation(components, groups, member_group, rigid, duty_table, timelines,
             "NOTES, watched for 20 s, came back out through the opening without reaching either beam, so delivered and "
             "eventually counted is not met for them. Six scores in 120 s on 19 of 20 starts is not shown. Both are "
             "carried as bench tests.",
-            "The 232 solids are the release 003 layout with repaired component names and one revision: both launch "
+            "The 232 solids are the draft layout with repaired component names and one revision: both launch "
             "belt motors are raised 60 mm along the cassette normal on lengthened drive shafts, because the whole-cycle "
             "check found no clearance between their cans and the floor NOTE riding over the pickup lip. The pickup "
             "trial does not model the motors.",

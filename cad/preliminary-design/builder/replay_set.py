@@ -1,16 +1,16 @@
-"""Write the replay set of release 004: the four recorded season runs as entries of the review's one motion list.
+"""Write the replay set of Guided cassette 1.0: the four recorded season runs as entries of the review's one motion list.
 
-The runs are the grouped-transform cases of the published release 003 season scene: two six-NOTE scoring
+The runs are the grouped-transform cases of the draft layout's season scene: two six-NOTE scoring
 clocks (48 and 96 ring segments) and two score-to-climb runs (centre of gravity forward and rearward).
 `replays.py` binds each of them to its raw trial files by SHA-256 and checks the published transforms against
 those files frame by frame; this script pins that binding manifest as the evidence of every replay.
 
 A replay is playback. The layout check neither runs nor credits it. The speaker, stage, anchors and chains are
 the project's simplified field drawings from the same scene, not FIRST's field CAD. The runs were recorded with
-the release 003 solids and the trial firing station (y = 5.871 m); the review shows the release 004 solids
+the draft layout solids and the trial firing station (y = 5.871 m); the review shows the Guided cassette 1.0 solids
 moving on those recorded transforms.
 
-Usage: python cad/preliminary-design/build-004/replay_set.py   (after replays.py)
+Usage: python cad/preliminary-design/builder/replay_set.py   (after replays.py)
 """
 import base64
 import gzip
@@ -19,9 +19,9 @@ import json
 import struct
 
 import roster
-from timeline import REPO, sha
+from timeline import RELEASE, REPO, sha
 
-OUT = REPO / "cad/preliminary-design/releases/004"
+OUT = RELEASE
 BINDINGS = "replay-bindings.json"
 NAME = "replays.json.gz"
 SCORING = "Feed and deliver the NOTE through the speaker opening"
@@ -87,7 +87,7 @@ def main():
         bodies.update({k: None for k in (STAGE if climb else SHOT)})
         item = dict(
             id="replay-" + key, label=case["id"] + " (recorded)",
-            basis=case["basis"] + " Recorded with the release 003 solids from the trial firing station; "
+            basis=case["basis"] + " Recorded with the draft layout solids from the trial firing station; "
                   f"{bound['verification']['framesCompared']} frames agree with the raw trial files within "
                   f"{bound['verification']['largestDifferenceMm']:g} mm.",
             objective=CLIMB if climb else SCORING, evidence=evidence,

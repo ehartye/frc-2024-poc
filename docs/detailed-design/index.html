@@ -45,9 +45,10 @@ function card(index,id,primary){
     const line=el('p','note');line.append(a);box.append(line);
   }
   if(status==='effective')box.append(el('p','note','Shown on the project entry page, README still and model selector.'));
-  if(link)box.append(el('p','note','Built on preliminary release '+link+'.'));
+  const built=link&&index.preliminaryTitle?index.preliminaryTitle(link):link;
+  if(link)box.append(el('p','note','Built on preliminary '+(built===link?'release ':'design ')+built+'.'));
   const linked=link&&(status==='in-progress'||status==='effective')&&index.preliminaryStatus?index.preliminaryStatus(link):'effective';
-  if(linked!=='effective')box.append(el('p','warning','Preliminary release '+link+' is now '+linked+'. This design needs re-linking to the effective preliminary release.'));
+  if(linked!=='effective')box.append(el('p','warning','Preliminary '+(built===link?'release ':'design ')+built+' is now '+linked+'. This design needs re-linking to the effective preliminary release.'));
   if(index.supersededBy?.[id])box.append(el('p','note','Superseded by '+index.supersededBy[id]+'.'));
   if(index.reason?.[id])box.append(el('p','note','Withdrawn: '+index.reason[id]+' Its published files are kept under archive/'+id+'/.'));
   return box;
@@ -57,6 +58,8 @@ json('designs.json').then(async index=>{
   // The re-link warning is read live from the preliminary release index.
   const releases=await json(String(index.preliminaryIndex||'')).catch(()=>null);
   if(releases)index.preliminaryStatus=id=>releases.designStatus?.[id]??'in-progress';
+  // A version, MAJOR.MINOR, reads with its architecture's name from the preliminary index.
+  if(releases)index.preliminaryTitle=id=>{const name=releases.designs?.[/^([1-9]\d{0,3})\.(0|[1-9]\d{0,3})$/.exec(id)?.[1]]?.name;return name?name+' '+id:id};
   const current=document.getElementById('current'),archive=document.getElementById('archive');
   current.replaceChildren();
   if(index.current)current.append(card(index,index.current,true));

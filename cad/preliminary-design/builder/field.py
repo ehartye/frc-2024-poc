@@ -1,10 +1,10 @@
-"""Tessellate the official blue speaker and stage from FIRST's 2024 field STEP for the release 003-1 replays.
+"""Tessellate the official blue speaker and stage from FIRST's 2024 field STEP for the review's replays.
 
-The selection follows the release 003 match-replay viewer: the same product subtrees, the same display
+The selection follows the draft layout's match-replay viewer: the same product subtrees, the same display
 groups and the same field transform. That viewer tessellated the parts in the visitor's browser; this
 script does it once, so the review page needs no network.
 
-Usage: python cad/preliminary-design/build-003-1/field.py FE-2024.STEP OUT.json
+Usage: python cad/preliminary-design/builder/field.py FE-2024.STEP OUT.json
 """
 import hashlib
 import json
@@ -161,7 +161,7 @@ def build(step_path):
         counts[role] = len(found)
         for solid in found:
             points, faces = triangles(solid, 0.27)
-            # The sensor housings are unnamed sub-solids; the 003 viewer found them by their placed bounds.
+            # The sensor housings are unnamed sub-solids; the draft replay viewer found them by their placed bounds.
             sensor = role == "speakerBody" and all(-1180 <= x <= -1063 and 5735 <= y <= 5788 and 1277 <= z <= 1435 for x, y, z in points)
             groups["sensors" if sensor else "speakerPanel" if role == "speakerBody" else "speakerRamp"].append((points, faces))
     select = subtree(source, "stage")

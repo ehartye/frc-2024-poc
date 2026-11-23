@@ -1,4 +1,4 @@
-"""Risk register of release 004.
+"""Risk register of Guided cassette 1.0.
 
 Each open risk is closed by a named design decision or carried as a bench test with a pass value and a
 fail value. `evidence` names the files in the evidence tree that quantify the risk. `condition` marks a
@@ -74,7 +74,7 @@ def risks(operating):
                   f"the subwoofer at the firing station, and stations nearer the wall were not fired. Chassis tracking "
                   f"to that window is unmeasured.",
              evidence="scoring-window-04/summary.json; scoring-window-04/results/aim-search.jsonl; "
-                      "cad/preliminary-design/releases/004/operating-point.json",
+                      "cad/preliminary-design/releases/1.0/operating-point.json",
              benchTest=_bench("Largest heading error at the firing station over 20 autonomous arrivals", 2.0, 3.0, "deg")),
         dict(id="firing-lane-lateral", condition="Chassis lateral error at the firing station",
              risk="With 2 degrees of heading error present, delivery and counting held at 20 mm of lateral error either "
@@ -108,12 +108,12 @@ def risks(operating):
              benchTest=_bench("Launch belt surface speed at feed on a weak pack, 6.88 m/s command", 6.56, 5.92, "m/s")),
         dict(id="launch-motor-clearance",
              risk="The whole-cycle check found both launch belt motor cans exactly at the NOTE's outer radius (177.8 mm from "
-                  "the cassette centre): the floor NOTE riding over the pickup lip passed them with 0.0004 mm. Revision 004-A "
+                  "the cassette centre): the floor NOTE riding over the pickup lip passed them with 0.0004 mm. Revision A "
                   "raises both motors 60 mm along the cassette normal on lengthened shafts; the checked cycle then clears "
                   "them by more than 2.8 mm (15 mm sampled). The taller motor mount is not drawn and the pickup trial does "
                   "not model the motors, so an off-centre NOTE meeting the lengthened shaft is untested. The 60 mm longer "
                   "shaft is checked for clearance only: its whip and bearing support are not assessed.",
-             evidence="cad/preliminary-design/releases/004/step-revision.json; cad/preliminary-design/build-004/revise_step.py",
+             evidence="cad/preliminary-design/releases/1.0/step-revision.json; cad/preliminary-design/builder/revise_step.py",
              benchTest=_bench("Smallest gap between a NOTE picked up 50 mm off centre and either launch motor or its shaft", 3.0, 0.0, "mm")),
         dict(id="returning-note", condition="NOTE ejected from the speaker back onto the robot",
              risk="In start R02 the third NOTE left the speaker and entered the roboRIO envelope by up to 25.0 mm. No guard is "
@@ -168,7 +168,7 @@ def risks(operating):
              benchTest=_bench("Cover leaf overtravel past its cam stop during a 4.8 s loaded lift", 1.0, 2.0, "deg")),
         dict(id="auxiliary-load-during-lift",
              risk="With 39 A of other loads the governing loaded lift misses the pivot motor terminal demand by 0.089 V. The "
-                  "budget stages other loads to 25 A during the lift, which leaves 0.448 V. The 004-A motor raise adds about "
+                  "budget stages other loads to 25 A during the lift, which leaves 0.448 V. The revision A motor raise adds about "
                   "1 percent to the lifted moment and is not in that study: both figures were computed before the raise.",
              evidence="mounted-slide-02/gross-power.json",
              benchTest=_bench("Battery current of all loads other than drive, pivot and slide during the loaded lift", 25, 39, "A")),
@@ -179,7 +179,7 @@ def risks(operating):
              benchTest=_bench("Lowest bus voltage during a shot on a pack at 11.8 V open circuit", 8.0, 7.9, "V")),
         dict(id="inspection-mass",
              risk="The upper inspection estimate is 56.344 kg against 56.699 kg: 0.355 kg of headroom, with a 3 to 6 kg "
-                  "unallocated reserve inside the estimate. The ledger starts from the study made before revision 004-A "
+                  "unallocated reserve inside the estimate. The ledger starts from the study made before revision A "
                   "and adds the lengthened launch shafts from the layout solids: 0.074 kg (9,425 mm3 of added shaft "
                   "taken as steel at 7.85 g/cm3). The taller launch motor mounts are not drawn and not estimated. They, "
                   "the control-board guard and detailing growth draw on that reserve.",
@@ -228,7 +228,7 @@ def risks(operating):
                   "not represented and the lift does not yet pass. The checked service case is the index pin withdrawal. An earlier "
                   "service-lock study reported 5 mm smallest clearance for this lift; it has not been repeated on the "
                   "revised layout.",
-             evidence="cad/preliminary-design/build-004/build.py (--battery)",
+             evidence="cad/preliminary-design/builder/build.py (--battery)",
              benchTest=_bench("Smallest gap around the battery through a straight lift at the service index, leads disconnected",
                               5, 0, "mm")),
         dict(id="slide-motor-cartridge",

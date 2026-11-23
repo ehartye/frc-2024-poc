@@ -1,4 +1,4 @@
-"""Write the release 004 layout STEP: the release 003 solids with their product names repaired.
+"""Write the Guided cassette 1.0 layout STEP: the draft layout solids with their product names repaired.
 
 The 232-solid layout STEP was exported with every middle dot (U+00B7) encoded twice. The first assembly
 writer passed UTF-8 bytes to the kernel as single-byte characters, and each later STEP in the lineage
