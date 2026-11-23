@@ -6,7 +6,10 @@
   "mass": "kg"
  },
  "frame": "Parked robot frame: origin on the carpet at the frame centre, +X forward toward the pickup, +Y left, +Z up, millimetres. The solids are drawn where Guided cassette 1.0's committed STEP has them: the cassette raised to the handoff.",
- "parameters": {},
+ "parameters": {
+  "lateral_mm": 0,
+  "keeper_raise_mm": 5
+ },
  "groups": {
   "Battery": {
    "role": "battery"
@@ -112,6 +115,9 @@
   },
   "Guided chain hoist - clutch": {
    "role": "mechanism"
+  },
+  "Field": {
+   "role": "fixture"
   }
  },
  "solids": [
@@ -1257,7 +1263,17 @@
    "part": {
     "file": "parts/guided-cassette-1.0.step",
     "solid": "Windowed keeper panel"
-   }
+   },
+   "place": [
+    {
+     "kind": "translation",
+     "travelMm": [
+      "=keeper_raise_mm * -0.819161236",
+      0,
+      "=keeper_raise_mm * -0.573563308"
+     ]
+    }
+   ]
   },
   {
    "name": "Front left axle support 255",
@@ -5275,6 +5291,252 @@
     "hold"
    ],
    "note": "Hoist line running into its own spliced eye at the right hook carriage"
+  },
+  {
+   "pair": [
+    "Chambered NOTE",
+    "Field carpet"
+   ],
+   "during": [
+    "reset-01",
+    "reset-02",
+    "reset-03",
+    "reset-04",
+    "reset-05",
+    "acquire-01",
+    "acquire-02",
+    "acquire-03",
+    "acquire-04",
+    "acquire-05",
+    "acquire-06",
+    "acquire-07",
+    "acquire-08",
+    "acquire-09",
+    "acquire-10",
+    "acquire-11",
+    "acquire-12",
+    "acquire-13",
+    "acquire-14",
+    "acquire-15",
+    "acquire-16",
+    "acquire-17",
+    "acquire-18",
+    "acquire-19",
+    "acquire-20",
+    "acquire-21",
+    "acquire-22",
+    "acquire-23",
+    "acquire-24",
+    "acquire-25",
+    "acquire-26",
+    "acquire-27",
+    "acquire-28",
+    "acquire-29",
+    "acquire-30",
+    "acquire-31",
+    "acquire-32",
+    "acquire-33",
+    "acquire-34",
+    "acquire-35",
+    "acquire-36",
+    "acquire-37",
+    "acquire-38",
+    "acquire-39",
+    "acquire-40",
+    "acquire-41",
+    "acquire-42",
+    "acquire-43",
+    "acquire-44",
+    "acquire-45",
+    "acquire-46",
+    "acquire-47",
+    "acquire-48",
+    "acquire-49",
+    "lift-01",
+    "lift-02",
+    "lift-03",
+    "lift-04",
+    "lift-05",
+    "feed-01",
+    "feed-02",
+    "feed-03",
+    "feed-04",
+    "flight-01",
+    "flight-02",
+    "stow",
+    "approach-01",
+    "approach-02",
+    "capture",
+    "hoist-01",
+    "hoist-02",
+    "hoist-03",
+    "hold"
+   ],
+   "note": "The NOTE lies on the carpet before it is picked up"
+  },
+  {
+   "pair": [
+    "Carpet follower - left",
+    "Field carpet"
+   ],
+   "during": [
+    "reset-01",
+    "reset-02",
+    "reset-03",
+    "reset-04",
+    "reset-05",
+    "acquire-01",
+    "acquire-02",
+    "acquire-03",
+    "acquire-04",
+    "acquire-05",
+    "acquire-06",
+    "acquire-07",
+    "acquire-08",
+    "acquire-09",
+    "acquire-10",
+    "acquire-11",
+    "acquire-12",
+    "acquire-13",
+    "acquire-14",
+    "acquire-15",
+    "acquire-16",
+    "acquire-17",
+    "acquire-18",
+    "acquire-19",
+    "acquire-20",
+    "acquire-21",
+    "acquire-22",
+    "acquire-23",
+    "acquire-24",
+    "acquire-25",
+    "acquire-26",
+    "acquire-27",
+    "acquire-28",
+    "acquire-29",
+    "acquire-30",
+    "acquire-31",
+    "acquire-32",
+    "acquire-33",
+    "acquire-34",
+    "acquire-35",
+    "acquire-36",
+    "acquire-37",
+    "acquire-38",
+    "acquire-39",
+    "acquire-40",
+    "acquire-41",
+    "acquire-42",
+    "acquire-43",
+    "acquire-44",
+    "acquire-45",
+    "acquire-46",
+    "acquire-47",
+    "acquire-48",
+    "acquire-49",
+    "lift-01",
+    "lift-02",
+    "lift-03",
+    "lift-04",
+    "lift-05",
+    "feed-01",
+    "feed-02",
+    "feed-03",
+    "feed-04",
+    "flight-01",
+    "flight-02",
+    "stow",
+    "approach-01",
+    "approach-02",
+    "capture",
+    "hoist-01",
+    "hoist-02",
+    "hoist-03",
+    "hold"
+   ],
+   "note": "The sprung carpet follower rides on the carpet, pressed 0.4 mm into its pile"
+  },
+  {
+   "pair": [
+    "Carpet follower - right",
+    "Field carpet"
+   ],
+   "during": [
+    "reset-01",
+    "reset-02",
+    "reset-03",
+    "reset-04",
+    "reset-05",
+    "acquire-01",
+    "acquire-02",
+    "acquire-03",
+    "acquire-04",
+    "acquire-05",
+    "acquire-06",
+    "acquire-07",
+    "acquire-08",
+    "acquire-09",
+    "acquire-10",
+    "acquire-11",
+    "acquire-12",
+    "acquire-13",
+    "acquire-14",
+    "acquire-15",
+    "acquire-16",
+    "acquire-17",
+    "acquire-18",
+    "acquire-19",
+    "acquire-20",
+    "acquire-21",
+    "acquire-22",
+    "acquire-23",
+    "acquire-24",
+    "acquire-25",
+    "acquire-26",
+    "acquire-27",
+    "acquire-28",
+    "acquire-29",
+    "acquire-30",
+    "acquire-31",
+    "acquire-32",
+    "acquire-33",
+    "acquire-34",
+    "acquire-35",
+    "acquire-36",
+    "acquire-37",
+    "acquire-38",
+    "acquire-39",
+    "acquire-40",
+    "acquire-41",
+    "acquire-42",
+    "acquire-43",
+    "acquire-44",
+    "acquire-45",
+    "acquire-46",
+    "acquire-47",
+    "acquire-48",
+    "acquire-49",
+    "lift-01",
+    "lift-02",
+    "lift-03",
+    "lift-04",
+    "lift-05",
+    "feed-01",
+    "feed-02",
+    "feed-03",
+    "feed-04",
+    "flight-01",
+    "flight-02",
+    "stow",
+    "approach-01",
+    "approach-02",
+    "capture",
+    "hoist-01",
+    "hoist-02",
+    "hoist-03",
+    "hold"
+   ],
+   "note": "The sprung carpet follower rides on the carpet, pressed 0.4 mm into its pile"
   }
  ],
  "poses": {
@@ -54916,6 +55178,515 @@
      }
     ]
    }
+  }
+ },
+ "fixtures": [
+  {
+   "name": "Field carpet",
+   "group": "Field",
+   "shape": {
+    "kind": "box",
+    "fromMm": [
+     -1500,
+     -1500,
+     -20
+    ],
+    "toMm": [
+     2500,
+     1500,
+     0
+    ]
+   },
+   "note": "The carpet, as a flat box whose top is the floor at Z = 0"
+  }
+ ],
+ "adjustments": {
+  "keeper raise": {
+   "input": "parameters.keeper_raise_mm",
+   "kind": "mechanical",
+   "range": [
+    0,
+    10
+   ],
+   "step": 1,
+   "note": "Shims under the keeper panel's four posts raise it off the deck, 1 mm at a time, up to 10 mm; the panel then keeps the seated NOTE with that much more play"
+  }
+ },
+ "pieces": {
+  "NOTE": {
+   "shape": {
+    "kind": "torus",
+    "centerMm": [
+     0,
+     0,
+     0
+    ],
+    "axis": [
+     0,
+     0,
+     1
+    ],
+    "majorRadiusMm": 152.4,
+    "minorRadiusMm": 25.4
+   },
+   "massKg": {
+    "value": 0.2413,
+    "measured": "the project's pickup scripts"
+   },
+   "note": "The game piece: 14 in across, 2 in thick"
+  }
+ },
+ "materials": {
+  "carpet": {
+   "stiffnessNPerM": {
+    "value": 3700.0,
+    "assumed": [
+     2500.0,
+     15000.0
+    ],
+    "note": "The scripts' default contact (8 ms, critically damped) is not a spring; 3700 N/m is its one-contact equal for this NOTE. The NOTE's foam pressed by a flat is closer to 10000 N/m, so the range runs up to 15000"
+   },
+   "dampingRatio": {
+    "value": 0.95,
+    "assumed": [
+     0.5,
+     1.0
+    ]
+   },
+   "friction": {
+    "value": 0.75,
+    "assumed": [
+     0.6,
+     0.9
+    ]
+   }
+  },
+  "frame": {
+   "stiffnessNPerM": {
+    "value": 3700.0,
+    "assumed": [
+     2500.0,
+     15000.0
+    ],
+    "note": "The scripts' default contact (8 ms, critically damped) is not a spring; 3700 N/m is its one-contact equal for this NOTE. The NOTE's foam pressed by a flat is closer to 10000 N/m, so the range runs up to 15000"
+   },
+   "dampingRatio": {
+    "value": 0.95,
+    "assumed": [
+     0.5,
+     1.0
+    ]
+   },
+   "friction": {
+    "value": 0.75,
+    "assumed": [
+     0.6,
+     0.9
+    ]
+   }
+  },
+  "lip": {
+   "stiffnessNPerM": {
+    "value": 3700.0,
+    "assumed": [
+     2500.0,
+     15000.0
+    ],
+    "note": "The scripts' default contact (8 ms, critically damped) is not a spring; 3700 N/m is its one-contact equal for this NOTE. The NOTE's foam pressed by a flat is closer to 10000 N/m, so the range runs up to 15000"
+   },
+   "dampingRatio": {
+    "value": 0.95,
+    "assumed": [
+     0.5,
+     1.0
+    ]
+   },
+   "friction": {
+    "value": 0.15,
+    "assumed": [
+     0.1,
+     0.25
+    ],
+    "note": "UHMW polyethylene on the NOTE's foam"
+   }
+  },
+  "grip": {
+   "stiffnessNPerM": {
+    "value": 3700.0,
+    "assumed": [
+     2500.0,
+     15000.0
+    ],
+    "note": "The scripts' default contact (8 ms, critically damped) is not a spring; 3700 N/m is its one-contact equal for this NOTE. The NOTE's foam pressed by a flat is closer to 10000 N/m, so the range runs up to 15000"
+   },
+   "dampingRatio": {
+    "value": 0.95,
+    "assumed": [
+     0.5,
+     1.0
+    ]
+   },
+   "friction": {
+    "value": 0.45,
+    "assumed": [
+     0.3,
+     0.75
+    ],
+    "note": "Elastomer nose roller and centre belt on the NOTE; unmeasured"
+   }
+  },
+  "tread": {
+   "stiffnessNPerM": {
+    "value": 4500.0,
+    "measured": "the project's finite-motor pickup script (bounded-risk-01/pickup.py)"
+   },
+   "dampingRatio": {
+    "value": 0.076,
+    "measured": "the project's finite-motor pickup script (bounded-risk-01/pickup.py): 5 N s/m"
+   },
+   "friction": {
+    "value": 0.78,
+    "assumed": [
+     0.6,
+     0.9
+    ],
+    "note": "Elastomer side belt on the NOTE; unmeasured"
+   }
+  },
+  "leaf": {
+   "stiffnessNPerM": {
+    "value": 25000.0,
+    "assumed": [
+     10000.0,
+     50000.0
+    ]
+   },
+   "dampingRatio": {
+    "value": 0.95,
+    "assumed": [
+     0.5,
+     1.0
+    ]
+   },
+   "friction": {
+    "value": 0.75,
+    "assumed": [
+     0.6,
+     0.9
+    ]
+   }
+  },
+  "stop pad": {
+   "stiffnessNPerM": {
+    "value": 10000.0,
+    "assumed": [
+     4000.0,
+     40000.0
+    ],
+    "note": "From the parts: a bonded urethane pad about 9 mm thick on aluminium, pressed by the NOTE's foam. The pad alone is about 500 kN/m; the foam over a contact some 50 mm long, at a modulus of 0.1 to 0.4 MPa, is 5 to 20 kN/m, and the two in series are the foam's. Range widened for the contact length."
+   },
+   "dampingRatio": {
+    "value": 0.95,
+    "assumed": [
+     0.5,
+     1.0
+    ]
+   },
+   "friction": {
+    "value": 0.75,
+    "assumed": [
+     0.6,
+     0.9
+    ]
+   }
+  }
+ },
+ "motors": {
+  "nose motor": {
+   "ktNmPerA": {
+    "value": 0.01,
+    "measured": "the project's finite-motor pickup script (bounded-risk-01/pickup.py)"
+   },
+   "ohm": {
+    "value": 0.35,
+    "measured": "the project's finite-motor pickup script (bounded-risk-01/pickup.py)"
+   },
+   "keVsPerRad": {
+    "value": 0.01,
+    "measured": "the project's finite-motor pickup script (bounded-risk-01/pickup.py)"
+   }
+  },
+  "side belt equal": {
+   "ktNmPerA": {
+    "value": 0.01,
+    "measured": "invented: with the gear and limit it gives the script's 18 N cap"
+   },
+   "ohm": {
+    "value": 0.1,
+    "measured": "invented"
+   },
+   "keVsPerRad": {
+    "value": 0.01,
+    "measured": "invented"
+   }
+  }
+ },
+ "drives": {
+  "Cassette drive": {
+   "motor": "nose motor",
+   "gear": 4,
+   "radiusMm": 12,
+   "statorLimitA": 8,
+   "efficiency": {
+    "value": 0.7,
+    "measured": "the project's finite-motor pickup script (bounded-risk-01/pickup.py)"
+   },
+   "movingKg": {
+    "value": 0.16,
+    "measured": "the project's finite-motor pickup script (bounded-risk-01/pickup.py)"
+   },
+   "note": "The nose motor turns the nose roller and the centre belt through a 4:1 reduction at a 12 mm pitch radius",
+   "turns": [
+    {
+     "solid": "Nose pickup roller",
+     "axis": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "solid": "Center intake belt",
+     "axis": [
+      0,
+      -1,
+      0
+     ]
+    }
+   ]
+  },
+  "Side belt left": {
+   "motor": "side belt equal",
+   "gear": 10,
+   "radiusMm": 20,
+   "statorLimitA": 3.6,
+   "movingKg": {
+    "value": 0.2,
+    "assumed": [
+     0.1,
+     0.4
+    ]
+   },
+   "efficiency": {
+    "value": 1.0,
+    "measured": "the project's finite-motor pickup script (bounded-risk-01/pickup.py): no losses"
+   },
+   "note": "The script holds each side belt at its commanded speed and caps its push at 18 N; this motor's limit gives that cap",
+   "turns": [
+    {
+     "solid": "Launch tread - left",
+     "axis": [
+      -0.7631819144449618,
+      0,
+      -0.6461836932824312
+     ]
+    },
+    {
+     "solid": "Feed tread - left",
+     "axis": [
+      -0.7631819144449618,
+      0,
+      -0.6461836932824312
+     ]
+    }
+   ]
+  },
+  "Side belt right": {
+   "motor": "side belt equal",
+   "gear": 10,
+   "radiusMm": 20,
+   "statorLimitA": 3.6,
+   "movingKg": {
+    "value": 0.2,
+    "assumed": [
+     0.1,
+     0.4
+    ]
+   },
+   "efficiency": {
+    "value": 1.0,
+    "measured": "the project's finite-motor pickup script (bounded-risk-01/pickup.py): no losses"
+   },
+   "note": "The script holds each side belt at its commanded speed and caps its push at 18 N; this motor's limit gives that cap",
+   "turns": [
+    {
+     "solid": "Launch tread - right",
+     "axis": [
+      0.7631819144449618,
+      0,
+      0.6461836932824312
+     ]
+    },
+    {
+     "solid": "Feed tread - right",
+     "axis": [
+      0.7631819144449618,
+      0,
+      0.6461836932824312
+     ]
+    }
+   ]
+  },
+  "Carpet": {
+   "radiusMm": 50,
+   "turns": [
+    {
+     "solid": "Field carpet",
+     "axis": [
+      0,
+      -1,
+      0
+     ]
+    }
+   ],
+   "note": "In the robot's frame the carpet runs back under the robot at the robot's speed"
+  }
+ },
+ "trials": {
+  "acquire": {
+   "file": "trials/acquire.json"
+  }
+ },
+ "interactions": {
+  "floor pickup": {
+   "piece": "NOTE",
+   "plane": {
+    "normal": "y",
+    "atMm": 0
+   },
+   "pose": "acquire-01 start",
+   "piecesAtOnce": 1,
+   "solids": [
+    "Field carpet",
+    "Blade retaining screw 1",
+    "Blade retaining screw 2",
+    "Blade retaining screw 3",
+    "Blade retaining screw 4",
+    "Cassette side beam extension - left",
+    "Cassette side beam extension - right",
+    "Pickup lip crossbar",
+    "Replaceable pickup lip",
+    "Blue bumper set",
+    "Carpet follower - left",
+    "Carpet follower - right",
+    "Follower locknut - left",
+    "Follower locknut - right",
+    "Follower shoulder axle - left",
+    "Follower shoulder axle - right",
+    "Follower thrust washer - left",
+    "Follower thrust washer - right",
+    "Cassette cheek - left",
+    "Cassette side beam - left",
+    "Cassette side beam - right",
+    "Entry bearing bracket - left",
+    "Entry bearing bracket - right",
+    "Center belt idler",
+    "Center idler axle",
+    "Center idler fork - left",
+    "Center idler fork - right",
+    "Center intake belt",
+    "Nose motor",
+    "Nose pickup roller",
+    "Nose roller shaft",
+    "Feed Idler axle - left",
+    "Feed Idler axle - right",
+    "Feed Nose pulley shelf - left",
+    "Feed Nose pulley shelf - right",
+    "Feed belt - left",
+    "Feed belt - right",
+    "Feed drive pulley - left",
+    "Feed drive pulley - right",
+    "Feed gearhead flange - left",
+    "Feed gearhead flange - right",
+    "Feed idler pulley - left",
+    "Feed idler pulley - right",
+    "Feed input pilot flange",
+    "Feed input reduction housing",
+    "Feed motor",
+    "Feed motor output",
+    "Feed output shaft - left",
+    "Feed output shaft - right",
+    "Feed reducer mount",
+    "Feed right-angle gearbox - left",
+    "Feed right-angle gearbox - right",
+    "Feed transverse jackshaft",
+    "Flap axle",
+    "Lid edge rail - left",
+    "Lid edge rail - right",
+    "Lid post 330 - left",
+    "Lid post 330 - right",
+    "Lid post 95 - left",
+    "Lid post 95 - right",
+    "Windowed keeper panel",
+    "Launch Belt drive shaft - left",
+    "Launch Belt drive shaft - right",
+    "Launch Belt motor shelf - left",
+    "Launch Belt motor shelf - right",
+    "Launch Belt motor - left",
+    "Launch Belt motor - right",
+    "Launch belt - left",
+    "Launch belt - right",
+    "Launch drive pulley - left",
+    "Launch drive pulley - right",
+    "Launch idler axle - left",
+    "Launch idler axle - right",
+    "Launch idler bridge seat - left",
+    "Launch idler bridge seat - right",
+    "Launch idler pulley - left",
+    "Launch idler pulley - right",
+    "NOTE runner - left",
+    "NOTE runner - right",
+    "Rear piece stop",
+    "Rear stop bracket - left",
+    "Rear stop bracket - right",
+    "Rear stop pad",
+    "Rear stop screw - left",
+    "Rear stop screw - right",
+    "Runner crossbar 125",
+    "Runner crossbar 370",
+    "Runner crossbar 599",
+    "Stop bracket locknut - left",
+    "Stop bracket locknut - right",
+    "Stop bracket through bolt - left",
+    "Stop bracket through bolt - right",
+    "Mouth retention flap"
+   ],
+   "guides": [
+    "Launch tread - left",
+    "Launch tread - right",
+    "Feed tread - left",
+    "Feed tread - right"
+   ],
+   "pieceAtMm": [
+    [
+     866.6309,
+     0,
+     25.4
+    ],
+    [
+     346.75645182633247,
+     0,
+     369.4835465357678
+    ]
+   ],
+   "approach": {
+    "offsetMm": [
+     -50,
+     50
+    ],
+    "note": "The project ran the NOTE 50 mm to either side of the centre line"
+   },
+   "note": "The floor pickup the acquire trial is about"
   }
  }
 }

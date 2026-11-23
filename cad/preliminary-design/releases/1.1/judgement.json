@@ -1625,7 +1625,10 @@
    "minGapMm": 0,
    "allowanceBasis": "Full straight withdrawal past the installed robot envelope.",
    "depth": 10,
-   "extract": true
+   "extract": true,
+   "absent": [
+    "Field carpet"
+   ]
   }
  },
  "presentation": {

@@ -1,0 +1,742 @@
+{
+ "note": "The robot drives 440 mm at 0.25 m/s onto a NOTE lying on the carpet with the nose motor running; the NOTE must end seated against the rear stop.",
+ "engine": "mujoco",
+ "pose": "acquire-01 start",
+ "assumes": [
+  {
+   "id": "carpet-treadmill",
+   "text": "In the robot's frame the carpet runs back at the robot's speed and the NOTE starts at rest on it; the robot stops at once after 440 mm, as in the script."
+  },
+  {
+   "id": "side-belt-cap",
+   "text": "Each side belt is held at its commanded speed and pushes at most 18 N, the script's law, modelled as a motor whose limit gives that cap."
+  },
+  {
+   "id": "flap-weight-as-preload",
+   "text": "The flap leaf's weight is a constant closing torque, its value at rest."
+  },
+  {
+   "id": "committed-solids",
+   "text": "Every surface is 1.0's committed solid at the acquire start pose; those taken from the STEP file are run as their convex hulls."
+  }
+ ],
+ "plane": {
+  "normal": "y",
+  "atMm": "=lateral_mm"
+ },
+ "stepS": 0.0005,
+ "durationS": 2.82,
+ "traceS": 0.01,
+ "mujoco": {
+  "ringSegments": 48
+ },
+ "piece": {
+  "use": "NOTE",
+  "start": {
+   "atMm": [
+    866.6309,
+    25.3994
+   ],
+   "velocityMps": [
+    -0.25,
+    0.0
+   ]
+  }
+ },
+ "surfaces": [
+  {
+   "solid": "Field carpet",
+   "material": "carpet"
+  },
+  {
+   "solid": "Blade retaining screw 1",
+   "material": "frame"
+  },
+  {
+   "solid": "Blade retaining screw 2",
+   "material": "frame"
+  },
+  {
+   "solid": "Blade retaining screw 3",
+   "material": "frame"
+  },
+  {
+   "solid": "Blade retaining screw 4",
+   "material": "frame"
+  },
+  {
+   "solid": "Cassette side beam extension - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Cassette side beam extension - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Pickup lip crossbar",
+   "material": "lip"
+  },
+  {
+   "solid": "Replaceable pickup lip",
+   "material": "lip"
+  },
+  {
+   "solid": "Blue bumper set",
+   "material": "frame"
+  },
+  {
+   "solid": "Carpet follower - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Carpet follower - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Follower locknut - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Follower locknut - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Follower shoulder axle - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Follower shoulder axle - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Follower thrust washer - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Follower thrust washer - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Cassette cheek - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Cassette side beam - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Cassette side beam - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Entry bearing bracket - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Entry bearing bracket - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Center belt idler",
+   "material": "frame"
+  },
+  {
+   "solid": "Center idler axle",
+   "material": "frame"
+  },
+  {
+   "solid": "Center idler fork - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Center idler fork - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Center intake belt",
+   "material": "grip"
+  },
+  {
+   "solid": "Nose motor",
+   "material": "frame"
+  },
+  {
+   "solid": "Nose pickup roller",
+   "material": "grip"
+  },
+  {
+   "solid": "Nose roller shaft",
+   "material": "frame"
+  },
+  {
+   "solid": "Feed Idler axle - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Feed Idler axle - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Feed Nose pulley shelf - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Feed Nose pulley shelf - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Feed belt - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Feed belt - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Feed drive pulley - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Feed drive pulley - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Feed gearhead flange - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Feed gearhead flange - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Feed idler pulley - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Feed idler pulley - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Feed input pilot flange",
+   "material": "frame"
+  },
+  {
+   "solid": "Feed input reduction housing",
+   "material": "frame"
+  },
+  {
+   "solid": "Feed motor",
+   "material": "frame"
+  },
+  {
+   "solid": "Feed motor output",
+   "material": "frame"
+  },
+  {
+   "solid": "Feed output shaft - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Feed output shaft - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Feed reducer mount",
+   "material": "frame"
+  },
+  {
+   "solid": "Feed right-angle gearbox - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Feed right-angle gearbox - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Feed transverse jackshaft",
+   "material": "frame"
+  },
+  {
+   "solid": "Feed tread - left",
+   "material": "tread"
+  },
+  {
+   "solid": "Feed tread - right",
+   "material": "tread"
+  },
+  {
+   "solid": "Flap axle",
+   "material": "frame"
+  },
+  {
+   "solid": "Lid edge rail - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Lid edge rail - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Lid post 330 - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Lid post 330 - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Lid post 95 - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Lid post 95 - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Windowed keeper panel",
+   "material": "frame"
+  },
+  {
+   "solid": "Launch Belt drive shaft - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Launch Belt drive shaft - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Launch Belt motor shelf - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Launch Belt motor shelf - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Launch Belt motor - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Launch Belt motor - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Launch belt - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Launch belt - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Launch drive pulley - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Launch drive pulley - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Launch idler axle - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Launch idler axle - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Launch idler bridge seat - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Launch idler bridge seat - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Launch idler pulley - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Launch idler pulley - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Launch tread - left",
+   "material": "tread"
+  },
+  {
+   "solid": "Launch tread - right",
+   "material": "tread"
+  },
+  {
+   "solid": "NOTE runner - left",
+   "material": "frame"
+  },
+  {
+   "solid": "NOTE runner - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Rear piece stop",
+   "material": "frame"
+  },
+  {
+   "solid": "Rear stop bracket - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Rear stop bracket - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Rear stop pad",
+   "material": "stop pad"
+  },
+  {
+   "solid": "Rear stop screw - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Rear stop screw - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Runner crossbar 125",
+   "material": "frame"
+  },
+  {
+   "solid": "Runner crossbar 370",
+   "material": "frame"
+  },
+  {
+   "solid": "Runner crossbar 599",
+   "material": "frame"
+  },
+  {
+   "solid": "Stop bracket locknut - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Stop bracket locknut - right",
+   "material": "frame"
+  },
+  {
+   "solid": "Stop bracket through bolt - left",
+   "material": "frame"
+  },
+  {
+   "solid": "Stop bracket through bolt - right",
+   "material": "frame"
+  }
+ ],
+ "flaps": [
+  {
+   "name": "flap",
+   "solid": "Mouth retention flap",
+   "material": "leaf",
+   "hingeMm": [
+    538.2616941497985,
+    213.8838206785138
+   ],
+   "lengthMm": 52,
+   "restDirection": [
+    -0.7631819144449618,
+    -0.6461836932824312
+   ],
+   "limitDeg": -92,
+   "inertiaKgM2": {
+    "value": 1.8e-05,
+    "measured": "the project's finite-motor pickup script (bounded-risk-01/pickup.py): a 0.02 kg leaf 52 mm long, about its hinge"
+   },
+   "springNmPerRad": {
+    "value": 0.018,
+    "measured": "the project's finite-motor pickup script (bounded-risk-01/pickup.py)"
+   },
+   "dampingNmSPerRad": {
+    "value": 0.004,
+    "measured": "the project's finite-motor pickup script (bounded-risk-01/pickup.py)"
+   },
+   "preloadNm": {
+    "value": 0.0039,
+    "assumed": [
+     0.0,
+     0.006
+    ],
+    "note": "The leaf's weight at rest"
+   }
+  }
+ ],
+ "commands": {
+  "Cassette drive": {
+   "mode": "speed",
+   "setpointMps": 0.84,
+   "band": 0.4329,
+   "busV": 8.5,
+   "startMps": 0.0
+  },
+  "Side belt left": {
+   "mode": "speed",
+   "setpointMps": 0.84,
+   "busV": 12.0,
+   "startMps": 0.84
+  },
+  "Side belt right": {
+   "mode": "speed",
+   "setpointMps": 0.84,
+   "busV": 12.0,
+   "startMps": 0.84
+  },
+  "Carpet": {
+   "mode": "imposed",
+   "speedMps": 0.25,
+   "rules": [
+    {
+     "when": {
+      "signal": "tS",
+      "above": 1.76
+     },
+     "set": {
+      "speedMps": 0.0
+     }
+    }
+   ]
+  }
+ },
+ "frames": {
+  "deck": {
+   "group": "Piece support",
+   "place": [
+    {
+     "kind": "rotation",
+     "originMm": [
+      0,
+      0,
+      0
+     ],
+     "axis": [
+      0,
+      1,
+      0
+     ],
+     "travelDeg": 49.74551715503411
+    },
+    {
+     "kind": "translation",
+     "travelMm": [
+      169.3625892825837,
+      0.0,
+      501.0
+     ]
+    },
+    {
+     "kind": "translation",
+     "travelMm": [
+      15.637410717416174,
+      -0.0,
+      -0.0
+     ]
+    },
+    {
+     "axis": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "kind": "rotation",
+     "originMm": [
+      185.0,
+      0.0,
+      501.0
+     ],
+     "travelDeg": -174.74459892638146
+    }
+   ],
+   "note": "The deck at the pickup: x along it from the pivot toward the nose, z off it, as the project's seat test is written"
+  }
+ },
+ "events": [
+  {
+   "name": "touched lip",
+   "when": {
+    "signal": "contact.Replaceable pickup lip.forceN",
+    "above": 0.0
+   }
+  },
+  {
+   "name": "touched center belt",
+   "when": {
+    "signal": "contact.Center intake belt.forceN",
+    "above": 0.0
+   }
+  },
+  {
+   "name": "touched flap",
+   "when": {
+    "signal": "contact.flap.forceN",
+    "above": 0.0
+   }
+  },
+  {
+   "name": "touched left side belt",
+   "when": {
+    "signal": "contact.Launch tread - left.forceN",
+    "above": 0.0
+   }
+  },
+  {
+   "name": "in seat",
+   "when": {
+    "all": [
+     {
+      "signal": "deck.xMm",
+      "above": 197
+     },
+     {
+      "signal": "deck.xMm",
+      "below": 233
+     },
+     {
+      "signal": "deck.zMm",
+      "above": 36.4
+     },
+     {
+      "signal": "deck.zMm",
+      "below": 64.4
+     },
+     {
+      "signal": "offPlaneMm",
+      "above": "=-35 - lateral_mm"
+     },
+     {
+      "signal": "offPlaneMm",
+      "below": "=35 - lateral_mm"
+     }
+    ]
+   }
+  },
+  {
+   "name": "seated",
+   "when": {
+    "all": [
+     {
+      "after": "in seat",
+      "delayS": 0.04
+     },
+     {
+      "signal": "deck.xMm",
+      "above": 197
+     },
+     {
+      "signal": "deck.xMm",
+      "below": 233
+     },
+     {
+      "signal": "deck.zMm",
+      "above": 36.4
+     },
+     {
+      "signal": "deck.zMm",
+      "below": 64.4
+     },
+     {
+      "signal": "offPlaneMm",
+      "above": "=-35 - lateral_mm"
+     },
+     {
+      "signal": "offPlaneMm",
+      "below": "=35 - lateral_mm"
+     }
+    ]
+   },
+   "outcome": "seated"
+  }
+ ],
+ "measures": {
+  "seatedS": {
+   "timeOf": "seated"
+  },
+  "lipS": {
+   "timeOf": "touched lip"
+  },
+  "beltS": {
+   "timeOf": "touched center belt"
+  },
+  "flapS": {
+   "timeOf": "touched flap"
+  },
+  "sideBeltS": {
+   "timeOf": "touched left side belt"
+  },
+  "highestMm": {
+   "peak": "zMm"
+  },
+  "flapOpenDeg": {
+   "peak": "hinge.flap.angleDeg"
+  },
+  "noseCurrentA": {
+   "peak": "drive.Cassette drive.currentA"
+  },
+  "noseSlowestMps": {
+   "lowest": "drive.Cassette drive.speedMps"
+  },
+  "sideBeltCurrentA": {
+   "peak": "drive.Side belt left.currentA"
+  },
+  "stopPeakN": {
+   "peak": "contact.Rear stop pad.forceN"
+  },
+  "lipPeakN": {
+   "peak": "contact.Replaceable pickup lip.forceN"
+  }
+ },
+ "pass": {
+  "outcomes": [
+   "seated"
+  ]
+ },
+ "adjustments": [
+  "keeper raise"
+ ],
+ "control": {
+  "change": {
+   "commands.Cassette drive.busV": null,
+   "commands.Side belt left": {
+    "mode": "speed",
+    "setpointMps": 0.84,
+    "busV": null,
+    "startMps": 0.0
+   },
+   "commands.Side belt right": {
+    "mode": "speed",
+    "setpointMps": 0.84,
+    "busV": null,
+    "startMps": 0.0
+   }
+  },
+  "note": "The nose roller, centre belt and side belts unpowered: the project's own control."
+ },
+ "brackets": [
+  {
+   "input": "parameters.lateral_mm",
+   "unit": "mm",
+   "values": [
+    -50,
+    50,
+    -100,
+    100
+   ],
+   "note": "The NOTE off the centre line, as the project ran it: 50 mm passed, 100 mm failed."
+  },
+  {
+   "input": "drives.Cassette drive.statorLimitA",
+   "unit": "A",
+   "values": [
+    4,
+    2,
+    1,
+    0.5
+   ],
+   "note": "The nose motor's current limit: 1 A passed, 0.5 A failed."
+  }
+ ]
+}
