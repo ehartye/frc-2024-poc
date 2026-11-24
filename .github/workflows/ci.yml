@@ -37,7 +37,7 @@ jobs:
         run: node scripts/ci/site-check.mjs docs
       - uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c
         with:
-          python-version: '3.13'
+          python-version: '3.14'
       # Each project README shows the CAD still below its title and names the current design and its status.
       - name: Check the README stills
         run: python scripts/cad-readmes.py .
